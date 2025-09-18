@@ -41,19 +41,19 @@ class ListPipelineRunsQuery:
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态
+        :param status: **参数解释**： 流水线状态列表。 **约束限制**： 不涉及。 **取值范围**： - COMPLETED：已完成。 - RUNNING：运行中。 - FAILED：失败。 - CANCELED：取消。 - PAUSED：暂停。 - SUSPEND：挂起。 - IGNORED：忽略。 **默认取值**： 不涉及。 
         :type status: list[str]
-        :param start_time: 开始时间
+        :param start_time: **参数解释**： 流水线开始时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或者yyyy-MM-dd HH:mm:ss格式均可。 **默认取值**： 不涉及。 
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 流水线结束时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或者yyyy-MM-dd HH:mm:ss格式均可。 **默认取值**： 不涉及。 
         :type end_time: str
-        :param offset: 起始偏移
+        :param offset: **参数解释**： 起始偏移。 **约束限制**： 不涉及。 **取值范围**： 大于等于零。 **默认取值**： 不涉及。 
         :type offset: int
-        :param limit: 查询大小
+        :param limit: **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 大于等于零。 **默认取值**： 不涉及。 
         :type limit: int
-        :param sort_key: 排序字段名称
+        :param sort_key: **参数解释**： 排序字段名称。 **约束限制**： 不涉及。 **取值范围**： \&quot;start_time\&quot; - 流水线开始时间。 **默认取值**： 不涉及。 
         :type sort_key: str
-        :param sort_dir: 排序规则
+        :param sort_dir: **参数解释**： 排序规则。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序。 **默认取值**： 不涉及。 
         :type sort_dir: str
         """
         
@@ -87,7 +87,7 @@ class ListPipelineRunsQuery:
     def status(self):
         r"""Gets the status of this ListPipelineRunsQuery.
 
-        状态
+        **参数解释**： 流水线状态列表。 **约束限制**： 不涉及。 **取值范围**： - COMPLETED：已完成。 - RUNNING：运行中。 - FAILED：失败。 - CANCELED：取消。 - PAUSED：暂停。 - SUSPEND：挂起。 - IGNORED：忽略。 **默认取值**： 不涉及。 
 
         :return: The status of this ListPipelineRunsQuery.
         :rtype: list[str]
@@ -98,7 +98,7 @@ class ListPipelineRunsQuery:
     def status(self, status):
         r"""Sets the status of this ListPipelineRunsQuery.
 
-        状态
+        **参数解释**： 流水线状态列表。 **约束限制**： 不涉及。 **取值范围**： - COMPLETED：已完成。 - RUNNING：运行中。 - FAILED：失败。 - CANCELED：取消。 - PAUSED：暂停。 - SUSPEND：挂起。 - IGNORED：忽略。 **默认取值**： 不涉及。 
 
         :param status: The status of this ListPipelineRunsQuery.
         :type status: list[str]
@@ -109,7 +109,7 @@ class ListPipelineRunsQuery:
     def start_time(self):
         r"""Gets the start_time of this ListPipelineRunsQuery.
 
-        开始时间
+        **参数解释**： 流水线开始时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或者yyyy-MM-dd HH:mm:ss格式均可。 **默认取值**： 不涉及。 
 
         :return: The start_time of this ListPipelineRunsQuery.
         :rtype: str
@@ -120,7 +120,7 @@ class ListPipelineRunsQuery:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListPipelineRunsQuery.
 
-        开始时间
+        **参数解释**： 流水线开始时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或者yyyy-MM-dd HH:mm:ss格式均可。 **默认取值**： 不涉及。 
 
         :param start_time: The start_time of this ListPipelineRunsQuery.
         :type start_time: str
@@ -131,7 +131,7 @@ class ListPipelineRunsQuery:
     def end_time(self):
         r"""Gets the end_time of this ListPipelineRunsQuery.
 
-        结束时间
+        **参数解释**： 流水线结束时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或者yyyy-MM-dd HH:mm:ss格式均可。 **默认取值**： 不涉及。 
 
         :return: The end_time of this ListPipelineRunsQuery.
         :rtype: str
@@ -142,7 +142,7 @@ class ListPipelineRunsQuery:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListPipelineRunsQuery.
 
-        结束时间
+        **参数解释**： 流水线结束时间。 **约束限制**： 不涉及。 **取值范围**： 时间戳或者yyyy-MM-dd HH:mm:ss格式均可。 **默认取值**： 不涉及。 
 
         :param end_time: The end_time of this ListPipelineRunsQuery.
         :type end_time: str
@@ -153,7 +153,7 @@ class ListPipelineRunsQuery:
     def offset(self):
         r"""Gets the offset of this ListPipelineRunsQuery.
 
-        起始偏移
+        **参数解释**： 起始偏移。 **约束限制**： 不涉及。 **取值范围**： 大于等于零。 **默认取值**： 不涉及。 
 
         :return: The offset of this ListPipelineRunsQuery.
         :rtype: int
@@ -164,7 +164,7 @@ class ListPipelineRunsQuery:
     def offset(self, offset):
         r"""Sets the offset of this ListPipelineRunsQuery.
 
-        起始偏移
+        **参数解释**： 起始偏移。 **约束限制**： 不涉及。 **取值范围**： 大于等于零。 **默认取值**： 不涉及。 
 
         :param offset: The offset of this ListPipelineRunsQuery.
         :type offset: int
@@ -175,7 +175,7 @@ class ListPipelineRunsQuery:
     def limit(self):
         r"""Gets the limit of this ListPipelineRunsQuery.
 
-        查询大小
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 大于等于零。 **默认取值**： 不涉及。 
 
         :return: The limit of this ListPipelineRunsQuery.
         :rtype: int
@@ -186,7 +186,7 @@ class ListPipelineRunsQuery:
     def limit(self, limit):
         r"""Sets the limit of this ListPipelineRunsQuery.
 
-        查询大小
+        **参数解释**： 查询数量。 **约束限制**： 不涉及。 **取值范围**： 大于等于零。 **默认取值**： 不涉及。 
 
         :param limit: The limit of this ListPipelineRunsQuery.
         :type limit: int
@@ -197,7 +197,7 @@ class ListPipelineRunsQuery:
     def sort_key(self):
         r"""Gets the sort_key of this ListPipelineRunsQuery.
 
-        排序字段名称
+        **参数解释**： 排序字段名称。 **约束限制**： 不涉及。 **取值范围**： \"start_time\" - 流水线开始时间。 **默认取值**： 不涉及。 
 
         :return: The sort_key of this ListPipelineRunsQuery.
         :rtype: str
@@ -208,7 +208,7 @@ class ListPipelineRunsQuery:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListPipelineRunsQuery.
 
-        排序字段名称
+        **参数解释**： 排序字段名称。 **约束限制**： 不涉及。 **取值范围**： \"start_time\" - 流水线开始时间。 **默认取值**： 不涉及。 
 
         :param sort_key: The sort_key of this ListPipelineRunsQuery.
         :type sort_key: str
@@ -219,7 +219,7 @@ class ListPipelineRunsQuery:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListPipelineRunsQuery.
 
-        排序规则
+        **参数解释**： 排序规则。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序。 **默认取值**： 不涉及。 
 
         :return: The sort_dir of this ListPipelineRunsQuery.
         :rtype: str
@@ -230,7 +230,7 @@ class ListPipelineRunsQuery:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListPipelineRunsQuery.
 
-        排序规则
+        **参数解释**： 排序规则。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序。 **默认取值**： 不涉及。 
 
         :param sort_dir: The sort_dir of this ListPipelineRunsQuery.
         :type sort_dir: str

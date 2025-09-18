@@ -21,15 +21,16 @@ class CreateBandwidthPackage:
         'description': 'str',
         'enterprise_project_id': 'str',
         'project_id': 'str',
-        'local_area_id': 'AreaIdDef',
-        'remote_area_id': 'AreaIdDef',
+        'local_area_id': 'LocalAreaIdDef',
+        'remote_area_id': 'RemoteAreaIdDef',
         'charge_mode': 'str',
         'billing_mode': 'int',
         'bandwidth': 'int',
         'resource_id': 'str',
         'resource_type': 'str',
         'spec_code': 'str',
-        'interflow_mode': 'str'
+        'interflow_mode': 'str',
+        'prepaid_options': 'CreatePrepaidOptions'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class CreateBandwidthPackage:
         'resource_id': 'resource_id',
         'resource_type': 'resource_type',
         'spec_code': 'spec_code',
-        'interflow_mode': 'interflow_mode'
+        'interflow_mode': 'interflow_mode',
+        'prepaid_options': 'prepaid_options'
     }
 
-    def __init__(self, name=None, description=None, enterprise_project_id=None, project_id=None, local_area_id=None, remote_area_id=None, charge_mode=None, billing_mode=None, bandwidth=None, resource_id=None, resource_type=None, spec_code=None, interflow_mode=None):
+    def __init__(self, name=None, description=None, enterprise_project_id=None, project_id=None, local_area_id=None, remote_area_id=None, charge_mode=None, billing_mode=None, bandwidth=None, resource_id=None, resource_type=None, spec_code=None, interflow_mode=None, prepaid_options=None):
         r"""CreateBandwidthPackage
 
         The model defined in huaweicloud sdk
@@ -62,12 +64,12 @@ class CreateBandwidthPackage:
         :param project_id: 实例所属项目ID。
         :type project_id: str
         :param local_area_id: 
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         :param remote_area_id: 
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         :param charge_mode: 带宽包实例的计费方式。 bandwidth是按带宽计费。
         :type charge_mode: str
-        :param billing_mode: 带宽包实例在大陆站或国际站的计费方式： - 3：大陆站按需计费 - 4：国际站按需计费 - 5：大陆站按95方式计费 - 6：国际站按95方式计费
+        :param billing_mode: 带宽包实例在大陆站或国际站的计费方式： - 1：大陆站包周期 - 2：国际站包周期 - 3：大陆站按需计费 - 4：国际站按需计费 - 5：大陆站按95方式计费 - 6：国际站按95方式计费
         :type billing_mode: int
         :param bandwidth: 带宽包实例中的带宽值。
         :type bandwidth: int
@@ -79,6 +81,8 @@ class CreateBandwidthPackage:
         :type spec_code: str
         :param interflow_mode: 互通类型: - Area: 大区互通 - Region: 城域互通
         :type interflow_mode: str
+        :param prepaid_options: 
+        :type prepaid_options: :class:`huaweicloudsdkcc.v3.CreatePrepaidOptions`
         """
         
         
@@ -96,6 +100,7 @@ class CreateBandwidthPackage:
         self._resource_type = None
         self._spec_code = None
         self._interflow_mode = None
+        self._prepaid_options = None
         self.discriminator = None
 
         self.name = name
@@ -117,6 +122,8 @@ class CreateBandwidthPackage:
             self.spec_code = spec_code
         if interflow_mode is not None:
             self.interflow_mode = interflow_mode
+        if prepaid_options is not None:
+            self.prepaid_options = prepaid_options
 
     @property
     def name(self):
@@ -211,7 +218,7 @@ class CreateBandwidthPackage:
         r"""Gets the local_area_id of this CreateBandwidthPackage.
 
         :return: The local_area_id of this CreateBandwidthPackage.
-        :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :rtype: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         return self._local_area_id
 
@@ -220,7 +227,7 @@ class CreateBandwidthPackage:
         r"""Sets the local_area_id of this CreateBandwidthPackage.
 
         :param local_area_id: The local_area_id of this CreateBandwidthPackage.
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         self._local_area_id = local_area_id
 
@@ -229,7 +236,7 @@ class CreateBandwidthPackage:
         r"""Gets the remote_area_id of this CreateBandwidthPackage.
 
         :return: The remote_area_id of this CreateBandwidthPackage.
-        :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :rtype: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         return self._remote_area_id
 
@@ -238,7 +245,7 @@ class CreateBandwidthPackage:
         r"""Sets the remote_area_id of this CreateBandwidthPackage.
 
         :param remote_area_id: The remote_area_id of this CreateBandwidthPackage.
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         self._remote_area_id = remote_area_id
 
@@ -268,7 +275,7 @@ class CreateBandwidthPackage:
     def billing_mode(self):
         r"""Gets the billing_mode of this CreateBandwidthPackage.
 
-        带宽包实例在大陆站或国际站的计费方式： - 3：大陆站按需计费 - 4：国际站按需计费 - 5：大陆站按95方式计费 - 6：国际站按95方式计费
+        带宽包实例在大陆站或国际站的计费方式： - 1：大陆站包周期 - 2：国际站包周期 - 3：大陆站按需计费 - 4：国际站按需计费 - 5：大陆站按95方式计费 - 6：国际站按95方式计费
 
         :return: The billing_mode of this CreateBandwidthPackage.
         :rtype: int
@@ -279,7 +286,7 @@ class CreateBandwidthPackage:
     def billing_mode(self, billing_mode):
         r"""Sets the billing_mode of this CreateBandwidthPackage.
 
-        带宽包实例在大陆站或国际站的计费方式： - 3：大陆站按需计费 - 4：国际站按需计费 - 5：大陆站按95方式计费 - 6：国际站按95方式计费
+        带宽包实例在大陆站或国际站的计费方式： - 1：大陆站包周期 - 2：国际站包周期 - 3：大陆站按需计费 - 4：国际站按需计费 - 5：大陆站按95方式计费 - 6：国际站按95方式计费
 
         :param billing_mode: The billing_mode of this CreateBandwidthPackage.
         :type billing_mode: int
@@ -395,6 +402,24 @@ class CreateBandwidthPackage:
         :type interflow_mode: str
         """
         self._interflow_mode = interflow_mode
+
+    @property
+    def prepaid_options(self):
+        r"""Gets the prepaid_options of this CreateBandwidthPackage.
+
+        :return: The prepaid_options of this CreateBandwidthPackage.
+        :rtype: :class:`huaweicloudsdkcc.v3.CreatePrepaidOptions`
+        """
+        return self._prepaid_options
+
+    @prepaid_options.setter
+    def prepaid_options(self, prepaid_options):
+        r"""Sets the prepaid_options of this CreateBandwidthPackage.
+
+        :param prepaid_options: The prepaid_options of this CreateBandwidthPackage.
+        :type prepaid_options: :class:`huaweicloudsdkcc.v3.CreatePrepaidOptions`
+        """
+        self._prepaid_options = prepaid_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

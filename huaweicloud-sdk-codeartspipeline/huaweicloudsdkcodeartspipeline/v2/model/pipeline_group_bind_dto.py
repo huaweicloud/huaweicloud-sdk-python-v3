@@ -31,9 +31,9 @@ class PipelineGroupBindDTO:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 分组ID
+        :param group_id: **参数解释**： 分组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type group_id: str
-        :param pipelines: 流水线集合
+        :param pipelines: **参数解释**： 流水线集合。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type pipelines: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupBindDTOPipelines`]
         """
         
@@ -50,7 +50,7 @@ class PipelineGroupBindDTO:
     def group_id(self):
         r"""Gets the group_id of this PipelineGroupBindDTO.
 
-        分组ID
+        **参数解释**： 分组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The group_id of this PipelineGroupBindDTO.
         :rtype: str
@@ -61,7 +61,7 @@ class PipelineGroupBindDTO:
     def group_id(self, group_id):
         r"""Sets the group_id of this PipelineGroupBindDTO.
 
-        分组ID
+        **参数解释**： 分组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param group_id: The group_id of this PipelineGroupBindDTO.
         :type group_id: str
@@ -72,7 +72,7 @@ class PipelineGroupBindDTO:
     def pipelines(self):
         r"""Gets the pipelines of this PipelineGroupBindDTO.
 
-        流水线集合
+        **参数解释**： 流水线集合。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The pipelines of this PipelineGroupBindDTO.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupBindDTOPipelines`]
@@ -83,7 +83,7 @@ class PipelineGroupBindDTO:
     def pipelines(self, pipelines):
         r"""Sets the pipelines of this PipelineGroupBindDTO.
 
-        流水线集合
+        **参数解释**： 流水线集合。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param pipelines: The pipelines of this PipelineGroupBindDTO.
         :type pipelines: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupBindDTOPipelines`]

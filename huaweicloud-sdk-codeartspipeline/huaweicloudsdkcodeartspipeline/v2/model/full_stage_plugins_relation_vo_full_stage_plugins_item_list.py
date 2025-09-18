@@ -47,25 +47,25 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
 
         The model defined in huaweicloud sdk
 
-        :param plugins_list: 插件列表
+        :param plugins_list: **参数解释**： 插件列表。 **取值范围**： 不涉及。 
         :type plugins_list: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOPluginsList`]
-        :param display_name: 展示名
+        :param display_name: **参数解释**： 扩展插件展示名。 **取值范围**： 不涉及。 
         :type display_name: str
-        :param business_type: 业务类型
+        :param business_type: **参数解释**： 扩展插件业务类型。 **取值范围**： 不涉及。 
         :type business_type: str
-        :param unique_id: 唯一ID
+        :param unique_id: **参数解释**： 扩展插件唯一ID。 **默认取值**： 不涉及。 
         :type unique_id: str
-        :param conditions: 条件
+        :param conditions: **参数解释**： 运行条件。 **取值范围**： 不涉及。 
         :type conditions: list[str]
-        :param addables: 额外属性
+        :param addables: **参数解释**： 额外属性。 **取值范围**： 不涉及。 
         :type addables: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOAddables`]
-        :param editable: 是否可编辑
+        :param editable: **参数解释**： 是否可编辑。 **取值范围**： - true：可编辑。 - false：不可编辑。 
         :type editable: bool
-        :param removable: 是否可移除
+        :param removable: **参数解释**： 是否可移除。 **取值范围**： - true：可移除。 - false：不可移除。 
         :type removable: bool
-        :param cloneable: 是否可复制
+        :param cloneable: **参数解释**： 是否可复制。 **取值范围**： - true：可复制。 - false：不可复制。 
         :type cloneable: bool
-        :param disabled: 禁用
+        :param disabled: **参数解释**： 是否禁用。 **取值范围**： - true：禁用。 - false：未禁用。 
         :type disabled: bool
         """
         
@@ -108,7 +108,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def plugins_list(self):
         r"""Gets the plugins_list of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        插件列表
+        **参数解释**： 插件列表。 **取值范围**： 不涉及。 
 
         :return: The plugins_list of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOPluginsList`]
@@ -119,7 +119,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def plugins_list(self, plugins_list):
         r"""Sets the plugins_list of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        插件列表
+        **参数解释**： 插件列表。 **取值范围**： 不涉及。 
 
         :param plugins_list: The plugins_list of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :type plugins_list: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOPluginsList`]
@@ -130,7 +130,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def display_name(self):
         r"""Gets the display_name of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        展示名
+        **参数解释**： 扩展插件展示名。 **取值范围**： 不涉及。 
 
         :return: The display_name of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :rtype: str
@@ -141,7 +141,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def display_name(self, display_name):
         r"""Sets the display_name of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        展示名
+        **参数解释**： 扩展插件展示名。 **取值范围**： 不涉及。 
 
         :param display_name: The display_name of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :type display_name: str
@@ -152,7 +152,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def business_type(self):
         r"""Gets the business_type of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        业务类型
+        **参数解释**： 扩展插件业务类型。 **取值范围**： 不涉及。 
 
         :return: The business_type of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :rtype: str
@@ -163,7 +163,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def business_type(self, business_type):
         r"""Sets the business_type of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        业务类型
+        **参数解释**： 扩展插件业务类型。 **取值范围**： 不涉及。 
 
         :param business_type: The business_type of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :type business_type: str
@@ -174,7 +174,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def unique_id(self):
         r"""Gets the unique_id of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        唯一ID
+        **参数解释**： 扩展插件唯一ID。 **默认取值**： 不涉及。 
 
         :return: The unique_id of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :rtype: str
@@ -185,7 +185,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def unique_id(self, unique_id):
         r"""Sets the unique_id of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        唯一ID
+        **参数解释**： 扩展插件唯一ID。 **默认取值**： 不涉及。 
 
         :param unique_id: The unique_id of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :type unique_id: str
@@ -196,7 +196,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def conditions(self):
         r"""Gets the conditions of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        条件
+        **参数解释**： 运行条件。 **取值范围**： 不涉及。 
 
         :return: The conditions of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :rtype: list[str]
@@ -207,7 +207,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def conditions(self, conditions):
         r"""Sets the conditions of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        条件
+        **参数解释**： 运行条件。 **取值范围**： 不涉及。 
 
         :param conditions: The conditions of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :type conditions: list[str]
@@ -218,7 +218,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def addables(self):
         r"""Gets the addables of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        额外属性
+        **参数解释**： 额外属性。 **取值范围**： 不涉及。 
 
         :return: The addables of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOAddables`]
@@ -229,7 +229,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def addables(self, addables):
         r"""Sets the addables of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        额外属性
+        **参数解释**： 额外属性。 **取值范围**： 不涉及。 
 
         :param addables: The addables of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :type addables: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOAddables`]
@@ -240,7 +240,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def editable(self):
         r"""Gets the editable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        是否可编辑
+        **参数解释**： 是否可编辑。 **取值范围**： - true：可编辑。 - false：不可编辑。 
 
         :return: The editable of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :rtype: bool
@@ -251,7 +251,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def editable(self, editable):
         r"""Sets the editable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        是否可编辑
+        **参数解释**： 是否可编辑。 **取值范围**： - true：可编辑。 - false：不可编辑。 
 
         :param editable: The editable of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :type editable: bool
@@ -262,7 +262,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def removable(self):
         r"""Gets the removable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        是否可移除
+        **参数解释**： 是否可移除。 **取值范围**： - true：可移除。 - false：不可移除。 
 
         :return: The removable of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :rtype: bool
@@ -273,7 +273,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def removable(self, removable):
         r"""Sets the removable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        是否可移除
+        **参数解释**： 是否可移除。 **取值范围**： - true：可移除。 - false：不可移除。 
 
         :param removable: The removable of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :type removable: bool
@@ -284,7 +284,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def cloneable(self):
         r"""Gets the cloneable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        是否可复制
+        **参数解释**： 是否可复制。 **取值范围**： - true：可复制。 - false：不可复制。 
 
         :return: The cloneable of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :rtype: bool
@@ -295,7 +295,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def cloneable(self, cloneable):
         r"""Sets the cloneable of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        是否可复制
+        **参数解释**： 是否可复制。 **取值范围**： - true：可复制。 - false：不可复制。 
 
         :param cloneable: The cloneable of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :type cloneable: bool
@@ -306,7 +306,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def disabled(self):
         r"""Gets the disabled of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        禁用
+        **参数解释**： 是否禁用。 **取值范围**： - true：禁用。 - false：未禁用。 
 
         :return: The disabled of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :rtype: bool
@@ -317,7 +317,7 @@ class FullStagePluginsRelationVOFullStagePluginsItemList:
     def disabled(self, disabled):
         r"""Sets the disabled of this FullStagePluginsRelationVOFullStagePluginsItemList.
 
-        禁用
+        **参数解释**： 是否禁用。 **取值范围**： - true：禁用。 - false：未禁用。 
 
         :param disabled: The disabled of this FullStagePluginsRelationVOFullStagePluginsItemList.
         :type disabled: bool

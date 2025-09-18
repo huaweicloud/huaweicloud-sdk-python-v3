@@ -57,35 +57,35 @@ class StepRun:
 
         The model defined in huaweicloud sdk
 
-        :param name: 步骤名称
+        :param name: **参数解释**： 步骤名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param task: 步骤插件
+        :param task: **参数解释**： 步骤插件名。 **取值范围**： 不涉及。 
         :type task: str
-        :param business_type: 插件业务类型
+        :param business_type: **参数解释**： 插件业务类型。 **取值范围**： - Normal：通用。 - Build：构建。 - Test：测试。 - Check：代码检查。 - Deploy：部署。 
         :type business_type: str
-        :param inputs: 输入参数
+        :param inputs: **参数解释**： 输入参数。 **取值范围**： 不涉及。 
         :type inputs: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRunInputs`]
-        :param sequence: 序列号
+        :param sequence: **参数解释**： 序列号。 **取值范围**： 不涉及。 
         :type sequence: int
-        :param official_task_version: 官方插件版本号
+        :param official_task_version: **参数解释**： 官方插件版本号。 **取值范围**： 不涉及。 
         :type official_task_version: str
-        :param identifier: 唯一标识符
+        :param identifier: **参数解释**： 唯一标识符。 **取值范围**： 不涉及。 
         :type identifier: str
-        :param multi_step_editable: 是否可编辑
+        :param multi_step_editable: **参数解释**： 是否可编辑。 **取值范围**： - true：可编辑。 - false：不可编辑。 
         :type multi_step_editable: int
-        :param id: 步骤ID
+        :param id: **参数解释**： 步骤ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type id: str
-        :param endpoint_ids: 扩展点
+        :param endpoint_ids: **参数解释**： 扩展点ID列表。 **取值范围**： 不涉及。 
         :type endpoint_ids: list[str]
-        :param last_dispatch_id: 上次下发任务ID
+        :param last_dispatch_id: **参数解释**： 上次下发任务ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type last_dispatch_id: str
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 
         :type status: str
-        :param message: 错误消息
+        :param message: **参数解释**： 错误消息。 **取值范围**： 不涉及。 
         :type message: str
-        :param start_time: 开始时间
+        :param start_time: **参数解释**： 步骤开始时间。 **取值范围**： 不涉及。 
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 步骤结束时间。 **取值范围**： 不涉及。 
         :type end_time: int
         """
         
@@ -143,7 +143,7 @@ class StepRun:
     def name(self):
         r"""Gets the name of this StepRun.
 
-        步骤名称
+        **参数解释**： 步骤名称。 **取值范围**： 不涉及。 
 
         :return: The name of this StepRun.
         :rtype: str
@@ -154,7 +154,7 @@ class StepRun:
     def name(self, name):
         r"""Sets the name of this StepRun.
 
-        步骤名称
+        **参数解释**： 步骤名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this StepRun.
         :type name: str
@@ -165,7 +165,7 @@ class StepRun:
     def task(self):
         r"""Gets the task of this StepRun.
 
-        步骤插件
+        **参数解释**： 步骤插件名。 **取值范围**： 不涉及。 
 
         :return: The task of this StepRun.
         :rtype: str
@@ -176,7 +176,7 @@ class StepRun:
     def task(self, task):
         r"""Sets the task of this StepRun.
 
-        步骤插件
+        **参数解释**： 步骤插件名。 **取值范围**： 不涉及。 
 
         :param task: The task of this StepRun.
         :type task: str
@@ -187,7 +187,7 @@ class StepRun:
     def business_type(self):
         r"""Gets the business_type of this StepRun.
 
-        插件业务类型
+        **参数解释**： 插件业务类型。 **取值范围**： - Normal：通用。 - Build：构建。 - Test：测试。 - Check：代码检查。 - Deploy：部署。 
 
         :return: The business_type of this StepRun.
         :rtype: str
@@ -198,7 +198,7 @@ class StepRun:
     def business_type(self, business_type):
         r"""Sets the business_type of this StepRun.
 
-        插件业务类型
+        **参数解释**： 插件业务类型。 **取值范围**： - Normal：通用。 - Build：构建。 - Test：测试。 - Check：代码检查。 - Deploy：部署。 
 
         :param business_type: The business_type of this StepRun.
         :type business_type: str
@@ -209,7 +209,7 @@ class StepRun:
     def inputs(self):
         r"""Gets the inputs of this StepRun.
 
-        输入参数
+        **参数解释**： 输入参数。 **取值范围**： 不涉及。 
 
         :return: The inputs of this StepRun.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRunInputs`]
@@ -220,7 +220,7 @@ class StepRun:
     def inputs(self, inputs):
         r"""Sets the inputs of this StepRun.
 
-        输入参数
+        **参数解释**： 输入参数。 **取值范围**： 不涉及。 
 
         :param inputs: The inputs of this StepRun.
         :type inputs: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRunInputs`]
@@ -231,7 +231,7 @@ class StepRun:
     def sequence(self):
         r"""Gets the sequence of this StepRun.
 
-        序列号
+        **参数解释**： 序列号。 **取值范围**： 不涉及。 
 
         :return: The sequence of this StepRun.
         :rtype: int
@@ -242,7 +242,7 @@ class StepRun:
     def sequence(self, sequence):
         r"""Sets the sequence of this StepRun.
 
-        序列号
+        **参数解释**： 序列号。 **取值范围**： 不涉及。 
 
         :param sequence: The sequence of this StepRun.
         :type sequence: int
@@ -253,7 +253,7 @@ class StepRun:
     def official_task_version(self):
         r"""Gets the official_task_version of this StepRun.
 
-        官方插件版本号
+        **参数解释**： 官方插件版本号。 **取值范围**： 不涉及。 
 
         :return: The official_task_version of this StepRun.
         :rtype: str
@@ -264,7 +264,7 @@ class StepRun:
     def official_task_version(self, official_task_version):
         r"""Sets the official_task_version of this StepRun.
 
-        官方插件版本号
+        **参数解释**： 官方插件版本号。 **取值范围**： 不涉及。 
 
         :param official_task_version: The official_task_version of this StepRun.
         :type official_task_version: str
@@ -275,7 +275,7 @@ class StepRun:
     def identifier(self):
         r"""Gets the identifier of this StepRun.
 
-        唯一标识符
+        **参数解释**： 唯一标识符。 **取值范围**： 不涉及。 
 
         :return: The identifier of this StepRun.
         :rtype: str
@@ -286,7 +286,7 @@ class StepRun:
     def identifier(self, identifier):
         r"""Sets the identifier of this StepRun.
 
-        唯一标识符
+        **参数解释**： 唯一标识符。 **取值范围**： 不涉及。 
 
         :param identifier: The identifier of this StepRun.
         :type identifier: str
@@ -297,7 +297,7 @@ class StepRun:
     def multi_step_editable(self):
         r"""Gets the multi_step_editable of this StepRun.
 
-        是否可编辑
+        **参数解释**： 是否可编辑。 **取值范围**： - true：可编辑。 - false：不可编辑。 
 
         :return: The multi_step_editable of this StepRun.
         :rtype: int
@@ -308,7 +308,7 @@ class StepRun:
     def multi_step_editable(self, multi_step_editable):
         r"""Sets the multi_step_editable of this StepRun.
 
-        是否可编辑
+        **参数解释**： 是否可编辑。 **取值范围**： - true：可编辑。 - false：不可编辑。 
 
         :param multi_step_editable: The multi_step_editable of this StepRun.
         :type multi_step_editable: int
@@ -319,7 +319,7 @@ class StepRun:
     def id(self):
         r"""Gets the id of this StepRun.
 
-        步骤ID
+        **参数解释**： 步骤ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The id of this StepRun.
         :rtype: str
@@ -330,7 +330,7 @@ class StepRun:
     def id(self, id):
         r"""Sets the id of this StepRun.
 
-        步骤ID
+        **参数解释**： 步骤ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param id: The id of this StepRun.
         :type id: str
@@ -341,7 +341,7 @@ class StepRun:
     def endpoint_ids(self):
         r"""Gets the endpoint_ids of this StepRun.
 
-        扩展点
+        **参数解释**： 扩展点ID列表。 **取值范围**： 不涉及。 
 
         :return: The endpoint_ids of this StepRun.
         :rtype: list[str]
@@ -352,7 +352,7 @@ class StepRun:
     def endpoint_ids(self, endpoint_ids):
         r"""Sets the endpoint_ids of this StepRun.
 
-        扩展点
+        **参数解释**： 扩展点ID列表。 **取值范围**： 不涉及。 
 
         :param endpoint_ids: The endpoint_ids of this StepRun.
         :type endpoint_ids: list[str]
@@ -363,7 +363,7 @@ class StepRun:
     def last_dispatch_id(self):
         r"""Gets the last_dispatch_id of this StepRun.
 
-        上次下发任务ID
+        **参数解释**： 上次下发任务ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The last_dispatch_id of this StepRun.
         :rtype: str
@@ -374,7 +374,7 @@ class StepRun:
     def last_dispatch_id(self, last_dispatch_id):
         r"""Sets the last_dispatch_id of this StepRun.
 
-        上次下发任务ID
+        **参数解释**： 上次下发任务ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param last_dispatch_id: The last_dispatch_id of this StepRun.
         :type last_dispatch_id: str
@@ -385,7 +385,7 @@ class StepRun:
     def status(self):
         r"""Gets the status of this StepRun.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 
 
         :return: The status of this StepRun.
         :rtype: str
@@ -396,7 +396,7 @@ class StepRun:
     def status(self, status):
         r"""Sets the status of this StepRun.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 
 
         :param status: The status of this StepRun.
         :type status: str
@@ -407,7 +407,7 @@ class StepRun:
     def message(self):
         r"""Gets the message of this StepRun.
 
-        错误消息
+        **参数解释**： 错误消息。 **取值范围**： 不涉及。 
 
         :return: The message of this StepRun.
         :rtype: str
@@ -418,7 +418,7 @@ class StepRun:
     def message(self, message):
         r"""Sets the message of this StepRun.
 
-        错误消息
+        **参数解释**： 错误消息。 **取值范围**： 不涉及。 
 
         :param message: The message of this StepRun.
         :type message: str
@@ -429,7 +429,7 @@ class StepRun:
     def start_time(self):
         r"""Gets the start_time of this StepRun.
 
-        开始时间
+        **参数解释**： 步骤开始时间。 **取值范围**： 不涉及。 
 
         :return: The start_time of this StepRun.
         :rtype: int
@@ -440,7 +440,7 @@ class StepRun:
     def start_time(self, start_time):
         r"""Sets the start_time of this StepRun.
 
-        开始时间
+        **参数解释**： 步骤开始时间。 **取值范围**： 不涉及。 
 
         :param start_time: The start_time of this StepRun.
         :type start_time: int
@@ -451,7 +451,7 @@ class StepRun:
     def end_time(self):
         r"""Gets the end_time of this StepRun.
 
-        结束时间
+        **参数解释**： 步骤结束时间。 **取值范围**： 不涉及。 
 
         :return: The end_time of this StepRun.
         :rtype: int
@@ -462,7 +462,7 @@ class StepRun:
     def end_time(self, end_time):
         r"""Sets the end_time of this StepRun.
 
-        结束时间
+        **参数解释**： 步骤结束时间。 **取值范围**： 不涉及。 
 
         :param end_time: The end_time of this StepRun.
         :type end_time: int

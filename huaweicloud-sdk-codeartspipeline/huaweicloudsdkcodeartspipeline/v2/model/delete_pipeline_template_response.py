@@ -30,7 +30,7 @@ class DeletePipelineTemplateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 
+        :param template_id: **参数解释**： 模板ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type template_id: str
         """
         
@@ -46,6 +46,8 @@ class DeletePipelineTemplateResponse(SdkResponse):
     def template_id(self):
         r"""Gets the template_id of this DeletePipelineTemplateResponse.
 
+        **参数解释**： 模板ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
         :return: The template_id of this DeletePipelineTemplateResponse.
         :rtype: str
         """
@@ -54,6 +56,8 @@ class DeletePipelineTemplateResponse(SdkResponse):
     @template_id.setter
     def template_id(self, template_id):
         r"""Sets the template_id of this DeletePipelineTemplateResponse.
+
+        **参数解释**： 模板ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param template_id: The template_id of this DeletePipelineTemplateResponse.
         :type template_id: str

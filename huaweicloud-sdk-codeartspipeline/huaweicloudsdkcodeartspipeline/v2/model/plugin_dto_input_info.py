@@ -37,15 +37,15 @@ class PluginDTOInputInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: **参数解释**： 插件输入配置的唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type name: str
-        :param default_value: 默认值
+        :param default_value: **参数解释**： 插件输入配置的默认值，未填写时默认显示。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type default_value: str
-        :param type: 输入类型
+        :param type: **参数解释**： 插件输入配置的输入类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type type: str
-        :param validation: 验证
+        :param validation: **参数解释**： 插件输入配置的输入内容的正则校验规则。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type validation: str
-        :param layout_content: 样式信息
+        :param layout_content: **参数解释**： 样式信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type layout_content: str
         """
         
@@ -73,7 +73,7 @@ class PluginDTOInputInfo:
     def name(self):
         r"""Gets the name of this PluginDTOInputInfo.
 
-        名称
+        **参数解释**： 插件输入配置的唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this PluginDTOInputInfo.
         :rtype: str
@@ -84,7 +84,7 @@ class PluginDTOInputInfo:
     def name(self, name):
         r"""Sets the name of this PluginDTOInputInfo.
 
-        名称
+        **参数解释**： 插件输入配置的唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this PluginDTOInputInfo.
         :type name: str
@@ -95,7 +95,7 @@ class PluginDTOInputInfo:
     def default_value(self):
         r"""Gets the default_value of this PluginDTOInputInfo.
 
-        默认值
+        **参数解释**： 插件输入配置的默认值，未填写时默认显示。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The default_value of this PluginDTOInputInfo.
         :rtype: str
@@ -106,7 +106,7 @@ class PluginDTOInputInfo:
     def default_value(self, default_value):
         r"""Sets the default_value of this PluginDTOInputInfo.
 
-        默认值
+        **参数解释**： 插件输入配置的默认值，未填写时默认显示。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param default_value: The default_value of this PluginDTOInputInfo.
         :type default_value: str
@@ -117,7 +117,7 @@ class PluginDTOInputInfo:
     def type(self):
         r"""Gets the type of this PluginDTOInputInfo.
 
-        输入类型
+        **参数解释**： 插件输入配置的输入类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The type of this PluginDTOInputInfo.
         :rtype: str
@@ -128,7 +128,7 @@ class PluginDTOInputInfo:
     def type(self, type):
         r"""Sets the type of this PluginDTOInputInfo.
 
-        输入类型
+        **参数解释**： 插件输入配置的输入类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param type: The type of this PluginDTOInputInfo.
         :type type: str
@@ -139,7 +139,7 @@ class PluginDTOInputInfo:
     def validation(self):
         r"""Gets the validation of this PluginDTOInputInfo.
 
-        验证
+        **参数解释**： 插件输入配置的输入内容的正则校验规则。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The validation of this PluginDTOInputInfo.
         :rtype: str
@@ -150,7 +150,7 @@ class PluginDTOInputInfo:
     def validation(self, validation):
         r"""Sets the validation of this PluginDTOInputInfo.
 
-        验证
+        **参数解释**： 插件输入配置的输入内容的正则校验规则。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param validation: The validation of this PluginDTOInputInfo.
         :type validation: str
@@ -161,7 +161,7 @@ class PluginDTOInputInfo:
     def layout_content(self):
         r"""Gets the layout_content of this PluginDTOInputInfo.
 
-        样式信息
+        **参数解释**： 样式信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The layout_content of this PluginDTOInputInfo.
         :rtype: str
@@ -172,7 +172,7 @@ class PluginDTOInputInfo:
     def layout_content(self, layout_content):
         r"""Sets the layout_content of this PluginDTOInputInfo.
 
-        样式信息
+        **参数解释**： 样式信息。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param layout_content: The layout_content of this PluginDTOInputInfo.
         :type layout_content: str

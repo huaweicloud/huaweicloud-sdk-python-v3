@@ -103,7 +103,7 @@ class PrePaidServer:
         :type nics: list[:class:`huaweicloudsdkecs.v2.PrePaidServerNic`]
         :param publicip: 
         :type publicip: :class:`huaweicloudsdkecs.v2.PrePaidServerPublicip`
-        :param count: 创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为500。
+        :param count: 创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为100。
         :type count: int
         :param is_auto_rename: 当批量创建弹性云服务器时，云服务器名称是否允许重名，当count大于1的时候该参数生效。默认为True。  - True，表示允许重名。 - False，表示不允许重名。
         :type is_auto_rename: bool
@@ -444,7 +444,7 @@ class PrePaidServer:
     def count(self):
         r"""Gets the count of this PrePaidServer.
 
-        创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为500。
+        创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为100。
 
         :return: The count of this PrePaidServer.
         :rtype: int
@@ -455,7 +455,7 @@ class PrePaidServer:
     def count(self, count):
         r"""Sets the count of this PrePaidServer.
 
-        创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为500。
+        创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为100。
 
         :param count: The count of this PrePaidServer.
         :type count: int

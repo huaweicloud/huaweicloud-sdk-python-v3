@@ -32,9 +32,9 @@ class SwitchStrategyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态
+        :param status: **参数解释**： 更新状态是否成功。 **取值范围**： - true：状态更新成功。 - false：状态更新失败。 
         :type status: bool
-        :param rule_set_id: 策略ID
+        :param rule_set_id: **参数解释**： 更新的策略ID。 **取值范围**： 不涉及。 
         :type rule_set_id: str
         """
         
@@ -53,7 +53,7 @@ class SwitchStrategyResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this SwitchStrategyResponse.
 
-        状态
+        **参数解释**： 更新状态是否成功。 **取值范围**： - true：状态更新成功。 - false：状态更新失败。 
 
         :return: The status of this SwitchStrategyResponse.
         :rtype: bool
@@ -64,7 +64,7 @@ class SwitchStrategyResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this SwitchStrategyResponse.
 
-        状态
+        **参数解释**： 更新状态是否成功。 **取值范围**： - true：状态更新成功。 - false：状态更新失败。 
 
         :param status: The status of this SwitchStrategyResponse.
         :type status: bool
@@ -75,7 +75,7 @@ class SwitchStrategyResponse(SdkResponse):
     def rule_set_id(self):
         r"""Gets the rule_set_id of this SwitchStrategyResponse.
 
-        策略ID
+        **参数解释**： 更新的策略ID。 **取值范围**： 不涉及。 
 
         :return: The rule_set_id of this SwitchStrategyResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class SwitchStrategyResponse(SdkResponse):
     def rule_set_id(self, rule_set_id):
         r"""Sets the rule_set_id of this SwitchStrategyResponse.
 
-        策略ID
+        **参数解释**： 更新的策略ID。 **取值范围**： 不涉及。 
 
         :param rule_set_id: The rule_set_id of this SwitchStrategyResponse.
         :type rule_set_id: str

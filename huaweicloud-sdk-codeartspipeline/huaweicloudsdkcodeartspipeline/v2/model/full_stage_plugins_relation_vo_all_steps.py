@@ -33,11 +33,11 @@ class FullStagePluginsRelationVOAllSteps:
 
         The model defined in huaweicloud sdk
 
-        :param plugin_name: 插件名
+        :param plugin_name: **参数解释**： 扩展插件插件名。 **取值范围**： 不涉及。 
         :type plugin_name: str
-        :param display_name: 展示名
+        :param display_name: **参数解释**： 扩展插件展示名。 **取值范围**： 不涉及。 
         :type display_name: str
-        :param version: 版本
+        :param version: **参数解释**： 扩展插件版本号。 **取值范围**： 不涉及。 
         :type version: str
         """
         
@@ -59,7 +59,7 @@ class FullStagePluginsRelationVOAllSteps:
     def plugin_name(self):
         r"""Gets the plugin_name of this FullStagePluginsRelationVOAllSteps.
 
-        插件名
+        **参数解释**： 扩展插件插件名。 **取值范围**： 不涉及。 
 
         :return: The plugin_name of this FullStagePluginsRelationVOAllSteps.
         :rtype: str
@@ -70,7 +70,7 @@ class FullStagePluginsRelationVOAllSteps:
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this FullStagePluginsRelationVOAllSteps.
 
-        插件名
+        **参数解释**： 扩展插件插件名。 **取值范围**： 不涉及。 
 
         :param plugin_name: The plugin_name of this FullStagePluginsRelationVOAllSteps.
         :type plugin_name: str
@@ -81,7 +81,7 @@ class FullStagePluginsRelationVOAllSteps:
     def display_name(self):
         r"""Gets the display_name of this FullStagePluginsRelationVOAllSteps.
 
-        展示名
+        **参数解释**： 扩展插件展示名。 **取值范围**： 不涉及。 
 
         :return: The display_name of this FullStagePluginsRelationVOAllSteps.
         :rtype: str
@@ -92,7 +92,7 @@ class FullStagePluginsRelationVOAllSteps:
     def display_name(self, display_name):
         r"""Sets the display_name of this FullStagePluginsRelationVOAllSteps.
 
-        展示名
+        **参数解释**： 扩展插件展示名。 **取值范围**： 不涉及。 
 
         :param display_name: The display_name of this FullStagePluginsRelationVOAllSteps.
         :type display_name: str
@@ -103,7 +103,7 @@ class FullStagePluginsRelationVOAllSteps:
     def version(self):
         r"""Gets the version of this FullStagePluginsRelationVOAllSteps.
 
-        版本
+        **参数解释**： 扩展插件版本号。 **取值范围**： 不涉及。 
 
         :return: The version of this FullStagePluginsRelationVOAllSteps.
         :rtype: str
@@ -114,7 +114,7 @@ class FullStagePluginsRelationVOAllSteps:
     def version(self, version):
         r"""Sets the version of this FullStagePluginsRelationVOAllSteps.
 
-        版本
+        **参数解释**： 扩展插件版本号。 **取值范围**： 不涉及。 
 
         :param version: The version of this FullStagePluginsRelationVOAllSteps.
         :type version: str

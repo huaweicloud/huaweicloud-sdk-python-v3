@@ -32,9 +32,9 @@ class StartNewPipelineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param pipeline_id: 流水线ID
+        :param pipeline_id: **参数解释**： 流水线ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type pipeline_id: str
-        :param build_id: 流水线构建ID
+        :param build_id: **参数解释**： 流水线执行ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type build_id: str
         """
         
@@ -53,7 +53,7 @@ class StartNewPipelineResponse(SdkResponse):
     def pipeline_id(self):
         r"""Gets the pipeline_id of this StartNewPipelineResponse.
 
-        流水线ID
+        **参数解释**： 流水线ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The pipeline_id of this StartNewPipelineResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class StartNewPipelineResponse(SdkResponse):
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this StartNewPipelineResponse.
 
-        流水线ID
+        **参数解释**： 流水线ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param pipeline_id: The pipeline_id of this StartNewPipelineResponse.
         :type pipeline_id: str
@@ -75,7 +75,7 @@ class StartNewPipelineResponse(SdkResponse):
     def build_id(self):
         r"""Gets the build_id of this StartNewPipelineResponse.
 
-        流水线构建ID
+        **参数解释**： 流水线执行ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The build_id of this StartNewPipelineResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class StartNewPipelineResponse(SdkResponse):
     def build_id(self, build_id):
         r"""Sets the build_id of this StartNewPipelineResponse.
 
-        流水线构建ID
+        **参数解释**： 流水线执行ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param build_id: The build_id of this StartNewPipelineResponse.
         :type build_id: str

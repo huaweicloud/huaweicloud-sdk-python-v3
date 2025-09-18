@@ -31,9 +31,9 @@ class PipelineGroupBindDTOPipelines:
 
         The model defined in huaweicloud sdk
 
-        :param pipeline_id: 流水线ID
+        :param pipeline_id: **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
         :type pipeline_id: str
-        :param pipeline_name: 流水线名
+        :param pipeline_name: **参数解释**： 流水线名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type pipeline_name: str
         """
         
@@ -50,7 +50,7 @@ class PipelineGroupBindDTOPipelines:
     def pipeline_id(self):
         r"""Gets the pipeline_id of this PipelineGroupBindDTOPipelines.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The pipeline_id of this PipelineGroupBindDTOPipelines.
         :rtype: str
@@ -61,7 +61,7 @@ class PipelineGroupBindDTOPipelines:
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this PipelineGroupBindDTOPipelines.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，仅由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param pipeline_id: The pipeline_id of this PipelineGroupBindDTOPipelines.
         :type pipeline_id: str
@@ -72,7 +72,7 @@ class PipelineGroupBindDTOPipelines:
     def pipeline_name(self):
         r"""Gets the pipeline_name of this PipelineGroupBindDTOPipelines.
 
-        流水线名
+        **参数解释**： 流水线名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The pipeline_name of this PipelineGroupBindDTOPipelines.
         :rtype: str
@@ -83,7 +83,7 @@ class PipelineGroupBindDTOPipelines:
     def pipeline_name(self, pipeline_name):
         r"""Sets the pipeline_name of this PipelineGroupBindDTOPipelines.
 
-        流水线名
+        **参数解释**： 流水线名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param pipeline_name: The pipeline_name of this PipelineGroupBindDTOPipelines.
         :type pipeline_name: str

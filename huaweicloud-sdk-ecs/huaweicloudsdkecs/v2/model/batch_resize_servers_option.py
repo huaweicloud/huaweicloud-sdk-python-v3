@@ -58,10 +58,8 @@ class BatchResizeServersOption:
         self._promotion = None
         self.discriminator = None
 
-        if flavor_ref is not None:
-            self.flavor_ref = flavor_ref
-        if servers is not None:
-            self.servers = servers
+        self.flavor_ref = flavor_ref
+        self.servers = servers
         if cpu_options is not None:
             self.cpu_options = cpu_options
         if mode is not None:

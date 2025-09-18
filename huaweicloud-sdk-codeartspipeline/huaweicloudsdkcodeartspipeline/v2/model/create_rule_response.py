@@ -32,9 +32,9 @@ class CreateRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 创建状态
+        :param status: **参数解释**： 创建状态。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type status: bool
-        :param rule_id: 规则ID
+        :param rule_id: **参数解释**： 规则ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type rule_id: str
         """
         
@@ -53,7 +53,7 @@ class CreateRuleResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this CreateRuleResponse.
 
-        创建状态
+        **参数解释**： 创建状态。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The status of this CreateRuleResponse.
         :rtype: bool
@@ -64,7 +64,7 @@ class CreateRuleResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this CreateRuleResponse.
 
-        创建状态
+        **参数解释**： 创建状态。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param status: The status of this CreateRuleResponse.
         :type status: bool
@@ -75,7 +75,7 @@ class CreateRuleResponse(SdkResponse):
     def rule_id(self):
         r"""Gets the rule_id of this CreateRuleResponse.
 
-        规则ID
+        **参数解释**： 规则ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The rule_id of this CreateRuleResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class CreateRuleResponse(SdkResponse):
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this CreateRuleResponse.
 
-        规则ID
+        **参数解释**： 规则ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param rule_id: The rule_id of this CreateRuleResponse.
         :type rule_id: str

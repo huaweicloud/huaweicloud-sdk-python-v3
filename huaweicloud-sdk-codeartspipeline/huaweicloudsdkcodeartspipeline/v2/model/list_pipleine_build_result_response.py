@@ -36,13 +36,13 @@ class ListPipleineBuildResultResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移量,表示从此偏移量开始查询,offset大于等于0
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询。 **取值范围**： offset大于等于0。 
         :type offset: int
-        :param limit: 每次查询的条目数量
+        :param limit: **参数解释**： 每次查询的条目数量。 **取值范围**： 大于等于0。 
         :type limit: int
-        :param total: 总条目数量
+        :param total: **参数解释**： 总条目数量。 **取值范围**： 不涉及。 
         :type total: int
-        :param build_results: 执行状况数据列表
+        :param build_results: **参数解释**： 执行状况数据列表。 **取值范围**： 不涉及。 
         :type build_results: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineBuildResult`]
         """
         
@@ -67,7 +67,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListPipleineBuildResultResponse.
 
-        偏移量,表示从此偏移量开始查询,offset大于等于0
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **取值范围**： offset大于等于0。 
 
         :return: The offset of this ListPipleineBuildResultResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListPipleineBuildResultResponse.
 
-        偏移量,表示从此偏移量开始查询,offset大于等于0
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **取值范围**： offset大于等于0。 
 
         :param offset: The offset of this ListPipleineBuildResultResponse.
         :type offset: int
@@ -89,7 +89,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
     def limit(self):
         r"""Gets the limit of this ListPipleineBuildResultResponse.
 
-        每次查询的条目数量
+        **参数解释**： 每次查询的条目数量。 **取值范围**： 大于等于0。 
 
         :return: The limit of this ListPipleineBuildResultResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
     def limit(self, limit):
         r"""Sets the limit of this ListPipleineBuildResultResponse.
 
-        每次查询的条目数量
+        **参数解释**： 每次查询的条目数量。 **取值范围**： 大于等于0。 
 
         :param limit: The limit of this ListPipleineBuildResultResponse.
         :type limit: int
@@ -111,7 +111,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListPipleineBuildResultResponse.
 
-        总条目数量
+        **参数解释**： 总条目数量。 **取值范围**： 不涉及。 
 
         :return: The total of this ListPipleineBuildResultResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListPipleineBuildResultResponse.
 
-        总条目数量
+        **参数解释**： 总条目数量。 **取值范围**： 不涉及。 
 
         :param total: The total of this ListPipleineBuildResultResponse.
         :type total: int
@@ -133,7 +133,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
     def build_results(self):
         r"""Gets the build_results of this ListPipleineBuildResultResponse.
 
-        执行状况数据列表
+        **参数解释**： 执行状况数据列表。 **取值范围**： 不涉及。 
 
         :return: The build_results of this ListPipleineBuildResultResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineBuildResult`]
@@ -144,7 +144,7 @@ class ListPipleineBuildResultResponse(SdkResponse):
     def build_results(self, build_results):
         r"""Sets the build_results of this ListPipleineBuildResultResponse.
 
-        执行状况数据列表
+        **参数解释**： 执行状况数据列表。 **取值范围**： 不涉及。 
 
         :param build_results: The build_results of this ListPipleineBuildResultResponse.
         :type build_results: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineBuildResult`]

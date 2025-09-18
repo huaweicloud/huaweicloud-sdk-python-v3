@@ -20,17 +20,19 @@ class UpdateBandwidthPackage:
         'name': 'str',
         'description': 'str',
         'bandwidth': 'int',
-        'billing_mode': 'int'
+        'billing_mode': 'int',
+        'prepaid_options': 'UpdatePrepaidOptions'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'bandwidth': 'bandwidth',
-        'billing_mode': 'billing_mode'
+        'billing_mode': 'billing_mode',
+        'prepaid_options': 'prepaid_options'
     }
 
-    def __init__(self, name=None, description=None, bandwidth=None, billing_mode=None):
+    def __init__(self, name=None, description=None, bandwidth=None, billing_mode=None, prepaid_options=None):
         r"""UpdateBandwidthPackage
 
         The model defined in huaweicloud sdk
@@ -41,8 +43,10 @@ class UpdateBandwidthPackage:
         :type description: str
         :param bandwidth: 带宽包实例中的带宽值。
         :type bandwidth: int
-        :param billing_mode: 带宽包实例在大陆站或国际站的计费方式： - 5：大陆站按95方式计费 - 6：国际站按95方式计费
+        :param billing_mode: 带宽包实例在大陆站或国际站的计费方式： - 1：大陆站包周期 - 2：国际站包周期 - 5：大陆站按95方式计费 - 6：国际站按95方式计费
         :type billing_mode: int
+        :param prepaid_options: 
+        :type prepaid_options: :class:`huaweicloudsdkcc.v3.UpdatePrepaidOptions`
         """
         
         
@@ -51,6 +55,7 @@ class UpdateBandwidthPackage:
         self._description = None
         self._bandwidth = None
         self._billing_mode = None
+        self._prepaid_options = None
         self.discriminator = None
 
         if name is not None:
@@ -61,6 +66,8 @@ class UpdateBandwidthPackage:
             self.bandwidth = bandwidth
         if billing_mode is not None:
             self.billing_mode = billing_mode
+        if prepaid_options is not None:
+            self.prepaid_options = prepaid_options
 
     @property
     def name(self):
@@ -132,7 +139,7 @@ class UpdateBandwidthPackage:
     def billing_mode(self):
         r"""Gets the billing_mode of this UpdateBandwidthPackage.
 
-        带宽包实例在大陆站或国际站的计费方式： - 5：大陆站按95方式计费 - 6：国际站按95方式计费
+        带宽包实例在大陆站或国际站的计费方式： - 1：大陆站包周期 - 2：国际站包周期 - 5：大陆站按95方式计费 - 6：国际站按95方式计费
 
         :return: The billing_mode of this UpdateBandwidthPackage.
         :rtype: int
@@ -143,12 +150,30 @@ class UpdateBandwidthPackage:
     def billing_mode(self, billing_mode):
         r"""Sets the billing_mode of this UpdateBandwidthPackage.
 
-        带宽包实例在大陆站或国际站的计费方式： - 5：大陆站按95方式计费 - 6：国际站按95方式计费
+        带宽包实例在大陆站或国际站的计费方式： - 1：大陆站包周期 - 2：国际站包周期 - 5：大陆站按95方式计费 - 6：国际站按95方式计费
 
         :param billing_mode: The billing_mode of this UpdateBandwidthPackage.
         :type billing_mode: int
         """
         self._billing_mode = billing_mode
+
+    @property
+    def prepaid_options(self):
+        r"""Gets the prepaid_options of this UpdateBandwidthPackage.
+
+        :return: The prepaid_options of this UpdateBandwidthPackage.
+        :rtype: :class:`huaweicloudsdkcc.v3.UpdatePrepaidOptions`
+        """
+        return self._prepaid_options
+
+    @prepaid_options.setter
+    def prepaid_options(self, prepaid_options):
+        r"""Sets the prepaid_options of this UpdateBandwidthPackage.
+
+        :param prepaid_options: The prepaid_options of this UpdateBandwidthPackage.
+        :type prepaid_options: :class:`huaweicloudsdkcc.v3.UpdatePrepaidOptions`
+        """
+        self._prepaid_options = prepaid_options
 
     def to_dict(self):
         """Returns the model properties as a dict"""

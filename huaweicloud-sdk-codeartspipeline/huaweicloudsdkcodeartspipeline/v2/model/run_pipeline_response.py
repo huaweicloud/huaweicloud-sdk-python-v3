@@ -30,7 +30,7 @@ class RunPipelineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param pipeline_run_id: 
+        :param pipeline_run_id: **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type pipeline_run_id: str
         """
         
@@ -46,6 +46,8 @@ class RunPipelineResponse(SdkResponse):
     def pipeline_run_id(self):
         r"""Gets the pipeline_run_id of this RunPipelineResponse.
 
+        **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
+
         :return: The pipeline_run_id of this RunPipelineResponse.
         :rtype: str
         """
@@ -54,6 +56,8 @@ class RunPipelineResponse(SdkResponse):
     @pipeline_run_id.setter
     def pipeline_run_id(self, pipeline_run_id):
         r"""Sets the pipeline_run_id of this RunPipelineResponse.
+
+        **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param pipeline_run_id: The pipeline_run_id of this RunPipelineResponse.
         :type pipeline_run_id: str

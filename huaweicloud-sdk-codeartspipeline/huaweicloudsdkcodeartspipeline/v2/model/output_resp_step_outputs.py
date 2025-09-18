@@ -31,9 +31,9 @@ class OutputRespStepOutputs:
 
         The model defined in huaweicloud sdk
 
-        :param step_run_id: 
+        :param step_run_id: **参数解释**： 步骤ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type step_run_id: str
-        :param output_result: 
+        :param output_result: **参数解释**： 步骤输出。 **取值范围**： 不涉及。 
         :type output_result: list[:class:`huaweicloudsdkcodeartspipeline.v2.OutputRespOutputResult`]
         """
         
@@ -52,6 +52,8 @@ class OutputRespStepOutputs:
     def step_run_id(self):
         r"""Gets the step_run_id of this OutputRespStepOutputs.
 
+        **参数解释**： 步骤ID。 **取值范围**： 32位字符，由数字和字母组成。 
+
         :return: The step_run_id of this OutputRespStepOutputs.
         :rtype: str
         """
@@ -60,6 +62,8 @@ class OutputRespStepOutputs:
     @step_run_id.setter
     def step_run_id(self, step_run_id):
         r"""Sets the step_run_id of this OutputRespStepOutputs.
+
+        **参数解释**： 步骤ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param step_run_id: The step_run_id of this OutputRespStepOutputs.
         :type step_run_id: str
@@ -70,6 +74,8 @@ class OutputRespStepOutputs:
     def output_result(self):
         r"""Gets the output_result of this OutputRespStepOutputs.
 
+        **参数解释**： 步骤输出。 **取值范围**： 不涉及。 
+
         :return: The output_result of this OutputRespStepOutputs.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.OutputRespOutputResult`]
         """
@@ -78,6 +84,8 @@ class OutputRespStepOutputs:
     @output_result.setter
     def output_result(self, output_result):
         r"""Sets the output_result of this OutputRespStepOutputs.
+
+        **参数解释**： 步骤输出。 **取值范围**： 不涉及。 
 
         :param output_result: The output_result of this OutputRespStepOutputs.
         :type output_result: list[:class:`huaweicloudsdkcodeartspipeline.v2.OutputRespOutputResult`]

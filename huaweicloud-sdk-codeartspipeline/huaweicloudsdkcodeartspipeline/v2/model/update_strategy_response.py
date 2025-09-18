@@ -32,9 +32,9 @@ class UpdateStrategyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态
+        :param status: **参数解释**： 是否调用成功。 **取值范围**： - true：调用成功。 - false：调用失败。 
         :type status: bool
-        :param rule_set_id: 策略ID
+        :param rule_set_id: **参数解释**： 策略ID，策略的唯一标识，通过[获取策略列表](ListStrategy.xml)接口获取，data.id即为策略ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type rule_set_id: str
         """
         
@@ -53,7 +53,7 @@ class UpdateStrategyResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this UpdateStrategyResponse.
 
-        状态
+        **参数解释**： 是否调用成功。 **取值范围**： - true：调用成功。 - false：调用失败。 
 
         :return: The status of this UpdateStrategyResponse.
         :rtype: bool
@@ -64,7 +64,7 @@ class UpdateStrategyResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this UpdateStrategyResponse.
 
-        状态
+        **参数解释**： 是否调用成功。 **取值范围**： - true：调用成功。 - false：调用失败。 
 
         :param status: The status of this UpdateStrategyResponse.
         :type status: bool
@@ -75,7 +75,7 @@ class UpdateStrategyResponse(SdkResponse):
     def rule_set_id(self):
         r"""Gets the rule_set_id of this UpdateStrategyResponse.
 
-        策略ID
+        **参数解释**： 策略ID，策略的唯一标识，通过[获取策略列表](ListStrategy.xml)接口获取，data.id即为策略ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The rule_set_id of this UpdateStrategyResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class UpdateStrategyResponse(SdkResponse):
     def rule_set_id(self, rule_set_id):
         r"""Sets the rule_set_id of this UpdateStrategyResponse.
 
-        策略ID
+        **参数解释**： 策略ID，策略的唯一标识，通过[获取策略列表](ListStrategy.xml)接口获取，data.id即为策略ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param rule_set_id: The rule_set_id of this UpdateStrategyResponse.
         :type rule_set_id: str

@@ -19,26 +19,30 @@ class NewExtensionOutputs:
     openapi_types = {
         'name': 'str',
         'type': 'str',
-        'description': 'str'
+        'description': 'str',
+        'prop': 'dict(str, str)'
     }
 
     attribute_map = {
         'name': 'name',
         'type': 'type',
-        'description': 'description'
+        'description': 'description',
+        'prop': 'prop'
     }
 
-    def __init__(self, name=None, type=None, description=None):
+    def __init__(self, name=None, type=None, description=None, prop=None):
         r"""NewExtensionOutputs
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: **参数解释**： 名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param type: 类型
+        :param type: **参数解释**： 类型。 **取值范围**： 不涉及。 
         :type type: str
-        :param description: 描述
+        :param description: **参数解释**： 描述。 **取值范围**： 不涉及。 
         :type description: str
+        :param prop: **参数解释**： 扩展信息定义。 **取值范围**： 不涉及。 
+        :type prop: dict(str, str)
         """
         
         
@@ -46,6 +50,7 @@ class NewExtensionOutputs:
         self._name = None
         self._type = None
         self._description = None
+        self._prop = None
         self.discriminator = None
 
         if name is not None:
@@ -54,12 +59,14 @@ class NewExtensionOutputs:
             self.type = type
         if description is not None:
             self.description = description
+        if prop is not None:
+            self.prop = prop
 
     @property
     def name(self):
         r"""Gets the name of this NewExtensionOutputs.
 
-        名称
+        **参数解释**： 名称。 **取值范围**： 不涉及。 
 
         :return: The name of this NewExtensionOutputs.
         :rtype: str
@@ -70,7 +77,7 @@ class NewExtensionOutputs:
     def name(self, name):
         r"""Sets the name of this NewExtensionOutputs.
 
-        名称
+        **参数解释**： 名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this NewExtensionOutputs.
         :type name: str
@@ -81,7 +88,7 @@ class NewExtensionOutputs:
     def type(self):
         r"""Gets the type of this NewExtensionOutputs.
 
-        类型
+        **参数解释**： 类型。 **取值范围**： 不涉及。 
 
         :return: The type of this NewExtensionOutputs.
         :rtype: str
@@ -92,7 +99,7 @@ class NewExtensionOutputs:
     def type(self, type):
         r"""Sets the type of this NewExtensionOutputs.
 
-        类型
+        **参数解释**： 类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this NewExtensionOutputs.
         :type type: str
@@ -103,7 +110,7 @@ class NewExtensionOutputs:
     def description(self):
         r"""Gets the description of this NewExtensionOutputs.
 
-        描述
+        **参数解释**： 描述。 **取值范围**： 不涉及。 
 
         :return: The description of this NewExtensionOutputs.
         :rtype: str
@@ -114,12 +121,34 @@ class NewExtensionOutputs:
     def description(self, description):
         r"""Sets the description of this NewExtensionOutputs.
 
-        描述
+        **参数解释**： 描述。 **取值范围**： 不涉及。 
 
         :param description: The description of this NewExtensionOutputs.
         :type description: str
         """
         self._description = description
+
+    @property
+    def prop(self):
+        r"""Gets the prop of this NewExtensionOutputs.
+
+        **参数解释**： 扩展信息定义。 **取值范围**： 不涉及。 
+
+        :return: The prop of this NewExtensionOutputs.
+        :rtype: dict(str, str)
+        """
+        return self._prop
+
+    @prop.setter
+    def prop(self, prop):
+        r"""Sets the prop of this NewExtensionOutputs.
+
+        **参数解释**： 扩展信息定义。 **取值范围**： 不涉及。 
+
+        :param prop: The prop of this NewExtensionOutputs.
+        :type prop: dict(str, str)
+        """
+        self._prop = prop
 
     def to_dict(self):
         """Returns the model properties as a dict"""

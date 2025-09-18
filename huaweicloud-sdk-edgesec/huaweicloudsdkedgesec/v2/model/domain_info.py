@@ -20,9 +20,7 @@ class DomainInfo:
         'id': 'str',
         'domain_name': 'str',
         'enterprise_project_id': 'str',
-        'dispatch_status': 'str',
-        'web_name': 'str',
-        'description': 'str',
+        'dispatch_status': 'int',
         'policy_id': 'str',
         'protect_status': 'str',
         'create_time': 'int',
@@ -34,15 +32,13 @@ class DomainInfo:
         'domain_name': 'domain_name',
         'enterprise_project_id': 'enterprise_project_id',
         'dispatch_status': 'dispatch_status',
-        'web_name': 'web_name',
-        'description': 'description',
         'policy_id': 'policy_id',
         'protect_status': 'protect_status',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, id=None, domain_name=None, enterprise_project_id=None, dispatch_status=None, web_name=None, description=None, policy_id=None, protect_status=None, create_time=None, update_time=None):
+    def __init__(self, id=None, domain_name=None, enterprise_project_id=None, dispatch_status=None, policy_id=None, protect_status=None, create_time=None, update_time=None):
         r"""DomainInfo
 
         The model defined in huaweicloud sdk
@@ -53,12 +49,8 @@ class DomainInfo:
         :type domain_name: str
         :param enterprise_project_id: 企业项目id
         :type enterprise_project_id: str
-        :param dispatch_status: - 调度状态: - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting
-        :type dispatch_status: str
-        :param web_name: 网站名称
-        :type web_name: str
-        :param description: 描述
-        :type description: str
+        :param dispatch_status: - 调度状态: - 1：调度中 - 2：已调度 - 3：删除中
+        :type dispatch_status: int
         :param policy_id: 策略id
         :type policy_id: str
         :param protect_status: - 防护状态: - 防护中：on - 未防护：off
@@ -75,8 +67,6 @@ class DomainInfo:
         self._domain_name = None
         self._enterprise_project_id = None
         self._dispatch_status = None
-        self._web_name = None
-        self._description = None
         self._policy_id = None
         self._protect_status = None
         self._create_time = None
@@ -91,10 +81,6 @@ class DomainInfo:
             self.enterprise_project_id = enterprise_project_id
         if dispatch_status is not None:
             self.dispatch_status = dispatch_status
-        if web_name is not None:
-            self.web_name = web_name
-        if description is not None:
-            self.description = description
         if policy_id is not None:
             self.policy_id = policy_id
         if protect_status is not None:
@@ -174,10 +160,10 @@ class DomainInfo:
     def dispatch_status(self):
         r"""Gets the dispatch_status of this DomainInfo.
 
-        - 调度状态: - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting
+        - 调度状态: - 1：调度中 - 2：已调度 - 3：删除中
 
         :return: The dispatch_status of this DomainInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._dispatch_status
 
@@ -185,56 +171,12 @@ class DomainInfo:
     def dispatch_status(self, dispatch_status):
         r"""Sets the dispatch_status of this DomainInfo.
 
-        - 调度状态: - 调度异常：dispatch_abnormal - 未调度：un_dispatch - 调度中：dispatching - 已调度：dispatched - 删除中：dispatch_deleting
+        - 调度状态: - 1：调度中 - 2：已调度 - 3：删除中
 
         :param dispatch_status: The dispatch_status of this DomainInfo.
-        :type dispatch_status: str
+        :type dispatch_status: int
         """
         self._dispatch_status = dispatch_status
-
-    @property
-    def web_name(self):
-        r"""Gets the web_name of this DomainInfo.
-
-        网站名称
-
-        :return: The web_name of this DomainInfo.
-        :rtype: str
-        """
-        return self._web_name
-
-    @web_name.setter
-    def web_name(self, web_name):
-        r"""Sets the web_name of this DomainInfo.
-
-        网站名称
-
-        :param web_name: The web_name of this DomainInfo.
-        :type web_name: str
-        """
-        self._web_name = web_name
-
-    @property
-    def description(self):
-        r"""Gets the description of this DomainInfo.
-
-        描述
-
-        :return: The description of this DomainInfo.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        r"""Sets the description of this DomainInfo.
-
-        描述
-
-        :param description: The description of this DomainInfo.
-        :type description: str
-        """
-        self._description = description
 
     @property
     def policy_id(self):

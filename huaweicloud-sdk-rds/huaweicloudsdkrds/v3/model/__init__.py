@@ -307,6 +307,8 @@ from huaweicloudsdkrds.v3.model.list_instance_tags_request import ListInstanceTa
 from huaweicloudsdkrds.v3.model.list_instance_tags_response import ListInstanceTagsResponse
 from huaweicloudsdkrds.v3.model.list_instances_info_diagnosis_request import ListInstancesInfoDiagnosisRequest
 from huaweicloudsdkrds.v3.model.list_instances_info_diagnosis_response import ListInstancesInfoDiagnosisResponse
+from huaweicloudsdkrds.v3.model.list_instances_no_index_tables_request import ListInstancesNoIndexTablesRequest
+from huaweicloudsdkrds.v3.model.list_instances_no_index_tables_response import ListInstancesNoIndexTablesResponse
 from huaweicloudsdkrds.v3.model.list_instances_request import ListInstancesRequest
 from huaweicloudsdkrds.v3.model.list_instances_response import ListInstancesResponse
 from huaweicloudsdkrds.v3.model.list_instances_support_fast_restore_request import ListInstancesSupportFastRestoreRequest
@@ -627,6 +629,8 @@ from huaweicloudsdkrds.v3.model.show_second_level_monitoring_request import Show
 from huaweicloudsdkrds.v3.model.show_second_level_monitoring_response import ShowSecondLevelMonitoringResponse
 from huaweicloudsdkrds.v3.model.show_storage_used_space_request import ShowStorageUsedSpaceRequest
 from huaweicloudsdkrds.v3.model.show_storage_used_space_response import ShowStorageUsedSpaceResponse
+from huaweicloudsdkrds.v3.model.show_task_detail_request import ShowTaskDetailRequest
+from huaweicloudsdkrds.v3.model.show_task_detail_response import ShowTaskDetailResponse
 from huaweicloudsdkrds.v3.model.show_tde_status_request import ShowTdeStatusRequest
 from huaweicloudsdkrds.v3.model.show_tde_status_response import ShowTdeStatusResponse
 from huaweicloudsdkrds.v3.model.show_transfer_policy_request import ShowTransferPolicyRequest
@@ -680,6 +684,7 @@ from huaweicloudsdkrds.v3.model.stop_database_proxy_response import StopDatabase
 from huaweicloudsdkrds.v3.model.stop_instance_request import StopInstanceRequest
 from huaweicloudsdkrds.v3.model.stop_instance_response import StopInstanceResponse
 from huaweicloudsdkrds.v3.model.storage import Storage
+from huaweicloudsdkrds.v3.model.sub_task_info import SubTaskInfo
 from huaweicloudsdkrds.v3.model.support_fast_restore_list import SupportFastRestoreList
 from huaweicloudsdkrds.v3.model.switch_log_replay_request import SwitchLogReplayRequest
 from huaweicloudsdkrds.v3.model.switch_log_replay_request_body import SwitchLogReplayRequestBody
@@ -696,6 +701,7 @@ from huaweicloudsdkrds.v3.model.tag_with_key_value import TagWithKeyValue
 from huaweicloudsdkrds.v3.model.target_config import TargetConfig
 from huaweicloudsdkrds.v3.model.target_instance_request import TargetInstanceRequest
 from huaweicloudsdkrds.v3.model.task import Task
+from huaweicloudsdkrds.v3.model.task_detail_request import TaskDetailRequest
 from huaweicloudsdkrds.v3.model.to_period_req import ToPeriodReq
 from huaweicloudsdkrds.v3.model.transfer_backup_request import TransferBackupRequest
 from huaweicloudsdkrds.v3.model.transfer_backup_request_body import TransferBackupRequestBody

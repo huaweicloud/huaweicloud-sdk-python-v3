@@ -1,3 +1,506 @@
+# 3.1.168 2025-09-18
+
+### HuaweiCloud SDK CBR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowBackup**
+    - changes of response param
+      - `+ backup.replication_records.extra_info.destination_vault_id`
+      - `- backup.replication_records.extra_info.destinatio_vault_id`
+  - **UpdateBackup**
+    - changes of response param
+      - `+ backup.replication_records.extra_info.destination_vault_id`
+      - `- backup.replication_records.extra_info.destinatio_vault_id`
+  - **ListBackups**
+    - changes of response param
+      - `+ backups.replication_records.extra_info.destination_vault_id`
+      - `- backups.replication_records.extra_info.destinatio_vault_id`
+  - **ListPolicies**
+    - changes of response param
+      - `+ policies.policy_type`
+  - **CreatePolicy**
+    - changes of response param
+      - `+ policy.policy_type`
+  - **ShowPolicy**
+    - changes of response param
+      - `+ policy.policy_type`
+  - **UpdatePolicy**
+    - changes of response param
+      - `+ policy.policy_type`
+
+### HuaweiCloud SDK CC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCloudConnectionQuotas**
+    - changes of request param
+      - `* quota_type: required -> optional`
+  - **ListCloudConnectionCapabilities**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ capabilities.is_support`
+      - `+ capabilities.support_sites`
+      - `+ capabilities.resource_type: enum value [enterprise-cloud-connection.is-support,enterprise-cloud-connection.support-sites,enterprise-cloud-connection-segment.is-support,enterprise-cloud-connection-dc-attachment.is-support]`
+      - `* capabilities.bandwidth: object<BandwidthCapability> -> object<CloudConnectionDomainBandwidthValue>`
+      - `* capabilities: list<CloudConnectionCapability> -> list<CloudConnectionCapabilityInfo>`
+  - **ListRegions**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ page_info`
+  - **ListAreas**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ page_info`
+  - **ListCloudConnections**
+    - changes of response param
+      - `+ cloud_connections.sites`
+      - `+ cloud_connections.site_peerings`
+  - **CreateCloudConnection**
+    - changes of response param
+      - `+ cloud_connection.sites`
+      - `+ cloud_connection.site_peerings`
+  - **ShowCloudConnection**
+    - changes of response param
+      - `+ cloud_connection.sites`
+      - `+ cloud_connection.site_peerings`
+  - **UpdateCloudConnection**
+    - changes of response param
+      - `+ cloud_connection.sites`
+      - `+ cloud_connection.site_peerings`
+  - **ListCloudConnectionsByTags**
+    - changes of response param
+      - `+ cloud_connections.sites`
+      - `+ cloud_connections.site_peerings`
+  - **ListBandwidthPackages**
+    - changes of response param
+      - `+ bandwidth_packages.billing_mode: enum value [7,8]`
+  - **CreateBandwidthPackage**
+    - changes of request param
+      - `+ bandwidth_package.prepaid_options`
+      - `+ bandwidth_package.billing_mode: enum value [1,2]`
+    - changes of response param
+      - `+ bandwidth_package.billing_mode: enum value [7,8]`
+  - **ShowBandwidthPackage**
+    - changes of response param
+      - `+ bandwidth_package.billing_mode: enum value [7,8]`
+  - **UpdateBandwidthPackage**
+    - changes of request param
+      - `+ bandwidth_package.prepaid_options`
+      - `+ bandwidth_package.billing_mode: enum value [1,2]`
+    - changes of response param
+      - `+ bandwidth_package.billing_mode: enum value [7,8]`
+  - **ListBandwidthPackagesByTags**
+    - changes of response param
+      - `+ bandwidth_packages.billing_mode: enum value [7,8]`
+  - **AssociateBandwidthPackage**
+    - changes of response param
+      - `+ bandwidth_package.billing_mode: enum value [7,8]`
+  - **DisassociateBandwidthPackage**
+    - changes of response param
+      - `+ bandwidth_package.billing_mode: enum value [7,8]`
+  - **ListRegionBandwidthPackageSpecifications**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ region_specifications.spec_codes.billing_mode: enum value [7,8]`
+  - **ListAreaBandwidthPackageSpecifications**
+    - changes of request param
+      - `+ offset`
+    - changes of response param
+      - `+ area_specifications.spec_codes.billing_mode: enum value [7,8]`
+  - **ListGlobalConnectionBandwidths**
+    - changes of response param
+      - `+ globalconnection_bandwidths.directional_connections`
+  - **CreateGlobalConnectionBandwidth**
+    - changes of response param
+      - `+ globalconnection_bandwidth.directional_connections`
+  - **ShowGlobalConnectionBandwidth**
+    - changes of response param
+      - `+ globalconnection_bandwidth.directional_connections`
+  - **UpdateGlobalConnectionBandwidth**
+    - changes of response param
+      - `+ globalconnection_bandwidth.directional_connections`
+  - **ListSupportBindingConnectionBandwidths**
+    - changes of response param
+      - `+ globalconnection_bandwidths.directional_connections`
+  - **ListBandwidthPackageLines**
+    - changes of response param
+      - `+ bandwidth_package_lines.spec_codes.support_billing_modes: enum value [7,8]`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `CheckDeployStatus`, `StopDeployTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEnvironments**
+    - changes of response param
+      - `+ result.project_id`
+  - **ShowEnvironmentDetail**
+    - changes of response param
+      - `+ result.project_id`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ShowActionsRunsDetail`
+    - `DeleteActionsRunPipeline`
+    - `RunActionsPipeline`
+    - `RetryRunActionsPipeline`
+    - `ListActionsPipelineRuns`
+    - `ListActionsPipelineRunsByRunIds`
+- _Bug Fix_
+  - None
+- _Change_
+  - **RunPipeline**
+    - changes of request param
+      - `+ sources.params.change_request_ids`
+  - **ListPipelines**
+    - changes of request param
+      - `+ project_id`
+      - `+ creator_id`
+      - `+ is_banned`
+      - `+ security_level_list`
+    - changes of response param
+      - `+ pipelines.security_level`
+  - **CreatePipelineTemplate**
+    - changes of request param
+      - `* variables: object<CustomVariable> -> list<CustomVariable>`
+  - **CreatePluginDraft**
+    - changes of request param
+      - `+ plugin_composition_type`
+      - `+ manifest_version`
+      - `+ output_info`
+      - `+ execution_info.inner_execution_info.execution_type`
+      - `+ execution_info.inner_execution_info.steps`
+  - **CreatePluginVersion**
+    - changes of request param
+      - `+ plugin_composition_type`
+      - `+ manifest_version`
+      - `+ output_info`
+      - `+ execution_info.inner_execution_info.execution_type`
+      - `+ execution_info.inner_execution_info.steps`
+  - **UpdatePluginDraft**
+    - changes of request param
+      - `+ plugin_composition_type`
+      - `+ manifest_version`
+      - `+ output_info`
+      - `+ execution_info.inner_execution_info.execution_type`
+      - `+ execution_info.inner_execution_info.steps`
+  - **ListStagePlugins**
+    - changes of response param
+      - `+ full_stage_plugins_item_list.plugins_list.db_record_name`
+      - `+ full_stage_plugins_item_list.plugins_list.location`
+      - `+ full_stage_plugins_item_list.plugins_list.publisher_unique_id`
+      - `+ full_stage_plugins_item_list.plugins_list.manifest_version`
+  - **ListBasePluginsNewPost**
+    - changes of response param
+      - `+ data.addables`
+      - `+ data.plugins_list.standard`
+      - `+ data.plugins_list.db_record_name`
+  - **ShowPipelineLog**
+    - changes of response param
+      - `- location`
+  - **ListPipelineTemplates**
+    - changes of response param
+      - `- templates.create_time`
+      - `- templates.update_time`
+  - **UpdatePipelineTemplate**
+    - changes of request param
+      - `* variables: object<CustomVariable> -> list<CustomVariable>`
+  - **ShowPipelineTemplateDetail**
+    - changes of response param
+      - `- create_time`
+      - `- update_time`
+  - **ListProjectStrategy**
+    - changes of response param
+      - `+ data.is_legacy`
+  - **ListStrategy**
+    - changes of response param
+      - `+ data.is_legacy`
+  - **CreatePipelineByTemplateId**
+    - changes of request param
+      - `+ security_level`
+      - `+ confidentiality_code`
+      - `* variables.name: string -> object`
+  - **ListPlugins**
+    - changes of response param
+      - `+ data.db_record_name`
+      - `+ data.version_state`
+      - `+ data.publisher_unique_id`
+      - `+ data.creator`
+      - `+ data.create_time`
+      - `+ data.manifest_version`
+  - **ShowPluginInputs**
+    - changes of response param
+      - `+ data.extend_prop`
+      - `+ data.front_data_prop`
+      - `+ data.label`
+      - `+ data.description`
+      - `+ data.required`
+  - **ListPLuginVersion**
+    - changes of response param
+      - `+ data.db_record_name`
+      - `+ data.version_state`
+      - `+ data.publisher_unique_id`
+      - `+ data.creator`
+      - `+ data.create_time`
+      - `+ data.manifest_version`
+  - **ShowPluginVersion**
+    - changes of response param
+      - `+ plugin_execution.type`
+      - `+ plugin_execution.target`
+      - `+ plugin_execution.file_path`
+      - `* plugin_execution: object -> object<PluginExecutionVO>`
+  - **ShowBasicPlugin**
+    - changes of response param
+      - `+ data_source_bindings`
+      - `+ outputs.prop`
+      - `+ inputs.extend_prop.show_placeholder`
+  - **CreatePipelineNew**
+    - changes of request param
+      - `+ security_level`
+      - `* schedules.enable: string -> boolean`
+  - **ShowPipelineRunDetail**
+    - changes of response param
+      - `* stages.jobs.async: boolean -> string`
+  - **ShowPipelineDetail**
+    - changes of response param
+      - `+ security_level`
+      - `* schedules.enable: string -> boolean`
+  - **UpdatePipelineInfo**
+    - changes of request param
+      - `+ security_level`
+      - `* schedules.enable: string -> boolean`
+  - **ShowRule**
+    - changes of response param
+      - `+ is_valid`
+      - `- layout_content`
+      - `+ content.properties.is_valid`
+  - **UpdateRule**
+    - changes of request param
+      - `- layout_content`
+      - `+ content.properties.is_valid`
+  - **CreateRule**
+    - changes of request param
+      - `+ content.properties.is_valid`
+  - **ShowProjectStrategy**
+    - changes of response param
+      - `+ level`
+      - `+ is_legacy`
+      - `+ is_public`
+      - `+ rule_instances.parent.is_legacy`
+      - `+ rule_instances.content.editable`
+  - **ShowStrategy**
+    - changes of response param
+      - `+ level`
+      - `+ is_legacy`
+      - `+ is_public`
+      - `+ rule_instances.parent.is_legacy`
+      - `+ rule_instances.content.editable`
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **SetAutoEnlargePolicies**
+    - changes of request param
+      - `+ policies.size`
+      - `* policies: list<DiskAutoExpansionPolicy> -> list<DiskSetAutoExpansionPolicy>`
+  - **ShowAutoEnlargePolicy**
+    - changes of response param
+      - `+ policy.size`
+
+### HuaweiCloud SDK DWR
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ScaleStore`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK EdgeSec
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomains**
+    - changes of response param
+      - `- domain_list.web_name`
+      - `- domain_list.description`
+      - `* domain_list.dispatch_status: string -> int32`
+  - **UpdateHttpBlockTrustIpRule**
+    - changes of request param
+      - `- status`
+  - **UpdateHttpCcRule**
+    - changes of request param
+      - `+ tag_type: enum value [header,ip_segment_c]`
+  - **UpdateHttpAccessControlRule**
+    - changes of request param
+      - `+ time_mode`
+      - `+ period_type`
+      - `+ time_range`
+      - `+ time_zone`
+      - `- time`
+  - **CreateHttpCcRule**
+    - changes of request param
+      - `+ tag_type: enum value [ip,cookie,header,ip_segment_c]`
+  - **CreateHttpAccessControlRule**
+    - changes of request param
+      - `+ time_mode`
+      - `+ period_type`
+      - `+ time_range`
+      - `+ time_zone`
+      - `- time`
+
+### HuaweiCloud SDK MPC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ListEncryptTask`, `CreateEncryptTask`, `DeleteEncryptTask`
+  - **CreateTranscodingTask**
+    - changes of request param
+      - `+ metadata`
+      - `+ av_parameters.video.buf_size`
+      - `+ av_parameters.video.frame_rate_float`
+  - **ListTranscodingTask**
+    - changes of response param
+      - `+ task_array.metadata`
+      - `+ task_array.av_parameters.video.buf_size`
+      - `+ task_array.av_parameters.video.frame_rate_float`
+  - **ListTranscodeDetail**
+    - changes of response param
+      - `+ task_array.media_detail.metadata`
+  - **CreateEditingJob**
+    - changes of request param
+      - `+ concats.av_parameters.video.buf_size`
+      - `+ concats.av_parameters.video.frame_rate_float`
+  - **ListEditingJob**
+    - changes of response param
+      - `+ jobs.edit_task_req.concats.av_parameters.video.buf_size`
+      - `+ jobs.edit_task_req.concats.av_parameters.video.frame_rate_float`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ListInstancesNoIndexTables`, `ShowTaskDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RocketMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEngineProducts**
+    - changes of request param
+      - `* product_id: required -> optional`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `BatchDeletePolicies`
+    - `ShowSecurityReportContent`
+    - `ListSecurityReportSendingRecords`
+    - `CopyPolicyById`
+    - `ListBotMRules`
+    - `ShowSecurityReportSubscription`
+    - `UpdateSecurityReportSubscription`
+    - `DeleteSecurityReportSubscription`
+    - `BatchDeleteCompositeHosts`
+    - `ListSecurityReportHistoryPeriods`
+    - `UpdateBotMCategoryStatus`
+    - `CreateSecurityReportSubscription`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowCcRule**
+    - changes of response param
+      - `+ conditions.category: enum value [asn,referer,user-agent,response_code,response_header,response_body,request_body,method,tls_fingerprint,tls_ja3_fingerprint]`
+  - **UpdateCcRule**
+    - changes of request param
+      - `+ conditions.category: enum value [asn,referer,user-agent,response_code,response_header,response_body,request_body,method,tls_fingerprint,tls_ja3_fingerprint]`
+    - changes of response param
+      - `+ conditions.category: enum value [asn,referer,user-agent,response_code,response_header,response_body,request_body,method,tls_fingerprint,tls_ja3_fingerprint]`
+  - **DeleteCcRule**
+    - changes of response param
+      - `+ conditions.category: enum value [asn,referer,user-agent,response_code,response_header,response_body,request_body,method,tls_fingerprint,tls_ja3_fingerprint]`
+  - **ShowLtsInfoConfig**
+    - changes of response param
+      - `- enabale`
+  - **UpdateLtsInfoConfig**
+    - changes of request param
+      - `- enabale`
+    - changes of response param
+      - `- enabale`
+  - **UpdatePremiumInstance**
+    - changes of request param
+      - `+ params`
+    - changes of response param
+      - `+ security_group_ids`
+      - `- securityGroupId`
+      - `- mgrSecurityGroupId`
+  - **CreateCcRule**
+    - changes of request param
+      - `+ conditions.category: enum value [asn,referer,user-agent,response_code,response_header,response_body,request_body,method,tls_fingerprint,tls_ja3_fingerprint]`
+    - changes of response param
+      - `+ conditions.category: enum value [asn,referer,user-agent,response_code,response_header,response_body,request_body,method,tls_fingerprint,tls_ja3_fingerprint]`
+  - **ListCcRules**
+    - changes of response param
+      - `+ items.conditions.category: enum value [asn,referer,user-agent,response_code,response_header,response_body,request_body,method,tls_fingerprint,tls_ja3_fingerprint]`
+
 # 3.1.167 2025-09-11
 
 ### HuaweiCloud SDK BMS

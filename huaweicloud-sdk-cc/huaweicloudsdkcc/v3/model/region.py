@@ -41,11 +41,11 @@ class Region:
         :type name: str
         :param area_id: 
         :type area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
-        :param id: Region ID。
+        :param id: 区域ID。
         :type id: str
-        :param area_name: 大区名。
+        :param area_name: 大区名称。
         :type area_name: str
-        :param used_scenes: 云连接使用场景 er vpc vgw。
+        :param used_scenes: 云连接使用场景。  - er（企业路由器） - vpc（虚拟私有云） - vgw（虚拟网关）
         :type used_scenes: list[str]
         """
         
@@ -111,7 +111,7 @@ class Region:
     def id(self):
         r"""Gets the id of this Region.
 
-        Region ID。
+        区域ID。
 
         :return: The id of this Region.
         :rtype: str
@@ -122,7 +122,7 @@ class Region:
     def id(self, id):
         r"""Sets the id of this Region.
 
-        Region ID。
+        区域ID。
 
         :param id: The id of this Region.
         :type id: str
@@ -133,7 +133,7 @@ class Region:
     def area_name(self):
         r"""Gets the area_name of this Region.
 
-        大区名。
+        大区名称。
 
         :return: The area_name of this Region.
         :rtype: str
@@ -144,7 +144,7 @@ class Region:
     def area_name(self, area_name):
         r"""Sets the area_name of this Region.
 
-        大区名。
+        大区名称。
 
         :param area_name: The area_name of this Region.
         :type area_name: str
@@ -155,7 +155,7 @@ class Region:
     def used_scenes(self):
         r"""Gets the used_scenes of this Region.
 
-        云连接使用场景 er vpc vgw。
+        云连接使用场景。  - er（企业路由器） - vpc（虚拟私有云） - vgw（虚拟网关）
 
         :return: The used_scenes of this Region.
         :rtype: list[str]
@@ -166,7 +166,7 @@ class Region:
     def used_scenes(self, used_scenes):
         r"""Sets the used_scenes of this Region.
 
-        云连接使用场景 er vpc vgw。
+        云连接使用场景。  - er（企业路由器） - vpc（虚拟私有云） - vgw（虚拟网关）
 
         :param used_scenes: The used_scenes of this Region.
         :type used_scenes: list[str]

@@ -60,7 +60,8 @@ class ListEngineProductsRequest:
 
         self.engine = engine
         self.type = type
-        self.product_id = product_id
+        if product_id is not None:
+            self.product_id = product_id
         if limit is not None:
             self.limit = limit
         if offset is not None:

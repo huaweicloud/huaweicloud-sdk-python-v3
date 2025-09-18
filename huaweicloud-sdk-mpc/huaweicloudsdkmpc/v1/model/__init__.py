@@ -34,9 +34,6 @@ from huaweicloudsdkmpc.v1.model.create_animated_graphics_task_response import Cr
 from huaweicloudsdkmpc.v1.model.create_editing_job_req import CreateEditingJobReq
 from huaweicloudsdkmpc.v1.model.create_editing_job_request import CreateEditingJobRequest
 from huaweicloudsdkmpc.v1.model.create_editing_job_response import CreateEditingJobResponse
-from huaweicloudsdkmpc.v1.model.create_encrypt_req import CreateEncryptReq
-from huaweicloudsdkmpc.v1.model.create_encrypt_task_request import CreateEncryptTaskRequest
-from huaweicloudsdkmpc.v1.model.create_encrypt_task_response import CreateEncryptTaskResponse
 from huaweicloudsdkmpc.v1.model.create_extract_task_req import CreateExtractTaskReq
 from huaweicloudsdkmpc.v1.model.create_extract_task_request import CreateExtractTaskRequest
 from huaweicloudsdkmpc.v1.model.create_extract_task_response import CreateExtractTaskResponse
@@ -77,8 +74,6 @@ from huaweicloudsdkmpc.v1.model.delete_animated_graphics_task_request import Del
 from huaweicloudsdkmpc.v1.model.delete_animated_graphics_task_response import DeleteAnimatedGraphicsTaskResponse
 from huaweicloudsdkmpc.v1.model.delete_editing_job_request import DeleteEditingJobRequest
 from huaweicloudsdkmpc.v1.model.delete_editing_job_response import DeleteEditingJobResponse
-from huaweicloudsdkmpc.v1.model.delete_encrypt_task_request import DeleteEncryptTaskRequest
-from huaweicloudsdkmpc.v1.model.delete_encrypt_task_response import DeleteEncryptTaskResponse
 from huaweicloudsdkmpc.v1.model.delete_extract_task_request import DeleteExtractTaskRequest
 from huaweicloudsdkmpc.v1.model.delete_extract_task_response import DeleteExtractTaskResponse
 from huaweicloudsdkmpc.v1.model.delete_media_process_task_request import DeleteMediaProcessTaskRequest
@@ -103,7 +98,6 @@ from huaweicloudsdkmpc.v1.model.delete_transcoding_task_request import DeleteTra
 from huaweicloudsdkmpc.v1.model.delete_transcoding_task_response import DeleteTranscodingTaskResponse
 from huaweicloudsdkmpc.v1.model.delete_watermark_template_request import DeleteWatermarkTemplateRequest
 from huaweicloudsdkmpc.v1.model.delete_watermark_template_response import DeleteWatermarkTemplateResponse
-from huaweicloudsdkmpc.v1.model.each_encrypt_rsp import EachEncryptRsp
 from huaweicloudsdkmpc.v1.model.edit_audio_info import EditAudioInfo
 from huaweicloudsdkmpc.v1.model.edit_hls_info import EditHlsInfo
 from huaweicloudsdkmpc.v1.model.edit_setting import EditSetting
@@ -112,6 +106,7 @@ from huaweicloudsdkmpc.v1.model.editing_job import EditingJob
 from huaweicloudsdkmpc.v1.model.encryption import Encryption
 from huaweicloudsdkmpc.v1.model.error_response import ErrorResponse
 from huaweicloudsdkmpc.v1.model.extract_task import ExtractTask
+from huaweicloudsdkmpc.v1.model.file_meta_data import FileMetaData
 from huaweicloudsdkmpc.v1.model.hls_encrypt import HlsEncrypt
 from huaweicloudsdkmpc.v1.model.image_watermark import ImageWatermark
 from huaweicloudsdkmpc.v1.model.image_watermark_setting import ImageWatermarkSetting
@@ -124,8 +119,6 @@ from huaweicloudsdkmpc.v1.model.list_animated_graphics_task_request import ListA
 from huaweicloudsdkmpc.v1.model.list_animated_graphics_task_response import ListAnimatedGraphicsTaskResponse
 from huaweicloudsdkmpc.v1.model.list_editing_job_request import ListEditingJobRequest
 from huaweicloudsdkmpc.v1.model.list_editing_job_response import ListEditingJobResponse
-from huaweicloudsdkmpc.v1.model.list_encrypt_task_request import ListEncryptTaskRequest
-from huaweicloudsdkmpc.v1.model.list_encrypt_task_response import ListEncryptTaskResponse
 from huaweicloudsdkmpc.v1.model.list_extract_task_request import ListExtractTaskRequest
 from huaweicloudsdkmpc.v1.model.list_extract_task_response import ListExtractTaskResponse
 from huaweicloudsdkmpc.v1.model.list_media_process_task_request import ListMediaProcessTaskRequest

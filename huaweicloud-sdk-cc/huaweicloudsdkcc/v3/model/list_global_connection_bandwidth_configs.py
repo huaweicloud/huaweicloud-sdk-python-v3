@@ -29,7 +29,8 @@ class ListGlobalConnectionBandwidthConfigs:
         'bind_limit': 'int',
         'enable_area_bandwidth': 'bool',
         'enable_change_95': 'bool',
-        'enable_spec_code': 'bool'
+        'enable_spec_code': 'bool',
+        'ces_enabled': 'bool'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class ListGlobalConnectionBandwidthConfigs:
         'bind_limit': 'bind_limit',
         'enable_area_bandwidth': 'enable_area_bandwidth',
         'enable_change_95': 'enable_change_95',
-        'enable_spec_code': 'enable_spec_code'
+        'enable_spec_code': 'enable_spec_code',
+        'ces_enabled': 'ces_enabled'
     }
 
-    def __init__(self, size_range=None, charge_mode=None, services=None, gcb_type=None, ratio_95peak_plus=None, ratio_95peak_guar=None, crossborder=None, quotas=None, sla_level=None, bind_limit=None, enable_area_bandwidth=None, enable_change_95=None, enable_spec_code=None):
+    def __init__(self, size_range=None, charge_mode=None, services=None, gcb_type=None, ratio_95peak_plus=None, ratio_95peak_guar=None, crossborder=None, quotas=None, sla_level=None, bind_limit=None, enable_area_bandwidth=None, enable_change_95=None, enable_spec_code=None, ces_enabled=None):
         r"""ListGlobalConnectionBandwidthConfigs
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class ListGlobalConnectionBandwidthConfigs:
         :type enable_change_95: bool
         :param enable_spec_code: 是否支持多SKU产品功能。
         :type enable_spec_code: bool
+        :param ces_enabled: 是否支持CES监控。
+        :type ces_enabled: bool
         """
         
         
@@ -96,6 +100,7 @@ class ListGlobalConnectionBandwidthConfigs:
         self._enable_area_bandwidth = None
         self._enable_change_95 = None
         self._enable_spec_code = None
+        self._ces_enabled = None
         self.discriminator = None
 
         self.size_range = size_range
@@ -114,6 +119,8 @@ class ListGlobalConnectionBandwidthConfigs:
         self.enable_change_95 = enable_change_95
         if enable_spec_code is not None:
             self.enable_spec_code = enable_spec_code
+        if ces_enabled is not None:
+            self.ces_enabled = ces_enabled
 
     @property
     def size_range(self):
@@ -400,6 +407,28 @@ class ListGlobalConnectionBandwidthConfigs:
         :type enable_spec_code: bool
         """
         self._enable_spec_code = enable_spec_code
+
+    @property
+    def ces_enabled(self):
+        r"""Gets the ces_enabled of this ListGlobalConnectionBandwidthConfigs.
+
+        是否支持CES监控。
+
+        :return: The ces_enabled of this ListGlobalConnectionBandwidthConfigs.
+        :rtype: bool
+        """
+        return self._ces_enabled
+
+    @ces_enabled.setter
+    def ces_enabled(self, ces_enabled):
+        r"""Sets the ces_enabled of this ListGlobalConnectionBandwidthConfigs.
+
+        是否支持CES监控。
+
+        :param ces_enabled: The ces_enabled of this ListGlobalConnectionBandwidthConfigs.
+        :type ces_enabled: bool
+        """
+        self._ces_enabled = ces_enabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

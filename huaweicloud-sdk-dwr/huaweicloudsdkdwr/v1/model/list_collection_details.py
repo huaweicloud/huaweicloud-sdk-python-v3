@@ -39,7 +39,7 @@ class ListCollectionDetails:
 
         The model defined in huaweicloud sdk
 
-        :param collection_name: **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        :param collection_name: **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 ( _ )。资源名称必须以字母或下划线 ( _ ) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type collection_name: str
         :param index_num: **参数解释：** 索引数量。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type index_num: int
@@ -80,7 +80,7 @@ class ListCollectionDetails:
     def collection_name(self):
         r"""Gets the collection_name of this ListCollectionDetails.
 
-        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 ( _ )。资源名称必须以字母或下划线 ( _ ) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The collection_name of this ListCollectionDetails.
         :rtype: str
@@ -91,7 +91,7 @@ class ListCollectionDetails:
     def collection_name(self, collection_name):
         r"""Sets the collection_name of this ListCollectionDetails.
 
-        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 ( _ )。资源名称必须以字母或下划线 ( _ ) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param collection_name: The collection_name of this ListCollectionDetails.
         :type collection_name: str

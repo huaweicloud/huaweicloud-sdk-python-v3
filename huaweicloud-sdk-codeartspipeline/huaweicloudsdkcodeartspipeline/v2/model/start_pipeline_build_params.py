@@ -31,9 +31,9 @@ class StartPipelineBuildParams:
 
         The model defined in huaweicloud sdk
 
-        :param name: 构建参数名
+        :param name: **参数解释**： 构建参数名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type name: str
-        :param value: 构建参数值，最大长度为8192
+        :param value: **参数解释**： 构建参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192个字符。 **默认取值**： 不涉及。 
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class StartPipelineBuildParams:
     def name(self):
         r"""Gets the name of this StartPipelineBuildParams.
 
-        构建参数名
+        **参数解释**： 构建参数名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this StartPipelineBuildParams.
         :rtype: str
@@ -61,7 +61,7 @@ class StartPipelineBuildParams:
     def name(self, name):
         r"""Sets the name of this StartPipelineBuildParams.
 
-        构建参数名
+        **参数解释**： 构建参数名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this StartPipelineBuildParams.
         :type name: str
@@ -72,7 +72,7 @@ class StartPipelineBuildParams:
     def value(self):
         r"""Gets the value of this StartPipelineBuildParams.
 
-        构建参数值，最大长度为8192
+        **参数解释**： 构建参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192个字符。 **默认取值**： 不涉及。 
 
         :return: The value of this StartPipelineBuildParams.
         :rtype: str
@@ -83,7 +83,7 @@ class StartPipelineBuildParams:
     def value(self, value):
         r"""Sets the value of this StartPipelineBuildParams.
 
-        构建参数值，最大长度为8192
+        **参数解释**： 构建参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192个字符。 **默认取值**： 不涉及。 
 
         :param value: The value of this StartPipelineBuildParams.
         :type value: str

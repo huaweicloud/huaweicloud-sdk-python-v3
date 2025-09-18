@@ -20,18 +20,16 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'enabled': 'bool',
-        'lts_id_info': 'LtsIdInfo',
-        'enabale': 'bool'
+        'lts_id_info': 'LtsIdInfo'
     }
 
     attribute_map = {
         'id': 'id',
         'enabled': 'enabled',
-        'lts_id_info': 'ltsIdInfo',
-        'enabale': 'enabale'
+        'lts_id_info': 'ltsIdInfo'
     }
 
-    def __init__(self, id=None, enabled=None, lts_id_info=None, enabale=None):
+    def __init__(self, id=None, enabled=None, lts_id_info=None):
         r"""UpdateLtsInfoConfigResponse
 
         The model defined in huaweicloud sdk
@@ -42,8 +40,6 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
         :type enabled: bool
         :param lts_id_info: 
         :type lts_id_info: :class:`huaweicloudsdkwaf.v1.LtsIdInfo`
-        :param enabale: 该参数废弃，请忽略
-        :type enabale: bool
         """
         
         super(UpdateLtsInfoConfigResponse, self).__init__()
@@ -51,7 +47,6 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
         self._id = None
         self._enabled = None
         self._lts_id_info = None
-        self._enabale = None
         self.discriminator = None
 
         if id is not None:
@@ -60,8 +55,6 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
             self.enabled = enabled
         if lts_id_info is not None:
             self.lts_id_info = lts_id_info
-        if enabale is not None:
-            self.enabale = enabale
 
     @property
     def id(self):
@@ -124,28 +117,6 @@ class UpdateLtsInfoConfigResponse(SdkResponse):
         :type lts_id_info: :class:`huaweicloudsdkwaf.v1.LtsIdInfo`
         """
         self._lts_id_info = lts_id_info
-
-    @property
-    def enabale(self):
-        r"""Gets the enabale of this UpdateLtsInfoConfigResponse.
-
-        该参数废弃，请忽略
-
-        :return: The enabale of this UpdateLtsInfoConfigResponse.
-        :rtype: bool
-        """
-        return self._enabale
-
-    @enabale.setter
-    def enabale(self, enabale):
-        r"""Sets the enabale of this UpdateLtsInfoConfigResponse.
-
-        该参数废弃，请忽略
-
-        :param enabale: The enabale of this UpdateLtsInfoConfigResponse.
-        :type enabale: bool
-        """
-        self._enabale = enabale
 
     def to_dict(self):
         """Returns the model properties as a dict"""

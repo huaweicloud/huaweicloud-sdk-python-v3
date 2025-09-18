@@ -36,13 +36,13 @@ class ListPipelineTemplatesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 起始偏移
+        :param offset: **参数解释**： 起始偏移。 **取值范围**： 不涉及。 
         :type offset: int
-        :param limit: 每页大小
+        :param limit: **参数解释**： 查询大小。 **取值范围**： 不涉及。 
         :type limit: int
-        :param total: 总数
+        :param total: **参数解释**： 记录总数。 **取值范围**： 不涉及。 
         :type total: int
-        :param templates: 
+        :param templates: **参数解释**： 流水线模板列表，包含流水线模板的详细信息。 **取值范围**： 不涉及。 
         :type templates: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineTemplateSimpleVO`]
         """
         
@@ -67,7 +67,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListPipelineTemplatesResponse.
 
-        起始偏移
+        **参数解释**： 起始偏移。 **取值范围**： 不涉及。 
 
         :return: The offset of this ListPipelineTemplatesResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListPipelineTemplatesResponse.
 
-        起始偏移
+        **参数解释**： 起始偏移。 **取值范围**： 不涉及。 
 
         :param offset: The offset of this ListPipelineTemplatesResponse.
         :type offset: int
@@ -89,7 +89,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
     def limit(self):
         r"""Gets the limit of this ListPipelineTemplatesResponse.
 
-        每页大小
+        **参数解释**： 查询大小。 **取值范围**： 不涉及。 
 
         :return: The limit of this ListPipelineTemplatesResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
     def limit(self, limit):
         r"""Sets the limit of this ListPipelineTemplatesResponse.
 
-        每页大小
+        **参数解释**： 查询大小。 **取值范围**： 不涉及。 
 
         :param limit: The limit of this ListPipelineTemplatesResponse.
         :type limit: int
@@ -111,7 +111,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListPipelineTemplatesResponse.
 
-        总数
+        **参数解释**： 记录总数。 **取值范围**： 不涉及。 
 
         :return: The total of this ListPipelineTemplatesResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ListPipelineTemplatesResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListPipelineTemplatesResponse.
 
-        总数
+        **参数解释**： 记录总数。 **取值范围**： 不涉及。 
 
         :param total: The total of this ListPipelineTemplatesResponse.
         :type total: int
@@ -133,6 +133,8 @@ class ListPipelineTemplatesResponse(SdkResponse):
     def templates(self):
         r"""Gets the templates of this ListPipelineTemplatesResponse.
 
+        **参数解释**： 流水线模板列表，包含流水线模板的详细信息。 **取值范围**： 不涉及。 
+
         :return: The templates of this ListPipelineTemplatesResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineTemplateSimpleVO`]
         """
@@ -141,6 +143,8 @@ class ListPipelineTemplatesResponse(SdkResponse):
     @templates.setter
     def templates(self, templates):
         r"""Sets the templates of this ListPipelineTemplatesResponse.
+
+        **参数解释**： 流水线模板列表，包含流水线模板的详细信息。 **取值范围**： 不涉及。 
 
         :param templates: The templates of this ListPipelineTemplatesResponse.
         :type templates: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineTemplateSimpleVO`]

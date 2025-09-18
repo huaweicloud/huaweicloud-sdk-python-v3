@@ -35,13 +35,13 @@ class LogQuery:
 
         The model defined in huaweicloud sdk
 
-        :param start_offset: 日志起始偏移
+        :param start_offset: **参数解释**： 日志起始偏移。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type start_offset: int
-        :param end_offset: 日志结束偏移
+        :param end_offset: **参数解释**： 日志结束偏移。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type end_offset: int
-        :param limit: 最大日志行数
+        :param limit: **参数解释**： 最大日志行数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type limit: int
-        :param sort: 排序规则[\&quot;asc\&quot;,\&quot;desc\&quot;]
+        :param sort: **参数解释**： 排序规则。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序 **默认取值**： 不涉及。 
         :type sort: str
         """
         
@@ -64,7 +64,7 @@ class LogQuery:
     def start_offset(self):
         r"""Gets the start_offset of this LogQuery.
 
-        日志起始偏移
+        **参数解释**： 日志起始偏移。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The start_offset of this LogQuery.
         :rtype: int
@@ -75,7 +75,7 @@ class LogQuery:
     def start_offset(self, start_offset):
         r"""Sets the start_offset of this LogQuery.
 
-        日志起始偏移
+        **参数解释**： 日志起始偏移。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param start_offset: The start_offset of this LogQuery.
         :type start_offset: int
@@ -86,7 +86,7 @@ class LogQuery:
     def end_offset(self):
         r"""Gets the end_offset of this LogQuery.
 
-        日志结束偏移
+        **参数解释**： 日志结束偏移。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The end_offset of this LogQuery.
         :rtype: int
@@ -97,7 +97,7 @@ class LogQuery:
     def end_offset(self, end_offset):
         r"""Sets the end_offset of this LogQuery.
 
-        日志结束偏移
+        **参数解释**： 日志结束偏移。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param end_offset: The end_offset of this LogQuery.
         :type end_offset: int
@@ -108,7 +108,7 @@ class LogQuery:
     def limit(self):
         r"""Gets the limit of this LogQuery.
 
-        最大日志行数
+        **参数解释**： 最大日志行数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The limit of this LogQuery.
         :rtype: int
@@ -119,7 +119,7 @@ class LogQuery:
     def limit(self, limit):
         r"""Sets the limit of this LogQuery.
 
-        最大日志行数
+        **参数解释**： 最大日志行数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param limit: The limit of this LogQuery.
         :type limit: int
@@ -130,7 +130,7 @@ class LogQuery:
     def sort(self):
         r"""Gets the sort of this LogQuery.
 
-        排序规则[\"asc\",\"desc\"]
+        **参数解释**： 排序规则。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序 **默认取值**： 不涉及。 
 
         :return: The sort of this LogQuery.
         :rtype: str
@@ -141,7 +141,7 @@ class LogQuery:
     def sort(self, sort):
         r"""Sets the sort of this LogQuery.
 
-        排序规则[\"asc\",\"desc\"]
+        **参数解释**： 排序规则。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序 **默认取值**： 不涉及。 
 
         :param sort: The sort of this LogQuery.
         :type sort: str

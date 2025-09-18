@@ -135,8 +135,6 @@ from huaweicloudsdkcoc.v1.model.enable_scheduled_task_request import EnableSched
 from huaweicloudsdkcoc.v1.model.enable_scheduled_task_request_body import EnableScheduledTaskRequestBody
 from huaweicloudsdkcoc.v1.model.enable_scheduled_task_response import EnableScheduledTaskResponse
 from huaweicloudsdkcoc.v1.model.enum_data_info import EnumDataInfo
-from huaweicloudsdkcoc.v1.model.excution_step import ExcutionStep
-from huaweicloudsdkcoc.v1.model.excution_step_inputs import ExcutionStepInputs
 from huaweicloudsdkcoc.v1.model.exection_instance_model import ExectionInstanceModel
 from huaweicloudsdkcoc.v1.model.exectuion_statistic import ExectuionStatistic
 from huaweicloudsdkcoc.v1.model.execute_action_params import ExecuteActionParams
@@ -155,6 +153,8 @@ from huaweicloudsdkcoc.v1.model.execute_script_request import ExecuteScriptReque
 from huaweicloudsdkcoc.v1.model.execute_script_response import ExecuteScriptResponse
 from huaweicloudsdkcoc.v1.model.execute_ticket_action_request import ExecuteTicketActionRequest
 from huaweicloudsdkcoc.v1.model.execute_ticket_action_response import ExecuteTicketActionResponse
+from huaweicloudsdkcoc.v1.model.execution_step import ExecutionStep
+from huaweicloudsdkcoc.v1.model.execution_step_inputs import ExecutionStepInputs
 from huaweicloudsdkcoc.v1.model.execution_summary import ExecutionSummary
 from huaweicloudsdkcoc.v1.model.external_attachment import ExternalAttachment
 from huaweicloudsdkcoc.v1.model.extra_field_info import ExtraFieldInfo

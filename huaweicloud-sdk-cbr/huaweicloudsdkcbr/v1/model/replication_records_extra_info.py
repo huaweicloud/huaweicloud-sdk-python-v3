@@ -21,7 +21,7 @@ class ReplicationRecordsExtraInfo:
         'fail_code': 'str',
         'fail_reason': 'str',
         'auto_trigger': 'bool',
-        'destinatio_vault_id': 'str'
+        'destination_vault_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +29,10 @@ class ReplicationRecordsExtraInfo:
         'fail_code': 'fail_code',
         'fail_reason': 'fail_reason',
         'auto_trigger': 'auto_trigger',
-        'destinatio_vault_id': 'destinatio_vault_id'
+        'destination_vault_id': 'destination_vault_id'
     }
 
-    def __init__(self, progress=None, fail_code=None, fail_reason=None, auto_trigger=None, destinatio_vault_id=None):
+    def __init__(self, progress=None, fail_code=None, fail_reason=None, auto_trigger=None, destination_vault_id=None):
         r"""ReplicationRecordsExtraInfo
 
         The model defined in huaweicloud sdk
@@ -45,8 +45,8 @@ class ReplicationRecordsExtraInfo:
         :type fail_reason: str
         :param auto_trigger: 是否为自动调度复制
         :type auto_trigger: bool
-        :param destinatio_vault_id: 目标端的存储库id
-        :type destinatio_vault_id: str
+        :param destination_vault_id: 目标端的存储库id
+        :type destination_vault_id: str
         """
         
         
@@ -55,7 +55,7 @@ class ReplicationRecordsExtraInfo:
         self._fail_code = None
         self._fail_reason = None
         self._auto_trigger = None
-        self._destinatio_vault_id = None
+        self._destination_vault_id = None
         self.discriminator = None
 
         if progress is not None:
@@ -66,8 +66,8 @@ class ReplicationRecordsExtraInfo:
             self.fail_reason = fail_reason
         if auto_trigger is not None:
             self.auto_trigger = auto_trigger
-        if destinatio_vault_id is not None:
-            self.destinatio_vault_id = destinatio_vault_id
+        if destination_vault_id is not None:
+            self.destination_vault_id = destination_vault_id
 
     @property
     def progress(self):
@@ -158,26 +158,26 @@ class ReplicationRecordsExtraInfo:
         self._auto_trigger = auto_trigger
 
     @property
-    def destinatio_vault_id(self):
-        r"""Gets the destinatio_vault_id of this ReplicationRecordsExtraInfo.
+    def destination_vault_id(self):
+        r"""Gets the destination_vault_id of this ReplicationRecordsExtraInfo.
 
         目标端的存储库id
 
-        :return: The destinatio_vault_id of this ReplicationRecordsExtraInfo.
+        :return: The destination_vault_id of this ReplicationRecordsExtraInfo.
         :rtype: str
         """
-        return self._destinatio_vault_id
+        return self._destination_vault_id
 
-    @destinatio_vault_id.setter
-    def destinatio_vault_id(self, destinatio_vault_id):
-        r"""Sets the destinatio_vault_id of this ReplicationRecordsExtraInfo.
+    @destination_vault_id.setter
+    def destination_vault_id(self, destination_vault_id):
+        r"""Sets the destination_vault_id of this ReplicationRecordsExtraInfo.
 
         目标端的存储库id
 
-        :param destinatio_vault_id: The destinatio_vault_id of this ReplicationRecordsExtraInfo.
-        :type destinatio_vault_id: str
+        :param destination_vault_id: The destination_vault_id of this ReplicationRecordsExtraInfo.
+        :type destination_vault_id: str
         """
-        self._destinatio_vault_id = destinatio_vault_id
+        self._destination_vault_id = destination_vault_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

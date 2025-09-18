@@ -39,9 +39,9 @@ class SiteGroupReferenceInfo:
         :type id: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param name_en: 功能说明：站点分组自定义的英文名字。 取值范围：1-255个字符。
+        :param name_en: 功能说明：站点分组自定义的英文名称。 取值范围：1-255个字符。
         :type name_en: str
-        :param name_cn: 功能说明：站点分组自定义的中文名字。 取值范围：1-64个字符。
+        :param name_cn: 功能说明：站点分组自定义的中文名称。 取值范围：1-64个字符。
         :type name_cn: str
         """
         
@@ -109,7 +109,7 @@ class SiteGroupReferenceInfo:
     def name_en(self):
         r"""Gets the name_en of this SiteGroupReferenceInfo.
 
-        功能说明：站点分组自定义的英文名字。 取值范围：1-255个字符。
+        功能说明：站点分组自定义的英文名称。 取值范围：1-255个字符。
 
         :return: The name_en of this SiteGroupReferenceInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class SiteGroupReferenceInfo:
     def name_en(self, name_en):
         r"""Sets the name_en of this SiteGroupReferenceInfo.
 
-        功能说明：站点分组自定义的英文名字。 取值范围：1-255个字符。
+        功能说明：站点分组自定义的英文名称。 取值范围：1-255个字符。
 
         :param name_en: The name_en of this SiteGroupReferenceInfo.
         :type name_en: str
@@ -131,7 +131,7 @@ class SiteGroupReferenceInfo:
     def name_cn(self):
         r"""Gets the name_cn of this SiteGroupReferenceInfo.
 
-        功能说明：站点分组自定义的中文名字。 取值范围：1-64个字符。
+        功能说明：站点分组自定义的中文名称。 取值范围：1-64个字符。
 
         :return: The name_cn of this SiteGroupReferenceInfo.
         :rtype: str
@@ -142,7 +142,7 @@ class SiteGroupReferenceInfo:
     def name_cn(self, name_cn):
         r"""Sets the name_cn of this SiteGroupReferenceInfo.
 
-        功能说明：站点分组自定义的中文名字。 取值范围：1-64个字符。
+        功能说明：站点分组自定义的中文名称。 取值范围：1-64个字符。
 
         :param name_cn: The name_cn of this SiteGroupReferenceInfo.
         :type name_cn: str

@@ -102,6 +102,140 @@ class WafClient(Client):
 
         return http_info
 
+    def batch_delete_composite_hosts(self, request):
+        r"""批量删除租户域名
+
+        批量删除租户域名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteCompositeHosts
+        :type request: :class:`huaweicloudsdkwaf.v1.BatchDeleteCompositeHostsRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.BatchDeleteCompositeHostsResponse`
+        """
+        http_info = self._batch_delete_composite_hosts_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_composite_hosts_invoker(self, request):
+        http_info = self._batch_delete_composite_hosts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_composite_hosts_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/composite-waf/hosts/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteCompositeHostsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_policies(self, request):
+        r"""批量删除防护策略
+
+        批量删除防护策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeletePolicies
+        :type request: :class:`huaweicloudsdkwaf.v1.BatchDeletePoliciesRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.BatchDeletePoliciesResponse`
+        """
+        http_info = self._batch_delete_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_policies_invoker(self, request):
+        http_info = self._batch_delete_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_policies_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policies/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeletePoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def change_prepaid_cloud_waf(self, request):
         r"""变更包周期云模式waf规格
 
@@ -535,6 +669,75 @@ class WafClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def copy_policy_by_id(self, request):
+        r"""根据Id复制防护策略
+
+        根据Id复制防护策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CopyPolicyById
+        :type request: :class:`huaweicloudsdkwaf.v1.CopyPolicyByIdRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CopyPolicyByIdResponse`
+        """
+        http_info = self._copy_policy_by_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def copy_policy_by_id_invoker(self, request):
+        http_info = self._copy_policy_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_policy_by_id_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policies/{src_policy_id}/copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyPolicyByIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'src_policy_id' in local_var_params:
+            path_params['src_policy_id'] = local_var_params['src_policy_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'dest_policy_name' in local_var_params:
+            query_params.append(('dest_policy_name', local_var_params['dest_policy_name']))
 
         header_params = {}
 
@@ -3638,6 +3841,71 @@ class WafClient(Client):
             query_params.append(('region', local_var_params['region']))
         if 'site' in local_var_params:
             query_params.append(('site', local_var_params['site']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_bot_m_rules(self, request):
+        r"""查询BotM所有规则
+
+        查询BotM所有规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListBotMRules
+        :type request: :class:`huaweicloudsdkwaf.v1.ListBotMRulesRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListBotMRulesResponse`
+        """
+        http_info = self._list_bot_m_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_bot_m_rules_invoker(self, request):
+        http_info = self._list_bot_m_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_bot_m_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/bot-manager",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBotMRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -7012,9 +7280,9 @@ class WafClient(Client):
         return http_info
 
     def show_geoip_rule(self, request):
-        r"""删除地理位置控制防护规则
+        r"""查询地理位置控制防护规则详情
 
-        删除地理位置控制防护规则
+        查询地理位置控制防护规则详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8466,6 +8734,75 @@ class WafClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_bot_m_category_status(self, request):
+        r"""更新BotM的Category[已知BOT检测/请求特征检测]启用状态
+
+        更新BotM规则启用状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateBotMCategoryStatus
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateBotMCategoryStatusRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateBotMCategoryStatusResponse`
+        """
+        http_info = self._update_bot_m_category_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_bot_m_category_status_invoker(self, request):
+        http_info = self._update_bot_m_category_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_bot_m_category_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/bot-manager/category/{category_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBotMCategoryStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'category_id' in local_var_params:
+            path_params['category_id'] = local_var_params['category_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -10000,6 +10337,475 @@ class WafClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_security_report_subscription(self, request):
+        r"""创建安全报告订阅
+
+        创建安全报告订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSecurityReportSubscription
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateSecurityReportSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateSecurityReportSubscriptionResponse`
+        """
+        http_info = self._create_security_report_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_security_report_subscription_invoker(self, request):
+        http_info = self._create_security_report_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_security_report_subscription_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/security-report/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityReportSubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_security_report_subscription(self, request):
+        r"""删除安全报告订阅
+
+        删除安全报告订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSecurityReportSubscription
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteSecurityReportSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteSecurityReportSubscriptionResponse`
+        """
+        http_info = self._delete_security_report_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_security_report_subscription_invoker(self, request):
+        http_info = self._delete_security_report_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_security_report_subscription_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/security-report/subscriptions/{subscription_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityReportSubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subscription_id' in local_var_params:
+            path_params['subscription_id'] = local_var_params['subscription_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_report_history_periods(self, request):
+        r"""查询安全报告历史统计周期列表
+
+        查询安全报告历史统计周期列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityReportHistoryPeriods
+        :type request: :class:`huaweicloudsdkwaf.v1.ListSecurityReportHistoryPeriodsRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListSecurityReportHistoryPeriodsResponse`
+        """
+        http_info = self._list_security_report_history_periods_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_report_history_periods_invoker(self, request):
+        http_info = self._list_security_report_history_periods_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_report_history_periods_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/security-report/history-periods",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityReportHistoryPeriodsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'subscription_id' in local_var_params:
+            query_params.append(('subscription_id', local_var_params['subscription_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_security_report_sending_records(self, request):
+        r"""查询安全报告发送记录
+
+        查询安全报告发送记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityReportSendingRecords
+        :type request: :class:`huaweicloudsdkwaf.v1.ListSecurityReportSendingRecordsRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListSecurityReportSendingRecordsResponse`
+        """
+        http_info = self._list_security_report_sending_records_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_report_sending_records_invoker(self, request):
+        http_info = self._list_security_report_sending_records_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_report_sending_records_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/security-report/sending-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityReportSendingRecordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'report_name' in local_var_params:
+            query_params.append(('report_name', local_var_params['report_name']))
+        if 'report_category' in local_var_params:
+            query_params.append(('report_category', local_var_params['report_category']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_security_report_content(self, request):
+        r"""查询安全报告内容
+
+        查询安全报告内容
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSecurityReportContent
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowSecurityReportContentRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowSecurityReportContentResponse`
+        """
+        http_info = self._show_security_report_content_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_security_report_content_invoker(self, request):
+        http_info = self._show_security_report_content_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_security_report_content_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/security-reports/{report_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityReportContentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'report_id' in local_var_params:
+            path_params['report_id'] = local_var_params['report_id']
+
+        query_params = []
+        if 'subscription_id' in local_var_params:
+            query_params.append(('subscription_id', local_var_params['subscription_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_security_report_subscription(self, request):
+        r"""查询安全报告订阅
+
+        查询安全报告订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSecurityReportSubscription
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowSecurityReportSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowSecurityReportSubscriptionResponse`
+        """
+        http_info = self._show_security_report_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_security_report_subscription_invoker(self, request):
+        http_info = self._show_security_report_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_security_report_subscription_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/security-report/subscriptions/{subscription_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityReportSubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subscription_id' in local_var_params:
+            path_params['subscription_id'] = local_var_params['subscription_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_security_report_subscription(self, request):
+        r"""修改安全报告的订阅
+
+        修改安全报告的订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSecurityReportSubscription
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateSecurityReportSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateSecurityReportSubscriptionResponse`
+        """
+        http_info = self._update_security_report_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_security_report_subscription_invoker(self, request):
+        http_info = self._update_security_report_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_security_report_subscription_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/security-report/subscriptions/{subscription_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityReportSubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'subscription_id' in local_var_params:
+            path_params['subscription_id'] = local_var_params['subscription_id']
+
+        query_params = []
 
         header_params = {}
 

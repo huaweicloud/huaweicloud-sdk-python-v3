@@ -32,9 +32,9 @@ class CreateStrategyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态
+        :param status: **参数解释**： 是否创建成功。 **取值范围**： - true：创建成功。 - false：创建失败。 
         :type status: bool
-        :param rule_set_id: 策略ID
+        :param rule_set_id: **参数解释**： 策略ID **取值范围**： 32位字符，由数字和字母组成。 
         :type rule_set_id: str
         """
         
@@ -53,7 +53,7 @@ class CreateStrategyResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this CreateStrategyResponse.
 
-        状态
+        **参数解释**： 是否创建成功。 **取值范围**： - true：创建成功。 - false：创建失败。 
 
         :return: The status of this CreateStrategyResponse.
         :rtype: bool
@@ -64,7 +64,7 @@ class CreateStrategyResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this CreateStrategyResponse.
 
-        状态
+        **参数解释**： 是否创建成功。 **取值范围**： - true：创建成功。 - false：创建失败。 
 
         :param status: The status of this CreateStrategyResponse.
         :type status: bool
@@ -75,7 +75,7 @@ class CreateStrategyResponse(SdkResponse):
     def rule_set_id(self):
         r"""Gets the rule_set_id of this CreateStrategyResponse.
 
-        策略ID
+        **参数解释**： 策略ID **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The rule_set_id of this CreateStrategyResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class CreateStrategyResponse(SdkResponse):
     def rule_set_id(self, rule_set_id):
         r"""Sets the rule_set_id of this CreateStrategyResponse.
 
-        策略ID
+        **参数解释**： 策略ID **取值范围**： 32位字符，由数字和字母组成。 
 
         :param rule_set_id: The rule_set_id of this CreateStrategyResponse.
         :type rule_set_id: str

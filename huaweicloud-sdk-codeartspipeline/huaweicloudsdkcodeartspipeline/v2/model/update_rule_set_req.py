@@ -31,9 +31,9 @@ class UpdateRuleSetReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 规则模版实例名称
+        :param name: **参数解释**： 策略名称。 **约束限制**： 策略名称仅支持中文、大小写英文字母、数字、‘-’、‘_’。 **取值范围**： 不超过128个字符。 **默认取值**： 不涉及。 
         :type name: str
-        :param rules: 规则实例列表
+        :param rules: **参数解释**： 策略中的规则列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type rules: list[:class:`huaweicloudsdkcodeartspipeline.v2.UpdateRuleInstance`]
         """
         
@@ -51,7 +51,7 @@ class UpdateRuleSetReq:
     def name(self):
         r"""Gets the name of this UpdateRuleSetReq.
 
-        规则模版实例名称
+        **参数解释**： 策略名称。 **约束限制**： 策略名称仅支持中文、大小写英文字母、数字、‘-’、‘_’。 **取值范围**： 不超过128个字符。 **默认取值**： 不涉及。 
 
         :return: The name of this UpdateRuleSetReq.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateRuleSetReq:
     def name(self, name):
         r"""Sets the name of this UpdateRuleSetReq.
 
-        规则模版实例名称
+        **参数解释**： 策略名称。 **约束限制**： 策略名称仅支持中文、大小写英文字母、数字、‘-’、‘_’。 **取值范围**： 不超过128个字符。 **默认取值**： 不涉及。 
 
         :param name: The name of this UpdateRuleSetReq.
         :type name: str
@@ -73,7 +73,7 @@ class UpdateRuleSetReq:
     def rules(self):
         r"""Gets the rules of this UpdateRuleSetReq.
 
-        规则实例列表
+        **参数解释**： 策略中的规则列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The rules of this UpdateRuleSetReq.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.UpdateRuleInstance`]
@@ -84,7 +84,7 @@ class UpdateRuleSetReq:
     def rules(self, rules):
         r"""Sets the rules of this UpdateRuleSetReq.
 
-        规则实例列表
+        **参数解释**： 策略中的规则列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param rules: The rules of this UpdateRuleSetReq.
         :type rules: list[:class:`huaweicloudsdkcodeartspipeline.v2.UpdateRuleInstance`]

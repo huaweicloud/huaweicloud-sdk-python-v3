@@ -39,17 +39,17 @@ class PipelineParam:
 
         The model defined in huaweicloud sdk
 
-        :param name: 流水线参数名字
+        :param name: **参数解释**： 流水线参数名字 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type name: str
-        :param value: 流水线参数值
+        :param value: **参数解释**： 流水线参数值 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type value: str
-        :param description: 流水线参数描述
+        :param description: **参数解释**： 流水线参数描述 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type description: str
-        :param param_type: 流水线参数类型
+        :param param_type: **参数解释**： 流水线参数类型 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type param_type: str
-        :param is_static: 是否静态参数
+        :param is_static: **参数解释**： 是否静态参数。 **约束限制**： 不涉及。 **取值范围**： - true：是静态参数。 - false：不是静态参数。 **默认取值**： 不涉及。 
         :type is_static: bool
-        :param is_default: 是否默认参数
+        :param is_default: **参数解释**： 是否默认参数。 **约束限制**： 不涉及。 **取值范围**： - true：是默认参数。 - false：不是默认参数。 **默认取值**： 不涉及。 
         :type is_default: bool
         """
         
@@ -74,7 +74,7 @@ class PipelineParam:
     def name(self):
         r"""Gets the name of this PipelineParam.
 
-        流水线参数名字
+        **参数解释**： 流水线参数名字 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this PipelineParam.
         :rtype: str
@@ -85,7 +85,7 @@ class PipelineParam:
     def name(self, name):
         r"""Sets the name of this PipelineParam.
 
-        流水线参数名字
+        **参数解释**： 流水线参数名字 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this PipelineParam.
         :type name: str
@@ -96,7 +96,7 @@ class PipelineParam:
     def value(self):
         r"""Gets the value of this PipelineParam.
 
-        流水线参数值
+        **参数解释**： 流水线参数值 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The value of this PipelineParam.
         :rtype: str
@@ -107,7 +107,7 @@ class PipelineParam:
     def value(self, value):
         r"""Sets the value of this PipelineParam.
 
-        流水线参数值
+        **参数解释**： 流水线参数值 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param value: The value of this PipelineParam.
         :type value: str
@@ -118,7 +118,7 @@ class PipelineParam:
     def description(self):
         r"""Gets the description of this PipelineParam.
 
-        流水线参数描述
+        **参数解释**： 流水线参数描述 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The description of this PipelineParam.
         :rtype: str
@@ -129,7 +129,7 @@ class PipelineParam:
     def description(self, description):
         r"""Sets the description of this PipelineParam.
 
-        流水线参数描述
+        **参数解释**： 流水线参数描述 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param description: The description of this PipelineParam.
         :type description: str
@@ -140,7 +140,7 @@ class PipelineParam:
     def param_type(self):
         r"""Gets the param_type of this PipelineParam.
 
-        流水线参数类型
+        **参数解释**： 流水线参数类型 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The param_type of this PipelineParam.
         :rtype: str
@@ -151,7 +151,7 @@ class PipelineParam:
     def param_type(self, param_type):
         r"""Sets the param_type of this PipelineParam.
 
-        流水线参数类型
+        **参数解释**： 流水线参数类型 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param param_type: The param_type of this PipelineParam.
         :type param_type: str
@@ -162,7 +162,7 @@ class PipelineParam:
     def is_static(self):
         r"""Gets the is_static of this PipelineParam.
 
-        是否静态参数
+        **参数解释**： 是否静态参数。 **约束限制**： 不涉及。 **取值范围**： - true：是静态参数。 - false：不是静态参数。 **默认取值**： 不涉及。 
 
         :return: The is_static of this PipelineParam.
         :rtype: bool
@@ -173,7 +173,7 @@ class PipelineParam:
     def is_static(self, is_static):
         r"""Sets the is_static of this PipelineParam.
 
-        是否静态参数
+        **参数解释**： 是否静态参数。 **约束限制**： 不涉及。 **取值范围**： - true：是静态参数。 - false：不是静态参数。 **默认取值**： 不涉及。 
 
         :param is_static: The is_static of this PipelineParam.
         :type is_static: bool
@@ -184,7 +184,7 @@ class PipelineParam:
     def is_default(self):
         r"""Gets the is_default of this PipelineParam.
 
-        是否默认参数
+        **参数解释**： 是否默认参数。 **约束限制**： 不涉及。 **取值范围**： - true：是默认参数。 - false：不是默认参数。 **默认取值**： 不涉及。 
 
         :return: The is_default of this PipelineParam.
         :rtype: bool
@@ -195,7 +195,7 @@ class PipelineParam:
     def is_default(self, is_default):
         r"""Sets the is_default of this PipelineParam.
 
-        是否默认参数
+        **参数解释**： 是否默认参数。 **约束限制**： 不涉及。 **取值范围**： - true：是默认参数。 - false：不是默认参数。 **默认取值**： 不涉及。 
 
         :param is_default: The is_default of this PipelineParam.
         :type is_default: bool

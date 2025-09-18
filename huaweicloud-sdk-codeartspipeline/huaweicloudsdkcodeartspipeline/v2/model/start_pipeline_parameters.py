@@ -29,7 +29,7 @@ class StartPipelineParameters:
 
         The model defined in huaweicloud sdk
 
-        :param build_params: 启动流水线时的构建参数
+        :param build_params: **参数解释**： 启动流水线时的构建参数。 **约束限制**： 不涉及。 **取值范围**： 不超过8192个字符。 **默认取值**： 不涉及。 
         :type build_params: list[:class:`huaweicloudsdkcodeartspipeline.v2.StartPipelineBuildParams`]
         """
         
@@ -45,7 +45,7 @@ class StartPipelineParameters:
     def build_params(self):
         r"""Gets the build_params of this StartPipelineParameters.
 
-        启动流水线时的构建参数
+        **参数解释**： 启动流水线时的构建参数。 **约束限制**： 不涉及。 **取值范围**： 不超过8192个字符。 **默认取值**： 不涉及。 
 
         :return: The build_params of this StartPipelineParameters.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.StartPipelineBuildParams`]
@@ -56,7 +56,7 @@ class StartPipelineParameters:
     def build_params(self, build_params):
         r"""Sets the build_params of this StartPipelineParameters.
 
-        启动流水线时的构建参数
+        **参数解释**： 启动流水线时的构建参数。 **约束限制**： 不涉及。 **取值范围**： 不超过8192个字符。 **默认取值**： 不涉及。 
 
         :param build_params: The build_params of this StartPipelineParameters.
         :type build_params: list[:class:`huaweicloudsdkcodeartspipeline.v2.StartPipelineBuildParams`]

@@ -49,27 +49,27 @@ class ListPipelineSimpleInfoRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param pipeline_name: 流水线名字。参数存在，则进行模糊匹配
+        :param pipeline_name: **参数解释**： 流水线名字。查询时进行模糊匹配。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type pipeline_name: str
-        :param project_ids: CodeArts项目ids。该参数存在，则获取对应项目下的流水线列表，逗号分隔，id个数取值[0,10]；如果不存在，则获取调用方所属租户的流水线列表
+        :param project_ids: **参数解释**： 项目id，有多个值时用逗号分隔，id个数取值[0,10]，非必选。如果该参数有值，则获取对应项目下的流水线列表；如果没有值，则获取用户有权限的所有项目的流水线列表 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type project_ids: str
-        :param creator_ids: 创建人id。该参数存在，逗号分隔，id个数取值[0,10]
+        :param creator_ids: **参数解释**： 创建人id，有多个值时用逗号分隔，id个数取值[0,10]，非必选 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type creator_ids: str
-        :param executor_ids: 执行人id。该参数存在，逗号分隔，id个数取值[0,10]；
+        :param executor_ids: **参数解释**： 执行人id。有多个值时用逗号分隔，id个数取值[0,10]，非必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type executor_ids: str
-        :param status: 流水线运行状态。取值范围：waiting,running,verifying,handling,suspending,completed
+        :param status: **参数解释**： 流水线运行状态。 **约束限制**： 不涉及。 **取值范围**： - waiting：等待中。 - running：运行中。 - verifying：待审核。 - suspending：挂起。 - completed：执行完成。 **默认取值**： 不涉及。 
         :type status: str
-        :param outcome: 流水线结果，标记流水线。error、success、aborted
+        :param outcome: **参数解释**： 流水线执行结果。 **约束限制**： 不涉及。 **取值范围**： - success：成功。 - error：失败。 - aborted：终止。 **默认取值**： 不涉及。 
         :type outcome: str
-        :param sort_key: 用于排序的字段。取值为：pipeline_name,create_time,start_time
+        :param sort_key: **参数解释**： 用于排序的字段，非必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type sort_key: str
-        :param sort_dir: 排序类型。asc按排序字段升序，desc按排序字段降序
+        :param sort_dir: **参数解释**： 排序方式。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序。 **默认取值**： 不涉及。 
         :type sort_dir: str
-        :param git_url: codehub搜索链接：git@codehub.XXX.git；gitee搜索链接：git@gitee.com.XXX.git；github搜索链接：git@github.com.XXX.git等
+        :param git_url: **参数解释**： 代码仓地址。仅支持codehub仓库，如：git@codehub.XXX.git **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type git_url: str
-        :param offset: 偏移量。表示从此偏移量开始查询，offset大于等于0，默认取值为0
+        :param offset: **参数解释**： 偏移量。表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： offset大于等于0。 **默认取值**： 不涉及。 
         :type offset: int
-        :param limit: 每次查询的条目数量。取值[10-50]，默认取值为10
+        :param limit: **参数解释**： 每次查询的条目数量。 **约束限制**： 不涉及。 **取值范围**： 取值[10-50]。 **默认取值**： 10。 
         :type limit: int
         """
         
@@ -115,7 +115,7 @@ class ListPipelineSimpleInfoRequestBody:
     def pipeline_name(self):
         r"""Gets the pipeline_name of this ListPipelineSimpleInfoRequestBody.
 
-        流水线名字。参数存在，则进行模糊匹配
+        **参数解释**： 流水线名字。查询时进行模糊匹配。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The pipeline_name of this ListPipelineSimpleInfoRequestBody.
         :rtype: str
@@ -126,7 +126,7 @@ class ListPipelineSimpleInfoRequestBody:
     def pipeline_name(self, pipeline_name):
         r"""Sets the pipeline_name of this ListPipelineSimpleInfoRequestBody.
 
-        流水线名字。参数存在，则进行模糊匹配
+        **参数解释**： 流水线名字。查询时进行模糊匹配。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param pipeline_name: The pipeline_name of this ListPipelineSimpleInfoRequestBody.
         :type pipeline_name: str
@@ -137,7 +137,7 @@ class ListPipelineSimpleInfoRequestBody:
     def project_ids(self):
         r"""Gets the project_ids of this ListPipelineSimpleInfoRequestBody.
 
-        CodeArts项目ids。该参数存在，则获取对应项目下的流水线列表，逗号分隔，id个数取值[0,10]；如果不存在，则获取调用方所属租户的流水线列表
+        **参数解释**： 项目id，有多个值时用逗号分隔，id个数取值[0,10]，非必选。如果该参数有值，则获取对应项目下的流水线列表；如果没有值，则获取用户有权限的所有项目的流水线列表 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The project_ids of this ListPipelineSimpleInfoRequestBody.
         :rtype: str
@@ -148,7 +148,7 @@ class ListPipelineSimpleInfoRequestBody:
     def project_ids(self, project_ids):
         r"""Sets the project_ids of this ListPipelineSimpleInfoRequestBody.
 
-        CodeArts项目ids。该参数存在，则获取对应项目下的流水线列表，逗号分隔，id个数取值[0,10]；如果不存在，则获取调用方所属租户的流水线列表
+        **参数解释**： 项目id，有多个值时用逗号分隔，id个数取值[0,10]，非必选。如果该参数有值，则获取对应项目下的流水线列表；如果没有值，则获取用户有权限的所有项目的流水线列表 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param project_ids: The project_ids of this ListPipelineSimpleInfoRequestBody.
         :type project_ids: str
@@ -159,7 +159,7 @@ class ListPipelineSimpleInfoRequestBody:
     def creator_ids(self):
         r"""Gets the creator_ids of this ListPipelineSimpleInfoRequestBody.
 
-        创建人id。该参数存在，逗号分隔，id个数取值[0,10]
+        **参数解释**： 创建人id，有多个值时用逗号分隔，id个数取值[0,10]，非必选 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The creator_ids of this ListPipelineSimpleInfoRequestBody.
         :rtype: str
@@ -170,7 +170,7 @@ class ListPipelineSimpleInfoRequestBody:
     def creator_ids(self, creator_ids):
         r"""Sets the creator_ids of this ListPipelineSimpleInfoRequestBody.
 
-        创建人id。该参数存在，逗号分隔，id个数取值[0,10]
+        **参数解释**： 创建人id，有多个值时用逗号分隔，id个数取值[0,10]，非必选 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param creator_ids: The creator_ids of this ListPipelineSimpleInfoRequestBody.
         :type creator_ids: str
@@ -181,7 +181,7 @@ class ListPipelineSimpleInfoRequestBody:
     def executor_ids(self):
         r"""Gets the executor_ids of this ListPipelineSimpleInfoRequestBody.
 
-        执行人id。该参数存在，逗号分隔，id个数取值[0,10]；
+        **参数解释**： 执行人id。有多个值时用逗号分隔，id个数取值[0,10]，非必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The executor_ids of this ListPipelineSimpleInfoRequestBody.
         :rtype: str
@@ -192,7 +192,7 @@ class ListPipelineSimpleInfoRequestBody:
     def executor_ids(self, executor_ids):
         r"""Sets the executor_ids of this ListPipelineSimpleInfoRequestBody.
 
-        执行人id。该参数存在，逗号分隔，id个数取值[0,10]；
+        **参数解释**： 执行人id。有多个值时用逗号分隔，id个数取值[0,10]，非必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param executor_ids: The executor_ids of this ListPipelineSimpleInfoRequestBody.
         :type executor_ids: str
@@ -203,7 +203,7 @@ class ListPipelineSimpleInfoRequestBody:
     def status(self):
         r"""Gets the status of this ListPipelineSimpleInfoRequestBody.
 
-        流水线运行状态。取值范围：waiting,running,verifying,handling,suspending,completed
+        **参数解释**： 流水线运行状态。 **约束限制**： 不涉及。 **取值范围**： - waiting：等待中。 - running：运行中。 - verifying：待审核。 - suspending：挂起。 - completed：执行完成。 **默认取值**： 不涉及。 
 
         :return: The status of this ListPipelineSimpleInfoRequestBody.
         :rtype: str
@@ -214,7 +214,7 @@ class ListPipelineSimpleInfoRequestBody:
     def status(self, status):
         r"""Sets the status of this ListPipelineSimpleInfoRequestBody.
 
-        流水线运行状态。取值范围：waiting,running,verifying,handling,suspending,completed
+        **参数解释**： 流水线运行状态。 **约束限制**： 不涉及。 **取值范围**： - waiting：等待中。 - running：运行中。 - verifying：待审核。 - suspending：挂起。 - completed：执行完成。 **默认取值**： 不涉及。 
 
         :param status: The status of this ListPipelineSimpleInfoRequestBody.
         :type status: str
@@ -225,7 +225,7 @@ class ListPipelineSimpleInfoRequestBody:
     def outcome(self):
         r"""Gets the outcome of this ListPipelineSimpleInfoRequestBody.
 
-        流水线结果，标记流水线。error、success、aborted
+        **参数解释**： 流水线执行结果。 **约束限制**： 不涉及。 **取值范围**： - success：成功。 - error：失败。 - aborted：终止。 **默认取值**： 不涉及。 
 
         :return: The outcome of this ListPipelineSimpleInfoRequestBody.
         :rtype: str
@@ -236,7 +236,7 @@ class ListPipelineSimpleInfoRequestBody:
     def outcome(self, outcome):
         r"""Sets the outcome of this ListPipelineSimpleInfoRequestBody.
 
-        流水线结果，标记流水线。error、success、aborted
+        **参数解释**： 流水线执行结果。 **约束限制**： 不涉及。 **取值范围**： - success：成功。 - error：失败。 - aborted：终止。 **默认取值**： 不涉及。 
 
         :param outcome: The outcome of this ListPipelineSimpleInfoRequestBody.
         :type outcome: str
@@ -247,7 +247,7 @@ class ListPipelineSimpleInfoRequestBody:
     def sort_key(self):
         r"""Gets the sort_key of this ListPipelineSimpleInfoRequestBody.
 
-        用于排序的字段。取值为：pipeline_name,create_time,start_time
+        **参数解释**： 用于排序的字段，非必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The sort_key of this ListPipelineSimpleInfoRequestBody.
         :rtype: str
@@ -258,7 +258,7 @@ class ListPipelineSimpleInfoRequestBody:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListPipelineSimpleInfoRequestBody.
 
-        用于排序的字段。取值为：pipeline_name,create_time,start_time
+        **参数解释**： 用于排序的字段，非必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param sort_key: The sort_key of this ListPipelineSimpleInfoRequestBody.
         :type sort_key: str
@@ -269,7 +269,7 @@ class ListPipelineSimpleInfoRequestBody:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListPipelineSimpleInfoRequestBody.
 
-        排序类型。asc按排序字段升序，desc按排序字段降序
+        **参数解释**： 排序方式。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序。 **默认取值**： 不涉及。 
 
         :return: The sort_dir of this ListPipelineSimpleInfoRequestBody.
         :rtype: str
@@ -280,7 +280,7 @@ class ListPipelineSimpleInfoRequestBody:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListPipelineSimpleInfoRequestBody.
 
-        排序类型。asc按排序字段升序，desc按排序字段降序
+        **参数解释**： 排序方式。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序。 **默认取值**： 不涉及。 
 
         :param sort_dir: The sort_dir of this ListPipelineSimpleInfoRequestBody.
         :type sort_dir: str
@@ -291,7 +291,7 @@ class ListPipelineSimpleInfoRequestBody:
     def git_url(self):
         r"""Gets the git_url of this ListPipelineSimpleInfoRequestBody.
 
-        codehub搜索链接：git@codehub.XXX.git；gitee搜索链接：git@gitee.com.XXX.git；github搜索链接：git@github.com.XXX.git等
+        **参数解释**： 代码仓地址。仅支持codehub仓库，如：git@codehub.XXX.git **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The git_url of this ListPipelineSimpleInfoRequestBody.
         :rtype: str
@@ -302,7 +302,7 @@ class ListPipelineSimpleInfoRequestBody:
     def git_url(self, git_url):
         r"""Sets the git_url of this ListPipelineSimpleInfoRequestBody.
 
-        codehub搜索链接：git@codehub.XXX.git；gitee搜索链接：git@gitee.com.XXX.git；github搜索链接：git@github.com.XXX.git等
+        **参数解释**： 代码仓地址。仅支持codehub仓库，如：git@codehub.XXX.git **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param git_url: The git_url of this ListPipelineSimpleInfoRequestBody.
         :type git_url: str
@@ -313,7 +313,7 @@ class ListPipelineSimpleInfoRequestBody:
     def offset(self):
         r"""Gets the offset of this ListPipelineSimpleInfoRequestBody.
 
-        偏移量。表示从此偏移量开始查询，offset大于等于0，默认取值为0
+        **参数解释**： 偏移量。表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： offset大于等于0。 **默认取值**： 不涉及。 
 
         :return: The offset of this ListPipelineSimpleInfoRequestBody.
         :rtype: int
@@ -324,7 +324,7 @@ class ListPipelineSimpleInfoRequestBody:
     def offset(self, offset):
         r"""Sets the offset of this ListPipelineSimpleInfoRequestBody.
 
-        偏移量。表示从此偏移量开始查询，offset大于等于0，默认取值为0
+        **参数解释**： 偏移量。表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： offset大于等于0。 **默认取值**： 不涉及。 
 
         :param offset: The offset of this ListPipelineSimpleInfoRequestBody.
         :type offset: int
@@ -335,7 +335,7 @@ class ListPipelineSimpleInfoRequestBody:
     def limit(self):
         r"""Gets the limit of this ListPipelineSimpleInfoRequestBody.
 
-        每次查询的条目数量。取值[10-50]，默认取值为10
+        **参数解释**： 每次查询的条目数量。 **约束限制**： 不涉及。 **取值范围**： 取值[10-50]。 **默认取值**： 10。 
 
         :return: The limit of this ListPipelineSimpleInfoRequestBody.
         :rtype: int
@@ -346,7 +346,7 @@ class ListPipelineSimpleInfoRequestBody:
     def limit(self, limit):
         r"""Sets the limit of this ListPipelineSimpleInfoRequestBody.
 
-        每次查询的条目数量。取值[10-50]，默认取值为10
+        **参数解释**： 每次查询的条目数量。 **约束限制**： 不涉及。 **取值范围**： 取值[10-50]。 **默认取值**： 10。 
 
         :param limit: The limit of this ListPipelineSimpleInfoRequestBody.
         :type limit: int

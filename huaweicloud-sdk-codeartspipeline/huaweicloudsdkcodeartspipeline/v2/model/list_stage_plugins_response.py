@@ -30,7 +30,7 @@ class ListStagePluginsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param full_stage_plugins_item_list: 结果集
+        :param full_stage_plugins_item_list: **参数解释**： 结果集。 **取值范围**： 不涉及。 
         :type full_stage_plugins_item_list: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOFullStagePluginsItemList`]
         """
         
@@ -46,7 +46,7 @@ class ListStagePluginsResponse(SdkResponse):
     def full_stage_plugins_item_list(self):
         r"""Gets the full_stage_plugins_item_list of this ListStagePluginsResponse.
 
-        结果集
+        **参数解释**： 结果集。 **取值范围**： 不涉及。 
 
         :return: The full_stage_plugins_item_list of this ListStagePluginsResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOFullStagePluginsItemList`]
@@ -57,7 +57,7 @@ class ListStagePluginsResponse(SdkResponse):
     def full_stage_plugins_item_list(self, full_stage_plugins_item_list):
         r"""Sets the full_stage_plugins_item_list of this ListStagePluginsResponse.
 
-        结果集
+        **参数解释**： 结果集。 **取值范围**： 不涉及。 
 
         :param full_stage_plugins_item_list: The full_stage_plugins_item_list of this ListStagePluginsResponse.
         :type full_stage_plugins_item_list: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOFullStagePluginsItemList`]

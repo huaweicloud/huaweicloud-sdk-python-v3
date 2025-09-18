@@ -38,6 +38,7 @@ class GlobalConnectionBandwidth:
         'tags': 'list[Tag]',
         'created_at': 'datetime',
         'updated_at': 'datetime',
+        'directional_connections': 'list[DirectionalConnection]',
         'enable_share': 'bool',
         'instances': 'list[GlobalConnectionBandwidthAssociatedInstance]'
     }
@@ -64,11 +65,12 @@ class GlobalConnectionBandwidth:
         'tags': 'tags',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
+        'directional_connections': 'directional_connections',
         'enable_share': 'enable_share',
         'instances': 'instances'
     }
 
-    def __init__(self, id=None, name=None, description=None, domain_id=None, bordercross=None, type=None, binding_service=None, enterprise_project_id=None, charge_mode=None, size=None, sla_level=None, local_area=None, remote_area=None, local_site_code=None, remote_site_code=None, admin_state=None, frozen=None, spec_code_id=None, tags=None, created_at=None, updated_at=None, enable_share=None, instances=None):
+    def __init__(self, id=None, name=None, description=None, domain_id=None, bordercross=None, type=None, binding_service=None, enterprise_project_id=None, charge_mode=None, size=None, sla_level=None, local_area=None, remote_area=None, local_site_code=None, remote_site_code=None, admin_state=None, frozen=None, spec_code_id=None, tags=None, created_at=None, updated_at=None, directional_connections=None, enable_share=None, instances=None):
         r"""GlobalConnectionBandwidth
 
         The model defined in huaweicloud sdk
@@ -81,7 +83,7 @@ class GlobalConnectionBandwidth:
         :type description: str
         :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param bordercross: 功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
+        :param bordercross: 全域互联带宽跨境属性。
         :type bordercross: bool
         :param type: 功能说明：描述带宽类型，对应地理区间的城域、区域、大区、跨区四级： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
         :type type: str
@@ -115,6 +117,8 @@ class GlobalConnectionBandwidth:
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type updated_at: datetime
+        :param directional_connections: 有向连接列表。
+        :type directional_connections: list[:class:`huaweicloudsdkcc.v3.DirectionalConnection`]
         :param enable_share: 功能说明: 全域互联带宽是否支持绑定多实例。 取值范围：     true-支持     false-不支持
         :type enable_share: bool
         :param instances: 功能说明: 全域互联带宽绑定实例列表。
@@ -144,6 +148,7 @@ class GlobalConnectionBandwidth:
         self._tags = None
         self._created_at = None
         self._updated_at = None
+        self._directional_connections = None
         self._enable_share = None
         self._instances = None
         self.discriminator = None
@@ -181,6 +186,7 @@ class GlobalConnectionBandwidth:
             self.tags = tags
         self.created_at = created_at
         self.updated_at = updated_at
+        self.directional_connections = directional_connections
         if enable_share is not None:
             self.enable_share = enable_share
         if instances is not None:
@@ -278,7 +284,7 @@ class GlobalConnectionBandwidth:
     def bordercross(self):
         r"""Gets the bordercross of this GlobalConnectionBandwidth.
 
-        功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
+        全域互联带宽跨境属性。
 
         :return: The bordercross of this GlobalConnectionBandwidth.
         :rtype: bool
@@ -289,7 +295,7 @@ class GlobalConnectionBandwidth:
     def bordercross(self, bordercross):
         r"""Sets the bordercross of this GlobalConnectionBandwidth.
 
-        功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
+        全域互联带宽跨境属性。
 
         :param bordercross: The bordercross of this GlobalConnectionBandwidth.
         :type bordercross: bool
@@ -647,6 +653,28 @@ class GlobalConnectionBandwidth:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def directional_connections(self):
+        r"""Gets the directional_connections of this GlobalConnectionBandwidth.
+
+        有向连接列表。
+
+        :return: The directional_connections of this GlobalConnectionBandwidth.
+        :rtype: list[:class:`huaweicloudsdkcc.v3.DirectionalConnection`]
+        """
+        return self._directional_connections
+
+    @directional_connections.setter
+    def directional_connections(self, directional_connections):
+        r"""Sets the directional_connections of this GlobalConnectionBandwidth.
+
+        有向连接列表。
+
+        :param directional_connections: The directional_connections of this GlobalConnectionBandwidth.
+        :type directional_connections: list[:class:`huaweicloudsdkcc.v3.DirectionalConnection`]
+        """
+        self._directional_connections = directional_connections
 
     @property
     def enable_share(self):

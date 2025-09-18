@@ -36,13 +36,13 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移量,表示从此偏移量开始查询,offset大于等于0
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询。 **取值范围**： 大于等于0。 
         :type offset: int
-        :param limit: 每次查询的条目数量
+        :param limit: **参数解释**： 每次查询的条目数量。 **取值范围**： 大于等于0。 
         :type limit: int
-        :param total: 总条目数量
+        :param total: **参数解释**： 总条目数量。 **取值范围**： 大于等于0。 
         :type total: int
-        :param result: 执行状况数据列表
+        :param result: **参数解释**： 流水线列表。 **取值范围**： 不涉及。 
         :type result: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineBasicInfo`]
         """
         
@@ -67,7 +67,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListPipelineSimpleInfoResponse.
 
-        偏移量,表示从此偏移量开始查询,offset大于等于0
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **取值范围**： 大于等于0。 
 
         :return: The offset of this ListPipelineSimpleInfoResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListPipelineSimpleInfoResponse.
 
-        偏移量,表示从此偏移量开始查询,offset大于等于0
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **取值范围**： 大于等于0。 
 
         :param offset: The offset of this ListPipelineSimpleInfoResponse.
         :type offset: int
@@ -89,7 +89,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
     def limit(self):
         r"""Gets the limit of this ListPipelineSimpleInfoResponse.
 
-        每次查询的条目数量
+        **参数解释**： 每次查询的条目数量。 **取值范围**： 大于等于0。 
 
         :return: The limit of this ListPipelineSimpleInfoResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
     def limit(self, limit):
         r"""Sets the limit of this ListPipelineSimpleInfoResponse.
 
-        每次查询的条目数量
+        **参数解释**： 每次查询的条目数量。 **取值范围**： 大于等于0。 
 
         :param limit: The limit of this ListPipelineSimpleInfoResponse.
         :type limit: int
@@ -111,7 +111,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListPipelineSimpleInfoResponse.
 
-        总条目数量
+        **参数解释**： 总条目数量。 **取值范围**： 大于等于0。 
 
         :return: The total of this ListPipelineSimpleInfoResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListPipelineSimpleInfoResponse.
 
-        总条目数量
+        **参数解释**： 总条目数量。 **取值范围**： 大于等于0。 
 
         :param total: The total of this ListPipelineSimpleInfoResponse.
         :type total: int
@@ -133,7 +133,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ListPipelineSimpleInfoResponse.
 
-        执行状况数据列表
+        **参数解释**： 流水线列表。 **取值范围**： 不涉及。 
 
         :return: The result of this ListPipelineSimpleInfoResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineBasicInfo`]
@@ -144,7 +144,7 @@ class ListPipelineSimpleInfoResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ListPipelineSimpleInfoResponse.
 
-        执行状况数据列表
+        **参数解释**： 流水线列表。 **取值范围**： 不涉及。 
 
         :param result: The result of this ListPipelineSimpleInfoResponse.
         :type result: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineBasicInfo`]

@@ -35,7 +35,7 @@ class ListBandwidthPackageLevelsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页返回的个数。 取值范围：1~1000。
+        :param limit: 每页返回的个数。 取值范围：1~2000。
         :type limit: int
         :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
         :type marker: str
@@ -66,7 +66,7 @@ class ListBandwidthPackageLevelsRequest:
     def limit(self):
         r"""Gets the limit of this ListBandwidthPackageLevelsRequest.
 
-        每页返回的个数。 取值范围：1~1000。
+        每页返回的个数。 取值范围：1~2000。
 
         :return: The limit of this ListBandwidthPackageLevelsRequest.
         :rtype: int
@@ -77,7 +77,7 @@ class ListBandwidthPackageLevelsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListBandwidthPackageLevelsRequest.
 
-        每页返回的个数。 取值范围：1~1000。
+        每页返回的个数。 取值范围：1~2000。
 
         :param limit: The limit of this ListBandwidthPackageLevelsRequest.
         :type limit: int

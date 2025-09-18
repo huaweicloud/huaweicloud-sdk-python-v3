@@ -6,6 +6,10 @@
 
 <h1 align="center">华为云开发者 Python 软件开发工具包（Python SDK）</h1>
 
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/huaweicloudsdkcore)](https://www.python.org/)
+[![PyPI Version](https://img.shields.io/pypi/v/huaweicloudsdkcore?color=009999)](https://pypi.org/search/?q=huaweicloudsdk)
+[![License](https://img.shields.io/badge/license-Apache--2.0-green)](https://www.apache.org/licenses/LICENSE-2.0)
+
 欢迎使用华为云 Python SDK。
 
 华为云 Python SDK让您无需关心请求细节即可快速使用弹性云服务器（ECS）、虚拟私有云（VPC）等多个华为云服务。

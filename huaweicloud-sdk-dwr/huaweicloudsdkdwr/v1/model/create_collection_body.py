@@ -43,7 +43,7 @@ class CreateCollectionBody:
 
         :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type store_name: str
-        :param collection_name: **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        :param collection_name: **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 ( _ )。资源名称必须以字母或下划线 ( _ ) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type collection_name: str
         :param primary_field: 
         :type primary_field: :class:`huaweicloudsdkdwr.v1.PrimaryField`
@@ -105,7 +105,7 @@ class CreateCollectionBody:
     def collection_name(self):
         r"""Gets the collection_name of this CreateCollectionBody.
 
-        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 ( _ )。资源名称必须以字母或下划线 ( _ ) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :return: The collection_name of this CreateCollectionBody.
         :rtype: str
@@ -116,7 +116,7 @@ class CreateCollectionBody:
     def collection_name(self, collection_name):
         r"""Sets the collection_name of this CreateCollectionBody.
 
-        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 (_)。资源名称必须以字母或下划线 (_) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
+        **参数解释：** collection名称。 **约束限制：** 可包含数字、字母和下划线 ( _ )。资源名称必须以字母或下划线 ( _ ) 开头。最大长度支持255。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
 
         :param collection_name: The collection_name of this CreateCollectionBody.
         :type collection_name: str

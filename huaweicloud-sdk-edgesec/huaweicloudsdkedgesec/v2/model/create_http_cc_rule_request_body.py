@@ -83,7 +83,7 @@ class CreateHttpCcRuleRequestBody:
         :type limit_period: int
         :param lock_time: 阻断时长
         :type lock_time: int
-        :param tag_type: 防护模式
+        :param tag_type: 限速模式：   - ip：IP限速，根据IP区分单个Web访问者。   - cookie：用户限速，根据Cookie键值区分单个Web访问者   - header：用户限速，根据Header区分单个Web访问者。   - ip_segment_c：根据IP C段区分单个Web访问者。
         :type tag_type: str
         :param tag_index: 防护模式标签
         :type tag_index: str
@@ -346,7 +346,7 @@ class CreateHttpCcRuleRequestBody:
     def tag_type(self):
         r"""Gets the tag_type of this CreateHttpCcRuleRequestBody.
 
-        防护模式
+        限速模式：   - ip：IP限速，根据IP区分单个Web访问者。   - cookie：用户限速，根据Cookie键值区分单个Web访问者   - header：用户限速，根据Header区分单个Web访问者。   - ip_segment_c：根据IP C段区分单个Web访问者。
 
         :return: The tag_type of this CreateHttpCcRuleRequestBody.
         :rtype: str
@@ -357,7 +357,7 @@ class CreateHttpCcRuleRequestBody:
     def tag_type(self, tag_type):
         r"""Sets the tag_type of this CreateHttpCcRuleRequestBody.
 
-        防护模式
+        限速模式：   - ip：IP限速，根据IP区分单个Web访问者。   - cookie：用户限速，根据Cookie键值区分单个Web访问者   - header：用户限速，根据Header区分单个Web访问者。   - ip_segment_c：根据IP C段区分单个Web访问者。
 
         :param tag_type: The tag_type of this CreateHttpCcRuleRequestBody.
         :type tag_type: str

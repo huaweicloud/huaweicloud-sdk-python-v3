@@ -4216,6 +4216,412 @@ class CodeArtsPipelineClient(Client):
 
         return http_info
 
+    def delete_actions_run_pipeline(self, request):
+        r"""删除gitcode流水线运行详情
+
+        删除gitcode流水线运行详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteActionsRunPipeline
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.DeleteActionsRunPipelineRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.DeleteActionsRunPipelineResponse`
+        """
+        http_info = self._delete_actions_run_pipeline_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_actions_run_pipeline_invoker(self, request):
+        http_info = self._delete_actions_run_pipeline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_actions_run_pipeline_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v6/{domain_id}/api/pac/pipelines/actions/{pipeline_id}/{pipeline_run_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteActionsRunPipelineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_actions_pipeline_runs(self, request):
+        r"""查询gitcode流水线运行记录
+
+        查询gitcode流水线运行记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListActionsPipelineRuns
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ListActionsPipelineRunsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListActionsPipelineRunsResponse`
+        """
+        http_info = self._list_actions_pipeline_runs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_actions_pipeline_runs_invoker(self, request):
+        http_info = self._list_actions_pipeline_runs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_actions_pipeline_runs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v6/{domain_id}/api/pac/pipelines/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListActionsPipelineRunsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_actions_pipeline_runs_by_run_ids(self, request):
+        r"""查询gitcode流水线action列表
+
+        查询gitcode流水线action列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListActionsPipelineRunsByRunIds
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ListActionsPipelineRunsByRunIdsRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListActionsPipelineRunsByRunIdsResponse`
+        """
+        http_info = self._list_actions_pipeline_runs_by_run_ids_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_actions_pipeline_runs_by_run_ids_invoker(self, request):
+        http_info = self._list_actions_pipeline_runs_by_run_ids_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_actions_pipeline_runs_by_run_ids_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v6/{domain_id}/api/pac/pipelines/actions/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListActionsPipelineRunsByRunIdsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def retry_run_actions_pipeline(self, request):
+        r"""重试运行gitcode流水线
+
+        重试运行gitcode流水线
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RetryRunActionsPipeline
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.RetryRunActionsPipelineRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.RetryRunActionsPipelineResponse`
+        """
+        http_info = self._retry_run_actions_pipeline_http_info(request)
+        return self._call_api(**http_info)
+
+    def retry_run_actions_pipeline_invoker(self, request):
+        http_info = self._retry_run_actions_pipeline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _retry_run_actions_pipeline_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v6/{domain_id}/api/pac/pipelines/actions/rerun",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryRunActionsPipelineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def run_actions_pipeline(self, request):
+        r"""运行gitcode流水线
+
+        运行gitcode流水线
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for RunActionsPipeline
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.RunActionsPipelineRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.RunActionsPipelineResponse`
+        """
+        http_info = self._run_actions_pipeline_http_info(request)
+        return self._call_api(**http_info)
+
+    def run_actions_pipeline_invoker(self, request):
+        http_info = self._run_actions_pipeline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_actions_pipeline_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v6/{domain_id}/api/pac/pipelines/actions/run",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunActionsPipelineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_actions_runs_detail(self, request):
+        r"""查询gitcode流水线运行详情
+
+        查询gitcode流水线运行详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowActionsRunsDetail
+        :type request: :class:`huaweicloudsdkcodeartspipeline.v2.ShowActionsRunsDetailRequest`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ShowActionsRunsDetailResponse`
+        """
+        http_info = self._show_actions_runs_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_actions_runs_detail_invoker(self, request):
+        http_info = self._show_actions_runs_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_actions_runs_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v6/{domain_id}/api/pac/pipelines/actions/{pipeline_id}/{pipeline_run_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowActionsRunsDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+        if 'pipeline_id' in local_var_params:
+            path_params['pipeline_id'] = local_var_params['pipeline_id']
+        if 'pipeline_run_id' in local_var_params:
+            path_params['pipeline_run_id'] = local_var_params['pipeline_run_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def accept_manual_review(self, request):
         r"""通过人工审核
 

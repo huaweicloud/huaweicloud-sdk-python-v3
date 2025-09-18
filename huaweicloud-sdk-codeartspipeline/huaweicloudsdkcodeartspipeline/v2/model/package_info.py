@@ -35,13 +35,13 @@ class PackageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: 产物名
+        :param name: **参数解释**： 产物名。 **取值范围**： 不涉及。 
         :type name: str
-        :param package_type: 产物类型
+        :param package_type: **参数解释**： 产物类型。 **取值范围**： 不涉及。 
         :type package_type: str
-        :param version: 产物版本号
+        :param version: **参数解释**： 产物版本号。 **取值范围**： 不涉及。 
         :type version: str
-        :param download_url: 产物下载地址
+        :param download_url: **参数解释**： 产物下载地址。 **取值范围**： 不涉及。 
         :type download_url: str
         """
         
@@ -66,7 +66,7 @@ class PackageInfo:
     def name(self):
         r"""Gets the name of this PackageInfo.
 
-        产物名
+        **参数解释**： 产物名。 **取值范围**： 不涉及。 
 
         :return: The name of this PackageInfo.
         :rtype: str
@@ -77,7 +77,7 @@ class PackageInfo:
     def name(self, name):
         r"""Sets the name of this PackageInfo.
 
-        产物名
+        **参数解释**： 产物名。 **取值范围**： 不涉及。 
 
         :param name: The name of this PackageInfo.
         :type name: str
@@ -88,7 +88,7 @@ class PackageInfo:
     def package_type(self):
         r"""Gets the package_type of this PackageInfo.
 
-        产物类型
+        **参数解释**： 产物类型。 **取值范围**： 不涉及。 
 
         :return: The package_type of this PackageInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class PackageInfo:
     def package_type(self, package_type):
         r"""Sets the package_type of this PackageInfo.
 
-        产物类型
+        **参数解释**： 产物类型。 **取值范围**： 不涉及。 
 
         :param package_type: The package_type of this PackageInfo.
         :type package_type: str
@@ -110,7 +110,7 @@ class PackageInfo:
     def version(self):
         r"""Gets the version of this PackageInfo.
 
-        产物版本号
+        **参数解释**： 产物版本号。 **取值范围**： 不涉及。 
 
         :return: The version of this PackageInfo.
         :rtype: str
@@ -121,7 +121,7 @@ class PackageInfo:
     def version(self, version):
         r"""Sets the version of this PackageInfo.
 
-        产物版本号
+        **参数解释**： 产物版本号。 **取值范围**： 不涉及。 
 
         :param version: The version of this PackageInfo.
         :type version: str
@@ -132,7 +132,7 @@ class PackageInfo:
     def download_url(self):
         r"""Gets the download_url of this PackageInfo.
 
-        产物下载地址
+        **参数解释**： 产物下载地址。 **取值范围**： 不涉及。 
 
         :return: The download_url of this PackageInfo.
         :rtype: str
@@ -143,7 +143,7 @@ class PackageInfo:
     def download_url(self, download_url):
         r"""Sets the download_url of this PackageInfo.
 
-        产物下载地址
+        **参数解释**： 产物下载地址。 **取值范围**： 不涉及。 
 
         :param download_url: The download_url of this PackageInfo.
         :type download_url: str

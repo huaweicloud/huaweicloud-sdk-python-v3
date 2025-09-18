@@ -80,7 +80,7 @@ class ShowTemplateDetailResponse(SdkResponse):
         :type domain_name: str
         :param is_build_in: 是否内置模板
         :type is_build_in: bool
-        :param region: region
+        :param region: 局点
         :type region: str
         :param project_id: 项目ID
         :type project_id: str
@@ -341,7 +341,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def region(self):
         r"""Gets the region of this ShowTemplateDetailResponse.
 
-        region
+        局点
 
         :return: The region of this ShowTemplateDetailResponse.
         :rtype: str
@@ -352,7 +352,7 @@ class ShowTemplateDetailResponse(SdkResponse):
     def region(self, region):
         r"""Sets the region of this ShowTemplateDetailResponse.
 
-        region
+        局点
 
         :param region: The region of this ShowTemplateDetailResponse.
         :type region: str

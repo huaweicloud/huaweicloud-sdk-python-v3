@@ -22,7 +22,6 @@ class ShowPipelineLogResponse(SdkResponse):
         'end_offset': 'str',
         'start_offset': 'str',
         'log': 'str',
-        'location': 'str',
         'step_run_id': 'str'
     }
 
@@ -31,26 +30,23 @@ class ShowPipelineLogResponse(SdkResponse):
         'end_offset': 'end_offset',
         'start_offset': 'start_offset',
         'log': 'log',
-        'location': 'location',
         'step_run_id': 'step_run_id'
     }
 
-    def __init__(self, has_more=None, end_offset=None, start_offset=None, log=None, location=None, step_run_id=None):
+    def __init__(self, has_more=None, end_offset=None, start_offset=None, log=None, step_run_id=None):
         r"""ShowPipelineLogResponse
 
         The model defined in huaweicloud sdk
 
-        :param has_more: 是否有更多日志
+        :param has_more: **参数解释**： 是否有更多日志。 **取值范围**： - true：有更多日志。 - false：没有更多日志。 
         :type has_more: bool
-        :param end_offset: 查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。
+        :param end_offset: **参数解释**： 查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。 **取值范围**： 不涉及。 
         :type end_offset: str
-        :param start_offset: 查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。
+        :param start_offset: **参数解释**： 查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。 **取值范围**： 不涉及。 
         :type start_offset: str
-        :param log: 日志内容
+        :param log: **参数解释**： 日志内容。 **取值范围**： 不涉及。 
         :type log: str
-        :param location: 日志存储位置
-        :type location: str
-        :param step_run_id: 所属步骤ID
+        :param step_run_id: **参数解释**： 所属步骤ID。 **取值范围**： 不涉及。 
         :type step_run_id: str
         """
         
@@ -60,7 +56,6 @@ class ShowPipelineLogResponse(SdkResponse):
         self._end_offset = None
         self._start_offset = None
         self._log = None
-        self._location = None
         self._step_run_id = None
         self.discriminator = None
 
@@ -72,8 +67,6 @@ class ShowPipelineLogResponse(SdkResponse):
             self.start_offset = start_offset
         if log is not None:
             self.log = log
-        if location is not None:
-            self.location = location
         if step_run_id is not None:
             self.step_run_id = step_run_id
 
@@ -81,7 +74,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def has_more(self):
         r"""Gets the has_more of this ShowPipelineLogResponse.
 
-        是否有更多日志
+        **参数解释**： 是否有更多日志。 **取值范围**： - true：有更多日志。 - false：没有更多日志。 
 
         :return: The has_more of this ShowPipelineLogResponse.
         :rtype: bool
@@ -92,7 +85,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def has_more(self, has_more):
         r"""Sets the has_more of this ShowPipelineLogResponse.
 
-        是否有更多日志
+        **参数解释**： 是否有更多日志。 **取值范围**： - true：有更多日志。 - false：没有更多日志。 
 
         :param has_more: The has_more of this ShowPipelineLogResponse.
         :type has_more: bool
@@ -103,7 +96,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def end_offset(self):
         r"""Gets the end_offset of this ShowPipelineLogResponse.
 
-        查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。
+        **参数解释**： 查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。 **取值范围**： 不涉及。 
 
         :return: The end_offset of this ShowPipelineLogResponse.
         :rtype: str
@@ -114,7 +107,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def end_offset(self, end_offset):
         r"""Sets the end_offset of this ShowPipelineLogResponse.
 
-        查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。
+        **参数解释**： 查询日志结束偏移。填入请求体end_offset字段，用于查询下一页日志。 **取值范围**： 不涉及。 
 
         :param end_offset: The end_offset of this ShowPipelineLogResponse.
         :type end_offset: str
@@ -125,7 +118,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def start_offset(self):
         r"""Gets the start_offset of this ShowPipelineLogResponse.
 
-        查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。
+        **参数解释**： 查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。 **取值范围**： 不涉及。 
 
         :return: The start_offset of this ShowPipelineLogResponse.
         :rtype: str
@@ -136,7 +129,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def start_offset(self, start_offset):
         r"""Sets the start_offset of this ShowPipelineLogResponse.
 
-        查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。
+        **参数解释**： 查询日志起始偏移。填入请求体start_offset字段，用于查询下一页日志。 **取值范围**： 不涉及。 
 
         :param start_offset: The start_offset of this ShowPipelineLogResponse.
         :type start_offset: str
@@ -147,7 +140,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def log(self):
         r"""Gets the log of this ShowPipelineLogResponse.
 
-        日志内容
+        **参数解释**： 日志内容。 **取值范围**： 不涉及。 
 
         :return: The log of this ShowPipelineLogResponse.
         :rtype: str
@@ -158,7 +151,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def log(self, log):
         r"""Sets the log of this ShowPipelineLogResponse.
 
-        日志内容
+        **参数解释**： 日志内容。 **取值范围**： 不涉及。 
 
         :param log: The log of this ShowPipelineLogResponse.
         :type log: str
@@ -166,32 +159,10 @@ class ShowPipelineLogResponse(SdkResponse):
         self._log = log
 
     @property
-    def location(self):
-        r"""Gets the location of this ShowPipelineLogResponse.
-
-        日志存储位置
-
-        :return: The location of this ShowPipelineLogResponse.
-        :rtype: str
-        """
-        return self._location
-
-    @location.setter
-    def location(self, location):
-        r"""Sets the location of this ShowPipelineLogResponse.
-
-        日志存储位置
-
-        :param location: The location of this ShowPipelineLogResponse.
-        :type location: str
-        """
-        self._location = location
-
-    @property
     def step_run_id(self):
         r"""Gets the step_run_id of this ShowPipelineLogResponse.
 
-        所属步骤ID
+        **参数解释**： 所属步骤ID。 **取值范围**： 不涉及。 
 
         :return: The step_run_id of this ShowPipelineLogResponse.
         :rtype: str
@@ -202,7 +173,7 @@ class ShowPipelineLogResponse(SdkResponse):
     def step_run_id(self, step_run_id):
         r"""Sets the step_run_id of this ShowPipelineLogResponse.
 
-        所属步骤ID
+        **参数解释**： 所属步骤ID。 **取值范围**： 不涉及。 
 
         :param step_run_id: The step_run_id of this ShowPipelineLogResponse.
         :type step_run_id: str

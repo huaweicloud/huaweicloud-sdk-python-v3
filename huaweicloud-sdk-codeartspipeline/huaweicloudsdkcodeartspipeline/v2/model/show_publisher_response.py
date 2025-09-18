@@ -30,7 +30,7 @@ class ShowPublisherResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param publisher_detail_map: 发布商详情
+        :param publisher_detail_map: **参数解释**： 发布商详情。 **取值范围**： 不涉及。 
         :type publisher_detail_map: dict(str, PublisherVO)
         """
         
@@ -46,7 +46,7 @@ class ShowPublisherResponse(SdkResponse):
     def publisher_detail_map(self):
         r"""Gets the publisher_detail_map of this ShowPublisherResponse.
 
-        发布商详情
+        **参数解释**： 发布商详情。 **取值范围**： 不涉及。 
 
         :return: The publisher_detail_map of this ShowPublisherResponse.
         :rtype: dict(str, PublisherVO)
@@ -57,7 +57,7 @@ class ShowPublisherResponse(SdkResponse):
     def publisher_detail_map(self, publisher_detail_map):
         r"""Sets the publisher_detail_map of this ShowPublisherResponse.
 
-        发布商详情
+        **参数解释**： 发布商详情。 **取值范围**： 不涉及。 
 
         :param publisher_detail_map: The publisher_detail_map of this ShowPublisherResponse.
         :type publisher_detail_map: dict(str, PublisherVO)

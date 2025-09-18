@@ -20,7 +20,7 @@ class PipelineSchedule:
         'uuid': 'str',
         'type': 'str',
         'name': 'str',
-        'enable': 'str',
+        'enable': 'bool',
         'days_of_week': 'list[int]',
         'time_zone': 'str'
     }
@@ -39,17 +39,17 @@ class PipelineSchedule:
 
         The model defined in huaweicloud sdk
 
-        :param uuid: 任务ID
+        :param uuid: **参数解释**： 定时任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type uuid: str
-        :param type: 任务类型
+        :param type: **参数解释**： 任务类型。 **约束限制**： 不涉及。 **取值范围**： 只支持fixed。 **默认取值**： 不涉及。 
         :type type: str
-        :param name: 任务名称
+        :param name: **参数解释**： 任务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type name: str
-        :param enable: 是否可用
-        :type enable: str
-        :param days_of_week: 一周内具体时间
+        :param enable: **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type enable: bool
+        :param days_of_week: **参数解释**： 一周内具体执行日。周日至周六对应1-7。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type days_of_week: list[int]
-        :param time_zone: 时区
+        :param time_zone: **参数解释**： 时区。 **约束限制**： 不涉及。 **取值范围**： - \&quot;China Standard Time\&quot;。 - \&quot;GMT Standard Time\&quot;。 - \&quot;South Africa Standard Time\&quot;。 - \&quot;Russian Standard Time\&quot;。 - \&quot;SE Asia Standard Time\&quot;。  - \&quot;Singapore Standard Time\&quot;。 - \&quot;Pacific SA Standard Time\&quot;。 - \&quot;E. South America Standard Time\&quot;。  - \&quot;Central Standard Time (Mexico)\&quot;。 - \&quot;Egypt Standard Time\&quot;。 - \&quot;Saudi Arabia Standard Time\&quot;。 **默认取值**： 不涉及。 
         :type time_zone: str
         """
         
@@ -80,7 +80,7 @@ class PipelineSchedule:
     def uuid(self):
         r"""Gets the uuid of this PipelineSchedule.
 
-        任务ID
+        **参数解释**： 定时任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The uuid of this PipelineSchedule.
         :rtype: str
@@ -91,7 +91,7 @@ class PipelineSchedule:
     def uuid(self, uuid):
         r"""Sets the uuid of this PipelineSchedule.
 
-        任务ID
+        **参数解释**： 定时任务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param uuid: The uuid of this PipelineSchedule.
         :type uuid: str
@@ -102,7 +102,7 @@ class PipelineSchedule:
     def type(self):
         r"""Gets the type of this PipelineSchedule.
 
-        任务类型
+        **参数解释**： 任务类型。 **约束限制**： 不涉及。 **取值范围**： 只支持fixed。 **默认取值**： 不涉及。 
 
         :return: The type of this PipelineSchedule.
         :rtype: str
@@ -113,7 +113,7 @@ class PipelineSchedule:
     def type(self, type):
         r"""Sets the type of this PipelineSchedule.
 
-        任务类型
+        **参数解释**： 任务类型。 **约束限制**： 不涉及。 **取值范围**： 只支持fixed。 **默认取值**： 不涉及。 
 
         :param type: The type of this PipelineSchedule.
         :type type: str
@@ -124,7 +124,7 @@ class PipelineSchedule:
     def name(self):
         r"""Gets the name of this PipelineSchedule.
 
-        任务名称
+        **参数解释**： 任务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this PipelineSchedule.
         :rtype: str
@@ -135,7 +135,7 @@ class PipelineSchedule:
     def name(self, name):
         r"""Sets the name of this PipelineSchedule.
 
-        任务名称
+        **参数解释**： 任务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this PipelineSchedule.
         :type name: str
@@ -146,10 +146,10 @@ class PipelineSchedule:
     def enable(self):
         r"""Gets the enable of this PipelineSchedule.
 
-        是否可用
+        **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The enable of this PipelineSchedule.
-        :rtype: str
+        :rtype: bool
         """
         return self._enable
 
@@ -157,10 +157,10 @@ class PipelineSchedule:
     def enable(self, enable):
         r"""Sets the enable of this PipelineSchedule.
 
-        是否可用
+        **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param enable: The enable of this PipelineSchedule.
-        :type enable: str
+        :type enable: bool
         """
         self._enable = enable
 
@@ -168,7 +168,7 @@ class PipelineSchedule:
     def days_of_week(self):
         r"""Gets the days_of_week of this PipelineSchedule.
 
-        一周内具体时间
+        **参数解释**： 一周内具体执行日。周日至周六对应1-7。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The days_of_week of this PipelineSchedule.
         :rtype: list[int]
@@ -179,7 +179,7 @@ class PipelineSchedule:
     def days_of_week(self, days_of_week):
         r"""Sets the days_of_week of this PipelineSchedule.
 
-        一周内具体时间
+        **参数解释**： 一周内具体执行日。周日至周六对应1-7。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param days_of_week: The days_of_week of this PipelineSchedule.
         :type days_of_week: list[int]
@@ -190,7 +190,7 @@ class PipelineSchedule:
     def time_zone(self):
         r"""Gets the time_zone of this PipelineSchedule.
 
-        时区
+        **参数解释**： 时区。 **约束限制**： 不涉及。 **取值范围**： - \"China Standard Time\"。 - \"GMT Standard Time\"。 - \"South Africa Standard Time\"。 - \"Russian Standard Time\"。 - \"SE Asia Standard Time\"。  - \"Singapore Standard Time\"。 - \"Pacific SA Standard Time\"。 - \"E. South America Standard Time\"。  - \"Central Standard Time (Mexico)\"。 - \"Egypt Standard Time\"。 - \"Saudi Arabia Standard Time\"。 **默认取值**： 不涉及。 
 
         :return: The time_zone of this PipelineSchedule.
         :rtype: str
@@ -201,7 +201,7 @@ class PipelineSchedule:
     def time_zone(self, time_zone):
         r"""Sets the time_zone of this PipelineSchedule.
 
-        时区
+        **参数解释**： 时区。 **约束限制**： 不涉及。 **取值范围**： - \"China Standard Time\"。 - \"GMT Standard Time\"。 - \"South Africa Standard Time\"。 - \"Russian Standard Time\"。 - \"SE Asia Standard Time\"。  - \"Singapore Standard Time\"。 - \"Pacific SA Standard Time\"。 - \"E. South America Standard Time\"。  - \"Central Standard Time (Mexico)\"。 - \"Egypt Standard Time\"。 - \"Saudi Arabia Standard Time\"。 **默认取值**： 不涉及。 
 
         :param time_zone: The time_zone of this PipelineSchedule.
         :type time_zone: str

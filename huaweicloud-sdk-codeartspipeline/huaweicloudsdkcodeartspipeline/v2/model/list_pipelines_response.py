@@ -36,13 +36,13 @@ class ListPipelinesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 起始偏移
+        :param offset: **参数解释**： 起始偏移。 **取值范围**： 不涉及。 
         :type offset: int
-        :param limit: 查询大小
+        :param limit: **参数解释**： 查询大小。 **取值范围**： 不涉及。 
         :type limit: int
-        :param total: 总数
+        :param total: **参数解释**： 记录总数。 **取值范围**： 不涉及。 
         :type total: int
-        :param pipelines: 流水线
+        :param pipelines: **参数解释**： 流水线。 **取值范围**： 不涉及。 
         :type pipelines: list[:class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPagePipelines`]
         """
         
@@ -67,7 +67,7 @@ class ListPipelinesResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListPipelinesResponse.
 
-        起始偏移
+        **参数解释**： 起始偏移。 **取值范围**： 不涉及。 
 
         :return: The offset of this ListPipelinesResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListPipelinesResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListPipelinesResponse.
 
-        起始偏移
+        **参数解释**： 起始偏移。 **取值范围**： 不涉及。 
 
         :param offset: The offset of this ListPipelinesResponse.
         :type offset: int
@@ -89,7 +89,7 @@ class ListPipelinesResponse(SdkResponse):
     def limit(self):
         r"""Gets the limit of this ListPipelinesResponse.
 
-        查询大小
+        **参数解释**： 查询大小。 **取值范围**： 不涉及。 
 
         :return: The limit of this ListPipelinesResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListPipelinesResponse(SdkResponse):
     def limit(self, limit):
         r"""Sets the limit of this ListPipelinesResponse.
 
-        查询大小
+        **参数解释**： 查询大小。 **取值范围**： 不涉及。 
 
         :param limit: The limit of this ListPipelinesResponse.
         :type limit: int
@@ -111,7 +111,7 @@ class ListPipelinesResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListPipelinesResponse.
 
-        总数
+        **参数解释**： 记录总数。 **取值范围**： 不涉及。 
 
         :return: The total of this ListPipelinesResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ListPipelinesResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListPipelinesResponse.
 
-        总数
+        **参数解释**： 记录总数。 **取值范围**： 不涉及。 
 
         :param total: The total of this ListPipelinesResponse.
         :type total: int
@@ -133,7 +133,7 @@ class ListPipelinesResponse(SdkResponse):
     def pipelines(self):
         r"""Gets the pipelines of this ListPipelinesResponse.
 
-        流水线
+        **参数解释**： 流水线。 **取值范围**： 不涉及。 
 
         :return: The pipelines of this ListPipelinesResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPagePipelines`]
@@ -144,7 +144,7 @@ class ListPipelinesResponse(SdkResponse):
     def pipelines(self, pipelines):
         r"""Sets the pipelines of this ListPipelinesResponse.
 
-        流水线
+        **参数解释**： 流水线。 **取值范围**： 不涉及。 
 
         :param pipelines: The pipelines of this ListPipelinesResponse.
         :type pipelines: list[:class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPagePipelines`]

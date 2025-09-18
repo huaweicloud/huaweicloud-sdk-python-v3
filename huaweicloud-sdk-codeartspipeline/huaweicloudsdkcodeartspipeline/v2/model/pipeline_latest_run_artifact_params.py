@@ -35,13 +35,13 @@ class PipelineLatestRunArtifactParams:
 
         The model defined in huaweicloud sdk
 
-        :param version: 包版本
+        :param version: **参数解释**： 包版本。 **取值范围**： 不涉及。 
         :type version: str
-        :param branch_filter: 过滤分支
+        :param branch_filter: **参数解释**： 过滤分支。 **取值范围**： 不涉及。 
         :type branch_filter: str
-        :param package_name: 包名称
+        :param package_name: **参数解释**： 包名称。 **取值范围**： 不涉及。 
         :type package_name: str
-        :param organization: docker组织信息
+        :param organization: **参数解释**： docker组织。 **取值范围**： 不涉及。 
         :type organization: str
         """
         
@@ -66,7 +66,7 @@ class PipelineLatestRunArtifactParams:
     def version(self):
         r"""Gets the version of this PipelineLatestRunArtifactParams.
 
-        包版本
+        **参数解释**： 包版本。 **取值范围**： 不涉及。 
 
         :return: The version of this PipelineLatestRunArtifactParams.
         :rtype: str
@@ -77,7 +77,7 @@ class PipelineLatestRunArtifactParams:
     def version(self, version):
         r"""Sets the version of this PipelineLatestRunArtifactParams.
 
-        包版本
+        **参数解释**： 包版本。 **取值范围**： 不涉及。 
 
         :param version: The version of this PipelineLatestRunArtifactParams.
         :type version: str
@@ -88,7 +88,7 @@ class PipelineLatestRunArtifactParams:
     def branch_filter(self):
         r"""Gets the branch_filter of this PipelineLatestRunArtifactParams.
 
-        过滤分支
+        **参数解释**： 过滤分支。 **取值范围**： 不涉及。 
 
         :return: The branch_filter of this PipelineLatestRunArtifactParams.
         :rtype: str
@@ -99,7 +99,7 @@ class PipelineLatestRunArtifactParams:
     def branch_filter(self, branch_filter):
         r"""Sets the branch_filter of this PipelineLatestRunArtifactParams.
 
-        过滤分支
+        **参数解释**： 过滤分支。 **取值范围**： 不涉及。 
 
         :param branch_filter: The branch_filter of this PipelineLatestRunArtifactParams.
         :type branch_filter: str
@@ -110,7 +110,7 @@ class PipelineLatestRunArtifactParams:
     def package_name(self):
         r"""Gets the package_name of this PipelineLatestRunArtifactParams.
 
-        包名称
+        **参数解释**： 包名称。 **取值范围**： 不涉及。 
 
         :return: The package_name of this PipelineLatestRunArtifactParams.
         :rtype: str
@@ -121,7 +121,7 @@ class PipelineLatestRunArtifactParams:
     def package_name(self, package_name):
         r"""Sets the package_name of this PipelineLatestRunArtifactParams.
 
-        包名称
+        **参数解释**： 包名称。 **取值范围**： 不涉及。 
 
         :param package_name: The package_name of this PipelineLatestRunArtifactParams.
         :type package_name: str
@@ -132,7 +132,7 @@ class PipelineLatestRunArtifactParams:
     def organization(self):
         r"""Gets the organization of this PipelineLatestRunArtifactParams.
 
-        docker组织信息
+        **参数解释**： docker组织。 **取值范围**： 不涉及。 
 
         :return: The organization of this PipelineLatestRunArtifactParams.
         :rtype: str
@@ -143,7 +143,7 @@ class PipelineLatestRunArtifactParams:
     def organization(self, organization):
         r"""Sets the organization of this PipelineLatestRunArtifactParams.
 
-        docker组织信息
+        **参数解释**： docker组织。 **取值范围**： 不涉及。 
 
         :param organization: The organization of this PipelineLatestRunArtifactParams.
         :type organization: str

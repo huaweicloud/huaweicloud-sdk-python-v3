@@ -30,7 +30,7 @@ class UpdateRedistributionControlResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 任务流id
+        :param result: **参数解释**: 修改重分布参数的任务ID。 **取值范围**: 不涉及。
         :type result: str
         """
         
@@ -46,7 +46,7 @@ class UpdateRedistributionControlResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this UpdateRedistributionControlResponse.
 
-        任务流id
+        **参数解释**: 修改重分布参数的任务ID。 **取值范围**: 不涉及。
 
         :return: The result of this UpdateRedistributionControlResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class UpdateRedistributionControlResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this UpdateRedistributionControlResponse.
 
-        任务流id
+        **参数解释**: 修改重分布参数的任务ID。 **取值范围**: 不涉及。
 
         :param result: The result of this UpdateRedistributionControlResponse.
         :type result: str

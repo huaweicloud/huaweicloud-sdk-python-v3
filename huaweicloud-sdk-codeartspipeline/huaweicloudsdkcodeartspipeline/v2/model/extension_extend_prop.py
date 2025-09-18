@@ -19,6 +19,7 @@ class ExtensionExtendProp:
     openapi_types = {
         'api_options': 'str',
         'api_type': 'str',
+        'show_placeholder': 'str',
         'options': 'str',
         'disabled_conditions': 'str',
         'visible_conditions': 'str'
@@ -27,25 +28,28 @@ class ExtensionExtendProp:
     attribute_map = {
         'api_options': 'api_options',
         'api_type': 'api_type',
+        'show_placeholder': 'show_placeholder',
         'options': 'options',
         'disabled_conditions': 'disabled_conditions',
         'visible_conditions': 'visible_conditions'
     }
 
-    def __init__(self, api_options=None, api_type=None, options=None, disabled_conditions=None, visible_conditions=None):
+    def __init__(self, api_options=None, api_type=None, show_placeholder=None, options=None, disabled_conditions=None, visible_conditions=None):
         r"""ExtensionExtendProp
 
         The model defined in huaweicloud sdk
 
-        :param api_options: API 选项
+        :param api_options: **参数解释**： API选项。 **取值范围**： 不涉及。 
         :type api_options: str
-        :param api_type: API 类型
+        :param api_type: **参数解释**： API类型。 **取值范围**： 不涉及。 
         :type api_type: str
-        :param options: 选项
+        :param show_placeholder: **参数解释**： 显示占位符。 **取值范围**： 不涉及。 
+        :type show_placeholder: str
+        :param options: **参数解释**： 选项。 **取值范围**： 不涉及。 
         :type options: str
-        :param disabled_conditions: 禁用条件
+        :param disabled_conditions: **参数解释**： 禁用条件。 **取值范围**： 不涉及。 
         :type disabled_conditions: str
-        :param visible_conditions: 可见条件
+        :param visible_conditions: **参数解释**： 可见条件。 **取值范围**： 不涉及。 
         :type visible_conditions: str
         """
         
@@ -53,6 +57,7 @@ class ExtensionExtendProp:
 
         self._api_options = None
         self._api_type = None
+        self._show_placeholder = None
         self._options = None
         self._disabled_conditions = None
         self._visible_conditions = None
@@ -62,6 +67,8 @@ class ExtensionExtendProp:
             self.api_options = api_options
         if api_type is not None:
             self.api_type = api_type
+        if show_placeholder is not None:
+            self.show_placeholder = show_placeholder
         if options is not None:
             self.options = options
         if disabled_conditions is not None:
@@ -73,7 +80,7 @@ class ExtensionExtendProp:
     def api_options(self):
         r"""Gets the api_options of this ExtensionExtendProp.
 
-        API 选项
+        **参数解释**： API选项。 **取值范围**： 不涉及。 
 
         :return: The api_options of this ExtensionExtendProp.
         :rtype: str
@@ -84,7 +91,7 @@ class ExtensionExtendProp:
     def api_options(self, api_options):
         r"""Sets the api_options of this ExtensionExtendProp.
 
-        API 选项
+        **参数解释**： API选项。 **取值范围**： 不涉及。 
 
         :param api_options: The api_options of this ExtensionExtendProp.
         :type api_options: str
@@ -95,7 +102,7 @@ class ExtensionExtendProp:
     def api_type(self):
         r"""Gets the api_type of this ExtensionExtendProp.
 
-        API 类型
+        **参数解释**： API类型。 **取值范围**： 不涉及。 
 
         :return: The api_type of this ExtensionExtendProp.
         :rtype: str
@@ -106,7 +113,7 @@ class ExtensionExtendProp:
     def api_type(self, api_type):
         r"""Sets the api_type of this ExtensionExtendProp.
 
-        API 类型
+        **参数解释**： API类型。 **取值范围**： 不涉及。 
 
         :param api_type: The api_type of this ExtensionExtendProp.
         :type api_type: str
@@ -114,10 +121,32 @@ class ExtensionExtendProp:
         self._api_type = api_type
 
     @property
+    def show_placeholder(self):
+        r"""Gets the show_placeholder of this ExtensionExtendProp.
+
+        **参数解释**： 显示占位符。 **取值范围**： 不涉及。 
+
+        :return: The show_placeholder of this ExtensionExtendProp.
+        :rtype: str
+        """
+        return self._show_placeholder
+
+    @show_placeholder.setter
+    def show_placeholder(self, show_placeholder):
+        r"""Sets the show_placeholder of this ExtensionExtendProp.
+
+        **参数解释**： 显示占位符。 **取值范围**： 不涉及。 
+
+        :param show_placeholder: The show_placeholder of this ExtensionExtendProp.
+        :type show_placeholder: str
+        """
+        self._show_placeholder = show_placeholder
+
+    @property
     def options(self):
         r"""Gets the options of this ExtensionExtendProp.
 
-        选项
+        **参数解释**： 选项。 **取值范围**： 不涉及。 
 
         :return: The options of this ExtensionExtendProp.
         :rtype: str
@@ -128,7 +157,7 @@ class ExtensionExtendProp:
     def options(self, options):
         r"""Sets the options of this ExtensionExtendProp.
 
-        选项
+        **参数解释**： 选项。 **取值范围**： 不涉及。 
 
         :param options: The options of this ExtensionExtendProp.
         :type options: str
@@ -139,7 +168,7 @@ class ExtensionExtendProp:
     def disabled_conditions(self):
         r"""Gets the disabled_conditions of this ExtensionExtendProp.
 
-        禁用条件
+        **参数解释**： 禁用条件。 **取值范围**： 不涉及。 
 
         :return: The disabled_conditions of this ExtensionExtendProp.
         :rtype: str
@@ -150,7 +179,7 @@ class ExtensionExtendProp:
     def disabled_conditions(self, disabled_conditions):
         r"""Sets the disabled_conditions of this ExtensionExtendProp.
 
-        禁用条件
+        **参数解释**： 禁用条件。 **取值范围**： 不涉及。 
 
         :param disabled_conditions: The disabled_conditions of this ExtensionExtendProp.
         :type disabled_conditions: str
@@ -161,7 +190,7 @@ class ExtensionExtendProp:
     def visible_conditions(self):
         r"""Gets the visible_conditions of this ExtensionExtendProp.
 
-        可见条件
+        **参数解释**： 可见条件。 **取值范围**： 不涉及。 
 
         :return: The visible_conditions of this ExtensionExtendProp.
         :rtype: str
@@ -172,7 +201,7 @@ class ExtensionExtendProp:
     def visible_conditions(self, visible_conditions):
         r"""Sets the visible_conditions of this ExtensionExtendProp.
 
-        可见条件
+        **参数解释**： 可见条件。 **取值范围**： 不涉及。 
 
         :param visible_conditions: The visible_conditions of this ExtensionExtendProp.
         :type visible_conditions: str

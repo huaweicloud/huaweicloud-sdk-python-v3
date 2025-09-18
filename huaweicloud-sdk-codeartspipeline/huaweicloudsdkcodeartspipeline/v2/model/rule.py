@@ -39,17 +39,17 @@ class Rule:
 
         The model defined in huaweicloud sdk
 
-        :param id: 规则ID
+        :param id: **参数解释**： 规则ID。 **取值范围**： 不涉及。 
         :type id: str
-        :param type: 规则类型
+        :param type: **参数解释**： 规则类型。 **取值范围**： 不涉及。 
         :type type: str
-        :param name: 规则名称
+        :param name: **参数解释**： 规则名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param version: 规则版本
+        :param version: **参数解释**： 规则版本。 **取值范围**： 不涉及。 
         :type version: str
-        :param operator: 最近操作人员
+        :param operator: **参数解释**： 最近操作人员。 **取值范围**： 不涉及。 
         :type operator: str
-        :param operate_time: 最近操作时间
+        :param operate_time: **参数解释**： 最近操作时间。 **取值范围**： 不涉及。 
         :type operate_time: int
         """
         
@@ -74,7 +74,7 @@ class Rule:
     def id(self):
         r"""Gets the id of this Rule.
 
-        规则ID
+        **参数解释**： 规则ID。 **取值范围**： 不涉及。 
 
         :return: The id of this Rule.
         :rtype: str
@@ -85,7 +85,7 @@ class Rule:
     def id(self, id):
         r"""Sets the id of this Rule.
 
-        规则ID
+        **参数解释**： 规则ID。 **取值范围**： 不涉及。 
 
         :param id: The id of this Rule.
         :type id: str
@@ -96,7 +96,7 @@ class Rule:
     def type(self):
         r"""Gets the type of this Rule.
 
-        规则类型
+        **参数解释**： 规则类型。 **取值范围**： 不涉及。 
 
         :return: The type of this Rule.
         :rtype: str
@@ -107,7 +107,7 @@ class Rule:
     def type(self, type):
         r"""Sets the type of this Rule.
 
-        规则类型
+        **参数解释**： 规则类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this Rule.
         :type type: str
@@ -118,7 +118,7 @@ class Rule:
     def name(self):
         r"""Gets the name of this Rule.
 
-        规则名称
+        **参数解释**： 规则名称。 **取值范围**： 不涉及。 
 
         :return: The name of this Rule.
         :rtype: str
@@ -129,7 +129,7 @@ class Rule:
     def name(self, name):
         r"""Sets the name of this Rule.
 
-        规则名称
+        **参数解释**： 规则名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this Rule.
         :type name: str
@@ -140,7 +140,7 @@ class Rule:
     def version(self):
         r"""Gets the version of this Rule.
 
-        规则版本
+        **参数解释**： 规则版本。 **取值范围**： 不涉及。 
 
         :return: The version of this Rule.
         :rtype: str
@@ -151,7 +151,7 @@ class Rule:
     def version(self, version):
         r"""Sets the version of this Rule.
 
-        规则版本
+        **参数解释**： 规则版本。 **取值范围**： 不涉及。 
 
         :param version: The version of this Rule.
         :type version: str
@@ -162,7 +162,7 @@ class Rule:
     def operator(self):
         r"""Gets the operator of this Rule.
 
-        最近操作人员
+        **参数解释**： 最近操作人员。 **取值范围**： 不涉及。 
 
         :return: The operator of this Rule.
         :rtype: str
@@ -173,7 +173,7 @@ class Rule:
     def operator(self, operator):
         r"""Sets the operator of this Rule.
 
-        最近操作人员
+        **参数解释**： 最近操作人员。 **取值范围**： 不涉及。 
 
         :param operator: The operator of this Rule.
         :type operator: str
@@ -184,7 +184,7 @@ class Rule:
     def operate_time(self):
         r"""Gets the operate_time of this Rule.
 
-        最近操作时间
+        **参数解释**： 最近操作时间。 **取值范围**： 不涉及。 
 
         :return: The operate_time of this Rule.
         :rtype: int
@@ -195,7 +195,7 @@ class Rule:
     def operate_time(self, operate_time):
         r"""Sets the operate_time of this Rule.
 
-        最近操作时间
+        **参数解释**： 最近操作时间。 **取值范围**： 不涉及。 
 
         :param operate_time: The operate_time of this Rule.
         :type operate_time: int

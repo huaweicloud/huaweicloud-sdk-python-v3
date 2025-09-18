@@ -36,13 +36,13 @@ class ListTemplatesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 总数
+        :param total: **参数解释**： 总条目数量。 **取值范围**： 大于等于0。 
         :type total: int
         :param page_number: 页码数
         :type page_number: int
         :param page_size: 每页显示数
         :type page_size: int
-        :param content: 模板数据,list类型数据
+        :param content: 模板数据，list类型数据。
         :type content: list[:class:`huaweicloudsdkcodeartspipeline.v2.TemplateView`]
         """
         
@@ -67,7 +67,7 @@ class ListTemplatesResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListTemplatesResponse.
 
-        总数
+        **参数解释**： 总条目数量。 **取值范围**： 大于等于0。 
 
         :return: The total of this ListTemplatesResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListTemplatesResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListTemplatesResponse.
 
-        总数
+        **参数解释**： 总条目数量。 **取值范围**： 大于等于0。 
 
         :param total: The total of this ListTemplatesResponse.
         :type total: int
@@ -133,7 +133,7 @@ class ListTemplatesResponse(SdkResponse):
     def content(self):
         r"""Gets the content of this ListTemplatesResponse.
 
-        模板数据,list类型数据
+        模板数据，list类型数据。
 
         :return: The content of this ListTemplatesResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.TemplateView`]
@@ -144,7 +144,7 @@ class ListTemplatesResponse(SdkResponse):
     def content(self, content):
         r"""Sets the content of this ListTemplatesResponse.
 
-        模板数据,list类型数据
+        模板数据，list类型数据。
 
         :param content: The content of this ListTemplatesResponse.
         :type content: list[:class:`huaweicloudsdkcodeartspipeline.v2.TemplateView`]

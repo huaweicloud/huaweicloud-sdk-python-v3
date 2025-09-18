@@ -39,17 +39,17 @@ class ListPipelineRunsPageStageStatusList:
 
         The model defined in huaweicloud sdk
 
-        :param name: 阶段名称
+        :param name: **参数解释**： 阶段名称。 **取值范围**： 仅支持输入中文、大小写英文字母、数字、&#39;-&#39;、&#39;_&#39;、&#39;,&#39;、&#39;;&#39;、&#39;:&#39;、&#39;.&#39;、&#39;/&#39;、&#39;(&#39;、&#39;)&#39;、&#39;（&#39;、&#39;）&#39;及空格，其中空格不可在名称开头或结尾使用，且长度为[1,128]个字符。 
         :type name: str
-        :param sequence: 序列号
+        :param sequence: **参数解释**： 阶段序列号，0代表第一个流水线阶段。 **取值范围**： 大于等于零。 
         :type sequence: int
-        :param status: 状态
+        :param status: **参数解释**： 流水线阶段状态。 **取值范围**： - INIT：初始化。 - QUEUED：排队。 - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 - SKIPPED：跳过。 - IGNORED：忽略。 - PAUSED：暂停。 - SUSPEND：挂起。 - ASYNC_RUNNING：异步运行。 - ASYNC_FAILED：异步失败。 - UNSELECTED：未选择。 - REDISPATCH：重新调度。 
         :type status: str
-        :param start_time: 开始时间
+        :param start_time: **参数解释**： 阶段开始时间。 **取值范围**： 不涉及。 
         :type start_time: str
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 阶段结束时间。 **取值范围**： 不涉及。 
         :type end_time: str
-        :param id: 阶段ID
+        :param id: **参数解释**：  阶段ID。 **取值范围**： 不涉及。 
         :type id: str
         """
         
@@ -80,7 +80,7 @@ class ListPipelineRunsPageStageStatusList:
     def name(self):
         r"""Gets the name of this ListPipelineRunsPageStageStatusList.
 
-        阶段名称
+        **参数解释**： 阶段名称。 **取值范围**： 仅支持输入中文、大小写英文字母、数字、'-'、'_'、','、';'、':'、'.'、'/'、'('、')'、'（'、'）'及空格，其中空格不可在名称开头或结尾使用，且长度为[1,128]个字符。 
 
         :return: The name of this ListPipelineRunsPageStageStatusList.
         :rtype: str
@@ -91,7 +91,7 @@ class ListPipelineRunsPageStageStatusList:
     def name(self, name):
         r"""Sets the name of this ListPipelineRunsPageStageStatusList.
 
-        阶段名称
+        **参数解释**： 阶段名称。 **取值范围**： 仅支持输入中文、大小写英文字母、数字、'-'、'_'、','、';'、':'、'.'、'/'、'('、')'、'（'、'）'及空格，其中空格不可在名称开头或结尾使用，且长度为[1,128]个字符。 
 
         :param name: The name of this ListPipelineRunsPageStageStatusList.
         :type name: str
@@ -102,7 +102,7 @@ class ListPipelineRunsPageStageStatusList:
     def sequence(self):
         r"""Gets the sequence of this ListPipelineRunsPageStageStatusList.
 
-        序列号
+        **参数解释**： 阶段序列号，0代表第一个流水线阶段。 **取值范围**： 大于等于零。 
 
         :return: The sequence of this ListPipelineRunsPageStageStatusList.
         :rtype: int
@@ -113,7 +113,7 @@ class ListPipelineRunsPageStageStatusList:
     def sequence(self, sequence):
         r"""Sets the sequence of this ListPipelineRunsPageStageStatusList.
 
-        序列号
+        **参数解释**： 阶段序列号，0代表第一个流水线阶段。 **取值范围**： 大于等于零。 
 
         :param sequence: The sequence of this ListPipelineRunsPageStageStatusList.
         :type sequence: int
@@ -124,7 +124,7 @@ class ListPipelineRunsPageStageStatusList:
     def status(self):
         r"""Gets the status of this ListPipelineRunsPageStageStatusList.
 
-        状态
+        **参数解释**： 流水线阶段状态。 **取值范围**： - INIT：初始化。 - QUEUED：排队。 - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 - SKIPPED：跳过。 - IGNORED：忽略。 - PAUSED：暂停。 - SUSPEND：挂起。 - ASYNC_RUNNING：异步运行。 - ASYNC_FAILED：异步失败。 - UNSELECTED：未选择。 - REDISPATCH：重新调度。 
 
         :return: The status of this ListPipelineRunsPageStageStatusList.
         :rtype: str
@@ -135,7 +135,7 @@ class ListPipelineRunsPageStageStatusList:
     def status(self, status):
         r"""Sets the status of this ListPipelineRunsPageStageStatusList.
 
-        状态
+        **参数解释**： 流水线阶段状态。 **取值范围**： - INIT：初始化。 - QUEUED：排队。 - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 - SKIPPED：跳过。 - IGNORED：忽略。 - PAUSED：暂停。 - SUSPEND：挂起。 - ASYNC_RUNNING：异步运行。 - ASYNC_FAILED：异步失败。 - UNSELECTED：未选择。 - REDISPATCH：重新调度。 
 
         :param status: The status of this ListPipelineRunsPageStageStatusList.
         :type status: str
@@ -146,7 +146,7 @@ class ListPipelineRunsPageStageStatusList:
     def start_time(self):
         r"""Gets the start_time of this ListPipelineRunsPageStageStatusList.
 
-        开始时间
+        **参数解释**： 阶段开始时间。 **取值范围**： 不涉及。 
 
         :return: The start_time of this ListPipelineRunsPageStageStatusList.
         :rtype: str
@@ -157,7 +157,7 @@ class ListPipelineRunsPageStageStatusList:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListPipelineRunsPageStageStatusList.
 
-        开始时间
+        **参数解释**： 阶段开始时间。 **取值范围**： 不涉及。 
 
         :param start_time: The start_time of this ListPipelineRunsPageStageStatusList.
         :type start_time: str
@@ -168,7 +168,7 @@ class ListPipelineRunsPageStageStatusList:
     def end_time(self):
         r"""Gets the end_time of this ListPipelineRunsPageStageStatusList.
 
-        结束时间
+        **参数解释**： 阶段结束时间。 **取值范围**： 不涉及。 
 
         :return: The end_time of this ListPipelineRunsPageStageStatusList.
         :rtype: str
@@ -179,7 +179,7 @@ class ListPipelineRunsPageStageStatusList:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListPipelineRunsPageStageStatusList.
 
-        结束时间
+        **参数解释**： 阶段结束时间。 **取值范围**： 不涉及。 
 
         :param end_time: The end_time of this ListPipelineRunsPageStageStatusList.
         :type end_time: str
@@ -190,7 +190,7 @@ class ListPipelineRunsPageStageStatusList:
     def id(self):
         r"""Gets the id of this ListPipelineRunsPageStageStatusList.
 
-        阶段ID
+        **参数解释**：  阶段ID。 **取值范围**： 不涉及。 
 
         :return: The id of this ListPipelineRunsPageStageStatusList.
         :rtype: str
@@ -201,7 +201,7 @@ class ListPipelineRunsPageStageStatusList:
     def id(self, id):
         r"""Sets the id of this ListPipelineRunsPageStageStatusList.
 
-        阶段ID
+        **参数解释**：  阶段ID。 **取值范围**： 不涉及。 
 
         :param id: The id of this ListPipelineRunsPageStageStatusList.
         :type id: str

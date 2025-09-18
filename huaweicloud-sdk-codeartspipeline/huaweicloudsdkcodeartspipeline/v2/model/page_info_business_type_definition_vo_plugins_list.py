@@ -23,10 +23,12 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
         'disabled': 'bool',
         'group_name': 'str',
         'group_type': 'str',
+        'standard': 'bool',
+        'db_record_name': 'str',
         'plugin_attribution': 'str',
         'plugin_composition_type': 'str',
         'runtime_attribution': 'str',
-        'all_steps': 'list[FullStagePluginsRelationVOAllSteps]',
+        'all_steps': 'list[PageInfoBusinessTypeDefinitionVOAllSteps]',
         'description': 'str',
         'version_attribution': 'str',
         'icon_url': 'str',
@@ -43,6 +45,8 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
         'disabled': 'disabled',
         'group_name': 'group_name',
         'group_type': 'group_type',
+        'standard': 'standard',
+        'db_record_name': 'db_record_name',
         'plugin_attribution': 'plugin_attribution',
         'plugin_composition_type': 'plugin_composition_type',
         'runtime_attribution': 'runtime_attribution',
@@ -56,44 +60,48 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
         'manifest_version': 'manifest_version'
     }
 
-    def __init__(self, unique_id=None, display_name=None, plugin_name=None, disabled=None, group_name=None, group_type=None, plugin_attribution=None, plugin_composition_type=None, runtime_attribution=None, all_steps=None, description=None, version_attribution=None, icon_url=None, multi_step_editable=None, location=None, publisher_unique_id=None, manifest_version=None):
+    def __init__(self, unique_id=None, display_name=None, plugin_name=None, disabled=None, group_name=None, group_type=None, standard=None, db_record_name=None, plugin_attribution=None, plugin_composition_type=None, runtime_attribution=None, all_steps=None, description=None, version_attribution=None, icon_url=None, multi_step_editable=None, location=None, publisher_unique_id=None, manifest_version=None):
         r"""PageInfoBusinessTypeDefinitionVOPluginsList
 
         The model defined in huaweicloud sdk
 
-        :param unique_id: 唯一ID
+        :param unique_id: **参数解释**： 唯一ID。 **取值范围**： 不涉及。 
         :type unique_id: str
-        :param display_name: 展示名
+        :param display_name: **参数解释**： 展示名。 **取值范围**： 不涉及。 
         :type display_name: str
-        :param plugin_name: 插件名
+        :param plugin_name: **参数解释**： 插件名。 **取值范围**： 不涉及。 
         :type plugin_name: str
-        :param disabled: 禁用
+        :param disabled: **参数解释**： 是否禁用。 **取值范围**： - true：禁用。 - false：未禁用。 
         :type disabled: bool
-        :param group_name: 组名
+        :param group_name: **参数解释**： 组名。 **取值范围**： 不涉及。 
         :type group_name: str
-        :param group_type: 组类型
+        :param group_type: **参数解释**： 组类型。 **取值范围**： 不涉及。 
         :type group_type: str
-        :param plugin_attribution: 属性
+        :param standard: **参数解释**： 是否标准化的插件。 **取值范围**： - true：是。 - false：否。 
+        :type standard: bool
+        :param db_record_name: **参数解释**： 插件记录名称。 **取值范围**： 不涉及。 
+        :type db_record_name: str
+        :param plugin_attribution: **参数解释**： 插件属性。 **取值范围**： 不涉及。 
         :type plugin_attribution: str
-        :param plugin_composition_type: 组合插件
+        :param plugin_composition_type: **参数解释**： 组合插件。 **取值范围**： 不涉及。 
         :type plugin_composition_type: str
-        :param runtime_attribution: 运行属性
+        :param runtime_attribution: **参数解释**： 插件运行属性。 **取值范围**： 不涉及。 
         :type runtime_attribution: str
-        :param all_steps: 基础插件列表
-        :type all_steps: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOAllSteps`]
-        :param description: 描述
+        :param all_steps: **参数解释**： 基础插件列表。 **取值范围**： 不涉及。 
+        :type all_steps: list[:class:`huaweicloudsdkcodeartspipeline.v2.PageInfoBusinessTypeDefinitionVOAllSteps`]
+        :param description: **参数解释**： 插件描述。 **取值范围**： 不涉及。 
         :type description: str
-        :param version_attribution: 版本属性
+        :param version_attribution: **参数解释**： 插件版本属性。 **取值范围**： 不涉及。 
         :type version_attribution: str
-        :param icon_url: 图标URL
+        :param icon_url: **参数解释**： 插件图标URL。 **取值范围**： 不涉及。 
         :type icon_url: str
-        :param multi_step_editable: 可编辑
+        :param multi_step_editable: **参数解释**： 插件可编辑。 **取值范围**： 不涉及。 
         :type multi_step_editable: int
-        :param location: 地址
+        :param location: **参数解释**： 插件地址。 **取值范围**： 不涉及。 
         :type location: str
-        :param publisher_unique_id: 发布商ID
+        :param publisher_unique_id: **参数解释**： 插件发布商ID。 **取值范围**： 不涉及。 
         :type publisher_unique_id: str
-        :param manifest_version: 版本
+        :param manifest_version: **参数解释**： 插件版本。 **取值范围**： 不涉及。 
         :type manifest_version: str
         """
         
@@ -105,6 +113,8 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
         self._disabled = None
         self._group_name = None
         self._group_type = None
+        self._standard = None
+        self._db_record_name = None
         self._plugin_attribution = None
         self._plugin_composition_type = None
         self._runtime_attribution = None
@@ -130,6 +140,10 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
             self.group_name = group_name
         if group_type is not None:
             self.group_type = group_type
+        if standard is not None:
+            self.standard = standard
+        if db_record_name is not None:
+            self.db_record_name = db_record_name
         if plugin_attribution is not None:
             self.plugin_attribution = plugin_attribution
         if plugin_composition_type is not None:
@@ -157,7 +171,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def unique_id(self):
         r"""Gets the unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        唯一ID
+        **参数解释**： 唯一ID。 **取值范围**： 不涉及。 
 
         :return: The unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -168,7 +182,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def unique_id(self, unique_id):
         r"""Sets the unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        唯一ID
+        **参数解释**： 唯一ID。 **取值范围**： 不涉及。 
 
         :param unique_id: The unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type unique_id: str
@@ -179,7 +193,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def display_name(self):
         r"""Gets the display_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        展示名
+        **参数解释**： 展示名。 **取值范围**： 不涉及。 
 
         :return: The display_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -190,7 +204,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def display_name(self, display_name):
         r"""Sets the display_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        展示名
+        **参数解释**： 展示名。 **取值范围**： 不涉及。 
 
         :param display_name: The display_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type display_name: str
@@ -201,7 +215,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def plugin_name(self):
         r"""Gets the plugin_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        插件名
+        **参数解释**： 插件名。 **取值范围**： 不涉及。 
 
         :return: The plugin_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -212,7 +226,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        插件名
+        **参数解释**： 插件名。 **取值范围**： 不涉及。 
 
         :param plugin_name: The plugin_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type plugin_name: str
@@ -223,7 +237,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def disabled(self):
         r"""Gets the disabled of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        禁用
+        **参数解释**： 是否禁用。 **取值范围**： - true：禁用。 - false：未禁用。 
 
         :return: The disabled of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: bool
@@ -234,7 +248,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def disabled(self, disabled):
         r"""Sets the disabled of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        禁用
+        **参数解释**： 是否禁用。 **取值范围**： - true：禁用。 - false：未禁用。 
 
         :param disabled: The disabled of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type disabled: bool
@@ -245,7 +259,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def group_name(self):
         r"""Gets the group_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        组名
+        **参数解释**： 组名。 **取值范围**： 不涉及。 
 
         :return: The group_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -256,7 +270,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def group_name(self, group_name):
         r"""Sets the group_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        组名
+        **参数解释**： 组名。 **取值范围**： 不涉及。 
 
         :param group_name: The group_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type group_name: str
@@ -267,7 +281,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def group_type(self):
         r"""Gets the group_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        组类型
+        **参数解释**： 组类型。 **取值范围**： 不涉及。 
 
         :return: The group_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -278,7 +292,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def group_type(self, group_type):
         r"""Sets the group_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        组类型
+        **参数解释**： 组类型。 **取值范围**： 不涉及。 
 
         :param group_type: The group_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type group_type: str
@@ -286,10 +300,54 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
         self._group_type = group_type
 
     @property
+    def standard(self):
+        r"""Gets the standard of this PageInfoBusinessTypeDefinitionVOPluginsList.
+
+        **参数解释**： 是否标准化的插件。 **取值范围**： - true：是。 - false：否。 
+
+        :return: The standard of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        :rtype: bool
+        """
+        return self._standard
+
+    @standard.setter
+    def standard(self, standard):
+        r"""Sets the standard of this PageInfoBusinessTypeDefinitionVOPluginsList.
+
+        **参数解释**： 是否标准化的插件。 **取值范围**： - true：是。 - false：否。 
+
+        :param standard: The standard of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        :type standard: bool
+        """
+        self._standard = standard
+
+    @property
+    def db_record_name(self):
+        r"""Gets the db_record_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
+
+        **参数解释**： 插件记录名称。 **取值范围**： 不涉及。 
+
+        :return: The db_record_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        :rtype: str
+        """
+        return self._db_record_name
+
+    @db_record_name.setter
+    def db_record_name(self, db_record_name):
+        r"""Sets the db_record_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
+
+        **参数解释**： 插件记录名称。 **取值范围**： 不涉及。 
+
+        :param db_record_name: The db_record_name of this PageInfoBusinessTypeDefinitionVOPluginsList.
+        :type db_record_name: str
+        """
+        self._db_record_name = db_record_name
+
+    @property
     def plugin_attribution(self):
         r"""Gets the plugin_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        属性
+        **参数解释**： 插件属性。 **取值范围**： 不涉及。 
 
         :return: The plugin_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -300,7 +358,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def plugin_attribution(self, plugin_attribution):
         r"""Sets the plugin_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        属性
+        **参数解释**： 插件属性。 **取值范围**： 不涉及。 
 
         :param plugin_attribution: The plugin_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type plugin_attribution: str
@@ -311,7 +369,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def plugin_composition_type(self):
         r"""Gets the plugin_composition_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        组合插件
+        **参数解释**： 组合插件。 **取值范围**： 不涉及。 
 
         :return: The plugin_composition_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -322,7 +380,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def plugin_composition_type(self, plugin_composition_type):
         r"""Sets the plugin_composition_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        组合插件
+        **参数解释**： 组合插件。 **取值范围**： 不涉及。 
 
         :param plugin_composition_type: The plugin_composition_type of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type plugin_composition_type: str
@@ -333,7 +391,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def runtime_attribution(self):
         r"""Gets the runtime_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        运行属性
+        **参数解释**： 插件运行属性。 **取值范围**： 不涉及。 
 
         :return: The runtime_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -344,7 +402,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def runtime_attribution(self, runtime_attribution):
         r"""Sets the runtime_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        运行属性
+        **参数解释**： 插件运行属性。 **取值范围**： 不涉及。 
 
         :param runtime_attribution: The runtime_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type runtime_attribution: str
@@ -355,10 +413,10 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def all_steps(self):
         r"""Gets the all_steps of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        基础插件列表
+        **参数解释**： 基础插件列表。 **取值范围**： 不涉及。 
 
         :return: The all_steps of this PageInfoBusinessTypeDefinitionVOPluginsList.
-        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOAllSteps`]
+        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PageInfoBusinessTypeDefinitionVOAllSteps`]
         """
         return self._all_steps
 
@@ -366,10 +424,10 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def all_steps(self, all_steps):
         r"""Sets the all_steps of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        基础插件列表
+        **参数解释**： 基础插件列表。 **取值范围**： 不涉及。 
 
         :param all_steps: The all_steps of this PageInfoBusinessTypeDefinitionVOPluginsList.
-        :type all_steps: list[:class:`huaweicloudsdkcodeartspipeline.v2.FullStagePluginsRelationVOAllSteps`]
+        :type all_steps: list[:class:`huaweicloudsdkcodeartspipeline.v2.PageInfoBusinessTypeDefinitionVOAllSteps`]
         """
         self._all_steps = all_steps
 
@@ -377,7 +435,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def description(self):
         r"""Gets the description of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        描述
+        **参数解释**： 插件描述。 **取值范围**： 不涉及。 
 
         :return: The description of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -388,7 +446,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def description(self, description):
         r"""Sets the description of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        描述
+        **参数解释**： 插件描述。 **取值范围**： 不涉及。 
 
         :param description: The description of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type description: str
@@ -399,7 +457,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def version_attribution(self):
         r"""Gets the version_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        版本属性
+        **参数解释**： 插件版本属性。 **取值范围**： 不涉及。 
 
         :return: The version_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -410,7 +468,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def version_attribution(self, version_attribution):
         r"""Sets the version_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        版本属性
+        **参数解释**： 插件版本属性。 **取值范围**： 不涉及。 
 
         :param version_attribution: The version_attribution of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type version_attribution: str
@@ -421,7 +479,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def icon_url(self):
         r"""Gets the icon_url of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        图标URL
+        **参数解释**： 插件图标URL。 **取值范围**： 不涉及。 
 
         :return: The icon_url of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -432,7 +490,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def icon_url(self, icon_url):
         r"""Sets the icon_url of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        图标URL
+        **参数解释**： 插件图标URL。 **取值范围**： 不涉及。 
 
         :param icon_url: The icon_url of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type icon_url: str
@@ -443,7 +501,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def multi_step_editable(self):
         r"""Gets the multi_step_editable of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        可编辑
+        **参数解释**： 插件可编辑。 **取值范围**： 不涉及。 
 
         :return: The multi_step_editable of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: int
@@ -454,7 +512,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def multi_step_editable(self, multi_step_editable):
         r"""Sets the multi_step_editable of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        可编辑
+        **参数解释**： 插件可编辑。 **取值范围**： 不涉及。 
 
         :param multi_step_editable: The multi_step_editable of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type multi_step_editable: int
@@ -465,7 +523,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def location(self):
         r"""Gets the location of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        地址
+        **参数解释**： 插件地址。 **取值范围**： 不涉及。 
 
         :return: The location of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -476,7 +534,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def location(self, location):
         r"""Sets the location of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        地址
+        **参数解释**： 插件地址。 **取值范围**： 不涉及。 
 
         :param location: The location of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type location: str
@@ -487,7 +545,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def publisher_unique_id(self):
         r"""Gets the publisher_unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        发布商ID
+        **参数解释**： 插件发布商ID。 **取值范围**： 不涉及。 
 
         :return: The publisher_unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -498,7 +556,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def publisher_unique_id(self, publisher_unique_id):
         r"""Sets the publisher_unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        发布商ID
+        **参数解释**： 插件发布商ID。 **取值范围**： 不涉及。 
 
         :param publisher_unique_id: The publisher_unique_id of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type publisher_unique_id: str
@@ -509,7 +567,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def manifest_version(self):
         r"""Gets the manifest_version of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        版本
+        **参数解释**： 插件版本。 **取值范围**： 不涉及。 
 
         :return: The manifest_version of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :rtype: str
@@ -520,7 +578,7 @@ class PageInfoBusinessTypeDefinitionVOPluginsList:
     def manifest_version(self, manifest_version):
         r"""Sets the manifest_version of this PageInfoBusinessTypeDefinitionVOPluginsList.
 
-        版本
+        **参数解释**： 插件版本。 **取值范围**： 不涉及。 
 
         :param manifest_version: The manifest_version of this PageInfoBusinessTypeDefinitionVOPluginsList.
         :type manifest_version: str

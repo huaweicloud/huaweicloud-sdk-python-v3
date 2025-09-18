@@ -33,11 +33,11 @@ class RuleContent:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 分组名称
+        :param group_name: **参数解释**： 分组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type group_name: str
-        :param can_modify_when_inherit: 继承后的子策略是否可以修改阈值
+        :param can_modify_when_inherit: **参数解释**： 继承后的子策略是否可以修改阈值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type can_modify_when_inherit: bool
-        :param properties: 规则属性列表
+        :param properties: **参数解释**： 规则属性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type properties: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleProperty`]
         """
         
@@ -57,7 +57,7 @@ class RuleContent:
     def group_name(self):
         r"""Gets the group_name of this RuleContent.
 
-        分组名称
+        **参数解释**： 分组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The group_name of this RuleContent.
         :rtype: str
@@ -68,7 +68,7 @@ class RuleContent:
     def group_name(self, group_name):
         r"""Sets the group_name of this RuleContent.
 
-        分组名称
+        **参数解释**： 分组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param group_name: The group_name of this RuleContent.
         :type group_name: str
@@ -79,7 +79,7 @@ class RuleContent:
     def can_modify_when_inherit(self):
         r"""Gets the can_modify_when_inherit of this RuleContent.
 
-        继承后的子策略是否可以修改阈值
+        **参数解释**： 继承后的子策略是否可以修改阈值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The can_modify_when_inherit of this RuleContent.
         :rtype: bool
@@ -90,7 +90,7 @@ class RuleContent:
     def can_modify_when_inherit(self, can_modify_when_inherit):
         r"""Sets the can_modify_when_inherit of this RuleContent.
 
-        继承后的子策略是否可以修改阈值
+        **参数解释**： 继承后的子策略是否可以修改阈值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param can_modify_when_inherit: The can_modify_when_inherit of this RuleContent.
         :type can_modify_when_inherit: bool
@@ -101,7 +101,7 @@ class RuleContent:
     def properties(self):
         r"""Gets the properties of this RuleContent.
 
-        规则属性列表
+        **参数解释**： 规则属性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The properties of this RuleContent.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleProperty`]
@@ -112,7 +112,7 @@ class RuleContent:
     def properties(self, properties):
         r"""Sets the properties of this RuleContent.
 
-        规则属性列表
+        **参数解释**： 规则属性列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param properties: The properties of this RuleContent.
         :type properties: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleProperty`]

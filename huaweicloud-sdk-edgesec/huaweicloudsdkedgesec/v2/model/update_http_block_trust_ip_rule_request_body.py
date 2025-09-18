@@ -19,7 +19,6 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'status': 'int',
         'addr': 'str',
         'white': 'int',
         'followed_action_id': 'str',
@@ -29,14 +28,13 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'status': 'status',
         'addr': 'addr',
         'white': 'white',
         'followed_action_id': 'followed_action_id',
         'ip_group_id': 'ip_group_id'
     }
 
-    def __init__(self, name=None, description=None, status=None, addr=None, white=None, followed_action_id=None, ip_group_id=None):
+    def __init__(self, name=None, description=None, addr=None, white=None, followed_action_id=None, ip_group_id=None):
         r"""UpdateHttpBlockTrustIpRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -45,8 +43,6 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
         :type name: str
         :param description: 规则描述，最长512字符
         :type description: str
-        :param status: 规则开关： - 0：关闭 - 1：开启 
-        :type status: int
         :param addr: ip地址/地址段；ip地址/地址段或者ip地址组id至少有一个
         :type addr: str
         :param white: - 0：拦截 - 1：放行 - 2：仅记录 
@@ -61,7 +57,6 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
         self._name = None
         self._description = None
-        self._status = None
         self._addr = None
         self._white = None
         self._followed_action_id = None
@@ -71,8 +66,6 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
         self.name = name
         if description is not None:
             self.description = description
-        if status is not None:
-            self.status = status
         if addr is not None:
             self.addr = addr
         self.white = white
@@ -124,28 +117,6 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
         :type description: str
         """
         self._description = description
-
-    @property
-    def status(self):
-        r"""Gets the status of this UpdateHttpBlockTrustIpRuleRequestBody.
-
-        规则开关： - 0：关闭 - 1：开启 
-
-        :return: The status of this UpdateHttpBlockTrustIpRuleRequestBody.
-        :rtype: int
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        r"""Sets the status of this UpdateHttpBlockTrustIpRuleRequestBody.
-
-        规则开关： - 0：关闭 - 1：开启 
-
-        :param status: The status of this UpdateHttpBlockTrustIpRuleRequestBody.
-        :type status: int
-        """
-        self._status = status
 
     @property
     def addr(self):

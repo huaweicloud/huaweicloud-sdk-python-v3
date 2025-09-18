@@ -47,25 +47,25 @@ class StagePluginsQueryDTO:
 
         The model defined in huaweicloud sdk
 
-        :param use_condition: 用于区分插件为流水线可使用/模板可使用
+        :param use_condition: **参数解释**： 用于区分插件为流水线可使用/模板可使用。 **约束限制**： 不涉及。 **取值范围**： - pipeline：流水线可使用。 - template：模板可使用。 **默认取值**： 不涉及。 
         :type use_condition: str
-        :param comp_id: 微服务ID
+        :param comp_id: **参数解释**： 微服务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type comp_id: str
-        :param comp_name: 微服务名
+        :param comp_name: **参数解释**： 微服务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type comp_name: str
-        :param cloud_id: 局点ID
+        :param cloud_id: **参数解释**： 局点ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type cloud_id: str
-        :param strategy_id: 策略ID
+        :param strategy_id: **参数解释**： 策略ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type strategy_id: str
-        :param category: 流水线类型
+        :param category: **参数解释**： 流水线类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type category: str
-        :param publish_tab: 是否发布流水线
+        :param publish_tab: **参数解释**： 是否发布流水线。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type publish_tab: str
-        :param platform: 部署平台
+        :param platform: **参数解释**： 部署平台。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type platform: str
-        :param comp_extend_type: 组件类型
+        :param comp_extend_type: **参数解释**： 组件类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type comp_extend_type: str
-        :param deploy_type: 部署类型
+        :param deploy_type: **参数解释**： 部署类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type deploy_type: str
         """
         
@@ -108,7 +108,7 @@ class StagePluginsQueryDTO:
     def use_condition(self):
         r"""Gets the use_condition of this StagePluginsQueryDTO.
 
-        用于区分插件为流水线可使用/模板可使用
+        **参数解释**： 用于区分插件为流水线可使用/模板可使用。 **约束限制**： 不涉及。 **取值范围**： - pipeline：流水线可使用。 - template：模板可使用。 **默认取值**： 不涉及。 
 
         :return: The use_condition of this StagePluginsQueryDTO.
         :rtype: str
@@ -119,7 +119,7 @@ class StagePluginsQueryDTO:
     def use_condition(self, use_condition):
         r"""Sets the use_condition of this StagePluginsQueryDTO.
 
-        用于区分插件为流水线可使用/模板可使用
+        **参数解释**： 用于区分插件为流水线可使用/模板可使用。 **约束限制**： 不涉及。 **取值范围**： - pipeline：流水线可使用。 - template：模板可使用。 **默认取值**： 不涉及。 
 
         :param use_condition: The use_condition of this StagePluginsQueryDTO.
         :type use_condition: str
@@ -130,7 +130,7 @@ class StagePluginsQueryDTO:
     def comp_id(self):
         r"""Gets the comp_id of this StagePluginsQueryDTO.
 
-        微服务ID
+        **参数解释**： 微服务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The comp_id of this StagePluginsQueryDTO.
         :rtype: str
@@ -141,7 +141,7 @@ class StagePluginsQueryDTO:
     def comp_id(self, comp_id):
         r"""Sets the comp_id of this StagePluginsQueryDTO.
 
-        微服务ID
+        **参数解释**： 微服务ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param comp_id: The comp_id of this StagePluginsQueryDTO.
         :type comp_id: str
@@ -152,7 +152,7 @@ class StagePluginsQueryDTO:
     def comp_name(self):
         r"""Gets the comp_name of this StagePluginsQueryDTO.
 
-        微服务名
+        **参数解释**： 微服务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The comp_name of this StagePluginsQueryDTO.
         :rtype: str
@@ -163,7 +163,7 @@ class StagePluginsQueryDTO:
     def comp_name(self, comp_name):
         r"""Sets the comp_name of this StagePluginsQueryDTO.
 
-        微服务名
+        **参数解释**： 微服务名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param comp_name: The comp_name of this StagePluginsQueryDTO.
         :type comp_name: str
@@ -174,7 +174,7 @@ class StagePluginsQueryDTO:
     def cloud_id(self):
         r"""Gets the cloud_id of this StagePluginsQueryDTO.
 
-        局点ID
+        **参数解释**： 局点ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The cloud_id of this StagePluginsQueryDTO.
         :rtype: str
@@ -185,7 +185,7 @@ class StagePluginsQueryDTO:
     def cloud_id(self, cloud_id):
         r"""Sets the cloud_id of this StagePluginsQueryDTO.
 
-        局点ID
+        **参数解释**： 局点ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param cloud_id: The cloud_id of this StagePluginsQueryDTO.
         :type cloud_id: str
@@ -196,7 +196,7 @@ class StagePluginsQueryDTO:
     def strategy_id(self):
         r"""Gets the strategy_id of this StagePluginsQueryDTO.
 
-        策略ID
+        **参数解释**： 策略ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The strategy_id of this StagePluginsQueryDTO.
         :rtype: str
@@ -207,7 +207,7 @@ class StagePluginsQueryDTO:
     def strategy_id(self, strategy_id):
         r"""Sets the strategy_id of this StagePluginsQueryDTO.
 
-        策略ID
+        **参数解释**： 策略ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param strategy_id: The strategy_id of this StagePluginsQueryDTO.
         :type strategy_id: str
@@ -218,7 +218,7 @@ class StagePluginsQueryDTO:
     def category(self):
         r"""Gets the category of this StagePluginsQueryDTO.
 
-        流水线类型
+        **参数解释**： 流水线类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The category of this StagePluginsQueryDTO.
         :rtype: str
@@ -229,7 +229,7 @@ class StagePluginsQueryDTO:
     def category(self, category):
         r"""Sets the category of this StagePluginsQueryDTO.
 
-        流水线类型
+        **参数解释**： 流水线类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param category: The category of this StagePluginsQueryDTO.
         :type category: str
@@ -240,7 +240,7 @@ class StagePluginsQueryDTO:
     def publish_tab(self):
         r"""Gets the publish_tab of this StagePluginsQueryDTO.
 
-        是否发布流水线
+        **参数解释**： 是否发布流水线。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The publish_tab of this StagePluginsQueryDTO.
         :rtype: str
@@ -251,7 +251,7 @@ class StagePluginsQueryDTO:
     def publish_tab(self, publish_tab):
         r"""Sets the publish_tab of this StagePluginsQueryDTO.
 
-        是否发布流水线
+        **参数解释**： 是否发布流水线。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param publish_tab: The publish_tab of this StagePluginsQueryDTO.
         :type publish_tab: str
@@ -262,7 +262,7 @@ class StagePluginsQueryDTO:
     def platform(self):
         r"""Gets the platform of this StagePluginsQueryDTO.
 
-        部署平台
+        **参数解释**： 部署平台。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The platform of this StagePluginsQueryDTO.
         :rtype: str
@@ -273,7 +273,7 @@ class StagePluginsQueryDTO:
     def platform(self, platform):
         r"""Sets the platform of this StagePluginsQueryDTO.
 
-        部署平台
+        **参数解释**： 部署平台。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param platform: The platform of this StagePluginsQueryDTO.
         :type platform: str
@@ -284,7 +284,7 @@ class StagePluginsQueryDTO:
     def comp_extend_type(self):
         r"""Gets the comp_extend_type of this StagePluginsQueryDTO.
 
-        组件类型
+        **参数解释**： 组件类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The comp_extend_type of this StagePluginsQueryDTO.
         :rtype: str
@@ -295,7 +295,7 @@ class StagePluginsQueryDTO:
     def comp_extend_type(self, comp_extend_type):
         r"""Sets the comp_extend_type of this StagePluginsQueryDTO.
 
-        组件类型
+        **参数解释**： 组件类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param comp_extend_type: The comp_extend_type of this StagePluginsQueryDTO.
         :type comp_extend_type: str
@@ -306,7 +306,7 @@ class StagePluginsQueryDTO:
     def deploy_type(self):
         r"""Gets the deploy_type of this StagePluginsQueryDTO.
 
-        部署类型
+        **参数解释**： 部署类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The deploy_type of this StagePluginsQueryDTO.
         :rtype: str
@@ -317,7 +317,7 @@ class StagePluginsQueryDTO:
     def deploy_type(self, deploy_type):
         r"""Sets the deploy_type of this StagePluginsQueryDTO.
 
-        部署类型
+        **参数解释**： 部署类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param deploy_type: The deploy_type of this StagePluginsQueryDTO.
         :type deploy_type: str

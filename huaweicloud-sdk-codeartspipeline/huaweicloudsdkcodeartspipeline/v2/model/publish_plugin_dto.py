@@ -33,11 +33,11 @@ class PublishPluginDTO:
 
         The model defined in huaweicloud sdk
 
-        :param plugin_name: 插件名
+        :param plugin_name: **参数解释**： 插件名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type plugin_name: str
-        :param version: 版本
+        :param version: **参数解释**： 版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type version: str
-        :param publisher_unique_id: 发布商ID
+        :param publisher_unique_id: **参数解释**： 发布商ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type publisher_unique_id: str
         """
         
@@ -56,7 +56,7 @@ class PublishPluginDTO:
     def plugin_name(self):
         r"""Gets the plugin_name of this PublishPluginDTO.
 
-        插件名
+        **参数解释**： 插件名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The plugin_name of this PublishPluginDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class PublishPluginDTO:
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this PublishPluginDTO.
 
-        插件名
+        **参数解释**： 插件名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param plugin_name: The plugin_name of this PublishPluginDTO.
         :type plugin_name: str
@@ -78,7 +78,7 @@ class PublishPluginDTO:
     def version(self):
         r"""Gets the version of this PublishPluginDTO.
 
-        版本
+        **参数解释**： 版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The version of this PublishPluginDTO.
         :rtype: str
@@ -89,7 +89,7 @@ class PublishPluginDTO:
     def version(self, version):
         r"""Sets the version of this PublishPluginDTO.
 
-        版本
+        **参数解释**： 版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param version: The version of this PublishPluginDTO.
         :type version: str
@@ -100,7 +100,7 @@ class PublishPluginDTO:
     def publisher_unique_id(self):
         r"""Gets the publisher_unique_id of this PublishPluginDTO.
 
-        发布商ID
+        **参数解释**： 发布商ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The publisher_unique_id of this PublishPluginDTO.
         :rtype: str
@@ -111,7 +111,7 @@ class PublishPluginDTO:
     def publisher_unique_id(self, publisher_unique_id):
         r"""Sets the publisher_unique_id of this PublishPluginDTO.
 
-        发布商ID
+        **参数解释**： 发布商ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param publisher_unique_id: The publisher_unique_id of this PublishPluginDTO.
         :type publisher_unique_id: str

@@ -32,9 +32,9 @@ class ListRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 静态规则列表
+        :param data: **参数解释**： 静态规则列表。 **取值范围**： 不涉及。 
         :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.Rule`]
-        :param total: 总数
+        :param total: **参数解释**： 本次查询的静态规则总数。 **取值范围**： 不涉及。 
         :type total: int
         """
         
@@ -53,7 +53,7 @@ class ListRuleResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ListRuleResponse.
 
-        静态规则列表
+        **参数解释**： 静态规则列表。 **取值范围**： 不涉及。 
 
         :return: The data of this ListRuleResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.Rule`]
@@ -64,7 +64,7 @@ class ListRuleResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ListRuleResponse.
 
-        静态规则列表
+        **参数解释**： 静态规则列表。 **取值范围**： 不涉及。 
 
         :param data: The data of this ListRuleResponse.
         :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.Rule`]
@@ -75,7 +75,7 @@ class ListRuleResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListRuleResponse.
 
-        总数
+        **参数解释**： 本次查询的静态规则总数。 **取值范围**： 不涉及。 
 
         :return: The total of this ListRuleResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListRuleResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListRuleResponse.
 
-        总数
+        **参数解释**： 本次查询的静态规则总数。 **取值范围**： 不涉及。 
 
         :param total: The total of this ListRuleResponse.
         :type total: int

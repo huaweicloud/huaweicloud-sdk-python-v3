@@ -30,7 +30,7 @@ class UpdatePipelineGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param success: 操作是否成功
+        :param success: **参数解释**： 操作是否成功。 **取值范围**： - true：操作成功。 - false：操作失败。 
         :type success: bool
         """
         
@@ -46,7 +46,7 @@ class UpdatePipelineGroupResponse(SdkResponse):
     def success(self):
         r"""Gets the success of this UpdatePipelineGroupResponse.
 
-        操作是否成功
+        **参数解释**： 操作是否成功。 **取值范围**： - true：操作成功。 - false：操作失败。 
 
         :return: The success of this UpdatePipelineGroupResponse.
         :rtype: bool
@@ -57,7 +57,7 @@ class UpdatePipelineGroupResponse(SdkResponse):
     def success(self, success):
         r"""Sets the success of this UpdatePipelineGroupResponse.
 
-        操作是否成功
+        **参数解释**： 操作是否成功。 **取值范围**： - true：操作成功。 - false：操作失败。 
 
         :param success: The success of this UpdatePipelineGroupResponse.
         :type success: bool

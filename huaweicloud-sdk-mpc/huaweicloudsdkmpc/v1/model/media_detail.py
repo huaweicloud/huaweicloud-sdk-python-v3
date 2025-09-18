@@ -22,7 +22,8 @@ class MediaDetail:
         'output_video_paras': 'list[OutputVideoPara]',
         'replace_sub_index': 'list[str]',
         'output_thumbnail_para': 'OutputThumbnailPara',
-        'output_watermark_paras': 'OutputWatermarkPara'
+        'output_watermark_paras': 'OutputWatermarkPara',
+        'metadata': 'list[FileMetaData]'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class MediaDetail:
         'output_video_paras': 'output_video_paras',
         'replace_sub_index': 'replace_sub_index',
         'output_thumbnail_para': 'output_thumbnail_para',
-        'output_watermark_paras': 'output_watermark_paras'
+        'output_watermark_paras': 'output_watermark_paras',
+        'metadata': 'metadata'
     }
 
-    def __init__(self, features=None, origin_para=None, output_video_paras=None, replace_sub_index=None, output_thumbnail_para=None, output_watermark_paras=None):
+    def __init__(self, features=None, origin_para=None, output_video_paras=None, replace_sub_index=None, output_thumbnail_para=None, output_watermark_paras=None, metadata=None):
         r"""MediaDetail
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class MediaDetail:
         :type output_thumbnail_para: :class:`huaweicloudsdkmpc.v1.OutputThumbnailPara`
         :param output_watermark_paras: 
         :type output_watermark_paras: :class:`huaweicloudsdkmpc.v1.OutputWatermarkPara`
+        :param metadata: 输出文件的metadata信息 
+        :type metadata: list[:class:`huaweicloudsdkmpc.v1.FileMetaData`]
         """
         
         
@@ -61,6 +65,7 @@ class MediaDetail:
         self._replace_sub_index = None
         self._output_thumbnail_para = None
         self._output_watermark_paras = None
+        self._metadata = None
         self.discriminator = None
 
         if features is not None:
@@ -75,6 +80,8 @@ class MediaDetail:
             self.output_thumbnail_para = output_thumbnail_para
         if output_watermark_paras is not None:
             self.output_watermark_paras = output_watermark_paras
+        if metadata is not None:
+            self.metadata = metadata
 
     @property
     def features(self):
@@ -195,6 +202,28 @@ class MediaDetail:
         :type output_watermark_paras: :class:`huaweicloudsdkmpc.v1.OutputWatermarkPara`
         """
         self._output_watermark_paras = output_watermark_paras
+
+    @property
+    def metadata(self):
+        r"""Gets the metadata of this MediaDetail.
+
+        输出文件的metadata信息 
+
+        :return: The metadata of this MediaDetail.
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.FileMetaData`]
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        r"""Sets the metadata of this MediaDetail.
+
+        输出文件的metadata信息 
+
+        :param metadata: The metadata of this MediaDetail.
+        :type metadata: list[:class:`huaweicloudsdkmpc.v1.FileMetaData`]
+        """
+        self._metadata = metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

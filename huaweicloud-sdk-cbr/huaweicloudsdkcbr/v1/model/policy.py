@@ -23,7 +23,8 @@ class Policy:
         'operation_definition': 'PolicyoODCreate',
         'operation_type': 'str',
         'trigger': 'PolicyTriggerResp',
-        'associated_vaults': 'list[PolicyAssociateVault]'
+        'associated_vaults': 'list[PolicyAssociateVault]',
+        'policy_type': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class Policy:
         'operation_definition': 'operation_definition',
         'operation_type': 'operation_type',
         'trigger': 'trigger',
-        'associated_vaults': 'associated_vaults'
+        'associated_vaults': 'associated_vaults',
+        'policy_type': 'policy_type'
     }
 
-    def __init__(self, enabled=None, id=None, name=None, operation_definition=None, operation_type=None, trigger=None, associated_vaults=None):
+    def __init__(self, enabled=None, id=None, name=None, operation_definition=None, operation_type=None, trigger=None, associated_vaults=None, policy_type=None):
         r"""Policy
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class Policy:
         :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerResp`
         :param associated_vaults: 关联的存储库
         :type associated_vaults: list[:class:`huaweicloudsdkcbr.v1.PolicyAssociateVault`]
+        :param policy_type: 策略类型，取值范围如下： - custom_policy：普通用户策略 - organization_policy_v1：老版本组织策略 - organization_policy_v2：新版本组织策略 - organization_policy_removed：退出组织的用户已绑定在存储库上的新版本组织策略（不自动解绑策略与存储库绑定关系，但是不能新绑定存储库）
+        :type policy_type: str
         """
         
         
@@ -66,6 +70,7 @@ class Policy:
         self._operation_type = None
         self._trigger = None
         self._associated_vaults = None
+        self._policy_type = None
         self.discriminator = None
 
         self.enabled = enabled
@@ -76,6 +81,8 @@ class Policy:
         self.trigger = trigger
         if associated_vaults is not None:
             self.associated_vaults = associated_vaults
+        if policy_type is not None:
+            self.policy_type = policy_type
 
     @property
     def enabled(self):
@@ -222,6 +229,28 @@ class Policy:
         :type associated_vaults: list[:class:`huaweicloudsdkcbr.v1.PolicyAssociateVault`]
         """
         self._associated_vaults = associated_vaults
+
+    @property
+    def policy_type(self):
+        r"""Gets the policy_type of this Policy.
+
+        策略类型，取值范围如下： - custom_policy：普通用户策略 - organization_policy_v1：老版本组织策略 - organization_policy_v2：新版本组织策略 - organization_policy_removed：退出组织的用户已绑定在存储库上的新版本组织策略（不自动解绑策略与存储库绑定关系，但是不能新绑定存储库）
+
+        :return: The policy_type of this Policy.
+        :rtype: str
+        """
+        return self._policy_type
+
+    @policy_type.setter
+    def policy_type(self, policy_type):
+        r"""Sets the policy_type of this Policy.
+
+        策略类型，取值范围如下： - custom_policy：普通用户策略 - organization_policy_v1：老版本组织策略 - organization_policy_v2：新版本组织策略 - organization_policy_removed：退出组织的用户已绑定在存储库上的新版本组织策略（不自动解绑策略与存储库绑定关系，但是不能新绑定存储库）
+
+        :param policy_type: The policy_type of this Policy.
+        :type policy_type: str
+        """
+        self._policy_type = policy_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

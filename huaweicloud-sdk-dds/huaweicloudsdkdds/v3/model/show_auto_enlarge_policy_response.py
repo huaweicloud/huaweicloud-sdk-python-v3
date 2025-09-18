@@ -32,7 +32,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param switch_option: 自动扩容开关。 - on：开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 默认值为on。
+        :param switch_option: **参数解释：** 自动扩容开关。 **取值范围：** - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。
         :type switch_option: str
         :param policy: 
         :type policy: :class:`huaweicloudsdkdds.v3.DiskAutoExpansionPolicy`
@@ -53,7 +53,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
     def switch_option(self):
         r"""Gets the switch_option of this ShowAutoEnlargePolicyResponse.
 
-        自动扩容开关。 - on：开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 默认值为on。
+        **参数解释：** 自动扩容开关。 **取值范围：** - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。
 
         :return: The switch_option of this ShowAutoEnlargePolicyResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
     def switch_option(self, switch_option):
         r"""Sets the switch_option of this ShowAutoEnlargePolicyResponse.
 
-        自动扩容开关。 - on：开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 默认值为on。
+        **参数解释：** 自动扩容开关。 **取值范围：** - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。
 
         :param switch_option: The switch_option of this ShowAutoEnlargePolicyResponse.
         :type switch_option: str

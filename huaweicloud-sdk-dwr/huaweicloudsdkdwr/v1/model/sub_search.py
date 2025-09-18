@@ -47,7 +47,7 @@ class SubSearch:
         :type top_k: int
         :param offset: **参数解释：** 在搜索结果中跳过的记录数。可以将此参数与 top_k 参数结合使用以启用分页。 **约束限制：** 1.与top_k取值的总和应小于16384。 2.当sub_search数量为1时才生效。 **取值范围：** 大于等于0 **默认取值:** 0
         :type offset: int
-        :param filter: **参数解释：** 用于过滤匹配entity的标量过滤条件。可以将此设置为空字符串以跳过标量过滤。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 空字符串，不就行标量过滤。
+        :param filter: **参数解释：** 用于过滤匹配entity的标量过滤条件。可以将此设置为空字符串以跳过标量过滤。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 空字符串，不进行标量过滤。
         :type filter: str
         :param params: **参数解释：** 额外的搜索参数配置。 可以配置的参数： * ef: 每个查询的邻居候选集大小。候选集越大，搜索的精度越高，但是搜索时间也会随之增加。（仅对HNSW索引类型生效） * search_list: 候选列表的大小，越大召回率越高，但性能会下降。（仅对HANNS索引类型生效） * cut_off_frequency: 通过停用词出现频率决定是否作为查询结果。（仅对稀疏向量搜索生效）  **约束限制：** 不涉及。 **取值范围：** 当sub_search数量为1时：  ef: [top_k + offset, int32_max]  search_list: [top_k + offset, int32_max]  cut_off_frequency：[0, 1.0] 当sub_search数量大于1时：  ef: [top_k, int32_max]  search_list: [top_k, int32_max]  cut_off_frequency：[0, 1.0]  **默认取值:**  当sub_search数量为1时：  ef: top_k + offset  search_list: top_k + offset  cut_off_frequency: 0 当sub_search数量大于1时：  ef: top_k  search_list: top_k  cut_off_frequency: 0
         :type params: dict(str, object)
@@ -166,7 +166,7 @@ class SubSearch:
     def filter(self):
         r"""Gets the filter of this SubSearch.
 
-        **参数解释：** 用于过滤匹配entity的标量过滤条件。可以将此设置为空字符串以跳过标量过滤。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 空字符串，不就行标量过滤。
+        **参数解释：** 用于过滤匹配entity的标量过滤条件。可以将此设置为空字符串以跳过标量过滤。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 空字符串，不进行标量过滤。
 
         :return: The filter of this SubSearch.
         :rtype: str
@@ -177,7 +177,7 @@ class SubSearch:
     def filter(self, filter):
         r"""Sets the filter of this SubSearch.
 
-        **参数解释：** 用于过滤匹配entity的标量过滤条件。可以将此设置为空字符串以跳过标量过滤。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 空字符串，不就行标量过滤。
+        **参数解释：** 用于过滤匹配entity的标量过滤条件。可以将此设置为空字符串以跳过标量过滤。 **约束限制：** 要构建标量过滤条件，请参阅filter表达式规则。 **取值范围：** 不涉及。 **默认取值：** 空字符串，不进行标量过滤。
 
         :param filter: The filter of this SubSearch.
         :type filter: str

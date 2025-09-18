@@ -41,19 +41,19 @@ class ListPipelineTemplatesQuery:
 
         The model defined in huaweicloud sdk
 
-        :param language: 创建模板时，用户选择的语言
+        :param language: **参数解释**： 模板语言。 **约束限制**： 不涉及。 **取值范围**： - java。 - python。 - nodejs。 - go。 - net。 - cpp。 - php。 - other。 - none。 **默认取值**： 不涉及。 
         :type language: str
-        :param is_system: 是否系统模板
+        :param is_system: **参数解释**： 是否系统模板。 **约束限制**： 不涉及。 **取值范围**： - true：是系统模板 - false：不是系统模板。 **默认取值**： 不涉及。 
         :type is_system: bool
-        :param name: 模板名称
+        :param name: **参数解释**： 模板名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type name: str
-        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0，默认为0
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： offset大于等于0。 **默认取值**： 默认为0。 
         :type offset: int
-        :param limit: 每次查询的条目数量，默认为10。
+        :param limit: **参数解释**： 每次查询的条目数量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 默认为10。 
         :type limit: int
-        :param sort_key: 用于排序的字段，非必选。取值为：name，create_time
+        :param sort_key: **参数解释**： 用于排序的字段，非必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type sort_key: str
-        :param sort_dir: 排序类型，非必选。asc按排序字段升序，desc按排序字段降序
+        :param sort_dir: **参数解释**：   排序类型，非必选。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序。 **默认取值**： 不涉及。 
         :type sort_dir: str
         """
         
@@ -87,7 +87,7 @@ class ListPipelineTemplatesQuery:
     def language(self):
         r"""Gets the language of this ListPipelineTemplatesQuery.
 
-        创建模板时，用户选择的语言
+        **参数解释**： 模板语言。 **约束限制**： 不涉及。 **取值范围**： - java。 - python。 - nodejs。 - go。 - net。 - cpp。 - php。 - other。 - none。 **默认取值**： 不涉及。 
 
         :return: The language of this ListPipelineTemplatesQuery.
         :rtype: str
@@ -98,7 +98,7 @@ class ListPipelineTemplatesQuery:
     def language(self, language):
         r"""Sets the language of this ListPipelineTemplatesQuery.
 
-        创建模板时，用户选择的语言
+        **参数解释**： 模板语言。 **约束限制**： 不涉及。 **取值范围**： - java。 - python。 - nodejs。 - go。 - net。 - cpp。 - php。 - other。 - none。 **默认取值**： 不涉及。 
 
         :param language: The language of this ListPipelineTemplatesQuery.
         :type language: str
@@ -109,7 +109,7 @@ class ListPipelineTemplatesQuery:
     def is_system(self):
         r"""Gets the is_system of this ListPipelineTemplatesQuery.
 
-        是否系统模板
+        **参数解释**： 是否系统模板。 **约束限制**： 不涉及。 **取值范围**： - true：是系统模板 - false：不是系统模板。 **默认取值**： 不涉及。 
 
         :return: The is_system of this ListPipelineTemplatesQuery.
         :rtype: bool
@@ -120,7 +120,7 @@ class ListPipelineTemplatesQuery:
     def is_system(self, is_system):
         r"""Sets the is_system of this ListPipelineTemplatesQuery.
 
-        是否系统模板
+        **参数解释**： 是否系统模板。 **约束限制**： 不涉及。 **取值范围**： - true：是系统模板 - false：不是系统模板。 **默认取值**： 不涉及。 
 
         :param is_system: The is_system of this ListPipelineTemplatesQuery.
         :type is_system: bool
@@ -131,7 +131,7 @@ class ListPipelineTemplatesQuery:
     def name(self):
         r"""Gets the name of this ListPipelineTemplatesQuery.
 
-        模板名称
+        **参数解释**： 模板名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this ListPipelineTemplatesQuery.
         :rtype: str
@@ -142,7 +142,7 @@ class ListPipelineTemplatesQuery:
     def name(self, name):
         r"""Sets the name of this ListPipelineTemplatesQuery.
 
-        模板名称
+        **参数解释**： 模板名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this ListPipelineTemplatesQuery.
         :type name: str
@@ -153,7 +153,7 @@ class ListPipelineTemplatesQuery:
     def offset(self):
         r"""Gets the offset of this ListPipelineTemplatesQuery.
 
-        偏移量，表示从此偏移量开始查询，offset大于等于0，默认为0
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： offset大于等于0。 **默认取值**： 默认为0。 
 
         :return: The offset of this ListPipelineTemplatesQuery.
         :rtype: int
@@ -164,7 +164,7 @@ class ListPipelineTemplatesQuery:
     def offset(self, offset):
         r"""Sets the offset of this ListPipelineTemplatesQuery.
 
-        偏移量，表示从此偏移量开始查询，offset大于等于0，默认为0
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： offset大于等于0。 **默认取值**： 默认为0。 
 
         :param offset: The offset of this ListPipelineTemplatesQuery.
         :type offset: int
@@ -175,7 +175,7 @@ class ListPipelineTemplatesQuery:
     def limit(self):
         r"""Gets the limit of this ListPipelineTemplatesQuery.
 
-        每次查询的条目数量，默认为10。
+        **参数解释**： 每次查询的条目数量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 默认为10。 
 
         :return: The limit of this ListPipelineTemplatesQuery.
         :rtype: int
@@ -186,7 +186,7 @@ class ListPipelineTemplatesQuery:
     def limit(self, limit):
         r"""Sets the limit of this ListPipelineTemplatesQuery.
 
-        每次查询的条目数量，默认为10。
+        **参数解释**： 每次查询的条目数量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 默认为10。 
 
         :param limit: The limit of this ListPipelineTemplatesQuery.
         :type limit: int
@@ -197,7 +197,7 @@ class ListPipelineTemplatesQuery:
     def sort_key(self):
         r"""Gets the sort_key of this ListPipelineTemplatesQuery.
 
-        用于排序的字段，非必选。取值为：name，create_time
+        **参数解释**： 用于排序的字段，非必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The sort_key of this ListPipelineTemplatesQuery.
         :rtype: str
@@ -208,7 +208,7 @@ class ListPipelineTemplatesQuery:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListPipelineTemplatesQuery.
 
-        用于排序的字段，非必选。取值为：name，create_time
+        **参数解释**： 用于排序的字段，非必选。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param sort_key: The sort_key of this ListPipelineTemplatesQuery.
         :type sort_key: str
@@ -219,7 +219,7 @@ class ListPipelineTemplatesQuery:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListPipelineTemplatesQuery.
 
-        排序类型，非必选。asc按排序字段升序，desc按排序字段降序
+        **参数解释**：   排序类型，非必选。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序。 **默认取值**： 不涉及。 
 
         :return: The sort_dir of this ListPipelineTemplatesQuery.
         :rtype: str
@@ -230,7 +230,7 @@ class ListPipelineTemplatesQuery:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListPipelineTemplatesQuery.
 
-        排序类型，非必选。asc按排序字段升序，desc按排序字段降序
+        **参数解释**：   排序类型，非必选。 **约束限制**： 不涉及。 **取值范围**： - asc：按排序字段升序。 - desc：按排序字段降序。 **默认取值**： 不涉及。 
 
         :param sort_dir: The sort_dir of this ListPipelineTemplatesQuery.
         :type sort_dir: str

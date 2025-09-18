@@ -47,25 +47,25 @@ class PipelineVariable:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数名称
+        :param name: **参数解释**： 自定义参数名称。 **取值范围**： 仅支持大小写英文字母、数字、“_”，不超过128个字符。 
         :type name: str
-        :param sequence: 序号
+        :param sequence: **参数解释**： 序号。 **取值范围**： [1, 2147483647]。 
         :type sequence: int
-        :param type: 类型
+        :param type: **参数解释**： 自定义参数的类型。 **取值范围**： 不涉及。 
         :type type: str
-        :param value: 默认值
+        :param value: **参数解释**： 自定义参数的默认值。 **取值范围**： 不涉及。 
         :type value: str
-        :param is_secret: 是否私密
+        :param is_secret: **参数解释**： 是否为私密参数。 **取值范围**： - true：是私密参数。 - false：不是私密参数。 
         :type is_secret: bool
-        :param description: 描述
+        :param description: **参数解释**： 自定义参数描述。 **取值范围**： 不涉及。 
         :type description: str
-        :param is_runtime: 是否运行时设置
+        :param is_runtime: **参数解释**： 是否运行时设置。 **取值范围**： - true：运行时设置。 - false：非运行时设置。 
         :type is_runtime: bool
-        :param limits: 限定枚举值
+        :param limits: **参数解释**： 限定枚举值列表。 **取值范围**： 不涉及。 
         :type limits: list[str]
-        :param is_reset: 自增长参数是否被重置
+        :param is_reset: **参数解释**： 自增长参数是否被重置。 **取值范围**： - true：被重置。 - false：不被重置。 
         :type is_reset: bool
-        :param latest_value: 自增长参数最新值
+        :param latest_value: **参数解释**： 自增长参数最新值。 **取值范围**： 不涉及。 
         :type latest_value: str
         """
         
@@ -108,7 +108,7 @@ class PipelineVariable:
     def name(self):
         r"""Gets the name of this PipelineVariable.
 
-        参数名称
+        **参数解释**： 自定义参数名称。 **取值范围**： 仅支持大小写英文字母、数字、“_”，不超过128个字符。 
 
         :return: The name of this PipelineVariable.
         :rtype: str
@@ -119,7 +119,7 @@ class PipelineVariable:
     def name(self, name):
         r"""Sets the name of this PipelineVariable.
 
-        参数名称
+        **参数解释**： 自定义参数名称。 **取值范围**： 仅支持大小写英文字母、数字、“_”，不超过128个字符。 
 
         :param name: The name of this PipelineVariable.
         :type name: str
@@ -130,7 +130,7 @@ class PipelineVariable:
     def sequence(self):
         r"""Gets the sequence of this PipelineVariable.
 
-        序号
+        **参数解释**： 序号。 **取值范围**： [1, 2147483647]。 
 
         :return: The sequence of this PipelineVariable.
         :rtype: int
@@ -141,7 +141,7 @@ class PipelineVariable:
     def sequence(self, sequence):
         r"""Sets the sequence of this PipelineVariable.
 
-        序号
+        **参数解释**： 序号。 **取值范围**： [1, 2147483647]。 
 
         :param sequence: The sequence of this PipelineVariable.
         :type sequence: int
@@ -152,7 +152,7 @@ class PipelineVariable:
     def type(self):
         r"""Gets the type of this PipelineVariable.
 
-        类型
+        **参数解释**： 自定义参数的类型。 **取值范围**： 不涉及。 
 
         :return: The type of this PipelineVariable.
         :rtype: str
@@ -163,7 +163,7 @@ class PipelineVariable:
     def type(self, type):
         r"""Sets the type of this PipelineVariable.
 
-        类型
+        **参数解释**： 自定义参数的类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this PipelineVariable.
         :type type: str
@@ -174,7 +174,7 @@ class PipelineVariable:
     def value(self):
         r"""Gets the value of this PipelineVariable.
 
-        默认值
+        **参数解释**： 自定义参数的默认值。 **取值范围**： 不涉及。 
 
         :return: The value of this PipelineVariable.
         :rtype: str
@@ -185,7 +185,7 @@ class PipelineVariable:
     def value(self, value):
         r"""Sets the value of this PipelineVariable.
 
-        默认值
+        **参数解释**： 自定义参数的默认值。 **取值范围**： 不涉及。 
 
         :param value: The value of this PipelineVariable.
         :type value: str
@@ -196,7 +196,7 @@ class PipelineVariable:
     def is_secret(self):
         r"""Gets the is_secret of this PipelineVariable.
 
-        是否私密
+        **参数解释**： 是否为私密参数。 **取值范围**： - true：是私密参数。 - false：不是私密参数。 
 
         :return: The is_secret of this PipelineVariable.
         :rtype: bool
@@ -207,7 +207,7 @@ class PipelineVariable:
     def is_secret(self, is_secret):
         r"""Sets the is_secret of this PipelineVariable.
 
-        是否私密
+        **参数解释**： 是否为私密参数。 **取值范围**： - true：是私密参数。 - false：不是私密参数。 
 
         :param is_secret: The is_secret of this PipelineVariable.
         :type is_secret: bool
@@ -218,7 +218,7 @@ class PipelineVariable:
     def description(self):
         r"""Gets the description of this PipelineVariable.
 
-        描述
+        **参数解释**： 自定义参数描述。 **取值范围**： 不涉及。 
 
         :return: The description of this PipelineVariable.
         :rtype: str
@@ -229,7 +229,7 @@ class PipelineVariable:
     def description(self, description):
         r"""Sets the description of this PipelineVariable.
 
-        描述
+        **参数解释**： 自定义参数描述。 **取值范围**： 不涉及。 
 
         :param description: The description of this PipelineVariable.
         :type description: str
@@ -240,7 +240,7 @@ class PipelineVariable:
     def is_runtime(self):
         r"""Gets the is_runtime of this PipelineVariable.
 
-        是否运行时设置
+        **参数解释**： 是否运行时设置。 **取值范围**： - true：运行时设置。 - false：非运行时设置。 
 
         :return: The is_runtime of this PipelineVariable.
         :rtype: bool
@@ -251,7 +251,7 @@ class PipelineVariable:
     def is_runtime(self, is_runtime):
         r"""Sets the is_runtime of this PipelineVariable.
 
-        是否运行时设置
+        **参数解释**： 是否运行时设置。 **取值范围**： - true：运行时设置。 - false：非运行时设置。 
 
         :param is_runtime: The is_runtime of this PipelineVariable.
         :type is_runtime: bool
@@ -262,7 +262,7 @@ class PipelineVariable:
     def limits(self):
         r"""Gets the limits of this PipelineVariable.
 
-        限定枚举值
+        **参数解释**： 限定枚举值列表。 **取值范围**： 不涉及。 
 
         :return: The limits of this PipelineVariable.
         :rtype: list[str]
@@ -273,7 +273,7 @@ class PipelineVariable:
     def limits(self, limits):
         r"""Sets the limits of this PipelineVariable.
 
-        限定枚举值
+        **参数解释**： 限定枚举值列表。 **取值范围**： 不涉及。 
 
         :param limits: The limits of this PipelineVariable.
         :type limits: list[str]
@@ -284,7 +284,7 @@ class PipelineVariable:
     def is_reset(self):
         r"""Gets the is_reset of this PipelineVariable.
 
-        自增长参数是否被重置
+        **参数解释**： 自增长参数是否被重置。 **取值范围**： - true：被重置。 - false：不被重置。 
 
         :return: The is_reset of this PipelineVariable.
         :rtype: bool
@@ -295,7 +295,7 @@ class PipelineVariable:
     def is_reset(self, is_reset):
         r"""Sets the is_reset of this PipelineVariable.
 
-        自增长参数是否被重置
+        **参数解释**： 自增长参数是否被重置。 **取值范围**： - true：被重置。 - false：不被重置。 
 
         :param is_reset: The is_reset of this PipelineVariable.
         :type is_reset: bool
@@ -306,7 +306,7 @@ class PipelineVariable:
     def latest_value(self):
         r"""Gets the latest_value of this PipelineVariable.
 
-        自增长参数最新值
+        **参数解释**： 自增长参数最新值。 **取值范围**： 不涉及。 
 
         :return: The latest_value of this PipelineVariable.
         :rtype: str
@@ -317,7 +317,7 @@ class PipelineVariable:
     def latest_value(self, latest_value):
         r"""Sets the latest_value of this PipelineVariable.
 
-        自增长参数最新值
+        **参数解释**： 自增长参数最新值。 **取值范围**： 不涉及。 
 
         :param latest_value: The latest_value of this PipelineVariable.
         :type latest_value: str

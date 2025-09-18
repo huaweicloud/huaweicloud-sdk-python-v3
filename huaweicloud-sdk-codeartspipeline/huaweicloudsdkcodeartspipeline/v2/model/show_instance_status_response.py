@@ -38,13 +38,13 @@ class ShowInstanceStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 实例ID
+        :param task_id: 流水线创建实例ID
         :type task_id: str
-        :param task_status: 实例创建状态，取值和含义:initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
+        :param task_status: 实例创建状态，取值和含义：initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
         :type task_status: str
         :param pipeline_id: 流水线ID
         :type pipeline_id: str
-        :param pipeline_name: 流水线名字
+        :param pipeline_name: 流水线名称
         :type pipeline_name: str
         :param pipeline_url: 流水线详情页面url
         :type pipeline_url: str
@@ -74,7 +74,7 @@ class ShowInstanceStatusResponse(SdkResponse):
     def task_id(self):
         r"""Gets the task_id of this ShowInstanceStatusResponse.
 
-        实例ID
+        流水线创建实例ID
 
         :return: The task_id of this ShowInstanceStatusResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class ShowInstanceStatusResponse(SdkResponse):
     def task_id(self, task_id):
         r"""Sets the task_id of this ShowInstanceStatusResponse.
 
-        实例ID
+        流水线创建实例ID
 
         :param task_id: The task_id of this ShowInstanceStatusResponse.
         :type task_id: str
@@ -96,7 +96,7 @@ class ShowInstanceStatusResponse(SdkResponse):
     def task_status(self):
         r"""Gets the task_status of this ShowInstanceStatusResponse.
 
-        实例创建状态，取值和含义:initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
+        实例创建状态，取值和含义：initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
 
         :return: The task_status of this ShowInstanceStatusResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowInstanceStatusResponse(SdkResponse):
     def task_status(self, task_status):
         r"""Sets the task_status of this ShowInstanceStatusResponse.
 
-        实例创建状态，取值和含义:initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
+        实例创建状态，取值和含义：initializing：初始化中；processing：处理中；finished：已完成；succeeded：成功
 
         :param task_status: The task_status of this ShowInstanceStatusResponse.
         :type task_status: str
@@ -140,7 +140,7 @@ class ShowInstanceStatusResponse(SdkResponse):
     def pipeline_name(self):
         r"""Gets the pipeline_name of this ShowInstanceStatusResponse.
 
-        流水线名字
+        流水线名称
 
         :return: The pipeline_name of this ShowInstanceStatusResponse.
         :rtype: str
@@ -151,7 +151,7 @@ class ShowInstanceStatusResponse(SdkResponse):
     def pipeline_name(self, pipeline_name):
         r"""Sets the pipeline_name of this ShowInstanceStatusResponse.
 
-        流水线名字
+        流水线名称
 
         :param pipeline_name: The pipeline_name of this ShowInstanceStatusResponse.
         :type pipeline_name: str

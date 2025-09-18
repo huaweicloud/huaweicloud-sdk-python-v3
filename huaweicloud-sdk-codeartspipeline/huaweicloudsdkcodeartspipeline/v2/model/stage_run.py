@@ -59,37 +59,37 @@ class StageRun:
 
         The model defined in huaweicloud sdk
 
-        :param id: 阶段ID
+        :param id: **参数解释**： 阶段ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type id: str
-        :param category: 阶段类型
+        :param category: **参数解释**： 阶段类型。 **取值范围**： 不涉及。 
         :type category: str
-        :param name: 阶段名称
+        :param name: **参数解释**： 阶段名称。 **取值范围**： 仅支持输入中文、大小写英文字母、数字、&#39;-&#39;、&#39;_&#39;、&#39;,&#39;、&#39;;&#39;、&#39;:&#39;、&#39;.&#39;、&#39;/&#39;、&#39;(&#39;、&#39;)&#39;、&#39;（&#39;、&#39;）&#39;及空格，其中空格不可在名称开头或结尾使用，且长度为[1,128]个字符。 
         :type name: str
-        :param identifier: 唯一标识
+        :param identifier: **参数解释**： 阶段唯一标识。 **取值范围**： 不涉及。 
         :type identifier: str
-        :param run_always: 是否总是运行
+        :param run_always: **参数解释**： 是否总是运行。 **取值范围**： - true：总是运行。 - false：非总是运行。 
         :type run_always: bool
-        :param parallel: 是否并行
+        :param parallel: **参数解释**： 是否并行。 **取值范围**： 不涉及。 
         :type parallel: str
-        :param is_select: 是否选中
+        :param is_select: **参数解释**： 是否选中。 **取值范围**： - true：选中。 - false：未选中。 
         :type is_select: bool
-        :param sequence: 序列号
+        :param sequence: **参数解释**： 序列号。 **取值范围**： 大于等于0。 
         :type sequence: int
-        :param depends_on: 依赖
+        :param depends_on: **参数解释**： 依赖阶段的identifier信息。 **取值范围**： 不涉及。 
         :type depends_on: list[str]
-        :param condition: 运行条件
+        :param condition: **参数解释**： 运行条件。 **取值范围**： 不涉及。 
         :type condition: str
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： - INIT：初始化。 - QUEUED：排队。 - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 - SKIPPED：跳过。 - IGNORED：忽略。 - PAUSED：暂停。 - SUSPEND：挂起。 - ASYNC_RUNNING：异步运行。 - ASYNC_FAILED：异步失败。 - UNSELECTED：未选择。 - REDISPATCH：重新调度。 
         :type status: str
-        :param start_time: 开始时间
+        :param start_time: **参数解释**： 阶段开始时间。 **取值范围**： 不涉及。 
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 阶段结束时间。 **取值范围**： 不涉及。 
         :type end_time: int
-        :param pre: 阶段准入
+        :param pre: **参数解释**： 阶段准入。 **取值范围**： 不涉及。 
         :type pre: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRun`]
-        :param post: 阶段准出
+        :param post: **参数解释**： 阶段准出。 **取值范围**： 不涉及。 
         :type post: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRun`]
-        :param jobs: 任务
+        :param jobs: **参数解释**： 任务列表。 **取值范围**： 不涉及。 
         :type jobs: list[:class:`huaweicloudsdkcodeartspipeline.v2.JobRun`]
         """
         
@@ -150,7 +150,7 @@ class StageRun:
     def id(self):
         r"""Gets the id of this StageRun.
 
-        阶段ID
+        **参数解释**： 阶段ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The id of this StageRun.
         :rtype: str
@@ -161,7 +161,7 @@ class StageRun:
     def id(self, id):
         r"""Sets the id of this StageRun.
 
-        阶段ID
+        **参数解释**： 阶段ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param id: The id of this StageRun.
         :type id: str
@@ -172,7 +172,7 @@ class StageRun:
     def category(self):
         r"""Gets the category of this StageRun.
 
-        阶段类型
+        **参数解释**： 阶段类型。 **取值范围**： 不涉及。 
 
         :return: The category of this StageRun.
         :rtype: str
@@ -183,7 +183,7 @@ class StageRun:
     def category(self, category):
         r"""Sets the category of this StageRun.
 
-        阶段类型
+        **参数解释**： 阶段类型。 **取值范围**： 不涉及。 
 
         :param category: The category of this StageRun.
         :type category: str
@@ -194,7 +194,7 @@ class StageRun:
     def name(self):
         r"""Gets the name of this StageRun.
 
-        阶段名称
+        **参数解释**： 阶段名称。 **取值范围**： 仅支持输入中文、大小写英文字母、数字、'-'、'_'、','、';'、':'、'.'、'/'、'('、')'、'（'、'）'及空格，其中空格不可在名称开头或结尾使用，且长度为[1,128]个字符。 
 
         :return: The name of this StageRun.
         :rtype: str
@@ -205,7 +205,7 @@ class StageRun:
     def name(self, name):
         r"""Sets the name of this StageRun.
 
-        阶段名称
+        **参数解释**： 阶段名称。 **取值范围**： 仅支持输入中文、大小写英文字母、数字、'-'、'_'、','、';'、':'、'.'、'/'、'('、')'、'（'、'）'及空格，其中空格不可在名称开头或结尾使用，且长度为[1,128]个字符。 
 
         :param name: The name of this StageRun.
         :type name: str
@@ -216,7 +216,7 @@ class StageRun:
     def identifier(self):
         r"""Gets the identifier of this StageRun.
 
-        唯一标识
+        **参数解释**： 阶段唯一标识。 **取值范围**： 不涉及。 
 
         :return: The identifier of this StageRun.
         :rtype: str
@@ -227,7 +227,7 @@ class StageRun:
     def identifier(self, identifier):
         r"""Sets the identifier of this StageRun.
 
-        唯一标识
+        **参数解释**： 阶段唯一标识。 **取值范围**： 不涉及。 
 
         :param identifier: The identifier of this StageRun.
         :type identifier: str
@@ -238,7 +238,7 @@ class StageRun:
     def run_always(self):
         r"""Gets the run_always of this StageRun.
 
-        是否总是运行
+        **参数解释**： 是否总是运行。 **取值范围**： - true：总是运行。 - false：非总是运行。 
 
         :return: The run_always of this StageRun.
         :rtype: bool
@@ -249,7 +249,7 @@ class StageRun:
     def run_always(self, run_always):
         r"""Sets the run_always of this StageRun.
 
-        是否总是运行
+        **参数解释**： 是否总是运行。 **取值范围**： - true：总是运行。 - false：非总是运行。 
 
         :param run_always: The run_always of this StageRun.
         :type run_always: bool
@@ -260,7 +260,7 @@ class StageRun:
     def parallel(self):
         r"""Gets the parallel of this StageRun.
 
-        是否并行
+        **参数解释**： 是否并行。 **取值范围**： 不涉及。 
 
         :return: The parallel of this StageRun.
         :rtype: str
@@ -271,7 +271,7 @@ class StageRun:
     def parallel(self, parallel):
         r"""Sets the parallel of this StageRun.
 
-        是否并行
+        **参数解释**： 是否并行。 **取值范围**： 不涉及。 
 
         :param parallel: The parallel of this StageRun.
         :type parallel: str
@@ -282,7 +282,7 @@ class StageRun:
     def is_select(self):
         r"""Gets the is_select of this StageRun.
 
-        是否选中
+        **参数解释**： 是否选中。 **取值范围**： - true：选中。 - false：未选中。 
 
         :return: The is_select of this StageRun.
         :rtype: bool
@@ -293,7 +293,7 @@ class StageRun:
     def is_select(self, is_select):
         r"""Sets the is_select of this StageRun.
 
-        是否选中
+        **参数解释**： 是否选中。 **取值范围**： - true：选中。 - false：未选中。 
 
         :param is_select: The is_select of this StageRun.
         :type is_select: bool
@@ -304,7 +304,7 @@ class StageRun:
     def sequence(self):
         r"""Gets the sequence of this StageRun.
 
-        序列号
+        **参数解释**： 序列号。 **取值范围**： 大于等于0。 
 
         :return: The sequence of this StageRun.
         :rtype: int
@@ -315,7 +315,7 @@ class StageRun:
     def sequence(self, sequence):
         r"""Sets the sequence of this StageRun.
 
-        序列号
+        **参数解释**： 序列号。 **取值范围**： 大于等于0。 
 
         :param sequence: The sequence of this StageRun.
         :type sequence: int
@@ -326,7 +326,7 @@ class StageRun:
     def depends_on(self):
         r"""Gets the depends_on of this StageRun.
 
-        依赖
+        **参数解释**： 依赖阶段的identifier信息。 **取值范围**： 不涉及。 
 
         :return: The depends_on of this StageRun.
         :rtype: list[str]
@@ -337,7 +337,7 @@ class StageRun:
     def depends_on(self, depends_on):
         r"""Sets the depends_on of this StageRun.
 
-        依赖
+        **参数解释**： 依赖阶段的identifier信息。 **取值范围**： 不涉及。 
 
         :param depends_on: The depends_on of this StageRun.
         :type depends_on: list[str]
@@ -348,7 +348,7 @@ class StageRun:
     def condition(self):
         r"""Gets the condition of this StageRun.
 
-        运行条件
+        **参数解释**： 运行条件。 **取值范围**： 不涉及。 
 
         :return: The condition of this StageRun.
         :rtype: str
@@ -359,7 +359,7 @@ class StageRun:
     def condition(self, condition):
         r"""Sets the condition of this StageRun.
 
-        运行条件
+        **参数解释**： 运行条件。 **取值范围**： 不涉及。 
 
         :param condition: The condition of this StageRun.
         :type condition: str
@@ -370,7 +370,7 @@ class StageRun:
     def status(self):
         r"""Gets the status of this StageRun.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： - INIT：初始化。 - QUEUED：排队。 - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 - SKIPPED：跳过。 - IGNORED：忽略。 - PAUSED：暂停。 - SUSPEND：挂起。 - ASYNC_RUNNING：异步运行。 - ASYNC_FAILED：异步失败。 - UNSELECTED：未选择。 - REDISPATCH：重新调度。 
 
         :return: The status of this StageRun.
         :rtype: str
@@ -381,7 +381,7 @@ class StageRun:
     def status(self, status):
         r"""Sets the status of this StageRun.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： - INIT：初始化。 - QUEUED：排队。 - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 - SKIPPED：跳过。 - IGNORED：忽略。 - PAUSED：暂停。 - SUSPEND：挂起。 - ASYNC_RUNNING：异步运行。 - ASYNC_FAILED：异步失败。 - UNSELECTED：未选择。 - REDISPATCH：重新调度。 
 
         :param status: The status of this StageRun.
         :type status: str
@@ -392,7 +392,7 @@ class StageRun:
     def start_time(self):
         r"""Gets the start_time of this StageRun.
 
-        开始时间
+        **参数解释**： 阶段开始时间。 **取值范围**： 不涉及。 
 
         :return: The start_time of this StageRun.
         :rtype: int
@@ -403,7 +403,7 @@ class StageRun:
     def start_time(self, start_time):
         r"""Sets the start_time of this StageRun.
 
-        开始时间
+        **参数解释**： 阶段开始时间。 **取值范围**： 不涉及。 
 
         :param start_time: The start_time of this StageRun.
         :type start_time: int
@@ -414,7 +414,7 @@ class StageRun:
     def end_time(self):
         r"""Gets the end_time of this StageRun.
 
-        结束时间
+        **参数解释**： 阶段结束时间。 **取值范围**： 不涉及。 
 
         :return: The end_time of this StageRun.
         :rtype: int
@@ -425,7 +425,7 @@ class StageRun:
     def end_time(self, end_time):
         r"""Sets the end_time of this StageRun.
 
-        结束时间
+        **参数解释**： 阶段结束时间。 **取值范围**： 不涉及。 
 
         :param end_time: The end_time of this StageRun.
         :type end_time: int
@@ -436,7 +436,7 @@ class StageRun:
     def pre(self):
         r"""Gets the pre of this StageRun.
 
-        阶段准入
+        **参数解释**： 阶段准入。 **取值范围**： 不涉及。 
 
         :return: The pre of this StageRun.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRun`]
@@ -447,7 +447,7 @@ class StageRun:
     def pre(self, pre):
         r"""Sets the pre of this StageRun.
 
-        阶段准入
+        **参数解释**： 阶段准入。 **取值范围**： 不涉及。 
 
         :param pre: The pre of this StageRun.
         :type pre: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRun`]
@@ -458,7 +458,7 @@ class StageRun:
     def post(self):
         r"""Gets the post of this StageRun.
 
-        阶段准出
+        **参数解释**： 阶段准出。 **取值范围**： 不涉及。 
 
         :return: The post of this StageRun.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRun`]
@@ -469,7 +469,7 @@ class StageRun:
     def post(self, post):
         r"""Sets the post of this StageRun.
 
-        阶段准出
+        **参数解释**： 阶段准出。 **取值范围**： 不涉及。 
 
         :param post: The post of this StageRun.
         :type post: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRun`]
@@ -480,7 +480,7 @@ class StageRun:
     def jobs(self):
         r"""Gets the jobs of this StageRun.
 
-        任务
+        **参数解释**： 任务列表。 **取值范围**： 不涉及。 
 
         :return: The jobs of this StageRun.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.JobRun`]
@@ -491,7 +491,7 @@ class StageRun:
     def jobs(self, jobs):
         r"""Sets the jobs of this StageRun.
 
-        任务
+        **参数解释**： 任务列表。 **取值范围**： 不涉及。 
 
         :param jobs: The jobs of this StageRun.
         :type jobs: list[:class:`huaweicloudsdkcodeartspipeline.v2.JobRun`]

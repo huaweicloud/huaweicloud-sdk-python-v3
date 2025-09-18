@@ -20,7 +20,7 @@ class ListExecutionStepsResponse(SdkResponse):
     openapi_types = {
         'error_code': 'str',
         'error_msg': 'str',
-        'data': 'list[ExcutionStep]',
+        'data': 'list[ExecutionStep]',
         'total': 'int',
         'x_request_id': 'str'
     }
@@ -43,7 +43,7 @@ class ListExecutionStepsResponse(SdkResponse):
         :param error_msg: 错误信息
         :type error_msg: str
         :param data: 返回数据
-        :type data: list[:class:`huaweicloudsdkcoc.v1.ExcutionStep`]
+        :type data: list[:class:`huaweicloudsdkcoc.v1.ExecutionStep`]
         :param total: 总数
         :type total: int
         :param x_request_id: 
@@ -121,7 +121,7 @@ class ListExecutionStepsResponse(SdkResponse):
         返回数据
 
         :return: The data of this ListExecutionStepsResponse.
-        :rtype: list[:class:`huaweicloudsdkcoc.v1.ExcutionStep`]
+        :rtype: list[:class:`huaweicloudsdkcoc.v1.ExecutionStep`]
         """
         return self._data
 
@@ -132,7 +132,7 @@ class ListExecutionStepsResponse(SdkResponse):
         返回数据
 
         :param data: The data of this ListExecutionStepsResponse.
-        :type data: list[:class:`huaweicloudsdkcoc.v1.ExcutionStep`]
+        :type data: list[:class:`huaweicloudsdkcoc.v1.ExecutionStep`]
         """
         self._data = data
 

@@ -55,7 +55,7 @@ class CreateGlobalConnectionBandwidth:
         :type name: str
         :param description: 实例描述。不支持 &lt;&gt;。
         :type description: str
-        :param bordercross: 功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
+        :param bordercross: 全域互联带宽跨境属性。
         :type bordercross: bool
         :param type: 功能说明：描述带宽类型，对应地理区间的城域、区域、大区、跨区四级： - TrsArea: 跨区带宽 - Area: 大区带宽 - SubArea: 区域带宽 - Region: 城域带宽
         :type type: str
@@ -161,7 +161,7 @@ class CreateGlobalConnectionBandwidth:
     def bordercross(self):
         r"""Gets the bordercross of this CreateGlobalConnectionBandwidth.
 
-        功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
+        全域互联带宽跨境属性。
 
         :return: The bordercross of this CreateGlobalConnectionBandwidth.
         :rtype: bool
@@ -172,7 +172,7 @@ class CreateGlobalConnectionBandwidth:
     def bordercross(self, bordercross):
         r"""Sets the bordercross of this CreateGlobalConnectionBandwidth.
 
-        功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
+        全域互联带宽跨境属性。
 
         :param bordercross: The bordercross of this CreateGlobalConnectionBandwidth.
         :type bordercross: bool

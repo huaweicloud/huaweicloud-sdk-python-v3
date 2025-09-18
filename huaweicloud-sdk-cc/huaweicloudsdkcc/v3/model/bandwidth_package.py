@@ -27,8 +27,8 @@ class BandwidthPackage:
         'updated_at': 'datetime',
         'resource_id': 'str',
         'resource_type': 'str',
-        'local_area_id': 'AreaIdDef',
-        'remote_area_id': 'AreaIdDef',
+        'local_area_id': 'LocalAreaIdDef',
+        'remote_area_id': 'RemoteAreaIdDef',
         'spec_code': 'str',
         'billing_mode': 'BillingModeEnum',
         'tags': 'list[Tag]',
@@ -92,10 +92,10 @@ class BandwidthPackage:
         :param resource_type: 带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
         :type resource_type: str
         :param local_area_id: 
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         :param remote_area_id: 
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
-        :param spec_code: 带宽包实例的规格编码。 bandwidth.aftoela：大陆站+国际站南非-拉美东 bandwidth.aftonla：大陆站+国际站南非-拉美北 bandwidth.aftowla：大陆站+国际站南非-拉美西 bandwidth.aptoaf：国际站亚太-南非 bandwidth.aptoap：国际站亚太-亚太 bandwidth.aptoela：大陆站+国际站亚太-拉美东 bandwidth.aptonla：大陆站+国际站亚太-拉美北 bandwidth.aptowla：大陆站+国际站亚太-拉美西 bandwidth.cmtoaf：国际站中国大陆-南非 bandwidth.cmtoap：国际站中国大陆-亚太 bandwidth.cmtocm：国际站中国大陆-中国大陆 bandwidth.cmtoela：大陆站+国际站中国大陆-拉美东 bandwidth.cmtonla：大陆站+国际站中国大陆-拉美北 bandwidth.cmtowla：大陆站+国际站中国大陆-拉美西 bandwidth.elatoela：大陆站+国际站拉美东-拉美东 bandwidth.elatonla：大陆站+国际站拉美东-拉美北 bandwidth.wlatoela：大陆站+国际站拉美西-拉美东 bandwidth.wlatonla：大陆站+国际站拉美西-拉美北 bandwidth.wlatowla：大陆站+国际站拉美西-拉美西
+        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
+        :param spec_code: 带宽包实例的规格编码。
         :type spec_code: str
         :param billing_mode: 
         :type billing_mode: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
@@ -401,7 +401,7 @@ class BandwidthPackage:
         r"""Gets the local_area_id of this BandwidthPackage.
 
         :return: The local_area_id of this BandwidthPackage.
-        :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :rtype: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         return self._local_area_id
 
@@ -410,7 +410,7 @@ class BandwidthPackage:
         r"""Sets the local_area_id of this BandwidthPackage.
 
         :param local_area_id: The local_area_id of this BandwidthPackage.
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         self._local_area_id = local_area_id
 
@@ -419,7 +419,7 @@ class BandwidthPackage:
         r"""Gets the remote_area_id of this BandwidthPackage.
 
         :return: The remote_area_id of this BandwidthPackage.
-        :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :rtype: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         return self._remote_area_id
 
@@ -428,7 +428,7 @@ class BandwidthPackage:
         r"""Sets the remote_area_id of this BandwidthPackage.
 
         :param remote_area_id: The remote_area_id of this BandwidthPackage.
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         self._remote_area_id = remote_area_id
 
@@ -436,7 +436,7 @@ class BandwidthPackage:
     def spec_code(self):
         r"""Gets the spec_code of this BandwidthPackage.
 
-        带宽包实例的规格编码。 bandwidth.aftoela：大陆站+国际站南非-拉美东 bandwidth.aftonla：大陆站+国际站南非-拉美北 bandwidth.aftowla：大陆站+国际站南非-拉美西 bandwidth.aptoaf：国际站亚太-南非 bandwidth.aptoap：国际站亚太-亚太 bandwidth.aptoela：大陆站+国际站亚太-拉美东 bandwidth.aptonla：大陆站+国际站亚太-拉美北 bandwidth.aptowla：大陆站+国际站亚太-拉美西 bandwidth.cmtoaf：国际站中国大陆-南非 bandwidth.cmtoap：国际站中国大陆-亚太 bandwidth.cmtocm：国际站中国大陆-中国大陆 bandwidth.cmtoela：大陆站+国际站中国大陆-拉美东 bandwidth.cmtonla：大陆站+国际站中国大陆-拉美北 bandwidth.cmtowla：大陆站+国际站中国大陆-拉美西 bandwidth.elatoela：大陆站+国际站拉美东-拉美东 bandwidth.elatonla：大陆站+国际站拉美东-拉美北 bandwidth.wlatoela：大陆站+国际站拉美西-拉美东 bandwidth.wlatonla：大陆站+国际站拉美西-拉美北 bandwidth.wlatowla：大陆站+国际站拉美西-拉美西
+        带宽包实例的规格编码。
 
         :return: The spec_code of this BandwidthPackage.
         :rtype: str
@@ -447,7 +447,7 @@ class BandwidthPackage:
     def spec_code(self, spec_code):
         r"""Sets the spec_code of this BandwidthPackage.
 
-        带宽包实例的规格编码。 bandwidth.aftoela：大陆站+国际站南非-拉美东 bandwidth.aftonla：大陆站+国际站南非-拉美北 bandwidth.aftowla：大陆站+国际站南非-拉美西 bandwidth.aptoaf：国际站亚太-南非 bandwidth.aptoap：国际站亚太-亚太 bandwidth.aptoela：大陆站+国际站亚太-拉美东 bandwidth.aptonla：大陆站+国际站亚太-拉美北 bandwidth.aptowla：大陆站+国际站亚太-拉美西 bandwidth.cmtoaf：国际站中国大陆-南非 bandwidth.cmtoap：国际站中国大陆-亚太 bandwidth.cmtocm：国际站中国大陆-中国大陆 bandwidth.cmtoela：大陆站+国际站中国大陆-拉美东 bandwidth.cmtonla：大陆站+国际站中国大陆-拉美北 bandwidth.cmtowla：大陆站+国际站中国大陆-拉美西 bandwidth.elatoela：大陆站+国际站拉美东-拉美东 bandwidth.elatonla：大陆站+国际站拉美东-拉美北 bandwidth.wlatoela：大陆站+国际站拉美西-拉美东 bandwidth.wlatonla：大陆站+国际站拉美西-拉美北 bandwidth.wlatowla：大陆站+国际站拉美西-拉美西
+        带宽包实例的规格编码。
 
         :param spec_code: The spec_code of this BandwidthPackage.
         :type spec_code: str

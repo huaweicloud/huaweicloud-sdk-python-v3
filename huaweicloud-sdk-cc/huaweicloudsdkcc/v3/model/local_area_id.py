@@ -17,7 +17,7 @@ class LocalAreaId:
     sensitive_list = []
 
     openapi_types = {
-        'local_area_id': 'AreaIdDef'
+        'local_area_id': 'LocalAreaIdDef'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class LocalAreaId:
         The model defined in huaweicloud sdk
 
         :param local_area_id: 
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         
         
@@ -45,7 +45,7 @@ class LocalAreaId:
         r"""Gets the local_area_id of this LocalAreaId.
 
         :return: The local_area_id of this LocalAreaId.
-        :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :rtype: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         return self._local_area_id
 
@@ -54,7 +54,7 @@ class LocalAreaId:
         r"""Sets the local_area_id of this LocalAreaId.
 
         :param local_area_id: The local_area_id of this LocalAreaId.
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         self._local_area_id = local_area_id
 

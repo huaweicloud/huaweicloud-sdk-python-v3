@@ -47,7 +47,7 @@ class Stages:
         :type status: str
         :param name: 阶段名字
         :type name: str
-        :param parameters: -
+        :param parameters: 阶段运行参数
         :type parameters: object
         :param order: 阶段顺序
         :type order: int
@@ -146,7 +146,7 @@ class Stages:
     def parameters(self):
         r"""Gets the parameters of this Stages.
 
-        -
+        阶段运行参数
 
         :return: The parameters of this Stages.
         :rtype: object
@@ -157,7 +157,7 @@ class Stages:
     def parameters(self, parameters):
         r"""Sets the parameters of this Stages.
 
-        -
+        阶段运行参数
 
         :param parameters: The parameters of this Stages.
         :type parameters: object

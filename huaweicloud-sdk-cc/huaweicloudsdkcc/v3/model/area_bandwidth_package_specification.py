@@ -17,8 +17,8 @@ class AreaBandwidthPackageSpecification:
     sensitive_list = []
 
     openapi_types = {
-        'local_area_id': 'AreaIdDef',
-        'remote_area_id': 'AreaIdDef',
+        'local_area_id': 'LocalAreaIdDef',
+        'remote_area_id': 'RemoteAreaIdDef',
         'id': 'str',
         'spec_codes': 'list[SpecificationCodeInfo]'
     }
@@ -36,9 +36,9 @@ class AreaBandwidthPackageSpecification:
         The model defined in huaweicloud sdk
 
         :param local_area_id: 
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         :param remote_area_id: 
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         :param id: 互通大区带宽包的规格ID。
         :type id: str
         :param spec_codes: 带宽包产品规格列表。
@@ -63,7 +63,7 @@ class AreaBandwidthPackageSpecification:
         r"""Gets the local_area_id of this AreaBandwidthPackageSpecification.
 
         :return: The local_area_id of this AreaBandwidthPackageSpecification.
-        :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :rtype: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         return self._local_area_id
 
@@ -72,7 +72,7 @@ class AreaBandwidthPackageSpecification:
         r"""Sets the local_area_id of this AreaBandwidthPackageSpecification.
 
         :param local_area_id: The local_area_id of this AreaBandwidthPackageSpecification.
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
         """
         self._local_area_id = local_area_id
 
@@ -81,7 +81,7 @@ class AreaBandwidthPackageSpecification:
         r"""Gets the remote_area_id of this AreaBandwidthPackageSpecification.
 
         :return: The remote_area_id of this AreaBandwidthPackageSpecification.
-        :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :rtype: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         return self._remote_area_id
 
@@ -90,7 +90,7 @@ class AreaBandwidthPackageSpecification:
         r"""Sets the remote_area_id of this AreaBandwidthPackageSpecification.
 
         :param remote_area_id: The remote_area_id of this AreaBandwidthPackageSpecification.
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         self._remote_area_id = remote_area_id
 

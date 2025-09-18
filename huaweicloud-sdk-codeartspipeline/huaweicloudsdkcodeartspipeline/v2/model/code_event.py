@@ -31,9 +31,9 @@ class CodeEvent:
 
         The model defined in huaweicloud sdk
 
-        :param type: 事件类型
+        :param type: **参数解释**： 事件类型。 **约束限制**： 不涉及。 **取值范围**： - merge_request：MR 触发。 - push：代码Push触发。 - tag_push：标签触发。 - issue：Gitee仓库ISSUE触发。 - note：Gitee仓库评论触发。 **默认取值**： 不涉及。 
         :type type: str
-        :param enable: 是否可用
+        :param enable: **参数解释**： 代码仓是否可用。 **约束限制**： 不涉及。 **取值范围**： - true：代码仓可用。 - false：代码仓不可用。 **默认取值**： 不涉及。 
         :type enable: bool
         """
         
@@ -52,7 +52,7 @@ class CodeEvent:
     def type(self):
         r"""Gets the type of this CodeEvent.
 
-        事件类型
+        **参数解释**： 事件类型。 **约束限制**： 不涉及。 **取值范围**： - merge_request：MR 触发。 - push：代码Push触发。 - tag_push：标签触发。 - issue：Gitee仓库ISSUE触发。 - note：Gitee仓库评论触发。 **默认取值**： 不涉及。 
 
         :return: The type of this CodeEvent.
         :rtype: str
@@ -63,7 +63,7 @@ class CodeEvent:
     def type(self, type):
         r"""Sets the type of this CodeEvent.
 
-        事件类型
+        **参数解释**： 事件类型。 **约束限制**： 不涉及。 **取值范围**： - merge_request：MR 触发。 - push：代码Push触发。 - tag_push：标签触发。 - issue：Gitee仓库ISSUE触发。 - note：Gitee仓库评论触发。 **默认取值**： 不涉及。 
 
         :param type: The type of this CodeEvent.
         :type type: str
@@ -74,7 +74,7 @@ class CodeEvent:
     def enable(self):
         r"""Gets the enable of this CodeEvent.
 
-        是否可用
+        **参数解释**： 代码仓是否可用。 **约束限制**： 不涉及。 **取值范围**： - true：代码仓可用。 - false：代码仓不可用。 **默认取值**： 不涉及。 
 
         :return: The enable of this CodeEvent.
         :rtype: bool
@@ -85,7 +85,7 @@ class CodeEvent:
     def enable(self, enable):
         r"""Sets the enable of this CodeEvent.
 
-        是否可用
+        **参数解释**： 代码仓是否可用。 **约束限制**： 不涉及。 **取值范围**： - true：代码仓可用。 - false：代码仓不可用。 **默认取值**： 不涉及。 
 
         :param enable: The enable of this CodeEvent.
         :type enable: bool

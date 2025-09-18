@@ -31,9 +31,9 @@ class RunPipelineDTOVariables:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数名
+        :param name: **参数解释**： 参数名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type name: str
-        :param value: 参数值
+        :param value: **参数解释**： 参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192字符。 **默认取值**： 不涉及。 
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class RunPipelineDTOVariables:
     def name(self):
         r"""Gets the name of this RunPipelineDTOVariables.
 
-        参数名
+        **参数解释**： 参数名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this RunPipelineDTOVariables.
         :rtype: str
@@ -61,7 +61,7 @@ class RunPipelineDTOVariables:
     def name(self, name):
         r"""Sets the name of this RunPipelineDTOVariables.
 
-        参数名
+        **参数解释**： 参数名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this RunPipelineDTOVariables.
         :type name: str
@@ -72,7 +72,7 @@ class RunPipelineDTOVariables:
     def value(self):
         r"""Gets the value of this RunPipelineDTOVariables.
 
-        参数值
+        **参数解释**： 参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192字符。 **默认取值**： 不涉及。 
 
         :return: The value of this RunPipelineDTOVariables.
         :rtype: str
@@ -83,7 +83,7 @@ class RunPipelineDTOVariables:
     def value(self, value):
         r"""Sets the value of this RunPipelineDTOVariables.
 
-        参数值
+        **参数解释**： 参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192字符。 **默认取值**： 不涉及。 
 
         :param value: The value of this RunPipelineDTOVariables.
         :type value: str

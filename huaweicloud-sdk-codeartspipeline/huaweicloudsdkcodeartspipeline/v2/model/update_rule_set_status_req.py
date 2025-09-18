@@ -29,7 +29,7 @@ class UpdateRuleSetStatusReq:
 
         The model defined in huaweicloud sdk
 
-        :param is_valid: 规则模版实例状态
+        :param is_valid: **参数解释**： 规则模板实例状态。 **约束限制**： 不涉及。 **取值范围**： - true：开。 - false：关。 **默认取值**： 不涉及。 
         :type is_valid: bool
         """
         
@@ -44,7 +44,7 @@ class UpdateRuleSetStatusReq:
     def is_valid(self):
         r"""Gets the is_valid of this UpdateRuleSetStatusReq.
 
-        规则模版实例状态
+        **参数解释**： 规则模板实例状态。 **约束限制**： 不涉及。 **取值范围**： - true：开。 - false：关。 **默认取值**： 不涉及。 
 
         :return: The is_valid of this UpdateRuleSetStatusReq.
         :rtype: bool
@@ -55,7 +55,7 @@ class UpdateRuleSetStatusReq:
     def is_valid(self, is_valid):
         r"""Sets the is_valid of this UpdateRuleSetStatusReq.
 
-        规则模版实例状态
+        **参数解释**： 规则模板实例状态。 **约束限制**： 不涉及。 **取值范围**： - true：开。 - false：关。 **默认取值**： 不涉及。 
 
         :param is_valid: The is_valid of this UpdateRuleSetStatusReq.
         :type is_valid: bool

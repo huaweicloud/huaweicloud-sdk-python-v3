@@ -31,9 +31,9 @@ class StepRunInputs:
 
         The model defined in huaweicloud sdk
 
-        :param key: 输入参数名
+        :param key: **参数解释**： 输入参数名。 **取值范围**： 不涉及。 
         :type key: str
-        :param value: 输入参数值
+        :param value: **参数解释**： 输入参数值。 **取值范围**： 不涉及。 
         :type value: object
         """
         
@@ -52,7 +52,7 @@ class StepRunInputs:
     def key(self):
         r"""Gets the key of this StepRunInputs.
 
-        输入参数名
+        **参数解释**： 输入参数名。 **取值范围**： 不涉及。 
 
         :return: The key of this StepRunInputs.
         :rtype: str
@@ -63,7 +63,7 @@ class StepRunInputs:
     def key(self, key):
         r"""Sets the key of this StepRunInputs.
 
-        输入参数名
+        **参数解释**： 输入参数名。 **取值范围**： 不涉及。 
 
         :param key: The key of this StepRunInputs.
         :type key: str
@@ -74,7 +74,7 @@ class StepRunInputs:
     def value(self):
         r"""Gets the value of this StepRunInputs.
 
-        输入参数值
+        **参数解释**： 输入参数值。 **取值范围**： 不涉及。 
 
         :return: The value of this StepRunInputs.
         :rtype: object
@@ -85,7 +85,7 @@ class StepRunInputs:
     def value(self, value):
         r"""Sets the value of this StepRunInputs.
 
-        输入参数值
+        **参数解释**： 输入参数值。 **取值范围**： 不涉及。 
 
         :param value: The value of this StepRunInputs.
         :type value: object

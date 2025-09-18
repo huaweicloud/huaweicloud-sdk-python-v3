@@ -27,7 +27,10 @@ class ShowStrategyResponse(SdkResponse):
         'updater': 'str',
         'update_time': 'str',
         'is_valid': 'bool',
-        'rule_instances': 'list[RuleInstance]'
+        'rule_instances': 'list[RuleInstance]',
+        'level': 'str',
+        'is_public': 'bool',
+        'is_legacy': 'bool'
     }
 
     attribute_map = {
@@ -40,34 +43,43 @@ class ShowStrategyResponse(SdkResponse):
         'updater': 'updater',
         'update_time': 'update_time',
         'is_valid': 'is_valid',
-        'rule_instances': 'rule_instances'
+        'rule_instances': 'rule_instances',
+        'level': 'level',
+        'is_public': 'is_public',
+        'is_legacy': 'is_legacy'
     }
 
-    def __init__(self, id=None, name=None, type=None, version=None, creator=None, create_time=None, updater=None, update_time=None, is_valid=None, rule_instances=None):
+    def __init__(self, id=None, name=None, type=None, version=None, creator=None, create_time=None, updater=None, update_time=None, is_valid=None, rule_instances=None, level=None, is_public=None, is_legacy=None):
         r"""ShowStrategyResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 规则模版实例ID
+        :param id: **参数解释**： 规则模板实例ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type id: str
-        :param name: 规则模版实例名称
+        :param name: **参数解释**： 规则模板实例名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param type: 类型
+        :param type: **参数解释**： 规则模板类型。 **取值范围**： 不涉及。 
         :type type: str
-        :param version: 版本
+        :param version: **参数解释**： 规则模板策略。 **取值范围**： 不涉及。 
         :type version: str
-        :param creator: 创建人
+        :param creator: **参数解释**： 策略创建人。 **取值范围**： 不涉及。 
         :type creator: str
-        :param create_time: 创建时间
+        :param create_time: **参数解释**： 策略创建时间。 **取值范围**： 不涉及。 
         :type create_time: str
-        :param updater: 最近更新人
+        :param updater: **参数解释**： 策略最近更新人。 **取值范围**： 不涉及。 
         :type updater: str
-        :param update_time: 最近更新时间
+        :param update_time: **参数解释**： 策略最近更新时间。 **取值范围**： 不涉及。 
         :type update_time: str
-        :param is_valid: 是否生效
+        :param is_valid: **参数解释**： 策略是否生效。 **取值范围**： - true：策略生效。 - false：策略不生效。 
         :type is_valid: bool
-        :param rule_instances: 规则实例集合
+        :param rule_instances: **参数解释**： 规则实例集合。 **取值范围**： 不涉及。 
         :type rule_instances: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleInstance`]
+        :param level: **参数解释**： 规则实例生效级别。 **取值范围**： 不涉及。 
+        :type level: str
+        :param is_public: **参数解释**： 规则实例是否系统级。 **取值范围**： - true：规则实例是系统级。 - false：规则实例不是系统级。 
+        :type is_public: bool
+        :param is_legacy: **参数解释**： 规则实例是1.0的数据。 **取值范围**： - true：规则实例是1.0的数据。 - false：规则实例是1.0的数据。 
+        :type is_legacy: bool
         """
         
         super(ShowStrategyResponse, self).__init__()
@@ -82,6 +94,9 @@ class ShowStrategyResponse(SdkResponse):
         self._update_time = None
         self._is_valid = None
         self._rule_instances = None
+        self._level = None
+        self._is_public = None
+        self._is_legacy = None
         self.discriminator = None
 
         if id is not None:
@@ -104,12 +119,18 @@ class ShowStrategyResponse(SdkResponse):
             self.is_valid = is_valid
         if rule_instances is not None:
             self.rule_instances = rule_instances
+        if level is not None:
+            self.level = level
+        if is_public is not None:
+            self.is_public = is_public
+        if is_legacy is not None:
+            self.is_legacy = is_legacy
 
     @property
     def id(self):
         r"""Gets the id of this ShowStrategyResponse.
 
-        规则模版实例ID
+        **参数解释**： 规则模板实例ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The id of this ShowStrategyResponse.
         :rtype: str
@@ -120,7 +141,7 @@ class ShowStrategyResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowStrategyResponse.
 
-        规则模版实例ID
+        **参数解释**： 规则模板实例ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param id: The id of this ShowStrategyResponse.
         :type id: str
@@ -131,7 +152,7 @@ class ShowStrategyResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowStrategyResponse.
 
-        规则模版实例名称
+        **参数解释**： 规则模板实例名称。 **取值范围**： 不涉及。 
 
         :return: The name of this ShowStrategyResponse.
         :rtype: str
@@ -142,7 +163,7 @@ class ShowStrategyResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowStrategyResponse.
 
-        规则模版实例名称
+        **参数解释**： 规则模板实例名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this ShowStrategyResponse.
         :type name: str
@@ -153,7 +174,7 @@ class ShowStrategyResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowStrategyResponse.
 
-        类型
+        **参数解释**： 规则模板类型。 **取值范围**： 不涉及。 
 
         :return: The type of this ShowStrategyResponse.
         :rtype: str
@@ -164,7 +185,7 @@ class ShowStrategyResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowStrategyResponse.
 
-        类型
+        **参数解释**： 规则模板类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this ShowStrategyResponse.
         :type type: str
@@ -175,7 +196,7 @@ class ShowStrategyResponse(SdkResponse):
     def version(self):
         r"""Gets the version of this ShowStrategyResponse.
 
-        版本
+        **参数解释**： 规则模板策略。 **取值范围**： 不涉及。 
 
         :return: The version of this ShowStrategyResponse.
         :rtype: str
@@ -186,7 +207,7 @@ class ShowStrategyResponse(SdkResponse):
     def version(self, version):
         r"""Sets the version of this ShowStrategyResponse.
 
-        版本
+        **参数解释**： 规则模板策略。 **取值范围**： 不涉及。 
 
         :param version: The version of this ShowStrategyResponse.
         :type version: str
@@ -197,7 +218,7 @@ class ShowStrategyResponse(SdkResponse):
     def creator(self):
         r"""Gets the creator of this ShowStrategyResponse.
 
-        创建人
+        **参数解释**： 策略创建人。 **取值范围**： 不涉及。 
 
         :return: The creator of this ShowStrategyResponse.
         :rtype: str
@@ -208,7 +229,7 @@ class ShowStrategyResponse(SdkResponse):
     def creator(self, creator):
         r"""Sets the creator of this ShowStrategyResponse.
 
-        创建人
+        **参数解释**： 策略创建人。 **取值范围**： 不涉及。 
 
         :param creator: The creator of this ShowStrategyResponse.
         :type creator: str
@@ -219,7 +240,7 @@ class ShowStrategyResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this ShowStrategyResponse.
 
-        创建时间
+        **参数解释**： 策略创建时间。 **取值范围**： 不涉及。 
 
         :return: The create_time of this ShowStrategyResponse.
         :rtype: str
@@ -230,7 +251,7 @@ class ShowStrategyResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this ShowStrategyResponse.
 
-        创建时间
+        **参数解释**： 策略创建时间。 **取值范围**： 不涉及。 
 
         :param create_time: The create_time of this ShowStrategyResponse.
         :type create_time: str
@@ -241,7 +262,7 @@ class ShowStrategyResponse(SdkResponse):
     def updater(self):
         r"""Gets the updater of this ShowStrategyResponse.
 
-        最近更新人
+        **参数解释**： 策略最近更新人。 **取值范围**： 不涉及。 
 
         :return: The updater of this ShowStrategyResponse.
         :rtype: str
@@ -252,7 +273,7 @@ class ShowStrategyResponse(SdkResponse):
     def updater(self, updater):
         r"""Sets the updater of this ShowStrategyResponse.
 
-        最近更新人
+        **参数解释**： 策略最近更新人。 **取值范围**： 不涉及。 
 
         :param updater: The updater of this ShowStrategyResponse.
         :type updater: str
@@ -263,7 +284,7 @@ class ShowStrategyResponse(SdkResponse):
     def update_time(self):
         r"""Gets the update_time of this ShowStrategyResponse.
 
-        最近更新时间
+        **参数解释**： 策略最近更新时间。 **取值范围**： 不涉及。 
 
         :return: The update_time of this ShowStrategyResponse.
         :rtype: str
@@ -274,7 +295,7 @@ class ShowStrategyResponse(SdkResponse):
     def update_time(self, update_time):
         r"""Sets the update_time of this ShowStrategyResponse.
 
-        最近更新时间
+        **参数解释**： 策略最近更新时间。 **取值范围**： 不涉及。 
 
         :param update_time: The update_time of this ShowStrategyResponse.
         :type update_time: str
@@ -285,7 +306,7 @@ class ShowStrategyResponse(SdkResponse):
     def is_valid(self):
         r"""Gets the is_valid of this ShowStrategyResponse.
 
-        是否生效
+        **参数解释**： 策略是否生效。 **取值范围**： - true：策略生效。 - false：策略不生效。 
 
         :return: The is_valid of this ShowStrategyResponse.
         :rtype: bool
@@ -296,7 +317,7 @@ class ShowStrategyResponse(SdkResponse):
     def is_valid(self, is_valid):
         r"""Sets the is_valid of this ShowStrategyResponse.
 
-        是否生效
+        **参数解释**： 策略是否生效。 **取值范围**： - true：策略生效。 - false：策略不生效。 
 
         :param is_valid: The is_valid of this ShowStrategyResponse.
         :type is_valid: bool
@@ -307,7 +328,7 @@ class ShowStrategyResponse(SdkResponse):
     def rule_instances(self):
         r"""Gets the rule_instances of this ShowStrategyResponse.
 
-        规则实例集合
+        **参数解释**： 规则实例集合。 **取值范围**： 不涉及。 
 
         :return: The rule_instances of this ShowStrategyResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleInstance`]
@@ -318,12 +339,78 @@ class ShowStrategyResponse(SdkResponse):
     def rule_instances(self, rule_instances):
         r"""Sets the rule_instances of this ShowStrategyResponse.
 
-        规则实例集合
+        **参数解释**： 规则实例集合。 **取值范围**： 不涉及。 
 
         :param rule_instances: The rule_instances of this ShowStrategyResponse.
         :type rule_instances: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleInstance`]
         """
         self._rule_instances = rule_instances
+
+    @property
+    def level(self):
+        r"""Gets the level of this ShowStrategyResponse.
+
+        **参数解释**： 规则实例生效级别。 **取值范围**： 不涉及。 
+
+        :return: The level of this ShowStrategyResponse.
+        :rtype: str
+        """
+        return self._level
+
+    @level.setter
+    def level(self, level):
+        r"""Sets the level of this ShowStrategyResponse.
+
+        **参数解释**： 规则实例生效级别。 **取值范围**： 不涉及。 
+
+        :param level: The level of this ShowStrategyResponse.
+        :type level: str
+        """
+        self._level = level
+
+    @property
+    def is_public(self):
+        r"""Gets the is_public of this ShowStrategyResponse.
+
+        **参数解释**： 规则实例是否系统级。 **取值范围**： - true：规则实例是系统级。 - false：规则实例不是系统级。 
+
+        :return: The is_public of this ShowStrategyResponse.
+        :rtype: bool
+        """
+        return self._is_public
+
+    @is_public.setter
+    def is_public(self, is_public):
+        r"""Sets the is_public of this ShowStrategyResponse.
+
+        **参数解释**： 规则实例是否系统级。 **取值范围**： - true：规则实例是系统级。 - false：规则实例不是系统级。 
+
+        :param is_public: The is_public of this ShowStrategyResponse.
+        :type is_public: bool
+        """
+        self._is_public = is_public
+
+    @property
+    def is_legacy(self):
+        r"""Gets the is_legacy of this ShowStrategyResponse.
+
+        **参数解释**： 规则实例是1.0的数据。 **取值范围**： - true：规则实例是1.0的数据。 - false：规则实例是1.0的数据。 
+
+        :return: The is_legacy of this ShowStrategyResponse.
+        :rtype: bool
+        """
+        return self._is_legacy
+
+    @is_legacy.setter
+    def is_legacy(self, is_legacy):
+        r"""Sets the is_legacy of this ShowStrategyResponse.
+
+        **参数解释**： 规则实例是1.0的数据。 **取值范围**： - true：规则实例是1.0的数据。 - false：规则实例是1.0的数据。 
+
+        :param is_legacy: The is_legacy of this ShowStrategyResponse.
+        :type is_legacy: bool
+        """
+        self._is_legacy = is_legacy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

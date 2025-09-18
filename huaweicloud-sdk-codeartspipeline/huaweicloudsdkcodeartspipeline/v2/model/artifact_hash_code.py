@@ -31,9 +31,9 @@ class ArtifactHashCode:
 
         The model defined in huaweicloud sdk
 
-        :param hash_type: 哈希算法
+        :param hash_type: **参数解释**： 哈希算法。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type hash_type: str
-        :param hash_value: 哈希值
+        :param hash_value: **参数解释**： 哈希值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type hash_value: str
         """
         
@@ -52,7 +52,7 @@ class ArtifactHashCode:
     def hash_type(self):
         r"""Gets the hash_type of this ArtifactHashCode.
 
-        哈希算法
+        **参数解释**： 哈希算法。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The hash_type of this ArtifactHashCode.
         :rtype: str
@@ -63,7 +63,7 @@ class ArtifactHashCode:
     def hash_type(self, hash_type):
         r"""Sets the hash_type of this ArtifactHashCode.
 
-        哈希算法
+        **参数解释**： 哈希算法。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param hash_type: The hash_type of this ArtifactHashCode.
         :type hash_type: str
@@ -74,7 +74,7 @@ class ArtifactHashCode:
     def hash_value(self):
         r"""Gets the hash_value of this ArtifactHashCode.
 
-        哈希值
+        **参数解释**： 哈希值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The hash_value of this ArtifactHashCode.
         :rtype: str
@@ -85,7 +85,7 @@ class ArtifactHashCode:
     def hash_value(self, hash_value):
         r"""Sets the hash_value of this ArtifactHashCode.
 
-        哈希值
+        **参数解释**： 哈希值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param hash_value: The hash_value of this ArtifactHashCode.
         :type hash_value: str

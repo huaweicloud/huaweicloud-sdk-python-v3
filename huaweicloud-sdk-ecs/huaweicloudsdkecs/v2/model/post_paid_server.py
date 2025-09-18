@@ -91,7 +91,7 @@ class PostPaidServer:
         :type availability_zone: str
         :param batch_create_in_multi_az: 是否支持随机多AZ部署。  - “true”：批量创建的ecs部署在多个AZ上 - “false”：批量创建的ecs部署在单个AZ上  &gt; 说明： &gt;  &gt; 当availability_zone为空时该字段生效。
         :type batch_create_in_multi_az: bool
-        :param count: 创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为500。
+        :param count: 创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为100。
         :type count: int
         :param data_volumes: 云服务器对应数据盘相关配置。每一个数据结构代表一块待创建的数据盘。 约束：目前新创建的弹性云服务器最多可挂载23块数据盘。
         :type data_volumes: list[:class:`huaweicloudsdkecs.v2.PostPaidServerDataVolume`]
@@ -316,7 +316,7 @@ class PostPaidServer:
     def count(self):
         r"""Gets the count of this PostPaidServer.
 
-        创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为500。
+        创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为100。
 
         :return: The count of this PostPaidServer.
         :rtype: int
@@ -327,7 +327,7 @@ class PostPaidServer:
     def count(self, count):
         r"""Sets the count of this PostPaidServer.
 
-        创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为500。
+        创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为100。
 
         :param count: The count of this PostPaidServer.
         :type count: int

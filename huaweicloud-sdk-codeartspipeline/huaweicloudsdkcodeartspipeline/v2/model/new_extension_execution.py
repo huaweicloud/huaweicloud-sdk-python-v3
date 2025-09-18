@@ -33,11 +33,11 @@ class NewExtensionExecution:
 
         The model defined in huaweicloud sdk
 
-        :param target: 入口
+        :param target: **参数解释**： 插件类型。 **取值范围**： 不涉及。 
         :type target: str
-        :param type: 类型
+        :param type: **参数解释**： 插件类型。 **取值范围**： 不涉及。 
         :type type: str
-        :param sha256: sha256
+        :param sha256: **参数解释**： sha256。 **取值范围**： 不涉及。 
         :type sha256: str
         """
         
@@ -59,7 +59,7 @@ class NewExtensionExecution:
     def target(self):
         r"""Gets the target of this NewExtensionExecution.
 
-        入口
+        **参数解释**： 插件类型。 **取值范围**： 不涉及。 
 
         :return: The target of this NewExtensionExecution.
         :rtype: str
@@ -70,7 +70,7 @@ class NewExtensionExecution:
     def target(self, target):
         r"""Sets the target of this NewExtensionExecution.
 
-        入口
+        **参数解释**： 插件类型。 **取值范围**： 不涉及。 
 
         :param target: The target of this NewExtensionExecution.
         :type target: str
@@ -81,7 +81,7 @@ class NewExtensionExecution:
     def type(self):
         r"""Gets the type of this NewExtensionExecution.
 
-        类型
+        **参数解释**： 插件类型。 **取值范围**： 不涉及。 
 
         :return: The type of this NewExtensionExecution.
         :rtype: str
@@ -92,7 +92,7 @@ class NewExtensionExecution:
     def type(self, type):
         r"""Sets the type of this NewExtensionExecution.
 
-        类型
+        **参数解释**： 插件类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this NewExtensionExecution.
         :type type: str
@@ -103,7 +103,7 @@ class NewExtensionExecution:
     def sha256(self):
         r"""Gets the sha256 of this NewExtensionExecution.
 
-        sha256
+        **参数解释**： sha256。 **取值范围**： 不涉及。 
 
         :return: The sha256 of this NewExtensionExecution.
         :rtype: str
@@ -114,7 +114,7 @@ class NewExtensionExecution:
     def sha256(self, sha256):
         r"""Sets the sha256 of this NewExtensionExecution.
 
-        sha256
+        **参数解释**： sha256。 **取值范围**： 不涉及。 
 
         :param sha256: The sha256 of this NewExtensionExecution.
         :type sha256: str

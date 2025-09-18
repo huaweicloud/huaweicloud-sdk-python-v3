@@ -41,19 +41,19 @@ class PageInfoOptionalSinglePluginVOData:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: **参数解释**： 扩展插件唯一标识。 **取值范围**： 不涉及。 
         :type name: str
-        :param display_name: 展示名
+        :param display_name: **参数解释**： 扩展插件在插件市场和流水线显示的名称。 **取值范围**： 不涉及。 
         :type display_name: str
-        :param plugin_attribution: 属性
+        :param plugin_attribution: **参数解释**： 标识是否为官方插件。 **取值范围**： 不涉及。 
         :type plugin_attribution: str
-        :param icon_url: 图标URL
+        :param icon_url: **参数解释**： 图标URL。 **取值范围**： 不涉及。 
         :type icon_url: str
-        :param description: 描述
+        :param description: **参数解释**： 插件描述。 **取值范围**： 不涉及。 
         :type description: str
-        :param publisher_id: 发布商ID
+        :param publisher_id: **参数解释**： 发布商ID。 **取值范围**： 不涉及。 
         :type publisher_id: str
-        :param manifest_version: 版本
+        :param manifest_version: **参数解释**： 版本。 **取值范围**： 不涉及。 
         :type manifest_version: str
         """
         
@@ -87,7 +87,7 @@ class PageInfoOptionalSinglePluginVOData:
     def name(self):
         r"""Gets the name of this PageInfoOptionalSinglePluginVOData.
 
-        名称
+        **参数解释**： 扩展插件唯一标识。 **取值范围**： 不涉及。 
 
         :return: The name of this PageInfoOptionalSinglePluginVOData.
         :rtype: str
@@ -98,7 +98,7 @@ class PageInfoOptionalSinglePluginVOData:
     def name(self, name):
         r"""Sets the name of this PageInfoOptionalSinglePluginVOData.
 
-        名称
+        **参数解释**： 扩展插件唯一标识。 **取值范围**： 不涉及。 
 
         :param name: The name of this PageInfoOptionalSinglePluginVOData.
         :type name: str
@@ -109,7 +109,7 @@ class PageInfoOptionalSinglePluginVOData:
     def display_name(self):
         r"""Gets the display_name of this PageInfoOptionalSinglePluginVOData.
 
-        展示名
+        **参数解释**： 扩展插件在插件市场和流水线显示的名称。 **取值范围**： 不涉及。 
 
         :return: The display_name of this PageInfoOptionalSinglePluginVOData.
         :rtype: str
@@ -120,7 +120,7 @@ class PageInfoOptionalSinglePluginVOData:
     def display_name(self, display_name):
         r"""Sets the display_name of this PageInfoOptionalSinglePluginVOData.
 
-        展示名
+        **参数解释**： 扩展插件在插件市场和流水线显示的名称。 **取值范围**： 不涉及。 
 
         :param display_name: The display_name of this PageInfoOptionalSinglePluginVOData.
         :type display_name: str
@@ -131,7 +131,7 @@ class PageInfoOptionalSinglePluginVOData:
     def plugin_attribution(self):
         r"""Gets the plugin_attribution of this PageInfoOptionalSinglePluginVOData.
 
-        属性
+        **参数解释**： 标识是否为官方插件。 **取值范围**： 不涉及。 
 
         :return: The plugin_attribution of this PageInfoOptionalSinglePluginVOData.
         :rtype: str
@@ -142,7 +142,7 @@ class PageInfoOptionalSinglePluginVOData:
     def plugin_attribution(self, plugin_attribution):
         r"""Sets the plugin_attribution of this PageInfoOptionalSinglePluginVOData.
 
-        属性
+        **参数解释**： 标识是否为官方插件。 **取值范围**： 不涉及。 
 
         :param plugin_attribution: The plugin_attribution of this PageInfoOptionalSinglePluginVOData.
         :type plugin_attribution: str
@@ -153,7 +153,7 @@ class PageInfoOptionalSinglePluginVOData:
     def icon_url(self):
         r"""Gets the icon_url of this PageInfoOptionalSinglePluginVOData.
 
-        图标URL
+        **参数解释**： 图标URL。 **取值范围**： 不涉及。 
 
         :return: The icon_url of this PageInfoOptionalSinglePluginVOData.
         :rtype: str
@@ -164,7 +164,7 @@ class PageInfoOptionalSinglePluginVOData:
     def icon_url(self, icon_url):
         r"""Sets the icon_url of this PageInfoOptionalSinglePluginVOData.
 
-        图标URL
+        **参数解释**： 图标URL。 **取值范围**： 不涉及。 
 
         :param icon_url: The icon_url of this PageInfoOptionalSinglePluginVOData.
         :type icon_url: str
@@ -175,7 +175,7 @@ class PageInfoOptionalSinglePluginVOData:
     def description(self):
         r"""Gets the description of this PageInfoOptionalSinglePluginVOData.
 
-        描述
+        **参数解释**： 插件描述。 **取值范围**： 不涉及。 
 
         :return: The description of this PageInfoOptionalSinglePluginVOData.
         :rtype: str
@@ -186,7 +186,7 @@ class PageInfoOptionalSinglePluginVOData:
     def description(self, description):
         r"""Sets the description of this PageInfoOptionalSinglePluginVOData.
 
-        描述
+        **参数解释**： 插件描述。 **取值范围**： 不涉及。 
 
         :param description: The description of this PageInfoOptionalSinglePluginVOData.
         :type description: str
@@ -197,7 +197,7 @@ class PageInfoOptionalSinglePluginVOData:
     def publisher_id(self):
         r"""Gets the publisher_id of this PageInfoOptionalSinglePluginVOData.
 
-        发布商ID
+        **参数解释**： 发布商ID。 **取值范围**： 不涉及。 
 
         :return: The publisher_id of this PageInfoOptionalSinglePluginVOData.
         :rtype: str
@@ -208,7 +208,7 @@ class PageInfoOptionalSinglePluginVOData:
     def publisher_id(self, publisher_id):
         r"""Sets the publisher_id of this PageInfoOptionalSinglePluginVOData.
 
-        发布商ID
+        **参数解释**： 发布商ID。 **取值范围**： 不涉及。 
 
         :param publisher_id: The publisher_id of this PageInfoOptionalSinglePluginVOData.
         :type publisher_id: str
@@ -219,7 +219,7 @@ class PageInfoOptionalSinglePluginVOData:
     def manifest_version(self):
         r"""Gets the manifest_version of this PageInfoOptionalSinglePluginVOData.
 
-        版本
+        **参数解释**： 版本。 **取值范围**： 不涉及。 
 
         :return: The manifest_version of this PageInfoOptionalSinglePluginVOData.
         :rtype: str
@@ -230,7 +230,7 @@ class PageInfoOptionalSinglePluginVOData:
     def manifest_version(self, manifest_version):
         r"""Sets the manifest_version of this PageInfoOptionalSinglePluginVOData.
 
-        版本
+        **参数解释**： 版本。 **取值范围**： 不涉及。 
 
         :param manifest_version: The manifest_version of this PageInfoOptionalSinglePluginVOData.
         :type manifest_version: str

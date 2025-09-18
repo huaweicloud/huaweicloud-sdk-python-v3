@@ -18,20 +18,47 @@ class DeleteNetworkInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'x_request_id': 'str'
     }
 
     attribute_map = {
+        'x_request_id': 'x-request-id'
     }
 
-    def __init__(self):
+    def __init__(self, x_request_id=None):
         r"""DeleteNetworkInstanceResponse
 
         The model defined in huaweicloud sdk
 
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(DeleteNetworkInstanceResponse, self).__init__()
+
+        self._x_request_id = None
         self.discriminator = None
+
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
+
+    @property
+    def x_request_id(self):
+        r"""Gets the x_request_id of this DeleteNetworkInstanceResponse.
+
+        :return: The x_request_id of this DeleteNetworkInstanceResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        r"""Sets the x_request_id of this DeleteNetworkInstanceResponse.
+
+        :param x_request_id: The x_request_id of this DeleteNetworkInstanceResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

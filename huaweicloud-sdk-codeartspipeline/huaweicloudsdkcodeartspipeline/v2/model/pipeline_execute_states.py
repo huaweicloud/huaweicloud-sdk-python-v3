@@ -51,7 +51,7 @@ class PipelineExecuteStates:
 
         :param result: 流水线执行结果。取值及含义：success：成功；error：失败；aborted：终止
         :type result: str
-        :param status: 流水线执行状态.取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
+        :param status: 流水线执行状态。
         :type status: str
         :param stages: 阶段执行情况
         :type stages: list[:class:`huaweicloudsdkcodeartspipeline.v2.Stages`]
@@ -126,7 +126,7 @@ class PipelineExecuteStates:
     def status(self):
         r"""Gets the status of this PipelineExecuteStates.
 
-        流水线执行状态.取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
+        流水线执行状态。
 
         :return: The status of this PipelineExecuteStates.
         :rtype: str
@@ -137,7 +137,7 @@ class PipelineExecuteStates:
     def status(self, status):
         r"""Sets the status of this PipelineExecuteStates.
 
-        流水线执行状态.取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
+        流水线执行状态。
 
         :param status: The status of this PipelineExecuteStates.
         :type status: str

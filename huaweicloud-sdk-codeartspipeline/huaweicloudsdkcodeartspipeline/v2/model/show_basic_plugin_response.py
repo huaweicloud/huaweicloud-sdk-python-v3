@@ -26,6 +26,7 @@ class ShowBasicPluginResponse(SdkResponse):
         'version': 'str',
         'version_description': 'str',
         'inputs': 'list[NewExtensionInputs]',
+        'data_source_bindings': 'list[NewExtensionDataSourceBindings]',
         'outputs': 'list[NewExtensionOutputs]',
         'execution': 'NewExtensionExecution'
     }
@@ -39,32 +40,35 @@ class ShowBasicPluginResponse(SdkResponse):
         'version': 'version',
         'version_description': 'version_description',
         'inputs': 'inputs',
+        'data_source_bindings': 'data_source_bindings',
         'outputs': 'outputs',
         'execution': 'execution'
     }
 
-    def __init__(self, type=None, name=None, friendly_name=None, category=None, description=None, version=None, version_description=None, inputs=None, outputs=None, execution=None):
+    def __init__(self, type=None, name=None, friendly_name=None, category=None, description=None, version=None, version_description=None, inputs=None, data_source_bindings=None, outputs=None, execution=None):
         r"""ShowBasicPluginResponse
 
         The model defined in huaweicloud sdk
 
-        :param type: 类型
+        :param type: **参数解释**： 插件类型。 **取值范围**： 不涉及。 
         :type type: str
-        :param name: 名称
+        :param name: **参数解释**： 插件名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param friendly_name: 展示名
+        :param friendly_name: **参数解释**： 插件展示名。 **取值范围**： 不涉及。 
         :type friendly_name: str
-        :param category: 业务类型
+        :param category: **参数解释**： 业务类型。 **取值范围**： 不涉及。 
         :type category: str
-        :param description: 描述
+        :param description: **参数解释**： 插件描述。 **取值范围**： 不涉及。 
         :type description: str
-        :param version: 版本
+        :param version: **参数解释**： 插件版本。 **取值范围**： 不涉及。 
         :type version: str
-        :param version_description: 版本说明
+        :param version_description: **参数解释**： 插件版本说明。 **取值范围**： 不涉及。 
         :type version_description: str
-        :param inputs: 输入信息
+        :param inputs: **参数解释**： 输入信息。 **取值范围**： 不涉及。 
         :type inputs: list[:class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionInputs`]
-        :param outputs: 输出信息
+        :param data_source_bindings: **参数解释**： 数据源绑定信息。 **取值范围**： 不涉及。 
+        :type data_source_bindings: list[:class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionDataSourceBindings`]
+        :param outputs: **参数解释**： 输出信息。 **取值范围**： 不涉及。 
         :type outputs: list[:class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionOutputs`]
         :param execution: 
         :type execution: :class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionExecution`
@@ -80,6 +84,7 @@ class ShowBasicPluginResponse(SdkResponse):
         self._version = None
         self._version_description = None
         self._inputs = None
+        self._data_source_bindings = None
         self._outputs = None
         self._execution = None
         self.discriminator = None
@@ -100,6 +105,8 @@ class ShowBasicPluginResponse(SdkResponse):
             self.version_description = version_description
         if inputs is not None:
             self.inputs = inputs
+        if data_source_bindings is not None:
+            self.data_source_bindings = data_source_bindings
         if outputs is not None:
             self.outputs = outputs
         if execution is not None:
@@ -109,7 +116,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowBasicPluginResponse.
 
-        类型
+        **参数解释**： 插件类型。 **取值范围**： 不涉及。 
 
         :return: The type of this ShowBasicPluginResponse.
         :rtype: str
@@ -120,7 +127,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowBasicPluginResponse.
 
-        类型
+        **参数解释**： 插件类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this ShowBasicPluginResponse.
         :type type: str
@@ -131,7 +138,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowBasicPluginResponse.
 
-        名称
+        **参数解释**： 插件名称。 **取值范围**： 不涉及。 
 
         :return: The name of this ShowBasicPluginResponse.
         :rtype: str
@@ -142,7 +149,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowBasicPluginResponse.
 
-        名称
+        **参数解释**： 插件名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this ShowBasicPluginResponse.
         :type name: str
@@ -153,7 +160,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def friendly_name(self):
         r"""Gets the friendly_name of this ShowBasicPluginResponse.
 
-        展示名
+        **参数解释**： 插件展示名。 **取值范围**： 不涉及。 
 
         :return: The friendly_name of this ShowBasicPluginResponse.
         :rtype: str
@@ -164,7 +171,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def friendly_name(self, friendly_name):
         r"""Sets the friendly_name of this ShowBasicPluginResponse.
 
-        展示名
+        **参数解释**： 插件展示名。 **取值范围**： 不涉及。 
 
         :param friendly_name: The friendly_name of this ShowBasicPluginResponse.
         :type friendly_name: str
@@ -175,7 +182,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def category(self):
         r"""Gets the category of this ShowBasicPluginResponse.
 
-        业务类型
+        **参数解释**： 业务类型。 **取值范围**： 不涉及。 
 
         :return: The category of this ShowBasicPluginResponse.
         :rtype: str
@@ -186,7 +193,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def category(self, category):
         r"""Sets the category of this ShowBasicPluginResponse.
 
-        业务类型
+        **参数解释**： 业务类型。 **取值范围**： 不涉及。 
 
         :param category: The category of this ShowBasicPluginResponse.
         :type category: str
@@ -197,7 +204,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowBasicPluginResponse.
 
-        描述
+        **参数解释**： 插件描述。 **取值范围**： 不涉及。 
 
         :return: The description of this ShowBasicPluginResponse.
         :rtype: str
@@ -208,7 +215,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowBasicPluginResponse.
 
-        描述
+        **参数解释**： 插件描述。 **取值范围**： 不涉及。 
 
         :param description: The description of this ShowBasicPluginResponse.
         :type description: str
@@ -219,7 +226,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def version(self):
         r"""Gets the version of this ShowBasicPluginResponse.
 
-        版本
+        **参数解释**： 插件版本。 **取值范围**： 不涉及。 
 
         :return: The version of this ShowBasicPluginResponse.
         :rtype: str
@@ -230,7 +237,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def version(self, version):
         r"""Sets the version of this ShowBasicPluginResponse.
 
-        版本
+        **参数解释**： 插件版本。 **取值范围**： 不涉及。 
 
         :param version: The version of this ShowBasicPluginResponse.
         :type version: str
@@ -241,7 +248,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def version_description(self):
         r"""Gets the version_description of this ShowBasicPluginResponse.
 
-        版本说明
+        **参数解释**： 插件版本说明。 **取值范围**： 不涉及。 
 
         :return: The version_description of this ShowBasicPluginResponse.
         :rtype: str
@@ -252,7 +259,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def version_description(self, version_description):
         r"""Sets the version_description of this ShowBasicPluginResponse.
 
-        版本说明
+        **参数解释**： 插件版本说明。 **取值范围**： 不涉及。 
 
         :param version_description: The version_description of this ShowBasicPluginResponse.
         :type version_description: str
@@ -263,7 +270,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def inputs(self):
         r"""Gets the inputs of this ShowBasicPluginResponse.
 
-        输入信息
+        **参数解释**： 输入信息。 **取值范围**： 不涉及。 
 
         :return: The inputs of this ShowBasicPluginResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionInputs`]
@@ -274,7 +281,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def inputs(self, inputs):
         r"""Sets the inputs of this ShowBasicPluginResponse.
 
-        输入信息
+        **参数解释**： 输入信息。 **取值范围**： 不涉及。 
 
         :param inputs: The inputs of this ShowBasicPluginResponse.
         :type inputs: list[:class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionInputs`]
@@ -282,10 +289,32 @@ class ShowBasicPluginResponse(SdkResponse):
         self._inputs = inputs
 
     @property
+    def data_source_bindings(self):
+        r"""Gets the data_source_bindings of this ShowBasicPluginResponse.
+
+        **参数解释**： 数据源绑定信息。 **取值范围**： 不涉及。 
+
+        :return: The data_source_bindings of this ShowBasicPluginResponse.
+        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionDataSourceBindings`]
+        """
+        return self._data_source_bindings
+
+    @data_source_bindings.setter
+    def data_source_bindings(self, data_source_bindings):
+        r"""Sets the data_source_bindings of this ShowBasicPluginResponse.
+
+        **参数解释**： 数据源绑定信息。 **取值范围**： 不涉及。 
+
+        :param data_source_bindings: The data_source_bindings of this ShowBasicPluginResponse.
+        :type data_source_bindings: list[:class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionDataSourceBindings`]
+        """
+        self._data_source_bindings = data_source_bindings
+
+    @property
     def outputs(self):
         r"""Gets the outputs of this ShowBasicPluginResponse.
 
-        输出信息
+        **参数解释**： 输出信息。 **取值范围**： 不涉及。 
 
         :return: The outputs of this ShowBasicPluginResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionOutputs`]
@@ -296,7 +325,7 @@ class ShowBasicPluginResponse(SdkResponse):
     def outputs(self, outputs):
         r"""Sets the outputs of this ShowBasicPluginResponse.
 
-        输出信息
+        **参数解释**： 输出信息。 **取值范围**： 不涉及。 
 
         :param outputs: The outputs of this ShowBasicPluginResponse.
         :type outputs: list[:class:`huaweicloudsdkcodeartspipeline.v2.NewExtensionOutputs`]

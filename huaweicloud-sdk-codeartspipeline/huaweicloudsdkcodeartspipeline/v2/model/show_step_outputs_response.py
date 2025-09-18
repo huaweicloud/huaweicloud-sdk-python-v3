@@ -32,9 +32,9 @@ class ShowStepOutputsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param step_outputs: 
+        :param step_outputs: **参数解释**： 步骤输出列表，记录每个步骤输出的ID和结果信息。 **约束限制**： 不涉及。 
         :type step_outputs: list[:class:`huaweicloudsdkcodeartspipeline.v2.OutputRespStepOutputs`]
-        :param current_system_time: 
+        :param current_system_time: **参数解释**： 当前系统时间。 **取值范围**： 不涉及。 
         :type current_system_time: int
         """
         
@@ -53,6 +53,8 @@ class ShowStepOutputsResponse(SdkResponse):
     def step_outputs(self):
         r"""Gets the step_outputs of this ShowStepOutputsResponse.
 
+        **参数解释**： 步骤输出列表，记录每个步骤输出的ID和结果信息。 **约束限制**： 不涉及。 
+
         :return: The step_outputs of this ShowStepOutputsResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.OutputRespStepOutputs`]
         """
@@ -61,6 +63,8 @@ class ShowStepOutputsResponse(SdkResponse):
     @step_outputs.setter
     def step_outputs(self, step_outputs):
         r"""Sets the step_outputs of this ShowStepOutputsResponse.
+
+        **参数解释**： 步骤输出列表，记录每个步骤输出的ID和结果信息。 **约束限制**： 不涉及。 
 
         :param step_outputs: The step_outputs of this ShowStepOutputsResponse.
         :type step_outputs: list[:class:`huaweicloudsdkcodeartspipeline.v2.OutputRespStepOutputs`]
@@ -71,6 +75,8 @@ class ShowStepOutputsResponse(SdkResponse):
     def current_system_time(self):
         r"""Gets the current_system_time of this ShowStepOutputsResponse.
 
+        **参数解释**： 当前系统时间。 **取值范围**： 不涉及。 
+
         :return: The current_system_time of this ShowStepOutputsResponse.
         :rtype: int
         """
@@ -79,6 +85,8 @@ class ShowStepOutputsResponse(SdkResponse):
     @current_system_time.setter
     def current_system_time(self, current_system_time):
         r"""Sets the current_system_time of this ShowStepOutputsResponse.
+
+        **参数解释**： 当前系统时间。 **取值范围**： 不涉及。 
 
         :param current_system_time: The current_system_time of this ShowStepOutputsResponse.
         :type current_system_time: int

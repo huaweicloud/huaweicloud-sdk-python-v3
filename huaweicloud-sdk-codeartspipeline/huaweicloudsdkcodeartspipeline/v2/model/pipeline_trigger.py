@@ -47,25 +47,25 @@ class PipelineTrigger:
 
         The model defined in huaweicloud sdk
 
-        :param pipeline_id: 流水线ID
+        :param pipeline_id: **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type pipeline_id: str
-        :param git_url: git链接
+        :param git_url: **参数解释**： 代码仓git链接。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type git_url: str
-        :param git_type: 代码仓类型
+        :param git_type: **参数解释**： git代码仓类型。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
         :type git_type: str
-        :param is_auto_commit: 是否自动提交
+        :param is_auto_commit: **参数解释**： 是否自动提交。gitee仓库特有，webhook触发流水线后，自动添加评论。 **约束限制**： 不涉及。 **取值范围**： - true：是自动提交。 - false：不是自动提交。 **默认取值**： 不涉及。 
         :type is_auto_commit: bool
-        :param events: 事件
+        :param events: **参数解释**： 触发事件列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type events: list[:class:`huaweicloudsdkcodeartspipeline.v2.CodeEvent`]
-        :param hook_id: 回调id
+        :param hook_id: **参数解释**： 系统生成的回调ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type hook_id: str
-        :param repo_id: 仓库id
+        :param repo_id: **参数解释**： Repo仓库ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type repo_id: str
-        :param endpoint_id: 扩展点id
+        :param endpoint_id: **参数解释**： 代码源扩展点ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type endpoint_id: str
-        :param callback_url: 回调链接
+        :param callback_url: **参数解释**： 回调链接，注册Webhook时生成。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type callback_url: str
-        :param security_token: 用户token
+        :param security_token: **参数解释**： 用户token，注册Webhook时生成。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type security_token: str
         """
         
@@ -108,7 +108,7 @@ class PipelineTrigger:
     def pipeline_id(self):
         r"""Gets the pipeline_id of this PipelineTrigger.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The pipeline_id of this PipelineTrigger.
         :rtype: str
@@ -119,7 +119,7 @@ class PipelineTrigger:
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this PipelineTrigger.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param pipeline_id: The pipeline_id of this PipelineTrigger.
         :type pipeline_id: str
@@ -130,7 +130,7 @@ class PipelineTrigger:
     def git_url(self):
         r"""Gets the git_url of this PipelineTrigger.
 
-        git链接
+        **参数解释**： 代码仓git链接。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The git_url of this PipelineTrigger.
         :rtype: str
@@ -141,7 +141,7 @@ class PipelineTrigger:
     def git_url(self, git_url):
         r"""Sets the git_url of this PipelineTrigger.
 
-        git链接
+        **参数解释**： 代码仓git链接。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param git_url: The git_url of this PipelineTrigger.
         :type git_url: str
@@ -152,7 +152,7 @@ class PipelineTrigger:
     def git_type(self):
         r"""Gets the git_type of this PipelineTrigger.
 
-        代码仓类型
+        **参数解释**： git代码仓类型。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
 
         :return: The git_type of this PipelineTrigger.
         :rtype: str
@@ -163,7 +163,7 @@ class PipelineTrigger:
     def git_type(self, git_type):
         r"""Sets the git_type of this PipelineTrigger.
 
-        代码仓类型
+        **参数解释**： git代码仓类型。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
 
         :param git_type: The git_type of this PipelineTrigger.
         :type git_type: str
@@ -174,7 +174,7 @@ class PipelineTrigger:
     def is_auto_commit(self):
         r"""Gets the is_auto_commit of this PipelineTrigger.
 
-        是否自动提交
+        **参数解释**： 是否自动提交。gitee仓库特有，webhook触发流水线后，自动添加评论。 **约束限制**： 不涉及。 **取值范围**： - true：是自动提交。 - false：不是自动提交。 **默认取值**： 不涉及。 
 
         :return: The is_auto_commit of this PipelineTrigger.
         :rtype: bool
@@ -185,7 +185,7 @@ class PipelineTrigger:
     def is_auto_commit(self, is_auto_commit):
         r"""Sets the is_auto_commit of this PipelineTrigger.
 
-        是否自动提交
+        **参数解释**： 是否自动提交。gitee仓库特有，webhook触发流水线后，自动添加评论。 **约束限制**： 不涉及。 **取值范围**： - true：是自动提交。 - false：不是自动提交。 **默认取值**： 不涉及。 
 
         :param is_auto_commit: The is_auto_commit of this PipelineTrigger.
         :type is_auto_commit: bool
@@ -196,7 +196,7 @@ class PipelineTrigger:
     def events(self):
         r"""Gets the events of this PipelineTrigger.
 
-        事件
+        **参数解释**： 触发事件列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The events of this PipelineTrigger.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.CodeEvent`]
@@ -207,7 +207,7 @@ class PipelineTrigger:
     def events(self, events):
         r"""Sets the events of this PipelineTrigger.
 
-        事件
+        **参数解释**： 触发事件列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param events: The events of this PipelineTrigger.
         :type events: list[:class:`huaweicloudsdkcodeartspipeline.v2.CodeEvent`]
@@ -218,7 +218,7 @@ class PipelineTrigger:
     def hook_id(self):
         r"""Gets the hook_id of this PipelineTrigger.
 
-        回调id
+        **参数解释**： 系统生成的回调ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The hook_id of this PipelineTrigger.
         :rtype: str
@@ -229,7 +229,7 @@ class PipelineTrigger:
     def hook_id(self, hook_id):
         r"""Sets the hook_id of this PipelineTrigger.
 
-        回调id
+        **参数解释**： 系统生成的回调ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param hook_id: The hook_id of this PipelineTrigger.
         :type hook_id: str
@@ -240,7 +240,7 @@ class PipelineTrigger:
     def repo_id(self):
         r"""Gets the repo_id of this PipelineTrigger.
 
-        仓库id
+        **参数解释**： Repo仓库ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The repo_id of this PipelineTrigger.
         :rtype: str
@@ -251,7 +251,7 @@ class PipelineTrigger:
     def repo_id(self, repo_id):
         r"""Sets the repo_id of this PipelineTrigger.
 
-        仓库id
+        **参数解释**： Repo仓库ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param repo_id: The repo_id of this PipelineTrigger.
         :type repo_id: str
@@ -262,7 +262,7 @@ class PipelineTrigger:
     def endpoint_id(self):
         r"""Gets the endpoint_id of this PipelineTrigger.
 
-        扩展点id
+        **参数解释**： 代码源扩展点ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The endpoint_id of this PipelineTrigger.
         :rtype: str
@@ -273,7 +273,7 @@ class PipelineTrigger:
     def endpoint_id(self, endpoint_id):
         r"""Sets the endpoint_id of this PipelineTrigger.
 
-        扩展点id
+        **参数解释**： 代码源扩展点ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param endpoint_id: The endpoint_id of this PipelineTrigger.
         :type endpoint_id: str
@@ -284,7 +284,7 @@ class PipelineTrigger:
     def callback_url(self):
         r"""Gets the callback_url of this PipelineTrigger.
 
-        回调链接
+        **参数解释**： 回调链接，注册Webhook时生成。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The callback_url of this PipelineTrigger.
         :rtype: str
@@ -295,7 +295,7 @@ class PipelineTrigger:
     def callback_url(self, callback_url):
         r"""Sets the callback_url of this PipelineTrigger.
 
-        回调链接
+        **参数解释**： 回调链接，注册Webhook时生成。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param callback_url: The callback_url of this PipelineTrigger.
         :type callback_url: str
@@ -306,7 +306,7 @@ class PipelineTrigger:
     def security_token(self):
         r"""Gets the security_token of this PipelineTrigger.
 
-        用户token
+        **参数解释**： 用户token，注册Webhook时生成。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The security_token of this PipelineTrigger.
         :rtype: str
@@ -317,7 +317,7 @@ class PipelineTrigger:
     def security_token(self, security_token):
         r"""Sets the security_token of this PipelineTrigger.
 
-        用户token
+        **参数解释**： 用户token，注册Webhook时生成。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param security_token: The security_token of this PipelineTrigger.
         :type security_token: str

@@ -18,7 +18,7 @@ class SetAutoEnlargePoliciesRequestBody:
 
     openapi_types = {
         'switch_option': 'str',
-        'policies': 'list[DiskAutoExpansionPolicy]'
+        'policies': 'list[DiskSetAutoExpansionPolicy]'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class SetAutoEnlargePoliciesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param switch_option: 自动扩容开关。 - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 默认值为on。
+        :param switch_option: **参数解释：** 自动扩容开关。 **约束限制：** 不涉及。 **取值范围：** - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 **默认取值：** on。
         :type switch_option: str
-        :param policies: 磁盘自动扩容策略。 最大支持设置10个实例的策略。
-        :type policies: list[:class:`huaweicloudsdkdds.v3.DiskAutoExpansionPolicy`]
+        :param policies: **参数解释：** 磁盘自动扩容策略。 **约束限制：** 最大支持设置10个实例的策略。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 **参数解释：** 不涉及。
+        :type policies: list[:class:`huaweicloudsdkdds.v3.DiskSetAutoExpansionPolicy`]
         """
         
         
@@ -51,7 +51,7 @@ class SetAutoEnlargePoliciesRequestBody:
     def switch_option(self):
         r"""Gets the switch_option of this SetAutoEnlargePoliciesRequestBody.
 
-        自动扩容开关。 - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 默认值为on。
+        **参数解释：** 自动扩容开关。 **约束限制：** 不涉及。 **取值范围：** - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 **默认取值：** on。
 
         :return: The switch_option of this SetAutoEnlargePoliciesRequestBody.
         :rtype: str
@@ -62,7 +62,7 @@ class SetAutoEnlargePoliciesRequestBody:
     def switch_option(self, switch_option):
         r"""Sets the switch_option of this SetAutoEnlargePoliciesRequestBody.
 
-        自动扩容开关。 - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 默认值为on。
+        **参数解释：** 自动扩容开关。 **约束限制：** 不涉及。 **取值范围：** - on:开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 **默认取值：** on。
 
         :param switch_option: The switch_option of this SetAutoEnlargePoliciesRequestBody.
         :type switch_option: str
@@ -73,10 +73,10 @@ class SetAutoEnlargePoliciesRequestBody:
     def policies(self):
         r"""Gets the policies of this SetAutoEnlargePoliciesRequestBody.
 
-        磁盘自动扩容策略。 最大支持设置10个实例的策略。
+        **参数解释：** 磁盘自动扩容策略。 **约束限制：** 最大支持设置10个实例的策略。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 **参数解释：** 不涉及。
 
         :return: The policies of this SetAutoEnlargePoliciesRequestBody.
-        :rtype: list[:class:`huaweicloudsdkdds.v3.DiskAutoExpansionPolicy`]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.DiskSetAutoExpansionPolicy`]
         """
         return self._policies
 
@@ -84,10 +84,10 @@ class SetAutoEnlargePoliciesRequestBody:
     def policies(self, policies):
         r"""Sets the policies of this SetAutoEnlargePoliciesRequestBody.
 
-        磁盘自动扩容策略。 最大支持设置10个实例的策略。
+        **参数解释：** 磁盘自动扩容策略。 **约束限制：** 最大支持设置10个实例的策略。 **取值范围：** 不涉及。 **默认取值：** 不涉及。 **参数解释：** 不涉及。
 
         :param policies: The policies of this SetAutoEnlargePoliciesRequestBody.
-        :type policies: list[:class:`huaweicloudsdkdds.v3.DiskAutoExpansionPolicy`]
+        :type policies: list[:class:`huaweicloudsdkdds.v3.DiskSetAutoExpansionPolicy`]
         """
         self._policies = policies
 

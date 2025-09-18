@@ -17,7 +17,7 @@ class RemoteAreaId:
     sensitive_list = []
 
     openapi_types = {
-        'remote_area_id': 'AreaIdDef'
+        'remote_area_id': 'RemoteAreaIdDef'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class RemoteAreaId:
         The model defined in huaweicloud sdk
 
         :param remote_area_id: 
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         
         
@@ -45,7 +45,7 @@ class RemoteAreaId:
         r"""Gets the remote_area_id of this RemoteAreaId.
 
         :return: The remote_area_id of this RemoteAreaId.
-        :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :rtype: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         return self._remote_area_id
 
@@ -54,7 +54,7 @@ class RemoteAreaId:
         r"""Sets the remote_area_id of this RemoteAreaId.
 
         :param remote_area_id: The remote_area_id of this RemoteAreaId.
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
         """
         self._remote_area_id = remote_area_id
 

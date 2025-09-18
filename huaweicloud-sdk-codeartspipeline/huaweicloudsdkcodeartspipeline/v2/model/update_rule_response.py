@@ -32,9 +32,9 @@ class UpdateRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 创建状态
+        :param status: **参数解释**： 是否调用成功。 **取值范围**： - true：调用成功。 - false：调用失败。 
         :type status: bool
-        :param rule_id: 规则ID
+        :param rule_id: **参数解释**： 规则ID，规则的唯一标识，通过[分页获取规则列表](ListRule.xml)接口获取，data.id即为规则ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type rule_id: str
         """
         
@@ -53,7 +53,7 @@ class UpdateRuleResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this UpdateRuleResponse.
 
-        创建状态
+        **参数解释**： 是否调用成功。 **取值范围**： - true：调用成功。 - false：调用失败。 
 
         :return: The status of this UpdateRuleResponse.
         :rtype: bool
@@ -64,7 +64,7 @@ class UpdateRuleResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this UpdateRuleResponse.
 
-        创建状态
+        **参数解释**： 是否调用成功。 **取值范围**： - true：调用成功。 - false：调用失败。 
 
         :param status: The status of this UpdateRuleResponse.
         :type status: bool
@@ -75,7 +75,7 @@ class UpdateRuleResponse(SdkResponse):
     def rule_id(self):
         r"""Gets the rule_id of this UpdateRuleResponse.
 
-        规则ID
+        **参数解释**： 规则ID，规则的唯一标识，通过[分页获取规则列表](ListRule.xml)接口获取，data.id即为规则ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The rule_id of this UpdateRuleResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class UpdateRuleResponse(SdkResponse):
     def rule_id(self, rule_id):
         r"""Sets the rule_id of this UpdateRuleResponse.
 
-        规则ID
+        **参数解释**： 规则ID，规则的唯一标识，通过[分页获取规则列表](ListRule.xml)接口获取，data.id即为规则ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param rule_id: The rule_id of this UpdateRuleResponse.
         :type rule_id: str

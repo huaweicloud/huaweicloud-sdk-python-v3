@@ -41,13 +41,13 @@ class Area:
 
         :param name: 实例名称。
         :type name: str
-        :param id: Area ID。
+        :param id: 大区ID。
         :type id: str
-        :param en_name: 英文 Area Name。
+        :param en_name: 大区英文名称。
         :type en_name: str
-        :param es_name: 西语 Area Name。
+        :param es_name: 大区西语名称。
         :type es_name: str
-        :param pt_name: 葡语 Area Name。
+        :param pt_name: 大区葡语名称。
         :type pt_name: str
         :param station: 站点。
         :type station: str
@@ -101,7 +101,7 @@ class Area:
     def id(self):
         r"""Gets the id of this Area.
 
-        Area ID。
+        大区ID。
 
         :return: The id of this Area.
         :rtype: str
@@ -112,7 +112,7 @@ class Area:
     def id(self, id):
         r"""Sets the id of this Area.
 
-        Area ID。
+        大区ID。
 
         :param id: The id of this Area.
         :type id: str
@@ -123,7 +123,7 @@ class Area:
     def en_name(self):
         r"""Gets the en_name of this Area.
 
-        英文 Area Name。
+        大区英文名称。
 
         :return: The en_name of this Area.
         :rtype: str
@@ -134,7 +134,7 @@ class Area:
     def en_name(self, en_name):
         r"""Sets the en_name of this Area.
 
-        英文 Area Name。
+        大区英文名称。
 
         :param en_name: The en_name of this Area.
         :type en_name: str
@@ -145,7 +145,7 @@ class Area:
     def es_name(self):
         r"""Gets the es_name of this Area.
 
-        西语 Area Name。
+        大区西语名称。
 
         :return: The es_name of this Area.
         :rtype: str
@@ -156,7 +156,7 @@ class Area:
     def es_name(self, es_name):
         r"""Sets the es_name of this Area.
 
-        西语 Area Name。
+        大区西语名称。
 
         :param es_name: The es_name of this Area.
         :type es_name: str
@@ -167,7 +167,7 @@ class Area:
     def pt_name(self):
         r"""Gets the pt_name of this Area.
 
-        葡语 Area Name。
+        大区葡语名称。
 
         :return: The pt_name of this Area.
         :rtype: str
@@ -178,7 +178,7 @@ class Area:
     def pt_name(self, pt_name):
         r"""Sets the pt_name of this Area.
 
-        葡语 Area Name。
+        大区葡语名称。
 
         :param pt_name: The pt_name of this Area.
         :type pt_name: str

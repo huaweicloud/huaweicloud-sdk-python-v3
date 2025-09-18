@@ -31,7 +31,7 @@ class PipelineSource:
 
         The model defined in huaweicloud sdk
 
-        :param type: 流水线源类型
+        :param type: **参数解释**： 流水线源类型。 **取值范围**： 不涉及。 
         :type type: str
         :param params: 
         :type params: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineSourceParam`
@@ -52,7 +52,7 @@ class PipelineSource:
     def type(self):
         r"""Gets the type of this PipelineSource.
 
-        流水线源类型
+        **参数解释**： 流水线源类型。 **取值范围**： 不涉及。 
 
         :return: The type of this PipelineSource.
         :rtype: str
@@ -63,7 +63,7 @@ class PipelineSource:
     def type(self, type):
         r"""Sets the type of this PipelineSource.
 
-        流水线源类型
+        **参数解释**： 流水线源类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this PipelineSource.
         :type type: str

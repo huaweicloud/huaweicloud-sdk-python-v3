@@ -37,15 +37,15 @@ class Workflow:
 
         The model defined in huaweicloud sdk
 
-        :param parameter: 任务类型,list类型数据
+        :param parameter: **参数解释**： 任务类型，list类型数据。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type parameter: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineParam`]
-        :param source: 源码仓,list类型数据
+        :param source: **参数解释**： 源码仓，list类型数据。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type source: list[:class:`huaweicloudsdkcodeartspipeline.v2.Source`]
-        :param name: 流水线名字
+        :param name: **参数解释**： 流水线名字 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type name: str
-        :param project_id: 项目ID
+        :param project_id: **参数解释**： 项目ID **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type project_id: str
-        :param project_name: 项目名字
+        :param project_name: **参数解释**： 项目名字 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type project_name: str
         """
         
@@ -68,7 +68,7 @@ class Workflow:
     def parameter(self):
         r"""Gets the parameter of this Workflow.
 
-        任务类型,list类型数据
+        **参数解释**： 任务类型，list类型数据。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The parameter of this Workflow.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineParam`]
@@ -79,7 +79,7 @@ class Workflow:
     def parameter(self, parameter):
         r"""Sets the parameter of this Workflow.
 
-        任务类型,list类型数据
+        **参数解释**： 任务类型，list类型数据。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param parameter: The parameter of this Workflow.
         :type parameter: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineParam`]
@@ -90,7 +90,7 @@ class Workflow:
     def source(self):
         r"""Gets the source of this Workflow.
 
-        源码仓,list类型数据
+        **参数解释**： 源码仓，list类型数据。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The source of this Workflow.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.Source`]
@@ -101,7 +101,7 @@ class Workflow:
     def source(self, source):
         r"""Sets the source of this Workflow.
 
-        源码仓,list类型数据
+        **参数解释**： 源码仓，list类型数据。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param source: The source of this Workflow.
         :type source: list[:class:`huaweicloudsdkcodeartspipeline.v2.Source`]
@@ -112,7 +112,7 @@ class Workflow:
     def name(self):
         r"""Gets the name of this Workflow.
 
-        流水线名字
+        **参数解释**： 流水线名字 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this Workflow.
         :rtype: str
@@ -123,7 +123,7 @@ class Workflow:
     def name(self, name):
         r"""Sets the name of this Workflow.
 
-        流水线名字
+        **参数解释**： 流水线名字 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this Workflow.
         :type name: str
@@ -134,7 +134,7 @@ class Workflow:
     def project_id(self):
         r"""Gets the project_id of this Workflow.
 
-        项目ID
+        **参数解释**： 项目ID **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The project_id of this Workflow.
         :rtype: str
@@ -145,7 +145,7 @@ class Workflow:
     def project_id(self, project_id):
         r"""Sets the project_id of this Workflow.
 
-        项目ID
+        **参数解释**： 项目ID **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param project_id: The project_id of this Workflow.
         :type project_id: str
@@ -156,7 +156,7 @@ class Workflow:
     def project_name(self):
         r"""Gets the project_name of this Workflow.
 
-        项目名字
+        **参数解释**： 项目名字 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The project_name of this Workflow.
         :rtype: str
@@ -167,7 +167,7 @@ class Workflow:
     def project_name(self, project_name):
         r"""Sets the project_name of this Workflow.
 
-        项目名字
+        **参数解释**： 项目名字 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param project_name: The project_name of this Workflow.
         :type project_name: str

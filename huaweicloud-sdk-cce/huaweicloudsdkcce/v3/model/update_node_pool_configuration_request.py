@@ -35,7 +35,7 @@ class UpdateNodePoolConfigurationRequest:
 
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
-        :param nodepool_id: 节点池ID
+        :param nodepool_id: **参数解释：** 节点池ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制：** 不涉及 **取值范围：** - 节点池ID：修改指定节点池配置管理参数 - master：修改集群配置中心的配置管理参数  **默认取值：** 不涉及
         :type nodepool_id: str
         :param body: Body of the UpdateNodePoolConfigurationRequest
         :type body: :class:`huaweicloudsdkcce.v3.UpdateClusterConfigurationsBody`
@@ -79,7 +79,7 @@ class UpdateNodePoolConfigurationRequest:
     def nodepool_id(self):
         r"""Gets the nodepool_id of this UpdateNodePoolConfigurationRequest.
 
-        节点池ID
+        **参数解释：** 节点池ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制：** 不涉及 **取值范围：** - 节点池ID：修改指定节点池配置管理参数 - master：修改集群配置中心的配置管理参数  **默认取值：** 不涉及
 
         :return: The nodepool_id of this UpdateNodePoolConfigurationRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateNodePoolConfigurationRequest:
     def nodepool_id(self, nodepool_id):
         r"""Sets the nodepool_id of this UpdateNodePoolConfigurationRequest.
 
-        节点池ID
+        **参数解释：** 节点池ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制：** 不涉及 **取值范围：** - 节点池ID：修改指定节点池配置管理参数 - master：修改集群配置中心的配置管理参数  **默认取值：** 不涉及
 
         :param nodepool_id: The nodepool_id of this UpdateNodePoolConfigurationRequest.
         :type nodepool_id: str

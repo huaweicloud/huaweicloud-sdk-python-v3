@@ -25,7 +25,12 @@ class PluginPartQueryVOListAgentPluginInputVOData:
         'type': 'str',
         'workspace_id': 'str',
         'validation': 'ExtensionValidation',
-        'layout_content': 'str'
+        'layout_content': 'str',
+        'extend_prop': 'ExtensionExtendProp',
+        'front_data_prop': 'str',
+        'label': 'str',
+        'description': 'str',
+        'required': 'str'
     }
 
     attribute_map = {
@@ -37,32 +42,47 @@ class PluginPartQueryVOListAgentPluginInputVOData:
         'type': 'type',
         'workspace_id': 'workspace_id',
         'validation': 'validation',
-        'layout_content': 'layout_content'
+        'layout_content': 'layout_content',
+        'extend_prop': 'extend_prop',
+        'front_data_prop': 'front_data_prop',
+        'label': 'label',
+        'description': 'description',
+        'required': 'required'
     }
 
-    def __init__(self, unique_id=None, name=None, default_value=None, plugin_name=None, version=None, type=None, workspace_id=None, validation=None, layout_content=None):
+    def __init__(self, unique_id=None, name=None, default_value=None, plugin_name=None, version=None, type=None, workspace_id=None, validation=None, layout_content=None, extend_prop=None, front_data_prop=None, label=None, description=None, required=None):
         r"""PluginPartQueryVOListAgentPluginInputVOData
 
         The model defined in huaweicloud sdk
 
-        :param unique_id: 唯一ID
+        :param unique_id: **参数解释**： 插件输入项唯一ID。 **取值范围**： 不涉及。 
         :type unique_id: str
-        :param name: 名称
+        :param name: **参数解释**： 插件输入项名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param default_value: 默认值
+        :param default_value: **参数解释**： 插件输入项默认值。 **取值范围**： 不涉及。 
         :type default_value: str
-        :param plugin_name: 插件名
+        :param plugin_name: **参数解释**： 插件名称。 **取值范围**： 不涉及。 
         :type plugin_name: str
-        :param version: 版本
+        :param version: **参数解释**： 插件版本。 **取值范围**： 不涉及。 
         :type version: str
-        :param type: 类型
+        :param type: **参数解释**： 插件输入项类型。 **取值范围**： 不涉及。 
         :type type: str
-        :param workspace_id: 租户ID
+        :param workspace_id: **参数解释**： 租户id。 **取值范围**： 32位字符，由数字和字母组成。 
         :type workspace_id: str
         :param validation: 
         :type validation: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionValidation`
-        :param layout_content: 样式信息
+        :param layout_content: **参数解释**： 插件输入项样式信息。 **取值范围**： 不涉及。 
         :type layout_content: str
+        :param extend_prop: 
+        :type extend_prop: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionExtendProp`
+        :param front_data_prop: **参数解释**： 前端渲染使用的数据信息。 **取值范围**： 不涉及。 
+        :type front_data_prop: str
+        :param label: **参数解释**： 标签。 **取值范围**： 不涉及。 
+        :type label: str
+        :param description: **参数解释**： 描述。 **取值范围**： 不涉及。 
+        :type description: str
+        :param required: **参数解释**： 是否必须。 **取值范围**： 不涉及。 
+        :type required: str
         """
         
         
@@ -76,6 +96,11 @@ class PluginPartQueryVOListAgentPluginInputVOData:
         self._workspace_id = None
         self._validation = None
         self._layout_content = None
+        self._extend_prop = None
+        self._front_data_prop = None
+        self._label = None
+        self._description = None
+        self._required = None
         self.discriminator = None
 
         if unique_id is not None:
@@ -96,12 +121,22 @@ class PluginPartQueryVOListAgentPluginInputVOData:
             self.validation = validation
         if layout_content is not None:
             self.layout_content = layout_content
+        if extend_prop is not None:
+            self.extend_prop = extend_prop
+        if front_data_prop is not None:
+            self.front_data_prop = front_data_prop
+        if label is not None:
+            self.label = label
+        if description is not None:
+            self.description = description
+        if required is not None:
+            self.required = required
 
     @property
     def unique_id(self):
         r"""Gets the unique_id of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        唯一ID
+        **参数解释**： 插件输入项唯一ID。 **取值范围**： 不涉及。 
 
         :return: The unique_id of this PluginPartQueryVOListAgentPluginInputVOData.
         :rtype: str
@@ -112,7 +147,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def unique_id(self, unique_id):
         r"""Sets the unique_id of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        唯一ID
+        **参数解释**： 插件输入项唯一ID。 **取值范围**： 不涉及。 
 
         :param unique_id: The unique_id of this PluginPartQueryVOListAgentPluginInputVOData.
         :type unique_id: str
@@ -123,7 +158,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def name(self):
         r"""Gets the name of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        名称
+        **参数解释**： 插件输入项名称。 **取值范围**： 不涉及。 
 
         :return: The name of this PluginPartQueryVOListAgentPluginInputVOData.
         :rtype: str
@@ -134,7 +169,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def name(self, name):
         r"""Sets the name of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        名称
+        **参数解释**： 插件输入项名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this PluginPartQueryVOListAgentPluginInputVOData.
         :type name: str
@@ -145,7 +180,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def default_value(self):
         r"""Gets the default_value of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        默认值
+        **参数解释**： 插件输入项默认值。 **取值范围**： 不涉及。 
 
         :return: The default_value of this PluginPartQueryVOListAgentPluginInputVOData.
         :rtype: str
@@ -156,7 +191,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def default_value(self, default_value):
         r"""Sets the default_value of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        默认值
+        **参数解释**： 插件输入项默认值。 **取值范围**： 不涉及。 
 
         :param default_value: The default_value of this PluginPartQueryVOListAgentPluginInputVOData.
         :type default_value: str
@@ -167,7 +202,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def plugin_name(self):
         r"""Gets the plugin_name of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        插件名
+        **参数解释**： 插件名称。 **取值范围**： 不涉及。 
 
         :return: The plugin_name of this PluginPartQueryVOListAgentPluginInputVOData.
         :rtype: str
@@ -178,7 +213,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        插件名
+        **参数解释**： 插件名称。 **取值范围**： 不涉及。 
 
         :param plugin_name: The plugin_name of this PluginPartQueryVOListAgentPluginInputVOData.
         :type plugin_name: str
@@ -189,7 +224,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def version(self):
         r"""Gets the version of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        版本
+        **参数解释**： 插件版本。 **取值范围**： 不涉及。 
 
         :return: The version of this PluginPartQueryVOListAgentPluginInputVOData.
         :rtype: str
@@ -200,7 +235,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def version(self, version):
         r"""Sets the version of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        版本
+        **参数解释**： 插件版本。 **取值范围**： 不涉及。 
 
         :param version: The version of this PluginPartQueryVOListAgentPluginInputVOData.
         :type version: str
@@ -211,7 +246,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def type(self):
         r"""Gets the type of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        类型
+        **参数解释**： 插件输入项类型。 **取值范围**： 不涉及。 
 
         :return: The type of this PluginPartQueryVOListAgentPluginInputVOData.
         :rtype: str
@@ -222,7 +257,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def type(self, type):
         r"""Sets the type of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        类型
+        **参数解释**： 插件输入项类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this PluginPartQueryVOListAgentPluginInputVOData.
         :type type: str
@@ -233,7 +268,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def workspace_id(self):
         r"""Gets the workspace_id of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        租户ID
+        **参数解释**： 租户id。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The workspace_id of this PluginPartQueryVOListAgentPluginInputVOData.
         :rtype: str
@@ -244,7 +279,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def workspace_id(self, workspace_id):
         r"""Sets the workspace_id of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        租户ID
+        **参数解释**： 租户id。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param workspace_id: The workspace_id of this PluginPartQueryVOListAgentPluginInputVOData.
         :type workspace_id: str
@@ -273,7 +308,7 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def layout_content(self):
         r"""Gets the layout_content of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        样式信息
+        **参数解释**： 插件输入项样式信息。 **取值范围**： 不涉及。 
 
         :return: The layout_content of this PluginPartQueryVOListAgentPluginInputVOData.
         :rtype: str
@@ -284,12 +319,118 @@ class PluginPartQueryVOListAgentPluginInputVOData:
     def layout_content(self, layout_content):
         r"""Sets the layout_content of this PluginPartQueryVOListAgentPluginInputVOData.
 
-        样式信息
+        **参数解释**： 插件输入项样式信息。 **取值范围**： 不涉及。 
 
         :param layout_content: The layout_content of this PluginPartQueryVOListAgentPluginInputVOData.
         :type layout_content: str
         """
         self._layout_content = layout_content
+
+    @property
+    def extend_prop(self):
+        r"""Gets the extend_prop of this PluginPartQueryVOListAgentPluginInputVOData.
+
+        :return: The extend_prop of this PluginPartQueryVOListAgentPluginInputVOData.
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionExtendProp`
+        """
+        return self._extend_prop
+
+    @extend_prop.setter
+    def extend_prop(self, extend_prop):
+        r"""Sets the extend_prop of this PluginPartQueryVOListAgentPluginInputVOData.
+
+        :param extend_prop: The extend_prop of this PluginPartQueryVOListAgentPluginInputVOData.
+        :type extend_prop: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionExtendProp`
+        """
+        self._extend_prop = extend_prop
+
+    @property
+    def front_data_prop(self):
+        r"""Gets the front_data_prop of this PluginPartQueryVOListAgentPluginInputVOData.
+
+        **参数解释**： 前端渲染使用的数据信息。 **取值范围**： 不涉及。 
+
+        :return: The front_data_prop of this PluginPartQueryVOListAgentPluginInputVOData.
+        :rtype: str
+        """
+        return self._front_data_prop
+
+    @front_data_prop.setter
+    def front_data_prop(self, front_data_prop):
+        r"""Sets the front_data_prop of this PluginPartQueryVOListAgentPluginInputVOData.
+
+        **参数解释**： 前端渲染使用的数据信息。 **取值范围**： 不涉及。 
+
+        :param front_data_prop: The front_data_prop of this PluginPartQueryVOListAgentPluginInputVOData.
+        :type front_data_prop: str
+        """
+        self._front_data_prop = front_data_prop
+
+    @property
+    def label(self):
+        r"""Gets the label of this PluginPartQueryVOListAgentPluginInputVOData.
+
+        **参数解释**： 标签。 **取值范围**： 不涉及。 
+
+        :return: The label of this PluginPartQueryVOListAgentPluginInputVOData.
+        :rtype: str
+        """
+        return self._label
+
+    @label.setter
+    def label(self, label):
+        r"""Sets the label of this PluginPartQueryVOListAgentPluginInputVOData.
+
+        **参数解释**： 标签。 **取值范围**： 不涉及。 
+
+        :param label: The label of this PluginPartQueryVOListAgentPluginInputVOData.
+        :type label: str
+        """
+        self._label = label
+
+    @property
+    def description(self):
+        r"""Gets the description of this PluginPartQueryVOListAgentPluginInputVOData.
+
+        **参数解释**： 描述。 **取值范围**： 不涉及。 
+
+        :return: The description of this PluginPartQueryVOListAgentPluginInputVOData.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this PluginPartQueryVOListAgentPluginInputVOData.
+
+        **参数解释**： 描述。 **取值范围**： 不涉及。 
+
+        :param description: The description of this PluginPartQueryVOListAgentPluginInputVOData.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def required(self):
+        r"""Gets the required of this PluginPartQueryVOListAgentPluginInputVOData.
+
+        **参数解释**： 是否必须。 **取值范围**： 不涉及。 
+
+        :return: The required of this PluginPartQueryVOListAgentPluginInputVOData.
+        :rtype: str
+        """
+        return self._required
+
+    @required.setter
+    def required(self, required):
+        r"""Sets the required of this PluginPartQueryVOListAgentPluginInputVOData.
+
+        **参数解释**： 是否必须。 **取值范围**： 不涉及。 
+
+        :param required: The required of this PluginPartQueryVOListAgentPluginInputVOData.
+        :type required: str
+        """
+        self._required = required
 
     def to_dict(self):
         """Returns the model properties as a dict"""

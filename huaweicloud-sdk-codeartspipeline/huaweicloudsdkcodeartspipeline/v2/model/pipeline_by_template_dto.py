@@ -21,6 +21,8 @@ class PipelineByTemplateDTO:
         'description': 'str',
         'is_publish': 'bool',
         'sources': 'list[CodeSource]',
+        'security_level': 'int',
+        'confidentiality_code': 'str',
         'variables': 'list[PipelineByTemplateDTOVariables]'
     }
 
@@ -29,23 +31,29 @@ class PipelineByTemplateDTO:
         'description': 'description',
         'is_publish': 'is_publish',
         'sources': 'sources',
+        'security_level': 'security_level',
+        'confidentiality_code': 'confidentiality_code',
         'variables': 'variables'
     }
 
-    def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None):
+    def __init__(self, name=None, description=None, is_publish=None, sources=None, security_level=None, confidentiality_code=None, variables=None):
         r"""PipelineByTemplateDTO
 
         The model defined in huaweicloud sdk
 
-        :param name: 流水线名称
+        :param name: **参数解释**： 流水线名称。 **约束限制**： 不涉及。 **取值范围**： 仅包含中文、大小写英文字母、数字、&#39;-&#39;和&#39;_&#39;，且长度为[1,128]个字符。 **默认取值**： 不涉及。 
         :type name: str
-        :param description: 流水线描述
+        :param description: **参数解释**： 流水线描述。 **约束限制**： 不涉及。 **取值范围**： 不超过1024字符。 **默认取值**： 不涉及。 
         :type description: str
-        :param is_publish: 是否为变更流水线
+        :param is_publish: **参数解释**： 是否为变更流水线。 **约束限制**： 不涉及。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 **默认取值**： 不涉及。 
         :type is_publish: bool
-        :param sources: 流水线源
+        :param sources: **参数解释**： 流水线源列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.CodeSource`]
-        :param variables: 流水线参数
+        :param security_level: **参数解释**： 流水线涉密等级，非涉密场景不涉及，涉密场景必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type security_level: int
+        :param confidentiality_code: **参数解释**： 流水线涉密等级编码，非涉密场景不涉及。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type confidentiality_code: str
+        :param variables: **参数解释**： 流水线参数列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineByTemplateDTOVariables`]
         """
         
@@ -55,6 +63,8 @@ class PipelineByTemplateDTO:
         self._description = None
         self._is_publish = None
         self._sources = None
+        self._security_level = None
+        self._confidentiality_code = None
         self._variables = None
         self.discriminator = None
 
@@ -63,6 +73,10 @@ class PipelineByTemplateDTO:
             self.description = description
         self.is_publish = is_publish
         self.sources = sources
+        if security_level is not None:
+            self.security_level = security_level
+        if confidentiality_code is not None:
+            self.confidentiality_code = confidentiality_code
         if variables is not None:
             self.variables = variables
 
@@ -70,7 +84,7 @@ class PipelineByTemplateDTO:
     def name(self):
         r"""Gets the name of this PipelineByTemplateDTO.
 
-        流水线名称
+        **参数解释**： 流水线名称。 **约束限制**： 不涉及。 **取值范围**： 仅包含中文、大小写英文字母、数字、'-'和'_'，且长度为[1,128]个字符。 **默认取值**： 不涉及。 
 
         :return: The name of this PipelineByTemplateDTO.
         :rtype: str
@@ -81,7 +95,7 @@ class PipelineByTemplateDTO:
     def name(self, name):
         r"""Sets the name of this PipelineByTemplateDTO.
 
-        流水线名称
+        **参数解释**： 流水线名称。 **约束限制**： 不涉及。 **取值范围**： 仅包含中文、大小写英文字母、数字、'-'和'_'，且长度为[1,128]个字符。 **默认取值**： 不涉及。 
 
         :param name: The name of this PipelineByTemplateDTO.
         :type name: str
@@ -92,7 +106,7 @@ class PipelineByTemplateDTO:
     def description(self):
         r"""Gets the description of this PipelineByTemplateDTO.
 
-        流水线描述
+        **参数解释**： 流水线描述。 **约束限制**： 不涉及。 **取值范围**： 不超过1024字符。 **默认取值**： 不涉及。 
 
         :return: The description of this PipelineByTemplateDTO.
         :rtype: str
@@ -103,7 +117,7 @@ class PipelineByTemplateDTO:
     def description(self, description):
         r"""Sets the description of this PipelineByTemplateDTO.
 
-        流水线描述
+        **参数解释**： 流水线描述。 **约束限制**： 不涉及。 **取值范围**： 不超过1024字符。 **默认取值**： 不涉及。 
 
         :param description: The description of this PipelineByTemplateDTO.
         :type description: str
@@ -114,7 +128,7 @@ class PipelineByTemplateDTO:
     def is_publish(self):
         r"""Gets the is_publish of this PipelineByTemplateDTO.
 
-        是否为变更流水线
+        **参数解释**： 是否为变更流水线。 **约束限制**： 不涉及。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 **默认取值**： 不涉及。 
 
         :return: The is_publish of this PipelineByTemplateDTO.
         :rtype: bool
@@ -125,7 +139,7 @@ class PipelineByTemplateDTO:
     def is_publish(self, is_publish):
         r"""Sets the is_publish of this PipelineByTemplateDTO.
 
-        是否为变更流水线
+        **参数解释**： 是否为变更流水线。 **约束限制**： 不涉及。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 **默认取值**： 不涉及。 
 
         :param is_publish: The is_publish of this PipelineByTemplateDTO.
         :type is_publish: bool
@@ -136,7 +150,7 @@ class PipelineByTemplateDTO:
     def sources(self):
         r"""Gets the sources of this PipelineByTemplateDTO.
 
-        流水线源
+        **参数解释**： 流水线源列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The sources of this PipelineByTemplateDTO.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.CodeSource`]
@@ -147,7 +161,7 @@ class PipelineByTemplateDTO:
     def sources(self, sources):
         r"""Sets the sources of this PipelineByTemplateDTO.
 
-        流水线源
+        **参数解释**： 流水线源列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param sources: The sources of this PipelineByTemplateDTO.
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.CodeSource`]
@@ -155,10 +169,54 @@ class PipelineByTemplateDTO:
         self._sources = sources
 
     @property
+    def security_level(self):
+        r"""Gets the security_level of this PipelineByTemplateDTO.
+
+        **参数解释**： 流水线涉密等级，非涉密场景不涉及，涉密场景必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The security_level of this PipelineByTemplateDTO.
+        :rtype: int
+        """
+        return self._security_level
+
+    @security_level.setter
+    def security_level(self, security_level):
+        r"""Sets the security_level of this PipelineByTemplateDTO.
+
+        **参数解释**： 流水线涉密等级，非涉密场景不涉及，涉密场景必填。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param security_level: The security_level of this PipelineByTemplateDTO.
+        :type security_level: int
+        """
+        self._security_level = security_level
+
+    @property
+    def confidentiality_code(self):
+        r"""Gets the confidentiality_code of this PipelineByTemplateDTO.
+
+        **参数解释**： 流水线涉密等级编码，非涉密场景不涉及。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The confidentiality_code of this PipelineByTemplateDTO.
+        :rtype: str
+        """
+        return self._confidentiality_code
+
+    @confidentiality_code.setter
+    def confidentiality_code(self, confidentiality_code):
+        r"""Sets the confidentiality_code of this PipelineByTemplateDTO.
+
+        **参数解释**： 流水线涉密等级编码，非涉密场景不涉及。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param confidentiality_code: The confidentiality_code of this PipelineByTemplateDTO.
+        :type confidentiality_code: str
+        """
+        self._confidentiality_code = confidentiality_code
+
+    @property
     def variables(self):
         r"""Gets the variables of this PipelineByTemplateDTO.
 
-        流水线参数
+        **参数解释**： 流水线参数列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The variables of this PipelineByTemplateDTO.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineByTemplateDTOVariables`]
@@ -169,7 +227,7 @@ class PipelineByTemplateDTO:
     def variables(self, variables):
         r"""Sets the variables of this PipelineByTemplateDTO.
 
-        流水线参数
+        **参数解释**： 流水线参数列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param variables: The variables of this PipelineByTemplateDTO.
         :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineByTemplateDTOVariables`]

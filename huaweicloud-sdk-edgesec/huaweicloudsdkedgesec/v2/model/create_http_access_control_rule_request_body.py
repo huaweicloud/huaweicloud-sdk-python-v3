@@ -19,9 +19,12 @@ class CreateHttpAccessControlRuleRequestBody:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'time': 'bool',
         'start': 'int',
         'terminal': 'int',
+        'time_mode': 'str',
+        'period_type': 'str',
+        'time_range': 'list[TimeRangeItem]',
+        'time_zone': 'str',
         'priority': 'int',
         'conditions': 'list[HttpAccessControlRuleCondition]',
         'action': 'HttpRuleAction'
@@ -30,15 +33,18 @@ class CreateHttpAccessControlRuleRequestBody:
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'time': 'time',
         'start': 'start',
         'terminal': 'terminal',
+        'time_mode': 'time_mode',
+        'period_type': 'period_type',
+        'time_range': 'time_range',
+        'time_zone': 'time_zone',
         'priority': 'priority',
         'conditions': 'conditions',
         'action': 'action'
     }
 
-    def __init__(self, name=None, description=None, time=None, start=None, terminal=None, priority=None, conditions=None, action=None):
+    def __init__(self, name=None, description=None, start=None, terminal=None, time_mode=None, period_type=None, time_range=None, time_zone=None, priority=None, conditions=None, action=None):
         r"""CreateHttpAccessControlRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,13 +53,19 @@ class CreateHttpAccessControlRuleRequestBody:
         :type name: str
         :param description: 规则描述，最长512字符
         :type description: str
-        :param time: 精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
-        :type time: bool
         :param start: 精准防护规则生效的起始时间戳（秒）。当time&#x3D;true，才需要填写该参数。
         :type start: int
         :param terminal: 精准防护规则生效的终止时间戳（秒）。当time&#x3D;true，才需要填写该参数。
         :type terminal: int
-        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        :param time_mode: 生效模式
+        :type time_mode: str
+        :param period_type: time_mode为period时必传，每日生效时间类型，目前只有day
+        :type period_type: str
+        :param time_range: time_mode为period时必传，每日生效时间区间
+        :type time_range: list[:class:`huaweicloudsdkedgesec.v2.TimeRangeItem`]
+        :param time_zone: time_mode为period时必传，时区，例如：UTC+8
+        :type time_zone: str
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。
         :type priority: int
         :param conditions: 命中条件
         :type conditions: list[:class:`huaweicloudsdkedgesec.v2.HttpAccessControlRuleCondition`]
@@ -65,9 +77,12 @@ class CreateHttpAccessControlRuleRequestBody:
 
         self._name = None
         self._description = None
-        self._time = None
         self._start = None
         self._terminal = None
+        self._time_mode = None
+        self._period_type = None
+        self._time_range = None
+        self._time_zone = None
         self._priority = None
         self._conditions = None
         self._action = None
@@ -76,11 +91,17 @@ class CreateHttpAccessControlRuleRequestBody:
         self.name = name
         if description is not None:
             self.description = description
-        self.time = time
         if start is not None:
             self.start = start
         if terminal is not None:
             self.terminal = terminal
+        self.time_mode = time_mode
+        if period_type is not None:
+            self.period_type = period_type
+        if time_range is not None:
+            self.time_range = time_range
+        if time_zone is not None:
+            self.time_zone = time_zone
         self.priority = priority
         self.conditions = conditions
         self.action = action
@@ -130,28 +151,6 @@ class CreateHttpAccessControlRuleRequestBody:
         self._description = description
 
     @property
-    def time(self):
-        r"""Gets the time of this CreateHttpAccessControlRuleRequestBody.
-
-        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
-
-        :return: The time of this CreateHttpAccessControlRuleRequestBody.
-        :rtype: bool
-        """
-        return self._time
-
-    @time.setter
-    def time(self, time):
-        r"""Sets the time of this CreateHttpAccessControlRuleRequestBody.
-
-        精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
-
-        :param time: The time of this CreateHttpAccessControlRuleRequestBody.
-        :type time: bool
-        """
-        self._time = time
-
-    @property
     def start(self):
         r"""Gets the start of this CreateHttpAccessControlRuleRequestBody.
 
@@ -196,10 +195,98 @@ class CreateHttpAccessControlRuleRequestBody:
         self._terminal = terminal
 
     @property
+    def time_mode(self):
+        r"""Gets the time_mode of this CreateHttpAccessControlRuleRequestBody.
+
+        生效模式
+
+        :return: The time_mode of this CreateHttpAccessControlRuleRequestBody.
+        :rtype: str
+        """
+        return self._time_mode
+
+    @time_mode.setter
+    def time_mode(self, time_mode):
+        r"""Sets the time_mode of this CreateHttpAccessControlRuleRequestBody.
+
+        生效模式
+
+        :param time_mode: The time_mode of this CreateHttpAccessControlRuleRequestBody.
+        :type time_mode: str
+        """
+        self._time_mode = time_mode
+
+    @property
+    def period_type(self):
+        r"""Gets the period_type of this CreateHttpAccessControlRuleRequestBody.
+
+        time_mode为period时必传，每日生效时间类型，目前只有day
+
+        :return: The period_type of this CreateHttpAccessControlRuleRequestBody.
+        :rtype: str
+        """
+        return self._period_type
+
+    @period_type.setter
+    def period_type(self, period_type):
+        r"""Sets the period_type of this CreateHttpAccessControlRuleRequestBody.
+
+        time_mode为period时必传，每日生效时间类型，目前只有day
+
+        :param period_type: The period_type of this CreateHttpAccessControlRuleRequestBody.
+        :type period_type: str
+        """
+        self._period_type = period_type
+
+    @property
+    def time_range(self):
+        r"""Gets the time_range of this CreateHttpAccessControlRuleRequestBody.
+
+        time_mode为period时必传，每日生效时间区间
+
+        :return: The time_range of this CreateHttpAccessControlRuleRequestBody.
+        :rtype: list[:class:`huaweicloudsdkedgesec.v2.TimeRangeItem`]
+        """
+        return self._time_range
+
+    @time_range.setter
+    def time_range(self, time_range):
+        r"""Sets the time_range of this CreateHttpAccessControlRuleRequestBody.
+
+        time_mode为period时必传，每日生效时间区间
+
+        :param time_range: The time_range of this CreateHttpAccessControlRuleRequestBody.
+        :type time_range: list[:class:`huaweicloudsdkedgesec.v2.TimeRangeItem`]
+        """
+        self._time_range = time_range
+
+    @property
+    def time_zone(self):
+        r"""Gets the time_zone of this CreateHttpAccessControlRuleRequestBody.
+
+        time_mode为period时必传，时区，例如：UTC+8
+
+        :return: The time_zone of this CreateHttpAccessControlRuleRequestBody.
+        :rtype: str
+        """
+        return self._time_zone
+
+    @time_zone.setter
+    def time_zone(self, time_zone):
+        r"""Sets the time_zone of this CreateHttpAccessControlRuleRequestBody.
+
+        time_mode为period时必传，时区，例如：UTC+8
+
+        :param time_zone: The time_zone of this CreateHttpAccessControlRuleRequestBody.
+        :type time_zone: str
+        """
+        self._time_zone = time_zone
+
+    @property
     def priority(self):
         r"""Gets the priority of this CreateHttpAccessControlRuleRequestBody.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。
 
         :return: The priority of this CreateHttpAccessControlRuleRequestBody.
         :rtype: int
@@ -210,7 +297,7 @@ class CreateHttpAccessControlRuleRequestBody:
     def priority(self, priority):
         r"""Sets the priority of this CreateHttpAccessControlRuleRequestBody.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：1到100。
 
         :param priority: The priority of this CreateHttpAccessControlRuleRequestBody.
         :type priority: int

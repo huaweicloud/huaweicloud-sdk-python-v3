@@ -80,57 +80,57 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 流水线运行实例ID
+        :param id: **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type id: str
-        :param pipeline_id: 流水线ID
+        :param pipeline_id: **参数解释**： 流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type pipeline_id: str
-        :param manifest_version: 流水线版本
+        :param manifest_version: **参数解释**： 流水线版本。 **取值范围**： 默认3.0。 
         :type manifest_version: str
-        :param name: 流水线名称
+        :param name: **参数解释**： 流水线名称。 **取值范围**： 仅包含中文、大小写英文字母、数字、&#39;-&#39;和&#39;_&#39;，且长度为[1,128]个字符。 
         :type name: str
-        :param description: 运行描述
+        :param description: **参数解释**： 流水线运行描述。 **取值范围**： 最长1024字符。 
         :type description: str
-        :param is_publish: 是否为变更流水线
+        :param is_publish: **参数解释**： 是否为变更流水线。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 
         :type is_publish: bool
-        :param executor_id: 运行人ID
+        :param executor_id: **参数解释**： 运行人ID，用户的userId。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type executor_id: str
-        :param executor_name: 运行人名称
+        :param executor_name: **参数解释**： 运行人名称。 **取值范围**： 不涉及。 
         :type executor_name: str
-        :param status: 状态
+        :param status: **参数解释**： 流水线运行实例状态。 **取值范围**： - COMPLETED：已完成。 - RUNNING：运行中。 - FAILED：失败。 - CANCELED：取消。 - PAUSED：暂停。 - SUSPEND：挂起。 - IGNORED：忽略。 
         :type status: str
-        :param trigger_type: 触发类型
+        :param trigger_type: **参数解释**： 流水线触发类型。 - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 **取值范围**： 不涉及。 
         :type trigger_type: str
-        :param run_number: 运行序号
+        :param run_number: **参数解释**： 流水线运行序号。 **取值范围**： 大于等于 1。 
         :type run_number: int
-        :param start_time: 开始时间
+        :param start_time: **参数解释**： 流水线开始时间。 **取值范围**： 不涉及。 
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 流水线结束时间。 **取值范围**： 不涉及。 
         :type end_time: int
-        :param stages: 阶段信息
+        :param stages: **参数解释**： 阶段运行信息列表，包含各个阶段的详细运行信息。 **约束限制**： 不涉及。 
         :type stages: list[:class:`huaweicloudsdkcodeartspipeline.v2.StageRun`]
-        :param domain_id: 租户ID
+        :param domain_id: **参数解释**： 租户ID，用户账号的domainId。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type domain_id: str
-        :param project_id: 项目ID
+        :param project_id: **参数解释**： 项目ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type project_id: str
-        :param region: 局点
+        :param region: **参数解释**： 局点。 **取值范围**： 不涉及。 
         :type region: str
-        :param component_id: 组件ID
+        :param component_id: **参数解释**： 微服务ID。可以通过[查询微服务列表](ListMicroservice.xml)接口获取，其中data.id即为微服务ID。 **取值范围**： 不涉及。 
         :type component_id: str
-        :param language: 语言
+        :param language: **参数解释**： 语言，暂时仅包含中英文。 **取值范围**： zh-cn, en-us。 
         :type language: str
-        :param sources: 运行源信息
+        :param sources: **参数解释**： 流水线执行源信息。 **取值范围**： 不涉及。 
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineSource`]
-        :param artifacts: 流水线运行产物
+        :param artifacts: **参数解释**： 流水线运行产物。 **取值范围**： 不涉及。 
         :type artifacts: list[:class:`huaweicloudsdkcodeartspipeline.v2.PackageInfo`]
-        :param subject_id: 流水线运行实例ID
+        :param subject_id: **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 不涉及。 
         :type subject_id: str
-        :param group_id: 分组ID
+        :param group_id: **参数解释**： 分组ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type group_id: str
-        :param group_name: 分组名称
+        :param group_name: **参数解释**： 分组名称。 **取值范围**： 不涉及。 
         :type group_name: str
-        :param detail_url: 详情页地址
+        :param detail_url: **参数解释**： 详情页地址。 **取值范围**： 不涉及。 
         :type detail_url: str
-        :param current_system_time: 当前系统时间
+        :param current_system_time: **参数解释**： 当前系统时间。 **取值范围**： 不涉及。 
         :type current_system_time: int
         """
         
@@ -221,7 +221,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this ShowPipelineRunDetailResponse.
 
-        流水线运行实例ID
+        **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The id of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -232,7 +232,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowPipelineRunDetailResponse.
 
-        流水线运行实例ID
+        **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param id: The id of this ShowPipelineRunDetailResponse.
         :type id: str
@@ -243,7 +243,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def pipeline_id(self):
         r"""Gets the pipeline_id of this ShowPipelineRunDetailResponse.
 
-        流水线ID
+        **参数解释**： 流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The pipeline_id of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -254,7 +254,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this ShowPipelineRunDetailResponse.
 
-        流水线ID
+        **参数解释**： 流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param pipeline_id: The pipeline_id of this ShowPipelineRunDetailResponse.
         :type pipeline_id: str
@@ -265,7 +265,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def manifest_version(self):
         r"""Gets the manifest_version of this ShowPipelineRunDetailResponse.
 
-        流水线版本
+        **参数解释**： 流水线版本。 **取值范围**： 默认3.0。 
 
         :return: The manifest_version of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -276,7 +276,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def manifest_version(self, manifest_version):
         r"""Sets the manifest_version of this ShowPipelineRunDetailResponse.
 
-        流水线版本
+        **参数解释**： 流水线版本。 **取值范围**： 默认3.0。 
 
         :param manifest_version: The manifest_version of this ShowPipelineRunDetailResponse.
         :type manifest_version: str
@@ -287,7 +287,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowPipelineRunDetailResponse.
 
-        流水线名称
+        **参数解释**： 流水线名称。 **取值范围**： 仅包含中文、大小写英文字母、数字、'-'和'_'，且长度为[1,128]个字符。 
 
         :return: The name of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -298,7 +298,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowPipelineRunDetailResponse.
 
-        流水线名称
+        **参数解释**： 流水线名称。 **取值范围**： 仅包含中文、大小写英文字母、数字、'-'和'_'，且长度为[1,128]个字符。 
 
         :param name: The name of this ShowPipelineRunDetailResponse.
         :type name: str
@@ -309,7 +309,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowPipelineRunDetailResponse.
 
-        运行描述
+        **参数解释**： 流水线运行描述。 **取值范围**： 最长1024字符。 
 
         :return: The description of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -320,7 +320,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowPipelineRunDetailResponse.
 
-        运行描述
+        **参数解释**： 流水线运行描述。 **取值范围**： 最长1024字符。 
 
         :param description: The description of this ShowPipelineRunDetailResponse.
         :type description: str
@@ -331,7 +331,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def is_publish(self):
         r"""Gets the is_publish of this ShowPipelineRunDetailResponse.
 
-        是否为变更流水线
+        **参数解释**： 是否为变更流水线。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 
 
         :return: The is_publish of this ShowPipelineRunDetailResponse.
         :rtype: bool
@@ -342,7 +342,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def is_publish(self, is_publish):
         r"""Sets the is_publish of this ShowPipelineRunDetailResponse.
 
-        是否为变更流水线
+        **参数解释**： 是否为变更流水线。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 
 
         :param is_publish: The is_publish of this ShowPipelineRunDetailResponse.
         :type is_publish: bool
@@ -353,7 +353,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def executor_id(self):
         r"""Gets the executor_id of this ShowPipelineRunDetailResponse.
 
-        运行人ID
+        **参数解释**： 运行人ID，用户的userId。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The executor_id of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -364,7 +364,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def executor_id(self, executor_id):
         r"""Sets the executor_id of this ShowPipelineRunDetailResponse.
 
-        运行人ID
+        **参数解释**： 运行人ID，用户的userId。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param executor_id: The executor_id of this ShowPipelineRunDetailResponse.
         :type executor_id: str
@@ -375,7 +375,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def executor_name(self):
         r"""Gets the executor_name of this ShowPipelineRunDetailResponse.
 
-        运行人名称
+        **参数解释**： 运行人名称。 **取值范围**： 不涉及。 
 
         :return: The executor_name of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -386,7 +386,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def executor_name(self, executor_name):
         r"""Sets the executor_name of this ShowPipelineRunDetailResponse.
 
-        运行人名称
+        **参数解释**： 运行人名称。 **取值范围**： 不涉及。 
 
         :param executor_name: The executor_name of this ShowPipelineRunDetailResponse.
         :type executor_name: str
@@ -397,7 +397,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowPipelineRunDetailResponse.
 
-        状态
+        **参数解释**： 流水线运行实例状态。 **取值范围**： - COMPLETED：已完成。 - RUNNING：运行中。 - FAILED：失败。 - CANCELED：取消。 - PAUSED：暂停。 - SUSPEND：挂起。 - IGNORED：忽略。 
 
         :return: The status of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -408,7 +408,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowPipelineRunDetailResponse.
 
-        状态
+        **参数解释**： 流水线运行实例状态。 **取值范围**： - COMPLETED：已完成。 - RUNNING：运行中。 - FAILED：失败。 - CANCELED：取消。 - PAUSED：暂停。 - SUSPEND：挂起。 - IGNORED：忽略。 
 
         :param status: The status of this ShowPipelineRunDetailResponse.
         :type status: str
@@ -419,7 +419,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def trigger_type(self):
         r"""Gets the trigger_type of this ShowPipelineRunDetailResponse.
 
-        触发类型
+        **参数解释**： 流水线触发类型。 - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 **取值范围**： 不涉及。 
 
         :return: The trigger_type of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -430,7 +430,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def trigger_type(self, trigger_type):
         r"""Sets the trigger_type of this ShowPipelineRunDetailResponse.
 
-        触发类型
+        **参数解释**： 流水线触发类型。 - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 **取值范围**： 不涉及。 
 
         :param trigger_type: The trigger_type of this ShowPipelineRunDetailResponse.
         :type trigger_type: str
@@ -441,7 +441,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def run_number(self):
         r"""Gets the run_number of this ShowPipelineRunDetailResponse.
 
-        运行序号
+        **参数解释**： 流水线运行序号。 **取值范围**： 大于等于 1。 
 
         :return: The run_number of this ShowPipelineRunDetailResponse.
         :rtype: int
@@ -452,7 +452,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def run_number(self, run_number):
         r"""Sets the run_number of this ShowPipelineRunDetailResponse.
 
-        运行序号
+        **参数解释**： 流水线运行序号。 **取值范围**： 大于等于 1。 
 
         :param run_number: The run_number of this ShowPipelineRunDetailResponse.
         :type run_number: int
@@ -463,7 +463,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def start_time(self):
         r"""Gets the start_time of this ShowPipelineRunDetailResponse.
 
-        开始时间
+        **参数解释**： 流水线开始时间。 **取值范围**： 不涉及。 
 
         :return: The start_time of this ShowPipelineRunDetailResponse.
         :rtype: int
@@ -474,7 +474,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def start_time(self, start_time):
         r"""Sets the start_time of this ShowPipelineRunDetailResponse.
 
-        开始时间
+        **参数解释**： 流水线开始时间。 **取值范围**： 不涉及。 
 
         :param start_time: The start_time of this ShowPipelineRunDetailResponse.
         :type start_time: int
@@ -485,7 +485,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def end_time(self):
         r"""Gets the end_time of this ShowPipelineRunDetailResponse.
 
-        结束时间
+        **参数解释**： 流水线结束时间。 **取值范围**： 不涉及。 
 
         :return: The end_time of this ShowPipelineRunDetailResponse.
         :rtype: int
@@ -496,7 +496,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowPipelineRunDetailResponse.
 
-        结束时间
+        **参数解释**： 流水线结束时间。 **取值范围**： 不涉及。 
 
         :param end_time: The end_time of this ShowPipelineRunDetailResponse.
         :type end_time: int
@@ -507,7 +507,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def stages(self):
         r"""Gets the stages of this ShowPipelineRunDetailResponse.
 
-        阶段信息
+        **参数解释**： 阶段运行信息列表，包含各个阶段的详细运行信息。 **约束限制**： 不涉及。 
 
         :return: The stages of this ShowPipelineRunDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.StageRun`]
@@ -518,7 +518,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def stages(self, stages):
         r"""Sets the stages of this ShowPipelineRunDetailResponse.
 
-        阶段信息
+        **参数解释**： 阶段运行信息列表，包含各个阶段的详细运行信息。 **约束限制**： 不涉及。 
 
         :param stages: The stages of this ShowPipelineRunDetailResponse.
         :type stages: list[:class:`huaweicloudsdkcodeartspipeline.v2.StageRun`]
@@ -529,7 +529,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def domain_id(self):
         r"""Gets the domain_id of this ShowPipelineRunDetailResponse.
 
-        租户ID
+        **参数解释**： 租户ID，用户账号的domainId。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The domain_id of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -540,7 +540,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def domain_id(self, domain_id):
         r"""Sets the domain_id of this ShowPipelineRunDetailResponse.
 
-        租户ID
+        **参数解释**： 租户ID，用户账号的domainId。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param domain_id: The domain_id of this ShowPipelineRunDetailResponse.
         :type domain_id: str
@@ -551,7 +551,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this ShowPipelineRunDetailResponse.
 
-        项目ID
+        **参数解释**： 项目ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The project_id of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -562,7 +562,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this ShowPipelineRunDetailResponse.
 
-        项目ID
+        **参数解释**： 项目ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param project_id: The project_id of this ShowPipelineRunDetailResponse.
         :type project_id: str
@@ -573,7 +573,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def region(self):
         r"""Gets the region of this ShowPipelineRunDetailResponse.
 
-        局点
+        **参数解释**： 局点。 **取值范围**： 不涉及。 
 
         :return: The region of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -584,7 +584,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def region(self, region):
         r"""Sets the region of this ShowPipelineRunDetailResponse.
 
-        局点
+        **参数解释**： 局点。 **取值范围**： 不涉及。 
 
         :param region: The region of this ShowPipelineRunDetailResponse.
         :type region: str
@@ -595,7 +595,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def component_id(self):
         r"""Gets the component_id of this ShowPipelineRunDetailResponse.
 
-        组件ID
+        **参数解释**： 微服务ID。可以通过[查询微服务列表](ListMicroservice.xml)接口获取，其中data.id即为微服务ID。 **取值范围**： 不涉及。 
 
         :return: The component_id of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -606,7 +606,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def component_id(self, component_id):
         r"""Sets the component_id of this ShowPipelineRunDetailResponse.
 
-        组件ID
+        **参数解释**： 微服务ID。可以通过[查询微服务列表](ListMicroservice.xml)接口获取，其中data.id即为微服务ID。 **取值范围**： 不涉及。 
 
         :param component_id: The component_id of this ShowPipelineRunDetailResponse.
         :type component_id: str
@@ -617,7 +617,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def language(self):
         r"""Gets the language of this ShowPipelineRunDetailResponse.
 
-        语言
+        **参数解释**： 语言，暂时仅包含中英文。 **取值范围**： zh-cn, en-us。 
 
         :return: The language of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -628,7 +628,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def language(self, language):
         r"""Sets the language of this ShowPipelineRunDetailResponse.
 
-        语言
+        **参数解释**： 语言，暂时仅包含中英文。 **取值范围**： zh-cn, en-us。 
 
         :param language: The language of this ShowPipelineRunDetailResponse.
         :type language: str
@@ -639,7 +639,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def sources(self):
         r"""Gets the sources of this ShowPipelineRunDetailResponse.
 
-        运行源信息
+        **参数解释**： 流水线执行源信息。 **取值范围**： 不涉及。 
 
         :return: The sources of this ShowPipelineRunDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineSource`]
@@ -650,7 +650,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def sources(self, sources):
         r"""Sets the sources of this ShowPipelineRunDetailResponse.
 
-        运行源信息
+        **参数解释**： 流水线执行源信息。 **取值范围**： 不涉及。 
 
         :param sources: The sources of this ShowPipelineRunDetailResponse.
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineSource`]
@@ -661,7 +661,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def artifacts(self):
         r"""Gets the artifacts of this ShowPipelineRunDetailResponse.
 
-        流水线运行产物
+        **参数解释**： 流水线运行产物。 **取值范围**： 不涉及。 
 
         :return: The artifacts of this ShowPipelineRunDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PackageInfo`]
@@ -672,7 +672,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def artifacts(self, artifacts):
         r"""Sets the artifacts of this ShowPipelineRunDetailResponse.
 
-        流水线运行产物
+        **参数解释**： 流水线运行产物。 **取值范围**： 不涉及。 
 
         :param artifacts: The artifacts of this ShowPipelineRunDetailResponse.
         :type artifacts: list[:class:`huaweicloudsdkcodeartspipeline.v2.PackageInfo`]
@@ -683,7 +683,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def subject_id(self):
         r"""Gets the subject_id of this ShowPipelineRunDetailResponse.
 
-        流水线运行实例ID
+        **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 不涉及。 
 
         :return: The subject_id of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -694,7 +694,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def subject_id(self, subject_id):
         r"""Sets the subject_id of this ShowPipelineRunDetailResponse.
 
-        流水线运行实例ID
+        **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 不涉及。 
 
         :param subject_id: The subject_id of this ShowPipelineRunDetailResponse.
         :type subject_id: str
@@ -705,7 +705,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def group_id(self):
         r"""Gets the group_id of this ShowPipelineRunDetailResponse.
 
-        分组ID
+        **参数解释**： 分组ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The group_id of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -716,7 +716,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def group_id(self, group_id):
         r"""Sets the group_id of this ShowPipelineRunDetailResponse.
 
-        分组ID
+        **参数解释**： 分组ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param group_id: The group_id of this ShowPipelineRunDetailResponse.
         :type group_id: str
@@ -727,7 +727,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def group_name(self):
         r"""Gets the group_name of this ShowPipelineRunDetailResponse.
 
-        分组名称
+        **参数解释**： 分组名称。 **取值范围**： 不涉及。 
 
         :return: The group_name of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -738,7 +738,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def group_name(self, group_name):
         r"""Sets the group_name of this ShowPipelineRunDetailResponse.
 
-        分组名称
+        **参数解释**： 分组名称。 **取值范围**： 不涉及。 
 
         :param group_name: The group_name of this ShowPipelineRunDetailResponse.
         :type group_name: str
@@ -749,7 +749,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def detail_url(self):
         r"""Gets the detail_url of this ShowPipelineRunDetailResponse.
 
-        详情页地址
+        **参数解释**： 详情页地址。 **取值范围**： 不涉及。 
 
         :return: The detail_url of this ShowPipelineRunDetailResponse.
         :rtype: str
@@ -760,7 +760,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def detail_url(self, detail_url):
         r"""Sets the detail_url of this ShowPipelineRunDetailResponse.
 
-        详情页地址
+        **参数解释**： 详情页地址。 **取值范围**： 不涉及。 
 
         :param detail_url: The detail_url of this ShowPipelineRunDetailResponse.
         :type detail_url: str
@@ -771,7 +771,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def current_system_time(self):
         r"""Gets the current_system_time of this ShowPipelineRunDetailResponse.
 
-        当前系统时间
+        **参数解释**： 当前系统时间。 **取值范围**： 不涉及。 
 
         :return: The current_system_time of this ShowPipelineRunDetailResponse.
         :rtype: int
@@ -782,7 +782,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     def current_system_time(self, current_system_time):
         r"""Sets the current_system_time of this ShowPipelineRunDetailResponse.
 
-        当前系统时间
+        **参数解释**： 当前系统时间。 **取值范围**： 不涉及。 
 
         :param current_system_time: The current_system_time of this ShowPipelineRunDetailResponse.
         :type current_system_time: int

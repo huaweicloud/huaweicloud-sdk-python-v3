@@ -57,35 +57,35 @@ class PublisherVO:
 
         The model defined in huaweicloud sdk
 
-        :param publisher_unique_id: 发布商ID
+        :param publisher_unique_id: **参数解释**： 发布商ID。可通过[查询发布商详情](ShowPublisher.xml)查询。 **取值范围**： 不涉及。 
         :type publisher_unique_id: str
-        :param user_id: 用户ID
+        :param user_id: **参数解释**： 用户ID。 **取值范围**： 不涉及。 
         :type user_id: str
-        :param tenant_id: 租户ID
+        :param tenant_id: **参数解释**： 租户ID。 **取值范围**： 不涉及。 
         :type tenant_id: str
-        :param description: 描述
+        :param description: **参数解释**： 发布商描述。 **取值范围**： 不涉及。 
         :type description: str
-        :param logo_url: 图标URL
+        :param logo_url: **参数解释**： 发布商图标URL。 **取值范围**： 不涉及。 
         :type logo_url: str
-        :param website: 网页地址
+        :param website: **参数解释**： 创建发布商时填入的网页地址。 **取值范围**： 不涉及。 
         :type website: str
-        :param support_url: 地址
+        :param support_url: **参数解释**： 创建发布商时填入的帮助地址。 **取值范围**： 不涉及。 
         :type support_url: str
-        :param source_url: 地址
+        :param source_url: **参数解释**： 创建发布商时填入的源地址。 **取值范围**： 不涉及。 
         :type source_url: str
-        :param en_name: 英文名
+        :param en_name: **参数解释**： 发布商英文名。 **取值范围**： 不涉及。 
         :type en_name: str
-        :param name: 名称
+        :param name: **参数解释**： 发布商中文名。 **取值范围**： 不涉及。 
         :type name: str
-        :param auth_status: 授权状态
+        :param auth_status: **参数解释**： 授权状态。 **取值范围**： 不涉及。 
         :type auth_status: str
-        :param is_delete: 是否删除
+        :param is_delete: **参数解释**： 是否删除。 **取值范围**： - 0：未删除。 - 1：已删除。 
         :type is_delete: int
-        :param last_update_user_name: 最后更新人
+        :param last_update_user_name: **参数解释**： 最后更新人名称。 **取值范围**： 不涉及。 
         :type last_update_user_name: str
-        :param last_update_user_id: 最后更新人ID
+        :param last_update_user_id: **参数解释**： 最后更新人用户ID。 **取值范围**： 不涉及。 
         :type last_update_user_id: str
-        :param last_update_time: 最后更新时间
+        :param last_update_time: **参数解释**： 最后更新时间。 **取值范围**： 不涉及。 
         :type last_update_time: str
         """
         
@@ -143,7 +143,7 @@ class PublisherVO:
     def publisher_unique_id(self):
         r"""Gets the publisher_unique_id of this PublisherVO.
 
-        发布商ID
+        **参数解释**： 发布商ID。可通过[查询发布商详情](ShowPublisher.xml)查询。 **取值范围**： 不涉及。 
 
         :return: The publisher_unique_id of this PublisherVO.
         :rtype: str
@@ -154,7 +154,7 @@ class PublisherVO:
     def publisher_unique_id(self, publisher_unique_id):
         r"""Sets the publisher_unique_id of this PublisherVO.
 
-        发布商ID
+        **参数解释**： 发布商ID。可通过[查询发布商详情](ShowPublisher.xml)查询。 **取值范围**： 不涉及。 
 
         :param publisher_unique_id: The publisher_unique_id of this PublisherVO.
         :type publisher_unique_id: str
@@ -165,7 +165,7 @@ class PublisherVO:
     def user_id(self):
         r"""Gets the user_id of this PublisherVO.
 
-        用户ID
+        **参数解释**： 用户ID。 **取值范围**： 不涉及。 
 
         :return: The user_id of this PublisherVO.
         :rtype: str
@@ -176,7 +176,7 @@ class PublisherVO:
     def user_id(self, user_id):
         r"""Sets the user_id of this PublisherVO.
 
-        用户ID
+        **参数解释**： 用户ID。 **取值范围**： 不涉及。 
 
         :param user_id: The user_id of this PublisherVO.
         :type user_id: str
@@ -187,7 +187,7 @@ class PublisherVO:
     def tenant_id(self):
         r"""Gets the tenant_id of this PublisherVO.
 
-        租户ID
+        **参数解释**： 租户ID。 **取值范围**： 不涉及。 
 
         :return: The tenant_id of this PublisherVO.
         :rtype: str
@@ -198,7 +198,7 @@ class PublisherVO:
     def tenant_id(self, tenant_id):
         r"""Sets the tenant_id of this PublisherVO.
 
-        租户ID
+        **参数解释**： 租户ID。 **取值范围**： 不涉及。 
 
         :param tenant_id: The tenant_id of this PublisherVO.
         :type tenant_id: str
@@ -209,7 +209,7 @@ class PublisherVO:
     def description(self):
         r"""Gets the description of this PublisherVO.
 
-        描述
+        **参数解释**： 发布商描述。 **取值范围**： 不涉及。 
 
         :return: The description of this PublisherVO.
         :rtype: str
@@ -220,7 +220,7 @@ class PublisherVO:
     def description(self, description):
         r"""Sets the description of this PublisherVO.
 
-        描述
+        **参数解释**： 发布商描述。 **取值范围**： 不涉及。 
 
         :param description: The description of this PublisherVO.
         :type description: str
@@ -231,7 +231,7 @@ class PublisherVO:
     def logo_url(self):
         r"""Gets the logo_url of this PublisherVO.
 
-        图标URL
+        **参数解释**： 发布商图标URL。 **取值范围**： 不涉及。 
 
         :return: The logo_url of this PublisherVO.
         :rtype: str
@@ -242,7 +242,7 @@ class PublisherVO:
     def logo_url(self, logo_url):
         r"""Sets the logo_url of this PublisherVO.
 
-        图标URL
+        **参数解释**： 发布商图标URL。 **取值范围**： 不涉及。 
 
         :param logo_url: The logo_url of this PublisherVO.
         :type logo_url: str
@@ -253,7 +253,7 @@ class PublisherVO:
     def website(self):
         r"""Gets the website of this PublisherVO.
 
-        网页地址
+        **参数解释**： 创建发布商时填入的网页地址。 **取值范围**： 不涉及。 
 
         :return: The website of this PublisherVO.
         :rtype: str
@@ -264,7 +264,7 @@ class PublisherVO:
     def website(self, website):
         r"""Sets the website of this PublisherVO.
 
-        网页地址
+        **参数解释**： 创建发布商时填入的网页地址。 **取值范围**： 不涉及。 
 
         :param website: The website of this PublisherVO.
         :type website: str
@@ -275,7 +275,7 @@ class PublisherVO:
     def support_url(self):
         r"""Gets the support_url of this PublisherVO.
 
-        地址
+        **参数解释**： 创建发布商时填入的帮助地址。 **取值范围**： 不涉及。 
 
         :return: The support_url of this PublisherVO.
         :rtype: str
@@ -286,7 +286,7 @@ class PublisherVO:
     def support_url(self, support_url):
         r"""Sets the support_url of this PublisherVO.
 
-        地址
+        **参数解释**： 创建发布商时填入的帮助地址。 **取值范围**： 不涉及。 
 
         :param support_url: The support_url of this PublisherVO.
         :type support_url: str
@@ -297,7 +297,7 @@ class PublisherVO:
     def source_url(self):
         r"""Gets the source_url of this PublisherVO.
 
-        地址
+        **参数解释**： 创建发布商时填入的源地址。 **取值范围**： 不涉及。 
 
         :return: The source_url of this PublisherVO.
         :rtype: str
@@ -308,7 +308,7 @@ class PublisherVO:
     def source_url(self, source_url):
         r"""Sets the source_url of this PublisherVO.
 
-        地址
+        **参数解释**： 创建发布商时填入的源地址。 **取值范围**： 不涉及。 
 
         :param source_url: The source_url of this PublisherVO.
         :type source_url: str
@@ -319,7 +319,7 @@ class PublisherVO:
     def en_name(self):
         r"""Gets the en_name of this PublisherVO.
 
-        英文名
+        **参数解释**： 发布商英文名。 **取值范围**： 不涉及。 
 
         :return: The en_name of this PublisherVO.
         :rtype: str
@@ -330,7 +330,7 @@ class PublisherVO:
     def en_name(self, en_name):
         r"""Sets the en_name of this PublisherVO.
 
-        英文名
+        **参数解释**： 发布商英文名。 **取值范围**： 不涉及。 
 
         :param en_name: The en_name of this PublisherVO.
         :type en_name: str
@@ -341,7 +341,7 @@ class PublisherVO:
     def name(self):
         r"""Gets the name of this PublisherVO.
 
-        名称
+        **参数解释**： 发布商中文名。 **取值范围**： 不涉及。 
 
         :return: The name of this PublisherVO.
         :rtype: str
@@ -352,7 +352,7 @@ class PublisherVO:
     def name(self, name):
         r"""Sets the name of this PublisherVO.
 
-        名称
+        **参数解释**： 发布商中文名。 **取值范围**： 不涉及。 
 
         :param name: The name of this PublisherVO.
         :type name: str
@@ -363,7 +363,7 @@ class PublisherVO:
     def auth_status(self):
         r"""Gets the auth_status of this PublisherVO.
 
-        授权状态
+        **参数解释**： 授权状态。 **取值范围**： 不涉及。 
 
         :return: The auth_status of this PublisherVO.
         :rtype: str
@@ -374,7 +374,7 @@ class PublisherVO:
     def auth_status(self, auth_status):
         r"""Sets the auth_status of this PublisherVO.
 
-        授权状态
+        **参数解释**： 授权状态。 **取值范围**： 不涉及。 
 
         :param auth_status: The auth_status of this PublisherVO.
         :type auth_status: str
@@ -385,7 +385,7 @@ class PublisherVO:
     def is_delete(self):
         r"""Gets the is_delete of this PublisherVO.
 
-        是否删除
+        **参数解释**： 是否删除。 **取值范围**： - 0：未删除。 - 1：已删除。 
 
         :return: The is_delete of this PublisherVO.
         :rtype: int
@@ -396,7 +396,7 @@ class PublisherVO:
     def is_delete(self, is_delete):
         r"""Sets the is_delete of this PublisherVO.
 
-        是否删除
+        **参数解释**： 是否删除。 **取值范围**： - 0：未删除。 - 1：已删除。 
 
         :param is_delete: The is_delete of this PublisherVO.
         :type is_delete: int
@@ -407,7 +407,7 @@ class PublisherVO:
     def last_update_user_name(self):
         r"""Gets the last_update_user_name of this PublisherVO.
 
-        最后更新人
+        **参数解释**： 最后更新人名称。 **取值范围**： 不涉及。 
 
         :return: The last_update_user_name of this PublisherVO.
         :rtype: str
@@ -418,7 +418,7 @@ class PublisherVO:
     def last_update_user_name(self, last_update_user_name):
         r"""Sets the last_update_user_name of this PublisherVO.
 
-        最后更新人
+        **参数解释**： 最后更新人名称。 **取值范围**： 不涉及。 
 
         :param last_update_user_name: The last_update_user_name of this PublisherVO.
         :type last_update_user_name: str
@@ -429,7 +429,7 @@ class PublisherVO:
     def last_update_user_id(self):
         r"""Gets the last_update_user_id of this PublisherVO.
 
-        最后更新人ID
+        **参数解释**： 最后更新人用户ID。 **取值范围**： 不涉及。 
 
         :return: The last_update_user_id of this PublisherVO.
         :rtype: str
@@ -440,7 +440,7 @@ class PublisherVO:
     def last_update_user_id(self, last_update_user_id):
         r"""Sets the last_update_user_id of this PublisherVO.
 
-        最后更新人ID
+        **参数解释**： 最后更新人用户ID。 **取值范围**： 不涉及。 
 
         :param last_update_user_id: The last_update_user_id of this PublisherVO.
         :type last_update_user_id: str
@@ -451,7 +451,7 @@ class PublisherVO:
     def last_update_time(self):
         r"""Gets the last_update_time of this PublisherVO.
 
-        最后更新时间
+        **参数解释**： 最后更新时间。 **取值范围**： 不涉及。 
 
         :return: The last_update_time of this PublisherVO.
         :rtype: str
@@ -462,7 +462,7 @@ class PublisherVO:
     def last_update_time(self, last_update_time):
         r"""Sets the last_update_time of this PublisherVO.
 
-        最后更新时间
+        **参数解释**： 最后更新时间。 **取值范围**： 不涉及。 
 
         :param last_update_time: The last_update_time of this PublisherVO.
         :type last_update_time: str

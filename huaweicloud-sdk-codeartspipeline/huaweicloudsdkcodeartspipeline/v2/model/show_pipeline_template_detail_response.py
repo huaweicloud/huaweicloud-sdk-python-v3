@@ -30,8 +30,6 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
         'variables': 'list[CustomVariable]',
         'creator_id': 'str',
         'updater_id': 'str',
-        'create_time': 'int',
-        'update_time': 'int',
         'is_collect': 'str',
         'is_show_source': 'bool',
         'definition': 'str'
@@ -50,51 +48,45 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
         'variables': 'variables',
         'creator_id': 'creator_id',
         'updater_id': 'updater_id',
-        'create_time': 'create_time',
-        'update_time': 'update_time',
         'is_collect': 'is_collect',
         'is_show_source': 'is_show_source',
         'definition': 'definition'
     }
 
-    def __init__(self, id=None, name=None, icon=None, manifest_version=None, language=None, description=None, is_system=None, region=None, domain_id=None, variables=None, creator_id=None, updater_id=None, create_time=None, update_time=None, is_collect=None, is_show_source=None, definition=None):
+    def __init__(self, id=None, name=None, icon=None, manifest_version=None, language=None, description=None, is_system=None, region=None, domain_id=None, variables=None, creator_id=None, updater_id=None, is_collect=None, is_show_source=None, definition=None):
         r"""ShowPipelineTemplateDetailResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 模板ID
+        :param id: **参数解释**： 模板ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type id: str
-        :param name: 模板名称
+        :param name: **参数解释**： 模板名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param icon: 模板图标
+        :param icon: **参数解释**： 模板图标。 **取值范围**： 不涉及。 
         :type icon: str
-        :param manifest_version: 流水线结构定义版本，新版默认为3.0
+        :param manifest_version: **参数解释**： 版本。 **取值范围**： 默认3.0。 
         :type manifest_version: str
-        :param language: 模板语言
+        :param language: **参数解释**： 模板语言。 **取值范围**： - java。 - python。 - nodejs。 - go。 - net。 - cpp。 - php。 - other。 - none。 
         :type language: str
-        :param description: 模板描述
+        :param description: **参数解释**： 模板描述。 **取值范围**： 不涉及。 
         :type description: str
-        :param is_system: 是否系统模板
+        :param is_system: **参数解释**： 是否系统模板。 **取值范围**： - true：是系统模板。 - false：不是系统模板。 
         :type is_system: bool
-        :param region: 所属局点
+        :param region: **参数解释**： 模板局点。 **取值范围**： 不涉及。 
         :type region: str
-        :param domain_id: 所属租户ID
+        :param domain_id: **参数解释**： 模板所属租户ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type domain_id: str
-        :param variables: 使用的自定义参数
+        :param variables: **参数解释**： 自定义参数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.CustomVariable`]
-        :param creator_id: 创建人ID
+        :param creator_id: **参数解释**： 模板创建人ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type creator_id: str
-        :param updater_id: 编辑人ID
+        :param updater_id: **参数解释**： 模板更新人ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type updater_id: str
-        :param create_time: 创建日期
-        :type create_time: int
-        :param update_time: 更新日期
-        :type update_time: int
-        :param is_collect: 是否收藏
+        :param is_collect: **参数解释**： 是否收藏。 **取值范围**： - true：收藏。 - false：不收藏。 
         :type is_collect: str
-        :param is_show_source: 是否显示流水线源
+        :param is_show_source: **参数解释**： 是否展示流水线源。 **取值范围**： - true：展示流水线源。 - false：不展示流水线源。 
         :type is_show_source: bool
-        :param definition: 模板编排json，包含stages
+        :param definition: **参数解释**： 模板编排json，包含stages。 **取值范围**： 不涉及。 
         :type definition: str
         """
         
@@ -112,8 +104,6 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
         self._variables = None
         self._creator_id = None
         self._updater_id = None
-        self._create_time = None
-        self._update_time = None
         self._is_collect = None
         self._is_show_source = None
         self._definition = None
@@ -143,10 +133,6 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
             self.creator_id = creator_id
         if updater_id is not None:
             self.updater_id = updater_id
-        if create_time is not None:
-            self.create_time = create_time
-        if update_time is not None:
-            self.update_time = update_time
         if is_collect is not None:
             self.is_collect = is_collect
         if is_show_source is not None:
@@ -158,7 +144,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this ShowPipelineTemplateDetailResponse.
 
-        模板ID
+        **参数解释**： 模板ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The id of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -169,7 +155,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowPipelineTemplateDetailResponse.
 
-        模板ID
+        **参数解释**： 模板ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param id: The id of this ShowPipelineTemplateDetailResponse.
         :type id: str
@@ -180,7 +166,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowPipelineTemplateDetailResponse.
 
-        模板名称
+        **参数解释**： 模板名称。 **取值范围**： 不涉及。 
 
         :return: The name of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -191,7 +177,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowPipelineTemplateDetailResponse.
 
-        模板名称
+        **参数解释**： 模板名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this ShowPipelineTemplateDetailResponse.
         :type name: str
@@ -202,7 +188,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def icon(self):
         r"""Gets the icon of this ShowPipelineTemplateDetailResponse.
 
-        模板图标
+        **参数解释**： 模板图标。 **取值范围**： 不涉及。 
 
         :return: The icon of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -213,7 +199,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def icon(self, icon):
         r"""Sets the icon of this ShowPipelineTemplateDetailResponse.
 
-        模板图标
+        **参数解释**： 模板图标。 **取值范围**： 不涉及。 
 
         :param icon: The icon of this ShowPipelineTemplateDetailResponse.
         :type icon: str
@@ -224,7 +210,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def manifest_version(self):
         r"""Gets the manifest_version of this ShowPipelineTemplateDetailResponse.
 
-        流水线结构定义版本，新版默认为3.0
+        **参数解释**： 版本。 **取值范围**： 默认3.0。 
 
         :return: The manifest_version of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -235,7 +221,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def manifest_version(self, manifest_version):
         r"""Sets the manifest_version of this ShowPipelineTemplateDetailResponse.
 
-        流水线结构定义版本，新版默认为3.0
+        **参数解释**： 版本。 **取值范围**： 默认3.0。 
 
         :param manifest_version: The manifest_version of this ShowPipelineTemplateDetailResponse.
         :type manifest_version: str
@@ -246,7 +232,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def language(self):
         r"""Gets the language of this ShowPipelineTemplateDetailResponse.
 
-        模板语言
+        **参数解释**： 模板语言。 **取值范围**： - java。 - python。 - nodejs。 - go。 - net。 - cpp。 - php。 - other。 - none。 
 
         :return: The language of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -257,7 +243,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def language(self, language):
         r"""Sets the language of this ShowPipelineTemplateDetailResponse.
 
-        模板语言
+        **参数解释**： 模板语言。 **取值范围**： - java。 - python。 - nodejs。 - go。 - net。 - cpp。 - php。 - other。 - none。 
 
         :param language: The language of this ShowPipelineTemplateDetailResponse.
         :type language: str
@@ -268,7 +254,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowPipelineTemplateDetailResponse.
 
-        模板描述
+        **参数解释**： 模板描述。 **取值范围**： 不涉及。 
 
         :return: The description of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -279,7 +265,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowPipelineTemplateDetailResponse.
 
-        模板描述
+        **参数解释**： 模板描述。 **取值范围**： 不涉及。 
 
         :param description: The description of this ShowPipelineTemplateDetailResponse.
         :type description: str
@@ -290,7 +276,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def is_system(self):
         r"""Gets the is_system of this ShowPipelineTemplateDetailResponse.
 
-        是否系统模板
+        **参数解释**： 是否系统模板。 **取值范围**： - true：是系统模板。 - false：不是系统模板。 
 
         :return: The is_system of this ShowPipelineTemplateDetailResponse.
         :rtype: bool
@@ -301,7 +287,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def is_system(self, is_system):
         r"""Sets the is_system of this ShowPipelineTemplateDetailResponse.
 
-        是否系统模板
+        **参数解释**： 是否系统模板。 **取值范围**： - true：是系统模板。 - false：不是系统模板。 
 
         :param is_system: The is_system of this ShowPipelineTemplateDetailResponse.
         :type is_system: bool
@@ -312,7 +298,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def region(self):
         r"""Gets the region of this ShowPipelineTemplateDetailResponse.
 
-        所属局点
+        **参数解释**： 模板局点。 **取值范围**： 不涉及。 
 
         :return: The region of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -323,7 +309,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def region(self, region):
         r"""Sets the region of this ShowPipelineTemplateDetailResponse.
 
-        所属局点
+        **参数解释**： 模板局点。 **取值范围**： 不涉及。 
 
         :param region: The region of this ShowPipelineTemplateDetailResponse.
         :type region: str
@@ -334,7 +320,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def domain_id(self):
         r"""Gets the domain_id of this ShowPipelineTemplateDetailResponse.
 
-        所属租户ID
+        **参数解释**： 模板所属租户ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The domain_id of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -345,7 +331,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def domain_id(self, domain_id):
         r"""Sets the domain_id of this ShowPipelineTemplateDetailResponse.
 
-        所属租户ID
+        **参数解释**： 模板所属租户ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param domain_id: The domain_id of this ShowPipelineTemplateDetailResponse.
         :type domain_id: str
@@ -356,7 +342,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def variables(self):
         r"""Gets the variables of this ShowPipelineTemplateDetailResponse.
 
-        使用的自定义参数
+        **参数解释**： 自定义参数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The variables of this ShowPipelineTemplateDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.CustomVariable`]
@@ -367,7 +353,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def variables(self, variables):
         r"""Sets the variables of this ShowPipelineTemplateDetailResponse.
 
-        使用的自定义参数
+        **参数解释**： 自定义参数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param variables: The variables of this ShowPipelineTemplateDetailResponse.
         :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.CustomVariable`]
@@ -378,7 +364,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def creator_id(self):
         r"""Gets the creator_id of this ShowPipelineTemplateDetailResponse.
 
-        创建人ID
+        **参数解释**： 模板创建人ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The creator_id of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -389,7 +375,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def creator_id(self, creator_id):
         r"""Sets the creator_id of this ShowPipelineTemplateDetailResponse.
 
-        创建人ID
+        **参数解释**： 模板创建人ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param creator_id: The creator_id of this ShowPipelineTemplateDetailResponse.
         :type creator_id: str
@@ -400,7 +386,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def updater_id(self):
         r"""Gets the updater_id of this ShowPipelineTemplateDetailResponse.
 
-        编辑人ID
+        **参数解释**： 模板更新人ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The updater_id of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -411,7 +397,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def updater_id(self, updater_id):
         r"""Sets the updater_id of this ShowPipelineTemplateDetailResponse.
 
-        编辑人ID
+        **参数解释**： 模板更新人ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param updater_id: The updater_id of this ShowPipelineTemplateDetailResponse.
         :type updater_id: str
@@ -419,54 +405,10 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
         self._updater_id = updater_id
 
     @property
-    def create_time(self):
-        r"""Gets the create_time of this ShowPipelineTemplateDetailResponse.
-
-        创建日期
-
-        :return: The create_time of this ShowPipelineTemplateDetailResponse.
-        :rtype: int
-        """
-        return self._create_time
-
-    @create_time.setter
-    def create_time(self, create_time):
-        r"""Sets the create_time of this ShowPipelineTemplateDetailResponse.
-
-        创建日期
-
-        :param create_time: The create_time of this ShowPipelineTemplateDetailResponse.
-        :type create_time: int
-        """
-        self._create_time = create_time
-
-    @property
-    def update_time(self):
-        r"""Gets the update_time of this ShowPipelineTemplateDetailResponse.
-
-        更新日期
-
-        :return: The update_time of this ShowPipelineTemplateDetailResponse.
-        :rtype: int
-        """
-        return self._update_time
-
-    @update_time.setter
-    def update_time(self, update_time):
-        r"""Sets the update_time of this ShowPipelineTemplateDetailResponse.
-
-        更新日期
-
-        :param update_time: The update_time of this ShowPipelineTemplateDetailResponse.
-        :type update_time: int
-        """
-        self._update_time = update_time
-
-    @property
     def is_collect(self):
         r"""Gets the is_collect of this ShowPipelineTemplateDetailResponse.
 
-        是否收藏
+        **参数解释**： 是否收藏。 **取值范围**： - true：收藏。 - false：不收藏。 
 
         :return: The is_collect of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -477,7 +419,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def is_collect(self, is_collect):
         r"""Sets the is_collect of this ShowPipelineTemplateDetailResponse.
 
-        是否收藏
+        **参数解释**： 是否收藏。 **取值范围**： - true：收藏。 - false：不收藏。 
 
         :param is_collect: The is_collect of this ShowPipelineTemplateDetailResponse.
         :type is_collect: str
@@ -488,7 +430,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def is_show_source(self):
         r"""Gets the is_show_source of this ShowPipelineTemplateDetailResponse.
 
-        是否显示流水线源
+        **参数解释**： 是否展示流水线源。 **取值范围**： - true：展示流水线源。 - false：不展示流水线源。 
 
         :return: The is_show_source of this ShowPipelineTemplateDetailResponse.
         :rtype: bool
@@ -499,7 +441,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def is_show_source(self, is_show_source):
         r"""Sets the is_show_source of this ShowPipelineTemplateDetailResponse.
 
-        是否显示流水线源
+        **参数解释**： 是否展示流水线源。 **取值范围**： - true：展示流水线源。 - false：不展示流水线源。 
 
         :param is_show_source: The is_show_source of this ShowPipelineTemplateDetailResponse.
         :type is_show_source: bool
@@ -510,7 +452,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def definition(self):
         r"""Gets the definition of this ShowPipelineTemplateDetailResponse.
 
-        模板编排json，包含stages
+        **参数解释**： 模板编排json，包含stages。 **取值范围**： 不涉及。 
 
         :return: The definition of this ShowPipelineTemplateDetailResponse.
         :rtype: str
@@ -521,7 +463,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     def definition(self, definition):
         r"""Sets the definition of this ShowPipelineTemplateDetailResponse.
 
-        模板编排json，包含stages
+        **参数解释**： 模板编排json，包含stages。 **取值范围**： 不涉及。 
 
         :param definition: The definition of this ShowPipelineTemplateDetailResponse.
         :type definition: str

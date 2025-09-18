@@ -69,7 +69,7 @@ class TemplateState:
         :type display_name: str
         :param dsl_method: 流水线可挂载任务类型
         :type dsl_method: str
-        :param parameters: 任务参数,map类型数据
+        :param parameters: 任务参数，map类型数据
         :type parameters: dict(str, object)
         :param is_manual_execution: 是否手动执行
         :type is_manual_execution: bool
@@ -260,7 +260,7 @@ class TemplateState:
     def parameters(self):
         r"""Gets the parameters of this TemplateState.
 
-        任务参数,map类型数据
+        任务参数，map类型数据
 
         :return: The parameters of this TemplateState.
         :rtype: dict(str, object)
@@ -271,7 +271,7 @@ class TemplateState:
     def parameters(self, parameters):
         r"""Sets the parameters of this TemplateState.
 
-        任务参数,map类型数据
+        任务参数，map类型数据
 
         :param parameters: The parameters of this TemplateState.
         :type parameters: dict(str, object)

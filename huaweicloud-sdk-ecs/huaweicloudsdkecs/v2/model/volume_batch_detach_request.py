@@ -38,8 +38,7 @@ class VolumeBatchDetachRequest:
         self._serverinfo = None
         self.discriminator = None
 
-        if serverinfo is not None:
-            self.serverinfo = serverinfo
+        self.serverinfo = serverinfo
 
     @property
     def serverinfo(self):

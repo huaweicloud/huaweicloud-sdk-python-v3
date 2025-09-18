@@ -33,11 +33,11 @@ class PipelineMoveToGroupResponseVo:
 
         The model defined in huaweicloud sdk
 
-        :param code: 响应码 [\&quot;failed\&quot;, \&quot;success\&quot;]
+        :param code: **参数解释**： 响应码。 **取值范围**： - failed：失败。 - success：成功。 
         :type code: str
-        :param pipeline_id: 流水线ID
+        :param pipeline_id: **参数解释**： 流水线ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type pipeline_id: str
-        :param pipeline_name: 流水线名
+        :param pipeline_name: **参数解释**： 流水线名。 **取值范围**： 不涉及。 
         :type pipeline_name: str
         """
         
@@ -56,7 +56,7 @@ class PipelineMoveToGroupResponseVo:
     def code(self):
         r"""Gets the code of this PipelineMoveToGroupResponseVo.
 
-        响应码 [\"failed\", \"success\"]
+        **参数解释**： 响应码。 **取值范围**： - failed：失败。 - success：成功。 
 
         :return: The code of this PipelineMoveToGroupResponseVo.
         :rtype: str
@@ -67,7 +67,7 @@ class PipelineMoveToGroupResponseVo:
     def code(self, code):
         r"""Sets the code of this PipelineMoveToGroupResponseVo.
 
-        响应码 [\"failed\", \"success\"]
+        **参数解释**： 响应码。 **取值范围**： - failed：失败。 - success：成功。 
 
         :param code: The code of this PipelineMoveToGroupResponseVo.
         :type code: str
@@ -78,7 +78,7 @@ class PipelineMoveToGroupResponseVo:
     def pipeline_id(self):
         r"""Gets the pipeline_id of this PipelineMoveToGroupResponseVo.
 
-        流水线ID
+        **参数解释**： 流水线ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The pipeline_id of this PipelineMoveToGroupResponseVo.
         :rtype: str
@@ -89,7 +89,7 @@ class PipelineMoveToGroupResponseVo:
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this PipelineMoveToGroupResponseVo.
 
-        流水线ID
+        **参数解释**： 流水线ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param pipeline_id: The pipeline_id of this PipelineMoveToGroupResponseVo.
         :type pipeline_id: str
@@ -100,7 +100,7 @@ class PipelineMoveToGroupResponseVo:
     def pipeline_name(self):
         r"""Gets the pipeline_name of this PipelineMoveToGroupResponseVo.
 
-        流水线名
+        **参数解释**： 流水线名。 **取值范围**： 不涉及。 
 
         :return: The pipeline_name of this PipelineMoveToGroupResponseVo.
         :rtype: str
@@ -111,7 +111,7 @@ class PipelineMoveToGroupResponseVo:
     def pipeline_name(self, pipeline_name):
         r"""Sets the pipeline_name of this PipelineMoveToGroupResponseVo.
 
-        流水线名
+        **参数解释**： 流水线名。 **取值范围**： 不涉及。 
 
         :param pipeline_name: The pipeline_name of this PipelineMoveToGroupResponseVo.
         :type pipeline_name: str

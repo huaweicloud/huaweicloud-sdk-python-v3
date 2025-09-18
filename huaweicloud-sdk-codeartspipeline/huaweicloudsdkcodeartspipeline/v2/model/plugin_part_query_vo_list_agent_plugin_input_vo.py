@@ -33,11 +33,11 @@ class PluginPartQueryVOListAgentPluginInputVO:
 
         The model defined in huaweicloud sdk
 
-        :param plugin_name: 插件名
+        :param plugin_name: **参数解释**： 扩展插件名称。 **取值范围**： 1到50位字符。 
         :type plugin_name: str
-        :param display_name: 展示名
+        :param display_name: **参数解释**： 扩展插件展示名称。 **取值范围**： 不涉及。 
         :type display_name: str
-        :param data: 结果集
+        :param data: **参数解释**： 插件输入项详细信息。 **取值范围**： 不涉及。 
         :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginPartQueryVOListAgentPluginInputVOData`]
         """
         
@@ -59,7 +59,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
     def plugin_name(self):
         r"""Gets the plugin_name of this PluginPartQueryVOListAgentPluginInputVO.
 
-        插件名
+        **参数解释**： 扩展插件名称。 **取值范围**： 1到50位字符。 
 
         :return: The plugin_name of this PluginPartQueryVOListAgentPluginInputVO.
         :rtype: str
@@ -70,7 +70,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this PluginPartQueryVOListAgentPluginInputVO.
 
-        插件名
+        **参数解释**： 扩展插件名称。 **取值范围**： 1到50位字符。 
 
         :param plugin_name: The plugin_name of this PluginPartQueryVOListAgentPluginInputVO.
         :type plugin_name: str
@@ -81,7 +81,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
     def display_name(self):
         r"""Gets the display_name of this PluginPartQueryVOListAgentPluginInputVO.
 
-        展示名
+        **参数解释**： 扩展插件展示名称。 **取值范围**： 不涉及。 
 
         :return: The display_name of this PluginPartQueryVOListAgentPluginInputVO.
         :rtype: str
@@ -92,7 +92,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
     def display_name(self, display_name):
         r"""Sets the display_name of this PluginPartQueryVOListAgentPluginInputVO.
 
-        展示名
+        **参数解释**： 扩展插件展示名称。 **取值范围**： 不涉及。 
 
         :param display_name: The display_name of this PluginPartQueryVOListAgentPluginInputVO.
         :type display_name: str
@@ -103,7 +103,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
     def data(self):
         r"""Gets the data of this PluginPartQueryVOListAgentPluginInputVO.
 
-        结果集
+        **参数解释**： 插件输入项详细信息。 **取值范围**： 不涉及。 
 
         :return: The data of this PluginPartQueryVOListAgentPluginInputVO.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginPartQueryVOListAgentPluginInputVOData`]
@@ -114,7 +114,7 @@ class PluginPartQueryVOListAgentPluginInputVO:
     def data(self, data):
         r"""Sets the data of this PluginPartQueryVOListAgentPluginInputVO.
 
-        结果集
+        **参数解释**： 插件输入项详细信息。 **取值范围**： 不涉及。 
 
         :param data: The data of this PluginPartQueryVOListAgentPluginInputVO.
         :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginPartQueryVOListAgentPluginInputVOData`]

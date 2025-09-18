@@ -31,7 +31,7 @@ class RunPipelineSource:
 
         The model defined in huaweicloud sdk
 
-        :param type: 源类型
+        :param type: **参数解释**： 源类型。 **取值范围**： 目前支持code - 代码源类型。 
         :type type: str
         :param params: 
         :type params: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineSourceParams`
@@ -52,7 +52,7 @@ class RunPipelineSource:
     def type(self):
         r"""Gets the type of this RunPipelineSource.
 
-        源类型
+        **参数解释**： 源类型。 **取值范围**： 目前支持code - 代码源类型。 
 
         :return: The type of this RunPipelineSource.
         :rtype: str
@@ -63,7 +63,7 @@ class RunPipelineSource:
     def type(self, type):
         r"""Sets the type of this RunPipelineSource.
 
-        源类型
+        **参数解释**： 源类型。 **取值范围**： 目前支持code - 代码源类型。 
 
         :param type: The type of this RunPipelineSource.
         :type type: str

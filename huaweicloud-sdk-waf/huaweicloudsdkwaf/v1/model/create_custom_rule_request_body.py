@@ -55,7 +55,7 @@ class CreateCustomRuleRequestBody:
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.CustomConditions`]
         :param action: 
         :type action: :class:`huaweicloudsdkwaf.v1.CustomAction`
-        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
         :type priority: int
         :param name: 规则名称
         :type name: str
@@ -217,7 +217,7 @@ class CreateCustomRuleRequestBody:
     def priority(self):
         r"""Gets the priority of this CreateCustomRuleRequestBody.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
 
         :return: The priority of this CreateCustomRuleRequestBody.
         :rtype: int
@@ -228,7 +228,7 @@ class CreateCustomRuleRequestBody:
     def priority(self, priority):
         r"""Sets the priority of this CreateCustomRuleRequestBody.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
 
         :param priority: The priority of this CreateCustomRuleRequestBody.
         :type priority: int

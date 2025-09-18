@@ -31,9 +31,9 @@ class CreateRuleSetReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 策略名称
+        :param name: **参数解释**： 策略名称 **约束限制**： 策略名称仅支持中文、大小写英文字母、数字、‘-’、‘_’。 **取值范围**： 不超过128个字符。 **默认取值**： 不涉及。 
         :type name: str
-        :param rules: 规则集合
+        :param rules: **参数解释**： 规则列表 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type rules: list[:class:`huaweicloudsdkcodeartspipeline.v2.RequestRuleInstance`]
         """
         
@@ -50,7 +50,7 @@ class CreateRuleSetReq:
     def name(self):
         r"""Gets the name of this CreateRuleSetReq.
 
-        策略名称
+        **参数解释**： 策略名称 **约束限制**： 策略名称仅支持中文、大小写英文字母、数字、‘-’、‘_’。 **取值范围**： 不超过128个字符。 **默认取值**： 不涉及。 
 
         :return: The name of this CreateRuleSetReq.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateRuleSetReq:
     def name(self, name):
         r"""Sets the name of this CreateRuleSetReq.
 
-        策略名称
+        **参数解释**： 策略名称 **约束限制**： 策略名称仅支持中文、大小写英文字母、数字、‘-’、‘_’。 **取值范围**： 不超过128个字符。 **默认取值**： 不涉及。 
 
         :param name: The name of this CreateRuleSetReq.
         :type name: str
@@ -72,7 +72,7 @@ class CreateRuleSetReq:
     def rules(self):
         r"""Gets the rules of this CreateRuleSetReq.
 
-        规则集合
+        **参数解释**： 规则列表 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The rules of this CreateRuleSetReq.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.RequestRuleInstance`]
@@ -83,7 +83,7 @@ class CreateRuleSetReq:
     def rules(self, rules):
         r"""Sets the rules of this CreateRuleSetReq.
 
-        规则集合
+        **参数解释**： 规则列表 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param rules: The rules of this CreateRuleSetReq.
         :type rules: list[:class:`huaweicloudsdkcodeartspipeline.v2.RequestRuleInstance`]

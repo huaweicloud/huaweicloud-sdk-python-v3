@@ -35,7 +35,8 @@ class QueryTranscodingsTaskResponse:
         'thumbnail_outputname': 'str',
         'pic_info': 'list[PicInfo]',
         'av_parameters': 'list[AvParameters]',
-        'additional_manifests': 'list[AdditionalManifests]'
+        'additional_manifests': 'list[AdditionalManifests]',
+        'metadata': 'list[FileMetaData]'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class QueryTranscodingsTaskResponse:
         'thumbnail_outputname': 'thumbnail_outputname',
         'pic_info': 'pic_info',
         'av_parameters': 'av_parameters',
-        'additional_manifests': 'additional_manifests'
+        'additional_manifests': 'additional_manifests',
+        'metadata': 'metadata'
     }
 
-    def __init__(self, task_id=None, status=None, progress=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, av_parameters=None, additional_manifests=None):
+    def __init__(self, task_id=None, status=None, progress=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, av_parameters=None, additional_manifests=None, metadata=None):
         r"""QueryTranscodingsTaskResponse
 
         The model defined in huaweicloud sdk
@@ -103,6 +105,8 @@ class QueryTranscodingsTaskResponse:
         :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         :param additional_manifests: 主索引定制参数。 
         :type additional_manifests: list[:class:`huaweicloudsdkmpc.v1.AdditionalManifests`]
+        :param metadata: 输出文件的metadata信息 
+        :type metadata: list[:class:`huaweicloudsdkmpc.v1.FileMetaData`]
         """
         
         
@@ -126,6 +130,7 @@ class QueryTranscodingsTaskResponse:
         self._pic_info = None
         self._av_parameters = None
         self._additional_manifests = None
+        self._metadata = None
         self.discriminator = None
 
         if task_id is not None:
@@ -166,6 +171,8 @@ class QueryTranscodingsTaskResponse:
             self.av_parameters = av_parameters
         if additional_manifests is not None:
             self.additional_manifests = additional_manifests
+        if metadata is not None:
+            self.metadata = metadata
 
     @property
     def task_id(self):
@@ -568,6 +575,28 @@ class QueryTranscodingsTaskResponse:
         :type additional_manifests: list[:class:`huaweicloudsdkmpc.v1.AdditionalManifests`]
         """
         self._additional_manifests = additional_manifests
+
+    @property
+    def metadata(self):
+        r"""Gets the metadata of this QueryTranscodingsTaskResponse.
+
+        输出文件的metadata信息 
+
+        :return: The metadata of this QueryTranscodingsTaskResponse.
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.FileMetaData`]
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        r"""Sets the metadata of this QueryTranscodingsTaskResponse.
+
+        输出文件的metadata信息 
+
+        :param metadata: The metadata of this QueryTranscodingsTaskResponse.
+        :type metadata: list[:class:`huaweicloudsdkmpc.v1.FileMetaData`]
+        """
+        self._metadata = metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

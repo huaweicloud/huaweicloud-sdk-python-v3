@@ -49,25 +49,25 @@ class RuleInstance:
 
         The model defined in huaweicloud sdk
 
-        :param id: 规则实例ID
+        :param id: **参数解释**： 规则实例ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type id: str
-        :param type: 规则类型ID
+        :param type: **参数解释**： 规则类型。 **取值范围**： 不涉及。 
         :type type: str
-        :param name: 规则名称
+        :param name: **参数解释**： 规则名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param version: 规则版本
+        :param version: **参数解释**： 规则版本。 **取值范围**： 不涉及。 
         :type version: str
-        :param plugin_id: 插件ID
+        :param plugin_id: **参数解释**： 插件ID。 **取值范围**： 不涉及。 
         :type plugin_id: str
-        :param plugin_name: 插件名称
+        :param plugin_name: **参数解释**： 插件名称。 **取值范围**： 不涉及。 
         :type plugin_name: str
-        :param plugin_version: 插件版本号
+        :param plugin_version: **参数解释**： 插件版本号。 **取值范围**： 不涉及。 
         :type plugin_version: str
-        :param is_valid: 是否生效
+        :param is_valid: **参数解释**： 规则是否生效。 **取值范围**： - true：规则生效。 - false：规则不生效。 
         :type is_valid: bool
-        :param editable: 是否可编辑
+        :param editable: **参数解释**： 规则是否可编辑。 **取值范围**： - true：规则可编辑。 - false：规则不可编辑。 
         :type editable: bool
-        :param content: 规则属性列表
+        :param content: **参数解释**： 规则实例集合。 **取值范围**： 不涉及。 
         :type content: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleInstanceContent`]
         :param parent: 
         :type parent: :class:`huaweicloudsdkcodeartspipeline.v2.RuleSet`
@@ -109,7 +109,7 @@ class RuleInstance:
     def id(self):
         r"""Gets the id of this RuleInstance.
 
-        规则实例ID
+        **参数解释**： 规则实例ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The id of this RuleInstance.
         :rtype: str
@@ -120,7 +120,7 @@ class RuleInstance:
     def id(self, id):
         r"""Sets the id of this RuleInstance.
 
-        规则实例ID
+        **参数解释**： 规则实例ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param id: The id of this RuleInstance.
         :type id: str
@@ -131,7 +131,7 @@ class RuleInstance:
     def type(self):
         r"""Gets the type of this RuleInstance.
 
-        规则类型ID
+        **参数解释**： 规则类型。 **取值范围**： 不涉及。 
 
         :return: The type of this RuleInstance.
         :rtype: str
@@ -142,7 +142,7 @@ class RuleInstance:
     def type(self, type):
         r"""Sets the type of this RuleInstance.
 
-        规则类型ID
+        **参数解释**： 规则类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this RuleInstance.
         :type type: str
@@ -153,7 +153,7 @@ class RuleInstance:
     def name(self):
         r"""Gets the name of this RuleInstance.
 
-        规则名称
+        **参数解释**： 规则名称。 **取值范围**： 不涉及。 
 
         :return: The name of this RuleInstance.
         :rtype: str
@@ -164,7 +164,7 @@ class RuleInstance:
     def name(self, name):
         r"""Sets the name of this RuleInstance.
 
-        规则名称
+        **参数解释**： 规则名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this RuleInstance.
         :type name: str
@@ -175,7 +175,7 @@ class RuleInstance:
     def version(self):
         r"""Gets the version of this RuleInstance.
 
-        规则版本
+        **参数解释**： 规则版本。 **取值范围**： 不涉及。 
 
         :return: The version of this RuleInstance.
         :rtype: str
@@ -186,7 +186,7 @@ class RuleInstance:
     def version(self, version):
         r"""Sets the version of this RuleInstance.
 
-        规则版本
+        **参数解释**： 规则版本。 **取值范围**： 不涉及。 
 
         :param version: The version of this RuleInstance.
         :type version: str
@@ -197,7 +197,7 @@ class RuleInstance:
     def plugin_id(self):
         r"""Gets the plugin_id of this RuleInstance.
 
-        插件ID
+        **参数解释**： 插件ID。 **取值范围**： 不涉及。 
 
         :return: The plugin_id of this RuleInstance.
         :rtype: str
@@ -208,7 +208,7 @@ class RuleInstance:
     def plugin_id(self, plugin_id):
         r"""Sets the plugin_id of this RuleInstance.
 
-        插件ID
+        **参数解释**： 插件ID。 **取值范围**： 不涉及。 
 
         :param plugin_id: The plugin_id of this RuleInstance.
         :type plugin_id: str
@@ -219,7 +219,7 @@ class RuleInstance:
     def plugin_name(self):
         r"""Gets the plugin_name of this RuleInstance.
 
-        插件名称
+        **参数解释**： 插件名称。 **取值范围**： 不涉及。 
 
         :return: The plugin_name of this RuleInstance.
         :rtype: str
@@ -230,7 +230,7 @@ class RuleInstance:
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this RuleInstance.
 
-        插件名称
+        **参数解释**： 插件名称。 **取值范围**： 不涉及。 
 
         :param plugin_name: The plugin_name of this RuleInstance.
         :type plugin_name: str
@@ -241,7 +241,7 @@ class RuleInstance:
     def plugin_version(self):
         r"""Gets the plugin_version of this RuleInstance.
 
-        插件版本号
+        **参数解释**： 插件版本号。 **取值范围**： 不涉及。 
 
         :return: The plugin_version of this RuleInstance.
         :rtype: str
@@ -252,7 +252,7 @@ class RuleInstance:
     def plugin_version(self, plugin_version):
         r"""Sets the plugin_version of this RuleInstance.
 
-        插件版本号
+        **参数解释**： 插件版本号。 **取值范围**： 不涉及。 
 
         :param plugin_version: The plugin_version of this RuleInstance.
         :type plugin_version: str
@@ -263,7 +263,7 @@ class RuleInstance:
     def is_valid(self):
         r"""Gets the is_valid of this RuleInstance.
 
-        是否生效
+        **参数解释**： 规则是否生效。 **取值范围**： - true：规则生效。 - false：规则不生效。 
 
         :return: The is_valid of this RuleInstance.
         :rtype: bool
@@ -274,7 +274,7 @@ class RuleInstance:
     def is_valid(self, is_valid):
         r"""Sets the is_valid of this RuleInstance.
 
-        是否生效
+        **参数解释**： 规则是否生效。 **取值范围**： - true：规则生效。 - false：规则不生效。 
 
         :param is_valid: The is_valid of this RuleInstance.
         :type is_valid: bool
@@ -285,7 +285,7 @@ class RuleInstance:
     def editable(self):
         r"""Gets the editable of this RuleInstance.
 
-        是否可编辑
+        **参数解释**： 规则是否可编辑。 **取值范围**： - true：规则可编辑。 - false：规则不可编辑。 
 
         :return: The editable of this RuleInstance.
         :rtype: bool
@@ -296,7 +296,7 @@ class RuleInstance:
     def editable(self, editable):
         r"""Sets the editable of this RuleInstance.
 
-        是否可编辑
+        **参数解释**： 规则是否可编辑。 **取值范围**： - true：规则可编辑。 - false：规则不可编辑。 
 
         :param editable: The editable of this RuleInstance.
         :type editable: bool
@@ -307,7 +307,7 @@ class RuleInstance:
     def content(self):
         r"""Gets the content of this RuleInstance.
 
-        规则属性列表
+        **参数解释**： 规则实例集合。 **取值范围**： 不涉及。 
 
         :return: The content of this RuleInstance.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleInstanceContent`]
@@ -318,7 +318,7 @@ class RuleInstance:
     def content(self, content):
         r"""Sets the content of this RuleInstance.
 
-        规则属性列表
+        **参数解释**： 规则实例集合。 **取值范围**： 不涉及。 
 
         :param content: The content of this RuleInstance.
         :type content: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleInstanceContent`]

@@ -23,8 +23,8 @@ class CloudConnectionRoute:
         'instance_id': 'str',
         'project_id': 'str',
         'region_id': 'str',
-        'type': 'str',
-        'destination': 'str'
+        'destination': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -34,11 +34,11 @@ class CloudConnectionRoute:
         'instance_id': 'instance_id',
         'project_id': 'project_id',
         'region_id': 'region_id',
-        'type': 'type',
-        'destination': 'destination'
+        'destination': 'destination',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, cloud_connection_id=None, domain_id=None, instance_id=None, project_id=None, region_id=None, type=None, destination=None):
+    def __init__(self, id=None, cloud_connection_id=None, domain_id=None, instance_id=None, project_id=None, region_id=None, destination=None, type=None):
         r"""CloudConnectionRoute
 
         The model defined in huaweicloud sdk
@@ -55,10 +55,10 @@ class CloudConnectionRoute:
         :type project_id: str
         :param region_id: RegionID。
         :type region_id: str
-        :param type: 路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
-        :type type: str
         :param destination: 目的地址。
         :type destination: str
+        :param type: 路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
+        :type type: str
         """
         
         
@@ -69,8 +69,8 @@ class CloudConnectionRoute:
         self._instance_id = None
         self._project_id = None
         self._region_id = None
-        self._type = None
         self._destination = None
+        self._type = None
         self.discriminator = None
 
         self.id = id
@@ -79,10 +79,9 @@ class CloudConnectionRoute:
         self.instance_id = instance_id
         self.project_id = project_id
         self.region_id = region_id
+        self.destination = destination
         if type is not None:
             self.type = type
-        if destination is not None:
-            self.destination = destination
 
     @property
     def id(self):
@@ -217,28 +216,6 @@ class CloudConnectionRoute:
         self._region_id = region_id
 
     @property
-    def type(self):
-        r"""Gets the type of this CloudConnectionRoute.
-
-        路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
-
-        :return: The type of this CloudConnectionRoute.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        r"""Sets the type of this CloudConnectionRoute.
-
-        路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
-
-        :param type: The type of this CloudConnectionRoute.
-        :type type: str
-        """
-        self._type = type
-
-    @property
     def destination(self):
         r"""Gets the destination of this CloudConnectionRoute.
 
@@ -259,6 +236,28 @@ class CloudConnectionRoute:
         :type destination: str
         """
         self._destination = destination
+
+    @property
+    def type(self):
+        r"""Gets the type of this CloudConnectionRoute.
+
+        路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
+
+        :return: The type of this CloudConnectionRoute.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this CloudConnectionRoute.
+
+        路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
+
+        :param type: The type of this CloudConnectionRoute.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

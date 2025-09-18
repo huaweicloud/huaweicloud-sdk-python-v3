@@ -31,9 +31,9 @@ class PipelineGroupUpdateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 流水线分组名
+        :param name: **参数解释**： 流水线分组名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type name: str
-        :param id: 流水线分组ID
+        :param id: **参数解释**： 流水线分组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type id: str
         """
         
@@ -50,7 +50,7 @@ class PipelineGroupUpdateDTO:
     def name(self):
         r"""Gets the name of this PipelineGroupUpdateDTO.
 
-        流水线分组名
+        **参数解释**： 流水线分组名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this PipelineGroupUpdateDTO.
         :rtype: str
@@ -61,7 +61,7 @@ class PipelineGroupUpdateDTO:
     def name(self, name):
         r"""Sets the name of this PipelineGroupUpdateDTO.
 
-        流水线分组名
+        **参数解释**： 流水线分组名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this PipelineGroupUpdateDTO.
         :type name: str
@@ -72,7 +72,7 @@ class PipelineGroupUpdateDTO:
     def id(self):
         r"""Gets the id of this PipelineGroupUpdateDTO.
 
-        流水线分组ID
+        **参数解释**： 流水线分组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The id of this PipelineGroupUpdateDTO.
         :rtype: str
@@ -83,7 +83,7 @@ class PipelineGroupUpdateDTO:
     def id(self, id):
         r"""Sets the id of this PipelineGroupUpdateDTO.
 
-        流水线分组ID
+        **参数解释**： 流水线分组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param id: The id of this PipelineGroupUpdateDTO.
         :type id: str

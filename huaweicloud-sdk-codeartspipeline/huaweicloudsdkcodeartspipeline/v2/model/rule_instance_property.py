@@ -39,17 +39,17 @@ class RuleInstanceProperty:
 
         The model defined in huaweicloud sdk
 
-        :param key: 属性键
+        :param key: **参数解释**： 规则属性键。 **取值范围**： 不涉及。 
         :type key: str
-        :param type: 类型
+        :param type: **参数解释**： 规则类型。 **取值范围**： 不涉及。 
         :type type: str
-        :param name: 展示名称
+        :param name: **参数解释**： 展示名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param operator: 比较运算符
+        :param operator: **参数解释**： 比较运算符。 **取值范围**： 不涉及。 
         :type operator: str
-        :param value: 属性值
+        :param value: **参数解释**： 属性值。 **取值范围**： 不涉及。 
         :type value: str
-        :param value_type: 数据类型
+        :param value_type: **参数解释**： 数据类型。 **取值范围**： 不涉及。 
         :type value_type: str
         """
         
@@ -75,7 +75,7 @@ class RuleInstanceProperty:
     def key(self):
         r"""Gets the key of this RuleInstanceProperty.
 
-        属性键
+        **参数解释**： 规则属性键。 **取值范围**： 不涉及。 
 
         :return: The key of this RuleInstanceProperty.
         :rtype: str
@@ -86,7 +86,7 @@ class RuleInstanceProperty:
     def key(self, key):
         r"""Sets the key of this RuleInstanceProperty.
 
-        属性键
+        **参数解释**： 规则属性键。 **取值范围**： 不涉及。 
 
         :param key: The key of this RuleInstanceProperty.
         :type key: str
@@ -97,7 +97,7 @@ class RuleInstanceProperty:
     def type(self):
         r"""Gets the type of this RuleInstanceProperty.
 
-        类型
+        **参数解释**： 规则类型。 **取值范围**： 不涉及。 
 
         :return: The type of this RuleInstanceProperty.
         :rtype: str
@@ -108,7 +108,7 @@ class RuleInstanceProperty:
     def type(self, type):
         r"""Sets the type of this RuleInstanceProperty.
 
-        类型
+        **参数解释**： 规则类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this RuleInstanceProperty.
         :type type: str
@@ -119,7 +119,7 @@ class RuleInstanceProperty:
     def name(self):
         r"""Gets the name of this RuleInstanceProperty.
 
-        展示名称
+        **参数解释**： 展示名称。 **取值范围**： 不涉及。 
 
         :return: The name of this RuleInstanceProperty.
         :rtype: str
@@ -130,7 +130,7 @@ class RuleInstanceProperty:
     def name(self, name):
         r"""Sets the name of this RuleInstanceProperty.
 
-        展示名称
+        **参数解释**： 展示名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this RuleInstanceProperty.
         :type name: str
@@ -141,7 +141,7 @@ class RuleInstanceProperty:
     def operator(self):
         r"""Gets the operator of this RuleInstanceProperty.
 
-        比较运算符
+        **参数解释**： 比较运算符。 **取值范围**： 不涉及。 
 
         :return: The operator of this RuleInstanceProperty.
         :rtype: str
@@ -152,7 +152,7 @@ class RuleInstanceProperty:
     def operator(self, operator):
         r"""Sets the operator of this RuleInstanceProperty.
 
-        比较运算符
+        **参数解释**： 比较运算符。 **取值范围**： 不涉及。 
 
         :param operator: The operator of this RuleInstanceProperty.
         :type operator: str
@@ -163,7 +163,7 @@ class RuleInstanceProperty:
     def value(self):
         r"""Gets the value of this RuleInstanceProperty.
 
-        属性值
+        **参数解释**： 属性值。 **取值范围**： 不涉及。 
 
         :return: The value of this RuleInstanceProperty.
         :rtype: str
@@ -174,7 +174,7 @@ class RuleInstanceProperty:
     def value(self, value):
         r"""Sets the value of this RuleInstanceProperty.
 
-        属性值
+        **参数解释**： 属性值。 **取值范围**： 不涉及。 
 
         :param value: The value of this RuleInstanceProperty.
         :type value: str
@@ -185,7 +185,7 @@ class RuleInstanceProperty:
     def value_type(self):
         r"""Gets the value_type of this RuleInstanceProperty.
 
-        数据类型
+        **参数解释**： 数据类型。 **取值范围**： 不涉及。 
 
         :return: The value_type of this RuleInstanceProperty.
         :rtype: str
@@ -196,7 +196,7 @@ class RuleInstanceProperty:
     def value_type(self, value_type):
         r"""Sets the value_type of this RuleInstanceProperty.
 
-        数据类型
+        **参数解释**： 数据类型。 **取值范围**： 不涉及。 
 
         :param value_type: The value_type of this RuleInstanceProperty.
         :type value_type: str

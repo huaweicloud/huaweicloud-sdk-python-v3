@@ -51,29 +51,29 @@ class CustomVariable:
 
         The model defined in huaweicloud sdk
 
-        :param pipeline_id: 流水线ID
+        :param pipeline_id: **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type pipeline_id: str
-        :param name: 自定义参数名称
+        :param name: **参数解释**： 自定义参数名称。 **约束限制**： 不涉及。 **取值范围**： 仅支持大小写英文字母、数字、“_”，不超过128个字符。 **默认取值**： 不涉及。 
         :type name: str
-        :param sequence: 自定义参数顺序
+        :param sequence: **参数解释**： 参数序号，从1开始。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type sequence: int
-        :param type: 自定义参数类型
+        :param type: **参数解释**： 自定义参数类型。 **约束限制**： 不涉及。 **取值范围**： - autoIncrement：自增长参数。 - enum：枚举参数。 - string：字符串参数。 **默认取值**： 不涉及。 
         :type type: str
-        :param value: 自定义参数默认值
+        :param value: **参数解释**： 自定义参数默认值。 **约束限制**： 不涉及。 **取值范围**： 最长8192字符。 **默认取值**： 不涉及。 
         :type value: str
-        :param is_secret: 是否私密参数
+        :param is_secret: **参数解释**： 是否私密参数。 **约束限制**： 不涉及。 **取值范围**： - true：是私密参数。 - false：不是私密参数。 **默认取值**： false。 
         :type is_secret: bool
-        :param description: 自定义参数描述
+        :param description: **参数解释**： 参数描述。 **约束限制**： 不涉及。 **取值范围**： 最长1024字符。 **默认取值**： 不涉及。 
         :type description: str
-        :param is_runtime: 是否运行时设置
+        :param is_runtime: **参数解释**： 是否运行时设置参数。 **约束限制**： 不涉及。 **取值范围**： - true：是运行时设置参数。 - false：不是运行时设置参数。 **默认取值**： false。 
         :type is_runtime: bool
-        :param limits: 参数限制
+        :param limits: **参数解释**： 枚举值列表。 **约束限制**： 不涉及。 **取值范围**： 每个枚举值不超过1024字符。 **默认取值**： 不涉及。 
         :type limits: list[object]
-        :param is_reset: 是否重置
+        :param is_reset: **参数解释**： 是否重置。自增长参数被编辑，则使用编辑后的值，否则进行末位数字递增。 **约束限制**： 不涉及。 **取值范围**： - true：使用编辑后的参数值。 - false：使用自增长参数。 **默认取值**： false。 
         :type is_reset: bool
-        :param latest_value: 最近一次参数值
+        :param latest_value: **参数解释**： 最近一次运行的参数值。 **约束限制**： 不涉及。 **取值范围**： 最长8192字符。 **默认取值**： 不涉及。 
         :type latest_value: str
-        :param runtime_value: 运行时传入值
+        :param runtime_value: **参数解释**： 流水线运行时设置参数的传入值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type runtime_value: str
         """
         
@@ -122,7 +122,7 @@ class CustomVariable:
     def pipeline_id(self):
         r"""Gets the pipeline_id of this CustomVariable.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The pipeline_id of this CustomVariable.
         :rtype: str
@@ -133,7 +133,7 @@ class CustomVariable:
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this CustomVariable.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param pipeline_id: The pipeline_id of this CustomVariable.
         :type pipeline_id: str
@@ -144,7 +144,7 @@ class CustomVariable:
     def name(self):
         r"""Gets the name of this CustomVariable.
 
-        自定义参数名称
+        **参数解释**： 自定义参数名称。 **约束限制**： 不涉及。 **取值范围**： 仅支持大小写英文字母、数字、“_”，不超过128个字符。 **默认取值**： 不涉及。 
 
         :return: The name of this CustomVariable.
         :rtype: str
@@ -155,7 +155,7 @@ class CustomVariable:
     def name(self, name):
         r"""Sets the name of this CustomVariable.
 
-        自定义参数名称
+        **参数解释**： 自定义参数名称。 **约束限制**： 不涉及。 **取值范围**： 仅支持大小写英文字母、数字、“_”，不超过128个字符。 **默认取值**： 不涉及。 
 
         :param name: The name of this CustomVariable.
         :type name: str
@@ -166,7 +166,7 @@ class CustomVariable:
     def sequence(self):
         r"""Gets the sequence of this CustomVariable.
 
-        自定义参数顺序
+        **参数解释**： 参数序号，从1开始。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The sequence of this CustomVariable.
         :rtype: int
@@ -177,7 +177,7 @@ class CustomVariable:
     def sequence(self, sequence):
         r"""Sets the sequence of this CustomVariable.
 
-        自定义参数顺序
+        **参数解释**： 参数序号，从1开始。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param sequence: The sequence of this CustomVariable.
         :type sequence: int
@@ -188,7 +188,7 @@ class CustomVariable:
     def type(self):
         r"""Gets the type of this CustomVariable.
 
-        自定义参数类型
+        **参数解释**： 自定义参数类型。 **约束限制**： 不涉及。 **取值范围**： - autoIncrement：自增长参数。 - enum：枚举参数。 - string：字符串参数。 **默认取值**： 不涉及。 
 
         :return: The type of this CustomVariable.
         :rtype: str
@@ -199,7 +199,7 @@ class CustomVariable:
     def type(self, type):
         r"""Sets the type of this CustomVariable.
 
-        自定义参数类型
+        **参数解释**： 自定义参数类型。 **约束限制**： 不涉及。 **取值范围**： - autoIncrement：自增长参数。 - enum：枚举参数。 - string：字符串参数。 **默认取值**： 不涉及。 
 
         :param type: The type of this CustomVariable.
         :type type: str
@@ -210,7 +210,7 @@ class CustomVariable:
     def value(self):
         r"""Gets the value of this CustomVariable.
 
-        自定义参数默认值
+        **参数解释**： 自定义参数默认值。 **约束限制**： 不涉及。 **取值范围**： 最长8192字符。 **默认取值**： 不涉及。 
 
         :return: The value of this CustomVariable.
         :rtype: str
@@ -221,7 +221,7 @@ class CustomVariable:
     def value(self, value):
         r"""Sets the value of this CustomVariable.
 
-        自定义参数默认值
+        **参数解释**： 自定义参数默认值。 **约束限制**： 不涉及。 **取值范围**： 最长8192字符。 **默认取值**： 不涉及。 
 
         :param value: The value of this CustomVariable.
         :type value: str
@@ -232,7 +232,7 @@ class CustomVariable:
     def is_secret(self):
         r"""Gets the is_secret of this CustomVariable.
 
-        是否私密参数
+        **参数解释**： 是否私密参数。 **约束限制**： 不涉及。 **取值范围**： - true：是私密参数。 - false：不是私密参数。 **默认取值**： false。 
 
         :return: The is_secret of this CustomVariable.
         :rtype: bool
@@ -243,7 +243,7 @@ class CustomVariable:
     def is_secret(self, is_secret):
         r"""Sets the is_secret of this CustomVariable.
 
-        是否私密参数
+        **参数解释**： 是否私密参数。 **约束限制**： 不涉及。 **取值范围**： - true：是私密参数。 - false：不是私密参数。 **默认取值**： false。 
 
         :param is_secret: The is_secret of this CustomVariable.
         :type is_secret: bool
@@ -254,7 +254,7 @@ class CustomVariable:
     def description(self):
         r"""Gets the description of this CustomVariable.
 
-        自定义参数描述
+        **参数解释**： 参数描述。 **约束限制**： 不涉及。 **取值范围**： 最长1024字符。 **默认取值**： 不涉及。 
 
         :return: The description of this CustomVariable.
         :rtype: str
@@ -265,7 +265,7 @@ class CustomVariable:
     def description(self, description):
         r"""Sets the description of this CustomVariable.
 
-        自定义参数描述
+        **参数解释**： 参数描述。 **约束限制**： 不涉及。 **取值范围**： 最长1024字符。 **默认取值**： 不涉及。 
 
         :param description: The description of this CustomVariable.
         :type description: str
@@ -276,7 +276,7 @@ class CustomVariable:
     def is_runtime(self):
         r"""Gets the is_runtime of this CustomVariable.
 
-        是否运行时设置
+        **参数解释**： 是否运行时设置参数。 **约束限制**： 不涉及。 **取值范围**： - true：是运行时设置参数。 - false：不是运行时设置参数。 **默认取值**： false。 
 
         :return: The is_runtime of this CustomVariable.
         :rtype: bool
@@ -287,7 +287,7 @@ class CustomVariable:
     def is_runtime(self, is_runtime):
         r"""Sets the is_runtime of this CustomVariable.
 
-        是否运行时设置
+        **参数解释**： 是否运行时设置参数。 **约束限制**： 不涉及。 **取值范围**： - true：是运行时设置参数。 - false：不是运行时设置参数。 **默认取值**： false。 
 
         :param is_runtime: The is_runtime of this CustomVariable.
         :type is_runtime: bool
@@ -298,7 +298,7 @@ class CustomVariable:
     def limits(self):
         r"""Gets the limits of this CustomVariable.
 
-        参数限制
+        **参数解释**： 枚举值列表。 **约束限制**： 不涉及。 **取值范围**： 每个枚举值不超过1024字符。 **默认取值**： 不涉及。 
 
         :return: The limits of this CustomVariable.
         :rtype: list[object]
@@ -309,7 +309,7 @@ class CustomVariable:
     def limits(self, limits):
         r"""Sets the limits of this CustomVariable.
 
-        参数限制
+        **参数解释**： 枚举值列表。 **约束限制**： 不涉及。 **取值范围**： 每个枚举值不超过1024字符。 **默认取值**： 不涉及。 
 
         :param limits: The limits of this CustomVariable.
         :type limits: list[object]
@@ -320,7 +320,7 @@ class CustomVariable:
     def is_reset(self):
         r"""Gets the is_reset of this CustomVariable.
 
-        是否重置
+        **参数解释**： 是否重置。自增长参数被编辑，则使用编辑后的值，否则进行末位数字递增。 **约束限制**： 不涉及。 **取值范围**： - true：使用编辑后的参数值。 - false：使用自增长参数。 **默认取值**： false。 
 
         :return: The is_reset of this CustomVariable.
         :rtype: bool
@@ -331,7 +331,7 @@ class CustomVariable:
     def is_reset(self, is_reset):
         r"""Sets the is_reset of this CustomVariable.
 
-        是否重置
+        **参数解释**： 是否重置。自增长参数被编辑，则使用编辑后的值，否则进行末位数字递增。 **约束限制**： 不涉及。 **取值范围**： - true：使用编辑后的参数值。 - false：使用自增长参数。 **默认取值**： false。 
 
         :param is_reset: The is_reset of this CustomVariable.
         :type is_reset: bool
@@ -342,7 +342,7 @@ class CustomVariable:
     def latest_value(self):
         r"""Gets the latest_value of this CustomVariable.
 
-        最近一次参数值
+        **参数解释**： 最近一次运行的参数值。 **约束限制**： 不涉及。 **取值范围**： 最长8192字符。 **默认取值**： 不涉及。 
 
         :return: The latest_value of this CustomVariable.
         :rtype: str
@@ -353,7 +353,7 @@ class CustomVariable:
     def latest_value(self, latest_value):
         r"""Sets the latest_value of this CustomVariable.
 
-        最近一次参数值
+        **参数解释**： 最近一次运行的参数值。 **约束限制**： 不涉及。 **取值范围**： 最长8192字符。 **默认取值**： 不涉及。 
 
         :param latest_value: The latest_value of this CustomVariable.
         :type latest_value: str
@@ -364,7 +364,7 @@ class CustomVariable:
     def runtime_value(self):
         r"""Gets the runtime_value of this CustomVariable.
 
-        运行时传入值
+        **参数解释**： 流水线运行时设置参数的传入值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The runtime_value of this CustomVariable.
         :rtype: str
@@ -375,7 +375,7 @@ class CustomVariable:
     def runtime_value(self, runtime_value):
         r"""Sets the runtime_value of this CustomVariable.
 
-        运行时传入值
+        **参数解释**： 流水线运行时设置参数的传入值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param runtime_value: The runtime_value of this CustomVariable.
         :type runtime_value: str

@@ -33,11 +33,11 @@ class PipelineGroupCreateDTO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 流水线分组名
+        :param name: **参数解释**： 流水线分组名。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type name: str
-        :param project_id: 项目名
+        :param project_id: **参数解释**： CodeArts项目ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type project_id: str
-        :param parent_id: 父分组ID
+        :param parent_id: **参数解释**： 父分组ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type parent_id: str
         """
         
@@ -57,7 +57,7 @@ class PipelineGroupCreateDTO:
     def name(self):
         r"""Gets the name of this PipelineGroupCreateDTO.
 
-        流水线分组名
+        **参数解释**： 流水线分组名。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The name of this PipelineGroupCreateDTO.
         :rtype: str
@@ -68,7 +68,7 @@ class PipelineGroupCreateDTO:
     def name(self, name):
         r"""Sets the name of this PipelineGroupCreateDTO.
 
-        流水线分组名
+        **参数解释**： 流水线分组名。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param name: The name of this PipelineGroupCreateDTO.
         :type name: str
@@ -79,7 +79,7 @@ class PipelineGroupCreateDTO:
     def project_id(self):
         r"""Gets the project_id of this PipelineGroupCreateDTO.
 
-        项目名
+        **参数解释**： CodeArts项目ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The project_id of this PipelineGroupCreateDTO.
         :rtype: str
@@ -90,7 +90,7 @@ class PipelineGroupCreateDTO:
     def project_id(self, project_id):
         r"""Sets the project_id of this PipelineGroupCreateDTO.
 
-        项目名
+        **参数解释**： CodeArts项目ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param project_id: The project_id of this PipelineGroupCreateDTO.
         :type project_id: str
@@ -101,7 +101,7 @@ class PipelineGroupCreateDTO:
     def parent_id(self):
         r"""Gets the parent_id of this PipelineGroupCreateDTO.
 
-        父分组ID
+        **参数解释**： 父分组ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The parent_id of this PipelineGroupCreateDTO.
         :rtype: str
@@ -112,7 +112,7 @@ class PipelineGroupCreateDTO:
     def parent_id(self, parent_id):
         r"""Sets the parent_id of this PipelineGroupCreateDTO.
 
-        父分组ID
+        **参数解释**： 父分组ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param parent_id: The parent_id of this PipelineGroupCreateDTO.
         :type parent_id: str

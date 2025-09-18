@@ -21,13 +21,13 @@ class GlobalConnectionBandwidthSites:
         'description': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
+        'region_id': 'str',
         'name_en': 'str',
         'name_cn': 'str',
         'site_code': 'str',
         'site_type': 'str',
         'service_list': 'str',
         'group_list': 'list[SiteGroupReferenceInfo]',
-        'region_id': 'str',
         'public_border_group': 'str'
     }
 
@@ -36,17 +36,17 @@ class GlobalConnectionBandwidthSites:
         'description': 'description',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
+        'region_id': 'region_id',
         'name_en': 'name_en',
         'name_cn': 'name_cn',
         'site_code': 'site_code',
         'site_type': 'site_type',
         'service_list': 'service_list',
         'group_list': 'group_list',
-        'region_id': 'region_id',
         'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, id=None, description=None, created_at=None, updated_at=None, name_en=None, name_cn=None, site_code=None, site_type=None, service_list=None, group_list=None, region_id=None, public_border_group=None):
+    def __init__(self, id=None, description=None, created_at=None, updated_at=None, region_id=None, name_en=None, name_cn=None, site_code=None, site_type=None, service_list=None, group_list=None, public_border_group=None):
         r"""GlobalConnectionBandwidthSites
 
         The model defined in huaweicloud sdk
@@ -59,9 +59,11 @@ class GlobalConnectionBandwidthSites:
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type updated_at: datetime
-        :param name_en: 功能说明：站点信息自定义的英文名字。 取值范围：1-255个字符
+        :param region_id: RegionID。
+        :type region_id: str
+        :param name_en: 功能说明：站点信息自定义的英文名称。 取值范围：1-255个字符
         :type name_en: str
-        :param name_cn: 功能说明：站点信息自定义的中文名字。 取值范围：1-64个字符。
+        :param name_cn: 功能说明：站点信息自定义的中文名称。 取值范围：1-64个字符。
         :type name_cn: str
         :param site_code: 功能说明：站点编码，格式为&lt;area_code&gt;[-&lt;subarea_code&gt;[-&lt;region_code&gt;]]。 取值范围：1-64个字符。
         :type site_code: str
@@ -71,8 +73,6 @@ class GlobalConnectionBandwidthSites:
         :type service_list: str
         :param group_list: 
         :type group_list: list[:class:`huaweicloudsdkcc.v3.SiteGroupReferenceInfo`]
-        :param region_id: 功能说明：对应华为云标准region的id，该站点继承自华为云region时才需要填写该字段。 取值范围：0-64个字符。
-        :type region_id: str
         :param public_border_group: 功能说明：用于标记是中心还是边缘站点。中心：center 取值范围：0-255个字符。
         :type public_border_group: str
         """
@@ -83,13 +83,13 @@ class GlobalConnectionBandwidthSites:
         self._description = None
         self._created_at = None
         self._updated_at = None
+        self._region_id = None
         self._name_en = None
         self._name_cn = None
         self._site_code = None
         self._site_type = None
         self._service_list = None
         self._group_list = None
-        self._region_id = None
         self._public_border_group = None
         self.discriminator = None
 
@@ -98,6 +98,7 @@ class GlobalConnectionBandwidthSites:
             self.description = description
         self.created_at = created_at
         self.updated_at = updated_at
+        self.region_id = region_id
         if name_en is not None:
             self.name_en = name_en
         if name_cn is not None:
@@ -110,8 +111,6 @@ class GlobalConnectionBandwidthSites:
             self.service_list = service_list
         if group_list is not None:
             self.group_list = group_list
-        if region_id is not None:
-            self.region_id = region_id
         if public_border_group is not None:
             self.public_border_group = public_border_group
 
@@ -204,10 +203,32 @@ class GlobalConnectionBandwidthSites:
         self._updated_at = updated_at
 
     @property
+    def region_id(self):
+        r"""Gets the region_id of this GlobalConnectionBandwidthSites.
+
+        RegionID。
+
+        :return: The region_id of this GlobalConnectionBandwidthSites.
+        :rtype: str
+        """
+        return self._region_id
+
+    @region_id.setter
+    def region_id(self, region_id):
+        r"""Sets the region_id of this GlobalConnectionBandwidthSites.
+
+        RegionID。
+
+        :param region_id: The region_id of this GlobalConnectionBandwidthSites.
+        :type region_id: str
+        """
+        self._region_id = region_id
+
+    @property
     def name_en(self):
         r"""Gets the name_en of this GlobalConnectionBandwidthSites.
 
-        功能说明：站点信息自定义的英文名字。 取值范围：1-255个字符
+        功能说明：站点信息自定义的英文名称。 取值范围：1-255个字符
 
         :return: The name_en of this GlobalConnectionBandwidthSites.
         :rtype: str
@@ -218,7 +239,7 @@ class GlobalConnectionBandwidthSites:
     def name_en(self, name_en):
         r"""Sets the name_en of this GlobalConnectionBandwidthSites.
 
-        功能说明：站点信息自定义的英文名字。 取值范围：1-255个字符
+        功能说明：站点信息自定义的英文名称。 取值范围：1-255个字符
 
         :param name_en: The name_en of this GlobalConnectionBandwidthSites.
         :type name_en: str
@@ -229,7 +250,7 @@ class GlobalConnectionBandwidthSites:
     def name_cn(self):
         r"""Gets the name_cn of this GlobalConnectionBandwidthSites.
 
-        功能说明：站点信息自定义的中文名字。 取值范围：1-64个字符。
+        功能说明：站点信息自定义的中文名称。 取值范围：1-64个字符。
 
         :return: The name_cn of this GlobalConnectionBandwidthSites.
         :rtype: str
@@ -240,7 +261,7 @@ class GlobalConnectionBandwidthSites:
     def name_cn(self, name_cn):
         r"""Sets the name_cn of this GlobalConnectionBandwidthSites.
 
-        功能说明：站点信息自定义的中文名字。 取值范围：1-64个字符。
+        功能说明：站点信息自定义的中文名称。 取值范围：1-64个字符。
 
         :param name_cn: The name_cn of this GlobalConnectionBandwidthSites.
         :type name_cn: str
@@ -330,28 +351,6 @@ class GlobalConnectionBandwidthSites:
         :type group_list: list[:class:`huaweicloudsdkcc.v3.SiteGroupReferenceInfo`]
         """
         self._group_list = group_list
-
-    @property
-    def region_id(self):
-        r"""Gets the region_id of this GlobalConnectionBandwidthSites.
-
-        功能说明：对应华为云标准region的id，该站点继承自华为云region时才需要填写该字段。 取值范围：0-64个字符。
-
-        :return: The region_id of this GlobalConnectionBandwidthSites.
-        :rtype: str
-        """
-        return self._region_id
-
-    @region_id.setter
-    def region_id(self, region_id):
-        r"""Sets the region_id of this GlobalConnectionBandwidthSites.
-
-        功能说明：对应华为云标准region的id，该站点继承自华为云region时才需要填写该字段。 取值范围：0-64个字符。
-
-        :param region_id: The region_id of this GlobalConnectionBandwidthSites.
-        :type region_id: str
-        """
-        self._region_id = region_id
 
     @property
     def public_border_group(self):

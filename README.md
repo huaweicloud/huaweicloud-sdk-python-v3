@@ -6,6 +6,10 @@ English | [简体中文](./README_CN.md)
 
 <h1 align="center">Huawei Cloud Python Software Development Kit (Python SDK)</h1>
 
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/huaweicloudsdkcore)](https://www.python.org/)
+[![PyPI Version](https://img.shields.io/pypi/v/huaweicloudsdkcore?color=009999)](https://pypi.org/search/?q=huaweicloudsdk)
+[![License](https://img.shields.io/badge/license-Apache--2.0-green)](https://www.apache.org/licenses/LICENSE-2.0)
+
 The Huawei Cloud Python SDK allows you to easily work with Huawei Cloud services such as Elastic Compute Service (ECS)
 and Virtual Private Cloud (VPC) without the need to handle API related tasks.
 

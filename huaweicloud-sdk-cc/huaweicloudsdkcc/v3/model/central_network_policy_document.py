@@ -33,7 +33,7 @@ class CentralNetworkPolicyDocument:
 
         The model defined in huaweicloud sdk
 
-        :param default_plane: 中心网络默认平面的名字。
+        :param default_plane: 中心网络默认平面的名称。
         :type default_plane: str
         :param planes: 中心网络平面列表。
         :type planes: list[:class:`huaweicloudsdkcc.v3.CentralNetworkPlaneDocument`]
@@ -57,7 +57,7 @@ class CentralNetworkPolicyDocument:
     def default_plane(self):
         r"""Gets the default_plane of this CentralNetworkPolicyDocument.
 
-        中心网络默认平面的名字。
+        中心网络默认平面的名称。
 
         :return: The default_plane of this CentralNetworkPolicyDocument.
         :rtype: str
@@ -68,7 +68,7 @@ class CentralNetworkPolicyDocument:
     def default_plane(self, default_plane):
         r"""Sets the default_plane of this CentralNetworkPolicyDocument.
 
-        中心网络默认平面的名字。
+        中心网络默认平面的名称。
 
         :param default_plane: The default_plane of this CentralNetworkPolicyDocument.
         :type default_plane: str

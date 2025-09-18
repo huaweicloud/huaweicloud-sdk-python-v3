@@ -51,7 +51,7 @@ class StoreData:
         :type id: str
         :param store_name: **参数解释：** 知识仓实例名称，region内唯一。 **约束限制：** 长度范围为3到63个字符，支持小写字母、数字、中划线（-），第一个字符只能够是小写字母，中划线(-)不得出现在字符串末尾。 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type store_name: str
-        :param status: **参数解释：** 知识仓实例状态。 **约束限制：** 不涉及。 **取值范围：** CREATING：创建中 NORMAL：正常 CREATED_FAILED：创建失败 ABNORMAL：异常 FROZEN：被冻结 DISK_FULL：存储空间已满 DROPPING：删除中 DELETE_FAILED：删除失败 **默认取值:** 不涉及。
+        :param status: **参数解释：** 知识仓实例状态。 **约束限制：** 不涉及。 **取值范围：** CREATING：创建中 NORMAL：正常 CREATED_FAILED：创建失败 ABNORMAL：异常 FROZEN：冻结 DISK_FULL：存储空间已满 DELETING：删除中 DELETE_FAILED：删除失败 SCALING：扩容中 **默认取值:** 不涉及。
         :type status: str
         :param create_time: **参数解释：** 创建时间。 **约束限制：** 格式为“yyyy-mm-ddThh:mm:ssZ”。 **取值范围：** 不涉及。 **默认取值:** 不涉及。
         :type create_time: str
@@ -148,7 +148,7 @@ class StoreData:
     def status(self):
         r"""Gets the status of this StoreData.
 
-        **参数解释：** 知识仓实例状态。 **约束限制：** 不涉及。 **取值范围：** CREATING：创建中 NORMAL：正常 CREATED_FAILED：创建失败 ABNORMAL：异常 FROZEN：被冻结 DISK_FULL：存储空间已满 DROPPING：删除中 DELETE_FAILED：删除失败 **默认取值:** 不涉及。
+        **参数解释：** 知识仓实例状态。 **约束限制：** 不涉及。 **取值范围：** CREATING：创建中 NORMAL：正常 CREATED_FAILED：创建失败 ABNORMAL：异常 FROZEN：冻结 DISK_FULL：存储空间已满 DELETING：删除中 DELETE_FAILED：删除失败 SCALING：扩容中 **默认取值:** 不涉及。
 
         :return: The status of this StoreData.
         :rtype: str
@@ -159,7 +159,7 @@ class StoreData:
     def status(self, status):
         r"""Sets the status of this StoreData.
 
-        **参数解释：** 知识仓实例状态。 **约束限制：** 不涉及。 **取值范围：** CREATING：创建中 NORMAL：正常 CREATED_FAILED：创建失败 ABNORMAL：异常 FROZEN：被冻结 DISK_FULL：存储空间已满 DROPPING：删除中 DELETE_FAILED：删除失败 **默认取值:** 不涉及。
+        **参数解释：** 知识仓实例状态。 **约束限制：** 不涉及。 **取值范围：** CREATING：创建中 NORMAL：正常 CREATED_FAILED：创建失败 ABNORMAL：异常 FROZEN：冻结 DISK_FULL：存储空间已满 DELETING：删除中 DELETE_FAILED：删除失败 SCALING：扩容中 **默认取值:** 不涉及。
 
         :param status: The status of this StoreData.
         :type status: str

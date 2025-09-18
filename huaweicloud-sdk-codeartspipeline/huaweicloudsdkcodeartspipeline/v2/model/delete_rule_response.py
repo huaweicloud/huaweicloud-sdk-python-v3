@@ -30,7 +30,7 @@ class DeleteRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态
+        :param status: **参数解释**： 是否删除成功。 **取值范围**： - true：删除成功。 - false：删除失败。 
         :type status: bool
         """
         
@@ -46,7 +46,7 @@ class DeleteRuleResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this DeleteRuleResponse.
 
-        状态
+        **参数解释**： 是否删除成功。 **取值范围**： - true：删除成功。 - false：删除失败。 
 
         :return: The status of this DeleteRuleResponse.
         :rtype: bool
@@ -57,7 +57,7 @@ class DeleteRuleResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this DeleteRuleResponse.
 
-        状态
+        **参数解释**： 是否删除成功。 **取值范围**： - true：删除成功。 - false：删除失败。 
 
         :param status: The status of this DeleteRuleResponse.
         :type status: bool

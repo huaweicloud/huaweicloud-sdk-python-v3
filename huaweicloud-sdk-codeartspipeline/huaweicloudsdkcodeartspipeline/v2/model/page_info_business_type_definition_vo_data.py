@@ -24,6 +24,7 @@ class PageInfoBusinessTypeDefinitionVOData:
         'removable': 'bool',
         'cloneable': 'bool',
         'disabled': 'bool',
+        'addables': 'list[dict(str, bool)]',
         'conditions': 'list[str]',
         'plugins_list': 'list[PageInfoBusinessTypeDefinitionVOPluginsList]'
     }
@@ -36,32 +37,35 @@ class PageInfoBusinessTypeDefinitionVOData:
         'removable': 'removable',
         'cloneable': 'cloneable',
         'disabled': 'disabled',
+        'addables': 'addables',
         'conditions': 'conditions',
         'plugins_list': 'plugins_list'
     }
 
-    def __init__(self, business_type=None, display_name=None, unique_id=None, editable=None, removable=None, cloneable=None, disabled=None, conditions=None, plugins_list=None):
+    def __init__(self, business_type=None, display_name=None, unique_id=None, editable=None, removable=None, cloneable=None, disabled=None, addables=None, conditions=None, plugins_list=None):
         r"""PageInfoBusinessTypeDefinitionVOData
 
         The model defined in huaweicloud sdk
 
-        :param business_type: 业务类型
+        :param business_type: **参数解释**： 业务类型。 **取值范围**： 不涉及。 
         :type business_type: str
-        :param display_name: 展示名
+        :param display_name: **参数解释**： 展示名。 **取值范围**： 不涉及。 
         :type display_name: str
-        :param unique_id: 唯一ID
+        :param unique_id: **参数解释**： 唯一ID。 **取值范围**： 不涉及。 
         :type unique_id: str
-        :param editable: 可编辑
+        :param editable: **参数解释**： 是否可编辑。 **取值范围**： - true：可编辑。 - false：不可编辑。 
         :type editable: bool
-        :param removable: 可移除
+        :param removable: **参数解释**： 是否可移除。 **取值范围**： - true：可移除。 - false：不可移除。 
         :type removable: bool
-        :param cloneable: 可复制
+        :param cloneable: **参数解释**： 是否可复制。 **取值范围**： - true：可复制。 - false：不可复制。 
         :type cloneable: bool
-        :param disabled: 禁用
+        :param disabled: **参数解释**： 是否禁用。 **取值范围**： - true：禁用。 - false：未禁用。 
         :type disabled: bool
-        :param conditions: 条件
+        :param addables: **参数解释**： 是否可添加。 **取值范围**： 不涉及。 
+        :type addables: list[dict(str, bool)]
+        :param conditions: **参数解释**： 条件。 **取值范围**： 不涉及。 
         :type conditions: list[str]
-        :param plugins_list: 插件列表
+        :param plugins_list: **参数解释**： 插件列表。 **取值范围**： 不涉及。 
         :type plugins_list: list[:class:`huaweicloudsdkcodeartspipeline.v2.PageInfoBusinessTypeDefinitionVOPluginsList`]
         """
         
@@ -74,6 +78,7 @@ class PageInfoBusinessTypeDefinitionVOData:
         self._removable = None
         self._cloneable = None
         self._disabled = None
+        self._addables = None
         self._conditions = None
         self._plugins_list = None
         self.discriminator = None
@@ -92,6 +97,8 @@ class PageInfoBusinessTypeDefinitionVOData:
             self.cloneable = cloneable
         if disabled is not None:
             self.disabled = disabled
+        if addables is not None:
+            self.addables = addables
         if conditions is not None:
             self.conditions = conditions
         if plugins_list is not None:
@@ -101,7 +108,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def business_type(self):
         r"""Gets the business_type of this PageInfoBusinessTypeDefinitionVOData.
 
-        业务类型
+        **参数解释**： 业务类型。 **取值范围**： 不涉及。 
 
         :return: The business_type of this PageInfoBusinessTypeDefinitionVOData.
         :rtype: str
@@ -112,7 +119,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def business_type(self, business_type):
         r"""Sets the business_type of this PageInfoBusinessTypeDefinitionVOData.
 
-        业务类型
+        **参数解释**： 业务类型。 **取值范围**： 不涉及。 
 
         :param business_type: The business_type of this PageInfoBusinessTypeDefinitionVOData.
         :type business_type: str
@@ -123,7 +130,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def display_name(self):
         r"""Gets the display_name of this PageInfoBusinessTypeDefinitionVOData.
 
-        展示名
+        **参数解释**： 展示名。 **取值范围**： 不涉及。 
 
         :return: The display_name of this PageInfoBusinessTypeDefinitionVOData.
         :rtype: str
@@ -134,7 +141,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def display_name(self, display_name):
         r"""Sets the display_name of this PageInfoBusinessTypeDefinitionVOData.
 
-        展示名
+        **参数解释**： 展示名。 **取值范围**： 不涉及。 
 
         :param display_name: The display_name of this PageInfoBusinessTypeDefinitionVOData.
         :type display_name: str
@@ -145,7 +152,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def unique_id(self):
         r"""Gets the unique_id of this PageInfoBusinessTypeDefinitionVOData.
 
-        唯一ID
+        **参数解释**： 唯一ID。 **取值范围**： 不涉及。 
 
         :return: The unique_id of this PageInfoBusinessTypeDefinitionVOData.
         :rtype: str
@@ -156,7 +163,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def unique_id(self, unique_id):
         r"""Sets the unique_id of this PageInfoBusinessTypeDefinitionVOData.
 
-        唯一ID
+        **参数解释**： 唯一ID。 **取值范围**： 不涉及。 
 
         :param unique_id: The unique_id of this PageInfoBusinessTypeDefinitionVOData.
         :type unique_id: str
@@ -167,7 +174,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def editable(self):
         r"""Gets the editable of this PageInfoBusinessTypeDefinitionVOData.
 
-        可编辑
+        **参数解释**： 是否可编辑。 **取值范围**： - true：可编辑。 - false：不可编辑。 
 
         :return: The editable of this PageInfoBusinessTypeDefinitionVOData.
         :rtype: bool
@@ -178,7 +185,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def editable(self, editable):
         r"""Sets the editable of this PageInfoBusinessTypeDefinitionVOData.
 
-        可编辑
+        **参数解释**： 是否可编辑。 **取值范围**： - true：可编辑。 - false：不可编辑。 
 
         :param editable: The editable of this PageInfoBusinessTypeDefinitionVOData.
         :type editable: bool
@@ -189,7 +196,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def removable(self):
         r"""Gets the removable of this PageInfoBusinessTypeDefinitionVOData.
 
-        可移除
+        **参数解释**： 是否可移除。 **取值范围**： - true：可移除。 - false：不可移除。 
 
         :return: The removable of this PageInfoBusinessTypeDefinitionVOData.
         :rtype: bool
@@ -200,7 +207,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def removable(self, removable):
         r"""Sets the removable of this PageInfoBusinessTypeDefinitionVOData.
 
-        可移除
+        **参数解释**： 是否可移除。 **取值范围**： - true：可移除。 - false：不可移除。 
 
         :param removable: The removable of this PageInfoBusinessTypeDefinitionVOData.
         :type removable: bool
@@ -211,7 +218,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def cloneable(self):
         r"""Gets the cloneable of this PageInfoBusinessTypeDefinitionVOData.
 
-        可复制
+        **参数解释**： 是否可复制。 **取值范围**： - true：可复制。 - false：不可复制。 
 
         :return: The cloneable of this PageInfoBusinessTypeDefinitionVOData.
         :rtype: bool
@@ -222,7 +229,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def cloneable(self, cloneable):
         r"""Sets the cloneable of this PageInfoBusinessTypeDefinitionVOData.
 
-        可复制
+        **参数解释**： 是否可复制。 **取值范围**： - true：可复制。 - false：不可复制。 
 
         :param cloneable: The cloneable of this PageInfoBusinessTypeDefinitionVOData.
         :type cloneable: bool
@@ -233,7 +240,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def disabled(self):
         r"""Gets the disabled of this PageInfoBusinessTypeDefinitionVOData.
 
-        禁用
+        **参数解释**： 是否禁用。 **取值范围**： - true：禁用。 - false：未禁用。 
 
         :return: The disabled of this PageInfoBusinessTypeDefinitionVOData.
         :rtype: bool
@@ -244,7 +251,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def disabled(self, disabled):
         r"""Sets the disabled of this PageInfoBusinessTypeDefinitionVOData.
 
-        禁用
+        **参数解释**： 是否禁用。 **取值范围**： - true：禁用。 - false：未禁用。 
 
         :param disabled: The disabled of this PageInfoBusinessTypeDefinitionVOData.
         :type disabled: bool
@@ -252,10 +259,32 @@ class PageInfoBusinessTypeDefinitionVOData:
         self._disabled = disabled
 
     @property
+    def addables(self):
+        r"""Gets the addables of this PageInfoBusinessTypeDefinitionVOData.
+
+        **参数解释**： 是否可添加。 **取值范围**： 不涉及。 
+
+        :return: The addables of this PageInfoBusinessTypeDefinitionVOData.
+        :rtype: list[dict(str, bool)]
+        """
+        return self._addables
+
+    @addables.setter
+    def addables(self, addables):
+        r"""Sets the addables of this PageInfoBusinessTypeDefinitionVOData.
+
+        **参数解释**： 是否可添加。 **取值范围**： 不涉及。 
+
+        :param addables: The addables of this PageInfoBusinessTypeDefinitionVOData.
+        :type addables: list[dict(str, bool)]
+        """
+        self._addables = addables
+
+    @property
     def conditions(self):
         r"""Gets the conditions of this PageInfoBusinessTypeDefinitionVOData.
 
-        条件
+        **参数解释**： 条件。 **取值范围**： 不涉及。 
 
         :return: The conditions of this PageInfoBusinessTypeDefinitionVOData.
         :rtype: list[str]
@@ -266,7 +295,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def conditions(self, conditions):
         r"""Sets the conditions of this PageInfoBusinessTypeDefinitionVOData.
 
-        条件
+        **参数解释**： 条件。 **取值范围**： 不涉及。 
 
         :param conditions: The conditions of this PageInfoBusinessTypeDefinitionVOData.
         :type conditions: list[str]
@@ -277,7 +306,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def plugins_list(self):
         r"""Gets the plugins_list of this PageInfoBusinessTypeDefinitionVOData.
 
-        插件列表
+        **参数解释**： 插件列表。 **取值范围**： 不涉及。 
 
         :return: The plugins_list of this PageInfoBusinessTypeDefinitionVOData.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PageInfoBusinessTypeDefinitionVOPluginsList`]
@@ -288,7 +317,7 @@ class PageInfoBusinessTypeDefinitionVOData:
     def plugins_list(self, plugins_list):
         r"""Sets the plugins_list of this PageInfoBusinessTypeDefinitionVOData.
 
-        插件列表
+        **参数解释**： 插件列表。 **取值范围**： 不涉及。 
 
         :param plugins_list: The plugins_list of this PageInfoBusinessTypeDefinitionVOData.
         :type plugins_list: list[:class:`huaweicloudsdkcodeartspipeline.v2.PageInfoBusinessTypeDefinitionVOPluginsList`]

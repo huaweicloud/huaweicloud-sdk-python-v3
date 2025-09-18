@@ -31,7 +31,7 @@ class RunPipelineDTOSources:
 
         The model defined in huaweicloud sdk
 
-        :param type: 源类型
+        :param type: **参数解释**： 流水线源类型，目前支持“code”、“artifact”等代码源类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type type: str
         :param params: 
         :type params: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOParams`
@@ -51,7 +51,7 @@ class RunPipelineDTOSources:
     def type(self):
         r"""Gets the type of this RunPipelineDTOSources.
 
-        源类型
+        **参数解释**： 流水线源类型，目前支持“code”、“artifact”等代码源类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The type of this RunPipelineDTOSources.
         :rtype: str
@@ -62,7 +62,7 @@ class RunPipelineDTOSources:
     def type(self, type):
         r"""Sets the type of this RunPipelineDTOSources.
 
-        源类型
+        **参数解释**： 流水线源类型，目前支持“code”、“artifact”等代码源类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param type: The type of this RunPipelineDTOSources.
         :type type: str

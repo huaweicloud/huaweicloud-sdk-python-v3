@@ -37,15 +37,15 @@ class BusinessTypePluginsQueryDTO:
 
         The model defined in huaweicloud sdk
 
-        :param use_condition: 用于区分插件为流水线可使用/模板可使用, 可选pipeline/template
+        :param use_condition: **参数解释**： 用于区分插件为流水线可使用/模板可使用。 **约束限制**： 不涉及。 **取值范围**： - pipeline：流水线可使用。 - template：模板可使用。 **默认取值**： 不涉及。 
         :type use_condition: str
-        :param input_repo_type: 用于区分源的代码仓类型codehub/gitlab/github等
+        :param input_repo_type: **参数解释**： 用于区分源的代码仓类型codehub/gitlab/github等。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
         :type input_repo_type: str
-        :param input_source_type: 用于区分单源/多源的情况
+        :param input_source_type: **参数解释**： 用于区分单源/多源的情况。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type input_source_type: str
-        :param business_type: 业务类型
+        :param business_type: **参数解释**： 业务类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type business_type: str
-        :param regex_name: 名称
+        :param regex_name: **参数解释**： 匹配名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type regex_name: str
         """
         
@@ -73,7 +73,7 @@ class BusinessTypePluginsQueryDTO:
     def use_condition(self):
         r"""Gets the use_condition of this BusinessTypePluginsQueryDTO.
 
-        用于区分插件为流水线可使用/模板可使用, 可选pipeline/template
+        **参数解释**： 用于区分插件为流水线可使用/模板可使用。 **约束限制**： 不涉及。 **取值范围**： - pipeline：流水线可使用。 - template：模板可使用。 **默认取值**： 不涉及。 
 
         :return: The use_condition of this BusinessTypePluginsQueryDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class BusinessTypePluginsQueryDTO:
     def use_condition(self, use_condition):
         r"""Sets the use_condition of this BusinessTypePluginsQueryDTO.
 
-        用于区分插件为流水线可使用/模板可使用, 可选pipeline/template
+        **参数解释**： 用于区分插件为流水线可使用/模板可使用。 **约束限制**： 不涉及。 **取值范围**： - pipeline：流水线可使用。 - template：模板可使用。 **默认取值**： 不涉及。 
 
         :param use_condition: The use_condition of this BusinessTypePluginsQueryDTO.
         :type use_condition: str
@@ -95,7 +95,7 @@ class BusinessTypePluginsQueryDTO:
     def input_repo_type(self):
         r"""Gets the input_repo_type of this BusinessTypePluginsQueryDTO.
 
-        用于区分源的代码仓类型codehub/gitlab/github等
+        **参数解释**： 用于区分源的代码仓类型codehub/gitlab/github等。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
 
         :return: The input_repo_type of this BusinessTypePluginsQueryDTO.
         :rtype: str
@@ -106,7 +106,7 @@ class BusinessTypePluginsQueryDTO:
     def input_repo_type(self, input_repo_type):
         r"""Sets the input_repo_type of this BusinessTypePluginsQueryDTO.
 
-        用于区分源的代码仓类型codehub/gitlab/github等
+        **参数解释**： 用于区分源的代码仓类型codehub/gitlab/github等。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
 
         :param input_repo_type: The input_repo_type of this BusinessTypePluginsQueryDTO.
         :type input_repo_type: str
@@ -117,7 +117,7 @@ class BusinessTypePluginsQueryDTO:
     def input_source_type(self):
         r"""Gets the input_source_type of this BusinessTypePluginsQueryDTO.
 
-        用于区分单源/多源的情况
+        **参数解释**： 用于区分单源/多源的情况。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The input_source_type of this BusinessTypePluginsQueryDTO.
         :rtype: str
@@ -128,7 +128,7 @@ class BusinessTypePluginsQueryDTO:
     def input_source_type(self, input_source_type):
         r"""Sets the input_source_type of this BusinessTypePluginsQueryDTO.
 
-        用于区分单源/多源的情况
+        **参数解释**： 用于区分单源/多源的情况。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param input_source_type: The input_source_type of this BusinessTypePluginsQueryDTO.
         :type input_source_type: str
@@ -139,7 +139,7 @@ class BusinessTypePluginsQueryDTO:
     def business_type(self):
         r"""Gets the business_type of this BusinessTypePluginsQueryDTO.
 
-        业务类型
+        **参数解释**： 业务类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The business_type of this BusinessTypePluginsQueryDTO.
         :rtype: str
@@ -150,7 +150,7 @@ class BusinessTypePluginsQueryDTO:
     def business_type(self, business_type):
         r"""Sets the business_type of this BusinessTypePluginsQueryDTO.
 
-        业务类型
+        **参数解释**： 业务类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param business_type: The business_type of this BusinessTypePluginsQueryDTO.
         :type business_type: str
@@ -161,7 +161,7 @@ class BusinessTypePluginsQueryDTO:
     def regex_name(self):
         r"""Gets the regex_name of this BusinessTypePluginsQueryDTO.
 
-        名称
+        **参数解释**： 匹配名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The regex_name of this BusinessTypePluginsQueryDTO.
         :rtype: str
@@ -172,7 +172,7 @@ class BusinessTypePluginsQueryDTO:
     def regex_name(self, regex_name):
         r"""Sets the regex_name of this BusinessTypePluginsQueryDTO.
 
-        名称
+        **参数解释**： 匹配名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param regex_name: The regex_name of this BusinessTypePluginsQueryDTO.
         :type regex_name: str

@@ -63,9 +63,9 @@ class PipelineStateStatus:
         :type end_time: str
         :param elapsed_time: 运行耗时
         :type elapsed_time: str
-        :param status: 运行状态
+        :param status: 运行状态。取值和含义：waiting：等待;running：执行中;verifying：待审核；suspending：挂起;completed：完成
         :type status: str
-        :param outcome: 运行结果
+        :param outcome: 运行结果。取值及含义：success：成功；error：失败；aborted：终止
         :type outcome: str
         :param error_code: 错误码
         :type error_code: str
@@ -242,7 +242,7 @@ class PipelineStateStatus:
     def status(self):
         r"""Gets the status of this PipelineStateStatus.
 
-        运行状态
+        运行状态。取值和含义：waiting：等待;running：执行中;verifying：待审核；suspending：挂起;completed：完成
 
         :return: The status of this PipelineStateStatus.
         :rtype: str
@@ -253,7 +253,7 @@ class PipelineStateStatus:
     def status(self, status):
         r"""Sets the status of this PipelineStateStatus.
 
-        运行状态
+        运行状态。取值和含义：waiting：等待;running：执行中;verifying：待审核；suspending：挂起;completed：完成
 
         :param status: The status of this PipelineStateStatus.
         :type status: str
@@ -264,7 +264,7 @@ class PipelineStateStatus:
     def outcome(self):
         r"""Gets the outcome of this PipelineStateStatus.
 
-        运行结果
+        运行结果。取值及含义：success：成功；error：失败；aborted：终止
 
         :return: The outcome of this PipelineStateStatus.
         :rtype: str
@@ -275,7 +275,7 @@ class PipelineStateStatus:
     def outcome(self, outcome):
         r"""Sets the outcome of this PipelineStateStatus.
 
-        运行结果
+        运行结果。取值及含义：success：成功；error：失败；aborted：终止
 
         :param outcome: The outcome of this PipelineStateStatus.
         :type outcome: str

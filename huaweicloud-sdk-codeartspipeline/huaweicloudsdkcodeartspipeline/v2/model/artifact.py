@@ -53,31 +53,31 @@ class Artifact:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目ID
+        :param project_id: **参数解释**： 项目ID，获取方式请参见[获取项目ID](https://support.huaweicloud.com/api-codeartsrepo/codehub_api_0014.html)。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type project_id: str
-        :param name: 名称
+        :param name: **参数解释**： 产物名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type name: str
-        :param artifact_version: 版本
+        :param artifact_version: **参数解释**： 产物版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type artifact_version: str
-        :param upload_target: 存放平台类型
+        :param upload_target: **参数解释**： 产物存放平台。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type upload_target: str
-        :param artifact_package_type: 产物包类型
+        :param artifact_package_type: **参数解释**： 产物包类型，例如jar。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type artifact_package_type: str
-        :param artifact_uri: 制品仓路径
+        :param artifact_uri: **参数解释**： 制品仓文件存放路径。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type artifact_uri: str
-        :param artifact_download_url_with_id: 制品仓下载链接
+        :param artifact_download_url_with_id: **参数解释**： 制品仓下载链接。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type artifact_download_url_with_id: str
-        :param artifact_type: 产物类型
+        :param artifact_type: **参数解释**： 产物类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type artifact_type: str
-        :param hash_code: 哈希码
+        :param hash_code: **参数解释**： 产物哈希码。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type hash_code: list[:class:`huaweicloudsdkcodeartspipeline.v2.ArtifactHashCode`]
-        :param job_id: 构建任务ID
+        :param job_id: **参数解释**： 构建任务ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type job_id: str
-        :param build_no: 构建任务编号
+        :param build_no: **参数解释**： 构建任务编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type build_no: int
-        :param daily_build_number: 构建任务序号
+        :param daily_build_number: **参数解释**： 构建任务序号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type daily_build_number: str
-        :param file_size: 产物大小
+        :param file_size: **参数解释**： 产物大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type file_size: str
         """
         
@@ -129,7 +129,7 @@ class Artifact:
     def project_id(self):
         r"""Gets the project_id of this Artifact.
 
-        项目ID
+        **参数解释**： 项目ID，获取方式请参见[获取项目ID](https://support.huaweicloud.com/api-codeartsrepo/codehub_api_0014.html)。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The project_id of this Artifact.
         :rtype: str
@@ -140,7 +140,7 @@ class Artifact:
     def project_id(self, project_id):
         r"""Sets the project_id of this Artifact.
 
-        项目ID
+        **参数解释**： 项目ID，获取方式请参见[获取项目ID](https://support.huaweicloud.com/api-codeartsrepo/codehub_api_0014.html)。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param project_id: The project_id of this Artifact.
         :type project_id: str
@@ -151,7 +151,7 @@ class Artifact:
     def name(self):
         r"""Gets the name of this Artifact.
 
-        名称
+        **参数解释**： 产物名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this Artifact.
         :rtype: str
@@ -162,7 +162,7 @@ class Artifact:
     def name(self, name):
         r"""Sets the name of this Artifact.
 
-        名称
+        **参数解释**： 产物名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this Artifact.
         :type name: str
@@ -173,7 +173,7 @@ class Artifact:
     def artifact_version(self):
         r"""Gets the artifact_version of this Artifact.
 
-        版本
+        **参数解释**： 产物版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The artifact_version of this Artifact.
         :rtype: str
@@ -184,7 +184,7 @@ class Artifact:
     def artifact_version(self, artifact_version):
         r"""Sets the artifact_version of this Artifact.
 
-        版本
+        **参数解释**： 产物版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param artifact_version: The artifact_version of this Artifact.
         :type artifact_version: str
@@ -195,7 +195,7 @@ class Artifact:
     def upload_target(self):
         r"""Gets the upload_target of this Artifact.
 
-        存放平台类型
+        **参数解释**： 产物存放平台。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The upload_target of this Artifact.
         :rtype: str
@@ -206,7 +206,7 @@ class Artifact:
     def upload_target(self, upload_target):
         r"""Sets the upload_target of this Artifact.
 
-        存放平台类型
+        **参数解释**： 产物存放平台。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param upload_target: The upload_target of this Artifact.
         :type upload_target: str
@@ -217,7 +217,7 @@ class Artifact:
     def artifact_package_type(self):
         r"""Gets the artifact_package_type of this Artifact.
 
-        产物包类型
+        **参数解释**： 产物包类型，例如jar。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The artifact_package_type of this Artifact.
         :rtype: str
@@ -228,7 +228,7 @@ class Artifact:
     def artifact_package_type(self, artifact_package_type):
         r"""Sets the artifact_package_type of this Artifact.
 
-        产物包类型
+        **参数解释**： 产物包类型，例如jar。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param artifact_package_type: The artifact_package_type of this Artifact.
         :type artifact_package_type: str
@@ -239,7 +239,7 @@ class Artifact:
     def artifact_uri(self):
         r"""Gets the artifact_uri of this Artifact.
 
-        制品仓路径
+        **参数解释**： 制品仓文件存放路径。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The artifact_uri of this Artifact.
         :rtype: str
@@ -250,7 +250,7 @@ class Artifact:
     def artifact_uri(self, artifact_uri):
         r"""Sets the artifact_uri of this Artifact.
 
-        制品仓路径
+        **参数解释**： 制品仓文件存放路径。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param artifact_uri: The artifact_uri of this Artifact.
         :type artifact_uri: str
@@ -261,7 +261,7 @@ class Artifact:
     def artifact_download_url_with_id(self):
         r"""Gets the artifact_download_url_with_id of this Artifact.
 
-        制品仓下载链接
+        **参数解释**： 制品仓下载链接。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The artifact_download_url_with_id of this Artifact.
         :rtype: str
@@ -272,7 +272,7 @@ class Artifact:
     def artifact_download_url_with_id(self, artifact_download_url_with_id):
         r"""Sets the artifact_download_url_with_id of this Artifact.
 
-        制品仓下载链接
+        **参数解释**： 制品仓下载链接。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param artifact_download_url_with_id: The artifact_download_url_with_id of this Artifact.
         :type artifact_download_url_with_id: str
@@ -283,7 +283,7 @@ class Artifact:
     def artifact_type(self):
         r"""Gets the artifact_type of this Artifact.
 
-        产物类型
+        **参数解释**： 产物类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The artifact_type of this Artifact.
         :rtype: str
@@ -294,7 +294,7 @@ class Artifact:
     def artifact_type(self, artifact_type):
         r"""Sets the artifact_type of this Artifact.
 
-        产物类型
+        **参数解释**： 产物类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param artifact_type: The artifact_type of this Artifact.
         :type artifact_type: str
@@ -305,7 +305,7 @@ class Artifact:
     def hash_code(self):
         r"""Gets the hash_code of this Artifact.
 
-        哈希码
+        **参数解释**： 产物哈希码。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The hash_code of this Artifact.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.ArtifactHashCode`]
@@ -316,7 +316,7 @@ class Artifact:
     def hash_code(self, hash_code):
         r"""Sets the hash_code of this Artifact.
 
-        哈希码
+        **参数解释**： 产物哈希码。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param hash_code: The hash_code of this Artifact.
         :type hash_code: list[:class:`huaweicloudsdkcodeartspipeline.v2.ArtifactHashCode`]
@@ -327,7 +327,7 @@ class Artifact:
     def job_id(self):
         r"""Gets the job_id of this Artifact.
 
-        构建任务ID
+        **参数解释**： 构建任务ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The job_id of this Artifact.
         :rtype: str
@@ -338,7 +338,7 @@ class Artifact:
     def job_id(self, job_id):
         r"""Sets the job_id of this Artifact.
 
-        构建任务ID
+        **参数解释**： 构建任务ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param job_id: The job_id of this Artifact.
         :type job_id: str
@@ -349,7 +349,7 @@ class Artifact:
     def build_no(self):
         r"""Gets the build_no of this Artifact.
 
-        构建任务编号
+        **参数解释**： 构建任务编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The build_no of this Artifact.
         :rtype: int
@@ -360,7 +360,7 @@ class Artifact:
     def build_no(self, build_no):
         r"""Sets the build_no of this Artifact.
 
-        构建任务编号
+        **参数解释**： 构建任务编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param build_no: The build_no of this Artifact.
         :type build_no: int
@@ -371,7 +371,7 @@ class Artifact:
     def daily_build_number(self):
         r"""Gets the daily_build_number of this Artifact.
 
-        构建任务序号
+        **参数解释**： 构建任务序号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The daily_build_number of this Artifact.
         :rtype: str
@@ -382,7 +382,7 @@ class Artifact:
     def daily_build_number(self, daily_build_number):
         r"""Sets the daily_build_number of this Artifact.
 
-        构建任务序号
+        **参数解释**： 构建任务序号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param daily_build_number: The daily_build_number of this Artifact.
         :type daily_build_number: str
@@ -393,7 +393,7 @@ class Artifact:
     def file_size(self):
         r"""Gets the file_size of this Artifact.
 
-        产物大小
+        **参数解释**： 产物大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The file_size of this Artifact.
         :rtype: str
@@ -404,7 +404,7 @@ class Artifact:
     def file_size(self, file_size):
         r"""Sets the file_size of this Artifact.
 
-        产物大小
+        **参数解释**： 产物大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param file_size: The file_size of this Artifact.
         :type file_size: str

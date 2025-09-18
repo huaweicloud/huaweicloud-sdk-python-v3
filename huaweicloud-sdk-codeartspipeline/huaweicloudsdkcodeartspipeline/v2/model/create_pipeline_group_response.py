@@ -52,29 +52,29 @@ class CreatePipelineGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 分组ID
+        :param id: **参数解释**： 分组ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type id: str
-        :param domain_id: 租户ID
+        :param domain_id: **参数解释**： 租户ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type domain_id: str
-        :param project_id: 项目ID
+        :param project_id: **参数解释**： 项目ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type project_id: str
-        :param name: 分组名
+        :param name: **参数解释**： 分组名。 **取值范围**： 32位字符，由数字和字母组成。 
         :type name: str
-        :param parent_id: 父分组ID
+        :param parent_id: **参数解释**： 父分组ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type parent_id: str
-        :param path_id: 分组路径ID
+        :param path_id: **参数解释**： 分组路径ID。例如id1.id2.id3 代表分组id3的父分组为id2，分组id2的父分组为id1。 **取值范围**： 不涉及。 
         :type path_id: str
-        :param ordinal: 序号
+        :param ordinal: **参数解释**： 序号。 **取值范围**： 大于等于1。 
         :type ordinal: int
-        :param creator: 创建用户ID
+        :param creator: **参数解释**： 创建用户ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type creator: str
-        :param updater: 更新用户ID
+        :param updater: **参数解释**： 更新用户ID。 **取值范围**： 32位字符，由数字和字母组成。 
         :type updater: str
-        :param create_time: 创建时间
+        :param create_time: **参数解释**： 创建时间。 **取值范围**： 不涉及。 
         :type create_time: int
-        :param update_time: 更新时间
+        :param update_time: **参数解释**： 更新时间。 **取值范围**： 不涉及。 
         :type update_time: int
-        :param children: 子分组列表
+        :param children: **参数解释**： 流水线分组详情。 **取值范围**： 不涉及。 
         :type children: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupVo`]
         """
         
@@ -123,7 +123,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this CreatePipelineGroupResponse.
 
-        分组ID
+        **参数解释**： 分组ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The id of this CreatePipelineGroupResponse.
         :rtype: str
@@ -134,7 +134,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this CreatePipelineGroupResponse.
 
-        分组ID
+        **参数解释**： 分组ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param id: The id of this CreatePipelineGroupResponse.
         :type id: str
@@ -145,7 +145,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def domain_id(self):
         r"""Gets the domain_id of this CreatePipelineGroupResponse.
 
-        租户ID
+        **参数解释**： 租户ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The domain_id of this CreatePipelineGroupResponse.
         :rtype: str
@@ -156,7 +156,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def domain_id(self, domain_id):
         r"""Sets the domain_id of this CreatePipelineGroupResponse.
 
-        租户ID
+        **参数解释**： 租户ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param domain_id: The domain_id of this CreatePipelineGroupResponse.
         :type domain_id: str
@@ -167,7 +167,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this CreatePipelineGroupResponse.
 
-        项目ID
+        **参数解释**： 项目ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The project_id of this CreatePipelineGroupResponse.
         :rtype: str
@@ -178,7 +178,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this CreatePipelineGroupResponse.
 
-        项目ID
+        **参数解释**： 项目ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param project_id: The project_id of this CreatePipelineGroupResponse.
         :type project_id: str
@@ -189,7 +189,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this CreatePipelineGroupResponse.
 
-        分组名
+        **参数解释**： 分组名。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The name of this CreatePipelineGroupResponse.
         :rtype: str
@@ -200,7 +200,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this CreatePipelineGroupResponse.
 
-        分组名
+        **参数解释**： 分组名。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param name: The name of this CreatePipelineGroupResponse.
         :type name: str
@@ -211,7 +211,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def parent_id(self):
         r"""Gets the parent_id of this CreatePipelineGroupResponse.
 
-        父分组ID
+        **参数解释**： 父分组ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The parent_id of this CreatePipelineGroupResponse.
         :rtype: str
@@ -222,7 +222,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def parent_id(self, parent_id):
         r"""Sets the parent_id of this CreatePipelineGroupResponse.
 
-        父分组ID
+        **参数解释**： 父分组ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param parent_id: The parent_id of this CreatePipelineGroupResponse.
         :type parent_id: str
@@ -233,7 +233,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def path_id(self):
         r"""Gets the path_id of this CreatePipelineGroupResponse.
 
-        分组路径ID
+        **参数解释**： 分组路径ID。例如id1.id2.id3 代表分组id3的父分组为id2，分组id2的父分组为id1。 **取值范围**： 不涉及。 
 
         :return: The path_id of this CreatePipelineGroupResponse.
         :rtype: str
@@ -244,7 +244,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def path_id(self, path_id):
         r"""Sets the path_id of this CreatePipelineGroupResponse.
 
-        分组路径ID
+        **参数解释**： 分组路径ID。例如id1.id2.id3 代表分组id3的父分组为id2，分组id2的父分组为id1。 **取值范围**： 不涉及。 
 
         :param path_id: The path_id of this CreatePipelineGroupResponse.
         :type path_id: str
@@ -255,7 +255,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def ordinal(self):
         r"""Gets the ordinal of this CreatePipelineGroupResponse.
 
-        序号
+        **参数解释**： 序号。 **取值范围**： 大于等于1。 
 
         :return: The ordinal of this CreatePipelineGroupResponse.
         :rtype: int
@@ -266,7 +266,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def ordinal(self, ordinal):
         r"""Sets the ordinal of this CreatePipelineGroupResponse.
 
-        序号
+        **参数解释**： 序号。 **取值范围**： 大于等于1。 
 
         :param ordinal: The ordinal of this CreatePipelineGroupResponse.
         :type ordinal: int
@@ -277,7 +277,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def creator(self):
         r"""Gets the creator of this CreatePipelineGroupResponse.
 
-        创建用户ID
+        **参数解释**： 创建用户ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The creator of this CreatePipelineGroupResponse.
         :rtype: str
@@ -288,7 +288,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def creator(self, creator):
         r"""Sets the creator of this CreatePipelineGroupResponse.
 
-        创建用户ID
+        **参数解释**： 创建用户ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param creator: The creator of this CreatePipelineGroupResponse.
         :type creator: str
@@ -299,7 +299,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def updater(self):
         r"""Gets the updater of this CreatePipelineGroupResponse.
 
-        更新用户ID
+        **参数解释**： 更新用户ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The updater of this CreatePipelineGroupResponse.
         :rtype: str
@@ -310,7 +310,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def updater(self, updater):
         r"""Sets the updater of this CreatePipelineGroupResponse.
 
-        更新用户ID
+        **参数解释**： 更新用户ID。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param updater: The updater of this CreatePipelineGroupResponse.
         :type updater: str
@@ -321,7 +321,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this CreatePipelineGroupResponse.
 
-        创建时间
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。 
 
         :return: The create_time of this CreatePipelineGroupResponse.
         :rtype: int
@@ -332,7 +332,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this CreatePipelineGroupResponse.
 
-        创建时间
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。 
 
         :param create_time: The create_time of this CreatePipelineGroupResponse.
         :type create_time: int
@@ -343,7 +343,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def update_time(self):
         r"""Gets the update_time of this CreatePipelineGroupResponse.
 
-        更新时间
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。 
 
         :return: The update_time of this CreatePipelineGroupResponse.
         :rtype: int
@@ -354,7 +354,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def update_time(self, update_time):
         r"""Sets the update_time of this CreatePipelineGroupResponse.
 
-        更新时间
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。 
 
         :param update_time: The update_time of this CreatePipelineGroupResponse.
         :type update_time: int
@@ -365,7 +365,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def children(self):
         r"""Gets the children of this CreatePipelineGroupResponse.
 
-        子分组列表
+        **参数解释**： 流水线分组详情。 **取值范围**： 不涉及。 
 
         :return: The children of this CreatePipelineGroupResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupVo`]
@@ -376,7 +376,7 @@ class CreatePipelineGroupResponse(SdkResponse):
     def children(self, children):
         r"""Sets the children of this CreatePipelineGroupResponse.
 
-        子分组列表
+        **参数解释**： 流水线分组详情。 **取值范围**： 不涉及。 
 
         :param children: The children of this CreatePipelineGroupResponse.
         :type children: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineGroupVo`]

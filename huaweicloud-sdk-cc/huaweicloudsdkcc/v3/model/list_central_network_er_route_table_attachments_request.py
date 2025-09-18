@@ -45,7 +45,7 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 每页返回的个数。 取值范围：1~1000。
+        :param limit: 每页返回的个数。 取值范围：1~2000。
         :type limit: int
         :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
         :type marker: str
@@ -55,7 +55,7 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
         :type sort_dir: :class:`huaweicloudsdkcc.v3.SortDir`
         :param id: 根据ID查询，可查询多个ID。
         :type id: list[str]
-        :param name: 根据名字查询，可查询多个名字。
+        :param name: 根据名称查询，可查询多个名称。
         :type name: list[str]
         :param state: 根据状态查询，可查询多个状态。
         :type state: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`]
@@ -100,7 +100,7 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
     def limit(self):
         r"""Gets the limit of this ListCentralNetworkErRouteTableAttachmentsRequest.
 
-        每页返回的个数。 取值范围：1~1000。
+        每页返回的个数。 取值范围：1~2000。
 
         :return: The limit of this ListCentralNetworkErRouteTableAttachmentsRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListCentralNetworkErRouteTableAttachmentsRequest.
 
-        每页返回的个数。 取值范围：1~1000。
+        每页返回的个数。 取值范围：1~2000。
 
         :param limit: The limit of this ListCentralNetworkErRouteTableAttachmentsRequest.
         :type limit: int
@@ -210,7 +210,7 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
     def name(self):
         r"""Gets the name of this ListCentralNetworkErRouteTableAttachmentsRequest.
 
-        根据名字查询，可查询多个名字。
+        根据名称查询，可查询多个名称。
 
         :return: The name of this ListCentralNetworkErRouteTableAttachmentsRequest.
         :rtype: list[str]
@@ -221,7 +221,7 @@ class ListCentralNetworkErRouteTableAttachmentsRequest:
     def name(self, name):
         r"""Sets the name of this ListCentralNetworkErRouteTableAttachmentsRequest.
 
-        根据名字查询，可查询多个名字。
+        根据名称查询，可查询多个名称。
 
         :param name: The name of this ListCentralNetworkErRouteTableAttachmentsRequest.
         :type name: list[str]

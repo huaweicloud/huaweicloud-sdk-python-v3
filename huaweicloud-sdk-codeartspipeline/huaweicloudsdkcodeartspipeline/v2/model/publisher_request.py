@@ -45,23 +45,23 @@ class PublisherRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: **参数解释**： 发布商名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type name: str
-        :param user_id: 用户ID
+        :param user_id: **参数解释**： 用户ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type user_id: str
-        :param description: 描述
+        :param description: **参数解释**： 发布商描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type description: str
-        :param logo_url: 图标URL
+        :param logo_url: **参数解释**： 发布商图标URL。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type logo_url: str
-        :param website: 网页地址
+        :param website: **参数解释**： 发布商网页地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type website: str
-        :param support_url: 地址
+        :param support_url: **参数解释**： 发布商帮助地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type support_url: str
-        :param source_url: 地址
+        :param source_url: **参数解释**： 发布商源码地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type source_url: str
-        :param en_name: 英文名
+        :param en_name: **参数解释**： 发布商英文名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type en_name: str
-        :param publisher_unique_id: 唯一ID
+        :param publisher_unique_id: **参数解释**： 发布商ID。可通过[查询发布商详情](ShowPublisher.xml)查询。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type publisher_unique_id: str
         """
         
@@ -98,7 +98,7 @@ class PublisherRequest:
     def name(self):
         r"""Gets the name of this PublisherRequest.
 
-        名称
+        **参数解释**： 发布商名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this PublisherRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class PublisherRequest:
     def name(self, name):
         r"""Sets the name of this PublisherRequest.
 
-        名称
+        **参数解释**： 发布商名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this PublisherRequest.
         :type name: str
@@ -120,7 +120,7 @@ class PublisherRequest:
     def user_id(self):
         r"""Gets the user_id of this PublisherRequest.
 
-        用户ID
+        **参数解释**： 用户ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The user_id of this PublisherRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class PublisherRequest:
     def user_id(self, user_id):
         r"""Sets the user_id of this PublisherRequest.
 
-        用户ID
+        **参数解释**： 用户ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param user_id: The user_id of this PublisherRequest.
         :type user_id: str
@@ -142,7 +142,7 @@ class PublisherRequest:
     def description(self):
         r"""Gets the description of this PublisherRequest.
 
-        描述
+        **参数解释**： 发布商描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The description of this PublisherRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class PublisherRequest:
     def description(self, description):
         r"""Sets the description of this PublisherRequest.
 
-        描述
+        **参数解释**： 发布商描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param description: The description of this PublisherRequest.
         :type description: str
@@ -164,7 +164,7 @@ class PublisherRequest:
     def logo_url(self):
         r"""Gets the logo_url of this PublisherRequest.
 
-        图标URL
+        **参数解释**： 发布商图标URL。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The logo_url of this PublisherRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class PublisherRequest:
     def logo_url(self, logo_url):
         r"""Sets the logo_url of this PublisherRequest.
 
-        图标URL
+        **参数解释**： 发布商图标URL。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param logo_url: The logo_url of this PublisherRequest.
         :type logo_url: str
@@ -186,7 +186,7 @@ class PublisherRequest:
     def website(self):
         r"""Gets the website of this PublisherRequest.
 
-        网页地址
+        **参数解释**： 发布商网页地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The website of this PublisherRequest.
         :rtype: str
@@ -197,7 +197,7 @@ class PublisherRequest:
     def website(self, website):
         r"""Sets the website of this PublisherRequest.
 
-        网页地址
+        **参数解释**： 发布商网页地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param website: The website of this PublisherRequest.
         :type website: str
@@ -208,7 +208,7 @@ class PublisherRequest:
     def support_url(self):
         r"""Gets the support_url of this PublisherRequest.
 
-        地址
+        **参数解释**： 发布商帮助地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The support_url of this PublisherRequest.
         :rtype: str
@@ -219,7 +219,7 @@ class PublisherRequest:
     def support_url(self, support_url):
         r"""Sets the support_url of this PublisherRequest.
 
-        地址
+        **参数解释**： 发布商帮助地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param support_url: The support_url of this PublisherRequest.
         :type support_url: str
@@ -230,7 +230,7 @@ class PublisherRequest:
     def source_url(self):
         r"""Gets the source_url of this PublisherRequest.
 
-        地址
+        **参数解释**： 发布商源码地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The source_url of this PublisherRequest.
         :rtype: str
@@ -241,7 +241,7 @@ class PublisherRequest:
     def source_url(self, source_url):
         r"""Sets the source_url of this PublisherRequest.
 
-        地址
+        **参数解释**： 发布商源码地址。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param source_url: The source_url of this PublisherRequest.
         :type source_url: str
@@ -252,7 +252,7 @@ class PublisherRequest:
     def en_name(self):
         r"""Gets the en_name of this PublisherRequest.
 
-        英文名
+        **参数解释**： 发布商英文名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The en_name of this PublisherRequest.
         :rtype: str
@@ -263,7 +263,7 @@ class PublisherRequest:
     def en_name(self, en_name):
         r"""Sets the en_name of this PublisherRequest.
 
-        英文名
+        **参数解释**： 发布商英文名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param en_name: The en_name of this PublisherRequest.
         :type en_name: str
@@ -274,7 +274,7 @@ class PublisherRequest:
     def publisher_unique_id(self):
         r"""Gets the publisher_unique_id of this PublisherRequest.
 
-        唯一ID
+        **参数解释**： 发布商ID。可通过[查询发布商详情](ShowPublisher.xml)查询。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The publisher_unique_id of this PublisherRequest.
         :rtype: str
@@ -285,7 +285,7 @@ class PublisherRequest:
     def publisher_unique_id(self, publisher_unique_id):
         r"""Sets the publisher_unique_id of this PublisherRequest.
 
-        唯一ID
+        **参数解释**： 发布商ID。可通过[查询发布商详情](ShowPublisher.xml)查询。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param publisher_unique_id: The publisher_unique_id of this PublisherRequest.
         :type publisher_unique_id: str

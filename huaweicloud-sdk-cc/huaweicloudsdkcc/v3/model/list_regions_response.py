@@ -19,32 +19,39 @@ class ListRegionsResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
+        'page_info': 'PageInfo',
         'regions': 'list[Region]'
     }
 
     attribute_map = {
         'request_id': 'request_id',
+        'page_info': 'page_info',
         'regions': 'regions'
     }
 
-    def __init__(self, request_id=None, regions=None):
+    def __init__(self, request_id=None, page_info=None, regions=None):
         r"""ListRegionsResponse
 
         The model defined in huaweicloud sdk
 
         :param request_id: 请求ID。
         :type request_id: str
-        :param regions: 网络实例列表。
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
+        :param regions: 区域列表。
         :type regions: list[:class:`huaweicloudsdkcc.v3.Region`]
         """
         
         super(ListRegionsResponse, self).__init__()
 
         self._request_id = None
+        self._page_info = None
         self._regions = None
         self.discriminator = None
 
         self.request_id = request_id
+        if page_info is not None:
+            self.page_info = page_info
         self.regions = regions
 
     @property
@@ -70,10 +77,28 @@ class ListRegionsResponse(SdkResponse):
         self._request_id = request_id
 
     @property
+    def page_info(self):
+        r"""Gets the page_info of this ListRegionsResponse.
+
+        :return: The page_info of this ListRegionsResponse.
+        :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListRegionsResponse.
+
+        :param page_info: The page_info of this ListRegionsResponse.
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
+        """
+        self._page_info = page_info
+
+    @property
     def regions(self):
         r"""Gets the regions of this ListRegionsResponse.
 
-        网络实例列表。
+        区域列表。
 
         :return: The regions of this ListRegionsResponse.
         :rtype: list[:class:`huaweicloudsdkcc.v3.Region`]
@@ -84,7 +109,7 @@ class ListRegionsResponse(SdkResponse):
     def regions(self, regions):
         r"""Sets the regions of this ListRegionsResponse.
 
-        网络实例列表。
+        区域列表。
 
         :param regions: The regions of this ListRegionsResponse.
         :type regions: list[:class:`huaweicloudsdkcc.v3.Region`]

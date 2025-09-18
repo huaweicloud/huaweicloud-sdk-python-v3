@@ -37,15 +37,15 @@ class RunPipelineDTO:
 
         The model defined in huaweicloud sdk
 
-        :param sources: 使用的源
+        :param sources: **参数解释**： 代码源信息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOSources`]
-        :param description: 运行描述
+        :param description: **参数解释**： 流水线运行描述。 **约束限制**： 不涉及。 **取值范围**： 不超过1024字符。 **默认取值**： 不涉及。 
         :type description: str
-        :param variables: 使用的自定义参数
+        :param variables: **参数解释**： 使用的自定义参数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOVariables`]
-        :param choose_jobs: 选择的任务
+        :param choose_jobs: **参数解释**： 流水线运行时选择的流水线任务。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type choose_jobs: list[str]
-        :param choose_stages: 选择的阶段
+        :param choose_stages: **参数解释**： 选择的流水线阶段。优先级高于choose_jobs，即stage未选择时，无视choose_jobs中该stage下的job。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type choose_stages: list[str]
         """
         
@@ -73,7 +73,7 @@ class RunPipelineDTO:
     def sources(self):
         r"""Gets the sources of this RunPipelineDTO.
 
-        使用的源
+        **参数解释**： 代码源信息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The sources of this RunPipelineDTO.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOSources`]
@@ -84,7 +84,7 @@ class RunPipelineDTO:
     def sources(self, sources):
         r"""Sets the sources of this RunPipelineDTO.
 
-        使用的源
+        **参数解释**： 代码源信息列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param sources: The sources of this RunPipelineDTO.
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOSources`]
@@ -95,7 +95,7 @@ class RunPipelineDTO:
     def description(self):
         r"""Gets the description of this RunPipelineDTO.
 
-        运行描述
+        **参数解释**： 流水线运行描述。 **约束限制**： 不涉及。 **取值范围**： 不超过1024字符。 **默认取值**： 不涉及。 
 
         :return: The description of this RunPipelineDTO.
         :rtype: str
@@ -106,7 +106,7 @@ class RunPipelineDTO:
     def description(self, description):
         r"""Sets the description of this RunPipelineDTO.
 
-        运行描述
+        **参数解释**： 流水线运行描述。 **约束限制**： 不涉及。 **取值范围**： 不超过1024字符。 **默认取值**： 不涉及。 
 
         :param description: The description of this RunPipelineDTO.
         :type description: str
@@ -117,7 +117,7 @@ class RunPipelineDTO:
     def variables(self):
         r"""Gets the variables of this RunPipelineDTO.
 
-        使用的自定义参数
+        **参数解释**： 使用的自定义参数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The variables of this RunPipelineDTO.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOVariables`]
@@ -128,7 +128,7 @@ class RunPipelineDTO:
     def variables(self, variables):
         r"""Sets the variables of this RunPipelineDTO.
 
-        使用的自定义参数
+        **参数解释**： 使用的自定义参数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param variables: The variables of this RunPipelineDTO.
         :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOVariables`]
@@ -139,7 +139,7 @@ class RunPipelineDTO:
     def choose_jobs(self):
         r"""Gets the choose_jobs of this RunPipelineDTO.
 
-        选择的任务
+        **参数解释**： 流水线运行时选择的流水线任务。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The choose_jobs of this RunPipelineDTO.
         :rtype: list[str]
@@ -150,7 +150,7 @@ class RunPipelineDTO:
     def choose_jobs(self, choose_jobs):
         r"""Sets the choose_jobs of this RunPipelineDTO.
 
-        选择的任务
+        **参数解释**： 流水线运行时选择的流水线任务。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param choose_jobs: The choose_jobs of this RunPipelineDTO.
         :type choose_jobs: list[str]
@@ -161,7 +161,7 @@ class RunPipelineDTO:
     def choose_stages(self):
         r"""Gets the choose_stages of this RunPipelineDTO.
 
-        选择的阶段
+        **参数解释**： 选择的流水线阶段。优先级高于choose_jobs，即stage未选择时，无视choose_jobs中该stage下的job。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The choose_stages of this RunPipelineDTO.
         :rtype: list[str]
@@ -172,7 +172,7 @@ class RunPipelineDTO:
     def choose_stages(self, choose_stages):
         r"""Sets the choose_stages of this RunPipelineDTO.
 
-        选择的阶段
+        **参数解释**： 选择的流水线阶段。优先级高于choose_jobs，即stage未选择时，无视choose_jobs中该stage下的job。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param choose_stages: The choose_stages of this RunPipelineDTO.
         :type choose_stages: list[str]

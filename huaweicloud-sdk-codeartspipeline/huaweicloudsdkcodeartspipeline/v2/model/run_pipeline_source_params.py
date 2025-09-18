@@ -47,23 +47,23 @@ class RunPipelineSourceParams:
 
         The model defined in huaweicloud sdk
 
-        :param git_type: 代码仓类型
+        :param git_type: **参数解释**： 代码仓类型。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 
         :type git_type: str
-        :param git_url: 代码仓https地址
+        :param git_url: **参数解释**： 代码仓https地址。 **取值范围**： 不涉及。 
         :type git_url: str
-        :param ssh_git_url: 代码仓ssh地址
+        :param ssh_git_url: **参数解释**： 代码仓ssh地址。 **取值范围**： 不涉及。 
         :type ssh_git_url: str
-        :param web_url: 代码仓页面地址
+        :param web_url: **参数解释**： 代码仓页面地址。 **取值范围**： 不涉及。 
         :type web_url: str
-        :param repo_name: 代码仓名
+        :param repo_name: **参数解释**： 代码仓名。 **取值范围**： 不涉及。 
         :type repo_name: str
-        :param default_branch: 默认分支
+        :param default_branch: **参数解释**： 默认分支。 **取值范围**： 不涉及。 
         :type default_branch: str
-        :param endpoint_id: 扩展点ID
+        :param endpoint_id: **参数解释**： 扩展点ID。 **取值范围**： 不涉及。 
         :type endpoint_id: str
-        :param codehub_id: codehub代码仓ID
+        :param codehub_id: **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
         :type codehub_id: str
-        :param alias: 代码仓别名
+        :param alias: **参数解释**： 代码仓别名。 **取值范围**： 不涉及。 
         :type alias: str
         :param build_params: 
         :type build_params: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineSourceParamsBuildParams`
@@ -108,7 +108,7 @@ class RunPipelineSourceParams:
     def git_type(self):
         r"""Gets the git_type of this RunPipelineSourceParams.
 
-        代码仓类型
+        **参数解释**： 代码仓类型。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 
 
         :return: The git_type of this RunPipelineSourceParams.
         :rtype: str
@@ -119,7 +119,7 @@ class RunPipelineSourceParams:
     def git_type(self, git_type):
         r"""Sets the git_type of this RunPipelineSourceParams.
 
-        代码仓类型
+        **参数解释**： 代码仓类型。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 
 
         :param git_type: The git_type of this RunPipelineSourceParams.
         :type git_type: str
@@ -130,7 +130,7 @@ class RunPipelineSourceParams:
     def git_url(self):
         r"""Gets the git_url of this RunPipelineSourceParams.
 
-        代码仓https地址
+        **参数解释**： 代码仓https地址。 **取值范围**： 不涉及。 
 
         :return: The git_url of this RunPipelineSourceParams.
         :rtype: str
@@ -141,7 +141,7 @@ class RunPipelineSourceParams:
     def git_url(self, git_url):
         r"""Sets the git_url of this RunPipelineSourceParams.
 
-        代码仓https地址
+        **参数解释**： 代码仓https地址。 **取值范围**： 不涉及。 
 
         :param git_url: The git_url of this RunPipelineSourceParams.
         :type git_url: str
@@ -152,7 +152,7 @@ class RunPipelineSourceParams:
     def ssh_git_url(self):
         r"""Gets the ssh_git_url of this RunPipelineSourceParams.
 
-        代码仓ssh地址
+        **参数解释**： 代码仓ssh地址。 **取值范围**： 不涉及。 
 
         :return: The ssh_git_url of this RunPipelineSourceParams.
         :rtype: str
@@ -163,7 +163,7 @@ class RunPipelineSourceParams:
     def ssh_git_url(self, ssh_git_url):
         r"""Sets the ssh_git_url of this RunPipelineSourceParams.
 
-        代码仓ssh地址
+        **参数解释**： 代码仓ssh地址。 **取值范围**： 不涉及。 
 
         :param ssh_git_url: The ssh_git_url of this RunPipelineSourceParams.
         :type ssh_git_url: str
@@ -174,7 +174,7 @@ class RunPipelineSourceParams:
     def web_url(self):
         r"""Gets the web_url of this RunPipelineSourceParams.
 
-        代码仓页面地址
+        **参数解释**： 代码仓页面地址。 **取值范围**： 不涉及。 
 
         :return: The web_url of this RunPipelineSourceParams.
         :rtype: str
@@ -185,7 +185,7 @@ class RunPipelineSourceParams:
     def web_url(self, web_url):
         r"""Sets the web_url of this RunPipelineSourceParams.
 
-        代码仓页面地址
+        **参数解释**： 代码仓页面地址。 **取值范围**： 不涉及。 
 
         :param web_url: The web_url of this RunPipelineSourceParams.
         :type web_url: str
@@ -196,7 +196,7 @@ class RunPipelineSourceParams:
     def repo_name(self):
         r"""Gets the repo_name of this RunPipelineSourceParams.
 
-        代码仓名
+        **参数解释**： 代码仓名。 **取值范围**： 不涉及。 
 
         :return: The repo_name of this RunPipelineSourceParams.
         :rtype: str
@@ -207,7 +207,7 @@ class RunPipelineSourceParams:
     def repo_name(self, repo_name):
         r"""Sets the repo_name of this RunPipelineSourceParams.
 
-        代码仓名
+        **参数解释**： 代码仓名。 **取值范围**： 不涉及。 
 
         :param repo_name: The repo_name of this RunPipelineSourceParams.
         :type repo_name: str
@@ -218,7 +218,7 @@ class RunPipelineSourceParams:
     def default_branch(self):
         r"""Gets the default_branch of this RunPipelineSourceParams.
 
-        默认分支
+        **参数解释**： 默认分支。 **取值范围**： 不涉及。 
 
         :return: The default_branch of this RunPipelineSourceParams.
         :rtype: str
@@ -229,7 +229,7 @@ class RunPipelineSourceParams:
     def default_branch(self, default_branch):
         r"""Sets the default_branch of this RunPipelineSourceParams.
 
-        默认分支
+        **参数解释**： 默认分支。 **取值范围**： 不涉及。 
 
         :param default_branch: The default_branch of this RunPipelineSourceParams.
         :type default_branch: str
@@ -240,7 +240,7 @@ class RunPipelineSourceParams:
     def endpoint_id(self):
         r"""Gets the endpoint_id of this RunPipelineSourceParams.
 
-        扩展点ID
+        **参数解释**： 扩展点ID。 **取值范围**： 不涉及。 
 
         :return: The endpoint_id of this RunPipelineSourceParams.
         :rtype: str
@@ -251,7 +251,7 @@ class RunPipelineSourceParams:
     def endpoint_id(self, endpoint_id):
         r"""Sets the endpoint_id of this RunPipelineSourceParams.
 
-        扩展点ID
+        **参数解释**： 扩展点ID。 **取值范围**： 不涉及。 
 
         :param endpoint_id: The endpoint_id of this RunPipelineSourceParams.
         :type endpoint_id: str
@@ -262,7 +262,7 @@ class RunPipelineSourceParams:
     def codehub_id(self):
         r"""Gets the codehub_id of this RunPipelineSourceParams.
 
-        codehub代码仓ID
+        **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :return: The codehub_id of this RunPipelineSourceParams.
         :rtype: str
@@ -273,7 +273,7 @@ class RunPipelineSourceParams:
     def codehub_id(self, codehub_id):
         r"""Sets the codehub_id of this RunPipelineSourceParams.
 
-        codehub代码仓ID
+        **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :param codehub_id: The codehub_id of this RunPipelineSourceParams.
         :type codehub_id: str
@@ -284,7 +284,7 @@ class RunPipelineSourceParams:
     def alias(self):
         r"""Gets the alias of this RunPipelineSourceParams.
 
-        代码仓别名
+        **参数解释**： 代码仓别名。 **取值范围**： 不涉及。 
 
         :return: The alias of this RunPipelineSourceParams.
         :rtype: str
@@ -295,7 +295,7 @@ class RunPipelineSourceParams:
     def alias(self, alias):
         r"""Sets the alias of this RunPipelineSourceParams.
 
-        代码仓别名
+        **参数解释**： 代码仓别名。 **取值范围**： 不涉及。 
 
         :param alias: The alias of this RunPipelineSourceParams.
         :type alias: str

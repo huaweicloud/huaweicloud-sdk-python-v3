@@ -39,17 +39,17 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
 
         The model defined in huaweicloud sdk
 
-        :param unique_id: 唯一ID
+        :param unique_id: **参数解释**： 唯一ID。 **取值范围**： 不涉及。 
         :type unique_id: str
-        :param plugin_name: 插件名
+        :param plugin_name: **参数解释**： 扩展插件名称。 **取值范围**： 不涉及。 
         :type plugin_name: str
-        :param version: 版本
+        :param version: **参数解释**： 扩展插件版本号。 **取值范围**： 不涉及。 
         :type version: str
-        :param workspace_id: 租户ID
+        :param workspace_id: **参数解释**： 租户ID。 **取值范围**： 不涉及。 
         :type workspace_id: str
-        :param output_key: 名称
+        :param output_key: **参数解释**： 定义的插件输出名称。 **取值范围**： 不涉及。 
         :type output_key: str
-        :param output_value: 值
+        :param output_value: **参数解释**： 定义的插件输出内容。 **取值范围**： 不涉及。 
         :type output_value: str
         """
         
@@ -80,7 +80,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def unique_id(self):
         r"""Gets the unique_id of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        唯一ID
+        **参数解释**： 唯一ID。 **取值范围**： 不涉及。 
 
         :return: The unique_id of this PluginPartQueryVOListAgentPluginOutputVOData.
         :rtype: str
@@ -91,7 +91,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def unique_id(self, unique_id):
         r"""Sets the unique_id of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        唯一ID
+        **参数解释**： 唯一ID。 **取值范围**： 不涉及。 
 
         :param unique_id: The unique_id of this PluginPartQueryVOListAgentPluginOutputVOData.
         :type unique_id: str
@@ -102,7 +102,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def plugin_name(self):
         r"""Gets the plugin_name of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        插件名
+        **参数解释**： 扩展插件名称。 **取值范围**： 不涉及。 
 
         :return: The plugin_name of this PluginPartQueryVOListAgentPluginOutputVOData.
         :rtype: str
@@ -113,7 +113,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        插件名
+        **参数解释**： 扩展插件名称。 **取值范围**： 不涉及。 
 
         :param plugin_name: The plugin_name of this PluginPartQueryVOListAgentPluginOutputVOData.
         :type plugin_name: str
@@ -124,7 +124,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def version(self):
         r"""Gets the version of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        版本
+        **参数解释**： 扩展插件版本号。 **取值范围**： 不涉及。 
 
         :return: The version of this PluginPartQueryVOListAgentPluginOutputVOData.
         :rtype: str
@@ -135,7 +135,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def version(self, version):
         r"""Sets the version of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        版本
+        **参数解释**： 扩展插件版本号。 **取值范围**： 不涉及。 
 
         :param version: The version of this PluginPartQueryVOListAgentPluginOutputVOData.
         :type version: str
@@ -146,7 +146,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def workspace_id(self):
         r"""Gets the workspace_id of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        租户ID
+        **参数解释**： 租户ID。 **取值范围**： 不涉及。 
 
         :return: The workspace_id of this PluginPartQueryVOListAgentPluginOutputVOData.
         :rtype: str
@@ -157,7 +157,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def workspace_id(self, workspace_id):
         r"""Sets the workspace_id of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        租户ID
+        **参数解释**： 租户ID。 **取值范围**： 不涉及。 
 
         :param workspace_id: The workspace_id of this PluginPartQueryVOListAgentPluginOutputVOData.
         :type workspace_id: str
@@ -168,7 +168,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def output_key(self):
         r"""Gets the output_key of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        名称
+        **参数解释**： 定义的插件输出名称。 **取值范围**： 不涉及。 
 
         :return: The output_key of this PluginPartQueryVOListAgentPluginOutputVOData.
         :rtype: str
@@ -179,7 +179,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def output_key(self, output_key):
         r"""Sets the output_key of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        名称
+        **参数解释**： 定义的插件输出名称。 **取值范围**： 不涉及。 
 
         :param output_key: The output_key of this PluginPartQueryVOListAgentPluginOutputVOData.
         :type output_key: str
@@ -190,7 +190,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def output_value(self):
         r"""Gets the output_value of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        值
+        **参数解释**： 定义的插件输出内容。 **取值范围**： 不涉及。 
 
         :return: The output_value of this PluginPartQueryVOListAgentPluginOutputVOData.
         :rtype: str
@@ -201,7 +201,7 @@ class PluginPartQueryVOListAgentPluginOutputVOData:
     def output_value(self, output_value):
         r"""Sets the output_value of this PluginPartQueryVOListAgentPluginOutputVOData.
 
-        值
+        **参数解释**： 定义的插件输出内容。 **取值范围**： 不涉及。 
 
         :param output_value: The output_value of this PluginPartQueryVOListAgentPluginOutputVOData.
         :type output_value: str

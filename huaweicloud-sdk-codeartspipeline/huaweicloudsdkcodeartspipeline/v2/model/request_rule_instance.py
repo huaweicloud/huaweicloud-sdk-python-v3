@@ -31,9 +31,9 @@ class RequestRuleInstance:
 
         The model defined in huaweicloud sdk
 
-        :param id: 规则实例ID
+        :param id: **参数解释**： 规则实例ID **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type id: str
-        :param is_valid: 规则实例状态
+        :param is_valid: **参数解释**： 规则实例状态 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type is_valid: bool
         """
         
@@ -52,7 +52,7 @@ class RequestRuleInstance:
     def id(self):
         r"""Gets the id of this RequestRuleInstance.
 
-        规则实例ID
+        **参数解释**： 规则实例ID **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The id of this RequestRuleInstance.
         :rtype: str
@@ -63,7 +63,7 @@ class RequestRuleInstance:
     def id(self, id):
         r"""Sets the id of this RequestRuleInstance.
 
-        规则实例ID
+        **参数解释**： 规则实例ID **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param id: The id of this RequestRuleInstance.
         :type id: str
@@ -74,7 +74,7 @@ class RequestRuleInstance:
     def is_valid(self):
         r"""Gets the is_valid of this RequestRuleInstance.
 
-        规则实例状态
+        **参数解释**： 规则实例状态 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The is_valid of this RequestRuleInstance.
         :rtype: bool
@@ -85,7 +85,7 @@ class RequestRuleInstance:
     def is_valid(self, is_valid):
         r"""Sets the is_valid of this RequestRuleInstance.
 
-        规则实例状态
+        **参数解释**： 规则实例状态 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param is_valid: The is_valid of this RequestRuleInstance.
         :type is_valid: bool

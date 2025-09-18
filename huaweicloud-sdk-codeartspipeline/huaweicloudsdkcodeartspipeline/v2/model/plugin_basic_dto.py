@@ -51,29 +51,29 @@ class PluginBasicDTO:
 
         The model defined in huaweicloud sdk
 
-        :param unique_id: 唯一ID
+        :param unique_id: **参数解释**： 扩展插件UUID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type unique_id: str
-        :param icon_url: 图标URL
+        :param icon_url: **参数解释**： 扩展插件图标URL。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type icon_url: str
-        :param runtime_attribution: 运行属性
+        :param runtime_attribution: **参数解释**： 运行属性。 **约束限制**： 不涉及。 **取值范围**： - agent：基于agent运行。 - agentless：无需agent运行。 **默认取值**： 不涉及。 
         :type runtime_attribution: str
-        :param plugin_name: 插件名
+        :param plugin_name: **参数解释**： 扩展插件唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type plugin_name: str
-        :param display_name: 展示名
+        :param display_name: **参数解释**： 扩展插件展示名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type display_name: str
-        :param business_type: 业务类型
+        :param business_type: **参数解释**： 扩展插件业务类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type business_type: str
-        :param business_type_display_name: 业务类型展示名
+        :param business_type_display_name: **参数解释**： 扩展插件业务类型展示名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type business_type_display_name: str
-        :param description: 描述
+        :param description: **参数解释**： 扩展插件描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type description: str
-        :param is_private: 是否私有
+        :param is_private: **参数解释**： 是否私有。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type is_private: int
-        :param region: 局点
+        :param region: **参数解释**： 局点。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type region: str
-        :param maintainers: 维护者
+        :param maintainers: **参数解释**： 维护者。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type maintainers: str
-        :param plugin_composition_type: 组合插件类型
+        :param plugin_composition_type: **参数解释**： 标识是否为多个step组成的组。 **约束限制**： 不涉及。 **取值范围**： - single：单step插件。 - multi：组合插件。 **默认取值**： 不涉及。 
         :type plugin_composition_type: str
         """
         
@@ -118,7 +118,7 @@ class PluginBasicDTO:
     def unique_id(self):
         r"""Gets the unique_id of this PluginBasicDTO.
 
-        唯一ID
+        **参数解释**： 扩展插件UUID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :return: The unique_id of this PluginBasicDTO.
         :rtype: str
@@ -129,7 +129,7 @@ class PluginBasicDTO:
     def unique_id(self, unique_id):
         r"""Sets the unique_id of this PluginBasicDTO.
 
-        唯一ID
+        **参数解释**： 扩展插件UUID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
 
         :param unique_id: The unique_id of this PluginBasicDTO.
         :type unique_id: str
@@ -140,7 +140,7 @@ class PluginBasicDTO:
     def icon_url(self):
         r"""Gets the icon_url of this PluginBasicDTO.
 
-        图标URL
+        **参数解释**： 扩展插件图标URL。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The icon_url of this PluginBasicDTO.
         :rtype: str
@@ -151,7 +151,7 @@ class PluginBasicDTO:
     def icon_url(self, icon_url):
         r"""Sets the icon_url of this PluginBasicDTO.
 
-        图标URL
+        **参数解释**： 扩展插件图标URL。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param icon_url: The icon_url of this PluginBasicDTO.
         :type icon_url: str
@@ -162,7 +162,7 @@ class PluginBasicDTO:
     def runtime_attribution(self):
         r"""Gets the runtime_attribution of this PluginBasicDTO.
 
-        运行属性
+        **参数解释**： 运行属性。 **约束限制**： 不涉及。 **取值范围**： - agent：基于agent运行。 - agentless：无需agent运行。 **默认取值**： 不涉及。 
 
         :return: The runtime_attribution of this PluginBasicDTO.
         :rtype: str
@@ -173,7 +173,7 @@ class PluginBasicDTO:
     def runtime_attribution(self, runtime_attribution):
         r"""Sets the runtime_attribution of this PluginBasicDTO.
 
-        运行属性
+        **参数解释**： 运行属性。 **约束限制**： 不涉及。 **取值范围**： - agent：基于agent运行。 - agentless：无需agent运行。 **默认取值**： 不涉及。 
 
         :param runtime_attribution: The runtime_attribution of this PluginBasicDTO.
         :type runtime_attribution: str
@@ -184,7 +184,7 @@ class PluginBasicDTO:
     def plugin_name(self):
         r"""Gets the plugin_name of this PluginBasicDTO.
 
-        插件名
+        **参数解释**： 扩展插件唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The plugin_name of this PluginBasicDTO.
         :rtype: str
@@ -195,7 +195,7 @@ class PluginBasicDTO:
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this PluginBasicDTO.
 
-        插件名
+        **参数解释**： 扩展插件唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param plugin_name: The plugin_name of this PluginBasicDTO.
         :type plugin_name: str
@@ -206,7 +206,7 @@ class PluginBasicDTO:
     def display_name(self):
         r"""Gets the display_name of this PluginBasicDTO.
 
-        展示名
+        **参数解释**： 扩展插件展示名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The display_name of this PluginBasicDTO.
         :rtype: str
@@ -217,7 +217,7 @@ class PluginBasicDTO:
     def display_name(self, display_name):
         r"""Sets the display_name of this PluginBasicDTO.
 
-        展示名
+        **参数解释**： 扩展插件展示名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param display_name: The display_name of this PluginBasicDTO.
         :type display_name: str
@@ -228,7 +228,7 @@ class PluginBasicDTO:
     def business_type(self):
         r"""Gets the business_type of this PluginBasicDTO.
 
-        业务类型
+        **参数解释**： 扩展插件业务类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The business_type of this PluginBasicDTO.
         :rtype: str
@@ -239,7 +239,7 @@ class PluginBasicDTO:
     def business_type(self, business_type):
         r"""Sets the business_type of this PluginBasicDTO.
 
-        业务类型
+        **参数解释**： 扩展插件业务类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param business_type: The business_type of this PluginBasicDTO.
         :type business_type: str
@@ -250,7 +250,7 @@ class PluginBasicDTO:
     def business_type_display_name(self):
         r"""Gets the business_type_display_name of this PluginBasicDTO.
 
-        业务类型展示名
+        **参数解释**： 扩展插件业务类型展示名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The business_type_display_name of this PluginBasicDTO.
         :rtype: str
@@ -261,7 +261,7 @@ class PluginBasicDTO:
     def business_type_display_name(self, business_type_display_name):
         r"""Sets the business_type_display_name of this PluginBasicDTO.
 
-        业务类型展示名
+        **参数解释**： 扩展插件业务类型展示名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param business_type_display_name: The business_type_display_name of this PluginBasicDTO.
         :type business_type_display_name: str
@@ -272,7 +272,7 @@ class PluginBasicDTO:
     def description(self):
         r"""Gets the description of this PluginBasicDTO.
 
-        描述
+        **参数解释**： 扩展插件描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The description of this PluginBasicDTO.
         :rtype: str
@@ -283,7 +283,7 @@ class PluginBasicDTO:
     def description(self, description):
         r"""Sets the description of this PluginBasicDTO.
 
-        描述
+        **参数解释**： 扩展插件描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param description: The description of this PluginBasicDTO.
         :type description: str
@@ -294,7 +294,7 @@ class PluginBasicDTO:
     def is_private(self):
         r"""Gets the is_private of this PluginBasicDTO.
 
-        是否私有
+        **参数解释**： 是否私有。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The is_private of this PluginBasicDTO.
         :rtype: int
@@ -305,7 +305,7 @@ class PluginBasicDTO:
     def is_private(self, is_private):
         r"""Sets the is_private of this PluginBasicDTO.
 
-        是否私有
+        **参数解释**： 是否私有。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param is_private: The is_private of this PluginBasicDTO.
         :type is_private: int
@@ -316,7 +316,7 @@ class PluginBasicDTO:
     def region(self):
         r"""Gets the region of this PluginBasicDTO.
 
-        局点
+        **参数解释**： 局点。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The region of this PluginBasicDTO.
         :rtype: str
@@ -327,7 +327,7 @@ class PluginBasicDTO:
     def region(self, region):
         r"""Sets the region of this PluginBasicDTO.
 
-        局点
+        **参数解释**： 局点。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param region: The region of this PluginBasicDTO.
         :type region: str
@@ -338,7 +338,7 @@ class PluginBasicDTO:
     def maintainers(self):
         r"""Gets the maintainers of this PluginBasicDTO.
 
-        维护者
+        **参数解释**： 维护者。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The maintainers of this PluginBasicDTO.
         :rtype: str
@@ -349,7 +349,7 @@ class PluginBasicDTO:
     def maintainers(self, maintainers):
         r"""Sets the maintainers of this PluginBasicDTO.
 
-        维护者
+        **参数解释**： 维护者。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param maintainers: The maintainers of this PluginBasicDTO.
         :type maintainers: str
@@ -360,7 +360,7 @@ class PluginBasicDTO:
     def plugin_composition_type(self):
         r"""Gets the plugin_composition_type of this PluginBasicDTO.
 
-        组合插件类型
+        **参数解释**： 标识是否为多个step组成的组。 **约束限制**： 不涉及。 **取值范围**： - single：单step插件。 - multi：组合插件。 **默认取值**： 不涉及。 
 
         :return: The plugin_composition_type of this PluginBasicDTO.
         :rtype: str
@@ -371,7 +371,7 @@ class PluginBasicDTO:
     def plugin_composition_type(self, plugin_composition_type):
         r"""Sets the plugin_composition_type of this PluginBasicDTO.
 
-        组合插件类型
+        **参数解释**： 标识是否为多个step组成的组。 **约束限制**： 不涉及。 **取值范围**： - single：单step插件。 - multi：组合插件。 **默认取值**： 不涉及。 
 
         :param plugin_composition_type: The plugin_composition_type of this PluginBasicDTO.
         :type plugin_composition_type: str

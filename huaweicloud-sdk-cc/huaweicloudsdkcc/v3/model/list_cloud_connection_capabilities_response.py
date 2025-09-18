@@ -19,7 +19,7 @@ class ListCloudConnectionCapabilitiesResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'capabilities': 'list[CloudConnectionCapability]'
+        'capabilities': 'list[CloudConnectionCapabilityInfo]'
     }
 
     attribute_map = {
@@ -35,7 +35,7 @@ class ListCloudConnectionCapabilitiesResponse(SdkResponse):
         :param request_id: 请求ID。
         :type request_id: str
         :param capabilities: 租户能力列表。
-        :type capabilities: list[:class:`huaweicloudsdkcc.v3.CloudConnectionCapability`]
+        :type capabilities: list[:class:`huaweicloudsdkcc.v3.CloudConnectionCapabilityInfo`]
         """
         
         super(ListCloudConnectionCapabilitiesResponse, self).__init__()
@@ -76,7 +76,7 @@ class ListCloudConnectionCapabilitiesResponse(SdkResponse):
         租户能力列表。
 
         :return: The capabilities of this ListCloudConnectionCapabilitiesResponse.
-        :rtype: list[:class:`huaweicloudsdkcc.v3.CloudConnectionCapability`]
+        :rtype: list[:class:`huaweicloudsdkcc.v3.CloudConnectionCapabilityInfo`]
         """
         return self._capabilities
 
@@ -87,7 +87,7 @@ class ListCloudConnectionCapabilitiesResponse(SdkResponse):
         租户能力列表。
 
         :param capabilities: The capabilities of this ListCloudConnectionCapabilitiesResponse.
-        :type capabilities: list[:class:`huaweicloudsdkcc.v3.CloudConnectionCapability`]
+        :type capabilities: list[:class:`huaweicloudsdkcc.v3.CloudConnectionCapabilityInfo`]
         """
         self._capabilities = capabilities
 

@@ -45,23 +45,23 @@ class CodeSourceParams:
 
         The model defined in huaweicloud sdk
 
-        :param git_type: 代码仓类型
+        :param git_type: **参数解释**： 代码仓类型。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
         :type git_type: str
-        :param codehub_id: codehub代码仓ID
+        :param codehub_id: **参数解释**： CodeArts Repo代码仓ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type codehub_id: str
-        :param endpoint_id: 扩展点ID
+        :param endpoint_id: **参数解释**： 代码源扩展点ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type endpoint_id: str
-        :param default_branch: 默认分支
+        :param default_branch: **参数解释**： 默认分支。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type default_branch: str
-        :param git_url: 代码仓https地址
+        :param git_url: **参数解释**： Git仓库https地址，例如https://example.com/CloudPipelinezycs00001/2000.git。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type git_url: str
-        :param ssh_git_url: 代码仓ssh地址
+        :param ssh_git_url: **参数解释**： ssh_git链接地址，例如https://example.com/CloudPipelinezycs00001/2000.git。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type ssh_git_url: str
-        :param web_url: 代码仓页面地址
+        :param web_url: **参数解释**： 网页url。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type web_url: str
-        :param repo_name: 代码仓名称
+        :param repo_name: **参数解释**： 流水线源名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type repo_name: str
-        :param alias: 代码仓别名
+        :param alias: **参数解释**： 代码仓别名。 **约束限制**： 不涉及。 **取值范围**： 仅支持输入大小写英文字母、数字、“_”，至多128个字符。 **默认取值**： 不涉及。 
         :type alias: str
         """
         
@@ -101,7 +101,7 @@ class CodeSourceParams:
     def git_type(self):
         r"""Gets the git_type of this CodeSourceParams.
 
-        代码仓类型
+        **参数解释**： 代码仓类型。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
 
         :return: The git_type of this CodeSourceParams.
         :rtype: str
@@ -112,7 +112,7 @@ class CodeSourceParams:
     def git_type(self, git_type):
         r"""Sets the git_type of this CodeSourceParams.
 
-        代码仓类型
+        **参数解释**： 代码仓类型。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
 
         :param git_type: The git_type of this CodeSourceParams.
         :type git_type: str
@@ -123,7 +123,7 @@ class CodeSourceParams:
     def codehub_id(self):
         r"""Gets the codehub_id of this CodeSourceParams.
 
-        codehub代码仓ID
+        **参数解释**： CodeArts Repo代码仓ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The codehub_id of this CodeSourceParams.
         :rtype: str
@@ -134,7 +134,7 @@ class CodeSourceParams:
     def codehub_id(self, codehub_id):
         r"""Sets the codehub_id of this CodeSourceParams.
 
-        codehub代码仓ID
+        **参数解释**： CodeArts Repo代码仓ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param codehub_id: The codehub_id of this CodeSourceParams.
         :type codehub_id: str
@@ -145,7 +145,7 @@ class CodeSourceParams:
     def endpoint_id(self):
         r"""Gets the endpoint_id of this CodeSourceParams.
 
-        扩展点ID
+        **参数解释**： 代码源扩展点ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The endpoint_id of this CodeSourceParams.
         :rtype: str
@@ -156,7 +156,7 @@ class CodeSourceParams:
     def endpoint_id(self, endpoint_id):
         r"""Sets the endpoint_id of this CodeSourceParams.
 
-        扩展点ID
+        **参数解释**： 代码源扩展点ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param endpoint_id: The endpoint_id of this CodeSourceParams.
         :type endpoint_id: str
@@ -167,7 +167,7 @@ class CodeSourceParams:
     def default_branch(self):
         r"""Gets the default_branch of this CodeSourceParams.
 
-        默认分支
+        **参数解释**： 默认分支。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The default_branch of this CodeSourceParams.
         :rtype: str
@@ -178,7 +178,7 @@ class CodeSourceParams:
     def default_branch(self, default_branch):
         r"""Sets the default_branch of this CodeSourceParams.
 
-        默认分支
+        **参数解释**： 默认分支。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param default_branch: The default_branch of this CodeSourceParams.
         :type default_branch: str
@@ -189,7 +189,7 @@ class CodeSourceParams:
     def git_url(self):
         r"""Gets the git_url of this CodeSourceParams.
 
-        代码仓https地址
+        **参数解释**： Git仓库https地址，例如https://example.com/CloudPipelinezycs00001/2000.git。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The git_url of this CodeSourceParams.
         :rtype: str
@@ -200,7 +200,7 @@ class CodeSourceParams:
     def git_url(self, git_url):
         r"""Sets the git_url of this CodeSourceParams.
 
-        代码仓https地址
+        **参数解释**： Git仓库https地址，例如https://example.com/CloudPipelinezycs00001/2000.git。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param git_url: The git_url of this CodeSourceParams.
         :type git_url: str
@@ -211,7 +211,7 @@ class CodeSourceParams:
     def ssh_git_url(self):
         r"""Gets the ssh_git_url of this CodeSourceParams.
 
-        代码仓ssh地址
+        **参数解释**： ssh_git链接地址，例如https://example.com/CloudPipelinezycs00001/2000.git。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The ssh_git_url of this CodeSourceParams.
         :rtype: str
@@ -222,7 +222,7 @@ class CodeSourceParams:
     def ssh_git_url(self, ssh_git_url):
         r"""Sets the ssh_git_url of this CodeSourceParams.
 
-        代码仓ssh地址
+        **参数解释**： ssh_git链接地址，例如https://example.com/CloudPipelinezycs00001/2000.git。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param ssh_git_url: The ssh_git_url of this CodeSourceParams.
         :type ssh_git_url: str
@@ -233,7 +233,7 @@ class CodeSourceParams:
     def web_url(self):
         r"""Gets the web_url of this CodeSourceParams.
 
-        代码仓页面地址
+        **参数解释**： 网页url。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The web_url of this CodeSourceParams.
         :rtype: str
@@ -244,7 +244,7 @@ class CodeSourceParams:
     def web_url(self, web_url):
         r"""Sets the web_url of this CodeSourceParams.
 
-        代码仓页面地址
+        **参数解释**： 网页url。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param web_url: The web_url of this CodeSourceParams.
         :type web_url: str
@@ -255,7 +255,7 @@ class CodeSourceParams:
     def repo_name(self):
         r"""Gets the repo_name of this CodeSourceParams.
 
-        代码仓名称
+        **参数解释**： 流水线源名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The repo_name of this CodeSourceParams.
         :rtype: str
@@ -266,7 +266,7 @@ class CodeSourceParams:
     def repo_name(self, repo_name):
         r"""Sets the repo_name of this CodeSourceParams.
 
-        代码仓名称
+        **参数解释**： 流水线源名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param repo_name: The repo_name of this CodeSourceParams.
         :type repo_name: str
@@ -277,7 +277,7 @@ class CodeSourceParams:
     def alias(self):
         r"""Gets the alias of this CodeSourceParams.
 
-        代码仓别名
+        **参数解释**： 代码仓别名。 **约束限制**： 不涉及。 **取值范围**： 仅支持输入大小写英文字母、数字、“_”，至多128个字符。 **默认取值**： 不涉及。 
 
         :return: The alias of this CodeSourceParams.
         :rtype: str
@@ -288,7 +288,7 @@ class CodeSourceParams:
     def alias(self, alias):
         r"""Sets the alias of this CodeSourceParams.
 
-        代码仓别名
+        **参数解释**： 代码仓别名。 **约束限制**： 不涉及。 **取值范围**： 仅支持输入大小写英文字母、数字、“_”，至多128个字符。 **默认取值**： 不涉及。 
 
         :param alias: The alias of this CodeSourceParams.
         :type alias: str

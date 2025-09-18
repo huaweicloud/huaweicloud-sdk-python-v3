@@ -37,15 +37,15 @@ class ExtensionValidation:
 
         The model defined in huaweicloud sdk
 
-        :param required_message: 消息
+        :param required_message: **参数解释**： 若插件输入项为必填而实际未填写时，提示的信息。 **取值范围**： 不涉及。 
         :type required_message: str
-        :param regex: 正则
+        :param regex: **参数解释**： 插件输入项值的校验正则表达式。 **取值范围**： 不涉及。 
         :type regex: str
-        :param regex_message: 正则消息
+        :param regex_message: **参数解释**： 若插件输入项的值不满足regex中的正则表达式时，提示的信息。 **取值范围**： 不涉及。 
         :type regex_message: str
-        :param max_length: 最大长度
+        :param max_length: **参数解释**： 插件输入项值的最大长度。 **取值范围**： 不涉及。 
         :type max_length: int
-        :param min_length: 最小长度
+        :param min_length: **参数解释**： 插件输入项值的最小长度。 **取值范围**： 不涉及。 
         :type min_length: int
         """
         
@@ -73,7 +73,7 @@ class ExtensionValidation:
     def required_message(self):
         r"""Gets the required_message of this ExtensionValidation.
 
-        消息
+        **参数解释**： 若插件输入项为必填而实际未填写时，提示的信息。 **取值范围**： 不涉及。 
 
         :return: The required_message of this ExtensionValidation.
         :rtype: str
@@ -84,7 +84,7 @@ class ExtensionValidation:
     def required_message(self, required_message):
         r"""Sets the required_message of this ExtensionValidation.
 
-        消息
+        **参数解释**： 若插件输入项为必填而实际未填写时，提示的信息。 **取值范围**： 不涉及。 
 
         :param required_message: The required_message of this ExtensionValidation.
         :type required_message: str
@@ -95,7 +95,7 @@ class ExtensionValidation:
     def regex(self):
         r"""Gets the regex of this ExtensionValidation.
 
-        正则
+        **参数解释**： 插件输入项值的校验正则表达式。 **取值范围**： 不涉及。 
 
         :return: The regex of this ExtensionValidation.
         :rtype: str
@@ -106,7 +106,7 @@ class ExtensionValidation:
     def regex(self, regex):
         r"""Sets the regex of this ExtensionValidation.
 
-        正则
+        **参数解释**： 插件输入项值的校验正则表达式。 **取值范围**： 不涉及。 
 
         :param regex: The regex of this ExtensionValidation.
         :type regex: str
@@ -117,7 +117,7 @@ class ExtensionValidation:
     def regex_message(self):
         r"""Gets the regex_message of this ExtensionValidation.
 
-        正则消息
+        **参数解释**： 若插件输入项的值不满足regex中的正则表达式时，提示的信息。 **取值范围**： 不涉及。 
 
         :return: The regex_message of this ExtensionValidation.
         :rtype: str
@@ -128,7 +128,7 @@ class ExtensionValidation:
     def regex_message(self, regex_message):
         r"""Sets the regex_message of this ExtensionValidation.
 
-        正则消息
+        **参数解释**： 若插件输入项的值不满足regex中的正则表达式时，提示的信息。 **取值范围**： 不涉及。 
 
         :param regex_message: The regex_message of this ExtensionValidation.
         :type regex_message: str
@@ -139,7 +139,7 @@ class ExtensionValidation:
     def max_length(self):
         r"""Gets the max_length of this ExtensionValidation.
 
-        最大长度
+        **参数解释**： 插件输入项值的最大长度。 **取值范围**： 不涉及。 
 
         :return: The max_length of this ExtensionValidation.
         :rtype: int
@@ -150,7 +150,7 @@ class ExtensionValidation:
     def max_length(self, max_length):
         r"""Sets the max_length of this ExtensionValidation.
 
-        最大长度
+        **参数解释**： 插件输入项值的最大长度。 **取值范围**： 不涉及。 
 
         :param max_length: The max_length of this ExtensionValidation.
         :type max_length: int
@@ -161,7 +161,7 @@ class ExtensionValidation:
     def min_length(self):
         r"""Gets the min_length of this ExtensionValidation.
 
-        最小长度
+        **参数解释**： 插件输入项值的最小长度。 **取值范围**： 不涉及。 
 
         :return: The min_length of this ExtensionValidation.
         :rtype: int
@@ -172,7 +172,7 @@ class ExtensionValidation:
     def min_length(self, min_length):
         r"""Sets the min_length of this ExtensionValidation.
 
-        最小长度
+        **参数解释**： 插件输入项值的最小长度。 **取值范围**： 不涉及。 
 
         :param min_length: The min_length of this ExtensionValidation.
         :type min_length: int

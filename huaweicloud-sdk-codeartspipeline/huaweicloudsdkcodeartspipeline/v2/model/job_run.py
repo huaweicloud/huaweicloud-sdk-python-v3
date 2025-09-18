@@ -20,7 +20,7 @@ class JobRun:
         'id': 'str',
         'category': 'str',
         'sequence': 'int',
-        '_async': 'bool',
+        '_async': 'str',
         'name': 'str',
         'identifier': 'str',
         'depends_on': 'list[str]',
@@ -63,41 +63,41 @@ class JobRun:
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务ID
+        :param id: **参数解释**： 任务ID。 **取值范围**： 不涉及。 
         :type id: str
-        :param category: 任务类型
+        :param category: **参数解释**： 任务类型。 **取值范围**： 不涉及。 
         :type category: str
-        :param sequence: 序列号
+        :param sequence: **参数解释**： 序列号。 **取值范围**： 不涉及。 
         :type sequence: int
-        :param _async: 是否异步
-        :type _async: bool
-        :param name: 任务名称
+        :param _async: **参数解释**： 是否异步。 **取值范围**： - true：异步。 - false：非异步。 
+        :type _async: str
+        :param name: **参数解释**： 任务名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param identifier: 任务唯一标识
+        :param identifier: **参数解释**： 任务唯一标识。 **取值范围**： 不涉及。 
         :type identifier: str
-        :param depends_on: 依赖
+        :param depends_on: **参数解释**： 依赖。 **取值范围**： 不涉及。 
         :type depends_on: list[str]
-        :param condition: 运行条件
+        :param condition: **参数解释**： 运行条件。 **取值范围**： 不涉及。 
         :type condition: str
-        :param resource: 执行资源
+        :param resource: **参数解释**： 执行资源。 **取值范围**： 不涉及。 
         :type resource: str
-        :param is_select: 是否选中
+        :param is_select: **参数解释**： 是否选中。 **取值范围**： - true：选中。 - false：未选中。 
         :type is_select: bool
-        :param timeout: 任务超时设置
+        :param timeout: **参数解释**： 任务超时设置。 **取值范围**： 不涉及。 
         :type timeout: str
-        :param last_dispatch_id: 任务上次下发ID
+        :param last_dispatch_id: **参数解释**： 任务上次下发ID。 **取值范围**： 不涉及。 
         :type last_dispatch_id: str
-        :param status: 状态
+        :param status: **参数解释**： 状态。 **取值范围**： - INIT：初始化。 - QUEUED：排队。 - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 - SKIPPED：跳过。 - IGNORED：忽略。 - PAUSED：暂停。 - SUSPEND：挂起。 - ASYNC_RUNNING：异步运行。 - ASYNC_FAILED：异步失败。 - UNSELECTED：未选择。 - REDISPATCH：重新调度。 
         :type status: str
-        :param message: 错误信息
+        :param message: **参数解释**： 错误信息。 **取值范围**： 不涉及。 
         :type message: str
-        :param start_time: 开始时间
+        :param start_time: **参数解释**： 任务开始时间。 **取值范围**： 不涉及。 
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 任务结束时间。 **取值范围**： 不涉及。 
         :type end_time: int
-        :param steps: 步骤
+        :param steps: **参数解释**： 步骤。 **取值范围**： 不涉及。 
         :type steps: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRun`]
-        :param exec_id: 任务执行ID
+        :param exec_id: **参数解释**： 任务执行ID。 **取值范围**： 不涉及。 
         :type exec_id: str
         """
         
@@ -164,7 +164,7 @@ class JobRun:
     def id(self):
         r"""Gets the id of this JobRun.
 
-        任务ID
+        **参数解释**： 任务ID。 **取值范围**： 不涉及。 
 
         :return: The id of this JobRun.
         :rtype: str
@@ -175,7 +175,7 @@ class JobRun:
     def id(self, id):
         r"""Sets the id of this JobRun.
 
-        任务ID
+        **参数解释**： 任务ID。 **取值范围**： 不涉及。 
 
         :param id: The id of this JobRun.
         :type id: str
@@ -186,7 +186,7 @@ class JobRun:
     def category(self):
         r"""Gets the category of this JobRun.
 
-        任务类型
+        **参数解释**： 任务类型。 **取值范围**： 不涉及。 
 
         :return: The category of this JobRun.
         :rtype: str
@@ -197,7 +197,7 @@ class JobRun:
     def category(self, category):
         r"""Sets the category of this JobRun.
 
-        任务类型
+        **参数解释**： 任务类型。 **取值范围**： 不涉及。 
 
         :param category: The category of this JobRun.
         :type category: str
@@ -208,7 +208,7 @@ class JobRun:
     def sequence(self):
         r"""Gets the sequence of this JobRun.
 
-        序列号
+        **参数解释**： 序列号。 **取值范围**： 不涉及。 
 
         :return: The sequence of this JobRun.
         :rtype: int
@@ -219,7 +219,7 @@ class JobRun:
     def sequence(self, sequence):
         r"""Sets the sequence of this JobRun.
 
-        序列号
+        **参数解释**： 序列号。 **取值范围**： 不涉及。 
 
         :param sequence: The sequence of this JobRun.
         :type sequence: int
@@ -230,10 +230,10 @@ class JobRun:
     def _async(self):
         r"""Gets the _async of this JobRun.
 
-        是否异步
+        **参数解释**： 是否异步。 **取值范围**： - true：异步。 - false：非异步。 
 
         :return: The _async of this JobRun.
-        :rtype: bool
+        :rtype: str
         """
         return self.__async
 
@@ -241,10 +241,10 @@ class JobRun:
     def _async(self, _async):
         r"""Sets the _async of this JobRun.
 
-        是否异步
+        **参数解释**： 是否异步。 **取值范围**： - true：异步。 - false：非异步。 
 
         :param _async: The _async of this JobRun.
-        :type _async: bool
+        :type _async: str
         """
         self.__async = _async
 
@@ -252,7 +252,7 @@ class JobRun:
     def name(self):
         r"""Gets the name of this JobRun.
 
-        任务名称
+        **参数解释**： 任务名称。 **取值范围**： 不涉及。 
 
         :return: The name of this JobRun.
         :rtype: str
@@ -263,7 +263,7 @@ class JobRun:
     def name(self, name):
         r"""Sets the name of this JobRun.
 
-        任务名称
+        **参数解释**： 任务名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this JobRun.
         :type name: str
@@ -274,7 +274,7 @@ class JobRun:
     def identifier(self):
         r"""Gets the identifier of this JobRun.
 
-        任务唯一标识
+        **参数解释**： 任务唯一标识。 **取值范围**： 不涉及。 
 
         :return: The identifier of this JobRun.
         :rtype: str
@@ -285,7 +285,7 @@ class JobRun:
     def identifier(self, identifier):
         r"""Sets the identifier of this JobRun.
 
-        任务唯一标识
+        **参数解释**： 任务唯一标识。 **取值范围**： 不涉及。 
 
         :param identifier: The identifier of this JobRun.
         :type identifier: str
@@ -296,7 +296,7 @@ class JobRun:
     def depends_on(self):
         r"""Gets the depends_on of this JobRun.
 
-        依赖
+        **参数解释**： 依赖。 **取值范围**： 不涉及。 
 
         :return: The depends_on of this JobRun.
         :rtype: list[str]
@@ -307,7 +307,7 @@ class JobRun:
     def depends_on(self, depends_on):
         r"""Sets the depends_on of this JobRun.
 
-        依赖
+        **参数解释**： 依赖。 **取值范围**： 不涉及。 
 
         :param depends_on: The depends_on of this JobRun.
         :type depends_on: list[str]
@@ -318,7 +318,7 @@ class JobRun:
     def condition(self):
         r"""Gets the condition of this JobRun.
 
-        运行条件
+        **参数解释**： 运行条件。 **取值范围**： 不涉及。 
 
         :return: The condition of this JobRun.
         :rtype: str
@@ -329,7 +329,7 @@ class JobRun:
     def condition(self, condition):
         r"""Sets the condition of this JobRun.
 
-        运行条件
+        **参数解释**： 运行条件。 **取值范围**： 不涉及。 
 
         :param condition: The condition of this JobRun.
         :type condition: str
@@ -340,7 +340,7 @@ class JobRun:
     def resource(self):
         r"""Gets the resource of this JobRun.
 
-        执行资源
+        **参数解释**： 执行资源。 **取值范围**： 不涉及。 
 
         :return: The resource of this JobRun.
         :rtype: str
@@ -351,7 +351,7 @@ class JobRun:
     def resource(self, resource):
         r"""Sets the resource of this JobRun.
 
-        执行资源
+        **参数解释**： 执行资源。 **取值范围**： 不涉及。 
 
         :param resource: The resource of this JobRun.
         :type resource: str
@@ -362,7 +362,7 @@ class JobRun:
     def is_select(self):
         r"""Gets the is_select of this JobRun.
 
-        是否选中
+        **参数解释**： 是否选中。 **取值范围**： - true：选中。 - false：未选中。 
 
         :return: The is_select of this JobRun.
         :rtype: bool
@@ -373,7 +373,7 @@ class JobRun:
     def is_select(self, is_select):
         r"""Sets the is_select of this JobRun.
 
-        是否选中
+        **参数解释**： 是否选中。 **取值范围**： - true：选中。 - false：未选中。 
 
         :param is_select: The is_select of this JobRun.
         :type is_select: bool
@@ -384,7 +384,7 @@ class JobRun:
     def timeout(self):
         r"""Gets the timeout of this JobRun.
 
-        任务超时设置
+        **参数解释**： 任务超时设置。 **取值范围**： 不涉及。 
 
         :return: The timeout of this JobRun.
         :rtype: str
@@ -395,7 +395,7 @@ class JobRun:
     def timeout(self, timeout):
         r"""Sets the timeout of this JobRun.
 
-        任务超时设置
+        **参数解释**： 任务超时设置。 **取值范围**： 不涉及。 
 
         :param timeout: The timeout of this JobRun.
         :type timeout: str
@@ -406,7 +406,7 @@ class JobRun:
     def last_dispatch_id(self):
         r"""Gets the last_dispatch_id of this JobRun.
 
-        任务上次下发ID
+        **参数解释**： 任务上次下发ID。 **取值范围**： 不涉及。 
 
         :return: The last_dispatch_id of this JobRun.
         :rtype: str
@@ -417,7 +417,7 @@ class JobRun:
     def last_dispatch_id(self, last_dispatch_id):
         r"""Sets the last_dispatch_id of this JobRun.
 
-        任务上次下发ID
+        **参数解释**： 任务上次下发ID。 **取值范围**： 不涉及。 
 
         :param last_dispatch_id: The last_dispatch_id of this JobRun.
         :type last_dispatch_id: str
@@ -428,7 +428,7 @@ class JobRun:
     def status(self):
         r"""Gets the status of this JobRun.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： - INIT：初始化。 - QUEUED：排队。 - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 - SKIPPED：跳过。 - IGNORED：忽略。 - PAUSED：暂停。 - SUSPEND：挂起。 - ASYNC_RUNNING：异步运行。 - ASYNC_FAILED：异步失败。 - UNSELECTED：未选择。 - REDISPATCH：重新调度。 
 
         :return: The status of this JobRun.
         :rtype: str
@@ -439,7 +439,7 @@ class JobRun:
     def status(self, status):
         r"""Sets the status of this JobRun.
 
-        状态
+        **参数解释**： 状态。 **取值范围**： - INIT：初始化。 - QUEUED：排队。 - RUNNING：运行中。 - CANCELED：取消。 - COMPLETED：已完成。 - FAILED：失败。 - SKIPPED：跳过。 - IGNORED：忽略。 - PAUSED：暂停。 - SUSPEND：挂起。 - ASYNC_RUNNING：异步运行。 - ASYNC_FAILED：异步失败。 - UNSELECTED：未选择。 - REDISPATCH：重新调度。 
 
         :param status: The status of this JobRun.
         :type status: str
@@ -450,7 +450,7 @@ class JobRun:
     def message(self):
         r"""Gets the message of this JobRun.
 
-        错误信息
+        **参数解释**： 错误信息。 **取值范围**： 不涉及。 
 
         :return: The message of this JobRun.
         :rtype: str
@@ -461,7 +461,7 @@ class JobRun:
     def message(self, message):
         r"""Sets the message of this JobRun.
 
-        错误信息
+        **参数解释**： 错误信息。 **取值范围**： 不涉及。 
 
         :param message: The message of this JobRun.
         :type message: str
@@ -472,7 +472,7 @@ class JobRun:
     def start_time(self):
         r"""Gets the start_time of this JobRun.
 
-        开始时间
+        **参数解释**： 任务开始时间。 **取值范围**： 不涉及。 
 
         :return: The start_time of this JobRun.
         :rtype: int
@@ -483,7 +483,7 @@ class JobRun:
     def start_time(self, start_time):
         r"""Sets the start_time of this JobRun.
 
-        开始时间
+        **参数解释**： 任务开始时间。 **取值范围**： 不涉及。 
 
         :param start_time: The start_time of this JobRun.
         :type start_time: int
@@ -494,7 +494,7 @@ class JobRun:
     def end_time(self):
         r"""Gets the end_time of this JobRun.
 
-        结束时间
+        **参数解释**： 任务结束时间。 **取值范围**： 不涉及。 
 
         :return: The end_time of this JobRun.
         :rtype: int
@@ -505,7 +505,7 @@ class JobRun:
     def end_time(self, end_time):
         r"""Sets the end_time of this JobRun.
 
-        结束时间
+        **参数解释**： 任务结束时间。 **取值范围**： 不涉及。 
 
         :param end_time: The end_time of this JobRun.
         :type end_time: int
@@ -516,7 +516,7 @@ class JobRun:
     def steps(self):
         r"""Gets the steps of this JobRun.
 
-        步骤
+        **参数解释**： 步骤。 **取值范围**： 不涉及。 
 
         :return: The steps of this JobRun.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRun`]
@@ -527,7 +527,7 @@ class JobRun:
     def steps(self, steps):
         r"""Sets the steps of this JobRun.
 
-        步骤
+        **参数解释**： 步骤。 **取值范围**： 不涉及。 
 
         :param steps: The steps of this JobRun.
         :type steps: list[:class:`huaweicloudsdkcodeartspipeline.v2.StepRun`]
@@ -538,7 +538,7 @@ class JobRun:
     def exec_id(self):
         r"""Gets the exec_id of this JobRun.
 
-        任务执行ID
+        **参数解释**： 任务执行ID。 **取值范围**： 不涉及。 
 
         :return: The exec_id of this JobRun.
         :rtype: str
@@ -549,7 +549,7 @@ class JobRun:
     def exec_id(self, exec_id):
         r"""Sets the exec_id of this JobRun.
 
-        任务执行ID
+        **参数解释**： 任务执行ID。 **取值范围**： 不涉及。 
 
         :param exec_id: The exec_id of this JobRun.
         :type exec_id: str

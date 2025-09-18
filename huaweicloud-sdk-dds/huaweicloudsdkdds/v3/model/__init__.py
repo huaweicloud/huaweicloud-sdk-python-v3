@@ -120,6 +120,7 @@ from huaweicloudsdkdds.v3.model.delete_session_response import DeleteSessionResp
 from huaweicloudsdkdds.v3.model.diff_configuration_request import DiffConfigurationRequest
 from huaweicloudsdkdds.v3.model.diff_details import DiffDetails
 from huaweicloudsdkdds.v3.model.disk_auto_expansion_policy import DiskAutoExpansionPolicy
+from huaweicloudsdkdds.v3.model.disk_set_auto_expansion_policy import DiskSetAutoExpansionPolicy
 from huaweicloudsdkdds.v3.model.disk_volumes import DiskVolumes
 from huaweicloudsdkdds.v3.model.download_errorlog_request import DownloadErrorlogRequest
 from huaweicloudsdkdds.v3.model.download_errorlog_request_body import DownloadErrorlogRequestBody

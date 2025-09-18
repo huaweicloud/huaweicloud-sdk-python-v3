@@ -36,13 +36,13 @@ class ListPLuginVersionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 偏移
+        :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： offset大于等于0。 **默认取值**： 默认为0。 
         :type offset: int
-        :param limit: 大小
+        :param limit: **参数解释**： 每次查询的条目数量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。 
         :type limit: int
-        :param total: 总数
+        :param total: **参数解释**： 总条目数量。 **取值范围**： 大于等于0。 
         :type total: int
-        :param data: 结果集
+        :param data: **参数解释**： 扩展插件列表。 **取值范围**： 不涉及。 
         :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginBasicVO`]
         """
         
@@ -67,7 +67,7 @@ class ListPLuginVersionResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListPLuginVersionResponse.
 
-        偏移
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： offset大于等于0。 **默认取值**： 默认为0。 
 
         :return: The offset of this ListPLuginVersionResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListPLuginVersionResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListPLuginVersionResponse.
 
-        偏移
+        **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： offset大于等于0。 **默认取值**： 默认为0。 
 
         :param offset: The offset of this ListPLuginVersionResponse.
         :type offset: int
@@ -89,7 +89,7 @@ class ListPLuginVersionResponse(SdkResponse):
     def limit(self):
         r"""Gets the limit of this ListPLuginVersionResponse.
 
-        大小
+        **参数解释**： 每次查询的条目数量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。 
 
         :return: The limit of this ListPLuginVersionResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListPLuginVersionResponse(SdkResponse):
     def limit(self, limit):
         r"""Sets the limit of this ListPLuginVersionResponse.
 
-        大小
+        **参数解释**： 每次查询的条目数量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。 
 
         :param limit: The limit of this ListPLuginVersionResponse.
         :type limit: int
@@ -111,7 +111,7 @@ class ListPLuginVersionResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListPLuginVersionResponse.
 
-        总数
+        **参数解释**： 总条目数量。 **取值范围**： 大于等于0。 
 
         :return: The total of this ListPLuginVersionResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ListPLuginVersionResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListPLuginVersionResponse.
 
-        总数
+        **参数解释**： 总条目数量。 **取值范围**： 大于等于0。 
 
         :param total: The total of this ListPLuginVersionResponse.
         :type total: int
@@ -133,7 +133,7 @@ class ListPLuginVersionResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ListPLuginVersionResponse.
 
-        结果集
+        **参数解释**： 扩展插件列表。 **取值范围**： 不涉及。 
 
         :return: The data of this ListPLuginVersionResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginBasicVO`]
@@ -144,7 +144,7 @@ class ListPLuginVersionResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ListPLuginVersionResponse.
 
-        结果集
+        **参数解释**： 扩展插件列表。 **取值范围**： 不涉及。 
 
         :param data: The data of this ListPLuginVersionResponse.
         :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginBasicVO`]

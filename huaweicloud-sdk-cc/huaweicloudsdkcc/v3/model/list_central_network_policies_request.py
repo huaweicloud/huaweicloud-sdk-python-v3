@@ -47,7 +47,7 @@ class ListCentralNetworkPoliciesRequest:
 
         :param central_network_id: 中心网络的ID。
         :type central_network_id: str
-        :param limit: 每页返回的个数。 取值范围：1~1000。
+        :param limit: 每页返回的个数。 取值范围：1~2000。
         :type limit: int
         :param marker: 翻页信息，从上次API调用返回的翻页数据中获取，可填写前一页marker或者后一页marker，填入前一页previous_marker就向前翻页，后一页next_marker就向后翻页。 翻页过程中，查询条件不能修改，包括过滤条件、排序条件、limit。
         :type marker: str
@@ -59,7 +59,7 @@ class ListCentralNetworkPoliciesRequest:
         :type id: list[str]
         :param state: 根据状态查询，可查询多个状态。
         :type state: list[:class:`huaweicloudsdkcc.v3.CentralNetworkPolicyStateEnum`]
-        :param version: 根据版本查询，可查询多个名字。
+        :param version: 根据版本查询，可查询多个版本。
         :type version: list[:class:`huaweicloudsdkcc.v3.Version`]
         :param is_applied: 是否被应用。
         :type is_applied: bool
@@ -122,7 +122,7 @@ class ListCentralNetworkPoliciesRequest:
     def limit(self):
         r"""Gets the limit of this ListCentralNetworkPoliciesRequest.
 
-        每页返回的个数。 取值范围：1~1000。
+        每页返回的个数。 取值范围：1~2000。
 
         :return: The limit of this ListCentralNetworkPoliciesRequest.
         :rtype: int
@@ -133,7 +133,7 @@ class ListCentralNetworkPoliciesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListCentralNetworkPoliciesRequest.
 
-        每页返回的个数。 取值范围：1~1000。
+        每页返回的个数。 取值范围：1~2000。
 
         :param limit: The limit of this ListCentralNetworkPoliciesRequest.
         :type limit: int
@@ -254,7 +254,7 @@ class ListCentralNetworkPoliciesRequest:
     def version(self):
         r"""Gets the version of this ListCentralNetworkPoliciesRequest.
 
-        根据版本查询，可查询多个名字。
+        根据版本查询，可查询多个版本。
 
         :return: The version of this ListCentralNetworkPoliciesRequest.
         :rtype: list[:class:`huaweicloudsdkcc.v3.Version`]
@@ -265,7 +265,7 @@ class ListCentralNetworkPoliciesRequest:
     def version(self, version):
         r"""Sets the version of this ListCentralNetworkPoliciesRequest.
 
-        根据版本查询，可查询多个名字。
+        根据版本查询，可查询多个版本。
 
         :param version: The version of this ListCentralNetworkPoliciesRequest.
         :type version: list[:class:`huaweicloudsdkcc.v3.Version`]

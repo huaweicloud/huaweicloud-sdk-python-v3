@@ -37,15 +37,15 @@ class AgentPluginInfoQueryDTO:
 
         The model defined in huaweicloud sdk
 
-        :param plugin_name: 可选的查询条件-插件名
+        :param plugin_name: **参数解释**： 可选的查询条件-插件名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type plugin_name: str
-        :param regex_name: 可选的查询条件-匹配名称
+        :param regex_name: **参数解释**： 可选的查询条件-匹配名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type regex_name: str
-        :param maintainer: 维护者
+        :param maintainer: **参数解释**： 维护者。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type maintainer: str
-        :param business_type: 业务类型,[Build,Gate,Deploy,Test,Normal]
+        :param business_type: **参数解释**： 业务类型。 **约束限制**： 不涉及。 **取值范围**： - Build。 - Gate。 - Deploy。 - Test。 - Normal。 **默认取值**： 不涉及。 
         :type business_type: list[str]
-        :param plugin_attribution: 插件属性，official/custom
+        :param plugin_attribution: **参数解释**： 插件属性。 **约束限制**： 不涉及。 **取值范围**： - official：自定义插件。 - custom：基础插件。 **默认取值**： 不涉及。 
         :type plugin_attribution: str
         """
         
@@ -73,7 +73,7 @@ class AgentPluginInfoQueryDTO:
     def plugin_name(self):
         r"""Gets the plugin_name of this AgentPluginInfoQueryDTO.
 
-        可选的查询条件-插件名
+        **参数解释**： 可选的查询条件-插件名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The plugin_name of this AgentPluginInfoQueryDTO.
         :rtype: str
@@ -84,7 +84,7 @@ class AgentPluginInfoQueryDTO:
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this AgentPluginInfoQueryDTO.
 
-        可选的查询条件-插件名
+        **参数解释**： 可选的查询条件-插件名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param plugin_name: The plugin_name of this AgentPluginInfoQueryDTO.
         :type plugin_name: str
@@ -95,7 +95,7 @@ class AgentPluginInfoQueryDTO:
     def regex_name(self):
         r"""Gets the regex_name of this AgentPluginInfoQueryDTO.
 
-        可选的查询条件-匹配名称
+        **参数解释**： 可选的查询条件-匹配名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The regex_name of this AgentPluginInfoQueryDTO.
         :rtype: str
@@ -106,7 +106,7 @@ class AgentPluginInfoQueryDTO:
     def regex_name(self, regex_name):
         r"""Sets the regex_name of this AgentPluginInfoQueryDTO.
 
-        可选的查询条件-匹配名称
+        **参数解释**： 可选的查询条件-匹配名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param regex_name: The regex_name of this AgentPluginInfoQueryDTO.
         :type regex_name: str
@@ -117,7 +117,7 @@ class AgentPluginInfoQueryDTO:
     def maintainer(self):
         r"""Gets the maintainer of this AgentPluginInfoQueryDTO.
 
-        维护者
+        **参数解释**： 维护者。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The maintainer of this AgentPluginInfoQueryDTO.
         :rtype: str
@@ -128,7 +128,7 @@ class AgentPluginInfoQueryDTO:
     def maintainer(self, maintainer):
         r"""Sets the maintainer of this AgentPluginInfoQueryDTO.
 
-        维护者
+        **参数解释**： 维护者。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param maintainer: The maintainer of this AgentPluginInfoQueryDTO.
         :type maintainer: str
@@ -139,7 +139,7 @@ class AgentPluginInfoQueryDTO:
     def business_type(self):
         r"""Gets the business_type of this AgentPluginInfoQueryDTO.
 
-        业务类型,[Build,Gate,Deploy,Test,Normal]
+        **参数解释**： 业务类型。 **约束限制**： 不涉及。 **取值范围**： - Build。 - Gate。 - Deploy。 - Test。 - Normal。 **默认取值**： 不涉及。 
 
         :return: The business_type of this AgentPluginInfoQueryDTO.
         :rtype: list[str]
@@ -150,7 +150,7 @@ class AgentPluginInfoQueryDTO:
     def business_type(self, business_type):
         r"""Sets the business_type of this AgentPluginInfoQueryDTO.
 
-        业务类型,[Build,Gate,Deploy,Test,Normal]
+        **参数解释**： 业务类型。 **约束限制**： 不涉及。 **取值范围**： - Build。 - Gate。 - Deploy。 - Test。 - Normal。 **默认取值**： 不涉及。 
 
         :param business_type: The business_type of this AgentPluginInfoQueryDTO.
         :type business_type: list[str]
@@ -161,7 +161,7 @@ class AgentPluginInfoQueryDTO:
     def plugin_attribution(self):
         r"""Gets the plugin_attribution of this AgentPluginInfoQueryDTO.
 
-        插件属性，official/custom
+        **参数解释**： 插件属性。 **约束限制**： 不涉及。 **取值范围**： - official：自定义插件。 - custom：基础插件。 **默认取值**： 不涉及。 
 
         :return: The plugin_attribution of this AgentPluginInfoQueryDTO.
         :rtype: str
@@ -172,7 +172,7 @@ class AgentPluginInfoQueryDTO:
     def plugin_attribution(self, plugin_attribution):
         r"""Sets the plugin_attribution of this AgentPluginInfoQueryDTO.
 
-        插件属性，official/custom
+        **参数解释**： 插件属性。 **约束限制**： 不涉及。 **取值范围**： - official：自定义插件。 - custom：基础插件。 **默认取值**： 不涉及。 
 
         :param plugin_attribution: The plugin_attribution of this AgentPluginInfoQueryDTO.
         :type plugin_attribution: str

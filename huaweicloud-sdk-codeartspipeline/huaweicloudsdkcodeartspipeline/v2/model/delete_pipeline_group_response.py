@@ -30,7 +30,7 @@ class DeletePipelineGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param success: 操作是否成功
+        :param success: **参数解释**： 操作是否成功。 **取值范围**： - true：操作成功。 - false：操作失败。 
         :type success: bool
         """
         
@@ -46,7 +46,7 @@ class DeletePipelineGroupResponse(SdkResponse):
     def success(self):
         r"""Gets the success of this DeletePipelineGroupResponse.
 
-        操作是否成功
+        **参数解释**： 操作是否成功。 **取值范围**： - true：操作成功。 - false：操作失败。 
 
         :return: The success of this DeletePipelineGroupResponse.
         :rtype: bool
@@ -57,7 +57,7 @@ class DeletePipelineGroupResponse(SdkResponse):
     def success(self, success):
         r"""Sets the success of this DeletePipelineGroupResponse.
 
-        操作是否成功
+        **参数解释**： 操作是否成功。 **取值范围**： - true：操作成功。 - false：操作失败。 
 
         :param success: The success of this DeletePipelineGroupResponse.
         :type success: bool

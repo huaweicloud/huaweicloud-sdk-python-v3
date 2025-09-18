@@ -29,7 +29,7 @@ class GcbBorderCross:
 
         The model defined in huaweicloud sdk
 
-        :param bordercross: 功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
+        :param bordercross: 全域互联带宽跨境属性。
         :type bordercross: bool
         """
         
@@ -44,7 +44,7 @@ class GcbBorderCross:
     def bordercross(self):
         r"""Gets the bordercross of this GcbBorderCross.
 
-        功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
+        全域互联带宽跨境属性。
 
         :return: The bordercross of this GcbBorderCross.
         :rtype: bool
@@ -55,7 +55,7 @@ class GcbBorderCross:
     def bordercross(self, bordercross):
         r"""Sets the bordercross of this GcbBorderCross.
 
-        功能说明：全域互联带宽是否跨境，判断依据：带宽是否涉及从中国大陆到其他国家。 取值范围：True：跨境；False：非跨境 
+        全域互联带宽跨境属性。
 
         :param bordercross: The bordercross of this GcbBorderCross.
         :type bordercross: bool

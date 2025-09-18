@@ -33,11 +33,11 @@ class RedistributionRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param redis_join_tables: 具有JOIN关系的表，指定该参数则启用多表扩容模式，扩容前设置生效。 如果指定过该参数，后续调用可以传入空数组清除多表扩容配置。  本次扩容结束后自动清除该配置，下次扩容需要重新设置。 按照“database名称、schema1名称、table1名称、schema2名称、table2名称...”的格式指定，带有大小写或特殊字符的表名需要加\&quot;\&quot;转义。 多个数组则表示存在多个join group。
+        :param redis_join_tables: **参数解释**: 具有JOIN关系的表，指定该参数则启用多表扩容模式，扩容前设置生效。 如果指定过该参数，后续调用可以传入空数组清除多表扩容配置。 按照“database名称、schema1名称、table1名称、schema2名称、table2名称...”的格式指定，带有大小写或特殊字符的表名需要加\&quot;\&quot;转义。 多个数组则表示存在多个join group。 **约束限制**: 本次扩容结束后自动清除该配置，下次扩容需要重新设置。
         :type redis_join_tables: list[list[str]]
-        :param redis_parallel_jobs: 重分布并发数，扩容前设置生效。
+        :param redis_parallel_jobs: **参数解释**: 重分布并发数。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type redis_parallel_jobs: int
-        :param redis_resource_level: 重分布资源管控级别，扩容前或扩容重分布结束前设置生效。
+        :param redis_resource_level: **参数解释**: 重分布资源管控级别。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type redis_resource_level: str
         """
         
@@ -59,7 +59,7 @@ class RedistributionRequestBody:
     def redis_join_tables(self):
         r"""Gets the redis_join_tables of this RedistributionRequestBody.
 
-        具有JOIN关系的表，指定该参数则启用多表扩容模式，扩容前设置生效。 如果指定过该参数，后续调用可以传入空数组清除多表扩容配置。  本次扩容结束后自动清除该配置，下次扩容需要重新设置。 按照“database名称、schema1名称、table1名称、schema2名称、table2名称...”的格式指定，带有大小写或特殊字符的表名需要加\"\"转义。 多个数组则表示存在多个join group。
+        **参数解释**: 具有JOIN关系的表，指定该参数则启用多表扩容模式，扩容前设置生效。 如果指定过该参数，后续调用可以传入空数组清除多表扩容配置。 按照“database名称、schema1名称、table1名称、schema2名称、table2名称...”的格式指定，带有大小写或特殊字符的表名需要加\"\"转义。 多个数组则表示存在多个join group。 **约束限制**: 本次扩容结束后自动清除该配置，下次扩容需要重新设置。
 
         :return: The redis_join_tables of this RedistributionRequestBody.
         :rtype: list[list[str]]
@@ -70,7 +70,7 @@ class RedistributionRequestBody:
     def redis_join_tables(self, redis_join_tables):
         r"""Sets the redis_join_tables of this RedistributionRequestBody.
 
-        具有JOIN关系的表，指定该参数则启用多表扩容模式，扩容前设置生效。 如果指定过该参数，后续调用可以传入空数组清除多表扩容配置。  本次扩容结束后自动清除该配置，下次扩容需要重新设置。 按照“database名称、schema1名称、table1名称、schema2名称、table2名称...”的格式指定，带有大小写或特殊字符的表名需要加\"\"转义。 多个数组则表示存在多个join group。
+        **参数解释**: 具有JOIN关系的表，指定该参数则启用多表扩容模式，扩容前设置生效。 如果指定过该参数，后续调用可以传入空数组清除多表扩容配置。 按照“database名称、schema1名称、table1名称、schema2名称、table2名称...”的格式指定，带有大小写或特殊字符的表名需要加\"\"转义。 多个数组则表示存在多个join group。 **约束限制**: 本次扩容结束后自动清除该配置，下次扩容需要重新设置。
 
         :param redis_join_tables: The redis_join_tables of this RedistributionRequestBody.
         :type redis_join_tables: list[list[str]]
@@ -81,7 +81,7 @@ class RedistributionRequestBody:
     def redis_parallel_jobs(self):
         r"""Gets the redis_parallel_jobs of this RedistributionRequestBody.
 
-        重分布并发数，扩容前设置生效。
+        **参数解释**: 重分布并发数。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The redis_parallel_jobs of this RedistributionRequestBody.
         :rtype: int
@@ -92,7 +92,7 @@ class RedistributionRequestBody:
     def redis_parallel_jobs(self, redis_parallel_jobs):
         r"""Sets the redis_parallel_jobs of this RedistributionRequestBody.
 
-        重分布并发数，扩容前设置生效。
+        **参数解释**: 重分布并发数。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param redis_parallel_jobs: The redis_parallel_jobs of this RedistributionRequestBody.
         :type redis_parallel_jobs: int
@@ -103,7 +103,7 @@ class RedistributionRequestBody:
     def redis_resource_level(self):
         r"""Gets the redis_resource_level of this RedistributionRequestBody.
 
-        重分布资源管控级别，扩容前或扩容重分布结束前设置生效。
+        **参数解释**: 重分布资源管控级别。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The redis_resource_level of this RedistributionRequestBody.
         :rtype: str
@@ -114,7 +114,7 @@ class RedistributionRequestBody:
     def redis_resource_level(self, redis_resource_level):
         r"""Sets the redis_resource_level of this RedistributionRequestBody.
 
-        重分布资源管控级别，扩容前或扩容重分布结束前设置生效。
+        **参数解释**: 重分布资源管控级别。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param redis_resource_level: The redis_resource_level of this RedistributionRequestBody.
         :type redis_resource_level: str

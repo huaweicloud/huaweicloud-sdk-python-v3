@@ -17,28 +17,35 @@ class UpdatePremiumInstanceRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'str'
+        'action': 'str',
+        'params': 'list[str]'
     }
 
     attribute_map = {
-        'action': 'action'
+        'action': 'action',
+        'params': 'params'
     }
 
-    def __init__(self, action=None):
+    def __init__(self, action=None, params=None):
         r"""UpdatePremiumInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
         :param action: 独享引擎操作名称
         :type action: str
+        :param params: 具体的请求体
+        :type params: list[str]
         """
         
         
 
         self._action = None
+        self._params = None
         self.discriminator = None
 
         self.action = action
+        if params is not None:
+            self.params = params
 
     @property
     def action(self):
@@ -61,6 +68,28 @@ class UpdatePremiumInstanceRequestBody:
         :type action: str
         """
         self._action = action
+
+    @property
+    def params(self):
+        r"""Gets the params of this UpdatePremiumInstanceRequestBody.
+
+        具体的请求体
+
+        :return: The params of this UpdatePremiumInstanceRequestBody.
+        :rtype: list[str]
+        """
+        return self._params
+
+    @params.setter
+    def params(self, params):
+        r"""Sets the params of this UpdatePremiumInstanceRequestBody.
+
+        具体的请求体
+
+        :param params: The params of this UpdatePremiumInstanceRequestBody.
+        :type params: list[str]
+        """
+        self._params = params
 
     def to_dict(self):
         """Returns the model properties as a dict"""

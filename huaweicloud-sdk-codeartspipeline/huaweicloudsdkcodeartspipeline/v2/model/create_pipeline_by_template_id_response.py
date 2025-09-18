@@ -30,7 +30,7 @@ class CreatePipelineByTemplateIdResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param pipeline_id: 流水线ID
+        :param pipeline_id: **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type pipeline_id: str
         """
         
@@ -46,7 +46,7 @@ class CreatePipelineByTemplateIdResponse(SdkResponse):
     def pipeline_id(self):
         r"""Gets the pipeline_id of this CreatePipelineByTemplateIdResponse.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The pipeline_id of this CreatePipelineByTemplateIdResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreatePipelineByTemplateIdResponse(SdkResponse):
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this CreatePipelineByTemplateIdResponse.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param pipeline_id: The pipeline_id of this CreatePipelineByTemplateIdResponse.
         :type pipeline_id: str

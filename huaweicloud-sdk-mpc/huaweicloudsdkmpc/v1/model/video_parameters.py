@@ -22,6 +22,7 @@ class VideoParameters:
         'crf': 'object',
         'max_bitrate': 'int',
         'bitrate': 'int',
+        'buf_size': 'int',
         'profile': 'int',
         'level': 'int',
         'preset': 'int',
@@ -40,6 +41,7 @@ class VideoParameters:
         'crf': 'crf',
         'max_bitrate': 'max_bitrate',
         'bitrate': 'bitrate',
+        'buf_size': 'buf_size',
         'profile': 'profile',
         'level': 'level',
         'preset': 'preset',
@@ -52,7 +54,7 @@ class VideoParameters:
         'stream_name': 'stream_name'
     }
 
-    def __init__(self, output_policy=None, codec=None, crf=None, max_bitrate=None, bitrate=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None, stream_name=None):
+    def __init__(self, output_policy=None, codec=None, crf=None, max_bitrate=None, bitrate=None, buf_size=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None, stream_name=None):
         r"""VideoParameters
 
         The model defined in huaweicloud sdk
@@ -63,15 +65,17 @@ class VideoParameters:
         :type codec: int
         :param crf: 视频恒定码率控制因子。  取值范围为[0, 51] 
         :type crf: object
-        :param max_bitrate: 输出最大码率  单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
+        :param max_bitrate: 输出最大码率，基于crf，设置max_bitrate字段才会开启ccrf  取值范围：0或[40,800000]之间的整数。   单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
         :type max_bitrate: int
-        :param bitrate: 输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
+        :param bitrate: 输出平均码率。  取值范围：0或[40,50000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
         :type bitrate: int
+        :param buf_size: ccrf时的缓冲区大小,建议与max_bitrate保持一致，避免编码器缓冲区溢出  取值范围：0或[40,800000]之间的整数。  单位：kbit 
+        :type buf_size: int
         :param profile: 编码档次  取值如下： - 1：VIDEO_PROFILE_H264_BASE - 2：VIDEO_PROFILE_H264_MAIN - 3：VIDEO_PROFILE_H264_HIGH - 4：VIDEO_PROFILE_H265_MAIN 
         :type profile: int
         :param level: 编码级别  取值如下： - 1：VIDEO_LEVEL_1_0 - 2：VIDEO_LEVEL_1_1 - 3：VIDEO_LEVEL_1_2 - 4：VIDEO_LEVEL_1_3 - 5：VIDEO_LEVEL_2_0 - 6：VIDEO_LEVEL_2_1 - 7：VIDEO_LEVEL_2_2 - 8：VIDEO_LEVEL_3_0 - 9：VIDEO_LEVEL_3_1 - 10：VIDEO_LEVEL_3_2 - 11：VIDEO_LEVEL_4_0 - 12：VIDEO_LEVEL_4_1 - 13：VIDEO_LEVEL_4_2 - 14：VIDEO_LEVEL_5_0 - 15：VIDEO_LEVEL_5_1 - 16：VIDEO_LEVEL_x_x 
         :type level: int
-        :param preset: 编码质量等级  取值如下： - 1：VIDEO_PRESET_HSPEED2 (只用于h.265, h.265 default) - 2：VIDEO_PRESET_HSPEED (只用于h.265) - 3：VIDEO_PRESET_NORMAL (h264/h.265可用，h.264 default) 
+        :param preset: 编码质量等级  取值如下： - 1：VIDEO_PRESET_SPEED，编码快速档位 - 3：VIDEO_PRESET_HIGHQUALITY，编码高质量档位 - 4：VIDEO_PRESET_QUALITY，编码质量档位 - 5：VIDEO_PRESET_BALANCE，编码平衡档位  默认值1。 
         :type preset: int
         :param max_iframes_interval: I帧最大间隔  取值范围：[2，10]。  默认值：5。  单位：秒。 
         :type max_iframes_interval: int
@@ -96,6 +100,7 @@ class VideoParameters:
         self._crf = None
         self._max_bitrate = None
         self._bitrate = None
+        self._buf_size = None
         self._profile = None
         self._level = None
         self._preset = None
@@ -118,6 +123,8 @@ class VideoParameters:
             self.max_bitrate = max_bitrate
         if bitrate is not None:
             self.bitrate = bitrate
+        if buf_size is not None:
+            self.buf_size = buf_size
         if profile is not None:
             self.profile = profile
         if level is not None:
@@ -209,7 +216,7 @@ class VideoParameters:
     def max_bitrate(self):
         r"""Gets the max_bitrate of this VideoParameters.
 
-        输出最大码率  单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
+        输出最大码率，基于crf，设置max_bitrate字段才会开启ccrf  取值范围：0或[40,800000]之间的整数。   单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
 
         :return: The max_bitrate of this VideoParameters.
         :rtype: int
@@ -220,7 +227,7 @@ class VideoParameters:
     def max_bitrate(self, max_bitrate):
         r"""Sets the max_bitrate of this VideoParameters.
 
-        输出最大码率  单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
+        输出最大码率，基于crf，设置max_bitrate字段才会开启ccrf  取值范围：0或[40,800000]之间的整数。   单位：kbit/s  带crf时使用，参考原片的平均码率进行设置（一般为1.5倍） 
 
         :param max_bitrate: The max_bitrate of this VideoParameters.
         :type max_bitrate: int
@@ -231,7 +238,7 @@ class VideoParameters:
     def bitrate(self):
         r"""Gets the bitrate of this VideoParameters.
 
-        输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
+        输出平均码率。  取值范围：0或[40,50000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
 
         :return: The bitrate of this VideoParameters.
         :rtype: int
@@ -242,12 +249,34 @@ class VideoParameters:
     def bitrate(self, bitrate):
         r"""Sets the bitrate of this VideoParameters.
 
-        输出平均码率。  取值范围：0或[40,30000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
+        输出平均码率。  取值范围：0或[40,50000]之间的整数。  单位：kbit/s  若设置为0，则输出平均码率为自适应值。 
 
         :param bitrate: The bitrate of this VideoParameters.
         :type bitrate: int
         """
         self._bitrate = bitrate
+
+    @property
+    def buf_size(self):
+        r"""Gets the buf_size of this VideoParameters.
+
+        ccrf时的缓冲区大小,建议与max_bitrate保持一致，避免编码器缓冲区溢出  取值范围：0或[40,800000]之间的整数。  单位：kbit 
+
+        :return: The buf_size of this VideoParameters.
+        :rtype: int
+        """
+        return self._buf_size
+
+    @buf_size.setter
+    def buf_size(self, buf_size):
+        r"""Sets the buf_size of this VideoParameters.
+
+        ccrf时的缓冲区大小,建议与max_bitrate保持一致，避免编码器缓冲区溢出  取值范围：0或[40,800000]之间的整数。  单位：kbit 
+
+        :param buf_size: The buf_size of this VideoParameters.
+        :type buf_size: int
+        """
+        self._buf_size = buf_size
 
     @property
     def profile(self):
@@ -297,7 +326,7 @@ class VideoParameters:
     def preset(self):
         r"""Gets the preset of this VideoParameters.
 
-        编码质量等级  取值如下： - 1：VIDEO_PRESET_HSPEED2 (只用于h.265, h.265 default) - 2：VIDEO_PRESET_HSPEED (只用于h.265) - 3：VIDEO_PRESET_NORMAL (h264/h.265可用，h.264 default) 
+        编码质量等级  取值如下： - 1：VIDEO_PRESET_SPEED，编码快速档位 - 3：VIDEO_PRESET_HIGHQUALITY，编码高质量档位 - 4：VIDEO_PRESET_QUALITY，编码质量档位 - 5：VIDEO_PRESET_BALANCE，编码平衡档位  默认值1。 
 
         :return: The preset of this VideoParameters.
         :rtype: int
@@ -308,7 +337,7 @@ class VideoParameters:
     def preset(self, preset):
         r"""Sets the preset of this VideoParameters.
 
-        编码质量等级  取值如下： - 1：VIDEO_PRESET_HSPEED2 (只用于h.265, h.265 default) - 2：VIDEO_PRESET_HSPEED (只用于h.265) - 3：VIDEO_PRESET_NORMAL (h264/h.265可用，h.264 default) 
+        编码质量等级  取值如下： - 1：VIDEO_PRESET_SPEED，编码快速档位 - 3：VIDEO_PRESET_HIGHQUALITY，编码高质量档位 - 4：VIDEO_PRESET_QUALITY，编码质量档位 - 5：VIDEO_PRESET_BALANCE，编码平衡档位  默认值1。 
 
         :param preset: The preset of this VideoParameters.
         :type preset: int

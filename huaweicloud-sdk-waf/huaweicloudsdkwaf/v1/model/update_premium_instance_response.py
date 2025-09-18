@@ -30,8 +30,7 @@ class UpdatePremiumInstanceResponse(SdkResponse):
         'service_ip': 'str',
         'service_ipv6': 'str',
         'float_ip': 'str',
-        'security_group_id': 'list[str]',
-        'mgr_security_group_id': 'str',
+        'security_group_ids': 'list[str]',
         'status': 'int',
         'run_status': 'int',
         'access_status': 'int',
@@ -60,8 +59,7 @@ class UpdatePremiumInstanceResponse(SdkResponse):
         'service_ip': 'service_ip',
         'service_ipv6': 'service_ipv6',
         'float_ip': 'floatIp',
-        'security_group_id': 'securityGroupId',
-        'mgr_security_group_id': 'mgrSecurityGroupId',
+        'security_group_ids': 'security_group_ids',
         'status': 'status',
         'run_status': 'run_status',
         'access_status': 'access_status',
@@ -77,7 +75,7 @@ class UpdatePremiumInstanceResponse(SdkResponse):
         'charge_mode': 'charge_mode'
     }
 
-    def __init__(self, id=None, instancename=None, server_id=None, region=None, zone=None, arch=None, cpu_flavor=None, vpc_id=None, subnet_id=None, service_ip=None, service_ipv6=None, float_ip=None, security_group_id=None, mgr_security_group_id=None, status=None, run_status=None, access_status=None, upgradable=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, specification=None, hosts=None, volume_type=None, cluster_id=None, pool_id=None, charge_mode=None):
+    def __init__(self, id=None, instancename=None, server_id=None, region=None, zone=None, arch=None, cpu_flavor=None, vpc_id=None, subnet_id=None, service_ip=None, service_ipv6=None, float_ip=None, security_group_ids=None, status=None, run_status=None, access_status=None, upgradable=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, specification=None, hosts=None, volume_type=None, cluster_id=None, pool_id=None, charge_mode=None):
         r"""UpdatePremiumInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -106,10 +104,8 @@ class UpdatePremiumInstanceResponse(SdkResponse):
         :type service_ipv6: str
         :param float_ip: **参数解释：** 独享引擎的管理面IP **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type float_ip: str
-        :param security_group_id: **参数解释：** 独享引擎ECS绑定的安全组 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type security_group_id: list[str]
-        :param mgr_security_group_id: **参数解释：** 独享引擎ECS绑定的用于WAF服务的安全组 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type mgr_security_group_id: str
+        :param security_group_ids: **参数解释：** 独享引擎ECS绑定的安全组 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type security_group_ids: list[str]
         :param status: **参数解释：** 独享引擎计费状态（0：正常计费,1：冻结（资源和数据会保留，但租户无法再正常使用云服务）,2：终止（资源和数据将清除）,3：受限（UDS控制用户桶访问权限）） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type status: int
         :param run_status: **参数解释：** &#39;独享引擎运行状态（0：创建中,1：运行中,2：删除中,3：已删除,4：创建失败,5：已冻结,6：异常,7：更新中,8：更新失败）&#39; **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
@@ -152,8 +148,7 @@ class UpdatePremiumInstanceResponse(SdkResponse):
         self._service_ip = None
         self._service_ipv6 = None
         self._float_ip = None
-        self._security_group_id = None
-        self._mgr_security_group_id = None
+        self._security_group_ids = None
         self._status = None
         self._run_status = None
         self._access_status = None
@@ -193,10 +188,8 @@ class UpdatePremiumInstanceResponse(SdkResponse):
             self.service_ipv6 = service_ipv6
         if float_ip is not None:
             self.float_ip = float_ip
-        if security_group_id is not None:
-            self.security_group_id = security_group_id
-        if mgr_security_group_id is not None:
-            self.mgr_security_group_id = mgr_security_group_id
+        if security_group_ids is not None:
+            self.security_group_ids = security_group_ids
         if status is not None:
             self.status = status
         if run_status is not None:
@@ -489,48 +482,26 @@ class UpdatePremiumInstanceResponse(SdkResponse):
         self._float_ip = float_ip
 
     @property
-    def security_group_id(self):
-        r"""Gets the security_group_id of this UpdatePremiumInstanceResponse.
+    def security_group_ids(self):
+        r"""Gets the security_group_ids of this UpdatePremiumInstanceResponse.
 
         **参数解释：** 独享引擎ECS绑定的安全组 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
-        :return: The security_group_id of this UpdatePremiumInstanceResponse.
+        :return: The security_group_ids of this UpdatePremiumInstanceResponse.
         :rtype: list[str]
         """
-        return self._security_group_id
+        return self._security_group_ids
 
-    @security_group_id.setter
-    def security_group_id(self, security_group_id):
-        r"""Sets the security_group_id of this UpdatePremiumInstanceResponse.
+    @security_group_ids.setter
+    def security_group_ids(self, security_group_ids):
+        r"""Sets the security_group_ids of this UpdatePremiumInstanceResponse.
 
         **参数解释：** 独享引擎ECS绑定的安全组 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
-        :param security_group_id: The security_group_id of this UpdatePremiumInstanceResponse.
-        :type security_group_id: list[str]
+        :param security_group_ids: The security_group_ids of this UpdatePremiumInstanceResponse.
+        :type security_group_ids: list[str]
         """
-        self._security_group_id = security_group_id
-
-    @property
-    def mgr_security_group_id(self):
-        r"""Gets the mgr_security_group_id of this UpdatePremiumInstanceResponse.
-
-        **参数解释：** 独享引擎ECS绑定的用于WAF服务的安全组 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-
-        :return: The mgr_security_group_id of this UpdatePremiumInstanceResponse.
-        :rtype: str
-        """
-        return self._mgr_security_group_id
-
-    @mgr_security_group_id.setter
-    def mgr_security_group_id(self, mgr_security_group_id):
-        r"""Sets the mgr_security_group_id of this UpdatePremiumInstanceResponse.
-
-        **参数解释：** 独享引擎ECS绑定的用于WAF服务的安全组 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-
-        :param mgr_security_group_id: The mgr_security_group_id of this UpdatePremiumInstanceResponse.
-        :type mgr_security_group_id: str
-        """
-        self._mgr_security_group_id = mgr_security_group_id
+        self._security_group_ids = security_group_ids
 
     @property
     def status(self):

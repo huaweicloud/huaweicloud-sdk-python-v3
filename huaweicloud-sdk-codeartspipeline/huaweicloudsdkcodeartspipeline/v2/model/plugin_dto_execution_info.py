@@ -17,7 +17,7 @@ class PluginDTOExecutionInfo:
     sensitive_list = []
 
     openapi_types = {
-        'inner_execution_info': 'object'
+        'inner_execution_info': 'PluginDTOExecutionInfoInnerExecutionInfo'
     }
 
     attribute_map = {
@@ -29,8 +29,8 @@ class PluginDTOExecutionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param inner_execution_info: 执行信息
-        :type inner_execution_info: object
+        :param inner_execution_info: 
+        :type inner_execution_info: :class:`huaweicloudsdkcodeartspipeline.v2.PluginDTOExecutionInfoInnerExecutionInfo`
         """
         
         
@@ -38,17 +38,14 @@ class PluginDTOExecutionInfo:
         self._inner_execution_info = None
         self.discriminator = None
 
-        if inner_execution_info is not None:
-            self.inner_execution_info = inner_execution_info
+        self.inner_execution_info = inner_execution_info
 
     @property
     def inner_execution_info(self):
         r"""Gets the inner_execution_info of this PluginDTOExecutionInfo.
 
-        执行信息
-
         :return: The inner_execution_info of this PluginDTOExecutionInfo.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PluginDTOExecutionInfoInnerExecutionInfo`
         """
         return self._inner_execution_info
 
@@ -56,10 +53,8 @@ class PluginDTOExecutionInfo:
     def inner_execution_info(self, inner_execution_info):
         r"""Sets the inner_execution_info of this PluginDTOExecutionInfo.
 
-        执行信息
-
         :param inner_execution_info: The inner_execution_info of this PluginDTOExecutionInfo.
-        :type inner_execution_info: object
+        :type inner_execution_info: :class:`huaweicloudsdkcodeartspipeline.v2.PluginDTOExecutionInfoInnerExecutionInfo`
         """
         self._inner_execution_info = inner_execution_info
 

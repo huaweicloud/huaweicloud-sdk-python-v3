@@ -43,17 +43,17 @@ class NewExtensionInputs:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: **参数解释**： 名称。 **取值范围**： 不涉及。 
         :type name: str
-        :param type: 类型
+        :param type: **参数解释**： 类型。 **取值范围**： 不涉及。 
         :type type: str
-        :param label: 标签
+        :param label: **参数解释**： 标签。 **取值范围**： 不涉及。 
         :type label: str
-        :param description: 说明
+        :param description: **参数解释**： 说明。 **取值范围**： 不涉及。 
         :type description: str
-        :param default_value: 默认值
+        :param default_value: **参数解释**： 默认值。 **取值范围**： 不涉及。 
         :type default_value: str
-        :param required: 必填
+        :param required: **参数解释**： 是否必填。 **取值范围**： - true：必填。 - false：非必填。 
         :type required: bool
         :param extend_prop: 
         :type extend_prop: :class:`huaweicloudsdkcodeartspipeline.v2.ExtensionExtendProp`
@@ -94,7 +94,7 @@ class NewExtensionInputs:
     def name(self):
         r"""Gets the name of this NewExtensionInputs.
 
-        名称
+        **参数解释**： 名称。 **取值范围**： 不涉及。 
 
         :return: The name of this NewExtensionInputs.
         :rtype: str
@@ -105,7 +105,7 @@ class NewExtensionInputs:
     def name(self, name):
         r"""Sets the name of this NewExtensionInputs.
 
-        名称
+        **参数解释**： 名称。 **取值范围**： 不涉及。 
 
         :param name: The name of this NewExtensionInputs.
         :type name: str
@@ -116,7 +116,7 @@ class NewExtensionInputs:
     def type(self):
         r"""Gets the type of this NewExtensionInputs.
 
-        类型
+        **参数解释**： 类型。 **取值范围**： 不涉及。 
 
         :return: The type of this NewExtensionInputs.
         :rtype: str
@@ -127,7 +127,7 @@ class NewExtensionInputs:
     def type(self, type):
         r"""Sets the type of this NewExtensionInputs.
 
-        类型
+        **参数解释**： 类型。 **取值范围**： 不涉及。 
 
         :param type: The type of this NewExtensionInputs.
         :type type: str
@@ -138,7 +138,7 @@ class NewExtensionInputs:
     def label(self):
         r"""Gets the label of this NewExtensionInputs.
 
-        标签
+        **参数解释**： 标签。 **取值范围**： 不涉及。 
 
         :return: The label of this NewExtensionInputs.
         :rtype: str
@@ -149,7 +149,7 @@ class NewExtensionInputs:
     def label(self, label):
         r"""Sets the label of this NewExtensionInputs.
 
-        标签
+        **参数解释**： 标签。 **取值范围**： 不涉及。 
 
         :param label: The label of this NewExtensionInputs.
         :type label: str
@@ -160,7 +160,7 @@ class NewExtensionInputs:
     def description(self):
         r"""Gets the description of this NewExtensionInputs.
 
-        说明
+        **参数解释**： 说明。 **取值范围**： 不涉及。 
 
         :return: The description of this NewExtensionInputs.
         :rtype: str
@@ -171,7 +171,7 @@ class NewExtensionInputs:
     def description(self, description):
         r"""Sets the description of this NewExtensionInputs.
 
-        说明
+        **参数解释**： 说明。 **取值范围**： 不涉及。 
 
         :param description: The description of this NewExtensionInputs.
         :type description: str
@@ -182,7 +182,7 @@ class NewExtensionInputs:
     def default_value(self):
         r"""Gets the default_value of this NewExtensionInputs.
 
-        默认值
+        **参数解释**： 默认值。 **取值范围**： 不涉及。 
 
         :return: The default_value of this NewExtensionInputs.
         :rtype: str
@@ -193,7 +193,7 @@ class NewExtensionInputs:
     def default_value(self, default_value):
         r"""Sets the default_value of this NewExtensionInputs.
 
-        默认值
+        **参数解释**： 默认值。 **取值范围**： 不涉及。 
 
         :param default_value: The default_value of this NewExtensionInputs.
         :type default_value: str
@@ -204,7 +204,7 @@ class NewExtensionInputs:
     def required(self):
         r"""Gets the required of this NewExtensionInputs.
 
-        必填
+        **参数解释**： 是否必填。 **取值范围**： - true：必填。 - false：非必填。 
 
         :return: The required of this NewExtensionInputs.
         :rtype: bool
@@ -215,7 +215,7 @@ class NewExtensionInputs:
     def required(self, required):
         r"""Sets the required of this NewExtensionInputs.
 
-        必填
+        **参数解释**： 是否必填。 **取值范围**： - true：必填。 - false：非必填。 
 
         :param required: The required of this NewExtensionInputs.
         :type required: bool

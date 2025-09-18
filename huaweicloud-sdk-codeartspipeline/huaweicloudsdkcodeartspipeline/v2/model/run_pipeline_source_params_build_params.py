@@ -53,31 +53,31 @@ class RunPipelineSourceParamsBuildParams:
 
         The model defined in huaweicloud sdk
 
-        :param action: 合并请求事件类型
+        :param action: **参数解释**： 合并请求事件类型 **取值范围**： - open：打开。 - reopen：重开。 - update：更新。 - merge：合并。 
         :type action: str
-        :param build_type: 基于分支还是tag运行
+        :param build_type: **参数解释**： 基于分支还是tag运行。 **取值范围**： - branch：分支触发。 - tag：标签触发。 
         :type build_type: str
-        :param commit_id: 代码仓提交ID
+        :param commit_id: **参数解释**： 代码仓提交ID。 **取值范围**： 不涉及。 
         :type commit_id: str
-        :param event_type: 运行事件类型
+        :param event_type: **参数解释**： CodeArts项目ID。 **取值范围**： - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 
         :type event_type: str
-        :param merge_id: 合并请求ID
+        :param merge_id: **参数解释**： 合并请求ID。 **取值范围**： 不涉及。 
         :type merge_id: str
-        :param message: 代码仓提交信息
+        :param message: **参数解释**： 代码仓提交信息。 **取值范围**： 不涉及。 
         :type message: str
-        :param source_branch: 源分支
+        :param source_branch: **参数解释**： 源分支。 **取值范围**： 不涉及。 
         :type source_branch: str
-        :param tag: 标签
+        :param tag: **参数解释**： 标签。 **取值范围**： 不涉及。 
         :type tag: str
-        :param target_branch: 目标分支
+        :param target_branch: **参数解释**： 目标分支。 **取值范围**： 不涉及。 
         :type target_branch: str
-        :param codehub_id: codehub代码仓ID
+        :param codehub_id: **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
         :type codehub_id: str
-        :param source_codehub_id: 源codehub代码仓ID
+        :param source_codehub_id: **参数解释**： 源Repo代码仓ID。 **取值范围**： 不涉及。 
         :type source_codehub_id: str
-        :param source_codehub_url: 源codehub代码仓地址
+        :param source_codehub_url: **参数解释**： 源Repo代码仓地址。 **取值范围**： 不涉及。 
         :type source_codehub_url: str
-        :param source_codehub_http_url: 源codehub代码仓http地址
+        :param source_codehub_http_url: **参数解释**： 源Repo代码仓http地址。 **取值范围**： 不涉及。 
         :type source_codehub_http_url: str
         """
         
@@ -129,7 +129,7 @@ class RunPipelineSourceParamsBuildParams:
     def action(self):
         r"""Gets the action of this RunPipelineSourceParamsBuildParams.
 
-        合并请求事件类型
+        **参数解释**： 合并请求事件类型 **取值范围**： - open：打开。 - reopen：重开。 - update：更新。 - merge：合并。 
 
         :return: The action of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -140,7 +140,7 @@ class RunPipelineSourceParamsBuildParams:
     def action(self, action):
         r"""Sets the action of this RunPipelineSourceParamsBuildParams.
 
-        合并请求事件类型
+        **参数解释**： 合并请求事件类型 **取值范围**： - open：打开。 - reopen：重开。 - update：更新。 - merge：合并。 
 
         :param action: The action of this RunPipelineSourceParamsBuildParams.
         :type action: str
@@ -151,7 +151,7 @@ class RunPipelineSourceParamsBuildParams:
     def build_type(self):
         r"""Gets the build_type of this RunPipelineSourceParamsBuildParams.
 
-        基于分支还是tag运行
+        **参数解释**： 基于分支还是tag运行。 **取值范围**： - branch：分支触发。 - tag：标签触发。 
 
         :return: The build_type of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -162,7 +162,7 @@ class RunPipelineSourceParamsBuildParams:
     def build_type(self, build_type):
         r"""Sets the build_type of this RunPipelineSourceParamsBuildParams.
 
-        基于分支还是tag运行
+        **参数解释**： 基于分支还是tag运行。 **取值范围**： - branch：分支触发。 - tag：标签触发。 
 
         :param build_type: The build_type of this RunPipelineSourceParamsBuildParams.
         :type build_type: str
@@ -173,7 +173,7 @@ class RunPipelineSourceParamsBuildParams:
     def commit_id(self):
         r"""Gets the commit_id of this RunPipelineSourceParamsBuildParams.
 
-        代码仓提交ID
+        **参数解释**： 代码仓提交ID。 **取值范围**： 不涉及。 
 
         :return: The commit_id of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -184,7 +184,7 @@ class RunPipelineSourceParamsBuildParams:
     def commit_id(self, commit_id):
         r"""Sets the commit_id of this RunPipelineSourceParamsBuildParams.
 
-        代码仓提交ID
+        **参数解释**： 代码仓提交ID。 **取值范围**： 不涉及。 
 
         :param commit_id: The commit_id of this RunPipelineSourceParamsBuildParams.
         :type commit_id: str
@@ -195,7 +195,7 @@ class RunPipelineSourceParamsBuildParams:
     def event_type(self):
         r"""Gets the event_type of this RunPipelineSourceParamsBuildParams.
 
-        运行事件类型
+        **参数解释**： CodeArts项目ID。 **取值范围**： - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 
 
         :return: The event_type of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -206,7 +206,7 @@ class RunPipelineSourceParamsBuildParams:
     def event_type(self, event_type):
         r"""Sets the event_type of this RunPipelineSourceParamsBuildParams.
 
-        运行事件类型
+        **参数解释**： CodeArts项目ID。 **取值范围**： - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 
 
         :param event_type: The event_type of this RunPipelineSourceParamsBuildParams.
         :type event_type: str
@@ -217,7 +217,7 @@ class RunPipelineSourceParamsBuildParams:
     def merge_id(self):
         r"""Gets the merge_id of this RunPipelineSourceParamsBuildParams.
 
-        合并请求ID
+        **参数解释**： 合并请求ID。 **取值范围**： 不涉及。 
 
         :return: The merge_id of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -228,7 +228,7 @@ class RunPipelineSourceParamsBuildParams:
     def merge_id(self, merge_id):
         r"""Sets the merge_id of this RunPipelineSourceParamsBuildParams.
 
-        合并请求ID
+        **参数解释**： 合并请求ID。 **取值范围**： 不涉及。 
 
         :param merge_id: The merge_id of this RunPipelineSourceParamsBuildParams.
         :type merge_id: str
@@ -239,7 +239,7 @@ class RunPipelineSourceParamsBuildParams:
     def message(self):
         r"""Gets the message of this RunPipelineSourceParamsBuildParams.
 
-        代码仓提交信息
+        **参数解释**： 代码仓提交信息。 **取值范围**： 不涉及。 
 
         :return: The message of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -250,7 +250,7 @@ class RunPipelineSourceParamsBuildParams:
     def message(self, message):
         r"""Sets the message of this RunPipelineSourceParamsBuildParams.
 
-        代码仓提交信息
+        **参数解释**： 代码仓提交信息。 **取值范围**： 不涉及。 
 
         :param message: The message of this RunPipelineSourceParamsBuildParams.
         :type message: str
@@ -261,7 +261,7 @@ class RunPipelineSourceParamsBuildParams:
     def source_branch(self):
         r"""Gets the source_branch of this RunPipelineSourceParamsBuildParams.
 
-        源分支
+        **参数解释**： 源分支。 **取值范围**： 不涉及。 
 
         :return: The source_branch of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -272,7 +272,7 @@ class RunPipelineSourceParamsBuildParams:
     def source_branch(self, source_branch):
         r"""Sets the source_branch of this RunPipelineSourceParamsBuildParams.
 
-        源分支
+        **参数解释**： 源分支。 **取值范围**： 不涉及。 
 
         :param source_branch: The source_branch of this RunPipelineSourceParamsBuildParams.
         :type source_branch: str
@@ -283,7 +283,7 @@ class RunPipelineSourceParamsBuildParams:
     def tag(self):
         r"""Gets the tag of this RunPipelineSourceParamsBuildParams.
 
-        标签
+        **参数解释**： 标签。 **取值范围**： 不涉及。 
 
         :return: The tag of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -294,7 +294,7 @@ class RunPipelineSourceParamsBuildParams:
     def tag(self, tag):
         r"""Sets the tag of this RunPipelineSourceParamsBuildParams.
 
-        标签
+        **参数解释**： 标签。 **取值范围**： 不涉及。 
 
         :param tag: The tag of this RunPipelineSourceParamsBuildParams.
         :type tag: str
@@ -305,7 +305,7 @@ class RunPipelineSourceParamsBuildParams:
     def target_branch(self):
         r"""Gets the target_branch of this RunPipelineSourceParamsBuildParams.
 
-        目标分支
+        **参数解释**： 目标分支。 **取值范围**： 不涉及。 
 
         :return: The target_branch of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -316,7 +316,7 @@ class RunPipelineSourceParamsBuildParams:
     def target_branch(self, target_branch):
         r"""Sets the target_branch of this RunPipelineSourceParamsBuildParams.
 
-        目标分支
+        **参数解释**： 目标分支。 **取值范围**： 不涉及。 
 
         :param target_branch: The target_branch of this RunPipelineSourceParamsBuildParams.
         :type target_branch: str
@@ -327,7 +327,7 @@ class RunPipelineSourceParamsBuildParams:
     def codehub_id(self):
         r"""Gets the codehub_id of this RunPipelineSourceParamsBuildParams.
 
-        codehub代码仓ID
+        **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :return: The codehub_id of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -338,7 +338,7 @@ class RunPipelineSourceParamsBuildParams:
     def codehub_id(self, codehub_id):
         r"""Sets the codehub_id of this RunPipelineSourceParamsBuildParams.
 
-        codehub代码仓ID
+        **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :param codehub_id: The codehub_id of this RunPipelineSourceParamsBuildParams.
         :type codehub_id: str
@@ -349,7 +349,7 @@ class RunPipelineSourceParamsBuildParams:
     def source_codehub_id(self):
         r"""Gets the source_codehub_id of this RunPipelineSourceParamsBuildParams.
 
-        源codehub代码仓ID
+        **参数解释**： 源Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :return: The source_codehub_id of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -360,7 +360,7 @@ class RunPipelineSourceParamsBuildParams:
     def source_codehub_id(self, source_codehub_id):
         r"""Sets the source_codehub_id of this RunPipelineSourceParamsBuildParams.
 
-        源codehub代码仓ID
+        **参数解释**： 源Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :param source_codehub_id: The source_codehub_id of this RunPipelineSourceParamsBuildParams.
         :type source_codehub_id: str
@@ -371,7 +371,7 @@ class RunPipelineSourceParamsBuildParams:
     def source_codehub_url(self):
         r"""Gets the source_codehub_url of this RunPipelineSourceParamsBuildParams.
 
-        源codehub代码仓地址
+        **参数解释**： 源Repo代码仓地址。 **取值范围**： 不涉及。 
 
         :return: The source_codehub_url of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -382,7 +382,7 @@ class RunPipelineSourceParamsBuildParams:
     def source_codehub_url(self, source_codehub_url):
         r"""Sets the source_codehub_url of this RunPipelineSourceParamsBuildParams.
 
-        源codehub代码仓地址
+        **参数解释**： 源Repo代码仓地址。 **取值范围**： 不涉及。 
 
         :param source_codehub_url: The source_codehub_url of this RunPipelineSourceParamsBuildParams.
         :type source_codehub_url: str
@@ -393,7 +393,7 @@ class RunPipelineSourceParamsBuildParams:
     def source_codehub_http_url(self):
         r"""Gets the source_codehub_http_url of this RunPipelineSourceParamsBuildParams.
 
-        源codehub代码仓http地址
+        **参数解释**： 源Repo代码仓http地址。 **取值范围**： 不涉及。 
 
         :return: The source_codehub_http_url of this RunPipelineSourceParamsBuildParams.
         :rtype: str
@@ -404,7 +404,7 @@ class RunPipelineSourceParamsBuildParams:
     def source_codehub_http_url(self, source_codehub_http_url):
         r"""Sets the source_codehub_http_url of this RunPipelineSourceParamsBuildParams.
 
-        源codehub代码仓http地址
+        **参数解释**： 源Repo代码仓http地址。 **取值范围**： 不涉及。 
 
         :param source_codehub_http_url: The source_codehub_http_url of this RunPipelineSourceParamsBuildParams.
         :type source_codehub_http_url: str

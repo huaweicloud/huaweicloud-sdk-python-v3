@@ -26,7 +26,7 @@ class ListPipelinesPageLatestRun:
         'run_number': 'int',
         'trigger_type': 'str',
         'build_params': 'ListPipelinesPageLatestRunBuildParams',
-        'artifact_params': 'ListPipelinesPageLatestRunArtifactParams',
+        'artifact_params': 'PipelineLatestRunArtifactParams',
         'start_time': 'int',
         'end_time': 'int',
         'modify_url': 'str',
@@ -55,33 +55,33 @@ class ListPipelinesPageLatestRun:
 
         The model defined in huaweicloud sdk
 
-        :param pipeline_id: 流水线ID
+        :param pipeline_id: **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 不涉及。 
         :type pipeline_id: str
-        :param pipeline_run_id: 流水线运行实例ID
+        :param pipeline_run_id: **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 不涉及。 
         :type pipeline_run_id: str
-        :param executor_id: 执行人ID
+        :param executor_id: **参数解释**： 执行人ID。 **取值范围**： 不涉及。 
         :type executor_id: str
-        :param executor_name: 执行人名称
+        :param executor_name: **参数解释**： 执行人名称。 **取值范围**： 不涉及。 
         :type executor_name: str
-        :param stage_status_list: 阶段信息列表
+        :param stage_status_list: **参数解释**： 阶段信息列表。 **取值范围**： 不涉及。 
         :type stage_status_list: list[:class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageLatestRunStageStatusList`]
-        :param status: 状态
+        :param status: **参数解释**： 流水线运行实例状态。 **取值范围**： - COMPLETED：已完成。 - RUNNING：运行中。 - FAILED：失败。 - CANCELED：取消。 - PAUSED：暂停。 - SUSPEND：挂起。 - IGNORED：忽略。 
         :type status: str
-        :param run_number: 运行序号
+        :param run_number: **参数解释**： 流水线运行序号。 **取值范围**： 大于等于 1。 
         :type run_number: int
-        :param trigger_type: 触发类型
+        :param trigger_type: **参数解释**： 触发类型 **取值范围**： - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 
         :type trigger_type: str
         :param build_params: 
         :type build_params: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageLatestRunBuildParams`
         :param artifact_params: 
-        :type artifact_params: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageLatestRunArtifactParams`
-        :param start_time: 开始时间
+        :type artifact_params: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineLatestRunArtifactParams`
+        :param start_time: **参数解释**： 流水线开始时间。 **取值范围**： 不涉及。 
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: **参数解释**： 流水线结束时间。 **取值范围**： 不涉及。 
         :type end_time: int
-        :param modify_url: 修改页地址
+        :param modify_url: **参数解释**： 修改页地址。 **取值范围**： 不涉及。 
         :type modify_url: str
-        :param detail_url: 详情页地址
+        :param detail_url: **参数解释**： 详情页地址。 **取值范围**： 不涉及。 
         :type detail_url: str
         """
         
@@ -136,7 +136,7 @@ class ListPipelinesPageLatestRun:
     def pipeline_id(self):
         r"""Gets the pipeline_id of this ListPipelinesPageLatestRun.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 不涉及。 
 
         :return: The pipeline_id of this ListPipelinesPageLatestRun.
         :rtype: str
@@ -147,7 +147,7 @@ class ListPipelinesPageLatestRun:
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this ListPipelinesPageLatestRun.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 不涉及。 
 
         :param pipeline_id: The pipeline_id of this ListPipelinesPageLatestRun.
         :type pipeline_id: str
@@ -158,7 +158,7 @@ class ListPipelinesPageLatestRun:
     def pipeline_run_id(self):
         r"""Gets the pipeline_run_id of this ListPipelinesPageLatestRun.
 
-        流水线运行实例ID
+        **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 不涉及。 
 
         :return: The pipeline_run_id of this ListPipelinesPageLatestRun.
         :rtype: str
@@ -169,7 +169,7 @@ class ListPipelinesPageLatestRun:
     def pipeline_run_id(self, pipeline_run_id):
         r"""Sets the pipeline_run_id of this ListPipelinesPageLatestRun.
 
-        流水线运行实例ID
+        **参数解释**： 流水线运行实例ID，[启动流水线](RunPipeline.xml)接口的返回值即为流水线运行实例ID。 **取值范围**： 不涉及。 
 
         :param pipeline_run_id: The pipeline_run_id of this ListPipelinesPageLatestRun.
         :type pipeline_run_id: str
@@ -180,7 +180,7 @@ class ListPipelinesPageLatestRun:
     def executor_id(self):
         r"""Gets the executor_id of this ListPipelinesPageLatestRun.
 
-        执行人ID
+        **参数解释**： 执行人ID。 **取值范围**： 不涉及。 
 
         :return: The executor_id of this ListPipelinesPageLatestRun.
         :rtype: str
@@ -191,7 +191,7 @@ class ListPipelinesPageLatestRun:
     def executor_id(self, executor_id):
         r"""Sets the executor_id of this ListPipelinesPageLatestRun.
 
-        执行人ID
+        **参数解释**： 执行人ID。 **取值范围**： 不涉及。 
 
         :param executor_id: The executor_id of this ListPipelinesPageLatestRun.
         :type executor_id: str
@@ -202,7 +202,7 @@ class ListPipelinesPageLatestRun:
     def executor_name(self):
         r"""Gets the executor_name of this ListPipelinesPageLatestRun.
 
-        执行人名称
+        **参数解释**： 执行人名称。 **取值范围**： 不涉及。 
 
         :return: The executor_name of this ListPipelinesPageLatestRun.
         :rtype: str
@@ -213,7 +213,7 @@ class ListPipelinesPageLatestRun:
     def executor_name(self, executor_name):
         r"""Sets the executor_name of this ListPipelinesPageLatestRun.
 
-        执行人名称
+        **参数解释**： 执行人名称。 **取值范围**： 不涉及。 
 
         :param executor_name: The executor_name of this ListPipelinesPageLatestRun.
         :type executor_name: str
@@ -224,7 +224,7 @@ class ListPipelinesPageLatestRun:
     def stage_status_list(self):
         r"""Gets the stage_status_list of this ListPipelinesPageLatestRun.
 
-        阶段信息列表
+        **参数解释**： 阶段信息列表。 **取值范围**： 不涉及。 
 
         :return: The stage_status_list of this ListPipelinesPageLatestRun.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageLatestRunStageStatusList`]
@@ -235,7 +235,7 @@ class ListPipelinesPageLatestRun:
     def stage_status_list(self, stage_status_list):
         r"""Sets the stage_status_list of this ListPipelinesPageLatestRun.
 
-        阶段信息列表
+        **参数解释**： 阶段信息列表。 **取值范围**： 不涉及。 
 
         :param stage_status_list: The stage_status_list of this ListPipelinesPageLatestRun.
         :type stage_status_list: list[:class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageLatestRunStageStatusList`]
@@ -246,7 +246,7 @@ class ListPipelinesPageLatestRun:
     def status(self):
         r"""Gets the status of this ListPipelinesPageLatestRun.
 
-        状态
+        **参数解释**： 流水线运行实例状态。 **取值范围**： - COMPLETED：已完成。 - RUNNING：运行中。 - FAILED：失败。 - CANCELED：取消。 - PAUSED：暂停。 - SUSPEND：挂起。 - IGNORED：忽略。 
 
         :return: The status of this ListPipelinesPageLatestRun.
         :rtype: str
@@ -257,7 +257,7 @@ class ListPipelinesPageLatestRun:
     def status(self, status):
         r"""Sets the status of this ListPipelinesPageLatestRun.
 
-        状态
+        **参数解释**： 流水线运行实例状态。 **取值范围**： - COMPLETED：已完成。 - RUNNING：运行中。 - FAILED：失败。 - CANCELED：取消。 - PAUSED：暂停。 - SUSPEND：挂起。 - IGNORED：忽略。 
 
         :param status: The status of this ListPipelinesPageLatestRun.
         :type status: str
@@ -268,7 +268,7 @@ class ListPipelinesPageLatestRun:
     def run_number(self):
         r"""Gets the run_number of this ListPipelinesPageLatestRun.
 
-        运行序号
+        **参数解释**： 流水线运行序号。 **取值范围**： 大于等于 1。 
 
         :return: The run_number of this ListPipelinesPageLatestRun.
         :rtype: int
@@ -279,7 +279,7 @@ class ListPipelinesPageLatestRun:
     def run_number(self, run_number):
         r"""Sets the run_number of this ListPipelinesPageLatestRun.
 
-        运行序号
+        **参数解释**： 流水线运行序号。 **取值范围**： 大于等于 1。 
 
         :param run_number: The run_number of this ListPipelinesPageLatestRun.
         :type run_number: int
@@ -290,7 +290,7 @@ class ListPipelinesPageLatestRun:
     def trigger_type(self):
         r"""Gets the trigger_type of this ListPipelinesPageLatestRun.
 
-        触发类型
+        **参数解释**： 触发类型 **取值范围**： - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 
 
         :return: The trigger_type of this ListPipelinesPageLatestRun.
         :rtype: str
@@ -301,7 +301,7 @@ class ListPipelinesPageLatestRun:
     def trigger_type(self, trigger_type):
         r"""Sets the trigger_type of this ListPipelinesPageLatestRun.
 
-        触发类型
+        **参数解释**： 触发类型 **取值范围**： - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 
 
         :param trigger_type: The trigger_type of this ListPipelinesPageLatestRun.
         :type trigger_type: str
@@ -331,7 +331,7 @@ class ListPipelinesPageLatestRun:
         r"""Gets the artifact_params of this ListPipelinesPageLatestRun.
 
         :return: The artifact_params of this ListPipelinesPageLatestRun.
-        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageLatestRunArtifactParams`
+        :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineLatestRunArtifactParams`
         """
         return self._artifact_params
 
@@ -340,7 +340,7 @@ class ListPipelinesPageLatestRun:
         r"""Sets the artifact_params of this ListPipelinesPageLatestRun.
 
         :param artifact_params: The artifact_params of this ListPipelinesPageLatestRun.
-        :type artifact_params: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageLatestRunArtifactParams`
+        :type artifact_params: :class:`huaweicloudsdkcodeartspipeline.v2.PipelineLatestRunArtifactParams`
         """
         self._artifact_params = artifact_params
 
@@ -348,7 +348,7 @@ class ListPipelinesPageLatestRun:
     def start_time(self):
         r"""Gets the start_time of this ListPipelinesPageLatestRun.
 
-        开始时间
+        **参数解释**： 流水线开始时间。 **取值范围**： 不涉及。 
 
         :return: The start_time of this ListPipelinesPageLatestRun.
         :rtype: int
@@ -359,7 +359,7 @@ class ListPipelinesPageLatestRun:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListPipelinesPageLatestRun.
 
-        开始时间
+        **参数解释**： 流水线开始时间。 **取值范围**： 不涉及。 
 
         :param start_time: The start_time of this ListPipelinesPageLatestRun.
         :type start_time: int
@@ -370,7 +370,7 @@ class ListPipelinesPageLatestRun:
     def end_time(self):
         r"""Gets the end_time of this ListPipelinesPageLatestRun.
 
-        结束时间
+        **参数解释**： 流水线结束时间。 **取值范围**： 不涉及。 
 
         :return: The end_time of this ListPipelinesPageLatestRun.
         :rtype: int
@@ -381,7 +381,7 @@ class ListPipelinesPageLatestRun:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListPipelinesPageLatestRun.
 
-        结束时间
+        **参数解释**： 流水线结束时间。 **取值范围**： 不涉及。 
 
         :param end_time: The end_time of this ListPipelinesPageLatestRun.
         :type end_time: int
@@ -392,7 +392,7 @@ class ListPipelinesPageLatestRun:
     def modify_url(self):
         r"""Gets the modify_url of this ListPipelinesPageLatestRun.
 
-        修改页地址
+        **参数解释**： 修改页地址。 **取值范围**： 不涉及。 
 
         :return: The modify_url of this ListPipelinesPageLatestRun.
         :rtype: str
@@ -403,7 +403,7 @@ class ListPipelinesPageLatestRun:
     def modify_url(self, modify_url):
         r"""Sets the modify_url of this ListPipelinesPageLatestRun.
 
-        修改页地址
+        **参数解释**： 修改页地址。 **取值范围**： 不涉及。 
 
         :param modify_url: The modify_url of this ListPipelinesPageLatestRun.
         :type modify_url: str
@@ -414,7 +414,7 @@ class ListPipelinesPageLatestRun:
     def detail_url(self):
         r"""Gets the detail_url of this ListPipelinesPageLatestRun.
 
-        详情页地址
+        **参数解释**： 详情页地址。 **取值范围**： 不涉及。 
 
         :return: The detail_url of this ListPipelinesPageLatestRun.
         :rtype: str
@@ -425,7 +425,7 @@ class ListPipelinesPageLatestRun:
     def detail_url(self, detail_url):
         r"""Sets the detail_url of this ListPipelinesPageLatestRun.
 
-        详情页地址
+        **参数解释**： 详情页地址。 **取值范围**： 不涉及。 
 
         :param detail_url: The detail_url of this ListPipelinesPageLatestRun.
         :type detail_url: str

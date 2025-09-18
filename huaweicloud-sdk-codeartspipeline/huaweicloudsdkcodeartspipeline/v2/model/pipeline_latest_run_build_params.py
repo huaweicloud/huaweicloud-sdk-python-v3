@@ -55,33 +55,33 @@ class PipelineLatestRunBuildParams:
 
         The model defined in huaweicloud sdk
 
-        :param action: 合并请求的事件类型
+        :param action: **参数解释**： 合并请求事件类型。 **取值范围**： - open：打开。 - reopen：重开。 - update：更新。 - merge：合并。 
         :type action: str
-        :param build_type: 基于分支还是tag触发
+        :param build_type: **参数解释**： 基于分支还是标签触发。 **取值范围**： - branch：分支触发。 - tag：标签触发。 
         :type build_type: str
-        :param commit_id: 代码库提交ID
+        :param commit_id: **参数解释**： 代码仓提交ID。 **取值范围**： 40位字符。 
         :type commit_id: str
-        :param event_type: 触发的事件类型
+        :param event_type: **参数解释**： 运行事件类型。 **取值范围**： - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 
         :type event_type: str
-        :param merge_id: 合并请求的ID
+        :param merge_id: **参数解释**： 合并请求ID。 **取值范围**： 不涉及。 
         :type merge_id: str
-        :param message: 代码库提交信息
+        :param message: **参数解释**： 代码仓提交信息。 **取值范围**： 不涉及。 
         :type message: str
-        :param source_branch: 合并请求的源分支
+        :param source_branch: **参数解释**： 源分支。 **取值范围**： 不涉及。 
         :type source_branch: str
-        :param tag: 标签
+        :param tag: **参数解释**： 标签。 **取值范围**： 不涉及。 
         :type tag: str
-        :param target_branch: 目标分支
+        :param target_branch: **参数解释**： 目标分支。 **取值范围**： 不涉及。 
         :type target_branch: str
-        :param codehub_id: codehub代码仓ID
+        :param codehub_id: **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
         :type codehub_id: str
-        :param git_url: 代码仓https地址
+        :param git_url: **参数解释**： 代码仓https地址。 **取值范围**： 不涉及。 
         :type git_url: str
-        :param source_codehub_id: 源codehub代码仓ID
+        :param source_codehub_id: **参数解释**： 源Repo代码仓ID。 **取值范围**： 不涉及。 
         :type source_codehub_id: str
-        :param source_codehub_url: 源codehub代码仓地址
+        :param source_codehub_url: **参数解释**： 源Repo代码仓地址。 **取值范围**： 不涉及。 
         :type source_codehub_url: str
-        :param source_codehub_http_url: 源codehub代码仓http地址
+        :param source_codehub_http_url: **参数解释**： 源Repo代码仓http地址。 **取值范围**： 不涉及。 
         :type source_codehub_http_url: str
         """
         
@@ -136,7 +136,7 @@ class PipelineLatestRunBuildParams:
     def action(self):
         r"""Gets the action of this PipelineLatestRunBuildParams.
 
-        合并请求的事件类型
+        **参数解释**： 合并请求事件类型。 **取值范围**： - open：打开。 - reopen：重开。 - update：更新。 - merge：合并。 
 
         :return: The action of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -147,7 +147,7 @@ class PipelineLatestRunBuildParams:
     def action(self, action):
         r"""Sets the action of this PipelineLatestRunBuildParams.
 
-        合并请求的事件类型
+        **参数解释**： 合并请求事件类型。 **取值范围**： - open：打开。 - reopen：重开。 - update：更新。 - merge：合并。 
 
         :param action: The action of this PipelineLatestRunBuildParams.
         :type action: str
@@ -158,7 +158,7 @@ class PipelineLatestRunBuildParams:
     def build_type(self):
         r"""Gets the build_type of this PipelineLatestRunBuildParams.
 
-        基于分支还是tag触发
+        **参数解释**： 基于分支还是标签触发。 **取值范围**： - branch：分支触发。 - tag：标签触发。 
 
         :return: The build_type of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -169,7 +169,7 @@ class PipelineLatestRunBuildParams:
     def build_type(self, build_type):
         r"""Sets the build_type of this PipelineLatestRunBuildParams.
 
-        基于分支还是tag触发
+        **参数解释**： 基于分支还是标签触发。 **取值范围**： - branch：分支触发。 - tag：标签触发。 
 
         :param build_type: The build_type of this PipelineLatestRunBuildParams.
         :type build_type: str
@@ -180,7 +180,7 @@ class PipelineLatestRunBuildParams:
     def commit_id(self):
         r"""Gets the commit_id of this PipelineLatestRunBuildParams.
 
-        代码库提交ID
+        **参数解释**： 代码仓提交ID。 **取值范围**： 40位字符。 
 
         :return: The commit_id of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -191,7 +191,7 @@ class PipelineLatestRunBuildParams:
     def commit_id(self, commit_id):
         r"""Sets the commit_id of this PipelineLatestRunBuildParams.
 
-        代码库提交ID
+        **参数解释**： 代码仓提交ID。 **取值范围**： 40位字符。 
 
         :param commit_id: The commit_id of this PipelineLatestRunBuildParams.
         :type commit_id: str
@@ -202,7 +202,7 @@ class PipelineLatestRunBuildParams:
     def event_type(self):
         r"""Gets the event_type of this PipelineLatestRunBuildParams.
 
-        触发的事件类型
+        **参数解释**： 运行事件类型。 **取值范围**： - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 
 
         :return: The event_type of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -213,7 +213,7 @@ class PipelineLatestRunBuildParams:
     def event_type(self, event_type):
         r"""Sets the event_type of this PipelineLatestRunBuildParams.
 
-        触发的事件类型
+        **参数解释**： 运行事件类型。 **取值范围**： - Manual：手动触发。 - Scheduler：定时任务。 - MR：MR触发。 - Push：Push事件触发。 - CreateTag：Tag事件触发。 - Issue：Issue触发。 - Note：评论触发。 
 
         :param event_type: The event_type of this PipelineLatestRunBuildParams.
         :type event_type: str
@@ -224,7 +224,7 @@ class PipelineLatestRunBuildParams:
     def merge_id(self):
         r"""Gets the merge_id of this PipelineLatestRunBuildParams.
 
-        合并请求的ID
+        **参数解释**： 合并请求ID。 **取值范围**： 不涉及。 
 
         :return: The merge_id of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -235,7 +235,7 @@ class PipelineLatestRunBuildParams:
     def merge_id(self, merge_id):
         r"""Sets the merge_id of this PipelineLatestRunBuildParams.
 
-        合并请求的ID
+        **参数解释**： 合并请求ID。 **取值范围**： 不涉及。 
 
         :param merge_id: The merge_id of this PipelineLatestRunBuildParams.
         :type merge_id: str
@@ -246,7 +246,7 @@ class PipelineLatestRunBuildParams:
     def message(self):
         r"""Gets the message of this PipelineLatestRunBuildParams.
 
-        代码库提交信息
+        **参数解释**： 代码仓提交信息。 **取值范围**： 不涉及。 
 
         :return: The message of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -257,7 +257,7 @@ class PipelineLatestRunBuildParams:
     def message(self, message):
         r"""Sets the message of this PipelineLatestRunBuildParams.
 
-        代码库提交信息
+        **参数解释**： 代码仓提交信息。 **取值范围**： 不涉及。 
 
         :param message: The message of this PipelineLatestRunBuildParams.
         :type message: str
@@ -268,7 +268,7 @@ class PipelineLatestRunBuildParams:
     def source_branch(self):
         r"""Gets the source_branch of this PipelineLatestRunBuildParams.
 
-        合并请求的源分支
+        **参数解释**： 源分支。 **取值范围**： 不涉及。 
 
         :return: The source_branch of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -279,7 +279,7 @@ class PipelineLatestRunBuildParams:
     def source_branch(self, source_branch):
         r"""Sets the source_branch of this PipelineLatestRunBuildParams.
 
-        合并请求的源分支
+        **参数解释**： 源分支。 **取值范围**： 不涉及。 
 
         :param source_branch: The source_branch of this PipelineLatestRunBuildParams.
         :type source_branch: str
@@ -290,7 +290,7 @@ class PipelineLatestRunBuildParams:
     def tag(self):
         r"""Gets the tag of this PipelineLatestRunBuildParams.
 
-        标签
+        **参数解释**： 标签。 **取值范围**： 不涉及。 
 
         :return: The tag of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -301,7 +301,7 @@ class PipelineLatestRunBuildParams:
     def tag(self, tag):
         r"""Sets the tag of this PipelineLatestRunBuildParams.
 
-        标签
+        **参数解释**： 标签。 **取值范围**： 不涉及。 
 
         :param tag: The tag of this PipelineLatestRunBuildParams.
         :type tag: str
@@ -312,7 +312,7 @@ class PipelineLatestRunBuildParams:
     def target_branch(self):
         r"""Gets the target_branch of this PipelineLatestRunBuildParams.
 
-        目标分支
+        **参数解释**： 目标分支。 **取值范围**： 不涉及。 
 
         :return: The target_branch of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -323,7 +323,7 @@ class PipelineLatestRunBuildParams:
     def target_branch(self, target_branch):
         r"""Sets the target_branch of this PipelineLatestRunBuildParams.
 
-        目标分支
+        **参数解释**： 目标分支。 **取值范围**： 不涉及。 
 
         :param target_branch: The target_branch of this PipelineLatestRunBuildParams.
         :type target_branch: str
@@ -334,7 +334,7 @@ class PipelineLatestRunBuildParams:
     def codehub_id(self):
         r"""Gets the codehub_id of this PipelineLatestRunBuildParams.
 
-        codehub代码仓ID
+        **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :return: The codehub_id of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -345,7 +345,7 @@ class PipelineLatestRunBuildParams:
     def codehub_id(self, codehub_id):
         r"""Sets the codehub_id of this PipelineLatestRunBuildParams.
 
-        codehub代码仓ID
+        **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :param codehub_id: The codehub_id of this PipelineLatestRunBuildParams.
         :type codehub_id: str
@@ -356,7 +356,7 @@ class PipelineLatestRunBuildParams:
     def git_url(self):
         r"""Gets the git_url of this PipelineLatestRunBuildParams.
 
-        代码仓https地址
+        **参数解释**： 代码仓https地址。 **取值范围**： 不涉及。 
 
         :return: The git_url of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -367,7 +367,7 @@ class PipelineLatestRunBuildParams:
     def git_url(self, git_url):
         r"""Sets the git_url of this PipelineLatestRunBuildParams.
 
-        代码仓https地址
+        **参数解释**： 代码仓https地址。 **取值范围**： 不涉及。 
 
         :param git_url: The git_url of this PipelineLatestRunBuildParams.
         :type git_url: str
@@ -378,7 +378,7 @@ class PipelineLatestRunBuildParams:
     def source_codehub_id(self):
         r"""Gets the source_codehub_id of this PipelineLatestRunBuildParams.
 
-        源codehub代码仓ID
+        **参数解释**： 源Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :return: The source_codehub_id of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -389,7 +389,7 @@ class PipelineLatestRunBuildParams:
     def source_codehub_id(self, source_codehub_id):
         r"""Sets the source_codehub_id of this PipelineLatestRunBuildParams.
 
-        源codehub代码仓ID
+        **参数解释**： 源Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :param source_codehub_id: The source_codehub_id of this PipelineLatestRunBuildParams.
         :type source_codehub_id: str
@@ -400,7 +400,7 @@ class PipelineLatestRunBuildParams:
     def source_codehub_url(self):
         r"""Gets the source_codehub_url of this PipelineLatestRunBuildParams.
 
-        源codehub代码仓地址
+        **参数解释**： 源Repo代码仓地址。 **取值范围**： 不涉及。 
 
         :return: The source_codehub_url of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -411,7 +411,7 @@ class PipelineLatestRunBuildParams:
     def source_codehub_url(self, source_codehub_url):
         r"""Sets the source_codehub_url of this PipelineLatestRunBuildParams.
 
-        源codehub代码仓地址
+        **参数解释**： 源Repo代码仓地址。 **取值范围**： 不涉及。 
 
         :param source_codehub_url: The source_codehub_url of this PipelineLatestRunBuildParams.
         :type source_codehub_url: str
@@ -422,7 +422,7 @@ class PipelineLatestRunBuildParams:
     def source_codehub_http_url(self):
         r"""Gets the source_codehub_http_url of this PipelineLatestRunBuildParams.
 
-        源codehub代码仓http地址
+        **参数解释**： 源Repo代码仓http地址。 **取值范围**： 不涉及。 
 
         :return: The source_codehub_http_url of this PipelineLatestRunBuildParams.
         :rtype: str
@@ -433,7 +433,7 @@ class PipelineLatestRunBuildParams:
     def source_codehub_http_url(self, source_codehub_http_url):
         r"""Sets the source_codehub_http_url of this PipelineLatestRunBuildParams.
 
-        源codehub代码仓http地址
+        **参数解释**： 源Repo代码仓http地址。 **取值范围**： 不涉及。 
 
         :param source_codehub_http_url: The source_codehub_http_url of this PipelineLatestRunBuildParams.
         :type source_codehub_http_url: str

@@ -65,43 +65,43 @@ class PipelineSourceParam:
 
         The model defined in huaweicloud sdk
 
-        :param alias: 代码/制品源参数 - 代码仓/制品源别名。别名仅支持输入大小写英文字母、数字、“_”，至多128个字符
+        :param alias: **参数解释**： 代码/制品源参数 - 代码仓/制品源别名。 **取值范围**： 别名仅支持输入大小写英文字母、数字、“_”，至多128个字符。 
         :type alias: str
-        :param git_type: 代码源参数 - git类型
+        :param git_type: **参数解释**： git代码仓类型。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 
         :type git_type: str
-        :param codehub_id: 代码源参数 - Repo代码仓ID
+        :param codehub_id: **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
         :type codehub_id: str
-        :param endpoint_id: 代码源参数 - 扩展点id
+        :param endpoint_id: **参数解释**： 扩展点id。 **取值范围**： 不涉及。 
         :type endpoint_id: str
-        :param default_branch: 代码源参数 - 默认分支
+        :param default_branch: **参数解释**： 默认分支。 **取值范围**： 不涉及。 
         :type default_branch: str
-        :param git_url: 代码源参数 - git链接
+        :param git_url: **参数解释**： git链接。 **取值范围**： 不涉及。 
         :type git_url: str
-        :param ssh_git_url: 代码源参数 - ssh_git链接
+        :param ssh_git_url: **参数解释**： ssh_git链接。 **取值范围**： 不涉及。 
         :type ssh_git_url: str
-        :param web_url: 代码源参数 - 网页url
+        :param web_url: **参数解释**： 网页url。 **取值范围**： 不涉及。 
         :type web_url: str
-        :param repo_name: 代码源参数 - 流水线源名称
+        :param repo_name: **参数解释**： 流水线源名称。 **取值范围**： 不涉及。 
         :type repo_name: str
-        :param artifact_type: 制品源参数 - 制品源类型，generic/docker
+        :param artifact_type: **参数解释**： 制品源类型。 **取值范围**： 仅包含[generic，docker]。 
         :type artifact_type: str
-        :param artifact_type_name: 制品源参数 - 制品源类型名
+        :param artifact_type_name: **参数解释**： 制品源类型名。 **取值范围**： 不涉及。 
         :type artifact_type_name: str
-        :param branch_filter: 制品源参数 - 过滤分支
+        :param branch_filter: **参数解释**： 过滤分支。 **取值范围**： 不涉及。 
         :type branch_filter: str
-        :param directory: 制品源参数 - 目录
+        :param directory: **参数解释**： 制品源所在目录。 **取值范围**： 不涉及。 
         :type directory: str
-        :param directory_id: 制品源参数 - 目录ID
+        :param directory_id: **参数解释**： 目录ID。 **取值范围**： 不涉及。 
         :type directory_id: str
-        :param organization: 制品源参数 - Docker组织
+        :param organization: **参数解释**： Docker组织。 **取值范围**： 不涉及。 
         :type organization: str
-        :param package_name: 制品源参数 - 包名称
+        :param package_name: **参数解释**： 软件包名称。 **取值范围**： 不涉及。 
         :type package_name: str
-        :param version: 制品源参数 - 版本
+        :param version: **参数解释**： 制品源版本。 **取值范围**： 不涉及。 
         :type version: str
-        :param version_strategy: 制品源参数 - 获取制品源版本的策略，latest/specificVersion
+        :param version_strategy: **参数解释**： 获取制品源版本的策略。 **取值范围**： 仅包含[latest，specificVersion]。 
         :type version_strategy: str
-        :param source_system: 制品源参数 - 制品源名称,如CloudArtifact
+        :param source_system: **参数解释**： 制品源名称。 **取值范围**： 不涉及。 
         :type source_system: str
         """
         
@@ -171,7 +171,7 @@ class PipelineSourceParam:
     def alias(self):
         r"""Gets the alias of this PipelineSourceParam.
 
-        代码/制品源参数 - 代码仓/制品源别名。别名仅支持输入大小写英文字母、数字、“_”，至多128个字符
+        **参数解释**： 代码/制品源参数 - 代码仓/制品源别名。 **取值范围**： 别名仅支持输入大小写英文字母、数字、“_”，至多128个字符。 
 
         :return: The alias of this PipelineSourceParam.
         :rtype: str
@@ -182,7 +182,7 @@ class PipelineSourceParam:
     def alias(self, alias):
         r"""Sets the alias of this PipelineSourceParam.
 
-        代码/制品源参数 - 代码仓/制品源别名。别名仅支持输入大小写英文字母、数字、“_”，至多128个字符
+        **参数解释**： 代码/制品源参数 - 代码仓/制品源别名。 **取值范围**： 别名仅支持输入大小写英文字母、数字、“_”，至多128个字符。 
 
         :param alias: The alias of this PipelineSourceParam.
         :type alias: str
@@ -193,7 +193,7 @@ class PipelineSourceParam:
     def git_type(self):
         r"""Gets the git_type of this PipelineSourceParam.
 
-        代码源参数 - git类型
+        **参数解释**： git代码仓类型。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 
 
         :return: The git_type of this PipelineSourceParam.
         :rtype: str
@@ -204,7 +204,7 @@ class PipelineSourceParam:
     def git_type(self, git_type):
         r"""Sets the git_type of this PipelineSourceParam.
 
-        代码源参数 - git类型
+        **参数解释**： git代码仓类型。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 
 
         :param git_type: The git_type of this PipelineSourceParam.
         :type git_type: str
@@ -215,7 +215,7 @@ class PipelineSourceParam:
     def codehub_id(self):
         r"""Gets the codehub_id of this PipelineSourceParam.
 
-        代码源参数 - Repo代码仓ID
+        **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :return: The codehub_id of this PipelineSourceParam.
         :rtype: str
@@ -226,7 +226,7 @@ class PipelineSourceParam:
     def codehub_id(self, codehub_id):
         r"""Sets the codehub_id of this PipelineSourceParam.
 
-        代码源参数 - Repo代码仓ID
+        **参数解释**： Repo代码仓ID。 **取值范围**： 不涉及。 
 
         :param codehub_id: The codehub_id of this PipelineSourceParam.
         :type codehub_id: str
@@ -237,7 +237,7 @@ class PipelineSourceParam:
     def endpoint_id(self):
         r"""Gets the endpoint_id of this PipelineSourceParam.
 
-        代码源参数 - 扩展点id
+        **参数解释**： 扩展点id。 **取值范围**： 不涉及。 
 
         :return: The endpoint_id of this PipelineSourceParam.
         :rtype: str
@@ -248,7 +248,7 @@ class PipelineSourceParam:
     def endpoint_id(self, endpoint_id):
         r"""Sets the endpoint_id of this PipelineSourceParam.
 
-        代码源参数 - 扩展点id
+        **参数解释**： 扩展点id。 **取值范围**： 不涉及。 
 
         :param endpoint_id: The endpoint_id of this PipelineSourceParam.
         :type endpoint_id: str
@@ -259,7 +259,7 @@ class PipelineSourceParam:
     def default_branch(self):
         r"""Gets the default_branch of this PipelineSourceParam.
 
-        代码源参数 - 默认分支
+        **参数解释**： 默认分支。 **取值范围**： 不涉及。 
 
         :return: The default_branch of this PipelineSourceParam.
         :rtype: str
@@ -270,7 +270,7 @@ class PipelineSourceParam:
     def default_branch(self, default_branch):
         r"""Sets the default_branch of this PipelineSourceParam.
 
-        代码源参数 - 默认分支
+        **参数解释**： 默认分支。 **取值范围**： 不涉及。 
 
         :param default_branch: The default_branch of this PipelineSourceParam.
         :type default_branch: str
@@ -281,7 +281,7 @@ class PipelineSourceParam:
     def git_url(self):
         r"""Gets the git_url of this PipelineSourceParam.
 
-        代码源参数 - git链接
+        **参数解释**： git链接。 **取值范围**： 不涉及。 
 
         :return: The git_url of this PipelineSourceParam.
         :rtype: str
@@ -292,7 +292,7 @@ class PipelineSourceParam:
     def git_url(self, git_url):
         r"""Sets the git_url of this PipelineSourceParam.
 
-        代码源参数 - git链接
+        **参数解释**： git链接。 **取值范围**： 不涉及。 
 
         :param git_url: The git_url of this PipelineSourceParam.
         :type git_url: str
@@ -303,7 +303,7 @@ class PipelineSourceParam:
     def ssh_git_url(self):
         r"""Gets the ssh_git_url of this PipelineSourceParam.
 
-        代码源参数 - ssh_git链接
+        **参数解释**： ssh_git链接。 **取值范围**： 不涉及。 
 
         :return: The ssh_git_url of this PipelineSourceParam.
         :rtype: str
@@ -314,7 +314,7 @@ class PipelineSourceParam:
     def ssh_git_url(self, ssh_git_url):
         r"""Sets the ssh_git_url of this PipelineSourceParam.
 
-        代码源参数 - ssh_git链接
+        **参数解释**： ssh_git链接。 **取值范围**： 不涉及。 
 
         :param ssh_git_url: The ssh_git_url of this PipelineSourceParam.
         :type ssh_git_url: str
@@ -325,7 +325,7 @@ class PipelineSourceParam:
     def web_url(self):
         r"""Gets the web_url of this PipelineSourceParam.
 
-        代码源参数 - 网页url
+        **参数解释**： 网页url。 **取值范围**： 不涉及。 
 
         :return: The web_url of this PipelineSourceParam.
         :rtype: str
@@ -336,7 +336,7 @@ class PipelineSourceParam:
     def web_url(self, web_url):
         r"""Sets the web_url of this PipelineSourceParam.
 
-        代码源参数 - 网页url
+        **参数解释**： 网页url。 **取值范围**： 不涉及。 
 
         :param web_url: The web_url of this PipelineSourceParam.
         :type web_url: str
@@ -347,7 +347,7 @@ class PipelineSourceParam:
     def repo_name(self):
         r"""Gets the repo_name of this PipelineSourceParam.
 
-        代码源参数 - 流水线源名称
+        **参数解释**： 流水线源名称。 **取值范围**： 不涉及。 
 
         :return: The repo_name of this PipelineSourceParam.
         :rtype: str
@@ -358,7 +358,7 @@ class PipelineSourceParam:
     def repo_name(self, repo_name):
         r"""Sets the repo_name of this PipelineSourceParam.
 
-        代码源参数 - 流水线源名称
+        **参数解释**： 流水线源名称。 **取值范围**： 不涉及。 
 
         :param repo_name: The repo_name of this PipelineSourceParam.
         :type repo_name: str
@@ -369,7 +369,7 @@ class PipelineSourceParam:
     def artifact_type(self):
         r"""Gets the artifact_type of this PipelineSourceParam.
 
-        制品源参数 - 制品源类型，generic/docker
+        **参数解释**： 制品源类型。 **取值范围**： 仅包含[generic，docker]。 
 
         :return: The artifact_type of this PipelineSourceParam.
         :rtype: str
@@ -380,7 +380,7 @@ class PipelineSourceParam:
     def artifact_type(self, artifact_type):
         r"""Sets the artifact_type of this PipelineSourceParam.
 
-        制品源参数 - 制品源类型，generic/docker
+        **参数解释**： 制品源类型。 **取值范围**： 仅包含[generic，docker]。 
 
         :param artifact_type: The artifact_type of this PipelineSourceParam.
         :type artifact_type: str
@@ -391,7 +391,7 @@ class PipelineSourceParam:
     def artifact_type_name(self):
         r"""Gets the artifact_type_name of this PipelineSourceParam.
 
-        制品源参数 - 制品源类型名
+        **参数解释**： 制品源类型名。 **取值范围**： 不涉及。 
 
         :return: The artifact_type_name of this PipelineSourceParam.
         :rtype: str
@@ -402,7 +402,7 @@ class PipelineSourceParam:
     def artifact_type_name(self, artifact_type_name):
         r"""Sets the artifact_type_name of this PipelineSourceParam.
 
-        制品源参数 - 制品源类型名
+        **参数解释**： 制品源类型名。 **取值范围**： 不涉及。 
 
         :param artifact_type_name: The artifact_type_name of this PipelineSourceParam.
         :type artifact_type_name: str
@@ -413,7 +413,7 @@ class PipelineSourceParam:
     def branch_filter(self):
         r"""Gets the branch_filter of this PipelineSourceParam.
 
-        制品源参数 - 过滤分支
+        **参数解释**： 过滤分支。 **取值范围**： 不涉及。 
 
         :return: The branch_filter of this PipelineSourceParam.
         :rtype: str
@@ -424,7 +424,7 @@ class PipelineSourceParam:
     def branch_filter(self, branch_filter):
         r"""Sets the branch_filter of this PipelineSourceParam.
 
-        制品源参数 - 过滤分支
+        **参数解释**： 过滤分支。 **取值范围**： 不涉及。 
 
         :param branch_filter: The branch_filter of this PipelineSourceParam.
         :type branch_filter: str
@@ -435,7 +435,7 @@ class PipelineSourceParam:
     def directory(self):
         r"""Gets the directory of this PipelineSourceParam.
 
-        制品源参数 - 目录
+        **参数解释**： 制品源所在目录。 **取值范围**： 不涉及。 
 
         :return: The directory of this PipelineSourceParam.
         :rtype: str
@@ -446,7 +446,7 @@ class PipelineSourceParam:
     def directory(self, directory):
         r"""Sets the directory of this PipelineSourceParam.
 
-        制品源参数 - 目录
+        **参数解释**： 制品源所在目录。 **取值范围**： 不涉及。 
 
         :param directory: The directory of this PipelineSourceParam.
         :type directory: str
@@ -457,7 +457,7 @@ class PipelineSourceParam:
     def directory_id(self):
         r"""Gets the directory_id of this PipelineSourceParam.
 
-        制品源参数 - 目录ID
+        **参数解释**： 目录ID。 **取值范围**： 不涉及。 
 
         :return: The directory_id of this PipelineSourceParam.
         :rtype: str
@@ -468,7 +468,7 @@ class PipelineSourceParam:
     def directory_id(self, directory_id):
         r"""Sets the directory_id of this PipelineSourceParam.
 
-        制品源参数 - 目录ID
+        **参数解释**： 目录ID。 **取值范围**： 不涉及。 
 
         :param directory_id: The directory_id of this PipelineSourceParam.
         :type directory_id: str
@@ -479,7 +479,7 @@ class PipelineSourceParam:
     def organization(self):
         r"""Gets the organization of this PipelineSourceParam.
 
-        制品源参数 - Docker组织
+        **参数解释**： Docker组织。 **取值范围**： 不涉及。 
 
         :return: The organization of this PipelineSourceParam.
         :rtype: str
@@ -490,7 +490,7 @@ class PipelineSourceParam:
     def organization(self, organization):
         r"""Sets the organization of this PipelineSourceParam.
 
-        制品源参数 - Docker组织
+        **参数解释**： Docker组织。 **取值范围**： 不涉及。 
 
         :param organization: The organization of this PipelineSourceParam.
         :type organization: str
@@ -501,7 +501,7 @@ class PipelineSourceParam:
     def package_name(self):
         r"""Gets the package_name of this PipelineSourceParam.
 
-        制品源参数 - 包名称
+        **参数解释**： 软件包名称。 **取值范围**： 不涉及。 
 
         :return: The package_name of this PipelineSourceParam.
         :rtype: str
@@ -512,7 +512,7 @@ class PipelineSourceParam:
     def package_name(self, package_name):
         r"""Sets the package_name of this PipelineSourceParam.
 
-        制品源参数 - 包名称
+        **参数解释**： 软件包名称。 **取值范围**： 不涉及。 
 
         :param package_name: The package_name of this PipelineSourceParam.
         :type package_name: str
@@ -523,7 +523,7 @@ class PipelineSourceParam:
     def version(self):
         r"""Gets the version of this PipelineSourceParam.
 
-        制品源参数 - 版本
+        **参数解释**： 制品源版本。 **取值范围**： 不涉及。 
 
         :return: The version of this PipelineSourceParam.
         :rtype: str
@@ -534,7 +534,7 @@ class PipelineSourceParam:
     def version(self, version):
         r"""Sets the version of this PipelineSourceParam.
 
-        制品源参数 - 版本
+        **参数解释**： 制品源版本。 **取值范围**： 不涉及。 
 
         :param version: The version of this PipelineSourceParam.
         :type version: str
@@ -545,7 +545,7 @@ class PipelineSourceParam:
     def version_strategy(self):
         r"""Gets the version_strategy of this PipelineSourceParam.
 
-        制品源参数 - 获取制品源版本的策略，latest/specificVersion
+        **参数解释**： 获取制品源版本的策略。 **取值范围**： 仅包含[latest，specificVersion]。 
 
         :return: The version_strategy of this PipelineSourceParam.
         :rtype: str
@@ -556,7 +556,7 @@ class PipelineSourceParam:
     def version_strategy(self, version_strategy):
         r"""Sets the version_strategy of this PipelineSourceParam.
 
-        制品源参数 - 获取制品源版本的策略，latest/specificVersion
+        **参数解释**： 获取制品源版本的策略。 **取值范围**： 仅包含[latest，specificVersion]。 
 
         :param version_strategy: The version_strategy of this PipelineSourceParam.
         :type version_strategy: str
@@ -567,7 +567,7 @@ class PipelineSourceParam:
     def source_system(self):
         r"""Gets the source_system of this PipelineSourceParam.
 
-        制品源参数 - 制品源名称,如CloudArtifact
+        **参数解释**： 制品源名称。 **取值范围**： 不涉及。 
 
         :return: The source_system of this PipelineSourceParam.
         :rtype: str
@@ -578,7 +578,7 @@ class PipelineSourceParam:
     def source_system(self, source_system):
         r"""Sets the source_system of this PipelineSourceParam.
 
-        制品源参数 - 制品源名称,如CloudArtifact
+        **参数解释**： 制品源名称。 **取值范围**： 不涉及。 
 
         :param source_system: The source_system of this PipelineSourceParam.
         :type source_system: str

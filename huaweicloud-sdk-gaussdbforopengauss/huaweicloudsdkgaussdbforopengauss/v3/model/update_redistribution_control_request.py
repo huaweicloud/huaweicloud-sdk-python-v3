@@ -33,9 +33,9 @@ class UpdateRedistributionControlRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。
+        :param x_language: **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**: - zh-cn  - en-us  **默认取值**: en-us
         :type x_language: str
-        :param instance_id: 实例id
+        :param instance_id: **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及 **取值范围**: 只能由英文字母、数字组成，且长度为32个字符。 **默认取值**: 不涉及。
         :type instance_id: str
         :param body: Body of the UpdateRedistributionControlRequest
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.RedistributionRequestBody`
@@ -58,7 +58,7 @@ class UpdateRedistributionControlRequest:
     def x_language(self):
         r"""Gets the x_language of this UpdateRedistributionControlRequest.
 
-        语言。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**: - zh-cn  - en-us  **默认取值**: en-us
 
         :return: The x_language of this UpdateRedistributionControlRequest.
         :rtype: str
@@ -69,7 +69,7 @@ class UpdateRedistributionControlRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this UpdateRedistributionControlRequest.
 
-        语言。
+        **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**: - zh-cn  - en-us  **默认取值**: en-us
 
         :param x_language: The x_language of this UpdateRedistributionControlRequest.
         :type x_language: str
@@ -80,7 +80,7 @@ class UpdateRedistributionControlRequest:
     def instance_id(self):
         r"""Gets the instance_id of this UpdateRedistributionControlRequest.
 
-        实例id
+        **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及 **取值范围**: 只能由英文字母、数字组成，且长度为32个字符。 **默认取值**: 不涉及。
 
         :return: The instance_id of this UpdateRedistributionControlRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateRedistributionControlRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this UpdateRedistributionControlRequest.
 
-        实例id
+        **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及 **取值范围**: 只能由英文字母、数字组成，且长度为32个字符。 **默认取值**: 不涉及。
 
         :param instance_id: The instance_id of this UpdateRedistributionControlRequest.
         :type instance_id: str

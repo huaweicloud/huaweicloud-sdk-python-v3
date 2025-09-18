@@ -33,11 +33,11 @@ class FullStagePluginsRelationVOAddables:
 
         The model defined in huaweicloud sdk
 
-        :param additional_prop1: 额外属性1
+        :param additional_prop1: **参数解释**： 额外属性1。 **取值范围**： 不涉及。 
         :type additional_prop1: bool
-        :param additional_prop2: 额外属性2
+        :param additional_prop2: **参数解释**： 额外属性2。 **取值范围**： 不涉及。 
         :type additional_prop2: bool
-        :param additional_prop3: 额外属性3
+        :param additional_prop3: **参数解释**： 额外属性3。 **取值范围**： 不涉及。 
         :type additional_prop3: bool
         """
         
@@ -59,7 +59,7 @@ class FullStagePluginsRelationVOAddables:
     def additional_prop1(self):
         r"""Gets the additional_prop1 of this FullStagePluginsRelationVOAddables.
 
-        额外属性1
+        **参数解释**： 额外属性1。 **取值范围**： 不涉及。 
 
         :return: The additional_prop1 of this FullStagePluginsRelationVOAddables.
         :rtype: bool
@@ -70,7 +70,7 @@ class FullStagePluginsRelationVOAddables:
     def additional_prop1(self, additional_prop1):
         r"""Sets the additional_prop1 of this FullStagePluginsRelationVOAddables.
 
-        额外属性1
+        **参数解释**： 额外属性1。 **取值范围**： 不涉及。 
 
         :param additional_prop1: The additional_prop1 of this FullStagePluginsRelationVOAddables.
         :type additional_prop1: bool
@@ -81,7 +81,7 @@ class FullStagePluginsRelationVOAddables:
     def additional_prop2(self):
         r"""Gets the additional_prop2 of this FullStagePluginsRelationVOAddables.
 
-        额外属性2
+        **参数解释**： 额外属性2。 **取值范围**： 不涉及。 
 
         :return: The additional_prop2 of this FullStagePluginsRelationVOAddables.
         :rtype: bool
@@ -92,7 +92,7 @@ class FullStagePluginsRelationVOAddables:
     def additional_prop2(self, additional_prop2):
         r"""Sets the additional_prop2 of this FullStagePluginsRelationVOAddables.
 
-        额外属性2
+        **参数解释**： 额外属性2。 **取值范围**： 不涉及。 
 
         :param additional_prop2: The additional_prop2 of this FullStagePluginsRelationVOAddables.
         :type additional_prop2: bool
@@ -103,7 +103,7 @@ class FullStagePluginsRelationVOAddables:
     def additional_prop3(self):
         r"""Gets the additional_prop3 of this FullStagePluginsRelationVOAddables.
 
-        额外属性3
+        **参数解释**： 额外属性3。 **取值范围**： 不涉及。 
 
         :return: The additional_prop3 of this FullStagePluginsRelationVOAddables.
         :rtype: bool
@@ -114,7 +114,7 @@ class FullStagePluginsRelationVOAddables:
     def additional_prop3(self, additional_prop3):
         r"""Sets the additional_prop3 of this FullStagePluginsRelationVOAddables.
 
-        额外属性3
+        **参数解释**： 额外属性3。 **取值范围**： 不涉及。 
 
         :param additional_prop3: The additional_prop3 of this FullStagePluginsRelationVOAddables.
         :type additional_prop3: bool

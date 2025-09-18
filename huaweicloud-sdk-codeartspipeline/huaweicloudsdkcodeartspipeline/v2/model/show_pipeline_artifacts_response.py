@@ -30,7 +30,7 @@ class ShowPipelineArtifactsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param artifacts: 产物列表
+        :param artifacts: **参数解释**： 流水线任务产物列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type artifacts: list[:class:`huaweicloudsdkcodeartspipeline.v2.Artifact`]
         """
         
@@ -46,7 +46,7 @@ class ShowPipelineArtifactsResponse(SdkResponse):
     def artifacts(self):
         r"""Gets the artifacts of this ShowPipelineArtifactsResponse.
 
-        产物列表
+        **参数解释**： 流水线任务产物列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The artifacts of this ShowPipelineArtifactsResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.Artifact`]
@@ -57,7 +57,7 @@ class ShowPipelineArtifactsResponse(SdkResponse):
     def artifacts(self, artifacts):
         r"""Sets the artifacts of this ShowPipelineArtifactsResponse.
 
-        产物列表
+        **参数解释**： 流水线任务产物列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param artifacts: The artifacts of this ShowPipelineArtifactsResponse.
         :type artifacts: list[:class:`huaweicloudsdkcodeartspipeline.v2.Artifact`]

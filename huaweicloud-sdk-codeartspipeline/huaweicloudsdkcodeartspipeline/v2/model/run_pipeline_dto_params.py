@@ -23,7 +23,8 @@ class RunPipelineDTOParams:
         'default_branch': 'str',
         'git_url': 'str',
         'endpoint_id': 'str',
-        'build_params': 'RunPipelineDTOParamsBuildParams'
+        'build_params': 'RunPipelineDTOParamsBuildParams',
+        'change_request_ids': 'list[str]'
     }
 
     attribute_map = {
@@ -33,28 +34,31 @@ class RunPipelineDTOParams:
         'default_branch': 'default_branch',
         'git_url': 'git_url',
         'endpoint_id': 'endpoint_id',
-        'build_params': 'build_params'
+        'build_params': 'build_params',
+        'change_request_ids': 'change_request_ids'
     }
 
-    def __init__(self, git_type=None, alias=None, codehub_id=None, default_branch=None, git_url=None, endpoint_id=None, build_params=None):
+    def __init__(self, git_type=None, alias=None, codehub_id=None, default_branch=None, git_url=None, endpoint_id=None, build_params=None, change_request_ids=None):
         r"""RunPipelineDTOParams
 
         The model defined in huaweicloud sdk
 
-        :param git_type: 代码仓类型
+        :param git_type: **参数解释**： 代码仓类型。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
         :type git_type: str
-        :param alias: 代码仓别名
+        :param alias: **参数解释**： 代码仓别名，用户自定义，用于多仓时帮助区分系统参数。例如：A_REPO_COMMIT_ID，B_REPO_COMMIT_ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type alias: str
-        :param codehub_id: codehub代码库ID
+        :param codehub_id: **参数解释**： CodeArts Repo代码仓ID。可以通过代码仓查询接口获取，代码仓的唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type codehub_id: str
-        :param default_branch: 默认分支
+        :param default_branch: **参数解释**： 流水线执行时代码仓默认分支。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type default_branch: str
-        :param git_url: git仓库https地址
+        :param git_url: **参数解释**： Git仓库https地址，例如https://example.com/CloudPipelinezycs00001/2000.git。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type git_url: str
-        :param endpoint_id: 扩展点ID
+        :param endpoint_id: **参数解释**： 代码源扩展点ID。可以通过[查询扩展点列表接口](ListEndpointsDetails.xml)获取，其中endpoints.uuid即为扩展点的唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type endpoint_id: str
         :param build_params: 
         :type build_params: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOParamsBuildParams`
+        :param change_request_ids: **参数解释**： 执行变更流水线变更ID列表。可以通过[查询变更列表](ListChangeRequests.xml)接口，其中data.id即为变更ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type change_request_ids: list[str]
         """
         
         
@@ -66,6 +70,7 @@ class RunPipelineDTOParams:
         self._git_url = None
         self._endpoint_id = None
         self._build_params = None
+        self._change_request_ids = None
         self.discriminator = None
 
         self.git_type = git_type
@@ -80,12 +85,14 @@ class RunPipelineDTOParams:
             self.endpoint_id = endpoint_id
         if build_params is not None:
             self.build_params = build_params
+        if change_request_ids is not None:
+            self.change_request_ids = change_request_ids
 
     @property
     def git_type(self):
         r"""Gets the git_type of this RunPipelineDTOParams.
 
-        代码仓类型
+        **参数解释**： 代码仓类型。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
 
         :return: The git_type of this RunPipelineDTOParams.
         :rtype: str
@@ -96,7 +103,7 @@ class RunPipelineDTOParams:
     def git_type(self, git_type):
         r"""Sets the git_type of this RunPipelineDTOParams.
 
-        代码仓类型
+        **参数解释**： 代码仓类型。 **约束限制**： 不涉及。 **取值范围**： - codehub。 - gitee。 - github。 - gitcode。 - gitlab。 **默认取值**： 不涉及。 
 
         :param git_type: The git_type of this RunPipelineDTOParams.
         :type git_type: str
@@ -107,7 +114,7 @@ class RunPipelineDTOParams:
     def alias(self):
         r"""Gets the alias of this RunPipelineDTOParams.
 
-        代码仓别名
+        **参数解释**： 代码仓别名，用户自定义，用于多仓时帮助区分系统参数。例如：A_REPO_COMMIT_ID，B_REPO_COMMIT_ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The alias of this RunPipelineDTOParams.
         :rtype: str
@@ -118,7 +125,7 @@ class RunPipelineDTOParams:
     def alias(self, alias):
         r"""Sets the alias of this RunPipelineDTOParams.
 
-        代码仓别名
+        **参数解释**： 代码仓别名，用户自定义，用于多仓时帮助区分系统参数。例如：A_REPO_COMMIT_ID，B_REPO_COMMIT_ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param alias: The alias of this RunPipelineDTOParams.
         :type alias: str
@@ -129,7 +136,7 @@ class RunPipelineDTOParams:
     def codehub_id(self):
         r"""Gets the codehub_id of this RunPipelineDTOParams.
 
-        codehub代码库ID
+        **参数解释**： CodeArts Repo代码仓ID。可以通过代码仓查询接口获取，代码仓的唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The codehub_id of this RunPipelineDTOParams.
         :rtype: str
@@ -140,7 +147,7 @@ class RunPipelineDTOParams:
     def codehub_id(self, codehub_id):
         r"""Sets the codehub_id of this RunPipelineDTOParams.
 
-        codehub代码库ID
+        **参数解释**： CodeArts Repo代码仓ID。可以通过代码仓查询接口获取，代码仓的唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param codehub_id: The codehub_id of this RunPipelineDTOParams.
         :type codehub_id: str
@@ -151,7 +158,7 @@ class RunPipelineDTOParams:
     def default_branch(self):
         r"""Gets the default_branch of this RunPipelineDTOParams.
 
-        默认分支
+        **参数解释**： 流水线执行时代码仓默认分支。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The default_branch of this RunPipelineDTOParams.
         :rtype: str
@@ -162,7 +169,7 @@ class RunPipelineDTOParams:
     def default_branch(self, default_branch):
         r"""Sets the default_branch of this RunPipelineDTOParams.
 
-        默认分支
+        **参数解释**： 流水线执行时代码仓默认分支。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param default_branch: The default_branch of this RunPipelineDTOParams.
         :type default_branch: str
@@ -173,7 +180,7 @@ class RunPipelineDTOParams:
     def git_url(self):
         r"""Gets the git_url of this RunPipelineDTOParams.
 
-        git仓库https地址
+        **参数解释**： Git仓库https地址，例如https://example.com/CloudPipelinezycs00001/2000.git。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The git_url of this RunPipelineDTOParams.
         :rtype: str
@@ -184,7 +191,7 @@ class RunPipelineDTOParams:
     def git_url(self, git_url):
         r"""Sets the git_url of this RunPipelineDTOParams.
 
-        git仓库https地址
+        **参数解释**： Git仓库https地址，例如https://example.com/CloudPipelinezycs00001/2000.git。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param git_url: The git_url of this RunPipelineDTOParams.
         :type git_url: str
@@ -195,7 +202,7 @@ class RunPipelineDTOParams:
     def endpoint_id(self):
         r"""Gets the endpoint_id of this RunPipelineDTOParams.
 
-        扩展点ID
+        **参数解释**： 代码源扩展点ID。可以通过[查询扩展点列表接口](ListEndpointsDetails.xml)获取，其中endpoints.uuid即为扩展点的唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The endpoint_id of this RunPipelineDTOParams.
         :rtype: str
@@ -206,7 +213,7 @@ class RunPipelineDTOParams:
     def endpoint_id(self, endpoint_id):
         r"""Sets the endpoint_id of this RunPipelineDTOParams.
 
-        扩展点ID
+        **参数解释**： 代码源扩展点ID。可以通过[查询扩展点列表接口](ListEndpointsDetails.xml)获取，其中endpoints.uuid即为扩展点的唯一标识。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param endpoint_id: The endpoint_id of this RunPipelineDTOParams.
         :type endpoint_id: str
@@ -230,6 +237,28 @@ class RunPipelineDTOParams:
         :type build_params: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOParamsBuildParams`
         """
         self._build_params = build_params
+
+    @property
+    def change_request_ids(self):
+        r"""Gets the change_request_ids of this RunPipelineDTOParams.
+
+        **参数解释**： 执行变更流水线变更ID列表。可以通过[查询变更列表](ListChangeRequests.xml)接口，其中data.id即为变更ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :return: The change_request_ids of this RunPipelineDTOParams.
+        :rtype: list[str]
+        """
+        return self._change_request_ids
+
+    @change_request_ids.setter
+    def change_request_ids(self, change_request_ids):
+        r"""Sets the change_request_ids of this RunPipelineDTOParams.
+
+        **参数解释**： 执行变更流水线变更ID列表。可以通过[查询变更列表](ListChangeRequests.xml)接口，其中data.id即为变更ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+
+        :param change_request_ids: The change_request_ids of this RunPipelineDTOParams.
+        :type change_request_ids: list[str]
+        """
+        self._change_request_ids = change_request_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

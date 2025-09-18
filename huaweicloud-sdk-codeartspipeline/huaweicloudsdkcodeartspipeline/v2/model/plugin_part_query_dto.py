@@ -37,15 +37,15 @@ class PluginPartQueryDTO:
 
         The model defined in huaweicloud sdk
 
-        :param plugin_name: 插件名
+        :param plugin_name: **参数解释**： 插件名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type plugin_name: str
-        :param display_name: 展示名
+        :param display_name: **参数解释**： 展示名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type display_name: str
-        :param version: 版本号
+        :param version: **参数解释**： 版本号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type version: str
-        :param plugin_attribution: 插件属性,custom/official
+        :param plugin_attribution: **参数解释**： 插件属性。 **约束限制**： 不涉及。 **取值范围**： - custom：自定义插件。 - official：官方插件。 **默认取值**： 不涉及。 
         :type plugin_attribution: str
-        :param version_attribution: 版本属性,draft/formal
+        :param version_attribution: **参数解释**： 版本属性。 **约束限制**： 不涉及。 **取值范围**： - draft：草稿版本。 - formal：正式版本。 **默认取值**： 不涉及。 
         :type version_attribution: str
         """
         
@@ -69,7 +69,7 @@ class PluginPartQueryDTO:
     def plugin_name(self):
         r"""Gets the plugin_name of this PluginPartQueryDTO.
 
-        插件名
+        **参数解释**： 插件名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The plugin_name of this PluginPartQueryDTO.
         :rtype: str
@@ -80,7 +80,7 @@ class PluginPartQueryDTO:
     def plugin_name(self, plugin_name):
         r"""Sets the plugin_name of this PluginPartQueryDTO.
 
-        插件名
+        **参数解释**： 插件名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param plugin_name: The plugin_name of this PluginPartQueryDTO.
         :type plugin_name: str
@@ -91,7 +91,7 @@ class PluginPartQueryDTO:
     def display_name(self):
         r"""Gets the display_name of this PluginPartQueryDTO.
 
-        展示名
+        **参数解释**： 展示名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The display_name of this PluginPartQueryDTO.
         :rtype: str
@@ -102,7 +102,7 @@ class PluginPartQueryDTO:
     def display_name(self, display_name):
         r"""Sets the display_name of this PluginPartQueryDTO.
 
-        展示名
+        **参数解释**： 展示名。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param display_name: The display_name of this PluginPartQueryDTO.
         :type display_name: str
@@ -113,7 +113,7 @@ class PluginPartQueryDTO:
     def version(self):
         r"""Gets the version of this PluginPartQueryDTO.
 
-        版本号
+        **参数解释**： 版本号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The version of this PluginPartQueryDTO.
         :rtype: str
@@ -124,7 +124,7 @@ class PluginPartQueryDTO:
     def version(self, version):
         r"""Sets the version of this PluginPartQueryDTO.
 
-        版本号
+        **参数解释**： 版本号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param version: The version of this PluginPartQueryDTO.
         :type version: str
@@ -135,7 +135,7 @@ class PluginPartQueryDTO:
     def plugin_attribution(self):
         r"""Gets the plugin_attribution of this PluginPartQueryDTO.
 
-        插件属性,custom/official
+        **参数解释**： 插件属性。 **约束限制**： 不涉及。 **取值范围**： - custom：自定义插件。 - official：官方插件。 **默认取值**： 不涉及。 
 
         :return: The plugin_attribution of this PluginPartQueryDTO.
         :rtype: str
@@ -146,7 +146,7 @@ class PluginPartQueryDTO:
     def plugin_attribution(self, plugin_attribution):
         r"""Sets the plugin_attribution of this PluginPartQueryDTO.
 
-        插件属性,custom/official
+        **参数解释**： 插件属性。 **约束限制**： 不涉及。 **取值范围**： - custom：自定义插件。 - official：官方插件。 **默认取值**： 不涉及。 
 
         :param plugin_attribution: The plugin_attribution of this PluginPartQueryDTO.
         :type plugin_attribution: str
@@ -157,7 +157,7 @@ class PluginPartQueryDTO:
     def version_attribution(self):
         r"""Gets the version_attribution of this PluginPartQueryDTO.
 
-        版本属性,draft/formal
+        **参数解释**： 版本属性。 **约束限制**： 不涉及。 **取值范围**： - draft：草稿版本。 - formal：正式版本。 **默认取值**： 不涉及。 
 
         :return: The version_attribution of this PluginPartQueryDTO.
         :rtype: str
@@ -168,7 +168,7 @@ class PluginPartQueryDTO:
     def version_attribution(self, version_attribution):
         r"""Sets the version_attribution of this PluginPartQueryDTO.
 
-        版本属性,draft/formal
+        **参数解释**： 版本属性。 **约束限制**： 不涉及。 **取值范围**： - draft：草稿版本。 - formal：正式版本。 **默认取值**： 不涉及。 
 
         :param version_attribution: The version_attribution of this PluginPartQueryDTO.
         :type version_attribution: str

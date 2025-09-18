@@ -17,7 +17,7 @@ class PipelineByTemplateDTOVariables:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
+        'name': 'object',
         'sequence': 'int',
         'type': 'str',
         'value': 'str',
@@ -47,25 +47,25 @@ class PipelineByTemplateDTOVariables:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数名称
-        :type name: str
-        :param sequence: 参数序号
+        :param name: **参数解释**： 参数名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :type name: object
+        :param sequence: **参数解释**： 参数序号，从1开始递增。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type sequence: int
-        :param type: 参数类型
+        :param type: **参数解释**： 参数类型。 **约束限制**： 不涉及。 **取值范围**： - autoIncrement：自增长参数。 - enum：枚举参数。 - string：字符串参数。 **默认取值**： 不涉及。 
         :type type: str
-        :param value: 参数值
+        :param value: **参数解释**： 参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192字符。 **默认取值**： 不涉及。 
         :type value: str
-        :param is_secret: 是否私密参数
+        :param is_secret: **参数解释**： 是否私密参数。 **约束限制**： 不涉及。 **取值范围**： - true：是私密参数。 - false：不是私密参数。 **默认取值**： false。 
         :type is_secret: bool
-        :param description: 描述
+        :param description: **参数解释**： 参数描述。 **约束限制**： 不涉及。 **取值范围**： 不超过512字符。 **默认取值**： 不涉及。 
         :type description: str
-        :param is_runtime: 是否运行时设置
+        :param is_runtime: **参数解释**： 是否运行时设置参数。 **约束限制**： 不涉及。 **取值范围**： - true：是运行时设置参数。 - false：不是运行时设置参数。 **默认取值**： false。 
         :type is_runtime: bool
-        :param is_reset: 是否重置
+        :param is_reset: **参数解释**： 是否重置。自增长参数被编辑，则使用编辑后的值，否则进行末位数字递增。 **约束限制**： 不涉及。 **取值范围**： - true：使用编辑后的参数值。 - false：使用自增长参数。 **默认取值**： false 
         :type is_reset: bool
-        :param latest_value: 最后一次参数值
+        :param latest_value: **参数解释**： 最近一次运行的参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192字符。 **默认取值**： 不涉及。 
         :type latest_value: str
-        :param limits: 枚举值
+        :param limits: **参数解释**： 枚举值列表。 **约束限制**： 不涉及。 **取值范围**： 每个枚举值不超过1024字符。 **默认取值**： 不涉及。 
         :type limits: list[str]
         """
         
@@ -108,10 +108,10 @@ class PipelineByTemplateDTOVariables:
     def name(self):
         r"""Gets the name of this PipelineByTemplateDTOVariables.
 
-        参数名称
+        **参数解释**： 参数名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The name of this PipelineByTemplateDTOVariables.
-        :rtype: str
+        :rtype: object
         """
         return self._name
 
@@ -119,10 +119,10 @@ class PipelineByTemplateDTOVariables:
     def name(self, name):
         r"""Sets the name of this PipelineByTemplateDTOVariables.
 
-        参数名称
+        **参数解释**： 参数名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param name: The name of this PipelineByTemplateDTOVariables.
-        :type name: str
+        :type name: object
         """
         self._name = name
 
@@ -130,7 +130,7 @@ class PipelineByTemplateDTOVariables:
     def sequence(self):
         r"""Gets the sequence of this PipelineByTemplateDTOVariables.
 
-        参数序号
+        **参数解释**： 参数序号，从1开始递增。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The sequence of this PipelineByTemplateDTOVariables.
         :rtype: int
@@ -141,7 +141,7 @@ class PipelineByTemplateDTOVariables:
     def sequence(self, sequence):
         r"""Sets the sequence of this PipelineByTemplateDTOVariables.
 
-        参数序号
+        **参数解释**： 参数序号，从1开始递增。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param sequence: The sequence of this PipelineByTemplateDTOVariables.
         :type sequence: int
@@ -152,7 +152,7 @@ class PipelineByTemplateDTOVariables:
     def type(self):
         r"""Gets the type of this PipelineByTemplateDTOVariables.
 
-        参数类型
+        **参数解释**： 参数类型。 **约束限制**： 不涉及。 **取值范围**： - autoIncrement：自增长参数。 - enum：枚举参数。 - string：字符串参数。 **默认取值**： 不涉及。 
 
         :return: The type of this PipelineByTemplateDTOVariables.
         :rtype: str
@@ -163,7 +163,7 @@ class PipelineByTemplateDTOVariables:
     def type(self, type):
         r"""Sets the type of this PipelineByTemplateDTOVariables.
 
-        参数类型
+        **参数解释**： 参数类型。 **约束限制**： 不涉及。 **取值范围**： - autoIncrement：自增长参数。 - enum：枚举参数。 - string：字符串参数。 **默认取值**： 不涉及。 
 
         :param type: The type of this PipelineByTemplateDTOVariables.
         :type type: str
@@ -174,7 +174,7 @@ class PipelineByTemplateDTOVariables:
     def value(self):
         r"""Gets the value of this PipelineByTemplateDTOVariables.
 
-        参数值
+        **参数解释**： 参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192字符。 **默认取值**： 不涉及。 
 
         :return: The value of this PipelineByTemplateDTOVariables.
         :rtype: str
@@ -185,7 +185,7 @@ class PipelineByTemplateDTOVariables:
     def value(self, value):
         r"""Sets the value of this PipelineByTemplateDTOVariables.
 
-        参数值
+        **参数解释**： 参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192字符。 **默认取值**： 不涉及。 
 
         :param value: The value of this PipelineByTemplateDTOVariables.
         :type value: str
@@ -196,7 +196,7 @@ class PipelineByTemplateDTOVariables:
     def is_secret(self):
         r"""Gets the is_secret of this PipelineByTemplateDTOVariables.
 
-        是否私密参数
+        **参数解释**： 是否私密参数。 **约束限制**： 不涉及。 **取值范围**： - true：是私密参数。 - false：不是私密参数。 **默认取值**： false。 
 
         :return: The is_secret of this PipelineByTemplateDTOVariables.
         :rtype: bool
@@ -207,7 +207,7 @@ class PipelineByTemplateDTOVariables:
     def is_secret(self, is_secret):
         r"""Sets the is_secret of this PipelineByTemplateDTOVariables.
 
-        是否私密参数
+        **参数解释**： 是否私密参数。 **约束限制**： 不涉及。 **取值范围**： - true：是私密参数。 - false：不是私密参数。 **默认取值**： false。 
 
         :param is_secret: The is_secret of this PipelineByTemplateDTOVariables.
         :type is_secret: bool
@@ -218,7 +218,7 @@ class PipelineByTemplateDTOVariables:
     def description(self):
         r"""Gets the description of this PipelineByTemplateDTOVariables.
 
-        描述
+        **参数解释**： 参数描述。 **约束限制**： 不涉及。 **取值范围**： 不超过512字符。 **默认取值**： 不涉及。 
 
         :return: The description of this PipelineByTemplateDTOVariables.
         :rtype: str
@@ -229,7 +229,7 @@ class PipelineByTemplateDTOVariables:
     def description(self, description):
         r"""Sets the description of this PipelineByTemplateDTOVariables.
 
-        描述
+        **参数解释**： 参数描述。 **约束限制**： 不涉及。 **取值范围**： 不超过512字符。 **默认取值**： 不涉及。 
 
         :param description: The description of this PipelineByTemplateDTOVariables.
         :type description: str
@@ -240,7 +240,7 @@ class PipelineByTemplateDTOVariables:
     def is_runtime(self):
         r"""Gets the is_runtime of this PipelineByTemplateDTOVariables.
 
-        是否运行时设置
+        **参数解释**： 是否运行时设置参数。 **约束限制**： 不涉及。 **取值范围**： - true：是运行时设置参数。 - false：不是运行时设置参数。 **默认取值**： false。 
 
         :return: The is_runtime of this PipelineByTemplateDTOVariables.
         :rtype: bool
@@ -251,7 +251,7 @@ class PipelineByTemplateDTOVariables:
     def is_runtime(self, is_runtime):
         r"""Sets the is_runtime of this PipelineByTemplateDTOVariables.
 
-        是否运行时设置
+        **参数解释**： 是否运行时设置参数。 **约束限制**： 不涉及。 **取值范围**： - true：是运行时设置参数。 - false：不是运行时设置参数。 **默认取值**： false。 
 
         :param is_runtime: The is_runtime of this PipelineByTemplateDTOVariables.
         :type is_runtime: bool
@@ -262,7 +262,7 @@ class PipelineByTemplateDTOVariables:
     def is_reset(self):
         r"""Gets the is_reset of this PipelineByTemplateDTOVariables.
 
-        是否重置
+        **参数解释**： 是否重置。自增长参数被编辑，则使用编辑后的值，否则进行末位数字递增。 **约束限制**： 不涉及。 **取值范围**： - true：使用编辑后的参数值。 - false：使用自增长参数。 **默认取值**： false 
 
         :return: The is_reset of this PipelineByTemplateDTOVariables.
         :rtype: bool
@@ -273,7 +273,7 @@ class PipelineByTemplateDTOVariables:
     def is_reset(self, is_reset):
         r"""Sets the is_reset of this PipelineByTemplateDTOVariables.
 
-        是否重置
+        **参数解释**： 是否重置。自增长参数被编辑，则使用编辑后的值，否则进行末位数字递增。 **约束限制**： 不涉及。 **取值范围**： - true：使用编辑后的参数值。 - false：使用自增长参数。 **默认取值**： false 
 
         :param is_reset: The is_reset of this PipelineByTemplateDTOVariables.
         :type is_reset: bool
@@ -284,7 +284,7 @@ class PipelineByTemplateDTOVariables:
     def latest_value(self):
         r"""Gets the latest_value of this PipelineByTemplateDTOVariables.
 
-        最后一次参数值
+        **参数解释**： 最近一次运行的参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192字符。 **默认取值**： 不涉及。 
 
         :return: The latest_value of this PipelineByTemplateDTOVariables.
         :rtype: str
@@ -295,7 +295,7 @@ class PipelineByTemplateDTOVariables:
     def latest_value(self, latest_value):
         r"""Sets the latest_value of this PipelineByTemplateDTOVariables.
 
-        最后一次参数值
+        **参数解释**： 最近一次运行的参数值。 **约束限制**： 不涉及。 **取值范围**： 不超过8192字符。 **默认取值**： 不涉及。 
 
         :param latest_value: The latest_value of this PipelineByTemplateDTOVariables.
         :type latest_value: str
@@ -306,7 +306,7 @@ class PipelineByTemplateDTOVariables:
     def limits(self):
         r"""Gets the limits of this PipelineByTemplateDTOVariables.
 
-        枚举值
+        **参数解释**： 枚举值列表。 **约束限制**： 不涉及。 **取值范围**： 每个枚举值不超过1024字符。 **默认取值**： 不涉及。 
 
         :return: The limits of this PipelineByTemplateDTOVariables.
         :rtype: list[str]
@@ -317,7 +317,7 @@ class PipelineByTemplateDTOVariables:
     def limits(self, limits):
         r"""Sets the limits of this PipelineByTemplateDTOVariables.
 
-        枚举值
+        **参数解释**： 枚举值列表。 **约束限制**： 不涉及。 **取值范围**： 每个枚举值不超过1024字符。 **默认取值**： 不涉及。 
 
         :param limits: The limits of this PipelineByTemplateDTOVariables.
         :type limits: list[str]

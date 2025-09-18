@@ -47,15 +47,15 @@ class RegionBandwidthPackageSpecification:
         :type local_region_id: str
         :param remote_region_id: RegionID。
         :type remote_region_id: str
-        :param id: 互通Region带宽包的规格ID。
+        :param id: 互通区域带宽包的规格ID。
         :type id: str
-        :param name: 互通Region带宽包的规格名字。
+        :param name: 互通区域带宽包的规格名称。
         :type name: str
-        :param en_name: 互通Region带宽包的规格英文名字。
+        :param en_name: 互通区域带宽包的规格英文名称。
         :type en_name: str
-        :param es_name: 互通Region带宽包的规格西语名字。
+        :param es_name: 互通区域带宽包的规格西语名称。
         :type es_name: str
-        :param pt_name: 互通Region带宽包的规格葡语名字。
+        :param pt_name: 互通区域带宽包的规格葡语名称。
         :type pt_name: str
         :param spec_codes: 带宽包产品规格列表。
         :type spec_codes: list[:class:`huaweicloudsdkcc.v3.SpecificationCodeInfo`]
@@ -136,7 +136,7 @@ class RegionBandwidthPackageSpecification:
     def id(self):
         r"""Gets the id of this RegionBandwidthPackageSpecification.
 
-        互通Region带宽包的规格ID。
+        互通区域带宽包的规格ID。
 
         :return: The id of this RegionBandwidthPackageSpecification.
         :rtype: str
@@ -147,7 +147,7 @@ class RegionBandwidthPackageSpecification:
     def id(self, id):
         r"""Sets the id of this RegionBandwidthPackageSpecification.
 
-        互通Region带宽包的规格ID。
+        互通区域带宽包的规格ID。
 
         :param id: The id of this RegionBandwidthPackageSpecification.
         :type id: str
@@ -158,7 +158,7 @@ class RegionBandwidthPackageSpecification:
     def name(self):
         r"""Gets the name of this RegionBandwidthPackageSpecification.
 
-        互通Region带宽包的规格名字。
+        互通区域带宽包的规格名称。
 
         :return: The name of this RegionBandwidthPackageSpecification.
         :rtype: str
@@ -169,7 +169,7 @@ class RegionBandwidthPackageSpecification:
     def name(self, name):
         r"""Sets the name of this RegionBandwidthPackageSpecification.
 
-        互通Region带宽包的规格名字。
+        互通区域带宽包的规格名称。
 
         :param name: The name of this RegionBandwidthPackageSpecification.
         :type name: str
@@ -180,7 +180,7 @@ class RegionBandwidthPackageSpecification:
     def en_name(self):
         r"""Gets the en_name of this RegionBandwidthPackageSpecification.
 
-        互通Region带宽包的规格英文名字。
+        互通区域带宽包的规格英文名称。
 
         :return: The en_name of this RegionBandwidthPackageSpecification.
         :rtype: str
@@ -191,7 +191,7 @@ class RegionBandwidthPackageSpecification:
     def en_name(self, en_name):
         r"""Sets the en_name of this RegionBandwidthPackageSpecification.
 
-        互通Region带宽包的规格英文名字。
+        互通区域带宽包的规格英文名称。
 
         :param en_name: The en_name of this RegionBandwidthPackageSpecification.
         :type en_name: str
@@ -202,7 +202,7 @@ class RegionBandwidthPackageSpecification:
     def es_name(self):
         r"""Gets the es_name of this RegionBandwidthPackageSpecification.
 
-        互通Region带宽包的规格西语名字。
+        互通区域带宽包的规格西语名称。
 
         :return: The es_name of this RegionBandwidthPackageSpecification.
         :rtype: str
@@ -213,7 +213,7 @@ class RegionBandwidthPackageSpecification:
     def es_name(self, es_name):
         r"""Sets the es_name of this RegionBandwidthPackageSpecification.
 
-        互通Region带宽包的规格西语名字。
+        互通区域带宽包的规格西语名称。
 
         :param es_name: The es_name of this RegionBandwidthPackageSpecification.
         :type es_name: str
@@ -224,7 +224,7 @@ class RegionBandwidthPackageSpecification:
     def pt_name(self):
         r"""Gets the pt_name of this RegionBandwidthPackageSpecification.
 
-        互通Region带宽包的规格葡语名字。
+        互通区域带宽包的规格葡语名称。
 
         :return: The pt_name of this RegionBandwidthPackageSpecification.
         :rtype: str
@@ -235,7 +235,7 @@ class RegionBandwidthPackageSpecification:
     def pt_name(self, pt_name):
         r"""Sets the pt_name of this RegionBandwidthPackageSpecification.
 
-        互通Region带宽包的规格葡语名字。
+        互通区域带宽包的规格葡语名称。
 
         :param pt_name: The pt_name of this RegionBandwidthPackageSpecification.
         :type pt_name: str

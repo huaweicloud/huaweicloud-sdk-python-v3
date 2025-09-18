@@ -80,6 +80,10 @@ from huaweicloudsdkdwr.v1.model.query_entities_response import QueryEntitiesResp
 from huaweicloudsdkdwr.v1.model.release_collection_request import ReleaseCollectionRequest
 from huaweicloudsdkdwr.v1.model.release_collection_response import ReleaseCollectionResponse
 from huaweicloudsdkdwr.v1.model.rerank import Rerank
+from huaweicloudsdkdwr.v1.model.scale_store_body import ScaleStoreBody
+from huaweicloudsdkdwr.v1.model.scale_store_data import ScaleStoreData
+from huaweicloudsdkdwr.v1.model.scale_store_request import ScaleStoreRequest
+from huaweicloudsdkdwr.v1.model.scale_store_response import ScaleStoreResponse
 from huaweicloudsdkdwr.v1.model.search_entities_body import SearchEntitiesBody
 from huaweicloudsdkdwr.v1.model.search_entities_request import SearchEntitiesRequest
 from huaweicloudsdkdwr.v1.model.search_entities_response import SearchEntitiesResponse

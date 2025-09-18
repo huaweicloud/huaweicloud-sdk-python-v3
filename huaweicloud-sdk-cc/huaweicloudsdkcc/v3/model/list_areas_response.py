@@ -19,21 +19,25 @@ class ListAreasResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
+        'page_info': 'PageInfo',
         'areas': 'list[Area]'
     }
 
     attribute_map = {
         'request_id': 'request_id',
+        'page_info': 'page_info',
         'areas': 'areas'
     }
 
-    def __init__(self, request_id=None, areas=None):
+    def __init__(self, request_id=None, page_info=None, areas=None):
         r"""ListAreasResponse
 
         The model defined in huaweicloud sdk
 
         :param request_id: 请求ID。
         :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
         :param areas: 大区列表。
         :type areas: list[:class:`huaweicloudsdkcc.v3.Area`]
         """
@@ -41,10 +45,13 @@ class ListAreasResponse(SdkResponse):
         super(ListAreasResponse, self).__init__()
 
         self._request_id = None
+        self._page_info = None
         self._areas = None
         self.discriminator = None
 
         self.request_id = request_id
+        if page_info is not None:
+            self.page_info = page_info
         self.areas = areas
 
     @property
@@ -68,6 +75,24 @@ class ListAreasResponse(SdkResponse):
         :type request_id: str
         """
         self._request_id = request_id
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListAreasResponse.
+
+        :return: The page_info of this ListAreasResponse.
+        :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListAreasResponse.
+
+        :param page_info: The page_info of this ListAreasResponse.
+        :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
+        """
+        self._page_info = page_info
 
     @property
     def areas(self):

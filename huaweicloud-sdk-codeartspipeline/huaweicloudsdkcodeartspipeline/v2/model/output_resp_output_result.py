@@ -31,9 +31,9 @@ class OutputRespOutputResult:
 
         The model defined in huaweicloud sdk
 
-        :param key: output名称
+        :param key: **参数解释**： 步骤输出key值。 **取值范围**： 不涉及。 
         :type key: str
-        :param value: output值
+        :param value: **参数解释**： 步骤输出value值。 **取值范围**： 不涉及。 
         :type value: str
         """
         
@@ -52,7 +52,7 @@ class OutputRespOutputResult:
     def key(self):
         r"""Gets the key of this OutputRespOutputResult.
 
-        output名称
+        **参数解释**： 步骤输出key值。 **取值范围**： 不涉及。 
 
         :return: The key of this OutputRespOutputResult.
         :rtype: str
@@ -63,7 +63,7 @@ class OutputRespOutputResult:
     def key(self, key):
         r"""Sets the key of this OutputRespOutputResult.
 
-        output名称
+        **参数解释**： 步骤输出key值。 **取值范围**： 不涉及。 
 
         :param key: The key of this OutputRespOutputResult.
         :type key: str
@@ -74,7 +74,7 @@ class OutputRespOutputResult:
     def value(self):
         r"""Gets the value of this OutputRespOutputResult.
 
-        output值
+        **参数解释**： 步骤输出value值。 **取值范围**： 不涉及。 
 
         :return: The value of this OutputRespOutputResult.
         :rtype: str
@@ -85,7 +85,7 @@ class OutputRespOutputResult:
     def value(self, value):
         r"""Sets the value of this OutputRespOutputResult.
 
-        output值
+        **参数解释**： 步骤输出value值。 **取值范围**： 不涉及。 
 
         :param value: The value of this OutputRespOutputResult.
         :type value: str

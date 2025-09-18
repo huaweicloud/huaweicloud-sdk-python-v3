@@ -32,9 +32,9 @@ class ListProjectStrategyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data: 规则实例列表
+        :param data: **参数解释**： 规则实例列表。 **取值范围**： 不涉及。 
         :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleSet`]
-        :param total: 总数
+        :param total: **参数解释**： 规则总数。 **取值范围**： 不涉及。 
         :type total: int
         """
         
@@ -53,7 +53,7 @@ class ListProjectStrategyResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ListProjectStrategyResponse.
 
-        规则实例列表
+        **参数解释**： 规则实例列表。 **取值范围**： 不涉及。 
 
         :return: The data of this ListProjectStrategyResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleSet`]
@@ -64,7 +64,7 @@ class ListProjectStrategyResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ListProjectStrategyResponse.
 
-        规则实例列表
+        **参数解释**： 规则实例列表。 **取值范围**： 不涉及。 
 
         :param data: The data of this ListProjectStrategyResponse.
         :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.RuleSet`]
@@ -75,7 +75,7 @@ class ListProjectStrategyResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListProjectStrategyResponse.
 
-        总数
+        **参数解释**： 规则总数。 **取值范围**： 不涉及。 
 
         :return: The total of this ListProjectStrategyResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListProjectStrategyResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListProjectStrategyResponse.
 
-        总数
+        **参数解释**： 规则总数。 **取值范围**： 不涉及。 
 
         :param total: The total of this ListProjectStrategyResponse.
         :type total: int

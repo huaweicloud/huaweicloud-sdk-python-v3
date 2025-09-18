@@ -43,21 +43,21 @@ class PipelineBuildResult:
 
         The model defined in huaweicloud sdk
 
-        :param build_id: 执行ID
+        :param build_id: **参数解释**： 流水线执行ID。 **取值范围**： 不涉及。 
         :type build_id: str
-        :param elapse_time: 运行耗时
+        :param elapse_time: **参数解释**： 运行耗时，单位为毫秒。 **取值范围**： 不涉及。 
         :type elapse_time: str
-        :param end_time: 执行结束时间
+        :param end_time: **参数解释**： 执行结束时间。 **取值范围**： 不涉及。 
         :type end_time: str
-        :param outcome: 运行结果
+        :param outcome: **参数解释**： 运行结果。 **取值范围**： - success：成功。 - error：失败。 - aborted：终止。 
         :type outcome: str
-        :param pipeline_id: 流水线id
+        :param pipeline_id: **参数解释**： 流水线id。 **取值范围**： 32位字符，由数字和字母组成。 
         :type pipeline_id: str
-        :param pipeline_name: 流水线名称
+        :param pipeline_name: **参数解释**： 流水线名称。 **取值范围**： 不涉及。 
         :type pipeline_name: str
-        :param start_time: 执行开始时间
+        :param start_time: **参数解释**： 执行开始时间。 **取值范围**： 不涉及。 
         :type start_time: str
-        :param status: 运行状态
+        :param status: **参数解释**： 运行状态。 **取值范围**： - waiting：等待中。 - running：运行中。 - verifying：待审核。 - suspending：挂起。 - completed：执行完成。 
         :type status: str
         """
         
@@ -87,7 +87,7 @@ class PipelineBuildResult:
     def build_id(self):
         r"""Gets the build_id of this PipelineBuildResult.
 
-        执行ID
+        **参数解释**： 流水线执行ID。 **取值范围**： 不涉及。 
 
         :return: The build_id of this PipelineBuildResult.
         :rtype: str
@@ -98,7 +98,7 @@ class PipelineBuildResult:
     def build_id(self, build_id):
         r"""Sets the build_id of this PipelineBuildResult.
 
-        执行ID
+        **参数解释**： 流水线执行ID。 **取值范围**： 不涉及。 
 
         :param build_id: The build_id of this PipelineBuildResult.
         :type build_id: str
@@ -109,7 +109,7 @@ class PipelineBuildResult:
     def elapse_time(self):
         r"""Gets the elapse_time of this PipelineBuildResult.
 
-        运行耗时
+        **参数解释**： 运行耗时，单位为毫秒。 **取值范围**： 不涉及。 
 
         :return: The elapse_time of this PipelineBuildResult.
         :rtype: str
@@ -120,7 +120,7 @@ class PipelineBuildResult:
     def elapse_time(self, elapse_time):
         r"""Sets the elapse_time of this PipelineBuildResult.
 
-        运行耗时
+        **参数解释**： 运行耗时，单位为毫秒。 **取值范围**： 不涉及。 
 
         :param elapse_time: The elapse_time of this PipelineBuildResult.
         :type elapse_time: str
@@ -131,7 +131,7 @@ class PipelineBuildResult:
     def end_time(self):
         r"""Gets the end_time of this PipelineBuildResult.
 
-        执行结束时间
+        **参数解释**： 执行结束时间。 **取值范围**： 不涉及。 
 
         :return: The end_time of this PipelineBuildResult.
         :rtype: str
@@ -142,7 +142,7 @@ class PipelineBuildResult:
     def end_time(self, end_time):
         r"""Sets the end_time of this PipelineBuildResult.
 
-        执行结束时间
+        **参数解释**： 执行结束时间。 **取值范围**： 不涉及。 
 
         :param end_time: The end_time of this PipelineBuildResult.
         :type end_time: str
@@ -153,7 +153,7 @@ class PipelineBuildResult:
     def outcome(self):
         r"""Gets the outcome of this PipelineBuildResult.
 
-        运行结果
+        **参数解释**： 运行结果。 **取值范围**： - success：成功。 - error：失败。 - aborted：终止。 
 
         :return: The outcome of this PipelineBuildResult.
         :rtype: str
@@ -164,7 +164,7 @@ class PipelineBuildResult:
     def outcome(self, outcome):
         r"""Sets the outcome of this PipelineBuildResult.
 
-        运行结果
+        **参数解释**： 运行结果。 **取值范围**： - success：成功。 - error：失败。 - aborted：终止。 
 
         :param outcome: The outcome of this PipelineBuildResult.
         :type outcome: str
@@ -175,7 +175,7 @@ class PipelineBuildResult:
     def pipeline_id(self):
         r"""Gets the pipeline_id of this PipelineBuildResult.
 
-        流水线id
+        **参数解释**： 流水线id。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :return: The pipeline_id of this PipelineBuildResult.
         :rtype: str
@@ -186,7 +186,7 @@ class PipelineBuildResult:
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this PipelineBuildResult.
 
-        流水线id
+        **参数解释**： 流水线id。 **取值范围**： 32位字符，由数字和字母组成。 
 
         :param pipeline_id: The pipeline_id of this PipelineBuildResult.
         :type pipeline_id: str
@@ -197,7 +197,7 @@ class PipelineBuildResult:
     def pipeline_name(self):
         r"""Gets the pipeline_name of this PipelineBuildResult.
 
-        流水线名称
+        **参数解释**： 流水线名称。 **取值范围**： 不涉及。 
 
         :return: The pipeline_name of this PipelineBuildResult.
         :rtype: str
@@ -208,7 +208,7 @@ class PipelineBuildResult:
     def pipeline_name(self, pipeline_name):
         r"""Sets the pipeline_name of this PipelineBuildResult.
 
-        流水线名称
+        **参数解释**： 流水线名称。 **取值范围**： 不涉及。 
 
         :param pipeline_name: The pipeline_name of this PipelineBuildResult.
         :type pipeline_name: str
@@ -219,7 +219,7 @@ class PipelineBuildResult:
     def start_time(self):
         r"""Gets the start_time of this PipelineBuildResult.
 
-        执行开始时间
+        **参数解释**： 执行开始时间。 **取值范围**： 不涉及。 
 
         :return: The start_time of this PipelineBuildResult.
         :rtype: str
@@ -230,7 +230,7 @@ class PipelineBuildResult:
     def start_time(self, start_time):
         r"""Sets the start_time of this PipelineBuildResult.
 
-        执行开始时间
+        **参数解释**： 执行开始时间。 **取值范围**： 不涉及。 
 
         :param start_time: The start_time of this PipelineBuildResult.
         :type start_time: str
@@ -241,7 +241,7 @@ class PipelineBuildResult:
     def status(self):
         r"""Gets the status of this PipelineBuildResult.
 
-        运行状态
+        **参数解释**： 运行状态。 **取值范围**： - waiting：等待中。 - running：运行中。 - verifying：待审核。 - suspending：挂起。 - completed：执行完成。 
 
         :return: The status of this PipelineBuildResult.
         :rtype: str
@@ -252,7 +252,7 @@ class PipelineBuildResult:
     def status(self, status):
         r"""Sets the status of this PipelineBuildResult.
 
-        运行状态
+        **参数解释**： 运行状态。 **取值范围**： - waiting：等待中。 - running：运行中。 - verifying：待审核。 - suspending：挂起。 - completed：执行完成。 
 
         :param status: The status of this PipelineBuildResult.
         :type status: str

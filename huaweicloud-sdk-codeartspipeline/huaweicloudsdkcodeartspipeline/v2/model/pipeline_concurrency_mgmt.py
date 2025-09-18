@@ -39,17 +39,17 @@ class PipelineConcurrencyMgmt:
 
         The model defined in huaweicloud sdk
 
-        :param pipeline_id: 流水线id
+        :param pipeline_id: **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符串。 **默认取值**： 不涉及。 
         :type pipeline_id: str
-        :param concurrency_number: 并行数量
+        :param concurrency_number: **参数解释**： [流水线并发个数](tag:hws,hws_hk,hws_eu,ctc,cmcc,g42,sbc,hcs,hcs_site,hcs_sm,hcs_sitesm,fcs)[，最大并发受套餐和购买并发数限制](tag:hws,hws_hk,hws_eu,ctc,cmcc,g42,sbc)[。](tag:hws,hws_hk,hws_eu,ctc,cmcc,g42,sbc,hcs,hcs_site,hcs_sm,hcs_sitesm,fcs) **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type concurrency_number: int
-        :param exceed_action: 超出情况下策略
+        :param exceed_action: **参数解释**： 超出并发数时排队策略。 **约束限制**： 不涉及。 **取值范围**： - ABORT：忽略不执行。 - QUEUE：排队等待。 **默认取值**： 不涉及。 
         :type exceed_action: str
-        :param create_time: 创建时间
+        :param create_time: **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type create_time: int
-        :param update_time: 更新时间
+        :param update_time: **参数解释**： 更新时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type update_time: int
-        :param enable: 是否有效
+        :param enable: **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： - true：启用。 - false：未启用。 **默认取值**： 不涉及。 
         :type enable: bool
         """
         
@@ -80,7 +80,7 @@ class PipelineConcurrencyMgmt:
     def pipeline_id(self):
         r"""Gets the pipeline_id of this PipelineConcurrencyMgmt.
 
-        流水线id
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符串。 **默认取值**： 不涉及。 
 
         :return: The pipeline_id of this PipelineConcurrencyMgmt.
         :rtype: str
@@ -91,7 +91,7 @@ class PipelineConcurrencyMgmt:
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this PipelineConcurrencyMgmt.
 
-        流水线id
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符串。 **默认取值**： 不涉及。 
 
         :param pipeline_id: The pipeline_id of this PipelineConcurrencyMgmt.
         :type pipeline_id: str
@@ -102,7 +102,7 @@ class PipelineConcurrencyMgmt:
     def concurrency_number(self):
         r"""Gets the concurrency_number of this PipelineConcurrencyMgmt.
 
-        并行数量
+        **参数解释**： [流水线并发个数](tag:hws,hws_hk,hws_eu,ctc,cmcc,g42,sbc,hcs,hcs_site,hcs_sm,hcs_sitesm,fcs)[，最大并发受套餐和购买并发数限制](tag:hws,hws_hk,hws_eu,ctc,cmcc,g42,sbc)[。](tag:hws,hws_hk,hws_eu,ctc,cmcc,g42,sbc,hcs,hcs_site,hcs_sm,hcs_sitesm,fcs) **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The concurrency_number of this PipelineConcurrencyMgmt.
         :rtype: int
@@ -113,7 +113,7 @@ class PipelineConcurrencyMgmt:
     def concurrency_number(self, concurrency_number):
         r"""Sets the concurrency_number of this PipelineConcurrencyMgmt.
 
-        并行数量
+        **参数解释**： [流水线并发个数](tag:hws,hws_hk,hws_eu,ctc,cmcc,g42,sbc,hcs,hcs_site,hcs_sm,hcs_sitesm,fcs)[，最大并发受套餐和购买并发数限制](tag:hws,hws_hk,hws_eu,ctc,cmcc,g42,sbc)[。](tag:hws,hws_hk,hws_eu,ctc,cmcc,g42,sbc,hcs,hcs_site,hcs_sm,hcs_sitesm,fcs) **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param concurrency_number: The concurrency_number of this PipelineConcurrencyMgmt.
         :type concurrency_number: int
@@ -124,7 +124,7 @@ class PipelineConcurrencyMgmt:
     def exceed_action(self):
         r"""Gets the exceed_action of this PipelineConcurrencyMgmt.
 
-        超出情况下策略
+        **参数解释**： 超出并发数时排队策略。 **约束限制**： 不涉及。 **取值范围**： - ABORT：忽略不执行。 - QUEUE：排队等待。 **默认取值**： 不涉及。 
 
         :return: The exceed_action of this PipelineConcurrencyMgmt.
         :rtype: str
@@ -135,7 +135,7 @@ class PipelineConcurrencyMgmt:
     def exceed_action(self, exceed_action):
         r"""Sets the exceed_action of this PipelineConcurrencyMgmt.
 
-        超出情况下策略
+        **参数解释**： 超出并发数时排队策略。 **约束限制**： 不涉及。 **取值范围**： - ABORT：忽略不执行。 - QUEUE：排队等待。 **默认取值**： 不涉及。 
 
         :param exceed_action: The exceed_action of this PipelineConcurrencyMgmt.
         :type exceed_action: str
@@ -146,7 +146,7 @@ class PipelineConcurrencyMgmt:
     def create_time(self):
         r"""Gets the create_time of this PipelineConcurrencyMgmt.
 
-        创建时间
+        **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The create_time of this PipelineConcurrencyMgmt.
         :rtype: int
@@ -157,7 +157,7 @@ class PipelineConcurrencyMgmt:
     def create_time(self, create_time):
         r"""Sets the create_time of this PipelineConcurrencyMgmt.
 
-        创建时间
+        **参数解释**： 创建时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param create_time: The create_time of this PipelineConcurrencyMgmt.
         :type create_time: int
@@ -168,7 +168,7 @@ class PipelineConcurrencyMgmt:
     def update_time(self):
         r"""Gets the update_time of this PipelineConcurrencyMgmt.
 
-        更新时间
+        **参数解释**： 更新时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The update_time of this PipelineConcurrencyMgmt.
         :rtype: int
@@ -179,7 +179,7 @@ class PipelineConcurrencyMgmt:
     def update_time(self, update_time):
         r"""Sets the update_time of this PipelineConcurrencyMgmt.
 
-        更新时间
+        **参数解释**： 更新时间。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param update_time: The update_time of this PipelineConcurrencyMgmt.
         :type update_time: int
@@ -190,7 +190,7 @@ class PipelineConcurrencyMgmt:
     def enable(self):
         r"""Gets the enable of this PipelineConcurrencyMgmt.
 
-        是否有效
+        **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： - true：启用。 - false：未启用。 **默认取值**： 不涉及。 
 
         :return: The enable of this PipelineConcurrencyMgmt.
         :rtype: bool
@@ -201,7 +201,7 @@ class PipelineConcurrencyMgmt:
     def enable(self, enable):
         r"""Sets the enable of this PipelineConcurrencyMgmt.
 
-        是否有效
+        **参数解释**： 是否启用。 **约束限制**： 不涉及。 **取值范围**： - true：启用。 - false：未启用。 **默认取值**： 不涉及。 
 
         :param enable: The enable of this PipelineConcurrencyMgmt.
         :type enable: bool

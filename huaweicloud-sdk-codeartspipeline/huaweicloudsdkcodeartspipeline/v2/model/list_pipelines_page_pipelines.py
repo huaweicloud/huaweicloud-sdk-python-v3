@@ -27,7 +27,8 @@ class ListPipelinesPagePipelines:
         'manifest_version': 'str',
         'create_time': 'int',
         'latest_run': 'ListPipelinesPageLatestRun',
-        'convert_sign': 'int'
+        'convert_sign': 'int',
+        'security_level': 'int'
     }
 
     attribute_map = {
@@ -41,36 +42,39 @@ class ListPipelinesPagePipelines:
         'manifest_version': 'manifest_version',
         'create_time': 'create_time',
         'latest_run': 'latest_run',
-        'convert_sign': 'convert_sign'
+        'convert_sign': 'convert_sign',
+        'security_level': 'security_level'
     }
 
-    def __init__(self, pipeline_id=None, name=None, project_id=None, project_name=None, component_id=None, is_publish=None, is_collect=None, manifest_version=None, create_time=None, latest_run=None, convert_sign=None):
+    def __init__(self, pipeline_id=None, name=None, project_id=None, project_name=None, component_id=None, is_publish=None, is_collect=None, manifest_version=None, create_time=None, latest_run=None, convert_sign=None, security_level=None):
         r"""ListPipelinesPagePipelines
 
         The model defined in huaweicloud sdk
 
-        :param pipeline_id: 流水线ID
+        :param pipeline_id: **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type pipeline_id: str
-        :param name: 流水线名称
+        :param name: **参数解释**： 流水线名称。 **取值范围**： 仅包含中文、大小写英文字母、数字、&#39;-&#39;和&#39;_&#39;，且长度为[1,128]个字符。 
         :type name: str
-        :param project_id: 项目ID
+        :param project_id: **参数解释**： 项目ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type project_id: str
-        :param project_name: 项目名称
+        :param project_name: **参数解释**： 项目名称。 **取值范围**： 不涉及。 
         :type project_name: str
-        :param component_id: 组件ID
+        :param component_id: **参数解释**： 组件ID。 **取值范围**： 不涉及。 
         :type component_id: str
-        :param is_publish: 是否为变更流水线
+        :param is_publish: **参数解释**： 是否为变更流水线。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 
         :type is_publish: bool
-        :param is_collect: 是否收藏此流水线
+        :param is_collect: **参数解释**： 是否收藏此流水线。 **取值范围**： - true：已收藏流水线。 - false：未收藏流水线。 
         :type is_collect: bool
-        :param manifest_version: 流水线版本
+        :param manifest_version: **参数解释**： 流水线版本。 **取值范围**： 默认3.0。 
         :type manifest_version: str
-        :param create_time: 创建时间
+        :param create_time: **参数解释**： 创建时间。 **取值范围**： 不涉及。 
         :type create_time: int
         :param latest_run: 
         :type latest_run: :class:`huaweicloudsdkcodeartspipeline.v2.ListPipelinesPageLatestRun`
-        :param convert_sign: 旧版转新版标识
+        :param convert_sign: **参数解释**： 旧版转新版标识。 **取值范围**： 不涉及。 
         :type convert_sign: int
+        :param security_level: **参数解释**： 流水线涉密等级。 **取值范围**： 正整数。 null：未设置密级。 1：最低密级。 
+        :type security_level: int
         """
         
         
@@ -86,6 +90,7 @@ class ListPipelinesPagePipelines:
         self._create_time = None
         self._latest_run = None
         self._convert_sign = None
+        self._security_level = None
         self.discriminator = None
 
         if pipeline_id is not None:
@@ -110,12 +115,14 @@ class ListPipelinesPagePipelines:
             self.latest_run = latest_run
         if convert_sign is not None:
             self.convert_sign = convert_sign
+        if security_level is not None:
+            self.security_level = security_level
 
     @property
     def pipeline_id(self):
         r"""Gets the pipeline_id of this ListPipelinesPagePipelines.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The pipeline_id of this ListPipelinesPagePipelines.
         :rtype: str
@@ -126,7 +133,7 @@ class ListPipelinesPagePipelines:
     def pipeline_id(self, pipeline_id):
         r"""Sets the pipeline_id of this ListPipelinesPagePipelines.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param pipeline_id: The pipeline_id of this ListPipelinesPagePipelines.
         :type pipeline_id: str
@@ -137,7 +144,7 @@ class ListPipelinesPagePipelines:
     def name(self):
         r"""Gets the name of this ListPipelinesPagePipelines.
 
-        流水线名称
+        **参数解释**： 流水线名称。 **取值范围**： 仅包含中文、大小写英文字母、数字、'-'和'_'，且长度为[1,128]个字符。 
 
         :return: The name of this ListPipelinesPagePipelines.
         :rtype: str
@@ -148,7 +155,7 @@ class ListPipelinesPagePipelines:
     def name(self, name):
         r"""Sets the name of this ListPipelinesPagePipelines.
 
-        流水线名称
+        **参数解释**： 流水线名称。 **取值范围**： 仅包含中文、大小写英文字母、数字、'-'和'_'，且长度为[1,128]个字符。 
 
         :param name: The name of this ListPipelinesPagePipelines.
         :type name: str
@@ -159,7 +166,7 @@ class ListPipelinesPagePipelines:
     def project_id(self):
         r"""Gets the project_id of this ListPipelinesPagePipelines.
 
-        项目ID
+        **参数解释**： 项目ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The project_id of this ListPipelinesPagePipelines.
         :rtype: str
@@ -170,7 +177,7 @@ class ListPipelinesPagePipelines:
     def project_id(self, project_id):
         r"""Sets the project_id of this ListPipelinesPagePipelines.
 
-        项目ID
+        **参数解释**： 项目ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param project_id: The project_id of this ListPipelinesPagePipelines.
         :type project_id: str
@@ -181,7 +188,7 @@ class ListPipelinesPagePipelines:
     def project_name(self):
         r"""Gets the project_name of this ListPipelinesPagePipelines.
 
-        项目名称
+        **参数解释**： 项目名称。 **取值范围**： 不涉及。 
 
         :return: The project_name of this ListPipelinesPagePipelines.
         :rtype: str
@@ -192,7 +199,7 @@ class ListPipelinesPagePipelines:
     def project_name(self, project_name):
         r"""Sets the project_name of this ListPipelinesPagePipelines.
 
-        项目名称
+        **参数解释**： 项目名称。 **取值范围**： 不涉及。 
 
         :param project_name: The project_name of this ListPipelinesPagePipelines.
         :type project_name: str
@@ -203,7 +210,7 @@ class ListPipelinesPagePipelines:
     def component_id(self):
         r"""Gets the component_id of this ListPipelinesPagePipelines.
 
-        组件ID
+        **参数解释**： 组件ID。 **取值范围**： 不涉及。 
 
         :return: The component_id of this ListPipelinesPagePipelines.
         :rtype: str
@@ -214,7 +221,7 @@ class ListPipelinesPagePipelines:
     def component_id(self, component_id):
         r"""Sets the component_id of this ListPipelinesPagePipelines.
 
-        组件ID
+        **参数解释**： 组件ID。 **取值范围**： 不涉及。 
 
         :param component_id: The component_id of this ListPipelinesPagePipelines.
         :type component_id: str
@@ -225,7 +232,7 @@ class ListPipelinesPagePipelines:
     def is_publish(self):
         r"""Gets the is_publish of this ListPipelinesPagePipelines.
 
-        是否为变更流水线
+        **参数解释**： 是否为变更流水线。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 
 
         :return: The is_publish of this ListPipelinesPagePipelines.
         :rtype: bool
@@ -236,7 +243,7 @@ class ListPipelinesPagePipelines:
     def is_publish(self, is_publish):
         r"""Sets the is_publish of this ListPipelinesPagePipelines.
 
-        是否为变更流水线
+        **参数解释**： 是否为变更流水线。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 
 
         :param is_publish: The is_publish of this ListPipelinesPagePipelines.
         :type is_publish: bool
@@ -247,7 +254,7 @@ class ListPipelinesPagePipelines:
     def is_collect(self):
         r"""Gets the is_collect of this ListPipelinesPagePipelines.
 
-        是否收藏此流水线
+        **参数解释**： 是否收藏此流水线。 **取值范围**： - true：已收藏流水线。 - false：未收藏流水线。 
 
         :return: The is_collect of this ListPipelinesPagePipelines.
         :rtype: bool
@@ -258,7 +265,7 @@ class ListPipelinesPagePipelines:
     def is_collect(self, is_collect):
         r"""Sets the is_collect of this ListPipelinesPagePipelines.
 
-        是否收藏此流水线
+        **参数解释**： 是否收藏此流水线。 **取值范围**： - true：已收藏流水线。 - false：未收藏流水线。 
 
         :param is_collect: The is_collect of this ListPipelinesPagePipelines.
         :type is_collect: bool
@@ -269,7 +276,7 @@ class ListPipelinesPagePipelines:
     def manifest_version(self):
         r"""Gets the manifest_version of this ListPipelinesPagePipelines.
 
-        流水线版本
+        **参数解释**： 流水线版本。 **取值范围**： 默认3.0。 
 
         :return: The manifest_version of this ListPipelinesPagePipelines.
         :rtype: str
@@ -280,7 +287,7 @@ class ListPipelinesPagePipelines:
     def manifest_version(self, manifest_version):
         r"""Sets the manifest_version of this ListPipelinesPagePipelines.
 
-        流水线版本
+        **参数解释**： 流水线版本。 **取值范围**： 默认3.0。 
 
         :param manifest_version: The manifest_version of this ListPipelinesPagePipelines.
         :type manifest_version: str
@@ -291,7 +298,7 @@ class ListPipelinesPagePipelines:
     def create_time(self):
         r"""Gets the create_time of this ListPipelinesPagePipelines.
 
-        创建时间
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。 
 
         :return: The create_time of this ListPipelinesPagePipelines.
         :rtype: int
@@ -302,7 +309,7 @@ class ListPipelinesPagePipelines:
     def create_time(self, create_time):
         r"""Sets the create_time of this ListPipelinesPagePipelines.
 
-        创建时间
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。 
 
         :param create_time: The create_time of this ListPipelinesPagePipelines.
         :type create_time: int
@@ -331,7 +338,7 @@ class ListPipelinesPagePipelines:
     def convert_sign(self):
         r"""Gets the convert_sign of this ListPipelinesPagePipelines.
 
-        旧版转新版标识
+        **参数解释**： 旧版转新版标识。 **取值范围**： 不涉及。 
 
         :return: The convert_sign of this ListPipelinesPagePipelines.
         :rtype: int
@@ -342,12 +349,34 @@ class ListPipelinesPagePipelines:
     def convert_sign(self, convert_sign):
         r"""Sets the convert_sign of this ListPipelinesPagePipelines.
 
-        旧版转新版标识
+        **参数解释**： 旧版转新版标识。 **取值范围**： 不涉及。 
 
         :param convert_sign: The convert_sign of this ListPipelinesPagePipelines.
         :type convert_sign: int
         """
         self._convert_sign = convert_sign
+
+    @property
+    def security_level(self):
+        r"""Gets the security_level of this ListPipelinesPagePipelines.
+
+        **参数解释**： 流水线涉密等级。 **取值范围**： 正整数。 null：未设置密级。 1：最低密级。 
+
+        :return: The security_level of this ListPipelinesPagePipelines.
+        :rtype: int
+        """
+        return self._security_level
+
+    @security_level.setter
+    def security_level(self, security_level):
+        r"""Sets the security_level of this ListPipelinesPagePipelines.
+
+        **参数解释**： 流水线涉密等级。 **取值范围**： 正整数。 null：未设置密级。 1：最低密级。 
+
+        :param security_level: The security_level of this ListPipelinesPagePipelines.
+        :type security_level: int
+        """
+        self._security_level = security_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

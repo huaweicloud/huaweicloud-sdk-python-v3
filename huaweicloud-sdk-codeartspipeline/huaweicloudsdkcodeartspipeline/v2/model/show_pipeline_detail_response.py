@@ -38,7 +38,8 @@ class ShowPipelineDetailResponse(SdkResponse):
         'schedules': 'list[PipelineSchedule]',
         'triggers': 'list[PipelineTrigger]',
         'group_id': 'str',
-        'definition': 'str'
+        'definition': 'str',
+        'security_level': 'int'
     }
 
     attribute_map = {
@@ -62,56 +63,59 @@ class ShowPipelineDetailResponse(SdkResponse):
         'schedules': 'schedules',
         'triggers': 'triggers',
         'group_id': 'group_id',
-        'definition': 'definition'
+        'definition': 'definition',
+        'security_level': 'security_level'
     }
 
-    def __init__(self, id=None, name=None, description=None, manifest_version=None, region=None, domain_id=None, project_id=None, component_id=None, is_publish=None, creator_id=None, creator_name=None, updater_id=None, create_time=None, update_time=None, is_collect=None, sources=None, variables=None, schedules=None, triggers=None, group_id=None, definition=None):
+    def __init__(self, id=None, name=None, description=None, manifest_version=None, region=None, domain_id=None, project_id=None, component_id=None, is_publish=None, creator_id=None, creator_name=None, updater_id=None, create_time=None, update_time=None, is_collect=None, sources=None, variables=None, schedules=None, triggers=None, group_id=None, definition=None, security_level=None):
         r"""ShowPipelineDetailResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 流水线ID
+        :param id: **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type id: str
-        :param name: 流水线名称
+        :param name: **参数解释**： 流水线名称。 **取值范围**： 仅包含中文、大小写英文字母、数字、&#39;-&#39;和&#39;_&#39;，且长度为[1,128]个字符。 
         :type name: str
-        :param description: 描述
+        :param description: **参数解释**： 对流水线的补充描述。 **取值范围**： 不超过1024字符。 
         :type description: str
-        :param manifest_version: 流水线版本
+        :param manifest_version: **参数解释**： 流水线版本，默认为3.0。 **取值范围**： 不涉及。 
         :type manifest_version: str
-        :param region: 局点
+        :param region: **参数解释**： 当前环境所属局点。 **取值范围**： 不涉及。 
         :type region: str
-        :param domain_id: 所属租户ID
+        :param domain_id: **参数解释**： 所属租户ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type domain_id: str
-        :param project_id: 所属项目ID
+        :param project_id: **参数解释**： 项目ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type project_id: str
-        :param component_id: 所属微服务ID
+        :param component_id: **参数解释**： 所属微服务ID。可以通过[查询微服务列表](ListMicroservice.xml)接口获取，其中data.id即为微服务ID。 **取值范围**： 不涉及。 
         :type component_id: str
-        :param is_publish: 是否为变更流水线
+        :param is_publish: **参数解释**： 是否为变更流水线。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 
         :type is_publish: bool
-        :param creator_id: 创建人ID
+        :param creator_id: **参数解释**： 流水线创建人ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type creator_id: str
-        :param creator_name: 创建人名称
+        :param creator_name: **参数解释**： 流水线创建人名称。 **取值范围**： 不涉及。 
         :type creator_name: str
-        :param updater_id: 更新人ID
+        :param updater_id: **参数解释**： 流水线上次更新人ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
         :type updater_id: str
-        :param create_time: 更新人名称
+        :param create_time: **参数解释**： 流水线创建时间。 **取值范围**： 不涉及。 
         :type create_time: int
-        :param update_time: 更新时间
+        :param update_time: **参数解释**： 流水线更新时间。 **取值范围**： 不涉及。 
         :type update_time: int
-        :param is_collect: 是否被当前用户收藏
+        :param is_collect: **参数解释**： 流水线是否被当前用户收藏。 **取值范围**： - true：流水线已被收藏。 - false：流水线未被收藏。 
         :type is_collect: bool
-        :param sources: 流水线源
+        :param sources: **参数解释**： 流水线源列表。 **取值范围**： 不涉及。 
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineSource`]
-        :param variables: 流水线自定义参数
+        :param variables: **参数解释**： 流水线自定义参数。 **取值范围**： 不涉及。 
         :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineVariable`]
-        :param schedules: 流水线定时任务设置
+        :param schedules: **参数解释**： 流水线定时任务设置。 **取值范围**： 不涉及。 
         :type schedules: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineSchedule`]
-        :param triggers: 流水线事件触发设置
+        :param triggers: **参数解释**： 流水线事件触发设置。 **取值范围**： 不涉及。 
         :type triggers: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineTrigger`]
-        :param group_id: 流水线所属分组ID
+        :param group_id: **参数解释**： 流水线所属分组ID。 **取值范围**： 不涉及。 
         :type group_id: str
-        :param definition: 流水线定义
+        :param definition: **参数解释**： 流水线定义JSON。 **取值范围**： 不涉及。 
         :type definition: str
+        :param security_level: **参数解释**： 流水线涉密等级。 **取值范围**： 不涉及。 
+        :type security_level: int
         """
         
         super(ShowPipelineDetailResponse, self).__init__()
@@ -137,6 +141,7 @@ class ShowPipelineDetailResponse(SdkResponse):
         self._triggers = None
         self._group_id = None
         self._definition = None
+        self._security_level = None
         self.discriminator = None
 
         if id is not None:
@@ -181,12 +186,14 @@ class ShowPipelineDetailResponse(SdkResponse):
             self.group_id = group_id
         if definition is not None:
             self.definition = definition
+        if security_level is not None:
+            self.security_level = security_level
 
     @property
     def id(self):
         r"""Gets the id of this ShowPipelineDetailResponse.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The id of this ShowPipelineDetailResponse.
         :rtype: str
@@ -197,7 +204,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this ShowPipelineDetailResponse.
 
-        流水线ID
+        **参数解释**： 流水线ID，可以通过[查询流水线列表](ListPipelines.xml)接口，其中pipelines.pipelineId即为流水线ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param id: The id of this ShowPipelineDetailResponse.
         :type id: str
@@ -208,7 +215,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowPipelineDetailResponse.
 
-        流水线名称
+        **参数解释**： 流水线名称。 **取值范围**： 仅包含中文、大小写英文字母、数字、'-'和'_'，且长度为[1,128]个字符。 
 
         :return: The name of this ShowPipelineDetailResponse.
         :rtype: str
@@ -219,7 +226,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowPipelineDetailResponse.
 
-        流水线名称
+        **参数解释**： 流水线名称。 **取值范围**： 仅包含中文、大小写英文字母、数字、'-'和'_'，且长度为[1,128]个字符。 
 
         :param name: The name of this ShowPipelineDetailResponse.
         :type name: str
@@ -230,7 +237,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowPipelineDetailResponse.
 
-        描述
+        **参数解释**： 对流水线的补充描述。 **取值范围**： 不超过1024字符。 
 
         :return: The description of this ShowPipelineDetailResponse.
         :rtype: str
@@ -241,7 +248,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowPipelineDetailResponse.
 
-        描述
+        **参数解释**： 对流水线的补充描述。 **取值范围**： 不超过1024字符。 
 
         :param description: The description of this ShowPipelineDetailResponse.
         :type description: str
@@ -252,7 +259,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def manifest_version(self):
         r"""Gets the manifest_version of this ShowPipelineDetailResponse.
 
-        流水线版本
+        **参数解释**： 流水线版本，默认为3.0。 **取值范围**： 不涉及。 
 
         :return: The manifest_version of this ShowPipelineDetailResponse.
         :rtype: str
@@ -263,7 +270,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def manifest_version(self, manifest_version):
         r"""Sets the manifest_version of this ShowPipelineDetailResponse.
 
-        流水线版本
+        **参数解释**： 流水线版本，默认为3.0。 **取值范围**： 不涉及。 
 
         :param manifest_version: The manifest_version of this ShowPipelineDetailResponse.
         :type manifest_version: str
@@ -274,7 +281,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def region(self):
         r"""Gets the region of this ShowPipelineDetailResponse.
 
-        局点
+        **参数解释**： 当前环境所属局点。 **取值范围**： 不涉及。 
 
         :return: The region of this ShowPipelineDetailResponse.
         :rtype: str
@@ -285,7 +292,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def region(self, region):
         r"""Sets the region of this ShowPipelineDetailResponse.
 
-        局点
+        **参数解释**： 当前环境所属局点。 **取值范围**： 不涉及。 
 
         :param region: The region of this ShowPipelineDetailResponse.
         :type region: str
@@ -296,7 +303,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def domain_id(self):
         r"""Gets the domain_id of this ShowPipelineDetailResponse.
 
-        所属租户ID
+        **参数解释**： 所属租户ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The domain_id of this ShowPipelineDetailResponse.
         :rtype: str
@@ -307,7 +314,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def domain_id(self, domain_id):
         r"""Sets the domain_id of this ShowPipelineDetailResponse.
 
-        所属租户ID
+        **参数解释**： 所属租户ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param domain_id: The domain_id of this ShowPipelineDetailResponse.
         :type domain_id: str
@@ -318,7 +325,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this ShowPipelineDetailResponse.
 
-        所属项目ID
+        **参数解释**： 项目ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The project_id of this ShowPipelineDetailResponse.
         :rtype: str
@@ -329,7 +336,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this ShowPipelineDetailResponse.
 
-        所属项目ID
+        **参数解释**： 项目ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param project_id: The project_id of this ShowPipelineDetailResponse.
         :type project_id: str
@@ -340,7 +347,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def component_id(self):
         r"""Gets the component_id of this ShowPipelineDetailResponse.
 
-        所属微服务ID
+        **参数解释**： 所属微服务ID。可以通过[查询微服务列表](ListMicroservice.xml)接口获取，其中data.id即为微服务ID。 **取值范围**： 不涉及。 
 
         :return: The component_id of this ShowPipelineDetailResponse.
         :rtype: str
@@ -351,7 +358,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def component_id(self, component_id):
         r"""Sets the component_id of this ShowPipelineDetailResponse.
 
-        所属微服务ID
+        **参数解释**： 所属微服务ID。可以通过[查询微服务列表](ListMicroservice.xml)接口获取，其中data.id即为微服务ID。 **取值范围**： 不涉及。 
 
         :param component_id: The component_id of this ShowPipelineDetailResponse.
         :type component_id: str
@@ -362,7 +369,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def is_publish(self):
         r"""Gets the is_publish of this ShowPipelineDetailResponse.
 
-        是否为变更流水线
+        **参数解释**： 是否为变更流水线。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 
 
         :return: The is_publish of this ShowPipelineDetailResponse.
         :rtype: bool
@@ -373,7 +380,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def is_publish(self, is_publish):
         r"""Sets the is_publish of this ShowPipelineDetailResponse.
 
-        是否为变更流水线
+        **参数解释**： 是否为变更流水线。 **取值范围**： - true：是变更流水线。 - false：不是变更流水线。 
 
         :param is_publish: The is_publish of this ShowPipelineDetailResponse.
         :type is_publish: bool
@@ -384,7 +391,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def creator_id(self):
         r"""Gets the creator_id of this ShowPipelineDetailResponse.
 
-        创建人ID
+        **参数解释**： 流水线创建人ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The creator_id of this ShowPipelineDetailResponse.
         :rtype: str
@@ -395,7 +402,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def creator_id(self, creator_id):
         r"""Sets the creator_id of this ShowPipelineDetailResponse.
 
-        创建人ID
+        **参数解释**： 流水线创建人ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param creator_id: The creator_id of this ShowPipelineDetailResponse.
         :type creator_id: str
@@ -406,7 +413,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def creator_name(self):
         r"""Gets the creator_name of this ShowPipelineDetailResponse.
 
-        创建人名称
+        **参数解释**： 流水线创建人名称。 **取值范围**： 不涉及。 
 
         :return: The creator_name of this ShowPipelineDetailResponse.
         :rtype: str
@@ -417,7 +424,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def creator_name(self, creator_name):
         r"""Sets the creator_name of this ShowPipelineDetailResponse.
 
-        创建人名称
+        **参数解释**： 流水线创建人名称。 **取值范围**： 不涉及。 
 
         :param creator_name: The creator_name of this ShowPipelineDetailResponse.
         :type creator_name: str
@@ -428,7 +435,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def updater_id(self):
         r"""Gets the updater_id of this ShowPipelineDetailResponse.
 
-        更新人ID
+        **参数解释**： 流水线上次更新人ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :return: The updater_id of this ShowPipelineDetailResponse.
         :rtype: str
@@ -439,7 +446,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def updater_id(self, updater_id):
         r"""Sets the updater_id of this ShowPipelineDetailResponse.
 
-        更新人ID
+        **参数解释**： 流水线上次更新人ID。 **取值范围**： 32位字符，仅由数字和字母组成。 
 
         :param updater_id: The updater_id of this ShowPipelineDetailResponse.
         :type updater_id: str
@@ -450,7 +457,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this ShowPipelineDetailResponse.
 
-        更新人名称
+        **参数解释**： 流水线创建时间。 **取值范围**： 不涉及。 
 
         :return: The create_time of this ShowPipelineDetailResponse.
         :rtype: int
@@ -461,7 +468,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this ShowPipelineDetailResponse.
 
-        更新人名称
+        **参数解释**： 流水线创建时间。 **取值范围**： 不涉及。 
 
         :param create_time: The create_time of this ShowPipelineDetailResponse.
         :type create_time: int
@@ -472,7 +479,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def update_time(self):
         r"""Gets the update_time of this ShowPipelineDetailResponse.
 
-        更新时间
+        **参数解释**： 流水线更新时间。 **取值范围**： 不涉及。 
 
         :return: The update_time of this ShowPipelineDetailResponse.
         :rtype: int
@@ -483,7 +490,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def update_time(self, update_time):
         r"""Sets the update_time of this ShowPipelineDetailResponse.
 
-        更新时间
+        **参数解释**： 流水线更新时间。 **取值范围**： 不涉及。 
 
         :param update_time: The update_time of this ShowPipelineDetailResponse.
         :type update_time: int
@@ -494,7 +501,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def is_collect(self):
         r"""Gets the is_collect of this ShowPipelineDetailResponse.
 
-        是否被当前用户收藏
+        **参数解释**： 流水线是否被当前用户收藏。 **取值范围**： - true：流水线已被收藏。 - false：流水线未被收藏。 
 
         :return: The is_collect of this ShowPipelineDetailResponse.
         :rtype: bool
@@ -505,7 +512,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def is_collect(self, is_collect):
         r"""Sets the is_collect of this ShowPipelineDetailResponse.
 
-        是否被当前用户收藏
+        **参数解释**： 流水线是否被当前用户收藏。 **取值范围**： - true：流水线已被收藏。 - false：流水线未被收藏。 
 
         :param is_collect: The is_collect of this ShowPipelineDetailResponse.
         :type is_collect: bool
@@ -516,7 +523,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def sources(self):
         r"""Gets the sources of this ShowPipelineDetailResponse.
 
-        流水线源
+        **参数解释**： 流水线源列表。 **取值范围**： 不涉及。 
 
         :return: The sources of this ShowPipelineDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineSource`]
@@ -527,7 +534,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def sources(self, sources):
         r"""Sets the sources of this ShowPipelineDetailResponse.
 
-        流水线源
+        **参数解释**： 流水线源列表。 **取值范围**： 不涉及。 
 
         :param sources: The sources of this ShowPipelineDetailResponse.
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineSource`]
@@ -538,7 +545,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def variables(self):
         r"""Gets the variables of this ShowPipelineDetailResponse.
 
-        流水线自定义参数
+        **参数解释**： 流水线自定义参数。 **取值范围**： 不涉及。 
 
         :return: The variables of this ShowPipelineDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineVariable`]
@@ -549,7 +556,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def variables(self, variables):
         r"""Sets the variables of this ShowPipelineDetailResponse.
 
-        流水线自定义参数
+        **参数解释**： 流水线自定义参数。 **取值范围**： 不涉及。 
 
         :param variables: The variables of this ShowPipelineDetailResponse.
         :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineVariable`]
@@ -560,7 +567,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def schedules(self):
         r"""Gets the schedules of this ShowPipelineDetailResponse.
 
-        流水线定时任务设置
+        **参数解释**： 流水线定时任务设置。 **取值范围**： 不涉及。 
 
         :return: The schedules of this ShowPipelineDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineSchedule`]
@@ -571,7 +578,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def schedules(self, schedules):
         r"""Sets the schedules of this ShowPipelineDetailResponse.
 
-        流水线定时任务设置
+        **参数解释**： 流水线定时任务设置。 **取值范围**： 不涉及。 
 
         :param schedules: The schedules of this ShowPipelineDetailResponse.
         :type schedules: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineSchedule`]
@@ -582,7 +589,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def triggers(self):
         r"""Gets the triggers of this ShowPipelineDetailResponse.
 
-        流水线事件触发设置
+        **参数解释**： 流水线事件触发设置。 **取值范围**： 不涉及。 
 
         :return: The triggers of this ShowPipelineDetailResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineTrigger`]
@@ -593,7 +600,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def triggers(self, triggers):
         r"""Sets the triggers of this ShowPipelineDetailResponse.
 
-        流水线事件触发设置
+        **参数解释**： 流水线事件触发设置。 **取值范围**： 不涉及。 
 
         :param triggers: The triggers of this ShowPipelineDetailResponse.
         :type triggers: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineTrigger`]
@@ -604,7 +611,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def group_id(self):
         r"""Gets the group_id of this ShowPipelineDetailResponse.
 
-        流水线所属分组ID
+        **参数解释**： 流水线所属分组ID。 **取值范围**： 不涉及。 
 
         :return: The group_id of this ShowPipelineDetailResponse.
         :rtype: str
@@ -615,7 +622,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def group_id(self, group_id):
         r"""Sets the group_id of this ShowPipelineDetailResponse.
 
-        流水线所属分组ID
+        **参数解释**： 流水线所属分组ID。 **取值范围**： 不涉及。 
 
         :param group_id: The group_id of this ShowPipelineDetailResponse.
         :type group_id: str
@@ -626,7 +633,7 @@ class ShowPipelineDetailResponse(SdkResponse):
     def definition(self):
         r"""Gets the definition of this ShowPipelineDetailResponse.
 
-        流水线定义
+        **参数解释**： 流水线定义JSON。 **取值范围**： 不涉及。 
 
         :return: The definition of this ShowPipelineDetailResponse.
         :rtype: str
@@ -637,12 +644,34 @@ class ShowPipelineDetailResponse(SdkResponse):
     def definition(self, definition):
         r"""Sets the definition of this ShowPipelineDetailResponse.
 
-        流水线定义
+        **参数解释**： 流水线定义JSON。 **取值范围**： 不涉及。 
 
         :param definition: The definition of this ShowPipelineDetailResponse.
         :type definition: str
         """
         self._definition = definition
+
+    @property
+    def security_level(self):
+        r"""Gets the security_level of this ShowPipelineDetailResponse.
+
+        **参数解释**： 流水线涉密等级。 **取值范围**： 不涉及。 
+
+        :return: The security_level of this ShowPipelineDetailResponse.
+        :rtype: int
+        """
+        return self._security_level
+
+    @security_level.setter
+    def security_level(self, security_level):
+        r"""Sets the security_level of this ShowPipelineDetailResponse.
+
+        **参数解释**： 流水线涉密等级。 **取值范围**： 不涉及。 
+
+        :param security_level: The security_level of this ShowPipelineDetailResponse.
+        :type security_level: int
+        """
+        self._security_level = security_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

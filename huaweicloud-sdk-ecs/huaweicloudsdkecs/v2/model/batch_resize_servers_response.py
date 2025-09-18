@@ -32,9 +32,9 @@ class BatchResizeServersResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param order_id: 订单号，创建包年包月的弹性云服务器时返回该参数。
+        :param order_id: 
         :type order_id: str
-        :param job_id: 任务ID，变更按需的弹性云服务器规格时返回该参数。
+        :param job_id: 
         :type job_id: str
         """
         
@@ -53,8 +53,6 @@ class BatchResizeServersResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this BatchResizeServersResponse.
 
-        订单号，创建包年包月的弹性云服务器时返回该参数。
-
         :return: The order_id of this BatchResizeServersResponse.
         :rtype: str
         """
@@ -63,8 +61,6 @@ class BatchResizeServersResponse(SdkResponse):
     @order_id.setter
     def order_id(self, order_id):
         r"""Sets the order_id of this BatchResizeServersResponse.
-
-        订单号，创建包年包月的弹性云服务器时返回该参数。
 
         :param order_id: The order_id of this BatchResizeServersResponse.
         :type order_id: str
@@ -75,8 +71,6 @@ class BatchResizeServersResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this BatchResizeServersResponse.
 
-        任务ID，变更按需的弹性云服务器规格时返回该参数。
-
         :return: The job_id of this BatchResizeServersResponse.
         :rtype: str
         """
@@ -85,8 +79,6 @@ class BatchResizeServersResponse(SdkResponse):
     @job_id.setter
     def job_id(self, job_id):
         r"""Sets the job_id of this BatchResizeServersResponse.
-
-        任务ID，变更按需的弹性云服务器规格时返回该参数。
 
         :param job_id: The job_id of this BatchResizeServersResponse.
         :type job_id: str

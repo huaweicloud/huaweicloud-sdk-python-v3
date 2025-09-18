@@ -66,6 +66,8 @@ class RdsRegion:
                         "https://rds.me-east-1.myhuaweicloud.com")
     AF_NORTH_1 = Region("af-north-1",
                         "https://rds.af-north-1.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://rds.cn-north-12.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -98,6 +100,7 @@ class RdsRegion:
         "ru-moscow-1": RU_MOSCOW_1,
         "me-east-1": ME_EAST_1,
         "af-north-1": AF_NORTH_1,
+        "cn-north-12": CN_NORTH_12,
     }
 
     @classmethod

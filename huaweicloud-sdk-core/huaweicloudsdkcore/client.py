@@ -27,7 +27,6 @@ import os
 import re
 import sys
 import threading
-import warnings
 from collections import OrderedDict
 from typing import Iterable
 from logging.handlers import RotatingFileHandler

@@ -36,13 +36,13 @@ class ListPublisherResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询偏移量
+        :param offset: **参数解释**： 查询偏移量，与查询参数的偏移量相同。 **取值范围**： 不涉及。 
         :type offset: int
-        :param limit: 每次查询的条目数量
+        :param limit: **参数解释**： 每次查询的条目数量。 **取值范围**： 大于等于0。 
         :type limit: int
-        :param total: 查询总数
+        :param total: **参数解释**： 本次查询到的数据条数。 **取值范围**： 不涉及。 
         :type total: int
-        :param data: 数据列表
+        :param data: **参数解释**： 本次查询到的数据列表。 **取值范围**： 不涉及。 
         :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.PublisherVO`]
         """
         
@@ -67,7 +67,7 @@ class ListPublisherResponse(SdkResponse):
     def offset(self):
         r"""Gets the offset of this ListPublisherResponse.
 
-        查询偏移量
+        **参数解释**： 查询偏移量，与查询参数的偏移量相同。 **取值范围**： 不涉及。 
 
         :return: The offset of this ListPublisherResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListPublisherResponse(SdkResponse):
     def offset(self, offset):
         r"""Sets the offset of this ListPublisherResponse.
 
-        查询偏移量
+        **参数解释**： 查询偏移量，与查询参数的偏移量相同。 **取值范围**： 不涉及。 
 
         :param offset: The offset of this ListPublisherResponse.
         :type offset: int
@@ -89,7 +89,7 @@ class ListPublisherResponse(SdkResponse):
     def limit(self):
         r"""Gets the limit of this ListPublisherResponse.
 
-        每次查询的条目数量
+        **参数解释**： 每次查询的条目数量。 **取值范围**： 大于等于0。 
 
         :return: The limit of this ListPublisherResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListPublisherResponse(SdkResponse):
     def limit(self, limit):
         r"""Sets the limit of this ListPublisherResponse.
 
-        每次查询的条目数量
+        **参数解释**： 每次查询的条目数量。 **取值范围**： 大于等于0。 
 
         :param limit: The limit of this ListPublisherResponse.
         :type limit: int
@@ -111,7 +111,7 @@ class ListPublisherResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListPublisherResponse.
 
-        查询总数
+        **参数解释**： 本次查询到的数据条数。 **取值范围**： 不涉及。 
 
         :return: The total of this ListPublisherResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ListPublisherResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListPublisherResponse.
 
-        查询总数
+        **参数解释**： 本次查询到的数据条数。 **取值范围**： 不涉及。 
 
         :param total: The total of this ListPublisherResponse.
         :type total: int
@@ -133,7 +133,7 @@ class ListPublisherResponse(SdkResponse):
     def data(self):
         r"""Gets the data of this ListPublisherResponse.
 
-        数据列表
+        **参数解释**： 本次查询到的数据列表。 **取值范围**： 不涉及。 
 
         :return: The data of this ListPublisherResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PublisherVO`]
@@ -144,7 +144,7 @@ class ListPublisherResponse(SdkResponse):
     def data(self, data):
         r"""Sets the data of this ListPublisherResponse.
 
-        数据列表
+        **参数解释**： 本次查询到的数据列表。 **取值范围**： 不涉及。 
 
         :param data: The data of this ListPublisherResponse.
         :type data: list[:class:`huaweicloudsdkcodeartspipeline.v2.PublisherVO`]

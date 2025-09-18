@@ -31,9 +31,9 @@ class PipelineTemplateSimpleVOStages:
 
         The model defined in huaweicloud sdk
 
-        :param name: 阶段名称
+        :param name: **参数解释**： 阶段名称。 **取值范围**： 仅支持输入中文、大小写英文字母、数字、&#39;-&#39;、&#39;_&#39;、&#39;,&#39;、&#39;;&#39;、&#39;:&#39;、&#39;.&#39;、&#39;/&#39;、&#39;(&#39;、&#39;)&#39;、&#39;（&#39;、&#39;）&#39;及空格，其中空格不可在名称开头或结尾使用，且长度为[1,128]个字符。 
         :type name: str
-        :param sequence: 序列号
+        :param sequence: **参数解释**： 阶段顺序。 **取值范围**： 大于等于0。 
         :type sequence: int
         """
         
@@ -52,7 +52,7 @@ class PipelineTemplateSimpleVOStages:
     def name(self):
         r"""Gets the name of this PipelineTemplateSimpleVOStages.
 
-        阶段名称
+        **参数解释**： 阶段名称。 **取值范围**： 仅支持输入中文、大小写英文字母、数字、'-'、'_'、','、';'、':'、'.'、'/'、'('、')'、'（'、'）'及空格，其中空格不可在名称开头或结尾使用，且长度为[1,128]个字符。 
 
         :return: The name of this PipelineTemplateSimpleVOStages.
         :rtype: str
@@ -63,7 +63,7 @@ class PipelineTemplateSimpleVOStages:
     def name(self, name):
         r"""Sets the name of this PipelineTemplateSimpleVOStages.
 
-        阶段名称
+        **参数解释**： 阶段名称。 **取值范围**： 仅支持输入中文、大小写英文字母、数字、'-'、'_'、','、';'、':'、'.'、'/'、'('、')'、'（'、'）'及空格，其中空格不可在名称开头或结尾使用，且长度为[1,128]个字符。 
 
         :param name: The name of this PipelineTemplateSimpleVOStages.
         :type name: str
@@ -74,7 +74,7 @@ class PipelineTemplateSimpleVOStages:
     def sequence(self):
         r"""Gets the sequence of this PipelineTemplateSimpleVOStages.
 
-        序列号
+        **参数解释**： 阶段顺序。 **取值范围**： 大于等于0。 
 
         :return: The sequence of this PipelineTemplateSimpleVOStages.
         :rtype: int
@@ -85,7 +85,7 @@ class PipelineTemplateSimpleVOStages:
     def sequence(self, sequence):
         r"""Sets the sequence of this PipelineTemplateSimpleVOStages.
 
-        序列号
+        **参数解释**： 阶段顺序。 **取值范围**： 大于等于0。 
 
         :param sequence: The sequence of this PipelineTemplateSimpleVOStages.
         :type sequence: int
