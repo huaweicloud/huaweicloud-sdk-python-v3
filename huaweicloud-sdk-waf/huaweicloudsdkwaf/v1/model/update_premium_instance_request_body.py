@@ -31,9 +31,9 @@ class UpdatePremiumInstanceRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param action: 独享引擎操作名称
+        :param action: **参数解释：** 独享引擎操作名称，目前支持 upgrade（升级） ，rollback（升级后回滚），security_groups（切换安全组） **取值范围：** 不涉及
         :type action: str
-        :param params: 具体的请求体
+        :param params: **参数解释：**  具体的请求参数，操作为upgrade（升级） ，rollback（升级后回滚）时无需填写，操作位 security_groups（切换安全组）时，参数为安全组的ip数组 **取值范围：** 不涉及
         :type params: list[str]
         """
         
@@ -51,7 +51,7 @@ class UpdatePremiumInstanceRequestBody:
     def action(self):
         r"""Gets the action of this UpdatePremiumInstanceRequestBody.
 
-        独享引擎操作名称
+        **参数解释：** 独享引擎操作名称，目前支持 upgrade（升级） ，rollback（升级后回滚），security_groups（切换安全组） **取值范围：** 不涉及
 
         :return: The action of this UpdatePremiumInstanceRequestBody.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdatePremiumInstanceRequestBody:
     def action(self, action):
         r"""Sets the action of this UpdatePremiumInstanceRequestBody.
 
-        独享引擎操作名称
+        **参数解释：** 独享引擎操作名称，目前支持 upgrade（升级） ，rollback（升级后回滚），security_groups（切换安全组） **取值范围：** 不涉及
 
         :param action: The action of this UpdatePremiumInstanceRequestBody.
         :type action: str
@@ -73,7 +73,7 @@ class UpdatePremiumInstanceRequestBody:
     def params(self):
         r"""Gets the params of this UpdatePremiumInstanceRequestBody.
 
-        具体的请求体
+        **参数解释：**  具体的请求参数，操作为upgrade（升级） ，rollback（升级后回滚）时无需填写，操作位 security_groups（切换安全组）时，参数为安全组的ip数组 **取值范围：** 不涉及
 
         :return: The params of this UpdatePremiumInstanceRequestBody.
         :rtype: list[str]
@@ -84,7 +84,7 @@ class UpdatePremiumInstanceRequestBody:
     def params(self, params):
         r"""Sets the params of this UpdatePremiumInstanceRequestBody.
 
-        具体的请求体
+        **参数解释：**  具体的请求参数，操作为upgrade（升级） ，rollback（升级后回滚）时无需填写，操作位 security_groups（切换安全组）时，参数为安全组的ip数组 **取值范围：** 不涉及
 
         :param params: The params of this UpdatePremiumInstanceRequestBody.
         :type params: list[str]

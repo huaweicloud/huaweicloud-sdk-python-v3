@@ -641,9 +641,9 @@ class CssClient(Client):
         return http_info
 
     def create_elb_listener(self, request):
-        r"""es监听器配置。
+        r"""集群负载均衡监听器配置。
 
-        该接口用于es监听器配置。
+        该接口用于集群负载均衡监听器配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1305,9 +1305,9 @@ class CssClient(Client):
         return http_info
 
     def enable_or_disable_elb(self, request):
-        r"""打开或关闭es负载均衡器
+        r"""为集群打开或关闭负载均衡器
 
-        该接口打开或关闭es负载均衡器。
+        该接口为集群打开或关闭负载均衡器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1768,7 +1768,7 @@ class CssClient(Client):
         return http_info
 
     def list_images(self, request):
-        r"""获取目标镜像ID
+        r"""获取可升级的目标镜像ID
 
         该接口用于获取当前集群的可升级目标镜像ID。
         
@@ -2639,9 +2639,9 @@ class CssClient(Client):
         return http_info
 
     def show_elb_detail(self, request):
-        r"""获取该esELB的信息，以及页面需要展示健康检查状态
+        r"""获取集群的负载均衡器信息
 
-        该接口用于获取该esELB的信息，以及页面需要展示健康检查状态。
+        该接口用于获取集群的负载均衡器信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3911,9 +3911,9 @@ class CssClient(Client):
         return http_info
 
     def update_es_listener(self, request):
-        r"""更新es监听器
+        r"""更新集群负载均衡监听器
 
-        该接口用于更新es监听器。
+        该接口用于更新集群负载均衡监听器。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5068,7 +5068,7 @@ class CssClient(Client):
         return http_info
 
     def upgrade_detail(self, request):
-        r"""获取升级详情信息
+        r"""获取集群升级或切换AZ的详情信息
 
         由于升级过程时间较长，该接口可以展示当前升级（切换AZ）节点的各个阶段信息。
         

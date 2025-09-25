@@ -29,7 +29,9 @@ class GetUpgradeDetailInfo:
         'execute_times': 'str',
         'migrate_param': 'str',
         'final_az_info_map': 'str',
-        'current_node_detail': 'list[CurrentNodeDetail]'
+        'current_node_detail': 'list[CurrentNodeDetail]',
+        'batch_size': 'int',
+        'current_batch_nodes': 'str'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class GetUpgradeDetailInfo:
         'execute_times': 'executeTimes',
         'migrate_param': 'migrateParam',
         'final_az_info_map': 'finalAzInfoMap',
-        'current_node_detail': 'currentNodeDetail'
+        'current_node_detail': 'currentNodeDetail',
+        'batch_size': 'batchSize',
+        'current_batch_nodes': 'currentBatchNodes'
     }
 
-    def __init__(self, id=None, start_time=None, end_time=None, status=None, agency_name=None, image_info=None, total_nodes=None, completed_nodes=None, current_node_name=None, execute_times=None, migrate_param=None, final_az_info_map=None, current_node_detail=None):
+    def __init__(self, id=None, start_time=None, end_time=None, status=None, agency_name=None, image_info=None, total_nodes=None, completed_nodes=None, current_node_name=None, execute_times=None, migrate_param=None, final_az_info_map=None, current_node_detail=None, batch_size=None, current_batch_nodes=None):
         r"""GetUpgradeDetailInfo
 
         The model defined in huaweicloud sdk
@@ -79,6 +83,10 @@ class GetUpgradeDetailInfo:
         :type final_az_info_map: str
         :param current_node_detail: 
         :type current_node_detail: list[:class:`huaweicloudsdkcss.v1.CurrentNodeDetail`]
+        :param batch_size: 同时有多少个节点在迁移数据。
+        :type batch_size: int
+        :param current_batch_nodes: 当前正在迁移数据的节点。
+        :type current_batch_nodes: str
         """
         
         
@@ -96,6 +104,8 @@ class GetUpgradeDetailInfo:
         self._migrate_param = None
         self._final_az_info_map = None
         self._current_node_detail = None
+        self._batch_size = None
+        self._current_batch_nodes = None
         self.discriminator = None
 
         if id is not None:
@@ -124,6 +134,10 @@ class GetUpgradeDetailInfo:
             self.final_az_info_map = final_az_info_map
         if current_node_detail is not None:
             self.current_node_detail = current_node_detail
+        if batch_size is not None:
+            self.batch_size = batch_size
+        if current_batch_nodes is not None:
+            self.current_batch_nodes = current_batch_nodes
 
     @property
     def id(self):
@@ -402,6 +416,50 @@ class GetUpgradeDetailInfo:
         :type current_node_detail: list[:class:`huaweicloudsdkcss.v1.CurrentNodeDetail`]
         """
         self._current_node_detail = current_node_detail
+
+    @property
+    def batch_size(self):
+        r"""Gets the batch_size of this GetUpgradeDetailInfo.
+
+        同时有多少个节点在迁移数据。
+
+        :return: The batch_size of this GetUpgradeDetailInfo.
+        :rtype: int
+        """
+        return self._batch_size
+
+    @batch_size.setter
+    def batch_size(self, batch_size):
+        r"""Sets the batch_size of this GetUpgradeDetailInfo.
+
+        同时有多少个节点在迁移数据。
+
+        :param batch_size: The batch_size of this GetUpgradeDetailInfo.
+        :type batch_size: int
+        """
+        self._batch_size = batch_size
+
+    @property
+    def current_batch_nodes(self):
+        r"""Gets the current_batch_nodes of this GetUpgradeDetailInfo.
+
+        当前正在迁移数据的节点。
+
+        :return: The current_batch_nodes of this GetUpgradeDetailInfo.
+        :rtype: str
+        """
+        return self._current_batch_nodes
+
+    @current_batch_nodes.setter
+    def current_batch_nodes(self, current_batch_nodes):
+        r"""Sets the current_batch_nodes of this GetUpgradeDetailInfo.
+
+        当前正在迁移数据的节点。
+
+        :param current_batch_nodes: The current_batch_nodes of this GetUpgradeDetailInfo.
+        :type current_batch_nodes: str
+        """
+        self._current_batch_nodes = current_batch_nodes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

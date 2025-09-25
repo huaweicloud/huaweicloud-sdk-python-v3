@@ -20,6 +20,7 @@ class CreateAntiVirusPolicyRequestBody:
         'policy_name': 'str',
         'start_type': 'str',
         'scan_period': 'str',
+        'scan_type': 'str',
         'scan_period_date': 'int',
         'scan_time': 'int',
         'scan_hour': 'int',
@@ -38,6 +39,7 @@ class CreateAntiVirusPolicyRequestBody:
         'policy_name': 'policy_name',
         'start_type': 'start_type',
         'scan_period': 'scan_period',
+        'scan_type': 'scan_type',
         'scan_period_date': 'scan_period_date',
         'scan_time': 'scan_time',
         'scan_hour': 'scan_hour',
@@ -52,7 +54,7 @@ class CreateAntiVirusPolicyRequestBody:
         'host_ids': 'host_ids'
     }
 
-    def __init__(self, policy_name=None, start_type=None, scan_period=None, scan_period_date=None, scan_time=None, scan_hour=None, scan_minute=None, timezone_offset=None, file_types=None, scan_dir=None, ignore_dir=None, action=None, whether_paid_task=None, task_id=None, host_ids=None):
+    def __init__(self, policy_name=None, start_type=None, scan_period=None, scan_type=None, scan_period_date=None, scan_time=None, scan_hour=None, scan_minute=None, timezone_offset=None, file_types=None, scan_dir=None, ignore_dir=None, action=None, whether_paid_task=None, task_id=None, host_ids=None):
         r"""CreateAntiVirusPolicyRequestBody
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class CreateAntiVirusPolicyRequestBody:
         :type start_type: str
         :param scan_period: 启动类型，包含如下:   - day ：每天   - week : 每周   - month : 每月
         :type scan_period: str
+        :param scan_type: 任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        :type scan_type: str
         :param scan_period_date: 扫描周期日期（1-28；扫描周期为week时，1-7代表周日至周六；扫描周期为month时，1-28代表每月1日到28日）
         :type scan_period_date: int
         :param scan_time: 扫描时间戳，毫秒（仅启动类型为later时有值）
@@ -94,6 +98,7 @@ class CreateAntiVirusPolicyRequestBody:
         self._policy_name = None
         self._start_type = None
         self._scan_period = None
+        self._scan_type = None
         self._scan_period_date = None
         self._scan_time = None
         self._scan_hour = None
@@ -112,6 +117,8 @@ class CreateAntiVirusPolicyRequestBody:
         self.start_type = start_type
         if scan_period is not None:
             self.scan_period = scan_period
+        if scan_type is not None:
+            self.scan_type = scan_type
         if scan_period_date is not None:
             self.scan_period_date = scan_period_date
         if scan_time is not None:
@@ -198,6 +205,28 @@ class CreateAntiVirusPolicyRequestBody:
         :type scan_period: str
         """
         self._scan_period = scan_period
+
+    @property
+    def scan_type(self):
+        r"""Gets the scan_type of this CreateAntiVirusPolicyRequestBody.
+
+        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+
+        :return: The scan_type of this CreateAntiVirusPolicyRequestBody.
+        :rtype: str
+        """
+        return self._scan_type
+
+    @scan_type.setter
+    def scan_type(self, scan_type):
+        r"""Sets the scan_type of this CreateAntiVirusPolicyRequestBody.
+
+        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+
+        :param scan_type: The scan_type of this CreateAntiVirusPolicyRequestBody.
+        :type scan_type: str
+        """
+        self._scan_type = scan_type
 
     @property
     def scan_period_date(self):

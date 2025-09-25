@@ -49,7 +49,7 @@ class ProxyFlavor:
         :type db_type: str
         :param az_status: **参数解释**：  az状态。
         :type az_status: object
-        :param supported_ipv6: **参数解释**：  是否支持ipv6。  **取值范围**： - true: 支持ipv6。 - false: 不支持ipv6。
+        :param supported_ipv6: **参数解释**：  是否支持ipv6。  **取值范围**：  - true: 支持ipv6。 - false: 不支持ipv6。
         :type supported_ipv6: bool
         """
         
@@ -190,7 +190,7 @@ class ProxyFlavor:
     def supported_ipv6(self):
         r"""Gets the supported_ipv6 of this ProxyFlavor.
 
-        **参数解释**：  是否支持ipv6。  **取值范围**： - true: 支持ipv6。 - false: 不支持ipv6。
+        **参数解释**：  是否支持ipv6。  **取值范围**：  - true: 支持ipv6。 - false: 不支持ipv6。
 
         :return: The supported_ipv6 of this ProxyFlavor.
         :rtype: bool
@@ -201,7 +201,7 @@ class ProxyFlavor:
     def supported_ipv6(self, supported_ipv6):
         r"""Sets the supported_ipv6 of this ProxyFlavor.
 
-        **参数解释**：  是否支持ipv6。  **取值范围**： - true: 支持ipv6。 - false: 不支持ipv6。
+        **参数解释**：  是否支持ipv6。  **取值范围**：  - true: 支持ipv6。 - false: 不支持ipv6。
 
         :param supported_ipv6: The supported_ipv6 of this ProxyFlavor.
         :type supported_ipv6: bool

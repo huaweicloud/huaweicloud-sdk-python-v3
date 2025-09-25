@@ -19,10 +19,15 @@ class ImageDetailRsp:
     openapi_types = {
         'name': 'str',
         'id': 'str',
+        'eihealth_project_id': 'str',
+        'eihealth_project_name': 'str',
         'type': 'str',
         'chip_type': 'str',
         'description': 'str',
         'tags': 'list[str]',
+        'user_name': 'str',
+        'user_id': 'str',
+        'create_type': 'str',
         'create_time': 'str',
         'update_time': 'str',
         'source_project_name': 'str',
@@ -33,10 +38,15 @@ class ImageDetailRsp:
     attribute_map = {
         'name': 'name',
         'id': 'id',
+        'eihealth_project_id': 'eihealth_project_id',
+        'eihealth_project_name': 'eihealth_project_name',
         'type': 'type',
         'chip_type': 'chip_type',
         'description': 'description',
         'tags': 'tags',
+        'user_name': 'user_name',
+        'user_id': 'user_id',
+        'create_type': 'create_type',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'source_project_name': 'source_project_name',
@@ -44,7 +54,7 @@ class ImageDetailRsp:
         'source_resource_id': 'source_resource_id'
     }
 
-    def __init__(self, name=None, id=None, type=None, chip_type=None, description=None, tags=None, create_time=None, update_time=None, source_project_name=None, source_project_id=None, source_resource_id=None):
+    def __init__(self, name=None, id=None, eihealth_project_id=None, eihealth_project_name=None, type=None, chip_type=None, description=None, tags=None, user_name=None, user_id=None, create_type=None, create_time=None, update_time=None, source_project_name=None, source_project_id=None, source_resource_id=None):
         r"""ImageDetailRsp
 
         The model defined in huaweicloud sdk
@@ -53,6 +63,10 @@ class ImageDetailRsp:
         :type name: str
         :param id: 镜像ID
         :type id: str
+        :param eihealth_project_id: **参数解释**： 作业所属空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type eihealth_project_id: str
+        :param eihealth_project_name: **参数解释**： 作业所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type eihealth_project_name: str
         :param type: 镜像类型
         :type type: str
         :param chip_type: 镜像芯片类型
@@ -61,6 +75,12 @@ class ImageDetailRsp:
         :type description: str
         :param tags: 镜像版本列表
         :type tags: list[str]
+        :param user_name: **参数解释**： 创建镜像的用户名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type user_name: str
+        :param user_id: **参数解释**： 创建镜像的用户ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type user_id: str
+        :param create_type: **参数解释**： 创建方式。 **约束限制**： 不涉及 **取值范围**： * PLATFORM_CREATED: 平台创建 * SWR_SYNC: swr同步 **默认取值**： 不涉及 
+        :type create_type: str
         :param create_time: 镜像创建时间
         :type create_time: str
         :param update_time: 镜像更新时间
@@ -77,10 +97,15 @@ class ImageDetailRsp:
 
         self._name = None
         self._id = None
+        self._eihealth_project_id = None
+        self._eihealth_project_name = None
         self._type = None
         self._chip_type = None
         self._description = None
         self._tags = None
+        self._user_name = None
+        self._user_id = None
+        self._create_type = None
         self._create_time = None
         self._update_time = None
         self._source_project_name = None
@@ -92,6 +117,10 @@ class ImageDetailRsp:
             self.name = name
         if id is not None:
             self.id = id
+        if eihealth_project_id is not None:
+            self.eihealth_project_id = eihealth_project_id
+        if eihealth_project_name is not None:
+            self.eihealth_project_name = eihealth_project_name
         if type is not None:
             self.type = type
         if chip_type is not None:
@@ -100,6 +129,12 @@ class ImageDetailRsp:
             self.description = description
         if tags is not None:
             self.tags = tags
+        if user_name is not None:
+            self.user_name = user_name
+        if user_id is not None:
+            self.user_id = user_id
+        if create_type is not None:
+            self.create_type = create_type
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -154,6 +189,50 @@ class ImageDetailRsp:
         :type id: str
         """
         self._id = id
+
+    @property
+    def eihealth_project_id(self):
+        r"""Gets the eihealth_project_id of this ImageDetailRsp.
+
+        **参数解释**： 作业所属空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The eihealth_project_id of this ImageDetailRsp.
+        :rtype: str
+        """
+        return self._eihealth_project_id
+
+    @eihealth_project_id.setter
+    def eihealth_project_id(self, eihealth_project_id):
+        r"""Sets the eihealth_project_id of this ImageDetailRsp.
+
+        **参数解释**： 作业所属空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param eihealth_project_id: The eihealth_project_id of this ImageDetailRsp.
+        :type eihealth_project_id: str
+        """
+        self._eihealth_project_id = eihealth_project_id
+
+    @property
+    def eihealth_project_name(self):
+        r"""Gets the eihealth_project_name of this ImageDetailRsp.
+
+        **参数解释**： 作业所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The eihealth_project_name of this ImageDetailRsp.
+        :rtype: str
+        """
+        return self._eihealth_project_name
+
+    @eihealth_project_name.setter
+    def eihealth_project_name(self, eihealth_project_name):
+        r"""Sets the eihealth_project_name of this ImageDetailRsp.
+
+        **参数解释**： 作业所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param eihealth_project_name: The eihealth_project_name of this ImageDetailRsp.
+        :type eihealth_project_name: str
+        """
+        self._eihealth_project_name = eihealth_project_name
 
     @property
     def type(self):
@@ -242,6 +321,72 @@ class ImageDetailRsp:
         :type tags: list[str]
         """
         self._tags = tags
+
+    @property
+    def user_name(self):
+        r"""Gets the user_name of this ImageDetailRsp.
+
+        **参数解释**： 创建镜像的用户名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The user_name of this ImageDetailRsp.
+        :rtype: str
+        """
+        return self._user_name
+
+    @user_name.setter
+    def user_name(self, user_name):
+        r"""Sets the user_name of this ImageDetailRsp.
+
+        **参数解释**： 创建镜像的用户名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param user_name: The user_name of this ImageDetailRsp.
+        :type user_name: str
+        """
+        self._user_name = user_name
+
+    @property
+    def user_id(self):
+        r"""Gets the user_id of this ImageDetailRsp.
+
+        **参数解释**： 创建镜像的用户ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The user_id of this ImageDetailRsp.
+        :rtype: str
+        """
+        return self._user_id
+
+    @user_id.setter
+    def user_id(self, user_id):
+        r"""Sets the user_id of this ImageDetailRsp.
+
+        **参数解释**： 创建镜像的用户ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param user_id: The user_id of this ImageDetailRsp.
+        :type user_id: str
+        """
+        self._user_id = user_id
+
+    @property
+    def create_type(self):
+        r"""Gets the create_type of this ImageDetailRsp.
+
+        **参数解释**： 创建方式。 **约束限制**： 不涉及 **取值范围**： * PLATFORM_CREATED: 平台创建 * SWR_SYNC: swr同步 **默认取值**： 不涉及 
+
+        :return: The create_type of this ImageDetailRsp.
+        :rtype: str
+        """
+        return self._create_type
+
+    @create_type.setter
+    def create_type(self, create_type):
+        r"""Sets the create_type of this ImageDetailRsp.
+
+        **参数解释**： 创建方式。 **约束限制**： 不涉及 **取值范围**： * PLATFORM_CREATED: 平台创建 * SWR_SYNC: swr同步 **默认取值**： 不涉及 
+
+        :param create_type: The create_type of this ImageDetailRsp.
+        :type create_type: str
+        """
+        self._create_type = create_type
 
     @property
     def create_time(self):

@@ -7,6 +7,7 @@ from huaweicloudsdkbssintl.v2.bssintl_async_client import BssintlAsyncClient
 
 from huaweicloudsdkbssintl.v2.model.account_balance_v3 import AccountBalanceV3
 from huaweicloudsdkbssintl.v2.model.account_manager import AccountManager
+from huaweicloudsdkbssintl.v2.model.agent_pay_info_v2 import AgentPayInfoV2
 from huaweicloudsdkbssintl.v2.model.amount_infomation_v2 import AmountInfomationV2
 from huaweicloudsdkbssintl.v2.model.apply_enterprise_realname_auths_req import ApplyEnterpriseRealnameAuthsReq
 from huaweicloudsdkbssintl.v2.model.apply_individual_realname_auths_req import ApplyIndividualRealnameAuthsReq

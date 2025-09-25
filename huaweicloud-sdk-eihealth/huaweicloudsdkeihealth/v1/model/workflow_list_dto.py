@@ -19,6 +19,8 @@ class WorkflowListDto:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'eihealth_project_id': 'str',
+        'eihealth_project_name': 'str',
         'version': 'str',
         'summary': 'str',
         'description': 'str',
@@ -33,6 +35,8 @@ class WorkflowListDto:
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'eihealth_project_id': 'eihealth_project_id',
+        'eihealth_project_name': 'eihealth_project_name',
         'version': 'version',
         'summary': 'summary',
         'description': 'description',
@@ -44,7 +48,7 @@ class WorkflowListDto:
         'source_resource_id': 'source_resource_id'
     }
 
-    def __init__(self, id=None, name=None, version=None, summary=None, description=None, labels=None, create_time=None, update_time=None, user_name=None, source_project_name=None, source_resource_id=None):
+    def __init__(self, id=None, name=None, eihealth_project_id=None, eihealth_project_name=None, version=None, summary=None, description=None, labels=None, create_time=None, update_time=None, user_name=None, source_project_name=None, source_resource_id=None):
         r"""WorkflowListDto
 
         The model defined in huaweicloud sdk
@@ -53,6 +57,10 @@ class WorkflowListDto:
         :type id: str
         :param name: 流程名称
         :type name: str
+        :param eihealth_project_id: **参数解释**： 流程所属空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type eihealth_project_id: str
+        :param eihealth_project_name: **参数解释**： 流程所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type eihealth_project_name: str
         :param version: 流程版本
         :type version: str
         :param summary: 简短描述信息
@@ -77,6 +85,8 @@ class WorkflowListDto:
 
         self._id = None
         self._name = None
+        self._eihealth_project_id = None
+        self._eihealth_project_name = None
         self._version = None
         self._summary = None
         self._description = None
@@ -92,6 +102,10 @@ class WorkflowListDto:
             self.id = id
         if name is not None:
             self.name = name
+        if eihealth_project_id is not None:
+            self.eihealth_project_id = eihealth_project_id
+        if eihealth_project_name is not None:
+            self.eihealth_project_name = eihealth_project_name
         if version is not None:
             self.version = version
         if summary is not None:
@@ -154,6 +168,50 @@ class WorkflowListDto:
         :type name: str
         """
         self._name = name
+
+    @property
+    def eihealth_project_id(self):
+        r"""Gets the eihealth_project_id of this WorkflowListDto.
+
+        **参数解释**： 流程所属空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The eihealth_project_id of this WorkflowListDto.
+        :rtype: str
+        """
+        return self._eihealth_project_id
+
+    @eihealth_project_id.setter
+    def eihealth_project_id(self, eihealth_project_id):
+        r"""Sets the eihealth_project_id of this WorkflowListDto.
+
+        **参数解释**： 流程所属空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param eihealth_project_id: The eihealth_project_id of this WorkflowListDto.
+        :type eihealth_project_id: str
+        """
+        self._eihealth_project_id = eihealth_project_id
+
+    @property
+    def eihealth_project_name(self):
+        r"""Gets the eihealth_project_name of this WorkflowListDto.
+
+        **参数解释**： 流程所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The eihealth_project_name of this WorkflowListDto.
+        :rtype: str
+        """
+        return self._eihealth_project_name
+
+    @eihealth_project_name.setter
+    def eihealth_project_name(self, eihealth_project_name):
+        r"""Sets the eihealth_project_name of this WorkflowListDto.
+
+        **参数解释**： 流程所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param eihealth_project_name: The eihealth_project_name of this WorkflowListDto.
+        :type eihealth_project_name: str
+        """
+        self._eihealth_project_name = eihealth_project_name
 
     @property
     def version(self):

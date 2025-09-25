@@ -39,7 +39,7 @@ class WeakPwdAccountInfoResponseInfo:
 
         :param user_name: **参数解释**: 弱口令账号名称 **取值范围**: 不涉及 
         :type user_name: str
-        :param service_type: **参数解释**: 账号类型 **取值范围**: - system : 系统账号 - mysql  : mysql账号 - redis  : redis账号 
+        :param service_type: **参数解释**: 账号类型 **取值范围**: - system : 系统账号 - mysql : mysql账号 - redis : redis账号 - tomcat : tomcat账号 - ftp : ftp账号 
         :type service_type: str
         :param duration: **参数解释**: 弱口令使用时长，单位天 **取值范围**: 不涉及 
         :type duration: int
@@ -95,7 +95,7 @@ class WeakPwdAccountInfoResponseInfo:
     def service_type(self):
         r"""Gets the service_type of this WeakPwdAccountInfoResponseInfo.
 
-        **参数解释**: 账号类型 **取值范围**: - system : 系统账号 - mysql  : mysql账号 - redis  : redis账号 
+        **参数解释**: 账号类型 **取值范围**: - system : 系统账号 - mysql : mysql账号 - redis : redis账号 - tomcat : tomcat账号 - ftp : ftp账号 
 
         :return: The service_type of this WeakPwdAccountInfoResponseInfo.
         :rtype: str
@@ -106,7 +106,7 @@ class WeakPwdAccountInfoResponseInfo:
     def service_type(self, service_type):
         r"""Sets the service_type of this WeakPwdAccountInfoResponseInfo.
 
-        **参数解释**: 账号类型 **取值范围**: - system : 系统账号 - mysql  : mysql账号 - redis  : redis账号 
+        **参数解释**: 账号类型 **取值范围**: - system : 系统账号 - mysql : mysql账号 - redis : redis账号 - tomcat : tomcat账号 - ftp : ftp账号 
 
         :param service_type: The service_type of this WeakPwdAccountInfoResponseInfo.
         :type service_type: str

@@ -95,7 +95,8 @@ class UpdateSnapshotSettingReq:
 
         self.bucket = bucket
         self.agency = agency
-        self.base_path = base_path
+        if base_path is not None:
+            self.base_path = base_path
         if max_snapshot_bytes_per_seconds is not None:
             self.max_snapshot_bytes_per_seconds = max_snapshot_bytes_per_seconds
         if max_restore_bytes_per_seconds is not None:

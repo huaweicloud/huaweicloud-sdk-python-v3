@@ -22,7 +22,8 @@ class LabelRsp:
         'description': 'str',
         'creator': 'str',
         'create_time': 'str',
-        'update_time': 'str'
+        'update_time': 'str',
+        'level': 'int'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class LabelRsp:
         'description': 'description',
         'creator': 'creator',
         'create_time': 'create_time',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'level': 'level'
     }
 
-    def __init__(self, id=None, name=None, description=None, creator=None, create_time=None, update_time=None):
+    def __init__(self, id=None, name=None, description=None, creator=None, create_time=None, update_time=None, level=None):
         r"""LabelRsp
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class LabelRsp:
         :type create_time: str
         :param update_time: 标签更新时间
         :type update_time: str
+        :param level: **参数解释**:  标签级别，用于前端颜色展示。   **约束限制**:  不涉及   **取值范围**:  不涉及 **默认取值**:  不涉及 
+        :type level: int
         """
         
         
@@ -61,6 +65,7 @@ class LabelRsp:
         self._creator = None
         self._create_time = None
         self._update_time = None
+        self._level = None
         self.discriminator = None
 
         if id is not None:
@@ -75,6 +80,8 @@ class LabelRsp:
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if level is not None:
+            self.level = level
 
     @property
     def id(self):
@@ -207,6 +214,28 @@ class LabelRsp:
         :type update_time: str
         """
         self._update_time = update_time
+
+    @property
+    def level(self):
+        r"""Gets the level of this LabelRsp.
+
+        **参数解释**:  标签级别，用于前端颜色展示。   **约束限制**:  不涉及   **取值范围**:  不涉及 **默认取值**:  不涉及 
+
+        :return: The level of this LabelRsp.
+        :rtype: int
+        """
+        return self._level
+
+    @level.setter
+    def level(self, level):
+        r"""Sets the level of this LabelRsp.
+
+        **参数解释**:  标签级别，用于前端颜色展示。   **约束限制**:  不涉及   **取值范围**:  不涉及 **默认取值**:  不涉及 
+
+        :param level: The level of this LabelRsp.
+        :type level: int
+        """
+        self._level = level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

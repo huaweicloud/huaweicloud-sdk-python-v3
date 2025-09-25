@@ -3095,6 +3095,71 @@ class CodeArtsBuildAsyncClient(Client):
 
         return http_info
 
+    def add_favourite_task_async(self, request):
+        r"""收藏任务
+
+        收藏任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddFavouriteTask
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.AddFavouriteTaskRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.AddFavouriteTaskResponse`
+        """
+        http_info = self._add_favourite_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_favourite_task_async_invoker(self, request):
+        http_info = self._add_favourite_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_favourite_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/job/{job_id}/follow",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddFavouriteTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def apply_project_permission_async(self, request):
         r"""任务是否使用项目级权限
 
@@ -4345,6 +4410,71 @@ class CodeArtsBuildAsyncClient(Client):
             query_params.append(('page_no', local_var_params['page_no']))
         if 'page_size' in local_var_params:
             query_params.append(('page_size', local_var_params['page_size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remover_favourite_task_async(self, request):
+        r"""取消收藏任务
+
+        取消收藏任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoverFavouriteTask
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.RemoverFavouriteTaskRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.RemoverFavouriteTaskResponse`
+        """
+        http_info = self._remover_favourite_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def remover_favourite_task_async_invoker(self, request):
+        http_info = self._remover_favourite_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remover_favourite_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/job/{job_id}/unfollow",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoverFavouriteTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -6486,6 +6616,223 @@ class CodeArtsBuildAsyncClient(Client):
 
         return http_info
 
+    def download_build_full_log_async(self, request):
+        r"""下载全量构建日志
+
+        下载全量构建日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadBuildFullLog
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.DownloadBuildFullLogRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.DownloadBuildFullLogResponse`
+        """
+        http_info = self._download_build_full_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_build_full_log_async_invoker(self, request):
+        http_info = self._download_build_full_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_build_full_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/log/{record_id}/download-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadBuildFullLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'record_id' in local_var_params:
+            path_params['record_id'] = local_var_params['record_id']
+
+        query_params = []
+        if 'log_level' in local_var_params:
+            query_params.append(('log_level', local_var_params['log_level']))
+        if 'compress' in local_var_params:
+            query_params.append(('compress', local_var_params['compress']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_build_real_time_log_async(self, request):
+        r"""获取运行全量日志
+
+        获取运行全量日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadBuildRealTimeLog
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.DownloadBuildRealTimeLogRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.DownloadBuildRealTimeLogResponse`
+        """
+        http_info = self._download_build_real_time_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_build_real_time_log_async_invoker(self, request):
+        http_info = self._download_build_real_time_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_build_real_time_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/log/{job_id}/{build_no}/real-time-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadBuildRealTimeLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'build_no' in local_var_params:
+            path_params['build_no'] = local_var_params['build_no']
+
+        query_params = []
+        if 'start_offset' in local_var_params:
+            query_params.append(('start_offset', local_var_params['start_offset']))
+        if 'end_offset' in local_var_params:
+            query_params.append(('end_offset', local_var_params['end_offset']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_action_i_info_async(self, request):
+        r"""任务执行后获取构建日志
+
+        任务执行后获取构建日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowActionIInfo
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.ShowActionIInfoRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.ShowActionIInfoResponse`
+        """
+        http_info = self._show_action_i_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_action_i_info_async_invoker(self, request):
+        http_info = self._show_action_i_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_action_i_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/log/stage/page",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowActionIInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'build_no' in local_var_params:
+            query_params.append(('build_no', local_var_params['build_no']))
+        if 'start_offset' in local_var_params:
+            query_params.append(('start_offset', local_var_params['start_offset']))
+        if 'end_offset' in local_var_params:
+            query_params.append(('end_offset', local_var_params['end_offset']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def download_log_by_record_id_async(self, request):
         r"""下载构建日志(待下线)
 
@@ -7977,6 +8324,71 @@ class CodeArtsBuildAsyncClient(Client):
 
         return http_info
 
+    def add_favourite_official_template_async(self, request):
+        r"""收藏官方模板
+
+        收藏官方模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddFavouriteOfficialTemplate
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.AddFavouriteOfficialTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.AddFavouriteOfficialTemplateResponse`
+        """
+        http_info = self._add_favourite_official_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_favourite_official_template_async_invoker(self, request):
+        http_info = self._add_favourite_official_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_favourite_official_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/template/official/{uuid}/follow",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddFavouriteOfficialTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'uuid' in local_var_params:
+            path_params['uuid'] = local_var_params['uuid']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_template_async(self, request):
         r"""创建构建模板
 
@@ -8339,6 +8751,71 @@ class CodeArtsBuildAsyncClient(Client):
             "resource_path": "/v1/template/custom/{uuid}/unfollow",
             "request_type": request.__class__.__name__,
             "response_type": "RemoverFavouriteCustomTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'uuid' in local_var_params:
+            path_params['uuid'] = local_var_params['uuid']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remover_favourite_official_template_async(self, request):
+        r"""取消收藏官方模板
+
+        取消收藏官方模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoverFavouriteOfficialTemplate
+        :type request: :class:`huaweicloudsdkcodeartsbuild.v3.RemoverFavouriteOfficialTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.RemoverFavouriteOfficialTemplateResponse`
+        """
+        http_info = self._remover_favourite_official_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def remover_favourite_official_template_async_invoker(self, request):
+        http_info = self._remover_favourite_official_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remover_favourite_official_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/template/official/{uuid}/unfollow",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoverFavouriteOfficialTemplateResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

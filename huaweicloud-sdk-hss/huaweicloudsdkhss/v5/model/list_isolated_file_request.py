@@ -79,9 +79,9 @@ class ListIsolatedFileRequest:
         :type isolation_status: str
         :param last_days: 查询时间范围天数，与自定义查询时间begin_time，end_time互斥
         :type last_days: int
-        :param begin_time: 自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        :param begin_time: 自定义查询时间，开始时间
         :type begin_time: int
-        :param end_time: 自定义时间，查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        :param end_time: 自定义查询时间，结束时间
         :type end_time: int
         """
         
@@ -400,7 +400,7 @@ class ListIsolatedFileRequest:
     def begin_time(self):
         r"""Gets the begin_time of this ListIsolatedFileRequest.
 
-        自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        自定义查询时间，开始时间
 
         :return: The begin_time of this ListIsolatedFileRequest.
         :rtype: int
@@ -411,7 +411,7 @@ class ListIsolatedFileRequest:
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this ListIsolatedFileRequest.
 
-        自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        自定义查询时间，开始时间
 
         :param begin_time: The begin_time of this ListIsolatedFileRequest.
         :type begin_time: int
@@ -422,7 +422,7 @@ class ListIsolatedFileRequest:
     def end_time(self):
         r"""Gets the end_time of this ListIsolatedFileRequest.
 
-        自定义时间，查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        自定义查询时间，结束时间
 
         :return: The end_time of this ListIsolatedFileRequest.
         :rtype: int
@@ -433,7 +433,7 @@ class ListIsolatedFileRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListIsolatedFileRequest.
 
-        自定义时间，查询时间段的终止时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        自定义查询时间，结束时间
 
         :param end_time: The end_time of this ListIsolatedFileRequest.
         :type end_time: int

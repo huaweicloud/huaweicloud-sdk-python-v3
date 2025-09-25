@@ -53,11 +53,11 @@ class SaveOrderBody:
 
         The model defined in huaweicloud sdk
 
-        :param number: 工单号，修改已保存的草稿时使用
+        :param number: 服务单号，修改已保存的草稿时使用
         :type number: str
         :param title: 标题
         :type title: str
-        :param model_code: 工单类型编码
+        :param model_code: 服务单类型编码
         :type model_code: str
         :param access_whitelist: 
         :type access_whitelist: :class:`huaweicloudsdkdcos.v1.AccessWhiteList`
@@ -126,7 +126,7 @@ class SaveOrderBody:
     def number(self):
         r"""Gets the number of this SaveOrderBody.
 
-        工单号，修改已保存的草稿时使用
+        服务单号，修改已保存的草稿时使用
 
         :return: The number of this SaveOrderBody.
         :rtype: str
@@ -137,7 +137,7 @@ class SaveOrderBody:
     def number(self, number):
         r"""Sets the number of this SaveOrderBody.
 
-        工单号，修改已保存的草稿时使用
+        服务单号，修改已保存的草稿时使用
 
         :param number: The number of this SaveOrderBody.
         :type number: str
@@ -170,7 +170,7 @@ class SaveOrderBody:
     def model_code(self):
         r"""Gets the model_code of this SaveOrderBody.
 
-        工单类型编码
+        服务单类型编码
 
         :return: The model_code of this SaveOrderBody.
         :rtype: str
@@ -181,7 +181,7 @@ class SaveOrderBody:
     def model_code(self, model_code):
         r"""Sets the model_code of this SaveOrderBody.
 
-        工单类型编码
+        服务单类型编码
 
         :param model_code: The model_code of this SaveOrderBody.
         :type model_code: str

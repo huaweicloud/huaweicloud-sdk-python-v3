@@ -42,7 +42,7 @@ class ShowRemoteBackupHostInfoResponse(SdkResponse):
         :type backup_host_id: str
         :param backup_host_name: 远端备份服务器的服务器名称
         :type backup_host_name: str
-        :param remote_backup: **参数解释** 服务器是否开启远端备份 **取值范围**  - true : 已开启远端备份。 - false: 未开启远端备份。
+        :param remote_backup: **参数解释** 服务器是否开启远端备份 **取值范围** - true : 已开启远端备份。 - false: 未开启远端备份。
         :type remote_backup: bool
         """
         
@@ -133,7 +133,7 @@ class ShowRemoteBackupHostInfoResponse(SdkResponse):
     def remote_backup(self):
         r"""Gets the remote_backup of this ShowRemoteBackupHostInfoResponse.
 
-        **参数解释** 服务器是否开启远端备份 **取值范围**  - true : 已开启远端备份。 - false: 未开启远端备份。
+        **参数解释** 服务器是否开启远端备份 **取值范围** - true : 已开启远端备份。 - false: 未开启远端备份。
 
         :return: The remote_backup of this ShowRemoteBackupHostInfoResponse.
         :rtype: bool
@@ -144,7 +144,7 @@ class ShowRemoteBackupHostInfoResponse(SdkResponse):
     def remote_backup(self, remote_backup):
         r"""Sets the remote_backup of this ShowRemoteBackupHostInfoResponse.
 
-        **参数解释** 服务器是否开启远端备份 **取值范围**  - true : 已开启远端备份。 - false: 未开启远端备份。
+        **参数解释** 服务器是否开启远端备份 **取值范围** - true : 已开启远端备份。 - false: 未开启远端备份。
 
         :param remote_backup: The remote_backup of this ShowRemoteBackupHostInfoResponse.
         :type remote_backup: bool

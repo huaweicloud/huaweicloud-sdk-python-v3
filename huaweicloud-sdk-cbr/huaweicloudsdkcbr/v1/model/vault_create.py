@@ -32,7 +32,8 @@ class VaultCreate:
         'backup_name_prefix': 'str',
         'demand_billing': 'bool',
         'sys_lock_source_service': 'str',
-        'locked': 'bool'
+        'locked': 'bool',
+        'availability_zone': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class VaultCreate:
         'backup_name_prefix': 'backup_name_prefix',
         'demand_billing': 'demand_billing',
         'sys_lock_source_service': 'sys_lock_source_service',
-        'locked': 'locked'
+        'locked': 'locked',
+        'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, threshold=None, smn_notify=None, backup_name_prefix=None, demand_billing=None, sys_lock_source_service=None, locked=None):
+    def __init__(self, backup_policy_id=None, billing=None, description=None, name=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, auto_expand=None, threshold=None, smn_notify=None, backup_name_prefix=None, demand_billing=None, sys_lock_source_service=None, locked=None, availability_zone=None):
         r"""VaultCreate
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class VaultCreate:
         :type sys_lock_source_service: str
         :param locked: 用于标识该存储库是否已锁定
         :type locked: bool
+        :param availability_zone: 存储库可用区信息，最大支持32字符。
+        :type availability_zone: str
         """
         
         
@@ -111,6 +115,7 @@ class VaultCreate:
         self._demand_billing = None
         self._sys_lock_source_service = None
         self._locked = None
+        self._availability_zone = None
         self.discriminator = None
 
         if backup_policy_id is not None:
@@ -142,6 +147,8 @@ class VaultCreate:
             self.sys_lock_source_service = sys_lock_source_service
         if locked is not None:
             self.locked = locked
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
 
     @property
     def backup_policy_id(self):
@@ -486,6 +493,28 @@ class VaultCreate:
         :type locked: bool
         """
         self._locked = locked
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this VaultCreate.
+
+        存储库可用区信息，最大支持32字符。
+
+        :return: The availability_zone of this VaultCreate.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this VaultCreate.
+
+        存储库可用区信息，最大支持32字符。
+
+        :param availability_zone: The availability_zone of this VaultCreate.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

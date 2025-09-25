@@ -30,7 +30,7 @@ class ShowWebTamperRaspPathResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param rasp_path: rasp path
+        :param rasp_path: **参数解释**: 动态网页防篡改的Tomcat bin目录 **取值范围**: 字符长度0-512位 
         :type rasp_path: str
         """
         
@@ -46,7 +46,7 @@ class ShowWebTamperRaspPathResponse(SdkResponse):
     def rasp_path(self):
         r"""Gets the rasp_path of this ShowWebTamperRaspPathResponse.
 
-        rasp path
+        **参数解释**: 动态网页防篡改的Tomcat bin目录 **取值范围**: 字符长度0-512位 
 
         :return: The rasp_path of this ShowWebTamperRaspPathResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class ShowWebTamperRaspPathResponse(SdkResponse):
     def rasp_path(self, rasp_path):
         r"""Sets the rasp_path of this ShowWebTamperRaspPathResponse.
 
-        rasp path
+        **参数解释**: 动态网页防篡改的Tomcat bin目录 **取值范围**: 字符长度0-512位 
 
         :param rasp_path: The rasp_path of this ShowWebTamperRaspPathResponse.
         :type rasp_path: str

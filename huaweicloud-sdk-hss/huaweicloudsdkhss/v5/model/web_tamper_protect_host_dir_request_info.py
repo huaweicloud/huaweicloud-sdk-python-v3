@@ -35,13 +35,13 @@ class WebTamperProtectHostDirRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param protect_dir: 防护目录
+        :param protect_dir: **参数解释**: 防护目录 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位。Linux服务器，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。Windows服务器，目录名不能包含;/*?\&quot;&lt;&gt;|，不能以空格开头，不能以\\结尾。 **默认取值**: 不涉及 
         :type protect_dir: str
-        :param exclude_child_dir: 排除子目录
+        :param exclude_child_dir: **参数解释**: 排除子目录 **约束限制**: 不涉及 **取值范围**: 子目录名必须是防护目录的有效相对路径，目录名最大长度不能超过256个字符，最多可添加10个子目录，多个子目录用;隔开。Linux服务器的子目录名不能以/开头或结尾，Windows服务器的子目录名不能以\\开头或结尾。 **默认取值**: 不涉及 
         :type exclude_child_dir: str
-        :param exclude_file_path: 排除文件路径
+        :param exclude_file_path: **参数解释**: 排除文件路径 **约束限制**: 仅Linux服务器支持填写排除文件路径，Windows服务器不可填写该字段。 **取值范围**: 排除文件路径必须是防护目录的有效相对路径，不能以/开头或结尾，文件路径最大长度不能超过256个字符；最多可添加50个文件路径，多个文件路径用;隔开。 **默认取值**: 不涉及 
         :type exclude_file_path: str
-        :param local_backup_dir: 本地备份路径
+        :param local_backup_dir: **参数解释**: 本地备份路径，Linux服务器必须填写该字段。 **约束限制**: 仅Linux服务器需要填写本地备份路径，Windows服务器不可填写该字段。 **取值范围**: 本地备份路径不能包含;字符，不能以空格开头，不能以/结尾，本地备份路径长度不得超过256个字符。 **默认取值**: 不涉及 
         :type local_backup_dir: str
         """
         
@@ -53,8 +53,7 @@ class WebTamperProtectHostDirRequestInfo:
         self._local_backup_dir = None
         self.discriminator = None
 
-        if protect_dir is not None:
-            self.protect_dir = protect_dir
+        self.protect_dir = protect_dir
         if exclude_child_dir is not None:
             self.exclude_child_dir = exclude_child_dir
         if exclude_file_path is not None:
@@ -66,7 +65,7 @@ class WebTamperProtectHostDirRequestInfo:
     def protect_dir(self):
         r"""Gets the protect_dir of this WebTamperProtectHostDirRequestInfo.
 
-        防护目录
+        **参数解释**: 防护目录 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位。Linux服务器，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。Windows服务器，目录名不能包含;/*?\"<>|，不能以空格开头，不能以\\结尾。 **默认取值**: 不涉及 
 
         :return: The protect_dir of this WebTamperProtectHostDirRequestInfo.
         :rtype: str
@@ -77,7 +76,7 @@ class WebTamperProtectHostDirRequestInfo:
     def protect_dir(self, protect_dir):
         r"""Sets the protect_dir of this WebTamperProtectHostDirRequestInfo.
 
-        防护目录
+        **参数解释**: 防护目录 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位。Linux服务器，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。Windows服务器，目录名不能包含;/*?\"<>|，不能以空格开头，不能以\\结尾。 **默认取值**: 不涉及 
 
         :param protect_dir: The protect_dir of this WebTamperProtectHostDirRequestInfo.
         :type protect_dir: str
@@ -88,7 +87,7 @@ class WebTamperProtectHostDirRequestInfo:
     def exclude_child_dir(self):
         r"""Gets the exclude_child_dir of this WebTamperProtectHostDirRequestInfo.
 
-        排除子目录
+        **参数解释**: 排除子目录 **约束限制**: 不涉及 **取值范围**: 子目录名必须是防护目录的有效相对路径，目录名最大长度不能超过256个字符，最多可添加10个子目录，多个子目录用;隔开。Linux服务器的子目录名不能以/开头或结尾，Windows服务器的子目录名不能以\\开头或结尾。 **默认取值**: 不涉及 
 
         :return: The exclude_child_dir of this WebTamperProtectHostDirRequestInfo.
         :rtype: str
@@ -99,7 +98,7 @@ class WebTamperProtectHostDirRequestInfo:
     def exclude_child_dir(self, exclude_child_dir):
         r"""Sets the exclude_child_dir of this WebTamperProtectHostDirRequestInfo.
 
-        排除子目录
+        **参数解释**: 排除子目录 **约束限制**: 不涉及 **取值范围**: 子目录名必须是防护目录的有效相对路径，目录名最大长度不能超过256个字符，最多可添加10个子目录，多个子目录用;隔开。Linux服务器的子目录名不能以/开头或结尾，Windows服务器的子目录名不能以\\开头或结尾。 **默认取值**: 不涉及 
 
         :param exclude_child_dir: The exclude_child_dir of this WebTamperProtectHostDirRequestInfo.
         :type exclude_child_dir: str
@@ -110,7 +109,7 @@ class WebTamperProtectHostDirRequestInfo:
     def exclude_file_path(self):
         r"""Gets the exclude_file_path of this WebTamperProtectHostDirRequestInfo.
 
-        排除文件路径
+        **参数解释**: 排除文件路径 **约束限制**: 仅Linux服务器支持填写排除文件路径，Windows服务器不可填写该字段。 **取值范围**: 排除文件路径必须是防护目录的有效相对路径，不能以/开头或结尾，文件路径最大长度不能超过256个字符；最多可添加50个文件路径，多个文件路径用;隔开。 **默认取值**: 不涉及 
 
         :return: The exclude_file_path of this WebTamperProtectHostDirRequestInfo.
         :rtype: str
@@ -121,7 +120,7 @@ class WebTamperProtectHostDirRequestInfo:
     def exclude_file_path(self, exclude_file_path):
         r"""Sets the exclude_file_path of this WebTamperProtectHostDirRequestInfo.
 
-        排除文件路径
+        **参数解释**: 排除文件路径 **约束限制**: 仅Linux服务器支持填写排除文件路径，Windows服务器不可填写该字段。 **取值范围**: 排除文件路径必须是防护目录的有效相对路径，不能以/开头或结尾，文件路径最大长度不能超过256个字符；最多可添加50个文件路径，多个文件路径用;隔开。 **默认取值**: 不涉及 
 
         :param exclude_file_path: The exclude_file_path of this WebTamperProtectHostDirRequestInfo.
         :type exclude_file_path: str
@@ -132,7 +131,7 @@ class WebTamperProtectHostDirRequestInfo:
     def local_backup_dir(self):
         r"""Gets the local_backup_dir of this WebTamperProtectHostDirRequestInfo.
 
-        本地备份路径
+        **参数解释**: 本地备份路径，Linux服务器必须填写该字段。 **约束限制**: 仅Linux服务器需要填写本地备份路径，Windows服务器不可填写该字段。 **取值范围**: 本地备份路径不能包含;字符，不能以空格开头，不能以/结尾，本地备份路径长度不得超过256个字符。 **默认取值**: 不涉及 
 
         :return: The local_backup_dir of this WebTamperProtectHostDirRequestInfo.
         :rtype: str
@@ -143,7 +142,7 @@ class WebTamperProtectHostDirRequestInfo:
     def local_backup_dir(self, local_backup_dir):
         r"""Sets the local_backup_dir of this WebTamperProtectHostDirRequestInfo.
 
-        本地备份路径
+        **参数解释**: 本地备份路径，Linux服务器必须填写该字段。 **约束限制**: 仅Linux服务器需要填写本地备份路径，Windows服务器不可填写该字段。 **取值范围**: 本地备份路径不能包含;字符，不能以空格开头，不能以/结尾，本地备份路径长度不得超过256个字符。 **默认取值**: 不涉及 
 
         :param local_backup_dir: The local_backup_dir of this WebTamperProtectHostDirRequestInfo.
         :type local_backup_dir: str

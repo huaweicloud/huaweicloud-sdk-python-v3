@@ -23,9 +23,13 @@ class ShowIkThesaurusResponse(SdkResponse):
         'main_obj': 'str',
         'stop_obj': 'str',
         'synonym_obj': 'str',
+        'static_main_obj': 'str',
+        'static_stop_obj': 'str',
+        'extra_main_obj': 'str',
+        'extra_stop_obj': 'str',
+        'update_time': 'str',
         'update_details': 'str',
         'cluster_id': 'str',
-        'operate_status': 'str',
         'id': 'str'
     }
 
@@ -35,13 +39,17 @@ class ShowIkThesaurusResponse(SdkResponse):
         'main_obj': 'mainObj',
         'stop_obj': 'stopObj',
         'synonym_obj': 'synonymObj',
+        'static_main_obj': 'staticMainObj',
+        'static_stop_obj': 'staticStopObj',
+        'extra_main_obj': 'extraMainObj',
+        'extra_stop_obj': 'extraStopObj',
+        'update_time': 'updateTime',
         'update_details': 'updateDetails',
         'cluster_id': 'clusterId',
-        'operate_status': 'operateStatus',
         'id': 'id'
     }
 
-    def __init__(self, status=None, bucket=None, main_obj=None, stop_obj=None, synonym_obj=None, update_details=None, cluster_id=None, operate_status=None, id=None):
+    def __init__(self, status=None, bucket=None, main_obj=None, stop_obj=None, synonym_obj=None, static_main_obj=None, static_stop_obj=None, extra_main_obj=None, extra_stop_obj=None, update_time=None, update_details=None, cluster_id=None, id=None):
         r"""ShowIkThesaurusResponse
 
         The model defined in huaweicloud sdk
@@ -56,12 +64,20 @@ class ShowIkThesaurusResponse(SdkResponse):
         :type stop_obj: str
         :param synonym_obj: 同义词词库文件对象。
         :type synonym_obj: str
+        :param static_main_obj: 静态主词词库文件对象。
+        :type static_main_obj: str
+        :param static_stop_obj: 静态主词词库文件对象。
+        :type static_stop_obj: str
+        :param extra_main_obj: Extra主词词库库文件对象。
+        :type extra_main_obj: str
+        :param extra_stop_obj: Extra停词词库对象。
+        :type extra_stop_obj: str
+        :param update_time: 词库最近更新时间。
+        :type update_time: str
         :param update_details: 更新详情。
         :type update_details: str
         :param cluster_id: 指定配置自定义词库的集群ID。
         :type cluster_id: str
-        :param operate_status: 操作状态。
-        :type operate_status: str
         :param id: 词库的ID。
         :type id: str
         """
@@ -73,9 +89,13 @@ class ShowIkThesaurusResponse(SdkResponse):
         self._main_obj = None
         self._stop_obj = None
         self._synonym_obj = None
+        self._static_main_obj = None
+        self._static_stop_obj = None
+        self._extra_main_obj = None
+        self._extra_stop_obj = None
+        self._update_time = None
         self._update_details = None
         self._cluster_id = None
-        self._operate_status = None
         self._id = None
         self.discriminator = None
 
@@ -89,12 +109,20 @@ class ShowIkThesaurusResponse(SdkResponse):
             self.stop_obj = stop_obj
         if synonym_obj is not None:
             self.synonym_obj = synonym_obj
+        if static_main_obj is not None:
+            self.static_main_obj = static_main_obj
+        if static_stop_obj is not None:
+            self.static_stop_obj = static_stop_obj
+        if extra_main_obj is not None:
+            self.extra_main_obj = extra_main_obj
+        if extra_stop_obj is not None:
+            self.extra_stop_obj = extra_stop_obj
+        if update_time is not None:
+            self.update_time = update_time
         if update_details is not None:
             self.update_details = update_details
         if cluster_id is not None:
             self.cluster_id = cluster_id
-        if operate_status is not None:
-            self.operate_status = operate_status
         if id is not None:
             self.id = id
 
@@ -209,6 +237,116 @@ class ShowIkThesaurusResponse(SdkResponse):
         self._synonym_obj = synonym_obj
 
     @property
+    def static_main_obj(self):
+        r"""Gets the static_main_obj of this ShowIkThesaurusResponse.
+
+        静态主词词库文件对象。
+
+        :return: The static_main_obj of this ShowIkThesaurusResponse.
+        :rtype: str
+        """
+        return self._static_main_obj
+
+    @static_main_obj.setter
+    def static_main_obj(self, static_main_obj):
+        r"""Sets the static_main_obj of this ShowIkThesaurusResponse.
+
+        静态主词词库文件对象。
+
+        :param static_main_obj: The static_main_obj of this ShowIkThesaurusResponse.
+        :type static_main_obj: str
+        """
+        self._static_main_obj = static_main_obj
+
+    @property
+    def static_stop_obj(self):
+        r"""Gets the static_stop_obj of this ShowIkThesaurusResponse.
+
+        静态主词词库文件对象。
+
+        :return: The static_stop_obj of this ShowIkThesaurusResponse.
+        :rtype: str
+        """
+        return self._static_stop_obj
+
+    @static_stop_obj.setter
+    def static_stop_obj(self, static_stop_obj):
+        r"""Sets the static_stop_obj of this ShowIkThesaurusResponse.
+
+        静态主词词库文件对象。
+
+        :param static_stop_obj: The static_stop_obj of this ShowIkThesaurusResponse.
+        :type static_stop_obj: str
+        """
+        self._static_stop_obj = static_stop_obj
+
+    @property
+    def extra_main_obj(self):
+        r"""Gets the extra_main_obj of this ShowIkThesaurusResponse.
+
+        Extra主词词库库文件对象。
+
+        :return: The extra_main_obj of this ShowIkThesaurusResponse.
+        :rtype: str
+        """
+        return self._extra_main_obj
+
+    @extra_main_obj.setter
+    def extra_main_obj(self, extra_main_obj):
+        r"""Sets the extra_main_obj of this ShowIkThesaurusResponse.
+
+        Extra主词词库库文件对象。
+
+        :param extra_main_obj: The extra_main_obj of this ShowIkThesaurusResponse.
+        :type extra_main_obj: str
+        """
+        self._extra_main_obj = extra_main_obj
+
+    @property
+    def extra_stop_obj(self):
+        r"""Gets the extra_stop_obj of this ShowIkThesaurusResponse.
+
+        Extra停词词库对象。
+
+        :return: The extra_stop_obj of this ShowIkThesaurusResponse.
+        :rtype: str
+        """
+        return self._extra_stop_obj
+
+    @extra_stop_obj.setter
+    def extra_stop_obj(self, extra_stop_obj):
+        r"""Sets the extra_stop_obj of this ShowIkThesaurusResponse.
+
+        Extra停词词库对象。
+
+        :param extra_stop_obj: The extra_stop_obj of this ShowIkThesaurusResponse.
+        :type extra_stop_obj: str
+        """
+        self._extra_stop_obj = extra_stop_obj
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this ShowIkThesaurusResponse.
+
+        词库最近更新时间。
+
+        :return: The update_time of this ShowIkThesaurusResponse.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this ShowIkThesaurusResponse.
+
+        词库最近更新时间。
+
+        :param update_time: The update_time of this ShowIkThesaurusResponse.
+        :type update_time: str
+        """
+        self._update_time = update_time
+
+    @property
     def update_details(self):
         r"""Gets the update_details of this ShowIkThesaurusResponse.
 
@@ -251,28 +389,6 @@ class ShowIkThesaurusResponse(SdkResponse):
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
-
-    @property
-    def operate_status(self):
-        r"""Gets the operate_status of this ShowIkThesaurusResponse.
-
-        操作状态。
-
-        :return: The operate_status of this ShowIkThesaurusResponse.
-        :rtype: str
-        """
-        return self._operate_status
-
-    @operate_status.setter
-    def operate_status(self, operate_status):
-        r"""Sets the operate_status of this ShowIkThesaurusResponse.
-
-        操作状态。
-
-        :param operate_status: The operate_status of this ShowIkThesaurusResponse.
-        :type operate_status: str
-        """
-        self._operate_status = operate_status
 
     @property
     def id(self):

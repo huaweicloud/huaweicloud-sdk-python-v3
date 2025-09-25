@@ -38,8 +38,7 @@ class AddHbaConfRequestBody:
         self._hba_confs = None
         self.discriminator = None
 
-        if hba_confs is not None:
-            self.hba_confs = hba_confs
+        self.hba_confs = hba_confs
 
     @property
     def hba_confs(self):

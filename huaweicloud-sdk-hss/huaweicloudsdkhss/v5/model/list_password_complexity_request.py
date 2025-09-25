@@ -49,7 +49,7 @@ class ListPasswordComplexityRequest:
         :type host_ip: str
         :param host_id: **参数解释**: 主机id，不赋值时，查租户所有主机 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 0 
         :type host_id: str
-        :param result_type: **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - unhandled : 未忽略的 - ignored   : 已忽略的 **默认取值**: unhandled 
+        :param result_type: **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - unhandled : 未处理 - ignored   : 已忽略  **默认取值**: unhandled 
         :type result_type: str
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
@@ -175,7 +175,7 @@ class ListPasswordComplexityRequest:
     def result_type(self):
         r"""Gets the result_type of this ListPasswordComplexityRequest.
 
-        **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - unhandled : 未忽略的 - ignored   : 已忽略的 **默认取值**: unhandled 
+        **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - unhandled : 未处理 - ignored   : 已忽略  **默认取值**: unhandled 
 
         :return: The result_type of this ListPasswordComplexityRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ListPasswordComplexityRequest:
     def result_type(self, result_type):
         r"""Sets the result_type of this ListPasswordComplexityRequest.
 
-        **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - unhandled : 未忽略的 - ignored   : 已忽略的 **默认取值**: unhandled 
+        **参数解释**: 结果类型 **约束限制**: 不涉及 **取值范围**: - unhandled : 未处理 - ignored   : 已忽略  **默认取值**: unhandled 
 
         :param result_type: The result_type of this ListPasswordComplexityRequest.
         :type result_type: str

@@ -43,15 +43,15 @@ class UpdateWebTamperHostPolicyRequestInfo:
 
         :param protect_dir_info: 
         :type protect_dir_info: :class:`huaweicloudsdkhss.v5.WebTamperProtectDirRequestInfo`
-        :param enable_timing_off: 定时开关状态
+        :param enable_timing_off: **参数解释**: 定时开关设置状态 **约束限制**: 不涉及 **取值范围**: - True ：开启定时关闭防护功能，必须填写timing_off_config_info。 - False ：关闭定时关闭防护功能，无需填写timing_off_config_info。  **默认取值**: False 
         :type enable_timing_off: bool
         :param timing_off_config_info: 
         :type timing_off_config_info: :class:`huaweicloudsdkhss.v5.WebTamperTimingOffConfigInfoRequestInfo`
-        :param enable_rasp_protect: 动态网页防篡改开启状态
+        :param enable_rasp_protect: **参数解释**: 动态网页防篡改开启状态，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持开启动态网页防篡改，Windows服务器不可填写该字段。 **取值范围**: - True ：开启动态网页防篡改，必须填写rasp_path。 - False ：关闭动态网页防篡改，无需填写rasp_path。  **默认取值**: False 
         :type enable_rasp_protect: bool
-        :param rasp_path: 动态网页防篡改的Tomcat bin目录
+        :param rasp_path: **参数解释**: 动态网页防篡改的Tomcat bin目录，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持配置动态网页防篡改的Tomcat bin目录，Windows服务器不可填写该字段。 **取值范围**: 字符长度1-256位，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。 **默认取值**: 不涉及 
         :type rasp_path: str
-        :param enable_privileged_process: 特权进程状态
+        :param enable_privileged_process: **参数解释**: 特权进程开启状态 **约束限制**: 不涉及 **取值范围**: - True ：开启特权进程，必须填写privileged_process_info。 - False ：关闭特权进程，无需填写privileged_process_info。  **默认取值**: False 
         :type enable_privileged_process: bool
         :param privileged_process_info: 
         :type privileged_process_info: :class:`huaweicloudsdkhss.v5.WebTamperPrivilegedProcessRequestInfo`
@@ -68,8 +68,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
         self._privileged_process_info = None
         self.discriminator = None
 
-        if protect_dir_info is not None:
-            self.protect_dir_info = protect_dir_info
+        self.protect_dir_info = protect_dir_info
         if enable_timing_off is not None:
             self.enable_timing_off = enable_timing_off
         if timing_off_config_info is not None:
@@ -105,7 +104,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
     def enable_timing_off(self):
         r"""Gets the enable_timing_off of this UpdateWebTamperHostPolicyRequestInfo.
 
-        定时开关状态
+        **参数解释**: 定时开关设置状态 **约束限制**: 不涉及 **取值范围**: - True ：开启定时关闭防护功能，必须填写timing_off_config_info。 - False ：关闭定时关闭防护功能，无需填写timing_off_config_info。  **默认取值**: False 
 
         :return: The enable_timing_off of this UpdateWebTamperHostPolicyRequestInfo.
         :rtype: bool
@@ -116,7 +115,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
     def enable_timing_off(self, enable_timing_off):
         r"""Sets the enable_timing_off of this UpdateWebTamperHostPolicyRequestInfo.
 
-        定时开关状态
+        **参数解释**: 定时开关设置状态 **约束限制**: 不涉及 **取值范围**: - True ：开启定时关闭防护功能，必须填写timing_off_config_info。 - False ：关闭定时关闭防护功能，无需填写timing_off_config_info。  **默认取值**: False 
 
         :param enable_timing_off: The enable_timing_off of this UpdateWebTamperHostPolicyRequestInfo.
         :type enable_timing_off: bool
@@ -145,7 +144,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
     def enable_rasp_protect(self):
         r"""Gets the enable_rasp_protect of this UpdateWebTamperHostPolicyRequestInfo.
 
-        动态网页防篡改开启状态
+        **参数解释**: 动态网页防篡改开启状态，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持开启动态网页防篡改，Windows服务器不可填写该字段。 **取值范围**: - True ：开启动态网页防篡改，必须填写rasp_path。 - False ：关闭动态网页防篡改，无需填写rasp_path。  **默认取值**: False 
 
         :return: The enable_rasp_protect of this UpdateWebTamperHostPolicyRequestInfo.
         :rtype: bool
@@ -156,7 +155,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
     def enable_rasp_protect(self, enable_rasp_protect):
         r"""Sets the enable_rasp_protect of this UpdateWebTamperHostPolicyRequestInfo.
 
-        动态网页防篡改开启状态
+        **参数解释**: 动态网页防篡改开启状态，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持开启动态网页防篡改，Windows服务器不可填写该字段。 **取值范围**: - True ：开启动态网页防篡改，必须填写rasp_path。 - False ：关闭动态网页防篡改，无需填写rasp_path。  **默认取值**: False 
 
         :param enable_rasp_protect: The enable_rasp_protect of this UpdateWebTamperHostPolicyRequestInfo.
         :type enable_rasp_protect: bool
@@ -167,7 +166,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
     def rasp_path(self):
         r"""Gets the rasp_path of this UpdateWebTamperHostPolicyRequestInfo.
 
-        动态网页防篡改的Tomcat bin目录
+        **参数解释**: 动态网页防篡改的Tomcat bin目录，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持配置动态网页防篡改的Tomcat bin目录，Windows服务器不可填写该字段。 **取值范围**: 字符长度1-256位，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。 **默认取值**: 不涉及 
 
         :return: The rasp_path of this UpdateWebTamperHostPolicyRequestInfo.
         :rtype: str
@@ -178,7 +177,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
     def rasp_path(self, rasp_path):
         r"""Sets the rasp_path of this UpdateWebTamperHostPolicyRequestInfo.
 
-        动态网页防篡改的Tomcat bin目录
+        **参数解释**: 动态网页防篡改的Tomcat bin目录，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持配置动态网页防篡改的Tomcat bin目录，Windows服务器不可填写该字段。 **取值范围**: 字符长度1-256位，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。 **默认取值**: 不涉及 
 
         :param rasp_path: The rasp_path of this UpdateWebTamperHostPolicyRequestInfo.
         :type rasp_path: str
@@ -189,7 +188,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
     def enable_privileged_process(self):
         r"""Gets the enable_privileged_process of this UpdateWebTamperHostPolicyRequestInfo.
 
-        特权进程状态
+        **参数解释**: 特权进程开启状态 **约束限制**: 不涉及 **取值范围**: - True ：开启特权进程，必须填写privileged_process_info。 - False ：关闭特权进程，无需填写privileged_process_info。  **默认取值**: False 
 
         :return: The enable_privileged_process of this UpdateWebTamperHostPolicyRequestInfo.
         :rtype: bool
@@ -200,7 +199,7 @@ class UpdateWebTamperHostPolicyRequestInfo:
     def enable_privileged_process(self, enable_privileged_process):
         r"""Sets the enable_privileged_process of this UpdateWebTamperHostPolicyRequestInfo.
 
-        特权进程状态
+        **参数解释**: 特权进程开启状态 **约束限制**: 不涉及 **取值范围**: - True ：开启特权进程，必须填写privileged_process_info。 - False ：关闭特权进程，无需填写privileged_process_info。  **默认取值**: False 
 
         :param enable_privileged_process: The enable_privileged_process of this UpdateWebTamperHostPolicyRequestInfo.
         :type enable_privileged_process: bool

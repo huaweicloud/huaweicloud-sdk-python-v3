@@ -31,9 +31,9 @@ class BotMDefenseLevel:
 
         The model defined in huaweicloud sdk
 
-        :param threshold: **参数解释：** 该防护等级对应的分数门限，达到该分数则触发对应防护动作。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param threshold: **参数解释：** 该防护等级对应的分数门限，触发当前防护等级的风险分数阈值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type threshold: int
-        :param defense_action: **参数解释：** 该防护等级对应的防护动作ID，标识触发后执行的动作（如101表示验证码）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param defense_action: **参数解释：** 该防护等级对应的防护动作ID，如101表示拦截、102表示放行等 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type defense_action: int
         """
         
@@ -52,7 +52,7 @@ class BotMDefenseLevel:
     def threshold(self):
         r"""Gets the threshold of this BotMDefenseLevel.
 
-        **参数解释：** 该防护等级对应的分数门限，达到该分数则触发对应防护动作。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 该防护等级对应的分数门限，触发当前防护等级的风险分数阈值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The threshold of this BotMDefenseLevel.
         :rtype: int
@@ -63,7 +63,7 @@ class BotMDefenseLevel:
     def threshold(self, threshold):
         r"""Sets the threshold of this BotMDefenseLevel.
 
-        **参数解释：** 该防护等级对应的分数门限，达到该分数则触发对应防护动作。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 该防护等级对应的分数门限，触发当前防护等级的风险分数阈值 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param threshold: The threshold of this BotMDefenseLevel.
         :type threshold: int
@@ -74,7 +74,7 @@ class BotMDefenseLevel:
     def defense_action(self):
         r"""Gets the defense_action of this BotMDefenseLevel.
 
-        **参数解释：** 该防护等级对应的防护动作ID，标识触发后执行的动作（如101表示验证码）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 该防护等级对应的防护动作ID，如101表示拦截、102表示放行等 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The defense_action of this BotMDefenseLevel.
         :rtype: int
@@ -85,7 +85,7 @@ class BotMDefenseLevel:
     def defense_action(self, defense_action):
         r"""Sets the defense_action of this BotMDefenseLevel.
 
-        **参数解释：** 该防护等级对应的防护动作ID，标识触发后执行的动作（如101表示验证码）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 该防护等级对应的防护动作ID，如101表示拦截、102表示放行等 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param defense_action: The defense_action of this BotMDefenseLevel.
         :type defense_action: int

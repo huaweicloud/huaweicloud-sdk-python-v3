@@ -32,9 +32,9 @@ class ShowHostAssetManualCollectStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param scan_status: 手动检测状态
+        :param scan_status: **参数解释**： 手动检测状态 **取值范围**： - neverscan：从未扫描过 - scanning：扫描中 - scanned：扫描完成 - failed：扫描失败 - longscanning：扫描超时
         :type scan_status: str
-        :param scanned_time: 检测完成时间
+        :param scanned_time: **参数解释**： 检测完成时间 **取值范围**： 最小值0，最大值2^63-1
         :type scanned_time: int
         """
         
@@ -53,7 +53,7 @@ class ShowHostAssetManualCollectStatusResponse(SdkResponse):
     def scan_status(self):
         r"""Gets the scan_status of this ShowHostAssetManualCollectStatusResponse.
 
-        手动检测状态
+        **参数解释**： 手动检测状态 **取值范围**： - neverscan：从未扫描过 - scanning：扫描中 - scanned：扫描完成 - failed：扫描失败 - longscanning：扫描超时
 
         :return: The scan_status of this ShowHostAssetManualCollectStatusResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowHostAssetManualCollectStatusResponse(SdkResponse):
     def scan_status(self, scan_status):
         r"""Sets the scan_status of this ShowHostAssetManualCollectStatusResponse.
 
-        手动检测状态
+        **参数解释**： 手动检测状态 **取值范围**： - neverscan：从未扫描过 - scanning：扫描中 - scanned：扫描完成 - failed：扫描失败 - longscanning：扫描超时
 
         :param scan_status: The scan_status of this ShowHostAssetManualCollectStatusResponse.
         :type scan_status: str
@@ -75,7 +75,7 @@ class ShowHostAssetManualCollectStatusResponse(SdkResponse):
     def scanned_time(self):
         r"""Gets the scanned_time of this ShowHostAssetManualCollectStatusResponse.
 
-        检测完成时间
+        **参数解释**： 检测完成时间 **取值范围**： 最小值0，最大值2^63-1
 
         :return: The scanned_time of this ShowHostAssetManualCollectStatusResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ShowHostAssetManualCollectStatusResponse(SdkResponse):
     def scanned_time(self, scanned_time):
         r"""Sets the scanned_time of this ShowHostAssetManualCollectStatusResponse.
 
-        检测完成时间
+        **参数解释**： 检测完成时间 **取值范围**： 最小值0，最大值2^63-1
 
         :param scanned_time: The scanned_time of this ShowHostAssetManualCollectStatusResponse.
         :type scanned_time: int

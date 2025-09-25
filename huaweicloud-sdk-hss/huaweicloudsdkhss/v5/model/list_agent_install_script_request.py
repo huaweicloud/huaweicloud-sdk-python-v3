@@ -77,8 +77,7 @@ class ListAgentInstallScriptRequest:
             self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if os_type is not None:
-            self.os_type = os_type
+        self.os_type = os_type
         self.os_arch = os_arch
         if outside_host is not None:
             self.outside_host = outside_host

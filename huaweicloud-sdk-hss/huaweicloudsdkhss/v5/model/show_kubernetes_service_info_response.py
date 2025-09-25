@@ -66,7 +66,7 @@ class ShowKubernetesServiceInfoResponse(SdkResponse):
         :type cluster_name: str
         :param labels: 标签
         :type labels: str
-        :param type: 服务类型（访问方式）
+        :param type: **参数解释**: 服务类型（访问方式） **约束限制**: 不涉及 **取值范围**:   - ClusterIP：仅内部可访问服务   - NodePort：通过NodePort对外暴露服务   - LoadBalancer：通过LoadBalancer对外暴露服务  **默认取值**: 不涉及 
         :type type: str
         :param cluster_ip: 集群IP
         :type cluster_ip: str
@@ -277,7 +277,7 @@ class ShowKubernetesServiceInfoResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowKubernetesServiceInfoResponse.
 
-        服务类型（访问方式）
+        **参数解释**: 服务类型（访问方式） **约束限制**: 不涉及 **取值范围**:   - ClusterIP：仅内部可访问服务   - NodePort：通过NodePort对外暴露服务   - LoadBalancer：通过LoadBalancer对外暴露服务  **默认取值**: 不涉及 
 
         :return: The type of this ShowKubernetesServiceInfoResponse.
         :rtype: str
@@ -288,7 +288,7 @@ class ShowKubernetesServiceInfoResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowKubernetesServiceInfoResponse.
 
-        服务类型（访问方式）
+        **参数解释**: 服务类型（访问方式） **约束限制**: 不涉及 **取值范围**:   - ClusterIP：仅内部可访问服务   - NodePort：通过NodePort对外暴露服务   - LoadBalancer：通过LoadBalancer对外暴露服务  **默认取值**: 不涉及 
 
         :param type: The type of this ShowKubernetesServiceInfoResponse.
         :type type: str

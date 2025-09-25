@@ -64,8 +64,7 @@ class ShowGlobalSlowSqlDetailRequestBody:
         self.discriminator = None
 
         self.instance_id = instance_id
-        if node_ids is not None:
-            self.node_ids = node_ids
+        self.node_ids = node_ids
         self.start_time = start_time
         self.end_time = end_time
         self.sql_id = sql_id

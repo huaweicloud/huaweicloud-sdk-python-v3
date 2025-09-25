@@ -20,6 +20,7 @@ class ChangeAntivirusPolicyRequestInfo:
         'policy_id': 'str',
         'policy_name': 'str',
         'start_type': 'str',
+        'scan_type': 'str',
         'scan_period': 'str',
         'scan_period_date': 'int',
         'scan_time': 'int',
@@ -38,6 +39,7 @@ class ChangeAntivirusPolicyRequestInfo:
         'policy_id': 'policy_id',
         'policy_name': 'policy_name',
         'start_type': 'start_type',
+        'scan_type': 'scan_type',
         'scan_period': 'scan_period',
         'scan_period_date': 'scan_period_date',
         'scan_time': 'scan_time',
@@ -52,7 +54,7 @@ class ChangeAntivirusPolicyRequestInfo:
         'host_ids': 'host_ids'
     }
 
-    def __init__(self, policy_id=None, policy_name=None, start_type=None, scan_period=None, scan_period_date=None, scan_time=None, scan_hour=None, scan_minute=None, timezone_offset=None, file_types=None, scan_dir=None, ignore_dir=None, action=None, whether_paid_task=None, host_ids=None):
+    def __init__(self, policy_id=None, policy_name=None, start_type=None, scan_type=None, scan_period=None, scan_period_date=None, scan_time=None, scan_hour=None, scan_minute=None, timezone_offset=None, file_types=None, scan_dir=None, ignore_dir=None, action=None, whether_paid_task=None, host_ids=None):
         r"""ChangeAntivirusPolicyRequestInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ChangeAntivirusPolicyRequestInfo:
         :type policy_name: str
         :param start_type: 启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
         :type start_type: str
+        :param scan_type: 任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        :type scan_type: str
         :param scan_period: 启动类型，包含如下:   - day ：每天   - week : 每周   - month : 每月
         :type scan_period: str
         :param scan_period_date: 扫描周期日期（1-28；扫描周期为week时，1-7代表周日至周六；扫描周期为month时，1-28代表每月1日到28日）
@@ -94,6 +98,7 @@ class ChangeAntivirusPolicyRequestInfo:
         self._policy_id = None
         self._policy_name = None
         self._start_type = None
+        self._scan_type = None
         self._scan_period = None
         self._scan_period_date = None
         self._scan_time = None
@@ -111,6 +116,8 @@ class ChangeAntivirusPolicyRequestInfo:
         self.policy_id = policy_id
         self.policy_name = policy_name
         self.start_type = start_type
+        if scan_type is not None:
+            self.scan_type = scan_type
         if scan_period is not None:
             self.scan_period = scan_period
         if scan_period_date is not None:
@@ -197,6 +204,28 @@ class ChangeAntivirusPolicyRequestInfo:
         :type start_type: str
         """
         self._start_type = start_type
+
+    @property
+    def scan_type(self):
+        r"""Gets the scan_type of this ChangeAntivirusPolicyRequestInfo.
+
+        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+
+        :return: The scan_type of this ChangeAntivirusPolicyRequestInfo.
+        :rtype: str
+        """
+        return self._scan_type
+
+    @scan_type.setter
+    def scan_type(self, scan_type):
+        r"""Sets the scan_type of this ChangeAntivirusPolicyRequestInfo.
+
+        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+
+        :param scan_type: The scan_type of this ChangeAntivirusPolicyRequestInfo.
+        :type scan_type: str
+        """
+        self._scan_type = scan_type
 
     @property
     def scan_period(self):

@@ -19,15 +19,17 @@ class ListImagesResponse(SdkResponse):
 
     openapi_types = {
         'need_upload_upgrade_plugin': 'bool',
-        'image_info_list': 'list[GetTargetImageIdDetail]'
+        'image_info_list': 'list[GetTargetImageIdDetail]',
+        'total_size': 'int'
     }
 
     attribute_map = {
         'need_upload_upgrade_plugin': 'needUploadUpgradePlugin',
-        'image_info_list': 'imageInfoList'
+        'image_info_list': 'imageInfoList',
+        'total_size': 'totalSize'
     }
 
-    def __init__(self, need_upload_upgrade_plugin=None, image_info_list=None):
+    def __init__(self, need_upload_upgrade_plugin=None, image_info_list=None, total_size=None):
         r"""ListImagesResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +38,23 @@ class ListImagesResponse(SdkResponse):
         :type need_upload_upgrade_plugin: bool
         :param image_info_list: 
         :type image_info_list: list[:class:`huaweicloudsdkcss.v1.GetTargetImageIdDetail`]
+        :param total_size: 目标镜像数量。
+        :type total_size: int
         """
         
         super(ListImagesResponse, self).__init__()
 
         self._need_upload_upgrade_plugin = None
         self._image_info_list = None
+        self._total_size = None
         self.discriminator = None
 
         if need_upload_upgrade_plugin is not None:
             self.need_upload_upgrade_plugin = need_upload_upgrade_plugin
         if image_info_list is not None:
             self.image_info_list = image_info_list
+        if total_size is not None:
+            self.total_size = total_size
 
     @property
     def need_upload_upgrade_plugin(self):
@@ -88,6 +95,28 @@ class ListImagesResponse(SdkResponse):
         :type image_info_list: list[:class:`huaweicloudsdkcss.v1.GetTargetImageIdDetail`]
         """
         self._image_info_list = image_info_list
+
+    @property
+    def total_size(self):
+        r"""Gets the total_size of this ListImagesResponse.
+
+        目标镜像数量。
+
+        :return: The total_size of this ListImagesResponse.
+        :rtype: int
+        """
+        return self._total_size
+
+    @total_size.setter
+    def total_size(self, total_size):
+        r"""Sets the total_size of this ListImagesResponse.
+
+        目标镜像数量。
+
+        :param total_size: The total_size of this ListImagesResponse.
+        :type total_size: int
+        """
+        self._total_size = total_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

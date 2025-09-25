@@ -37,7 +37,8 @@ class ListImageLocalRequest:
         'container_name': 'str',
         'pod_id': 'str',
         'pod_name': 'str',
-        'app_name': 'str'
+        'app_name': 'str',
+        'has_container': 'bool'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class ListImageLocalRequest:
         'container_name': 'container_name',
         'pod_id': 'pod_id',
         'pod_name': 'pod_name',
-        'app_name': 'app_name'
+        'app_name': 'app_name',
+        'has_container': 'has_container'
     }
 
-    def __init__(self, enterprise_project_id=None, image_name=None, image_version=None, offset=None, limit=None, scan_status=None, local_image_type=None, image_size=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None, has_vul=None, host_name=None, host_id=None, host_ip=None, container_id=None, container_name=None, pod_id=None, pod_name=None, app_name=None):
+    def __init__(self, enterprise_project_id=None, image_name=None, image_version=None, offset=None, limit=None, scan_status=None, local_image_type=None, image_size=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None, has_vul=None, host_name=None, host_id=None, host_ip=None, container_id=None, container_name=None, pod_id=None, pod_name=None, app_name=None, has_container=None):
         r"""ListImageLocalRequest
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class ListImageLocalRequest:
         :type pod_name: str
         :param app_name: 本地镜像所关联软件的名称
         :type app_name: str
+        :param has_container: **参数解释**: 是否存在容器 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
+        :type has_container: bool
         """
         
         
@@ -136,6 +140,7 @@ class ListImageLocalRequest:
         self._pod_id = None
         self._pod_name = None
         self._app_name = None
+        self._has_container = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -180,6 +185,8 @@ class ListImageLocalRequest:
             self.pod_name = pod_name
         if app_name is not None:
             self.app_name = app_name
+        if has_container is not None:
+            self.has_container = has_container
 
     @property
     def enterprise_project_id(self):
@@ -642,6 +649,28 @@ class ListImageLocalRequest:
         :type app_name: str
         """
         self._app_name = app_name
+
+    @property
+    def has_container(self):
+        r"""Gets the has_container of this ListImageLocalRequest.
+
+        **参数解释**: 是否存在容器 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
+
+        :return: The has_container of this ListImageLocalRequest.
+        :rtype: bool
+        """
+        return self._has_container
+
+    @has_container.setter
+    def has_container(self, has_container):
+        r"""Sets the has_container of this ListImageLocalRequest.
+
+        **参数解释**: 是否存在容器 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
+
+        :param has_container: The has_container of this ListImageLocalRequest.
+        :type has_container: bool
+        """
+        self._has_container = has_container
 
     def to_dict(self):
         """Returns the model properties as a dict"""

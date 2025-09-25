@@ -55,7 +55,7 @@ class MultiCloudClusterInfo:
         :type server: str
         :param image_repo: 镜像仓地址
         :type image_repo: str
-        :param status: anp-agent的连接状态
+        :param status: **参数解释** anp-agent的连接状态 **取值范围**   - not_connect：未连接。   - connect_success：连接成功。   - connect_fail：连接失败。   - connect_disruption：连接中断。 
         :type status: str
         :param version: anp-agent的版本
         :type version: str
@@ -211,7 +211,7 @@ class MultiCloudClusterInfo:
     def status(self):
         r"""Gets the status of this MultiCloudClusterInfo.
 
-        anp-agent的连接状态
+        **参数解释** anp-agent的连接状态 **取值范围**   - not_connect：未连接。   - connect_success：连接成功。   - connect_fail：连接失败。   - connect_disruption：连接中断。 
 
         :return: The status of this MultiCloudClusterInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class MultiCloudClusterInfo:
     def status(self, status):
         r"""Sets the status of this MultiCloudClusterInfo.
 
-        anp-agent的连接状态
+        **参数解释** anp-agent的连接状态 **取值范围**   - not_connect：未连接。   - connect_success：连接成功。   - connect_fail：连接失败。   - connect_disruption：连接中断。 
 
         :param status: The status of this MultiCloudClusterInfo.
         :type status: str

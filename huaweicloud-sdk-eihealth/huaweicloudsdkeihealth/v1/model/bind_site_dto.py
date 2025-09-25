@@ -19,6 +19,8 @@ class BindSiteDto:
     openapi_types = {
         'name': 'str',
         'receptor': 'ReceptorDrugFile',
+        'engine': 'str',
+        'docking_type': 'str',
         'bounding_box': 'BoundingBoxDto',
         'remove_ion': 'bool',
         'remove_water': 'bool',
@@ -29,6 +31,8 @@ class BindSiteDto:
     attribute_map = {
         'name': 'name',
         'receptor': 'receptor',
+        'engine': 'engine',
+        'docking_type': 'docking_type',
         'bounding_box': 'bounding_box',
         'remove_ion': 'remove_ion',
         'remove_water': 'remove_water',
@@ -36,7 +40,7 @@ class BindSiteDto:
         'add_hydrogen': 'add_hydrogen'
     }
 
-    def __init__(self, name=None, receptor=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None):
+    def __init__(self, name=None, receptor=None, engine=None, docking_type=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None):
         r"""BindSiteDto
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class BindSiteDto:
         :type name: str
         :param receptor: 
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
+        :param engine: **参数解释**： 引擎[，仅支持VINA，默认值为VINA](tag:hcs)[，支持DSDP、AUTODOCK_VINA，默认值为AUTODOCK_VINA](tag:hws)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type engine: str
+        :param docking_type: **参数解释**： 对接类型[，仅支持POCKET_DOCKING](tag:hws)[，支持BLIND_DOCKING、POCKET_DOCKING](tag:hcs)。 **约束限制**： 不涉及 **取值范围**： * POCKET_DOCKING：口袋对接 * [BLIND_DOCKING：全局对接](tag:hcs) **默认取值**： POCKET_DOCKING 
+        :type docking_type: str
         :param bounding_box: 
         :type bounding_box: :class:`huaweicloudsdkeihealth.v1.BoundingBoxDto`
         :param remove_ion: 去除受体中的离子
@@ -61,6 +69,8 @@ class BindSiteDto:
 
         self._name = None
         self._receptor = None
+        self._engine = None
+        self._docking_type = None
         self._bounding_box = None
         self._remove_ion = None
         self._remove_water = None
@@ -71,6 +81,10 @@ class BindSiteDto:
         if name is not None:
             self.name = name
         self.receptor = receptor
+        if engine is not None:
+            self.engine = engine
+        if docking_type is not None:
+            self.docking_type = docking_type
         if bounding_box is not None:
             self.bounding_box = bounding_box
         if remove_ion is not None:
@@ -121,6 +135,50 @@ class BindSiteDto:
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
         """
         self._receptor = receptor
+
+    @property
+    def engine(self):
+        r"""Gets the engine of this BindSiteDto.
+
+        **参数解释**： 引擎[，仅支持VINA，默认值为VINA](tag:hcs)[，支持DSDP、AUTODOCK_VINA，默认值为AUTODOCK_VINA](tag:hws)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The engine of this BindSiteDto.
+        :rtype: str
+        """
+        return self._engine
+
+    @engine.setter
+    def engine(self, engine):
+        r"""Sets the engine of this BindSiteDto.
+
+        **参数解释**： 引擎[，仅支持VINA，默认值为VINA](tag:hcs)[，支持DSDP、AUTODOCK_VINA，默认值为AUTODOCK_VINA](tag:hws)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param engine: The engine of this BindSiteDto.
+        :type engine: str
+        """
+        self._engine = engine
+
+    @property
+    def docking_type(self):
+        r"""Gets the docking_type of this BindSiteDto.
+
+        **参数解释**： 对接类型[，仅支持POCKET_DOCKING](tag:hws)[，支持BLIND_DOCKING、POCKET_DOCKING](tag:hcs)。 **约束限制**： 不涉及 **取值范围**： * POCKET_DOCKING：口袋对接 * [BLIND_DOCKING：全局对接](tag:hcs) **默认取值**： POCKET_DOCKING 
+
+        :return: The docking_type of this BindSiteDto.
+        :rtype: str
+        """
+        return self._docking_type
+
+    @docking_type.setter
+    def docking_type(self, docking_type):
+        r"""Sets the docking_type of this BindSiteDto.
+
+        **参数解释**： 对接类型[，仅支持POCKET_DOCKING](tag:hws)[，支持BLIND_DOCKING、POCKET_DOCKING](tag:hcs)。 **约束限制**： 不涉及 **取值范围**： * POCKET_DOCKING：口袋对接 * [BLIND_DOCKING：全局对接](tag:hcs) **默认取值**： POCKET_DOCKING 
+
+        :param docking_type: The docking_type of this BindSiteDto.
+        :type docking_type: str
+        """
+        self._docking_type = docking_type
 
     @property
     def bounding_box(self):

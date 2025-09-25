@@ -19,35 +19,35 @@ class ListSessionStatisticsResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'statistics': 'list[DimensionListResult]'
+        'statistics_list': 'list[DimensionListResult]'
     }
 
     attribute_map = {
         'total': 'total',
-        'statistics': 'statistics'
+        'statistics_list': 'statistics_list'
     }
 
-    def __init__(self, total=None, statistics=None):
+    def __init__(self, total=None, statistics_list=None):
         r"""ListSessionStatisticsResponse
 
         The model defined in huaweicloud sdk
 
         :param total: **参数解释**: 总数。 **取值范围**: 不涉及。
         :type total: int
-        :param statistics: **参数解释**: 会话统计列表。
-        :type statistics: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DimensionListResult`]
+        :param statistics_list: **参数解释**: 会话统计列表。
+        :type statistics_list: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DimensionListResult`]
         """
         
         super(ListSessionStatisticsResponse, self).__init__()
 
         self._total = None
-        self._statistics = None
+        self._statistics_list = None
         self.discriminator = None
 
         if total is not None:
             self.total = total
-        if statistics is not None:
-            self.statistics = statistics
+        if statistics_list is not None:
+            self.statistics_list = statistics_list
 
     @property
     def total(self):
@@ -72,26 +72,26 @@ class ListSessionStatisticsResponse(SdkResponse):
         self._total = total
 
     @property
-    def statistics(self):
-        r"""Gets the statistics of this ListSessionStatisticsResponse.
+    def statistics_list(self):
+        r"""Gets the statistics_list of this ListSessionStatisticsResponse.
 
         **参数解释**: 会话统计列表。
 
-        :return: The statistics of this ListSessionStatisticsResponse.
+        :return: The statistics_list of this ListSessionStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DimensionListResult`]
         """
-        return self._statistics
+        return self._statistics_list
 
-    @statistics.setter
-    def statistics(self, statistics):
-        r"""Sets the statistics of this ListSessionStatisticsResponse.
+    @statistics_list.setter
+    def statistics_list(self, statistics_list):
+        r"""Sets the statistics_list of this ListSessionStatisticsResponse.
 
         **参数解释**: 会话统计列表。
 
-        :param statistics: The statistics of this ListSessionStatisticsResponse.
-        :type statistics: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DimensionListResult`]
+        :param statistics_list: The statistics_list of this ListSessionStatisticsResponse.
+        :type statistics_list: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DimensionListResult`]
         """
-        self._statistics = statistics
+        self._statistics_list = statistics_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

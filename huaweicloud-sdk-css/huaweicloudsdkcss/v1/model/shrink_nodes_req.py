@@ -18,15 +18,17 @@ class ShrinkNodesReq:
 
     openapi_types = {
         'migrate_data': 'str',
-        'shrink_nodes': 'list[str]'
+        'shrink_nodes': 'list[str]',
+        'agency_name': 'str'
     }
 
     attribute_map = {
         'migrate_data': 'migrate_data',
-        'shrink_nodes': 'shrink_nodes'
+        'shrink_nodes': 'shrink_nodes',
+        'agency_name': 'agency_name'
     }
 
-    def __init__(self, migrate_data=None, shrink_nodes=None):
+    def __init__(self, migrate_data=None, shrink_nodes=None, agency_name=None):
         r"""ShrinkNodesReq
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class ShrinkNodesReq:
         :type migrate_data: str
         :param shrink_nodes: 需要缩容的节点ID。  通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。
         :type shrink_nodes: list[str]
+        :param agency_name: 委托名称，委托给CSS服务，允许CSS调用您的其他云服务。
+        :type agency_name: str
         """
         
         
 
         self._migrate_data = None
         self._shrink_nodes = None
+        self._agency_name = None
         self.discriminator = None
 
         if migrate_data is not None:
             self.migrate_data = migrate_data
         self.shrink_nodes = shrink_nodes
+        if agency_name is not None:
+            self.agency_name = agency_name
 
     @property
     def migrate_data(self):
@@ -90,6 +97,28 @@ class ShrinkNodesReq:
         :type shrink_nodes: list[str]
         """
         self._shrink_nodes = shrink_nodes
+
+    @property
+    def agency_name(self):
+        r"""Gets the agency_name of this ShrinkNodesReq.
+
+        委托名称，委托给CSS服务，允许CSS调用您的其他云服务。
+
+        :return: The agency_name of this ShrinkNodesReq.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        r"""Sets the agency_name of this ShrinkNodesReq.
+
+        委托名称，委托给CSS服务，允许CSS调用您的其他云服务。
+
+        :param agency_name: The agency_name of this ShrinkNodesReq.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

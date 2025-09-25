@@ -31,9 +31,9 @@ class DatapointResult:
 
         The model defined in huaweicloud sdk
 
-        :param datapoint_name: 指标项名，实例指标用实例ID、节点指标用节点名称、组件指标用组件名称。
+        :param datapoint_name: **参数解释**: 指标项名，实例指标用实例ID、节点指标用节点名称、组件指标用组件名称。 **取值范围**: 不涉及。
         :type datapoint_name: str
-        :param datapoint_values: 指标值集合。
+        :param datapoint_values: **参数解释**: 指标值集合。
         :type datapoint_values: list[str]
         """
         
@@ -50,7 +50,7 @@ class DatapointResult:
     def datapoint_name(self):
         r"""Gets the datapoint_name of this DatapointResult.
 
-        指标项名，实例指标用实例ID、节点指标用节点名称、组件指标用组件名称。
+        **参数解释**: 指标项名，实例指标用实例ID、节点指标用节点名称、组件指标用组件名称。 **取值范围**: 不涉及。
 
         :return: The datapoint_name of this DatapointResult.
         :rtype: str
@@ -61,7 +61,7 @@ class DatapointResult:
     def datapoint_name(self, datapoint_name):
         r"""Sets the datapoint_name of this DatapointResult.
 
-        指标项名，实例指标用实例ID、节点指标用节点名称、组件指标用组件名称。
+        **参数解释**: 指标项名，实例指标用实例ID、节点指标用节点名称、组件指标用组件名称。 **取值范围**: 不涉及。
 
         :param datapoint_name: The datapoint_name of this DatapointResult.
         :type datapoint_name: str
@@ -72,7 +72,7 @@ class DatapointResult:
     def datapoint_values(self):
         r"""Gets the datapoint_values of this DatapointResult.
 
-        指标值集合。
+        **参数解释**: 指标值集合。
 
         :return: The datapoint_values of this DatapointResult.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class DatapointResult:
     def datapoint_values(self, datapoint_values):
         r"""Sets the datapoint_values of this DatapointResult.
 
-        指标值集合。
+        **参数解释**: 指标值集合。
 
         :param datapoint_values: The datapoint_values of this DatapointResult.
         :type datapoint_values: list[str]

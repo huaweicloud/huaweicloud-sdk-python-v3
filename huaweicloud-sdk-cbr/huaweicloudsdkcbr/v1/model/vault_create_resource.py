@@ -33,15 +33,13 @@ class VaultCreateResource:
         'auto_expand': 'bool',
         'smn_notify': 'bool',
         'threshold': 'int',
-        'err_text': 'str',
-        'ret_code': 'str',
-        'orders': 'list[CbcOrderResult]',
         'backup_name_prefix': 'str',
         'demand_billing': 'bool',
         'cbc_delete_count': 'int',
         'frozen': 'bool',
         'sys_lock_source_service': 'str',
-        'locked': 'bool'
+        'locked': 'bool',
+        'availability_zone': 'str'
     }
 
     attribute_map = {
@@ -61,18 +59,16 @@ class VaultCreateResource:
         'auto_expand': 'auto_expand',
         'smn_notify': 'smn_notify',
         'threshold': 'threshold',
-        'err_text': 'errText',
-        'ret_code': 'retCode',
-        'orders': 'orders',
         'backup_name_prefix': 'backup_name_prefix',
         'demand_billing': 'demand_billing',
         'cbc_delete_count': 'cbc_delete_count',
         'frozen': 'frozen',
         'sys_lock_source_service': 'sys_lock_source_service',
-        'locked': 'locked'
+        'locked': 'locked',
+        'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, err_text=None, ret_code=None, orders=None, backup_name_prefix=None, demand_billing=None, cbc_delete_count=None, frozen=None, sys_lock_source_service=None, locked=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, backup_name_prefix=None, demand_billing=None, cbc_delete_count=None, frozen=None, sys_lock_source_service=None, locked=None, availability_zone=None):
         r"""VaultCreateResource
 
         The model defined in huaweicloud sdk
@@ -109,12 +105,6 @@ class VaultCreateResource:
         :type smn_notify: bool
         :param threshold: 存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
         :type threshold: int
-        :param err_text: 包周期创建错误信息
-        :type err_text: str
-        :param ret_code: 包周期订购结果
-        :type ret_code: str
-        :param orders: 包周期创建订单信息
-        :type orders: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
         :param backup_name_prefix: 备份名称前缀
         :type backup_name_prefix: str
         :param demand_billing: 是否允许使用超出存储库容量
@@ -127,6 +117,8 @@ class VaultCreateResource:
         :type sys_lock_source_service: str
         :param locked: 用于标识该存储库是否已锁定
         :type locked: bool
+        :param availability_zone: 存储库可用区信息，最大支持32字符。
+        :type availability_zone: str
         """
         
         
@@ -147,15 +139,13 @@ class VaultCreateResource:
         self._auto_expand = None
         self._smn_notify = None
         self._threshold = None
-        self._err_text = None
-        self._ret_code = None
-        self._orders = None
         self._backup_name_prefix = None
         self._demand_billing = None
         self._cbc_delete_count = None
         self._frozen = None
         self._sys_lock_source_service = None
         self._locked = None
+        self._availability_zone = None
         self.discriminator = None
 
         self.billing = billing
@@ -184,12 +174,6 @@ class VaultCreateResource:
             self.smn_notify = smn_notify
         if threshold is not None:
             self.threshold = threshold
-        if err_text is not None:
-            self.err_text = err_text
-        if ret_code is not None:
-            self.ret_code = ret_code
-        if orders is not None:
-            self.orders = orders
         if backup_name_prefix is not None:
             self.backup_name_prefix = backup_name_prefix
         if demand_billing is not None:
@@ -202,6 +186,8 @@ class VaultCreateResource:
             self.sys_lock_source_service = sys_lock_source_service
         if locked is not None:
             self.locked = locked
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
 
     @property
     def billing(self):
@@ -548,72 +534,6 @@ class VaultCreateResource:
         self._threshold = threshold
 
     @property
-    def err_text(self):
-        r"""Gets the err_text of this VaultCreateResource.
-
-        包周期创建错误信息
-
-        :return: The err_text of this VaultCreateResource.
-        :rtype: str
-        """
-        return self._err_text
-
-    @err_text.setter
-    def err_text(self, err_text):
-        r"""Sets the err_text of this VaultCreateResource.
-
-        包周期创建错误信息
-
-        :param err_text: The err_text of this VaultCreateResource.
-        :type err_text: str
-        """
-        self._err_text = err_text
-
-    @property
-    def ret_code(self):
-        r"""Gets the ret_code of this VaultCreateResource.
-
-        包周期订购结果
-
-        :return: The ret_code of this VaultCreateResource.
-        :rtype: str
-        """
-        return self._ret_code
-
-    @ret_code.setter
-    def ret_code(self, ret_code):
-        r"""Sets the ret_code of this VaultCreateResource.
-
-        包周期订购结果
-
-        :param ret_code: The ret_code of this VaultCreateResource.
-        :type ret_code: str
-        """
-        self._ret_code = ret_code
-
-    @property
-    def orders(self):
-        r"""Gets the orders of this VaultCreateResource.
-
-        包周期创建订单信息
-
-        :return: The orders of this VaultCreateResource.
-        :rtype: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
-        """
-        return self._orders
-
-    @orders.setter
-    def orders(self, orders):
-        r"""Sets the orders of this VaultCreateResource.
-
-        包周期创建订单信息
-
-        :param orders: The orders of this VaultCreateResource.
-        :type orders: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
-        """
-        self._orders = orders
-
-    @property
     def backup_name_prefix(self):
         r"""Gets the backup_name_prefix of this VaultCreateResource.
 
@@ -744,6 +664,28 @@ class VaultCreateResource:
         :type locked: bool
         """
         self._locked = locked
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this VaultCreateResource.
+
+        存储库可用区信息，最大支持32字符。
+
+        :return: The availability_zone of this VaultCreateResource.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this VaultCreateResource.
+
+        存储库可用区信息，最大支持32字符。
+
+        :param availability_zone: The availability_zone of this VaultCreateResource.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -29,7 +29,7 @@ class UpdateWebTamperRaspPathRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param rasp_path: rasp path
+        :param rasp_path: **参数解释**: 动态网页防篡改的Tomcat bin目录。 **约束限制**: 仅Linux服务器支持配置动态网页防篡改的Tomcat bin目录。 **取值范围**: 字符长度1-256位，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。 **默认取值**: 不涉及 
         :type rasp_path: str
         """
         
@@ -38,14 +38,13 @@ class UpdateWebTamperRaspPathRequestInfo:
         self._rasp_path = None
         self.discriminator = None
 
-        if rasp_path is not None:
-            self.rasp_path = rasp_path
+        self.rasp_path = rasp_path
 
     @property
     def rasp_path(self):
         r"""Gets the rasp_path of this UpdateWebTamperRaspPathRequestInfo.
 
-        rasp path
+        **参数解释**: 动态网页防篡改的Tomcat bin目录。 **约束限制**: 仅Linux服务器支持配置动态网页防篡改的Tomcat bin目录。 **取值范围**: 字符长度1-256位，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。 **默认取值**: 不涉及 
 
         :return: The rasp_path of this UpdateWebTamperRaspPathRequestInfo.
         :rtype: str
@@ -56,7 +55,7 @@ class UpdateWebTamperRaspPathRequestInfo:
     def rasp_path(self, rasp_path):
         r"""Sets the rasp_path of this UpdateWebTamperRaspPathRequestInfo.
 
-        rasp path
+        **参数解释**: 动态网页防篡改的Tomcat bin目录。 **约束限制**: 仅Linux服务器支持配置动态网页防篡改的Tomcat bin目录。 **取值范围**: 字符长度1-256位，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。 **默认取值**: 不涉及 
 
         :param rasp_path: The rasp_path of this UpdateWebTamperRaspPathRequestInfo.
         :type rasp_path: str

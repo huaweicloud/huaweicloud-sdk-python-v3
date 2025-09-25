@@ -33,7 +33,8 @@ class CustomerOrderV2:
         'contract_id': 'str',
         'amount_info': 'AmountInfomationV2',
         'enterprise_projects': 'list[EnterpriseProject]',
-        'sub_order_infos': 'list[SubCustomerOrderV2]'
+        'sub_order_infos': 'list[SubCustomerOrderV2]',
+        'agent_pay_info': 'AgentPayInfoV2'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class CustomerOrderV2:
         'contract_id': 'contract_id',
         'amount_info': 'amount_info',
         'enterprise_projects': 'enterprise_projects',
-        'sub_order_infos': 'sub_order_infos'
+        'sub_order_infos': 'sub_order_infos',
+        'agent_pay_info': 'agent_pay_info'
     }
 
-    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, enterprise_projects=None, sub_order_infos=None):
+    def __init__(self, order_id=None, customer_id=None, service_type_code=None, service_type_name=None, source_type=None, status=None, order_type=None, amount_after_discount=None, official_amount=None, measure_id=None, create_time=None, payment_time=None, currency=None, contract_id=None, amount_info=None, enterprise_projects=None, sub_order_infos=None, agent_pay_info=None):
         r"""CustomerOrderV2
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class CustomerOrderV2:
         :type enterprise_projects: list[:class:`huaweicloudsdkbss.v2.EnterpriseProject`]
         :param sub_order_infos: 客户订单下属的订单详情信息。具体请参见表 SubCustomerOrderV2 说明：当查询订单为组合交易订单时，订单信息会返回下属的订单信息，当查询为普通订单时，此字段返回为空
         :type sub_order_infos: list[:class:`huaweicloudsdkbss.v2.SubCustomerOrderV2`]
+        :param agent_pay_info: 
+        :type agent_pay_info: :class:`huaweicloudsdkbss.v2.AgentPayInfoV2`
         """
         
         
@@ -116,6 +120,7 @@ class CustomerOrderV2:
         self._amount_info = None
         self._enterprise_projects = None
         self._sub_order_infos = None
+        self._agent_pay_info = None
         self.discriminator = None
 
         if order_id is not None:
@@ -152,6 +157,8 @@ class CustomerOrderV2:
             self.enterprise_projects = enterprise_projects
         if sub_order_infos is not None:
             self.sub_order_infos = sub_order_infos
+        if agent_pay_info is not None:
+            self.agent_pay_info = agent_pay_info
 
     @property
     def order_id(self):
@@ -522,6 +529,24 @@ class CustomerOrderV2:
         :type sub_order_infos: list[:class:`huaweicloudsdkbss.v2.SubCustomerOrderV2`]
         """
         self._sub_order_infos = sub_order_infos
+
+    @property
+    def agent_pay_info(self):
+        r"""Gets the agent_pay_info of this CustomerOrderV2.
+
+        :return: The agent_pay_info of this CustomerOrderV2.
+        :rtype: :class:`huaweicloudsdkbss.v2.AgentPayInfoV2`
+        """
+        return self._agent_pay_info
+
+    @agent_pay_info.setter
+    def agent_pay_info(self, agent_pay_info):
+        r"""Sets the agent_pay_info of this CustomerOrderV2.
+
+        :param agent_pay_info: The agent_pay_info of this CustomerOrderV2.
+        :type agent_pay_info: :class:`huaweicloudsdkbss.v2.AgentPayInfoV2`
+        """
+        self._agent_pay_info = agent_pay_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

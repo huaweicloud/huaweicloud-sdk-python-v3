@@ -39,7 +39,7 @@ class UpdateWebTamperRaspPathRequest:
         :type enterprise_project_id: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_id: 服务器id
+        :param host_id: **参数解释**: 服务器ID，仅支持Linux服务器，要求服务器已开启网页防篡改防护，或已关闭防护但未删除网页防篡改策略。 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，os_type 等于 Linux 的 host_id 是符合查询条件的服务器ID **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_id: str
         :param body: Body of the UpdateWebTamperRaspPathRequest
         :type body: :class:`huaweicloudsdkhss.v5.UpdateWebTamperRaspPathRequestInfo`
@@ -109,7 +109,7 @@ class UpdateWebTamperRaspPathRequest:
     def host_id(self):
         r"""Gets the host_id of this UpdateWebTamperRaspPathRequest.
 
-        服务器id
+        **参数解释**: 服务器ID，仅支持Linux服务器，要求服务器已开启网页防篡改防护，或已关闭防护但未删除网页防篡改策略。 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，os_type 等于 Linux 的 host_id 是符合查询条件的服务器ID **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_id of this UpdateWebTamperRaspPathRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class UpdateWebTamperRaspPathRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this UpdateWebTamperRaspPathRequest.
 
-        服务器id
+        **参数解释**: 服务器ID，仅支持Linux服务器，要求服务器已开启网页防篡改防护，或已关闭防护但未删除网页防篡改策略。 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，os_type 等于 Linux 的 host_id 是符合查询条件的服务器ID **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this UpdateWebTamperRaspPathRequest.
         :type host_id: str

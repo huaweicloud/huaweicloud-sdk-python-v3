@@ -35,7 +35,7 @@ class KillSessionRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        :param instance_id: **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type instance_id: str
         :param node_id: **参数解释**: 节点ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type node_id: str
@@ -63,7 +63,7 @@ class KillSessionRequestBody:
     def instance_id(self):
         r"""Gets the instance_id of this KillSessionRequestBody.
 
-        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The instance_id of this KillSessionRequestBody.
         :rtype: str
@@ -74,7 +74,7 @@ class KillSessionRequestBody:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this KillSessionRequestBody.
 
-        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param instance_id: The instance_id of this KillSessionRequestBody.
         :type instance_id: str

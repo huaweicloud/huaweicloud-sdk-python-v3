@@ -17,40 +17,76 @@ class FlavorInfo:
     sensitive_list = []
 
     openapi_types = {
+        'cpu_type': 'str',
         'cpu': 'float',
         'gpu': 'float',
+        'gpu_type': 'str',
         'memory': 'float'
     }
 
     attribute_map = {
+        'cpu_type': 'cpu_type',
         'cpu': 'cpu',
         'gpu': 'gpu',
+        'gpu_type': 'gpu_type',
         'memory': 'memory'
     }
 
-    def __init__(self, cpu=None, gpu=None, memory=None):
+    def __init__(self, cpu_type=None, cpu=None, gpu=None, gpu_type=None, memory=None):
         r"""FlavorInfo
 
         The model defined in huaweicloud sdk
 
+        :param cpu_type: **参数解释**： cpu架构类型。 **约束限制**： 不涉及 **取值范围**： * X86: X86架构 * ARM：ARM架构 **默认取值**： X86 
+        :type cpu_type: str
         :param cpu: notebook占用的cpu,0.1核为100m,单位为\&quot;C\&quot;
         :type cpu: float
         :param gpu: notebook占用的gpu，0.1为使用单卡10%，1为占满单个显卡，1+为使用多个显卡
         :type gpu: float
+        :param gpu_type: **参数解释**： gpu架构类型。 **约束限制**： 不涉及 **取值范围**： * GPU：支持GPU * [Snt9：支持Snt9](tag:hws) **默认取值**： 不涉及 
+        :type gpu_type: str
         :param memory: notebook占用的内存,单位为\&quot;G\&quot;
         :type memory: float
         """
         
         
 
+        self._cpu_type = None
         self._cpu = None
         self._gpu = None
+        self._gpu_type = None
         self._memory = None
         self.discriminator = None
 
+        if cpu_type is not None:
+            self.cpu_type = cpu_type
         self.cpu = cpu
         self.gpu = gpu
+        if gpu_type is not None:
+            self.gpu_type = gpu_type
         self.memory = memory
+
+    @property
+    def cpu_type(self):
+        r"""Gets the cpu_type of this FlavorInfo.
+
+        **参数解释**： cpu架构类型。 **约束限制**： 不涉及 **取值范围**： * X86: X86架构 * ARM：ARM架构 **默认取值**： X86 
+
+        :return: The cpu_type of this FlavorInfo.
+        :rtype: str
+        """
+        return self._cpu_type
+
+    @cpu_type.setter
+    def cpu_type(self, cpu_type):
+        r"""Sets the cpu_type of this FlavorInfo.
+
+        **参数解释**： cpu架构类型。 **约束限制**： 不涉及 **取值范围**： * X86: X86架构 * ARM：ARM架构 **默认取值**： X86 
+
+        :param cpu_type: The cpu_type of this FlavorInfo.
+        :type cpu_type: str
+        """
+        self._cpu_type = cpu_type
 
     @property
     def cpu(self):
@@ -95,6 +131,28 @@ class FlavorInfo:
         :type gpu: float
         """
         self._gpu = gpu
+
+    @property
+    def gpu_type(self):
+        r"""Gets the gpu_type of this FlavorInfo.
+
+        **参数解释**： gpu架构类型。 **约束限制**： 不涉及 **取值范围**： * GPU：支持GPU * [Snt9：支持Snt9](tag:hws) **默认取值**： 不涉及 
+
+        :return: The gpu_type of this FlavorInfo.
+        :rtype: str
+        """
+        return self._gpu_type
+
+    @gpu_type.setter
+    def gpu_type(self, gpu_type):
+        r"""Sets the gpu_type of this FlavorInfo.
+
+        **参数解释**： gpu架构类型。 **约束限制**： 不涉及 **取值范围**： * GPU：支持GPU * [Snt9：支持Snt9](tag:hws) **默认取值**： 不涉及 
+
+        :param gpu_type: The gpu_type of this FlavorInfo.
+        :type gpu_type: str
+        """
+        self._gpu_type = gpu_type
 
     @property
     def memory(self):

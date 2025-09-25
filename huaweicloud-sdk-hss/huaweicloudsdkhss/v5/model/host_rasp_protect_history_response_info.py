@@ -41,19 +41,19 @@ class HostRaspProtectHistoryResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_ip: 服务器ip
+        :param host_ip: **参数解释**: 服务器IP **取值范围**: 字符长度0-64位 
         :type host_ip: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param alarm_time: 动态网页防篡改的告警时间(ms)
+        :param alarm_time: **参数解释**: 告警时间，单位毫秒。 **取值范围**: 最小值0，最大值4070880000000 
         :type alarm_time: int
-        :param threat_type: 威胁类型
+        :param threat_type: **参数解释**： 威胁类型 **取值范围**： 字符长度0-128位 
         :type threat_type: str
-        :param alarm_level: 告警级别
+        :param alarm_level: **参数解释**: 告警等级 **取值范围**: - 1 : 紧急。 - 2 : 重要。 - 3 : 次要。 - 4 : 提示。 
         :type alarm_level: int
-        :param source_ip: 攻击主机的源IP
+        :param source_ip: **参数解释**： 攻击源IP **取值范围**： 字符长度0-128位 
         :type source_ip: str
-        :param attacked_url: 攻击请求的URL
+        :param attacked_url: **参数解释**： 攻击源URL **取值范围**： 字符长度0-2000位 
         :type attacked_url: str
         """
         
@@ -87,7 +87,7 @@ class HostRaspProtectHistoryResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this HostRaspProtectHistoryResponseInfo.
 
-        服务器ip
+        **参数解释**: 服务器IP **取值范围**: 字符长度0-64位 
 
         :return: The host_ip of this HostRaspProtectHistoryResponseInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class HostRaspProtectHistoryResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this HostRaspProtectHistoryResponseInfo.
 
-        服务器ip
+        **参数解释**: 服务器IP **取值范围**: 字符长度0-64位 
 
         :param host_ip: The host_ip of this HostRaspProtectHistoryResponseInfo.
         :type host_ip: str
@@ -109,7 +109,7 @@ class HostRaspProtectHistoryResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this HostRaspProtectHistoryResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this HostRaspProtectHistoryResponseInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class HostRaspProtectHistoryResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this HostRaspProtectHistoryResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this HostRaspProtectHistoryResponseInfo.
         :type host_name: str
@@ -131,7 +131,7 @@ class HostRaspProtectHistoryResponseInfo:
     def alarm_time(self):
         r"""Gets the alarm_time of this HostRaspProtectHistoryResponseInfo.
 
-        动态网页防篡改的告警时间(ms)
+        **参数解释**: 告警时间，单位毫秒。 **取值范围**: 最小值0，最大值4070880000000 
 
         :return: The alarm_time of this HostRaspProtectHistoryResponseInfo.
         :rtype: int
@@ -142,7 +142,7 @@ class HostRaspProtectHistoryResponseInfo:
     def alarm_time(self, alarm_time):
         r"""Sets the alarm_time of this HostRaspProtectHistoryResponseInfo.
 
-        动态网页防篡改的告警时间(ms)
+        **参数解释**: 告警时间，单位毫秒。 **取值范围**: 最小值0，最大值4070880000000 
 
         :param alarm_time: The alarm_time of this HostRaspProtectHistoryResponseInfo.
         :type alarm_time: int
@@ -153,7 +153,7 @@ class HostRaspProtectHistoryResponseInfo:
     def threat_type(self):
         r"""Gets the threat_type of this HostRaspProtectHistoryResponseInfo.
 
-        威胁类型
+        **参数解释**： 威胁类型 **取值范围**： 字符长度0-128位 
 
         :return: The threat_type of this HostRaspProtectHistoryResponseInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class HostRaspProtectHistoryResponseInfo:
     def threat_type(self, threat_type):
         r"""Sets the threat_type of this HostRaspProtectHistoryResponseInfo.
 
-        威胁类型
+        **参数解释**： 威胁类型 **取值范围**： 字符长度0-128位 
 
         :param threat_type: The threat_type of this HostRaspProtectHistoryResponseInfo.
         :type threat_type: str
@@ -175,7 +175,7 @@ class HostRaspProtectHistoryResponseInfo:
     def alarm_level(self):
         r"""Gets the alarm_level of this HostRaspProtectHistoryResponseInfo.
 
-        告警级别
+        **参数解释**: 告警等级 **取值范围**: - 1 : 紧急。 - 2 : 重要。 - 3 : 次要。 - 4 : 提示。 
 
         :return: The alarm_level of this HostRaspProtectHistoryResponseInfo.
         :rtype: int
@@ -186,7 +186,7 @@ class HostRaspProtectHistoryResponseInfo:
     def alarm_level(self, alarm_level):
         r"""Sets the alarm_level of this HostRaspProtectHistoryResponseInfo.
 
-        告警级别
+        **参数解释**: 告警等级 **取值范围**: - 1 : 紧急。 - 2 : 重要。 - 3 : 次要。 - 4 : 提示。 
 
         :param alarm_level: The alarm_level of this HostRaspProtectHistoryResponseInfo.
         :type alarm_level: int
@@ -197,7 +197,7 @@ class HostRaspProtectHistoryResponseInfo:
     def source_ip(self):
         r"""Gets the source_ip of this HostRaspProtectHistoryResponseInfo.
 
-        攻击主机的源IP
+        **参数解释**： 攻击源IP **取值范围**： 字符长度0-128位 
 
         :return: The source_ip of this HostRaspProtectHistoryResponseInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class HostRaspProtectHistoryResponseInfo:
     def source_ip(self, source_ip):
         r"""Sets the source_ip of this HostRaspProtectHistoryResponseInfo.
 
-        攻击主机的源IP
+        **参数解释**： 攻击源IP **取值范围**： 字符长度0-128位 
 
         :param source_ip: The source_ip of this HostRaspProtectHistoryResponseInfo.
         :type source_ip: str
@@ -219,7 +219,7 @@ class HostRaspProtectHistoryResponseInfo:
     def attacked_url(self):
         r"""Gets the attacked_url of this HostRaspProtectHistoryResponseInfo.
 
-        攻击请求的URL
+        **参数解释**： 攻击源URL **取值范围**： 字符长度0-2000位 
 
         :return: The attacked_url of this HostRaspProtectHistoryResponseInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class HostRaspProtectHistoryResponseInfo:
     def attacked_url(self, attacked_url):
         r"""Sets the attacked_url of this HostRaspProtectHistoryResponseInfo.
 
-        攻击请求的URL
+        **参数解释**： 攻击源URL **取值范围**： 字符长度0-2000位 
 
         :param attacked_url: The attacked_url of this HostRaspProtectHistoryResponseInfo.
         :type attacked_url: str

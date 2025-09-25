@@ -48,10 +48,8 @@ class ListRecommendOfficialTemplateRequestBody:
         self._tags = None
         self.discriminator = None
 
-        if git_url is not None:
-            self.git_url = git_url
-        if branch is not None:
-            self.branch = branch
+        self.git_url = git_url
+        self.branch = branch
         if tags is not None:
             self.tags = tags
 

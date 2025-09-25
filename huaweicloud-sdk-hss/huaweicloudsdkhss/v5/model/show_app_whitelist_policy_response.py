@@ -56,7 +56,7 @@ class ShowAppWhitelistPolicyResponse(SdkResponse):
         :type policy_id: str
         :param policy_name: 策略名称
         :type policy_name: str
-        :param policy_type: **参数解释**： 进程白名单策略类型 **取值范围**: - allow：允许指定/授权进程运行 - block：阻止潜在恶意软件运行 
+        :param policy_type: **参数解释**： 进程白名单策略类型 **取值范围**: - block：日常运营模式 
         :type policy_type: str
         :param intercept: **参数解释**： 是否开启阻断 **取值范围**: - true：是 - false：否 
         :type intercept: bool
@@ -167,7 +167,7 @@ class ShowAppWhitelistPolicyResponse(SdkResponse):
     def policy_type(self):
         r"""Gets the policy_type of this ShowAppWhitelistPolicyResponse.
 
-        **参数解释**： 进程白名单策略类型 **取值范围**: - allow：允许指定/授权进程运行 - block：阻止潜在恶意软件运行 
+        **参数解释**： 进程白名单策略类型 **取值范围**: - block：日常运营模式 
 
         :return: The policy_type of this ShowAppWhitelistPolicyResponse.
         :rtype: str
@@ -178,7 +178,7 @@ class ShowAppWhitelistPolicyResponse(SdkResponse):
     def policy_type(self, policy_type):
         r"""Sets the policy_type of this ShowAppWhitelistPolicyResponse.
 
-        **参数解释**： 进程白名单策略类型 **取值范围**: - allow：允许指定/授权进程运行 - block：阻止潜在恶意软件运行 
+        **参数解释**： 进程白名单策略类型 **取值范围**: - block：日常运营模式 
 
         :param policy_type: The policy_type of this ShowAppWhitelistPolicyResponse.
         :type policy_type: str

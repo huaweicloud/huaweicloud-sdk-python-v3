@@ -31,9 +31,9 @@ class SetRaspSwitchRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id_list: HostId list
+        :param host_id_list: **参数解释**: 服务器ID列表，仅支持Linux服务器，要求服务器已开启网页防篡改防护。 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，os_type 等于 Linux 的 host_id 是符合修改条件的服务器ID。 **取值范围**: 最少1条，最多200条 **默认取值**: 不涉及 
         :type host_id_list: list[str]
-        :param status: 动态网页防篡改状态
+        :param status: **参数解释**: 动态网页防篡改开启状态，仅支持Linux服务器。 **约束限制**: 不涉及 **取值范围**: - True ：开启动态网页防篡改。 - False ：关闭动态网页防篡改。  **默认取值**: False 
         :type status: bool
         """
         
@@ -43,16 +43,14 @@ class SetRaspSwitchRequestInfo:
         self._status = None
         self.discriminator = None
 
-        if host_id_list is not None:
-            self.host_id_list = host_id_list
-        if status is not None:
-            self.status = status
+        self.host_id_list = host_id_list
+        self.status = status
 
     @property
     def host_id_list(self):
         r"""Gets the host_id_list of this SetRaspSwitchRequestInfo.
 
-        HostId list
+        **参数解释**: 服务器ID列表，仅支持Linux服务器，要求服务器已开启网页防篡改防护。 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，os_type 等于 Linux 的 host_id 是符合修改条件的服务器ID。 **取值范围**: 最少1条，最多200条 **默认取值**: 不涉及 
 
         :return: The host_id_list of this SetRaspSwitchRequestInfo.
         :rtype: list[str]
@@ -63,7 +61,7 @@ class SetRaspSwitchRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this SetRaspSwitchRequestInfo.
 
-        HostId list
+        **参数解释**: 服务器ID列表，仅支持Linux服务器，要求服务器已开启网页防篡改防护。 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，os_type 等于 Linux 的 host_id 是符合修改条件的服务器ID。 **取值范围**: 最少1条，最多200条 **默认取值**: 不涉及 
 
         :param host_id_list: The host_id_list of this SetRaspSwitchRequestInfo.
         :type host_id_list: list[str]
@@ -74,7 +72,7 @@ class SetRaspSwitchRequestInfo:
     def status(self):
         r"""Gets the status of this SetRaspSwitchRequestInfo.
 
-        动态网页防篡改状态
+        **参数解释**: 动态网页防篡改开启状态，仅支持Linux服务器。 **约束限制**: 不涉及 **取值范围**: - True ：开启动态网页防篡改。 - False ：关闭动态网页防篡改。  **默认取值**: False 
 
         :return: The status of this SetRaspSwitchRequestInfo.
         :rtype: bool
@@ -85,7 +83,7 @@ class SetRaspSwitchRequestInfo:
     def status(self, status):
         r"""Sets the status of this SetRaspSwitchRequestInfo.
 
-        动态网页防篡改状态
+        **参数解释**: 动态网页防篡改开启状态，仅支持Linux服务器。 **约束限制**: 不涉及 **取值范围**: - True ：开启动态网页防篡改。 - False ：关闭动态网页防篡改。  **默认取值**: False 
 
         :param status: The status of this SetRaspSwitchRequestInfo.
         :type status: bool

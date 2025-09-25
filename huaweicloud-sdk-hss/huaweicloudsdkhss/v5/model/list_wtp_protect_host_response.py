@@ -32,9 +32,9 @@ class ListWtpProtectHostResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param data_list: data list
+        :param data_list: **参数解释**: 网页防篡改防护列表信息 **取值范围**: 最小值0，最大值200 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostResponseInfo`]
-        :param total_num: total number of WTP protected servers
+        :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
         """
         
@@ -53,7 +53,7 @@ class ListWtpProtectHostResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListWtpProtectHostResponse.
 
-        data list
+        **参数解释**: 网页防篡改防护列表信息 **取值范围**: 最小值0，最大值200 
 
         :return: The data_list of this ListWtpProtectHostResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostResponseInfo`]
@@ -64,7 +64,7 @@ class ListWtpProtectHostResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListWtpProtectHostResponse.
 
-        data list
+        **参数解释**: 网页防篡改防护列表信息 **取值范围**: 最小值0，最大值200 
 
         :param data_list: The data_list of this ListWtpProtectHostResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostResponseInfo`]
@@ -75,7 +75,7 @@ class ListWtpProtectHostResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListWtpProtectHostResponse.
 
-        total number of WTP protected servers
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The total_num of this ListWtpProtectHostResponse.
         :rtype: int
@@ -86,7 +86,7 @@ class ListWtpProtectHostResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListWtpProtectHostResponse.
 
-        total number of WTP protected servers
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
         :param total_num: The total_num of this ListWtpProtectHostResponse.
         :type total_num: int

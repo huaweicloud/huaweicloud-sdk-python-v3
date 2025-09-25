@@ -57,7 +57,7 @@ class ExportHandledVulnerabilitiesRequestBody:
 
         :param vul_name: 漏洞名称
         :type vul_name: str
-        :param repair_priority: 漏洞修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+        :param repair_priority: 漏洞修复优先级,包含如下 - Critical 紧急 - High 高 - Medium 中 - Low 低
         :type repair_priority: str
         :param host_name: 主机名称
         :type host_name: str
@@ -157,7 +157,7 @@ class ExportHandledVulnerabilitiesRequestBody:
     def repair_priority(self):
         r"""Gets the repair_priority of this ExportHandledVulnerabilitiesRequestBody.
 
-        漏洞修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+        漏洞修复优先级,包含如下 - Critical 紧急 - High 高 - Medium 中 - Low 低
 
         :return: The repair_priority of this ExportHandledVulnerabilitiesRequestBody.
         :rtype: str
@@ -168,7 +168,7 @@ class ExportHandledVulnerabilitiesRequestBody:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this ExportHandledVulnerabilitiesRequestBody.
 
-        漏洞修复优先级,包含如下 - Critical 紧急  - High 高  - Medium 中  - Low 低
+        漏洞修复优先级,包含如下 - Critical 紧急 - High 高 - Medium 中 - Low 低
 
         :param repair_priority: The repair_priority of this ExportHandledVulnerabilitiesRequestBody.
         :type repair_priority: str

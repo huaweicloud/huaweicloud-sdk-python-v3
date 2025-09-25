@@ -18,6 +18,7 @@ class ClusterList:
 
     openapi_types = {
         'datastore': 'ClusterListDatastore',
+        'snapshot_policy': 'object',
         'instances': 'list[ClusterListInstances]',
         'public_kibana_resp': 'PublicKibanaRespBody',
         'elb_white_list': 'ElbWhiteListResp',
@@ -43,11 +44,14 @@ class ClusterList:
         'failed_reason': 'ClusterListFailedReasons',
         'period': 'bool',
         'bandwidth_resource_id': 'str',
-        'ipv6_endpoint': 'str'
+        'ipv6_endpoint': 'str',
+        'cmk_id': 'str',
+        'current_subnet_ids': 'str'
     }
 
     attribute_map = {
         'datastore': 'datastore',
+        'snapshot_policy': 'snapshotPolicy',
         'instances': 'instances',
         'public_kibana_resp': 'publicKibanaResp',
         'elb_white_list': 'elbWhiteList',
@@ -73,16 +77,20 @@ class ClusterList:
         'failed_reason': 'failedReason',
         'period': 'period',
         'bandwidth_resource_id': 'bandwidthResourceId',
-        'ipv6_endpoint': 'ipv6Endpoint'
+        'ipv6_endpoint': 'ipv6Endpoint',
+        'cmk_id': 'cmkId',
+        'current_subnet_ids': 'currentSubnetIds'
     }
 
-    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None):
+    def __init__(self, datastore=None, snapshot_policy=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None, cmk_id=None, current_subnet_ids=None):
         r"""ClusterList
 
         The model defined in huaweicloud sdk
 
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
+        :param snapshot_policy: 集群自动快照策略相关信息。
+        :type snapshot_policy: object
         :param instances: 节点对象列表。
         :type instances: list[:class:`huaweicloudsdkcss.v1.ClusterListInstances`]
         :param public_kibana_resp: 
@@ -135,11 +143,16 @@ class ClusterList:
         :type bandwidth_resource_id: str
         :param ipv6_endpoint: 集群内网访问IPv6地址和端口号。
         :type ipv6_endpoint: str
+        :param cmk_id: 当前集群使用的磁盘加密密钥ID。
+        :type cmk_id: str
+        :param current_subnet_ids: 集群节点的当前子网。
+        :type current_subnet_ids: str
         """
         
         
 
         self._datastore = None
+        self._snapshot_policy = None
         self._instances = None
         self._public_kibana_resp = None
         self._elb_white_list = None
@@ -166,10 +179,14 @@ class ClusterList:
         self._period = None
         self._bandwidth_resource_id = None
         self._ipv6_endpoint = None
+        self._cmk_id = None
+        self._current_subnet_ids = None
         self.discriminator = None
 
         if datastore is not None:
             self.datastore = datastore
+        if snapshot_policy is not None:
+            self.snapshot_policy = snapshot_policy
         if instances is not None:
             self.instances = instances
         if public_kibana_resp is not None:
@@ -222,6 +239,10 @@ class ClusterList:
             self.bandwidth_resource_id = bandwidth_resource_id
         if ipv6_endpoint is not None:
             self.ipv6_endpoint = ipv6_endpoint
+        if cmk_id is not None:
+            self.cmk_id = cmk_id
+        if current_subnet_ids is not None:
+            self.current_subnet_ids = current_subnet_ids
 
     @property
     def datastore(self):
@@ -240,6 +261,28 @@ class ClusterList:
         :type datastore: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
         """
         self._datastore = datastore
+
+    @property
+    def snapshot_policy(self):
+        r"""Gets the snapshot_policy of this ClusterList.
+
+        集群自动快照策略相关信息。
+
+        :return: The snapshot_policy of this ClusterList.
+        :rtype: object
+        """
+        return self._snapshot_policy
+
+    @snapshot_policy.setter
+    def snapshot_policy(self, snapshot_policy):
+        r"""Sets the snapshot_policy of this ClusterList.
+
+        集群自动快照策略相关信息。
+
+        :param snapshot_policy: The snapshot_policy of this ClusterList.
+        :type snapshot_policy: object
+        """
+        self._snapshot_policy = snapshot_policy
 
     @property
     def instances(self):
@@ -800,6 +843,50 @@ class ClusterList:
         :type ipv6_endpoint: str
         """
         self._ipv6_endpoint = ipv6_endpoint
+
+    @property
+    def cmk_id(self):
+        r"""Gets the cmk_id of this ClusterList.
+
+        当前集群使用的磁盘加密密钥ID。
+
+        :return: The cmk_id of this ClusterList.
+        :rtype: str
+        """
+        return self._cmk_id
+
+    @cmk_id.setter
+    def cmk_id(self, cmk_id):
+        r"""Sets the cmk_id of this ClusterList.
+
+        当前集群使用的磁盘加密密钥ID。
+
+        :param cmk_id: The cmk_id of this ClusterList.
+        :type cmk_id: str
+        """
+        self._cmk_id = cmk_id
+
+    @property
+    def current_subnet_ids(self):
+        r"""Gets the current_subnet_ids of this ClusterList.
+
+        集群节点的当前子网。
+
+        :return: The current_subnet_ids of this ClusterList.
+        :rtype: str
+        """
+        return self._current_subnet_ids
+
+    @current_subnet_ids.setter
+    def current_subnet_ids(self, current_subnet_ids):
+        r"""Sets the current_subnet_ids of this ClusterList.
+
+        集群节点的当前子网。
+
+        :param current_subnet_ids: The current_subnet_ids of this ClusterList.
+        :type current_subnet_ids: str
+        """
+        self._current_subnet_ids = current_subnet_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

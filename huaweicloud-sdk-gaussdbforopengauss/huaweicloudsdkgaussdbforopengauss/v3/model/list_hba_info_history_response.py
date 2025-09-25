@@ -18,58 +18,58 @@ class ListHbaInfoHistoryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'hba_confs': 'list[HbaHistoryResult]',
+        'hba_histories': 'list[HbaHistoryResult]',
         'total_count': 'int'
     }
 
     attribute_map = {
-        'hba_confs': 'hba_confs',
+        'hba_histories': 'hba_histories',
         'total_count': 'total_count'
     }
 
-    def __init__(self, hba_confs=None, total_count=None):
+    def __init__(self, hba_histories=None, total_count=None):
         r"""ListHbaInfoHistoryResponse
 
         The model defined in huaweicloud sdk
 
-        :param hba_confs: **参数解释**: hba修改历史信息。
-        :type hba_confs: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HbaHistoryResult`]
+        :param hba_histories: **参数解释**: hba修改历史信息。
+        :type hba_histories: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HbaHistoryResult`]
         :param total_count: **参数解释**: hba配置总数。 **取值范围**: 不涉及。
         :type total_count: int
         """
         
         super(ListHbaInfoHistoryResponse, self).__init__()
 
-        self._hba_confs = None
+        self._hba_histories = None
         self._total_count = None
         self.discriminator = None
 
-        if hba_confs is not None:
-            self.hba_confs = hba_confs
+        if hba_histories is not None:
+            self.hba_histories = hba_histories
         if total_count is not None:
             self.total_count = total_count
 
     @property
-    def hba_confs(self):
-        r"""Gets the hba_confs of this ListHbaInfoHistoryResponse.
+    def hba_histories(self):
+        r"""Gets the hba_histories of this ListHbaInfoHistoryResponse.
 
         **参数解释**: hba修改历史信息。
 
-        :return: The hba_confs of this ListHbaInfoHistoryResponse.
+        :return: The hba_histories of this ListHbaInfoHistoryResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HbaHistoryResult`]
         """
-        return self._hba_confs
+        return self._hba_histories
 
-    @hba_confs.setter
-    def hba_confs(self, hba_confs):
-        r"""Sets the hba_confs of this ListHbaInfoHistoryResponse.
+    @hba_histories.setter
+    def hba_histories(self, hba_histories):
+        r"""Sets the hba_histories of this ListHbaInfoHistoryResponse.
 
         **参数解释**: hba修改历史信息。
 
-        :param hba_confs: The hba_confs of this ListHbaInfoHistoryResponse.
-        :type hba_confs: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HbaHistoryResult`]
+        :param hba_histories: The hba_histories of this ListHbaInfoHistoryResponse.
+        :type hba_histories: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.HbaHistoryResult`]
         """
-        self._hba_confs = hba_confs
+        self._hba_histories = hba_histories
 
     @property
     def total_count(self):

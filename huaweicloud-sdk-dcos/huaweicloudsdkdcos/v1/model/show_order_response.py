@@ -74,11 +74,11 @@ class ShowOrderResponse(SdkResponse):
         :type number: str
         :param title: 标题
         :type title: str
-        :param type: 工单类型:IDC运维 设备运维 设备检查 客户陪同
+        :param type: 服务单类型:IDC运维 设备运维 设备检查 客户陪同
         :type type: str
         :param sub_type: 具体操作类型:设备物理上下电
         :type sub_type: str
-        :param model_code: 工单类型编码
+        :param model_code: 服务单类型编码
         :type model_code: str
         :param operation_objects: 操作对象
         :type operation_objects: list[:class:`huaweicloudsdkdcos.v1.OperationObject`]
@@ -100,7 +100,7 @@ class ShowOrderResponse(SdkResponse):
         :type stage: str
         :param status: 当前状态
         :type status: str
-        :param logs: 工单日志
+        :param logs: 服务单日志
         :type logs: list[:class:`huaweicloudsdkdcos.v1.OrderLog`]
         :param fields: 扩展字段
         :type fields: list[:class:`huaweicloudsdkdcos.v1.FieldEntity`]
@@ -230,7 +230,7 @@ class ShowOrderResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowOrderResponse.
 
-        工单类型:IDC运维 设备运维 设备检查 客户陪同
+        服务单类型:IDC运维 设备运维 设备检查 客户陪同
 
         :return: The type of this ShowOrderResponse.
         :rtype: str
@@ -241,7 +241,7 @@ class ShowOrderResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowOrderResponse.
 
-        工单类型:IDC运维 设备运维 设备检查 客户陪同
+        服务单类型:IDC运维 设备运维 设备检查 客户陪同
 
         :param type: The type of this ShowOrderResponse.
         :type type: str
@@ -274,7 +274,7 @@ class ShowOrderResponse(SdkResponse):
     def model_code(self):
         r"""Gets the model_code of this ShowOrderResponse.
 
-        工单类型编码
+        服务单类型编码
 
         :return: The model_code of this ShowOrderResponse.
         :rtype: str
@@ -285,7 +285,7 @@ class ShowOrderResponse(SdkResponse):
     def model_code(self, model_code):
         r"""Sets the model_code of this ShowOrderResponse.
 
-        工单类型编码
+        服务单类型编码
 
         :param model_code: The model_code of this ShowOrderResponse.
         :type model_code: str
@@ -508,7 +508,7 @@ class ShowOrderResponse(SdkResponse):
     def logs(self):
         r"""Gets the logs of this ShowOrderResponse.
 
-        工单日志
+        服务单日志
 
         :return: The logs of this ShowOrderResponse.
         :rtype: list[:class:`huaweicloudsdkdcos.v1.OrderLog`]
@@ -519,7 +519,7 @@ class ShowOrderResponse(SdkResponse):
     def logs(self, logs):
         r"""Sets the logs of this ShowOrderResponse.
 
-        工单日志
+        服务单日志
 
         :param logs: The logs of this ShowOrderResponse.
         :type logs: list[:class:`huaweicloudsdkdcos.v1.OrderLog`]

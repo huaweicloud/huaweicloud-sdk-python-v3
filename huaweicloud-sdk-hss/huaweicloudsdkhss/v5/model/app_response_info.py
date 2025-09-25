@@ -23,10 +23,11 @@ class AppResponseInfo:
         'host_ip': 'str',
         'app_name': 'str',
         'version': 'str',
-        'update_time': 'int',
-        'recent_scan_time': 'int',
+        'install_dir': 'str',
         'container_id': 'str',
-        'container_name': 'str'
+        'container_name': 'str',
+        'recent_scan_time': 'int',
+        'update_time': 'int'
     }
 
     attribute_map = {
@@ -36,37 +37,40 @@ class AppResponseInfo:
         'host_ip': 'host_ip',
         'app_name': 'app_name',
         'version': 'version',
-        'update_time': 'update_time',
-        'recent_scan_time': 'recent_scan_time',
+        'install_dir': 'install_dir',
         'container_id': 'container_id',
-        'container_name': 'container_name'
+        'container_name': 'container_name',
+        'recent_scan_time': 'recent_scan_time',
+        'update_time': 'update_time'
     }
 
-    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, app_name=None, version=None, update_time=None, recent_scan_time=None, container_id=None, container_name=None):
+    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, app_name=None, version=None, install_dir=None, container_id=None, container_name=None, recent_scan_time=None, update_time=None):
         r"""AppResponseInfo
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
+        :param agent_id: **参数解释**： agent ID **取值范围**： 不涉及 
         :type agent_id: str
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器 ID **取值范围**： 不涉及 
         :type host_id: str
-        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
+        :param host_name: **参数解释**： 服务器名称 **取值范围**： 不涉及 
         :type host_name: str
-        :param host_ip: **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        :param host_ip: **参数解释**： 服务器 IP **取值范围**： 不涉及 
         :type host_ip: str
-        :param app_name: **参数解释**: 软件名称 **取值范围**: 字符长度1-256位 
+        :param app_name: **参数解释**： 软件名称 **取值范围**： 不涉及 
         :type app_name: str
-        :param version: **参数解释**: 版本号 **取值范围**: 字符长度1-128位 
+        :param version: **参数解释**： 软件版本 **取值范围**： 不涉及 
         :type version: str
-        :param update_time: **参数解释**: 更新时间，最近一次更新的时间，用毫秒表示 **取值范围**: 最小值0，最大值9223372036854775807 
-        :type update_time: int
-        :param recent_scan_time: **参数解释**: 最近扫描时间，用毫秒表示 **取值范围**: 最小值0，最大值9223372036854775807 
-        :type recent_scan_time: int
-        :param container_id: **参数解释**: 容器ID **取值范围**: 字符长度1-128位 
+        :param install_dir: **参数解释**： 软件安装路径 **取值范围**： 不涉及 
+        :type install_dir: str
+        :param container_id: **参数解释**： 容器 ID **取值范围**： 不涉及 
         :type container_id: str
-        :param container_name: **参数解释**： 容器实例名称，只有容器类型的告警有 **取值范围**： 字符长度1-256位 
+        :param container_name: **参数解释**： 容器名称 **取值范围**： 不涉及 
         :type container_name: str
+        :param recent_scan_time: **参数解释** 最近扫描时间 **取值范围** 不涉及 
+        :type recent_scan_time: int
+        :param update_time: **参数解释** 更新时间 **取值范围** 不涉及 
+        :type update_time: int
         """
         
         
@@ -77,10 +81,11 @@ class AppResponseInfo:
         self._host_ip = None
         self._app_name = None
         self._version = None
-        self._update_time = None
-        self._recent_scan_time = None
+        self._install_dir = None
         self._container_id = None
         self._container_name = None
+        self._recent_scan_time = None
+        self._update_time = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -95,20 +100,22 @@ class AppResponseInfo:
             self.app_name = app_name
         if version is not None:
             self.version = version
-        if update_time is not None:
-            self.update_time = update_time
-        if recent_scan_time is not None:
-            self.recent_scan_time = recent_scan_time
+        if install_dir is not None:
+            self.install_dir = install_dir
         if container_id is not None:
             self.container_id = container_id
         if container_name is not None:
             self.container_name = container_name
+        if recent_scan_time is not None:
+            self.recent_scan_time = recent_scan_time
+        if update_time is not None:
+            self.update_time = update_time
 
     @property
     def agent_id(self):
         r"""Gets the agent_id of this AppResponseInfo.
 
-        **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
+        **参数解释**： agent ID **取值范围**： 不涉及 
 
         :return: The agent_id of this AppResponseInfo.
         :rtype: str
@@ -119,7 +126,7 @@ class AppResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this AppResponseInfo.
 
-        **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
+        **参数解释**： agent ID **取值范围**： 不涉及 
 
         :param agent_id: The agent_id of this AppResponseInfo.
         :type agent_id: str
@@ -130,7 +137,7 @@ class AppResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AppResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器 ID **取值范围**： 不涉及 
 
         :return: The host_id of this AppResponseInfo.
         :rtype: str
@@ -141,7 +148,7 @@ class AppResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AppResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器 ID **取值范围**： 不涉及 
 
         :param host_id: The host_id of this AppResponseInfo.
         :type host_id: str
@@ -152,7 +159,7 @@ class AppResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this AppResponseInfo.
 
-        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
+        **参数解释**： 服务器名称 **取值范围**： 不涉及 
 
         :return: The host_name of this AppResponseInfo.
         :rtype: str
@@ -163,7 +170,7 @@ class AppResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this AppResponseInfo.
 
-        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
+        **参数解释**： 服务器名称 **取值范围**： 不涉及 
 
         :param host_name: The host_name of this AppResponseInfo.
         :type host_name: str
@@ -174,7 +181,7 @@ class AppResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this AppResponseInfo.
 
-        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        **参数解释**： 服务器 IP **取值范围**： 不涉及 
 
         :return: The host_ip of this AppResponseInfo.
         :rtype: str
@@ -185,7 +192,7 @@ class AppResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this AppResponseInfo.
 
-        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        **参数解释**： 服务器 IP **取值范围**： 不涉及 
 
         :param host_ip: The host_ip of this AppResponseInfo.
         :type host_ip: str
@@ -196,7 +203,7 @@ class AppResponseInfo:
     def app_name(self):
         r"""Gets the app_name of this AppResponseInfo.
 
-        **参数解释**: 软件名称 **取值范围**: 字符长度1-256位 
+        **参数解释**： 软件名称 **取值范围**： 不涉及 
 
         :return: The app_name of this AppResponseInfo.
         :rtype: str
@@ -207,7 +214,7 @@ class AppResponseInfo:
     def app_name(self, app_name):
         r"""Sets the app_name of this AppResponseInfo.
 
-        **参数解释**: 软件名称 **取值范围**: 字符长度1-256位 
+        **参数解释**： 软件名称 **取值范围**： 不涉及 
 
         :param app_name: The app_name of this AppResponseInfo.
         :type app_name: str
@@ -218,7 +225,7 @@ class AppResponseInfo:
     def version(self):
         r"""Gets the version of this AppResponseInfo.
 
-        **参数解释**: 版本号 **取值范围**: 字符长度1-128位 
+        **参数解释**： 软件版本 **取值范围**： 不涉及 
 
         :return: The version of this AppResponseInfo.
         :rtype: str
@@ -229,7 +236,7 @@ class AppResponseInfo:
     def version(self, version):
         r"""Sets the version of this AppResponseInfo.
 
-        **参数解释**: 版本号 **取值范围**: 字符长度1-128位 
+        **参数解释**： 软件版本 **取值范围**： 不涉及 
 
         :param version: The version of this AppResponseInfo.
         :type version: str
@@ -237,54 +244,32 @@ class AppResponseInfo:
         self._version = version
 
     @property
-    def update_time(self):
-        r"""Gets the update_time of this AppResponseInfo.
+    def install_dir(self):
+        r"""Gets the install_dir of this AppResponseInfo.
 
-        **参数解释**: 更新时间，最近一次更新的时间，用毫秒表示 **取值范围**: 最小值0，最大值9223372036854775807 
+        **参数解释**： 软件安装路径 **取值范围**： 不涉及 
 
-        :return: The update_time of this AppResponseInfo.
-        :rtype: int
+        :return: The install_dir of this AppResponseInfo.
+        :rtype: str
         """
-        return self._update_time
+        return self._install_dir
 
-    @update_time.setter
-    def update_time(self, update_time):
-        r"""Sets the update_time of this AppResponseInfo.
+    @install_dir.setter
+    def install_dir(self, install_dir):
+        r"""Sets the install_dir of this AppResponseInfo.
 
-        **参数解释**: 更新时间，最近一次更新的时间，用毫秒表示 **取值范围**: 最小值0，最大值9223372036854775807 
+        **参数解释**： 软件安装路径 **取值范围**： 不涉及 
 
-        :param update_time: The update_time of this AppResponseInfo.
-        :type update_time: int
+        :param install_dir: The install_dir of this AppResponseInfo.
+        :type install_dir: str
         """
-        self._update_time = update_time
-
-    @property
-    def recent_scan_time(self):
-        r"""Gets the recent_scan_time of this AppResponseInfo.
-
-        **参数解释**: 最近扫描时间，用毫秒表示 **取值范围**: 最小值0，最大值9223372036854775807 
-
-        :return: The recent_scan_time of this AppResponseInfo.
-        :rtype: int
-        """
-        return self._recent_scan_time
-
-    @recent_scan_time.setter
-    def recent_scan_time(self, recent_scan_time):
-        r"""Sets the recent_scan_time of this AppResponseInfo.
-
-        **参数解释**: 最近扫描时间，用毫秒表示 **取值范围**: 最小值0，最大值9223372036854775807 
-
-        :param recent_scan_time: The recent_scan_time of this AppResponseInfo.
-        :type recent_scan_time: int
-        """
-        self._recent_scan_time = recent_scan_time
+        self._install_dir = install_dir
 
     @property
     def container_id(self):
         r"""Gets the container_id of this AppResponseInfo.
 
-        **参数解释**: 容器ID **取值范围**: 字符长度1-128位 
+        **参数解释**： 容器 ID **取值范围**： 不涉及 
 
         :return: The container_id of this AppResponseInfo.
         :rtype: str
@@ -295,7 +280,7 @@ class AppResponseInfo:
     def container_id(self, container_id):
         r"""Sets the container_id of this AppResponseInfo.
 
-        **参数解释**: 容器ID **取值范围**: 字符长度1-128位 
+        **参数解释**： 容器 ID **取值范围**： 不涉及 
 
         :param container_id: The container_id of this AppResponseInfo.
         :type container_id: str
@@ -306,7 +291,7 @@ class AppResponseInfo:
     def container_name(self):
         r"""Gets the container_name of this AppResponseInfo.
 
-        **参数解释**： 容器实例名称，只有容器类型的告警有 **取值范围**： 字符长度1-256位 
+        **参数解释**： 容器名称 **取值范围**： 不涉及 
 
         :return: The container_name of this AppResponseInfo.
         :rtype: str
@@ -317,12 +302,56 @@ class AppResponseInfo:
     def container_name(self, container_name):
         r"""Sets the container_name of this AppResponseInfo.
 
-        **参数解释**： 容器实例名称，只有容器类型的告警有 **取值范围**： 字符长度1-256位 
+        **参数解释**： 容器名称 **取值范围**： 不涉及 
 
         :param container_name: The container_name of this AppResponseInfo.
         :type container_name: str
         """
         self._container_name = container_name
+
+    @property
+    def recent_scan_time(self):
+        r"""Gets the recent_scan_time of this AppResponseInfo.
+
+        **参数解释** 最近扫描时间 **取值范围** 不涉及 
+
+        :return: The recent_scan_time of this AppResponseInfo.
+        :rtype: int
+        """
+        return self._recent_scan_time
+
+    @recent_scan_time.setter
+    def recent_scan_time(self, recent_scan_time):
+        r"""Sets the recent_scan_time of this AppResponseInfo.
+
+        **参数解释** 最近扫描时间 **取值范围** 不涉及 
+
+        :param recent_scan_time: The recent_scan_time of this AppResponseInfo.
+        :type recent_scan_time: int
+        """
+        self._recent_scan_time = recent_scan_time
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this AppResponseInfo.
+
+        **参数解释** 更新时间 **取值范围** 不涉及 
+
+        :return: The update_time of this AppResponseInfo.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this AppResponseInfo.
+
+        **参数解释** 更新时间 **取值范围** 不涉及 
+
+        :param update_time: The update_time of this AppResponseInfo.
+        :type update_time: int
+        """
+        self._update_time = update_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

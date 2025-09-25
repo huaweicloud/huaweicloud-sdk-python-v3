@@ -67,15 +67,15 @@ class ClusterConfigResponseInfo:
         :type node_total_num: int
         :param cluster_name: 集群名称
         :type cluster_name: str
-        :param charging_mode: **参数解释**: 付费模式           **约束限制**: 不涉及 **取值范围**: 包含以下两种： - on_demand：按需。 - free：免费。  **默认取值**: 不涉及 
+        :param charging_mode: **参数解释**: 付费模式 **取值范围**: 包含以下两种： - on_demand：按需。 - free：免费。 
         :type charging_mode: str
         :param prefer_packet_cycle: 优先使用包周期配额；默认0
         :type prefer_packet_cycle: int
-        :param protect_type: cce集群防护类型
+        :param protect_type: **参数解释**: cce集群防护类型 **取值范围**: - cluster_level：集群级别。 - node_level：节点级别。 
         :type protect_type: str
-        :param protect_status: **参数解释**: 防护状态           **约束限制**: 不涉及 **取值范围**: - protecting：防护中。 - part_protect：部分防护。 - creating：开启中。 - error_protect：防护异常。 - unprotect：未防护。 - wait_protect：待防护。  **默认取值**: 不涉及 
+        :param protect_status: **参数解释**: 防护状态 **取值范围**: - protecting：防护中。 - part_protect：部分防护。 - creating：开启中。 - error_protect：防护异常。 - unprotect：未防护。 - wait_protect：待防护。 
         :type protect_status: str
-        :param cluster_type: 集群类型
+        :param cluster_type: **参数解释**: 集群类型 **取值范围**: - existing：存量集群。 - adding：新增集群。 
         :type cluster_type: str
         :param fail_reason: fail reason
         :type fail_reason: str
@@ -283,7 +283,7 @@ class ClusterConfigResponseInfo:
     def charging_mode(self):
         r"""Gets the charging_mode of this ClusterConfigResponseInfo.
 
-        **参数解释**: 付费模式           **约束限制**: 不涉及 **取值范围**: 包含以下两种： - on_demand：按需。 - free：免费。  **默认取值**: 不涉及 
+        **参数解释**: 付费模式 **取值范围**: 包含以下两种： - on_demand：按需。 - free：免费。 
 
         :return: The charging_mode of this ClusterConfigResponseInfo.
         :rtype: str
@@ -294,7 +294,7 @@ class ClusterConfigResponseInfo:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ClusterConfigResponseInfo.
 
-        **参数解释**: 付费模式           **约束限制**: 不涉及 **取值范围**: 包含以下两种： - on_demand：按需。 - free：免费。  **默认取值**: 不涉及 
+        **参数解释**: 付费模式 **取值范围**: 包含以下两种： - on_demand：按需。 - free：免费。 
 
         :param charging_mode: The charging_mode of this ClusterConfigResponseInfo.
         :type charging_mode: str
@@ -327,7 +327,7 @@ class ClusterConfigResponseInfo:
     def protect_type(self):
         r"""Gets the protect_type of this ClusterConfigResponseInfo.
 
-        cce集群防护类型
+        **参数解释**: cce集群防护类型 **取值范围**: - cluster_level：集群级别。 - node_level：节点级别。 
 
         :return: The protect_type of this ClusterConfigResponseInfo.
         :rtype: str
@@ -338,7 +338,7 @@ class ClusterConfigResponseInfo:
     def protect_type(self, protect_type):
         r"""Sets the protect_type of this ClusterConfigResponseInfo.
 
-        cce集群防护类型
+        **参数解释**: cce集群防护类型 **取值范围**: - cluster_level：集群级别。 - node_level：节点级别。 
 
         :param protect_type: The protect_type of this ClusterConfigResponseInfo.
         :type protect_type: str
@@ -349,7 +349,7 @@ class ClusterConfigResponseInfo:
     def protect_status(self):
         r"""Gets the protect_status of this ClusterConfigResponseInfo.
 
-        **参数解释**: 防护状态           **约束限制**: 不涉及 **取值范围**: - protecting：防护中。 - part_protect：部分防护。 - creating：开启中。 - error_protect：防护异常。 - unprotect：未防护。 - wait_protect：待防护。  **默认取值**: 不涉及 
+        **参数解释**: 防护状态 **取值范围**: - protecting：防护中。 - part_protect：部分防护。 - creating：开启中。 - error_protect：防护异常。 - unprotect：未防护。 - wait_protect：待防护。 
 
         :return: The protect_status of this ClusterConfigResponseInfo.
         :rtype: str
@@ -360,7 +360,7 @@ class ClusterConfigResponseInfo:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ClusterConfigResponseInfo.
 
-        **参数解释**: 防护状态           **约束限制**: 不涉及 **取值范围**: - protecting：防护中。 - part_protect：部分防护。 - creating：开启中。 - error_protect：防护异常。 - unprotect：未防护。 - wait_protect：待防护。  **默认取值**: 不涉及 
+        **参数解释**: 防护状态 **取值范围**: - protecting：防护中。 - part_protect：部分防护。 - creating：开启中。 - error_protect：防护异常。 - unprotect：未防护。 - wait_protect：待防护。 
 
         :param protect_status: The protect_status of this ClusterConfigResponseInfo.
         :type protect_status: str
@@ -371,7 +371,7 @@ class ClusterConfigResponseInfo:
     def cluster_type(self):
         r"""Gets the cluster_type of this ClusterConfigResponseInfo.
 
-        集群类型
+        **参数解释**: 集群类型 **取值范围**: - existing：存量集群。 - adding：新增集群。 
 
         :return: The cluster_type of this ClusterConfigResponseInfo.
         :rtype: str
@@ -382,7 +382,7 @@ class ClusterConfigResponseInfo:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this ClusterConfigResponseInfo.
 
-        集群类型
+        **参数解释**: 集群类型 **取值范围**: - existing：存量集群。 - adding：新增集群。 
 
         :param cluster_type: The cluster_type of this ClusterConfigResponseInfo.
         :type cluster_type: str

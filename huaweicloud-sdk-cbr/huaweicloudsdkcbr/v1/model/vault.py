@@ -34,7 +34,8 @@ class Vault:
         'smn_notify': 'bool',
         'threshold': 'int',
         'sys_lock_source_service': 'str',
-        'locked': 'bool'
+        'locked': 'bool',
+        'availability_zone': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class Vault:
         'smn_notify': 'smn_notify',
         'threshold': 'threshold',
         'sys_lock_source_service': 'sys_lock_source_service',
-        'locked': 'locked'
+        'locked': 'locked',
+        'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, sys_lock_source_service=None, locked=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, sys_lock_source_service=None, locked=None, availability_zone=None):
         r"""Vault
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class Vault:
         :type sys_lock_source_service: str
         :param locked: 用于标识该存储库是否已锁定
         :type locked: bool
+        :param availability_zone: 存储库可用区信息，最大支持32字符。
+        :type availability_zone: str
         """
         
         
@@ -121,6 +125,7 @@ class Vault:
         self._threshold = None
         self._sys_lock_source_service = None
         self._locked = None
+        self._availability_zone = None
         self.discriminator = None
 
         self.billing = billing
@@ -153,6 +158,8 @@ class Vault:
             self.sys_lock_source_service = sys_lock_source_service
         if locked is not None:
             self.locked = locked
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
 
     @property
     def billing(self):
@@ -541,6 +548,28 @@ class Vault:
         :type locked: bool
         """
         self._locked = locked
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this Vault.
+
+        存储库可用区信息，最大支持32字符。
+
+        :return: The availability_zone of this Vault.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this Vault.
+
+        存储库可用区信息，最大支持32字符。
+
+        :param availability_zone: The availability_zone of this Vault.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

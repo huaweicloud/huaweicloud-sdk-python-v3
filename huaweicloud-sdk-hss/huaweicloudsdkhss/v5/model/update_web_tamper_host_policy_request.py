@@ -35,7 +35,7 @@ class UpdateWebTamperHostPolicyRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param host_id: 服务器id
+        :param host_id: **参数解释**: 服务器ID，要求服务器已开启网页防篡改防护 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，protect_status 等于 opened，open_failed，protection_pause或partial_protection 的 host_id 是符合修改条件的服务器ID **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_id: str
         :param body: Body of the UpdateWebTamperHostPolicyRequest
         :type body: :class:`huaweicloudsdkhss.v5.UpdateWebTamperHostPolicyRequestInfo`
@@ -80,7 +80,7 @@ class UpdateWebTamperHostPolicyRequest:
     def host_id(self):
         r"""Gets the host_id of this UpdateWebTamperHostPolicyRequest.
 
-        服务器id
+        **参数解释**: 服务器ID，要求服务器已开启网页防篡改防护 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，protect_status 等于 opened，open_failed，protection_pause或partial_protection 的 host_id 是符合修改条件的服务器ID **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_id of this UpdateWebTamperHostPolicyRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class UpdateWebTamperHostPolicyRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this UpdateWebTamperHostPolicyRequest.
 
-        服务器id
+        **参数解释**: 服务器ID，要求服务器已开启网页防篡改防护 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，protect_status 等于 opened，open_failed，protection_pause或partial_protection 的 host_id 是符合修改条件的服务器ID **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this UpdateWebTamperHostPolicyRequest.
         :type host_id: str

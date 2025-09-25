@@ -31,9 +31,9 @@ class TimingRangeConfigRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param time_range: **参数解释**: 自动关闭防护的时间段范围 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
+        :param time_range: **参数解释**: 自动关闭防护的时间段范围，开始时间与结束之间用中划线相连，如15:00-15:30。 **约束限制**: 每个时间段最短不能少于5分钟。多个时间段之间不允许重叠，且两段时间间隔必须大于5分钟（时间00:00和23:59特例除外）。 **取值范围**: 字符长度0-20位 **默认取值**: 不涉及 
         :type time_range: str
-        :param description: **参数解释**: 自动关闭防护的时间段描述 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
+        :param description: **参数解释**: 自动关闭防护的时间段描述 **约束限制**: 不涉及 **取值范围**: 字符长度0-20位 **默认取值**: 不涉及 
         :type description: str
         """
         
@@ -52,7 +52,7 @@ class TimingRangeConfigRequestInfo:
     def time_range(self):
         r"""Gets the time_range of this TimingRangeConfigRequestInfo.
 
-        **参数解释**: 自动关闭防护的时间段范围 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
+        **参数解释**: 自动关闭防护的时间段范围，开始时间与结束之间用中划线相连，如15:00-15:30。 **约束限制**: 每个时间段最短不能少于5分钟。多个时间段之间不允许重叠，且两段时间间隔必须大于5分钟（时间00:00和23:59特例除外）。 **取值范围**: 字符长度0-20位 **默认取值**: 不涉及 
 
         :return: The time_range of this TimingRangeConfigRequestInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class TimingRangeConfigRequestInfo:
     def time_range(self, time_range):
         r"""Sets the time_range of this TimingRangeConfigRequestInfo.
 
-        **参数解释**: 自动关闭防护的时间段范围 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
+        **参数解释**: 自动关闭防护的时间段范围，开始时间与结束之间用中划线相连，如15:00-15:30。 **约束限制**: 每个时间段最短不能少于5分钟。多个时间段之间不允许重叠，且两段时间间隔必须大于5分钟（时间00:00和23:59特例除外）。 **取值范围**: 字符长度0-20位 **默认取值**: 不涉及 
 
         :param time_range: The time_range of this TimingRangeConfigRequestInfo.
         :type time_range: str
@@ -74,7 +74,7 @@ class TimingRangeConfigRequestInfo:
     def description(self):
         r"""Gets the description of this TimingRangeConfigRequestInfo.
 
-        **参数解释**: 自动关闭防护的时间段描述 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
+        **参数解释**: 自动关闭防护的时间段描述 **约束限制**: 不涉及 **取值范围**: 字符长度0-20位 **默认取值**: 不涉及 
 
         :return: The description of this TimingRangeConfigRequestInfo.
         :rtype: str
@@ -85,7 +85,7 @@ class TimingRangeConfigRequestInfo:
     def description(self, description):
         r"""Sets the description of this TimingRangeConfigRequestInfo.
 
-        **参数解释**: 自动关闭防护的时间段描述 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
+        **参数解释**: 自动关闭防护的时间段描述 **约束限制**: 不涉及 **取值范围**: 字符长度0-20位 **默认取值**: 不涉及 
 
         :param description: The description of this TimingRangeConfigRequestInfo.
         :type description: str

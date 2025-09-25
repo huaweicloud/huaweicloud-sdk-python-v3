@@ -65,7 +65,7 @@ class ListAntiVirusHostRequest:
         :type private_ip: str
         :param public_ip: 服务器公网IP
         :type public_ip: str
-        :param group_id: 服务器组ID
+        :param group_id: **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type group_id: str
         :param scan_type: 任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
         :type scan_type: str
@@ -272,7 +272,7 @@ class ListAntiVirusHostRequest:
     def group_id(self):
         r"""Gets the group_id of this ListAntiVirusHostRequest.
 
-        服务器组ID
+        **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The group_id of this ListAntiVirusHostRequest.
         :rtype: str
@@ -283,7 +283,7 @@ class ListAntiVirusHostRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ListAntiVirusHostRequest.
 
-        服务器组ID
+        **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param group_id: The group_id of this ListAntiVirusHostRequest.
         :type group_id: str

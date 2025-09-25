@@ -20,7 +20,7 @@ class Confs:
         'name': 'str',
         'status': 'str',
         'conf_content': 'str',
-        'setting': 'Confsetting',
+        'setting': 'Setting',
         'update_at': 'str'
     }
 
@@ -44,7 +44,7 @@ class Confs:
         :param conf_content: 配置文件内容。
         :type conf_content: str
         :param setting: 
-        :type setting: :class:`huaweicloudsdkcss.v1.Confsetting`
+        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
         :param update_at: 更新时间。
         :type update_at: str
         """
@@ -140,7 +140,7 @@ class Confs:
         r"""Gets the setting of this Confs.
 
         :return: The setting of this Confs.
-        :rtype: :class:`huaweicloudsdkcss.v1.Confsetting`
+        :rtype: :class:`huaweicloudsdkcss.v1.Setting`
         """
         return self._setting
 
@@ -149,7 +149,7 @@ class Confs:
         r"""Sets the setting of this Confs.
 
         :param setting: The setting of this Confs.
-        :type setting: :class:`huaweicloudsdkcss.v1.Confsetting`
+        :type setting: :class:`huaweicloudsdkcss.v1.Setting`
         """
         self._setting = setting
 

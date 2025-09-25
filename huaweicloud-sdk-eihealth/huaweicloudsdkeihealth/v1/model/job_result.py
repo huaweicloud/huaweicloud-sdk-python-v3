@@ -19,16 +19,20 @@ class JobResult:
     openapi_types = {
         'total_count': 'int',
         'failed_count': 'int',
-        'sub_tasks_duration': 'list[float]'
+        'sub_tasks_duration': 'list[float]',
+        'num_molecules': 'int',
+        'success_count': 'int'
     }
 
     attribute_map = {
         'total_count': 'total_count',
         'failed_count': 'failed_count',
-        'sub_tasks_duration': 'sub_tasks_duration'
+        'sub_tasks_duration': 'sub_tasks_duration',
+        'num_molecules': 'num_molecules',
+        'success_count': 'success_count'
     }
 
-    def __init__(self, total_count=None, failed_count=None, sub_tasks_duration=None):
+    def __init__(self, total_count=None, failed_count=None, sub_tasks_duration=None, num_molecules=None, success_count=None):
         r"""JobResult
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class JobResult:
         :type failed_count: int
         :param sub_tasks_duration: 子任务运行时长（秒）。
         :type sub_tasks_duration: list[float]
+        :param num_molecules: **参数解释**： 分子聚类任务中的分子总数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type num_molecules: int
+        :param success_count: **参数解释**： 聚类成功的分子数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type success_count: int
         """
         
         
@@ -46,6 +54,8 @@ class JobResult:
         self._total_count = None
         self._failed_count = None
         self._sub_tasks_duration = None
+        self._num_molecules = None
+        self._success_count = None
         self.discriminator = None
 
         if total_count is not None:
@@ -54,6 +64,10 @@ class JobResult:
             self.failed_count = failed_count
         if sub_tasks_duration is not None:
             self.sub_tasks_duration = sub_tasks_duration
+        if num_molecules is not None:
+            self.num_molecules = num_molecules
+        if success_count is not None:
+            self.success_count = success_count
 
     @property
     def total_count(self):
@@ -120,6 +134,50 @@ class JobResult:
         :type sub_tasks_duration: list[float]
         """
         self._sub_tasks_duration = sub_tasks_duration
+
+    @property
+    def num_molecules(self):
+        r"""Gets the num_molecules of this JobResult.
+
+        **参数解释**： 分子聚类任务中的分子总数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The num_molecules of this JobResult.
+        :rtype: int
+        """
+        return self._num_molecules
+
+    @num_molecules.setter
+    def num_molecules(self, num_molecules):
+        r"""Sets the num_molecules of this JobResult.
+
+        **参数解释**： 分子聚类任务中的分子总数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param num_molecules: The num_molecules of this JobResult.
+        :type num_molecules: int
+        """
+        self._num_molecules = num_molecules
+
+    @property
+    def success_count(self):
+        r"""Gets the success_count of this JobResult.
+
+        **参数解释**： 聚类成功的分子数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The success_count of this JobResult.
+        :rtype: int
+        """
+        return self._success_count
+
+    @success_count.setter
+    def success_count(self, success_count):
+        r"""Sets the success_count of this JobResult.
+
+        **参数解释**： 聚类成功的分子数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param success_count: The success_count of this JobResult.
+        :type success_count: int
+        """
+        self._success_count = success_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

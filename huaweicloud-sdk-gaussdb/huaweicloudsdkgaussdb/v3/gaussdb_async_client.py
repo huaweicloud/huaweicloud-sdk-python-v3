@@ -8329,6 +8329,75 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def show_slow_log_detail_async(self, request):
+        r"""获取StarRocks实例内核慢日志信息
+
+        获取StarRocks实例内核慢日志信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSlowLogDetail
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSlowLogDetailRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSlowLogDetailResponse`
+        """
+        http_info = self._show_slow_log_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_slow_log_detail_async_invoker(self, request):
+        http_info = self._show_slow_log_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_slow_log_detail_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/slow-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSlowLogDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_slow_log_statistics_async(self, request):
         r"""查询慢日志统计信息
 
@@ -8574,6 +8643,73 @@ class GaussDBAsyncClient(Client):
             query_params.append(('node_id', local_var_params['node_id']))
         if 'sql_type' in local_var_params:
             query_params.append(('sql_type', local_var_params['sql_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_star_rocks_slowlog_sensitive_status_async(self, request):
+        r"""查询StarRocks实例慢日志脱敏状态
+
+        查询StarRocks实例慢日志脱敏状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStarRocksSlowlogSensitiveStatus
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowStarRocksSlowlogSensitiveStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowStarRocksSlowlogSensitiveStatusResponse`
+        """
+        http_info = self._show_star_rocks_slowlog_sensitive_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_star_rocks_slowlog_sensitive_status_async_invoker(self, request):
+        http_info = self._show_star_rocks_slowlog_sensitive_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_star_rocks_slowlog_sensitive_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/slowlog-sensitive",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStarRocksSlowlogSensitiveStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -10859,6 +10995,75 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/serverless/policy",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateServerlessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_slowlog_sensitive_status_async(self, request):
+        r"""开启或关闭StarRocks实例慢日志脱敏状态
+
+        开启或关闭StarRocks实例慢日志脱敏状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateSlowlogSensitiveStatus
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateSlowlogSensitiveStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateSlowlogSensitiveStatusResponse`
+        """
+        http_info = self._update_slowlog_sensitive_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_slowlog_sensitive_status_async_invoker(self, request):
+        http_info = self._update_slowlog_sensitive_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_slowlog_sensitive_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/starrocks/slowlog-sensitive",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSlowlogSensitiveStatusResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

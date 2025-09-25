@@ -51,7 +51,7 @@ class AntiVirusHostResponseInfo:
         :type private_ip: str
         :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux   - Windows ：Winodws
+        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux   - Windows ：Windows
         :type os_type: str
         :param group_id: 服务器组ID
         :type group_id: str
@@ -197,7 +197,7 @@ class AntiVirusHostResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this AntiVirusHostResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux   - Windows ：Winodws
+        操作系统类型，包含如下2种。   - Linux ：Linux   - Windows ：Windows
 
         :return: The os_type of this AntiVirusHostResponseInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class AntiVirusHostResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this AntiVirusHostResponseInfo.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux   - Windows ：Winodws
+        操作系统类型，包含如下2种。   - Linux ：Linux   - Windows ：Windows
 
         :param os_type: The os_type of this AntiVirusHostResponseInfo.
         :type os_type: str

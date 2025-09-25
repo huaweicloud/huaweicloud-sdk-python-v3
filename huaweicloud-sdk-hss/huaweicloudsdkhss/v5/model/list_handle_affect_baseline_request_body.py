@@ -35,11 +35,11 @@ class ListHandleAffectBaselineRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param action: **参数解释** 基线检查执行的操作 **约束限制** 不涉及 **取值范围**   - add_to_whitelist: 加白名单 - ignore          : 忽略 - unignore        : 取消忽略 - fix             : 修复 - verify          : 验证 **默认取值** 不涉及
+        :param action: **参数解释** 基线检查执行的操作 **约束限制** 不涉及 **取值范围** - add_to_whitelist: 加白名单 - ignore          : 忽略 - unignore        : 取消忽略 - fix             : 修复 - verify          : 验证 **默认取值** 不涉及
         :type action: str
-        :param handle_status: **参数解释** 当前检查项的状态 **约束限制** 不涉及 **取值范围**   - unhandled : 未处理 - fix-failed: 修复失败 - fixing    : 修复中 - verifying : 验证中 - ignored   : 忽略 - safe      : 安全 **默认取值** 不涉及
+        :param handle_status: **参数解释** 当前检查项的状态 **约束限制** 不涉及 **取值范围** - unhandled : 未处理 - fix-failed: 修复失败 - fixing    : 修复中 - verifying : 验证中 - ignored   : 忽略 - safe      : 安全 **默认取值** 不涉及
         :type handle_status: str
-        :param host_id: **参数解释** 主机id，没有该字段则代表该检查项影响的部分主机 **约束限制** 不涉及 **取值范围**   字符长度1-256位 **默认取值** 不涉及
+        :param host_id: **参数解释** 主机id，没有该字段则代表该检查项影响的部分主机 **约束限制** 不涉及 **取值范围** 字符长度1-256位 **默认取值** 不涉及
         :type host_id: str
         :param check_rule_list: **参数解释** 需要进行操作的检查项列表 **约束限制** 列表范围0-200条
         :type check_rule_list: list[:class:`huaweicloudsdkhss.v5.ListHandleAffectBaselineRequestBodyCheckRuleList`]
@@ -63,7 +63,7 @@ class ListHandleAffectBaselineRequestBody:
     def action(self):
         r"""Gets the action of this ListHandleAffectBaselineRequestBody.
 
-        **参数解释** 基线检查执行的操作 **约束限制** 不涉及 **取值范围**   - add_to_whitelist: 加白名单 - ignore          : 忽略 - unignore        : 取消忽略 - fix             : 修复 - verify          : 验证 **默认取值** 不涉及
+        **参数解释** 基线检查执行的操作 **约束限制** 不涉及 **取值范围** - add_to_whitelist: 加白名单 - ignore          : 忽略 - unignore        : 取消忽略 - fix             : 修复 - verify          : 验证 **默认取值** 不涉及
 
         :return: The action of this ListHandleAffectBaselineRequestBody.
         :rtype: str
@@ -74,7 +74,7 @@ class ListHandleAffectBaselineRequestBody:
     def action(self, action):
         r"""Sets the action of this ListHandleAffectBaselineRequestBody.
 
-        **参数解释** 基线检查执行的操作 **约束限制** 不涉及 **取值范围**   - add_to_whitelist: 加白名单 - ignore          : 忽略 - unignore        : 取消忽略 - fix             : 修复 - verify          : 验证 **默认取值** 不涉及
+        **参数解释** 基线检查执行的操作 **约束限制** 不涉及 **取值范围** - add_to_whitelist: 加白名单 - ignore          : 忽略 - unignore        : 取消忽略 - fix             : 修复 - verify          : 验证 **默认取值** 不涉及
 
         :param action: The action of this ListHandleAffectBaselineRequestBody.
         :type action: str
@@ -85,7 +85,7 @@ class ListHandleAffectBaselineRequestBody:
     def handle_status(self):
         r"""Gets the handle_status of this ListHandleAffectBaselineRequestBody.
 
-        **参数解释** 当前检查项的状态 **约束限制** 不涉及 **取值范围**   - unhandled : 未处理 - fix-failed: 修复失败 - fixing    : 修复中 - verifying : 验证中 - ignored   : 忽略 - safe      : 安全 **默认取值** 不涉及
+        **参数解释** 当前检查项的状态 **约束限制** 不涉及 **取值范围** - unhandled : 未处理 - fix-failed: 修复失败 - fixing    : 修复中 - verifying : 验证中 - ignored   : 忽略 - safe      : 安全 **默认取值** 不涉及
 
         :return: The handle_status of this ListHandleAffectBaselineRequestBody.
         :rtype: str
@@ -96,7 +96,7 @@ class ListHandleAffectBaselineRequestBody:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ListHandleAffectBaselineRequestBody.
 
-        **参数解释** 当前检查项的状态 **约束限制** 不涉及 **取值范围**   - unhandled : 未处理 - fix-failed: 修复失败 - fixing    : 修复中 - verifying : 验证中 - ignored   : 忽略 - safe      : 安全 **默认取值** 不涉及
+        **参数解释** 当前检查项的状态 **约束限制** 不涉及 **取值范围** - unhandled : 未处理 - fix-failed: 修复失败 - fixing    : 修复中 - verifying : 验证中 - ignored   : 忽略 - safe      : 安全 **默认取值** 不涉及
 
         :param handle_status: The handle_status of this ListHandleAffectBaselineRequestBody.
         :type handle_status: str
@@ -107,7 +107,7 @@ class ListHandleAffectBaselineRequestBody:
     def host_id(self):
         r"""Gets the host_id of this ListHandleAffectBaselineRequestBody.
 
-        **参数解释** 主机id，没有该字段则代表该检查项影响的部分主机 **约束限制** 不涉及 **取值范围**   字符长度1-256位 **默认取值** 不涉及
+        **参数解释** 主机id，没有该字段则代表该检查项影响的部分主机 **约束限制** 不涉及 **取值范围** 字符长度1-256位 **默认取值** 不涉及
 
         :return: The host_id of this ListHandleAffectBaselineRequestBody.
         :rtype: str
@@ -118,7 +118,7 @@ class ListHandleAffectBaselineRequestBody:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListHandleAffectBaselineRequestBody.
 
-        **参数解释** 主机id，没有该字段则代表该检查项影响的部分主机 **约束限制** 不涉及 **取值范围**   字符长度1-256位 **默认取值** 不涉及
+        **参数解释** 主机id，没有该字段则代表该检查项影响的部分主机 **约束限制** 不涉及 **取值范围** 字符长度1-256位 **默认取值** 不涉及
 
         :param host_id: The host_id of this ListHandleAffectBaselineRequestBody.
         :type host_id: str

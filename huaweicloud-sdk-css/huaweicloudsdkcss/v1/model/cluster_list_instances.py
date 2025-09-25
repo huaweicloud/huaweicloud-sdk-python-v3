@@ -25,7 +25,8 @@ class ClusterListInstances:
         'az_code': 'str',
         'ip': 'str',
         'volume': 'ClusterVolumeRsp',
-        'resource_id': 'str'
+        'resource_id': 'str',
+        'subnet_id': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ClusterListInstances:
         'az_code': 'azCode',
         'ip': 'ip',
         'volume': 'volume',
-        'resource_id': 'resourceId'
+        'resource_id': 'resourceId',
+        'subnet_id': 'subnetId'
     }
 
-    def __init__(self, status=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None, volume=None, resource_id=None):
+    def __init__(self, status=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None, volume=None, resource_id=None, subnet_id=None):
         r"""ClusterListInstances
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ClusterListInstances:
         :type volume: :class:`huaweicloudsdkcss.v1.ClusterVolumeRsp`
         :param resource_id: 该实例对应的资源Id。
         :type resource_id: str
+        :param subnet_id: 集群当前节点所属子网ID。
+        :type subnet_id: str
         """
         
         
@@ -76,6 +80,7 @@ class ClusterListInstances:
         self._ip = None
         self._volume = None
         self._resource_id = None
+        self._subnet_id = None
         self.discriminator = None
 
         if status is not None:
@@ -96,6 +101,8 @@ class ClusterListInstances:
             self.volume = volume
         if resource_id is not None:
             self.resource_id = resource_id
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
 
     @property
     def status(self):
@@ -290,6 +297,28 @@ class ClusterListInstances:
         :type resource_id: str
         """
         self._resource_id = resource_id
+
+    @property
+    def subnet_id(self):
+        r"""Gets the subnet_id of this ClusterListInstances.
+
+        集群当前节点所属子网ID。
+
+        :return: The subnet_id of this ClusterListInstances.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        r"""Sets the subnet_id of this ClusterListInstances.
+
+        集群当前节点所属子网ID。
+
+        :param subnet_id: The subnet_id of this ClusterListInstances.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

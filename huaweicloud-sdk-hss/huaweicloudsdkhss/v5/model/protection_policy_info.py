@@ -85,7 +85,7 @@ class ProtectionPolicyInfo:
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
         :param default_policy: **参数解释**: 是否为默认策略 **取值范围**: 包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略
         :type default_policy: int
-        :param ai_protection_status: **参数解释**: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。  **取值范围**: 字符长度1-128
+        :param ai_protection_status: **参数解释**: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。 **取值范围**: 字符长度1-128
         :type ai_protection_status: str
         """
         
@@ -451,7 +451,7 @@ class ProtectionPolicyInfo:
     def ai_protection_status(self):
         r"""Gets the ai_protection_status of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。  **取值范围**: 字符长度1-128
+        **参数解释**: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。 **取值范围**: 字符长度1-128
 
         :return: The ai_protection_status of this ProtectionPolicyInfo.
         :rtype: str
@@ -462,7 +462,7 @@ class ProtectionPolicyInfo:
     def ai_protection_status(self, ai_protection_status):
         r"""Sets the ai_protection_status of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。  **取值范围**: 字符长度1-128
+        **参数解释**: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。 **取值范围**: 字符长度1-128
 
         :param ai_protection_status: The ai_protection_status of this ProtectionPolicyInfo.
         :type ai_protection_status: str

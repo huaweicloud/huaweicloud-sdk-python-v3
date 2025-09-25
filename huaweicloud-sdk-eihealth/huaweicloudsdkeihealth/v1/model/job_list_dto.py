@@ -19,6 +19,8 @@ class JobListDto:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'eihealth_project_id': 'str',
+        'eihealth_project_name': 'str',
         'description': 'str',
         'labels': 'list[str]',
         'priority': 'int',
@@ -26,6 +28,7 @@ class JobListDto:
         'output_dir': 'str',
         'status': 'str',
         'create_time': 'str',
+        'start_time': 'str',
         'finish_time': 'str',
         'failed_message': 'str',
         'failed_reason': 'str',
@@ -39,6 +42,8 @@ class JobListDto:
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'eihealth_project_id': 'eihealth_project_id',
+        'eihealth_project_name': 'eihealth_project_name',
         'description': 'description',
         'labels': 'labels',
         'priority': 'priority',
@@ -46,6 +51,7 @@ class JobListDto:
         'output_dir': 'output_dir',
         'status': 'status',
         'create_time': 'create_time',
+        'start_time': 'start_time',
         'finish_time': 'finish_time',
         'failed_message': 'failed_message',
         'failed_reason': 'failed_reason',
@@ -56,7 +62,7 @@ class JobListDto:
         'still_running_tasks': 'still_running_tasks'
     }
 
-    def __init__(self, id=None, name=None, description=None, labels=None, priority=None, timeout=None, output_dir=None, status=None, create_time=None, finish_time=None, failed_message=None, failed_reason=None, user_name=None, tool_info=None, io_acc_id=None, io_acc_expected_usage=None, still_running_tasks=None):
+    def __init__(self, id=None, name=None, eihealth_project_id=None, eihealth_project_name=None, description=None, labels=None, priority=None, timeout=None, output_dir=None, status=None, create_time=None, start_time=None, finish_time=None, failed_message=None, failed_reason=None, user_name=None, tool_info=None, io_acc_id=None, io_acc_expected_usage=None, still_running_tasks=None):
         r"""JobListDto
 
         The model defined in huaweicloud sdk
@@ -65,6 +71,10 @@ class JobListDto:
         :type id: str
         :param name: 作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
         :type name: str
+        :param eihealth_project_id: **参数解释**： 作业所属空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type eihealth_project_id: str
+        :param eihealth_project_name: **参数解释**： 作业所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type eihealth_project_name: str
         :param description: 作业的描述,取值范围：输入字符最大长度为255
         :type description: str
         :param labels: 作业标签
@@ -79,6 +89,8 @@ class JobListDto:
         :type status: str
         :param create_time: 作业创建时间
         :type create_time: str
+        :param start_time: **参数解释**： 作业开始时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type start_time: str
         :param finish_time: 作业结束时间
         :type finish_time: str
         :param failed_message: 失败提示，当作业执行失败时会返回
@@ -101,6 +113,8 @@ class JobListDto:
 
         self._id = None
         self._name = None
+        self._eihealth_project_id = None
+        self._eihealth_project_name = None
         self._description = None
         self._labels = None
         self._priority = None
@@ -108,6 +122,7 @@ class JobListDto:
         self._output_dir = None
         self._status = None
         self._create_time = None
+        self._start_time = None
         self._finish_time = None
         self._failed_message = None
         self._failed_reason = None
@@ -122,6 +137,10 @@ class JobListDto:
             self.id = id
         if name is not None:
             self.name = name
+        if eihealth_project_id is not None:
+            self.eihealth_project_id = eihealth_project_id
+        if eihealth_project_name is not None:
+            self.eihealth_project_name = eihealth_project_name
         if description is not None:
             self.description = description
         if labels is not None:
@@ -136,6 +155,8 @@ class JobListDto:
             self.status = status
         if create_time is not None:
             self.create_time = create_time
+        if start_time is not None:
+            self.start_time = start_time
         if finish_time is not None:
             self.finish_time = finish_time
         if failed_message is not None:
@@ -196,6 +217,50 @@ class JobListDto:
         :type name: str
         """
         self._name = name
+
+    @property
+    def eihealth_project_id(self):
+        r"""Gets the eihealth_project_id of this JobListDto.
+
+        **参数解释**： 作业所属空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The eihealth_project_id of this JobListDto.
+        :rtype: str
+        """
+        return self._eihealth_project_id
+
+    @eihealth_project_id.setter
+    def eihealth_project_id(self, eihealth_project_id):
+        r"""Sets the eihealth_project_id of this JobListDto.
+
+        **参数解释**： 作业所属空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param eihealth_project_id: The eihealth_project_id of this JobListDto.
+        :type eihealth_project_id: str
+        """
+        self._eihealth_project_id = eihealth_project_id
+
+    @property
+    def eihealth_project_name(self):
+        r"""Gets the eihealth_project_name of this JobListDto.
+
+        **参数解释**： 作业所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The eihealth_project_name of this JobListDto.
+        :rtype: str
+        """
+        return self._eihealth_project_name
+
+    @eihealth_project_name.setter
+    def eihealth_project_name(self, eihealth_project_name):
+        r"""Sets the eihealth_project_name of this JobListDto.
+
+        **参数解释**： 作业所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param eihealth_project_name: The eihealth_project_name of this JobListDto.
+        :type eihealth_project_name: str
+        """
+        self._eihealth_project_name = eihealth_project_name
 
     @property
     def description(self):
@@ -350,6 +415,28 @@ class JobListDto:
         :type create_time: str
         """
         self._create_time = create_time
+
+    @property
+    def start_time(self):
+        r"""Gets the start_time of this JobListDto.
+
+        **参数解释**： 作业开始时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The start_time of this JobListDto.
+        :rtype: str
+        """
+        return self._start_time
+
+    @start_time.setter
+    def start_time(self, start_time):
+        r"""Sets the start_time of this JobListDto.
+
+        **参数解释**： 作业开始时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param start_time: The start_time of this JobListDto.
+        :type start_time: str
+        """
+        self._start_time = start_time
 
     @property
     def finish_time(self):

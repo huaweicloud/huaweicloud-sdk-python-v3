@@ -22,7 +22,8 @@ class CreateProjectReq:
         'tags': 'list[str]',
         'is_core': 'bool',
         'is_new_bucket': 'bool',
-        'bucket_name': 'str'
+        'bucket_name': 'str',
+        'storage_tenant': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CreateProjectReq:
         'tags': 'tags',
         'is_core': 'is_core',
         'is_new_bucket': 'is_new_bucket',
-        'bucket_name': 'bucket_name'
+        'bucket_name': 'bucket_name',
+        'storage_tenant': 'storage_tenant'
     }
 
-    def __init__(self, description=None, name=None, tags=None, is_core=None, is_new_bucket=None, bucket_name=None):
+    def __init__(self, description=None, name=None, tags=None, is_core=None, is_new_bucket=None, bucket_name=None, storage_tenant=None):
         r"""CreateProjectReq
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CreateProjectReq:
         :type is_new_bucket: bool
         :param bucket_name: 桶名, 仅气象支持该字段
         :type bucket_name: str
+        :param storage_tenant: **参数解释**： 空间桶来源租户，TERMINATE表示最终租户桶。 **约束限制**： 不涉及 **取值范围**： * TERMINATE： 最终租户桶。 * RESOURCE： 资源租户桶。 **默认取值**： TERMINATE 
+        :type storage_tenant: str
         """
         
         
@@ -61,6 +65,7 @@ class CreateProjectReq:
         self._is_core = None
         self._is_new_bucket = None
         self._bucket_name = None
+        self._storage_tenant = None
         self.discriminator = None
 
         if description is not None:
@@ -74,6 +79,8 @@ class CreateProjectReq:
             self.is_new_bucket = is_new_bucket
         if bucket_name is not None:
             self.bucket_name = bucket_name
+        if storage_tenant is not None:
+            self.storage_tenant = storage_tenant
 
     @property
     def description(self):
@@ -206,6 +213,28 @@ class CreateProjectReq:
         :type bucket_name: str
         """
         self._bucket_name = bucket_name
+
+    @property
+    def storage_tenant(self):
+        r"""Gets the storage_tenant of this CreateProjectReq.
+
+        **参数解释**： 空间桶来源租户，TERMINATE表示最终租户桶。 **约束限制**： 不涉及 **取值范围**： * TERMINATE： 最终租户桶。 * RESOURCE： 资源租户桶。 **默认取值**： TERMINATE 
+
+        :return: The storage_tenant of this CreateProjectReq.
+        :rtype: str
+        """
+        return self._storage_tenant
+
+    @storage_tenant.setter
+    def storage_tenant(self, storage_tenant):
+        r"""Sets the storage_tenant of this CreateProjectReq.
+
+        **参数解释**： 空间桶来源租户，TERMINATE表示最终租户桶。 **约束限制**： 不涉及 **取值范围**： * TERMINATE： 最终租户桶。 * RESOURCE： 资源租户桶。 **默认取值**： TERMINATE 
+
+        :param storage_tenant: The storage_tenant of this CreateProjectReq.
+        :type storage_tenant: str
+        """
+        self._storage_tenant = storage_tenant
 
     def to_dict(self):
         """Returns the model properties as a dict"""

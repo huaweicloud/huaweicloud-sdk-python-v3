@@ -57,7 +57,7 @@ class ListAutoLaunchChangeHistoriesRequest:
         :type enterprise_project_id: str
         :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
-        :param host_ip: **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_ip: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
@@ -173,7 +173,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListAutoLaunchChangeHistoriesRequest.
 
-        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: str
@@ -184,7 +184,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListAutoLaunchChangeHistoriesRequest.
 
-        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListAutoLaunchChangeHistoriesRequest.
         :type host_ip: str

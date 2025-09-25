@@ -19,16 +19,20 @@ class ClusterListDatastore:
     openapi_types = {
         'type': 'str',
         'version': 'str',
-        'support_securitymode': 'bool'
+        'support_securitymode': 'bool',
+        'sub_version': 'str',
+        'is_eos_cluster': 'bool'
     }
 
     attribute_map = {
         'type': 'type',
         'version': 'version',
-        'support_securitymode': 'supportSecuritymode'
+        'support_securitymode': 'supportSecuritymode',
+        'sub_version': 'subVersion',
+        'is_eos_cluster': 'isEosCluster'
     }
 
-    def __init__(self, type=None, version=None, support_securitymode=None):
+    def __init__(self, type=None, version=None, support_securitymode=None, sub_version=None, is_eos_cluster=None):
         r"""ClusterListDatastore
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class ClusterListDatastore:
         :type version: str
         :param support_securitymode: 是否支持安全模式
         :type support_securitymode: bool
+        :param sub_version: 集群发布版本号。
+        :type sub_version: str
+        :param is_eos_cluster: 表示集群发布版本是否EOS。
+        :type is_eos_cluster: bool
         """
         
         
@@ -46,6 +54,8 @@ class ClusterListDatastore:
         self._type = None
         self._version = None
         self._support_securitymode = None
+        self._sub_version = None
+        self._is_eos_cluster = None
         self.discriminator = None
 
         if type is not None:
@@ -54,6 +64,10 @@ class ClusterListDatastore:
             self.version = version
         if support_securitymode is not None:
             self.support_securitymode = support_securitymode
+        if sub_version is not None:
+            self.sub_version = sub_version
+        if is_eos_cluster is not None:
+            self.is_eos_cluster = is_eos_cluster
 
     @property
     def type(self):
@@ -120,6 +134,50 @@ class ClusterListDatastore:
         :type support_securitymode: bool
         """
         self._support_securitymode = support_securitymode
+
+    @property
+    def sub_version(self):
+        r"""Gets the sub_version of this ClusterListDatastore.
+
+        集群发布版本号。
+
+        :return: The sub_version of this ClusterListDatastore.
+        :rtype: str
+        """
+        return self._sub_version
+
+    @sub_version.setter
+    def sub_version(self, sub_version):
+        r"""Sets the sub_version of this ClusterListDatastore.
+
+        集群发布版本号。
+
+        :param sub_version: The sub_version of this ClusterListDatastore.
+        :type sub_version: str
+        """
+        self._sub_version = sub_version
+
+    @property
+    def is_eos_cluster(self):
+        r"""Gets the is_eos_cluster of this ClusterListDatastore.
+
+        表示集群发布版本是否EOS。
+
+        :return: The is_eos_cluster of this ClusterListDatastore.
+        :rtype: bool
+        """
+        return self._is_eos_cluster
+
+    @is_eos_cluster.setter
+    def is_eos_cluster(self, is_eos_cluster):
+        r"""Sets the is_eos_cluster of this ClusterListDatastore.
+
+        表示集群发布版本是否EOS。
+
+        :param is_eos_cluster: The is_eos_cluster of this ClusterListDatastore.
+        :type is_eos_cluster: bool
+        """
+        self._is_eos_cluster = is_eos_cluster
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -27,7 +27,7 @@ class Artifact:
         'artifact_type': 'str',
         'hash_code': 'list[ArtifactHashCode]',
         'job_id': 'str',
-        'build_no': 'int',
+        'build_no': 'str',
         'daily_build_number': 'str',
         'file_size': 'str'
     }
@@ -74,7 +74,7 @@ class Artifact:
         :param job_id: **参数解释**： 构建任务ID。 **约束限制**： 不涉及。 **取值范围**： 32位字符，由数字和字母组成。 **默认取值**： 不涉及。 
         :type job_id: str
         :param build_no: **参数解释**： 构建任务编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
-        :type build_no: int
+        :type build_no: str
         :param daily_build_number: **参数解释**： 构建任务序号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
         :type daily_build_number: str
         :param file_size: **参数解释**： 产物大小。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
@@ -352,7 +352,7 @@ class Artifact:
         **参数解释**： 构建任务编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :return: The build_no of this Artifact.
-        :rtype: int
+        :rtype: str
         """
         return self._build_no
 
@@ -363,7 +363,7 @@ class Artifact:
         **参数解释**： 构建任务编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
 
         :param build_no: The build_no of this Artifact.
-        :type build_no: int
+        :type build_no: str
         """
         self._build_no = build_no
 

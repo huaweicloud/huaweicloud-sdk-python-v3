@@ -17,29 +17,43 @@ class StartVpecpReq:
     sensitive_list = []
 
     openapi_types = {
-        'endpoint_with_dns_name': 'bool'
+        'endpoint_with_dns_name': 'bool',
+        'profession_vpcep': 'bool',
+        'dualstack_enable': 'bool'
     }
 
     attribute_map = {
-        'endpoint_with_dns_name': 'endpoint_with_dns_name'
+        'endpoint_with_dns_name': 'endpoint_with_dns_name',
+        'profession_vpcep': 'profession_vpcep',
+        'dualstack_enable': 'dualstack_enable'
     }
 
-    def __init__(self, endpoint_with_dns_name=None):
+    def __init__(self, endpoint_with_dns_name=None, profession_vpcep=None, dualstack_enable=None):
         r"""StartVpecpReq
 
         The model defined in huaweicloud sdk
 
         :param endpoint_with_dns_name: 是否开启内网域名。 - true：开启。 - false：不开启。
         :type endpoint_with_dns_name: bool
+        :param profession_vpcep: 创建专业型终端节点。 - true：开启。 - false：不开启。
+        :type profession_vpcep: bool
+        :param dualstack_enable: 是否开启IPv4/IPv6双栈网络，仅支持在创建专业型终端节点时开启双栈网络，且集群的VPC子网支持IPv6。 - true：开启。 - false：不开启。
+        :type dualstack_enable: bool
         """
         
         
 
         self._endpoint_with_dns_name = None
+        self._profession_vpcep = None
+        self._dualstack_enable = None
         self.discriminator = None
 
         if endpoint_with_dns_name is not None:
             self.endpoint_with_dns_name = endpoint_with_dns_name
+        if profession_vpcep is not None:
+            self.profession_vpcep = profession_vpcep
+        if dualstack_enable is not None:
+            self.dualstack_enable = dualstack_enable
 
     @property
     def endpoint_with_dns_name(self):
@@ -62,6 +76,50 @@ class StartVpecpReq:
         :type endpoint_with_dns_name: bool
         """
         self._endpoint_with_dns_name = endpoint_with_dns_name
+
+    @property
+    def profession_vpcep(self):
+        r"""Gets the profession_vpcep of this StartVpecpReq.
+
+        创建专业型终端节点。 - true：开启。 - false：不开启。
+
+        :return: The profession_vpcep of this StartVpecpReq.
+        :rtype: bool
+        """
+        return self._profession_vpcep
+
+    @profession_vpcep.setter
+    def profession_vpcep(self, profession_vpcep):
+        r"""Sets the profession_vpcep of this StartVpecpReq.
+
+        创建专业型终端节点。 - true：开启。 - false：不开启。
+
+        :param profession_vpcep: The profession_vpcep of this StartVpecpReq.
+        :type profession_vpcep: bool
+        """
+        self._profession_vpcep = profession_vpcep
+
+    @property
+    def dualstack_enable(self):
+        r"""Gets the dualstack_enable of this StartVpecpReq.
+
+        是否开启IPv4/IPv6双栈网络，仅支持在创建专业型终端节点时开启双栈网络，且集群的VPC子网支持IPv6。 - true：开启。 - false：不开启。
+
+        :return: The dualstack_enable of this StartVpecpReq.
+        :rtype: bool
+        """
+        return self._dualstack_enable
+
+    @dualstack_enable.setter
+    def dualstack_enable(self, dualstack_enable):
+        r"""Sets the dualstack_enable of this StartVpecpReq.
+
+        是否开启IPv4/IPv6双栈网络，仅支持在创建专业型终端节点时开启双栈网络，且集群的VPC子网支持IPv6。 - true：开启。 - false：不开启。
+
+        :param dualstack_enable: The dualstack_enable of this StartVpecpReq.
+        :type dualstack_enable: bool
+        """
+        self._dualstack_enable = dualstack_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

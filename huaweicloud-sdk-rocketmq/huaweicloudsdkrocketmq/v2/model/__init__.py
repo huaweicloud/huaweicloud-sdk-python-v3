@@ -67,8 +67,6 @@ from huaweicloudsdkrocketmq.v2.model.delete_user_request import DeleteUserReques
 from huaweicloudsdkrocketmq.v2.model.delete_user_response import DeleteUserResponse
 from huaweicloudsdkrocketmq.v2.model.diagnosis_rep import DiagnosisRep
 from huaweicloudsdkrocketmq.v2.model.diagnosis_report_resp import DiagnosisReportResp
-from huaweicloudsdkrocketmq.v2.model.enable_dns_request import EnableDnsRequest
-from huaweicloudsdkrocketmq.v2.model.enable_dns_response import EnableDnsResponse
 from huaweicloudsdkrocketmq.v2.model.export_dlq_message_req import ExportDlqMessageReq
 from huaweicloudsdkrocketmq.v2.model.export_dlq_message_request import ExportDlqMessageRequest
 from huaweicloudsdkrocketmq.v2.model.export_dlq_message_response import ExportDlqMessageResponse
@@ -144,8 +142,8 @@ from huaweicloudsdkrocketmq.v2.model.rocket_mq_product_support_features_entity i
 from huaweicloudsdkrocketmq.v2.model.send_dlq_message_request import SendDlqMessageRequest
 from huaweicloudsdkrocketmq.v2.model.send_dlq_message_response import SendDlqMessageResponse
 from huaweicloudsdkrocketmq.v2.model.send_message_properties import SendMessageProperties
+from huaweicloudsdkrocketmq.v2.model.send_message_rep import SendMessageRep
 from huaweicloudsdkrocketmq.v2.model.send_message_request import SendMessageRequest
-from huaweicloudsdkrocketmq.v2.model.send_message_resp import SendMessageResp
 from huaweicloudsdkrocketmq.v2.model.send_message_response import SendMessageResponse
 from huaweicloudsdkrocketmq.v2.model.show_consumer_connections_request import ShowConsumerConnectionsRequest
 from huaweicloudsdkrocketmq.v2.model.show_consumer_connections_response import ShowConsumerConnectionsResponse

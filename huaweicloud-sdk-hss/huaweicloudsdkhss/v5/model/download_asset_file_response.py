@@ -18,20 +18,51 @@ class DownloadAssetFileResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'task_id': 'str'
     }
 
     attribute_map = {
+        'task_id': 'task_id'
     }
 
-    def __init__(self):
+    def __init__(self, task_id=None):
         r"""DownloadAssetFileResponse
 
         The model defined in huaweicloud sdk
 
+        :param task_id: 导出任务ID
+        :type task_id: str
         """
         
         super(DownloadAssetFileResponse, self).__init__()
+
+        self._task_id = None
         self.discriminator = None
+
+        if task_id is not None:
+            self.task_id = task_id
+
+    @property
+    def task_id(self):
+        r"""Gets the task_id of this DownloadAssetFileResponse.
+
+        导出任务ID
+
+        :return: The task_id of this DownloadAssetFileResponse.
+        :rtype: str
+        """
+        return self._task_id
+
+    @task_id.setter
+    def task_id(self, task_id):
+        r"""Sets the task_id of this DownloadAssetFileResponse.
+
+        导出任务ID
+
+        :param task_id: The task_id of this DownloadAssetFileResponse.
+        :type task_id: str
+        """
+        self._task_id = task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

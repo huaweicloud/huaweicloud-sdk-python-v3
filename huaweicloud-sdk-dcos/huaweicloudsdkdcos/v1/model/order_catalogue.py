@@ -35,7 +35,7 @@ class OrderCatalogue:
 
         The model defined in huaweicloud sdk
 
-        :param code: 工单类型编码
+        :param code: 服务单类型编码
         :type code: str
         :param type: 类型
         :type type: str
@@ -66,7 +66,7 @@ class OrderCatalogue:
     def code(self):
         r"""Gets the code of this OrderCatalogue.
 
-        工单类型编码
+        服务单类型编码
 
         :return: The code of this OrderCatalogue.
         :rtype: str
@@ -77,7 +77,7 @@ class OrderCatalogue:
     def code(self, code):
         r"""Sets the code of this OrderCatalogue.
 
-        工单类型编码
+        服务单类型编码
 
         :param code: The code of this OrderCatalogue.
         :type code: str

@@ -18,15 +18,17 @@ class CreateLabelReq:
 
     openapi_types = {
         'name': 'str',
-        'description': 'str'
+        'description': 'str',
+        'level': 'int'
     }
 
     attribute_map = {
         'name': 'name',
-        'description': 'description'
+        'description': 'description',
+        'level': 'level'
     }
 
-    def __init__(self, name=None, description=None):
+    def __init__(self, name=None, description=None, level=None):
         r"""CreateLabelReq
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class CreateLabelReq:
         :type name: str
         :param description: 标签描述
         :type description: str
+        :param level: **参数解释**:  标签级别，用于前端颜色展示。   **约束限制**:  不涉及   **取值范围**:  整数，取值范围[1-6]   **默认取值**:  1 
+        :type level: int
         """
         
         
 
         self._name = None
         self._description = None
+        self._level = None
         self.discriminator = None
 
         self.name = name
         if description is not None:
             self.description = description
+        if level is not None:
+            self.level = level
 
     @property
     def name(self):
@@ -90,6 +97,28 @@ class CreateLabelReq:
         :type description: str
         """
         self._description = description
+
+    @property
+    def level(self):
+        r"""Gets the level of this CreateLabelReq.
+
+        **参数解释**:  标签级别，用于前端颜色展示。   **约束限制**:  不涉及   **取值范围**:  整数，取值范围[1-6]   **默认取值**:  1 
+
+        :return: The level of this CreateLabelReq.
+        :rtype: int
+        """
+        return self._level
+
+    @level.setter
+    def level(self, level):
+        r"""Sets the level of this CreateLabelReq.
+
+        **参数解释**:  标签级别，用于前端颜色展示。   **约束限制**:  不涉及   **取值范围**:  整数，取值范围[1-6]   **默认取值**:  1 
+
+        :param level: The level of this CreateLabelReq.
+        :type level: int
+        """
+        self._level = level
 
     def to_dict(self):
         """Returns the model properties as a dict"""

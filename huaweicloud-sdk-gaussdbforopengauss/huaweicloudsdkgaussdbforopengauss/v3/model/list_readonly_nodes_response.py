@@ -18,58 +18,58 @@ class ListReadonlyNodesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instances': 'list[ListReadonlyNodesResult]',
+        'nodes': 'list[ListReadonlyNodesResult]',
         'max_readonly_node_num': 'int'
     }
 
     attribute_map = {
-        'instances': 'instances',
+        'nodes': 'nodes',
         'max_readonly_node_num': 'max_readonly_node_num'
     }
 
-    def __init__(self, instances=None, max_readonly_node_num=None):
+    def __init__(self, nodes=None, max_readonly_node_num=None):
         r"""ListReadonlyNodesResponse
 
         The model defined in huaweicloud sdk
 
-        :param instances: **参数解释**: 只读节点列表。 **约束限制**: 不涉及。
-        :type instances: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListReadonlyNodesResult`]
+        :param nodes: **参数解释**: 只读节点列表。 **约束限制**: 不涉及。
+        :type nodes: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListReadonlyNodesResult`]
         :param max_readonly_node_num: **参数解释**: 数据库名称。 **取值范围**: 不涉及。
         :type max_readonly_node_num: int
         """
         
         super(ListReadonlyNodesResponse, self).__init__()
 
-        self._instances = None
+        self._nodes = None
         self._max_readonly_node_num = None
         self.discriminator = None
 
-        if instances is not None:
-            self.instances = instances
+        if nodes is not None:
+            self.nodes = nodes
         if max_readonly_node_num is not None:
             self.max_readonly_node_num = max_readonly_node_num
 
     @property
-    def instances(self):
-        r"""Gets the instances of this ListReadonlyNodesResponse.
+    def nodes(self):
+        r"""Gets the nodes of this ListReadonlyNodesResponse.
 
         **参数解释**: 只读节点列表。 **约束限制**: 不涉及。
 
-        :return: The instances of this ListReadonlyNodesResponse.
+        :return: The nodes of this ListReadonlyNodesResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListReadonlyNodesResult`]
         """
-        return self._instances
+        return self._nodes
 
-    @instances.setter
-    def instances(self, instances):
-        r"""Sets the instances of this ListReadonlyNodesResponse.
+    @nodes.setter
+    def nodes(self, nodes):
+        r"""Sets the nodes of this ListReadonlyNodesResponse.
 
         **参数解释**: 只读节点列表。 **约束限制**: 不涉及。
 
-        :param instances: The instances of this ListReadonlyNodesResponse.
-        :type instances: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListReadonlyNodesResult`]
+        :param nodes: The nodes of this ListReadonlyNodesResponse.
+        :type nodes: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListReadonlyNodesResult`]
         """
-        self._instances = instances
+        self._nodes = nodes
 
     @property
     def max_readonly_node_num(self):

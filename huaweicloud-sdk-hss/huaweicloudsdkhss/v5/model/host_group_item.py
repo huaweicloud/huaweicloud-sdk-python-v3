@@ -51,7 +51,7 @@ class HostGroupItem:
         :type risk_host_num: int
         :param unprotect_host_num: **参数解释**: 未防护服务器数 **取值范围**: 0到2147483647 
         :type unprotect_host_num: int
-        :param host_id_list: **参数解释**: 主机id列表 **取值范围**: 不涉及 
+        :param host_id_list: **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
         :type host_id_list: list[str]
         :param is_outside: **参数解释**: 是否是线下数据中心服务器组 **取值范围**: true或者false 
         :type is_outside: bool
@@ -197,7 +197,7 @@ class HostGroupItem:
     def host_id_list(self):
         r"""Gets the host_id_list of this HostGroupItem.
 
-        **参数解释**: 主机id列表 **取值范围**: 不涉及 
+        **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
 
         :return: The host_id_list of this HostGroupItem.
         :rtype: list[str]
@@ -208,7 +208,7 @@ class HostGroupItem:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this HostGroupItem.
 
-        **参数解释**: 主机id列表 **取值范围**: 不涉及 
+        **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
 
         :param host_id_list: The host_id_list of this HostGroupItem.
         :type host_id_list: list[str]

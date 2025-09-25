@@ -33,7 +33,8 @@ class CreateTranscodingReq:
         'audio_track': 'AudioTrack',
         'multi_audio': 'MultiAudio',
         'video_process': 'VideoProcess',
-        'audio_process': 'AudioProcess'
+        'audio_process': 'AudioProcess',
+        'metadata': 'list[FileMetaData]'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class CreateTranscodingReq:
         'audio_track': 'audio_track',
         'multi_audio': 'multi_audio',
         'video_process': 'video_process',
-        'audio_process': 'audio_process'
+        'audio_process': 'audio_process',
+        'metadata': 'metadata'
     }
 
-    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, additional_manifests=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None):
+    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, additional_manifests=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, metadata=None):
         r"""CreateTranscodingReq
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class CreateTranscodingReq:
         :type video_process: :class:`huaweicloudsdkmpc.v1.VideoProcess`
         :param audio_process: 
         :type audio_process: :class:`huaweicloudsdkmpc.v1.AudioProcess`
+        :param metadata: metadata设置，默认只支持AIGC 
+        :type metadata: list[:class:`huaweicloudsdkmpc.v1.FileMetaData`]
         """
         
         
@@ -116,6 +120,7 @@ class CreateTranscodingReq:
         self._multi_audio = None
         self._video_process = None
         self._audio_process = None
+        self._metadata = None
         self.discriminator = None
 
         if input is not None:
@@ -151,6 +156,8 @@ class CreateTranscodingReq:
             self.video_process = video_process
         if audio_process is not None:
             self.audio_process = audio_process
+        if metadata is not None:
+            self.metadata = metadata
 
     @property
     def input(self):
@@ -485,6 +492,28 @@ class CreateTranscodingReq:
         :type audio_process: :class:`huaweicloudsdkmpc.v1.AudioProcess`
         """
         self._audio_process = audio_process
+
+    @property
+    def metadata(self):
+        r"""Gets the metadata of this CreateTranscodingReq.
+
+        metadata设置，默认只支持AIGC 
+
+        :return: The metadata of this CreateTranscodingReq.
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.FileMetaData`]
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        r"""Sets the metadata of this CreateTranscodingReq.
+
+        metadata设置，默认只支持AIGC 
+
+        :param metadata: The metadata of this CreateTranscodingReq.
+        :type metadata: list[:class:`huaweicloudsdkmpc.v1.FileMetaData`]
+        """
+        self._metadata = metadata
 
     def to_dict(self):
         """Returns the model properties as a dict"""

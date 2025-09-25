@@ -33,11 +33,11 @@ class ListHandleAffectBaselineRequestBodyCheckRuleList:
 
         The model defined in huaweicloud sdk
 
-        :param check_name: **参数解释** 基线检查的名称 **约束限制** 不涉及 **取值范围**   字符长度0-256位 **默认取值** 不涉及
+        :param check_name: **参数解释** 基线检查的名称 **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
         :type check_name: str
-        :param check_rule_id: **参数解释** 检查项id **约束限制** 不涉及 **取值范围**   字符长度0-256位 **默认取值** 不涉及
+        :param check_rule_id: **参数解释** 检查项id **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
         :type check_rule_id: str
-        :param standard: **参数解释** 基线检查标准类型 **约束限制** 不涉及 **取值范围**   - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准 **默认取值** 不涉及
+        :param standard: **参数解释** 基线检查标准类型 **约束限制** 不涉及 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准 **默认取值** 不涉及
         :type standard: str
         """
         
@@ -59,7 +59,7 @@ class ListHandleAffectBaselineRequestBodyCheckRuleList:
     def check_name(self):
         r"""Gets the check_name of this ListHandleAffectBaselineRequestBodyCheckRuleList.
 
-        **参数解释** 基线检查的名称 **约束限制** 不涉及 **取值范围**   字符长度0-256位 **默认取值** 不涉及
+        **参数解释** 基线检查的名称 **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
 
         :return: The check_name of this ListHandleAffectBaselineRequestBodyCheckRuleList.
         :rtype: str
@@ -70,7 +70,7 @@ class ListHandleAffectBaselineRequestBodyCheckRuleList:
     def check_name(self, check_name):
         r"""Sets the check_name of this ListHandleAffectBaselineRequestBodyCheckRuleList.
 
-        **参数解释** 基线检查的名称 **约束限制** 不涉及 **取值范围**   字符长度0-256位 **默认取值** 不涉及
+        **参数解释** 基线检查的名称 **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
 
         :param check_name: The check_name of this ListHandleAffectBaselineRequestBodyCheckRuleList.
         :type check_name: str
@@ -81,7 +81,7 @@ class ListHandleAffectBaselineRequestBodyCheckRuleList:
     def check_rule_id(self):
         r"""Gets the check_rule_id of this ListHandleAffectBaselineRequestBodyCheckRuleList.
 
-        **参数解释** 检查项id **约束限制** 不涉及 **取值范围**   字符长度0-256位 **默认取值** 不涉及
+        **参数解释** 检查项id **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
 
         :return: The check_rule_id of this ListHandleAffectBaselineRequestBodyCheckRuleList.
         :rtype: str
@@ -92,7 +92,7 @@ class ListHandleAffectBaselineRequestBodyCheckRuleList:
     def check_rule_id(self, check_rule_id):
         r"""Sets the check_rule_id of this ListHandleAffectBaselineRequestBodyCheckRuleList.
 
-        **参数解释** 检查项id **约束限制** 不涉及 **取值范围**   字符长度0-256位 **默认取值** 不涉及
+        **参数解释** 检查项id **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
 
         :param check_rule_id: The check_rule_id of this ListHandleAffectBaselineRequestBodyCheckRuleList.
         :type check_rule_id: str
@@ -103,7 +103,7 @@ class ListHandleAffectBaselineRequestBodyCheckRuleList:
     def standard(self):
         r"""Gets the standard of this ListHandleAffectBaselineRequestBodyCheckRuleList.
 
-        **参数解释** 基线检查标准类型 **约束限制** 不涉及 **取值范围**   - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准 **默认取值** 不涉及
+        **参数解释** 基线检查标准类型 **约束限制** 不涉及 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准 **默认取值** 不涉及
 
         :return: The standard of this ListHandleAffectBaselineRequestBodyCheckRuleList.
         :rtype: str
@@ -114,7 +114,7 @@ class ListHandleAffectBaselineRequestBodyCheckRuleList:
     def standard(self, standard):
         r"""Sets the standard of this ListHandleAffectBaselineRequestBodyCheckRuleList.
 
-        **参数解释** 基线检查标准类型 **约束限制** 不涉及 **取值范围**   - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准 **默认取值** 不涉及
+        **参数解释** 基线检查标准类型 **约束限制** 不涉及 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准 **默认取值** 不涉及
 
         :param standard: The standard of this ListHandleAffectBaselineRequestBodyCheckRuleList.
         :type standard: str

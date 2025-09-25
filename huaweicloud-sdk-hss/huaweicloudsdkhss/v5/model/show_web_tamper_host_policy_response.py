@@ -26,8 +26,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
         'rasp_path': 'str',
         'enable_privileged_process': 'bool',
         'privileged_child_status': 'bool',
-        'privileged_process_path_list': 'list[str]',
-        'privileged_process_info': 'ListPrivilegedProcessResponseInfo'
+        'privileged_process_path_list': 'list[str]'
     }
 
     attribute_map = {
@@ -39,16 +38,15 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
         'rasp_path': 'rasp_path',
         'enable_privileged_process': 'enable_privileged_process',
         'privileged_child_status': 'privileged_child_status',
-        'privileged_process_path_list': 'privileged_process_path_list',
-        'privileged_process_info': 'privileged_process_info'
+        'privileged_process_path_list': 'privileged_process_path_list'
     }
 
-    def __init__(self, protect_dir_num=None, protect_dir_info=None, enable_timing_off=None, timing_off_config_info=None, enable_rasp_protect=None, rasp_path=None, enable_privileged_process=None, privileged_child_status=None, privileged_process_path_list=None, privileged_process_info=None):
+    def __init__(self, protect_dir_num=None, protect_dir_info=None, enable_timing_off=None, timing_off_config_info=None, enable_rasp_protect=None, rasp_path=None, enable_privileged_process=None, privileged_child_status=None, privileged_process_path_list=None):
         r"""ShowWebTamperHostPolicyResponse
 
         The model defined in huaweicloud sdk
 
-        :param protect_dir_num: **参数解释**: 防护目录数 **取值范围**: 取值0-50 
+        :param protect_dir_num: **参数解释**: 防护目录数 **取值范围**: 最小值0，最大值50 
         :type protect_dir_num: int
         :param protect_dir_info: 
         :type protect_dir_info: :class:`huaweicloudsdkhss.v5.WtpProtectDirResponseInfo`
@@ -56,9 +54,9 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
         :type enable_timing_off: bool
         :param timing_off_config_info: 
         :type timing_off_config_info: :class:`huaweicloudsdkhss.v5.ListTimingOffConfigInfoResponseInfo`
-        :param enable_rasp_protect: **参数解释**: 动态网页防篡改开启状态 **取值范围**: - True ：开启动态网页防篡改防护。 - False ：未开启动态网页防篡改防护。 
+        :param enable_rasp_protect: **参数解释**: 动态网页防篡改开启状态，仅Linux服务器支持设置动态网页防篡改。 **取值范围**: - True ：开启动态网页防篡改防护。 - False ：未开启动态网页防篡改防护。 
         :type enable_rasp_protect: bool
-        :param rasp_path: **参数解释**: 动态网页防篡改的Tomcat bin目录 **取值范围**: 字符长度0-512位 
+        :param rasp_path: **参数解释**: 动态网页防篡改的Tomcat bin目录。 **取值范围**: 字符长度0-512位 
         :type rasp_path: str
         :param enable_privileged_process: **参数解释**: 特权进程开启状态 **取值范围**: - True ：开启特权进程。 - False ：未开启特权进程。 
         :type enable_privileged_process: bool
@@ -66,8 +64,6 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
         :type privileged_child_status: bool
         :param privileged_process_path_list: **参数解释**: 特权进程文件路径列表 **取值范围**: 最少0条，最多10条 
         :type privileged_process_path_list: list[str]
-        :param privileged_process_info: 
-        :type privileged_process_info: :class:`huaweicloudsdkhss.v5.ListPrivilegedProcessResponseInfo`
         """
         
         super(ShowWebTamperHostPolicyResponse, self).__init__()
@@ -81,7 +77,6 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
         self._enable_privileged_process = None
         self._privileged_child_status = None
         self._privileged_process_path_list = None
-        self._privileged_process_info = None
         self.discriminator = None
 
         if protect_dir_num is not None:
@@ -102,14 +97,12 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
             self.privileged_child_status = privileged_child_status
         if privileged_process_path_list is not None:
             self.privileged_process_path_list = privileged_process_path_list
-        if privileged_process_info is not None:
-            self.privileged_process_info = privileged_process_info
 
     @property
     def protect_dir_num(self):
         r"""Gets the protect_dir_num of this ShowWebTamperHostPolicyResponse.
 
-        **参数解释**: 防护目录数 **取值范围**: 取值0-50 
+        **参数解释**: 防护目录数 **取值范围**: 最小值0，最大值50 
 
         :return: The protect_dir_num of this ShowWebTamperHostPolicyResponse.
         :rtype: int
@@ -120,7 +113,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def protect_dir_num(self, protect_dir_num):
         r"""Sets the protect_dir_num of this ShowWebTamperHostPolicyResponse.
 
-        **参数解释**: 防护目录数 **取值范围**: 取值0-50 
+        **参数解释**: 防护目录数 **取值范围**: 最小值0，最大值50 
 
         :param protect_dir_num: The protect_dir_num of this ShowWebTamperHostPolicyResponse.
         :type protect_dir_num: int
@@ -189,7 +182,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def enable_rasp_protect(self):
         r"""Gets the enable_rasp_protect of this ShowWebTamperHostPolicyResponse.
 
-        **参数解释**: 动态网页防篡改开启状态 **取值范围**: - True ：开启动态网页防篡改防护。 - False ：未开启动态网页防篡改防护。 
+        **参数解释**: 动态网页防篡改开启状态，仅Linux服务器支持设置动态网页防篡改。 **取值范围**: - True ：开启动态网页防篡改防护。 - False ：未开启动态网页防篡改防护。 
 
         :return: The enable_rasp_protect of this ShowWebTamperHostPolicyResponse.
         :rtype: bool
@@ -200,7 +193,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def enable_rasp_protect(self, enable_rasp_protect):
         r"""Sets the enable_rasp_protect of this ShowWebTamperHostPolicyResponse.
 
-        **参数解释**: 动态网页防篡改开启状态 **取值范围**: - True ：开启动态网页防篡改防护。 - False ：未开启动态网页防篡改防护。 
+        **参数解释**: 动态网页防篡改开启状态，仅Linux服务器支持设置动态网页防篡改。 **取值范围**: - True ：开启动态网页防篡改防护。 - False ：未开启动态网页防篡改防护。 
 
         :param enable_rasp_protect: The enable_rasp_protect of this ShowWebTamperHostPolicyResponse.
         :type enable_rasp_protect: bool
@@ -211,7 +204,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def rasp_path(self):
         r"""Gets the rasp_path of this ShowWebTamperHostPolicyResponse.
 
-        **参数解释**: 动态网页防篡改的Tomcat bin目录 **取值范围**: 字符长度0-512位 
+        **参数解释**: 动态网页防篡改的Tomcat bin目录。 **取值范围**: 字符长度0-512位 
 
         :return: The rasp_path of this ShowWebTamperHostPolicyResponse.
         :rtype: str
@@ -222,7 +215,7 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
     def rasp_path(self, rasp_path):
         r"""Sets the rasp_path of this ShowWebTamperHostPolicyResponse.
 
-        **参数解释**: 动态网页防篡改的Tomcat bin目录 **取值范围**: 字符长度0-512位 
+        **参数解释**: 动态网页防篡改的Tomcat bin目录。 **取值范围**: 字符长度0-512位 
 
         :param rasp_path: The rasp_path of this ShowWebTamperHostPolicyResponse.
         :type rasp_path: str
@@ -294,24 +287,6 @@ class ShowWebTamperHostPolicyResponse(SdkResponse):
         :type privileged_process_path_list: list[str]
         """
         self._privileged_process_path_list = privileged_process_path_list
-
-    @property
-    def privileged_process_info(self):
-        r"""Gets the privileged_process_info of this ShowWebTamperHostPolicyResponse.
-
-        :return: The privileged_process_info of this ShowWebTamperHostPolicyResponse.
-        :rtype: :class:`huaweicloudsdkhss.v5.ListPrivilegedProcessResponseInfo`
-        """
-        return self._privileged_process_info
-
-    @privileged_process_info.setter
-    def privileged_process_info(self, privileged_process_info):
-        r"""Sets the privileged_process_info of this ShowWebTamperHostPolicyResponse.
-
-        :param privileged_process_info: The privileged_process_info of this ShowWebTamperHostPolicyResponse.
-        :type privileged_process_info: :class:`huaweicloudsdkhss.v5.ListPrivilegedProcessResponseInfo`
-        """
-        self._privileged_process_info = privileged_process_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

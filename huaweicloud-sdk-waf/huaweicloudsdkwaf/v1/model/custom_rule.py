@@ -69,7 +69,7 @@ class CustomRule:
         :type action: :class:`huaweicloudsdkwaf.v1.CustomAction`
         :param action_mode: 预留参数，可忽略。
         :type action_mode: bool
-        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
         :type priority: int
         :param timestamp: 创建精准防护规则的时间戳
         :type timestamp: int
@@ -286,7 +286,7 @@ class CustomRule:
     def priority(self):
         r"""Gets the priority of this CustomRule.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
 
         :return: The priority of this CustomRule.
         :rtype: int
@@ -297,7 +297,7 @@ class CustomRule:
     def priority(self, priority):
         r"""Sets the priority of this CustomRule.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
 
         :param priority: The priority of this CustomRule.
         :type priority: int

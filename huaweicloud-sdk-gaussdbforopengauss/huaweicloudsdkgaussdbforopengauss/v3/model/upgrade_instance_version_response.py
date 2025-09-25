@@ -32,9 +32,9 @@ class UpgradeInstanceVersionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务id。按需实例时仅返回任务id。
+        :param job_id: **参数解释**: 任务ID。按需实例时仅返回任务ID。 **取值范围**: 不涉及。
         :type job_id: str
-        :param order_id: 订单id。包周期实例时仅返回订单id。
+        :param order_id: **参数解释**: 订单ID。包周期实例时仅返回订单ID。 **取值范围**: 不涉及。
         :type order_id: str
         """
         
@@ -53,7 +53,7 @@ class UpgradeInstanceVersionResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this UpgradeInstanceVersionResponse.
 
-        任务id。按需实例时仅返回任务id。
+        **参数解释**: 任务ID。按需实例时仅返回任务ID。 **取值范围**: 不涉及。
 
         :return: The job_id of this UpgradeInstanceVersionResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class UpgradeInstanceVersionResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this UpgradeInstanceVersionResponse.
 
-        任务id。按需实例时仅返回任务id。
+        **参数解释**: 任务ID。按需实例时仅返回任务ID。 **取值范围**: 不涉及。
 
         :param job_id: The job_id of this UpgradeInstanceVersionResponse.
         :type job_id: str
@@ -75,7 +75,7 @@ class UpgradeInstanceVersionResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this UpgradeInstanceVersionResponse.
 
-        订单id。包周期实例时仅返回订单id。
+        **参数解释**: 订单ID。包周期实例时仅返回订单ID。 **取值范围**: 不涉及。
 
         :return: The order_id of this UpgradeInstanceVersionResponse.
         :rtype: str
@@ -86,7 +86,7 @@ class UpgradeInstanceVersionResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this UpgradeInstanceVersionResponse.
 
-        订单id。包周期实例时仅返回订单id。
+        **参数解释**: 订单ID。包周期实例时仅返回订单ID。 **取值范围**: 不涉及。
 
         :param order_id: The order_id of this UpgradeInstanceVersionResponse.
         :type order_id: str

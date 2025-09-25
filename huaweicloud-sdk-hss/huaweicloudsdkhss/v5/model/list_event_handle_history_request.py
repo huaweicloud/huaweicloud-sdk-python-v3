@@ -77,7 +77,7 @@ class ListEventHandleHistoryRequest:
         :type host_name: str
         :param handle_status: 处置状态，包含如下:   - unhandled：未处理   - handled：已处理
         :type handle_status: str
-        :param host_ip: **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_ip: str
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
@@ -346,7 +346,7 @@ class ListEventHandleHistoryRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListEventHandleHistoryRequest.
 
-        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListEventHandleHistoryRequest.
         :rtype: str
@@ -357,7 +357,7 @@ class ListEventHandleHistoryRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListEventHandleHistoryRequest.
 
-        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListEventHandleHistoryRequest.
         :type host_ip: str

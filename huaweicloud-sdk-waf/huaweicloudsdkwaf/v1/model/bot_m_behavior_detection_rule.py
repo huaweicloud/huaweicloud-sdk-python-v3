@@ -18,35 +18,35 @@ class BotMBehaviorDetectionRule:
 
     openapi_types = {
         'rule': 'BotMRule',
-        'strategy': 'BotMDefenseStrategy'
+        'defense_strategy': 'BotMDefenseStrategy'
     }
 
     attribute_map = {
         'rule': 'rule',
-        'strategy': 'strategy'
+        'defense_strategy': 'defense_strategy'
     }
 
-    def __init__(self, rule=None, strategy=None):
+    def __init__(self, rule=None, defense_strategy=None):
         r"""BotMBehaviorDetectionRule
 
         The model defined in huaweicloud sdk
 
         :param rule: 
         :type rule: :class:`huaweicloudsdkwaf.v1.BotMRule`
-        :param strategy: 
-        :type strategy: :class:`huaweicloudsdkwaf.v1.BotMDefenseStrategy`
+        :param defense_strategy: 
+        :type defense_strategy: :class:`huaweicloudsdkwaf.v1.BotMDefenseStrategy`
         """
         
         
 
         self._rule = None
-        self._strategy = None
+        self._defense_strategy = None
         self.discriminator = None
 
         if rule is not None:
             self.rule = rule
-        if strategy is not None:
-            self.strategy = strategy
+        if defense_strategy is not None:
+            self.defense_strategy = defense_strategy
 
     @property
     def rule(self):
@@ -67,22 +67,22 @@ class BotMBehaviorDetectionRule:
         self._rule = rule
 
     @property
-    def strategy(self):
-        r"""Gets the strategy of this BotMBehaviorDetectionRule.
+    def defense_strategy(self):
+        r"""Gets the defense_strategy of this BotMBehaviorDetectionRule.
 
-        :return: The strategy of this BotMBehaviorDetectionRule.
+        :return: The defense_strategy of this BotMBehaviorDetectionRule.
         :rtype: :class:`huaweicloudsdkwaf.v1.BotMDefenseStrategy`
         """
-        return self._strategy
+        return self._defense_strategy
 
-    @strategy.setter
-    def strategy(self, strategy):
-        r"""Sets the strategy of this BotMBehaviorDetectionRule.
+    @defense_strategy.setter
+    def defense_strategy(self, defense_strategy):
+        r"""Sets the defense_strategy of this BotMBehaviorDetectionRule.
 
-        :param strategy: The strategy of this BotMBehaviorDetectionRule.
-        :type strategy: :class:`huaweicloudsdkwaf.v1.BotMDefenseStrategy`
+        :param defense_strategy: The defense_strategy of this BotMBehaviorDetectionRule.
+        :type defense_strategy: :class:`huaweicloudsdkwaf.v1.BotMDefenseStrategy`
         """
-        self._strategy = strategy
+        self._defense_strategy = defense_strategy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

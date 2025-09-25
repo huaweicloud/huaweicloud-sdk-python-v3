@@ -64,6 +64,8 @@ class CsmsRegion:
                         "https://kms.af-north-1.myhuaweicloud.com")
     CN_SOUTHWEST_3 = Region("cn-southwest-3",
                         "https://kms.cn-southwest-3.myhuaweicloud.com")
+    AF_SOUTH_1 = Region("af-south-1",
+                        "https://kms.af-south-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -95,6 +97,7 @@ class CsmsRegion:
         "cn-north-11": CN_NORTH_11,
         "af-north-1": AF_NORTH_1,
         "cn-southwest-3": CN_SOUTHWEST_3,
+        "af-south-1": AF_SOUTH_1,
     }
 
     @classmethod

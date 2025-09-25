@@ -32,9 +32,9 @@ class ListBackgroundTasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_count: 任务数量。
+        :param task_count: **参数解释**： 任务数量。 **取值范围**： 不涉及。
         :type task_count: str
-        :param tasks: 任务列表。
+        :param tasks: **参数解释**： 任务列表。
         :type tasks: list[:class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksRespTasks`]
         """
         
@@ -53,7 +53,7 @@ class ListBackgroundTasksResponse(SdkResponse):
     def task_count(self):
         r"""Gets the task_count of this ListBackgroundTasksResponse.
 
-        任务数量。
+        **参数解释**： 任务数量。 **取值范围**： 不涉及。
 
         :return: The task_count of this ListBackgroundTasksResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ListBackgroundTasksResponse(SdkResponse):
     def task_count(self, task_count):
         r"""Sets the task_count of this ListBackgroundTasksResponse.
 
-        任务数量。
+        **参数解释**： 任务数量。 **取值范围**： 不涉及。
 
         :param task_count: The task_count of this ListBackgroundTasksResponse.
         :type task_count: str
@@ -75,7 +75,7 @@ class ListBackgroundTasksResponse(SdkResponse):
     def tasks(self):
         r"""Gets the tasks of this ListBackgroundTasksResponse.
 
-        任务列表。
+        **参数解释**： 任务列表。
 
         :return: The tasks of this ListBackgroundTasksResponse.
         :rtype: list[:class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksRespTasks`]
@@ -86,7 +86,7 @@ class ListBackgroundTasksResponse(SdkResponse):
     def tasks(self, tasks):
         r"""Sets the tasks of this ListBackgroundTasksResponse.
 
-        任务列表。
+        **参数解释**： 任务列表。
 
         :param tasks: The tasks of this ListBackgroundTasksResponse.
         :type tasks: list[:class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksRespTasks`]

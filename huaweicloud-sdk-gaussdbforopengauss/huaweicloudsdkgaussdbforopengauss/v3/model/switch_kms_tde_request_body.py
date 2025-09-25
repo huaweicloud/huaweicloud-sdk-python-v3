@@ -48,12 +48,9 @@ class SwitchKmsTdeRequestBody:
         self._kms_tde_status = None
         self.discriminator = None
 
-        if kms_tde_key_id is not None:
-            self.kms_tde_key_id = kms_tde_key_id
-        if kms_project_name is not None:
-            self.kms_project_name = kms_project_name
-        if kms_tde_status is not None:
-            self.kms_tde_status = kms_tde_status
+        self.kms_tde_key_id = kms_tde_key_id
+        self.kms_project_name = kms_project_name
+        self.kms_tde_status = kms_tde_status
 
     @property
     def kms_tde_key_id(self):

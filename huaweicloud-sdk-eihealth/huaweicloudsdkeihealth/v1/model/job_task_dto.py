@@ -19,6 +19,8 @@ class JobTaskDto:
     openapi_types = {
         'task_name': 'str',
         'inputs': 'list[TaskParameterDto]',
+        'outputs': 'list[TaskParameterDto]',
+        'output_dir': 'str',
         'resources': 'TaskResourceDto',
         'io_acc_type': 'str'
     }
@@ -26,11 +28,13 @@ class JobTaskDto:
     attribute_map = {
         'task_name': 'task_name',
         'inputs': 'inputs',
+        'outputs': 'outputs',
+        'output_dir': 'output_dir',
         'resources': 'resources',
         'io_acc_type': 'io_acc_type'
     }
 
-    def __init__(self, task_name=None, inputs=None, resources=None, io_acc_type=None):
+    def __init__(self, task_name=None, inputs=None, outputs=None, output_dir=None, resources=None, io_acc_type=None):
         r"""JobTaskDto
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class JobTaskDto:
         :type task_name: str
         :param inputs: 任务的输入参数信息
         :type inputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
+        :param outputs: **参数解释**： 任务的输出参数信息。 **约束限制**： 最多支持128个参数。 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type outputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
+        :param output_dir: **参数解释**： 子任务结果存储目录，默认为空。 **约束限制**： 不涉及 **取值范围**： 长度[0,128]。 **默认取值**： 不涉及 
+        :type output_dir: str
         :param resources: 
         :type resources: :class:`huaweicloudsdkeihealth.v1.TaskResourceDto`
         :param io_acc_type: 子任务使用的IO加速实例类型，不填表示不使用；
@@ -49,6 +57,8 @@ class JobTaskDto:
 
         self._task_name = None
         self._inputs = None
+        self._outputs = None
+        self._output_dir = None
         self._resources = None
         self._io_acc_type = None
         self.discriminator = None
@@ -56,6 +66,10 @@ class JobTaskDto:
         self.task_name = task_name
         if inputs is not None:
             self.inputs = inputs
+        if outputs is not None:
+            self.outputs = outputs
+        if output_dir is not None:
+            self.output_dir = output_dir
         if resources is not None:
             self.resources = resources
         if io_acc_type is not None:
@@ -104,6 +118,50 @@ class JobTaskDto:
         :type inputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
         """
         self._inputs = inputs
+
+    @property
+    def outputs(self):
+        r"""Gets the outputs of this JobTaskDto.
+
+        **参数解释**： 任务的输出参数信息。 **约束限制**： 最多支持128个参数。 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The outputs of this JobTaskDto.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
+        """
+        return self._outputs
+
+    @outputs.setter
+    def outputs(self, outputs):
+        r"""Sets the outputs of this JobTaskDto.
+
+        **参数解释**： 任务的输出参数信息。 **约束限制**： 最多支持128个参数。 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param outputs: The outputs of this JobTaskDto.
+        :type outputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
+        """
+        self._outputs = outputs
+
+    @property
+    def output_dir(self):
+        r"""Gets the output_dir of this JobTaskDto.
+
+        **参数解释**： 子任务结果存储目录，默认为空。 **约束限制**： 不涉及 **取值范围**： 长度[0,128]。 **默认取值**： 不涉及 
+
+        :return: The output_dir of this JobTaskDto.
+        :rtype: str
+        """
+        return self._output_dir
+
+    @output_dir.setter
+    def output_dir(self, output_dir):
+        r"""Sets the output_dir of this JobTaskDto.
+
+        **参数解释**： 子任务结果存储目录，默认为空。 **约束限制**： 不涉及 **取值范围**： 长度[0,128]。 **默认取值**： 不涉及 
+
+        :param output_dir: The output_dir of this JobTaskDto.
+        :type output_dir: str
+        """
+        self._output_dir = output_dir
 
     @property
     def resources(self):

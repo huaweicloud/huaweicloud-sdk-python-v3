@@ -33,7 +33,7 @@ class ChangePasswordComplexityStatusRequestBody:
 
         :param operate_all: 是否是全量操作。每次最多处理1000个主机。
         :type operate_all: bool
-        :param host_ids: 主机id列表。operate_all&#x3D;ture时不处理host_ids参数。
+        :param host_ids: 主机id列表。operate_all&#x3D;true时不处理host_ids参数。
         :type host_ids: list[str]
         """
         
@@ -74,7 +74,7 @@ class ChangePasswordComplexityStatusRequestBody:
     def host_ids(self):
         r"""Gets the host_ids of this ChangePasswordComplexityStatusRequestBody.
 
-        主机id列表。operate_all=ture时不处理host_ids参数。
+        主机id列表。operate_all=true时不处理host_ids参数。
 
         :return: The host_ids of this ChangePasswordComplexityStatusRequestBody.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class ChangePasswordComplexityStatusRequestBody:
     def host_ids(self, host_ids):
         r"""Sets the host_ids of this ChangePasswordComplexityStatusRequestBody.
 
-        主机id列表。operate_all=ture时不处理host_ids参数。
+        主机id列表。operate_all=true时不处理host_ids参数。
 
         :param host_ids: The host_ids of this ChangePasswordComplexityStatusRequestBody.
         :type host_ids: list[str]

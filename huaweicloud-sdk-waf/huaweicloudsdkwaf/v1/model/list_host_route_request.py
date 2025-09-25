@@ -31,9 +31,9 @@ class ListHostRouteRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
+        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
         :type enterprise_project_id: str
-        :param instance_id: 域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
+        :param instance_id: **参数解释：** 域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
         :type instance_id: str
         """
         
@@ -51,7 +51,7 @@ class ListHostRouteRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListHostRouteRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
 
         :return: The enterprise_project_id of this ListHostRouteRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ListHostRouteRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListHostRouteRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostRouteRequest.
         :type enterprise_project_id: str
@@ -73,7 +73,7 @@ class ListHostRouteRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListHostRouteRequest.
 
-        域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
+        **参数解释：** 域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
 
         :return: The instance_id of this ListHostRouteRequest.
         :rtype: str
@@ -84,7 +84,7 @@ class ListHostRouteRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListHostRouteRequest.
 
-        域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
+        **参数解释：** 域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
 
         :param instance_id: The instance_id of this ListHostRouteRequest.
         :type instance_id: str

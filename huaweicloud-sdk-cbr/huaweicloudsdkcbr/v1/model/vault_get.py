@@ -35,6 +35,7 @@ class VaultGet:
         'threshold': 'int',
         'sys_lock_source_service': 'str',
         'locked': 'bool',
+        'availability_zone': 'str',
         'updated_at': 'str',
         'version': 'str'
     }
@@ -58,11 +59,12 @@ class VaultGet:
         'threshold': 'threshold',
         'sys_lock_source_service': 'sys_lock_source_service',
         'locked': 'locked',
+        'availability_zone': 'availability_zone',
         'updated_at': 'updated_at',
         'version': 'version'
     }
 
-    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, sys_lock_source_service=None, locked=None, updated_at=None, version=None):
+    def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, sys_lock_source_service=None, locked=None, availability_zone=None, updated_at=None, version=None):
         r"""VaultGet
 
         The model defined in huaweicloud sdk
@@ -103,6 +105,8 @@ class VaultGet:
         :type sys_lock_source_service: str
         :param locked: 用于标识该存储库是否已锁定
         :type locked: bool
+        :param availability_zone: 存储库可用区信息，最大支持32字符。
+        :type availability_zone: str
         :param updated_at: 更新时间,例如:\&quot;2020-02-05T10:38:34.209782\&quot;
         :type updated_at: str
         :param version: 版本
@@ -129,6 +133,7 @@ class VaultGet:
         self._threshold = None
         self._sys_lock_source_service = None
         self._locked = None
+        self._availability_zone = None
         self._updated_at = None
         self._version = None
         self.discriminator = None
@@ -163,6 +168,8 @@ class VaultGet:
             self.sys_lock_source_service = sys_lock_source_service
         if locked is not None:
             self.locked = locked
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
         self.updated_at = updated_at
         if version is not None:
             self.version = version
@@ -554,6 +561,28 @@ class VaultGet:
         :type locked: bool
         """
         self._locked = locked
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this VaultGet.
+
+        存储库可用区信息，最大支持32字符。
+
+        :return: The availability_zone of this VaultGet.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this VaultGet.
+
+        存储库可用区信息，最大支持32字符。
+
+        :param availability_zone: The availability_zone of this VaultGet.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     @property
     def updated_at(self):

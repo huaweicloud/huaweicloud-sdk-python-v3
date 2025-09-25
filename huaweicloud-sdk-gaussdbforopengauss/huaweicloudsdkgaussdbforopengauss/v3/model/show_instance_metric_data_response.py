@@ -32,7 +32,7 @@ class ShowInstanceMetricDataResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: **参数解释**: 实例ID。 **取值范围**: 不涉及。
+        :param instance_id: **参数解释**: 实例ID。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。
         :type instance_id: str
         :param metrics: **参数解释**: 指标数据集合。
         :type metrics: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.MetricDataResult`]
@@ -53,7 +53,7 @@ class ShowInstanceMetricDataResponse(SdkResponse):
     def instance_id(self):
         r"""Gets the instance_id of this ShowInstanceMetricDataResponse.
 
-        **参数解释**: 实例ID。 **取值范围**: 不涉及。
+        **参数解释**: 实例ID。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。
 
         :return: The instance_id of this ShowInstanceMetricDataResponse.
         :rtype: str
@@ -64,7 +64,7 @@ class ShowInstanceMetricDataResponse(SdkResponse):
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowInstanceMetricDataResponse.
 
-        **参数解释**: 实例ID。 **取值范围**: 不涉及。
+        **参数解释**: 实例ID。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。
 
         :param instance_id: The instance_id of this ShowInstanceMetricDataResponse.
         :type instance_id: str

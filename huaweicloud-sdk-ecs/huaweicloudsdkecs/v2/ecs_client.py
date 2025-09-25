@@ -5670,6 +5670,71 @@ class EcsClient(Client):
 
         return http_info
 
+    def show_serial_console_actions(self, request):
+        r"""获取串口登录地址
+
+        获取云服务器云主机串口登录地址。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSerialConsoleActions
+        :type request: :class:`huaweicloudsdkecs.v2.ShowSerialConsoleActionsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ShowSerialConsoleActionsResponse`
+        """
+        http_info = self._show_serial_console_actions_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_serial_console_actions_invoker(self, request):
+        http_info = self._show_serial_console_actions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_serial_console_actions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/actions/serial-console",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSerialConsoleActionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_server(self, request):
         r"""查询云服务器详情
 
@@ -6444,6 +6509,73 @@ class EcsClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_serial_console_options(self, request):
+        r"""设置云服务器云主机串口登录
+
+        设置云服务器云主机串口登录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSerialConsoleOptions
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateSerialConsoleOptionsRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateSerialConsoleOptionsResponse`
+        """
+        http_info = self._update_serial_console_options_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_serial_console_options_invoker(self, request):
+        http_info = self._update_serial_console_options_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_serial_console_options_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/serial-console-options",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSerialConsoleOptionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])

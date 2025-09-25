@@ -49,11 +49,11 @@ class BlockedIpResponseInfo:
         :type host_name: str
         :param src_ip: 攻击源IP
         :type src_ip: str
-        :param login_type: 登录类型，包含如下: - \&quot;mysql\&quot; # mysql服务 - \&quot;rdp\&quot; # rdp服务 - \&quot;ssh\&quot; # ssh服务 - \&quot;vsftp\&quot; # vsftp服务
+        :param login_type: **参数解释**： 登录类型 **约束限制**: 不涉及 **取值范围**: - mysql：mysql服务。 - rdp：rdp服务。 - ssh：ssh服务。 - vsftp：vsftp服务。  **默认取值**: 不涉及 
         :type login_type: str
         :param intercept_num: 拦截次数
         :type intercept_num: int
-        :param intercept_status: 拦截状态，包含如下:   - \&quot;intercepted\&quot; # 已拦截   - \&quot;canceled\&quot; # 已解除拦截   - \&quot;cancelling\&quot; # 待解除拦截
+        :param intercept_status: **参数解释**： 拦截状态 **约束限制**: 不涉及 **取值范围**: - intercepted：已拦截。 - canceled：已解除拦截。 - cancelling：待解除拦截。  **默认取值**: 不涉及 
         :type intercept_status: str
         :param block_time: 开始拦截时间，毫秒
         :type block_time: int
@@ -152,7 +152,7 @@ class BlockedIpResponseInfo:
     def login_type(self):
         r"""Gets the login_type of this BlockedIpResponseInfo.
 
-        登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
+        **参数解释**： 登录类型 **约束限制**: 不涉及 **取值范围**: - mysql：mysql服务。 - rdp：rdp服务。 - ssh：ssh服务。 - vsftp：vsftp服务。  **默认取值**: 不涉及 
 
         :return: The login_type of this BlockedIpResponseInfo.
         :rtype: str
@@ -163,7 +163,7 @@ class BlockedIpResponseInfo:
     def login_type(self, login_type):
         r"""Sets the login_type of this BlockedIpResponseInfo.
 
-        登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
+        **参数解释**： 登录类型 **约束限制**: 不涉及 **取值范围**: - mysql：mysql服务。 - rdp：rdp服务。 - ssh：ssh服务。 - vsftp：vsftp服务。  **默认取值**: 不涉及 
 
         :param login_type: The login_type of this BlockedIpResponseInfo.
         :type login_type: str
@@ -196,7 +196,7 @@ class BlockedIpResponseInfo:
     def intercept_status(self):
         r"""Gets the intercept_status of this BlockedIpResponseInfo.
 
-        拦截状态，包含如下:   - \"intercepted\" # 已拦截   - \"canceled\" # 已解除拦截   - \"cancelling\" # 待解除拦截
+        **参数解释**： 拦截状态 **约束限制**: 不涉及 **取值范围**: - intercepted：已拦截。 - canceled：已解除拦截。 - cancelling：待解除拦截。  **默认取值**: 不涉及 
 
         :return: The intercept_status of this BlockedIpResponseInfo.
         :rtype: str
@@ -207,7 +207,7 @@ class BlockedIpResponseInfo:
     def intercept_status(self, intercept_status):
         r"""Sets the intercept_status of this BlockedIpResponseInfo.
 
-        拦截状态，包含如下:   - \"intercepted\" # 已拦截   - \"canceled\" # 已解除拦截   - \"cancelling\" # 待解除拦截
+        **参数解释**： 拦截状态 **约束限制**: 不涉及 **取值范围**: - intercepted：已拦截。 - canceled：已解除拦截。 - cancelling：待解除拦截。  **默认取值**: 不涉及 
 
         :param intercept_status: The intercept_status of this BlockedIpResponseInfo.
         :type intercept_status: str

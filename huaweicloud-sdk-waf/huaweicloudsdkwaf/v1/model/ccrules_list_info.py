@@ -17,6 +17,8 @@ class CcrulesListInfo:
     sensitive_list = []
 
     openapi_types = {
+        'policyname': 'str',
+        'priority': 'int',
         'name': 'str',
         'id': 'str',
         'policyid': 'str',
@@ -44,6 +46,8 @@ class CcrulesListInfo:
     }
 
     attribute_map = {
+        'policyname': 'policyname',
+        'priority': 'priority',
         'name': 'name',
         'id': 'id',
         'policyid': 'policyid',
@@ -70,11 +74,15 @@ class CcrulesListInfo:
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, name=None, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None):
+    def __init__(self, policyname=None, priority=None, name=None, id=None, policyid=None, url=None, prefix=None, mode=None, status=None, conditions=None, action=None, tag_type=None, tag_index=None, tag_condition=None, limit_num=None, limit_period=None, unlock_num=None, lock_time=None, domain_aggregation=None, region_aggregation=None, description=None, total_num=None, unaggregation=None, aging_time=None, producer=None, timestamp=None):
         r"""CcrulesListInfo
 
         The model defined in huaweicloud sdk
 
+        :param policyname: **参数解释：** 策略名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type policyname: str
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
+        :type priority: int
         :param name: 规则名称
         :type name: str
         :param id: Rule ID.
@@ -127,6 +135,8 @@ class CcrulesListInfo:
         
         
 
+        self._policyname = None
+        self._priority = None
         self._name = None
         self._id = None
         self._policyid = None
@@ -153,6 +163,10 @@ class CcrulesListInfo:
         self._timestamp = None
         self.discriminator = None
 
+        if policyname is not None:
+            self.policyname = policyname
+        if priority is not None:
+            self.priority = priority
         if name is not None:
             self.name = name
         if id is not None:
@@ -201,6 +215,50 @@ class CcrulesListInfo:
             self.producer = producer
         if timestamp is not None:
             self.timestamp = timestamp
+
+    @property
+    def policyname(self):
+        r"""Gets the policyname of this CcrulesListInfo.
+
+        **参数解释：** 策略名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The policyname of this CcrulesListInfo.
+        :rtype: str
+        """
+        return self._policyname
+
+    @policyname.setter
+    def policyname(self, policyname):
+        r"""Sets the policyname of this CcrulesListInfo.
+
+        **参数解释：** 策略名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param policyname: The policyname of this CcrulesListInfo.
+        :type policyname: str
+        """
+        self._policyname = policyname
+
+    @property
+    def priority(self):
+        r"""Gets the priority of this CcrulesListInfo.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
+
+        :return: The priority of this CcrulesListInfo.
+        :rtype: int
+        """
+        return self._priority
+
+    @priority.setter
+    def priority(self, priority):
+        r"""Sets the priority of this CcrulesListInfo.
+
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
+
+        :param priority: The priority of this CcrulesListInfo.
+        :type priority: int
+        """
+        self._priority = priority
 
     @property
     def name(self):

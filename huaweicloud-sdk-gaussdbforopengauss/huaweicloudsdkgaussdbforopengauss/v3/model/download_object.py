@@ -18,7 +18,7 @@ class DownloadObject:
 
     openapi_types = {
         'name': 'str',
-        'size': 'float',
+        'size': 'int',
         'download_link': 'str',
         'link_expired_time': 'str'
     }
@@ -38,7 +38,7 @@ class DownloadObject:
         :param name: 文件名称。
         :type name: str
         :param size: 文件大小。
-        :type size: float
+        :type size: int
         :param download_link: 下载链接。
         :type download_link: str
         :param link_expired_time: 链接过期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
@@ -91,7 +91,7 @@ class DownloadObject:
         文件大小。
 
         :return: The size of this DownloadObject.
-        :rtype: float
+        :rtype: int
         """
         return self._size
 
@@ -102,7 +102,7 @@ class DownloadObject:
         文件大小。
 
         :param size: The size of this DownloadObject.
-        :type size: float
+        :type size: int
         """
         self._size = size
 

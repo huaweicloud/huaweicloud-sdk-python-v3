@@ -21,6 +21,8 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         'id': 'str',
         'policyid': 'str',
         'name': 'str',
+        'type': 'str',
+        'tags': 'list[str]',
         'policyname': 'str',
         'timestamp': 'int',
         'description': 'str',
@@ -33,6 +35,8 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         'id': 'id',
         'policyid': 'policyid',
         'name': 'name',
+        'type': 'type',
+        'tags': 'tags',
         'policyname': 'policyname',
         'timestamp': 'timestamp',
         'description': 'description',
@@ -41,7 +45,7 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         'isp': 'isp'
     }
 
-    def __init__(self, id=None, policyid=None, name=None, policyname=None, timestamp=None, description=None, status=None, action=None, isp=None):
+    def __init__(self, id=None, policyid=None, name=None, type=None, tags=None, policyname=None, timestamp=None, description=None, status=None, action=None, isp=None):
         r"""UpdateIpReputationRuleResponse
 
         The model defined in huaweicloud sdk
@@ -52,6 +56,10 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         :type policyid: str
         :param name: **参数解释：** 规则名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
+        :param type: **参数解释：** 规则类型（如idc表示机房IP情报类型） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type type: str
+        :param tags: **参数解释：** 标签列表，用于指定关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type tags: list[str]
         :param policyname: **参数解释：** 所属策略名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type policyname: str
         :param timestamp: **参数解释：** 规则更新时间戳 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
@@ -71,6 +79,8 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         self._id = None
         self._policyid = None
         self._name = None
+        self._type = None
+        self._tags = None
         self._policyname = None
         self._timestamp = None
         self._description = None
@@ -85,6 +95,10 @@ class UpdateIpReputationRuleResponse(SdkResponse):
             self.policyid = policyid
         if name is not None:
             self.name = name
+        if type is not None:
+            self.type = type
+        if tags is not None:
+            self.tags = tags
         if policyname is not None:
             self.policyname = policyname
         if timestamp is not None:
@@ -163,6 +177,50 @@ class UpdateIpReputationRuleResponse(SdkResponse):
         :type name: str
         """
         self._name = name
+
+    @property
+    def type(self):
+        r"""Gets the type of this UpdateIpReputationRuleResponse.
+
+        **参数解释：** 规则类型（如idc表示机房IP情报类型） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The type of this UpdateIpReputationRuleResponse.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this UpdateIpReputationRuleResponse.
+
+        **参数解释：** 规则类型（如idc表示机房IP情报类型） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param type: The type of this UpdateIpReputationRuleResponse.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this UpdateIpReputationRuleResponse.
+
+        **参数解释：** 标签列表，用于指定关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The tags of this UpdateIpReputationRuleResponse.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this UpdateIpReputationRuleResponse.
+
+        **参数解释：** 标签列表，用于指定关联的情报标识 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param tags: The tags of this UpdateIpReputationRuleResponse.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     @property
     def policyname(self):

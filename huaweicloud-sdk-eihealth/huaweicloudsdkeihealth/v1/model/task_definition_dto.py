@@ -25,6 +25,7 @@ class TaskDefinitionDto:
         'resources': 'TaskResourceDto',
         'location': 'VertexLocationDto',
         'inputs': 'list[TaskParameterDto]',
+        'outputs': 'list[TaskParameterDto]',
         'app_info': 'AppInfoDto'
     }
 
@@ -37,10 +38,11 @@ class TaskDefinitionDto:
         'resources': 'resources',
         'location': 'location',
         'inputs': 'inputs',
+        'outputs': 'outputs',
         'app_info': 'app_info'
     }
 
-    def __init__(self, task_name=None, display_name=None, output_dir=None, whole_output_dir=None, io_acc_type=None, resources=None, location=None, inputs=None, app_info=None):
+    def __init__(self, task_name=None, display_name=None, output_dir=None, whole_output_dir=None, io_acc_type=None, resources=None, location=None, inputs=None, outputs=None, app_info=None):
         r"""TaskDefinitionDto
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class TaskDefinitionDto:
         :type location: :class:`huaweicloudsdkeihealth.v1.VertexLocationDto`
         :param inputs: 子任务的输入参数信息
         :type inputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
+        :param outputs: **参数解释**： 子任务的输出参数信息。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type outputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
         :param app_info: 
         :type app_info: :class:`huaweicloudsdkeihealth.v1.AppInfoDto`
         """
@@ -75,6 +79,7 @@ class TaskDefinitionDto:
         self._resources = None
         self._location = None
         self._inputs = None
+        self._outputs = None
         self._app_info = None
         self.discriminator = None
 
@@ -94,6 +99,8 @@ class TaskDefinitionDto:
             self.location = location
         if inputs is not None:
             self.inputs = inputs
+        if outputs is not None:
+            self.outputs = outputs
         if app_info is not None:
             self.app_info = app_info
 
@@ -264,6 +271,28 @@ class TaskDefinitionDto:
         :type inputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
         """
         self._inputs = inputs
+
+    @property
+    def outputs(self):
+        r"""Gets the outputs of this TaskDefinitionDto.
+
+        **参数解释**： 子任务的输出参数信息。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The outputs of this TaskDefinitionDto.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
+        """
+        return self._outputs
+
+    @outputs.setter
+    def outputs(self, outputs):
+        r"""Sets the outputs of this TaskDefinitionDto.
+
+        **参数解释**： 子任务的输出参数信息。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param outputs: The outputs of this TaskDefinitionDto.
+        :type outputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
+        """
+        self._outputs = outputs
 
     @property
     def app_info(self):

@@ -22,7 +22,7 @@ class TrafficDetectionConditionDTO:
         'match_field_index': 'str',
         'logical_operator': 'str',
         'match_contents': 'list[str]',
-        'value_list_ref': 'str'
+        'value_list_res': 'str'
     }
 
     attribute_map = {
@@ -31,10 +31,10 @@ class TrafficDetectionConditionDTO:
         'match_field_index': 'match_field_index',
         'logical_operator': 'logical_operator',
         'match_contents': 'match_contents',
-        'value_list_ref': 'value_list_ref'
+        'value_list_res': 'value_list_res'
     }
 
-    def __init__(self, id=None, match_field=None, match_field_index=None, logical_operator=None, match_contents=None, value_list_ref=None):
+    def __init__(self, id=None, match_field=None, match_field_index=None, logical_operator=None, match_contents=None, value_list_res=None):
         r"""TrafficDetectionConditionDTO
 
         The model defined in huaweicloud sdk
@@ -49,8 +49,8 @@ class TrafficDetectionConditionDTO:
         :type logical_operator: str
         :param match_contents: **参数解释：** 匹配内容，符合筛选条件的具体值列表（如特定URL路径）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type match_contents: list[str]
-        :param value_list_ref: **参数解释：** 引用表Id，关联预设的匹配内容列表ID（如无则不填）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
-        :type value_list_ref: str
+        :param value_list_res: **参数解释：** 引用表Id，关联预设的匹配内容列表ID（如无则不填）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type value_list_res: str
         """
         
         
@@ -60,7 +60,7 @@ class TrafficDetectionConditionDTO:
         self._match_field_index = None
         self._logical_operator = None
         self._match_contents = None
-        self._value_list_ref = None
+        self._value_list_res = None
         self.discriminator = None
 
         if id is not None:
@@ -73,8 +73,8 @@ class TrafficDetectionConditionDTO:
             self.logical_operator = logical_operator
         if match_contents is not None:
             self.match_contents = match_contents
-        if value_list_ref is not None:
-            self.value_list_ref = value_list_ref
+        if value_list_res is not None:
+            self.value_list_res = value_list_res
 
     @property
     def id(self):
@@ -187,26 +187,26 @@ class TrafficDetectionConditionDTO:
         self._match_contents = match_contents
 
     @property
-    def value_list_ref(self):
-        r"""Gets the value_list_ref of this TrafficDetectionConditionDTO.
+    def value_list_res(self):
+        r"""Gets the value_list_res of this TrafficDetectionConditionDTO.
 
         **参数解释：** 引用表Id，关联预设的匹配内容列表ID（如无则不填）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
-        :return: The value_list_ref of this TrafficDetectionConditionDTO.
+        :return: The value_list_res of this TrafficDetectionConditionDTO.
         :rtype: str
         """
-        return self._value_list_ref
+        return self._value_list_res
 
-    @value_list_ref.setter
-    def value_list_ref(self, value_list_ref):
-        r"""Sets the value_list_ref of this TrafficDetectionConditionDTO.
+    @value_list_res.setter
+    def value_list_res(self, value_list_res):
+        r"""Sets the value_list_res of this TrafficDetectionConditionDTO.
 
         **参数解释：** 引用表Id，关联预设的匹配内容列表ID（如无则不填）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
-        :param value_list_ref: The value_list_ref of this TrafficDetectionConditionDTO.
-        :type value_list_ref: str
+        :param value_list_res: The value_list_res of this TrafficDetectionConditionDTO.
+        :type value_list_res: str
         """
-        self._value_list_ref = value_list_ref
+        self._value_list_res = value_list_res
 
     def to_dict(self):
         """Returns the model properties as a dict"""

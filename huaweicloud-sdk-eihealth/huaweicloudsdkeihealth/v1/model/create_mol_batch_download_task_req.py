@@ -20,6 +20,7 @@ class CreateMolBatchDownloadTaskReq:
         'job_id': 'str',
         'job_result_url': 'str',
         'mode': 'str',
+        'format': 'str',
         'selected': 'list[int]'
     }
 
@@ -27,10 +28,11 @@ class CreateMolBatchDownloadTaskReq:
         'job_id': 'job_id',
         'job_result_url': 'job_result_url',
         'mode': 'mode',
+        'format': 'format',
         'selected': 'selected'
     }
 
-    def __init__(self, job_id=None, job_result_url=None, mode=None, selected=None):
+    def __init__(self, job_id=None, job_result_url=None, mode=None, format=None, selected=None):
         r"""CreateMolBatchDownloadTaskReq
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class CreateMolBatchDownloadTaskReq:
         :type job_result_url: str
         :param mode: 下载类型：MOL（小分子）、COMPLEX（复合物）
         :type mode: str
+        :param format: **参数解释**： 文件格式：pdb、sdf（仅下载小分子时支持此格式）。 **约束限制**： 不涉及 **取值范围**： - pdb：pdb文件格式。 - sdf：sdf文件格式，仅下载小分子时支持此格式。 **默认取值**： pdb 
+        :type format: str
         :param selected: 选中下载的分子下标
         :type selected: list[int]
         """
@@ -50,12 +54,15 @@ class CreateMolBatchDownloadTaskReq:
         self._job_id = None
         self._job_result_url = None
         self._mode = None
+        self._format = None
         self._selected = None
         self.discriminator = None
 
         self.job_id = job_id
         self.job_result_url = job_result_url
         self.mode = mode
+        if format is not None:
+            self.format = format
         self.selected = selected
 
     @property
@@ -123,6 +130,28 @@ class CreateMolBatchDownloadTaskReq:
         :type mode: str
         """
         self._mode = mode
+
+    @property
+    def format(self):
+        r"""Gets the format of this CreateMolBatchDownloadTaskReq.
+
+        **参数解释**： 文件格式：pdb、sdf（仅下载小分子时支持此格式）。 **约束限制**： 不涉及 **取值范围**： - pdb：pdb文件格式。 - sdf：sdf文件格式，仅下载小分子时支持此格式。 **默认取值**： pdb 
+
+        :return: The format of this CreateMolBatchDownloadTaskReq.
+        :rtype: str
+        """
+        return self._format
+
+    @format.setter
+    def format(self, format):
+        r"""Sets the format of this CreateMolBatchDownloadTaskReq.
+
+        **参数解释**： 文件格式：pdb、sdf（仅下载小分子时支持此格式）。 **约束限制**： 不涉及 **取值范围**： - pdb：pdb文件格式。 - sdf：sdf文件格式，仅下载小分子时支持此格式。 **默认取值**： pdb 
+
+        :param format: The format of this CreateMolBatchDownloadTaskReq.
+        :type format: str
+        """
+        self._format = format
 
     @property
     def selected(self):

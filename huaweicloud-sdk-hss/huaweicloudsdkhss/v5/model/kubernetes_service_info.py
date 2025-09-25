@@ -55,7 +55,7 @@ class KubernetesServiceInfo:
         :type namespace: str
         :param creation_timestamp: 创建时间戳
         :type creation_timestamp: int
-        :param type: 服务类型（访问方式）
+        :param type: **参数解释**: 服务类型（访问方式） **约束限制**: 不涉及 **取值范围**:   - ClusterIP：仅内部可访问服务   - NodePort：通过NodePort对外暴露服务   - LoadBalancer：通过LoadBalancer对外暴露服务  **默认取值**: 不涉及 
         :type type: str
         :param cluster_ip: 集群IP
         :type cluster_ip: str
@@ -211,7 +211,7 @@ class KubernetesServiceInfo:
     def type(self):
         r"""Gets the type of this KubernetesServiceInfo.
 
-        服务类型（访问方式）
+        **参数解释**: 服务类型（访问方式） **约束限制**: 不涉及 **取值范围**:   - ClusterIP：仅内部可访问服务   - NodePort：通过NodePort对外暴露服务   - LoadBalancer：通过LoadBalancer对外暴露服务  **默认取值**: 不涉及 
 
         :return: The type of this KubernetesServiceInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class KubernetesServiceInfo:
     def type(self, type):
         r"""Sets the type of this KubernetesServiceInfo.
 
-        服务类型（访问方式）
+        **参数解释**: 服务类型（访问方式） **约束限制**: 不涉及 **取值范围**:   - ClusterIP：仅内部可访问服务   - NodePort：通过NodePort对外暴露服务   - LoadBalancer：通过LoadBalancer对外暴露服务  **默认取值**: 不涉及 
 
         :param type: The type of this KubernetesServiceInfo.
         :type type: str

@@ -31,9 +31,9 @@ class WebTamperTimingOffConfigInfoRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param week_off_list: 关闭防护周期
+        :param week_off_list: **参数解释**: 自动关闭防护周期列表 **约束限制**: 不涉及 **取值范围**: 最少1条，最多7条 **默认取值**: 不涉及 
         :type week_off_list: list[int]
-        :param timing_range_list: 时间段
+        :param timing_range_list: **参数解释**: 自动关闭防护时间段 **约束限制**: 不涉及 **取值范围**: 最少1条，最多5条 **默认取值**: 不涉及 
         :type timing_range_list: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigRequestInfo`]
         """
         
@@ -52,7 +52,7 @@ class WebTamperTimingOffConfigInfoRequestInfo:
     def week_off_list(self):
         r"""Gets the week_off_list of this WebTamperTimingOffConfigInfoRequestInfo.
 
-        关闭防护周期
+        **参数解释**: 自动关闭防护周期列表 **约束限制**: 不涉及 **取值范围**: 最少1条，最多7条 **默认取值**: 不涉及 
 
         :return: The week_off_list of this WebTamperTimingOffConfigInfoRequestInfo.
         :rtype: list[int]
@@ -63,7 +63,7 @@ class WebTamperTimingOffConfigInfoRequestInfo:
     def week_off_list(self, week_off_list):
         r"""Sets the week_off_list of this WebTamperTimingOffConfigInfoRequestInfo.
 
-        关闭防护周期
+        **参数解释**: 自动关闭防护周期列表 **约束限制**: 不涉及 **取值范围**: 最少1条，最多7条 **默认取值**: 不涉及 
 
         :param week_off_list: The week_off_list of this WebTamperTimingOffConfigInfoRequestInfo.
         :type week_off_list: list[int]
@@ -74,7 +74,7 @@ class WebTamperTimingOffConfigInfoRequestInfo:
     def timing_range_list(self):
         r"""Gets the timing_range_list of this WebTamperTimingOffConfigInfoRequestInfo.
 
-        时间段
+        **参数解释**: 自动关闭防护时间段 **约束限制**: 不涉及 **取值范围**: 最少1条，最多5条 **默认取值**: 不涉及 
 
         :return: The timing_range_list of this WebTamperTimingOffConfigInfoRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigRequestInfo`]
@@ -85,7 +85,7 @@ class WebTamperTimingOffConfigInfoRequestInfo:
     def timing_range_list(self, timing_range_list):
         r"""Sets the timing_range_list of this WebTamperTimingOffConfigInfoRequestInfo.
 
-        时间段
+        **参数解释**: 自动关闭防护时间段 **约束限制**: 不涉及 **取值范围**: 最少1条，最多5条 **默认取值**: 不涉及 
 
         :param timing_range_list: The timing_range_list of this WebTamperTimingOffConfigInfoRequestInfo.
         :type timing_range_list: list[:class:`huaweicloudsdkhss.v5.TimingRangeConfigRequestInfo`]

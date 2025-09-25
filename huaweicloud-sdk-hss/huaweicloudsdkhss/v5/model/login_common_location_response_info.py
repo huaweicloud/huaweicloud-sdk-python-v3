@@ -35,7 +35,7 @@ class LoginCommonLocationResponseInfo:
 
         :param area_code: 国家城市的编码
         :type area_code: int
-        :param total_num: 这个常用登陆地的主机个数
+        :param total_num: 这个常用登录地的主机个数
         :type total_num: int
         :param host_id_list: 服务器列表
         :type host_id_list: list[str]
@@ -81,7 +81,7 @@ class LoginCommonLocationResponseInfo:
     def total_num(self):
         r"""Gets the total_num of this LoginCommonLocationResponseInfo.
 
-        这个常用登陆地的主机个数
+        这个常用登录地的主机个数
 
         :return: The total_num of this LoginCommonLocationResponseInfo.
         :rtype: int
@@ -92,7 +92,7 @@ class LoginCommonLocationResponseInfo:
     def total_num(self, total_num):
         r"""Sets the total_num of this LoginCommonLocationResponseInfo.
 
-        这个常用登陆地的主机个数
+        这个常用登录地的主机个数
 
         :param total_num: The total_num of this LoginCommonLocationResponseInfo.
         :type total_num: int

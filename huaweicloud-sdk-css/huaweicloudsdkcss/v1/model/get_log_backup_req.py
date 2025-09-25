@@ -64,7 +64,8 @@ class GetLogBackupReq:
         self.discriminator = None
 
         self.instance_name = instance_name
-        self.level = level
+        if level is not None:
+            self.level = level
         self.log_type = log_type
         if limit is not None:
             self.limit = limit

@@ -22,7 +22,7 @@ class SlowSQLInfoResult:
         'user_name': 'str',
         'sql_text': 'str',
         'query_plan': 'str',
-        'calls': 'str',
+        'calls': 'int',
         'avg_exec_time': 'str',
         'avg_cpu_time': 'str',
         'avg_io_time': 'str',
@@ -68,7 +68,7 @@ class SlowSQLInfoResult:
         :param query_plan: **参数解释**: SQL计划。 **取值范围**: 不涉及。
         :type query_plan: str
         :param calls: **参数解释**: 执行次数（次）。 **取值范围**: 不涉及。
-        :type calls: str
+        :type calls: int
         :param avg_exec_time: **参数解释**: 平均执行时间（us）。 **取值范围**: 不涉及。
         :type avg_exec_time: str
         :param avg_cpu_time: **参数解释**: 平均CPU耗时（us）。 **取值范围**: 不涉及。
@@ -256,7 +256,7 @@ class SlowSQLInfoResult:
         **参数解释**: 执行次数（次）。 **取值范围**: 不涉及。
 
         :return: The calls of this SlowSQLInfoResult.
-        :rtype: str
+        :rtype: int
         """
         return self._calls
 
@@ -267,7 +267,7 @@ class SlowSQLInfoResult:
         **参数解释**: 执行次数（次）。 **取值范围**: 不涉及。
 
         :param calls: The calls of this SlowSQLInfoResult.
-        :type calls: str
+        :type calls: int
         """
         self._calls = calls
 

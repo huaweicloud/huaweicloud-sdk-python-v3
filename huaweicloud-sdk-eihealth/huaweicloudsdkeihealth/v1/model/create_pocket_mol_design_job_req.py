@@ -23,7 +23,8 @@ class CreatePocketMolDesignJobReq:
         'num_trials': 'int',
         'model_ids': 'list[str]',
         'molecular_weight': 'list[int]',
-        'optimization_mode': 'OptimizationMode'
+        'optimization_mode': 'OptimizationMode',
+        'base_model_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CreatePocketMolDesignJobReq:
         'num_trials': 'num_trials',
         'model_ids': 'model_ids',
         'molecular_weight': 'molecular_weight',
-        'optimization_mode': 'optimization_mode'
+        'optimization_mode': 'optimization_mode',
+        'base_model_id': 'base_model_id'
     }
 
-    def __init__(self, basic_info=None, receptor=None, ligands=None, num_trials=None, model_ids=None, molecular_weight=None, optimization_mode=None):
+    def __init__(self, basic_info=None, receptor=None, ligands=None, num_trials=None, model_ids=None, molecular_weight=None, optimization_mode=None, base_model_id=None):
         r"""CreatePocketMolDesignJobReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CreatePocketMolDesignJobReq:
         :type molecular_weight: list[int]
         :param optimization_mode: 
         :type optimization_mode: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
+        :param base_model_id: **参数解释**： 基模型ID。 **约束限制**： 当optimization_mode为generation时，可选择PanguDrug3D、Lingo3DMol，当为其他方式时，仅可选择可选择PanguDrug3D。 **取值范围**： - PanguDrug3D - Lingo3DMol **默认取值**： 不涉及 
+        :type base_model_id: str
         """
         
         
@@ -66,6 +70,7 @@ class CreatePocketMolDesignJobReq:
         self._model_ids = None
         self._molecular_weight = None
         self._optimization_mode = None
+        self._base_model_id = None
         self.discriminator = None
 
         self.basic_info = basic_info
@@ -80,6 +85,8 @@ class CreatePocketMolDesignJobReq:
             self.molecular_weight = molecular_weight
         if optimization_mode is not None:
             self.optimization_mode = optimization_mode
+        if base_model_id is not None:
+            self.base_model_id = base_model_id
 
     @property
     def basic_info(self):
@@ -222,6 +229,28 @@ class CreatePocketMolDesignJobReq:
         :type optimization_mode: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
         """
         self._optimization_mode = optimization_mode
+
+    @property
+    def base_model_id(self):
+        r"""Gets the base_model_id of this CreatePocketMolDesignJobReq.
+
+        **参数解释**： 基模型ID。 **约束限制**： 当optimization_mode为generation时，可选择PanguDrug3D、Lingo3DMol，当为其他方式时，仅可选择可选择PanguDrug3D。 **取值范围**： - PanguDrug3D - Lingo3DMol **默认取值**： 不涉及 
+
+        :return: The base_model_id of this CreatePocketMolDesignJobReq.
+        :rtype: str
+        """
+        return self._base_model_id
+
+    @base_model_id.setter
+    def base_model_id(self, base_model_id):
+        r"""Sets the base_model_id of this CreatePocketMolDesignJobReq.
+
+        **参数解释**： 基模型ID。 **约束限制**： 当optimization_mode为generation时，可选择PanguDrug3D、Lingo3DMol，当为其他方式时，仅可选择可选择PanguDrug3D。 **取值范围**： - PanguDrug3D - Lingo3DMol **默认取值**： 不涉及 
+
+        :param base_model_id: The base_model_id of this CreatePocketMolDesignJobReq.
+        :type base_model_id: str
+        """
+        self._base_model_id = base_model_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

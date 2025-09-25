@@ -33,7 +33,8 @@ class ShowProjectResponse(SdkResponse):
         'update_time': 'str',
         'delete_time': 'str',
         'is_core': 'bool',
-        'storage_quota': 'int'
+        'storage_quota': 'int',
+        'storage_tenant': 'str'
     }
 
     attribute_map = {
@@ -52,10 +53,11 @@ class ShowProjectResponse(SdkResponse):
         'update_time': 'update_time',
         'delete_time': 'delete_time',
         'is_core': 'is_core',
-        'storage_quota': 'storage_quota'
+        'storage_quota': 'storage_quota',
+        'storage_tenant': 'storage_tenant'
     }
 
-    def __init__(self, id=None, name=None, obs_bucket_name=None, swr_namespace=None, creator=None, role=None, roles=None, size=None, status=None, tags=None, description=None, create_time=None, update_time=None, delete_time=None, is_core=None, storage_quota=None):
+    def __init__(self, id=None, name=None, obs_bucket_name=None, swr_namespace=None, creator=None, role=None, roles=None, size=None, status=None, tags=None, description=None, create_time=None, update_time=None, delete_time=None, is_core=None, storage_quota=None, storage_tenant=None):
         r"""ShowProjectResponse
 
         The model defined in huaweicloud sdk
@@ -92,6 +94,8 @@ class ShowProjectResponse(SdkResponse):
         :type is_core: bool
         :param storage_quota: 项目数据容量配额，-1表示无容量限制
         :type storage_quota: int
+        :param storage_tenant: **参数解释**： 空间桶来源租户。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type storage_tenant: str
         """
         
         super(ShowProjectResponse, self).__init__()
@@ -112,6 +116,7 @@ class ShowProjectResponse(SdkResponse):
         self._delete_time = None
         self._is_core = None
         self._storage_quota = None
+        self._storage_tenant = None
         self.discriminator = None
 
         if id is not None:
@@ -146,6 +151,8 @@ class ShowProjectResponse(SdkResponse):
             self.is_core = is_core
         if storage_quota is not None:
             self.storage_quota = storage_quota
+        if storage_tenant is not None:
+            self.storage_tenant = storage_tenant
 
     @property
     def id(self):
@@ -498,6 +505,28 @@ class ShowProjectResponse(SdkResponse):
         :type storage_quota: int
         """
         self._storage_quota = storage_quota
+
+    @property
+    def storage_tenant(self):
+        r"""Gets the storage_tenant of this ShowProjectResponse.
+
+        **参数解释**： 空间桶来源租户。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The storage_tenant of this ShowProjectResponse.
+        :rtype: str
+        """
+        return self._storage_tenant
+
+    @storage_tenant.setter
+    def storage_tenant(self, storage_tenant):
+        r"""Sets the storage_tenant of this ShowProjectResponse.
+
+        **参数解释**： 空间桶来源租户。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param storage_tenant: The storage_tenant of this ShowProjectResponse.
+        :type storage_tenant: str
+        """
+        self._storage_tenant = storage_tenant
 
     def to_dict(self):
         """Returns the model properties as a dict"""

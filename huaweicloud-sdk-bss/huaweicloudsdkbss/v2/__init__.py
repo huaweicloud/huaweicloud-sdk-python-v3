@@ -13,6 +13,7 @@ from huaweicloudsdkbss.v2.model.adjust_account_req import AdjustAccountReq
 from huaweicloudsdkbss.v2.model.adjust_coupon_quotas_req import AdjustCouponQuotasReq
 from huaweicloudsdkbss.v2.model.adjust_record_v3 import AdjustRecordV3
 from huaweicloudsdkbss.v2.model.adjust_to_indirect_partner_req import AdjustToIndirectPartnerReq
+from huaweicloudsdkbss.v2.model.agent_pay_info_v2 import AgentPayInfoV2
 from huaweicloudsdkbss.v2.model.amount_infomation_v2 import AmountInfomationV2
 from huaweicloudsdkbss.v2.model.apply_enterprise_realname_auths_req import ApplyEnterpriseRealnameAuthsReq
 from huaweicloudsdkbss.v2.model.apply_individual_realname_auths_req import ApplyIndividualRealnameAuthsReq

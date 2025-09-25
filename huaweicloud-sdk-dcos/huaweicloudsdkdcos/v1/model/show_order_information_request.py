@@ -29,7 +29,7 @@ class ShowOrderInformationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param model_code: 工单类型编码
+        :param model_code: 服务单类型编码
         :type model_code: str
         """
         
@@ -44,7 +44,7 @@ class ShowOrderInformationRequest:
     def model_code(self):
         r"""Gets the model_code of this ShowOrderInformationRequest.
 
-        工单类型编码
+        服务单类型编码
 
         :return: The model_code of this ShowOrderInformationRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowOrderInformationRequest:
     def model_code(self, model_code):
         r"""Sets the model_code of this ShowOrderInformationRequest.
 
-        工单类型编码
+        服务单类型编码
 
         :param model_code: The model_code of this ShowOrderInformationRequest.
         :type model_code: str

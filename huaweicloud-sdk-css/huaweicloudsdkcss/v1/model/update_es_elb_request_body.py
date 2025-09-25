@@ -19,16 +19,18 @@ class UpdateEsElbRequestBody:
     openapi_types = {
         'enable': 'bool',
         'agency': 'str',
-        'elb_id': 'str'
+        'elb_id': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
         'enable': 'enable',
         'agency': 'agency',
-        'elb_id': 'elb_id'
+        'elb_id': 'elb_id',
+        'type': 'type'
     }
 
-    def __init__(self, enable=None, agency=None, elb_id=None):
+    def __init__(self, enable=None, agency=None, elb_id=None, type=None):
         r"""UpdateEsElbRequestBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class UpdateEsElbRequestBody:
         :type agency: str
         :param elb_id: 负载均衡器id。
         :type elb_id: str
+        :param type: 负载均衡器类型。当用于可观测集群时：不需要配置此参数。
+        :type type: str
         """
         
         
@@ -46,6 +50,7 @@ class UpdateEsElbRequestBody:
         self._enable = None
         self._agency = None
         self._elb_id = None
+        self._type = None
         self.discriminator = None
 
         self.enable = enable
@@ -53,6 +58,8 @@ class UpdateEsElbRequestBody:
             self.agency = agency
         if elb_id is not None:
             self.elb_id = elb_id
+        if type is not None:
+            self.type = type
 
     @property
     def enable(self):
@@ -119,6 +126,28 @@ class UpdateEsElbRequestBody:
         :type elb_id: str
         """
         self._elb_id = elb_id
+
+    @property
+    def type(self):
+        r"""Gets the type of this UpdateEsElbRequestBody.
+
+        负载均衡器类型。当用于可观测集群时：不需要配置此参数。
+
+        :return: The type of this UpdateEsElbRequestBody.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this UpdateEsElbRequestBody.
+
+        负载均衡器类型。当用于可观测集群时：不需要配置此参数。
+
+        :param type: The type of this UpdateEsElbRequestBody.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,8 +18,8 @@ class BatchStartWebTamperProtectionRequestInfo:
 
     openapi_types = {
         'host_id_list': 'list[str]',
-        'resource_id': 'str',
         'charging_mode': 'str',
+        'resource_id': 'str',
         'tags': 'list[TagInfo]',
         'protect_dir_info': 'WebTamperProtectDirRequestInfo',
         'enable_timing_off': 'bool',
@@ -32,8 +32,8 @@ class BatchStartWebTamperProtectionRequestInfo:
 
     attribute_map = {
         'host_id_list': 'host_id_list',
-        'resource_id': 'resource_id',
         'charging_mode': 'charging_mode',
+        'resource_id': 'resource_id',
         'tags': 'tags',
         'protect_dir_info': 'protect_dir_info',
         'enable_timing_off': 'enable_timing_off',
@@ -44,30 +44,30 @@ class BatchStartWebTamperProtectionRequestInfo:
         'privileged_process_info': 'privileged_process_info'
     }
 
-    def __init__(self, host_id_list=None, resource_id=None, charging_mode=None, tags=None, protect_dir_info=None, enable_timing_off=None, timing_off_config_info=None, enable_rasp_protect=None, rasp_path=None, enable_privileged_process=None, privileged_process_info=None):
+    def __init__(self, host_id_list=None, charging_mode=None, resource_id=None, tags=None, protect_dir_info=None, enable_timing_off=None, timing_off_config_info=None, enable_rasp_protect=None, rasp_path=None, enable_privileged_process=None, privileged_process_info=None):
         r"""BatchStartWebTamperProtectionRequestInfo
 
         The model defined in huaweicloud sdk
 
-        :param host_id_list: 主机ID数组，不能为空
+        :param host_id_list: **参数解释**: 需要开启防护的服务器ID列表，仅支持填写未开启网页防篡改防护的服务器ID，已开启网页防篡改防护的服务器可使用UpdateWebTamperHostPolicy接口进行修改策略。 **约束限制** : 仅支持填写未开启网页防篡改防护的服务器ID，且Linux服务器和Windows服务器不可同时填写，需分批开启。 **取值范围**: 最少1条，最多20000条 **默认取值** : 不涉及 
         :type host_id_list: list[str]
-        :param resource_id: 资源ID
-        :type resource_id: str
-        :param charging_mode: 计费模式   - packet_cycle: 包周期
+        :param charging_mode: **参数解释**: 计费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle: 包年/包月，可填写resource_id。 - on_demand: 按需计费，无需填写resource_id。  **默认取值**: on_demand 
         :type charging_mode: str
-        :param tags: 资源标签列表
+        :param resource_id: **参数解释**: 资源ID，即网页防篡改配额的配额ID，当charging_mode选择packet_cycle时可填写该字段，表示使用一个指定配额，也可不填写该字段，表示随机选择符合的配额。 **约束限制** : 不涉及 **取值范围**: 字符长度0-64位 **默认取值** : 不涉及 
+        :type resource_id: str
+        :param tags: **参数解释**： 资源标签列表，仅计费模式选择按需计费时支持填写。 **约束限制**: 仅计费模式选择按需计费时支持填写。 **取值范围**: 最少0条，最多2097152条 **默认取值**: 不涉及
         :type tags: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
         :param protect_dir_info: 
         :type protect_dir_info: :class:`huaweicloudsdkhss.v5.WebTamperProtectDirRequestInfo`
-        :param enable_timing_off: 定时开关状态
+        :param enable_timing_off: **参数解释**: 定时开关设置状态 **约束限制**: 不涉及 **取值范围**: - True ：开启定时关闭防护功能，必须填写timing_off_config_info。 - False ：关闭定时关闭防护功能，无需填写timing_off_config_info。  **默认取值**: False 
         :type enable_timing_off: bool
         :param timing_off_config_info: 
         :type timing_off_config_info: :class:`huaweicloudsdkhss.v5.WebTamperTimingOffConfigInfoRequestInfo`
-        :param enable_rasp_protect: 动态网页防篡改开启状态
+        :param enable_rasp_protect: **参数解释**: 动态网页防篡改开启状态，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持开启动态网页防篡改，Windows服务器不可填写该字段。 **取值范围**: - True ：开启动态网页防篡改，必须填写rasp_path。 - False ：关闭动态网页防篡改，无需填写rasp_path。  **默认取值**: False 
         :type enable_rasp_protect: bool
-        :param rasp_path: rasp path
+        :param rasp_path: **参数解释**: 动态网页防篡改的Tomcat bin目录，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持配置动态网页防篡改的Tomcat bin目录，Windows服务器不可填写该字段。 **取值范围**: 字符长度1-256位，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。 **默认取值**: 不涉及 
         :type rasp_path: str
-        :param enable_privileged_process: 特权进程状态
+        :param enable_privileged_process: **参数解释**: 特权进程开启状态 **约束限制**: 不涉及 **取值范围**: - True ：开启特权进程，必须填写privileged_process_info。 - False ：关闭特权进程，无需填写privileged_process_info。  **默认取值**: False 
         :type enable_privileged_process: bool
         :param privileged_process_info: 
         :type privileged_process_info: :class:`huaweicloudsdkhss.v5.WebTamperPrivilegedProcessRequestInfo`
@@ -76,8 +76,8 @@ class BatchStartWebTamperProtectionRequestInfo:
         
 
         self._host_id_list = None
-        self._resource_id = None
         self._charging_mode = None
+        self._resource_id = None
         self._tags = None
         self._protect_dir_info = None
         self._enable_timing_off = None
@@ -89,14 +89,13 @@ class BatchStartWebTamperProtectionRequestInfo:
         self.discriminator = None
 
         self.host_id_list = host_id_list
-        if resource_id is not None:
-            self.resource_id = resource_id
         if charging_mode is not None:
             self.charging_mode = charging_mode
+        if resource_id is not None:
+            self.resource_id = resource_id
         if tags is not None:
             self.tags = tags
-        if protect_dir_info is not None:
-            self.protect_dir_info = protect_dir_info
+        self.protect_dir_info = protect_dir_info
         if enable_timing_off is not None:
             self.enable_timing_off = enable_timing_off
         if timing_off_config_info is not None:
@@ -114,7 +113,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this BatchStartWebTamperProtectionRequestInfo.
 
-        主机ID数组，不能为空
+        **参数解释**: 需要开启防护的服务器ID列表，仅支持填写未开启网页防篡改防护的服务器ID，已开启网页防篡改防护的服务器可使用UpdateWebTamperHostPolicy接口进行修改策略。 **约束限制** : 仅支持填写未开启网页防篡改防护的服务器ID，且Linux服务器和Windows服务器不可同时填写，需分批开启。 **取值范围**: 最少1条，最多20000条 **默认取值** : 不涉及 
 
         :return: The host_id_list of this BatchStartWebTamperProtectionRequestInfo.
         :rtype: list[str]
@@ -125,7 +124,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this BatchStartWebTamperProtectionRequestInfo.
 
-        主机ID数组，不能为空
+        **参数解释**: 需要开启防护的服务器ID列表，仅支持填写未开启网页防篡改防护的服务器ID，已开启网页防篡改防护的服务器可使用UpdateWebTamperHostPolicy接口进行修改策略。 **约束限制** : 仅支持填写未开启网页防篡改防护的服务器ID，且Linux服务器和Windows服务器不可同时填写，需分批开启。 **取值范围**: 最少1条，最多20000条 **默认取值** : 不涉及 
 
         :param host_id_list: The host_id_list of this BatchStartWebTamperProtectionRequestInfo.
         :type host_id_list: list[str]
@@ -133,32 +132,10 @@ class BatchStartWebTamperProtectionRequestInfo:
         self._host_id_list = host_id_list
 
     @property
-    def resource_id(self):
-        r"""Gets the resource_id of this BatchStartWebTamperProtectionRequestInfo.
-
-        资源ID
-
-        :return: The resource_id of this BatchStartWebTamperProtectionRequestInfo.
-        :rtype: str
-        """
-        return self._resource_id
-
-    @resource_id.setter
-    def resource_id(self, resource_id):
-        r"""Sets the resource_id of this BatchStartWebTamperProtectionRequestInfo.
-
-        资源ID
-
-        :param resource_id: The resource_id of this BatchStartWebTamperProtectionRequestInfo.
-        :type resource_id: str
-        """
-        self._resource_id = resource_id
-
-    @property
     def charging_mode(self):
         r"""Gets the charging_mode of this BatchStartWebTamperProtectionRequestInfo.
 
-        计费模式   - packet_cycle: 包周期
+        **参数解释**: 计费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle: 包年/包月，可填写resource_id。 - on_demand: 按需计费，无需填写resource_id。  **默认取值**: on_demand 
 
         :return: The charging_mode of this BatchStartWebTamperProtectionRequestInfo.
         :rtype: str
@@ -169,7 +146,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this BatchStartWebTamperProtectionRequestInfo.
 
-        计费模式   - packet_cycle: 包周期
+        **参数解释**: 计费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle: 包年/包月，可填写resource_id。 - on_demand: 按需计费，无需填写resource_id。  **默认取值**: on_demand 
 
         :param charging_mode: The charging_mode of this BatchStartWebTamperProtectionRequestInfo.
         :type charging_mode: str
@@ -177,10 +154,32 @@ class BatchStartWebTamperProtectionRequestInfo:
         self._charging_mode = charging_mode
 
     @property
+    def resource_id(self):
+        r"""Gets the resource_id of this BatchStartWebTamperProtectionRequestInfo.
+
+        **参数解释**: 资源ID，即网页防篡改配额的配额ID，当charging_mode选择packet_cycle时可填写该字段，表示使用一个指定配额，也可不填写该字段，表示随机选择符合的配额。 **约束限制** : 不涉及 **取值范围**: 字符长度0-64位 **默认取值** : 不涉及 
+
+        :return: The resource_id of this BatchStartWebTamperProtectionRequestInfo.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        r"""Sets the resource_id of this BatchStartWebTamperProtectionRequestInfo.
+
+        **参数解释**: 资源ID，即网页防篡改配额的配额ID，当charging_mode选择packet_cycle时可填写该字段，表示使用一个指定配额，也可不填写该字段，表示随机选择符合的配额。 **约束限制** : 不涉及 **取值范围**: 字符长度0-64位 **默认取值** : 不涉及 
+
+        :param resource_id: The resource_id of this BatchStartWebTamperProtectionRequestInfo.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
+
+    @property
     def tags(self):
         r"""Gets the tags of this BatchStartWebTamperProtectionRequestInfo.
 
-        资源标签列表
+        **参数解释**： 资源标签列表，仅计费模式选择按需计费时支持填写。 **约束限制**: 仅计费模式选择按需计费时支持填写。 **取值范围**: 最少0条，最多2097152条 **默认取值**: 不涉及
 
         :return: The tags of this BatchStartWebTamperProtectionRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
@@ -191,7 +190,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def tags(self, tags):
         r"""Sets the tags of this BatchStartWebTamperProtectionRequestInfo.
 
-        资源标签列表
+        **参数解释**： 资源标签列表，仅计费模式选择按需计费时支持填写。 **约束限制**: 仅计费模式选择按需计费时支持填写。 **取值范围**: 最少0条，最多2097152条 **默认取值**: 不涉及
 
         :param tags: The tags of this BatchStartWebTamperProtectionRequestInfo.
         :type tags: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
@@ -220,7 +219,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def enable_timing_off(self):
         r"""Gets the enable_timing_off of this BatchStartWebTamperProtectionRequestInfo.
 
-        定时开关状态
+        **参数解释**: 定时开关设置状态 **约束限制**: 不涉及 **取值范围**: - True ：开启定时关闭防护功能，必须填写timing_off_config_info。 - False ：关闭定时关闭防护功能，无需填写timing_off_config_info。  **默认取值**: False 
 
         :return: The enable_timing_off of this BatchStartWebTamperProtectionRequestInfo.
         :rtype: bool
@@ -231,7 +230,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def enable_timing_off(self, enable_timing_off):
         r"""Sets the enable_timing_off of this BatchStartWebTamperProtectionRequestInfo.
 
-        定时开关状态
+        **参数解释**: 定时开关设置状态 **约束限制**: 不涉及 **取值范围**: - True ：开启定时关闭防护功能，必须填写timing_off_config_info。 - False ：关闭定时关闭防护功能，无需填写timing_off_config_info。  **默认取值**: False 
 
         :param enable_timing_off: The enable_timing_off of this BatchStartWebTamperProtectionRequestInfo.
         :type enable_timing_off: bool
@@ -260,7 +259,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def enable_rasp_protect(self):
         r"""Gets the enable_rasp_protect of this BatchStartWebTamperProtectionRequestInfo.
 
-        动态网页防篡改开启状态
+        **参数解释**: 动态网页防篡改开启状态，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持开启动态网页防篡改，Windows服务器不可填写该字段。 **取值范围**: - True ：开启动态网页防篡改，必须填写rasp_path。 - False ：关闭动态网页防篡改，无需填写rasp_path。  **默认取值**: False 
 
         :return: The enable_rasp_protect of this BatchStartWebTamperProtectionRequestInfo.
         :rtype: bool
@@ -271,7 +270,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def enable_rasp_protect(self, enable_rasp_protect):
         r"""Sets the enable_rasp_protect of this BatchStartWebTamperProtectionRequestInfo.
 
-        动态网页防篡改开启状态
+        **参数解释**: 动态网页防篡改开启状态，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持开启动态网页防篡改，Windows服务器不可填写该字段。 **取值范围**: - True ：开启动态网页防篡改，必须填写rasp_path。 - False ：关闭动态网页防篡改，无需填写rasp_path。  **默认取值**: False 
 
         :param enable_rasp_protect: The enable_rasp_protect of this BatchStartWebTamperProtectionRequestInfo.
         :type enable_rasp_protect: bool
@@ -282,7 +281,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def rasp_path(self):
         r"""Gets the rasp_path of this BatchStartWebTamperProtectionRequestInfo.
 
-        rasp path
+        **参数解释**: 动态网页防篡改的Tomcat bin目录，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持配置动态网页防篡改的Tomcat bin目录，Windows服务器不可填写该字段。 **取值范围**: 字符长度1-256位，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。 **默认取值**: 不涉及 
 
         :return: The rasp_path of this BatchStartWebTamperProtectionRequestInfo.
         :rtype: str
@@ -293,7 +292,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def rasp_path(self, rasp_path):
         r"""Sets the rasp_path of this BatchStartWebTamperProtectionRequestInfo.
 
-        rasp path
+        **参数解释**: 动态网页防篡改的Tomcat bin目录，仅Linux服务器支持。 **约束限制**: 仅Linux服务器支持配置动态网页防篡改的Tomcat bin目录，Windows服务器不可填写该字段。 **取值范围**: 字符长度1-256位，必须以/开头，不能以/结尾，只能包含英文大小写字母，数字，下划线，中划线和点。 **默认取值**: 不涉及 
 
         :param rasp_path: The rasp_path of this BatchStartWebTamperProtectionRequestInfo.
         :type rasp_path: str
@@ -304,7 +303,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def enable_privileged_process(self):
         r"""Gets the enable_privileged_process of this BatchStartWebTamperProtectionRequestInfo.
 
-        特权进程状态
+        **参数解释**: 特权进程开启状态 **约束限制**: 不涉及 **取值范围**: - True ：开启特权进程，必须填写privileged_process_info。 - False ：关闭特权进程，无需填写privileged_process_info。  **默认取值**: False 
 
         :return: The enable_privileged_process of this BatchStartWebTamperProtectionRequestInfo.
         :rtype: bool
@@ -315,7 +314,7 @@ class BatchStartWebTamperProtectionRequestInfo:
     def enable_privileged_process(self, enable_privileged_process):
         r"""Sets the enable_privileged_process of this BatchStartWebTamperProtectionRequestInfo.
 
-        特权进程状态
+        **参数解释**: 特权进程开启状态 **约束限制**: 不涉及 **取值范围**: - True ：开启特权进程，必须填写privileged_process_info。 - False ：关闭特权进程，无需填写privileged_process_info。  **默认取值**: False 
 
         :param enable_privileged_process: The enable_privileged_process of this BatchStartWebTamperProtectionRequestInfo.
         :type enable_privileged_process: bool

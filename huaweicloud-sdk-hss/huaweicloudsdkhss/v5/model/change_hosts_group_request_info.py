@@ -37,7 +37,7 @@ class ChangeHostsGroupRequestInfo:
         :type group_name: str
         :param group_id: **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
         :type group_id: str
-        :param host_id_list: **参数解释**: 主机id列表 **取值范围**: 不涉及 
+        :param host_id_list: **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
         :type host_id_list: list[str]
         """
         
@@ -102,7 +102,7 @@ class ChangeHostsGroupRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this ChangeHostsGroupRequestInfo.
 
-        **参数解释**: 主机id列表 **取值范围**: 不涉及 
+        **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
 
         :return: The host_id_list of this ChangeHostsGroupRequestInfo.
         :rtype: list[str]
@@ -113,7 +113,7 @@ class ChangeHostsGroupRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this ChangeHostsGroupRequestInfo.
 
-        **参数解释**: 主机id列表 **取值范围**: 不涉及 
+        **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
 
         :param host_id_list: The host_id_list of this ChangeHostsGroupRequestInfo.
         :type host_id_list: list[str]

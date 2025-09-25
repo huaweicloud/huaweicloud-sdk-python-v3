@@ -58,7 +58,8 @@ class EventManagementResponseInfo:
         'file_info_list': 'list[EventFileResponseInfo]',
         'event_details': 'str',
         'tag_list': 'list[str]',
-        'event_count': 'int'
+        'event_count': 'int',
+        'operate_type': 'str'
     }
 
     attribute_map = {
@@ -103,10 +104,11 @@ class EventManagementResponseInfo:
         'file_info_list': 'file_info_list',
         'event_details': 'event_details',
         'tag_list': 'tag_list',
-        'event_count': 'event_count'
+        'event_count': 'event_count',
+        'operate_type': 'operate_type'
     }
 
-    def __init__(self, event_id=None, event_class_id=None, event_type=None, event_name=None, severity=None, container_name=None, image_name=None, host_name=None, host_id=None, private_ip=None, public_ip=None, os_type=None, host_status=None, agent_status=None, protect_status=None, asset_value=None, attack_phase=None, attack_tag=None, occur_time=None, handle_time=None, handle_status=None, handle_method=None, handler=None, operate_accept_list=None, operate_detail_list=None, forensic_info=None, resource_info=None, geo_info=None, malware_info=None, network_info=None, app_info=None, system_info=None, extend_info=None, recommendation=None, description=None, event_abstract=None, process_info_list=None, user_info_list=None, file_info_list=None, event_details=None, tag_list=None, event_count=None):
+    def __init__(self, event_id=None, event_class_id=None, event_type=None, event_name=None, severity=None, container_name=None, image_name=None, host_name=None, host_id=None, private_ip=None, public_ip=None, os_type=None, host_status=None, agent_status=None, protect_status=None, asset_value=None, attack_phase=None, attack_tag=None, occur_time=None, handle_time=None, handle_status=None, handle_method=None, handler=None, operate_accept_list=None, operate_detail_list=None, forensic_info=None, resource_info=None, geo_info=None, malware_info=None, network_info=None, app_info=None, system_info=None, extend_info=None, recommendation=None, description=None, event_abstract=None, process_info_list=None, user_info_list=None, file_info_list=None, event_details=None, tag_list=None, event_count=None, operate_type=None):
         r"""EventManagementResponseInfo
 
         The model defined in huaweicloud sdk
@@ -195,6 +197,8 @@ class EventManagementResponseInfo:
         :type tag_list: list[str]
         :param event_count: **参数解释**： 事件发生次数 **取值范围**： 最小值0，最大值2147483647 
         :type event_count: int
+        :param operate_type: **参数解释**： 操作类型 **取值范围**： - add ：创建。 - delete ：删除。 - change_attribute ： 修改文件属性。 - modify ：修改文件内容。 - move ：移动。 
+        :type operate_type: str
         """
         
         
@@ -241,6 +245,7 @@ class EventManagementResponseInfo:
         self._event_details = None
         self._tag_list = None
         self._event_count = None
+        self._operate_type = None
         self.discriminator = None
 
         if event_id is not None:
@@ -327,6 +332,8 @@ class EventManagementResponseInfo:
             self.tag_list = tag_list
         if event_count is not None:
             self.event_count = event_count
+        if operate_type is not None:
+            self.operate_type = operate_type
 
     @property
     def event_id(self):
@@ -1247,6 +1254,28 @@ class EventManagementResponseInfo:
         :type event_count: int
         """
         self._event_count = event_count
+
+    @property
+    def operate_type(self):
+        r"""Gets the operate_type of this EventManagementResponseInfo.
+
+        **参数解释**： 操作类型 **取值范围**： - add ：创建。 - delete ：删除。 - change_attribute ： 修改文件属性。 - modify ：修改文件内容。 - move ：移动。 
+
+        :return: The operate_type of this EventManagementResponseInfo.
+        :rtype: str
+        """
+        return self._operate_type
+
+    @operate_type.setter
+    def operate_type(self, operate_type):
+        r"""Sets the operate_type of this EventManagementResponseInfo.
+
+        **参数解释**： 操作类型 **取值范围**： - add ：创建。 - delete ：删除。 - change_attribute ： 修改文件属性。 - modify ：修改文件内容。 - move ：移动。 
+
+        :param operate_type: The operate_type of this EventManagementResponseInfo.
+        :type operate_type: str
+        """
+        self._operate_type = operate_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

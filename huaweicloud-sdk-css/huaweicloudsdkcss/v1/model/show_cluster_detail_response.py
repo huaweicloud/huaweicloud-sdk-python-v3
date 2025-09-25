@@ -33,6 +33,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'subnet_id': 'str',
         'security_group_id': 'str',
         'vpcep_ip': 'str',
+        'vpcep_ipv6_address': 'str',
         'bandwidth_size': 'int',
         'https_enable': 'bool',
         'disk_encrypted': 'bool',
@@ -44,7 +45,12 @@ class ShowClusterDetailResponse(SdkResponse):
         'tags': 'list[ClusterDetailTags]',
         'failed_reason': 'ClusterDetailFailedReasons',
         'period': 'bool',
-        'bandwidth_resource_id': 'str'
+        'bandwidth_resource_id': 'str',
+        'ipv6_endpoint': 'str',
+        'support_vpcep': 'bool',
+        'cmk_id': 'str',
+        'order_id': 'str',
+        'current_subnet_ids': 'str'
     }
 
     attribute_map = {
@@ -63,6 +69,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'subnet_id': 'subnetId',
         'security_group_id': 'securityGroupId',
         'vpcep_ip': 'vpcepIp',
+        'vpcep_ipv6_address': 'vpcepIpv6Address',
         'bandwidth_size': 'bandwidthSize',
         'https_enable': 'httpsEnable',
         'disk_encrypted': 'diskEncrypted',
@@ -74,10 +81,15 @@ class ShowClusterDetailResponse(SdkResponse):
         'tags': 'tags',
         'failed_reason': 'failedReason',
         'period': 'period',
-        'bandwidth_resource_id': 'bandwidthResourceId'
+        'bandwidth_resource_id': 'bandwidthResourceId',
+        'ipv6_endpoint': 'ipv6Endpoint',
+        'support_vpcep': 'supportVpcep',
+        'cmk_id': 'cmkId',
+        'order_id': 'orderId',
+        'current_subnet_ids': 'currentSubnetIds'
     }
 
-    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, vpcep_ip=None, bandwidth_size=None, https_enable=None, disk_encrypted=None, authority_enable=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None):
+    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, vpcep_ip=None, vpcep_ipv6_address=None, bandwidth_size=None, https_enable=None, disk_encrypted=None, authority_enable=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None, support_vpcep=None, cmk_id=None, order_id=None, current_subnet_ids=None):
         r"""ShowClusterDetailResponse
 
         The model defined in huaweicloud sdk
@@ -112,6 +124,8 @@ class ShowClusterDetailResponse(SdkResponse):
         :type security_group_id: str
         :param vpcep_ip: 终端节点IP。
         :type vpcep_ip: str
+        :param vpcep_ipv6_address: 终端节点IPv6。
+        :type vpcep_ipv6_address: str
         :param bandwidth_size: 公网带宽大小。单位：Mbit/s
         :type bandwidth_size: int
         :param https_enable: 通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
@@ -136,6 +150,16 @@ class ShowClusterDetailResponse(SdkResponse):
         :type period: bool
         :param bandwidth_resource_id: es公网访问的资源id
         :type bandwidth_resource_id: str
+        :param ipv6_endpoint: 集群内网访问IPv6地址和端口号。
+        :type ipv6_endpoint: str
+        :param support_vpcep: 当前集群是否支持开启终端节点服务。
+        :type support_vpcep: bool
+        :param cmk_id: 当前集群使用的磁盘加密密钥ID。
+        :type cmk_id: str
+        :param order_id: 包周期集群的订单号。
+        :type order_id: str
+        :param current_subnet_ids: 集群当前所有节点用到的子网，如果存在多个（最多支持两个），使用英文逗号隔开。
+        :type current_subnet_ids: str
         """
         
         super(ShowClusterDetailResponse, self).__init__()
@@ -155,6 +179,7 @@ class ShowClusterDetailResponse(SdkResponse):
         self._subnet_id = None
         self._security_group_id = None
         self._vpcep_ip = None
+        self._vpcep_ipv6_address = None
         self._bandwidth_size = None
         self._https_enable = None
         self._disk_encrypted = None
@@ -167,6 +192,11 @@ class ShowClusterDetailResponse(SdkResponse):
         self._failed_reason = None
         self._period = None
         self._bandwidth_resource_id = None
+        self._ipv6_endpoint = None
+        self._support_vpcep = None
+        self._cmk_id = None
+        self._order_id = None
+        self._current_subnet_ids = None
         self.discriminator = None
 
         if datastore is not None:
@@ -199,6 +229,8 @@ class ShowClusterDetailResponse(SdkResponse):
             self.security_group_id = security_group_id
         if vpcep_ip is not None:
             self.vpcep_ip = vpcep_ip
+        if vpcep_ipv6_address is not None:
+            self.vpcep_ipv6_address = vpcep_ipv6_address
         if bandwidth_size is not None:
             self.bandwidth_size = bandwidth_size
         if https_enable is not None:
@@ -223,6 +255,16 @@ class ShowClusterDetailResponse(SdkResponse):
             self.period = period
         if bandwidth_resource_id is not None:
             self.bandwidth_resource_id = bandwidth_resource_id
+        if ipv6_endpoint is not None:
+            self.ipv6_endpoint = ipv6_endpoint
+        if support_vpcep is not None:
+            self.support_vpcep = support_vpcep
+        if cmk_id is not None:
+            self.cmk_id = cmk_id
+        if order_id is not None:
+            self.order_id = order_id
+        if current_subnet_ids is not None:
+            self.current_subnet_ids = current_subnet_ids
 
     @property
     def datastore(self):
@@ -543,6 +585,28 @@ class ShowClusterDetailResponse(SdkResponse):
         self._vpcep_ip = vpcep_ip
 
     @property
+    def vpcep_ipv6_address(self):
+        r"""Gets the vpcep_ipv6_address of this ShowClusterDetailResponse.
+
+        终端节点IPv6。
+
+        :return: The vpcep_ipv6_address of this ShowClusterDetailResponse.
+        :rtype: str
+        """
+        return self._vpcep_ipv6_address
+
+    @vpcep_ipv6_address.setter
+    def vpcep_ipv6_address(self, vpcep_ipv6_address):
+        r"""Sets the vpcep_ipv6_address of this ShowClusterDetailResponse.
+
+        终端节点IPv6。
+
+        :param vpcep_ipv6_address: The vpcep_ipv6_address of this ShowClusterDetailResponse.
+        :type vpcep_ipv6_address: str
+        """
+        self._vpcep_ipv6_address = vpcep_ipv6_address
+
+    @property
     def bandwidth_size(self):
         r"""Gets the bandwidth_size of this ShowClusterDetailResponse.
 
@@ -801,6 +865,116 @@ class ShowClusterDetailResponse(SdkResponse):
         :type bandwidth_resource_id: str
         """
         self._bandwidth_resource_id = bandwidth_resource_id
+
+    @property
+    def ipv6_endpoint(self):
+        r"""Gets the ipv6_endpoint of this ShowClusterDetailResponse.
+
+        集群内网访问IPv6地址和端口号。
+
+        :return: The ipv6_endpoint of this ShowClusterDetailResponse.
+        :rtype: str
+        """
+        return self._ipv6_endpoint
+
+    @ipv6_endpoint.setter
+    def ipv6_endpoint(self, ipv6_endpoint):
+        r"""Sets the ipv6_endpoint of this ShowClusterDetailResponse.
+
+        集群内网访问IPv6地址和端口号。
+
+        :param ipv6_endpoint: The ipv6_endpoint of this ShowClusterDetailResponse.
+        :type ipv6_endpoint: str
+        """
+        self._ipv6_endpoint = ipv6_endpoint
+
+    @property
+    def support_vpcep(self):
+        r"""Gets the support_vpcep of this ShowClusterDetailResponse.
+
+        当前集群是否支持开启终端节点服务。
+
+        :return: The support_vpcep of this ShowClusterDetailResponse.
+        :rtype: bool
+        """
+        return self._support_vpcep
+
+    @support_vpcep.setter
+    def support_vpcep(self, support_vpcep):
+        r"""Sets the support_vpcep of this ShowClusterDetailResponse.
+
+        当前集群是否支持开启终端节点服务。
+
+        :param support_vpcep: The support_vpcep of this ShowClusterDetailResponse.
+        :type support_vpcep: bool
+        """
+        self._support_vpcep = support_vpcep
+
+    @property
+    def cmk_id(self):
+        r"""Gets the cmk_id of this ShowClusterDetailResponse.
+
+        当前集群使用的磁盘加密密钥ID。
+
+        :return: The cmk_id of this ShowClusterDetailResponse.
+        :rtype: str
+        """
+        return self._cmk_id
+
+    @cmk_id.setter
+    def cmk_id(self, cmk_id):
+        r"""Sets the cmk_id of this ShowClusterDetailResponse.
+
+        当前集群使用的磁盘加密密钥ID。
+
+        :param cmk_id: The cmk_id of this ShowClusterDetailResponse.
+        :type cmk_id: str
+        """
+        self._cmk_id = cmk_id
+
+    @property
+    def order_id(self):
+        r"""Gets the order_id of this ShowClusterDetailResponse.
+
+        包周期集群的订单号。
+
+        :return: The order_id of this ShowClusterDetailResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        r"""Sets the order_id of this ShowClusterDetailResponse.
+
+        包周期集群的订单号。
+
+        :param order_id: The order_id of this ShowClusterDetailResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
+
+    @property
+    def current_subnet_ids(self):
+        r"""Gets the current_subnet_ids of this ShowClusterDetailResponse.
+
+        集群当前所有节点用到的子网，如果存在多个（最多支持两个），使用英文逗号隔开。
+
+        :return: The current_subnet_ids of this ShowClusterDetailResponse.
+        :rtype: str
+        """
+        return self._current_subnet_ids
+
+    @current_subnet_ids.setter
+    def current_subnet_ids(self, current_subnet_ids):
+        r"""Sets the current_subnet_ids of this ShowClusterDetailResponse.
+
+        集群当前所有节点用到的子网，如果存在多个（最多支持两个），使用英文逗号隔开。
+
+        :param current_subnet_ids: The current_subnet_ids of this ShowClusterDetailResponse.
+        :type current_subnet_ids: str
+        """
+        self._current_subnet_ids = current_subnet_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

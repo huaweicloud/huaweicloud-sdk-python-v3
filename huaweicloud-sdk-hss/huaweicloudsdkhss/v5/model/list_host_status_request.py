@@ -133,7 +133,7 @@ class ListHostStatusRequest:
         :type ip_addr: str
         :param protect_status: **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种： - closed ：关闭。 - opened ：开启。 - protection_exception ：防护异常。 **默认取值**: 不涉及
         :type protect_status: str
-        :param group_id: 服务器组ID
+        :param group_id: **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type group_id: str
         :param group_name: **参数解释**: 服务器组名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type group_name: str
@@ -604,7 +604,7 @@ class ListHostStatusRequest:
     def group_id(self):
         r"""Gets the group_id of this ListHostStatusRequest.
 
-        服务器组ID
+        **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The group_id of this ListHostStatusRequest.
         :rtype: str
@@ -615,7 +615,7 @@ class ListHostStatusRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ListHostStatusRequest.
 
-        服务器组ID
+        **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param group_id: The group_id of this ListHostStatusRequest.
         :type group_id: str

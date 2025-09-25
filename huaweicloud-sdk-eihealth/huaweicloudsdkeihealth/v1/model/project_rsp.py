@@ -27,8 +27,10 @@ class ProjectRsp:
         'description': 'str',
         'create_time': 'str',
         'update_time': 'str',
+        'top_time': 'str',
         'delete_time': 'str',
-        'is_core': 'bool'
+        'is_core': 'bool',
+        'storage_tenant': 'str'
     }
 
     attribute_map = {
@@ -42,11 +44,13 @@ class ProjectRsp:
         'description': 'description',
         'create_time': 'create_time',
         'update_time': 'update_time',
+        'top_time': 'top_time',
         'delete_time': 'delete_time',
-        'is_core': 'is_core'
+        'is_core': 'is_core',
+        'storage_tenant': 'storage_tenant'
     }
 
-    def __init__(self, id=None, name=None, creator=None, role=None, size=None, status=None, tags=None, description=None, create_time=None, update_time=None, delete_time=None, is_core=None):
+    def __init__(self, id=None, name=None, creator=None, role=None, size=None, status=None, tags=None, description=None, create_time=None, update_time=None, top_time=None, delete_time=None, is_core=None, storage_tenant=None):
         r"""ProjectRsp
 
         The model defined in huaweicloud sdk
@@ -71,10 +75,14 @@ class ProjectRsp:
         :type create_time: str
         :param update_time: 项目更新时间
         :type update_time: str
-        :param delete_time: 请求删除时间
+        :param top_time: **参数解释**： 空间置顶时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type top_time: str
+        :param delete_time: **参数解释**： 请求删除时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type delete_time: str
-        :param is_core: 核心项目标记
+        :param is_core: **参数解释**： 核心空间标记。 **约束限制**： 不涉及 **取值范围**： true 或 false。 **默认取值**： 不涉及 
         :type is_core: bool
+        :param storage_tenant: **参数解释**： 空间桶来源租户。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type storage_tenant: str
         """
         
         
@@ -89,8 +97,10 @@ class ProjectRsp:
         self._description = None
         self._create_time = None
         self._update_time = None
+        self._top_time = None
         self._delete_time = None
         self._is_core = None
+        self._storage_tenant = None
         self.discriminator = None
 
         if id is not None:
@@ -113,10 +123,14 @@ class ProjectRsp:
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if top_time is not None:
+            self.top_time = top_time
         if delete_time is not None:
             self.delete_time = delete_time
         if is_core is not None:
             self.is_core = is_core
+        if storage_tenant is not None:
+            self.storage_tenant = storage_tenant
 
     @property
     def id(self):
@@ -339,10 +353,32 @@ class ProjectRsp:
         self._update_time = update_time
 
     @property
+    def top_time(self):
+        r"""Gets the top_time of this ProjectRsp.
+
+        **参数解释**： 空间置顶时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The top_time of this ProjectRsp.
+        :rtype: str
+        """
+        return self._top_time
+
+    @top_time.setter
+    def top_time(self, top_time):
+        r"""Sets the top_time of this ProjectRsp.
+
+        **参数解释**： 空间置顶时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param top_time: The top_time of this ProjectRsp.
+        :type top_time: str
+        """
+        self._top_time = top_time
+
+    @property
     def delete_time(self):
         r"""Gets the delete_time of this ProjectRsp.
 
-        请求删除时间
+        **参数解释**： 请求删除时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The delete_time of this ProjectRsp.
         :rtype: str
@@ -353,7 +389,7 @@ class ProjectRsp:
     def delete_time(self, delete_time):
         r"""Sets the delete_time of this ProjectRsp.
 
-        请求删除时间
+        **参数解释**： 请求删除时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param delete_time: The delete_time of this ProjectRsp.
         :type delete_time: str
@@ -364,7 +400,7 @@ class ProjectRsp:
     def is_core(self):
         r"""Gets the is_core of this ProjectRsp.
 
-        核心项目标记
+        **参数解释**： 核心空间标记。 **约束限制**： 不涉及 **取值范围**： true 或 false。 **默认取值**： 不涉及 
 
         :return: The is_core of this ProjectRsp.
         :rtype: bool
@@ -375,12 +411,34 @@ class ProjectRsp:
     def is_core(self, is_core):
         r"""Sets the is_core of this ProjectRsp.
 
-        核心项目标记
+        **参数解释**： 核心空间标记。 **约束限制**： 不涉及 **取值范围**： true 或 false。 **默认取值**： 不涉及 
 
         :param is_core: The is_core of this ProjectRsp.
         :type is_core: bool
         """
         self._is_core = is_core
+
+    @property
+    def storage_tenant(self):
+        r"""Gets the storage_tenant of this ProjectRsp.
+
+        **参数解释**： 空间桶来源租户。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The storage_tenant of this ProjectRsp.
+        :rtype: str
+        """
+        return self._storage_tenant
+
+    @storage_tenant.setter
+    def storage_tenant(self, storage_tenant):
+        r"""Sets the storage_tenant of this ProjectRsp.
+
+        **参数解释**： 空间桶来源租户。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param storage_tenant: The storage_tenant of this ProjectRsp.
+        :type storage_tenant: str
+        """
+        self._storage_tenant = storage_tenant
 
     def to_dict(self):
         """Returns the model properties as a dict"""

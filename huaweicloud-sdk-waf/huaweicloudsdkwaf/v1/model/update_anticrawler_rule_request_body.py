@@ -41,7 +41,7 @@ class UpdateAnticrawlerRuleRequestBody:
         :type name: str
         :param type: JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
         :type type: str
-        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：65535。
         :type priority: int
         """
         
@@ -128,7 +128,7 @@ class UpdateAnticrawlerRuleRequestBody:
     def priority(self):
         r"""Gets the priority of this UpdateAnticrawlerRuleRequestBody.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：65535。
 
         :return: The priority of this UpdateAnticrawlerRuleRequestBody.
         :rtype: int
@@ -139,7 +139,7 @@ class UpdateAnticrawlerRuleRequestBody:
     def priority(self, priority):
         r"""Sets the priority of this UpdateAnticrawlerRuleRequestBody.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：65535。
 
         :param priority: The priority of this UpdateAnticrawlerRuleRequestBody.
         :type priority: int

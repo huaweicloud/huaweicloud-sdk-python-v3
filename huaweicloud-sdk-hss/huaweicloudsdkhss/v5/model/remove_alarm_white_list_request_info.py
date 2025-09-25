@@ -35,7 +35,7 @@ class RemoveAlarmWhiteListRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param data_list: **参数解释** : \&quot;删除告警白名单详情\&quot; 删除条件以data_list优先： 1、删除具体某些白名单时，data_list必需，delete_all可以不填。（data_list内hash、description、event_type必需，确定要删除白名单规则时delete_white_rule必须为ture） 2、删除所有白名单时（delete_all 必须为true），data_list一定不要传。 **约束限制** : 不涉及 **取值范围** : 最小值0，最大值100 **默认取值** : 不涉及 
+        :param data_list: **参数解释** : \&quot;删除告警白名单详情\&quot; 删除条件以data_list优先： 1、删除具体某些白名单时，data_list必需，delete_all可以不填。（data_list内hash、description、event_type必需，确定要删除白名单规则时delete_white_rule必须为true） 2、删除所有白名单时（delete_all 必须为true），data_list一定不要传。 **约束限制** : 不涉及 **取值范围** : 最小值0，最大值100 **默认取值** : 不涉及 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AlarmWhiteListRequestInfo`]
         :param restore_alarm: **参数解释**: 是否需要恢复相关告警 **约束限制**: 不涉及 **取值范围**: - true ：恢复告警 - false ：不恢复告警  **默认取值**: false
         :type restore_alarm: bool
@@ -66,7 +66,7 @@ class RemoveAlarmWhiteListRequestInfo:
     def data_list(self):
         r"""Gets the data_list of this RemoveAlarmWhiteListRequestInfo.
 
-        **参数解释** : \"删除告警白名单详情\" 删除条件以data_list优先： 1、删除具体某些白名单时，data_list必需，delete_all可以不填。（data_list内hash、description、event_type必需，确定要删除白名单规则时delete_white_rule必须为ture） 2、删除所有白名单时（delete_all 必须为true），data_list一定不要传。 **约束限制** : 不涉及 **取值范围** : 最小值0，最大值100 **默认取值** : 不涉及 
+        **参数解释** : \"删除告警白名单详情\" 删除条件以data_list优先： 1、删除具体某些白名单时，data_list必需，delete_all可以不填。（data_list内hash、description、event_type必需，确定要删除白名单规则时delete_white_rule必须为true） 2、删除所有白名单时（delete_all 必须为true），data_list一定不要传。 **约束限制** : 不涉及 **取值范围** : 最小值0，最大值100 **默认取值** : 不涉及 
 
         :return: The data_list of this RemoveAlarmWhiteListRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.AlarmWhiteListRequestInfo`]
@@ -77,7 +77,7 @@ class RemoveAlarmWhiteListRequestInfo:
     def data_list(self, data_list):
         r"""Sets the data_list of this RemoveAlarmWhiteListRequestInfo.
 
-        **参数解释** : \"删除告警白名单详情\" 删除条件以data_list优先： 1、删除具体某些白名单时，data_list必需，delete_all可以不填。（data_list内hash、description、event_type必需，确定要删除白名单规则时delete_white_rule必须为ture） 2、删除所有白名单时（delete_all 必须为true），data_list一定不要传。 **约束限制** : 不涉及 **取值范围** : 最小值0，最大值100 **默认取值** : 不涉及 
+        **参数解释** : \"删除告警白名单详情\" 删除条件以data_list优先： 1、删除具体某些白名单时，data_list必需，delete_all可以不填。（data_list内hash、description、event_type必需，确定要删除白名单规则时delete_white_rule必须为true） 2、删除所有白名单时（delete_all 必须为true），data_list一定不要传。 **约束限制** : 不涉及 **取值范围** : 最小值0，最大值100 **默认取值** : 不涉及 
 
         :param data_list: The data_list of this RemoveAlarmWhiteListRequestInfo.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AlarmWhiteListRequestInfo`]

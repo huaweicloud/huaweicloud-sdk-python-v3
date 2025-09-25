@@ -21,7 +21,7 @@ class BindPublicReqEip:
     }
 
     attribute_map = {
-        'band_width': 'bandWidth'
+        'band_width': 'band_width'
     }
 
     def __init__(self, band_width=None):
@@ -38,7 +38,8 @@ class BindPublicReqEip:
         self._band_width = None
         self.discriminator = None
 
-        self.band_width = band_width
+        if band_width is not None:
+            self.band_width = band_width
 
     @property
     def band_width(self):

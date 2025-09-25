@@ -19,7 +19,7 @@ class UpgradeInstanceVersionRequest:
     openapi_types = {
         'x_language': 'str',
         'instance_id': 'str',
-        'body': 'OpenGaussUpgradeRequest'
+        'body': 'UpgradeRequestBody'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpgradeInstanceVersionRequest:
         :param instance_id: **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
         :type instance_id: str
         :param body: Body of the UpgradeInstanceVersionRequest
-        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussUpgradeRequest`
+        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeRequestBody`
         """
         
         
@@ -103,7 +103,7 @@ class UpgradeInstanceVersionRequest:
         r"""Gets the body of this UpgradeInstanceVersionRequest.
 
         :return: The body of this UpgradeInstanceVersionRequest.
-        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussUpgradeRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeRequestBody`
         """
         return self._body
 
@@ -112,7 +112,7 @@ class UpgradeInstanceVersionRequest:
         r"""Sets the body of this UpgradeInstanceVersionRequest.
 
         :param body: The body of this UpgradeInstanceVersionRequest.
-        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussUpgradeRequest`
+        :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeRequestBody`
         """
         self._body = body
 

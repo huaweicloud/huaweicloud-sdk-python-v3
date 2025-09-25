@@ -17,28 +17,35 @@ class UpdateEsListenerRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'listener': 'EsListenerRequest'
+        'listener': 'EsListenerRequest',
+        'type': 'str'
     }
 
     attribute_map = {
-        'listener': 'listener'
+        'listener': 'listener',
+        'type': 'type'
     }
 
-    def __init__(self, listener=None):
+    def __init__(self, listener=None, type=None):
         r"""UpdateEsListenerRequestBody
 
         The model defined in huaweicloud sdk
 
         :param listener: 
         :type listener: :class:`huaweicloudsdkcss.v1.EsListenerRequest`
+        :param type: 类型：searchTool 表示修改Elasticsearch/Opensearch负载均衡器，viewTool 表示修改Kibana/Opensearch Dashboard 负载均衡器，默认为searchTool 。
+        :type type: str
         """
         
         
 
         self._listener = None
+        self._type = None
         self.discriminator = None
 
         self.listener = listener
+        if type is not None:
+            self.type = type
 
     @property
     def listener(self):
@@ -57,6 +64,28 @@ class UpdateEsListenerRequestBody:
         :type listener: :class:`huaweicloudsdkcss.v1.EsListenerRequest`
         """
         self._listener = listener
+
+    @property
+    def type(self):
+        r"""Gets the type of this UpdateEsListenerRequestBody.
+
+        类型：searchTool 表示修改Elasticsearch/Opensearch负载均衡器，viewTool 表示修改Kibana/Opensearch Dashboard 负载均衡器，默认为searchTool 。
+
+        :return: The type of this UpdateEsListenerRequestBody.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this UpdateEsListenerRequestBody.
+
+        类型：searchTool 表示修改Elasticsearch/Opensearch负载均衡器，viewTool 表示修改Kibana/Opensearch Dashboard 负载均衡器，默认为searchTool 。
+
+        :param type: The type of this UpdateEsListenerRequestBody.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

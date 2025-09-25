@@ -47,7 +47,7 @@ class OrganizationNodeResponseInfo:
         :type urn: str
         :param name: 名称
         :type name: str
-        :param org_type: 节点类型，unit:组织单元、account:账号
+        :param org_type: **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - unit：组织单元 - account：账号  **默认取值**: 不涉及 
         :type org_type: str
         :param delegated: 组织或账号是否已授权。   - true: 已授权（无需授权）。   - false: 未授权。
         :type delegated: bool
@@ -168,7 +168,7 @@ class OrganizationNodeResponseInfo:
     def org_type(self):
         r"""Gets the org_type of this OrganizationNodeResponseInfo.
 
-        节点类型，unit:组织单元、account:账号
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - unit：组织单元 - account：账号  **默认取值**: 不涉及 
 
         :return: The org_type of this OrganizationNodeResponseInfo.
         :rtype: str
@@ -179,7 +179,7 @@ class OrganizationNodeResponseInfo:
     def org_type(self, org_type):
         r"""Sets the org_type of this OrganizationNodeResponseInfo.
 
-        节点类型，unit:组织单元、account:账号
+        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - unit：组织单元 - account：账号  **默认取值**: 不涉及 
 
         :param org_type: The org_type of this OrganizationNodeResponseInfo.
         :type org_type: str

@@ -19,29 +19,25 @@ class WebTamperProtectDirRequestInfo:
     openapi_types = {
         'protect_dir_list': 'list[WebTamperProtectHostDirRequestInfo]',
         'exclude_file_type': 'str',
-        'exclue_file_type': 'str',
         'protect_mode': 'str'
     }
 
     attribute_map = {
         'protect_dir_list': 'protect_dir_list',
         'exclude_file_type': 'exclude_file_type',
-        'exclue_file_type': 'exclue_file_type',
         'protect_mode': 'protect_mode'
     }
 
-    def __init__(self, protect_dir_list=None, exclude_file_type=None, exclue_file_type=None, protect_mode=None):
+    def __init__(self, protect_dir_list=None, exclude_file_type=None, protect_mode=None):
         r"""WebTamperProtectDirRequestInfo
 
         The model defined in huaweicloud sdk
 
-        :param protect_dir_list: 防护目录列表
+        :param protect_dir_list: **参数解释**: 防护目录列表 **约束限制**: 不涉及 **取值范围**: 最少1条，最多50条 **默认取值**: 不涉及 
         :type protect_dir_list: list[:class:`huaweicloudsdkhss.v5.WebTamperProtectHostDirRequestInfo`]
-        :param exclude_file_type: 排除文件类型
+        :param exclude_file_type: **参数解释**: 排除文件类型 **约束限制**: 不涉及 **取值范围**: 文件类型只能输入字母、数字，最多支持10个文件类型，每个文件类型长度不超过10个字符，多个文件类型以分号隔开。 **默认取值**: 不涉及 
         :type exclude_file_type: str
-        :param exclue_file_type: 排除文件类型
-        :type exclue_file_type: str
-        :param protect_mode: **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。  **默认取值**: recovery 
+        :param protect_mode: **参数解释**: 防护模式，仅Linux服务器支持设置防护模式为告警模式，Windows服务器仅支持拦截模式。 **约束限制**: 不涉及 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式，仅Linux服务器支持。  **默认取值**: recovery 
         :type protect_mode: str
         """
         
@@ -49,16 +45,12 @@ class WebTamperProtectDirRequestInfo:
 
         self._protect_dir_list = None
         self._exclude_file_type = None
-        self._exclue_file_type = None
         self._protect_mode = None
         self.discriminator = None
 
-        if protect_dir_list is not None:
-            self.protect_dir_list = protect_dir_list
+        self.protect_dir_list = protect_dir_list
         if exclude_file_type is not None:
             self.exclude_file_type = exclude_file_type
-        if exclue_file_type is not None:
-            self.exclue_file_type = exclue_file_type
         if protect_mode is not None:
             self.protect_mode = protect_mode
 
@@ -66,7 +58,7 @@ class WebTamperProtectDirRequestInfo:
     def protect_dir_list(self):
         r"""Gets the protect_dir_list of this WebTamperProtectDirRequestInfo.
 
-        防护目录列表
+        **参数解释**: 防护目录列表 **约束限制**: 不涉及 **取值范围**: 最少1条，最多50条 **默认取值**: 不涉及 
 
         :return: The protect_dir_list of this WebTamperProtectDirRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.WebTamperProtectHostDirRequestInfo`]
@@ -77,7 +69,7 @@ class WebTamperProtectDirRequestInfo:
     def protect_dir_list(self, protect_dir_list):
         r"""Sets the protect_dir_list of this WebTamperProtectDirRequestInfo.
 
-        防护目录列表
+        **参数解释**: 防护目录列表 **约束限制**: 不涉及 **取值范围**: 最少1条，最多50条 **默认取值**: 不涉及 
 
         :param protect_dir_list: The protect_dir_list of this WebTamperProtectDirRequestInfo.
         :type protect_dir_list: list[:class:`huaweicloudsdkhss.v5.WebTamperProtectHostDirRequestInfo`]
@@ -88,7 +80,7 @@ class WebTamperProtectDirRequestInfo:
     def exclude_file_type(self):
         r"""Gets the exclude_file_type of this WebTamperProtectDirRequestInfo.
 
-        排除文件类型
+        **参数解释**: 排除文件类型 **约束限制**: 不涉及 **取值范围**: 文件类型只能输入字母、数字，最多支持10个文件类型，每个文件类型长度不超过10个字符，多个文件类型以分号隔开。 **默认取值**: 不涉及 
 
         :return: The exclude_file_type of this WebTamperProtectDirRequestInfo.
         :rtype: str
@@ -99,7 +91,7 @@ class WebTamperProtectDirRequestInfo:
     def exclude_file_type(self, exclude_file_type):
         r"""Sets the exclude_file_type of this WebTamperProtectDirRequestInfo.
 
-        排除文件类型
+        **参数解释**: 排除文件类型 **约束限制**: 不涉及 **取值范围**: 文件类型只能输入字母、数字，最多支持10个文件类型，每个文件类型长度不超过10个字符，多个文件类型以分号隔开。 **默认取值**: 不涉及 
 
         :param exclude_file_type: The exclude_file_type of this WebTamperProtectDirRequestInfo.
         :type exclude_file_type: str
@@ -107,32 +99,10 @@ class WebTamperProtectDirRequestInfo:
         self._exclude_file_type = exclude_file_type
 
     @property
-    def exclue_file_type(self):
-        r"""Gets the exclue_file_type of this WebTamperProtectDirRequestInfo.
-
-        排除文件类型
-
-        :return: The exclue_file_type of this WebTamperProtectDirRequestInfo.
-        :rtype: str
-        """
-        return self._exclue_file_type
-
-    @exclue_file_type.setter
-    def exclue_file_type(self, exclue_file_type):
-        r"""Sets the exclue_file_type of this WebTamperProtectDirRequestInfo.
-
-        排除文件类型
-
-        :param exclue_file_type: The exclue_file_type of this WebTamperProtectDirRequestInfo.
-        :type exclue_file_type: str
-        """
-        self._exclue_file_type = exclue_file_type
-
-    @property
     def protect_mode(self):
         r"""Gets the protect_mode of this WebTamperProtectDirRequestInfo.
 
-        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。  **默认取值**: recovery 
+        **参数解释**: 防护模式，仅Linux服务器支持设置防护模式为告警模式，Windows服务器仅支持拦截模式。 **约束限制**: 不涉及 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式，仅Linux服务器支持。  **默认取值**: recovery 
 
         :return: The protect_mode of this WebTamperProtectDirRequestInfo.
         :rtype: str
@@ -143,7 +113,7 @@ class WebTamperProtectDirRequestInfo:
     def protect_mode(self, protect_mode):
         r"""Sets the protect_mode of this WebTamperProtectDirRequestInfo.
 
-        **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。  **默认取值**: recovery 
+        **参数解释**: 防护模式，仅Linux服务器支持设置防护模式为告警模式，Windows服务器仅支持拦截模式。 **约束限制**: 不涉及 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式，仅Linux服务器支持。  **默认取值**: recovery 
 
         :param protect_mode: The protect_mode of this WebTamperProtectDirRequestInfo.
         :type protect_mode: str

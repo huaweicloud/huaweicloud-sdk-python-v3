@@ -91,7 +91,7 @@ class PrivateImageRepositoryInfo:
         :type latest_version: bool
         :param scan_status: 扫描状态，包含如下2种。   - unscan ：未扫描。   - success ：扫描完成。   - scanning ：正在扫描。   - failed ：扫描失败。   - download_failed ：下载失败。   - image_oversized ：镜像超大。   - waiting_for_scan ：等待扫描。
         :type scan_status: str
-        :param scan_failed_desc: 扫描失败原因，包含如下14种。   - \&quot;unknown_error\&quot; :未知错误   - \&quot;authentication_failed\&quot;:认证失败   - \&quot;download_failed\&quot;:镜像下载失败   - \&quot;image_over_sized\&quot;:镜像大小超限   - \&quot;image_oversized\&quot;:镜像超大   - \&quot;failed_to_scan_vulnerability\&quot;:漏洞扫描失败      - \&quot;failed_to_scan_file\&quot;:文件扫描失败   - \&quot;failed_to_scan_software\&quot;:软件扫描失败   - \&quot;failed_to_check_sensitive_information\&quot;:敏感信息核查失败   - \&quot;failed_to_check_baseline\&quot;:基线检查失败   - \&quot;failed_to_check_software_compliance\&quot;:软件合规检查失败   - \&quot;failed_to_query_basic_image_information\&quot;:基础镜像信息查询失败   - \&quot;response_timed_out\&quot;:响应超时   - \&quot;database_error\&quot; : 数据库错误   - \&quot;failed_to_send_the_scan_request\&quot; : 发送扫描请求失败
+        :param scan_failed_desc: 扫描失败原因，包含如下14种。   - \&quot;unknown_error\&quot; :未知错误   - \&quot;authentication_failed\&quot;:认证失败   - \&quot;download_failed\&quot;:镜像下载失败   - \&quot;image_over_sized\&quot;:镜像大小超限   - \&quot;image_oversized\&quot;:镜像超大   - \&quot;failed_to_scan_vulnerability\&quot;:漏洞扫描失败   - \&quot;failed_to_scan_file\&quot;:文件扫描失败   - \&quot;failed_to_scan_software\&quot;:软件扫描失败   - \&quot;failed_to_check_sensitive_information\&quot;:敏感信息核查失败   - \&quot;failed_to_check_baseline\&quot;:基线检查失败   - \&quot;failed_to_check_software_compliance\&quot;:软件合规检查失败   - \&quot;failed_to_query_basic_image_information\&quot;:基础镜像信息查询失败   - \&quot;response_timed_out\&quot;:响应超时   - \&quot;database_error\&quot; : 数据库错误   - \&quot;failed_to_send_the_scan_request\&quot; : 发送扫描请求失败
         :type scan_failed_desc: str
         :param image_size: 镜像大小
         :type image_size: int
@@ -397,7 +397,7 @@ class PrivateImageRepositoryInfo:
     def scan_failed_desc(self):
         r"""Gets the scan_failed_desc of this PrivateImageRepositoryInfo.
 
-        扫描失败原因，包含如下14种。   - \"unknown_error\" :未知错误   - \"authentication_failed\":认证失败   - \"download_failed\":镜像下载失败   - \"image_over_sized\":镜像大小超限   - \"image_oversized\":镜像超大   - \"failed_to_scan_vulnerability\":漏洞扫描失败      - \"failed_to_scan_file\":文件扫描失败   - \"failed_to_scan_software\":软件扫描失败   - \"failed_to_check_sensitive_information\":敏感信息核查失败   - \"failed_to_check_baseline\":基线检查失败   - \"failed_to_check_software_compliance\":软件合规检查失败   - \"failed_to_query_basic_image_information\":基础镜像信息查询失败   - \"response_timed_out\":响应超时   - \"database_error\" : 数据库错误   - \"failed_to_send_the_scan_request\" : 发送扫描请求失败
+        扫描失败原因，包含如下14种。   - \"unknown_error\" :未知错误   - \"authentication_failed\":认证失败   - \"download_failed\":镜像下载失败   - \"image_over_sized\":镜像大小超限   - \"image_oversized\":镜像超大   - \"failed_to_scan_vulnerability\":漏洞扫描失败   - \"failed_to_scan_file\":文件扫描失败   - \"failed_to_scan_software\":软件扫描失败   - \"failed_to_check_sensitive_information\":敏感信息核查失败   - \"failed_to_check_baseline\":基线检查失败   - \"failed_to_check_software_compliance\":软件合规检查失败   - \"failed_to_query_basic_image_information\":基础镜像信息查询失败   - \"response_timed_out\":响应超时   - \"database_error\" : 数据库错误   - \"failed_to_send_the_scan_request\" : 发送扫描请求失败
 
         :return: The scan_failed_desc of this PrivateImageRepositoryInfo.
         :rtype: str
@@ -408,7 +408,7 @@ class PrivateImageRepositoryInfo:
     def scan_failed_desc(self, scan_failed_desc):
         r"""Sets the scan_failed_desc of this PrivateImageRepositoryInfo.
 
-        扫描失败原因，包含如下14种。   - \"unknown_error\" :未知错误   - \"authentication_failed\":认证失败   - \"download_failed\":镜像下载失败   - \"image_over_sized\":镜像大小超限   - \"image_oversized\":镜像超大   - \"failed_to_scan_vulnerability\":漏洞扫描失败      - \"failed_to_scan_file\":文件扫描失败   - \"failed_to_scan_software\":软件扫描失败   - \"failed_to_check_sensitive_information\":敏感信息核查失败   - \"failed_to_check_baseline\":基线检查失败   - \"failed_to_check_software_compliance\":软件合规检查失败   - \"failed_to_query_basic_image_information\":基础镜像信息查询失败   - \"response_timed_out\":响应超时   - \"database_error\" : 数据库错误   - \"failed_to_send_the_scan_request\" : 发送扫描请求失败
+        扫描失败原因，包含如下14种。   - \"unknown_error\" :未知错误   - \"authentication_failed\":认证失败   - \"download_failed\":镜像下载失败   - \"image_over_sized\":镜像大小超限   - \"image_oversized\":镜像超大   - \"failed_to_scan_vulnerability\":漏洞扫描失败   - \"failed_to_scan_file\":文件扫描失败   - \"failed_to_scan_software\":软件扫描失败   - \"failed_to_check_sensitive_information\":敏感信息核查失败   - \"failed_to_check_baseline\":基线检查失败   - \"failed_to_check_software_compliance\":软件合规检查失败   - \"failed_to_query_basic_image_information\":基础镜像信息查询失败   - \"response_timed_out\":响应超时   - \"database_error\" : 数据库错误   - \"failed_to_send_the_scan_request\" : 发送扫描请求失败
 
         :param scan_failed_desc: The scan_failed_desc of this PrivateImageRepositoryInfo.
         :type scan_failed_desc: str

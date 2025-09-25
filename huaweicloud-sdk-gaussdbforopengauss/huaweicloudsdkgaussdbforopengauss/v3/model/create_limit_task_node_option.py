@@ -31,9 +31,9 @@ class CreateLimitTaskNodeOption:
 
         The model defined in huaweicloud sdk
 
-        :param node_id: 节点id。
+        :param node_id: **参数解释**: 节点ID。 **约束限制**: 必须是当前实例的某一个节点ID。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type node_id: str
-        :param sql_id: 该节点执行的sql语句id。如果类型为SQL_ID，必须与limit_type_value值一致。
+        :param sql_id: **参数解释**: 该节点执行的SQL语句ID。 **约束限制**: 如果“limit_type”为SQL_ID，必须与“limit_type_value”值一致。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type sql_id: str
         """
         
@@ -50,7 +50,7 @@ class CreateLimitTaskNodeOption:
     def node_id(self):
         r"""Gets the node_id of this CreateLimitTaskNodeOption.
 
-        节点id。
+        **参数解释**: 节点ID。 **约束限制**: 必须是当前实例的某一个节点ID。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The node_id of this CreateLimitTaskNodeOption.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateLimitTaskNodeOption:
     def node_id(self, node_id):
         r"""Sets the node_id of this CreateLimitTaskNodeOption.
 
-        节点id。
+        **参数解释**: 节点ID。 **约束限制**: 必须是当前实例的某一个节点ID。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param node_id: The node_id of this CreateLimitTaskNodeOption.
         :type node_id: str
@@ -72,7 +72,7 @@ class CreateLimitTaskNodeOption:
     def sql_id(self):
         r"""Gets the sql_id of this CreateLimitTaskNodeOption.
 
-        该节点执行的sql语句id。如果类型为SQL_ID，必须与limit_type_value值一致。
+        **参数解释**: 该节点执行的SQL语句ID。 **约束限制**: 如果“limit_type”为SQL_ID，必须与“limit_type_value”值一致。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The sql_id of this CreateLimitTaskNodeOption.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateLimitTaskNodeOption:
     def sql_id(self, sql_id):
         r"""Sets the sql_id of this CreateLimitTaskNodeOption.
 
-        该节点执行的sql语句id。如果类型为SQL_ID，必须与limit_type_value值一致。
+        **参数解释**: 该节点执行的SQL语句ID。 **约束限制**: 如果“limit_type”为SQL_ID，必须与“limit_type_value”值一致。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param sql_id: The sql_id of this CreateLimitTaskNodeOption.
         :type sql_id: str

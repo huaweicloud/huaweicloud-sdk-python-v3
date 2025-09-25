@@ -115,6 +115,8 @@ from huaweicloudsdkcbr.v1.model.list_domain_projects_request import ListDomainPr
 from huaweicloudsdkcbr.v1.model.list_domain_projects_response import ListDomainProjectsResponse
 from huaweicloudsdkcbr.v1.model.list_external_vault_request import ListExternalVaultRequest
 from huaweicloudsdkcbr.v1.model.list_external_vault_response import ListExternalVaultResponse
+from huaweicloudsdkcbr.v1.model.list_features_request import ListFeaturesRequest
+from huaweicloudsdkcbr.v1.model.list_features_response import ListFeaturesResponse
 from huaweicloudsdkcbr.v1.model.list_op_logs_request import ListOpLogsRequest
 from huaweicloudsdkcbr.v1.model.list_op_logs_response import ListOpLogsResponse
 from huaweicloudsdkcbr.v1.model.list_organization_policies_request import ListOrganizationPoliciesRequest
@@ -198,6 +200,8 @@ from huaweicloudsdkcbr.v1.model.show_checkpoint_request import ShowCheckpointReq
 from huaweicloudsdkcbr.v1.model.show_checkpoint_response import ShowCheckpointResponse
 from huaweicloudsdkcbr.v1.model.show_domain_request import ShowDomainRequest
 from huaweicloudsdkcbr.v1.model.show_domain_response import ShowDomainResponse
+from huaweicloudsdkcbr.v1.model.show_feature_request import ShowFeatureRequest
+from huaweicloudsdkcbr.v1.model.show_feature_response import ShowFeatureResponse
 from huaweicloudsdkcbr.v1.model.show_member_detail_request import ShowMemberDetailRequest
 from huaweicloudsdkcbr.v1.model.show_member_detail_response import ShowMemberDetailResponse
 from huaweicloudsdkcbr.v1.model.show_members_detail_request import ShowMembersDetailRequest

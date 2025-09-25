@@ -19,52 +19,52 @@ class SetWtpProtectionStatusRequestInfo:
     openapi_types = {
         'status': 'bool',
         'host_id_list': 'list[str]',
-        'resource_id': 'str',
-        'charging_mode': 'str'
+        'charging_mode': 'str',
+        'resource_id': 'str'
     }
 
     attribute_map = {
         'status': 'status',
         'host_id_list': 'host_id_list',
-        'resource_id': 'resource_id',
-        'charging_mode': 'charging_mode'
+        'charging_mode': 'charging_mode',
+        'resource_id': 'resource_id'
     }
 
-    def __init__(self, status=None, host_id_list=None, resource_id=None, charging_mode=None):
+    def __init__(self, status=None, host_id_list=None, charging_mode=None, resource_id=None):
         r"""SetWtpProtectionStatusRequestInfo
 
         The model defined in huaweicloud sdk
 
-        :param status: 开启关闭状态，true表示enable， false表示disable
+        :param status: **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: - True ：开启防护，必须填写charging_mode。 - False ：关闭防护，无需填写charging_mode。  **默认取值**: False 
         :type status: bool
-        :param host_id_list: 主机ID数组，不能为空
+        :param host_id_list: **参数解释**: 需要开启或关闭防护的服务器ID列表。 **约束限制** : 开启防护时，需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，protect_status 等于 closed 且 agent_status 等于 online 的 host_id 是符合开启防护的服务器ID。 **取值范围**: 最少1条，最多20000条 **默认取值** : 不涉及 
         :type host_id_list: list[str]
-        :param resource_id: 资源ID
-        :type resource_id: str
-        :param charging_mode: 计费模式   - packet_cycle: 包周期
+        :param charging_mode: **参数解释**: 计费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle: 包年/包月，可填写resource_id。 - on_demand: 按需计费，无需填写resource_id。  **默认取值**: on_demand 
         :type charging_mode: str
+        :param resource_id: **参数解释**: 资源ID，即网页防篡改配额的配额ID，当charging_mode选择packet_cycle时可填写该字段，表示使用一个指定配额，也可不填写该字段，表示随机选择符合的配额。 **约束限制** : 不涉及 **取值范围**: 字符长度0-64位 **默认取值** : 不涉及 
+        :type resource_id: str
         """
         
         
 
         self._status = None
         self._host_id_list = None
-        self._resource_id = None
         self._charging_mode = None
+        self._resource_id = None
         self.discriminator = None
 
         self.status = status
         self.host_id_list = host_id_list
-        if resource_id is not None:
-            self.resource_id = resource_id
         if charging_mode is not None:
             self.charging_mode = charging_mode
+        if resource_id is not None:
+            self.resource_id = resource_id
 
     @property
     def status(self):
         r"""Gets the status of this SetWtpProtectionStatusRequestInfo.
 
-        开启关闭状态，true表示enable， false表示disable
+        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: - True ：开启防护，必须填写charging_mode。 - False ：关闭防护，无需填写charging_mode。  **默认取值**: False 
 
         :return: The status of this SetWtpProtectionStatusRequestInfo.
         :rtype: bool
@@ -75,7 +75,7 @@ class SetWtpProtectionStatusRequestInfo:
     def status(self, status):
         r"""Sets the status of this SetWtpProtectionStatusRequestInfo.
 
-        开启关闭状态，true表示enable， false表示disable
+        **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: - True ：开启防护，必须填写charging_mode。 - False ：关闭防护，无需填写charging_mode。  **默认取值**: False 
 
         :param status: The status of this SetWtpProtectionStatusRequestInfo.
         :type status: bool
@@ -86,7 +86,7 @@ class SetWtpProtectionStatusRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this SetWtpProtectionStatusRequestInfo.
 
-        主机ID数组，不能为空
+        **参数解释**: 需要开启或关闭防护的服务器ID列表。 **约束限制** : 开启防护时，需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，protect_status 等于 closed 且 agent_status 等于 online 的 host_id 是符合开启防护的服务器ID。 **取值范围**: 最少1条，最多20000条 **默认取值** : 不涉及 
 
         :return: The host_id_list of this SetWtpProtectionStatusRequestInfo.
         :rtype: list[str]
@@ -97,7 +97,7 @@ class SetWtpProtectionStatusRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this SetWtpProtectionStatusRequestInfo.
 
-        主机ID数组，不能为空
+        **参数解释**: 需要开启或关闭防护的服务器ID列表。 **约束限制** : 开启防护时，需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，protect_status 等于 closed 且 agent_status 等于 online 的 host_id 是符合开启防护的服务器ID。 **取值范围**: 最少1条，最多20000条 **默认取值** : 不涉及 
 
         :param host_id_list: The host_id_list of this SetWtpProtectionStatusRequestInfo.
         :type host_id_list: list[str]
@@ -105,32 +105,10 @@ class SetWtpProtectionStatusRequestInfo:
         self._host_id_list = host_id_list
 
     @property
-    def resource_id(self):
-        r"""Gets the resource_id of this SetWtpProtectionStatusRequestInfo.
-
-        资源ID
-
-        :return: The resource_id of this SetWtpProtectionStatusRequestInfo.
-        :rtype: str
-        """
-        return self._resource_id
-
-    @resource_id.setter
-    def resource_id(self, resource_id):
-        r"""Sets the resource_id of this SetWtpProtectionStatusRequestInfo.
-
-        资源ID
-
-        :param resource_id: The resource_id of this SetWtpProtectionStatusRequestInfo.
-        :type resource_id: str
-        """
-        self._resource_id = resource_id
-
-    @property
     def charging_mode(self):
         r"""Gets the charging_mode of this SetWtpProtectionStatusRequestInfo.
 
-        计费模式   - packet_cycle: 包周期
+        **参数解释**: 计费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle: 包年/包月，可填写resource_id。 - on_demand: 按需计费，无需填写resource_id。  **默认取值**: on_demand 
 
         :return: The charging_mode of this SetWtpProtectionStatusRequestInfo.
         :rtype: str
@@ -141,12 +119,34 @@ class SetWtpProtectionStatusRequestInfo:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this SetWtpProtectionStatusRequestInfo.
 
-        计费模式   - packet_cycle: 包周期
+        **参数解释**: 计费模式 **约束限制**: 不涉及 **取值范围**: - packet_cycle: 包年/包月，可填写resource_id。 - on_demand: 按需计费，无需填写resource_id。  **默认取值**: on_demand 
 
         :param charging_mode: The charging_mode of this SetWtpProtectionStatusRequestInfo.
         :type charging_mode: str
         """
         self._charging_mode = charging_mode
+
+    @property
+    def resource_id(self):
+        r"""Gets the resource_id of this SetWtpProtectionStatusRequestInfo.
+
+        **参数解释**: 资源ID，即网页防篡改配额的配额ID，当charging_mode选择packet_cycle时可填写该字段，表示使用一个指定配额，也可不填写该字段，表示随机选择符合的配额。 **约束限制** : 不涉及 **取值范围**: 字符长度0-64位 **默认取值** : 不涉及 
+
+        :return: The resource_id of this SetWtpProtectionStatusRequestInfo.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        r"""Sets the resource_id of this SetWtpProtectionStatusRequestInfo.
+
+        **参数解释**: 资源ID，即网页防篡改配额的配额ID，当charging_mode选择packet_cycle时可填写该字段，表示使用一个指定配额，也可不填写该字段，表示随机选择符合的配额。 **约束限制** : 不涉及 **取值范围**: 字符长度0-64位 **默认取值** : 不涉及 
+
+        :param resource_id: The resource_id of this SetWtpProtectionStatusRequestInfo.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

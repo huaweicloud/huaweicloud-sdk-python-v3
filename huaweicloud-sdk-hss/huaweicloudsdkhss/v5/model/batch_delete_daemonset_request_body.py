@@ -33,7 +33,7 @@ class BatchDeleteDaemonsetRequestBody:
 
         :param cluster_ids: 批量卸载列表
         :type cluster_ids: list[str]
-        :param invoked_service: 调用服务，标识cce免费体检报告，cce调用传参为cce:    - hss hss服务    - cce cce服务
+        :param invoked_service: 调用服务，标识cce免费体检报告，cce调用传参为cce:   - hss hss服务   - cce cce服务
         :type invoked_service: str
         """
         
@@ -73,7 +73,7 @@ class BatchDeleteDaemonsetRequestBody:
     def invoked_service(self):
         r"""Gets the invoked_service of this BatchDeleteDaemonsetRequestBody.
 
-        调用服务，标识cce免费体检报告，cce调用传参为cce:    - hss hss服务    - cce cce服务
+        调用服务，标识cce免费体检报告，cce调用传参为cce:   - hss hss服务   - cce cce服务
 
         :return: The invoked_service of this BatchDeleteDaemonsetRequestBody.
         :rtype: str
@@ -84,7 +84,7 @@ class BatchDeleteDaemonsetRequestBody:
     def invoked_service(self, invoked_service):
         r"""Sets the invoked_service of this BatchDeleteDaemonsetRequestBody.
 
-        调用服务，标识cce免费体检报告，cce调用传参为cce:    - hss hss服务    - cce cce服务
+        调用服务，标识cce免费体检报告，cce调用传参为cce:   - hss hss服务   - cce cce服务
 
         :param invoked_service: The invoked_service of this BatchDeleteDaemonsetRequestBody.
         :type invoked_service: str

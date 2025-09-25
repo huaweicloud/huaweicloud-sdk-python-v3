@@ -380,6 +380,73 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def batch_set_backup_policy(self, request):
+        r"""批量设置自动备份策略
+
+        批量设置自动备份策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchSetBackupPolicy
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.BatchSetBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BatchSetBackupPolicyResponse`
+        """
+        http_info = self._batch_set_backup_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_set_backup_policy_invoker(self, request):
+        http_info = self._batch_set_backup_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_set_backup_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/backups/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetBackupPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_show_upgrade_candidate_versions(self, request):
         r"""查询批量实例可升级的版本和升级类型
 
@@ -2349,6 +2416,75 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def delete_sharding(self, request):
+        r"""分片缩容
+
+        数据库分片缩容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSharding
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteShardingRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteShardingResponse`
+        """
+        http_info = self._delete_sharding_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_sharding_invoker(self, request):
+        http_info = self._delete_sharding_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_sharding_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sharding",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteShardingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def download_backup(self, request):
         r"""获取备份下载链接
 
@@ -3551,7 +3687,7 @@ class GaussDBforopenGaussClient(Client):
     def list_cn_infos_before_reduce(self, request):
         r"""查询协调节点列表
 
-        查询协调节点列表
+        查询协调节点列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4133,6 +4269,75 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def list_database_versions(self, request):
+        r"""查询数据库引擎的版本
+
+        查询数据库引擎的版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDatabaseVersions
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabaseVersionsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabaseVersionsResponse`
+        """
+        http_info = self._list_database_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_database_versions_invoker(self, request):
+        http_info = self._list_database_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_database_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.2/{project_id}/datastore/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_database_volume_summary(self, request):
         r"""查询数据盘空间概况
 
@@ -4672,6 +4877,77 @@ class GaussDBforopenGaussClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_enterprise_projects(self, request):
+        r"""查询企业项目列表
+
+        查询企业项目列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEnterpriseProjects
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListEnterpriseProjectsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListEnterpriseProjectsResponse`
+        """
+        http_info = self._list_enterprise_projects_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_enterprise_projects_invoker(self, request):
+        http_info = self._list_enterprise_projects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_enterprise_projects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseProjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name_keyword' in local_var_params:
+            query_params.append(('name_keyword', local_var_params['name_keyword']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -7431,6 +7707,213 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def list_transaction(self, request):
+        r"""查询事务列表
+
+        查询数据库实例节点的实时事务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListTransaction
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionResponse`
+        """
+        http_info = self._list_transaction_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_transaction_invoker(self, request):
+        http_info = self._list_transaction_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_transaction_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/transactions/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTransactionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_wait_event(self, request):
+        r"""查询等待事件列表
+
+        查询数据库实例节点的等待事件列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListWaitEvent
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListWaitEventRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListWaitEventResponse`
+        """
+        http_info = self._list_wait_event_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_wait_event_invoker(self, request):
+        http_info = self._list_wait_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_wait_event_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/wait-event-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWaitEventResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_auto_enlarge_policy(self, request):
+        r"""修改磁盘自动扩容策略
+
+        修改磁盘自动扩容策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyAutoEnlargePolicy
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ModifyAutoEnlargePolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ModifyAutoEnlargePolicyResponse`
+        """
+        http_info = self._modify_auto_enlarge_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_auto_enlarge_policy_invoker(self, request):
+        http_info = self._modify_auto_enlarge_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_auto_enlarge_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auto-enlarge-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyAutoEnlargePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_eps_quota(self, request):
         r"""修改企业项目配额
 
@@ -7534,6 +8017,73 @@ class GaussDBforopenGaussClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_hotfixes(self, request):
+        r"""修改热补丁属性
+
+        修改热补丁属性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ModifyHotfixes
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ModifyHotfixesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ModifyHotfixesResponse`
+        """
+        http_info = self._modify_hotfixes_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_hotfixes_invoker(self, request):
+        http_info = self._modify_hotfixes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_hotfixes_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/hotfix-property",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyHotfixesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -8185,7 +8735,7 @@ class GaussDBforopenGaussClient(Client):
     def search_auto_enlarge_policy(self, request):
         r"""查询磁盘自动扩容策略
 
-        查询磁盘自动扩容策略
+        查询磁盘自动扩容策略。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8590,6 +9140,79 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def show_alarm_history_record(self, request):
+        r"""获取告警记录历史
+
+        获取告警记录历史。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAlarmHistoryRecord
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowAlarmHistoryRecordRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowAlarmHistoryRecordResponse`
+        """
+        http_info = self._show_alarm_history_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_alarm_history_record_invoker(self, request):
+        http_info = self._show_alarm_history_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_alarm_history_record_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/alarm-history-record",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlarmHistoryRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'level' in local_var_params:
+            query_params.append(('level', local_var_params['level']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_alarm_statistics(self, request):
         r"""实例告警信息汇总统计
 
@@ -8630,6 +9253,75 @@ class GaussDBforopenGaussClient(Client):
             query_params.append(('start_time', local_var_params['start_time']))
         if 'top_num' in local_var_params:
             query_params.append(('top_num', local_var_params['top_num']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_auto_kill_transaction_config(self, request):
+        r"""获取自动中止事务配置
+
+        获取实例自动中止事务配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutoKillTransactionConfig
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowAutoKillTransactionConfigRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowAutoKillTransactionConfigResponse`
+        """
+        http_info = self._show_auto_kill_transaction_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_auto_kill_transaction_config_invoker(self, request):
+        http_info = self._show_auto_kill_transaction_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auto_kill_transaction_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/transactions/get-auto-kill-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoKillTransactionConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -9144,6 +9836,73 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def show_eps_remaining_quota(self, request):
+        r"""获取企业项目剩余配额
+
+        获取企业项目剩余配额。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowEpsRemainingQuota
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowEpsRemainingQuotaRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowEpsRemainingQuotaResponse`
+        """
+        http_info = self._show_eps_remaining_quota_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_eps_remaining_quota_invoker(self, request):
+        http_info = self._show_eps_remaining_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_eps_remaining_quota_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-projects/remaining-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEpsRemainingQuotaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_error_log_switch_status(self, request):
         r"""查询错误日志采集开关状态
 
@@ -9180,6 +9939,71 @@ class GaussDBforopenGaussClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_expansion_parameters(self, request):
+        r"""查询扩容优化参数设置模板
+
+        查询扩容优化参数设置模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowExpansionParameters
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowExpansionParametersRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowExpansionParametersResponse`
+        """
+        http_info = self._show_expansion_parameters_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_expansion_parameters_invoker(self, request):
+        http_info = self._show_expansion_parameters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_expansion_parameters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/expansion-parameters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExpansionParametersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -10091,6 +10915,71 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def show_redistribution_parameters(self, request):
+        r"""查询重分布参数设置模板
+
+        查询重分布参数设置模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowRedistributionParameters
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowRedistributionParametersRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowRedistributionParametersResponse`
+        """
+        http_info = self._show_redistribution_parameters_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_redistribution_parameters_invoker(self, request):
+        http_info = self._show_redistribution_parameters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_redistribution_parameters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/redistribution-parameters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRedistributionParametersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_session_overview(self, request):
         r"""查询实时会话概览
 
@@ -10116,6 +11005,73 @@ class GaussDBforopenGaussClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/session-overview",
             "request_type": request.__class__.__name__,
             "response_type": "ShowSessionOverviewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_shard_disk_messages(self, request):
+        r"""获取分片的磁盘使用信息
+
+        获取分片的磁盘使用信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowShardDiskMessages
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowShardDiskMessagesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowShardDiskMessagesResponse`
+        """
+        http_info = self._show_shard_disk_messages_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_shard_disk_messages_invoker(self, request):
+        http_info = self._show_shard_disk_messages_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_shard_disk_messages_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/shard-volume-usage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowShardDiskMessagesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -10643,6 +11599,75 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def shrink_cn(self, request):
+        r"""协调节点缩容
+
+        协调节点缩容。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShrinkCn
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShrinkCnRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShrinkCnResponse`
+        """
+        http_info = self._shrink_cn_http_info(request)
+        return self._call_api(**http_info)
+
+    def shrink_cn_invoker(self, request):
+        http_info = self._shrink_cn_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _shrink_cn_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/coordinators",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShrinkCnResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def start_instance(self, request):
         r"""启动实例/节点
 
@@ -11055,6 +12080,75 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def stop_transaction(self, request):
+        r"""手动结束事务
+
+        手动结束事务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopTransaction
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.StopTransactionRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.StopTransactionResponse`
+        """
+        http_info = self._stop_transaction_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_transaction_invoker(self, request):
+        http_info = self._stop_transaction_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_transaction_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/transactions/kill",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopTransactionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def switch_configuration(self, request):
         r"""应用参数模板
 
@@ -11331,6 +12425,75 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def update_expansion_parameters(self, request):
+        r"""修改扩容优化参数
+
+        修改扩容优化参数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateExpansionParameters
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateExpansionParametersRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateExpansionParametersResponse`
+        """
+        http_info = self._update_expansion_parameters_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_expansion_parameters_invoker(self, request):
+        http_info = self._update_expansion_parameters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_expansion_parameters_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/expansion-parameters",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateExpansionParametersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_features(self, request):
         r"""开启特性
 
@@ -11494,6 +12657,104 @@ class GaussDBforopenGaussClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/name",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateInstanceNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_instance_versions(self, request):
+        r"""实例内核版本升级
+
+        GaussDB实例版本升级。包括灰度升级，就地升级，热补丁升级等三种升级方式。 
+        
+        - 就地升级：
+        
+          就地升级需要停止业务进行，会一次性升级集群中所有节点。就地升级需要暂停业务30分钟来升级。 
+        
+        - 灰度升级： 
+        
+          每个主DN或者CN组件升级就有一次10秒业务中断。升级过程均是先管理面，再数据面，由备到主的升级方式。灰度升级支持升级自动提交和升级待观察两种操作方式。
+        
+          - 升级自动提交：所有节点进程一起升级，在升级过程中有大概10秒的业务中断，不阻塞其他业务操作。 
+        
+          - 升级待观察：升级待观察，将数据库升级过程细分为升级，提交两个阶段。
+        
+            - 升级阶段可以根据部署方式细分为按分片或者按AZ的滚动升级。
+        
+              - 分布式实例：根据分片数滚动升级。
+              - 集中式实例：根据AZ数进行滚动升级。 
+            
+            - 提交阶段可以对升级完成后的实例进行业务测试，根据需要可以选择提交升级或者升级回退。
+        
+              - 提交升级：提交升级。在升级完成，进入提交阶段时。业务测试正常后提交升级，完成本次升级流程。
+        
+              - 升级回退：升级回退，在升级完成，进入提交阶段时。可以根据需要回退本次升级，回退到升级前的版本。
+        
+        - 热补丁升级
+        
+          - 升级自动提交：热补丁自动升级并提交，中间无业务中断。
+        
+          - 升级回退：热补丁回退，无业务中断时间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInstanceVersions
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceVersionsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateInstanceVersionsResponse`
+        """
+        http_info = self._update_instance_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_instance_versions_invoker(self, request):
+        http_info = self._update_instance_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_versions_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instance/{instance_id}/db-upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceVersionsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -11967,6 +13228,288 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def collect_asp(self, request):
+        r"""采集ASP报告
+
+        采集ASP报告。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CollectAsp
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CollectAspRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CollectAspResponse`
+        """
+        http_info = self._collect_asp_http_info(request)
+        return self._call_api(**http_info)
+
+    def collect_asp_invoker(self, request):
+        http_info = self._collect_asp_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_asp_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/asp/collect",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectAspResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_asp_infos(self, request):
+        r"""查询asp采集结果
+
+        查询ASP采集结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAspInfos
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListAspInfosRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListAspInfosResponse`
+        """
+        http_info = self._list_asp_infos_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_asp_infos_invoker(self, request):
+        http_info = self._list_asp_infos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_asp_infos_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/asp",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAspInfosResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_asp_status(self, request):
+        r"""查询ASP开关状态
+
+        查询ASP开关状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAspStatus
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowAspStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowAspStatusResponse`
+        """
+        http_info = self._show_asp_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_asp_status_invoker(self, request):
+        http_info = self._show_asp_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asp_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/asp/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAspStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_asp_status(self, request):
+        r"""打开或者关闭ASP开关
+
+        打开或者关闭ASP开关。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SwitchAspStatus
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchAspStatusRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchAspStatusResponse`
+        """
+        http_info = self._switch_asp_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_asp_status_invoker(self, request):
+        http_info = self._switch_asp_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_asp_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/asp/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchAspStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def bind_lts_config(self, request):
         r"""关联LTS日志流
 
@@ -12245,6 +13788,75 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def create_sql_limit_task(self, request):
+        r"""创建SQL限流任务
+
+        根据具体范围和类型，进行限流任务的创建。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateSqlLimitTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateSqlLimitTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateSqlLimitTaskResponse`
+        """
+        http_info = self._create_sql_limit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_sql_limit_task_invoker(self, request):
+        http_info = self._create_sql_limit_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_sql_limit_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/limit-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSqlLimitTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_limit_task(self, request):
         r"""删除限流任务
 
@@ -12298,6 +13910,77 @@ class GaussDBforopenGaussClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_sql_limit_task(self, request):
+        r"""删除SQL限流任务
+
+        根据task_id进行SQL限流任务的删除
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSqlLimitTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteSqlLimitTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteSqlLimitTaskResponse`
+        """
+        http_info = self._delete_sql_limit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_sql_limit_task_invoker(self, request):
+        http_info = self._delete_sql_limit_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_sql_limit_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/limit-task/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSqlLimitTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -12367,6 +14050,146 @@ class GaussDBforopenGaussClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_enhance_full_sqls(self, request):
+        r"""查询全量单条SQL记录列表
+
+        查询GaussDB数据库实例全量SQL日志记录列表，支持增强型条件过滤。 如可对SQL文本（query字段）进行多条件合并查询，可对db_time、cpu_time、data_io_time及execution_time字段进行大于、小于、区间范围等条件的过滤
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEnhanceFullSqls
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListEnhanceFullSqlsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListEnhanceFullSqlsResponse`
+        """
+        http_info = self._list_enhance_full_sqls_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_enhance_full_sqls_invoker(self, request):
+        http_info = self._list_enhance_full_sqls_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_enhance_full_sqls_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/list-full-sqls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnhanceFullSqlsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_full_sql_switches(self, request):
+        r"""查询GaussDB数据库实例全量SQL开关记录列表
+
+        查询GaussDB数据库实例全量SQL开关记录列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFullSqlSwitches
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFullSqlSwitchesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFullSqlSwitchesResponse`
+        """
+        http_info = self._list_full_sql_switches_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_full_sql_switches_invoker(self, request):
+        http_info = self._list_full_sql_switches_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_full_sql_switches_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/full-sql-switches",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFullSqlSwitchesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -12746,6 +14569,150 @@ class GaussDBforopenGaussClient(Client):
 
         return http_info
 
+    def list_sql_limit_task(self, request):
+        r"""根据指定条件查询SQL限流任务列表
+
+        根据指定条件查询SQL限流任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSqlLimitTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSqlLimitTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSqlLimitTaskResponse`
+        """
+        http_info = self._list_sql_limit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sql_limit_task_invoker(self, request):
+        http_info = self._list_sql_limit_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sql_limit_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/limit-task-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlLimitTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sql_trace(self, request):
+        r"""查询GaussDB数据库实例SQL链路
+
+        查询GaussDB数据库实例SQL链路，包含实例上对应组件的链路列表，如dn_6001、dn_6002、cn_5001、cn_5002。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSqlTrace
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSqlTraceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSqlTraceResponse`
+        """
+        http_info = self._list_sql_trace_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sql_trace_invoker(self, request):
+        http_info = self._list_sql_trace_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sql_trace_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/full-sql/sql-trace",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlTraceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'sql_id' in local_var_params:
+            query_params.append(('sql_id', local_var_params['sql_id']))
+        if 'sql_exec_id' in local_var_params:
+            query_params.append(('sql_exec_id', local_var_params['sql_exec_id']))
+        if 'transaction_id' in local_var_params:
+            query_params.append(('transaction_id', local_var_params['transaction_id']))
+        if 'trace_id' in local_var_params:
+            query_params.append(('trace_id', local_var_params['trace_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_global_slow_sql_detail(self, request):
         r"""查询全局慢SQL详情
 
@@ -12857,6 +14824,213 @@ class GaussDBforopenGaussClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sql_limit_task(self, request):
+        r"""查询SQL限流任务详情
+
+        查询SQL限流任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSqlLimitTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowSqlLimitTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowSqlLimitTaskResponse`
+        """
+        http_info = self._show_sql_limit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sql_limit_task_invoker(self, request):
+        http_info = self._show_sql_limit_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_limit_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/limit-task/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlLimitTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_full_sql(self, request):
+        r"""开启GaussDB数据库实例全量SQL功能
+
+        开启全量SQL功能。使实例Agent侧开启内核侧全量SQL能力，持续化采集GaussDB数据库实例上的执行SQL语句，定时批量持久化存储于LTS云服务对应日志流中。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StartFullSql
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.StartFullSqlRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.StartFullSqlResponse`
+        """
+        http_info = self._start_full_sql_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_full_sql_invoker(self, request):
+        http_info = self._start_full_sql_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_full_sql_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/full-sqls/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartFullSqlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def stop_full_sql(self, request):
+        r"""关闭全量SQL功能
+
+        关闭全量SQL功能。关闭后，实例Agent侧将停止内核侧全量SQL语句记录的实时采集。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for StopFullSql
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.StopFullSqlRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.StopFullSqlResponse`
+        """
+        http_info = self._stop_full_sql_http_info(request)
+        return self._call_api(**http_info)
+
+    def stop_full_sql_invoker(self, request):
+        http_info = self._stop_full_sql_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_full_sql_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/full-sqls/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopFullSqlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -13002,6 +15176,150 @@ class GaussDBforopenGaussClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_sql_limit_task(self, request):
+        r"""修改SQL限流任务
+
+        根据新的条件进行SQL限流任务的更新。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSqlLimitTask
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateSqlLimitTaskRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpdateSqlLimitTaskResponse`
+        """
+        http_info = self._update_sql_limit_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_sql_limit_task_invoker(self, request):
+        http_info = self._update_sql_limit_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_sql_limit_task_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/limit-task/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSqlLimitTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sql_patch(self, request):
+        r"""查询SQL PATCH
+
+        查询SQL PATCH信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSqlPatch
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowSqlPatchRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowSqlPatchResponse`
+        """
+        http_info = self._show_sql_patch_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sql_patch_invoker(self, request):
+        http_info = self._show_sql_patch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_patch_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-patch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlPatchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
+        if 'sql_id' in local_var_params:
+            query_params.append(('sql_id', local_var_params['sql_id']))
+        if 'database_name' in local_var_params:
+            query_params.append(('database_name', local_var_params['database_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

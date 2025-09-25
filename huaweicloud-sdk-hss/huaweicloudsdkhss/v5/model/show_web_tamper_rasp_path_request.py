@@ -18,40 +18,33 @@ class ShowWebTamperRaspPathRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'host_name': 'str',
         'host_id': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
-        'host_name': 'host_name',
         'host_id': 'host_id'
     }
 
-    def __init__(self, enterprise_project_id=None, host_name=None, host_id=None):
+    def __init__(self, enterprise_project_id=None, host_id=None):
         r"""ShowWebTamperRaspPathRequest
 
         The model defined in huaweicloud sdk
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
-        :type host_name: str
-        :param host_id: 服务器id
+        :param host_id: **参数解释**: 服务器ID，仅支持Linux服务器，要求服务器已开启网页防篡改防护，或已关闭防护但未删除网页防篡改策略 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，os_type 等于 Linux 的 host_id 是符合查询条件的服务器ID **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_id: str
         """
         
         
 
         self._enterprise_project_id = None
-        self._host_name = None
         self._host_id = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if host_name is not None:
-            self.host_name = host_name
         self.host_id = host_id
 
     @property
@@ -77,32 +70,10 @@ class ShowWebTamperRaspPathRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def host_name(self):
-        r"""Gets the host_name of this ShowWebTamperRaspPathRequest.
-
-        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
-
-        :return: The host_name of this ShowWebTamperRaspPathRequest.
-        :rtype: str
-        """
-        return self._host_name
-
-    @host_name.setter
-    def host_name(self, host_name):
-        r"""Sets the host_name of this ShowWebTamperRaspPathRequest.
-
-        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
-
-        :param host_name: The host_name of this ShowWebTamperRaspPathRequest.
-        :type host_name: str
-        """
-        self._host_name = host_name
-
-    @property
     def host_id(self):
         r"""Gets the host_id of this ShowWebTamperRaspPathRequest.
 
-        服务器id
+        **参数解释**: 服务器ID，仅支持Linux服务器，要求服务器已开启网页防篡改防护，或已关闭防护但未删除网页防篡改策略 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，os_type 等于 Linux 的 host_id 是符合查询条件的服务器ID **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_id of this ShowWebTamperRaspPathRequest.
         :rtype: str
@@ -113,7 +84,7 @@ class ShowWebTamperRaspPathRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ShowWebTamperRaspPathRequest.
 
-        服务器id
+        **参数解释**: 服务器ID，仅支持Linux服务器，要求服务器已开启网页防篡改防护，或已关闭防护但未删除网页防篡改策略 **约束限制**: 需要使用 ListWtpProtectHost 接口查询网页防篡改主机防护状态列表信息，在 ListWtpProtectHost 接口的响应体中，os_type 等于 Linux 的 host_id 是符合查询条件的服务器ID **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ShowWebTamperRaspPathRequest.
         :type host_id: str

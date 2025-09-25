@@ -27,7 +27,8 @@ class OrganizationPolicy:
         'policy_operation_definition': 'PolicyoODCreate',
         'policy_trigger': 'PolicyTriggerReq',
         'status': 'str',
-        'domain_name': 'str'
+        'domain_name': 'str',
+        'effective_scope': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class OrganizationPolicy:
         'policy_operation_definition': 'policy_operation_definition',
         'policy_trigger': 'policy_trigger',
         'status': 'status',
-        'domain_name': 'domain_name'
+        'domain_name': 'domain_name',
+        'effective_scope': 'effective_scope'
     }
 
-    def __init__(self, id=None, name=None, description=None, operation_type=None, domain_id=None, policy_name=None, policy_enabled=None, policy_operation_definition=None, policy_trigger=None, status=None, domain_name=None):
+    def __init__(self, id=None, name=None, description=None, operation_type=None, domain_id=None, policy_name=None, policy_enabled=None, policy_operation_definition=None, policy_trigger=None, status=None, domain_name=None, effective_scope=None):
         r"""OrganizationPolicy
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class OrganizationPolicy:
         :type status: str
         :param domain_name: 组织策略所属账号
         :type domain_name: str
+        :param effective_scope: 组织策略生效范围
+        :type effective_scope: str
         """
         
         
@@ -86,6 +90,7 @@ class OrganizationPolicy:
         self._policy_trigger = None
         self._status = None
         self._domain_name = None
+        self._effective_scope = None
         self.discriminator = None
 
         self.id = id
@@ -101,6 +106,8 @@ class OrganizationPolicy:
         self.status = status
         if domain_name is not None:
             self.domain_name = domain_name
+        if effective_scope is not None:
+            self.effective_scope = effective_scope
 
     @property
     def id(self):
@@ -335,6 +342,28 @@ class OrganizationPolicy:
         :type domain_name: str
         """
         self._domain_name = domain_name
+
+    @property
+    def effective_scope(self):
+        r"""Gets the effective_scope of this OrganizationPolicy.
+
+        组织策略生效范围
+
+        :return: The effective_scope of this OrganizationPolicy.
+        :rtype: str
+        """
+        return self._effective_scope
+
+    @effective_scope.setter
+    def effective_scope(self, effective_scope):
+        r"""Sets the effective_scope of this OrganizationPolicy.
+
+        组织策略生效范围
+
+        :param effective_scope: The effective_scope of this OrganizationPolicy.
+        :type effective_scope: str
+        """
+        self._effective_scope = effective_scope
 
     def to_dict(self):
         """Returns the model properties as a dict"""

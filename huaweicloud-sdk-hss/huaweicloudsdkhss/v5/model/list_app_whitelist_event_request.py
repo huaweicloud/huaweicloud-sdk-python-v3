@@ -23,7 +23,6 @@ class ListAppWhitelistEventRequest:
         'end_time': 'int',
         'host_name': 'str',
         'host_ip': 'str',
-        'private_ip': 'str',
         'handle_status': 'str',
         'offset': 'int',
         'limit': 'int'
@@ -36,13 +35,12 @@ class ListAppWhitelistEventRequest:
         'end_time': 'end_time',
         'host_name': 'host_name',
         'host_ip': 'host_ip',
-        'private_ip': 'private_ip',
         'handle_status': 'handle_status',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, enterprise_project_id=None, last_days=None, begin_time=None, end_time=None, host_name=None, host_ip=None, private_ip=None, handle_status=None, offset=None, limit=None):
+    def __init__(self, enterprise_project_id=None, last_days=None, begin_time=None, end_time=None, host_name=None, host_ip=None, handle_status=None, offset=None, limit=None):
         r"""ListAppWhitelistEventRequest
 
         The model defined in huaweicloud sdk
@@ -51,17 +49,15 @@ class ListAppWhitelistEventRequest:
         :type enterprise_project_id: str
         :param last_days: **参数解释**: 查询时间范围天数，与自定义查询时间begin_time，end_time互斥 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值30 **默认取值**: 不涉及 
         :type last_days: int
-        :param begin_time: 自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        :param begin_time: 自定义查询时间，开始时间
         :type begin_time: int
-        :param end_time: 自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        :param end_time: 自定义查询时间，结束时间
         :type end_time: int
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_ip: **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_ip: str
-        :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
-        :type private_ip: str
-        :param handle_status: **参数解释**： 是否已处理 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
+        :param handle_status: **参数解释**： 是否已处理 **约束限制**: 不涉及 **取值范围**: - handled：已处理 - unhandled：未处理  **默认取值**: 不涉及 
         :type handle_status: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 不涉及 
         :type offset: int
@@ -77,7 +73,6 @@ class ListAppWhitelistEventRequest:
         self._end_time = None
         self._host_name = None
         self._host_ip = None
-        self._private_ip = None
         self._handle_status = None
         self._offset = None
         self._limit = None
@@ -93,8 +88,6 @@ class ListAppWhitelistEventRequest:
             self.host_name = host_name
         if host_ip is not None:
             self.host_ip = host_ip
-        if private_ip is not None:
-            self.private_ip = private_ip
         if handle_status is not None:
             self.handle_status = handle_status
         self.offset = offset
@@ -148,7 +141,7 @@ class ListAppWhitelistEventRequest:
     def begin_time(self):
         r"""Gets the begin_time of this ListAppWhitelistEventRequest.
 
-        自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        自定义查询时间，开始时间
 
         :return: The begin_time of this ListAppWhitelistEventRequest.
         :rtype: int
@@ -159,7 +152,7 @@ class ListAppWhitelistEventRequest:
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this ListAppWhitelistEventRequest.
 
-        自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        自定义查询时间，开始时间
 
         :param begin_time: The begin_time of this ListAppWhitelistEventRequest.
         :type begin_time: int
@@ -170,7 +163,7 @@ class ListAppWhitelistEventRequest:
     def end_time(self):
         r"""Gets the end_time of this ListAppWhitelistEventRequest.
 
-        自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        自定义查询时间，结束时间
 
         :return: The end_time of this ListAppWhitelistEventRequest.
         :rtype: int
@@ -181,7 +174,7 @@ class ListAppWhitelistEventRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListAppWhitelistEventRequest.
 
-        自定义查询时间，与查询时间范围天数互斥，查询时间段的起始时间，毫秒级时间戳，end_time减去begin_time小于等于2天，与查询时间范围天数互斥
+        自定义查询时间，结束时间
 
         :param end_time: The end_time of this ListAppWhitelistEventRequest.
         :type end_time: int
@@ -214,7 +207,7 @@ class ListAppWhitelistEventRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListAppWhitelistEventRequest.
 
-        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListAppWhitelistEventRequest.
         :rtype: str
@@ -225,7 +218,7 @@ class ListAppWhitelistEventRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListAppWhitelistEventRequest.
 
-        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListAppWhitelistEventRequest.
         :type host_ip: str
@@ -233,32 +226,10 @@ class ListAppWhitelistEventRequest:
         self._host_ip = host_ip
 
     @property
-    def private_ip(self):
-        r"""Gets the private_ip of this ListAppWhitelistEventRequest.
-
-        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
-
-        :return: The private_ip of this ListAppWhitelistEventRequest.
-        :rtype: str
-        """
-        return self._private_ip
-
-    @private_ip.setter
-    def private_ip(self, private_ip):
-        r"""Sets the private_ip of this ListAppWhitelistEventRequest.
-
-        **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
-
-        :param private_ip: The private_ip of this ListAppWhitelistEventRequest.
-        :type private_ip: str
-        """
-        self._private_ip = private_ip
-
-    @property
     def handle_status(self):
         r"""Gets the handle_status of this ListAppWhitelistEventRequest.
 
-        **参数解释**： 是否已处理 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
+        **参数解释**： 是否已处理 **约束限制**: 不涉及 **取值范围**: - handled：已处理 - unhandled：未处理  **默认取值**: 不涉及 
 
         :return: The handle_status of this ListAppWhitelistEventRequest.
         :rtype: str
@@ -269,7 +240,7 @@ class ListAppWhitelistEventRequest:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ListAppWhitelistEventRequest.
 
-        **参数解释**： 是否已处理 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
+        **参数解释**： 是否已处理 **约束限制**: 不涉及 **取值范围**: - handled：已处理 - unhandled：未处理  **默认取值**: 不涉及 
 
         :param handle_status: The handle_status of this ListAppWhitelistEventRequest.
         :type handle_status: str

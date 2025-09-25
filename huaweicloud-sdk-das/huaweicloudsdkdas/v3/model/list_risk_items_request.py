@@ -18,15 +18,19 @@ class ListRiskItemsRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'datastore_type': 'str'
+        'datastore_type': 'str',
+        'page': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
-        'datastore_type': 'datastore_type'
+        'datastore_type': 'datastore_type',
+        'page': 'page',
+        'limit': 'limit'
     }
 
-    def __init__(self, x_language=None, datastore_type=None):
+    def __init__(self, x_language=None, datastore_type=None, page=None, limit=None):
         r"""ListRiskItemsRequest
 
         The model defined in huaweicloud sdk
@@ -35,17 +39,27 @@ class ListRiskItemsRequest:
         :type x_language: str
         :param datastore_type: 数据库类型
         :type datastore_type: str
+        :param page: 页码，默认1
+        :type page: int
+        :param limit: 每页记录数，默认20。
+        :type limit: int
         """
         
         
 
         self._x_language = None
         self._datastore_type = None
+        self._page = None
+        self._limit = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
         self.datastore_type = datastore_type
+        if page is not None:
+            self.page = page
+        if limit is not None:
+            self.limit = limit
 
     @property
     def x_language(self):
@@ -90,6 +104,50 @@ class ListRiskItemsRequest:
         :type datastore_type: str
         """
         self._datastore_type = datastore_type
+
+    @property
+    def page(self):
+        r"""Gets the page of this ListRiskItemsRequest.
+
+        页码，默认1
+
+        :return: The page of this ListRiskItemsRequest.
+        :rtype: int
+        """
+        return self._page
+
+    @page.setter
+    def page(self, page):
+        r"""Sets the page of this ListRiskItemsRequest.
+
+        页码，默认1
+
+        :param page: The page of this ListRiskItemsRequest.
+        :type page: int
+        """
+        self._page = page
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListRiskItemsRequest.
+
+        每页记录数，默认20。
+
+        :return: The limit of this ListRiskItemsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListRiskItemsRequest.
+
+        每页记录数，默认20。
+
+        :param limit: The limit of this ListRiskItemsRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

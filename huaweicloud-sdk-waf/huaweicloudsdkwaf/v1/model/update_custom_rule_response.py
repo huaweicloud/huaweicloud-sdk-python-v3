@@ -70,7 +70,7 @@ class UpdateCustomRuleResponse(SdkResponse):
         :type action: :class:`huaweicloudsdkwaf.v1.CustomAction`
         :param action_mode: 预留参数，可忽略。
         :type action_mode: bool
-        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
         :type priority: int
         :param time: 精准防护规则生效时间:  - “false”：表示该规则立即生效。   - “true”：表示自定义生效时间。
         :type time: bool
@@ -302,7 +302,7 @@ class UpdateCustomRuleResponse(SdkResponse):
     def priority(self):
         r"""Gets the priority of this UpdateCustomRuleResponse.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
 
         :return: The priority of this UpdateCustomRuleResponse.
         :rtype: int
@@ -313,7 +313,7 @@ class UpdateCustomRuleResponse(SdkResponse):
     def priority(self, priority):
         r"""Sets the priority of this UpdateCustomRuleResponse.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
 
         :param priority: The priority of this UpdateCustomRuleResponse.
         :type priority: int

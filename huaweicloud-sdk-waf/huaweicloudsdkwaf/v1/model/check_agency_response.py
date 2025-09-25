@@ -20,6 +20,7 @@ class CheckAgencyResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'version': 'str',
         'duration': 'str',
         'domain_id': 'str',
         'is_valid': 'bool'
@@ -28,12 +29,13 @@ class CheckAgencyResponse(SdkResponse):
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'version': 'version',
         'duration': 'duration',
         'domain_id': 'domain_id',
         'is_valid': 'is_valid'
     }
 
-    def __init__(self, id=None, name=None, duration=None, domain_id=None, is_valid=None):
+    def __init__(self, id=None, name=None, version=None, duration=None, domain_id=None, is_valid=None):
         r"""CheckAgencyResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +44,8 @@ class CheckAgencyResponse(SdkResponse):
         :type id: str
         :param name: **参数解释：** 代理名称 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type name: str
+        :param version: **参数解释：** 版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type version: str
         :param duration: **参数解释：** 代理存在时间段 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type duration: str
         :param domain_id: **参数解释：** 使用代理的domainid **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
@@ -54,6 +58,7 @@ class CheckAgencyResponse(SdkResponse):
 
         self._id = None
         self._name = None
+        self._version = None
         self._duration = None
         self._domain_id = None
         self._is_valid = None
@@ -63,6 +68,8 @@ class CheckAgencyResponse(SdkResponse):
             self.id = id
         if name is not None:
             self.name = name
+        if version is not None:
+            self.version = version
         if duration is not None:
             self.duration = duration
         if domain_id is not None:
@@ -113,6 +120,28 @@ class CheckAgencyResponse(SdkResponse):
         :type name: str
         """
         self._name = name
+
+    @property
+    def version(self):
+        r"""Gets the version of this CheckAgencyResponse.
+
+        **参数解释：** 版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The version of this CheckAgencyResponse.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        r"""Sets the version of this CheckAgencyResponse.
+
+        **参数解释：** 版本 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param version: The version of this CheckAgencyResponse.
+        :type version: str
+        """
+        self._version = version
 
     @property
     def duration(self):

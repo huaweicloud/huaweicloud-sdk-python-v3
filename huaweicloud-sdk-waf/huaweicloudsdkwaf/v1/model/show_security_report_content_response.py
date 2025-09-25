@@ -25,7 +25,8 @@ class ShowSecurityReportContentResponse(SdkResponse):
         'report_category': 'str',
         'topic_urn': 'str',
         'subscription_type': 'str',
-        'report_content_subscription_info': 'SecurityReportContentResponseReportContentSubscriptionInfo',
+        'report_content_info': 'SecurityReportContentResponseReportContentInfo',
+        'create_time': 'int',
         'stat_period': 'SecurityReportContentResponseStatPeriod'
     }
 
@@ -37,11 +38,12 @@ class ShowSecurityReportContentResponse(SdkResponse):
         'report_category': 'report_category',
         'topic_urn': 'topic_urn',
         'subscription_type': 'subscription_type',
-        'report_content_subscription_info': 'report_content_subscription_info',
+        'report_content_info': 'report_content_info',
+        'create_time': 'create_time',
         'stat_period': 'stat_period'
     }
 
-    def __init__(self, report_id=None, subscription_id=None, sending_period=None, report_name=None, report_category=None, topic_urn=None, subscription_type=None, report_content_subscription_info=None, stat_period=None):
+    def __init__(self, report_id=None, subscription_id=None, sending_period=None, report_name=None, report_category=None, topic_urn=None, subscription_type=None, report_content_info=None, create_time=None, stat_period=None):
         r"""ShowSecurityReportContentResponse
 
         The model defined in huaweicloud sdk
@@ -60,8 +62,10 @@ class ShowSecurityReportContentResponse(SdkResponse):
         :type topic_urn: str
         :param subscription_type: **参数解释：** 订阅类型，标识安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type subscription_type: str
-        :param report_content_subscription_info: 
-        :type report_content_subscription_info: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentSubscriptionInfo`
+        :param report_content_info: 
+        :type report_content_info: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfo`
+        :param create_time: **参数解释：** 创建时间，报告的创建时间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type create_time: int
         :param stat_period: 
         :type stat_period: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseStatPeriod`
         """
@@ -75,7 +79,8 @@ class ShowSecurityReportContentResponse(SdkResponse):
         self._report_category = None
         self._topic_urn = None
         self._subscription_type = None
-        self._report_content_subscription_info = None
+        self._report_content_info = None
+        self._create_time = None
         self._stat_period = None
         self.discriminator = None
 
@@ -93,8 +98,10 @@ class ShowSecurityReportContentResponse(SdkResponse):
             self.topic_urn = topic_urn
         if subscription_type is not None:
             self.subscription_type = subscription_type
-        if report_content_subscription_info is not None:
-            self.report_content_subscription_info = report_content_subscription_info
+        if report_content_info is not None:
+            self.report_content_info = report_content_info
+        if create_time is not None:
+            self.create_time = create_time
         if stat_period is not None:
             self.stat_period = stat_period
 
@@ -253,22 +260,44 @@ class ShowSecurityReportContentResponse(SdkResponse):
         self._subscription_type = subscription_type
 
     @property
-    def report_content_subscription_info(self):
-        r"""Gets the report_content_subscription_info of this ShowSecurityReportContentResponse.
+    def report_content_info(self):
+        r"""Gets the report_content_info of this ShowSecurityReportContentResponse.
 
-        :return: The report_content_subscription_info of this ShowSecurityReportContentResponse.
-        :rtype: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentSubscriptionInfo`
+        :return: The report_content_info of this ShowSecurityReportContentResponse.
+        :rtype: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfo`
         """
-        return self._report_content_subscription_info
+        return self._report_content_info
 
-    @report_content_subscription_info.setter
-    def report_content_subscription_info(self, report_content_subscription_info):
-        r"""Sets the report_content_subscription_info of this ShowSecurityReportContentResponse.
+    @report_content_info.setter
+    def report_content_info(self, report_content_info):
+        r"""Sets the report_content_info of this ShowSecurityReportContentResponse.
 
-        :param report_content_subscription_info: The report_content_subscription_info of this ShowSecurityReportContentResponse.
-        :type report_content_subscription_info: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentSubscriptionInfo`
+        :param report_content_info: The report_content_info of this ShowSecurityReportContentResponse.
+        :type report_content_info: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfo`
         """
-        self._report_content_subscription_info = report_content_subscription_info
+        self._report_content_info = report_content_info
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this ShowSecurityReportContentResponse.
+
+        **参数解释：** 创建时间，报告的创建时间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The create_time of this ShowSecurityReportContentResponse.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this ShowSecurityReportContentResponse.
+
+        **参数解释：** 创建时间，报告的创建时间。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param create_time: The create_time of this ShowSecurityReportContentResponse.
+        :type create_time: int
+        """
+        self._create_time = create_time
 
     @property
     def stat_period(self):

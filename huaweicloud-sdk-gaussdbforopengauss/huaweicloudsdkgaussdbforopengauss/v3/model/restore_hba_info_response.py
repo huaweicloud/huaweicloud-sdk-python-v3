@@ -18,80 +18,20 @@ class RestoreHbaInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'code': 'str',
-        'message': 'str'
     }
 
     attribute_map = {
-        'code': 'code',
-        'message': 'message'
     }
 
-    def __init__(self, code=None, message=None):
+    def __init__(self):
         r"""RestoreHbaInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param code: **参数解释**: 结果码。 **取值范围**: 不涉及。
-        :type code: str
-        :param message: **参数解释**: 结果描述。 **取值范围**: 不涉及。
-        :type message: str
         """
         
         super(RestoreHbaInfoResponse, self).__init__()
-
-        self._code = None
-        self._message = None
         self.discriminator = None
-
-        if code is not None:
-            self.code = code
-        if message is not None:
-            self.message = message
-
-    @property
-    def code(self):
-        r"""Gets the code of this RestoreHbaInfoResponse.
-
-        **参数解释**: 结果码。 **取值范围**: 不涉及。
-
-        :return: The code of this RestoreHbaInfoResponse.
-        :rtype: str
-        """
-        return self._code
-
-    @code.setter
-    def code(self, code):
-        r"""Sets the code of this RestoreHbaInfoResponse.
-
-        **参数解释**: 结果码。 **取值范围**: 不涉及。
-
-        :param code: The code of this RestoreHbaInfoResponse.
-        :type code: str
-        """
-        self._code = code
-
-    @property
-    def message(self):
-        r"""Gets the message of this RestoreHbaInfoResponse.
-
-        **参数解释**: 结果描述。 **取值范围**: 不涉及。
-
-        :return: The message of this RestoreHbaInfoResponse.
-        :rtype: str
-        """
-        return self._message
-
-    @message.setter
-    def message(self, message):
-        r"""Sets the message of this RestoreHbaInfoResponse.
-
-        **参数解释**: 结果描述。 **取值范围**: 不涉及。
-
-        :param message: The message of this RestoreHbaInfoResponse.
-        :type message: str
-        """
-        self._message = message
 
     def to_dict(self):
         """Returns the model properties as a dict"""

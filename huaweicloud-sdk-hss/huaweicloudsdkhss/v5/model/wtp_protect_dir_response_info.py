@@ -18,45 +18,38 @@ class WtpProtectDirResponseInfo:
 
     openapi_types = {
         'protect_dir_list': 'list[WtpProtectHostDirResponseInfo]',
-        'exclue_file_type': 'str',
         'exclude_file_type': 'str',
         'protect_mode': 'str'
     }
 
     attribute_map = {
         'protect_dir_list': 'protect_dir_list',
-        'exclue_file_type': 'exclue_file_type',
         'exclude_file_type': 'exclude_file_type',
         'protect_mode': 'protect_mode'
     }
 
-    def __init__(self, protect_dir_list=None, exclue_file_type=None, exclude_file_type=None, protect_mode=None):
+    def __init__(self, protect_dir_list=None, exclude_file_type=None, protect_mode=None):
         r"""WtpProtectDirResponseInfo
 
         The model defined in huaweicloud sdk
 
         :param protect_dir_list: **参数解释**: 防护目录列表 **取值范围**: 最少0条，最多50条 
         :type protect_dir_list: list[:class:`huaweicloudsdkhss.v5.WtpProtectHostDirResponseInfo`]
-        :param exclue_file_type: 排除文件类型
-        :type exclue_file_type: str
         :param exclude_file_type: **参数解释**: 排除文件类型 **取值范围**: 字符长度0-512位 
         :type exclude_file_type: str
-        :param protect_mode: **参数解释**: 防护模式 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。 
+        :param protect_mode: **参数解释**: 防护模式。 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式，仅Linux服务器支持告警模式。 
         :type protect_mode: str
         """
         
         
 
         self._protect_dir_list = None
-        self._exclue_file_type = None
         self._exclude_file_type = None
         self._protect_mode = None
         self.discriminator = None
 
         if protect_dir_list is not None:
             self.protect_dir_list = protect_dir_list
-        if exclue_file_type is not None:
-            self.exclue_file_type = exclue_file_type
         if exclude_file_type is not None:
             self.exclude_file_type = exclude_file_type
         if protect_mode is not None:
@@ -85,28 +78,6 @@ class WtpProtectDirResponseInfo:
         self._protect_dir_list = protect_dir_list
 
     @property
-    def exclue_file_type(self):
-        r"""Gets the exclue_file_type of this WtpProtectDirResponseInfo.
-
-        排除文件类型
-
-        :return: The exclue_file_type of this WtpProtectDirResponseInfo.
-        :rtype: str
-        """
-        return self._exclue_file_type
-
-    @exclue_file_type.setter
-    def exclue_file_type(self, exclue_file_type):
-        r"""Sets the exclue_file_type of this WtpProtectDirResponseInfo.
-
-        排除文件类型
-
-        :param exclue_file_type: The exclue_file_type of this WtpProtectDirResponseInfo.
-        :type exclue_file_type: str
-        """
-        self._exclue_file_type = exclue_file_type
-
-    @property
     def exclude_file_type(self):
         r"""Gets the exclude_file_type of this WtpProtectDirResponseInfo.
 
@@ -132,7 +103,7 @@ class WtpProtectDirResponseInfo:
     def protect_mode(self):
         r"""Gets the protect_mode of this WtpProtectDirResponseInfo.
 
-        **参数解释**: 防护模式 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。 
+        **参数解释**: 防护模式。 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式，仅Linux服务器支持告警模式。 
 
         :return: The protect_mode of this WtpProtectDirResponseInfo.
         :rtype: str
@@ -143,7 +114,7 @@ class WtpProtectDirResponseInfo:
     def protect_mode(self, protect_mode):
         r"""Sets the protect_mode of this WtpProtectDirResponseInfo.
 
-        **参数解释**: 防护模式 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式。 
+        **参数解释**: 防护模式。 **取值范围**: - recovery ：拦截模式。 - alarm ：告警模式，仅Linux服务器支持告警模式。 
 
         :param protect_mode: The protect_mode of this WtpProtectDirResponseInfo.
         :type protect_mode: str

@@ -29,7 +29,7 @@ class ListProjectTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类别，hss
+        :param resource_type: **参数解释**: 资源类别 **约束限制**: 不涉及 **取值范围**: - hss：主机安全服务 **默认取值**: hss 
         :type resource_type: str
         """
         
@@ -44,7 +44,7 @@ class ListProjectTagsRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListProjectTagsRequest.
 
-        资源类别，hss
+        **参数解释**: 资源类别 **约束限制**: 不涉及 **取值范围**: - hss：主机安全服务 **默认取值**: hss 
 
         :return: The resource_type of this ListProjectTagsRequest.
         :rtype: str
@@ -55,7 +55,7 @@ class ListProjectTagsRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListProjectTagsRequest.
 
-        资源类别，hss
+        **参数解释**: 资源类别 **约束限制**: 不涉及 **取值范围**: - hss：主机安全服务 **默认取值**: hss 
 
         :param resource_type: The resource_type of this ListProjectTagsRequest.
         :type resource_type: str

@@ -19,6 +19,8 @@ class NotebookEntity:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'eihealth_project_id': 'str',
+        'eihealth_project_name': 'str',
         'description': 'str',
         'creator': 'str',
         'url': 'str',
@@ -35,6 +37,8 @@ class NotebookEntity:
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'eihealth_project_id': 'eihealth_project_id',
+        'eihealth_project_name': 'eihealth_project_name',
         'description': 'description',
         'creator': 'creator',
         'url': 'url',
@@ -48,7 +52,7 @@ class NotebookEntity:
         'events': 'events'
     }
 
-    def __init__(self, id=None, name=None, description=None, creator=None, url=None, flavor=None, status=None, image=None, storages=None, create_time=None, update_time=None, failed_message=None, events=None):
+    def __init__(self, id=None, name=None, eihealth_project_id=None, eihealth_project_name=None, description=None, creator=None, url=None, flavor=None, status=None, image=None, storages=None, create_time=None, update_time=None, failed_message=None, events=None):
         r"""NotebookEntity
 
         The model defined in huaweicloud sdk
@@ -57,6 +61,10 @@ class NotebookEntity:
         :type id: str
         :param name: notebook名称
         :type name: str
+        :param eihealth_project_id: **参数解释**： 空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type eihealth_project_id: str
+        :param eihealth_project_name: **参数解释**： 空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type eihealth_project_name: str
         :param description: notebook描述
         :type description: str
         :param creator: notebook所属用户
@@ -85,6 +93,8 @@ class NotebookEntity:
 
         self._id = None
         self._name = None
+        self._eihealth_project_id = None
+        self._eihealth_project_name = None
         self._description = None
         self._creator = None
         self._url = None
@@ -102,6 +112,10 @@ class NotebookEntity:
             self.id = id
         if name is not None:
             self.name = name
+        if eihealth_project_id is not None:
+            self.eihealth_project_id = eihealth_project_id
+        if eihealth_project_name is not None:
+            self.eihealth_project_name = eihealth_project_name
         if description is not None:
             self.description = description
         if creator is not None:
@@ -168,6 +182,50 @@ class NotebookEntity:
         :type name: str
         """
         self._name = name
+
+    @property
+    def eihealth_project_id(self):
+        r"""Gets the eihealth_project_id of this NotebookEntity.
+
+        **参数解释**： 空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The eihealth_project_id of this NotebookEntity.
+        :rtype: str
+        """
+        return self._eihealth_project_id
+
+    @eihealth_project_id.setter
+    def eihealth_project_id(self, eihealth_project_id):
+        r"""Sets the eihealth_project_id of this NotebookEntity.
+
+        **参数解释**： 空间ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param eihealth_project_id: The eihealth_project_id of this NotebookEntity.
+        :type eihealth_project_id: str
+        """
+        self._eihealth_project_id = eihealth_project_id
+
+    @property
+    def eihealth_project_name(self):
+        r"""Gets the eihealth_project_name of this NotebookEntity.
+
+        **参数解释**： 空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The eihealth_project_name of this NotebookEntity.
+        :rtype: str
+        """
+        return self._eihealth_project_name
+
+    @eihealth_project_name.setter
+    def eihealth_project_name(self, eihealth_project_name):
+        r"""Sets the eihealth_project_name of this NotebookEntity.
+
+        **参数解释**： 空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param eihealth_project_name: The eihealth_project_name of this NotebookEntity.
+        :type eihealth_project_name: str
+        """
+        self._eihealth_project_name = eihealth_project_name
 
     @property
     def description(self):

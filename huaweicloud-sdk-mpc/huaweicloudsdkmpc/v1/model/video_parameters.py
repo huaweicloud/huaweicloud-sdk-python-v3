@@ -29,6 +29,7 @@ class VideoParameters:
         'max_iframes_interval': 'int',
         'bframes_count': 'int',
         'frame_rate': 'int',
+        'frame_rate_float': 'float',
         'width': 'int',
         'height': 'int',
         'black_cut': 'int',
@@ -48,13 +49,14 @@ class VideoParameters:
         'max_iframes_interval': 'max_iframes_interval',
         'bframes_count': 'bframes_count',
         'frame_rate': 'frame_rate',
+        'frame_rate_float': 'frame_rate_float',
         'width': 'width',
         'height': 'height',
         'black_cut': 'black_cut',
         'stream_name': 'stream_name'
     }
 
-    def __init__(self, output_policy=None, codec=None, crf=None, max_bitrate=None, bitrate=None, buf_size=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, width=None, height=None, black_cut=None, stream_name=None):
+    def __init__(self, output_policy=None, codec=None, crf=None, max_bitrate=None, bitrate=None, buf_size=None, profile=None, level=None, preset=None, max_iframes_interval=None, bframes_count=None, frame_rate=None, frame_rate_float=None, width=None, height=None, black_cut=None, stream_name=None):
         r"""VideoParameters
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class VideoParameters:
         :type bframes_count: int
         :param frame_rate: 帧率。  取值范围：0或[5,60]，0表示自适应。  单位：帧每秒。  &gt; 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
         :type frame_rate: int
+        :param frame_rate_float: 帧率。  取值范围：0或[5,60]，0表示自适应。  单位：帧每秒。  &gt; 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
+        :type frame_rate_float: float
         :param width: 视频宽度（单位：像素）  - H264：范围[32,4096]，必须为2的倍数 - H265：范围[320,4096]，必须是4的倍数 
         :type width: int
         :param height: 视频高度（单位：像素）  - H264：范围[32,2880]，必须为2的倍数 - H265：范围[240,2880] ，必须是4的倍数 
@@ -107,6 +111,7 @@ class VideoParameters:
         self._max_iframes_interval = None
         self._bframes_count = None
         self._frame_rate = None
+        self._frame_rate_float = None
         self._width = None
         self._height = None
         self._black_cut = None
@@ -137,6 +142,8 @@ class VideoParameters:
             self.bframes_count = bframes_count
         if frame_rate is not None:
             self.frame_rate = frame_rate
+        if frame_rate_float is not None:
+            self.frame_rate_float = frame_rate_float
         if width is not None:
             self.width = width
         if height is not None:
@@ -409,6 +416,28 @@ class VideoParameters:
         :type frame_rate: int
         """
         self._frame_rate = frame_rate
+
+    @property
+    def frame_rate_float(self):
+        r"""Gets the frame_rate_float of this VideoParameters.
+
+        帧率。  取值范围：0或[5,60]，0表示自适应。  单位：帧每秒。  > 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
+
+        :return: The frame_rate_float of this VideoParameters.
+        :rtype: float
+        """
+        return self._frame_rate_float
+
+    @frame_rate_float.setter
+    def frame_rate_float(self, frame_rate_float):
+        r"""Sets the frame_rate_float of this VideoParameters.
+
+        帧率。  取值范围：0或[5,60]，0表示自适应。  单位：帧每秒。  > 若设置的帧率不在取值范围内，则自动调整为0，若设置的帧率高于片源帧率，则自动调整为片源帧率。 
+
+        :param frame_rate_float: The frame_rate_float of this VideoParameters.
+        :type frame_rate_float: float
+        """
+        self._frame_rate_float = frame_rate_float
 
     @property
     def width(self):

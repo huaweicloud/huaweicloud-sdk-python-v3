@@ -20,6 +20,7 @@ class ShowWorkflowResponse(SdkResponse):
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'user_name': 'str',
         'version': 'str',
         'summary': 'str',
         'description': 'str',
@@ -37,6 +38,7 @@ class ShowWorkflowResponse(SdkResponse):
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'user_name': 'user_name',
         'version': 'version',
         'summary': 'summary',
         'description': 'description',
@@ -51,7 +53,7 @@ class ShowWorkflowResponse(SdkResponse):
         'source_resource_id': 'source_resource_id'
     }
 
-    def __init__(self, id=None, name=None, version=None, summary=None, description=None, labels=None, timeout=None, output_dir=None, tasks=None, app_snapshot_sign=None, create_time=None, update_time=None, source_project_name=None, source_resource_id=None):
+    def __init__(self, id=None, name=None, user_name=None, version=None, summary=None, description=None, labels=None, timeout=None, output_dir=None, tasks=None, app_snapshot_sign=None, create_time=None, update_time=None, source_project_name=None, source_resource_id=None):
         r"""ShowWorkflowResponse
 
         The model defined in huaweicloud sdk
@@ -60,6 +62,8 @@ class ShowWorkflowResponse(SdkResponse):
         :type id: str
         :param name: 流程名称
         :type name: str
+        :param user_name: **参数解释**： 创建用户名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type user_name: str
         :param version: 流程版本
         :type version: str
         :param summary: 流程简述
@@ -90,6 +94,7 @@ class ShowWorkflowResponse(SdkResponse):
 
         self._id = None
         self._name = None
+        self._user_name = None
         self._version = None
         self._summary = None
         self._description = None
@@ -108,6 +113,8 @@ class ShowWorkflowResponse(SdkResponse):
             self.id = id
         if name is not None:
             self.name = name
+        if user_name is not None:
+            self.user_name = user_name
         if version is not None:
             self.version = version
         if summary is not None:
@@ -176,6 +183,28 @@ class ShowWorkflowResponse(SdkResponse):
         :type name: str
         """
         self._name = name
+
+    @property
+    def user_name(self):
+        r"""Gets the user_name of this ShowWorkflowResponse.
+
+        **参数解释**： 创建用户名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The user_name of this ShowWorkflowResponse.
+        :rtype: str
+        """
+        return self._user_name
+
+    @user_name.setter
+    def user_name(self, user_name):
+        r"""Sets the user_name of this ShowWorkflowResponse.
+
+        **参数解释**： 创建用户名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param user_name: The user_name of this ShowWorkflowResponse.
+        :type user_name: str
+        """
+        self._user_name = user_name
 
     @property
     def version(self):

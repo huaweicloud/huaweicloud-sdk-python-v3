@@ -23,7 +23,8 @@ class TaskDto:
         'output_dir': 'str',
         'resources': 'TaskResourceDto',
         'location': 'VertexLocationDto',
-        'inputs': 'list[TaskParameterDto]'
+        'inputs': 'list[TaskParameterDto]',
+        'outputs': 'list[TaskParameterDto]'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class TaskDto:
         'output_dir': 'output_dir',
         'resources': 'resources',
         'location': 'location',
-        'inputs': 'inputs'
+        'inputs': 'inputs',
+        'outputs': 'outputs'
     }
 
-    def __init__(self, task_name=None, app_id=None, display_name=None, output_dir=None, resources=None, location=None, inputs=None):
+    def __init__(self, task_name=None, app_id=None, display_name=None, output_dir=None, resources=None, location=None, inputs=None, outputs=None):
         r"""TaskDto
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class TaskDto:
         :type location: :class:`huaweicloudsdkeihealth.v1.VertexLocationDto`
         :param inputs: 任务的输入参数信息
         :type inputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
+        :param outputs: **参数解释**： 任务的输出参数信息。 **约束限制**： 最多支持128个参数。 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type outputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
         """
         
         
@@ -66,6 +70,7 @@ class TaskDto:
         self._resources = None
         self._location = None
         self._inputs = None
+        self._outputs = None
         self.discriminator = None
 
         self.task_name = task_name
@@ -80,6 +85,8 @@ class TaskDto:
             self.location = location
         if inputs is not None:
             self.inputs = inputs
+        if outputs is not None:
+            self.outputs = outputs
 
     @property
     def task_name(self):
@@ -226,6 +233,28 @@ class TaskDto:
         :type inputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
         """
         self._inputs = inputs
+
+    @property
+    def outputs(self):
+        r"""Gets the outputs of this TaskDto.
+
+        **参数解释**： 任务的输出参数信息。 **约束限制**： 最多支持128个参数。 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The outputs of this TaskDto.
+        :rtype: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
+        """
+        return self._outputs
+
+    @outputs.setter
+    def outputs(self, outputs):
+        r"""Sets the outputs of this TaskDto.
+
+        **参数解释**： 任务的输出参数信息。 **约束限制**： 最多支持128个参数。 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param outputs: The outputs of this TaskDto.
+        :type outputs: list[:class:`huaweicloudsdkeihealth.v1.TaskParameterDto`]
+        """
+        self._outputs = outputs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

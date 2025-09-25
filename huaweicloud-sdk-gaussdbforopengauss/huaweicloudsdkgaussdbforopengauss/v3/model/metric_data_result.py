@@ -39,13 +39,13 @@ class MetricDataResult:
 
         :param metric: **参数解释**: 指标ID。 **取值范围**: 不涉及。
         :type metric: str
-        :param type: **参数解释** 指标类型 *取值范围* - INSTANCE：实例类型。 - NODE：节点类型。 - COMPONENT：组件类型。 
+        :param type: **参数解释** 指标类型 **取值范围** - INSTANCE：实例类型。 - NODE：节点类型。 - COMPONENT：组件类型。 
         :type type: str
         :param unit: **参数解释**: 指标单位。 **取值范围**: 不涉及。
         :type unit: str
-        :param datapoints: **参数解释**: 指标维度及指标值。 **取值范围**: 不涉及。
+        :param datapoints: **参数解释**: 指标维度及指标值。
         :type datapoints: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DatapointResult`]
-        :param timestamps: **参数解释**: 时间戳，例如1699495140000。 **取值范围**: 不涉及。
+        :param timestamps: **参数解释**: 时间戳，例如1699495140000。
         :type timestamps: list[str]
         """
         
@@ -90,7 +90,7 @@ class MetricDataResult:
     def type(self):
         r"""Gets the type of this MetricDataResult.
 
-        **参数解释** 指标类型 *取值范围* - INSTANCE：实例类型。 - NODE：节点类型。 - COMPONENT：组件类型。 
+        **参数解释** 指标类型 **取值范围** - INSTANCE：实例类型。 - NODE：节点类型。 - COMPONENT：组件类型。 
 
         :return: The type of this MetricDataResult.
         :rtype: str
@@ -101,7 +101,7 @@ class MetricDataResult:
     def type(self, type):
         r"""Sets the type of this MetricDataResult.
 
-        **参数解释** 指标类型 *取值范围* - INSTANCE：实例类型。 - NODE：节点类型。 - COMPONENT：组件类型。 
+        **参数解释** 指标类型 **取值范围** - INSTANCE：实例类型。 - NODE：节点类型。 - COMPONENT：组件类型。 
 
         :param type: The type of this MetricDataResult.
         :type type: str
@@ -134,7 +134,7 @@ class MetricDataResult:
     def datapoints(self):
         r"""Gets the datapoints of this MetricDataResult.
 
-        **参数解释**: 指标维度及指标值。 **取值范围**: 不涉及。
+        **参数解释**: 指标维度及指标值。
 
         :return: The datapoints of this MetricDataResult.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DatapointResult`]
@@ -145,7 +145,7 @@ class MetricDataResult:
     def datapoints(self, datapoints):
         r"""Sets the datapoints of this MetricDataResult.
 
-        **参数解释**: 指标维度及指标值。 **取值范围**: 不涉及。
+        **参数解释**: 指标维度及指标值。
 
         :param datapoints: The datapoints of this MetricDataResult.
         :type datapoints: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DatapointResult`]
@@ -156,7 +156,7 @@ class MetricDataResult:
     def timestamps(self):
         r"""Gets the timestamps of this MetricDataResult.
 
-        **参数解释**: 时间戳，例如1699495140000。 **取值范围**: 不涉及。
+        **参数解释**: 时间戳，例如1699495140000。
 
         :return: The timestamps of this MetricDataResult.
         :rtype: list[str]
@@ -167,7 +167,7 @@ class MetricDataResult:
     def timestamps(self, timestamps):
         r"""Sets the timestamps of this MetricDataResult.
 
-        **参数解释**: 时间戳，例如1699495140000。 **取值范围**: 不涉及。
+        **参数解释**: 时间戳，例如1699495140000。
 
         :param timestamps: The timestamps of this MetricDataResult.
         :type timestamps: list[str]

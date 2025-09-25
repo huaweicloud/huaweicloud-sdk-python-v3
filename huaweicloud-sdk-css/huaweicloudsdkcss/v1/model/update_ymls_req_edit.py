@@ -17,28 +17,43 @@ class UpdateYmlsReqEdit:
     sensitive_list = []
 
     openapi_types = {
-        'modify': 'UpdateYmlsReqEditModify'
+        'modify': 'UpdateYmlsReqEditModify',
+        'delete': 'UpdateYmlsReqEditModify',
+        'reset': 'UpdateYmlsReqEditModify'
     }
 
     attribute_map = {
-        'modify': 'modify'
+        'modify': 'modify',
+        'delete': 'delete',
+        'reset': 'reset'
     }
 
-    def __init__(self, modify=None):
+    def __init__(self, modify=None, delete=None, reset=None):
         r"""UpdateYmlsReqEdit
 
         The model defined in huaweicloud sdk
 
         :param modify: 
         :type modify: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`
+        :param delete: 
+        :type delete: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`
+        :param reset: 
+        :type reset: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`
         """
         
         
 
         self._modify = None
+        self._delete = None
+        self._reset = None
         self.discriminator = None
 
-        self.modify = modify
+        if modify is not None:
+            self.modify = modify
+        if delete is not None:
+            self.delete = delete
+        if reset is not None:
+            self.reset = reset
 
     @property
     def modify(self):
@@ -57,6 +72,42 @@ class UpdateYmlsReqEdit:
         :type modify: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`
         """
         self._modify = modify
+
+    @property
+    def delete(self):
+        r"""Gets the delete of this UpdateYmlsReqEdit.
+
+        :return: The delete of this UpdateYmlsReqEdit.
+        :rtype: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`
+        """
+        return self._delete
+
+    @delete.setter
+    def delete(self, delete):
+        r"""Sets the delete of this UpdateYmlsReqEdit.
+
+        :param delete: The delete of this UpdateYmlsReqEdit.
+        :type delete: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`
+        """
+        self._delete = delete
+
+    @property
+    def reset(self):
+        r"""Gets the reset of this UpdateYmlsReqEdit.
+
+        :return: The reset of this UpdateYmlsReqEdit.
+        :rtype: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`
+        """
+        return self._reset
+
+    @reset.setter
+    def reset(self, reset):
+        r"""Sets the reset of this UpdateYmlsReqEdit.
+
+        :param reset: The reset of this UpdateYmlsReqEdit.
+        :type reset: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEditModify`
+        """
+        self._reset = reset
 
     def to_dict(self):
         """Returns the model properties as a dict"""

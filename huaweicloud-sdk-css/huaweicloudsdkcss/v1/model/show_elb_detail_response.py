@@ -25,7 +25,8 @@ class ShowElbDetailResponse(SdkResponse):
         'elb_enable': 'bool',
         'authentication_type': 'str',
         'load_balancer': 'EsLoadBalancerResource',
-        'healthmonitors': 'EsHealthmonitorsResource'
+        'listener': 'Elbv3Listener',
+        'healthmonitors': 'Member'
     }
 
     attribute_map = {
@@ -36,10 +37,11 @@ class ShowElbDetailResponse(SdkResponse):
         'elb_enable': 'elb_enable',
         'authentication_type': 'authentication_type',
         'load_balancer': 'loadBalancer',
+        'listener': 'listener',
         'healthmonitors': 'healthmonitors'
     }
 
-    def __init__(self, server_cert_name=None, server_cert_id=None, cacert_name=None, cacert_id=None, elb_enable=None, authentication_type=None, load_balancer=None, healthmonitors=None):
+    def __init__(self, server_cert_name=None, server_cert_id=None, cacert_name=None, cacert_id=None, elb_enable=None, authentication_type=None, load_balancer=None, listener=None, healthmonitors=None):
         r"""ShowElbDetailResponse
 
         The model defined in huaweicloud sdk
@@ -58,8 +60,10 @@ class ShowElbDetailResponse(SdkResponse):
         :type authentication_type: str
         :param load_balancer: 
         :type load_balancer: :class:`huaweicloudsdkcss.v1.EsLoadBalancerResource`
+        :param listener: 
+        :type listener: :class:`huaweicloudsdkcss.v1.Elbv3Listener`
         :param healthmonitors: 
-        :type healthmonitors: :class:`huaweicloudsdkcss.v1.EsHealthmonitorsResource`
+        :type healthmonitors: :class:`huaweicloudsdkcss.v1.Member`
         """
         
         super(ShowElbDetailResponse, self).__init__()
@@ -71,6 +75,7 @@ class ShowElbDetailResponse(SdkResponse):
         self._elb_enable = None
         self._authentication_type = None
         self._load_balancer = None
+        self._listener = None
         self._healthmonitors = None
         self.discriminator = None
 
@@ -88,6 +93,8 @@ class ShowElbDetailResponse(SdkResponse):
             self.authentication_type = authentication_type
         if load_balancer is not None:
             self.load_balancer = load_balancer
+        if listener is not None:
+            self.listener = listener
         if healthmonitors is not None:
             self.healthmonitors = healthmonitors
 
@@ -242,11 +249,29 @@ class ShowElbDetailResponse(SdkResponse):
         self._load_balancer = load_balancer
 
     @property
+    def listener(self):
+        r"""Gets the listener of this ShowElbDetailResponse.
+
+        :return: The listener of this ShowElbDetailResponse.
+        :rtype: :class:`huaweicloudsdkcss.v1.Elbv3Listener`
+        """
+        return self._listener
+
+    @listener.setter
+    def listener(self, listener):
+        r"""Sets the listener of this ShowElbDetailResponse.
+
+        :param listener: The listener of this ShowElbDetailResponse.
+        :type listener: :class:`huaweicloudsdkcss.v1.Elbv3Listener`
+        """
+        self._listener = listener
+
+    @property
     def healthmonitors(self):
         r"""Gets the healthmonitors of this ShowElbDetailResponse.
 
         :return: The healthmonitors of this ShowElbDetailResponse.
-        :rtype: :class:`huaweicloudsdkcss.v1.EsHealthmonitorsResource`
+        :rtype: :class:`huaweicloudsdkcss.v1.Member`
         """
         return self._healthmonitors
 
@@ -255,7 +280,7 @@ class ShowElbDetailResponse(SdkResponse):
         r"""Sets the healthmonitors of this ShowElbDetailResponse.
 
         :param healthmonitors: The healthmonitors of this ShowElbDetailResponse.
-        :type healthmonitors: :class:`huaweicloudsdkcss.v1.EsHealthmonitorsResource`
+        :type healthmonitors: :class:`huaweicloudsdkcss.v1.Member`
         """
         self._healthmonitors = healthmonitors
 

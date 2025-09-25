@@ -53,11 +53,11 @@ class FeatureRuleInfo:
         :type os_type: str
         :param feature_configure: 检测特性规则配置信息
         :type feature_configure: str
-        :param optional_protective_action: 可选防护动作，包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
+        :param optional_protective_action: 可选防护动作，包含如下 -1 检测 -2 检测并阻断/拦截 -3 都可以
         :type optional_protective_action: int
-        :param protective_action: 默认防护动作，包含如下 -1 检测   -2 检测并阻断/拦截
+        :param protective_action: 默认防护动作，包含如下 -1 检测 -2 检测并阻断/拦截
         :type protective_action: int
-        :param editable: 是否可编辑配置信息，包含如下 -0 否   -1 是
+        :param editable: 是否可编辑配置信息，包含如下 -0 否 -1 是
         :type editable: int
         """
         
@@ -204,7 +204,7 @@ class FeatureRuleInfo:
     def optional_protective_action(self):
         r"""Gets the optional_protective_action of this FeatureRuleInfo.
 
-        可选防护动作，包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
+        可选防护动作，包含如下 -1 检测 -2 检测并阻断/拦截 -3 都可以
 
         :return: The optional_protective_action of this FeatureRuleInfo.
         :rtype: int
@@ -215,7 +215,7 @@ class FeatureRuleInfo:
     def optional_protective_action(self, optional_protective_action):
         r"""Sets the optional_protective_action of this FeatureRuleInfo.
 
-        可选防护动作，包含如下 -1 检测   -2 检测并阻断/拦截   -3 都可以
+        可选防护动作，包含如下 -1 检测 -2 检测并阻断/拦截 -3 都可以
 
         :param optional_protective_action: The optional_protective_action of this FeatureRuleInfo.
         :type optional_protective_action: int
@@ -226,7 +226,7 @@ class FeatureRuleInfo:
     def protective_action(self):
         r"""Gets the protective_action of this FeatureRuleInfo.
 
-        默认防护动作，包含如下 -1 检测   -2 检测并阻断/拦截
+        默认防护动作，包含如下 -1 检测 -2 检测并阻断/拦截
 
         :return: The protective_action of this FeatureRuleInfo.
         :rtype: int
@@ -237,7 +237,7 @@ class FeatureRuleInfo:
     def protective_action(self, protective_action):
         r"""Sets the protective_action of this FeatureRuleInfo.
 
-        默认防护动作，包含如下 -1 检测   -2 检测并阻断/拦截
+        默认防护动作，包含如下 -1 检测 -2 检测并阻断/拦截
 
         :param protective_action: The protective_action of this FeatureRuleInfo.
         :type protective_action: int
@@ -248,7 +248,7 @@ class FeatureRuleInfo:
     def editable(self):
         r"""Gets the editable of this FeatureRuleInfo.
 
-        是否可编辑配置信息，包含如下 -0 否   -1 是
+        是否可编辑配置信息，包含如下 -0 否 -1 是
 
         :return: The editable of this FeatureRuleInfo.
         :rtype: int
@@ -259,7 +259,7 @@ class FeatureRuleInfo:
     def editable(self, editable):
         r"""Sets the editable of this FeatureRuleInfo.
 
-        是否可编辑配置信息，包含如下 -0 否   -1 是
+        是否可编辑配置信息，包含如下 -0 否 -1 是
 
         :param editable: The editable of this FeatureRuleInfo.
         :type editable: int

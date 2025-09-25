@@ -1,3 +1,1150 @@
+# 3.1.169 2025-09-25
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerOrders**
+    - 响应参数变更
+      - `+ order_infos.agent_pay_info`
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCustomerOrders**
+    - 响应参数变更
+      - `+ order_infos.agent_pay_info`
+
+### HuaweiCloud SDK CBR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListFeatures`、`ShowFeature`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListOrganizationPolicies**
+    - 响应参数变更
+      - `+ policies.effective_scope`
+  - **CreateOrganizationPolicy**
+    - 请求参数变更
+      - `+ policy.effective_scope`
+    - 响应参数变更
+      - `+ policy.effective_scope`
+  - **ShowOrganizationPolicy**
+    - 响应参数变更
+      - `+ policy.effective_scope`
+  - **UpdateOrganizationPolicy**
+    - 请求参数变更
+      - `+ policy.effective_scope`
+    - 响应参数变更
+      - `+ policy.effective_scope`
+  - **ListVault**
+    - 响应参数变更
+      - `+ vaults.availability_zone`
+  - **CreateVault**
+    - 请求参数变更
+      - `+ vault.availability_zone`
+    - 响应参数变更
+      - `+ orders`
+      - `+ error_code`
+      - `+ retCode`
+      - `+ errText`
+      - `+ vault.availability_zone`
+      - `- vault.errText`
+      - `- vault.retCode`
+      - `- vault.orders`
+  - **ShowVault**
+    - 响应参数变更
+      - `+ vault.availability_zone`
+  - **UpdateVault**
+    - 响应参数变更
+      - `+ vault.availability_zone`
+  - **ListExternalVault**
+    - 响应参数变更
+      - `+ vaults.availability_zone`
+  - **ListProtectable**
+    - 响应参数变更
+      - `+ instances.protectable.vault.availability_zone`
+  - **ShowProtectable**
+    - 响应参数变更
+      - `+ instance.protectable.vault.availability_zone`
+  - **ShowVaultResourceInstances**
+    - 响应参数变更
+      - `+ resources.resource_detail.vault.availability_zone`
+
+### HuaweiCloud SDK CC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAreaBandwidthPackageSpecifications**
+    - 请求参数变更
+      - `+ limit`
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `DownloadBuildRealTimeLog`
+    - `DownloadBuildFullLog`
+    - `ShowActionIInfo`
+    - `AddFavouriteOfficialTemplate`
+    - `RemoverFavouriteOfficialTemplate`
+    - `AddFavouriteTask`
+    - `RemoverFavouriteTask`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CheckDeployStatus`、`StopDeployTask`
+  - **ListEnvironments**
+    - 响应参数变更
+      - `- result.project_id`
+  - **ShowEnvironmentDetail**
+    - 响应参数变更
+      - `- result.project_id`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowPipelineArtifacts**
+    - 响应参数变更
+      - `* artifacts.build_no: integer -> string`
+
+### HuaweiCloud SDK Config
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListRegions**
+    - 请求参数变更
+      - `+ X-Language: enum value [fr-fr,es-us,pt-br]`
+  - **ShowBuiltInConformancePackTemplate**
+    - 请求参数变更
+      - `+ X-Language: enum value [fr-fr,es-us,pt-br]`
+  - **ListProviders**
+    - 请求参数变更
+      - `+ X-Language: enum value [fr-fr,es-us,pt-br]`
+  - **ListAllProviders**
+    - 请求参数变更
+      - `+ X-Language: enum value [fr-fr,es-us,pt-br]`
+  - **ListBuiltInConformancePackTemplates**
+    - 请求参数变更
+      - `+ X-Language: enum value [fr-fr,es-us,pt-br]`
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateShrinkNodes**
+    - 请求参数变更
+      - `+ agency_name`
+  - **ShowIkThesaurus**
+    - 响应参数变更
+      - `+ staticMainObj`
+      - `+ extraStopObj`
+      - `+ updateTime`
+      - `+ staticStopObj`
+      - `+ extraMainObj`
+      - `- operateStatus`
+  - **ListCerts**
+    - 响应参数变更
+      - `+ totalSize`
+      - `+ certsRecords`
+      - `- defaultCerts`
+      - `- customCerts`
+  - **StartVpecp**
+    - 请求参数变更
+      - `+ profession_vpcep`
+      - `+ dualstack_enable`
+  - **EnableOrDisableElb**
+    - 请求参数变更
+      - `+ type`
+  - **ListImages**
+    - 响应参数变更
+      - `+ totalSize`
+  - **StartConnectivityTest**
+    - 请求参数变更
+      - `+ address_and_ports`
+      - `- addressAndPorts`
+  - **ShowGetConfDetail**
+    - 响应参数变更
+      - `+ setting.batch_size`
+      - `+ setting.batch_delay_ms`
+      - `+ setting.queue_type`
+      - `+ setting.queue_check_point_writes`
+      - `+ setting.queue_max_bytes_mb`
+      - `- setting.batchSize`
+      - `- setting.batchDelayMs`
+      - `- setting.queueType`
+      - `- setting.queueCheckPointWrites`
+      - `- setting.queueMaxBytesMb`
+      - `* setting: object<confsetting> -> object<setting>`
+  - **ShowGetLogSetting**
+    - 响应参数变更
+      - `+ realTimeLogCollectRecord`
+  - **ShowLogBackup**
+    - 响应参数变更
+      - `+ type`
+  - **CreateBindPublic**
+    - 请求参数变更
+      - `+ eip.band_width`
+      - `- eip.bandWidth`
+  - **ShowClusterDetail**
+    - 响应参数变更
+      - `+ vpcepIpv6Address`
+      - `+ orderId`
+      - `+ currentSubnetIds`
+      - `+ ipv6Endpoint`
+      - `+ cmkId`
+      - `+ supportVpcep`
+      - `+ datastore.subVersion`
+      - `+ datastore.isEosCluster`
+      - `+ datastore.supportSecuritymode`
+      - `+ instances.subnetId`
+  - **UpgradeDetail**
+    - 响应参数变更
+      - `+ detailList.batchSize`
+      - `+ detailList.currentBatchNodes`
+  - **ListConfs**
+    - 响应参数变更
+      - `+ confs.setting.batch_size`
+      - `+ confs.setting.batch_delay_ms`
+      - `+ confs.setting.queue_type`
+      - `+ confs.setting.queue_check_point_writes`
+      - `+ confs.setting.queue_max_bytes_mb`
+      - `- confs.setting.batchSize`
+      - `- confs.setting.batchDelayMs`
+      - `- confs.setting.queueType`
+      - `- confs.setting.queueCheckPointWrites`
+      - `- confs.setting.queueMaxBytesMb`
+      - `* confs.setting: object<confsetting> -> object<setting>`
+  - **UpdateYmls**
+    - 请求参数变更
+      - `+ edit.delete`
+      - `+ edit.reset`
+  - **CreateElbListener**
+    - 请求参数变更
+      - `+ type`
+  - **ShowElbDetail**
+    - 响应参数变更
+      - `+ listener`
+      - `+ healthmonitors.address`
+      - `+ healthmonitors.operating_status`
+      - `+ healthmonitors.instance_id`
+      - `- healthmonitors.id`
+      - `- healthmonitors.ipgroup`
+      - `* healthmonitors.protocol_port: string -> int32`
+      - `* healthmonitors: object<EsHealthmonitorsResource> -> object<Member>`
+  - **UpdateEsListener**
+    - 请求参数变更
+      - `+ type`
+  - **ListClustersDetails**
+    - 响应参数变更
+      - `+ clusters.snapshotPolicy`
+      - `+ clusters.cmkId`
+      - `+ clusters.currentSubnetIds`
+      - `+ clusters.datastore.subVersion`
+      - `+ clusters.datastore.isEosCluster`
+      - `+ clusters.instances.subnetId`
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`DeleteLogstashConf`、`DeleteLogstashTemplate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateCluster**
+    - 请求参数变更
+      - `+ cluster.desc`
+      - `+ cluster.ipv6_enable`
+      - `+ cluster.diskEncryption`
+      - `+ cluster.nics.ips`
+      - `+ cluster.loadBalance.professionVpcep`
+      - `+ cluster.loadBalance.dualstackEnable`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`CheckCredential`、`SaveCredential`、`ShowHealthReportSettings`、`UpdateHealthReportSettings`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListRiskItems**
+    - 请求参数变更
+      - `+ page`
+      - `+ limit`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`BatchDeleteSecurityDataCategories`、`UpdateSecurityDataCategories`、`CreateSecurityDataCategory`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ECS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`UpdateSerialConsoleOptions`、`ShowSerialConsoleActions`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK eiHealth
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListAssetResource`
+    - `CreateAssetResource`
+    - `DeleteAssetResource`
+    - `ListChat`
+    - `ShowChat`
+    - `UpdateChat`
+    - `DeleteChat`
+    - `CreateMessageAdditions`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateMolBatchDownloadTask**
+    - 请求参数变更
+      - `+ format`
+  - **ShowAsset**
+    - 响应参数变更
+      - `+ domain`
+  - **ListUserImage**
+    - 响应参数变更
+      - `+ images.eihealth_project_id`
+      - `+ images.eihealth_project_name`
+      - `+ images.user_name`
+      - `+ images.user_id`
+      - `+ images.create_type`
+  - **ListImage**
+    - 响应参数变更
+      - `+ images.eihealth_project_id`
+      - `+ images.eihealth_project_name`
+      - `+ images.user_name`
+      - `+ images.user_id`
+      - `+ images.create_type`
+  - **CreateProject**
+    - 请求参数变更
+      - `+ storage_tenant`
+  - **ListProject**
+    - 响应参数变更
+      - `+ projects.top_time`
+      - `+ projects.storage_tenant`
+  - **CreateLabel**
+    - 请求参数变更
+      - `+ level`
+  - **ListLabel**
+    - 响应参数变更
+      - `+ labels.level`
+  - **ListApp**
+    - 响应参数变更
+      - `+ apps.eihealth_project_id`
+      - `+ apps.eihealth_project_name`
+  - **ListUserWorkflow**
+    - 响应参数变更
+      - `+ workflows.eihealth_project_id`
+      - `+ workflows.eihealth_project_name`
+  - **CreateSearchJob**
+    - 请求参数变更
+      - `+ basic_info.upstream_job_info`
+  - **ListAsset**
+    - 响应参数变更
+      - `+ domain`
+      - `+ assets.domain`
+  - **ShowProject**
+    - 响应参数变更
+      - `+ storage_tenant`
+  - **ListUserJob**
+    - 响应参数变更
+      - `+ jobs.eihealth_project_id`
+      - `+ jobs.eihealth_project_name`
+      - `+ jobs.start_time`
+  - **ListJob**
+    - 响应参数变更
+      - `+ waiting_count`
+      - `+ running_count`
+      - `+ jobs.eihealth_project_id`
+      - `+ jobs.eihealth_project_name`
+      - `+ jobs.start_time`
+  - **ExecuteJob**
+    - 请求参数变更
+      - `+ tasks.outputs`
+      - `+ tasks.output_dir`
+  - **ListWorkflow**
+    - 响应参数变更
+      - `+ workflows.eihealth_project_id`
+      - `+ workflows.eihealth_project_name`
+  - **CreateWorkflow**
+    - 请求参数变更
+      - `+ tasks.outputs`
+  - **ListUserDrugJob**
+    - 响应参数变更
+      - `+ jobs.eihealth_project_id`
+      - `+ jobs.eihealth_project_name`
+      - `+ jobs.upstream_job_info`
+  - **ListDrugJob**
+    - 响应参数变更
+      - `+ jobs.eihealth_project_id`
+      - `+ jobs.eihealth_project_name`
+      - `+ jobs.upstream_job_info`
+  - **CreateCpiJob**
+    - 请求参数变更
+      - `+ basic_info.upstream_job_info`
+  - **ShowCpiJob**
+    - 响应参数变更
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **ShowSearchJob**
+    - 响应参数变更
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreateFepJob**
+    - 请求参数变更
+      - `+ basic_info.upstream_job_info`
+  - **ShowFepJob**
+    - 响应参数变更
+      - `+ job_result.num_molecules`
+      - `+ job_result.success_count`
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreatePocketDetectionJob**
+    - 请求参数变更
+      - `+ basic_info.upstream_job_info`
+  - **ShowPocketDetectionJob**
+    - 响应参数变更
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreateAdmetJob**
+    - 请求参数变更
+      - `+ basic_info.upstream_job_info`
+  - **ShowAdmetJob**
+    - 响应参数变更
+      - `+ job_result.num_molecules`
+      - `+ job_result.success_count`
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreatePocketMolDesignJob**
+    - 请求参数变更
+      - `+ base_model_id`
+      - `+ basic_info.upstream_job_info`
+  - **ShowPocketMolDesignJob**
+    - 响应参数变更
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreateClusteringJob**
+    - 请求参数变更
+      - `+ basic_info.upstream_job_info`
+  - **ShowClusteringJob**
+    - 响应参数变更
+      - `+ job_result.num_molecules`
+      - `+ job_result.success_count`
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **ShowNotebook**
+    - 响应参数变更
+      - `+ eihealth_project_id`
+      - `+ eihealth_project_name`
+      - `+ flavor.cpu_type`
+      - `+ flavor.gpu_type`
+  - **UpdateJob**
+    - 请求参数变更
+      - `+ tasks.outputs`
+      - `+ tasks.output_dir`
+  - **ShowJob**
+    - 响应参数变更
+      - `+ start_time`
+      - `+ tasks.outputs`
+  - **UpdateWorkflow**
+    - 请求参数变更
+      - `+ tasks.outputs`
+  - **ShowWorkflow**
+    - 响应参数变更
+      - `+ user_name`
+      - `+ tasks.outputs`
+  - **CreateTargetOptJob**
+    - 请求参数变更
+      - `+ basic_info.upstream_job_info`
+  - **ShowTargetOptJob**
+    - 响应参数变更
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreateDockingJob**
+    - 请求参数变更
+      - `+ basic_info.upstream_job_info`
+      - `+ receptors.docking_type`
+      - `+ receptors.reference_file`
+  - **ShowDockingJob**
+    - 响应参数变更
+      - `+ job_result.num_molecules`
+      - `+ job_result.success_count`
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+      - `+ receptors.docking_type`
+      - `+ receptors.reference_file`
+  - **ListUserNotebook**
+    - 响应参数变更
+      - `+ eihealth_project_id`
+      - `+ eihealth_project_name`
+      - `+ notebooks.eihealth_project_id`
+      - `+ notebooks.eihealth_project_name`
+      - `+ notebooks.flavor.cpu_type`
+      - `+ notebooks.flavor.gpu_type`
+  - **CreateNotebook**
+    - 请求参数变更
+      - `+ flavor.cpu_type`
+      - `+ flavor.gpu_type`
+  - **ListNotebook**
+    - 响应参数变更
+      - `+ eihealth_project_id`
+      - `+ eihealth_project_name`
+      - `+ notebooks.eihealth_project_id`
+      - `+ notebooks.eihealth_project_name`
+      - `+ notebooks.flavor.cpu_type`
+      - `+ notebooks.flavor.gpu_type`
+  - **CreateOptmJob**
+    - 请求参数变更
+      - `+ basic_info.upstream_job_info`
+      - `+ binding_site.engine`
+      - `+ binding_site.docking_type`
+  - **ShowOptmJob**
+    - 响应参数变更
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+      - `+ binding_site.engine`
+      - `+ binding_site.docking_type`
+  - **CreateGenJob**
+    - 请求参数变更
+      - `+ basic_info.upstream_job_info`
+      - `+ binding_sites.engine`
+      - `+ binding_sites.docking_type`
+  - **ShowGenJob**
+    - 响应参数变更
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+      - `+ binding_sites.engine`
+      - `+ binding_sites.docking_type`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ShowSlowLogDetail`、`ShowStarRocksSlowlogSensitiveStatus`、`UpdateSlowlogSensitiveStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `CreateSqlLimitTask`
+    - `ShowSqlLimitTask`
+    - `UpdateSqlLimitTask`
+    - `DeleteSqlLimitTask`
+    - `ListSqlLimitTask`
+    - `DeleteSharding`
+    - `StopFullSql`
+    - `ListEnhanceFullSqls`
+    - `ListFullSqlSwitches`
+    - `StartFullSql`
+    - `ShowAlarmHistoryRecord`
+    - `ListSqlTrace`
+    - `ShowShardDiskMessages`
+    - `ListDatabaseVersions`
+    - `BatchSetBackupPolicy`
+    - `ModifyHotfixes`
+    - `ShowExpansionParameters`
+    - `UpdateInstanceVersions`
+    - `ShowSqlPatch`
+    - `StopTransaction`
+    - `ListTransaction`
+    - `ShowAutoKillTransactionConfig`
+    - `ListWaitEvent`
+    - `ListAspInfos`
+    - `CollectAsp`
+    - `ShowAspStatus`
+    - `SwitchAspStatus`
+    - `UpdateExpansionParameters`
+    - `ShowRedistributionParameters`
+    - `ShowEpsRemainingQuota`
+    - `ListEnterpriseProjects`
+    - `ModifyAutoEnlargePolicy`
+    - `ShrinkCn`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteInstance**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowBalanceStatus**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ResetPwd**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **UpdateInstanceName**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **RestartInstance**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **DeleteManualBackup**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListRestoreTimes**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListDatastores**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **CreateDbUser**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **SetDbUserPwd**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ResizeInstanceFlavor**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **UpgradeInstanceVersion**
+    - 请求参数变更
+      - `* body: object<OpenGaussUpgradeRequest> -> object<UpgradeRequestBody>`
+  - **ListSessionStatistics**
+    - 响应参数变更
+      - `+ statistics_list`
+      - `- statistics`
+  - **ListHbaInfoHistory**
+    - 响应参数变更
+      - `+ hba_histories`
+      - `- hba_confs`
+  - **ListSlowSqls**
+    - 响应参数变更
+      - `* slow_sql_infos.calls: string -> int32`
+  - **SetRecyclePolicy**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **UpdateInstanceConfiguration**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowInstanceConfiguration**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListConfigurations**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ShowBackupPolicy**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **SetBackupPolicy**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **SetNewBackupPolicy**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **DeleteDatabaseSchema**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **CreateDatabaseSchemas**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **AllowDbPrivileges**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **AllowDbRolePrivileges**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListDatabases**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListDbUsers**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListDatabaseSchemas**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **SwitchShard**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListCnInfosBeforeReduce**
+    - 请求参数变更
+      - `- x-auth-token`
+      - `+ X-Language: enum value [zh-cn,en-us]`
+  - **DownloadBackup**
+    - 请求参数变更
+      - `- x-auth-token`
+    - 响应参数变更
+      - `* files.size: number -> int32`
+  - **ListEnhanceFullSqlStatistics**
+    - 响应参数变更
+      - `+ statistics.total_sql_time`
+      - `+ statistics.avg_sql_time`
+      - `+ statistics.total_db_time`
+      - `+ statistics.total_cpu_time`
+      - `+ statistics.avg_parse_time`
+      - `+ statistics.avg_plan_time`
+      - `+ statistics.total_data_io_time`
+      - `+ statistics.avg_n_returned_rows`
+      - `+ statistics.avg_n_tuples_fetched`
+      - `* statistics.start_time_stamp: string -> int64`
+      - `* statistics.end_time_stamp: string -> int64`
+  - **ModifyHbaConf**
+    - 请求参数变更
+      - `+ before_conf`
+      - `+ after_conf`
+      - `- before_confs`
+      - `- after_confs`
+  - **ListReadonlyNodes**
+    - 响应参数变更
+      - `+ nodes`
+      - `- instances`
+  - **ListSlowSqlDetails**
+    - 响应参数变更
+      - `+ slow_sql_details.db_name`
+      - `+ slow_sql_details.schema_name`
+      - `+ slow_sql_details.sql`
+  - **ListDatabaseVolumeSummary**
+    - 响应参数变更
+      - `- cn_components.role`
+      - `* cn_components: list<ComponentInfoResult> -> list<CnComponentInfoResult>`
+  - **ShowAlarmStatistics**
+    - 响应参数变更
+      - `* ring_percentage: number -> double`
+  - **ShowGlobalSlowSqlDetail**
+    - 响应参数变更
+      - `+ slow_sql_details.db_name`
+      - `+ slow_sql_details.schema_name`
+      - `+ slow_sql_details.sql`
+  - **ShowJobDetail**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListInstances**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **CreateInstance**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **RunInstanceAction**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **CreateManualBackup**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListBackups**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **CreateRestoreInstance**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListFlavors**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListStorageTypes**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **CreateDbRole**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListDatabaseRoles**
+    - 请求参数变更
+      - `- x-auth-token`
+  - **ListComponentInfos**
+    - 请求参数变更
+      - `- x-auth-token`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListResourceIds`
+    - `ShowVersion`
+    - `ListResourceInstanceTag`
+    - `BatchDeleteTags`
+    - `CreateCicdConfigurationCommand`
+    - `ListCicdImages`
+    - `ListRegistryImages`
+    - `CreateImageSynchronizeTask`
+    - `CreateManualImageScanTask`
+    - `ShowSecurityCheckHostReport`
+    - `ListSecurityCheckClusterReports`
+    - `ListDictionaries`
+    - `ListCceNodesLabel`
+    - `ShowDecoyPortAutoBind`
+    - `SwitchDecoyPortAutoBind`
+    - `ShowDecoyPortHostList`
+    - `ListImageApps`
+    - `ListImageScanPolicy`
+    - `ModifyImageScanPolicy`
+    - `ListVulAffectImageApps`
+    - `ListVulAffectImageContainers`
+    - `ShowRiskScore`
+    - `ShowSecurityCheckConfig`
+    - `UpdateSecurityCheckConfig`
+    - `StartManualSecurityCheck`
+    - `StopManualSecurityCheck`
+    - `ShowManualSecurityCheckStatus`
+    - `ListAgentVersion`
+    - `ListAlarmConfig`
+    - `UpdateAlarmConfig`
+    - `ShowScriptFile`
+    - `ShowSwitchesStatus`
+    - `ChangeSwitchesStatus`
+    - `ListSystemConfigs`
+    - `ShowAccountTop`
+    - `ShowAutoLaunchTop`
+    - `ShowJarPackageTop`
+    - `ShowKernelModuleTop`
+    - `ShowPortTop`
+    - `ShowPorcessTop`
+    - `ShowSoftwareTop`
+    - `ShowWebAppAndServiceTop`
+    - `ShowWebFrameworkTop`
+    - `ExportBaselineSecurityCheckReport`
+    - `ExportSecurityCheckReport`
+    - `ShowWebSiteTop`
+    - `ShowMonthlyOperaReportNotifyInfo`
+    - `ChangeMonthlyOperationReportTipStatus`
+    - `ShowMonthlyOperationReportDetail`
+    - `ListMonthlyOperationReports`
+    - `ShowWelfareAreaInfo`
+    - `ShowAgentStatistics`
+    - `ShowHotInformation`
+    - `ShowProtectStatistics`
+    - `ListSecurityRisk`
+    - `UploadReportLogo`
+    - `ListHostsRisk`
+    - `ShowHostsStatistics`
+    - `ListImageBasicImage`
+    - `ListImageFiles`
+    - `ShowImageFilesStat`
+    - `ListGeneralImageVulOperations`
+    - `ListGeneralImageVuls`
+    - `AssociateProtectionPolicy`
+    - `ChangeImageWhiteList`
+    - `ModifyLoginCommonIp`
+    - `ModifyLoginCommonLocation`
+    - `AddCicdConfiguration`
+    - `AddImageWhiteLists`
+    - `DeleteImageWhiteLists`
+    - `CancelHostsQuota`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowWebTamperRaspPath**
+    - 请求参数变更
+      - `- host_name`
+  - **ListApps**
+    - 响应参数变更
+      - `+ data_list.install_dir`
+  - **ListImageLocal**
+    - 请求参数变更
+      - `+ has_container`
+  - **ListAgentInstallScript**
+    - 请求参数变更
+      - `* os_type: optional -> required`
+  - **ListWtpProtectHost**
+    - 请求参数变更
+      - `+ asset_value`
+      - `+ rasp_status`
+    - 响应参数变更
+      - `+ data_list.group_id`
+      - `+ data_list.charging_mode`
+      - `+ data_list.resource_id`
+      - `+ data_list.abnormal_dir_list`
+      - `+ data_list.abnormal_reason`
+      - `+ data_list.backup_host_id`
+      - `+ data_list.interrupt_reason`
+      - `- data_list.ipv6`
+      - `- data_list.last_detect_time`
+      - `- data_list.scheduled_shutdown_status`
+      - `- data_list.remote_backbup_info`
+  - **ListHostRaspProtectHistoryInfo**
+    - 请求参数变更
+      - `- severity`
+      - `- protect_status`
+    - 响应参数变更
+      - `* total_num: int64 -> int32`
+  - **ListHostProtectHistoryInfo**
+    - 响应参数变更
+      - `- protect_status`
+      - `- host_name`
+      - `* total_num: int64 -> int32`
+      - `+ data_list.occur_time`
+      - `* data_list.process_id: string -> int32`
+  - **ListCceClusterDetectRisk**
+    - 请求参数变更
+      - `+ detect_type`
+  - **ListK8sPods**
+    - 响应参数变更
+      - `* pod_info_list.status: object -> string`
+  - **ShowMultiCloudClusterAuth**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+  - **BatchStartWebTamperProtection**
+    - 请求参数变更
+      - `- protect_dir_info.exclue_file_type`
+  - **ShowWebTamperHostPolicy**
+    - 响应参数变更
+      - `- privileged_process_info`
+      - `- protect_dir_info.exclue_file_type`
+      - `- protect_dir_info.protect_dir_list.exclude_file_path`
+      - `- timing_off_config_info.total_num`
+  - **UpdateWebTamperHostPolicy**
+    - 请求参数变更
+      - `- protect_dir_info.exclue_file_type`
+  - **ChangeAntivirusPolicy**
+    - 请求参数变更
+      - `+ scan_type`
+  - **CreateAntiVirusPolicy**
+    - 请求参数变更
+      - `+ scan_type`
+  - **ListSecurityEvents**
+    - 响应参数变更
+      - `+ data_list.operate_type`
+  - **ListAppWhitelistEvent**
+    - 请求参数变更
+      - `- private_ip`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainApiAclPolicy**
+    - 响应参数变更
+      - `+ api_acl_policy.allow_vpc_endpoints`
+  - **UpdateDomainApiAclPolicy**
+    - 响应参数变更
+      - `+ api_acl_policy.allow_vpc_endpoints`
+  - **KeystoneListMappings**
+    - 响应参数变更
+      - `+ mappings.rules.remote.regex`
+  - **KeystoneShowMapping**
+    - 响应参数变更
+      - `+ mapping.rules.remote.regex`
+  - **KeystoneCreateMapping**
+    - 请求参数变更
+      - `+ mapping.rules.remote.regex`
+    - 响应参数变更
+      - `+ mapping.rules.remote.regex`
+  - **KeystoneUpdateMapping**
+    - 请求参数变更
+      - `+ mapping.rules.remote.regex`
+    - 响应参数变更
+      - `+ mapping.rules.remote.regex`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`GetFeatureStatusV5`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Kafka
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`EnableDns`
+
+### HuaweiCloud SDK OBS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **SetBucketCustomedomain**
+    - 请求参数变更
+      - `+ Content-MD5`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`EnableDns`
+
+### HuaweiCloud SDK RocketMQ
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`EnableDns`
+  - **SendMessage**
+    - 请求参数变更
+      - `- property_list`
+      - `- broker_name`
+      - `- topic`
+      - `- body`
+      - `- msg_id`
+      - `- queue_id`
+      - `- queue_offset`
+
+### HuaweiCloud SDK VPN
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`CreateP2cVgw`、`DeleteP2cVgw`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `BatchUpdateGeoipRules`
+    - `UpdateBotMRuleDefenseStrategy`
+    - `BatchUpdateBotMRuleAction`
+    - `BatchDeleteCcRules`
+    - `CreateEventExportJob`
+    - `CreateAlertNoticeConfig`
+    - `ShowWebProtectionRule`
+    - `CreateQuickAccessDomain`
+    - `ListCcPolicyRules`
+    - `ListCustomPolicyRules`
+    - `ListWhiteblackipPolicyRules`
+    - `ListPrivacyPolicyRules`
+    - `ListGeoIpPolicyRules`
+    - `ListIgnorePolicyRules`
+    - `ListAntiTamperPolicyRules`
+    - `ListAntileakagePolicyRules`
+    - `ListIpReputationPolicyRules`
+    - `ListLlmGuardPolicyRules`
+    - `UpdateInstanceRoute`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateIpReputationRule**
+    - 响应参数变更
+      - `+ type`
+      - `+ tags`
+  - **CheckAgency**
+    - 响应参数变更
+      - `+ version`
+  - **ShowSecurityReportContent**
+    - 响应参数变更
+      - `+ create_time`
+      - `+ report_content_info`
+      - `- report_content_subscription_info`
+  - **ListBotMRules**
+    - 响应参数变更
+      - `+ behavior_detection.defense_strategy`
+      - `- behavior_detection.strategy`
+      - `+ traffic_detection_conditions.value_list_res`
+      - `- traffic_detection_conditions.value_list_ref`
+  - **ListCcRules**
+    - 响应参数变更
+      - `+ items.policyname`
+      - `+ items.priority`
+  - **ListHostRoute**
+    - 响应参数变更
+      - `+ body`
+
 # 3.1.168 2025-09-18
 
 ### HuaweiCloud SDK CBR

@@ -17,78 +17,78 @@ class ModifyHbaConfRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'before_confs': 'object',
-        'after_confs': 'object'
+        'before_conf': 'object',
+        'after_conf': 'object'
     }
 
     attribute_map = {
-        'before_confs': 'before_confs',
-        'after_confs': 'after_confs'
+        'before_conf': 'before_conf',
+        'after_conf': 'after_conf'
     }
 
-    def __init__(self, before_confs=None, after_confs=None):
+    def __init__(self, before_conf=None, after_conf=None):
         r"""ModifyHbaConfRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param before_confs: **参数解释**: 需要修改的hba配置信息。 **约束限制**: 不涉及。
-        :type before_confs: object
-        :param after_confs: **参数解释**: 修改后的hba配置信息。 **约束限制**: 不涉及。
-        :type after_confs: object
+        :param before_conf: **参数解释**: 需要修改的hba配置信息。 **约束限制**: 不涉及。
+        :type before_conf: object
+        :param after_conf: **参数解释**: 修改后的hba配置信息。 **约束限制**: 不涉及。
+        :type after_conf: object
         """
         
         
 
-        self._before_confs = None
-        self._after_confs = None
+        self._before_conf = None
+        self._after_conf = None
         self.discriminator = None
 
-        self.before_confs = before_confs
-        self.after_confs = after_confs
+        self.before_conf = before_conf
+        self.after_conf = after_conf
 
     @property
-    def before_confs(self):
-        r"""Gets the before_confs of this ModifyHbaConfRequestBody.
+    def before_conf(self):
+        r"""Gets the before_conf of this ModifyHbaConfRequestBody.
 
         **参数解释**: 需要修改的hba配置信息。 **约束限制**: 不涉及。
 
-        :return: The before_confs of this ModifyHbaConfRequestBody.
+        :return: The before_conf of this ModifyHbaConfRequestBody.
         :rtype: object
         """
-        return self._before_confs
+        return self._before_conf
 
-    @before_confs.setter
-    def before_confs(self, before_confs):
-        r"""Sets the before_confs of this ModifyHbaConfRequestBody.
+    @before_conf.setter
+    def before_conf(self, before_conf):
+        r"""Sets the before_conf of this ModifyHbaConfRequestBody.
 
         **参数解释**: 需要修改的hba配置信息。 **约束限制**: 不涉及。
 
-        :param before_confs: The before_confs of this ModifyHbaConfRequestBody.
-        :type before_confs: object
+        :param before_conf: The before_conf of this ModifyHbaConfRequestBody.
+        :type before_conf: object
         """
-        self._before_confs = before_confs
+        self._before_conf = before_conf
 
     @property
-    def after_confs(self):
-        r"""Gets the after_confs of this ModifyHbaConfRequestBody.
+    def after_conf(self):
+        r"""Gets the after_conf of this ModifyHbaConfRequestBody.
 
         **参数解释**: 修改后的hba配置信息。 **约束限制**: 不涉及。
 
-        :return: The after_confs of this ModifyHbaConfRequestBody.
+        :return: The after_conf of this ModifyHbaConfRequestBody.
         :rtype: object
         """
-        return self._after_confs
+        return self._after_conf
 
-    @after_confs.setter
-    def after_confs(self, after_confs):
-        r"""Sets the after_confs of this ModifyHbaConfRequestBody.
+    @after_conf.setter
+    def after_conf(self, after_conf):
+        r"""Sets the after_conf of this ModifyHbaConfRequestBody.
 
         **参数解释**: 修改后的hba配置信息。 **约束限制**: 不涉及。
 
-        :param after_confs: The after_confs of this ModifyHbaConfRequestBody.
-        :type after_confs: object
+        :param after_conf: The after_conf of this ModifyHbaConfRequestBody.
+        :type after_conf: object
         """
-        self._after_confs = after_confs
+        self._after_conf = after_conf
 
     def to_dict(self):
         """Returns the model properties as a dict"""

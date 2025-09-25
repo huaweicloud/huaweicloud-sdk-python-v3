@@ -21,7 +21,7 @@ class StartConnectivityTestReq:
     }
 
     attribute_map = {
-        'address_and_ports': 'addressAndPorts'
+        'address_and_ports': 'address_and_ports'
     }
 
     def __init__(self, address_and_ports=None):

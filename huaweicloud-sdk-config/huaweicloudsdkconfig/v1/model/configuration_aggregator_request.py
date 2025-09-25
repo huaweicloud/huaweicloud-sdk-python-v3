@@ -35,7 +35,7 @@ class ConfigurationAggregatorRequest:
 
         The model defined in huaweicloud sdk
 
-        :param aggregator_name: 资源聚合器名称。
+        :param aggregator_name: 资源聚合器名称
         :type aggregator_name: str
         :param aggregator_type: 聚合器类型（ACCOUNT | ORGANIZATION）。
         :type aggregator_type: str
@@ -64,7 +64,7 @@ class ConfigurationAggregatorRequest:
     def aggregator_name(self):
         r"""Gets the aggregator_name of this ConfigurationAggregatorRequest.
 
-        资源聚合器名称。
+        资源聚合器名称
 
         :return: The aggregator_name of this ConfigurationAggregatorRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class ConfigurationAggregatorRequest:
     def aggregator_name(self, aggregator_name):
         r"""Sets the aggregator_name of this ConfigurationAggregatorRequest.
 
-        资源聚合器名称。
+        资源聚合器名称
 
         :param aggregator_name: The aggregator_name of this ConfigurationAggregatorRequest.
         :type aggregator_name: str

@@ -31,7 +31,7 @@ class VerifyOrderRequest:
 
         The model defined in huaweicloud sdk
 
-        :param number: 工单号
+        :param number: 服务单号
         :type number: str
         :param body: Body of the VerifyOrderRequest
         :type body: :class:`huaweicloudsdkdcos.v1.VerifyOrderRequestBody`
@@ -51,7 +51,7 @@ class VerifyOrderRequest:
     def number(self):
         r"""Gets the number of this VerifyOrderRequest.
 
-        工单号
+        服务单号
 
         :return: The number of this VerifyOrderRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class VerifyOrderRequest:
     def number(self, number):
         r"""Sets the number of this VerifyOrderRequest.
 
-        工单号
+        服务单号
 
         :param number: The number of this VerifyOrderRequest.
         :type number: str

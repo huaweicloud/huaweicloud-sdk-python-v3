@@ -19,6 +19,7 @@ class GetAssetRsp:
     openapi_types = {
         'id': 'str',
         'category': 'str',
+        'domain': 'str',
         'name': 'str',
         'title': 'str',
         'labels': 'list[str]',
@@ -34,6 +35,7 @@ class GetAssetRsp:
     attribute_map = {
         'id': 'id',
         'category': 'category',
+        'domain': 'domain',
         'name': 'name',
         'title': 'title',
         'labels': 'labels',
@@ -46,7 +48,7 @@ class GetAssetRsp:
         'subscribes': 'subscribes'
     }
 
-    def __init__(self, id=None, category=None, name=None, title=None, labels=None, picture=None, vendor_id=None, versions=None, create_time=None, update_time=None, stars=None, subscribes=None):
+    def __init__(self, id=None, category=None, domain=None, name=None, title=None, labels=None, picture=None, vendor_id=None, versions=None, create_time=None, update_time=None, stars=None, subscribes=None):
         r"""GetAssetRsp
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class GetAssetRsp:
         :type id: str
         :param category: 类别
         :type category: str
+        :param domain: **参数解释**： 领域。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type domain: str
         :param name: 资产名
         :type name: str
         :param title: 资产展示名
@@ -81,6 +85,7 @@ class GetAssetRsp:
 
         self._id = None
         self._category = None
+        self._domain = None
         self._name = None
         self._title = None
         self._labels = None
@@ -97,6 +102,8 @@ class GetAssetRsp:
             self.id = id
         if category is not None:
             self.category = category
+        if domain is not None:
+            self.domain = domain
         if name is not None:
             self.name = name
         if title is not None:
@@ -161,6 +168,28 @@ class GetAssetRsp:
         :type category: str
         """
         self._category = category
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this GetAssetRsp.
+
+        **参数解释**： 领域。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The domain of this GetAssetRsp.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this GetAssetRsp.
+
+        **参数解释**： 领域。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param domain: The domain of this GetAssetRsp.
+        :type domain: str
+        """
+        self._domain = domain
 
     @property
     def name(self):

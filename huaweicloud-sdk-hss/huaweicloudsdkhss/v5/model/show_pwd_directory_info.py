@@ -39,7 +39,7 @@ class ShowPwdDirectoryInfo:
         :type tag: str
         :param sub_tag: 口令检查包含子标签，包含如下:   - weak_pwd : 经典弱口令检测   - pwd_complexity : 口令复杂度策略检
         :type sub_tag: str
-        :param checked: **参数解释** 该项是否被选中 **取值范围**  - true : 被选中 - false: 未被选中
+        :param checked: **参数解释** 该项是否被选中 **取值范围** - true : 被选中 - false: 未被选中
         :type checked: bool
         :param key: 表示目录中的唯一值:   - weak_pwd : 经典弱口令检测   - pwd_complexity : 口令复杂度策略检测
         :type key: str
@@ -110,7 +110,7 @@ class ShowPwdDirectoryInfo:
     def checked(self):
         r"""Gets the checked of this ShowPwdDirectoryInfo.
 
-        **参数解释** 该项是否被选中 **取值范围**  - true : 被选中 - false: 未被选中
+        **参数解释** 该项是否被选中 **取值范围** - true : 被选中 - false: 未被选中
 
         :return: The checked of this ShowPwdDirectoryInfo.
         :rtype: bool
@@ -121,7 +121,7 @@ class ShowPwdDirectoryInfo:
     def checked(self, checked):
         r"""Sets the checked of this ShowPwdDirectoryInfo.
 
-        **参数解释** 该项是否被选中 **取值范围**  - true : 被选中 - false: 未被选中
+        **参数解释** 该项是否被选中 **取值范围** - true : 被选中 - false: 未被选中
 
         :param checked: The checked of this ShowPwdDirectoryInfo.
         :type checked: bool

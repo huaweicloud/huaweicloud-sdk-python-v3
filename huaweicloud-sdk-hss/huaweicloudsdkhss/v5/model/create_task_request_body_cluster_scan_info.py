@@ -33,7 +33,7 @@ class CreateTaskRequestBodyClusterScanInfo:
 
         The model defined in huaweicloud sdk
 
-        :param scan_type_list: 扫描项类型
+        :param scan_type_list: **参数解释**: 扫描项类型列表 **约束限制**: 不涉及 **取值范围**: - cluster_vul：集群漏洞 - risk_assessment：风险评估 - benchmark：安全合规  **默认取值**: 不涉及 
         :type scan_type_list: list[str]
         :param range_type: 扫描范围类型，包含如下   - all_cluster：扫描所有符合扫描条件的集群   - specific_cluster: 扫描指定集群
         :type range_type: str
@@ -57,7 +57,7 @@ class CreateTaskRequestBodyClusterScanInfo:
     def scan_type_list(self):
         r"""Gets the scan_type_list of this CreateTaskRequestBodyClusterScanInfo.
 
-        扫描项类型
+        **参数解释**: 扫描项类型列表 **约束限制**: 不涉及 **取值范围**: - cluster_vul：集群漏洞 - risk_assessment：风险评估 - benchmark：安全合规  **默认取值**: 不涉及 
 
         :return: The scan_type_list of this CreateTaskRequestBodyClusterScanInfo.
         :rtype: list[str]
@@ -68,7 +68,7 @@ class CreateTaskRequestBodyClusterScanInfo:
     def scan_type_list(self, scan_type_list):
         r"""Sets the scan_type_list of this CreateTaskRequestBodyClusterScanInfo.
 
-        扫描项类型
+        **参数解释**: 扫描项类型列表 **约束限制**: 不涉及 **取值范围**: - cluster_vul：集群漏洞 - risk_assessment：风险评估 - benchmark：安全合规  **默认取值**: 不涉及 
 
         :param scan_type_list: The scan_type_list of this CreateTaskRequestBodyClusterScanInfo.
         :type scan_type_list: list[str]

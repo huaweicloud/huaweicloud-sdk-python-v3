@@ -31,9 +31,9 @@ class WebTamperPrivilegedProcessRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param privileged_process_path_list: 特权进程路径集合
+        :param privileged_process_path_list: **参数解释**: 特权进程文件路径列表 **约束限制** : 不涉及 **取值范围**: 最少0条，最多10条 **默认取值** : 不涉及 
         :type privileged_process_path_list: list[str]
-        :param privileged_child_status: 特权进程子进程可信状态
+        :param privileged_child_status: **参数解释**: 特权进程子进程可信状态 **约束限制** : 不涉及 **取值范围**: - True ：开启特权进程子进程可信。 - False ：关闭特权进程子进程可信。  **默认取值** : False 
         :type privileged_child_status: bool
         """
         
@@ -52,7 +52,7 @@ class WebTamperPrivilegedProcessRequestInfo:
     def privileged_process_path_list(self):
         r"""Gets the privileged_process_path_list of this WebTamperPrivilegedProcessRequestInfo.
 
-        特权进程路径集合
+        **参数解释**: 特权进程文件路径列表 **约束限制** : 不涉及 **取值范围**: 最少0条，最多10条 **默认取值** : 不涉及 
 
         :return: The privileged_process_path_list of this WebTamperPrivilegedProcessRequestInfo.
         :rtype: list[str]
@@ -63,7 +63,7 @@ class WebTamperPrivilegedProcessRequestInfo:
     def privileged_process_path_list(self, privileged_process_path_list):
         r"""Sets the privileged_process_path_list of this WebTamperPrivilegedProcessRequestInfo.
 
-        特权进程路径集合
+        **参数解释**: 特权进程文件路径列表 **约束限制** : 不涉及 **取值范围**: 最少0条，最多10条 **默认取值** : 不涉及 
 
         :param privileged_process_path_list: The privileged_process_path_list of this WebTamperPrivilegedProcessRequestInfo.
         :type privileged_process_path_list: list[str]
@@ -74,7 +74,7 @@ class WebTamperPrivilegedProcessRequestInfo:
     def privileged_child_status(self):
         r"""Gets the privileged_child_status of this WebTamperPrivilegedProcessRequestInfo.
 
-        特权进程子进程可信状态
+        **参数解释**: 特权进程子进程可信状态 **约束限制** : 不涉及 **取值范围**: - True ：开启特权进程子进程可信。 - False ：关闭特权进程子进程可信。  **默认取值** : False 
 
         :return: The privileged_child_status of this WebTamperPrivilegedProcessRequestInfo.
         :rtype: bool
@@ -85,7 +85,7 @@ class WebTamperPrivilegedProcessRequestInfo:
     def privileged_child_status(self, privileged_child_status):
         r"""Sets the privileged_child_status of this WebTamperPrivilegedProcessRequestInfo.
 
-        特权进程子进程可信状态
+        **参数解释**: 特权进程子进程可信状态 **约束限制** : 不涉及 **取值范围**: - True ：开启特权进程子进程可信。 - False ：关闭特权进程子进程可信。  **默认取值** : False 
 
         :param privileged_child_status: The privileged_child_status of this WebTamperPrivilegedProcessRequestInfo.
         :type privileged_child_status: bool

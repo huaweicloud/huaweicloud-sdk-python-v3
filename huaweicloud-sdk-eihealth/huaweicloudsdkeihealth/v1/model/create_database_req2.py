@@ -66,7 +66,8 @@ class CreateDatabaseReq2:
         self.name = name
         if description is not None:
             self.description = description
-        self.css_id = css_id
+        if css_id is not None:
+            self.css_id = css_id
         self.file = file
         self.columns = columns
         if shareable is not None:

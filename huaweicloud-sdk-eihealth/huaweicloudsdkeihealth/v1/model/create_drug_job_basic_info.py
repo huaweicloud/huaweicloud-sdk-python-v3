@@ -18,15 +18,17 @@ class CreateDrugJobBasicInfo:
 
     openapi_types = {
         'name': 'str',
-        'labels': 'list[str]'
+        'labels': 'list[str]',
+        'upstream_job_info': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'labels': 'labels'
+        'labels': 'labels',
+        'upstream_job_info': 'upstream_job_info'
     }
 
-    def __init__(self, name=None, labels=None):
+    def __init__(self, name=None, labels=None, upstream_job_info=None):
         r"""CreateDrugJobBasicInfo
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class CreateDrugJobBasicInfo:
         :type name: str
         :param labels: 标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者结尾。
         :type labels: list[str]
+        :param upstream_job_info: **参数解释**： 上游作业信息。 **约束限制**： 不涉及 **取值范围**： 长度为[1-10240]个字符。 **默认取值**： 不涉及 
+        :type upstream_job_info: str
         """
         
         
 
         self._name = None
         self._labels = None
+        self._upstream_job_info = None
         self.discriminator = None
 
         self.name = name
         if labels is not None:
             self.labels = labels
+        if upstream_job_info is not None:
+            self.upstream_job_info = upstream_job_info
 
     @property
     def name(self):
@@ -90,6 +97,28 @@ class CreateDrugJobBasicInfo:
         :type labels: list[str]
         """
         self._labels = labels
+
+    @property
+    def upstream_job_info(self):
+        r"""Gets the upstream_job_info of this CreateDrugJobBasicInfo.
+
+        **参数解释**： 上游作业信息。 **约束限制**： 不涉及 **取值范围**： 长度为[1-10240]个字符。 **默认取值**： 不涉及 
+
+        :return: The upstream_job_info of this CreateDrugJobBasicInfo.
+        :rtype: str
+        """
+        return self._upstream_job_info
+
+    @upstream_job_info.setter
+    def upstream_job_info(self, upstream_job_info):
+        r"""Sets the upstream_job_info of this CreateDrugJobBasicInfo.
+
+        **参数解释**： 上游作业信息。 **约束限制**： 不涉及 **取值范围**： 长度为[1-10240]个字符。 **默认取值**： 不涉及 
+
+        :param upstream_job_info: The upstream_job_info of this CreateDrugJobBasicInfo.
+        :type upstream_job_info: str
+        """
+        self._upstream_job_info = upstream_job_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

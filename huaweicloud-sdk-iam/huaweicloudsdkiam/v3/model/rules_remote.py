@@ -19,16 +19,18 @@ class RulesRemote:
     openapi_types = {
         'type': 'str',
         'any_one_of': 'list[str]',
-        'not_any_of': 'list[str]'
+        'not_any_of': 'list[str]',
+        'regex': 'bool'
     }
 
     attribute_map = {
         'type': 'type',
         'any_one_of': 'any_one_of',
-        'not_any_of': 'not_any_of'
+        'not_any_of': 'not_any_of',
+        'regex': 'regex'
     }
 
-    def __init__(self, type=None, any_one_of=None, not_any_of=None):
+    def __init__(self, type=None, any_one_of=None, not_any_of=None, regex=None):
         r"""RulesRemote
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class RulesRemote:
         :type any_one_of: list[str]
         :param not_any_of: 输入属性值中不包含指定值才生效，并返回布尔值，返回值不能用于local块中的占位符。在同一个remote数组元素中，any_one_of与not_any_of互斥，两者至多填写一个，不能同时填写。
         :type not_any_of: list[str]
+        :param regex: 同级的any_one_of或not_any_of的值是否支持正则表达式，true：支持正则表达式，false：不支持正则表达式，默认为false。
+        :type regex: bool
         """
         
         
@@ -46,6 +50,7 @@ class RulesRemote:
         self._type = None
         self._any_one_of = None
         self._not_any_of = None
+        self._regex = None
         self.discriminator = None
 
         self.type = type
@@ -53,6 +58,8 @@ class RulesRemote:
             self.any_one_of = any_one_of
         if not_any_of is not None:
             self.not_any_of = not_any_of
+        if regex is not None:
+            self.regex = regex
 
     @property
     def type(self):
@@ -119,6 +126,28 @@ class RulesRemote:
         :type not_any_of: list[str]
         """
         self._not_any_of = not_any_of
+
+    @property
+    def regex(self):
+        r"""Gets the regex of this RulesRemote.
+
+        同级的any_one_of或not_any_of的值是否支持正则表达式，true：支持正则表达式，false：不支持正则表达式，默认为false。
+
+        :return: The regex of this RulesRemote.
+        :rtype: bool
+        """
+        return self._regex
+
+    @regex.setter
+    def regex(self, regex):
+        r"""Sets the regex of this RulesRemote.
+
+        同级的any_one_of或not_any_of的值是否支持正则表达式，true：支持正则表达式，false：不支持正则表达式，默认为false。
+
+        :param regex: The regex of this RulesRemote.
+        :type regex: bool
+        """
+        self._regex = regex
 
     def to_dict(self):
         """Returns the model properties as a dict"""

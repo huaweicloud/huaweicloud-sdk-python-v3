@@ -49,7 +49,7 @@ class AgentPolicyInfo:
         :type feature_name: str
         :param policy_category: 策略类别
         :type policy_category: str
-        :param policy_status: 策略应用状态:not_applied-未应用、protection_degradation_not_applied-防护降级未应用、processing-应用中、applied-已应用
+        :param policy_status: **参数解释**: 策略应用状态 **约束限制**: 不涉及 **取值范围**: Agent的状态分为两类： - not_applied：未应用 - protection_degradation_not_applied：防护降级未应用 - processing：应用中 - applied：已应用 **默认取值**: 不涉及
         :type policy_status: str
         """
         
@@ -190,7 +190,7 @@ class AgentPolicyInfo:
     def policy_status(self):
         r"""Gets the policy_status of this AgentPolicyInfo.
 
-        策略应用状态:not_applied-未应用、protection_degradation_not_applied-防护降级未应用、processing-应用中、applied-已应用
+        **参数解释**: 策略应用状态 **约束限制**: 不涉及 **取值范围**: Agent的状态分为两类： - not_applied：未应用 - protection_degradation_not_applied：防护降级未应用 - processing：应用中 - applied：已应用 **默认取值**: 不涉及
 
         :return: The policy_status of this AgentPolicyInfo.
         :rtype: str
@@ -201,7 +201,7 @@ class AgentPolicyInfo:
     def policy_status(self, policy_status):
         r"""Sets the policy_status of this AgentPolicyInfo.
 
-        策略应用状态:not_applied-未应用、protection_degradation_not_applied-防护降级未应用、processing-应用中、applied-已应用
+        **参数解释**: 策略应用状态 **约束限制**: 不涉及 **取值范围**: Agent的状态分为两类： - not_applied：未应用 - protection_degradation_not_applied：防护降级未应用 - processing：应用中 - applied：已应用 **默认取值**: 不涉及
 
         :param policy_status: The policy_status of this AgentPolicyInfo.
         :type policy_status: str

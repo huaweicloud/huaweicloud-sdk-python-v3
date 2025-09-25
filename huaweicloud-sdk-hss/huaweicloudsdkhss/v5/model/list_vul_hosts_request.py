@@ -63,7 +63,7 @@ class ListVulHostsRequest:
         :type offset: int
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_ip: **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_ip: str
         :param vul_id: **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符范围0-64 **默认取值**: 不涉及 
         :type vul_id: str
@@ -222,7 +222,7 @@ class ListVulHostsRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListVulHostsRequest.
 
-        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListVulHostsRequest.
         :rtype: str
@@ -233,7 +233,7 @@ class ListVulHostsRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListVulHostsRequest.
 
-        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListVulHostsRequest.
         :type host_ip: str

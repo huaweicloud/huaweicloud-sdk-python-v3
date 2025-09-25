@@ -31,9 +31,9 @@ class ShowLimitTaskNodeOption:
 
         The model defined in huaweicloud sdk
 
-        :param node_id: 节点id。
+        :param node_id: **参数解释**: 节点ID。 **取值范围**: 不涉及。
         :type node_id: str
-        :param sql_id: 该节点执行的sql语句id。
+        :param sql_id: **参数解释**: 该节点执行的sql语句ID。 **取值范围**: 不涉及。
         :type sql_id: str
         """
         
@@ -50,7 +50,7 @@ class ShowLimitTaskNodeOption:
     def node_id(self):
         r"""Gets the node_id of this ShowLimitTaskNodeOption.
 
-        节点id。
+        **参数解释**: 节点ID。 **取值范围**: 不涉及。
 
         :return: The node_id of this ShowLimitTaskNodeOption.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowLimitTaskNodeOption:
     def node_id(self, node_id):
         r"""Sets the node_id of this ShowLimitTaskNodeOption.
 
-        节点id。
+        **参数解释**: 节点ID。 **取值范围**: 不涉及。
 
         :param node_id: The node_id of this ShowLimitTaskNodeOption.
         :type node_id: str
@@ -72,7 +72,7 @@ class ShowLimitTaskNodeOption:
     def sql_id(self):
         r"""Gets the sql_id of this ShowLimitTaskNodeOption.
 
-        该节点执行的sql语句id。
+        **参数解释**: 该节点执行的sql语句ID。 **取值范围**: 不涉及。
 
         :return: The sql_id of this ShowLimitTaskNodeOption.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowLimitTaskNodeOption:
     def sql_id(self, sql_id):
         r"""Sets the sql_id of this ShowLimitTaskNodeOption.
 
-        该节点执行的sql语句id。
+        **参数解释**: 该节点执行的sql语句ID。 **取值范围**: 不涉及。
 
         :param sql_id: The sql_id of this ShowLimitTaskNodeOption.
         :type sql_id: str

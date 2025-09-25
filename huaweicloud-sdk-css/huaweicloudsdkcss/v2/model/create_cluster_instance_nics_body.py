@@ -19,16 +19,18 @@ class CreateClusterInstanceNicsBody:
     openapi_types = {
         'vpc_id': 'str',
         'net_id': 'str',
-        'security_group_id': 'str'
+        'security_group_id': 'str',
+        'ips': 'list[str]'
     }
 
     attribute_map = {
         'vpc_id': 'vpcId',
         'net_id': 'netId',
-        'security_group_id': 'securityGroupId'
+        'security_group_id': 'securityGroupId',
+        'ips': 'ips'
     }
 
-    def __init__(self, vpc_id=None, net_id=None, security_group_id=None):
+    def __init__(self, vpc_id=None, net_id=None, security_group_id=None, ips=None):
         r"""CreateClusterInstanceNicsBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class CreateClusterInstanceNicsBody:
         :type net_id: str
         :param security_group_id: 安全组ID。
         :type security_group_id: str
+        :param ips: 节点IP信息，在指定IP创建集群时配置。
+        :type ips: list[str]
         """
         
         
@@ -46,11 +50,14 @@ class CreateClusterInstanceNicsBody:
         self._vpc_id = None
         self._net_id = None
         self._security_group_id = None
+        self._ips = None
         self.discriminator = None
 
         self.vpc_id = vpc_id
         self.net_id = net_id
         self.security_group_id = security_group_id
+        if ips is not None:
+            self.ips = ips
 
     @property
     def vpc_id(self):
@@ -117,6 +124,28 @@ class CreateClusterInstanceNicsBody:
         :type security_group_id: str
         """
         self._security_group_id = security_group_id
+
+    @property
+    def ips(self):
+        r"""Gets the ips of this CreateClusterInstanceNicsBody.
+
+        节点IP信息，在指定IP创建集群时配置。
+
+        :return: The ips of this CreateClusterInstanceNicsBody.
+        :rtype: list[str]
+        """
+        return self._ips
+
+    @ips.setter
+    def ips(self, ips):
+        r"""Sets the ips of this CreateClusterInstanceNicsBody.
+
+        节点IP信息，在指定IP创建集群时配置。
+
+        :param ips: The ips of this CreateClusterInstanceNicsBody.
+        :type ips: list[str]
+        """
+        self._ips = ips
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,29 +18,57 @@ class CreateVaultResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'vault': 'VaultCreateResource'
+        'vault': 'VaultCreateResource',
+        'orders': 'list[CbcOrderResult]',
+        'ret_code': 'int',
+        'err_text': 'str',
+        'error_code': 'str'
     }
 
     attribute_map = {
-        'vault': 'vault'
+        'vault': 'vault',
+        'orders': 'orders',
+        'ret_code': 'retCode',
+        'err_text': 'errText',
+        'error_code': 'error_code'
     }
 
-    def __init__(self, vault=None):
+    def __init__(self, vault=None, orders=None, ret_code=None, err_text=None, error_code=None):
         r"""CreateVaultResponse
 
         The model defined in huaweicloud sdk
 
         :param vault: 
         :type vault: :class:`huaweicloudsdkcbr.v1.VaultCreateResource`
+        :param orders: 包周期创建订单信息（仅包周期创建时显示）
+        :type orders: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
+        :param ret_code: 包周期订购结果（仅包周期创建时显示）
+        :type ret_code: int
+        :param err_text: 包周期创建错误信息（仅包周期创建时显示）
+        :type err_text: str
+        :param error_code: 包周期创建错误码（仅包周期创建时显示）
+        :type error_code: str
         """
         
         super(CreateVaultResponse, self).__init__()
 
         self._vault = None
+        self._orders = None
+        self._ret_code = None
+        self._err_text = None
+        self._error_code = None
         self.discriminator = None
 
         if vault is not None:
             self.vault = vault
+        if orders is not None:
+            self.orders = orders
+        if ret_code is not None:
+            self.ret_code = ret_code
+        if err_text is not None:
+            self.err_text = err_text
+        if error_code is not None:
+            self.error_code = error_code
 
     @property
     def vault(self):
@@ -59,6 +87,94 @@ class CreateVaultResponse(SdkResponse):
         :type vault: :class:`huaweicloudsdkcbr.v1.VaultCreateResource`
         """
         self._vault = vault
+
+    @property
+    def orders(self):
+        r"""Gets the orders of this CreateVaultResponse.
+
+        包周期创建订单信息（仅包周期创建时显示）
+
+        :return: The orders of this CreateVaultResponse.
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
+        """
+        return self._orders
+
+    @orders.setter
+    def orders(self, orders):
+        r"""Sets the orders of this CreateVaultResponse.
+
+        包周期创建订单信息（仅包周期创建时显示）
+
+        :param orders: The orders of this CreateVaultResponse.
+        :type orders: list[:class:`huaweicloudsdkcbr.v1.CbcOrderResult`]
+        """
+        self._orders = orders
+
+    @property
+    def ret_code(self):
+        r"""Gets the ret_code of this CreateVaultResponse.
+
+        包周期订购结果（仅包周期创建时显示）
+
+        :return: The ret_code of this CreateVaultResponse.
+        :rtype: int
+        """
+        return self._ret_code
+
+    @ret_code.setter
+    def ret_code(self, ret_code):
+        r"""Sets the ret_code of this CreateVaultResponse.
+
+        包周期订购结果（仅包周期创建时显示）
+
+        :param ret_code: The ret_code of this CreateVaultResponse.
+        :type ret_code: int
+        """
+        self._ret_code = ret_code
+
+    @property
+    def err_text(self):
+        r"""Gets the err_text of this CreateVaultResponse.
+
+        包周期创建错误信息（仅包周期创建时显示）
+
+        :return: The err_text of this CreateVaultResponse.
+        :rtype: str
+        """
+        return self._err_text
+
+    @err_text.setter
+    def err_text(self, err_text):
+        r"""Sets the err_text of this CreateVaultResponse.
+
+        包周期创建错误信息（仅包周期创建时显示）
+
+        :param err_text: The err_text of this CreateVaultResponse.
+        :type err_text: str
+        """
+        self._err_text = err_text
+
+    @property
+    def error_code(self):
+        r"""Gets the error_code of this CreateVaultResponse.
+
+        包周期创建错误码（仅包周期创建时显示）
+
+        :return: The error_code of this CreateVaultResponse.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        r"""Sets the error_code of this CreateVaultResponse.
+
+        包周期创建错误码（仅包周期创建时显示）
+
+        :param error_code: The error_code of this CreateVaultResponse.
+        :type error_code: str
+        """
+        self._error_code = error_code
 
     def to_dict(self):
         """Returns the model properties as a dict"""

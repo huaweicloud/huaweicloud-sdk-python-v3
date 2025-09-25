@@ -73,9 +73,12 @@ class StartLogsReq:
         self._target_cluster_id = None
         self.discriminator = None
 
-        self.agency = agency
-        self.log_base_path = log_base_path
-        self.log_bucket = log_bucket
+        if agency is not None:
+            self.agency = agency
+        if log_base_path is not None:
+            self.log_base_path = log_base_path
+        if log_bucket is not None:
+            self.log_bucket = log_bucket
         if auto_enable is not None:
             self.auto_enable = auto_enable
         if period is not None:

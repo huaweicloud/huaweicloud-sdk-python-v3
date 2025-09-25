@@ -57,7 +57,7 @@ class ListPortsRequest:
         :type port: int
         :param type: **参数解释**: 端口类型：目前包括TCP，UDP两种 **约束限制**: 不涉及 **取值范围**: - TCP: TCP类型的端口 - UDP: UDP类型的端口 **默认取值**: 不涉及 
         :type type: str
-        :param status: **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - unknow: 无已知危险的端口 **默认取值**: 不涉及 
+        :param status: **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - unknow: 无已知危险的端口  **默认取值**: 不涉及 
         :type status: str
         :param enterprise_project_id: **参数解释**: 主机所属的企业项目ID。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。 **约束限制**: 开通企业项目功能后才需要配置企业项目。 **取值范围**: 字符长度0-256位 **默认取值**: 0 
         :type enterprise_project_id: str
@@ -217,7 +217,7 @@ class ListPortsRequest:
     def status(self):
         r"""Gets the status of this ListPortsRequest.
 
-        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - unknow: 无已知危险的端口 **默认取值**: 不涉及 
+        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - unknow: 无已知危险的端口  **默认取值**: 不涉及 
 
         :return: The status of this ListPortsRequest.
         :rtype: str
@@ -228,7 +228,7 @@ class ListPortsRequest:
     def status(self, status):
         r"""Sets the status of this ListPortsRequest.
 
-        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - unknow: 无已知危险的端口 **默认取值**: 不涉及 
+        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - unknow: 无已知危险的端口  **默认取值**: 不涉及 
 
         :param status: The status of this ListPortsRequest.
         :type status: str

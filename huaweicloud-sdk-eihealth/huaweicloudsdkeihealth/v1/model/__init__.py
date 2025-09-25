@@ -9,6 +9,8 @@ from huaweicloudsdkeihealth.v1.model.add_drug_database_file_request import AddDr
 from huaweicloudsdkeihealth.v1.model.add_drug_database_file_response import AddDrugDatabaseFileResponse
 from huaweicloudsdkeihealth.v1.model.admet_request import AdmetRequest
 from huaweicloudsdkeihealth.v1.model.agency_dto import AgencyDto
+from huaweicloudsdkeihealth.v1.model.agent_role import AgentRole
+from huaweicloudsdkeihealth.v1.model.agent_type import AgentType
 from huaweicloudsdkeihealth.v1.model.app_dto import AppDto
 from huaweicloudsdkeihealth.v1.model.app_filter_dto import AppFilterDto
 from huaweicloudsdkeihealth.v1.model.app_info_dto import AppInfoDto
@@ -17,6 +19,8 @@ from huaweicloudsdkeihealth.v1.model.app_list_dto import AppListDto
 from huaweicloudsdkeihealth.v1.model.app_output_parameter_dto import AppOutputParameterDto
 from huaweicloudsdkeihealth.v1.model.app_req import AppReq
 from huaweicloudsdkeihealth.v1.model.app_src_req import AppSrcReq
+from huaweicloudsdkeihealth.v1.model.asset_resource_rsp import AssetResourceRsp
+from huaweicloudsdkeihealth.v1.model.asset_resource_status_enum import AssetResourceStatusEnum
 from huaweicloudsdkeihealth.v1.model.base_model import BaseModel
 from huaweicloudsdkeihealth.v1.model.base_model_dto import BaseModelDto
 from huaweicloudsdkeihealth.v1.model.basic_drug_model import BasicDrugModel
@@ -55,6 +59,10 @@ from huaweicloudsdkeihealth.v1.model.cce_cluster_rsp import CceClusterRsp
 from huaweicloudsdkeihealth.v1.model.change_password_req import ChangePasswordReq
 from huaweicloudsdkeihealth.v1.model.change_password_request import ChangePasswordRequest
 from huaweicloudsdkeihealth.v1.model.change_password_response import ChangePasswordResponse
+from huaweicloudsdkeihealth.v1.model.chat_addition import ChatAddition
+from huaweicloudsdkeihealth.v1.model.chat_message import ChatMessage
+from huaweicloudsdkeihealth.v1.model.chat_message_rsp import ChatMessageRsp
+from huaweicloudsdkeihealth.v1.model.chat_rsp import ChatRsp
 from huaweicloudsdkeihealth.v1.model.check_drug_ligand_difference_request import CheckDrugLigandDifferenceRequest
 from huaweicloudsdkeihealth.v1.model.check_drug_ligand_difference_response import CheckDrugLigandDifferenceResponse
 from huaweicloudsdkeihealth.v1.model.check_ligand_difference_method import CheckLigandDifferenceMethod
@@ -76,6 +84,9 @@ from huaweicloudsdkeihealth.v1.model.create_admet_job_request import CreateAdmet
 from huaweicloudsdkeihealth.v1.model.create_admet_job_response import CreateAdmetJobResponse
 from huaweicloudsdkeihealth.v1.model.create_app_request import CreateAppRequest
 from huaweicloudsdkeihealth.v1.model.create_app_response import CreateAppResponse
+from huaweicloudsdkeihealth.v1.model.create_asset_resource_req import CreateAssetResourceReq
+from huaweicloudsdkeihealth.v1.model.create_asset_resource_request import CreateAssetResourceRequest
+from huaweicloudsdkeihealth.v1.model.create_asset_resource_response import CreateAssetResourceResponse
 from huaweicloudsdkeihealth.v1.model.create_cluster_job_req import CreateClusterJobReq
 from huaweicloudsdkeihealth.v1.model.create_cluster_job_request import CreateClusterJobRequest
 from huaweicloudsdkeihealth.v1.model.create_cluster_job_response import CreateClusterJobResponse
@@ -139,6 +150,9 @@ from huaweicloudsdkeihealth.v1.model.create_ligand_sdf_req import CreateLigandSd
 from huaweicloudsdkeihealth.v1.model.create_ligand_similarity_graph_ligand_dto import CreateLigandSimilarityGraphLigandDto
 from huaweicloudsdkeihealth.v1.model.create_ligand_similarity_graph_task_req import CreateLigandSimilarityGraphTaskReq
 from huaweicloudsdkeihealth.v1.model.create_ligand_svg_req import CreateLigandSvgReq
+from huaweicloudsdkeihealth.v1.model.create_message_additions_req import CreateMessageAdditionsReq
+from huaweicloudsdkeihealth.v1.model.create_message_additions_request import CreateMessageAdditionsRequest
+from huaweicloudsdkeihealth.v1.model.create_message_additions_response import CreateMessageAdditionsResponse
 from huaweicloudsdkeihealth.v1.model.create_model_req import CreateModelReq
 from huaweicloudsdkeihealth.v1.model.create_mol_batch_download_task_req import CreateMolBatchDownloadTaskReq
 from huaweicloudsdkeihealth.v1.model.create_mol_batch_download_task_request import CreateMolBatchDownloadTaskRequest
@@ -183,6 +197,10 @@ from huaweicloudsdkeihealth.v1.model.database_file import DatabaseFile
 from huaweicloudsdkeihealth.v1.model.database_file_source import DatabaseFileSource
 from huaweicloudsdkeihealth.v1.model.delete_app_request import DeleteAppRequest
 from huaweicloudsdkeihealth.v1.model.delete_app_response import DeleteAppResponse
+from huaweicloudsdkeihealth.v1.model.delete_asset_resource_request import DeleteAssetResourceRequest
+from huaweicloudsdkeihealth.v1.model.delete_asset_resource_response import DeleteAssetResourceResponse
+from huaweicloudsdkeihealth.v1.model.delete_chat_request import DeleteChatRequest
+from huaweicloudsdkeihealth.v1.model.delete_chat_response import DeleteChatResponse
 from huaweicloudsdkeihealth.v1.model.delete_computing_cluster_request import DeleteComputingClusterRequest
 from huaweicloudsdkeihealth.v1.model.delete_computing_cluster_response import DeleteComputingClusterResponse
 from huaweicloudsdkeihealth.v1.model.delete_css_cluster_request import DeleteCssClusterRequest
@@ -310,6 +328,8 @@ from huaweicloudsdkeihealth.v1.model.ligand_structure_dto import LigandStructure
 from huaweicloudsdkeihealth.v1.model.list_app_request import ListAppRequest
 from huaweicloudsdkeihealth.v1.model.list_app_response import ListAppResponse
 from huaweicloudsdkeihealth.v1.model.list_asset_request import ListAssetRequest
+from huaweicloudsdkeihealth.v1.model.list_asset_resource_request import ListAssetResourceRequest
+from huaweicloudsdkeihealth.v1.model.list_asset_resource_response import ListAssetResourceResponse
 from huaweicloudsdkeihealth.v1.model.list_asset_response import ListAssetResponse
 from huaweicloudsdkeihealth.v1.model.list_base_model_request import ListBaseModelRequest
 from huaweicloudsdkeihealth.v1.model.list_base_model_response import ListBaseModelResponse
@@ -317,6 +337,8 @@ from huaweicloudsdkeihealth.v1.model.list_bucket_request import ListBucketReques
 from huaweicloudsdkeihealth.v1.model.list_bucket_response import ListBucketResponse
 from huaweicloudsdkeihealth.v1.model.list_cce_cluster_request import ListCceClusterRequest
 from huaweicloudsdkeihealth.v1.model.list_cce_cluster_response import ListCceClusterResponse
+from huaweicloudsdkeihealth.v1.model.list_chat_request import ListChatRequest
+from huaweicloudsdkeihealth.v1.model.list_chat_response import ListChatResponse
 from huaweicloudsdkeihealth.v1.model.list_cluster_all_node_label_request import ListClusterAllNodeLabelRequest
 from huaweicloudsdkeihealth.v1.model.list_cluster_all_node_label_response import ListClusterAllNodeLabelResponse
 from huaweicloudsdkeihealth.v1.model.list_cluster_install_step_request import ListClusterInstallStepRequest
@@ -334,8 +356,8 @@ from huaweicloudsdkeihealth.v1.model.list_drug_database_response import ListDrug
 from huaweicloudsdkeihealth.v1.model.list_drug_job_request import ListDrugJobRequest
 from huaweicloudsdkeihealth.v1.model.list_drug_job_response import ListDrugJobResponse
 from huaweicloudsdkeihealth.v1.model.list_drug_model_request import ListDrugModelRequest
-from huaweicloudsdkeihealth.v1.model.list_drug_model_resource_request import ListDrugModelResourceRequest
-from huaweicloudsdkeihealth.v1.model.list_drug_model_resource_response import ListDrugModelResourceResponse
+from huaweicloudsdkeihealth.v1.model.list_drug_model_resource1_request import ListDrugModelResource1Request
+from huaweicloudsdkeihealth.v1.model.list_drug_model_resource1_response import ListDrugModelResource1Response
 from huaweicloudsdkeihealth.v1.model.list_drug_model_response import ListDrugModelResponse
 from huaweicloudsdkeihealth.v1.model.list_favorite_request import ListFavoriteRequest
 from huaweicloudsdkeihealth.v1.model.list_favorite_response import ListFavoriteResponse
@@ -402,6 +424,7 @@ from huaweicloudsdkeihealth.v1.model.list_workflow_response import ListWorkflowR
 from huaweicloudsdkeihealth.v1.model.log_content_dto import LogContentDto
 from huaweicloudsdkeihealth.v1.model.md_param import MdParam
 from huaweicloudsdkeihealth.v1.model.md_step_param import MdStepParam
+from huaweicloudsdkeihealth.v1.model.message_role import MessageRole
 from huaweicloudsdkeihealth.v1.model.mfa_rsp import MfaRsp
 from huaweicloudsdkeihealth.v1.model.model_dto import ModelDto
 from huaweicloudsdkeihealth.v1.model.model_file import ModelFile
@@ -439,6 +462,7 @@ from huaweicloudsdkeihealth.v1.model.project_role_type import ProjectRoleType
 from huaweicloudsdkeihealth.v1.model.project_rsp import ProjectRsp
 from huaweicloudsdkeihealth.v1.model.project_statistic import ProjectStatistic
 from huaweicloudsdkeihealth.v1.model.project_status import ProjectStatus
+from huaweicloudsdkeihealth.v1.model.qa_type import QaType
 from huaweicloudsdkeihealth.v1.model.quota_rsp import QuotaRsp
 from huaweicloudsdkeihealth.v1.model.quote_data_req import QuoteDataReq
 from huaweicloudsdkeihealth.v1.model.quote_data_request import QuoteDataRequest
@@ -451,6 +475,7 @@ from huaweicloudsdkeihealth.v1.model.recognize_drug_receptor_pocket_request impo
 from huaweicloudsdkeihealth.v1.model.recognize_drug_receptor_pocket_response import RecognizeDrugReceptorPocketResponse
 from huaweicloudsdkeihealth.v1.model.recognize_receptor_pocket_mode import RecognizeReceptorPocketMode
 from huaweicloudsdkeihealth.v1.model.recognize_receptor_pocket_req import RecognizeReceptorPocketReq
+from huaweicloudsdkeihealth.v1.model.reference_ligand_file import ReferenceLigandFile
 from huaweicloudsdkeihealth.v1.model.reset_password_req import ResetPasswordReq
 from huaweicloudsdkeihealth.v1.model.residue_dto import ResidueDto
 from huaweicloudsdkeihealth.v1.model.resource_dto import ResourceDto
@@ -489,6 +514,8 @@ from huaweicloudsdkeihealth.v1.model.show_asset_version_request import ShowAsset
 from huaweicloudsdkeihealth.v1.model.show_asset_version_response import ShowAssetVersionResponse
 from huaweicloudsdkeihealth.v1.model.show_bucket_storage_request import ShowBucketStorageRequest
 from huaweicloudsdkeihealth.v1.model.show_bucket_storage_response import ShowBucketStorageResponse
+from huaweicloudsdkeihealth.v1.model.show_chat_request import ShowChatRequest
+from huaweicloudsdkeihealth.v1.model.show_chat_response import ShowChatResponse
 from huaweicloudsdkeihealth.v1.model.show_clustering_job_request import ShowClusteringJobRequest
 from huaweicloudsdkeihealth.v1.model.show_clustering_job_response import ShowClusteringJobResponse
 from huaweicloudsdkeihealth.v1.model.show_cpi_job_request import ShowCpiJobRequest
@@ -595,7 +622,9 @@ from huaweicloudsdkeihealth.v1.model.task_resource_dto import TaskResourceDto
 from huaweicloudsdkeihealth.v1.model.task_runtime_dto import TaskRuntimeDto
 from huaweicloudsdkeihealth.v1.model.term_tenant_css_cluster_dto import TermTenantCssClusterDto
 from huaweicloudsdkeihealth.v1.model.terminate_job_req import TerminateJobReq
+from huaweicloudsdkeihealth.v1.model.tool_call import ToolCall
 from huaweicloudsdkeihealth.v1.model.tool_info_dto import ToolInfoDto
+from huaweicloudsdkeihealth.v1.model.tool_type import ToolType
 from huaweicloudsdkeihealth.v1.model.transfer_project_req import TransferProjectReq
 from huaweicloudsdkeihealth.v1.model.transfer_project_request import TransferProjectRequest
 from huaweicloudsdkeihealth.v1.model.transfer_project_response import TransferProjectResponse
@@ -603,6 +632,9 @@ from huaweicloudsdkeihealth.v1.model.update_agency_request import UpdateAgencyRe
 from huaweicloudsdkeihealth.v1.model.update_agency_response import UpdateAgencyResponse
 from huaweicloudsdkeihealth.v1.model.update_app_request import UpdateAppRequest
 from huaweicloudsdkeihealth.v1.model.update_app_response import UpdateAppResponse
+from huaweicloudsdkeihealth.v1.model.update_chat_req import UpdateChatReq
+from huaweicloudsdkeihealth.v1.model.update_chat_request import UpdateChatRequest
+from huaweicloudsdkeihealth.v1.model.update_chat_response import UpdateChatResponse
 from huaweicloudsdkeihealth.v1.model.update_drug_database_req import UpdateDrugDatabaseReq
 from huaweicloudsdkeihealth.v1.model.update_drug_database_request import UpdateDrugDatabaseRequest
 from huaweicloudsdkeihealth.v1.model.update_drug_database_response import UpdateDrugDatabaseResponse

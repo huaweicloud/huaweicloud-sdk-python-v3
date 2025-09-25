@@ -32,8 +32,8 @@ class ExportWebTamperHostRequestInfo:
         'wtp_status': 'str',
         'offset': 'int',
         'limit': 'int',
-        'export_size': 'int',
-        'export_headers': 'list[list[str]]'
+        'export_headers': 'list[list[str]]',
+        'export_size': 'int'
     }
 
     attribute_map = {
@@ -52,18 +52,18 @@ class ExportWebTamperHostRequestInfo:
         'wtp_status': 'wtp_status',
         'offset': 'offset',
         'limit': 'limit',
-        'export_size': 'export_size',
-        'export_headers': 'export_headers'
+        'export_headers': 'export_headers',
+        'export_size': 'export_size'
     }
 
-    def __init__(self, host_id=None, host_id_list=None, host_name=None, public_ip=None, private_ip=None, agent_id=None, os_type=None, asset_value=None, group_name=None, protect_status=None, agent_status=None, rasp_protect_status=None, wtp_status=None, offset=None, limit=None, export_size=None, export_headers=None):
+    def __init__(self, host_id=None, host_id_list=None, host_name=None, public_ip=None, private_ip=None, agent_id=None, os_type=None, asset_value=None, group_name=None, protect_status=None, agent_status=None, rasp_protect_status=None, wtp_status=None, offset=None, limit=None, export_headers=None, export_size=None):
         r"""ExportWebTamperHostRequestInfo
 
         The model defined in huaweicloud sdk
 
         :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
         :type host_id: str
-        :param host_id_list: 主机ID数组
+        :param host_id_list: **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
         :type host_id_list: list[str]
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
@@ -71,7 +71,7 @@ class ExportWebTamperHostRequestInfo:
         :type public_ip: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param agent_id: **参数解释**: Agent ID。（已废弃，请使用host_id） **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
         :type os_type: str
@@ -79,22 +79,22 @@ class ExportWebTamperHostRequestInfo:
         :type asset_value: str
         :param group_name: **参数解释**: 服务器组名称 **取值范围**: 字符长度0-256位 
         :type group_name: str
-        :param protect_status: 防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
+        :param protect_status: 防护状态。（已废弃，请使用wtp_status）
         :type protect_status: str
-        :param agent_status: Agent状态，包含如下6种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。   - not_online ：不在线的（除了在线以外的所有状态，仅作为查询条件）。
+        :param agent_status: **参数解释**: Agent状态。 **约束限制**: 不涉及 **取值范围**: - not_installed：未安装。 - online：在线。 - offline：离线。  **默认取值**: 不涉及。 
         :type agent_status: str
         :param rasp_protect_status: 动态网页防篡改防护状态   - opened : 防护中   - closed : 未防护
         :type rasp_protect_status: str
-        :param wtp_status: 防护状态   - closed : 未防护   - opened : 防护中   - open_failed : 防护失败   - opening : 正在开启   - partial_protection : 部分防护
+        :param wtp_status: **参数解释**: 网页防篡改防护状态 **取值范围**: - opening : 开启中。 - opened : 防护中。 - open_failed : 防护失败。 - partial_protection : 部分防护。 - protection_interruption : 防护中断。 
         :type wtp_status: str
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: 偏移量。（已废弃，请使用export_size）
         :type offset: int
-        :param limit: 每页显示个数
+        :param limit: 每页显示个数。（已废弃，请使用export_size）
         :type limit: int
-        :param export_size: 导出数据条数
-        :type export_size: int
-        :param export_headers: 导出表头集合
+        :param export_headers: **参数解释**: 导出数据表头信息详情 **约束限制**: 表头信息应为如下格式[[字段1,表头1显示名称],[字段2,表头2显示名称],[字段3,表头3显示名称]] **取值范围**: 可从如下取值中选取部分或全部组成表头信息 - host_name：服务器名称。 - host_id：服务器ID。 - public_ip：弹性公网IP地址。 - private_ip：私有IP地址。 - charging_mode：计费模式。 - agent_status：Agent状态。 - protect_status：防护状态。 - protect_dir_num：防护目录数。 - rasp_protect_status：动态防篡改状态。 - anti_tampering_times：静态防篡改攻击（近七天）。 - detect_tampering_times：动态防篡改攻击（近七天）。 - protect_dir：防护目录。 - exclude_child_dir：排除子目录。 - exclude_file_list：排除文件路径列表。 - local_backup_dir：本地备份路径。 - exclude_file_type：排除文件类型。 - dir_protect_status：防护目录状态。 - error：错误信息。  **默认取值**: 不涉及 
         :type export_headers: list[list[str]]
+        :param export_size: **参数解释**: 导出数据条数上限 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值200000 **默认取值**: 不涉及 
+        :type export_size: int
         """
         
         
@@ -114,8 +114,8 @@ class ExportWebTamperHostRequestInfo:
         self._wtp_status = None
         self._offset = None
         self._limit = None
-        self._export_size = None
         self._export_headers = None
+        self._export_size = None
         self.discriminator = None
 
         if host_id is not None:
@@ -148,10 +148,8 @@ class ExportWebTamperHostRequestInfo:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-        if export_size is not None:
-            self.export_size = export_size
-        if export_headers is not None:
-            self.export_headers = export_headers
+        self.export_headers = export_headers
+        self.export_size = export_size
 
     @property
     def host_id(self):
@@ -179,7 +177,7 @@ class ExportWebTamperHostRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this ExportWebTamperHostRequestInfo.
 
-        主机ID数组
+        **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
 
         :return: The host_id_list of this ExportWebTamperHostRequestInfo.
         :rtype: list[str]
@@ -190,7 +188,7 @@ class ExportWebTamperHostRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this ExportWebTamperHostRequestInfo.
 
-        主机ID数组
+        **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
 
         :param host_id_list: The host_id_list of this ExportWebTamperHostRequestInfo.
         :type host_id_list: list[str]
@@ -267,7 +265,7 @@ class ExportWebTamperHostRequestInfo:
     def agent_id(self):
         r"""Gets the agent_id of this ExportWebTamperHostRequestInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: Agent ID。（已废弃，请使用host_id） **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this ExportWebTamperHostRequestInfo.
         :rtype: str
@@ -278,7 +276,7 @@ class ExportWebTamperHostRequestInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this ExportWebTamperHostRequestInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: Agent ID。（已废弃，请使用host_id） **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this ExportWebTamperHostRequestInfo.
         :type agent_id: str
@@ -355,7 +353,7 @@ class ExportWebTamperHostRequestInfo:
     def protect_status(self):
         r"""Gets the protect_status of this ExportWebTamperHostRequestInfo.
 
-        防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
+        防护状态。（已废弃，请使用wtp_status）
 
         :return: The protect_status of this ExportWebTamperHostRequestInfo.
         :rtype: str
@@ -366,7 +364,7 @@ class ExportWebTamperHostRequestInfo:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ExportWebTamperHostRequestInfo.
 
-        防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
+        防护状态。（已废弃，请使用wtp_status）
 
         :param protect_status: The protect_status of this ExportWebTamperHostRequestInfo.
         :type protect_status: str
@@ -377,7 +375,7 @@ class ExportWebTamperHostRequestInfo:
     def agent_status(self):
         r"""Gets the agent_status of this ExportWebTamperHostRequestInfo.
 
-        Agent状态，包含如下6种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。   - not_online ：不在线的（除了在线以外的所有状态，仅作为查询条件）。
+        **参数解释**: Agent状态。 **约束限制**: 不涉及 **取值范围**: - not_installed：未安装。 - online：在线。 - offline：离线。  **默认取值**: 不涉及。 
 
         :return: The agent_status of this ExportWebTamperHostRequestInfo.
         :rtype: str
@@ -388,7 +386,7 @@ class ExportWebTamperHostRequestInfo:
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this ExportWebTamperHostRequestInfo.
 
-        Agent状态，包含如下6种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。   - not_online ：不在线的（除了在线以外的所有状态，仅作为查询条件）。
+        **参数解释**: Agent状态。 **约束限制**: 不涉及 **取值范围**: - not_installed：未安装。 - online：在线。 - offline：离线。  **默认取值**: 不涉及。 
 
         :param agent_status: The agent_status of this ExportWebTamperHostRequestInfo.
         :type agent_status: str
@@ -421,7 +419,7 @@ class ExportWebTamperHostRequestInfo:
     def wtp_status(self):
         r"""Gets the wtp_status of this ExportWebTamperHostRequestInfo.
 
-        防护状态   - closed : 未防护   - opened : 防护中   - open_failed : 防护失败   - opening : 正在开启   - partial_protection : 部分防护
+        **参数解释**: 网页防篡改防护状态 **取值范围**: - opening : 开启中。 - opened : 防护中。 - open_failed : 防护失败。 - partial_protection : 部分防护。 - protection_interruption : 防护中断。 
 
         :return: The wtp_status of this ExportWebTamperHostRequestInfo.
         :rtype: str
@@ -432,7 +430,7 @@ class ExportWebTamperHostRequestInfo:
     def wtp_status(self, wtp_status):
         r"""Sets the wtp_status of this ExportWebTamperHostRequestInfo.
 
-        防护状态   - closed : 未防护   - opened : 防护中   - open_failed : 防护失败   - opening : 正在开启   - partial_protection : 部分防护
+        **参数解释**: 网页防篡改防护状态 **取值范围**: - opening : 开启中。 - opened : 防护中。 - open_failed : 防护失败。 - partial_protection : 部分防护。 - protection_interruption : 防护中断。 
 
         :param wtp_status: The wtp_status of this ExportWebTamperHostRequestInfo.
         :type wtp_status: str
@@ -443,7 +441,7 @@ class ExportWebTamperHostRequestInfo:
     def offset(self):
         r"""Gets the offset of this ExportWebTamperHostRequestInfo.
 
-        偏移量：指定返回记录的开始位置
+        偏移量。（已废弃，请使用export_size）
 
         :return: The offset of this ExportWebTamperHostRequestInfo.
         :rtype: int
@@ -454,7 +452,7 @@ class ExportWebTamperHostRequestInfo:
     def offset(self, offset):
         r"""Sets the offset of this ExportWebTamperHostRequestInfo.
 
-        偏移量：指定返回记录的开始位置
+        偏移量。（已废弃，请使用export_size）
 
         :param offset: The offset of this ExportWebTamperHostRequestInfo.
         :type offset: int
@@ -465,7 +463,7 @@ class ExportWebTamperHostRequestInfo:
     def limit(self):
         r"""Gets the limit of this ExportWebTamperHostRequestInfo.
 
-        每页显示个数
+        每页显示个数。（已废弃，请使用export_size）
 
         :return: The limit of this ExportWebTamperHostRequestInfo.
         :rtype: int
@@ -476,7 +474,7 @@ class ExportWebTamperHostRequestInfo:
     def limit(self, limit):
         r"""Sets the limit of this ExportWebTamperHostRequestInfo.
 
-        每页显示个数
+        每页显示个数。（已废弃，请使用export_size）
 
         :param limit: The limit of this ExportWebTamperHostRequestInfo.
         :type limit: int
@@ -484,32 +482,10 @@ class ExportWebTamperHostRequestInfo:
         self._limit = limit
 
     @property
-    def export_size(self):
-        r"""Gets the export_size of this ExportWebTamperHostRequestInfo.
-
-        导出数据条数
-
-        :return: The export_size of this ExportWebTamperHostRequestInfo.
-        :rtype: int
-        """
-        return self._export_size
-
-    @export_size.setter
-    def export_size(self, export_size):
-        r"""Sets the export_size of this ExportWebTamperHostRequestInfo.
-
-        导出数据条数
-
-        :param export_size: The export_size of this ExportWebTamperHostRequestInfo.
-        :type export_size: int
-        """
-        self._export_size = export_size
-
-    @property
     def export_headers(self):
         r"""Gets the export_headers of this ExportWebTamperHostRequestInfo.
 
-        导出表头集合
+        **参数解释**: 导出数据表头信息详情 **约束限制**: 表头信息应为如下格式[[字段1,表头1显示名称],[字段2,表头2显示名称],[字段3,表头3显示名称]] **取值范围**: 可从如下取值中选取部分或全部组成表头信息 - host_name：服务器名称。 - host_id：服务器ID。 - public_ip：弹性公网IP地址。 - private_ip：私有IP地址。 - charging_mode：计费模式。 - agent_status：Agent状态。 - protect_status：防护状态。 - protect_dir_num：防护目录数。 - rasp_protect_status：动态防篡改状态。 - anti_tampering_times：静态防篡改攻击（近七天）。 - detect_tampering_times：动态防篡改攻击（近七天）。 - protect_dir：防护目录。 - exclude_child_dir：排除子目录。 - exclude_file_list：排除文件路径列表。 - local_backup_dir：本地备份路径。 - exclude_file_type：排除文件类型。 - dir_protect_status：防护目录状态。 - error：错误信息。  **默认取值**: 不涉及 
 
         :return: The export_headers of this ExportWebTamperHostRequestInfo.
         :rtype: list[list[str]]
@@ -520,12 +496,34 @@ class ExportWebTamperHostRequestInfo:
     def export_headers(self, export_headers):
         r"""Sets the export_headers of this ExportWebTamperHostRequestInfo.
 
-        导出表头集合
+        **参数解释**: 导出数据表头信息详情 **约束限制**: 表头信息应为如下格式[[字段1,表头1显示名称],[字段2,表头2显示名称],[字段3,表头3显示名称]] **取值范围**: 可从如下取值中选取部分或全部组成表头信息 - host_name：服务器名称。 - host_id：服务器ID。 - public_ip：弹性公网IP地址。 - private_ip：私有IP地址。 - charging_mode：计费模式。 - agent_status：Agent状态。 - protect_status：防护状态。 - protect_dir_num：防护目录数。 - rasp_protect_status：动态防篡改状态。 - anti_tampering_times：静态防篡改攻击（近七天）。 - detect_tampering_times：动态防篡改攻击（近七天）。 - protect_dir：防护目录。 - exclude_child_dir：排除子目录。 - exclude_file_list：排除文件路径列表。 - local_backup_dir：本地备份路径。 - exclude_file_type：排除文件类型。 - dir_protect_status：防护目录状态。 - error：错误信息。  **默认取值**: 不涉及 
 
         :param export_headers: The export_headers of this ExportWebTamperHostRequestInfo.
         :type export_headers: list[list[str]]
         """
         self._export_headers = export_headers
+
+    @property
+    def export_size(self):
+        r"""Gets the export_size of this ExportWebTamperHostRequestInfo.
+
+        **参数解释**: 导出数据条数上限 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值200000 **默认取值**: 不涉及 
+
+        :return: The export_size of this ExportWebTamperHostRequestInfo.
+        :rtype: int
+        """
+        return self._export_size
+
+    @export_size.setter
+    def export_size(self, export_size):
+        r"""Sets the export_size of this ExportWebTamperHostRequestInfo.
+
+        **参数解释**: 导出数据条数上限 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值200000 **默认取值**: 不涉及 
+
+        :param export_size: The export_size of this ExportWebTamperHostRequestInfo.
+        :type export_size: int
+        """
+        self._export_size = export_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

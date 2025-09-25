@@ -20,17 +20,19 @@ class CreateEsListenerRequestBody:
         'protocol': 'str',
         'protocol_port': 'int',
         'server_cert_id': 'str',
-        'ca_cert_id': 'str'
+        'ca_cert_id': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
         'protocol': 'protocol',
         'protocol_port': 'protocol_port',
         'server_cert_id': 'server_cert_id',
-        'ca_cert_id': 'ca_cert_id'
+        'ca_cert_id': 'ca_cert_id',
+        'type': 'type'
     }
 
-    def __init__(self, protocol=None, protocol_port=None, server_cert_id=None, ca_cert_id=None):
+    def __init__(self, protocol=None, protocol_port=None, server_cert_id=None, ca_cert_id=None, type=None):
         r"""CreateEsListenerRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreateEsListenerRequestBody:
         :type server_cert_id: str
         :param ca_cert_id: CA证书Id。如protocol为HTTPS且为双向认证时则该字段必选。
         :type ca_cert_id: str
+        :param type: 类型：searchTool 表示对Elasticsearch/Opensearch进行监听器配，viewTool 表示对Kibana/Opensearch Dashboard进行监听器配置，默认为searchTool 。
+        :type type: str
         """
         
         
@@ -51,6 +55,7 @@ class CreateEsListenerRequestBody:
         self._protocol_port = None
         self._server_cert_id = None
         self._ca_cert_id = None
+        self._type = None
         self.discriminator = None
 
         self.protocol = protocol
@@ -59,6 +64,8 @@ class CreateEsListenerRequestBody:
             self.server_cert_id = server_cert_id
         if ca_cert_id is not None:
             self.ca_cert_id = ca_cert_id
+        if type is not None:
+            self.type = type
 
     @property
     def protocol(self):
@@ -147,6 +154,28 @@ class CreateEsListenerRequestBody:
         :type ca_cert_id: str
         """
         self._ca_cert_id = ca_cert_id
+
+    @property
+    def type(self):
+        r"""Gets the type of this CreateEsListenerRequestBody.
+
+        类型：searchTool 表示对Elasticsearch/Opensearch进行监听器配，viewTool 表示对Kibana/Opensearch Dashboard进行监听器配置，默认为searchTool 。
+
+        :return: The type of this CreateEsListenerRequestBody.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this CreateEsListenerRequestBody.
+
+        类型：searchTool 表示对Elasticsearch/Opensearch进行监听器配，viewTool 表示对Kibana/Opensearch Dashboard进行监听器配置，默认为searchTool 。
+
+        :param type: The type of this CreateEsListenerRequestBody.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,80 +18,76 @@ class ListCertsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'default_certs': 'list[DefaultCertsResource]',
-        'custom_certs': 'list[CustomCertsResource]'
+        'certs_records': 'CertsRecordsDatastore',
+        'total_size': 'int'
     }
 
     attribute_map = {
-        'default_certs': 'defaultCerts',
-        'custom_certs': 'customCerts'
+        'certs_records': 'certsRecords',
+        'total_size': 'totalSize'
     }
 
-    def __init__(self, default_certs=None, custom_certs=None):
+    def __init__(self, certs_records=None, total_size=None):
         r"""ListCertsResponse
 
         The model defined in huaweicloud sdk
 
-        :param default_certs: 默认证书列表。
-        :type default_certs: list[:class:`huaweicloudsdkcss.v1.DefaultCertsResource`]
-        :param custom_certs: 自定义证书列表。
-        :type custom_certs: list[:class:`huaweicloudsdkcss.v1.CustomCertsResource`]
+        :param certs_records: 
+        :type certs_records: :class:`huaweicloudsdkcss.v1.CertsRecordsDatastore`
+        :param total_size: 证书记录数量。
+        :type total_size: int
         """
         
         super(ListCertsResponse, self).__init__()
 
-        self._default_certs = None
-        self._custom_certs = None
+        self._certs_records = None
+        self._total_size = None
         self.discriminator = None
 
-        if default_certs is not None:
-            self.default_certs = default_certs
-        if custom_certs is not None:
-            self.custom_certs = custom_certs
+        if certs_records is not None:
+            self.certs_records = certs_records
+        if total_size is not None:
+            self.total_size = total_size
 
     @property
-    def default_certs(self):
-        r"""Gets the default_certs of this ListCertsResponse.
+    def certs_records(self):
+        r"""Gets the certs_records of this ListCertsResponse.
 
-        默认证书列表。
-
-        :return: The default_certs of this ListCertsResponse.
-        :rtype: list[:class:`huaweicloudsdkcss.v1.DefaultCertsResource`]
+        :return: The certs_records of this ListCertsResponse.
+        :rtype: :class:`huaweicloudsdkcss.v1.CertsRecordsDatastore`
         """
-        return self._default_certs
+        return self._certs_records
 
-    @default_certs.setter
-    def default_certs(self, default_certs):
-        r"""Sets the default_certs of this ListCertsResponse.
+    @certs_records.setter
+    def certs_records(self, certs_records):
+        r"""Sets the certs_records of this ListCertsResponse.
 
-        默认证书列表。
-
-        :param default_certs: The default_certs of this ListCertsResponse.
-        :type default_certs: list[:class:`huaweicloudsdkcss.v1.DefaultCertsResource`]
+        :param certs_records: The certs_records of this ListCertsResponse.
+        :type certs_records: :class:`huaweicloudsdkcss.v1.CertsRecordsDatastore`
         """
-        self._default_certs = default_certs
+        self._certs_records = certs_records
 
     @property
-    def custom_certs(self):
-        r"""Gets the custom_certs of this ListCertsResponse.
+    def total_size(self):
+        r"""Gets the total_size of this ListCertsResponse.
 
-        自定义证书列表。
+        证书记录数量。
 
-        :return: The custom_certs of this ListCertsResponse.
-        :rtype: list[:class:`huaweicloudsdkcss.v1.CustomCertsResource`]
+        :return: The total_size of this ListCertsResponse.
+        :rtype: int
         """
-        return self._custom_certs
+        return self._total_size
 
-    @custom_certs.setter
-    def custom_certs(self, custom_certs):
-        r"""Sets the custom_certs of this ListCertsResponse.
+    @total_size.setter
+    def total_size(self, total_size):
+        r"""Sets the total_size of this ListCertsResponse.
 
-        自定义证书列表。
+        证书记录数量。
 
-        :param custom_certs: The custom_certs of this ListCertsResponse.
-        :type custom_certs: list[:class:`huaweicloudsdkcss.v1.CustomCertsResource`]
+        :param total_size: The total_size of this ListCertsResponse.
+        :type total_size: int
         """
-        self._custom_certs = custom_certs
+        self._total_size = total_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

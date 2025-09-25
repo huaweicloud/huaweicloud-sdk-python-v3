@@ -97,8 +97,6 @@ from huaweicloudsdkkafka.v2.model.describe_groups_resp_group import DescribeGrou
 from huaweicloudsdkkafka.v2.model.describe_groups_resp_group_members import DescribeGroupsRespGroupMembers
 from huaweicloudsdkkafka.v2.model.diskusage_entity import DiskusageEntity
 from huaweicloudsdkkafka.v2.model.diskusage_topic_entity import DiskusageTopicEntity
-from huaweicloudsdkkafka.v2.model.enable_dns_request import EnableDnsRequest
-from huaweicloudsdkkafka.v2.model.enable_dns_response import EnableDnsResponse
 from huaweicloudsdkkafka.v2.model.extend_product_info_entity import ExtendProductInfoEntity
 from huaweicloudsdkkafka.v2.model.extend_product_ios_entity import ExtendProductIosEntity
 from huaweicloudsdkkafka.v2.model.extend_product_properties_entity import ExtendProductPropertiesEntity

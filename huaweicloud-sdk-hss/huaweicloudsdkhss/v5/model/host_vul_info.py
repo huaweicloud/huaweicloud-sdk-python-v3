@@ -121,7 +121,7 @@ class HostVulInfo:
         :type support_restore: bool
         :param disabled_operate_types: **参数解释**: 该漏洞不可进行的操作类型列表 **取值范围**: 最小值1，最大值10000 
         :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
-        :param repair_priority: **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
+        :param repair_priority: **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急 - High     : 高 - Medium   : 中 - Low      : 低 
         :type repair_priority: str
         """
         
@@ -712,7 +712,7 @@ class HostVulInfo:
     def repair_priority(self):
         r"""Gets the repair_priority of this HostVulInfo.
 
-        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
+        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急 - High     : 高 - Medium   : 中 - Low      : 低 
 
         :return: The repair_priority of this HostVulInfo.
         :rtype: str
@@ -723,7 +723,7 @@ class HostVulInfo:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this HostVulInfo.
 
-        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
+        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急 - High     : 高 - Medium   : 中 - Low      : 低 
 
         :param repair_priority: The repair_priority of this HostVulInfo.
         :type repair_priority: str

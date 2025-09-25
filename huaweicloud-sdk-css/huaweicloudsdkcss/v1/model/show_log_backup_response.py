@@ -18,29 +18,36 @@ class ShowLogBackupResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'log_list': 'list[LogList]'
+        'log_list': 'list[LogList]',
+        'type': 'str'
     }
 
     attribute_map = {
-        'log_list': 'logList'
+        'log_list': 'logList',
+        'type': 'type'
     }
 
-    def __init__(self, log_list=None):
+    def __init__(self, log_list=None, type=None):
         r"""ShowLogBackupResponse
 
         The model defined in huaweicloud sdk
 
         :param log_list: 
         :type log_list: list[:class:`huaweicloudsdkcss.v1.LogList`]
+        :param type: 查询日志的类型。
+        :type type: str
         """
         
         super(ShowLogBackupResponse, self).__init__()
 
         self._log_list = None
+        self._type = None
         self.discriminator = None
 
         if log_list is not None:
             self.log_list = log_list
+        if type is not None:
+            self.type = type
 
     @property
     def log_list(self):
@@ -59,6 +66,28 @@ class ShowLogBackupResponse(SdkResponse):
         :type log_list: list[:class:`huaweicloudsdkcss.v1.LogList`]
         """
         self._log_list = log_list
+
+    @property
+    def type(self):
+        r"""Gets the type of this ShowLogBackupResponse.
+
+        查询日志的类型。
+
+        :return: The type of this ShowLogBackupResponse.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ShowLogBackupResponse.
+
+        查询日志的类型。
+
+        :param type: The type of this ShowLogBackupResponse.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

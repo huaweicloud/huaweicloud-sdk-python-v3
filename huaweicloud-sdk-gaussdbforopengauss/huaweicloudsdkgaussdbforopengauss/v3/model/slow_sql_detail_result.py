@@ -17,6 +17,9 @@ class SlowSqlDetailResult:
     sensitive_list = []
 
     openapi_types = {
+        'db_name': 'str',
+        'schema_name': 'str',
+        'sql': 'str',
         'sql_id': 'str',
         'user_name': 'str',
         'client_ip': 'str',
@@ -40,6 +43,9 @@ class SlowSqlDetailResult:
     }
 
     attribute_map = {
+        'db_name': 'db_name',
+        'schema_name': 'schema_name',
+        'sql': 'sql',
         'sql_id': 'sql_id',
         'user_name': 'user_name',
         'client_ip': 'client_ip',
@@ -62,11 +68,17 @@ class SlowSqlDetailResult:
         'lock_time': 'lock_time'
     }
 
-    def __init__(self, sql_id=None, user_name=None, client_ip=None, client_port=None, node_id=None, node_name=None, sql_text=None, query_plan=None, start_time=None, finish_time=None, returned_rows=None, fetched_rows=None, fetched_pages=None, hit_pages=None, total_time=None, cpu_time=None, plan_time=None, io_time=None, lock_count=None, lock_time=None):
+    def __init__(self, db_name=None, schema_name=None, sql=None, sql_id=None, user_name=None, client_ip=None, client_port=None, node_id=None, node_name=None, sql_text=None, query_plan=None, start_time=None, finish_time=None, returned_rows=None, fetched_rows=None, fetched_pages=None, hit_pages=None, total_time=None, cpu_time=None, plan_time=None, io_time=None, lock_count=None, lock_time=None):
         r"""SlowSqlDetailResult
 
         The model defined in huaweicloud sdk
 
+        :param db_name: **参数解释**: 数据库名称。 **取值范围**: 不涉及。
+        :type db_name: str
+        :param schema_name: **参数解释**: SCHEMA名称。 **取值范围**: 不涉及。
+        :type schema_name: str
+        :param sql: **参数解释**: 变量替换后的完整SQL。当sql_text不返回变量值时，sql返回空字符串。 **取值范围**: 不涉及。
+        :type sql: str
         :param sql_id: **参数解释**: SQL ID。 **取值范围**: 不涉及。
         :type sql_id: str
         :param user_name: **参数解释**: 用户名称。 **取值范围**: 不涉及。
@@ -111,6 +123,9 @@ class SlowSqlDetailResult:
         
         
 
+        self._db_name = None
+        self._schema_name = None
+        self._sql = None
         self._sql_id = None
         self._user_name = None
         self._client_ip = None
@@ -133,6 +148,12 @@ class SlowSqlDetailResult:
         self._lock_time = None
         self.discriminator = None
 
+        if db_name is not None:
+            self.db_name = db_name
+        if schema_name is not None:
+            self.schema_name = schema_name
+        if sql is not None:
+            self.sql = sql
         if sql_id is not None:
             self.sql_id = sql_id
         if user_name is not None:
@@ -173,6 +194,72 @@ class SlowSqlDetailResult:
             self.lock_count = lock_count
         if lock_time is not None:
             self.lock_time = lock_time
+
+    @property
+    def db_name(self):
+        r"""Gets the db_name of this SlowSqlDetailResult.
+
+        **参数解释**: 数据库名称。 **取值范围**: 不涉及。
+
+        :return: The db_name of this SlowSqlDetailResult.
+        :rtype: str
+        """
+        return self._db_name
+
+    @db_name.setter
+    def db_name(self, db_name):
+        r"""Sets the db_name of this SlowSqlDetailResult.
+
+        **参数解释**: 数据库名称。 **取值范围**: 不涉及。
+
+        :param db_name: The db_name of this SlowSqlDetailResult.
+        :type db_name: str
+        """
+        self._db_name = db_name
+
+    @property
+    def schema_name(self):
+        r"""Gets the schema_name of this SlowSqlDetailResult.
+
+        **参数解释**: SCHEMA名称。 **取值范围**: 不涉及。
+
+        :return: The schema_name of this SlowSqlDetailResult.
+        :rtype: str
+        """
+        return self._schema_name
+
+    @schema_name.setter
+    def schema_name(self, schema_name):
+        r"""Sets the schema_name of this SlowSqlDetailResult.
+
+        **参数解释**: SCHEMA名称。 **取值范围**: 不涉及。
+
+        :param schema_name: The schema_name of this SlowSqlDetailResult.
+        :type schema_name: str
+        """
+        self._schema_name = schema_name
+
+    @property
+    def sql(self):
+        r"""Gets the sql of this SlowSqlDetailResult.
+
+        **参数解释**: 变量替换后的完整SQL。当sql_text不返回变量值时，sql返回空字符串。 **取值范围**: 不涉及。
+
+        :return: The sql of this SlowSqlDetailResult.
+        :rtype: str
+        """
+        return self._sql
+
+    @sql.setter
+    def sql(self, sql):
+        r"""Sets the sql of this SlowSqlDetailResult.
+
+        **参数解释**: 变量替换后的完整SQL。当sql_text不返回变量值时，sql返回空字符串。 **取值范围**: 不涉及。
+
+        :param sql: The sql of this SlowSqlDetailResult.
+        :type sql: str
+        """
+        self._sql = sql
 
     @property
     def sql_id(self):

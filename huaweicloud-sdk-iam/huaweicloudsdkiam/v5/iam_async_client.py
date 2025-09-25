@@ -96,6 +96,199 @@ class IamAsyncClient(Client):
 
         return http_info
 
+    def get_asymmetric_signature_switch_v5_async(self, request):
+        r"""获取账号非对称签名开关状态
+
+        该接口用于获取账号非对称签名开关的状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetAsymmetricSignatureSwitchV5
+        :type request: :class:`huaweicloudsdkiam.v5.GetAsymmetricSignatureSwitchV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.GetAsymmetricSignatureSwitchV5Response`
+        """
+        http_info = self._get_asymmetric_signature_switch_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_asymmetric_signature_switch_v5_async_invoker(self, request):
+        http_info = self._get_asymmetric_signature_switch_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_asymmetric_signature_switch_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/asymmetric-signature-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetAsymmetricSignatureSwitchV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_feature_status_v5_async(self, request):
+        r"""获取此账号的功能状态
+
+        该接口可以用于获取此账号的功能状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetFeatureStatusV5
+        :type request: :class:`huaweicloudsdkiam.v5.GetFeatureStatusV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.GetFeatureStatusV5Response`
+        """
+        http_info = self._get_feature_status_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_feature_status_v5_async_invoker(self, request):
+        http_info = self._get_feature_status_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_feature_status_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/features/{feature_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetFeatureStatusV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'feature_name' in local_var_params:
+            path_params['feature_name'] = local_var_params['feature_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_asymmetric_signature_switch_v5_async(self, request):
+        r"""设置账号开启或关闭非对称签名
+
+        该接口用于设置账号开启或关闭非对称签名功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetAsymmetricSignatureSwitchV5
+        :type request: :class:`huaweicloudsdkiam.v5.SetAsymmetricSignatureSwitchV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.SetAsymmetricSignatureSwitchV5Response`
+        """
+        http_info = self._set_asymmetric_signature_switch_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_asymmetric_signature_switch_v5_async_invoker(self, request):
+        http_info = self._set_asymmetric_signature_switch_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_asymmetric_signature_switch_v5_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/asymmetric-signature-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetAsymmetricSignatureSwitchV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_agency_v5_async(self, request):
         r"""创建信任委托
 
@@ -123,6 +316,71 @@ class IamAsyncClient(Client):
             "resource_path": "/v5/agencies",
             "request_type": request.__class__.__name__,
             "response_type": "CreateAgencyV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_service_linked_agency_v5_async(self, request):
+        r"""创建服务关联委托
+
+        该接口可以用于创建服务关联委托。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateServiceLinkedAgencyV5
+        :type request: :class:`huaweicloudsdkiam.v5.CreateServiceLinkedAgencyV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.CreateServiceLinkedAgencyV5Response`
+        """
+        http_info = self._create_service_linked_agency_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_service_linked_agency_v5_async_invoker(self, request):
+        http_info = self._create_service_linked_agency_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_service_linked_agency_v5_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/service-linked-agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateServiceLinkedAgencyV5Response"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -228,6 +486,71 @@ class IamAsyncClient(Client):
 
         return http_info
 
+    def delete_service_linked_agency_v5_async(self, request):
+        r"""删除服务关联委托
+
+        该接口可以用于服务关联委托删除自己。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteServiceLinkedAgencyV5
+        :type request: :class:`huaweicloudsdkiam.v5.DeleteServiceLinkedAgencyV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.DeleteServiceLinkedAgencyV5Response`
+        """
+        http_info = self._delete_service_linked_agency_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_service_linked_agency_v5_async_invoker(self, request):
+        http_info = self._delete_service_linked_agency_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_service_linked_agency_v5_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/service-linked-agencies/{agency_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServiceLinkedAgencyV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'agency_id' in local_var_params:
+            path_params['agency_id'] = local_var_params['agency_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def get_agency_v5_async(self, request):
         r"""查询委托或信任委托详情
 
@@ -264,6 +587,71 @@ class IamAsyncClient(Client):
         path_params = {}
         if 'agency_id' in local_var_params:
             path_params['agency_id'] = local_var_params['agency_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_service_linked_agency_deletion_status_v5_async(self, request):
+        r"""获取服务关联委托删除状态
+
+        该接口可以用于获取服务关联委托删除状态。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetServiceLinkedAgencyDeletionStatusV5
+        :type request: :class:`huaweicloudsdkiam.v5.GetServiceLinkedAgencyDeletionStatusV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.GetServiceLinkedAgencyDeletionStatusV5Response`
+        """
+        http_info = self._get_service_linked_agency_deletion_status_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_service_linked_agency_deletion_status_v5_async_invoker(self, request):
+        http_info = self._get_service_linked_agency_deletion_status_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_service_linked_agency_deletion_status_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/service-linked-agencies/deletion-task/{deletion_task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetServiceLinkedAgencyDeletionStatusV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deletion_task_id' in local_var_params:
+            path_params['deletion_task_id'] = local_var_params['deletion_task_id']
 
         query_params = []
 
@@ -496,134 +884,6 @@ class IamAsyncClient(Client):
 
         return http_info
 
-    def get_asymmetric_signature_switch_v5_async(self, request):
-        r"""获取账号非对称签名开关状态
-
-        该接口用于获取账号非对称签名开关的状态。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetAsymmetricSignatureSwitchV5
-        :type request: :class:`huaweicloudsdkiam.v5.GetAsymmetricSignatureSwitchV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.GetAsymmetricSignatureSwitchV5Response`
-        """
-        http_info = self._get_asymmetric_signature_switch_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_asymmetric_signature_switch_v5_async_invoker(self, request):
-        http_info = self._get_asymmetric_signature_switch_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_asymmetric_signature_switch_v5_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v5/asymmetric-signature-switch",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetAsymmetricSignatureSwitchV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def set_asymmetric_signature_switch_v5_async(self, request):
-        r"""设置账号开启或关闭非对称签名
-
-        该接口用于设置账号开启或关闭非对称签名功能。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SetAsymmetricSignatureSwitchV5
-        :type request: :class:`huaweicloudsdkiam.v5.SetAsymmetricSignatureSwitchV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.SetAsymmetricSignatureSwitchV5Response`
-        """
-        http_info = self._set_asymmetric_signature_switch_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def set_asymmetric_signature_switch_v5_async_invoker(self, request):
-        http_info = self._set_asymmetric_signature_switch_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _set_asymmetric_signature_switch_v5_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v5/asymmetric-signature-switch",
-            "request_type": request.__class__.__name__,
-            "response_type": "SetAsymmetricSignatureSwitchV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def get_authorization_schema_v5_async(self, request):
         r"""查询指定服务授权概要
 
@@ -731,6 +991,75 @@ class IamAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_service_principals_v5_async(self, request):
+        r"""获取全部服务主体
+
+        该接口可以用于获取全部服务主体。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListServicePrincipalsV5
+        :type request: :class:`huaweicloudsdkiam.v5.ListServicePrincipalsV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.ListServicePrincipalsV5Response`
+        """
+        http_info = self._list_service_principals_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_service_principals_v5_async_invoker(self, request):
+        http_info = self._list_service_principals_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_service_principals_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/service-principals",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServicePrincipalsV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1617,6 +1946,73 @@ class IamAsyncClient(Client):
 
         return http_info
 
+    def create_policy_version_v5_async(self, request):
+        r"""为指定身份策略创建一个新版本
+
+        该接口可以用于为指定身份策略创建一个新版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreatePolicyVersionV5
+        :type request: :class:`huaweicloudsdkiam.v5.CreatePolicyVersionV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.CreatePolicyVersionV5Response`
+        """
+        http_info = self._create_policy_version_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_policy_version_v5_async_invoker(self, request):
+        http_info = self._create_policy_version_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_policy_version_v5_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/policies/{policy_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyVersionV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_policy_v5_async(self, request):
         r"""删除自定义身份策略
 
@@ -1653,6 +2049,73 @@ class IamAsyncClient(Client):
         path_params = {}
         if 'policy_id' in local_var_params:
             path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_policy_version_v5_async(self, request):
+        r"""删除指定身份策略版本
+
+        该接口可以用于删除指定身份策略的指定版本。默认身份策略版本不能被删除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeletePolicyVersionV5
+        :type request: :class:`huaweicloudsdkiam.v5.DeletePolicyVersionV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.DeletePolicyVersionV5Response`
+        """
+        http_info = self._delete_policy_version_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_policy_version_v5_async_invoker(self, request):
+        http_info = self._delete_policy_version_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_policy_version_v5_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/policies/{policy_id}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePolicyVersionV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
 
         query_params = []
 
@@ -1749,6 +2212,73 @@ class IamAsyncClient(Client):
 
         return http_info
 
+    def get_policy_version_v5_async(self, request):
+        r"""查询指定身份策略版本
+
+        该接口可以用于查询指定身份策略的指定版本的相关信息，包括身份策略文档。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for GetPolicyVersionV5
+        :type request: :class:`huaweicloudsdkiam.v5.GetPolicyVersionV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.GetPolicyVersionV5Response`
+        """
+        http_info = self._get_policy_version_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_policy_version_v5_async_invoker(self, request):
+        http_info = self._get_policy_version_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_policy_version_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/policies/{policy_id}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetPolicyVersionV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_policies_v5_async(self, request):
         r"""查询所有身份策略
 
@@ -1799,6 +2329,142 @@ class IamAsyncClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_policy_versions_v5_async(self, request):
+        r"""查询指定身份策略的所有版本
+
+        该接口可以用于查询指定身份策略的所有版本信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPolicyVersionsV5
+        :type request: :class:`huaweicloudsdkiam.v5.ListPolicyVersionsV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.ListPolicyVersionsV5Response`
+        """
+        http_info = self._list_policy_versions_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_policy_versions_v5_async_invoker(self, request):
+        http_info = self._list_policy_versions_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_policy_versions_v5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/policies/{policy_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyVersionsV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam-used-authn5']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_default_policy_version_v5_async(self, request):
+        r"""将指定身份策略版本设置为默认版本
+
+        该接口可以用于将指定身份策略的指定版本设置为默认版本。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetDefaultPolicyVersionV5
+        :type request: :class:`huaweicloudsdkiam.v5.SetDefaultPolicyVersionV5Request`
+        :rtype: :class:`huaweicloudsdkiam.v5.SetDefaultPolicyVersionV5Response`
+        """
+        http_info = self._set_default_policy_version_v5_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_default_policy_version_v5_async_invoker(self, request):
+        http_info = self._set_default_policy_version_v5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_default_policy_version_v5_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/policies/{policy_id}/versions/{version_id}/set-default",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetDefaultPolicyVersionV5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'version_id' in local_var_params:
+            path_params['version_id'] = local_var_params['version_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 
@@ -2504,343 +3170,6 @@ class IamAsyncClient(Client):
 
         return http_info
 
-    def create_policy_version_v5_async(self, request):
-        r"""为指定身份策略创建一个新版本
-
-        该接口可以用于为指定身份策略创建一个新版本。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreatePolicyVersionV5
-        :type request: :class:`huaweicloudsdkiam.v5.CreatePolicyVersionV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.CreatePolicyVersionV5Response`
-        """
-        http_info = self._create_policy_version_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_policy_version_v5_async_invoker(self, request):
-        http_info = self._create_policy_version_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_policy_version_v5_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v5/policies/{policy_id}/versions",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreatePolicyVersionV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'policy_id' in local_var_params:
-            path_params['policy_id'] = local_var_params['policy_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_policy_version_v5_async(self, request):
-        r"""删除指定身份策略版本
-
-        该接口可以用于删除指定身份策略的指定版本。默认身份策略版本不能被删除。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeletePolicyVersionV5
-        :type request: :class:`huaweicloudsdkiam.v5.DeletePolicyVersionV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.DeletePolicyVersionV5Response`
-        """
-        http_info = self._delete_policy_version_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_policy_version_v5_async_invoker(self, request):
-        http_info = self._delete_policy_version_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_policy_version_v5_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v5/policies/{policy_id}/versions/{version_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeletePolicyVersionV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'policy_id' in local_var_params:
-            path_params['policy_id'] = local_var_params['policy_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_policy_version_v5_async(self, request):
-        r"""查询指定身份策略版本
-
-        该接口可以用于查询指定身份策略的指定版本的相关信息，包括身份策略文档。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetPolicyVersionV5
-        :type request: :class:`huaweicloudsdkiam.v5.GetPolicyVersionV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.GetPolicyVersionV5Response`
-        """
-        http_info = self._get_policy_version_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_policy_version_v5_async_invoker(self, request):
-        http_info = self._get_policy_version_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_policy_version_v5_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v5/policies/{policy_id}/versions/{version_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetPolicyVersionV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'policy_id' in local_var_params:
-            path_params['policy_id'] = local_var_params['policy_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_policy_versions_v5_async(self, request):
-        r"""查询指定身份策略的所有版本
-
-        该接口可以用于查询指定身份策略的所有版本信息。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPolicyVersionsV5
-        :type request: :class:`huaweicloudsdkiam.v5.ListPolicyVersionsV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.ListPolicyVersionsV5Response`
-        """
-        http_info = self._list_policy_versions_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_policy_versions_v5_async_invoker(self, request):
-        http_info = self._list_policy_versions_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_policy_versions_v5_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v5/policies/{policy_id}/versions",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListPolicyVersionsV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'policy_id' in local_var_params:
-            path_params['policy_id'] = local_var_params['policy_id']
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def set_default_policy_version_v5_async(self, request):
-        r"""将指定身份策略版本设置为默认版本
-
-        该接口可以用于将指定身份策略的指定版本设置为默认版本。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SetDefaultPolicyVersionV5
-        :type request: :class:`huaweicloudsdkiam.v5.SetDefaultPolicyVersionV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.SetDefaultPolicyVersionV5Response`
-        """
-        http_info = self._set_default_policy_version_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def set_default_policy_version_v5_async_invoker(self, request):
-        http_info = self._set_default_policy_version_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _set_default_policy_version_v5_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v5/policies/{policy_id}/versions/{version_id}/set-default",
-            "request_type": request.__class__.__name__,
-            "response_type": "SetDefaultPolicyVersionV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'policy_id' in local_var_params:
-            path_params['policy_id'] = local_var_params['policy_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def delete_resource_tags_v5_async(self, request):
         r"""删除指定资源的部分标签
 
@@ -3409,270 +3738,6 @@ class IamAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_service_linked_agency_v5_async(self, request):
-        r"""创建服务关联委托
-
-        该接口可以用于创建服务关联委托。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateServiceLinkedAgencyV5
-        :type request: :class:`huaweicloudsdkiam.v5.CreateServiceLinkedAgencyV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.CreateServiceLinkedAgencyV5Response`
-        """
-        http_info = self._create_service_linked_agency_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_service_linked_agency_v5_async_invoker(self, request):
-        http_info = self._create_service_linked_agency_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_service_linked_agency_v5_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v5/service-linked-agencies",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateServiceLinkedAgencyV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_service_linked_agency_v5_async(self, request):
-        r"""删除服务关联委托
-
-        该接口可以用于服务关联委托删除自己。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteServiceLinkedAgencyV5
-        :type request: :class:`huaweicloudsdkiam.v5.DeleteServiceLinkedAgencyV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.DeleteServiceLinkedAgencyV5Response`
-        """
-        http_info = self._delete_service_linked_agency_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_service_linked_agency_v5_async_invoker(self, request):
-        http_info = self._delete_service_linked_agency_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_service_linked_agency_v5_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v5/service-linked-agencies/{agency_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteServiceLinkedAgencyV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'agency_id' in local_var_params:
-            path_params['agency_id'] = local_var_params['agency_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def get_service_linked_agency_deletion_status_v5_async(self, request):
-        r"""获取服务关联委托删除状态
-
-        该接口可以用于获取服务关联委托删除状态。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetServiceLinkedAgencyDeletionStatusV5
-        :type request: :class:`huaweicloudsdkiam.v5.GetServiceLinkedAgencyDeletionStatusV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.GetServiceLinkedAgencyDeletionStatusV5Response`
-        """
-        http_info = self._get_service_linked_agency_deletion_status_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_service_linked_agency_deletion_status_v5_async_invoker(self, request):
-        http_info = self._get_service_linked_agency_deletion_status_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_service_linked_agency_deletion_status_v5_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v5/service-linked-agencies/deletion-task/{deletion_task_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetServiceLinkedAgencyDeletionStatusV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'deletion_task_id' in local_var_params:
-            path_params['deletion_task_id'] = local_var_params['deletion_task_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam-used-authn5']
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_service_principals_v5_async(self, request):
-        r"""获取全部服务主体
-
-        该接口可以用于获取全部服务主体。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListServicePrincipalsV5
-        :type request: :class:`huaweicloudsdkiam.v5.ListServicePrincipalsV5Request`
-        :rtype: :class:`huaweicloudsdkiam.v5.ListServicePrincipalsV5Response`
-        """
-        http_info = self._list_service_principals_v5_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_service_principals_v5_async_invoker(self, request):
-        http_info = self._list_service_principals_v5_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_service_principals_v5_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v5/service-principals",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListServicePrincipalsV5Response"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

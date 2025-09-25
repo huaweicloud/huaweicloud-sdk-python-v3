@@ -55,11 +55,11 @@ class OrderItem:
         :type number: str
         :param title: 标题
         :type title: str
-        :param type: 工单类型:IDC运维 设备运维 设备检查 客户陪同
+        :param type: 服务单类型:IDC运维 设备运维 设备检查 客户陪同
         :type type: str
         :param sub_type: 具体操作类型:设备物理上下电
         :type sub_type: str
-        :param model_code: 工单类型编码
+        :param model_code: 服务单类型编码
         :type model_code: str
         :param room_code: 机房编码
         :type room_code: str
@@ -163,7 +163,7 @@ class OrderItem:
     def type(self):
         r"""Gets the type of this OrderItem.
 
-        工单类型:IDC运维 设备运维 设备检查 客户陪同
+        服务单类型:IDC运维 设备运维 设备检查 客户陪同
 
         :return: The type of this OrderItem.
         :rtype: str
@@ -174,7 +174,7 @@ class OrderItem:
     def type(self, type):
         r"""Sets the type of this OrderItem.
 
-        工单类型:IDC运维 设备运维 设备检查 客户陪同
+        服务单类型:IDC运维 设备运维 设备检查 客户陪同
 
         :param type: The type of this OrderItem.
         :type type: str
@@ -207,7 +207,7 @@ class OrderItem:
     def model_code(self):
         r"""Gets the model_code of this OrderItem.
 
-        工单类型编码
+        服务单类型编码
 
         :return: The model_code of this OrderItem.
         :rtype: str
@@ -218,7 +218,7 @@ class OrderItem:
     def model_code(self, model_code):
         r"""Sets the model_code of this OrderItem.
 
-        工单类型编码
+        服务单类型编码
 
         :param model_code: The model_code of this OrderItem.
         :type model_code: str

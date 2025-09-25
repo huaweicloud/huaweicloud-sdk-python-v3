@@ -51,7 +51,7 @@ class PolicyListDataList:
         :type is_default: bool
         :param port_list: 端口列表
         :type port_list: list[int]
-        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Winodws.
+        :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows.
         :type os_type: str
         :param status: 防护状态，包含如下3种 - applying ：生效中 - success ：已生效 - disable ：未生效
         :type status: str
@@ -197,7 +197,7 @@ class PolicyListDataList:
     def os_type(self):
         r"""Gets the os_type of this PolicyListDataList.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Winodws.
+        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows.
 
         :return: The os_type of this PolicyListDataList.
         :rtype: str
@@ -208,7 +208,7 @@ class PolicyListDataList:
     def os_type(self, os_type):
         r"""Sets the os_type of this PolicyListDataList.
 
-        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Winodws.
+        操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows.
 
         :param os_type: The os_type of this PolicyListDataList.
         :type os_type: str

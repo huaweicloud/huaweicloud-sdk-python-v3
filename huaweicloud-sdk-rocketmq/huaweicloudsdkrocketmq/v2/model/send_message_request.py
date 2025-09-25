@@ -19,7 +19,7 @@ class SendMessageRequest:
     openapi_types = {
         'engine': 'str',
         'instance_id': 'str',
-        'body': 'SendMessageResp'
+        'body': 'SendMessageRep'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class SendMessageRequest:
         :param instance_id: **参数解释**： 实例ID。获取方法如下：登录RocketMQ控制台，在RocketMQ实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
         :param body: Body of the SendMessageRequest
-        :type body: :class:`huaweicloudsdkrocketmq.v2.SendMessageResp`
+        :type body: :class:`huaweicloudsdkrocketmq.v2.SendMessageRep`
         """
         
         
@@ -102,7 +102,7 @@ class SendMessageRequest:
         r"""Gets the body of this SendMessageRequest.
 
         :return: The body of this SendMessageRequest.
-        :rtype: :class:`huaweicloudsdkrocketmq.v2.SendMessageResp`
+        :rtype: :class:`huaweicloudsdkrocketmq.v2.SendMessageRep`
         """
         return self._body
 
@@ -111,7 +111,7 @@ class SendMessageRequest:
         r"""Sets the body of this SendMessageRequest.
 
         :param body: The body of this SendMessageRequest.
-        :type body: :class:`huaweicloudsdkrocketmq.v2.SendMessageResp`
+        :type body: :class:`huaweicloudsdkrocketmq.v2.SendMessageRep`
         """
         self._body = body
 

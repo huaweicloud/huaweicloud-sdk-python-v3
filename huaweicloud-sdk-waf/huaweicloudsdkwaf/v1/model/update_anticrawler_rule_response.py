@@ -58,7 +58,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
         :type timestamp: int
         :param status: 规则状态，0：关闭，1：开启
         :type status: int
-        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
         :type priority: int
         """
         
@@ -249,7 +249,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
     def priority(self):
         r"""Gets the priority of this UpdateAnticrawlerRuleResponse.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
 
         :return: The priority of this UpdateAnticrawlerRuleResponse.
         :rtype: int
@@ -260,7 +260,7 @@ class UpdateAnticrawlerRuleResponse(SdkResponse):
     def priority(self, priority):
         r"""Sets the priority of this UpdateAnticrawlerRuleResponse.
 
-        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到1000。
+        执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
 
         :param priority: The priority of this UpdateAnticrawlerRuleResponse.
         :type priority: int

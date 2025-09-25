@@ -19,15 +19,19 @@ class ListJobResponse(SdkResponse):
 
     openapi_types = {
         'jobs': 'list[JobListDto]',
-        'count': 'int'
+        'count': 'int',
+        'running_count': 'int',
+        'waiting_count': 'int'
     }
 
     attribute_map = {
         'jobs': 'jobs',
-        'count': 'count'
+        'count': 'count',
+        'running_count': 'running_count',
+        'waiting_count': 'waiting_count'
     }
 
-    def __init__(self, jobs=None, count=None):
+    def __init__(self, jobs=None, count=None, running_count=None, waiting_count=None):
         r"""ListJobResponse
 
         The model defined in huaweicloud sdk
@@ -36,18 +40,28 @@ class ListJobResponse(SdkResponse):
         :type jobs: list[:class:`huaweicloudsdkeihealth.v1.JobListDto`]
         :param count: 作业总数
         :type count: int
+        :param running_count: **参数解释**： 运行中作业总数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type running_count: int
+        :param waiting_count: **参数解释**： 等待中作业总数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type waiting_count: int
         """
         
         super(ListJobResponse, self).__init__()
 
         self._jobs = None
         self._count = None
+        self._running_count = None
+        self._waiting_count = None
         self.discriminator = None
 
         if jobs is not None:
             self.jobs = jobs
         if count is not None:
             self.count = count
+        if running_count is not None:
+            self.running_count = running_count
+        if waiting_count is not None:
+            self.waiting_count = waiting_count
 
     @property
     def jobs(self):
@@ -92,6 +106,50 @@ class ListJobResponse(SdkResponse):
         :type count: int
         """
         self._count = count
+
+    @property
+    def running_count(self):
+        r"""Gets the running_count of this ListJobResponse.
+
+        **参数解释**： 运行中作业总数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The running_count of this ListJobResponse.
+        :rtype: int
+        """
+        return self._running_count
+
+    @running_count.setter
+    def running_count(self, running_count):
+        r"""Sets the running_count of this ListJobResponse.
+
+        **参数解释**： 运行中作业总数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param running_count: The running_count of this ListJobResponse.
+        :type running_count: int
+        """
+        self._running_count = running_count
+
+    @property
+    def waiting_count(self):
+        r"""Gets the waiting_count of this ListJobResponse.
+
+        **参数解释**： 等待中作业总数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The waiting_count of this ListJobResponse.
+        :rtype: int
+        """
+        return self._waiting_count
+
+    @waiting_count.setter
+    def waiting_count(self, waiting_count):
+        r"""Sets the waiting_count of this ListJobResponse.
+
+        **参数解释**： 等待中作业总数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param waiting_count: The waiting_count of this ListJobResponse.
+        :type waiting_count: int
+        """
+        self._waiting_count = waiting_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

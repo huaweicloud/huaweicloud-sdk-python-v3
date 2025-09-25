@@ -45,23 +45,23 @@ class HandleAffectBaselineInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释** 主机id **取值范围**   字符长度1-256位
+        :param host_id: **参数解释** 主机id **取值范围** 字符长度1-256位
         :type host_id: str
-        :param host_name: **参数解释** 服务器名称 **取值范围**   字符长度1-64位
+        :param host_name: **参数解释** 服务器名称 **取值范围** 字符长度1-64位
         :type host_name: str
-        :param public_ip: **参数解释** 服务器公网ip **取值范围**   字符长度0-128位
+        :param public_ip: **参数解释** 服务器公网ip **取值范围** 字符长度0-128位
         :type public_ip: str
-        :param private_ip: **参数解释** 服务器私网ip **取值范围**   字符长度0-2048位
+        :param private_ip: **参数解释** 服务器私网ip **取值范围** 字符长度0-2048位
         :type private_ip: str
-        :param asset_value: **参数解释** 资产重要性，包含如下3种 **取值范围**   - important ：重要资产 - common    ：一般资产 - test      ：测试资产
+        :param asset_value: **参数解释** 资产重要性，包含如下3种 **取值范围** - important ：重要资产 - common    ：一般资产 - test      ：测试资产
         :type asset_value: str
-        :param check_type: **参数解释** 基线检查的基线名称 **取值范围**   字符长度0-255位
+        :param check_type: **参数解释** 基线检查的基线名称 **取值范围** 字符长度0-255位
         :type check_type: str
-        :param standard: **参数解释** 标准类型，包含如下3种 **取值范围**   - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准
+        :param standard: **参数解释** 标准类型，包含如下3种 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准
         :type standard: str
-        :param tag: **参数解释** 基线检查中检查项的检查类型 **取值范围**  字符长度0-128位
+        :param tag: **参数解释** 基线检查中检查项的检查类型 **取值范围** 字符长度0-128位
         :type tag: str
-        :param check_rule_name: **参数解释** 基线检查中检查项的名称 **取值范围**  字符长度0-2048位
+        :param check_rule_name: **参数解释** 基线检查中检查项的名称 **取值范围** 字符长度0-2048位
         :type check_rule_name: str
         """
         
@@ -101,7 +101,7 @@ class HandleAffectBaselineInfo:
     def host_id(self):
         r"""Gets the host_id of this HandleAffectBaselineInfo.
 
-        **参数解释** 主机id **取值范围**   字符长度1-256位
+        **参数解释** 主机id **取值范围** 字符长度1-256位
 
         :return: The host_id of this HandleAffectBaselineInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class HandleAffectBaselineInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this HandleAffectBaselineInfo.
 
-        **参数解释** 主机id **取值范围**   字符长度1-256位
+        **参数解释** 主机id **取值范围** 字符长度1-256位
 
         :param host_id: The host_id of this HandleAffectBaselineInfo.
         :type host_id: str
@@ -123,7 +123,7 @@ class HandleAffectBaselineInfo:
     def host_name(self):
         r"""Gets the host_name of this HandleAffectBaselineInfo.
 
-        **参数解释** 服务器名称 **取值范围**   字符长度1-64位
+        **参数解释** 服务器名称 **取值范围** 字符长度1-64位
 
         :return: The host_name of this HandleAffectBaselineInfo.
         :rtype: str
@@ -134,7 +134,7 @@ class HandleAffectBaselineInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this HandleAffectBaselineInfo.
 
-        **参数解释** 服务器名称 **取值范围**   字符长度1-64位
+        **参数解释** 服务器名称 **取值范围** 字符长度1-64位
 
         :param host_name: The host_name of this HandleAffectBaselineInfo.
         :type host_name: str
@@ -145,7 +145,7 @@ class HandleAffectBaselineInfo:
     def public_ip(self):
         r"""Gets the public_ip of this HandleAffectBaselineInfo.
 
-        **参数解释** 服务器公网ip **取值范围**   字符长度0-128位
+        **参数解释** 服务器公网ip **取值范围** 字符长度0-128位
 
         :return: The public_ip of this HandleAffectBaselineInfo.
         :rtype: str
@@ -156,7 +156,7 @@ class HandleAffectBaselineInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this HandleAffectBaselineInfo.
 
-        **参数解释** 服务器公网ip **取值范围**   字符长度0-128位
+        **参数解释** 服务器公网ip **取值范围** 字符长度0-128位
 
         :param public_ip: The public_ip of this HandleAffectBaselineInfo.
         :type public_ip: str
@@ -167,7 +167,7 @@ class HandleAffectBaselineInfo:
     def private_ip(self):
         r"""Gets the private_ip of this HandleAffectBaselineInfo.
 
-        **参数解释** 服务器私网ip **取值范围**   字符长度0-2048位
+        **参数解释** 服务器私网ip **取值范围** 字符长度0-2048位
 
         :return: The private_ip of this HandleAffectBaselineInfo.
         :rtype: str
@@ -178,7 +178,7 @@ class HandleAffectBaselineInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this HandleAffectBaselineInfo.
 
-        **参数解释** 服务器私网ip **取值范围**   字符长度0-2048位
+        **参数解释** 服务器私网ip **取值范围** 字符长度0-2048位
 
         :param private_ip: The private_ip of this HandleAffectBaselineInfo.
         :type private_ip: str
@@ -189,7 +189,7 @@ class HandleAffectBaselineInfo:
     def asset_value(self):
         r"""Gets the asset_value of this HandleAffectBaselineInfo.
 
-        **参数解释** 资产重要性，包含如下3种 **取值范围**   - important ：重要资产 - common    ：一般资产 - test      ：测试资产
+        **参数解释** 资产重要性，包含如下3种 **取值范围** - important ：重要资产 - common    ：一般资产 - test      ：测试资产
 
         :return: The asset_value of this HandleAffectBaselineInfo.
         :rtype: str
@@ -200,7 +200,7 @@ class HandleAffectBaselineInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this HandleAffectBaselineInfo.
 
-        **参数解释** 资产重要性，包含如下3种 **取值范围**   - important ：重要资产 - common    ：一般资产 - test      ：测试资产
+        **参数解释** 资产重要性，包含如下3种 **取值范围** - important ：重要资产 - common    ：一般资产 - test      ：测试资产
 
         :param asset_value: The asset_value of this HandleAffectBaselineInfo.
         :type asset_value: str
@@ -211,7 +211,7 @@ class HandleAffectBaselineInfo:
     def check_type(self):
         r"""Gets the check_type of this HandleAffectBaselineInfo.
 
-        **参数解释** 基线检查的基线名称 **取值范围**   字符长度0-255位
+        **参数解释** 基线检查的基线名称 **取值范围** 字符长度0-255位
 
         :return: The check_type of this HandleAffectBaselineInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class HandleAffectBaselineInfo:
     def check_type(self, check_type):
         r"""Sets the check_type of this HandleAffectBaselineInfo.
 
-        **参数解释** 基线检查的基线名称 **取值范围**   字符长度0-255位
+        **参数解释** 基线检查的基线名称 **取值范围** 字符长度0-255位
 
         :param check_type: The check_type of this HandleAffectBaselineInfo.
         :type check_type: str
@@ -233,7 +233,7 @@ class HandleAffectBaselineInfo:
     def standard(self):
         r"""Gets the standard of this HandleAffectBaselineInfo.
 
-        **参数解释** 标准类型，包含如下3种 **取值范围**   - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准
+        **参数解释** 标准类型，包含如下3种 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准
 
         :return: The standard of this HandleAffectBaselineInfo.
         :rtype: str
@@ -244,7 +244,7 @@ class HandleAffectBaselineInfo:
     def standard(self, standard):
         r"""Sets the standard of this HandleAffectBaselineInfo.
 
-        **参数解释** 标准类型，包含如下3种 **取值范围**   - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准
+        **参数解释** 标准类型，包含如下3种 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准
 
         :param standard: The standard of this HandleAffectBaselineInfo.
         :type standard: str
@@ -255,7 +255,7 @@ class HandleAffectBaselineInfo:
     def tag(self):
         r"""Gets the tag of this HandleAffectBaselineInfo.
 
-        **参数解释** 基线检查中检查项的检查类型 **取值范围**  字符长度0-128位
+        **参数解释** 基线检查中检查项的检查类型 **取值范围** 字符长度0-128位
 
         :return: The tag of this HandleAffectBaselineInfo.
         :rtype: str
@@ -266,7 +266,7 @@ class HandleAffectBaselineInfo:
     def tag(self, tag):
         r"""Sets the tag of this HandleAffectBaselineInfo.
 
-        **参数解释** 基线检查中检查项的检查类型 **取值范围**  字符长度0-128位
+        **参数解释** 基线检查中检查项的检查类型 **取值范围** 字符长度0-128位
 
         :param tag: The tag of this HandleAffectBaselineInfo.
         :type tag: str
@@ -277,7 +277,7 @@ class HandleAffectBaselineInfo:
     def check_rule_name(self):
         r"""Gets the check_rule_name of this HandleAffectBaselineInfo.
 
-        **参数解释** 基线检查中检查项的名称 **取值范围**  字符长度0-2048位
+        **参数解释** 基线检查中检查项的名称 **取值范围** 字符长度0-2048位
 
         :return: The check_rule_name of this HandleAffectBaselineInfo.
         :rtype: str
@@ -288,7 +288,7 @@ class HandleAffectBaselineInfo:
     def check_rule_name(self, check_rule_name):
         r"""Sets the check_rule_name of this HandleAffectBaselineInfo.
 
-        **参数解释** 基线检查中检查项的名称 **取值范围**  字符长度0-2048位
+        **参数解释** 基线检查中检查项的名称 **取值范围** 字符长度0-2048位
 
         :param check_rule_name: The check_rule_name of this HandleAffectBaselineInfo.
         :type check_rule_name: str

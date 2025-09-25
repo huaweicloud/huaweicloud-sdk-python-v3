@@ -18,20 +18,51 @@ class CreatePerformanceResourceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str'
     }
 
     attribute_map = {
+        'id': 'id'
     }
 
-    def __init__(self):
+    def __init__(self, id=None):
         r"""CreatePerformanceResourceResponse
 
         The model defined in huaweicloud sdk
 
+        :param id: **参数解释**： 性能加速ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type id: str
         """
         
         super(CreatePerformanceResourceResponse, self).__init__()
+
+        self._id = None
         self.discriminator = None
+
+        if id is not None:
+            self.id = id
+
+    @property
+    def id(self):
+        r"""Gets the id of this CreatePerformanceResourceResponse.
+
+        **参数解释**： 性能加速ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The id of this CreatePerformanceResourceResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this CreatePerformanceResourceResponse.
+
+        **参数解释**： 性能加速ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param id: The id of this CreatePerformanceResourceResponse.
+        :type id: str
+        """
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

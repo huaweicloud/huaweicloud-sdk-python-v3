@@ -22,8 +22,8 @@ class ListDatabaseVolumeSummaryResponse(SdkResponse):
         'data_disk_usage': 'str',
         'space_usage_growth_per_day': 'str',
         'estimated_remaining_days': 'str',
-        'cn_components': 'list[ComponentInfoResult]',
-        'dn_components': 'list[ComponentInfoResult]'
+        'cn_components': 'list[CnComponentInfoResult]',
+        'dn_components': 'list[DnComponentInfoResult]'
     }
 
     attribute_map = {
@@ -49,9 +49,9 @@ class ListDatabaseVolumeSummaryResponse(SdkResponse):
         :param estimated_remaining_days: **参数解释**: 预计可用天数。 **取值范围**: 不涉及。
         :type estimated_remaining_days: str
         :param cn_components: **参数解释**: CN节点信息。
-        :type cn_components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ComponentInfoResult`]
+        :type cn_components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CnComponentInfoResult`]
         :param dn_components: **参数解释**: DN节点信息。
-        :type dn_components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ComponentInfoResult`]
+        :type dn_components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DnComponentInfoResult`]
         """
         
         super(ListDatabaseVolumeSummaryResponse, self).__init__()
@@ -172,7 +172,7 @@ class ListDatabaseVolumeSummaryResponse(SdkResponse):
         **参数解释**: CN节点信息。
 
         :return: The cn_components of this ListDatabaseVolumeSummaryResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ComponentInfoResult`]
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CnComponentInfoResult`]
         """
         return self._cn_components
 
@@ -183,7 +183,7 @@ class ListDatabaseVolumeSummaryResponse(SdkResponse):
         **参数解释**: CN节点信息。
 
         :param cn_components: The cn_components of this ListDatabaseVolumeSummaryResponse.
-        :type cn_components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ComponentInfoResult`]
+        :type cn_components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CnComponentInfoResult`]
         """
         self._cn_components = cn_components
 
@@ -194,7 +194,7 @@ class ListDatabaseVolumeSummaryResponse(SdkResponse):
         **参数解释**: DN节点信息。
 
         :return: The dn_components of this ListDatabaseVolumeSummaryResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ComponentInfoResult`]
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DnComponentInfoResult`]
         """
         return self._dn_components
 
@@ -205,7 +205,7 @@ class ListDatabaseVolumeSummaryResponse(SdkResponse):
         **参数解释**: DN节点信息。
 
         :param dn_components: The dn_components of this ListDatabaseVolumeSummaryResponse.
-        :type dn_components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ComponentInfoResult`]
+        :type dn_components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.DnComponentInfoResult`]
         """
         self._dn_components = dn_components
 

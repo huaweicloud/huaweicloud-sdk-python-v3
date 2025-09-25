@@ -55,29 +55,29 @@ class UserChangeHistoryResponseInfo:
 
         :param agent_id: **参数解释** agent标识 **取值范围** 长度1-128 
         :type agent_id: str
-        :param change_type: **参数解释** 变更类型 **取值范围**     - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改 
+        :param change_type: **参数解释** 变更类型 **取值范围** - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改 
         :type change_type: str
-        :param host_id: **参数解释** 主机ID **取值范围** 长度1-128         
+        :param host_id: **参数解释** 主机ID **取值范围** 长度1-128 
         :type host_id: str
-        :param host_name: **参数解释** 服务器名称 **取值范围** 长度1-128        
+        :param host_name: **参数解释** 服务器名称 **取值范围** 长度1-128 
         :type host_name: str
-        :param private_ip: **参数解释** 服务器私有IP **取值范围** 长度1-128      
+        :param private_ip: **参数解释** 服务器私有IP **取值范围** 长度1-128 
         :type private_ip: str
-        :param login_permission: **参数解释** 是否有登录权限 **取值范围** true: 具有登录权限 false: 不具有登录权限     
+        :param login_permission: **参数解释** 是否有登录权限 **取值范围** true: 具有登录权限 false: 不具有登录权限 
         :type login_permission: bool
-        :param root_permission: **参数解释** 是否有root权限 **取值范围** true: 具有root权限 false: 不具有root权限           
+        :param root_permission: **参数解释** 是否有root权限 **取值范围** true: 具有root权限 false: 不具有root权限 
         :type root_permission: bool
         :param user_group_name: **参数解释** 用户组名称 **取值范围** 长度1-128 
         :type user_group_name: str
         :param user_home_dir: **参数解释** 用户目录 **取值范围** 长度1-128 
         :type user_home_dir: str
-        :param shell: **参数解释** 用户启动shell **取值范围** 长度1-128         
+        :param shell: **参数解释** 用户启动shell **取值范围** 长度1-128 
         :type shell: str
-        :param user_name: **参数解释** 用户名称 **取值范围** 长度1-128         
+        :param user_name: **参数解释** 用户名称 **取值范围** 长度1-128 
         :type user_name: str
-        :param expire_time: **参数解释** 到期时间，采用时间戳，默认毫秒 **取值范围** 长度0-4070880000000      
+        :param expire_time: **参数解释** 到期时间，采用时间戳，默认毫秒 **取值范围** 长度0-4070880000000 
         :type expire_time: int
-        :param recent_scan_time: **参数解释** 账号增加、修改、删除等操作的变更时间 **取值范围** 长度0-4070880000000            
+        :param recent_scan_time: **参数解释** 账号增加、修改、删除等操作的变更时间 **取值范围** 长度0-4070880000000 
         :type recent_scan_time: int
         """
         
@@ -151,7 +151,7 @@ class UserChangeHistoryResponseInfo:
     def change_type(self):
         r"""Gets the change_type of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 变更类型 **取值范围**     - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改 
+        **参数解释** 变更类型 **取值范围** - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改 
 
         :return: The change_type of this UserChangeHistoryResponseInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class UserChangeHistoryResponseInfo:
     def change_type(self, change_type):
         r"""Sets the change_type of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 变更类型 **取值范围**     - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改 
+        **参数解释** 变更类型 **取值范围** - ADD ：添加 - DELETE ：删除 - MODIFY ： 修改 
 
         :param change_type: The change_type of this UserChangeHistoryResponseInfo.
         :type change_type: str
@@ -173,7 +173,7 @@ class UserChangeHistoryResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 主机ID **取值范围** 长度1-128         
+        **参数解释** 主机ID **取值范围** 长度1-128 
 
         :return: The host_id of this UserChangeHistoryResponseInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class UserChangeHistoryResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 主机ID **取值范围** 长度1-128         
+        **参数解释** 主机ID **取值范围** 长度1-128 
 
         :param host_id: The host_id of this UserChangeHistoryResponseInfo.
         :type host_id: str
@@ -195,7 +195,7 @@ class UserChangeHistoryResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 服务器名称 **取值范围** 长度1-128        
+        **参数解释** 服务器名称 **取值范围** 长度1-128 
 
         :return: The host_name of this UserChangeHistoryResponseInfo.
         :rtype: str
@@ -206,7 +206,7 @@ class UserChangeHistoryResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 服务器名称 **取值范围** 长度1-128        
+        **参数解释** 服务器名称 **取值范围** 长度1-128 
 
         :param host_name: The host_name of this UserChangeHistoryResponseInfo.
         :type host_name: str
@@ -217,7 +217,7 @@ class UserChangeHistoryResponseInfo:
     def private_ip(self):
         r"""Gets the private_ip of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 服务器私有IP **取值范围** 长度1-128      
+        **参数解释** 服务器私有IP **取值范围** 长度1-128 
 
         :return: The private_ip of this UserChangeHistoryResponseInfo.
         :rtype: str
@@ -228,7 +228,7 @@ class UserChangeHistoryResponseInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 服务器私有IP **取值范围** 长度1-128      
+        **参数解释** 服务器私有IP **取值范围** 长度1-128 
 
         :param private_ip: The private_ip of this UserChangeHistoryResponseInfo.
         :type private_ip: str
@@ -239,7 +239,7 @@ class UserChangeHistoryResponseInfo:
     def login_permission(self):
         r"""Gets the login_permission of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 是否有登录权限 **取值范围** true: 具有登录权限 false: 不具有登录权限     
+        **参数解释** 是否有登录权限 **取值范围** true: 具有登录权限 false: 不具有登录权限 
 
         :return: The login_permission of this UserChangeHistoryResponseInfo.
         :rtype: bool
@@ -250,7 +250,7 @@ class UserChangeHistoryResponseInfo:
     def login_permission(self, login_permission):
         r"""Sets the login_permission of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 是否有登录权限 **取值范围** true: 具有登录权限 false: 不具有登录权限     
+        **参数解释** 是否有登录权限 **取值范围** true: 具有登录权限 false: 不具有登录权限 
 
         :param login_permission: The login_permission of this UserChangeHistoryResponseInfo.
         :type login_permission: bool
@@ -261,7 +261,7 @@ class UserChangeHistoryResponseInfo:
     def root_permission(self):
         r"""Gets the root_permission of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 是否有root权限 **取值范围** true: 具有root权限 false: 不具有root权限           
+        **参数解释** 是否有root权限 **取值范围** true: 具有root权限 false: 不具有root权限 
 
         :return: The root_permission of this UserChangeHistoryResponseInfo.
         :rtype: bool
@@ -272,7 +272,7 @@ class UserChangeHistoryResponseInfo:
     def root_permission(self, root_permission):
         r"""Sets the root_permission of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 是否有root权限 **取值范围** true: 具有root权限 false: 不具有root权限           
+        **参数解释** 是否有root权限 **取值范围** true: 具有root权限 false: 不具有root权限 
 
         :param root_permission: The root_permission of this UserChangeHistoryResponseInfo.
         :type root_permission: bool
@@ -327,7 +327,7 @@ class UserChangeHistoryResponseInfo:
     def shell(self):
         r"""Gets the shell of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 用户启动shell **取值范围** 长度1-128         
+        **参数解释** 用户启动shell **取值范围** 长度1-128 
 
         :return: The shell of this UserChangeHistoryResponseInfo.
         :rtype: str
@@ -338,7 +338,7 @@ class UserChangeHistoryResponseInfo:
     def shell(self, shell):
         r"""Sets the shell of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 用户启动shell **取值范围** 长度1-128         
+        **参数解释** 用户启动shell **取值范围** 长度1-128 
 
         :param shell: The shell of this UserChangeHistoryResponseInfo.
         :type shell: str
@@ -349,7 +349,7 @@ class UserChangeHistoryResponseInfo:
     def user_name(self):
         r"""Gets the user_name of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 用户名称 **取值范围** 长度1-128         
+        **参数解释** 用户名称 **取值范围** 长度1-128 
 
         :return: The user_name of this UserChangeHistoryResponseInfo.
         :rtype: str
@@ -360,7 +360,7 @@ class UserChangeHistoryResponseInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 用户名称 **取值范围** 长度1-128         
+        **参数解释** 用户名称 **取值范围** 长度1-128 
 
         :param user_name: The user_name of this UserChangeHistoryResponseInfo.
         :type user_name: str
@@ -371,7 +371,7 @@ class UserChangeHistoryResponseInfo:
     def expire_time(self):
         r"""Gets the expire_time of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 到期时间，采用时间戳，默认毫秒 **取值范围** 长度0-4070880000000      
+        **参数解释** 到期时间，采用时间戳，默认毫秒 **取值范围** 长度0-4070880000000 
 
         :return: The expire_time of this UserChangeHistoryResponseInfo.
         :rtype: int
@@ -382,7 +382,7 @@ class UserChangeHistoryResponseInfo:
     def expire_time(self, expire_time):
         r"""Sets the expire_time of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 到期时间，采用时间戳，默认毫秒 **取值范围** 长度0-4070880000000      
+        **参数解释** 到期时间，采用时间戳，默认毫秒 **取值范围** 长度0-4070880000000 
 
         :param expire_time: The expire_time of this UserChangeHistoryResponseInfo.
         :type expire_time: int
@@ -393,7 +393,7 @@ class UserChangeHistoryResponseInfo:
     def recent_scan_time(self):
         r"""Gets the recent_scan_time of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 账号增加、修改、删除等操作的变更时间 **取值范围** 长度0-4070880000000            
+        **参数解释** 账号增加、修改、删除等操作的变更时间 **取值范围** 长度0-4070880000000 
 
         :return: The recent_scan_time of this UserChangeHistoryResponseInfo.
         :rtype: int
@@ -404,7 +404,7 @@ class UserChangeHistoryResponseInfo:
     def recent_scan_time(self, recent_scan_time):
         r"""Sets the recent_scan_time of this UserChangeHistoryResponseInfo.
 
-        **参数解释** 账号增加、修改、删除等操作的变更时间 **取值范围** 长度0-4070880000000            
+        **参数解释** 账号增加、修改、删除等操作的变更时间 **取值范围** 长度0-4070880000000 
 
         :param recent_scan_time: The recent_scan_time of this UserChangeHistoryResponseInfo.
         :type recent_scan_time: int

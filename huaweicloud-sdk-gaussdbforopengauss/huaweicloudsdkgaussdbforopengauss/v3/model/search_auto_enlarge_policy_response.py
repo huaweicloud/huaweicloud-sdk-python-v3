@@ -44,21 +44,21 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param switch_option: 磁盘自动扩容开关。
+        :param switch_option: **参数解释**: 磁盘自动扩容开关。 **取值范围**: 不涉及。
         :type switch_option: bool
-        :param limit_volume_size: 存储自动扩容上限。
+        :param limit_volume_size: **参数解释**: 存储自动扩容上限。 **取值范围**: 不涉及。
         :type limit_volume_size: int
-        :param min_volume_size: 最小扩容磁盘容量。
+        :param min_volume_size: **参数解释**: 最小扩容磁盘容量。 **取值范围**: 不涉及。
         :type min_volume_size: int
-        :param max_volume_size: 最大扩容磁盘容量。
+        :param max_volume_size: **参数解释**: 最大扩容磁盘容量。 **取值范围**: 不涉及。
         :type max_volume_size: int
-        :param trigger_available_percent: 可用存储空间率。
+        :param trigger_available_percent: **参数解释**: 可用存储空间率。 **取值范围**: 不涉及。
         :type trigger_available_percent: int
-        :param percents: 空间率集合。
+        :param percents: **参数解释**: 空间率集合。 **取值范围**: 不涉及。
         :type percents: list[int]
-        :param step_size: 扩容步长，固定大小扩容方式。
+        :param step_size: **参数解释**: 扩容步长，固定大小扩容方式。 **取值范围**: 不涉及。
         :type step_size: int
-        :param step_percent: 扩容步长，百分比扩容方式。
+        :param step_percent: **参数解释**: 扩容步长，百分比扩容方式。 **取值范围**: 不涉及。
         :type step_percent: int
         """
         
@@ -95,7 +95,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def switch_option(self):
         r"""Gets the switch_option of this SearchAutoEnlargePolicyResponse.
 
-        磁盘自动扩容开关。
+        **参数解释**: 磁盘自动扩容开关。 **取值范围**: 不涉及。
 
         :return: The switch_option of this SearchAutoEnlargePolicyResponse.
         :rtype: bool
@@ -106,7 +106,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def switch_option(self, switch_option):
         r"""Sets the switch_option of this SearchAutoEnlargePolicyResponse.
 
-        磁盘自动扩容开关。
+        **参数解释**: 磁盘自动扩容开关。 **取值范围**: 不涉及。
 
         :param switch_option: The switch_option of this SearchAutoEnlargePolicyResponse.
         :type switch_option: bool
@@ -117,7 +117,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def limit_volume_size(self):
         r"""Gets the limit_volume_size of this SearchAutoEnlargePolicyResponse.
 
-        存储自动扩容上限。
+        **参数解释**: 存储自动扩容上限。 **取值范围**: 不涉及。
 
         :return: The limit_volume_size of this SearchAutoEnlargePolicyResponse.
         :rtype: int
@@ -128,7 +128,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def limit_volume_size(self, limit_volume_size):
         r"""Sets the limit_volume_size of this SearchAutoEnlargePolicyResponse.
 
-        存储自动扩容上限。
+        **参数解释**: 存储自动扩容上限。 **取值范围**: 不涉及。
 
         :param limit_volume_size: The limit_volume_size of this SearchAutoEnlargePolicyResponse.
         :type limit_volume_size: int
@@ -139,7 +139,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def min_volume_size(self):
         r"""Gets the min_volume_size of this SearchAutoEnlargePolicyResponse.
 
-        最小扩容磁盘容量。
+        **参数解释**: 最小扩容磁盘容量。 **取值范围**: 不涉及。
 
         :return: The min_volume_size of this SearchAutoEnlargePolicyResponse.
         :rtype: int
@@ -150,7 +150,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def min_volume_size(self, min_volume_size):
         r"""Sets the min_volume_size of this SearchAutoEnlargePolicyResponse.
 
-        最小扩容磁盘容量。
+        **参数解释**: 最小扩容磁盘容量。 **取值范围**: 不涉及。
 
         :param min_volume_size: The min_volume_size of this SearchAutoEnlargePolicyResponse.
         :type min_volume_size: int
@@ -161,7 +161,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def max_volume_size(self):
         r"""Gets the max_volume_size of this SearchAutoEnlargePolicyResponse.
 
-        最大扩容磁盘容量。
+        **参数解释**: 最大扩容磁盘容量。 **取值范围**: 不涉及。
 
         :return: The max_volume_size of this SearchAutoEnlargePolicyResponse.
         :rtype: int
@@ -172,7 +172,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def max_volume_size(self, max_volume_size):
         r"""Sets the max_volume_size of this SearchAutoEnlargePolicyResponse.
 
-        最大扩容磁盘容量。
+        **参数解释**: 最大扩容磁盘容量。 **取值范围**: 不涉及。
 
         :param max_volume_size: The max_volume_size of this SearchAutoEnlargePolicyResponse.
         :type max_volume_size: int
@@ -183,7 +183,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def trigger_available_percent(self):
         r"""Gets the trigger_available_percent of this SearchAutoEnlargePolicyResponse.
 
-        可用存储空间率。
+        **参数解释**: 可用存储空间率。 **取值范围**: 不涉及。
 
         :return: The trigger_available_percent of this SearchAutoEnlargePolicyResponse.
         :rtype: int
@@ -194,7 +194,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def trigger_available_percent(self, trigger_available_percent):
         r"""Sets the trigger_available_percent of this SearchAutoEnlargePolicyResponse.
 
-        可用存储空间率。
+        **参数解释**: 可用存储空间率。 **取值范围**: 不涉及。
 
         :param trigger_available_percent: The trigger_available_percent of this SearchAutoEnlargePolicyResponse.
         :type trigger_available_percent: int
@@ -205,7 +205,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def percents(self):
         r"""Gets the percents of this SearchAutoEnlargePolicyResponse.
 
-        空间率集合。
+        **参数解释**: 空间率集合。 **取值范围**: 不涉及。
 
         :return: The percents of this SearchAutoEnlargePolicyResponse.
         :rtype: list[int]
@@ -216,7 +216,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def percents(self, percents):
         r"""Sets the percents of this SearchAutoEnlargePolicyResponse.
 
-        空间率集合。
+        **参数解释**: 空间率集合。 **取值范围**: 不涉及。
 
         :param percents: The percents of this SearchAutoEnlargePolicyResponse.
         :type percents: list[int]
@@ -227,7 +227,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def step_size(self):
         r"""Gets the step_size of this SearchAutoEnlargePolicyResponse.
 
-        扩容步长，固定大小扩容方式。
+        **参数解释**: 扩容步长，固定大小扩容方式。 **取值范围**: 不涉及。
 
         :return: The step_size of this SearchAutoEnlargePolicyResponse.
         :rtype: int
@@ -238,7 +238,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def step_size(self, step_size):
         r"""Sets the step_size of this SearchAutoEnlargePolicyResponse.
 
-        扩容步长，固定大小扩容方式。
+        **参数解释**: 扩容步长，固定大小扩容方式。 **取值范围**: 不涉及。
 
         :param step_size: The step_size of this SearchAutoEnlargePolicyResponse.
         :type step_size: int
@@ -249,7 +249,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def step_percent(self):
         r"""Gets the step_percent of this SearchAutoEnlargePolicyResponse.
 
-        扩容步长，百分比扩容方式。
+        **参数解释**: 扩容步长，百分比扩容方式。 **取值范围**: 不涉及。
 
         :return: The step_percent of this SearchAutoEnlargePolicyResponse.
         :rtype: int
@@ -260,7 +260,7 @@ class SearchAutoEnlargePolicyResponse(SdkResponse):
     def step_percent(self, step_percent):
         r"""Sets the step_percent of this SearchAutoEnlargePolicyResponse.
 
-        扩容步长，百分比扩容方式。
+        **参数解释**: 扩容步长，百分比扩容方式。 **取值范围**: 不涉及。
 
         :param step_percent: The step_percent of this SearchAutoEnlargePolicyResponse.
         :type step_percent: int

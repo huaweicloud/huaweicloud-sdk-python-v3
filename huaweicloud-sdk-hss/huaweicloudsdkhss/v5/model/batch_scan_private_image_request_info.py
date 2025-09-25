@@ -67,7 +67,7 @@ class BatchScanPrivateImageRequestInfo:
         :type image_name: str
         :param image_version: 镜像版本
         :type image_version: str
-        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        :param image_type: 镜像类型，包含如下:   - private_image：SWR私有镜像仓库。   - shared_image：SWR共享镜像仓库。   - instance_image：SWR企业仓库。
         :type image_type: str
         :param scan_status: 扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - download_failed : 下载失败   - image_oversized : 镜像超大
         :type scan_status: str
@@ -267,7 +267,7 @@ class BatchScanPrivateImageRequestInfo:
     def image_type(self):
         r"""Gets the image_type of this BatchScanPrivateImageRequestInfo.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        镜像类型，包含如下:   - private_image：SWR私有镜像仓库。   - shared_image：SWR共享镜像仓库。   - instance_image：SWR企业仓库。
 
         :return: The image_type of this BatchScanPrivateImageRequestInfo.
         :rtype: str
@@ -278,7 +278,7 @@ class BatchScanPrivateImageRequestInfo:
     def image_type(self, image_type):
         r"""Sets the image_type of this BatchScanPrivateImageRequestInfo.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        镜像类型，包含如下:   - private_image：SWR私有镜像仓库。   - shared_image：SWR共享镜像仓库。   - instance_image：SWR企业仓库。
 
         :param image_type: The image_type of this BatchScanPrivateImageRequestInfo.
         :type image_type: str

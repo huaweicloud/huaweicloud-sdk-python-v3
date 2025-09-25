@@ -78,8 +78,7 @@ class AddKeystorePermissionRequestBody:
         self.modify = modify
         self.usage = usage
         self.user_name = user_name
-        if user_id is not None:
-            self.user_id = user_id
+        self.user_id = user_id
         self.setting = setting
         self.can_absent = can_absent
 

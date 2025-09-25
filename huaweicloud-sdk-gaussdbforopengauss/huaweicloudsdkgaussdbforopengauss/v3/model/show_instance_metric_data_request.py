@@ -45,15 +45,15 @@ class ShowInstanceMetricDataRequest:
         :type x_language: str
         :param instance_id: **参数解释**: 实例ID，此参数是用户创建实例的唯一标识。 **约束限制**: 不涉及。 **取值范围**: 只能由英文字母、数字组成，且长度为36个字符。 **默认取值**: 不涉及。
         :type instance_id: str
-        :param start_time: 开始时间，时间戳格式，例如：1756971683303。
+        :param start_time: **参数解释**: 开始时间，时间戳格式，例如：1756971683303。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type start_time: str
-        :param end_time: 结束时间，时间戳格式，例如：1756975283303。
+        :param end_time: **参数解释**: 结束时间，时间戳格式，例如：1756975283303。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type end_time: str
-        :param metric: 指标ID，可通过“查询指标分组的指标名称”接口获取，例如查询CPU使用率，传值 rds001_cpu_util。
+        :param metric: **参数解释**: 指标ID，可通过“查询指标分组的指标名称”接口获取，例如查询CPU使用率，传值 rds001_cpu_util。 **约束限制**: 不涉及。
         :type metric: str
-        :param node_id: 节点ID。
+        :param node_id: **参数解释**: 节点ID。 **约束限制**: 不涉及。
         :type node_id: str
-        :param component_id: 组件ID，例如dn_6001。
+        :param component_id: **参数解释**: 组件ID，例如dn_6001。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type component_id: str
         """
         
@@ -126,7 +126,7 @@ class ShowInstanceMetricDataRequest:
     def start_time(self):
         r"""Gets the start_time of this ShowInstanceMetricDataRequest.
 
-        开始时间，时间戳格式，例如：1756971683303。
+        **参数解释**: 开始时间，时间戳格式，例如：1756971683303。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The start_time of this ShowInstanceMetricDataRequest.
         :rtype: str
@@ -137,7 +137,7 @@ class ShowInstanceMetricDataRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ShowInstanceMetricDataRequest.
 
-        开始时间，时间戳格式，例如：1756971683303。
+        **参数解释**: 开始时间，时间戳格式，例如：1756971683303。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param start_time: The start_time of this ShowInstanceMetricDataRequest.
         :type start_time: str
@@ -148,7 +148,7 @@ class ShowInstanceMetricDataRequest:
     def end_time(self):
         r"""Gets the end_time of this ShowInstanceMetricDataRequest.
 
-        结束时间，时间戳格式，例如：1756975283303。
+        **参数解释**: 结束时间，时间戳格式，例如：1756975283303。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The end_time of this ShowInstanceMetricDataRequest.
         :rtype: str
@@ -159,7 +159,7 @@ class ShowInstanceMetricDataRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowInstanceMetricDataRequest.
 
-        结束时间，时间戳格式，例如：1756975283303。
+        **参数解释**: 结束时间，时间戳格式，例如：1756975283303。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param end_time: The end_time of this ShowInstanceMetricDataRequest.
         :type end_time: str
@@ -170,7 +170,7 @@ class ShowInstanceMetricDataRequest:
     def metric(self):
         r"""Gets the metric of this ShowInstanceMetricDataRequest.
 
-        指标ID，可通过“查询指标分组的指标名称”接口获取，例如查询CPU使用率，传值 rds001_cpu_util。
+        **参数解释**: 指标ID，可通过“查询指标分组的指标名称”接口获取，例如查询CPU使用率，传值 rds001_cpu_util。 **约束限制**: 不涉及。
 
         :return: The metric of this ShowInstanceMetricDataRequest.
         :rtype: str
@@ -181,7 +181,7 @@ class ShowInstanceMetricDataRequest:
     def metric(self, metric):
         r"""Sets the metric of this ShowInstanceMetricDataRequest.
 
-        指标ID，可通过“查询指标分组的指标名称”接口获取，例如查询CPU使用率，传值 rds001_cpu_util。
+        **参数解释**: 指标ID，可通过“查询指标分组的指标名称”接口获取，例如查询CPU使用率，传值 rds001_cpu_util。 **约束限制**: 不涉及。
 
         :param metric: The metric of this ShowInstanceMetricDataRequest.
         :type metric: str
@@ -192,7 +192,7 @@ class ShowInstanceMetricDataRequest:
     def node_id(self):
         r"""Gets the node_id of this ShowInstanceMetricDataRequest.
 
-        节点ID。
+        **参数解释**: 节点ID。 **约束限制**: 不涉及。
 
         :return: The node_id of this ShowInstanceMetricDataRequest.
         :rtype: str
@@ -203,7 +203,7 @@ class ShowInstanceMetricDataRequest:
     def node_id(self, node_id):
         r"""Sets the node_id of this ShowInstanceMetricDataRequest.
 
-        节点ID。
+        **参数解释**: 节点ID。 **约束限制**: 不涉及。
 
         :param node_id: The node_id of this ShowInstanceMetricDataRequest.
         :type node_id: str
@@ -214,7 +214,7 @@ class ShowInstanceMetricDataRequest:
     def component_id(self):
         r"""Gets the component_id of this ShowInstanceMetricDataRequest.
 
-        组件ID，例如dn_6001。
+        **参数解释**: 组件ID，例如dn_6001。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :return: The component_id of this ShowInstanceMetricDataRequest.
         :rtype: str
@@ -225,7 +225,7 @@ class ShowInstanceMetricDataRequest:
     def component_id(self, component_id):
         r"""Sets the component_id of this ShowInstanceMetricDataRequest.
 
-        组件ID，例如dn_6001。
+        **参数解释**: 组件ID，例如dn_6001。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
 
         :param component_id: The component_id of this ShowInstanceMetricDataRequest.
         :type component_id: str

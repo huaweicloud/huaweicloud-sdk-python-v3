@@ -33,6 +33,351 @@ class DcosAsyncClient(Client):
 
         return client_builder
 
+    def list_order_async(self, request):
+        r"""客户查询服务单列表
+
+        客户查询服务单列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOrder
+        :type request: :class:`huaweicloudsdkdcos.v1.ListOrderRequest`
+        :rtype: :class:`huaweicloudsdkdcos.v1.ListOrderResponse`
+        """
+        http_info = self._list_order_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_order_async_invoker(self, request):
+        http_info = self._list_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_order_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/orders/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'sub_type' in local_var_params:
+            query_params.append(('sub_type', local_var_params['sub_type']))
+        if 'stage' in local_var_params:
+            query_params.append(('stage', local_var_params['stage']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'applicant' in local_var_params:
+            query_params.append(('applicant', local_var_params['applicant']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'key_word' in local_var_params:
+            query_params.append(('key_word', local_var_params['key_word']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def save_order_async(self, request):
+        r"""客户创建服务单
+
+        客户创建服务单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SaveOrder
+        :type request: :class:`huaweicloudsdkdcos.v1.SaveOrderRequest`
+        :rtype: :class:`huaweicloudsdkdcos.v1.SaveOrderResponse`
+        """
+        http_info = self._save_order_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_order_async_invoker(self, request):
+        http_info = self._save_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _save_order_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/orders/save",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveOrderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_order_async(self, request):
+        r"""客户查询服务单详情
+
+        客户查询服务单详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOrder
+        :type request: :class:`huaweicloudsdkdcos.v1.ShowOrderRequest`
+        :rtype: :class:`huaweicloudsdkdcos.v1.ShowOrderResponse`
+        """
+        http_info = self._show_order_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_order_async_invoker(self, request):
+        http_info = self._show_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_order_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/orders/{number}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'number' in local_var_params:
+            path_params['number'] = local_var_params['number']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_order_catalogue_async(self, request):
+        r"""获取服务单目录列表
+
+        获取服务单目录列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOrderCatalogue
+        :type request: :class:`huaweicloudsdkdcos.v1.ShowOrderCatalogueRequest`
+        :rtype: :class:`huaweicloudsdkdcos.v1.ShowOrderCatalogueResponse`
+        """
+        http_info = self._show_order_catalogue_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_order_catalogue_async_invoker(self, request):
+        http_info = self._show_order_catalogue_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_order_catalogue_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/orders/catalogue",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrderCatalogueResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_order_information_async(self, request):
+        r"""获取服务服务单项目信息
+
+        获取服务服务单项目信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOrderInformation
+        :type request: :class:`huaweicloudsdkdcos.v1.ShowOrderInformationRequest`
+        :rtype: :class:`huaweicloudsdkdcos.v1.ShowOrderInformationResponse`
+        """
+        http_info = self._show_order_information_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_order_information_async_invoker(self, request):
+        http_info = self._show_order_information_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_order_information_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/orders/information/{model_code}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrderInformationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'model_code' in local_var_params:
+            path_params['model_code'] = local_var_params['model_code']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_page_asset_list_result_async(self, request):
         r"""资产列表
 
@@ -169,355 +514,10 @@ class DcosAsyncClient(Client):
 
         return http_info
 
-    def list_order_async(self, request):
-        r"""客户查询工单列表
-
-        客户查询工单列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListOrder
-        :type request: :class:`huaweicloudsdkdcos.v1.ListOrderRequest`
-        :rtype: :class:`huaweicloudsdkdcos.v1.ListOrderResponse`
-        """
-        http_info = self._list_order_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_order_async_invoker(self, request):
-        http_info = self._list_order_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_order_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/orders/list",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListOrderResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-        if 'sub_type' in local_var_params:
-            query_params.append(('sub_type', local_var_params['sub_type']))
-        if 'stage' in local_var_params:
-            query_params.append(('stage', local_var_params['stage']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'applicant' in local_var_params:
-            query_params.append(('applicant', local_var_params['applicant']))
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-        if 'key_word' in local_var_params:
-            query_params.append(('key_word', local_var_params['key_word']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'sort_key' in local_var_params:
-            query_params.append(('sort_key', local_var_params['sort_key']))
-        if 'sort_dir' in local_var_params:
-            query_params.append(('sort_dir', local_var_params['sort_dir']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def save_order_async(self, request):
-        r"""客户创建工单
-
-        客户创建工单
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for SaveOrder
-        :type request: :class:`huaweicloudsdkdcos.v1.SaveOrderRequest`
-        :rtype: :class:`huaweicloudsdkdcos.v1.SaveOrderResponse`
-        """
-        http_info = self._save_order_http_info(request)
-        return self._call_api(**http_info)
-
-    def save_order_async_invoker(self, request):
-        http_info = self._save_order_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _save_order_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/orders/save",
-            "request_type": request.__class__.__name__,
-            "response_type": "SaveOrderResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_order_async(self, request):
-        r"""客户查询工单详情
-
-        客户查询工单详情
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowOrder
-        :type request: :class:`huaweicloudsdkdcos.v1.ShowOrderRequest`
-        :rtype: :class:`huaweicloudsdkdcos.v1.ShowOrderResponse`
-        """
-        http_info = self._show_order_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_order_async_invoker(self, request):
-        http_info = self._show_order_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_order_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/orders/{number}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowOrderResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'number' in local_var_params:
-            path_params['number'] = local_var_params['number']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_order_catalogue_async(self, request):
-        r"""获取工单目录列表
-
-        获取工单目录列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowOrderCatalogue
-        :type request: :class:`huaweicloudsdkdcos.v1.ShowOrderCatalogueRequest`
-        :rtype: :class:`huaweicloudsdkdcos.v1.ShowOrderCatalogueResponse`
-        """
-        http_info = self._show_order_catalogue_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_order_catalogue_async_invoker(self, request):
-        http_info = self._show_order_catalogue_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_order_catalogue_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/orders/catalogue",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowOrderCatalogueResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_order_information_async(self, request):
-        r"""获取服务工单项目信息
-
-        获取服务工单项目信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowOrderInformation
-        :type request: :class:`huaweicloudsdkdcos.v1.ShowOrderInformationRequest`
-        :rtype: :class:`huaweicloudsdkdcos.v1.ShowOrderInformationResponse`
-        """
-        http_info = self._show_order_information_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_order_information_async_invoker(self, request):
-        http_info = self._show_order_information_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_order_information_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/orders/information/{model_code}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowOrderInformationResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'model_code' in local_var_params:
-            path_params['model_code'] = local_var_params['model_code']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def verify_order_async(self, request):
-        r"""验收工单
+        r"""验收服务单
 
-        验收工单
+        验收服务单
         
         Please refer to HUAWEI cloud API Explorer for details.
 

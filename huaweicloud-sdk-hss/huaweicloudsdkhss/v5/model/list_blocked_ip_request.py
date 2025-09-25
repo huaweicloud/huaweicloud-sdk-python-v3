@@ -53,7 +53,7 @@ class ListBlockedIpRequest:
         :type host_name: str
         :param src_ip: 攻击源IP
         :type src_ip: str
-        :param intercept_status: 拦截状态，包含如下:   - intercepted : 已拦截   - canceled : 已解除拦截   - cancelling : 待解除拦截
+        :param intercept_status: **参数解释**： 拦截状态 **约束限制**: 不涉及 **取值范围**: - intercepted：已拦截。 - canceled：已解除拦截。 - cancelling：待解除拦截。  **默认取值**: 不涉及 
         :type intercept_status: str
         :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
@@ -204,7 +204,7 @@ class ListBlockedIpRequest:
     def intercept_status(self):
         r"""Gets the intercept_status of this ListBlockedIpRequest.
 
-        拦截状态，包含如下:   - intercepted : 已拦截   - canceled : 已解除拦截   - cancelling : 待解除拦截
+        **参数解释**： 拦截状态 **约束限制**: 不涉及 **取值范围**: - intercepted：已拦截。 - canceled：已解除拦截。 - cancelling：待解除拦截。  **默认取值**: 不涉及 
 
         :return: The intercept_status of this ListBlockedIpRequest.
         :rtype: str
@@ -215,7 +215,7 @@ class ListBlockedIpRequest:
     def intercept_status(self, intercept_status):
         r"""Sets the intercept_status of this ListBlockedIpRequest.
 
-        拦截状态，包含如下:   - intercepted : 已拦截   - canceled : 已解除拦截   - cancelling : 待解除拦截
+        **参数解释**： 拦截状态 **约束限制**: 不涉及 **取值范围**: - intercepted：已拦截。 - canceled：已解除拦截。 - cancelling：待解除拦截。  **默认取值**: 不涉及 
 
         :param intercept_status: The intercept_status of this ListBlockedIpRequest.
         :type intercept_status: str

@@ -51,7 +51,7 @@ class ListAutoLaunchsRequest:
         :type host_name: str
         :param name: **参数解释**: 自启动项名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type name: str
-        :param host_ip: **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_ip: str
         :param type: **参数解释**: 自启动项类型 **约束限制**: 不涉及 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹  **默认取值**: 不涉及 
         :type type: str
@@ -167,7 +167,7 @@ class ListAutoLaunchsRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListAutoLaunchsRequest.
 
-        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListAutoLaunchsRequest.
         :rtype: str
@@ -178,7 +178,7 @@ class ListAutoLaunchsRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListAutoLaunchsRequest.
 
-        **参数解释**: 主机IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListAutoLaunchsRequest.
         :type host_ip: str

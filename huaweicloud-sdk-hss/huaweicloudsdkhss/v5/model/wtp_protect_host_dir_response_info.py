@@ -19,7 +19,6 @@ class WtpProtectHostDirResponseInfo:
     openapi_types = {
         'protect_dir': 'str',
         'exclude_child_dir': 'str',
-        'exclude_file_path': 'str',
         'exclue_file_path': 'str',
         'local_backup_dir': 'str',
         'protect_status': 'str',
@@ -29,14 +28,13 @@ class WtpProtectHostDirResponseInfo:
     attribute_map = {
         'protect_dir': 'protect_dir',
         'exclude_child_dir': 'exclude_child_dir',
-        'exclude_file_path': 'exclude_file_path',
         'exclue_file_path': 'exclue_file_path',
         'local_backup_dir': 'local_backup_dir',
         'protect_status': 'protect_status',
         'error': 'error'
     }
 
-    def __init__(self, protect_dir=None, exclude_child_dir=None, exclude_file_path=None, exclue_file_path=None, local_backup_dir=None, protect_status=None, error=None):
+    def __init__(self, protect_dir=None, exclude_child_dir=None, exclue_file_path=None, local_backup_dir=None, protect_status=None, error=None):
         r"""WtpProtectHostDirResponseInfo
 
         The model defined in huaweicloud sdk
@@ -45,11 +43,9 @@ class WtpProtectHostDirResponseInfo:
         :type protect_dir: str
         :param exclude_child_dir: **参数解释**: 排除子目录 **取值范围**: 字符长度0-512位 
         :type exclude_child_dir: str
-        :param exclude_file_path: **参数解释**: 排除文件路径 **取值范围**: 字符长度0-512位 
-        :type exclude_file_path: str
         :param exclue_file_path: 排除文件路径
         :type exclue_file_path: str
-        :param local_backup_dir: **参数解释**: 本地备份路径 **取值范围**: 字符长度0-512位 
+        :param local_backup_dir: **参数解释**: 本地备份路径，仅Linux服务器支持设置本地备份路径。 **取值范围**: 字符长度0-512位 
         :type local_backup_dir: str
         :param protect_status: **参数解释**: 防护状态 **取值范围**: - closed ：未开启。 - opened ：防护中。 - opening ：开启中。 - closing ：关闭中。 - open_failed ：防护失败。 
         :type protect_status: str
@@ -61,7 +57,6 @@ class WtpProtectHostDirResponseInfo:
 
         self._protect_dir = None
         self._exclude_child_dir = None
-        self._exclude_file_path = None
         self._exclue_file_path = None
         self._local_backup_dir = None
         self._protect_status = None
@@ -72,8 +67,6 @@ class WtpProtectHostDirResponseInfo:
             self.protect_dir = protect_dir
         if exclude_child_dir is not None:
             self.exclude_child_dir = exclude_child_dir
-        if exclude_file_path is not None:
-            self.exclude_file_path = exclude_file_path
         if exclue_file_path is not None:
             self.exclue_file_path = exclue_file_path
         if local_backup_dir is not None:
@@ -128,28 +121,6 @@ class WtpProtectHostDirResponseInfo:
         self._exclude_child_dir = exclude_child_dir
 
     @property
-    def exclude_file_path(self):
-        r"""Gets the exclude_file_path of this WtpProtectHostDirResponseInfo.
-
-        **参数解释**: 排除文件路径 **取值范围**: 字符长度0-512位 
-
-        :return: The exclude_file_path of this WtpProtectHostDirResponseInfo.
-        :rtype: str
-        """
-        return self._exclude_file_path
-
-    @exclude_file_path.setter
-    def exclude_file_path(self, exclude_file_path):
-        r"""Sets the exclude_file_path of this WtpProtectHostDirResponseInfo.
-
-        **参数解释**: 排除文件路径 **取值范围**: 字符长度0-512位 
-
-        :param exclude_file_path: The exclude_file_path of this WtpProtectHostDirResponseInfo.
-        :type exclude_file_path: str
-        """
-        self._exclude_file_path = exclude_file_path
-
-    @property
     def exclue_file_path(self):
         r"""Gets the exclue_file_path of this WtpProtectHostDirResponseInfo.
 
@@ -175,7 +146,7 @@ class WtpProtectHostDirResponseInfo:
     def local_backup_dir(self):
         r"""Gets the local_backup_dir of this WtpProtectHostDirResponseInfo.
 
-        **参数解释**: 本地备份路径 **取值范围**: 字符长度0-512位 
+        **参数解释**: 本地备份路径，仅Linux服务器支持设置本地备份路径。 **取值范围**: 字符长度0-512位 
 
         :return: The local_backup_dir of this WtpProtectHostDirResponseInfo.
         :rtype: str
@@ -186,7 +157,7 @@ class WtpProtectHostDirResponseInfo:
     def local_backup_dir(self, local_backup_dir):
         r"""Sets the local_backup_dir of this WtpProtectHostDirResponseInfo.
 
-        **参数解释**: 本地备份路径 **取值范围**: 字符长度0-512位 
+        **参数解释**: 本地备份路径，仅Linux服务器支持设置本地备份路径。 **取值范围**: 字符长度0-512位 
 
         :param local_backup_dir: The local_backup_dir of this WtpProtectHostDirResponseInfo.
         :type local_backup_dir: str

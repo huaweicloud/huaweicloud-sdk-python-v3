@@ -1,3 +1,1150 @@
+# 3.1.169 2025-09-25
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerOrders**
+    - changes of response param
+      - `+ order_infos.agent_pay_info`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListCustomerOrders**
+    - changes of response param
+      - `+ order_infos.agent_pay_info`
+
+### HuaweiCloud SDK CBR
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `ListFeatures`, `ShowFeature`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListOrganizationPolicies**
+    - changes of response param
+      - `+ policies.effective_scope`
+  - **CreateOrganizationPolicy**
+    - changes of request param
+      - `+ policy.effective_scope`
+    - changes of response param
+      - `+ policy.effective_scope`
+  - **ShowOrganizationPolicy**
+    - changes of response param
+      - `+ policy.effective_scope`
+  - **UpdateOrganizationPolicy**
+    - changes of request param
+      - `+ policy.effective_scope`
+    - changes of response param
+      - `+ policy.effective_scope`
+  - **ListVault**
+    - changes of response param
+      - `+ vaults.availability_zone`
+  - **CreateVault**
+    - changes of request param
+      - `+ vault.availability_zone`
+    - changes of response param
+      - `+ orders`
+      - `+ error_code`
+      - `+ retCode`
+      - `+ errText`
+      - `+ vault.availability_zone`
+      - `- vault.errText`
+      - `- vault.retCode`
+      - `- vault.orders`
+  - **ShowVault**
+    - changes of response param
+      - `+ vault.availability_zone`
+  - **UpdateVault**
+    - changes of response param
+      - `+ vault.availability_zone`
+  - **ListExternalVault**
+    - changes of response param
+      - `+ vaults.availability_zone`
+  - **ListProtectable**
+    - changes of response param
+      - `+ instances.protectable.vault.availability_zone`
+  - **ShowProtectable**
+    - changes of response param
+      - `+ instance.protectable.vault.availability_zone`
+  - **ShowVaultResourceInstances**
+    - changes of response param
+      - `+ resources.resource_detail.vault.availability_zone`
+
+### HuaweiCloud SDK CC
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAreaBandwidthPackageSpecifications**
+    - changes of request param
+      - `+ limit`
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `DownloadBuildRealTimeLog`
+    - `DownloadBuildFullLog`
+    - `ShowActionIInfo`
+    - `AddFavouriteOfficialTemplate`
+    - `RemoverFavouriteOfficialTemplate`
+    - `AddFavouriteTask`
+    - `RemoverFavouriteTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `CheckDeployStatus`, `StopDeployTask`
+  - **ListEnvironments**
+    - changes of response param
+      - `- result.project_id`
+  - **ShowEnvironmentDetail**
+    - changes of response param
+      - `- result.project_id`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowPipelineArtifacts**
+    - changes of response param
+      - `* artifacts.build_no: integer -> string`
+
+### HuaweiCloud SDK Config
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRegions**
+    - changes of request param
+      - `+ X-Language: enum value [fr-fr,es-us,pt-br]`
+  - **ShowBuiltInConformancePackTemplate**
+    - changes of request param
+      - `+ X-Language: enum value [fr-fr,es-us,pt-br]`
+  - **ListProviders**
+    - changes of request param
+      - `+ X-Language: enum value [fr-fr,es-us,pt-br]`
+  - **ListAllProviders**
+    - changes of request param
+      - `+ X-Language: enum value [fr-fr,es-us,pt-br]`
+  - **ListBuiltInConformancePackTemplates**
+    - changes of request param
+      - `+ X-Language: enum value [fr-fr,es-us,pt-br]`
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateShrinkNodes**
+    - changes of request param
+      - `+ agency_name`
+  - **ShowIkThesaurus**
+    - changes of response param
+      - `+ staticMainObj`
+      - `+ extraStopObj`
+      - `+ updateTime`
+      - `+ staticStopObj`
+      - `+ extraMainObj`
+      - `- operateStatus`
+  - **ListCerts**
+    - changes of response param
+      - `+ totalSize`
+      - `+ certsRecords`
+      - `- defaultCerts`
+      - `- customCerts`
+  - **StartVpecp**
+    - changes of request param
+      - `+ profession_vpcep`
+      - `+ dualstack_enable`
+  - **EnableOrDisableElb**
+    - changes of request param
+      - `+ type`
+  - **ListImages**
+    - changes of response param
+      - `+ totalSize`
+  - **StartConnectivityTest**
+    - changes of request param
+      - `+ address_and_ports`
+      - `- addressAndPorts`
+  - **ShowGetConfDetail**
+    - changes of response param
+      - `+ setting.batch_size`
+      - `+ setting.batch_delay_ms`
+      - `+ setting.queue_type`
+      - `+ setting.queue_check_point_writes`
+      - `+ setting.queue_max_bytes_mb`
+      - `- setting.batchSize`
+      - `- setting.batchDelayMs`
+      - `- setting.queueType`
+      - `- setting.queueCheckPointWrites`
+      - `- setting.queueMaxBytesMb`
+      - `* setting: object<confsetting> -> object<setting>`
+  - **ShowGetLogSetting**
+    - changes of response param
+      - `+ realTimeLogCollectRecord`
+  - **ShowLogBackup**
+    - changes of response param
+      - `+ type`
+  - **CreateBindPublic**
+    - changes of request param
+      - `+ eip.band_width`
+      - `- eip.bandWidth`
+  - **ShowClusterDetail**
+    - changes of response param
+      - `+ vpcepIpv6Address`
+      - `+ orderId`
+      - `+ currentSubnetIds`
+      - `+ ipv6Endpoint`
+      - `+ cmkId`
+      - `+ supportVpcep`
+      - `+ datastore.subVersion`
+      - `+ datastore.isEosCluster`
+      - `+ datastore.supportSecuritymode`
+      - `+ instances.subnetId`
+  - **UpgradeDetail**
+    - changes of response param
+      - `+ detailList.batchSize`
+      - `+ detailList.currentBatchNodes`
+  - **ListConfs**
+    - changes of response param
+      - `+ confs.setting.batch_size`
+      - `+ confs.setting.batch_delay_ms`
+      - `+ confs.setting.queue_type`
+      - `+ confs.setting.queue_check_point_writes`
+      - `+ confs.setting.queue_max_bytes_mb`
+      - `- confs.setting.batchSize`
+      - `- confs.setting.batchDelayMs`
+      - `- confs.setting.queueType`
+      - `- confs.setting.queueCheckPointWrites`
+      - `- confs.setting.queueMaxBytesMb`
+      - `* confs.setting: object<confsetting> -> object<setting>`
+  - **UpdateYmls**
+    - changes of request param
+      - `+ edit.delete`
+      - `+ edit.reset`
+  - **CreateElbListener**
+    - changes of request param
+      - `+ type`
+  - **ShowElbDetail**
+    - changes of response param
+      - `+ listener`
+      - `+ healthmonitors.address`
+      - `+ healthmonitors.operating_status`
+      - `+ healthmonitors.instance_id`
+      - `- healthmonitors.id`
+      - `- healthmonitors.ipgroup`
+      - `* healthmonitors.protocol_port: string -> int32`
+      - `* healthmonitors: object<EsHealthmonitorsResource> -> object<Member>`
+  - **UpdateEsListener**
+    - changes of request param
+      - `+ type`
+  - **ListClustersDetails**
+    - changes of response param
+      - `+ clusters.snapshotPolicy`
+      - `+ clusters.cmkId`
+      - `+ clusters.currentSubnetIds`
+      - `+ clusters.datastore.subVersion`
+      - `+ clusters.datastore.isEosCluster`
+      - `+ clusters.instances.subnetId`
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `DeleteLogstashConf`, `DeleteLogstashTemplate`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateCluster**
+    - changes of request param
+      - `+ cluster.desc`
+      - `+ cluster.ipv6_enable`
+      - `+ cluster.diskEncryption`
+      - `+ cluster.nics.ips`
+      - `+ cluster.loadBalance.professionVpcep`
+      - `+ cluster.loadBalance.dualstackEnable`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `CheckCredential`, `SaveCredential`, `ShowHealthReportSettings`, `UpdateHealthReportSettings`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRiskItems**
+    - changes of request param
+      - `+ page`
+      - `+ limit`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the APIs `BatchDeleteSecurityDataCategories`, `UpdateSecurityDataCategories`, `CreateSecurityDataCategory`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ECS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `UpdateSerialConsoleOptions`, `ShowSerialConsoleActions`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK eiHealth
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListAssetResource`
+    - `CreateAssetResource`
+    - `DeleteAssetResource`
+    - `ListChat`
+    - `ShowChat`
+    - `UpdateChat`
+    - `DeleteChat`
+    - `CreateMessageAdditions`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateMolBatchDownloadTask**
+    - changes of request param
+      - `+ format`
+  - **ShowAsset**
+    - changes of response param
+      - `+ domain`
+  - **ListUserImage**
+    - changes of response param
+      - `+ images.eihealth_project_id`
+      - `+ images.eihealth_project_name`
+      - `+ images.user_name`
+      - `+ images.user_id`
+      - `+ images.create_type`
+  - **ListImage**
+    - changes of response param
+      - `+ images.eihealth_project_id`
+      - `+ images.eihealth_project_name`
+      - `+ images.user_name`
+      - `+ images.user_id`
+      - `+ images.create_type`
+  - **CreateProject**
+    - changes of request param
+      - `+ storage_tenant`
+  - **ListProject**
+    - changes of response param
+      - `+ projects.top_time`
+      - `+ projects.storage_tenant`
+  - **CreateLabel**
+    - changes of request param
+      - `+ level`
+  - **ListLabel**
+    - changes of response param
+      - `+ labels.level`
+  - **ListApp**
+    - changes of response param
+      - `+ apps.eihealth_project_id`
+      - `+ apps.eihealth_project_name`
+  - **ListUserWorkflow**
+    - changes of response param
+      - `+ workflows.eihealth_project_id`
+      - `+ workflows.eihealth_project_name`
+  - **CreateSearchJob**
+    - changes of request param
+      - `+ basic_info.upstream_job_info`
+  - **ListAsset**
+    - changes of response param
+      - `+ domain`
+      - `+ assets.domain`
+  - **ShowProject**
+    - changes of response param
+      - `+ storage_tenant`
+  - **ListUserJob**
+    - changes of response param
+      - `+ jobs.eihealth_project_id`
+      - `+ jobs.eihealth_project_name`
+      - `+ jobs.start_time`
+  - **ListJob**
+    - changes of response param
+      - `+ waiting_count`
+      - `+ running_count`
+      - `+ jobs.eihealth_project_id`
+      - `+ jobs.eihealth_project_name`
+      - `+ jobs.start_time`
+  - **ExecuteJob**
+    - changes of request param
+      - `+ tasks.outputs`
+      - `+ tasks.output_dir`
+  - **ListWorkflow**
+    - changes of response param
+      - `+ workflows.eihealth_project_id`
+      - `+ workflows.eihealth_project_name`
+  - **CreateWorkflow**
+    - changes of request param
+      - `+ tasks.outputs`
+  - **ListUserDrugJob**
+    - changes of response param
+      - `+ jobs.eihealth_project_id`
+      - `+ jobs.eihealth_project_name`
+      - `+ jobs.upstream_job_info`
+  - **ListDrugJob**
+    - changes of response param
+      - `+ jobs.eihealth_project_id`
+      - `+ jobs.eihealth_project_name`
+      - `+ jobs.upstream_job_info`
+  - **CreateCpiJob**
+    - changes of request param
+      - `+ basic_info.upstream_job_info`
+  - **ShowCpiJob**
+    - changes of response param
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **ShowSearchJob**
+    - changes of response param
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreateFepJob**
+    - changes of request param
+      - `+ basic_info.upstream_job_info`
+  - **ShowFepJob**
+    - changes of response param
+      - `+ job_result.num_molecules`
+      - `+ job_result.success_count`
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreatePocketDetectionJob**
+    - changes of request param
+      - `+ basic_info.upstream_job_info`
+  - **ShowPocketDetectionJob**
+    - changes of response param
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreateAdmetJob**
+    - changes of request param
+      - `+ basic_info.upstream_job_info`
+  - **ShowAdmetJob**
+    - changes of response param
+      - `+ job_result.num_molecules`
+      - `+ job_result.success_count`
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreatePocketMolDesignJob**
+    - changes of request param
+      - `+ base_model_id`
+      - `+ basic_info.upstream_job_info`
+  - **ShowPocketMolDesignJob**
+    - changes of response param
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreateClusteringJob**
+    - changes of request param
+      - `+ basic_info.upstream_job_info`
+  - **ShowClusteringJob**
+    - changes of response param
+      - `+ job_result.num_molecules`
+      - `+ job_result.success_count`
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **ShowNotebook**
+    - changes of response param
+      - `+ eihealth_project_id`
+      - `+ eihealth_project_name`
+      - `+ flavor.cpu_type`
+      - `+ flavor.gpu_type`
+  - **UpdateJob**
+    - changes of request param
+      - `+ tasks.outputs`
+      - `+ tasks.output_dir`
+  - **ShowJob**
+    - changes of response param
+      - `+ start_time`
+      - `+ tasks.outputs`
+  - **UpdateWorkflow**
+    - changes of request param
+      - `+ tasks.outputs`
+  - **ShowWorkflow**
+    - changes of response param
+      - `+ user_name`
+      - `+ tasks.outputs`
+  - **CreateTargetOptJob**
+    - changes of request param
+      - `+ basic_info.upstream_job_info`
+  - **ShowTargetOptJob**
+    - changes of response param
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+  - **CreateDockingJob**
+    - changes of request param
+      - `+ basic_info.upstream_job_info`
+      - `+ receptors.docking_type`
+      - `+ receptors.reference_file`
+  - **ShowDockingJob**
+    - changes of response param
+      - `+ job_result.num_molecules`
+      - `+ job_result.success_count`
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+      - `+ receptors.docking_type`
+      - `+ receptors.reference_file`
+  - **ListUserNotebook**
+    - changes of response param
+      - `+ eihealth_project_id`
+      - `+ eihealth_project_name`
+      - `+ notebooks.eihealth_project_id`
+      - `+ notebooks.eihealth_project_name`
+      - `+ notebooks.flavor.cpu_type`
+      - `+ notebooks.flavor.gpu_type`
+  - **CreateNotebook**
+    - changes of request param
+      - `+ flavor.cpu_type`
+      - `+ flavor.gpu_type`
+  - **ListNotebook**
+    - changes of response param
+      - `+ eihealth_project_id`
+      - `+ eihealth_project_name`
+      - `+ notebooks.eihealth_project_id`
+      - `+ notebooks.eihealth_project_name`
+      - `+ notebooks.flavor.cpu_type`
+      - `+ notebooks.flavor.gpu_type`
+  - **CreateOptmJob**
+    - changes of request param
+      - `+ basic_info.upstream_job_info`
+      - `+ binding_site.engine`
+      - `+ binding_site.docking_type`
+  - **ShowOptmJob**
+    - changes of response param
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+      - `+ binding_site.engine`
+      - `+ binding_site.docking_type`
+  - **CreateGenJob**
+    - changes of request param
+      - `+ basic_info.upstream_job_info`
+      - `+ binding_sites.engine`
+      - `+ binding_sites.docking_type`
+  - **ShowGenJob**
+    - changes of response param
+      - `+ basic_info.eihealth_project_id`
+      - `+ basic_info.eihealth_project_name`
+      - `+ basic_info.upstream_job_info`
+      - `+ binding_sites.engine`
+      - `+ binding_sites.docking_type`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ShowSlowLogDetail`, `ShowStarRocksSlowlogSensitiveStatus`, `UpdateSlowlogSensitiveStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `CreateSqlLimitTask`
+    - `ShowSqlLimitTask`
+    - `UpdateSqlLimitTask`
+    - `DeleteSqlLimitTask`
+    - `ListSqlLimitTask`
+    - `DeleteSharding`
+    - `StopFullSql`
+    - `ListEnhanceFullSqls`
+    - `ListFullSqlSwitches`
+    - `StartFullSql`
+    - `ShowAlarmHistoryRecord`
+    - `ListSqlTrace`
+    - `ShowShardDiskMessages`
+    - `ListDatabaseVersions`
+    - `BatchSetBackupPolicy`
+    - `ModifyHotfixes`
+    - `ShowExpansionParameters`
+    - `UpdateInstanceVersions`
+    - `ShowSqlPatch`
+    - `StopTransaction`
+    - `ListTransaction`
+    - `ShowAutoKillTransactionConfig`
+    - `ListWaitEvent`
+    - `ListAspInfos`
+    - `CollectAsp`
+    - `ShowAspStatus`
+    - `SwitchAspStatus`
+    - `UpdateExpansionParameters`
+    - `ShowRedistributionParameters`
+    - `ShowEpsRemainingQuota`
+    - `ListEnterpriseProjects`
+    - `ModifyAutoEnlargePolicy`
+    - `ShrinkCn`
+- _Bug Fix_
+  - None
+- _Change_
+  - **DeleteInstance**
+    - changes of request param
+      - `- x-auth-token`
+  - **ShowBalanceStatus**
+    - changes of request param
+      - `- x-auth-token`
+  - **ResetPwd**
+    - changes of request param
+      - `- x-auth-token`
+  - **UpdateInstanceName**
+    - changes of request param
+      - `- x-auth-token`
+  - **RestartInstance**
+    - changes of request param
+      - `- x-auth-token`
+  - **DeleteManualBackup**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListRestoreTimes**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListDatastores**
+    - changes of request param
+      - `- x-auth-token`
+  - **CreateDbUser**
+    - changes of request param
+      - `- x-auth-token`
+  - **SetDbUserPwd**
+    - changes of request param
+      - `- x-auth-token`
+  - **ResizeInstanceFlavor**
+    - changes of request param
+      - `- x-auth-token`
+  - **UpgradeInstanceVersion**
+    - changes of request param
+      - `* body: object<OpenGaussUpgradeRequest> -> object<UpgradeRequestBody>`
+  - **ListSessionStatistics**
+    - changes of response param
+      - `+ statistics_list`
+      - `- statistics`
+  - **ListHbaInfoHistory**
+    - changes of response param
+      - `+ hba_histories`
+      - `- hba_confs`
+  - **ListSlowSqls**
+    - changes of response param
+      - `* slow_sql_infos.calls: string -> int32`
+  - **SetRecyclePolicy**
+    - changes of request param
+      - `- x-auth-token`
+  - **UpdateInstanceConfiguration**
+    - changes of request param
+      - `- x-auth-token`
+  - **ShowInstanceConfiguration**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListConfigurations**
+    - changes of request param
+      - `- x-auth-token`
+  - **ShowBackupPolicy**
+    - changes of request param
+      - `- x-auth-token`
+  - **SetBackupPolicy**
+    - changes of request param
+      - `- x-auth-token`
+  - **SetNewBackupPolicy**
+    - changes of request param
+      - `- x-auth-token`
+  - **DeleteDatabaseSchema**
+    - changes of request param
+      - `- x-auth-token`
+  - **CreateDatabaseSchemas**
+    - changes of request param
+      - `- x-auth-token`
+  - **AllowDbPrivileges**
+    - changes of request param
+      - `- x-auth-token`
+  - **AllowDbRolePrivileges**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListDatabases**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListDbUsers**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListDatabaseSchemas**
+    - changes of request param
+      - `- x-auth-token`
+  - **SwitchShard**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListCnInfosBeforeReduce**
+    - changes of request param
+      - `- x-auth-token`
+      - `+ X-Language: enum value [zh-cn,en-us]`
+  - **DownloadBackup**
+    - changes of request param
+      - `- x-auth-token`
+    - changes of response param
+      - `* files.size: number -> int32`
+  - **ListEnhanceFullSqlStatistics**
+    - changes of response param
+      - `+ statistics.total_sql_time`
+      - `+ statistics.avg_sql_time`
+      - `+ statistics.total_db_time`
+      - `+ statistics.total_cpu_time`
+      - `+ statistics.avg_parse_time`
+      - `+ statistics.avg_plan_time`
+      - `+ statistics.total_data_io_time`
+      - `+ statistics.avg_n_returned_rows`
+      - `+ statistics.avg_n_tuples_fetched`
+      - `* statistics.start_time_stamp: string -> int64`
+      - `* statistics.end_time_stamp: string -> int64`
+  - **ModifyHbaConf**
+    - changes of request param
+      - `+ before_conf`
+      - `+ after_conf`
+      - `- before_confs`
+      - `- after_confs`
+  - **ListReadonlyNodes**
+    - changes of response param
+      - `+ nodes`
+      - `- instances`
+  - **ListSlowSqlDetails**
+    - changes of response param
+      - `+ slow_sql_details.db_name`
+      - `+ slow_sql_details.schema_name`
+      - `+ slow_sql_details.sql`
+  - **ListDatabaseVolumeSummary**
+    - changes of response param
+      - `- cn_components.role`
+      - `* cn_components: list<ComponentInfoResult> -> list<CnComponentInfoResult>`
+  - **ShowAlarmStatistics**
+    - changes of response param
+      - `* ring_percentage: number -> double`
+  - **ShowGlobalSlowSqlDetail**
+    - changes of response param
+      - `+ slow_sql_details.db_name`
+      - `+ slow_sql_details.schema_name`
+      - `+ slow_sql_details.sql`
+  - **ShowJobDetail**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListInstances**
+    - changes of request param
+      - `- x-auth-token`
+  - **CreateInstance**
+    - changes of request param
+      - `- x-auth-token`
+  - **RunInstanceAction**
+    - changes of request param
+      - `- x-auth-token`
+  - **CreateManualBackup**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListBackups**
+    - changes of request param
+      - `- x-auth-token`
+  - **CreateRestoreInstance**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListFlavors**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListStorageTypes**
+    - changes of request param
+      - `- x-auth-token`
+  - **CreateDbRole**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListDatabaseRoles**
+    - changes of request param
+      - `- x-auth-token`
+  - **ListComponentInfos**
+    - changes of request param
+      - `- x-auth-token`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListResourceIds`
+    - `ShowVersion`
+    - `ListResourceInstanceTag`
+    - `BatchDeleteTags`
+    - `CreateCicdConfigurationCommand`
+    - `ListCicdImages`
+    - `ListRegistryImages`
+    - `CreateImageSynchronizeTask`
+    - `CreateManualImageScanTask`
+    - `ShowSecurityCheckHostReport`
+    - `ListSecurityCheckClusterReports`
+    - `ListDictionaries`
+    - `ListCceNodesLabel`
+    - `ShowDecoyPortAutoBind`
+    - `SwitchDecoyPortAutoBind`
+    - `ShowDecoyPortHostList`
+    - `ListImageApps`
+    - `ListImageScanPolicy`
+    - `ModifyImageScanPolicy`
+    - `ListVulAffectImageApps`
+    - `ListVulAffectImageContainers`
+    - `ShowRiskScore`
+    - `ShowSecurityCheckConfig`
+    - `UpdateSecurityCheckConfig`
+    - `StartManualSecurityCheck`
+    - `StopManualSecurityCheck`
+    - `ShowManualSecurityCheckStatus`
+    - `ListAgentVersion`
+    - `ListAlarmConfig`
+    - `UpdateAlarmConfig`
+    - `ShowScriptFile`
+    - `ShowSwitchesStatus`
+    - `ChangeSwitchesStatus`
+    - `ListSystemConfigs`
+    - `ShowAccountTop`
+    - `ShowAutoLaunchTop`
+    - `ShowJarPackageTop`
+    - `ShowKernelModuleTop`
+    - `ShowPortTop`
+    - `ShowPorcessTop`
+    - `ShowSoftwareTop`
+    - `ShowWebAppAndServiceTop`
+    - `ShowWebFrameworkTop`
+    - `ExportBaselineSecurityCheckReport`
+    - `ExportSecurityCheckReport`
+    - `ShowWebSiteTop`
+    - `ShowMonthlyOperaReportNotifyInfo`
+    - `ChangeMonthlyOperationReportTipStatus`
+    - `ShowMonthlyOperationReportDetail`
+    - `ListMonthlyOperationReports`
+    - `ShowWelfareAreaInfo`
+    - `ShowAgentStatistics`
+    - `ShowHotInformation`
+    - `ShowProtectStatistics`
+    - `ListSecurityRisk`
+    - `UploadReportLogo`
+    - `ListHostsRisk`
+    - `ShowHostsStatistics`
+    - `ListImageBasicImage`
+    - `ListImageFiles`
+    - `ShowImageFilesStat`
+    - `ListGeneralImageVulOperations`
+    - `ListGeneralImageVuls`
+    - `AssociateProtectionPolicy`
+    - `ChangeImageWhiteList`
+    - `ModifyLoginCommonIp`
+    - `ModifyLoginCommonLocation`
+    - `AddCicdConfiguration`
+    - `AddImageWhiteLists`
+    - `DeleteImageWhiteLists`
+    - `CancelHostsQuota`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowWebTamperRaspPath**
+    - changes of request param
+      - `- host_name`
+  - **ListApps**
+    - changes of response param
+      - `+ data_list.install_dir`
+  - **ListImageLocal**
+    - changes of request param
+      - `+ has_container`
+  - **ListAgentInstallScript**
+    - changes of request param
+      - `* os_type: optional -> required`
+  - **ListWtpProtectHost**
+    - changes of request param
+      - `+ asset_value`
+      - `+ rasp_status`
+    - changes of response param
+      - `+ data_list.group_id`
+      - `+ data_list.charging_mode`
+      - `+ data_list.resource_id`
+      - `+ data_list.abnormal_dir_list`
+      - `+ data_list.abnormal_reason`
+      - `+ data_list.backup_host_id`
+      - `+ data_list.interrupt_reason`
+      - `- data_list.ipv6`
+      - `- data_list.last_detect_time`
+      - `- data_list.scheduled_shutdown_status`
+      - `- data_list.remote_backbup_info`
+  - **ListHostRaspProtectHistoryInfo**
+    - changes of request param
+      - `- severity`
+      - `- protect_status`
+    - changes of response param
+      - `* total_num: int64 -> int32`
+  - **ListHostProtectHistoryInfo**
+    - changes of response param
+      - `- protect_status`
+      - `- host_name`
+      - `* total_num: int64 -> int32`
+      - `+ data_list.occur_time`
+      - `* data_list.process_id: string -> int32`
+  - **ListCceClusterDetectRisk**
+    - changes of request param
+      - `+ detect_type`
+  - **ListK8sPods**
+    - changes of response param
+      - `* pod_info_list.status: object -> string`
+  - **ShowMultiCloudClusterAuth**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+  - **BatchStartWebTamperProtection**
+    - changes of request param
+      - `- protect_dir_info.exclue_file_type`
+  - **ShowWebTamperHostPolicy**
+    - changes of response param
+      - `- privileged_process_info`
+      - `- protect_dir_info.exclue_file_type`
+      - `- protect_dir_info.protect_dir_list.exclude_file_path`
+      - `- timing_off_config_info.total_num`
+  - **UpdateWebTamperHostPolicy**
+    - changes of request param
+      - `- protect_dir_info.exclue_file_type`
+  - **ChangeAntivirusPolicy**
+    - changes of request param
+      - `+ scan_type`
+  - **CreateAntiVirusPolicy**
+    - changes of request param
+      - `+ scan_type`
+  - **ListSecurityEvents**
+    - changes of response param
+      - `+ data_list.operate_type`
+  - **ListAppWhitelistEvent**
+    - changes of request param
+      - `- private_ip`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainApiAclPolicy**
+    - changes of response param
+      - `+ api_acl_policy.allow_vpc_endpoints`
+  - **UpdateDomainApiAclPolicy**
+    - changes of response param
+      - `+ api_acl_policy.allow_vpc_endpoints`
+  - **KeystoneListMappings**
+    - changes of response param
+      - `+ mappings.rules.remote.regex`
+  - **KeystoneShowMapping**
+    - changes of response param
+      - `+ mapping.rules.remote.regex`
+  - **KeystoneCreateMapping**
+    - changes of request param
+      - `+ mapping.rules.remote.regex`
+    - changes of response param
+      - `+ mapping.rules.remote.regex`
+  - **KeystoneUpdateMapping**
+    - changes of request param
+      - `+ mapping.rules.remote.regex`
+    - changes of response param
+      - `+ mapping.rules.remote.regex`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the API `GetFeatureStatusV5`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Kafka
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `EnableDns`
+
+### HuaweiCloud SDK OBS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **SetBucketCustomedomain**
+    - changes of request param
+      - `+ Content-MD5`
+
+### HuaweiCloud SDK RabbitMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `EnableDns`
+
+### HuaweiCloud SDK RocketMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `EnableDns`
+  - **SendMessage**
+    - changes of request param
+      - `- property_list`
+      - `- broker_name`
+      - `- topic`
+      - `- body`
+      - `- msg_id`
+      - `- queue_id`
+      - `- queue_offset`
+
+### HuaweiCloud SDK VPN
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the APIs `CreateP2cVgw`, `DeleteP2cVgw`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `BatchUpdateGeoipRules`
+    - `UpdateBotMRuleDefenseStrategy`
+    - `BatchUpdateBotMRuleAction`
+    - `BatchDeleteCcRules`
+    - `CreateEventExportJob`
+    - `CreateAlertNoticeConfig`
+    - `ShowWebProtectionRule`
+    - `CreateQuickAccessDomain`
+    - `ListCcPolicyRules`
+    - `ListCustomPolicyRules`
+    - `ListWhiteblackipPolicyRules`
+    - `ListPrivacyPolicyRules`
+    - `ListGeoIpPolicyRules`
+    - `ListIgnorePolicyRules`
+    - `ListAntiTamperPolicyRules`
+    - `ListAntileakagePolicyRules`
+    - `ListIpReputationPolicyRules`
+    - `ListLlmGuardPolicyRules`
+    - `UpdateInstanceRoute`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateIpReputationRule**
+    - changes of response param
+      - `+ type`
+      - `+ tags`
+  - **CheckAgency**
+    - changes of response param
+      - `+ version`
+  - **ShowSecurityReportContent**
+    - changes of response param
+      - `+ create_time`
+      - `+ report_content_info`
+      - `- report_content_subscription_info`
+  - **ListBotMRules**
+    - changes of response param
+      - `+ behavior_detection.defense_strategy`
+      - `- behavior_detection.strategy`
+      - `+ traffic_detection_conditions.value_list_res`
+      - `- traffic_detection_conditions.value_list_ref`
+  - **ListCcRules**
+    - changes of response param
+      - `+ items.policyname`
+      - `+ items.priority`
+  - **ListHostRoute**
+    - changes of response param
+      - `+ body`
+
 # 3.1.168 2025-09-18
 
 ### HuaweiCloud SDK CBR

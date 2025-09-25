@@ -50,10 +50,8 @@ class RouteBody:
 
         if cname is not None:
             self.cname = cname
-        if name is not None:
-            self.name = name
-        if servers is not None:
-            self.servers = servers
+        self.name = name
+        self.servers = servers
 
     @property
     def cname(self):

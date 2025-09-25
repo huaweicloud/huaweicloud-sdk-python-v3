@@ -37,7 +37,7 @@ class BlockedIpRequestInfo:
         :type host_id: str
         :param src_ip: 攻击源IP
         :type src_ip: str
-        :param login_type: 登录类型，包含如下: - \&quot;mysql\&quot; # mysql服务 - \&quot;rdp\&quot; # rdp服务 - \&quot;ssh\&quot; # ssh服务 - \&quot;vsftp\&quot; # vsftp服务
+        :param login_type: **参数解释**： 登录类型 **约束限制**: 不涉及 **取值范围**: - mysql：mysql服务。 - rdp：rdp服务。 - ssh：ssh服务。 - vsftp：vsftp服务。  **默认取值**: 不涉及 
         :type login_type: str
         """
         
@@ -100,7 +100,7 @@ class BlockedIpRequestInfo:
     def login_type(self):
         r"""Gets the login_type of this BlockedIpRequestInfo.
 
-        登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
+        **参数解释**： 登录类型 **约束限制**: 不涉及 **取值范围**: - mysql：mysql服务。 - rdp：rdp服务。 - ssh：ssh服务。 - vsftp：vsftp服务。  **默认取值**: 不涉及 
 
         :return: The login_type of this BlockedIpRequestInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class BlockedIpRequestInfo:
     def login_type(self, login_type):
         r"""Sets the login_type of this BlockedIpRequestInfo.
 
-        登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
+        **参数解释**： 登录类型 **约束限制**: 不涉及 **取值范围**: - mysql：mysql服务。 - rdp：rdp服务。 - ssh：ssh服务。 - vsftp：vsftp服务。  **默认取值**: 不涉及 
 
         :param login_type: The login_type of this BlockedIpRequestInfo.
         :type login_type: str

@@ -18,100 +18,42 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'host_name': 'str',
-        'protect_status': 'str',
         'total_num': 'int',
         'data_list': 'list[HostProtectHistoryResponseInfo]'
     }
 
     attribute_map = {
-        'host_name': 'host_name',
-        'protect_status': 'protect_status',
         'total_num': 'total_num',
         'data_list': 'data_list'
     }
 
-    def __init__(self, host_name=None, protect_status=None, total_num=None, data_list=None):
+    def __init__(self, total_num=None, data_list=None):
         r"""ListHostProtectHistoryInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param host_name: 服务器名称
-        :type host_name: str
-        :param protect_status: 防护状态   - close : 未开启   - opened : 防护中
-        :type protect_status: str
-        :param total_num: total number of static WTPs
+        :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
-        :param data_list: data list
+        :param data_list: **参数解释**: 静态网页防篡改防护事件列表 **取值范围**: 最小值0，最大值200 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.HostProtectHistoryResponseInfo`]
         """
         
         super(ListHostProtectHistoryInfoResponse, self).__init__()
 
-        self._host_name = None
-        self._protect_status = None
         self._total_num = None
         self._data_list = None
         self.discriminator = None
 
-        if host_name is not None:
-            self.host_name = host_name
-        if protect_status is not None:
-            self.protect_status = protect_status
         if total_num is not None:
             self.total_num = total_num
         if data_list is not None:
             self.data_list = data_list
 
     @property
-    def host_name(self):
-        r"""Gets the host_name of this ListHostProtectHistoryInfoResponse.
-
-        服务器名称
-
-        :return: The host_name of this ListHostProtectHistoryInfoResponse.
-        :rtype: str
-        """
-        return self._host_name
-
-    @host_name.setter
-    def host_name(self, host_name):
-        r"""Sets the host_name of this ListHostProtectHistoryInfoResponse.
-
-        服务器名称
-
-        :param host_name: The host_name of this ListHostProtectHistoryInfoResponse.
-        :type host_name: str
-        """
-        self._host_name = host_name
-
-    @property
-    def protect_status(self):
-        r"""Gets the protect_status of this ListHostProtectHistoryInfoResponse.
-
-        防护状态   - close : 未开启   - opened : 防护中
-
-        :return: The protect_status of this ListHostProtectHistoryInfoResponse.
-        :rtype: str
-        """
-        return self._protect_status
-
-    @protect_status.setter
-    def protect_status(self, protect_status):
-        r"""Sets the protect_status of this ListHostProtectHistoryInfoResponse.
-
-        防护状态   - close : 未开启   - opened : 防护中
-
-        :param protect_status: The protect_status of this ListHostProtectHistoryInfoResponse.
-        :type protect_status: str
-        """
-        self._protect_status = protect_status
-
-    @property
     def total_num(self):
         r"""Gets the total_num of this ListHostProtectHistoryInfoResponse.
 
-        total number of static WTPs
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The total_num of this ListHostProtectHistoryInfoResponse.
         :rtype: int
@@ -122,7 +64,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListHostProtectHistoryInfoResponse.
 
-        total number of static WTPs
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
 
         :param total_num: The total_num of this ListHostProtectHistoryInfoResponse.
         :type total_num: int
@@ -133,7 +75,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListHostProtectHistoryInfoResponse.
 
-        data list
+        **参数解释**: 静态网页防篡改防护事件列表 **取值范围**: 最小值0，最大值200 
 
         :return: The data_list of this ListHostProtectHistoryInfoResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.HostProtectHistoryResponseInfo`]
@@ -144,7 +86,7 @@ class ListHostProtectHistoryInfoResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListHostProtectHistoryInfoResponse.
 
-        data list
+        **参数解释**: 静态网页防篡改防护事件列表 **取值范围**: 最小值0，最大值200 
 
         :param data_list: The data_list of this ListHostProtectHistoryInfoResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.HostProtectHistoryResponseInfo`]

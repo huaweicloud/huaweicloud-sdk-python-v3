@@ -858,6 +858,73 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def check_credential_async(self, request):
+        r"""测试AK/SK
+
+        测试AK/SK，测试用户AK/SK能否正常访问OBS桶。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckCredential
+        :type request: :class:`huaweicloudsdkdas.v3.CheckCredentialRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.CheckCredentialResponse`
+        """
+        http_info = self._check_credential_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_credential_async_invoker(self, request):
+        http_info = self._check_credential_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_credential_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/health-report/check-credential",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckCredentialResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_health_report_task_async(self, request):
         r"""创建实例健康诊断任务
 
@@ -3020,6 +3087,10 @@ class DasAsyncClient(Client):
         query_params = []
         if 'datastore_type' in local_var_params:
             query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -3649,6 +3720,73 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def save_credential_async(self, request):
+        r"""保存AK/SK
+
+        保存AK/SK，用于后台任务访问OBS上传实例诊断报告
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SaveCredential
+        :type request: :class:`huaweicloudsdkdas.v3.SaveCredentialRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.SaveCredentialResponse`
+        """
+        http_info = self._save_credential_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_credential_async_invoker(self, request):
+        http_info = self._save_credential_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _save_credential_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/health-report/save-credential",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveCredentialResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_threshold_for_metric_async(self, request):
         r"""设置指标阈值
 
@@ -3903,6 +4041,71 @@ class DasAsyncClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_health_report_settings_async(self, request):
+        r"""查看实例诊断报告设置
+
+        查看实例诊断报告设置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHealthReportSettings
+        :type request: :class:`huaweicloudsdkdas.v3.ShowHealthReportSettingsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowHealthReportSettingsResponse`
+        """
+        http_info = self._show_health_report_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_health_report_settings_async_invoker(self, request):
+        http_info = self._show_health_report_settings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_health_report_settings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/health-report/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHealthReportSettingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 
@@ -4801,6 +5004,73 @@ class DasAsyncClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_health_report_settings_async(self, request):
+        r"""更新实例诊断报告设置
+
+        更新实例诊断报告设置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateHealthReportSettings
+        :type request: :class:`huaweicloudsdkdas.v3.UpdateHealthReportSettingsRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.UpdateHealthReportSettingsResponse`
+        """
+        http_info = self._update_health_report_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_health_report_settings_async_invoker(self, request):
+        http_info = self._update_health_report_settings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_health_report_settings_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/health-report/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHealthReportSettingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 

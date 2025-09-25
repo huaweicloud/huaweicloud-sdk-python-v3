@@ -19,6 +19,9 @@ class DrugJobDto:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'eihealth_project_id': 'str',
+        'eihealth_project_name': 'str',
+        'upstream_job_info': 'str',
         'labels': 'list[str]',
         'status': 'str',
         'type': 'str',
@@ -36,6 +39,9 @@ class DrugJobDto:
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'eihealth_project_id': 'eihealth_project_id',
+        'eihealth_project_name': 'eihealth_project_name',
+        'upstream_job_info': 'upstream_job_info',
         'labels': 'labels',
         'status': 'status',
         'type': 'type',
@@ -50,7 +56,7 @@ class DrugJobDto:
         'progress': 'progress'
     }
 
-    def __init__(self, id=None, name=None, labels=None, status=None, type=None, create_time=None, finish_time=None, start_time=None, failed_message=None, user_name=None, output_dir=None, expect_charge_num=None, real_charge_num=None, progress=None):
+    def __init__(self, id=None, name=None, eihealth_project_id=None, eihealth_project_name=None, upstream_job_info=None, labels=None, status=None, type=None, create_time=None, finish_time=None, start_time=None, failed_message=None, user_name=None, output_dir=None, expect_charge_num=None, real_charge_num=None, progress=None):
         r"""DrugJobDto
 
         The model defined in huaweicloud sdk
@@ -59,6 +65,12 @@ class DrugJobDto:
         :type id: str
         :param name: 作业的名称，取值范围：[1,63]，允许大小写字母、数字、以及特殊字符中划线(-)
         :type name: str
+        :param eihealth_project_id: **参数解释**： 作业所属空间ID。 **约束限制**： 不涉及 **取值范围**： 长度为[1-63]个字符，允许大小写字母、数字、以及特殊字符中划线（-）。 **默认取值**： 不涉及 
+        :type eihealth_project_id: str
+        :param eihealth_project_name: **参数解释**： 作业所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type eihealth_project_name: str
+        :param upstream_job_info: **参数解释**： 上游作业信息。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type upstream_job_info: str
         :param labels: 作业标签
         :type labels: list[str]
         :param status: 作业状态
@@ -89,6 +101,9 @@ class DrugJobDto:
 
         self._id = None
         self._name = None
+        self._eihealth_project_id = None
+        self._eihealth_project_name = None
+        self._upstream_job_info = None
         self._labels = None
         self._status = None
         self._type = None
@@ -107,6 +122,12 @@ class DrugJobDto:
             self.id = id
         if name is not None:
             self.name = name
+        if eihealth_project_id is not None:
+            self.eihealth_project_id = eihealth_project_id
+        if eihealth_project_name is not None:
+            self.eihealth_project_name = eihealth_project_name
+        if upstream_job_info is not None:
+            self.upstream_job_info = upstream_job_info
         if labels is not None:
             self.labels = labels
         if status is not None:
@@ -175,6 +196,72 @@ class DrugJobDto:
         :type name: str
         """
         self._name = name
+
+    @property
+    def eihealth_project_id(self):
+        r"""Gets the eihealth_project_id of this DrugJobDto.
+
+        **参数解释**： 作业所属空间ID。 **约束限制**： 不涉及 **取值范围**： 长度为[1-63]个字符，允许大小写字母、数字、以及特殊字符中划线（-）。 **默认取值**： 不涉及 
+
+        :return: The eihealth_project_id of this DrugJobDto.
+        :rtype: str
+        """
+        return self._eihealth_project_id
+
+    @eihealth_project_id.setter
+    def eihealth_project_id(self, eihealth_project_id):
+        r"""Sets the eihealth_project_id of this DrugJobDto.
+
+        **参数解释**： 作业所属空间ID。 **约束限制**： 不涉及 **取值范围**： 长度为[1-63]个字符，允许大小写字母、数字、以及特殊字符中划线（-）。 **默认取值**： 不涉及 
+
+        :param eihealth_project_id: The eihealth_project_id of this DrugJobDto.
+        :type eihealth_project_id: str
+        """
+        self._eihealth_project_id = eihealth_project_id
+
+    @property
+    def eihealth_project_name(self):
+        r"""Gets the eihealth_project_name of this DrugJobDto.
+
+        **参数解释**： 作业所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The eihealth_project_name of this DrugJobDto.
+        :rtype: str
+        """
+        return self._eihealth_project_name
+
+    @eihealth_project_name.setter
+    def eihealth_project_name(self, eihealth_project_name):
+        r"""Sets the eihealth_project_name of this DrugJobDto.
+
+        **参数解释**： 作业所属空间名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param eihealth_project_name: The eihealth_project_name of this DrugJobDto.
+        :type eihealth_project_name: str
+        """
+        self._eihealth_project_name = eihealth_project_name
+
+    @property
+    def upstream_job_info(self):
+        r"""Gets the upstream_job_info of this DrugJobDto.
+
+        **参数解释**： 上游作业信息。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The upstream_job_info of this DrugJobDto.
+        :rtype: str
+        """
+        return self._upstream_job_info
+
+    @upstream_job_info.setter
+    def upstream_job_info(self, upstream_job_info):
+        r"""Sets the upstream_job_info of this DrugJobDto.
+
+        **参数解释**： 上游作业信息。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param upstream_job_info: The upstream_job_info of this DrugJobDto.
+        :type upstream_job_info: str
+        """
+        self._upstream_job_info = upstream_job_info
 
     @property
     def labels(self):

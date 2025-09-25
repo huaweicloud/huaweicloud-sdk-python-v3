@@ -22,7 +22,8 @@ class OrganizationPolicyUpdate:
         'policy_name': 'str',
         'policy_enabled': 'bool',
         'policy_operation_definition': 'PolicyoODCreate',
-        'policy_trigger': 'PolicyTriggerReq'
+        'policy_trigger': 'PolicyTriggerReq',
+        'effective_scope': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class OrganizationPolicyUpdate:
         'policy_name': 'policy_name',
         'policy_enabled': 'policy_enabled',
         'policy_operation_definition': 'policy_operation_definition',
-        'policy_trigger': 'policy_trigger'
+        'policy_trigger': 'policy_trigger',
+        'effective_scope': 'effective_scope'
     }
 
-    def __init__(self, name=None, description=None, policy_name=None, policy_enabled=None, policy_operation_definition=None, policy_trigger=None):
+    def __init__(self, name=None, description=None, policy_name=None, policy_enabled=None, policy_operation_definition=None, policy_trigger=None, effective_scope=None):
         r"""OrganizationPolicyUpdate
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class OrganizationPolicyUpdate:
         :type policy_operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
         :param policy_trigger: 
         :type policy_trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
+        :param effective_scope: 组织策略生效范围
+        :type effective_scope: str
         """
         
         
@@ -61,6 +65,7 @@ class OrganizationPolicyUpdate:
         self._policy_enabled = None
         self._policy_operation_definition = None
         self._policy_trigger = None
+        self._effective_scope = None
         self.discriminator = None
 
         if name is not None:
@@ -75,6 +80,8 @@ class OrganizationPolicyUpdate:
             self.policy_operation_definition = policy_operation_definition
         if policy_trigger is not None:
             self.policy_trigger = policy_trigger
+        if effective_scope is not None:
+            self.effective_scope = effective_scope
 
     @property
     def name(self):
@@ -199,6 +206,28 @@ class OrganizationPolicyUpdate:
         :type policy_trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerReq`
         """
         self._policy_trigger = policy_trigger
+
+    @property
+    def effective_scope(self):
+        r"""Gets the effective_scope of this OrganizationPolicyUpdate.
+
+        组织策略生效范围
+
+        :return: The effective_scope of this OrganizationPolicyUpdate.
+        :rtype: str
+        """
+        return self._effective_scope
+
+    @effective_scope.setter
+    def effective_scope(self, effective_scope):
+        r"""Sets the effective_scope of this OrganizationPolicyUpdate.
+
+        组织策略生效范围
+
+        :param effective_scope: The effective_scope of this OrganizationPolicyUpdate.
+        :type effective_scope: str
+        """
+        self._effective_scope = effective_scope
 
     def to_dict(self):
         """Returns the model properties as a dict"""

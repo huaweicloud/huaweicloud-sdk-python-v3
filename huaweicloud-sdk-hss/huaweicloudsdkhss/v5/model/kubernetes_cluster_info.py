@@ -75,9 +75,9 @@ class KubernetesClusterInfo:
         :type cluster_name: str
         :param cluster_id: 集群ID
         :type cluster_id: str
-        :param cluster_type: 集群类型
+        :param cluster_type: **参数解释**: 集群类型 **约束限制**: 不涉及 **取值范围**: - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws：亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群  **默认取值**: 不涉及 
         :type cluster_type: str
-        :param status: 集群状态，包含如下11种。   - Available：可用，表示集群处于正常状态。   - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。   - ScalingUp：扩容中，表示集群正处于扩容过程中。   - ScalingDown：缩容中，表示集群正处于缩容过程中。   - Creating：创建中，表示集群正处于创建过程中。   - Deleting：删除中，表示集群正处于删除过程中。   - Upgrading：升级中，表示集群正处于升级过程中。   - Resizing：规格变更中，表示集群正处于变更规格中。   - RollingBack：回滚中，表示集群正处于回滚过程中。   - RollbackFailed：回滚异常，表示集群回滚异常，需联系管理员进行回滚重试。   - Empty：集群无任何资源
+        :param status: **参数解释**: 集群状态(11种) **约束限制**: 不涉及 **取值范围**:   - Available：可用，表示集群处于正常状态。   - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。   - ScalingUp：扩容中，表示集群正处于扩容过程中。   - ScalingDown：缩容中，表示集群正处于缩容过程中。   - Creating：创建中，表示集群正处于创建过程中。   - Deleting：删除中，表示集群正处于删除过程中。   - Upgrading：升级中，表示集群正处于升级过程中。   - Resizing：规格变更中，表示集群正处于变更规格中。   - RollingBack：回滚中，表示集群正处于回滚过程中。   - RollbackFailed：回滚异常，表示集群回滚异常，需联系管理员进行回滚重试。   - Empty：集群无任何资源  **默认取值**: 不涉及 
         :type status: str
         :param version: 集群版本
         :type version: str
@@ -251,7 +251,7 @@ class KubernetesClusterInfo:
     def cluster_type(self):
         r"""Gets the cluster_type of this KubernetesClusterInfo.
 
-        集群类型
+        **参数解释**: 集群类型 **约束限制**: 不涉及 **取值范围**: - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws：亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群  **默认取值**: 不涉及 
 
         :return: The cluster_type of this KubernetesClusterInfo.
         :rtype: str
@@ -262,7 +262,7 @@ class KubernetesClusterInfo:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this KubernetesClusterInfo.
 
-        集群类型
+        **参数解释**: 集群类型 **约束限制**: 不涉及 **取值范围**: - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws：亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群  **默认取值**: 不涉及 
 
         :param cluster_type: The cluster_type of this KubernetesClusterInfo.
         :type cluster_type: str
@@ -273,7 +273,7 @@ class KubernetesClusterInfo:
     def status(self):
         r"""Gets the status of this KubernetesClusterInfo.
 
-        集群状态，包含如下11种。   - Available：可用，表示集群处于正常状态。   - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。   - ScalingUp：扩容中，表示集群正处于扩容过程中。   - ScalingDown：缩容中，表示集群正处于缩容过程中。   - Creating：创建中，表示集群正处于创建过程中。   - Deleting：删除中，表示集群正处于删除过程中。   - Upgrading：升级中，表示集群正处于升级过程中。   - Resizing：规格变更中，表示集群正处于变更规格中。   - RollingBack：回滚中，表示集群正处于回滚过程中。   - RollbackFailed：回滚异常，表示集群回滚异常，需联系管理员进行回滚重试。   - Empty：集群无任何资源
+        **参数解释**: 集群状态(11种) **约束限制**: 不涉及 **取值范围**:   - Available：可用，表示集群处于正常状态。   - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。   - ScalingUp：扩容中，表示集群正处于扩容过程中。   - ScalingDown：缩容中，表示集群正处于缩容过程中。   - Creating：创建中，表示集群正处于创建过程中。   - Deleting：删除中，表示集群正处于删除过程中。   - Upgrading：升级中，表示集群正处于升级过程中。   - Resizing：规格变更中，表示集群正处于变更规格中。   - RollingBack：回滚中，表示集群正处于回滚过程中。   - RollbackFailed：回滚异常，表示集群回滚异常，需联系管理员进行回滚重试。   - Empty：集群无任何资源  **默认取值**: 不涉及 
 
         :return: The status of this KubernetesClusterInfo.
         :rtype: str
@@ -284,7 +284,7 @@ class KubernetesClusterInfo:
     def status(self, status):
         r"""Sets the status of this KubernetesClusterInfo.
 
-        集群状态，包含如下11种。   - Available：可用，表示集群处于正常状态。   - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。   - ScalingUp：扩容中，表示集群正处于扩容过程中。   - ScalingDown：缩容中，表示集群正处于缩容过程中。   - Creating：创建中，表示集群正处于创建过程中。   - Deleting：删除中，表示集群正处于删除过程中。   - Upgrading：升级中，表示集群正处于升级过程中。   - Resizing：规格变更中，表示集群正处于变更规格中。   - RollingBack：回滚中，表示集群正处于回滚过程中。   - RollbackFailed：回滚异常，表示集群回滚异常，需联系管理员进行回滚重试。   - Empty：集群无任何资源
+        **参数解释**: 集群状态(11种) **约束限制**: 不涉及 **取值范围**:   - Available：可用，表示集群处于正常状态。   - Unavailable：不可用，表示集群异常，需手动删除或联系管理员删除。   - ScalingUp：扩容中，表示集群正处于扩容过程中。   - ScalingDown：缩容中，表示集群正处于缩容过程中。   - Creating：创建中，表示集群正处于创建过程中。   - Deleting：删除中，表示集群正处于删除过程中。   - Upgrading：升级中，表示集群正处于升级过程中。   - Resizing：规格变更中，表示集群正处于变更规格中。   - RollingBack：回滚中，表示集群正处于回滚过程中。   - RollbackFailed：回滚异常，表示集群回滚异常，需联系管理员进行回滚重试。   - Empty：集群无任何资源  **默认取值**: 不涉及 
 
         :param status: The status of this KubernetesClusterInfo.
         :type status: str

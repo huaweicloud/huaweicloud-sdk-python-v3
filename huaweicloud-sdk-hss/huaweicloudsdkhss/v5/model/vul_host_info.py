@@ -107,7 +107,7 @@ class VulHostInfo:
         :type group_id: str
         :param group_name: **参数解释**: 服务器组名称 **取值范围**: 字符范围0-256位 
         :type group_name: str
-        :param os_type: **参数解释**: 操作系统 **取值范围**: 字符范围0-32位 
+        :param os_type: **参数解释**: 操作系统 **取值范围**: - Linux ：linux系统 - Windows：windows系统 
         :type os_type: str
         :param asset_value: **参数解释**: 资产重要性 **取值范围**: - important : 重要资产 - common    : 一般资产 - test      : 测试资产 
         :type asset_value: str
@@ -121,7 +121,7 @@ class VulHostInfo:
         :type support_restore: bool
         :param disabled_operate_types: **参数解释**: 漏洞在当前主机上不可进行的操作类型列表 **取值范围**: 最小值1，最大值10000 
         :type disabled_operate_types: list[:class:`huaweicloudsdkhss.v5.HostVulInfoDisabledOperateTypes`]
-        :param repair_priority: **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
+        :param repair_priority: **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急 - High     : 高 - Medium   : 中 - Low      : 低 
         :type repair_priority: str
         """
         
@@ -558,7 +558,7 @@ class VulHostInfo:
     def os_type(self):
         r"""Gets the os_type of this VulHostInfo.
 
-        **参数解释**: 操作系统 **取值范围**: 字符范围0-32位 
+        **参数解释**: 操作系统 **取值范围**: - Linux ：linux系统 - Windows：windows系统 
 
         :return: The os_type of this VulHostInfo.
         :rtype: str
@@ -569,7 +569,7 @@ class VulHostInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this VulHostInfo.
 
-        **参数解释**: 操作系统 **取值范围**: 字符范围0-32位 
+        **参数解释**: 操作系统 **取值范围**: - Linux ：linux系统 - Windows：windows系统 
 
         :param os_type: The os_type of this VulHostInfo.
         :type os_type: str
@@ -712,7 +712,7 @@ class VulHostInfo:
     def repair_priority(self):
         r"""Gets the repair_priority of this VulHostInfo.
 
-        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
+        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急 - High     : 高 - Medium   : 中 - Low      : 低 
 
         :return: The repair_priority of this VulHostInfo.
         :rtype: str
@@ -723,7 +723,7 @@ class VulHostInfo:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this VulHostInfo.
 
-        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急  - High     : 高  - Medium   : 中  - Low      : 低 
+        **参数解释**: 修复优先级 **取值范围**: - Critical : 紧急 - High     : 高 - Medium   : 中 - Low      : 低 
 
         :param repair_priority: The repair_priority of this VulHostInfo.
         :type repair_priority: str

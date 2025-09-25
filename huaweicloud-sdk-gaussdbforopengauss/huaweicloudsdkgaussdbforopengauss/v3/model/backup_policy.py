@@ -23,8 +23,8 @@ class BackupPolicy:
         'differential_period': 'str',
         'rate_limit': 'int',
         'prefetch_block': 'int',
-        'filesplit_size': 'int',
         'file_split_size': 'int',
+        'filesplit_size': 'int',
         'enable_standby_backup': 'bool'
     }
 
@@ -35,33 +35,33 @@ class BackupPolicy:
         'differential_period': 'differential_period',
         'rate_limit': 'rate_limit',
         'prefetch_block': 'prefetch_block',
-        'filesplit_size': 'filesplit_size',
         'file_split_size': 'file_split_size',
+        'filesplit_size': 'filesplit_size',
         'enable_standby_backup': 'enable_standby_backup'
     }
 
-    def __init__(self, keep_days=None, start_time=None, period=None, differential_period=None, rate_limit=None, prefetch_block=None, filesplit_size=None, file_split_size=None, enable_standby_backup=None):
+    def __init__(self, keep_days=None, start_time=None, period=None, differential_period=None, rate_limit=None, prefetch_block=None, file_split_size=None, filesplit_size=None, enable_standby_backup=None):
         r"""BackupPolicy
 
         The model defined in huaweicloud sdk
 
-        :param keep_days: 备份文件可以保存的天数。  取值范围：1-732天。
+        :param keep_days: **参数解释**: 备份文件可以保存的天数。 **约束限制**: 不涉及。 **取值范围**: 1-36500天。 **默认取值**: 不涉及。
         :type keep_days: int
-        :param start_time: 备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1，mm和MM取值必须相同，且取值必须为00。  取值示例：  21:00-22:00
+        :param start_time: **参数解释**: 备份时间段。自动备份将在该时间段内触发。 **约束限制**: 不涉及。 **取值范围**: 备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1，mm和MM取值必须相同，且取值必须为00。  取值示例：  21:00-22:00 **默认取值**: 不涉及。
         :type start_time: str
-        :param period: 全量备份周期配置。自动全量备份将在每星期指定的天进行。取值范围：格式为逗号隔开的数字，数字代表星期。取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
+        :param period: **参数解释**: 全量备份周期配置。自动全量备份将在每周对应的UTC日期进行。 **约束限制**: 不涉及。 **取值范围**: 格式为逗号隔开的数字，数字代表星期，取1~7。  取值示例： - 1,2,3,4 表示备份周期配置为星期一、星期二、星期三和星期四。 - 1,2,3,4,5,6,7 则表示星期一至星期日每天执行一次自动备份。 - 1,3,5表示周一、周三、周五执行一次自动备份。 **默认取值**: 不涉及。
         :type period: str
-        :param differential_period: 差异备份间隔时间配置。每次自动差异备份的间隔时间。  取值范围：15、30、60、180、360、720、1440。单位：分钟。  取值示例：30
+        :param differential_period: **参数解释**: 差异备份间隔时间配置。每次自动差异备份的间隔时间。 **约束限制**: 不涉及。 **取值范围**: 15、30、60、180、360、720、1440。单位：分钟。 取值示例：30 **默认取值**: 不涉及。
         :type differential_period: str
-        :param rate_limit: 备份限速  取值范围：0 ~ 1024
+        :param rate_limit: **参数解释**: 备份限速。控制备份时备份数据上传OBS的速度，限速用于限制上传备份对上传带宽的影响。单位为MB/s。 **约束限制**: 不涉及。 **取值范围**: 0~1024MB/s，0表示不限速。 **默认取值**: 75MB/s
         :type rate_limit: int
-        :param prefetch_block: 控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数。当差量修改页面非常集中时（如数据导入场景），可以适当调大该值；当差量修改页面非常分散时（如随机更新），可以适当调小该值。  取值范围：1 ~ 8192
+        :param prefetch_block: **参数解释**: 差量预取页面个数。控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数。当差量修改页面非常集中时（如数据导入场景），可以适当调大该值；当差量修改页面非常分散时（如随机更新），可以适当调小该值。 **约束限制**: 不涉及。 **取值范围**: 1~8192 **默认取值**: 64
         :type prefetch_block: int
-        :param filesplit_size: 废弃。
-        :type filesplit_size: int
-        :param file_split_size: 全量、差量备份时产生的备份文件会根据分片大小进行拆分，可设置范围为0~1024GB，设置需为4的倍数，默认4GB，0GB表示不限制大小。  取值范围：0 ~ 1024
+        :param file_split_size: **参数解释**: 文件拆分大小。全量、差量备份时产生的备份文件会根据该参数的值进行拆分。 **约束限制**: 需为4的倍数。 **取值范围**: 可设置范围为0~1024GB。0GB表示不限制大小。 **默认取值**: 4GB
         :type file_split_size: int
-        :param enable_standby_backup: 是否启用备机备份。  取值范围：true|false
+        :param filesplit_size: **参数解释**: 文件拆分大小。全量、差量备份时产生的备份文件会根据该参数的值进行拆分。废弃，无需填写。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        :type filesplit_size: int
+        :param enable_standby_backup: **参数解释**: 是否启用备机备份。 **约束限制**: 不支持单节点实例及V2.0-3.100.0以下的实例。 **取值范围**: - true：启用备机备份。 - false：不启用备机备份。  **默认取值**: 不涉及。
         :type enable_standby_backup: bool
         """
         
@@ -73,8 +73,8 @@ class BackupPolicy:
         self._differential_period = None
         self._rate_limit = None
         self._prefetch_block = None
-        self._filesplit_size = None
         self._file_split_size = None
+        self._filesplit_size = None
         self._enable_standby_backup = None
         self.discriminator = None
 
@@ -86,10 +86,10 @@ class BackupPolicy:
             self.rate_limit = rate_limit
         if prefetch_block is not None:
             self.prefetch_block = prefetch_block
-        if filesplit_size is not None:
-            self.filesplit_size = filesplit_size
         if file_split_size is not None:
             self.file_split_size = file_split_size
+        if filesplit_size is not None:
+            self.filesplit_size = filesplit_size
         if enable_standby_backup is not None:
             self.enable_standby_backup = enable_standby_backup
 
@@ -97,7 +97,7 @@ class BackupPolicy:
     def keep_days(self):
         r"""Gets the keep_days of this BackupPolicy.
 
-        备份文件可以保存的天数。  取值范围：1-732天。
+        **参数解释**: 备份文件可以保存的天数。 **约束限制**: 不涉及。 **取值范围**: 1-36500天。 **默认取值**: 不涉及。
 
         :return: The keep_days of this BackupPolicy.
         :rtype: int
@@ -108,7 +108,7 @@ class BackupPolicy:
     def keep_days(self, keep_days):
         r"""Sets the keep_days of this BackupPolicy.
 
-        备份文件可以保存的天数。  取值范围：1-732天。
+        **参数解释**: 备份文件可以保存的天数。 **约束限制**: 不涉及。 **取值范围**: 1-36500天。 **默认取值**: 不涉及。
 
         :param keep_days: The keep_days of this BackupPolicy.
         :type keep_days: int
@@ -119,7 +119,7 @@ class BackupPolicy:
     def start_time(self):
         r"""Gets the start_time of this BackupPolicy.
 
-        备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1，mm和MM取值必须相同，且取值必须为00。  取值示例：  21:00-22:00
+        **参数解释**: 备份时间段。自动备份将在该时间段内触发。 **约束限制**: 不涉及。 **取值范围**: 备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1，mm和MM取值必须相同，且取值必须为00。  取值示例：  21:00-22:00 **默认取值**: 不涉及。
 
         :return: The start_time of this BackupPolicy.
         :rtype: str
@@ -130,7 +130,7 @@ class BackupPolicy:
     def start_time(self, start_time):
         r"""Sets the start_time of this BackupPolicy.
 
-        备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1，mm和MM取值必须相同，且取值必须为00。  取值示例：  21:00-22:00
+        **参数解释**: 备份时间段。自动备份将在该时间段内触发。 **约束限制**: 不涉及。 **取值范围**: 备份时间段。自动备份将在该时间段内触发。  取值范围：非空，格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  HH取值必须比hh大1，mm和MM取值必须相同，且取值必须为00。  取值示例：  21:00-22:00 **默认取值**: 不涉及。
 
         :param start_time: The start_time of this BackupPolicy.
         :type start_time: str
@@ -141,7 +141,7 @@ class BackupPolicy:
     def period(self):
         r"""Gets the period of this BackupPolicy.
 
-        全量备份周期配置。自动全量备份将在每星期指定的天进行。取值范围：格式为逗号隔开的数字，数字代表星期。取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
+        **参数解释**: 全量备份周期配置。自动全量备份将在每周对应的UTC日期进行。 **约束限制**: 不涉及。 **取值范围**: 格式为逗号隔开的数字，数字代表星期，取1~7。  取值示例： - 1,2,3,4 表示备份周期配置为星期一、星期二、星期三和星期四。 - 1,2,3,4,5,6,7 则表示星期一至星期日每天执行一次自动备份。 - 1,3,5表示周一、周三、周五执行一次自动备份。 **默认取值**: 不涉及。
 
         :return: The period of this BackupPolicy.
         :rtype: str
@@ -152,7 +152,7 @@ class BackupPolicy:
     def period(self, period):
         r"""Sets the period of this BackupPolicy.
 
-        全量备份周期配置。自动全量备份将在每星期指定的天进行。取值范围：格式为逗号隔开的数字，数字代表星期。取值示例：1,2,3,4则表示备份周期配置为星期一、星期二、星期三和星期四。
+        **参数解释**: 全量备份周期配置。自动全量备份将在每周对应的UTC日期进行。 **约束限制**: 不涉及。 **取值范围**: 格式为逗号隔开的数字，数字代表星期，取1~7。  取值示例： - 1,2,3,4 表示备份周期配置为星期一、星期二、星期三和星期四。 - 1,2,3,4,5,6,7 则表示星期一至星期日每天执行一次自动备份。 - 1,3,5表示周一、周三、周五执行一次自动备份。 **默认取值**: 不涉及。
 
         :param period: The period of this BackupPolicy.
         :type period: str
@@ -163,7 +163,7 @@ class BackupPolicy:
     def differential_period(self):
         r"""Gets the differential_period of this BackupPolicy.
 
-        差异备份间隔时间配置。每次自动差异备份的间隔时间。  取值范围：15、30、60、180、360、720、1440。单位：分钟。  取值示例：30
+        **参数解释**: 差异备份间隔时间配置。每次自动差异备份的间隔时间。 **约束限制**: 不涉及。 **取值范围**: 15、30、60、180、360、720、1440。单位：分钟。 取值示例：30 **默认取值**: 不涉及。
 
         :return: The differential_period of this BackupPolicy.
         :rtype: str
@@ -174,7 +174,7 @@ class BackupPolicy:
     def differential_period(self, differential_period):
         r"""Sets the differential_period of this BackupPolicy.
 
-        差异备份间隔时间配置。每次自动差异备份的间隔时间。  取值范围：15、30、60、180、360、720、1440。单位：分钟。  取值示例：30
+        **参数解释**: 差异备份间隔时间配置。每次自动差异备份的间隔时间。 **约束限制**: 不涉及。 **取值范围**: 15、30、60、180、360、720、1440。单位：分钟。 取值示例：30 **默认取值**: 不涉及。
 
         :param differential_period: The differential_period of this BackupPolicy.
         :type differential_period: str
@@ -185,7 +185,7 @@ class BackupPolicy:
     def rate_limit(self):
         r"""Gets the rate_limit of this BackupPolicy.
 
-        备份限速  取值范围：0 ~ 1024
+        **参数解释**: 备份限速。控制备份时备份数据上传OBS的速度，限速用于限制上传备份对上传带宽的影响。单位为MB/s。 **约束限制**: 不涉及。 **取值范围**: 0~1024MB/s，0表示不限速。 **默认取值**: 75MB/s
 
         :return: The rate_limit of this BackupPolicy.
         :rtype: int
@@ -196,7 +196,7 @@ class BackupPolicy:
     def rate_limit(self, rate_limit):
         r"""Sets the rate_limit of this BackupPolicy.
 
-        备份限速  取值范围：0 ~ 1024
+        **参数解释**: 备份限速。控制备份时备份数据上传OBS的速度，限速用于限制上传备份对上传带宽的影响。单位为MB/s。 **约束限制**: 不涉及。 **取值范围**: 0~1024MB/s，0表示不限速。 **默认取值**: 75MB/s
 
         :param rate_limit: The rate_limit of this BackupPolicy.
         :type rate_limit: int
@@ -207,7 +207,7 @@ class BackupPolicy:
     def prefetch_block(self):
         r"""Gets the prefetch_block of this BackupPolicy.
 
-        控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数。当差量修改页面非常集中时（如数据导入场景），可以适当调大该值；当差量修改页面非常分散时（如随机更新），可以适当调小该值。  取值范围：1 ~ 8192
+        **参数解释**: 差量预取页面个数。控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数。当差量修改页面非常集中时（如数据导入场景），可以适当调大该值；当差量修改页面非常分散时（如随机更新），可以适当调小该值。 **约束限制**: 不涉及。 **取值范围**: 1~8192 **默认取值**: 64
 
         :return: The prefetch_block of this BackupPolicy.
         :rtype: int
@@ -218,7 +218,7 @@ class BackupPolicy:
     def prefetch_block(self, prefetch_block):
         r"""Sets the prefetch_block of this BackupPolicy.
 
-        控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数。当差量修改页面非常集中时（如数据导入场景），可以适当调大该值；当差量修改页面非常分散时（如随机更新），可以适当调小该值。  取值范围：1 ~ 8192
+        **参数解释**: 差量预取页面个数。控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数。当差量修改页面非常集中时（如数据导入场景），可以适当调大该值；当差量修改页面非常分散时（如随机更新），可以适当调小该值。 **约束限制**: 不涉及。 **取值范围**: 1~8192 **默认取值**: 64
 
         :param prefetch_block: The prefetch_block of this BackupPolicy.
         :type prefetch_block: int
@@ -226,32 +226,10 @@ class BackupPolicy:
         self._prefetch_block = prefetch_block
 
     @property
-    def filesplit_size(self):
-        r"""Gets the filesplit_size of this BackupPolicy.
-
-        废弃。
-
-        :return: The filesplit_size of this BackupPolicy.
-        :rtype: int
-        """
-        return self._filesplit_size
-
-    @filesplit_size.setter
-    def filesplit_size(self, filesplit_size):
-        r"""Sets the filesplit_size of this BackupPolicy.
-
-        废弃。
-
-        :param filesplit_size: The filesplit_size of this BackupPolicy.
-        :type filesplit_size: int
-        """
-        self._filesplit_size = filesplit_size
-
-    @property
     def file_split_size(self):
         r"""Gets the file_split_size of this BackupPolicy.
 
-        全量、差量备份时产生的备份文件会根据分片大小进行拆分，可设置范围为0~1024GB，设置需为4的倍数，默认4GB，0GB表示不限制大小。  取值范围：0 ~ 1024
+        **参数解释**: 文件拆分大小。全量、差量备份时产生的备份文件会根据该参数的值进行拆分。 **约束限制**: 需为4的倍数。 **取值范围**: 可设置范围为0~1024GB。0GB表示不限制大小。 **默认取值**: 4GB
 
         :return: The file_split_size of this BackupPolicy.
         :rtype: int
@@ -262,7 +240,7 @@ class BackupPolicy:
     def file_split_size(self, file_split_size):
         r"""Sets the file_split_size of this BackupPolicy.
 
-        全量、差量备份时产生的备份文件会根据分片大小进行拆分，可设置范围为0~1024GB，设置需为4的倍数，默认4GB，0GB表示不限制大小。  取值范围：0 ~ 1024
+        **参数解释**: 文件拆分大小。全量、差量备份时产生的备份文件会根据该参数的值进行拆分。 **约束限制**: 需为4的倍数。 **取值范围**: 可设置范围为0~1024GB。0GB表示不限制大小。 **默认取值**: 4GB
 
         :param file_split_size: The file_split_size of this BackupPolicy.
         :type file_split_size: int
@@ -270,10 +248,32 @@ class BackupPolicy:
         self._file_split_size = file_split_size
 
     @property
+    def filesplit_size(self):
+        r"""Gets the filesplit_size of this BackupPolicy.
+
+        **参数解释**: 文件拆分大小。全量、差量备份时产生的备份文件会根据该参数的值进行拆分。废弃，无需填写。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :return: The filesplit_size of this BackupPolicy.
+        :rtype: int
+        """
+        return self._filesplit_size
+
+    @filesplit_size.setter
+    def filesplit_size(self, filesplit_size):
+        r"""Sets the filesplit_size of this BackupPolicy.
+
+        **参数解释**: 文件拆分大小。全量、差量备份时产生的备份文件会根据该参数的值进行拆分。废弃，无需填写。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :param filesplit_size: The filesplit_size of this BackupPolicy.
+        :type filesplit_size: int
+        """
+        self._filesplit_size = filesplit_size
+
+    @property
     def enable_standby_backup(self):
         r"""Gets the enable_standby_backup of this BackupPolicy.
 
-        是否启用备机备份。  取值范围：true|false
+        **参数解释**: 是否启用备机备份。 **约束限制**: 不支持单节点实例及V2.0-3.100.0以下的实例。 **取值范围**: - true：启用备机备份。 - false：不启用备机备份。  **默认取值**: 不涉及。
 
         :return: The enable_standby_backup of this BackupPolicy.
         :rtype: bool
@@ -284,7 +284,7 @@ class BackupPolicy:
     def enable_standby_backup(self, enable_standby_backup):
         r"""Sets the enable_standby_backup of this BackupPolicy.
 
-        是否启用备机备份。  取值范围：true|false
+        **参数解释**: 是否启用备机备份。 **约束限制**: 不支持单节点实例及V2.0-3.100.0以下的实例。 **取值范围**: - true：启用备机备份。 - false：不启用备机备份。  **默认取值**: 不涉及。
 
         :param enable_standby_backup: The enable_standby_backup of this BackupPolicy.
         :type enable_standby_backup: bool

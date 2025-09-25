@@ -36,11 +36,11 @@ class ListHandleAffectBaselineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_rule_num: **参数解释** 该操作影响的范围的总数 **取值范围**   取值0-5000
+        :param total_rule_num: **参数解释** 该操作影响的范围的总数 **取值范围** 取值0-5000
         :type total_rule_num: int
-        :param rule_num: **参数解释** 该操作影响的检查项数 **取值范围**   取值0-5000
+        :param rule_num: **参数解释** 该操作影响的检查项数 **取值范围** 取值0-5000
         :type rule_num: int
-        :param host_num: **参数解释** 该操作影响的主机数 **取值范围**   取值0-5000
+        :param host_num: **参数解释** 该操作影响的主机数 **取值范围** 取值0-5000
         :type host_num: int
         :param data_list: **参数解释** 该操作影响范围的详细信息的列表
         :type data_list: list[:class:`huaweicloudsdkhss.v5.HandleAffectBaselineInfo`]
@@ -67,7 +67,7 @@ class ListHandleAffectBaselineResponse(SdkResponse):
     def total_rule_num(self):
         r"""Gets the total_rule_num of this ListHandleAffectBaselineResponse.
 
-        **参数解释** 该操作影响的范围的总数 **取值范围**   取值0-5000
+        **参数解释** 该操作影响的范围的总数 **取值范围** 取值0-5000
 
         :return: The total_rule_num of this ListHandleAffectBaselineResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class ListHandleAffectBaselineResponse(SdkResponse):
     def total_rule_num(self, total_rule_num):
         r"""Sets the total_rule_num of this ListHandleAffectBaselineResponse.
 
-        **参数解释** 该操作影响的范围的总数 **取值范围**   取值0-5000
+        **参数解释** 该操作影响的范围的总数 **取值范围** 取值0-5000
 
         :param total_rule_num: The total_rule_num of this ListHandleAffectBaselineResponse.
         :type total_rule_num: int
@@ -89,7 +89,7 @@ class ListHandleAffectBaselineResponse(SdkResponse):
     def rule_num(self):
         r"""Gets the rule_num of this ListHandleAffectBaselineResponse.
 
-        **参数解释** 该操作影响的检查项数 **取值范围**   取值0-5000
+        **参数解释** 该操作影响的检查项数 **取值范围** 取值0-5000
 
         :return: The rule_num of this ListHandleAffectBaselineResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListHandleAffectBaselineResponse(SdkResponse):
     def rule_num(self, rule_num):
         r"""Sets the rule_num of this ListHandleAffectBaselineResponse.
 
-        **参数解释** 该操作影响的检查项数 **取值范围**   取值0-5000
+        **参数解释** 该操作影响的检查项数 **取值范围** 取值0-5000
 
         :param rule_num: The rule_num of this ListHandleAffectBaselineResponse.
         :type rule_num: int
@@ -111,7 +111,7 @@ class ListHandleAffectBaselineResponse(SdkResponse):
     def host_num(self):
         r"""Gets the host_num of this ListHandleAffectBaselineResponse.
 
-        **参数解释** 该操作影响的主机数 **取值范围**   取值0-5000
+        **参数解释** 该操作影响的主机数 **取值范围** 取值0-5000
 
         :return: The host_num of this ListHandleAffectBaselineResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ListHandleAffectBaselineResponse(SdkResponse):
     def host_num(self, host_num):
         r"""Sets the host_num of this ListHandleAffectBaselineResponse.
 
-        **参数解释** 该操作影响的主机数 **取值范围**   取值0-5000
+        **参数解释** 该操作影响的主机数 **取值范围** 取值0-5000
 
         :param host_num: The host_num of this ListHandleAffectBaselineResponse.
         :type host_num: int

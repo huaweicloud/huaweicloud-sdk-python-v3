@@ -33,11 +33,11 @@ class UploadFileRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param scene_code: 文件上传场景,如工单附件上传:order
+        :param scene_code: 文件上传场景,如服务单附件上传:order
         :type scene_code: str
-        :param file_name: 文件名称,用户上传工单附件的文件名
+        :param file_name: 文件名称,用户上传服务单附件的文件名
         :type file_name: str
-        :param file: 文件,用户上传的工单附件
+        :param file: 文件,用户上传的服务单附件
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         
@@ -56,7 +56,7 @@ class UploadFileRequestBody:
     def scene_code(self):
         r"""Gets the scene_code of this UploadFileRequestBody.
 
-        文件上传场景,如工单附件上传:order
+        文件上传场景,如服务单附件上传:order
 
         :return: The scene_code of this UploadFileRequestBody.
         :rtype: str
@@ -67,7 +67,7 @@ class UploadFileRequestBody:
     def scene_code(self, scene_code):
         r"""Sets the scene_code of this UploadFileRequestBody.
 
-        文件上传场景,如工单附件上传:order
+        文件上传场景,如服务单附件上传:order
 
         :param scene_code: The scene_code of this UploadFileRequestBody.
         :type scene_code: str
@@ -78,7 +78,7 @@ class UploadFileRequestBody:
     def file_name(self):
         r"""Gets the file_name of this UploadFileRequestBody.
 
-        文件名称,用户上传工单附件的文件名
+        文件名称,用户上传服务单附件的文件名
 
         :return: The file_name of this UploadFileRequestBody.
         :rtype: str
@@ -89,7 +89,7 @@ class UploadFileRequestBody:
     def file_name(self, file_name):
         r"""Sets the file_name of this UploadFileRequestBody.
 
-        文件名称,用户上传工单附件的文件名
+        文件名称,用户上传服务单附件的文件名
 
         :param file_name: The file_name of this UploadFileRequestBody.
         :type file_name: str
@@ -100,7 +100,7 @@ class UploadFileRequestBody:
     def file(self):
         r"""Gets the file of this UploadFileRequestBody.
 
-        文件,用户上传的工单附件
+        文件,用户上传的服务单附件
 
         :return: The file of this UploadFileRequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -111,7 +111,7 @@ class UploadFileRequestBody:
     def file(self, file):
         r"""Sets the file of this UploadFileRequestBody.
 
-        文件,用户上传的工单附件
+        文件,用户上传的服务单附件
 
         :param file: The file of this UploadFileRequestBody.
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`

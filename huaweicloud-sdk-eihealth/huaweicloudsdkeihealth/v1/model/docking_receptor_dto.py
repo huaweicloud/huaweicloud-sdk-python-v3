@@ -22,7 +22,9 @@ class DockingReceptorDto:
         'remove_ion': 'bool',
         'remove_water': 'bool',
         'remove_ligand': 'bool',
-        'add_hydrogen': 'bool'
+        'add_hydrogen': 'bool',
+        'docking_type': 'str',
+        'reference_file': 'ReferenceLigandFile'
     }
 
     attribute_map = {
@@ -31,10 +33,12 @@ class DockingReceptorDto:
         'remove_ion': 'remove_ion',
         'remove_water': 'remove_water',
         'remove_ligand': 'remove_ligand',
-        'add_hydrogen': 'add_hydrogen'
+        'add_hydrogen': 'add_hydrogen',
+        'docking_type': 'docking_type',
+        'reference_file': 'reference_file'
     }
 
-    def __init__(self, receptor=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None):
+    def __init__(self, receptor=None, bounding_box=None, remove_ion=None, remove_water=None, remove_ligand=None, add_hydrogen=None, docking_type=None, reference_file=None):
         r"""DockingReceptorDto
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class DockingReceptorDto:
         :type remove_ligand: bool
         :param add_hydrogen: 增加氢原子
         :type add_hydrogen: bool
+        :param docking_type: **参数解释**： 对接类型。 **约束限制**： 不支持 **取值范围**： - BLIND_DOCKING：全局对接 - POCKET_DOCKING：口袋对接 **默认取值**： POCKET_DOCKING 
+        :type docking_type: str
+        :param reference_file: 
+        :type reference_file: :class:`huaweicloudsdkeihealth.v1.ReferenceLigandFile`
         """
         
         
@@ -61,6 +69,8 @@ class DockingReceptorDto:
         self._remove_water = None
         self._remove_ligand = None
         self._add_hydrogen = None
+        self._docking_type = None
+        self._reference_file = None
         self.discriminator = None
 
         self.receptor = receptor
@@ -73,6 +83,10 @@ class DockingReceptorDto:
             self.remove_ligand = remove_ligand
         if add_hydrogen is not None:
             self.add_hydrogen = add_hydrogen
+        if docking_type is not None:
+            self.docking_type = docking_type
+        if reference_file is not None:
+            self.reference_file = reference_file
 
     @property
     def receptor(self):
@@ -197,6 +211,46 @@ class DockingReceptorDto:
         :type add_hydrogen: bool
         """
         self._add_hydrogen = add_hydrogen
+
+    @property
+    def docking_type(self):
+        r"""Gets the docking_type of this DockingReceptorDto.
+
+        **参数解释**： 对接类型。 **约束限制**： 不支持 **取值范围**： - BLIND_DOCKING：全局对接 - POCKET_DOCKING：口袋对接 **默认取值**： POCKET_DOCKING 
+
+        :return: The docking_type of this DockingReceptorDto.
+        :rtype: str
+        """
+        return self._docking_type
+
+    @docking_type.setter
+    def docking_type(self, docking_type):
+        r"""Sets the docking_type of this DockingReceptorDto.
+
+        **参数解释**： 对接类型。 **约束限制**： 不支持 **取值范围**： - BLIND_DOCKING：全局对接 - POCKET_DOCKING：口袋对接 **默认取值**： POCKET_DOCKING 
+
+        :param docking_type: The docking_type of this DockingReceptorDto.
+        :type docking_type: str
+        """
+        self._docking_type = docking_type
+
+    @property
+    def reference_file(self):
+        r"""Gets the reference_file of this DockingReceptorDto.
+
+        :return: The reference_file of this DockingReceptorDto.
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ReferenceLigandFile`
+        """
+        return self._reference_file
+
+    @reference_file.setter
+    def reference_file(self, reference_file):
+        r"""Sets the reference_file of this DockingReceptorDto.
+
+        :param reference_file: The reference_file of this DockingReceptorDto.
+        :type reference_file: :class:`huaweicloudsdkeihealth.v1.ReferenceLigandFile`
+        """
+        self._reference_file = reference_file
 
     def to_dict(self):
         """Returns the model properties as a dict"""

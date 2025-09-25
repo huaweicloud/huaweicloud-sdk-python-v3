@@ -39,7 +39,7 @@ class ServicePortInfo:
 
         :param desc: 服务名称
         :type desc: str
-        :param type: 类型，可取值集合[http，https]
+        :param type: **参数解释**: 类型 **约束限制**: 不涉及 **取值范围**:   - http：http类端口   - https：https类端口  **默认取值**: 不涉及 
         :type type: str
         :param protocol: 默认tcp。可取值集合[tcp，udp]
         :type protocol: str
@@ -92,7 +92,7 @@ class ServicePortInfo:
     def type(self):
         r"""Gets the type of this ServicePortInfo.
 
-        类型，可取值集合[http，https]
+        **参数解释**: 类型 **约束限制**: 不涉及 **取值范围**:   - http：http类端口   - https：https类端口  **默认取值**: 不涉及 
 
         :return: The type of this ServicePortInfo.
         :rtype: str
@@ -103,7 +103,7 @@ class ServicePortInfo:
     def type(self, type):
         r"""Sets the type of this ServicePortInfo.
 
-        类型，可取值集合[http，https]
+        **参数解释**: 类型 **约束限制**: 不涉及 **取值范围**:   - http：http类端口   - https：https类端口  **默认取值**: 不涉及 
 
         :param type: The type of this ServicePortInfo.
         :type type: str

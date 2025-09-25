@@ -35,7 +35,7 @@ class OrganizationPolicyAssignmentRequest:
 
         :param excluded_accounts: 需要排除配置规则的帐号。
         :type excluded_accounts: list[str]
-        :param organization_policy_assignment_name: 组织合规规则名称。
+        :param organization_policy_assignment_name: 组织合规规则名称
         :type organization_policy_assignment_name: str
         :param managed_policy_assignment_metadata: 
         :type managed_policy_assignment_metadata: :class:`huaweicloudsdkconfig.v1.ManagedPolicyAssignmentMetadata`
@@ -80,7 +80,7 @@ class OrganizationPolicyAssignmentRequest:
     def organization_policy_assignment_name(self):
         r"""Gets the organization_policy_assignment_name of this OrganizationPolicyAssignmentRequest.
 
-        组织合规规则名称。
+        组织合规规则名称
 
         :return: The organization_policy_assignment_name of this OrganizationPolicyAssignmentRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class OrganizationPolicyAssignmentRequest:
     def organization_policy_assignment_name(self, organization_policy_assignment_name):
         r"""Sets the organization_policy_assignment_name of this OrganizationPolicyAssignmentRequest.
 
-        组织合规规则名称。
+        组织合规规则名称
 
         :param organization_policy_assignment_name: The organization_policy_assignment_name of this OrganizationPolicyAssignmentRequest.
         :type organization_policy_assignment_name: str

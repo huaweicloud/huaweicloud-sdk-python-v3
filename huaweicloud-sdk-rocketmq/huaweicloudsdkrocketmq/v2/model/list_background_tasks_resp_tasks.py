@@ -53,7 +53,7 @@ class ListBackgroundTasksRespTasks:
         :type user_id: str
         :param params: **参数解释**： 任务参数。 **取值范围**： 不涉及。
         :type params: str
-        :param status: **参数解释**： 任务状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 任务状态。 **取值范围**： - CREATED：后台任务状态为创建成功。 - SUCCESS：后台任务状态为成功。 - FAILED：后台任务状态为失败。 - DELETED：后台任务状态为已删除。 - EXECUTING：后台任务状态为执行中。 - CANCELLED：定时任务状态为取消。
         :type status: str
         :param created_at: **参数解释**： 启动时间。 **取值范围**： 不涉及。
         :type created_at: str
@@ -204,7 +204,7 @@ class ListBackgroundTasksRespTasks:
     def status(self):
         r"""Gets the status of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 任务状态。 **取值范围**： 不涉及。
+        **参数解释**： 任务状态。 **取值范围**： - CREATED：后台任务状态为创建成功。 - SUCCESS：后台任务状态为成功。 - FAILED：后台任务状态为失败。 - DELETED：后台任务状态为已删除。 - EXECUTING：后台任务状态为执行中。 - CANCELLED：定时任务状态为取消。
 
         :return: The status of this ListBackgroundTasksRespTasks.
         :rtype: str
@@ -215,7 +215,7 @@ class ListBackgroundTasksRespTasks:
     def status(self, status):
         r"""Sets the status of this ListBackgroundTasksRespTasks.
 
-        **参数解释**： 任务状态。 **取值范围**： 不涉及。
+        **参数解释**： 任务状态。 **取值范围**： - CREATED：后台任务状态为创建成功。 - SUCCESS：后台任务状态为成功。 - FAILED：后台任务状态为失败。 - DELETED：后台任务状态为已删除。 - EXECUTING：后台任务状态为执行中。 - CANCELLED：定时任务状态为取消。
 
         :param status: The status of this ListBackgroundTasksRespTasks.
         :type status: str

@@ -47,7 +47,7 @@ class ResultFileResponseInfo:
         :type file_hash: str
         :param file_size: **参数解释**: 文件大小 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
         :type file_size: int
-        :param file_owner: 文件属主
+        :param file_owner: 文件属性
         :type file_owner: str
         :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
         :type file_attr: str
@@ -153,7 +153,7 @@ class ResultFileResponseInfo:
     def file_owner(self):
         r"""Gets the file_owner of this ResultFileResponseInfo.
 
-        文件属主
+        文件属性
 
         :return: The file_owner of this ResultFileResponseInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class ResultFileResponseInfo:
     def file_owner(self, file_owner):
         r"""Sets the file_owner of this ResultFileResponseInfo.
 
-        文件属主
+        文件属性
 
         :param file_owner: The file_owner of this ResultFileResponseInfo.
         :type file_owner: str

@@ -1036,6 +1036,71 @@ class EiHealthAsyncClient(Client):
 
         return http_info
 
+    def create_asset_resource_async(self, request):
+        r"""创建计费资产资源
+
+        创建计费资产资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAssetResource
+        :type request: :class:`huaweicloudsdkeihealth.v1.CreateAssetResourceRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CreateAssetResourceResponse`
+        """
+        http_info = self._create_asset_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_asset_resource_async_invoker(self, request):
+        http_info = self._create_asset_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_asset_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/assets/asset-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_cluster_job_async(self, request):
         r"""创建分子聚类作业
 
@@ -1966,6 +2031,75 @@ class EiHealthAsyncClient(Client):
 
         return http_info
 
+    def create_message_additions_async(self, request):
+        r"""绑定问答额外信息
+
+        绑定问答额外信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateMessageAdditions
+        :type request: :class:`huaweicloudsdkeihealth.v1.CreateMessageAdditionsRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.CreateMessageAdditionsResponse`
+        """
+        http_info = self._create_message_additions_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_message_additions_async_invoker(self, request):
+        http_info = self._create_message_additions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_message_additions_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}/messages/{message_id}/additions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMessageAdditionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
+        if 'message_id' in local_var_params:
+            path_params['message_id'] = local_var_params['message_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_mol_batch_download_task_async(self, request):
         r"""创建分子或分子复合物批量下载任务
 
@@ -2735,6 +2869,136 @@ class EiHealthAsyncClient(Client):
             path_params['app_id'] = local_var_params['app_id']
         if 'eihealth_project_id' in local_var_params:
             path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_asset_resource_async(self, request):
+        r"""退订计费资产资源
+
+        退订计费资产资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAssetResource
+        :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAssetResourceRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteAssetResourceResponse`
+        """
+        http_info = self._delete_asset_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_asset_resource_async_invoker(self, request):
+        http_info = self._delete_asset_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_asset_resource_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/assets/asset-resources/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_chat_async(self, request):
+        r"""删除对话
+
+        删除对话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteChat
+        :type request: :class:`huaweicloudsdkeihealth.v1.DeleteChatRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteChatResponse`
+        """
+        http_info = self._delete_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_chat_async_invoker(self, request):
+        http_info = self._delete_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_chat_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
 
         query_params = []
 
@@ -4636,6 +4900,78 @@ class EiHealthAsyncClient(Client):
 
         return http_info
 
+    def list_asset_resource_async(self, request):
+        r"""查询计费资产资源
+
+        查询计费资产资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAssetResource
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListAssetResourceRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListAssetResourceResponse`
+        """
+        http_info = self._list_asset_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_asset_resource_async_invoker(self, request):
+        http_info = self._list_asset_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_asset_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/assets/asset-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'spec_code' in local_var_params:
+            query_params.append(('spec_code', local_var_params['spec_code']))
+        if 'status_list' in local_var_params:
+            query_params.append(('status_list', local_var_params['status_list']))
+            collection_formats['status_list'] = 'csv'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Resource-Mappings", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_base_model_async(self, request):
         r"""获取基模型列表
 
@@ -4808,6 +5144,77 @@ class EiHealthAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_chat_async(self, request):
+        r"""获取对话列表
+
+        获取对话列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListChat
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListChatRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListChatResponse`
+        """
+        http_info = self._list_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_chat_async_invoker(self, request):
+        http_info = self._list_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_chat_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/chats",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'title' in local_var_params:
+            query_params.append(('title', local_var_params['title']))
 
         header_params = {}
 
@@ -5460,7 +5867,7 @@ class EiHealthAsyncClient(Client):
 
         return http_info
 
-    def list_drug_model_resource_async(self, request):
+    def list_drug_model_resource1_async(self, request):
         r"""查询盘古药物分子大模型
 
         查询盘古药物分子大模型。
@@ -5468,23 +5875,23 @@ class EiHealthAsyncClient(Client):
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListDrugModelResource
-        :type request: :class:`huaweicloudsdkeihealth.v1.ListDrugModelResourceRequest`
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ListDrugModelResourceResponse`
+        :param request: Request instance for ListDrugModelResource1
+        :type request: :class:`huaweicloudsdkeihealth.v1.ListDrugModelResource1Request`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ListDrugModelResource1Response`
         """
-        http_info = self._list_drug_model_resource_http_info(request)
+        http_info = self._list_drug_model_resource1_http_info(request)
         return self._call_api(**http_info)
 
-    def list_drug_model_resource_async_invoker(self, request):
-        http_info = self._list_drug_model_resource_http_info(request)
+    def list_drug_model_resource1_async_invoker(self, request):
+        http_info = self._list_drug_model_resource1_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_drug_model_resource_http_info(self, request):
+    def _list_drug_model_resource1_http_info(self, request):
         http_info = {
             "method": "GET",
             "resource_path": "/v1/{project_id}/drug/drug-model-resources",
             "request_type": request.__class__.__name__,
-            "response_type": "ListDrugModelResourceResponse"
+            "response_type": "ListDrugModelResource1Response"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6365,9 +6772,9 @@ class EiHealthAsyncClient(Client):
         return http_info
 
     def list_project_async(self, request):
-        r"""获取项目列表
+        r"""获取空间列表
 
-        获取项目列表
+        获取空间列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -8063,6 +8470,71 @@ class EiHealthAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_chat_async(self, request):
+        r"""获取对话详情
+
+        获取对话详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowChat
+        :type request: :class:`huaweicloudsdkeihealth.v1.ShowChatRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.ShowChatResponse`
+        """
+        http_info = self._show_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_chat_async_invoker(self, request):
+        http_info = self._show_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_chat_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Chat-Route-Id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -10292,6 +10764,73 @@ class EiHealthAsyncClient(Client):
             path_params['app_id'] = local_var_params['app_id']
         if 'eihealth_project_id' in local_var_params:
             path_params['eihealth_project_id'] = local_var_params['eihealth_project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_chat_async(self, request):
+        r"""更新对话
+
+        更新对话。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateChat
+        :type request: :class:`huaweicloudsdkeihealth.v1.UpdateChatRequest`
+        :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateChatResponse`
+        """
+        http_info = self._update_chat_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_chat_async_invoker(self, request):
+        http_info = self._update_chat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_chat_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/chats/{chat_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateChatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'chat_id' in local_var_params:
+            path_params['chat_id'] = local_var_params['chat_id']
 
         query_params = []
 

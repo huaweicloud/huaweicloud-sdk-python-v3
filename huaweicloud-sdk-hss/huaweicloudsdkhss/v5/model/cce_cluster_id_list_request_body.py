@@ -17,29 +17,35 @@ class CCEClusterIdListRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id_list': 'list[str]'
+        'cluster_id_list': 'list[str]',
+        'detect_type': 'str'
     }
 
     attribute_map = {
-        'cluster_id_list': 'cluster_id_list'
+        'cluster_id_list': 'cluster_id_list',
+        'detect_type': 'detect_type'
     }
 
-    def __init__(self, cluster_id_list=None):
+    def __init__(self, cluster_id_list=None, detect_type=None):
         r"""CCEClusterIdListRequestBody
 
         The model defined in huaweicloud sdk
 
         :param cluster_id_list: 集群id列表
         :type cluster_id_list: list[str]
+        :param detect_type: 查询类型，包含如下:     - image : 镜像风险     - baseline : 基线风险     - vul : 漏洞风险     - event : 入侵风险
+        :type detect_type: str
         """
         
         
 
         self._cluster_id_list = None
+        self._detect_type = None
         self.discriminator = None
 
-        if cluster_id_list is not None:
-            self.cluster_id_list = cluster_id_list
+        self.cluster_id_list = cluster_id_list
+        if detect_type is not None:
+            self.detect_type = detect_type
 
     @property
     def cluster_id_list(self):
@@ -62,6 +68,28 @@ class CCEClusterIdListRequestBody:
         :type cluster_id_list: list[str]
         """
         self._cluster_id_list = cluster_id_list
+
+    @property
+    def detect_type(self):
+        r"""Gets the detect_type of this CCEClusterIdListRequestBody.
+
+        查询类型，包含如下:     - image : 镜像风险     - baseline : 基线风险     - vul : 漏洞风险     - event : 入侵风险
+
+        :return: The detect_type of this CCEClusterIdListRequestBody.
+        :rtype: str
+        """
+        return self._detect_type
+
+    @detect_type.setter
+    def detect_type(self, detect_type):
+        r"""Sets the detect_type of this CCEClusterIdListRequestBody.
+
+        查询类型，包含如下:     - image : 镜像风险     - baseline : 基线风险     - vul : 漏洞风险     - event : 入侵风险
+
+        :param detect_type: The detect_type of this CCEClusterIdListRequestBody.
+        :type detect_type: str
+        """
+        self._detect_type = detect_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

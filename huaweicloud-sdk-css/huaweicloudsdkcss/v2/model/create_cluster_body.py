@@ -18,6 +18,7 @@ class CreateClusterBody:
 
     openapi_types = {
         'name': 'str',
+        'desc': 'str',
         'backup_strategy': 'CreateClusterBackupStrategyBody',
         'roles': 'list[CreateClusterRolesBody]',
         'nics': 'CreateClusterInstanceNicsBody',
@@ -31,11 +32,14 @@ class CreateClusterBody:
         'public_ip_req': 'CreateClusterPublicIpReq',
         'load_balance': 'CreateClusterLoadBalance',
         'public_kibana_req': 'CreateClusterPublicKibanaReq',
-        'pay_info': 'PayInfoBody'
+        'pay_info': 'PayInfoBody',
+        'ipv6_enable': 'bool',
+        'disk_encryption': 'DiskEncryptionInfo'
     }
 
     attribute_map = {
         'name': 'name',
+        'desc': 'desc',
         'backup_strategy': 'backupStrategy',
         'roles': 'roles',
         'nics': 'nics',
@@ -49,16 +53,20 @@ class CreateClusterBody:
         'public_ip_req': 'publicIPReq',
         'load_balance': 'loadBalance',
         'public_kibana_req': 'publicKibanaReq',
-        'pay_info': 'payInfo'
+        'pay_info': 'payInfo',
+        'ipv6_enable': 'ipv6_enable',
+        'disk_encryption': 'diskEncryption'
     }
 
-    def __init__(self, name=None, backup_strategy=None, roles=None, nics=None, enterprise_project_id=None, tags=None, availability_zone=None, datastore=None, authority_enable=None, https_enable=None, admin_pwd=None, public_ip_req=None, load_balance=None, public_kibana_req=None, pay_info=None):
+    def __init__(self, name=None, desc=None, backup_strategy=None, roles=None, nics=None, enterprise_project_id=None, tags=None, availability_zone=None, datastore=None, authority_enable=None, https_enable=None, admin_pwd=None, public_ip_req=None, load_balance=None, public_kibana_req=None, pay_info=None, ipv6_enable=None, disk_encryption=None):
         r"""CreateClusterBody
 
         The model defined in huaweicloud sdk
 
         :param name: 集群名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
         :type name: str
+        :param desc: 集群描述。
+        :type desc: str
         :param backup_strategy: 
         :type backup_strategy: :class:`huaweicloudsdkcss.v2.CreateClusterBackupStrategyBody`
         :param roles: 
@@ -87,11 +95,16 @@ class CreateClusterBody:
         :type public_kibana_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaReq`
         :param pay_info: 
         :type pay_info: :class:`huaweicloudsdkcss.v2.PayInfoBody`
+        :param ipv6_enable: 集群是否开启自动分配IPv6地址。
+        :type ipv6_enable: bool
+        :param disk_encryption: 
+        :type disk_encryption: :class:`huaweicloudsdkcss.v2.DiskEncryptionInfo`
         """
         
         
 
         self._name = None
+        self._desc = None
         self._backup_strategy = None
         self._roles = None
         self._nics = None
@@ -106,9 +119,13 @@ class CreateClusterBody:
         self._load_balance = None
         self._public_kibana_req = None
         self._pay_info = None
+        self._ipv6_enable = None
+        self._disk_encryption = None
         self.discriminator = None
 
         self.name = name
+        if desc is not None:
+            self.desc = desc
         if backup_strategy is not None:
             self.backup_strategy = backup_strategy
         self.roles = roles
@@ -117,8 +134,7 @@ class CreateClusterBody:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
-        if availability_zone is not None:
-            self.availability_zone = availability_zone
+        self.availability_zone = availability_zone
         self.datastore = datastore
         if authority_enable is not None:
             self.authority_enable = authority_enable
@@ -134,6 +150,10 @@ class CreateClusterBody:
             self.public_kibana_req = public_kibana_req
         if pay_info is not None:
             self.pay_info = pay_info
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
+        if disk_encryption is not None:
+            self.disk_encryption = disk_encryption
 
     @property
     def name(self):
@@ -156,6 +176,28 @@ class CreateClusterBody:
         :type name: str
         """
         self._name = name
+
+    @property
+    def desc(self):
+        r"""Gets the desc of this CreateClusterBody.
+
+        集群描述。
+
+        :return: The desc of this CreateClusterBody.
+        :rtype: str
+        """
+        return self._desc
+
+    @desc.setter
+    def desc(self, desc):
+        r"""Sets the desc of this CreateClusterBody.
+
+        集群描述。
+
+        :param desc: The desc of this CreateClusterBody.
+        :type desc: str
+        """
+        self._desc = desc
 
     @property
     def backup_strategy(self):
@@ -432,6 +474,46 @@ class CreateClusterBody:
         :type pay_info: :class:`huaweicloudsdkcss.v2.PayInfoBody`
         """
         self._pay_info = pay_info
+
+    @property
+    def ipv6_enable(self):
+        r"""Gets the ipv6_enable of this CreateClusterBody.
+
+        集群是否开启自动分配IPv6地址。
+
+        :return: The ipv6_enable of this CreateClusterBody.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        r"""Sets the ipv6_enable of this CreateClusterBody.
+
+        集群是否开启自动分配IPv6地址。
+
+        :param ipv6_enable: The ipv6_enable of this CreateClusterBody.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
+
+    @property
+    def disk_encryption(self):
+        r"""Gets the disk_encryption of this CreateClusterBody.
+
+        :return: The disk_encryption of this CreateClusterBody.
+        :rtype: :class:`huaweicloudsdkcss.v2.DiskEncryptionInfo`
+        """
+        return self._disk_encryption
+
+    @disk_encryption.setter
+    def disk_encryption(self, disk_encryption):
+        r"""Sets the disk_encryption of this CreateClusterBody.
+
+        :param disk_encryption: The disk_encryption of this CreateClusterBody.
+        :type disk_encryption: :class:`huaweicloudsdkcss.v2.DiskEncryptionInfo`
+        """
+        self._disk_encryption = disk_encryption
 
     def to_dict(self):
         """Returns the model properties as a dict"""

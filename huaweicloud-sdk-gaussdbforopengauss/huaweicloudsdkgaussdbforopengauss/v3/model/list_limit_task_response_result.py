@@ -69,47 +69,47 @@ class ListLimitTaskResponseResult:
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 限流任务ID。
+        :param task_id: **参数解释**: 限流任务ID。 **取值范围**: 不涉及。
         :type task_id: str
-        :param task_scope: 任务限流范围。
+        :param task_scope: **参数解释**: 任务限流范围。 **取值范围**: 目前支持SQL，SESSION两种级别范围。
         :type task_scope: str
-        :param limit_type: 任务限流类型。
+        :param limit_type: **参数解释**: 任务限流类型。 **取值范围**: - 当“task_scope”为SQL时，可选SQL_ID、SQL_TYPE类型。 - 当“task_scope”为SESSION时，可选SESSION_ACTIVE_MAX_COUNT类型。
         :type limit_type: str
-        :param limit_type_value: 任务限流类型值。
+        :param limit_type_value: **参数解释**: 任务限流类型值。 **取值范围**: - 当“limit_type”为SQL_ID类型时，该值为选中模板的sql_id。 - 当“limit_type”为SQL_TYPE类型时，值为SQL类型，为select，update，insert，delete，merge的一种。 - 当“limit_type”为SESSION_ACTIVE_MAX_COUNT类型时，该值为CPU_OR_MEMORY。
         :type limit_type_value: str
-        :param task_name: 限流任务名。
+        :param task_name: **参数解释**: 限流任务名。 **取值范围**: 不涉及。
         :type task_name: str
-        :param databases: CN节点数据库组,每个数据库字符串以逗号形式隔开。
+        :param databases: **参数解释**: 实例的数据库列表，每个数据库以英文逗号形式隔开。 **取值范围**: 不涉及。
         :type databases: str
-        :param sql_model: SQL模板,仅当任务类型为SQL_ID时，返回该值。
+        :param sql_model: **参数解释**: SQL模板，仅当任务类型为SQL_ID时，返回该值。 **取值范围**: 不涉及。
         :type sql_model: str
-        :param key_words: 关键词，仅当任务类型为SQL_TYPE时，返回该值。
+        :param key_words: **参数解释**: 关键词，仅当任务类型为SQL_TYPE时，返回该值。 **取值范围**: 不涉及。
         :type key_words: str
-        :param status: 限流任务状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
+        :param status: **参数解释**: 限流任务状态。 **取值范围**: 当前支持：CREATING，UPDATING，DELETING，WAIT_EXECUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
         :type status: str
-        :param instance_id: **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        :param instance_id: **参数解释**: 实例ID。 **取值范围**: 不涉及。
         :type instance_id: str
-        :param rule_name: 规则名。
+        :param rule_name: **参数解释**: 规则名。 **取值范围**: 不涉及。
         :type rule_name: str
-        :param parallel_size: 并发数。
+        :param parallel_size: **参数解释**: 并发数。 **取值范围**: [0, 2147483647]
         :type parallel_size: int
-        :param start_time: 限流任务开始时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        :param start_time: **参数解释**: 限流任务开始时间。 **取值范围**: 不涉及。
         :type start_time: str
-        :param end_time: 限流任务结束时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        :param end_time: **参数解释**: 限流任务结束时间。 **取值范围**: 不涉及。
         :type end_time: str
-        :param cpu_utilization: cpu利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值。
+        :param cpu_utilization: **参数解释**: CPU利用率阈值，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留整数部分。 **取值范围**: [0, 100)
         :type cpu_utilization: int
-        :param memory_utilization: 内存利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值。
+        :param memory_utilization: **参数解释**: 内存利用率阈值，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留整数部分。 **取值范围**: [0, 100)
         :type memory_utilization: int
-        :param created: 创建时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        :param created: **参数解释**: 限流任务创建时间。 **取值范围**: 不涉及。
         :type created: str
-        :param updated: 更新时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        :param updated: **参数解释**: 限流任务更新时间。 **取值范围**: 不涉及。
         :type updated: str
-        :param creator: 创建者。
+        :param creator: **参数解释**: 创建者。 **取值范围**: 不涉及。
         :type creator: str
-        :param modifier: 更新者。
+        :param modifier: **参数解释**: 更新者。 **取值范围**: 不涉及。
         :type modifier: str
-        :param node_infos: CN节点信息列表。
+        :param node_infos: **参数解释**: CN节点信息列表。
         :type node_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ShowLimitTaskNodeOption`]
         """
         
@@ -185,7 +185,7 @@ class ListLimitTaskResponseResult:
     def task_id(self):
         r"""Gets the task_id of this ListLimitTaskResponseResult.
 
-        限流任务ID。
+        **参数解释**: 限流任务ID。 **取值范围**: 不涉及。
 
         :return: The task_id of this ListLimitTaskResponseResult.
         :rtype: str
@@ -196,7 +196,7 @@ class ListLimitTaskResponseResult:
     def task_id(self, task_id):
         r"""Sets the task_id of this ListLimitTaskResponseResult.
 
-        限流任务ID。
+        **参数解释**: 限流任务ID。 **取值范围**: 不涉及。
 
         :param task_id: The task_id of this ListLimitTaskResponseResult.
         :type task_id: str
@@ -207,7 +207,7 @@ class ListLimitTaskResponseResult:
     def task_scope(self):
         r"""Gets the task_scope of this ListLimitTaskResponseResult.
 
-        任务限流范围。
+        **参数解释**: 任务限流范围。 **取值范围**: 目前支持SQL，SESSION两种级别范围。
 
         :return: The task_scope of this ListLimitTaskResponseResult.
         :rtype: str
@@ -218,7 +218,7 @@ class ListLimitTaskResponseResult:
     def task_scope(self, task_scope):
         r"""Sets the task_scope of this ListLimitTaskResponseResult.
 
-        任务限流范围。
+        **参数解释**: 任务限流范围。 **取值范围**: 目前支持SQL，SESSION两种级别范围。
 
         :param task_scope: The task_scope of this ListLimitTaskResponseResult.
         :type task_scope: str
@@ -229,7 +229,7 @@ class ListLimitTaskResponseResult:
     def limit_type(self):
         r"""Gets the limit_type of this ListLimitTaskResponseResult.
 
-        任务限流类型。
+        **参数解释**: 任务限流类型。 **取值范围**: - 当“task_scope”为SQL时，可选SQL_ID、SQL_TYPE类型。 - 当“task_scope”为SESSION时，可选SESSION_ACTIVE_MAX_COUNT类型。
 
         :return: The limit_type of this ListLimitTaskResponseResult.
         :rtype: str
@@ -240,7 +240,7 @@ class ListLimitTaskResponseResult:
     def limit_type(self, limit_type):
         r"""Sets the limit_type of this ListLimitTaskResponseResult.
 
-        任务限流类型。
+        **参数解释**: 任务限流类型。 **取值范围**: - 当“task_scope”为SQL时，可选SQL_ID、SQL_TYPE类型。 - 当“task_scope”为SESSION时，可选SESSION_ACTIVE_MAX_COUNT类型。
 
         :param limit_type: The limit_type of this ListLimitTaskResponseResult.
         :type limit_type: str
@@ -251,7 +251,7 @@ class ListLimitTaskResponseResult:
     def limit_type_value(self):
         r"""Gets the limit_type_value of this ListLimitTaskResponseResult.
 
-        任务限流类型值。
+        **参数解释**: 任务限流类型值。 **取值范围**: - 当“limit_type”为SQL_ID类型时，该值为选中模板的sql_id。 - 当“limit_type”为SQL_TYPE类型时，值为SQL类型，为select，update，insert，delete，merge的一种。 - 当“limit_type”为SESSION_ACTIVE_MAX_COUNT类型时，该值为CPU_OR_MEMORY。
 
         :return: The limit_type_value of this ListLimitTaskResponseResult.
         :rtype: str
@@ -262,7 +262,7 @@ class ListLimitTaskResponseResult:
     def limit_type_value(self, limit_type_value):
         r"""Sets the limit_type_value of this ListLimitTaskResponseResult.
 
-        任务限流类型值。
+        **参数解释**: 任务限流类型值。 **取值范围**: - 当“limit_type”为SQL_ID类型时，该值为选中模板的sql_id。 - 当“limit_type”为SQL_TYPE类型时，值为SQL类型，为select，update，insert，delete，merge的一种。 - 当“limit_type”为SESSION_ACTIVE_MAX_COUNT类型时，该值为CPU_OR_MEMORY。
 
         :param limit_type_value: The limit_type_value of this ListLimitTaskResponseResult.
         :type limit_type_value: str
@@ -273,7 +273,7 @@ class ListLimitTaskResponseResult:
     def task_name(self):
         r"""Gets the task_name of this ListLimitTaskResponseResult.
 
-        限流任务名。
+        **参数解释**: 限流任务名。 **取值范围**: 不涉及。
 
         :return: The task_name of this ListLimitTaskResponseResult.
         :rtype: str
@@ -284,7 +284,7 @@ class ListLimitTaskResponseResult:
     def task_name(self, task_name):
         r"""Sets the task_name of this ListLimitTaskResponseResult.
 
-        限流任务名。
+        **参数解释**: 限流任务名。 **取值范围**: 不涉及。
 
         :param task_name: The task_name of this ListLimitTaskResponseResult.
         :type task_name: str
@@ -295,7 +295,7 @@ class ListLimitTaskResponseResult:
     def databases(self):
         r"""Gets the databases of this ListLimitTaskResponseResult.
 
-        CN节点数据库组,每个数据库字符串以逗号形式隔开。
+        **参数解释**: 实例的数据库列表，每个数据库以英文逗号形式隔开。 **取值范围**: 不涉及。
 
         :return: The databases of this ListLimitTaskResponseResult.
         :rtype: str
@@ -306,7 +306,7 @@ class ListLimitTaskResponseResult:
     def databases(self, databases):
         r"""Sets the databases of this ListLimitTaskResponseResult.
 
-        CN节点数据库组,每个数据库字符串以逗号形式隔开。
+        **参数解释**: 实例的数据库列表，每个数据库以英文逗号形式隔开。 **取值范围**: 不涉及。
 
         :param databases: The databases of this ListLimitTaskResponseResult.
         :type databases: str
@@ -317,7 +317,7 @@ class ListLimitTaskResponseResult:
     def sql_model(self):
         r"""Gets the sql_model of this ListLimitTaskResponseResult.
 
-        SQL模板,仅当任务类型为SQL_ID时，返回该值。
+        **参数解释**: SQL模板，仅当任务类型为SQL_ID时，返回该值。 **取值范围**: 不涉及。
 
         :return: The sql_model of this ListLimitTaskResponseResult.
         :rtype: str
@@ -328,7 +328,7 @@ class ListLimitTaskResponseResult:
     def sql_model(self, sql_model):
         r"""Sets the sql_model of this ListLimitTaskResponseResult.
 
-        SQL模板,仅当任务类型为SQL_ID时，返回该值。
+        **参数解释**: SQL模板，仅当任务类型为SQL_ID时，返回该值。 **取值范围**: 不涉及。
 
         :param sql_model: The sql_model of this ListLimitTaskResponseResult.
         :type sql_model: str
@@ -339,7 +339,7 @@ class ListLimitTaskResponseResult:
     def key_words(self):
         r"""Gets the key_words of this ListLimitTaskResponseResult.
 
-        关键词，仅当任务类型为SQL_TYPE时，返回该值。
+        **参数解释**: 关键词，仅当任务类型为SQL_TYPE时，返回该值。 **取值范围**: 不涉及。
 
         :return: The key_words of this ListLimitTaskResponseResult.
         :rtype: str
@@ -350,7 +350,7 @@ class ListLimitTaskResponseResult:
     def key_words(self, key_words):
         r"""Sets the key_words of this ListLimitTaskResponseResult.
 
-        关键词，仅当任务类型为SQL_TYPE时，返回该值。
+        **参数解释**: 关键词，仅当任务类型为SQL_TYPE时，返回该值。 **取值范围**: 不涉及。
 
         :param key_words: The key_words of this ListLimitTaskResponseResult.
         :type key_words: str
@@ -361,7 +361,7 @@ class ListLimitTaskResponseResult:
     def status(self):
         r"""Gets the status of this ListLimitTaskResponseResult.
 
-        限流任务状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
+        **参数解释**: 限流任务状态。 **取值范围**: 当前支持：CREATING，UPDATING，DELETING，WAIT_EXECUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
 
         :return: The status of this ListLimitTaskResponseResult.
         :rtype: str
@@ -372,7 +372,7 @@ class ListLimitTaskResponseResult:
     def status(self, status):
         r"""Sets the status of this ListLimitTaskResponseResult.
 
-        限流任务状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
+        **参数解释**: 限流任务状态。 **取值范围**: 当前支持：CREATING，UPDATING，DELETING，WAIT_EXECUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
 
         :param status: The status of this ListLimitTaskResponseResult.
         :type status: str
@@ -383,7 +383,7 @@ class ListLimitTaskResponseResult:
     def instance_id(self):
         r"""Gets the instance_id of this ListLimitTaskResponseResult.
 
-        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        **参数解释**: 实例ID。 **取值范围**: 不涉及。
 
         :return: The instance_id of this ListLimitTaskResponseResult.
         :rtype: str
@@ -394,7 +394,7 @@ class ListLimitTaskResponseResult:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListLimitTaskResponseResult.
 
-        **参数解释**: 实例ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        **参数解释**: 实例ID。 **取值范围**: 不涉及。
 
         :param instance_id: The instance_id of this ListLimitTaskResponseResult.
         :type instance_id: str
@@ -405,7 +405,7 @@ class ListLimitTaskResponseResult:
     def rule_name(self):
         r"""Gets the rule_name of this ListLimitTaskResponseResult.
 
-        规则名。
+        **参数解释**: 规则名。 **取值范围**: 不涉及。
 
         :return: The rule_name of this ListLimitTaskResponseResult.
         :rtype: str
@@ -416,7 +416,7 @@ class ListLimitTaskResponseResult:
     def rule_name(self, rule_name):
         r"""Sets the rule_name of this ListLimitTaskResponseResult.
 
-        规则名。
+        **参数解释**: 规则名。 **取值范围**: 不涉及。
 
         :param rule_name: The rule_name of this ListLimitTaskResponseResult.
         :type rule_name: str
@@ -427,7 +427,7 @@ class ListLimitTaskResponseResult:
     def parallel_size(self):
         r"""Gets the parallel_size of this ListLimitTaskResponseResult.
 
-        并发数。
+        **参数解释**: 并发数。 **取值范围**: [0, 2147483647]
 
         :return: The parallel_size of this ListLimitTaskResponseResult.
         :rtype: int
@@ -438,7 +438,7 @@ class ListLimitTaskResponseResult:
     def parallel_size(self, parallel_size):
         r"""Sets the parallel_size of this ListLimitTaskResponseResult.
 
-        并发数。
+        **参数解释**: 并发数。 **取值范围**: [0, 2147483647]
 
         :param parallel_size: The parallel_size of this ListLimitTaskResponseResult.
         :type parallel_size: int
@@ -449,7 +449,7 @@ class ListLimitTaskResponseResult:
     def start_time(self):
         r"""Gets the start_time of this ListLimitTaskResponseResult.
 
-        限流任务开始时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        **参数解释**: 限流任务开始时间。 **取值范围**: 不涉及。
 
         :return: The start_time of this ListLimitTaskResponseResult.
         :rtype: str
@@ -460,7 +460,7 @@ class ListLimitTaskResponseResult:
     def start_time(self, start_time):
         r"""Sets the start_time of this ListLimitTaskResponseResult.
 
-        限流任务开始时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        **参数解释**: 限流任务开始时间。 **取值范围**: 不涉及。
 
         :param start_time: The start_time of this ListLimitTaskResponseResult.
         :type start_time: str
@@ -471,7 +471,7 @@ class ListLimitTaskResponseResult:
     def end_time(self):
         r"""Gets the end_time of this ListLimitTaskResponseResult.
 
-        限流任务结束时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        **参数解释**: 限流任务结束时间。 **取值范围**: 不涉及。
 
         :return: The end_time of this ListLimitTaskResponseResult.
         :rtype: str
@@ -482,7 +482,7 @@ class ListLimitTaskResponseResult:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListLimitTaskResponseResult.
 
-        限流任务结束时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        **参数解释**: 限流任务结束时间。 **取值范围**: 不涉及。
 
         :param end_time: The end_time of this ListLimitTaskResponseResult.
         :type end_time: str
@@ -493,7 +493,7 @@ class ListLimitTaskResponseResult:
     def cpu_utilization(self):
         r"""Gets the cpu_utilization of this ListLimitTaskResponseResult.
 
-        cpu利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值。
+        **参数解释**: CPU利用率阈值，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留整数部分。 **取值范围**: [0, 100)
 
         :return: The cpu_utilization of this ListLimitTaskResponseResult.
         :rtype: int
@@ -504,7 +504,7 @@ class ListLimitTaskResponseResult:
     def cpu_utilization(self, cpu_utilization):
         r"""Sets the cpu_utilization of this ListLimitTaskResponseResult.
 
-        cpu利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值。
+        **参数解释**: CPU利用率阈值，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留整数部分。 **取值范围**: [0, 100)
 
         :param cpu_utilization: The cpu_utilization of this ListLimitTaskResponseResult.
         :type cpu_utilization: int
@@ -515,7 +515,7 @@ class ListLimitTaskResponseResult:
     def memory_utilization(self):
         r"""Gets the memory_utilization of this ListLimitTaskResponseResult.
 
-        内存利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值。
+        **参数解释**: 内存利用率阈值，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留整数部分。 **取值范围**: [0, 100)
 
         :return: The memory_utilization of this ListLimitTaskResponseResult.
         :rtype: int
@@ -526,7 +526,7 @@ class ListLimitTaskResponseResult:
     def memory_utilization(self, memory_utilization):
         r"""Sets the memory_utilization of this ListLimitTaskResponseResult.
 
-        内存利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值。
+        **参数解释**: 内存利用率阈值，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值且只保留整数部分。 **取值范围**: [0, 100)
 
         :param memory_utilization: The memory_utilization of this ListLimitTaskResponseResult.
         :type memory_utilization: int
@@ -537,7 +537,7 @@ class ListLimitTaskResponseResult:
     def created(self):
         r"""Gets the created of this ListLimitTaskResponseResult.
 
-        创建时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        **参数解释**: 限流任务创建时间。 **取值范围**: 不涉及。
 
         :return: The created of this ListLimitTaskResponseResult.
         :rtype: str
@@ -548,7 +548,7 @@ class ListLimitTaskResponseResult:
     def created(self, created):
         r"""Sets the created of this ListLimitTaskResponseResult.
 
-        创建时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        **参数解释**: 限流任务创建时间。 **取值范围**: 不涉及。
 
         :param created: The created of this ListLimitTaskResponseResult.
         :type created: str
@@ -559,7 +559,7 @@ class ListLimitTaskResponseResult:
     def updated(self):
         r"""Gets the updated of this ListLimitTaskResponseResult.
 
-        更新时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        **参数解释**: 限流任务更新时间。 **取值范围**: 不涉及。
 
         :return: The updated of this ListLimitTaskResponseResult.
         :rtype: str
@@ -570,7 +570,7 @@ class ListLimitTaskResponseResult:
     def updated(self, updated):
         r"""Sets the updated of this ListLimitTaskResponseResult.
 
-        更新时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
+        **参数解释**: 限流任务更新时间。 **取值范围**: 不涉及。
 
         :param updated: The updated of this ListLimitTaskResponseResult.
         :type updated: str
@@ -581,7 +581,7 @@ class ListLimitTaskResponseResult:
     def creator(self):
         r"""Gets the creator of this ListLimitTaskResponseResult.
 
-        创建者。
+        **参数解释**: 创建者。 **取值范围**: 不涉及。
 
         :return: The creator of this ListLimitTaskResponseResult.
         :rtype: str
@@ -592,7 +592,7 @@ class ListLimitTaskResponseResult:
     def creator(self, creator):
         r"""Sets the creator of this ListLimitTaskResponseResult.
 
-        创建者。
+        **参数解释**: 创建者。 **取值范围**: 不涉及。
 
         :param creator: The creator of this ListLimitTaskResponseResult.
         :type creator: str
@@ -603,7 +603,7 @@ class ListLimitTaskResponseResult:
     def modifier(self):
         r"""Gets the modifier of this ListLimitTaskResponseResult.
 
-        更新者。
+        **参数解释**: 更新者。 **取值范围**: 不涉及。
 
         :return: The modifier of this ListLimitTaskResponseResult.
         :rtype: str
@@ -614,7 +614,7 @@ class ListLimitTaskResponseResult:
     def modifier(self, modifier):
         r"""Sets the modifier of this ListLimitTaskResponseResult.
 
-        更新者。
+        **参数解释**: 更新者。 **取值范围**: 不涉及。
 
         :param modifier: The modifier of this ListLimitTaskResponseResult.
         :type modifier: str
@@ -625,7 +625,7 @@ class ListLimitTaskResponseResult:
     def node_infos(self):
         r"""Gets the node_infos of this ListLimitTaskResponseResult.
 
-        CN节点信息列表。
+        **参数解释**: CN节点信息列表。
 
         :return: The node_infos of this ListLimitTaskResponseResult.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ShowLimitTaskNodeOption`]
@@ -636,7 +636,7 @@ class ListLimitTaskResponseResult:
     def node_infos(self, node_infos):
         r"""Sets the node_infos of this ListLimitTaskResponseResult.
 
-        CN节点信息列表。
+        **参数解释**: CN节点信息列表。
 
         :param node_infos: The node_infos of this ListLimitTaskResponseResult.
         :type node_infos: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ShowLimitTaskNodeOption`]
