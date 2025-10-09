@@ -43,7 +43,8 @@ class RemoveNodesSpec:
         self._nodes = None
         self.discriminator = None
 
-        self.login = login
+        if login is not None:
+            self.login = login
         self.nodes = nodes
 
     @property

@@ -29,7 +29,7 @@ class SecurityID:
 
         The model defined in huaweicloud sdk
 
-        :param id: 安全组ID。
+        :param id: **参数解释**： 节点上的容器安全组ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type id: str
         """
         
@@ -45,7 +45,7 @@ class SecurityID:
     def id(self):
         r"""Gets the id of this SecurityID.
 
-        安全组ID。
+        **参数解释**： 节点上的容器安全组ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The id of this SecurityID.
         :rtype: str
@@ -56,7 +56,7 @@ class SecurityID:
     def id(self, id):
         r"""Sets the id of this SecurityID.
 
-        安全组ID。
+        **参数解释**： 节点上的容器安全组ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param id: The id of this SecurityID.
         :type id: str

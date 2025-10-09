@@ -7,6 +7,9 @@ from huaweicloudsdkcce.v3.cce_async_client import CceAsyncClient
 
 from huaweicloudsdkcce.v3.model.api_version_detail import APIVersionDetail
 from huaweicloudsdkcce.v3.model.api_version_link import APIVersionLink
+from huaweicloudsdkcce.v3.model.access_policy import AccessPolicy
+from huaweicloudsdkcce.v3.model.access_policy_resp import AccessPolicyResp
+from huaweicloudsdkcce.v3.model.access_scope import AccessScope
 from huaweicloudsdkcce.v3.model.add_node import AddNode
 from huaweicloudsdkcce.v3.model.add_node_list import AddNodeList
 from huaweicloudsdkcce.v3.model.add_node_request import AddNodeRequest
@@ -70,6 +73,7 @@ from huaweicloudsdkcce.v3.model.cluster_configurations_spec import ClusterConfig
 from huaweicloudsdkcce.v3.model.cluster_configurations_spec_packages import ClusterConfigurationsSpecPackages
 from huaweicloudsdkcce.v3.model.cluster_endpoints import ClusterEndpoints
 from huaweicloudsdkcce.v3.model.cluster_extend_param import ClusterExtendParam
+from huaweicloudsdkcce.v3.model.cluster_flavor_specification import ClusterFlavorSpecification
 from huaweicloudsdkcce.v3.model.cluster_information import ClusterInformation
 from huaweicloudsdkcce.v3.model.cluster_information_spec import ClusterInformationSpec
 from huaweicloudsdkcce.v3.model.cluster_information_spec_host_network import ClusterInformationSpecHostNetwork
@@ -80,6 +84,7 @@ from huaweicloudsdkcce.v3.model.cluster_metadata_for_update import ClusterMetada
 from huaweicloudsdkcce.v3.model.cluster_node_information import ClusterNodeInformation
 from huaweicloudsdkcce.v3.model.cluster_node_information_metadata import ClusterNodeInformationMetadata
 from huaweicloudsdkcce.v3.model.cluster_ops import ClusterOps
+from huaweicloudsdkcce.v3.model.cluster_quota_resource import ClusterQuotaResource
 from huaweicloudsdkcce.v3.model.cluster_spec import ClusterSpec
 from huaweicloudsdkcce.v3.model.cluster_status import ClusterStatus
 from huaweicloudsdkcce.v3.model.cluster_upgrade_action import ClusterUpgradeAction
@@ -95,6 +100,8 @@ from huaweicloudsdkcce.v3.model.context import Context
 from huaweicloudsdkcce.v3.model.contexts import Contexts
 from huaweicloudsdkcce.v3.model.continue_upgrade_cluster_task_request import ContinueUpgradeClusterTaskRequest
 from huaweicloudsdkcce.v3.model.continue_upgrade_cluster_task_response import ContinueUpgradeClusterTaskResponse
+from huaweicloudsdkcce.v3.model.create_access_policy_request import CreateAccessPolicyRequest
+from huaweicloudsdkcce.v3.model.create_access_policy_response import CreateAccessPolicyResponse
 from huaweicloudsdkcce.v3.model.create_addon_instance_request import CreateAddonInstanceRequest
 from huaweicloudsdkcce.v3.model.create_addon_instance_response import CreateAddonInstanceResponse
 from huaweicloudsdkcce.v3.model.create_autopilot_addon_instance_request import CreateAutopilotAddonInstanceRequest
@@ -141,7 +148,10 @@ from huaweicloudsdkcce.v3.model.create_release_response import CreateReleaseResp
 from huaweicloudsdkcce.v3.model.create_upgrade_work_flow_request import CreateUpgradeWorkFlowRequest
 from huaweicloudsdkcce.v3.model.create_upgrade_work_flow_request_body import CreateUpgradeWorkFlowRequestBody
 from huaweicloudsdkcce.v3.model.create_upgrade_work_flow_response import CreateUpgradeWorkFlowResponse
+from huaweicloudsdkcce.v3.model.customize_resource_tag import CustomizeResourceTag
 from huaweicloudsdkcce.v3.model.delay_upgrade_plan_request_body import DelayUpgradePlanRequestBody
+from huaweicloudsdkcce.v3.model.delete_access_policy_request import DeleteAccessPolicyRequest
+from huaweicloudsdkcce.v3.model.delete_access_policy_response import DeleteAccessPolicyResponse
 from huaweicloudsdkcce.v3.model.delete_addon_instance_request import DeleteAddonInstanceRequest
 from huaweicloudsdkcce.v3.model.delete_addon_instance_response import DeleteAddonInstanceResponse
 from huaweicloudsdkcce.v3.model.delete_autopilot_addon_instance_request import DeleteAutopilotAddonInstanceRequest
@@ -181,6 +191,24 @@ from huaweicloudsdkcce.v3.model.eni_network_update import EniNetworkUpdate
 from huaweicloudsdkcce.v3.model.extension_scale_group import ExtensionScaleGroup
 from huaweicloudsdkcce.v3.model.extension_scale_group_metadata import ExtensionScaleGroupMetadata
 from huaweicloudsdkcce.v3.model.extension_scale_group_spec import ExtensionScaleGroupSpec
+from huaweicloudsdkcce.v3.model.get_access_policy_request import GetAccessPolicyRequest
+from huaweicloudsdkcce.v3.model.get_access_policy_response import GetAccessPolicyResponse
+from huaweicloudsdkcce.v3.model.get_available_zone_response_body import GetAvailableZoneResponseBody
+from huaweicloudsdkcce.v3.model.get_avaliable_zone_request import GetAvaliableZoneRequest
+from huaweicloudsdkcce.v3.model.get_avaliable_zone_response import GetAvaliableZoneResponse
+from huaweicloudsdkcce.v3.model.get_cluster_flavor_specs_request import GetClusterFlavorSpecsRequest
+from huaweicloudsdkcce.v3.model.get_cluster_flavor_specs_response import GetClusterFlavorSpecsResponse
+from huaweicloudsdkcce.v3.model.get_cluster_quota_body_quotas import GetClusterQuotaBodyQuotas
+from huaweicloudsdkcce.v3.model.get_cluster_quota_request import GetClusterQuotaRequest
+from huaweicloudsdkcce.v3.model.get_cluster_quota_response import GetClusterQuotaResponse
+from huaweicloudsdkcce.v3.model.get_cluster_support_configuration_request import GetClusterSupportConfigurationRequest
+from huaweicloudsdkcce.v3.model.get_cluster_support_configuration_response import GetClusterSupportConfigurationResponse
+from huaweicloudsdkcce.v3.model.get_customize_tags_request import GetCustomizeTagsRequest
+from huaweicloudsdkcce.v3.model.get_customize_tags_response import GetCustomizeTagsResponse
+from huaweicloudsdkcce.v3.model.get_labels_request import GetLabelsRequest
+from huaweicloudsdkcce.v3.model.get_labels_response import GetLabelsResponse
+from huaweicloudsdkcce.v3.model.get_resource_tags_request import GetResourceTagsRequest
+from huaweicloudsdkcce.v3.model.get_resource_tags_response import GetResourceTagsResponse
 from huaweicloudsdkcce.v3.model.hibernate_cluster_request import HibernateClusterRequest
 from huaweicloudsdkcce.v3.model.hibernate_cluster_response import HibernateClusterResponse
 from huaweicloudsdkcce.v3.model.host_network import HostNetwork
@@ -195,6 +223,8 @@ from huaweicloudsdkcce.v3.model.job_spec import JobSpec
 from huaweicloudsdkcce.v3.model.job_status import JobStatus
 from huaweicloudsdkcce.v3.model.lvm_config import LVMConfig
 from huaweicloudsdkcce.v3.model.line_status import LineStatus
+from huaweicloudsdkcce.v3.model.list_access_policy_request import ListAccessPolicyRequest
+from huaweicloudsdkcce.v3.model.list_access_policy_response import ListAccessPolicyResponse
 from huaweicloudsdkcce.v3.model.list_addon_instances_request import ListAddonInstancesRequest
 from huaweicloudsdkcce.v3.model.list_addon_instances_response import ListAddonInstancesResponse
 from huaweicloudsdkcce.v3.model.list_addon_templates_request import ListAddonTemplatesRequest
@@ -258,6 +288,7 @@ from huaweicloudsdkcce.v3.model.master_eip_request_spec_spec import MasterEIPReq
 from huaweicloudsdkcce.v3.model.master_eip_response_spec import MasterEIPResponseSpec
 from huaweicloudsdkcce.v3.model.master_eip_response_spec_spec import MasterEIPResponseSpecSpec
 from huaweicloudsdkcce.v3.model.master_eip_response_status import MasterEIPResponseStatus
+from huaweicloudsdkcce.v3.model.master_flavor_spec import MasterFlavorSpec
 from huaweicloudsdkcce.v3.model.master_spec import MasterSpec
 from huaweicloudsdkcce.v3.model.metadata import Metadata
 from huaweicloudsdkcce.v3.model.migrate_node_extend_param import MigrateNodeExtendParam
@@ -265,6 +296,8 @@ from huaweicloudsdkcce.v3.model.migrate_node_request import MigrateNodeRequest
 from huaweicloudsdkcce.v3.model.migrate_node_response import MigrateNodeResponse
 from huaweicloudsdkcce.v3.model.migrate_nodes_spec import MigrateNodesSpec
 from huaweicloudsdkcce.v3.model.migrate_nodes_task import MigrateNodesTask
+from huaweicloudsdkcce.v3.model.migrate_server_config import MigrateServerConfig
+from huaweicloudsdkcce.v3.model.migrate_volume_spec import MigrateVolumeSpec
 from huaweicloudsdkcce.v3.model.network_subnet import NetworkSubnet
 from huaweicloudsdkcce.v3.model.nic_spec import NicSpec
 from huaweicloudsdkcce.v3.model.node import Node
@@ -278,8 +311,8 @@ from huaweicloudsdkcce.v3.model.node_item import NodeItem
 from huaweicloudsdkcce.v3.model.node_lifecycle_config import NodeLifecycleConfig
 from huaweicloudsdkcce.v3.model.node_management import NodeManagement
 from huaweicloudsdkcce.v3.model.node_metadata import NodeMetadata
+from huaweicloudsdkcce.v3.model.node_metadata_owner_reference import NodeMetadataOwnerReference
 from huaweicloudsdkcce.v3.model.node_nic_spec import NodeNicSpec
-from huaweicloudsdkcce.v3.model.node_owner_reference import NodeOwnerReference
 from huaweicloudsdkcce.v3.model.node_pool import NodePool
 from huaweicloudsdkcce.v3.model.node_pool_condition import NodePoolCondition
 from huaweicloudsdkcce.v3.model.node_pool_metadata import NodePoolMetadata
@@ -297,6 +330,7 @@ from huaweicloudsdkcce.v3.model.node_public_ip import NodePublicIP
 from huaweicloudsdkcce.v3.model.node_risks import NodeRisks
 from huaweicloudsdkcce.v3.model.node_selector import NodeSelector
 from huaweicloudsdkcce.v3.model.node_spec import NodeSpec
+from huaweicloudsdkcce.v3.model.node_spec_node_name_template import NodeSpecNodeNameTemplate
 from huaweicloudsdkcce.v3.model.node_spec_update import NodeSpecUpdate
 from huaweicloudsdkcce.v3.model.node_spec_update_node_name_template import NodeSpecUpdateNodeNameTemplate
 from huaweicloudsdkcce.v3.model.node_spec_update_node_nic_spec_update import NodeSpecUpdateNodeNicSpecUpdate
@@ -304,12 +338,6 @@ from huaweicloudsdkcce.v3.model.node_spec_update_node_nic_spec_update_primary_ni
 from huaweicloudsdkcce.v3.model.node_stage_status import NodeStageStatus
 from huaweicloudsdkcce.v3.model.node_status import NodeStatus
 from huaweicloudsdkcce.v3.model.node_template import NodeTemplate
-from huaweicloudsdkcce.v3.model.node_template_extend_param import NodeTemplateExtendParam
-from huaweicloudsdkcce.v3.model.node_template_life_cycle import NodeTemplateLifeCycle
-from huaweicloudsdkcce.v3.model.node_template_login import NodeTemplateLogin
-from huaweicloudsdkcce.v3.model.node_template_login_user_password import NodeTemplateLoginUserPassword
-from huaweicloudsdkcce.v3.model.node_template_runtime_config import NodeTemplateRuntimeConfig
-from huaweicloudsdkcce.v3.model.node_template_runtime_config_runtime import NodeTemplateRuntimeConfigRuntime
 from huaweicloudsdkcce.v3.model.open_api_spec import OpenAPISpec
 from huaweicloudsdkcce.v3.model.open_api_spec_spec import OpenAPISpecSpec
 from huaweicloudsdkcce.v3.model.package_configuration import PackageConfiguration
@@ -340,6 +368,7 @@ from huaweicloudsdkcce.v3.model.precheck_cluster_task import PrecheckClusterTask
 from huaweicloudsdkcce.v3.model.precheck_spec import PrecheckSpec
 from huaweicloudsdkcce.v3.model.precheck_status import PrecheckStatus
 from huaweicloudsdkcce.v3.model.precheck_task_metadata import PrecheckTaskMetadata
+from huaweicloudsdkcce.v3.model.principal import Principal
 from huaweicloudsdkcce.v3.model.quota_resource import QuotaResource
 from huaweicloudsdkcce.v3.model.quota_resp_quotas import QuotaRespQuotas
 from huaweicloudsdkcce.v3.model.quota_resp_quotas_resources import QuotaRespQuotasResources
@@ -438,10 +467,10 @@ from huaweicloudsdkcce.v3.model.show_cluster_endpoints_request import ShowCluste
 from huaweicloudsdkcce.v3.model.show_cluster_endpoints_response import ShowClusterEndpointsResponse
 from huaweicloudsdkcce.v3.model.show_cluster_request import ShowClusterRequest
 from huaweicloudsdkcce.v3.model.show_cluster_response import ShowClusterResponse
-from huaweicloudsdkcce.v3.model.show_cluster_support_configuration_request import ShowClusterSupportConfigurationRequest
-from huaweicloudsdkcce.v3.model.show_cluster_support_configuration_response import ShowClusterSupportConfigurationResponse
 from huaweicloudsdkcce.v3.model.show_cluster_upgrade_info_request import ShowClusterUpgradeInfoRequest
 from huaweicloudsdkcce.v3.model.show_cluster_upgrade_info_response import ShowClusterUpgradeInfoResponse
+from huaweicloudsdkcce.v3.model.show_feature_gates_request import ShowFeatureGatesRequest
+from huaweicloudsdkcce.v3.model.show_feature_gates_response import ShowFeatureGatesResponse
 from huaweicloudsdkcce.v3.model.show_job_request import ShowJobRequest
 from huaweicloudsdkcce.v3.model.show_job_response import ShowJobResponse
 from huaweicloudsdkcce.v3.model.show_node_pool_configuration_details_request import ShowNodePoolConfigurationDetailsRequest
@@ -494,6 +523,8 @@ from huaweicloudsdkcce.v3.model.templatespec import Templatespec
 from huaweicloudsdkcce.v3.model.unlock_node_scaledown_request_body import UnlockNodeScaledownRequestBody
 from huaweicloudsdkcce.v3.model.unlock_nodepool_node_scale_down_request import UnlockNodepoolNodeScaleDownRequest
 from huaweicloudsdkcce.v3.model.unlock_nodepool_node_scale_down_response import UnlockNodepoolNodeScaleDownResponse
+from huaweicloudsdkcce.v3.model.update_access_policy_request import UpdateAccessPolicyRequest
+from huaweicloudsdkcce.v3.model.update_access_policy_response import UpdateAccessPolicyResponse
 from huaweicloudsdkcce.v3.model.update_addon_instance_request import UpdateAddonInstanceRequest
 from huaweicloudsdkcce.v3.model.update_addon_instance_response import UpdateAddonInstanceResponse
 from huaweicloudsdkcce.v3.model.update_autopilot_addon_instance_request import UpdateAutopilotAddonInstanceRequest

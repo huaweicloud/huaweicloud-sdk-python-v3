@@ -23,7 +23,8 @@ class ClusterMetadata:
         'annotations': 'dict(str, str)',
         'labels': 'dict(str, str)',
         'creation_timestamp': 'str',
-        'update_timestamp': 'str'
+        'update_timestamp': 'str',
+        'timezone': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ClusterMetadata:
         'annotations': 'annotations',
         'labels': 'labels',
         'creation_timestamp': 'creationTimestamp',
-        'update_timestamp': 'updateTimestamp'
+        'update_timestamp': 'updateTimestamp',
+        'timezone': 'timezone'
     }
 
-    def __init__(self, name=None, uid=None, alias=None, annotations=None, labels=None, creation_timestamp=None, update_timestamp=None):
+    def __init__(self, name=None, uid=None, alias=None, annotations=None, labels=None, creation_timestamp=None, update_timestamp=None, timezone=None):
         r"""ClusterMetadata
 
         The model defined in huaweicloud sdk
@@ -47,14 +49,16 @@ class ClusterMetadata:
         :type uid: str
         :param alias: 集群显示名，用于在 CCE 界面显示，该名称创建后可修改。  命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围4-128位，且不能以中划线(-)结尾。  显示名和其他集群的名称、显示名不可以重复。  在创建集群、更新集群请求体中，集群显示名alias未指定或取值为空，表示与集群名称name一致。在查询集群等响应体中，集群显示名alias将必然返回，未配置时将返回集群名称name。
         :type alias: str
-        :param annotations: 集群注解，由key/value组成：  &#x60;&#x60;&#x60; \&quot;annotations\&quot;: {    \&quot;key1\&quot; : \&quot;value1\&quot;,    \&quot;key2\&quot; : \&quot;value2\&quot; } &#x60;&#x60;&#x60;  &gt;    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 &gt;    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 &gt;    - 可通过加入\&quot;cluster.install.addons.external/install\&quot;:\&quot;[{\&quot;addonTemplateName\&quot;:\&quot;icagent\&quot;}]\&quot;的键值对在创建集群时安装ICAgent。 
+        :param annotations: **参数解释：** 集群注解，由key/value组成：  &#x60;&#x60;&#x60; \&quot;annotations\&quot;: {    \&quot;key1\&quot; : \&quot;value1\&quot;,    \&quot;key2\&quot; : \&quot;value2\&quot; } &#x60;&#x60;&#x60; **约束限制：** 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 **取值范围：** 不涉及 **默认取值：** 不涉及  &gt;    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 &gt;    - 可通过加入\&quot;cluster.install.addons.external/install\&quot;: \&quot;[{\\\\\&quot;addonTemplateName\\\\\&quot;:\\\\\&quot;icagent\\\\\&quot;}]\&quot;的键值对在创建集群时安装ICAgent。 
         :type annotations: dict(str, str)
         :param labels: 集群标签，key/value对格式。  &gt;  该字段值由系统自动生成，用于升级时前端识别集群支持的特性开关，用户指定无效。
         :type labels: dict(str, str)
-        :param creation_timestamp: 集群创建时间
+        :param creation_timestamp: **参数解释：** 集群创建时间。 **约束限制：** 创建集群时自动记录，不支持传入。 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type creation_timestamp: str
-        :param update_timestamp: 集群更新时间
+        :param update_timestamp: **参数解释：** 集群更新时间。 **约束限制：** 更新集群时自动记录，不支持传入。 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type update_timestamp: str
+        :param timezone: **参数解释：** 集群时区。[IANA Time Zone Database](https://www.iana.org/time-zones)中收录的时区名称, 例如：\&quot;Asia/Shanghai\&quot;。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
+        :type timezone: str
         """
         
         
@@ -66,6 +70,7 @@ class ClusterMetadata:
         self._labels = None
         self._creation_timestamp = None
         self._update_timestamp = None
+        self._timezone = None
         self.discriminator = None
 
         self.name = name
@@ -81,6 +86,8 @@ class ClusterMetadata:
             self.creation_timestamp = creation_timestamp
         if update_timestamp is not None:
             self.update_timestamp = update_timestamp
+        if timezone is not None:
+            self.timezone = timezone
 
     @property
     def name(self):
@@ -152,7 +159,7 @@ class ClusterMetadata:
     def annotations(self):
         r"""Gets the annotations of this ClusterMetadata.
 
-        集群注解，由key/value组成：  ``` \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" } ```  >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 >    - 可通过加入\"cluster.install.addons.external/install\":\"[{\"addonTemplateName\":\"icagent\"}]\"的键值对在创建集群时安装ICAgent。 
+        **参数解释：** 集群注解，由key/value组成：  ``` \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" } ``` **约束限制：** 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 **取值范围：** 不涉及 **默认取值：** 不涉及  >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 >    - 可通过加入\"cluster.install.addons.external/install\": \"[{\\\\\"addonTemplateName\\\\\":\\\\\"icagent\\\\\"}]\"的键值对在创建集群时安装ICAgent。 
 
         :return: The annotations of this ClusterMetadata.
         :rtype: dict(str, str)
@@ -163,7 +170,7 @@ class ClusterMetadata:
     def annotations(self, annotations):
         r"""Sets the annotations of this ClusterMetadata.
 
-        集群注解，由key/value组成：  ``` \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" } ```  >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 >    - 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 >    - 可通过加入\"cluster.install.addons.external/install\":\"[{\"addonTemplateName\":\"icagent\"}]\"的键值对在创建集群时安装ICAgent。 
+        **参数解释：** 集群注解，由key/value组成：  ``` \"annotations\": {    \"key1\" : \"value1\",    \"key2\" : \"value2\" } ``` **约束限制：** 该字段不会被数据库保存，当前仅用于指定集群待安装插件。 **取值范围：** 不涉及 **默认取值：** 不涉及  >    - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 >    - 可通过加入\"cluster.install.addons.external/install\": \"[{\\\\\"addonTemplateName\\\\\":\\\\\"icagent\\\\\"}]\"的键值对在创建集群时安装ICAgent。 
 
         :param annotations: The annotations of this ClusterMetadata.
         :type annotations: dict(str, str)
@@ -196,7 +203,7 @@ class ClusterMetadata:
     def creation_timestamp(self):
         r"""Gets the creation_timestamp of this ClusterMetadata.
 
-        集群创建时间
+        **参数解释：** 集群创建时间。 **约束限制：** 创建集群时自动记录，不支持传入。 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The creation_timestamp of this ClusterMetadata.
         :rtype: str
@@ -207,7 +214,7 @@ class ClusterMetadata:
     def creation_timestamp(self, creation_timestamp):
         r"""Sets the creation_timestamp of this ClusterMetadata.
 
-        集群创建时间
+        **参数解释：** 集群创建时间。 **约束限制：** 创建集群时自动记录，不支持传入。 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param creation_timestamp: The creation_timestamp of this ClusterMetadata.
         :type creation_timestamp: str
@@ -218,7 +225,7 @@ class ClusterMetadata:
     def update_timestamp(self):
         r"""Gets the update_timestamp of this ClusterMetadata.
 
-        集群更新时间
+        **参数解释：** 集群更新时间。 **约束限制：** 更新集群时自动记录，不支持传入。 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The update_timestamp of this ClusterMetadata.
         :rtype: str
@@ -229,12 +236,34 @@ class ClusterMetadata:
     def update_timestamp(self, update_timestamp):
         r"""Sets the update_timestamp of this ClusterMetadata.
 
-        集群更新时间
+        **参数解释：** 集群更新时间。 **约束限制：** 更新集群时自动记录，不支持传入。 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param update_timestamp: The update_timestamp of this ClusterMetadata.
         :type update_timestamp: str
         """
         self._update_timestamp = update_timestamp
+
+    @property
+    def timezone(self):
+        r"""Gets the timezone of this ClusterMetadata.
+
+        **参数解释：** 集群时区。[IANA Time Zone Database](https://www.iana.org/time-zones)中收录的时区名称, 例如：\"Asia/Shanghai\"。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
+
+        :return: The timezone of this ClusterMetadata.
+        :rtype: str
+        """
+        return self._timezone
+
+    @timezone.setter
+    def timezone(self, timezone):
+        r"""Sets the timezone of this ClusterMetadata.
+
+        **参数解释：** 集群时区。[IANA Time Zone Database](https://www.iana.org/time-zones)中收录的时区名称, 例如：\"Asia/Shanghai\"。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
+
+        :param timezone: The timezone of this ClusterMetadata.
+        :type timezone: str
+        """
+        self._timezone = timezone
 
     def to_dict(self):
         """Returns the model properties as a dict"""

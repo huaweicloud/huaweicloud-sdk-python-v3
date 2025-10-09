@@ -107,9 +107,6 @@ from huaweicloudsdkcss.v1.model.enable_or_disable_elb_response import EnableOrDi
 from huaweicloudsdkcss.v1.model.es_ipgroup_resource import EsIpgroupResource
 from huaweicloudsdkcss.v1.model.es_listener_request import EsListenerRequest
 from huaweicloudsdkcss.v1.model.es_listener_response import EsListenerResponse
-from huaweicloudsdkcss.v1.model.es_listeners_resource import EsListenersResource
-from huaweicloudsdkcss.v1.model.es_load_balancer_resource import EsLoadBalancerResource
-from huaweicloudsdkcss.v1.model.es_publicips_resource import EsPublicipsResource
 from huaweicloudsdkcss.v1.model.esflavors_versions_flavors_resp import EsflavorsVersionsFlavorsResp
 from huaweicloudsdkcss.v1.model.esflavors_versions_resp import EsflavorsVersionsResp
 from huaweicloudsdkcss.v1.model.extend_cluster_grow_req import ExtendClusterGrowReq
@@ -117,6 +114,7 @@ from huaweicloudsdkcss.v1.model.extend_cluster_req import ExtendClusterReq
 from huaweicloudsdkcss.v1.model.get_log_backup_req import GetLogBackupReq
 from huaweicloudsdkcss.v1.model.get_target_image_id_detail import GetTargetImageIdDetail
 from huaweicloudsdkcss.v1.model.get_upgrade_detail_info import GetUpgradeDetailInfo
+from huaweicloudsdkcss.v1.model.id_list_wrapper import IdListWrapper
 from huaweicloudsdkcss.v1.model.independent_body_req import IndependentBodyReq
 from huaweicloudsdkcss.v1.model.independent_req import IndependentReq
 from huaweicloudsdkcss.v1.model.kibana_elb_white_list_resp import KibanaElbWhiteListResp
@@ -159,6 +157,7 @@ from huaweicloudsdkcss.v1.model.list_ymls_job_response import ListYmlsJobRespons
 from huaweicloudsdkcss.v1.model.list_ymls_request import ListYmlsRequest
 from huaweicloudsdkcss.v1.model.list_ymls_response import ListYmlsResponse
 from huaweicloudsdkcss.v1.model.listener_ip_group import ListenerIpGroup
+from huaweicloudsdkcss.v1.model.load_balancer import LoadBalancer
 from huaweicloudsdkcss.v1.model.load_custom_thesaurus_req import LoadCustomThesaurusReq
 from huaweicloudsdkcss.v1.model.loadbalancers_resource import LoadbalancersResource
 from huaweicloudsdkcss.v1.model.log_configuration import LogConfiguration
@@ -168,6 +167,7 @@ from huaweicloudsdkcss.v1.model.pay_info_body import PayInfoBody
 from huaweicloudsdkcss.v1.model.period_req import PeriodReq
 from huaweicloudsdkcss.v1.model.permission_info import PermissionInfo
 from huaweicloudsdkcss.v1.model.pipelines import Pipelines
+from huaweicloudsdkcss.v1.model.public_ip_info import PublicIpInfo
 from huaweicloudsdkcss.v1.model.public_kibana_resp_body import PublicKibanaRespBody
 from huaweicloudsdkcss.v1.model.real_time_log_collect import RealTimeLogCollect
 from huaweicloudsdkcss.v1.model.reset_password_req import ResetPasswordReq
@@ -209,6 +209,7 @@ from huaweicloudsdkcss.v1.model.show_vpcep_connection_response import ShowVpcepC
 from huaweicloudsdkcss.v1.model.shrink_cluster_req import ShrinkClusterReq
 from huaweicloudsdkcss.v1.model.shrink_node_req import ShrinkNodeReq
 from huaweicloudsdkcss.v1.model.shrink_nodes_req import ShrinkNodesReq
+from huaweicloudsdkcss.v1.model.snapshot_policy_resp import SnapshotPolicyResp
 from huaweicloudsdkcss.v1.model.start_auto_setting_request import StartAutoSettingRequest
 from huaweicloudsdkcss.v1.model.start_auto_setting_response import StartAutoSettingResponse
 from huaweicloudsdkcss.v1.model.start_connectivity_test_req import StartConnectivityTestReq

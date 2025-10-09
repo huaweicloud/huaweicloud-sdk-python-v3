@@ -29,6 +29,7 @@ class NodeSpec:
         'count': 'int',
         'billing_mode': 'int',
         'taints': 'list[Taint]',
+        'wait_post_install_finish': 'bool',
         'k8s_tags': 'dict(str, str)',
         'ecs_group_id': 'str',
         'dedicated_host_id': 'str',
@@ -38,7 +39,8 @@ class NodeSpec:
         'extend_param': 'NodeExtendParam',
         'hostname_config': 'HostnameConfig',
         'server_enterprise_project_id': 'str',
-        'partition': 'str'
+        'partition': 'str',
+        'node_name_template': 'NodeSpecNodeNameTemplate'
     }
 
     attribute_map = {
@@ -54,6 +56,7 @@ class NodeSpec:
         'count': 'count',
         'billing_mode': 'billingMode',
         'taints': 'taints',
+        'wait_post_install_finish': 'waitPostInstallFinish',
         'k8s_tags': 'k8sTags',
         'ecs_group_id': 'ecsGroupId',
         'dedicated_host_id': 'dedicatedHostId',
@@ -63,10 +66,11 @@ class NodeSpec:
         'extend_param': 'extendParam',
         'hostname_config': 'hostnameConfig',
         'server_enterprise_project_id': 'serverEnterpriseProjectID',
-        'partition': 'partition'
+        'partition': 'partition',
+        'node_name_template': 'nodeNameTemplate'
     }
 
-    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None, server_enterprise_project_id=None, partition=None):
+    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, wait_post_install_finish=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None, server_enterprise_project_id=None, partition=None, node_name_template=None):
         r"""NodeSpec
 
         The model defined in huaweicloud sdk
@@ -75,7 +79,7 @@ class NodeSpec:
         :type flavor: str
         :param az: 待创建节点所在的可用区，需要指定可用区（AZ）的名称，不填或者填random选择随机可用区。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk) 
         :type az: str
-        :param os: [节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](https://support.huaweicloud.com/api-cce/node-os.html)。](tag:hws) [节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](https://support.huaweicloud.com/intl/zh-cn/api-cce/node-os.html)。](tag:hws_hk) &gt; - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 &gt; - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 &gt; - 创建节点池时，该参数为必选。 &gt; - 若创建节点时使用共享磁盘空间，即磁盘初始化配置管理参数使用storage，且StorageGroups中virtualSpaces的name字段指定为share，该参数为必选。 
+        :param os: **参数解释**： 节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 **约束限制**： - 若在创建节点时未指定该配置，CCE会根据集群版本自动选择支持的OS版本。 - 若当前集群版本不支持该OS类型，则会自动替换为当前集群版本支持的同系列OS类型。 - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，节点将使用私有镜像，则该参数为非必选参数。 [- 若在创建节点时指定了extendParam中的securityReinforcementType参数为cybersecurity，节点将开启安全等保加固功能，则节点的操作系统类型必须使用HCE2.0。当用户未配置私有镜像时，该参数必须为“Huawei Cloud EulerOS 2.0”；当用户配置了私有镜像且私有镜像操作系统类型为HCE2.0，则该参数为非必选参数。](tag:hws)  **取值范围**： 不涉及 **默认取值**： 不涉及
         :type os: str
         :param login: 
         :type login: :class:`huaweicloudsdkcce.v3.Login`
@@ -89,19 +93,21 @@ class NodeSpec:
         :type public_ip: :class:`huaweicloudsdkcce.v3.NodePublicIP`
         :param node_nic_spec: 
         :type node_nic_spec: :class:`huaweicloudsdkcce.v3.NodeNicSpec`
-        :param count: 批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项可以不填写。
+        :param count: **参数解释**： 批量创建时节点的个数。 **约束限制**： - 作用于节点池时该项可以不填写。 - 创建、更新节点池场景返回中无该参数。 - 创建节点时该参数为必填参数  **取值范围**： 必须为大于等于1，小于等于最大限额的正整数。 **默认取值**： 不涉及
         :type count: int
-        :param billing_mode: 节点的计费模式： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk) 
+        :param billing_mode: **参数解释**： 节点的计费模式。 **约束限制**： 不涉及 **取值范围**： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk)  **默认取值**： 0 
         :type billing_mode: int
         :param taints: 支持给创建出来的节点加Taints来设置反亲和性，taints配置不超过20条。每条Taints包含以下3个参数：  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀。 - Value：必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 - Effect：只可选NoSchedule，PreferNoSchedule或NoExecute。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。  示例：  &#x60;&#x60;&#x60; \&quot;taints\&quot;: [{   \&quot;key\&quot;: \&quot;status\&quot;,   \&quot;value\&quot;: \&quot;unavailable\&quot;,   \&quot;effect\&quot;: \&quot;NoSchedule\&quot; }, {   \&quot;key\&quot;: \&quot;looks\&quot;,   \&quot;value\&quot;: \&quot;bad\&quot;,   \&quot;effect\&quot;: \&quot;NoSchedule\&quot; }] &#x60;&#x60;&#x60; 
         :type taints: list[:class:`huaweicloudsdkcce.v3.Taint`]
+        :param wait_post_install_finish: **参数解释：** 该参数用于控制创建节点时 **post-install脚本执行完成前允许节点调度** 行为。当该参数未设置或者为false时，在kubernetes节点就绪时，容器即可被调度到可用节点。当该参数为true时，在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **约束限制：** 不涉及  **取值范围：** - false：在kubernetes节点就绪时，容器即可被调度到可用节点。           - true：在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **默认取值：** false
+        :type wait_post_install_finish: bool
         :param k8s_tags: 格式为key/value键值对。键值对个数不超过20条。 - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀，例如example.com/my-key，DNS子域最长253个字符。 - Value：可以为空或者非空字符串，非空字符串必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。   示例： &#x60;&#x60;&#x60; \&quot;k8sTags\&quot;: {   \&quot;key\&quot;: \&quot;value\&quot; } &#x60;&#x60;&#x60; 
         :type k8s_tags: dict(str, str)
-        :param ecs_group_id: 云服务器组ID，若指定，将节点创建在该云服务器组下 &gt; 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置
+        :param ecs_group_id: **参数解释**： 云服务器组ID，若指定，将节点创建在该云服务器组下。 **约束限制**： 创建、更新节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type ecs_group_id: str
-        :param dedicated_host_id: 指定DeH主机的ID，将节点调度到自己的DeH上。 &gt;创建节点池添加节点时不支持该参数。 
+        :param dedicated_host_id: **参数解释**： 指定DeH主机的ID，将节点调度到自己的DeH上。 **约束限制**： 创建节点池添加节点时不支持该参数。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type dedicated_host_id: str
-        :param user_tags: 云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 &gt; 标签键只能包含大写字母.小写字母、数字和特殊字符(-_)以及Unicode字符，长度不超过36个字符。 
+        :param user_tags: **参数解释**： 云服务器标签（资源标签）。字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 **约束限制**： - 键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。
         :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
         :param runtime: 
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
@@ -115,6 +121,8 @@ class NodeSpec:
         :type server_enterprise_project_id: str
         :param partition: **参数解释**： 表示节点所属分区。分区可以选择中心云[或者[边缘小站](https://support.huaweicloud.com/usermanual-cloudpond/ies_02_0401.html)。](tag:hws)[或者[边缘小站](https://support.huaweicloud.com/intl/zh-cn/usermanual-cloudpond/ies_02_0401.html)。](tag:hws_hk) **约束限制**： 仅开启了对分布式云支持的Turbo集群支持指定该字段。 **取值范围**： - center: 中心云 - 边缘小站的可用区ID  **默认取值**： 不涉及
         :type partition: str
+        :param node_name_template: 
+        :type node_name_template: :class:`huaweicloudsdkcce.v3.NodeSpecNodeNameTemplate`
         """
         
         
@@ -131,6 +139,7 @@ class NodeSpec:
         self._count = None
         self._billing_mode = None
         self._taints = None
+        self._wait_post_install_finish = None
         self._k8s_tags = None
         self._ecs_group_id = None
         self._dedicated_host_id = None
@@ -141,13 +150,15 @@ class NodeSpec:
         self._hostname_config = None
         self._server_enterprise_project_id = None
         self._partition = None
+        self._node_name_template = None
         self.discriminator = None
 
         self.flavor = flavor
         self.az = az
         if os is not None:
             self.os = os
-        self.login = login
+        if login is not None:
+            self.login = login
         self.root_volume = root_volume
         self.data_volumes = data_volumes
         if storage is not None:
@@ -162,6 +173,8 @@ class NodeSpec:
             self.billing_mode = billing_mode
         if taints is not None:
             self.taints = taints
+        if wait_post_install_finish is not None:
+            self.wait_post_install_finish = wait_post_install_finish
         if k8s_tags is not None:
             self.k8s_tags = k8s_tags
         if ecs_group_id is not None:
@@ -182,6 +195,8 @@ class NodeSpec:
             self.server_enterprise_project_id = server_enterprise_project_id
         if partition is not None:
             self.partition = partition
+        if node_name_template is not None:
+            self.node_name_template = node_name_template
 
     @property
     def flavor(self):
@@ -231,7 +246,7 @@ class NodeSpec:
     def os(self):
         r"""Gets the os of this NodeSpec.
 
-        [节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](https://support.huaweicloud.com/api-cce/node-os.html)。](tag:hws) [节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](https://support.huaweicloud.com/intl/zh-cn/api-cce/node-os.html)。](tag:hws_hk) > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 > - 创建节点池时，该参数为必选。 > - 若创建节点时使用共享磁盘空间，即磁盘初始化配置管理参数使用storage，且StorageGroups中virtualSpaces的name字段指定为share，该参数为必选。 
+        **参数解释**： 节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 **约束限制**： - 若在创建节点时未指定该配置，CCE会根据集群版本自动选择支持的OS版本。 - 若当前集群版本不支持该OS类型，则会自动替换为当前集群版本支持的同系列OS类型。 - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，节点将使用私有镜像，则该参数为非必选参数。 [- 若在创建节点时指定了extendParam中的securityReinforcementType参数为cybersecurity，节点将开启安全等保加固功能，则节点的操作系统类型必须使用HCE2.0。当用户未配置私有镜像时，该参数必须为“Huawei Cloud EulerOS 2.0”；当用户配置了私有镜像且私有镜像操作系统类型为HCE2.0，则该参数为非必选参数。](tag:hws)  **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The os of this NodeSpec.
         :rtype: str
@@ -242,7 +257,7 @@ class NodeSpec:
     def os(self, os):
         r"""Sets the os of this NodeSpec.
 
-        [节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](https://support.huaweicloud.com/api-cce/node-os.html)。](tag:hws) [节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](https://support.huaweicloud.com/intl/zh-cn/api-cce/node-os.html)。](tag:hws_hk) > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。 > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。 > - 创建节点池时，该参数为必选。 > - 若创建节点时使用共享磁盘空间，即磁盘初始化配置管理参数使用storage，且StorageGroups中virtualSpaces的name字段指定为share，该参数为必选。 
+        **参数解释**： 节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。 **约束限制**： - 若在创建节点时未指定该配置，CCE会根据集群版本自动选择支持的OS版本。 - 若当前集群版本不支持该OS类型，则会自动替换为当前集群版本支持的同系列OS类型。 - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，节点将使用私有镜像，则该参数为非必选参数。 [- 若在创建节点时指定了extendParam中的securityReinforcementType参数为cybersecurity，节点将开启安全等保加固功能，则节点的操作系统类型必须使用HCE2.0。当用户未配置私有镜像时，该参数必须为“Huawei Cloud EulerOS 2.0”；当用户配置了私有镜像且私有镜像操作系统类型为HCE2.0，则该参数为非必选参数。](tag:hws)  **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param os: The os of this NodeSpec.
         :type os: str
@@ -365,7 +380,7 @@ class NodeSpec:
     def count(self):
         r"""Gets the count of this NodeSpec.
 
-        批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项可以不填写。
+        **参数解释**： 批量创建时节点的个数。 **约束限制**： - 作用于节点池时该项可以不填写。 - 创建、更新节点池场景返回中无该参数。 - 创建节点时该参数为必填参数  **取值范围**： 必须为大于等于1，小于等于最大限额的正整数。 **默认取值**： 不涉及
 
         :return: The count of this NodeSpec.
         :rtype: int
@@ -376,7 +391,7 @@ class NodeSpec:
     def count(self, count):
         r"""Sets the count of this NodeSpec.
 
-        批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项可以不填写。
+        **参数解释**： 批量创建时节点的个数。 **约束限制**： - 作用于节点池时该项可以不填写。 - 创建、更新节点池场景返回中无该参数。 - 创建节点时该参数为必填参数  **取值范围**： 必须为大于等于1，小于等于最大限额的正整数。 **默认取值**： 不涉及
 
         :param count: The count of this NodeSpec.
         :type count: int
@@ -387,7 +402,7 @@ class NodeSpec:
     def billing_mode(self):
         r"""Gets the billing_mode of this NodeSpec.
 
-        节点的计费模式： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk) 
+        **参数解释**： 节点的计费模式。 **约束限制**： 不涉及 **取值范围**： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk)  **默认取值**： 0 
 
         :return: The billing_mode of this NodeSpec.
         :rtype: int
@@ -398,7 +413,7 @@ class NodeSpec:
     def billing_mode(self, billing_mode):
         r"""Sets the billing_mode of this NodeSpec.
 
-        节点的计费模式： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk) 
+        **参数解释**： 节点的计费模式。 **约束限制**： 不涉及 **取值范围**： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk)  **默认取值**： 0 
 
         :param billing_mode: The billing_mode of this NodeSpec.
         :type billing_mode: int
@@ -428,6 +443,28 @@ class NodeSpec:
         self._taints = taints
 
     @property
+    def wait_post_install_finish(self):
+        r"""Gets the wait_post_install_finish of this NodeSpec.
+
+        **参数解释：** 该参数用于控制创建节点时 **post-install脚本执行完成前允许节点调度** 行为。当该参数未设置或者为false时，在kubernetes节点就绪时，容器即可被调度到可用节点。当该参数为true时，在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **约束限制：** 不涉及  **取值范围：** - false：在kubernetes节点就绪时，容器即可被调度到可用节点。           - true：在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **默认取值：** false
+
+        :return: The wait_post_install_finish of this NodeSpec.
+        :rtype: bool
+        """
+        return self._wait_post_install_finish
+
+    @wait_post_install_finish.setter
+    def wait_post_install_finish(self, wait_post_install_finish):
+        r"""Sets the wait_post_install_finish of this NodeSpec.
+
+        **参数解释：** 该参数用于控制创建节点时 **post-install脚本执行完成前允许节点调度** 行为。当该参数未设置或者为false时，在kubernetes节点就绪时，容器即可被调度到可用节点。当该参数为true时，在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **约束限制：** 不涉及  **取值范围：** - false：在kubernetes节点就绪时，容器即可被调度到可用节点。           - true：在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **默认取值：** false
+
+        :param wait_post_install_finish: The wait_post_install_finish of this NodeSpec.
+        :type wait_post_install_finish: bool
+        """
+        self._wait_post_install_finish = wait_post_install_finish
+
+    @property
     def k8s_tags(self):
         r"""Gets the k8s_tags of this NodeSpec.
 
@@ -453,7 +490,7 @@ class NodeSpec:
     def ecs_group_id(self):
         r"""Gets the ecs_group_id of this NodeSpec.
 
-        云服务器组ID，若指定，将节点创建在该云服务器组下 > 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置
+        **参数解释**： 云服务器组ID，若指定，将节点创建在该云服务器组下。 **约束限制**： 创建、更新节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The ecs_group_id of this NodeSpec.
         :rtype: str
@@ -464,7 +501,7 @@ class NodeSpec:
     def ecs_group_id(self, ecs_group_id):
         r"""Sets the ecs_group_id of this NodeSpec.
 
-        云服务器组ID，若指定，将节点创建在该云服务器组下 > 创建节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置
+        **参数解释**： 云服务器组ID，若指定，将节点创建在该云服务器组下。 **约束限制**： 创建、更新节点池时该配置不会生效，若要保持节点池中的节点都在同一个云服务器组内，请在节点池 nodeManagement 字段中配置。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param ecs_group_id: The ecs_group_id of this NodeSpec.
         :type ecs_group_id: str
@@ -475,7 +512,7 @@ class NodeSpec:
     def dedicated_host_id(self):
         r"""Gets the dedicated_host_id of this NodeSpec.
 
-        指定DeH主机的ID，将节点调度到自己的DeH上。 >创建节点池添加节点时不支持该参数。 
+        **参数解释**： 指定DeH主机的ID，将节点调度到自己的DeH上。 **约束限制**： 创建节点池添加节点时不支持该参数。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The dedicated_host_id of this NodeSpec.
         :rtype: str
@@ -486,7 +523,7 @@ class NodeSpec:
     def dedicated_host_id(self, dedicated_host_id):
         r"""Sets the dedicated_host_id of this NodeSpec.
 
-        指定DeH主机的ID，将节点调度到自己的DeH上。 >创建节点池添加节点时不支持该参数。 
+        **参数解释**： 指定DeH主机的ID，将节点调度到自己的DeH上。 **约束限制**： 创建节点池添加节点时不支持该参数。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param dedicated_host_id: The dedicated_host_id of this NodeSpec.
         :type dedicated_host_id: str
@@ -497,7 +534,7 @@ class NodeSpec:
     def user_tags(self):
         r"""Gets the user_tags of this NodeSpec.
 
-        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 > 标签键只能包含大写字母.小写字母、数字和特殊字符(-_)以及Unicode字符，长度不超过36个字符。 
+        **参数解释**： 云服务器标签（资源标签）。字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 **约束限制**： - 键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。
 
         :return: The user_tags of this NodeSpec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.UserTag`]
@@ -508,7 +545,7 @@ class NodeSpec:
     def user_tags(self, user_tags):
         r"""Sets the user_tags of this NodeSpec.
 
-        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。 字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 > 标签键只能包含大写字母.小写字母、数字和特殊字符(-_)以及Unicode字符，长度不超过36个字符。 
+        **参数解释**： 云服务器标签（资源标签）。字段使用场景：在节点创建场景下，支持指定初始值，查询时不返回该字段；在节点池场景下，其中节点模板中支持指定初始值，查询时支持返回该字段；在其余场景下，查询时都不会返回该字段。 **约束限制**： - 键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。
 
         :param user_tags: The user_tags of this NodeSpec.
         :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
@@ -634,6 +671,24 @@ class NodeSpec:
         :type partition: str
         """
         self._partition = partition
+
+    @property
+    def node_name_template(self):
+        r"""Gets the node_name_template of this NodeSpec.
+
+        :return: The node_name_template of this NodeSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeSpecNodeNameTemplate`
+        """
+        return self._node_name_template
+
+    @node_name_template.setter
+    def node_name_template(self, node_name_template):
+        r"""Sets the node_name_template of this NodeSpec.
+
+        :param node_name_template: The node_name_template of this NodeSpec.
+        :type node_name_template: :class:`huaweicloudsdkcce.v3.NodeSpecNodeNameTemplate`
+        """
+        self._node_name_template = node_name_template
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,7 +18,7 @@ class ListElbCertsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'certificates': 'CertificatesResource'
+        'certificates': 'list[CertificatesResource]'
     }
 
     attribute_map = {
@@ -30,8 +30,8 @@ class ListElbCertsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param certificates: 
-        :type certificates: :class:`huaweicloudsdkcss.v1.CertificatesResource`
+        :param certificates: 证书列表信息。
+        :type certificates: list[:class:`huaweicloudsdkcss.v1.CertificatesResource`]
         """
         
         super(ListElbCertsResponse, self).__init__()
@@ -46,8 +46,10 @@ class ListElbCertsResponse(SdkResponse):
     def certificates(self):
         r"""Gets the certificates of this ListElbCertsResponse.
 
+        证书列表信息。
+
         :return: The certificates of this ListElbCertsResponse.
-        :rtype: :class:`huaweicloudsdkcss.v1.CertificatesResource`
+        :rtype: list[:class:`huaweicloudsdkcss.v1.CertificatesResource`]
         """
         return self._certificates
 
@@ -55,8 +57,10 @@ class ListElbCertsResponse(SdkResponse):
     def certificates(self, certificates):
         r"""Sets the certificates of this ListElbCertsResponse.
 
+        证书列表信息。
+
         :param certificates: The certificates of this ListElbCertsResponse.
-        :type certificates: :class:`huaweicloudsdkcss.v1.CertificatesResource`
+        :type certificates: list[:class:`huaweicloudsdkcss.v1.CertificatesResource`]
         """
         self._certificates = certificates
 

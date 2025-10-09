@@ -21,7 +21,8 @@ class NodePoolUpdateExtendParam:
         'alpha_cce_pre_install': 'str',
         'alpha_cce_post_install': 'str',
         'spot_price': 'str',
-        'security_reinforcement_type': 'str'
+        'security_reinforcement_type': 'str',
+        'alpha_cce_node_image_id': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class NodePoolUpdateExtendParam:
         'alpha_cce_pre_install': 'alpha.cce/preInstall',
         'alpha_cce_post_install': 'alpha.cce/postInstall',
         'spot_price': 'spotPrice',
-        'security_reinforcement_type': 'securityReinforcementType'
+        'security_reinforcement_type': 'securityReinforcementType',
+        'alpha_cce_node_image_id': 'alpha.cce/NodeImageID'
     }
 
-    def __init__(self, agency_name=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, spot_price=None, security_reinforcement_type=None):
+    def __init__(self, agency_name=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, spot_price=None, security_reinforcement_type=None, alpha_cce_node_image_id=None):
         r"""NodePoolUpdateExtendParam
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class NodePoolUpdateExtendParam:
         :type spot_price: str
         :param security_reinforcement_type: **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。[详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。](tag:hws) 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\&quot;null\&quot;。 **约束限制**： 不涉及 **取值范围**： - 空值：表示不开启等保加固 - cybersecurity：表示开启等保加固  **默认取值**： 不涉及
         :type security_reinforcement_type: str
+        :param alpha_cce_node_image_id: **参数解释**： 节点自定义镜像ID，从IMS控制台获取，需要使用自定义镜像时用此参数。 **约束限制**： 不涉及 [&gt; - 若指定了extendParam中的securityReinforcementType参数为cybersecurity，节点将开启安全等保加固功能，则节点的操作系统类型必须使用HCE2.0。](tag:hws)  **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type alpha_cce_node_image_id: str
         """
         
         
@@ -56,6 +60,7 @@ class NodePoolUpdateExtendParam:
         self._alpha_cce_post_install = None
         self._spot_price = None
         self._security_reinforcement_type = None
+        self._alpha_cce_node_image_id = None
         self.discriminator = None
 
         if agency_name is not None:
@@ -68,6 +73,8 @@ class NodePoolUpdateExtendParam:
             self.spot_price = spot_price
         if security_reinforcement_type is not None:
             self.security_reinforcement_type = security_reinforcement_type
+        if alpha_cce_node_image_id is not None:
+            self.alpha_cce_node_image_id = alpha_cce_node_image_id
 
     @property
     def agency_name(self):
@@ -178,6 +185,28 @@ class NodePoolUpdateExtendParam:
         :type security_reinforcement_type: str
         """
         self._security_reinforcement_type = security_reinforcement_type
+
+    @property
+    def alpha_cce_node_image_id(self):
+        r"""Gets the alpha_cce_node_image_id of this NodePoolUpdateExtendParam.
+
+        **参数解释**： 节点自定义镜像ID，从IMS控制台获取，需要使用自定义镜像时用此参数。 **约束限制**： 不涉及 [> - 若指定了extendParam中的securityReinforcementType参数为cybersecurity，节点将开启安全等保加固功能，则节点的操作系统类型必须使用HCE2.0。](tag:hws)  **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The alpha_cce_node_image_id of this NodePoolUpdateExtendParam.
+        :rtype: str
+        """
+        return self._alpha_cce_node_image_id
+
+    @alpha_cce_node_image_id.setter
+    def alpha_cce_node_image_id(self, alpha_cce_node_image_id):
+        r"""Sets the alpha_cce_node_image_id of this NodePoolUpdateExtendParam.
+
+        **参数解释**： 节点自定义镜像ID，从IMS控制台获取，需要使用自定义镜像时用此参数。 **约束限制**： 不涉及 [> - 若指定了extendParam中的securityReinforcementType参数为cybersecurity，节点将开启安全等保加固功能，则节点的操作系统类型必须使用HCE2.0。](tag:hws)  **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param alpha_cce_node_image_id: The alpha_cce_node_image_id of this NodePoolUpdateExtendParam.
+        :type alpha_cce_node_image_id: str
+        """
+        self._alpha_cce_node_image_id = alpha_cce_node_image_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

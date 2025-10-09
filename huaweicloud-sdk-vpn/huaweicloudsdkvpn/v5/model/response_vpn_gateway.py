@@ -51,7 +51,8 @@ class ResponseVpnGateway:
         'policy_template': 'PolicyTemplate',
         'supported_flavors': 'list[str]',
         'supported_features': 'list[str]',
-        'tags': 'list[VpnResourceTag]'
+        'tags': 'list[VpnResourceTag]',
+        'upgrade_info': 'str'
     }
 
     attribute_map = {
@@ -89,10 +90,11 @@ class ResponseVpnGateway:
         'policy_template': 'policy_template',
         'supported_flavors': 'supported_flavors',
         'supported_features': 'supported_features',
-        'tags': 'tags'
+        'tags': 'tags',
+        'upgrade_info': 'upgrade_info'
     }
 
-    def __init__(self, id=None, name=None, status=None, attachment_type=None, ip_version=None, certificate_id=None, er_id=None, er_attachment_id=None, vpc_id=None, local_subnets=None, local_subnets_v6=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, public_border_group=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, eip1=None, eip2=None, created_at=None, applied_at=None, updated_at=None, policy_template=None, supported_flavors=None, supported_features=None, tags=None):
+    def __init__(self, id=None, name=None, status=None, attachment_type=None, ip_version=None, certificate_id=None, er_id=None, er_attachment_id=None, vpc_id=None, local_subnets=None, local_subnets_v6=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, access_private_ip_1=None, access_private_ip_2=None, bgp_asn=None, flavor=None, availability_zone_ids=None, public_border_group=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, eip1=None, eip2=None, created_at=None, applied_at=None, updated_at=None, policy_template=None, supported_flavors=None, supported_features=None, tags=None, upgrade_info=None):
         r"""ResponseVpnGateway
 
         The model defined in huaweicloud sdk
@@ -167,6 +169,8 @@ class ResponseVpnGateway:
         :type supported_features: list[str]
         :param tags: 标签
         :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
+        :param upgrade_info: 升级信息
+        :type upgrade_info: str
         """
         
         
@@ -206,6 +210,7 @@ class ResponseVpnGateway:
         self._supported_flavors = None
         self._supported_features = None
         self._tags = None
+        self._upgrade_info = None
         self.discriminator = None
 
         if id is not None:
@@ -278,6 +283,8 @@ class ResponseVpnGateway:
             self.supported_features = supported_features
         if tags is not None:
             self.tags = tags
+        if upgrade_info is not None:
+            self.upgrade_info = upgrade_info
 
     @property
     def id(self):
@@ -1036,6 +1043,28 @@ class ResponseVpnGateway:
         :type tags: list[:class:`huaweicloudsdkvpn.v5.VpnResourceTag`]
         """
         self._tags = tags
+
+    @property
+    def upgrade_info(self):
+        r"""Gets the upgrade_info of this ResponseVpnGateway.
+
+        升级信息
+
+        :return: The upgrade_info of this ResponseVpnGateway.
+        :rtype: str
+        """
+        return self._upgrade_info
+
+    @upgrade_info.setter
+    def upgrade_info(self, upgrade_info):
+        r"""Sets the upgrade_info of this ResponseVpnGateway.
+
+        升级信息
+
+        :param upgrade_info: The upgrade_info of this ResponseVpnGateway.
+        :type upgrade_info: str
+        """
+        self._upgrade_info = upgrade_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -33,11 +33,11 @@ class ClusterLogConfigLogConfigs:
 
         The model defined in huaweicloud sdk
 
-        :param name: 日志类型
+        :param name: **参数解释**： 日志类型 **约束限制**： 必须为 **kube-apiserver**、**kube-controller-manager**、**kube-scheduler**、**audit** 或者系统插件名称 **取值范围**： - kube-apiserver：采集kube-apiserver组件日志 - kube-controller-manager：采集kube-controller-manager日志 - kube-scheduler：采集kube-scheduler日志 - audit：采集审计日志 - 系统插件名称：采集插件日志  **默认取值**： 不涉及
         :type name: str
-        :param enable: 是否采集
+        :param enable: **参数解释**： 是否采集 **取值范围**： - true：开启日志采集 - false：关闭日志采集
         :type enable: bool
-        :param type: 组件类型
+        :param type: **参数解释**： 组件类型 , 合法取值为control，audit，system-addon。 **约束限制**： - 仅查询集群日志配置信息接口响应中返回该参数 - 作为**配置集群日志**接口更新参数时不支持配置  **取值范围**： - control: 控制面组件日志。 - audit: 控制面审计日志。 - system-addon: 系统插件日志。 **默认取值**： 不涉及
         :type type: str
         """
         
@@ -59,7 +59,7 @@ class ClusterLogConfigLogConfigs:
     def name(self):
         r"""Gets the name of this ClusterLogConfigLogConfigs.
 
-        日志类型
+        **参数解释**： 日志类型 **约束限制**： 必须为 **kube-apiserver**、**kube-controller-manager**、**kube-scheduler**、**audit** 或者系统插件名称 **取值范围**： - kube-apiserver：采集kube-apiserver组件日志 - kube-controller-manager：采集kube-controller-manager日志 - kube-scheduler：采集kube-scheduler日志 - audit：采集审计日志 - 系统插件名称：采集插件日志  **默认取值**： 不涉及
 
         :return: The name of this ClusterLogConfigLogConfigs.
         :rtype: str
@@ -70,7 +70,7 @@ class ClusterLogConfigLogConfigs:
     def name(self, name):
         r"""Sets the name of this ClusterLogConfigLogConfigs.
 
-        日志类型
+        **参数解释**： 日志类型 **约束限制**： 必须为 **kube-apiserver**、**kube-controller-manager**、**kube-scheduler**、**audit** 或者系统插件名称 **取值范围**： - kube-apiserver：采集kube-apiserver组件日志 - kube-controller-manager：采集kube-controller-manager日志 - kube-scheduler：采集kube-scheduler日志 - audit：采集审计日志 - 系统插件名称：采集插件日志  **默认取值**： 不涉及
 
         :param name: The name of this ClusterLogConfigLogConfigs.
         :type name: str
@@ -81,7 +81,7 @@ class ClusterLogConfigLogConfigs:
     def enable(self):
         r"""Gets the enable of this ClusterLogConfigLogConfigs.
 
-        是否采集
+        **参数解释**： 是否采集 **取值范围**： - true：开启日志采集 - false：关闭日志采集
 
         :return: The enable of this ClusterLogConfigLogConfigs.
         :rtype: bool
@@ -92,7 +92,7 @@ class ClusterLogConfigLogConfigs:
     def enable(self, enable):
         r"""Sets the enable of this ClusterLogConfigLogConfigs.
 
-        是否采集
+        **参数解释**： 是否采集 **取值范围**： - true：开启日志采集 - false：关闭日志采集
 
         :param enable: The enable of this ClusterLogConfigLogConfigs.
         :type enable: bool
@@ -103,7 +103,7 @@ class ClusterLogConfigLogConfigs:
     def type(self):
         r"""Gets the type of this ClusterLogConfigLogConfigs.
 
-        组件类型
+        **参数解释**： 组件类型 , 合法取值为control，audit，system-addon。 **约束限制**： - 仅查询集群日志配置信息接口响应中返回该参数 - 作为**配置集群日志**接口更新参数时不支持配置  **取值范围**： - control: 控制面组件日志。 - audit: 控制面审计日志。 - system-addon: 系统插件日志。 **默认取值**： 不涉及
 
         :return: The type of this ClusterLogConfigLogConfigs.
         :rtype: str
@@ -114,7 +114,7 @@ class ClusterLogConfigLogConfigs:
     def type(self, type):
         r"""Sets the type of this ClusterLogConfigLogConfigs.
 
-        组件类型
+        **参数解释**： 组件类型 , 合法取值为control，audit，system-addon。 **约束限制**： - 仅查询集群日志配置信息接口响应中返回该参数 - 作为**配置集群日志**接口更新参数时不支持配置  **取值范围**： - control: 控制面组件日志。 - audit: 控制面审计日志。 - system-addon: 系统插件日志。 **默认取值**： 不涉及
 
         :param type: The type of this ClusterLogConfigLogConfigs.
         :type type: str

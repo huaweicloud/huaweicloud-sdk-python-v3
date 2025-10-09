@@ -31,7 +31,7 @@ class AddNode:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 服务器ID，获取方式请参见ECS/BMS相关资料。
+        :param server_id: **参数解释**： 服务器ID，从ECS/BMS控制台获取。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type server_id: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`
@@ -50,7 +50,7 @@ class AddNode:
     def server_id(self):
         r"""Gets the server_id of this AddNode.
 
-        服务器ID，获取方式请参见ECS/BMS相关资料。
+        **参数解释**： 服务器ID，从ECS/BMS控制台获取。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The server_id of this AddNode.
         :rtype: str
@@ -61,7 +61,7 @@ class AddNode:
     def server_id(self, server_id):
         r"""Sets the server_id of this AddNode.
 
-        服务器ID，获取方式请参见ECS/BMS相关资料。
+        **参数解释**： 服务器ID，从ECS/BMS控制台获取。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param server_id: The server_id of this AddNode.
         :type server_id: str

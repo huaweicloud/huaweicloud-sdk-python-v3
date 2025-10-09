@@ -21,7 +21,8 @@ class NodePoolMetadata:
         'uid': 'str',
         'annotations': 'dict(str, str)',
         'update_timestamp': 'str',
-        'creation_timestamp': 'str'
+        'creation_timestamp': 'str',
+        'resource_version': 'int'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class NodePoolMetadata:
         'uid': 'uid',
         'annotations': 'annotations',
         'update_timestamp': 'updateTimestamp',
-        'creation_timestamp': 'creationTimestamp'
+        'creation_timestamp': 'creationTimestamp',
+        'resource_version': 'resourceVersion'
     }
 
-    def __init__(self, name=None, uid=None, annotations=None, update_timestamp=None, creation_timestamp=None):
+    def __init__(self, name=None, uid=None, annotations=None, update_timestamp=None, creation_timestamp=None, resource_version=None):
         r"""NodePoolMetadata
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class NodePoolMetadata:
         :type update_timestamp: str
         :param creation_timestamp: 创建时间
         :type creation_timestamp: str
+        :param resource_version: **参数解释**： 节点池最后更新时间的时间戳。 **约束限制**： 创建节点池时自动记录，不支持传入。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type resource_version: int
         """
         
         
@@ -56,6 +60,7 @@ class NodePoolMetadata:
         self._annotations = None
         self._update_timestamp = None
         self._creation_timestamp = None
+        self._resource_version = None
         self.discriminator = None
 
         self.name = name
@@ -67,6 +72,8 @@ class NodePoolMetadata:
             self.update_timestamp = update_timestamp
         if creation_timestamp is not None:
             self.creation_timestamp = creation_timestamp
+        if resource_version is not None:
+            self.resource_version = resource_version
 
     @property
     def name(self):
@@ -177,6 +184,28 @@ class NodePoolMetadata:
         :type creation_timestamp: str
         """
         self._creation_timestamp = creation_timestamp
+
+    @property
+    def resource_version(self):
+        r"""Gets the resource_version of this NodePoolMetadata.
+
+        **参数解释**： 节点池最后更新时间的时间戳。 **约束限制**： 创建节点池时自动记录，不支持传入。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The resource_version of this NodePoolMetadata.
+        :rtype: int
+        """
+        return self._resource_version
+
+    @resource_version.setter
+    def resource_version(self, resource_version):
+        r"""Sets the resource_version of this NodePoolMetadata.
+
+        **参数解释**： 节点池最后更新时间的时间戳。 **约束限制**： 创建节点池时自动记录，不支持传入。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param resource_version: The resource_version of this NodePoolMetadata.
+        :type resource_version: int
+        """
+        self._resource_version = resource_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

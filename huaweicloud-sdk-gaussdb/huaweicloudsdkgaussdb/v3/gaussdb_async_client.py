@@ -8329,6 +8329,140 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def show_serverless_compute_ability_policy_async(self, request):
+        r"""查询Serverless算力策略
+
+        查询Serverless算力策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowServerlessComputeAbilityPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowServerlessComputeAbilityPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowServerlessComputeAbilityPolicyResponse`
+        """
+        http_info = self._show_serverless_compute_ability_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_serverless_compute_ability_policy_async_invoker(self, request):
+        http_info = self._show_serverless_compute_ability_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_serverless_compute_ability_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/serverless/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerlessComputeAbilityPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_serverless_scaling_policy_async(self, request):
+        r"""查询Serverless自定义扩容策略
+
+        查询Serverless自定义扩容策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowServerlessScalingPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowServerlessScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowServerlessScalingPolicyResponse`
+        """
+        http_info = self._show_serverless_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_serverless_scaling_policy_async_invoker(self, request):
+        http_info = self._show_serverless_scaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_serverless_scaling_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/serverless/scaling-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerlessScalingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_slow_log_detail_async(self, request):
         r"""获取StarRocks实例内核慢日志信息
 
@@ -8781,6 +8915,77 @@ class GaussDBAsyncClient(Client):
             query_params.append(('database_name', local_var_params['database_name']))
         if 'table_name' in local_var_params:
             query_params.append(('table_name', local_var_params['table_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_task_details_async(self, request):
+        r"""获取TaurusDB异步任务详情
+
+        获取TaurusDB异步任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTaskDetails
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowTaskDetailsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowTaskDetailsResponse`
+        """
+        http_info = self._show_task_details_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_task_details_async_invoker(self, request):
+        http_info = self._show_task_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_task_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/task-center-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskDetailsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'job_name' in local_var_params:
+            query_params.append(('job_name', local_var_params['job_name']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -10970,6 +11175,75 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def update_serverless_compute_ability_policy_async(self, request):
+        r"""设置Serverless算力策略
+
+        设置Serverless算力策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateServerlessComputeAbilityPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateServerlessComputeAbilityPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateServerlessComputeAbilityPolicyResponse`
+        """
+        http_info = self._update_serverless_compute_ability_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_serverless_compute_ability_policy_async_invoker(self, request):
+        http_info = self._update_serverless_compute_ability_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_serverless_compute_ability_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/serverless/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerlessComputeAbilityPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_serverless_policy_async(self, request):
         r"""设置Serverless配置策略
 
@@ -10995,6 +11269,75 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/serverless/policy",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateServerlessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_serverless_scaling_policy_async(self, request):
+        r"""设置Serverless自定义扩容策略
+
+        设置Serverless自定义扩容策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateServerlessScalingPolicy
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateServerlessScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateServerlessScalingPolicyResponse`
+        """
+        http_info = self._update_serverless_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_serverless_scaling_policy_async_invoker(self, request):
+        http_info = self._update_serverless_scaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_serverless_scaling_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/serverless/scaling-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerlessScalingPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -14767,6 +15110,75 @@ class GaussDBAsyncClient(Client):
 
         return http_info
 
+    def set_htap_query_queues_rule_async(self, request):
+        r"""设置当前查询队列阈值
+
+        设置当前查询队列阈值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetHtapQueryQueuesRule
+        :type request: :class:`huaweicloudsdkgaussdb.v3.SetHtapQueryQueuesRuleRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.SetHtapQueryQueuesRuleResponse`
+        """
+        http_info = self._set_htap_query_queues_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_htap_query_queues_rule_async_invoker(self, request):
+        http_info = self._set_htap_query_queues_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_htap_query_queues_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/query-queue/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetHtapQueryQueuesRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_click_house_database_user_async(self, request):
         r"""查询数据库账户
 
@@ -15166,6 +15578,73 @@ class GaussDBAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_htap_query_queues_rule_async(self, request):
+        r"""查询当前查询队列开关和阈值
+
+        查询当前查询队列开关和阈值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHtapQueryQueuesRule
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowHtapQueryQueuesRuleRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowHtapQueryQueuesRuleResponse`
+        """
+        http_info = self._show_htap_query_queues_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_htap_query_queues_rule_async_invoker(self, request):
+        http_info = self._show_htap_query_queues_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_htap_query_queues_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/query-queue/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHtapQueryQueuesRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -15855,6 +16334,75 @@ class GaussDBAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/clickhouse/slowlog-sensitive",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateClickHouseSlowLogSensitiveStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_htap_query_queues_control_async(self, request):
+        r"""开启或者关闭查询队列功能
+
+        开启或者关闭查询队列功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateHtapQueryQueuesControl
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateHtapQueryQueuesControlRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateHtapQueryQueuesControlResponse`
+        """
+        http_info = self._update_htap_query_queues_control_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_htap_query_queues_control_async_invoker(self, request):
+        http_info = self._update_htap_query_queues_control_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_htap_query_queues_control_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/htap/query-queue/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHtapQueryQueuesControlResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -31,7 +31,7 @@ class ResourceTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/&#x3D;+-@ - 不能以\&quot;\\_sys\\_\&quot;开头
+        :param key: **参数解释：** Key值。 **约束限制：** 不涉及 **取值范围：** - 不能为空且首尾不能包含空格，最多支持128个字符 - 可用UTF-8格式表示的任意语种字母、数字和空格 - 支持部分特殊字符：_.:&#x3D;+-@ - 不能以\&quot;\\_sys\\_\&quot;开头  **默认取值：** 不涉及 
         :type key: str
         :param value: Value值。 - 可以为空但不能缺省，最多支持255个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/&#x3D;+-@
         :type value: str
@@ -52,7 +52,7 @@ class ResourceTag:
     def key(self):
         r"""Gets the key of this ResourceTag.
 
-        Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@ - 不能以\"\\_sys\\_\"开头
+        **参数解释：** Key值。 **约束限制：** 不涉及 **取值范围：** - 不能为空且首尾不能包含空格，最多支持128个字符 - 可用UTF-8格式表示的任意语种字母、数字和空格 - 支持部分特殊字符：_.:=+-@ - 不能以\"\\_sys\\_\"开头  **默认取值：** 不涉及 
 
         :return: The key of this ResourceTag.
         :rtype: str
@@ -63,7 +63,7 @@ class ResourceTag:
     def key(self, key):
         r"""Sets the key of this ResourceTag.
 
-        Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@ - 不能以\"\\_sys\\_\"开头
+        **参数解释：** Key值。 **约束限制：** 不涉及 **取值范围：** - 不能为空且首尾不能包含空格，最多支持128个字符 - 可用UTF-8格式表示的任意语种字母、数字和空格 - 支持部分特殊字符：_.:=+-@ - 不能以\"\\_sys\\_\"开头  **默认取值：** 不涉及 
 
         :param key: The key of this ResourceTag.
         :type key: str

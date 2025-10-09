@@ -24,9 +24,9 @@ class ShowElbDetailResponse(SdkResponse):
         'cacert_id': 'str',
         'elb_enable': 'bool',
         'authentication_type': 'str',
-        'load_balancer': 'EsLoadBalancerResource',
+        'load_balancer': 'LoadBalancer',
         'listener': 'Elbv3Listener',
-        'healthmonitors': 'Member'
+        'healthmonitors': 'list[Member]'
     }
 
     attribute_map = {
@@ -59,11 +59,11 @@ class ShowElbDetailResponse(SdkResponse):
         :param authentication_type: 认证方式。
         :type authentication_type: str
         :param load_balancer: 
-        :type load_balancer: :class:`huaweicloudsdkcss.v1.EsLoadBalancerResource`
+        :type load_balancer: :class:`huaweicloudsdkcss.v1.LoadBalancer`
         :param listener: 
         :type listener: :class:`huaweicloudsdkcss.v1.Elbv3Listener`
-        :param healthmonitors: 
-        :type healthmonitors: :class:`huaweicloudsdkcss.v1.Member`
+        :param healthmonitors: 健康检查结果集合。
+        :type healthmonitors: list[:class:`huaweicloudsdkcss.v1.Member`]
         """
         
         super(ShowElbDetailResponse, self).__init__()
@@ -235,7 +235,7 @@ class ShowElbDetailResponse(SdkResponse):
         r"""Gets the load_balancer of this ShowElbDetailResponse.
 
         :return: The load_balancer of this ShowElbDetailResponse.
-        :rtype: :class:`huaweicloudsdkcss.v1.EsLoadBalancerResource`
+        :rtype: :class:`huaweicloudsdkcss.v1.LoadBalancer`
         """
         return self._load_balancer
 
@@ -244,7 +244,7 @@ class ShowElbDetailResponse(SdkResponse):
         r"""Sets the load_balancer of this ShowElbDetailResponse.
 
         :param load_balancer: The load_balancer of this ShowElbDetailResponse.
-        :type load_balancer: :class:`huaweicloudsdkcss.v1.EsLoadBalancerResource`
+        :type load_balancer: :class:`huaweicloudsdkcss.v1.LoadBalancer`
         """
         self._load_balancer = load_balancer
 
@@ -270,8 +270,10 @@ class ShowElbDetailResponse(SdkResponse):
     def healthmonitors(self):
         r"""Gets the healthmonitors of this ShowElbDetailResponse.
 
+        健康检查结果集合。
+
         :return: The healthmonitors of this ShowElbDetailResponse.
-        :rtype: :class:`huaweicloudsdkcss.v1.Member`
+        :rtype: list[:class:`huaweicloudsdkcss.v1.Member`]
         """
         return self._healthmonitors
 
@@ -279,8 +281,10 @@ class ShowElbDetailResponse(SdkResponse):
     def healthmonitors(self, healthmonitors):
         r"""Sets the healthmonitors of this ShowElbDetailResponse.
 
+        健康检查结果集合。
+
         :param healthmonitors: The healthmonitors of this ShowElbDetailResponse.
-        :type healthmonitors: :class:`huaweicloudsdkcss.v1.Member`
+        :type healthmonitors: list[:class:`huaweicloudsdkcss.v1.Member`]
         """
         self._healthmonitors = healthmonitors
 

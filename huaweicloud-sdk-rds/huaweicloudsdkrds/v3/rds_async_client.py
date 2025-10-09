@@ -2709,6 +2709,77 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def list_configuration_apply_histories_async(self, request):
+        r"""查询参数组应用历史
+
+        查询参数组应用历史
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConfigurationApplyHistories
+        :type request: :class:`huaweicloudsdkrds.v3.ListConfigurationApplyHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListConfigurationApplyHistoriesResponse`
+        """
+        http_info = self._list_configuration_apply_histories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_configuration_apply_histories_async_invoker(self, request):
+        http_info = self._list_configuration_apply_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_configuration_apply_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/apply-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigurationApplyHistoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_configurations_async(self, request):
         r"""获取参数模板列表
 
@@ -3828,6 +3899,77 @@ class RdsAsyncClient(Client):
             query_params.append(('tags', local_var_params['tags']))
         if 'group_type' in local_var_params:
             query_params.append(('group_type', local_var_params['group_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instances_configurations_async(self, request):
+        r"""查询应用参数模版的实例列表
+
+        查询应用参数模版的实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstancesConfigurations
+        :type request: :class:`huaweicloudsdkrds.v3.ListInstancesConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListInstancesConfigurationsResponse`
+        """
+        http_info = self._list_instances_configurations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instances_configurations_async_invoker(self, request):
+        http_info = self._list_instances_configurations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_configurations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/query-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesConfigurationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:

@@ -38,9 +38,9 @@ class DeleteNodeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param kind: API类型，固定值“Node”，该值不可修改。  
+        :param kind: **参数解释**： API类型，固定值“Node”。 **取值范围**： 只能为固定值“Node”。 
         :type kind: str
-        :param api_version: API版本，固定值“v3”，该值不可修改。  
+        :param api_version: **参数解释**： API版本，固定值“v3”。 **取值范围**： 只能为固定值“v3”。
         :type api_version: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -74,7 +74,7 @@ class DeleteNodeResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this DeleteNodeResponse.
 
-        API类型，固定值“Node”，该值不可修改。  
+        **参数解释**： API类型，固定值“Node”。 **取值范围**： 只能为固定值“Node”。 
 
         :return: The kind of this DeleteNodeResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class DeleteNodeResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this DeleteNodeResponse.
 
-        API类型，固定值“Node”，该值不可修改。  
+        **参数解释**： API类型，固定值“Node”。 **取值范围**： 只能为固定值“Node”。 
 
         :param kind: The kind of this DeleteNodeResponse.
         :type kind: str
@@ -96,7 +96,7 @@ class DeleteNodeResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this DeleteNodeResponse.
 
-        API版本，固定值“v3”，该值不可修改。  
+        **参数解释**： API版本，固定值“v3”。 **取值范围**： 只能为固定值“v3”。
 
         :return: The api_version of this DeleteNodeResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class DeleteNodeResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this DeleteNodeResponse.
 
-        API版本，固定值“v3”，该值不可修改。  
+        **参数解释**： API版本，固定值“v3”。 **取值范围**： 只能为固定值“v3”。
 
         :param api_version: The api_version of this DeleteNodeResponse.
         :type api_version: str

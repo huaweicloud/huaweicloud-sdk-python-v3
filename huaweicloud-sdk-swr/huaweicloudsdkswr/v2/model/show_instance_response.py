@@ -40,7 +40,8 @@ class ShowInstanceResponse(SdkResponse):
         'vpc_name': 'str',
         'vpc_cidr': 'str',
         'subnet_name': 'str',
-        'subnet_cidr': 'str'
+        'subnet_cidr': 'str',
+        'vpcep_service_id': 'str'
     }
 
     attribute_map = {
@@ -66,10 +67,11 @@ class ShowInstanceResponse(SdkResponse):
         'vpc_name': 'vpc_name',
         'vpc_cidr': 'vpc_cidr',
         'subnet_name': 'subnet_name',
-        'subnet_cidr': 'subnet_cidr'
+        'subnet_cidr': 'subnet_cidr',
+        'vpcep_service_id': 'vpcep_service_id'
     }
 
-    def __init__(self, id=None, name=None, description=None, vpc_id=None, subnet_id=None, spec=None, version=None, charge_mode=None, access_address=None, created_at=None, updated_at=None, expires_at=None, status=None, obs_bucket_name=None, project_id=None, enterprise_project_id=None, user_def_obs=None, product_id=None, order_id=None, vpc_name=None, vpc_cidr=None, subnet_name=None, subnet_cidr=None):
+    def __init__(self, id=None, name=None, description=None, vpc_id=None, subnet_id=None, spec=None, version=None, charge_mode=None, access_address=None, created_at=None, updated_at=None, expires_at=None, status=None, obs_bucket_name=None, project_id=None, enterprise_project_id=None, user_def_obs=None, product_id=None, order_id=None, vpc_name=None, vpc_cidr=None, subnet_name=None, subnet_cidr=None, vpcep_service_id=None):
         r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -120,6 +122,8 @@ class ShowInstanceResponse(SdkResponse):
         :type subnet_name: str
         :param subnet_cidr: 子网的网段
         :type subnet_cidr: str
+        :param vpcep_service_id: 实例对应的VPC终端节点服务ID
+        :type vpcep_service_id: str
         """
         
         super(ShowInstanceResponse, self).__init__()
@@ -147,6 +151,7 @@ class ShowInstanceResponse(SdkResponse):
         self._vpc_cidr = None
         self._subnet_name = None
         self._subnet_cidr = None
+        self._vpcep_service_id = None
         self.discriminator = None
 
         if id is not None:
@@ -195,6 +200,8 @@ class ShowInstanceResponse(SdkResponse):
             self.subnet_name = subnet_name
         if subnet_cidr is not None:
             self.subnet_cidr = subnet_cidr
+        if vpcep_service_id is not None:
+            self.vpcep_service_id = vpcep_service_id
 
     @property
     def id(self):
@@ -701,6 +708,28 @@ class ShowInstanceResponse(SdkResponse):
         :type subnet_cidr: str
         """
         self._subnet_cidr = subnet_cidr
+
+    @property
+    def vpcep_service_id(self):
+        r"""Gets the vpcep_service_id of this ShowInstanceResponse.
+
+        实例对应的VPC终端节点服务ID
+
+        :return: The vpcep_service_id of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._vpcep_service_id
+
+    @vpcep_service_id.setter
+    def vpcep_service_id(self, vpcep_service_id):
+        r"""Sets the vpcep_service_id of this ShowInstanceResponse.
+
+        实例对应的VPC终端节点服务ID
+
+        :param vpcep_service_id: The vpcep_service_id of this ShowInstanceResponse.
+        :type vpcep_service_id: str
+        """
+        self._vpcep_service_id = vpcep_service_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

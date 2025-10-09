@@ -43,8 +43,10 @@ class NodePoolUpdate:
         self._spec = None
         self.discriminator = None
 
-        self.metadata = metadata
-        self.spec = spec
+        if metadata is not None:
+            self.metadata = metadata
+        if spec is not None:
+            self.spec = spec
 
     @property
     def metadata(self):

@@ -35,7 +35,7 @@ class ScaleNodePoolSpec:
 
         :param desired_node_count: 节点池期望节点数
         :type desired_node_count: int
-        :param scale_groups: 扩缩容的节点池，只能填一个伸缩组，如果要伸缩默认伸缩组填default
+        :param scale_groups: **参数解释**： 要扩缩容的节点池中的伸缩组名称[，通过[获取指定的节点池](cce_02_0355.xml)接口获取伸缩组名称](tag:hws) **约束限制**： 如果要伸缩默认伸缩组填\&quot;default\&quot; **取值范围**： 不涉及 **默认取值**： 不涉及
         :type scale_groups: list[str]
         :param options: 
         :type options: :class:`huaweicloudsdkcce.v3.ScaleNodePoolOptions`
@@ -79,7 +79,7 @@ class ScaleNodePoolSpec:
     def scale_groups(self):
         r"""Gets the scale_groups of this ScaleNodePoolSpec.
 
-        扩缩容的节点池，只能填一个伸缩组，如果要伸缩默认伸缩组填default
+        **参数解释**： 要扩缩容的节点池中的伸缩组名称[，通过[获取指定的节点池](cce_02_0355.xml)接口获取伸缩组名称](tag:hws) **约束限制**： 如果要伸缩默认伸缩组填\"default\" **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The scale_groups of this ScaleNodePoolSpec.
         :rtype: list[str]
@@ -90,7 +90,7 @@ class ScaleNodePoolSpec:
     def scale_groups(self, scale_groups):
         r"""Sets the scale_groups of this ScaleNodePoolSpec.
 
-        扩缩容的节点池，只能填一个伸缩组，如果要伸缩默认伸缩组填default
+        **参数解释**： 要扩缩容的节点池中的伸缩组名称[，通过[获取指定的节点池](cce_02_0355.xml)接口获取伸缩组名称](tag:hws) **约束限制**： 如果要伸缩默认伸缩组填\"default\" **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param scale_groups: The scale_groups of this ScaleNodePoolSpec.
         :type scale_groups: list[str]

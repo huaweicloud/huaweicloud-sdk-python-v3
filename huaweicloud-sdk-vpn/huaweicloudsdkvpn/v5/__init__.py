@@ -97,6 +97,8 @@ from huaweicloudsdkvpn.v5.model.delete_p2c_vgw_connection_request import DeleteP
 from huaweicloudsdkvpn.v5.model.delete_p2c_vgw_connection_response import DeleteP2cVgwConnectionResponse
 from huaweicloudsdkvpn.v5.model.delete_p2c_vgw_request import DeleteP2cVgwRequest
 from huaweicloudsdkvpn.v5.model.delete_p2c_vgw_response import DeleteP2cVgwResponse
+from huaweicloudsdkvpn.v5.model.delete_p2c_vpn_gateway_job_request import DeleteP2cVpnGatewayJobRequest
+from huaweicloudsdkvpn.v5.model.delete_p2c_vpn_gateway_job_response import DeleteP2cVpnGatewayJobResponse
 from huaweicloudsdkvpn.v5.model.delete_resources_tags_request_body import DeleteResourcesTagsRequestBody
 from huaweicloudsdkvpn.v5.model.delete_vgw_request import DeleteVgwRequest
 from huaweicloudsdkvpn.v5.model.delete_vgw_response import DeleteVgwResponse
@@ -106,6 +108,8 @@ from huaweicloudsdkvpn.v5.model.delete_vpn_connection_request import DeleteVpnCo
 from huaweicloudsdkvpn.v5.model.delete_vpn_connection_response import DeleteVpnConnectionResponse
 from huaweicloudsdkvpn.v5.model.delete_vpn_connections_log_config_request import DeleteVpnConnectionsLogConfigRequest
 from huaweicloudsdkvpn.v5.model.delete_vpn_connections_log_config_response import DeleteVpnConnectionsLogConfigResponse
+from huaweicloudsdkvpn.v5.model.delete_vpn_gateway_job_request import DeleteVpnGatewayJobRequest
+from huaweicloudsdkvpn.v5.model.delete_vpn_gateway_job_response import DeleteVpnGatewayJobResponse
 from huaweicloudsdkvpn.v5.model.delete_vpn_user_group_request import DeleteVpnUserGroupRequest
 from huaweicloudsdkvpn.v5.model.delete_vpn_user_group_response import DeleteVpnUserGroupResponse
 from huaweicloudsdkvpn.v5.model.delete_vpn_user_request import DeleteVpnUserRequest
@@ -123,6 +127,7 @@ from huaweicloudsdkvpn.v5.model.import_client_ca_request import ImportClientCaRe
 from huaweicloudsdkvpn.v5.model.import_client_ca_response import ImportClientCaResponse
 from huaweicloudsdkvpn.v5.model.invalid_vpn_user import InvalidVpnUser
 from huaweicloudsdkvpn.v5.model.ipsec_policy import IpsecPolicy
+from huaweicloudsdkvpn.v5.model.job import Job
 from huaweicloudsdkvpn.v5.model.list_availability_zones_request import ListAvailabilityZonesRequest
 from huaweicloudsdkvpn.v5.model.list_availability_zones_response import ListAvailabilityZonesResponse
 from huaweicloudsdkvpn.v5.model.list_cgws_request import ListCgwsRequest
@@ -137,6 +142,8 @@ from huaweicloudsdkvpn.v5.model.list_p2c_vgw_connections_request import ListP2cV
 from huaweicloudsdkvpn.v5.model.list_p2c_vgw_connections_response import ListP2cVgwConnectionsResponse
 from huaweicloudsdkvpn.v5.model.list_p2c_vgws_request import ListP2cVgwsRequest
 from huaweicloudsdkvpn.v5.model.list_p2c_vgws_response import ListP2cVgwsResponse
+from huaweicloudsdkvpn.v5.model.list_p2c_vpn_gateway_jobs_request import ListP2cVpnGatewayJobsRequest
+from huaweicloudsdkvpn.v5.model.list_p2c_vpn_gateway_jobs_response import ListP2cVpnGatewayJobsResponse
 from huaweicloudsdkvpn.v5.model.list_project_tags_request import ListProjectTagsRequest
 from huaweicloudsdkvpn.v5.model.list_project_tags_response import ListProjectTagsResponse
 from huaweicloudsdkvpn.v5.model.list_resources_by_tags_request import ListResourcesByTagsRequest
@@ -147,6 +154,8 @@ from huaweicloudsdkvpn.v5.model.list_vpn_access_policies_request import ListVpnA
 from huaweicloudsdkvpn.v5.model.list_vpn_access_policies_response import ListVpnAccessPoliciesResponse
 from huaweicloudsdkvpn.v5.model.list_vpn_connections_request import ListVpnConnectionsRequest
 from huaweicloudsdkvpn.v5.model.list_vpn_connections_response import ListVpnConnectionsResponse
+from huaweicloudsdkvpn.v5.model.list_vpn_gateway_jobs_request import ListVpnGatewayJobsRequest
+from huaweicloudsdkvpn.v5.model.list_vpn_gateway_jobs_response import ListVpnGatewayJobsResponse
 from huaweicloudsdkvpn.v5.model.list_vpn_servers_by_project_request import ListVpnServersByProjectRequest
 from huaweicloudsdkvpn.v5.model.list_vpn_servers_by_project_response import ListVpnServersByProjectResponse
 from huaweicloudsdkvpn.v5.model.list_vpn_servers_by_vgw_request import ListVpnServersByVgwRequest
@@ -218,6 +227,7 @@ from huaweicloudsdkvpn.v5.model.show_vpn_user_group_request import ShowVpnUserGr
 from huaweicloudsdkvpn.v5.model.show_vpn_user_group_response import ShowVpnUserGroupResponse
 from huaweicloudsdkvpn.v5.model.show_vpn_user_request import ShowVpnUserRequest
 from huaweicloudsdkvpn.v5.model.show_vpn_user_response import ShowVpnUserResponse
+from huaweicloudsdkvpn.v5.model.sub_job import SubJob
 from huaweicloudsdkvpn.v5.model.tag import Tag
 from huaweicloudsdkvpn.v5.model.update_cgw_request import UpdateCgwRequest
 from huaweicloudsdkvpn.v5.model.update_cgw_request_body import UpdateCgwRequestBody
@@ -280,6 +290,11 @@ from huaweicloudsdkvpn.v5.model.update_vpn_user_request import UpdateVpnUserRequ
 from huaweicloudsdkvpn.v5.model.update_vpn_user_request_body import UpdateVpnUserRequestBody
 from huaweicloudsdkvpn.v5.model.update_vpn_user_request_body_content import UpdateVpnUserRequestBodyContent
 from huaweicloudsdkvpn.v5.model.update_vpn_user_response import UpdateVpnUserResponse
+from huaweicloudsdkvpn.v5.model.upgrade_p2c_vpn_gateway_request import UpgradeP2cVpnGatewayRequest
+from huaweicloudsdkvpn.v5.model.upgrade_p2c_vpn_gateway_response import UpgradeP2cVpnGatewayResponse
+from huaweicloudsdkvpn.v5.model.upgrade_request_body import UpgradeRequestBody
+from huaweicloudsdkvpn.v5.model.upgrade_vpn_gateway_request import UpgradeVpnGatewayRequest
+from huaweicloudsdkvpn.v5.model.upgrade_vpn_gateway_response import UpgradeVpnGatewayResponse
 from huaweicloudsdkvpn.v5.model.vgw_ike_policy import VgwIkePolicy
 from huaweicloudsdkvpn.v5.model.vgw_ipsec_policy import VgwIpsecPolicy
 from huaweicloudsdkvpn.v5.model.vpn_access_policy import VpnAccessPolicy

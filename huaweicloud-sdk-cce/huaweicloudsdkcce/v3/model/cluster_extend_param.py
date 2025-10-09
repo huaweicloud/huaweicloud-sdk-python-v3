@@ -65,7 +65,7 @@ class ClusterExtendParam:
         :type enterprise_project_id: str
         :param kube_proxy_mode: 服务转发模式，支持以下两种实现：  - iptables：社区传统的kube-proxy模式，完全以iptables规则的方式来实现service负载均衡。该方式最主要的问题是在服务多的时候产生太多的iptables规则，非增量式更新会引入一定的时延，大规模情况下有明显的性能问题 - ipvs：主导开发并在社区获得广泛支持的kube-proxy模式，采用增量式更新，吞吐更高，速度更快，并可以保证service更新期间连接保持不断开，适用于大规模场景。  &gt; 此参数已废弃，若同时指定此参数和ClusterSpec下的kubeProxyMode，以ClusterSpec下的为准。 
         :type kube_proxy_mode: str
-        :param cluster_external_ip: master 弹性公网IP
+        :param cluster_external_ip: **参数解释：** 集群控制节点弹性公网IP，绑定后可以通过该弹性公网IP访问集群管控面API。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type cluster_external_ip: str
         :param alpha_cce_fix_pool_mask: 容器网络固定IP池掩码位数，仅vpc-router网络支持。  该参数决定节点可分配容器IP数量，与创建节点时设置的maxPods参数共同决定节点最多可以创建多少个Pod， 具体请参见[节点最多可以创建多少Pod](maxPods.xml)。   整数字符传取值范围: 24 ~ 28 
         :type alpha_cce_fix_pool_mask: str
@@ -85,7 +85,7 @@ class ClusterExtendParam:
         :type is_auto_renew: str
         :param is_auto_pay: 是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 &gt; billingMode为1时生效，不填写此参数时默认不会自动扣款。 
         :type is_auto_pay: str
-        :param upgradefrom: 记录集群通过何种升级方式升级到当前版本。 
+        :param upgradefrom: **参数解释：** 记录集群通过何种升级方式升级到当前版本。 **约束限制：** 仅查询接口返回该字段 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type upgradefrom: str
         """
         
@@ -231,7 +231,7 @@ class ClusterExtendParam:
     def cluster_external_ip(self):
         r"""Gets the cluster_external_ip of this ClusterExtendParam.
 
-        master 弹性公网IP
+        **参数解释：** 集群控制节点弹性公网IP，绑定后可以通过该弹性公网IP访问集群管控面API。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The cluster_external_ip of this ClusterExtendParam.
         :rtype: str
@@ -242,7 +242,7 @@ class ClusterExtendParam:
     def cluster_external_ip(self, cluster_external_ip):
         r"""Sets the cluster_external_ip of this ClusterExtendParam.
 
-        master 弹性公网IP
+        **参数解释：** 集群控制节点弹性公网IP，绑定后可以通过该弹性公网IP访问集群管控面API。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param cluster_external_ip: The cluster_external_ip of this ClusterExtendParam.
         :type cluster_external_ip: str
@@ -451,7 +451,7 @@ class ClusterExtendParam:
     def upgradefrom(self):
         r"""Gets the upgradefrom of this ClusterExtendParam.
 
-        记录集群通过何种升级方式升级到当前版本。 
+        **参数解释：** 记录集群通过何种升级方式升级到当前版本。 **约束限制：** 仅查询接口返回该字段 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The upgradefrom of this ClusterExtendParam.
         :rtype: str
@@ -462,7 +462,7 @@ class ClusterExtendParam:
     def upgradefrom(self, upgradefrom):
         r"""Sets the upgradefrom of this ClusterExtendParam.
 
-        记录集群通过何种升级方式升级到当前版本。 
+        **参数解释：** 记录集群通过何种升级方式升级到当前版本。 **约束限制：** 仅查询接口返回该字段 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param upgradefrom: The upgradefrom of this ClusterExtendParam.
         :type upgradefrom: str

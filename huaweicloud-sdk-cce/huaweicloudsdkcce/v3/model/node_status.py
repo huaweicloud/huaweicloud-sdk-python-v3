@@ -24,7 +24,8 @@ class NodeStatus:
         'private_ip': 'str',
         'private_i_pv6_ip': 'str',
         'public_ip': 'str',
-        'delete_status': 'DeleteStatus'
+        'delete_status': 'DeleteStatus',
+        'configuration_up_to_date': 'bool'
     }
 
     attribute_map = {
@@ -35,30 +36,33 @@ class NodeStatus:
         'private_ip': 'privateIP',
         'private_i_pv6_ip': 'privateIPv6IP',
         'public_ip': 'publicIP',
-        'delete_status': 'deleteStatus'
+        'delete_status': 'deleteStatus',
+        'configuration_up_to_date': 'configurationUpToDate'
     }
 
-    def __init__(self, phase=None, last_probe_time=None, job_id=None, server_id=None, private_ip=None, private_i_pv6_ip=None, public_ip=None, delete_status=None):
+    def __init__(self, phase=None, last_probe_time=None, job_id=None, server_id=None, private_ip=None, private_i_pv6_ip=None, public_ip=None, delete_status=None, configuration_up_to_date=None):
         r"""NodeStatus
 
         The model defined in huaweicloud sdk
 
-        :param phase: 节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：纳管中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：正常，表示节点处于正常状态。 - Abnormal：异常，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：故障，表示节点处于故障状态。
+        :param phase: **参数解释**： 节点状态 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 节点资源生命周期管理（如安装卸载等）状态和集群内K8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：安装中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：运行中，表示节点处于正常状态。 - Abnormal：不可用，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：错误，表示节点处于故障状态。
         :type phase: str
-        :param last_probe_time: 节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。
+        :param last_probe_time: **参数解释**： 节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
         :type last_probe_time: str
-        :param job_id: 创建或删除时的任务ID。
+        :param job_id: **参数解释**： 创建或删除时的任务ID。 **取值范围**： 不涉及
         :type job_id: str
-        :param server_id: 底层云服务器或裸金属节点ID。
+        :param server_id: **参数解释**： 底层云服务器或裸金属节点ID。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
         :type server_id: str
-        :param private_ip: 节点主网卡私有网段IP地址。
+        :param private_ip: **参数解释**： 节点主网卡私有网段IP地址。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
         :type private_ip: str
-        :param private_i_pv6_ip: 节点主网卡私有网段IPv6地址。
+        :param private_i_pv6_ip: **参数解释**： 节点主网卡私有网段IPv6地址。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
         :type private_i_pv6_ip: str
-        :param public_ip: 节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。
+        :param public_ip: **参数解释**： 节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
         :type public_ip: str
         :param delete_status: 
         :type delete_status: :class:`huaweicloudsdkcce.v3.DeleteStatus`
+        :param configuration_up_to_date: **参数解释**： 节点配置是否与所属节点池的节点模板最新配置一致。当更新节点池os或runtime后，该节点池中存量节点的os或runtime便与节点池存在差异，configurationUpToDate参数值即为false。重置节点后，存量节点的os和runtime与节点池配置保持一致，configurationUpToDate参数值即为true。 **约束限制**： 创建、更新节点接口返回中无该参数。 **取值范围**： 不涉及
+        :type configuration_up_to_date: bool
         """
         
         
@@ -71,6 +75,7 @@ class NodeStatus:
         self._private_i_pv6_ip = None
         self._public_ip = None
         self._delete_status = None
+        self._configuration_up_to_date = None
         self.discriminator = None
 
         if phase is not None:
@@ -89,12 +94,14 @@ class NodeStatus:
             self.public_ip = public_ip
         if delete_status is not None:
             self.delete_status = delete_status
+        if configuration_up_to_date is not None:
+            self.configuration_up_to_date = configuration_up_to_date
 
     @property
     def phase(self):
         r"""Gets the phase of this NodeStatus.
 
-        节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：纳管中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：正常，表示节点处于正常状态。 - Abnormal：异常，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：故障，表示节点处于故障状态。
+        **参数解释**： 节点状态 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 节点资源生命周期管理（如安装卸载等）状态和集群内K8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：安装中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：运行中，表示节点处于正常状态。 - Abnormal：不可用，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：错误，表示节点处于故障状态。
 
         :return: The phase of this NodeStatus.
         :rtype: str
@@ -105,7 +112,7 @@ class NodeStatus:
     def phase(self, phase):
         r"""Sets the phase of this NodeStatus.
 
-        节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：纳管中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：正常，表示节点处于正常状态。 - Abnormal：异常，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：故障，表示节点处于故障状态。
+        **参数解释**： 节点状态 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 节点资源生命周期管理（如安装卸载等）状态和集群内K8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：安装中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：运行中，表示节点处于正常状态。 - Abnormal：不可用，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：错误，表示节点处于故障状态。
 
         :param phase: The phase of this NodeStatus.
         :type phase: str
@@ -116,7 +123,7 @@ class NodeStatus:
     def last_probe_time(self):
         r"""Gets the last_probe_time of this NodeStatus.
 
-        节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。
+        **参数解释**： 节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
 
         :return: The last_probe_time of this NodeStatus.
         :rtype: str
@@ -127,7 +134,7 @@ class NodeStatus:
     def last_probe_time(self, last_probe_time):
         r"""Sets the last_probe_time of this NodeStatus.
 
-        节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。
+        **参数解释**： 节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
 
         :param last_probe_time: The last_probe_time of this NodeStatus.
         :type last_probe_time: str
@@ -138,7 +145,7 @@ class NodeStatus:
     def job_id(self):
         r"""Gets the job_id of this NodeStatus.
 
-        创建或删除时的任务ID。
+        **参数解释**： 创建或删除时的任务ID。 **取值范围**： 不涉及
 
         :return: The job_id of this NodeStatus.
         :rtype: str
@@ -149,7 +156,7 @@ class NodeStatus:
     def job_id(self, job_id):
         r"""Sets the job_id of this NodeStatus.
 
-        创建或删除时的任务ID。
+        **参数解释**： 创建或删除时的任务ID。 **取值范围**： 不涉及
 
         :param job_id: The job_id of this NodeStatus.
         :type job_id: str
@@ -160,7 +167,7 @@ class NodeStatus:
     def server_id(self):
         r"""Gets the server_id of this NodeStatus.
 
-        底层云服务器或裸金属节点ID。
+        **参数解释**： 底层云服务器或裸金属节点ID。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
 
         :return: The server_id of this NodeStatus.
         :rtype: str
@@ -171,7 +178,7 @@ class NodeStatus:
     def server_id(self, server_id):
         r"""Sets the server_id of this NodeStatus.
 
-        底层云服务器或裸金属节点ID。
+        **参数解释**： 底层云服务器或裸金属节点ID。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
 
         :param server_id: The server_id of this NodeStatus.
         :type server_id: str
@@ -182,7 +189,7 @@ class NodeStatus:
     def private_ip(self):
         r"""Gets the private_ip of this NodeStatus.
 
-        节点主网卡私有网段IP地址。
+        **参数解释**： 节点主网卡私有网段IP地址。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
 
         :return: The private_ip of this NodeStatus.
         :rtype: str
@@ -193,7 +200,7 @@ class NodeStatus:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this NodeStatus.
 
-        节点主网卡私有网段IP地址。
+        **参数解释**： 节点主网卡私有网段IP地址。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
 
         :param private_ip: The private_ip of this NodeStatus.
         :type private_ip: str
@@ -204,7 +211,7 @@ class NodeStatus:
     def private_i_pv6_ip(self):
         r"""Gets the private_i_pv6_ip of this NodeStatus.
 
-        节点主网卡私有网段IPv6地址。
+        **参数解释**： 节点主网卡私有网段IPv6地址。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
 
         :return: The private_i_pv6_ip of this NodeStatus.
         :rtype: str
@@ -215,7 +222,7 @@ class NodeStatus:
     def private_i_pv6_ip(self, private_i_pv6_ip):
         r"""Sets the private_i_pv6_ip of this NodeStatus.
 
-        节点主网卡私有网段IPv6地址。
+        **参数解释**： 节点主网卡私有网段IPv6地址。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
 
         :param private_i_pv6_ip: The private_i_pv6_ip of this NodeStatus.
         :type private_i_pv6_ip: str
@@ -226,7 +233,7 @@ class NodeStatus:
     def public_ip(self):
         r"""Gets the public_ip of this NodeStatus.
 
-        节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。
+        **参数解释**： 节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
 
         :return: The public_ip of this NodeStatus.
         :rtype: str
@@ -237,7 +244,7 @@ class NodeStatus:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this NodeStatus.
 
-        节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。
+        **参数解释**： 节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。 **约束限制**： 创建节点接口返回中无该参数。 **取值范围**： 不涉及
 
         :param public_ip: The public_ip of this NodeStatus.
         :type public_ip: str
@@ -261,6 +268,28 @@ class NodeStatus:
         :type delete_status: :class:`huaweicloudsdkcce.v3.DeleteStatus`
         """
         self._delete_status = delete_status
+
+    @property
+    def configuration_up_to_date(self):
+        r"""Gets the configuration_up_to_date of this NodeStatus.
+
+        **参数解释**： 节点配置是否与所属节点池的节点模板最新配置一致。当更新节点池os或runtime后，该节点池中存量节点的os或runtime便与节点池存在差异，configurationUpToDate参数值即为false。重置节点后，存量节点的os和runtime与节点池配置保持一致，configurationUpToDate参数值即为true。 **约束限制**： 创建、更新节点接口返回中无该参数。 **取值范围**： 不涉及
+
+        :return: The configuration_up_to_date of this NodeStatus.
+        :rtype: bool
+        """
+        return self._configuration_up_to_date
+
+    @configuration_up_to_date.setter
+    def configuration_up_to_date(self, configuration_up_to_date):
+        r"""Sets the configuration_up_to_date of this NodeStatus.
+
+        **参数解释**： 节点配置是否与所属节点池的节点模板最新配置一致。当更新节点池os或runtime后，该节点池中存量节点的os或runtime便与节点池存在差异，configurationUpToDate参数值即为false。重置节点后，存量节点的os和runtime与节点池配置保持一致，configurationUpToDate参数值即为true。 **约束限制**： 创建、更新节点接口返回中无该参数。 **取值范围**： 不涉及
+
+        :param configuration_up_to_date: The configuration_up_to_date of this NodeStatus.
+        :type configuration_up_to_date: bool
+        """
+        self._configuration_up_to_date = configuration_up_to_date
 
     def to_dict(self):
         """Returns the model properties as a dict"""

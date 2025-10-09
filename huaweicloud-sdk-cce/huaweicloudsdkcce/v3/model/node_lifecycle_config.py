@@ -18,41 +18,48 @@ class NodeLifecycleConfig:
 
     openapi_types = {
         'pre_install': 'str',
-        'post_install': 'str'
+        'post_install': 'str',
+        'wait_post_install_finish': 'bool'
     }
 
     attribute_map = {
         'pre_install': 'preInstall',
-        'post_install': 'postInstall'
+        'post_install': 'postInstall',
+        'wait_post_install_finish': 'waitPostInstallFinish'
     }
 
-    def __init__(self, pre_install=None, post_install=None):
+    def __init__(self, pre_install=None, post_install=None, wait_post_install_finish=None):
         r"""NodeLifecycleConfig
 
         The model defined in huaweicloud sdk
 
-        :param pre_install: 安装前执行脚本 &gt; 输入的值需要经过Base64编码，方法为echo -n \&quot;待编码内容\&quot; | base64。 
+        :param pre_install: **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： &#x60;&#x60;&#x60; echo -n \&quot;待编码内容\&quot; | base64 &#x60;&#x60;&#x60;  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type pre_install: str
-        :param post_install: 安装后执行脚本 &gt; 输入的值需要经过Base64编码，方法为echo -n \&quot;待编码内容\&quot; | base64。 
+        :param post_install: **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： &#x60;&#x60;&#x60; echo -n \&quot;待编码内容\&quot; | base64 &#x60;&#x60;&#x60;  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type post_install: str
+        :param wait_post_install_finish: **参数解释：** 该参数用于控制重置/纳管/批量重置节点时， **post-install脚本执行完成前允许节点调度** 的行为。当操作的节点属于节点池时，以节点池相关配置为准。当该参数未设置或者为false时，在kubernetes节点就绪时，容器即可被调度到可用节点。当该参数为true时，在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **约束限制：** 不涉及  **取值范围：** - false：在kubernetes节点就绪时，容器即可被调度到可用节点。           - true：在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **默认取值：** false
+        :type wait_post_install_finish: bool
         """
         
         
 
         self._pre_install = None
         self._post_install = None
+        self._wait_post_install_finish = None
         self.discriminator = None
 
         if pre_install is not None:
             self.pre_install = pre_install
         if post_install is not None:
             self.post_install = post_install
+        if wait_post_install_finish is not None:
+            self.wait_post_install_finish = wait_post_install_finish
 
     @property
     def pre_install(self):
         r"""Gets the pre_install of this NodeLifecycleConfig.
 
-        安装前执行脚本 > 输入的值需要经过Base64编码，方法为echo -n \"待编码内容\" | base64。 
+        **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： ``` echo -n \"待编码内容\" | base64 ```  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The pre_install of this NodeLifecycleConfig.
         :rtype: str
@@ -63,7 +70,7 @@ class NodeLifecycleConfig:
     def pre_install(self, pre_install):
         r"""Sets the pre_install of this NodeLifecycleConfig.
 
-        安装前执行脚本 > 输入的值需要经过Base64编码，方法为echo -n \"待编码内容\" | base64。 
+        **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： ``` echo -n \"待编码内容\" | base64 ```  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param pre_install: The pre_install of this NodeLifecycleConfig.
         :type pre_install: str
@@ -74,7 +81,7 @@ class NodeLifecycleConfig:
     def post_install(self):
         r"""Gets the post_install of this NodeLifecycleConfig.
 
-        安装后执行脚本 > 输入的值需要经过Base64编码，方法为echo -n \"待编码内容\" | base64。 
+        **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： ``` echo -n \"待编码内容\" | base64 ```  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The post_install of this NodeLifecycleConfig.
         :rtype: str
@@ -85,12 +92,34 @@ class NodeLifecycleConfig:
     def post_install(self, post_install):
         r"""Sets the post_install of this NodeLifecycleConfig.
 
-        安装后执行脚本 > 输入的值需要经过Base64编码，方法为echo -n \"待编码内容\" | base64。 
+        **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： ``` echo -n \"待编码内容\" | base64 ```  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param post_install: The post_install of this NodeLifecycleConfig.
         :type post_install: str
         """
         self._post_install = post_install
+
+    @property
+    def wait_post_install_finish(self):
+        r"""Gets the wait_post_install_finish of this NodeLifecycleConfig.
+
+        **参数解释：** 该参数用于控制重置/纳管/批量重置节点时， **post-install脚本执行完成前允许节点调度** 的行为。当操作的节点属于节点池时，以节点池相关配置为准。当该参数未设置或者为false时，在kubernetes节点就绪时，容器即可被调度到可用节点。当该参数为true时，在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **约束限制：** 不涉及  **取值范围：** - false：在kubernetes节点就绪时，容器即可被调度到可用节点。           - true：在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **默认取值：** false
+
+        :return: The wait_post_install_finish of this NodeLifecycleConfig.
+        :rtype: bool
+        """
+        return self._wait_post_install_finish
+
+    @wait_post_install_finish.setter
+    def wait_post_install_finish(self, wait_post_install_finish):
+        r"""Sets the wait_post_install_finish of this NodeLifecycleConfig.
+
+        **参数解释：** 该参数用于控制重置/纳管/批量重置节点时， **post-install脚本执行完成前允许节点调度** 的行为。当操作的节点属于节点池时，以节点池相关配置为准。当该参数未设置或者为false时，在kubernetes节点就绪时，容器即可被调度到可用节点。当该参数为true时，在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **约束限制：** 不涉及  **取值范围：** - false：在kubernetes节点就绪时，容器即可被调度到可用节点。           - true：在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **默认取值：** false
+
+        :param wait_post_install_finish: The wait_post_install_finish of this NodeLifecycleConfig.
+        :type wait_post_install_finish: bool
+        """
+        self._wait_post_install_finish = wait_post_install_finish
 
     def to_dict(self):
         """Returns the model properties as a dict"""

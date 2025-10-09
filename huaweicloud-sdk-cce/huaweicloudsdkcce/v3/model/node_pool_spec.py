@@ -18,13 +18,16 @@ class NodePoolSpec:
 
     openapi_types = {
         'type': 'str',
-        'node_template': 'NodeSpec',
+        'node_template': 'NodeTemplate',
         'initial_node_count': 'int',
         'autoscaling': 'NodePoolNodeAutoscaling',
         'node_management': 'NodeManagement',
         'pod_security_groups': 'list[SecurityID]',
         'extension_scale_groups': 'list[ExtensionScaleGroup]',
-        'custom_security_groups': 'list[str]'
+        'custom_security_groups': 'list[str]',
+        'taint_policy_on_existing_nodes': 'str',
+        'label_policy_on_existing_nodes': 'str',
+        'user_tags_policy_on_existing_nodes': 'str'
     }
 
     attribute_map = {
@@ -35,10 +38,13 @@ class NodePoolSpec:
         'node_management': 'nodeManagement',
         'pod_security_groups': 'podSecurityGroups',
         'extension_scale_groups': 'extensionScaleGroups',
-        'custom_security_groups': 'customSecurityGroups'
+        'custom_security_groups': 'customSecurityGroups',
+        'taint_policy_on_existing_nodes': 'taintPolicyOnExistingNodes',
+        'label_policy_on_existing_nodes': 'labelPolicyOnExistingNodes',
+        'user_tags_policy_on_existing_nodes': 'userTagsPolicyOnExistingNodes'
     }
 
-    def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, node_management=None, pod_security_groups=None, extension_scale_groups=None, custom_security_groups=None):
+    def __init__(self, type=None, node_template=None, initial_node_count=None, autoscaling=None, node_management=None, pod_security_groups=None, extension_scale_groups=None, custom_security_groups=None, taint_policy_on_existing_nodes=None, label_policy_on_existing_nodes=None, user_tags_policy_on_existing_nodes=None):
         r"""NodePoolSpec
 
         The model defined in huaweicloud sdk
@@ -46,7 +52,7 @@ class NodePoolSpec:
         :param type: 节点池类型。不填写时默认为vm。  - vm：弹性云服务器 - ElasticBMS：C6型弹性裸金属通用计算增强型云服务器，规格示例：c6.22xlarge.2.physical - pm: 裸金属服务器 
         :type type: str
         :param node_template: 
-        :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpec`
+        :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplate`
         :param initial_node_count: 节点池初始化节点个数。查询时为节点池目标节点数量。
         :type initial_node_count: int
         :param autoscaling: 
@@ -59,6 +65,12 @@ class NodePoolSpec:
         :type extension_scale_groups: list[:class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`]
         :param custom_security_groups: 节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
         :type custom_security_groups: list[str]
+        :param taint_policy_on_existing_nodes: **参数解释**： 存量节点污点同步策略 **约束限制**： 不涉及 **取值范围**： - ignore：配置为\&quot;ignore\&quot;后，节点池不再同步更新存量节点的污点。 - refresh：配置为\&quot;refresh\&quot;后，节点池将同步更新存量节点的污点。  **默认取值**： refresh
+        :type taint_policy_on_existing_nodes: str
+        :param label_policy_on_existing_nodes: **参数解释**： 存量节点标签同步策略 **约束限制**： 不涉及 **取值范围**： - ignore：配置为\&quot;ignore\&quot;后，节点池不再同步更新存量节点的标签。 - refresh：配置为\&quot;refresh\&quot;后，节点池将同步更新存量节点的标签。  **默认取值**： refresh
+        :type label_policy_on_existing_nodes: str
+        :param user_tags_policy_on_existing_nodes: **参数解释**： 存量节点资源标签同步策略 **约束限制**： 不涉及 **取值范围**： - ignore：配置为\&quot;ignore\&quot;后，节点池不再同步更新存量节点的资源标签。 - refresh：配置为\&quot;refresh\&quot;后，节点池将同步更新存量节点的资源标签。  **默认取值**： ignore
+        :type user_tags_policy_on_existing_nodes: str
         """
         
         
@@ -71,6 +83,9 @@ class NodePoolSpec:
         self._pod_security_groups = None
         self._extension_scale_groups = None
         self._custom_security_groups = None
+        self._taint_policy_on_existing_nodes = None
+        self._label_policy_on_existing_nodes = None
+        self._user_tags_policy_on_existing_nodes = None
         self.discriminator = None
 
         if type is not None:
@@ -88,6 +103,12 @@ class NodePoolSpec:
             self.extension_scale_groups = extension_scale_groups
         if custom_security_groups is not None:
             self.custom_security_groups = custom_security_groups
+        if taint_policy_on_existing_nodes is not None:
+            self.taint_policy_on_existing_nodes = taint_policy_on_existing_nodes
+        if label_policy_on_existing_nodes is not None:
+            self.label_policy_on_existing_nodes = label_policy_on_existing_nodes
+        if user_tags_policy_on_existing_nodes is not None:
+            self.user_tags_policy_on_existing_nodes = user_tags_policy_on_existing_nodes
 
     @property
     def type(self):
@@ -116,7 +137,7 @@ class NodePoolSpec:
         r"""Gets the node_template of this NodePoolSpec.
 
         :return: The node_template of this NodePoolSpec.
-        :rtype: :class:`huaweicloudsdkcce.v3.NodeSpec`
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplate`
         """
         return self._node_template
 
@@ -125,7 +146,7 @@ class NodePoolSpec:
         r"""Sets the node_template of this NodePoolSpec.
 
         :param node_template: The node_template of this NodePoolSpec.
-        :type node_template: :class:`huaweicloudsdkcce.v3.NodeSpec`
+        :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplate`
         """
         self._node_template = node_template
 
@@ -252,6 +273,72 @@ class NodePoolSpec:
         :type custom_security_groups: list[str]
         """
         self._custom_security_groups = custom_security_groups
+
+    @property
+    def taint_policy_on_existing_nodes(self):
+        r"""Gets the taint_policy_on_existing_nodes of this NodePoolSpec.
+
+        **参数解释**： 存量节点污点同步策略 **约束限制**： 不涉及 **取值范围**： - ignore：配置为\"ignore\"后，节点池不再同步更新存量节点的污点。 - refresh：配置为\"refresh\"后，节点池将同步更新存量节点的污点。  **默认取值**： refresh
+
+        :return: The taint_policy_on_existing_nodes of this NodePoolSpec.
+        :rtype: str
+        """
+        return self._taint_policy_on_existing_nodes
+
+    @taint_policy_on_existing_nodes.setter
+    def taint_policy_on_existing_nodes(self, taint_policy_on_existing_nodes):
+        r"""Sets the taint_policy_on_existing_nodes of this NodePoolSpec.
+
+        **参数解释**： 存量节点污点同步策略 **约束限制**： 不涉及 **取值范围**： - ignore：配置为\"ignore\"后，节点池不再同步更新存量节点的污点。 - refresh：配置为\"refresh\"后，节点池将同步更新存量节点的污点。  **默认取值**： refresh
+
+        :param taint_policy_on_existing_nodes: The taint_policy_on_existing_nodes of this NodePoolSpec.
+        :type taint_policy_on_existing_nodes: str
+        """
+        self._taint_policy_on_existing_nodes = taint_policy_on_existing_nodes
+
+    @property
+    def label_policy_on_existing_nodes(self):
+        r"""Gets the label_policy_on_existing_nodes of this NodePoolSpec.
+
+        **参数解释**： 存量节点标签同步策略 **约束限制**： 不涉及 **取值范围**： - ignore：配置为\"ignore\"后，节点池不再同步更新存量节点的标签。 - refresh：配置为\"refresh\"后，节点池将同步更新存量节点的标签。  **默认取值**： refresh
+
+        :return: The label_policy_on_existing_nodes of this NodePoolSpec.
+        :rtype: str
+        """
+        return self._label_policy_on_existing_nodes
+
+    @label_policy_on_existing_nodes.setter
+    def label_policy_on_existing_nodes(self, label_policy_on_existing_nodes):
+        r"""Sets the label_policy_on_existing_nodes of this NodePoolSpec.
+
+        **参数解释**： 存量节点标签同步策略 **约束限制**： 不涉及 **取值范围**： - ignore：配置为\"ignore\"后，节点池不再同步更新存量节点的标签。 - refresh：配置为\"refresh\"后，节点池将同步更新存量节点的标签。  **默认取值**： refresh
+
+        :param label_policy_on_existing_nodes: The label_policy_on_existing_nodes of this NodePoolSpec.
+        :type label_policy_on_existing_nodes: str
+        """
+        self._label_policy_on_existing_nodes = label_policy_on_existing_nodes
+
+    @property
+    def user_tags_policy_on_existing_nodes(self):
+        r"""Gets the user_tags_policy_on_existing_nodes of this NodePoolSpec.
+
+        **参数解释**： 存量节点资源标签同步策略 **约束限制**： 不涉及 **取值范围**： - ignore：配置为\"ignore\"后，节点池不再同步更新存量节点的资源标签。 - refresh：配置为\"refresh\"后，节点池将同步更新存量节点的资源标签。  **默认取值**： ignore
+
+        :return: The user_tags_policy_on_existing_nodes of this NodePoolSpec.
+        :rtype: str
+        """
+        return self._user_tags_policy_on_existing_nodes
+
+    @user_tags_policy_on_existing_nodes.setter
+    def user_tags_policy_on_existing_nodes(self, user_tags_policy_on_existing_nodes):
+        r"""Sets the user_tags_policy_on_existing_nodes of this NodePoolSpec.
+
+        **参数解释**： 存量节点资源标签同步策略 **约束限制**： 不涉及 **取值范围**： - ignore：配置为\"ignore\"后，节点池不再同步更新存量节点的资源标签。 - refresh：配置为\"refresh\"后，节点池将同步更新存量节点的资源标签。  **默认取值**： ignore
+
+        :param user_tags_policy_on_existing_nodes: The user_tags_policy_on_existing_nodes of this NodePoolSpec.
+        :type user_tags_policy_on_existing_nodes: str
+        """
+        self._user_tags_policy_on_existing_nodes = user_tags_policy_on_existing_nodes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

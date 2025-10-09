@@ -25,16 +25,12 @@ class ListSnapshotBackupsResp:
         'cluster_name': 'str',
         'name': 'str',
         'status': 'str',
-        'updated': 'str',
         'backup_type': 'str',
         'backup_method': 'str',
-        'backup_expected_start_time': 'str',
-        'backup_keep_day': 'int',
-        'backup_period': 'str',
+        'backup_frequency': 'str',
         'indices': 'str',
         'total_shards': 'int',
         'failed_shards': 'int',
-        'version': 'str',
         'restore_status': 'str',
         'start_time': 'int',
         'end_time': 'int',
@@ -50,23 +46,19 @@ class ListSnapshotBackupsResp:
         'cluster_name': 'clusterName',
         'name': 'name',
         'status': 'status',
-        'updated': 'updated',
         'backup_type': 'backupType',
         'backup_method': 'backupMethod',
-        'backup_expected_start_time': 'backupExpectedStartTime',
-        'backup_keep_day': 'backupKeepDay',
-        'backup_period': 'backupPeriod',
+        'backup_frequency': 'backupFrequency',
         'indices': 'indices',
         'total_shards': 'totalShards',
         'failed_shards': 'failedShards',
-        'version': 'version',
         'restore_status': 'restoreStatus',
         'start_time': 'startTime',
         'end_time': 'endTime',
         'bucket_name': 'bucketName'
     }
 
-    def __init__(self, created=None, datastore=None, description=None, id=None, cluster_id=None, cluster_name=None, name=None, status=None, updated=None, backup_type=None, backup_method=None, backup_expected_start_time=None, backup_keep_day=None, backup_period=None, indices=None, total_shards=None, failed_shards=None, version=None, restore_status=None, start_time=None, end_time=None, bucket_name=None):
+    def __init__(self, created=None, datastore=None, description=None, id=None, cluster_id=None, cluster_name=None, name=None, status=None, backup_type=None, backup_method=None, backup_frequency=None, indices=None, total_shards=None, failed_shards=None, restore_status=None, start_time=None, end_time=None, bucket_name=None):
         r"""ListSnapshotBackupsResp
 
         The model defined in huaweicloud sdk
@@ -87,26 +79,18 @@ class ListSnapshotBackupsResp:
         :type name: str
         :param status: 快照状态。
         :type status: str
-        :param updated: 快照更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
-        :type updated: str
         :param backup_type: 快照创建类型： - 0：表示自动创建。 - 1：表示手动创建。
         :type backup_type: str
         :param backup_method: 创建快照方式。
         :type backup_method: str
-        :param backup_expected_start_time: 快照开始执行时间。
-        :type backup_expected_start_time: str
-        :param backup_keep_day: 快照保留时间。
-        :type backup_keep_day: int
-        :param backup_period: 快照每天执行的时间点。
-        :type backup_period: str
+        :param backup_frequency: 集群快照频率。
+        :type backup_frequency: str
         :param indices: 要备份的索引。
         :type indices: str
         :param total_shards: 要备份的索引的总shard数。
         :type total_shards: int
         :param failed_shards: 备份失败的shard数。
         :type failed_shards: int
-        :param version: 快照的版本。
-        :type version: str
         :param restore_status: 快照恢复的状态。
         :type restore_status: str
         :param start_time: 快照开始执行的时间戳。
@@ -127,16 +111,12 @@ class ListSnapshotBackupsResp:
         self._cluster_name = None
         self._name = None
         self._status = None
-        self._updated = None
         self._backup_type = None
         self._backup_method = None
-        self._backup_expected_start_time = None
-        self._backup_keep_day = None
-        self._backup_period = None
+        self._backup_frequency = None
         self._indices = None
         self._total_shards = None
         self._failed_shards = None
-        self._version = None
         self._restore_status = None
         self._start_time = None
         self._end_time = None
@@ -159,26 +139,18 @@ class ListSnapshotBackupsResp:
             self.name = name
         if status is not None:
             self.status = status
-        if updated is not None:
-            self.updated = updated
         if backup_type is not None:
             self.backup_type = backup_type
         if backup_method is not None:
             self.backup_method = backup_method
-        if backup_expected_start_time is not None:
-            self.backup_expected_start_time = backup_expected_start_time
-        if backup_keep_day is not None:
-            self.backup_keep_day = backup_keep_day
-        if backup_period is not None:
-            self.backup_period = backup_period
+        if backup_frequency is not None:
+            self.backup_frequency = backup_frequency
         if indices is not None:
             self.indices = indices
         if total_shards is not None:
             self.total_shards = total_shards
         if failed_shards is not None:
             self.failed_shards = failed_shards
-        if version is not None:
-            self.version = version
         if restore_status is not None:
             self.restore_status = restore_status
         if start_time is not None:
@@ -361,28 +333,6 @@ class ListSnapshotBackupsResp:
         self._status = status
 
     @property
-    def updated(self):
-        r"""Gets the updated of this ListSnapshotBackupsResp.
-
-        快照更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
-
-        :return: The updated of this ListSnapshotBackupsResp.
-        :rtype: str
-        """
-        return self._updated
-
-    @updated.setter
-    def updated(self, updated):
-        r"""Sets the updated of this ListSnapshotBackupsResp.
-
-        快照更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
-
-        :param updated: The updated of this ListSnapshotBackupsResp.
-        :type updated: str
-        """
-        self._updated = updated
-
-    @property
     def backup_type(self):
         r"""Gets the backup_type of this ListSnapshotBackupsResp.
 
@@ -427,70 +377,26 @@ class ListSnapshotBackupsResp:
         self._backup_method = backup_method
 
     @property
-    def backup_expected_start_time(self):
-        r"""Gets the backup_expected_start_time of this ListSnapshotBackupsResp.
+    def backup_frequency(self):
+        r"""Gets the backup_frequency of this ListSnapshotBackupsResp.
 
-        快照开始执行时间。
+        集群快照频率。
 
-        :return: The backup_expected_start_time of this ListSnapshotBackupsResp.
+        :return: The backup_frequency of this ListSnapshotBackupsResp.
         :rtype: str
         """
-        return self._backup_expected_start_time
+        return self._backup_frequency
 
-    @backup_expected_start_time.setter
-    def backup_expected_start_time(self, backup_expected_start_time):
-        r"""Sets the backup_expected_start_time of this ListSnapshotBackupsResp.
+    @backup_frequency.setter
+    def backup_frequency(self, backup_frequency):
+        r"""Sets the backup_frequency of this ListSnapshotBackupsResp.
 
-        快照开始执行时间。
+        集群快照频率。
 
-        :param backup_expected_start_time: The backup_expected_start_time of this ListSnapshotBackupsResp.
-        :type backup_expected_start_time: str
+        :param backup_frequency: The backup_frequency of this ListSnapshotBackupsResp.
+        :type backup_frequency: str
         """
-        self._backup_expected_start_time = backup_expected_start_time
-
-    @property
-    def backup_keep_day(self):
-        r"""Gets the backup_keep_day of this ListSnapshotBackupsResp.
-
-        快照保留时间。
-
-        :return: The backup_keep_day of this ListSnapshotBackupsResp.
-        :rtype: int
-        """
-        return self._backup_keep_day
-
-    @backup_keep_day.setter
-    def backup_keep_day(self, backup_keep_day):
-        r"""Sets the backup_keep_day of this ListSnapshotBackupsResp.
-
-        快照保留时间。
-
-        :param backup_keep_day: The backup_keep_day of this ListSnapshotBackupsResp.
-        :type backup_keep_day: int
-        """
-        self._backup_keep_day = backup_keep_day
-
-    @property
-    def backup_period(self):
-        r"""Gets the backup_period of this ListSnapshotBackupsResp.
-
-        快照每天执行的时间点。
-
-        :return: The backup_period of this ListSnapshotBackupsResp.
-        :rtype: str
-        """
-        return self._backup_period
-
-    @backup_period.setter
-    def backup_period(self, backup_period):
-        r"""Sets the backup_period of this ListSnapshotBackupsResp.
-
-        快照每天执行的时间点。
-
-        :param backup_period: The backup_period of this ListSnapshotBackupsResp.
-        :type backup_period: str
-        """
-        self._backup_period = backup_period
+        self._backup_frequency = backup_frequency
 
     @property
     def indices(self):
@@ -557,28 +463,6 @@ class ListSnapshotBackupsResp:
         :type failed_shards: int
         """
         self._failed_shards = failed_shards
-
-    @property
-    def version(self):
-        r"""Gets the version of this ListSnapshotBackupsResp.
-
-        快照的版本。
-
-        :return: The version of this ListSnapshotBackupsResp.
-        :rtype: str
-        """
-        return self._version
-
-    @version.setter
-    def version(self, version):
-        r"""Sets the version of this ListSnapshotBackupsResp.
-
-        快照的版本。
-
-        :param version: The version of this ListSnapshotBackupsResp.
-        :type version: str
-        """
-        self._version = version
 
     @property
     def restore_status(self):

@@ -18,21 +18,25 @@ class ScaleNodePoolOptions:
 
     openapi_types = {
         'scalable_checking': 'str',
+        'scale_policy': 'str',
         'billing_config_override': 'ScaleUpBillingConfigOverride'
     }
 
     attribute_map = {
         'scalable_checking': 'scalableChecking',
+        'scale_policy': 'scalePolicy',
         'billing_config_override': 'billingConfigOverride'
     }
 
-    def __init__(self, scalable_checking=None, billing_config_override=None):
+    def __init__(self, scalable_checking=None, scale_policy=None, billing_config_override=None):
         r"""ScaleNodePoolOptions
 
         The model defined in huaweicloud sdk
 
         :param scalable_checking: 扩容状态检查策略: instant(同步检查), async(异步检查)。默认同步检查instant 
         :type scalable_checking: str
+        :param scale_policy: **参数解释**： 扩容的策略，允许为空，该参数scaleGroups传多项时有效。 **约束限制**： 不涉及 **取值范围**： - AZBalance：AZ优先策略，扩容节点池时，系统会使各个AZ间的节点数尽可能的均衡，规格会在所选伸缩组中随机指定。该策略适用于对节点成本和可用区无特殊要求的场景，优点是配置简便、降低单点故障风险。注意：如果某个AZ资源不足，该AZ期望的扩容节点会向其他AZ扩容，可能会使AZ间节点不均衡。如需解决该问题，可在该AZ资源充足时尝试再次扩容。 - Random：随机策略，从下发的规格scaleGroups列表中随机选择伸缩组扩容。  **默认取值**： Random 
+        :type scale_policy: str
         :param billing_config_override: 
         :type billing_config_override: :class:`huaweicloudsdkcce.v3.ScaleUpBillingConfigOverride`
         """
@@ -40,11 +44,14 @@ class ScaleNodePoolOptions:
         
 
         self._scalable_checking = None
+        self._scale_policy = None
         self._billing_config_override = None
         self.discriminator = None
 
         if scalable_checking is not None:
             self.scalable_checking = scalable_checking
+        if scale_policy is not None:
+            self.scale_policy = scale_policy
         if billing_config_override is not None:
             self.billing_config_override = billing_config_override
 
@@ -69,6 +76,28 @@ class ScaleNodePoolOptions:
         :type scalable_checking: str
         """
         self._scalable_checking = scalable_checking
+
+    @property
+    def scale_policy(self):
+        r"""Gets the scale_policy of this ScaleNodePoolOptions.
+
+        **参数解释**： 扩容的策略，允许为空，该参数scaleGroups传多项时有效。 **约束限制**： 不涉及 **取值范围**： - AZBalance：AZ优先策略，扩容节点池时，系统会使各个AZ间的节点数尽可能的均衡，规格会在所选伸缩组中随机指定。该策略适用于对节点成本和可用区无特殊要求的场景，优点是配置简便、降低单点故障风险。注意：如果某个AZ资源不足，该AZ期望的扩容节点会向其他AZ扩容，可能会使AZ间节点不均衡。如需解决该问题，可在该AZ资源充足时尝试再次扩容。 - Random：随机策略，从下发的规格scaleGroups列表中随机选择伸缩组扩容。  **默认取值**： Random 
+
+        :return: The scale_policy of this ScaleNodePoolOptions.
+        :rtype: str
+        """
+        return self._scale_policy
+
+    @scale_policy.setter
+    def scale_policy(self, scale_policy):
+        r"""Sets the scale_policy of this ScaleNodePoolOptions.
+
+        **参数解释**： 扩容的策略，允许为空，该参数scaleGroups传多项时有效。 **约束限制**： 不涉及 **取值范围**： - AZBalance：AZ优先策略，扩容节点池时，系统会使各个AZ间的节点数尽可能的均衡，规格会在所选伸缩组中随机指定。该策略适用于对节点成本和可用区无特殊要求的场景，优点是配置简便、降低单点故障风险。注意：如果某个AZ资源不足，该AZ期望的扩容节点会向其他AZ扩容，可能会使AZ间节点不均衡。如需解决该问题，可在该AZ资源充足时尝试再次扩容。 - Random：随机策略，从下发的规格scaleGroups列表中随机选择伸缩组扩容。  **默认取值**： Random 
+
+        :param scale_policy: The scale_policy of this ScaleNodePoolOptions.
+        :type scale_policy: str
+        """
+        self._scale_policy = scale_policy
 
     @property
     def billing_config_override(self):

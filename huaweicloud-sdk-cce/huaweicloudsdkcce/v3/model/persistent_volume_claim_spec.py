@@ -43,7 +43,7 @@ class PersistentVolumeClaimSpec:
 
         :param volume_id: 资源需为已经存在的存储资源 - 如果存储资源类型是SFS、EVS、SFS-Turbo，本参数需要填入对应资源的ID - 如果资源类型为OBS，本参数填入OBS名称
         :type volume_id: str
-        :param storage_type: 云存储的类型，和volumeID搭配使用。即volumeID和storageType必须同时被配置。  - bs：EVS云存储 - nfs：SFS弹性文件存储 - obs：OBS对象存储 - efs：SFS Turbo极速文件存储
+        :param storage_type: 云存储的类型，和volumeID搭配使用。即volumeID和storageType必须同时被配置。  - bs：EVS云存储 - nfs：SFS1.0弹性文件存储 - obs：OBS对象存储 - efs：SFS Turbo极速文件存储
         :type storage_type: str
         :param access_modes: 指定volume应该具有的访问模式，列表中仅第一个配置参数有效。 - ReadWriteOnce：该卷可以被单个节点以读/写模式挂载   &gt;集群版本为v1.13.10且storage-driver版本为1.0.19时，才支持此功能。 - ReadOnlyMany：该卷可以被多个节点以只读模式挂载（默认） - ReadWriteMany：该卷可以被多个节点以读/写模式挂载
         :type access_modes: list[str]
@@ -106,7 +106,7 @@ class PersistentVolumeClaimSpec:
     def storage_type(self):
         r"""Gets the storage_type of this PersistentVolumeClaimSpec.
 
-        云存储的类型，和volumeID搭配使用。即volumeID和storageType必须同时被配置。  - bs：EVS云存储 - nfs：SFS弹性文件存储 - obs：OBS对象存储 - efs：SFS Turbo极速文件存储
+        云存储的类型，和volumeID搭配使用。即volumeID和storageType必须同时被配置。  - bs：EVS云存储 - nfs：SFS1.0弹性文件存储 - obs：OBS对象存储 - efs：SFS Turbo极速文件存储
 
         :return: The storage_type of this PersistentVolumeClaimSpec.
         :rtype: str
@@ -117,7 +117,7 @@ class PersistentVolumeClaimSpec:
     def storage_type(self, storage_type):
         r"""Sets the storage_type of this PersistentVolumeClaimSpec.
 
-        云存储的类型，和volumeID搭配使用。即volumeID和storageType必须同时被配置。  - bs：EVS云存储 - nfs：SFS弹性文件存储 - obs：OBS对象存储 - efs：SFS Turbo极速文件存储
+        云存储的类型，和volumeID搭配使用。即volumeID和storageType必须同时被配置。  - bs：EVS云存储 - nfs：SFS1.0弹性文件存储 - obs：OBS对象存储 - efs：SFS Turbo极速文件存储
 
         :param storage_type: The storage_type of this PersistentVolumeClaimSpec.
         :type storage_type: str

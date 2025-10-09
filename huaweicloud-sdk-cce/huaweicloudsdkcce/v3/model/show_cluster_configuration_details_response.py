@@ -30,7 +30,7 @@ class ShowClusterConfigurationDetailsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 获取指定集群配置项列表返回体
+        :param body: **参数解释**： 集群支持的配置项详情
         :type body: dict(str, list[PackageOptions])
         """
         
@@ -46,7 +46,7 @@ class ShowClusterConfigurationDetailsResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ShowClusterConfigurationDetailsResponse.
 
-        获取指定集群配置项列表返回体
+        **参数解释**： 集群支持的配置项详情
 
         :return: The body of this ShowClusterConfigurationDetailsResponse.
         :rtype: dict(str, list[PackageOptions])
@@ -57,7 +57,7 @@ class ShowClusterConfigurationDetailsResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this ShowClusterConfigurationDetailsResponse.
 
-        获取指定集群配置项列表返回体
+        **参数解释**： 集群支持的配置项详情
 
         :param body: The body of this ShowClusterConfigurationDetailsResponse.
         :type body: dict(str, list[PackageOptions])

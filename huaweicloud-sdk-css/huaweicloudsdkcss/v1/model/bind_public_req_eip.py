@@ -38,8 +38,7 @@ class BindPublicReqEip:
         self._band_width = None
         self.discriminator = None
 
-        if band_width is not None:
-            self.band_width = band_width
+        self.band_width = band_width
 
     @property
     def band_width(self):

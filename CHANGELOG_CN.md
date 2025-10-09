@@ -1,3 +1,507 @@
+# 3.1.170 2025-10-09
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `GetClusterFlavorSpecs`
+    - `ShowFeatureGates`
+    - `GetAvaliableZone`
+    - `GetResourceTags`
+    - `GetCustomizeTags`
+    - `GetLabels`
+    - `GetClusterQuota`
+    - `ListAccessPolicy`
+    - `CreateAccessPolicy`
+    - `GetAccessPolicy`
+    - `UpdateAccessPolicy`
+    - `DeleteAccessPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResizeCluster**
+    - 请求参数变更
+      - `+ skippedTasks`
+  - **ShowClusterConfig**
+    - 响应参数变更
+      - `+ log_configs.type: enum value [control,audit,system-addon]`
+  - **UpdateClusterLogConfig**
+    - 请求参数变更
+      - `+ log_configs.type: enum value [control,audit,system-addon]`
+    - 响应参数变更
+      - `+ log_configs.type: enum value [control,audit,system-addon]`
+  - **GetClusterSupportConfiguration**
+    - 请求参数变更
+      - `+ clusterType`
+      - `+ clusterVersion`
+      - `+ clusterID`
+      - `+ networkMode`
+      - `- cluster_id`
+      - `- cluster_type`
+      - `- cluster_version`
+      - `- network_mode`
+  - **DeleteRelease**
+    - 请求参数变更
+      - `+ show_resources`
+  - **ShowRelease**
+    - 请求参数变更
+      - `+ show_resources`
+  - **UpdateRelease**
+    - 请求参数变更
+      - `+ show_resources`
+  - **UpgradeNodePool**
+    - 请求参数变更
+      - `+ metadata.resourceVersion`
+      - `+ spec.nodeTemplate.flavor`
+      - `+ spec.nodeTemplate.az`
+      - `+ spec.nodeTemplate.rootVolume`
+      - `+ spec.nodeTemplate.dataVolumes`
+      - `+ spec.nodeTemplate.storage`
+      - `+ spec.nodeTemplate.publicIP`
+      - `+ spec.nodeTemplate.nodeNicSpec`
+      - `+ spec.nodeTemplate.count`
+      - `+ spec.nodeTemplate.billingMode`
+      - `+ spec.nodeTemplate.taints`
+      - `+ spec.nodeTemplate.waitPostInstallFinish`
+      - `+ spec.nodeTemplate.k8sTags`
+      - `+ spec.nodeTemplate.ecsGroupId`
+      - `+ spec.nodeTemplate.faultDomain`
+      - `+ spec.nodeTemplate.dedicatedHostId`
+      - `+ spec.nodeTemplate.offloadNode`
+      - `+ spec.nodeTemplate.isStatic`
+      - `+ spec.nodeTemplate.userTags`
+      - `+ spec.nodeTemplate.runtime`
+      - `+ spec.nodeTemplate.initializedConditions`
+      - `+ spec.nodeTemplate.hostnameConfig`
+      - `+ spec.nodeTemplate.serverEnterpriseProjectID`
+      - `+ spec.nodeTemplate.partition`
+      - `+ spec.nodeTemplate.nodeNameTemplate`
+      - `- spec.nodeTemplate.imageID`
+      - `- spec.nodeTemplate.lifeCycle`
+      - `- spec.nodeTemplate.runtimeConfig`
+      - `+ spec.nodeTemplate.login.removeUserPassword`
+      - `+ spec.nodeTemplate.login.removeSSHKey`
+      - `* spec.nodeTemplate.login.userPassword: object -> object<UserPassword>`
+      - `* spec.nodeTemplate.login: object -> object<Login>`
+      - `+ spec.nodeTemplate.extendParam.ecs:performancetype`
+      - `+ spec.nodeTemplate.extendParam.orderID`
+      - `+ spec.nodeTemplate.extendParam.productID`
+      - `+ spec.nodeTemplate.extendParam.maxPods`
+      - `+ spec.nodeTemplate.extendParam.periodType`
+      - `+ spec.nodeTemplate.extendParam.periodNum`
+      - `+ spec.nodeTemplate.extendParam.isAutoRenew`
+      - `+ spec.nodeTemplate.extendParam.isAutoPay`
+      - `+ spec.nodeTemplate.extendParam.DockerLVMConfigOverride`
+      - `+ spec.nodeTemplate.extendParam.dockerBaseSize`
+      - `+ spec.nodeTemplate.extendParam.offloadNode`
+      - `+ spec.nodeTemplate.extendParam.publicKey`
+      - `+ spec.nodeTemplate.extendParam.alpha.cce/preInstall`
+      - `+ spec.nodeTemplate.extendParam.alpha.cce/postInstall`
+      - `+ spec.nodeTemplate.extendParam.alpha.cce/NodeImageID`
+      - `+ spec.nodeTemplate.extendParam.nicMultiqueue`
+      - `+ spec.nodeTemplate.extendParam.nicThreshold`
+      - `+ spec.nodeTemplate.extendParam.chargingMode`
+      - `+ spec.nodeTemplate.extendParam.agency_name`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedMem`
+      - `+ spec.nodeTemplate.extendParam.systemReservedMem`
+      - `+ spec.nodeTemplate.extendParam.init-node-password`
+      - `+ spec.nodeTemplate.extendParam.securityReinforcementType`
+      - `- spec.nodeTemplate.extendParam.userID`
+      - `* spec.nodeTemplate.extendParam: object -> object<NodeExtendParam>`
+  - **CreateCloudPersistentVolumeClaims**
+    - 请求参数变更
+      - `* metadata.labels: string -> map<string, string>`
+    - 响应参数变更
+      - `* metadata.labels: string -> map<string, string>`
+  - **DeleteCloudPersistentVolumeClaims**
+    - 响应参数变更
+      - `* metadata.labels: string -> map<string, string>`
+  - **ShowCluster**
+    - 响应参数变更
+      - `+ metadata.timezone`
+      - `+ spec.legacyVersion`
+      - `+ spec.enableAutopilot`
+  - **UpdateCluster**
+    - 响应参数变更
+      - `+ metadata.timezone`
+      - `+ spec.legacyVersion`
+      - `+ spec.enableAutopilot`
+  - **DeleteCluster**
+    - 响应参数变更
+      - `+ metadata.timezone`
+      - `+ spec.legacyVersion`
+      - `+ spec.enableAutopilot`
+  - **RemoveNode**
+    - 请求参数变更
+      - `+ spec.login.removeUserPassword`
+      - `+ spec.login.removeSSHKey`
+    - 响应参数变更
+      - `+ spec.login.removeUserPassword`
+      - `+ spec.login.removeSSHKey`
+  - **MigrateNode**
+    - 请求参数变更
+      - `+ spec.serverConfig`
+      - `+ spec.login.removeUserPassword`
+      - `+ spec.login.removeSSHKey`
+    - 响应参数变更
+      - `+ spec.serverConfig`
+      - `+ spec.login.removeUserPassword`
+      - `+ spec.login.removeSSHKey`
+  - **CreateCluster**
+    - 请求参数变更
+      - `+ metadata.timezone`
+      - `+ spec.legacyVersion`
+      - `+ spec.enableAutopilot`
+    - 响应参数变更
+      - `+ metadata.timezone`
+      - `+ spec.legacyVersion`
+      - `+ spec.enableAutopilot`
+  - **ListClusters**
+    - 响应参数变更
+      - `+ items.metadata.timezone`
+      - `+ items.spec.legacyVersion`
+      - `+ items.spec.enableAutopilot`
+  - **ScaleNodePool**
+    - 请求参数变更
+      - `+ spec.options.scalePolicy`
+  - **ShowNode**
+    - 响应参数变更
+      - `* metadata.ownerReference: object<NodeOwnerReference> -> object`
+      - `+ status.configurationUpToDate`
+      - `+ spec.waitPostInstallFinish`
+      - `+ spec.nodeNameTemplate`
+      - `+ spec.billingMode: enum value [0,1]`
+      - `+ spec.login.removeUserPassword`
+      - `+ spec.login.removeSSHKey`
+  - **UpdateNode**
+    - 响应参数变更
+      - `* metadata.ownerReference: object<NodeOwnerReference> -> object`
+      - `+ status.configurationUpToDate`
+      - `+ spec.waitPostInstallFinish`
+      - `+ spec.nodeNameTemplate`
+      - `+ spec.billingMode: enum value [0,1]`
+      - `+ spec.login.removeUserPassword`
+      - `+ spec.login.removeSSHKey`
+  - **DeleteNode**
+    - 响应参数变更
+      - `* metadata.ownerReference: object<NodeOwnerReference> -> object`
+      - `+ status.configurationUpToDate`
+      - `+ spec.waitPostInstallFinish`
+      - `+ spec.nodeNameTemplate`
+      - `+ spec.billingMode: enum value [0,1]`
+      - `+ spec.login.removeUserPassword`
+      - `+ spec.login.removeSSHKey`
+  - **CreateNode**
+    - 请求参数变更
+      - `* metadata.ownerReference: object<NodeOwnerReference> -> object`
+      - `+ spec.waitPostInstallFinish`
+      - `+ spec.nodeNameTemplate`
+      - `+ spec.billingMode: enum value [0,1]`
+      - `+ spec.login.removeUserPassword`
+      - `+ spec.login.removeSSHKey`
+    - 响应参数变更
+      - `* metadata.ownerReference: object<NodeOwnerReference> -> object`
+      - `+ status.configurationUpToDate`
+      - `+ spec.waitPostInstallFinish`
+      - `+ spec.nodeNameTemplate`
+      - `+ spec.billingMode: enum value [0,1]`
+      - `+ spec.login.removeUserPassword`
+      - `+ spec.login.removeSSHKey`
+  - **ListNodes**
+    - 响应参数变更
+      - `* items.metadata.ownerReference: object<NodeOwnerReference> -> object`
+      - `+ items.status.configurationUpToDate`
+      - `+ items.spec.waitPostInstallFinish`
+      - `+ items.spec.nodeNameTemplate`
+      - `+ items.spec.billingMode: enum value [0,1]`
+      - `+ items.spec.login.removeUserPassword`
+      - `+ items.spec.login.removeSSHKey`
+  - **ShowNodePool**
+    - 响应参数变更
+      - `+ metadata.resourceVersion`
+      - `+ status.conditions.type: enum value [TaintSynchronizing,LabelSynchronizing,UserTagsSynchronizing,ConfigurationSynchronizing,Scalable,QuotaInsufficient,ResourceInsufficient,UnexpectedError,LockedByOrder,Error]`
+      - `+ spec.taintPolicyOnExistingNodes`
+      - `+ spec.labelPolicyOnExistingNodes`
+      - `+ spec.userTagsPolicyOnExistingNodes`
+      - `+ spec.nodeTemplate.waitPostInstallFinish`
+      - `+ spec.nodeTemplate.nodeNameTemplate`
+      - `+ spec.nodeTemplate.billingMode: enum value [0,1]`
+      - `+ spec.nodeTemplate.login.removeUserPassword`
+      - `+ spec.nodeTemplate.login.removeSSHKey`
+      - `- spec.nodeTemplate.publicIP.ids`
+      - `- spec.nodeTemplate.publicIP.count`
+      - `- spec.nodeTemplate.publicIP.eip`
+      - `* spec.nodeTemplate.publicIP: object<NodePublicIP> -> object<NodeEIPSpec>`
+      - `* spec.nodeTemplate: object<NodeSpec> -> object<NodeTemplate>`
+  - **UpdateNodePool**
+    - 请求参数变更
+      - `+ spec.nodeTemplate.az`
+      - `+ spec.nodeTemplate.waitPostInstallFinish`
+      - `+ spec.nodeTemplate.extendParam.alpha.cce/NodeImageID`
+      - `+ spec.nodeTemplate.login.removeUserPassword`
+      - `+ spec.nodeTemplate.login.removeSSHKey`
+    - 响应参数变更
+      - `+ metadata.resourceVersion`
+      - `+ status.conditions.type: enum value [TaintSynchronizing,LabelSynchronizing,UserTagsSynchronizing,ConfigurationSynchronizing,Scalable,QuotaInsufficient,ResourceInsufficient,UnexpectedError,LockedByOrder,Error]`
+      - `+ spec.taintPolicyOnExistingNodes`
+      - `+ spec.labelPolicyOnExistingNodes`
+      - `+ spec.userTagsPolicyOnExistingNodes`
+      - `+ spec.nodeTemplate.waitPostInstallFinish`
+      - `+ spec.nodeTemplate.nodeNameTemplate`
+      - `+ spec.nodeTemplate.billingMode: enum value [0,1]`
+      - `+ spec.nodeTemplate.login.removeUserPassword`
+      - `+ spec.nodeTemplate.login.removeSSHKey`
+      - `- spec.nodeTemplate.publicIP.ids`
+      - `- spec.nodeTemplate.publicIP.count`
+      - `- spec.nodeTemplate.publicIP.eip`
+      - `* spec.nodeTemplate.publicIP: object<NodePublicIP> -> object<NodeEIPSpec>`
+      - `* spec.nodeTemplate: object<NodeSpec> -> object<NodeTemplate>`
+  - **DeleteNodePool**
+    - 响应参数变更
+      - `+ metadata.resourceVersion`
+      - `+ status.conditions.type: enum value [TaintSynchronizing,LabelSynchronizing,UserTagsSynchronizing,ConfigurationSynchronizing,Scalable,QuotaInsufficient,ResourceInsufficient,UnexpectedError,LockedByOrder,Error]`
+      - `+ spec.taintPolicyOnExistingNodes`
+      - `+ spec.labelPolicyOnExistingNodes`
+      - `+ spec.userTagsPolicyOnExistingNodes`
+      - `+ spec.nodeTemplate.waitPostInstallFinish`
+      - `+ spec.nodeTemplate.nodeNameTemplate`
+      - `+ spec.nodeTemplate.billingMode: enum value [0,1]`
+      - `+ spec.nodeTemplate.login.removeUserPassword`
+      - `+ spec.nodeTemplate.login.removeSSHKey`
+      - `- spec.nodeTemplate.publicIP.ids`
+      - `- spec.nodeTemplate.publicIP.count`
+      - `- spec.nodeTemplate.publicIP.eip`
+      - `* spec.nodeTemplate.publicIP: object<NodePublicIP> -> object<NodeEIPSpec>`
+      - `* spec.nodeTemplate: object<NodeSpec> -> object<NodeTemplate>`
+  - **AddNode**
+    - 请求参数变更
+      - `+ nodeList.spec.lifecycle.waitPostInstallFinish`
+      - `+ nodeList.spec.login.removeUserPassword`
+      - `+ nodeList.spec.login.removeSSHKey`
+      - `+ nodeList.spec.runtimeConfig.containerBaseSize`
+  - **ResetNode**
+    - 请求参数变更
+      - `+ nodeList.spec.lifecycle.waitPostInstallFinish`
+      - `+ nodeList.spec.login.removeUserPassword`
+      - `+ nodeList.spec.login.removeSSHKey`
+      - `+ nodeList.spec.runtimeConfig.containerBaseSize`
+  - **CreateNodePool**
+    - 请求参数变更
+      - `+ metadata.resourceVersion`
+      - `+ status.conditions.type: enum value [TaintSynchronizing,LabelSynchronizing,UserTagsSynchronizing,ConfigurationSynchronizing,Scalable,QuotaInsufficient,ResourceInsufficient,UnexpectedError,LockedByOrder,Error]`
+      - `+ spec.taintPolicyOnExistingNodes`
+      - `+ spec.labelPolicyOnExistingNodes`
+      - `+ spec.userTagsPolicyOnExistingNodes`
+      - `+ spec.nodeTemplate.waitPostInstallFinish`
+      - `+ spec.nodeTemplate.nodeNameTemplate`
+      - `+ spec.nodeTemplate.billingMode: enum value [0,1]`
+      - `+ spec.nodeTemplate.login.removeUserPassword`
+      - `+ spec.nodeTemplate.login.removeSSHKey`
+      - `- spec.nodeTemplate.publicIP.ids`
+      - `- spec.nodeTemplate.publicIP.count`
+      - `- spec.nodeTemplate.publicIP.eip`
+      - `* spec.nodeTemplate.publicIP: object<NodePublicIP> -> object<NodeEIPSpec>`
+      - `* spec.nodeTemplate: object<NodeSpec> -> object<NodeTemplate>`
+    - 响应参数变更
+      - `+ metadata.resourceVersion`
+      - `+ status.conditions.type: enum value [TaintSynchronizing,LabelSynchronizing,UserTagsSynchronizing,ConfigurationSynchronizing,Scalable,QuotaInsufficient,ResourceInsufficient,UnexpectedError,LockedByOrder,Error]`
+      - `+ spec.taintPolicyOnExistingNodes`
+      - `+ spec.labelPolicyOnExistingNodes`
+      - `+ spec.userTagsPolicyOnExistingNodes`
+      - `+ spec.nodeTemplate.waitPostInstallFinish`
+      - `+ spec.nodeTemplate.nodeNameTemplate`
+      - `+ spec.nodeTemplate.billingMode: enum value [0,1]`
+      - `+ spec.nodeTemplate.login.removeUserPassword`
+      - `+ spec.nodeTemplate.login.removeSSHKey`
+      - `- spec.nodeTemplate.publicIP.ids`
+      - `- spec.nodeTemplate.publicIP.count`
+      - `- spec.nodeTemplate.publicIP.eip`
+      - `* spec.nodeTemplate.publicIP: object<NodePublicIP> -> object<NodeEIPSpec>`
+      - `* spec.nodeTemplate: object<NodeSpec> -> object<NodeTemplate>`
+  - **ListNodePools**
+    - 响应参数变更
+      - `+ items.metadata.resourceVersion`
+      - `+ items.status.conditions.type: enum value [TaintSynchronizing,LabelSynchronizing,UserTagsSynchronizing,ConfigurationSynchronizing,Scalable,QuotaInsufficient,ResourceInsufficient,UnexpectedError,LockedByOrder,Error]`
+      - `+ items.spec.taintPolicyOnExistingNodes`
+      - `+ items.spec.labelPolicyOnExistingNodes`
+      - `+ items.spec.userTagsPolicyOnExistingNodes`
+      - `+ items.spec.nodeTemplate.waitPostInstallFinish`
+      - `+ items.spec.nodeTemplate.nodeNameTemplate`
+      - `+ items.spec.nodeTemplate.billingMode: enum value [0,1]`
+      - `+ items.spec.nodeTemplate.login.removeUserPassword`
+      - `+ items.spec.nodeTemplate.login.removeSSHKey`
+      - `- items.spec.nodeTemplate.publicIP.ids`
+      - `- items.spec.nodeTemplate.publicIP.count`
+      - `- items.spec.nodeTemplate.publicIP.eip`
+      - `* items.spec.nodeTemplate.publicIP: object<NodePublicIP> -> object<NodeEIPSpec>`
+      - `* items.spec.nodeTemplate: object<NodeSpec> -> object<NodeTemplate>`
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListImageCaches**
+    - 响应参数变更
+      - `* image_caches.created_at: string -> date`
+  - **CreateImageCache**
+    - 响应参数变更
+      - `* image_cache.created_at: string -> date`
+  - **ShowImageCache**
+    - 响应参数变更
+      - `* image_cache.created_at: string -> date`
+  - **DeleteImageCache**
+    - 响应参数变更
+      - `* image_cache.created_at: string -> date`
+
+### HuaweiCloud SDK CSS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DownloadCert**
+    - 响应参数变更
+      - `+ file`
+  - **ShowAutoCreatePolicy**
+    - 响应参数变更
+      - `+ snapshotCmkId`
+      - `+ maxSnapshotBytesPerSeconds`
+      - `+ maxRestoreBytesPerSeconds`
+      - `+ indices`
+  - **ListElbCerts**
+    - 响应参数变更
+      - `* certificates: object<CertificatesResource> -> list<CertificatesResource>`
+  - **ShowClusterDetail**
+    - 响应参数变更
+      - `+ desc`
+  - **ListSnapshots**
+    - 响应参数变更
+      - `+ backups.backupFrequency`
+      - `- backups.updated`
+      - `- backups.backupExpectedStartTime`
+      - `- backups.backupKeepDay`
+      - `- backups.backupPeriod`
+      - `- backups.version`
+  - **ShowElbDetail**
+    - 响应参数变更
+      - `* healthmonitors: object<Member> -> list<Member>`
+      - `+ loadBalancer.vip_port_id`
+      - `+ loadBalancer.ipv6_vip_address`
+      - `* loadBalancer.listeners: object<EsListenersResource> -> list<IdListWrapper>`
+      - `* loadBalancer.publicips: object<EsPublicipsResource> -> list<PublicIpInfo>`
+      - `* loadBalancer: object<EsLoadBalancerResource> -> object<LoadBalancer>`
+  - **ListClustersDetails**
+    - 响应参数变更
+      - `+ clusters.desc`
+      - `+ clusters.snapshotPolicy.backupEnable`
+      - `+ clusters.snapshotPolicy.bakPeriod`
+      - `+ clusters.snapshotPolicy.bakFrequency`
+      - `+ clusters.snapshotPolicy.bakKeepDay`
+      - `* clusters.snapshotPolicy: object -> object<SnapshotPolicyResp>`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateServerlessComputeAbilityPolicy`
+    - `ShowServerlessScalingPolicy`
+    - `UpdateServerlessScalingPolicy`
+    - `UpdateHtapQueryQueuesControl`
+    - `ShowHtapQueryQueuesRule`
+    - `SetHtapQueryQueuesRule`
+    - `ShowTaskDetails`
+    - `ShowServerlessComputeAbilityPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `AuthorizeBackupDownload`
+    - `ListPluginInfoList`
+    - `ModifyInstancePort`
+    - `DeleteDisasterRecord`
+    - `ListDatabaseVolume`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ModifyHotfixes`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListConfigurationApplyHistories`、`ListInstancesConfigurations`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpgradeDbVersionNew**
+    - 请求参数变更
+      - `+ second_switch`
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowInstance**
+    - 响应参数变更
+      - `+ vpcep_service_id`
+  - **ListInstance**
+    - 响应参数变更
+      - `+ vpcep_service_id`
+      - `+ instances.vpcep_service_id`
+
+### HuaweiCloud SDK VPN
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `UpgradeVpnGateway`
+    - `ListVpnGatewayJobs`
+    - `DeleteVpnGatewayJob`
+    - `UpgradeP2cVpnGateway`
+    - `ListP2cVpnGatewayJobs`
+    - `DeleteP2cVpnGatewayJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListP2cVgws**
+    - 响应参数变更
+      - `+ p2c_vpn_gateways.upgrade_info`
+  - **ShowP2cVgw**
+    - 响应参数变更
+      - `+ p2c_vpn_gateway.upgrade_info`
+  - **ListVgws**
+    - 响应参数变更
+      - `+ vpn_gateways.upgrade_info`
+  - **ShowVgw**
+    - 响应参数变更
+      - `+ vpn_gateway.upgrade_info`
+
 # 3.1.169 2025-09-25
 
 ### HuaweiCloud SDK BSS

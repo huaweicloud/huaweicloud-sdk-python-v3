@@ -19,49 +19,44 @@ class NodeMetadata:
     openapi_types = {
         'name': 'str',
         'uid': 'str',
-        'labels': 'dict(str, str)',
         'annotations': 'dict(str, str)',
         'creation_timestamp': 'str',
         'update_timestamp': 'str',
-        'owner_reference': 'NodeOwnerReference'
+        'owner_reference': 'NodeMetadataOwnerReference'
     }
 
     attribute_map = {
         'name': 'name',
         'uid': 'uid',
-        'labels': 'labels',
         'annotations': 'annotations',
         'creation_timestamp': 'creationTimestamp',
         'update_timestamp': 'updateTimestamp',
         'owner_reference': 'ownerReference'
     }
 
-    def __init__(self, name=None, uid=None, labels=None, annotations=None, creation_timestamp=None, update_timestamp=None, owner_reference=None):
+    def __init__(self, name=None, uid=None, annotations=None, creation_timestamp=None, update_timestamp=None, owner_reference=None):
         r"""NodeMetadata
 
         The model defined in huaweicloud sdk
 
-        :param name: 节点名称 &gt; 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。 &gt; 若name未指定或指定为空字符串，则按照默认规则生成节点名称。默认规则为：“集群名称-随机字符串”，若集群名称过长，则只取前36个字符。 &gt; 若节点数量(count)大于1时，则按照默认规则会在用户输入的节点名称末尾添加随机字符串。默认规则为：“用户输入名称-随机字符串”，若用户输入的节点名称长度范围超过50位时，系统截取前50位，并在末尾添加随机字符串。
+        :param name: **参数解释**： 节点名称 **约束限制**： 若节点数量(count)大于1时，则按照默认规则会在用户输入的节点名称末尾添加随机字符串。默认规则为：“用户输入名称-随机字符串”，若用户输入的节点名称长度范围超过50位时，系统截取前50位，并在末尾添加随机字符串。 **取值范围**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)、点(.)组成，长度范围1-56位，且不能以中划线(-)结尾。 **默认取值**： 若name未指定或指定为空字符串，则按照默认规则生成节点名称。默认规则为：“集群名称-随机字符串”，若集群名称过长，则只取前36个字符。
         :type name: str
-        :param uid: 节点ID，资源唯一标识，创建成功后自动生成，填写无效
+        :param uid: **参数解释**： 节点ID，资源唯一标识。 **约束限制**： 创建成功后自动生成，填写无效 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type uid: str
-        :param labels: CCE自有节点标签，非Kubernetes原生labels。  标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  示例：  &#x60;&#x60;&#x60; \&quot;labels\&quot;: {   \&quot;key\&quot; : \&quot;value\&quot; } &#x60;&#x60;&#x60;
-        :type labels: dict(str, str)
-        :param annotations: CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。 示例： &#x60;&#x60;&#x60; \&quot;annotations\&quot;: {   \&quot;key1\&quot; : \&quot;value1\&quot;,   \&quot;key2\&quot; : \&quot;value2\&quot; } &#x60;&#x60;&#x60; &gt; - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 &gt; - 仅用于查询，不支持请求时传入，填写无效。 
+        :param annotations: **参数解释**： CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。 示例： &#x60;&#x60;&#x60; \&quot;annotations\&quot;: {   \&quot;key1\&quot; : \&quot;value1\&quot;,   \&quot;key2\&quot; : \&quot;value2\&quot; } &#x60;&#x60;&#x60; **约束限制**： 仅用于查询，不支持请求时传入，填写无效。 **取值范围**： Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 **默认取值**： 不涉及
         :type annotations: dict(str, str)
-        :param creation_timestamp: 创建时间，创建成功后自动生成，填写无效
+        :param creation_timestamp: **参数解释**： 节点创建时间。 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type creation_timestamp: str
-        :param update_timestamp: 更新时间，创建成功后自动生成，填写无效
+        :param update_timestamp: **参数解释**： 节点更新时间。 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type update_timestamp: str
         :param owner_reference: 
-        :type owner_reference: :class:`huaweicloudsdkcce.v3.NodeOwnerReference`
+        :type owner_reference: :class:`huaweicloudsdkcce.v3.NodeMetadataOwnerReference`
         """
         
         
 
         self._name = None
         self._uid = None
-        self._labels = None
         self._annotations = None
         self._creation_timestamp = None
         self._update_timestamp = None
@@ -72,8 +67,6 @@ class NodeMetadata:
             self.name = name
         if uid is not None:
             self.uid = uid
-        if labels is not None:
-            self.labels = labels
         if annotations is not None:
             self.annotations = annotations
         if creation_timestamp is not None:
@@ -87,7 +80,7 @@ class NodeMetadata:
     def name(self):
         r"""Gets the name of this NodeMetadata.
 
-        节点名称 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。 > 若name未指定或指定为空字符串，则按照默认规则生成节点名称。默认规则为：“集群名称-随机字符串”，若集群名称过长，则只取前36个字符。 > 若节点数量(count)大于1时，则按照默认规则会在用户输入的节点名称末尾添加随机字符串。默认规则为：“用户输入名称-随机字符串”，若用户输入的节点名称长度范围超过50位时，系统截取前50位，并在末尾添加随机字符串。
+        **参数解释**： 节点名称 **约束限制**： 若节点数量(count)大于1时，则按照默认规则会在用户输入的节点名称末尾添加随机字符串。默认规则为：“用户输入名称-随机字符串”，若用户输入的节点名称长度范围超过50位时，系统截取前50位，并在末尾添加随机字符串。 **取值范围**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)、点(.)组成，长度范围1-56位，且不能以中划线(-)结尾。 **默认取值**： 若name未指定或指定为空字符串，则按照默认规则生成节点名称。默认规则为：“集群名称-随机字符串”，若集群名称过长，则只取前36个字符。
 
         :return: The name of this NodeMetadata.
         :rtype: str
@@ -98,7 +91,7 @@ class NodeMetadata:
     def name(self, name):
         r"""Sets the name of this NodeMetadata.
 
-        节点名称 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。 > 若name未指定或指定为空字符串，则按照默认规则生成节点名称。默认规则为：“集群名称-随机字符串”，若集群名称过长，则只取前36个字符。 > 若节点数量(count)大于1时，则按照默认规则会在用户输入的节点名称末尾添加随机字符串。默认规则为：“用户输入名称-随机字符串”，若用户输入的节点名称长度范围超过50位时，系统截取前50位，并在末尾添加随机字符串。
+        **参数解释**： 节点名称 **约束限制**： 若节点数量(count)大于1时，则按照默认规则会在用户输入的节点名称末尾添加随机字符串。默认规则为：“用户输入名称-随机字符串”，若用户输入的节点名称长度范围超过50位时，系统截取前50位，并在末尾添加随机字符串。 **取值范围**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)、点(.)组成，长度范围1-56位，且不能以中划线(-)结尾。 **默认取值**： 若name未指定或指定为空字符串，则按照默认规则生成节点名称。默认规则为：“集群名称-随机字符串”，若集群名称过长，则只取前36个字符。
 
         :param name: The name of this NodeMetadata.
         :type name: str
@@ -109,7 +102,7 @@ class NodeMetadata:
     def uid(self):
         r"""Gets the uid of this NodeMetadata.
 
-        节点ID，资源唯一标识，创建成功后自动生成，填写无效
+        **参数解释**： 节点ID，资源唯一标识。 **约束限制**： 创建成功后自动生成，填写无效 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The uid of this NodeMetadata.
         :rtype: str
@@ -120,7 +113,7 @@ class NodeMetadata:
     def uid(self, uid):
         r"""Sets the uid of this NodeMetadata.
 
-        节点ID，资源唯一标识，创建成功后自动生成，填写无效
+        **参数解释**： 节点ID，资源唯一标识。 **约束限制**： 创建成功后自动生成，填写无效 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param uid: The uid of this NodeMetadata.
         :type uid: str
@@ -128,32 +121,10 @@ class NodeMetadata:
         self._uid = uid
 
     @property
-    def labels(self):
-        r"""Gets the labels of this NodeMetadata.
-
-        CCE自有节点标签，非Kubernetes原生labels。  标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  示例：  ``` \"labels\": {   \"key\" : \"value\" } ```
-
-        :return: The labels of this NodeMetadata.
-        :rtype: dict(str, str)
-        """
-        return self._labels
-
-    @labels.setter
-    def labels(self, labels):
-        r"""Sets the labels of this NodeMetadata.
-
-        CCE自有节点标签，非Kubernetes原生labels。  标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  示例：  ``` \"labels\": {   \"key\" : \"value\" } ```
-
-        :param labels: The labels of this NodeMetadata.
-        :type labels: dict(str, str)
-        """
-        self._labels = labels
-
-    @property
     def annotations(self):
         r"""Gets the annotations of this NodeMetadata.
 
-        CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。 示例： ``` \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" } ``` > - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 > - 仅用于查询，不支持请求时传入，填写无效。 
+        **参数解释**： CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。 示例： ``` \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" } ``` **约束限制**： 仅用于查询，不支持请求时传入，填写无效。 **取值范围**： Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 **默认取值**： 不涉及
 
         :return: The annotations of this NodeMetadata.
         :rtype: dict(str, str)
@@ -164,7 +135,7 @@ class NodeMetadata:
     def annotations(self, annotations):
         r"""Sets the annotations of this NodeMetadata.
 
-        CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。 示例： ``` \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" } ``` > - Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 > - 仅用于查询，不支持请求时传入，填写无效。 
+        **参数解释**： CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。 示例： ``` \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" } ``` **约束限制**： 仅用于查询，不支持请求时传入，填写无效。 **取值范围**： Annotations不用于标识和选择对象。Annotations中的元数据可以是small或large，structured或unstructured，并且可以包括标签不允许使用的字符。 **默认取值**： 不涉及
 
         :param annotations: The annotations of this NodeMetadata.
         :type annotations: dict(str, str)
@@ -175,7 +146,7 @@ class NodeMetadata:
     def creation_timestamp(self):
         r"""Gets the creation_timestamp of this NodeMetadata.
 
-        创建时间，创建成功后自动生成，填写无效
+        **参数解释**： 节点创建时间。 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The creation_timestamp of this NodeMetadata.
         :rtype: str
@@ -186,7 +157,7 @@ class NodeMetadata:
     def creation_timestamp(self, creation_timestamp):
         r"""Sets the creation_timestamp of this NodeMetadata.
 
-        创建时间，创建成功后自动生成，填写无效
+        **参数解释**： 节点创建时间。 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param creation_timestamp: The creation_timestamp of this NodeMetadata.
         :type creation_timestamp: str
@@ -197,7 +168,7 @@ class NodeMetadata:
     def update_timestamp(self):
         r"""Gets the update_timestamp of this NodeMetadata.
 
-        更新时间，创建成功后自动生成，填写无效
+        **参数解释**： 节点更新时间。 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The update_timestamp of this NodeMetadata.
         :rtype: str
@@ -208,7 +179,7 @@ class NodeMetadata:
     def update_timestamp(self, update_timestamp):
         r"""Sets the update_timestamp of this NodeMetadata.
 
-        更新时间，创建成功后自动生成，填写无效
+        **参数解释**： 节点更新时间。 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param update_timestamp: The update_timestamp of this NodeMetadata.
         :type update_timestamp: str
@@ -220,7 +191,7 @@ class NodeMetadata:
         r"""Gets the owner_reference of this NodeMetadata.
 
         :return: The owner_reference of this NodeMetadata.
-        :rtype: :class:`huaweicloudsdkcce.v3.NodeOwnerReference`
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeMetadataOwnerReference`
         """
         return self._owner_reference
 
@@ -229,7 +200,7 @@ class NodeMetadata:
         r"""Sets the owner_reference of this NodeMetadata.
 
         :param owner_reference: The owner_reference of this NodeMetadata.
-        :type owner_reference: :class:`huaweicloudsdkcce.v3.NodeOwnerReference`
+        :type owner_reference: :class:`huaweicloudsdkcce.v3.NodeMetadataOwnerReference`
         """
         self._owner_reference = owner_reference
 

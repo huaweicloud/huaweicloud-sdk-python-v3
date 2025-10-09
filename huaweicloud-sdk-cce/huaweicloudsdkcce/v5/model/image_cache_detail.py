@@ -19,7 +19,7 @@ class ImageCacheDetail:
     openapi_types = {
         'name': 'str',
         'id': 'str',
-        'created_at': 'str',
+        'created_at': 'date',
         'images': 'list[str]',
         'image_cache_size': 'int',
         'retention_days': 'int',
@@ -50,7 +50,7 @@ class ImageCacheDetail:
         :param id: 镜像缓存ID。
         :type id: str
         :param created_at: 镜像缓存创建时间戳。
-        :type created_at: str
+        :type created_at: date
         :param images: 镜像缓存中的容器镜像列表。
         :type images: list[str]
         :param image_cache_size: 镜像缓存后端对应的存储盘大小，单位GiB。
@@ -140,7 +140,7 @@ class ImageCacheDetail:
         镜像缓存创建时间戳。
 
         :return: The created_at of this ImageCacheDetail.
-        :rtype: str
+        :rtype: date
         """
         return self._created_at
 
@@ -151,7 +151,7 @@ class ImageCacheDetail:
         镜像缓存创建时间戳。
 
         :param created_at: The created_at of this ImageCacheDetail.
-        :type created_at: str
+        :type created_at: date
         """
         self._created_at = created_at
 

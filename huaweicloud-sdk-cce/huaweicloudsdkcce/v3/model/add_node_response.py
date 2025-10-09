@@ -30,7 +30,7 @@ class AddNodeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param jobid: 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
+        :param jobid: **参数解释**： 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。 **取值范围**： 不涉及
         :type jobid: str
         """
         
@@ -46,7 +46,7 @@ class AddNodeResponse(SdkResponse):
     def jobid(self):
         r"""Gets the jobid of this AddNodeResponse.
 
-        提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
+        **参数解释**： 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。 **取值范围**： 不涉及
 
         :return: The jobid of this AddNodeResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class AddNodeResponse(SdkResponse):
     def jobid(self, jobid):
         r"""Sets the jobid of this AddNodeResponse.
 
-        提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
+        **参数解释**： 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。 **取值范围**： 不涉及
 
         :param jobid: The jobid of this AddNodeResponse.
         :type jobid: str

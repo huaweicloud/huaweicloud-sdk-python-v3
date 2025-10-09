@@ -38,7 +38,7 @@ class ListNodePoolsResponse(SdkResponse):
         :type kind: str
         :param api_version: API version. The value is fixed to v3.
         :type api_version: str
-        :param items: /
+        :param items: **参数解释**： 节点池的信息。
         :type items: list[:class:`huaweicloudsdkcce.v3.NodePoolResp`]
         """
         
@@ -104,7 +104,7 @@ class ListNodePoolsResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListNodePoolsResponse.
 
-        /
+        **参数解释**： 节点池的信息。
 
         :return: The items of this ListNodePoolsResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.NodePoolResp`]
@@ -115,7 +115,7 @@ class ListNodePoolsResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListNodePoolsResponse.
 
-        /
+        **参数解释**： 节点池的信息。
 
         :param items: The items of this ListNodePoolsResponse.
         :type items: list[:class:`huaweicloudsdkcce.v3.NodePoolResp`]

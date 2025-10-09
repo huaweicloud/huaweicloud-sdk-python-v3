@@ -510,6 +510,71 @@ class CceClient(Client):
 
         return http_info
 
+    def create_access_policy(self, request):
+        r"""创建访问策略
+
+        该API用于创建访问策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAccessPolicy
+        :type request: :class:`huaweicloudsdkcce.v3.CreateAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.CreateAccessPolicyResponse`
+        """
+        http_info = self._create_access_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_access_policy_invoker(self, request):
+        http_info = self._create_access_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_access_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/access-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAccessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_addon_instance(self, request):
         r"""创建AddonInstance
 
@@ -1329,6 +1394,71 @@ class CceClient(Client):
 
         return http_info
 
+    def delete_access_policy(self, request):
+        r"""删除访问策略
+
+        该API用于删除单个访问策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAccessPolicy
+        :type request: :class:`huaweicloudsdkcce.v3.DeleteAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.DeleteAccessPolicyResponse`
+        """
+        http_info = self._delete_access_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_access_policy_invoker(self, request):
+        http_info = self._delete_access_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_access_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/api/v3/access-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAccessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_addon_instance(self, request):
         r"""删除AddonInstance
 
@@ -1803,6 +1933,8 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'show_resources' in local_var_params:
+            query_params.append(('show_resources', local_var_params['show_resources']))
 
         header_params = {}
 
@@ -1895,6 +2027,533 @@ class CceClient(Client):
 
         return http_info
 
+    def get_access_policy(self, request):
+        r"""获取访问策略详情
+
+        该API用于获取单个访问策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetAccessPolicy
+        :type request: :class:`huaweicloudsdkcce.v3.GetAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.GetAccessPolicyResponse`
+        """
+        http_info = self._get_access_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_access_policy_invoker(self, request):
+        http_info = self._get_access_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_access_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/access-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetAccessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_avaliable_zone(self, request):
+        r"""查询可用区列表
+
+        该API用于查询可用区列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetAvaliableZone
+        :type request: :class:`huaweicloudsdkcce.v3.GetAvaliableZoneRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.GetAvaliableZoneResponse`
+        """
+        http_info = self._get_avaliable_zone_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_avaliable_zone_invoker(self, request):
+        http_info = self._get_avaliable_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_avaliable_zone_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v2/availabilityZones",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetAvaliableZoneResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'locale' in local_var_params:
+            query_params.append(('locale', local_var_params['locale']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_cluster_flavor_specs(self, request):
+        r"""查询集群可售卖规格
+
+        该API用于查询集群可售卖规格
+        &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetClusterFlavorSpecs
+        :type request: :class:`huaweicloudsdkcce.v3.GetClusterFlavorSpecsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.GetClusterFlavorSpecsResponse`
+        """
+        http_info = self._get_cluster_flavor_specs_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_cluster_flavor_specs_invoker(self, request):
+        http_info = self._get_cluster_flavor_specs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_cluster_flavor_specs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v2/flavor/specifications",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetClusterFlavorSpecsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_type' in local_var_params:
+            query_params.append(('clusterType', local_var_params['cluster_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_cluster_quota(self, request):
+        r"""获取集群配额
+
+        该API用于获取集群配额
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetClusterQuota
+        :type request: :class:`huaweicloudsdkcce.v3.GetClusterQuotaRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.GetClusterQuotaResponse`
+        """
+        http_info = self._get_cluster_quota_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_cluster_quota_invoker(self, request):
+        http_info = self._get_cluster_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_cluster_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cce/v1/projects/{project_id}/quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetClusterQuotaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_cluster_support_configuration(self, request):
+        r"""获取集群支持的可配置参数列表
+
+        该API用于根据集群版本类型等查询集群支持的详细配置项，用于集群创建时指定。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetClusterSupportConfiguration
+        :type request: :class:`huaweicloudsdkcce.v3.GetClusterSupportConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.GetClusterSupportConfigurationResponse`
+        """
+        http_info = self._get_cluster_support_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_cluster_support_configuration_invoker(self, request):
+        http_info = self._get_cluster_support_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_cluster_support_configuration_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/clusters/configuration/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetClusterSupportConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_type' in local_var_params:
+            query_params.append(('clusterType', local_var_params['cluster_type']))
+        if 'cluster_version' in local_var_params:
+            query_params.append(('clusterVersion', local_var_params['cluster_version']))
+        if 'cluster_id' in local_var_params:
+            query_params.append(('clusterID', local_var_params['cluster_id']))
+        if 'network_mode' in local_var_params:
+            query_params.append(('networkMode', local_var_params['network_mode']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_customize_tags(self, request):
+        r"""查询自定义标签
+
+        该API用于查询自定义标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetCustomizeTags
+        :type request: :class:`huaweicloudsdkcce.v3.GetCustomizeTagsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.GetCustomizeTagsResponse`
+        """
+        http_info = self._get_customize_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_customize_tags_invoker(self, request):
+        http_info = self._get_customize_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_customize_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cce/v1/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetCustomizeTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_labels(self, request):
+        r"""获取节点标签
+
+        该API用于获取集群所有节点的标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetLabels
+        :type request: :class:`huaweicloudsdkcce.v3.GetLabelsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.GetLabelsResponse`
+        """
+        http_info = self._get_labels_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_labels_invoker(self, request):
+        http_info = self._get_labels_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_labels_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetLabelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def get_resource_tags(self, request):
+        r"""查询资源标签
+
+        该API用于查询资源标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for GetResourceTags
+        :type request: :class:`huaweicloudsdkcce.v3.GetResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.GetResourceTagsResponse`
+        """
+        http_info = self._get_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def get_resource_tags_invoker(self, request):
+        http_info = self._get_resource_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _get_resource_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/cce/v1/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def hibernate_cluster(self, request):
         r"""集群休眠
 
@@ -1933,6 +2592,71 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_access_policy(self, request):
+        r"""获取访问策略列表
+
+        该API用于获取访问策略列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAccessPolicy
+        :type request: :class:`huaweicloudsdkcce.v3.ListAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAccessPolicyResponse`
+        """
+        http_info = self._list_access_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_access_policy_invoker(self, request):
+        http_info = self._list_access_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_access_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/access-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
 
         header_params = {}
 
@@ -4027,77 +4751,6 @@ class CceClient(Client):
 
         return http_info
 
-    def show_cluster_support_configuration(self, request):
-        r"""根据集群版本类型等查询集群支持的详细配置项，用于集群创建时指定
-
-        该API用于根据集群版本类型等查询集群支持的详细配置项，用于集群创建时指定。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for ShowClusterSupportConfiguration
-        :type request: :class:`huaweicloudsdkcce.v3.ShowClusterSupportConfigurationRequest`
-        :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterSupportConfigurationResponse`
-        """
-        http_info = self._show_cluster_support_configuration_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_cluster_support_configuration_invoker(self, request):
-        http_info = self._show_cluster_support_configuration_http_info(request)
-        return SyncInvoker(self, http_info)
-
-    @classmethod
-    def _show_cluster_support_configuration_http_info(cls, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/api/v3/clusters/configuration/detail",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowClusterSupportConfigurationResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'cluster_id' in local_var_params:
-            query_params.append(('cluster_id', local_var_params['cluster_id']))
-        if 'cluster_type' in local_var_params:
-            query_params.append(('cluster_type', local_var_params['cluster_type']))
-        if 'cluster_version' in local_var_params:
-            query_params.append(('cluster_version', local_var_params['cluster_version']))
-        if 'network_mode' in local_var_params:
-            query_params.append(('network_mode', local_var_params['network_mode']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def show_cluster_upgrade_info(self, request):
         r"""获取集群升级相关信息
 
@@ -4134,6 +4787,70 @@ class CceClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_feature_gates(self, request):
+        r"""查询特性开关状态
+
+        该API用于查询特性开关状态
+        &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFeatureGates
+        :type request: :class:`huaweicloudsdkcce.v3.ShowFeatureGatesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowFeatureGatesResponse`
+        """
+        http_info = self._show_feature_gates_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_feature_gates_invoker(self, request):
+        http_info = self._show_feature_gates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_feature_gates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3.1/feature-gates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFeatureGatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -4741,6 +5458,8 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'show_resources' in local_var_params:
+            query_params.append(('show_resources', local_var_params['show_resources']))
 
         header_params = {}
 
@@ -5139,6 +5858,73 @@ class CceClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_access_policy(self, request):
+        r"""更新访问策略
+
+        该API用于更新单个访问策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAccessPolicy
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateAccessPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateAccessPolicyResponse`
+        """
+        http_info = self._update_access_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_access_policy_invoker(self, request):
+        http_info = self._update_access_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_access_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/api/v3/access-policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAccessPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
 
         query_params = []
 
@@ -5836,6 +6622,8 @@ class CceClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+        if 'show_resources' in local_var_params:
+            query_params.append(('show_resources', local_var_params['show_resources']))
 
         header_params = {}
 

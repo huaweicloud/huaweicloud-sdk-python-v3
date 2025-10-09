@@ -31,9 +31,9 @@ class ConfigurationItem:
 
         The model defined in huaweicloud sdk
 
-        :param name: 组件配置项名称
+        :param name: **参数解释：** 组件配置参数名称。  [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0652.html)。](tag:hws) [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0652.html)。](tag:hws_hk) **约束限制：** 若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type name: str
-        :param value: 组件配置项值
+        :param value: **参数解释：** 组件配置参数值。  [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0652.html)。](tag:hws) [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0652.html)。](tag:hws_hk) **约束限制：** 若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type value: object
         """
         
@@ -52,7 +52,7 @@ class ConfigurationItem:
     def name(self):
         r"""Gets the name of this ConfigurationItem.
 
-        组件配置项名称
+        **参数解释：** 组件配置参数名称。  [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0652.html)。](tag:hws) [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0652.html)。](tag:hws_hk) **约束限制：** 若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The name of this ConfigurationItem.
         :rtype: str
@@ -63,7 +63,7 @@ class ConfigurationItem:
     def name(self, name):
         r"""Sets the name of this ConfigurationItem.
 
-        组件配置项名称
+        **参数解释：** 组件配置参数名称。  [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0652.html)。](tag:hws) [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0652.html)。](tag:hws_hk) **约束限制：** 若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param name: The name of this ConfigurationItem.
         :type name: str
@@ -74,7 +74,7 @@ class ConfigurationItem:
     def value(self):
         r"""Gets the value of this ConfigurationItem.
 
-        组件配置项值
+        **参数解释：** 组件配置参数值。  [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0652.html)。](tag:hws) [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0652.html)。](tag:hws_hk) **约束限制：** 若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :return: The value of this ConfigurationItem.
         :rtype: object
@@ -85,7 +85,7 @@ class ConfigurationItem:
     def value(self, value):
         r"""Sets the value of this ConfigurationItem.
 
-        组件配置项值
+        **参数解释：** 组件配置参数值。  [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/usermanual-cce/cce_10_0652.html)。](tag:hws) [当前集群支持的可配置组件及其参数详见[修改CCE集群配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)，当前节点池支持的可配置组件及其参数详见[修改节点池配置](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0652.html)。](tag:hws_hk) **约束限制：** 若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。 **取值范围：** 不涉及 **默认取值：** 不涉及 
 
         :param value: The value of this ConfigurationItem.
         :type value: object

@@ -33,6 +33,7 @@ class ShowResponseP2cVgw:
         'admin_state_up': 'bool',
         'frozen_effect': 'int',
         'version': 'str',
+        'upgrade_info': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'applied_at': 'datetime'
@@ -55,12 +56,13 @@ class ShowResponseP2cVgw:
         'admin_state_up': 'admin_state_up',
         'frozen_effect': 'frozen_effect',
         'version': 'version',
+        'upgrade_info': 'upgrade_info',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'applied_at': 'applied_at'
     }
 
-    def __init__(self, id=None, name=None, status=None, vpc_id=None, connect_subnet=None, flavor=None, availability_zone_ids=None, eip=None, max_connection_number=None, current_connection_number=None, enterprise_project_id=None, tags=None, order_id=None, admin_state_up=None, frozen_effect=None, version=None, created_at=None, updated_at=None, applied_at=None):
+    def __init__(self, id=None, name=None, status=None, vpc_id=None, connect_subnet=None, flavor=None, availability_zone_ids=None, eip=None, max_connection_number=None, current_connection_number=None, enterprise_project_id=None, tags=None, order_id=None, admin_state_up=None, frozen_effect=None, version=None, upgrade_info=None, created_at=None, updated_at=None, applied_at=None):
         r"""ShowResponseP2cVgw
 
         The model defined in huaweicloud sdk
@@ -97,6 +99,8 @@ class ShowResponseP2cVgw:
         :type frozen_effect: int
         :param version: 网关版本
         :type version: str
+        :param upgrade_info: 升级信息
+        :type upgrade_info: str
         :param created_at: 创建时间
         :type created_at: datetime
         :param updated_at: 更新时间
@@ -123,6 +127,7 @@ class ShowResponseP2cVgw:
         self._admin_state_up = None
         self._frozen_effect = None
         self._version = None
+        self._upgrade_info = None
         self._created_at = None
         self._updated_at = None
         self._applied_at = None
@@ -160,6 +165,8 @@ class ShowResponseP2cVgw:
             self.frozen_effect = frozen_effect
         if version is not None:
             self.version = version
+        if upgrade_info is not None:
+            self.upgrade_info = upgrade_info
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -514,6 +521,28 @@ class ShowResponseP2cVgw:
         :type version: str
         """
         self._version = version
+
+    @property
+    def upgrade_info(self):
+        r"""Gets the upgrade_info of this ShowResponseP2cVgw.
+
+        升级信息
+
+        :return: The upgrade_info of this ShowResponseP2cVgw.
+        :rtype: str
+        """
+        return self._upgrade_info
+
+    @upgrade_info.setter
+    def upgrade_info(self, upgrade_info):
+        r"""Sets the upgrade_info of this ShowResponseP2cVgw.
+
+        升级信息
+
+        :param upgrade_info: The upgrade_info of this ShowResponseP2cVgw.
+        :type upgrade_info: str
+        """
+        self._upgrade_info = upgrade_info
 
     @property
     def created_at(self):

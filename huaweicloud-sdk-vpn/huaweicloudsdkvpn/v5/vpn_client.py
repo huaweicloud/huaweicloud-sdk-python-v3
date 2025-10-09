@@ -1163,6 +1163,71 @@ class VpnClient(Client):
 
         return http_info
 
+    def delete_p2c_vpn_gateway_job(self, request):
+        r"""删除指定任务的记录
+
+        delete resource job
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteP2cVpnGatewayJob
+        :type request: :class:`huaweicloudsdkvpn.v5.DeleteP2cVpnGatewayJobRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.DeleteP2cVpnGatewayJobResponse`
+        """
+        http_info = self._delete_p2c_vpn_gateway_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_p2c_vpn_gateway_job_invoker(self, request):
+        http_info = self._delete_p2c_vpn_gateway_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_p2c_vpn_gateway_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteP2cVpnGatewayJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_p2c_vgw_availability_zones(self, request):
         r"""查询P2C VPN网关可用区
 
@@ -1364,6 +1429,71 @@ class VpnClient(Client):
 
         return http_info
 
+    def list_p2c_vpn_gateway_jobs(self, request):
+        r"""查询资源任务列表
+
+        list resource jobs
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListP2cVpnGatewayJobs
+        :type request: :class:`huaweicloudsdkvpn.v5.ListP2cVpnGatewayJobsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListP2cVpnGatewayJobsResponse`
+        """
+        http_info = self._list_p2c_vpn_gateway_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_p2c_vpn_gateway_jobs_invoker(self, request):
+        http_info = self._list_p2c_vpn_gateway_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_p2c_vpn_gateway_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListP2cVpnGatewayJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_p2c_vgw(self, request):
         r"""查询P2C VPN网关
 
@@ -1479,6 +1609,73 @@ class VpnClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_p2c_vpn_gateway(self, request):
+        r"""升级VPN资源
+
+        upgrade VPN resource
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeP2cVpnGateway
+        :type request: :class:`huaweicloudsdkvpn.v5.UpgradeP2cVpnGatewayRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpgradeP2cVpnGatewayResponse`
+        """
+        http_info = self._upgrade_p2c_vpn_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_p2c_vpn_gateway_invoker(self, request):
+        http_info = self._upgrade_p2c_vpn_gateway_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_p2c_vpn_gateway_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/p2c-vpn-gateways/{p2c_vgw_id}/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeP2cVpnGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'p2c_vgw_id' in local_var_params:
+            path_params['p2c_vgw_id'] = local_var_params['p2c_vgw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -3107,6 +3304,71 @@ class VpnClient(Client):
 
         return http_info
 
+    def delete_vpn_gateway_job(self, request):
+        r"""删除指定任务的记录
+
+        delete resource job
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteVpnGatewayJob
+        :type request: :class:`huaweicloudsdkvpn.v5.DeleteVpnGatewayJobRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.DeleteVpnGatewayJobResponse`
+        """
+        http_info = self._delete_vpn_gateway_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_vpn_gateway_job_invoker(self, request):
+        http_info = self._delete_vpn_gateway_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vpn_gateway_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/vpn-gateways/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpnGatewayJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_availability_zones(self, request):
         r"""查询VPN网关可用区
 
@@ -3274,6 +3536,71 @@ class VpnClient(Client):
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
             collection_formats['enterprise_project_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vpn_gateway_jobs(self, request):
+        r"""查询资源任务列表
+
+        list resource jobs
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListVpnGatewayJobs
+        :type request: :class:`huaweicloudsdkvpn.v5.ListVpnGatewayJobsRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.ListVpnGatewayJobsResponse`
+        """
+        http_info = self._list_vpn_gateway_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vpn_gateway_jobs_invoker(self, request):
+        http_info = self._list_vpn_gateway_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vpn_gateway_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-gateways/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpnGatewayJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
 
         header_params = {}
 
@@ -3555,6 +3882,73 @@ class VpnClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_vpn_gateway(self, request):
+        r"""升级VPN资源
+
+        upgrade VPN resource
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeVpnGateway
+        :type request: :class:`huaweicloudsdkvpn.v5.UpgradeVpnGatewayRequest`
+        :rtype: :class:`huaweicloudsdkvpn.v5.UpgradeVpnGatewayResponse`
+        """
+        http_info = self._upgrade_vpn_gateway_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_vpn_gateway_invoker(self, request):
+        http_info = self._upgrade_vpn_gateway_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_vpn_gateway_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/vpn-gateways/{vgw_id}/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeVpnGatewayResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vgw_id' in local_var_params:
+            path_params['vgw_id'] = local_var_params['vgw_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

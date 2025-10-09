@@ -33,11 +33,11 @@ class Taint:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键
+        :param key: **参数解释**： K8s污点的键。 **约束限制**： 必须以字母或数字开头和结尾，可以包含字母、数字、连字符、下划线和点，最长63个字符。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type key: str
-        :param value: 值
+        :param value: **参数解释**： K8s污点的值。 **约束限制**： 必须以字母或数字开头和结尾，可以包含字母、数字、连字符、下划线和点，最长63个字符。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type value: str
-        :param effect: 作用效果
+        :param effect: **参数解释**： K8s污点的作用效果。 **约束限制**： 不涉及 **取值范围**： 只可选NoSchedule，PreferNoSchedule或NoExecute。 **默认取值**： 不涉及
         :type effect: str
         """
         
@@ -57,7 +57,7 @@ class Taint:
     def key(self):
         r"""Gets the key of this Taint.
 
-        键
+        **参数解释**： K8s污点的键。 **约束限制**： 必须以字母或数字开头和结尾，可以包含字母、数字、连字符、下划线和点，最长63个字符。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The key of this Taint.
         :rtype: str
@@ -68,7 +68,7 @@ class Taint:
     def key(self, key):
         r"""Sets the key of this Taint.
 
-        键
+        **参数解释**： K8s污点的键。 **约束限制**： 必须以字母或数字开头和结尾，可以包含字母、数字、连字符、下划线和点，最长63个字符。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param key: The key of this Taint.
         :type key: str
@@ -79,7 +79,7 @@ class Taint:
     def value(self):
         r"""Gets the value of this Taint.
 
-        值
+        **参数解释**： K8s污点的值。 **约束限制**： 必须以字母或数字开头和结尾，可以包含字母、数字、连字符、下划线和点，最长63个字符。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The value of this Taint.
         :rtype: str
@@ -90,7 +90,7 @@ class Taint:
     def value(self, value):
         r"""Sets the value of this Taint.
 
-        值
+        **参数解释**： K8s污点的值。 **约束限制**： 必须以字母或数字开头和结尾，可以包含字母、数字、连字符、下划线和点，最长63个字符。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param value: The value of this Taint.
         :type value: str
@@ -101,7 +101,7 @@ class Taint:
     def effect(self):
         r"""Gets the effect of this Taint.
 
-        作用效果
+        **参数解释**： K8s污点的作用效果。 **约束限制**： 不涉及 **取值范围**： 只可选NoSchedule，PreferNoSchedule或NoExecute。 **默认取值**： 不涉及
 
         :return: The effect of this Taint.
         :rtype: str
@@ -112,7 +112,7 @@ class Taint:
     def effect(self, effect):
         r"""Sets the effect of this Taint.
 
-        作用效果
+        **参数解释**： K8s污点的作用效果。 **约束限制**： 不涉及 **取值范围**： 只可选NoSchedule，PreferNoSchedule或NoExecute。 **默认取值**： 不涉及
 
         :param effect: The effect of this Taint.
         :type effect: str

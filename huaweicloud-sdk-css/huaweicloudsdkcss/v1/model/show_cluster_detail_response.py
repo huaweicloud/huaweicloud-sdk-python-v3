@@ -50,7 +50,8 @@ class ShowClusterDetailResponse(SdkResponse):
         'support_vpcep': 'bool',
         'cmk_id': 'str',
         'order_id': 'str',
-        'current_subnet_ids': 'str'
+        'current_subnet_ids': 'str',
+        'desc': 'str'
     }
 
     attribute_map = {
@@ -86,10 +87,11 @@ class ShowClusterDetailResponse(SdkResponse):
         'support_vpcep': 'supportVpcep',
         'cmk_id': 'cmkId',
         'order_id': 'orderId',
-        'current_subnet_ids': 'currentSubnetIds'
+        'current_subnet_ids': 'currentSubnetIds',
+        'desc': 'desc'
     }
 
-    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, vpcep_ip=None, vpcep_ipv6_address=None, bandwidth_size=None, https_enable=None, disk_encrypted=None, authority_enable=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None, support_vpcep=None, cmk_id=None, order_id=None, current_subnet_ids=None):
+    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, vpcep_ip=None, vpcep_ipv6_address=None, bandwidth_size=None, https_enable=None, disk_encrypted=None, authority_enable=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None, support_vpcep=None, cmk_id=None, order_id=None, current_subnet_ids=None, desc=None):
         r"""ShowClusterDetailResponse
 
         The model defined in huaweicloud sdk
@@ -160,6 +162,8 @@ class ShowClusterDetailResponse(SdkResponse):
         :type order_id: str
         :param current_subnet_ids: 集群当前所有节点用到的子网，如果存在多个（最多支持两个），使用英文逗号隔开。
         :type current_subnet_ids: str
+        :param desc: 集群描述。
+        :type desc: str
         """
         
         super(ShowClusterDetailResponse, self).__init__()
@@ -197,6 +201,7 @@ class ShowClusterDetailResponse(SdkResponse):
         self._cmk_id = None
         self._order_id = None
         self._current_subnet_ids = None
+        self._desc = None
         self.discriminator = None
 
         if datastore is not None:
@@ -265,6 +270,8 @@ class ShowClusterDetailResponse(SdkResponse):
             self.order_id = order_id
         if current_subnet_ids is not None:
             self.current_subnet_ids = current_subnet_ids
+        if desc is not None:
+            self.desc = desc
 
     @property
     def datastore(self):
@@ -975,6 +982,28 @@ class ShowClusterDetailResponse(SdkResponse):
         :type current_subnet_ids: str
         """
         self._current_subnet_ids = current_subnet_ids
+
+    @property
+    def desc(self):
+        r"""Gets the desc of this ShowClusterDetailResponse.
+
+        集群描述。
+
+        :return: The desc of this ShowClusterDetailResponse.
+        :rtype: str
+        """
+        return self._desc
+
+    @desc.setter
+    def desc(self, desc):
+        r"""Sets the desc of this ShowClusterDetailResponse.
+
+        集群描述。
+
+        :param desc: The desc of this ShowClusterDetailResponse.
+        :type desc: str
+        """
+        self._desc = desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

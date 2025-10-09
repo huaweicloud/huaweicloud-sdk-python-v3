@@ -31,7 +31,7 @@ class ReinstallServerConfig:
 
         The model defined in huaweicloud sdk
 
-        :param user_tags: 云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
+        :param user_tags: **参数解释**： 云服务器标签（资源标签）。 **约束限制**： 键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。
         :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
         :param root_volume: 
         :type root_volume: :class:`huaweicloudsdkcce.v3.ReinstallVolumeSpec`
@@ -52,7 +52,7 @@ class ReinstallServerConfig:
     def user_tags(self):
         r"""Gets the user_tags of this ReinstallServerConfig.
 
-        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
+        **参数解释**： 云服务器标签（资源标签）。 **约束限制**： 键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。
 
         :return: The user_tags of this ReinstallServerConfig.
         :rtype: list[:class:`huaweicloudsdkcce.v3.UserTag`]
@@ -63,7 +63,7 @@ class ReinstallServerConfig:
     def user_tags(self, user_tags):
         r"""Sets the user_tags of this ReinstallServerConfig.
 
-        云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为5个。
+        **参数解释**： 云服务器标签（资源标签）。 **约束限制**： 键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。
 
         :param user_tags: The user_tags of this ReinstallServerConfig.
         :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]

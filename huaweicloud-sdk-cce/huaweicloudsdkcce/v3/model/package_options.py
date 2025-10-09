@@ -39,17 +39,17 @@ class PackageOptions:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数名称
+        :param name: **参数解释**： 参数名称 **取值范围**： 不涉及
         :type name: str
-        :param default: 参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
+        :param default: **参数解释**： 参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean **取值范围**： 不涉及
         :type default: object
-        :param valid_at: 参数生效方式  - static：节点创建时生效，后续不可修改 - immediately：节点运行中时可以修改，修改后生效 
+        :param valid_at: **参数解释**： 参数生效方式 **取值范围**： - static：集群、节点池创建时生效，后续不可修改 - immediately：集群、节点池运行中时可以修改，修改后生效
         :type valid_at: str
-        :param empty: 配置项是否可以为空  - true：配置项为空时，不使用默认值，为空值 - false：配置项为空时，使用默认值 
+        :param empty: **参数解释**： 配置项是否可以为空 **取值范围**： - true：配置项为空时，不使用默认值，为空值 - false：配置项为空时，使用默认值
         :type empty: bool
-        :param schema: 参数分类
+        :param schema: **参数解释**： 参数分类 **取值范围**： 不涉及
         :type schema: str
-        :param type: 参数类型
+        :param type: **参数解释**： 参数类型 **取值范围**： 不涉及
         :type type: str
         """
         
@@ -74,7 +74,7 @@ class PackageOptions:
     def name(self):
         r"""Gets the name of this PackageOptions.
 
-        参数名称
+        **参数解释**： 参数名称 **取值范围**： 不涉及
 
         :return: The name of this PackageOptions.
         :rtype: str
@@ -85,7 +85,7 @@ class PackageOptions:
     def name(self, name):
         r"""Sets the name of this PackageOptions.
 
-        参数名称
+        **参数解释**： 参数名称 **取值范围**： 不涉及
 
         :param name: The name of this PackageOptions.
         :type name: str
@@ -96,7 +96,7 @@ class PackageOptions:
     def default(self):
         r"""Gets the default of this PackageOptions.
 
-        参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
+        **参数解释**： 参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean **取值范围**： 不涉及
 
         :return: The default of this PackageOptions.
         :rtype: object
@@ -107,7 +107,7 @@ class PackageOptions:
     def default(self, default):
         r"""Sets the default of this PackageOptions.
 
-        参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
+        **参数解释**： 参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean **取值范围**： 不涉及
 
         :param default: The default of this PackageOptions.
         :type default: object
@@ -118,7 +118,7 @@ class PackageOptions:
     def valid_at(self):
         r"""Gets the valid_at of this PackageOptions.
 
-        参数生效方式  - static：节点创建时生效，后续不可修改 - immediately：节点运行中时可以修改，修改后生效 
+        **参数解释**： 参数生效方式 **取值范围**： - static：集群、节点池创建时生效，后续不可修改 - immediately：集群、节点池运行中时可以修改，修改后生效
 
         :return: The valid_at of this PackageOptions.
         :rtype: str
@@ -129,7 +129,7 @@ class PackageOptions:
     def valid_at(self, valid_at):
         r"""Sets the valid_at of this PackageOptions.
 
-        参数生效方式  - static：节点创建时生效，后续不可修改 - immediately：节点运行中时可以修改，修改后生效 
+        **参数解释**： 参数生效方式 **取值范围**： - static：集群、节点池创建时生效，后续不可修改 - immediately：集群、节点池运行中时可以修改，修改后生效
 
         :param valid_at: The valid_at of this PackageOptions.
         :type valid_at: str
@@ -140,7 +140,7 @@ class PackageOptions:
     def empty(self):
         r"""Gets the empty of this PackageOptions.
 
-        配置项是否可以为空  - true：配置项为空时，不使用默认值，为空值 - false：配置项为空时，使用默认值 
+        **参数解释**： 配置项是否可以为空 **取值范围**： - true：配置项为空时，不使用默认值，为空值 - false：配置项为空时，使用默认值
 
         :return: The empty of this PackageOptions.
         :rtype: bool
@@ -151,7 +151,7 @@ class PackageOptions:
     def empty(self, empty):
         r"""Sets the empty of this PackageOptions.
 
-        配置项是否可以为空  - true：配置项为空时，不使用默认值，为空值 - false：配置项为空时，使用默认值 
+        **参数解释**： 配置项是否可以为空 **取值范围**： - true：配置项为空时，不使用默认值，为空值 - false：配置项为空时，使用默认值
 
         :param empty: The empty of this PackageOptions.
         :type empty: bool
@@ -162,7 +162,7 @@ class PackageOptions:
     def schema(self):
         r"""Gets the schema of this PackageOptions.
 
-        参数分类
+        **参数解释**： 参数分类 **取值范围**： 不涉及
 
         :return: The schema of this PackageOptions.
         :rtype: str
@@ -173,7 +173,7 @@ class PackageOptions:
     def schema(self, schema):
         r"""Sets the schema of this PackageOptions.
 
-        参数分类
+        **参数解释**： 参数分类 **取值范围**： 不涉及
 
         :param schema: The schema of this PackageOptions.
         :type schema: str
@@ -184,7 +184,7 @@ class PackageOptions:
     def type(self):
         r"""Gets the type of this PackageOptions.
 
-        参数类型
+        **参数解释**： 参数类型 **取值范围**： 不涉及
 
         :return: The type of this PackageOptions.
         :rtype: str
@@ -195,7 +195,7 @@ class PackageOptions:
     def type(self, type):
         r"""Sets the type of this PackageOptions.
 
-        参数类型
+        **参数解释**： 参数类型 **取值范围**： 不涉及
 
         :param type: The type of this PackageOptions.
         :type type: str

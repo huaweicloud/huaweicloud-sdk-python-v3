@@ -18,15 +18,19 @@ class Login:
 
     openapi_types = {
         'ssh_key': 'str',
-        'user_password': 'UserPassword'
+        'user_password': 'UserPassword',
+        'remove_user_password': 'bool',
+        'remove_ssh_key': 'bool'
     }
 
     attribute_map = {
         'ssh_key': 'sshKey',
-        'user_password': 'userPassword'
+        'user_password': 'userPassword',
+        'remove_user_password': 'removeUserPassword',
+        'remove_ssh_key': 'removeSSHKey'
     }
 
-    def __init__(self, ssh_key=None, user_password=None):
+    def __init__(self, ssh_key=None, user_password=None, remove_user_password=None, remove_ssh_key=None):
         r"""Login
 
         The model defined in huaweicloud sdk
@@ -35,18 +39,28 @@ class Login:
         :type ssh_key: str
         :param user_password: 
         :type user_password: :class:`huaweicloudsdkcce.v3.UserPassword`
+        :param remove_user_password: **参数解释**： 更新节点池时，移除当前节点池密码方式登录的配置 **约束限制**： 仅更新节点池场景支持该参数，设置为true时不允许设置userPassword **取值范围**： 不涉及 **默认取值**： false
+        :type remove_user_password: bool
+        :param remove_ssh_key: **参数解释**： 更新节点池时，移除当前节点池密钥对方式登录的配置 **约束限制**： 仅更新节点池场景支持该参数，设置为true时不允许设置sshKey **取值范围**： 不涉及 **默认取值**： false
+        :type remove_ssh_key: bool
         """
         
         
 
         self._ssh_key = None
         self._user_password = None
+        self._remove_user_password = None
+        self._remove_ssh_key = None
         self.discriminator = None
 
         if ssh_key is not None:
             self.ssh_key = ssh_key
         if user_password is not None:
             self.user_password = user_password
+        if remove_user_password is not None:
+            self.remove_user_password = remove_user_password
+        if remove_ssh_key is not None:
+            self.remove_ssh_key = remove_ssh_key
 
     @property
     def ssh_key(self):
@@ -87,6 +101,50 @@ class Login:
         :type user_password: :class:`huaweicloudsdkcce.v3.UserPassword`
         """
         self._user_password = user_password
+
+    @property
+    def remove_user_password(self):
+        r"""Gets the remove_user_password of this Login.
+
+        **参数解释**： 更新节点池时，移除当前节点池密码方式登录的配置 **约束限制**： 仅更新节点池场景支持该参数，设置为true时不允许设置userPassword **取值范围**： 不涉及 **默认取值**： false
+
+        :return: The remove_user_password of this Login.
+        :rtype: bool
+        """
+        return self._remove_user_password
+
+    @remove_user_password.setter
+    def remove_user_password(self, remove_user_password):
+        r"""Sets the remove_user_password of this Login.
+
+        **参数解释**： 更新节点池时，移除当前节点池密码方式登录的配置 **约束限制**： 仅更新节点池场景支持该参数，设置为true时不允许设置userPassword **取值范围**： 不涉及 **默认取值**： false
+
+        :param remove_user_password: The remove_user_password of this Login.
+        :type remove_user_password: bool
+        """
+        self._remove_user_password = remove_user_password
+
+    @property
+    def remove_ssh_key(self):
+        r"""Gets the remove_ssh_key of this Login.
+
+        **参数解释**： 更新节点池时，移除当前节点池密钥对方式登录的配置 **约束限制**： 仅更新节点池场景支持该参数，设置为true时不允许设置sshKey **取值范围**： 不涉及 **默认取值**： false
+
+        :return: The remove_ssh_key of this Login.
+        :rtype: bool
+        """
+        return self._remove_ssh_key
+
+    @remove_ssh_key.setter
+    def remove_ssh_key(self, remove_ssh_key):
+        r"""Sets the remove_ssh_key of this Login.
+
+        **参数解释**： 更新节点池时，移除当前节点池密钥对方式登录的配置 **约束限制**： 仅更新节点池场景支持该参数，设置为true时不允许设置sshKey **取值范围**： 不涉及 **默认取值**： false
+
+        :param remove_ssh_key: The remove_ssh_key of this Login.
+        :type remove_ssh_key: bool
+        """
+        self._remove_ssh_key = remove_ssh_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

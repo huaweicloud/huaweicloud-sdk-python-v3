@@ -20,26 +20,34 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
     openapi_types = {
         'keepday': 'int',
         'period': 'str',
+        'frequency': 'str',
         'prefix': 'str',
         'bucket': 'str',
         'base_path': 'str',
         'agency': 'str',
         'enable': 'str',
-        'frequency': 'str'
+        'indices': 'str',
+        'snapshot_cmk_id': 'str',
+        'max_snapshot_bytes_per_seconds': 'str',
+        'max_restore_bytes_per_seconds': 'str'
     }
 
     attribute_map = {
         'keepday': 'keepday',
         'period': 'period',
+        'frequency': 'frequency',
         'prefix': 'prefix',
         'bucket': 'bucket',
         'base_path': 'basePath',
         'agency': 'agency',
         'enable': 'enable',
-        'frequency': 'frequency'
+        'indices': 'indices',
+        'snapshot_cmk_id': 'snapshotCmkId',
+        'max_snapshot_bytes_per_seconds': 'maxSnapshotBytesPerSeconds',
+        'max_restore_bytes_per_seconds': 'maxRestoreBytesPerSeconds'
     }
 
-    def __init__(self, keepday=None, period=None, prefix=None, bucket=None, base_path=None, agency=None, enable=None, frequency=None):
+    def __init__(self, keepday=None, period=None, frequency=None, prefix=None, bucket=None, base_path=None, agency=None, enable=None, indices=None, snapshot_cmk_id=None, max_snapshot_bytes_per_seconds=None, max_restore_bytes_per_seconds=None):
         r"""ShowAutoCreatePolicyResponse
 
         The model defined in huaweicloud sdk
@@ -48,6 +56,8 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         :type keepday: int
         :param period: 每天快照创建时刻。
         :type period: str
+        :param frequency: 自动创建快照的执行频次。
+        :type frequency: str
         :param prefix: 快照命名前缀，需要用户自己手动输入。
         :type prefix: str
         :param bucket: 快照存放的OBS桶的桶名。
@@ -58,26 +68,38 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         :type agency: str
         :param enable: 是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
         :type enable: str
-        :param frequency: 自动创建快照的执行频次。
-        :type frequency: str
+        :param indices: 需要备份的索引名。
+        :type indices: str
+        :param snapshot_cmk_id: 快照ID。
+        :type snapshot_cmk_id: str
+        :param max_snapshot_bytes_per_seconds: 配置每个节点的最大备份速率（每秒），即当备份的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际备份速率不一定能达到该值，会受OBS、磁盘等影响。
+        :type max_snapshot_bytes_per_seconds: str
+        :param max_restore_bytes_per_seconds: 配置每个节点的最大恢复速率（每秒），即当恢复的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际恢复速率不一定能达到该值，会受OBS、磁盘等影响。
+        :type max_restore_bytes_per_seconds: str
         """
         
         super(ShowAutoCreatePolicyResponse, self).__init__()
 
         self._keepday = None
         self._period = None
+        self._frequency = None
         self._prefix = None
         self._bucket = None
         self._base_path = None
         self._agency = None
         self._enable = None
-        self._frequency = None
+        self._indices = None
+        self._snapshot_cmk_id = None
+        self._max_snapshot_bytes_per_seconds = None
+        self._max_restore_bytes_per_seconds = None
         self.discriminator = None
 
         if keepday is not None:
             self.keepday = keepday
         if period is not None:
             self.period = period
+        if frequency is not None:
+            self.frequency = frequency
         if prefix is not None:
             self.prefix = prefix
         if bucket is not None:
@@ -88,8 +110,14 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
             self.agency = agency
         if enable is not None:
             self.enable = enable
-        if frequency is not None:
-            self.frequency = frequency
+        if indices is not None:
+            self.indices = indices
+        if snapshot_cmk_id is not None:
+            self.snapshot_cmk_id = snapshot_cmk_id
+        if max_snapshot_bytes_per_seconds is not None:
+            self.max_snapshot_bytes_per_seconds = max_snapshot_bytes_per_seconds
+        if max_restore_bytes_per_seconds is not None:
+            self.max_restore_bytes_per_seconds = max_restore_bytes_per_seconds
 
     @property
     def keepday(self):
@@ -134,6 +162,28 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         :type period: str
         """
         self._period = period
+
+    @property
+    def frequency(self):
+        r"""Gets the frequency of this ShowAutoCreatePolicyResponse.
+
+        自动创建快照的执行频次。
+
+        :return: The frequency of this ShowAutoCreatePolicyResponse.
+        :rtype: str
+        """
+        return self._frequency
+
+    @frequency.setter
+    def frequency(self, frequency):
+        r"""Sets the frequency of this ShowAutoCreatePolicyResponse.
+
+        自动创建快照的执行频次。
+
+        :param frequency: The frequency of this ShowAutoCreatePolicyResponse.
+        :type frequency: str
+        """
+        self._frequency = frequency
 
     @property
     def prefix(self):
@@ -246,26 +296,92 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         self._enable = enable
 
     @property
-    def frequency(self):
-        r"""Gets the frequency of this ShowAutoCreatePolicyResponse.
+    def indices(self):
+        r"""Gets the indices of this ShowAutoCreatePolicyResponse.
 
-        自动创建快照的执行频次。
+        需要备份的索引名。
 
-        :return: The frequency of this ShowAutoCreatePolicyResponse.
+        :return: The indices of this ShowAutoCreatePolicyResponse.
         :rtype: str
         """
-        return self._frequency
+        return self._indices
 
-    @frequency.setter
-    def frequency(self, frequency):
-        r"""Sets the frequency of this ShowAutoCreatePolicyResponse.
+    @indices.setter
+    def indices(self, indices):
+        r"""Sets the indices of this ShowAutoCreatePolicyResponse.
 
-        自动创建快照的执行频次。
+        需要备份的索引名。
 
-        :param frequency: The frequency of this ShowAutoCreatePolicyResponse.
-        :type frequency: str
+        :param indices: The indices of this ShowAutoCreatePolicyResponse.
+        :type indices: str
         """
-        self._frequency = frequency
+        self._indices = indices
+
+    @property
+    def snapshot_cmk_id(self):
+        r"""Gets the snapshot_cmk_id of this ShowAutoCreatePolicyResponse.
+
+        快照ID。
+
+        :return: The snapshot_cmk_id of this ShowAutoCreatePolicyResponse.
+        :rtype: str
+        """
+        return self._snapshot_cmk_id
+
+    @snapshot_cmk_id.setter
+    def snapshot_cmk_id(self, snapshot_cmk_id):
+        r"""Sets the snapshot_cmk_id of this ShowAutoCreatePolicyResponse.
+
+        快照ID。
+
+        :param snapshot_cmk_id: The snapshot_cmk_id of this ShowAutoCreatePolicyResponse.
+        :type snapshot_cmk_id: str
+        """
+        self._snapshot_cmk_id = snapshot_cmk_id
+
+    @property
+    def max_snapshot_bytes_per_seconds(self):
+        r"""Gets the max_snapshot_bytes_per_seconds of this ShowAutoCreatePolicyResponse.
+
+        配置每个节点的最大备份速率（每秒），即当备份的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际备份速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :return: The max_snapshot_bytes_per_seconds of this ShowAutoCreatePolicyResponse.
+        :rtype: str
+        """
+        return self._max_snapshot_bytes_per_seconds
+
+    @max_snapshot_bytes_per_seconds.setter
+    def max_snapshot_bytes_per_seconds(self, max_snapshot_bytes_per_seconds):
+        r"""Sets the max_snapshot_bytes_per_seconds of this ShowAutoCreatePolicyResponse.
+
+        配置每个节点的最大备份速率（每秒），即当备份的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际备份速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :param max_snapshot_bytes_per_seconds: The max_snapshot_bytes_per_seconds of this ShowAutoCreatePolicyResponse.
+        :type max_snapshot_bytes_per_seconds: str
+        """
+        self._max_snapshot_bytes_per_seconds = max_snapshot_bytes_per_seconds
+
+    @property
+    def max_restore_bytes_per_seconds(self):
+        r"""Gets the max_restore_bytes_per_seconds of this ShowAutoCreatePolicyResponse.
+
+        配置每个节点的最大恢复速率（每秒），即当恢复的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际恢复速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :return: The max_restore_bytes_per_seconds of this ShowAutoCreatePolicyResponse.
+        :rtype: str
+        """
+        return self._max_restore_bytes_per_seconds
+
+    @max_restore_bytes_per_seconds.setter
+    def max_restore_bytes_per_seconds(self, max_restore_bytes_per_seconds):
+        r"""Sets the max_restore_bytes_per_seconds of this ShowAutoCreatePolicyResponse.
+
+        配置每个节点的最大恢复速率（每秒），即当恢复的速率超过该值时会被限流，避免速率太大导致资源占用过高，影响系统稳定性。实际恢复速率不一定能达到该值，会受OBS、磁盘等影响。
+
+        :param max_restore_bytes_per_seconds: The max_restore_bytes_per_seconds of this ShowAutoCreatePolicyResponse.
+        :type max_restore_bytes_per_seconds: str
+        """
+        self._max_restore_bytes_per_seconds = max_restore_bytes_per_seconds
 
     def to_dict(self):
         """Returns the model properties as a dict"""

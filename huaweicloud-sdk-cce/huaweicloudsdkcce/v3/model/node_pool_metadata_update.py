@@ -38,7 +38,8 @@ class NodePoolMetadataUpdate:
         self._name = None
         self.discriminator = None
 
-        self.name = name
+        if name is not None:
+            self.name = name
 
     @property
     def name(self):

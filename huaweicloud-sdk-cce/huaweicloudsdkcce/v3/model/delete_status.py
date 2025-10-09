@@ -37,15 +37,15 @@ class DeleteStatus:
 
         The model defined in huaweicloud sdk
 
-        :param previous_total: 集群删除时已经存在的集群资源记录总数
+        :param previous_total: **参数解释：** 节点删除时已经存在的集群资源记录总数。 **取值范围：** 不涉及
         :type previous_total: int
-        :param current_total: 基于当前集群资源记录信息，生成实际最新资源记录总数
+        :param current_total: **参数解释：** 基于当前集群资源记录信息，生成实际最新资源记录总数。 **取值范围：** 不涉及
         :type current_total: int
-        :param updated: 集群删除时更新的资源记录总数
+        :param updated: **参数解释：** 节点删除时更新的待删除资源记录总数。 **取值范围：** 不涉及
         :type updated: int
-        :param added: 集群删除时更新的资源记录总数
+        :param added: **参数解释：** 节点删除时新增的待删除资源记录总数。 **取值范围：** 不涉及
         :type added: int
-        :param deleted: 集群删除时删除的资源记录总数
+        :param deleted: **参数解释：** 节点删除时删除的资源记录总数。 **取值范围：** 不涉及
         :type deleted: int
         """
         
@@ -73,7 +73,7 @@ class DeleteStatus:
     def previous_total(self):
         r"""Gets the previous_total of this DeleteStatus.
 
-        集群删除时已经存在的集群资源记录总数
+        **参数解释：** 节点删除时已经存在的集群资源记录总数。 **取值范围：** 不涉及
 
         :return: The previous_total of this DeleteStatus.
         :rtype: int
@@ -84,7 +84,7 @@ class DeleteStatus:
     def previous_total(self, previous_total):
         r"""Sets the previous_total of this DeleteStatus.
 
-        集群删除时已经存在的集群资源记录总数
+        **参数解释：** 节点删除时已经存在的集群资源记录总数。 **取值范围：** 不涉及
 
         :param previous_total: The previous_total of this DeleteStatus.
         :type previous_total: int
@@ -95,7 +95,7 @@ class DeleteStatus:
     def current_total(self):
         r"""Gets the current_total of this DeleteStatus.
 
-        基于当前集群资源记录信息，生成实际最新资源记录总数
+        **参数解释：** 基于当前集群资源记录信息，生成实际最新资源记录总数。 **取值范围：** 不涉及
 
         :return: The current_total of this DeleteStatus.
         :rtype: int
@@ -106,7 +106,7 @@ class DeleteStatus:
     def current_total(self, current_total):
         r"""Sets the current_total of this DeleteStatus.
 
-        基于当前集群资源记录信息，生成实际最新资源记录总数
+        **参数解释：** 基于当前集群资源记录信息，生成实际最新资源记录总数。 **取值范围：** 不涉及
 
         :param current_total: The current_total of this DeleteStatus.
         :type current_total: int
@@ -117,7 +117,7 @@ class DeleteStatus:
     def updated(self):
         r"""Gets the updated of this DeleteStatus.
 
-        集群删除时更新的资源记录总数
+        **参数解释：** 节点删除时更新的待删除资源记录总数。 **取值范围：** 不涉及
 
         :return: The updated of this DeleteStatus.
         :rtype: int
@@ -128,7 +128,7 @@ class DeleteStatus:
     def updated(self, updated):
         r"""Sets the updated of this DeleteStatus.
 
-        集群删除时更新的资源记录总数
+        **参数解释：** 节点删除时更新的待删除资源记录总数。 **取值范围：** 不涉及
 
         :param updated: The updated of this DeleteStatus.
         :type updated: int
@@ -139,7 +139,7 @@ class DeleteStatus:
     def added(self):
         r"""Gets the added of this DeleteStatus.
 
-        集群删除时更新的资源记录总数
+        **参数解释：** 节点删除时新增的待删除资源记录总数。 **取值范围：** 不涉及
 
         :return: The added of this DeleteStatus.
         :rtype: int
@@ -150,7 +150,7 @@ class DeleteStatus:
     def added(self, added):
         r"""Sets the added of this DeleteStatus.
 
-        集群删除时更新的资源记录总数
+        **参数解释：** 节点删除时新增的待删除资源记录总数。 **取值范围：** 不涉及
 
         :param added: The added of this DeleteStatus.
         :type added: int
@@ -161,7 +161,7 @@ class DeleteStatus:
     def deleted(self):
         r"""Gets the deleted of this DeleteStatus.
 
-        集群删除时删除的资源记录总数
+        **参数解释：** 节点删除时删除的资源记录总数。 **取值范围：** 不涉及
 
         :return: The deleted of this DeleteStatus.
         :rtype: int
@@ -172,7 +172,7 @@ class DeleteStatus:
     def deleted(self, deleted):
         r"""Sets the deleted of this DeleteStatus.
 
-        集群删除时删除的资源记录总数
+        **参数解释：** 节点删除时删除的资源记录总数。 **取值范围：** 不涉及
 
         :param deleted: The deleted of this DeleteStatus.
         :type deleted: int

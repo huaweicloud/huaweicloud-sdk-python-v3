@@ -19,16 +19,18 @@ class DatastoreItem:
     openapi_types = {
         'type': 'str',
         'version': 'str',
-        'patch_available': 'bool'
+        'patch_available': 'bool',
+        'whole_version': 'str'
     }
 
     attribute_map = {
         'type': 'type',
         'version': 'version',
-        'patch_available': 'patch_available'
+        'patch_available': 'patch_available',
+        'whole_version': 'whole_version'
     }
 
-    def __init__(self, type=None, version=None, patch_available=None):
+    def __init__(self, type=None, version=None, patch_available=None, whole_version=None):
         r"""DatastoreItem
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class DatastoreItem:
         :type version: str
         :param patch_available: 是否有补丁版本的数据库支持升级，返回true时可以通过升级补丁接口进行数据库升级，否则不允许升级补丁。
         :type patch_available: bool
+        :param whole_version: 数据库的完整版本号。
+        :type whole_version: str
         """
         
         
@@ -46,11 +50,13 @@ class DatastoreItem:
         self._type = None
         self._version = None
         self._patch_available = None
+        self._whole_version = None
         self.discriminator = None
 
         self.type = type
         self.version = version
         self.patch_available = patch_available
+        self.whole_version = whole_version
 
     @property
     def type(self):
@@ -117,6 +123,28 @@ class DatastoreItem:
         :type patch_available: bool
         """
         self._patch_available = patch_available
+
+    @property
+    def whole_version(self):
+        r"""Gets the whole_version of this DatastoreItem.
+
+        数据库的完整版本号。
+
+        :return: The whole_version of this DatastoreItem.
+        :rtype: str
+        """
+        return self._whole_version
+
+    @whole_version.setter
+    def whole_version(self, whole_version):
+        r"""Sets the whole_version of this DatastoreItem.
+
+        数据库的完整版本号。
+
+        :param whole_version: The whole_version of this DatastoreItem.
+        :type whole_version: str
+        """
+        self._whole_version = whole_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

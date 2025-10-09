@@ -18,7 +18,7 @@ class ClusterList:
 
     openapi_types = {
         'datastore': 'ClusterListDatastore',
-        'snapshot_policy': 'object',
+        'snapshot_policy': 'SnapshotPolicyResp',
         'instances': 'list[ClusterListInstances]',
         'public_kibana_resp': 'PublicKibanaRespBody',
         'elb_white_list': 'ElbWhiteListResp',
@@ -46,7 +46,8 @@ class ClusterList:
         'bandwidth_resource_id': 'str',
         'ipv6_endpoint': 'str',
         'cmk_id': 'str',
-        'current_subnet_ids': 'str'
+        'current_subnet_ids': 'str',
+        'desc': 'str'
     }
 
     attribute_map = {
@@ -79,18 +80,19 @@ class ClusterList:
         'bandwidth_resource_id': 'bandwidthResourceId',
         'ipv6_endpoint': 'ipv6Endpoint',
         'cmk_id': 'cmkId',
-        'current_subnet_ids': 'currentSubnetIds'
+        'current_subnet_ids': 'currentSubnetIds',
+        'desc': 'desc'
     }
 
-    def __init__(self, datastore=None, snapshot_policy=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None, cmk_id=None, current_subnet_ids=None):
+    def __init__(self, datastore=None, snapshot_policy=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None, cmk_id=None, current_subnet_ids=None, desc=None):
         r"""ClusterList
 
         The model defined in huaweicloud sdk
 
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
-        :param snapshot_policy: 集群自动快照策略相关信息。
-        :type snapshot_policy: object
+        :param snapshot_policy: 
+        :type snapshot_policy: :class:`huaweicloudsdkcss.v1.SnapshotPolicyResp`
         :param instances: 节点对象列表。
         :type instances: list[:class:`huaweicloudsdkcss.v1.ClusterListInstances`]
         :param public_kibana_resp: 
@@ -147,6 +149,8 @@ class ClusterList:
         :type cmk_id: str
         :param current_subnet_ids: 集群节点的当前子网。
         :type current_subnet_ids: str
+        :param desc: 集群描述。
+        :type desc: str
         """
         
         
@@ -181,6 +185,7 @@ class ClusterList:
         self._ipv6_endpoint = None
         self._cmk_id = None
         self._current_subnet_ids = None
+        self._desc = None
         self.discriminator = None
 
         if datastore is not None:
@@ -243,6 +248,8 @@ class ClusterList:
             self.cmk_id = cmk_id
         if current_subnet_ids is not None:
             self.current_subnet_ids = current_subnet_ids
+        if desc is not None:
+            self.desc = desc
 
     @property
     def datastore(self):
@@ -266,10 +273,8 @@ class ClusterList:
     def snapshot_policy(self):
         r"""Gets the snapshot_policy of this ClusterList.
 
-        集群自动快照策略相关信息。
-
         :return: The snapshot_policy of this ClusterList.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcss.v1.SnapshotPolicyResp`
         """
         return self._snapshot_policy
 
@@ -277,10 +282,8 @@ class ClusterList:
     def snapshot_policy(self, snapshot_policy):
         r"""Sets the snapshot_policy of this ClusterList.
 
-        集群自动快照策略相关信息。
-
         :param snapshot_policy: The snapshot_policy of this ClusterList.
-        :type snapshot_policy: object
+        :type snapshot_policy: :class:`huaweicloudsdkcss.v1.SnapshotPolicyResp`
         """
         self._snapshot_policy = snapshot_policy
 
@@ -887,6 +890,28 @@ class ClusterList:
         :type current_subnet_ids: str
         """
         self._current_subnet_ids = current_subnet_ids
+
+    @property
+    def desc(self):
+        r"""Gets the desc of this ClusterList.
+
+        集群描述。
+
+        :return: The desc of this ClusterList.
+        :rtype: str
+        """
+        return self._desc
+
+    @desc.setter
+    def desc(self, desc):
+        r"""Sets the desc of this ClusterList.
+
+        集群描述。
+
+        :param desc: The desc of this ClusterList.
+        :type desc: str
+        """
+        self._desc = desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

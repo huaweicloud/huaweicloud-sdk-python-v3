@@ -21,6 +21,7 @@ class MigrateNodesSpec:
         'extend_param': 'MigrateNodeExtendParam',
         'login': 'Login',
         'runtime': 'Runtime',
+        'server_config': 'MigrateServerConfig',
         'nodes': 'list[NodeItem]'
     }
 
@@ -29,10 +30,11 @@ class MigrateNodesSpec:
         'extend_param': 'extendParam',
         'login': 'login',
         'runtime': 'runtime',
+        'server_config': 'serverConfig',
         'nodes': 'nodes'
     }
 
-    def __init__(self, os=None, extend_param=None, login=None, runtime=None, nodes=None):
+    def __init__(self, os=None, extend_param=None, login=None, runtime=None, server_config=None, nodes=None):
         r"""MigrateNodesSpec
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class MigrateNodesSpec:
         :type login: :class:`huaweicloudsdkcce.v3.Login`
         :param runtime: 
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
+        :param server_config: 
+        :type server_config: :class:`huaweicloudsdkcce.v3.MigrateServerConfig`
         :param nodes: 待操作节点列表
         :type nodes: list[:class:`huaweicloudsdkcce.v3.NodeItem`]
         """
@@ -55,15 +59,19 @@ class MigrateNodesSpec:
         self._extend_param = None
         self._login = None
         self._runtime = None
+        self._server_config = None
         self._nodes = None
         self.discriminator = None
 
         self.os = os
         if extend_param is not None:
             self.extend_param = extend_param
-        self.login = login
+        if login is not None:
+            self.login = login
         if runtime is not None:
             self.runtime = runtime
+        if server_config is not None:
+            self.server_config = server_config
         self.nodes = nodes
 
     @property
@@ -141,6 +149,24 @@ class MigrateNodesSpec:
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
         """
         self._runtime = runtime
+
+    @property
+    def server_config(self):
+        r"""Gets the server_config of this MigrateNodesSpec.
+
+        :return: The server_config of this MigrateNodesSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.MigrateServerConfig`
+        """
+        return self._server_config
+
+    @server_config.setter
+    def server_config(self, server_config):
+        r"""Sets the server_config of this MigrateNodesSpec.
+
+        :param server_config: The server_config of this MigrateNodesSpec.
+        :type server_config: :class:`huaweicloudsdkcce.v3.MigrateServerConfig`
+        """
+        self._server_config = server_config
 
     @property
     def nodes(self):

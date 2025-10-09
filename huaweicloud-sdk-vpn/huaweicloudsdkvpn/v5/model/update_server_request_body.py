@@ -38,8 +38,7 @@ class UpdateServerRequestBody:
         self._vpn_server = None
         self.discriminator = None
 
-        if vpn_server is not None:
-            self.vpn_server = vpn_server
+        self.vpn_server = vpn_server
 
     @property
     def vpn_server(self):

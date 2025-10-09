@@ -33,7 +33,7 @@ class DatastoreResult:
 
         :param node_type: node_type参数模板节点类型。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
         :type node_type: str
-        :param version: version数据库版本。
+        :param version: version数据库版本。DDS引擎取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
         :type version: str
         """
         
@@ -72,7 +72,7 @@ class DatastoreResult:
     def version(self):
         r"""Gets the version of this DatastoreResult.
 
-        version数据库版本。
+        version数据库版本。DDS引擎取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
 
         :return: The version of this DatastoreResult.
         :rtype: str
@@ -83,7 +83,7 @@ class DatastoreResult:
     def version(self, version):
         r"""Sets the version of this DatastoreResult.
 
-        version数据库版本。
+        version数据库版本。DDS引擎取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
 
         :param version: The version of this DatastoreResult.
         :type version: str

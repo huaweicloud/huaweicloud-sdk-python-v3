@@ -31,7 +31,7 @@ class ShowClusterConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param type: 组件类型 , 合法取值为control，audit，system-addon。不填写则查询全部类型。 - control 控制面组件日志。 - audit 控制面审计日志。 - system-addon 系统插件日志。
+        :param type: **参数解释**： 组件类型，不填写则查询全部类型。  **约束限制**： 合法取值为control，audit，system-addon  **取值范围**： - control: 控制面组件日志。 - audit: 控制面审计日志。 - system-addon: 系统插件日志。  **默认取值**： 无
         :type type: str
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
@@ -51,7 +51,7 @@ class ShowClusterConfigRequest:
     def type(self):
         r"""Gets the type of this ShowClusterConfigRequest.
 
-        组件类型 , 合法取值为control，audit，system-addon。不填写则查询全部类型。 - control 控制面组件日志。 - audit 控制面审计日志。 - system-addon 系统插件日志。
+        **参数解释**： 组件类型，不填写则查询全部类型。  **约束限制**： 合法取值为control，audit，system-addon  **取值范围**： - control: 控制面组件日志。 - audit: 控制面审计日志。 - system-addon: 系统插件日志。  **默认取值**： 无
 
         :return: The type of this ShowClusterConfigRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowClusterConfigRequest:
     def type(self, type):
         r"""Sets the type of this ShowClusterConfigRequest.
 
-        组件类型 , 合法取值为control，audit，system-addon。不填写则查询全部类型。 - control 控制面组件日志。 - audit 控制面审计日志。 - system-addon 系统插件日志。
+        **参数解释**： 组件类型，不填写则查询全部类型。  **约束限制**： 合法取值为control，audit，system-addon  **取值范围**： - control: 控制面组件日志。 - audit: 控制面审计日志。 - system-addon: 系统插件日志。  **默认取值**： 无
 
         :param type: The type of this ShowClusterConfigRequest.
         :type type: str

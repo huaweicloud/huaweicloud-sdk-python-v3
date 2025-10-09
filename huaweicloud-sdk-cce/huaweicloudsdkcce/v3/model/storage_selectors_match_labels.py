@@ -43,7 +43,7 @@ class StorageSelectorsMatchLabels:
 
         :param size: 匹配的磁盘大小，不填则无磁盘大小限制。例如：100.
         :type size: str
-        :param volume_type: 云硬盘类型，目前支持SSD\\GPSSD\\SAS\\ESSD\\SATA等。
+        :param volume_type: **参数解释**： 云硬盘类型，目前支持SSD、GPSSD、SAS、ESSD、SATA等，不填则无云硬盘类型限制。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type volume_type: str
         :param iops: 匹配的磁盘iops大小，不填则无磁盘iops大小限制。当需要选择GPSSD2或ESSD2类型磁盘时，配置iops来准确选择磁盘。例如：3000.
         :type iops: str
@@ -109,7 +109,7 @@ class StorageSelectorsMatchLabels:
     def volume_type(self):
         r"""Gets the volume_type of this StorageSelectorsMatchLabels.
 
-        云硬盘类型，目前支持SSD\\GPSSD\\SAS\\ESSD\\SATA等。
+        **参数解释**： 云硬盘类型，目前支持SSD、GPSSD、SAS、ESSD、SATA等，不填则无云硬盘类型限制。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The volume_type of this StorageSelectorsMatchLabels.
         :rtype: str
@@ -120,7 +120,7 @@ class StorageSelectorsMatchLabels:
     def volume_type(self, volume_type):
         r"""Sets the volume_type of this StorageSelectorsMatchLabels.
 
-        云硬盘类型，目前支持SSD\\GPSSD\\SAS\\ESSD\\SATA等。
+        **参数解释**： 云硬盘类型，目前支持SSD、GPSSD、SAS、ESSD、SATA等，不填则无云硬盘类型限制。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param volume_type: The volume_type of this StorageSelectorsMatchLabels.
         :type volume_type: str

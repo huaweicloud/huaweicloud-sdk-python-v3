@@ -31,9 +31,9 @@ class NodeSpecUpdateNodeNameTemplate:
 
         The model defined in huaweicloud sdk
 
-        :param node_name_prefix: **参数解释**： 节点名称前缀。如果用户填写为空串或缺省，则节点名称不会增加前缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），必须以小写字母开头。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :param node_name_prefix: **参数解释**： 节点名称前缀。如果用户填写为空串或缺省，则节点名称不会增加前缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），必须以小写字母开头，并且符合[FRC 1123](https://tools.ietf.org/html/rfc1123)中定义的DNS子域名命名规范。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type node_name_prefix: str
-        :param node_name_suffix: **参数解释**： 节点名称后缀。如果用户填写为空串或缺省，则节点名称不会增加后缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），必须以小写字母开头。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :param node_name_suffix: **参数解释**： 节点名称后缀。如果用户填写为空串或缺省，则节点名称不会增加后缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），后缀结尾必须为小写字母或者数字，并且符合[FRC 1123](https://tools.ietf.org/html/rfc1123)中定义的DNS子域名命名规范。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type node_name_suffix: str
         """
         
@@ -52,7 +52,7 @@ class NodeSpecUpdateNodeNameTemplate:
     def node_name_prefix(self):
         r"""Gets the node_name_prefix of this NodeSpecUpdateNodeNameTemplate.
 
-        **参数解释**： 节点名称前缀。如果用户填写为空串或缺省，则节点名称不会增加前缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），必须以小写字母开头。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 节点名称前缀。如果用户填写为空串或缺省，则节点名称不会增加前缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），必须以小写字母开头，并且符合[FRC 1123](https://tools.ietf.org/html/rfc1123)中定义的DNS子域名命名规范。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The node_name_prefix of this NodeSpecUpdateNodeNameTemplate.
         :rtype: str
@@ -63,7 +63,7 @@ class NodeSpecUpdateNodeNameTemplate:
     def node_name_prefix(self, node_name_prefix):
         r"""Sets the node_name_prefix of this NodeSpecUpdateNodeNameTemplate.
 
-        **参数解释**： 节点名称前缀。如果用户填写为空串或缺省，则节点名称不会增加前缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），必须以小写字母开头。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 节点名称前缀。如果用户填写为空串或缺省，则节点名称不会增加前缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），必须以小写字母开头，并且符合[FRC 1123](https://tools.ietf.org/html/rfc1123)中定义的DNS子域名命名规范。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param node_name_prefix: The node_name_prefix of this NodeSpecUpdateNodeNameTemplate.
         :type node_name_prefix: str
@@ -74,7 +74,7 @@ class NodeSpecUpdateNodeNameTemplate:
     def node_name_suffix(self):
         r"""Gets the node_name_suffix of this NodeSpecUpdateNodeNameTemplate.
 
-        **参数解释**： 节点名称后缀。如果用户填写为空串或缺省，则节点名称不会增加后缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），必须以小写字母开头。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 节点名称后缀。如果用户填写为空串或缺省，则节点名称不会增加后缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），后缀结尾必须为小写字母或者数字，并且符合[FRC 1123](https://tools.ietf.org/html/rfc1123)中定义的DNS子域名命名规范。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The node_name_suffix of this NodeSpecUpdateNodeNameTemplate.
         :rtype: str
@@ -85,7 +85,7 @@ class NodeSpecUpdateNodeNameTemplate:
     def node_name_suffix(self, node_name_suffix):
         r"""Sets the node_name_suffix of this NodeSpecUpdateNodeNameTemplate.
 
-        **参数解释**： 节点名称后缀。如果用户填写为空串或缺省，则节点名称不会增加后缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），必须以小写字母开头。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 节点名称后缀。如果用户填写为空串或缺省，则节点名称不会增加后缀。 **约束限制**： 仅支持小写字母、数字、连字符（-）和点（.），后缀结尾必须为小写字母或者数字，并且符合[FRC 1123](https://tools.ietf.org/html/rfc1123)中定义的DNS子域名命名规范。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param node_name_suffix: The node_name_suffix of this NodeSpecUpdateNodeNameTemplate.
         :type node_name_suffix: str
