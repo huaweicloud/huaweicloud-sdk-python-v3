@@ -50,8 +50,8 @@ class SdkResponse(object):
         if not self._raw_content:
             self._raw_content = raw_content
 
-    def to_json_object(self):
-        return json.loads(self._raw_content.decode("utf-8")) if self._raw_content else None
+    def to_json_object(self, **kwargs):
+        return json.loads(self._raw_content.decode("utf-8"), **kwargs) if self._raw_content else None
 
 
 class FutureSdkResponse:

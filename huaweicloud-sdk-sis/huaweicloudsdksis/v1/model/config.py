@@ -22,7 +22,8 @@ class Config:
         'add_punc': 'str',
         'vocabulary_id': 'str',
         'digit_norm': 'str',
-        'need_word_info': 'str'
+        'need_word_info': 'str',
+        'auto_language_detect': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class Config:
         'add_punc': 'add_punc',
         'vocabulary_id': 'vocabulary_id',
         'digit_norm': 'digit_norm',
-        'need_word_info': 'need_word_info'
+        'need_word_info': 'need_word_info',
+        'auto_language_detect': 'auto_language_detect'
     }
 
-    def __init__(self, audio_format=None, _property=None, add_punc=None, vocabulary_id=None, digit_norm=None, need_word_info=None):
+    def __init__(self, audio_format=None, _property=None, add_punc=None, vocabulary_id=None, digit_norm=None, need_word_info=None, auto_language_detect=None):
         r"""Config
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class Config:
         :type digit_norm: str
         :param need_word_info: 表示是否在识别结果中输出分词结果信息，取值为“yes”和“no”，默认为“no”。
         :type need_word_info: str
+        :param auto_language_detect: 表示是否开启普英方自动识别，取值为“yes”和“no”，默认为“no”。
+        :type auto_language_detect: str
         """
         
         
@@ -61,6 +65,7 @@ class Config:
         self._vocabulary_id = None
         self._digit_norm = None
         self._need_word_info = None
+        self._auto_language_detect = None
         self.discriminator = None
 
         self.audio_format = audio_format
@@ -73,6 +78,8 @@ class Config:
             self.digit_norm = digit_norm
         if need_word_info is not None:
             self.need_word_info = need_word_info
+        if auto_language_detect is not None:
+            self.auto_language_detect = auto_language_detect
 
     @property
     def audio_format(self):
@@ -205,6 +212,28 @@ class Config:
         :type need_word_info: str
         """
         self._need_word_info = need_word_info
+
+    @property
+    def auto_language_detect(self):
+        r"""Gets the auto_language_detect of this Config.
+
+        表示是否开启普英方自动识别，取值为“yes”和“no”，默认为“no”。
+
+        :return: The auto_language_detect of this Config.
+        :rtype: str
+        """
+        return self._auto_language_detect
+
+    @auto_language_detect.setter
+    def auto_language_detect(self, auto_language_detect):
+        r"""Sets the auto_language_detect of this Config.
+
+        表示是否开启普英方自动识别，取值为“yes”和“no”，默认为“no”。
+
+        :param auto_language_detect: The auto_language_detect of this Config.
+        :type auto_language_detect: str
+        """
+        self._auto_language_detect = auto_language_detect
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,138 +18,80 @@ class ListPluginInfoListResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'plugin_name': 'str',
-        'port': 'str',
-        'plugin_version': 'str',
-        'installed': 'str'
+        'total_count': 'int',
+        'plugins': 'list[CustomerPluginInfoResult]'
     }
 
     attribute_map = {
-        'plugin_name': 'plugin_name',
-        'port': 'port',
-        'plugin_version': 'plugin_version',
-        'installed': 'installed'
+        'total_count': 'total_count',
+        'plugins': 'plugins'
     }
 
-    def __init__(self, plugin_name=None, port=None, plugin_version=None, installed=None):
+    def __init__(self, total_count=None, plugins=None):
         r"""ListPluginInfoListResponse
 
         The model defined in huaweicloud sdk
 
-        :param plugin_name: 插件名称
-        :type plugin_name: str
-        :param port: 端口
-        :type port: str
-        :param plugin_version: 插件版本
-        :type plugin_version: str
-        :param installed: 是否已安装
-        :type installed: str
+        :param total_count: **参数解释**: 插件数量。 **取值范围**: 不涉及。 
+        :type total_count: int
+        :param plugins: **参数解释**: 插件详细信息。 
+        :type plugins: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CustomerPluginInfoResult`]
         """
         
         super(ListPluginInfoListResponse, self).__init__()
 
-        self._plugin_name = None
-        self._port = None
-        self._plugin_version = None
-        self._installed = None
+        self._total_count = None
+        self._plugins = None
         self.discriminator = None
 
-        if plugin_name is not None:
-            self.plugin_name = plugin_name
-        if port is not None:
-            self.port = port
-        if plugin_version is not None:
-            self.plugin_version = plugin_version
-        if installed is not None:
-            self.installed = installed
+        if total_count is not None:
+            self.total_count = total_count
+        if plugins is not None:
+            self.plugins = plugins
 
     @property
-    def plugin_name(self):
-        r"""Gets the plugin_name of this ListPluginInfoListResponse.
+    def total_count(self):
+        r"""Gets the total_count of this ListPluginInfoListResponse.
 
-        插件名称
+        **参数解释**: 插件数量。 **取值范围**: 不涉及。 
 
-        :return: The plugin_name of this ListPluginInfoListResponse.
-        :rtype: str
+        :return: The total_count of this ListPluginInfoListResponse.
+        :rtype: int
         """
-        return self._plugin_name
+        return self._total_count
 
-    @plugin_name.setter
-    def plugin_name(self, plugin_name):
-        r"""Sets the plugin_name of this ListPluginInfoListResponse.
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ListPluginInfoListResponse.
 
-        插件名称
+        **参数解释**: 插件数量。 **取值范围**: 不涉及。 
 
-        :param plugin_name: The plugin_name of this ListPluginInfoListResponse.
-        :type plugin_name: str
+        :param total_count: The total_count of this ListPluginInfoListResponse.
+        :type total_count: int
         """
-        self._plugin_name = plugin_name
+        self._total_count = total_count
 
     @property
-    def port(self):
-        r"""Gets the port of this ListPluginInfoListResponse.
+    def plugins(self):
+        r"""Gets the plugins of this ListPluginInfoListResponse.
 
-        端口
+        **参数解释**: 插件详细信息。 
 
-        :return: The port of this ListPluginInfoListResponse.
-        :rtype: str
+        :return: The plugins of this ListPluginInfoListResponse.
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CustomerPluginInfoResult`]
         """
-        return self._port
+        return self._plugins
 
-    @port.setter
-    def port(self, port):
-        r"""Sets the port of this ListPluginInfoListResponse.
+    @plugins.setter
+    def plugins(self, plugins):
+        r"""Sets the plugins of this ListPluginInfoListResponse.
 
-        端口
+        **参数解释**: 插件详细信息。 
 
-        :param port: The port of this ListPluginInfoListResponse.
-        :type port: str
+        :param plugins: The plugins of this ListPluginInfoListResponse.
+        :type plugins: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.CustomerPluginInfoResult`]
         """
-        self._port = port
-
-    @property
-    def plugin_version(self):
-        r"""Gets the plugin_version of this ListPluginInfoListResponse.
-
-        插件版本
-
-        :return: The plugin_version of this ListPluginInfoListResponse.
-        :rtype: str
-        """
-        return self._plugin_version
-
-    @plugin_version.setter
-    def plugin_version(self, plugin_version):
-        r"""Sets the plugin_version of this ListPluginInfoListResponse.
-
-        插件版本
-
-        :param plugin_version: The plugin_version of this ListPluginInfoListResponse.
-        :type plugin_version: str
-        """
-        self._plugin_version = plugin_version
-
-    @property
-    def installed(self):
-        r"""Gets the installed of this ListPluginInfoListResponse.
-
-        是否已安装
-
-        :return: The installed of this ListPluginInfoListResponse.
-        :rtype: str
-        """
-        return self._installed
-
-    @installed.setter
-    def installed(self, installed):
-        r"""Sets the installed of this ListPluginInfoListResponse.
-
-        是否已安装
-
-        :param installed: The installed of this ListPluginInfoListResponse.
-        :type installed: str
-        """
-        self._installed = installed
+        self._plugins = plugins
 
     def to_dict(self):
         """Returns the model properties as a dict"""

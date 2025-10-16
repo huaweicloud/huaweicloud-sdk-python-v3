@@ -29,7 +29,7 @@ class ListSQLExcuteNodeRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param action: **参数描述**: 类型。 **约束限制**: 不涉及。 **取值范围**: - slow  **默认取值**: 不涉及。 
+        :param action: **参数解释**: 类型。 **约束限制**: 不涉及。 **取值范围**: - slow  **默认取值**: 不涉及。 
         :type action: str
         """
         
@@ -44,7 +44,7 @@ class ListSQLExcuteNodeRequestBody:
     def action(self):
         r"""Gets the action of this ListSQLExcuteNodeRequestBody.
 
-        **参数描述**: 类型。 **约束限制**: 不涉及。 **取值范围**: - slow  **默认取值**: 不涉及。 
+        **参数解释**: 类型。 **约束限制**: 不涉及。 **取值范围**: - slow  **默认取值**: 不涉及。 
 
         :return: The action of this ListSQLExcuteNodeRequestBody.
         :rtype: str
@@ -55,7 +55,7 @@ class ListSQLExcuteNodeRequestBody:
     def action(self, action):
         r"""Sets the action of this ListSQLExcuteNodeRequestBody.
 
-        **参数描述**: 类型。 **约束限制**: 不涉及。 **取值范围**: - slow  **默认取值**: 不涉及。 
+        **参数解释**: 类型。 **约束限制**: 不涉及。 **取值范围**: - slow  **默认取值**: 不涉及。 
 
         :param action: The action of this ListSQLExcuteNodeRequestBody.
         :type action: str

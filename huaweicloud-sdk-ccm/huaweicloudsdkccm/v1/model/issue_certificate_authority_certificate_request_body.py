@@ -84,7 +84,8 @@ class IssueCertificateAuthorityCertificateRequestBody:
         self.discriminator = None
 
         self.issuer_id = issuer_id
-        self.path_length = path_length
+        if path_length is not None:
+            self.path_length = path_length
         self.signature_algorithm = signature_algorithm
         self.validity = validity
         if type is not None:

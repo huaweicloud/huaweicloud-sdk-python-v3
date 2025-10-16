@@ -7144,6 +7144,351 @@ class IoTDAAsyncClient(Client):
 
         return http_info
 
+    def create_ota_module_async(self, request):
+        r"""创建OTA模块
+
+        用户可调用此接口创建产品的OTA模块,同一产品下最多自定义10个OTA模块。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateOtaModule
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateOtaModuleRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateOtaModuleResponse`
+        """
+        http_info = self._create_ota_module_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ota_module_async_invoker(self, request):
+        http_info = self._create_ota_module_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ota_module_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/ota-upgrades/modules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOtaModuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_ota_module_async(self, request):
+        r"""删除OTA模块
+
+        用户可调用此接口删除产品对应的OTA模块
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteOtaModule
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteOtaModuleRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteOtaModuleResponse`
+        """
+        http_info = self._delete_ota_module_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_ota_module_async_invoker(self, request):
+        http_info = self._delete_ota_module_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ota_module_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/ota-upgrades/modules/{module_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOtaModuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_id' in local_var_params:
+            path_params['module_id'] = local_var_params['module_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ota_modules_async(self, request):
+        r"""查询OTA模块列表
+
+        用户可调用此接口查询指定产品的OTA模块列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListOtaModules
+        :type request: :class:`huaweicloudsdkiotda.v5.ListOtaModulesRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListOtaModulesResponse`
+        """
+        http_info = self._list_ota_modules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ota_modules_async_invoker(self, request):
+        http_info = self._list_ota_modules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ota_modules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/ota-upgrades/modules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOtaModulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'product_id' in local_var_params:
+            query_params.append(('product_id', local_var_params['product_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_ota_module_async(self, request):
+        r"""查询OTA模块详情
+
+        用户可调用此接口查询OTA模块详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowOtaModule
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowOtaModuleRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowOtaModuleResponse`
+        """
+        http_info = self._show_ota_module_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ota_module_async_invoker(self, request):
+        http_info = self._show_ota_module_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ota_module_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/ota-upgrades/modules/{module_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOtaModuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_id' in local_var_params:
+            path_params['module_id'] = local_var_params['module_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ota_module_async(self, request):
+        r"""修改OTA模块
+
+        用户可调用此接口修改对应的OTA模块的别名和描述。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateOtaModule
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateOtaModuleRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateOtaModuleResponse`
+        """
+        http_info = self._update_ota_module_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ota_module_async_invoker(self, request):
+        http_info = self._update_ota_module_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ota_module_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/iot/{project_id}/ota-upgrades/modules/{module_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOtaModuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'module_id' in local_var_params:
+            path_params['module_id'] = local_var_params['module_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_ota_package_async(self, request):
         r"""创建OTA升级包
 

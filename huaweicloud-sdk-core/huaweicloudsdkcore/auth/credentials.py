@@ -29,7 +29,7 @@ from huaweicloudsdkcore.auth.internal import Iam, MetadataAccessor
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException, SdkException
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 from huaweicloudsdkcore.signer.signer import Signer, SM3Signer, DerivationAKSKSigner, P256SHA256Signer, SM2SM3Signer
-from huaweicloudsdkcore.utils import time_utils, six_utils
+from huaweicloudsdkcore.utils import time_utils, six_utils, string_utils
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.http.http_client import HttpClient
 
@@ -359,7 +359,7 @@ class BasicCredentials(Credentials):
 
             self.project_id = projects[0]["id"]
             http_client.logger.info("success to get project id of region '%s' automatically: %s",
-                                    region_id, self.project_id)
+                                    region_id, string_utils.mask(self.project_id))
             AuthCache.put_auth(ak_with_name, self.project_id)
         except ServiceResponseException as e:
             raise SdkException("Failed to get project id of region '%s' automatically, %s" % (region_id, e))
@@ -448,7 +448,7 @@ class GlobalCredentials(Credentials):
                                    "or set domain id manully: GlobalCredentials(ak, sk, domain_id)")
 
             self.domain_id = domains[0]["id"]
-            http_client.logger.info('success to get domain id automatically: %s', self.domain_id)
+            http_client.logger.info('success to get domain id automatically: %s', string_utils.mask(self.domain_id))
             AuthCache.put_auth(self.ak, self.domain_id)
         except ServiceResponseException as e:
             raise SdkException("Failed to get domain id automatically, " + str(e))

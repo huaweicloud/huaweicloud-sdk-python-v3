@@ -44,8 +44,7 @@ class ForceRedirect:
         self.discriminator = None
 
         self.switch = switch
-        if redirect_type is not None:
-            self.redirect_type = redirect_type
+        self.redirect_type = redirect_type
 
     @property
     def switch(self):

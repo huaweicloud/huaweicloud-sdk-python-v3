@@ -31,7 +31,7 @@ class UpgradeDatabaseVersionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type instance_id: str
         :param body: Body of the UpgradeDatabaseVersionRequest
         :type body: :class:`huaweicloudsdkdds.v3.UpgradeDatabaseVersionRequestBody`
@@ -51,7 +51,7 @@ class UpgradeDatabaseVersionRequest:
     def instance_id(self):
         r"""Gets the instance_id of this UpgradeDatabaseVersionRequest.
 
-        实例ID。
+        **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The instance_id of this UpgradeDatabaseVersionRequest.
         :rtype: str
@@ -62,7 +62,7 @@ class UpgradeDatabaseVersionRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this UpgradeDatabaseVersionRequest.
 
-        实例ID。
+        **参数解释：** 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param instance_id: The instance_id of this UpgradeDatabaseVersionRequest.
         :type instance_id: str

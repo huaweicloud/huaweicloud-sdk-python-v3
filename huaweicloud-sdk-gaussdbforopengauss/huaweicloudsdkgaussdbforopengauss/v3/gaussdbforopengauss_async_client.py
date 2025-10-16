@@ -4475,7 +4475,7 @@ class GaussDBforopenGaussAsyncClient(Client):
     def list_database_volume_async(self, request):
         r"""查询数据库占用空间大小列表
 
-        查询限流任务详情
+        查询数据库占用空间大小列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6746,6 +6746,10 @@ class GaussDBforopenGaussAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
         if 'plugin_name' in local_var_params:
             query_params.append(('plugin_name', local_var_params['plugin_name']))
 
@@ -7553,6 +7557,81 @@ class GaussDBforopenGaussAsyncClient(Client):
 
         return http_info
 
+    def list_session_memory_context_async(self, request):
+        r"""查询会话内存上下文列表
+
+        查询数据库实例节点的会话内存上下文列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSessionMemoryContext
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSessionMemoryContextRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSessionMemoryContextResponse`
+        """
+        http_info = self._list_session_memory_context_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_session_memory_context_async_invoker(self, request):
+        http_info = self._list_session_memory_context_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_session_memory_context_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/session/memory-context",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSessionMemoryContextResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
+        if 'session_id' in local_var_params:
+            query_params.append(('session_id', local_var_params['session_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_session_statistics_async(self, request):
         r"""查询实时会话统计
 
@@ -7601,6 +7680,148 @@ class GaussDBforopenGaussAsyncClient(Client):
             query_params.append(('order_field', local_var_params['order_field']))
         if 'order' in local_var_params:
             query_params.append(('order', local_var_params['order']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_session_top_sql_statistics_async(self, request):
+        r"""查询实时会话Top SQL统计
+
+        查询实时会话Top SQL统计。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSessionTopSqlStatistics
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSessionTopSqlStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSessionTopSqlStatisticsResponse`
+        """
+        http_info = self._list_session_top_sql_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_session_top_sql_statistics_async_invoker(self, request):
+        http_info = self._list_session_top_sql_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_session_top_sql_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/session/statistic/top-sql",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSessionTopSqlStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_session_wait_event_statistics_async(self, request):
+        r"""查询实时会话Top等待事件统计
+
+        查询实时会话Top等待事件统计。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSessionWaitEventStatistics
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSessionWaitEventStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListSessionWaitEventStatisticsResponse`
+        """
+        http_info = self._list_session_wait_event_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_session_wait_event_statistics_async_invoker(self, request):
+        http_info = self._list_session_wait_event_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_session_wait_event_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/session/statistic/wait-event",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSessionWaitEventStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'x_language' in local_var_params:

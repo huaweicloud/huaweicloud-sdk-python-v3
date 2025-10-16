@@ -21,6 +21,8 @@ class OtaPackageInfo:
         'app_id': 'str',
         'package_type': 'str',
         'product_id': 'str',
+        'product_name': 'str',
+        'module_name': 'str',
         'version': 'str',
         'support_source_versions': 'list[str]',
         'description': 'str',
@@ -33,6 +35,8 @@ class OtaPackageInfo:
         'app_id': 'app_id',
         'package_type': 'package_type',
         'product_id': 'product_id',
+        'product_name': 'product_name',
+        'module_name': 'module_name',
         'version': 'version',
         'support_source_versions': 'support_source_versions',
         'description': 'description',
@@ -40,7 +44,7 @@ class OtaPackageInfo:
         'create_time': 'create_time'
     }
 
-    def __init__(self, package_id=None, app_id=None, package_type=None, product_id=None, version=None, support_source_versions=None, description=None, custom_info=None, create_time=None):
+    def __init__(self, package_id=None, app_id=None, package_type=None, product_id=None, product_name=None, module_name=None, version=None, support_source_versions=None, description=None, custom_info=None, create_time=None):
         r"""OtaPackageInfo
 
         The model defined in huaweicloud sdk
@@ -53,6 +57,10 @@ class OtaPackageInfo:
         :type package_type: str
         :param product_id: **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
         :type product_id: str
+        :param product_name: 设备关联的产品名称
+        :type product_name: str
+        :param module_name: **参数说明**：OTA模块名称，产品下唯一且不可修改。 **取值范围**：长度不超过64，号只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
+        :type module_name: str
         :param version: **参数说明**：升级包版本号。 **取值范围**：长度不超过256，只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
         :type version: str
         :param support_source_versions: **参数说明**：支持用于升级此版本包的设备源版本号列表。最多支持20个源版本号。 **取值范围**：源版本号列表，源版本号只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
@@ -71,6 +79,8 @@ class OtaPackageInfo:
         self._app_id = None
         self._package_type = None
         self._product_id = None
+        self._product_name = None
+        self._module_name = None
         self._version = None
         self._support_source_versions = None
         self._description = None
@@ -86,6 +96,10 @@ class OtaPackageInfo:
             self.package_type = package_type
         if product_id is not None:
             self.product_id = product_id
+        if product_name is not None:
+            self.product_name = product_name
+        if module_name is not None:
+            self.module_name = module_name
         if version is not None:
             self.version = version
         if support_source_versions is not None:
@@ -184,6 +198,50 @@ class OtaPackageInfo:
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def product_name(self):
+        r"""Gets the product_name of this OtaPackageInfo.
+
+        设备关联的产品名称
+
+        :return: The product_name of this OtaPackageInfo.
+        :rtype: str
+        """
+        return self._product_name
+
+    @product_name.setter
+    def product_name(self, product_name):
+        r"""Sets the product_name of this OtaPackageInfo.
+
+        设备关联的产品名称
+
+        :param product_name: The product_name of this OtaPackageInfo.
+        :type product_name: str
+        """
+        self._product_name = product_name
+
+    @property
+    def module_name(self):
+        r"""Gets the module_name of this OtaPackageInfo.
+
+        **参数说明**：OTA模块名称，产品下唯一且不可修改。 **取值范围**：长度不超过64，号只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
+
+        :return: The module_name of this OtaPackageInfo.
+        :rtype: str
+        """
+        return self._module_name
+
+    @module_name.setter
+    def module_name(self, module_name):
+        r"""Sets the module_name of this OtaPackageInfo.
+
+        **参数说明**：OTA模块名称，产品下唯一且不可修改。 **取值范围**：长度不超过64，号只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
+
+        :param module_name: The module_name of this OtaPackageInfo.
+        :type module_name: str
+        """
+        self._module_name = module_name
 
     @property
     def version(self):

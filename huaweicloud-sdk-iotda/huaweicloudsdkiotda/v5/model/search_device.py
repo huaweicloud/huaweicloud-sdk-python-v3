@@ -32,6 +32,7 @@ class SearchDevice:
         'groups': 'object',
         'status': 'str',
         'tags': 'object',
+        'modules': 'list[ModuleSearchDTO]',
         'marker': 'str'
     }
 
@@ -51,10 +52,11 @@ class SearchDevice:
         'groups': 'groups',
         'status': 'status',
         'tags': 'tags',
+        'modules': 'modules',
         'marker': 'marker'
     }
 
-    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, fw_version=None, sw_version=None, device_sdk_version=None, product_id=None, product_name=None, groups=None, status=None, tags=None, marker=None):
+    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, fw_version=None, sw_version=None, device_sdk_version=None, product_id=None, product_name=None, groups=None, status=None, tags=None, modules=None, marker=None):
         r"""SearchDevice
 
         The model defined in huaweicloud sdk
@@ -89,6 +91,8 @@ class SearchDevice:
         :type status: str
         :param tags: 设备的标签列表。
         :type tags: object
+        :param modules: 设备的OTA模块列表。
+        :type modules: list[:class:`huaweicloudsdkiotda.v5.ModuleSearchDTO`]
         :param marker: 搜索结果记录Id。
         :type marker: str
         """
@@ -110,6 +114,7 @@ class SearchDevice:
         self._groups = None
         self._status = None
         self._tags = None
+        self._modules = None
         self._marker = None
         self.discriminator = None
 
@@ -143,6 +148,8 @@ class SearchDevice:
             self.status = status
         if tags is not None:
             self.tags = tags
+        if modules is not None:
+            self.modules = modules
         if marker is not None:
             self.marker = marker
 
@@ -475,6 +482,28 @@ class SearchDevice:
         :type tags: object
         """
         self._tags = tags
+
+    @property
+    def modules(self):
+        r"""Gets the modules of this SearchDevice.
+
+        设备的OTA模块列表。
+
+        :return: The modules of this SearchDevice.
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ModuleSearchDTO`]
+        """
+        return self._modules
+
+    @modules.setter
+    def modules(self, modules):
+        r"""Sets the modules of this SearchDevice.
+
+        设备的OTA模块列表。
+
+        :param modules: The modules of this SearchDevice.
+        :type modules: list[:class:`huaweicloudsdkiotda.v5.ModuleSearchDTO`]
+        """
+        self._modules = modules
 
     @property
     def marker(self):

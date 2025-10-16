@@ -36,6 +36,8 @@ from huaweicloudsdklive.v2.model.list_single_stream_framerate_request import Lis
 from huaweicloudsdklive.v2.model.list_single_stream_framerate_response import ListSingleStreamFramerateResponse
 from huaweicloudsdklive.v2.model.list_snapshot_data_request import ListSnapshotDataRequest
 from huaweicloudsdklive.v2.model.list_snapshot_data_response import ListSnapshotDataResponse
+from huaweicloudsdklive.v2.model.list_transcode_concurrency_num_request import ListTranscodeConcurrencyNumRequest
+from huaweicloudsdklive.v2.model.list_transcode_concurrency_num_response import ListTranscodeConcurrencyNumResponse
 from huaweicloudsdklive.v2.model.list_transcode_data_request import ListTranscodeDataRequest
 from huaweicloudsdklive.v2.model.list_transcode_data_response import ListTranscodeDataResponse
 from huaweicloudsdklive.v2.model.list_up_stream_detail_request import ListUpStreamDetailRequest
@@ -58,6 +60,7 @@ from huaweicloudsdklive.v2.model.stream_portrait import StreamPortrait
 from huaweicloudsdklive.v2.model.time_value import TimeValue
 from huaweicloudsdklive.v2.model.traffic_data import TrafficData
 from huaweicloudsdklive.v2.model.traffic_summary_data import TrafficSummaryData
+from huaweicloudsdklive.v2.model.transcode_con_num_data import TranscodeConNumData
 from huaweicloudsdklive.v2.model.transcode_data import TranscodeData
 from huaweicloudsdklive.v2.model.transcode_spec import TranscodeSpec
 from huaweicloudsdklive.v2.model.transcode_summary import TranscodeSummary

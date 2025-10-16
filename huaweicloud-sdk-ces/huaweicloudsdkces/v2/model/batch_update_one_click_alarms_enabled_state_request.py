@@ -18,7 +18,7 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
 
     openapi_types = {
         'one_click_alarm_id': 'str',
-        'body': 'BatchEnableAlarmsRequestBody'
+        'body': 'BatchUpdateOneClickAlarmsEnabledStateRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
         :param one_click_alarm_id: **参数解释**： 一键告警ID。 **约束限制**： 不涉及。 **取值范围**： 只能为字母或者数字，字符长度为[1,64] **默认取值**： 不涉及。 
         :type one_click_alarm_id: str
         :param body: Body of the BatchUpdateOneClickAlarmsEnabledStateRequest
-        :type body: :class:`huaweicloudsdkces.v2.BatchEnableAlarmsRequestBody`
+        :type body: :class:`huaweicloudsdkces.v2.BatchUpdateOneClickAlarmsEnabledStateRequestBody`
         """
         
         
@@ -74,7 +74,7 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
         r"""Gets the body of this BatchUpdateOneClickAlarmsEnabledStateRequest.
 
         :return: The body of this BatchUpdateOneClickAlarmsEnabledStateRequest.
-        :rtype: :class:`huaweicloudsdkces.v2.BatchEnableAlarmsRequestBody`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchUpdateOneClickAlarmsEnabledStateRequestBody`
         """
         return self._body
 
@@ -83,7 +83,7 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
         r"""Sets the body of this BatchUpdateOneClickAlarmsEnabledStateRequest.
 
         :param body: The body of this BatchUpdateOneClickAlarmsEnabledStateRequest.
-        :type body: :class:`huaweicloudsdkces.v2.BatchEnableAlarmsRequestBody`
+        :type body: :class:`huaweicloudsdkces.v2.BatchUpdateOneClickAlarmsEnabledStateRequestBody`
         """
         self._body = body
 

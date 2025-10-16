@@ -20,6 +20,7 @@ class ObsLocation:
         'region_name': 'str',
         'bucket_name': 'str',
         'object_key': 'str',
+        'sign_method': 'str',
         'sign': 'str'
     }
 
@@ -27,10 +28,11 @@ class ObsLocation:
         'region_name': 'region_name',
         'bucket_name': 'bucket_name',
         'object_key': 'object_key',
+        'sign_method': 'sign_method',
         'sign': 'sign'
     }
 
-    def __init__(self, region_name=None, bucket_name=None, object_key=None, sign=None):
+    def __init__(self, region_name=None, bucket_name=None, object_key=None, sign_method=None, sign=None):
         r"""ObsLocation
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ObsLocation:
         :type bucket_name: str
         :param object_key: **参数说明**：OBS对象名称(包含文件夹路径)。 **取值范围**：长度不超过1024。
         :type object_key: str
+        :param sign_method: **参数说明**： **取值范围**：只支持SHA256,不携带默认为SHA256。
+        :type sign_method: str
         :param sign: **参数说明**：SHA256算法计算出的升级包签名值。添加该升级包完成，并创建升级任务后，物联网平台向设备下发升级通知时，会下发该签名给设备。 **取值范围**：长度为64，只允许大小写字母a到f、数字的组合。
         :type sign: str
         """
@@ -50,12 +54,15 @@ class ObsLocation:
         self._region_name = None
         self._bucket_name = None
         self._object_key = None
+        self._sign_method = None
         self._sign = None
         self.discriminator = None
 
         self.region_name = region_name
         self.bucket_name = bucket_name
         self.object_key = object_key
+        if sign_method is not None:
+            self.sign_method = sign_method
         if sign is not None:
             self.sign = sign
 
@@ -124,6 +131,28 @@ class ObsLocation:
         :type object_key: str
         """
         self._object_key = object_key
+
+    @property
+    def sign_method(self):
+        r"""Gets the sign_method of this ObsLocation.
+
+        **参数说明**： **取值范围**：只支持SHA256,不携带默认为SHA256。
+
+        :return: The sign_method of this ObsLocation.
+        :rtype: str
+        """
+        return self._sign_method
+
+    @sign_method.setter
+    def sign_method(self, sign_method):
+        r"""Sets the sign_method of this ObsLocation.
+
+        **参数说明**： **取值范围**：只支持SHA256,不携带默认为SHA256。
+
+        :param sign_method: The sign_method of this ObsLocation.
+        :type sign_method: str
+        """
+        self._sign_method = sign_method
 
     @property
     def sign(self):

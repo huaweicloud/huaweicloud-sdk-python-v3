@@ -39,9 +39,9 @@ class ListHbaInfosRequest:
         :type instance_id: str
         :param x_language: **参数解释**: 语言。 **约束限制**: 不涉及。 **取值范围**: - zh-cn  - en-us  **默认取值**: en-us
         :type x_language: str
-        :param offset: **参数描述**: 分页符。从第一条数据偏移offset页数据后开始查询。例如，该参数指定为1，limit指定为10，则只展示第11-20条数据。 **约束限制**: 不涉及。 **取值范围**: [0, 2^31-1] **默认值**: 默认为0（偏移0条数据，表示从第一条数据开始查询）。 
+        :param offset: **参数解释**: 分页符。从第一条数据偏移offset页数据后开始查询。例如，该参数指定为1，limit指定为10，则只展示第11-20条数据。 **约束限制**: 不涉及。 **取值范围**: [0, 2^31-1] **默认值**: 默认为0（偏移0条数据，表示从第一条数据开始查询）。 
         :type offset: int
-        :param limit: **参数描述**: 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围**: [1, 100] **默认值**: 10 
+        :param limit: **参数解释**: 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围**: [1, 100] **默认值**: 10 
         :type limit: int
         """
         
@@ -109,7 +109,7 @@ class ListHbaInfosRequest:
     def offset(self):
         r"""Gets the offset of this ListHbaInfosRequest.
 
-        **参数描述**: 分页符。从第一条数据偏移offset页数据后开始查询。例如，该参数指定为1，limit指定为10，则只展示第11-20条数据。 **约束限制**: 不涉及。 **取值范围**: [0, 2^31-1] **默认值**: 默认为0（偏移0条数据，表示从第一条数据开始查询）。 
+        **参数解释**: 分页符。从第一条数据偏移offset页数据后开始查询。例如，该参数指定为1，limit指定为10，则只展示第11-20条数据。 **约束限制**: 不涉及。 **取值范围**: [0, 2^31-1] **默认值**: 默认为0（偏移0条数据，表示从第一条数据开始查询）。 
 
         :return: The offset of this ListHbaInfosRequest.
         :rtype: int
@@ -120,7 +120,7 @@ class ListHbaInfosRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListHbaInfosRequest.
 
-        **参数描述**: 分页符。从第一条数据偏移offset页数据后开始查询。例如，该参数指定为1，limit指定为10，则只展示第11-20条数据。 **约束限制**: 不涉及。 **取值范围**: [0, 2^31-1] **默认值**: 默认为0（偏移0条数据，表示从第一条数据开始查询）。 
+        **参数解释**: 分页符。从第一条数据偏移offset页数据后开始查询。例如，该参数指定为1，limit指定为10，则只展示第11-20条数据。 **约束限制**: 不涉及。 **取值范围**: [0, 2^31-1] **默认值**: 默认为0（偏移0条数据，表示从第一条数据开始查询）。 
 
         :param offset: The offset of this ListHbaInfosRequest.
         :type offset: int
@@ -131,7 +131,7 @@ class ListHbaInfosRequest:
     def limit(self):
         r"""Gets the limit of this ListHbaInfosRequest.
 
-        **参数描述**: 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围**: [1, 100] **默认值**: 10 
+        **参数解释**: 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围**: [1, 100] **默认值**: 10 
 
         :return: The limit of this ListHbaInfosRequest.
         :rtype: int
@@ -142,7 +142,7 @@ class ListHbaInfosRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListHbaInfosRequest.
 
-        **参数描述**: 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围**: [1, 100] **默认值**: 10 
+        **参数解释**: 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围**: [1, 100] **默认值**: 10 
 
         :param limit: The limit of this ListHbaInfosRequest.
         :type limit: int

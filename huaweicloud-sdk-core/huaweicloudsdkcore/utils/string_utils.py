@@ -43,3 +43,16 @@ def replace_invalid_character(text):
         char if 32 < ord(char) <= 126 else '_'
         for char in text
     )
+
+
+def mask(text: str, ratio: float = 0.7, char: str = '*') -> str:
+    if not text or ratio <= 0:
+        return text
+
+    if ratio >= 1:
+        return char * len(text)
+
+    mask_len = int(len(text) * ratio)
+    start = max(0, (len(text) - mask_len) // 2)
+    end = min(len(text), start + mask_len)
+    return text[:start] + char * mask_len + text[end:]

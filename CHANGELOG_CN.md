@@ -1,3 +1,281 @@
+# 3.1.171 2025-10-16
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateRuleNew**
+    - 请求参数变更
+      - `+ conditions.match.criteria.criteria`
+      - `- conditions.match.criteria.sub_criteria`
+      - `* conditions.match.criteria: list<Criteria> -> list<CriteriaItem>`
+  - **CreateRuleNew**
+    - 请求参数变更
+      - `+ conditions.match.criteria.criteria`
+      - `- conditions.match.criteria.sub_criteria`
+      - `* conditions.match.criteria: list<Criteria> -> list<CriteriaItem>`
+  - **ListRuleDetails**
+    - 响应参数变更
+      - `+ rules.conditions.match.criteria.criteria`
+      - `- rules.conditions.match.criteria.sub_criteria`
+      - `* rules.conditions.match.criteria: list<Criteria> -> list<CriteriaItem>`
+  - **UpdateFullRule**
+    - 请求参数变更
+      - `+ rules.conditions.match.criteria.criteria`
+      - `- rules.conditions.match.criteria.sub_criteria`
+      - `* rules.conditions.match.criteria: list<Criteria> -> list<CriteriaItem>`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchUpdateOneClickAlarmsEnabledState**
+    - 请求参数变更
+      - `+ retain_when_all_disabled`
+      - `* body: object<BatchEnableAlarmsRequestBody> -> object<BatchUpdateOneClickAlarmsEnabledStateRequestBody>`
+  - **BatchUpdateOneClickAlarmPoliciesEnabledState**
+    - 请求参数变更
+      - `+ retain_when_all_disabled`
+
+### HuaweiCloud SDK Config
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListPolicyStatesStatistics`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CPCS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListClusterPort`
+    - `AddClusterPort`
+    - `CheckClusterPort`
+    - `DeleteClusterPort`
+    - `SwitchCpcsToken`
+    - `ShowAuditLog`
+    - `ShowResourceDetailCertificate`
+    - `ShowResourceDetailAccessKey`
+    - `ShowStatusApp`
+    - `ShowStatusService`
+    - `ShowStatusCluster`
+    - `ShowStatusInstance`
+    - `ShowStatisticSecretKey`
+    - `ShowStatisticCertificate`
+    - `ShowStatisticInterface`
+    - `ShowStatisticResource`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`DeleteIp`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpgradeDatabaseVersion**
+    - 请求参数变更
+      - `+ is_delayed`
+
+### HuaweiCloud SDK DNS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ShowAuthorizeTxtRecord`、`CreateAuthorizeTxtRecord`、`CreateAuthorizeTxtRecordVerification`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ShowResizePreparation`、`ResizePreparation`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListSessionMemoryContext`、`ListSessionTopSqlStatistics`、`ListSessionWaitEventStatistics`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPluginInfoList**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+      - `+ plugin_name: enum value [postgis]`
+    - 响应参数变更
+      - `+ total_count`
+      - `+ plugins`
+      - `- installed`
+      - `- plugin_version`
+      - `- port`
+      - `- plugin_name`
+  - **CreateSqlLimitTask**
+    - 请求参数变更
+      - `+ sql_model`
+
+### HuaweiCloud SDK IoTDA
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListOtaModules`
+    - `CreateOtaModule`
+    - `ShowOtaModule`
+    - `UpdateOtaModule`
+    - `DeleteOtaModule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDevice**
+    - 响应参数变更
+      - `+ modules`
+  - **UpdateDevice**
+    - 响应参数变更
+      - `+ modules`
+  - **SearchDevices**
+    - 响应参数变更
+      - `+ devices.modules`
+  - **AddDevice**
+    - 响应参数变更
+      - `+ modules`
+  - **ListOtaPackageInfo**
+    - 响应参数变更
+      - `+ packages.product_name`
+      - `+ packages.module_name`
+  - **CreateOtaPackage**
+    - 请求参数变更
+      - `+ module_name`
+      - `+ file_location.obs_location.sign_method`
+    - 响应参数变更
+      - `+ product_name`
+      - `+ module_name`
+      - `+ file_location.obs_location.sign_method`
+  - **ShowOtaPackage**
+    - 响应参数变更
+      - `+ product_name`
+      - `+ module_name`
+      - `+ file_location.obs_location.sign_method`
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListTranscodeConcurrencyNum`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListSubscriberInstances`
+    - `CreateSubscription`
+    - `ListPublications`
+    - `DeletePublication`
+    - `ListDistribution`
+    - `ModifyPublication`
+    - `ListDistributorInstances`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SIS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeShortAudio**
+    - 请求参数变更
+      - `+ config.auto_language_detect`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `BatchDeleteRules`
+    - `BatchUpdateProtectStatus`
+    - `ConfirmApplicationTypes`
+    - `ConfirmDnsDomain`
+    - `ConfirmProtectionTypes`
+    - `UpdatePremiumInstanceProgress`
+    - `ConfirmTmsResourceInstances`
+    - `ListEventLog`
+    - `CreateBotMTrafficDetectionCondition`
+    - `UpdateBotMTrafficDetectionCondition`
+    - `DeleteBotMTrafficDetectionCondition`
+    - `BatchDeleteAlertNoticeConfig`
+    - `ConfirmAsyncJob`
+    - `BatchUpdateBotMRuleStatus`
+    - `BatchUpdateCcRules`
+    - `BatchUpdateCustomRules`
+    - `BatchUpdateWhiteblackipRules`
+    - `BatchUpdateIpReputationRules`
+    - `BatchUpdateAntitamperRules`
+    - `BatchUpdateAntileakageRules`
+    - `BatchUpdateIgnoreRules`
+    - `BatchUpdatePrivacyRules`
+    - `CreateAgency`
+    - `DeleteAgency`
+    - `DeleteAlertNoticeConfig`
+    - `BatchCreatePrivacyRule`
+    - `BatchCreateGeoIpRule`
+    - `BatchCreateAntiTamperRule`
+    - `BatchCreateAntileakageRule`
+    - `BatchCreateIpReputationRule`
+    - `BatchCreateCcRule`
+    - `BatchCreateCustomRule`
+    - `BatchCreateWhiteblackipRule`
+    - `BatchCreateIgnoreRule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`BatchDeleteCcRules`
+
 # 3.1.170 2025-10-09
 
 ### HuaweiCloud SDK CCE

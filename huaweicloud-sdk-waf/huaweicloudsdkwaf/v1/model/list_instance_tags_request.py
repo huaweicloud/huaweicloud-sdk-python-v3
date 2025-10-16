@@ -17,29 +17,57 @@ class ListInstanceTagsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'resourceid': 'str',
         'enterprise_project_id': 'str'
     }
 
     attribute_map = {
+        'resourceid': 'resourceid',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, enterprise_project_id=None):
+    def __init__(self, resourceid=None, enterprise_project_id=None):
         r"""ListInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
+        :param resourceid: **参数解释：** 资源类型，目前支持waf和waf-instance **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
+        :type resourceid: str
         :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
         :type enterprise_project_id: str
         """
         
         
 
+        self._resourceid = None
         self._enterprise_project_id = None
         self.discriminator = None
 
+        self.resourceid = resourceid
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+
+    @property
+    def resourceid(self):
+        r"""Gets the resourceid of this ListInstanceTagsRequest.
+
+        **参数解释：** 资源类型，目前支持waf和waf-instance **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
+
+        :return: The resourceid of this ListInstanceTagsRequest.
+        :rtype: str
+        """
+        return self._resourceid
+
+    @resourceid.setter
+    def resourceid(self, resourceid):
+        r"""Sets the resourceid of this ListInstanceTagsRequest.
+
+        **参数解释：** 资源类型，目前支持waf和waf-instance **约束限制：** 不涉及 **取值范围：** 只能由英文字母、数字组成，且长度为32个字符。 **默认取值：** 不涉及
+
+        :param resourceid: The resourceid of this ListInstanceTagsRequest.
+        :type resourceid: str
+        """
+        self._resourceid = resourceid
 
     @property
     def enterprise_project_id(self):

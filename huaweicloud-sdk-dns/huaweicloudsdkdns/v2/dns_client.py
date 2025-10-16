@@ -773,6 +773,144 @@ class DnsClient(Client):
 
         return http_info
 
+    def create_authorize_txt_record(self, request):
+        r"""创建公网子域名授权
+
+        当创建子域名时提示“域名与其他租户冲突，你需要添加TXT授权校验”，通过调用当前接口生成子域名授权的TXT记录验证信息。
+        
+        **[公网域名为全局资源，请选择“华北-北京四（cn-north-4）”区域调用。](tag:hws)**
+        **[公网域名为全局资源，请选择“亚太-新加坡（ap-southeast-3）”区域调用。](tag:hws_hk)**
+        
+        &gt; TXT记录验证信息生成后，请前往主域名所属的DNS服务商处添加相应的TXT类型解析记录，主机记录和记录值与验证信息保持一致。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAuthorizeTxtRecord
+        :type request: :class:`huaweicloudsdkdns.v2.CreateAuthorizeTxtRecordRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateAuthorizeTxtRecordResponse`
+        """
+        http_info = self._create_authorize_txt_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_authorize_txt_record_invoker(self, request):
+        http_info = self._create_authorize_txt_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_authorize_txt_record_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/authorize-txtrecord",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuthorizeTxtRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_authorize_txt_record_verification(self, request):
+        r"""验证公网子域名授权
+
+        用户在主域名所属DNS服务商处添加TXT类型解析记录后，调用当前接口验证子域名授权状态。
+        
+        **[公网域名为全局资源，请选择“华北-北京四（cn-north-4）”区域调用。](tag:hws)**
+        **[公网域名为全局资源，请选择“亚太-新加坡（ap-southeast-3）”区域调用。](tag:hws_hk)**
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAuthorizeTxtRecordVerification
+        :type request: :class:`huaweicloudsdkdns.v2.CreateAuthorizeTxtRecordVerificationRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateAuthorizeTxtRecordVerificationResponse`
+        """
+        http_info = self._create_authorize_txt_record_verification_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_authorize_txt_record_verification_invoker(self, request):
+        http_info = self._create_authorize_txt_record_verification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_authorize_txt_record_verification_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/authorize-txtrecord/{id}/verify",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuthorizeTxtRecordVerificationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_custom_line(self, request):
         r"""创建自定义线路
 
@@ -2943,6 +3081,74 @@ class DnsClient(Client):
             path_params['version'] = local_var_params['version']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_authorize_txt_record(self, request):
+        r"""查询公网子域名授权
+
+        查询已生成的子域名授权TXT记录验证信息。
+        
+        **[公网域名为全局资源，请选择“华北-北京四（cn-north-4）”区域调用。](tag:hws)**
+        **[公网域名为全局资源，请选择“亚太-新加坡（ap-southeast-3）”区域调用。](tag:hws_hk)**
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAuthorizeTxtRecord
+        :type request: :class:`huaweicloudsdkdns.v2.ShowAuthorizeTxtRecordRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.ShowAuthorizeTxtRecordResponse`
+        """
+        http_info = self._show_authorize_txt_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_authorize_txt_record_invoker(self, request):
+        http_info = self._show_authorize_txt_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_authorize_txt_record_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/authorize-txtrecord",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuthorizeTxtRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'zone_name' in local_var_params:
+            query_params.append(('zone_name', local_var_params['zone_name']))
 
         header_params = {}
 

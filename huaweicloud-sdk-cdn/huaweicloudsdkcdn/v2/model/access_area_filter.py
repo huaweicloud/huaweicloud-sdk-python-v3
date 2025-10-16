@@ -58,14 +58,11 @@ class AccessAreaFilter:
         self._exception_ip = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if content_type is not None:
-            self.content_type = content_type
+        self.type = type
+        self.content_type = content_type
         if content_value is not None:
             self.content_value = content_value
-        if area is not None:
-            self.area = area
+        self.area = area
         if exception_ip is not None:
             self.exception_ip = exception_ip
 

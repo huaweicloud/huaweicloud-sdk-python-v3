@@ -37,6 +37,7 @@ class AddDeviceResponse(SdkResponse):
         'connection_status_update_time': 'str',
         'active_time': 'str',
         'tags': 'list[TagV5DTO]',
+        'modules': 'list[ModuleDTO]',
         'extension_info': 'object'
     }
 
@@ -60,10 +61,11 @@ class AddDeviceResponse(SdkResponse):
         'connection_status_update_time': 'connection_status_update_time',
         'active_time': 'active_time',
         'tags': 'tags',
+        'modules': 'modules',
         'extension_info': 'extension_info'
     }
 
-    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, device_sdk_version=None, auth_info=None, product_id=None, product_name=None, status=None, create_time=None, connection_status_update_time=None, active_time=None, tags=None, extension_info=None):
+    def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, description=None, fw_version=None, sw_version=None, device_sdk_version=None, auth_info=None, product_id=None, product_name=None, status=None, create_time=None, connection_status_update_time=None, active_time=None, tags=None, modules=None, extension_info=None):
         r"""AddDeviceResponse
 
         The model defined in huaweicloud sdk
@@ -106,6 +108,8 @@ class AddDeviceResponse(SdkResponse):
         :type active_time: str
         :param tags: 设备的标签列表。
         :type tags: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
+        :param modules: 设备的OTA模块列表。
+        :type modules: list[:class:`huaweicloudsdkiotda.v5.ModuleDTO`]
         :param extension_info: 设备扩展信息。用户可以自定义任何想要的扩展信息，如果在创建设备时为子设备指定该字段，将会通过MQTT接口“平台通知网关子设备新增“将该信息通知给网关。
         :type extension_info: object
         """
@@ -131,6 +135,7 @@ class AddDeviceResponse(SdkResponse):
         self._connection_status_update_time = None
         self._active_time = None
         self._tags = None
+        self._modules = None
         self._extension_info = None
         self.discriminator = None
 
@@ -172,6 +177,8 @@ class AddDeviceResponse(SdkResponse):
             self.active_time = active_time
         if tags is not None:
             self.tags = tags
+        if modules is not None:
+            self.modules = modules
         if extension_info is not None:
             self.extension_info = extension_info
 
@@ -588,6 +595,28 @@ class AddDeviceResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkiotda.v5.TagV5DTO`]
         """
         self._tags = tags
+
+    @property
+    def modules(self):
+        r"""Gets the modules of this AddDeviceResponse.
+
+        设备的OTA模块列表。
+
+        :return: The modules of this AddDeviceResponse.
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ModuleDTO`]
+        """
+        return self._modules
+
+    @modules.setter
+    def modules(self, modules):
+        r"""Sets the modules of this AddDeviceResponse.
+
+        设备的OTA模块列表。
+
+        :param modules: The modules of this AddDeviceResponse.
+        :type modules: list[:class:`huaweicloudsdkiotda.v5.ModuleDTO`]
+        """
+        self._modules = modules
 
     @property
     def extension_info(self):

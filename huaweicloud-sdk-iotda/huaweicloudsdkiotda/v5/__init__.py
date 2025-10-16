@@ -106,6 +106,9 @@ from huaweicloudsdkiotda.v5.model.create_message_request import CreateMessageReq
 from huaweicloudsdkiotda.v5.model.create_message_response import CreateMessageResponse
 from huaweicloudsdkiotda.v5.model.create_or_delete_device_in_group_request import CreateOrDeleteDeviceInGroupRequest
 from huaweicloudsdkiotda.v5.model.create_or_delete_device_in_group_response import CreateOrDeleteDeviceInGroupResponse
+from huaweicloudsdkiotda.v5.model.create_ota_module import CreateOtaModule
+from huaweicloudsdkiotda.v5.model.create_ota_module_request import CreateOtaModuleRequest
+from huaweicloudsdkiotda.v5.model.create_ota_module_response import CreateOtaModuleResponse
 from huaweicloudsdkiotda.v5.model.create_ota_package import CreateOtaPackage
 from huaweicloudsdkiotda.v5.model.create_ota_package_request import CreateOtaPackageRequest
 from huaweicloudsdkiotda.v5.model.create_ota_package_response import CreateOtaPackageResponse
@@ -163,6 +166,8 @@ from huaweicloudsdkiotda.v5.model.delete_functions_request import DeleteFunction
 from huaweicloudsdkiotda.v5.model.delete_functions_response import DeleteFunctionsResponse
 from huaweicloudsdkiotda.v5.model.delete_harmony_soft_bus_request import DeleteHarmonySoftBusRequest
 from huaweicloudsdkiotda.v5.model.delete_harmony_soft_bus_response import DeleteHarmonySoftBusResponse
+from huaweicloudsdkiotda.v5.model.delete_ota_module_request import DeleteOtaModuleRequest
+from huaweicloudsdkiotda.v5.model.delete_ota_module_response import DeleteOtaModuleResponse
 from huaweicloudsdkiotda.v5.model.delete_ota_package_request import DeleteOtaPackageRequest
 from huaweicloudsdkiotda.v5.model.delete_ota_package_response import DeleteOtaPackageResponse
 from huaweicloudsdkiotda.v5.model.delete_product_request import DeleteProductRequest
@@ -259,6 +264,8 @@ from huaweicloudsdkiotda.v5.model.list_functions_request import ListFunctionsReq
 from huaweicloudsdkiotda.v5.model.list_functions_response import ListFunctionsResponse
 from huaweicloudsdkiotda.v5.model.list_harmony_soft_bus_request import ListHarmonySoftBusRequest
 from huaweicloudsdkiotda.v5.model.list_harmony_soft_bus_response import ListHarmonySoftBusResponse
+from huaweicloudsdkiotda.v5.model.list_ota_modules_request import ListOtaModulesRequest
+from huaweicloudsdkiotda.v5.model.list_ota_modules_response import ListOtaModulesResponse
 from huaweicloudsdkiotda.v5.model.list_ota_package_info_request import ListOtaPackageInfoRequest
 from huaweicloudsdkiotda.v5.model.list_ota_package_info_response import ListOtaPackageInfoResponse
 from huaweicloudsdkiotda.v5.model.list_products_request import ListProductsRequest
@@ -282,11 +289,14 @@ from huaweicloudsdkiotda.v5.model.list_rules_response import ListRulesResponse
 from huaweicloudsdkiotda.v5.model.list_security_profiles_request import ListSecurityProfilesRequest
 from huaweicloudsdkiotda.v5.model.list_security_profiles_response import ListSecurityProfilesResponse
 from huaweicloudsdkiotda.v5.model.message_result import MessageResult
+from huaweicloudsdkiotda.v5.model.module_dto import ModuleDTO
+from huaweicloudsdkiotda.v5.model.module_search_dto import ModuleSearchDTO
 from huaweicloudsdkiotda.v5.model.mrs_kafka_forwarding import MrsKafkaForwarding
 from huaweicloudsdkiotda.v5.model.mysql_forwarding import MysqlForwarding
 from huaweicloudsdkiotda.v5.model.net_address import NetAddress
 from huaweicloudsdkiotda.v5.model.obs_forwarding import ObsForwarding
 from huaweicloudsdkiotda.v5.model.obs_location import ObsLocation
+from huaweicloudsdkiotda.v5.model.ota_module_info import OtaModuleInfo
 from huaweicloudsdkiotda.v5.model.ota_package_info import OtaPackageInfo
 from huaweicloudsdkiotda.v5.model.page import Page
 from huaweicloudsdkiotda.v5.model.page_info import PageInfo
@@ -372,6 +382,8 @@ from huaweicloudsdkiotda.v5.model.show_devices_in_group_request import ShowDevic
 from huaweicloudsdkiotda.v5.model.show_devices_in_group_response import ShowDevicesInGroupResponse
 from huaweicloudsdkiotda.v5.model.show_harmony_soft_bus_request import ShowHarmonySoftBusRequest
 from huaweicloudsdkiotda.v5.model.show_harmony_soft_bus_response import ShowHarmonySoftBusResponse
+from huaweicloudsdkiotda.v5.model.show_ota_module_request import ShowOtaModuleRequest
+from huaweicloudsdkiotda.v5.model.show_ota_module_response import ShowOtaModuleResponse
 from huaweicloudsdkiotda.v5.model.show_ota_package_request import ShowOtaPackageRequest
 from huaweicloudsdkiotda.v5.model.show_ota_package_response import ShowOtaPackageResponse
 from huaweicloudsdkiotda.v5.model.show_product_request import ShowProductRequest
@@ -457,6 +469,9 @@ from huaweicloudsdkiotda.v5.model.update_device_response import UpdateDeviceResp
 from huaweicloudsdkiotda.v5.model.update_device_shadow_desired_data_request import UpdateDeviceShadowDesiredDataRequest
 from huaweicloudsdkiotda.v5.model.update_device_shadow_desired_data_response import UpdateDeviceShadowDesiredDataResponse
 from huaweicloudsdkiotda.v5.model.update_flow_control_policy import UpdateFlowControlPolicy
+from huaweicloudsdkiotda.v5.model.update_ota_module import UpdateOtaModule
+from huaweicloudsdkiotda.v5.model.update_ota_module_request import UpdateOtaModuleRequest
+from huaweicloudsdkiotda.v5.model.update_ota_module_response import UpdateOtaModuleResponse
 from huaweicloudsdkiotda.v5.model.update_product import UpdateProduct
 from huaweicloudsdkiotda.v5.model.update_product_request import UpdateProductRequest
 from huaweicloudsdkiotda.v5.model.update_product_response import UpdateProductResponse

@@ -61,7 +61,8 @@ class DomainBody:
         self.domain_name = domain_name
         self.business_type = business_type
         self.sources = sources
-        self.service_area = service_area
+        if service_area is not None:
+            self.service_area = service_area
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 

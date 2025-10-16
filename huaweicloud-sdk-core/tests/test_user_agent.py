@@ -84,3 +84,6 @@ def test_write_app_id_file_error(mock_platform, mock_file_utils):
         assert not agent._app_id
         assert agent.user_agent == "os/Linux#5.10.0#x86_64 python/3.6.8 impl/CPython"
 
+if __name__ == '__main__':
+    pytest.main()
+

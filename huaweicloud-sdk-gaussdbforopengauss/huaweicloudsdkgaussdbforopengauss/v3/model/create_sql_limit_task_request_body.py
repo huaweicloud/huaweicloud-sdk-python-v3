@@ -20,6 +20,7 @@ class CreateSqlLimitTaskRequestBody:
         'task_scope': 'str',
         'start_time': 'str',
         'end_time': 'str',
+        'sql_model': 'str',
         'limit_type': 'str',
         'limit_type_value': 'str',
         'key_words': 'str',
@@ -35,6 +36,7 @@ class CreateSqlLimitTaskRequestBody:
         'task_scope': 'task_scope',
         'start_time': 'start_time',
         'end_time': 'end_time',
+        'sql_model': 'sql_model',
         'limit_type': 'limit_type',
         'limit_type_value': 'limit_type_value',
         'key_words': 'key_words',
@@ -46,7 +48,7 @@ class CreateSqlLimitTaskRequestBody:
         'node_infos': 'node_infos'
     }
 
-    def __init__(self, task_scope=None, start_time=None, end_time=None, limit_type=None, limit_type_value=None, key_words=None, task_name=None, parallel_size=None, cpu_utilization=None, memory_utilization=None, databases=None, node_infos=None):
+    def __init__(self, task_scope=None, start_time=None, end_time=None, sql_model=None, limit_type=None, limit_type_value=None, key_words=None, task_name=None, parallel_size=None, cpu_utilization=None, memory_utilization=None, databases=None, node_infos=None):
         r"""CreateSqlLimitTaskRequestBody
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class CreateSqlLimitTaskRequestBody:
         :type start_time: str
         :param end_time: **参数解释**: 任务结束时间。 **约束限制**: 当“task_scope”为SQL时必传。 **取值范围**: 大于任务开始时间，格式必须为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。 **默认取值**: 不涉及。
         :type end_time: str
+        :param sql_model: **参数解释**: SQL模板。 **约束限制**: 如果“limit_type”为SQLID，必传。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        :type sql_model: str
         :param limit_type: **参数解释**: 限流类型。 **约束限制**: 不涉及。 **取值范围**: - 当“task_scope”为SQL时，可选SQL_ID、SQL_TYPE类型。 - 当“task_scope”为SESSION时，可选SESSION_ACTIVE_MAX_COUNT类型。  **默认取值**: 不涉及。
         :type limit_type: str
         :param limit_type_value: **参数解释**: 限流类型值。 **约束限制**: 不涉及。 **取值范围**: - 当“limit_type”为SQL_ID类型时，该值为选中模板的sql_id。 - 当“limit_type”为SQL_TYPE类型时，值为SQL类型，目前支持select，update，insert，delete，merge。 - 当“limit_type”为SESSION_ACTIVE_MAX_COUNT类型时，只支持CPU_OR_MEMORY一种值。  **默认取值**: 不涉及。
@@ -82,6 +86,7 @@ class CreateSqlLimitTaskRequestBody:
         self._task_scope = None
         self._start_time = None
         self._end_time = None
+        self._sql_model = None
         self._limit_type = None
         self._limit_type_value = None
         self._key_words = None
@@ -98,6 +103,8 @@ class CreateSqlLimitTaskRequestBody:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
+        if sql_model is not None:
+            self.sql_model = sql_model
         self.limit_type = limit_type
         if limit_type_value is not None:
             self.limit_type_value = limit_type_value
@@ -179,6 +186,28 @@ class CreateSqlLimitTaskRequestBody:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def sql_model(self):
+        r"""Gets the sql_model of this CreateSqlLimitTaskRequestBody.
+
+        **参数解释**: SQL模板。 **约束限制**: 如果“limit_type”为SQLID，必传。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :return: The sql_model of this CreateSqlLimitTaskRequestBody.
+        :rtype: str
+        """
+        return self._sql_model
+
+    @sql_model.setter
+    def sql_model(self, sql_model):
+        r"""Sets the sql_model of this CreateSqlLimitTaskRequestBody.
+
+        **参数解释**: SQL模板。 **约束限制**: 如果“limit_type”为SQLID，必传。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :param sql_model: The sql_model of this CreateSqlLimitTaskRequestBody.
+        :type sql_model: str
+        """
+        self._sql_model = sql_model
 
     @property
     def limit_type(self):

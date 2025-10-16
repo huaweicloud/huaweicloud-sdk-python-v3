@@ -862,6 +862,81 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def list_transcode_concurrency_num_async(self, request):
+        r"""查询推流域名转码路数
+
+        查询推流域名下的转码路数，根据输入时间点和时间粒度，返回转码路数。
+        最大查询跨度1天，最大查询周期90天，数据延迟5分钟。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTranscodeConcurrencyNum
+        :type request: :class:`huaweicloudsdklive.v2.ListTranscodeConcurrencyNumRequest`
+        :rtype: :class:`huaweicloudsdklive.v2.ListTranscodeConcurrencyNumResponse`
+        """
+        http_info = self._list_transcode_concurrency_num_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_transcode_concurrency_num_async_invoker(self, request):
+        http_info = self._list_transcode_concurrency_num_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_transcode_concurrency_num_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/stats/transcode/concurrency",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTranscodeConcurrencyNumResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'publish_domains' in local_var_params:
+            query_params.append(('publish_domains', local_var_params['publish_domains']))
+            collection_formats['publish_domains'] = 'csv'
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+        if 'interval' in local_var_params:
+            query_params.append(('interval', local_var_params['interval']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_transcode_data_async(self, request):
         r"""查询转码用量接口
 

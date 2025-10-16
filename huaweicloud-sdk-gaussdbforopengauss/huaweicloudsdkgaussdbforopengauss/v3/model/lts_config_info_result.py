@@ -49,7 +49,7 @@ class LtsConfigInfoResult:
 
         :param log_group_name: **参数解释**: LTS日志组名称。 **取值范围**: 不涉及。
         :type log_group_name: str
-        :param log_group_id: **参数解释**: LTS日志组ID。 **取值范围**: 不涉及。LTS日志组ID
+        :param log_group_id: **参数解释**: LTS日志组ID。 **取值范围**: 不涉及。
         :type log_group_id: str
         :param group_log_type: **参数解释**: LTS日志组类别。 **取值范围**: 通常为asp_log，标识为智能运维专用日志组。
         :type group_log_type: str
@@ -130,7 +130,7 @@ class LtsConfigInfoResult:
     def log_group_id(self):
         r"""Gets the log_group_id of this LtsConfigInfoResult.
 
-        **参数解释**: LTS日志组ID。 **取值范围**: 不涉及。LTS日志组ID
+        **参数解释**: LTS日志组ID。 **取值范围**: 不涉及。
 
         :return: The log_group_id of this LtsConfigInfoResult.
         :rtype: str
@@ -141,7 +141,7 @@ class LtsConfigInfoResult:
     def log_group_id(self, log_group_id):
         r"""Sets the log_group_id of this LtsConfigInfoResult.
 
-        **参数解释**: LTS日志组ID。 **取值范围**: 不涉及。LTS日志组ID
+        **参数解释**: LTS日志组ID。 **取值范围**: 不涉及。
 
         :param log_group_id: The log_group_id of this LtsConfigInfoResult.
         :type log_group_id: str

@@ -78,8 +78,7 @@ class CacheRules:
         self._url_parameter_value = None
         self.discriminator = None
 
-        if match_type is not None:
-            self.match_type = match_type
+        self.match_type = match_type
         if match_value is not None:
             self.match_value = match_value
         if ttl is not None:

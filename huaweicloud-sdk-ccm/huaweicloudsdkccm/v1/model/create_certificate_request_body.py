@@ -84,8 +84,10 @@ class CreateCertificateRequestBody:
         self.discriminator = None
 
         self.issuer_id = issuer_id
-        self.key_algorithm = key_algorithm
-        self.signature_algorithm = signature_algorithm
+        if key_algorithm is not None:
+            self.key_algorithm = key_algorithm
+        if signature_algorithm is not None:
+            self.signature_algorithm = signature_algorithm
         self.distinguished_name = distinguished_name
         self.validity = validity
         if key_usages is not None:

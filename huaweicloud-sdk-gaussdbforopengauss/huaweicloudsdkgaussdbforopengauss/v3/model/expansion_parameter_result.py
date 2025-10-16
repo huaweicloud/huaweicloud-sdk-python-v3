@@ -49,7 +49,7 @@ class ExpansionParameterResult:
         :type value_range: str
         :param type: **参数解释**: 参数类型。 **取值范围**: - integer：整数。 - boolean：布尔类型。 - string：字符串。
         :type type: str
-        :param description: **参数解释**: 参数描述。 **取值范围**: 不涉及。
+        :param description: **参数解释**: 参数解释。 **取值范围**: 不涉及。
         :type description: str
         """
         
@@ -190,7 +190,7 @@ class ExpansionParameterResult:
     def description(self):
         r"""Gets the description of this ExpansionParameterResult.
 
-        **参数解释**: 参数描述。 **取值范围**: 不涉及。
+        **参数解释**: 参数解释。 **取值范围**: 不涉及。
 
         :return: The description of this ExpansionParameterResult.
         :rtype: str
@@ -201,7 +201,7 @@ class ExpansionParameterResult:
     def description(self, description):
         r"""Sets the description of this ExpansionParameterResult.
 
-        **参数解释**: 参数描述。 **取值范围**: 不涉及。
+        **参数解释**: 参数解释。 **取值范围**: 不涉及。
 
         :param description: The description of this ExpansionParameterResult.
         :type description: str

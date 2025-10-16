@@ -65,7 +65,7 @@ from huaweicloudsdkcdn.v2.model.create_tags_request import CreateTagsRequest
 from huaweicloudsdkcdn.v2.model.create_tags_request_body import CreateTagsRequestBody
 from huaweicloudsdkcdn.v2.model.create_tags_response import CreateTagsResponse
 from huaweicloudsdkcdn.v2.model.create_template_request_body import CreateTemplateRequestBody
-from huaweicloudsdkcdn.v2.model.criteria import Criteria
+from huaweicloudsdkcdn.v2.model.criteria_item import CriteriaItem
 from huaweicloudsdkcdn.v2.model.custom_args import CustomArgs
 from huaweicloudsdkcdn.v2.model.delete_domain_request import DeleteDomainRequest
 from huaweicloudsdkcdn.v2.model.delete_domain_response import DeleteDomainResponse

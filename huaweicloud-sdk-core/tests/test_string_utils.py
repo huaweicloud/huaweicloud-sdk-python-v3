@@ -19,8 +19,9 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+import pytest
 
-from huaweicloudsdkcore.utils.string_utils import replace_invalid_character
+from huaweicloudsdkcore.utils.string_utils import replace_invalid_character, mask
 
 
 def test_replace_invalid_character():
@@ -28,3 +29,20 @@ def test_replace_invalid_character():
     assert replace_invalid_character("") == ""
     assert replace_invalid_character("hello" + "\t" + "world") == "hello_world"
     assert replace_invalid_character("hello123" + "\t" + "world " + "\x07\x7f" + "中") == "hello123_world____"
+
+
+@pytest.mark.parametrize("text, ratio, mask_char, expected", [
+    ("abcdefghijklmnopqrstuvwxyz123456", 0.7, '*', "abcde**********************23456"),
+    ("123456", 0.8, '*', "1****6"),
+    ("12345", 0.8, '*', "****5"),
+    ("12345", 1, '*', "*****"),
+    ("12345", 1.5, '*', "*****"),
+    ("12345", 0, '*', "12345"),
+    ("12345", -1, '*', "12345")
+])
+def test_mask(text, ratio, mask_char, expected):
+    assert mask(text, ratio, mask_char) == expected
+
+
+if __name__ == '__main__':
+    pytest.main()

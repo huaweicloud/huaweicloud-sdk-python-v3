@@ -2286,77 +2286,6 @@ class CceAsyncClient(Client):
 
         return http_info
 
-    def get_cluster_support_configuration_async(self, request):
-        r"""获取集群支持的可配置参数列表
-
-        该API用于根据集群版本类型等查询集群支持的详细配置项，用于集群创建时指定。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for GetClusterSupportConfiguration
-        :type request: :class:`huaweicloudsdkcce.v3.GetClusterSupportConfigurationRequest`
-        :rtype: :class:`huaweicloudsdkcce.v3.GetClusterSupportConfigurationResponse`
-        """
-        http_info = self._get_cluster_support_configuration_http_info(request)
-        return self._call_api(**http_info)
-
-    def get_cluster_support_configuration_async_invoker(self, request):
-        http_info = self._get_cluster_support_configuration_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _get_cluster_support_configuration_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/api/v3/clusters/configuration/detail",
-            "request_type": request.__class__.__name__,
-            "response_type": "GetClusterSupportConfigurationResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'cluster_type' in local_var_params:
-            query_params.append(('clusterType', local_var_params['cluster_type']))
-        if 'cluster_version' in local_var_params:
-            query_params.append(('clusterVersion', local_var_params['cluster_version']))
-        if 'cluster_id' in local_var_params:
-            query_params.append(('clusterID', local_var_params['cluster_id']))
-        if 'network_mode' in local_var_params:
-            query_params.append(('networkMode', local_var_params['network_mode']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def get_customize_tags_async(self, request):
         r"""查询自定义标签
 
@@ -4724,6 +4653,77 @@ class CceAsyncClient(Client):
             path_params['cluster_id'] = local_var_params['cluster_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_cluster_support_configuration_async(self, request):
+        r"""获取集群支持的可配置参数列表
+
+        该API用于根据集群版本类型等查询集群支持的详细配置项，用于集群创建时指定。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowClusterSupportConfiguration
+        :type request: :class:`huaweicloudsdkcce.v3.ShowClusterSupportConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterSupportConfigurationResponse`
+        """
+        http_info = self._show_cluster_support_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_cluster_support_configuration_async_invoker(self, request):
+        http_info = self._show_cluster_support_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_cluster_support_configuration_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/clusters/configuration/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterSupportConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_type' in local_var_params:
+            query_params.append(('clusterType', local_var_params['cluster_type']))
+        if 'cluster_version' in local_var_params:
+            query_params.append(('clusterVersion', local_var_params['cluster_version']))
+        if 'cluster_id' in local_var_params:
+            query_params.append(('clusterID', local_var_params['cluster_id']))
+        if 'network_mode' in local_var_params:
+            query_params.append(('networkMode', local_var_params['network_mode']))
 
         header_params = {}
 

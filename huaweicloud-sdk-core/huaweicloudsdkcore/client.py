@@ -20,41 +20,41 @@
  under the LICENSE.
 """
 
+import bson
 import datetime
 import decimal
 import logging
 import os
 import re
-import sys
-import threading
-from collections import OrderedDict
-from typing import Iterable
-from logging.handlers import RotatingFileHandler
-
 import simplejson as json
 import six
-import bson
-from requests_toolbelt import MultipartEncoder
-from six.moves.urllib.parse import quote, urlparse
-
+import sys
+import threading
+import warnings
+from collections import OrderedDict
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, DerivedCredentials
 from huaweicloudsdkcore.auth.provider import CredentialProviderChain
-from huaweicloudsdkcore.exceptions.exceptions import HostUnreachableException
 from huaweicloudsdkcore.exceptions.exception_handler import ExceptionHandler, DefaultExceptionHandler
+from huaweicloudsdkcore.exceptions.exceptions import HostUnreachableException
 from huaweicloudsdkcore.http import progress
+from huaweicloudsdkcore.http.bson_types import BSON_TYPES_MAPPING
 from huaweicloudsdkcore.http.formdata import FormFile
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
 from huaweicloudsdkcore.http.primitive_types import NATIVE_TYPES_MAPPING
 from huaweicloudsdkcore.http.primitive_types import PRIMITIVE_TYPES
-from huaweicloudsdkcore.http.bson_types import BSON_TYPES_MAPPING
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.sdk_response import FutureSdkResponse, SdkResponse
 from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
 from huaweicloudsdkcore.utils import http_utils, core_utils
 from huaweicloudsdkcore.utils.filepath_utils import ensure_file_in_rb_mode
 from huaweicloudsdkcore.utils.xml_utils import XmlTransfer
+from huaweicloudsdkcore.warning import warning
+from logging.handlers import RotatingFileHandler
+from requests_toolbelt import MultipartEncoder
+from six.moves.urllib.parse import quote, urlparse
+from typing import Iterable
 
 try:
     from typing import TypeVar, Generic
@@ -124,7 +124,6 @@ class ClientBuilder(Generic[T]):
         else:
             self._endpoints = list(args)
         return self
-
 
     def with_endpoints(self, endpoints):
         self._endpoints = endpoints
@@ -645,8 +644,12 @@ class Client(object):
         try:
             return klass(data)
         except UnicodeEncodeError:
+            warnings.warn(f"Unicode encoding error occurred during the conversion of the {type(data)} to {klass},"
+                          " return string value.", warning.SdkWarning)
             return six.text_type(data)
         except TypeError:
+            warnings.warn(f"Type error occurred during the conversion of the {type(data)} to {klass},"
+                          "return original value.", warning.TypeConversionWarning)
             return data
 
     @classmethod
@@ -659,8 +662,13 @@ class Client(object):
             from dateutil.parser import parse
             return parse(string if string.endswith("Z") else string + "Z").date()
         except ImportError:
+            warnings.warn("Unable to convert string to date due to failure to import dateutil.parser module,"
+                          " return the original string instead. Use 'pip install python-dateutil' to install it.",
+                          ImportWarning)
             return string
         except ValueError:
+            warnings.warn(f"Unable to convert string to date, return the original string: {string}",
+                          warning.TypeConversionWarning)
             return string
 
     @classmethod
@@ -669,8 +677,13 @@ class Client(object):
             from dateutil.parser import parse
             return parse(string if string.endswith("Z") else string + "Z")
         except ImportError:
+            warnings.warn("Unable to convert string to datetime due to failure to import dateutil.parser module,"
+                          " return the original string instead. Use 'pip install python-dateutil' to install it.",
+                          ImportWarning)
             return string
         except ValueError:
+            warnings.warn(f"Unable to convert string to datetime, return the original string: {string}",
+                          warning.TypeConversionWarning)
             return string
 
     def _deserialize_model(self, data, klass):

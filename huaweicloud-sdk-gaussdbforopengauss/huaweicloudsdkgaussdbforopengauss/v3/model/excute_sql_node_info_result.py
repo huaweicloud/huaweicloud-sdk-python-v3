@@ -41,11 +41,11 @@ class ExcuteSQLNodeInfoResult:
         :type node_id: str
         :param node_name: **参数解释**: 节点名称。 **取值范围**: 不涉及。
         :type node_name: str
-        :param role: **参数描述**: 节点角色。 **取值范围**: - master：主节点。 - slave：备节点。 - secondary：日志节点。 - readreplica：只读节点。 
+        :param role: **参数解释**: 节点角色。 **取值范围**: - master：主节点。 - slave：备节点。 - secondary：日志节点。 - readreplica：只读节点。 
         :type role: str
         :param instance_id: **参数解释**: 实例ID。 **取值范围**: 不涉及。
         :type instance_id: str
-        :param component_type: **参数描述**: 组件类型。 **取值范围**: - CN：CN组件。 - DN：DN组件。 
+        :param component_type: **参数解释**: 组件类型。 **取值范围**: - CN：CN组件。 - DN：DN组件。 
         :type component_type: str
         """
         
@@ -117,7 +117,7 @@ class ExcuteSQLNodeInfoResult:
     def role(self):
         r"""Gets the role of this ExcuteSQLNodeInfoResult.
 
-        **参数描述**: 节点角色。 **取值范围**: - master：主节点。 - slave：备节点。 - secondary：日志节点。 - readreplica：只读节点。 
+        **参数解释**: 节点角色。 **取值范围**: - master：主节点。 - slave：备节点。 - secondary：日志节点。 - readreplica：只读节点。 
 
         :return: The role of this ExcuteSQLNodeInfoResult.
         :rtype: str
@@ -128,7 +128,7 @@ class ExcuteSQLNodeInfoResult:
     def role(self, role):
         r"""Sets the role of this ExcuteSQLNodeInfoResult.
 
-        **参数描述**: 节点角色。 **取值范围**: - master：主节点。 - slave：备节点。 - secondary：日志节点。 - readreplica：只读节点。 
+        **参数解释**: 节点角色。 **取值范围**: - master：主节点。 - slave：备节点。 - secondary：日志节点。 - readreplica：只读节点。 
 
         :param role: The role of this ExcuteSQLNodeInfoResult.
         :type role: str
@@ -161,7 +161,7 @@ class ExcuteSQLNodeInfoResult:
     def component_type(self):
         r"""Gets the component_type of this ExcuteSQLNodeInfoResult.
 
-        **参数描述**: 组件类型。 **取值范围**: - CN：CN组件。 - DN：DN组件。 
+        **参数解释**: 组件类型。 **取值范围**: - CN：CN组件。 - DN：DN组件。 
 
         :return: The component_type of this ExcuteSQLNodeInfoResult.
         :rtype: str
@@ -172,7 +172,7 @@ class ExcuteSQLNodeInfoResult:
     def component_type(self, component_type):
         r"""Sets the component_type of this ExcuteSQLNodeInfoResult.
 
-        **参数描述**: 组件类型。 **取值范围**: - CN：CN组件。 - DN：DN组件。 
+        **参数解释**: 组件类型。 **取值范围**: - CN：CN组件。 - DN：DN组件。 
 
         :param component_type: The component_type of this ExcuteSQLNodeInfoResult.
         :type component_type: str

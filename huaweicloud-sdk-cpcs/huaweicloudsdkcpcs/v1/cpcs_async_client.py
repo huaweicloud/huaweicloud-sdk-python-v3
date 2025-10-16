@@ -33,6 +33,73 @@ class CpcsAsyncClient(Client):
 
         return client_builder
 
+    def add_cluster_port_async(self, request):
+        r"""创建集群模式端口
+
+        创建集群模式端口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for AddClusterPort
+        :type request: :class:`huaweicloudsdkcpcs.v1.AddClusterPortRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.AddClusterPortResponse`
+        """
+        http_info = self._add_cluster_port_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_cluster_port_async_invoker(self, request):
+        http_info = self._add_cluster_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_cluster_port_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dew/cpcs/cluster/{cluster_id}/port",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddClusterPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def associate_apps_async(self, request):
         r"""创建密码服务集群与应用绑定关系
 
@@ -347,6 +414,74 @@ class CpcsAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def check_cluster_port_async(self, request):
+        r"""检测集群模式端口是否正常
+
+        检测该端口关联的监听器、后端服务器组是否正确无误。
+        &gt; 该接口调用后会根据实际情况，更新检查结果。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckClusterPort
+        :type request: :class:`huaweicloudsdkcpcs.v1.CheckClusterPortRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.CheckClusterPortResponse`
+        """
+        http_info = self._check_cluster_port_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_cluster_port_async_invoker(self, request):
+        http_info = self._check_cluster_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_cluster_port_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/dew/cpcs/cluster/{cluster_id}/port/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckClusterPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -766,6 +901,76 @@ class CpcsAsyncClient(Client):
 
         return http_info
 
+    def delete_cluster_port_async(self, request):
+        r"""删除集群模式端口
+
+        删除集群模式端口。
+        &gt; 由于端口可能被租户二次修改过，并用于其他业务,所以删除会有几个不同选项，具体查看参数说明。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteClusterPort
+        :type request: :class:`huaweicloudsdkcpcs.v1.DeleteClusterPortRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.DeleteClusterPortResponse`
+        """
+        http_info = self._delete_cluster_port_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_cluster_port_async_invoker(self, request):
+        http_info = self._delete_cluster_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_cluster_port_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/dew/cpcs/cluster/{cluster_id}/port/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClusterPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def disable_ccsp_instance_async(self, request):
         r"""停用密码服务实例的业务功能
 
@@ -1011,6 +1216,71 @@ class CpcsAsyncClient(Client):
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_cluster_port_async(self, request):
+        r"""查询集群模式端口列表
+
+        列出当前集群下的所有集群模式端口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListClusterPort
+        :type request: :class:`huaweicloudsdkcpcs.v1.ListClusterPortRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ListClusterPortResponse`
+        """
+        http_info = self._list_cluster_port_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cluster_port_async_invoker(self, request):
+        http_info = self._list_cluster_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cluster_port_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/cluster/{cluster_id}/port",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -1303,6 +1573,77 @@ class CpcsAsyncClient(Client):
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_audit_log_async(self, request):
+        r"""查询平台审计日志
+
+        查询平台审计日志
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAuditLog
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowAuditLogRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowAuditLogResponse`
+        """
+        http_info = self._show_audit_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_audit_log_async_invoker(self, request):
+        http_info = self._show_audit_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_audit_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/platform/audit-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuditLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_num' in local_var_params:
+            query_params.append(('page_num', local_var_params['page_num']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
 
@@ -1753,6 +2094,168 @@ class CpcsAsyncClient(Client):
 
         return http_info
 
+    def show_resource_detail_access_key_async(self, request):
+        r"""获取AK详情
+
+        获取所监控或者统计的AK详情列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourceDetailAccessKey
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowResourceDetailAccessKeyRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowResourceDetailAccessKeyResponse`
+        """
+        http_info = self._show_resource_detail_access_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_resource_detail_access_key_async_invoker(self, request):
+        http_info = self._show_resource_detail_access_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_detail_access_key_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/resource/access-key",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceDetailAccessKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'service_type' in local_var_params:
+            query_params.append(('service_type', local_var_params['service_type']))
+        if 'algorithm_type' in local_var_params:
+            query_params.append(('algorithm_type', local_var_params['algorithm_type']))
+        if 'certificate_type' in local_var_params:
+            query_params.append(('certificate_type', local_var_params['certificate_type']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_num' in local_var_params:
+            query_params.append(('page_num', local_var_params['page_num']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_resource_detail_certificate_async(self, request):
+        r"""获取证书详情
+
+        获取所监控或者统计的证书详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourceDetailCertificate
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowResourceDetailCertificateRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowResourceDetailCertificateResponse`
+        """
+        http_info = self._show_resource_detail_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_resource_detail_certificate_async_invoker(self, request):
+        http_info = self._show_resource_detail_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_detail_certificate_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/resource/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceDetailCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'service_type' in local_var_params:
+            query_params.append(('service_type', local_var_params['service_type']))
+        if 'algorithm_type' in local_var_params:
+            query_params.append(('algorithm_type', local_var_params['algorithm_type']))
+        if 'certificate_type' in local_var_params:
+            query_params.append(('certificate_type', local_var_params['certificate_type']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_num' in local_var_params:
+            query_params.append(('page_num', local_var_params['page_num']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_resource_info_async(self, request):
         r"""查询租户的资源分布信息
 
@@ -1789,6 +2292,654 @@ class CpcsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_statistic_certificate_async(self, request):
+        r"""获取证书分布统计信息
+
+        获取CPCS中证书分布统计信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStatisticCertificate
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowStatisticCertificateRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowStatisticCertificateResponse`
+        """
+        http_info = self._show_statistic_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_statistic_certificate_async_invoker(self, request):
+        http_info = self._show_statistic_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_statistic_certificate_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/certificate/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatisticCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'algorithm' in local_var_params:
+            query_params.append(('algorithm', local_var_params['algorithm']))
+        if 'algorithm_type' in local_var_params:
+            query_params.append(('algorithm_type', local_var_params['algorithm_type']))
+        if 'certificate_type' in local_var_params:
+            query_params.append(('certificate_type', local_var_params['certificate_type']))
+        if 'server_type' in local_var_params:
+            query_params.append(('server_type', local_var_params['server_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_statistic_interface_async(self, request):
+        r"""获取接口调用统计信息
+
+        获取CPCS中接口调用统计信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStatisticInterface
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowStatisticInterfaceRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowStatisticInterfaceResponse`
+        """
+        http_info = self._show_statistic_interface_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_statistic_interface_async_invoker(self, request):
+        http_info = self._show_statistic_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_statistic_interface_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/interface/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatisticInterfaceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'algorithm' in local_var_params:
+            query_params.append(('algorithm', local_var_params['algorithm']))
+        if 'algorithm_type' in local_var_params:
+            query_params.append(('algorithm_type', local_var_params['algorithm_type']))
+        if 'certificate_type' in local_var_params:
+            query_params.append(('certificate_type', local_var_params['certificate_type']))
+        if 'server_type' in local_var_params:
+            query_params.append(('server_type', local_var_params['server_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_statistic_resource_async(self, request):
+        r"""获取资源总量统计信息
+
+        获取CPCS中\\资源总量统计信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStatisticResource
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowStatisticResourceRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowStatisticResourceResponse`
+        """
+        http_info = self._show_statistic_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_statistic_resource_async_invoker(self, request):
+        http_info = self._show_statistic_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_statistic_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/resource/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatisticResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'algorithm' in local_var_params:
+            query_params.append(('algorithm', local_var_params['algorithm']))
+        if 'algorithm_type' in local_var_params:
+            query_params.append(('algorithm_type', local_var_params['algorithm_type']))
+        if 'certificate_type' in local_var_params:
+            query_params.append(('certificate_type', local_var_params['certificate_type']))
+        if 'server_type' in local_var_params:
+            query_params.append(('server_type', local_var_params['server_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_statistic_secret_key_async(self, request):
+        r"""获取密钥分布统计信息
+
+        获取CPCS中密钥分布统计信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStatisticSecretKey
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowStatisticSecretKeyRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowStatisticSecretKeyResponse`
+        """
+        http_info = self._show_statistic_secret_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_statistic_secret_key_async_invoker(self, request):
+        http_info = self._show_statistic_secret_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_statistic_secret_key_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/secret-key/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatisticSecretKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'algorithm' in local_var_params:
+            query_params.append(('algorithm', local_var_params['algorithm']))
+        if 'algorithm_type' in local_var_params:
+            query_params.append(('algorithm_type', local_var_params['algorithm_type']))
+        if 'certificate_type' in local_var_params:
+            query_params.append(('certificate_type', local_var_params['certificate_type']))
+        if 'server_type' in local_var_params:
+            query_params.append(('server_type', local_var_params['server_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_status_app_async(self, request):
+        r"""获取应用状态监控
+
+        CPCS服务创建的应用状态监控
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStatusApp
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowStatusAppRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowStatusAppResponse`
+        """
+        http_info = self._show_status_app_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_status_app_async_invoker(self, request):
+        http_info = self._show_status_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_status_app_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/app/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatusAppResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'server_type' in local_var_params:
+            query_params.append(('server_type', local_var_params['server_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_status_cluster_async(self, request):
+        r"""获取集群监控信息
+
+        CPCS服务创建的集群的状态监控
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStatusCluster
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowStatusClusterRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowStatusClusterResponse`
+        """
+        http_info = self._show_status_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_status_cluster_async_invoker(self, request):
+        http_info = self._show_status_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_status_cluster_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/cluster/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatusClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'server_type' in local_var_params:
+            query_params.append(('server_type', local_var_params['server_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_status_instance_async(self, request):
+        r"""获取实例监控信息
+
+        CPCS服务创建的密码服务实例的状态监控
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStatusInstance
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowStatusInstanceRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowStatusInstanceResponse`
+        """
+        http_info = self._show_status_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_status_instance_async_invoker(self, request):
+        http_info = self._show_status_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_status_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/instance/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatusInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'server_type' in local_var_params:
+            query_params.append(('server_type', local_var_params['server_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_status_service_async(self, request):
+        r"""获取服务监控信息
+
+        CPCS服务的状态监控
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowStatusService
+        :type request: :class:`huaweicloudsdkcpcs.v1.ShowStatusServiceRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.ShowStatusServiceResponse`
+        """
+        http_info = self._show_status_service_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_status_service_async_invoker(self, request):
+        http_info = self._show_status_service_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_status_service_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dew/cpcs/service/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatusServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'cluster_id' in local_var_params:
+            query_params.append(('cluster_id', local_var_params['cluster_id']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'server_type' in local_var_params:
+            query_params.append(('server_type', local_var_params['server_type']))
 
         header_params = {}
 
@@ -1878,6 +3029,71 @@ class CpcsAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_cpcs_token_async(self, request):
+        r"""AK/SK 换取Cpcs token
+
+        使用aksk换取cpcs token
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SwitchCpcsToken
+        :type request: :class:`huaweicloudsdkcpcs.v1.SwitchCpcsTokenRequest`
+        :rtype: :class:`huaweicloudsdkcpcs.v1.SwitchCpcsTokenResponse`
+        """
+        http_info = self._switch_cpcs_token_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_cpcs_token_async_invoker(self, request):
+        http_info = self._switch_cpcs_token_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_cpcs_token_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dew/cpcs/token/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchCpcsTokenResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-CPCS-Token", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

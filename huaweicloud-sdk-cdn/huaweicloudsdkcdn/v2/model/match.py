@@ -18,7 +18,7 @@ class Match:
 
     openapi_types = {
         'logic': 'str',
-        'criteria': 'list[Criteria]'
+        'criteria': 'list[CriteriaItem]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class Match:
         :param logic: **参数解释：** 逻辑运算符 **约束限制：** 不涉及 **取值范围：** - and: 与关系 - or: 或关系 **默认取值：** 不涉及
         :type logic: str
         :param criteria: **参数解释：** 匹配条件列表 **约束限制：** 不涉及
-        :type criteria: list[:class:`huaweicloudsdkcdn.v2.Criteria`]
+        :type criteria: list[:class:`huaweicloudsdkcdn.v2.CriteriaItem`]
         """
         
         
@@ -75,7 +75,7 @@ class Match:
         **参数解释：** 匹配条件列表 **约束限制：** 不涉及
 
         :return: The criteria of this Match.
-        :rtype: list[:class:`huaweicloudsdkcdn.v2.Criteria`]
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.CriteriaItem`]
         """
         return self._criteria
 
@@ -86,7 +86,7 @@ class Match:
         **参数解释：** 匹配条件列表 **约束限制：** 不涉及
 
         :param criteria: The criteria of this Match.
-        :type criteria: list[:class:`huaweicloudsdkcdn.v2.Criteria`]
+        :type criteria: list[:class:`huaweicloudsdkcdn.v2.CriteriaItem`]
         """
         self._criteria = criteria
 

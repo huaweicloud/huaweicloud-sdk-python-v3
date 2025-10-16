@@ -44,7 +44,8 @@ class WebSocketSeek:
         self.discriminator = None
 
         self.status = status
-        self.timeout = timeout
+        if timeout is not None:
+            self.timeout = timeout
 
     @property
     def status(self):

@@ -47,9 +47,9 @@ class ListHbaInfoHistoryRequest:
         :type start_time: datetime
         :param end_time: **参数解释**: 结束时间。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 默认当前时间（UTC时区）。
         :type end_time: datetime
-        :param offset: **参数描述** 偏移量。 **约束限制**: 不涉及。 **取值范围** 大于等于0。 **默认值** 0 
+        :param offset: **参数解释** 偏移量。 **约束限制**: 不涉及。 **取值范围** 大于等于0。 **默认值** 0 
         :type offset: int
-        :param limit: **参数描述** 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围** [1, 100] **默认值** 10 
+        :param limit: **参数解释** 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围** [1, 100] **默认值** 10 
         :type limit: int
         """
         
@@ -167,7 +167,7 @@ class ListHbaInfoHistoryRequest:
     def offset(self):
         r"""Gets the offset of this ListHbaInfoHistoryRequest.
 
-        **参数描述** 偏移量。 **约束限制**: 不涉及。 **取值范围** 大于等于0。 **默认值** 0 
+        **参数解释** 偏移量。 **约束限制**: 不涉及。 **取值范围** 大于等于0。 **默认值** 0 
 
         :return: The offset of this ListHbaInfoHistoryRequest.
         :rtype: int
@@ -178,7 +178,7 @@ class ListHbaInfoHistoryRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListHbaInfoHistoryRequest.
 
-        **参数描述** 偏移量。 **约束限制**: 不涉及。 **取值范围** 大于等于0。 **默认值** 0 
+        **参数解释** 偏移量。 **约束限制**: 不涉及。 **取值范围** 大于等于0。 **默认值** 0 
 
         :param offset: The offset of this ListHbaInfoHistoryRequest.
         :type offset: int
@@ -189,7 +189,7 @@ class ListHbaInfoHistoryRequest:
     def limit(self):
         r"""Gets the limit of this ListHbaInfoHistoryRequest.
 
-        **参数描述** 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围** [1, 100] **默认值** 10 
+        **参数解释** 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围** [1, 100] **默认值** 10 
 
         :return: The limit of this ListHbaInfoHistoryRequest.
         :rtype: int
@@ -200,7 +200,7 @@ class ListHbaInfoHistoryRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListHbaInfoHistoryRequest.
 
-        **参数描述** 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围** [1, 100] **默认值** 10 
+        **参数解释** 每页显示的条目数量。 **约束限制**: 不涉及。 **取值范围** [1, 100] **默认值** 10 
 
         :param limit: The limit of this ListHbaInfoHistoryRequest.
         :type limit: int
