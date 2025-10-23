@@ -33,7 +33,7 @@ class RemoveDeployKeyRequest:
 
         :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
         :type repository_id: int
-        :param key_id: **参数解释：**  部署秘钥 ID。
+        :param key_id: **参数解释：**  部署密钥 ID。
         :type key_id: int
         """
         
@@ -72,7 +72,7 @@ class RemoveDeployKeyRequest:
     def key_id(self):
         r"""Gets the key_id of this RemoveDeployKeyRequest.
 
-        **参数解释：**  部署秘钥 ID。
+        **参数解释：**  部署密钥 ID。
 
         :return: The key_id of this RemoveDeployKeyRequest.
         :rtype: int
@@ -83,7 +83,7 @@ class RemoveDeployKeyRequest:
     def key_id(self, key_id):
         r"""Sets the key_id of this RemoveDeployKeyRequest.
 
-        **参数解释：**  部署秘钥 ID。
+        **参数解释：**  部署密钥 ID。
 
         :param key_id: The key_id of this RemoveDeployKeyRequest.
         :type key_id: int

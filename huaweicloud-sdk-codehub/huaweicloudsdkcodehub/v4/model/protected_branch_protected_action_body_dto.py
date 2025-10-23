@@ -21,7 +21,8 @@ class ProtectedBranchProtectedActionBodyDto:
         'user_ids': 'list[object]',
         'user_team_ids': 'list[int]',
         'related_role_ids': 'list[str]',
-        'action': 'str'
+        'action': 'str',
+        'addition_switchers': 'list[ProtectedActionSwitcher]'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ProtectedBranchProtectedActionBodyDto:
         'user_ids': 'user_ids',
         'user_team_ids': 'user_team_ids',
         'related_role_ids': 'related_role_ids',
-        'action': 'action'
+        'action': 'action',
+        'addition_switchers': 'addition_switchers'
     }
 
-    def __init__(self, enable=None, user_ids=None, user_team_ids=None, related_role_ids=None, action=None):
+    def __init__(self, enable=None, user_ids=None, user_team_ids=None, related_role_ids=None, action=None, addition_switchers=None):
         r"""ProtectedBranchProtectedActionBodyDto
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ProtectedBranchProtectedActionBodyDto:
         :type related_role_ids: list[str]
         :param action: **参数解释：** 事件名称。 **约束限制：** action中必传此字段。 **取值范围：** - push，推送 。 - merge，合并 。 **默认取值：** 不涉及。
         :type action: str
+        :param addition_switchers: **参数解释：** 附加开关。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type addition_switchers: list[:class:`huaweicloudsdkcodehub.v4.ProtectedActionSwitcher`]
         """
         
         
@@ -56,6 +60,7 @@ class ProtectedBranchProtectedActionBodyDto:
         self._user_team_ids = None
         self._related_role_ids = None
         self._action = None
+        self._addition_switchers = None
         self.discriminator = None
 
         if enable is not None:
@@ -68,6 +73,8 @@ class ProtectedBranchProtectedActionBodyDto:
             self.related_role_ids = related_role_ids
         if action is not None:
             self.action = action
+        if addition_switchers is not None:
+            self.addition_switchers = addition_switchers
 
     @property
     def enable(self):
@@ -178,6 +185,28 @@ class ProtectedBranchProtectedActionBodyDto:
         :type action: str
         """
         self._action = action
+
+    @property
+    def addition_switchers(self):
+        r"""Gets the addition_switchers of this ProtectedBranchProtectedActionBodyDto.
+
+        **参数解释：** 附加开关。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The addition_switchers of this ProtectedBranchProtectedActionBodyDto.
+        :rtype: list[:class:`huaweicloudsdkcodehub.v4.ProtectedActionSwitcher`]
+        """
+        return self._addition_switchers
+
+    @addition_switchers.setter
+    def addition_switchers(self, addition_switchers):
+        r"""Sets the addition_switchers of this ProtectedBranchProtectedActionBodyDto.
+
+        **参数解释：** 附加开关。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param addition_switchers: The addition_switchers of this ProtectedBranchProtectedActionBodyDto.
+        :type addition_switchers: list[:class:`huaweicloudsdkcodehub.v4.ProtectedActionSwitcher`]
+        """
+        self._addition_switchers = addition_switchers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -18,20 +18,109 @@ class DownloadAttachmentResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'provider_code': 'str',
+        'error_code': 'str',
+        'error_msg': 'str'
     }
 
     attribute_map = {
+        'provider_code': 'provider_code',
+        'error_code': 'error_code',
+        'error_msg': 'error_msg'
     }
 
-    def __init__(self):
+    def __init__(self, provider_code=None, error_code=None, error_msg=None):
         r"""DownloadAttachmentResponse
 
         The model defined in huaweicloud sdk
 
+        :param provider_code: 服务标识
+        :type provider_code: str
+        :param error_code: 请求响应代码，范围：0000~9999，正常时取值：0
+        :type error_code: str
+        :param error_msg: 请求响应描述
+        :type error_msg: str
         """
         
         super(DownloadAttachmentResponse, self).__init__()
+
+        self._provider_code = None
+        self._error_code = None
+        self._error_msg = None
         self.discriminator = None
+
+        if provider_code is not None:
+            self.provider_code = provider_code
+        if error_code is not None:
+            self.error_code = error_code
+        if error_msg is not None:
+            self.error_msg = error_msg
+
+    @property
+    def provider_code(self):
+        r"""Gets the provider_code of this DownloadAttachmentResponse.
+
+        服务标识
+
+        :return: The provider_code of this DownloadAttachmentResponse.
+        :rtype: str
+        """
+        return self._provider_code
+
+    @provider_code.setter
+    def provider_code(self, provider_code):
+        r"""Sets the provider_code of this DownloadAttachmentResponse.
+
+        服务标识
+
+        :param provider_code: The provider_code of this DownloadAttachmentResponse.
+        :type provider_code: str
+        """
+        self._provider_code = provider_code
+
+    @property
+    def error_code(self):
+        r"""Gets the error_code of this DownloadAttachmentResponse.
+
+        请求响应代码，范围：0000~9999，正常时取值：0
+
+        :return: The error_code of this DownloadAttachmentResponse.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        r"""Sets the error_code of this DownloadAttachmentResponse.
+
+        请求响应代码，范围：0000~9999，正常时取值：0
+
+        :param error_code: The error_code of this DownloadAttachmentResponse.
+        :type error_code: str
+        """
+        self._error_code = error_code
+
+    @property
+    def error_msg(self):
+        r"""Gets the error_msg of this DownloadAttachmentResponse.
+
+        请求响应描述
+
+        :return: The error_msg of this DownloadAttachmentResponse.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        r"""Sets the error_msg of this DownloadAttachmentResponse.
+
+        请求响应描述
+
+        :param error_msg: The error_msg of this DownloadAttachmentResponse.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

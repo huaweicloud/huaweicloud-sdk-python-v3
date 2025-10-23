@@ -44,7 +44,7 @@ class ShowBlobsResponse(SdkResponse):
         :type encoding: str
         :param content: **参数解释：** 经过base64编码后的文件内容。 **约束限制：** 不涉及。
         :type content: str
-        :param blob_id: **参数解释：** bolb文件ID。 **约束限制：** 不涉及。
+        :param blob_id: **参数解释：** blob文件ID。 **约束限制：** 不涉及。
         :type blob_id: str
         :param x_total: 
         :type x_total: str
@@ -140,7 +140,7 @@ class ShowBlobsResponse(SdkResponse):
     def blob_id(self):
         r"""Gets the blob_id of this ShowBlobsResponse.
 
-        **参数解释：** bolb文件ID。 **约束限制：** 不涉及。
+        **参数解释：** blob文件ID。 **约束限制：** 不涉及。
 
         :return: The blob_id of this ShowBlobsResponse.
         :rtype: str
@@ -151,7 +151,7 @@ class ShowBlobsResponse(SdkResponse):
     def blob_id(self, blob_id):
         r"""Sets the blob_id of this ShowBlobsResponse.
 
-        **参数解释：** bolb文件ID。 **约束限制：** 不涉及。
+        **参数解释：** blob文件ID。 **约束限制：** 不涉及。
 
         :param blob_id: The blob_id of this ShowBlobsResponse.
         :type blob_id: str

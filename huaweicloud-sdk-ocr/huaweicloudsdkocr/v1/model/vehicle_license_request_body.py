@@ -22,7 +22,8 @@ class VehicleLicenseRequestBody:
         'side': 'str',
         'return_issuing_authority': 'bool',
         'return_text_location': 'bool',
-        'recognize_electronic_license': 'bool'
+        'recognize_electronic_license': 'bool',
+        'alarm': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class VehicleLicenseRequestBody:
         'side': 'side',
         'return_issuing_authority': 'return_issuing_authority',
         'return_text_location': 'return_text_location',
-        'recognize_electronic_license': 'recognize_electronic_license'
+        'recognize_electronic_license': 'recognize_electronic_license',
+        'alarm': 'alarm'
     }
 
-    def __init__(self, image=None, url=None, side=None, return_issuing_authority=None, return_text_location=None, recognize_electronic_license=None):
+    def __init__(self, image=None, url=None, side=None, return_issuing_authority=None, return_text_location=None, recognize_electronic_license=None, alarm=None):
         r"""VehicleLicenseRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class VehicleLicenseRequestBody:
         :type return_text_location: bool
         :param recognize_electronic_license: 是否支持识别电子行驶证，取值范围：  - true：支持识别电子行驶证  - false：不支持识别电子行驶证  默认不支持识别电子行驶证。如果输入参数不是Boolean类型，则会报非法参数错误。 
         :type recognize_electronic_license: bool
+        :param alarm: 是否返回纸质行驶证图像的告警信息，可选值包括： - true：返回纸质行驶证图像的告警信息 - false：不返回纸质行驶证图像的告警信息 如果无该参数，系统默认不返回告警信息。如果输入参数不是Boolean类型，则会报非法参数错误。 
+        :type alarm: bool
         """
         
         
@@ -61,6 +65,7 @@ class VehicleLicenseRequestBody:
         self._return_issuing_authority = None
         self._return_text_location = None
         self._recognize_electronic_license = None
+        self._alarm = None
         self.discriminator = None
 
         if image is not None:
@@ -75,6 +80,8 @@ class VehicleLicenseRequestBody:
             self.return_text_location = return_text_location
         if recognize_electronic_license is not None:
             self.recognize_electronic_license = recognize_electronic_license
+        if alarm is not None:
+            self.alarm = alarm
 
     @property
     def image(self):
@@ -207,6 +214,28 @@ class VehicleLicenseRequestBody:
         :type recognize_electronic_license: bool
         """
         self._recognize_electronic_license = recognize_electronic_license
+
+    @property
+    def alarm(self):
+        r"""Gets the alarm of this VehicleLicenseRequestBody.
+
+        是否返回纸质行驶证图像的告警信息，可选值包括： - true：返回纸质行驶证图像的告警信息 - false：不返回纸质行驶证图像的告警信息 如果无该参数，系统默认不返回告警信息。如果输入参数不是Boolean类型，则会报非法参数错误。 
+
+        :return: The alarm of this VehicleLicenseRequestBody.
+        :rtype: bool
+        """
+        return self._alarm
+
+    @alarm.setter
+    def alarm(self, alarm):
+        r"""Sets the alarm of this VehicleLicenseRequestBody.
+
+        是否返回纸质行驶证图像的告警信息，可选值包括： - true：返回纸质行驶证图像的告警信息 - false：不返回纸质行驶证图像的告警信息 如果无该参数，系统默认不返回告警信息。如果输入参数不是Boolean类型，则会报非法参数错误。 
+
+        :param alarm: The alarm of this VehicleLicenseRequestBody.
+        :type alarm: bool
+        """
+        self._alarm = alarm
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -47,7 +47,7 @@ class CreateKeyRequestBody:
 
         :param key_alias: 非默认主密钥别名，取值范围为1到255个字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”，且不与系统服务创建的默认主密钥别名重名。
         :type key_alias: str
-        :param key_spec: 密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
+        :param key_spec: 密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SECP256K1 - SM2
         :type key_spec: str
         :param key_usage: 密钥用途，对称密钥默认为“ENCRYPT_DECRYPT”，非对称密钥默认为“SIGN_VERIFY”，枚举如下： - ENCRYPT_DECRYPT - SIGN_VERIFY
         :type key_usage: str
@@ -122,7 +122,7 @@ class CreateKeyRequestBody:
     def key_spec(self):
         r"""Gets the key_spec of this CreateKeyRequestBody.
 
-        密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
+        密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SECP256K1 - SM2
 
         :return: The key_spec of this CreateKeyRequestBody.
         :rtype: str
@@ -133,7 +133,7 @@ class CreateKeyRequestBody:
     def key_spec(self, key_spec):
         r"""Sets the key_spec of this CreateKeyRequestBody.
 
-        密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SM2
+        密钥生成算法，默认为“AES_256”，枚举如下： - AES_256 - SM4 - RSA_2048 - RSA_3072 - RSA_4096 - EC_P256 - EC_P384 - SECP256K1 - SM2
 
         :param key_spec: The key_spec of this CreateKeyRequestBody.
         :type key_spec: str

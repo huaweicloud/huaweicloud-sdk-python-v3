@@ -87,7 +87,7 @@ class MergeRequestDiscussionDto:
         :type notes: list[:class:`huaweicloudsdkcodehub.v4.NoteDto`]
         :param repository_id: **参数解释：** 仓库id。
         :type repository_id: int
-        :param noteable_type: **参数解释：** 意见类型。
+        :param noteable_type: **参数解释：** 意见类型。 **取值范围：** - MergeRequest: 合并请求下提的检视意见。 - Commit: 代码页或提交记录下提的检视意见。
         :type noteable_type: str
         :param commit_id: **参数解释：** 提交记录id。
         :type commit_id: str
@@ -113,11 +113,11 @@ class MergeRequestDiscussionDto:
         :type review_categories_en: str
         :param review_modules: **参数解释：** 意见模块。
         :type review_modules: str
-        :param severity: **参数解释：** 严重程度key。
+        :param severity: **参数解释：** 严重程度key。 **取值范围：** - suggestion: 建议。 - minor: 一般。 - major: 严重。 - fatal: 致命。
         :type severity: str
-        :param severity_cn: **参数解释：** 严重程度中文。 **约束限制：** - 建议 - 一般 - 严重 - 致命
+        :param severity_cn: **参数解释：** 严重程度中文。 **取值范围：** - 建议 - 一般 - 严重 - 致命
         :type severity_cn: str
-        :param severity_en: **参数解释：** 严重程度英文。
+        :param severity_en: **参数解释：** 严重程度英文。 **取值范围：** - Suggestion: 建议。 - Minor: 一般。 - major: 严重。 - fatal: 致命。
         :type severity_en: str
         :param assignee: 
         :type assignee: :class:`huaweicloudsdkcodehub.v4.UserBasicDto`
@@ -308,7 +308,7 @@ class MergeRequestDiscussionDto:
     def noteable_type(self):
         r"""Gets the noteable_type of this MergeRequestDiscussionDto.
 
-        **参数解释：** 意见类型。
+        **参数解释：** 意见类型。 **取值范围：** - MergeRequest: 合并请求下提的检视意见。 - Commit: 代码页或提交记录下提的检视意见。
 
         :return: The noteable_type of this MergeRequestDiscussionDto.
         :rtype: str
@@ -319,7 +319,7 @@ class MergeRequestDiscussionDto:
     def noteable_type(self, noteable_type):
         r"""Sets the noteable_type of this MergeRequestDiscussionDto.
 
-        **参数解释：** 意见类型。
+        **参数解释：** 意见类型。 **取值范围：** - MergeRequest: 合并请求下提的检视意见。 - Commit: 代码页或提交记录下提的检视意见。
 
         :param noteable_type: The noteable_type of this MergeRequestDiscussionDto.
         :type noteable_type: str
@@ -594,7 +594,7 @@ class MergeRequestDiscussionDto:
     def severity(self):
         r"""Gets the severity of this MergeRequestDiscussionDto.
 
-        **参数解释：** 严重程度key。
+        **参数解释：** 严重程度key。 **取值范围：** - suggestion: 建议。 - minor: 一般。 - major: 严重。 - fatal: 致命。
 
         :return: The severity of this MergeRequestDiscussionDto.
         :rtype: str
@@ -605,7 +605,7 @@ class MergeRequestDiscussionDto:
     def severity(self, severity):
         r"""Sets the severity of this MergeRequestDiscussionDto.
 
-        **参数解释：** 严重程度key。
+        **参数解释：** 严重程度key。 **取值范围：** - suggestion: 建议。 - minor: 一般。 - major: 严重。 - fatal: 致命。
 
         :param severity: The severity of this MergeRequestDiscussionDto.
         :type severity: str
@@ -616,7 +616,7 @@ class MergeRequestDiscussionDto:
     def severity_cn(self):
         r"""Gets the severity_cn of this MergeRequestDiscussionDto.
 
-        **参数解释：** 严重程度中文。 **约束限制：** - 建议 - 一般 - 严重 - 致命
+        **参数解释：** 严重程度中文。 **取值范围：** - 建议 - 一般 - 严重 - 致命
 
         :return: The severity_cn of this MergeRequestDiscussionDto.
         :rtype: str
@@ -627,7 +627,7 @@ class MergeRequestDiscussionDto:
     def severity_cn(self, severity_cn):
         r"""Sets the severity_cn of this MergeRequestDiscussionDto.
 
-        **参数解释：** 严重程度中文。 **约束限制：** - 建议 - 一般 - 严重 - 致命
+        **参数解释：** 严重程度中文。 **取值范围：** - 建议 - 一般 - 严重 - 致命
 
         :param severity_cn: The severity_cn of this MergeRequestDiscussionDto.
         :type severity_cn: str
@@ -638,7 +638,7 @@ class MergeRequestDiscussionDto:
     def severity_en(self):
         r"""Gets the severity_en of this MergeRequestDiscussionDto.
 
-        **参数解释：** 严重程度英文。
+        **参数解释：** 严重程度英文。 **取值范围：** - Suggestion: 建议。 - Minor: 一般。 - major: 严重。 - fatal: 致命。
 
         :return: The severity_en of this MergeRequestDiscussionDto.
         :rtype: str
@@ -649,7 +649,7 @@ class MergeRequestDiscussionDto:
     def severity_en(self, severity_en):
         r"""Sets the severity_en of this MergeRequestDiscussionDto.
 
-        **参数解释：** 严重程度英文。
+        **参数解释：** 严重程度英文。 **取值范围：** - Suggestion: 建议。 - Minor: 一般。 - major: 严重。 - fatal: 致命。
 
         :param severity_en: The severity_en of this MergeRequestDiscussionDto.
         :type severity_en: str

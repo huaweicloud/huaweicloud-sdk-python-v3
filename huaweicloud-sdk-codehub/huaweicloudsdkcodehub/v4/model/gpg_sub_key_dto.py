@@ -41,7 +41,7 @@ class GpgSubKeyDto:
         :type fingerprint: str
         :param gpg_key_id: **参数解释：** gpg_key的id。
         :type gpg_key_id: int
-        :param keyid: **参数解释：** 子秘钥的id。 **取值范围：** 字符串长度不少于1，不超过1000。
+        :param keyid: **参数解释：** 子密钥的id。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type keyid: str
         """
         
@@ -132,7 +132,7 @@ class GpgSubKeyDto:
     def keyid(self):
         r"""Gets the keyid of this GpgSubKeyDto.
 
-        **参数解释：** 子秘钥的id。 **取值范围：** 字符串长度不少于1，不超过1000。
+        **参数解释：** 子密钥的id。 **取值范围：** 字符串长度不少于1，不超过1000。
 
         :return: The keyid of this GpgSubKeyDto.
         :rtype: str
@@ -143,7 +143,7 @@ class GpgSubKeyDto:
     def keyid(self, keyid):
         r"""Sets the keyid of this GpgSubKeyDto.
 
-        **参数解释：** 子秘钥的id。 **取值范围：** 字符串长度不少于1，不超过1000。
+        **参数解释：** 子密钥的id。 **取值范围：** 字符串长度不少于1，不超过1000。
 
         :param keyid: The keyid of this GpgSubKeyDto.
         :type keyid: str

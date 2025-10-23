@@ -30,7 +30,7 @@ class DeleteProtectedBranchResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: **参数解释：** 状态码。
+        :param status: **参数解释：** 状态码。 - success，表示接口请求成功。 - fail，表示接口请求失败。
         :type status: str
         """
         
@@ -46,7 +46,7 @@ class DeleteProtectedBranchResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this DeleteProtectedBranchResponse.
 
-        **参数解释：** 状态码。
+        **参数解释：** 状态码。 - success，表示接口请求成功。 - fail，表示接口请求失败。
 
         :return: The status of this DeleteProtectedBranchResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class DeleteProtectedBranchResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this DeleteProtectedBranchResponse.
 
-        **参数解释：** 状态码。
+        **参数解释：** 状态码。 - success，表示接口请求成功。 - fail，表示接口请求失败。
 
         :param status: The status of this DeleteProtectedBranchResponse.
         :type status: str

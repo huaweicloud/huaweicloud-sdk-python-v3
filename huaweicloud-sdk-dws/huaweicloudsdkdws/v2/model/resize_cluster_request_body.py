@@ -53,8 +53,7 @@ class ResizeClusterRequestBody:
         self._auto_redistribute = None
         self.discriminator = None
 
-        if scale_out is not None:
-            self.scale_out = scale_out
+        self.scale_out = scale_out
         if create_node_only is not None:
             self.create_node_only = create_node_only
         if waiting_for_killing is not None:

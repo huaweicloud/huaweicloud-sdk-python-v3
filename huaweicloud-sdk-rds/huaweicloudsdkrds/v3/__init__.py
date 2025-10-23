@@ -76,6 +76,9 @@ from huaweicloudsdkrds.v3.model.charge_info import ChargeInfo
 from huaweicloudsdkrds.v3.model.charge_info_response import ChargeInfoResponse
 from huaweicloudsdkrds.v3.model.check_instance_for_upgrade_request import CheckInstanceForUpgradeRequest
 from huaweicloudsdkrds.v3.model.check_instance_for_upgrade_response import CheckInstanceForUpgradeResponse
+from huaweicloudsdkrds.v3.model.check_weak_password_request import CheckWeakPasswordRequest
+from huaweicloudsdkrds.v3.model.check_weakpwd_request import CheckWeakpwdRequest
+from huaweicloudsdkrds.v3.model.check_weakpwd_response import CheckWeakpwdResponse
 from huaweicloudsdkrds.v3.model.compute_flavor import ComputeFlavor
 from huaweicloudsdkrds.v3.model.compute_flavor_group import ComputeFlavorGroup
 from huaweicloudsdkrds.v3.model.computes import Computes
@@ -348,6 +351,8 @@ from huaweicloudsdkrds.v3.model.list_job_info_request import ListJobInfoRequest
 from huaweicloudsdkrds.v3.model.list_job_info_response import ListJobInfoResponse
 from huaweicloudsdkrds.v3.model.list_log_lts_configs_request import ListLogLtsConfigsRequest
 from huaweicloudsdkrds.v3.model.list_log_lts_configs_response import ListLogLtsConfigsResponse
+from huaweicloudsdkrds.v3.model.list_major_version_feature_request import ListMajorVersionFeatureRequest
+from huaweicloudsdkrds.v3.model.list_major_version_feature_response import ListMajorVersionFeatureResponse
 from huaweicloudsdkrds.v3.model.list_marketplace_engine_products_request import ListMarketplaceEngineProductsRequest
 from huaweicloudsdkrds.v3.model.list_marketplace_engine_products_response import ListMarketplaceEngineProductsResponse
 from huaweicloudsdkrds.v3.model.list_msdtc_hosts_request import ListMsdtcHostsRequest
@@ -422,6 +427,8 @@ from huaweicloudsdkrds.v3.model.list_subscriber_instances_request import ListSub
 from huaweicloudsdkrds.v3.model.list_subscriber_instances_response import ListSubscriberInstancesResponse
 from huaweicloudsdkrds.v3.model.list_tasks_request import ListTasksRequest
 from huaweicloudsdkrds.v3.model.list_tasks_response import ListTasksResponse
+from huaweicloudsdkrds.v3.model.list_top_sqls_request import ListTopSqlsRequest
+from huaweicloudsdkrds.v3.model.list_top_sqls_response import ListTopSqlsResponse
 from huaweicloudsdkrds.v3.model.list_update_backup_enhance_policy_request import ListUpdateBackupEnhancePolicyRequest
 from huaweicloudsdkrds.v3.model.list_update_backup_enhance_policy_response import ListUpdateBackupEnhancePolicyResponse
 from huaweicloudsdkrds.v3.model.list_upgrade_histories_request import ListUpgradeHistoriesRequest
@@ -459,6 +466,8 @@ from huaweicloudsdkrds.v3.model.mysql_read_only_switch import MysqlReadOnlySwitc
 from huaweicloudsdkrds.v3.model.mysql_slow_log_details_item import MysqlSlowLogDetailsItem
 from huaweicloudsdkrds.v3.model.mysql_slow_log_statistics_item import MysqlSlowLogStatisticsItem
 from huaweicloudsdkrds.v3.model.node_response import NodeResponse
+from huaweicloudsdkrds.v3.model.notify_replace_node_request import NotifyReplaceNodeRequest
+from huaweicloudsdkrds.v3.model.notify_replace_node_response import NotifyReplaceNodeResponse
 from huaweicloudsdkrds.v3.model.off_site_backup_for_list import OffSiteBackupForList
 from huaweicloudsdkrds.v3.model.off_site_backup_policy import OffSiteBackupPolicy
 from huaweicloudsdkrds.v3.model.offsite_backup_instance import OffsiteBackupInstance
@@ -507,6 +516,7 @@ from huaweicloudsdkrds.v3.model.pwd_reset_request import PwdResetRequest
 from huaweicloudsdkrds.v3.model.query_dr_info_request import QueryDRInfoRequest
 from huaweicloudsdkrds.v3.model.query_proxy_response_v3 import QueryProxyResponseV3
 from huaweicloudsdkrds.v3.model.query_publication_info import QueryPublicationInfo
+from huaweicloudsdkrds.v3.model.query_top_sqls_result import QueryTopSqlsResult
 from huaweicloudsdkrds.v3.model.quotas import Quotas
 from huaweicloudsdkrds.v3.model.rds_upgrade_precheck_v3_req import RdsUpgradePrecheckV3Req
 from huaweicloudsdkrds.v3.model.readonly_instances import ReadonlyInstances
@@ -516,6 +526,7 @@ from huaweicloudsdkrds.v3.model.recycle_policy_request_body import RecyclePolicy
 from huaweicloudsdkrds.v3.model.reduce_volume_object import ReduceVolumeObject
 from huaweicloudsdkrds.v3.model.reduce_volume_request_body import ReduceVolumeRequestBody
 from huaweicloudsdkrds.v3.model.related_instance import RelatedInstance
+from huaweicloudsdkrds.v3.model.replace_node_request import ReplaceNodeRequest
 from huaweicloudsdkrds.v3.model.replication_instance_info import ReplicationInstanceInfo
 from huaweicloudsdkrds.v3.model.replication_user_info import ReplicationUserInfo
 from huaweicloudsdkrds.v3.model.reset_pwd_request import ResetPwdRequest
@@ -527,6 +538,7 @@ from huaweicloudsdkrds.v3.model.resize_flavor_request import ResizeFlavorRequest
 from huaweicloudsdkrds.v3.model.resource_tag import ResourceTag
 from huaweicloudsdkrds.v3.model.resources import Resources
 from huaweicloudsdkrds.v3.model.restart_configuration import RestartConfiguration
+from huaweicloudsdkrds.v3.model.restart_policy import RestartPolicy
 from huaweicloudsdkrds.v3.model.restore_database_info import RestoreDatabaseInfo
 from huaweicloudsdkrds.v3.model.restore_database_instance import RestoreDatabaseInstance
 from huaweicloudsdkrds.v3.model.restore_databases_info import RestoreDatabasesInfo
@@ -668,6 +680,8 @@ from huaweicloudsdkrds.v3.model.show_replay_delay_status_request import ShowRepl
 from huaweicloudsdkrds.v3.model.show_replay_delay_status_response import ShowReplayDelayStatusResponse
 from huaweicloudsdkrds.v3.model.show_replication_status_request import ShowReplicationStatusRequest
 from huaweicloudsdkrds.v3.model.show_replication_status_response import ShowReplicationStatusResponse
+from huaweicloudsdkrds.v3.model.show_restart_policy_request import ShowRestartPolicyRequest
+from huaweicloudsdkrds.v3.model.show_restart_policy_response import ShowRestartPolicyResponse
 from huaweicloudsdkrds.v3.model.show_second_level_monitoring_request import ShowSecondLevelMonitoringRequest
 from huaweicloudsdkrds.v3.model.show_second_level_monitoring_response import ShowSecondLevelMonitoringResponse
 from huaweicloudsdkrds.v3.model.show_storage_used_space_request import ShowStorageUsedSpaceRequest
@@ -748,6 +762,9 @@ from huaweicloudsdkrds.v3.model.target_instance_request import TargetInstanceReq
 from huaweicloudsdkrds.v3.model.task import Task
 from huaweicloudsdkrds.v3.model.task_detail_request import TaskDetailRequest
 from huaweicloudsdkrds.v3.model.to_period_req import ToPeriodReq
+from huaweicloudsdkrds.v3.model.top_sqls_logical_read_result import TopSqlsLogicalReadResult
+from huaweicloudsdkrds.v3.model.top_sqls_row_result import TopSqlsRowResult
+from huaweicloudsdkrds.v3.model.top_sqls_time_result import TopSqlsTimeResult
 from huaweicloudsdkrds.v3.model.transfer_backup_request import TransferBackupRequest
 from huaweicloudsdkrds.v3.model.transfer_backup_request_body import TransferBackupRequestBody
 from huaweicloudsdkrds.v3.model.transfer_backup_response import TransferBackupResponse

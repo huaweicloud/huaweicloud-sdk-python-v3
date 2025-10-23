@@ -19,6 +19,7 @@ class StartTaskGroupReq:
     openapi_types = {
         'src_ak': 'str',
         'src_sk': 'str',
+        'connection_string': 'str',
         'json_auth_file': 'str',
         'dst_ak': 'str',
         'dst_sk': 'str',
@@ -28,13 +29,14 @@ class StartTaskGroupReq:
     attribute_map = {
         'src_ak': 'src_ak',
         'src_sk': 'src_sk',
+        'connection_string': 'connection_string',
         'json_auth_file': 'json_auth_file',
         'dst_ak': 'dst_ak',
         'dst_sk': 'dst_sk',
         'source_cdn_authentication_key': 'source_cdn_authentication_key'
     }
 
-    def __init__(self, src_ak=None, src_sk=None, json_auth_file=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None):
+    def __init__(self, src_ak=None, src_sk=None, connection_string=None, json_auth_file=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None):
         r"""StartTaskGroupReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class StartTaskGroupReq:
         :type src_ak: str
         :param src_sk: 源端节点SK（最大长度100个字符）。URL列表迁移任务不需要填写此参数。
         :type src_sk: str
+        :param connection_string: 连接字符串，用于微软云Blob鉴权
+        :type connection_string: str
         :param json_auth_file: 用于谷歌云Cloud Storage鉴权
         :type json_auth_file: str
         :param dst_ak: 目的端节点AK（最大长度100个字符）。
@@ -57,6 +61,7 @@ class StartTaskGroupReq:
 
         self._src_ak = None
         self._src_sk = None
+        self._connection_string = None
         self._json_auth_file = None
         self._dst_ak = None
         self._dst_sk = None
@@ -67,6 +72,8 @@ class StartTaskGroupReq:
             self.src_ak = src_ak
         if src_sk is not None:
             self.src_sk = src_sk
+        if connection_string is not None:
+            self.connection_string = connection_string
         if json_auth_file is not None:
             self.json_auth_file = json_auth_file
         self.dst_ak = dst_ak
@@ -117,6 +124,28 @@ class StartTaskGroupReq:
         :type src_sk: str
         """
         self._src_sk = src_sk
+
+    @property
+    def connection_string(self):
+        r"""Gets the connection_string of this StartTaskGroupReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :return: The connection_string of this StartTaskGroupReq.
+        :rtype: str
+        """
+        return self._connection_string
+
+    @connection_string.setter
+    def connection_string(self, connection_string):
+        r"""Sets the connection_string of this StartTaskGroupReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :param connection_string: The connection_string of this StartTaskGroupReq.
+        :type connection_string: str
+        """
+        self._connection_string = connection_string
 
     @property
     def json_auth_file(self):

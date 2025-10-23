@@ -57,7 +57,7 @@ class RepositoryTemplateDto:
         :type repository_id: int
         :param name: **参数解释：** 模板仓标题。 **取值范围：** 字符串长度1-50。
         :type name: str
-        :param system: **参数解释：** 是否是系统模版。 **取值范围：** - true，系统模版。 - false，个人模版。
+        :param system: **参数解释：** 是否是系统模板。 **取值范围：** - true，系统模板。 - false，个人模板。
         :type system: bool
         :param tags: **参数解释：** 标签列表。 **取值范围：** 不涉及。
         :type tags: list[str]
@@ -173,7 +173,7 @@ class RepositoryTemplateDto:
     def system(self):
         r"""Gets the system of this RepositoryTemplateDto.
 
-        **参数解释：** 是否是系统模版。 **取值范围：** - true，系统模版。 - false，个人模版。
+        **参数解释：** 是否是系统模板。 **取值范围：** - true，系统模板。 - false，个人模板。
 
         :return: The system of this RepositoryTemplateDto.
         :rtype: bool
@@ -184,7 +184,7 @@ class RepositoryTemplateDto:
     def system(self, system):
         r"""Sets the system of this RepositoryTemplateDto.
 
-        **参数解释：** 是否是系统模版。 **取值范围：** - true，系统模版。 - false，个人模版。
+        **参数解释：** 是否是系统模板。 **取值范围：** - true，系统模板。 - false，个人模板。
 
         :param system: The system of this RepositoryTemplateDto.
         :type system: bool

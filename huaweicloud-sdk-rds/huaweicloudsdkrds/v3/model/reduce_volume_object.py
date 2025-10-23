@@ -17,28 +17,42 @@ class ReduceVolumeObject:
     sensitive_list = []
 
     openapi_types = {
-        'size': 'int'
+        'size': 'int',
+        'iops': 'int',
+        'throughput': 'int'
     }
 
     attribute_map = {
-        'size': 'size'
+        'size': 'size',
+        'iops': 'iops',
+        'throughput': 'throughput'
     }
 
-    def __init__(self, size=None):
+    def __init__(self, size=None, iops=None, throughput=None):
         r"""ReduceVolumeObject
 
         The model defined in huaweicloud sdk
 
         :param size: 缩容后实例磁盘的目标大小。每次缩容至少缩小10GB；目标大小必须为10的整数倍。 为确保实例的正常使用，根据当前磁盘的使用量情况存在磁盘容量下限，当此参数小于磁盘容量下限时，缩容会下发失败，此时请适当调大此参数。
         :type size: int
+        :param iops: 该参数只有磁盘类型为Flexible SSD（GPSSD2）和极速型SSDV2（ESSD2）的磁盘必填。 对于Flexible SSD类型的磁盘，IOPS值配置的范围为3000~128000，具体可配置值受磁盘大小限制，需要小于等于500*磁盘容量。 对于极速型SSDV2类型的磁盘，IOPS值配置的范围为100~256000，具体可配置值受磁盘大小限制，需要小于等于1000*磁盘容量。
+        :type iops: int
+        :param throughput: 该参数只有磁盘类型为Flexible SSD（GPSSD2）的磁盘必填。 对于Flexible SSD类型的磁盘，throughput值配置的范围为125~1000 MiB/s，具体可配置值受IOPS大小限制，需要小于等于IOPS/4。
+        :type throughput: int
         """
         
         
 
         self._size = None
+        self._iops = None
+        self._throughput = None
         self.discriminator = None
 
         self.size = size
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
 
     @property
     def size(self):
@@ -61,6 +75,50 @@ class ReduceVolumeObject:
         :type size: int
         """
         self._size = size
+
+    @property
+    def iops(self):
+        r"""Gets the iops of this ReduceVolumeObject.
+
+        该参数只有磁盘类型为Flexible SSD（GPSSD2）和极速型SSDV2（ESSD2）的磁盘必填。 对于Flexible SSD类型的磁盘，IOPS值配置的范围为3000~128000，具体可配置值受磁盘大小限制，需要小于等于500*磁盘容量。 对于极速型SSDV2类型的磁盘，IOPS值配置的范围为100~256000，具体可配置值受磁盘大小限制，需要小于等于1000*磁盘容量。
+
+        :return: The iops of this ReduceVolumeObject.
+        :rtype: int
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        r"""Sets the iops of this ReduceVolumeObject.
+
+        该参数只有磁盘类型为Flexible SSD（GPSSD2）和极速型SSDV2（ESSD2）的磁盘必填。 对于Flexible SSD类型的磁盘，IOPS值配置的范围为3000~128000，具体可配置值受磁盘大小限制，需要小于等于500*磁盘容量。 对于极速型SSDV2类型的磁盘，IOPS值配置的范围为100~256000，具体可配置值受磁盘大小限制，需要小于等于1000*磁盘容量。
+
+        :param iops: The iops of this ReduceVolumeObject.
+        :type iops: int
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        r"""Gets the throughput of this ReduceVolumeObject.
+
+        该参数只有磁盘类型为Flexible SSD（GPSSD2）的磁盘必填。 对于Flexible SSD类型的磁盘，throughput值配置的范围为125~1000 MiB/s，具体可配置值受IOPS大小限制，需要小于等于IOPS/4。
+
+        :return: The throughput of this ReduceVolumeObject.
+        :rtype: int
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        r"""Sets the throughput of this ReduceVolumeObject.
+
+        该参数只有磁盘类型为Flexible SSD（GPSSD2）的磁盘必填。 对于Flexible SSD类型的磁盘，throughput值配置的范围为125~1000 MiB/s，具体可配置值受IOPS大小限制，需要小于等于IOPS/4。
+
+        :param throughput: The throughput of this ReduceVolumeObject.
+        :type throughput: int
+        """
+        self._throughput = throughput
 
     def to_dict(self):
         """Returns the model properties as a dict"""

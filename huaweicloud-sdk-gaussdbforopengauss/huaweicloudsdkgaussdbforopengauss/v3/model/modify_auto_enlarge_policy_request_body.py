@@ -37,7 +37,7 @@ class ModifyAutoEnlargePolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param switch_option: **参数解释**: 磁盘自动扩容开关。 **约束限制**: 不涉及。 **取值范围**: - true：开启磁盘自动扩容。 - false：开启磁盘自动扩容。  **默认取值**: 不涉及。
+        :param switch_option: **参数解释**: 磁盘自动扩容开关。 **约束限制**: 不涉及。 **取值范围**: - true：开启磁盘自动扩容。 - false：关闭磁盘自动扩容。  **默认取值**: 不涉及。
         :type switch_option: bool
         :param limit_volume_size: **参数解释**: 存储自动扩容上限。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
         :type limit_volume_size: int
@@ -73,7 +73,7 @@ class ModifyAutoEnlargePolicyRequestBody:
     def switch_option(self):
         r"""Gets the switch_option of this ModifyAutoEnlargePolicyRequestBody.
 
-        **参数解释**: 磁盘自动扩容开关。 **约束限制**: 不涉及。 **取值范围**: - true：开启磁盘自动扩容。 - false：开启磁盘自动扩容。  **默认取值**: 不涉及。
+        **参数解释**: 磁盘自动扩容开关。 **约束限制**: 不涉及。 **取值范围**: - true：开启磁盘自动扩容。 - false：关闭磁盘自动扩容。  **默认取值**: 不涉及。
 
         :return: The switch_option of this ModifyAutoEnlargePolicyRequestBody.
         :rtype: bool
@@ -84,7 +84,7 @@ class ModifyAutoEnlargePolicyRequestBody:
     def switch_option(self, switch_option):
         r"""Sets the switch_option of this ModifyAutoEnlargePolicyRequestBody.
 
-        **参数解释**: 磁盘自动扩容开关。 **约束限制**: 不涉及。 **取值范围**: - true：开启磁盘自动扩容。 - false：开启磁盘自动扩容。  **默认取值**: 不涉及。
+        **参数解释**: 磁盘自动扩容开关。 **约束限制**: 不涉及。 **取值范围**: - true：开启磁盘自动扩容。 - false：关闭磁盘自动扩容。  **默认取值**: 不涉及。
 
         :param switch_option: The switch_option of this ModifyAutoEnlargePolicyRequestBody.
         :type switch_option: bool

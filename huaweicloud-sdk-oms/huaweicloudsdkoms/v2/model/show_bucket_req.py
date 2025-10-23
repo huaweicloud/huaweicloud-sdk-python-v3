@@ -21,6 +21,7 @@ class ShowBucketReq:
         'file_path': 'str',
         'ak': 'str',
         'sk': 'str',
+        'connection_string': 'str',
         'json_auth_file': 'str',
         'data_center': 'str',
         'page_size': 'int',
@@ -34,6 +35,7 @@ class ShowBucketReq:
         'file_path': 'file_path',
         'ak': 'ak',
         'sk': 'sk',
+        'connection_string': 'connection_string',
         'json_auth_file': 'json_auth_file',
         'data_center': 'data_center',
         'page_size': 'page_size',
@@ -42,7 +44,7 @@ class ShowBucketReq:
         'bucket_name': 'bucket_name'
     }
 
-    def __init__(self, cloud_type=None, file_path=None, ak=None, sk=None, json_auth_file=None, data_center=None, page_size=None, behind_filename=None, app_id=None, bucket_name=None):
+    def __init__(self, cloud_type=None, file_path=None, ak=None, sk=None, connection_string=None, json_auth_file=None, data_center=None, page_size=None, behind_filename=None, app_id=None, bucket_name=None):
         r"""ShowBucketReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ShowBucketReq:
         :type ak: str
         :param sk: 源端桶的SK（最大长度100个字符）
         :type sk: str
+        :param connection_string: 连接字符串，用于微软云Blob鉴权
+        :type connection_string: str
         :param json_auth_file: 用于谷歌云Cloud Storage鉴权
         :type json_auth_file: str
         :param data_center: 数据中心，区域
@@ -75,6 +79,7 @@ class ShowBucketReq:
         self._file_path = None
         self._ak = None
         self._sk = None
+        self._connection_string = None
         self._json_auth_file = None
         self._data_center = None
         self._page_size = None
@@ -89,6 +94,8 @@ class ShowBucketReq:
             self.ak = ak
         if sk is not None:
             self.sk = sk
+        if connection_string is not None:
+            self.connection_string = connection_string
         if json_auth_file is not None:
             self.json_auth_file = json_auth_file
         self.data_center = data_center
@@ -185,6 +192,28 @@ class ShowBucketReq:
         :type sk: str
         """
         self._sk = sk
+
+    @property
+    def connection_string(self):
+        r"""Gets the connection_string of this ShowBucketReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :return: The connection_string of this ShowBucketReq.
+        :rtype: str
+        """
+        return self._connection_string
+
+    @connection_string.setter
+    def connection_string(self, connection_string):
+        r"""Sets the connection_string of this ShowBucketReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :param connection_string: The connection_string of this ShowBucketReq.
+        :type connection_string: str
+        """
+        self._connection_string = connection_string
 
     @property
     def json_auth_file(self):

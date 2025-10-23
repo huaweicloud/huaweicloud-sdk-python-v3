@@ -2284,6 +2284,87 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         return http_info
 
+    def list_backups_async(self, request):
+        r"""查询备份列表（推荐）
+
+        根据指定条件查询备份列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBackups
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListBackupsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListBackupsResponse`
+        """
+        http_info = self._list_backups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_backups_async_invoker(self, request):
+        http_info = self._list_backups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_backups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/{project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'backup_id' in local_var_params:
+            query_params.append(('backup_id', local_var_params['backup_id']))
+        if 'backup_type' in local_var_params:
+            query_params.append(('backup_type', local_var_params['backup_type']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_cassandra_slow_logs_async(self, request):
         r"""查询GeminiDB(for Cassandra)数据库慢日志
 
@@ -5757,6 +5838,73 @@ class GaussDBforNoSQLAsyncClient(Client):
             "resource_path": "/v3/{project_id}/instances/{instance_id}/recovery",
             "request_type": request.__class__.__name__,
             "response_type": "RestoreExistingInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restore_redis_data_async(self, request):
+        r"""数据文件导入已有实例
+
+        数据导入已有实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestoreRedisData
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreRedisDataRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreRedisDataResponse`
+        """
+        http_info = self._restore_redis_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def restore_redis_data_async_invoker(self, request):
+        http_info = self._restore_redis_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_redis_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/recovery",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreRedisDataResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

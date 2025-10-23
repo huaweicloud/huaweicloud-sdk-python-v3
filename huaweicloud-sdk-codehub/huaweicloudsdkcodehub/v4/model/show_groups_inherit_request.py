@@ -33,7 +33,7 @@ class ShowGroupsInheritRequest:
 
         :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
         :type group_id: int
-        :param setting_type: **参数解释：** 设置类型protected_branches保护分支 protected_tags保护tag push_rules推送规则 merge_requests合并请求 mr_branch_policies合并分支 reviews检视意见 e2e_settings e2e设置 webhook_settings hook设置 deploy_keys 部署key watermark水印 repository_settings仓库设置。
+        :param setting_type: **参数解释：** 必填项，设置类型protected_branches保护分支 protected_tags保护tag push_rules推送规则 merge_requests合并请求 mr_branch_policies合并分支 reviews检视意见 e2e_settings e2e设置 webhook_settings hook设置 deploy_keys 部署key watermark水印 repository_settings仓库设置。
         :type setting_type: str
         """
         
@@ -44,8 +44,7 @@ class ShowGroupsInheritRequest:
         self.discriminator = None
 
         self.group_id = group_id
-        if setting_type is not None:
-            self.setting_type = setting_type
+        self.setting_type = setting_type
 
     @property
     def group_id(self):
@@ -73,7 +72,7 @@ class ShowGroupsInheritRequest:
     def setting_type(self):
         r"""Gets the setting_type of this ShowGroupsInheritRequest.
 
-        **参数解释：** 设置类型protected_branches保护分支 protected_tags保护tag push_rules推送规则 merge_requests合并请求 mr_branch_policies合并分支 reviews检视意见 e2e_settings e2e设置 webhook_settings hook设置 deploy_keys 部署key watermark水印 repository_settings仓库设置。
+        **参数解释：** 必填项，设置类型protected_branches保护分支 protected_tags保护tag push_rules推送规则 merge_requests合并请求 mr_branch_policies合并分支 reviews检视意见 e2e_settings e2e设置 webhook_settings hook设置 deploy_keys 部署key watermark水印 repository_settings仓库设置。
 
         :return: The setting_type of this ShowGroupsInheritRequest.
         :rtype: str
@@ -84,7 +83,7 @@ class ShowGroupsInheritRequest:
     def setting_type(self, setting_type):
         r"""Sets the setting_type of this ShowGroupsInheritRequest.
 
-        **参数解释：** 设置类型protected_branches保护分支 protected_tags保护tag push_rules推送规则 merge_requests合并请求 mr_branch_policies合并分支 reviews检视意见 e2e_settings e2e设置 webhook_settings hook设置 deploy_keys 部署key watermark水印 repository_settings仓库设置。
+        **参数解释：** 必填项，设置类型protected_branches保护分支 protected_tags保护tag push_rules推送规则 merge_requests合并请求 mr_branch_policies合并分支 reviews检视意见 e2e_settings e2e设置 webhook_settings hook设置 deploy_keys 部署key watermark水印 repository_settings仓库设置。
 
         :param setting_type: The setting_type of this ShowGroupsInheritRequest.
         :type setting_type: str

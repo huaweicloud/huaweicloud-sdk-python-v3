@@ -38,8 +38,7 @@ class UpdateMfaDeviceForUserReqBody:
         self._display_name = None
         self.discriminator = None
 
-        if display_name is not None:
-            self.display_name = display_name
+        self.display_name = display_name
 
     @property
     def display_name(self):

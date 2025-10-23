@@ -67,7 +67,7 @@ class SubmoduleDto:
         :type repo_name: str
         :param sub_commit_id: **参数解释：** 子模块仓库提交。
         :type sub_commit_id: str
-        :param deploy_key_status: **参数解释：** 部署秘钥同步状态。 **取值范围：** - 0，不同步。 - 1，同步。
+        :param deploy_key_status: **参数解释：** 部署密钥同步状态。 **取值范围：** - 0，不同步。 - 1，同步。
         :type deploy_key_status: int
         :param status: **参数解释：** 子模块状态。 **取值范围：** - 0，异常。 - 1，正常。
         :type status: int
@@ -313,7 +313,7 @@ class SubmoduleDto:
     def deploy_key_status(self):
         r"""Gets the deploy_key_status of this SubmoduleDto.
 
-        **参数解释：** 部署秘钥同步状态。 **取值范围：** - 0，不同步。 - 1，同步。
+        **参数解释：** 部署密钥同步状态。 **取值范围：** - 0，不同步。 - 1，同步。
 
         :return: The deploy_key_status of this SubmoduleDto.
         :rtype: int
@@ -324,7 +324,7 @@ class SubmoduleDto:
     def deploy_key_status(self, deploy_key_status):
         r"""Sets the deploy_key_status of this SubmoduleDto.
 
-        **参数解释：** 部署秘钥同步状态。 **取值范围：** - 0，不同步。 - 1，同步。
+        **参数解释：** 部署密钥同步状态。 **取值范围：** - 0，不同步。 - 1，同步。
 
         :param deploy_key_status: The deploy_key_status of this SubmoduleDto.
         :type deploy_key_status: int

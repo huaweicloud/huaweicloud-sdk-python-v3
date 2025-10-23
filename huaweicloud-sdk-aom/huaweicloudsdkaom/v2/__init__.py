@@ -32,6 +32,12 @@ from huaweicloudsdkaom.v2.model.app_rules import AppRules
 from huaweicloudsdkaom.v2.model.app_rules_body import AppRulesBody
 from huaweicloudsdkaom.v2.model.app_rules_spec import AppRulesSpec
 from huaweicloudsdkaom.v2.model.application_name_rule import ApplicationNameRule
+from huaweicloudsdkaom.v2.model.batch_alarm_rules_body import BatchAlarmRulesBody
+from huaweicloudsdkaom.v2.model.batch_update_action_rules import BatchUpdateActionRules
+from huaweicloudsdkaom.v2.model.batch_update_alarm_rule_request import BatchUpdateAlarmRuleRequest
+from huaweicloudsdkaom.v2.model.batch_update_alarm_rule_response import BatchUpdateAlarmRuleResponse
+from huaweicloudsdkaom.v2.model.batch_update_item_result import BatchUpdateItemResult
+from huaweicloudsdkaom.v2.model.batch_update_request import BatchUpdateRequest
 from huaweicloudsdkaom.v2.model.cmdb_info import CmdbInfo
 from huaweicloudsdkaom.v2.model.count_events_request import CountEventsRequest
 from huaweicloudsdkaom.v2.model.count_events_response import CountEventsResponse

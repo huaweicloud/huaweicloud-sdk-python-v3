@@ -1,3 +1,634 @@
+# 3.1.172 2025-10-23
+
+### HuaweiCloud SDK AOM
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`BatchUpdateAlarmRule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudDC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowServer**
+    - 响应参数变更
+      - `+ manage_state: enum value [in-use,offboarding]`
+      - `- manage_state: enum value [delivering,received]`
+  - **ShowInstanceStatus**
+    - 响应参数变更
+      - `+ state: enum value [terminated,modifyIping,switch-installing]`
+      - `- state: enum value [teminated]`
+  - **UpdateIDcs**
+    - 请求参数变更
+      - `- region`
+  - **ListServers**
+    - 请求参数变更
+      - `+ manage_state: enum value [in-use]`
+      - `+ manage_state: enum value [delivering,received]`
+    - 响应参数变更
+      - `+ servers.manage_state: enum value [in-use,offboarding]`
+      - `- servers.manage_state: enum value [delivering,received]`
+  - **ListInstances**
+    - 响应参数变更
+      - `+ instances.state: enum value [terminated,modifyIping,switch-installing]`
+      - `- instances.state: enum value [teminated]`
+  - **ShowServerHardwareAttributes**
+    - 响应参数变更
+      - `* memorys.rank_count: string -> int32`
+      - `* memorys.data_width_bits: string -> int32`
+      - `* memorys.min_voltage_millivolt: string -> int32`
+      - `* processors.total_enabled_cores: string -> int32`
+      - `* processors.total_enabled_threads: string -> int32`
+      - `* powers.power_capacity_watts: string -> int32`
+      - `* network_adapters.network_ports.physical_port_number: int32 -> string`
+      - `* fans.reading: string -> int32`
+      - `* fans.speed_ratio: string -> int32`
+
+### HuaweiCloud SDK COC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ExecuteTicketAction**
+    - 请求参数变更
+      - `+ user_id`
+    - 响应参数变更
+      - `- data`
+  - **UpdateChange**
+    - 响应参数变更
+      - `- data`
+  - **HandleIncident**
+    - 响应参数变更
+      - `- data`
+  - **CreateReportPrometheusEvent**
+    - 响应参数变更
+      - `- data`
+  - **CreateReportCustomEvent**
+    - 响应参数变更
+      - `- data`
+  - **CreateCocIncident**
+    - 请求参数变更
+      - `* is_service_interrupt: boolean -> string`
+  - **ListTickets**
+    - 请求参数变更
+      - `+ string_filters.name`
+  - **ListTicketOperationHistories**
+    - 请求参数变更
+      - `+ string_filters.name`
+    - 响应参数变更
+      - `- data.info.current_cloud_service_id`
+      - `- data.info.description`
+      - `- data.info.level_id`
+      - `- data.info.mtm_region`
+      - `- data.info.mtm_type`
+      - `- data.info.source_id`
+      - `- data.info.title`
+      - `- data.info.is_change_event`
+      - `- data.info.is_service_interrupt`
+      - `+ data.info.enum_data_list.real_ticket_id`
+      - `- data.info.enum_data_list.current_cloud_service_id`
+      - `- data.info.enum_data_list.description`
+      - `- data.info.enum_data_list.level_id`
+      - `- data.info.enum_data_list.mtm_region`
+      - `- data.info.enum_data_list.mtm_type`
+      - `- data.info.enum_data_list.source_id`
+      - `- data.info.enum_data_list.title`
+      - `- data.info.enum_data_list.is_change_event`
+      - `- data.info.enum_data_list.is_service_interrupt`
+      - `- data.info.enum_data_list.full_name_zh`
+      - `- data.info.enum_data_list.full_name_en`
+      - `- data.info.enum_data_list.name_zh_path`
+      - `- data.info.enum_data_list.name_en_path`
+      - `- data.info.enum_data_list.status`
+      - `- data.info.enum_data_list.enum_type_id`
+  - **DeleteTicketInfo**
+    - 响应参数变更
+      - `- data`
+  - **ShowCocIncidentDetail**
+    - 响应参数变更
+      - `+ data.start_time`
+      - `+ data.fault_recovery_time`
+      - `+ data.fault_delineation_time`
+      - `+ data.incident_ownership`
+  - **ListCocTicketOperationHistories**
+    - 请求参数变更
+      - `+ string_filters.name`
+    - 响应参数变更
+      - `- data.info.current_cloud_service_id`
+      - `- data.info.description`
+      - `- data.info.level_id`
+      - `- data.info.mtm_region`
+      - `- data.info.mtm_type`
+      - `- data.info.source_id`
+      - `- data.info.title`
+      - `- data.info.is_change_event`
+      - `- data.info.is_service_interrupt`
+      - `+ data.info.enum_data_list.real_ticket_id`
+      - `- data.info.enum_data_list.current_cloud_service_id`
+      - `- data.info.enum_data_list.description`
+      - `- data.info.enum_data_list.level_id`
+      - `- data.info.enum_data_list.mtm_region`
+      - `- data.info.enum_data_list.mtm_type`
+      - `- data.info.enum_data_list.source_id`
+      - `- data.info.enum_data_list.title`
+      - `- data.info.enum_data_list.is_change_event`
+      - `- data.info.enum_data_list.is_service_interrupt`
+      - `- data.info.enum_data_list.full_name_zh`
+      - `- data.info.enum_data_list.full_name_en`
+      - `- data.info.enum_data_list.name_zh_path`
+      - `- data.info.enum_data_list.name_en_path`
+      - `- data.info.enum_data_list.status`
+      - `- data.info.enum_data_list.enum_type_id`
+
+### HuaweiCloud SDK CodeHub
+
+- _接口版本_
+  - V4
+- _新增特性_
+  - 支持以下接口：
+    - `BatchDeleteBranch`
+    - `ListCommits`
+    - `ListLogsTree`
+    - `ListRefsList`
+    - `ExecuteRepositoryStatistics`
+    - `ListMergeRequestSystemNotes`
+    - `ListCommitDiscussions`
+    - `ListPersonalMergeRequests`
+    - `ListMergeRequestEvaluations`
+    - `ShowCommitCommentsByLine`
+    - `ListGroupMergeRequestTemplates`
+    - `CreateGroupMergeRequestTemplate`
+    - `UpdateGroupMergeRequestTemplate`
+    - `DeleteGroupMergeRequestTemplate`
+    - `ListProjectMergeRequestTemplates`
+    - `CreateProjectMergeRequestTemplate`
+    - `UpdateProjectMergeRequestTemplate`
+    - `DeleteProjectMergeRequestTemplate`
+    - `ListMergeRequestVersions`
+    - `CreateCherryPickMergeRequest`
+    - `ListPersonalRecentPushEvents`
+    - `RenameFile`
+    - `ShowFileRaw`
+    - `BatchValidateUserGroupPermissions`
+    - `ShowGroupInheritSetting`
+    - `ShowGroupsGeneralPolicy`
+    - `UpdateGroupGeneralPolicy`
+    - `ListGroupUserGroups`
+    - `ListProjectProtectedTags`
+    - `CreateProjectProtectedTags`
+    - `ShowProjectsGeneralPolicy`
+    - `UpdateProjectGeneralPolicy`
+    - `ListRepositoryProtectedRefsUserGroups`
+    - `ListGroupProtectedRefsUserGroups`
+    - `ListProjectProtectedRefsUserGroups`
+    - `ListRepositoryResourcePermissions`
+    - `UpdateRepositoryResourcePermissions`
+    - `ListItemCommits`
+    - `UpdateRepositoryCommitRule`
+    - `StartHouseKeeping`
+    - `SyncDeployKeyToSubmodules`
+    - `RemoveDeployKeyFromSubmodules`
+    - `BatchValidateRepoNames`
+    - `ListProjectRepositories`
+    - `ListGroupRepositories`
+    - `ListTenantRepositories`
+    - `ExportTenantRepositories`
+    - `ShowRepositoryE2eSetting`
+    - `ShowGroupE2eSetting`
+    - `ShowProjectE2eSetting`
+    - `UpdateRepositoryRemoteMirror`
+    - `UpdateRepositoryGeneralCommitRule`
+    - `DeleteMergeRequestDiscussion`
+    - `CreateRepositoryCommitRule`
+    - `UpdateMergeRequestDiscussionInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **DeleteTrustedIpAddress**
+    - 响应参数变更
+      - `+ status: enum value [success,fail]`
+  - **DeleteTenantTrustedIpAddress**
+    - 响应参数变更
+      - `+ status: enum value [success,fail]`
+  - **StartRemoteMirrorSynchronization**
+    - 请求参数变更
+      - `+ force_fetch`
+  - **ListRepositoryReviewAuthors**
+    - 响应参数变更
+      - `+ state: enum value [active,blocked,error]`
+  - **ListMergeRequestParticipants**
+    - 响应参数变更
+      - `+ state: enum value [active,blocked,error]`
+  - **CreateCommitRevert**
+    - 响应参数变更
+      - `+ iid`
+  - **ListMergeRequestTemplates**
+    - 响应参数变更
+      - `* : list<MergeRequestTemplateDto> -> list<RepositoryMergeRequestTemplateDto>`
+  - **ListGroupMergeRequestValidAssignedCandidates**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+    - 响应参数变更
+      - `+ state: enum value [active,blocked,error]`
+  - **ListProjectMergeRequestCanBeAssignedUsers**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+    - 响应参数变更
+      - `+ state: enum value [active,blocked,error]`
+  - **ListGroupMergeRequestCanBeAssignedReviewers**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+    - 响应参数变更
+      - `+ state: enum value [active,blocked,error]`
+  - **ListProjectMergeRequestCanBeAssignedReviewers**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+    - 响应参数变更
+      - `+ state: enum value [active,blocked,error]`
+  - **ListMergeRequestValidAssignedCandidates**
+    - 响应参数变更
+      - `+ state: enum value [active,blocked,error]`
+  - **ShowGroupSettingsInheritCfg**
+    - 响应参数变更
+      - `+ cr_comment_templates`
+      - `- cr_comment_emplates`
+  - **ShowUserEmails**
+    - 响应参数变更
+      - `+ state: enum value [active,blocked]`
+  - **UpdateUserEmails**
+    - 响应参数变更
+      - `+ state: enum value [active,blocked]`
+  - **ShowGroupsInherit**
+    - 请求参数变更
+      - `* setting_type: optional -> required`
+  - **BatchDeleteProtectedBranches**
+    - 响应参数变更
+      - `+ status: enum value [success,fail]`
+  - **BatchDeleteProtectedTags**
+    - 响应参数变更
+      - `+ status: enum value [success,fail]`
+  - **ListRepositoryForks**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+  - **ListRepositoryEvents**
+    - 响应参数变更
+      - `+ author.state: enum value [active,blocked]`
+  - **DeleteFile**
+    - 响应参数变更
+      - `+ status: enum value [success,fail]`
+  - **ListRepositoryReviews**
+    - 响应参数变更
+      - `+ assignee.state: enum value [active,blocked,error]`
+  - **CreateMergeRequestDiscussionResponse**
+    - 响应参数变更
+      - `- type: enum value [DiscussionNote,DiffNote]`
+      - `+ author.state: enum value [active,blocked,error]`
+  - **UpdateMergeRequestDiscussion**
+    - 响应参数变更
+      - `- type: enum value [DiscussionNote,DiffNote]`
+      - `+ author.state: enum value [active,blocked,error]`
+  - **ListRepositoryMergeRequests**
+    - 响应参数变更
+      - `+ author.state: enum value [active,blocked,error]`
+  - **ListMergeRequestApproverSettings**
+    - 响应参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+  - **CreateMergeRequestApproverSetting**
+    - 请求参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+    - 响应参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+  - **UpdateMergeRequestApproverSetting**
+    - 请求参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+    - 响应参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+  - **ListMergeRequestChanges**
+    - 响应参数变更
+      - `+ author.state: enum value [active,blocked,error]`
+  - **ListCommitAssociatedMergeRequests**
+    - 响应参数变更
+      - `+ merged_by.state: enum value [active,blocked,error]`
+  - **ListDiscussionTemplates**
+    - 响应参数变更
+      - `+ creator.state: enum value [active,blocked,error]`
+  - **ListGroupMergeRequestApproverSettings**
+    - 响应参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+  - **CreateGroupMergeRequestApproverSetting**
+    - 响应参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+  - **ListProjectMergeRequestApproverSettings**
+    - 响应参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+  - **CreateProjectMergeRequestApproverSetting**
+    - 响应参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+  - **UpdateGroupMergeRequestApproverSetting**
+    - 响应参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+  - **UpdateProjectMergeRequestApproverSetting**
+    - 响应参数变更
+      - `+ append_reviewers.state: enum value [active,blocked,error]`
+  - **ListMergeRequestApprovers**
+    - 响应参数变更
+      - `+ required_approvers_list.state: enum value [active,blocked,error]`
+  - **ListMergeRequestReviewers**
+    - 响应参数变更
+      - `+ required_reviewers_list.state: enum value [active,blocked,error]`
+  - **ShowProjectSettingsInheritCfg**
+    - 响应参数变更
+      - `+ name: enum value [webhook_settings,mr_branch_policies,reviews,deploy_keys]`
+  - **UpdateProjectSettingsInheritCfg**
+    - 请求参数变更
+      - `+ data.name: enum value [webhook_settings,mr_branch_policies,reviews,deploy_keys]`
+    - 响应参数变更
+      - `+ name: enum value [webhook_settings,mr_branch_policies,reviews,deploy_keys]`
+  - **ListRepositoryCommitRules**
+    - 响应参数变更
+      - `+ prohibited_file_name_regex`
+      - `+ author_email_regex`
+      - `+ binary_gate_enabled`
+      - `+ created_at`
+      - `+ skip_rule_end_date`
+      - `+ skip_rule_check`
+      - `+ allowed_max_file_size`
+      - `+ allowed_modify_binary`
+      - `+ max_file_size`
+      - `+ commit_message_negative_regex`
+      - `+ allowed_binary_file_name_regex`
+      - `+ updated_at`
+      - `+ author_regex`
+      - `+ branch_name`
+      - `+ effective_date`
+      - `+ name`
+      - `+ commit_message_regex`
+      - `+ repository_id`
+      - `+ privileged_users`
+      - `+ id`
+      - `* skip_rule_end_date: yyyy-MM-dd'T'HH:mm:ss.SSSXXX -> string`
+      - `+ privileged_users.state: enum value [active,blocked]`
+  - **ListPersonalRepositoryImportRecords**
+    - 响应参数变更
+      - `- repository.web_url`
+      - `- repository.readme_url`
+  - **ListCurrentUserRepositories**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+      - `+ order_by`
+      - `+ sort`
+      - `+ archived`
+      - `+ search`
+      - `+ starred`
+      - `+ membership`
+      - `+ user_created`
+      - `+ include_abnormal`
+      - `- repository_id`
+  - **CreateBranch**
+    - 响应参数变更
+      - `+ creator.state: enum value [active,blocked,error]`
+  - **DeleteBranch**
+    - 响应参数变更
+      - `+ status: enum value [success,fail]`
+  - **ShowMergeRequestDiscussion**
+    - 响应参数变更
+      - `+ assignee.state: enum value [active,blocked,error]`
+      - `- notes.type: enum value [DiscussionNote,DiffNote]`
+  - **ListMergeRequestDiscussions**
+    - 响应参数变更
+      - `+ assignee.state: enum value [active,blocked,error]`
+      - `- notes.type: enum value [DiscussionNote,DiffNote]`
+  - **CreateMergeRequestDiscussion**
+    - 响应参数变更
+      - `+ assignee.state: enum value [active,blocked,error]`
+      - `- notes.type: enum value [DiscussionNote,DiffNote]`
+  - **ShowCommit**
+    - 响应参数变更
+      - `+ status: enum value [pending,running,success,failed,canceled,skipped,timedout]`
+      - `+ merge_request.author.state: enum value [active,blocked,error]`
+  - **CreateCommit**
+    - 响应参数变更
+      - `+ status: enum value [pending,running,success,failed,canceled,skipped,timedout]`
+      - `+ merge_request.author.state: enum value [active,blocked,error]`
+  - **ShowAverageEvaluation**
+    - 响应参数变更
+      - `+ evaluations.user.state: enum value [active,blocked,error]`
+  - **ListRepositoryFilePushPermissions**
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **BatchUpdateRepositoryFilePushPermissions**
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **CreateFilePushPermission**
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **ListProjectProtectedBranches**
+    - 响应参数变更
+      - `+ actions.addition_switchers`
+      - `+ actions.users.state: enum value [active,blocked,error]`
+  - **CreateProjectProtectedBranches**
+    - 请求参数变更
+      - `+ actions.addition_switchers`
+    - 响应参数变更
+      - `+ actions.addition_switchers`
+      - `+ actions.users.state: enum value [active,blocked,error]`
+  - **ListProtectedBranches**
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **BatchUpdateProtectedBranches**
+    - 请求参数变更
+      - `+ actions.addition_switchers`
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **BatchCreateProtectedBranch**
+    - 请求参数变更
+      - `+ actions.addition_switchers`
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **DeleteProtectedBranch**
+    - 响应参数变更
+      - `+ status: enum value [success,fail]`
+  - **ShowProtectedBranch**
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **UpdateProtectedBranch**
+    - 请求参数变更
+      - `+ addition_switchers`
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **ListProtectedTags**
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **BatchUpdateProtectedTags**
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **BatchCreateProtectedTags**
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **DeleteProtectedTag**
+    - 响应参数变更
+      - `+ status: enum value [success,fail]`
+  - **ShowProtectedTag**
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **UpdateProtectedTag**
+    - 响应参数变更
+      - `+ actions.users.state: enum value [active,blocked]`
+  - **ShowRepository**
+    - 响应参数变更
+      - `- readme_url`
+      - `- web_url`
+      - `+ owner.state: enum value [active,blocked]`
+      - `- forked_from_repository.web_url`
+      - `- forked_from_repository.readme_url`
+  - **ShowMergeRequestCommentsByLine**
+    - 响应参数变更
+      - `+ new.type: enum value [unchanged-l]`
+      - `- new.type: enum value [unchangd-l]`
+      - `+ new.discussions.assignee.state: enum value [active,blocked,error]`
+      - `- new.discussions.notes.type: enum value [DiscussionNote,DiffNote]`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListBackups`、`RestoreRedisData`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListSqlPlanAction`、`UpdateInstanceAlias`、`ShowFullSql`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ListDatabaseVolume`
+  - **ListSessionTopSqlStatistics**
+    - 响应参数变更
+      - `+ top_sql_info.count`
+
+### HuaweiCloud SDK KMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateKey**
+    - 请求参数变更
+      - `+ key_spec: enum value [SECP256K1]`
+
+### HuaweiCloud SDK OCR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeVehicleLicense**
+    - 请求参数变更
+      - `+ alarm`
+    - 响应参数变更
+      - `+ result.alarm_result`
+      - `+ result.alarm_confidence`
+  - **RecognizeGeneralText**
+    - 请求参数变更
+      - `+ return_markdown_result`
+    - 响应参数变更
+      - `+ result.markdown_result`
+
+### HuaweiCloud SDK OMS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **StartTask**
+    - 请求参数变更
+      - `+ connection_string`
+  - **StartTaskGroup**
+    - 请求参数变更
+      - `+ connection_string`
+  - **RetryTaskGroup**
+    - 请求参数变更
+      - `+ connection_string`
+  - **ShowBucketList**
+    - 请求参数变更
+      - `+ connection_string`
+  - **ShowBucketRegion**
+    - 请求参数变更
+      - `+ connection_string`
+  - **CheckPrefix**
+    - 请求参数变更
+      - `+ connection_string`
+  - **ShowBucketObjects**
+    - 请求参数变更
+      - `+ connection_string`
+  - **ShowCdnInfo**
+    - 请求参数变更
+      - `+ connection_string`
+  - **CreateTask**
+    - 请求参数变更
+      - `+ src_node.connection_string`
+  - **CreateTaskGroup**
+    - 请求参数变更
+      - `+ src_node.connection_string`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowRestartPolicy`
+    - `ListMajorVersionFeature`
+    - `CheckWeakpwd`
+    - `NotifyReplaceNode`
+    - `ListTopSqls`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **StartInstanceRestartAction**
+    - 请求参数变更
+      - `+ restart.restart_policy`
+  - **StartInstanceReduceVolumeAction**
+    - 请求参数变更
+      - `+ reduce_volume.iops`
+      - `+ reduce_volume.throughput`
+
 # 3.1.171 2025-10-16
 
 ### HuaweiCloud SDK CDN

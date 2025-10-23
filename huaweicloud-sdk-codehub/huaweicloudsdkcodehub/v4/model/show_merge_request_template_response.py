@@ -52,7 +52,7 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
 
         :param id: **参数解释：** 合并请求模板主键id
         :type id: int
-        :param repository_id: **参数解释：** 仓库id
+        :param repository_id: **参数解释：** 仓库id。
         :type repository_id: int
         :param description: **参数解释：** 描述
         :type description: str
@@ -138,7 +138,7 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
     def repository_id(self):
         r"""Gets the repository_id of this ShowMergeRequestTemplateResponse.
 
-        **参数解释：** 仓库id
+        **参数解释：** 仓库id。
 
         :return: The repository_id of this ShowMergeRequestTemplateResponse.
         :rtype: int
@@ -149,7 +149,7 @@ class ShowMergeRequestTemplateResponse(SdkResponse):
     def repository_id(self, repository_id):
         r"""Sets the repository_id of this ShowMergeRequestTemplateResponse.
 
-        **参数解释：** 仓库id
+        **参数解释：** 仓库id。
 
         :param repository_id: The repository_id of this ShowMergeRequestTemplateResponse.
         :type repository_id: int

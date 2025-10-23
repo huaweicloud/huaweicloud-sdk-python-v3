@@ -49,7 +49,7 @@ class RepositoryUserBasicDto:
         :type name: str
         :param username: **参数解释：**  用户名 **约束限制：** 不涉及。
         :type username: str
-        :param state: **参数解释：**  用户状态 **约束限制：** 不涉及。
+        :param state: **参数解释：** 用户状态。 **取值范围：** - active，激活。 - blocked，禁用。
         :type state: str
         :param service_license_status: **参数解释：**  服务级权限状态 0：停用 1：启用 **约束限制：** 不涉及。
         :type service_license_status: int
@@ -160,7 +160,7 @@ class RepositoryUserBasicDto:
     def state(self):
         r"""Gets the state of this RepositoryUserBasicDto.
 
-        **参数解释：**  用户状态 **约束限制：** 不涉及。
+        **参数解释：** 用户状态。 **取值范围：** - active，激活。 - blocked，禁用。
 
         :return: The state of this RepositoryUserBasicDto.
         :rtype: str
@@ -171,7 +171,7 @@ class RepositoryUserBasicDto:
     def state(self, state):
         r"""Sets the state of this RepositoryUserBasicDto.
 
-        **参数解释：**  用户状态 **约束限制：** 不涉及。
+        **参数解释：** 用户状态。 **取值范围：** - active，激活。 - blocked，禁用。
 
         :param state: The state of this RepositoryUserBasicDto.
         :type state: str

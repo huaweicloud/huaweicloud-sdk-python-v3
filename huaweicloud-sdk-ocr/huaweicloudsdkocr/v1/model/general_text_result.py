@@ -19,16 +19,18 @@ class GeneralTextResult:
     openapi_types = {
         'direction': 'float',
         'words_block_count': 'int',
-        'words_block_list': 'list[GeneralTextWordsBlockList]'
+        'words_block_list': 'list[GeneralTextWordsBlockList]',
+        'markdown_result': 'str'
     }
 
     attribute_map = {
         'direction': 'direction',
         'words_block_count': 'words_block_count',
-        'words_block_list': 'words_block_list'
+        'words_block_list': 'words_block_list',
+        'markdown_result': 'markdown_result'
     }
 
-    def __init__(self, direction=None, words_block_count=None, words_block_list=None):
+    def __init__(self, direction=None, words_block_count=None, words_block_list=None, markdown_result=None):
         r"""GeneralTextResult
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class GeneralTextResult:
         :type words_block_count: int
         :param words_block_list: 识别文字块列表，输出顺序从左到右，先上后下。 
         :type words_block_list: list[:class:`huaweicloudsdkocr.v1.GeneralTextWordsBlockList`]
+        :param markdown_result: 所有文字块拼接的识别结果，同一行的文字块使用“\\t”拼接，不同行的文字块使用“\\n”拼接。 当return_markdown_result为true时，返回该字段值，否则，不返回该字段。 
+        :type markdown_result: str
         """
         
         
@@ -46,11 +50,14 @@ class GeneralTextResult:
         self._direction = None
         self._words_block_count = None
         self._words_block_list = None
+        self._markdown_result = None
         self.discriminator = None
 
         self.direction = direction
         self.words_block_count = words_block_count
         self.words_block_list = words_block_list
+        if markdown_result is not None:
+            self.markdown_result = markdown_result
 
     @property
     def direction(self):
@@ -117,6 +124,28 @@ class GeneralTextResult:
         :type words_block_list: list[:class:`huaweicloudsdkocr.v1.GeneralTextWordsBlockList`]
         """
         self._words_block_list = words_block_list
+
+    @property
+    def markdown_result(self):
+        r"""Gets the markdown_result of this GeneralTextResult.
+
+        所有文字块拼接的识别结果，同一行的文字块使用“\\t”拼接，不同行的文字块使用“\\n”拼接。 当return_markdown_result为true时，返回该字段值，否则，不返回该字段。 
+
+        :return: The markdown_result of this GeneralTextResult.
+        :rtype: str
+        """
+        return self._markdown_result
+
+    @markdown_result.setter
+    def markdown_result(self, markdown_result):
+        r"""Sets the markdown_result of this GeneralTextResult.
+
+        所有文字块拼接的识别结果，同一行的文字块使用“\\t”拼接，不同行的文字块使用“\\n”拼接。 当return_markdown_result为true时，返回该字段值，否则，不返回该字段。 
+
+        :param markdown_result: The markdown_result of this GeneralTextResult.
+        :type markdown_result: str
+        """
+        self._markdown_result = markdown_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

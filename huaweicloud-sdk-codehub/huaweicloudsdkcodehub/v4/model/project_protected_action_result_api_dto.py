@@ -21,7 +21,8 @@ class ProjectProtectedActionResultApiDto:
         'enable': 'bool',
         'users': 'list[UserBasicDto]',
         'user_teams': 'list[UserTeamBasicDto]',
-        'roles': 'list[RoleBasicDto]'
+        'roles': 'list[RoleBasicDto]',
+        'addition_switchers': 'list[ForceActionEnableDto]'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ProjectProtectedActionResultApiDto:
         'enable': 'enable',
         'users': 'users',
         'user_teams': 'user_teams',
-        'roles': 'roles'
+        'roles': 'roles',
+        'addition_switchers': 'addition_switchers'
     }
 
-    def __init__(self, action=None, enable=None, users=None, user_teams=None, roles=None):
+    def __init__(self, action=None, enable=None, users=None, user_teams=None, roles=None, addition_switchers=None):
         r"""ProjectProtectedActionResultApiDto
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ProjectProtectedActionResultApiDto:
         :type user_teams: list[:class:`huaweicloudsdkcodehub.v4.UserTeamBasicDto`]
         :param roles: **参数解释：** 角色列表。
         :type roles: list[:class:`huaweicloudsdkcodehub.v4.RoleBasicDto`]
+        :param addition_switchers: **参数解释：** 操作选择列表。
+        :type addition_switchers: list[:class:`huaweicloudsdkcodehub.v4.ForceActionEnableDto`]
         """
         
         
@@ -56,6 +60,7 @@ class ProjectProtectedActionResultApiDto:
         self._users = None
         self._user_teams = None
         self._roles = None
+        self._addition_switchers = None
         self.discriminator = None
 
         if action is not None:
@@ -68,6 +73,8 @@ class ProjectProtectedActionResultApiDto:
             self.user_teams = user_teams
         if roles is not None:
             self.roles = roles
+        if addition_switchers is not None:
+            self.addition_switchers = addition_switchers
 
     @property
     def action(self):
@@ -178,6 +185,28 @@ class ProjectProtectedActionResultApiDto:
         :type roles: list[:class:`huaweicloudsdkcodehub.v4.RoleBasicDto`]
         """
         self._roles = roles
+
+    @property
+    def addition_switchers(self):
+        r"""Gets the addition_switchers of this ProjectProtectedActionResultApiDto.
+
+        **参数解释：** 操作选择列表。
+
+        :return: The addition_switchers of this ProjectProtectedActionResultApiDto.
+        :rtype: list[:class:`huaweicloudsdkcodehub.v4.ForceActionEnableDto`]
+        """
+        return self._addition_switchers
+
+    @addition_switchers.setter
+    def addition_switchers(self, addition_switchers):
+        r"""Sets the addition_switchers of this ProjectProtectedActionResultApiDto.
+
+        **参数解释：** 操作选择列表。
+
+        :param addition_switchers: The addition_switchers of this ProjectProtectedActionResultApiDto.
+        :type addition_switchers: list[:class:`huaweicloudsdkcodehub.v4.ForceActionEnableDto`]
+        """
+        self._addition_switchers = addition_switchers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

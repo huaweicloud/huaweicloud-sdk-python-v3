@@ -44,7 +44,7 @@ class ShowReadmeFileResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param blob_id: **参数解释：** bolb文件ID。 **约束限制：** 不涉及。
+        :param blob_id: **参数解释：** blob文件ID。 **约束限制：** 不涉及。
         :type blob_id: str
         :param content: **参数解释：** 经过base64编码后的文件内容。 **约束限制：** 不涉及。
         :type content: str
@@ -95,7 +95,7 @@ class ShowReadmeFileResponse(SdkResponse):
     def blob_id(self):
         r"""Gets the blob_id of this ShowReadmeFileResponse.
 
-        **参数解释：** bolb文件ID。 **约束限制：** 不涉及。
+        **参数解释：** blob文件ID。 **约束限制：** 不涉及。
 
         :return: The blob_id of this ShowReadmeFileResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class ShowReadmeFileResponse(SdkResponse):
     def blob_id(self, blob_id):
         r"""Sets the blob_id of this ShowReadmeFileResponse.
 
-        **参数解释：** bolb文件ID。 **约束限制：** 不涉及。
+        **参数解释：** blob文件ID。 **约束限制：** 不涉及。
 
         :param blob_id: The blob_id of this ShowReadmeFileResponse.
         :type blob_id: str

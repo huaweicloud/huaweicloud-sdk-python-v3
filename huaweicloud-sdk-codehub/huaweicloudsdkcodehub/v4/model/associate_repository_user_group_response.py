@@ -30,7 +30,7 @@ class AssociateRepositoryUserGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 关联结果
+        :param status: **参数解释：** 关联结果。 **取值范围：** - success，关联成功。 - error,关联失败。
         :type status: str
         """
         
@@ -46,7 +46,7 @@ class AssociateRepositoryUserGroupResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this AssociateRepositoryUserGroupResponse.
 
-        关联结果
+        **参数解释：** 关联结果。 **取值范围：** - success，关联成功。 - error,关联失败。
 
         :return: The status of this AssociateRepositoryUserGroupResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class AssociateRepositoryUserGroupResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this AssociateRepositoryUserGroupResponse.
 
-        关联结果
+        **参数解释：** 关联结果。 **取值范围：** - success，关联成功。 - error,关联失败。
 
         :param status: The status of this AssociateRepositoryUserGroupResponse.
         :type status: str

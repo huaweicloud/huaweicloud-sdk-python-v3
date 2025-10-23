@@ -18,7 +18,7 @@ class ListMergeRequestTemplatesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[MergeRequestTemplateDto]'
+        'body': 'list[RepositoryMergeRequestTemplateDto]'
     }
 
     attribute_map = {
@@ -31,7 +31,7 @@ class ListMergeRequestTemplatesResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 
-        :type body: list[:class:`huaweicloudsdkcodehub.v4.MergeRequestTemplateDto`]
+        :type body: list[:class:`huaweicloudsdkcodehub.v4.RepositoryMergeRequestTemplateDto`]
         """
         
         super(ListMergeRequestTemplatesResponse, self).__init__()
@@ -47,7 +47,7 @@ class ListMergeRequestTemplatesResponse(SdkResponse):
         r"""Gets the body of this ListMergeRequestTemplatesResponse.
 
         :return: The body of this ListMergeRequestTemplatesResponse.
-        :rtype: list[:class:`huaweicloudsdkcodehub.v4.MergeRequestTemplateDto`]
+        :rtype: list[:class:`huaweicloudsdkcodehub.v4.RepositoryMergeRequestTemplateDto`]
         """
         return self._body
 
@@ -56,7 +56,7 @@ class ListMergeRequestTemplatesResponse(SdkResponse):
         r"""Sets the body of this ListMergeRequestTemplatesResponse.
 
         :param body: The body of this ListMergeRequestTemplatesResponse.
-        :type body: list[:class:`huaweicloudsdkcodehub.v4.MergeRequestTemplateDto`]
+        :type body: list[:class:`huaweicloudsdkcodehub.v4.RepositoryMergeRequestTemplateDto`]
         """
         self._body = body
 

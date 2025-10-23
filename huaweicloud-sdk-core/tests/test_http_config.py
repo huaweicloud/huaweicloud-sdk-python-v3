@@ -19,6 +19,8 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+import pytest
+
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 
@@ -59,3 +61,54 @@ def test_http_config():
     assert http_config.signing_algorithm == SigningAlgorithm.HMAC_SHA256
     assert http_config.get_proxy() == {'https': 'https://user:pass@proxy.com:12345'}
     assert http_config.user_agent == "custom ua"
+
+
+def test_get_proxy_no_proxy():
+    """没有设置代理"""
+    http_config = HttpConfig()
+    assert http_config.get_proxy() == {}
+
+
+def test_get_proxy_with_proxy_no_user_password():
+    """设置了代理，但没有设置用户名和密码"""
+    http_config = HttpConfig()
+    http_config.proxy_protocol = "http"
+    http_config.proxy_host = "localhost"
+    http_config.proxy_port = 8080
+    assert http_config.get_proxy() == {"https": "http://localhost:8080"}
+
+
+def test_get_proxy_with_proxy_with_user_password_no_port():
+    """测试设置了代理，设置了用户名和密码，但没有设置端口"""
+    http_config = HttpConfig()
+    http_config.proxy_protocol = "http"
+    http_config.proxy_user = "user"
+    http_config.proxy_password = "password"
+    http_config.proxy_host = "localhost"
+    assert http_config.get_proxy() == {"https": "http://user:password@localhost"}
+
+
+def test_get_proxy_with_proxy_with_user_password_with_port():
+    """测试设置了代理，设置了用户名和密码，设置了端口"""
+    http_config = HttpConfig()
+    http_config.proxy_protocol = "http"
+    http_config.proxy_user = "user"
+    http_config.proxy_password = "password"
+    http_config.proxy_host = "localhost"
+    http_config.proxy_port = 8080
+    assert http_config.get_proxy() == {"https": "http://user:password@localhost:8080"}
+
+
+def test_get_proxy_with_proxy_with_user_password_with_port_with_url_encoded_password():
+    """测试设置了代理，设置了用户名和密码，设置了端口，但密码需要进行url编码"""
+    http_config = HttpConfig()
+    http_config.proxy_protocol = "http"
+    http_config.proxy_user = "user"
+    http_config.proxy_password = "password@localhost"
+    http_config.proxy_host = "localhost"
+    http_config.proxy_port = 8080
+    assert http_config.get_proxy() == {"https": "http://user:password%40localhost@localhost:8080"}
+
+
+if __name__ == '__main__':
+    pytest.main()

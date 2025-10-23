@@ -39,7 +39,7 @@ class ShowGroupSettingsInheritCfgResponse(SdkResponse):
         'stream_event_settings': 'int',
         'pipeline_settings': 'int',
         'issue_templates': 'int',
-        'cr_comment_emplates': 'int',
+        'cr_comment_templates': 'int',
         'merge_requests': 'int',
         'mr_branch_policies': 'int',
         'repository_settings': 'int',
@@ -71,7 +71,7 @@ class ShowGroupSettingsInheritCfgResponse(SdkResponse):
         'stream_event_settings': 'stream_event_settings',
         'pipeline_settings': 'pipeline_settings',
         'issue_templates': 'issue_templates',
-        'cr_comment_emplates': 'cr_comment_emplates',
+        'cr_comment_templates': 'cr_comment_templates',
         'merge_requests': 'merge_requests',
         'mr_branch_policies': 'mr_branch_policies',
         'repository_settings': 'repository_settings',
@@ -81,7 +81,7 @@ class ShowGroupSettingsInheritCfgResponse(SdkResponse):
         'update_at': 'update_at'
     }
 
-    def __init__(self, can_update=None, id=None, product_id=None, namespace_id=None, parent_id=None, ownership=None, pbi=None, protected_branches=None, protected_tags=None, push_rules=None, change_requests=None, custom_ctrl_items=None, reviews=None, issues=None, cr_evaluation=None, e2e_settings=None, committer_settings=None, webhook_settings=None, stream_event_settings=None, pipeline_settings=None, issue_templates=None, cr_comment_emplates=None, merge_requests=None, mr_branch_policies=None, repository_settings=None, deploy_keys=None, watermark=None, created_at=None, update_at=None):
+    def __init__(self, can_update=None, id=None, product_id=None, namespace_id=None, parent_id=None, ownership=None, pbi=None, protected_branches=None, protected_tags=None, push_rules=None, change_requests=None, custom_ctrl_items=None, reviews=None, issues=None, cr_evaluation=None, e2e_settings=None, committer_settings=None, webhook_settings=None, stream_event_settings=None, pipeline_settings=None, issue_templates=None, cr_comment_templates=None, merge_requests=None, mr_branch_policies=None, repository_settings=None, deploy_keys=None, watermark=None, created_at=None, update_at=None):
         r"""ShowGroupSettingsInheritCfgResponse
 
         The model defined in huaweicloud sdk
@@ -128,15 +128,15 @@ class ShowGroupSettingsInheritCfgResponse(SdkResponse):
         :type pipeline_settings: int
         :param issue_templates: **参数解释：** issue模板继承模式。
         :type issue_templates: int
-        :param cr_comment_emplates: **参数解释：** 排序id。
-        :type cr_comment_emplates: int
+        :param cr_comment_templates: **参数解释：** 排序id。
+        :type cr_comment_templates: int
         :param merge_requests: **参数解释：** 排序id。
         :type merge_requests: int
         :param mr_branch_policies: **参数解释：** 合并请求策略。
         :type mr_branch_policies: int
         :param repository_settings: **参数解释：** 仓库策略。
         :type repository_settings: int
-        :param deploy_keys: **参数解释：** 部署秘钥策略。
+        :param deploy_keys: **参数解释：** 部署密钥策略。
         :type deploy_keys: int
         :param watermark: **参数解释：** 水印策略。
         :type watermark: int
@@ -169,7 +169,7 @@ class ShowGroupSettingsInheritCfgResponse(SdkResponse):
         self._stream_event_settings = None
         self._pipeline_settings = None
         self._issue_templates = None
-        self._cr_comment_emplates = None
+        self._cr_comment_templates = None
         self._merge_requests = None
         self._mr_branch_policies = None
         self._repository_settings = None
@@ -221,8 +221,8 @@ class ShowGroupSettingsInheritCfgResponse(SdkResponse):
             self.pipeline_settings = pipeline_settings
         if issue_templates is not None:
             self.issue_templates = issue_templates
-        if cr_comment_emplates is not None:
-            self.cr_comment_emplates = cr_comment_emplates
+        if cr_comment_templates is not None:
+            self.cr_comment_templates = cr_comment_templates
         if merge_requests is not None:
             self.merge_requests = merge_requests
         if mr_branch_policies is not None:
@@ -701,26 +701,26 @@ class ShowGroupSettingsInheritCfgResponse(SdkResponse):
         self._issue_templates = issue_templates
 
     @property
-    def cr_comment_emplates(self):
-        r"""Gets the cr_comment_emplates of this ShowGroupSettingsInheritCfgResponse.
+    def cr_comment_templates(self):
+        r"""Gets the cr_comment_templates of this ShowGroupSettingsInheritCfgResponse.
 
         **参数解释：** 排序id。
 
-        :return: The cr_comment_emplates of this ShowGroupSettingsInheritCfgResponse.
+        :return: The cr_comment_templates of this ShowGroupSettingsInheritCfgResponse.
         :rtype: int
         """
-        return self._cr_comment_emplates
+        return self._cr_comment_templates
 
-    @cr_comment_emplates.setter
-    def cr_comment_emplates(self, cr_comment_emplates):
-        r"""Sets the cr_comment_emplates of this ShowGroupSettingsInheritCfgResponse.
+    @cr_comment_templates.setter
+    def cr_comment_templates(self, cr_comment_templates):
+        r"""Sets the cr_comment_templates of this ShowGroupSettingsInheritCfgResponse.
 
         **参数解释：** 排序id。
 
-        :param cr_comment_emplates: The cr_comment_emplates of this ShowGroupSettingsInheritCfgResponse.
-        :type cr_comment_emplates: int
+        :param cr_comment_templates: The cr_comment_templates of this ShowGroupSettingsInheritCfgResponse.
+        :type cr_comment_templates: int
         """
-        self._cr_comment_emplates = cr_comment_emplates
+        self._cr_comment_templates = cr_comment_templates
 
     @property
     def merge_requests(self):
@@ -792,7 +792,7 @@ class ShowGroupSettingsInheritCfgResponse(SdkResponse):
     def deploy_keys(self):
         r"""Gets the deploy_keys of this ShowGroupSettingsInheritCfgResponse.
 
-        **参数解释：** 部署秘钥策略。
+        **参数解释：** 部署密钥策略。
 
         :return: The deploy_keys of this ShowGroupSettingsInheritCfgResponse.
         :rtype: int
@@ -803,7 +803,7 @@ class ShowGroupSettingsInheritCfgResponse(SdkResponse):
     def deploy_keys(self, deploy_keys):
         r"""Sets the deploy_keys of this ShowGroupSettingsInheritCfgResponse.
 
-        **参数解释：** 部署秘钥策略。
+        **参数解释：** 部署密钥策略。
 
         :param deploy_keys: The deploy_keys of this ShowGroupSettingsInheritCfgResponse.
         :type deploy_keys: int

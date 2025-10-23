@@ -39,7 +39,7 @@ class ListImpersonationTokensRequest:
 
         :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
         :type group_id: int
-        :param state: **参数解释：** 状态 all 所有 active 活跃 inactive 非活跃。
+        :param state: **参数解释：** 状态 all 所有状态 active 活跃，未过期 inactive 非活跃，失效的。
         :type state: str
         :param search: **参数解释：** 检索内容
         :type search: str
@@ -94,7 +94,7 @@ class ListImpersonationTokensRequest:
     def state(self):
         r"""Gets the state of this ListImpersonationTokensRequest.
 
-        **参数解释：** 状态 all 所有 active 活跃 inactive 非活跃。
+        **参数解释：** 状态 all 所有状态 active 活跃，未过期 inactive 非活跃，失效的。
 
         :return: The state of this ListImpersonationTokensRequest.
         :rtype: str
@@ -105,7 +105,7 @@ class ListImpersonationTokensRequest:
     def state(self, state):
         r"""Sets the state of this ListImpersonationTokensRequest.
 
-        **参数解释：** 状态 all 所有 active 活跃 inactive 非活跃。
+        **参数解释：** 状态 all 所有状态 active 活跃，未过期 inactive 非活跃，失效的。
 
         :param state: The state of this ListImpersonationTokensRequest.
         :type state: str

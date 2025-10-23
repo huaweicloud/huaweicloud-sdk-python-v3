@@ -1,0 +1,426 @@
+# coding: utf-8
+
+import six
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class BccOrganizationPolicyDetail:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'id': 'str',
+        'name': 'str',
+        'description': 'str',
+        'operation_type': 'str',
+        'domain_id': 'str',
+        'policy_name': 'str',
+        'policy_enabled': 'bool',
+        'policy_operation_definition': 'BccOrganizationPolicyDetailPolicyOperationDefinition',
+        'policy_trigger': 'PolicyTriggerResp',
+        'status': 'str',
+        'domain_name': 'str',
+        'effective_scope': 'str'
+    }
+
+    attribute_map = {
+        'id': 'id',
+        'name': 'name',
+        'description': 'description',
+        'operation_type': 'operation_type',
+        'domain_id': 'domain_id',
+        'policy_name': 'policy_name',
+        'policy_enabled': 'policy_enabled',
+        'policy_operation_definition': 'policy_operation_definition',
+        'policy_trigger': 'policy_trigger',
+        'status': 'status',
+        'domain_name': 'domain_name',
+        'effective_scope': 'effective_scope'
+    }
+
+    def __init__(self, id=None, name=None, description=None, operation_type=None, domain_id=None, policy_name=None, policy_enabled=None, policy_operation_definition=None, policy_trigger=None, status=None, domain_name=None, effective_scope=None):
+        r"""BccOrganizationPolicyDetail
+
+        The model defined in huaweicloud sdk
+
+        :param id: 策略ID
+        :type id: str
+        :param name: 组织策略名称
+        :type name: str
+        :param description: 策略描述
+        :type description: str
+        :param operation_type: 保护类型：备份（backup）、复制(replication)。
+        :type operation_type: str
+        :param domain_id: 账号ID
+        :type domain_id: str
+        :param policy_name: 策略名称
+        :type policy_name: str
+        :param policy_enabled: 策略是否开启
+        :type policy_enabled: bool
+        :param policy_operation_definition: 
+        :type policy_operation_definition: :class:`huaweicloudsdkbcc.v1.BccOrganizationPolicyDetailPolicyOperationDefinition`
+        :param policy_trigger: 
+        :type policy_trigger: :class:`huaweicloudsdkbcc.v1.PolicyTriggerResp`
+        :param status: 状态
+        :type status: str
+        :param domain_name: 账号名称
+        :type domain_name: str
+        :param effective_scope: 组织策略生效范围
+        :type effective_scope: str
+        """
+        
+        
+
+        self._id = None
+        self._name = None
+        self._description = None
+        self._operation_type = None
+        self._domain_id = None
+        self._policy_name = None
+        self._policy_enabled = None
+        self._policy_operation_definition = None
+        self._policy_trigger = None
+        self._status = None
+        self._domain_name = None
+        self._effective_scope = None
+        self.discriminator = None
+
+        if id is not None:
+            self.id = id
+        if name is not None:
+            self.name = name
+        if description is not None:
+            self.description = description
+        if operation_type is not None:
+            self.operation_type = operation_type
+        if domain_id is not None:
+            self.domain_id = domain_id
+        if policy_name is not None:
+            self.policy_name = policy_name
+        if policy_enabled is not None:
+            self.policy_enabled = policy_enabled
+        if policy_operation_definition is not None:
+            self.policy_operation_definition = policy_operation_definition
+        if policy_trigger is not None:
+            self.policy_trigger = policy_trigger
+        if status is not None:
+            self.status = status
+        if domain_name is not None:
+            self.domain_name = domain_name
+        if effective_scope is not None:
+            self.effective_scope = effective_scope
+
+    @property
+    def id(self):
+        r"""Gets the id of this BccOrganizationPolicyDetail.
+
+        策略ID
+
+        :return: The id of this BccOrganizationPolicyDetail.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this BccOrganizationPolicyDetail.
+
+        策略ID
+
+        :param id: The id of this BccOrganizationPolicyDetail.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def name(self):
+        r"""Gets the name of this BccOrganizationPolicyDetail.
+
+        组织策略名称
+
+        :return: The name of this BccOrganizationPolicyDetail.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this BccOrganizationPolicyDetail.
+
+        组织策略名称
+
+        :param name: The name of this BccOrganizationPolicyDetail.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def description(self):
+        r"""Gets the description of this BccOrganizationPolicyDetail.
+
+        策略描述
+
+        :return: The description of this BccOrganizationPolicyDetail.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this BccOrganizationPolicyDetail.
+
+        策略描述
+
+        :param description: The description of this BccOrganizationPolicyDetail.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def operation_type(self):
+        r"""Gets the operation_type of this BccOrganizationPolicyDetail.
+
+        保护类型：备份（backup）、复制(replication)。
+
+        :return: The operation_type of this BccOrganizationPolicyDetail.
+        :rtype: str
+        """
+        return self._operation_type
+
+    @operation_type.setter
+    def operation_type(self, operation_type):
+        r"""Sets the operation_type of this BccOrganizationPolicyDetail.
+
+        保护类型：备份（backup）、复制(replication)。
+
+        :param operation_type: The operation_type of this BccOrganizationPolicyDetail.
+        :type operation_type: str
+        """
+        self._operation_type = operation_type
+
+    @property
+    def domain_id(self):
+        r"""Gets the domain_id of this BccOrganizationPolicyDetail.
+
+        账号ID
+
+        :return: The domain_id of this BccOrganizationPolicyDetail.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        r"""Sets the domain_id of this BccOrganizationPolicyDetail.
+
+        账号ID
+
+        :param domain_id: The domain_id of this BccOrganizationPolicyDetail.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
+
+    @property
+    def policy_name(self):
+        r"""Gets the policy_name of this BccOrganizationPolicyDetail.
+
+        策略名称
+
+        :return: The policy_name of this BccOrganizationPolicyDetail.
+        :rtype: str
+        """
+        return self._policy_name
+
+    @policy_name.setter
+    def policy_name(self, policy_name):
+        r"""Sets the policy_name of this BccOrganizationPolicyDetail.
+
+        策略名称
+
+        :param policy_name: The policy_name of this BccOrganizationPolicyDetail.
+        :type policy_name: str
+        """
+        self._policy_name = policy_name
+
+    @property
+    def policy_enabled(self):
+        r"""Gets the policy_enabled of this BccOrganizationPolicyDetail.
+
+        策略是否开启
+
+        :return: The policy_enabled of this BccOrganizationPolicyDetail.
+        :rtype: bool
+        """
+        return self._policy_enabled
+
+    @policy_enabled.setter
+    def policy_enabled(self, policy_enabled):
+        r"""Sets the policy_enabled of this BccOrganizationPolicyDetail.
+
+        策略是否开启
+
+        :param policy_enabled: The policy_enabled of this BccOrganizationPolicyDetail.
+        :type policy_enabled: bool
+        """
+        self._policy_enabled = policy_enabled
+
+    @property
+    def policy_operation_definition(self):
+        r"""Gets the policy_operation_definition of this BccOrganizationPolicyDetail.
+
+        :return: The policy_operation_definition of this BccOrganizationPolicyDetail.
+        :rtype: :class:`huaweicloudsdkbcc.v1.BccOrganizationPolicyDetailPolicyOperationDefinition`
+        """
+        return self._policy_operation_definition
+
+    @policy_operation_definition.setter
+    def policy_operation_definition(self, policy_operation_definition):
+        r"""Sets the policy_operation_definition of this BccOrganizationPolicyDetail.
+
+        :param policy_operation_definition: The policy_operation_definition of this BccOrganizationPolicyDetail.
+        :type policy_operation_definition: :class:`huaweicloudsdkbcc.v1.BccOrganizationPolicyDetailPolicyOperationDefinition`
+        """
+        self._policy_operation_definition = policy_operation_definition
+
+    @property
+    def policy_trigger(self):
+        r"""Gets the policy_trigger of this BccOrganizationPolicyDetail.
+
+        :return: The policy_trigger of this BccOrganizationPolicyDetail.
+        :rtype: :class:`huaweicloudsdkbcc.v1.PolicyTriggerResp`
+        """
+        return self._policy_trigger
+
+    @policy_trigger.setter
+    def policy_trigger(self, policy_trigger):
+        r"""Sets the policy_trigger of this BccOrganizationPolicyDetail.
+
+        :param policy_trigger: The policy_trigger of this BccOrganizationPolicyDetail.
+        :type policy_trigger: :class:`huaweicloudsdkbcc.v1.PolicyTriggerResp`
+        """
+        self._policy_trigger = policy_trigger
+
+    @property
+    def status(self):
+        r"""Gets the status of this BccOrganizationPolicyDetail.
+
+        状态
+
+        :return: The status of this BccOrganizationPolicyDetail.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this BccOrganizationPolicyDetail.
+
+        状态
+
+        :param status: The status of this BccOrganizationPolicyDetail.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def domain_name(self):
+        r"""Gets the domain_name of this BccOrganizationPolicyDetail.
+
+        账号名称
+
+        :return: The domain_name of this BccOrganizationPolicyDetail.
+        :rtype: str
+        """
+        return self._domain_name
+
+    @domain_name.setter
+    def domain_name(self, domain_name):
+        r"""Sets the domain_name of this BccOrganizationPolicyDetail.
+
+        账号名称
+
+        :param domain_name: The domain_name of this BccOrganizationPolicyDetail.
+        :type domain_name: str
+        """
+        self._domain_name = domain_name
+
+    @property
+    def effective_scope(self):
+        r"""Gets the effective_scope of this BccOrganizationPolicyDetail.
+
+        组织策略生效范围
+
+        :return: The effective_scope of this BccOrganizationPolicyDetail.
+        :rtype: str
+        """
+        return self._effective_scope
+
+    @effective_scope.setter
+    def effective_scope(self, effective_scope):
+        r"""Sets the effective_scope of this BccOrganizationPolicyDetail.
+
+        组织策略生效范围
+
+        :param effective_scope: The effective_scope of this BccOrganizationPolicyDetail.
+        :type effective_scope: str
+        """
+        self._effective_scope = effective_scope
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, BccOrganizationPolicyDetail):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

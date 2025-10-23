@@ -31,7 +31,7 @@ class ProjectSettingsInheritCfgDto:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释：** 设置源类型。 **约束限制：** 不涉及。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - e2e_settings，E2E设置。 - watermark，水印设置。 **默认取值：** 不涉及。
+        :param name: **参数解释：** 设置源类型。 **约束限制：** 不涉及。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - e2e_settings，E2E设置。 - watermark，水印设置。 - webhook_settings，webhook设置。 - mr_branch_policies，合并分支策略设置。 - reviews，检视设置。 - deploy_keys，部署参数设置。 **默认取值：** 不涉及。
         :type name: str
         :param inherit_mod: **参数解释：** 继承设置。 **约束限制：** 不涉及。 **取值范围：** - force_inherit，强制继承配置。 - custom，使用当前配置。 **默认取值：** 不涉及。
         :type inherit_mod: str
@@ -52,7 +52,7 @@ class ProjectSettingsInheritCfgDto:
     def name(self):
         r"""Gets the name of this ProjectSettingsInheritCfgDto.
 
-        **参数解释：** 设置源类型。 **约束限制：** 不涉及。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - e2e_settings，E2E设置。 - watermark，水印设置。 **默认取值：** 不涉及。
+        **参数解释：** 设置源类型。 **约束限制：** 不涉及。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - e2e_settings，E2E设置。 - watermark，水印设置。 - webhook_settings，webhook设置。 - mr_branch_policies，合并分支策略设置。 - reviews，检视设置。 - deploy_keys，部署参数设置。 **默认取值：** 不涉及。
 
         :return: The name of this ProjectSettingsInheritCfgDto.
         :rtype: str
@@ -63,7 +63,7 @@ class ProjectSettingsInheritCfgDto:
     def name(self, name):
         r"""Sets the name of this ProjectSettingsInheritCfgDto.
 
-        **参数解释：** 设置源类型。 **约束限制：** 不涉及。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - e2e_settings，E2E设置。 - watermark，水印设置。 **默认取值：** 不涉及。
+        **参数解释：** 设置源类型。 **约束限制：** 不涉及。 **取值范围：** - protected_branches，保护分支设置。 - protected_tags，保护Tag设置。 - repository_settings，仓库设置。 - push_rules，提交规则设置。 - merge_requests，合并请求设置。 - e2e_settings，E2E设置。 - watermark，水印设置。 - webhook_settings，webhook设置。 - mr_branch_policies，合并分支策略设置。 - reviews，检视设置。 - deploy_keys，部署参数设置。 **默认取值：** 不涉及。
 
         :param name: The name of this ProjectSettingsInheritCfgDto.
         :type name: str

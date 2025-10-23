@@ -19,10 +19,10 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
-from huaweicloudsdkcore.auth.internal import Iam
+from huaweicloudsdkcore.auth.internal import IamHelper
 
 
 def test_get_iam_endpoints():
-    endpoint1 = Iam.get_iam_endpoint()
-    endpoint2 = Iam.get_iam_endpoint("test")
+    endpoint1 = IamHelper.get_iam_endpoint()
+    endpoint2 = IamHelper.get_iam_endpoint("test")
     assert endpoint1 == endpoint2

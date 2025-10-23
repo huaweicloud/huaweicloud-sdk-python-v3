@@ -19,7 +19,7 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 from random import randint
 
 from huaweicloudsdkcore.utils import six_utils
@@ -28,7 +28,7 @@ _BASE_DELAY_MS = 10  # 10ms
 _MAX_DELAY_MS = 60 * 1000  # 60s
 
 
-class BackoffStrategy(six_utils.get_abstract_meta_class()):
+class BackoffStrategy(ABC):
     @abstractmethod
     def calculate_retry_delay_millis(self, retries):
         # type: (int) -> int

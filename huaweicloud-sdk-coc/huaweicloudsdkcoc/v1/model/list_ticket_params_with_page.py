@@ -73,7 +73,8 @@ class ListTicketParamsWithPage:
         self._ticket_types = None
         self.discriminator = None
 
-        self.string_filters = string_filters
+        if string_filters is not None:
+            self.string_filters = string_filters
         if sort_filter is not None:
             self.sort_filter = sort_filter
         if page is not None:

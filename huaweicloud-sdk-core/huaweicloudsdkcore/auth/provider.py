@@ -21,7 +21,7 @@
 """
 import os
 import six
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 from huaweicloudsdkcore.utils import six_utils, filepath_utils
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 from huaweicloudsdkcore.exceptions.exceptions import ApiTypeError, ApiValueError, SdkException
@@ -32,7 +32,7 @@ class _CredentialType:
     GLOBAL = "global"
 
 
-class CredentialProvider(six_utils.get_abstract_meta_class()):
+class CredentialProvider(ABC):
     def __init__(self, credential_type):
         if not credential_type:
             raise ApiValueError("credential type is empty")

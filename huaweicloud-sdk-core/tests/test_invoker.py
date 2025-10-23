@@ -23,10 +23,7 @@ import json
 
 import pytest
 import responses
-from requests import HTTPError
-from requests.exceptions import RetryError
 from responses import matchers
-from urllib3.exceptions import MaxRetryError, ResponseError
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 from huaweicloudsdkcore.client import Client
@@ -35,35 +32,7 @@ from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.invoker.invoker import SyncInvoker
 from huaweicloudsdkcore.retry.backoff_strategy import BackoffStrategies
 from huaweicloudsdkcore.sdk_response import SdkResponse
-
-try:
-    from responses.registries import OrderedRegistry
-except ImportError:
-    from responses.registries import FirstMatchRegistry
-
-
-    class OrderedRegistry(FirstMatchRegistry):
-        """
-        responses-0.17.0(earlier than python3.8) does not have OrderedRegistry,
-        the class is copied from responses-0.25.3(python 3.8+ required).
-        """
-
-        def find(self, request):
-            if not self.registered:
-                return None, ["No more registered responses"]
-
-            response = self.registered.pop(0)
-            match_result, reason = response.matches(request)
-            if not match_result:
-                self.reset()
-                self.add(response)
-                reason = (
-                    "Next 'Response' in the order doesn't match "
-                    f"due to the following reason: {reason}."
-                )
-                return None, [reason]
-
-            return response, []
+from tests.util.response_registry import OrderedRegistry
 
 
 class MockSdkResponse(SdkResponse):

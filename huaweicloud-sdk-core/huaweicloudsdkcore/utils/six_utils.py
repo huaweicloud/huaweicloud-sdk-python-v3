@@ -21,15 +21,6 @@
 """
 from threading import Lock
 
-import six
-
-if six.PY3:
-    from json import JSONDecodeError
-
-    JSON_DECODE_ERROR = JSONDecodeError
-else:
-    JSON_DECODE_ERROR = ValueError
-
 
 class SingletonMeta(type):
     _instances = {}
@@ -42,16 +33,3 @@ class SingletonMeta(type):
                 instance = super(SingletonMeta, cls).__call__(*args, **kwargs)
                 cls._instances[cls] = instance
         return cls._instances.get(cls)
-
-
-def get_abstract_meta_class():
-    if six.PY3:
-        from abc import ABC
-        return ABC
-
-    from abc import ABCMeta
-    return six.with_metaclass(ABCMeta)
-
-
-def get_singleton_meta_class():
-    return six.with_metaclass(SingletonMeta)

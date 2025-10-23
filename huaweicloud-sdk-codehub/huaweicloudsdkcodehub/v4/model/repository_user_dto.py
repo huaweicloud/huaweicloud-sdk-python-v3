@@ -47,7 +47,7 @@ class RepositoryUserDto:
         :type name: str
         :param username: **参数解释：** 用户名。
         :type username: str
-        :param state: **参数解释：** 用户状态。 **取值范围：** 不涉及。
+        :param state: **参数解释：** 用户状态。 **取值范围：** - active，激活。 - blocked，禁用。
         :type state: str
         :param avatar_url: **参数解释：** 头像地址。 **取值范围：** 不涉及。
         :type avatar_url: str
@@ -153,7 +153,7 @@ class RepositoryUserDto:
     def state(self):
         r"""Gets the state of this RepositoryUserDto.
 
-        **参数解释：** 用户状态。 **取值范围：** 不涉及。
+        **参数解释：** 用户状态。 **取值范围：** - active，激活。 - blocked，禁用。
 
         :return: The state of this RepositoryUserDto.
         :rtype: str
@@ -164,7 +164,7 @@ class RepositoryUserDto:
     def state(self, state):
         r"""Sets the state of this RepositoryUserDto.
 
-        **参数解释：** 用户状态。 **取值范围：** 不涉及。
+        **参数解释：** 用户状态。 **取值范围：** - active，激活。 - blocked，禁用。
 
         :param state: The state of this RepositoryUserDto.
         :type state: str

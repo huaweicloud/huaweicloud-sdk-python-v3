@@ -47,7 +47,7 @@ class ListGroupsRequest:
         :type search: str
         :param all_available: **参数解释：** 所有可用的代码组。
         :type all_available: bool
-        :param order_by: **参数解释：** 排序字段，name 名称 path 路径 id 唯一标示 created_at 创建时间 updated_at 更新时间
+        :param order_by: **参数解释：** 排序字段，name 名称 path 路径 id 唯一标识 created_at 创建时间 updated_at 更新时间
         :type order_by: str
         :param sort: **参数解释：** 排序顺序 asc顺序 desc逆序
         :type sort: str
@@ -138,7 +138,7 @@ class ListGroupsRequest:
     def order_by(self):
         r"""Gets the order_by of this ListGroupsRequest.
 
-        **参数解释：** 排序字段，name 名称 path 路径 id 唯一标示 created_at 创建时间 updated_at 更新时间
+        **参数解释：** 排序字段，name 名称 path 路径 id 唯一标识 created_at 创建时间 updated_at 更新时间
 
         :return: The order_by of this ListGroupsRequest.
         :rtype: str
@@ -149,7 +149,7 @@ class ListGroupsRequest:
     def order_by(self, order_by):
         r"""Sets the order_by of this ListGroupsRequest.
 
-        **参数解释：** 排序字段，name 名称 path 路径 id 唯一标示 created_at 创建时间 updated_at 更新时间
+        **参数解释：** 排序字段，name 名称 path 路径 id 唯一标识 created_at 创建时间 updated_at 更新时间
 
         :param order_by: The order_by of this ListGroupsRequest.
         :type order_by: str

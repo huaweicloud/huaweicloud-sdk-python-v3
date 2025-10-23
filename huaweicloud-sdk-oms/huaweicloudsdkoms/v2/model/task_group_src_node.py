@@ -19,6 +19,7 @@ class TaskGroupSrcNode:
     openapi_types = {
         'ak': 'str',
         'sk': 'str',
+        'connection_string': 'str',
         'json_auth_file': 'str',
         'app_id': 'str',
         'region': 'str',
@@ -31,6 +32,7 @@ class TaskGroupSrcNode:
     attribute_map = {
         'ak': 'ak',
         'sk': 'sk',
+        'connection_string': 'connection_string',
         'json_auth_file': 'json_auth_file',
         'app_id': 'app_id',
         'region': 'region',
@@ -40,7 +42,7 @@ class TaskGroupSrcNode:
         'list_file': 'list_file'
     }
 
-    def __init__(self, ak=None, sk=None, json_auth_file=None, app_id=None, region=None, object_key=None, bucket=None, cloud_type=None, list_file=None):
+    def __init__(self, ak=None, sk=None, connection_string=None, json_auth_file=None, app_id=None, region=None, object_key=None, bucket=None, cloud_type=None, list_file=None):
         r"""TaskGroupSrcNode
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class TaskGroupSrcNode:
         :type ak: str
         :param sk: 源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
         :type sk: str
+        :param connection_string: 连接字符串，用于微软云Blob鉴权
+        :type connection_string: str
         :param json_auth_file: 用于谷歌云Cloud Storage鉴权
         :type json_auth_file: str
         :param app_id: 当源端为腾讯云时，需要填写此参数。
@@ -69,6 +73,7 @@ class TaskGroupSrcNode:
 
         self._ak = None
         self._sk = None
+        self._connection_string = None
         self._json_auth_file = None
         self._app_id = None
         self._region = None
@@ -82,6 +87,8 @@ class TaskGroupSrcNode:
             self.ak = ak
         if sk is not None:
             self.sk = sk
+        if connection_string is not None:
+            self.connection_string = connection_string
         if json_auth_file is not None:
             self.json_auth_file = json_auth_file
         if app_id is not None:
@@ -140,6 +147,28 @@ class TaskGroupSrcNode:
         :type sk: str
         """
         self._sk = sk
+
+    @property
+    def connection_string(self):
+        r"""Gets the connection_string of this TaskGroupSrcNode.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :return: The connection_string of this TaskGroupSrcNode.
+        :rtype: str
+        """
+        return self._connection_string
+
+    @connection_string.setter
+    def connection_string(self, connection_string):
+        r"""Sets the connection_string of this TaskGroupSrcNode.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :param connection_string: The connection_string of this TaskGroupSrcNode.
+        :type connection_string: str
+        """
+        self._connection_string = connection_string
 
     @property
     def json_auth_file(self):

@@ -19,16 +19,18 @@ class SessionTopSqlStatisticInfo:
     openapi_types = {
         'node_name': 'str',
         'unique_sql_id': 'str',
-        'query': 'str'
+        'query': 'str',
+        'count': 'int'
     }
 
     attribute_map = {
         'node_name': 'node_name',
         'unique_sql_id': 'unique_sql_id',
-        'query': 'query'
+        'query': 'query',
+        'count': 'count'
     }
 
-    def __init__(self, node_name=None, unique_sql_id=None, query=None):
+    def __init__(self, node_name=None, unique_sql_id=None, query=None, count=None):
         r"""SessionTopSqlStatisticInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class SessionTopSqlStatisticInfo:
         :type unique_sql_id: str
         :param query: **参数解释**: 查询语句。 **取值范围**: 不涉及。 
         :type query: str
+        :param count: **参数解释**: SQL执行数量。 **取值范围**: 大于等于0。 
+        :type count: int
         """
         
         
@@ -46,6 +50,7 @@ class SessionTopSqlStatisticInfo:
         self._node_name = None
         self._unique_sql_id = None
         self._query = None
+        self._count = None
         self.discriminator = None
 
         if node_name is not None:
@@ -54,6 +59,8 @@ class SessionTopSqlStatisticInfo:
             self.unique_sql_id = unique_sql_id
         if query is not None:
             self.query = query
+        if count is not None:
+            self.count = count
 
     @property
     def node_name(self):
@@ -120,6 +127,28 @@ class SessionTopSqlStatisticInfo:
         :type query: str
         """
         self._query = query
+
+    @property
+    def count(self):
+        r"""Gets the count of this SessionTopSqlStatisticInfo.
+
+        **参数解释**: SQL执行数量。 **取值范围**: 大于等于0。 
+
+        :return: The count of this SessionTopSqlStatisticInfo.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        r"""Sets the count of this SessionTopSqlStatisticInfo.
+
+        **参数解释**: SQL执行数量。 **取值范围**: 大于等于0。 
+
+        :param count: The count of this SessionTopSqlStatisticInfo.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

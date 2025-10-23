@@ -18,13 +18,11 @@
  under the LICENSE.
 """
 
-import six
-
 from huaweicloudsdkcore.client import Client, ClientBuilder
 
 
 class ServiceClient(Client):
-    PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
+    PRIMITIVE_TYPES = (float, bool, bytes, str, int)
     NATIVE_TYPES_MAPPING = {
     }
 

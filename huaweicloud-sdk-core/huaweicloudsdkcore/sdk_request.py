@@ -19,12 +19,23 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+from typing import List, Tuple, Dict, Any
+
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 
 
 class SdkRequest(object):
-    def __init__(self, method='GET', schema=None, host=None, resource_path=None, uri=None, query_params=None,
-                 header_params=None, body=None, stream=False, signing_algorithm=SigningAlgorithm.get_default()):
+    def __init__(self,
+                 method: str = 'GET',
+                 schema: str = None,
+                 host: str = None,
+                 resource_path: str = None,
+                 uri: str = None,
+                 query_params: List[Tuple[str, object]] = None,
+                 header_params: Dict[str, str] = None,
+                 body: Any = None,
+                 stream: bool = False,
+                 signing_algorithm: SigningAlgorithm = SigningAlgorithm.get_default()):
         self._method = method
         self._schema = schema
         self._host = host
@@ -81,7 +92,7 @@ class SdkRequest(object):
         return self._query_params
 
     @query_params.setter
-    def query_params(self, query_params):
+    def query_params(self, query_params: List[Tuple[str, object]]):
         self._query_params = query_params
 
     @property

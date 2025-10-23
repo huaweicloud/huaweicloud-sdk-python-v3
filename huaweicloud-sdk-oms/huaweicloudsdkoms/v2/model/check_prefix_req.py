@@ -21,6 +21,7 @@ class CheckPrefixReq:
         'ak': 'str',
         'sk': 'str',
         'json_auth_file': 'str',
+        'connection_string': 'str',
         'app_id': 'str',
         'bucket_name': 'str',
         'file_name': 'str',
@@ -33,6 +34,7 @@ class CheckPrefixReq:
         'ak': 'ak',
         'sk': 'sk',
         'json_auth_file': 'json_auth_file',
+        'connection_string': 'connection_string',
         'app_id': 'app_id',
         'bucket_name': 'bucket_name',
         'file_name': 'file_name',
@@ -40,7 +42,7 @@ class CheckPrefixReq:
         'security_token': 'security_token'
     }
 
-    def __init__(self, cloud_type=None, ak=None, sk=None, json_auth_file=None, app_id=None, bucket_name=None, file_name=None, data_center=None, security_token=None):
+    def __init__(self, cloud_type=None, ak=None, sk=None, json_auth_file=None, connection_string=None, app_id=None, bucket_name=None, file_name=None, data_center=None, security_token=None):
         r"""CheckPrefixReq
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class CheckPrefixReq:
         :type sk: str
         :param json_auth_file: 用于谷歌云Cloud Storage鉴权
         :type json_auth_file: str
+        :param connection_string: 连接字符串，用于微软云Blob鉴权
+        :type connection_string: str
         :param app_id: 当源端为腾讯云时，会返回此参数。
         :type app_id: str
         :param bucket_name: 桶名
@@ -71,6 +75,7 @@ class CheckPrefixReq:
         self._ak = None
         self._sk = None
         self._json_auth_file = None
+        self._connection_string = None
         self._app_id = None
         self._bucket_name = None
         self._file_name = None
@@ -85,6 +90,8 @@ class CheckPrefixReq:
             self.sk = sk
         if json_auth_file is not None:
             self.json_auth_file = json_auth_file
+        if connection_string is not None:
+            self.connection_string = connection_string
         if app_id is not None:
             self.app_id = app_id
         self.bucket_name = bucket_name
@@ -180,6 +187,28 @@ class CheckPrefixReq:
         :type json_auth_file: str
         """
         self._json_auth_file = json_auth_file
+
+    @property
+    def connection_string(self):
+        r"""Gets the connection_string of this CheckPrefixReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :return: The connection_string of this CheckPrefixReq.
+        :rtype: str
+        """
+        return self._connection_string
+
+    @connection_string.setter
+    def connection_string(self, connection_string):
+        r"""Sets the connection_string of this CheckPrefixReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :param connection_string: The connection_string of this CheckPrefixReq.
+        :type connection_string: str
+        """
+        self._connection_string = connection_string
 
     @property
     def app_id(self):

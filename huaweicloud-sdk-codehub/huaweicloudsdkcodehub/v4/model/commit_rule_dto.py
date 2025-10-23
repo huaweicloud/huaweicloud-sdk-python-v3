@@ -32,11 +32,11 @@ class CommitRuleDto:
         'allowed_binary_file_name_regex': 'str',
         'author_regex': 'object',
         'updated_at': 'str',
-        'skip_rule_check': 'bool',
-        'skip_rule_end_date': 'str',
         'name': 'str',
         'branch_name': 'str',
-        'created_at': 'str'
+        'created_at': 'str',
+        'skip_rule_check': 'bool',
+        'skip_rule_end_date': 'str'
     }
 
     attribute_map = {
@@ -55,14 +55,14 @@ class CommitRuleDto:
         'allowed_binary_file_name_regex': 'allowed_binary_file_name_regex',
         'author_regex': 'author_regex',
         'updated_at': 'updated_at',
-        'skip_rule_check': 'skip_rule_check',
-        'skip_rule_end_date': 'skip_rule_end_date',
         'name': 'name',
         'branch_name': 'branch_name',
-        'created_at': 'created_at'
+        'created_at': 'created_at',
+        'skip_rule_check': 'skip_rule_check',
+        'skip_rule_end_date': 'skip_rule_end_date'
     }
 
-    def __init__(self, id=None, repository_id=None, commit_message_regex=None, commit_message_negative_regex=None, prohibited_file_name_regex=None, author_email_regex=None, max_file_size=None, allowed_max_file_size=None, effective_date=None, binary_gate_enabled=None, privileged_users=None, allowed_modify_binary=None, allowed_binary_file_name_regex=None, author_regex=None, updated_at=None, skip_rule_check=None, skip_rule_end_date=None, name=None, branch_name=None, created_at=None):
+    def __init__(self, id=None, repository_id=None, commit_message_regex=None, commit_message_negative_regex=None, prohibited_file_name_regex=None, author_email_regex=None, max_file_size=None, allowed_max_file_size=None, effective_date=None, binary_gate_enabled=None, privileged_users=None, allowed_modify_binary=None, allowed_binary_file_name_regex=None, author_regex=None, updated_at=None, name=None, branch_name=None, created_at=None, skip_rule_check=None, skip_rule_end_date=None):
         r"""CommitRuleDto
 
         The model defined in huaweicloud sdk
@@ -97,16 +97,16 @@ class CommitRuleDto:
         :type author_regex: object
         :param updated_at: **参数解释：** 更新时间。
         :type updated_at: str
-        :param skip_rule_check: **参数解释：** 是否跳过规则检测。 **约束限制：** 不涉及。 **取值范围：** - true，跳过规则检测。 - false，不跳过规则检测。
-        :type skip_rule_check: bool
-        :param skip_rule_end_date: **参数解释：** 失效时间。
-        :type skip_rule_end_date: str
         :param name: **参数解释：** 规则名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type name: str
         :param branch_name: **参数解释：** 分支规则。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type branch_name: str
         :param created_at: **参数解释：** 创建时间。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type created_at: str
+        :param skip_rule_check: **参数解释：** 跳过规则检测。 **约束限制：** 仅CR仓库支持此参数。
+        :type skip_rule_check: bool
+        :param skip_rule_end_date: **参数解释：** 跳过规则检测失效时间， 例如: 2025-8-19。 **约束限制：** 仅CR仓库支持此参数。
+        :type skip_rule_end_date: str
         """
         
         
@@ -126,11 +126,11 @@ class CommitRuleDto:
         self._allowed_binary_file_name_regex = None
         self._author_regex = None
         self._updated_at = None
-        self._skip_rule_check = None
-        self._skip_rule_end_date = None
         self._name = None
         self._branch_name = None
         self._created_at = None
+        self._skip_rule_check = None
+        self._skip_rule_end_date = None
         self.discriminator = None
 
         if id is not None:
@@ -163,16 +163,16 @@ class CommitRuleDto:
             self.author_regex = author_regex
         if updated_at is not None:
             self.updated_at = updated_at
-        if skip_rule_check is not None:
-            self.skip_rule_check = skip_rule_check
-        if skip_rule_end_date is not None:
-            self.skip_rule_end_date = skip_rule_end_date
         if name is not None:
             self.name = name
         if branch_name is not None:
             self.branch_name = branch_name
         if created_at is not None:
             self.created_at = created_at
+        if skip_rule_check is not None:
+            self.skip_rule_check = skip_rule_check
+        if skip_rule_end_date is not None:
+            self.skip_rule_end_date = skip_rule_end_date
 
     @property
     def id(self):
@@ -505,50 +505,6 @@ class CommitRuleDto:
         self._updated_at = updated_at
 
     @property
-    def skip_rule_check(self):
-        r"""Gets the skip_rule_check of this CommitRuleDto.
-
-        **参数解释：** 是否跳过规则检测。 **约束限制：** 不涉及。 **取值范围：** - true，跳过规则检测。 - false，不跳过规则检测。
-
-        :return: The skip_rule_check of this CommitRuleDto.
-        :rtype: bool
-        """
-        return self._skip_rule_check
-
-    @skip_rule_check.setter
-    def skip_rule_check(self, skip_rule_check):
-        r"""Sets the skip_rule_check of this CommitRuleDto.
-
-        **参数解释：** 是否跳过规则检测。 **约束限制：** 不涉及。 **取值范围：** - true，跳过规则检测。 - false，不跳过规则检测。
-
-        :param skip_rule_check: The skip_rule_check of this CommitRuleDto.
-        :type skip_rule_check: bool
-        """
-        self._skip_rule_check = skip_rule_check
-
-    @property
-    def skip_rule_end_date(self):
-        r"""Gets the skip_rule_end_date of this CommitRuleDto.
-
-        **参数解释：** 失效时间。
-
-        :return: The skip_rule_end_date of this CommitRuleDto.
-        :rtype: str
-        """
-        return self._skip_rule_end_date
-
-    @skip_rule_end_date.setter
-    def skip_rule_end_date(self, skip_rule_end_date):
-        r"""Sets the skip_rule_end_date of this CommitRuleDto.
-
-        **参数解释：** 失效时间。
-
-        :param skip_rule_end_date: The skip_rule_end_date of this CommitRuleDto.
-        :type skip_rule_end_date: str
-        """
-        self._skip_rule_end_date = skip_rule_end_date
-
-    @property
     def name(self):
         r"""Gets the name of this CommitRuleDto.
 
@@ -613,6 +569,50 @@ class CommitRuleDto:
         :type created_at: str
         """
         self._created_at = created_at
+
+    @property
+    def skip_rule_check(self):
+        r"""Gets the skip_rule_check of this CommitRuleDto.
+
+        **参数解释：** 跳过规则检测。 **约束限制：** 仅CR仓库支持此参数。
+
+        :return: The skip_rule_check of this CommitRuleDto.
+        :rtype: bool
+        """
+        return self._skip_rule_check
+
+    @skip_rule_check.setter
+    def skip_rule_check(self, skip_rule_check):
+        r"""Sets the skip_rule_check of this CommitRuleDto.
+
+        **参数解释：** 跳过规则检测。 **约束限制：** 仅CR仓库支持此参数。
+
+        :param skip_rule_check: The skip_rule_check of this CommitRuleDto.
+        :type skip_rule_check: bool
+        """
+        self._skip_rule_check = skip_rule_check
+
+    @property
+    def skip_rule_end_date(self):
+        r"""Gets the skip_rule_end_date of this CommitRuleDto.
+
+        **参数解释：** 跳过规则检测失效时间， 例如: 2025-8-19。 **约束限制：** 仅CR仓库支持此参数。
+
+        :return: The skip_rule_end_date of this CommitRuleDto.
+        :rtype: str
+        """
+        return self._skip_rule_end_date
+
+    @skip_rule_end_date.setter
+    def skip_rule_end_date(self, skip_rule_end_date):
+        r"""Sets the skip_rule_end_date of this CommitRuleDto.
+
+        **参数解释：** 跳过规则检测失效时间， 例如: 2025-8-19。 **约束限制：** 仅CR仓库支持此参数。
+
+        :param skip_rule_end_date: The skip_rule_end_date of this CommitRuleDto.
+        :type skip_rule_end_date: str
+        """
+        self._skip_rule_end_date = skip_rule_end_date
 
     def to_dict(self):
         """Returns the model properties as a dict"""

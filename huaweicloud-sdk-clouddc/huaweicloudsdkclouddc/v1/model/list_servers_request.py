@@ -33,7 +33,7 @@ class ListServersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param manage_state: 服务器资产管理状态： - delivering：等待物料。 - received：到货，物料到货进场。 - onboard：上架，对物理服务器进行机柜机架、物理组网、BMC地址配置等，可通过BMC远程管理。 - ready：可用，完成网调、软调及转维验收。 - in-use：使用中，创建裸机实例。 - frozen：冻结，因欠费导致资源冻结。 - offboarding：下架中。
+        :param manage_state: **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围**： - onboard：上架中，用户下单，完成LLD设计。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - frozen：冻结，因欠费导致资源冻结。 - offboarding：下架中。  **默认取值**： 不涉及
         :type manage_state: str
         :param marker: 上一页数据的最后一条记录的id
         :type marker: str
@@ -59,7 +59,7 @@ class ListServersRequest:
     def manage_state(self):
         r"""Gets the manage_state of this ListServersRequest.
 
-        服务器资产管理状态： - delivering：等待物料。 - received：到货，物料到货进场。 - onboard：上架，对物理服务器进行机柜机架、物理组网、BMC地址配置等，可通过BMC远程管理。 - ready：可用，完成网调、软调及转维验收。 - in-use：使用中，创建裸机实例。 - frozen：冻结，因欠费导致资源冻结。 - offboarding：下架中。
+        **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围**： - onboard：上架中，用户下单，完成LLD设计。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - frozen：冻结，因欠费导致资源冻结。 - offboarding：下架中。  **默认取值**： 不涉及
 
         :return: The manage_state of this ListServersRequest.
         :rtype: str
@@ -70,7 +70,7 @@ class ListServersRequest:
     def manage_state(self, manage_state):
         r"""Sets the manage_state of this ListServersRequest.
 
-        服务器资产管理状态： - delivering：等待物料。 - received：到货，物料到货进场。 - onboard：上架，对物理服务器进行机柜机架、物理组网、BMC地址配置等，可通过BMC远程管理。 - ready：可用，完成网调、软调及转维验收。 - in-use：使用中，创建裸机实例。 - frozen：冻结，因欠费导致资源冻结。 - offboarding：下架中。
+        **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围**： - onboard：上架中，用户下单，完成LLD设计。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - frozen：冻结，因欠费导致资源冻结。 - offboarding：下架中。  **默认取值**： 不涉及
 
         :param manage_state: The manage_state of this ListServersRequest.
         :type manage_state: str

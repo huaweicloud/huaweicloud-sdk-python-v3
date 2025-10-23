@@ -21,7 +21,7 @@
 """
 
 import json
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 
 import six
 from requests import Request, Response
@@ -31,7 +31,7 @@ from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import six_utils
 
 
-class ExceptionHandler(six_utils.get_abstract_meta_class()):
+class ExceptionHandler(ABC):
     @abstractmethod
     def handle_exception(self, request, response):
         # type: (Request|object, Response|object) -> None
@@ -60,7 +60,7 @@ class DefaultExceptionHandler(ExceptionHandler):
                 self._process_sdk_error(sdk_error, sdk_error_dict)
             else:
                 sdk_error.error_msg = response.text
-        except six_utils.JSON_DECODE_ERROR:
+        except json.JSONDecodeError:
             sdk_error.error_msg = response.text
         except Exception:
             sdk_error.error_msg = six.ensure_str(response.text)

@@ -142,7 +142,7 @@ class CreateCommitResponse(SdkResponse):
         :type user_name: str
         :param stats: 
         :type stats: :class:`huaweicloudsdkcodehub.v4.CommitStatsDto`
-        :param status: **参数解释：** 状态。 **取值范围：** 不涉及。
+        :param status: 流水线状态，pending为排队，running为运行中，success为成功，failed为失败，canceled为取消，skipped为跳过，timedout为超时
         :type status: str
         :param last_pipeline: 
         :type last_pipeline: :class:`huaweicloudsdkcodehub.v4.PipelineBasicDto`
@@ -824,7 +824,7 @@ class CreateCommitResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this CreateCommitResponse.
 
-        **参数解释：** 状态。 **取值范围：** 不涉及。
+        流水线状态，pending为排队，running为运行中，success为成功，failed为失败，canceled为取消，skipped为跳过，timedout为超时
 
         :return: The status of this CreateCommitResponse.
         :rtype: str
@@ -835,7 +835,7 @@ class CreateCommitResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this CreateCommitResponse.
 
-        **参数解释：** 状态。 **取值范围：** 不涉及。
+        流水线状态，pending为排队，running为运行中，success为成功，failed为失败，canceled为取消，skipped为跳过，timedout为超时
 
         :param status: The status of this CreateCommitResponse.
         :type status: str

@@ -125,7 +125,7 @@ class UpdateMergeRequestSettingDto:
         :type evaluation_types: list[str]
         :param only_allow_merge_if_vote_bigger_than: **参数解释：** 打分模式最低合入分数。
         :type only_allow_merge_if_vote_bigger_than: int
-        :param only_assignee_can_merge: **参数解释：** 仅合并人和合并合并请求。
+        :param only_assignee_can_merge: **参数解释：** 仅合并人可合并合并请求。
         :type only_assignee_can_merge: bool
         """
         
@@ -741,7 +741,7 @@ class UpdateMergeRequestSettingDto:
     def only_assignee_can_merge(self):
         r"""Gets the only_assignee_can_merge of this UpdateMergeRequestSettingDto.
 
-        **参数解释：** 仅合并人和合并合并请求。
+        **参数解释：** 仅合并人可合并合并请求。
 
         :return: The only_assignee_can_merge of this UpdateMergeRequestSettingDto.
         :rtype: bool
@@ -752,7 +752,7 @@ class UpdateMergeRequestSettingDto:
     def only_assignee_can_merge(self, only_assignee_can_merge):
         r"""Sets the only_assignee_can_merge of this UpdateMergeRequestSettingDto.
 
-        **参数解释：** 仅合并人和合并合并请求。
+        **参数解释：** 仅合并人可合并合并请求。
 
         :param only_assignee_can_merge: The only_assignee_can_merge of this UpdateMergeRequestSettingDto.
         :type only_assignee_can_merge: bool

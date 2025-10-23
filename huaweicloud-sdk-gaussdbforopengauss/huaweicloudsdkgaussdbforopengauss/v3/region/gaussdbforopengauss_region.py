@@ -54,6 +54,8 @@ class GaussDBforopenGaussRegion:
                         "https://gaussdb.cn-east-2.myhuaweicloud.com")
     CN_NORTH_12 = Region("cn-north-12",
                         "https://gaussdb.cn-north-12.myhuaweicloud.com")
+    CN_SOUTH_4 = Region("cn-south-4",
+                        "https://gaussdb-opengauss.cn-south-4.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
@@ -80,6 +82,7 @@ class GaussDBforopenGaussRegion:
         "ap-southeast-4": AP_SOUTHEAST_4,
         "cn-east-2": CN_EAST_2,
         "cn-north-12": CN_NORTH_12,
+        "cn-south-4": CN_SOUTH_4,
     }
 
     @classmethod

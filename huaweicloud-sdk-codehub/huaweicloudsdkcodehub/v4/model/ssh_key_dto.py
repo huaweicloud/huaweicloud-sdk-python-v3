@@ -35,9 +35,9 @@ class SSHKeyDto:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：** 秘钥id。
+        :param id: **参数解释：** 密钥id。
         :type id: int
-        :param title: **参数解释：** 秘钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
+        :param title: **参数解释：** 密钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type title: str
         :param key: **参数解释：** 公钥。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type key: str
@@ -66,7 +66,7 @@ class SSHKeyDto:
     def id(self):
         r"""Gets the id of this SSHKeyDto.
 
-        **参数解释：** 秘钥id。
+        **参数解释：** 密钥id。
 
         :return: The id of this SSHKeyDto.
         :rtype: int
@@ -77,7 +77,7 @@ class SSHKeyDto:
     def id(self, id):
         r"""Sets the id of this SSHKeyDto.
 
-        **参数解释：** 秘钥id。
+        **参数解释：** 密钥id。
 
         :param id: The id of this SSHKeyDto.
         :type id: int
@@ -88,7 +88,7 @@ class SSHKeyDto:
     def title(self):
         r"""Gets the title of this SSHKeyDto.
 
-        **参数解释：** 秘钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
+        **参数解释：** 密钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
 
         :return: The title of this SSHKeyDto.
         :rtype: str
@@ -99,7 +99,7 @@ class SSHKeyDto:
     def title(self, title):
         r"""Sets the title of this SSHKeyDto.
 
-        **参数解释：** 秘钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
+        **参数解释：** 密钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
 
         :param title: The title of this SSHKeyDto.
         :type title: str

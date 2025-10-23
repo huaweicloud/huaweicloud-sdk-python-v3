@@ -30,7 +30,7 @@ class ShowProjectSettingsInheritCfgResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 项目继承设置列表
         :type body: list[:class:`huaweicloudsdkcodehub.v4.ProjectSettingsInheritCfgDto`]
         """
         
@@ -46,6 +46,8 @@ class ShowProjectSettingsInheritCfgResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ShowProjectSettingsInheritCfgResponse.
 
+        项目继承设置列表
+
         :return: The body of this ShowProjectSettingsInheritCfgResponse.
         :rtype: list[:class:`huaweicloudsdkcodehub.v4.ProjectSettingsInheritCfgDto`]
         """
@@ -54,6 +56,8 @@ class ShowProjectSettingsInheritCfgResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this ShowProjectSettingsInheritCfgResponse.
+
+        项目继承设置列表
 
         :param body: The body of this ShowProjectSettingsInheritCfgResponse.
         :type body: list[:class:`huaweicloudsdkcodehub.v4.ProjectSettingsInheritCfgDto`]

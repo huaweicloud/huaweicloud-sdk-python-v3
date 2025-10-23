@@ -24,7 +24,8 @@ class GeneralTextRequestBody:
         'character_mode': 'bool',
         'language': 'str',
         'single_orientation_mode': 'bool',
-        'pdf_page_number': 'int'
+        'pdf_page_number': 'int',
+        'return_markdown_result': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class GeneralTextRequestBody:
         'character_mode': 'character_mode',
         'language': 'language',
         'single_orientation_mode': 'single_orientation_mode',
-        'pdf_page_number': 'pdf_page_number'
+        'pdf_page_number': 'pdf_page_number',
+        'return_markdown_result': 'return_markdown_result'
     }
 
-    def __init__(self, image=None, url=None, detect_direction=None, quick_mode=None, character_mode=None, language=None, single_orientation_mode=None, pdf_page_number=None):
+    def __init__(self, image=None, url=None, detect_direction=None, quick_mode=None, character_mode=None, language=None, single_orientation_mode=None, pdf_page_number=None, return_markdown_result=None):
         r"""GeneralTextRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class GeneralTextRequestBody:
         :type single_orientation_mode: bool
         :param pdf_page_number: 指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
         :type pdf_page_number: int
+        :param return_markdown_result: 返回文字块拼接结果开关。可选值包括： - true：打开返回文字块拼接结果开关。 - false：关闭返回文字块拼接结果开关。 未传入该参数时默认为false，即默认关闭返回文字块拼接结果开关。 
+        :type return_markdown_result: bool
         """
         
         
@@ -71,6 +75,7 @@ class GeneralTextRequestBody:
         self._language = None
         self._single_orientation_mode = None
         self._pdf_page_number = None
+        self._return_markdown_result = None
         self.discriminator = None
 
         if image is not None:
@@ -89,6 +94,8 @@ class GeneralTextRequestBody:
             self.single_orientation_mode = single_orientation_mode
         if pdf_page_number is not None:
             self.pdf_page_number = pdf_page_number
+        if return_markdown_result is not None:
+            self.return_markdown_result = return_markdown_result
 
     @property
     def image(self):
@@ -265,6 +272,28 @@ class GeneralTextRequestBody:
         :type pdf_page_number: int
         """
         self._pdf_page_number = pdf_page_number
+
+    @property
+    def return_markdown_result(self):
+        r"""Gets the return_markdown_result of this GeneralTextRequestBody.
+
+        返回文字块拼接结果开关。可选值包括： - true：打开返回文字块拼接结果开关。 - false：关闭返回文字块拼接结果开关。 未传入该参数时默认为false，即默认关闭返回文字块拼接结果开关。 
+
+        :return: The return_markdown_result of this GeneralTextRequestBody.
+        :rtype: bool
+        """
+        return self._return_markdown_result
+
+    @return_markdown_result.setter
+    def return_markdown_result(self, return_markdown_result):
+        r"""Sets the return_markdown_result of this GeneralTextRequestBody.
+
+        返回文字块拼接结果开关。可选值包括： - true：打开返回文字块拼接结果开关。 - false：关闭返回文字块拼接结果开关。 未传入该参数时默认为false，即默认关闭返回文字块拼接结果开关。 
+
+        :param return_markdown_result: The return_markdown_result of this GeneralTextRequestBody.
+        :type return_markdown_result: bool
+        """
+        self._return_markdown_result = return_markdown_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

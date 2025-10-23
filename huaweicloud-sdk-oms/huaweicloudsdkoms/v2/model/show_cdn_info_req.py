@@ -19,6 +19,7 @@ class ShowCdnInfoReq:
     openapi_types = {
         'ak': 'str',
         'sk': 'str',
+        'connection_string': 'str',
         'cloud_type': 'str',
         'region': 'str',
         'app_id': 'str',
@@ -30,6 +31,7 @@ class ShowCdnInfoReq:
     attribute_map = {
         'ak': 'ak',
         'sk': 'sk',
+        'connection_string': 'connection_string',
         'cloud_type': 'cloud_type',
         'region': 'region',
         'app_id': 'app_id',
@@ -38,7 +40,7 @@ class ShowCdnInfoReq:
         'source_cdn': 'source_cdn'
     }
 
-    def __init__(self, ak=None, sk=None, cloud_type=None, region=None, app_id=None, bucket=None, prefix=None, source_cdn=None):
+    def __init__(self, ak=None, sk=None, connection_string=None, cloud_type=None, region=None, app_id=None, bucket=None, prefix=None, source_cdn=None):
         r"""ShowCdnInfoReq
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ShowCdnInfoReq:
         :type ak: str
         :param sk: 源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
         :type sk: str
+        :param connection_string: 连接字符串，用于微软云Blob鉴权
+        :type connection_string: str
         :param cloud_type: 云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 URLSource：URL HEC：HEC
         :type cloud_type: str
         :param region: 区域
@@ -65,6 +69,7 @@ class ShowCdnInfoReq:
 
         self._ak = None
         self._sk = None
+        self._connection_string = None
         self._cloud_type = None
         self._region = None
         self._app_id = None
@@ -75,6 +80,8 @@ class ShowCdnInfoReq:
 
         self.ak = ak
         self.sk = sk
+        if connection_string is not None:
+            self.connection_string = connection_string
         self.cloud_type = cloud_type
         self.region = region
         if app_id is not None:
@@ -127,6 +134,28 @@ class ShowCdnInfoReq:
         :type sk: str
         """
         self._sk = sk
+
+    @property
+    def connection_string(self):
+        r"""Gets the connection_string of this ShowCdnInfoReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :return: The connection_string of this ShowCdnInfoReq.
+        :rtype: str
+        """
+        return self._connection_string
+
+    @connection_string.setter
+    def connection_string(self, connection_string):
+        r"""Sets the connection_string of this ShowCdnInfoReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :param connection_string: The connection_string of this ShowCdnInfoReq.
+        :type connection_string: str
+        """
+        self._connection_string = connection_string
 
     @property
     def cloud_type(self):

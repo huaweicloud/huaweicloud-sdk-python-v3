@@ -19,6 +19,7 @@ class RetryTaskGroupReq:
     openapi_types = {
         'src_ak': 'str',
         'src_sk': 'str',
+        'connection_string': 'str',
         'json_auth_file': 'str',
         'dst_ak': 'str',
         'dst_sk': 'str',
@@ -29,6 +30,7 @@ class RetryTaskGroupReq:
     attribute_map = {
         'src_ak': 'src_ak',
         'src_sk': 'src_sk',
+        'connection_string': 'connection_string',
         'json_auth_file': 'json_auth_file',
         'dst_ak': 'dst_ak',
         'dst_sk': 'dst_sk',
@@ -36,7 +38,7 @@ class RetryTaskGroupReq:
         'migrate_failed_object': 'migrate_failed_object'
     }
 
-    def __init__(self, src_ak=None, src_sk=None, json_auth_file=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None, migrate_failed_object=None):
+    def __init__(self, src_ak=None, src_sk=None, connection_string=None, json_auth_file=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None, migrate_failed_object=None):
         r"""RetryTaskGroupReq
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class RetryTaskGroupReq:
         :type src_ak: str
         :param src_sk: 源端sk（最大长度100个字符）
         :type src_sk: str
+        :param connection_string: 连接字符串，用于微软云Blob鉴权
+        :type connection_string: str
         :param json_auth_file: 用于谷歌云Cloud Storage鉴权
         :type json_auth_file: str
         :param dst_ak: 目的端ak（最大长度100个字符）
@@ -61,6 +65,7 @@ class RetryTaskGroupReq:
 
         self._src_ak = None
         self._src_sk = None
+        self._connection_string = None
         self._json_auth_file = None
         self._dst_ak = None
         self._dst_sk = None
@@ -72,6 +77,8 @@ class RetryTaskGroupReq:
             self.src_ak = src_ak
         if src_sk is not None:
             self.src_sk = src_sk
+        if connection_string is not None:
+            self.connection_string = connection_string
         if json_auth_file is not None:
             self.json_auth_file = json_auth_file
         if dst_ak is not None:
@@ -126,6 +133,28 @@ class RetryTaskGroupReq:
         :type src_sk: str
         """
         self._src_sk = src_sk
+
+    @property
+    def connection_string(self):
+        r"""Gets the connection_string of this RetryTaskGroupReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :return: The connection_string of this RetryTaskGroupReq.
+        :rtype: str
+        """
+        return self._connection_string
+
+    @connection_string.setter
+    def connection_string(self, connection_string):
+        r"""Sets the connection_string of this RetryTaskGroupReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :param connection_string: The connection_string of this RetryTaskGroupReq.
+        :type connection_string: str
+        """
+        self._connection_string = connection_string
 
     @property
     def json_auth_file(self):

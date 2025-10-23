@@ -21,7 +21,7 @@ class CreateExternalIncidentRequest:
         'enterprise_project': 'list[str]',
         'current_cloud_service': 'list[str]',
         'incident_level': 'str',
-        'is_service_interrupt': 'bool',
+        'is_service_interrupt': 'str',
         'incident_type': 'str',
         'incident_title': 'str',
         'incident_description': 'str',
@@ -66,7 +66,7 @@ class CreateExternalIncidentRequest:
         :param incident_level: 事件级别 参考：枚举 事件级别incident_level
         :type incident_level: str
         :param is_service_interrupt: 业务是否中断，取值：true/false
-        :type is_service_interrupt: bool
+        :type is_service_interrupt: str
         :param incident_type: 事件类别 参考：枚举 事件类别incident_type
         :type incident_type: str
         :param incident_title: 事件标题，最大长度：200
@@ -228,7 +228,7 @@ class CreateExternalIncidentRequest:
         业务是否中断，取值：true/false
 
         :return: The is_service_interrupt of this CreateExternalIncidentRequest.
-        :rtype: bool
+        :rtype: str
         """
         return self._is_service_interrupt
 
@@ -239,7 +239,7 @@ class CreateExternalIncidentRequest:
         业务是否中断，取值：true/false
 
         :param is_service_interrupt: The is_service_interrupt of this CreateExternalIncidentRequest.
-        :type is_service_interrupt: bool
+        :type is_service_interrupt: str
         """
         self._is_service_interrupt = is_service_interrupt
 

@@ -104,7 +104,7 @@ class CreateMergeRequestDiscussionResponseResponse(SdkResponse):
 
         :param id: **参数解释：** 评论id(主评论和回复不共用)。
         :type id: int
-        :param type: **参数解释：** 类型(普通评论、需要解决的普通评论、需要解决的关联代码行的评论)。
+        :param type: **参数解释：** 评论类型。 **取值范围：** - DiscussionNote: 需要解决的关联代码行的评论。 - DiffNote: 一般。
         :type type: str
         :param body: **参数解释：** 评论内容。
         :type body: str
@@ -120,7 +120,7 @@ class CreateMergeRequestDiscussionResponseResponse(SdkResponse):
         :type system: bool
         :param noteable_id: **参数解释：** 合并请求id或issue id。
         :type noteable_id: int
-        :param noteable_type: **参数解释：** 意见类型。
+        :param noteable_type: **参数解释：** 意见类型。 **取值范围：** - MergeRequest: 合并请求下提的检视意见。 - Commit: 代码页或提交记录下提的检视意见。
         :type noteable_type: str
         :param commit_id: **参数解释：** 提交记录id。
         :type commit_id: str
@@ -320,7 +320,7 @@ class CreateMergeRequestDiscussionResponseResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this CreateMergeRequestDiscussionResponseResponse.
 
-        **参数解释：** 类型(普通评论、需要解决的普通评论、需要解决的关联代码行的评论)。
+        **参数解释：** 评论类型。 **取值范围：** - DiscussionNote: 需要解决的关联代码行的评论。 - DiffNote: 一般。
 
         :return: The type of this CreateMergeRequestDiscussionResponseResponse.
         :rtype: str
@@ -331,7 +331,7 @@ class CreateMergeRequestDiscussionResponseResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this CreateMergeRequestDiscussionResponseResponse.
 
-        **参数解释：** 类型(普通评论、需要解决的普通评论、需要解决的关联代码行的评论)。
+        **参数解释：** 评论类型。 **取值范围：** - DiscussionNote: 需要解决的关联代码行的评论。 - DiffNote: 一般。
 
         :param type: The type of this CreateMergeRequestDiscussionResponseResponse.
         :type type: str
@@ -492,7 +492,7 @@ class CreateMergeRequestDiscussionResponseResponse(SdkResponse):
     def noteable_type(self):
         r"""Gets the noteable_type of this CreateMergeRequestDiscussionResponseResponse.
 
-        **参数解释：** 意见类型。
+        **参数解释：** 意见类型。 **取值范围：** - MergeRequest: 合并请求下提的检视意见。 - Commit: 代码页或提交记录下提的检视意见。
 
         :return: The noteable_type of this CreateMergeRequestDiscussionResponseResponse.
         :rtype: str
@@ -503,7 +503,7 @@ class CreateMergeRequestDiscussionResponseResponse(SdkResponse):
     def noteable_type(self, noteable_type):
         r"""Sets the noteable_type of this CreateMergeRequestDiscussionResponseResponse.
 
-        **参数解释：** 意见类型。
+        **参数解释：** 意见类型。 **取值范围：** - MergeRequest: 合并请求下提的检视意见。 - Commit: 代码页或提交记录下提的检视意见。
 
         :param noteable_type: The noteable_type of this CreateMergeRequestDiscussionResponseResponse.
         :type noteable_type: str

@@ -57,7 +57,7 @@ class EncryptDatakeyRequestBody:
         :type pin: str
         :param pin_type: pin码的类型，默认为“CipherText”，可选“PlainText”。仅四级密评场景支持该参数。
         :type pin_type: str
-        :param key_spec: 指定生成的密钥算法。有效值： SM2、RSA。
+        :param key_spec: 指定待加密数据密钥的类型，仅四级密评场景生效。有效值： SM2、RSA。
         :type key_spec: str
         """
         
@@ -245,7 +245,7 @@ class EncryptDatakeyRequestBody:
     def key_spec(self):
         r"""Gets the key_spec of this EncryptDatakeyRequestBody.
 
-        指定生成的密钥算法。有效值： SM2、RSA。
+        指定待加密数据密钥的类型，仅四级密评场景生效。有效值： SM2、RSA。
 
         :return: The key_spec of this EncryptDatakeyRequestBody.
         :rtype: str
@@ -256,7 +256,7 @@ class EncryptDatakeyRequestBody:
     def key_spec(self, key_spec):
         r"""Sets the key_spec of this EncryptDatakeyRequestBody.
 
-        指定生成的密钥算法。有效值： SM2、RSA。
+        指定待加密数据密钥的类型，仅四级密评场景生效。有效值： SM2、RSA。
 
         :param key_spec: The key_spec of this EncryptDatakeyRequestBody.
         :type key_spec: str

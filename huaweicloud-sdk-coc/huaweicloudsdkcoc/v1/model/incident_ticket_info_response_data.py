@@ -23,6 +23,10 @@ class IncidentTicketInfoResponseData:
         'current_cloud_service': 'list[str]',
         'incident_level': 'str',
         'is_service_interrupt': 'bool',
+        'start_time': 'int',
+        'fault_recovery_time': 'int',
+        'fault_delineation_time': 'int',
+        'incident_ownership': 'str',
         'incident_type': 'str',
         'incident_title': 'str',
         'incident_description': 'str',
@@ -45,6 +49,10 @@ class IncidentTicketInfoResponseData:
         'current_cloud_service': 'current_cloud_service',
         'incident_level': 'incident_level',
         'is_service_interrupt': 'is_service_interrupt',
+        'start_time': 'start_time',
+        'fault_recovery_time': 'fault_recovery_time',
+        'fault_delineation_time': 'fault_delineation_time',
+        'incident_ownership': 'incident_ownership',
         'incident_type': 'incident_type',
         'incident_title': 'incident_title',
         'incident_description': 'incident_description',
@@ -60,7 +68,7 @@ class IncidentTicketInfoResponseData:
         'enum_data_list': 'enum_data_list'
     }
 
-    def __init__(self, incident_num=None, region=None, enterprise_project=None, current_cloud_service=None, incident_level=None, is_service_interrupt=None, incident_type=None, incident_title=None, incident_description=None, incident_source=None, incident_assignee=None, assignee_scene=None, assignee_role=None, warroom_id=None, handle_time=None, status=None, create_time=None, creator=None, enum_data_list=None):
+    def __init__(self, incident_num=None, region=None, enterprise_project=None, current_cloud_service=None, incident_level=None, is_service_interrupt=None, start_time=None, fault_recovery_time=None, fault_delineation_time=None, incident_ownership=None, incident_type=None, incident_title=None, incident_description=None, incident_source=None, incident_assignee=None, assignee_scene=None, assignee_role=None, warroom_id=None, handle_time=None, status=None, create_time=None, creator=None, enum_data_list=None):
         r"""IncidentTicketInfoResponseData
 
         The model defined in huaweicloud sdk
@@ -77,6 +85,14 @@ class IncidentTicketInfoResponseData:
         :type incident_level: str
         :param is_service_interrupt: 业务是否中断，取值：true/false
         :type is_service_interrupt: bool
+        :param start_time: 故障发生时间戳
+        :type start_time: int
+        :param fault_recovery_time: 故障恢复时间戳
+        :type fault_recovery_time: int
+        :param fault_delineation_time: 定界完成时间时间戳
+        :type fault_delineation_time: int
+        :param incident_ownership: 事件归属 参考：枚举 事件来源incident_ownership
+        :type incident_ownership: str
         :param incident_type: 事件类别 参考：枚举 事件类别incident_type
         :type incident_type: str
         :param incident_title: 事件标题，最大长度：200
@@ -113,6 +129,10 @@ class IncidentTicketInfoResponseData:
         self._current_cloud_service = None
         self._incident_level = None
         self._is_service_interrupt = None
+        self._start_time = None
+        self._fault_recovery_time = None
+        self._fault_delineation_time = None
+        self._incident_ownership = None
         self._incident_type = None
         self._incident_title = None
         self._incident_description = None
@@ -140,6 +160,14 @@ class IncidentTicketInfoResponseData:
             self.incident_level = incident_level
         if is_service_interrupt is not None:
             self.is_service_interrupt = is_service_interrupt
+        if start_time is not None:
+            self.start_time = start_time
+        if fault_recovery_time is not None:
+            self.fault_recovery_time = fault_recovery_time
+        if fault_delineation_time is not None:
+            self.fault_delineation_time = fault_delineation_time
+        if incident_ownership is not None:
+            self.incident_ownership = incident_ownership
         if incident_type is not None:
             self.incident_type = incident_type
         if incident_title is not None:
@@ -298,6 +326,94 @@ class IncidentTicketInfoResponseData:
         :type is_service_interrupt: bool
         """
         self._is_service_interrupt = is_service_interrupt
+
+    @property
+    def start_time(self):
+        r"""Gets the start_time of this IncidentTicketInfoResponseData.
+
+        故障发生时间戳
+
+        :return: The start_time of this IncidentTicketInfoResponseData.
+        :rtype: int
+        """
+        return self._start_time
+
+    @start_time.setter
+    def start_time(self, start_time):
+        r"""Sets the start_time of this IncidentTicketInfoResponseData.
+
+        故障发生时间戳
+
+        :param start_time: The start_time of this IncidentTicketInfoResponseData.
+        :type start_time: int
+        """
+        self._start_time = start_time
+
+    @property
+    def fault_recovery_time(self):
+        r"""Gets the fault_recovery_time of this IncidentTicketInfoResponseData.
+
+        故障恢复时间戳
+
+        :return: The fault_recovery_time of this IncidentTicketInfoResponseData.
+        :rtype: int
+        """
+        return self._fault_recovery_time
+
+    @fault_recovery_time.setter
+    def fault_recovery_time(self, fault_recovery_time):
+        r"""Sets the fault_recovery_time of this IncidentTicketInfoResponseData.
+
+        故障恢复时间戳
+
+        :param fault_recovery_time: The fault_recovery_time of this IncidentTicketInfoResponseData.
+        :type fault_recovery_time: int
+        """
+        self._fault_recovery_time = fault_recovery_time
+
+    @property
+    def fault_delineation_time(self):
+        r"""Gets the fault_delineation_time of this IncidentTicketInfoResponseData.
+
+        定界完成时间时间戳
+
+        :return: The fault_delineation_time of this IncidentTicketInfoResponseData.
+        :rtype: int
+        """
+        return self._fault_delineation_time
+
+    @fault_delineation_time.setter
+    def fault_delineation_time(self, fault_delineation_time):
+        r"""Sets the fault_delineation_time of this IncidentTicketInfoResponseData.
+
+        定界完成时间时间戳
+
+        :param fault_delineation_time: The fault_delineation_time of this IncidentTicketInfoResponseData.
+        :type fault_delineation_time: int
+        """
+        self._fault_delineation_time = fault_delineation_time
+
+    @property
+    def incident_ownership(self):
+        r"""Gets the incident_ownership of this IncidentTicketInfoResponseData.
+
+        事件归属 参考：枚举 事件来源incident_ownership
+
+        :return: The incident_ownership of this IncidentTicketInfoResponseData.
+        :rtype: str
+        """
+        return self._incident_ownership
+
+    @incident_ownership.setter
+    def incident_ownership(self, incident_ownership):
+        r"""Sets the incident_ownership of this IncidentTicketInfoResponseData.
+
+        事件归属 参考：枚举 事件来源incident_ownership
+
+        :param incident_ownership: The incident_ownership of this IncidentTicketInfoResponseData.
+        :type incident_ownership: str
+        """
+        self._incident_ownership = incident_ownership
 
     @property
     def incident_type(self):

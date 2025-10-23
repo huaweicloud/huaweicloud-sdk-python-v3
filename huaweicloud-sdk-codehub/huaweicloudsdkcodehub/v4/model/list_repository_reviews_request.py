@@ -71,7 +71,7 @@ class ListRepositoryReviewsRequest:
         :type start_date: datetime
         :param end_date: **参数解释：** 结束日期。
         :type end_date: datetime
-        :param only_count: **参数解释：** 是否仅返回todo。 **取值范围：** - true，仅返回带有提交计数和diffs计数的结果。 - false，按照compare_view参数返回结果信息。
+        :param only_count: **参数解释：** 是否仅返回带有提交计数和diffs计数的结果。 **取值范围：** - true，仅返回带有提交计数和diffs计数的结果。 - false，按照compare_view参数返回结果信息。
         :type only_count: bool
         :param review_categories: **参数解释：** 搜索的检视意见分类。 **取值范围：** 字符串长度不少于1，不超过200。
         :type review_categories: str
@@ -265,7 +265,7 @@ class ListRepositoryReviewsRequest:
     def only_count(self):
         r"""Gets the only_count of this ListRepositoryReviewsRequest.
 
-        **参数解释：** 是否仅返回todo。 **取值范围：** - true，仅返回带有提交计数和diffs计数的结果。 - false，按照compare_view参数返回结果信息。
+        **参数解释：** 是否仅返回带有提交计数和diffs计数的结果。 **取值范围：** - true，仅返回带有提交计数和diffs计数的结果。 - false，按照compare_view参数返回结果信息。
 
         :return: The only_count of this ListRepositoryReviewsRequest.
         :rtype: bool
@@ -276,7 +276,7 @@ class ListRepositoryReviewsRequest:
     def only_count(self, only_count):
         r"""Sets the only_count of this ListRepositoryReviewsRequest.
 
-        **参数解释：** 是否仅返回todo。 **取值范围：** - true，仅返回带有提交计数和diffs计数的结果。 - false，按照compare_view参数返回结果信息。
+        **参数解释：** 是否仅返回带有提交计数和diffs计数的结果。 **取值范围：** - true，仅返回带有提交计数和diffs计数的结果。 - false，按照compare_view参数返回结果信息。
 
         :param only_count: The only_count of this ListRepositoryReviewsRequest.
         :type only_count: bool

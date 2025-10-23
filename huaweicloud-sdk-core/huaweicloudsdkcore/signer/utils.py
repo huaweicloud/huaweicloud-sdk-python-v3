@@ -20,14 +20,14 @@
  under the LICENSE.
 """
 import hashlib
+import secrets
 from sys import version_info
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 
 from pyasn1.codec.der import encoder, decoder
 from pyasn1.type import univ
 
 from huaweicloudsdkcore.exceptions.exceptions import SdkException
-from huaweicloudsdkcore.utils.six_utils import get_abstract_meta_class
 
 if version_info.major == 3:
     if version_info.minor < 7:
@@ -163,25 +163,11 @@ if version_info.major == 3:
 else:
     new_sm3_hash = None
 
-try:
-    from secrets import randbelow
 
-
-    def _secure_randint(a, b):
-        # type: (int, int) -> int
-        random_int = randbelow(b - a + 1) + a
-        return random_int
-except ImportError:
-    from os import urandom
-
-
-    def _secure_randint(a, b):
-        # type: (int, int) -> int
-        range_size = b - a + 1
-        num_bytes = (range_size.bit_length() + 7) // 8
-        rand_bytes = urandom(num_bytes)
-        rand_int = int.from_bytes(rand_bytes, byteorder='big')
-        return a + rand_int % range_size
+def _secure_randint(a, b):
+    # type: (int, int) -> int
+    random_int = secrets.randbelow(b - a + 1) + a
+    return random_int
 
 
 def _mod_inverse(a, m):
@@ -205,7 +191,7 @@ def _int_to_bytes(i):
     return i.to_bytes(length=(i.bit_length() + 7) // 8, byteorder='big', signed=i < 0)
 
 
-class SigningKey(get_abstract_meta_class()):
+class SigningKey(ABC):
     @abstractmethod
     def sign(self, data):
         # type: (bytes) -> bytes

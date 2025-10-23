@@ -19,18 +19,16 @@ class BaseResponse:
     openapi_types = {
         'provider_code': 'str',
         'error_code': 'str',
-        'error_msg': 'str',
-        'data': 'object'
+        'error_msg': 'str'
     }
 
     attribute_map = {
         'provider_code': 'provider_code',
         'error_code': 'error_code',
-        'error_msg': 'error_msg',
-        'data': 'data'
+        'error_msg': 'error_msg'
     }
 
-    def __init__(self, provider_code=None, error_code=None, error_msg=None, data=None):
+    def __init__(self, provider_code=None, error_code=None, error_msg=None):
         r"""BaseResponse
 
         The model defined in huaweicloud sdk
@@ -41,8 +39,6 @@ class BaseResponse:
         :type error_code: str
         :param error_msg: 请求响应描述
         :type error_msg: str
-        :param data: 响应数据
-        :type data: object
         """
         
         
@@ -50,13 +46,12 @@ class BaseResponse:
         self._provider_code = None
         self._error_code = None
         self._error_msg = None
-        self._data = None
         self.discriminator = None
 
         self.provider_code = provider_code
         self.error_code = error_code
-        self.error_msg = error_msg
-        self.data = data
+        if error_msg is not None:
+            self.error_msg = error_msg
 
     @property
     def provider_code(self):
@@ -123,28 +118,6 @@ class BaseResponse:
         :type error_msg: str
         """
         self._error_msg = error_msg
-
-    @property
-    def data(self):
-        r"""Gets the data of this BaseResponse.
-
-        响应数据
-
-        :return: The data of this BaseResponse.
-        :rtype: object
-        """
-        return self._data
-
-    @data.setter
-    def data(self, data):
-        r"""Sets the data of this BaseResponse.
-
-        响应数据
-
-        :param data: The data of this BaseResponse.
-        :type data: object
-        """
-        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""

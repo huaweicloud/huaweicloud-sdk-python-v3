@@ -45,7 +45,7 @@ class ImpersonationToken:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：** 唯一标示id。
+        :param id: **参数解释：** 唯一标识id。
         :type id: int
         :param name: **参数解释：** 名称。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type name: str
@@ -101,7 +101,7 @@ class ImpersonationToken:
     def id(self):
         r"""Gets the id of this ImpersonationToken.
 
-        **参数解释：** 唯一标示id。
+        **参数解释：** 唯一标识id。
 
         :return: The id of this ImpersonationToken.
         :rtype: int
@@ -112,7 +112,7 @@ class ImpersonationToken:
     def id(self, id):
         r"""Sets the id of this ImpersonationToken.
 
-        **参数解释：** 唯一标示id。
+        **参数解释：** 唯一标识id。
 
         :param id: The id of this ImpersonationToken.
         :type id: int

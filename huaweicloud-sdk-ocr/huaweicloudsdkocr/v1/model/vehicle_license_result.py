@@ -45,7 +45,9 @@ class VehicleLicenseResult:
         'mandatory_scrapping_date': 'str',
         'status': 'list[str]',
         'front': 'VehicleLicenseFront',
-        'back': 'VehicleLicenseback'
+        'back': 'VehicleLicenseBack',
+        'alarm_result': 'VehicleLicenseAlarmResult',
+        'alarm_confidence': 'VehicleLicenseAlarmConfidence'
     }
 
     attribute_map = {
@@ -77,10 +79,12 @@ class VehicleLicenseResult:
         'mandatory_scrapping_date': 'mandatory_scrapping_date',
         'status': 'status',
         'front': 'front',
-        'back': 'back'
+        'back': 'back',
+        'alarm_result': 'alarm_result',
+        'alarm_confidence': 'alarm_confidence'
     }
 
-    def __init__(self, type=None, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, text_location=None, energy_type=None, color=None, mandatory_scrapping_date=None, status=None, front=None, back=None):
+    def __init__(self, type=None, number=None, vehicle_type=None, name=None, address=None, use_character=None, model=None, engine_no=None, vin=None, register_date=None, issue_date=None, issuing_authority=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, text_location=None, energy_type=None, color=None, mandatory_scrapping_date=None, status=None, front=None, back=None, alarm_result=None, alarm_confidence=None):
         r"""VehicleLicenseResult
 
         The model defined in huaweicloud sdk
@@ -142,7 +146,11 @@ class VehicleLicenseResult:
         :param front: 
         :type front: :class:`huaweicloudsdkocr.v1.VehicleLicenseFront`
         :param back: 
-        :type back: :class:`huaweicloudsdkocr.v1.VehicleLicenseback`
+        :type back: :class:`huaweicloudsdkocr.v1.VehicleLicenseBack`
+        :param alarm_result: 
+        :type alarm_result: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmResult`
+        :param alarm_confidence: 
+        :type alarm_confidence: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmConfidence`
         """
         
         
@@ -176,6 +184,8 @@ class VehicleLicenseResult:
         self._status = None
         self._front = None
         self._back = None
+        self._alarm_result = None
+        self._alarm_confidence = None
         self.discriminator = None
 
         if type is not None:
@@ -236,6 +246,10 @@ class VehicleLicenseResult:
             self.front = front
         if back is not None:
             self.back = back
+        if alarm_result is not None:
+            self.alarm_result = alarm_result
+        if alarm_confidence is not None:
+            self.alarm_confidence = alarm_confidence
 
     @property
     def type(self):
@@ -854,7 +868,7 @@ class VehicleLicenseResult:
         r"""Gets the back of this VehicleLicenseResult.
 
         :return: The back of this VehicleLicenseResult.
-        :rtype: :class:`huaweicloudsdkocr.v1.VehicleLicenseback`
+        :rtype: :class:`huaweicloudsdkocr.v1.VehicleLicenseBack`
         """
         return self._back
 
@@ -863,9 +877,45 @@ class VehicleLicenseResult:
         r"""Sets the back of this VehicleLicenseResult.
 
         :param back: The back of this VehicleLicenseResult.
-        :type back: :class:`huaweicloudsdkocr.v1.VehicleLicenseback`
+        :type back: :class:`huaweicloudsdkocr.v1.VehicleLicenseBack`
         """
         self._back = back
+
+    @property
+    def alarm_result(self):
+        r"""Gets the alarm_result of this VehicleLicenseResult.
+
+        :return: The alarm_result of this VehicleLicenseResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmResult`
+        """
+        return self._alarm_result
+
+    @alarm_result.setter
+    def alarm_result(self, alarm_result):
+        r"""Sets the alarm_result of this VehicleLicenseResult.
+
+        :param alarm_result: The alarm_result of this VehicleLicenseResult.
+        :type alarm_result: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmResult`
+        """
+        self._alarm_result = alarm_result
+
+    @property
+    def alarm_confidence(self):
+        r"""Gets the alarm_confidence of this VehicleLicenseResult.
+
+        :return: The alarm_confidence of this VehicleLicenseResult.
+        :rtype: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmConfidence`
+        """
+        return self._alarm_confidence
+
+    @alarm_confidence.setter
+    def alarm_confidence(self, alarm_confidence):
+        r"""Sets the alarm_confidence of this VehicleLicenseResult.
+
+        :param alarm_confidence: The alarm_confidence of this VehicleLicenseResult.
+        :type alarm_confidence: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmConfidence`
+        """
+        self._alarm_confidence = alarm_confidence
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -21,7 +21,7 @@
 """
 
 import os
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 
 from huaweicloudsdkcore.region.cache import ProfileRegionCache, EnvRegionCache
 from huaweicloudsdkcore.region.region import Region
@@ -29,7 +29,7 @@ from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.utils import six_utils
 
 
-class RegionProvider(six_utils.get_abstract_meta_class()):
+class RegionProvider(ABC):
 
     def __init__(self, service_name):
         self._service_name = service_name.upper()

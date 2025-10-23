@@ -50,7 +50,7 @@ class UpdateUserEmailsResponse(SdkResponse):
         :type name: str
         :param username: **参数解释：** 用户长id。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type username: str
-        :param state: **参数解释：** 用户状态。 **取值范围：** 字符串长度不少于1，不超过1000。
+        :param state: **参数解释：** 用户状态 active 活跃用户 blocked 锁定禁用用户。
         :type state: str
         :param created_at: **参数解释：** 创建时间。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type created_at: str
@@ -161,7 +161,7 @@ class UpdateUserEmailsResponse(SdkResponse):
     def state(self):
         r"""Gets the state of this UpdateUserEmailsResponse.
 
-        **参数解释：** 用户状态。 **取值范围：** 字符串长度不少于1，不超过1000。
+        **参数解释：** 用户状态 active 活跃用户 blocked 锁定禁用用户。
 
         :return: The state of this UpdateUserEmailsResponse.
         :rtype: str
@@ -172,7 +172,7 @@ class UpdateUserEmailsResponse(SdkResponse):
     def state(self, state):
         r"""Sets the state of this UpdateUserEmailsResponse.
 
-        **参数解释：** 用户状态。 **取值范围：** 字符串长度不少于1，不超过1000。
+        **参数解释：** 用户状态 active 活跃用户 blocked 锁定禁用用户。
 
         :param state: The state of this UpdateUserEmailsResponse.
         :type state: str

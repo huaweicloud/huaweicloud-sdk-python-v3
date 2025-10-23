@@ -17,22 +17,26 @@ class ObjectFilter:
     sensitive_list = []
 
     openapi_types = {
+        'name': 'str',
         'operator': 'str',
         'field': 'str',
         'values': 'list[str]'
     }
 
     attribute_map = {
+        'name': 'name',
         'operator': 'operator',
         'field': 'field',
         'values': 'values'
     }
 
-    def __init__(self, operator=None, field=None, values=None):
+    def __init__(self, name=None, operator=None, field=None, values=None):
         r"""ObjectFilter
 
         The model defined in huaweicloud sdk
 
+        :param name: 条件名称
+        :type name: str
         :param operator: 操作符 in/like/startwith/endwith/&#x3D;/!&#x3D;/&gt;/&lt;等
         :type operator: str
         :param field: 字段名称
@@ -43,14 +47,42 @@ class ObjectFilter:
         
         
 
+        self._name = None
         self._operator = None
         self._field = None
         self._values = None
         self.discriminator = None
 
-        self.operator = operator
-        self.field = field
-        self.values = values
+        if name is not None:
+            self.name = name
+        if operator is not None:
+            self.operator = operator
+        if field is not None:
+            self.field = field
+        if values is not None:
+            self.values = values
+
+    @property
+    def name(self):
+        r"""Gets the name of this ObjectFilter.
+
+        条件名称
+
+        :return: The name of this ObjectFilter.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this ObjectFilter.
+
+        条件名称
+
+        :param name: The name of this ObjectFilter.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def operator(self):

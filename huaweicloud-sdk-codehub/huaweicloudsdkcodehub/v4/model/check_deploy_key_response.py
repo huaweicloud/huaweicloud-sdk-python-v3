@@ -30,7 +30,7 @@ class CheckDeployKeyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param exists: **参数解释：** 部署秘钥在上层代码组或项目是否配置。 **取值范围：** - true，上层代码组或项目已配置该密钥。 - false，上层代码组或项目未配置该密钥。
+        :param exists: **参数解释：** 部署密钥在上层代码组或项目是否配置。 **取值范围：** - true，上层代码组或项目已配置该密钥。 - false，上层代码组或项目未配置该密钥。
         :type exists: bool
         """
         
@@ -46,7 +46,7 @@ class CheckDeployKeyResponse(SdkResponse):
     def exists(self):
         r"""Gets the exists of this CheckDeployKeyResponse.
 
-        **参数解释：** 部署秘钥在上层代码组或项目是否配置。 **取值范围：** - true，上层代码组或项目已配置该密钥。 - false，上层代码组或项目未配置该密钥。
+        **参数解释：** 部署密钥在上层代码组或项目是否配置。 **取值范围：** - true，上层代码组或项目已配置该密钥。 - false，上层代码组或项目未配置该密钥。
 
         :return: The exists of this CheckDeployKeyResponse.
         :rtype: bool
@@ -57,7 +57,7 @@ class CheckDeployKeyResponse(SdkResponse):
     def exists(self, exists):
         r"""Sets the exists of this CheckDeployKeyResponse.
 
-        **参数解释：** 部署秘钥在上层代码组或项目是否配置。 **取值范围：** - true，上层代码组或项目已配置该密钥。 - false，上层代码组或项目未配置该密钥。
+        **参数解释：** 部署密钥在上层代码组或项目是否配置。 **取值范围：** - true，上层代码组或项目已配置该密钥。 - false，上层代码组或项目未配置该密钥。
 
         :param exists: The exists of this CheckDeployKeyResponse.
         :type exists: bool

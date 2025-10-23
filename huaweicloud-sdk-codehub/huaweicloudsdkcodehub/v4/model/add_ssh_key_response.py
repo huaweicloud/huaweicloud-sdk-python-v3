@@ -36,9 +36,9 @@ class AddSshKeyResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释：** 秘钥id。
+        :param id: **参数解释：** 密钥id。
         :type id: int
-        :param title: **参数解释：** 秘钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
+        :param title: **参数解释：** 密钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type title: str
         :param key: **参数解释：** 公钥。 **取值范围：** 字符串长度不少于1，不超过1000。
         :type key: str
@@ -67,7 +67,7 @@ class AddSshKeyResponse(SdkResponse):
     def id(self):
         r"""Gets the id of this AddSshKeyResponse.
 
-        **参数解释：** 秘钥id。
+        **参数解释：** 密钥id。
 
         :return: The id of this AddSshKeyResponse.
         :rtype: int
@@ -78,7 +78,7 @@ class AddSshKeyResponse(SdkResponse):
     def id(self, id):
         r"""Sets the id of this AddSshKeyResponse.
 
-        **参数解释：** 秘钥id。
+        **参数解释：** 密钥id。
 
         :param id: The id of this AddSshKeyResponse.
         :type id: int
@@ -89,7 +89,7 @@ class AddSshKeyResponse(SdkResponse):
     def title(self):
         r"""Gets the title of this AddSshKeyResponse.
 
-        **参数解释：** 秘钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
+        **参数解释：** 密钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
 
         :return: The title of this AddSshKeyResponse.
         :rtype: str
@@ -100,7 +100,7 @@ class AddSshKeyResponse(SdkResponse):
     def title(self, title):
         r"""Sets the title of this AddSshKeyResponse.
 
-        **参数解释：** 秘钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
+        **参数解释：** 密钥名称。 **取值范围：** 字符串长度不少于1，不超过1000。
 
         :param title: The title of this AddSshKeyResponse.
         :type title: str

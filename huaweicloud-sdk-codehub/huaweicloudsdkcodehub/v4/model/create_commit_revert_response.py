@@ -41,7 +41,8 @@ class CreateCommitRevertResponse(SdkResponse):
         'committer_avatar_url': 'str',
         'state': 'str',
         'cherry_pick_branch_name': 'str',
-        'revert_branch_name': 'str'
+        'revert_branch_name': 'str',
+        'iid': 'int'
     }
 
     attribute_map = {
@@ -68,10 +69,11 @@ class CreateCommitRevertResponse(SdkResponse):
         'committer_avatar_url': 'committer_avatar_url',
         'state': 'state',
         'cherry_pick_branch_name': 'cherry_pick_branch_name',
-        'revert_branch_name': 'revert_branch_name'
+        'revert_branch_name': 'revert_branch_name',
+        'iid': 'iid'
     }
 
-    def __init__(self, id=None, message=None, parent_ids=None, authored_date=None, author_name=None, author_email=None, committed_date=None, committer_name=None, committer_email=None, open_gpg_verified=None, verification_status=None, gpg_primary_key_id=None, name=None, gpg_nick_name=None, gpg_tenant_name=None, gpg_user_name=None, short_id=None, created_at=None, title=None, author_avatar_url=None, committer_avatar_url=None, state=None, cherry_pick_branch_name=None, revert_branch_name=None):
+    def __init__(self, id=None, message=None, parent_ids=None, authored_date=None, author_name=None, author_email=None, committed_date=None, committer_name=None, committer_email=None, open_gpg_verified=None, verification_status=None, gpg_primary_key_id=None, name=None, gpg_nick_name=None, gpg_tenant_name=None, gpg_user_name=None, short_id=None, created_at=None, title=None, author_avatar_url=None, committer_avatar_url=None, state=None, cherry_pick_branch_name=None, revert_branch_name=None, iid=None):
         r"""CreateCommitRevertResponse
 
         The model defined in huaweicloud sdk
@@ -124,6 +126,8 @@ class CreateCommitRevertResponse(SdkResponse):
         :type cherry_pick_branch_name: str
         :param revert_branch_name: Revert临时分支名
         :type revert_branch_name: str
+        :param iid: 变更请求 iid,仅变更请求返回
+        :type iid: int
         """
         
         super(CreateCommitRevertResponse, self).__init__()
@@ -152,6 +156,7 @@ class CreateCommitRevertResponse(SdkResponse):
         self._state = None
         self._cherry_pick_branch_name = None
         self._revert_branch_name = None
+        self._iid = None
         self.discriminator = None
 
         if id is not None:
@@ -202,6 +207,8 @@ class CreateCommitRevertResponse(SdkResponse):
             self.cherry_pick_branch_name = cherry_pick_branch_name
         if revert_branch_name is not None:
             self.revert_branch_name = revert_branch_name
+        if iid is not None:
+            self.iid = iid
 
     @property
     def id(self):
@@ -730,6 +737,28 @@ class CreateCommitRevertResponse(SdkResponse):
         :type revert_branch_name: str
         """
         self._revert_branch_name = revert_branch_name
+
+    @property
+    def iid(self):
+        r"""Gets the iid of this CreateCommitRevertResponse.
+
+        变更请求 iid,仅变更请求返回
+
+        :return: The iid of this CreateCommitRevertResponse.
+        :rtype: int
+        """
+        return self._iid
+
+    @iid.setter
+    def iid(self, iid):
+        r"""Sets the iid of this CreateCommitRevertResponse.
+
+        变更请求 iid,仅变更请求返回
+
+        :param iid: The iid of this CreateCommitRevertResponse.
+        :type iid: int
+        """
+        self._iid = iid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

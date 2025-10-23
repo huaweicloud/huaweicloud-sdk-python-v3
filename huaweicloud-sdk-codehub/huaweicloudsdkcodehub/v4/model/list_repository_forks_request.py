@@ -18,6 +18,8 @@ class ListRepositoryForksRequest:
 
     openapi_types = {
         'repository_id': 'int',
+        'offset': 'int',
+        'limit': 'int',
         'order_by': 'str',
         'sort': 'str',
         'view': 'str'
@@ -25,18 +27,24 @@ class ListRepositoryForksRequest:
 
     attribute_map = {
         'repository_id': 'repository_id',
+        'offset': 'offset',
+        'limit': 'limit',
         'order_by': 'order_by',
         'sort': 'sort',
         'view': 'view'
     }
 
-    def __init__(self, repository_id=None, order_by=None, sort=None, view=None):
+    def __init__(self, repository_id=None, offset=None, limit=None, order_by=None, sort=None, view=None):
         r"""ListRepositoryForksRequest
 
         The model defined in huaweicloud sdk
 
         :param repository_id: **参数解释：** 仓库的ID，通过[[查询用户所有仓库](https://support.huaweicloud.com/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws)[[查询用户所有仓库](https://support.huaweicloud.com/intl/en-us/api-codeartsrepo/ListUserAllRepositories.html)](tag:hws_hk)[查询项目列表](tag:hcs,hcs_sm)接口查询项目列表获取。 **约束限制：** 不涉及。
         :type repository_id: int
+        :param offset: **参数解释：** 偏移量，从0开始。
+        :type offset: int
+        :param limit: **参数解释：** 返回数量。
+        :type limit: int
         :param order_by: **参数解释：**  排序字段。 **约束限制：**  必须为枚举值中的选项。 **取值范围：**  - created_at，创建时间。 - updated_at，更新时间。 **默认取值：**  created_at。
         :type order_by: str
         :param sort: **参数解释：** 排列顺序。 **约束限制：** 必须为枚举值中的选项。 **取值范围：**  - asc - desc **默认取值：** desc。
@@ -48,12 +56,18 @@ class ListRepositoryForksRequest:
         
 
         self._repository_id = None
+        self._offset = None
+        self._limit = None
         self._order_by = None
         self._sort = None
         self._view = None
         self.discriminator = None
 
         self.repository_id = repository_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         if order_by is not None:
             self.order_by = order_by
         if sort is not None:
@@ -82,6 +96,50 @@ class ListRepositoryForksRequest:
         :type repository_id: int
         """
         self._repository_id = repository_id
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListRepositoryForksRequest.
+
+        **参数解释：** 偏移量，从0开始。
+
+        :return: The offset of this ListRepositoryForksRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListRepositoryForksRequest.
+
+        **参数解释：** 偏移量，从0开始。
+
+        :param offset: The offset of this ListRepositoryForksRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListRepositoryForksRequest.
+
+        **参数解释：** 返回数量。
+
+        :return: The limit of this ListRepositoryForksRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListRepositoryForksRequest.
+
+        **参数解释：** 返回数量。
+
+        :param limit: The limit of this ListRepositoryForksRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     @property
     def order_by(self):

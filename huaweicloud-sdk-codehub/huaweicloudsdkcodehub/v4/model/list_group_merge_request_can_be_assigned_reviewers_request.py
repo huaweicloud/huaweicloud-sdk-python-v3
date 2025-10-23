@@ -17,28 +17,42 @@ class ListGroupMergeRequestCanBeAssignedReviewersRequest:
     sensitive_list = []
 
     openapi_types = {
-        'group_id': 'int'
+        'group_id': 'int',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
-        'group_id': 'group_id'
+        'group_id': 'group_id',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, group_id=None):
+    def __init__(self, group_id=None, offset=None, limit=None):
         r"""ListGroupMergeRequestCanBeAssignedReviewersRequest
 
         The model defined in huaweicloud sdk
 
         :param group_id: **参数解释：** 代码组id，代码组首页，Group ID后的数字Id
         :type group_id: int
+        :param offset: **参数解释：** 偏移量，从0开始。
+        :type offset: int
+        :param limit: **参数解释：** 返回数量。
+        :type limit: int
         """
         
         
 
         self._group_id = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         self.group_id = group_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def group_id(self):
@@ -61,6 +75,50 @@ class ListGroupMergeRequestCanBeAssignedReviewersRequest:
         :type group_id: int
         """
         self._group_id = group_id
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListGroupMergeRequestCanBeAssignedReviewersRequest.
+
+        **参数解释：** 偏移量，从0开始。
+
+        :return: The offset of this ListGroupMergeRequestCanBeAssignedReviewersRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListGroupMergeRequestCanBeAssignedReviewersRequest.
+
+        **参数解释：** 偏移量，从0开始。
+
+        :param offset: The offset of this ListGroupMergeRequestCanBeAssignedReviewersRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListGroupMergeRequestCanBeAssignedReviewersRequest.
+
+        **参数解释：** 返回数量。
+
+        :return: The limit of this ListGroupMergeRequestCanBeAssignedReviewersRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListGroupMergeRequestCanBeAssignedReviewersRequest.
+
+        **参数解释：** 返回数量。
+
+        :param limit: The limit of this ListGroupMergeRequestCanBeAssignedReviewersRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

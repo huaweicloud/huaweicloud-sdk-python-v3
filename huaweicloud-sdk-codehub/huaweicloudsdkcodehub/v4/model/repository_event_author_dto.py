@@ -49,7 +49,7 @@ class RepositoryEventAuthorDto:
         :type name: str
         :param username: **参数解释：** 用户名。
         :type username: str
-        :param state: **参数解释：** 状态。
+        :param state: **参数解释：** 用户状态。 **取值范围：** - active，激活。 - blocked，禁用。
         :type state: str
         :param avatar_url: **参数解释：** 头像地址。
         :type avatar_url: str
@@ -160,7 +160,7 @@ class RepositoryEventAuthorDto:
     def state(self):
         r"""Gets the state of this RepositoryEventAuthorDto.
 
-        **参数解释：** 状态。
+        **参数解释：** 用户状态。 **取值范围：** - active，激活。 - blocked，禁用。
 
         :return: The state of this RepositoryEventAuthorDto.
         :rtype: str
@@ -171,7 +171,7 @@ class RepositoryEventAuthorDto:
     def state(self, state):
         r"""Sets the state of this RepositoryEventAuthorDto.
 
-        **参数解释：** 状态。
+        **参数解释：** 用户状态。 **取值范围：** - active，激活。 - blocked，禁用。
 
         :param state: The state of this RepositoryEventAuthorDto.
         :type state: str

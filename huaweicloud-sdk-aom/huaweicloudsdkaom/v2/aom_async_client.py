@@ -492,6 +492,75 @@ class AomAsyncClient(Client):
 
         return http_info
 
+    def batch_update_alarm_rule_async(self, request):
+        r"""批量更新Prometheus监控告警规则
+
+        该接口用于批量启停Prometheus监控告警规则、批量修改Prometheus监控告警规则的告警行动规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateAlarmRule
+        :type request: :class:`huaweicloudsdkaom.v2.BatchUpdateAlarmRuleRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.BatchUpdateAlarmRuleResponse`
+        """
+        http_info = self._batch_update_alarm_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_alarm_rule_async_invoker(self, request):
+        http_info = self._batch_update_alarm_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_alarm_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/{project_id}/alarm-rules/batch-update",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateAlarmRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def count_events_async(self, request):
         r"""统计事件告警信息
 

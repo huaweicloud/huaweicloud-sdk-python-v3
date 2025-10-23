@@ -21,9 +21,9 @@ class Processors:
         'manufacturer': 'str',
         'model': 'str',
         'total_cores': 'int',
-        'total_enabled_cores': 'str',
+        'total_enabled_cores': 'int',
         'total_threads': 'int',
-        'total_enabled_threads': 'str',
+        'total_enabled_threads': 'int',
         'socket': 'int',
         'max_speed_mhz': 'int',
         'temperature': 'int',
@@ -72,11 +72,11 @@ class Processors:
         :param total_cores: 处理器的总核数
         :type total_cores: int
         :param total_enabled_cores: 启用的核心数
-        :type total_enabled_cores: str
+        :type total_enabled_cores: int
         :param total_threads: 处理器的总线程数
         :type total_threads: int
         :param total_enabled_threads: 启用的总线程
-        :type total_enabled_threads: str
+        :type total_enabled_threads: int
         :param socket: 处理器的插槽号
         :type socket: int
         :param max_speed_mhz: 处理器的最大主频（单位：MHz）
@@ -255,7 +255,7 @@ class Processors:
         启用的核心数
 
         :return: The total_enabled_cores of this Processors.
-        :rtype: str
+        :rtype: int
         """
         return self._total_enabled_cores
 
@@ -266,7 +266,7 @@ class Processors:
         启用的核心数
 
         :param total_enabled_cores: The total_enabled_cores of this Processors.
-        :type total_enabled_cores: str
+        :type total_enabled_cores: int
         """
         self._total_enabled_cores = total_enabled_cores
 
@@ -299,7 +299,7 @@ class Processors:
         启用的总线程
 
         :return: The total_enabled_threads of this Processors.
-        :rtype: str
+        :rtype: int
         """
         return self._total_enabled_threads
 
@@ -310,7 +310,7 @@ class Processors:
         启用的总线程
 
         :param total_enabled_threads: The total_enabled_threads of this Processors.
-        :type total_enabled_threads: str
+        :type total_enabled_threads: int
         """
         self._total_enabled_threads = total_enabled_threads
 

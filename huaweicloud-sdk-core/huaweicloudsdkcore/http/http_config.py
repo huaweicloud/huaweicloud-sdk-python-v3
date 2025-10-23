@@ -19,18 +19,32 @@
  specific language governing permissions and limitations
  under the LICENSE.
 """
+from typing import Union
 
-import six
+from urllib.parse import quote_plus
 
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 
 
 class HttpConfig(object):
-    def __init__(self, proxy_protocol=None, proxy_host=None, proxy_port=None, proxy_user=None, proxy_password=None,
-                 ignore_ssl_verification=False, ssl_ca_cert=None, cert_file=None, key_file=None, timeout=(60, 120),
-                 retry_times=0, pool_connections=10, pool_maxsize=10, allow_redirects=False,
-                 ignore_content_type_for_get_request=False, signing_algorithm=SigningAlgorithm.get_default(),
-                 user_agent=None):
+    def __init__(self,
+                 proxy_protocol: str = None,
+                 proxy_host: str = None,
+                 proxy_port: int = None,
+                 proxy_user: str = None,
+                 proxy_password: str = None,
+                 ignore_ssl_verification: bool = False,
+                 ssl_ca_cert: str = None,
+                 cert_file: str = None,
+                 key_file: str = None,
+                 timeout: Union[float, tuple] = (60, 120),
+                 retry_times: int = 0,
+                 pool_connections: int = 10,
+                 pool_maxsize: int = 10,
+                 allow_redirects: bool = False,
+                 ignore_content_type_for_get_request: bool = False,
+                 signing_algorithm: SigningAlgorithm = SigningAlgorithm.get_default(),
+                 user_agent: str = None):
         """
         :param proxy_protocol(optional) : proxy protocol, http or https
         :type proxy_protocol: str
@@ -39,7 +53,7 @@ class HttpConfig(object):
         :type proxy_host: str
 
         :param proxy_port(optional) : port of proxy server
-        :type proxy_port: str
+        :type proxy_port: int
 
         :param proxy_user(optional) : username used for proxy authentication
         :type proxy_user: str
@@ -119,7 +133,7 @@ class HttpConfig(object):
         return self._proxy_protocol
 
     @proxy_protocol.setter
-    def proxy_protocol(self, value):
+    def proxy_protocol(self, value: str):
         self._proxy_protocol = value
 
     @property
@@ -127,7 +141,7 @@ class HttpConfig(object):
         return self._proxy_host
 
     @proxy_host.setter
-    def proxy_host(self, value):
+    def proxy_host(self, value: str):
         self._proxy_host = value
 
     @property
@@ -135,7 +149,7 @@ class HttpConfig(object):
         return self._proxy_port
 
     @proxy_port.setter
-    def proxy_port(self, value):
+    def proxy_port(self, value: int):
         self._proxy_port = value
 
     @property
@@ -143,7 +157,7 @@ class HttpConfig(object):
         return self._proxy_user
 
     @proxy_user.setter
-    def proxy_user(self, value):
+    def proxy_user(self, value: str):
         self._proxy_user = value
 
     @property
@@ -151,7 +165,7 @@ class HttpConfig(object):
         return self._proxy_password
 
     @proxy_password.setter
-    def proxy_password(self, value):
+    def proxy_password(self, value: str):
         self._proxy_password = value
 
     @property
@@ -159,7 +173,7 @@ class HttpConfig(object):
         return self._ignore_ssl_verification
 
     @ignore_ssl_verification.setter
-    def ignore_ssl_verification(self, value):
+    def ignore_ssl_verification(self, value: bool):
         self._ignore_ssl_verification = value
 
     @property
@@ -167,7 +181,7 @@ class HttpConfig(object):
         return self._allow_redirects
 
     @allow_redirects.setter
-    def allow_redirects(self, value):
+    def allow_redirects(self, value: bool):
         self._allow_redirects = value
 
     @property
@@ -175,7 +189,7 @@ class HttpConfig(object):
         return self._ssl_ca_cert
 
     @ssl_ca_cert.setter
-    def ssl_ca_cert(self, value):
+    def ssl_ca_cert(self, value: str):
         self._ssl_ca_cert = value
 
     @property
@@ -183,7 +197,7 @@ class HttpConfig(object):
         return self._cert_file
 
     @cert_file.setter
-    def cert_file(self, value):
+    def cert_file(self, value: str):
         self._cert_file = value
 
     @property
@@ -191,7 +205,7 @@ class HttpConfig(object):
         return self._key_file
 
     @key_file.setter
-    def key_file(self, value):
+    def key_file(self, value: str):
         self._key_file = value
 
     @property
@@ -199,7 +213,7 @@ class HttpConfig(object):
         return self._timeout
 
     @timeout.setter
-    def timeout(self, value):
+    def timeout(self, value: Union[float, tuple]):
         self._timeout = value
 
     @property
@@ -207,7 +221,7 @@ class HttpConfig(object):
         return self._retry_times
 
     @retry_times.setter
-    def retry_times(self, value):
+    def retry_times(self, value: int):
         self._retry_times = value
 
     @property
@@ -215,7 +229,7 @@ class HttpConfig(object):
         return self._pool_connections
 
     @pool_connections.setter
-    def pool_connections(self, value):
+    def pool_connections(self, value: int):
         self._pool_connections = value
 
     @property
@@ -223,7 +237,7 @@ class HttpConfig(object):
         return self._pool_maxsize
 
     @pool_maxsize.setter
-    def pool_maxsize(self, value):
+    def pool_maxsize(self, value: int):
         self._pool_maxsize = value
 
     @property
@@ -231,7 +245,7 @@ class HttpConfig(object):
         return self._ignore_content_type_for_get_request
 
     @ignore_content_type_for_get_request.setter
-    def ignore_content_type_for_get_request(self, value):
+    def ignore_content_type_for_get_request(self, value: bool):
         self._ignore_content_type_for_get_request = value
 
     @property
@@ -239,7 +253,7 @@ class HttpConfig(object):
         return self._signing_algorithm
 
     @signing_algorithm.setter
-    def signing_algorithm(self, value):
+    def signing_algorithm(self, value: SigningAlgorithm):
         self._signing_algorithm = value
 
     @property
@@ -247,7 +261,7 @@ class HttpConfig(object):
         return self._user_agent
 
     @user_agent.setter
-    def user_agent(self, value):
+    def user_agent(self, value: str):
         self._user_agent = value
 
     @property
@@ -255,21 +269,18 @@ class HttpConfig(object):
         return self.get_proxy()
 
     def get_proxy(self):
-        if self.proxy_host is None:
+        if not self.proxy_host:
             return {}
 
-        if six.PY2:
-            from urllib import quote_plus
-        else:
-            from urllib.parse import quote_plus
+        values = [f"{self.proxy_protocol}://"]
+        if self.proxy_user:
+            values.append(f"{self.proxy_user}:{quote_plus(self.proxy_password)}@")
+        values.append(self.proxy_host)
+        if self.proxy_port:
+            values.append(f":{self.proxy_port}")
 
         return {
-            "https": "%s://%s%s%s" % (
-                self.proxy_protocol,
-                "%s:%s@" % (self.proxy_user, quote_plus(self.proxy_password)) if self.proxy_user is not None else "",
-                self.proxy_host,
-                ":%s" % self.proxy_port if self.proxy_port is not None else ""
-            )
+            "https": "".join(values)
         }
 
     @staticmethod

@@ -18,36 +18,29 @@ class ListProjectProtectedBranchesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[ProjectProtectedBranchApiDto]',
-        'x_total': 'str'
+        'body': 'list[ProjectProtectedBranchApiDto]'
     }
 
     attribute_map = {
-        'body': 'body',
-        'x_total': 'X-Total'
+        'body': 'body'
     }
 
-    def __init__(self, body=None, x_total=None):
+    def __init__(self, body=None):
         r"""ListProjectProtectedBranchesResponse
 
         The model defined in huaweicloud sdk
 
         :param body: 项目下保护分支列表
         :type body: list[:class:`huaweicloudsdkcodehub.v4.ProjectProtectedBranchApiDto`]
-        :param x_total: 
-        :type x_total: str
         """
         
         super(ListProjectProtectedBranchesResponse, self).__init__()
 
         self._body = None
-        self._x_total = None
         self.discriminator = None
 
         if body is not None:
             self.body = body
-        if x_total is not None:
-            self.x_total = x_total
 
     @property
     def body(self):
@@ -70,24 +63,6 @@ class ListProjectProtectedBranchesResponse(SdkResponse):
         :type body: list[:class:`huaweicloudsdkcodehub.v4.ProjectProtectedBranchApiDto`]
         """
         self._body = body
-
-    @property
-    def x_total(self):
-        r"""Gets the x_total of this ListProjectProtectedBranchesResponse.
-
-        :return: The x_total of this ListProjectProtectedBranchesResponse.
-        :rtype: str
-        """
-        return self._x_total
-
-    @x_total.setter
-    def x_total(self, x_total):
-        r"""Sets the x_total of this ListProjectProtectedBranchesResponse.
-
-        :param x_total: The x_total of this ListProjectProtectedBranchesResponse.
-        :type x_total: str
-        """
-        self._x_total = x_total
 
     def to_dict(self):
         """Returns the model properties as a dict"""

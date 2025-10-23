@@ -17,6 +17,7 @@ class ExecuteActionParams:
     sensitive_list = []
 
     openapi_types = {
+        'user_id': 'str',
         'ticket_id': 'str',
         'task_id': 'str',
         'action': 'str',
@@ -24,17 +25,20 @@ class ExecuteActionParams:
     }
 
     attribute_map = {
+        'user_id': 'user_id',
         'ticket_id': 'ticket_id',
         'task_id': 'task_id',
         'action': 'action',
         'params': 'params'
     }
 
-    def __init__(self, ticket_id=None, task_id=None, action=None, params=None):
+    def __init__(self, user_id=None, ticket_id=None, task_id=None, action=None, params=None):
         r"""ExecuteActionParams
 
         The model defined in huaweicloud sdk
 
+        :param user_id: 用户ID
+        :type user_id: str
         :param ticket_id: 执行当前操作的工单单号。
         :type ticket_id: str
         :param task_id: 任务ID
@@ -47,12 +51,15 @@ class ExecuteActionParams:
         
         
 
+        self._user_id = None
         self._ticket_id = None
         self._task_id = None
         self._action = None
         self._params = None
         self.discriminator = None
 
+        if user_id is not None:
+            self.user_id = user_id
         if ticket_id is not None:
             self.ticket_id = ticket_id
         if task_id is not None:
@@ -61,6 +68,28 @@ class ExecuteActionParams:
             self.action = action
         if params is not None:
             self.params = params
+
+    @property
+    def user_id(self):
+        r"""Gets the user_id of this ExecuteActionParams.
+
+        用户ID
+
+        :return: The user_id of this ExecuteActionParams.
+        :rtype: str
+        """
+        return self._user_id
+
+    @user_id.setter
+    def user_id(self, user_id):
+        r"""Sets the user_id of this ExecuteActionParams.
+
+        用户ID
+
+        :param user_id: The user_id of this ExecuteActionParams.
+        :type user_id: str
+        """
+        self._user_id = user_id
 
     @property
     def ticket_id(self):

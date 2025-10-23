@@ -65,7 +65,7 @@ class MRVoteReviewerDto:
         :type name: str
         :param username: **参数解释：** 用户名。
         :type username: str
-        :param state: 用户状态
+        :param state: **参数解释：** 用户状态。 **取值范围：** - active: 可用账户。 - blocked: 被锁定用户。 - error: 未查询到该用户。
         :type state: str
         :param service_license_status: 服务级权限状态 0：停用 1：启用
         :type service_license_status: int
@@ -216,7 +216,7 @@ class MRVoteReviewerDto:
     def state(self):
         r"""Gets the state of this MRVoteReviewerDto.
 
-        用户状态
+        **参数解释：** 用户状态。 **取值范围：** - active: 可用账户。 - blocked: 被锁定用户。 - error: 未查询到该用户。
 
         :return: The state of this MRVoteReviewerDto.
         :rtype: str
@@ -227,7 +227,7 @@ class MRVoteReviewerDto:
     def state(self, state):
         r"""Sets the state of this MRVoteReviewerDto.
 
-        用户状态
+        **参数解释：** 用户状态。 **取值范围：** - active: 可用账户。 - blocked: 被锁定用户。 - error: 未查询到该用户。
 
         :param state: The state of this MRVoteReviewerDto.
         :type state: str

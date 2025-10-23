@@ -23,6 +23,7 @@
 from concurrent.futures import ThreadPoolExecutor
 
 import requests
+from huaweicloudsdkcore.sdk_request import SdkRequest
 from requests import HTTPError, Timeout, TooManyRedirects
 from requests.adapters import HTTPAdapter
 from requests.exceptions import ConnectionError, RetryError
@@ -77,7 +78,7 @@ class HttpClient(object):
     def logger(self):
         return self._logger
 
-    def do_request_sync(self, request):
+    def do_request_sync(self, request: SdkRequest) -> requests.Response:
         invoke = getattr(self._session, request.method.lower())
 
         try:

@@ -28,8 +28,6 @@ class RepositorySimpleDto:
         'archived': 'bool',
         'ssh_url_to_repo': 'str',
         'http_url_to_repo': 'str',
-        'web_url': 'str',
-        'readme_url': 'str',
         'project_id': 'str',
         'project_name': 'str',
         'develop_mode': 'str',
@@ -48,15 +46,13 @@ class RepositorySimpleDto:
         'archived': 'archived',
         'ssh_url_to_repo': 'ssh_url_to_repo',
         'http_url_to_repo': 'http_url_to_repo',
-        'web_url': 'web_url',
-        'readme_url': 'readme_url',
         'project_id': 'project_id',
         'project_name': 'project_name',
         'develop_mode': 'develop_mode',
         'moderation_result': 'moderation_result'
     }
 
-    def __init__(self, id=None, description=None, name=None, name_with_namespace=None, path=None, path_with_namespace=None, created_at=None, updated_at=None, archived=None, ssh_url_to_repo=None, http_url_to_repo=None, web_url=None, readme_url=None, project_id=None, project_name=None, develop_mode=None, moderation_result=None):
+    def __init__(self, id=None, description=None, name=None, name_with_namespace=None, path=None, path_with_namespace=None, created_at=None, updated_at=None, archived=None, ssh_url_to_repo=None, http_url_to_repo=None, project_id=None, project_name=None, develop_mode=None, moderation_result=None):
         r"""RepositorySimpleDto
 
         The model defined in huaweicloud sdk
@@ -83,10 +79,6 @@ class RepositorySimpleDto:
         :type ssh_url_to_repo: str
         :param http_url_to_repo: **参数解释：** 仓库http地址。
         :type http_url_to_repo: str
-        :param web_url: **参数解释：** 仓库页面链接。
-        :type web_url: str
-        :param readme_url: **参数解释：** 仓库readme文件链接。
-        :type readme_url: str
         :param project_id: **参数解释：** 仓库所属项目ID。
         :type project_id: str
         :param project_name: **参数解释：** 仓库所属项目名称。
@@ -110,8 +102,6 @@ class RepositorySimpleDto:
         self._archived = None
         self._ssh_url_to_repo = None
         self._http_url_to_repo = None
-        self._web_url = None
-        self._readme_url = None
         self._project_id = None
         self._project_name = None
         self._develop_mode = None
@@ -140,10 +130,6 @@ class RepositorySimpleDto:
             self.ssh_url_to_repo = ssh_url_to_repo
         if http_url_to_repo is not None:
             self.http_url_to_repo = http_url_to_repo
-        if web_url is not None:
-            self.web_url = web_url
-        if readme_url is not None:
-            self.readme_url = readme_url
         if project_id is not None:
             self.project_id = project_id
         if project_name is not None:
@@ -394,50 +380,6 @@ class RepositorySimpleDto:
         :type http_url_to_repo: str
         """
         self._http_url_to_repo = http_url_to_repo
-
-    @property
-    def web_url(self):
-        r"""Gets the web_url of this RepositorySimpleDto.
-
-        **参数解释：** 仓库页面链接。
-
-        :return: The web_url of this RepositorySimpleDto.
-        :rtype: str
-        """
-        return self._web_url
-
-    @web_url.setter
-    def web_url(self, web_url):
-        r"""Sets the web_url of this RepositorySimpleDto.
-
-        **参数解释：** 仓库页面链接。
-
-        :param web_url: The web_url of this RepositorySimpleDto.
-        :type web_url: str
-        """
-        self._web_url = web_url
-
-    @property
-    def readme_url(self):
-        r"""Gets the readme_url of this RepositorySimpleDto.
-
-        **参数解释：** 仓库readme文件链接。
-
-        :return: The readme_url of this RepositorySimpleDto.
-        :rtype: str
-        """
-        return self._readme_url
-
-    @readme_url.setter
-    def readme_url(self, readme_url):
-        r"""Sets the readme_url of this RepositorySimpleDto.
-
-        **参数解释：** 仓库readme文件链接。
-
-        :param readme_url: The readme_url of this RepositorySimpleDto.
-        :type readme_url: str
-        """
-        self._readme_url = readme_url
 
     @property
     def project_id(self):

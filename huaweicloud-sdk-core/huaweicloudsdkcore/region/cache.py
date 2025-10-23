@@ -27,7 +27,7 @@ from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.utils import six_utils, filepath_utils
 
 
-class EnvRegionCache(six_utils.get_singleton_meta_class()):
+class EnvRegionCache(metaclass=six_utils.SingletonMeta):
     def __init__(self):
         self._value = {}
 
@@ -38,7 +38,7 @@ class EnvRegionCache(six_utils.get_singleton_meta_class()):
         return self._value.get(name)
 
 
-class ProfileRegionCache(six_utils.get_singleton_meta_class()):
+class ProfileRegionCache(metaclass=six_utils.SingletonMeta):
     _REGIONS_FILE_ENV_NAME = "HUAWEICLOUD_SDK_REGIONS_FILE"
     _DEFAULT_REGIONS_FILE_DIR = ".huaweicloud"
     _DEFAULT_REGIONS_FILE = "regions.yaml"

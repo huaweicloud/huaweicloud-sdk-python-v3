@@ -21,6 +21,7 @@ class SrcNodeReq:
         'region': 'str',
         'ak': 'str',
         'sk': 'str',
+        'connection_string': 'str',
         'json_auth_file': 'str',
         'security_token': 'str',
         'app_id': 'str',
@@ -34,6 +35,7 @@ class SrcNodeReq:
         'region': 'region',
         'ak': 'ak',
         'sk': 'sk',
+        'connection_string': 'connection_string',
         'json_auth_file': 'json_auth_file',
         'security_token': 'security_token',
         'app_id': 'app_id',
@@ -42,7 +44,7 @@ class SrcNodeReq:
         'list_file': 'list_file'
     }
 
-    def __init__(self, cloud_type=None, region=None, ak=None, sk=None, json_auth_file=None, security_token=None, app_id=None, bucket=None, object_key=None, list_file=None):
+    def __init__(self, cloud_type=None, region=None, ak=None, sk=None, connection_string=None, json_auth_file=None, security_token=None, app_id=None, bucket=None, object_key=None, list_file=None):
         r"""SrcNodeReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class SrcNodeReq:
         :type ak: str
         :param sk: 源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
         :type sk: str
+        :param connection_string: 连接字符串，用于微软云Blob鉴权
+        :type connection_string: str
         :param json_auth_file: 用于谷歌云Cloud Storage鉴权
         :type json_auth_file: str
         :param security_token: 源端桶的临时Token（最大长度16384个字符）
@@ -75,6 +79,7 @@ class SrcNodeReq:
         self._region = None
         self._ak = None
         self._sk = None
+        self._connection_string = None
         self._json_auth_file = None
         self._security_token = None
         self._app_id = None
@@ -91,6 +96,8 @@ class SrcNodeReq:
             self.ak = ak
         if sk is not None:
             self.sk = sk
+        if connection_string is not None:
+            self.connection_string = connection_string
         if json_auth_file is not None:
             self.json_auth_file = json_auth_file
         if security_token is not None:
@@ -191,6 +198,28 @@ class SrcNodeReq:
         :type sk: str
         """
         self._sk = sk
+
+    @property
+    def connection_string(self):
+        r"""Gets the connection_string of this SrcNodeReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :return: The connection_string of this SrcNodeReq.
+        :rtype: str
+        """
+        return self._connection_string
+
+    @connection_string.setter
+    def connection_string(self, connection_string):
+        r"""Sets the connection_string of this SrcNodeReq.
+
+        连接字符串，用于微软云Blob鉴权
+
+        :param connection_string: The connection_string of this SrcNodeReq.
+        :type connection_string: str
+        """
+        self._connection_string = connection_string
 
     @property
     def json_auth_file(self):

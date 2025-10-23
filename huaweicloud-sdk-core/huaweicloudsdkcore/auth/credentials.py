@@ -22,44 +22,42 @@
 import json
 import os
 import re
-from abc import abstractmethod
+import threading
+from abc import abstractmethod, ABC
+from typing import Callable, Optional, Dict
 
-from huaweicloudsdkcore.auth.cache import AuthCache
-from huaweicloudsdkcore.auth.internal import Iam, MetadataAccessor
+from huaweicloudsdkcore.auth.internal import IamHelper, MetadataAccessor
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException, SdkException
+from huaweicloudsdkcore.http.http_client import HttpClient
+from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 from huaweicloudsdkcore.signer.signer import Signer, SM3Signer, DerivationAKSKSigner, P256SHA256Signer, SM2SM3Signer
-from huaweicloudsdkcore.utils import time_utils, six_utils, string_utils
-from huaweicloudsdkcore.sdk_request import SdkRequest
-from huaweicloudsdkcore.http.http_client import HttpClient
+from huaweicloudsdkcore.utils import time_utils, string_utils
 
 
-class DerivedCredentials(six_utils.get_abstract_meta_class()):
+class DerivedCredentials(ABC):
     _DEFAULT_ENDPOINT_REG = "^[a-z][a-z0-9-]+(\\.[a-z]{2,}-[a-z]+-\\d{1,2})?\\.(my)?(huaweicloud|myhwclouds).(com|cn)"
 
     @abstractmethod
-    def _process_derived_auth_params(self, derived_auth_service_name, region_id):
-        # type: (str, str) -> None
+    def _process_derived_auth_params(self, derived_auth_service_name: str, region_id: str):
         pass
 
     @abstractmethod
-    def with_derived_predicate(self, derived_predicate):
+    def with_derived_predicate(self, derived_predicate: Callable[[SdkRequest], bool]):
         pass
 
     @abstractmethod
-    def _is_derived_auth(self, request):
-        # type: (SdkRequest) -> bool
+    def _is_derived_auth(self, request: SdkRequest) -> bool:
         pass
 
     @classmethod
-    def get_default_derived_predicate(cls):
+    def get_default_derived_predicate(cls) -> Callable[[SdkRequest], bool]:
         return lambda request: False if re.match(cls._DEFAULT_ENDPOINT_REG, request.host) else True
 
 
-class TempCredentials(six_utils.get_abstract_meta_class()):
+class TempCredentials(ABC):
     @abstractmethod
-    def _need_update_security_token_from_metadata(self):
-        # type: () -> bool
+    def _need_update_security_token_from_metadata(self) -> bool:
         pass
 
     @abstractmethod
@@ -67,14 +65,13 @@ class TempCredentials(six_utils.get_abstract_meta_class()):
         pass
 
 
-class FederalCredentials(six_utils.get_abstract_meta_class()):
+class FederalCredentials(ABC):
     @abstractmethod
-    def _need_update_federal_auth_token(self):
-        # type: () -> bool
+    def _need_update_federal_auth_token(self) -> bool:
         pass
 
     @abstractmethod
-    def _update_auth_token_by_id_token(self, http_client):
+    def _update_auth_token_by_id_token(self, http_client: HttpClient):
         pass
 
 
@@ -83,7 +80,10 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
     _X_SECURITY_TOKEN = "X-Security-Token"
     _X_AUTH_TOKEN = "X-Auth-Token"
     _AUTHORIZATION = "Authorization"
-    _DEFAULT_EXPIRATION_THRESHOLD_SECONDS = 2 * 60 * 60 # 2h
+    _DEFAULT_EXPIRATION_THRESHOLD_SECONDS = 2 * 60 * 60  # 2h
+    _DEFAULT_DURATION_SECONDS = 6 * 60 * 60  # 6h
+    _CACHE = {}
+    _LOCK = threading.Lock()
     _SIGNER_CASE = {
         SigningAlgorithm.HMAC_SHA256: Signer,
         SigningAlgorithm.HMAC_SM3: SM3Signer,
@@ -91,27 +91,27 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         SigningAlgorithm.SM2_SM3: SM2SM3Signer
     }
 
-    def __init__(self, ak=None, sk=None):
-        super(Credentials, self).__init__()
+    def __init__(self, ak: str = None, sk: str = None):
+        super().__init__()
         self._ak = ak
         self._sk = sk
-        self._idp_id = None
-        self._id_token_file = None
-        self._iam_endpoint = None
-        self._security_token = None
-        self._derived_auth_service_name = None
-        self._derived_predicate = None
-        self._expired_at = None
-        self._auth_token = None
-        self._region_id = None
-        self._metadata_accessor = None
+        self._idp_id: Optional[str] = None
+        self._id_token_file: Optional[str] = None
+        self._iam_endpoint: Optional[str] = None
+        self._security_token: Optional[str] = None
+        self._derived_auth_service_name: Optional[str] = None
+        self._derived_predicate: Optional[Callable[[SdkRequest], bool]] = None
+        self._expired_at: Optional[float] = None
+        self._auth_token: Optional[str] = None
+        self._region_id: Optional[str] = None
+        self._metadata_accessor: Optional[MetadataAccessor] = None
 
     @property
     def ak(self):
         return self._ak
 
     @ak.setter
-    def ak(self, value):
+    def ak(self, value: str):
         if not value:
             raise ValueError("ak cannot be None or empty")
         self._ak = value
@@ -121,7 +121,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         return self._sk
 
     @sk.setter
-    def sk(self, value):
+    def sk(self, value: str):
         if not value:
             raise ValueError("sk cannot be None or empty")
         self._sk = value
@@ -131,7 +131,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         return self._idp_id
 
     @idp_id.setter
-    def idp_id(self, value):
+    def idp_id(self, value: str):
         self._idp_id = value
 
     @property
@@ -139,7 +139,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         return self._id_token_file
 
     @id_token_file.setter
-    def id_token_file(self, value):
+    def id_token_file(self, value: str):
         self._id_token_file = value
 
     @property
@@ -147,7 +147,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         return self._iam_endpoint
 
     @iam_endpoint.setter
-    def iam_endpoint(self, value):
+    def iam_endpoint(self, value: str):
         self._iam_endpoint = value
 
     @property
@@ -155,7 +155,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         return self._security_token
 
     @security_token.setter
-    def security_token(self, value):
+    def security_token(self, value: str):
         self._security_token = value
 
     @property
@@ -163,42 +163,40 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         return self._metadata_accessor
 
     @metadata_accessor.setter
-    def metadata_accessor(self, value):
+    def metadata_accessor(self, value: MetadataAccessor):
         self._metadata_accessor = value
 
-    def with_ak(self, ak):
+    def with_ak(self, ak: str):
         self.ak = ak
         return self
 
-    def with_sk(self, sk):
+    def with_sk(self, sk: str):
         self.sk = sk
         return self
 
-    def with_idp_id(self, idp_id):
+    def with_idp_id(self, idp_id: str):
         self.idp_id = idp_id
         return self
 
-    def with_id_token_file(self, id_token_file):
+    def with_id_token_file(self, id_token_file: str):
         self.id_token_file = id_token_file
         return self
 
-    def with_iam_endpoint(self, endpoint):
+    def with_iam_endpoint(self, endpoint: str):
         self.iam_endpoint = endpoint
         return self
 
-    def with_security_token(self, token):
+    def with_security_token(self, token: str):
         self.security_token = token
         return self
 
-    def get_update_path_params(self):
-        # type: () -> dict
+    def get_update_path_params(self) -> dict:
         pass
 
-    def process_auth_params(self, http_client, region_id):
-        # type: (HttpClient, str) -> Credentials
+    def process_auth_params(self, http_client: HttpClient, region_id: str):
         pass
 
-    def process_auth_request(self, request, http_client):
+    def process_auth_request(self, request: SdkRequest, http_client: HttpClient):
         if self._need_update_federal_auth_token():
             self._update_auth_token_by_id_token(http_client)
         elif self._need_update_security_token_from_metadata():
@@ -206,8 +204,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
 
         return http_client.executor.submit(self.sign_request, request)
 
-    def sign_request(self, request):
-        # type: (SdkRequest) -> SdkRequest
+    def sign_request(self, request: SdkRequest) -> SdkRequest:
         if self._auth_token:
             request.header_params[self._X_AUTH_TOKEN] = self._auth_token
             Signer.process_request_uri(request)
@@ -228,20 +225,20 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
             raise SdkException("unsupported signing algorithm: " + str(request.signing_algorithm))
         return signer_cls(self).sign(request)
 
-    def _is_derived_auth(self, request):
+    def _is_derived_auth(self, request: SdkRequest) -> bool:
         if not self._derived_predicate:
             return False
 
         return self._derived_predicate(request)
 
-    def with_derived_predicate(self, derived_predicate):
+    def with_derived_predicate(self, derived_predicate: Callable[[SdkRequest], bool]):
         self._derived_predicate = derived_predicate
         return self
 
-    def _process_derived_auth_params(self, derived_auth_service_name, region_id):
+    def _process_derived_auth_params(self, derived_auth_service_name: str, region_id: str):
         pass
 
-    def _need_update_security_token_from_metadata(self):
+    def _need_update_security_token_from_metadata(self) -> bool:
         if not self._expired_at or not self.security_token:
             return False
         return self._expired_at - time_utils.get_timestamp_utc() < self._DEFAULT_EXPIRATION_THRESHOLD_SECONDS
@@ -256,17 +253,28 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         self.security_token = credential.get("securitytoken")
         self._expired_at = time_utils.get_timestamp_from_str(credential.get("expires_at"), self._TIME_FORMAT)
 
-    def _need_update_federal_auth_token(self):
+    def _need_update_federal_auth_token(self) -> bool:
         if not self.idp_id or not self.id_token_file:
             return False
-        if not self._auth_token or not self._expired_at:
+        if not self.security_token or not self._expired_at:
             return True
         return self._expired_at - time_utils.get_timestamp_utc() < self._DEFAULT_EXPIRATION_THRESHOLD_SECONDS
 
-    def _update_auth_token_by_id_token(self, http_client):
-        pass
+    def _update_auth_token_by_id_token(self, http_client: HttpClient):
+        iam_endpoint = self.iam_endpoint if self.iam_endpoint else IamHelper.get_iam_endpoint()
+        request = IamHelper.get_create_unscoped_token_by_id_token_request(http_client.config, iam_endpoint, self.idp_id,
+                                                                          self._get_id_token())
+        token = IamHelper.create_unscoped_token_by_id_token(http_client, request)
+        request = IamHelper.get_create_temporary_access_key_by_token_request(http_client.config, iam_endpoint, token,
+                                                                             self._DEFAULT_DURATION_SECONDS)
+        credential = IamHelper.create_temporary_access_key_by_token(http_client, request)
 
-    def _get_id_token(self):
+        self._expired_at = time_utils.get_timestamp_from_str(credential.get("expires_at"), self._TIME_FORMAT)
+        self.ak = credential.get("access")
+        self.sk = credential.get("secret")
+        self.security_token = credential.get("securitytoken")
+
+    def _get_id_token(self) -> str:
         if not os.path.exists(self.id_token_file):
             raise ApiValueError("id_token_file '{}' does not exist".format(self.id_token_file))
 
@@ -274,61 +282,67 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
             id_token = f.read()
         if not id_token:
             raise ApiValueError("id_token is empty in id_token_file '{}'".format(self.id_token_file))
-        return id_token
+        return id_token.strip()
+
+    def _check_required_idp_params(self):
+        if self.idp_id or self.id_token_file:
+            if not self.idp_id:
+                raise ApiValueError("idp_id is required when using idp_id & id_token_file")
+            elif not self.id_token_file:
+                raise ApiValueError("id_token_file is required when using idp_id & id_token_file")
 
 
 class BasicCredentials(Credentials):
     _X_PROJECT_ID = "X-Project-Id"
 
-    def __init__(self, ak=None, sk=None, project_id=None):
+    def __init__(self, ak: str = None, sk: str = None, project_id: str = None):
         """For regional services' authentication
 
         :param ak: The access key ID for your account
         :param sk: The secret access key for your account
         :param project_id: The ID of your project depending on your region which you want to operate
         """
-        super(BasicCredentials, self).__init__(ak, sk)
+        super().__init__(ak, sk)
         self._project_id = project_id
 
     @property
-    def project_id(self):
+    def project_id(self) -> Optional[str]:
         return self._project_id
 
     @project_id.setter
-    def project_id(self, value):
+    def project_id(self, value: str):
         self._project_id = value
 
-    def with_project_id(self, project_id):
+    def with_project_id(self, project_id: str):
         self.project_id = project_id
         return self
 
-    def get_update_path_params(self):
+    def get_update_path_params(self) -> Dict[str, object]:
         path_params = {}
         if self.project_id:
             path_params["project_id"] = self.project_id
         return path_params
 
-    def _process_derived_auth_params(self, derived_auth_service_name, region_id):
+    def _process_derived_auth_params(self, derived_auth_service_name: str, region_id: str):
         if not self._derived_auth_service_name:
             self._derived_auth_service_name = derived_auth_service_name
 
         if not self._region_id:
             self._region_id = region_id
 
-    def process_auth_params(self, http_client, region_id):
-        if self.idp_id or self.id_token_file:
-            if not self.idp_id:
-                raise ApiValueError("idp_id is required when using idp_id & id_token_file")
-            elif not self.id_token_file:
-                raise ApiValueError("id_token_file is required when using idp_id & id_token_file")
-            if not self.project_id:
-                raise ApiValueError("project_id is required when using idp_id & id_token_file")
+    def process_auth_params(self, http_client: HttpClient, region_id: str):
+        self._check_required_idp_params()
 
         if self.project_id:
             return self
 
-        ak_with_name = self.ak + region_id
-        project_id = AuthCache.get_auth(ak_with_name)
+        cache_name = None
+        if self.ak:
+            cache_name = self.ak + region_id
+        elif self.idp_id:
+            cache_name = self.idp_id + region_id
+
+        project_id = self._CACHE.get(cache_name)
         if project_id:
             self.project_id = project_id
             return self
@@ -337,8 +351,8 @@ class BasicCredentials(Credentials):
         self._derived_predicate = None
 
         if self.iam_endpoint is None:
-            self.iam_endpoint = Iam.get_iam_endpoint(region_id)
-        req = Iam.get_keystone_list_projects_request(http_client.config, self.iam_endpoint, region_id=region_id)
+            self.iam_endpoint = IamHelper.get_iam_endpoint(region_id)
+        req = IamHelper.get_keystone_list_projects_request(http_client.config, self.iam_endpoint, region_id=region_id)
         try:
             http_client.logger.info("project id of region '%s' not found in BasicCredentials, "
                                     "trying to get project id from IAM service automatically: %s",
@@ -360,71 +374,65 @@ class BasicCredentials(Credentials):
             self.project_id = projects[0]["id"]
             http_client.logger.info("success to get project id of region '%s' automatically: %s",
                                     region_id, string_utils.mask(self.project_id))
-            AuthCache.put_auth(ak_with_name, self.project_id)
+            if cache_name:
+                with self._LOCK:
+                    self._CACHE[cache_name] = self.project_id
         except ServiceResponseException as e:
             raise SdkException("Failed to get project id of region '%s' automatically, %s" % (region_id, e))
         self._derived_predicate = derived_predicate
 
         return self
 
-    def sign_request(self, request):
+    def sign_request(self, request: SdkRequest) -> SdkRequest:
         if self.project_id:
             request.header_params[self._X_PROJECT_ID] = self.project_id
-        return super(BasicCredentials, self).sign_request(request)
-
-    def _update_auth_token_by_id_token(self, http_client):
-        iam_endpoint = self.iam_endpoint if self.iam_endpoint else Iam.get_iam_endpoint()
-        request = Iam.get_create_token_by_id_token_request(http_client.config, iam_endpoint, self.idp_id,
-                                                           self._get_id_token(), project_id=self.project_id)
-        token, expired_str = Iam.create_token_by_id_token(http_client, request)
-        self._expired_at = time_utils.get_timestamp_from_str(expired_str, self._TIME_FORMAT)
-        self._auth_token = token
+        return super().sign_request(request)
 
 
 class GlobalCredentials(Credentials):
     _X_DOMAIN_ID = "X-Domain-Id"
 
-    def __init__(self, ak=None, sk=None, domain_id=None):
+    def __init__(self, ak: str = None, sk: str = None, domain_id: str = None):
         """For global services' authentication
 
         :param ak: The access key ID for your account
         :param sk: The secret access key for your account
         :param domain_id: The account ID of Huawei Cloud
         """
-        super(GlobalCredentials, self).__init__(ak, sk)
+        super().__init__(ak, sk)
         self._domain_id = domain_id
 
     @property
-    def domain_id(self):
+    def domain_id(self) -> Optional[str]:
         return self._domain_id
 
     @domain_id.setter
-    def domain_id(self, value):
+    def domain_id(self, value: str):
         self._domain_id = value
 
-    def with_domain_id(self, domain_id):
+    def with_domain_id(self, domain_id: str):
         self.domain_id = domain_id
         return self
 
-    def get_update_path_params(self):
+    def get_update_path_params(self) -> Dict[str, object]:
         path_params = {}
         if self.domain_id:
             path_params["domain_id"] = self.domain_id
         return path_params
 
-    def process_auth_params(self, http_client, region_id):
-        if self.idp_id or self.id_token_file:
-            if not self.idp_id:
-                raise ApiValueError("idp_id is required when using idp_id & id_token_file")
-            elif not self.id_token_file:
-                raise ApiValueError("id_token_file is required when using idp_id & id_token_file")
-            if not self.domain_id:
-                raise ApiValueError("domain_id is required when using idp_id & id_token_file")
+    def process_auth_params(self, http_client: HttpClient, region_id: str):
+        self._check_required_idp_params()
 
         if self.domain_id:
             return self
 
-        domain_id = AuthCache.get_auth(self.ak)
+        cache_name = None
+        if self.ak:
+            cache_name = self.ak
+        elif self.idp_id:
+            cache_name = self.idp_id
+
+        domain_id = self._CACHE.get(cache_name)
         if domain_id:
             self.domain_id = domain_id
             return self
@@ -433,8 +441,8 @@ class GlobalCredentials(Credentials):
         self._derived_predicate = None
 
         if self.iam_endpoint is None:
-            self.iam_endpoint = Iam.get_iam_endpoint(region_id)
-        req = Iam.get_keystone_list_auth_domains_request(http_client.config, self.iam_endpoint)
+            self.iam_endpoint = IamHelper.get_iam_endpoint(region_id)
+        req = IamHelper.get_keystone_list_auth_domains_request(http_client.config, self.iam_endpoint)
         try:
             http_client.logger.info('domain id not found in GlobalCredentials, '
                                     'trying to get domain id from IAM service automatically: %s', self.iam_endpoint)
@@ -449,7 +457,10 @@ class GlobalCredentials(Credentials):
 
             self.domain_id = domains[0]["id"]
             http_client.logger.info('success to get domain id automatically: %s', string_utils.mask(self.domain_id))
-            AuthCache.put_auth(self.ak, self.domain_id)
+
+            if cache_name:
+                with self._LOCK:
+                    self._CACHE[cache_name] = self.domain_id
         except ServiceResponseException as e:
             raise SdkException("Failed to get domain id automatically, " + str(e))
 
@@ -457,22 +468,14 @@ class GlobalCredentials(Credentials):
 
         return self
 
-    def sign_request(self, request):
+    def sign_request(self, request: SdkRequest) -> SdkRequest:
         if self.domain_id:
             request.header_params[self._X_DOMAIN_ID] = self.domain_id
-        return super(GlobalCredentials, self).sign_request(request)
+        return super().sign_request(request)
 
-    def _process_derived_auth_params(self, derived_auth_service_name, region_id):
+    def _process_derived_auth_params(self, derived_auth_service_name: str, region_id: str):
         if not self._derived_auth_service_name:
             self._derived_auth_service_name = derived_auth_service_name
 
         if not self._region_id:
             self._region_id = "globe"
-
-    def _update_auth_token_by_id_token(self, http_client):
-        iam_endpoint = self.iam_endpoint if self.iam_endpoint else Iam.get_iam_endpoint()
-        request = Iam.get_create_token_by_id_token_request(http_client.config, iam_endpoint, self.idp_id,
-                                                           self._get_id_token(), domain_id=self.domain_id)
-        token, expired_str = Iam.create_token_by_id_token(http_client, request)
-        self._expired_at = time_utils.get_timestamp_from_str(expired_str, self._TIME_FORMAT)
-        self._auth_token = token

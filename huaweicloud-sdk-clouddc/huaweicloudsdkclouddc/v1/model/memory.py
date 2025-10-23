@@ -26,10 +26,10 @@ class Memory:
         'serial_number': 'str',
         'health': 'str',
         'state': 'str',
-        'rank_count': 'str',
-        'data_width_bits': 'str',
+        'rank_count': 'int',
+        'data_width_bits': 'int',
         'part_number': 'str',
-        'min_voltage_millivolt': 'str',
+        'min_voltage_millivolt': 'int',
         'bom_number': 'str',
         'type_detail': 'str',
         'technology': 'str',
@@ -80,13 +80,13 @@ class Memory:
         :param state: 启用状态
         :type state: str
         :param rank_count: Rank数量
-        :type rank_count: str
+        :type rank_count: int
         :param data_width_bits: 数据带宽
-        :type data_width_bits: str
+        :type data_width_bits: int
         :param part_number: 部件编号
         :type part_number: str
         :param min_voltage_millivolt: 最小电压
-        :type min_voltage_millivolt: str
+        :type min_voltage_millivolt: int
         :param bom_number: Bom编码
         :type bom_number: str
         :param type_detail: 类型详细信息
@@ -358,7 +358,7 @@ class Memory:
         Rank数量
 
         :return: The rank_count of this Memory.
-        :rtype: str
+        :rtype: int
         """
         return self._rank_count
 
@@ -369,7 +369,7 @@ class Memory:
         Rank数量
 
         :param rank_count: The rank_count of this Memory.
-        :type rank_count: str
+        :type rank_count: int
         """
         self._rank_count = rank_count
 
@@ -380,7 +380,7 @@ class Memory:
         数据带宽
 
         :return: The data_width_bits of this Memory.
-        :rtype: str
+        :rtype: int
         """
         return self._data_width_bits
 
@@ -391,7 +391,7 @@ class Memory:
         数据带宽
 
         :param data_width_bits: The data_width_bits of this Memory.
-        :type data_width_bits: str
+        :type data_width_bits: int
         """
         self._data_width_bits = data_width_bits
 
@@ -424,7 +424,7 @@ class Memory:
         最小电压
 
         :return: The min_voltage_millivolt of this Memory.
-        :rtype: str
+        :rtype: int
         """
         return self._min_voltage_millivolt
 
@@ -435,7 +435,7 @@ class Memory:
         最小电压
 
         :param min_voltage_millivolt: The min_voltage_millivolt of this Memory.
-        :type min_voltage_millivolt: str
+        :type min_voltage_millivolt: int
         """
         self._min_voltage_millivolt = min_voltage_millivolt
 

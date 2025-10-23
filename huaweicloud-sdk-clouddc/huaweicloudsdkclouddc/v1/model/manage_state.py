@@ -9,11 +9,11 @@ class ManageState:
     """
     allowed enum values
     """
-    DELIVERING = "delivering"
-    RECEIVED = "received"
     ONBOARD = "onboard"
     READY = "ready"
+    IN_USE = "in-use"
     FROZEN = "frozen"
+    OFFBOARDING = "offboarding"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

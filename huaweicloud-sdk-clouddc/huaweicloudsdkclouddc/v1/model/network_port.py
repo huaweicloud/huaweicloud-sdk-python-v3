@@ -17,7 +17,7 @@ class NetworkPort:
     sensitive_list = []
 
     openapi_types = {
-        'physical_port_number': 'int',
+        'physical_port_number': 'str',
         'link_status': 'str',
         'associated_network_addresses': 'str',
         'active_link_technology': 'str',
@@ -46,7 +46,7 @@ class NetworkPort:
         The model defined in huaweicloud sdk
 
         :param physical_port_number: 网络端口的物理端口号
-        :type physical_port_number: int
+        :type physical_port_number: str
         :param link_status: 网络端口的物理连接状态
         :type link_status: str
         :param associated_network_addresses: 网络端口的网络地址
@@ -104,7 +104,7 @@ class NetworkPort:
         网络端口的物理端口号
 
         :return: The physical_port_number of this NetworkPort.
-        :rtype: int
+        :rtype: str
         """
         return self._physical_port_number
 
@@ -115,7 +115,7 @@ class NetworkPort:
         网络端口的物理端口号
 
         :param physical_port_number: The physical_port_number of this NetworkPort.
-        :type physical_port_number: int
+        :type physical_port_number: str
         """
         self._physical_port_number = physical_port_number
 

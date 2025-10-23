@@ -37,7 +37,7 @@ class UpdateRepoWebHookSubscriptionDto:
 
         :param url: **参数解释：** webhook的url (需要base64编码)。
         :type url: str
-        :param token: **参数解释：** 秘钥。
+        :param token: **参数解释：** 密钥。
         :type token: str
         :param mention_users: **参数解释：** userid列表，提醒群中的指定成员（@某个成员），最长1000，每个最长100，“;”分隔符。
         :type mention_users: str
@@ -88,7 +88,7 @@ class UpdateRepoWebHookSubscriptionDto:
     def token(self):
         r"""Gets the token of this UpdateRepoWebHookSubscriptionDto.
 
-        **参数解释：** 秘钥。
+        **参数解释：** 密钥。
 
         :return: The token of this UpdateRepoWebHookSubscriptionDto.
         :rtype: str
@@ -99,7 +99,7 @@ class UpdateRepoWebHookSubscriptionDto:
     def token(self, token):
         r"""Sets the token of this UpdateRepoWebHookSubscriptionDto.
 
-        **参数解释：** 秘钥。
+        **参数解释：** 密钥。
 
         :param token: The token of this UpdateRepoWebHookSubscriptionDto.
         :type token: str

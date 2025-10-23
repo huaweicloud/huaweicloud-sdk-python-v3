@@ -19,10 +19,10 @@ class Fan:
     openapi_types = {
         'name': 'str',
         'model': 'str',
-        'reading': 'str',
+        'reading': 'int',
         'reading_units': 'str',
         'part_number': 'str',
-        'speed_ratio': 'str',
+        'speed_ratio': 'int',
         'status': 'Status'
     }
 
@@ -46,13 +46,13 @@ class Fan:
         :param model: 型号
         :type model: str
         :param reading: 转速
-        :type reading: str
+        :type reading: int
         :param reading_units: 转速单位
         :type reading_units: str
         :param part_number: 固件编码
         :type part_number: str
         :param speed_ratio: 速率比
-        :type speed_ratio: str
+        :type speed_ratio: int
         :param status: 
         :type status: :class:`huaweicloudsdkclouddc.v1.Status`
         """
@@ -134,7 +134,7 @@ class Fan:
         转速
 
         :return: The reading of this Fan.
-        :rtype: str
+        :rtype: int
         """
         return self._reading
 
@@ -145,7 +145,7 @@ class Fan:
         转速
 
         :param reading: The reading of this Fan.
-        :type reading: str
+        :type reading: int
         """
         self._reading = reading
 
@@ -200,7 +200,7 @@ class Fan:
         速率比
 
         :return: The speed_ratio of this Fan.
-        :rtype: str
+        :rtype: int
         """
         return self._speed_ratio
 
@@ -211,7 +211,7 @@ class Fan:
         速率比
 
         :param speed_ratio: The speed_ratio of this Fan.
-        :type speed_ratio: str
+        :type speed_ratio: int
         """
         self._speed_ratio = speed_ratio
 

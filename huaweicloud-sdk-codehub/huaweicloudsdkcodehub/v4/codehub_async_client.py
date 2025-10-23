@@ -33,353 +33,6 @@ class CodeHubAsyncClient(Client):
 
         return client_builder
 
-    def create_branch_async(self, request):
-        r"""创建分支
-
-        创建分支
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateBranch
-        :type request: :class:`huaweicloudsdkcodehub.v4.CreateBranchRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateBranchResponse`
-        """
-        http_info = self._create_branch_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_branch_async_invoker(self, request):
-        http_info = self._create_branch_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_branch_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v4/repositories/{repository_id}/repository/branches",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateBranchResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_branch_async(self, request):
-        r"""删除分支
-
-        删除分支
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteBranch
-        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteBranchRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteBranchResponse`
-        """
-        http_info = self._delete_branch_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_branch_async_invoker(self, request):
-        http_info = self._delete_branch_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_branch_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v4/repositories/{repository_id}/repository/branch",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteBranchResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'branch_name' in local_var_params:
-            query_params.append(('branch_name', local_var_params['branch_name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_branches_async(self, request):
-        r"""获取分支列表
-
-        获取分支列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListBranches
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListBranchesRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListBranchesResponse`
-        """
-        http_info = self._list_branches_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_branches_async_invoker(self, request):
-        http_info = self._list_branches_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_branches_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/repository/branches",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListBranchesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'branch_type' in local_var_params:
-            query_params.append(('branch_type', local_var_params['branch_type']))
-        if 'creator' in local_var_params:
-            query_params.append(('creator', local_var_params['creator']))
-        if 'sort' in local_var_params:
-            query_params.append(('sort', local_var_params['sort']))
-        if 'query_view' in local_var_params:
-            query_params.append(('query_view', local_var_params['query_view']))
-        if 'view' in local_var_params:
-            query_params.append(('view', local_var_params['view']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Total", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_branch_async(self, request):
-        r"""获取分支详情
-
-        获取分支详情
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowBranch
-        :type request: :class:`huaweicloudsdkcodehub.v4.ShowBranchRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowBranchResponse`
-        """
-        http_info = self._show_branch_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_branch_async_invoker(self, request):
-        http_info = self._show_branch_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_branch_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/repository/branch",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowBranchResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'branch_name' in local_var_params:
-            query_params.append(('branch_name', local_var_params['branch_name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Total", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_branch_name_async(self, request):
-        r"""分支重命名
-
-        分支重命名。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateBranchName
-        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateBranchNameRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateBranchNameResponse`
-        """
-        http_info = self._update_branch_name_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_branch_name_async_invoker(self, request):
-        http_info = self._update_branch_name_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_branch_name_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v4/repositories/{repository_id}/repository/branch",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateBranchNameResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_commit_async(self, request):
         r"""创建提交信息
 
@@ -560,6 +213,91 @@ class CodeHubAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_commits_async(self, request):
+        r"""查看提交列表
+
+        查看提交列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCommits
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListCommitsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListCommitsResponse`
+        """
+        http_info = self._list_commits_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_commits_async_invoker(self, request):
+        http_info = self._list_commits_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_commits_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/commit-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCommitsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'ref_name' in local_var_params:
+            query_params.append(('ref_name', local_var_params['ref_name']))
+        if 'since' in local_var_params:
+            query_params.append(('since', local_var_params['since']))
+        if 'until' in local_var_params:
+            query_params.append(('until', local_var_params['until']))
+        if 'path' in local_var_params:
+            query_params.append(('path', local_var_params['path']))
+        if 'message' in local_var_params:
+            query_params.append(('message', local_var_params['message']))
+        if 'author' in local_var_params:
+            query_params.append(('author', local_var_params['author']))
+        if 'order_by_date' in local_var_params:
+            query_params.append(('order_by_date', local_var_params['order_by_date']))
+        if 'follow' in local_var_params:
+            query_params.append(('follow', local_var_params['follow']))
 
         header_params = {}
 
@@ -1080,6 +818,150 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def delete_merge_request_discussion_async(self, request):
+        r"""删除合并请求检视意见
+
+        删除合并请求检视意见
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteMergeRequestDiscussion
+        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteMergeRequestDiscussionRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteMergeRequestDiscussionResponse`
+        """
+        http_info = self._delete_merge_request_discussion_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_merge_request_discussion_async_invoker(self, request):
+        http_info = self._delete_merge_request_discussion_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_merge_request_discussion_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/repositories/{repository_id}/merge-requests/{merge_request_iid}/discussions/{discussion_id}/notes/{note_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMergeRequestDiscussionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+        if 'discussion_id' in local_var_params:
+            path_params['discussion_id'] = local_var_params['discussion_id']
+        if 'note_id' in local_var_params:
+            path_params['note_id'] = local_var_params['note_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_commit_discussions_async(self, request):
+        r"""获取代码页单个提交下检视意见列表
+
+        获取代码页单个提交下检视意见列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCommitDiscussions
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListCommitDiscussionsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListCommitDiscussionsResponse`
+        """
+        http_info = self._list_commit_discussions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_commit_discussions_async_invoker(self, request):
+        http_info = self._list_commit_discussions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_commit_discussions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/commits/{sha}/discussions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCommitDiscussionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'sha' in local_var_params:
+            path_params['sha'] = local_var_params['sha']
+
+        query_params = []
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_default_review_categories_async(self, request):
         r"""获取默认的检视意见分类
 
@@ -1189,6 +1071,77 @@ class CodeHubAsyncClient(Client):
             query_params.append(('author_id', local_var_params['author_id']))
         if 'sort' in local_var_params:
             query_params.append(('sort', local_var_params['sort']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_merge_request_system_notes_async(self, request):
+        r"""获取合并请求动态列表
+
+        获取合并请求动态列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMergeRequestSystemNotes
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListMergeRequestSystemNotesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListMergeRequestSystemNotesResponse`
+        """
+        http_info = self._list_merge_request_system_notes_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_merge_request_system_notes_async_invoker(self, request):
+        http_info = self._list_merge_request_system_notes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_merge_request_system_notes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/merge-requests/{merge_request_iid}/system-notes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMergeRequestSystemNotesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+
+        query_params = []
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -2060,6 +2013,77 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def update_merge_request_discussion_info_async(self, request):
+        r"""更新合并请求检视意见中除评论内容以外的信息
+
+        更新合并请求检视意见中除评论内容以外的信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateMergeRequestDiscussionInfo
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateMergeRequestDiscussionInfoRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateMergeRequestDiscussionInfoResponse`
+        """
+        http_info = self._update_merge_request_discussion_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_merge_request_discussion_info_async_invoker(self, request):
+        http_info = self._update_merge_request_discussion_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_merge_request_discussion_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/repositories/{repository_id}/merge-requests/{merge_request_iid}/discussions/{discussion_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMergeRequestDiscussionInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+        if 'discussion_id' in local_var_params:
+            path_params['discussion_id'] = local_var_params['discussion_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_note_required_attributes_async(self, request):
         r"""创建/更新仓库检视意见必填项
 
@@ -2683,6 +2707,219 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def list_logs_tree_async(self, request):
+        r"""查看文件树
+
+        查看文件树
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLogsTree
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListLogsTreeRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListLogsTreeResponse`
+        """
+        http_info = self._list_logs_tree_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_logs_tree_async_invoker(self, request):
+        http_info = self._list_logs_tree_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_logs_tree_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/logs-tree",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogsTreeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'ref' in local_var_params:
+            query_params.append(('ref', local_var_params['ref']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_trees_async(self, request):
+        r"""查看分支文件列表
+
+        查看分支文件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTrees
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListTreesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListTreesResponse`
+        """
+        http_info = self._list_trees_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_trees_async_invoker(self, request):
+        http_info = self._list_trees_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_trees_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/trees",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTreesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'ref' in local_var_params:
+            query_params.append(('ref', local_var_params['ref']))
+        if 'path' in local_var_params:
+            query_params.append(('path', local_var_params['path']))
+        if 'recursive' in local_var_params:
+            query_params.append(('recursive', local_var_params['recursive']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def rename_file_async(self, request):
+        r"""文件重命名
+
+        文件重命名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RenameFile
+        :type request: :class:`huaweicloudsdkcodehub.v4.RenameFileRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.RenameFileResponse`
+        """
+        http_info = self._rename_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def rename_file_async_invoker(self, request):
+        http_info = self._rename_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _rename_file_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/repositories/{repository_id}/repository/rename-file",
+            "request_type": request.__class__.__name__,
+            "response_type": "RenameFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_file_async(self, request):
         r"""查看文件属性与内容
 
@@ -2794,6 +3031,75 @@ class CodeHubAsyncClient(Client):
             query_params.append(('file_path', local_var_params['file_path']))
         if 'sha' in local_var_params:
             query_params.append(('sha', local_var_params['sha']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_file_raw_async(self, request):
+        r"""获取仓库单个文件内容
+
+        获取仓库单个文件内容
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowFileRaw
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowFileRawRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowFileRawResponse`
+        """
+        http_info = self._show_file_raw_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_file_raw_async_invoker(self, request):
+        http_info = self._show_file_raw_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_file_raw_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/files/raw",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFileRawResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'file_path' in local_var_params:
+            query_params.append(('file_path', local_var_params['file_path']))
+        if 'ref' in local_var_params:
+            query_params.append(('ref', local_var_params['ref']))
 
         header_params = {}
 
@@ -2934,278 +3240,6 @@ class CodeHubAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def batch_delete_repository_file_push_permissions_async(self, request):
-        r"""批量删除仓库文件推送权限
-
-        批量删除仓库文件推送权限
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for BatchDeleteRepositoryFilePushPermissions
-        :type request: :class:`huaweicloudsdkcodehub.v4.BatchDeleteRepositoryFilePushPermissionsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchDeleteRepositoryFilePushPermissionsResponse`
-        """
-        http_info = self._batch_delete_repository_file_push_permissions_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_delete_repository_file_push_permissions_async_invoker(self, request):
-        http_info = self._batch_delete_repository_file_push_permissions_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _batch_delete_repository_file_push_permissions_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v4/repositories/{repository_id}/file-push-permissions/batch-delete",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchDeleteRepositoryFilePushPermissionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def batch_update_repository_file_push_permissions_async(self, request):
-        r"""批量更新仓库文件推送权限
-
-        批量更新仓库文件推送权限
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for BatchUpdateRepositoryFilePushPermissions
-        :type request: :class:`huaweicloudsdkcodehub.v4.BatchUpdateRepositoryFilePushPermissionsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchUpdateRepositoryFilePushPermissionsResponse`
-        """
-        http_info = self._batch_update_repository_file_push_permissions_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_update_repository_file_push_permissions_async_invoker(self, request):
-        http_info = self._batch_update_repository_file_push_permissions_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _batch_update_repository_file_push_permissions_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v4/repositories/{repository_id}/file-push-permissions",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchUpdateRepositoryFilePushPermissionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_file_push_permission_async(self, request):
-        r"""创建仓库文件推送权限
-
-        创建仓库文件推送权限
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateFilePushPermission
-        :type request: :class:`huaweicloudsdkcodehub.v4.CreateFilePushPermissionRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateFilePushPermissionResponse`
-        """
-        http_info = self._create_file_push_permission_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_file_push_permission_async_invoker(self, request):
-        http_info = self._create_file_push_permission_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_file_push_permission_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v4/repositories/{repository_id}/file-push-permissions",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateFilePushPermissionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_repository_file_push_permissions_async(self, request):
-        r"""获取仓库文件推送权限列表
-
-        获取仓库文件推送权限列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListRepositoryFilePushPermissions
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListRepositoryFilePushPermissionsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListRepositoryFilePushPermissionsResponse`
-        """
-        http_info = self._list_repository_file_push_permissions_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_repository_file_push_permissions_async_invoker(self, request):
-        http_info = self._list_repository_file_push_permissions_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_repository_file_push_permissions_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/file-push-permissions",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListRepositoryFilePushPermissionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'search' in local_var_params:
-            query_params.append(('search', local_var_params['search']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -3793,6 +3827,77 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def list_group_user_groups_async(self, request):
+        r"""组织下查询成员组列表
+
+        组织下查询成员组列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGroupUserGroups
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListGroupUserGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListGroupUserGroupsResponse`
+        """
+        http_info = self._list_group_user_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_group_user_groups_async_invoker(self, request):
+        http_info = self._list_group_user_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_group_user_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/groups/{group_id}/user-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupUserGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_groups_async(self, request):
         r"""获取代码组列表
 
@@ -3872,104 +3977,31 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
-    def list_impersonation_tokens_async(self, request):
-        r"""获取用户的个人访问令牌
+    def list_manageable_groups_async(self, request):
+        r"""获取项目下当前用户有管理权限的代码组列表
 
-        获取用户的个人访问令牌
+        获取项目下当前用户有管理权限的代码组列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListImpersonationTokens
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListImpersonationTokensRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListImpersonationTokensResponse`
+        :param request: Request instance for ListManageableGroups
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListManageableGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListManageableGroupsResponse`
         """
-        http_info = self._list_impersonation_tokens_http_info(request)
+        http_info = self._list_manageable_groups_http_info(request)
         return self._call_api(**http_info)
 
-    def list_impersonation_tokens_async_invoker(self, request):
-        http_info = self._list_impersonation_tokens_http_info(request)
+    def list_manageable_groups_async_invoker(self, request):
+        http_info = self._list_manageable_groups_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_impersonation_tokens_http_info(self, request):
+    def _list_manageable_groups_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v4/users/impersonation-tokens",
+            "resource_path": "/v4/{project_id}/manageable-groups",
             "request_type": request.__class__.__name__,
-            "response_type": "ListImpersonationTokensResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'group_id' in local_var_params:
-            path_params['group_id'] = local_var_params['group_id']
-
-        query_params = []
-        if 'state' in local_var_params:
-            query_params.append(('state', local_var_params['state']))
-        if 'search' in local_var_params:
-            query_params.append(('search', local_var_params['search']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_product_permission_resources_granted_users_async(self, request):
-        r"""获取项目下成员列表
-
-        获取项目下成员列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListProductPermissionResourcesGrantedUsers
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListProductPermissionResourcesGrantedUsersRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProductPermissionResourcesGrantedUsersResponse`
-        """
-        http_info = self._list_product_permission_resources_granted_users_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_product_permission_resources_granted_users_async_invoker(self, request):
-        http_info = self._list_product_permission_resources_granted_users_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_product_permission_resources_granted_users_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/projects/{project_id}/members",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListProductPermissionResourcesGrantedUsersResponse"
+            "response_type": "ListManageableGroupsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3983,85 +4015,8 @@ class CodeHubAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
-        if 'query' in local_var_params:
-            query_params.append(('query', local_var_params['query']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_project_subgroups_and_repositories_async(self, request):
-        r"""获取项目下的代码组和仓库列表
-
-        获取项目下的代码组和仓库列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListProjectSubgroupsAndRepositories
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListProjectSubgroupsAndRepositoriesRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProjectSubgroupsAndRepositoriesResponse`
-        """
-        http_info = self._list_project_subgroups_and_repositories_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_project_subgroups_and_repositories_async_invoker(self, request):
-        http_info = self._list_project_subgroups_and_repositories_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_project_subgroups_and_repositories_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/projects/{project_id}/subgroups-and-repositories",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListProjectSubgroupsAndRepositoriesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-        if 'filter' in local_var_params:
-            query_params.append(('filter', local_var_params['filter']))
-        if 'order_by' in local_var_params:
-            query_params.append(('order_by', local_var_params['order_by']))
-        if 'sort' in local_var_params:
-            query_params.append(('sort', local_var_params['sort']))
-        if 'archived' in local_var_params:
-            query_params.append(('archived', local_var_params['archived']))
+        if 'scope' in local_var_params:
+            query_params.append(('scope', local_var_params['scope']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -4185,6 +4140,71 @@ class CodeHubAsyncClient(Client):
             "resource_path": "/v4/groups/{group_id}/policies/general",
             "request_type": request.__class__.__name__,
             "response_type": "ShowGroupGeneralPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_group_inherit_setting_async(self, request):
+        r"""获取代码组继承设置项
+
+        获取代码组继承设置项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowGroupInheritSetting
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowGroupInheritSettingRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowGroupInheritSettingResponse`
+        """
+        http_info = self._show_group_inherit_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_group_inherit_setting_async_invoker(self, request):
+        http_info = self._show_group_inherit_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_group_inherit_setting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/groups/{group_id}/inherit-setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGroupInheritSettingResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4420,6 +4440,71 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def show_groups_general_policy_async(self, request):
+        r"""获取指定代码组的基本设置信息
+
+        获取指定代码组的基本设置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowGroupsGeneralPolicy
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowGroupsGeneralPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowGroupsGeneralPolicyResponse`
+        """
+        http_info = self._show_groups_general_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_groups_general_policy_async_invoker(self, request):
+        http_info = self._show_groups_general_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_groups_general_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/groups/{group_id}/general-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGroupsGeneralPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_groups_inherit_async(self, request):
         r"""获取代码组的继承设置
 
@@ -4487,211 +4572,6 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
-    def show_project_general_policy_async(self, request):
-        r"""获取指定项目的基本设置信息
-
-        获取指定项目的基本设置信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowProjectGeneralPolicy
-        :type request: :class:`huaweicloudsdkcodehub.v4.ShowProjectGeneralPolicyRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowProjectGeneralPolicyResponse`
-        """
-        http_info = self._show_project_general_policy_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_project_general_policy_async_invoker(self, request):
-        http_info = self._show_project_general_policy_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_project_general_policy_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/projects/{project_id}/policies/general",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowProjectGeneralPolicyResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_project_member_setting_async(self, request):
-        r"""获取项目成员设置
-
-        获取项目成员设置
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowProjectMemberSetting
-        :type request: :class:`huaweicloudsdkcodehub.v4.ShowProjectMemberSettingRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowProjectMemberSettingResponse`
-        """
-        http_info = self._show_project_member_setting_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_project_member_setting_async_invoker(self, request):
-        http_info = self._show_project_member_setting_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_project_member_setting_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/projects/{project_id}/member-setting",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowProjectMemberSettingResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_resource_permissions_async(self, request):
-        r"""获取资源点对应的角色和权限
-
-        获取资源点对应的角色和权限
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowResourcePermissions
-        :type request: :class:`huaweicloudsdkcodehub.v4.ShowResourcePermissionsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowResourcePermissionsResponse`
-        """
-        http_info = self._show_resource_permissions_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_resource_permissions_async_invoker(self, request):
-        http_info = self._show_resource_permissions_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_resource_permissions_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/groups/{group_id}/permissions-resources/{resource_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowResourcePermissionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'group_id' in local_var_params:
-            path_params['group_id'] = local_var_params['group_id']
-        if 'resource_id' in local_var_params:
-            path_params['resource_id'] = local_var_params['resource_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def transfer_group_async(self, request):
         r"""移交代码组
 
@@ -4717,6 +4597,73 @@ class CodeHubAsyncClient(Client):
             "resource_path": "/v4/groups/{group_id}/transfer",
             "request_type": request.__class__.__name__,
             "response_type": "TransferGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_group_general_policy_async(self, request):
+        r"""更新代码组的基本设置信息
+
+        更新代码组的基本设置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGroupGeneralPolicy
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateGroupGeneralPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateGroupGeneralPolicyResponse`
+        """
+        http_info = self._update_group_general_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_group_general_policy_async_invoker(self, request):
+        http_info = self._update_group_general_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_group_general_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/groups/{group_id}/general-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGroupGeneralPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4826,349 +4773,6 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
-    def create_repository_label_async(self, request):
-        r"""创建仓库标签
-
-        创建仓库标签
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateRepositoryLabel
-        :type request: :class:`huaweicloudsdkcodehub.v4.CreateRepositoryLabelRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateRepositoryLabelResponse`
-        """
-        http_info = self._create_repository_label_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_repository_label_async_invoker(self, request):
-        http_info = self._create_repository_label_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_repository_label_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v4/repositories/{repository_id}/labels",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateRepositoryLabelResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_repository_system_labels_async(self, request):
-        r"""创建仓库系统标签
-
-        创建仓库系统标签
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateRepositorySystemLabels
-        :type request: :class:`huaweicloudsdkcodehub.v4.CreateRepositorySystemLabelsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateRepositorySystemLabelsResponse`
-        """
-        http_info = self._create_repository_system_labels_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_repository_system_labels_async_invoker(self, request):
-        http_info = self._create_repository_system_labels_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_repository_system_labels_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v4/repositories/{repository_id}/system-labels",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateRepositorySystemLabelsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_repository_label_async(self, request):
-        r"""删除仓库标签
-
-        删除仓库标签
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteRepositoryLabel
-        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteRepositoryLabelRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteRepositoryLabelResponse`
-        """
-        http_info = self._delete_repository_label_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_repository_label_async_invoker(self, request):
-        http_info = self._delete_repository_label_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_repository_label_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v4/repositories/{repository_id}/label",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteRepositoryLabelResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_repository_labels_async(self, request):
-        r"""获取仓库标签列表
-
-        获取仓库标签列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListRepositoryLabels
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListRepositoryLabelsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListRepositoryLabelsResponse`
-        """
-        http_info = self._list_repository_labels_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_repository_labels_async_invoker(self, request):
-        http_info = self._list_repository_labels_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_repository_labels_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/labels",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListRepositoryLabelsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'search' in local_var_params:
-            query_params.append(('search', local_var_params['search']))
-        if 'sort' in local_var_params:
-            query_params.append(('sort', local_var_params['sort']))
-        if 'include_expired' in local_var_params:
-            query_params.append(('include_expired', local_var_params['include_expired']))
-        if 'view' in local_var_params:
-            query_params.append(('view', local_var_params['view']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def update_repository_label_async(self, request):
-        r"""修改仓库标签
-
-        修改仓库标签
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for UpdateRepositoryLabel
-        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryLabelRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryLabelResponse`
-        """
-        http_info = self._update_repository_label_http_info(request)
-        return self._call_api(**http_info)
-
-    def update_repository_label_async_invoker(self, request):
-        http_info = self._update_repository_label_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _update_repository_label_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v4/repositories/{repository_id}/label",
-            "request_type": request.__class__.__name__,
-            "response_type": "UpdateRepositoryLabelResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def add_repository_members_async(self, request):
         r"""批量添加仓库成员
 
@@ -5236,6 +4840,77 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def list_group_protected_refs_user_groups_async(self, request):
+        r"""获取代码组下成员组列表
+
+        获取代码组下成员组列表(保护分支保护Tags设置中使用)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGroupProtectedRefsUserGroups
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListGroupProtectedRefsUserGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListGroupProtectedRefsUserGroupsResponse`
+        """
+        http_info = self._list_group_protected_refs_user_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_group_protected_refs_user_groups_async_invoker(self, request):
+        http_info = self._list_group_protected_refs_user_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_group_protected_refs_user_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/groups/{group_id}/protected-refs/user-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupProtectedRefsUserGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_members_async(self, request):
         r"""获取仓库成员列表
 
@@ -5284,6 +4959,219 @@ class CodeHubAsyncClient(Client):
             query_params.append(('permission', local_var_params['permission']))
         if 'action' in local_var_params:
             query_params.append(('action', local_var_params['action']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_product_permission_resources_granted_users_async(self, request):
+        r"""获取项目下成员列表
+
+        获取项目下成员列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProductPermissionResourcesGrantedUsers
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListProductPermissionResourcesGrantedUsersRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProductPermissionResourcesGrantedUsersResponse`
+        """
+        http_info = self._list_product_permission_resources_granted_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_product_permission_resources_granted_users_async_invoker(self, request):
+        http_info = self._list_product_permission_resources_granted_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_product_permission_resources_granted_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductPermissionResourcesGrantedUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'query' in local_var_params:
+            query_params.append(('query', local_var_params['query']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_protected_refs_user_groups_async(self, request):
+        r"""获取项目下成员组列表
+
+        获取项目下成员组列表(保护分支保护Tags设置中使用)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectProtectedRefsUserGroups
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListProjectProtectedRefsUserGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProjectProtectedRefsUserGroupsResponse`
+        """
+        http_info = self._list_project_protected_refs_user_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_protected_refs_user_groups_async_invoker(self, request):
+        http_info = self._list_project_protected_refs_user_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_protected_refs_user_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/protected-refs/user-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectProtectedRefsUserGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_repository_protected_refs_user_groups_async(self, request):
+        r"""获取仓库下成员组列表
+
+        获取仓库下成员组列表(保护分支保护Tags设置中使用)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRepositoryProtectedRefsUserGroups
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListRepositoryProtectedRefsUserGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListRepositoryProtectedRefsUserGroupsResponse`
+        """
+        http_info = self._list_repository_protected_refs_user_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_repository_protected_refs_user_groups_async_invoker(self, request):
+        http_info = self._list_repository_protected_refs_user_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_repository_protected_refs_user_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/protected-refs/user-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepositoryProtectedRefsUserGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
 
         header_params = {}
 
@@ -5451,6 +5339,75 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def create_cherry_pick_merge_request_async(self, request):
+        r"""Cherry pick合并请求
+
+        Cherry pick合并请求
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCherryPickMergeRequest
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateCherryPickMergeRequestRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateCherryPickMergeRequestResponse`
+        """
+        http_info = self._create_cherry_pick_merge_request_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_cherry_pick_merge_request_async_invoker(self, request):
+        http_info = self._create_cherry_pick_merge_request_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_cherry_pick_merge_request_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/merge-requests/{merge_request_iid}/cherry-pick",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCherryPickMergeRequestResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_group_merge_request_approver_setting_async(self, request):
         r"""创建代码组合并请求审核设置
 
@@ -5476,6 +5433,73 @@ class CodeHubAsyncClient(Client):
             "resource_path": "/v4/groups/{group_id}/approver-settings",
             "request_type": request.__class__.__name__,
             "response_type": "CreateGroupMergeRequestApproverSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_group_merge_request_template_async(self, request):
+        r"""创建代码组合并请求模板
+
+        创建代码组合并请求模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateGroupMergeRequestTemplate
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateGroupMergeRequestTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateGroupMergeRequestTemplateResponse`
+        """
+        http_info = self._create_group_merge_request_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_group_merge_request_template_async_invoker(self, request):
+        http_info = self._create_group_merge_request_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_group_merge_request_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/groups/{group_id}/merge-requests/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGroupMergeRequestTemplateResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5786,6 +5810,73 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def create_project_merge_request_template_async(self, request):
+        r"""创建项目合并请求模板
+
+        创建项目合并请求模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateProjectMergeRequestTemplate
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateProjectMergeRequestTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateProjectMergeRequestTemplateResponse`
+        """
+        http_info = self._create_project_merge_request_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_project_merge_request_template_async_invoker(self, request):
+        http_info = self._create_project_merge_request_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_project_merge_request_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/merge-requests/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectMergeRequestTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_group_merge_request_approver_setting_async(self, request):
         r"""删除代码组合并请求审核配置
 
@@ -5824,6 +5915,73 @@ class CodeHubAsyncClient(Client):
             path_params['group_id'] = local_var_params['group_id']
         if 'setting_id' in local_var_params:
             path_params['setting_id'] = local_var_params['setting_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_group_merge_request_template_async(self, request):
+        r"""删除代码组合并请求模板
+
+        删除代码组合并请求模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteGroupMergeRequestTemplate
+        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteGroupMergeRequestTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteGroupMergeRequestTemplateResponse`
+        """
+        http_info = self._delete_group_merge_request_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_group_merge_request_template_async_invoker(self, request):
+        http_info = self._delete_group_merge_request_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_group_merge_request_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/groups/{group_id}/merge-requests/template/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGroupMergeRequestTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
 
         query_params = []
 
@@ -6121,6 +6279,73 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def delete_project_merge_request_template_async(self, request):
+        r"""删除项目合并请求模板
+
+        删除项目合并请求模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteProjectMergeRequestTemplate
+        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteProjectMergeRequestTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteProjectMergeRequestTemplateResponse`
+        """
+        http_info = self._delete_project_merge_request_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_project_merge_request_template_async_invoker(self, request):
+        http_info = self._delete_project_merge_request_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_project_merge_request_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}/merge-requests/template/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProjectMergeRequestTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def import_merge_request_async(self, request):
         r"""导入合并请求
 
@@ -6167,6 +6392,77 @@ class CodeHubAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_commit_associated_merge_requests_async(self, request):
+        r"""获取提交关联的合并请求
+
+        获取提交关联的合并请求
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCommitAssociatedMergeRequests
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListCommitAssociatedMergeRequestsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListCommitAssociatedMergeRequestsResponse`
+        """
+        http_info = self._list_commit_associated_merge_requests_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_commit_associated_merge_requests_async_invoker(self, request):
+        http_info = self._list_commit_associated_merge_requests_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_commit_associated_merge_requests_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/commits/{sha}/merge-requests",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCommitAssociatedMergeRequestsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'sha' in local_var_params:
+            path_params['sha'] = local_var_params['sha']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -6366,6 +6662,81 @@ class CodeHubAsyncClient(Client):
             path_params['group_id'] = local_var_params['group_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_group_merge_request_templates_async(self, request):
+        r"""获取代码组合并请求模板列表
+
+        获取代码组合并请求模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGroupMergeRequestTemplates
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListGroupMergeRequestTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListGroupMergeRequestTemplatesResponse`
+        """
+        http_info = self._list_group_merge_request_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_group_merge_request_templates_async_invoker(self, request):
+        http_info = self._list_group_merge_request_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_group_merge_request_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/groups/{group_id}/merge-requests/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupMergeRequestTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'template_name' in local_var_params:
+            query_params.append(('template_name', local_var_params['template_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -6431,6 +6802,10 @@ class CodeHubAsyncClient(Client):
             path_params['group_id'] = local_var_params['group_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -6914,6 +7289,144 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def list_merge_request_evaluations_async(self, request):
+        r"""获取合并请求评价列表
+
+        获取合并请求评价列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMergeRequestEvaluations
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListMergeRequestEvaluationsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListMergeRequestEvaluationsResponse`
+        """
+        http_info = self._list_merge_request_evaluations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_merge_request_evaluations_async_invoker(self, request):
+        http_info = self._list_merge_request_evaluations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_merge_request_evaluations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/merge-requests/{merge_request_iid}/evaluations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMergeRequestEvaluationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_merge_request_participants_async(self, request):
+        r"""获取合并请求参与者
+
+        获取合并请求参与者
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMergeRequestParticipants
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListMergeRequestParticipantsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListMergeRequestParticipantsResponse`
+        """
+        http_info = self._list_merge_request_participants_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_merge_request_participants_async_invoker(self, request):
+        http_info = self._list_merge_request_participants_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_merge_request_participants_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/merge-requests/{merge_request_iid}/participants",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMergeRequestParticipantsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_merge_request_reviewers_async(self, request):
         r"""获取合并请求检视人列表
 
@@ -7151,6 +7664,178 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def list_merge_request_versions_async(self, request):
+        r"""获取文件变更历史版本列表
+
+        获取文件变更历史版本列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMergeRequestVersions
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListMergeRequestVersionsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListMergeRequestVersionsResponse`
+        """
+        http_info = self._list_merge_request_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_merge_request_versions_async_invoker(self, request):
+        http_info = self._list_merge_request_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_merge_request_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/merge-requests/{merge_request_iid}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMergeRequestVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_iid' in local_var_params:
+            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_personal_merge_requests_async(self, request):
+        r"""获取个人首页mr列表
+
+        获取个人首页mr列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPersonalMergeRequests
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListPersonalMergeRequestsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListPersonalMergeRequestsResponse`
+        """
+        http_info = self._list_personal_merge_requests_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_personal_merge_requests_async_invoker(self, request):
+        http_info = self._list_personal_merge_requests_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_personal_merge_requests_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/merge-requests",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPersonalMergeRequestsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'labels' in local_var_params:
+            query_params.append(('labels', local_var_params['labels']))
+        if 'created_before' in local_var_params:
+            query_params.append(('created_before', local_var_params['created_before']))
+        if 'created_after' in local_var_params:
+            query_params.append(('created_after', local_var_params['created_after']))
+        if 'updated_after' in local_var_params:
+            query_params.append(('updated_after', local_var_params['updated_after']))
+        if 'updated_before' in local_var_params:
+            query_params.append(('updated_before', local_var_params['updated_before']))
+        if 'view' in local_var_params:
+            query_params.append(('view', local_var_params['view']))
+        if 'author_id' in local_var_params:
+            query_params.append(('author_id', local_var_params['author_id']))
+        if 'scope' in local_var_params:
+            query_params.append(('scope', local_var_params['scope']))
+        if 'source_branch' in local_var_params:
+            query_params.append(('source_branch', local_var_params['source_branch']))
+        if 'target_branch' in local_var_params:
+            query_params.append(('target_branch', local_var_params['target_branch']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'wip' in local_var_params:
+            query_params.append(('wip', local_var_params['wip']))
+        if 'merged_by' in local_var_params:
+            query_params.append(('merged_by', local_var_params['merged_by']))
+        if 'merged_after' in local_var_params:
+            query_params.append(('merged_after', local_var_params['merged_after']))
+        if 'merged_before' in local_var_params:
+            query_params.append(('merged_before', local_var_params['merged_before']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'only_count' in local_var_params:
+            query_params.append(('only_count', local_var_params['only_count']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_project_merge_request_approver_settings_async(self, request):
         r"""获取项目合并请求审核设置列表
 
@@ -7258,6 +7943,10 @@ class CodeHubAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -7323,6 +8012,81 @@ class CodeHubAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_merge_request_templates_async(self, request):
+        r"""获取项目合并请求模板列表
+
+        获取项目合并请求模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectMergeRequestTemplates
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListProjectMergeRequestTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProjectMergeRequestTemplatesResponse`
+        """
+        http_info = self._list_project_merge_request_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_merge_request_templates_async_invoker(self, request):
+        http_info = self._list_project_merge_request_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_merge_request_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/merge-requests/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectMergeRequestTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'template_name' in local_var_params:
+            query_params.append(('template_name', local_var_params['template_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -7920,6 +8684,73 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def show_commit_comments_by_line_async(self, request):
+        r"""获取代码页单个提交下文件的检视意见
+
+        获取代码页单个提交下文件的检视意见
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCommitCommentsByLine
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowCommitCommentsByLineRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowCommitCommentsByLineResponse`
+        """
+        http_info = self._show_commit_comments_by_line_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_commit_comments_by_line_async_invoker(self, request):
+        http_info = self._show_commit_comments_by_line_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_commit_comments_by_line_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/commits/{sha}/comments-by-line",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCommitCommentsByLineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'sha' in local_var_params:
+            path_params['sha'] = local_var_params['sha']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_group_merge_request_setting_async(self, request):
         r"""获取代码组合并请求设置
 
@@ -8464,6 +9295,75 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def show_repository_merge_requests_statistic_async(self, request):
+        r"""获取仓库合并请求统计数据
+
+        获取仓库合并请求统计数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRepositoryMergeRequestsStatistic
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowRepositoryMergeRequestsStatisticRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowRepositoryMergeRequestsStatisticResponse`
+        """
+        http_info = self._show_repository_merge_requests_statistic_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repository_merge_requests_statistic_async_invoker(self, request):
+        http_info = self._show_repository_merge_requests_statistic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repository_merge_requests_statistic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/merge-requests/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryMergeRequestsStatisticResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'iids' in local_var_params:
+            query_params.append(('iids', local_var_params['iids']))
+        if 'fields' in local_var_params:
+            query_params.append(('fields', local_var_params['fields']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_group_merge_request_approver_setting_async(self, request):
         r"""更新代码组合并请求审核设置
 
@@ -8502,6 +9402,75 @@ class CodeHubAsyncClient(Client):
             path_params['group_id'] = local_var_params['group_id']
         if 'setting_id' in local_var_params:
             path_params['setting_id'] = local_var_params['setting_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_group_merge_request_template_async(self, request):
+        r"""更新代码组合并请求模板
+
+        更新代码组合并请求模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGroupMergeRequestTemplate
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateGroupMergeRequestTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateGroupMergeRequestTemplateResponse`
+        """
+        http_info = self._update_group_merge_request_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_group_merge_request_template_async_invoker(self, request):
+        http_info = self._update_group_merge_request_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_group_merge_request_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/groups/{group_id}/merge-requests/template/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGroupMergeRequestTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
 
         query_params = []
 
@@ -9083,31 +10052,100 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
-    def list_commit_associated_merge_requests_async(self, request):
-        r"""获取提交关联的合并请求
+    def update_project_merge_request_template_async(self, request):
+        r"""更新项目合并请求模板
 
-        获取提交关联的合并请求
+        更新项目合并请求模板
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListCommitAssociatedMergeRequests
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListCommitAssociatedMergeRequestsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListCommitAssociatedMergeRequestsResponse`
+        :param request: Request instance for UpdateProjectMergeRequestTemplate
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateProjectMergeRequestTemplateRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateProjectMergeRequestTemplateResponse`
         """
-        http_info = self._list_commit_associated_merge_requests_http_info(request)
+        http_info = self._update_project_merge_request_template_http_info(request)
         return self._call_api(**http_info)
 
-    def list_commit_associated_merge_requests_async_invoker(self, request):
-        http_info = self._list_commit_associated_merge_requests_http_info(request)
+    def update_project_merge_request_template_async_invoker(self, request):
+        http_info = self._update_project_merge_request_template_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_commit_associated_merge_requests_http_info(self, request):
+    def _update_project_merge_request_template_http_info(self, request):
         http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/commits/{sha}/merge-requests",
+            "method": "PUT",
+            "resource_path": "/v4/projects/{project_id}/merge-requests/template/{template_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "ListCommitAssociatedMergeRequestsResponse"
+            "response_type": "UpdateProjectMergeRequestTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_repository_file_push_permissions_async(self, request):
+        r"""批量删除仓库文件推送权限
+
+        批量删除仓库文件推送权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteRepositoryFilePushPermissions
+        :type request: :class:`huaweicloudsdkcodehub.v4.BatchDeleteRepositoryFilePushPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchDeleteRepositoryFilePushPermissionsResponse`
+        """
+        http_info = self._batch_delete_repository_file_push_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_repository_file_push_permissions_async_invoker(self, request):
+        http_info = self._batch_delete_repository_file_push_permissions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_repository_file_push_permissions_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/file-push-permissions/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteRepositoryFilePushPermissionsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -9119,10 +10157,211 @@ class CodeHubAsyncClient(Client):
         path_params = {}
         if 'repository_id' in local_var_params:
             path_params['repository_id'] = local_var_params['repository_id']
-        if 'sha' in local_var_params:
-            path_params['sha'] = local_var_params['sha']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_update_repository_file_push_permissions_async(self, request):
+        r"""批量更新仓库文件推送权限
+
+        批量更新仓库文件推送权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateRepositoryFilePushPermissions
+        :type request: :class:`huaweicloudsdkcodehub.v4.BatchUpdateRepositoryFilePushPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchUpdateRepositoryFilePushPermissionsResponse`
+        """
+        http_info = self._batch_update_repository_file_push_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_repository_file_push_permissions_async_invoker(self, request):
+        http_info = self._batch_update_repository_file_push_permissions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_repository_file_push_permissions_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/repositories/{repository_id}/file-push-permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateRepositoryFilePushPermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_file_push_permission_async(self, request):
+        r"""创建仓库文件推送权限
+
+        创建仓库文件推送权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateFilePushPermission
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateFilePushPermissionRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateFilePushPermissionResponse`
+        """
+        http_info = self._create_file_push_permission_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_file_push_permission_async_invoker(self, request):
+        http_info = self._create_file_push_permission_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_file_push_permission_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/file-push-permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFilePushPermissionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_repository_file_push_permissions_async(self, request):
+        r"""获取仓库文件推送权限列表
+
+        获取仓库文件推送权限列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRepositoryFilePushPermissions
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListRepositoryFilePushPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListRepositoryFilePushPermissionsResponse`
+        """
+        http_info = self._list_repository_file_push_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_repository_file_push_permissions_async_invoker(self, request):
+        http_info = self._list_repository_file_push_permissions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_repository_file_push_permissions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/file-push-permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepositoryFilePushPermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -9154,31 +10393,31 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
-    def show_repository_merge_requests_statistic_async(self, request):
-        r"""获取仓库合并请求统计数据
+    def list_repository_resource_permissions_async(self, request):
+        r"""查询仓库权限矩阵配置
 
-        获取仓库合并请求统计数据
+        查询仓库权限矩阵配置
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowRepositoryMergeRequestsStatistic
-        :type request: :class:`huaweicloudsdkcodehub.v4.ShowRepositoryMergeRequestsStatisticRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowRepositoryMergeRequestsStatisticResponse`
+        :param request: Request instance for ListRepositoryResourcePermissions
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListRepositoryResourcePermissionsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListRepositoryResourcePermissionsResponse`
         """
-        http_info = self._show_repository_merge_requests_statistic_http_info(request)
+        http_info = self._list_repository_resource_permissions_http_info(request)
         return self._call_api(**http_info)
 
-    def show_repository_merge_requests_statistic_async_invoker(self, request):
-        http_info = self._show_repository_merge_requests_statistic_http_info(request)
+    def list_repository_resource_permissions_async_invoker(self, request):
+        http_info = self._list_repository_resource_permissions_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_repository_merge_requests_statistic_http_info(self, request):
+    def _list_repository_resource_permissions_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/merge-requests/statistic",
+            "resource_path": "/v4/repository/{repository_id}/permissions/{resource_name}",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowRepositoryMergeRequestsStatisticResponse"
+            "response_type": "ListRepositoryResourcePermissionsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -9190,77 +10429,8 @@ class CodeHubAsyncClient(Client):
         path_params = {}
         if 'repository_id' in local_var_params:
             path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'iids' in local_var_params:
-            query_params.append(('iids', local_var_params['iids']))
-        if 'fields' in local_var_params:
-            query_params.append(('fields', local_var_params['fields']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_merge_request_participants_async(self, request):
-        r"""获取合并请求参与者
-
-        获取合并请求参与者
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListMergeRequestParticipants
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListMergeRequestParticipantsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListMergeRequestParticipantsResponse`
-        """
-        http_info = self._list_merge_request_participants_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_merge_request_participants_async_invoker(self, request):
-        http_info = self._list_merge_request_participants_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_merge_request_participants_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/merge-requests/{merge_request_iid}/participants",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListMergeRequestParticipantsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-        if 'merge_request_iid' in local_var_params:
-            path_params['merge_request_iid'] = local_var_params['merge_request_iid']
+        if 'resource_name' in local_var_params:
+            path_params['resource_name'] = local_var_params['resource_name']
 
         query_params = []
         if 'offset' in local_var_params:
@@ -9395,6 +10565,75 @@ class CodeHubAsyncClient(Client):
         path_params = {}
         if 'repository_id' in local_var_params:
             path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_repository_resource_permissions_async(self, request):
+        r"""更新仓库权限矩阵配置
+
+        更新仓库权限矩阵配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRepositoryResourcePermissions
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryResourcePermissionsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryResourcePermissionsResponse`
+        """
+        http_info = self._update_repository_resource_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_repository_resource_permissions_async_invoker(self, request):
+        http_info = self._update_repository_resource_permissions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_repository_resource_permissions_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/repository/{repository_id}/permissions/{resource_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRepositoryResourcePermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'resource_name' in local_var_params:
+            path_params['resource_name'] = local_var_params['resource_name']
 
         query_params = []
 
@@ -9564,6 +10803,290 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def list_item_commits_async(self, request):
+        r"""工作项关联的提交信息
+
+        工作项关联的提交信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListItemCommits
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListItemCommitsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListItemCommitsResponse`
+        """
+        http_info = self._list_item_commits_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_item_commits_async_invoker(self, request):
+        http_info = self._list_item_commits_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_item_commits_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/items/{item_id}/commits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListItemCommitsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'item_id' in local_var_params:
+            path_params['item_id'] = local_var_params['item_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_subgroups_and_repositories_async(self, request):
+        r"""获取项目下的代码组和仓库列表
+
+        获取项目下的代码组和仓库列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectSubgroupsAndRepositories
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListProjectSubgroupsAndRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProjectSubgroupsAndRepositoriesResponse`
+        """
+        http_info = self._list_project_subgroups_and_repositories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_subgroups_and_repositories_async_invoker(self, request):
+        http_info = self._list_project_subgroups_and_repositories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_subgroups_and_repositories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/subgroups-and-repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectSubgroupsAndRepositoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'archived' in local_var_params:
+            query_params.append(('archived', local_var_params['archived']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_project_general_policy_async(self, request):
+        r"""获取指定项目的基本设置信息
+
+        获取指定项目的基本设置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProjectGeneralPolicy
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowProjectGeneralPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowProjectGeneralPolicyResponse`
+        """
+        http_info = self._show_project_general_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_project_general_policy_async_invoker(self, request):
+        http_info = self._show_project_general_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_general_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/policies/general",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectGeneralPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_project_member_setting_async(self, request):
+        r"""获取项目成员设置
+
+        获取项目成员设置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProjectMemberSetting
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowProjectMemberSettingRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowProjectMemberSettingResponse`
+        """
+        http_info = self._show_project_member_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_project_member_setting_async_invoker(self, request):
+        http_info = self._show_project_member_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_member_setting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/member-setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectMemberSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_project_settings_inherit_cfg_async(self, request):
         r"""获取项目继承设置项
 
@@ -9673,6 +11196,209 @@ class CodeHubAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_projects_general_policy_async(self, request):
+        r"""获取指定项目的基本设置信息
+
+        获取指定项目的基本设置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProjectsGeneralPolicy
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowProjectsGeneralPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowProjectsGeneralPolicyResponse`
+        """
+        http_info = self._show_projects_general_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_projects_general_policy_async_invoker(self, request):
+        http_info = self._show_projects_general_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_projects_general_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/general-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectsGeneralPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_resource_permissions_async(self, request):
+        r"""获取资源点对应的角色和权限
+
+        获取资源点对应的角色和权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowResourcePermissions
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowResourcePermissionsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowResourcePermissionsResponse`
+        """
+        http_info = self._show_resource_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_resource_permissions_async_invoker(self, request):
+        http_info = self._show_resource_permissions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_permissions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/groups/{group_id}/permissions-resources/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourcePermissionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_project_general_policy_async(self, request):
+        r"""更新项目的基本设置信息
+
+        更新项目的基本设置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateProjectGeneralPolicy
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateProjectGeneralPolicyRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateProjectGeneralPolicyResponse`
+        """
+        http_info = self._update_project_general_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_project_general_policy_async_invoker(self, request):
+        http_info = self._update_project_general_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_project_general_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/projects/{project_id}/general-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProjectGeneralPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -9895,6 +11621,73 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def batch_create_protected_tags_async(self, request):
+        r"""批量创建仓库保护Tag
+
+        批量创建仓库保护Tag
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateProtectedTags
+        :type request: :class:`huaweicloudsdkcodehub.v4.BatchCreateProtectedTagsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchCreateProtectedTagsResponse`
+        """
+        http_info = self._batch_create_protected_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_protected_tags_async_invoker(self, request):
+        http_info = self._batch_create_protected_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_protected_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/protected-tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateProtectedTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_protected_branches_async(self, request):
         r"""批量删除仓库保护分支
 
@@ -9920,6 +11713,73 @@ class CodeHubAsyncClient(Client):
             "resource_path": "/v4/repositories/{repository_id}/protected-branches/bulk-deletion",
             "request_type": request.__class__.__name__,
             "response_type": "BatchDeleteProtectedBranchesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_protected_tags_async(self, request):
+        r"""批量删除仓库保护Tag
+
+        批量删除仓库保护Tag
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteProtectedTags
+        :type request: :class:`huaweicloudsdkcodehub.v4.BatchDeleteProtectedTagsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchDeleteProtectedTagsResponse`
+        """
+        http_info = self._batch_delete_protected_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_protected_tags_async_invoker(self, request):
+        http_info = self._batch_delete_protected_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_protected_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/protected-tags/bulk-deletion",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteProtectedTagsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -10029,6 +11889,73 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def batch_update_protected_tags_async(self, request):
+        r"""批量更新仓库保护Tag
+
+        批量更新仓库保护Tag
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchUpdateProtectedTags
+        :type request: :class:`huaweicloudsdkcodehub.v4.BatchUpdateProtectedTagsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchUpdateProtectedTagsResponse`
+        """
+        http_info = self._batch_update_protected_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_protected_tags_async_invoker(self, request):
+        http_info = self._batch_update_protected_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_protected_tags_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/repositories/{repository_id}/protected-tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateProtectedTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_project_protected_branches_async(self, request):
         r"""创建项目下保护分支
 
@@ -10054,6 +11981,73 @@ class CodeHubAsyncClient(Client):
             "resource_path": "/v4/projects/{project_id}/protected-branches",
             "request_type": request.__class__.__name__,
             "response_type": "CreateProjectProtectedBranchesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_project_protected_tags_async(self, request):
+        r"""创建项目下的保护tag
+
+        创建项目下的保护tag
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateProjectProtectedTags
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateProjectProtectedTagsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateProjectProtectedTagsResponse`
+        """
+        http_info = self._create_project_protected_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_project_protected_tags_async_invoker(self, request):
+        http_info = self._create_project_protected_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_project_protected_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/protected-tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectProtectedTagsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -10163,6 +12157,73 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def delete_protected_tag_async(self, request):
+        r"""删除仓库保护Tag
+
+        删除仓库保护Tag
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteProtectedTag
+        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteProtectedTagRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteProtectedTagResponse`
+        """
+        http_info = self._delete_protected_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_protected_tag_async_invoker(self, request):
+        http_info = self._delete_protected_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_protected_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/repositories/{repository_id}/protected-tag",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProtectedTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'tag_name' in local_var_params:
+            query_params.append(('tag_name', local_var_params['tag_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_project_protected_branches_async(self, request):
         r"""获取项目下保护分支列表
 
@@ -10220,7 +12281,72 @@ class CodeHubAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-Total", ]
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_protected_tags_async(self, request):
+        r"""获取指定项目的保护tag详情
+
+        获取指定项目的保护tag详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectProtectedTags
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListProjectProtectedTagsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProjectProtectedTagsResponse`
+        """
+        http_info = self._list_project_protected_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_protected_tags_async_invoker(self, request):
+        http_info = self._list_project_protected_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_protected_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/protected-tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectProtectedTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -10263,6 +12389,77 @@ class CodeHubAsyncClient(Client):
             "resource_path": "/v4/repositories/{repository_id}/protected-branches",
             "request_type": request.__class__.__name__,
             "response_type": "ListProtectedBranchesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_protected_tags_async(self, request):
+        r"""获取仓库保护Tag列表
+
+        获取仓库保护Tag列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProtectedTags
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListProtectedTagsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProtectedTagsResponse`
+        """
+        http_info = self._list_protected_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_protected_tags_async_invoker(self, request):
+        http_info = self._list_protected_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_protected_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/protected-tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtectedTagsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -10376,6 +12573,73 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def show_protected_tag_async(self, request):
+        r"""获取仓库保护Tag
+
+        获取仓库保护Tag
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProtectedTag
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowProtectedTagRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowProtectedTagResponse`
+        """
+        http_info = self._show_protected_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_protected_tag_async_invoker(self, request):
+        http_info = self._show_protected_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_protected_tag_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/protected-tag",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProtectedTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'tag_name' in local_var_params:
+            query_params.append(('tag_name', local_var_params['tag_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_protected_branch_async(self, request):
         r"""更新仓库保护分支
 
@@ -10445,412 +12709,6 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
-    def batch_create_protected_tags_async(self, request):
-        r"""批量创建仓库保护Tag
-
-        批量创建仓库保护Tag
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for BatchCreateProtectedTags
-        :type request: :class:`huaweicloudsdkcodehub.v4.BatchCreateProtectedTagsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchCreateProtectedTagsResponse`
-        """
-        http_info = self._batch_create_protected_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_create_protected_tags_async_invoker(self, request):
-        http_info = self._batch_create_protected_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _batch_create_protected_tags_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v4/repositories/{repository_id}/protected-tags",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchCreateProtectedTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def batch_delete_protected_tags_async(self, request):
-        r"""批量删除仓库保护Tag
-
-        批量删除仓库保护Tag
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for BatchDeleteProtectedTags
-        :type request: :class:`huaweicloudsdkcodehub.v4.BatchDeleteProtectedTagsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchDeleteProtectedTagsResponse`
-        """
-        http_info = self._batch_delete_protected_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_delete_protected_tags_async_invoker(self, request):
-        http_info = self._batch_delete_protected_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _batch_delete_protected_tags_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v4/repositories/{repository_id}/protected-tags/bulk-deletion",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchDeleteProtectedTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def batch_update_protected_tags_async(self, request):
-        r"""批量更新仓库保护Tag
-
-        批量更新仓库保护Tag
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for BatchUpdateProtectedTags
-        :type request: :class:`huaweicloudsdkcodehub.v4.BatchUpdateProtectedTagsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchUpdateProtectedTagsResponse`
-        """
-        http_info = self._batch_update_protected_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def batch_update_protected_tags_async_invoker(self, request):
-        http_info = self._batch_update_protected_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _batch_update_protected_tags_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v4/repositories/{repository_id}/protected-tags",
-            "request_type": request.__class__.__name__,
-            "response_type": "BatchUpdateProtectedTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_protected_tag_async(self, request):
-        r"""删除仓库保护Tag
-
-        删除仓库保护Tag
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteProtectedTag
-        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteProtectedTagRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteProtectedTagResponse`
-        """
-        http_info = self._delete_protected_tag_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_protected_tag_async_invoker(self, request):
-        http_info = self._delete_protected_tag_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_protected_tag_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v4/repositories/{repository_id}/protected-tag",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteProtectedTagResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'tag_name' in local_var_params:
-            query_params.append(('tag_name', local_var_params['tag_name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_protected_tags_async(self, request):
-        r"""获取仓库保护Tag列表
-
-        获取仓库保护Tag列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListProtectedTags
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListProtectedTagsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProtectedTagsResponse`
-        """
-        http_info = self._list_protected_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_protected_tags_async_invoker(self, request):
-        http_info = self._list_protected_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_protected_tags_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/protected-tags",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListProtectedTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'search' in local_var_params:
-            query_params.append(('search', local_var_params['search']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_protected_tag_async(self, request):
-        r"""获取仓库保护Tag
-
-        获取仓库保护Tag
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowProtectedTag
-        :type request: :class:`huaweicloudsdkcodehub.v4.ShowProtectedTagRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowProtectedTagResponse`
-        """
-        http_info = self._show_protected_tag_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_protected_tag_async_invoker(self, request):
-        http_info = self._show_protected_tag_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_protected_tag_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/protected-tag",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowProtectedTagResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'tag_name' in local_var_params:
-            query_params.append(('tag_name', local_var_params['tag_name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def update_protected_tag_async(self, request):
         r"""更新仓库保护Tag
 
@@ -10891,6 +12749,773 @@ class CodeHubAsyncClient(Client):
         query_params = []
         if 'tag_name' in local_var_params:
             query_params.append(('tag_name', local_var_params['tag_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_branch_async(self, request):
+        r"""批量删除分支
+
+        批量删除分支
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteBranch
+        :type request: :class:`huaweicloudsdkcodehub.v4.BatchDeleteBranchRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchDeleteBranchResponse`
+        """
+        http_info = self._batch_delete_branch_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_branch_async_invoker(self, request):
+        http_info = self._batch_delete_branch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_branch_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/branches/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteBranchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_branch_async(self, request):
+        r"""创建分支
+
+        创建分支
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateBranch
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateBranchRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateBranchResponse`
+        """
+        http_info = self._create_branch_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_branch_async_invoker(self, request):
+        http_info = self._create_branch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_branch_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/repository/branches",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBranchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_tag_async(self, request):
+        r"""创建标签
+
+        创建标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTag
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateTagRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateTagResponse`
+        """
+        http_info = self._create_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_tag_async_invoker(self, request):
+        http_info = self._create_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/repository/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_branch_async(self, request):
+        r"""删除分支
+
+        删除分支
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBranch
+        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteBranchRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteBranchResponse`
+        """
+        http_info = self._delete_branch_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_branch_async_invoker(self, request):
+        http_info = self._delete_branch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_branch_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/repositories/{repository_id}/repository/branch",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBranchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'branch_name' in local_var_params:
+            query_params.append(('branch_name', local_var_params['branch_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_tag_async(self, request):
+        r"""删除标签
+
+        删除标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTag
+        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteTagRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteTagResponse`
+        """
+        http_info = self._delete_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_tag_async_invoker(self, request):
+        http_info = self._delete_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/repositories/{repository_id}/repository/tag",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'tag_name' in local_var_params:
+            query_params.append(('tag_name', local_var_params['tag_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_branches_async(self, request):
+        r"""获取分支列表
+
+        获取分支列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBranches
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListBranchesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListBranchesResponse`
+        """
+        http_info = self._list_branches_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_branches_async_invoker(self, request):
+        http_info = self._list_branches_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_branches_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/branches",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBranchesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'branch_type' in local_var_params:
+            query_params.append(('branch_type', local_var_params['branch_type']))
+        if 'creator' in local_var_params:
+            query_params.append(('creator', local_var_params['creator']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'query_view' in local_var_params:
+            query_params.append(('query_view', local_var_params['query_view']))
+        if 'view' in local_var_params:
+            query_params.append(('view', local_var_params['view']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_refs_list_async(self, request):
+        r"""查看分支/tag列表
+
+        查看分支/tag列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRefsList
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListRefsListRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListRefsListResponse`
+        """
+        http_info = self._list_refs_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_refs_list_async_invoker(self, request):
+        http_info = self._list_refs_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_refs_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/refs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRefsListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tags_async(self, request):
+        r"""获取标签列表
+
+        获取标签列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTags
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListTagsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListTagsResponse`
+        """
+        http_info = self._list_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tags_async_invoker(self, request):
+        http_info = self._list_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'creator' in local_var_params:
+            query_params.append(('creator', local_var_params['creator']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'view' in local_var_params:
+            query_params.append(('view', local_var_params['view']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_branch_async(self, request):
+        r"""获取分支详情
+
+        获取分支详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBranch
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowBranchRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowBranchResponse`
+        """
+        http_info = self._show_branch_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_branch_async_invoker(self, request):
+        http_info = self._show_branch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_branch_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/branch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBranchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'branch_name' in local_var_params:
+            query_params.append(('branch_name', local_var_params['branch_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tag_async(self, request):
+        r"""查看标签详情
+
+        查看标签详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTag
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowTagRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowTagResponse`
+        """
+        http_info = self._show_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tag_async_invoker(self, request):
+        http_info = self._show_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tag_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/repository/tag",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'tag_name' in local_var_params:
+            query_params.append(('tag_name', local_var_params['tag_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_branch_name_async(self, request):
+        r"""分支重命名
+
+        分支重命名。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateBranchName
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateBranchNameRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateBranchNameResponse`
+        """
+        http_info = self._update_branch_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_branch_name_async_invoker(self, request):
+        http_info = self._update_branch_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_branch_name_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/repositories/{repository_id}/repository/branch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBranchNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -11190,6 +13815,71 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def batch_validate_repo_names_async(self, request):
+        r"""批量检查仓库名
+
+        批量检查仓库名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchValidateRepoNames
+        :type request: :class:`huaweicloudsdkcodehub.v4.BatchValidateRepoNamesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchValidateRepoNamesResponse`
+        """
+        http_info = self._batch_validate_repo_names_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_validate_repo_names_async_invoker(self, request):
+        http_info = self._batch_validate_repo_names_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_validate_repo_names_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repository-names/validations",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchValidateRepoNamesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_dir_async(self, request):
         r"""创建指定分支下的目录
 
@@ -11236,6 +13926,272 @@ class CodeHubAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_repository_commit_rule_async(self, request):
+        r"""创建仓库提交规则
+
+        创建仓库提交规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRepositoryCommitRule
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateRepositoryCommitRuleRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateRepositoryCommitRuleResponse`
+        """
+        http_info = self._create_repository_commit_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_repository_commit_rule_async_invoker(self, request):
+        http_info = self._create_repository_commit_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_repository_commit_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/commit-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRepositoryCommitRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_repository_label_async(self, request):
+        r"""创建仓库标签
+
+        创建仓库标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRepositoryLabel
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateRepositoryLabelRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateRepositoryLabelResponse`
+        """
+        http_info = self._create_repository_label_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_repository_label_async_invoker(self, request):
+        http_info = self._create_repository_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_repository_label_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRepositoryLabelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_repository_system_labels_async(self, request):
+        r"""创建仓库系统标签
+
+        创建仓库系统标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateRepositorySystemLabels
+        :type request: :class:`huaweicloudsdkcodehub.v4.CreateRepositorySystemLabelsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateRepositorySystemLabelsResponse`
+        """
+        http_info = self._create_repository_system_labels_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_repository_system_labels_async_invoker(self, request):
+        http_info = self._create_repository_system_labels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_repository_system_labels_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/system-labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRepositorySystemLabelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_repository_label_async(self, request):
+        r"""删除仓库标签
+
+        删除仓库标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteRepositoryLabel
+        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteRepositoryLabelRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteRepositoryLabelResponse`
+        """
+        http_info = self._delete_repository_label_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_repository_label_async_invoker(self, request):
+        http_info = self._delete_repository_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_repository_label_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/repositories/{repository_id}/label",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRepositoryLabelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -11395,6 +14351,73 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def execute_repository_statistics_async(self, request):
+        r"""触发仓库统计任务
+
+        触发仓库统计任务
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExecuteRepositoryStatistics
+        :type request: :class:`huaweicloudsdkcodehub.v4.ExecuteRepositoryStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ExecuteRepositoryStatisticsResponse`
+        """
+        http_info = self._execute_repository_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_repository_statistics_async_invoker(self, request):
+        http_info = self._execute_repository_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_repository_statistics_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/repository/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteRepositoryStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_current_user_repositories_async(self, request):
         r"""获取当前登录用户仓库
 
@@ -11429,10 +14452,28 @@ class CodeHubAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'archived' in local_var_params:
+            query_params.append(('archived', local_var_params['archived']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'starred' in local_var_params:
+            query_params.append(('starred', local_var_params['starred']))
+        if 'membership' in local_var_params:
+            query_params.append(('membership', local_var_params['membership']))
+        if 'user_created' in local_var_params:
+            query_params.append(('user_created', local_var_params['user_created']))
+        if 'include_abnormal' in local_var_params:
+            query_params.append(('include_abnormal', local_var_params['include_abnormal']))
 
         header_params = {}
 
@@ -11460,31 +14501,31 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
-    def list_manageable_groups_async(self, request):
-        r"""获取项目下当前用户有管理权限的代码组列表
+    def list_group_repositories_async(self, request):
+        r"""获取代码组下仓库列表
 
-        获取项目下当前用户有管理权限的代码组列表
+        获取代码组下仓库列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListManageableGroups
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListManageableGroupsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListManageableGroupsResponse`
+        :param request: Request instance for ListGroupRepositories
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListGroupRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListGroupRepositoriesResponse`
         """
-        http_info = self._list_manageable_groups_http_info(request)
+        http_info = self._list_group_repositories_http_info(request)
         return self._call_api(**http_info)
 
-    def list_manageable_groups_async_invoker(self, request):
-        http_info = self._list_manageable_groups_http_info(request)
+    def list_group_repositories_async_invoker(self, request):
+        http_info = self._list_group_repositories_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_manageable_groups_http_info(self, request):
+    def _list_group_repositories_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v4/{project_id}/manageable-groups",
+            "resource_path": "/v4/groups/{group_id}/repositories",
             "request_type": request.__class__.__name__,
-            "response_type": "ListManageableGroupsResponse"
+            "response_type": "ListGroupRepositoriesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -11494,16 +14535,87 @@ class CodeHubAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
 
         query_params = []
-        if 'scope' in local_var_params:
-            query_params.append(('scope', local_var_params['scope']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_personal_recent_push_events_async(self, request):
+        r"""获取当前用户最近提交动态列表
+
+        查询当前最近前N条提交动态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPersonalRecentPushEvents
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListPersonalRecentPushEventsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListPersonalRecentPushEventsResponse`
+        """
+        http_info = self._list_personal_recent_push_events_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_personal_recent_push_events_async_invoker(self, request):
+        http_info = self._list_personal_recent_push_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_personal_recent_push_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/user/recent-push-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPersonalRecentPushEventsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'project_id' in local_var_params:
+            query_params.append(('project_id', local_var_params['project_id']))
+        if 'size' in local_var_params:
+            query_params.append(('size', local_var_params['size']))
 
         header_params = {}
 
@@ -11599,6 +14711,81 @@ class CodeHubAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Total", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_project_repositories_async(self, request):
+        r"""获取项目下仓库列表
+
+        获取项目下仓库列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListProjectRepositories
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListProjectRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListProjectRepositoriesResponse`
+        """
+        http_info = self._list_project_repositories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_project_repositories_async_invoker(self, request):
+        http_info = self._list_project_repositories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_repositories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectRepositoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'order_by' in local_var_params:
+            query_params.append(('order_by', local_var_params['order_by']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -11879,10 +15066,91 @@ class CodeHubAsyncClient(Client):
             path_params['repository_id'] = local_var_params['repository_id']
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
         if 'order_by' in local_var_params:
             query_params.append(('order_by', local_var_params['order_by']))
         if 'sort' in local_var_params:
             query_params.append(('sort', local_var_params['sort']))
+        if 'view' in local_var_params:
+            query_params.append(('view', local_var_params['view']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_repository_labels_async(self, request):
+        r"""获取仓库标签列表
+
+        获取仓库标签列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRepositoryLabels
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListRepositoryLabelsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListRepositoryLabelsResponse`
+        """
+        http_info = self._list_repository_labels_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_repository_labels_async_invoker(self, request):
+        http_info = self._list_repository_labels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_repository_labels_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepositoryLabelsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'include_expired' in local_var_params:
+            query_params.append(('include_expired', local_var_params['include_expired']))
         if 'view' in local_var_params:
             query_params.append(('view', local_var_params['view']))
 
@@ -12131,81 +15399,6 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
-    def list_trees_async(self, request):
-        r"""查看分支文件列表
-
-        查看分支文件列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListTrees
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListTreesRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListTreesResponse`
-        """
-        http_info = self._list_trees_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_trees_async_invoker(self, request):
-        http_info = self._list_trees_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_trees_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/repository/trees",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListTreesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'ref' in local_var_params:
-            query_params.append(('ref', local_var_params['ref']))
-        if 'path' in local_var_params:
-            query_params.append(('path', local_var_params['path']))
-        if 'recursive' in local_var_params:
-            query_params.append(('recursive', local_var_params['recursive']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Total", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def list_trusted_ip_addresses_async(self, request):
         r"""获取仓库ip白名单
 
@@ -12343,9 +15536,9 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def remove_deploy_key_async(self, request):
-        r"""删除仓库部署秘钥
+        r"""删除仓库部署密钥
 
-        删除仓库部署秘钥
+        删除仓库部署密钥
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12367,6 +15560,73 @@ class CodeHubAsyncClient(Client):
             "resource_path": "/v4/repositories/{repository_id}/deploy-keys/{key_id}",
             "request_type": request.__class__.__name__,
             "response_type": "RemoveDeployKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'key_id' in local_var_params:
+            path_params['key_id'] = local_var_params['key_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def remove_deploy_key_from_submodules_async(self, request):
+        r"""删除子仓库部署密钥
+
+        将该该仓库的部署密钥从子模组中删除
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RemoveDeployKeyFromSubmodules
+        :type request: :class:`huaweicloudsdkcodehub.v4.RemoveDeployKeyFromSubmodulesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.RemoveDeployKeyFromSubmodulesResponse`
+        """
+        http_info = self._remove_deploy_key_from_submodules_http_info(request)
+        return self._call_api(**http_info)
+
+    def remove_deploy_key_from_submodules_async_invoker(self, request):
+        http_info = self._remove_deploy_key_from_submodules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_deploy_key_from_submodules_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/repositories/{repository_id}/deploy-keys/{key_id}/submodules",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveDeployKeyFromSubmodulesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -13560,6 +16820,71 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def start_house_keeping_async(self, request):
+        r"""启动仓库加速
+
+        启动仓库加速
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartHouseKeeping
+        :type request: :class:`huaweicloudsdkcodehub.v4.StartHouseKeepingRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.StartHouseKeepingResponse`
+        """
+        http_info = self._start_house_keeping_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_house_keeping_async_invoker(self, request):
+        http_info = self._start_house_keeping_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_house_keeping_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/housekeeping",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartHouseKeepingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def start_remote_mirror_synchronization_async(self, request):
         r"""启动仓库镜像同步
 
@@ -13606,6 +16931,73 @@ class CodeHubAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sync_deploy_key_to_submodules_async(self, request):
+        r"""仓库部署密钥同步到子仓
+
+        将该仓库的部署密钥同步到所有的子模组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncDeployKeyToSubmodules
+        :type request: :class:`huaweicloudsdkcodehub.v4.SyncDeployKeyToSubmodulesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.SyncDeployKeyToSubmodulesResponse`
+        """
+        http_info = self._sync_deploy_key_to_submodules_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_deploy_key_to_submodules_async_invoker(self, request):
+        http_info = self._sync_deploy_key_to_submodules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_deploy_key_to_submodules_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/repositories/{repository_id}/deploy-keys/{key_id}/submodules",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncDeployKeyToSubmodulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'key_id' in local_var_params:
+            path_params['key_id'] = local_var_params['key_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -13763,6 +17155,142 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def update_repository_commit_rule_async(self, request):
+        r"""修改仓库提交规则
+
+        修改仓库提交规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRepositoryCommitRule
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryCommitRuleRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryCommitRuleResponse`
+        """
+        http_info = self._update_repository_commit_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_repository_commit_rule_async_invoker(self, request):
+        http_info = self._update_repository_commit_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_repository_commit_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/repositories/{repository_id}/commit-rules/{commit_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRepositoryCommitRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'commit_rule_id' in local_var_params:
+            path_params['commit_rule_id'] = local_var_params['commit_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_repository_general_commit_rule_async(self, request):
+        r"""修改仓库通用提交规则
+
+        修改仓库通用提交规则
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRepositoryGeneralCommitRule
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryGeneralCommitRuleRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryGeneralCommitRuleResponse`
+        """
+        http_info = self._update_repository_general_commit_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_repository_general_commit_rule_async_invoker(self, request):
+        http_info = self._update_repository_general_commit_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_repository_general_commit_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/repositories/{repository_id}/general-commit-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRepositoryGeneralCommitRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_repository_general_policy_async(self, request):
         r"""修改仓库通用策略
 
@@ -13855,6 +17383,140 @@ class CodeHubAsyncClient(Client):
             "resource_path": "/v4/repositories/{repository_id}/inherit-setting",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateRepositoryInheritSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_repository_label_async(self, request):
+        r"""修改仓库标签
+
+        修改仓库标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRepositoryLabel
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryLabelRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryLabelResponse`
+        """
+        http_info = self._update_repository_label_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_repository_label_async_invoker(self, request):
+        http_info = self._update_repository_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_repository_label_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/repositories/{repository_id}/label",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRepositoryLabelResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_repository_remote_mirror_async(self, request):
+        r"""更新仓库镜像信息
+
+        更新仓库镜像信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRepositoryRemoteMirror
+        :type request: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryRemoteMirrorRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.UpdateRepositoryRemoteMirrorResponse`
+        """
+        http_info = self._update_repository_remote_mirror_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_repository_remote_mirror_async_invoker(self, request):
+        http_info = self._update_repository_remote_mirror_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_repository_remote_mirror_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/repositories/{repository_id}/remote-mirror",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRepositoryRemoteMirrorResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -14033,286 +17695,6 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
-    def create_tag_async(self, request):
-        r"""创建标签
-
-        创建标签
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateTag
-        :type request: :class:`huaweicloudsdkcodehub.v4.CreateTagRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.CreateTagResponse`
-        """
-        http_info = self._create_tag_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_tag_async_invoker(self, request):
-        http_info = self._create_tag_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_tag_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v4/repositories/{repository_id}/repository/tags",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateTagResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_tag_async(self, request):
-        r"""删除标签
-
-        删除标签
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteTag
-        :type request: :class:`huaweicloudsdkcodehub.v4.DeleteTagRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.DeleteTagResponse`
-        """
-        http_info = self._delete_tag_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_tag_async_invoker(self, request):
-        http_info = self._delete_tag_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_tag_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v4/repositories/{repository_id}/repository/tag",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteTagResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'tag_name' in local_var_params:
-            query_params.append(('tag_name', local_var_params['tag_name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_tags_async(self, request):
-        r"""获取标签列表
-
-        获取标签列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListTags
-        :type request: :class:`huaweicloudsdkcodehub.v4.ListTagsRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ListTagsResponse`
-        """
-        http_info = self._list_tags_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_tags_async_invoker(self, request):
-        http_info = self._list_tags_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_tags_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/repository/tags",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListTagsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'creator' in local_var_params:
-            query_params.append(('creator', local_var_params['creator']))
-        if 'sort' in local_var_params:
-            query_params.append(('sort', local_var_params['sort']))
-        if 'search' in local_var_params:
-            query_params.append(('search', local_var_params['search']))
-        if 'order_by' in local_var_params:
-            query_params.append(('order_by', local_var_params['order_by']))
-        if 'view' in local_var_params:
-            query_params.append(('view', local_var_params['view']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Total", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_tag_async(self, request):
-        r"""查看标签详情
-
-        查看标签详情
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowTag
-        :type request: :class:`huaweicloudsdkcodehub.v4.ShowTagRequest`
-        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowTagResponse`
-        """
-        http_info = self._show_tag_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_tag_async_invoker(self, request):
-        http_info = self._show_tag_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_tag_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v4/repositories/{repository_id}/repository/tag",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowTagResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'repository_id' in local_var_params:
-            path_params['repository_id'] = local_var_params['repository_id']
-
-        query_params = []
-        if 'tag_name' in local_var_params:
-            query_params.append(('tag_name', local_var_params['tag_name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Total", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def add_tenant_trusted_ip_address_async(self, request):
         r"""添加租户ip白名单
 
@@ -14426,6 +17808,154 @@ class CodeHubAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_tenant_repositories_async(self, request):
+        r"""租户仓库列表
+
+        租户下所有占用资源的仓库列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportTenantRepositories
+        :type request: :class:`huaweicloudsdkcodehub.v4.ExportTenantRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ExportTenantRepositoriesResponse`
+        """
+        http_info = self._export_tenant_repositories_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_tenant_repositories_async_invoker(self, request):
+        http_info = self._export_tenant_repositories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_tenant_repositories_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/tenant/repositories/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportTenantRepositoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tenant_repositories_async(self, request):
+        r"""租户仓库列表
+
+        租户下所有占用资源的仓库列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTenantRepositories
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListTenantRepositoriesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListTenantRepositoriesResponse`
+        """
+        http_info = self._list_tenant_repositories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tenant_repositories_async_invoker(self, request):
+        http_info = self._list_tenant_repositories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tenant_repositories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/tenant/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTenantRepositoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'repository_name' in local_var_params:
+            query_params.append(('repository_name', local_var_params['repository_name']))
+        if 'member_number' in local_var_params:
+            query_params.append(('member_number', local_var_params['member_number']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'owner' in local_var_params:
+            query_params.append(('owner', local_var_params['owner']))
+        if 'created_after' in local_var_params:
+            query_params.append(('created_after', local_var_params['created_after']))
+        if 'created_before' in local_var_params:
+            query_params.append(('created_before', local_var_params['created_before']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Total", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -14578,9 +18108,9 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def check_deploy_key_async(self, request):
-        r"""校验部署秘钥在上层代码组或项目是否配置
+        r"""校验部署密钥在上层代码组或项目是否配置
 
-        校验部署秘钥在上层代码组或项目是否配置
+        校验部署密钥在上层代码组或项目是否配置
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -14645,9 +18175,9 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def check_group_deploy_key_async(self, request):
-        r"""校验代码组部署秘钥在上层代码组或项目是否配置
+        r"""校验代码组部署密钥在上层代码组或项目是否配置
 
-        校验代码组部署秘钥在上层代码组或项目是否配置
+        校验代码组部署密钥在上层代码组或项目是否配置
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15062,6 +18592,203 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def show_group_e2e_setting_async(self, request):
+        r"""获取代码组下E2E设置信息
+
+        获取代码组下E2E设置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowGroupE2eSetting
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowGroupE2eSettingRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowGroupE2eSettingResponse`
+        """
+        http_info = self._show_group_e2e_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_group_e2e_setting_async_invoker(self, request):
+        http_info = self._show_group_e2e_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_group_e2e_setting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/groups/{group_id}/e2e-setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGroupE2eSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_project_e2e_setting_async(self, request):
+        r"""获取项目下E2E设置信息
+
+        获取项目下E2E设置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowProjectE2eSetting
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowProjectE2eSettingRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowProjectE2eSettingResponse`
+        """
+        http_info = self._show_project_e2e_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_project_e2e_setting_async_invoker(self, request):
+        http_info = self._show_project_e2e_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_e2e_setting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/e2e-setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectE2eSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_repository_e2e_setting_async(self, request):
+        r"""获取仓库下E2E设置信息
+
+        获取仓库下E2E设置信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRepositoryE2eSetting
+        :type request: :class:`huaweicloudsdkcodehub.v4.ShowRepositoryE2eSettingRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ShowRepositoryE2eSettingResponse`
+        """
+        http_info = self._show_repository_e2e_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_repository_e2e_setting_async_invoker(self, request):
+        http_info = self._show_repository_e2e_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repository_e2e_setting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/repositories/{repository_id}/e2e-setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryE2eSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'take_effect' in local_var_params:
+            query_params.append(('take_effect', local_var_params['take_effect']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_ssh_key_async(self, request):
         r"""添加ssh公钥
 
@@ -15087,6 +18814,71 @@ class CodeHubAsyncClient(Client):
             "resource_path": "/v4/user/keys",
             "request_type": request.__class__.__name__,
             "response_type": "AddSshKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_validate_user_group_permissions_async(self, request):
+        r"""获取当前用户指定的代码组列表中的权限
+
+        获取当前用户指定的代码组列表中的权限
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchValidateUserGroupPermissions
+        :type request: :class:`huaweicloudsdkcodehub.v4.BatchValidateUserGroupPermissionsRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.BatchValidateUserGroupPermissionsResponse`
+        """
+        http_info = self._batch_validate_user_group_permissions_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_validate_user_group_permissions_async_invoker(self, request):
+        http_info = self._batch_validate_user_group_permissions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_validate_user_group_permissions_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/user/groups/group-permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchValidateUserGroupPermissionsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -15192,6 +18984,79 @@ class CodeHubAsyncClient(Client):
 
         return http_info
 
+    def list_impersonation_tokens_async(self, request):
+        r"""获取用户的个人访问令牌
+
+        获取用户的个人访问令牌
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListImpersonationTokens
+        :type request: :class:`huaweicloudsdkcodehub.v4.ListImpersonationTokensRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v4.ListImpersonationTokensResponse`
+        """
+        http_info = self._list_impersonation_tokens_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_impersonation_tokens_async_invoker(self, request):
+        http_info = self._list_impersonation_tokens_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_impersonation_tokens_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/users/impersonation-tokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImpersonationTokensResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_user_gpg_keys_async(self, request):
         r"""获取当前用户的gpg_key列表
 
@@ -15258,9 +19123,9 @@ class CodeHubAsyncClient(Client):
         return http_info
 
     def list_user_keys_async(self, request):
-        r"""获取当前用户的秘钥列表
+        r"""获取当前用户的密钥列表
 
-        获取当前用户的秘钥列表
+        获取当前用户的密钥列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 

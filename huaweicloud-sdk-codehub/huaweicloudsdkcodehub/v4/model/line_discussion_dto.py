@@ -37,7 +37,7 @@ class LineDiscussionDto:
         :type discussions: list[:class:`huaweicloudsdkcodehub.v4.MergeRequestBasicDiscussionDto`]
         :param line: **参数解释：** 所在的行号。
         :type line: int
-        :param type: **参数解释：** 所在的行的类型。 old: 左侧删除行。 new: 右侧新增行。 unchanged-l: 左侧不变行。 unchanged-r: 右侧不变行。
+        :param type: **参数解释：** 所在的行的类型。 **取值范围：** old: 左侧删除行。 new: 右侧新增行。 unchanged-l: 左侧不变行。 unchanged-r: 右侧不变行。
         :type type: str
         """
         
@@ -103,7 +103,7 @@ class LineDiscussionDto:
     def type(self):
         r"""Gets the type of this LineDiscussionDto.
 
-        **参数解释：** 所在的行的类型。 old: 左侧删除行。 new: 右侧新增行。 unchanged-l: 左侧不变行。 unchanged-r: 右侧不变行。
+        **参数解释：** 所在的行的类型。 **取值范围：** old: 左侧删除行。 new: 右侧新增行。 unchanged-l: 左侧不变行。 unchanged-r: 右侧不变行。
 
         :return: The type of this LineDiscussionDto.
         :rtype: str
@@ -114,7 +114,7 @@ class LineDiscussionDto:
     def type(self, type):
         r"""Sets the type of this LineDiscussionDto.
 
-        **参数解释：** 所在的行的类型。 old: 左侧删除行。 new: 右侧新增行。 unchanged-l: 左侧不变行。 unchanged-r: 右侧不变行。
+        **参数解释：** 所在的行的类型。 **取值范围：** old: 左侧删除行。 new: 右侧新增行。 unchanged-l: 左侧不变行。 unchanged-r: 右侧不变行。
 
         :param type: The type of this LineDiscussionDto.
         :type type: str

@@ -19,16 +19,18 @@ class RestartConfiguration:
     openapi_types = {
         'restart_server': 'bool',
         'forcible': 'bool',
-        'delay': 'bool'
+        'delay': 'bool',
+        'restart_policy': 'RestartPolicy'
     }
 
     attribute_map = {
         'restart_server': 'restart_server',
         'forcible': 'forcible',
-        'delay': 'delay'
+        'delay': 'delay',
+        'restart_policy': 'restart_policy'
     }
 
-    def __init__(self, restart_server=None, forcible=None, delay=None):
+    def __init__(self, restart_server=None, forcible=None, delay=None, restart_policy=None):
         r"""RestartConfiguration
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class RestartConfiguration:
         :type forcible: bool
         :param delay: 是否在可维护时间段内重启。
         :type delay: bool
+        :param restart_policy: 
+        :type restart_policy: :class:`huaweicloudsdkrds.v3.RestartPolicy`
         """
         
         
@@ -46,6 +50,7 @@ class RestartConfiguration:
         self._restart_server = None
         self._forcible = None
         self._delay = None
+        self._restart_policy = None
         self.discriminator = None
 
         if restart_server is not None:
@@ -54,6 +59,8 @@ class RestartConfiguration:
             self.forcible = forcible
         if delay is not None:
             self.delay = delay
+        if restart_policy is not None:
+            self.restart_policy = restart_policy
 
     @property
     def restart_server(self):
@@ -120,6 +127,24 @@ class RestartConfiguration:
         :type delay: bool
         """
         self._delay = delay
+
+    @property
+    def restart_policy(self):
+        r"""Gets the restart_policy of this RestartConfiguration.
+
+        :return: The restart_policy of this RestartConfiguration.
+        :rtype: :class:`huaweicloudsdkrds.v3.RestartPolicy`
+        """
+        return self._restart_policy
+
+    @restart_policy.setter
+    def restart_policy(self, restart_policy):
+        r"""Sets the restart_policy of this RestartConfiguration.
+
+        :param restart_policy: The restart_policy of this RestartConfiguration.
+        :type restart_policy: :class:`huaweicloudsdkrds.v3.RestartPolicy`
+        """
+        self._restart_policy = restart_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

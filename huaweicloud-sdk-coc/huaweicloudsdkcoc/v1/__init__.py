@@ -157,7 +157,6 @@ from huaweicloudsdkcoc.v1.model.execution_step import ExecutionStep
 from huaweicloudsdkcoc.v1.model.execution_step_inputs import ExecutionStepInputs
 from huaweicloudsdkcoc.v1.model.execution_summary import ExecutionSummary
 from huaweicloudsdkcoc.v1.model.external_attachment import ExternalAttachment
-from huaweicloudsdkcoc.v1.model.extra_field_info import ExtraFieldInfo
 from huaweicloudsdkcoc.v1.model.get_document_atomic_info_request import GetDocumentAtomicInfoRequest
 from huaweicloudsdkcoc.v1.model.get_document_atomic_info_response import GetDocumentAtomicInfoResponse
 from huaweicloudsdkcoc.v1.model.get_document_request import GetDocumentRequest

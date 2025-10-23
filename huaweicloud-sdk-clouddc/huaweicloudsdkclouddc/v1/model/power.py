@@ -22,7 +22,7 @@ class Power:
         'model': 'str',
         'manufacturer': 'str',
         'power_supply_type': 'str',
-        'power_capacity_watts': 'str',
+        'power_capacity_watts': 'int',
         'line_input_voltage': 'int',
         'output_voltage': 'int',
         'protocol': 'str',
@@ -66,7 +66,7 @@ class Power:
         :param power_supply_type: 输入模式
         :type power_supply_type: str
         :param power_capacity_watts: 额定功率
-        :type power_capacity_watts: str
+        :type power_capacity_watts: int
         :param line_input_voltage: 输入电压
         :type line_input_voltage: int
         :param output_voltage: 输出电压
@@ -249,7 +249,7 @@ class Power:
         额定功率
 
         :return: The power_capacity_watts of this Power.
-        :rtype: str
+        :rtype: int
         """
         return self._power_capacity_watts
 
@@ -260,7 +260,7 @@ class Power:
         额定功率
 
         :param power_capacity_watts: The power_capacity_watts of this Power.
-        :type power_capacity_watts: str
+        :type power_capacity_watts: int
         """
         self._power_capacity_watts = power_capacity_watts
 
