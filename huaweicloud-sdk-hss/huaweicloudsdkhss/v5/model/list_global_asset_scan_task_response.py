@@ -30,7 +30,7 @@ class ListGlobalAssetScanTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param exist: 是否存在全量扫描任务: - true ：是 - false : 否
+        :param exist: **参数解释** 是否存在全量扫描任务 **取值范围** - true：是 - false：否 
         :type exist: bool
         """
         
@@ -46,7 +46,7 @@ class ListGlobalAssetScanTaskResponse(SdkResponse):
     def exist(self):
         r"""Gets the exist of this ListGlobalAssetScanTaskResponse.
 
-        是否存在全量扫描任务: - true ：是 - false : 否
+        **参数解释** 是否存在全量扫描任务 **取值范围** - true：是 - false：否 
 
         :return: The exist of this ListGlobalAssetScanTaskResponse.
         :rtype: bool
@@ -57,7 +57,7 @@ class ListGlobalAssetScanTaskResponse(SdkResponse):
     def exist(self, exist):
         r"""Sets the exist of this ListGlobalAssetScanTaskResponse.
 
-        是否存在全量扫描任务: - true ：是 - false : 否
+        **参数解释** 是否存在全量扫描任务 **取值范围** - true：是 - false：否 
 
         :param exist: The exist of this ListGlobalAssetScanTaskResponse.
         :type exist: bool

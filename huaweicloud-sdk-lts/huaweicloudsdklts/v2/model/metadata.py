@@ -26,7 +26,8 @@ class Metadata:
         'resource_provider': 'str',
         'lts_alarm_type': 'str',
         'log_group_name': 'str',
-        'log_stream_name': 'str'
+        'log_stream_name': 'str',
+        'event_subtype': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class Metadata:
         'resource_provider': 'resource_provider',
         'lts_alarm_type': 'lts_alarm_type',
         'log_group_name': 'log_group_name',
-        'log_stream_name': 'log_stream_name'
+        'log_stream_name': 'log_stream_name',
+        'event_subtype': 'event_subtype'
     }
 
-    def __init__(self, event_type=None, event_id=None, event_severity=None, event_name=None, resource_type=None, resource_id=None, resource_provider=None, lts_alarm_type=None, log_group_name=None, log_stream_name=None):
+    def __init__(self, event_type=None, event_id=None, event_severity=None, event_name=None, resource_type=None, resource_id=None, resource_provider=None, lts_alarm_type=None, log_group_name=None, log_stream_name=None, event_subtype=None):
         r"""Metadata
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class Metadata:
         :type log_group_name: str
         :param log_stream_name: 日志流原始名称
         :type log_stream_name: str
+        :param event_subtype: **参数解释：** 告警类型。 **取值范围：** - sql： sql告警 - keywords：关键词告警
+        :type event_subtype: str
         """
         
         
@@ -81,6 +85,7 @@ class Metadata:
         self._lts_alarm_type = None
         self._log_group_name = None
         self._log_stream_name = None
+        self._event_subtype = None
         self.discriminator = None
 
         self.event_type = event_type
@@ -95,6 +100,8 @@ class Metadata:
             self.log_group_name = log_group_name
         if log_stream_name is not None:
             self.log_stream_name = log_stream_name
+        if event_subtype is not None:
+            self.event_subtype = event_subtype
 
     @property
     def event_type(self):
@@ -315,6 +322,28 @@ class Metadata:
         :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
+
+    @property
+    def event_subtype(self):
+        r"""Gets the event_subtype of this Metadata.
+
+        **参数解释：** 告警类型。 **取值范围：** - sql： sql告警 - keywords：关键词告警
+
+        :return: The event_subtype of this Metadata.
+        :rtype: str
+        """
+        return self._event_subtype
+
+    @event_subtype.setter
+    def event_subtype(self, event_subtype):
+        r"""Sets the event_subtype of this Metadata.
+
+        **参数解释：** 告警类型。 **取值范围：** - sql： sql告警 - keywords：关键词告警
+
+        :param event_subtype: The event_subtype of this Metadata.
+        :type event_subtype: str
+        """
+        self._event_subtype = event_subtype
 
     def to_dict(self):
         """Returns the model properties as a dict"""

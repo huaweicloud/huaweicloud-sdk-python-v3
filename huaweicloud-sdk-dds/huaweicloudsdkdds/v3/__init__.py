@@ -370,6 +370,7 @@ from huaweicloudsdkdds.v3.model.switch_ssl_request import SwitchSslRequest
 from huaweicloudsdkdds.v3.model.switch_ssl_request_body import SwitchSslRequestBody
 from huaweicloudsdkdds.v3.model.switch_ssl_response import SwitchSslResponse
 from huaweicloudsdkdds.v3.model.switchover_replica_set_request import SwitchoverReplicaSetRequest
+from huaweicloudsdkdds.v3.model.switchover_replica_set_request_body import SwitchoverReplicaSetRequestBody
 from huaweicloudsdkdds.v3.model.switchover_replica_set_response import SwitchoverReplicaSetResponse
 from huaweicloudsdkdds.v3.model.tag_item import TagItem
 from huaweicloudsdkdds.v3.model.tag_response import TagResponse

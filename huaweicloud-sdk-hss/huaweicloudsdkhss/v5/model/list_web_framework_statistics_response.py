@@ -32,9 +32,9 @@ class ListWebFrameworkStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: Web框架统计信息总数
+        :param total_num: **参数解释** Web框架统计信息总数 **取值范围** 最小值0，最大值10000 
         :type total_num: int
-        :param data_list: Web框架统计信息列表
+        :param data_list: **参数解释** Web框架统计信息列表 **取值范围** 最小值0，最大值300000 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.WebFrameworkStatisticsResponseInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListWebFrameworkStatisticsResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListWebFrameworkStatisticsResponse.
 
-        Web框架统计信息总数
+        **参数解释** Web框架统计信息总数 **取值范围** 最小值0，最大值10000 
 
         :return: The total_num of this ListWebFrameworkStatisticsResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListWebFrameworkStatisticsResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListWebFrameworkStatisticsResponse.
 
-        Web框架统计信息总数
+        **参数解释** Web框架统计信息总数 **取值范围** 最小值0，最大值10000 
 
         :param total_num: The total_num of this ListWebFrameworkStatisticsResponse.
         :type total_num: int
@@ -75,7 +75,7 @@ class ListWebFrameworkStatisticsResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListWebFrameworkStatisticsResponse.
 
-        Web框架统计信息列表
+        **参数解释** Web框架统计信息列表 **取值范围** 最小值0，最大值300000 
 
         :return: The data_list of this ListWebFrameworkStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.WebFrameworkStatisticsResponseInfo`]
@@ -86,7 +86,7 @@ class ListWebFrameworkStatisticsResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListWebFrameworkStatisticsResponse.
 
-        Web框架统计信息列表
+        **参数解释** Web框架统计信息列表 **取值范围** 最小值0，最大值300000 
 
         :param data_list: The data_list of this ListWebFrameworkStatisticsResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.WebFrameworkStatisticsResponseInfo`]

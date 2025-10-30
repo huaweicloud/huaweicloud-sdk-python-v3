@@ -55,7 +55,7 @@ class AppChangeResponseInfo:
         :type app_name: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_ip: **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        :param host_ip: **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
         :type host_ip: str
         :param version: **参数解释**: 版本号 **取值范围**: 字符长度1-128位 
         :type version: str
@@ -211,7 +211,7 @@ class AppChangeResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this AppChangeResponseInfo.
 
-        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
 
         :return: The host_ip of this AppChangeResponseInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class AppChangeResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this AppChangeResponseInfo.
 
-        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
 
         :param host_ip: The host_ip of this AppChangeResponseInfo.
         :type host_ip: str

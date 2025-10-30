@@ -28,7 +28,8 @@ class ListLogStreamsResponseBody1LogStreams:
         'auth_web_tracking': 'bool',
         'ttl_in_days': 'int',
         'hot_storage_days': 'int',
-        'log_group_id': 'str'
+        'log_group_id': 'str',
+        'is_favorite': 'bool'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class ListLogStreamsResponseBody1LogStreams:
         'auth_web_tracking': 'auth_web_tracking',
         'ttl_in_days': 'ttl_in_days',
         'hot_storage_days': 'hot_storage_days',
-        'log_group_id': 'log_group_id'
+        'log_group_id': 'log_group_id',
+        'is_favorite': 'is_favorite'
     }
 
-    def __init__(self, creation_time=None, log_stream_id=None, log_stream_name=None, log_stream_name_alias=None, tag=None, filter_count=None, whether_log_storage=None, hot_cold_separation=None, auth_web_tracking=None, ttl_in_days=None, hot_storage_days=None, log_group_id=None):
+    def __init__(self, creation_time=None, log_stream_id=None, log_stream_name=None, log_stream_name_alias=None, tag=None, filter_count=None, whether_log_storage=None, hot_cold_separation=None, auth_web_tracking=None, ttl_in_days=None, hot_storage_days=None, log_group_id=None, is_favorite=None):
         r"""ListLogStreamsResponseBody1LogStreams
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class ListLogStreamsResponseBody1LogStreams:
         :type hot_storage_days: int
         :param log_group_id: 日志组ID
         :type log_group_id: str
+        :param is_favorite: **参数解释：** 是否收藏日志流。 **取值范围：** - true：收藏日志流。 - false：不收藏日志流。
+        :type is_favorite: bool
         """
         
         
@@ -91,6 +95,7 @@ class ListLogStreamsResponseBody1LogStreams:
         self._ttl_in_days = None
         self._hot_storage_days = None
         self._log_group_id = None
+        self._is_favorite = None
         self.discriminator = None
 
         self.creation_time = creation_time
@@ -112,6 +117,8 @@ class ListLogStreamsResponseBody1LogStreams:
             self.hot_storage_days = hot_storage_days
         if log_group_id is not None:
             self.log_group_id = log_group_id
+        if is_favorite is not None:
+            self.is_favorite = is_favorite
 
     @property
     def creation_time(self):
@@ -376,6 +383,28 @@ class ListLogStreamsResponseBody1LogStreams:
         :type log_group_id: str
         """
         self._log_group_id = log_group_id
+
+    @property
+    def is_favorite(self):
+        r"""Gets the is_favorite of this ListLogStreamsResponseBody1LogStreams.
+
+        **参数解释：** 是否收藏日志流。 **取值范围：** - true：收藏日志流。 - false：不收藏日志流。
+
+        :return: The is_favorite of this ListLogStreamsResponseBody1LogStreams.
+        :rtype: bool
+        """
+        return self._is_favorite
+
+    @is_favorite.setter
+    def is_favorite(self, is_favorite):
+        r"""Sets the is_favorite of this ListLogStreamsResponseBody1LogStreams.
+
+        **参数解释：** 是否收藏日志流。 **取值范围：** - true：收藏日志流。 - false：不收藏日志流。
+
+        :param is_favorite: The is_favorite of this ListLogStreamsResponseBody1LogStreams.
+        :type is_favorite: bool
+        """
+        self._is_favorite = is_favorite
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -41,7 +41,7 @@ class SendVerificationCodeV2Req:
 
         :param receiver_type: 发送验证码的类型： 1：发送短信验证码
         :type receiver_type: int
-        :param timeout: 发送验证码的超时时间。 此参数不携带或携带值为null时，采用系统默认超时时间10分钟。 此参数值超过60时，取默认值5分钟。 单位：分钟。
+        :param timeout: 验证码超时时间。此参数不携带或携带值为null时，采用系统默认超时时间10分钟。此参数值超过60时，取值固定为5分钟。单位：分钟
         :type timeout: int
         :param mobile_phone: 指定发送验证码的手机号。 目前系统只支持中国手机号。 示例：13XXXXXXXXX
         :type mobile_phone: str
@@ -100,7 +100,7 @@ class SendVerificationCodeV2Req:
     def timeout(self):
         r"""Gets the timeout of this SendVerificationCodeV2Req.
 
-        发送验证码的超时时间。 此参数不携带或携带值为null时，采用系统默认超时时间10分钟。 此参数值超过60时，取默认值5分钟。 单位：分钟。
+        验证码超时时间。此参数不携带或携带值为null时，采用系统默认超时时间10分钟。此参数值超过60时，取值固定为5分钟。单位：分钟
 
         :return: The timeout of this SendVerificationCodeV2Req.
         :rtype: int
@@ -111,7 +111,7 @@ class SendVerificationCodeV2Req:
     def timeout(self, timeout):
         r"""Sets the timeout of this SendVerificationCodeV2Req.
 
-        发送验证码的超时时间。 此参数不携带或携带值为null时，采用系统默认超时时间10分钟。 此参数值超过60时，取默认值5分钟。 单位：分钟。
+        验证码超时时间。此参数不携带或携带值为null时，采用系统默认超时时间10分钟。此参数值超过60时，取值固定为5分钟。单位：分钟
 
         :param timeout: The timeout of this SendVerificationCodeV2Req.
         :type timeout: int

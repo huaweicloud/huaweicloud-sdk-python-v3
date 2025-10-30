@@ -1,0 +1,289 @@
+# coding: utf-8
+
+import six
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class HostRiskNumInfoResponseInfo:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'host_id': 'str',
+        'host_name': 'str',
+        'host_ip': 'str',
+        'scan_time': 'int',
+        'high_risk_num': 'int',
+        'medium_risk_num': 'int',
+        'low_risk_num': 'int'
+    }
+
+    attribute_map = {
+        'host_id': 'host_id',
+        'host_name': 'host_name',
+        'host_ip': 'host_ip',
+        'scan_time': 'scan_time',
+        'high_risk_num': 'high_risk_num',
+        'medium_risk_num': 'medium_risk_num',
+        'low_risk_num': 'low_risk_num'
+    }
+
+    def __init__(self, host_id=None, host_name=None, host_ip=None, scan_time=None, high_risk_num=None, medium_risk_num=None, low_risk_num=None):
+        r"""HostRiskNumInfoResponseInfo
+
+        The model defined in huaweicloud sdk
+
+        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :type host_id: str
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
+        :type host_name: str
+        :param host_ip: **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
+        :type host_ip: str
+        :param scan_time: **参数解释**: 扫描时间(ms)。 **取值范围**: 取值0-9223372036854775807 
+        :type scan_time: int
+        :param high_risk_num: **参数解释**: 高危风险数量。 **取值范围**: 取值0-2147483647 
+        :type high_risk_num: int
+        :param medium_risk_num: **参数解释**: 中危风险数量。 **取值范围**: 取值0-2147483647 
+        :type medium_risk_num: int
+        :param low_risk_num: **参数解释**: 低危风险数量。 **取值范围**: 取值0-2147483647 
+        :type low_risk_num: int
+        """
+        
+        
+
+        self._host_id = None
+        self._host_name = None
+        self._host_ip = None
+        self._scan_time = None
+        self._high_risk_num = None
+        self._medium_risk_num = None
+        self._low_risk_num = None
+        self.discriminator = None
+
+        if host_id is not None:
+            self.host_id = host_id
+        if host_name is not None:
+            self.host_name = host_name
+        if host_ip is not None:
+            self.host_ip = host_ip
+        if scan_time is not None:
+            self.scan_time = scan_time
+        if high_risk_num is not None:
+            self.high_risk_num = high_risk_num
+        if medium_risk_num is not None:
+            self.medium_risk_num = medium_risk_num
+        if low_risk_num is not None:
+            self.low_risk_num = low_risk_num
+
+    @property
+    def host_id(self):
+        r"""Gets the host_id of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+
+        :return: The host_id of this HostRiskNumInfoResponseInfo.
+        :rtype: str
+        """
+        return self._host_id
+
+    @host_id.setter
+    def host_id(self, host_id):
+        r"""Sets the host_id of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+
+        :param host_id: The host_id of this HostRiskNumInfoResponseInfo.
+        :type host_id: str
+        """
+        self._host_id = host_id
+
+    @property
+    def host_name(self):
+        r"""Gets the host_name of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
+
+        :return: The host_name of this HostRiskNumInfoResponseInfo.
+        :rtype: str
+        """
+        return self._host_name
+
+    @host_name.setter
+    def host_name(self, host_name):
+        r"""Sets the host_name of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
+
+        :param host_name: The host_name of this HostRiskNumInfoResponseInfo.
+        :type host_name: str
+        """
+        self._host_name = host_name
+
+    @property
+    def host_ip(self):
+        r"""Gets the host_ip of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
+
+        :return: The host_ip of this HostRiskNumInfoResponseInfo.
+        :rtype: str
+        """
+        return self._host_ip
+
+    @host_ip.setter
+    def host_ip(self, host_ip):
+        r"""Sets the host_ip of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
+
+        :param host_ip: The host_ip of this HostRiskNumInfoResponseInfo.
+        :type host_ip: str
+        """
+        self._host_ip = host_ip
+
+    @property
+    def scan_time(self):
+        r"""Gets the scan_time of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 扫描时间(ms)。 **取值范围**: 取值0-9223372036854775807 
+
+        :return: The scan_time of this HostRiskNumInfoResponseInfo.
+        :rtype: int
+        """
+        return self._scan_time
+
+    @scan_time.setter
+    def scan_time(self, scan_time):
+        r"""Sets the scan_time of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 扫描时间(ms)。 **取值范围**: 取值0-9223372036854775807 
+
+        :param scan_time: The scan_time of this HostRiskNumInfoResponseInfo.
+        :type scan_time: int
+        """
+        self._scan_time = scan_time
+
+    @property
+    def high_risk_num(self):
+        r"""Gets the high_risk_num of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 高危风险数量。 **取值范围**: 取值0-2147483647 
+
+        :return: The high_risk_num of this HostRiskNumInfoResponseInfo.
+        :rtype: int
+        """
+        return self._high_risk_num
+
+    @high_risk_num.setter
+    def high_risk_num(self, high_risk_num):
+        r"""Sets the high_risk_num of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 高危风险数量。 **取值范围**: 取值0-2147483647 
+
+        :param high_risk_num: The high_risk_num of this HostRiskNumInfoResponseInfo.
+        :type high_risk_num: int
+        """
+        self._high_risk_num = high_risk_num
+
+    @property
+    def medium_risk_num(self):
+        r"""Gets the medium_risk_num of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 中危风险数量。 **取值范围**: 取值0-2147483647 
+
+        :return: The medium_risk_num of this HostRiskNumInfoResponseInfo.
+        :rtype: int
+        """
+        return self._medium_risk_num
+
+    @medium_risk_num.setter
+    def medium_risk_num(self, medium_risk_num):
+        r"""Sets the medium_risk_num of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 中危风险数量。 **取值范围**: 取值0-2147483647 
+
+        :param medium_risk_num: The medium_risk_num of this HostRiskNumInfoResponseInfo.
+        :type medium_risk_num: int
+        """
+        self._medium_risk_num = medium_risk_num
+
+    @property
+    def low_risk_num(self):
+        r"""Gets the low_risk_num of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 低危风险数量。 **取值范围**: 取值0-2147483647 
+
+        :return: The low_risk_num of this HostRiskNumInfoResponseInfo.
+        :rtype: int
+        """
+        return self._low_risk_num
+
+    @low_risk_num.setter
+    def low_risk_num(self, low_risk_num):
+        r"""Sets the low_risk_num of this HostRiskNumInfoResponseInfo.
+
+        **参数解释**: 低危风险数量。 **取值范围**: 取值0-2147483647 
+
+        :param low_risk_num: The low_risk_num of this HostRiskNumInfoResponseInfo.
+        :type low_risk_num: int
+        """
+        self._low_risk_num = low_risk_num
+
+    def to_dict(self):
+        """Returns the model properties as a dict"""
+        result = {}
+
+        for attr, _ in six.iteritems(self.openapi_types):
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        if six.PY2:
+            import sys
+            reload(sys)
+            sys.setdefaultencoding("utf-8")
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, HostRiskNumInfoResponseInfo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

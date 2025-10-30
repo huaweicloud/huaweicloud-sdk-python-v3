@@ -17,28 +17,35 @@ class SwitchoverReplicaSetRequest:
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'body': 'SwitchoverReplicaSetRequestBody'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'body': 'body'
     }
 
-    def __init__(self, instance_id=None):
+    def __init__(self, instance_id=None, body=None):
         r"""SwitchoverReplicaSetRequest
 
         The model defined in huaweicloud sdk
 
         :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
         :type instance_id: str
+        :param body: Body of the SwitchoverReplicaSetRequest
+        :type body: :class:`huaweicloudsdkdds.v3.SwitchoverReplicaSetRequestBody`
         """
         
         
 
         self._instance_id = None
+        self._body = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        if body is not None:
+            self.body = body
 
     @property
     def instance_id(self):
@@ -61,6 +68,24 @@ class SwitchoverReplicaSetRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def body(self):
+        r"""Gets the body of this SwitchoverReplicaSetRequest.
+
+        :return: The body of this SwitchoverReplicaSetRequest.
+        :rtype: :class:`huaweicloudsdkdds.v3.SwitchoverReplicaSetRequestBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this SwitchoverReplicaSetRequest.
+
+        :param body: The body of this SwitchoverReplicaSetRequest.
+        :type body: :class:`huaweicloudsdkdds.v3.SwitchoverReplicaSetRequestBody`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

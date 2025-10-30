@@ -24,7 +24,9 @@ class CreateAntileakageRuleResponse(SdkResponse):
         'category': 'str',
         'contents': 'list[str]',
         'timestamp': 'int',
-        'status': 'int'
+        'description': 'str',
+        'status': 'int',
+        'action': 'LeakageListInfoAction'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class CreateAntileakageRuleResponse(SdkResponse):
         'category': 'category',
         'contents': 'contents',
         'timestamp': 'timestamp',
-        'status': 'status'
+        'description': 'description',
+        'status': 'status',
+        'action': 'action'
     }
 
-    def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, timestamp=None, status=None):
+    def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, timestamp=None, description=None, status=None, action=None):
         r"""CreateAntileakageRuleResponse
 
         The model defined in huaweicloud sdk
@@ -54,8 +58,12 @@ class CreateAntileakageRuleResponse(SdkResponse):
         :type contents: list[str]
         :param timestamp: 创建规则时间戳
         :type timestamp: int
+        :param description: 描述
+        :type description: str
         :param status: 规则状态，0：关闭，1：开启
         :type status: int
+        :param action: 
+        :type action: :class:`huaweicloudsdkwaf.v1.LeakageListInfoAction`
         """
         
         super(CreateAntileakageRuleResponse, self).__init__()
@@ -66,7 +74,9 @@ class CreateAntileakageRuleResponse(SdkResponse):
         self._category = None
         self._contents = None
         self._timestamp = None
+        self._description = None
         self._status = None
+        self._action = None
         self.discriminator = None
 
         if id is not None:
@@ -81,8 +91,12 @@ class CreateAntileakageRuleResponse(SdkResponse):
             self.contents = contents
         if timestamp is not None:
             self.timestamp = timestamp
+        if description is not None:
+            self.description = description
         if status is not None:
             self.status = status
+        if action is not None:
+            self.action = action
 
     @property
     def id(self):
@@ -217,6 +231,28 @@ class CreateAntileakageRuleResponse(SdkResponse):
         self._timestamp = timestamp
 
     @property
+    def description(self):
+        r"""Gets the description of this CreateAntileakageRuleResponse.
+
+        描述
+
+        :return: The description of this CreateAntileakageRuleResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this CreateAntileakageRuleResponse.
+
+        描述
+
+        :param description: The description of this CreateAntileakageRuleResponse.
+        :type description: str
+        """
+        self._description = description
+
+    @property
     def status(self):
         r"""Gets the status of this CreateAntileakageRuleResponse.
 
@@ -237,6 +273,24 @@ class CreateAntileakageRuleResponse(SdkResponse):
         :type status: int
         """
         self._status = status
+
+    @property
+    def action(self):
+        r"""Gets the action of this CreateAntileakageRuleResponse.
+
+        :return: The action of this CreateAntileakageRuleResponse.
+        :rtype: :class:`huaweicloudsdkwaf.v1.LeakageListInfoAction`
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        r"""Sets the action of this CreateAntileakageRuleResponse.
+
+        :param action: The action of this CreateAntileakageRuleResponse.
+        :type action: :class:`huaweicloudsdkwaf.v1.LeakageListInfoAction`
+        """
+        self._action = action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

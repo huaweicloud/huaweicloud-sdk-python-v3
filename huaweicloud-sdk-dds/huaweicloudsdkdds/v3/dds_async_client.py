@@ -7547,9 +7547,9 @@ class DdsAsyncClient(Client):
         return http_info
 
     def switchover_replica_set_async(self, request):
-        r"""切换副本集实例的主备节点
+        r"""切换实例的主备节点
 
-        切换副本集实例下的主备节点
+        切换实例下的主备节点
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7590,6 +7590,8 @@ class DdsAsyncClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

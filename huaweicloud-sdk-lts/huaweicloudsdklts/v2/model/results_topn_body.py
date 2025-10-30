@@ -22,8 +22,10 @@ class ResultsTopnBody:
         'write_traffic': 'float',
         'log_group_id': 'str',
         'log_group_name': 'str',
+        'log_group_name_alias': 'str',
         'log_stream_id': 'str',
         'log_stream_name': 'str',
+        'log_stream_name_alias': 'str',
         'basic_transfer': 'float',
         'senior_transfer': 'float',
         'is_agency_transfer': 'bool',
@@ -36,15 +38,17 @@ class ResultsTopnBody:
         'write_traffic': 'write_traffic',
         'log_group_id': 'log_group_id',
         'log_group_name': 'log_group_name',
+        'log_group_name_alias': 'log_group_name_alias',
         'log_stream_id': 'log_stream_id',
         'log_stream_name': 'log_stream_name',
+        'log_stream_name_alias': 'log_stream_name_alias',
         'basic_transfer': 'basic_transfer',
         'senior_transfer': 'senior_transfer',
         'is_agency_transfer': 'is_agency_transfer',
         'cold_storage': 'cold_storage'
     }
 
-    def __init__(self, index_traffic=None, storage=None, write_traffic=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, basic_transfer=None, senior_transfer=None, is_agency_transfer=None, cold_storage=None):
+    def __init__(self, index_traffic=None, storage=None, write_traffic=None, log_group_id=None, log_group_name=None, log_group_name_alias=None, log_stream_id=None, log_stream_name=None, log_stream_name_alias=None, basic_transfer=None, senior_transfer=None, is_agency_transfer=None, cold_storage=None):
         r"""ResultsTopnBody
 
         The model defined in huaweicloud sdk
@@ -59,10 +63,14 @@ class ResultsTopnBody:
         :type log_group_id: str
         :param log_group_name: 日志组名称，资源类型为日志组时返回
         :type log_group_name: str
+        :param log_group_name_alias: **参数解释：** 日志组名称别名。 **取值范围：** 不涉及。
+        :type log_group_name_alias: str
         :param log_stream_id: 日志流id，资源类型为日志流时返回
         :type log_stream_id: str
         :param log_stream_name: 日志流名称，资源类型为日志流时返回
         :type log_stream_name: str
+        :param log_stream_name_alias: **参数解释：** 日志流名称别名。 **取值范围：** 不涉及。
+        :type log_stream_name_alias: str
         :param basic_transfer: 基础转储流量，byte, 查询数据类型中包含basicTransfer时返回
         :type basic_transfer: float
         :param senior_transfer: 基础转储流量，byte, 查询数据类型中包含seniorTransfer时返回
@@ -80,8 +88,10 @@ class ResultsTopnBody:
         self._write_traffic = None
         self._log_group_id = None
         self._log_group_name = None
+        self._log_group_name_alias = None
         self._log_stream_id = None
         self._log_stream_name = None
+        self._log_stream_name_alias = None
         self._basic_transfer = None
         self._senior_transfer = None
         self._is_agency_transfer = None
@@ -93,10 +103,14 @@ class ResultsTopnBody:
         self.write_traffic = write_traffic
         self.log_group_id = log_group_id
         self.log_group_name = log_group_name
+        if log_group_name_alias is not None:
+            self.log_group_name_alias = log_group_name_alias
         if log_stream_id is not None:
             self.log_stream_id = log_stream_id
         if log_stream_name is not None:
             self.log_stream_name = log_stream_name
+        if log_stream_name_alias is not None:
+            self.log_stream_name_alias = log_stream_name_alias
         if basic_transfer is not None:
             self.basic_transfer = basic_transfer
         if senior_transfer is not None:
@@ -217,6 +231,28 @@ class ResultsTopnBody:
         self._log_group_name = log_group_name
 
     @property
+    def log_group_name_alias(self):
+        r"""Gets the log_group_name_alias of this ResultsTopnBody.
+
+        **参数解释：** 日志组名称别名。 **取值范围：** 不涉及。
+
+        :return: The log_group_name_alias of this ResultsTopnBody.
+        :rtype: str
+        """
+        return self._log_group_name_alias
+
+    @log_group_name_alias.setter
+    def log_group_name_alias(self, log_group_name_alias):
+        r"""Sets the log_group_name_alias of this ResultsTopnBody.
+
+        **参数解释：** 日志组名称别名。 **取值范围：** 不涉及。
+
+        :param log_group_name_alias: The log_group_name_alias of this ResultsTopnBody.
+        :type log_group_name_alias: str
+        """
+        self._log_group_name_alias = log_group_name_alias
+
+    @property
     def log_stream_id(self):
         r"""Gets the log_stream_id of this ResultsTopnBody.
 
@@ -259,6 +295,28 @@ class ResultsTopnBody:
         :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
+
+    @property
+    def log_stream_name_alias(self):
+        r"""Gets the log_stream_name_alias of this ResultsTopnBody.
+
+        **参数解释：** 日志流名称别名。 **取值范围：** 不涉及。
+
+        :return: The log_stream_name_alias of this ResultsTopnBody.
+        :rtype: str
+        """
+        return self._log_stream_name_alias
+
+    @log_stream_name_alias.setter
+    def log_stream_name_alias(self, log_stream_name_alias):
+        r"""Sets the log_stream_name_alias of this ResultsTopnBody.
+
+        **参数解释：** 日志流名称别名。 **取值范围：** 不涉及。
+
+        :param log_stream_name_alias: The log_stream_name_alias of this ResultsTopnBody.
+        :type log_stream_name_alias: str
+        """
+        self._log_stream_name_alias = log_stream_name_alias
 
     @property
     def basic_transfer(self):

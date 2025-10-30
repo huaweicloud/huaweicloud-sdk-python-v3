@@ -24,6 +24,8 @@ class CreateGeoipRuleResponse(SdkResponse):
         'geoip': 'str',
         'white': 'int',
         'status': 'int',
+        'ip_type': 'str',
+        'description': 'str',
         'timestamp': 'int'
     }
 
@@ -34,10 +36,12 @@ class CreateGeoipRuleResponse(SdkResponse):
         'geoip': 'geoip',
         'white': 'white',
         'status': 'status',
+        'ip_type': 'ip_type',
+        'description': 'description',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, name=None, policyid=None, geoip=None, white=None, status=None, timestamp=None):
+    def __init__(self, id=None, name=None, policyid=None, geoip=None, white=None, status=None, ip_type=None, description=None, timestamp=None):
         r"""CreateGeoipRuleResponse
 
         The model defined in huaweicloud sdk
@@ -54,6 +58,10 @@ class CreateGeoipRuleResponse(SdkResponse):
         :type white: int
         :param status: 规则状态，0：关闭，1：开启
         :type status: int
+        :param ip_type: ip范围。若您的网站使用独享模式，请确认独享引擎是否全部升级到最新版本，避免造成异常。202412之后的版本支持配置IP范围
+        :type ip_type: str
+        :param description: 规则描述
+        :type description: str
         :param timestamp: 创建规则时间戳
         :type timestamp: int
         """
@@ -66,6 +74,8 @@ class CreateGeoipRuleResponse(SdkResponse):
         self._geoip = None
         self._white = None
         self._status = None
+        self._ip_type = None
+        self._description = None
         self._timestamp = None
         self.discriminator = None
 
@@ -81,6 +91,10 @@ class CreateGeoipRuleResponse(SdkResponse):
             self.white = white
         if status is not None:
             self.status = status
+        if ip_type is not None:
+            self.ip_type = ip_type
+        if description is not None:
+            self.description = description
         if timestamp is not None:
             self.timestamp = timestamp
 
@@ -215,6 +229,50 @@ class CreateGeoipRuleResponse(SdkResponse):
         :type status: int
         """
         self._status = status
+
+    @property
+    def ip_type(self):
+        r"""Gets the ip_type of this CreateGeoipRuleResponse.
+
+        ip范围。若您的网站使用独享模式，请确认独享引擎是否全部升级到最新版本，避免造成异常。202412之后的版本支持配置IP范围
+
+        :return: The ip_type of this CreateGeoipRuleResponse.
+        :rtype: str
+        """
+        return self._ip_type
+
+    @ip_type.setter
+    def ip_type(self, ip_type):
+        r"""Sets the ip_type of this CreateGeoipRuleResponse.
+
+        ip范围。若您的网站使用独享模式，请确认独享引擎是否全部升级到最新版本，避免造成异常。202412之后的版本支持配置IP范围
+
+        :param ip_type: The ip_type of this CreateGeoipRuleResponse.
+        :type ip_type: str
+        """
+        self._ip_type = ip_type
+
+    @property
+    def description(self):
+        r"""Gets the description of this CreateGeoipRuleResponse.
+
+        规则描述
+
+        :return: The description of this CreateGeoipRuleResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this CreateGeoipRuleResponse.
+
+        规则描述
+
+        :param description: The description of this CreateGeoipRuleResponse.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def timestamp(self):

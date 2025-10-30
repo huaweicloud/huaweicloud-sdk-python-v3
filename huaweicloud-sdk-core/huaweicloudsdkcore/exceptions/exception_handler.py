@@ -109,7 +109,7 @@ def process_connection_error(connection_error, logger):
             return exceptions.SslHandShakeException(reason_str)
 
         if isinstance(each.reason, NewConnectionError):
-            if reason_str.endswith("getaddrinfo failed") or reason_str.endswith("Name or service not known"):
+            if "getaddrinfo failed" in reason_str or "Name or service not known" in reason_str:
                 logger.error("HostUnreachableException occurred. %s", reason_str)
                 return exceptions.HostUnreachableException(reason_str)
 

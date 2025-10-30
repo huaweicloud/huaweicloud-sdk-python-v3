@@ -70,6 +70,8 @@ class EipRegion:
                         "https://vpc.cn-south-2.myhuaweicloud.com")
     AP_SOUTHEAST_5 = Region("ap-southeast-5",
                         "https://vpc.ap-southeast-5.myhuaweicloud.com")
+    CN_NORTH_12 = Region("cn-north-12",
+                        "https://vpc.cn-north-12.myhuaweicloud.com")
 
     static_fields = {
         "af-south-1": AF_SOUTH_1,
@@ -104,6 +106,7 @@ class EipRegion:
         "cn-north-11": CN_NORTH_11,
         "cn-south-2": CN_SOUTH_2,
         "ap-southeast-5": AP_SOUTHEAST_5,
+        "cn-north-12": CN_NORTH_12,
     }
 
     @classmethod

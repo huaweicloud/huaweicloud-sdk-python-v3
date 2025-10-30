@@ -45,7 +45,7 @@ class SecurityConfigUserChangeInfo:
 
         :param change_type: **参数解释**： 主机账户历史变动类型 **取值范围**： - add：添加 - delete：删除 - modify：修改 
         :type change_type: str
-        :param login_permission: **参数解释**： 是否有登陆权限 **取值范围**： - true：有登录权限 - false：无登录权限 
+        :param login_permission: **参数解释**： 是否有登录权限 **取值范围**： - true：有登录权限 - false：无登录权限 
         :type login_permission: bool
         :param root_permission: **参数解释**： 是否有root权限 **取值范围**： - true：有root权限 - false：无root权限 
         :type root_permission: bool
@@ -116,7 +116,7 @@ class SecurityConfigUserChangeInfo:
     def login_permission(self):
         r"""Gets the login_permission of this SecurityConfigUserChangeInfo.
 
-        **参数解释**： 是否有登陆权限 **取值范围**： - true：有登录权限 - false：无登录权限 
+        **参数解释**： 是否有登录权限 **取值范围**： - true：有登录权限 - false：无登录权限 
 
         :return: The login_permission of this SecurityConfigUserChangeInfo.
         :rtype: bool
@@ -127,7 +127,7 @@ class SecurityConfigUserChangeInfo:
     def login_permission(self, login_permission):
         r"""Sets the login_permission of this SecurityConfigUserChangeInfo.
 
-        **参数解释**： 是否有登陆权限 **取值范围**： - true：有登录权限 - false：无登录权限 
+        **参数解释**： 是否有登录权限 **取值范围**： - true：有登录权限 - false：无登录权限 
 
         :param login_permission: The login_permission of this SecurityConfigUserChangeInfo.
         :type login_permission: bool

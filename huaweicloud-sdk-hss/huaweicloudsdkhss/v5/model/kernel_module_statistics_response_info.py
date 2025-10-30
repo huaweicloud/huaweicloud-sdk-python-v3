@@ -31,9 +31,9 @@ class KernelModuleStatisticsResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: 内核模块名称
+        :param name: **参数解释**: 内核模块名称 **取值范围**: 字符长度0-256 
         :type name: str
-        :param num: 内核模块统计信息总数
+        :param num: **参数解释** 内核模块统计信息总数 **取值范围** 最小值0，最大值300000 
         :type num: int
         """
         
@@ -52,7 +52,7 @@ class KernelModuleStatisticsResponseInfo:
     def name(self):
         r"""Gets the name of this KernelModuleStatisticsResponseInfo.
 
-        内核模块名称
+        **参数解释**: 内核模块名称 **取值范围**: 字符长度0-256 
 
         :return: The name of this KernelModuleStatisticsResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class KernelModuleStatisticsResponseInfo:
     def name(self, name):
         r"""Sets the name of this KernelModuleStatisticsResponseInfo.
 
-        内核模块名称
+        **参数解释**: 内核模块名称 **取值范围**: 字符长度0-256 
 
         :param name: The name of this KernelModuleStatisticsResponseInfo.
         :type name: str
@@ -74,7 +74,7 @@ class KernelModuleStatisticsResponseInfo:
     def num(self):
         r"""Gets the num of this KernelModuleStatisticsResponseInfo.
 
-        内核模块统计信息总数
+        **参数解释** 内核模块统计信息总数 **取值范围** 最小值0，最大值300000 
 
         :return: The num of this KernelModuleStatisticsResponseInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class KernelModuleStatisticsResponseInfo:
     def num(self, num):
         r"""Sets the num of this KernelModuleStatisticsResponseInfo.
 
-        内核模块统计信息总数
+        **参数解释** 内核模块统计信息总数 **取值范围** 最小值0，最大值300000 
 
         :param num: The num of this KernelModuleStatisticsResponseInfo.
         :type num: int

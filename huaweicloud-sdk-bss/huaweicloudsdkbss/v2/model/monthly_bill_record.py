@@ -46,7 +46,8 @@ class MonthlyBillRecord:
         'bonus_amount': 'decimal.Decimal',
         'debt_amount': 'decimal.Decimal',
         'writeoff_amount': 'decimal.Decimal',
-        'region_name': 'str'
+        'region_name': 'str',
+        'account_name': 'str'
     }
 
     attribute_map = {
@@ -79,10 +80,11 @@ class MonthlyBillRecord:
         'bonus_amount': 'bonus_amount',
         'debt_amount': 'debt_amount',
         'writeoff_amount': 'writeoff_amount',
-        'region_name': 'region_name'
+        'region_name': 'region_name',
+        'account_name': 'account_name'
     }
 
-    def __init__(self, bill_cycle=None, customer_id=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, region_code=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, consume_time=None, trade_time=None, provider_type=None, trade_id=None, id=None, bill_type=None, status=None, official_amount=None, official_discount_amount=None, erase_amount=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, bonus_amount=None, debt_amount=None, writeoff_amount=None, region_name=None):
+    def __init__(self, bill_cycle=None, customer_id=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, region_code=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, consume_time=None, trade_time=None, provider_type=None, trade_id=None, id=None, bill_type=None, status=None, official_amount=None, official_discount_amount=None, erase_amount=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, bonus_amount=None, debt_amount=None, writeoff_amount=None, region_name=None, account_name=None):
         r"""MonthlyBillRecord
 
         The model defined in huaweicloud sdk
@@ -147,6 +149,8 @@ class MonthlyBillRecord:
         :type writeoff_amount: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         :param region_name: 云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
         :type region_name: str
+        :param account_name: |参数名称：消费的客户登录名称。| |参数约束及描述：范围限制：0-128，如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户登录名称。 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户登录名称。如果是企业主自己的消费记录，则为企业主的客户登录名称；如果是某个企业子客户的消费记录，则此处为企业子的客户登录名称。|
+        :type account_name: str
         """
         
         
@@ -181,6 +185,7 @@ class MonthlyBillRecord:
         self._debt_amount = None
         self._writeoff_amount = None
         self._region_name = None
+        self._account_name = None
         self.discriminator = None
 
         if bill_cycle is not None:
@@ -243,6 +248,8 @@ class MonthlyBillRecord:
             self.writeoff_amount = writeoff_amount
         if region_name is not None:
             self.region_name = region_name
+        if account_name is not None:
+            self.account_name = account_name
 
     @property
     def bill_cycle(self):
@@ -903,6 +910,28 @@ class MonthlyBillRecord:
         :type region_name: str
         """
         self._region_name = region_name
+
+    @property
+    def account_name(self):
+        r"""Gets the account_name of this MonthlyBillRecord.
+
+        |参数名称：消费的客户登录名称。| |参数约束及描述：范围限制：0-128，如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户登录名称。 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户登录名称。如果是企业主自己的消费记录，则为企业主的客户登录名称；如果是某个企业子客户的消费记录，则此处为企业子的客户登录名称。|
+
+        :return: The account_name of this MonthlyBillRecord.
+        :rtype: str
+        """
+        return self._account_name
+
+    @account_name.setter
+    def account_name(self, account_name):
+        r"""Sets the account_name of this MonthlyBillRecord.
+
+        |参数名称：消费的客户登录名称。| |参数约束及描述：范围限制：0-128，如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户登录名称。 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户登录名称。如果是企业主自己的消费记录，则为企业主的客户登录名称；如果是某个企业子客户的消费记录，则此处为企业子的客户登录名称。|
+
+        :param account_name: The account_name of this MonthlyBillRecord.
+        :type account_name: str
+        """
+        self._account_name = account_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -946,6 +946,136 @@ class LiveClient(Client):
 
         return http_info
 
+    def create_watermark_rule(self, request):
+        r"""创建水印规则
+
+        创建水印规则接口，必须先创建水印模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateWatermarkRule
+        :type request: :class:`huaweicloudsdklive.v1.CreateWatermarkRuleRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.CreateWatermarkRuleResponse`
+        """
+        http_info = self._create_watermark_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_watermark_rule_invoker(self, request):
+        http_info = self._create_watermark_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_watermark_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/watermark/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWatermarkRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_watermark_template(self, request):
+        r"""创建水印模板
+
+        创建水印模板接口，需要绑定水印规则才生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateWatermarkTemplate
+        :type request: :class:`huaweicloudsdklive.v1.CreateWatermarkTemplateRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.CreateWatermarkTemplateResponse`
+        """
+        http_info = self._create_watermark_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_watermark_template_invoker(self, request):
+        http_info = self._create_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/watermark/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWatermarkTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_domain(self, request):
         r"""删除直播域名
 
@@ -1786,6 +1916,136 @@ class LiveClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_watermark_rule(self, request):
+        r"""删除水印规则
+
+        删除水印规则接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteWatermarkRule
+        :type request: :class:`huaweicloudsdklive.v1.DeleteWatermarkRuleRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeleteWatermarkRuleResponse`
+        """
+        http_info = self._delete_watermark_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_watermark_rule_invoker(self, request):
+        http_info = self._delete_watermark_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_watermark_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/watermark/rules/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWatermarkRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_watermark_template(self, request):
+        r"""删除水印模板
+
+        删除水印模板接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteWatermarkTemplate
+        :type request: :class:`huaweicloudsdklive.v1.DeleteWatermarkTemplateRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.DeleteWatermarkTemplateResponse`
+        """
+        http_info = self._delete_watermark_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_watermark_template_invoker(self, request):
+        http_info = self._delete_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/watermark/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWatermarkTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2771,6 +3031,154 @@ class LiveClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_watermark_rule(self, request):
+        r"""查询水印规则列表
+
+        查询水印规则列表接口，通过指定条件，查询满足条件的水印规则列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListWatermarkRule
+        :type request: :class:`huaweicloudsdklive.v1.ListWatermarkRuleRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListWatermarkRuleResponse`
+        """
+        http_info = self._list_watermark_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_watermark_rule_invoker(self, request):
+        http_info = self._list_watermark_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_watermark_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/watermark/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWatermarkRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'template_id' in local_var_params:
+            query_params.append(('template_id', local_var_params['template_id']))
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+        if 'channel_id' in local_var_params:
+            query_params.append(('channel_id', local_var_params['channel_id']))
+        if 'stream' in local_var_params:
+            query_params.append(('stream', local_var_params['stream']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_watermark_template(self, request):
+        r"""查询水印模板列表
+
+        查询水印模板列表接口，通过指定条件，查询满足条件的水印模板列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListWatermarkTemplate
+        :type request: :class:`huaweicloudsdklive.v1.ListWatermarkTemplateRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ListWatermarkTemplateResponse`
+        """
+        http_info = self._list_watermark_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_watermark_template_invoker(self, request):
+        http_info = self._list_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/watermark/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWatermarkTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'scene' in local_var_params:
+            query_params.append(('scene', local_var_params['scene']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -3785,6 +4193,136 @@ class LiveClient(Client):
 
         return http_info
 
+    def show_watermark_rule(self, request):
+        r"""查询水印规则配置
+
+        查询水印模板规则接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowWatermarkRule
+        :type request: :class:`huaweicloudsdklive.v1.ShowWatermarkRuleRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ShowWatermarkRuleResponse`
+        """
+        http_info = self._show_watermark_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_watermark_rule_invoker(self, request):
+        http_info = self._show_watermark_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_watermark_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/watermark/rules/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWatermarkRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_watermark_template(self, request):
+        r"""查询水印模板配置
+
+        查询水印模板详情接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowWatermarkTemplate
+        :type request: :class:`huaweicloudsdklive.v1.ShowWatermarkTemplateRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.ShowWatermarkTemplateResponse`
+        """
+        http_info = self._show_watermark_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_watermark_template_invoker(self, request):
+        http_info = self._show_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/watermark/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWatermarkTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_delay_config(self, request):
         r"""修改播放域名延时配置
 
@@ -4691,6 +5229,140 @@ class LiveClient(Client):
             body = request.get_file_stream()
 
         response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_watermark_rule(self, request):
+        r"""修改水印规则
+
+        修改水印规则接口，修改后实时生效，只能修改Location
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateWatermarkRule
+        :type request: :class:`huaweicloudsdklive.v1.UpdateWatermarkRuleRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateWatermarkRuleResponse`
+        """
+        http_info = self._update_watermark_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_watermark_rule_invoker(self, request):
+        http_info = self._update_watermark_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_watermark_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/watermark/rules/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWatermarkRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_watermark_template(self, request):
+        r"""修改水印模板
+
+        修改水印模板接口，修改后实时生效
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateWatermarkTemplate
+        :type request: :class:`huaweicloudsdklive.v1.UpdateWatermarkTemplateRequest`
+        :rtype: :class:`huaweicloudsdklive.v1.UpdateWatermarkTemplateResponse`
+        """
+        http_info = self._update_watermark_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_watermark_template_invoker(self, request):
+        http_info = self._update_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/watermark/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWatermarkTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json; charset=UTF-8'])

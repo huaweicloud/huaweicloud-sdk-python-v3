@@ -22,7 +22,8 @@ class BackupReplicateReqBody:
         'destination_region': 'str',
         'destination_vault_id': 'str',
         'enable_acceleration': 'bool',
-        'name': 'str'
+        'name': 'str',
+        'cross_account_urn': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class BackupReplicateReqBody:
         'destination_region': 'destination_region',
         'destination_vault_id': 'destination_vault_id',
         'enable_acceleration': 'enable_acceleration',
-        'name': 'name'
+        'name': 'name',
+        'cross_account_urn': 'cross_account_urn'
     }
 
-    def __init__(self, description=None, destination_project_id=None, destination_region=None, destination_vault_id=None, enable_acceleration=None, name=None):
+    def __init__(self, description=None, destination_project_id=None, destination_region=None, destination_vault_id=None, enable_acceleration=None, name=None, cross_account_urn=None):
         r"""BackupReplicateReqBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class BackupReplicateReqBody:
         :type enable_acceleration: bool
         :param name: 复制名称
         :type name: str
+        :param cross_account_urn: 跨账户复制所需的目标账户的跨账户复制存储库标识
+        :type cross_account_urn: str
         """
         
         
@@ -61,6 +65,7 @@ class BackupReplicateReqBody:
         self._destination_vault_id = None
         self._enable_acceleration = None
         self._name = None
+        self._cross_account_urn = None
         self.discriminator = None
 
         if description is not None:
@@ -72,6 +77,8 @@ class BackupReplicateReqBody:
             self.enable_acceleration = enable_acceleration
         if name is not None:
             self.name = name
+        if cross_account_urn is not None:
+            self.cross_account_urn = cross_account_urn
 
     @property
     def description(self):
@@ -204,6 +211,28 @@ class BackupReplicateReqBody:
         :type name: str
         """
         self._name = name
+
+    @property
+    def cross_account_urn(self):
+        r"""Gets the cross_account_urn of this BackupReplicateReqBody.
+
+        跨账户复制所需的目标账户的跨账户复制存储库标识
+
+        :return: The cross_account_urn of this BackupReplicateReqBody.
+        :rtype: str
+        """
+        return self._cross_account_urn
+
+    @cross_account_urn.setter
+    def cross_account_urn(self, cross_account_urn):
+        r"""Sets the cross_account_urn of this BackupReplicateReqBody.
+
+        跨账户复制所需的目标账户的跨账户复制存储库标识
+
+        :param cross_account_urn: The cross_account_urn of this BackupReplicateReqBody.
+        :type cross_account_urn: str
+        """
+        self._cross_account_urn = cross_account_urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

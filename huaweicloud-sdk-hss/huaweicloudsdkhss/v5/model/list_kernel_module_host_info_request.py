@@ -47,13 +47,13 @@ class ListKernelModuleHostInfoRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param name: 内核模块名称
+        :param name: **参数解释**: 内核模块名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
         :type name: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_ip: 服务器IP
+        :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type host_ip: str
-        :param part_match: 是否模糊匹配，默认false表示精确匹配
+        :param part_match: **参数解释**: 是否模糊匹配，默认false表示精确匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
         :type part_match: bool
         """
         
@@ -152,7 +152,7 @@ class ListKernelModuleHostInfoRequest:
     def name(self):
         r"""Gets the name of this ListKernelModuleHostInfoRequest.
 
-        内核模块名称
+        **参数解释**: 内核模块名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :return: The name of this ListKernelModuleHostInfoRequest.
         :rtype: str
@@ -163,7 +163,7 @@ class ListKernelModuleHostInfoRequest:
     def name(self, name):
         r"""Sets the name of this ListKernelModuleHostInfoRequest.
 
-        内核模块名称
+        **参数解释**: 内核模块名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :param name: The name of this ListKernelModuleHostInfoRequest.
         :type name: str
@@ -174,7 +174,7 @@ class ListKernelModuleHostInfoRequest:
     def host_name(self):
         r"""Gets the host_name of this ListKernelModuleHostInfoRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :return: The host_name of this ListKernelModuleHostInfoRequest.
         :rtype: str
@@ -185,7 +185,7 @@ class ListKernelModuleHostInfoRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListKernelModuleHostInfoRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListKernelModuleHostInfoRequest.
         :type host_name: str
@@ -196,7 +196,7 @@ class ListKernelModuleHostInfoRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListKernelModuleHostInfoRequest.
 
-        服务器IP
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListKernelModuleHostInfoRequest.
         :rtype: str
@@ -207,7 +207,7 @@ class ListKernelModuleHostInfoRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListKernelModuleHostInfoRequest.
 
-        服务器IP
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListKernelModuleHostInfoRequest.
         :type host_ip: str
@@ -218,7 +218,7 @@ class ListKernelModuleHostInfoRequest:
     def part_match(self):
         r"""Gets the part_match of this ListKernelModuleHostInfoRequest.
 
-        是否模糊匹配，默认false表示精确匹配
+        **参数解释**: 是否模糊匹配，默认false表示精确匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
 
         :return: The part_match of this ListKernelModuleHostInfoRequest.
         :rtype: bool
@@ -229,7 +229,7 @@ class ListKernelModuleHostInfoRequest:
     def part_match(self, part_match):
         r"""Sets the part_match of this ListKernelModuleHostInfoRequest.
 
-        是否模糊匹配，默认false表示精确匹配
+        **参数解释**: 是否模糊匹配，默认false表示精确匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
 
         :param part_match: The part_match of this ListKernelModuleHostInfoRequest.
         :type part_match: bool

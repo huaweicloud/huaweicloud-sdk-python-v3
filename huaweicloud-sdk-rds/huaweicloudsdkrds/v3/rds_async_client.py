@@ -6047,6 +6047,77 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def list_small_version_async(self, request):
+        r"""查询小版本号
+
+        查询小版本号
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSmallVersion
+        :type request: :class:`huaweicloudsdkrds.v3.ListSmallVersionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSmallVersionResponse`
+        """
+        http_info = self._list_small_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_small_version_async_invoker(self, request):
+        http_info = self._list_small_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_small_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/datastores/{database_name}/small-version",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSmallVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_sql_limit_async(self, request):
         r"""查询SQL限流列表
 
@@ -12594,7 +12665,7 @@ class RdsAsyncClient(Client):
 
         return http_info
 
-    def list_instances_no_index_tables_async(self, request):
+    def get_instances_no_index_tables_async(self, request):
         r"""查询无索引表诊断数据
 
         查询无索引表诊断数据
@@ -12602,23 +12673,23 @@ class RdsAsyncClient(Client):
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListInstancesNoIndexTables
-        :type request: :class:`huaweicloudsdkrds.v3.ListInstancesNoIndexTablesRequest`
-        :rtype: :class:`huaweicloudsdkrds.v3.ListInstancesNoIndexTablesResponse`
+        :param request: Request instance for GetInstancesNoIndexTables
+        :type request: :class:`huaweicloudsdkrds.v3.GetInstancesNoIndexTablesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.GetInstancesNoIndexTablesResponse`
         """
-        http_info = self._list_instances_no_index_tables_http_info(request)
+        http_info = self._get_instances_no_index_tables_http_info(request)
         return self._call_api(**http_info)
 
-    def list_instances_no_index_tables_async_invoker(self, request):
-        http_info = self._list_instances_no_index_tables_http_info(request)
+    def get_instances_no_index_tables_async_invoker(self, request):
+        http_info = self._get_instances_no_index_tables_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_instances_no_index_tables_http_info(self, request):
+    def _get_instances_no_index_tables_http_info(self, request):
         http_info = {
             "method": "GET",
             "resource_path": "/v3/{project_id}/instances/{instance_id}/no-index-tables",
             "request_type": request.__class__.__name__,
-            "response_type": "ListInstancesNoIndexTablesResponse"
+            "response_type": "GetInstancesNoIndexTablesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

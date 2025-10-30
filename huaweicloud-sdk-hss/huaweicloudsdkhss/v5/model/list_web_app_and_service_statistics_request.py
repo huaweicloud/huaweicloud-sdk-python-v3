@@ -20,8 +20,8 @@ class ListWebAppAndServiceStatisticsRequest:
         'enterprise_project_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'name': 'str',
         'category': 'str',
+        'name': 'str',
         'catalogue': 'str'
     }
 
@@ -29,12 +29,12 @@ class ListWebAppAndServiceStatisticsRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'offset': 'offset',
         'limit': 'limit',
-        'name': 'name',
         'category': 'category',
+        'name': 'name',
         'catalogue': 'catalogue'
     }
 
-    def __init__(self, enterprise_project_id=None, offset=None, limit=None, name=None, category=None, catalogue=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, category=None, name=None, catalogue=None):
         r"""ListWebAppAndServiceStatisticsRequest
 
         The model defined in huaweicloud sdk
@@ -45,11 +45,11 @@ class ListWebAppAndServiceStatisticsRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param name: WebAppAndService资产名称
-        :type name: str
-        :param category: 返回的资产类别 - 0: 主机 - 1: 容器
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
         :type category: str
-        :param catalogue: 资产类型 - web-app       web应用 - web-service   web服务 - database      数据库
+        :param name: **参数解释**: web应用，web服务或数据库名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
+        :type name: str
+        :param catalogue: **参数解释**: 资产类型 **约束限制**: 不涉及 **取值范围**: - web-app：web应用 - web-service：web服务 - database：数据库  **默认取值**: 不涉及 
         :type catalogue: str
         """
         
@@ -58,8 +58,8 @@ class ListWebAppAndServiceStatisticsRequest:
         self._enterprise_project_id = None
         self._offset = None
         self._limit = None
-        self._name = None
         self._category = None
+        self._name = None
         self._catalogue = None
         self.discriminator = None
 
@@ -69,8 +69,9 @@ class ListWebAppAndServiceStatisticsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-        self.name = name
         self.category = category
+        if name is not None:
+            self.name = name
         self.catalogue = catalogue
 
     @property
@@ -140,32 +141,10 @@ class ListWebAppAndServiceStatisticsRequest:
         self._limit = limit
 
     @property
-    def name(self):
-        r"""Gets the name of this ListWebAppAndServiceStatisticsRequest.
-
-        WebAppAndService资产名称
-
-        :return: The name of this ListWebAppAndServiceStatisticsRequest.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        r"""Sets the name of this ListWebAppAndServiceStatisticsRequest.
-
-        WebAppAndService资产名称
-
-        :param name: The name of this ListWebAppAndServiceStatisticsRequest.
-        :type name: str
-        """
-        self._name = name
-
-    @property
     def category(self):
         r"""Gets the category of this ListWebAppAndServiceStatisticsRequest.
 
-        返回的资产类别 - 0: 主机 - 1: 容器
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :return: The category of this ListWebAppAndServiceStatisticsRequest.
         :rtype: str
@@ -176,7 +155,7 @@ class ListWebAppAndServiceStatisticsRequest:
     def category(self, category):
         r"""Sets the category of this ListWebAppAndServiceStatisticsRequest.
 
-        返回的资产类别 - 0: 主机 - 1: 容器
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :param category: The category of this ListWebAppAndServiceStatisticsRequest.
         :type category: str
@@ -184,10 +163,32 @@ class ListWebAppAndServiceStatisticsRequest:
         self._category = category
 
     @property
+    def name(self):
+        r"""Gets the name of this ListWebAppAndServiceStatisticsRequest.
+
+        **参数解释**: web应用，web服务或数据库名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
+
+        :return: The name of this ListWebAppAndServiceStatisticsRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this ListWebAppAndServiceStatisticsRequest.
+
+        **参数解释**: web应用，web服务或数据库名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
+
+        :param name: The name of this ListWebAppAndServiceStatisticsRequest.
+        :type name: str
+        """
+        self._name = name
+
+    @property
     def catalogue(self):
         r"""Gets the catalogue of this ListWebAppAndServiceStatisticsRequest.
 
-        资产类型 - web-app       web应用 - web-service   web服务 - database      数据库
+        **参数解释**: 资产类型 **约束限制**: 不涉及 **取值范围**: - web-app：web应用 - web-service：web服务 - database：数据库  **默认取值**: 不涉及 
 
         :return: The catalogue of this ListWebAppAndServiceStatisticsRequest.
         :rtype: str
@@ -198,7 +199,7 @@ class ListWebAppAndServiceStatisticsRequest:
     def catalogue(self, catalogue):
         r"""Sets the catalogue of this ListWebAppAndServiceStatisticsRequest.
 
-        资产类型 - web-app       web应用 - web-service   web服务 - database      数据库
+        **参数解释**: 资产类型 **约束限制**: 不涉及 **取值范围**: - web-app：web应用 - web-service：web服务 - database：数据库  **默认取值**: 不涉及 
 
         :param catalogue: The catalogue of this ListWebAppAndServiceStatisticsRequest.
         :type catalogue: str

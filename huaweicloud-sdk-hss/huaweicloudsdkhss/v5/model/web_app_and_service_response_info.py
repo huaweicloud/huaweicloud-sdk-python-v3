@@ -34,8 +34,8 @@ class WebAppAndServiceResponseInfo:
         'container_id': 'str',
         'container_name': 'str',
         'record_time': 'int',
-        'host_name': 'str',
         'host_id': 'str',
+        'host_name': 'str',
         'host_ip': 'str'
     }
 
@@ -57,55 +57,55 @@ class WebAppAndServiceResponseInfo:
         'container_id': 'container_id',
         'container_name': 'container_name',
         'record_time': 'record_time',
-        'host_name': 'host_name',
         'host_id': 'host_id',
+        'host_name': 'host_name',
         'host_ip': 'host_ip'
     }
 
-    def __init__(self, catalogue=None, name=None, version=None, agent_id=None, install_path=None, config_path=None, uid=None, gid=None, mode=None, ctime=None, mtime=None, atime=None, pid=None, proc_path=None, container_id=None, container_name=None, record_time=None, host_name=None, host_id=None, host_ip=None):
+    def __init__(self, catalogue=None, name=None, version=None, agent_id=None, install_path=None, config_path=None, uid=None, gid=None, mode=None, ctime=None, mtime=None, atime=None, pid=None, proc_path=None, container_id=None, container_name=None, record_time=None, host_id=None, host_name=None, host_ip=None):
         r"""WebAppAndServiceResponseInfo
 
         The model defined in huaweicloud sdk
 
-        :param catalogue: 资产指纹种类
+        :param catalogue: **参数解释**: web应用、web服务、数据库资产指纹种类 **取值范围**: 字符长度0-64 
         :type catalogue: str
-        :param name: 资产指纹名字
+        :param name: **参数解释**: 资产指纹名字 **取值范围**: 字符长度0-64 
         :type name: str
-        :param version: 资产指纹-数据库-版本
+        :param version: **参数解释**: 资产指纹版本 **取值范围**: 字符长度0-64 
         :type version: str
-        :param agent_id: agent_id
+        :param agent_id: **参数解释** agent id **取值范围** 字符长度1-64 
         :type agent_id: str
-        :param install_path: 安装路径
+        :param install_path: **参数解释** 安装路径 **取值范围** 字符长度0-256 
         :type install_path: str
-        :param config_path: 配置文件路径
+        :param config_path: **参数解释** 配置文件路径 **取值范围** 字符长度0-256 
         :type config_path: str
-        :param uid: uid
+        :param uid: **参数解释**: uid **取值范围**: 最小值0，最大值2147483647 
         :type uid: int
-        :param gid: gid
+        :param gid: **参数解释**: gid **取值范围**: 最小值0，最大值2147483647 
         :type gid: int
-        :param mode: mode
+        :param mode: **参数解释**: 资产指纹文件权限 **取值范围**: 字符长度1-32 
         :type mode: str
-        :param ctime: ctime
+        :param ctime: **参数解释**: 资产指纹文件最近状态改变时间 **取值范围**: 最小值0，最大值2^63-1 
         :type ctime: int
-        :param mtime: mtime
+        :param mtime: **参数解释**: 资产指纹文件最近修改时间 **取值范围**: 最小值0，最大值2^63-1 
         :type mtime: int
-        :param atime: atime
+        :param atime: **参数解释**: 资产指纹文件最近访问时间 **取值范围**: 最小值0，最大值2^63-1 
         :type atime: int
-        :param pid: pid
+        :param pid: **参数解释**: pid **取值范围**: 最小值0，最大值2147483647 
         :type pid: int
-        :param proc_path: proc_path
+        :param proc_path: **参数解释**: 资产指纹进程路径 **取值范围**: 字符长度0-256 
         :type proc_path: str
-        :param container_id: container_id
+        :param container_id: **参数解释**: 容器id **取值范围**: 字符长度0-256 
         :type container_id: str
-        :param container_name: container_name
+        :param container_name: **参数解释**: 容器名称 **取值范围**: 字符长度0-256 
         :type container_name: str
-        :param record_time: record_time
+        :param record_time: **参数解释**: 资产指纹扫描时间 **取值范围**: 最小值0，最大值2^63-1 
         :type record_time: int
-        :param host_name: host_name
-        :type host_name: str
-        :param host_id: host_id
+        :param host_id: **参数解释** 主机id **取值范围** 字符长度1-64 
         :type host_id: str
-        :param host_ip: host_ip
+        :param host_name: **参数解释** 服务器名称 **取值范围** 字符长度1-64 
+        :type host_name: str
+        :param host_ip: **参数解释** 服务器ip **取值范围** 字符长度1-64 
         :type host_ip: str
         """
         
@@ -128,8 +128,8 @@ class WebAppAndServiceResponseInfo:
         self._container_id = None
         self._container_name = None
         self._record_time = None
-        self._host_name = None
         self._host_id = None
+        self._host_name = None
         self._host_ip = None
         self.discriminator = None
 
@@ -167,10 +167,10 @@ class WebAppAndServiceResponseInfo:
             self.container_name = container_name
         if record_time is not None:
             self.record_time = record_time
-        if host_name is not None:
-            self.host_name = host_name
         if host_id is not None:
             self.host_id = host_id
+        if host_name is not None:
+            self.host_name = host_name
         if host_ip is not None:
             self.host_ip = host_ip
 
@@ -178,7 +178,7 @@ class WebAppAndServiceResponseInfo:
     def catalogue(self):
         r"""Gets the catalogue of this WebAppAndServiceResponseInfo.
 
-        资产指纹种类
+        **参数解释**: web应用、web服务、数据库资产指纹种类 **取值范围**: 字符长度0-64 
 
         :return: The catalogue of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -189,7 +189,7 @@ class WebAppAndServiceResponseInfo:
     def catalogue(self, catalogue):
         r"""Sets the catalogue of this WebAppAndServiceResponseInfo.
 
-        资产指纹种类
+        **参数解释**: web应用、web服务、数据库资产指纹种类 **取值范围**: 字符长度0-64 
 
         :param catalogue: The catalogue of this WebAppAndServiceResponseInfo.
         :type catalogue: str
@@ -200,7 +200,7 @@ class WebAppAndServiceResponseInfo:
     def name(self):
         r"""Gets the name of this WebAppAndServiceResponseInfo.
 
-        资产指纹名字
+        **参数解释**: 资产指纹名字 **取值范围**: 字符长度0-64 
 
         :return: The name of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -211,7 +211,7 @@ class WebAppAndServiceResponseInfo:
     def name(self, name):
         r"""Sets the name of this WebAppAndServiceResponseInfo.
 
-        资产指纹名字
+        **参数解释**: 资产指纹名字 **取值范围**: 字符长度0-64 
 
         :param name: The name of this WebAppAndServiceResponseInfo.
         :type name: str
@@ -222,7 +222,7 @@ class WebAppAndServiceResponseInfo:
     def version(self):
         r"""Gets the version of this WebAppAndServiceResponseInfo.
 
-        资产指纹-数据库-版本
+        **参数解释**: 资产指纹版本 **取值范围**: 字符长度0-64 
 
         :return: The version of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -233,7 +233,7 @@ class WebAppAndServiceResponseInfo:
     def version(self, version):
         r"""Sets the version of this WebAppAndServiceResponseInfo.
 
-        资产指纹-数据库-版本
+        **参数解释**: 资产指纹版本 **取值范围**: 字符长度0-64 
 
         :param version: The version of this WebAppAndServiceResponseInfo.
         :type version: str
@@ -244,7 +244,7 @@ class WebAppAndServiceResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this WebAppAndServiceResponseInfo.
 
-        agent_id
+        **参数解释** agent id **取值范围** 字符长度1-64 
 
         :return: The agent_id of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -255,7 +255,7 @@ class WebAppAndServiceResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this WebAppAndServiceResponseInfo.
 
-        agent_id
+        **参数解释** agent id **取值范围** 字符长度1-64 
 
         :param agent_id: The agent_id of this WebAppAndServiceResponseInfo.
         :type agent_id: str
@@ -266,7 +266,7 @@ class WebAppAndServiceResponseInfo:
     def install_path(self):
         r"""Gets the install_path of this WebAppAndServiceResponseInfo.
 
-        安装路径
+        **参数解释** 安装路径 **取值范围** 字符长度0-256 
 
         :return: The install_path of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -277,7 +277,7 @@ class WebAppAndServiceResponseInfo:
     def install_path(self, install_path):
         r"""Sets the install_path of this WebAppAndServiceResponseInfo.
 
-        安装路径
+        **参数解释** 安装路径 **取值范围** 字符长度0-256 
 
         :param install_path: The install_path of this WebAppAndServiceResponseInfo.
         :type install_path: str
@@ -288,7 +288,7 @@ class WebAppAndServiceResponseInfo:
     def config_path(self):
         r"""Gets the config_path of this WebAppAndServiceResponseInfo.
 
-        配置文件路径
+        **参数解释** 配置文件路径 **取值范围** 字符长度0-256 
 
         :return: The config_path of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -299,7 +299,7 @@ class WebAppAndServiceResponseInfo:
     def config_path(self, config_path):
         r"""Sets the config_path of this WebAppAndServiceResponseInfo.
 
-        配置文件路径
+        **参数解释** 配置文件路径 **取值范围** 字符长度0-256 
 
         :param config_path: The config_path of this WebAppAndServiceResponseInfo.
         :type config_path: str
@@ -310,7 +310,7 @@ class WebAppAndServiceResponseInfo:
     def uid(self):
         r"""Gets the uid of this WebAppAndServiceResponseInfo.
 
-        uid
+        **参数解释**: uid **取值范围**: 最小值0，最大值2147483647 
 
         :return: The uid of this WebAppAndServiceResponseInfo.
         :rtype: int
@@ -321,7 +321,7 @@ class WebAppAndServiceResponseInfo:
     def uid(self, uid):
         r"""Sets the uid of this WebAppAndServiceResponseInfo.
 
-        uid
+        **参数解释**: uid **取值范围**: 最小值0，最大值2147483647 
 
         :param uid: The uid of this WebAppAndServiceResponseInfo.
         :type uid: int
@@ -332,7 +332,7 @@ class WebAppAndServiceResponseInfo:
     def gid(self):
         r"""Gets the gid of this WebAppAndServiceResponseInfo.
 
-        gid
+        **参数解释**: gid **取值范围**: 最小值0，最大值2147483647 
 
         :return: The gid of this WebAppAndServiceResponseInfo.
         :rtype: int
@@ -343,7 +343,7 @@ class WebAppAndServiceResponseInfo:
     def gid(self, gid):
         r"""Sets the gid of this WebAppAndServiceResponseInfo.
 
-        gid
+        **参数解释**: gid **取值范围**: 最小值0，最大值2147483647 
 
         :param gid: The gid of this WebAppAndServiceResponseInfo.
         :type gid: int
@@ -354,7 +354,7 @@ class WebAppAndServiceResponseInfo:
     def mode(self):
         r"""Gets the mode of this WebAppAndServiceResponseInfo.
 
-        mode
+        **参数解释**: 资产指纹文件权限 **取值范围**: 字符长度1-32 
 
         :return: The mode of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -365,7 +365,7 @@ class WebAppAndServiceResponseInfo:
     def mode(self, mode):
         r"""Sets the mode of this WebAppAndServiceResponseInfo.
 
-        mode
+        **参数解释**: 资产指纹文件权限 **取值范围**: 字符长度1-32 
 
         :param mode: The mode of this WebAppAndServiceResponseInfo.
         :type mode: str
@@ -376,7 +376,7 @@ class WebAppAndServiceResponseInfo:
     def ctime(self):
         r"""Gets the ctime of this WebAppAndServiceResponseInfo.
 
-        ctime
+        **参数解释**: 资产指纹文件最近状态改变时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :return: The ctime of this WebAppAndServiceResponseInfo.
         :rtype: int
@@ -387,7 +387,7 @@ class WebAppAndServiceResponseInfo:
     def ctime(self, ctime):
         r"""Sets the ctime of this WebAppAndServiceResponseInfo.
 
-        ctime
+        **参数解释**: 资产指纹文件最近状态改变时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :param ctime: The ctime of this WebAppAndServiceResponseInfo.
         :type ctime: int
@@ -398,7 +398,7 @@ class WebAppAndServiceResponseInfo:
     def mtime(self):
         r"""Gets the mtime of this WebAppAndServiceResponseInfo.
 
-        mtime
+        **参数解释**: 资产指纹文件最近修改时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :return: The mtime of this WebAppAndServiceResponseInfo.
         :rtype: int
@@ -409,7 +409,7 @@ class WebAppAndServiceResponseInfo:
     def mtime(self, mtime):
         r"""Sets the mtime of this WebAppAndServiceResponseInfo.
 
-        mtime
+        **参数解释**: 资产指纹文件最近修改时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :param mtime: The mtime of this WebAppAndServiceResponseInfo.
         :type mtime: int
@@ -420,7 +420,7 @@ class WebAppAndServiceResponseInfo:
     def atime(self):
         r"""Gets the atime of this WebAppAndServiceResponseInfo.
 
-        atime
+        **参数解释**: 资产指纹文件最近访问时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :return: The atime of this WebAppAndServiceResponseInfo.
         :rtype: int
@@ -431,7 +431,7 @@ class WebAppAndServiceResponseInfo:
     def atime(self, atime):
         r"""Sets the atime of this WebAppAndServiceResponseInfo.
 
-        atime
+        **参数解释**: 资产指纹文件最近访问时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :param atime: The atime of this WebAppAndServiceResponseInfo.
         :type atime: int
@@ -442,7 +442,7 @@ class WebAppAndServiceResponseInfo:
     def pid(self):
         r"""Gets the pid of this WebAppAndServiceResponseInfo.
 
-        pid
+        **参数解释**: pid **取值范围**: 最小值0，最大值2147483647 
 
         :return: The pid of this WebAppAndServiceResponseInfo.
         :rtype: int
@@ -453,7 +453,7 @@ class WebAppAndServiceResponseInfo:
     def pid(self, pid):
         r"""Sets the pid of this WebAppAndServiceResponseInfo.
 
-        pid
+        **参数解释**: pid **取值范围**: 最小值0，最大值2147483647 
 
         :param pid: The pid of this WebAppAndServiceResponseInfo.
         :type pid: int
@@ -464,7 +464,7 @@ class WebAppAndServiceResponseInfo:
     def proc_path(self):
         r"""Gets the proc_path of this WebAppAndServiceResponseInfo.
 
-        proc_path
+        **参数解释**: 资产指纹进程路径 **取值范围**: 字符长度0-256 
 
         :return: The proc_path of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -475,7 +475,7 @@ class WebAppAndServiceResponseInfo:
     def proc_path(self, proc_path):
         r"""Sets the proc_path of this WebAppAndServiceResponseInfo.
 
-        proc_path
+        **参数解释**: 资产指纹进程路径 **取值范围**: 字符长度0-256 
 
         :param proc_path: The proc_path of this WebAppAndServiceResponseInfo.
         :type proc_path: str
@@ -486,7 +486,7 @@ class WebAppAndServiceResponseInfo:
     def container_id(self):
         r"""Gets the container_id of this WebAppAndServiceResponseInfo.
 
-        container_id
+        **参数解释**: 容器id **取值范围**: 字符长度0-256 
 
         :return: The container_id of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -497,7 +497,7 @@ class WebAppAndServiceResponseInfo:
     def container_id(self, container_id):
         r"""Sets the container_id of this WebAppAndServiceResponseInfo.
 
-        container_id
+        **参数解释**: 容器id **取值范围**: 字符长度0-256 
 
         :param container_id: The container_id of this WebAppAndServiceResponseInfo.
         :type container_id: str
@@ -508,7 +508,7 @@ class WebAppAndServiceResponseInfo:
     def container_name(self):
         r"""Gets the container_name of this WebAppAndServiceResponseInfo.
 
-        container_name
+        **参数解释**: 容器名称 **取值范围**: 字符长度0-256 
 
         :return: The container_name of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -519,7 +519,7 @@ class WebAppAndServiceResponseInfo:
     def container_name(self, container_name):
         r"""Sets the container_name of this WebAppAndServiceResponseInfo.
 
-        container_name
+        **参数解释**: 容器名称 **取值范围**: 字符长度0-256 
 
         :param container_name: The container_name of this WebAppAndServiceResponseInfo.
         :type container_name: str
@@ -530,7 +530,7 @@ class WebAppAndServiceResponseInfo:
     def record_time(self):
         r"""Gets the record_time of this WebAppAndServiceResponseInfo.
 
-        record_time
+        **参数解释**: 资产指纹扫描时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :return: The record_time of this WebAppAndServiceResponseInfo.
         :rtype: int
@@ -541,7 +541,7 @@ class WebAppAndServiceResponseInfo:
     def record_time(self, record_time):
         r"""Sets the record_time of this WebAppAndServiceResponseInfo.
 
-        record_time
+        **参数解释**: 资产指纹扫描时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :param record_time: The record_time of this WebAppAndServiceResponseInfo.
         :type record_time: int
@@ -549,32 +549,10 @@ class WebAppAndServiceResponseInfo:
         self._record_time = record_time
 
     @property
-    def host_name(self):
-        r"""Gets the host_name of this WebAppAndServiceResponseInfo.
-
-        host_name
-
-        :return: The host_name of this WebAppAndServiceResponseInfo.
-        :rtype: str
-        """
-        return self._host_name
-
-    @host_name.setter
-    def host_name(self, host_name):
-        r"""Sets the host_name of this WebAppAndServiceResponseInfo.
-
-        host_name
-
-        :param host_name: The host_name of this WebAppAndServiceResponseInfo.
-        :type host_name: str
-        """
-        self._host_name = host_name
-
-    @property
     def host_id(self):
         r"""Gets the host_id of this WebAppAndServiceResponseInfo.
 
-        host_id
+        **参数解释** 主机id **取值范围** 字符长度1-64 
 
         :return: The host_id of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -585,7 +563,7 @@ class WebAppAndServiceResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this WebAppAndServiceResponseInfo.
 
-        host_id
+        **参数解释** 主机id **取值范围** 字符长度1-64 
 
         :param host_id: The host_id of this WebAppAndServiceResponseInfo.
         :type host_id: str
@@ -593,10 +571,32 @@ class WebAppAndServiceResponseInfo:
         self._host_id = host_id
 
     @property
+    def host_name(self):
+        r"""Gets the host_name of this WebAppAndServiceResponseInfo.
+
+        **参数解释** 服务器名称 **取值范围** 字符长度1-64 
+
+        :return: The host_name of this WebAppAndServiceResponseInfo.
+        :rtype: str
+        """
+        return self._host_name
+
+    @host_name.setter
+    def host_name(self, host_name):
+        r"""Sets the host_name of this WebAppAndServiceResponseInfo.
+
+        **参数解释** 服务器名称 **取值范围** 字符长度1-64 
+
+        :param host_name: The host_name of this WebAppAndServiceResponseInfo.
+        :type host_name: str
+        """
+        self._host_name = host_name
+
+    @property
     def host_ip(self):
         r"""Gets the host_ip of this WebAppAndServiceResponseInfo.
 
-        host_ip
+        **参数解释** 服务器ip **取值范围** 字符长度1-64 
 
         :return: The host_ip of this WebAppAndServiceResponseInfo.
         :rtype: str
@@ -607,7 +607,7 @@ class WebAppAndServiceResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this WebAppAndServiceResponseInfo.
 
-        host_ip
+        **参数解释** 服务器ip **取值范围** 字符长度1-64 
 
         :param host_ip: The host_ip of this WebAppAndServiceResponseInfo.
         :type host_ip: str

@@ -87,7 +87,7 @@ class ListRansomwareProtectionNodesRequest:
         :type policy_name: str
         :param policy_id: 防护策略id
         :type policy_id: str
-        :param agent_status: Agent状态
+        :param agent_status: **参数解释**: Agent的状态 **约束限制**: 不涉及 **取值范围**: Agent的状态分为六类： - installed：已安装 - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。 - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。 - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。 - installing：安装中。表示当前正在进行Agent安装。 - not_installed ：未安装。表示服务器中尚未安装Agent。 如果您要筛选除在线以外所有状态的Agent，可设置not_online（仅作为查询条件） **默认取值**: 不涉及
         :type agent_status: str
         :param group_id: 服务器组ID
         :type group_id: str
@@ -441,7 +441,7 @@ class ListRansomwareProtectionNodesRequest:
     def agent_status(self):
         r"""Gets the agent_status of this ListRansomwareProtectionNodesRequest.
 
-        Agent状态
+        **参数解释**: Agent的状态 **约束限制**: 不涉及 **取值范围**: Agent的状态分为六类： - installed：已安装 - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。 - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。 - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。 - installing：安装中。表示当前正在进行Agent安装。 - not_installed ：未安装。表示服务器中尚未安装Agent。 如果您要筛选除在线以外所有状态的Agent，可设置not_online（仅作为查询条件） **默认取值**: 不涉及
 
         :return: The agent_status of this ListRansomwareProtectionNodesRequest.
         :rtype: str
@@ -452,7 +452,7 @@ class ListRansomwareProtectionNodesRequest:
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this ListRansomwareProtectionNodesRequest.
 
-        Agent状态
+        **参数解释**: Agent的状态 **约束限制**: 不涉及 **取值范围**: Agent的状态分为六类： - installed：已安装 - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。 - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。 - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。 - installing：安装中。表示当前正在进行Agent安装。 - not_installed ：未安装。表示服务器中尚未安装Agent。 如果您要筛选除在线以外所有状态的Agent，可设置not_online（仅作为查询条件） **默认取值**: 不涉及
 
         :param agent_status: The agent_status of this ListRansomwareProtectionNodesRequest.
         :type agent_status: str

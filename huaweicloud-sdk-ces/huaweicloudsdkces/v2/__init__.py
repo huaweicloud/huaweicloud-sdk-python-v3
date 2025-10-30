@@ -25,6 +25,7 @@ from huaweicloudsdkces.v2.model.alarm_level import AlarmLevel
 from huaweicloudsdkces.v2.model.alarm_name import AlarmName
 from huaweicloudsdkces.v2.model.alarm_name_resp import AlarmNameResp
 from huaweicloudsdkces.v2.model.alarm_policy_id import AlarmPolicyID
+from huaweicloudsdkces.v2.model.alarm_rule_policy import AlarmRulePolicy
 from huaweicloudsdkces.v2.model.alarm_template_id import AlarmTemplateID
 from huaweicloudsdkces.v2.model.alarm_template_id_resp import AlarmTemplateIDResp
 from huaweicloudsdkces.v2.model.alarm_template_policies import AlarmTemplatePolicies

@@ -31,9 +31,9 @@ class ModifyLoginCommonIpRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param ip_addr: 登录IP或登录网段,登录网段由IP地址和掩码组成,以&#39;/&#39;连接。
+        :param ip_addr: **参数解释**： 登录IP或登录网段,登录网段由IP地址和掩码组成,以&#39;/&#39;连接。 **取值范围**： 字符长度1-128位 
         :type ip_addr: str
-        :param host_id_list: 服务器ID列表,不可为NULL,删除常用登录IP时,需要将服务器ID列表置为空列表[]。
+        :param host_id_list: **参数解释**： 服务器ID列表,不可为NULL,删除常用登录IP时,需要将服务器ID列表置为空列表[]。 **取值范围**： 最小值0，最大值200 
         :type host_id_list: list[str]
         """
         
@@ -50,7 +50,7 @@ class ModifyLoginCommonIpRequestInfo:
     def ip_addr(self):
         r"""Gets the ip_addr of this ModifyLoginCommonIpRequestInfo.
 
-        登录IP或登录网段,登录网段由IP地址和掩码组成,以'/'连接。
+        **参数解释**： 登录IP或登录网段,登录网段由IP地址和掩码组成,以'/'连接。 **取值范围**： 字符长度1-128位 
 
         :return: The ip_addr of this ModifyLoginCommonIpRequestInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class ModifyLoginCommonIpRequestInfo:
     def ip_addr(self, ip_addr):
         r"""Sets the ip_addr of this ModifyLoginCommonIpRequestInfo.
 
-        登录IP或登录网段,登录网段由IP地址和掩码组成,以'/'连接。
+        **参数解释**： 登录IP或登录网段,登录网段由IP地址和掩码组成,以'/'连接。 **取值范围**： 字符长度1-128位 
 
         :param ip_addr: The ip_addr of this ModifyLoginCommonIpRequestInfo.
         :type ip_addr: str
@@ -72,7 +72,7 @@ class ModifyLoginCommonIpRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this ModifyLoginCommonIpRequestInfo.
 
-        服务器ID列表,不可为NULL,删除常用登录IP时,需要将服务器ID列表置为空列表[]。
+        **参数解释**： 服务器ID列表,不可为NULL,删除常用登录IP时,需要将服务器ID列表置为空列表[]。 **取值范围**： 最小值0，最大值200 
 
         :return: The host_id_list of this ModifyLoginCommonIpRequestInfo.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class ModifyLoginCommonIpRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this ModifyLoginCommonIpRequestInfo.
 
-        服务器ID列表,不可为NULL,删除常用登录IP时,需要将服务器ID列表置为空列表[]。
+        **参数解释**： 服务器ID列表,不可为NULL,删除常用登录IP时,需要将服务器ID列表置为空列表[]。 **取值范围**： 最小值0，最大值200 
 
         :param host_id_list: The host_id_list of this ModifyLoginCommonIpRequestInfo.
         :type host_id_list: list[str]

@@ -18,46 +18,46 @@ class ShowCommonPortRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'port': 'int',
-        'categoty': 'str'
+        'category': 'str',
+        'port': 'int'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
-        'port': 'port',
-        'categoty': 'categoty'
+        'category': 'category',
+        'port': 'port'
     }
 
-    def __init__(self, enterprise_project_id=None, port=None, categoty=None):
+    def __init__(self, enterprise_project_id=None, category=None, port=None):
         r"""ShowCommonPortRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param port: 端口号
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        :type category: str
+        :param port: **参数解释**: 端口号 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
         :type port: int
-        :param categoty: 返回的资产类别 - 0: 主机 - 1: 容器
-        :type categoty: str
         """
         
         
 
         self._enterprise_project_id = None
+        self._category = None
         self._port = None
-        self._categoty = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        self.category = category
         self.port = port
-        self.categoty = categoty
 
     @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ShowCommonPortRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ShowCommonPortRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class ShowCommonPortRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ShowCommonPortRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ShowCommonPortRequest.
         :type enterprise_project_id: str
@@ -76,10 +76,32 @@ class ShowCommonPortRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
+    def category(self):
+        r"""Gets the category of this ShowCommonPortRequest.
+
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+
+        :return: The category of this ShowCommonPortRequest.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        r"""Sets the category of this ShowCommonPortRequest.
+
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+
+        :param category: The category of this ShowCommonPortRequest.
+        :type category: str
+        """
+        self._category = category
+
+    @property
     def port(self):
         r"""Gets the port of this ShowCommonPortRequest.
 
-        端口号
+        **参数解释**: 端口号 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
 
         :return: The port of this ShowCommonPortRequest.
         :rtype: int
@@ -90,34 +112,12 @@ class ShowCommonPortRequest:
     def port(self, port):
         r"""Sets the port of this ShowCommonPortRequest.
 
-        端口号
+        **参数解释**: 端口号 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值65535 **默认取值**: 不涉及 
 
         :param port: The port of this ShowCommonPortRequest.
         :type port: int
         """
         self._port = port
-
-    @property
-    def categoty(self):
-        r"""Gets the categoty of this ShowCommonPortRequest.
-
-        返回的资产类别 - 0: 主机 - 1: 容器
-
-        :return: The categoty of this ShowCommonPortRequest.
-        :rtype: str
-        """
-        return self._categoty
-
-    @categoty.setter
-    def categoty(self, categoty):
-        r"""Sets the categoty of this ShowCommonPortRequest.
-
-        返回的资产类别 - 0: 主机 - 1: 容器
-
-        :param categoty: The categoty of this ShowCommonPortRequest.
-        :type categoty: str
-        """
-        self._categoty = categoty
 
     def to_dict(self):
         """Returns the model properties as a dict"""

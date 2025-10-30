@@ -32,9 +32,9 @@ class ListWebAppAndServicesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: **参数解释** 总数 **取值范围** 最小值0，最大值300000 
         :type total_num: int
-        :param data_list: 具有该WebAppAndService资产的主机及该资产信息列表
+        :param data_list: **参数解释** 具有该web应用、web服务、数据库资产的主机及该资产信息列表 **取值范围** 最小值0，最大值10000 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.WebAppAndServiceResponseInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListWebAppAndServicesResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListWebAppAndServicesResponse.
 
-        总数
+        **参数解释** 总数 **取值范围** 最小值0，最大值300000 
 
         :return: The total_num of this ListWebAppAndServicesResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListWebAppAndServicesResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListWebAppAndServicesResponse.
 
-        总数
+        **参数解释** 总数 **取值范围** 最小值0，最大值300000 
 
         :param total_num: The total_num of this ListWebAppAndServicesResponse.
         :type total_num: int
@@ -75,7 +75,7 @@ class ListWebAppAndServicesResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListWebAppAndServicesResponse.
 
-        具有该WebAppAndService资产的主机及该资产信息列表
+        **参数解释** 具有该web应用、web服务、数据库资产的主机及该资产信息列表 **取值范围** 最小值0，最大值10000 
 
         :return: The data_list of this ListWebAppAndServicesResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.WebAppAndServiceResponseInfo`]
@@ -86,7 +86,7 @@ class ListWebAppAndServicesResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListWebAppAndServicesResponse.
 
-        具有该WebAppAndService资产的主机及该资产信息列表
+        **参数解释** 具有该web应用、web服务、数据库资产的主机及该资产信息列表 **取值范围** 最小值0，最大值10000 
 
         :param data_list: The data_list of this ListWebAppAndServicesResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.WebAppAndServiceResponseInfo`]

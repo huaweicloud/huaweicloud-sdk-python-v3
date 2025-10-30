@@ -41,7 +41,7 @@ class CreatePrivateHookRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param hook_name: 私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
+        :param hook_name: 私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
         :type hook_name: str
         :param hook_version: 私有hook的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义。
         :type hook_version: str
@@ -85,7 +85,7 @@ class CreatePrivateHookRequestBody:
     def hook_name(self):
         r"""Gets the hook_name of this CreatePrivateHookRequestBody.
 
-        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
+        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :return: The hook_name of this CreatePrivateHookRequestBody.
         :rtype: str
@@ -96,7 +96,7 @@ class CreatePrivateHookRequestBody:
     def hook_name(self, hook_name):
         r"""Sets the hook_name of this CreatePrivateHookRequestBody.
 
-        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
+        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :param hook_name: The hook_name of this CreatePrivateHookRequestBody.
         :type hook_name: str

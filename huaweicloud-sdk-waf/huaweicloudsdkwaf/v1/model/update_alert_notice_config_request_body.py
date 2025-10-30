@@ -51,7 +51,7 @@ class UpdateAlertNoticeConfigRequestBody:
         :type name: str
         :param enabled: 是否开启   - false: 不开启   - true: 开启
         :type enabled: bool
-        :param topic_urn: 主题URN，通过消息通知服务获取
+        :param topic_urn: 主题URN，通过消息通知服务获取，查询可使用的主题，通过 云日志服务的“查询SMN主题”接口，返回体中的\&quot;topic_urn\&quot;字段
         :type topic_urn: str
         :param sendfreq: 时间间隔，单位为分钟。当通知类型为防护事件时，该参数表示在该时间间隔内，攻击次数等于或者大于设定阈值时，将发送告警通知，支持的值：5、15、30、60、120、360、720、1440；当通知类型为证书到期时，该参数表示每隔多长时间发送一次告警通知，支持的值为1440、10080（单位为分钟）。
         :type sendfreq: int
@@ -149,7 +149,7 @@ class UpdateAlertNoticeConfigRequestBody:
     def topic_urn(self):
         r"""Gets the topic_urn of this UpdateAlertNoticeConfigRequestBody.
 
-        主题URN，通过消息通知服务获取
+        主题URN，通过消息通知服务获取，查询可使用的主题，通过 云日志服务的“查询SMN主题”接口，返回体中的\"topic_urn\"字段
 
         :return: The topic_urn of this UpdateAlertNoticeConfigRequestBody.
         :rtype: str
@@ -160,7 +160,7 @@ class UpdateAlertNoticeConfigRequestBody:
     def topic_urn(self, topic_urn):
         r"""Sets the topic_urn of this UpdateAlertNoticeConfigRequestBody.
 
-        主题URN，通过消息通知服务获取
+        主题URN，通过消息通知服务获取，查询可使用的主题，通过 云日志服务的“查询SMN主题”接口，返回体中的\"topic_urn\"字段
 
         :param topic_urn: The topic_urn of this UpdateAlertNoticeConfigRequestBody.
         :type topic_urn: str

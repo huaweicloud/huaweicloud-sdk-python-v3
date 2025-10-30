@@ -22,7 +22,7 @@ class CreateTransferRequestBodyLogTransferInfo:
         'log_storage_format': 'str',
         'log_transfer_status': 'str',
         'log_agency_transfer': 'CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer',
-        'log_transfer_detail': 'TransferDetail'
+        'log_transfer_detail': 'LogTransferDetail'
     }
 
     attribute_map = {
@@ -50,7 +50,7 @@ class CreateTransferRequestBodyLogTransferInfo:
         :param log_agency_transfer: 
         :type log_agency_transfer: :class:`huaweicloudsdklts.v2.CreateTransferRequestBodyLogTransferInfoLogAgencyTransfer`
         :param log_transfer_detail: 
-        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.LogTransferDetail`
         """
         
         
@@ -182,7 +182,7 @@ class CreateTransferRequestBodyLogTransferInfo:
         r"""Gets the log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
 
         :return: The log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
-        :rtype: :class:`huaweicloudsdklts.v2.TransferDetail`
+        :rtype: :class:`huaweicloudsdklts.v2.LogTransferDetail`
         """
         return self._log_transfer_detail
 
@@ -191,7 +191,7 @@ class CreateTransferRequestBodyLogTransferInfo:
         r"""Sets the log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
 
         :param log_transfer_detail: The log_transfer_detail of this CreateTransferRequestBodyLogTransferInfo.
-        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.LogTransferDetail`
         """
         self._log_transfer_detail = log_transfer_detail
 

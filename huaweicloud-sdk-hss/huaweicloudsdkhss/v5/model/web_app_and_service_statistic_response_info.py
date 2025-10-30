@@ -31,9 +31,9 @@ class WebAppAndServiceStatisticResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: WebAppAndService资产名称
+        :param name: **参数解释**: web应用、web服务、数据库资产名称 **取值范围**: 字符长度0-256 
         :type name: str
-        :param num: WebAppAndService资产--具备该资产的主机数量
+        :param num: **参数解释** web应用、web服务、数据库资产--具备该资产的主机数量 **取值范围** 最小值0，最大值300000 
         :type num: int
         """
         
@@ -52,7 +52,7 @@ class WebAppAndServiceStatisticResponseInfo:
     def name(self):
         r"""Gets the name of this WebAppAndServiceStatisticResponseInfo.
 
-        WebAppAndService资产名称
+        **参数解释**: web应用、web服务、数据库资产名称 **取值范围**: 字符长度0-256 
 
         :return: The name of this WebAppAndServiceStatisticResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class WebAppAndServiceStatisticResponseInfo:
     def name(self, name):
         r"""Sets the name of this WebAppAndServiceStatisticResponseInfo.
 
-        WebAppAndService资产名称
+        **参数解释**: web应用、web服务、数据库资产名称 **取值范围**: 字符长度0-256 
 
         :param name: The name of this WebAppAndServiceStatisticResponseInfo.
         :type name: str
@@ -74,7 +74,7 @@ class WebAppAndServiceStatisticResponseInfo:
     def num(self):
         r"""Gets the num of this WebAppAndServiceStatisticResponseInfo.
 
-        WebAppAndService资产--具备该资产的主机数量
+        **参数解释** web应用、web服务、数据库资产--具备该资产的主机数量 **取值范围** 最小值0，最大值300000 
 
         :return: The num of this WebAppAndServiceStatisticResponseInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class WebAppAndServiceStatisticResponseInfo:
     def num(self, num):
         r"""Sets the num of this WebAppAndServiceStatisticResponseInfo.
 
-        WebAppAndService资产--具备该资产的主机数量
+        **参数解释** web应用、web服务、数据库资产--具备该资产的主机数量 **取值范围** 最小值0，最大值300000 
 
         :param num: The num of this WebAppAndServiceStatisticResponseInfo.
         :type num: int

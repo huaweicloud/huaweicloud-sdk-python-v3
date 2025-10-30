@@ -26,7 +26,6 @@ class SqlAlarmRuleRespList:
         'condition_expression': 'str',
         'topics': 'list[Topics]',
         'sql_alarm_level': 'str',
-        'sql_alarm_send': 'bool',
         'domain_id': 'str',
         'create_time': 'int',
         'update_time': 'int',
@@ -37,7 +36,8 @@ class SqlAlarmRuleRespList:
         'whether_recovery_policy': 'bool',
         'recovery_policy': 'int',
         'notification_frequency': 'int',
-        'alarm_action_rule_name': 'str'
+        'alarm_action_rule_name': 'str',
+        'tags': 'list[TagsResBody]'
     }
 
     attribute_map = {
@@ -50,7 +50,6 @@ class SqlAlarmRuleRespList:
         'condition_expression': 'condition_expression',
         'topics': 'topics',
         'sql_alarm_level': 'sql_alarm_level',
-        'sql_alarm_send': 'sql_alarm_send',
         'domain_id': 'domain_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -61,10 +60,11 @@ class SqlAlarmRuleRespList:
         'whether_recovery_policy': 'whether_recovery_policy',
         'recovery_policy': 'recovery_policy',
         'notification_frequency': 'notification_frequency',
-        'alarm_action_rule_name': 'alarm_action_rule_name'
+        'alarm_action_rule_name': 'alarm_action_rule_name',
+        'tags': 'tags'
     }
 
-    def __init__(self, sql_alarm_rule_name=None, is_css_sql=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
+    def __init__(self, sql_alarm_rule_name=None, is_css_sql=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, topics=None, sql_alarm_level=None, domain_id=None, create_time=None, update_time=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None, tags=None):
         r"""SqlAlarmRuleRespList
 
         The model defined in huaweicloud sdk
@@ -87,8 +87,6 @@ class SqlAlarmRuleRespList:
         :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
         :param sql_alarm_level: 告警级别
         :type sql_alarm_level: str
-        :param sql_alarm_send: 是否发送
-        :type sql_alarm_send: bool
         :param domain_id: domainId
         :type domain_id: str
         :param create_time: 创建时间（毫秒时间戳）
@@ -111,6 +109,8 @@ class SqlAlarmRuleRespList:
         :type notification_frequency: int
         :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
         :type alarm_action_rule_name: str
+        :param tags: **参数解释：** 告警标签信息。
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
         """
         
         
@@ -124,7 +124,6 @@ class SqlAlarmRuleRespList:
         self._condition_expression = None
         self._topics = None
         self._sql_alarm_level = None
-        self._sql_alarm_send = None
         self._domain_id = None
         self._create_time = None
         self._update_time = None
@@ -136,6 +135,7 @@ class SqlAlarmRuleRespList:
         self._recovery_policy = None
         self._notification_frequency = None
         self._alarm_action_rule_name = None
+        self._tags = None
         self.discriminator = None
 
         self.sql_alarm_rule_name = sql_alarm_rule_name
@@ -148,7 +148,6 @@ class SqlAlarmRuleRespList:
         self.condition_expression = condition_expression
         self.topics = topics
         self.sql_alarm_level = sql_alarm_level
-        self.sql_alarm_send = sql_alarm_send
         self.domain_id = domain_id
         self.create_time = create_time
         self.update_time = update_time
@@ -167,6 +166,8 @@ class SqlAlarmRuleRespList:
         self.notification_frequency = notification_frequency
         if alarm_action_rule_name is not None:
             self.alarm_action_rule_name = alarm_action_rule_name
+        if tags is not None:
+            self.tags = tags
 
     @property
     def sql_alarm_rule_name(self):
@@ -361,28 +362,6 @@ class SqlAlarmRuleRespList:
         :type sql_alarm_level: str
         """
         self._sql_alarm_level = sql_alarm_level
-
-    @property
-    def sql_alarm_send(self):
-        r"""Gets the sql_alarm_send of this SqlAlarmRuleRespList.
-
-        是否发送
-
-        :return: The sql_alarm_send of this SqlAlarmRuleRespList.
-        :rtype: bool
-        """
-        return self._sql_alarm_send
-
-    @sql_alarm_send.setter
-    def sql_alarm_send(self, sql_alarm_send):
-        r"""Sets the sql_alarm_send of this SqlAlarmRuleRespList.
-
-        是否发送
-
-        :param sql_alarm_send: The sql_alarm_send of this SqlAlarmRuleRespList.
-        :type sql_alarm_send: bool
-        """
-        self._sql_alarm_send = sql_alarm_send
 
     @property
     def domain_id(self):
@@ -625,6 +604,28 @@ class SqlAlarmRuleRespList:
         :type alarm_action_rule_name: str
         """
         self._alarm_action_rule_name = alarm_action_rule_name
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this SqlAlarmRuleRespList.
+
+        **参数解释：** 告警标签信息。
+
+        :return: The tags of this SqlAlarmRuleRespList.
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this SqlAlarmRuleRespList.
+
+        **参数解释：** 告警标签信息。
+
+        :param tags: The tags of this SqlAlarmRuleRespList.
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

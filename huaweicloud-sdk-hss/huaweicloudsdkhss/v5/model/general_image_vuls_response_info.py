@@ -55,33 +55,33 @@ class GeneralImageVulsResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param vul_name: 漏洞名称
+        :param vul_name: **参数解释**： 漏洞名称 **取值范围**： 字符长度0-128位 
         :type vul_name: str
-        :param vul_id: 漏洞ID
+        :param vul_id: **参数解释**： 漏洞ID **取值范围**： 字符长度0-128位 
         :type vul_id: str
-        :param type: 漏洞类型，包含如下：   -linux_vul : linux漏洞   -app_vul : 应用漏洞
+        :param type: **参数解释**： 漏洞类型 **约束限制**: 不涉及 **取值范围**： - linux_vul：linux漏洞 - app_vul：应用漏洞 **默认取值**: 不涉及 
         :type type: str
-        :param image_type: 镜像类型，包含如下：   -local : 本地镜像   -registry : 仓库镜像   -cicd : CI/CD镜像   -cluster : 集群镜像
+        :param image_type: **参数解释**： 镜像类型 **约束限制**: 不涉及 **取值范围**： - local：本地镜像 - registry：仓库镜像 - cicd：CI/CD镜像 - cluster：集群镜像 **默认取值**: 不涉及 
         :type image_type: str
-        :param label_list: 漏洞标签列表
+        :param label_list: **参数解释**： 漏洞标签列表 **取值范围**： 最小值0，最大值10 
         :type label_list: list[str]
-        :param severity_level: 漏洞的风险程度，取值如下：  -Critical : 严重  -High : 高危  -Medium : 中危  -Low : 低危
+        :param severity_level: **参数解释**： 漏洞的风险程度 **约束限制**: 不涉及 **取值范围**： - Critical：严重 - High：高危 - Medium：中危 - Low：低危 **默认取值**: 不涉及 
         :type severity_level: str
-        :param image_num: 受影响镜像总数
+        :param image_num: **参数解释**： 受影响镜像总数 **取值范围**： 字符长度0-2147483547位 
         :type image_num: int
-        :param cve_list: CVE列表
+        :param cve_list: **参数解释**： CVE列表 **取值范围**： 最小值0，最大值10000 
         :type cve_list: list[:class:`huaweicloudsdkhss.v5.GeneralImageVulsResponseInfoCveList`]
-        :param max_cvss_score: 镜像最大CVSS分值
+        :param max_cvss_score: **参数解释**： 镜像最大CVSS分值 **取值范围**： 字符长度0-10位 
         :type max_cvss_score: float
-        :param scan_time: 最近扫描时间，时间单位：毫秒（ms）
+        :param scan_time: **参数解释**： 最近扫描时间，时间单位：毫秒（ms） **取值范围**： 字符长度0-4070880000000位 
         :type scan_time: int
-        :param description: 漏洞描述
+        :param description: **参数解释**： 漏洞描述 **取值范围**： 字符长度0-128位 
         :type description: str
-        :param url: 漏洞修复参考链接
+        :param url: **参数解释**： 漏洞修复参考链接 **取值范围**： 字符长度0-128位 
         :type url: str
-        :param solution_detail: 修复建议
+        :param solution_detail: **参数解释**： 修复建议 **取值范围**： 字符长度0-128位 
         :type solution_detail: str
-        :param cluster_num: 受影响集群总数
+        :param cluster_num: **参数解释**： 受影响集群总数 **取值范围**： 字符长度0-2147483547位 
         :type cluster_num: int
         """
         
@@ -136,7 +136,7 @@ class GeneralImageVulsResponseInfo:
     def vul_name(self):
         r"""Gets the vul_name of this GeneralImageVulsResponseInfo.
 
-        漏洞名称
+        **参数解释**： 漏洞名称 **取值范围**： 字符长度0-128位 
 
         :return: The vul_name of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -147,7 +147,7 @@ class GeneralImageVulsResponseInfo:
     def vul_name(self, vul_name):
         r"""Sets the vul_name of this GeneralImageVulsResponseInfo.
 
-        漏洞名称
+        **参数解释**： 漏洞名称 **取值范围**： 字符长度0-128位 
 
         :param vul_name: The vul_name of this GeneralImageVulsResponseInfo.
         :type vul_name: str
@@ -158,7 +158,7 @@ class GeneralImageVulsResponseInfo:
     def vul_id(self):
         r"""Gets the vul_id of this GeneralImageVulsResponseInfo.
 
-        漏洞ID
+        **参数解释**： 漏洞ID **取值范围**： 字符长度0-128位 
 
         :return: The vul_id of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class GeneralImageVulsResponseInfo:
     def vul_id(self, vul_id):
         r"""Sets the vul_id of this GeneralImageVulsResponseInfo.
 
-        漏洞ID
+        **参数解释**： 漏洞ID **取值范围**： 字符长度0-128位 
 
         :param vul_id: The vul_id of this GeneralImageVulsResponseInfo.
         :type vul_id: str
@@ -180,7 +180,7 @@ class GeneralImageVulsResponseInfo:
     def type(self):
         r"""Gets the type of this GeneralImageVulsResponseInfo.
 
-        漏洞类型，包含如下：   -linux_vul : linux漏洞   -app_vul : 应用漏洞
+        **参数解释**： 漏洞类型 **约束限制**: 不涉及 **取值范围**： - linux_vul：linux漏洞 - app_vul：应用漏洞 **默认取值**: 不涉及 
 
         :return: The type of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -191,7 +191,7 @@ class GeneralImageVulsResponseInfo:
     def type(self, type):
         r"""Sets the type of this GeneralImageVulsResponseInfo.
 
-        漏洞类型，包含如下：   -linux_vul : linux漏洞   -app_vul : 应用漏洞
+        **参数解释**： 漏洞类型 **约束限制**: 不涉及 **取值范围**： - linux_vul：linux漏洞 - app_vul：应用漏洞 **默认取值**: 不涉及 
 
         :param type: The type of this GeneralImageVulsResponseInfo.
         :type type: str
@@ -202,7 +202,7 @@ class GeneralImageVulsResponseInfo:
     def image_type(self):
         r"""Gets the image_type of this GeneralImageVulsResponseInfo.
 
-        镜像类型，包含如下：   -local : 本地镜像   -registry : 仓库镜像   -cicd : CI/CD镜像   -cluster : 集群镜像
+        **参数解释**： 镜像类型 **约束限制**: 不涉及 **取值范围**： - local：本地镜像 - registry：仓库镜像 - cicd：CI/CD镜像 - cluster：集群镜像 **默认取值**: 不涉及 
 
         :return: The image_type of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -213,7 +213,7 @@ class GeneralImageVulsResponseInfo:
     def image_type(self, image_type):
         r"""Sets the image_type of this GeneralImageVulsResponseInfo.
 
-        镜像类型，包含如下：   -local : 本地镜像   -registry : 仓库镜像   -cicd : CI/CD镜像   -cluster : 集群镜像
+        **参数解释**： 镜像类型 **约束限制**: 不涉及 **取值范围**： - local：本地镜像 - registry：仓库镜像 - cicd：CI/CD镜像 - cluster：集群镜像 **默认取值**: 不涉及 
 
         :param image_type: The image_type of this GeneralImageVulsResponseInfo.
         :type image_type: str
@@ -224,7 +224,7 @@ class GeneralImageVulsResponseInfo:
     def label_list(self):
         r"""Gets the label_list of this GeneralImageVulsResponseInfo.
 
-        漏洞标签列表
+        **参数解释**： 漏洞标签列表 **取值范围**： 最小值0，最大值10 
 
         :return: The label_list of this GeneralImageVulsResponseInfo.
         :rtype: list[str]
@@ -235,7 +235,7 @@ class GeneralImageVulsResponseInfo:
     def label_list(self, label_list):
         r"""Sets the label_list of this GeneralImageVulsResponseInfo.
 
-        漏洞标签列表
+        **参数解释**： 漏洞标签列表 **取值范围**： 最小值0，最大值10 
 
         :param label_list: The label_list of this GeneralImageVulsResponseInfo.
         :type label_list: list[str]
@@ -246,7 +246,7 @@ class GeneralImageVulsResponseInfo:
     def severity_level(self):
         r"""Gets the severity_level of this GeneralImageVulsResponseInfo.
 
-        漏洞的风险程度，取值如下：  -Critical : 严重  -High : 高危  -Medium : 中危  -Low : 低危
+        **参数解释**： 漏洞的风险程度 **约束限制**: 不涉及 **取值范围**： - Critical：严重 - High：高危 - Medium：中危 - Low：低危 **默认取值**: 不涉及 
 
         :return: The severity_level of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -257,7 +257,7 @@ class GeneralImageVulsResponseInfo:
     def severity_level(self, severity_level):
         r"""Sets the severity_level of this GeneralImageVulsResponseInfo.
 
-        漏洞的风险程度，取值如下：  -Critical : 严重  -High : 高危  -Medium : 中危  -Low : 低危
+        **参数解释**： 漏洞的风险程度 **约束限制**: 不涉及 **取值范围**： - Critical：严重 - High：高危 - Medium：中危 - Low：低危 **默认取值**: 不涉及 
 
         :param severity_level: The severity_level of this GeneralImageVulsResponseInfo.
         :type severity_level: str
@@ -268,7 +268,7 @@ class GeneralImageVulsResponseInfo:
     def image_num(self):
         r"""Gets the image_num of this GeneralImageVulsResponseInfo.
 
-        受影响镜像总数
+        **参数解释**： 受影响镜像总数 **取值范围**： 字符长度0-2147483547位 
 
         :return: The image_num of this GeneralImageVulsResponseInfo.
         :rtype: int
@@ -279,7 +279,7 @@ class GeneralImageVulsResponseInfo:
     def image_num(self, image_num):
         r"""Sets the image_num of this GeneralImageVulsResponseInfo.
 
-        受影响镜像总数
+        **参数解释**： 受影响镜像总数 **取值范围**： 字符长度0-2147483547位 
 
         :param image_num: The image_num of this GeneralImageVulsResponseInfo.
         :type image_num: int
@@ -290,7 +290,7 @@ class GeneralImageVulsResponseInfo:
     def cve_list(self):
         r"""Gets the cve_list of this GeneralImageVulsResponseInfo.
 
-        CVE列表
+        **参数解释**： CVE列表 **取值范围**： 最小值0，最大值10000 
 
         :return: The cve_list of this GeneralImageVulsResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.GeneralImageVulsResponseInfoCveList`]
@@ -301,7 +301,7 @@ class GeneralImageVulsResponseInfo:
     def cve_list(self, cve_list):
         r"""Sets the cve_list of this GeneralImageVulsResponseInfo.
 
-        CVE列表
+        **参数解释**： CVE列表 **取值范围**： 最小值0，最大值10000 
 
         :param cve_list: The cve_list of this GeneralImageVulsResponseInfo.
         :type cve_list: list[:class:`huaweicloudsdkhss.v5.GeneralImageVulsResponseInfoCveList`]
@@ -312,7 +312,7 @@ class GeneralImageVulsResponseInfo:
     def max_cvss_score(self):
         r"""Gets the max_cvss_score of this GeneralImageVulsResponseInfo.
 
-        镜像最大CVSS分值
+        **参数解释**： 镜像最大CVSS分值 **取值范围**： 字符长度0-10位 
 
         :return: The max_cvss_score of this GeneralImageVulsResponseInfo.
         :rtype: float
@@ -323,7 +323,7 @@ class GeneralImageVulsResponseInfo:
     def max_cvss_score(self, max_cvss_score):
         r"""Sets the max_cvss_score of this GeneralImageVulsResponseInfo.
 
-        镜像最大CVSS分值
+        **参数解释**： 镜像最大CVSS分值 **取值范围**： 字符长度0-10位 
 
         :param max_cvss_score: The max_cvss_score of this GeneralImageVulsResponseInfo.
         :type max_cvss_score: float
@@ -334,7 +334,7 @@ class GeneralImageVulsResponseInfo:
     def scan_time(self):
         r"""Gets the scan_time of this GeneralImageVulsResponseInfo.
 
-        最近扫描时间，时间单位：毫秒（ms）
+        **参数解释**： 最近扫描时间，时间单位：毫秒（ms） **取值范围**： 字符长度0-4070880000000位 
 
         :return: The scan_time of this GeneralImageVulsResponseInfo.
         :rtype: int
@@ -345,7 +345,7 @@ class GeneralImageVulsResponseInfo:
     def scan_time(self, scan_time):
         r"""Sets the scan_time of this GeneralImageVulsResponseInfo.
 
-        最近扫描时间，时间单位：毫秒（ms）
+        **参数解释**： 最近扫描时间，时间单位：毫秒（ms） **取值范围**： 字符长度0-4070880000000位 
 
         :param scan_time: The scan_time of this GeneralImageVulsResponseInfo.
         :type scan_time: int
@@ -356,7 +356,7 @@ class GeneralImageVulsResponseInfo:
     def description(self):
         r"""Gets the description of this GeneralImageVulsResponseInfo.
 
-        漏洞描述
+        **参数解释**： 漏洞描述 **取值范围**： 字符长度0-128位 
 
         :return: The description of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -367,7 +367,7 @@ class GeneralImageVulsResponseInfo:
     def description(self, description):
         r"""Sets the description of this GeneralImageVulsResponseInfo.
 
-        漏洞描述
+        **参数解释**： 漏洞描述 **取值范围**： 字符长度0-128位 
 
         :param description: The description of this GeneralImageVulsResponseInfo.
         :type description: str
@@ -378,7 +378,7 @@ class GeneralImageVulsResponseInfo:
     def url(self):
         r"""Gets the url of this GeneralImageVulsResponseInfo.
 
-        漏洞修复参考链接
+        **参数解释**： 漏洞修复参考链接 **取值范围**： 字符长度0-128位 
 
         :return: The url of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -389,7 +389,7 @@ class GeneralImageVulsResponseInfo:
     def url(self, url):
         r"""Sets the url of this GeneralImageVulsResponseInfo.
 
-        漏洞修复参考链接
+        **参数解释**： 漏洞修复参考链接 **取值范围**： 字符长度0-128位 
 
         :param url: The url of this GeneralImageVulsResponseInfo.
         :type url: str
@@ -400,7 +400,7 @@ class GeneralImageVulsResponseInfo:
     def solution_detail(self):
         r"""Gets the solution_detail of this GeneralImageVulsResponseInfo.
 
-        修复建议
+        **参数解释**： 修复建议 **取值范围**： 字符长度0-128位 
 
         :return: The solution_detail of this GeneralImageVulsResponseInfo.
         :rtype: str
@@ -411,7 +411,7 @@ class GeneralImageVulsResponseInfo:
     def solution_detail(self, solution_detail):
         r"""Sets the solution_detail of this GeneralImageVulsResponseInfo.
 
-        修复建议
+        **参数解释**： 修复建议 **取值范围**： 字符长度0-128位 
 
         :param solution_detail: The solution_detail of this GeneralImageVulsResponseInfo.
         :type solution_detail: str
@@ -422,7 +422,7 @@ class GeneralImageVulsResponseInfo:
     def cluster_num(self):
         r"""Gets the cluster_num of this GeneralImageVulsResponseInfo.
 
-        受影响集群总数
+        **参数解释**： 受影响集群总数 **取值范围**： 字符长度0-2147483547位 
 
         :return: The cluster_num of this GeneralImageVulsResponseInfo.
         :rtype: int
@@ -433,7 +433,7 @@ class GeneralImageVulsResponseInfo:
     def cluster_num(self, cluster_num):
         r"""Sets the cluster_num of this GeneralImageVulsResponseInfo.
 
-        受影响集群总数
+        **参数解释**： 受影响集群总数 **取值范围**： 字符长度0-2147483547位 
 
         :param cluster_num: The cluster_num of this GeneralImageVulsResponseInfo.
         :type cluster_num: int

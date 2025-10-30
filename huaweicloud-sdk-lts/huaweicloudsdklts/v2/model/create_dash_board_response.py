@@ -25,7 +25,9 @@ class CreateDashBoardResponse(SdkResponse):
         'last_update_time': 'int',
         'project_id': 'str',
         'title': 'str',
-        'use_system_template': 'bool'
+        'use_system_template': 'bool',
+        'concise_mode_enable': 'bool',
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
@@ -36,10 +38,12 @@ class CreateDashBoardResponse(SdkResponse):
         'last_update_time': 'last_update_time',
         'project_id': 'project_id',
         'title': 'title',
-        'use_system_template': 'useSystemTemplate'
+        'use_system_template': 'useSystemTemplate',
+        'concise_mode_enable': 'concise_mode_enable',
+        'tags': 'tags'
     }
 
-    def __init__(self, charts=None, filters=None, group_name=None, id=None, last_update_time=None, project_id=None, title=None, use_system_template=None):
+    def __init__(self, charts=None, filters=None, group_name=None, id=None, last_update_time=None, project_id=None, title=None, use_system_template=None, concise_mode_enable=None, tags=None):
         r"""CreateDashBoardResponse
 
         The model defined in huaweicloud sdk
@@ -60,6 +64,10 @@ class CreateDashBoardResponse(SdkResponse):
         :type title: str
         :param use_system_template: 是否使用模板
         :type use_system_template: bool
+        :param concise_mode_enable: 纯净模式开关
+        :type concise_mode_enable: bool
+        :param tags: 仪表盘标签
+        :type tags: list[:class:`huaweicloudsdklts.v2.ResourceTag`]
         """
         
         super(CreateDashBoardResponse, self).__init__()
@@ -72,6 +80,8 @@ class CreateDashBoardResponse(SdkResponse):
         self._project_id = None
         self._title = None
         self._use_system_template = None
+        self._concise_mode_enable = None
+        self._tags = None
         self.discriminator = None
 
         if charts is not None:
@@ -90,6 +100,10 @@ class CreateDashBoardResponse(SdkResponse):
             self.title = title
         if use_system_template is not None:
             self.use_system_template = use_system_template
+        if concise_mode_enable is not None:
+            self.concise_mode_enable = concise_mode_enable
+        if tags is not None:
+            self.tags = tags
 
     @property
     def charts(self):
@@ -266,6 +280,50 @@ class CreateDashBoardResponse(SdkResponse):
         :type use_system_template: bool
         """
         self._use_system_template = use_system_template
+
+    @property
+    def concise_mode_enable(self):
+        r"""Gets the concise_mode_enable of this CreateDashBoardResponse.
+
+        纯净模式开关
+
+        :return: The concise_mode_enable of this CreateDashBoardResponse.
+        :rtype: bool
+        """
+        return self._concise_mode_enable
+
+    @concise_mode_enable.setter
+    def concise_mode_enable(self, concise_mode_enable):
+        r"""Sets the concise_mode_enable of this CreateDashBoardResponse.
+
+        纯净模式开关
+
+        :param concise_mode_enable: The concise_mode_enable of this CreateDashBoardResponse.
+        :type concise_mode_enable: bool
+        """
+        self._concise_mode_enable = concise_mode_enable
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this CreateDashBoardResponse.
+
+        仪表盘标签
+
+        :return: The tags of this CreateDashBoardResponse.
+        :rtype: list[:class:`huaweicloudsdklts.v2.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this CreateDashBoardResponse.
+
+        仪表盘标签
+
+        :param tags: The tags of this CreateDashBoardResponse.
+        :type tags: list[:class:`huaweicloudsdklts.v2.ResourceTag`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

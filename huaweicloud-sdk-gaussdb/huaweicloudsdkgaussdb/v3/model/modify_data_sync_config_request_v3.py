@@ -24,7 +24,10 @@ class ModifyDataSyncConfigRequestV3:
         'db_configs': 'list[DbConfig]',
         'tables_configs': 'list[TablesConfig]',
         'table_repl_config': 'TableReplConfig',
-        'target_database_name': 'str'
+        'target_database_name': 'str',
+        'is_instance_level_sync': 'str',
+        'database_repl_scope': 'str',
+        'is_support_reg_exp': 'str'
     }
 
     attribute_map = {
@@ -35,10 +38,13 @@ class ModifyDataSyncConfigRequestV3:
         'db_configs': 'db_configs',
         'tables_configs': 'tables_configs',
         'table_repl_config': 'table_repl_config',
-        'target_database_name': 'target_database_name'
+        'target_database_name': 'target_database_name',
+        'is_instance_level_sync': 'is_instance_level_sync',
+        'database_repl_scope': 'database_repl_scope',
+        'is_support_reg_exp': 'is_support_reg_exp'
     }
 
-    def __init__(self, source_instance_id=None, source_node_id=None, source_database_name=None, task_name=None, db_configs=None, tables_configs=None, table_repl_config=None, target_database_name=None):
+    def __init__(self, source_instance_id=None, source_node_id=None, source_database_name=None, task_name=None, db_configs=None, tables_configs=None, table_repl_config=None, target_database_name=None, is_instance_level_sync=None, database_repl_scope=None, is_support_reg_exp=None):
         r"""ModifyDataSyncConfigRequestV3
 
         The model defined in huaweicloud sdk
@@ -59,6 +65,12 @@ class ModifyDataSyncConfigRequestV3:
         :type table_repl_config: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`
         :param target_database_name: **参数解释**：  目标数据库名。  **约束限制**：  不涉及。  **取值范围**：  长度限制3~128位，仅支持英文大小写字母、数字以及下划线。  **默认值**：  不涉及。
         :type target_database_name: str
+        :param is_instance_level_sync: **参数解释**：  是否支持实例级同步。  **约束限制**：  不涉及。  **取值范围**：  - true：是。 - false：否。  **默认取值**：  false。
+        :type is_instance_level_sync: str
+        :param database_repl_scope: **参数解释**：  库同步范围。  **约束限制**：  不涉及。  **取值范围**：  - all：同步全部库。 - part：同步部分库。  **默认取值**：  part。
+        :type database_repl_scope: str
+        :param is_support_reg_exp: **参数解释**：  是否支持通配符。  **约束限制**：  不涉及。  **取值范围**：  - true：支持通配符。 - false：不支持通配符。  **默认取值**：  false。
+        :type is_support_reg_exp: str
         """
         
         
@@ -71,6 +83,9 @@ class ModifyDataSyncConfigRequestV3:
         self._tables_configs = None
         self._table_repl_config = None
         self._target_database_name = None
+        self._is_instance_level_sync = None
+        self._database_repl_scope = None
+        self._is_support_reg_exp = None
         self.discriminator = None
 
         if source_instance_id is not None:
@@ -89,6 +104,12 @@ class ModifyDataSyncConfigRequestV3:
             self.table_repl_config = table_repl_config
         if target_database_name is not None:
             self.target_database_name = target_database_name
+        if is_instance_level_sync is not None:
+            self.is_instance_level_sync = is_instance_level_sync
+        if database_repl_scope is not None:
+            self.database_repl_scope = database_repl_scope
+        if is_support_reg_exp is not None:
+            self.is_support_reg_exp = is_support_reg_exp
 
     @property
     def source_instance_id(self):
@@ -261,6 +282,72 @@ class ModifyDataSyncConfigRequestV3:
         :type target_database_name: str
         """
         self._target_database_name = target_database_name
+
+    @property
+    def is_instance_level_sync(self):
+        r"""Gets the is_instance_level_sync of this ModifyDataSyncConfigRequestV3.
+
+        **参数解释**：  是否支持实例级同步。  **约束限制**：  不涉及。  **取值范围**：  - true：是。 - false：否。  **默认取值**：  false。
+
+        :return: The is_instance_level_sync of this ModifyDataSyncConfigRequestV3.
+        :rtype: str
+        """
+        return self._is_instance_level_sync
+
+    @is_instance_level_sync.setter
+    def is_instance_level_sync(self, is_instance_level_sync):
+        r"""Sets the is_instance_level_sync of this ModifyDataSyncConfigRequestV3.
+
+        **参数解释**：  是否支持实例级同步。  **约束限制**：  不涉及。  **取值范围**：  - true：是。 - false：否。  **默认取值**：  false。
+
+        :param is_instance_level_sync: The is_instance_level_sync of this ModifyDataSyncConfigRequestV3.
+        :type is_instance_level_sync: str
+        """
+        self._is_instance_level_sync = is_instance_level_sync
+
+    @property
+    def database_repl_scope(self):
+        r"""Gets the database_repl_scope of this ModifyDataSyncConfigRequestV3.
+
+        **参数解释**：  库同步范围。  **约束限制**：  不涉及。  **取值范围**：  - all：同步全部库。 - part：同步部分库。  **默认取值**：  part。
+
+        :return: The database_repl_scope of this ModifyDataSyncConfigRequestV3.
+        :rtype: str
+        """
+        return self._database_repl_scope
+
+    @database_repl_scope.setter
+    def database_repl_scope(self, database_repl_scope):
+        r"""Sets the database_repl_scope of this ModifyDataSyncConfigRequestV3.
+
+        **参数解释**：  库同步范围。  **约束限制**：  不涉及。  **取值范围**：  - all：同步全部库。 - part：同步部分库。  **默认取值**：  part。
+
+        :param database_repl_scope: The database_repl_scope of this ModifyDataSyncConfigRequestV3.
+        :type database_repl_scope: str
+        """
+        self._database_repl_scope = database_repl_scope
+
+    @property
+    def is_support_reg_exp(self):
+        r"""Gets the is_support_reg_exp of this ModifyDataSyncConfigRequestV3.
+
+        **参数解释**：  是否支持通配符。  **约束限制**：  不涉及。  **取值范围**：  - true：支持通配符。 - false：不支持通配符。  **默认取值**：  false。
+
+        :return: The is_support_reg_exp of this ModifyDataSyncConfigRequestV3.
+        :rtype: str
+        """
+        return self._is_support_reg_exp
+
+    @is_support_reg_exp.setter
+    def is_support_reg_exp(self, is_support_reg_exp):
+        r"""Sets the is_support_reg_exp of this ModifyDataSyncConfigRequestV3.
+
+        **参数解释**：  是否支持通配符。  **约束限制**：  不涉及。  **取值范围**：  - true：支持通配符。 - false：不支持通配符。  **默认取值**：  false。
+
+        :param is_support_reg_exp: The is_support_reg_exp of this ModifyDataSyncConfigRequestV3.
+        :type is_support_reg_exp: str
+        """
+        self._is_support_reg_exp = is_support_reg_exp
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -53,31 +53,31 @@ class GeneralImageVulOperationsResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param image_id: 镜像id
+        :param image_id: **参数解释**： 镜像id **取值范围**： 字符长度0-128位 
         :type image_id: str
-        :param image_name: 镜像名称
+        :param image_name: **参数解释**： 镜像名称 **取值范围**： 字符长度0-128位 
         :type image_name: str
-        :param user_name: 处置用户名称
+        :param user_name: **参数解释**： 处置用户名称 **取值范围**： 字符长度0-256位 
         :type user_name: str
         :param handle_time: 处置时间，时间单位：毫秒（ms）
         :type handle_time: int
-        :param handle_type: 操作类型，包含如下：   -ignore : 忽略   -not_ignore : 取消忽略   -add_to_whitelist ：加入白名单
+        :param handle_type: **参数解释**： 操作类型 **取值范围**： - ignore：忽略 - not_ignore：取消忽略 - add_to_whitelist：加入白名单 
         :type handle_type: str
-        :param status: 漏洞当前状态，包含如下：   -vul_status_unfix : 未处理   -vul_status_ignored : 已忽略
+        :param status: **参数解释**： 漏洞当前状态 **取值范围**： - vul_status_unfix：未处理 - vul_status_ignored：已忽略 
         :type status: str
-        :param app_name: 软件名称
+        :param app_name: **参数解释**： 软件名称 **取值范围**： 字符长度0-256位 
         :type app_name: str
-        :param app_version: 软件版本
+        :param app_version: **参数解释**： 软件版本 **取值范围**： 字符长度0-256位 
         :type app_version: str
-        :param app_path: 软件路径
+        :param app_path: **参数解释**： 软件路径 **取值范围**： 字符长度0-256位 
         :type app_path: str
-        :param remark: 备注
+        :param remark: **参数解释**： 备注 **取值范围**： 字符长度0-256位 
         :type remark: str
-        :param image_digest: 镜像标识
+        :param image_digest: **参数解释**： 镜像标识 **取值范围**： 字符长度0-256位 
         :type image_digest: str
-        :param image_version: 镜像版本
+        :param image_version: **参数解释**： 镜像版本 **取值范围**： 字符长度0-256位 
         :type image_version: str
-        :param agent_id: Agent ID
+        :param agent_id: **参数解释**： Agent ID **取值范围**： 字符长度0-512位 
         :type agent_id: str
         """
         
@@ -129,7 +129,7 @@ class GeneralImageVulOperationsResponseInfo:
     def image_id(self):
         r"""Gets the image_id of this GeneralImageVulOperationsResponseInfo.
 
-        镜像id
+        **参数解释**： 镜像id **取值范围**： 字符长度0-128位 
 
         :return: The image_id of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class GeneralImageVulOperationsResponseInfo:
     def image_id(self, image_id):
         r"""Sets the image_id of this GeneralImageVulOperationsResponseInfo.
 
-        镜像id
+        **参数解释**： 镜像id **取值范围**： 字符长度0-128位 
 
         :param image_id: The image_id of this GeneralImageVulOperationsResponseInfo.
         :type image_id: str
@@ -151,7 +151,7 @@ class GeneralImageVulOperationsResponseInfo:
     def image_name(self):
         r"""Gets the image_name of this GeneralImageVulOperationsResponseInfo.
 
-        镜像名称
+        **参数解释**： 镜像名称 **取值范围**： 字符长度0-128位 
 
         :return: The image_name of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class GeneralImageVulOperationsResponseInfo:
     def image_name(self, image_name):
         r"""Sets the image_name of this GeneralImageVulOperationsResponseInfo.
 
-        镜像名称
+        **参数解释**： 镜像名称 **取值范围**： 字符长度0-128位 
 
         :param image_name: The image_name of this GeneralImageVulOperationsResponseInfo.
         :type image_name: str
@@ -173,7 +173,7 @@ class GeneralImageVulOperationsResponseInfo:
     def user_name(self):
         r"""Gets the user_name of this GeneralImageVulOperationsResponseInfo.
 
-        处置用户名称
+        **参数解释**： 处置用户名称 **取值范围**： 字符长度0-256位 
 
         :return: The user_name of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class GeneralImageVulOperationsResponseInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this GeneralImageVulOperationsResponseInfo.
 
-        处置用户名称
+        **参数解释**： 处置用户名称 **取值范围**： 字符长度0-256位 
 
         :param user_name: The user_name of this GeneralImageVulOperationsResponseInfo.
         :type user_name: str
@@ -217,7 +217,7 @@ class GeneralImageVulOperationsResponseInfo:
     def handle_type(self):
         r"""Gets the handle_type of this GeneralImageVulOperationsResponseInfo.
 
-        操作类型，包含如下：   -ignore : 忽略   -not_ignore : 取消忽略   -add_to_whitelist ：加入白名单
+        **参数解释**： 操作类型 **取值范围**： - ignore：忽略 - not_ignore：取消忽略 - add_to_whitelist：加入白名单 
 
         :return: The handle_type of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -228,7 +228,7 @@ class GeneralImageVulOperationsResponseInfo:
     def handle_type(self, handle_type):
         r"""Sets the handle_type of this GeneralImageVulOperationsResponseInfo.
 
-        操作类型，包含如下：   -ignore : 忽略   -not_ignore : 取消忽略   -add_to_whitelist ：加入白名单
+        **参数解释**： 操作类型 **取值范围**： - ignore：忽略 - not_ignore：取消忽略 - add_to_whitelist：加入白名单 
 
         :param handle_type: The handle_type of this GeneralImageVulOperationsResponseInfo.
         :type handle_type: str
@@ -239,7 +239,7 @@ class GeneralImageVulOperationsResponseInfo:
     def status(self):
         r"""Gets the status of this GeneralImageVulOperationsResponseInfo.
 
-        漏洞当前状态，包含如下：   -vul_status_unfix : 未处理   -vul_status_ignored : 已忽略
+        **参数解释**： 漏洞当前状态 **取值范围**： - vul_status_unfix：未处理 - vul_status_ignored：已忽略 
 
         :return: The status of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -250,7 +250,7 @@ class GeneralImageVulOperationsResponseInfo:
     def status(self, status):
         r"""Sets the status of this GeneralImageVulOperationsResponseInfo.
 
-        漏洞当前状态，包含如下：   -vul_status_unfix : 未处理   -vul_status_ignored : 已忽略
+        **参数解释**： 漏洞当前状态 **取值范围**： - vul_status_unfix：未处理 - vul_status_ignored：已忽略 
 
         :param status: The status of this GeneralImageVulOperationsResponseInfo.
         :type status: str
@@ -261,7 +261,7 @@ class GeneralImageVulOperationsResponseInfo:
     def app_name(self):
         r"""Gets the app_name of this GeneralImageVulOperationsResponseInfo.
 
-        软件名称
+        **参数解释**： 软件名称 **取值范围**： 字符长度0-256位 
 
         :return: The app_name of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -272,7 +272,7 @@ class GeneralImageVulOperationsResponseInfo:
     def app_name(self, app_name):
         r"""Sets the app_name of this GeneralImageVulOperationsResponseInfo.
 
-        软件名称
+        **参数解释**： 软件名称 **取值范围**： 字符长度0-256位 
 
         :param app_name: The app_name of this GeneralImageVulOperationsResponseInfo.
         :type app_name: str
@@ -283,7 +283,7 @@ class GeneralImageVulOperationsResponseInfo:
     def app_version(self):
         r"""Gets the app_version of this GeneralImageVulOperationsResponseInfo.
 
-        软件版本
+        **参数解释**： 软件版本 **取值范围**： 字符长度0-256位 
 
         :return: The app_version of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -294,7 +294,7 @@ class GeneralImageVulOperationsResponseInfo:
     def app_version(self, app_version):
         r"""Sets the app_version of this GeneralImageVulOperationsResponseInfo.
 
-        软件版本
+        **参数解释**： 软件版本 **取值范围**： 字符长度0-256位 
 
         :param app_version: The app_version of this GeneralImageVulOperationsResponseInfo.
         :type app_version: str
@@ -305,7 +305,7 @@ class GeneralImageVulOperationsResponseInfo:
     def app_path(self):
         r"""Gets the app_path of this GeneralImageVulOperationsResponseInfo.
 
-        软件路径
+        **参数解释**： 软件路径 **取值范围**： 字符长度0-256位 
 
         :return: The app_path of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -316,7 +316,7 @@ class GeneralImageVulOperationsResponseInfo:
     def app_path(self, app_path):
         r"""Sets the app_path of this GeneralImageVulOperationsResponseInfo.
 
-        软件路径
+        **参数解释**： 软件路径 **取值范围**： 字符长度0-256位 
 
         :param app_path: The app_path of this GeneralImageVulOperationsResponseInfo.
         :type app_path: str
@@ -327,7 +327,7 @@ class GeneralImageVulOperationsResponseInfo:
     def remark(self):
         r"""Gets the remark of this GeneralImageVulOperationsResponseInfo.
 
-        备注
+        **参数解释**： 备注 **取值范围**： 字符长度0-256位 
 
         :return: The remark of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -338,7 +338,7 @@ class GeneralImageVulOperationsResponseInfo:
     def remark(self, remark):
         r"""Sets the remark of this GeneralImageVulOperationsResponseInfo.
 
-        备注
+        **参数解释**： 备注 **取值范围**： 字符长度0-256位 
 
         :param remark: The remark of this GeneralImageVulOperationsResponseInfo.
         :type remark: str
@@ -349,7 +349,7 @@ class GeneralImageVulOperationsResponseInfo:
     def image_digest(self):
         r"""Gets the image_digest of this GeneralImageVulOperationsResponseInfo.
 
-        镜像标识
+        **参数解释**： 镜像标识 **取值范围**： 字符长度0-256位 
 
         :return: The image_digest of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -360,7 +360,7 @@ class GeneralImageVulOperationsResponseInfo:
     def image_digest(self, image_digest):
         r"""Sets the image_digest of this GeneralImageVulOperationsResponseInfo.
 
-        镜像标识
+        **参数解释**： 镜像标识 **取值范围**： 字符长度0-256位 
 
         :param image_digest: The image_digest of this GeneralImageVulOperationsResponseInfo.
         :type image_digest: str
@@ -371,7 +371,7 @@ class GeneralImageVulOperationsResponseInfo:
     def image_version(self):
         r"""Gets the image_version of this GeneralImageVulOperationsResponseInfo.
 
-        镜像版本
+        **参数解释**： 镜像版本 **取值范围**： 字符长度0-256位 
 
         :return: The image_version of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -382,7 +382,7 @@ class GeneralImageVulOperationsResponseInfo:
     def image_version(self, image_version):
         r"""Sets the image_version of this GeneralImageVulOperationsResponseInfo.
 
-        镜像版本
+        **参数解释**： 镜像版本 **取值范围**： 字符长度0-256位 
 
         :param image_version: The image_version of this GeneralImageVulOperationsResponseInfo.
         :type image_version: str
@@ -393,7 +393,7 @@ class GeneralImageVulOperationsResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this GeneralImageVulOperationsResponseInfo.
 
-        Agent ID
+        **参数解释**： Agent ID **取值范围**： 字符长度0-512位 
 
         :return: The agent_id of this GeneralImageVulOperationsResponseInfo.
         :rtype: str
@@ -404,7 +404,7 @@ class GeneralImageVulOperationsResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this GeneralImageVulOperationsResponseInfo.
 
-        Agent ID
+        **参数解释**： Agent ID **取值范围**： 字符长度0-512位 
 
         :param agent_id: The agent_id of this GeneralImageVulOperationsResponseInfo.
         :type agent_id: str

@@ -50,7 +50,8 @@ class ObsFileAddr:
 
         self.bucket = bucket
         self.location = location
-        self.object = object
+        if object is not None:
+            self.object = object
 
     @property
     def bucket(self):

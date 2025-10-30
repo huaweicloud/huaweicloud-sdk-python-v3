@@ -18,29 +18,36 @@ class ListTemplatesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'templates': 'list[Template]'
+        'templates': 'list[Template]',
+        'page_info': 'PageInfo'
     }
 
     attribute_map = {
-        'templates': 'templates'
+        'templates': 'templates',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, templates=None):
+    def __init__(self, templates=None, page_info=None):
         r"""ListTemplatesResponse
 
         The model defined in huaweicloud sdk
 
         :param templates: 模板列表
         :type templates: list[:class:`huaweicloudsdkaos.v1.Template`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
         """
         
         super(ListTemplatesResponse, self).__init__()
 
         self._templates = None
+        self._page_info = None
         self.discriminator = None
 
         if templates is not None:
             self.templates = templates
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def templates(self):
@@ -63,6 +70,24 @@ class ListTemplatesResponse(SdkResponse):
         :type templates: list[:class:`huaweicloudsdkaos.v1.Template`]
         """
         self._templates = templates
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListTemplatesResponse.
+
+        :return: The page_info of this ListTemplatesResponse.
+        :rtype: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListTemplatesResponse.
+
+        :param page_info: The page_info of this ListTemplatesResponse.
+        :type page_info: :class:`huaweicloudsdkaos.v1.PageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

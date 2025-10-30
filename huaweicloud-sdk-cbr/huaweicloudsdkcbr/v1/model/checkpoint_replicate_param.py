@@ -22,7 +22,8 @@ class CheckpointReplicateParam:
         'destination_region': 'str',
         'destination_vault_id': 'str',
         'enable_acceleration': 'bool',
-        'vault_id': 'str'
+        'vault_id': 'str',
+        'cross_account_urn': 'str'
     }
 
     attribute_map = {
@@ -31,10 +32,11 @@ class CheckpointReplicateParam:
         'destination_region': 'destination_region',
         'destination_vault_id': 'destination_vault_id',
         'enable_acceleration': 'enable_acceleration',
-        'vault_id': 'vault_id'
+        'vault_id': 'vault_id',
+        'cross_account_urn': 'cross_account_urn'
     }
 
-    def __init__(self, auto_trigger=None, destination_project_id=None, destination_region=None, destination_vault_id=None, enable_acceleration=None, vault_id=None):
+    def __init__(self, auto_trigger=None, destination_project_id=None, destination_region=None, destination_vault_id=None, enable_acceleration=None, vault_id=None, cross_account_urn=None):
         r"""CheckpointReplicateParam
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CheckpointReplicateParam:
         :type enable_acceleration: bool
         :param vault_id: 存储库ID: uuid
         :type vault_id: str
+        :param cross_account_urn: 跨账户复制所需的目标账户的跨账户复制存储库标识
+        :type cross_account_urn: str
         """
         
         
@@ -61,6 +65,7 @@ class CheckpointReplicateParam:
         self._destination_vault_id = None
         self._enable_acceleration = None
         self._vault_id = None
+        self._cross_account_urn = None
         self.discriminator = None
 
         if auto_trigger is not None:
@@ -71,6 +76,8 @@ class CheckpointReplicateParam:
         if enable_acceleration is not None:
             self.enable_acceleration = enable_acceleration
         self.vault_id = vault_id
+        if cross_account_urn is not None:
+            self.cross_account_urn = cross_account_urn
 
     @property
     def auto_trigger(self):
@@ -203,6 +210,28 @@ class CheckpointReplicateParam:
         :type vault_id: str
         """
         self._vault_id = vault_id
+
+    @property
+    def cross_account_urn(self):
+        r"""Gets the cross_account_urn of this CheckpointReplicateParam.
+
+        跨账户复制所需的目标账户的跨账户复制存储库标识
+
+        :return: The cross_account_urn of this CheckpointReplicateParam.
+        :rtype: str
+        """
+        return self._cross_account_urn
+
+    @cross_account_urn.setter
+    def cross_account_urn(self, cross_account_urn):
+        r"""Sets the cross_account_urn of this CheckpointReplicateParam.
+
+        跨账户复制所需的目标账户的跨账户复制存储库标识
+
+        :param cross_account_urn: The cross_account_urn of this CheckpointReplicateParam.
+        :type cross_account_urn: str
+        """
+        self._cross_account_urn = cross_account_urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

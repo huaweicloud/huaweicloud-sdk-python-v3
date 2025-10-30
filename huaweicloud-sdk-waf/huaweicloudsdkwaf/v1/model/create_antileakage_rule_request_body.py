@@ -20,7 +20,7 @@ class CreateAntileakageRuleRequestBody:
         'url': 'str',
         'category': 'str',
         'contents': 'list[str]',
-        'action': 'BatchCreateAntileakageRuleRequestBodyAction',
+        'action': 'LeakageListInfoAction',
         'description': 'str'
     }
 
@@ -44,7 +44,7 @@ class CreateAntileakageRuleRequestBody:
         :param contents: 规则内容（http状态码：400 、401、402 、 403 、404 、 405 、500 、501 、502 、503、 504 、507；手机：phone、身份证号：id_card、邮箱：email）
         :type contents: list[str]
         :param action: 
-        :type action: :class:`huaweicloudsdkwaf.v1.BatchCreateAntileakageRuleRequestBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.LeakageListInfoAction`
         :param description: 规则描述
         :type description: str
         """
@@ -137,7 +137,7 @@ class CreateAntileakageRuleRequestBody:
         r"""Gets the action of this CreateAntileakageRuleRequestBody.
 
         :return: The action of this CreateAntileakageRuleRequestBody.
-        :rtype: :class:`huaweicloudsdkwaf.v1.BatchCreateAntileakageRuleRequestBodyAction`
+        :rtype: :class:`huaweicloudsdkwaf.v1.LeakageListInfoAction`
         """
         return self._action
 
@@ -146,7 +146,7 @@ class CreateAntileakageRuleRequestBody:
         r"""Sets the action of this CreateAntileakageRuleRequestBody.
 
         :param action: The action of this CreateAntileakageRuleRequestBody.
-        :type action: :class:`huaweicloudsdkwaf.v1.BatchCreateAntileakageRuleRequestBodyAction`
+        :type action: :class:`huaweicloudsdkwaf.v1.LeakageListInfoAction`
         """
         self._action = action
 

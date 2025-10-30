@@ -33,7 +33,7 @@ class UpdateAntiTamperRuleRefreshRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
         :type enterprise_project_id: str
         :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
         :type policy_id: str
@@ -57,7 +57,7 @@ class UpdateAntiTamperRuleRefreshRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this UpdateAntiTamperRuleRefreshRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
 
         :return: The enterprise_project_id of this UpdateAntiTamperRuleRefreshRequest.
         :rtype: str
@@ -68,7 +68,7 @@ class UpdateAntiTamperRuleRefreshRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this UpdateAntiTamperRuleRefreshRequest.
 
-        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateAntiTamperRuleRefreshRequest.
         :type enterprise_project_id: str

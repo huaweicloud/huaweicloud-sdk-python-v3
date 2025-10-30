@@ -69,7 +69,7 @@ class ProtectionPolicyInfo:
         :type deploy_mode: str
         :param protection_directory: **参数解释**: 防护目录 **取值范围**: 字符长度1-128 
         :type protection_directory: str
-        :param protection_type: **参数解释**: 防护文件类型，例如：docx，txt，avi **取值范围**: 字符长度1-128 
+        :param protection_type: **参数解释**: 需要防护的文件类型 **取值范围**: txt、csv、rtf、doc、docx、xls、xlsx、ppt、pptx、pdf、xml、json、sql、mdf、dbf、ldf、db、myd、wdb、si、cfs、cfe、fnm、fdx、fdt、tvx、tvf、tvd、tim、nvd、nvm、dvd、dvm、jpeg、bmp、gif、png、tiff、eps、mp3、mp4、avi、mpg、wmv、RMVB、mov、3pg、swf、flv、rar、gz、tgz、zip、7z、cpp、c、java、asp、php、python、html、js、vdi、vmdk、vdx、ovf、qcow2、vmem、vswp、img、bak、back、cer、crt、pem、key、csr 
         :type protection_type: str
         :param exclude_directory: **参数解释**: 排除目录，选填 **取值范围**: 字符长度1-128 
         :type exclude_directory: str
@@ -85,7 +85,7 @@ class ProtectionPolicyInfo:
         :type process_whitelist: list[:class:`huaweicloudsdkhss.v5.TrustProcessInfo`]
         :param default_policy: **参数解释**: 是否为默认策略 **取值范围**: 包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略
         :type default_policy: int
-        :param ai_protection_status: **参数解释**: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。 **取值范围**: 字符长度1-128
+        :param ai_protection_status: **参数解释**: 是否开启AI勒索防护 **取值范围**:   - opened ：开启。   - closed ：关闭。
         :type ai_protection_status: str
         """
         
@@ -275,7 +275,7 @@ class ProtectionPolicyInfo:
     def protection_type(self):
         r"""Gets the protection_type of this ProtectionPolicyInfo.
 
-        **参数解释**: 防护文件类型，例如：docx，txt，avi **取值范围**: 字符长度1-128 
+        **参数解释**: 需要防护的文件类型 **取值范围**: txt、csv、rtf、doc、docx、xls、xlsx、ppt、pptx、pdf、xml、json、sql、mdf、dbf、ldf、db、myd、wdb、si、cfs、cfe、fnm、fdx、fdt、tvx、tvf、tvd、tim、nvd、nvm、dvd、dvm、jpeg、bmp、gif、png、tiff、eps、mp3、mp4、avi、mpg、wmv、RMVB、mov、3pg、swf、flv、rar、gz、tgz、zip、7z、cpp、c、java、asp、php、python、html、js、vdi、vmdk、vdx、ovf、qcow2、vmem、vswp、img、bak、back、cer、crt、pem、key、csr 
 
         :return: The protection_type of this ProtectionPolicyInfo.
         :rtype: str
@@ -286,7 +286,7 @@ class ProtectionPolicyInfo:
     def protection_type(self, protection_type):
         r"""Sets the protection_type of this ProtectionPolicyInfo.
 
-        **参数解释**: 防护文件类型，例如：docx，txt，avi **取值范围**: 字符长度1-128 
+        **参数解释**: 需要防护的文件类型 **取值范围**: txt、csv、rtf、doc、docx、xls、xlsx、ppt、pptx、pdf、xml、json、sql、mdf、dbf、ldf、db、myd、wdb、si、cfs、cfe、fnm、fdx、fdt、tvx、tvf、tvd、tim、nvd、nvm、dvd、dvm、jpeg、bmp、gif、png、tiff、eps、mp3、mp4、avi、mpg、wmv、RMVB、mov、3pg、swf、flv、rar、gz、tgz、zip、7z、cpp、c、java、asp、php、python、html、js、vdi、vmdk、vdx、ovf、qcow2、vmem、vswp、img、bak、back、cer、crt、pem、key、csr 
 
         :param protection_type: The protection_type of this ProtectionPolicyInfo.
         :type protection_type: str
@@ -451,7 +451,7 @@ class ProtectionPolicyInfo:
     def ai_protection_status(self):
         r"""Gets the ai_protection_status of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。 **取值范围**: 字符长度1-128
+        **参数解释**: 是否开启AI勒索防护 **取值范围**:   - opened ：开启。   - closed ：关闭。
 
         :return: The ai_protection_status of this ProtectionPolicyInfo.
         :rtype: str
@@ -462,7 +462,7 @@ class ProtectionPolicyInfo:
     def ai_protection_status(self, ai_protection_status):
         r"""Sets the ai_protection_status of this ProtectionPolicyInfo.
 
-        **参数解释**: 是否开启AI勒索防护，包含如下1种, 默认为开启AI勒索防护。   - opened ：开启。   - closed ：关闭。 **取值范围**: 字符长度1-128
+        **参数解释**: 是否开启AI勒索防护 **取值范围**:   - opened ：开启。   - closed ：关闭。
 
         :param ai_protection_status: The ai_protection_status of this ProtectionPolicyInfo.
         :type ai_protection_status: str

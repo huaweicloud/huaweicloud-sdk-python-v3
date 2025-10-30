@@ -31,9 +31,9 @@ class WebFrameworkStatisticsResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param file_name: Web框架文件名称
+        :param file_name: **参数解释**: Web框架文件名称 **取值范围**: 字符长度0-256 
         :type file_name: str
-        :param num: Web框架统计信息总数
+        :param num: **参数解释** Web框架统计信息总数 **取值范围** 最小值0，最大值300000 
         :type num: int
         """
         
@@ -52,7 +52,7 @@ class WebFrameworkStatisticsResponseInfo:
     def file_name(self):
         r"""Gets the file_name of this WebFrameworkStatisticsResponseInfo.
 
-        Web框架文件名称
+        **参数解释**: Web框架文件名称 **取值范围**: 字符长度0-256 
 
         :return: The file_name of this WebFrameworkStatisticsResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class WebFrameworkStatisticsResponseInfo:
     def file_name(self, file_name):
         r"""Sets the file_name of this WebFrameworkStatisticsResponseInfo.
 
-        Web框架文件名称
+        **参数解释**: Web框架文件名称 **取值范围**: 字符长度0-256 
 
         :param file_name: The file_name of this WebFrameworkStatisticsResponseInfo.
         :type file_name: str
@@ -74,7 +74,7 @@ class WebFrameworkStatisticsResponseInfo:
     def num(self):
         r"""Gets the num of this WebFrameworkStatisticsResponseInfo.
 
-        Web框架统计信息总数
+        **参数解释** Web框架统计信息总数 **取值范围** 最小值0，最大值300000 
 
         :return: The num of this WebFrameworkStatisticsResponseInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class WebFrameworkStatisticsResponseInfo:
     def num(self, num):
         r"""Sets the num of this WebFrameworkStatisticsResponseInfo.
 
-        Web框架统计信息总数
+        **参数解释** Web框架统计信息总数 **取值范围** 最小值0，最大值300000 
 
         :param num: The num of this WebFrameworkStatisticsResponseInfo.
         :type num: int

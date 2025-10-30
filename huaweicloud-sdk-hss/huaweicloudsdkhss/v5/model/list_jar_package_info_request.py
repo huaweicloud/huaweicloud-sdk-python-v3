@@ -19,18 +19,18 @@ class ListJarPackageInfoRequest:
     openapi_types = {
         'enterprise_project_id': 'str',
         'host_id': 'str',
-        'file_name': 'str',
-        'category': 'str'
+        'category': 'str',
+        'file_name': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'host_id': 'host_id',
-        'file_name': 'file_name',
-        'category': 'category'
+        'category': 'category',
+        'file_name': 'file_name'
     }
 
-    def __init__(self, enterprise_project_id=None, host_id=None, file_name=None, category=None):
+    def __init__(self, enterprise_project_id=None, host_id=None, category=None, file_name=None):
         r"""ListJarPackageInfoRequest
 
         The model defined in huaweicloud sdk
@@ -39,26 +39,26 @@ class ListJarPackageInfoRequest:
         :type enterprise_project_id: str
         :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        :type category: str
         :param file_name: **参数解释**: 文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
         :type file_name: str
-        :param category: **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host : 主机 - container : 容器  **默认取值**: 不涉及 
-        :type category: str
         """
         
         
 
         self._enterprise_project_id = None
         self._host_id = None
-        self._file_name = None
         self._category = None
+        self._file_name = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.host_id = host_id
+        self.category = category
         if file_name is not None:
             self.file_name = file_name
-        self.category = category
 
     @property
     def enterprise_project_id(self):
@@ -105,6 +105,28 @@ class ListJarPackageInfoRequest:
         self._host_id = host_id
 
     @property
+    def category(self):
+        r"""Gets the category of this ListJarPackageInfoRequest.
+
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+
+        :return: The category of this ListJarPackageInfoRequest.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        r"""Sets the category of this ListJarPackageInfoRequest.
+
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+
+        :param category: The category of this ListJarPackageInfoRequest.
+        :type category: str
+        """
+        self._category = category
+
+    @property
     def file_name(self):
         r"""Gets the file_name of this ListJarPackageInfoRequest.
 
@@ -125,28 +147,6 @@ class ListJarPackageInfoRequest:
         :type file_name: str
         """
         self._file_name = file_name
-
-    @property
-    def category(self):
-        r"""Gets the category of this ListJarPackageInfoRequest.
-
-        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host : 主机 - container : 容器  **默认取值**: 不涉及 
-
-        :return: The category of this ListJarPackageInfoRequest.
-        :rtype: str
-        """
-        return self._category
-
-    @category.setter
-    def category(self, category):
-        r"""Sets the category of this ListJarPackageInfoRequest.
-
-        **参数解释**: 类别 **约束限制**: 不涉及 **取值范围**: - host : 主机 - container : 容器  **默认取值**: 不涉及 
-
-        :param category: The category of this ListJarPackageInfoRequest.
-        :type category: str
-        """
-        self._category = category
 
     def to_dict(self):
         """Returns the model properties as a dict"""

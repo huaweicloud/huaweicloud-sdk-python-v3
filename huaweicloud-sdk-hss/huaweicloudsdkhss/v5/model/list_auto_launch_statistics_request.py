@@ -21,7 +21,8 @@ class ListAutoLaunchStatisticsRequest:
         'type': 'str',
         'enterprise_project_id': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'category': 'str'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ListAutoLaunchStatisticsRequest:
         'type': 'type',
         'enterprise_project_id': 'enterprise_project_id',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'category': 'category'
     }
 
-    def __init__(self, name=None, type=None, enterprise_project_id=None, limit=None, offset=None):
+    def __init__(self, name=None, type=None, enterprise_project_id=None, limit=None, offset=None, category=None):
         r"""ListAutoLaunchStatisticsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListAutoLaunchStatisticsRequest:
         :type limit: int
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        :type category: str
         """
         
         
@@ -56,6 +60,7 @@ class ListAutoLaunchStatisticsRequest:
         self._enterprise_project_id = None
         self._limit = None
         self._offset = None
+        self._category = None
         self.discriminator = None
 
         if name is not None:
@@ -68,6 +73,7 @@ class ListAutoLaunchStatisticsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        self.category = category
 
     @property
     def name(self):
@@ -178,6 +184,28 @@ class ListAutoLaunchStatisticsRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def category(self):
+        r"""Gets the category of this ListAutoLaunchStatisticsRequest.
+
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+
+        :return: The category of this ListAutoLaunchStatisticsRequest.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        r"""Sets the category of this ListAutoLaunchStatisticsRequest.
+
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+
+        :param category: The category of this ListAutoLaunchStatisticsRequest.
+        :type category: str
+        """
+        self._category = category
 
     def to_dict(self):
         """Returns the model properties as a dict"""

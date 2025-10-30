@@ -49,15 +49,15 @@ class ListWebSiteHostInfoRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param category: 返回的资产类别 - 0: 主机 - 1: 容器
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
         :type category: str
-        :param domain: 域名
+        :param domain: **参数解释**: 域名 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
         :type domain: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_ip: 服务器IP
+        :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type host_ip: str
-        :param part_match: 是否模糊匹配，默认false表示精确匹配
+        :param part_match: **参数解释**: 是否模糊匹配，默认false表示精确匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
         :type part_match: bool
         """
         
@@ -158,7 +158,7 @@ class ListWebSiteHostInfoRequest:
     def category(self):
         r"""Gets the category of this ListWebSiteHostInfoRequest.
 
-        返回的资产类别 - 0: 主机 - 1: 容器
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :return: The category of this ListWebSiteHostInfoRequest.
         :rtype: str
@@ -169,7 +169,7 @@ class ListWebSiteHostInfoRequest:
     def category(self, category):
         r"""Sets the category of this ListWebSiteHostInfoRequest.
 
-        返回的资产类别 - 0: 主机 - 1: 容器
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :param category: The category of this ListWebSiteHostInfoRequest.
         :type category: str
@@ -180,7 +180,7 @@ class ListWebSiteHostInfoRequest:
     def domain(self):
         r"""Gets the domain of this ListWebSiteHostInfoRequest.
 
-        域名
+        **参数解释**: 域名 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :return: The domain of this ListWebSiteHostInfoRequest.
         :rtype: str
@@ -191,7 +191,7 @@ class ListWebSiteHostInfoRequest:
     def domain(self, domain):
         r"""Sets the domain of this ListWebSiteHostInfoRequest.
 
-        域名
+        **参数解释**: 域名 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :param domain: The domain of this ListWebSiteHostInfoRequest.
         :type domain: str
@@ -202,7 +202,7 @@ class ListWebSiteHostInfoRequest:
     def host_name(self):
         r"""Gets the host_name of this ListWebSiteHostInfoRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :return: The host_name of this ListWebSiteHostInfoRequest.
         :rtype: str
@@ -213,7 +213,7 @@ class ListWebSiteHostInfoRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListWebSiteHostInfoRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListWebSiteHostInfoRequest.
         :type host_name: str
@@ -224,7 +224,7 @@ class ListWebSiteHostInfoRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListWebSiteHostInfoRequest.
 
-        服务器IP
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListWebSiteHostInfoRequest.
         :rtype: str
@@ -235,7 +235,7 @@ class ListWebSiteHostInfoRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListWebSiteHostInfoRequest.
 
-        服务器IP
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListWebSiteHostInfoRequest.
         :type host_ip: str
@@ -246,7 +246,7 @@ class ListWebSiteHostInfoRequest:
     def part_match(self):
         r"""Gets the part_match of this ListWebSiteHostInfoRequest.
 
-        是否模糊匹配，默认false表示精确匹配
+        **参数解释**: 是否模糊匹配，默认false表示精确匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
 
         :return: The part_match of this ListWebSiteHostInfoRequest.
         :rtype: bool
@@ -257,7 +257,7 @@ class ListWebSiteHostInfoRequest:
     def part_match(self, part_match):
         r"""Sets the part_match of this ListWebSiteHostInfoRequest.
 
-        是否模糊匹配，默认false表示精确匹配
+        **参数解释**: 是否模糊匹配，默认false表示精确匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
 
         :param part_match: The part_match of this ListWebSiteHostInfoRequest.
         :type part_match: bool

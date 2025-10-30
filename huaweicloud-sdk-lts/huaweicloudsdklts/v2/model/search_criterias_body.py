@@ -19,16 +19,18 @@ class SearchCriteriasBody:
     openapi_types = {
         'criterias': 'list[GetQuerySearchCriteriasBody]',
         'log_stream_id': 'str',
-        'log_stream_name': 'str'
+        'log_stream_name': 'str',
+        'search_type': 'str'
     }
 
     attribute_map = {
         'criterias': 'criterias',
         'log_stream_id': 'log_stream_id',
-        'log_stream_name': 'log_stream_name'
+        'log_stream_name': 'log_stream_name',
+        'search_type': 'search_type'
     }
 
-    def __init__(self, criterias=None, log_stream_id=None, log_stream_name=None):
+    def __init__(self, criterias=None, log_stream_id=None, log_stream_name=None, search_type=None):
         r"""SearchCriteriasBody
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class SearchCriteriasBody:
         :type log_stream_id: str
         :param log_stream_name: 日志流名称
         :type log_stream_name: str
+        :param search_type: **参数解释：** 快速查询类型。 **取值范围：** - ORIGINALLOG：原始日志 - VISUALIZATION：可视化日志
+        :type search_type: str
         """
         
         
@@ -46,6 +50,7 @@ class SearchCriteriasBody:
         self._criterias = None
         self._log_stream_id = None
         self._log_stream_name = None
+        self._search_type = None
         self.discriminator = None
 
         self.criterias = criterias
@@ -53,6 +58,8 @@ class SearchCriteriasBody:
             self.log_stream_id = log_stream_id
         if log_stream_name is not None:
             self.log_stream_name = log_stream_name
+        if search_type is not None:
+            self.search_type = search_type
 
     @property
     def criterias(self):
@@ -119,6 +126,28 @@ class SearchCriteriasBody:
         :type log_stream_name: str
         """
         self._log_stream_name = log_stream_name
+
+    @property
+    def search_type(self):
+        r"""Gets the search_type of this SearchCriteriasBody.
+
+        **参数解释：** 快速查询类型。 **取值范围：** - ORIGINALLOG：原始日志 - VISUALIZATION：可视化日志
+
+        :return: The search_type of this SearchCriteriasBody.
+        :rtype: str
+        """
+        return self._search_type
+
+    @search_type.setter
+    def search_type(self, search_type):
+        r"""Sets the search_type of this SearchCriteriasBody.
+
+        **参数解释：** 快速查询类型。 **取值范围：** - ORIGINALLOG：原始日志 - VISUALIZATION：可视化日志
+
+        :param search_type: The search_type of this SearchCriteriasBody.
+        :type search_type: str
+        """
+        self._search_type = search_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

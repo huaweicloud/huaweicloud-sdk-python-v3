@@ -66,8 +66,7 @@ class ListAppStatisticsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-        if category is not None:
-            self.category = category
+        self.category = category
 
     @property
     def app_name(self):

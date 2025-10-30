@@ -35,6 +35,9 @@ class UpdateAccessConfigResponse(SdkResponse):
         'demo_log': 'str',
         'demo_fields': 'list[DemoFieldAccess]',
         'processors': 'list[Processor]',
+        'log_split_size': 'int',
+        'recursive_depth': 'int',
+        'access_config_type_source': 'str',
         'application_id': 'str',
         'environment_id': 'str',
         'component_id': 'list[str]'
@@ -58,12 +61,15 @@ class UpdateAccessConfigResponse(SdkResponse):
         'demo_log': 'demo_log',
         'demo_fields': 'demo_fields',
         'processors': 'processors',
+        'log_split_size': 'log_split_size',
+        'recursive_depth': 'recursive_depth',
+        'access_config_type_source': 'access_config_type_source',
         'application_id': 'application_id',
         'environment_id': 'environment_id',
         'component_id': 'component_id'
     }
 
-    def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None, encoding_format=None, incremental_collect=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None):
+    def __init__(self, access_config_id=None, access_config_name=None, access_config_type=None, create_time=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, log_split=None, binary_collect=None, cluster_id=None, encoding_format=None, incremental_collect=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, log_split_size=None, recursive_depth=None, access_config_type_source=None, application_id=None, environment_id=None, component_id=None):
         r"""UpdateAccessConfigResponse
 
         The model defined in huaweicloud sdk
@@ -102,6 +108,12 @@ class UpdateAccessConfigResponse(SdkResponse):
         :type demo_fields: list[:class:`huaweicloudsdklts.v2.DemoFieldAccess`]
         :param processors: IC结构化解析器
         :type processors: list[:class:`huaweicloudsdklts.v2.Processor`]
+        :param log_split_size: **参数解释：** 拆分日志大小。 **取值范围：** 不涉及。
+        :type log_split_size: int
+        :param recursive_depth: **参数解释：** 采集路径递归最大深度。 **取值范围：** 不涉及。
+        :type recursive_depth: int
+        :param access_config_type_source: **参数解释：** 日志接入自建软件来源。 **取值范围：** - ECS - CCE - BMS - K8S - ServiceStageHost - ServiceStage
+        :type access_config_type_source: str
         :param application_id: ServiceStage应用ID
         :type application_id: str
         :param environment_id: ServiceStage环境ID
@@ -129,6 +141,9 @@ class UpdateAccessConfigResponse(SdkResponse):
         self._demo_log = None
         self._demo_fields = None
         self._processors = None
+        self._log_split_size = None
+        self._recursive_depth = None
+        self._access_config_type_source = None
         self._application_id = None
         self._environment_id = None
         self._component_id = None
@@ -168,6 +183,12 @@ class UpdateAccessConfigResponse(SdkResponse):
             self.demo_fields = demo_fields
         if processors is not None:
             self.processors = processors
+        if log_split_size is not None:
+            self.log_split_size = log_split_size
+        if recursive_depth is not None:
+            self.recursive_depth = recursive_depth
+        if access_config_type_source is not None:
+            self.access_config_type_source = access_config_type_source
         if application_id is not None:
             self.application_id = application_id
         if environment_id is not None:
@@ -536,6 +557,72 @@ class UpdateAccessConfigResponse(SdkResponse):
         :type processors: list[:class:`huaweicloudsdklts.v2.Processor`]
         """
         self._processors = processors
+
+    @property
+    def log_split_size(self):
+        r"""Gets the log_split_size of this UpdateAccessConfigResponse.
+
+        **参数解释：** 拆分日志大小。 **取值范围：** 不涉及。
+
+        :return: The log_split_size of this UpdateAccessConfigResponse.
+        :rtype: int
+        """
+        return self._log_split_size
+
+    @log_split_size.setter
+    def log_split_size(self, log_split_size):
+        r"""Sets the log_split_size of this UpdateAccessConfigResponse.
+
+        **参数解释：** 拆分日志大小。 **取值范围：** 不涉及。
+
+        :param log_split_size: The log_split_size of this UpdateAccessConfigResponse.
+        :type log_split_size: int
+        """
+        self._log_split_size = log_split_size
+
+    @property
+    def recursive_depth(self):
+        r"""Gets the recursive_depth of this UpdateAccessConfigResponse.
+
+        **参数解释：** 采集路径递归最大深度。 **取值范围：** 不涉及。
+
+        :return: The recursive_depth of this UpdateAccessConfigResponse.
+        :rtype: int
+        """
+        return self._recursive_depth
+
+    @recursive_depth.setter
+    def recursive_depth(self, recursive_depth):
+        r"""Sets the recursive_depth of this UpdateAccessConfigResponse.
+
+        **参数解释：** 采集路径递归最大深度。 **取值范围：** 不涉及。
+
+        :param recursive_depth: The recursive_depth of this UpdateAccessConfigResponse.
+        :type recursive_depth: int
+        """
+        self._recursive_depth = recursive_depth
+
+    @property
+    def access_config_type_source(self):
+        r"""Gets the access_config_type_source of this UpdateAccessConfigResponse.
+
+        **参数解释：** 日志接入自建软件来源。 **取值范围：** - ECS - CCE - BMS - K8S - ServiceStageHost - ServiceStage
+
+        :return: The access_config_type_source of this UpdateAccessConfigResponse.
+        :rtype: str
+        """
+        return self._access_config_type_source
+
+    @access_config_type_source.setter
+    def access_config_type_source(self, access_config_type_source):
+        r"""Sets the access_config_type_source of this UpdateAccessConfigResponse.
+
+        **参数解释：** 日志接入自建软件来源。 **取值范围：** - ECS - CCE - BMS - K8S - ServiceStageHost - ServiceStage
+
+        :param access_config_type_source: The access_config_type_source of this UpdateAccessConfigResponse.
+        :type access_config_type_source: str
+        """
+        self._access_config_type_source = access_config_type_source
 
     @property
     def application_id(self):

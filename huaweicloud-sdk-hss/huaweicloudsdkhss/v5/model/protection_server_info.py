@@ -147,7 +147,7 @@ class ProtectionServerInfo:
         :type count_protect_event: int
         :param count_backuped: **参数解释**: 已有备份数 **取值范围**: 取值0-2097152 
         :type count_backuped: int
-        :param agent_status: **参数解释**: Agent状态 **取值范围**: 字符长度1-128 
+        :param agent_status: **参数解释**: Agent状态 **取值范围**:   - installed：已安装。已安装状态包含以下四种情况：   - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。   - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。   - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。   - installing：安装中。表示当前正在进行Agent安装。   - not_installed ：未安装。表示服务器中尚未安装Agent。 
         :type agent_status: str
         :param version: **参数解释**: 主机开通的版本    **取值范围**: 包含如下7种输入：   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise ：容器版。
         :type version: str
@@ -799,7 +799,7 @@ class ProtectionServerInfo:
     def agent_status(self):
         r"""Gets the agent_status of this ProtectionServerInfo.
 
-        **参数解释**: Agent状态 **取值范围**: 字符长度1-128 
+        **参数解释**: Agent状态 **取值范围**:   - installed：已安装。已安装状态包含以下四种情况：   - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。   - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。   - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。   - installing：安装中。表示当前正在进行Agent安装。   - not_installed ：未安装。表示服务器中尚未安装Agent。 
 
         :return: The agent_status of this ProtectionServerInfo.
         :rtype: str
@@ -810,7 +810,7 @@ class ProtectionServerInfo:
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this ProtectionServerInfo.
 
-        **参数解释**: Agent状态 **取值范围**: 字符长度1-128 
+        **参数解释**: Agent状态 **取值范围**:   - installed：已安装。已安装状态包含以下四种情况：   - online：在线。表示Agent已经成功安装并且与HSS云端防护中心保持连接。   - offline：离线。表示虽然Agent已经安装，但当前与HSS云端防护中心的连接中断。   - install_failed：安装失败。表示在尝试安装过程中遇到错误或问题，导致安装未能完成。   - installing：安装中。表示当前正在进行Agent安装。   - not_installed ：未安装。表示服务器中尚未安装Agent。 
 
         :param agent_status: The agent_status of this ProtectionServerInfo.
         :type agent_status: str

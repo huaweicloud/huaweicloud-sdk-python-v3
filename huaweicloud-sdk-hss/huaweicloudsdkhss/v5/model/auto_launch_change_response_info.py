@@ -59,7 +59,7 @@ class AutoLaunchChangeResponseInfo:
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_ip: **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        :param host_ip: **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
         :type host_ip: str
         :param path: **参数解释**: 自启动项的路径 **取值范围**: 字符长度1-256位 
         :type path: str
@@ -225,7 +225,7 @@ class AutoLaunchChangeResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this AutoLaunchChangeResponseInfo.
 
-        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
 
         :return: The host_ip of this AutoLaunchChangeResponseInfo.
         :rtype: str
@@ -236,7 +236,7 @@ class AutoLaunchChangeResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this AutoLaunchChangeResponseInfo.
 
-        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
 
         :param host_ip: The host_ip of this AutoLaunchChangeResponseInfo.
         :type host_ip: str

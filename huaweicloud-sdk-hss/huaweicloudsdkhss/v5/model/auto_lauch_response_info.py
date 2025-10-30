@@ -53,7 +53,7 @@ class AutoLauchResponseInfo:
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_ip: **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        :param host_ip: **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
         :type host_ip: str
         :param name: **参数解释**: 自启动项名称 **取值范围**: 字符长度1-256位 
         :type name: str
@@ -174,7 +174,7 @@ class AutoLauchResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this AutoLauchResponseInfo.
 
-        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
 
         :return: The host_ip of this AutoLauchResponseInfo.
         :rtype: str
@@ -185,7 +185,7 @@ class AutoLauchResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this AutoLauchResponseInfo.
 
-        **参数解释**: 主机IP **取值范围**: 字符长度1-128位 
+        **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
 
         :param host_ip: The host_ip of this AutoLauchResponseInfo.
         :type host_ip: str

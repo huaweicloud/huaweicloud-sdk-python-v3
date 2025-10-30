@@ -98,6 +98,7 @@ from huaweicloudsdklts.v2.model.create_transfer_response_body_log_transfer_info_
 from huaweicloudsdklts.v2.model.createfavorite_reqbody import CreatefavoriteReqbody
 from huaweicloudsdklts.v2.model.createfavorite_request import CreatefavoriteRequest
 from huaweicloudsdklts.v2.model.createfavorite_response import CreatefavoriteResponse
+from huaweicloudsdklts.v2.model.custom_time_info import CustomTimeInfo
 from huaweicloudsdklts.v2.model.delete_access_config_request import DeleteAccessConfigRequest
 from huaweicloudsdklts.v2.model.delete_access_config_request_body import DeleteAccessConfigRequestBody
 from huaweicloudsdklts.v2.model.delete_access_config_response import DeleteAccessConfigResponse
@@ -230,6 +231,7 @@ from huaweicloudsdklts.v2.model.log_group import LogGroup
 from huaweicloudsdklts.v2.model.log_mapping_config import LogMappingConfig
 from huaweicloudsdklts.v2.model.log_mapping_stream_info import LogMappingStreamInfo
 from huaweicloudsdklts.v2.model.log_stream_res_body import LogStreamResBody
+from huaweicloudsdklts.v2.model.log_transfer_detail import LogTransferDetail
 from huaweicloudsdklts.v2.model.lts_struct_template_info import LtsStructTemplateInfo
 from huaweicloudsdklts.v2.model.member_groupand_stream_log_streams import MemberGroupandStreamLogStreams
 from huaweicloudsdklts.v2.model.member_groupand_stream_results import MemberGroupandStreamResults
@@ -249,7 +251,9 @@ from huaweicloudsdklts.v2.model.register_dms_kafka_instance_request import Regis
 from huaweicloudsdklts.v2.model.register_dms_kafka_instance_request_body import RegisterDmsKafkaInstanceRequestBody
 from huaweicloudsdklts.v2.model.register_dms_kafka_instance_request_body_connect_info import RegisterDmsKafkaInstanceRequestBodyConnectInfo
 from huaweicloudsdklts.v2.model.register_dms_kafka_instance_response import RegisterDmsKafkaInstanceResponse
+from huaweicloudsdklts.v2.model.resource_tag import ResourceTag
 from huaweicloudsdklts.v2.model.resulits import Resulits
+from huaweicloudsdklts.v2.model.results import Results
 from huaweicloudsdklts.v2.model.results_topn_body import ResultsTopnBody
 from huaweicloudsdklts.v2.model.rule import Rule
 from huaweicloudsdklts.v2.model.search_criterias_body import SearchCriteriasBody
@@ -286,10 +290,12 @@ from huaweicloudsdklts.v2.model.struct_log_contents import StructLogContents
 from huaweicloudsdklts.v2.model.struct_template import StructTemplate
 from huaweicloudsdklts.v2.model.struct_template_model import StructTemplateModel
 from huaweicloudsdklts.v2.model.sub_template import SubTemplate
+from huaweicloudsdklts.v2.model.sub_template_res_body import SubTemplateResBody
 from huaweicloudsdklts.v2.model.tag_field import TagField
 from huaweicloudsdklts.v2.model.tag_field_new import TagFieldNew
 from huaweicloudsdklts.v2.model.tag_fields_info import TagFieldsInfo
 from huaweicloudsdklts.v2.model.tags_body import TagsBody
+from huaweicloudsdklts.v2.model.tags_res_body import TagsResBody
 from huaweicloudsdklts.v2.model.template_rule import TemplateRule
 from huaweicloudsdklts.v2.model.time_range import TimeRange
 from huaweicloudsdklts.v2.model.timeline_traffic_statistics_request_body import TimelineTrafficStatisticsRequestBody

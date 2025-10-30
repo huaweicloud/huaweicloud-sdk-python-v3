@@ -47,13 +47,13 @@ class ExportSecurityCheckReportRequest:
         :type group_id: str
         :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
-        :param check_name: **参数解释** : \&quot;配置检查（基线）的名称，例如SSH、CentOS 7、Windows\&quot;。 **约束限制** : 不涉及 **取值范围** : - cn_standard: 等保合规标准 - hw_standard: 云安全实践标准 **默认取值** : 不涉及 
+        :param check_name: **参数解释** : \&quot;配置检查（基线）的名称，例如SSH、CentOS 7、Windows\&quot;。 **约束限制** : 不涉及 **取值范围** : 字符长度1-256位 **默认取值** : 不涉及 
         :type check_name: str
-        :param standard: **参数解释**: 标准类型。 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
+        :param standard: **参数解释**: 标准类型。 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准  **默认取值**: 不涉及 
         :type standard: str
-        :param scan_result: **参数解释**: 检查结果。 **约束限制**: 不涉及 **取值范围**: - pass : 检查通过 - failed : 检查未通过 **默认取值**: 不涉及 
+        :param scan_result: **参数解释**: 检查结果。 **约束限制**: 不涉及 **取值范围**: - pass : 检查通过 - failed : 检查未通过  **默认取值**: 不涉及 
         :type scan_result: str
-        :param severity: **参数解释**: 风险级别。 **约束限制**: 不涉及 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 **默认取值**: 不涉及 
+        :param severity: **参数解释**: 风险级别。 **约束限制**: 不涉及 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危  **默认取值**: 不涉及 
         :type severity: str
         """
         
@@ -153,7 +153,7 @@ class ExportSecurityCheckReportRequest:
     def check_name(self):
         r"""Gets the check_name of this ExportSecurityCheckReportRequest.
 
-        **参数解释** : \"配置检查（基线）的名称，例如SSH、CentOS 7、Windows\"。 **约束限制** : 不涉及 **取值范围** : - cn_standard: 等保合规标准 - hw_standard: 云安全实践标准 **默认取值** : 不涉及 
+        **参数解释** : \"配置检查（基线）的名称，例如SSH、CentOS 7、Windows\"。 **约束限制** : 不涉及 **取值范围** : 字符长度1-256位 **默认取值** : 不涉及 
 
         :return: The check_name of this ExportSecurityCheckReportRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ExportSecurityCheckReportRequest:
     def check_name(self, check_name):
         r"""Sets the check_name of this ExportSecurityCheckReportRequest.
 
-        **参数解释** : \"配置检查（基线）的名称，例如SSH、CentOS 7、Windows\"。 **约束限制** : 不涉及 **取值范围** : - cn_standard: 等保合规标准 - hw_standard: 云安全实践标准 **默认取值** : 不涉及 
+        **参数解释** : \"配置检查（基线）的名称，例如SSH、CentOS 7、Windows\"。 **约束限制** : 不涉及 **取值范围** : 字符长度1-256位 **默认取值** : 不涉及 
 
         :param check_name: The check_name of this ExportSecurityCheckReportRequest.
         :type check_name: str
@@ -175,7 +175,7 @@ class ExportSecurityCheckReportRequest:
     def standard(self):
         r"""Gets the standard of this ExportSecurityCheckReportRequest.
 
-        **参数解释**: 标准类型。 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
+        **参数解释**: 标准类型。 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准  **默认取值**: 不涉及 
 
         :return: The standard of this ExportSecurityCheckReportRequest.
         :rtype: str
@@ -186,7 +186,7 @@ class ExportSecurityCheckReportRequest:
     def standard(self, standard):
         r"""Sets the standard of this ExportSecurityCheckReportRequest.
 
-        **参数解释**: 标准类型。 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 **默认取值**: 不涉及 
+        **参数解释**: 标准类型。 **约束限制**: 不涉及 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard : 通用安全标准  **默认取值**: 不涉及 
 
         :param standard: The standard of this ExportSecurityCheckReportRequest.
         :type standard: str
@@ -197,7 +197,7 @@ class ExportSecurityCheckReportRequest:
     def scan_result(self):
         r"""Gets the scan_result of this ExportSecurityCheckReportRequest.
 
-        **参数解释**: 检查结果。 **约束限制**: 不涉及 **取值范围**: - pass : 检查通过 - failed : 检查未通过 **默认取值**: 不涉及 
+        **参数解释**: 检查结果。 **约束限制**: 不涉及 **取值范围**: - pass : 检查通过 - failed : 检查未通过  **默认取值**: 不涉及 
 
         :return: The scan_result of this ExportSecurityCheckReportRequest.
         :rtype: str
@@ -208,7 +208,7 @@ class ExportSecurityCheckReportRequest:
     def scan_result(self, scan_result):
         r"""Sets the scan_result of this ExportSecurityCheckReportRequest.
 
-        **参数解释**: 检查结果。 **约束限制**: 不涉及 **取值范围**: - pass : 检查通过 - failed : 检查未通过 **默认取值**: 不涉及 
+        **参数解释**: 检查结果。 **约束限制**: 不涉及 **取值范围**: - pass : 检查通过 - failed : 检查未通过  **默认取值**: 不涉及 
 
         :param scan_result: The scan_result of this ExportSecurityCheckReportRequest.
         :type scan_result: str
@@ -219,7 +219,7 @@ class ExportSecurityCheckReportRequest:
     def severity(self):
         r"""Gets the severity of this ExportSecurityCheckReportRequest.
 
-        **参数解释**: 风险级别。 **约束限制**: 不涉及 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 **默认取值**: 不涉及 
+        **参数解释**: 风险级别。 **约束限制**: 不涉及 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危  **默认取值**: 不涉及 
 
         :return: The severity of this ExportSecurityCheckReportRequest.
         :rtype: str
@@ -230,7 +230,7 @@ class ExportSecurityCheckReportRequest:
     def severity(self, severity):
         r"""Sets the severity of this ExportSecurityCheckReportRequest.
 
-        **参数解释**: 风险级别。 **约束限制**: 不涉及 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危 **默认取值**: 不涉及 
+        **参数解释**: 风险级别。 **约束限制**: 不涉及 **取值范围**: - Low : 低危 - Medium : 中危 - High : 高危  **默认取值**: 不涉及 
 
         :param severity: The severity of this ExportSecurityCheckReportRequest.
         :type severity: str

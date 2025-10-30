@@ -53,7 +53,7 @@ class ListContainerNodesRequest:
         :type limit: int
         :param host_name: **参数解释**: 节点名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位  **默认取值**: 不涉及 
         :type host_name: str
-        :param agent_status: **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - not_installed：未安装。   - online：在线。   - offline：离线。  **默认取值**: 不涉及 
+        :param agent_status: **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: 包含如下6种。 - installed ：已安装。 - not_installed ：未安装。 - online ：在线。 - offline ：离线。 - install_failed ：安装失败。 - installing ：安装中。 **默认取值**: 不涉及 
         :type agent_status: str
         :param protect_status: **参数解释**: 防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下2种。   - closed：关闭   - opened：开启  **默认取值**: 不涉及 
         :type protect_status: str
@@ -204,7 +204,7 @@ class ListContainerNodesRequest:
     def agent_status(self):
         r"""Gets the agent_status of this ListContainerNodesRequest.
 
-        **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - not_installed：未安装。   - online：在线。   - offline：离线。  **默认取值**: 不涉及 
+        **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: 包含如下6种。 - installed ：已安装。 - not_installed ：未安装。 - online ：在线。 - offline ：离线。 - install_failed ：安装失败。 - installing ：安装中。 **默认取值**: 不涉及 
 
         :return: The agent_status of this ListContainerNodesRequest.
         :rtype: str
@@ -215,7 +215,7 @@ class ListContainerNodesRequest:
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this ListContainerNodesRequest.
 
-        **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: 包含如下3种。   - not_installed：未安装。   - online：在线。   - offline：离线。  **默认取值**: 不涉及 
+        **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: 包含如下6种。 - installed ：已安装。 - not_installed ：未安装。 - online ：在线。 - offline ：离线。 - install_failed ：安装失败。 - installing ：安装中。 **默认取值**: 不涉及 
 
         :param agent_status: The agent_status of this ListContainerNodesRequest.
         :type agent_status: str

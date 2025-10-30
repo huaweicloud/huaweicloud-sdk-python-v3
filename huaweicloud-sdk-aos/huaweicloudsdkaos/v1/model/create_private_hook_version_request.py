@@ -35,7 +35,7 @@ class CreatePrivateHookVersionRequest:
 
         :param client_request_id: 用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
         :type client_request_id: str
-        :param hook_name: 私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
+        :param hook_name: 私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
         :type hook_name: str
         :param body: Body of the CreatePrivateHookVersionRequest
         :type body: :class:`huaweicloudsdkaos.v1.CreatePrivateHookVersionRequestBody`
@@ -79,7 +79,7 @@ class CreatePrivateHookVersionRequest:
     def hook_name(self):
         r"""Gets the hook_name of this CreatePrivateHookVersionRequest.
 
-        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
+        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :return: The hook_name of this CreatePrivateHookVersionRequest.
         :rtype: str
@@ -90,7 +90,7 @@ class CreatePrivateHookVersionRequest:
     def hook_name(self, hook_name):
         r"""Sets the hook_name of this CreatePrivateHookVersionRequest.
 
-        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
+        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :param hook_name: The hook_name of this CreatePrivateHookVersionRequest.
         :type hook_name: str

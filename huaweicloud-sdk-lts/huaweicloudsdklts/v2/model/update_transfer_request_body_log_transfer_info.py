@@ -19,7 +19,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
     openapi_types = {
         'log_storage_format': 'str',
         'log_transfer_status': 'str',
-        'log_transfer_detail': 'TransferDetail'
+        'log_transfer_detail': 'LogTransferDetail'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
         :param log_transfer_status: 日志转储状态，ENABLE是指日志转储开启状态，DISABLE是指日志转储关闭状态，EXCEPTION是指日志转储异常状态
         :type log_transfer_status: str
         :param log_transfer_detail: 
-        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.LogTransferDetail`
         """
         
         
@@ -101,7 +101,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
         r"""Gets the log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
 
         :return: The log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
-        :rtype: :class:`huaweicloudsdklts.v2.TransferDetail`
+        :rtype: :class:`huaweicloudsdklts.v2.LogTransferDetail`
         """
         return self._log_transfer_detail
 
@@ -110,7 +110,7 @@ class UpdateTransferRequestBodyLogTransferInfo:
         r"""Sets the log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
 
         :param log_transfer_detail: The log_transfer_detail of this UpdateTransferRequestBodyLogTransferInfo.
-        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.TransferDetail`
+        :type log_transfer_detail: :class:`huaweicloudsdklts.v2.LogTransferDetail`
         """
         self._log_transfer_detail = log_transfer_detail
 

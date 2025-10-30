@@ -33,11 +33,11 @@ class CreateGlobalAssetScanTaskRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_ids: 下发任务的主机列表
+        :param host_ids: **参数解释**: 下发任务的主机列表 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值200 **默认取值**: 不涉及 
         :type host_ids: list[str]
-        :param server_group: 下发任务的主机组列表
+        :param server_group: **参数解释**: 下发任务的主机组列表 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值200 **默认取值**: 不涉及 
         :type server_group: list[str]
-        :param all_hosts: 下发全部主机的扫描
+        :param all_hosts: **参数解释**: 下发全部主机的扫描 **约束限制**: 不涉及 **取值范围**: - true：扫描全部主机 - false：不扫描全部主机 **默认取值**: 不涉及 
         :type all_hosts: bool
         """
         
@@ -52,13 +52,14 @@ class CreateGlobalAssetScanTaskRequestInfo:
             self.host_ids = host_ids
         if server_group is not None:
             self.server_group = server_group
-        self.all_hosts = all_hosts
+        if all_hosts is not None:
+            self.all_hosts = all_hosts
 
     @property
     def host_ids(self):
         r"""Gets the host_ids of this CreateGlobalAssetScanTaskRequestInfo.
 
-        下发任务的主机列表
+        **参数解释**: 下发任务的主机列表 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值200 **默认取值**: 不涉及 
 
         :return: The host_ids of this CreateGlobalAssetScanTaskRequestInfo.
         :rtype: list[str]
@@ -69,7 +70,7 @@ class CreateGlobalAssetScanTaskRequestInfo:
     def host_ids(self, host_ids):
         r"""Sets the host_ids of this CreateGlobalAssetScanTaskRequestInfo.
 
-        下发任务的主机列表
+        **参数解释**: 下发任务的主机列表 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值200 **默认取值**: 不涉及 
 
         :param host_ids: The host_ids of this CreateGlobalAssetScanTaskRequestInfo.
         :type host_ids: list[str]
@@ -80,7 +81,7 @@ class CreateGlobalAssetScanTaskRequestInfo:
     def server_group(self):
         r"""Gets the server_group of this CreateGlobalAssetScanTaskRequestInfo.
 
-        下发任务的主机组列表
+        **参数解释**: 下发任务的主机组列表 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值200 **默认取值**: 不涉及 
 
         :return: The server_group of this CreateGlobalAssetScanTaskRequestInfo.
         :rtype: list[str]
@@ -91,7 +92,7 @@ class CreateGlobalAssetScanTaskRequestInfo:
     def server_group(self, server_group):
         r"""Sets the server_group of this CreateGlobalAssetScanTaskRequestInfo.
 
-        下发任务的主机组列表
+        **参数解释**: 下发任务的主机组列表 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值200 **默认取值**: 不涉及 
 
         :param server_group: The server_group of this CreateGlobalAssetScanTaskRequestInfo.
         :type server_group: list[str]
@@ -102,7 +103,7 @@ class CreateGlobalAssetScanTaskRequestInfo:
     def all_hosts(self):
         r"""Gets the all_hosts of this CreateGlobalAssetScanTaskRequestInfo.
 
-        下发全部主机的扫描
+        **参数解释**: 下发全部主机的扫描 **约束限制**: 不涉及 **取值范围**: - true：扫描全部主机 - false：不扫描全部主机 **默认取值**: 不涉及 
 
         :return: The all_hosts of this CreateGlobalAssetScanTaskRequestInfo.
         :rtype: bool
@@ -113,7 +114,7 @@ class CreateGlobalAssetScanTaskRequestInfo:
     def all_hosts(self, all_hosts):
         r"""Sets the all_hosts of this CreateGlobalAssetScanTaskRequestInfo.
 
-        下发全部主机的扫描
+        **参数解释**: 下发全部主机的扫描 **约束限制**: 不涉及 **取值范围**: - true：扫描全部主机 - false：不扫描全部主机 **默认取值**: 不涉及 
 
         :param all_hosts: The all_hosts of this CreateGlobalAssetScanTaskRequestInfo.
         :type all_hosts: bool

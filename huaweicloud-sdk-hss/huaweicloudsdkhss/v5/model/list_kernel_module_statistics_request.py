@@ -41,7 +41,7 @@ class ListKernelModuleStatisticsRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param name: 内核模块名称
+        :param name: **参数解释**: 内核模块名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
         :type name: str
         """
         
@@ -132,7 +132,7 @@ class ListKernelModuleStatisticsRequest:
     def name(self):
         r"""Gets the name of this ListKernelModuleStatisticsRequest.
 
-        内核模块名称
+        **参数解释**: 内核模块名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :return: The name of this ListKernelModuleStatisticsRequest.
         :rtype: str
@@ -143,7 +143,7 @@ class ListKernelModuleStatisticsRequest:
     def name(self, name):
         r"""Sets the name of this ListKernelModuleStatisticsRequest.
 
-        内核模块名称
+        **参数解释**: 内核模块名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :param name: The name of this ListKernelModuleStatisticsRequest.
         :type name: str

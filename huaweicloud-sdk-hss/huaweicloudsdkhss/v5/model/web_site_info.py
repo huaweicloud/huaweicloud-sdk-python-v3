@@ -30,7 +30,7 @@ class WebSiteInfo:
         'proc_path': 'str',
         'is_https': 'bool',
         'cert_issuer': 'str',
-        'cert_user': 'int',
+        'cert_user': 'str',
         'cert_issue_time': 'str',
         'cert_expired_time': 'str',
         'record_time': 'int',
@@ -87,12 +87,12 @@ class WebSiteInfo:
         :type pid: int
         :param proc_path: **参数解释**: web站点进程路径 **取值范围**: 字符长度1-1024 
         :type proc_path: str
-        :param is_https: **参数解释**: web站点是否为https **取值范围**: -true：是。 -false：否。 
+        :param is_https: **参数解释**: web站点是否为https **取值范围**: - true：是。 - false：否。 
         :type is_https: bool
         :param cert_issuer: **参数解释**: web站点SSL证书颁发者 **取值范围**: 字符长度0-256 
         :type cert_issuer: str
         :param cert_user: **参数解释**: web站点SSL证书使用者 **取值范围**: 字符长度0-256 
-        :type cert_user: int
+        :type cert_user: str
         :param cert_issue_time: **参数解释**: web站点SSL证书颁发时间 **取值范围**: 字符长度0-32 
         :type cert_issue_time: str
         :param cert_expired_time: **参数解释**: web站点SSL证书截止时间 **取值范围**: 字符长度0-32 
@@ -413,7 +413,7 @@ class WebSiteInfo:
     def is_https(self):
         r"""Gets the is_https of this WebSiteInfo.
 
-        **参数解释**: web站点是否为https **取值范围**: -true：是。 -false：否。 
+        **参数解释**: web站点是否为https **取值范围**: - true：是。 - false：否。 
 
         :return: The is_https of this WebSiteInfo.
         :rtype: bool
@@ -424,7 +424,7 @@ class WebSiteInfo:
     def is_https(self, is_https):
         r"""Sets the is_https of this WebSiteInfo.
 
-        **参数解释**: web站点是否为https **取值范围**: -true：是。 -false：否。 
+        **参数解释**: web站点是否为https **取值范围**: - true：是。 - false：否。 
 
         :param is_https: The is_https of this WebSiteInfo.
         :type is_https: bool
@@ -460,7 +460,7 @@ class WebSiteInfo:
         **参数解释**: web站点SSL证书使用者 **取值范围**: 字符长度0-256 
 
         :return: The cert_user of this WebSiteInfo.
-        :rtype: int
+        :rtype: str
         """
         return self._cert_user
 
@@ -471,7 +471,7 @@ class WebSiteInfo:
         **参数解释**: web站点SSL证书使用者 **取值范围**: 字符长度0-256 
 
         :param cert_user: The cert_user of this WebSiteInfo.
-        :type cert_user: int
+        :type cert_user: str
         """
         self._cert_user = cert_user
 

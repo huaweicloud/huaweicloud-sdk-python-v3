@@ -35,9 +35,9 @@ class ShowLatestExportTaskByTypeRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param export_task_type: 导出任务类型
+        :param export_task_type: **参数解释**: 导出任务类型 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type export_task_type: str
-        :param task_id: 导出任务ID
+        :param task_id: **参数解释**: 导出任务ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type task_id: str
         """
         
@@ -80,7 +80,7 @@ class ShowLatestExportTaskByTypeRequest:
     def export_task_type(self):
         r"""Gets the export_task_type of this ShowLatestExportTaskByTypeRequest.
 
-        导出任务类型
+        **参数解释**: 导出任务类型 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The export_task_type of this ShowLatestExportTaskByTypeRequest.
         :rtype: str
@@ -91,7 +91,7 @@ class ShowLatestExportTaskByTypeRequest:
     def export_task_type(self, export_task_type):
         r"""Sets the export_task_type of this ShowLatestExportTaskByTypeRequest.
 
-        导出任务类型
+        **参数解释**: 导出任务类型 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param export_task_type: The export_task_type of this ShowLatestExportTaskByTypeRequest.
         :type export_task_type: str
@@ -102,7 +102,7 @@ class ShowLatestExportTaskByTypeRequest:
     def task_id(self):
         r"""Gets the task_id of this ShowLatestExportTaskByTypeRequest.
 
-        导出任务ID
+        **参数解释**: 导出任务ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The task_id of this ShowLatestExportTaskByTypeRequest.
         :rtype: str
@@ -113,7 +113,7 @@ class ShowLatestExportTaskByTypeRequest:
     def task_id(self, task_id):
         r"""Sets the task_id of this ShowLatestExportTaskByTypeRequest.
 
-        导出任务ID
+        **参数解释**: 导出任务ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param task_id: The task_id of this ShowLatestExportTaskByTypeRequest.
         :type task_id: str

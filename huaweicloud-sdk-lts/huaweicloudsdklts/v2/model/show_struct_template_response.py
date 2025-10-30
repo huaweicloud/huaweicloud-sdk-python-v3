@@ -29,7 +29,10 @@ class ShowStructTemplateResponse(SdkResponse):
         'log_stream_id': 'str',
         'project_id': 'str',
         'template_name': 'str',
-        'regex': 'str'
+        'regex': 'str',
+        'custom_time_info': 'CustomTimeInfo',
+        'upload_original_log': 'bool',
+        'upload_parse_failed_log': 'bool'
     }
 
     attribute_map = {
@@ -44,10 +47,13 @@ class ShowStructTemplateResponse(SdkResponse):
         'log_stream_id': 'logStreamId',
         'project_id': 'projectId',
         'template_name': 'templateName',
-        'regex': 'regex'
+        'regex': 'regex',
+        'custom_time_info': 'custom_time_info',
+        'upload_original_log': 'uploadOriginalLog',
+        'upload_parse_failed_log': 'uploadParseFailedLog'
     }
 
-    def __init__(self, demo_fields=None, tag_fields=None, demo_log=None, demo_label=None, id=None, log_group_id=None, rule=None, cluster_info=None, log_stream_id=None, project_id=None, template_name=None, regex=None):
+    def __init__(self, demo_fields=None, tag_fields=None, demo_log=None, demo_label=None, id=None, log_group_id=None, rule=None, cluster_info=None, log_stream_id=None, project_id=None, template_name=None, regex=None, custom_time_info=None, upload_original_log=None, upload_parse_failed_log=None):
         r"""ShowStructTemplateResponse
 
         The model defined in huaweicloud sdk
@@ -76,6 +82,12 @@ class ShowStructTemplateResponse(SdkResponse):
         :type template_name: str
         :param regex: 为了兼容前台数据格式
         :type regex: str
+        :param custom_time_info: 
+        :type custom_time_info: :class:`huaweicloudsdklts.v2.CustomTimeInfo`
+        :param upload_original_log: **参数解释：** 是否上传原始日志。 **取值范围：** - true - fasle
+        :type upload_original_log: bool
+        :param upload_parse_failed_log: **参数解释：** 是否将解析失败的原始上传到指定系统字段日志。 **取值范围：** - true - fasle
+        :type upload_parse_failed_log: bool
         """
         
         super(ShowStructTemplateResponse, self).__init__()
@@ -92,6 +104,9 @@ class ShowStructTemplateResponse(SdkResponse):
         self._project_id = None
         self._template_name = None
         self._regex = None
+        self._custom_time_info = None
+        self._upload_original_log = None
+        self._upload_parse_failed_log = None
         self.discriminator = None
 
         if demo_fields is not None:
@@ -118,6 +133,12 @@ class ShowStructTemplateResponse(SdkResponse):
             self.template_name = template_name
         if regex is not None:
             self.regex = regex
+        if custom_time_info is not None:
+            self.custom_time_info = custom_time_info
+        if upload_original_log is not None:
+            self.upload_original_log = upload_original_log
+        if upload_parse_failed_log is not None:
+            self.upload_parse_failed_log = upload_parse_failed_log
 
     @property
     def demo_fields(self):
@@ -374,6 +395,68 @@ class ShowStructTemplateResponse(SdkResponse):
         :type regex: str
         """
         self._regex = regex
+
+    @property
+    def custom_time_info(self):
+        r"""Gets the custom_time_info of this ShowStructTemplateResponse.
+
+        :return: The custom_time_info of this ShowStructTemplateResponse.
+        :rtype: :class:`huaweicloudsdklts.v2.CustomTimeInfo`
+        """
+        return self._custom_time_info
+
+    @custom_time_info.setter
+    def custom_time_info(self, custom_time_info):
+        r"""Sets the custom_time_info of this ShowStructTemplateResponse.
+
+        :param custom_time_info: The custom_time_info of this ShowStructTemplateResponse.
+        :type custom_time_info: :class:`huaweicloudsdklts.v2.CustomTimeInfo`
+        """
+        self._custom_time_info = custom_time_info
+
+    @property
+    def upload_original_log(self):
+        r"""Gets the upload_original_log of this ShowStructTemplateResponse.
+
+        **参数解释：** 是否上传原始日志。 **取值范围：** - true - fasle
+
+        :return: The upload_original_log of this ShowStructTemplateResponse.
+        :rtype: bool
+        """
+        return self._upload_original_log
+
+    @upload_original_log.setter
+    def upload_original_log(self, upload_original_log):
+        r"""Sets the upload_original_log of this ShowStructTemplateResponse.
+
+        **参数解释：** 是否上传原始日志。 **取值范围：** - true - fasle
+
+        :param upload_original_log: The upload_original_log of this ShowStructTemplateResponse.
+        :type upload_original_log: bool
+        """
+        self._upload_original_log = upload_original_log
+
+    @property
+    def upload_parse_failed_log(self):
+        r"""Gets the upload_parse_failed_log of this ShowStructTemplateResponse.
+
+        **参数解释：** 是否将解析失败的原始上传到指定系统字段日志。 **取值范围：** - true - fasle
+
+        :return: The upload_parse_failed_log of this ShowStructTemplateResponse.
+        :rtype: bool
+        """
+        return self._upload_parse_failed_log
+
+    @upload_parse_failed_log.setter
+    def upload_parse_failed_log(self, upload_parse_failed_log):
+        r"""Sets the upload_parse_failed_log of this ShowStructTemplateResponse.
+
+        **参数解释：** 是否将解析失败的原始上传到指定系统字段日志。 **取值范围：** - true - fasle
+
+        :param upload_parse_failed_log: The upload_parse_failed_log of this ShowStructTemplateResponse.
+        :type upload_parse_failed_log: bool
+        """
+        self._upload_parse_failed_log = upload_parse_failed_log
 
     def to_dict(self):
         """Returns the model properties as a dict"""

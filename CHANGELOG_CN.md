@@ -1,3 +1,791 @@
+# 3.1.173 2025-10-30
+
+### HuaweiCloud SDK AOS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListPrivateHookVersions`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTemplates**
+    - 请求参数变更
+      - `+ marker`
+      - `+ limit`
+    - 响应参数变更
+      - `+ page_info`
+  - **ListTemplateVersions**
+    - 请求参数变更
+      - `+ marker`
+      - `+ limit`
+    - 响应参数变更
+      - `+ page_info`
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CheckUserIdentity**
+    - 响应参数变更
+      - `+ mobile_remain_available_num`
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `+ fee_records.account_name`
+  - **ShowCustomerMonthlySum**
+    - 响应参数变更
+      - `+ bill_sums.account_name`
+  - **ListCustomerBillsFeeRecords**
+    - 响应参数变更
+      - `+ records.account_name`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.account_name`
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CheckUserIdentity**
+    - 响应参数变更
+      - `+ mobile_remain_available_num`
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `+ fee_records.account_name`
+  - **ShowCustomerMonthlySum**
+    - 响应参数变更
+      - `+ bill_sums.account_name`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.account_name`
+
+### HuaweiCloud SDK CBR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CopyBackup**
+    - 请求参数变更
+      - `+ replicate.cross_account_urn`
+  - **CopyCheckpoint**
+    - 请求参数变更
+      - `+ replicate.cross_account_urn`
+  - **ListPolicies**
+    - 响应参数变更
+      - `+ policies.operation_definition.cross_account_urn`
+  - **CreatePolicy**
+    - 请求参数变更
+      - `+ policy.operation_definition.cross_account_urn`
+    - 响应参数变更
+      - `+ policy.operation_definition.cross_account_urn`
+  - **ShowPolicy**
+    - 响应参数变更
+      - `+ policy.operation_definition.cross_account_urn`
+  - **UpdatePolicy**
+    - 请求参数变更
+      - `+ policy.operation_definition.cross_account_urn`
+    - 响应参数变更
+      - `+ policy.operation_definition.cross_account_urn`
+  - **ListOrganizationPolicies**
+    - 响应参数变更
+      - `+ policies.policy_operation_definition.cross_account_urn`
+  - **CreateOrganizationPolicy**
+    - 请求参数变更
+      - `+ policy.policy_operation_definition.cross_account_urn`
+    - 响应参数变更
+      - `+ policy.policy_operation_definition.cross_account_urn`
+  - **ShowOrganizationPolicy**
+    - 响应参数变更
+      - `+ policy.policy_operation_definition.cross_account_urn`
+  - **UpdateOrganizationPolicy**
+    - 请求参数变更
+      - `+ policy.policy_operation_definition.cross_account_urn`
+    - 响应参数变更
+      - `+ policy.policy_operation_definition.cross_account_urn`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateAlarmRules**
+    - 请求参数变更
+      - `- policies.enabled`
+      - `* policies: list<Policy> -> list<AlarmRulePolicy>`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ShowDasRecommendSqlLimitRule`、`ListAutoIncrementUsage`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DRS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`QueryTuningParams`、`SelectGroupAndStream`、`ModifyGroupAndStream`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **BatchStartJobs**
+    - 请求参数变更
+      - `+ jobs.is_only_init_task`
+  - **UpdateTuningParams**
+    - 响应参数变更
+      - `+ full_sync.range`
+
+### HuaweiCloud SDK DWS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ResizeCluster**
+    - 请求参数变更
+      - `+ logical_cluster_name`
+  - **CheckGrowCluster**
+    - 请求参数变更
+      - `+ logical_cluster_name`
+
+### HuaweiCloud SDK ER
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListProjectTags**
+    - 响应参数变更
+      - `+ total_count`
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ModifyDataSync**
+    - 请求参数变更
+      - `+ is_instance_level_sync`
+      - `+ database_repl_scope`
+      - `+ is_support_reg_exp`
+  - **BatchUpgradeDatabases**
+    - 请求参数变更
+      - `- is_skip_validate`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ShowAutoNodeExpansionPolicy`、`ModifyAutoNodeExpansionPolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListRealTimeSessions**
+    - 响应参数变更
+      - `+ sessions.client_port`
+      - `+ sessions.query_id`
+      - `+ sessions.transaction_time_cost`
+      - `+ sessions.trace_id`
+      - `+ sessions.global_session_id`
+      - `+ sessions.top_transaction_id`
+      - `+ sessions.current_transaction_id`
+      - `+ sessions.xlog_quantity_pretty`
+      - `+ sessions.wait_status`
+      - `+ sessions.lwt_id`
+      - `+ sessions.thread_name`
+      - `+ sessions.lock_mode`
+      - `+ sessions.parent_session_id`
+      - `+ sessions.smp_id`
+      - `+ sessions.lock_tag`
+      - `+ sessions.component_name`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListSecurityCheckPolicyGroup`
+    - `CreateVpcEndpoint`
+    - `ShowEndpointStatus`
+    - `ListGlobalVulnerabilities`
+    - `ShowBackupInfoByBackupId`
+    - `ListBackedupByHostId`
+    - `ListBackupPolicy`
+    - `UpgradeAgents`
+    - `DownloadEventSourceFile`
+    - `ShowWindosVulDetail`
+    - `ListVulRepairFailedDetail`
+    - `RecreateVulScanTask`
+    - `ListVulHostVuls`
+    - `ListVulRepairCmds`
+    - `ShowCmsVulDetail`
+    - `ShowLinuxVulDetail`
+    - `ListVulHostHosts`
+    - `ShowVulAffectedStatics`
+    - `AddVulWhiteList`
+    - `ListVulWhiteListVulOptions`
+    - `ListVulWhiteList`
+    - `ListAgentDaemonsetInfo`
+    - `ShowAgentAddress`
+    - `ChangeContainerStatus`
+    - `ShowBaselineOverview`
+    - `ShowDefaultSecurityCheckPolicy`
+    - `ShowDefaultSecurityCheckPolicyDetails`
+    - `ShowCheckRuleFixFailDetail`
+    - `ListCheckRuleHost`
+    - `ShowBaselineStatistic`
+    - `RetryTask`
+    - `StopImageScanTask`
+    - `ShowImagePayPerScanStatistics`
+    - `BatchScanLocalImage`
+    - `ListLocalImageContainers`
+    - `ListLocalImageHosts`
+    - `BatchExportLocalVulTask`
+    - `ListGlobalMalware`
+    - `ShowImageSecurityReportStatistic`
+    - `ListEventOperates`
+    - `BatchChangeEvent`
+    - `ListEventType`
+    - `ListSameEvents`
+    - `ShowEventSeverity`
+    - `ListSimilarHandledEvents`
+    - `ListEventTopRisk`
+    - `SwitchDecoyPortPolicy`
+    - `ListDecoyPortAvailableHost`
+    - `AssociateHostAssetValue`
+    - `SwitchFirewallStatus`
+    - `AssociateHostsGroup`
+    - `UninstallAgents`
+    - `ListGlobalImageFiles`
+    - `ListImageSensitiveInfo`
+    - `ListImageMalware`
+    - `ListImageNonCompliantApp`
+    - `ListImageSensitive`
+    - `ListImageBuildCommandRisks`
+    - `ListImageBuildCommandRisksImages`
+    - `ListVulRepoImage`
+    - `ListGlobalImageApps`
+    - `BatchExportBaselineTask`
+    - `ListUrgentVulnerabilities`
+    - `ValidateAdmin`
+    - `ListHostCheckRules`
+    - `ListAllRiskConfigCheckRules`
+    - `ShowVulScanTaskEstimatedTime`
+    - `ShowExtendedWeakPassword`
+    - `ChangeExtendedWeakPassword`
+    - `ListImagePwdComplexity`
+    - `ShowImageBaselineStatistic`
+    - `ListImageWeakPwdUsers`
+    - `ListLocalImageAppInfo`
+    - `SendSecurityReport`
+    - `ListTrustServiceStatus`
+    - `EnableTrustService`
+    - `ChangeHostIgnoreStatus`
+    - `ShowVulWhiteListDetail`
+    - `ChangeVulWhiteList`
+    - `DeleteDuplicationInfo`
+    - `ShowExportTask`
+    - `ListEventForensic`
+    - `ExportEventRequest`
+    - `ShowScanStatus`
+    - `SetManualDetect`
+    - `ModifyLoginWhiteIp`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowAssetStatistic**
+    - 请求参数变更
+      - `* category: optional -> required`
+  - **ShowCommonPort**
+    - 请求参数变更
+      - `+ category`
+      - `- categoty`
+  - **ListVulHostApps**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+  - **ListVulHostBackups**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+  - **ListAppStatistics**
+    - 请求参数变更
+      - `* category: optional -> required`
+  - **ListAutoLaunchStatistics**
+    - 请求参数变更
+      - `+ category`
+  - **ListUserStatistics**
+    - 请求参数变更
+      - `* category: optional -> required`
+  - **ListRiskConfigs**
+    - 响应参数变更
+      - `+ data_list.baseline_name`
+      - `+ data_list.key`
+  - **BatchDeleteTags**
+    - 请求参数变更
+      - `* body: object<BatchDeleteTagsRequestBody> -> object<BatchDeleteTagsRequestInfo>`
+  - **ListWebFrameworkHostInfo**
+    - 响应参数变更
+      - `+ data_list.container_id`
+      - `+ data_list.container_name`
+      - `- data_list.file_size`
+      - `- data_list.bind_ip_list`
+      - `- data_list.connected_ip_list`
+      - `- data_list.connected_number`
+      - `- data_list.embedder_dir`
+      - `- data_list.listen_port_list`
+      - `* data_list.uid: string -> int32`
+  - **ListWebSiteStatistics**
+    - 请求参数变更
+      - `+ category`
+  - **ListWebAppAndServiceStatistics**
+    - 请求参数变更
+      - `* name: required -> optional`
+  - **ListWebSiteInfo**
+    - 响应参数变更
+      - `* data_list.cert_user: int32 -> string`
+  - **ListImageFiles**
+    - 请求参数变更
+      - `- region`
+
+### HuaweiCloud SDK Live
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListWatermarkTemplate`
+    - `CreateWatermarkTemplate`
+    - `ShowWatermarkTemplate`
+    - `UpdateWatermarkTemplate`
+    - `DeleteWatermarkTemplate`
+    - `ListWatermarkRule`
+    - `CreateWatermarkRule`
+    - `ShowWatermarkRule`
+    - `UpdateWatermarkRule`
+    - `DeleteWatermarkRule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ModifyOttChannelInfoEndPoints**
+    - 请求参数变更
+      - `+ endpoints.dash_package.enable_access`
+      - `+ endpoints.dash_package.allow_all_ip_access`
+      - `+ endpoints.dash_package.ip_whitelist`
+      - `+ endpoints.dash_package.cdn_identifier_header`
+      - `+ endpoints.dash_package.origin_domain_master`
+      - `+ endpoints.dash_package.origin_domain_slave`
+      - `+ endpoints.dash_package.manifest_name`
+      - `+ endpoints.dash_package.slave_url`
+      - `+ endpoints.mss_package.enable_access`
+      - `+ endpoints.mss_package.allow_all_ip_access`
+      - `+ endpoints.mss_package.ip_whitelist`
+      - `+ endpoints.mss_package.cdn_identifier_header`
+      - `+ endpoints.mss_package.origin_domain_master`
+      - `+ endpoints.mss_package.origin_domain_slave`
+      - `+ endpoints.mss_package.manifest_name`
+      - `+ endpoints.mss_package.slave_url`
+      - `+ endpoints.hls_package.enable_access`
+      - `+ endpoints.hls_package.allow_all_ip_access`
+      - `+ endpoints.hls_package.ip_whitelist`
+      - `+ endpoints.hls_package.cdn_identifier_header`
+      - `+ endpoints.hls_package.origin_domain_master`
+      - `+ endpoints.hls_package.origin_domain_slave`
+      - `+ endpoints.hls_package.manifest_name`
+      - `+ endpoints.hls_package.slave_url`
+  - **CreateOttChannelInfo**
+    - 请求参数变更
+      - `+ endpoints.dash_package.enable_access`
+      - `+ endpoints.dash_package.allow_all_ip_access`
+      - `+ endpoints.dash_package.ip_whitelist`
+      - `+ endpoints.dash_package.cdn_identifier_header`
+      - `+ endpoints.dash_package.origin_domain_master`
+      - `+ endpoints.dash_package.origin_domain_slave`
+      - `+ endpoints.dash_package.manifest_name`
+      - `+ endpoints.dash_package.slave_url`
+      - `+ endpoints.mss_package.enable_access`
+      - `+ endpoints.mss_package.allow_all_ip_access`
+      - `+ endpoints.mss_package.ip_whitelist`
+      - `+ endpoints.mss_package.cdn_identifier_header`
+      - `+ endpoints.mss_package.origin_domain_master`
+      - `+ endpoints.mss_package.origin_domain_slave`
+      - `+ endpoints.mss_package.manifest_name`
+      - `+ endpoints.mss_package.slave_url`
+      - `+ endpoints.hls_package.enable_access`
+      - `+ endpoints.hls_package.allow_all_ip_access`
+      - `+ endpoints.hls_package.ip_whitelist`
+      - `+ endpoints.hls_package.cdn_identifier_header`
+      - `+ endpoints.hls_package.origin_domain_master`
+      - `+ endpoints.hls_package.origin_domain_slave`
+      - `+ endpoints.hls_package.manifest_name`
+      - `+ endpoints.hls_package.slave_url`
+  - **ListOttChannelInfo**
+    - 响应参数变更
+      - `+ channels.endpoints.dash_package.enable_access`
+      - `+ channels.endpoints.dash_package.allow_all_ip_access`
+      - `+ channels.endpoints.dash_package.ip_whitelist`
+      - `+ channels.endpoints.dash_package.cdn_identifier_header`
+      - `+ channels.endpoints.dash_package.origin_domain_master`
+      - `+ channels.endpoints.dash_package.origin_domain_slave`
+      - `+ channels.endpoints.dash_package.manifest_name`
+      - `+ channels.endpoints.dash_package.slave_url`
+      - `+ channels.endpoints.mss_package.enable_access`
+      - `+ channels.endpoints.mss_package.allow_all_ip_access`
+      - `+ channels.endpoints.mss_package.ip_whitelist`
+      - `+ channels.endpoints.mss_package.cdn_identifier_header`
+      - `+ channels.endpoints.mss_package.origin_domain_master`
+      - `+ channels.endpoints.mss_package.origin_domain_slave`
+      - `+ channels.endpoints.mss_package.manifest_name`
+      - `+ channels.endpoints.mss_package.slave_url`
+      - `+ channels.endpoints.hls_package.enable_access`
+      - `+ channels.endpoints.hls_package.allow_all_ip_access`
+      - `+ channels.endpoints.hls_package.ip_whitelist`
+      - `+ channels.endpoints.hls_package.cdn_identifier_header`
+      - `+ channels.endpoints.hls_package.origin_domain_master`
+      - `+ channels.endpoints.hls_package.origin_domain_slave`
+      - `+ channels.endpoints.hls_package.manifest_name`
+      - `+ channels.endpoints.hls_package.slave_url`
+
+### HuaweiCloud SDK LTS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListLogStreams**
+    - 响应参数变更
+      - `+ log_streams.is_favorite`
+  - **CreateDashBoard**
+    - 响应参数变更
+      - `+ concise_mode_enable`
+      - `+ tags`
+  - **ShowStructTemplate**
+    - 响应参数变更
+      - `+ uploadParseFailedLog`
+      - `+ uploadOriginalLog`
+      - `+ custom_time_info`
+  - **ShowNotificationTemplate**
+    - 响应参数变更
+      - `+ templates.sendType`
+      - `+ templates.version`
+  - **ListTopnTrafficStatistics**
+    - 响应参数变更
+      - `+ results.log_group_name_alias`
+      - `+ results.log_stream_name_alias`
+  - **ListSqlAlarmRules**
+    - 响应参数变更
+      - `+ sql_alarm_rules.tags`
+      - `- sql_alarm_rules.sql_alarm_send`
+      - `- sql_alarm_rules.sql_requests.is_time_range_relative`
+  - **UpdateSqlAlarmRule**
+    - 请求参数变更
+      - `- sql_requests.is_time_range_relative`
+    - 响应参数变更
+      - `- sql_requests.is_time_range_relative`
+  - **CreateSqlAlarmRule**
+    - 请求参数变更
+      - `- sql_requests.is_time_range_relative`
+  - **UpdateKeywordsAlarmRule**
+    - 响应参数变更
+      - `+ recovery_policy`
+      - `+ tags`
+      - `+ trigger_condition_count`
+      - `+ trigger_condition_frequency`
+      - `+ whether_recovery_policy`
+      - `- topics`
+      - `- language`
+      - `- indexId`
+  - **ListActiveOrHistoryAlarms**
+    - 响应参数变更
+      - `+ events.annotations.alarm_action_rule_name`
+      - `+ events.annotations.alarm_rule_alias`
+      - `+ events.annotations.alarm_rule_url`
+      - `+ events.annotations.alarm_status`
+      - `+ events.annotations.condition_expression`
+      - `+ events.annotations.condition_expression_with_value`
+      - `+ events.annotations.notification_frequency`
+      - `+ events.annotations.record_id`
+      - `+ events.annotations.recovery_policy`
+      - `+ events.annotations.results`
+      - `+ events.annotations.frequency`
+      - `+ events.annotations.type`
+      - `+ events.metadata.event_subtype`
+  - **DeleteActiveAlarms**
+    - 请求参数变更
+      - `+ events.metadata.event_subtype`
+  - **UpdateTransfer**
+    - 请求参数变更
+      - `- log_transfer_info.log_transfer_detail.obs_transfer_path`
+      - `- log_transfer_info.log_transfer_detail.obs_period: enum value [1,2,3,5,6,12,30]`
+      - `* log_transfer_info.log_transfer_detail: object<TransferDetail> -> object<LogTransferDetail>`
+    - 响应参数变更
+      - `- log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfer_info.log_transfer_detail.lts_tags`
+      - `- log_transfer_info.log_transfer_detail.stream_tags`
+      - `- log_transfer_info.log_transfer_detail.struct_fields`
+      - `- log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **CreateTransfer**
+    - 请求参数变更
+      - `- log_transfer_info.log_transfer_detail.obs_transfer_path`
+      - `- log_transfer_info.log_transfer_detail.obs_period: enum value [1,2,3,5,6,12,30]`
+      - `* log_transfer_info.log_transfer_detail: object<TransferDetail> -> object<LogTransferDetail>`
+    - 响应参数变更
+      - `- log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfer_info.log_transfer_detail.lts_tags`
+      - `- log_transfer_info.log_transfer_detail.stream_tags`
+      - `- log_transfer_info.log_transfer_detail.struct_fields`
+      - `- log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **DeleteTransfer**
+    - 响应参数变更
+      - `- log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfer_info.log_transfer_detail.lts_tags`
+      - `- log_transfer_info.log_transfer_detail.stream_tags`
+      - `- log_transfer_info.log_transfer_detail.struct_fields`
+      - `- log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **ListTransfers**
+    - 响应参数变更
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.lts_tags`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.stream_tags`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.struct_fields`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **UpdateNotificationTemplate**
+    - 请求参数变更
+      - `+ templates.sendType`
+      - `+ templates.version`
+    - 响应参数变更
+      - `+ templates.sendType`
+      - `+ templates.version`
+  - **CreateNotificationTemplate**
+    - 请求参数变更
+      - `+ templates.sendType`
+      - `+ templates.version`
+    - 响应参数变更
+      - `- locale: enum value [zh-cn,en-us]`
+      - `+ templates.sendType`
+      - `+ templates.version`
+      - `- templates.sub_type: enum value [sms,dingding,wechat,webhook,email]`
+      - `* templates: list<SubTemplate> -> list<SubTemplateResBody>`
+  - **ListNotificationTemplates**
+    - 响应参数变更
+      - `+ results.templates.sendType`
+      - `+ results.templates.version`
+  - **UpdateHostGroup**
+    - 响应参数变更
+      - `+ agent_access_type`
+      - `+ labels`
+  - **CreateHostGroup**
+    - 响应参数变更
+      - `+ agent_access_type`
+      - `+ labels`
+  - **DeleteHostGroup**
+    - 响应参数变更
+      - `+ agent_access_type`
+      - `+ labels`
+      - `+ result.agent_access_type`
+      - `+ result.labels`
+  - **ListQueryAllSearchCriterias**
+    - 响应参数变更
+      - `+ search_criterias.search_type`
+  - **CreateLogStreamIndex**
+    - 响应参数变更
+      - `- isQueryComplete`
+  - **ListHostGroup**
+    - 响应参数变更
+      - `+ agent_access_type`
+      - `+ labels`
+      - `+ result.agent_access_type`
+      - `+ result.labels`
+  - **ListAccessConfig**
+    - 响应参数变更
+      - `+ recursive_depth`
+      - `+ log_split_size`
+      - `+ access_config_type_source`
+      - `+ result.log_split_size`
+      - `+ result.recursive_depth`
+      - `+ result.access_config_type_source`
+  - **UpdateAccessConfig**
+    - 响应参数变更
+      - `+ recursive_depth`
+      - `+ log_split_size`
+      - `+ access_config_type_source`
+  - **CreateAccessConfig**
+    - 响应参数变更
+      - `+ recursive_depth`
+      - `+ log_split_size`
+      - `+ access_config_type_source`
+  - **DeleteAccessConfig**
+    - 响应参数变更
+      - `+ recursive_depth`
+      - `+ log_split_size`
+      - `+ access_config_type_source`
+      - `+ result.log_split_size`
+      - `+ result.recursive_depth`
+      - `+ result.access_config_type_source`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListSmallVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ListInstanceTags`
+    - `ConfirmThreatMap`
+    - `ListIpReputationRules`
+    - `CreateIpReputationRule`
+    - `ConfirmIpReputationRule`
+    - `UpdateIpReputationRule`
+    - `DeleteIpReputationRule`
+    - `ConfirmPolicyAntileakageMap`
+    - `ConfirmPolicyIpReputationMap`
+    - `UpdatePremiumInstance`
+    - `ListProtectableResources`
+    - `UpdateBotMRuleDefenseStrategy`
+    - `BatchUpdateBotMRuleAction`
+    - `BatchDeleteRules`
+    - `CreateEventExportJob`
+    - `CreateAlertNoticeConfig`
+    - `ShowWebProtectionRule`
+    - `CreateQuickAccessDomain`
+    - `ListCcPolicyRules`
+    - `BatchCreateCcRule`
+    - `ListCustomPolicyRules`
+    - `BatchCreateCustomRule`
+    - `ListWhiteblackipPolicyRules`
+    - `BatchCreateWhiteblackipRule`
+    - `ListPrivacyPolicyRules`
+    - `BatchCreatePrivacyRule`
+    - `ListGeoIpPolicyRules`
+    - `BatchCreateGeoIpRule`
+    - `ListIgnorePolicyRules`
+    - `BatchCreateIgnoreRule`
+    - `ListAntiTamperPolicyRules`
+    - `BatchCreateAntiTamperRule`
+    - `ListAntileakagePolicyRules`
+    - `BatchCreateAntileakageRule`
+    - `ListIpReputationPolicyRules`
+    - `BatchCreateIpReputationRule`
+    - `ListLlmGuardPolicyRules`
+    - `ListResponseCodeTimeline`
+    - `ListBotMTopnRequest`
+    - `ListBotMRequestDistribution`
+    - `ListBotMTimeline`
+    - `ListBotMScoreDistribution`
+    - `ShowSecurityReportContent`
+    - `ListSecurityReportSendingRecords`
+    - `CopyPolicyById`
+    - `ListBotMRules`
+    - `ShowSecurityReportSubscription`
+    - `UpdateSecurityReportSubscription`
+    - `DeleteSecurityReportSubscription`
+    - `BatchDeleteCompositeHosts`
+    - `ListSecurityReportHistoryPeriods`
+    - `UpdateBotMCategoryStatus`
+    - `BatchUpdateProtectStatus`
+    - `ConfirmApplicationTypes`
+    - `ConfirmDnsDomain`
+    - `ConfirmProtectionTypes`
+    - `UpdatePremiumInstanceProgress`
+    - `CreateBotMTrafficDetectionCondition`
+    - `UpdateBotMTrafficDetectionCondition`
+    - `DeleteBotMTrafficDetectionCondition`
+    - `CheckAgency`
+    - `CreateAgency`
+    - `DeleteAgency`
+    - `BatchDeleteAlertNoticeConfig`
+    - `ConfirmAsyncJob`
+    - `BatchUpdateBotMRuleStatus`
+    - `BatchUpdateGeoipRules`
+    - `BatchUpdateCcRules`
+    - `BatchUpdateCustomRules`
+    - `BatchUpdateWhiteblackipRules`
+    - `BatchUpdateIpReputationRules`
+    - `BatchUpdateAntitamperRules`
+    - `BatchUpdateAntileakageRules`
+    - `BatchUpdateIgnoreRules`
+    - `BatchUpdatePrivacyRules`
+    - `DeleteAlertNoticeConfig`
+    - `CreateSecurityReportSubscription`
+  - **CreateAntileakageRule**
+    - 响应参数变更
+      - `+ description`
+      - `+ action`
+  - **ListAntileakageRules**
+    - 响应参数变更
+      - `+ items.action`
+  - **CreateGeoipRule**
+    - 响应参数变更
+      - `+ description`
+      - `+ ip_type`
+  - **CreateIgnoreRule**
+    - 响应参数变更
+      - `+ producer`
+      - `+ multiCondition`
+
 # 3.1.172 2025-10-23
 
 ### HuaweiCloud SDK AOM

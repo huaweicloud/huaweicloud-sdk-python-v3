@@ -32,9 +32,9 @@ class ListImageFilesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: **参数解释**: 总数 **取值范围**: 字符长度1-65535 
         :type total_num: int
-        :param data_list: 列表
+        :param data_list: **参数解释**: 列表 **取值范围**: 最小值0，最大值10000 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ImageFileInfo`]
         """
         
@@ -53,7 +53,7 @@ class ListImageFilesResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListImageFilesResponse.
 
-        总数
+        **参数解释**: 总数 **取值范围**: 字符长度1-65535 
 
         :return: The total_num of this ListImageFilesResponse.
         :rtype: int
@@ -64,7 +64,7 @@ class ListImageFilesResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListImageFilesResponse.
 
-        总数
+        **参数解释**: 总数 **取值范围**: 字符长度1-65535 
 
         :param total_num: The total_num of this ListImageFilesResponse.
         :type total_num: int
@@ -75,7 +75,7 @@ class ListImageFilesResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListImageFilesResponse.
 
-        列表
+        **参数解释**: 列表 **取值范围**: 最小值0，最大值10000 
 
         :return: The data_list of this ListImageFilesResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ImageFileInfo`]
@@ -86,7 +86,7 @@ class ListImageFilesResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListImageFilesResponse.
 
-        列表
+        **参数解释**: 列表 **取值范围**: 最小值0，最大值10000 
 
         :param data_list: The data_list of this ListImageFilesResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ImageFileInfo`]

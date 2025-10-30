@@ -22,7 +22,7 @@ class PostAlarmsReqV2:
         'namespace': 'str',
         'resource_group_id': 'str',
         'resources': 'list[list[Dimension]]',
-        'policies': 'list[Policy]',
+        'policies': 'list[AlarmRulePolicy]',
         'type': 'AlarmType',
         'alarm_notifications': 'list[Notification]',
         'ok_notifications': 'list[Notification]',
@@ -76,7 +76,7 @@ class PostAlarmsReqV2:
         :param resources: **参数解释**： 资源列表。 **约束限制**： 告警规则类型为全部资源、资源分组时，资源维度值传空；告警规则类型为指定资源时，资源维度值必填，可以同时指定监控多个资源。 最多可以指定1000个资源维度。 
         :type resources: list[list[Dimension]]
         :param policies: **参数解释**： 告警策略。 **约束限制**： 当alarm_template_id字段为空时必填，不为空时不填。最多包含50个策略。 
-        :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :type policies: list[:class:`huaweicloudsdkces.v2.AlarmRulePolicy`]
         :param type: 
         :type type: :class:`huaweicloudsdkces.v2.AlarmType`
         :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
@@ -278,7 +278,7 @@ class PostAlarmsReqV2:
         **参数解释**： 告警策略。 **约束限制**： 当alarm_template_id字段为空时必填，不为空时不填。最多包含50个策略。 
 
         :return: The policies of this PostAlarmsReqV2.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.AlarmRulePolicy`]
         """
         return self._policies
 
@@ -289,7 +289,7 @@ class PostAlarmsReqV2:
         **参数解释**： 告警策略。 **约束限制**： 当alarm_template_id字段为空时必填，不为空时不填。最多包含50个策略。 
 
         :param policies: The policies of this PostAlarmsReqV2.
-        :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :type policies: list[:class:`huaweicloudsdkces.v2.AlarmRulePolicy`]
         """
         self._policies = policies
 

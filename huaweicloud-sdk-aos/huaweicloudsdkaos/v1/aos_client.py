@@ -1115,7 +1115,7 @@ class AosClient(Client):
                   * 支持的计费模式：包周期、按需
                   * 询价必要参数：flavor_id（规格ID）、flavor_name（规格名称，flavor_id和flavor_name至少给出一个）、system_disk_size（系统磁盘大小）
               * huaweicloud_vpc_bandwidth:
-                  * 支持的计费模式：按需
+                  * 支持的计费模式：包周期、按需
                   * 询价必要参数：charge_mode仅支持bandwidth
               * huaweicloud_vpc_eip: 
                   * 支持的计费模式：包周期、按需
@@ -1198,6 +1198,36 @@ class AosClient(Client):
                   * 支持的计费模式：按需
               * huaweicloud_kms_key: 
                   * 支持的计费模式：按需
+              * huaweicloud_elb_listener:
+                  * 支持的计费模式：免费
+              * huaweicloud_elb_monitor:
+                  * 支持的计费模式：免费
+              * huaweicloud_elb_pool:
+                  * 支持的计费模式：免费
+              * huaweicloud_elb_member:
+                  * 支持的计费模式：免费
+              * huaweicloud_vpc_subnet:
+                  * 支持的计费模式：免费
+              * huaweicloud_networking_secgroup:
+                  * 支持的计费模式：免费
+              * huaweicloud_iec_security_group:
+                  * 支持的计费模式：免费
+              * huaweicloud_dns_zone:
+                  * 支持的计费模式：免费
+              * huaweicloud_enterprise_project:
+                  * 支持的计费模式：免费
+              * huaweicloud_er_instance:
+                  * 支持的计费模式：免费
+              * huaweicloud_lts_group:
+                  * 支持的计费模式：免费
+              * huaweicloud_smn_topic:
+                  * 支持的计费模式：免费
+              * huaweicloud_smn_subscription:
+                  * 支持的计费模式：免费
+              * huaweicloud_cc_connection:
+                  * 支持的计费模式：免费
+              * huaweicloud_cc_network_instance:
+                  * 支持的计费模式：免费
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1522,6 +1552,7 @@ class AosClient(Client):
               DeleteStackEnhanced
           * 创建私有hook时指定的版本为初始默认版本。
           * 如果同名的私有hook在当前domain_id+region下已经存在，则会返回409。
+          * 对于私有hook的名字，推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
           * 私有hook版本号遵循语义化版本号（Semantic Version），为用户自定义。
           * 资源编排服务会对私有hook进行校验，如文件大小，策略文件语法校验等。若存在错误，则会创建失败。
           * 当前仅支持部署资源前的检测，不支持部署资源过程中的检测。如果通过了部署资源前的检测，资源栈则会继续部署资源。反之会停止部署资源，并记录资源栈事件（stack events）。
@@ -1813,6 +1844,93 @@ class AosClient(Client):
         query_params = []
         if 'hook_id' in local_var_params:
             query_params.append(('hook_id', local_var_params['hook_id']))
+
+        header_params = {}
+        if 'client_request_id' in local_var_params:
+            header_params['Client-Request-Id'] = local_var_params['client_request_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['token']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_private_hook_versions(self, request):
+        r"""列举私有hook版本
+
+        列举私有hook版本（ListPrivateHookVersions）
+        
+        列举所选择的私有hook中所有的hook版本信息。
+        
+          * 可以使用sort_key和sort_dir两个关键字对返回结果按创建时间（create_time）进行排序。给予的sort_key和sort_dir数量须一致，否则返回400。如果未给予sort_key和sort_dir，则默认按照创建时间降序排序。
+          * 如果hook_name和hook_id同时存在，则资源编排服务会检查是否两个匹配，如果不匹配则会返回400。
+          * 如果hook下不存在hook版本，则返回空list。
+          * 如果hook不存在则返回404。
+          * 支持分页返回。如果响应中存在next_marker，则表示实际总输出比当前响应中包含的输出多。在对请求的后续调用中，在请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPrivateHookVersions
+        :type request: :class:`huaweicloudsdkaos.v1.ListPrivateHookVersionsRequest`
+        :rtype: :class:`huaweicloudsdkaos.v1.ListPrivateHookVersionsResponse`
+        """
+        http_info = self._list_private_hook_versions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_private_hook_versions_invoker(self, request):
+        http_info = self._list_private_hook_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_private_hook_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-hooks/{hook_name}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivateHookVersionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'hook_name' in local_var_params:
+            path_params['hook_name'] = local_var_params['hook_name']
+
+        query_params = []
+        if 'hook_id' in local_var_params:
+            query_params.append(('hook_id', local_var_params['hook_id']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+            collection_formats['sort_key'] = 'multi'
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -3333,7 +3451,7 @@ class AosClient(Client):
         
         此API用于删除某个资源栈，可以选择是否保留资源。
         **请谨慎操作，删除资源栈将默认删除与该资源栈相关的所有数据，如：执行计划、资源栈事件、资源栈输出、资源等。**
-        **如果希望删除资源栈保留资源，可以在请求中设置&#x60;retain_all_resources&#x60;对资源进行保留。
+        **如果希望删除资源栈保留资源，可以在请求中设置&#x60;retain_all_resources&#x60;对资源进行保留。**
         
         * 此API会触发删除资源栈，并以最终一致性删除数据，用户可以调用GetStackMetadata或ListStacks跟踪资源栈删除情况。当删除完成后，被删除资源栈将不会在上述API中返回。
         * 如果资源栈状态处于非终态（状态以&#x60;IN_PROGRESS&#x60;结尾）状态时，则不允许删除。包括但不限于以下状态：
@@ -4254,7 +4372,7 @@ class AosClient(Client):
         
         此API用于删除指定资源栈集下指定局点（region）或指定成员账号（domain_id）的资源栈实例，并返回资源栈集操作ID（stack_set_operation_id）
         
-        **请谨慎操作，删除资源栈实例将会删除与该资源栈实例相关的堆栈以及堆栈所管理的一切资源。**
+        **请谨慎操作，删除资源栈实例将会删除与该资源栈实例相关的资源栈以及资源栈所管理的一切资源。**
         
         * 用户可以根据资源栈集操作ID（stack_set_operation_id），通过ShowStackSetOperationMetadata API获取资源栈集操作状态
         
@@ -4329,7 +4447,7 @@ class AosClient(Client):
         
         此API用于删除指定资源栈集下指定局点（region）或指定成员账号（domain_id）的资源栈实例，并返回资源栈集操作ID（stack_set_operation_id）
         
-        **请谨慎操作，删除资源栈实例将会删除与该资源栈实例相关的堆栈以及堆栈所管理的一切资源。**
+        **请谨慎操作，删除资源栈实例将会删除与该资源栈实例相关的资源栈以及资源栈所管理的一切资源。**
         
         * 用户可以根据资源栈集操作ID（stack_set_operation_id），通过ShowStackSetOperationMetadata API获取资源栈集操作状态
         
@@ -5215,14 +5333,13 @@ class AosClient(Client):
 
         更新资源栈集（UpdateStackSet）
         
-        该API可以根据用户给予的信息对资源栈集的属性进行更新，可以更新资源栈集的“stack_set_description”、\&quot;initial_stack_description\&quot;、\&quot;permission_model\&quot;、“administration_agency_name”、\&quot;managed_agency_name\&quot;、“administration_agency_urn”六个属性中的一个或多个。
+        该API可以根据用户给予的信息对资源栈集的属性进行更新，可以更新资源栈集如下属性“stack_set_description”、\&quot;initial_stack_description\&quot;、“administration_agency_name”、\&quot;managed_agency_name\&quot;、“administration_agency_urn”中的一个或多个。
         
         该API只会更新用户给予的信息中所涉及的字段；如果某字段未给予，则不会对该资源栈集属性进行更新。
         
         注：
           * 所有属性的更新都是覆盖式更新。即，所给予的参数将被完全覆盖至资源栈已有的属性上。
           * 只有在permission_model&#x3D;SELF_MANAGED时，才可更新administration_agency_name、managed_agency_name和administration_agency_urn。
-          * permission_model目前只支持更新SELF_MANAGED
           * 如果资源栈集的状态是OPERATION_IN_PROGRESS，不允许更新资源栈集。
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -5446,7 +5563,7 @@ class AosClient(Client):
           * 请求中必须包括template_uri或template_body。前者为模板内容obs链接，后者为模板内容
           * 新创建的模板版本版本ID会自动在当前最大模板版本ID的基础上加1
           * 创建模板版本需要的具体信息详见：CreateTemplateVersionRequestBody
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5522,7 +5639,7 @@ class AosClient(Client):
         此API用于删除某个模板以及模板下的全部模板版本
         **请谨慎操作，删除模板将会删除模板下的所有模板版本。**
         
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5595,7 +5712,7 @@ class AosClient(Client):
         
         此API用于删除某个模板版本
         
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
           * 如果模板下只存在唯一模板版本，此模板版本将无法被删除，如果需要删除此模板版本，请调用DeleteTemplate。模板服务不允许存在没有模板版本的模板
         
         **请谨慎操作**
@@ -5674,10 +5791,10 @@ class AosClient(Client):
         此API用于列举模板下所有的模板版本信息
         
           * 默认按照生成时间降序排序，最新生成的模板排列在最前面
-          * 注意：目前返回全量模板版本信息，即不支持分页
           * 如果没有任何模板版本，则返回空list
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
           * 如果模板不存在则返回404
+          * 支持分页返回。如果响应中存在next_marker，则表示实际总输出比当前响应中包含的输出多。在对请求的后续调用中，在请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null
         
         ListTemplateVersions返回的信息只包含模板版本摘要信息（具体摘要信息见ListTemplateVersionsResponseBody），如果用户需要了解模板版本内容，请调用ShowTemplateVersionContent
         
@@ -5716,6 +5833,10 @@ class AosClient(Client):
         query_params = []
         if 'template_id' in local_var_params:
             query_params.append(('template_id', local_var_params['template_id']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -5753,9 +5874,9 @@ class AosClient(Client):
         此API用于列举当前局点下用户所有的模板
         
           * 默认按照生成时间降序排序，最新生成的模板排列在最前面
-          * 注意：目前返回全量模板信息，即不支持分页
           * 如果没有任何模板，则返回空list
           * 如果用户需要详细的模板版本信息，请调用ListTemplateVersions
+          * 支持分页返回。如果响应中存在next_marker，则表示实际总输出比当前响应中包含的输出多。在对请求的后续调用中，在请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null
         
         ListTemplates返回的信息只包含模板摘要信息（具体摘要信息见ListTemplatesResponseBody），如果用户需要详细的某个模板信息，请调用ShowTemplateMetadata
         
@@ -5790,6 +5911,10 @@ class AosClient(Client):
         path_params = {}
 
         query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
         if 'client_request_id' in local_var_params:
@@ -5828,7 +5953,7 @@ class AosClient(Client):
         
         具体信息见ShowTemplateMetadataResponseBody，如果想查看模板下全部模板版本，请调用ListTemplateVersions。
         
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5901,7 +6026,7 @@ class AosClient(Client):
         
         此API用于获取用户的模板版本内容
         
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
           * 此api会以临时重定向形式返回模板内容的下载链接，用户通过下载获取模板版本内容（OBS Pre Signed地址，有效期为5分钟）
           * 如果手动访问重定向的obs下载链接，请求时不可以携带任何的Request-Header，否则会导致签名失败
         
@@ -5986,7 +6111,7 @@ class AosClient(Client):
         
         此API用于展示某一版本模板的元数据
         
-          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保，当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
+          * template_id是模板的唯一Id。此Id由资源编排服务在生成模板的时候生成，为UUID。由于模板名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的模板，删除，再重新创建一个同名模板。对于团队并行开发，用户可能希望确保当前我操作的模板就是我认为的那个，而不是其他队友删除后创建的同名模板。因此，使用ID就可以做到强匹配。资源编排服务保证每次创建的模板所对应的ID都不相同，更新不会影响ID。如果给予的template_id和当前模板管理的ID不一致，则返回400
         
         ShowTemplateVersionMetadata返回的信息只包含模板版本元数据信息（具体摘要信息见ShowTemplateVersionMetadataResponseBody），如果用户需要了解模板版本内容，请调用ShowTemplateVersionContent
         

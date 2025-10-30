@@ -74,7 +74,8 @@ class ResFeeRecordV2:
         'sub_resource_id': 'str',
         'sub_resource_name': 'str',
         'consume_time': 'str',
-        'relative_order_id': 'str'
+        'relative_order_id': 'str',
+        'account_name': 'str'
     }
 
     attribute_map = {
@@ -135,10 +136,11 @@ class ResFeeRecordV2:
         'sub_resource_id': 'sub_resource_id',
         'sub_resource_name': 'sub_resource_name',
         'consume_time': 'consume_time',
-        'relative_order_id': 'relative_order_id'
+        'relative_order_id': 'relative_order_id',
+        'account_name': 'account_name'
     }
 
-    def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, cloud_service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, id=None, trade_time=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None, formula=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, consume_time=None, relative_order_id=None):
+    def __init__(self, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type=None, cloud_service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_id=None, product_name=None, product_spec_desc=None, sku_code=None, spec_size=None, spec_size_measure_id=None, trade_id=None, id=None, trade_time=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, unit_price=None, unit=None, official_amount=None, discount_amount=None, amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, measure_id=None, formula=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, consume_time=None, relative_order_id=None, account_name=None):
         r"""ResFeeRecordV2
 
         The model defined in huaweicloud sdk
@@ -259,6 +261,8 @@ class ResFeeRecordV2:
         :type consume_time: str
         :param relative_order_id: |参数名称：客户订单关联的订单ID| |参数约束及描述：客户订单关联的订单ID，包年/包月资源的使用记录该字段才有值，按需资源则为空。当order_id为组合交易订单时，该字段才有值，当查询为普通订单时，此字段返回为空。|
         :type relative_order_id: str
+        :param account_name: |参数名称：消费的客户登录名称。| |参数约束及描述：范围限制：0-128，如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户登录名称。 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户登录名称。如果是企业主自己的消费记录，则为企业主的客户登录名称；如果是某个企业子客户的消费记录，则此处为企业子的客户登录名称。|
+        :type account_name: str
         """
         
         
@@ -321,6 +325,7 @@ class ResFeeRecordV2:
         self._sub_resource_name = None
         self._consume_time = None
         self._relative_order_id = None
+        self._account_name = None
         self.discriminator = None
 
         if bill_date is not None:
@@ -439,6 +444,8 @@ class ResFeeRecordV2:
             self.consume_time = consume_time
         if relative_order_id is not None:
             self.relative_order_id = relative_order_id
+        if account_name is not None:
+            self.account_name = account_name
 
     @property
     def bill_date(self):
@@ -1715,6 +1722,28 @@ class ResFeeRecordV2:
         :type relative_order_id: str
         """
         self._relative_order_id = relative_order_id
+
+    @property
+    def account_name(self):
+        r"""Gets the account_name of this ResFeeRecordV2.
+
+        |参数名称：消费的客户登录名称。| |参数约束及描述：范围限制：0-128，如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户登录名称。 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户登录名称。如果是企业主自己的消费记录，则为企业主的客户登录名称；如果是某个企业子客户的消费记录，则此处为企业子的客户登录名称。|
+
+        :return: The account_name of this ResFeeRecordV2.
+        :rtype: str
+        """
+        return self._account_name
+
+    @account_name.setter
+    def account_name(self, account_name):
+        r"""Sets the account_name of this ResFeeRecordV2.
+
+        |参数名称：消费的客户登录名称。| |参数约束及描述：范围限制：0-128，如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户登录名称。 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户登录名称。如果是企业主自己的消费记录，则为企业主的客户登录名称；如果是某个企业子客户的消费记录，则此处为企业子的客户登录名称。|
+
+        :param account_name: The account_name of this ResFeeRecordV2.
+        :type account_name: str
+        """
+        self._account_name = account_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

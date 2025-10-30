@@ -38,15 +38,15 @@ class ShowCommonPortResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param port: 端口号
+        :param port: **参数解释** 端口号 **取值范围** 最小值1，最大值65535 
         :type port: int
-        :param type: 端口类型：目前包括TCP，UDP两种
+        :param type: **参数解释** 端口类型 **取值范围** - TCP：TCP协议 - UDP：UDP协议 - TCP6：TCP6协议 - UDP6：UDP6协议 
         :type type: str
-        :param status: 状态   - normal : 正常   - danger : 危险   - unknow : 未知
+        :param status: **参数解释** 状态 **取值范围** - normal：正常 - danger：危险 - unknow：未知 
         :type status: str
-        :param description: 中文描述
+        :param description: **参数解释** 中文描述 **取值范围** 字符长度1-256 
         :type description: str
-        :param description_en: 英文描述
+        :param description_en: **参数解释** 英文描述 **取值范围** 字符长度1-256 
         :type description_en: str
         """
         
@@ -74,7 +74,7 @@ class ShowCommonPortResponse(SdkResponse):
     def port(self):
         r"""Gets the port of this ShowCommonPortResponse.
 
-        端口号
+        **参数解释** 端口号 **取值范围** 最小值1，最大值65535 
 
         :return: The port of this ShowCommonPortResponse.
         :rtype: int
@@ -85,7 +85,7 @@ class ShowCommonPortResponse(SdkResponse):
     def port(self, port):
         r"""Sets the port of this ShowCommonPortResponse.
 
-        端口号
+        **参数解释** 端口号 **取值范围** 最小值1，最大值65535 
 
         :param port: The port of this ShowCommonPortResponse.
         :type port: int
@@ -96,7 +96,7 @@ class ShowCommonPortResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowCommonPortResponse.
 
-        端口类型：目前包括TCP，UDP两种
+        **参数解释** 端口类型 **取值范围** - TCP：TCP协议 - UDP：UDP协议 - TCP6：TCP6协议 - UDP6：UDP6协议 
 
         :return: The type of this ShowCommonPortResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowCommonPortResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowCommonPortResponse.
 
-        端口类型：目前包括TCP，UDP两种
+        **参数解释** 端口类型 **取值范围** - TCP：TCP协议 - UDP：UDP协议 - TCP6：TCP6协议 - UDP6：UDP6协议 
 
         :param type: The type of this ShowCommonPortResponse.
         :type type: str
@@ -118,7 +118,7 @@ class ShowCommonPortResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowCommonPortResponse.
 
-        状态   - normal : 正常   - danger : 危险   - unknow : 未知
+        **参数解释** 状态 **取值范围** - normal：正常 - danger：危险 - unknow：未知 
 
         :return: The status of this ShowCommonPortResponse.
         :rtype: str
@@ -129,7 +129,7 @@ class ShowCommonPortResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowCommonPortResponse.
 
-        状态   - normal : 正常   - danger : 危险   - unknow : 未知
+        **参数解释** 状态 **取值范围** - normal：正常 - danger：危险 - unknow：未知 
 
         :param status: The status of this ShowCommonPortResponse.
         :type status: str
@@ -140,7 +140,7 @@ class ShowCommonPortResponse(SdkResponse):
     def description(self):
         r"""Gets the description of this ShowCommonPortResponse.
 
-        中文描述
+        **参数解释** 中文描述 **取值范围** 字符长度1-256 
 
         :return: The description of this ShowCommonPortResponse.
         :rtype: str
@@ -151,7 +151,7 @@ class ShowCommonPortResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this ShowCommonPortResponse.
 
-        中文描述
+        **参数解释** 中文描述 **取值范围** 字符长度1-256 
 
         :param description: The description of this ShowCommonPortResponse.
         :type description: str
@@ -162,7 +162,7 @@ class ShowCommonPortResponse(SdkResponse):
     def description_en(self):
         r"""Gets the description_en of this ShowCommonPortResponse.
 
-        英文描述
+        **参数解释** 英文描述 **取值范围** 字符长度1-256 
 
         :return: The description_en of this ShowCommonPortResponse.
         :rtype: str
@@ -173,7 +173,7 @@ class ShowCommonPortResponse(SdkResponse):
     def description_en(self, description_en):
         r"""Sets the description_en of this ShowCommonPortResponse.
 
-        英文描述
+        **参数解释** 英文描述 **取值范围** 字符长度1-256 
 
         :param description_en: The description_en of this ShowCommonPortResponse.
         :type description_en: str

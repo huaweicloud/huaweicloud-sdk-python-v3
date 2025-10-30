@@ -24,7 +24,8 @@ class LeakageListInfo:
         'contents': 'list[str]',
         'timestamp': 'int',
         'status': 'int',
-        'description': 'str'
+        'description': 'str',
+        'action': 'LeakageListInfoAction'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class LeakageListInfo:
         'contents': 'contents',
         'timestamp': 'timestamp',
         'status': 'status',
-        'description': 'description'
+        'description': 'description',
+        'action': 'action'
     }
 
-    def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, timestamp=None, status=None, description=None):
+    def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, timestamp=None, status=None, description=None, action=None):
         r"""LeakageListInfo
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class LeakageListInfo:
         :type status: int
         :param description: 规则描述
         :type description: str
+        :param action: 
+        :type action: :class:`huaweicloudsdkwaf.v1.LeakageListInfoAction`
         """
         
         
@@ -71,6 +75,7 @@ class LeakageListInfo:
         self._timestamp = None
         self._status = None
         self._description = None
+        self._action = None
         self.discriminator = None
 
         if id is not None:
@@ -89,6 +94,8 @@ class LeakageListInfo:
             self.status = status
         if description is not None:
             self.description = description
+        if action is not None:
+            self.action = action
 
     @property
     def id(self):
@@ -265,6 +272,24 @@ class LeakageListInfo:
         :type description: str
         """
         self._description = description
+
+    @property
+    def action(self):
+        r"""Gets the action of this LeakageListInfo.
+
+        :return: The action of this LeakageListInfo.
+        :rtype: :class:`huaweicloudsdkwaf.v1.LeakageListInfoAction`
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        r"""Sets the action of this LeakageListInfo.
+
+        :param action: The action of this LeakageListInfo.
+        :type action: :class:`huaweicloudsdkwaf.v1.LeakageListInfoAction`
+        """
+        self._action = action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

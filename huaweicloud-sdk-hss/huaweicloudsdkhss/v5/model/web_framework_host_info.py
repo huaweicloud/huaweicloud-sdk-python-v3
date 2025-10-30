@@ -24,23 +24,19 @@ class WebFrameworkHostInfo:
         'name': 'str',
         'version': 'str',
         'path': 'str',
-        'file_size': 'int',
         'record_time': 'int',
-        'bind_ip_list': 'str',
         'catalogue': 'str',
-        'connected_ip_list': 'str',
-        'connected_number': 'str',
-        'embedder_dir': 'str',
         'file_name': 'str',
         'file_type': 'str',
         'gid': 'int',
         'hash': 'str',
         'is_embedded': 'int',
-        'listen_port_list': 'str',
         'mode': 'str',
         'pid': 'int',
         'proc_path': 'str',
-        'uid': 'str'
+        'uid': 'int',
+        'container_id': 'str',
+        'container_name': 'str'
     }
 
     attribute_map = {
@@ -51,78 +47,66 @@ class WebFrameworkHostInfo:
         'name': 'name',
         'version': 'version',
         'path': 'path',
-        'file_size': 'file_size',
         'record_time': 'record_time',
-        'bind_ip_list': 'bind_ip_list',
         'catalogue': 'catalogue',
-        'connected_ip_list': 'connected_ip_list',
-        'connected_number': 'connected_number',
-        'embedder_dir': 'embedder_dir',
         'file_name': 'file_name',
         'file_type': 'file_type',
         'gid': 'gid',
         'hash': 'hash',
         'is_embedded': 'is_embedded',
-        'listen_port_list': 'listen_port_list',
         'mode': 'mode',
         'pid': 'pid',
         'proc_path': 'proc_path',
-        'uid': 'uid'
+        'uid': 'uid',
+        'container_id': 'container_id',
+        'container_name': 'container_name'
     }
 
-    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, name=None, version=None, path=None, file_size=None, record_time=None, bind_ip_list=None, catalogue=None, connected_ip_list=None, connected_number=None, embedder_dir=None, file_name=None, file_type=None, gid=None, hash=None, is_embedded=None, listen_port_list=None, mode=None, pid=None, proc_path=None, uid=None):
+    def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, name=None, version=None, path=None, record_time=None, catalogue=None, file_name=None, file_type=None, gid=None, hash=None, is_embedded=None, mode=None, pid=None, proc_path=None, uid=None, container_id=None, container_name=None):
         r"""WebFrameworkHostInfo
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: agent_id
+        :param agent_id: **参数解释** agent id **取值范围** 字符长度1-64 
         :type agent_id: str
-        :param host_id: 主机id
+        :param host_id: **参数解释** 主机id **取值范围** 字符长度1-64 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释** 服务器名称 **取值范围** 字符长度1-64 
         :type host_name: str
-        :param host_ip: 服务器ip
+        :param host_ip: **参数解释** 服务器ip **取值范围** 字符长度1-64 
         :type host_ip: str
-        :param name: 名称
+        :param name: **参数解释**: web框架名称 **取值范围**: 字符长度1-256 
         :type name: str
-        :param version: 版本
+        :param version: **参数解释**: web框架版本 **取值范围**: 字符长度1-512 
         :type version: str
-        :param path: 路径
+        :param path: **参数解释**: web框架文件路径 **取值范围**: 字符长度1-512 
         :type path: str
-        :param file_size: 大小
-        :type file_size: int
-        :param record_time: 扫描时间
+        :param record_time: **参数解释**: web框架扫描时间 **取值范围**: 最小值0，最大值2^63-1 
         :type record_time: int
-        :param bind_ip_list: 绑定的ip列表
-        :type bind_ip_list: str
-        :param catalogue: 软件的类型
+        :param catalogue: **参数解释**: 软件的类型 **取值范围**: 字符长度1-32 
         :type catalogue: str
-        :param connected_ip_list: 连接的ip列表
-        :type connected_ip_list: str
-        :param connected_number: 连接数
-        :type connected_number: str
-        :param embedder_dir: 压缩的目录
-        :type embedder_dir: str
-        :param file_name: 文件名称
+        :param file_name: **参数解释**: web框架文件名称 **取值范围**: 字符长度1-256 
         :type file_name: str
-        :param file_type: 文件类型
+        :param file_type: **参数解释**: web框架文件类型 **取值范围**: 字符长度1-32 
         :type file_type: str
-        :param gid: 用户组id
+        :param gid: **参数解释**: web框架进程gid **取值范围**: 最小值0，最大值2147483647 
         :type gid: int
-        :param hash: 文件哈希值
+        :param hash: **参数解释**: web框架文件哈希 **取值范围**: 字符长度1-64 
         :type hash: str
-        :param is_embedded: 是否是压缩的文件
+        :param is_embedded: **参数解释**: 是否是压缩的文件 **取值范围**: - 0：不是压缩文件 - 1：是压缩文件 
         :type is_embedded: int
-        :param listen_port_list: 监听的端口列表
-        :type listen_port_list: str
-        :param mode: 文件权限
+        :param mode: **参数解释**: web框架文件权限 **取值范围**: 字符长度1-32 
         :type mode: str
-        :param pid: 进程id
+        :param pid: **参数解释**: web框架进程pid **取值范围**: 最小值0，最大值2147483647 
         :type pid: int
-        :param proc_path: 进程路径
+        :param proc_path: **参数解释**: web框架进程路径 **取值范围**: 字符长度1-1024 
         :type proc_path: str
-        :param uid: 用户id
-        :type uid: str
+        :param uid: **参数解释**: web框架进程uid **取值范围**: 最小值0，最大值2147483647 
+        :type uid: int
+        :param container_id: **参数解释**: 容器id **取值范围**: 字符长度1-128 
+        :type container_id: str
+        :param container_name: **参数解释**: 容器名称 **取值范围**: 字符长度1-256 
+        :type container_name: str
         """
         
         
@@ -134,23 +118,19 @@ class WebFrameworkHostInfo:
         self._name = None
         self._version = None
         self._path = None
-        self._file_size = None
         self._record_time = None
-        self._bind_ip_list = None
         self._catalogue = None
-        self._connected_ip_list = None
-        self._connected_number = None
-        self._embedder_dir = None
         self._file_name = None
         self._file_type = None
         self._gid = None
         self._hash = None
         self._is_embedded = None
-        self._listen_port_list = None
         self._mode = None
         self._pid = None
         self._proc_path = None
         self._uid = None
+        self._container_id = None
+        self._container_name = None
         self.discriminator = None
 
         if agent_id is not None:
@@ -167,20 +147,10 @@ class WebFrameworkHostInfo:
             self.version = version
         if path is not None:
             self.path = path
-        if file_size is not None:
-            self.file_size = file_size
         if record_time is not None:
             self.record_time = record_time
-        if bind_ip_list is not None:
-            self.bind_ip_list = bind_ip_list
         if catalogue is not None:
             self.catalogue = catalogue
-        if connected_ip_list is not None:
-            self.connected_ip_list = connected_ip_list
-        if connected_number is not None:
-            self.connected_number = connected_number
-        if embedder_dir is not None:
-            self.embedder_dir = embedder_dir
         if file_name is not None:
             self.file_name = file_name
         if file_type is not None:
@@ -191,8 +161,6 @@ class WebFrameworkHostInfo:
             self.hash = hash
         if is_embedded is not None:
             self.is_embedded = is_embedded
-        if listen_port_list is not None:
-            self.listen_port_list = listen_port_list
         if mode is not None:
             self.mode = mode
         if pid is not None:
@@ -201,12 +169,16 @@ class WebFrameworkHostInfo:
             self.proc_path = proc_path
         if uid is not None:
             self.uid = uid
+        if container_id is not None:
+            self.container_id = container_id
+        if container_name is not None:
+            self.container_name = container_name
 
     @property
     def agent_id(self):
         r"""Gets the agent_id of this WebFrameworkHostInfo.
 
-        agent_id
+        **参数解释** agent id **取值范围** 字符长度1-64 
 
         :return: The agent_id of this WebFrameworkHostInfo.
         :rtype: str
@@ -217,7 +189,7 @@ class WebFrameworkHostInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this WebFrameworkHostInfo.
 
-        agent_id
+        **参数解释** agent id **取值范围** 字符长度1-64 
 
         :param agent_id: The agent_id of this WebFrameworkHostInfo.
         :type agent_id: str
@@ -228,7 +200,7 @@ class WebFrameworkHostInfo:
     def host_id(self):
         r"""Gets the host_id of this WebFrameworkHostInfo.
 
-        主机id
+        **参数解释** 主机id **取值范围** 字符长度1-64 
 
         :return: The host_id of this WebFrameworkHostInfo.
         :rtype: str
@@ -239,7 +211,7 @@ class WebFrameworkHostInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this WebFrameworkHostInfo.
 
-        主机id
+        **参数解释** 主机id **取值范围** 字符长度1-64 
 
         :param host_id: The host_id of this WebFrameworkHostInfo.
         :type host_id: str
@@ -250,7 +222,7 @@ class WebFrameworkHostInfo:
     def host_name(self):
         r"""Gets the host_name of this WebFrameworkHostInfo.
 
-        服务器名称
+        **参数解释** 服务器名称 **取值范围** 字符长度1-64 
 
         :return: The host_name of this WebFrameworkHostInfo.
         :rtype: str
@@ -261,7 +233,7 @@ class WebFrameworkHostInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this WebFrameworkHostInfo.
 
-        服务器名称
+        **参数解释** 服务器名称 **取值范围** 字符长度1-64 
 
         :param host_name: The host_name of this WebFrameworkHostInfo.
         :type host_name: str
@@ -272,7 +244,7 @@ class WebFrameworkHostInfo:
     def host_ip(self):
         r"""Gets the host_ip of this WebFrameworkHostInfo.
 
-        服务器ip
+        **参数解释** 服务器ip **取值范围** 字符长度1-64 
 
         :return: The host_ip of this WebFrameworkHostInfo.
         :rtype: str
@@ -283,7 +255,7 @@ class WebFrameworkHostInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this WebFrameworkHostInfo.
 
-        服务器ip
+        **参数解释** 服务器ip **取值范围** 字符长度1-64 
 
         :param host_ip: The host_ip of this WebFrameworkHostInfo.
         :type host_ip: str
@@ -294,7 +266,7 @@ class WebFrameworkHostInfo:
     def name(self):
         r"""Gets the name of this WebFrameworkHostInfo.
 
-        名称
+        **参数解释**: web框架名称 **取值范围**: 字符长度1-256 
 
         :return: The name of this WebFrameworkHostInfo.
         :rtype: str
@@ -305,7 +277,7 @@ class WebFrameworkHostInfo:
     def name(self, name):
         r"""Sets the name of this WebFrameworkHostInfo.
 
-        名称
+        **参数解释**: web框架名称 **取值范围**: 字符长度1-256 
 
         :param name: The name of this WebFrameworkHostInfo.
         :type name: str
@@ -316,7 +288,7 @@ class WebFrameworkHostInfo:
     def version(self):
         r"""Gets the version of this WebFrameworkHostInfo.
 
-        版本
+        **参数解释**: web框架版本 **取值范围**: 字符长度1-512 
 
         :return: The version of this WebFrameworkHostInfo.
         :rtype: str
@@ -327,7 +299,7 @@ class WebFrameworkHostInfo:
     def version(self, version):
         r"""Sets the version of this WebFrameworkHostInfo.
 
-        版本
+        **参数解释**: web框架版本 **取值范围**: 字符长度1-512 
 
         :param version: The version of this WebFrameworkHostInfo.
         :type version: str
@@ -338,7 +310,7 @@ class WebFrameworkHostInfo:
     def path(self):
         r"""Gets the path of this WebFrameworkHostInfo.
 
-        路径
+        **参数解释**: web框架文件路径 **取值范围**: 字符长度1-512 
 
         :return: The path of this WebFrameworkHostInfo.
         :rtype: str
@@ -349,7 +321,7 @@ class WebFrameworkHostInfo:
     def path(self, path):
         r"""Sets the path of this WebFrameworkHostInfo.
 
-        路径
+        **参数解释**: web框架文件路径 **取值范围**: 字符长度1-512 
 
         :param path: The path of this WebFrameworkHostInfo.
         :type path: str
@@ -357,32 +329,10 @@ class WebFrameworkHostInfo:
         self._path = path
 
     @property
-    def file_size(self):
-        r"""Gets the file_size of this WebFrameworkHostInfo.
-
-        大小
-
-        :return: The file_size of this WebFrameworkHostInfo.
-        :rtype: int
-        """
-        return self._file_size
-
-    @file_size.setter
-    def file_size(self, file_size):
-        r"""Sets the file_size of this WebFrameworkHostInfo.
-
-        大小
-
-        :param file_size: The file_size of this WebFrameworkHostInfo.
-        :type file_size: int
-        """
-        self._file_size = file_size
-
-    @property
     def record_time(self):
         r"""Gets the record_time of this WebFrameworkHostInfo.
 
-        扫描时间
+        **参数解释**: web框架扫描时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :return: The record_time of this WebFrameworkHostInfo.
         :rtype: int
@@ -393,7 +343,7 @@ class WebFrameworkHostInfo:
     def record_time(self, record_time):
         r"""Sets the record_time of this WebFrameworkHostInfo.
 
-        扫描时间
+        **参数解释**: web框架扫描时间 **取值范围**: 最小值0，最大值2^63-1 
 
         :param record_time: The record_time of this WebFrameworkHostInfo.
         :type record_time: int
@@ -401,32 +351,10 @@ class WebFrameworkHostInfo:
         self._record_time = record_time
 
     @property
-    def bind_ip_list(self):
-        r"""Gets the bind_ip_list of this WebFrameworkHostInfo.
-
-        绑定的ip列表
-
-        :return: The bind_ip_list of this WebFrameworkHostInfo.
-        :rtype: str
-        """
-        return self._bind_ip_list
-
-    @bind_ip_list.setter
-    def bind_ip_list(self, bind_ip_list):
-        r"""Sets the bind_ip_list of this WebFrameworkHostInfo.
-
-        绑定的ip列表
-
-        :param bind_ip_list: The bind_ip_list of this WebFrameworkHostInfo.
-        :type bind_ip_list: str
-        """
-        self._bind_ip_list = bind_ip_list
-
-    @property
     def catalogue(self):
         r"""Gets the catalogue of this WebFrameworkHostInfo.
 
-        软件的类型
+        **参数解释**: 软件的类型 **取值范围**: 字符长度1-32 
 
         :return: The catalogue of this WebFrameworkHostInfo.
         :rtype: str
@@ -437,7 +365,7 @@ class WebFrameworkHostInfo:
     def catalogue(self, catalogue):
         r"""Sets the catalogue of this WebFrameworkHostInfo.
 
-        软件的类型
+        **参数解释**: 软件的类型 **取值范围**: 字符长度1-32 
 
         :param catalogue: The catalogue of this WebFrameworkHostInfo.
         :type catalogue: str
@@ -445,76 +373,10 @@ class WebFrameworkHostInfo:
         self._catalogue = catalogue
 
     @property
-    def connected_ip_list(self):
-        r"""Gets the connected_ip_list of this WebFrameworkHostInfo.
-
-        连接的ip列表
-
-        :return: The connected_ip_list of this WebFrameworkHostInfo.
-        :rtype: str
-        """
-        return self._connected_ip_list
-
-    @connected_ip_list.setter
-    def connected_ip_list(self, connected_ip_list):
-        r"""Sets the connected_ip_list of this WebFrameworkHostInfo.
-
-        连接的ip列表
-
-        :param connected_ip_list: The connected_ip_list of this WebFrameworkHostInfo.
-        :type connected_ip_list: str
-        """
-        self._connected_ip_list = connected_ip_list
-
-    @property
-    def connected_number(self):
-        r"""Gets the connected_number of this WebFrameworkHostInfo.
-
-        连接数
-
-        :return: The connected_number of this WebFrameworkHostInfo.
-        :rtype: str
-        """
-        return self._connected_number
-
-    @connected_number.setter
-    def connected_number(self, connected_number):
-        r"""Sets the connected_number of this WebFrameworkHostInfo.
-
-        连接数
-
-        :param connected_number: The connected_number of this WebFrameworkHostInfo.
-        :type connected_number: str
-        """
-        self._connected_number = connected_number
-
-    @property
-    def embedder_dir(self):
-        r"""Gets the embedder_dir of this WebFrameworkHostInfo.
-
-        压缩的目录
-
-        :return: The embedder_dir of this WebFrameworkHostInfo.
-        :rtype: str
-        """
-        return self._embedder_dir
-
-    @embedder_dir.setter
-    def embedder_dir(self, embedder_dir):
-        r"""Sets the embedder_dir of this WebFrameworkHostInfo.
-
-        压缩的目录
-
-        :param embedder_dir: The embedder_dir of this WebFrameworkHostInfo.
-        :type embedder_dir: str
-        """
-        self._embedder_dir = embedder_dir
-
-    @property
     def file_name(self):
         r"""Gets the file_name of this WebFrameworkHostInfo.
 
-        文件名称
+        **参数解释**: web框架文件名称 **取值范围**: 字符长度1-256 
 
         :return: The file_name of this WebFrameworkHostInfo.
         :rtype: str
@@ -525,7 +387,7 @@ class WebFrameworkHostInfo:
     def file_name(self, file_name):
         r"""Sets the file_name of this WebFrameworkHostInfo.
 
-        文件名称
+        **参数解释**: web框架文件名称 **取值范围**: 字符长度1-256 
 
         :param file_name: The file_name of this WebFrameworkHostInfo.
         :type file_name: str
@@ -536,7 +398,7 @@ class WebFrameworkHostInfo:
     def file_type(self):
         r"""Gets the file_type of this WebFrameworkHostInfo.
 
-        文件类型
+        **参数解释**: web框架文件类型 **取值范围**: 字符长度1-32 
 
         :return: The file_type of this WebFrameworkHostInfo.
         :rtype: str
@@ -547,7 +409,7 @@ class WebFrameworkHostInfo:
     def file_type(self, file_type):
         r"""Sets the file_type of this WebFrameworkHostInfo.
 
-        文件类型
+        **参数解释**: web框架文件类型 **取值范围**: 字符长度1-32 
 
         :param file_type: The file_type of this WebFrameworkHostInfo.
         :type file_type: str
@@ -558,7 +420,7 @@ class WebFrameworkHostInfo:
     def gid(self):
         r"""Gets the gid of this WebFrameworkHostInfo.
 
-        用户组id
+        **参数解释**: web框架进程gid **取值范围**: 最小值0，最大值2147483647 
 
         :return: The gid of this WebFrameworkHostInfo.
         :rtype: int
@@ -569,7 +431,7 @@ class WebFrameworkHostInfo:
     def gid(self, gid):
         r"""Sets the gid of this WebFrameworkHostInfo.
 
-        用户组id
+        **参数解释**: web框架进程gid **取值范围**: 最小值0，最大值2147483647 
 
         :param gid: The gid of this WebFrameworkHostInfo.
         :type gid: int
@@ -580,7 +442,7 @@ class WebFrameworkHostInfo:
     def hash(self):
         r"""Gets the hash of this WebFrameworkHostInfo.
 
-        文件哈希值
+        **参数解释**: web框架文件哈希 **取值范围**: 字符长度1-64 
 
         :return: The hash of this WebFrameworkHostInfo.
         :rtype: str
@@ -591,7 +453,7 @@ class WebFrameworkHostInfo:
     def hash(self, hash):
         r"""Sets the hash of this WebFrameworkHostInfo.
 
-        文件哈希值
+        **参数解释**: web框架文件哈希 **取值范围**: 字符长度1-64 
 
         :param hash: The hash of this WebFrameworkHostInfo.
         :type hash: str
@@ -602,7 +464,7 @@ class WebFrameworkHostInfo:
     def is_embedded(self):
         r"""Gets the is_embedded of this WebFrameworkHostInfo.
 
-        是否是压缩的文件
+        **参数解释**: 是否是压缩的文件 **取值范围**: - 0：不是压缩文件 - 1：是压缩文件 
 
         :return: The is_embedded of this WebFrameworkHostInfo.
         :rtype: int
@@ -613,7 +475,7 @@ class WebFrameworkHostInfo:
     def is_embedded(self, is_embedded):
         r"""Sets the is_embedded of this WebFrameworkHostInfo.
 
-        是否是压缩的文件
+        **参数解释**: 是否是压缩的文件 **取值范围**: - 0：不是压缩文件 - 1：是压缩文件 
 
         :param is_embedded: The is_embedded of this WebFrameworkHostInfo.
         :type is_embedded: int
@@ -621,32 +483,10 @@ class WebFrameworkHostInfo:
         self._is_embedded = is_embedded
 
     @property
-    def listen_port_list(self):
-        r"""Gets the listen_port_list of this WebFrameworkHostInfo.
-
-        监听的端口列表
-
-        :return: The listen_port_list of this WebFrameworkHostInfo.
-        :rtype: str
-        """
-        return self._listen_port_list
-
-    @listen_port_list.setter
-    def listen_port_list(self, listen_port_list):
-        r"""Sets the listen_port_list of this WebFrameworkHostInfo.
-
-        监听的端口列表
-
-        :param listen_port_list: The listen_port_list of this WebFrameworkHostInfo.
-        :type listen_port_list: str
-        """
-        self._listen_port_list = listen_port_list
-
-    @property
     def mode(self):
         r"""Gets the mode of this WebFrameworkHostInfo.
 
-        文件权限
+        **参数解释**: web框架文件权限 **取值范围**: 字符长度1-32 
 
         :return: The mode of this WebFrameworkHostInfo.
         :rtype: str
@@ -657,7 +497,7 @@ class WebFrameworkHostInfo:
     def mode(self, mode):
         r"""Sets the mode of this WebFrameworkHostInfo.
 
-        文件权限
+        **参数解释**: web框架文件权限 **取值范围**: 字符长度1-32 
 
         :param mode: The mode of this WebFrameworkHostInfo.
         :type mode: str
@@ -668,7 +508,7 @@ class WebFrameworkHostInfo:
     def pid(self):
         r"""Gets the pid of this WebFrameworkHostInfo.
 
-        进程id
+        **参数解释**: web框架进程pid **取值范围**: 最小值0，最大值2147483647 
 
         :return: The pid of this WebFrameworkHostInfo.
         :rtype: int
@@ -679,7 +519,7 @@ class WebFrameworkHostInfo:
     def pid(self, pid):
         r"""Sets the pid of this WebFrameworkHostInfo.
 
-        进程id
+        **参数解释**: web框架进程pid **取值范围**: 最小值0，最大值2147483647 
 
         :param pid: The pid of this WebFrameworkHostInfo.
         :type pid: int
@@ -690,7 +530,7 @@ class WebFrameworkHostInfo:
     def proc_path(self):
         r"""Gets the proc_path of this WebFrameworkHostInfo.
 
-        进程路径
+        **参数解释**: web框架进程路径 **取值范围**: 字符长度1-1024 
 
         :return: The proc_path of this WebFrameworkHostInfo.
         :rtype: str
@@ -701,7 +541,7 @@ class WebFrameworkHostInfo:
     def proc_path(self, proc_path):
         r"""Sets the proc_path of this WebFrameworkHostInfo.
 
-        进程路径
+        **参数解释**: web框架进程路径 **取值范围**: 字符长度1-1024 
 
         :param proc_path: The proc_path of this WebFrameworkHostInfo.
         :type proc_path: str
@@ -712,10 +552,10 @@ class WebFrameworkHostInfo:
     def uid(self):
         r"""Gets the uid of this WebFrameworkHostInfo.
 
-        用户id
+        **参数解释**: web框架进程uid **取值范围**: 最小值0，最大值2147483647 
 
         :return: The uid of this WebFrameworkHostInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._uid
 
@@ -723,12 +563,56 @@ class WebFrameworkHostInfo:
     def uid(self, uid):
         r"""Sets the uid of this WebFrameworkHostInfo.
 
-        用户id
+        **参数解释**: web框架进程uid **取值范围**: 最小值0，最大值2147483647 
 
         :param uid: The uid of this WebFrameworkHostInfo.
-        :type uid: str
+        :type uid: int
         """
         self._uid = uid
+
+    @property
+    def container_id(self):
+        r"""Gets the container_id of this WebFrameworkHostInfo.
+
+        **参数解释**: 容器id **取值范围**: 字符长度1-128 
+
+        :return: The container_id of this WebFrameworkHostInfo.
+        :rtype: str
+        """
+        return self._container_id
+
+    @container_id.setter
+    def container_id(self, container_id):
+        r"""Sets the container_id of this WebFrameworkHostInfo.
+
+        **参数解释**: 容器id **取值范围**: 字符长度1-128 
+
+        :param container_id: The container_id of this WebFrameworkHostInfo.
+        :type container_id: str
+        """
+        self._container_id = container_id
+
+    @property
+    def container_name(self):
+        r"""Gets the container_name of this WebFrameworkHostInfo.
+
+        **参数解释**: 容器名称 **取值范围**: 字符长度1-256 
+
+        :return: The container_name of this WebFrameworkHostInfo.
+        :rtype: str
+        """
+        return self._container_name
+
+    @container_name.setter
+    def container_name(self, container_name):
+        r"""Sets the container_name of this WebFrameworkHostInfo.
+
+        **参数解释**: 容器名称 **取值范围**: 字符长度1-256 
+
+        :param container_name: The container_name of this WebFrameworkHostInfo.
+        :type container_name: str
+        """
+        self._container_name = container_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

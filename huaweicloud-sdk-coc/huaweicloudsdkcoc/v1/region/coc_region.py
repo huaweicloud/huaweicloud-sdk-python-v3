@@ -10,10 +10,13 @@ class CocRegion:
                         "https://coc.myhuaweicloud.com")
     AP_SOUTHEAST_3 = Region("ap-southeast-3",
                         "https://coc-intl.myhuaweicloud.com")
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://coc-eu-west-101-open-api.myhuaweicloud.eu")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod

@@ -63,8 +63,7 @@ class ListWaitEventRequestBody:
         self._wait_event_query_info = None
         self.discriminator = None
 
-        if node_id is not None:
-            self.node_id = node_id
+        self.node_id = node_id
         if system is not None:
             self.system = system
         if limit is not None:

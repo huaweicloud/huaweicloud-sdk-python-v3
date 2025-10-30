@@ -29,13 +29,15 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         'domain_id': 'str',
         'create_time': 'int',
         'update_time': 'int',
-        'language': 'str',
         'project_id': 'str',
-        'topics': 'list[Topics]',
         'condition_expression': 'str',
-        'index_id': 'str',
         'notification_frequency': 'int',
-        'alarm_action_rule_name': 'str'
+        'alarm_action_rule_name': 'str',
+        'recovery_policy': 'int',
+        'tags': 'list[TagsResBody]',
+        'trigger_condition_count': 'int',
+        'trigger_condition_frequency': 'int',
+        'whether_recovery_policy': 'bool'
     }
 
     attribute_map = {
@@ -50,16 +52,18 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         'domain_id': 'domain_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'language': 'language',
         'project_id': 'projectId',
-        'topics': 'topics',
         'condition_expression': 'condition_expression',
-        'index_id': 'indexId',
         'notification_frequency': 'notification_frequency',
-        'alarm_action_rule_name': 'alarm_action_rule_name'
+        'alarm_action_rule_name': 'alarm_action_rule_name',
+        'recovery_policy': 'recovery_policy',
+        'tags': 'tags',
+        'trigger_condition_count': 'trigger_condition_count',
+        'trigger_condition_frequency': 'trigger_condition_frequency',
+        'whether_recovery_policy': 'whether_recovery_policy'
     }
 
-    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, alarm_rule_alias=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, language=None, project_id=None, topics=None, condition_expression=None, index_id=None, notification_frequency=None, alarm_action_rule_name=None):
+    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, alarm_rule_alias=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, project_id=None, condition_expression=None, notification_frequency=None, alarm_action_rule_name=None, recovery_policy=None, tags=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None):
         r"""UpdateKeywordsAlarmRuleResponse
 
         The model defined in huaweicloud sdk
@@ -86,20 +90,24 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         :type create_time: int
         :param update_time: 更新时间(毫秒时间戳)
         :type update_time: int
-        :param language: 邮件附加信息语言
-        :type language: str
         :param project_id: 项目id
         :type project_id: str
-        :param topics: 通知主题
-        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
         :param condition_expression: 情况表述
         :type condition_expression: str
-        :param index_id: 索引id
-        :type index_id: str
         :param notification_frequency: 通知频率,单位(分钟)
         :type notification_frequency: int
         :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
         :type alarm_action_rule_name: str
+        :param recovery_policy: **参数解释：** 告警恢复策略周期次数。 配置的最近统计周期次数内，如果不满足触发条件且开启恢复时通知开关，则会发送恢复告警通知。 **取值范围：** - 最小值为1 - 最大值为10
+        :type recovery_policy: int
+        :param tags: **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        :param trigger_condition_count: **参数解释：** 告警触发条件：满足条件次数。满足条件次数是指设置的关键词。 在统计周期次数内且满足条件次数时，可触发关键词告警。 **取值范围：** 不涉及。
+        :type trigger_condition_count: int
+        :param trigger_condition_frequency: **参数解释：** 告警触发条件：统计周期次数。统计周期次数指高级设置的统计周期。 当在统计周期次数内且满足条件次数时，可触发关键词告警。 **取值范围：** - 最小值为1 - 最大值为10
+        :type trigger_condition_frequency: int
+        :param whether_recovery_policy: **参数解释：** 是否配置告警恢复策略。满足该策略时，会发送告警恢复通知。 **取值范围：** true：配置告警恢复策略。 false：不配置告警恢复策略。
+        :type whether_recovery_policy: bool
         """
         
         super(UpdateKeywordsAlarmRuleResponse, self).__init__()
@@ -115,13 +123,15 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         self._domain_id = None
         self._create_time = None
         self._update_time = None
-        self._language = None
         self._project_id = None
-        self._topics = None
         self._condition_expression = None
-        self._index_id = None
         self._notification_frequency = None
         self._alarm_action_rule_name = None
+        self._recovery_policy = None
+        self._tags = None
+        self._trigger_condition_count = None
+        self._trigger_condition_frequency = None
+        self._whether_recovery_policy = None
         self.discriminator = None
 
         if keywords_alarm_rule_id is not None:
@@ -146,20 +156,24 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
-        if language is not None:
-            self.language = language
         if project_id is not None:
             self.project_id = project_id
-        if topics is not None:
-            self.topics = topics
         if condition_expression is not None:
             self.condition_expression = condition_expression
-        if index_id is not None:
-            self.index_id = index_id
         if notification_frequency is not None:
             self.notification_frequency = notification_frequency
         if alarm_action_rule_name is not None:
             self.alarm_action_rule_name = alarm_action_rule_name
+        if recovery_policy is not None:
+            self.recovery_policy = recovery_policy
+        if tags is not None:
+            self.tags = tags
+        if trigger_condition_count is not None:
+            self.trigger_condition_count = trigger_condition_count
+        if trigger_condition_frequency is not None:
+            self.trigger_condition_frequency = trigger_condition_frequency
+        if whether_recovery_policy is not None:
+            self.whether_recovery_policy = whether_recovery_policy
 
     @property
     def keywords_alarm_rule_id(self):
@@ -400,28 +414,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         self._update_time = update_time
 
     @property
-    def language(self):
-        r"""Gets the language of this UpdateKeywordsAlarmRuleResponse.
-
-        邮件附加信息语言
-
-        :return: The language of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._language
-
-    @language.setter
-    def language(self, language):
-        r"""Sets the language of this UpdateKeywordsAlarmRuleResponse.
-
-        邮件附加信息语言
-
-        :param language: The language of this UpdateKeywordsAlarmRuleResponse.
-        :type language: str
-        """
-        self._language = language
-
-    @property
     def project_id(self):
         r"""Gets the project_id of this UpdateKeywordsAlarmRuleResponse.
 
@@ -444,28 +436,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         self._project_id = project_id
 
     @property
-    def topics(self):
-        r"""Gets the topics of this UpdateKeywordsAlarmRuleResponse.
-
-        通知主题
-
-        :return: The topics of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: list[:class:`huaweicloudsdklts.v2.Topics`]
-        """
-        return self._topics
-
-    @topics.setter
-    def topics(self, topics):
-        r"""Sets the topics of this UpdateKeywordsAlarmRuleResponse.
-
-        通知主题
-
-        :param topics: The topics of this UpdateKeywordsAlarmRuleResponse.
-        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
-        """
-        self._topics = topics
-
-    @property
     def condition_expression(self):
         r"""Gets the condition_expression of this UpdateKeywordsAlarmRuleResponse.
 
@@ -486,28 +456,6 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         :type condition_expression: str
         """
         self._condition_expression = condition_expression
-
-    @property
-    def index_id(self):
-        r"""Gets the index_id of this UpdateKeywordsAlarmRuleResponse.
-
-        索引id
-
-        :return: The index_id of this UpdateKeywordsAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._index_id
-
-    @index_id.setter
-    def index_id(self, index_id):
-        r"""Sets the index_id of this UpdateKeywordsAlarmRuleResponse.
-
-        索引id
-
-        :param index_id: The index_id of this UpdateKeywordsAlarmRuleResponse.
-        :type index_id: str
-        """
-        self._index_id = index_id
 
     @property
     def notification_frequency(self):
@@ -552,6 +500,116 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
         :type alarm_action_rule_name: str
         """
         self._alarm_action_rule_name = alarm_action_rule_name
+
+    @property
+    def recovery_policy(self):
+        r"""Gets the recovery_policy of this UpdateKeywordsAlarmRuleResponse.
+
+        **参数解释：** 告警恢复策略周期次数。 配置的最近统计周期次数内，如果不满足触发条件且开启恢复时通知开关，则会发送恢复告警通知。 **取值范围：** - 最小值为1 - 最大值为10
+
+        :return: The recovery_policy of this UpdateKeywordsAlarmRuleResponse.
+        :rtype: int
+        """
+        return self._recovery_policy
+
+    @recovery_policy.setter
+    def recovery_policy(self, recovery_policy):
+        r"""Sets the recovery_policy of this UpdateKeywordsAlarmRuleResponse.
+
+        **参数解释：** 告警恢复策略周期次数。 配置的最近统计周期次数内，如果不满足触发条件且开启恢复时通知开关，则会发送恢复告警通知。 **取值范围：** - 最小值为1 - 最大值为10
+
+        :param recovery_policy: The recovery_policy of this UpdateKeywordsAlarmRuleResponse.
+        :type recovery_policy: int
+        """
+        self._recovery_policy = recovery_policy
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this UpdateKeywordsAlarmRuleResponse.
+
+        **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。
+
+        :return: The tags of this UpdateKeywordsAlarmRuleResponse.
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this UpdateKeywordsAlarmRuleResponse.
+
+        **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。
+
+        :param tags: The tags of this UpdateKeywordsAlarmRuleResponse.
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        """
+        self._tags = tags
+
+    @property
+    def trigger_condition_count(self):
+        r"""Gets the trigger_condition_count of this UpdateKeywordsAlarmRuleResponse.
+
+        **参数解释：** 告警触发条件：满足条件次数。满足条件次数是指设置的关键词。 在统计周期次数内且满足条件次数时，可触发关键词告警。 **取值范围：** 不涉及。
+
+        :return: The trigger_condition_count of this UpdateKeywordsAlarmRuleResponse.
+        :rtype: int
+        """
+        return self._trigger_condition_count
+
+    @trigger_condition_count.setter
+    def trigger_condition_count(self, trigger_condition_count):
+        r"""Sets the trigger_condition_count of this UpdateKeywordsAlarmRuleResponse.
+
+        **参数解释：** 告警触发条件：满足条件次数。满足条件次数是指设置的关键词。 在统计周期次数内且满足条件次数时，可触发关键词告警。 **取值范围：** 不涉及。
+
+        :param trigger_condition_count: The trigger_condition_count of this UpdateKeywordsAlarmRuleResponse.
+        :type trigger_condition_count: int
+        """
+        self._trigger_condition_count = trigger_condition_count
+
+    @property
+    def trigger_condition_frequency(self):
+        r"""Gets the trigger_condition_frequency of this UpdateKeywordsAlarmRuleResponse.
+
+        **参数解释：** 告警触发条件：统计周期次数。统计周期次数指高级设置的统计周期。 当在统计周期次数内且满足条件次数时，可触发关键词告警。 **取值范围：** - 最小值为1 - 最大值为10
+
+        :return: The trigger_condition_frequency of this UpdateKeywordsAlarmRuleResponse.
+        :rtype: int
+        """
+        return self._trigger_condition_frequency
+
+    @trigger_condition_frequency.setter
+    def trigger_condition_frequency(self, trigger_condition_frequency):
+        r"""Sets the trigger_condition_frequency of this UpdateKeywordsAlarmRuleResponse.
+
+        **参数解释：** 告警触发条件：统计周期次数。统计周期次数指高级设置的统计周期。 当在统计周期次数内且满足条件次数时，可触发关键词告警。 **取值范围：** - 最小值为1 - 最大值为10
+
+        :param trigger_condition_frequency: The trigger_condition_frequency of this UpdateKeywordsAlarmRuleResponse.
+        :type trigger_condition_frequency: int
+        """
+        self._trigger_condition_frequency = trigger_condition_frequency
+
+    @property
+    def whether_recovery_policy(self):
+        r"""Gets the whether_recovery_policy of this UpdateKeywordsAlarmRuleResponse.
+
+        **参数解释：** 是否配置告警恢复策略。满足该策略时，会发送告警恢复通知。 **取值范围：** true：配置告警恢复策略。 false：不配置告警恢复策略。
+
+        :return: The whether_recovery_policy of this UpdateKeywordsAlarmRuleResponse.
+        :rtype: bool
+        """
+        return self._whether_recovery_policy
+
+    @whether_recovery_policy.setter
+    def whether_recovery_policy(self, whether_recovery_policy):
+        r"""Sets the whether_recovery_policy of this UpdateKeywordsAlarmRuleResponse.
+
+        **参数解释：** 是否配置告警恢复策略。满足该策略时，会发送告警恢复通知。 **取值范围：** true：配置告警恢复策略。 false：不配置告警恢复策略。
+
+        :param whether_recovery_policy: The whether_recovery_policy of this UpdateKeywordsAlarmRuleResponse.
+        :type whether_recovery_policy: bool
+        """
+        self._whether_recovery_policy = whether_recovery_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -46,7 +46,7 @@ class UpdateTuningParamsResponse(SdkResponse):
         :type incre_apply: list[:class:`huaweicloudsdkdrs.v3.TuningParameter`]
         :param incre_relay: 增量日志拉取调优参数
         :type incre_relay: list[:class:`huaweicloudsdkdrs.v3.TuningParameter`]
-        :param modify_result: 参数修改是否成功
+        :param modify_result: 参数修改是否成功，查询参数时不返回该字段。
         :type modify_result: str
         """
         
@@ -162,7 +162,7 @@ class UpdateTuningParamsResponse(SdkResponse):
     def modify_result(self):
         r"""Gets the modify_result of this UpdateTuningParamsResponse.
 
-        参数修改是否成功
+        参数修改是否成功，查询参数时不返回该字段。
 
         :return: The modify_result of this UpdateTuningParamsResponse.
         :rtype: str
@@ -173,7 +173,7 @@ class UpdateTuningParamsResponse(SdkResponse):
     def modify_result(self, modify_result):
         r"""Sets the modify_result of this UpdateTuningParamsResponse.
 
-        参数修改是否成功
+        参数修改是否成功，查询参数时不返回该字段。
 
         :param modify_result: The modify_result of this UpdateTuningParamsResponse.
         :type modify_result: str

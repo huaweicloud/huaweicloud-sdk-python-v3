@@ -1,3 +1,791 @@
+# 3.1.173 2025-10-30
+
+### HuaweiCloud SDK AOS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListPrivateHookVersions`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTemplates**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+  - **ListTemplateVersions**
+    - changes of request param
+      - `+ marker`
+      - `+ limit`
+    - changes of response param
+      - `+ page_info`
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CheckUserIdentity**
+    - changes of response param
+      - `+ mobile_remain_available_num`
+  - **ListCustomerselfResourceRecords**
+    - changes of response param
+      - `+ fee_records.account_name`
+  - **ShowCustomerMonthlySum**
+    - changes of response param
+      - `+ bill_sums.account_name`
+  - **ListCustomerBillsFeeRecords**
+    - changes of response param
+      - `+ records.account_name`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.account_name`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CheckUserIdentity**
+    - changes of response param
+      - `+ mobile_remain_available_num`
+  - **ListCustomerselfResourceRecords**
+    - changes of response param
+      - `+ fee_records.account_name`
+  - **ShowCustomerMonthlySum**
+    - changes of response param
+      - `+ bill_sums.account_name`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.account_name`
+
+### HuaweiCloud SDK CBR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CopyBackup**
+    - changes of request param
+      - `+ replicate.cross_account_urn`
+  - **CopyCheckpoint**
+    - changes of request param
+      - `+ replicate.cross_account_urn`
+  - **ListPolicies**
+    - changes of response param
+      - `+ policies.operation_definition.cross_account_urn`
+  - **CreatePolicy**
+    - changes of request param
+      - `+ policy.operation_definition.cross_account_urn`
+    - changes of response param
+      - `+ policy.operation_definition.cross_account_urn`
+  - **ShowPolicy**
+    - changes of response param
+      - `+ policy.operation_definition.cross_account_urn`
+  - **UpdatePolicy**
+    - changes of request param
+      - `+ policy.operation_definition.cross_account_urn`
+    - changes of response param
+      - `+ policy.operation_definition.cross_account_urn`
+  - **ListOrganizationPolicies**
+    - changes of response param
+      - `+ policies.policy_operation_definition.cross_account_urn`
+  - **CreateOrganizationPolicy**
+    - changes of request param
+      - `+ policy.policy_operation_definition.cross_account_urn`
+    - changes of response param
+      - `+ policy.policy_operation_definition.cross_account_urn`
+  - **ShowOrganizationPolicy**
+    - changes of response param
+      - `+ policy.policy_operation_definition.cross_account_urn`
+  - **UpdateOrganizationPolicy**
+    - changes of request param
+      - `+ policy.policy_operation_definition.cross_account_urn`
+    - changes of response param
+      - `+ policy.policy_operation_definition.cross_account_urn`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateAlarmRules**
+    - changes of request param
+      - `- policies.enabled`
+      - `* policies: list<Policy> -> list<AlarmRulePolicy>`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ShowDasRecommendSqlLimitRule`, `ListAutoIncrementUsage`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DRS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `QueryTuningParams`, `SelectGroupAndStream`, `ModifyGroupAndStream`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchStartJobs**
+    - changes of request param
+      - `+ jobs.is_only_init_task`
+  - **UpdateTuningParams**
+    - changes of response param
+      - `+ full_sync.range`
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ResizeCluster**
+    - changes of request param
+      - `+ logical_cluster_name`
+  - **CheckGrowCluster**
+    - changes of request param
+      - `+ logical_cluster_name`
+
+### HuaweiCloud SDK ER
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListProjectTags**
+    - changes of response param
+      - `+ total_count`
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ModifyDataSync**
+    - changes of request param
+      - `+ is_instance_level_sync`
+      - `+ database_repl_scope`
+      - `+ is_support_reg_exp`
+  - **BatchUpgradeDatabases**
+    - changes of request param
+      - `- is_skip_validate`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ShowAutoNodeExpansionPolicy`, `ModifyAutoNodeExpansionPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRealTimeSessions**
+    - changes of response param
+      - `+ sessions.client_port`
+      - `+ sessions.query_id`
+      - `+ sessions.transaction_time_cost`
+      - `+ sessions.trace_id`
+      - `+ sessions.global_session_id`
+      - `+ sessions.top_transaction_id`
+      - `+ sessions.current_transaction_id`
+      - `+ sessions.xlog_quantity_pretty`
+      - `+ sessions.wait_status`
+      - `+ sessions.lwt_id`
+      - `+ sessions.thread_name`
+      - `+ sessions.lock_mode`
+      - `+ sessions.parent_session_id`
+      - `+ sessions.smp_id`
+      - `+ sessions.lock_tag`
+      - `+ sessions.component_name`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListSecurityCheckPolicyGroup`
+    - `CreateVpcEndpoint`
+    - `ShowEndpointStatus`
+    - `ListGlobalVulnerabilities`
+    - `ShowBackupInfoByBackupId`
+    - `ListBackedupByHostId`
+    - `ListBackupPolicy`
+    - `UpgradeAgents`
+    - `DownloadEventSourceFile`
+    - `ShowWindosVulDetail`
+    - `ListVulRepairFailedDetail`
+    - `RecreateVulScanTask`
+    - `ListVulHostVuls`
+    - `ListVulRepairCmds`
+    - `ShowCmsVulDetail`
+    - `ShowLinuxVulDetail`
+    - `ListVulHostHosts`
+    - `ShowVulAffectedStatics`
+    - `AddVulWhiteList`
+    - `ListVulWhiteListVulOptions`
+    - `ListVulWhiteList`
+    - `ListAgentDaemonsetInfo`
+    - `ShowAgentAddress`
+    - `ChangeContainerStatus`
+    - `ShowBaselineOverview`
+    - `ShowDefaultSecurityCheckPolicy`
+    - `ShowDefaultSecurityCheckPolicyDetails`
+    - `ShowCheckRuleFixFailDetail`
+    - `ListCheckRuleHost`
+    - `ShowBaselineStatistic`
+    - `RetryTask`
+    - `StopImageScanTask`
+    - `ShowImagePayPerScanStatistics`
+    - `BatchScanLocalImage`
+    - `ListLocalImageContainers`
+    - `ListLocalImageHosts`
+    - `BatchExportLocalVulTask`
+    - `ListGlobalMalware`
+    - `ShowImageSecurityReportStatistic`
+    - `ListEventOperates`
+    - `BatchChangeEvent`
+    - `ListEventType`
+    - `ListSameEvents`
+    - `ShowEventSeverity`
+    - `ListSimilarHandledEvents`
+    - `ListEventTopRisk`
+    - `SwitchDecoyPortPolicy`
+    - `ListDecoyPortAvailableHost`
+    - `AssociateHostAssetValue`
+    - `SwitchFirewallStatus`
+    - `AssociateHostsGroup`
+    - `UninstallAgents`
+    - `ListGlobalImageFiles`
+    - `ListImageSensitiveInfo`
+    - `ListImageMalware`
+    - `ListImageNonCompliantApp`
+    - `ListImageSensitive`
+    - `ListImageBuildCommandRisks`
+    - `ListImageBuildCommandRisksImages`
+    - `ListVulRepoImage`
+    - `ListGlobalImageApps`
+    - `BatchExportBaselineTask`
+    - `ListUrgentVulnerabilities`
+    - `ValidateAdmin`
+    - `ListHostCheckRules`
+    - `ListAllRiskConfigCheckRules`
+    - `ShowVulScanTaskEstimatedTime`
+    - `ShowExtendedWeakPassword`
+    - `ChangeExtendedWeakPassword`
+    - `ListImagePwdComplexity`
+    - `ShowImageBaselineStatistic`
+    - `ListImageWeakPwdUsers`
+    - `ListLocalImageAppInfo`
+    - `SendSecurityReport`
+    - `ListTrustServiceStatus`
+    - `EnableTrustService`
+    - `ChangeHostIgnoreStatus`
+    - `ShowVulWhiteListDetail`
+    - `ChangeVulWhiteList`
+    - `DeleteDuplicationInfo`
+    - `ShowExportTask`
+    - `ListEventForensic`
+    - `ExportEventRequest`
+    - `ShowScanStatus`
+    - `SetManualDetect`
+    - `ModifyLoginWhiteIp`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAssetStatistic**
+    - changes of request param
+      - `* category: optional -> required`
+  - **ShowCommonPort**
+    - changes of request param
+      - `+ category`
+      - `- categoty`
+  - **ListVulHostApps**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListVulHostBackups**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListAppStatistics**
+    - changes of request param
+      - `* category: optional -> required`
+  - **ListAutoLaunchStatistics**
+    - changes of request param
+      - `+ category`
+  - **ListUserStatistics**
+    - changes of request param
+      - `* category: optional -> required`
+  - **ListRiskConfigs**
+    - changes of response param
+      - `+ data_list.baseline_name`
+      - `+ data_list.key`
+  - **BatchDeleteTags**
+    - changes of request param
+      - `* body: object<BatchDeleteTagsRequestBody> -> object<BatchDeleteTagsRequestInfo>`
+  - **ListWebFrameworkHostInfo**
+    - changes of response param
+      - `+ data_list.container_id`
+      - `+ data_list.container_name`
+      - `- data_list.file_size`
+      - `- data_list.bind_ip_list`
+      - `- data_list.connected_ip_list`
+      - `- data_list.connected_number`
+      - `- data_list.embedder_dir`
+      - `- data_list.listen_port_list`
+      - `* data_list.uid: string -> int32`
+  - **ListWebSiteStatistics**
+    - changes of request param
+      - `+ category`
+  - **ListWebAppAndServiceStatistics**
+    - changes of request param
+      - `* name: required -> optional`
+  - **ListWebSiteInfo**
+    - changes of response param
+      - `* data_list.cert_user: int32 -> string`
+  - **ListImageFiles**
+    - changes of request param
+      - `- region`
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListWatermarkTemplate`
+    - `CreateWatermarkTemplate`
+    - `ShowWatermarkTemplate`
+    - `UpdateWatermarkTemplate`
+    - `DeleteWatermarkTemplate`
+    - `ListWatermarkRule`
+    - `CreateWatermarkRule`
+    - `ShowWatermarkRule`
+    - `UpdateWatermarkRule`
+    - `DeleteWatermarkRule`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ModifyOttChannelInfoEndPoints**
+    - changes of request param
+      - `+ endpoints.dash_package.enable_access`
+      - `+ endpoints.dash_package.allow_all_ip_access`
+      - `+ endpoints.dash_package.ip_whitelist`
+      - `+ endpoints.dash_package.cdn_identifier_header`
+      - `+ endpoints.dash_package.origin_domain_master`
+      - `+ endpoints.dash_package.origin_domain_slave`
+      - `+ endpoints.dash_package.manifest_name`
+      - `+ endpoints.dash_package.slave_url`
+      - `+ endpoints.mss_package.enable_access`
+      - `+ endpoints.mss_package.allow_all_ip_access`
+      - `+ endpoints.mss_package.ip_whitelist`
+      - `+ endpoints.mss_package.cdn_identifier_header`
+      - `+ endpoints.mss_package.origin_domain_master`
+      - `+ endpoints.mss_package.origin_domain_slave`
+      - `+ endpoints.mss_package.manifest_name`
+      - `+ endpoints.mss_package.slave_url`
+      - `+ endpoints.hls_package.enable_access`
+      - `+ endpoints.hls_package.allow_all_ip_access`
+      - `+ endpoints.hls_package.ip_whitelist`
+      - `+ endpoints.hls_package.cdn_identifier_header`
+      - `+ endpoints.hls_package.origin_domain_master`
+      - `+ endpoints.hls_package.origin_domain_slave`
+      - `+ endpoints.hls_package.manifest_name`
+      - `+ endpoints.hls_package.slave_url`
+  - **CreateOttChannelInfo**
+    - changes of request param
+      - `+ endpoints.dash_package.enable_access`
+      - `+ endpoints.dash_package.allow_all_ip_access`
+      - `+ endpoints.dash_package.ip_whitelist`
+      - `+ endpoints.dash_package.cdn_identifier_header`
+      - `+ endpoints.dash_package.origin_domain_master`
+      - `+ endpoints.dash_package.origin_domain_slave`
+      - `+ endpoints.dash_package.manifest_name`
+      - `+ endpoints.dash_package.slave_url`
+      - `+ endpoints.mss_package.enable_access`
+      - `+ endpoints.mss_package.allow_all_ip_access`
+      - `+ endpoints.mss_package.ip_whitelist`
+      - `+ endpoints.mss_package.cdn_identifier_header`
+      - `+ endpoints.mss_package.origin_domain_master`
+      - `+ endpoints.mss_package.origin_domain_slave`
+      - `+ endpoints.mss_package.manifest_name`
+      - `+ endpoints.mss_package.slave_url`
+      - `+ endpoints.hls_package.enable_access`
+      - `+ endpoints.hls_package.allow_all_ip_access`
+      - `+ endpoints.hls_package.ip_whitelist`
+      - `+ endpoints.hls_package.cdn_identifier_header`
+      - `+ endpoints.hls_package.origin_domain_master`
+      - `+ endpoints.hls_package.origin_domain_slave`
+      - `+ endpoints.hls_package.manifest_name`
+      - `+ endpoints.hls_package.slave_url`
+  - **ListOttChannelInfo**
+    - changes of response param
+      - `+ channels.endpoints.dash_package.enable_access`
+      - `+ channels.endpoints.dash_package.allow_all_ip_access`
+      - `+ channels.endpoints.dash_package.ip_whitelist`
+      - `+ channels.endpoints.dash_package.cdn_identifier_header`
+      - `+ channels.endpoints.dash_package.origin_domain_master`
+      - `+ channels.endpoints.dash_package.origin_domain_slave`
+      - `+ channels.endpoints.dash_package.manifest_name`
+      - `+ channels.endpoints.dash_package.slave_url`
+      - `+ channels.endpoints.mss_package.enable_access`
+      - `+ channels.endpoints.mss_package.allow_all_ip_access`
+      - `+ channels.endpoints.mss_package.ip_whitelist`
+      - `+ channels.endpoints.mss_package.cdn_identifier_header`
+      - `+ channels.endpoints.mss_package.origin_domain_master`
+      - `+ channels.endpoints.mss_package.origin_domain_slave`
+      - `+ channels.endpoints.mss_package.manifest_name`
+      - `+ channels.endpoints.mss_package.slave_url`
+      - `+ channels.endpoints.hls_package.enable_access`
+      - `+ channels.endpoints.hls_package.allow_all_ip_access`
+      - `+ channels.endpoints.hls_package.ip_whitelist`
+      - `+ channels.endpoints.hls_package.cdn_identifier_header`
+      - `+ channels.endpoints.hls_package.origin_domain_master`
+      - `+ channels.endpoints.hls_package.origin_domain_slave`
+      - `+ channels.endpoints.hls_package.manifest_name`
+      - `+ channels.endpoints.hls_package.slave_url`
+
+### HuaweiCloud SDK LTS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListLogStreams**
+    - changes of response param
+      - `+ log_streams.is_favorite`
+  - **CreateDashBoard**
+    - changes of response param
+      - `+ concise_mode_enable`
+      - `+ tags`
+  - **ShowStructTemplate**
+    - changes of response param
+      - `+ uploadParseFailedLog`
+      - `+ uploadOriginalLog`
+      - `+ custom_time_info`
+  - **ShowNotificationTemplate**
+    - changes of response param
+      - `+ templates.sendType`
+      - `+ templates.version`
+  - **ListTopnTrafficStatistics**
+    - changes of response param
+      - `+ results.log_group_name_alias`
+      - `+ results.log_stream_name_alias`
+  - **ListSqlAlarmRules**
+    - changes of response param
+      - `+ sql_alarm_rules.tags`
+      - `- sql_alarm_rules.sql_alarm_send`
+      - `- sql_alarm_rules.sql_requests.is_time_range_relative`
+  - **UpdateSqlAlarmRule**
+    - changes of request param
+      - `- sql_requests.is_time_range_relative`
+    - changes of response param
+      - `- sql_requests.is_time_range_relative`
+  - **CreateSqlAlarmRule**
+    - changes of request param
+      - `- sql_requests.is_time_range_relative`
+  - **UpdateKeywordsAlarmRule**
+    - changes of response param
+      - `+ recovery_policy`
+      - `+ tags`
+      - `+ trigger_condition_count`
+      - `+ trigger_condition_frequency`
+      - `+ whether_recovery_policy`
+      - `- topics`
+      - `- language`
+      - `- indexId`
+  - **ListActiveOrHistoryAlarms**
+    - changes of response param
+      - `+ events.annotations.alarm_action_rule_name`
+      - `+ events.annotations.alarm_rule_alias`
+      - `+ events.annotations.alarm_rule_url`
+      - `+ events.annotations.alarm_status`
+      - `+ events.annotations.condition_expression`
+      - `+ events.annotations.condition_expression_with_value`
+      - `+ events.annotations.notification_frequency`
+      - `+ events.annotations.record_id`
+      - `+ events.annotations.recovery_policy`
+      - `+ events.annotations.results`
+      - `+ events.annotations.frequency`
+      - `+ events.annotations.type`
+      - `+ events.metadata.event_subtype`
+  - **DeleteActiveAlarms**
+    - changes of request param
+      - `+ events.metadata.event_subtype`
+  - **UpdateTransfer**
+    - changes of request param
+      - `- log_transfer_info.log_transfer_detail.obs_transfer_path`
+      - `- log_transfer_info.log_transfer_detail.obs_period: enum value [1,2,3,5,6,12,30]`
+      - `* log_transfer_info.log_transfer_detail: object<TransferDetail> -> object<LogTransferDetail>`
+    - changes of response param
+      - `- log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfer_info.log_transfer_detail.lts_tags`
+      - `- log_transfer_info.log_transfer_detail.stream_tags`
+      - `- log_transfer_info.log_transfer_detail.struct_fields`
+      - `- log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **CreateTransfer**
+    - changes of request param
+      - `- log_transfer_info.log_transfer_detail.obs_transfer_path`
+      - `- log_transfer_info.log_transfer_detail.obs_period: enum value [1,2,3,5,6,12,30]`
+      - `* log_transfer_info.log_transfer_detail: object<TransferDetail> -> object<LogTransferDetail>`
+    - changes of response param
+      - `- log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfer_info.log_transfer_detail.lts_tags`
+      - `- log_transfer_info.log_transfer_detail.stream_tags`
+      - `- log_transfer_info.log_transfer_detail.struct_fields`
+      - `- log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **DeleteTransfer**
+    - changes of response param
+      - `- log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfer_info.log_transfer_detail.lts_tags`
+      - `- log_transfer_info.log_transfer_detail.stream_tags`
+      - `- log_transfer_info.log_transfer_detail.struct_fields`
+      - `- log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **ListTransfers**
+    - changes of response param
+      - `- log_transfers.log_transfer_info.log_transfer_detail.obs_eps_id`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.lts_tags`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.stream_tags`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.struct_fields`
+      - `- log_transfers.log_transfer_info.log_transfer_detail.invalid_field_value`
+  - **UpdateNotificationTemplate**
+    - changes of request param
+      - `+ templates.sendType`
+      - `+ templates.version`
+    - changes of response param
+      - `+ templates.sendType`
+      - `+ templates.version`
+  - **CreateNotificationTemplate**
+    - changes of request param
+      - `+ templates.sendType`
+      - `+ templates.version`
+    - changes of response param
+      - `- locale: enum value [zh-cn,en-us]`
+      - `+ templates.sendType`
+      - `+ templates.version`
+      - `- templates.sub_type: enum value [sms,dingding,wechat,webhook,email]`
+      - `* templates: list<SubTemplate> -> list<SubTemplateResBody>`
+  - **ListNotificationTemplates**
+    - changes of response param
+      - `+ results.templates.sendType`
+      - `+ results.templates.version`
+  - **UpdateHostGroup**
+    - changes of response param
+      - `+ agent_access_type`
+      - `+ labels`
+  - **CreateHostGroup**
+    - changes of response param
+      - `+ agent_access_type`
+      - `+ labels`
+  - **DeleteHostGroup**
+    - changes of response param
+      - `+ agent_access_type`
+      - `+ labels`
+      - `+ result.agent_access_type`
+      - `+ result.labels`
+  - **ListQueryAllSearchCriterias**
+    - changes of response param
+      - `+ search_criterias.search_type`
+  - **CreateLogStreamIndex**
+    - changes of response param
+      - `- isQueryComplete`
+  - **ListHostGroup**
+    - changes of response param
+      - `+ agent_access_type`
+      - `+ labels`
+      - `+ result.agent_access_type`
+      - `+ result.labels`
+  - **ListAccessConfig**
+    - changes of response param
+      - `+ recursive_depth`
+      - `+ log_split_size`
+      - `+ access_config_type_source`
+      - `+ result.log_split_size`
+      - `+ result.recursive_depth`
+      - `+ result.access_config_type_source`
+  - **UpdateAccessConfig**
+    - changes of response param
+      - `+ recursive_depth`
+      - `+ log_split_size`
+      - `+ access_config_type_source`
+  - **CreateAccessConfig**
+    - changes of response param
+      - `+ recursive_depth`
+      - `+ log_split_size`
+      - `+ access_config_type_source`
+  - **DeleteAccessConfig**
+    - changes of response param
+      - `+ recursive_depth`
+      - `+ log_split_size`
+      - `+ access_config_type_source`
+      - `+ result.log_split_size`
+      - `+ result.recursive_depth`
+      - `+ result.access_config_type_source`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ListSmallVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ListInstanceTags`
+    - `ConfirmThreatMap`
+    - `ListIpReputationRules`
+    - `CreateIpReputationRule`
+    - `ConfirmIpReputationRule`
+    - `UpdateIpReputationRule`
+    - `DeleteIpReputationRule`
+    - `ConfirmPolicyAntileakageMap`
+    - `ConfirmPolicyIpReputationMap`
+    - `UpdatePremiumInstance`
+    - `ListProtectableResources`
+    - `UpdateBotMRuleDefenseStrategy`
+    - `BatchUpdateBotMRuleAction`
+    - `BatchDeleteRules`
+    - `CreateEventExportJob`
+    - `CreateAlertNoticeConfig`
+    - `ShowWebProtectionRule`
+    - `CreateQuickAccessDomain`
+    - `ListCcPolicyRules`
+    - `BatchCreateCcRule`
+    - `ListCustomPolicyRules`
+    - `BatchCreateCustomRule`
+    - `ListWhiteblackipPolicyRules`
+    - `BatchCreateWhiteblackipRule`
+    - `ListPrivacyPolicyRules`
+    - `BatchCreatePrivacyRule`
+    - `ListGeoIpPolicyRules`
+    - `BatchCreateGeoIpRule`
+    - `ListIgnorePolicyRules`
+    - `BatchCreateIgnoreRule`
+    - `ListAntiTamperPolicyRules`
+    - `BatchCreateAntiTamperRule`
+    - `ListAntileakagePolicyRules`
+    - `BatchCreateAntileakageRule`
+    - `ListIpReputationPolicyRules`
+    - `BatchCreateIpReputationRule`
+    - `ListLlmGuardPolicyRules`
+    - `ListResponseCodeTimeline`
+    - `ListBotMTopnRequest`
+    - `ListBotMRequestDistribution`
+    - `ListBotMTimeline`
+    - `ListBotMScoreDistribution`
+    - `ShowSecurityReportContent`
+    - `ListSecurityReportSendingRecords`
+    - `CopyPolicyById`
+    - `ListBotMRules`
+    - `ShowSecurityReportSubscription`
+    - `UpdateSecurityReportSubscription`
+    - `DeleteSecurityReportSubscription`
+    - `BatchDeleteCompositeHosts`
+    - `ListSecurityReportHistoryPeriods`
+    - `UpdateBotMCategoryStatus`
+    - `BatchUpdateProtectStatus`
+    - `ConfirmApplicationTypes`
+    - `ConfirmDnsDomain`
+    - `ConfirmProtectionTypes`
+    - `UpdatePremiumInstanceProgress`
+    - `CreateBotMTrafficDetectionCondition`
+    - `UpdateBotMTrafficDetectionCondition`
+    - `DeleteBotMTrafficDetectionCondition`
+    - `CheckAgency`
+    - `CreateAgency`
+    - `DeleteAgency`
+    - `BatchDeleteAlertNoticeConfig`
+    - `ConfirmAsyncJob`
+    - `BatchUpdateBotMRuleStatus`
+    - `BatchUpdateGeoipRules`
+    - `BatchUpdateCcRules`
+    - `BatchUpdateCustomRules`
+    - `BatchUpdateWhiteblackipRules`
+    - `BatchUpdateIpReputationRules`
+    - `BatchUpdateAntitamperRules`
+    - `BatchUpdateAntileakageRules`
+    - `BatchUpdateIgnoreRules`
+    - `BatchUpdatePrivacyRules`
+    - `DeleteAlertNoticeConfig`
+    - `CreateSecurityReportSubscription`
+  - **CreateAntileakageRule**
+    - changes of response param
+      - `+ description`
+      - `+ action`
+  - **ListAntileakageRules**
+    - changes of response param
+      - `+ items.action`
+  - **CreateGeoipRule**
+    - changes of response param
+      - `+ description`
+      - `+ ip_type`
+  - **CreateIgnoreRule**
+    - changes of response param
+      - `+ producer`
+      - `+ multiCondition`
+
 # 3.1.172 2025-10-23
 
 ### HuaweiCloud SDK AOM

@@ -31,9 +31,9 @@ class AccessProgress:
 
         The model defined in huaweicloud sdk
 
-        :param step: **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param step: **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** - 1 : 回源IP加白步骤 - 2 : 本地验证步骤 - 3 : 修改DNS解析步骤 **默认取值：** 不涉及
         :type step: int
-        :param status: **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param status: **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** - 0:未完成 - 1:完成 - 2:跳过 **默认取值：** 不涉及
         :type status: int
         """
         
@@ -52,7 +52,7 @@ class AccessProgress:
     def step(self):
         r"""Gets the step of this AccessProgress.
 
-        **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** - 1 : 回源IP加白步骤 - 2 : 本地验证步骤 - 3 : 修改DNS解析步骤 **默认取值：** 不涉及
 
         :return: The step of this AccessProgress.
         :rtype: int
@@ -63,7 +63,7 @@ class AccessProgress:
     def step(self, step):
         r"""Sets the step of this AccessProgress.
 
-        **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** - 1 : 回源IP加白步骤 - 2 : 本地验证步骤 - 3 : 修改DNS解析步骤 **默认取值：** 不涉及
 
         :param step: The step of this AccessProgress.
         :type step: int
@@ -74,7 +74,7 @@ class AccessProgress:
     def status(self):
         r"""Gets the status of this AccessProgress.
 
-        **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** - 0:未完成 - 1:完成 - 2:跳过 **默认取值：** 不涉及
 
         :return: The status of this AccessProgress.
         :rtype: int
@@ -85,7 +85,7 @@ class AccessProgress:
     def status(self, status):
         r"""Sets the status of this AccessProgress.
 
-        **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** - 0:未完成 - 1:完成 - 2:跳过 **默认取值：** 不涉及
 
         :param status: The status of this AccessProgress.
         :type status: int

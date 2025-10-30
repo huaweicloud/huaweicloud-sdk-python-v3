@@ -17,7 +17,6 @@ class SqlRequest:
     sensitive_list = []
 
     openapi_types = {
-        'is_time_range_relative': 'bool',
         'log_stream_id': 'str',
         'log_stream_name': 'str',
         'log_group_id': 'str',
@@ -29,7 +28,6 @@ class SqlRequest:
     }
 
     attribute_map = {
-        'is_time_range_relative': 'is_time_range_relative',
         'log_stream_id': 'log_stream_id',
         'log_stream_name': 'log_stream_name',
         'log_group_id': 'log_group_id',
@@ -40,13 +38,11 @@ class SqlRequest:
         'search_time_range_unit': 'search_time_range_unit'
     }
 
-    def __init__(self, is_time_range_relative=None, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, sql=None, sql_request_title=None, search_time_range=None, search_time_range_unit=None):
+    def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, sql=None, sql_request_title=None, search_time_range=None, search_time_range_unit=None):
         r"""SqlRequest
 
         The model defined in huaweicloud sdk
 
-        :param is_time_range_relative: 是时间范围相对
-        :type is_time_range_relative: bool
         :param log_stream_id: 日志流id
         :type log_stream_id: str
         :param log_stream_name: 日志流名称
@@ -67,7 +63,6 @@ class SqlRequest:
         
         
 
-        self._is_time_range_relative = None
         self._log_stream_id = None
         self._log_stream_name = None
         self._log_group_id = None
@@ -78,8 +73,6 @@ class SqlRequest:
         self._search_time_range_unit = None
         self.discriminator = None
 
-        if is_time_range_relative is not None:
-            self.is_time_range_relative = is_time_range_relative
         self.log_stream_id = log_stream_id
         if log_stream_name is not None:
             self.log_stream_name = log_stream_name
@@ -90,28 +83,6 @@ class SqlRequest:
         self.sql_request_title = sql_request_title
         self.search_time_range = search_time_range
         self.search_time_range_unit = search_time_range_unit
-
-    @property
-    def is_time_range_relative(self):
-        r"""Gets the is_time_range_relative of this SqlRequest.
-
-        是时间范围相对
-
-        :return: The is_time_range_relative of this SqlRequest.
-        :rtype: bool
-        """
-        return self._is_time_range_relative
-
-    @is_time_range_relative.setter
-    def is_time_range_relative(self, is_time_range_relative):
-        r"""Sets the is_time_range_relative of this SqlRequest.
-
-        是时间范围相对
-
-        :param is_time_range_relative: The is_time_range_relative of this SqlRequest.
-        :type is_time_range_relative: bool
-        """
-        self._is_time_range_relative = is_time_range_relative
 
     @property
     def log_stream_id(self):

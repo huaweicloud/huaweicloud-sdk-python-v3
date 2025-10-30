@@ -31,9 +31,9 @@ class ConfigurationPrimitiveTypeHolderConfiguration:
 
         The model defined in huaweicloud sdk
 
-        :param target_stacks: 指定私有hook生效的目标资源栈，有效值为NONE或ALL。  NONE：指定此私有hook不会作用于任何资源栈 ALL：指定此私有hook将会应用于账号下的所有资源栈
+        :param target_stacks: 指定私有hook生效的目标资源栈，有效值为NONE或ALL，默认值为NONE。  NONE：指定此私有hook不会作用于任何资源栈 ALL：指定此私有hook将会应用于账号下的所有资源栈
         :type target_stacks: str
-        :param failure_mode: 指定私有hook校验失败后的行为，有效值为FAIL或WARN。  FAIL：指定此私有hook校验失败后资源栈将停止部署，资源栈状态将更新为DEPLOYMENT_FAILED。 WARN：指定此私有hook校验失败后仅通过资源栈事件展示警告消息，但不影响资源栈部署。
+        :param failure_mode: 指定私有hook校验失败后的行为，有效值为FAIL或WARN，默认值为WARN。  FAIL：指定此私有hook校验失败后资源栈将停止部署，资源栈状态将更新为DEPLOYMENT_FAILED。 WARN：指定此私有hook校验失败后仅通过资源栈事件展示警告消息，但不影响资源栈部署。
         :type failure_mode: str
         """
         
@@ -52,7 +52,7 @@ class ConfigurationPrimitiveTypeHolderConfiguration:
     def target_stacks(self):
         r"""Gets the target_stacks of this ConfigurationPrimitiveTypeHolderConfiguration.
 
-        指定私有hook生效的目标资源栈，有效值为NONE或ALL。  NONE：指定此私有hook不会作用于任何资源栈 ALL：指定此私有hook将会应用于账号下的所有资源栈
+        指定私有hook生效的目标资源栈，有效值为NONE或ALL，默认值为NONE。  NONE：指定此私有hook不会作用于任何资源栈 ALL：指定此私有hook将会应用于账号下的所有资源栈
 
         :return: The target_stacks of this ConfigurationPrimitiveTypeHolderConfiguration.
         :rtype: str
@@ -63,7 +63,7 @@ class ConfigurationPrimitiveTypeHolderConfiguration:
     def target_stacks(self, target_stacks):
         r"""Sets the target_stacks of this ConfigurationPrimitiveTypeHolderConfiguration.
 
-        指定私有hook生效的目标资源栈，有效值为NONE或ALL。  NONE：指定此私有hook不会作用于任何资源栈 ALL：指定此私有hook将会应用于账号下的所有资源栈
+        指定私有hook生效的目标资源栈，有效值为NONE或ALL，默认值为NONE。  NONE：指定此私有hook不会作用于任何资源栈 ALL：指定此私有hook将会应用于账号下的所有资源栈
 
         :param target_stacks: The target_stacks of this ConfigurationPrimitiveTypeHolderConfiguration.
         :type target_stacks: str
@@ -74,7 +74,7 @@ class ConfigurationPrimitiveTypeHolderConfiguration:
     def failure_mode(self):
         r"""Gets the failure_mode of this ConfigurationPrimitiveTypeHolderConfiguration.
 
-        指定私有hook校验失败后的行为，有效值为FAIL或WARN。  FAIL：指定此私有hook校验失败后资源栈将停止部署，资源栈状态将更新为DEPLOYMENT_FAILED。 WARN：指定此私有hook校验失败后仅通过资源栈事件展示警告消息，但不影响资源栈部署。
+        指定私有hook校验失败后的行为，有效值为FAIL或WARN，默认值为WARN。  FAIL：指定此私有hook校验失败后资源栈将停止部署，资源栈状态将更新为DEPLOYMENT_FAILED。 WARN：指定此私有hook校验失败后仅通过资源栈事件展示警告消息，但不影响资源栈部署。
 
         :return: The failure_mode of this ConfigurationPrimitiveTypeHolderConfiguration.
         :rtype: str
@@ -85,7 +85,7 @@ class ConfigurationPrimitiveTypeHolderConfiguration:
     def failure_mode(self, failure_mode):
         r"""Sets the failure_mode of this ConfigurationPrimitiveTypeHolderConfiguration.
 
-        指定私有hook校验失败后的行为，有效值为FAIL或WARN。  FAIL：指定此私有hook校验失败后资源栈将停止部署，资源栈状态将更新为DEPLOYMENT_FAILED。 WARN：指定此私有hook校验失败后仅通过资源栈事件展示警告消息，但不影响资源栈部署。
+        指定私有hook校验失败后的行为，有效值为FAIL或WARN，默认值为WARN。  FAIL：指定此私有hook校验失败后资源栈将停止部署，资源栈状态将更新为DEPLOYMENT_FAILED。 WARN：指定此私有hook校验失败后仅通过资源栈事件展示警告消息，但不影响资源栈部署。
 
         :param failure_mode: The failure_mode of this ConfigurationPrimitiveTypeHolderConfiguration.
         :type failure_mode: str

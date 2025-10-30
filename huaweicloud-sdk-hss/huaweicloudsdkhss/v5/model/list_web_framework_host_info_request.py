@@ -49,15 +49,15 @@ class ListWebFrameworkHostInfoRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param category: 返回的资产类别 - 0: 主机 - 1: 容器
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
         :type category: str
-        :param file_name: 文件名称
+        :param file_name: **参数解释**: 文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
         :type file_name: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_ip: 服务器IP
+        :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
         :type host_ip: str
-        :param part_match: 是否模糊匹配，默认false表示精确匹配
+        :param part_match: **参数解释**: 是否模糊匹配，默认false表示精确匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
         :type part_match: bool
         """
         
@@ -159,7 +159,7 @@ class ListWebFrameworkHostInfoRequest:
     def category(self):
         r"""Gets the category of this ListWebFrameworkHostInfoRequest.
 
-        返回的资产类别 - 0: 主机 - 1: 容器
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :return: The category of this ListWebFrameworkHostInfoRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListWebFrameworkHostInfoRequest:
     def category(self, category):
         r"""Sets the category of this ListWebFrameworkHostInfoRequest.
 
-        返回的资产类别 - 0: 主机 - 1: 容器
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :param category: The category of this ListWebFrameworkHostInfoRequest.
         :type category: str
@@ -181,7 +181,7 @@ class ListWebFrameworkHostInfoRequest:
     def file_name(self):
         r"""Gets the file_name of this ListWebFrameworkHostInfoRequest.
 
-        文件名称
+        **参数解释**: 文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :return: The file_name of this ListWebFrameworkHostInfoRequest.
         :rtype: str
@@ -192,7 +192,7 @@ class ListWebFrameworkHostInfoRequest:
     def file_name(self, file_name):
         r"""Sets the file_name of this ListWebFrameworkHostInfoRequest.
 
-        文件名称
+        **参数解释**: 文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256 **默认取值**: 不涉及 
 
         :param file_name: The file_name of this ListWebFrameworkHostInfoRequest.
         :type file_name: str
@@ -203,7 +203,7 @@ class ListWebFrameworkHostInfoRequest:
     def host_name(self):
         r"""Gets the host_name of this ListWebFrameworkHostInfoRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :return: The host_name of this ListWebFrameworkHostInfoRequest.
         :rtype: str
@@ -214,7 +214,7 @@ class ListWebFrameworkHostInfoRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListWebFrameworkHostInfoRequest.
 
-        服务器名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListWebFrameworkHostInfoRequest.
         :type host_name: str
@@ -225,7 +225,7 @@ class ListWebFrameworkHostInfoRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListWebFrameworkHostInfoRequest.
 
-        服务器IP
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListWebFrameworkHostInfoRequest.
         :rtype: str
@@ -236,7 +236,7 @@ class ListWebFrameworkHostInfoRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListWebFrameworkHostInfoRequest.
 
-        服务器IP
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度0-64 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListWebFrameworkHostInfoRequest.
         :type host_ip: str
@@ -247,7 +247,7 @@ class ListWebFrameworkHostInfoRequest:
     def part_match(self):
         r"""Gets the part_match of this ListWebFrameworkHostInfoRequest.
 
-        是否模糊匹配，默认false表示精确匹配
+        **参数解释**: 是否模糊匹配，默认false表示精确匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
 
         :return: The part_match of this ListWebFrameworkHostInfoRequest.
         :rtype: bool
@@ -258,7 +258,7 @@ class ListWebFrameworkHostInfoRequest:
     def part_match(self, part_match):
         r"""Sets the part_match of this ListWebFrameworkHostInfoRequest.
 
-        是否模糊匹配，默认false表示精确匹配
+        **参数解释**: 是否模糊匹配，默认false表示精确匹配 **约束限制**: 不涉及 **取值范围**: - true：模糊匹配 - false：精确匹配  **默认取值**: false 
 
         :param part_match: The part_match of this ListWebFrameworkHostInfoRequest.
         :type part_match: bool

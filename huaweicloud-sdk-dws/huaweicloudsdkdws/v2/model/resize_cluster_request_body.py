@@ -18,6 +18,7 @@ class ResizeClusterRequestBody:
 
     openapi_types = {
         'scale_out': 'ScaleOut',
+        'logical_cluster_name': 'str',
         'create_node_only': 'bool',
         'waiting_for_killing': 'int',
         'auto_redistribute': 'bool'
@@ -25,18 +26,21 @@ class ResizeClusterRequestBody:
 
     attribute_map = {
         'scale_out': 'scale_out',
+        'logical_cluster_name': 'logical_cluster_name',
         'create_node_only': 'create_node_only',
         'waiting_for_killing': 'waiting_for_killing',
         'auto_redistribute': 'auto_redistribute'
     }
 
-    def __init__(self, scale_out=None, create_node_only=None, waiting_for_killing=None, auto_redistribute=None):
+    def __init__(self, scale_out=None, logical_cluster_name=None, create_node_only=None, waiting_for_killing=None, auto_redistribute=None):
         r"""ResizeClusterRequestBody
 
         The model defined in huaweicloud sdk
 
         :param scale_out: 
         :type scale_out: :class:`huaweicloudsdkdws.v2.ScaleOut`
+        :param logical_cluster_name: **参数解释**： 逻辑集群名字，扩容到逻辑集群时，需要填写。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type logical_cluster_name: str
         :param create_node_only: **参数解释**： 当前是否仅添加空闲节点。 **约束限制**： 不涉及。 **取值范围**： true：仅添加节点，如需扩容则需要单独操作 false：添加节点并扩容集群 **默认取值**： false
         :type create_node_only: bool
         :param waiting_for_killing: **参数解释**： 自动查杀作业等待时间。 **约束限制**： guestAgent插件版本8.2.1及以上才支持。 **取值范围**： 30~1200 **默认取值**： 0，即不限制。
@@ -48,12 +52,15 @@ class ResizeClusterRequestBody:
         
 
         self._scale_out = None
+        self._logical_cluster_name = None
         self._create_node_only = None
         self._waiting_for_killing = None
         self._auto_redistribute = None
         self.discriminator = None
 
         self.scale_out = scale_out
+        if logical_cluster_name is not None:
+            self.logical_cluster_name = logical_cluster_name
         if create_node_only is not None:
             self.create_node_only = create_node_only
         if waiting_for_killing is not None:
@@ -78,6 +85,28 @@ class ResizeClusterRequestBody:
         :type scale_out: :class:`huaweicloudsdkdws.v2.ScaleOut`
         """
         self._scale_out = scale_out
+
+    @property
+    def logical_cluster_name(self):
+        r"""Gets the logical_cluster_name of this ResizeClusterRequestBody.
+
+        **参数解释**： 逻辑集群名字，扩容到逻辑集群时，需要填写。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The logical_cluster_name of this ResizeClusterRequestBody.
+        :rtype: str
+        """
+        return self._logical_cluster_name
+
+    @logical_cluster_name.setter
+    def logical_cluster_name(self, logical_cluster_name):
+        r"""Sets the logical_cluster_name of this ResizeClusterRequestBody.
+
+        **参数解释**： 逻辑集群名字，扩容到逻辑集群时，需要填写。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param logical_cluster_name: The logical_cluster_name of this ResizeClusterRequestBody.
+        :type logical_cluster_name: str
+        """
+        self._logical_cluster_name = logical_cluster_name
 
     @property
     def create_node_only(self):

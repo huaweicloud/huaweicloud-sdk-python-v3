@@ -37,7 +37,7 @@ class CloseProtectionInfoRequestInfo:
         :type host_id_list: list[str]
         :param agent_id_list: **参数解释**: 需要关闭勒索防护的agentID列表，您可以通过[查询勒索防护服务器列表](ListProtectionServer.xml)接口获取AgentID。 **约束限制**: 不涉及 **取值范围**: 列表条数0-64 **默认取值**: 不涉及 
         :type agent_id_list: list[str]
-        :param close_protection_type: **参数解释**: 关闭防护类型  **约束限制**: 不涉及 **取值范围**: - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。 **默认取值**: 不涉及
+        :param close_protection_type: **参数解释**: 关闭防护类型 **约束限制**: 不涉及 **取值范围**: - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。 **默认取值**: 不涉及
         :type close_protection_type: str
         """
         
@@ -100,7 +100,7 @@ class CloseProtectionInfoRequestInfo:
     def close_protection_type(self):
         r"""Gets the close_protection_type of this CloseProtectionInfoRequestInfo.
 
-        **参数解释**: 关闭防护类型  **约束限制**: 不涉及 **取值范围**: - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。 **默认取值**: 不涉及
+        **参数解释**: 关闭防护类型 **约束限制**: 不涉及 **取值范围**: - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。 **默认取值**: 不涉及
 
         :return: The close_protection_type of this CloseProtectionInfoRequestInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class CloseProtectionInfoRequestInfo:
     def close_protection_type(self, close_protection_type):
         r"""Sets the close_protection_type of this CloseProtectionInfoRequestInfo.
 
-        **参数解释**: 关闭防护类型  **约束限制**: 不涉及 **取值范围**: - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。 **默认取值**: 不涉及
+        **参数解释**: 关闭防护类型 **约束限制**: 不涉及 **取值范围**: - close_anti : 关闭勒索防护；暂不支持关闭备份防护，若需要解绑存储库，请前往cbr服务进行操作。 **默认取值**: 不涉及
 
         :param close_protection_type: The close_protection_type of this CloseProtectionInfoRequestInfo.
         :type close_protection_type: str

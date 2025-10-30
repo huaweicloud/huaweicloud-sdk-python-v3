@@ -30,7 +30,7 @@ class CreateGlobalAssetScanTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param error: 失败原因
+        :param error: **参数解释** 失败原因 **取值范围** 字符长度1-256 
         :type error: str
         """
         
@@ -46,7 +46,7 @@ class CreateGlobalAssetScanTaskResponse(SdkResponse):
     def error(self):
         r"""Gets the error of this CreateGlobalAssetScanTaskResponse.
 
-        失败原因
+        **参数解释** 失败原因 **取值范围** 字符长度1-256 
 
         :return: The error of this CreateGlobalAssetScanTaskResponse.
         :rtype: str
@@ -57,7 +57,7 @@ class CreateGlobalAssetScanTaskResponse(SdkResponse):
     def error(self, error):
         r"""Sets the error of this CreateGlobalAssetScanTaskResponse.
 
-        失败原因
+        **参数解释** 失败原因 **取值范围** 字符长度1-256 
 
         :param error: The error of this CreateGlobalAssetScanTaskResponse.
         :type error: str

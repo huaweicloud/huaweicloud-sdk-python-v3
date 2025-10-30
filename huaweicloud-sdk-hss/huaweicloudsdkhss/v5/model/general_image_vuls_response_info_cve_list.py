@@ -31,9 +31,9 @@ class GeneralImageVulsResponseInfoCveList:
 
         The model defined in huaweicloud sdk
 
-        :param cve_id: CVE ID
+        :param cve_id: **参数解释**： CVE ID **取值范围**： 字符长度1-32位 
         :type cve_id: str
-        :param cvss: CVSS分值
+        :param cvss: **参数解释**： CVSS分值 **取值范围**： 字符长度1-10 
         :type cvss: float
         """
         
@@ -52,7 +52,7 @@ class GeneralImageVulsResponseInfoCveList:
     def cve_id(self):
         r"""Gets the cve_id of this GeneralImageVulsResponseInfoCveList.
 
-        CVE ID
+        **参数解释**： CVE ID **取值范围**： 字符长度1-32位 
 
         :return: The cve_id of this GeneralImageVulsResponseInfoCveList.
         :rtype: str
@@ -63,7 +63,7 @@ class GeneralImageVulsResponseInfoCveList:
     def cve_id(self, cve_id):
         r"""Sets the cve_id of this GeneralImageVulsResponseInfoCveList.
 
-        CVE ID
+        **参数解释**： CVE ID **取值范围**： 字符长度1-32位 
 
         :param cve_id: The cve_id of this GeneralImageVulsResponseInfoCveList.
         :type cve_id: str
@@ -74,7 +74,7 @@ class GeneralImageVulsResponseInfoCveList:
     def cvss(self):
         r"""Gets the cvss of this GeneralImageVulsResponseInfoCveList.
 
-        CVSS分值
+        **参数解释**： CVSS分值 **取值范围**： 字符长度1-10 
 
         :return: The cvss of this GeneralImageVulsResponseInfoCveList.
         :rtype: float
@@ -85,7 +85,7 @@ class GeneralImageVulsResponseInfoCveList:
     def cvss(self, cvss):
         r"""Sets the cvss of this GeneralImageVulsResponseInfoCveList.
 
-        CVSS分值
+        **参数解释**： CVSS分值 **取值范围**： 字符长度1-10 
 
         :param cvss: The cvss of this GeneralImageVulsResponseInfoCveList.
         :type cvss: float

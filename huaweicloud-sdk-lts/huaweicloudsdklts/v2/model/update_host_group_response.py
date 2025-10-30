@@ -24,7 +24,9 @@ class UpdateHostGroupResponse(SdkResponse):
         'host_id_list': 'list[str]',
         'host_group_tag': 'list[HostGroupTag]',
         'create_time': 'int',
-        'update_time': 'int'
+        'update_time': 'int',
+        'agent_access_type': 'str',
+        'labels': 'list[str]'
     }
 
     attribute_map = {
@@ -34,10 +36,12 @@ class UpdateHostGroupResponse(SdkResponse):
         'host_id_list': 'host_id_list',
         'host_group_tag': 'host_group_tag',
         'create_time': 'create_time',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'agent_access_type': 'agent_access_type',
+        'labels': 'labels'
     }
 
-    def __init__(self, host_group_id=None, host_group_name=None, host_group_type=None, host_id_list=None, host_group_tag=None, create_time=None, update_time=None):
+    def __init__(self, host_group_id=None, host_group_name=None, host_group_type=None, host_id_list=None, host_group_tag=None, create_time=None, update_time=None, agent_access_type=None, labels=None):
         r"""UpdateHostGroupResponse
 
         The model defined in huaweicloud sdk
@@ -56,6 +60,10 @@ class UpdateHostGroupResponse(SdkResponse):
         :type create_time: int
         :param update_time: 更新时间
         :type update_time: int
+        :param agent_access_type: **参数解释：** 主机组类型。分别为IP、LABEL类型。 **取值范围：** - IP。 - LABEL。
+        :type agent_access_type: str
+        :param labels: **参数解释：** 主机组自定义标识。
+        :type labels: list[str]
         """
         
         super(UpdateHostGroupResponse, self).__init__()
@@ -67,6 +75,8 @@ class UpdateHostGroupResponse(SdkResponse):
         self._host_group_tag = None
         self._create_time = None
         self._update_time = None
+        self._agent_access_type = None
+        self._labels = None
         self.discriminator = None
 
         if host_group_id is not None:
@@ -83,6 +93,10 @@ class UpdateHostGroupResponse(SdkResponse):
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if agent_access_type is not None:
+            self.agent_access_type = agent_access_type
+        if labels is not None:
+            self.labels = labels
 
     @property
     def host_group_id(self):
@@ -237,6 +251,50 @@ class UpdateHostGroupResponse(SdkResponse):
         :type update_time: int
         """
         self._update_time = update_time
+
+    @property
+    def agent_access_type(self):
+        r"""Gets the agent_access_type of this UpdateHostGroupResponse.
+
+        **参数解释：** 主机组类型。分别为IP、LABEL类型。 **取值范围：** - IP。 - LABEL。
+
+        :return: The agent_access_type of this UpdateHostGroupResponse.
+        :rtype: str
+        """
+        return self._agent_access_type
+
+    @agent_access_type.setter
+    def agent_access_type(self, agent_access_type):
+        r"""Sets the agent_access_type of this UpdateHostGroupResponse.
+
+        **参数解释：** 主机组类型。分别为IP、LABEL类型。 **取值范围：** - IP。 - LABEL。
+
+        :param agent_access_type: The agent_access_type of this UpdateHostGroupResponse.
+        :type agent_access_type: str
+        """
+        self._agent_access_type = agent_access_type
+
+    @property
+    def labels(self):
+        r"""Gets the labels of this UpdateHostGroupResponse.
+
+        **参数解释：** 主机组自定义标识。
+
+        :return: The labels of this UpdateHostGroupResponse.
+        :rtype: list[str]
+        """
+        return self._labels
+
+    @labels.setter
+    def labels(self, labels):
+        r"""Sets the labels of this UpdateHostGroupResponse.
+
+        **参数解释：** 主机组自定义标识。
+
+        :param labels: The labels of this UpdateHostGroupResponse.
+        :type labels: list[str]
+        """
+        self._labels = labels
 
     def to_dict(self):
         """Returns the model properties as a dict"""

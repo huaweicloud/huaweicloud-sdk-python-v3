@@ -37,7 +37,7 @@ class ShowPrivateHookVersionPolicyRequest:
 
         :param client_request_id: 用户指定的，对于此请求的唯一Id，用于定位某个请求，推荐使用UUID
         :type client_request_id: str
-        :param hook_name: 私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
+        :param hook_name: 私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
         :type hook_name: str
         :param hook_version: 私有hook的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义。
         :type hook_version: str
@@ -85,7 +85,7 @@ class ShowPrivateHookVersionPolicyRequest:
     def hook_name(self):
         r"""Gets the hook_name of this ShowPrivateHookVersionPolicyRequest.
 
-        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
+        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :return: The hook_name of this ShowPrivateHookVersionPolicyRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ShowPrivateHookVersionPolicyRequest:
     def hook_name(self, hook_name):
         r"""Sets the hook_name of this ShowPrivateHookVersionPolicyRequest.
 
-        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。  推荐用户使用三段命名空间：{自定义hook名称}-{hook应用场景}-hook。
+        私有hook的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
         :param hook_name: The hook_name of this ShowPrivateHookVersionPolicyRequest.
         :type hook_name: str

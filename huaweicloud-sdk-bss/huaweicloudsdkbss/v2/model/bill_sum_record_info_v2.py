@@ -36,7 +36,8 @@ class BillSumRecordInfoV2:
         'credit_amount': 'decimal.Decimal',
         'measure_id': 'int',
         'bill_type': 'int',
-        'customer_id': 'str'
+        'customer_id': 'str',
+        'account_name': 'str'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class BillSumRecordInfoV2:
         'credit_amount': 'credit_amount',
         'measure_id': 'measure_id',
         'bill_type': 'bill_type',
-        'customer_id': 'customer_id'
+        'customer_id': 'customer_id',
+        'account_name': 'account_name'
     }
 
-    def __init__(self, bill_cycle=None, resource_type_code=None, service_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, official_amount=None, official_discount_amount=None, truncated_amount=None, consume_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, cash_amount=None, credit_amount=None, measure_id=None, bill_type=None, customer_id=None):
+    def __init__(self, bill_cycle=None, resource_type_code=None, service_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, official_amount=None, official_discount_amount=None, truncated_amount=None, consume_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, cash_amount=None, credit_amount=None, measure_id=None, bill_type=None, customer_id=None, account_name=None):
         r"""BillSumRecordInfoV2
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class BillSumRecordInfoV2:
         :type bill_type: int
         :param customer_id: 消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
         :type customer_id: str
+        :param account_name: |参数名称：消费的客户登录名称。| |参数约束及描述：范围限制：0-128，如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户登录名称。 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户登录名称。如果是企业主自己的消费记录，则为企业主的客户登录名称；如果是某个企业子客户的消费记录，则此处为企业子的客户登录名称。|
+        :type account_name: str
         """
         
         
@@ -131,6 +135,7 @@ class BillSumRecordInfoV2:
         self._measure_id = None
         self._bill_type = None
         self._customer_id = None
+        self._account_name = None
         self.discriminator = None
 
         if bill_cycle is not None:
@@ -173,6 +178,8 @@ class BillSumRecordInfoV2:
             self.bill_type = bill_type
         if customer_id is not None:
             self.customer_id = customer_id
+        if account_name is not None:
+            self.account_name = account_name
 
     @property
     def bill_cycle(self):
@@ -613,6 +620,28 @@ class BillSumRecordInfoV2:
         :type customer_id: str
         """
         self._customer_id = customer_id
+
+    @property
+    def account_name(self):
+        r"""Gets the account_name of this BillSumRecordInfoV2.
+
+        |参数名称：消费的客户登录名称。| |参数约束及描述：范围限制：0-128，如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户登录名称。 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户登录名称。如果是企业主自己的消费记录，则为企业主的客户登录名称；如果是某个企业子客户的消费记录，则此处为企业子的客户登录名称。|
+
+        :return: The account_name of this BillSumRecordInfoV2.
+        :rtype: str
+        """
+        return self._account_name
+
+    @account_name.setter
+    def account_name(self, account_name):
+        r"""Sets the account_name of this BillSumRecordInfoV2.
+
+        |参数名称：消费的客户登录名称。| |参数约束及描述：范围限制：0-128，如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户登录名称。 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户登录名称。如果是企业主自己的消费记录，则为企业主的客户登录名称；如果是某个企业子客户的消费记录，则此处为企业子的客户登录名称。|
+
+        :param account_name: The account_name of this BillSumRecordInfoV2.
+        :type account_name: str
+        """
+        self._account_name = account_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

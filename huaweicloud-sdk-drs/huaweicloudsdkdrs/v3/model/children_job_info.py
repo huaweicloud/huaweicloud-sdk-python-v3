@@ -55,7 +55,7 @@ class ChildrenJobInfo:
 
         The model defined in huaweicloud sdk
 
-        :param billing_tag: 计费字段
+        :param billing_tag: 是否计费字段。
         :type billing_tag: bool
         :param create_time: 任务创建时间
         :type create_time: str
@@ -103,19 +103,32 @@ class ChildrenJobInfo:
         self._job_action = None
         self.discriminator = None
 
-        self.billing_tag = billing_tag
-        self.create_time = create_time
-        self.db_use_type = db_use_type
-        self.description = description
-        self.engine_type = engine_type
-        self.error_msg = error_msg
-        self.id = id
-        self.job_direction = job_direction
-        self.name = name
-        self.net_type = net_type
-        self.node_new_framework = node_new_framework
-        self.status = status
-        self.task_type = task_type
+        if billing_tag is not None:
+            self.billing_tag = billing_tag
+        if create_time is not None:
+            self.create_time = create_time
+        if db_use_type is not None:
+            self.db_use_type = db_use_type
+        if description is not None:
+            self.description = description
+        if engine_type is not None:
+            self.engine_type = engine_type
+        if error_msg is not None:
+            self.error_msg = error_msg
+        if id is not None:
+            self.id = id
+        if job_direction is not None:
+            self.job_direction = job_direction
+        if name is not None:
+            self.name = name
+        if net_type is not None:
+            self.net_type = net_type
+        if node_new_framework is not None:
+            self.node_new_framework = node_new_framework
+        if status is not None:
+            self.status = status
+        if task_type is not None:
+            self.task_type = task_type
         if job_action is not None:
             self.job_action = job_action
 
@@ -123,7 +136,7 @@ class ChildrenJobInfo:
     def billing_tag(self):
         r"""Gets the billing_tag of this ChildrenJobInfo.
 
-        计费字段
+        是否计费字段。
 
         :return: The billing_tag of this ChildrenJobInfo.
         :rtype: bool
@@ -134,7 +147,7 @@ class ChildrenJobInfo:
     def billing_tag(self, billing_tag):
         r"""Sets the billing_tag of this ChildrenJobInfo.
 
-        计费字段
+        是否计费字段。
 
         :param billing_tag: The billing_tag of this ChildrenJobInfo.
         :type billing_tag: bool

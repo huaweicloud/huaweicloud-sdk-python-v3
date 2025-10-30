@@ -49,7 +49,7 @@ class ListSubcustomerMonthlyBillsRequest:
         :type cycle: str
         :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件。
         :type cloud_service_type: str
-        :param charge_mode: 计费模式。1：包年/包月3：按需
+        :param charge_mode: 计费模式。1：包年/包月；3：按需；11：节省计划|
         :type charge_mode: str
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -158,7 +158,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def charge_mode(self):
         r"""Gets the charge_mode of this ListSubcustomerMonthlyBillsRequest.
 
-        计费模式。1：包年/包月3：按需
+        计费模式。1：包年/包月；3：按需；11：节省计划|
 
         :return: The charge_mode of this ListSubcustomerMonthlyBillsRequest.
         :rtype: str
@@ -169,7 +169,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this ListSubcustomerMonthlyBillsRequest.
 
-        计费模式。1：包年/包月3：按需
+        计费模式。1：包年/包月；3：按需；11：节省计划|
 
         :param charge_mode: The charge_mode of this ListSubcustomerMonthlyBillsRequest.
         :type charge_mode: str

@@ -33,7 +33,7 @@ class PageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param next_marker: 向后分页标识符。如果存在，则表示实际总输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
+        :param next_marker: 向后分页标识符。如果存在，则表示实际总输出比当前响应中包含的输出多。在对请求的后续调用中，在请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
         :type next_marker: str
         :param previous_marker: 向前分页标识符。
         :type previous_marker: str
@@ -59,7 +59,7 @@ class PageInfo:
     def next_marker(self):
         r"""Gets the next_marker of this PageInfo.
 
-        向后分页标识符。如果存在，则表示实际总输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
+        向后分页标识符。如果存在，则表示实际总输出比当前响应中包含的输出多。在对请求的后续调用中，在请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
 
         :return: The next_marker of this PageInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class PageInfo:
     def next_marker(self, next_marker):
         r"""Sets the next_marker of this PageInfo.
 
-        向后分页标识符。如果存在，则表示实际总输出比当前响应中包含的输出多。在对操作的后续调用中，在标签请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
+        向后分页标识符。如果存在，则表示实际总输出比当前响应中包含的输出多。在对请求的后续调用中，在请求参数中使用此值，以获取输出的下一部分。您应该重复此操作，直到next_marker响应元素返回为null。
 
         :param next_marker: The next_marker of this PageInfo.
         :type next_marker: str

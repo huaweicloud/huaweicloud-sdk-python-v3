@@ -52,8 +52,7 @@ class ShowAssetStatisticRequest:
             self.enterprise_project_id = enterprise_project_id
         if host_id is not None:
             self.host_id = host_id
-        if category is not None:
-            self.category = category
+        self.category = category
 
     @property
     def enterprise_project_id(self):

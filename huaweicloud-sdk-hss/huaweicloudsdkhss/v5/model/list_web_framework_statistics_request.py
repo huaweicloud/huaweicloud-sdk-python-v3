@@ -20,19 +20,19 @@ class ListWebFrameworkStatisticsRequest:
         'enterprise_project_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'file_name': 'str',
-        'category': 'str'
+        'category': 'str',
+        'file_name': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'offset': 'offset',
         'limit': 'limit',
-        'file_name': 'file_name',
-        'category': 'category'
+        'category': 'category',
+        'file_name': 'file_name'
     }
 
-    def __init__(self, enterprise_project_id=None, offset=None, limit=None, file_name=None, category=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, category=None, file_name=None):
         r"""ListWebFrameworkStatisticsRequest
 
         The model defined in huaweicloud sdk
@@ -43,10 +43,10 @@ class ListWebFrameworkStatisticsRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param file_name: 框架文件名称
-        :type file_name: str
-        :param category: 返回的资产类别 - 0: 主机 - 1: 容器
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
         :type category: str
+        :param file_name: **参数解释**: 框架文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
+        :type file_name: str
         """
         
         
@@ -54,8 +54,8 @@ class ListWebFrameworkStatisticsRequest:
         self._enterprise_project_id = None
         self._offset = None
         self._limit = None
-        self._file_name = None
         self._category = None
+        self._file_name = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -64,9 +64,9 @@ class ListWebFrameworkStatisticsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        self.category = category
         if file_name is not None:
             self.file_name = file_name
-        self.category = category
 
     @property
     def enterprise_project_id(self):
@@ -135,32 +135,10 @@ class ListWebFrameworkStatisticsRequest:
         self._limit = limit
 
     @property
-    def file_name(self):
-        r"""Gets the file_name of this ListWebFrameworkStatisticsRequest.
-
-        框架文件名称
-
-        :return: The file_name of this ListWebFrameworkStatisticsRequest.
-        :rtype: str
-        """
-        return self._file_name
-
-    @file_name.setter
-    def file_name(self, file_name):
-        r"""Sets the file_name of this ListWebFrameworkStatisticsRequest.
-
-        框架文件名称
-
-        :param file_name: The file_name of this ListWebFrameworkStatisticsRequest.
-        :type file_name: str
-        """
-        self._file_name = file_name
-
-    @property
     def category(self):
         r"""Gets the category of this ListWebFrameworkStatisticsRequest.
 
-        返回的资产类别 - 0: 主机 - 1: 容器
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :return: The category of this ListWebFrameworkStatisticsRequest.
         :rtype: str
@@ -171,12 +149,34 @@ class ListWebFrameworkStatisticsRequest:
     def category(self, category):
         r"""Sets the category of this ListWebFrameworkStatisticsRequest.
 
-        返回的资产类别 - 0: 主机 - 1: 容器
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :param category: The category of this ListWebFrameworkStatisticsRequest.
         :type category: str
         """
         self._category = category
+
+    @property
+    def file_name(self):
+        r"""Gets the file_name of this ListWebFrameworkStatisticsRequest.
+
+        **参数解释**: 框架文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
+
+        :return: The file_name of this ListWebFrameworkStatisticsRequest.
+        :rtype: str
+        """
+        return self._file_name
+
+    @file_name.setter
+    def file_name(self, file_name):
+        r"""Sets the file_name of this ListWebFrameworkStatisticsRequest.
+
+        **参数解释**: 框架文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
+
+        :param file_name: The file_name of this ListWebFrameworkStatisticsRequest.
+        :type file_name: str
+        """
+        self._file_name = file_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

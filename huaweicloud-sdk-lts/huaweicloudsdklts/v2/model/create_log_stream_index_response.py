@@ -20,18 +20,16 @@ class CreateLogStreamIndexResponse(SdkResponse):
     openapi_types = {
         'error_code': 'str',
         'error_message': 'str',
-        'result': 'str',
-        'is_query_complete': 'bool'
+        'result': 'str'
     }
 
     attribute_map = {
         'error_code': 'errorCode',
         'error_message': 'errorMessage',
-        'result': 'result',
-        'is_query_complete': 'isQueryComplete'
+        'result': 'result'
     }
 
-    def __init__(self, error_code=None, error_message=None, result=None, is_query_complete=None):
+    def __init__(self, error_code=None, error_message=None, result=None):
         r"""CreateLogStreamIndexResponse
 
         The model defined in huaweicloud sdk
@@ -42,8 +40,6 @@ class CreateLogStreamIndexResponse(SdkResponse):
         :type error_message: str
         :param result: 结果
         :type result: str
-        :param is_query_complete: 是否查询完成
-        :type is_query_complete: bool
         """
         
         super(CreateLogStreamIndexResponse, self).__init__()
@@ -51,7 +47,6 @@ class CreateLogStreamIndexResponse(SdkResponse):
         self._error_code = None
         self._error_message = None
         self._result = None
-        self._is_query_complete = None
         self.discriminator = None
 
         if error_code is not None:
@@ -60,8 +55,6 @@ class CreateLogStreamIndexResponse(SdkResponse):
             self.error_message = error_message
         if result is not None:
             self.result = result
-        if is_query_complete is not None:
-            self.is_query_complete = is_query_complete
 
     @property
     def error_code(self):
@@ -128,28 +121,6 @@ class CreateLogStreamIndexResponse(SdkResponse):
         :type result: str
         """
         self._result = result
-
-    @property
-    def is_query_complete(self):
-        r"""Gets the is_query_complete of this CreateLogStreamIndexResponse.
-
-        是否查询完成
-
-        :return: The is_query_complete of this CreateLogStreamIndexResponse.
-        :rtype: bool
-        """
-        return self._is_query_complete
-
-    @is_query_complete.setter
-    def is_query_complete(self, is_query_complete):
-        r"""Sets the is_query_complete of this CreateLogStreamIndexResponse.
-
-        是否查询完成
-
-        :param is_query_complete: The is_query_complete of this CreateLogStreamIndexResponse.
-        :type is_query_complete: bool
-        """
-        self._is_query_complete = is_query_complete
 
     def to_dict(self):
         """Returns the model properties as a dict"""

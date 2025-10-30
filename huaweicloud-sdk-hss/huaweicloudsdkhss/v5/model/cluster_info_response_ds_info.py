@@ -33,11 +33,11 @@ class ClusterInfoResponseDsInfo:
 
         The model defined in huaweicloud sdk
 
-        :param desired_num: 目标数量
+        :param desired_num: **参数解释** 目标数量 **取值范围** 取值0-65535
         :type desired_num: int
-        :param current_num: 当前数量
+        :param current_num: **参数解释** 当前数量 **取值范围** 取值0-65535
         :type current_num: int
-        :param ready_num: 就绪数量
+        :param ready_num: **参数解释** 就绪数量 **取值范围** 取值0-65535
         :type ready_num: int
         """
         
@@ -59,7 +59,7 @@ class ClusterInfoResponseDsInfo:
     def desired_num(self):
         r"""Gets the desired_num of this ClusterInfoResponseDsInfo.
 
-        目标数量
+        **参数解释** 目标数量 **取值范围** 取值0-65535
 
         :return: The desired_num of this ClusterInfoResponseDsInfo.
         :rtype: int
@@ -70,7 +70,7 @@ class ClusterInfoResponseDsInfo:
     def desired_num(self, desired_num):
         r"""Sets the desired_num of this ClusterInfoResponseDsInfo.
 
-        目标数量
+        **参数解释** 目标数量 **取值范围** 取值0-65535
 
         :param desired_num: The desired_num of this ClusterInfoResponseDsInfo.
         :type desired_num: int
@@ -81,7 +81,7 @@ class ClusterInfoResponseDsInfo:
     def current_num(self):
         r"""Gets the current_num of this ClusterInfoResponseDsInfo.
 
-        当前数量
+        **参数解释** 当前数量 **取值范围** 取值0-65535
 
         :return: The current_num of this ClusterInfoResponseDsInfo.
         :rtype: int
@@ -92,7 +92,7 @@ class ClusterInfoResponseDsInfo:
     def current_num(self, current_num):
         r"""Sets the current_num of this ClusterInfoResponseDsInfo.
 
-        当前数量
+        **参数解释** 当前数量 **取值范围** 取值0-65535
 
         :param current_num: The current_num of this ClusterInfoResponseDsInfo.
         :type current_num: int
@@ -103,7 +103,7 @@ class ClusterInfoResponseDsInfo:
     def ready_num(self):
         r"""Gets the ready_num of this ClusterInfoResponseDsInfo.
 
-        就绪数量
+        **参数解释** 就绪数量 **取值范围** 取值0-65535
 
         :return: The ready_num of this ClusterInfoResponseDsInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class ClusterInfoResponseDsInfo:
     def ready_num(self, ready_num):
         r"""Sets the ready_num of this ClusterInfoResponseDsInfo.
 
-        就绪数量
+        **参数解释** 就绪数量 **取值范围** 取值0-65535
 
         :param ready_num: The ready_num of this ClusterInfoResponseDsInfo.
         :type ready_num: int

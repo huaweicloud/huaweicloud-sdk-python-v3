@@ -20,8 +20,8 @@ class JobInfo:
         'id': 'str',
         'name': 'str',
         'status': 'str',
-        'description': 'str',
         'create_time': 'str',
+        'description': 'str',
         'engine_type': 'str',
         'net_type': 'str',
         'billing_tag': 'bool',
@@ -37,8 +37,8 @@ class JobInfo:
         'id': 'id',
         'name': 'name',
         'status': 'status',
-        'description': 'description',
         'create_time': 'create_time',
+        'description': 'description',
         'engine_type': 'engine_type',
         'net_type': 'net_type',
         'billing_tag': 'billing_tag',
@@ -50,7 +50,7 @@ class JobInfo:
         'job_action': 'job_action'
     }
 
-    def __init__(self, id=None, name=None, status=None, description=None, create_time=None, engine_type=None, net_type=None, billing_tag=None, job_direction=None, db_use_type=None, task_type=None, children=None, node_new_framework=None, job_action=None):
+    def __init__(self, id=None, name=None, status=None, create_time=None, description=None, engine_type=None, net_type=None, billing_tag=None, job_direction=None, db_use_type=None, task_type=None, children=None, node_new_framework=None, job_action=None):
         r"""JobInfo
 
         The model defined in huaweicloud sdk
@@ -61,10 +61,10 @@ class JobInfo:
         :type name: str
         :param status: 任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
         :type status: str
-        :param description: 任务描述
-        :type description: str
         :param create_time: 任务创建时间
         :type create_time: str
+        :param description: 任务描述
+        :type description: str
         :param engine_type: 引擎类型
         :type engine_type: str
         :param net_type: 网络类型
@@ -77,9 +77,9 @@ class JobInfo:
         :type db_use_type: str
         :param task_type: 迁移模式。 - FULL_TRANS 全量 - FULL_INCR_TRANS 全量+增量 - INCR_TRANS 增量
         :type task_type: str
-        :param children: 子任务信息体
+        :param children: 子任务信息体。
         :type children: list[:class:`huaweicloudsdkdrs.v3.ChildrenJobInfo`]
-        :param node_new_framework: 是否新框架
+        :param node_new_framework: 是否新框架。
         :type node_new_framework: bool
         :param job_action: 
         :type job_action: :class:`huaweicloudsdkdrs.v3.JobActionResp`
@@ -90,8 +90,8 @@ class JobInfo:
         self._id = None
         self._name = None
         self._status = None
-        self._description = None
         self._create_time = None
+        self._description = None
         self._engine_type = None
         self._net_type = None
         self._billing_tag = None
@@ -106,8 +106,8 @@ class JobInfo:
         self.id = id
         self.name = name
         self.status = status
-        self.description = description
         self.create_time = create_time
+        self.description = description
         self.engine_type = engine_type
         self.net_type = net_type
         self.billing_tag = billing_tag
@@ -187,28 +187,6 @@ class JobInfo:
         self._status = status
 
     @property
-    def description(self):
-        r"""Gets the description of this JobInfo.
-
-        任务描述
-
-        :return: The description of this JobInfo.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        r"""Sets the description of this JobInfo.
-
-        任务描述
-
-        :param description: The description of this JobInfo.
-        :type description: str
-        """
-        self._description = description
-
-    @property
     def create_time(self):
         r"""Gets the create_time of this JobInfo.
 
@@ -229,6 +207,28 @@ class JobInfo:
         :type create_time: str
         """
         self._create_time = create_time
+
+    @property
+    def description(self):
+        r"""Gets the description of this JobInfo.
+
+        任务描述
+
+        :return: The description of this JobInfo.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this JobInfo.
+
+        任务描述
+
+        :param description: The description of this JobInfo.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def engine_type(self):
@@ -366,7 +366,7 @@ class JobInfo:
     def children(self):
         r"""Gets the children of this JobInfo.
 
-        子任务信息体
+        子任务信息体。
 
         :return: The children of this JobInfo.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.ChildrenJobInfo`]
@@ -377,7 +377,7 @@ class JobInfo:
     def children(self, children):
         r"""Sets the children of this JobInfo.
 
-        子任务信息体
+        子任务信息体。
 
         :param children: The children of this JobInfo.
         :type children: list[:class:`huaweicloudsdkdrs.v3.ChildrenJobInfo`]
@@ -388,7 +388,7 @@ class JobInfo:
     def node_new_framework(self):
         r"""Gets the node_new_framework of this JobInfo.
 
-        是否新框架
+        是否新框架。
 
         :return: The node_new_framework of this JobInfo.
         :rtype: bool
@@ -399,7 +399,7 @@ class JobInfo:
     def node_new_framework(self, node_new_framework):
         r"""Sets the node_new_framework of this JobInfo.
 
-        是否新框架
+        是否新框架。
 
         :param node_new_framework: The node_new_framework of this JobInfo.
         :type node_new_framework: bool

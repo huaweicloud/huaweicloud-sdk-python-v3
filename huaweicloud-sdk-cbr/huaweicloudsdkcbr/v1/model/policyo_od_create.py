@@ -27,7 +27,8 @@ class PolicyoODCreate:
         'timezone': 'str',
         'week_backups': 'int',
         'year_backups': 'int',
-        'full_backup_interval': 'int'
+        'full_backup_interval': 'int',
+        'cross_account_urn': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class PolicyoODCreate:
         'timezone': 'timezone',
         'week_backups': 'week_backups',
         'year_backups': 'year_backups',
-        'full_backup_interval': 'full_backup_interval'
+        'full_backup_interval': 'full_backup_interval',
+        'cross_account_urn': 'cross_account_urn'
     }
 
-    def __init__(self, day_backups=None, destination_project_id=None, destination_region=None, enable_acceleration=None, max_backups=None, month_backups=None, retention_duration_days=None, timezone=None, week_backups=None, year_backups=None, full_backup_interval=None):
+    def __init__(self, day_backups=None, destination_project_id=None, destination_region=None, enable_acceleration=None, max_backups=None, month_backups=None, retention_duration_days=None, timezone=None, week_backups=None, year_backups=None, full_backup_interval=None, cross_account_urn=None):
         r"""PolicyoODCreate
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class PolicyoODCreate:
         :type year_backups: int
         :param full_backup_interval: 每间隔多少次执行一次全量备份，当取值为 -1 时，不执行全量备份。  最小值：-1  最大值：100
         :type full_backup_interval: int
+        :param cross_account_urn: 跨账户复制策略所关联的跨账户复制存储库标识
+        :type cross_account_urn: str
         """
         
         
@@ -86,6 +90,7 @@ class PolicyoODCreate:
         self._week_backups = None
         self._year_backups = None
         self._full_backup_interval = None
+        self._cross_account_urn = None
         self.discriminator = None
 
         if day_backups is not None:
@@ -110,6 +115,8 @@ class PolicyoODCreate:
             self.year_backups = year_backups
         if full_backup_interval is not None:
             self.full_backup_interval = full_backup_interval
+        if cross_account_urn is not None:
+            self.cross_account_urn = cross_account_urn
 
     @property
     def day_backups(self):
@@ -352,6 +359,28 @@ class PolicyoODCreate:
         :type full_backup_interval: int
         """
         self._full_backup_interval = full_backup_interval
+
+    @property
+    def cross_account_urn(self):
+        r"""Gets the cross_account_urn of this PolicyoODCreate.
+
+        跨账户复制策略所关联的跨账户复制存储库标识
+
+        :return: The cross_account_urn of this PolicyoODCreate.
+        :rtype: str
+        """
+        return self._cross_account_urn
+
+    @cross_account_urn.setter
+    def cross_account_urn(self, cross_account_urn):
+        r"""Sets the cross_account_urn of this PolicyoODCreate.
+
+        跨账户复制策略所关联的跨账户复制存储库标识
+
+        :param cross_account_urn: The cross_account_urn of this PolicyoODCreate.
+        :type cross_account_urn: str
+        """
+        self._cross_account_urn = cross_account_urn
 
     def to_dict(self):
         """Returns the model properties as a dict"""

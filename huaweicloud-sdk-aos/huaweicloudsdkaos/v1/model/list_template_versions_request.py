@@ -19,16 +19,20 @@ class ListTemplateVersionsRequest:
     openapi_types = {
         'client_request_id': 'str',
         'template_name': 'str',
-        'template_id': 'str'
+        'template_id': 'str',
+        'marker': 'str',
+        'limit': 'int'
     }
 
     attribute_map = {
         'client_request_id': 'Client-Request-Id',
         'template_name': 'template_name',
-        'template_id': 'template_id'
+        'template_id': 'template_id',
+        'marker': 'marker',
+        'limit': 'limit'
     }
 
-    def __init__(self, client_request_id=None, template_name=None, template_id=None):
+    def __init__(self, client_request_id=None, template_name=None, template_id=None, marker=None, limit=None):
         r"""ListTemplateVersionsRequest
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class ListTemplateVersionsRequest:
         :type template_name: str
         :param template_id: 模板的ID。当template_id存在时，模板服务会检查template_id是否和template_name匹配，不匹配会返回400
         :type template_id: str
+        :param marker: 分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+        :type marker: str
+        :param limit: 每页返回的最多结果数量
+        :type limit: int
         """
         
         
@@ -46,12 +54,18 @@ class ListTemplateVersionsRequest:
         self._client_request_id = None
         self._template_name = None
         self._template_id = None
+        self._marker = None
+        self._limit = None
         self.discriminator = None
 
         self.client_request_id = client_request_id
         self.template_name = template_name
         if template_id is not None:
             self.template_id = template_id
+        if marker is not None:
+            self.marker = marker
+        if limit is not None:
+            self.limit = limit
 
     @property
     def client_request_id(self):
@@ -118,6 +132,50 @@ class ListTemplateVersionsRequest:
         :type template_id: str
         """
         self._template_id = template_id
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListTemplateVersionsRequest.
+
+        分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+
+        :return: The marker of this ListTemplateVersionsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListTemplateVersionsRequest.
+
+        分页标记。当一页无法返回所有结果，上一次的请求将返回next_marker以指引还有更多页数，用户可以将next_marker中的值放到此处以查询下一页的信息。此marker只能用于与上一请求指定的相同参数的请求。不指定时默认从第一页开始查询。
+
+        :param marker: The marker of this ListTemplateVersionsRequest.
+        :type marker: str
+        """
+        self._marker = marker
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListTemplateVersionsRequest.
+
+        每页返回的最多结果数量
+
+        :return: The limit of this ListTemplateVersionsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListTemplateVersionsRequest.
+
+        每页返回的最多结果数量
+
+        :param limit: The limit of this ListTemplateVersionsRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -31,7 +31,7 @@ class ChangePolicyGroupRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释**: 需要修改的的策略组的策略组ID **约束限制**: 需要使用 ListPolicyGroup 接口查询策略组ID，在 ListPolicyGroup 接口的响应体中返回的 group_id 是可以被修改的策略组ID **取值范围**: 字符长度36-64 **默认取值**: 不涉及
+        :param group_id: **参数解释**: 需要修改的策略组ID **约束限制**: 需要使用 ListPolicyGroup 接口查询策略组ID，在 ListPolicyGroup 接口的响应体中返回的 group_id 是可以被修改的策略组ID **取值范围**: 字符长度36-64 **默认取值**: 不涉及
         :type group_id: str
         :param protect_mode: **参数解释**: 防护模式 **约束限制**: 不涉及 **取值范围**: - high_detection: 高检出模式。 - equalization: 均衡模式。  **默认取值**: 不涉及 
         :type protect_mode: str
@@ -51,7 +51,7 @@ class ChangePolicyGroupRequestInfo:
     def group_id(self):
         r"""Gets the group_id of this ChangePolicyGroupRequestInfo.
 
-        **参数解释**: 需要修改的的策略组的策略组ID **约束限制**: 需要使用 ListPolicyGroup 接口查询策略组ID，在 ListPolicyGroup 接口的响应体中返回的 group_id 是可以被修改的策略组ID **取值范围**: 字符长度36-64 **默认取值**: 不涉及
+        **参数解释**: 需要修改的策略组ID **约束限制**: 需要使用 ListPolicyGroup 接口查询策略组ID，在 ListPolicyGroup 接口的响应体中返回的 group_id 是可以被修改的策略组ID **取值范围**: 字符长度36-64 **默认取值**: 不涉及
 
         :return: The group_id of this ChangePolicyGroupRequestInfo.
         :rtype: str
@@ -62,7 +62,7 @@ class ChangePolicyGroupRequestInfo:
     def group_id(self, group_id):
         r"""Sets the group_id of this ChangePolicyGroupRequestInfo.
 
-        **参数解释**: 需要修改的的策略组的策略组ID **约束限制**: 需要使用 ListPolicyGroup 接口查询策略组ID，在 ListPolicyGroup 接口的响应体中返回的 group_id 是可以被修改的策略组ID **取值范围**: 字符长度36-64 **默认取值**: 不涉及
+        **参数解释**: 需要修改的策略组ID **约束限制**: 需要使用 ListPolicyGroup 接口查询策略组ID，在 ListPolicyGroup 接口的响应体中返回的 group_id 是可以被修改的策略组ID **取值范围**: 字符长度36-64 **默认取值**: 不涉及
 
         :param group_id: The group_id of this ChangePolicyGroupRequestInfo.
         :type group_id: str

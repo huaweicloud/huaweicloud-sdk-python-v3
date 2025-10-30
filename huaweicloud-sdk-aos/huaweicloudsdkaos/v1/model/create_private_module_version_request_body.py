@@ -55,12 +55,10 @@ class CreatePrivateModuleVersionRequestBody:
 
         if module_id is not None:
             self.module_id = module_id
-        if module_version is not None:
-            self.module_version = module_version
+        self.module_version = module_version
         if version_description is not None:
             self.version_description = version_description
-        if module_uri is not None:
-            self.module_uri = module_uri
+        self.module_uri = module_uri
 
     @property
     def module_id(self):

@@ -22,7 +22,6 @@ class TransferDetail:
         'obs_prefix_name': 'str',
         'obs_period_unit': 'str',
         'obs_transfer_path': 'str',
-        'obs_eps_id': 'str',
         'obs_bucket_name': 'str',
         'obs_encrypted_enable': 'bool',
         'obs_dir_pre_fix_name': 'str',
@@ -32,11 +31,7 @@ class TransferDetail:
         'kafka_topic': 'str',
         'obs_time_zone': 'str',
         'obs_time_zone_id': 'str',
-        'tags': 'list[str]',
-        'lts_tags': 'list[str]',
-        'stream_tags': 'list[str]',
-        'struct_fields': 'list[str]',
-        'invalid_field_value': 'str'
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -45,7 +40,6 @@ class TransferDetail:
         'obs_prefix_name': 'obs_prefix_name',
         'obs_period_unit': 'obs_period_unit',
         'obs_transfer_path': 'obs_transfer_path',
-        'obs_eps_id': 'obs_eps_id',
         'obs_bucket_name': 'obs_bucket_name',
         'obs_encrypted_enable': 'obs_encrypted_enable',
         'obs_dir_pre_fix_name': 'obs_dir_pre_fix_name',
@@ -55,14 +49,10 @@ class TransferDetail:
         'kafka_topic': 'kafka_topic',
         'obs_time_zone': 'obs_time_zone',
         'obs_time_zone_id': 'obs_time_zone_id',
-        'tags': 'tags',
-        'lts_tags': 'lts_tags',
-        'stream_tags': 'stream_tags',
-        'struct_fields': 'struct_fields',
-        'invalid_field_value': 'invalid_field_value'
+        'tags': 'tags'
     }
 
-    def __init__(self, obs_period=None, obs_encrypted_id=None, obs_prefix_name=None, obs_period_unit=None, obs_transfer_path=None, obs_eps_id=None, obs_bucket_name=None, obs_encrypted_enable=None, obs_dir_pre_fix_name=None, dis_id=None, dis_name=None, kafka_id=None, kafka_topic=None, obs_time_zone=None, obs_time_zone_id=None, tags=None, lts_tags=None, stream_tags=None, struct_fields=None, invalid_field_value=None):
+    def __init__(self, obs_period=None, obs_encrypted_id=None, obs_prefix_name=None, obs_period_unit=None, obs_transfer_path=None, obs_bucket_name=None, obs_encrypted_enable=None, obs_dir_pre_fix_name=None, dis_id=None, dis_name=None, kafka_id=None, kafka_topic=None, obs_time_zone=None, obs_time_zone_id=None, tags=None):
         r"""TransferDetail
 
         The model defined in huaweicloud sdk
@@ -77,8 +67,6 @@ class TransferDetail:
         :type obs_period_unit: str
         :param obs_transfer_path: OBS转储路径，指OBS日志桶中的路径
         :type obs_transfer_path: str
-        :param obs_eps_id: OBS企业项目ID
-        :type obs_eps_id: str
         :param obs_bucket_name: OBS日志桶名称
         :type obs_bucket_name: str
         :param obs_encrypted_enable: OBS是否开启加密。
@@ -99,14 +87,6 @@ class TransferDetail:
         :type obs_time_zone_id: str
         :param tags: 若开启tag投递，该字段必须包含主机信息：hostIP、hostId、hostName、pathFile、collectTime；  公共字段有：logStreamName、regionName、logGroupName、projectId，为可选填；  开启转储标签：streamTag，可选填
         :type tags: list[str]
-        :param lts_tags: dms转储JSON格式选填，可以转储tag字段
-        :type lts_tags: list[str]
-        :param stream_tags: dms转储JSON格式选填，可以转储日志流标签字段
-        :type stream_tags: list[str]
-        :param struct_fields: dms转储JSON格式选填，可以转储结构化字段
-        :type struct_fields: list[str]
-        :param invalid_field_value: dms转储JSON格式选填，无效字段填充
-        :type invalid_field_value: str
         """
         
         
@@ -116,7 +96,6 @@ class TransferDetail:
         self._obs_prefix_name = None
         self._obs_period_unit = None
         self._obs_transfer_path = None
-        self._obs_eps_id = None
         self._obs_bucket_name = None
         self._obs_encrypted_enable = None
         self._obs_dir_pre_fix_name = None
@@ -127,10 +106,6 @@ class TransferDetail:
         self._obs_time_zone = None
         self._obs_time_zone_id = None
         self._tags = None
-        self._lts_tags = None
-        self._stream_tags = None
-        self._struct_fields = None
-        self._invalid_field_value = None
         self.discriminator = None
 
         self.obs_period = obs_period
@@ -141,8 +116,6 @@ class TransferDetail:
         self.obs_period_unit = obs_period_unit
         if obs_transfer_path is not None:
             self.obs_transfer_path = obs_transfer_path
-        if obs_eps_id is not None:
-            self.obs_eps_id = obs_eps_id
         self.obs_bucket_name = obs_bucket_name
         if obs_encrypted_enable is not None:
             self.obs_encrypted_enable = obs_encrypted_enable
@@ -162,14 +135,6 @@ class TransferDetail:
             self.obs_time_zone_id = obs_time_zone_id
         if tags is not None:
             self.tags = tags
-        if lts_tags is not None:
-            self.lts_tags = lts_tags
-        if stream_tags is not None:
-            self.stream_tags = stream_tags
-        if struct_fields is not None:
-            self.struct_fields = struct_fields
-        if invalid_field_value is not None:
-            self.invalid_field_value = invalid_field_value
 
     @property
     def obs_period(self):
@@ -280,28 +245,6 @@ class TransferDetail:
         :type obs_transfer_path: str
         """
         self._obs_transfer_path = obs_transfer_path
-
-    @property
-    def obs_eps_id(self):
-        r"""Gets the obs_eps_id of this TransferDetail.
-
-        OBS企业项目ID
-
-        :return: The obs_eps_id of this TransferDetail.
-        :rtype: str
-        """
-        return self._obs_eps_id
-
-    @obs_eps_id.setter
-    def obs_eps_id(self, obs_eps_id):
-        r"""Sets the obs_eps_id of this TransferDetail.
-
-        OBS企业项目ID
-
-        :param obs_eps_id: The obs_eps_id of this TransferDetail.
-        :type obs_eps_id: str
-        """
-        self._obs_eps_id = obs_eps_id
 
     @property
     def obs_bucket_name(self):
@@ -522,94 +465,6 @@ class TransferDetail:
         :type tags: list[str]
         """
         self._tags = tags
-
-    @property
-    def lts_tags(self):
-        r"""Gets the lts_tags of this TransferDetail.
-
-        dms转储JSON格式选填，可以转储tag字段
-
-        :return: The lts_tags of this TransferDetail.
-        :rtype: list[str]
-        """
-        return self._lts_tags
-
-    @lts_tags.setter
-    def lts_tags(self, lts_tags):
-        r"""Sets the lts_tags of this TransferDetail.
-
-        dms转储JSON格式选填，可以转储tag字段
-
-        :param lts_tags: The lts_tags of this TransferDetail.
-        :type lts_tags: list[str]
-        """
-        self._lts_tags = lts_tags
-
-    @property
-    def stream_tags(self):
-        r"""Gets the stream_tags of this TransferDetail.
-
-        dms转储JSON格式选填，可以转储日志流标签字段
-
-        :return: The stream_tags of this TransferDetail.
-        :rtype: list[str]
-        """
-        return self._stream_tags
-
-    @stream_tags.setter
-    def stream_tags(self, stream_tags):
-        r"""Sets the stream_tags of this TransferDetail.
-
-        dms转储JSON格式选填，可以转储日志流标签字段
-
-        :param stream_tags: The stream_tags of this TransferDetail.
-        :type stream_tags: list[str]
-        """
-        self._stream_tags = stream_tags
-
-    @property
-    def struct_fields(self):
-        r"""Gets the struct_fields of this TransferDetail.
-
-        dms转储JSON格式选填，可以转储结构化字段
-
-        :return: The struct_fields of this TransferDetail.
-        :rtype: list[str]
-        """
-        return self._struct_fields
-
-    @struct_fields.setter
-    def struct_fields(self, struct_fields):
-        r"""Sets the struct_fields of this TransferDetail.
-
-        dms转储JSON格式选填，可以转储结构化字段
-
-        :param struct_fields: The struct_fields of this TransferDetail.
-        :type struct_fields: list[str]
-        """
-        self._struct_fields = struct_fields
-
-    @property
-    def invalid_field_value(self):
-        r"""Gets the invalid_field_value of this TransferDetail.
-
-        dms转储JSON格式选填，无效字段填充
-
-        :return: The invalid_field_value of this TransferDetail.
-        :rtype: str
-        """
-        return self._invalid_field_value
-
-    @invalid_field_value.setter
-    def invalid_field_value(self, invalid_field_value):
-        r"""Sets the invalid_field_value of this TransferDetail.
-
-        dms转储JSON格式选填，无效字段填充
-
-        :param invalid_field_value: The invalid_field_value of this TransferDetail.
-        :type invalid_field_value: str
-        """
-        self._invalid_field_value = invalid_field_value
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -35,7 +35,8 @@ from collections import OrderedDict
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, DerivedCredentials
 from huaweicloudsdkcore.auth.provider import CredentialProviderChain
 from huaweicloudsdkcore.exceptions.exception_handler import ExceptionHandler, DefaultExceptionHandler
-from huaweicloudsdkcore.exceptions.exceptions import HostUnreachableException
+from huaweicloudsdkcore.exceptions.exceptions import HostUnreachableException, SslHandShakeException, \
+    ConnectionException
 from huaweicloudsdkcore.http import progress
 from huaweicloudsdkcore.http.bson_types import BSON_TYPES_MAPPING
 from huaweicloudsdkcore.http.formdata import FormFile
@@ -480,6 +481,7 @@ class Client(object):
                                                                 response_type, response_headers, progress_callback)
             return FutureSdkResponse(future_response, self._logger)
 
+        exc_msgs = []
         while True:
             try:
                 request = self.build_future_request(method, resource_path, path_params, query_params, header_params,
@@ -487,13 +489,18 @@ class Client(object):
                                                     collection_formats, progress_callback).result()
                 response = self._do_http_request_sync(request)
                 break
-            except HostUnreachableException as e:
+            except (HostUnreachableException, SslHandShakeException) as e:
                 with self._mutex:
                     if self._endpoint_index < len(self._endpoints) - 1:
                         self._endpoint_index += 1
+                        exc_msgs.append(str(e))
                     else:
                         self._endpoint_index = 0
-                        raise e
+
+                        if not exc_msgs:
+                            raise e
+                        exc_msgs.append(str(e))
+                        raise ConnectionException("; ".join(exc_msgs))
 
         return self.sync_response_handler(response, response_type, response_headers, progress_callback)
 

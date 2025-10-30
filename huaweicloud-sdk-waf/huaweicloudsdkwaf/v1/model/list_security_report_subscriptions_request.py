@@ -49,7 +49,7 @@ class ListSecurityReportSubscriptionsRequest:
         :type report_status: str
         :param offset: **参数解释：** 分页查询的起始位置，表示从第几条记录开始返回（从0开始计数）。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 0
         :type offset: int
-        :param limit: **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 1000
+        :param limit: **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 10
         :type limit: int
         """
         
@@ -189,7 +189,7 @@ class ListSecurityReportSubscriptionsRequest:
     def limit(self):
         r"""Gets the limit of this ListSecurityReportSubscriptionsRequest.
 
-        **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 1000
+        **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 10
 
         :return: The limit of this ListSecurityReportSubscriptionsRequest.
         :rtype: int
@@ -200,7 +200,7 @@ class ListSecurityReportSubscriptionsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListSecurityReportSubscriptionsRequest.
 
-        **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 1000
+        **参数解释：** 分页查询的单页返回数量，控制每次请求返回的记录条数。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 10
 
         :param limit: The limit of this ListSecurityReportSubscriptionsRequest.
         :type limit: int

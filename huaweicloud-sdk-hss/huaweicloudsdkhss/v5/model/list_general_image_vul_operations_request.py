@@ -65,19 +65,19 @@ class ListGeneralImageVulOperationsRequest:
         :type image_id: str
         :param image_type: **参数解释**: 镜像类型 **约束限制**: 不涉及 **取值范围**: - local：本地镜像 - registry：仓库镜像  **默认取值**: 不涉及
         :type image_type: str
-        :param image_name: 镜像名称
+        :param image_name: **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type image_name: str
         :param status: **参数解释**: 漏洞当前状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略  **默认取值**: 不涉及
         :type status: str
-        :param user_name: **参数解释**: 处理用户名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :param user_name: **参数解释**: 处理用户名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type user_name: str
         :param handle_type: **参数解释**: 操作类型 **约束限制**: 不涉及 **取值范围**: - ignore：忽略 - not_ignore:：取消忽略 - add_to_whitelist：加入白名单  **默认取值**: 不涉及
         :type handle_type: str
-        :param app_name: **参数解释**: 应用名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :param app_name: **参数解释**: 应用名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type app_name: str
-        :param app_version: **参数解释**: 应用版本 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :param app_version: **参数解释**: 应用版本 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type app_version: str
-        :param remark: **参数解释**: 备注 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :param remark: **参数解释**: 备注 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type remark: str
         """
         
@@ -259,7 +259,7 @@ class ListGeneralImageVulOperationsRequest:
     def image_name(self):
         r"""Gets the image_name of this ListGeneralImageVulOperationsRequest.
 
-        镜像名称
+        **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The image_name of this ListGeneralImageVulOperationsRequest.
         :rtype: str
@@ -270,7 +270,7 @@ class ListGeneralImageVulOperationsRequest:
     def image_name(self, image_name):
         r"""Sets the image_name of this ListGeneralImageVulOperationsRequest.
 
-        镜像名称
+        **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param image_name: The image_name of this ListGeneralImageVulOperationsRequest.
         :type image_name: str
@@ -303,7 +303,7 @@ class ListGeneralImageVulOperationsRequest:
     def user_name(self):
         r"""Gets the user_name of this ListGeneralImageVulOperationsRequest.
 
-        **参数解释**: 处理用户名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 处理用户名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The user_name of this ListGeneralImageVulOperationsRequest.
         :rtype: str
@@ -314,7 +314,7 @@ class ListGeneralImageVulOperationsRequest:
     def user_name(self, user_name):
         r"""Sets the user_name of this ListGeneralImageVulOperationsRequest.
 
-        **参数解释**: 处理用户名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 处理用户名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param user_name: The user_name of this ListGeneralImageVulOperationsRequest.
         :type user_name: str
@@ -347,7 +347,7 @@ class ListGeneralImageVulOperationsRequest:
     def app_name(self):
         r"""Gets the app_name of this ListGeneralImageVulOperationsRequest.
 
-        **参数解释**: 应用名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 应用名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The app_name of this ListGeneralImageVulOperationsRequest.
         :rtype: str
@@ -358,7 +358,7 @@ class ListGeneralImageVulOperationsRequest:
     def app_name(self, app_name):
         r"""Sets the app_name of this ListGeneralImageVulOperationsRequest.
 
-        **参数解释**: 应用名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 应用名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param app_name: The app_name of this ListGeneralImageVulOperationsRequest.
         :type app_name: str
@@ -369,7 +369,7 @@ class ListGeneralImageVulOperationsRequest:
     def app_version(self):
         r"""Gets the app_version of this ListGeneralImageVulOperationsRequest.
 
-        **参数解释**: 应用版本 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 应用版本 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The app_version of this ListGeneralImageVulOperationsRequest.
         :rtype: str
@@ -380,7 +380,7 @@ class ListGeneralImageVulOperationsRequest:
     def app_version(self, app_version):
         r"""Sets the app_version of this ListGeneralImageVulOperationsRequest.
 
-        **参数解释**: 应用版本 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 应用版本 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param app_version: The app_version of this ListGeneralImageVulOperationsRequest.
         :type app_version: str
@@ -391,7 +391,7 @@ class ListGeneralImageVulOperationsRequest:
     def remark(self):
         r"""Gets the remark of this ListGeneralImageVulOperationsRequest.
 
-        **参数解释**: 备注 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 备注 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The remark of this ListGeneralImageVulOperationsRequest.
         :rtype: str
@@ -402,7 +402,7 @@ class ListGeneralImageVulOperationsRequest:
     def remark(self, remark):
         r"""Sets the remark of this ListGeneralImageVulOperationsRequest.
 
-        **参数解释**: 备注 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        **参数解释**: 备注 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param remark: The remark of this ListGeneralImageVulOperationsRequest.
         :type remark: str

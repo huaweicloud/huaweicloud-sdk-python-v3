@@ -18,6 +18,8 @@ class ListVulHostAppsRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
+        'limit': 'int',
+        'offset': 'int',
         'host_id': 'str',
         'vul_id': 'str',
         'handle_status': 'str',
@@ -27,6 +29,8 @@ class ListVulHostAppsRequest:
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
+        'limit': 'limit',
+        'offset': 'offset',
         'host_id': 'host_id',
         'vul_id': 'vul_id',
         'handle_status': 'handle_status',
@@ -34,13 +38,17 @@ class ListVulHostAppsRequest:
         'is_container': 'is_container'
     }
 
-    def __init__(self, enterprise_project_id=None, host_id=None, vul_id=None, handle_status=None, container_id=None, is_container=None):
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, host_id=None, vul_id=None, handle_status=None, container_id=None, is_container=None):
         r"""ListVulHostAppsRequest
 
         The model defined in huaweicloud sdk
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :type limit: int
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
+        :type offset: int
         :param host_id: **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 字符长度1-128 **默认取值**: 不涉及 
         :type host_id: str
         :param vul_id: **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
@@ -56,6 +64,8 @@ class ListVulHostAppsRequest:
         
 
         self._enterprise_project_id = None
+        self._limit = None
+        self._offset = None
         self._host_id = None
         self._vul_id = None
         self._handle_status = None
@@ -65,6 +75,10 @@ class ListVulHostAppsRequest:
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
         self.host_id = host_id
         if vul_id is not None:
             self.vul_id = vul_id
@@ -96,6 +110,50 @@ class ListVulHostAppsRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListVulHostAppsRequest.
+
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+
+        :return: The limit of this ListVulHostAppsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListVulHostAppsRequest.
+
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+
+        :param limit: The limit of this ListVulHostAppsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListVulHostAppsRequest.
+
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
+
+        :return: The offset of this ListVulHostAppsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListVulHostAppsRequest.
+
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
+
+        :param offset: The offset of this ListVulHostAppsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     @property
     def host_id(self):

@@ -45,7 +45,7 @@ class ClusterItemResponseInfo:
         :type cluster_ns: list[str]
         :param cluster_labels: 集群标签
         :type cluster_labels: list[str]
-        :param protect_status: 集群防护状态 | - \&quot;0\&quot; unprotected - \&quot;1\&quot; plugin error - \&quot;2\&quot; protected with policy - \&quot;3\&quot; deploy policy failed - \&quot;4\&quot; protected without policy - \&quot;5\&quot; uninstall failed - \&quot;6\&quot; uninstall - \&quot;7\&quot; installing
+        :param protect_status: **参数解释**： 集群防护状态 **取值范围**: - unprotected：未受保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 - installing：正在安装。 
         :type protect_status: str
         """
         
@@ -161,7 +161,7 @@ class ClusterItemResponseInfo:
     def protect_status(self):
         r"""Gets the protect_status of this ClusterItemResponseInfo.
 
-        集群防护状态 | - \"0\" unprotected - \"1\" plugin error - \"2\" protected with policy - \"3\" deploy policy failed - \"4\" protected without policy - \"5\" uninstall failed - \"6\" uninstall - \"7\" installing
+        **参数解释**： 集群防护状态 **取值范围**: - unprotected：未受保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 - installing：正在安装。 
 
         :return: The protect_status of this ClusterItemResponseInfo.
         :rtype: str
@@ -172,7 +172,7 @@ class ClusterItemResponseInfo:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ClusterItemResponseInfo.
 
-        集群防护状态 | - \"0\" unprotected - \"1\" plugin error - \"2\" protected with policy - \"3\" deploy policy failed - \"4\" protected without policy - \"5\" uninstall failed - \"6\" uninstall - \"7\" installing
+        **参数解释**： 集群防护状态 **取值范围**: - unprotected：未受保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 - installing：正在安装。 
 
         :param protect_status: The protect_status of this ClusterItemResponseInfo.
         :type protect_status: str

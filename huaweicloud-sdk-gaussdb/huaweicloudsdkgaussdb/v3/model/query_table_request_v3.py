@@ -53,14 +53,10 @@ class QueryTableRequestV3:
         self._filter_type = None
         self.discriminator = None
 
-        if database_tables is not None:
-            self.database_tables = database_tables
-        if source_instance_id is not None:
-            self.source_instance_id = source_instance_id
-        if selected_tables is not None:
-            self.selected_tables = selected_tables
-        if filter_type is not None:
-            self.filter_type = filter_type
+        self.database_tables = database_tables
+        self.source_instance_id = source_instance_id
+        self.selected_tables = selected_tables
+        self.filter_type = filter_type
 
     @property
     def database_tables(self):

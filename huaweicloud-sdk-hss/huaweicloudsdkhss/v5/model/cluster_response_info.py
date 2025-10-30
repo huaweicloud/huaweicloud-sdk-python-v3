@@ -47,11 +47,11 @@ class ClusterResponseInfo:
         :type cluster_id: str
         :param cluster_version: 集群版本
         :type cluster_version: str
-        :param protect_status: 防护状态 - unprotected - plugin error - protected with policy - deploy policy failed - protected without policy - uninstall failed - uninstall
+        :param protect_status: **参数解释**： 防护状态 **取值范围**: - unprotected：未保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 
         :type protect_status: str
         :param policy_num: 策略数量
         :type policy_num: int
-        :param cluster_status: 集群运行状态 - Available - Unavailable
+        :param cluster_status: **参数解释**： 集群运行状态 **取值范围**: - Available：可用。 - Unavailable：不可用。 
         :type cluster_status: str
         :param cluster_type: 集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws：亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
         :type cluster_type: str
@@ -153,7 +153,7 @@ class ClusterResponseInfo:
     def protect_status(self):
         r"""Gets the protect_status of this ClusterResponseInfo.
 
-        防护状态 - unprotected - plugin error - protected with policy - deploy policy failed - protected without policy - uninstall failed - uninstall
+        **参数解释**： 防护状态 **取值范围**: - unprotected：未保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 
 
         :return: The protect_status of this ClusterResponseInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class ClusterResponseInfo:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ClusterResponseInfo.
 
-        防护状态 - unprotected - plugin error - protected with policy - deploy policy failed - protected without policy - uninstall failed - uninstall
+        **参数解释**： 防护状态 **取值范围**: - unprotected：未保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 
 
         :param protect_status: The protect_status of this ClusterResponseInfo.
         :type protect_status: str
@@ -197,7 +197,7 @@ class ClusterResponseInfo:
     def cluster_status(self):
         r"""Gets the cluster_status of this ClusterResponseInfo.
 
-        集群运行状态 - Available - Unavailable
+        **参数解释**： 集群运行状态 **取值范围**: - Available：可用。 - Unavailable：不可用。 
 
         :return: The cluster_status of this ClusterResponseInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class ClusterResponseInfo:
     def cluster_status(self, cluster_status):
         r"""Sets the cluster_status of this ClusterResponseInfo.
 
-        集群运行状态 - Available - Unavailable
+        **参数解释**： 集群运行状态 **取值范围**: - Available：可用。 - Unavailable：不可用。 
 
         :param cluster_status: The cluster_status of this ClusterResponseInfo.
         :type cluster_status: str

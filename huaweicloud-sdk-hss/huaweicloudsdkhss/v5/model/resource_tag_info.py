@@ -31,7 +31,7 @@ class ResourceTagInfo:
 
         The model defined in huaweicloud sdk
 
-        :param key: **参数解释**: 键 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位，key不能为空 **默认取值**: 不涉及 
+        :param key: **参数解释**: 键 **约束限制**: key不能为空 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type key: str
         :param value: **参数解释**: 值 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type value: str
@@ -50,7 +50,7 @@ class ResourceTagInfo:
     def key(self):
         r"""Gets the key of this ResourceTagInfo.
 
-        **参数解释**: 键 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位，key不能为空 **默认取值**: 不涉及 
+        **参数解释**: 键 **约束限制**: key不能为空 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The key of this ResourceTagInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class ResourceTagInfo:
     def key(self, key):
         r"""Sets the key of this ResourceTagInfo.
 
-        **参数解释**: 键 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位，key不能为空 **默认取值**: 不涉及 
+        **参数解释**: 键 **约束限制**: key不能为空 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param key: The key of this ResourceTagInfo.
         :type key: str

@@ -18,17 +18,15 @@ class BatchUpgradeDatabasesRequestBody:
 
     openapi_types = {
         'databases_instance_infos': 'list[UpgradeDatabasesSingleInstance]',
-        'delay': 'str',
-        'is_skip_validate': 'bool'
+        'delay': 'str'
     }
 
     attribute_map = {
         'databases_instance_infos': 'databases_instance_infos',
-        'delay': 'delay',
-        'is_skip_validate': 'is_skip_validate'
+        'delay': 'delay'
     }
 
-    def __init__(self, databases_instance_infos=None, delay=None, is_skip_validate=None):
+    def __init__(self, databases_instance_infos=None, delay=None):
         r"""BatchUpgradeDatabasesRequestBody
 
         The model defined in huaweicloud sdk
@@ -37,21 +35,16 @@ class BatchUpgradeDatabasesRequestBody:
         :type databases_instance_infos: list[:class:`huaweicloudsdkgaussdb.v3.UpgradeDatabasesSingleInstance`]
         :param delay: 是否延迟升级。
         :type delay: str
-        :param is_skip_validate: 是否跳过校验。
-        :type is_skip_validate: bool
         """
         
         
 
         self._databases_instance_infos = None
         self._delay = None
-        self._is_skip_validate = None
         self.discriminator = None
 
         self.databases_instance_infos = databases_instance_infos
         self.delay = delay
-        if is_skip_validate is not None:
-            self.is_skip_validate = is_skip_validate
 
     @property
     def databases_instance_infos(self):
@@ -96,28 +89,6 @@ class BatchUpgradeDatabasesRequestBody:
         :type delay: str
         """
         self._delay = delay
-
-    @property
-    def is_skip_validate(self):
-        r"""Gets the is_skip_validate of this BatchUpgradeDatabasesRequestBody.
-
-        是否跳过校验。
-
-        :return: The is_skip_validate of this BatchUpgradeDatabasesRequestBody.
-        :rtype: bool
-        """
-        return self._is_skip_validate
-
-    @is_skip_validate.setter
-    def is_skip_validate(self, is_skip_validate):
-        r"""Sets the is_skip_validate of this BatchUpgradeDatabasesRequestBody.
-
-        是否跳过校验。
-
-        :param is_skip_validate: The is_skip_validate of this BatchUpgradeDatabasesRequestBody.
-        :type is_skip_validate: bool
-        """
-        self._is_skip_validate = is_skip_validate
 
     def to_dict(self):
         """Returns the model properties as a dict"""

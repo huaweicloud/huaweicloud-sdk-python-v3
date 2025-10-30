@@ -26,6 +26,8 @@ class CreateIgnoreRuleResponse(SdkResponse):
         'rule': 'str',
         'mode': 'int',
         'conditions': 'list[Condition]',
+        'multi_condition': 'bool',
+        'producer': 'int',
         'advanced': 'IgnoreAdvanced',
         'domain': 'list[str]'
     }
@@ -39,11 +41,13 @@ class CreateIgnoreRuleResponse(SdkResponse):
         'rule': 'rule',
         'mode': 'mode',
         'conditions': 'conditions',
+        'multi_condition': 'multiCondition',
+        'producer': 'producer',
         'advanced': 'advanced',
         'domain': 'domain'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, rule=None, mode=None, conditions=None, advanced=None, domain=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, rule=None, mode=None, conditions=None, multi_condition=None, producer=None, advanced=None, domain=None):
         r"""CreateIgnoreRuleResponse
 
         The model defined in huaweicloud sdk
@@ -64,6 +68,10 @@ class CreateIgnoreRuleResponse(SdkResponse):
         :type mode: int
         :param conditions: 条件列表
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
+        :param multi_condition: 附加条件
+        :type multi_condition: bool
+        :param producer: 引用表来源，1代表用户创建，其它值代表modulleX自动生成
+        :type producer: int
         :param advanced: 
         :type advanced: :class:`huaweicloudsdkwaf.v1.IgnoreAdvanced`
         :param domain: 防护域名或防护网站
@@ -80,6 +88,8 @@ class CreateIgnoreRuleResponse(SdkResponse):
         self._rule = None
         self._mode = None
         self._conditions = None
+        self._multi_condition = None
+        self._producer = None
         self._advanced = None
         self._domain = None
         self.discriminator = None
@@ -100,6 +110,10 @@ class CreateIgnoreRuleResponse(SdkResponse):
             self.mode = mode
         if conditions is not None:
             self.conditions = conditions
+        if multi_condition is not None:
+            self.multi_condition = multi_condition
+        if producer is not None:
+            self.producer = producer
         if advanced is not None:
             self.advanced = advanced
         if domain is not None:
@@ -280,6 +294,50 @@ class CreateIgnoreRuleResponse(SdkResponse):
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
         """
         self._conditions = conditions
+
+    @property
+    def multi_condition(self):
+        r"""Gets the multi_condition of this CreateIgnoreRuleResponse.
+
+        附加条件
+
+        :return: The multi_condition of this CreateIgnoreRuleResponse.
+        :rtype: bool
+        """
+        return self._multi_condition
+
+    @multi_condition.setter
+    def multi_condition(self, multi_condition):
+        r"""Sets the multi_condition of this CreateIgnoreRuleResponse.
+
+        附加条件
+
+        :param multi_condition: The multi_condition of this CreateIgnoreRuleResponse.
+        :type multi_condition: bool
+        """
+        self._multi_condition = multi_condition
+
+    @property
+    def producer(self):
+        r"""Gets the producer of this CreateIgnoreRuleResponse.
+
+        引用表来源，1代表用户创建，其它值代表modulleX自动生成
+
+        :return: The producer of this CreateIgnoreRuleResponse.
+        :rtype: int
+        """
+        return self._producer
+
+    @producer.setter
+    def producer(self, producer):
+        r"""Sets the producer of this CreateIgnoreRuleResponse.
+
+        引用表来源，1代表用户创建，其它值代表modulleX自动生成
+
+        :param producer: The producer of this CreateIgnoreRuleResponse.
+        :type producer: int
+        """
+        self._producer = producer
 
     @property
     def advanced(self):

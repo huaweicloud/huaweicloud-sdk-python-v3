@@ -37,15 +37,15 @@ class CheckRuleFixParamInfo:
 
         The model defined in huaweicloud sdk
 
-        :param rule_param_id: **参数解释**: 检查项参数ID **取值范围**: 不涉及 
+        :param rule_param_id: **参数解释** 检查项参数ID **取值范围** 取值0-10
         :type rule_param_id: int
-        :param rule_desc: **参数解释**: 检查项参数描述 **取值范围**: 不涉及 
+        :param rule_desc: **参数解释** 检查项参数描述 **取值范围** 字符长度0-256位
         :type rule_desc: str
-        :param default_value: **参数解释**: 检查项参数默认值 **取值范围**: 不涉及 
+        :param default_value: **参数解释** 检查项参数默认值 **取值范围** 取值0-2147483647
         :type default_value: int
-        :param range_min: **参数解释**: 检查项参数可取最小值 **取值范围**: 不涉及 
+        :param range_min: **参数解释** 检查项参数可取最小值 **取值范围** 取值0-2147483647
         :type range_min: int
-        :param range_max: **参数解释**: 检查项参数可取最大值 **取值范围**: 不涉及 
+        :param range_max: **参数解释** 检查项参数可取最大值 **取值范围** 取值0-2147483647
         :type range_max: int
         """
         
@@ -73,7 +73,7 @@ class CheckRuleFixParamInfo:
     def rule_param_id(self):
         r"""Gets the rule_param_id of this CheckRuleFixParamInfo.
 
-        **参数解释**: 检查项参数ID **取值范围**: 不涉及 
+        **参数解释** 检查项参数ID **取值范围** 取值0-10
 
         :return: The rule_param_id of this CheckRuleFixParamInfo.
         :rtype: int
@@ -84,7 +84,7 @@ class CheckRuleFixParamInfo:
     def rule_param_id(self, rule_param_id):
         r"""Sets the rule_param_id of this CheckRuleFixParamInfo.
 
-        **参数解释**: 检查项参数ID **取值范围**: 不涉及 
+        **参数解释** 检查项参数ID **取值范围** 取值0-10
 
         :param rule_param_id: The rule_param_id of this CheckRuleFixParamInfo.
         :type rule_param_id: int
@@ -95,7 +95,7 @@ class CheckRuleFixParamInfo:
     def rule_desc(self):
         r"""Gets the rule_desc of this CheckRuleFixParamInfo.
 
-        **参数解释**: 检查项参数描述 **取值范围**: 不涉及 
+        **参数解释** 检查项参数描述 **取值范围** 字符长度0-256位
 
         :return: The rule_desc of this CheckRuleFixParamInfo.
         :rtype: str
@@ -106,7 +106,7 @@ class CheckRuleFixParamInfo:
     def rule_desc(self, rule_desc):
         r"""Sets the rule_desc of this CheckRuleFixParamInfo.
 
-        **参数解释**: 检查项参数描述 **取值范围**: 不涉及 
+        **参数解释** 检查项参数描述 **取值范围** 字符长度0-256位
 
         :param rule_desc: The rule_desc of this CheckRuleFixParamInfo.
         :type rule_desc: str
@@ -117,7 +117,7 @@ class CheckRuleFixParamInfo:
     def default_value(self):
         r"""Gets the default_value of this CheckRuleFixParamInfo.
 
-        **参数解释**: 检查项参数默认值 **取值范围**: 不涉及 
+        **参数解释** 检查项参数默认值 **取值范围** 取值0-2147483647
 
         :return: The default_value of this CheckRuleFixParamInfo.
         :rtype: int
@@ -128,7 +128,7 @@ class CheckRuleFixParamInfo:
     def default_value(self, default_value):
         r"""Sets the default_value of this CheckRuleFixParamInfo.
 
-        **参数解释**: 检查项参数默认值 **取值范围**: 不涉及 
+        **参数解释** 检查项参数默认值 **取值范围** 取值0-2147483647
 
         :param default_value: The default_value of this CheckRuleFixParamInfo.
         :type default_value: int
@@ -139,7 +139,7 @@ class CheckRuleFixParamInfo:
     def range_min(self):
         r"""Gets the range_min of this CheckRuleFixParamInfo.
 
-        **参数解释**: 检查项参数可取最小值 **取值范围**: 不涉及 
+        **参数解释** 检查项参数可取最小值 **取值范围** 取值0-2147483647
 
         :return: The range_min of this CheckRuleFixParamInfo.
         :rtype: int
@@ -150,7 +150,7 @@ class CheckRuleFixParamInfo:
     def range_min(self, range_min):
         r"""Sets the range_min of this CheckRuleFixParamInfo.
 
-        **参数解释**: 检查项参数可取最小值 **取值范围**: 不涉及 
+        **参数解释** 检查项参数可取最小值 **取值范围** 取值0-2147483647
 
         :param range_min: The range_min of this CheckRuleFixParamInfo.
         :type range_min: int
@@ -161,7 +161,7 @@ class CheckRuleFixParamInfo:
     def range_max(self):
         r"""Gets the range_max of this CheckRuleFixParamInfo.
 
-        **参数解释**: 检查项参数可取最大值 **取值范围**: 不涉及 
+        **参数解释** 检查项参数可取最大值 **取值范围** 取值0-2147483647
 
         :return: The range_max of this CheckRuleFixParamInfo.
         :rtype: int
@@ -172,7 +172,7 @@ class CheckRuleFixParamInfo:
     def range_max(self, range_max):
         r"""Sets the range_max of this CheckRuleFixParamInfo.
 
-        **参数解释**: 检查项参数可取最大值 **取值范围**: 不涉及 
+        **参数解释** 检查项参数可取最大值 **取值范围** 取值0-2147483647
 
         :param range_max: The range_max of this CheckRuleFixParamInfo.
         :type range_max: int

@@ -20,6 +20,7 @@ class ListWebSiteStatisticsRequest:
         'enterprise_project_id': 'str',
         'offset': 'int',
         'limit': 'int',
+        'category': 'str',
         'domain': 'str'
     }
 
@@ -27,10 +28,11 @@ class ListWebSiteStatisticsRequest:
         'enterprise_project_id': 'enterprise_project_id',
         'offset': 'offset',
         'limit': 'limit',
+        'category': 'category',
         'domain': 'domain'
     }
 
-    def __init__(self, enterprise_project_id=None, offset=None, limit=None, domain=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, category=None, domain=None):
         r"""ListWebSiteStatisticsRequest
 
         The model defined in huaweicloud sdk
@@ -41,7 +43,9 @@ class ListWebSiteStatisticsRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param domain: 域名
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        :type category: str
+        :param domain: **参数解释**: 域名 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
         :type domain: str
         """
         
@@ -50,6 +54,7 @@ class ListWebSiteStatisticsRequest:
         self._enterprise_project_id = None
         self._offset = None
         self._limit = None
+        self._category = None
         self._domain = None
         self.discriminator = None
 
@@ -59,6 +64,7 @@ class ListWebSiteStatisticsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        self.category = category
         if domain is not None:
             self.domain = domain
 
@@ -129,10 +135,32 @@ class ListWebSiteStatisticsRequest:
         self._limit = limit
 
     @property
+    def category(self):
+        r"""Gets the category of this ListWebSiteStatisticsRequest.
+
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+
+        :return: The category of this ListWebSiteStatisticsRequest.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        r"""Sets the category of this ListWebSiteStatisticsRequest.
+
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+
+        :param category: The category of this ListWebSiteStatisticsRequest.
+        :type category: str
+        """
+        self._category = category
+
+    @property
     def domain(self):
         r"""Gets the domain of this ListWebSiteStatisticsRequest.
 
-        域名
+        **参数解释**: 域名 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
 
         :return: The domain of this ListWebSiteStatisticsRequest.
         :rtype: str
@@ -143,7 +171,7 @@ class ListWebSiteStatisticsRequest:
     def domain(self, domain):
         r"""Sets the domain of this ListWebSiteStatisticsRequest.
 
-        域名
+        **参数解释**: 域名 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
 
         :param domain: The domain of this ListWebSiteStatisticsRequest.
         :type domain: str

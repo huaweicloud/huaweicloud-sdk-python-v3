@@ -175,7 +175,11 @@ from huaweicloudsdkdrs.v3.model.list_obeject_level_compare_overview_request impo
 from huaweicloudsdkdrs.v3.model.list_obeject_level_compare_overview_response import ListObejectLevelCompareOverviewResponse
 from huaweicloudsdkdrs.v3.model.list_users_request import ListUsersRequest
 from huaweicloudsdkdrs.v3.model.list_users_response import ListUsersResponse
+from huaweicloudsdkdrs.v3.model.lts_info import LtsInfo
+from huaweicloudsdkdrs.v3.model.lts_info_job import LtsInfoJob
 from huaweicloudsdkdrs.v3.model.modify_db_pwd_resp import ModifyDbPwdResp
+from huaweicloudsdkdrs.v3.model.modify_group_and_stream_request import ModifyGroupAndStreamRequest
+from huaweicloudsdkdrs.v3.model.modify_group_and_stream_response import ModifyGroupAndStreamResponse
 from huaweicloudsdkdrs.v3.model.modify_job_req import ModifyJobReq
 from huaweicloudsdkdrs.v3.model.modify_job_resp import ModifyJobResp
 from huaweicloudsdkdrs.v3.model.modify_pwd_end_point import ModifyPwdEndPoint
@@ -219,6 +223,8 @@ from huaweicloudsdkdrs.v3.model.query_smn_info_resp import QuerySmnInfoResp
 from huaweicloudsdkdrs.v3.model.query_struct_detail_resp import QueryStructDetailResp
 from huaweicloudsdkdrs.v3.model.query_struct_process_resp import QueryStructProcessResp
 from huaweicloudsdkdrs.v3.model.query_support_node_type_bean import QuerySupportNodeTypeBean
+from huaweicloudsdkdrs.v3.model.query_tuning_params_request import QueryTuningParamsRequest
+from huaweicloudsdkdrs.v3.model.query_tuning_params_response import QueryTuningParamsResponse
 from huaweicloudsdkdrs.v3.model.query_user_detail_resp import QueryUserDetailResp
 from huaweicloudsdkdrs.v3.model.query_user_resp import QueryUserResp
 from huaweicloudsdkdrs.v3.model.quota_resource import QuotaResource
@@ -227,6 +233,8 @@ from huaweicloudsdkdrs.v3.model.resource_tag import ResourceTag
 from huaweicloudsdkdrs.v3.model.retry_info import RetryInfo
 from huaweicloudsdkdrs.v3.model.retry_task_resp import RetryTaskResp
 from huaweicloudsdkdrs.v3.model.rpo_and_rto_info import RpoAndRtoInfo
+from huaweicloudsdkdrs.v3.model.select_group_and_stream_request import SelectGroupAndStreamRequest
+from huaweicloudsdkdrs.v3.model.select_group_and_stream_response import SelectGroupAndStreamResponse
 from huaweicloudsdkdrs.v3.model.selected_set_alarm_task_req import SelectedSetAlarmTaskReq
 from huaweicloudsdkdrs.v3.model.show_job_list_request import ShowJobListRequest
 from huaweicloudsdkdrs.v3.model.show_job_list_response import ShowJobListResponse

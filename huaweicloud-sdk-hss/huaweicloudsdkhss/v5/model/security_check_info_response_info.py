@@ -19,6 +19,8 @@ class SecurityCheckInfoResponseInfo:
     openapi_types = {
         'severity': 'str',
         'check_name': 'str',
+        'baseline_name': 'str',
+        'key': 'str',
         'check_type': 'str',
         'standard': 'str',
         'executable_file_path': 'str',
@@ -32,6 +34,8 @@ class SecurityCheckInfoResponseInfo:
     attribute_map = {
         'severity': 'severity',
         'check_name': 'check_name',
+        'baseline_name': 'baseline_name',
+        'key': 'key',
         'check_type': 'check_type',
         'standard': 'standard',
         'executable_file_path': 'executable_file_path',
@@ -42,7 +46,7 @@ class SecurityCheckInfoResponseInfo:
         'check_type_desc': 'check_type_desc'
     }
 
-    def __init__(self, severity=None, check_name=None, check_type=None, standard=None, executable_file_path=None, check_rule_num=None, failed_rule_num=None, host_num=None, scan_time=None, check_type_desc=None):
+    def __init__(self, severity=None, check_name=None, baseline_name=None, key=None, check_type=None, standard=None, executable_file_path=None, check_rule_num=None, failed_rule_num=None, host_num=None, scan_time=None, check_type_desc=None):
         r"""SecurityCheckInfoResponseInfo
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class SecurityCheckInfoResponseInfo:
         :type severity: str
         :param check_name: **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **取值范围**: 不涉及 
         :type check_name: str
+        :param baseline_name: **参数解释** 基线的名称，例如SSH 应用基线检查、CentOS 7 系统基线检查、Windows 系统基线检查 **取值范围**  字符长度0-256位
+        :type baseline_name: str
+        :param key: **参数解释** 配置检查（基线）的唯一值，例如SSH、CentOS 7、Windows **取值范围**  字符长度0-256位
+        :type key: str
         :param check_type: **参数解释**: 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **取值范围**: 不涉及 
         :type check_type: str
         :param standard: **参数解释**: 标准类型 **取值范围**: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 
@@ -73,6 +81,8 @@ class SecurityCheckInfoResponseInfo:
 
         self._severity = None
         self._check_name = None
+        self._baseline_name = None
+        self._key = None
         self._check_type = None
         self._standard = None
         self._executable_file_path = None
@@ -87,6 +97,10 @@ class SecurityCheckInfoResponseInfo:
             self.severity = severity
         if check_name is not None:
             self.check_name = check_name
+        if baseline_name is not None:
+            self.baseline_name = baseline_name
+        if key is not None:
+            self.key = key
         if check_type is not None:
             self.check_type = check_type
         if standard is not None:
@@ -147,6 +161,50 @@ class SecurityCheckInfoResponseInfo:
         :type check_name: str
         """
         self._check_name = check_name
+
+    @property
+    def baseline_name(self):
+        r"""Gets the baseline_name of this SecurityCheckInfoResponseInfo.
+
+        **参数解释** 基线的名称，例如SSH 应用基线检查、CentOS 7 系统基线检查、Windows 系统基线检查 **取值范围**  字符长度0-256位
+
+        :return: The baseline_name of this SecurityCheckInfoResponseInfo.
+        :rtype: str
+        """
+        return self._baseline_name
+
+    @baseline_name.setter
+    def baseline_name(self, baseline_name):
+        r"""Sets the baseline_name of this SecurityCheckInfoResponseInfo.
+
+        **参数解释** 基线的名称，例如SSH 应用基线检查、CentOS 7 系统基线检查、Windows 系统基线检查 **取值范围**  字符长度0-256位
+
+        :param baseline_name: The baseline_name of this SecurityCheckInfoResponseInfo.
+        :type baseline_name: str
+        """
+        self._baseline_name = baseline_name
+
+    @property
+    def key(self):
+        r"""Gets the key of this SecurityCheckInfoResponseInfo.
+
+        **参数解释** 配置检查（基线）的唯一值，例如SSH、CentOS 7、Windows **取值范围**  字符长度0-256位
+
+        :return: The key of this SecurityCheckInfoResponseInfo.
+        :rtype: str
+        """
+        return self._key
+
+    @key.setter
+    def key(self, key):
+        r"""Sets the key of this SecurityCheckInfoResponseInfo.
+
+        **参数解释** 配置检查（基线）的唯一值，例如SSH、CentOS 7、Windows **取值范围**  字符长度0-256位
+
+        :param key: The key of this SecurityCheckInfoResponseInfo.
+        :type key: str
+        """
+        self._key = key
 
     @property
     def check_type(self):

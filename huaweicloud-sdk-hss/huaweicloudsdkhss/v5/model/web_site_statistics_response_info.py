@@ -31,9 +31,9 @@ class WebSiteStatisticsResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param domain: Web站点域名
+        :param domain: **参数解释**: Web站点域名 **取值范围**: 字符长度0-256 
         :type domain: str
-        :param num: Web站点统计信息总数
+        :param num: **参数解释** Web站点统计信息总数 **取值范围** 最小值0，最大值300000 
         :type num: int
         """
         
@@ -52,7 +52,7 @@ class WebSiteStatisticsResponseInfo:
     def domain(self):
         r"""Gets the domain of this WebSiteStatisticsResponseInfo.
 
-        Web站点域名
+        **参数解释**: Web站点域名 **取值范围**: 字符长度0-256 
 
         :return: The domain of this WebSiteStatisticsResponseInfo.
         :rtype: str
@@ -63,7 +63,7 @@ class WebSiteStatisticsResponseInfo:
     def domain(self, domain):
         r"""Sets the domain of this WebSiteStatisticsResponseInfo.
 
-        Web站点域名
+        **参数解释**: Web站点域名 **取值范围**: 字符长度0-256 
 
         :param domain: The domain of this WebSiteStatisticsResponseInfo.
         :type domain: str
@@ -74,7 +74,7 @@ class WebSiteStatisticsResponseInfo:
     def num(self):
         r"""Gets the num of this WebSiteStatisticsResponseInfo.
 
-        Web站点统计信息总数
+        **参数解释** Web站点统计信息总数 **取值范围** 最小值0，最大值300000 
 
         :return: The num of this WebSiteStatisticsResponseInfo.
         :rtype: int
@@ -85,7 +85,7 @@ class WebSiteStatisticsResponseInfo:
     def num(self, num):
         r"""Sets the num of this WebSiteStatisticsResponseInfo.
 
-        Web站点统计信息总数
+        **参数解释** Web站点统计信息总数 **取值范围** 最小值0，最大值300000 
 
         :param num: The num of this WebSiteStatisticsResponseInfo.
         :type num: int

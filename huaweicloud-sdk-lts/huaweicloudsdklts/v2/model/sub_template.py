@@ -19,16 +19,20 @@ class SubTemplate:
     openapi_types = {
         'sub_type': 'str',
         'content': 'str',
-        'topic': 'str'
+        'topic': 'str',
+        'send_type': 'str',
+        'version': 'str'
     }
 
     attribute_map = {
         'sub_type': 'sub_type',
         'content': 'content',
-        'topic': 'topic'
+        'topic': 'topic',
+        'send_type': 'sendType',
+        'version': 'version'
     }
 
-    def __init__(self, sub_type=None, content=None, topic=None):
+    def __init__(self, sub_type=None, content=None, topic=None, send_type=None, version=None):
         r"""SubTemplate
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class SubTemplate:
         :type content: str
         :param topic: 邮件主题,只有sub_type&#x3D;email时生效
         :type topic: str
+        :param send_type: **参数解释：**  当消息模板类型为webhook时生效，决定该消息的渲染方式。 **取值范围：**  - HTML - JSON
+        :type send_type: str
+        :param version: **参数解释：**  消息模板的适用版本。 **取值范围：**   v1：标识为LTS的消息模板。
+        :type version: str
         """
         
         
@@ -46,12 +54,18 @@ class SubTemplate:
         self._sub_type = None
         self._content = None
         self._topic = None
+        self._send_type = None
+        self._version = None
         self.discriminator = None
 
         self.sub_type = sub_type
         self.content = content
         if topic is not None:
             self.topic = topic
+        if send_type is not None:
+            self.send_type = send_type
+        if version is not None:
+            self.version = version
 
     @property
     def sub_type(self):
@@ -118,6 +132,50 @@ class SubTemplate:
         :type topic: str
         """
         self._topic = topic
+
+    @property
+    def send_type(self):
+        r"""Gets the send_type of this SubTemplate.
+
+        **参数解释：**  当消息模板类型为webhook时生效，决定该消息的渲染方式。 **取值范围：**  - HTML - JSON
+
+        :return: The send_type of this SubTemplate.
+        :rtype: str
+        """
+        return self._send_type
+
+    @send_type.setter
+    def send_type(self, send_type):
+        r"""Sets the send_type of this SubTemplate.
+
+        **参数解释：**  当消息模板类型为webhook时生效，决定该消息的渲染方式。 **取值范围：**  - HTML - JSON
+
+        :param send_type: The send_type of this SubTemplate.
+        :type send_type: str
+        """
+        self._send_type = send_type
+
+    @property
+    def version(self):
+        r"""Gets the version of this SubTemplate.
+
+        **参数解释：**  消息模板的适用版本。 **取值范围：**   v1：标识为LTS的消息模板。
+
+        :return: The version of this SubTemplate.
+        :rtype: str
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        r"""Sets the version of this SubTemplate.
+
+        **参数解释：**  消息模板的适用版本。 **取值范围：**   v1：标识为LTS的消息模板。
+
+        :param version: The version of this SubTemplate.
+        :type version: str
+        """
+        self._version = version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

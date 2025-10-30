@@ -19,26 +19,30 @@ class TuningParameter:
     openapi_types = {
         'param_name': 'str',
         'param_value': 'str',
-        'availability': 'str'
+        'availability': 'str',
+        'range': 'str'
     }
 
     attribute_map = {
         'param_name': 'param_name',
         'param_value': 'param_value',
-        'availability': 'availability'
+        'availability': 'availability',
+        'range': 'range'
     }
 
-    def __init__(self, param_name=None, param_value=None, availability=None):
+    def __init__(self, param_name=None, param_value=None, availability=None, range=None):
         r"""TuningParameter
 
         The model defined in huaweicloud sdk
 
-        :param param_name: 参数名称
+        :param param_name: 参数名称。
         :type param_name: str
-        :param param_value: 参数取值
+        :param param_value: 参数取值。
         :type param_value: str
-        :param availability: 是否可用
+        :param availability: 是否可用。
         :type availability: str
+        :param range: 参数取值范围。
+        :type range: str
         """
         
         
@@ -46,6 +50,7 @@ class TuningParameter:
         self._param_name = None
         self._param_value = None
         self._availability = None
+        self._range = None
         self.discriminator = None
 
         if param_name is not None:
@@ -54,12 +59,14 @@ class TuningParameter:
             self.param_value = param_value
         if availability is not None:
             self.availability = availability
+        if range is not None:
+            self.range = range
 
     @property
     def param_name(self):
         r"""Gets the param_name of this TuningParameter.
 
-        参数名称
+        参数名称。
 
         :return: The param_name of this TuningParameter.
         :rtype: str
@@ -70,7 +77,7 @@ class TuningParameter:
     def param_name(self, param_name):
         r"""Sets the param_name of this TuningParameter.
 
-        参数名称
+        参数名称。
 
         :param param_name: The param_name of this TuningParameter.
         :type param_name: str
@@ -81,7 +88,7 @@ class TuningParameter:
     def param_value(self):
         r"""Gets the param_value of this TuningParameter.
 
-        参数取值
+        参数取值。
 
         :return: The param_value of this TuningParameter.
         :rtype: str
@@ -92,7 +99,7 @@ class TuningParameter:
     def param_value(self, param_value):
         r"""Sets the param_value of this TuningParameter.
 
-        参数取值
+        参数取值。
 
         :param param_value: The param_value of this TuningParameter.
         :type param_value: str
@@ -103,7 +110,7 @@ class TuningParameter:
     def availability(self):
         r"""Gets the availability of this TuningParameter.
 
-        是否可用
+        是否可用。
 
         :return: The availability of this TuningParameter.
         :rtype: str
@@ -114,12 +121,34 @@ class TuningParameter:
     def availability(self, availability):
         r"""Sets the availability of this TuningParameter.
 
-        是否可用
+        是否可用。
 
         :param availability: The availability of this TuningParameter.
         :type availability: str
         """
         self._availability = availability
+
+    @property
+    def range(self):
+        r"""Gets the range of this TuningParameter.
+
+        参数取值范围。
+
+        :return: The range of this TuningParameter.
+        :rtype: str
+        """
+        return self._range
+
+    @range.setter
+    def range(self, range):
+        r"""Sets the range of this TuningParameter.
+
+        参数取值范围。
+
+        :param range: The range of this TuningParameter.
+        :type range: str
+        """
+        self._range = range
 
     def to_dict(self):
         """Returns the model properties as a dict"""

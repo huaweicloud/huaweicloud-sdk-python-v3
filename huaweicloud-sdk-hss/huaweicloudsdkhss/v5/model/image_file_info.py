@@ -33,11 +33,11 @@ class ImageFileInfo:
 
         The model defined in huaweicloud sdk
 
-        :param file_name: 文件名称
+        :param file_name: **参数解释**: 文件名称 **取值范围**: 字符长度1-256 
         :type file_name: str
-        :param file_path: 文件路径
+        :param file_path: **参数解释**: 文件路径 **取值范围**: 字符长度1-256 
         :type file_path: str
-        :param size: 文件大小
+        :param size: **参数解释**: 文件大小 **取值范围**: 最小值0，最大值65535 
         :type size: int
         """
         
@@ -59,7 +59,7 @@ class ImageFileInfo:
     def file_name(self):
         r"""Gets the file_name of this ImageFileInfo.
 
-        文件名称
+        **参数解释**: 文件名称 **取值范围**: 字符长度1-256 
 
         :return: The file_name of this ImageFileInfo.
         :rtype: str
@@ -70,7 +70,7 @@ class ImageFileInfo:
     def file_name(self, file_name):
         r"""Sets the file_name of this ImageFileInfo.
 
-        文件名称
+        **参数解释**: 文件名称 **取值范围**: 字符长度1-256 
 
         :param file_name: The file_name of this ImageFileInfo.
         :type file_name: str
@@ -81,7 +81,7 @@ class ImageFileInfo:
     def file_path(self):
         r"""Gets the file_path of this ImageFileInfo.
 
-        文件路径
+        **参数解释**: 文件路径 **取值范围**: 字符长度1-256 
 
         :return: The file_path of this ImageFileInfo.
         :rtype: str
@@ -92,7 +92,7 @@ class ImageFileInfo:
     def file_path(self, file_path):
         r"""Sets the file_path of this ImageFileInfo.
 
-        文件路径
+        **参数解释**: 文件路径 **取值范围**: 字符长度1-256 
 
         :param file_path: The file_path of this ImageFileInfo.
         :type file_path: str
@@ -103,7 +103,7 @@ class ImageFileInfo:
     def size(self):
         r"""Gets the size of this ImageFileInfo.
 
-        文件大小
+        **参数解释**: 文件大小 **取值范围**: 最小值0，最大值65535 
 
         :return: The size of this ImageFileInfo.
         :rtype: int
@@ -114,7 +114,7 @@ class ImageFileInfo:
     def size(self, size):
         r"""Sets the size of this ImageFileInfo.
 
-        文件大小
+        **参数解释**: 文件大小 **取值范围**: 最小值0，最大值65535 
 
         :param size: The size of this ImageFileInfo.
         :type size: int

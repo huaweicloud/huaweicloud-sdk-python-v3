@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdkedgesec"
-version = "3.1.172"
+version = "3.1.173"
 description = "EdgeSec"
 readme = "README_PYPI.md"
 authors = [
@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Software Development"
 ]
 dependencies = [
-    "huaweicloudsdkcore>=3.1.172"
+    "huaweicloudsdkcore>=3.1.173"
 ]
 
 [project.urls]

@@ -38,15 +38,15 @@ class ListQueryExportTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务ID
+        :param task_id: **参数解释**： 任务ID **取值范围**： 字符长度1-64位
         :type task_id: str
-        :param task_name: 任务名称
+        :param task_name: **参数解释**： 任务名称 **取值范围**： 字符长度1-128位
         :type task_name: str
-        :param task_status: 导出任务状态，success:成功，failure:失败，running:运行中
+        :param task_status: **参数解释**： 导出任务状态 **取值范围**： - success：成功 - failure：失败 - running：运行中
         :type task_status: str
-        :param file_id: 文件ID
+        :param file_id: **参数解释**： 文件ID **取值范围**： 字符长度1-64位
         :type file_id: str
-        :param file_name: 文件名
+        :param file_name: **参数解释**： 文件名 **取值范围**： 字符长度1-255位
         :type file_name: str
         """
         
@@ -74,7 +74,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def task_id(self):
         r"""Gets the task_id of this ListQueryExportTaskResponse.
 
-        任务ID
+        **参数解释**： 任务ID **取值范围**： 字符长度1-64位
 
         :return: The task_id of this ListQueryExportTaskResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def task_id(self, task_id):
         r"""Sets the task_id of this ListQueryExportTaskResponse.
 
-        任务ID
+        **参数解释**： 任务ID **取值范围**： 字符长度1-64位
 
         :param task_id: The task_id of this ListQueryExportTaskResponse.
         :type task_id: str
@@ -96,7 +96,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def task_name(self):
         r"""Gets the task_name of this ListQueryExportTaskResponse.
 
-        任务名称
+        **参数解释**： 任务名称 **取值范围**： 字符长度1-128位
 
         :return: The task_name of this ListQueryExportTaskResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def task_name(self, task_name):
         r"""Sets the task_name of this ListQueryExportTaskResponse.
 
-        任务名称
+        **参数解释**： 任务名称 **取值范围**： 字符长度1-128位
 
         :param task_name: The task_name of this ListQueryExportTaskResponse.
         :type task_name: str
@@ -118,7 +118,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def task_status(self):
         r"""Gets the task_status of this ListQueryExportTaskResponse.
 
-        导出任务状态，success:成功，failure:失败，running:运行中
+        **参数解释**： 导出任务状态 **取值范围**： - success：成功 - failure：失败 - running：运行中
 
         :return: The task_status of this ListQueryExportTaskResponse.
         :rtype: str
@@ -129,7 +129,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def task_status(self, task_status):
         r"""Sets the task_status of this ListQueryExportTaskResponse.
 
-        导出任务状态，success:成功，failure:失败，running:运行中
+        **参数解释**： 导出任务状态 **取值范围**： - success：成功 - failure：失败 - running：运行中
 
         :param task_status: The task_status of this ListQueryExportTaskResponse.
         :type task_status: str
@@ -140,7 +140,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def file_id(self):
         r"""Gets the file_id of this ListQueryExportTaskResponse.
 
-        文件ID
+        **参数解释**： 文件ID **取值范围**： 字符长度1-64位
 
         :return: The file_id of this ListQueryExportTaskResponse.
         :rtype: str
@@ -151,7 +151,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def file_id(self, file_id):
         r"""Sets the file_id of this ListQueryExportTaskResponse.
 
-        文件ID
+        **参数解释**： 文件ID **取值范围**： 字符长度1-64位
 
         :param file_id: The file_id of this ListQueryExportTaskResponse.
         :type file_id: str
@@ -162,7 +162,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def file_name(self):
         r"""Gets the file_name of this ListQueryExportTaskResponse.
 
-        文件名
+        **参数解释**： 文件名 **取值范围**： 字符长度1-255位
 
         :return: The file_name of this ListQueryExportTaskResponse.
         :rtype: str
@@ -173,7 +173,7 @@ class ListQueryExportTaskResponse(SdkResponse):
     def file_name(self, file_name):
         r"""Sets the file_name of this ListQueryExportTaskResponse.
 
-        文件名
+        **参数解释**： 文件名 **取值范围**： 字符长度1-255位
 
         :param file_name: The file_name of this ListQueryExportTaskResponse.
         :type file_name: str

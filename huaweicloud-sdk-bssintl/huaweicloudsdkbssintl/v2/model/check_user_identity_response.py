@@ -20,26 +20,30 @@ class CheckUserIdentityResponse(SdkResponse):
     openapi_types = {
         'error_code': 'str',
         'error_msg': 'str',
-        'check_result': 'str'
+        'check_result': 'str',
+        'mobile_remain_available_num': 'int'
     }
 
     attribute_map = {
         'error_code': 'error_code',
         'error_msg': 'error_msg',
-        'check_result': 'check_result'
+        'check_result': 'check_result',
+        'mobile_remain_available_num': 'mobile_remain_available_num'
     }
 
-    def __init__(self, error_code=None, error_msg=None, check_result=None):
+    def __init__(self, error_code=None, error_msg=None, check_result=None, mobile_remain_available_num=None):
         r"""CheckUserIdentityResponse
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 状态码。具体请参考状态码。只有失败才会返回这个参数。
+        :param error_code: 状态码。具体请参考状态码。
         :type error_code: str
-        :param error_msg: 错误描述信息。只有失败才会返回这个参数。
+        :param error_msg: 错误描述信息。
         :type error_msg: str
-        :param check_result: available：该登录名称/手机号/邮箱有效。used_by_user：该登录名称/手机号/邮箱已被占用。
+        :param check_result: 是否可以继续注册。该参数非必填，且只允许字符串,available: 该登录名称/手机号/邮箱可以继续注册,used_by_user: 该登录名称/手机号/邮箱不可以继续注册
         :type check_result: str
+        :param mobile_remain_available_num: 手机号剩余可注册客户数量。该参数非必填，只有search_type&#x3D;mobile时，该字段才返回值。表示可以继续使用该手机号注册客户的数量。
+        :type mobile_remain_available_num: int
         """
         
         super(CheckUserIdentityResponse, self).__init__()
@@ -47,6 +51,7 @@ class CheckUserIdentityResponse(SdkResponse):
         self._error_code = None
         self._error_msg = None
         self._check_result = None
+        self._mobile_remain_available_num = None
         self.discriminator = None
 
         if error_code is not None:
@@ -55,12 +60,14 @@ class CheckUserIdentityResponse(SdkResponse):
             self.error_msg = error_msg
         if check_result is not None:
             self.check_result = check_result
+        if mobile_remain_available_num is not None:
+            self.mobile_remain_available_num = mobile_remain_available_num
 
     @property
     def error_code(self):
         r"""Gets the error_code of this CheckUserIdentityResponse.
 
-        状态码。具体请参考状态码。只有失败才会返回这个参数。
+        状态码。具体请参考状态码。
 
         :return: The error_code of this CheckUserIdentityResponse.
         :rtype: str
@@ -71,7 +78,7 @@ class CheckUserIdentityResponse(SdkResponse):
     def error_code(self, error_code):
         r"""Sets the error_code of this CheckUserIdentityResponse.
 
-        状态码。具体请参考状态码。只有失败才会返回这个参数。
+        状态码。具体请参考状态码。
 
         :param error_code: The error_code of this CheckUserIdentityResponse.
         :type error_code: str
@@ -82,7 +89,7 @@ class CheckUserIdentityResponse(SdkResponse):
     def error_msg(self):
         r"""Gets the error_msg of this CheckUserIdentityResponse.
 
-        错误描述信息。只有失败才会返回这个参数。
+        错误描述信息。
 
         :return: The error_msg of this CheckUserIdentityResponse.
         :rtype: str
@@ -93,7 +100,7 @@ class CheckUserIdentityResponse(SdkResponse):
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this CheckUserIdentityResponse.
 
-        错误描述信息。只有失败才会返回这个参数。
+        错误描述信息。
 
         :param error_msg: The error_msg of this CheckUserIdentityResponse.
         :type error_msg: str
@@ -104,7 +111,7 @@ class CheckUserIdentityResponse(SdkResponse):
     def check_result(self):
         r"""Gets the check_result of this CheckUserIdentityResponse.
 
-        available：该登录名称/手机号/邮箱有效。used_by_user：该登录名称/手机号/邮箱已被占用。
+        是否可以继续注册。该参数非必填，且只允许字符串,available: 该登录名称/手机号/邮箱可以继续注册,used_by_user: 该登录名称/手机号/邮箱不可以继续注册
 
         :return: The check_result of this CheckUserIdentityResponse.
         :rtype: str
@@ -115,12 +122,34 @@ class CheckUserIdentityResponse(SdkResponse):
     def check_result(self, check_result):
         r"""Sets the check_result of this CheckUserIdentityResponse.
 
-        available：该登录名称/手机号/邮箱有效。used_by_user：该登录名称/手机号/邮箱已被占用。
+        是否可以继续注册。该参数非必填，且只允许字符串,available: 该登录名称/手机号/邮箱可以继续注册,used_by_user: 该登录名称/手机号/邮箱不可以继续注册
 
         :param check_result: The check_result of this CheckUserIdentityResponse.
         :type check_result: str
         """
         self._check_result = check_result
+
+    @property
+    def mobile_remain_available_num(self):
+        r"""Gets the mobile_remain_available_num of this CheckUserIdentityResponse.
+
+        手机号剩余可注册客户数量。该参数非必填，只有search_type=mobile时，该字段才返回值。表示可以继续使用该手机号注册客户的数量。
+
+        :return: The mobile_remain_available_num of this CheckUserIdentityResponse.
+        :rtype: int
+        """
+        return self._mobile_remain_available_num
+
+    @mobile_remain_available_num.setter
+    def mobile_remain_available_num(self, mobile_remain_available_num):
+        r"""Sets the mobile_remain_available_num of this CheckUserIdentityResponse.
+
+        手机号剩余可注册客户数量。该参数非必填，只有search_type=mobile时，该字段才返回值。表示可以继续使用该手机号注册客户的数量。
+
+        :param mobile_remain_available_num: The mobile_remain_available_num of this CheckUserIdentityResponse.
+        :type mobile_remain_available_num: int
+        """
+        self._mobile_remain_available_num = mobile_remain_available_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

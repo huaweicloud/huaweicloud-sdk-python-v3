@@ -36,7 +36,23 @@ class RealTimeSessionResult:
         'exec_time': 'str',
         'trans_num': 'str',
         'rollback_num': 'str',
-        'sql_num': 'str'
+        'sql_num': 'str',
+        'client_port': 'str',
+        'query_id': 'str',
+        'transaction_time_cost': 'str',
+        'trace_id': 'str',
+        'global_session_id': 'str',
+        'top_transaction_id': 'str',
+        'current_transaction_id': 'str',
+        'xlog_quantity_pretty': 'str',
+        'wait_status': 'str',
+        'lwt_id': 'str',
+        'thread_name': 'str',
+        'lock_mode': 'str',
+        'parent_session_id': 'str',
+        'smp_id': 'str',
+        'lock_tag': 'str',
+        'component_name': 'str'
     }
 
     attribute_map = {
@@ -59,10 +75,26 @@ class RealTimeSessionResult:
         'exec_time': 'exec_time',
         'trans_num': 'trans_num',
         'rollback_num': 'rollback_num',
-        'sql_num': 'sql_num'
+        'sql_num': 'sql_num',
+        'client_port': 'client_port',
+        'query_id': 'query_id',
+        'transaction_time_cost': 'transaction_time_cost',
+        'trace_id': 'trace_id',
+        'global_session_id': 'global_session_id',
+        'top_transaction_id': 'top_transaction_id',
+        'current_transaction_id': 'current_transaction_id',
+        'xlog_quantity_pretty': 'xlog_quantity_pretty',
+        'wait_status': 'wait_status',
+        'lwt_id': 'lwt_id',
+        'thread_name': 'thread_name',
+        'lock_mode': 'lock_mode',
+        'parent_session_id': 'parent_session_id',
+        'smp_id': 'smp_id',
+        'lock_tag': 'lock_tag',
+        'component_name': 'component_name'
     }
 
-    def __init__(self, session_id=None, pid=None, unique_sql_id=None, database_name=None, client_ip=None, user_name=None, wait=None, block_session=None, wait_event=None, state=None, query_runtime=None, query=None, back_end_start=None, transaction_start=None, query_start=None, application_name=None, exec_time=None, trans_num=None, rollback_num=None, sql_num=None):
+    def __init__(self, session_id=None, pid=None, unique_sql_id=None, database_name=None, client_ip=None, user_name=None, wait=None, block_session=None, wait_event=None, state=None, query_runtime=None, query=None, back_end_start=None, transaction_start=None, query_start=None, application_name=None, exec_time=None, trans_num=None, rollback_num=None, sql_num=None, client_port=None, query_id=None, transaction_time_cost=None, trace_id=None, global_session_id=None, top_transaction_id=None, current_transaction_id=None, xlog_quantity_pretty=None, wait_status=None, lwt_id=None, thread_name=None, lock_mode=None, parent_session_id=None, smp_id=None, lock_tag=None, component_name=None):
         r"""RealTimeSessionResult
 
         The model defined in huaweicloud sdk
@@ -107,6 +139,38 @@ class RealTimeSessionResult:
         :type rollback_num: str
         :param sql_num: **参数解释**： 会话执行的sql数。 **取值范围**： 不涉及。
         :type sql_num: str
+        :param client_port: **参数解释**： 客户端用于与后台通讯的TCP端口号，如果使用Unix套接字，则为-1。 **取值范围**： 不涉及。
+        :type client_port: str
+        :param query_id: **参数解释**： 会话执行的sql数。 **取值范围**： 不涉及。
+        :type query_id: str
+        :param transaction_time_cost: **参数解释**： 当前用户上一次执行的事务持续时间。 **取值范围**： 不涉及。
+        :type transaction_time_cost: str
+        :param trace_id: **参数解释**： 驱动传入的trace id，用于标识应用的一次请求。 **取值范围**： 不涉及。
+        :type trace_id: str
+        :param global_session_id: **参数解释**： 当前用户上次执行的全局会话ID。 **取值范围**： 不涉及。
+        :type global_session_id: str
+        :param top_transaction_id: **参数解释**： 当前用户上次执行的顶层事务ID。 **取值范围**： 不涉及。
+        :type top_transaction_id: str
+        :param current_transaction_id: **参数解释**： 当前用户上次执行的事务ID。 **取值范围**： 不涉及。
+        :type current_transaction_id: str
+        :param xlog_quantity_pretty: **参数解释**： 当前用户上次执行的事务使用的XLOG量，易读格式。 **取值范围**： 不涉及。
+        :type xlog_quantity_pretty: str
+        :param wait_status: **参数解释**： 实例线程等待状态。 **取值范围**： 不涉及。
+        :type wait_status: str
+        :param lwt_id: **参数解释**： 实例线程的轻量级线程号。 **取值范围**： 不涉及。
+        :type lwt_id: str
+        :param thread_name: **参数解释**： 实例线程名。 **取值范围**： 不涉及。
+        :type thread_name: str
+        :param lock_mode: **参数解释**： 实例等锁模式。 **取值范围**： 不涉及。
+        :type lock_mode: str
+        :param parent_session_id: **参数解释**： 实例父会话ID。 **取值范围**： 不涉及。
+        :type parent_session_id: str
+        :param smp_id: **参数解释**： 实例并行线程的ID。 **取值范围**： 不涉及。
+        :type smp_id: str
+        :param lock_tag: **参数解释**： 实例线程正等待获取的锁的信息。 **取值范围**： 不涉及。
+        :type lock_tag: str
+        :param component_name: **参数解释**： 组件名称。 **取值范围**： 不涉及。
+        :type component_name: str
         """
         
         
@@ -131,6 +195,22 @@ class RealTimeSessionResult:
         self._trans_num = None
         self._rollback_num = None
         self._sql_num = None
+        self._client_port = None
+        self._query_id = None
+        self._transaction_time_cost = None
+        self._trace_id = None
+        self._global_session_id = None
+        self._top_transaction_id = None
+        self._current_transaction_id = None
+        self._xlog_quantity_pretty = None
+        self._wait_status = None
+        self._lwt_id = None
+        self._thread_name = None
+        self._lock_mode = None
+        self._parent_session_id = None
+        self._smp_id = None
+        self._lock_tag = None
+        self._component_name = None
         self.discriminator = None
 
         if session_id is not None:
@@ -173,6 +253,38 @@ class RealTimeSessionResult:
             self.rollback_num = rollback_num
         if sql_num is not None:
             self.sql_num = sql_num
+        if client_port is not None:
+            self.client_port = client_port
+        if query_id is not None:
+            self.query_id = query_id
+        if transaction_time_cost is not None:
+            self.transaction_time_cost = transaction_time_cost
+        if trace_id is not None:
+            self.trace_id = trace_id
+        if global_session_id is not None:
+            self.global_session_id = global_session_id
+        if top_transaction_id is not None:
+            self.top_transaction_id = top_transaction_id
+        if current_transaction_id is not None:
+            self.current_transaction_id = current_transaction_id
+        if xlog_quantity_pretty is not None:
+            self.xlog_quantity_pretty = xlog_quantity_pretty
+        if wait_status is not None:
+            self.wait_status = wait_status
+        if lwt_id is not None:
+            self.lwt_id = lwt_id
+        if thread_name is not None:
+            self.thread_name = thread_name
+        if lock_mode is not None:
+            self.lock_mode = lock_mode
+        if parent_session_id is not None:
+            self.parent_session_id = parent_session_id
+        if smp_id is not None:
+            self.smp_id = smp_id
+        if lock_tag is not None:
+            self.lock_tag = lock_tag
+        if component_name is not None:
+            self.component_name = component_name
 
     @property
     def session_id(self):
@@ -613,6 +725,358 @@ class RealTimeSessionResult:
         :type sql_num: str
         """
         self._sql_num = sql_num
+
+    @property
+    def client_port(self):
+        r"""Gets the client_port of this RealTimeSessionResult.
+
+        **参数解释**： 客户端用于与后台通讯的TCP端口号，如果使用Unix套接字，则为-1。 **取值范围**： 不涉及。
+
+        :return: The client_port of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._client_port
+
+    @client_port.setter
+    def client_port(self, client_port):
+        r"""Sets the client_port of this RealTimeSessionResult.
+
+        **参数解释**： 客户端用于与后台通讯的TCP端口号，如果使用Unix套接字，则为-1。 **取值范围**： 不涉及。
+
+        :param client_port: The client_port of this RealTimeSessionResult.
+        :type client_port: str
+        """
+        self._client_port = client_port
+
+    @property
+    def query_id(self):
+        r"""Gets the query_id of this RealTimeSessionResult.
+
+        **参数解释**： 会话执行的sql数。 **取值范围**： 不涉及。
+
+        :return: The query_id of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._query_id
+
+    @query_id.setter
+    def query_id(self, query_id):
+        r"""Sets the query_id of this RealTimeSessionResult.
+
+        **参数解释**： 会话执行的sql数。 **取值范围**： 不涉及。
+
+        :param query_id: The query_id of this RealTimeSessionResult.
+        :type query_id: str
+        """
+        self._query_id = query_id
+
+    @property
+    def transaction_time_cost(self):
+        r"""Gets the transaction_time_cost of this RealTimeSessionResult.
+
+        **参数解释**： 当前用户上一次执行的事务持续时间。 **取值范围**： 不涉及。
+
+        :return: The transaction_time_cost of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._transaction_time_cost
+
+    @transaction_time_cost.setter
+    def transaction_time_cost(self, transaction_time_cost):
+        r"""Sets the transaction_time_cost of this RealTimeSessionResult.
+
+        **参数解释**： 当前用户上一次执行的事务持续时间。 **取值范围**： 不涉及。
+
+        :param transaction_time_cost: The transaction_time_cost of this RealTimeSessionResult.
+        :type transaction_time_cost: str
+        """
+        self._transaction_time_cost = transaction_time_cost
+
+    @property
+    def trace_id(self):
+        r"""Gets the trace_id of this RealTimeSessionResult.
+
+        **参数解释**： 驱动传入的trace id，用于标识应用的一次请求。 **取值范围**： 不涉及。
+
+        :return: The trace_id of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._trace_id
+
+    @trace_id.setter
+    def trace_id(self, trace_id):
+        r"""Sets the trace_id of this RealTimeSessionResult.
+
+        **参数解释**： 驱动传入的trace id，用于标识应用的一次请求。 **取值范围**： 不涉及。
+
+        :param trace_id: The trace_id of this RealTimeSessionResult.
+        :type trace_id: str
+        """
+        self._trace_id = trace_id
+
+    @property
+    def global_session_id(self):
+        r"""Gets the global_session_id of this RealTimeSessionResult.
+
+        **参数解释**： 当前用户上次执行的全局会话ID。 **取值范围**： 不涉及。
+
+        :return: The global_session_id of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._global_session_id
+
+    @global_session_id.setter
+    def global_session_id(self, global_session_id):
+        r"""Sets the global_session_id of this RealTimeSessionResult.
+
+        **参数解释**： 当前用户上次执行的全局会话ID。 **取值范围**： 不涉及。
+
+        :param global_session_id: The global_session_id of this RealTimeSessionResult.
+        :type global_session_id: str
+        """
+        self._global_session_id = global_session_id
+
+    @property
+    def top_transaction_id(self):
+        r"""Gets the top_transaction_id of this RealTimeSessionResult.
+
+        **参数解释**： 当前用户上次执行的顶层事务ID。 **取值范围**： 不涉及。
+
+        :return: The top_transaction_id of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._top_transaction_id
+
+    @top_transaction_id.setter
+    def top_transaction_id(self, top_transaction_id):
+        r"""Sets the top_transaction_id of this RealTimeSessionResult.
+
+        **参数解释**： 当前用户上次执行的顶层事务ID。 **取值范围**： 不涉及。
+
+        :param top_transaction_id: The top_transaction_id of this RealTimeSessionResult.
+        :type top_transaction_id: str
+        """
+        self._top_transaction_id = top_transaction_id
+
+    @property
+    def current_transaction_id(self):
+        r"""Gets the current_transaction_id of this RealTimeSessionResult.
+
+        **参数解释**： 当前用户上次执行的事务ID。 **取值范围**： 不涉及。
+
+        :return: The current_transaction_id of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._current_transaction_id
+
+    @current_transaction_id.setter
+    def current_transaction_id(self, current_transaction_id):
+        r"""Sets the current_transaction_id of this RealTimeSessionResult.
+
+        **参数解释**： 当前用户上次执行的事务ID。 **取值范围**： 不涉及。
+
+        :param current_transaction_id: The current_transaction_id of this RealTimeSessionResult.
+        :type current_transaction_id: str
+        """
+        self._current_transaction_id = current_transaction_id
+
+    @property
+    def xlog_quantity_pretty(self):
+        r"""Gets the xlog_quantity_pretty of this RealTimeSessionResult.
+
+        **参数解释**： 当前用户上次执行的事务使用的XLOG量，易读格式。 **取值范围**： 不涉及。
+
+        :return: The xlog_quantity_pretty of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._xlog_quantity_pretty
+
+    @xlog_quantity_pretty.setter
+    def xlog_quantity_pretty(self, xlog_quantity_pretty):
+        r"""Sets the xlog_quantity_pretty of this RealTimeSessionResult.
+
+        **参数解释**： 当前用户上次执行的事务使用的XLOG量，易读格式。 **取值范围**： 不涉及。
+
+        :param xlog_quantity_pretty: The xlog_quantity_pretty of this RealTimeSessionResult.
+        :type xlog_quantity_pretty: str
+        """
+        self._xlog_quantity_pretty = xlog_quantity_pretty
+
+    @property
+    def wait_status(self):
+        r"""Gets the wait_status of this RealTimeSessionResult.
+
+        **参数解释**： 实例线程等待状态。 **取值范围**： 不涉及。
+
+        :return: The wait_status of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._wait_status
+
+    @wait_status.setter
+    def wait_status(self, wait_status):
+        r"""Sets the wait_status of this RealTimeSessionResult.
+
+        **参数解释**： 实例线程等待状态。 **取值范围**： 不涉及。
+
+        :param wait_status: The wait_status of this RealTimeSessionResult.
+        :type wait_status: str
+        """
+        self._wait_status = wait_status
+
+    @property
+    def lwt_id(self):
+        r"""Gets the lwt_id of this RealTimeSessionResult.
+
+        **参数解释**： 实例线程的轻量级线程号。 **取值范围**： 不涉及。
+
+        :return: The lwt_id of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._lwt_id
+
+    @lwt_id.setter
+    def lwt_id(self, lwt_id):
+        r"""Sets the lwt_id of this RealTimeSessionResult.
+
+        **参数解释**： 实例线程的轻量级线程号。 **取值范围**： 不涉及。
+
+        :param lwt_id: The lwt_id of this RealTimeSessionResult.
+        :type lwt_id: str
+        """
+        self._lwt_id = lwt_id
+
+    @property
+    def thread_name(self):
+        r"""Gets the thread_name of this RealTimeSessionResult.
+
+        **参数解释**： 实例线程名。 **取值范围**： 不涉及。
+
+        :return: The thread_name of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._thread_name
+
+    @thread_name.setter
+    def thread_name(self, thread_name):
+        r"""Sets the thread_name of this RealTimeSessionResult.
+
+        **参数解释**： 实例线程名。 **取值范围**： 不涉及。
+
+        :param thread_name: The thread_name of this RealTimeSessionResult.
+        :type thread_name: str
+        """
+        self._thread_name = thread_name
+
+    @property
+    def lock_mode(self):
+        r"""Gets the lock_mode of this RealTimeSessionResult.
+
+        **参数解释**： 实例等锁模式。 **取值范围**： 不涉及。
+
+        :return: The lock_mode of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._lock_mode
+
+    @lock_mode.setter
+    def lock_mode(self, lock_mode):
+        r"""Sets the lock_mode of this RealTimeSessionResult.
+
+        **参数解释**： 实例等锁模式。 **取值范围**： 不涉及。
+
+        :param lock_mode: The lock_mode of this RealTimeSessionResult.
+        :type lock_mode: str
+        """
+        self._lock_mode = lock_mode
+
+    @property
+    def parent_session_id(self):
+        r"""Gets the parent_session_id of this RealTimeSessionResult.
+
+        **参数解释**： 实例父会话ID。 **取值范围**： 不涉及。
+
+        :return: The parent_session_id of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._parent_session_id
+
+    @parent_session_id.setter
+    def parent_session_id(self, parent_session_id):
+        r"""Sets the parent_session_id of this RealTimeSessionResult.
+
+        **参数解释**： 实例父会话ID。 **取值范围**： 不涉及。
+
+        :param parent_session_id: The parent_session_id of this RealTimeSessionResult.
+        :type parent_session_id: str
+        """
+        self._parent_session_id = parent_session_id
+
+    @property
+    def smp_id(self):
+        r"""Gets the smp_id of this RealTimeSessionResult.
+
+        **参数解释**： 实例并行线程的ID。 **取值范围**： 不涉及。
+
+        :return: The smp_id of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._smp_id
+
+    @smp_id.setter
+    def smp_id(self, smp_id):
+        r"""Sets the smp_id of this RealTimeSessionResult.
+
+        **参数解释**： 实例并行线程的ID。 **取值范围**： 不涉及。
+
+        :param smp_id: The smp_id of this RealTimeSessionResult.
+        :type smp_id: str
+        """
+        self._smp_id = smp_id
+
+    @property
+    def lock_tag(self):
+        r"""Gets the lock_tag of this RealTimeSessionResult.
+
+        **参数解释**： 实例线程正等待获取的锁的信息。 **取值范围**： 不涉及。
+
+        :return: The lock_tag of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._lock_tag
+
+    @lock_tag.setter
+    def lock_tag(self, lock_tag):
+        r"""Sets the lock_tag of this RealTimeSessionResult.
+
+        **参数解释**： 实例线程正等待获取的锁的信息。 **取值范围**： 不涉及。
+
+        :param lock_tag: The lock_tag of this RealTimeSessionResult.
+        :type lock_tag: str
+        """
+        self._lock_tag = lock_tag
+
+    @property
+    def component_name(self):
+        r"""Gets the component_name of this RealTimeSessionResult.
+
+        **参数解释**： 组件名称。 **取值范围**： 不涉及。
+
+        :return: The component_name of this RealTimeSessionResult.
+        :rtype: str
+        """
+        return self._component_name
+
+    @component_name.setter
+    def component_name(self, component_name):
+        r"""Sets the component_name of this RealTimeSessionResult.
+
+        **参数解释**： 组件名称。 **取值范围**： 不涉及。
+
+        :param component_name: The component_name of this RealTimeSessionResult.
+        :type component_name: str
+        """
+        self._component_name = component_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

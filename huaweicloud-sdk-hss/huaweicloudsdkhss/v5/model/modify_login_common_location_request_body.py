@@ -31,9 +31,9 @@ class ModifyLoginCommonLocationRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param area_code: 国家城市的编码
+        :param area_code: **参数解释**： 国家城市的编码 **取值范围**： 字符长度1-32位 
         :type area_code: int
-        :param host_id_list: 服务器列表
+        :param host_id_list: **参数解释**: 服务器列表 **取值范围**: 最小值0，最大值100 
         :type host_id_list: list[str]
         """
         
@@ -52,7 +52,7 @@ class ModifyLoginCommonLocationRequestBody:
     def area_code(self):
         r"""Gets the area_code of this ModifyLoginCommonLocationRequestBody.
 
-        国家城市的编码
+        **参数解释**： 国家城市的编码 **取值范围**： 字符长度1-32位 
 
         :return: The area_code of this ModifyLoginCommonLocationRequestBody.
         :rtype: int
@@ -63,7 +63,7 @@ class ModifyLoginCommonLocationRequestBody:
     def area_code(self, area_code):
         r"""Sets the area_code of this ModifyLoginCommonLocationRequestBody.
 
-        国家城市的编码
+        **参数解释**： 国家城市的编码 **取值范围**： 字符长度1-32位 
 
         :param area_code: The area_code of this ModifyLoginCommonLocationRequestBody.
         :type area_code: int
@@ -74,7 +74,7 @@ class ModifyLoginCommonLocationRequestBody:
     def host_id_list(self):
         r"""Gets the host_id_list of this ModifyLoginCommonLocationRequestBody.
 
-        服务器列表
+        **参数解释**: 服务器列表 **取值范围**: 最小值0，最大值100 
 
         :return: The host_id_list of this ModifyLoginCommonLocationRequestBody.
         :rtype: list[str]
@@ -85,7 +85,7 @@ class ModifyLoginCommonLocationRequestBody:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this ModifyLoginCommonLocationRequestBody.
 
-        服务器列表
+        **参数解释**: 服务器列表 **取值范围**: 最小值0，最大值100 
 
         :param host_id_list: The host_id_list of this ModifyLoginCommonLocationRequestBody.
         :type host_id_list: list[str]

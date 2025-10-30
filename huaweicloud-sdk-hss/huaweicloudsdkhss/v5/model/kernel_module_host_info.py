@@ -37,13 +37,13 @@ class KernelModuleHostInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: agent_id
+        :param agent_id: **参数解释** agent id **取值范围** 字符长度1-64 
         :type agent_id: str
-        :param host_id: 主机id
+        :param host_id: **参数解释** 主机id **取值范围** 字符长度1-64 
         :type host_id: str
-        :param host_name: 服务器名称
+        :param host_name: **参数解释** 服务器名称 **取值范围** 字符长度1-64 
         :type host_name: str
-        :param host_ip: 服务器ip
+        :param host_ip: **参数解释** 服务器ip **取值范围** 字符长度1-64 
         :type host_ip: str
         :param kernel_module_info: 
         :type kernel_module_info: :class:`huaweicloudsdkhss.v5.KernelModuleInfo`
@@ -73,7 +73,7 @@ class KernelModuleHostInfo:
     def agent_id(self):
         r"""Gets the agent_id of this KernelModuleHostInfo.
 
-        agent_id
+        **参数解释** agent id **取值范围** 字符长度1-64 
 
         :return: The agent_id of this KernelModuleHostInfo.
         :rtype: str
@@ -84,7 +84,7 @@ class KernelModuleHostInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this KernelModuleHostInfo.
 
-        agent_id
+        **参数解释** agent id **取值范围** 字符长度1-64 
 
         :param agent_id: The agent_id of this KernelModuleHostInfo.
         :type agent_id: str
@@ -95,7 +95,7 @@ class KernelModuleHostInfo:
     def host_id(self):
         r"""Gets the host_id of this KernelModuleHostInfo.
 
-        主机id
+        **参数解释** 主机id **取值范围** 字符长度1-64 
 
         :return: The host_id of this KernelModuleHostInfo.
         :rtype: str
@@ -106,7 +106,7 @@ class KernelModuleHostInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this KernelModuleHostInfo.
 
-        主机id
+        **参数解释** 主机id **取值范围** 字符长度1-64 
 
         :param host_id: The host_id of this KernelModuleHostInfo.
         :type host_id: str
@@ -117,7 +117,7 @@ class KernelModuleHostInfo:
     def host_name(self):
         r"""Gets the host_name of this KernelModuleHostInfo.
 
-        服务器名称
+        **参数解释** 服务器名称 **取值范围** 字符长度1-64 
 
         :return: The host_name of this KernelModuleHostInfo.
         :rtype: str
@@ -128,7 +128,7 @@ class KernelModuleHostInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this KernelModuleHostInfo.
 
-        服务器名称
+        **参数解释** 服务器名称 **取值范围** 字符长度1-64 
 
         :param host_name: The host_name of this KernelModuleHostInfo.
         :type host_name: str
@@ -139,7 +139,7 @@ class KernelModuleHostInfo:
     def host_ip(self):
         r"""Gets the host_ip of this KernelModuleHostInfo.
 
-        服务器ip
+        **参数解释** 服务器ip **取值范围** 字符长度1-64 
 
         :return: The host_ip of this KernelModuleHostInfo.
         :rtype: str
@@ -150,7 +150,7 @@ class KernelModuleHostInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this KernelModuleHostInfo.
 
-        服务器ip
+        **参数解释** 服务器ip **取值范围** 字符长度1-64 
 
         :param host_ip: The host_ip of this KernelModuleHostInfo.
         :type host_ip: str
