@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -22,7 +20,8 @@ class ShowGetConfDetailResponse(SdkResponse):
         'status': 'str',
         'conf_content': 'str',
         'setting': 'Setting',
-        'update_at': 'str'
+        'update_at': 'str',
+        'desc': 'str'
     }
 
     attribute_map = {
@@ -30,10 +29,11 @@ class ShowGetConfDetailResponse(SdkResponse):
         'status': 'status',
         'conf_content': 'confContent',
         'setting': 'setting',
-        'update_at': 'updateAt'
+        'update_at': 'updateAt',
+        'desc': 'desc'
     }
 
-    def __init__(self, name=None, status=None, conf_content=None, setting=None, update_at=None):
+    def __init__(self, name=None, status=None, conf_content=None, setting=None, update_at=None, desc=None):
         r"""ShowGetConfDetailResponse
 
         The model defined in huaweicloud sdk
@@ -48,15 +48,18 @@ class ShowGetConfDetailResponse(SdkResponse):
         :type setting: :class:`huaweicloudsdkcss.v1.Setting`
         :param update_at: 更新时间。
         :type update_at: str
+        :param desc: **参数解释**： 配置文件描述。 **取值范围**： 长度不超过128个字符。
+        :type desc: str
         """
         
-        super(ShowGetConfDetailResponse, self).__init__()
+        super().__init__()
 
         self._name = None
         self._status = None
         self._conf_content = None
         self._setting = None
         self._update_at = None
+        self._desc = None
         self.discriminator = None
 
         if name is not None:
@@ -69,6 +72,8 @@ class ShowGetConfDetailResponse(SdkResponse):
             self.setting = setting
         if update_at is not None:
             self.update_at = update_at
+        if desc is not None:
+            self.desc = desc
 
     @property
     def name(self):
@@ -176,11 +181,35 @@ class ShowGetConfDetailResponse(SdkResponse):
         """
         self._update_at = update_at
 
+    @property
+    def desc(self):
+        r"""Gets the desc of this ShowGetConfDetailResponse.
+
+        **参数解释**： 配置文件描述。 **取值范围**： 长度不超过128个字符。
+
+        :return: The desc of this ShowGetConfDetailResponse.
+        :rtype: str
+        """
+        return self._desc
+
+    @desc.setter
+    def desc(self, desc):
+        r"""Sets the desc of this ShowGetConfDetailResponse.
+
+        **参数解释**： 配置文件描述。 **取值范围**： 长度不超过128个字符。
+
+        :param desc: The desc of this ShowGetConfDetailResponse.
+        :type desc: str
+        """
+        self._desc = desc
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ShowGetConfDetailResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -206,10 +235,6 @@ class ShowGetConfDetailResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

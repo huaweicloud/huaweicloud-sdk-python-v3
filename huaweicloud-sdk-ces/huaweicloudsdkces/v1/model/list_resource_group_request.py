@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -41,7 +39,7 @@ class ListResourceGroupRequest:
         :type group_name: str
         :param group_id: 资源分组的ID，长度为1-128，只能包含0-9/a-z/A-Z；如：rg16063743652226ew93e64p。
         :type group_id: str
-        :param status: 资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
+        :param status: 资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未配置告警规则
         :type status: str
         :param start: 分页起始值，类型为integer，默认值为0。
         :type start: int
@@ -117,7 +115,7 @@ class ListResourceGroupRequest:
     def status(self):
         r"""Gets the status of this ListResourceGroupRequest.
 
-        资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
+        资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未配置告警规则
 
         :return: The status of this ListResourceGroupRequest.
         :rtype: str
@@ -128,7 +126,7 @@ class ListResourceGroupRequest:
     def status(self, status):
         r"""Sets the status of this ListResourceGroupRequest.
 
-        资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，
+        资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未配置告警规则
 
         :param status: The status of this ListResourceGroupRequest.
         :type status: str
@@ -180,10 +178,9 @@ class ListResourceGroupRequest:
         self._limit = limit
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -209,10 +206,6 @@ class ListResourceGroupRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

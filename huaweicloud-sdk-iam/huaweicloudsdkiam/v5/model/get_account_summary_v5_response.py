@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -86,7 +84,7 @@ class GetAccountSummaryV5Response(SdkResponse):
         :type root_user_mfa_enabled: int
         """
         
-        super(GetAccountSummaryV5Response, self).__init__()
+        super().__init__()
 
         self._attached_policies_per_agency_quota = None
         self._attached_policies_per_group_quota = None
@@ -442,10 +440,12 @@ class GetAccountSummaryV5Response(SdkResponse):
         self._root_user_mfa_enabled = root_user_mfa_enabled
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("GetAccountSummaryV5Response.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -471,10 +471,6 @@ class GetAccountSummaryV5Response(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

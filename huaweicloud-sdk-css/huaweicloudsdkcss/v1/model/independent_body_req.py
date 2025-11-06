@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -19,16 +17,18 @@ class IndependentBodyReq:
     openapi_types = {
         'flavor_ref': 'str',
         'node_size': 'int',
-        'volume_type': 'str'
+        'volume_type': 'str',
+        'volume_size': 'int'
     }
 
     attribute_map = {
         'flavor_ref': 'flavor_ref',
         'node_size': 'node_size',
-        'volume_type': 'volume_type'
+        'volume_type': 'volume_type',
+        'volume_size': 'volume_size'
     }
 
-    def __init__(self, flavor_ref=None, node_size=None, volume_type=None):
+    def __init__(self, flavor_ref=None, node_size=None, volume_type=None, volume_size=None):
         r"""IndependentBodyReq
 
         The model defined in huaweicloud sdk
@@ -39,6 +39,8 @@ class IndependentBodyReq:
         :type node_size: int
         :param volume_type: 节点存储类型：取值为ULTRAHIGH，COMMON，HIGH。
         :type volume_type: str
+        :param volume_size: **参数解释**： 节点存储大小。 **约束限制**： - flavor_ref参数是本地盘规格时，不能设置此参数。 - 必须为大于0且为4和10的公倍数，单位：GB。 **取值范围**： 磁盘规格大小可以通过过[获取实例规格列表](ListFlavors.xml)中diskrange属性获得。 **默认取值**： flavor_ref参数不是本地盘规格时： - 新增独立冷数据节点：默认100G与节点规格支持的最小磁盘容量取较大者。 - 新增独立master或client节点：默认大小为40G，且不可更改。  &gt;新增独立冷数据节点，推荐大于100G。
+        :type volume_size: int
         """
         
         
@@ -46,11 +48,15 @@ class IndependentBodyReq:
         self._flavor_ref = None
         self._node_size = None
         self._volume_type = None
+        self._volume_size = None
         self.discriminator = None
 
         self.flavor_ref = flavor_ref
         self.node_size = node_size
-        self.volume_type = volume_type
+        if volume_type is not None:
+            self.volume_type = volume_type
+        if volume_size is not None:
+            self.volume_size = volume_size
 
     @property
     def flavor_ref(self):
@@ -118,11 +124,32 @@ class IndependentBodyReq:
         """
         self._volume_type = volume_type
 
+    @property
+    def volume_size(self):
+        r"""Gets the volume_size of this IndependentBodyReq.
+
+        **参数解释**： 节点存储大小。 **约束限制**： - flavor_ref参数是本地盘规格时，不能设置此参数。 - 必须为大于0且为4和10的公倍数，单位：GB。 **取值范围**： 磁盘规格大小可以通过过[获取实例规格列表](ListFlavors.xml)中diskrange属性获得。 **默认取值**： flavor_ref参数不是本地盘规格时： - 新增独立冷数据节点：默认100G与节点规格支持的最小磁盘容量取较大者。 - 新增独立master或client节点：默认大小为40G，且不可更改。  >新增独立冷数据节点，推荐大于100G。
+
+        :return: The volume_size of this IndependentBodyReq.
+        :rtype: int
+        """
+        return self._volume_size
+
+    @volume_size.setter
+    def volume_size(self, volume_size):
+        r"""Sets the volume_size of this IndependentBodyReq.
+
+        **参数解释**： 节点存储大小。 **约束限制**： - flavor_ref参数是本地盘规格时，不能设置此参数。 - 必须为大于0且为4和10的公倍数，单位：GB。 **取值范围**： 磁盘规格大小可以通过过[获取实例规格列表](ListFlavors.xml)中diskrange属性获得。 **默认取值**： flavor_ref参数不是本地盘规格时： - 新增独立冷数据节点：默认100G与节点规格支持的最小磁盘容量取较大者。 - 新增独立master或client节点：默认大小为40G，且不可更改。  >新增独立冷数据节点，推荐大于100G。
+
+        :param volume_size: The volume_size of this IndependentBodyReq.
+        :type volume_size: int
+        """
+        self._volume_size = volume_size
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -148,10 +175,6 @@ class IndependentBodyReq:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

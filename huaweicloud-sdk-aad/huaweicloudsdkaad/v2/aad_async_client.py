@@ -17,7 +17,7 @@ except ImportError as e:
 
 class AadAsyncClient(Client):
     def __init__(self):
-        super(AadAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkaad.v2.model")
 
     @classmethod

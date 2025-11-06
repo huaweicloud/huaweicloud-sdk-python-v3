@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -43,13 +41,13 @@ class EventTriggerCondition:
         :type event_name: str
         :param trigger_type: 触发方式： - “immediately”：立即触发 - “accumulative”：累计触发
         :type trigger_type: str
-        :param aggregation_window: 统计周期。单位为秒，例如 1小时 填“3600”，当trigger_type为“immediately”时 不填。
+        :param aggregation_window: 监控周期。单位为秒，例如 1小时 填“3600”，当trigger_type为“immediately”时 该参数为空，当trigger_type为“accumulative”时 该参数必填。 监控周期范围： 5分钟，20分钟，1小时，4小时，24小时。
         :type aggregation_window: int
-        :param operator: 判断条件：“&gt;”,“&lt;”,“&#x3D;”,“&gt;&#x3D;”,“&lt;&#x3D;”，当trigger_type为“immediately”时 不填。
+        :param operator: 判断条件：“&gt;”,“&lt;”,“&#x3D;”,“&gt;&#x3D;”,“&lt;&#x3D;”，当trigger_type为“immediately”时 该参数为空。当trigger_type为“accumulative”时 该参数必填。
         :type operator: str
-        :param thresholds: 键值对形式，键为告警级别，值为累计次数，当trigger_type为“immediately”时 值为空。
+        :param thresholds: 键值对形式，键为告警级别，值为累计次数，当trigger_type为“immediately”时 累计次数为1。当当trigger_type为“accumulative”时 累计次数范围为1~100 （如果trigger_conditions参数不为空，该参数必填）
         :type thresholds: dict(str, int)
-        :param frequency: 事件类告警频率。当trigger_type为“immediately”时 不填。 - “0”：只告警一次 - “300”：每5分钟 - “600”：每10分钟： - “900”：每15分钟： - “1800”：每30分钟： - “3600”：每1小时： - “10800”：每3小时： - “21600”：每6小时： - “43200”：每12小时： - “86400”：每天：
+        :param frequency: 事件类告警频率。当trigger_type为“immediately”时 值为-1。 - “-1”：N/A - “0”：只告警一次 - “300”：每5分钟 - “600”：每10分钟： - “900”：每15分钟： - “1800”：每30分钟： - “3600”：每1小时： - “10800”：每3小时： - “21600”：每6小时： - “43200”：每12小时： - “86400”：每天：
         :type frequency: str
         """
         
@@ -124,7 +122,7 @@ class EventTriggerCondition:
     def aggregation_window(self):
         r"""Gets the aggregation_window of this EventTriggerCondition.
 
-        统计周期。单位为秒，例如 1小时 填“3600”，当trigger_type为“immediately”时 不填。
+        监控周期。单位为秒，例如 1小时 填“3600”，当trigger_type为“immediately”时 该参数为空，当trigger_type为“accumulative”时 该参数必填。 监控周期范围： 5分钟，20分钟，1小时，4小时，24小时。
 
         :return: The aggregation_window of this EventTriggerCondition.
         :rtype: int
@@ -135,7 +133,7 @@ class EventTriggerCondition:
     def aggregation_window(self, aggregation_window):
         r"""Sets the aggregation_window of this EventTriggerCondition.
 
-        统计周期。单位为秒，例如 1小时 填“3600”，当trigger_type为“immediately”时 不填。
+        监控周期。单位为秒，例如 1小时 填“3600”，当trigger_type为“immediately”时 该参数为空，当trigger_type为“accumulative”时 该参数必填。 监控周期范围： 5分钟，20分钟，1小时，4小时，24小时。
 
         :param aggregation_window: The aggregation_window of this EventTriggerCondition.
         :type aggregation_window: int
@@ -146,7 +144,7 @@ class EventTriggerCondition:
     def operator(self):
         r"""Gets the operator of this EventTriggerCondition.
 
-        判断条件：“>”,“<”,“=”,“>=”,“<=”，当trigger_type为“immediately”时 不填。
+        判断条件：“>”,“<”,“=”,“>=”,“<=”，当trigger_type为“immediately”时 该参数为空。当trigger_type为“accumulative”时 该参数必填。
 
         :return: The operator of this EventTriggerCondition.
         :rtype: str
@@ -157,7 +155,7 @@ class EventTriggerCondition:
     def operator(self, operator):
         r"""Sets the operator of this EventTriggerCondition.
 
-        判断条件：“>”,“<”,“=”,“>=”,“<=”，当trigger_type为“immediately”时 不填。
+        判断条件：“>”,“<”,“=”,“>=”,“<=”，当trigger_type为“immediately”时 该参数为空。当trigger_type为“accumulative”时 该参数必填。
 
         :param operator: The operator of this EventTriggerCondition.
         :type operator: str
@@ -168,7 +166,7 @@ class EventTriggerCondition:
     def thresholds(self):
         r"""Gets the thresholds of this EventTriggerCondition.
 
-        键值对形式，键为告警级别，值为累计次数，当trigger_type为“immediately”时 值为空。
+        键值对形式，键为告警级别，值为累计次数，当trigger_type为“immediately”时 累计次数为1。当当trigger_type为“accumulative”时 累计次数范围为1~100 （如果trigger_conditions参数不为空，该参数必填）
 
         :return: The thresholds of this EventTriggerCondition.
         :rtype: dict(str, int)
@@ -179,7 +177,7 @@ class EventTriggerCondition:
     def thresholds(self, thresholds):
         r"""Sets the thresholds of this EventTriggerCondition.
 
-        键值对形式，键为告警级别，值为累计次数，当trigger_type为“immediately”时 值为空。
+        键值对形式，键为告警级别，值为累计次数，当trigger_type为“immediately”时 累计次数为1。当当trigger_type为“accumulative”时 累计次数范围为1~100 （如果trigger_conditions参数不为空，该参数必填）
 
         :param thresholds: The thresholds of this EventTriggerCondition.
         :type thresholds: dict(str, int)
@@ -190,7 +188,7 @@ class EventTriggerCondition:
     def frequency(self):
         r"""Gets the frequency of this EventTriggerCondition.
 
-        事件类告警频率。当trigger_type为“immediately”时 不填。 - “0”：只告警一次 - “300”：每5分钟 - “600”：每10分钟： - “900”：每15分钟： - “1800”：每30分钟： - “3600”：每1小时： - “10800”：每3小时： - “21600”：每6小时： - “43200”：每12小时： - “86400”：每天：
+        事件类告警频率。当trigger_type为“immediately”时 值为-1。 - “-1”：N/A - “0”：只告警一次 - “300”：每5分钟 - “600”：每10分钟： - “900”：每15分钟： - “1800”：每30分钟： - “3600”：每1小时： - “10800”：每3小时： - “21600”：每6小时： - “43200”：每12小时： - “86400”：每天：
 
         :return: The frequency of this EventTriggerCondition.
         :rtype: str
@@ -201,7 +199,7 @@ class EventTriggerCondition:
     def frequency(self, frequency):
         r"""Sets the frequency of this EventTriggerCondition.
 
-        事件类告警频率。当trigger_type为“immediately”时 不填。 - “0”：只告警一次 - “300”：每5分钟 - “600”：每10分钟： - “900”：每15分钟： - “1800”：每30分钟： - “3600”：每1小时： - “10800”：每3小时： - “21600”：每6小时： - “43200”：每12小时： - “86400”：每天：
+        事件类告警频率。当trigger_type为“immediately”时 值为-1。 - “-1”：N/A - “0”：只告警一次 - “300”：每5分钟 - “600”：每10分钟： - “900”：每15分钟： - “1800”：每30分钟： - “3600”：每1小时： - “10800”：每3小时： - “21600”：每6小时： - “43200”：每12小时： - “86400”：每天：
 
         :param frequency: The frequency of this EventTriggerCondition.
         :type frequency: str
@@ -209,10 +207,9 @@ class EventTriggerCondition:
         self._frequency = frequency
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -238,10 +235,6 @@ class EventTriggerCondition:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

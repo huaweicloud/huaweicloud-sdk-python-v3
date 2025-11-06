@@ -17,7 +17,7 @@ except ImportError as e:
 
 class AomClient(Client):
     def __init__(self):
-        super(AomClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkaom.v2.model")
 
     @classmethod
@@ -361,7 +361,7 @@ class AomClient(Client):
     def add_or_update_metric_or_event_alarm_rule(self, request):
         r"""添加或修改指标类或事件类告警规则
 
-        添加或修改AOM2.0指标类或事件类告警规则。(注：接口目前开放的region为：华东-上海一)
+        添加或修改AOM2.0指标类或事件类告警规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -628,6 +628,73 @@ class AomClient(Client):
 
         return http_info
 
+    def create_notification_template(self, request):
+        r"""新增消息通知模板
+
+        该接口用于新增消息通知模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateNotificationTemplate
+        :type request: :class:`huaweicloudsdkaom.v2.CreateNotificationTemplateRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.CreateNotificationTemplateResponse`
+        """
+        http_info = self._create_notification_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_notification_template_invoker(self, request):
+        http_info = self._create_notification_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_notification_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/events/notification/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNotificationTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_action_rule(self, request):
         r"""删除告警行动规则
 
@@ -758,6 +825,73 @@ class AomClient(Client):
 
         return http_info
 
+    def delete_alarm_rule_template(self, request):
+        r"""删除告警模板
+
+        该接口用于删除告警模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAlarmRuleTemplate
+        :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleTemplateRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleTemplateResponse`
+        """
+        http_info = self._delete_alarm_rule_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_alarm_rule_template_invoker(self, request):
+        http_info = self._delete_alarm_rule_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_alarm_rule_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/{project_id}/alarm-rules-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlarmRuleTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_alarm_rules(self, request):
         r"""批量删除阈值规则
 
@@ -802,6 +936,142 @@ class AomClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_dashboard(self, request):
+        r"""删除仪表盘
+
+        该接口用于删除仪表盘。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDashboard
+        :type request: :class:`huaweicloudsdkaom.v2.DeleteDashboardRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeleteDashboardResponse`
+        """
+        http_info = self._delete_dashboard_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_dashboard_invoker(self, request):
+        http_info = self._delete_dashboard_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_dashboard_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/aom/dashboards/{dashboard_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDashboardResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dashboard_id' in local_var_params:
+            path_params['dashboard_id'] = local_var_params['dashboard_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_dashboards_folder(self, request):
+        r"""删除仪表盘分组
+
+        该接口用于删除仪表盘分组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDashboardsFolder
+        :type request: :class:`huaweicloudsdkaom.v2.DeleteDashboardsFolderRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeleteDashboardsFolderResponse`
+        """
+        http_info = self._delete_dashboards_folder_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_dashboards_folder_invoker(self, request):
+        http_info = self._delete_dashboards_folder_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_dashboards_folder_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/aom/dashboards-folder/{folder_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDashboardsFolderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'folder_id' in local_var_params:
+            path_params['folder_id'] = local_var_params['folder_id']
+
+        query_params = []
+        if 'delete_all' in local_var_params:
+            query_params.append(('delete_all', local_var_params['delete_all']))
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -891,7 +1161,7 @@ class AomClient(Client):
     def delete_metric_or_event_alarm_rule(self, request):
         r"""删除指标类或事件类告警规则
 
-        删除AOM2.0指标类或事件类告警规则。(注：接口目前开放的region为：华东-上海一)
+        删除AOM2.0指标类或事件类告警规则。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -991,6 +1261,73 @@ class AomClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_notification_template(self, request):
+        r"""删除消息通知模板
+
+        该接口用于删除消息通知模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteNotificationTemplate
+        :type request: :class:`huaweicloudsdkaom.v2.DeleteNotificationTemplateRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.DeleteNotificationTemplateResponse`
+        """
+        http_info = self._delete_notification_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_notification_template_invoker(self, request):
+        http_info = self._delete_notification_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_notification_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/events/notification/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNotificationTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1256,6 +1593,207 @@ class AomClient(Client):
             query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_alarm_rule_template(self, request):
+        r"""查询告警模板列表
+
+        该接口用于查询告警模板列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAlarmRuleTemplate
+        :type request: :class:`huaweicloudsdkaom.v2.ListAlarmRuleTemplateRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListAlarmRuleTemplateResponse`
+        """
+        http_info = self._list_alarm_rule_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_alarm_rule_template_invoker(self, request):
+        http_info = self._list_alarm_rule_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alarm_rule_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/{project_id}/alarm-rules-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmRuleTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dash_boards(self, request):
+        r"""查询仪表盘列表
+
+        该接口用于查询仪表盘列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDashBoards
+        :type request: :class:`huaweicloudsdkaom.v2.ListDashBoardsRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListDashBoardsResponse`
+        """
+        http_info = self._list_dash_boards_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dash_boards_invoker(self, request):
+        http_info = self._list_dash_boards_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dash_boards_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/aom/dashboards",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDashBoardsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'dashboard_type' in local_var_params:
+            query_params.append(('dashboard_type', local_var_params['dashboard_type']))
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_dashboards_folder(self, request):
+        r"""查询仪表盘分组列表
+
+        该接口用于查询仪表盘分组列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDashboardsFolder
+        :type request: :class:`huaweicloudsdkaom.v2.ListDashboardsFolderRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListDashboardsFolderResponse`
+        """
+        http_info = self._list_dashboards_folder_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_dashboards_folder_invoker(self, request):
+        http_info = self._list_dashboards_folder_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dashboards_folder_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/aom/dashboards-folder",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDashboardsFolderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -1558,7 +2096,7 @@ class AomClient(Client):
     def list_metric_or_event_alarm_rule(self, request):
         r"""查询指标类或者事件类告警规则列表
 
-        查询AOM2.0指标类或者事件类告警规则列表。(注：接口目前开放的region为：华东-上海一)
+        查询AOM2.0指标类或者事件类告警规则列表。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1680,6 +2218,138 @@ class AomClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_notification_template_by_name(self, request):
+        r"""根据消息通知模板名称查询消息通知模板
+
+        该接口用于根据消息通知模板名称查询消息通知模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNotificationTemplateByName
+        :type request: :class:`huaweicloudsdkaom.v2.ListNotificationTemplateByNameRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListNotificationTemplateByNameResponse`
+        """
+        http_info = self._list_notification_template_by_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_notification_template_by_name_invoker(self, request):
+        http_info = self._list_notification_template_by_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_notification_template_by_name_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/events/notification/template/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotificationTemplateByNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_notification_templates(self, request):
+        r"""查询消息通知模板列表
+
+        该接口用于查询消息通知模板列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListNotificationTemplates
+        :type request: :class:`huaweicloudsdkaom.v2.ListNotificationTemplatesRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ListNotificationTemplatesResponse`
+        """
+        http_info = self._list_notification_templates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_notification_templates_invoker(self, request):
+        http_info = self._list_notification_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_notification_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/events/notification/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotificationTemplatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2035,9 +2705,9 @@ class AomClient(Client):
         return http_info
 
     def push_events(self, request):
-        r"""上报事件告警信息
+        r"""上报事件或告警信息
 
-        该接口用于上报对应用户的事件、告警。
+        该接口用于上报事件或告警至AOM，同时支持清除告警信息。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2208,6 +2878,75 @@ class AomClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_dash_board(self, request):
+        r"""查询仪表盘详情
+
+        该接口用于查询仪表盘详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDashBoard
+        :type request: :class:`huaweicloudsdkaom.v2.ShowDashBoardRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.ShowDashBoardResponse`
+        """
+        http_info = self._show_dash_board_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_dash_board_invoker(self, request):
+        http_info = self._show_dash_board_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dash_board_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/aom/dashboards/{dashboard_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDashBoardResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dashboard_id' in local_var_params:
+            path_params['dashboard_id'] = local_var_params['dashboard_id']
+
+        query_params = []
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
 
         form_params = {}
 
@@ -2560,6 +3299,73 @@ class AomClient(Client):
 
         return http_info
 
+    def update_notification_template(self, request):
+        r"""修改消息通知模板
+
+        该接口用于修改消息通知模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateNotificationTemplate
+        :type request: :class:`huaweicloudsdkaom.v2.UpdateNotificationTemplateRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.UpdateNotificationTemplateResponse`
+        """
+        http_info = self._update_notification_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_notification_template_invoker(self, request):
+        http_info = self._update_notification_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_notification_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/events/notification/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNotificationTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_prom_instance(self, request):
         r"""新增Prometheus实例
 
@@ -2876,6 +3682,73 @@ class AomClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_prom_instance(self, request):
+        r"""修改Prometheus实例
+
+        该接口用于修改Prometheus实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePromInstance
+        :type request: :class:`huaweicloudsdkaom.v2.UpdatePromInstanceRequest`
+        :rtype: :class:`huaweicloudsdkaom.v2.UpdatePromInstanceResponse`
+        """
+        http_info = self._update_prom_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_prom_instance_invoker(self, request):
+        http_info = self._update_prom_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_prom_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/aom/prometheus",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePromInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

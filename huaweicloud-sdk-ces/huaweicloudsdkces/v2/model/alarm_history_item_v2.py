@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -97,7 +95,7 @@ class AlarmHistoryItemV2:
         :type alarm_actions: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2AlarmActions`]
         :param ok_actions: **参数解释**： 告警恢复触发的动作。  结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notification_list\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } type取值：  notification：通知。  notification_list：告警状态发生变化时，被通知对象的列表。 
         :type ok_actions: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2AlarmActions`]
-        :param data_points: 计算出该条告警记录的资源监控数据上报时间和监控数值。
+        :param data_points: **参数解释**： 计算出该条告警记录的资源监控数据上报时间和监控数值。 
         :type data_points: list[:class:`huaweicloudsdkces.v2.DataPointInfo`]
         """
         
@@ -526,7 +524,7 @@ class AlarmHistoryItemV2:
     def data_points(self):
         r"""Gets the data_points of this AlarmHistoryItemV2.
 
-        计算出该条告警记录的资源监控数据上报时间和监控数值。
+        **参数解释**： 计算出该条告警记录的资源监控数据上报时间和监控数值。 
 
         :return: The data_points of this AlarmHistoryItemV2.
         :rtype: list[:class:`huaweicloudsdkces.v2.DataPointInfo`]
@@ -537,7 +535,7 @@ class AlarmHistoryItemV2:
     def data_points(self, data_points):
         r"""Sets the data_points of this AlarmHistoryItemV2.
 
-        计算出该条告警记录的资源监控数据上报时间和监控数值。
+        **参数解释**： 计算出该条告警记录的资源监控数据上报时间和监控数值。 
 
         :param data_points: The data_points of this AlarmHistoryItemV2.
         :type data_points: list[:class:`huaweicloudsdkces.v2.DataPointInfo`]
@@ -545,10 +543,9 @@ class AlarmHistoryItemV2:
         self._data_points = data_points
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -574,10 +571,6 @@ class AlarmHistoryItemV2:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

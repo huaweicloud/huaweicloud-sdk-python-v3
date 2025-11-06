@@ -17,7 +17,7 @@ except ImportError as e:
 
 class IdentityCenterPortalAPIClient(Client):
     def __init__(self):
-        super(IdentityCenterPortalAPIClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkidentitycenterportalapi.v1.model")
 
     @classmethod

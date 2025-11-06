@@ -17,7 +17,7 @@ except ImportError as e:
 
 class WorkspaceClient(Client):
     def __init__(self):
-        super(WorkspaceClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkworkspace.v2.model")
 
     @classmethod

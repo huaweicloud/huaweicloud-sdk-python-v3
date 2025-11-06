@@ -20,15 +20,10 @@
  under the LICENSE.
 """
 
-try:
-    from enum import Enum
-
-    _ENUM_CLS = Enum
-except ImportError:
-    _ENUM_CLS = object
+from enum import Enum
 
 
-class SigningAlgorithm(_ENUM_CLS):
+class SigningAlgorithm(Enum):
     HMAC_SHA256 = 1
     HMAC_SM3 = 2
     ECDSA_P256_SHA256 = 3

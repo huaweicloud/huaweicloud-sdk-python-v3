@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -96,12 +94,9 @@ class Metadata:
         self.resource_id = resource_id
         self.resource_provider = resource_provider
         self.lts_alarm_type = lts_alarm_type
-        if log_group_name is not None:
-            self.log_group_name = log_group_name
-        if log_stream_name is not None:
-            self.log_stream_name = log_stream_name
-        if event_subtype is not None:
-            self.event_subtype = event_subtype
+        self.log_group_name = log_group_name
+        self.log_stream_name = log_stream_name
+        self.event_subtype = event_subtype
 
     @property
     def event_type(self):
@@ -346,10 +341,9 @@ class Metadata:
         self._event_subtype = event_subtype
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -375,10 +369,6 @@ class Metadata:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -25,7 +23,11 @@ class DisasterRecoveryCluster:
         'status': 'str',
         'progress': 'str',
         'last_success_time': 'str',
-        'obs_bucket_name': 'str'
+        'obs_bucket_name': 'str',
+        'datastore_version': 'str',
+        'datastore_type': 'str',
+        'disk_capacity': 'str',
+        'disk_used': 'str'
     }
 
     attribute_map = {
@@ -37,10 +39,14 @@ class DisasterRecoveryCluster:
         'status': 'status',
         'progress': 'progress',
         'last_success_time': 'last_success_time',
-        'obs_bucket_name': 'obs_bucket_name'
+        'obs_bucket_name': 'obs_bucket_name',
+        'datastore_version': 'datastore_version',
+        'datastore_type': 'datastore_type',
+        'disk_capacity': 'disk_capacity',
+        'disk_used': 'disk_used'
     }
 
-    def __init__(self, id=None, name=None, cluster_az=None, role=None, region=None, status=None, progress=None, last_success_time=None, obs_bucket_name=None):
+    def __init__(self, id=None, name=None, cluster_az=None, role=None, region=None, status=None, progress=None, last_success_time=None, obs_bucket_name=None, datastore_version=None, datastore_type=None, disk_capacity=None, disk_used=None):
         r"""DisasterRecoveryCluster
 
         The model defined in huaweicloud sdk
@@ -63,6 +69,14 @@ class DisasterRecoveryCluster:
         :type last_success_time: str
         :param obs_bucket_name: **参数解释**： OBS桶名称。 **取值范围**： 不涉及。
         :type obs_bucket_name: str
+        :param datastore_version: **参数解释**： 数据库版本。 **取值范围**： 不涉及。
+        :type datastore_version: str
+        :param datastore_type: **参数解释**： 数据库类型。 **取值范围**： 不涉及。
+        :type datastore_type: str
+        :param disk_capacity: **参数解释**： 磁盘容量。 **取值范围**： 不涉及。
+        :type disk_capacity: str
+        :param disk_used: **参数解释**： 磁盘使用率。 **取值范围**： 不涉及。
+        :type disk_used: str
         """
         
         
@@ -76,6 +90,10 @@ class DisasterRecoveryCluster:
         self._progress = None
         self._last_success_time = None
         self._obs_bucket_name = None
+        self._datastore_version = None
+        self._datastore_type = None
+        self._disk_capacity = None
+        self._disk_used = None
         self.discriminator = None
 
         if id is not None:
@@ -96,6 +114,14 @@ class DisasterRecoveryCluster:
             self.last_success_time = last_success_time
         if obs_bucket_name is not None:
             self.obs_bucket_name = obs_bucket_name
+        if datastore_version is not None:
+            self.datastore_version = datastore_version
+        if datastore_type is not None:
+            self.datastore_type = datastore_type
+        if disk_capacity is not None:
+            self.disk_capacity = disk_capacity
+        if disk_used is not None:
+            self.disk_used = disk_used
 
     @property
     def id(self):
@@ -295,11 +321,98 @@ class DisasterRecoveryCluster:
         """
         self._obs_bucket_name = obs_bucket_name
 
+    @property
+    def datastore_version(self):
+        r"""Gets the datastore_version of this DisasterRecoveryCluster.
+
+        **参数解释**： 数据库版本。 **取值范围**： 不涉及。
+
+        :return: The datastore_version of this DisasterRecoveryCluster.
+        :rtype: str
+        """
+        return self._datastore_version
+
+    @datastore_version.setter
+    def datastore_version(self, datastore_version):
+        r"""Sets the datastore_version of this DisasterRecoveryCluster.
+
+        **参数解释**： 数据库版本。 **取值范围**： 不涉及。
+
+        :param datastore_version: The datastore_version of this DisasterRecoveryCluster.
+        :type datastore_version: str
+        """
+        self._datastore_version = datastore_version
+
+    @property
+    def datastore_type(self):
+        r"""Gets the datastore_type of this DisasterRecoveryCluster.
+
+        **参数解释**： 数据库类型。 **取值范围**： 不涉及。
+
+        :return: The datastore_type of this DisasterRecoveryCluster.
+        :rtype: str
+        """
+        return self._datastore_type
+
+    @datastore_type.setter
+    def datastore_type(self, datastore_type):
+        r"""Sets the datastore_type of this DisasterRecoveryCluster.
+
+        **参数解释**： 数据库类型。 **取值范围**： 不涉及。
+
+        :param datastore_type: The datastore_type of this DisasterRecoveryCluster.
+        :type datastore_type: str
+        """
+        self._datastore_type = datastore_type
+
+    @property
+    def disk_capacity(self):
+        r"""Gets the disk_capacity of this DisasterRecoveryCluster.
+
+        **参数解释**： 磁盘容量。 **取值范围**： 不涉及。
+
+        :return: The disk_capacity of this DisasterRecoveryCluster.
+        :rtype: str
+        """
+        return self._disk_capacity
+
+    @disk_capacity.setter
+    def disk_capacity(self, disk_capacity):
+        r"""Sets the disk_capacity of this DisasterRecoveryCluster.
+
+        **参数解释**： 磁盘容量。 **取值范围**： 不涉及。
+
+        :param disk_capacity: The disk_capacity of this DisasterRecoveryCluster.
+        :type disk_capacity: str
+        """
+        self._disk_capacity = disk_capacity
+
+    @property
+    def disk_used(self):
+        r"""Gets the disk_used of this DisasterRecoveryCluster.
+
+        **参数解释**： 磁盘使用率。 **取值范围**： 不涉及。
+
+        :return: The disk_used of this DisasterRecoveryCluster.
+        :rtype: str
+        """
+        return self._disk_used
+
+    @disk_used.setter
+    def disk_used(self, disk_used):
+        r"""Sets the disk_used of this DisasterRecoveryCluster.
+
+        **参数解释**： 磁盘使用率。 **取值范围**： 不涉及。
+
+        :param disk_used: The disk_used of this DisasterRecoveryCluster.
+        :type disk_used: str
+        """
+        self._disk_used = disk_used
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -325,10 +438,6 @@ class DisasterRecoveryCluster:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

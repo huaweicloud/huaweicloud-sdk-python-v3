@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -54,7 +52,7 @@ class ListDbObjectsResponse(SdkResponse):
         :type object_scope: str
         """
         
-        super(ListDbObjectsResponse, self).__init__()
+        super().__init__()
 
         self._target_root_db = None
         self._object_info = None
@@ -206,10 +204,12 @@ class ListDbObjectsResponse(SdkResponse):
         self._object_scope = object_scope
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ListDbObjectsResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -235,10 +235,6 @@ class ListDbObjectsResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

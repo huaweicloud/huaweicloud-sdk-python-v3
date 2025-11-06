@@ -17,7 +17,7 @@ except ImportError as e:
 
 class KvsClient(Client, KvsClientInterface):
     def __init__(self):
-        super(KvsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkkvs.v1.model")
 
     @classmethod

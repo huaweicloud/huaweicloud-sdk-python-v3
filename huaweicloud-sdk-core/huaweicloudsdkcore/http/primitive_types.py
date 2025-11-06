@@ -22,13 +22,11 @@
 import datetime
 import decimal
 
-import six
-
-PRIMITIVE_TYPES = (float, bool, bytes, six.text_type) + six.integer_types
+PRIMITIVE_TYPES = (float, bool, bytes, str, int)
 
 NATIVE_TYPES_MAPPING = {
     'int': int,
-    'long': int if six.PY3 else long,
+    'long': int,
     'float': float,
     'str': str,
     'bool': bool,

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -25,7 +23,30 @@ class Snapshots:
         'size': 'float',
         'status': 'str',
         'type': 'str',
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'datastore': 'Datastore',
+        'cluster_name': 'str',
+        'updated': 'str',
+        'bak_expected_start_time': 'str',
+        'bak_keep_day': 'int',
+        'bak_period': 'str',
+        'db_user': 'str',
+        'progress': 'str',
+        'backup_key': 'str',
+        'prior_backup_key': 'str',
+        'base_backup_key': 'str',
+        'backup_device': 'str',
+        'total_backup_size': 'int',
+        'base_backup_name': 'str',
+        'support_inplace_restore': 'bool',
+        'fine_grained_backup': 'bool',
+        'backup_level': 'str',
+        'fine_grained_backup_detail': 'ExtFineGrainedSnapshotDetail',
+        'guest_agent_version': 'str',
+        'cluster_status': 'str',
+        'cluster_task_status': 'str',
+        'support_fine_grained_cross_version_restore': 'bool',
+        'support_fine_grained_asymmetric_restore': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +58,33 @@ class Snapshots:
         'size': 'size',
         'status': 'status',
         'type': 'type',
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'datastore': 'datastore',
+        'cluster_name': 'cluster_name',
+        'updated': 'updated',
+        'bak_expected_start_time': 'bak_expected_start_time',
+        'bak_keep_day': 'bak_keep_day',
+        'bak_period': 'bak_period',
+        'db_user': 'db_user',
+        'progress': 'progress',
+        'backup_key': 'backup_key',
+        'prior_backup_key': 'prior_backup_key',
+        'base_backup_key': 'base_backup_key',
+        'backup_device': 'backup_device',
+        'total_backup_size': 'total_backup_size',
+        'base_backup_name': 'base_backup_name',
+        'support_inplace_restore': 'support_inplace_restore',
+        'fine_grained_backup': 'fine_grained_backup',
+        'backup_level': 'backup_level',
+        'fine_grained_backup_detail': 'fine_grained_backup_detail',
+        'guest_agent_version': 'guest_agent_version',
+        'cluster_status': 'cluster_status',
+        'cluster_task_status': 'cluster_task_status',
+        'support_fine_grained_cross_version_restore': 'support_fine_grained_cross_version_restore',
+        'support_fine_grained_asymmetric_restore': 'support_fine_grained_asymmetric_restore'
     }
 
-    def __init__(self, id=None, name=None, description=None, started=None, finished=None, size=None, status=None, type=None, cluster_id=None):
+    def __init__(self, id=None, name=None, description=None, started=None, finished=None, size=None, status=None, type=None, cluster_id=None, datastore=None, cluster_name=None, updated=None, bak_expected_start_time=None, bak_keep_day=None, bak_period=None, db_user=None, progress=None, backup_key=None, prior_backup_key=None, base_backup_key=None, backup_device=None, total_backup_size=None, base_backup_name=None, support_inplace_restore=None, fine_grained_backup=None, backup_level=None, fine_grained_backup_detail=None, guest_agent_version=None, cluster_status=None, cluster_task_status=None, support_fine_grained_cross_version_restore=None, support_fine_grained_asymmetric_restore=None):
         r"""Snapshots
 
         The model defined in huaweicloud sdk
@@ -63,6 +107,52 @@ class Snapshots:
         :type type: str
         :param cluster_id: **参数解释**： 快照对应的集群ID。 **取值范围**： 不涉及。
         :type cluster_id: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkdws.v2.Datastore`
+        :param cluster_name: **参数解释**： 集群名称。 **取值范围**： 不涉及。
+        :type cluster_name: str
+        :param updated: **参数解释**： 更新时间。 **取值范围**： 不涉及。
+        :type updated: str
+        :param bak_expected_start_time: **参数解释**： 快照期待开始执行时间。 **取值范围**： 不涉及。
+        :type bak_expected_start_time: str
+        :param bak_keep_day: **参数解释**： 保存天数。 **取值范围**： 不涉及。
+        :type bak_keep_day: int
+        :param bak_period: **参数解释**： 备份周期。 **取值范围**： 不涉及。
+        :type bak_period: str
+        :param db_user: **参数解释**： 数据库用户名。 **取值范围**： 不涉及。
+        :type db_user: str
+        :param progress: **参数解释**： 进度。 **取值范围**： 不涉及。
+        :type progress: str
+        :param backup_key: **参数解释**： 备份产生的Key。 **取值范围**： 不涉及。
+        :type backup_key: str
+        :param prior_backup_key: **参数解释**： 增量快照使用前一个快照的BackupKey。当取值为FULL时表示这是一个全量快照。 **取值范围**： 不涉及。
+        :type prior_backup_key: str
+        :param base_backup_key: **参数解释**： 对应全量快照的BackupKey。 **取值范围**： 不涉及。
+        :type base_backup_key: str
+        :param backup_device: **参数解释**： 备份介质。 **取值范围**： 不涉及。
+        :type backup_device: str
+        :param total_backup_size: **参数解释**： 总备份文件大小。 **取值范围**： 不涉及。
+        :type total_backup_size: int
+        :param base_backup_name: **参数解释**： 对应全量快照名称。 **取值范围**： 不涉及。
+        :type base_backup_name: str
+        :param support_inplace_restore: **参数解释**： 是否支持备份到当前集群。 **取值范围**： 不涉及。
+        :type support_inplace_restore: bool
+        :param fine_grained_backup: **参数解释**： 是否支持细粒度备份。 **取值范围**： 不涉及。
+        :type fine_grained_backup: bool
+        :param backup_level: **参数解释**： 备份等级。 **取值范围**： 不涉及。
+        :type backup_level: str
+        :param fine_grained_backup_detail: 
+        :type fine_grained_backup_detail: :class:`huaweicloudsdkdws.v2.ExtFineGrainedSnapshotDetail`
+        :param guest_agent_version: **参数解释**： agent版本。 **取值范围**： 不涉及。
+        :type guest_agent_version: str
+        :param cluster_status: **参数解释**： 集群状态。 **取值范围**： 不涉及。
+        :type cluster_status: str
+        :param cluster_task_status: **参数解释**： 集群任务状态。 **取值范围**： 不涉及。
+        :type cluster_task_status: str
+        :param support_fine_grained_cross_version_restore: **参数解释**： 是否支持细粒度跨版本恢复。 **取值范围**： 不涉及。
+        :type support_fine_grained_cross_version_restore: bool
+        :param support_fine_grained_asymmetric_restore: **参数解释**： 是否支持细粒度异构恢复。 **取值范围**： 不涉及。
+        :type support_fine_grained_asymmetric_restore: bool
         """
         
         
@@ -76,6 +166,29 @@ class Snapshots:
         self._status = None
         self._type = None
         self._cluster_id = None
+        self._datastore = None
+        self._cluster_name = None
+        self._updated = None
+        self._bak_expected_start_time = None
+        self._bak_keep_day = None
+        self._bak_period = None
+        self._db_user = None
+        self._progress = None
+        self._backup_key = None
+        self._prior_backup_key = None
+        self._base_backup_key = None
+        self._backup_device = None
+        self._total_backup_size = None
+        self._base_backup_name = None
+        self._support_inplace_restore = None
+        self._fine_grained_backup = None
+        self._backup_level = None
+        self._fine_grained_backup_detail = None
+        self._guest_agent_version = None
+        self._cluster_status = None
+        self._cluster_task_status = None
+        self._support_fine_grained_cross_version_restore = None
+        self._support_fine_grained_asymmetric_restore = None
         self.discriminator = None
 
         self.id = id
@@ -87,6 +200,52 @@ class Snapshots:
         self.status = status
         self.type = type
         self.cluster_id = cluster_id
+        if datastore is not None:
+            self.datastore = datastore
+        if cluster_name is not None:
+            self.cluster_name = cluster_name
+        if updated is not None:
+            self.updated = updated
+        if bak_expected_start_time is not None:
+            self.bak_expected_start_time = bak_expected_start_time
+        if bak_keep_day is not None:
+            self.bak_keep_day = bak_keep_day
+        if bak_period is not None:
+            self.bak_period = bak_period
+        if db_user is not None:
+            self.db_user = db_user
+        if progress is not None:
+            self.progress = progress
+        if backup_key is not None:
+            self.backup_key = backup_key
+        if prior_backup_key is not None:
+            self.prior_backup_key = prior_backup_key
+        if base_backup_key is not None:
+            self.base_backup_key = base_backup_key
+        if backup_device is not None:
+            self.backup_device = backup_device
+        if total_backup_size is not None:
+            self.total_backup_size = total_backup_size
+        if base_backup_name is not None:
+            self.base_backup_name = base_backup_name
+        if support_inplace_restore is not None:
+            self.support_inplace_restore = support_inplace_restore
+        if fine_grained_backup is not None:
+            self.fine_grained_backup = fine_grained_backup
+        if backup_level is not None:
+            self.backup_level = backup_level
+        if fine_grained_backup_detail is not None:
+            self.fine_grained_backup_detail = fine_grained_backup_detail
+        if guest_agent_version is not None:
+            self.guest_agent_version = guest_agent_version
+        if cluster_status is not None:
+            self.cluster_status = cluster_status
+        if cluster_task_status is not None:
+            self.cluster_task_status = cluster_task_status
+        if support_fine_grained_cross_version_restore is not None:
+            self.support_fine_grained_cross_version_restore = support_fine_grained_cross_version_restore
+        if support_fine_grained_asymmetric_restore is not None:
+            self.support_fine_grained_asymmetric_restore = support_fine_grained_asymmetric_restore
 
     @property
     def id(self):
@@ -286,11 +445,508 @@ class Snapshots:
         """
         self._cluster_id = cluster_id
 
+    @property
+    def datastore(self):
+        r"""Gets the datastore of this Snapshots.
+
+        :return: The datastore of this Snapshots.
+        :rtype: :class:`huaweicloudsdkdws.v2.Datastore`
+        """
+        return self._datastore
+
+    @datastore.setter
+    def datastore(self, datastore):
+        r"""Sets the datastore of this Snapshots.
+
+        :param datastore: The datastore of this Snapshots.
+        :type datastore: :class:`huaweicloudsdkdws.v2.Datastore`
+        """
+        self._datastore = datastore
+
+    @property
+    def cluster_name(self):
+        r"""Gets the cluster_name of this Snapshots.
+
+        **参数解释**： 集群名称。 **取值范围**： 不涉及。
+
+        :return: The cluster_name of this Snapshots.
+        :rtype: str
+        """
+        return self._cluster_name
+
+    @cluster_name.setter
+    def cluster_name(self, cluster_name):
+        r"""Sets the cluster_name of this Snapshots.
+
+        **参数解释**： 集群名称。 **取值范围**： 不涉及。
+
+        :param cluster_name: The cluster_name of this Snapshots.
+        :type cluster_name: str
+        """
+        self._cluster_name = cluster_name
+
+    @property
+    def updated(self):
+        r"""Gets the updated of this Snapshots.
+
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。
+
+        :return: The updated of this Snapshots.
+        :rtype: str
+        """
+        return self._updated
+
+    @updated.setter
+    def updated(self, updated):
+        r"""Sets the updated of this Snapshots.
+
+        **参数解释**： 更新时间。 **取值范围**： 不涉及。
+
+        :param updated: The updated of this Snapshots.
+        :type updated: str
+        """
+        self._updated = updated
+
+    @property
+    def bak_expected_start_time(self):
+        r"""Gets the bak_expected_start_time of this Snapshots.
+
+        **参数解释**： 快照期待开始执行时间。 **取值范围**： 不涉及。
+
+        :return: The bak_expected_start_time of this Snapshots.
+        :rtype: str
+        """
+        return self._bak_expected_start_time
+
+    @bak_expected_start_time.setter
+    def bak_expected_start_time(self, bak_expected_start_time):
+        r"""Sets the bak_expected_start_time of this Snapshots.
+
+        **参数解释**： 快照期待开始执行时间。 **取值范围**： 不涉及。
+
+        :param bak_expected_start_time: The bak_expected_start_time of this Snapshots.
+        :type bak_expected_start_time: str
+        """
+        self._bak_expected_start_time = bak_expected_start_time
+
+    @property
+    def bak_keep_day(self):
+        r"""Gets the bak_keep_day of this Snapshots.
+
+        **参数解释**： 保存天数。 **取值范围**： 不涉及。
+
+        :return: The bak_keep_day of this Snapshots.
+        :rtype: int
+        """
+        return self._bak_keep_day
+
+    @bak_keep_day.setter
+    def bak_keep_day(self, bak_keep_day):
+        r"""Sets the bak_keep_day of this Snapshots.
+
+        **参数解释**： 保存天数。 **取值范围**： 不涉及。
+
+        :param bak_keep_day: The bak_keep_day of this Snapshots.
+        :type bak_keep_day: int
+        """
+        self._bak_keep_day = bak_keep_day
+
+    @property
+    def bak_period(self):
+        r"""Gets the bak_period of this Snapshots.
+
+        **参数解释**： 备份周期。 **取值范围**： 不涉及。
+
+        :return: The bak_period of this Snapshots.
+        :rtype: str
+        """
+        return self._bak_period
+
+    @bak_period.setter
+    def bak_period(self, bak_period):
+        r"""Sets the bak_period of this Snapshots.
+
+        **参数解释**： 备份周期。 **取值范围**： 不涉及。
+
+        :param bak_period: The bak_period of this Snapshots.
+        :type bak_period: str
+        """
+        self._bak_period = bak_period
+
+    @property
+    def db_user(self):
+        r"""Gets the db_user of this Snapshots.
+
+        **参数解释**： 数据库用户名。 **取值范围**： 不涉及。
+
+        :return: The db_user of this Snapshots.
+        :rtype: str
+        """
+        return self._db_user
+
+    @db_user.setter
+    def db_user(self, db_user):
+        r"""Sets the db_user of this Snapshots.
+
+        **参数解释**： 数据库用户名。 **取值范围**： 不涉及。
+
+        :param db_user: The db_user of this Snapshots.
+        :type db_user: str
+        """
+        self._db_user = db_user
+
+    @property
+    def progress(self):
+        r"""Gets the progress of this Snapshots.
+
+        **参数解释**： 进度。 **取值范围**： 不涉及。
+
+        :return: The progress of this Snapshots.
+        :rtype: str
+        """
+        return self._progress
+
+    @progress.setter
+    def progress(self, progress):
+        r"""Sets the progress of this Snapshots.
+
+        **参数解释**： 进度。 **取值范围**： 不涉及。
+
+        :param progress: The progress of this Snapshots.
+        :type progress: str
+        """
+        self._progress = progress
+
+    @property
+    def backup_key(self):
+        r"""Gets the backup_key of this Snapshots.
+
+        **参数解释**： 备份产生的Key。 **取值范围**： 不涉及。
+
+        :return: The backup_key of this Snapshots.
+        :rtype: str
+        """
+        return self._backup_key
+
+    @backup_key.setter
+    def backup_key(self, backup_key):
+        r"""Sets the backup_key of this Snapshots.
+
+        **参数解释**： 备份产生的Key。 **取值范围**： 不涉及。
+
+        :param backup_key: The backup_key of this Snapshots.
+        :type backup_key: str
+        """
+        self._backup_key = backup_key
+
+    @property
+    def prior_backup_key(self):
+        r"""Gets the prior_backup_key of this Snapshots.
+
+        **参数解释**： 增量快照使用前一个快照的BackupKey。当取值为FULL时表示这是一个全量快照。 **取值范围**： 不涉及。
+
+        :return: The prior_backup_key of this Snapshots.
+        :rtype: str
+        """
+        return self._prior_backup_key
+
+    @prior_backup_key.setter
+    def prior_backup_key(self, prior_backup_key):
+        r"""Sets the prior_backup_key of this Snapshots.
+
+        **参数解释**： 增量快照使用前一个快照的BackupKey。当取值为FULL时表示这是一个全量快照。 **取值范围**： 不涉及。
+
+        :param prior_backup_key: The prior_backup_key of this Snapshots.
+        :type prior_backup_key: str
+        """
+        self._prior_backup_key = prior_backup_key
+
+    @property
+    def base_backup_key(self):
+        r"""Gets the base_backup_key of this Snapshots.
+
+        **参数解释**： 对应全量快照的BackupKey。 **取值范围**： 不涉及。
+
+        :return: The base_backup_key of this Snapshots.
+        :rtype: str
+        """
+        return self._base_backup_key
+
+    @base_backup_key.setter
+    def base_backup_key(self, base_backup_key):
+        r"""Sets the base_backup_key of this Snapshots.
+
+        **参数解释**： 对应全量快照的BackupKey。 **取值范围**： 不涉及。
+
+        :param base_backup_key: The base_backup_key of this Snapshots.
+        :type base_backup_key: str
+        """
+        self._base_backup_key = base_backup_key
+
+    @property
+    def backup_device(self):
+        r"""Gets the backup_device of this Snapshots.
+
+        **参数解释**： 备份介质。 **取值范围**： 不涉及。
+
+        :return: The backup_device of this Snapshots.
+        :rtype: str
+        """
+        return self._backup_device
+
+    @backup_device.setter
+    def backup_device(self, backup_device):
+        r"""Sets the backup_device of this Snapshots.
+
+        **参数解释**： 备份介质。 **取值范围**： 不涉及。
+
+        :param backup_device: The backup_device of this Snapshots.
+        :type backup_device: str
+        """
+        self._backup_device = backup_device
+
+    @property
+    def total_backup_size(self):
+        r"""Gets the total_backup_size of this Snapshots.
+
+        **参数解释**： 总备份文件大小。 **取值范围**： 不涉及。
+
+        :return: The total_backup_size of this Snapshots.
+        :rtype: int
+        """
+        return self._total_backup_size
+
+    @total_backup_size.setter
+    def total_backup_size(self, total_backup_size):
+        r"""Sets the total_backup_size of this Snapshots.
+
+        **参数解释**： 总备份文件大小。 **取值范围**： 不涉及。
+
+        :param total_backup_size: The total_backup_size of this Snapshots.
+        :type total_backup_size: int
+        """
+        self._total_backup_size = total_backup_size
+
+    @property
+    def base_backup_name(self):
+        r"""Gets the base_backup_name of this Snapshots.
+
+        **参数解释**： 对应全量快照名称。 **取值范围**： 不涉及。
+
+        :return: The base_backup_name of this Snapshots.
+        :rtype: str
+        """
+        return self._base_backup_name
+
+    @base_backup_name.setter
+    def base_backup_name(self, base_backup_name):
+        r"""Sets the base_backup_name of this Snapshots.
+
+        **参数解释**： 对应全量快照名称。 **取值范围**： 不涉及。
+
+        :param base_backup_name: The base_backup_name of this Snapshots.
+        :type base_backup_name: str
+        """
+        self._base_backup_name = base_backup_name
+
+    @property
+    def support_inplace_restore(self):
+        r"""Gets the support_inplace_restore of this Snapshots.
+
+        **参数解释**： 是否支持备份到当前集群。 **取值范围**： 不涉及。
+
+        :return: The support_inplace_restore of this Snapshots.
+        :rtype: bool
+        """
+        return self._support_inplace_restore
+
+    @support_inplace_restore.setter
+    def support_inplace_restore(self, support_inplace_restore):
+        r"""Sets the support_inplace_restore of this Snapshots.
+
+        **参数解释**： 是否支持备份到当前集群。 **取值范围**： 不涉及。
+
+        :param support_inplace_restore: The support_inplace_restore of this Snapshots.
+        :type support_inplace_restore: bool
+        """
+        self._support_inplace_restore = support_inplace_restore
+
+    @property
+    def fine_grained_backup(self):
+        r"""Gets the fine_grained_backup of this Snapshots.
+
+        **参数解释**： 是否支持细粒度备份。 **取值范围**： 不涉及。
+
+        :return: The fine_grained_backup of this Snapshots.
+        :rtype: bool
+        """
+        return self._fine_grained_backup
+
+    @fine_grained_backup.setter
+    def fine_grained_backup(self, fine_grained_backup):
+        r"""Sets the fine_grained_backup of this Snapshots.
+
+        **参数解释**： 是否支持细粒度备份。 **取值范围**： 不涉及。
+
+        :param fine_grained_backup: The fine_grained_backup of this Snapshots.
+        :type fine_grained_backup: bool
+        """
+        self._fine_grained_backup = fine_grained_backup
+
+    @property
+    def backup_level(self):
+        r"""Gets the backup_level of this Snapshots.
+
+        **参数解释**： 备份等级。 **取值范围**： 不涉及。
+
+        :return: The backup_level of this Snapshots.
+        :rtype: str
+        """
+        return self._backup_level
+
+    @backup_level.setter
+    def backup_level(self, backup_level):
+        r"""Sets the backup_level of this Snapshots.
+
+        **参数解释**： 备份等级。 **取值范围**： 不涉及。
+
+        :param backup_level: The backup_level of this Snapshots.
+        :type backup_level: str
+        """
+        self._backup_level = backup_level
+
+    @property
+    def fine_grained_backup_detail(self):
+        r"""Gets the fine_grained_backup_detail of this Snapshots.
+
+        :return: The fine_grained_backup_detail of this Snapshots.
+        :rtype: :class:`huaweicloudsdkdws.v2.ExtFineGrainedSnapshotDetail`
+        """
+        return self._fine_grained_backup_detail
+
+    @fine_grained_backup_detail.setter
+    def fine_grained_backup_detail(self, fine_grained_backup_detail):
+        r"""Sets the fine_grained_backup_detail of this Snapshots.
+
+        :param fine_grained_backup_detail: The fine_grained_backup_detail of this Snapshots.
+        :type fine_grained_backup_detail: :class:`huaweicloudsdkdws.v2.ExtFineGrainedSnapshotDetail`
+        """
+        self._fine_grained_backup_detail = fine_grained_backup_detail
+
+    @property
+    def guest_agent_version(self):
+        r"""Gets the guest_agent_version of this Snapshots.
+
+        **参数解释**： agent版本。 **取值范围**： 不涉及。
+
+        :return: The guest_agent_version of this Snapshots.
+        :rtype: str
+        """
+        return self._guest_agent_version
+
+    @guest_agent_version.setter
+    def guest_agent_version(self, guest_agent_version):
+        r"""Sets the guest_agent_version of this Snapshots.
+
+        **参数解释**： agent版本。 **取值范围**： 不涉及。
+
+        :param guest_agent_version: The guest_agent_version of this Snapshots.
+        :type guest_agent_version: str
+        """
+        self._guest_agent_version = guest_agent_version
+
+    @property
+    def cluster_status(self):
+        r"""Gets the cluster_status of this Snapshots.
+
+        **参数解释**： 集群状态。 **取值范围**： 不涉及。
+
+        :return: The cluster_status of this Snapshots.
+        :rtype: str
+        """
+        return self._cluster_status
+
+    @cluster_status.setter
+    def cluster_status(self, cluster_status):
+        r"""Sets the cluster_status of this Snapshots.
+
+        **参数解释**： 集群状态。 **取值范围**： 不涉及。
+
+        :param cluster_status: The cluster_status of this Snapshots.
+        :type cluster_status: str
+        """
+        self._cluster_status = cluster_status
+
+    @property
+    def cluster_task_status(self):
+        r"""Gets the cluster_task_status of this Snapshots.
+
+        **参数解释**： 集群任务状态。 **取值范围**： 不涉及。
+
+        :return: The cluster_task_status of this Snapshots.
+        :rtype: str
+        """
+        return self._cluster_task_status
+
+    @cluster_task_status.setter
+    def cluster_task_status(self, cluster_task_status):
+        r"""Sets the cluster_task_status of this Snapshots.
+
+        **参数解释**： 集群任务状态。 **取值范围**： 不涉及。
+
+        :param cluster_task_status: The cluster_task_status of this Snapshots.
+        :type cluster_task_status: str
+        """
+        self._cluster_task_status = cluster_task_status
+
+    @property
+    def support_fine_grained_cross_version_restore(self):
+        r"""Gets the support_fine_grained_cross_version_restore of this Snapshots.
+
+        **参数解释**： 是否支持细粒度跨版本恢复。 **取值范围**： 不涉及。
+
+        :return: The support_fine_grained_cross_version_restore of this Snapshots.
+        :rtype: bool
+        """
+        return self._support_fine_grained_cross_version_restore
+
+    @support_fine_grained_cross_version_restore.setter
+    def support_fine_grained_cross_version_restore(self, support_fine_grained_cross_version_restore):
+        r"""Sets the support_fine_grained_cross_version_restore of this Snapshots.
+
+        **参数解释**： 是否支持细粒度跨版本恢复。 **取值范围**： 不涉及。
+
+        :param support_fine_grained_cross_version_restore: The support_fine_grained_cross_version_restore of this Snapshots.
+        :type support_fine_grained_cross_version_restore: bool
+        """
+        self._support_fine_grained_cross_version_restore = support_fine_grained_cross_version_restore
+
+    @property
+    def support_fine_grained_asymmetric_restore(self):
+        r"""Gets the support_fine_grained_asymmetric_restore of this Snapshots.
+
+        **参数解释**： 是否支持细粒度异构恢复。 **取值范围**： 不涉及。
+
+        :return: The support_fine_grained_asymmetric_restore of this Snapshots.
+        :rtype: bool
+        """
+        return self._support_fine_grained_asymmetric_restore
+
+    @support_fine_grained_asymmetric_restore.setter
+    def support_fine_grained_asymmetric_restore(self, support_fine_grained_asymmetric_restore):
+        r"""Sets the support_fine_grained_asymmetric_restore of this Snapshots.
+
+        **参数解释**： 是否支持细粒度异构恢复。 **取值范围**： 不涉及。
+
+        :param support_fine_grained_asymmetric_restore: The support_fine_grained_asymmetric_restore of this Snapshots.
+        :type support_fine_grained_asymmetric_restore: bool
+        """
+        self._support_fine_grained_asymmetric_restore = support_fine_grained_asymmetric_restore
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -316,10 +972,6 @@ class Snapshots:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

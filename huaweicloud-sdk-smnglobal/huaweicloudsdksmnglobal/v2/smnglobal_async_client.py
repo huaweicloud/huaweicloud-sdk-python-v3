@@ -17,7 +17,7 @@ except ImportError as e:
 
 class SmnglobalAsyncClient(Client):
     def __init__(self):
-        super(SmnglobalAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdksmnglobal.v2.model")
 
     @classmethod

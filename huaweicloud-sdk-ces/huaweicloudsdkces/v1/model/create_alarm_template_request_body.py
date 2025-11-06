@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -37,13 +35,13 @@ class CreateAlarmTemplateRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param template_name: 自定义告警模板名称，只能包含0-9/a-z/A-Z/_/-或汉字，长度为1-128。。
+        :param template_name: 自定义告警模板名称，只能包含0-9/a-z/A-Z/_/-或汉字，长度为1-128。
         :type template_name: str
         :param template_description: 自定义告警模板详细描述，长度为0-256。
         :type template_description: str
-        :param namespace: 创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param namespace: 创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。
         :type namespace: str
-        :param dimension_name: 资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param dimension_name: 资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
         :type dimension_name: str
         :param template_items: 创建自定义告警模板添加一个或者多个指标的告警规则；目前最多可增加30组告警规则策略。
         :type template_items: list[:class:`huaweicloudsdkces.v1.TemplateItem`]
@@ -69,7 +67,7 @@ class CreateAlarmTemplateRequestBody:
     def template_name(self):
         r"""Gets the template_name of this CreateAlarmTemplateRequestBody.
 
-        自定义告警模板名称，只能包含0-9/a-z/A-Z/_/-或汉字，长度为1-128。。
+        自定义告警模板名称，只能包含0-9/a-z/A-Z/_/-或汉字，长度为1-128。
 
         :return: The template_name of this CreateAlarmTemplateRequestBody.
         :rtype: str
@@ -80,7 +78,7 @@ class CreateAlarmTemplateRequestBody:
     def template_name(self, template_name):
         r"""Sets the template_name of this CreateAlarmTemplateRequestBody.
 
-        自定义告警模板名称，只能包含0-9/a-z/A-Z/_/-或汉字，长度为1-128。。
+        自定义告警模板名称，只能包含0-9/a-z/A-Z/_/-或汉字，长度为1-128。
 
         :param template_name: The template_name of this CreateAlarmTemplateRequestBody.
         :type template_name: str
@@ -113,7 +111,7 @@ class CreateAlarmTemplateRequestBody:
     def namespace(self):
         r"""Gets the namespace of this CreateAlarmTemplateRequestBody.
 
-        创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。
 
         :return: The namespace of this CreateAlarmTemplateRequestBody.
         :rtype: str
@@ -124,7 +122,7 @@ class CreateAlarmTemplateRequestBody:
     def namespace(self, namespace):
         r"""Sets the namespace of this CreateAlarmTemplateRequestBody.
 
-        创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。
 
         :param namespace: The namespace of this CreateAlarmTemplateRequestBody.
         :type namespace: str
@@ -135,7 +133,7 @@ class CreateAlarmTemplateRequestBody:
     def dimension_name(self):
         r"""Gets the dimension_name of this CreateAlarmTemplateRequestBody.
 
-        资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
 
         :return: The dimension_name of this CreateAlarmTemplateRequestBody.
         :rtype: str
@@ -146,7 +144,7 @@ class CreateAlarmTemplateRequestBody:
     def dimension_name(self, dimension_name):
         r"""Sets the dimension_name of this CreateAlarmTemplateRequestBody.
 
-        资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
 
         :param dimension_name: The dimension_name of this CreateAlarmTemplateRequestBody.
         :type dimension_name: str
@@ -176,10 +174,9 @@ class CreateAlarmTemplateRequestBody:
         self._template_items = template_items
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -205,10 +202,6 @@ class CreateAlarmTemplateRequestBody:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

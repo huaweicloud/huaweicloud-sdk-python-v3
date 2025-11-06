@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -82,7 +80,7 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
         :type role_deploy_meta: list[:class:`huaweicloudsdkmrs.v1.RoleDeployMeta`]
         """
         
-        super(ShowMrsVersionMetadataResponse, self).__init__()
+        super().__init__()
 
         self._other = None
         self._name = None
@@ -405,10 +403,12 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
         self._role_deploy_meta = role_deploy_meta
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ShowMrsVersionMetadataResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -434,10 +434,6 @@ class ShowMrsVersionMetadataResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

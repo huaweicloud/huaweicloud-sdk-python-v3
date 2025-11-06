@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -29,7 +27,7 @@ class DeleteAlarmRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: 告警规则的ID。
+        :param alarm_id: **参数解释**： 告警规则ID， **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位由字母或数字组成的字符串。长度为24个字符。 **默认取值**： 不涉及。 
         :type alarm_id: str
         """
         
@@ -44,7 +42,7 @@ class DeleteAlarmRequest:
     def alarm_id(self):
         r"""Gets the alarm_id of this DeleteAlarmRequest.
 
-        告警规则的ID。
+        **参数解释**： 告警规则ID， **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位由字母或数字组成的字符串。长度为24个字符。 **默认取值**： 不涉及。 
 
         :return: The alarm_id of this DeleteAlarmRequest.
         :rtype: str
@@ -55,7 +53,7 @@ class DeleteAlarmRequest:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this DeleteAlarmRequest.
 
-        告警规则的ID。
+        **参数解释**： 告警规则ID， **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位由字母或数字组成的字符串。长度为24个字符。 **默认取值**： 不涉及。 
 
         :param alarm_id: The alarm_id of this DeleteAlarmRequest.
         :type alarm_id: str
@@ -63,10 +61,9 @@ class DeleteAlarmRequest:
         self._alarm_id = alarm_id
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -92,10 +89,6 @@ class DeleteAlarmRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

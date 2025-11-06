@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -18,7 +16,7 @@ class UpdateAlarmActionRequest:
 
     openapi_types = {
         'alarm_id': 'str',
-        'body': 'ModifyAlarmActionReq'
+        'body': 'UpdateAlarmActionRequestBody'
     }
 
     attribute_map = {
@@ -31,10 +29,10 @@ class UpdateAlarmActionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: 告警规则的ID。
+        :param alarm_id: **参数解释**： 告警规则ID， **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位由字母或数字组成的字符串。长度为24个字符。 **默认取值**： 不涉及。 
         :type alarm_id: str
         :param body: Body of the UpdateAlarmActionRequest
-        :type body: :class:`huaweicloudsdkces.v1.ModifyAlarmActionReq`
+        :type body: :class:`huaweicloudsdkces.v1.UpdateAlarmActionRequestBody`
         """
         
         
@@ -51,7 +49,7 @@ class UpdateAlarmActionRequest:
     def alarm_id(self):
         r"""Gets the alarm_id of this UpdateAlarmActionRequest.
 
-        告警规则的ID。
+        **参数解释**： 告警规则ID， **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位由字母或数字组成的字符串。长度为24个字符。 **默认取值**： 不涉及。 
 
         :return: The alarm_id of this UpdateAlarmActionRequest.
         :rtype: str
@@ -62,7 +60,7 @@ class UpdateAlarmActionRequest:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this UpdateAlarmActionRequest.
 
-        告警规则的ID。
+        **参数解释**： 告警规则ID， **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位由字母或数字组成的字符串。长度为24个字符。 **默认取值**： 不涉及。 
 
         :param alarm_id: The alarm_id of this UpdateAlarmActionRequest.
         :type alarm_id: str
@@ -74,7 +72,7 @@ class UpdateAlarmActionRequest:
         r"""Gets the body of this UpdateAlarmActionRequest.
 
         :return: The body of this UpdateAlarmActionRequest.
-        :rtype: :class:`huaweicloudsdkces.v1.ModifyAlarmActionReq`
+        :rtype: :class:`huaweicloudsdkces.v1.UpdateAlarmActionRequestBody`
         """
         return self._body
 
@@ -83,15 +81,14 @@ class UpdateAlarmActionRequest:
         r"""Sets the body of this UpdateAlarmActionRequest.
 
         :param body: The body of this UpdateAlarmActionRequest.
-        :type body: :class:`huaweicloudsdkces.v1.ModifyAlarmActionReq`
+        :type body: :class:`huaweicloudsdkces.v1.UpdateAlarmActionRequestBody`
         """
         self._body = body
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -117,10 +114,6 @@ class UpdateAlarmActionRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

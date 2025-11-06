@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -21,6 +19,7 @@ class ClusterSnapshots:
         'name': 'str',
         'description': 'str',
         'started': 'str',
+        'finished': 'str',
         'size': 'float',
         'status': 'str',
         'cluster_id': 'str',
@@ -44,7 +43,8 @@ class ClusterSnapshots:
         'backup_level': 'str',
         'fine_grained_backup_detail': 'FineGrainedSnapshotDetail',
         'guest_agent_version': 'str',
-        'cluster_status': 'str'
+        'cluster_status': 'str',
+        'cluster_task_status': 'str'
     }
 
     attribute_map = {
@@ -52,6 +52,7 @@ class ClusterSnapshots:
         'name': 'name',
         'description': 'description',
         'started': 'started',
+        'finished': 'finished',
         'size': 'size',
         'status': 'status',
         'cluster_id': 'cluster_id',
@@ -75,10 +76,11 @@ class ClusterSnapshots:
         'backup_level': 'backup_level',
         'fine_grained_backup_detail': 'fine_grained_backup_detail',
         'guest_agent_version': 'guest_agent_version',
-        'cluster_status': 'cluster_status'
+        'cluster_status': 'cluster_status',
+        'cluster_task_status': 'cluster_task_status'
     }
 
-    def __init__(self, id=None, name=None, description=None, started=None, size=None, status=None, cluster_id=None, datastore=None, cluster_name=None, updated=None, type=None, bak_expected_start_time=None, bak_keep_day=None, bak_period=None, db_user=None, progress=None, backup_key=None, prior_backup_key=None, base_backup_key=None, backup_device=None, total_backup_size=None, base_backup_name=None, support_inplace_restore=None, fine_grained_backup=None, backup_level=None, fine_grained_backup_detail=None, guest_agent_version=None, cluster_status=None):
+    def __init__(self, id=None, name=None, description=None, started=None, finished=None, size=None, status=None, cluster_id=None, datastore=None, cluster_name=None, updated=None, type=None, bak_expected_start_time=None, bak_keep_day=None, bak_period=None, db_user=None, progress=None, backup_key=None, prior_backup_key=None, base_backup_key=None, backup_device=None, total_backup_size=None, base_backup_name=None, support_inplace_restore=None, fine_grained_backup=None, backup_level=None, fine_grained_backup_detail=None, guest_agent_version=None, cluster_status=None, cluster_task_status=None):
         r"""ClusterSnapshots
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class ClusterSnapshots:
         :type description: str
         :param started: **参数解释**： 快照创建的日期时间，格式为 ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
         :type started: str
+        :param finished: **参数解释**： 快照创建的结束时间，格式为：ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
+        :type finished: str
         :param size: **参数解释**： 快照大小，单位 GB。 **取值范围**： 不涉及。
         :type size: float
         :param status: **参数解释**： 快照状态。 **取值范围**： CREATING：创建中。 AVAILABLE：可用。 UNAVAILABLE：不可用。 RESTORING：恢复中。 FROZEN： 普通冻结。 POLICE_FROZEN： 公安冻结。
@@ -139,6 +143,8 @@ class ClusterSnapshots:
         :type guest_agent_version: str
         :param cluster_status: **参数解释**： 集群状态。 **取值范围**： 不涉及。
         :type cluster_status: str
+        :param cluster_task_status: **参数解释**： 集群任务状态。 **取值范围**： 不涉及。
+        :type cluster_task_status: str
         """
         
         
@@ -147,6 +153,7 @@ class ClusterSnapshots:
         self._name = None
         self._description = None
         self._started = None
+        self._finished = None
         self._size = None
         self._status = None
         self._cluster_id = None
@@ -171,6 +178,7 @@ class ClusterSnapshots:
         self._fine_grained_backup_detail = None
         self._guest_agent_version = None
         self._cluster_status = None
+        self._cluster_task_status = None
         self.discriminator = None
 
         if id is not None:
@@ -181,6 +189,8 @@ class ClusterSnapshots:
             self.description = description
         if started is not None:
             self.started = started
+        if finished is not None:
+            self.finished = finished
         if size is not None:
             self.size = size
         if status is not None:
@@ -229,6 +239,8 @@ class ClusterSnapshots:
             self.guest_agent_version = guest_agent_version
         if cluster_status is not None:
             self.cluster_status = cluster_status
+        if cluster_task_status is not None:
+            self.cluster_task_status = cluster_task_status
 
     @property
     def id(self):
@@ -317,6 +329,28 @@ class ClusterSnapshots:
         :type started: str
         """
         self._started = started
+
+    @property
+    def finished(self):
+        r"""Gets the finished of this ClusterSnapshots.
+
+        **参数解释**： 快照创建的结束时间，格式为：ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
+
+        :return: The finished of this ClusterSnapshots.
+        :rtype: str
+        """
+        return self._finished
+
+    @finished.setter
+    def finished(self, finished):
+        r"""Sets the finished of this ClusterSnapshots.
+
+        **参数解释**： 快照创建的结束时间，格式为：ISO8601: YYYY-MM-DDThh:mm:ssZ。 **取值范围**： 不涉及。
+
+        :param finished: The finished of this ClusterSnapshots.
+        :type finished: str
+        """
+        self._finished = finished
 
     @property
     def size(self):
@@ -838,11 +872,32 @@ class ClusterSnapshots:
         """
         self._cluster_status = cluster_status
 
+    @property
+    def cluster_task_status(self):
+        r"""Gets the cluster_task_status of this ClusterSnapshots.
+
+        **参数解释**： 集群任务状态。 **取值范围**： 不涉及。
+
+        :return: The cluster_task_status of this ClusterSnapshots.
+        :rtype: str
+        """
+        return self._cluster_task_status
+
+    @cluster_task_status.setter
+    def cluster_task_status(self, cluster_task_status):
+        r"""Sets the cluster_task_status of this ClusterSnapshots.
+
+        **参数解释**： 集群任务状态。 **取值范围**： 不涉及。
+
+        :param cluster_task_status: The cluster_task_status of this ClusterSnapshots.
+        :type cluster_task_status: str
+        """
+        self._cluster_task_status = cluster_task_status
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -868,10 +923,6 @@ class ClusterSnapshots:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

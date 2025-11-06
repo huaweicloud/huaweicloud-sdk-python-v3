@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -31,9 +29,9 @@ class MetricsDimension:
 
         The model defined in huaweicloud sdk
 
-        :param name: 资源维度，如：弹性云服务器，则维度为instance_id；目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param name: **参数解释** 资源维度，如：弹性云服务器，则维度为instance_id；目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。 **约束限制** 不涉及 **取值范围** 由字母开头，后面可以包含字母、数字、_或-，长度为[1,32]个字符 **默认取值** 不涉及 
         :type name: str
-        :param value: 资源维度值，为资源的实例ID，如：4270ff17-aba3-4138-89fa-820594c39755。
+        :param value: **参数解释** 资源维度值，为资源的实例ID，如：4270ff17-aba3-4138-89fa-820594c39755。 **约束限制** 不涉及 **取值范围** 长度为[1,256]个字符 **默认取值** 不涉及 
         :type value: str
         """
         
@@ -50,7 +48,7 @@ class MetricsDimension:
     def name(self):
         r"""Gets the name of this MetricsDimension.
 
-        资源维度，如：弹性云服务器，则维度为instance_id；目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        **参数解释** 资源维度，如：弹性云服务器，则维度为instance_id；目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。 **约束限制** 不涉及 **取值范围** 由字母开头，后面可以包含字母、数字、_或-，长度为[1,32]个字符 **默认取值** 不涉及 
 
         :return: The name of this MetricsDimension.
         :rtype: str
@@ -61,7 +59,7 @@ class MetricsDimension:
     def name(self, name):
         r"""Sets the name of this MetricsDimension.
 
-        资源维度，如：弹性云服务器，则维度为instance_id；目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        **参数解释** 资源维度，如：弹性云服务器，则维度为instance_id；目前最大支持4个维度，各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。 **约束限制** 不涉及 **取值范围** 由字母开头，后面可以包含字母、数字、_或-，长度为[1,32]个字符 **默认取值** 不涉及 
 
         :param name: The name of this MetricsDimension.
         :type name: str
@@ -72,7 +70,7 @@ class MetricsDimension:
     def value(self):
         r"""Gets the value of this MetricsDimension.
 
-        资源维度值，为资源的实例ID，如：4270ff17-aba3-4138-89fa-820594c39755。
+        **参数解释** 资源维度值，为资源的实例ID，如：4270ff17-aba3-4138-89fa-820594c39755。 **约束限制** 不涉及 **取值范围** 长度为[1,256]个字符 **默认取值** 不涉及 
 
         :return: The value of this MetricsDimension.
         :rtype: str
@@ -83,7 +81,7 @@ class MetricsDimension:
     def value(self, value):
         r"""Sets the value of this MetricsDimension.
 
-        资源维度值，为资源的实例ID，如：4270ff17-aba3-4138-89fa-820594c39755。
+        **参数解释** 资源维度值，为资源的实例ID，如：4270ff17-aba3-4138-89fa-820594c39755。 **约束限制** 不涉及 **取值范围** 长度为[1,256]个字符 **默认取值** 不涉及 
 
         :param value: The value of this MetricsDimension.
         :type value: str
@@ -91,10 +89,9 @@ class MetricsDimension:
         self._value = value
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -120,10 +117,6 @@ class MetricsDimension:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

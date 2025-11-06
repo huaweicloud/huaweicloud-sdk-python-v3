@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DbssClient(Client):
     def __init__(self):
-        super(DbssClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdbss.v1.model")
 
     @classmethod

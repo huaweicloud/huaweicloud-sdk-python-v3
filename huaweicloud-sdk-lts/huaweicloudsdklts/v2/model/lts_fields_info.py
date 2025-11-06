@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -24,7 +22,8 @@ class LTSFieldsInfo:
         'tokenizer': 'str',
         'quick_analysis': 'bool',
         'ascii': 'list[str]',
-        'lts_sub_fields_info_list': 'list[LTSSubFieldsInfo]'
+        'lts_sub_fields_info_list': 'list[LTSSubFieldsInfo]',
+        'field_analysis_alias': 'str'
     }
 
     attribute_map = {
@@ -35,10 +34,11 @@ class LTSFieldsInfo:
         'tokenizer': 'tokenizer',
         'quick_analysis': 'quickAnalysis',
         'ascii': 'ascii',
-        'lts_sub_fields_info_list': 'ltsSubFieldsInfoList'
+        'lts_sub_fields_info_list': 'ltsSubFieldsInfoList',
+        'field_analysis_alias': 'fieldAnalysisAlias'
     }
 
-    def __init__(self, field_type=None, field_name=None, case_sensitive=None, include_chinese=None, tokenizer=None, quick_analysis=None, ascii=None, lts_sub_fields_info_list=None):
+    def __init__(self, field_type=None, field_name=None, case_sensitive=None, include_chinese=None, tokenizer=None, quick_analysis=None, ascii=None, lts_sub_fields_info_list=None, field_analysis_alias=None):
         r"""LTSFieldsInfo
 
         The model defined in huaweicloud sdk
@@ -59,6 +59,8 @@ class LTSFieldsInfo:
         :type ascii: list[str]
         :param lts_sub_fields_info_list: json字段信息
         :type lts_sub_fields_info_list: list[:class:`huaweicloudsdklts.v2.LTSSubFieldsInfo`]
+        :param field_analysis_alias: **参数解释：** 别名，设置别名后，只支持使用别名进行SQL搜索分析，不支持使用别名进行关键字搜索。 **约束限制：**  不涉及。 **取值范围：** 长度不能大于256。 **默认取值：** 不涉及。
+        :type field_analysis_alias: str
         """
         
         
@@ -71,6 +73,7 @@ class LTSFieldsInfo:
         self._quick_analysis = None
         self._ascii = None
         self._lts_sub_fields_info_list = None
+        self._field_analysis_alias = None
         self.discriminator = None
 
         self.field_type = field_type
@@ -86,6 +89,8 @@ class LTSFieldsInfo:
             self.ascii = ascii
         if lts_sub_fields_info_list is not None:
             self.lts_sub_fields_info_list = lts_sub_fields_info_list
+        if field_analysis_alias is not None:
+            self.field_analysis_alias = field_analysis_alias
 
     @property
     def field_type(self):
@@ -263,11 +268,32 @@ class LTSFieldsInfo:
         """
         self._lts_sub_fields_info_list = lts_sub_fields_info_list
 
+    @property
+    def field_analysis_alias(self):
+        r"""Gets the field_analysis_alias of this LTSFieldsInfo.
+
+        **参数解释：** 别名，设置别名后，只支持使用别名进行SQL搜索分析，不支持使用别名进行关键字搜索。 **约束限制：**  不涉及。 **取值范围：** 长度不能大于256。 **默认取值：** 不涉及。
+
+        :return: The field_analysis_alias of this LTSFieldsInfo.
+        :rtype: str
+        """
+        return self._field_analysis_alias
+
+    @field_analysis_alias.setter
+    def field_analysis_alias(self, field_analysis_alias):
+        r"""Sets the field_analysis_alias of this LTSFieldsInfo.
+
+        **参数解释：** 别名，设置别名后，只支持使用别名进行SQL搜索分析，不支持使用别名进行关键字搜索。 **约束限制：**  不涉及。 **取值范围：** 长度不能大于256。 **默认取值：** 不涉及。
+
+        :param field_analysis_alias: The field_analysis_alias of this LTSFieldsInfo.
+        :type field_analysis_alias: str
+        """
+        self._field_analysis_alias = field_analysis_alias
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -293,10 +319,6 @@ class LTSFieldsInfo:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

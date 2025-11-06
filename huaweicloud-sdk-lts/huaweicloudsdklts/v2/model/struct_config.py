@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -21,10 +19,7 @@ class StructConfig:
         'log_stream_id': 'str',
         'template_id': 'str',
         'template_name': 'str',
-        'template_type': 'str',
-        'demo_fields': 'list[FieldModel]',
-        'tag_fields': 'list[FieldModel]',
-        'quick_analysis': 'bool'
+        'template_type': 'str'
     }
 
     attribute_map = {
@@ -32,13 +27,10 @@ class StructConfig:
         'log_stream_id': 'log_stream_id',
         'template_id': 'template_id',
         'template_name': 'template_name',
-        'template_type': 'template_type',
-        'demo_fields': 'demo_fields',
-        'tag_fields': 'tag_fields',
-        'quick_analysis': 'quick_analysis'
+        'template_type': 'template_type'
     }
 
-    def __init__(self, log_group_id=None, log_stream_id=None, template_id=None, template_name=None, template_type=None, demo_fields=None, tag_fields=None, quick_analysis=None):
+    def __init__(self, log_group_id=None, log_stream_id=None, template_id=None, template_name=None, template_type=None):
         r"""StructConfig
 
         The model defined in huaweicloud sdk
@@ -53,12 +45,6 @@ class StructConfig:
         :type template_name: str
         :param template_type: 所用模板类型，分为built_in及custom两种类型，对应系统模板和自定义模板，系统模板分为CTS，VPC和ELB三种。
         :type template_type: str
-        :param demo_fields: 示例字段数组，只需要填写与模板中is_analysis状态不同的字段
-        :type demo_fields: list[:class:`huaweicloudsdklts.v2.FieldModel`]
-        :param tag_fields: Tag字段数组，只需要填写与模板中is_analysis状态不同的字段
-        :type tag_fields: list[:class:`huaweicloudsdklts.v2.FieldModel`]
-        :param quick_analysis: 是否开启demo_fields和tag_fields快速分析,为true时，所有的demo_fields和tag_fields全部字段均打开快速分析;不填或者为false，以模板中的demo_fields和tag_fields中的is_analysis决定是否开启快速分析。
-        :type quick_analysis: bool
         """
         
         
@@ -68,9 +54,6 @@ class StructConfig:
         self._template_id = None
         self._template_name = None
         self._template_type = None
-        self._demo_fields = None
-        self._tag_fields = None
-        self._quick_analysis = None
         self.discriminator = None
 
         self.log_group_id = log_group_id
@@ -78,12 +61,6 @@ class StructConfig:
         self.template_id = template_id
         self.template_name = template_name
         self.template_type = template_type
-        if demo_fields is not None:
-            self.demo_fields = demo_fields
-        if tag_fields is not None:
-            self.tag_fields = tag_fields
-        if quick_analysis is not None:
-            self.quick_analysis = quick_analysis
 
     @property
     def log_group_id(self):
@@ -195,77 +172,10 @@ class StructConfig:
         """
         self._template_type = template_type
 
-    @property
-    def demo_fields(self):
-        r"""Gets the demo_fields of this StructConfig.
-
-        示例字段数组，只需要填写与模板中is_analysis状态不同的字段
-
-        :return: The demo_fields of this StructConfig.
-        :rtype: list[:class:`huaweicloudsdklts.v2.FieldModel`]
-        """
-        return self._demo_fields
-
-    @demo_fields.setter
-    def demo_fields(self, demo_fields):
-        r"""Sets the demo_fields of this StructConfig.
-
-        示例字段数组，只需要填写与模板中is_analysis状态不同的字段
-
-        :param demo_fields: The demo_fields of this StructConfig.
-        :type demo_fields: list[:class:`huaweicloudsdklts.v2.FieldModel`]
-        """
-        self._demo_fields = demo_fields
-
-    @property
-    def tag_fields(self):
-        r"""Gets the tag_fields of this StructConfig.
-
-        Tag字段数组，只需要填写与模板中is_analysis状态不同的字段
-
-        :return: The tag_fields of this StructConfig.
-        :rtype: list[:class:`huaweicloudsdklts.v2.FieldModel`]
-        """
-        return self._tag_fields
-
-    @tag_fields.setter
-    def tag_fields(self, tag_fields):
-        r"""Sets the tag_fields of this StructConfig.
-
-        Tag字段数组，只需要填写与模板中is_analysis状态不同的字段
-
-        :param tag_fields: The tag_fields of this StructConfig.
-        :type tag_fields: list[:class:`huaweicloudsdklts.v2.FieldModel`]
-        """
-        self._tag_fields = tag_fields
-
-    @property
-    def quick_analysis(self):
-        r"""Gets the quick_analysis of this StructConfig.
-
-        是否开启demo_fields和tag_fields快速分析,为true时，所有的demo_fields和tag_fields全部字段均打开快速分析;不填或者为false，以模板中的demo_fields和tag_fields中的is_analysis决定是否开启快速分析。
-
-        :return: The quick_analysis of this StructConfig.
-        :rtype: bool
-        """
-        return self._quick_analysis
-
-    @quick_analysis.setter
-    def quick_analysis(self, quick_analysis):
-        r"""Sets the quick_analysis of this StructConfig.
-
-        是否开启demo_fields和tag_fields快速分析,为true时，所有的demo_fields和tag_fields全部字段均打开快速分析;不填或者为false，以模板中的demo_fields和tag_fields中的is_analysis决定是否开启快速分析。
-
-        :param quick_analysis: The quick_analysis of this StructConfig.
-        :type quick_analysis: bool
-        """
-        self._quick_analysis = quick_analysis
-
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -291,10 +201,6 @@ class StructConfig:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

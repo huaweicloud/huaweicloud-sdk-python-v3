@@ -23,18 +23,16 @@
 import json
 from abc import abstractmethod, ABC
 
-import six
+from huaweicloudsdkcore.utils import six_utils as six
 from requests import Request, Response
 from urllib3.exceptions import SSLError, NewConnectionError
 
 from huaweicloudsdkcore.exceptions import exceptions
-from huaweicloudsdkcore.utils import six_utils
 
 
 class ExceptionHandler(ABC):
     @abstractmethod
-    def handle_exception(self, request, response):
-        # type: (Request|object, Response|object) -> None
+    def handle_exception(self, request: Request, response: Response):
         pass
 
 

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -32,13 +30,13 @@ class ListAgentInvocationsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param invocations: **参数解释**: 任务列表 **取值范围**: 返回数组长度为[0,100] 
+        :param invocations: **参数解释**: 任务列表 
         :type invocations: list[:class:`huaweicloudsdkces.v3.InvocationInfo`]
         :param count: **参数解释**: 任务列表总量 **取值范围**: 数字范围为[0,9999999999999] 
         :type count: int
         """
         
-        super(ListAgentInvocationsResponse, self).__init__()
+        super().__init__()
 
         self._invocations = None
         self._count = None
@@ -53,7 +51,7 @@ class ListAgentInvocationsResponse(SdkResponse):
     def invocations(self):
         r"""Gets the invocations of this ListAgentInvocationsResponse.
 
-        **参数解释**: 任务列表 **取值范围**: 返回数组长度为[0,100] 
+        **参数解释**: 任务列表 
 
         :return: The invocations of this ListAgentInvocationsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v3.InvocationInfo`]
@@ -64,7 +62,7 @@ class ListAgentInvocationsResponse(SdkResponse):
     def invocations(self, invocations):
         r"""Sets the invocations of this ListAgentInvocationsResponse.
 
-        **参数解释**: 任务列表 **取值范围**: 返回数组长度为[0,100] 
+        **参数解释**: 任务列表 
 
         :param invocations: The invocations of this ListAgentInvocationsResponse.
         :type invocations: list[:class:`huaweicloudsdkces.v3.InvocationInfo`]
@@ -94,10 +92,12 @@ class ListAgentInvocationsResponse(SdkResponse):
         self._count = count
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ListAgentInvocationsResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -123,10 +123,6 @@ class ListAgentInvocationsResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

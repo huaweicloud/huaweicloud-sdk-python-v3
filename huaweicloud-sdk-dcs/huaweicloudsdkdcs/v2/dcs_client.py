@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DcsClient(Client):
     def __init__(self):
-        super(DcsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdcs.v2.model")
 
     @classmethod

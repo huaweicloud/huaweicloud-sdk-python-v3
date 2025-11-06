@@ -17,7 +17,7 @@ except ImportError as e:
 
 class RmsClient(Client):
     def __init__(self):
-        super(RmsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkrms.v1.model")
 
     @classmethod

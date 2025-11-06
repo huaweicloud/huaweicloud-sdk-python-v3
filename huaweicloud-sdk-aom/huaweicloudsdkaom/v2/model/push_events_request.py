@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -33,9 +31,9 @@ class PushEventsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 告警所属的企业项目id。
+        :param enterprise_project_id: 告警所属的企业项目id。获取方式请参见：[获取企业项目ID](aom_04_0024.xml)。 如果不传该参数值，默认为default企业项目，ID为0。
         :type enterprise_project_id: str
-        :param action: 接口请求动作。action&#x3D;clear代表清除告警，不传或者传其他值默认为上报动作。
+        :param action: 接口请求动作： - 不传或者传其他值：代表上报告警或事件动作。该参数值默认为空，即默认上报告警或事件。 - clear：代表清除告警动作。
         :type action: str
         :param body: Body of the PushEventsRequest
         :type body: :class:`huaweicloudsdkaom.v2.EventList`
@@ -59,7 +57,7 @@ class PushEventsRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this PushEventsRequest.
 
-        告警所属的企业项目id。
+        告警所属的企业项目id。获取方式请参见：[获取企业项目ID](aom_04_0024.xml)。 如果不传该参数值，默认为default企业项目，ID为0。
 
         :return: The enterprise_project_id of this PushEventsRequest.
         :rtype: str
@@ -70,7 +68,7 @@ class PushEventsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this PushEventsRequest.
 
-        告警所属的企业项目id。
+        告警所属的企业项目id。获取方式请参见：[获取企业项目ID](aom_04_0024.xml)。 如果不传该参数值，默认为default企业项目，ID为0。
 
         :param enterprise_project_id: The enterprise_project_id of this PushEventsRequest.
         :type enterprise_project_id: str
@@ -81,7 +79,7 @@ class PushEventsRequest:
     def action(self):
         r"""Gets the action of this PushEventsRequest.
 
-        接口请求动作。action=clear代表清除告警，不传或者传其他值默认为上报动作。
+        接口请求动作： - 不传或者传其他值：代表上报告警或事件动作。该参数值默认为空，即默认上报告警或事件。 - clear：代表清除告警动作。
 
         :return: The action of this PushEventsRequest.
         :rtype: str
@@ -92,7 +90,7 @@ class PushEventsRequest:
     def action(self, action):
         r"""Sets the action of this PushEventsRequest.
 
-        接口请求动作。action=clear代表清除告警，不传或者传其他值默认为上报动作。
+        接口请求动作： - 不传或者传其他值：代表上报告警或事件动作。该参数值默认为空，即默认上报告警或事件。 - clear：代表清除告警动作。
 
         :param action: The action of this PushEventsRequest.
         :type action: str
@@ -118,10 +116,9 @@ class PushEventsRequest:
         self._body = body
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -147,10 +144,6 @@ class PushEventsRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

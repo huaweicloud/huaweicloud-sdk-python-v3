@@ -17,7 +17,7 @@ except ImportError as e:
 
 class HiLensClient(Client):
     def __init__(self):
-        super(HiLensClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkhilens.v3.model")
 
     @classmethod

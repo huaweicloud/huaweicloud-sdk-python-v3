@@ -17,7 +17,7 @@ except ImportError as e:
 
 class IoTEdgeClient(Client):
     def __init__(self):
-        super(IoTEdgeClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkiotedge.v3.model")
 
     @classmethod

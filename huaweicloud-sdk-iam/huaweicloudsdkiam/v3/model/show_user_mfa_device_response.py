@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -34,7 +32,7 @@ class ShowUserMfaDeviceResponse(SdkResponse):
         :type virtual_mfa_device: :class:`huaweicloudsdkiam.v3.MfaDeviceResult`
         """
         
-        super(ShowUserMfaDeviceResponse, self).__init__()
+        super().__init__()
 
         self._virtual_mfa_device = None
         self.discriminator = None
@@ -61,10 +59,12 @@ class ShowUserMfaDeviceResponse(SdkResponse):
         self._virtual_mfa_device = virtual_mfa_device
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ShowUserMfaDeviceResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -90,10 +90,6 @@ class ShowUserMfaDeviceResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

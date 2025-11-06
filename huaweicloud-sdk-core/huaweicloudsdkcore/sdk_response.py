@@ -21,6 +21,7 @@
 """
 
 import json
+from typing import Optional
 
 from requests.exceptions import ConnectionError
 
@@ -29,24 +30,24 @@ from huaweicloudsdkcore.exceptions.exception_handler import process_connection_e
 
 class SdkResponse(object):
     def __init__(self):
-        self._status_code = None  # type: int | None
-        self._raw_content = None  # type: bytes | None
+        self._status_code = None
+        self._raw_content = None
 
     @property
-    def status_code(self):
+    def status_code(self) -> Optional[int]:
         return self._status_code
 
     @status_code.setter
-    def status_code(self, status_code):
+    def status_code(self, status_code: int):
         if not self._status_code:
             self._status_code = status_code
 
     @property
-    def raw_content(self):
+    def raw_content(self) -> Optional[bytes]:
         return self._raw_content
 
     @raw_content.setter
-    def raw_content(self, raw_content):
+    def raw_content(self, raw_content: bytes):
         if not self._raw_content:
             self._raw_content = raw_content
 

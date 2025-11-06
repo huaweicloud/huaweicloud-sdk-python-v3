@@ -17,7 +17,7 @@ except ImportError as e:
 
 class IdentityCenterOIDCClient(Client):
     def __init__(self):
-        super(IdentityCenterOIDCClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkidentitycenteroidc.v1.model")
 
     @classmethod

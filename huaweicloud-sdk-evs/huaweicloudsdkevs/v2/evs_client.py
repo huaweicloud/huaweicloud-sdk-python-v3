@@ -17,7 +17,7 @@ except ImportError as e:
 
 class EvsClient(Client):
     def __init__(self):
-        super(EvsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkevs.v2.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CloudRTCClient(Client):
     def __init__(self):
-        super(CloudRTCClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudrtc.v2.model")
 
     @classmethod

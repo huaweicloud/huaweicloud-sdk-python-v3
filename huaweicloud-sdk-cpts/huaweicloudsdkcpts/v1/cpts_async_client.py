@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CptsAsyncClient(Client):
     def __init__(self):
-        super(CptsAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcpts.v1.model")
 
     @classmethod

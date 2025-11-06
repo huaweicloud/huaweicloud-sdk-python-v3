@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -33,11 +31,11 @@ class MetaData:
 
         The model defined in huaweicloud sdk
 
-        :param count: 当前返回结果条数。
+        :param count: **参数解释**： 当前返回结果条数。    **约束限制**： 不涉及。  **取值范围**： 在[0,2147483647]区间内 **默认取值**： 不涉及。 
         :type count: int
-        :param total: 总条数。
+        :param total: **参数解释**： 总条数。    **约束限制**： 不涉及。  **取值范围**： 在[0,2147483647]区间内 **默认取值**： 不涉及。 
         :type total: int
-        :param marker: 下一个开始的标记，用于分页。
+        :param marker: **参数解释**： 下一个开始的标记，用于分页。    **约束限制**： 不涉及。  **取值范围**： 长度为[1,9999]个数字 **默认取值**： 不涉及。 
         :type marker: str
         """
         
@@ -56,7 +54,7 @@ class MetaData:
     def count(self):
         r"""Gets the count of this MetaData.
 
-        当前返回结果条数。
+        **参数解释**： 当前返回结果条数。    **约束限制**： 不涉及。  **取值范围**： 在[0,2147483647]区间内 **默认取值**： 不涉及。 
 
         :return: The count of this MetaData.
         :rtype: int
@@ -67,7 +65,7 @@ class MetaData:
     def count(self, count):
         r"""Sets the count of this MetaData.
 
-        当前返回结果条数。
+        **参数解释**： 当前返回结果条数。    **约束限制**： 不涉及。  **取值范围**： 在[0,2147483647]区间内 **默认取值**： 不涉及。 
 
         :param count: The count of this MetaData.
         :type count: int
@@ -78,7 +76,7 @@ class MetaData:
     def total(self):
         r"""Gets the total of this MetaData.
 
-        总条数。
+        **参数解释**： 总条数。    **约束限制**： 不涉及。  **取值范围**： 在[0,2147483647]区间内 **默认取值**： 不涉及。 
 
         :return: The total of this MetaData.
         :rtype: int
@@ -89,7 +87,7 @@ class MetaData:
     def total(self, total):
         r"""Sets the total of this MetaData.
 
-        总条数。
+        **参数解释**： 总条数。    **约束限制**： 不涉及。  **取值范围**： 在[0,2147483647]区间内 **默认取值**： 不涉及。 
 
         :param total: The total of this MetaData.
         :type total: int
@@ -100,7 +98,7 @@ class MetaData:
     def marker(self):
         r"""Gets the marker of this MetaData.
 
-        下一个开始的标记，用于分页。
+        **参数解释**： 下一个开始的标记，用于分页。    **约束限制**： 不涉及。  **取值范围**： 长度为[1,9999]个数字 **默认取值**： 不涉及。 
 
         :return: The marker of this MetaData.
         :rtype: str
@@ -111,7 +109,7 @@ class MetaData:
     def marker(self, marker):
         r"""Sets the marker of this MetaData.
 
-        下一个开始的标记，用于分页。
+        **参数解释**： 下一个开始的标记，用于分页。    **约束限制**： 不涉及。  **取值范围**： 长度为[1,9999]个数字 **默认取值**： 不涉及。 
 
         :param marker: The marker of this MetaData.
         :type marker: str
@@ -119,10 +117,9 @@ class MetaData:
         self._marker = marker
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -148,10 +145,6 @@ class MetaData:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

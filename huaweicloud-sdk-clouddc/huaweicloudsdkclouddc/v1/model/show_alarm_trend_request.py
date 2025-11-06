@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -33,7 +31,7 @@ class ShowAlarmTrendRequest:
 
         :param _from: 查询开始时间戳，单位秒，from 必须小于 to
         :type _from: str
-        :param to: 查询结束时间戳，单位秒，
+        :param to: 查询结束时间戳，单位秒，from 必须小于 to
         :type to: str
         """
         
@@ -72,7 +70,7 @@ class ShowAlarmTrendRequest:
     def to(self):
         r"""Gets the to of this ShowAlarmTrendRequest.
 
-        查询结束时间戳，单位秒，
+        查询结束时间戳，单位秒，from 必须小于 to
 
         :return: The to of this ShowAlarmTrendRequest.
         :rtype: str
@@ -83,7 +81,7 @@ class ShowAlarmTrendRequest:
     def to(self, to):
         r"""Sets the to of this ShowAlarmTrendRequest.
 
-        查询结束时间戳，单位秒，
+        查询结束时间戳，单位秒，from 必须小于 to
 
         :param to: The to of this ShowAlarmTrendRequest.
         :type to: str
@@ -91,10 +89,9 @@ class ShowAlarmTrendRequest:
         self._to = to
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -120,10 +117,6 @@ class ShowAlarmTrendRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

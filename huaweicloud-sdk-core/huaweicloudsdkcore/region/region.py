@@ -21,6 +21,7 @@
 """
 
 import warnings
+from typing import List
 
 
 class Region(object):
@@ -83,11 +84,9 @@ class Region(object):
     def endpoints(self, endpoints):
         self._endpoints = endpoints
 
-    def with_endpoint_override(self, endpoint):
-        warnings.warn("As of 3.1.27, because of the support of the multi-endpoint feature,"
-                      "use with_endpoints_override instead", DeprecationWarning)
-        return self.with_endpoints_override([endpoint])
+    def with_endpoint_override(self, *args: str):
+        return self.with_endpoints_override(list(args))
 
-    def with_endpoints_override(self, endpoints):
+    def with_endpoints_override(self, endpoints: List[str]):
         self.endpoints = endpoints
         return self

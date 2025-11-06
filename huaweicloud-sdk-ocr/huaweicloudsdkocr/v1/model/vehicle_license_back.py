@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -29,7 +27,9 @@ class VehicleLicenseBack:
         'inspection_record': 'str',
         'code_number': 'str',
         'energy_type': 'str',
-        'text_location': 'object'
+        'text_location': 'object',
+        'alarm_result': 'VehicleLicenseAlarmResult',
+        'alarm_confidence': 'VehicleLicenseAlarmConfidence'
     }
 
     attribute_map = {
@@ -45,10 +45,12 @@ class VehicleLicenseBack:
         'inspection_record': 'inspection_record',
         'code_number': 'code_number',
         'energy_type': 'energy_type',
-        'text_location': 'text_location'
+        'text_location': 'text_location',
+        'alarm_result': 'alarm_result',
+        'alarm_confidence': 'alarm_confidence'
     }
 
-    def __init__(self, number=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, energy_type=None, text_location=None):
+    def __init__(self, number=None, file_no=None, approved_passengers=None, gross_mass=None, unladen_mass=None, approved_load=None, dimension=None, traction_mass=None, remarks=None, inspection_record=None, code_number=None, energy_type=None, text_location=None, alarm_result=None, alarm_confidence=None):
         r"""VehicleLicenseBack
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,10 @@ class VehicleLicenseBack:
         :type energy_type: str
         :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。  当“return_text_location”设置为“true”时才返回。 
         :type text_location: object
+        :param alarm_result: 
+        :type alarm_result: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmResult`
+        :param alarm_confidence: 
+        :type alarm_confidence: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmConfidence`
         """
         
         
@@ -96,6 +102,8 @@ class VehicleLicenseBack:
         self._code_number = None
         self._energy_type = None
         self._text_location = None
+        self._alarm_result = None
+        self._alarm_confidence = None
         self.discriminator = None
 
         if number is not None:
@@ -124,6 +132,10 @@ class VehicleLicenseBack:
             self.energy_type = energy_type
         if text_location is not None:
             self.text_location = text_location
+        if alarm_result is not None:
+            self.alarm_result = alarm_result
+        if alarm_confidence is not None:
+            self.alarm_confidence = alarm_confidence
 
     @property
     def number(self):
@@ -411,11 +423,46 @@ class VehicleLicenseBack:
         """
         self._text_location = text_location
 
+    @property
+    def alarm_result(self):
+        r"""Gets the alarm_result of this VehicleLicenseBack.
+
+        :return: The alarm_result of this VehicleLicenseBack.
+        :rtype: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmResult`
+        """
+        return self._alarm_result
+
+    @alarm_result.setter
+    def alarm_result(self, alarm_result):
+        r"""Sets the alarm_result of this VehicleLicenseBack.
+
+        :param alarm_result: The alarm_result of this VehicleLicenseBack.
+        :type alarm_result: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmResult`
+        """
+        self._alarm_result = alarm_result
+
+    @property
+    def alarm_confidence(self):
+        r"""Gets the alarm_confidence of this VehicleLicenseBack.
+
+        :return: The alarm_confidence of this VehicleLicenseBack.
+        :rtype: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmConfidence`
+        """
+        return self._alarm_confidence
+
+    @alarm_confidence.setter
+    def alarm_confidence(self, alarm_confidence):
+        r"""Sets the alarm_confidence of this VehicleLicenseBack.
+
+        :param alarm_confidence: The alarm_confidence of this VehicleLicenseBack.
+        :type alarm_confidence: :class:`huaweicloudsdkocr.v1.VehicleLicenseAlarmConfidence`
+        """
+        self._alarm_confidence = alarm_confidence
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -441,10 +488,6 @@ class VehicleLicenseBack:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

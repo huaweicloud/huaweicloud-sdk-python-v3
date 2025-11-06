@@ -17,7 +17,7 @@ except ImportError as e:
 
 class IvsAsyncClient(Client):
     def __init__(self):
-        super(IvsAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkivs.v2.model")
 
     @classmethod

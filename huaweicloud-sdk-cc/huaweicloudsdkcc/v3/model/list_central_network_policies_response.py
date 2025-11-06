@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -42,7 +40,7 @@ class ListCentralNetworkPoliciesResponse(SdkResponse):
         :type central_network_policies: list[:class:`huaweicloudsdkcc.v3.CentralNetworkPolicy`]
         """
         
-        super(ListCentralNetworkPoliciesResponse, self).__init__()
+        super().__init__()
 
         self._request_id = None
         self._page_info = None
@@ -117,10 +115,12 @@ class ListCentralNetworkPoliciesResponse(SdkResponse):
         self._central_network_policies = central_network_policies
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ListCentralNetworkPoliciesResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -146,10 +146,6 @@ class ListCentralNetworkPoliciesResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

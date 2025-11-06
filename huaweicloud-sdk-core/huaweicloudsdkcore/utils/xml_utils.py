@@ -20,11 +20,12 @@
  under the LICENSE.
 """
 
-from xml.etree import ElementTree as ET
+from xml.etree import ElementTree
 from defusedxml.ElementTree import fromstring
 from decimal import Decimal
-import six
 import re
+
+from huaweicloudsdkcore.utils import six_utils as six
 
 
 class XmlTransfer:
@@ -34,7 +35,6 @@ class XmlTransfer:
 
         :param encoding: Default is 'utf-8'
         :param resolve_attr: Parse the attributes of the label
-        :param with_head: Add the xml head when calling the method to_bytes/to_string
         """
         self._encoding = encoding
         self._resolve_attr = resolve_attr
@@ -43,10 +43,10 @@ class XmlTransfer:
         if not _dict:
             return b''
 
-        result = ET.tostring(self._dict_to_xml_element(_dict))
+        result = ElementTree.tostring(self._dict_to_xml_element(_dict))
         if head:
             head = six.ensure_binary('<?xml version="1.0" encoding="%s" standalone="yes"?>' % self._encoding,
-                                     self._encoding)
+                                           self._encoding)
             result = head + result
         return result
 
@@ -58,7 +58,7 @@ class XmlTransfer:
 
         root_name = list(_dict.keys())[0]
         value = _dict.get(root_name)
-        root = ET.Element(root_name)
+        root = ElementTree.Element(root_name)
 
         if isinstance(value, dict):
             for k, v in value.items():
@@ -73,17 +73,17 @@ class XmlTransfer:
 
         try:
             str_value = self._to_string(value)
-            ET.SubElement(element, key).text = str_value
+            ElementTree.SubElement(element, key).text = str_value
         except TypeError:
             if isinstance(value, list):
                 for item in value:
                     self._make_element(element, key, item)
             elif isinstance(value, dict):
-                sub = ET.SubElement(element, key)
+                sub = ElementTree.SubElement(element, key)
                 for k, v in value.items():
                     self._make_element(sub, k, v)
             else:
-                ET.SubElement(element, key)
+                ElementTree.SubElement(element, key)
 
     def to_dict(self, string, ignore_root=False):
         _dict = {}
@@ -172,11 +172,9 @@ class XmlTransfer:
     def _to_string(self, data):
         if isinstance(data, bool):
             return str(data).lower()
-        elif isinstance(data, six.text_type):
-            return six.ensure_str(data)
-        elif isinstance(data, six.binary_type):
-            return data.decode(self._encoding)
-        elif isinstance(data, (float, Decimal) + six.integer_types):
+        elif isinstance(data, (str, bytes)):
+            return six.ensure_str(data, encoding=self._encoding)
+        elif isinstance(data, (float, int, Decimal)):
             return str(data)
         else:
             raise TypeError("parse error: type " + type(data))

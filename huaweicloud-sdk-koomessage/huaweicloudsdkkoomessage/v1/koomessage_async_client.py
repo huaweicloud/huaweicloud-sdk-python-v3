@@ -17,7 +17,7 @@ except ImportError as e:
 
 class KooMessageAsyncClient(Client):
     def __init__(self):
-        super(KooMessageAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkkoomessage.v1.model")
 
     @classmethod

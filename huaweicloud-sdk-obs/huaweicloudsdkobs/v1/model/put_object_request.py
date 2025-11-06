@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -111,7 +109,7 @@ class PutObjectRequest(SdkStreamRequest):
         :param x_obs_expires: When an object expires. It is measured in days. An object will be automatically deleted once it expires. The expiration is calculated from when the object was last modified. This header can be only configured during the object upload, and cannot be modified later by using the metadata API.  Example: x-obs-expires:3
         :type x_obs_expires: int
         """
-        super(PutObjectRequest, self).__init__(stream)
+        super().__init__(stream)
         
 
         self._bucket_name = None
@@ -616,10 +614,9 @@ class PutObjectRequest(SdkStreamRequest):
         self._x_obs_expires = x_obs_expires
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -645,10 +642,6 @@ class PutObjectRequest(SdkStreamRequest):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

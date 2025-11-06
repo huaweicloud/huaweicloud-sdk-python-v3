@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -22,7 +20,7 @@ class ListEventsRequest:
         'event_name': 'str',
         '_from': 'int',
         'to': 'int',
-        'start': 'int',
+        'start': 'str',
         'limit': 'int'
     }
 
@@ -51,9 +49,9 @@ class ListEventsRequest:
         :type _from: int
         :param to: 查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to，例如：1606557500911。
         :type to: int
-        :param start: 分页起始值，类型为integer，默认值为0。
-        :type start: int
-        :param limit: 单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
+        :param start: 分页起始值，默认值为0。
+        :type start: str
+        :param limit: 单次查询的条数限制，取值范围[0,100]，默认值为100，用于限制结果数据条数。
         :type limit: int
         """
         
@@ -197,10 +195,10 @@ class ListEventsRequest:
     def start(self):
         r"""Gets the start of this ListEventsRequest.
 
-        分页起始值，类型为integer，默认值为0。
+        分页起始值，默认值为0。
 
         :return: The start of this ListEventsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._start
 
@@ -208,10 +206,10 @@ class ListEventsRequest:
     def start(self, start):
         r"""Sets the start of this ListEventsRequest.
 
-        分页起始值，类型为integer，默认值为0。
+        分页起始值，默认值为0。
 
         :param start: The start of this ListEventsRequest.
-        :type start: int
+        :type start: str
         """
         self._start = start
 
@@ -219,7 +217,7 @@ class ListEventsRequest:
     def limit(self):
         r"""Gets the limit of this ListEventsRequest.
 
-        单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
+        单次查询的条数限制，取值范围[0,100]，默认值为100，用于限制结果数据条数。
 
         :return: The limit of this ListEventsRequest.
         :rtype: int
@@ -230,7 +228,7 @@ class ListEventsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListEventsRequest.
 
-        单次查询的条数限制，取值范围(0,100]，默认值为100，用于限制结果数据条数。
+        单次查询的条数限制，取值范围[0,100]，默认值为100，用于限制结果数据条数。
 
         :param limit: The limit of this ListEventsRequest.
         :type limit: int
@@ -238,10 +236,9 @@ class ListEventsRequest:
         self._limit = limit
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -267,10 +264,6 @@ class ListEventsRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

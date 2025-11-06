@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -75,17 +73,17 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
         :type enabled: bool
         :param notification_enabled: **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type notification_enabled: bool
-        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
         :param notification_begin_time: **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_begin_time: str
         :param notification_end_time: **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_end_time: str
-        :param notification_manner: **参数解释**： 此字段已废弃。通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。一键告警原子能力是否开启告警通知以外层notification_manner参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： 枚举值：NOTIFICATION_POLICY、NOTIFICATION_GROUP、TOPIC_SUBSCRIPTION。长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        :param notification_manner: **参数解释**： 此字段已废弃。通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。一键告警是否开启告警通知，以外层notification_manner参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： 枚举值：NOTIFICATION_POLICY、NOTIFICATION_GROUP、TOPIC_SUBSCRIPTION。长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_manner: str
-        :param notification_policy_ids: **参数解释**： 此字段已废弃。关联的通知策略ID列表。一键告警原子能力是否开启告警通知以外层notification_policy_ids参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： ^([a-z]|[A-Z]|[0-9]|-){2,64}$。长度为[2,64]个字符。           **默认取值**： 不涉及。 
+        :param notification_policy_ids: **参数解释**： 此字段已废弃。关联的通知策略ID列表。一键告警是否开启告警通知，以外层notification_policy_ids参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： ^([a-z]|[A-Z]|[0-9]|-){2,64}$。长度为[2,64]个字符。           **默认取值**： 不涉及。 
         :type notification_policy_ids: list[str]
         """
         
@@ -341,7 +339,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def alarm_notifications(self):
         r"""Gets the alarm_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
 
         :return: The alarm_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -352,7 +350,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def alarm_notifications(self, alarm_notifications):
         r"""Sets the alarm_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
 
         :param alarm_notifications: The alarm_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -363,7 +361,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def ok_notifications(self):
         r"""Gets the ok_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
 
         :return: The ok_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -374,7 +372,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def ok_notifications(self, ok_notifications):
         r"""Sets the ok_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
 
         :param ok_notifications: The ok_notifications of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -429,7 +427,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_manner(self):
         r"""Gets the notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        **参数解释**： 此字段已废弃。通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。一键告警原子能力是否开启告警通知以外层notification_manner参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： 枚举值：NOTIFICATION_POLICY、NOTIFICATION_GROUP、TOPIC_SUBSCRIPTION。长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 此字段已废弃。通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。一键告警是否开启告警通知，以外层notification_manner参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： 枚举值：NOTIFICATION_POLICY、NOTIFICATION_GROUP、TOPIC_SUBSCRIPTION。长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: str
@@ -440,7 +438,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_manner(self, notification_manner):
         r"""Sets the notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        **参数解释**： 此字段已废弃。通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。一键告警原子能力是否开启告警通知以外层notification_manner参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： 枚举值：NOTIFICATION_POLICY、NOTIFICATION_GROUP、TOPIC_SUBSCRIPTION。长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 此字段已废弃。通知方式。NOTIFICATION_POLICY表示通知策略，NOTIFICATION_GROUP表示通知组，TOPIC_SUBSCRIPTION表示主题订阅。一键告警是否开启告警通知，以外层notification_manner参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： 枚举值：NOTIFICATION_POLICY、NOTIFICATION_GROUP、TOPIC_SUBSCRIPTION。长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_manner: The notification_manner of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type notification_manner: str
@@ -451,7 +449,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_policy_ids(self):
         r"""Gets the notification_policy_ids of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        **参数解释**： 此字段已废弃。关联的通知策略ID列表。一键告警原子能力是否开启告警通知以外层notification_policy_ids参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： ^([a-z]|[A-Z]|[0-9]|-){2,64}$。长度为[2,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 此字段已废弃。关联的通知策略ID列表。一键告警是否开启告警通知，以外层notification_policy_ids参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： ^([a-z]|[A-Z]|[0-9]|-){2,64}$。长度为[2,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_policy_ids of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :rtype: list[str]
@@ -462,7 +460,7 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def notification_policy_ids(self, notification_policy_ids):
         r"""Sets the notification_policy_ids of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
 
-        **参数解释**： 此字段已废弃。关联的通知策略ID列表。一键告警原子能力是否开启告警通知以外层notification_policy_ids参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： ^([a-z]|[A-Z]|[0-9]|-){2,64}$。长度为[2,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 此字段已废弃。关联的通知策略ID列表。一键告警是否开启告警通知，以外层notification_policy_ids参数为准，内层字段废弃。 **约束限制**： 不涉及。 **取值范围**： ^([a-z]|[A-Z]|[0-9]|-){2,64}$。长度为[2,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_policy_ids: The notification_policy_ids of this EnableOneClickAlarmRequestBodyOneClickUpdateAlarms.
         :type notification_policy_ids: list[str]
@@ -470,10 +468,9 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
         self._notification_policy_ids = notification_policy_ids
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -499,10 +496,6 @@ class EnableOneClickAlarmRequestBodyOneClickUpdateAlarms:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

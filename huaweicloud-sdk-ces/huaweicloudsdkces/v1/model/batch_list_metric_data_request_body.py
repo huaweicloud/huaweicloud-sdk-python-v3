@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -19,7 +17,7 @@ class BatchListMetricDataRequestBody:
     openapi_types = {
         'metrics': 'list[MetricInfo]',
         'period': 'str',
-        'filter': 'str',
+        'filter': 'Filter',
         '_from': 'int',
         'to': 'int'
     }
@@ -39,13 +37,13 @@ class BatchListMetricDataRequestBody:
 
         :param metrics: 指标数据。数组长度最大500
         :type metrics: list[:class:`huaweicloudsdkces.v1.MetricInfo`]
-        :param period: 指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。
+        :param period: 指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。 
         :type period: str
-        :param filter: 数据聚合方式。  支持的值为max, min, average, sum, variance；max为最大值，min为最小值，average为平均值，sum为和，variance为方差值。
-        :type filter: str
-        :param _from: 查询数据起始时间，UNIX时间戳，单位毫秒。建议from的值相对于当前时间向前偏移至少1个周期。由于聚合运算的过程是将一个聚合周期范围内的数据点聚合到周期起始边界上，如果将from和to的范围设置在聚合周期内，会因为聚合未完成而造成查询数据为空，所以建议from参数相对于当前时间向前偏移至少1个周期。以5分钟聚合周期为例：假设当前时间点为10:35，10:30~10:35之间的原始数据会被聚合到10:30这个点上，所以查询5分钟数据点时from参数应为10:30或之前。 说明： 云监控会根据所选择的聚合粒度向前取整from参数；如：1607146998177
+        :param filter: 
+        :type filter: :class:`huaweicloudsdkces.v1.Filter`
+        :param _from: 
         :type _from: int
-        :param to: 查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to；如：1607150598177。
+        :param to: 
         :type to: int
         """
         
@@ -90,7 +88,7 @@ class BatchListMetricDataRequestBody:
     def period(self):
         r"""Gets the period of this BatchListMetricDataRequestBody.
 
-        指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。
+        指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。 
 
         :return: The period of this BatchListMetricDataRequestBody.
         :rtype: str
@@ -101,7 +99,7 @@ class BatchListMetricDataRequestBody:
     def period(self, period):
         r"""Sets the period of this BatchListMetricDataRequestBody.
 
-        指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。
+        指标监控数据的聚合粒度，取值范围：1，300，1200，3600，14400，86400；1为监控资源的实时数据；300为聚合5分钟粒度数据，表示5分钟一个数据点；1200为聚合20分钟粒度数据，表示20分钟一个数据点；3600为聚合1小时粒度数据，表示1小时一个数据点；14400为聚合4小时粒度数据，表示4小时一个数据点；86400为聚合1天粒度数据，表示1天一个数据点；聚合解释可查看：“[聚合含义](https://support.huaweicloud.com/ces_faq/ces_faq_0009.html)”。 
 
         :param period: The period of this BatchListMetricDataRequestBody.
         :type period: str
@@ -112,10 +110,8 @@ class BatchListMetricDataRequestBody:
     def filter(self):
         r"""Gets the filter of this BatchListMetricDataRequestBody.
 
-        数据聚合方式。  支持的值为max, min, average, sum, variance；max为最大值，min为最小值，average为平均值，sum为和，variance为方差值。
-
         :return: The filter of this BatchListMetricDataRequestBody.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v1.Filter`
         """
         return self._filter
 
@@ -123,18 +119,14 @@ class BatchListMetricDataRequestBody:
     def filter(self, filter):
         r"""Sets the filter of this BatchListMetricDataRequestBody.
 
-        数据聚合方式。  支持的值为max, min, average, sum, variance；max为最大值，min为最小值，average为平均值，sum为和，variance为方差值。
-
         :param filter: The filter of this BatchListMetricDataRequestBody.
-        :type filter: str
+        :type filter: :class:`huaweicloudsdkces.v1.Filter`
         """
         self._filter = filter
 
     @property
     def _from(self):
         r"""Gets the _from of this BatchListMetricDataRequestBody.
-
-        查询数据起始时间，UNIX时间戳，单位毫秒。建议from的值相对于当前时间向前偏移至少1个周期。由于聚合运算的过程是将一个聚合周期范围内的数据点聚合到周期起始边界上，如果将from和to的范围设置在聚合周期内，会因为聚合未完成而造成查询数据为空，所以建议from参数相对于当前时间向前偏移至少1个周期。以5分钟聚合周期为例：假设当前时间点为10:35，10:30~10:35之间的原始数据会被聚合到10:30这个点上，所以查询5分钟数据点时from参数应为10:30或之前。 说明： 云监控会根据所选择的聚合粒度向前取整from参数；如：1607146998177
 
         :return: The _from of this BatchListMetricDataRequestBody.
         :rtype: int
@@ -145,8 +137,6 @@ class BatchListMetricDataRequestBody:
     def _from(self, _from):
         r"""Sets the _from of this BatchListMetricDataRequestBody.
 
-        查询数据起始时间，UNIX时间戳，单位毫秒。建议from的值相对于当前时间向前偏移至少1个周期。由于聚合运算的过程是将一个聚合周期范围内的数据点聚合到周期起始边界上，如果将from和to的范围设置在聚合周期内，会因为聚合未完成而造成查询数据为空，所以建议from参数相对于当前时间向前偏移至少1个周期。以5分钟聚合周期为例：假设当前时间点为10:35，10:30~10:35之间的原始数据会被聚合到10:30这个点上，所以查询5分钟数据点时from参数应为10:30或之前。 说明： 云监控会根据所选择的聚合粒度向前取整from参数；如：1607146998177
-
         :param _from: The _from of this BatchListMetricDataRequestBody.
         :type _from: int
         """
@@ -155,8 +145,6 @@ class BatchListMetricDataRequestBody:
     @property
     def to(self):
         r"""Gets the to of this BatchListMetricDataRequestBody.
-
-        查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to；如：1607150598177。
 
         :return: The to of this BatchListMetricDataRequestBody.
         :rtype: int
@@ -167,18 +155,15 @@ class BatchListMetricDataRequestBody:
     def to(self, to):
         r"""Sets the to of this BatchListMetricDataRequestBody.
 
-        查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to；如：1607150598177。
-
         :param to: The to of this BatchListMetricDataRequestBody.
         :type to: int
         """
         self._to = to
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -204,10 +189,6 @@ class BatchListMetricDataRequestBody:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

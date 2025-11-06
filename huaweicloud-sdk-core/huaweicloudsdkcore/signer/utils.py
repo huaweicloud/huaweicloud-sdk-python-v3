@@ -23,11 +23,14 @@ import hashlib
 import secrets
 from sys import version_info
 from abc import abstractmethod, ABC
+from typing import List, Tuple, Optional
 
 from pyasn1.codec.der import encoder, decoder
 from pyasn1.type import univ
 
 from huaweicloudsdkcore.exceptions.exceptions import SdkException
+
+Point = Tuple[int, int]
 
 if version_info.major == 3:
     if version_info.minor < 7:
@@ -38,8 +41,7 @@ if version_info.major == 3:
         _OUT_OF_RANGE_ERROR = ValueError("j out of range [0, 64)")
 
 
-        def _left_rotate(n, k):
-            # type: (int, int) -> int
+        def _left_rotate(n: int, k: int) -> int:
             """
             Shift the binary representation of n to the left by k bits,
             and then shift the k bits of the highest bits to the lowest bits to form a new 32-bit unsigned integer.
@@ -47,8 +49,7 @@ if version_info.major == 3:
             return ((n << k) & _0X8F) | ((n >> (32 - k)) & _0X8F)
 
 
-        def _ff_j(x, y, z, j):
-            # type: (int, int, int, int) -> int
+        def _ff_j(x: int, y: int, z: int, j: int) -> int:
             """Boolean function, take different expressions as j changes. Based on GB/T 32905-2016."""
             if 0 <= j < 16:
                 return x ^ y ^ z
@@ -58,8 +59,7 @@ if version_info.major == 3:
                 raise _OUT_OF_RANGE_ERROR
 
 
-        def _gg_j(x, y, z, j):
-            # type: (int, int, int, int) -> int
+        def _gg_j(x: int, y: int, z: int, j: int) -> int:
             """Boolean function, take different expressions as j changes, based on GB/T 32905-2016."""
             if 0 <= j < 16:
                 return x ^ y ^ z
@@ -69,20 +69,17 @@ if version_info.major == 3:
                 raise _OUT_OF_RANGE_ERROR
 
 
-        def _p_0(x):
-            # type: (int) -> int
+        def _p_0(x: int) -> int:
             """permutation function in compression function, based on GB/T 32905-2016."""
             return x ^ _left_rotate(x, 9) ^ _left_rotate(x, 17)
 
 
-        def _p_1(x):
-            # type: (int) -> int
+        def _p_1(x: int) -> int:
             """permutation function in compression function, based on GB/T 32905-2016."""
             return x ^ _left_rotate(x, 15) ^ _left_rotate(x, 23)
 
 
-        def _cf(v_i, b_i):
-            # type: (list[int], list[int]) -> list[int]
+        def _cf(v_i: List[int], b_i: List[int]) -> List[int]:
             """Compression function, based on GB/T 32905-2016."""
             w = [0] * 68
             for i in range(16):
@@ -109,8 +106,7 @@ if version_info.major == 3:
             return [v_j[i] ^ v_i[i] for i in range(8)]
 
 
-        def _hash(data):
-            # type: (bytes) -> bytes
+        def _hash(data: bytes) -> bytes:
             """Hash function, based on GB/T 32905-2016."""
             data_list = [i for i in data]
             length = len(data_list)
@@ -140,20 +136,21 @@ if version_info.major == 3:
             def __init__(self, data=b''):
                 self._bytearray = bytearray(data)
 
-            def update(self, data):
-                # type: (bytes) -> None
+            def update(self, data: bytes):
                 self._bytearray.extend(data)
 
-            def digest(self):
-                # type: () -> bytes
+            def digest(self) -> bytes:
                 return _hash(bytes(self._bytearray))
 
-            def hexdigest(self):
-                # type: () -> str
+            def hexdigest(self) -> str:
                 return self.digest().hex()
 
-            def copy(self):
-                # type: () -> _SM3Hash
+            def copy(self) -> '_SM3Hash':
+                """Return a copy of the current instance
+
+                Returns:
+                    _SM3Hash: a copy of the current instance
+                """
                 return self.__class__(bytes(self._bytearray))
 
 
@@ -164,14 +161,12 @@ else:
     new_sm3_hash = None
 
 
-def _secure_randint(a, b):
-    # type: (int, int) -> int
+def _secure_randint(a: int, b: int) -> int:
     random_int = secrets.randbelow(b - a + 1) + a
     return random_int
 
 
-def _mod_inverse(a, m):
-    # type: (int, int) -> int
+def _mod_inverse(a: int, m: int) -> int:
     def egcd(a, b):
         if a == 0:
             return b, 0, 1
@@ -186,20 +181,17 @@ def _mod_inverse(a, m):
         return x % m
 
 
-def _int_to_bytes(i):
-    # type: (int) -> bytes
+def _int_to_bytes(i: int) -> bytes:
     return i.to_bytes(length=(i.bit_length() + 7) // 8, byteorder='big', signed=i < 0)
 
 
 class SigningKey(ABC):
     @abstractmethod
-    def sign(self, data):
-        # type: (bytes) -> bytes
+    def sign(self, data: bytes) -> bytes:
         pass
 
     @abstractmethod
-    def verify(self, signature, data):
-        # type: (bytes, bytes) -> bool
+    def verify(self, signature: bytes, data: bytes) -> bool:
         pass
 
 
@@ -214,15 +206,13 @@ class P256SigningKey(SigningKey):
     N_MINUS_TWO = PARAM_n - 2
     OID = "1.2.840.10045.3.1.7"
 
-    def __init__(self, private_key):
-        # type: (int) -> None
-        super(P256SigningKey, self).__init__()
+    def __init__(self, private_key: int):
+        super().__init__()
         self._private_key = private_key
         self._public_key = self._point_multiply(private_key, self.PARAM_G)
 
     @classmethod
-    def _point_add(cls, p1, p2):
-        # type: (tuple[int, int], tuple[int, int]) -> tuple[int, int]|None
+    def _point_add(cls, p1: Point, p2: Point) -> Optional[Point]:
         if p1 is None:
             return p2
         if p2 is None:
@@ -241,8 +231,7 @@ class P256SigningKey(SigningKey):
         return p
 
     @classmethod
-    def _point_multiply(cls, k, p):
-        # type: (int, tuple[int, int]) -> tuple[int, int]
+    def _point_multiply(cls, k: int, p: Point) -> Point:
         result = None
         addend = p
         while k:
@@ -318,12 +307,11 @@ class SM2SigningKey(P256SigningKey):
     OID = "1.2.156.10197.1.301"
 
     def __init__(self, private_key):
-        super(SM2SigningKey, self).__init__(private_key)
+        super().__init__(private_key)
         self._z = self._za(self._public_key)
 
     @classmethod
-    def _za(cls, public_key, uid=b'1234567812345678'):
-        # type: (tuple, bytes) -> bytes
+    def _za(cls, public_key: Point, uid: bytes=b'1234567812345678') -> bytes:
         """
         Cryptographic hash algorithm
 

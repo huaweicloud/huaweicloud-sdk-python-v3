@@ -17,7 +17,7 @@ except ImportError as e:
 
 class SdrsClient(Client):
     def __init__(self):
-        super(SdrsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdksdrs.v1.model")
 
     @classmethod

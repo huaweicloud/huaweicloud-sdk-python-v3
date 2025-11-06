@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -20,17 +18,19 @@ class HardwareSummary:
         'sn': 'str',
         'manufacturer': 'str',
         'model': 'str',
-        'main_board_manufacturer': 'str'
+        'main_board_manufacturer': 'str',
+        'main_board_serial_number': 'str'
     }
 
     attribute_map = {
         'sn': 'sn',
         'manufacturer': 'manufacturer',
         'model': 'model',
-        'main_board_manufacturer': 'main_board_manufacturer'
+        'main_board_manufacturer': 'main_board_manufacturer',
+        'main_board_serial_number': 'main_board_serial_number'
     }
 
-    def __init__(self, sn=None, manufacturer=None, model=None, main_board_manufacturer=None):
+    def __init__(self, sn=None, manufacturer=None, model=None, main_board_manufacturer=None, main_board_serial_number=None):
         r"""HardwareSummary
 
         The model defined in huaweicloud sdk
@@ -43,6 +43,8 @@ class HardwareSummary:
         :type model: str
         :param main_board_manufacturer: 主板厂商
         :type main_board_manufacturer: str
+        :param main_board_serial_number: 主板序列号
+        :type main_board_serial_number: str
         """
         
         
@@ -51,6 +53,7 @@ class HardwareSummary:
         self._manufacturer = None
         self._model = None
         self._main_board_manufacturer = None
+        self._main_board_serial_number = None
         self.discriminator = None
 
         self.sn = sn
@@ -58,6 +61,8 @@ class HardwareSummary:
         self.model = model
         if main_board_manufacturer is not None:
             self.main_board_manufacturer = main_board_manufacturer
+        if main_board_serial_number is not None:
+            self.main_board_serial_number = main_board_serial_number
 
     @property
     def sn(self):
@@ -147,11 +152,32 @@ class HardwareSummary:
         """
         self._main_board_manufacturer = main_board_manufacturer
 
+    @property
+    def main_board_serial_number(self):
+        r"""Gets the main_board_serial_number of this HardwareSummary.
+
+        主板序列号
+
+        :return: The main_board_serial_number of this HardwareSummary.
+        :rtype: str
+        """
+        return self._main_board_serial_number
+
+    @main_board_serial_number.setter
+    def main_board_serial_number(self, main_board_serial_number):
+        r"""Sets the main_board_serial_number of this HardwareSummary.
+
+        主板序列号
+
+        :param main_board_serial_number: The main_board_serial_number of this HardwareSummary.
+        :type main_board_serial_number: str
+        """
+        self._main_board_serial_number = main_board_serial_number
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -177,10 +203,6 @@ class HardwareSummary:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

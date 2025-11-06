@@ -17,7 +17,7 @@ except ImportError as e:
 
 class OrganizationsAsyncClient(Client):
     def __init__(self):
-        super(OrganizationsAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkorganizations.v1.model")
 
     @classmethod

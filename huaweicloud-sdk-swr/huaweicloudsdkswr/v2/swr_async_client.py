@@ -17,7 +17,7 @@ except ImportError as e:
 
 class SwrAsyncClient(Client):
     def __init__(self):
-        super(SwrAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkswr.v2.model")
 
     @classmethod

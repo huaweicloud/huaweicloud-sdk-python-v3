@@ -17,7 +17,7 @@ except ImportError as e:
 
 class GslAsyncClient(Client):
     def __init__(self):
-        super(GslAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkgsl.v3.model")
 
     @classmethod

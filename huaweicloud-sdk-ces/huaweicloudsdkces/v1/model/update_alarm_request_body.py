@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -23,9 +21,9 @@ class UpdateAlarmRequestBody:
         'alarm_action_enabled': 'bool',
         'alarm_level': 'int',
         'alarm_type': 'str',
-        'alarm_actions': 'list[AlarmActions]',
-        'insufficientdata_actions': 'list[AlarmActions]',
-        'ok_actions': 'list[AlarmActions]'
+        'alarm_actions': 'list[list[Notification]]',
+        'insufficientdata_actions': 'list[list[Notification]]',
+        'ok_actions': 'list[list[Notification]]'
     }
 
     attribute_map = {
@@ -58,11 +56,11 @@ class UpdateAlarmRequestBody:
         :param alarm_type: 告警类型，支持的枚举类型：EVENT.SYS：针对系统事件的告警规则；EVENT.CUSTOM：针对自定义事件的告警规则；RESOURCE_GROUP：针对资源分组的告警规则。
         :type alarm_type: str
         :param alarm_actions: 告警触发的动作。 结构样例如下： { \&quot;type\&quot;: \&quot;notification\&quot;,\&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;] } type取值： notification：通知。 autoscaling：弹性伸缩。
-        :type alarm_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :type alarm_actions: list[list[Notification]]
         :param insufficientdata_actions: 数据不足触发的动作（该参数已废弃，建议无需配置）。
-        :type insufficientdata_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :type insufficientdata_actions: list[list[Notification]]
         :param ok_actions: 告警恢复触发的动作
-        :type ok_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :type ok_actions: list[list[Notification]]
         """
         
         
@@ -232,7 +230,7 @@ class UpdateAlarmRequestBody:
         告警触发的动作。 结构样例如下： { \"type\": \"notification\",\"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] } type取值： notification：通知。 autoscaling：弹性伸缩。
 
         :return: The alarm_actions of this UpdateAlarmRequestBody.
-        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :rtype: list[list[Notification]]
         """
         return self._alarm_actions
 
@@ -243,7 +241,7 @@ class UpdateAlarmRequestBody:
         告警触发的动作。 结构样例如下： { \"type\": \"notification\",\"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] } type取值： notification：通知。 autoscaling：弹性伸缩。
 
         :param alarm_actions: The alarm_actions of this UpdateAlarmRequestBody.
-        :type alarm_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :type alarm_actions: list[list[Notification]]
         """
         self._alarm_actions = alarm_actions
 
@@ -254,7 +252,7 @@ class UpdateAlarmRequestBody:
         数据不足触发的动作（该参数已废弃，建议无需配置）。
 
         :return: The insufficientdata_actions of this UpdateAlarmRequestBody.
-        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :rtype: list[list[Notification]]
         """
         return self._insufficientdata_actions
 
@@ -265,7 +263,7 @@ class UpdateAlarmRequestBody:
         数据不足触发的动作（该参数已废弃，建议无需配置）。
 
         :param insufficientdata_actions: The insufficientdata_actions of this UpdateAlarmRequestBody.
-        :type insufficientdata_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :type insufficientdata_actions: list[list[Notification]]
         """
         self._insufficientdata_actions = insufficientdata_actions
 
@@ -276,7 +274,7 @@ class UpdateAlarmRequestBody:
         告警恢复触发的动作
 
         :return: The ok_actions of this UpdateAlarmRequestBody.
-        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :rtype: list[list[Notification]]
         """
         return self._ok_actions
 
@@ -287,15 +285,14 @@ class UpdateAlarmRequestBody:
         告警恢复触发的动作
 
         :param ok_actions: The ok_actions of this UpdateAlarmRequestBody.
-        :type ok_actions: list[:class:`huaweicloudsdkces.v1.AlarmActions`]
+        :type ok_actions: list[list[Notification]]
         """
         self._ok_actions = ok_actions
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -321,10 +318,6 @@ class UpdateAlarmRequestBody:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

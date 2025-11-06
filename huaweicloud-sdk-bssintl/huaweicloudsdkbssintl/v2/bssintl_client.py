@@ -17,7 +17,7 @@ except ImportError as e:
 
 class BssintlClient(Client):
     def __init__(self):
-        super(BssintlClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkbssintl.v2.model")
 
     @classmethod

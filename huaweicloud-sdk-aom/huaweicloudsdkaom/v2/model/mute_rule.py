@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -43,9 +41,9 @@ class MuteRule:
 
         The model defined in huaweicloud sdk
 
-        :param create_time: 创建时间
+        :param create_time: 创建时间。
         :type create_time: int
-        :param desc: 规则描述
+        :param desc: 规则描述。
         :type desc: str
         :param match: 规则的匹配条件。串行条件和并行条件的最大数量限制为10。
         :type match: list[list[Match]]
@@ -53,11 +51,11 @@ class MuteRule:
         :type mute_config: :class:`huaweicloudsdkaom.v2.MuteConfig`
         :param name: 规则名称。名称包含大小写字母、数字、特殊字符（_）、不能以下划线开头或结尾，最大长度为100。
         :type name: str
-        :param timezone: 时区
+        :param timezone: 时区。
         :type timezone: str
-        :param update_time: 修改时间
+        :param update_time: 修改时间。
         :type update_time: int
-        :param user_id: 用户ID
+        :param user_id: 用户ID。
         :type user_id: str
         """
         
@@ -80,7 +78,8 @@ class MuteRule:
         self.match = match
         self.mute_config = mute_config
         self.name = name
-        self.timezone = timezone
+        if timezone is not None:
+            self.timezone = timezone
         if update_time is not None:
             self.update_time = update_time
         if user_id is not None:
@@ -90,7 +89,7 @@ class MuteRule:
     def create_time(self):
         r"""Gets the create_time of this MuteRule.
 
-        创建时间
+        创建时间。
 
         :return: The create_time of this MuteRule.
         :rtype: int
@@ -101,7 +100,7 @@ class MuteRule:
     def create_time(self, create_time):
         r"""Sets the create_time of this MuteRule.
 
-        创建时间
+        创建时间。
 
         :param create_time: The create_time of this MuteRule.
         :type create_time: int
@@ -112,7 +111,7 @@ class MuteRule:
     def desc(self):
         r"""Gets the desc of this MuteRule.
 
-        规则描述
+        规则描述。
 
         :return: The desc of this MuteRule.
         :rtype: str
@@ -123,7 +122,7 @@ class MuteRule:
     def desc(self, desc):
         r"""Sets the desc of this MuteRule.
 
-        规则描述
+        规则描述。
 
         :param desc: The desc of this MuteRule.
         :type desc: str
@@ -196,7 +195,7 @@ class MuteRule:
     def timezone(self):
         r"""Gets the timezone of this MuteRule.
 
-        时区
+        时区。
 
         :return: The timezone of this MuteRule.
         :rtype: str
@@ -207,7 +206,7 @@ class MuteRule:
     def timezone(self, timezone):
         r"""Sets the timezone of this MuteRule.
 
-        时区
+        时区。
 
         :param timezone: The timezone of this MuteRule.
         :type timezone: str
@@ -218,7 +217,7 @@ class MuteRule:
     def update_time(self):
         r"""Gets the update_time of this MuteRule.
 
-        修改时间
+        修改时间。
 
         :return: The update_time of this MuteRule.
         :rtype: int
@@ -229,7 +228,7 @@ class MuteRule:
     def update_time(self, update_time):
         r"""Sets the update_time of this MuteRule.
 
-        修改时间
+        修改时间。
 
         :param update_time: The update_time of this MuteRule.
         :type update_time: int
@@ -240,7 +239,7 @@ class MuteRule:
     def user_id(self):
         r"""Gets the user_id of this MuteRule.
 
-        用户ID
+        用户ID。
 
         :return: The user_id of this MuteRule.
         :rtype: str
@@ -251,7 +250,7 @@ class MuteRule:
     def user_id(self, user_id):
         r"""Sets the user_id of this MuteRule.
 
-        用户ID
+        用户ID。
 
         :param user_id: The user_id of this MuteRule.
         :type user_id: str
@@ -259,10 +258,9 @@ class MuteRule:
         self._user_id = user_id
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -288,10 +286,6 @@ class MuteRule:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

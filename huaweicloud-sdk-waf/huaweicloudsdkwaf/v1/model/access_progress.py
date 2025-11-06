@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -31,9 +29,9 @@ class AccessProgress:
 
         The model defined in huaweicloud sdk
 
-        :param step: **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** - 1 : 回源IP加白步骤 - 2 : 本地验证步骤 - 3 : 修改DNS解析步骤 **默认取值：** 不涉及
+        :param step: **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** - 1 : 回源IP加白步骤 - 2 : 本地验证步骤 - 3 : 修改DNS解析步骤  **默认取值：** 不涉及
         :type step: int
-        :param status: **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** - 0:未完成 - 1:完成 - 2:跳过 **默认取值：** 不涉及
+        :param status: **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** - 0:未完成 - 1:完成 - 2:跳过  **默认取值：** 不涉及
         :type status: int
         """
         
@@ -52,7 +50,7 @@ class AccessProgress:
     def step(self):
         r"""Gets the step of this AccessProgress.
 
-        **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** - 1 : 回源IP加白步骤 - 2 : 本地验证步骤 - 3 : 修改DNS解析步骤 **默认取值：** 不涉及
+        **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** - 1 : 回源IP加白步骤 - 2 : 本地验证步骤 - 3 : 修改DNS解析步骤  **默认取值：** 不涉及
 
         :return: The step of this AccessProgress.
         :rtype: int
@@ -63,7 +61,7 @@ class AccessProgress:
     def step(self, step):
         r"""Sets the step of this AccessProgress.
 
-        **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** - 1 : 回源IP加白步骤 - 2 : 本地验证步骤 - 3 : 修改DNS解析步骤 **默认取值：** 不涉及
+        **参数解释：** 接入步骤（1:回源IP加白步骤，2:本地验证步骤 3:修改DNS解析步骤） **约束限制：** 不涉及 **取值范围：** - 1 : 回源IP加白步骤 - 2 : 本地验证步骤 - 3 : 修改DNS解析步骤  **默认取值：** 不涉及
 
         :param step: The step of this AccessProgress.
         :type step: int
@@ -74,7 +72,7 @@ class AccessProgress:
     def status(self):
         r"""Gets the status of this AccessProgress.
 
-        **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** - 0:未完成 - 1:完成 - 2:跳过 **默认取值：** 不涉及
+        **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** - 0:未完成 - 1:完成 - 2:跳过  **默认取值：** 不涉及
 
         :return: The status of this AccessProgress.
         :rtype: int
@@ -85,7 +83,7 @@ class AccessProgress:
     def status(self, status):
         r"""Sets the status of this AccessProgress.
 
-        **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** - 0:未完成 - 1:完成 - 2:跳过 **默认取值：** 不涉及
+        **参数解释：** 完成情况（0:未完成，1:完成，2:跳过） **约束限制：** 不涉及 **取值范围：** - 0:未完成 - 1:完成 - 2:跳过  **默认取值：** 不涉及
 
         :param status: The status of this AccessProgress.
         :type status: int
@@ -93,10 +91,9 @@ class AccessProgress:
         self._status = status
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -122,10 +119,6 @@ class AccessProgress:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

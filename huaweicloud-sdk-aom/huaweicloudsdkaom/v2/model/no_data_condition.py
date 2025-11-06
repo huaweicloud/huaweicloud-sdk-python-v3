@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -33,11 +31,11 @@ class NoDataCondition:
 
         The model defined in huaweicloud sdk
 
-        :param no_data_timeframe: 无数据周期的个数。
+        :param no_data_timeframe: 无数据处理连续周期。取值范围为1~5。（当\&quot;notify_no_data\&quot;为true时，该参数必填，当\&quot;notify_no_data\&quot;为false时，该参数为空）
         :type no_data_timeframe: int
-        :param no_data_alert_state: 数据不足时，阈值规则的状态。 - “no_data”：数据不足并发送通知 - “alerting”：告警 - “ok”：正常 - “pre_state”：保持上一个状态
+        :param no_data_alert_state: 数据不足时，阈值规则的状态。（当\&quot;notify_no_data\&quot;为true时，该参数必填，当\&quot;notify_no_data\&quot;为false时，该参数为空） - “no_data”：数据不足并发送通知 - “alerting”：告警 - “ok”：正常 - “pre_state”：保持上一个状态
         :type no_data_alert_state: str
-        :param notify_no_data: 数据不足是否通知。
+        :param notify_no_data: 无数据处理开关。true表示启用无数据处理，false表示关闭无数据处理。
         :type notify_no_data: bool
         """
         
@@ -59,7 +57,7 @@ class NoDataCondition:
     def no_data_timeframe(self):
         r"""Gets the no_data_timeframe of this NoDataCondition.
 
-        无数据周期的个数。
+        无数据处理连续周期。取值范围为1~5。（当\"notify_no_data\"为true时，该参数必填，当\"notify_no_data\"为false时，该参数为空）
 
         :return: The no_data_timeframe of this NoDataCondition.
         :rtype: int
@@ -70,7 +68,7 @@ class NoDataCondition:
     def no_data_timeframe(self, no_data_timeframe):
         r"""Sets the no_data_timeframe of this NoDataCondition.
 
-        无数据周期的个数。
+        无数据处理连续周期。取值范围为1~5。（当\"notify_no_data\"为true时，该参数必填，当\"notify_no_data\"为false时，该参数为空）
 
         :param no_data_timeframe: The no_data_timeframe of this NoDataCondition.
         :type no_data_timeframe: int
@@ -81,7 +79,7 @@ class NoDataCondition:
     def no_data_alert_state(self):
         r"""Gets the no_data_alert_state of this NoDataCondition.
 
-        数据不足时，阈值规则的状态。 - “no_data”：数据不足并发送通知 - “alerting”：告警 - “ok”：正常 - “pre_state”：保持上一个状态
+        数据不足时，阈值规则的状态。（当\"notify_no_data\"为true时，该参数必填，当\"notify_no_data\"为false时，该参数为空） - “no_data”：数据不足并发送通知 - “alerting”：告警 - “ok”：正常 - “pre_state”：保持上一个状态
 
         :return: The no_data_alert_state of this NoDataCondition.
         :rtype: str
@@ -92,7 +90,7 @@ class NoDataCondition:
     def no_data_alert_state(self, no_data_alert_state):
         r"""Sets the no_data_alert_state of this NoDataCondition.
 
-        数据不足时，阈值规则的状态。 - “no_data”：数据不足并发送通知 - “alerting”：告警 - “ok”：正常 - “pre_state”：保持上一个状态
+        数据不足时，阈值规则的状态。（当\"notify_no_data\"为true时，该参数必填，当\"notify_no_data\"为false时，该参数为空） - “no_data”：数据不足并发送通知 - “alerting”：告警 - “ok”：正常 - “pre_state”：保持上一个状态
 
         :param no_data_alert_state: The no_data_alert_state of this NoDataCondition.
         :type no_data_alert_state: str
@@ -103,7 +101,7 @@ class NoDataCondition:
     def notify_no_data(self):
         r"""Gets the notify_no_data of this NoDataCondition.
 
-        数据不足是否通知。
+        无数据处理开关。true表示启用无数据处理，false表示关闭无数据处理。
 
         :return: The notify_no_data of this NoDataCondition.
         :rtype: bool
@@ -114,7 +112,7 @@ class NoDataCondition:
     def notify_no_data(self, notify_no_data):
         r"""Sets the notify_no_data of this NoDataCondition.
 
-        数据不足是否通知。
+        无数据处理开关。true表示启用无数据处理，false表示关闭无数据处理。
 
         :param notify_no_data: The notify_no_data of this NoDataCondition.
         :type notify_no_data: bool
@@ -122,10 +120,9 @@ class NoDataCondition:
         self._notify_no_data = notify_no_data
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -151,10 +148,6 @@ class NoDataCondition:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DliClient(Client):
     def __init__(self):
-        super(DliClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdli.v1.model")
 
     @classmethod

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -17,7 +15,7 @@ class CreateMetricDataRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[MetricDataItem]'
+        'body': 'list[CreateMetricDataRequestBody]'
     }
 
     attribute_map = {
@@ -30,7 +28,7 @@ class CreateMetricDataRequest:
         The model defined in huaweicloud sdk
 
         :param body: 添加一条或多条自定义指标监控数据，请求参数。
-        :type body: list[:class:`huaweicloudsdkces.v1.MetricDataItem`]
+        :type body: list[:class:`huaweicloudsdkces.v1.CreateMetricDataRequestBody`]
         """
         
         
@@ -48,7 +46,7 @@ class CreateMetricDataRequest:
         添加一条或多条自定义指标监控数据，请求参数。
 
         :return: The body of this CreateMetricDataRequest.
-        :rtype: list[:class:`huaweicloudsdkces.v1.MetricDataItem`]
+        :rtype: list[:class:`huaweicloudsdkces.v1.CreateMetricDataRequestBody`]
         """
         return self._body
 
@@ -59,15 +57,14 @@ class CreateMetricDataRequest:
         添加一条或多条自定义指标监控数据，请求参数。
 
         :param body: The body of this CreateMetricDataRequest.
-        :type body: list[:class:`huaweicloudsdkces.v1.MetricDataItem`]
+        :type body: list[:class:`huaweicloudsdkces.v1.CreateMetricDataRequestBody`]
         """
         self._body = body
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -93,10 +90,6 @@ class CreateMetricDataRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

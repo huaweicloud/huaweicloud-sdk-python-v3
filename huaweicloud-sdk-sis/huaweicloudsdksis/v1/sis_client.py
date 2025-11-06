@@ -17,7 +17,7 @@ except ImportError as e:
 
 class SisClient(Client):
     def __init__(self):
-        super(SisClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdksis.v1.model")
 
     @classmethod

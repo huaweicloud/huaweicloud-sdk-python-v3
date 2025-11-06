@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DataArtsFabricEpClient(Client):
     def __init__(self):
-        super(DataArtsFabricEpClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdataartsfabricep.v1.model")
 
     @classmethod

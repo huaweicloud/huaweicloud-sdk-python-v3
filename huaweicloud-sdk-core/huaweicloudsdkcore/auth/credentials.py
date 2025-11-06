@@ -24,7 +24,7 @@ import os
 import re
 import threading
 from abc import abstractmethod, ABC
-from typing import Callable, Optional, Dict
+from typing import Callable, Optional, Dict, Any
 
 from huaweicloudsdkcore.auth.internal import IamHelper, MetadataAccessor
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException, SdkException
@@ -52,7 +52,7 @@ class DerivedCredentials(ABC):
 
     @classmethod
     def get_default_derived_predicate(cls) -> Callable[[SdkRequest], bool]:
-        return lambda request: False if re.match(cls._DEFAULT_ENDPOINT_REG, request.host) else True
+        return lambda request: not bool(re.match(cls._DEFAULT_ENDPOINT_REG, request.host))
 
 
 class TempCredentials(ABC):
@@ -190,7 +190,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         self.security_token = token
         return self
 
-    def get_update_path_params(self) -> dict:
+    def get_update_path_params(self) -> Dict[str, Any]:
         pass
 
     def process_auth_params(self, http_client: HttpClient, region_id: str):
@@ -261,7 +261,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         return self._expired_at - time_utils.get_timestamp_utc() < self._DEFAULT_EXPIRATION_THRESHOLD_SECONDS
 
     def _update_auth_token_by_id_token(self, http_client: HttpClient):
-        iam_endpoint = self.iam_endpoint if self.iam_endpoint else IamHelper.get_iam_endpoint()
+        iam_endpoint = self.iam_endpoint or IamHelper.get_iam_endpoint()
         request = IamHelper.get_create_unscoped_token_by_id_token_request(http_client.config, iam_endpoint, self.idp_id,
                                                                           self._get_id_token())
         token = IamHelper.create_unscoped_token_by_id_token(http_client, request)
@@ -317,7 +317,7 @@ class BasicCredentials(Credentials):
         self.project_id = project_id
         return self
 
-    def get_update_path_params(self) -> Dict[str, object]:
+    def get_update_path_params(self) -> Dict[str, Any]:
         path_params = {}
         if self.project_id:
             path_params["project_id"] = self.project_id
@@ -414,7 +414,7 @@ class GlobalCredentials(Credentials):
         self.domain_id = domain_id
         return self
 
-    def get_update_path_params(self) -> Dict[str, object]:
+    def get_update_path_params(self) -> Dict[str, Any]:
         path_params = {}
         if self.domain_id:
             path_params["domain_id"] = self.domain_id

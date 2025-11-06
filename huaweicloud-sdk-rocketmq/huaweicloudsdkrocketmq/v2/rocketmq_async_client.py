@@ -17,7 +17,7 @@ except ImportError as e:
 
 class RocketMQAsyncClient(Client):
     def __init__(self):
-        super(RocketMQAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkrocketmq.v2.model")
 
     @classmethod

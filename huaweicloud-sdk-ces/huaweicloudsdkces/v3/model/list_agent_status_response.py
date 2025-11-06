@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -30,11 +28,11 @@ class ListAgentStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param agent_status: **参数解释**: agent插件状态列表 **取值范围**: 数组长度为[1,2000] 
+        :param agent_status: **参数解释**: agent插件状态列表 
         :type agent_status: list[:class:`huaweicloudsdkces.v3.AgentStatusInfo`]
         """
         
-        super(ListAgentStatusResponse, self).__init__()
+        super().__init__()
 
         self._agent_status = None
         self.discriminator = None
@@ -46,7 +44,7 @@ class ListAgentStatusResponse(SdkResponse):
     def agent_status(self):
         r"""Gets the agent_status of this ListAgentStatusResponse.
 
-        **参数解释**: agent插件状态列表 **取值范围**: 数组长度为[1,2000] 
+        **参数解释**: agent插件状态列表 
 
         :return: The agent_status of this ListAgentStatusResponse.
         :rtype: list[:class:`huaweicloudsdkces.v3.AgentStatusInfo`]
@@ -57,7 +55,7 @@ class ListAgentStatusResponse(SdkResponse):
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this ListAgentStatusResponse.
 
-        **参数解释**: agent插件状态列表 **取值范围**: 数组长度为[1,2000] 
+        **参数解释**: agent插件状态列表 
 
         :param agent_status: The agent_status of this ListAgentStatusResponse.
         :type agent_status: list[:class:`huaweicloudsdkces.v3.AgentStatusInfo`]
@@ -65,10 +63,12 @@ class ListAgentStatusResponse(SdkResponse):
         self._agent_status = agent_status
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ListAgentStatusResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -94,10 +94,6 @@ class ListAgentStatusResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

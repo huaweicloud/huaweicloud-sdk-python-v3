@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -54,7 +52,7 @@ class ShowAntivirusFreeQuotaResponse(SdkResponse):
         :type report_free_quota: int
         """
         
-        super(ShowAntivirusFreeQuotaResponse, self).__init__()
+        super().__init__()
 
         self._free_quota = None
         self._occupied_free_quota = None
@@ -210,10 +208,12 @@ class ShowAntivirusFreeQuotaResponse(SdkResponse):
         self._report_free_quota = report_free_quota
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ShowAntivirusFreeQuotaResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -239,10 +239,6 @@ class ShowAntivirusFreeQuotaResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

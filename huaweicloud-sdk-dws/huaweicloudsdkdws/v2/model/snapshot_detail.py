@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -28,6 +26,7 @@ class SnapshotDetail:
         'cluster_id': 'str',
         'datastore': 'Datastore',
         'cluster_name': 'str',
+        'updated': 'str',
         'bak_expected_start_time': 'str',
         'bak_keep_day': 'int',
         'bak_period': 'str',
@@ -44,7 +43,10 @@ class SnapshotDetail:
         'backup_level': 'str',
         'fine_grained_backup_detail': 'FineGrainedSnapshotDetail',
         'guest_agent_version': 'str',
-        'cluster_status': 'str'
+        'cluster_status': 'str',
+        'cluster_task_status': 'str',
+        'support_fine_grained_cross_version_restore': 'bool',
+        'support_fine_grained_asymmetric_restore': 'bool'
     }
 
     attribute_map = {
@@ -59,6 +61,7 @@ class SnapshotDetail:
         'cluster_id': 'cluster_id',
         'datastore': 'datastore',
         'cluster_name': 'cluster_name',
+        'updated': 'updated',
         'bak_expected_start_time': 'bak_expected_start_time',
         'bak_keep_day': 'bak_keep_day',
         'bak_period': 'bak_period',
@@ -75,10 +78,13 @@ class SnapshotDetail:
         'backup_level': 'backup_level',
         'fine_grained_backup_detail': 'fine_grained_backup_detail',
         'guest_agent_version': 'guest_agent_version',
-        'cluster_status': 'cluster_status'
+        'cluster_status': 'cluster_status',
+        'cluster_task_status': 'cluster_task_status',
+        'support_fine_grained_cross_version_restore': 'support_fine_grained_cross_version_restore',
+        'support_fine_grained_asymmetric_restore': 'support_fine_grained_asymmetric_restore'
     }
 
-    def __init__(self, id=None, name=None, description=None, started=None, finished=None, size=None, status=None, type=None, cluster_id=None, datastore=None, cluster_name=None, bak_expected_start_time=None, bak_keep_day=None, bak_period=None, db_user=None, progress=None, backup_key=None, prior_backup_key=None, base_backup_key=None, backup_device=None, total_backup_size=None, base_backup_name=None, support_inplace_restore=None, fine_grained_backup=None, backup_level=None, fine_grained_backup_detail=None, guest_agent_version=None, cluster_status=None):
+    def __init__(self, id=None, name=None, description=None, started=None, finished=None, size=None, status=None, type=None, cluster_id=None, datastore=None, cluster_name=None, updated=None, bak_expected_start_time=None, bak_keep_day=None, bak_period=None, db_user=None, progress=None, backup_key=None, prior_backup_key=None, base_backup_key=None, backup_device=None, total_backup_size=None, base_backup_name=None, support_inplace_restore=None, fine_grained_backup=None, backup_level=None, fine_grained_backup_detail=None, guest_agent_version=None, cluster_status=None, cluster_task_status=None, support_fine_grained_cross_version_restore=None, support_fine_grained_asymmetric_restore=None):
         r"""SnapshotDetail
 
         The model defined in huaweicloud sdk
@@ -105,6 +111,8 @@ class SnapshotDetail:
         :type datastore: :class:`huaweicloudsdkdws.v2.Datastore`
         :param cluster_name: **参数解释**： 快照对应的集群名称。 **取值范围**： 不涉及。
         :type cluster_name: str
+        :param updated: **参数解释**： 快照更新时间。 **取值范围**： 不涉及。
+        :type updated: str
         :param bak_expected_start_time: **参数解释**： 快照预计开始时间。 **取值范围**： 不涉及。
         :type bak_expected_start_time: str
         :param bak_keep_day: **参数解释**： 快照保留天数。 **取值范围**： 不涉及。
@@ -131,7 +139,7 @@ class SnapshotDetail:
         :type support_inplace_restore: bool
         :param fine_grained_backup: **参数解释**： 是否是细粒度备份。 **取值范围**： 不涉及。
         :type fine_grained_backup: bool
-        :param backup_level: **参数解释**： 备份级别。 **取值范围**： 不涉及。
+        :param backup_level: **参数解释**： 备份级别。 **取值范围**： cluster：集群级快照； schema：schema级快照； table：表级快照；
         :type backup_level: str
         :param fine_grained_backup_detail: 
         :type fine_grained_backup_detail: :class:`huaweicloudsdkdws.v2.FineGrainedSnapshotDetail`
@@ -139,6 +147,12 @@ class SnapshotDetail:
         :type guest_agent_version: str
         :param cluster_status: **参数解释**： 集群状态。 **取值范围**： 不涉及。
         :type cluster_status: str
+        :param cluster_task_status: **参数解释**： 集群任务状态。 **取值范围**： 不涉及。
+        :type cluster_task_status: str
+        :param support_fine_grained_cross_version_restore: **参数解释**： 是否支持细粒度跨版本恢复。 **取值范围**： 不涉及。
+        :type support_fine_grained_cross_version_restore: bool
+        :param support_fine_grained_asymmetric_restore: **参数解释**： 是否支持细粒度异构恢复。 **取值范围**： 不涉及。
+        :type support_fine_grained_asymmetric_restore: bool
         """
         
         
@@ -154,6 +168,7 @@ class SnapshotDetail:
         self._cluster_id = None
         self._datastore = None
         self._cluster_name = None
+        self._updated = None
         self._bak_expected_start_time = None
         self._bak_keep_day = None
         self._bak_period = None
@@ -171,6 +186,9 @@ class SnapshotDetail:
         self._fine_grained_backup_detail = None
         self._guest_agent_version = None
         self._cluster_status = None
+        self._cluster_task_status = None
+        self._support_fine_grained_cross_version_restore = None
+        self._support_fine_grained_asymmetric_restore = None
         self.discriminator = None
 
         self.id = id
@@ -186,6 +204,8 @@ class SnapshotDetail:
             self.datastore = datastore
         if cluster_name is not None:
             self.cluster_name = cluster_name
+        if updated is not None:
+            self.updated = updated
         if bak_expected_start_time is not None:
             self.bak_expected_start_time = bak_expected_start_time
         if bak_keep_day is not None:
@@ -220,6 +240,12 @@ class SnapshotDetail:
             self.guest_agent_version = guest_agent_version
         if cluster_status is not None:
             self.cluster_status = cluster_status
+        if cluster_task_status is not None:
+            self.cluster_task_status = cluster_task_status
+        if support_fine_grained_cross_version_restore is not None:
+            self.support_fine_grained_cross_version_restore = support_fine_grained_cross_version_restore
+        if support_fine_grained_asymmetric_restore is not None:
+            self.support_fine_grained_asymmetric_restore = support_fine_grained_asymmetric_restore
 
     @property
     def id(self):
@@ -458,6 +484,28 @@ class SnapshotDetail:
         :type cluster_name: str
         """
         self._cluster_name = cluster_name
+
+    @property
+    def updated(self):
+        r"""Gets the updated of this SnapshotDetail.
+
+        **参数解释**： 快照更新时间。 **取值范围**： 不涉及。
+
+        :return: The updated of this SnapshotDetail.
+        :rtype: str
+        """
+        return self._updated
+
+    @updated.setter
+    def updated(self, updated):
+        r"""Sets the updated of this SnapshotDetail.
+
+        **参数解释**： 快照更新时间。 **取值范围**： 不涉及。
+
+        :param updated: The updated of this SnapshotDetail.
+        :type updated: str
+        """
+        self._updated = updated
 
     @property
     def bak_expected_start_time(self):
@@ -749,7 +797,7 @@ class SnapshotDetail:
     def backup_level(self):
         r"""Gets the backup_level of this SnapshotDetail.
 
-        **参数解释**： 备份级别。 **取值范围**： 不涉及。
+        **参数解释**： 备份级别。 **取值范围**： cluster：集群级快照； schema：schema级快照； table：表级快照；
 
         :return: The backup_level of this SnapshotDetail.
         :rtype: str
@@ -760,7 +808,7 @@ class SnapshotDetail:
     def backup_level(self, backup_level):
         r"""Sets the backup_level of this SnapshotDetail.
 
-        **参数解释**： 备份级别。 **取值范围**： 不涉及。
+        **参数解释**： 备份级别。 **取值范围**： cluster：集群级快照； schema：schema级快照； table：表级快照；
 
         :param backup_level: The backup_level of this SnapshotDetail.
         :type backup_level: str
@@ -829,11 +877,76 @@ class SnapshotDetail:
         """
         self._cluster_status = cluster_status
 
+    @property
+    def cluster_task_status(self):
+        r"""Gets the cluster_task_status of this SnapshotDetail.
+
+        **参数解释**： 集群任务状态。 **取值范围**： 不涉及。
+
+        :return: The cluster_task_status of this SnapshotDetail.
+        :rtype: str
+        """
+        return self._cluster_task_status
+
+    @cluster_task_status.setter
+    def cluster_task_status(self, cluster_task_status):
+        r"""Sets the cluster_task_status of this SnapshotDetail.
+
+        **参数解释**： 集群任务状态。 **取值范围**： 不涉及。
+
+        :param cluster_task_status: The cluster_task_status of this SnapshotDetail.
+        :type cluster_task_status: str
+        """
+        self._cluster_task_status = cluster_task_status
+
+    @property
+    def support_fine_grained_cross_version_restore(self):
+        r"""Gets the support_fine_grained_cross_version_restore of this SnapshotDetail.
+
+        **参数解释**： 是否支持细粒度跨版本恢复。 **取值范围**： 不涉及。
+
+        :return: The support_fine_grained_cross_version_restore of this SnapshotDetail.
+        :rtype: bool
+        """
+        return self._support_fine_grained_cross_version_restore
+
+    @support_fine_grained_cross_version_restore.setter
+    def support_fine_grained_cross_version_restore(self, support_fine_grained_cross_version_restore):
+        r"""Sets the support_fine_grained_cross_version_restore of this SnapshotDetail.
+
+        **参数解释**： 是否支持细粒度跨版本恢复。 **取值范围**： 不涉及。
+
+        :param support_fine_grained_cross_version_restore: The support_fine_grained_cross_version_restore of this SnapshotDetail.
+        :type support_fine_grained_cross_version_restore: bool
+        """
+        self._support_fine_grained_cross_version_restore = support_fine_grained_cross_version_restore
+
+    @property
+    def support_fine_grained_asymmetric_restore(self):
+        r"""Gets the support_fine_grained_asymmetric_restore of this SnapshotDetail.
+
+        **参数解释**： 是否支持细粒度异构恢复。 **取值范围**： 不涉及。
+
+        :return: The support_fine_grained_asymmetric_restore of this SnapshotDetail.
+        :rtype: bool
+        """
+        return self._support_fine_grained_asymmetric_restore
+
+    @support_fine_grained_asymmetric_restore.setter
+    def support_fine_grained_asymmetric_restore(self, support_fine_grained_asymmetric_restore):
+        r"""Sets the support_fine_grained_asymmetric_restore of this SnapshotDetail.
+
+        **参数解释**： 是否支持细粒度异构恢复。 **取值范围**： 不涉及。
+
+        :param support_fine_grained_asymmetric_restore: The support_fine_grained_asymmetric_restore of this SnapshotDetail.
+        :type support_fine_grained_asymmetric_restore: bool
+        """
+        self._support_fine_grained_asymmetric_restore = support_fine_grained_asymmetric_restore
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -859,10 +972,6 @@ class SnapshotDetail:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

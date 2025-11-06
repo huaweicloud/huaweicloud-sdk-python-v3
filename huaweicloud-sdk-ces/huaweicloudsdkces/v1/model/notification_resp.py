@@ -1,0 +1,137 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class NotificationResp:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'type': 'str',
+        'notification_list': 'list[str]'
+    }
+
+    attribute_map = {
+        'type': 'type',
+        'notification_list': 'notificationList'
+    }
+
+    def __init__(self, type=None, notification_list=None):
+        r"""NotificationResp
+
+        The model defined in huaweicloud sdk
+
+        :param type: **参数解释**： 告警通知类型。 **取值范围**： 取值如下： notification：SMN通知； autoscaling：AS通知。 
+        :type type: str
+        :param notification_list: **参数解释**： 告警状态发生变化时，被通知对象的列表。 
+        :type notification_list: list[str]
+        """
+        
+        
+
+        self._type = None
+        self._notification_list = None
+        self.discriminator = None
+
+        if type is not None:
+            self.type = type
+        if notification_list is not None:
+            self.notification_list = notification_list
+
+    @property
+    def type(self):
+        r"""Gets the type of this NotificationResp.
+
+        **参数解释**： 告警通知类型。 **取值范围**： 取值如下： notification：SMN通知； autoscaling：AS通知。 
+
+        :return: The type of this NotificationResp.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this NotificationResp.
+
+        **参数解释**： 告警通知类型。 **取值范围**： 取值如下： notification：SMN通知； autoscaling：AS通知。 
+
+        :param type: The type of this NotificationResp.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def notification_list(self):
+        r"""Gets the notification_list of this NotificationResp.
+
+        **参数解释**： 告警状态发生变化时，被通知对象的列表。 
+
+        :return: The notification_list of this NotificationResp.
+        :rtype: list[str]
+        """
+        return self._notification_list
+
+    @notification_list.setter
+    def notification_list(self, notification_list):
+        r"""Sets the notification_list of this NotificationResp.
+
+        **参数解释**： 告警状态发生变化时，被通知对象的列表。 
+
+        :param notification_list: The notification_list of this NotificationResp.
+        :type notification_list: list[str]
+        """
+        self._notification_list = notification_list
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, NotificationResp):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

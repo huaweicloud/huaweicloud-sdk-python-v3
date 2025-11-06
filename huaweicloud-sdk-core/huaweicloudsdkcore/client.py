@@ -20,19 +20,26 @@
  under the LICENSE.
 """
 
-import bson
 import datetime
 import decimal
 import logging
 import os
 import re
-import simplejson as json
-import six
 import sys
 import threading
 import warnings
 from collections import OrderedDict
-from huaweicloudsdkcore.auth.credentials import BasicCredentials, DerivedCredentials
+from logging.handlers import RotatingFileHandler
+from typing import Iterable, Union, List, TextIO, Optional
+from typing import Mapping
+from typing import TypeVar, Generic
+from urllib.parse import quote, urlparse
+
+import bson
+import simplejson as json
+from requests_toolbelt import MultipartEncoder
+
+from huaweicloudsdkcore.auth.credentials import BasicCredentials, DerivedCredentials, Credentials
 from huaweicloudsdkcore.auth.provider import CredentialProviderChain
 from huaweicloudsdkcore.exceptions.exception_handler import ExceptionHandler, DefaultExceptionHandler
 from huaweicloudsdkcore.exceptions.exceptions import HostUnreachableException, SslHandShakeException, \
@@ -45,28 +52,17 @@ from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
 from huaweicloudsdkcore.http.primitive_types import NATIVE_TYPES_MAPPING
 from huaweicloudsdkcore.http.primitive_types import PRIMITIVE_TYPES
+from huaweicloudsdkcore.region.region import Region
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.sdk_response import FutureSdkResponse, SdkResponse
 from huaweicloudsdkcore.sdk_stream_response import SdkStreamResponse
-from huaweicloudsdkcore.utils import http_utils, core_utils
+from huaweicloudsdkcore.utils import http_utils
+from huaweicloudsdkcore.utils import six_utils as six
 from huaweicloudsdkcore.utils.filepath_utils import ensure_file_in_rb_mode
 from huaweicloudsdkcore.utils.xml_utils import XmlTransfer
 from huaweicloudsdkcore.warning import warning
-from logging.handlers import RotatingFileHandler
-from requests_toolbelt import MultipartEncoder
-from six.moves.urllib.parse import quote, urlparse
-from typing import Iterable
 
-try:
-    from typing import TypeVar, Generic
-except ImportError:
-    from typing_extensions import TypeVar, Generic
-if six.PY3:
-    from typing import Mapping
-
-    _BASE_ITER_TYPES = (str, bytes, list, tuple, Mapping)
-else:
-    _BASE_ITER_TYPES = (str, bytes, list, tuple, dict)
+_BASE_ITER_TYPES = (str, bytes, list, tuple, Mapping)
 
 T = TypeVar("T")
 
@@ -75,8 +71,7 @@ class ClientBuilder(Generic[T]):
     _HTTP_SCHEME = "http"
     _HTTPS_SCHEME = "https"
 
-    def __init__(self, client_type, credential_type=BasicCredentials.__name__):
-        # type: (T, str) -> None
+    def __init__(self, client_type: T, credential_type: str = BasicCredentials.__name__):
         self._client_type = client_type
         self._credential_type = credential_type.split(',')
         self._derived_auth_service_name = None
@@ -90,35 +85,19 @@ class ClientBuilder(Generic[T]):
         self._stream_logger_handler = None
         self._exception_handler = None
 
-    def with_http_config(self, config):
-        """
-        :param config: Config for ClientBuilder
-        :type config: :class:`huaweicloudsdkcore.http.http_config.HttpConfig`
-        """
+    def with_http_config(self, config: HttpConfig):
         self._config = config
         return self
 
-    def with_credentials(self, credentials):
-        """
-        :param credentials: Credential for ClientBuilder
-        :type credentials: :class:`huaweicloudsdkcore.auth.credentials.Credentials`
-        """
+    def with_credentials(self, credentials: Credentials):
         self._credentials = credentials
         return self
 
-    def with_region(self, region):
-        """
-        :param region: Region for ClientBuilder
-        :type region: :class:`huaweicloudsdkcore.region.region.Region`
-        """
+    def with_region(self, region: Region):
         self._region = region
         return self
 
-    def with_endpoint(self, *args, **kwargs):
-        """
-        :param endpoint: Endpoint for ClientBuilder
-        :type endpoint: str
-        """
+    def with_endpoint(self, *args: str, **kwargs: str):
         endpoint = kwargs.get('endpoint')
         if endpoint:
             self._endpoints = [endpoint]
@@ -126,23 +105,15 @@ class ClientBuilder(Generic[T]):
             self._endpoints = list(args)
         return self
 
-    def with_endpoints(self, endpoints):
+    def with_endpoints(self, endpoints: List[str]):
         self._endpoints = endpoints
         return self
 
-    def with_exception_handler(self, exception_handler):
-        """
-        :param exception_handler: ExceptionHandler for ClientBuilder
-        :type exception_handler: :class:`huaweicloudsdkcore.exceptions.exception_handler.ExceptionHandler`
-        """
+    def with_exception_handler(self, exception_handler: ExceptionHandler):
         self._exception_handler = exception_handler
         return self
 
-    def with_http_handler(self, http_handler):
-        """
-        :param http_handler: HttpHandler for ClientBuilder
-        :type http_handler: :class:`huaweicloudsdkcore.http.http_handler.HttpHandler`
-        """
+    def with_http_handler(self, http_handler: HttpHandler):
         self._http_handler = http_handler
         return self
 
@@ -168,8 +139,7 @@ class ClientBuilder(Generic[T]):
         self._derived_auth_service_name = derived_auth_service_name
         return self
 
-    def build(self):
-        # type: () -> T
+    def build(self) -> T:
         if self._config is None:
             self._config = HttpConfig.get_default_config()
 
@@ -227,6 +197,7 @@ class Client(object):
     _XML_NAME = "xml_name"
     _AUTHORIZATION = "Authorization"
     _HEADERS = "headers"
+    _LOG_FORMAT = '%(asctime)s %(thread)d %(name)s %(filename)s %(lineno)d %(levelname)s %(message)s'
 
     def __init__(self):
         self.preset_headers = {}
@@ -252,44 +223,24 @@ class Client(object):
         logger.propagate = False
         return logger
 
-    def with_config(self, config):
-        """
-        :param config: Config for Client
-        :type config: :class:`huaweicloudsdkcore.http.http_config.HttpConfig`
-        """
+    def with_config(self, config: HttpConfig):
         self._config = config
         return self
 
-    def with_credentials(self, credentials):
-        """
-        :param credentials: Credential for Client
-        :type credentials: :class:`huaweicloudsdkcore.auth.credentials.Credentials`
-        """
+    def with_credentials(self, credentials: Credentials):
         self._credentials = credentials
         return self
 
-    def with_endpoints(self, endpoints):
-        """
-        :param endpoints: Endpoint for Client
-        :type endpoints: str
-        """
+    def with_endpoints(self, endpoints: List[str]):
         self._endpoints += endpoints
         return self
 
-    def with_exception_handler(self, exception_handler):
-        """
-        :param exception_handler: ExceptionHandler for Client
-        :type exception_handler: :class:`huaweicloudsdkcore.exceptions.exception_handler.ExceptionHandler`
-        """
+    def with_exception_handler(self, exception_handler: ExceptionHandler):
         self._exception_handler = exception_handler
         return self
 
-    def with_http_handler(self, http_handler):
-        """
-        :param http_handler: HttpHandler for Client
-        :type http_handler: :class:`huaweicloudsdkcore.http.http_handler.HttpHandler`
-        """
-        self._http_handler = http_handler if http_handler is not None else HttpHandler()
+    def with_http_handler(self, http_handler: HttpHandler):
+        self._http_handler = http_handler or HttpHandler()
         return self
 
     def init_http_client(self):
@@ -298,21 +249,22 @@ class Client(object):
         if not self._http_client:
             self._http_client = HttpClient(self._config, self._http_handler, self._exception_handler, self._logger)
 
-    def add_stream_logger(self, stream, log_level, format_string):
+    def add_stream_logger(self, stream: TextIO, log_level: Union[int, str], format_string: Optional[str]):
         self._logger.setLevel(log_level)
         stream_handler = logging.StreamHandler(stream)
         stream_handler.setLevel(log_level)
-        formatter = logging.Formatter(format_string if format_string is not None else core_utils.LOG_FORMAT)
+        formatter = logging.Formatter(format_string or self._LOG_FORMAT)
         stream_handler.setFormatter(formatter)
 
         if stream_handler not in self._logger.handlers:
             self._logger.addHandler(stream_handler)
 
-    def add_file_logger(self, path, log_level, max_bytes, backup_count, format_string):
+    def add_file_logger(self, path: str, log_level: Union[int, str], max_bytes: int, backup_count: int,
+                        format_string: Optional[str]):
         self._logger.setLevel(log_level)
         file_handler = RotatingFileHandler(path, maxBytes=max_bytes, backupCount=backup_count)
         file_handler.setLevel(log_level)
-        formatter = logging.Formatter(format_string if format_string is not None else core_utils.LOG_FORMAT)
+        formatter = logging.Formatter(format_string or self._LOG_FORMAT)
         file_handler.setFormatter(formatter)
 
         if file_handler not in self._logger.handlers:
@@ -383,11 +335,13 @@ class Client(object):
         return bson.encode(body_dict)
 
     @classmethod
-    def _parse_body(cls, body, post_params=None):
-        # type: (str|list|dict|Iterable|None, dict) -> dict|str|Iterable|None
+    def _parse_body(
+            cls, body: Union[str, list, dict, Iterable, None],
+            post_params: dict = None
+    ) -> Union[dict, str, Iterable, None]:
         if post_params:
             return post_params
-        if body is None or isinstance(body, six.text_type) or cls._is_iterable_body(body):
+        if body is None or isinstance(body, str) or cls._is_iterable_body(body):
             return body
 
         return json.dumps(http_utils.sanitize_for_serialization(body), use_decimal=True) if body else json.dumps(body)
@@ -590,8 +544,7 @@ class Client(object):
             klass = getattr(self.model_package, response_type)
             if issubclass(klass, SdkStreamResponse):
                 if progress_callback:
-                    content_length = int(response.headers.get("Content-Length")) \
-                        if "Content-Length" in response.headers else -1
+                    content_length = int(response.headers.get("Content-Length", "-1"))
                     notifier = progress.ProgressNotifier(callback=progress_callback, total_amount=content_length)
                     progress.ProgressHTTPResponse.convert(response.raw, notifier)
                 return klass(response)
@@ -623,7 +576,7 @@ class Client(object):
             if klass.startswith('dict('):
                 sub_kls = re.match(r'dict\(([^,]*), (.*)\)', klass).group(2)
                 return {k: self._deserialize(v, sub_kls)
-                        for k, v in six.iteritems(data)}
+                        for k, v in data.items()}
             if klass in BSON_TYPES_MAPPING:
                 return data
             if klass in NATIVE_TYPES_MAPPING:
@@ -653,7 +606,7 @@ class Client(object):
         except UnicodeEncodeError:
             warnings.warn(f"Unicode encoding error occurred during the conversion of the {type(data)} to {klass},"
                           " return string value.", warning.SdkWarning)
-            return six.text_type(data)
+            return str(data)
         except TypeError:
             warnings.warn(f"Type error occurred during the conversion of the {type(data)} to {klass},"
                           "return original value.", warning.TypeConversionWarning)
@@ -695,8 +648,13 @@ class Client(object):
 
     def _deserialize_model(self, data, klass):
         if not klass.openapi_types and not hasattr(klass, 'get_real_child_model'):
-            if isinstance(data, str) and hasattr(klass, re.sub(r'\W+', '_', data).upper()):
-                return getattr(klass, re.sub(r'\W+', '_', data).upper())
+            if isinstance(data, str):
+                class_attr = re.sub(r'\W+', '_', data).upper()
+                if hasattr(klass, class_attr):
+                    return getattr(klass, class_attr)
+                if hasattr(klass, "IS_ENUM"):
+                    warnings.warn(f"{klass.__name__} value is not in allowable enum values",
+                                  category=warning.TypeConversionWarning)
 
             if isinstance(data, bool) and hasattr(klass, str(data).upper()):
                 return getattr(klass, str(data).upper())
@@ -722,14 +680,14 @@ class Client(object):
         if not klass.openapi_types or not data:
             return kwargs
 
-        for attr, attr_type in six.iteritems(klass.openapi_types):
+        for attr, attr_type in klass.openapi_types.items():
             if isinstance(data, (list, dict)):
                 if klass.attribute_map[attr] == "body":
                     kwargs[attr] = self._deserialize(data, attr_type)
                 if klass.attribute_map[attr] in data:
                     value = data[klass.attribute_map[attr]]
                     kwargs[attr] = self._deserialize(value, attr_type)
-            elif isinstance(data, six.text_type):
+            elif isinstance(data, str):
                 if klass.attribute_map[attr] == "body":
                     kwargs[attr] = self._deserialize(data, attr_type)
 

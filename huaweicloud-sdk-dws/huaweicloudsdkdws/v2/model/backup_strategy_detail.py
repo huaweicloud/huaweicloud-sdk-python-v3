@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -24,7 +22,10 @@ class BackupStrategyDetail:
         'backup_level': 'str',
         'next_fire_time': 'str',
         'update_time': 'str',
-        'time_zone_offset': 'int'
+        'time_zone_offset': 'int',
+        'backup_database': 'str',
+        'backup_schema_list': 'str',
+        'backup_table_list': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,13 @@ class BackupStrategyDetail:
         'backup_level': 'backup_level',
         'next_fire_time': 'next_fire_time',
         'update_time': 'update_time',
-        'time_zone_offset': 'time_zone_offset'
+        'time_zone_offset': 'time_zone_offset',
+        'backup_database': 'backup_database',
+        'backup_schema_list': 'backup_schema_list',
+        'backup_table_list': 'backup_table_list'
     }
 
-    def __init__(self, policy_id=None, policy_name=None, backup_strategy=None, backup_type=None, backup_level=None, next_fire_time=None, update_time=None, time_zone_offset=None):
+    def __init__(self, policy_id=None, policy_name=None, backup_strategy=None, backup_type=None, backup_level=None, next_fire_time=None, update_time=None, time_zone_offset=None, backup_database=None, backup_schema_list=None, backup_table_list=None):
         r"""BackupStrategyDetail
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,12 @@ class BackupStrategyDetail:
         :type update_time: str
         :param time_zone_offset: **参数解释**： 时区偏移量（相比UTC时间）。 **取值范围**： 0~23
         :type time_zone_offset: int
+        :param backup_database: **参数解释**： 备份的数据库。 **取值范围**： 不涉及。
+        :type backup_database: str
+        :param backup_schema_list: **参数解释**： 备份的数据库模式列表。 **取值范围**： 不涉及。
+        :type backup_schema_list: str
+        :param backup_table_list: **参数解释**： 备份的数据库表列表。 **取值范围**： 不涉及。
+        :type backup_table_list: str
         """
         
         
@@ -71,6 +81,9 @@ class BackupStrategyDetail:
         self._next_fire_time = None
         self._update_time = None
         self._time_zone_offset = None
+        self._backup_database = None
+        self._backup_schema_list = None
+        self._backup_table_list = None
         self.discriminator = None
 
         if policy_id is not None:
@@ -89,6 +102,12 @@ class BackupStrategyDetail:
             self.update_time = update_time
         if time_zone_offset is not None:
             self.time_zone_offset = time_zone_offset
+        if backup_database is not None:
+            self.backup_database = backup_database
+        if backup_schema_list is not None:
+            self.backup_schema_list = backup_schema_list
+        if backup_table_list is not None:
+            self.backup_table_list = backup_table_list
 
     @property
     def policy_id(self):
@@ -266,11 +285,76 @@ class BackupStrategyDetail:
         """
         self._time_zone_offset = time_zone_offset
 
+    @property
+    def backup_database(self):
+        r"""Gets the backup_database of this BackupStrategyDetail.
+
+        **参数解释**： 备份的数据库。 **取值范围**： 不涉及。
+
+        :return: The backup_database of this BackupStrategyDetail.
+        :rtype: str
+        """
+        return self._backup_database
+
+    @backup_database.setter
+    def backup_database(self, backup_database):
+        r"""Sets the backup_database of this BackupStrategyDetail.
+
+        **参数解释**： 备份的数据库。 **取值范围**： 不涉及。
+
+        :param backup_database: The backup_database of this BackupStrategyDetail.
+        :type backup_database: str
+        """
+        self._backup_database = backup_database
+
+    @property
+    def backup_schema_list(self):
+        r"""Gets the backup_schema_list of this BackupStrategyDetail.
+
+        **参数解释**： 备份的数据库模式列表。 **取值范围**： 不涉及。
+
+        :return: The backup_schema_list of this BackupStrategyDetail.
+        :rtype: str
+        """
+        return self._backup_schema_list
+
+    @backup_schema_list.setter
+    def backup_schema_list(self, backup_schema_list):
+        r"""Sets the backup_schema_list of this BackupStrategyDetail.
+
+        **参数解释**： 备份的数据库模式列表。 **取值范围**： 不涉及。
+
+        :param backup_schema_list: The backup_schema_list of this BackupStrategyDetail.
+        :type backup_schema_list: str
+        """
+        self._backup_schema_list = backup_schema_list
+
+    @property
+    def backup_table_list(self):
+        r"""Gets the backup_table_list of this BackupStrategyDetail.
+
+        **参数解释**： 备份的数据库表列表。 **取值范围**： 不涉及。
+
+        :return: The backup_table_list of this BackupStrategyDetail.
+        :rtype: str
+        """
+        return self._backup_table_list
+
+    @backup_table_list.setter
+    def backup_table_list(self, backup_table_list):
+        r"""Sets the backup_table_list of this BackupStrategyDetail.
+
+        **参数解释**： 备份的数据库表列表。 **取值范围**： 不涉及。
+
+        :param backup_table_list: The backup_table_list of this BackupStrategyDetail.
+        :type backup_table_list: str
+        """
+        self._backup_table_list = backup_table_list
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -296,10 +380,6 @@ class BackupStrategyDetail:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

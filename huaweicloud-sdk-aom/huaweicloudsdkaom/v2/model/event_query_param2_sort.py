@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -31,7 +29,7 @@ class EventQueryParam2Sort:
 
         The model defined in huaweicloud sdk
 
-        :param order_by: 排序字段列表。会根据列表中定义顺序对返回列表最排序。
+        :param order_by: 排序字段列表。会根据列表中定义顺序对返回列表最排序。当sort参数不为空时，order_by参数必填。
         :type order_by: list[str]
         :param order: 排序方式枚举值。asc代表正序，desc代表倒序。
         :type order: str
@@ -43,8 +41,7 @@ class EventQueryParam2Sort:
         self._order = None
         self.discriminator = None
 
-        if order_by is not None:
-            self.order_by = order_by
+        self.order_by = order_by
         if order is not None:
             self.order = order
 
@@ -52,7 +49,7 @@ class EventQueryParam2Sort:
     def order_by(self):
         r"""Gets the order_by of this EventQueryParam2Sort.
 
-        排序字段列表。会根据列表中定义顺序对返回列表最排序。
+        排序字段列表。会根据列表中定义顺序对返回列表最排序。当sort参数不为空时，order_by参数必填。
 
         :return: The order_by of this EventQueryParam2Sort.
         :rtype: list[str]
@@ -63,7 +60,7 @@ class EventQueryParam2Sort:
     def order_by(self, order_by):
         r"""Sets the order_by of this EventQueryParam2Sort.
 
-        排序字段列表。会根据列表中定义顺序对返回列表最排序。
+        排序字段列表。会根据列表中定义顺序对返回列表最排序。当sort参数不为空时，order_by参数必填。
 
         :param order_by: The order_by of this EventQueryParam2Sort.
         :type order_by: list[str]
@@ -93,10 +90,9 @@ class EventQueryParam2Sort:
         self._order = order
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -122,10 +118,6 @@ class EventQueryParam2Sort:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

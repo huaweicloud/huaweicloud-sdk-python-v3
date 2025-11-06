@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -18,29 +16,36 @@ class RestoreClusterResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cluster': 'Cluster'
+        'cluster': 'Cluster',
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'cluster': 'cluster'
+        'cluster': 'cluster',
+        'job_id': 'job_id'
     }
 
-    def __init__(self, cluster=None):
+    def __init__(self, cluster=None, job_id=None):
         r"""RestoreClusterResponse
 
         The model defined in huaweicloud sdk
 
         :param cluster: 
         :type cluster: :class:`huaweicloudsdkdws.v2.Cluster`
+        :param job_id: **参数解释**： 异步任务ID。 **取值范围**： 不涉及。
+        :type job_id: str
         """
         
-        super(RestoreClusterResponse, self).__init__()
+        super().__init__()
 
         self._cluster = None
+        self._job_id = None
         self.discriminator = None
 
         if cluster is not None:
             self.cluster = cluster
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
     def cluster(self):
@@ -60,11 +65,35 @@ class RestoreClusterResponse(SdkResponse):
         """
         self._cluster = cluster
 
+    @property
+    def job_id(self):
+        r"""Gets the job_id of this RestoreClusterResponse.
+
+        **参数解释**： 异步任务ID。 **取值范围**： 不涉及。
+
+        :return: The job_id of this RestoreClusterResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this RestoreClusterResponse.
+
+        **参数解释**： 异步任务ID。 **取值范围**： 不涉及。
+
+        :param job_id: The job_id of this RestoreClusterResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("RestoreClusterResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -90,10 +119,6 @@ class RestoreClusterResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

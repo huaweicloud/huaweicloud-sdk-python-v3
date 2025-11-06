@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -34,7 +32,7 @@ class ListProjectBugStaticsV4Response(SdkResponse):
         :type bug_statistics: list[:class:`huaweicloudsdkprojectman.v4.BugStatisticResponseV4`]
         """
         
-        super(ListProjectBugStaticsV4Response, self).__init__()
+        super().__init__()
 
         self._bug_statistics = None
         self.discriminator = None
@@ -65,10 +63,12 @@ class ListProjectBugStaticsV4Response(SdkResponse):
         self._bug_statistics = bug_statistics
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ListProjectBugStaticsV4Response.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -94,10 +94,6 @@ class ListProjectBugStaticsV4Response(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

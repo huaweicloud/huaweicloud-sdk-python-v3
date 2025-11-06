@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -20,17 +18,19 @@ class LTSIndexConfigInfo:
         'full_text_index': 'LTSFullTextIndexInfo',
         'fields': 'list[LTSFieldsInfo]',
         'sql_analysis_enable': 'bool',
-        'log_stream_id': 'str'
+        'log_stream_id': 'str',
+        'fast_analysis_sample_count': 'int'
     }
 
     attribute_map = {
         'full_text_index': 'fullTextIndex',
         'fields': 'fields',
         'sql_analysis_enable': 'sqlAnalysisEnable',
-        'log_stream_id': 'logStreamId'
+        'log_stream_id': 'logStreamId',
+        'fast_analysis_sample_count': 'fastAnalysisSampleCount'
     }
 
-    def __init__(self, full_text_index=None, fields=None, sql_analysis_enable=None, log_stream_id=None):
+    def __init__(self, full_text_index=None, fields=None, sql_analysis_enable=None, log_stream_id=None, fast_analysis_sample_count=None):
         r"""LTSIndexConfigInfo
 
         The model defined in huaweicloud sdk
@@ -43,6 +43,8 @@ class LTSIndexConfigInfo:
         :type sql_analysis_enable: bool
         :param log_stream_id: 日志流id
         :type log_stream_id: str
+        :param fast_analysis_sample_count: **参数解释：** 快速分析采样日志条数。 **约束限制：** 不涉及。 **取值范围：** 最小值：100000 最大值：10000000 **默认取值：** 100000
+        :type fast_analysis_sample_count: int
         """
         
         
@@ -51,6 +53,7 @@ class LTSIndexConfigInfo:
         self._fields = None
         self._sql_analysis_enable = None
         self._log_stream_id = None
+        self._fast_analysis_sample_count = None
         self.discriminator = None
 
         self.full_text_index = full_text_index
@@ -59,6 +62,8 @@ class LTSIndexConfigInfo:
         if sql_analysis_enable is not None:
             self.sql_analysis_enable = sql_analysis_enable
         self.log_stream_id = log_stream_id
+        if fast_analysis_sample_count is not None:
+            self.fast_analysis_sample_count = fast_analysis_sample_count
 
     @property
     def full_text_index(self):
@@ -144,11 +149,32 @@ class LTSIndexConfigInfo:
         """
         self._log_stream_id = log_stream_id
 
+    @property
+    def fast_analysis_sample_count(self):
+        r"""Gets the fast_analysis_sample_count of this LTSIndexConfigInfo.
+
+        **参数解释：** 快速分析采样日志条数。 **约束限制：** 不涉及。 **取值范围：** 最小值：100000 最大值：10000000 **默认取值：** 100000
+
+        :return: The fast_analysis_sample_count of this LTSIndexConfigInfo.
+        :rtype: int
+        """
+        return self._fast_analysis_sample_count
+
+    @fast_analysis_sample_count.setter
+    def fast_analysis_sample_count(self, fast_analysis_sample_count):
+        r"""Sets the fast_analysis_sample_count of this LTSIndexConfigInfo.
+
+        **参数解释：** 快速分析采样日志条数。 **约束限制：** 不涉及。 **取值范围：** 最小值：100000 最大值：10000000 **默认取值：** 100000
+
+        :param fast_analysis_sample_count: The fast_analysis_sample_count of this LTSIndexConfigInfo.
+        :type fast_analysis_sample_count: int
+        """
+        self._fast_analysis_sample_count = fast_analysis_sample_count
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -174,10 +200,6 @@ class LTSIndexConfigInfo:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class MrsClient(Client):
     def __init__(self):
-        super(MrsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmrs.v2.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class VpcepAsyncClient(Client):
     def __init__(self):
-        super(VpcepAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvpcep.v1.model")
 
     @classmethod

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -47,25 +45,25 @@ class EventItemDetail:
 
         The model defined in huaweicloud sdk
 
-        :param content: 事件内容，最大长度4096。
+        :param content: **参数解释**： 事件内容 **约束限制**： 不涉及。 **取值范围**： 长度为[0,4096]个字符。 **默认取值**： 不涉及。 
         :type content: str
-        :param group_id: 所属分组。  资源分组对应的ID，必须传存在的分组ID。
+        :param group_id: **参数解释**： 所属分组。 资源分组对应的ID，必须是已存在的分组ID。 分组ID查询方法： 1.登录管理控制台。 2.单击“云监控服务”。 3.单击页面左侧的“资源分组”。 在名称/ID列获取具体资源分组ID。 **约束限制**： 不涉及。 **取值范围**： 长度只能为24个字符。 **默认取值**： 不涉及。 
         :type group_id: str
-        :param resource_id: 资源ID，支持字母、数字_ -：，最大长度128。
+        :param resource_id: **参数解释**： 资源ID。 资源ID的查询方法： 1.登录管理控制台。 2.单击“计算 &gt; 弹性云服务器”。 在资源概览页可获取具体资源ID。 **约束限制**： 不涉及。 **取值范围**： 支持字母、数字支持字母、数字、下划线（_）、中划线（-）和冒号（:），最大长度128个字符。例如，6a69bf28-ee62-49f3-9785-845dacd799ec。 **默认取值**： 不涉及。 
         :type resource_id: str
-        :param resource_name: 资源名称，支持字母 中文 数字_ -. ，最大长度128。
+        :param resource_name: **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 支持字母 中文 数字_ -. ，最大长度128个字符。 **默认取值**： 不涉及。 
         :type resource_name: str
-        :param event_state: 事件状态。  枚举类型：normal\\warning\\incident
+        :param event_state: **参数解释**： 事件状态。 **约束限制**： 不涉及。 **取值范围**： 枚举类型。 - normal：正常发生 - warning：异常 - incident：严重 **默认取值**： 不涉及。 
         :type event_state: str
-        :param event_level: 事件级别。  枚举类型：Critical, Major, Minor, Info
+        :param event_level: **参数解释**： 事件级别。 **约束限制**： 不涉及。 **取值范围**： 枚举类型：Critical, Major, Minor, Info。 - Critical: 紧急 - Major: 重要 - Minor: 次要 - Info: 提示 **默认取值**： 不涉及。 
         :type event_level: str
-        :param event_user: 事件用户。  支持字母 数字_ -/空格 ，最大长度64。
+        :param event_user: **参数解释**： 事件用户。 **约束限制**： 不涉及。 **取值范围**： 支持字母 数字_ -/空格 ，长度为[0,64]个字符。 **默认取值**： 不涉及。 
         :type event_user: str
-        :param event_type: 事件类型。 枚举类型，EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，用户自已不能上报，只能传EVENT.CUSTOM。
+        :param event_type: **参数解释**： 事件类型。 **约束限制**： EVENT.SYS为系统事件，用户自己不能上报系统事件，只能传EVENT.CUSTOM。 **取值范围**： 枚举类型，EVENT.SYS或EVENT.CUSTOM。 - EVENT.SYS：系统事件 - EVENT.CUSTOM：自定义事件 **默认取值**： 不涉及。 
         :type event_type: str
-        :param sub_event_type: 事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+        :param sub_event_type: **参数解释**： 事件子类。 **约束限制**： 不涉及。 **取值范围**： 枚举类型 - SUB_EVENT.OPS: 运维事件 - SUB_EVENT.PLAN: 计划事件 - SUB_EVENT.CUSTOM: 自定义事件 **默认取值**： 不涉及。 
         :type sub_event_type: str
-        :param dimensions: 一个或者多个资源维度。
+        :param dimensions: **参数解释**： 事件的维度，根据维度描述资源信息。 用于指定资源、资源分组的事件告警场景中，支持按维度配置告警规则。 **约束限制**： 目前最大支持4个维度。 
         :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         
@@ -108,7 +106,7 @@ class EventItemDetail:
     def content(self):
         r"""Gets the content of this EventItemDetail.
 
-        事件内容，最大长度4096。
+        **参数解释**： 事件内容 **约束限制**： 不涉及。 **取值范围**： 长度为[0,4096]个字符。 **默认取值**： 不涉及。 
 
         :return: The content of this EventItemDetail.
         :rtype: str
@@ -119,7 +117,7 @@ class EventItemDetail:
     def content(self, content):
         r"""Sets the content of this EventItemDetail.
 
-        事件内容，最大长度4096。
+        **参数解释**： 事件内容 **约束限制**： 不涉及。 **取值范围**： 长度为[0,4096]个字符。 **默认取值**： 不涉及。 
 
         :param content: The content of this EventItemDetail.
         :type content: str
@@ -130,7 +128,7 @@ class EventItemDetail:
     def group_id(self):
         r"""Gets the group_id of this EventItemDetail.
 
-        所属分组。  资源分组对应的ID，必须传存在的分组ID。
+        **参数解释**： 所属分组。 资源分组对应的ID，必须是已存在的分组ID。 分组ID查询方法： 1.登录管理控制台。 2.单击“云监控服务”。 3.单击页面左侧的“资源分组”。 在名称/ID列获取具体资源分组ID。 **约束限制**： 不涉及。 **取值范围**： 长度只能为24个字符。 **默认取值**： 不涉及。 
 
         :return: The group_id of this EventItemDetail.
         :rtype: str
@@ -141,7 +139,7 @@ class EventItemDetail:
     def group_id(self, group_id):
         r"""Sets the group_id of this EventItemDetail.
 
-        所属分组。  资源分组对应的ID，必须传存在的分组ID。
+        **参数解释**： 所属分组。 资源分组对应的ID，必须是已存在的分组ID。 分组ID查询方法： 1.登录管理控制台。 2.单击“云监控服务”。 3.单击页面左侧的“资源分组”。 在名称/ID列获取具体资源分组ID。 **约束限制**： 不涉及。 **取值范围**： 长度只能为24个字符。 **默认取值**： 不涉及。 
 
         :param group_id: The group_id of this EventItemDetail.
         :type group_id: str
@@ -152,7 +150,7 @@ class EventItemDetail:
     def resource_id(self):
         r"""Gets the resource_id of this EventItemDetail.
 
-        资源ID，支持字母、数字_ -：，最大长度128。
+        **参数解释**： 资源ID。 资源ID的查询方法： 1.登录管理控制台。 2.单击“计算 > 弹性云服务器”。 在资源概览页可获取具体资源ID。 **约束限制**： 不涉及。 **取值范围**： 支持字母、数字支持字母、数字、下划线（_）、中划线（-）和冒号（:），最大长度128个字符。例如，6a69bf28-ee62-49f3-9785-845dacd799ec。 **默认取值**： 不涉及。 
 
         :return: The resource_id of this EventItemDetail.
         :rtype: str
@@ -163,7 +161,7 @@ class EventItemDetail:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this EventItemDetail.
 
-        资源ID，支持字母、数字_ -：，最大长度128。
+        **参数解释**： 资源ID。 资源ID的查询方法： 1.登录管理控制台。 2.单击“计算 > 弹性云服务器”。 在资源概览页可获取具体资源ID。 **约束限制**： 不涉及。 **取值范围**： 支持字母、数字支持字母、数字、下划线（_）、中划线（-）和冒号（:），最大长度128个字符。例如，6a69bf28-ee62-49f3-9785-845dacd799ec。 **默认取值**： 不涉及。 
 
         :param resource_id: The resource_id of this EventItemDetail.
         :type resource_id: str
@@ -174,7 +172,7 @@ class EventItemDetail:
     def resource_name(self):
         r"""Gets the resource_name of this EventItemDetail.
 
-        资源名称，支持字母 中文 数字_ -. ，最大长度128。
+        **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 支持字母 中文 数字_ -. ，最大长度128个字符。 **默认取值**： 不涉及。 
 
         :return: The resource_name of this EventItemDetail.
         :rtype: str
@@ -185,7 +183,7 @@ class EventItemDetail:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this EventItemDetail.
 
-        资源名称，支持字母 中文 数字_ -. ，最大长度128。
+        **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 支持字母 中文 数字_ -. ，最大长度128个字符。 **默认取值**： 不涉及。 
 
         :param resource_name: The resource_name of this EventItemDetail.
         :type resource_name: str
@@ -196,7 +194,7 @@ class EventItemDetail:
     def event_state(self):
         r"""Gets the event_state of this EventItemDetail.
 
-        事件状态。  枚举类型：normal\\warning\\incident
+        **参数解释**： 事件状态。 **约束限制**： 不涉及。 **取值范围**： 枚举类型。 - normal：正常发生 - warning：异常 - incident：严重 **默认取值**： 不涉及。 
 
         :return: The event_state of this EventItemDetail.
         :rtype: str
@@ -207,7 +205,7 @@ class EventItemDetail:
     def event_state(self, event_state):
         r"""Sets the event_state of this EventItemDetail.
 
-        事件状态。  枚举类型：normal\\warning\\incident
+        **参数解释**： 事件状态。 **约束限制**： 不涉及。 **取值范围**： 枚举类型。 - normal：正常发生 - warning：异常 - incident：严重 **默认取值**： 不涉及。 
 
         :param event_state: The event_state of this EventItemDetail.
         :type event_state: str
@@ -218,7 +216,7 @@ class EventItemDetail:
     def event_level(self):
         r"""Gets the event_level of this EventItemDetail.
 
-        事件级别。  枚举类型：Critical, Major, Minor, Info
+        **参数解释**： 事件级别。 **约束限制**： 不涉及。 **取值范围**： 枚举类型：Critical, Major, Minor, Info。 - Critical: 紧急 - Major: 重要 - Minor: 次要 - Info: 提示 **默认取值**： 不涉及。 
 
         :return: The event_level of this EventItemDetail.
         :rtype: str
@@ -229,7 +227,7 @@ class EventItemDetail:
     def event_level(self, event_level):
         r"""Sets the event_level of this EventItemDetail.
 
-        事件级别。  枚举类型：Critical, Major, Minor, Info
+        **参数解释**： 事件级别。 **约束限制**： 不涉及。 **取值范围**： 枚举类型：Critical, Major, Minor, Info。 - Critical: 紧急 - Major: 重要 - Minor: 次要 - Info: 提示 **默认取值**： 不涉及。 
 
         :param event_level: The event_level of this EventItemDetail.
         :type event_level: str
@@ -240,7 +238,7 @@ class EventItemDetail:
     def event_user(self):
         r"""Gets the event_user of this EventItemDetail.
 
-        事件用户。  支持字母 数字_ -/空格 ，最大长度64。
+        **参数解释**： 事件用户。 **约束限制**： 不涉及。 **取值范围**： 支持字母 数字_ -/空格 ，长度为[0,64]个字符。 **默认取值**： 不涉及。 
 
         :return: The event_user of this EventItemDetail.
         :rtype: str
@@ -251,7 +249,7 @@ class EventItemDetail:
     def event_user(self, event_user):
         r"""Sets the event_user of this EventItemDetail.
 
-        事件用户。  支持字母 数字_ -/空格 ，最大长度64。
+        **参数解释**： 事件用户。 **约束限制**： 不涉及。 **取值范围**： 支持字母 数字_ -/空格 ，长度为[0,64]个字符。 **默认取值**： 不涉及。 
 
         :param event_user: The event_user of this EventItemDetail.
         :type event_user: str
@@ -262,7 +260,7 @@ class EventItemDetail:
     def event_type(self):
         r"""Gets the event_type of this EventItemDetail.
 
-        事件类型。 枚举类型，EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，用户自已不能上报，只能传EVENT.CUSTOM。
+        **参数解释**： 事件类型。 **约束限制**： EVENT.SYS为系统事件，用户自己不能上报系统事件，只能传EVENT.CUSTOM。 **取值范围**： 枚举类型，EVENT.SYS或EVENT.CUSTOM。 - EVENT.SYS：系统事件 - EVENT.CUSTOM：自定义事件 **默认取值**： 不涉及。 
 
         :return: The event_type of this EventItemDetail.
         :rtype: str
@@ -273,7 +271,7 @@ class EventItemDetail:
     def event_type(self, event_type):
         r"""Sets the event_type of this EventItemDetail.
 
-        事件类型。 枚举类型，EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，用户自已不能上报，只能传EVENT.CUSTOM。
+        **参数解释**： 事件类型。 **约束限制**： EVENT.SYS为系统事件，用户自己不能上报系统事件，只能传EVENT.CUSTOM。 **取值范围**： 枚举类型，EVENT.SYS或EVENT.CUSTOM。 - EVENT.SYS：系统事件 - EVENT.CUSTOM：自定义事件 **默认取值**： 不涉及。 
 
         :param event_type: The event_type of this EventItemDetail.
         :type event_type: str
@@ -284,7 +282,7 @@ class EventItemDetail:
     def sub_event_type(self):
         r"""Gets the sub_event_type of this EventItemDetail.
 
-        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+        **参数解释**： 事件子类。 **约束限制**： 不涉及。 **取值范围**： 枚举类型 - SUB_EVENT.OPS: 运维事件 - SUB_EVENT.PLAN: 计划事件 - SUB_EVENT.CUSTOM: 自定义事件 **默认取值**： 不涉及。 
 
         :return: The sub_event_type of this EventItemDetail.
         :rtype: str
@@ -295,7 +293,7 @@ class EventItemDetail:
     def sub_event_type(self, sub_event_type):
         r"""Sets the sub_event_type of this EventItemDetail.
 
-        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+        **参数解释**： 事件子类。 **约束限制**： 不涉及。 **取值范围**： 枚举类型 - SUB_EVENT.OPS: 运维事件 - SUB_EVENT.PLAN: 计划事件 - SUB_EVENT.CUSTOM: 自定义事件 **默认取值**： 不涉及。 
 
         :param sub_event_type: The sub_event_type of this EventItemDetail.
         :type sub_event_type: str
@@ -306,7 +304,7 @@ class EventItemDetail:
     def dimensions(self):
         r"""Gets the dimensions of this EventItemDetail.
 
-        一个或者多个资源维度。
+        **参数解释**： 事件的维度，根据维度描述资源信息。 用于指定资源、资源分组的事件告警场景中，支持按维度配置告警规则。 **约束限制**： 目前最大支持4个维度。 
 
         :return: The dimensions of this EventItemDetail.
         :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
@@ -317,7 +315,7 @@ class EventItemDetail:
     def dimensions(self, dimensions):
         r"""Sets the dimensions of this EventItemDetail.
 
-        一个或者多个资源维度。
+        **参数解释**： 事件的维度，根据维度描述资源信息。 用于指定资源、资源分组的事件告警场景中，支持按维度配置告警规则。 **约束限制**： 目前最大支持4个维度。 
 
         :param dimensions: The dimensions of this EventItemDetail.
         :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
@@ -325,10 +323,9 @@ class EventItemDetail:
         self._dimensions = dimensions
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -354,10 +351,6 @@ class EventItemDetail:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

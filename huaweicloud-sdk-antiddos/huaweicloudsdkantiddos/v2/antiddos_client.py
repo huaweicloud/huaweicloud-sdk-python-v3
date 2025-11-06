@@ -17,7 +17,7 @@ except ImportError as e:
 
 class AntiDDoSClient(Client):
     def __init__(self):
-        super(AntiDDoSClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkantiddos.v2.model")
 
     @classmethod

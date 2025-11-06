@@ -17,7 +17,7 @@ except ImportError as e:
 
 class BccClient(Client):
     def __init__(self):
-        super(BccClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkbcc.v1.model")
 
     @classmethod

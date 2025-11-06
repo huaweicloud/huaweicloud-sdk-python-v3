@@ -17,7 +17,7 @@ except ImportError as e:
 
 class IAMAccessAnalyzerAsyncClient(Client):
     def __init__(self):
-        super(IAMAccessAnalyzerAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkiamaccessanalyzer.v1.model")
 
     @classmethod

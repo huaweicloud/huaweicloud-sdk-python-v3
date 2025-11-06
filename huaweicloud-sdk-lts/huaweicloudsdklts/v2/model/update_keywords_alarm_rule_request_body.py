@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -24,16 +22,14 @@ class UpdateKeywordsAlarmRuleRequestBody:
         'keywords_requests': 'list[KeywordsRequest]',
         'frequency': 'Frequency',
         'keywords_alarm_level': 'str',
-        'keywords_alarm_send': 'bool',
-        'keywords_alarm_send_code': 'int',
         'domain_id': 'str',
-        'notification_save_rule': 'SqlNotificationSaveRule',
         'trigger_condition_count': 'int',
         'trigger_condition_frequency': 'int',
         'whether_recovery_policy': 'bool',
         'recovery_policy': 'int',
         'notification_frequency': 'int',
-        'alarm_action_rule_name': 'str'
+        'alarm_action_rule_name': 'str',
+        'tags': 'list[TagsRequestBody]'
     }
 
     attribute_map = {
@@ -44,19 +40,17 @@ class UpdateKeywordsAlarmRuleRequestBody:
         'keywords_requests': 'keywords_requests',
         'frequency': 'frequency',
         'keywords_alarm_level': 'keywords_alarm_level',
-        'keywords_alarm_send': 'keywords_alarm_send',
-        'keywords_alarm_send_code': 'keywords_alarm_send_code',
         'domain_id': 'domain_id',
-        'notification_save_rule': 'notification_save_rule',
         'trigger_condition_count': 'trigger_condition_count',
         'trigger_condition_frequency': 'trigger_condition_frequency',
         'whether_recovery_policy': 'whether_recovery_policy',
         'recovery_policy': 'recovery_policy',
         'notification_frequency': 'notification_frequency',
-        'alarm_action_rule_name': 'alarm_action_rule_name'
+        'alarm_action_rule_name': 'alarm_action_rule_name',
+        'tags': 'tags'
     }
 
-    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, alarm_rule_alias=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, keywords_alarm_send_code=None, domain_id=None, notification_save_rule=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
+    def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, alarm_rule_alias=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, domain_id=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None, tags=None):
         r"""UpdateKeywordsAlarmRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -75,14 +69,8 @@ class UpdateKeywordsAlarmRuleRequestBody:
         :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
         :param keywords_alarm_level: 告警级别
         :type keywords_alarm_level: str
-        :param keywords_alarm_send: 是否发送
-        :type keywords_alarm_send: bool
-        :param keywords_alarm_send_code: 发送主题 0:不变 1:新增 2:修改 3:删除
-        :type keywords_alarm_send_code: int
         :param domain_id: domainId
         :type domain_id: str
-        :param notification_save_rule: 
-        :type notification_save_rule: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
         :param trigger_condition_count: 触发条件：触发次数;默认为1
         :type trigger_condition_count: int
         :param trigger_condition_frequency: 触发条件：触发周期;默认为1
@@ -95,6 +83,8 @@ class UpdateKeywordsAlarmRuleRequestBody:
         :type notification_frequency: int
         :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
         :type alarm_action_rule_name: str
+        :param tags: **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。 **约束限制：** 不涉及。
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsRequestBody`]
         """
         
         
@@ -106,16 +96,14 @@ class UpdateKeywordsAlarmRuleRequestBody:
         self._keywords_requests = None
         self._frequency = None
         self._keywords_alarm_level = None
-        self._keywords_alarm_send = None
-        self._keywords_alarm_send_code = None
         self._domain_id = None
-        self._notification_save_rule = None
         self._trigger_condition_count = None
         self._trigger_condition_frequency = None
         self._whether_recovery_policy = None
         self._recovery_policy = None
         self._notification_frequency = None
         self._alarm_action_rule_name = None
+        self._tags = None
         self.discriminator = None
 
         self.keywords_alarm_rule_id = keywords_alarm_rule_id
@@ -127,11 +115,7 @@ class UpdateKeywordsAlarmRuleRequestBody:
         self.keywords_requests = keywords_requests
         self.frequency = frequency
         self.keywords_alarm_level = keywords_alarm_level
-        self.keywords_alarm_send = keywords_alarm_send
-        self.keywords_alarm_send_code = keywords_alarm_send_code
         self.domain_id = domain_id
-        if notification_save_rule is not None:
-            self.notification_save_rule = notification_save_rule
         if trigger_condition_count is not None:
             self.trigger_condition_count = trigger_condition_count
         if trigger_condition_frequency is not None:
@@ -143,6 +127,8 @@ class UpdateKeywordsAlarmRuleRequestBody:
         self.notification_frequency = notification_frequency
         if alarm_action_rule_name is not None:
             self.alarm_action_rule_name = alarm_action_rule_name
+        if tags is not None:
+            self.tags = tags
 
     @property
     def keywords_alarm_rule_id(self):
@@ -295,50 +281,6 @@ class UpdateKeywordsAlarmRuleRequestBody:
         self._keywords_alarm_level = keywords_alarm_level
 
     @property
-    def keywords_alarm_send(self):
-        r"""Gets the keywords_alarm_send of this UpdateKeywordsAlarmRuleRequestBody.
-
-        是否发送
-
-        :return: The keywords_alarm_send of this UpdateKeywordsAlarmRuleRequestBody.
-        :rtype: bool
-        """
-        return self._keywords_alarm_send
-
-    @keywords_alarm_send.setter
-    def keywords_alarm_send(self, keywords_alarm_send):
-        r"""Sets the keywords_alarm_send of this UpdateKeywordsAlarmRuleRequestBody.
-
-        是否发送
-
-        :param keywords_alarm_send: The keywords_alarm_send of this UpdateKeywordsAlarmRuleRequestBody.
-        :type keywords_alarm_send: bool
-        """
-        self._keywords_alarm_send = keywords_alarm_send
-
-    @property
-    def keywords_alarm_send_code(self):
-        r"""Gets the keywords_alarm_send_code of this UpdateKeywordsAlarmRuleRequestBody.
-
-        发送主题 0:不变 1:新增 2:修改 3:删除
-
-        :return: The keywords_alarm_send_code of this UpdateKeywordsAlarmRuleRequestBody.
-        :rtype: int
-        """
-        return self._keywords_alarm_send_code
-
-    @keywords_alarm_send_code.setter
-    def keywords_alarm_send_code(self, keywords_alarm_send_code):
-        r"""Sets the keywords_alarm_send_code of this UpdateKeywordsAlarmRuleRequestBody.
-
-        发送主题 0:不变 1:新增 2:修改 3:删除
-
-        :param keywords_alarm_send_code: The keywords_alarm_send_code of this UpdateKeywordsAlarmRuleRequestBody.
-        :type keywords_alarm_send_code: int
-        """
-        self._keywords_alarm_send_code = keywords_alarm_send_code
-
-    @property
     def domain_id(self):
         r"""Gets the domain_id of this UpdateKeywordsAlarmRuleRequestBody.
 
@@ -359,24 +301,6 @@ class UpdateKeywordsAlarmRuleRequestBody:
         :type domain_id: str
         """
         self._domain_id = domain_id
-
-    @property
-    def notification_save_rule(self):
-        r"""Gets the notification_save_rule of this UpdateKeywordsAlarmRuleRequestBody.
-
-        :return: The notification_save_rule of this UpdateKeywordsAlarmRuleRequestBody.
-        :rtype: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
-        """
-        return self._notification_save_rule
-
-    @notification_save_rule.setter
-    def notification_save_rule(self, notification_save_rule):
-        r"""Sets the notification_save_rule of this UpdateKeywordsAlarmRuleRequestBody.
-
-        :param notification_save_rule: The notification_save_rule of this UpdateKeywordsAlarmRuleRequestBody.
-        :type notification_save_rule: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
-        """
-        self._notification_save_rule = notification_save_rule
 
     @property
     def trigger_condition_count(self):
@@ -510,11 +434,32 @@ class UpdateKeywordsAlarmRuleRequestBody:
         """
         self._alarm_action_rule_name = alarm_action_rule_name
 
+    @property
+    def tags(self):
+        r"""Gets the tags of this UpdateKeywordsAlarmRuleRequestBody.
+
+        **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。 **约束限制：** 不涉及。
+
+        :return: The tags of this UpdateKeywordsAlarmRuleRequestBody.
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagsRequestBody`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this UpdateKeywordsAlarmRuleRequestBody.
+
+        **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。 **约束限制：** 不涉及。
+
+        :param tags: The tags of this UpdateKeywordsAlarmRuleRequestBody.
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsRequestBody`]
+        """
+        self._tags = tags
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -540,10 +485,6 @@ class UpdateKeywordsAlarmRuleRequestBody:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

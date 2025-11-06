@@ -17,7 +17,7 @@ except ImportError as e:
 
 class EgClient(Client):
     def __init__(self):
-        super(EgClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkeg.v1.model")
 
     @classmethod

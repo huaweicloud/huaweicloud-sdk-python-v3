@@ -26,8 +26,6 @@ from abc import abstractmethod, ABC
 from huaweicloudsdkcore.region.cache import ProfileRegionCache, EnvRegionCache
 from huaweicloudsdkcore.region.region import Region
 
-from huaweicloudsdkcore.utils import six_utils
-
 
 class RegionProvider(ABC):
 
@@ -42,7 +40,7 @@ class RegionProvider(ABC):
 class RegionProviderChain(RegionProvider):
 
     def __init__(self, service_name, providers):
-        super(RegionProviderChain, self).__init__(service_name)
+        super().__init__(service_name)
         self._providers = providers
 
     def get_region(self, region_id):

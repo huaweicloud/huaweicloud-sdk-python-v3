@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DeHClient(Client):
     def __init__(self):
-        super(DeHClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdeh.v1.model")
 
     @classmethod

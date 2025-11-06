@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -47,9 +45,9 @@ class EventAlarmSpec:
         :type monitor_objects: list[dict(str, str)]
         :param trigger_conditions: 触发条件。
         :type trigger_conditions: list[:class:`huaweicloudsdkaom.v2.EventTriggerCondition`]
-        :param alarm_rule_template_bind_enable: 是否绑定告警规则模版（废弃）。
+        :param alarm_rule_template_bind_enable: 是否绑定告警模板（废弃）。
         :type alarm_rule_template_bind_enable: bool
-        :param alarm_rule_template_id: 告警规则模版id（废弃）。
+        :param alarm_rule_template_id: 告警模板id（废弃）。
         :type alarm_rule_template_id: str
         """
         
@@ -69,8 +67,7 @@ class EventAlarmSpec:
             self.event_source = event_source
         if monitor_objects is not None:
             self.monitor_objects = monitor_objects
-        if trigger_conditions is not None:
-            self.trigger_conditions = trigger_conditions
+        self.trigger_conditions = trigger_conditions
         if alarm_rule_template_bind_enable is not None:
             self.alarm_rule_template_bind_enable = alarm_rule_template_bind_enable
         if alarm_rule_template_id is not None:
@@ -168,7 +165,7 @@ class EventAlarmSpec:
     def alarm_rule_template_bind_enable(self):
         r"""Gets the alarm_rule_template_bind_enable of this EventAlarmSpec.
 
-        是否绑定告警规则模版（废弃）。
+        是否绑定告警模板（废弃）。
 
         :return: The alarm_rule_template_bind_enable of this EventAlarmSpec.
         :rtype: bool
@@ -179,7 +176,7 @@ class EventAlarmSpec:
     def alarm_rule_template_bind_enable(self, alarm_rule_template_bind_enable):
         r"""Sets the alarm_rule_template_bind_enable of this EventAlarmSpec.
 
-        是否绑定告警规则模版（废弃）。
+        是否绑定告警模板（废弃）。
 
         :param alarm_rule_template_bind_enable: The alarm_rule_template_bind_enable of this EventAlarmSpec.
         :type alarm_rule_template_bind_enable: bool
@@ -190,7 +187,7 @@ class EventAlarmSpec:
     def alarm_rule_template_id(self):
         r"""Gets the alarm_rule_template_id of this EventAlarmSpec.
 
-        告警规则模版id（废弃）。
+        告警模板id（废弃）。
 
         :return: The alarm_rule_template_id of this EventAlarmSpec.
         :rtype: str
@@ -201,7 +198,7 @@ class EventAlarmSpec:
     def alarm_rule_template_id(self, alarm_rule_template_id):
         r"""Sets the alarm_rule_template_id of this EventAlarmSpec.
 
-        告警规则模版id（废弃）。
+        告警模板id（废弃）。
 
         :param alarm_rule_template_id: The alarm_rule_template_id of this EventAlarmSpec.
         :type alarm_rule_template_id: str
@@ -209,10 +206,9 @@ class EventAlarmSpec:
         self._alarm_rule_template_id = alarm_rule_template_id
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -238,10 +234,6 @@ class EventAlarmSpec:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

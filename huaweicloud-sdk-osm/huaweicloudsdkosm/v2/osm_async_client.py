@@ -17,7 +17,7 @@ except ImportError as e:
 
 class OsmAsyncClient(Client):
     def __init__(self):
-        super(OsmAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkosm.v2.model")
 
     @classmethod

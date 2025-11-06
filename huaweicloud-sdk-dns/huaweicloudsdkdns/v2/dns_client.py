@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DnsClient(Client):
     def __init__(self):
-        super(DnsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdns.v2.model")
 
     @classmethod

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -77,7 +75,7 @@ class Policy:
         :type namespace: str
         :param dimension_name: **参数解释**： 指标维度名称，各服务资源的指标维度名称可查看：“[服务维度名称](ces_03_0059.xml)”。产品层级规则需要增加namespace（服务命名空间）和dimension_name（服务维度名称），用于指明策略生效的资源归属。 **约束限制**： 不涉及。 **取值范围**： 目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk           **默认取值**： 不涉及。 
         :type dimension_name: str
-        :param enabled: **参数解释**: 告警策略是否生效。true：策略生效，false：策略无效。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。 
+        :param enabled: **参数解释**: 告警策略是否生效。 **约束限制**: 不涉及。 **取值范围**: 取值为true、false - true：策略生效 - false：策略无效 **默认取值**: 不涉及。 
         :type enabled: bool
         """
         
@@ -384,7 +382,7 @@ class Policy:
     def enabled(self):
         r"""Gets the enabled of this Policy.
 
-        **参数解释**: 告警策略是否生效。true：策略生效，false：策略无效。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。 
+        **参数解释**: 告警策略是否生效。 **约束限制**: 不涉及。 **取值范围**: 取值为true、false - true：策略生效 - false：策略无效 **默认取值**: 不涉及。 
 
         :return: The enabled of this Policy.
         :rtype: bool
@@ -395,7 +393,7 @@ class Policy:
     def enabled(self, enabled):
         r"""Sets the enabled of this Policy.
 
-        **参数解释**: 告警策略是否生效。true：策略生效，false：策略无效。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。 
+        **参数解释**: 告警策略是否生效。 **约束限制**: 不涉及。 **取值范围**: 取值为true、false - true：策略生效 - false：策略无效 **默认取值**: 不涉及。 
 
         :param enabled: The enabled of this Policy.
         :type enabled: bool
@@ -403,10 +401,9 @@ class Policy:
         self._enabled = enabled
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -432,10 +429,6 @@ class Policy:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

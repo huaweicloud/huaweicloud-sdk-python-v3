@@ -17,7 +17,7 @@ except ImportError as e:
 
 class OroasAsyncClient(Client):
     def __init__(self):
-        super(OroasAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkoroas.v1.model")
 
     @classmethod

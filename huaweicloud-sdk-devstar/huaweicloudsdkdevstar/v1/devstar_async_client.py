@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DevStarAsyncClient(Client):
     def __init__(self):
-        super(DevStarAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdevstar.v1.model")
 
     @classmethod

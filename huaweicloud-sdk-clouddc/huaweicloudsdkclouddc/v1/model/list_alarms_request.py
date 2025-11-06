@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -55,9 +53,9 @@ class ListAlarmsRequest:
         :type resource_id: str
         :param alarm_level: 告警级别，1为紧急，2为重要，3为次要，4为提示
         :type alarm_level: int
-        :param _from: 产生告警开始时间
+        :param _from: 产生告警开始时间，from 必须小于 to。
         :type _from: str
-        :param to: 产生告警结束时间
+        :param to: 产生告警结束时间，from 必须小于 to。
         :type to: str
         :param offset: 分页游标
         :type offset: int
@@ -211,7 +209,7 @@ class ListAlarmsRequest:
     def _from(self):
         r"""Gets the _from of this ListAlarmsRequest.
 
-        产生告警开始时间
+        产生告警开始时间，from 必须小于 to。
 
         :return: The _from of this ListAlarmsRequest.
         :rtype: str
@@ -222,7 +220,7 @@ class ListAlarmsRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListAlarmsRequest.
 
-        产生告警开始时间
+        产生告警开始时间，from 必须小于 to。
 
         :param _from: The _from of this ListAlarmsRequest.
         :type _from: str
@@ -233,7 +231,7 @@ class ListAlarmsRequest:
     def to(self):
         r"""Gets the to of this ListAlarmsRequest.
 
-        产生告警结束时间
+        产生告警结束时间，from 必须小于 to。
 
         :return: The to of this ListAlarmsRequest.
         :rtype: str
@@ -244,7 +242,7 @@ class ListAlarmsRequest:
     def to(self, to):
         r"""Sets the to of this ListAlarmsRequest.
 
-        产生告警结束时间
+        产生告警结束时间，from 必须小于 to。
 
         :param to: The to of this ListAlarmsRequest.
         :type to: str
@@ -296,10 +294,9 @@ class ListAlarmsRequest:
         self._limit = limit
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -325,10 +322,6 @@ class ListAlarmsRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

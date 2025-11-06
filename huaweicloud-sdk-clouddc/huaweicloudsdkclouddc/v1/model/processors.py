@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -33,6 +31,7 @@ class Processors:
         'frequency_mhz': 'int',
         'other_parameters': 'str',
         'serial_number': 'str',
+        'part_number': 'str',
         'health': 'str',
         'state': 'str'
     }
@@ -54,11 +53,12 @@ class Processors:
         'frequency_mhz': 'frequency_mhz',
         'other_parameters': 'other_parameters',
         'serial_number': 'serial_number',
+        'part_number': 'part_number',
         'health': 'health',
         'state': 'state'
     }
 
-    def __init__(self, name=None, manufacturer=None, model=None, total_cores=None, total_enabled_cores=None, total_threads=None, total_enabled_threads=None, socket=None, max_speed_mhz=None, temperature=None, l1_cache_kib=None, l2_cache_kib=None, l3_cache_kib=None, frequency_mhz=None, other_parameters=None, serial_number=None, health=None, state=None):
+    def __init__(self, name=None, manufacturer=None, model=None, total_cores=None, total_enabled_cores=None, total_threads=None, total_enabled_threads=None, socket=None, max_speed_mhz=None, temperature=None, l1_cache_kib=None, l2_cache_kib=None, l3_cache_kib=None, frequency_mhz=None, other_parameters=None, serial_number=None, part_number=None, health=None, state=None):
         r"""Processors
 
         The model defined in huaweicloud sdk
@@ -95,6 +95,8 @@ class Processors:
         :type other_parameters: str
         :param serial_number: 序列号
         :type serial_number: str
+        :param part_number: 指定CPU资源的部件号
+        :type part_number: str
         :param health: 健康状态
         :type health: str
         :param state: 状态
@@ -119,6 +121,7 @@ class Processors:
         self._frequency_mhz = None
         self._other_parameters = None
         self._serial_number = None
+        self._part_number = None
         self._health = None
         self._state = None
         self.discriminator = None
@@ -155,6 +158,8 @@ class Processors:
             self.other_parameters = other_parameters
         if serial_number is not None:
             self.serial_number = serial_number
+        if part_number is not None:
+            self.part_number = part_number
         if health is not None:
             self.health = health
         if state is not None:
@@ -513,6 +518,28 @@ class Processors:
         self._serial_number = serial_number
 
     @property
+    def part_number(self):
+        r"""Gets the part_number of this Processors.
+
+        指定CPU资源的部件号
+
+        :return: The part_number of this Processors.
+        :rtype: str
+        """
+        return self._part_number
+
+    @part_number.setter
+    def part_number(self, part_number):
+        r"""Sets the part_number of this Processors.
+
+        指定CPU资源的部件号
+
+        :param part_number: The part_number of this Processors.
+        :type part_number: str
+        """
+        self._part_number = part_number
+
+    @property
     def health(self):
         r"""Gets the health of this Processors.
 
@@ -557,10 +584,9 @@ class Processors:
         self._state = state
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -586,10 +612,6 @@ class Processors:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

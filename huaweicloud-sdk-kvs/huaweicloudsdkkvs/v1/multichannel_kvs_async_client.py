@@ -16,7 +16,7 @@ from huaweicloudsdkkvs.v1.kvs_async_client_interface import KvsAsyncClientInterf
 
 class MultichannelKvsAsyncClient(AbstractMultichannelKvsClient, KvsAsyncClientInterface):
     def __init__(self, config_file_path, customized_http_config=None, http_handler=None, exception_handler=None):
-        super(MultichannelKvsAsyncClient, self).__init__()
+        super().__init__()
         self._logger = self._init_logger()
         self._config_manager = KvsSdkConfigManager(config_file_path, True, self._kvs_client_map,
                                                          self._old_kvs_client_maps, self._logger, customized_http_config,

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ElbClient(Client):
     def __init__(self):
-        super(ElbClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkelb.v3.model")
 
     @classmethod

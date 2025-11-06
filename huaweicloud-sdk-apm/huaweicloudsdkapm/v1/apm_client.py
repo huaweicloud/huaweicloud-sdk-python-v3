@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ApmClient(Client):
     def __init__(self):
-        super(ApmClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkapm.v1.model")
 
     @classmethod

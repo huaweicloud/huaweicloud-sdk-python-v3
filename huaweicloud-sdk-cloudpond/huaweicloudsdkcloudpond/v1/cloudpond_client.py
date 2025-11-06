@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CloudPondClient(Client):
     def __init__(self):
-        super(CloudPondClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudpond.v1.model")
 
     @classmethod

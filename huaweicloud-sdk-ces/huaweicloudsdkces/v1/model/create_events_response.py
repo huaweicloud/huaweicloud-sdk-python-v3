@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -30,11 +28,11 @@ class CreateEventsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 响应参数。
+        :param body: 事件响应体
         :type body: list[:class:`huaweicloudsdkces.v1.CreateEventsResponseBody`]
         """
         
-        super(CreateEventsResponse, self).__init__()
+        super().__init__()
 
         self._body = None
         self.discriminator = None
@@ -46,7 +44,7 @@ class CreateEventsResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this CreateEventsResponse.
 
-        响应参数。
+        事件响应体
 
         :return: The body of this CreateEventsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v1.CreateEventsResponseBody`]
@@ -57,7 +55,7 @@ class CreateEventsResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this CreateEventsResponse.
 
-        响应参数。
+        事件响应体
 
         :param body: The body of this CreateEventsResponse.
         :type body: list[:class:`huaweicloudsdkces.v1.CreateEventsResponseBody`]
@@ -65,10 +63,12 @@ class CreateEventsResponse(SdkResponse):
         self._body = body
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("CreateEventsResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -94,10 +94,6 @@ class CreateEventsResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

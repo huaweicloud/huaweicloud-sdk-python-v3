@@ -17,7 +17,7 @@ except ImportError as e:
 
 class MpcClient(Client):
     def __init__(self):
-        super(MpcClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmpc.v1.model")
 
     @classmethod

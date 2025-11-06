@@ -22,13 +22,8 @@
 import threading
 import time
 
-import six
 from urllib3.response import HTTPResponse
-
-if six.PY3:
-    from queue import Queue
-else:
-    from Queue import Queue
+from queue import Queue
 
 _CHUNK_SIZE = 65536
 _INTERVAL = 102400
@@ -75,7 +70,7 @@ class ProgressNotifier(object):
         return self._transferred_amount, self._total_amount, total_seconds if total_seconds > 0 else 0.001
 
     def send(self, data):
-        if isinstance(data, six.integer_types):
+        if isinstance(data, int):
             self._queue.put(data)
 
     def end(self):
@@ -101,11 +96,11 @@ class ProgressRequestBody(object):
 
 class ProgressHTTPResponse(HTTPResponse):
     def __init__(self, notifier, *args, **kwargs):
-        super(ProgressHTTPResponse, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         self._notifier = notifier
 
     def read(self, amt=_CHUNK_SIZE, decode_content=None, cache_content=False):
-        chunk = super(ProgressHTTPResponse, self).read(amt, decode_content, cache_content)
+        chunk = super().read(amt, decode_content, cache_content)
         if chunk:
             self._notifier.send(len(chunk))
         else:
@@ -113,8 +108,7 @@ class ProgressHTTPResponse(HTTPResponse):
         return chunk
 
     @classmethod
-    def convert(cls, http_response, notifier):
-        # type: (HTTPResponse, ProgressNotifier) -> None
+    def convert(cls, http_response: HTTPResponse, notifier: ProgressNotifier):
         if not isinstance(http_response, cls.__base__):
             raise TypeError("can not convert non-HTTPResponse to ProgressHTTPResponse")
         http_response.__class__ = cls

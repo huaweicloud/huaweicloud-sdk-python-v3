@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CodeArtsArtifactAsyncClient(Client):
     def __init__(self):
-        super(CodeArtsArtifactAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcodeartsartifact.v2.model")
 
     @classmethod

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -22,7 +20,8 @@ class CreateSnapshotPolicyRequestBody:
         'device_name': 'str',
         'server_port': 'str',
         'backup_param': 'str',
-        'server_ips': 'list[str]'
+        'server_ips': 'list[str]',
+        'auto_backup': 'bool'
     }
 
     attribute_map = {
@@ -31,10 +30,11 @@ class CreateSnapshotPolicyRequestBody:
         'device_name': 'device_name',
         'server_port': 'server_port',
         'backup_param': 'backup_param',
-        'server_ips': 'server_ips'
+        'server_ips': 'server_ips',
+        'auto_backup': 'auto_backup'
     }
 
-    def __init__(self, keep_day=None, backup_strategies=None, device_name=None, server_port=None, backup_param=None, server_ips=None):
+    def __init__(self, keep_day=None, backup_strategies=None, device_name=None, server_port=None, backup_param=None, server_ips=None, auto_backup=None):
         r"""CreateSnapshotPolicyRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +51,8 @@ class CreateSnapshotPolicyRequestBody:
         :type backup_param: str
         :param server_ips: **参数解释**： 备份介质服务IP。备份介质为NBU和NFS时该字段必填。备份介质为NBU时表示NBU服务器地址，备份介质为NFS时表示NFS服务器地址。 **取值范围**： 不涉及。
         :type server_ips: list[str]
+        :param auto_backup: **参数解释**： 是否自动备份。 **取值范围**： 不涉及。
+        :type auto_backup: bool
         """
         
         
@@ -61,6 +63,7 @@ class CreateSnapshotPolicyRequestBody:
         self._server_port = None
         self._backup_param = None
         self._server_ips = None
+        self._auto_backup = None
         self.discriminator = None
 
         if keep_day is not None:
@@ -75,6 +78,8 @@ class CreateSnapshotPolicyRequestBody:
             self.backup_param = backup_param
         if server_ips is not None:
             self.server_ips = server_ips
+        if auto_backup is not None:
+            self.auto_backup = auto_backup
 
     @property
     def keep_day(self):
@@ -208,11 +213,32 @@ class CreateSnapshotPolicyRequestBody:
         """
         self._server_ips = server_ips
 
+    @property
+    def auto_backup(self):
+        r"""Gets the auto_backup of this CreateSnapshotPolicyRequestBody.
+
+        **参数解释**： 是否自动备份。 **取值范围**： 不涉及。
+
+        :return: The auto_backup of this CreateSnapshotPolicyRequestBody.
+        :rtype: bool
+        """
+        return self._auto_backup
+
+    @auto_backup.setter
+    def auto_backup(self, auto_backup):
+        r"""Sets the auto_backup of this CreateSnapshotPolicyRequestBody.
+
+        **参数解释**： 是否自动备份。 **取值范围**： 不涉及。
+
+        :param auto_backup: The auto_backup of this CreateSnapshotPolicyRequestBody.
+        :type auto_backup: bool
+        """
+        self._auto_backup = auto_backup
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -238,10 +264,6 @@ class CreateSnapshotPolicyRequestBody:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

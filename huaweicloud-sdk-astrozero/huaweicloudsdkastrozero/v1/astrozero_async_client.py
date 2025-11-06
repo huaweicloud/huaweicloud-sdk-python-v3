@@ -17,7 +17,7 @@ except ImportError as e:
 
 class AstroZeroAsyncClient(Client):
     def __init__(self):
-        super(AstroZeroAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkastrozero.v1.model")
 
     @classmethod

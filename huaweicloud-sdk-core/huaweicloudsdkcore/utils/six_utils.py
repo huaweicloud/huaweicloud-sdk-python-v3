@@ -20,6 +20,7 @@
  under the LICENSE.
 """
 from threading import Lock
+from typing import Union
 
 
 class SingletonMeta(type):
@@ -30,6 +31,24 @@ class SingletonMeta(type):
     def __call__(cls, *args, **kwargs):
         with cls._lock:
             if cls not in cls._instances:
-                instance = super(SingletonMeta, cls).__call__(*args, **kwargs)
+                instance = super().__call__(*args, **kwargs)
                 cls._instances[cls] = instance
         return cls._instances.get(cls)
+
+
+def ensure_binary(s: Union[str, bytes], encoding: str = "utf-8", errors: str = "strict") -> bytes:
+    if isinstance(s, bytes):
+        return s
+    if isinstance(s, str):
+        return s.encode(encoding, errors)
+
+    raise TypeError(f"not expecting type '{type(s)}'")
+
+
+def ensure_str(s: Union[str, bytes], encoding: str = "utf-8", errors: str = "strict") -> str:
+    if isinstance(s, str):
+        return s
+    if isinstance(s, bytes):
+        return s.decode(encoding, errors)
+
+    raise TypeError(f"not expecting type '{type(s)}'")

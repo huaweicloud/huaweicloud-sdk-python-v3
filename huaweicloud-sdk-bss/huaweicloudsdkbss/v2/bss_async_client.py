@@ -17,7 +17,7 @@ except ImportError as e:
 
 class BssAsyncClient(Client):
     def __init__(self):
-        super(BssAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkbss.v2.model")
 
     @classmethod

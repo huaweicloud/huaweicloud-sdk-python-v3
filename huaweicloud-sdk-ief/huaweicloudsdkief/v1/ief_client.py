@@ -17,7 +17,7 @@ except ImportError as e:
 
 class IefClient(Client):
     def __init__(self):
-        super(IefClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkief.v1.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class OrgIDClient(Client):
     def __init__(self):
-        super(OrgIDClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkorgid.v1.model")
 
     @classmethod

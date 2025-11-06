@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ModerationAsyncClient(Client):
     def __init__(self):
-        super(ModerationAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmoderation.v3.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class AomAsyncClient(Client):
     def __init__(self):
-        super(AomAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkaom.v4.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ResClient(Client):
     def __init__(self):
-        super(ResClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkres.v1.model")
 
     @classmethod

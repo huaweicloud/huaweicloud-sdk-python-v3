@@ -27,7 +27,11 @@ from huaweicloudsdkcore.sdk_request import SdkRequest
 from requests import HTTPError, Timeout, TooManyRedirects
 from requests.adapters import HTTPAdapter
 from requests.exceptions import ConnectionError, RetryError
-from requests.packages.urllib3.util import Retry
+
+try:
+    from requests.packages.urllib3.util import Retry
+except ImportError:
+    from urllib3.util import Retry
 
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.exceptions.exception_handler import process_connection_error, process_retry_error
@@ -42,11 +46,11 @@ class HttpClient(object):
         self._config = config
         self._proxy = config.proxy
 
-        if config.ssl_ca_cert is not None:
+        if config.ssl_ca_cert:
             self._verify = config.ssl_ca_cert if not config.ignore_ssl_verification else config.ignore_ssl_verification
         else:
             self._verify = not config.ignore_ssl_verification
-        if config.cert_file is not None and config.key_file is not None:
+        if config.cert_file and config.key_file:
             self._cert = (config.cert_file, config.key_file)
         else:
             self._cert = config.cert_file

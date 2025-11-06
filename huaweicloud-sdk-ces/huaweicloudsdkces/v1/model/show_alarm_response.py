@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -18,7 +16,7 @@ class ShowAlarmResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'metric_alarms': 'list[MetricAlarms]'
+        'metric_alarms': 'list[MetricAlarmsResp]'
     }
 
     attribute_map = {
@@ -30,11 +28,11 @@ class ShowAlarmResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param metric_alarms: 告警对象列表。
-        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
+        :param metric_alarms: **参数解释**： 告警对象列表。 
+        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarmsResp`]
         """
         
-        super(ShowAlarmResponse, self).__init__()
+        super().__init__()
 
         self._metric_alarms = None
         self.discriminator = None
@@ -46,10 +44,10 @@ class ShowAlarmResponse(SdkResponse):
     def metric_alarms(self):
         r"""Gets the metric_alarms of this ShowAlarmResponse.
 
-        告警对象列表。
+        **参数解释**： 告警对象列表。 
 
         :return: The metric_alarms of this ShowAlarmResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricAlarmsResp`]
         """
         return self._metric_alarms
 
@@ -57,18 +55,20 @@ class ShowAlarmResponse(SdkResponse):
     def metric_alarms(self, metric_alarms):
         r"""Sets the metric_alarms of this ShowAlarmResponse.
 
-        告警对象列表。
+        **参数解释**： 告警对象列表。 
 
         :param metric_alarms: The metric_alarms of this ShowAlarmResponse.
-        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
+        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarmsResp`]
         """
         self._metric_alarms = metric_alarms
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ShowAlarmResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -94,10 +94,6 @@ class ShowAlarmResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

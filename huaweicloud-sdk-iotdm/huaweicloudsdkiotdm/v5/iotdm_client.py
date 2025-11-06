@@ -17,7 +17,7 @@ except ImportError as e:
 
 class IoTDMClient(Client):
     def __init__(self):
-        super(IoTDMClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkiotdm.v5.model")
 
     @classmethod

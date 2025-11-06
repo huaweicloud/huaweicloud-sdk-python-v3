@@ -17,7 +17,7 @@ except ImportError as e:
 
 class PanguLargeModelsClient(Client):
     def __init__(self):
-        super(PanguLargeModelsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkpangulargemodels.v1.model")
 
     @classmethod

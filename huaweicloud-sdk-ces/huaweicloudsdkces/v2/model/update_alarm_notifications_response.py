@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -40,9 +38,9 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
 
         :param notification_enabled: **参数解释**： 是否开启告警通知。     **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
         :type notification_enabled: bool
-        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
-        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
         :param notification_begin_time: **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
         :type notification_begin_time: str
@@ -50,7 +48,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
         :type notification_end_time: str
         """
         
-        super(UpdateAlarmNotificationsResponse, self).__init__()
+        super().__init__()
 
         self._notification_enabled = None
         self._alarm_notifications = None
@@ -96,7 +94,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def alarm_notifications(self):
         r"""Gets the alarm_notifications of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 
 
         :return: The alarm_notifications of this UpdateAlarmNotificationsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
@@ -107,7 +105,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def alarm_notifications(self, alarm_notifications):
         r"""Sets the alarm_notifications of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 
 
         :param alarm_notifications: The alarm_notifications of this UpdateAlarmNotificationsResponse.
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
@@ -118,7 +116,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def ok_notifications(self):
         r"""Gets the ok_notifications of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 
 
         :return: The ok_notifications of this UpdateAlarmNotificationsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
@@ -129,7 +127,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def ok_notifications(self, ok_notifications):
         r"""Sets the ok_notifications of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 
 
         :param ok_notifications: The ok_notifications of this UpdateAlarmNotificationsResponse.
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
@@ -181,10 +179,12 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
         self._notification_end_time = notification_end_time
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("UpdateAlarmNotificationsResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -210,10 +210,6 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -25,7 +25,7 @@ from requests import Session
 
 class FutureSession(Session):
     def __init__(self, session, executor):
-        super(FutureSession, self).__init__()
+        super().__init__()
         self._session = session
         self._executor = executor
 

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class RdsClient(Client):
     def __init__(self):
-        super(RdsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkrds.v3.model")
 
     @classmethod
@@ -2518,6 +2518,73 @@ class RdsClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_auto_scaling_policy(self, request):
+        r"""查询自动变配策略
+
+        查询自动变配策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAutoScalingPolicy
+        :type request: :class:`huaweicloudsdkrds.v3.ListAutoScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListAutoScalingPolicyResponse`
+        """
+        http_info = self._list_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_auto_scaling_policy_invoker(self, request):
+        http_info = self._list_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auto-scaling/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutoScalingPolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -12665,6 +12732,73 @@ class RdsClient(Client):
 
         return http_info
 
+    def create_intelligent_kill_session(self, request):
+        r"""一键kill会话
+
+        一键kill会话
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateIntelligentKillSession
+        :type request: :class:`huaweicloudsdkrds.v3.CreateIntelligentKillSessionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateIntelligentKillSessionResponse`
+        """
+        http_info = self._create_intelligent_kill_session_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_intelligent_kill_session_invoker(self, request):
+        http_info = self._create_intelligent_kill_session_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_intelligent_kill_session_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/ops/intelligent-kill-session",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIntelligentKillSessionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def get_instances_no_index_tables(self, request):
         r"""查询无索引表诊断数据
 
@@ -12707,6 +12841,79 @@ class RdsClient(Client):
             query_params.append(('newest', local_var_params['newest']))
         if 'table_type' in local_var_params:
             query_params.append(('table_type', local_var_params['table_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_intelligent_kill_session_history(self, request):
+        r"""查询一键kill会话历史
+
+        查询一键kill会话历史
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowIntelligentKillSessionHistory
+        :type request: :class:`huaweicloudsdkrds.v3.ShowIntelligentKillSessionHistoryRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowIntelligentKillSessionHistoryResponse`
+        """
+        http_info = self._show_intelligent_kill_session_history_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_intelligent_kill_session_history_invoker(self, request):
+        http_info = self._show_intelligent_kill_session_history_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_intelligent_kill_session_history_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/ops/intelligent-kill-session/history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIntelligentKillSessionHistoryResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'page_num' in local_var_params:
+            query_params.append(('page_num', local_var_params['page_num']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
 
         header_params = {}
 

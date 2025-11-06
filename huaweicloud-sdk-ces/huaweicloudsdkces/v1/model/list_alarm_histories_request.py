@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -21,7 +19,7 @@ class ListAlarmHistoriesRequest:
         'alarm_id': 'str',
         'alarm_name': 'str',
         'alarm_status': 'str',
-        'alarm_level': 'str',
+        'alarm_level': 'int',
         'namespace': 'str',
         '_from': 'str',
         'to': 'str',
@@ -47,25 +45,25 @@ class ListAlarmHistoriesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 服务提供的资源分组功能，创建的资源分组ID，如：rg1603107497873DK4O2pXbn。
+        :param group_id: **参数解释**： 当前资源所在分组信息 **约束限制**： 不涉及。 **取值范围**： 以rg开头，后跟22位由字母或数字组成的字符串，字符长度为24 **默认取值**： 不涉及 
         :type group_id: str
-        :param alarm_id: 告警规则ID。如：al1603088932912v98rGl1al。
+        :param alarm_id: **参数解释**： 告警规则ID **约束限制**： 不涉及 **取值范围**： 以al开头，后跟22位由字母或数字组成的字符串，字符长度为24 **默认取值**： 不涉及 
         :type alarm_id: str
-        :param alarm_name: 告警规则名称，如alarm-test01。
+        :param alarm_name: **参数解释**： 告警规则名称 **约束限制**： 不涉及 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1, 128]个字符 **默认取值**： 不涉及 
         :type alarm_name: str
-        :param alarm_status: 告警历史的状态，取值为ok，alarm，insufficient_data； ok为正常，alarm为告警，insufficient_data为数据不足。
+        :param alarm_status: **参数解释**： 告警状态。 **约束限制**： 不涉及 **取值范围**： 枚举值： - ok：正常 - alarm：告警 - insufficient_data：数据不足 - invalid：已失效 **默认取值**： 不涉及 
         :type alarm_status: str
-        :param alarm_level: 告警历史的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
-        :type alarm_level: str
-        :param namespace: 告警资源对应的命名空间，如ECS服务的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param alarm_level: **参数解释**： 告警历史的告警级别，值为1,2,3,4 **约束限制**： 不涉及 **取值范围**： 枚举值： - 1：紧急 - 2：重要 - 3：次要 - 4：提示 **默认取值**： 不涉及 
+        :type alarm_level: int
+        :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制**： 不涉及 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间 **默认取值**： 不涉及 
         :type namespace: str
-        :param _from: 查询告警历史的起始时间，UNIX时间戳，单位毫秒，如：1602501480905；from，to如果不进行赋值，则默认to是当前时间，from是当前时间减7天的时间戳。
+        :param _from: **参数解释**： 通过时间筛选traces的起始时间(包括传入时间)，为timestamp **约束限制**： 不涉及 **取值范围**： 长度为[1,13]个字符 **默认取值**： 不涉及 
         :type _from: str
-        :param to: 查询告警历史的截止时间，UNIX时间戳，单位毫秒。from必须小于等于to，如：1603106280905；from，to如果不进行赋值，则默认to是当前时间，from是当前时间减7天的时间戳。
+        :param to: **参数解释**： 通过时间筛选traces的终止时间(包括传入时间)，为timestamp **约束限制**： 不涉及 **取值范围**： 长度为[1,13]个字符 **默认取值**： 不涉及 
         :type to: str
-        :param start: 分页起始值，类型为integer，默认值为0。
+        :param start: **参数解释**： 分页查询时查询的起始位置，表示从第几条数据开始 **约束限制**： 不涉及。 **取值范围**： 大于等于0的整数 **默认取值**： 0 
         :type start: str
-        :param limit: 单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        :param limit: **参数解释**： 本次查询的最大条目数 **约束限制**： 不涉及。 **取值范围**： 取值范围[1,100] **默认取值**： 100 
         :type limit: str
         """
         
@@ -108,7 +106,7 @@ class ListAlarmHistoriesRequest:
     def group_id(self):
         r"""Gets the group_id of this ListAlarmHistoriesRequest.
 
-        服务提供的资源分组功能，创建的资源分组ID，如：rg1603107497873DK4O2pXbn。
+        **参数解释**： 当前资源所在分组信息 **约束限制**： 不涉及。 **取值范围**： 以rg开头，后跟22位由字母或数字组成的字符串，字符长度为24 **默认取值**： 不涉及 
 
         :return: The group_id of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -119,7 +117,7 @@ class ListAlarmHistoriesRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ListAlarmHistoriesRequest.
 
-        服务提供的资源分组功能，创建的资源分组ID，如：rg1603107497873DK4O2pXbn。
+        **参数解释**： 当前资源所在分组信息 **约束限制**： 不涉及。 **取值范围**： 以rg开头，后跟22位由字母或数字组成的字符串，字符长度为24 **默认取值**： 不涉及 
 
         :param group_id: The group_id of this ListAlarmHistoriesRequest.
         :type group_id: str
@@ -130,7 +128,7 @@ class ListAlarmHistoriesRequest:
     def alarm_id(self):
         r"""Gets the alarm_id of this ListAlarmHistoriesRequest.
 
-        告警规则ID。如：al1603088932912v98rGl1al。
+        **参数解释**： 告警规则ID **约束限制**： 不涉及 **取值范围**： 以al开头，后跟22位由字母或数字组成的字符串，字符长度为24 **默认取值**： 不涉及 
 
         :return: The alarm_id of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -141,7 +139,7 @@ class ListAlarmHistoriesRequest:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this ListAlarmHistoriesRequest.
 
-        告警规则ID。如：al1603088932912v98rGl1al。
+        **参数解释**： 告警规则ID **约束限制**： 不涉及 **取值范围**： 以al开头，后跟22位由字母或数字组成的字符串，字符长度为24 **默认取值**： 不涉及 
 
         :param alarm_id: The alarm_id of this ListAlarmHistoriesRequest.
         :type alarm_id: str
@@ -152,7 +150,7 @@ class ListAlarmHistoriesRequest:
     def alarm_name(self):
         r"""Gets the alarm_name of this ListAlarmHistoriesRequest.
 
-        告警规则名称，如alarm-test01。
+        **参数解释**： 告警规则名称 **约束限制**： 不涉及 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1, 128]个字符 **默认取值**： 不涉及 
 
         :return: The alarm_name of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -163,7 +161,7 @@ class ListAlarmHistoriesRequest:
     def alarm_name(self, alarm_name):
         r"""Sets the alarm_name of this ListAlarmHistoriesRequest.
 
-        告警规则名称，如alarm-test01。
+        **参数解释**： 告警规则名称 **约束限制**： 不涉及 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1, 128]个字符 **默认取值**： 不涉及 
 
         :param alarm_name: The alarm_name of this ListAlarmHistoriesRequest.
         :type alarm_name: str
@@ -174,7 +172,7 @@ class ListAlarmHistoriesRequest:
     def alarm_status(self):
         r"""Gets the alarm_status of this ListAlarmHistoriesRequest.
 
-        告警历史的状态，取值为ok，alarm，insufficient_data； ok为正常，alarm为告警，insufficient_data为数据不足。
+        **参数解释**： 告警状态。 **约束限制**： 不涉及 **取值范围**： 枚举值： - ok：正常 - alarm：告警 - insufficient_data：数据不足 - invalid：已失效 **默认取值**： 不涉及 
 
         :return: The alarm_status of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -185,7 +183,7 @@ class ListAlarmHistoriesRequest:
     def alarm_status(self, alarm_status):
         r"""Sets the alarm_status of this ListAlarmHistoriesRequest.
 
-        告警历史的状态，取值为ok，alarm，insufficient_data； ok为正常，alarm为告警，insufficient_data为数据不足。
+        **参数解释**： 告警状态。 **约束限制**： 不涉及 **取值范围**： 枚举值： - ok：正常 - alarm：告警 - insufficient_data：数据不足 - invalid：已失效 **默认取值**： 不涉及 
 
         :param alarm_status: The alarm_status of this ListAlarmHistoriesRequest.
         :type alarm_status: str
@@ -196,10 +194,10 @@ class ListAlarmHistoriesRequest:
     def alarm_level(self):
         r"""Gets the alarm_level of this ListAlarmHistoriesRequest.
 
-        告警历史的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
+        **参数解释**： 告警历史的告警级别，值为1,2,3,4 **约束限制**： 不涉及 **取值范围**： 枚举值： - 1：紧急 - 2：重要 - 3：次要 - 4：提示 **默认取值**： 不涉及 
 
         :return: The alarm_level of this ListAlarmHistoriesRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._alarm_level
 
@@ -207,10 +205,10 @@ class ListAlarmHistoriesRequest:
     def alarm_level(self, alarm_level):
         r"""Sets the alarm_level of this ListAlarmHistoriesRequest.
 
-        告警历史的告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
+        **参数解释**： 告警历史的告警级别，值为1,2,3,4 **约束限制**： 不涉及 **取值范围**： 枚举值： - 1：紧急 - 2：重要 - 3：次要 - 4：提示 **默认取值**： 不涉及 
 
         :param alarm_level: The alarm_level of this ListAlarmHistoriesRequest.
-        :type alarm_level: str
+        :type alarm_level: int
         """
         self._alarm_level = alarm_level
 
@@ -218,7 +216,7 @@ class ListAlarmHistoriesRequest:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmHistoriesRequest.
 
-        告警资源对应的命名空间，如ECS服务的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制**： 不涉及 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间 **默认取值**： 不涉及 
 
         :return: The namespace of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -229,7 +227,7 @@ class ListAlarmHistoriesRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmHistoriesRequest.
 
-        告警资源对应的命名空间，如ECS服务的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)” **约束限制**： 不涉及 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间 **默认取值**： 不涉及 
 
         :param namespace: The namespace of this ListAlarmHistoriesRequest.
         :type namespace: str
@@ -240,7 +238,7 @@ class ListAlarmHistoriesRequest:
     def _from(self):
         r"""Gets the _from of this ListAlarmHistoriesRequest.
 
-        查询告警历史的起始时间，UNIX时间戳，单位毫秒，如：1602501480905；from，to如果不进行赋值，则默认to是当前时间，from是当前时间减7天的时间戳。
+        **参数解释**： 通过时间筛选traces的起始时间(包括传入时间)，为timestamp **约束限制**： 不涉及 **取值范围**： 长度为[1,13]个字符 **默认取值**： 不涉及 
 
         :return: The _from of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -251,7 +249,7 @@ class ListAlarmHistoriesRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListAlarmHistoriesRequest.
 
-        查询告警历史的起始时间，UNIX时间戳，单位毫秒，如：1602501480905；from，to如果不进行赋值，则默认to是当前时间，from是当前时间减7天的时间戳。
+        **参数解释**： 通过时间筛选traces的起始时间(包括传入时间)，为timestamp **约束限制**： 不涉及 **取值范围**： 长度为[1,13]个字符 **默认取值**： 不涉及 
 
         :param _from: The _from of this ListAlarmHistoriesRequest.
         :type _from: str
@@ -262,7 +260,7 @@ class ListAlarmHistoriesRequest:
     def to(self):
         r"""Gets the to of this ListAlarmHistoriesRequest.
 
-        查询告警历史的截止时间，UNIX时间戳，单位毫秒。from必须小于等于to，如：1603106280905；from，to如果不进行赋值，则默认to是当前时间，from是当前时间减7天的时间戳。
+        **参数解释**： 通过时间筛选traces的终止时间(包括传入时间)，为timestamp **约束限制**： 不涉及 **取值范围**： 长度为[1,13]个字符 **默认取值**： 不涉及 
 
         :return: The to of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -273,7 +271,7 @@ class ListAlarmHistoriesRequest:
     def to(self, to):
         r"""Sets the to of this ListAlarmHistoriesRequest.
 
-        查询告警历史的截止时间，UNIX时间戳，单位毫秒。from必须小于等于to，如：1603106280905；from，to如果不进行赋值，则默认to是当前时间，from是当前时间减7天的时间戳。
+        **参数解释**： 通过时间筛选traces的终止时间(包括传入时间)，为timestamp **约束限制**： 不涉及 **取值范围**： 长度为[1,13]个字符 **默认取值**： 不涉及 
 
         :param to: The to of this ListAlarmHistoriesRequest.
         :type to: str
@@ -284,7 +282,7 @@ class ListAlarmHistoriesRequest:
     def start(self):
         r"""Gets the start of this ListAlarmHistoriesRequest.
 
-        分页起始值，类型为integer，默认值为0。
+        **参数解释**： 分页查询时查询的起始位置，表示从第几条数据开始 **约束限制**： 不涉及。 **取值范围**： 大于等于0的整数 **默认取值**： 0 
 
         :return: The start of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -295,7 +293,7 @@ class ListAlarmHistoriesRequest:
     def start(self, start):
         r"""Sets the start of this ListAlarmHistoriesRequest.
 
-        分页起始值，类型为integer，默认值为0。
+        **参数解释**： 分页查询时查询的起始位置，表示从第几条数据开始 **约束限制**： 不涉及。 **取值范围**： 大于等于0的整数 **默认取值**： 0 
 
         :param start: The start of this ListAlarmHistoriesRequest.
         :type start: str
@@ -306,7 +304,7 @@ class ListAlarmHistoriesRequest:
     def limit(self):
         r"""Gets the limit of this ListAlarmHistoriesRequest.
 
-        单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        **参数解释**： 本次查询的最大条目数 **约束限制**： 不涉及。 **取值范围**： 取值范围[1,100] **默认取值**： 100 
 
         :return: The limit of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -317,7 +315,7 @@ class ListAlarmHistoriesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAlarmHistoriesRequest.
 
-        单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        **参数解释**： 本次查询的最大条目数 **约束限制**： 不涉及。 **取值范围**： 取值范围[1,100] **默认取值**： 100 
 
         :param limit: The limit of this ListAlarmHistoriesRequest.
         :type limit: str
@@ -325,10 +323,9 @@ class ListAlarmHistoriesRequest:
         self._limit = limit
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -354,10 +351,6 @@ class ListAlarmHistoriesRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

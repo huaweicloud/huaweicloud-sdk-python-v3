@@ -17,7 +17,7 @@ except ImportError as e:
 
 class OptVerseClient(Client):
     def __init__(self):
-        super(OptVerseClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkoptverse.v2.model")
 
     @classmethod

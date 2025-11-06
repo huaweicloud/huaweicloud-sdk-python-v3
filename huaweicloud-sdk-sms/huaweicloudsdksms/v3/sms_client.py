@@ -17,7 +17,7 @@ except ImportError as e:
 
 class SmsClient(Client):
     def __init__(self):
-        super(SmsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdksms.v3.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class HssAsyncClient(Client):
     def __init__(self):
-        super(HssAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkhss.v5.model")
 
     @classmethod

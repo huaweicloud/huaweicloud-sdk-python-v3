@@ -15,7 +15,7 @@ from huaweicloudsdkkvs.v1.kvs_client_heartbeat_keeper import KvsClientHeartbeatK
 
 class MultichannelKvsClient(AbstractMultichannelKvsClient, KvsClientInterface):
     def __init__(self, config_file_path, customized_http_config=None, http_handler=None, exception_handler=None):
-        super(MultichannelKvsClient, self).__init__()
+        super().__init__()
         self._logger = self._init_logger()
         self._config_manager = KvsSdkConfigManager(config_file_path, False, self._kvs_client_map,
                                                          self._old_kvs_client_maps, self._logger, customized_http_config,

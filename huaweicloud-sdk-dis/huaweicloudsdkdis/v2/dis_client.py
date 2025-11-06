@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DisClient(Client):
     def __init__(self):
-        super(DisClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdis.v2.model")
 
     @classmethod

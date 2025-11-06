@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -33,11 +31,11 @@ class ExtensionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释**: 插件名称 **取值范围**: 数组长度为[1,64] 
+        :param name: **参数解释**: 插件名称 **取值范围**: 长度为[1,64]个字符 
         :type name: str
         :param status: **参数解释**:  插件状态 **取值范围**: - none: 未安装 - running: 运行中 - stopped: 已停止 - fault: 故障（进程异常） - unknown: 故障（连接异常） 
         :type status: str
-        :param version: **参数解释**: 插件版本 **取值范围**: 数组长度为[1,32] 
+        :param version: **参数解释**: 插件版本 **取值范围**: 长度为[1,32]个字符 
         :type version: str
         """
         
@@ -59,7 +57,7 @@ class ExtensionInfo:
     def name(self):
         r"""Gets the name of this ExtensionInfo.
 
-        **参数解释**: 插件名称 **取值范围**: 数组长度为[1,64] 
+        **参数解释**: 插件名称 **取值范围**: 长度为[1,64]个字符 
 
         :return: The name of this ExtensionInfo.
         :rtype: str
@@ -70,7 +68,7 @@ class ExtensionInfo:
     def name(self, name):
         r"""Sets the name of this ExtensionInfo.
 
-        **参数解释**: 插件名称 **取值范围**: 数组长度为[1,64] 
+        **参数解释**: 插件名称 **取值范围**: 长度为[1,64]个字符 
 
         :param name: The name of this ExtensionInfo.
         :type name: str
@@ -103,7 +101,7 @@ class ExtensionInfo:
     def version(self):
         r"""Gets the version of this ExtensionInfo.
 
-        **参数解释**: 插件版本 **取值范围**: 数组长度为[1,32] 
+        **参数解释**: 插件版本 **取值范围**: 长度为[1,32]个字符 
 
         :return: The version of this ExtensionInfo.
         :rtype: str
@@ -114,7 +112,7 @@ class ExtensionInfo:
     def version(self, version):
         r"""Sets the version of this ExtensionInfo.
 
-        **参数解释**: 插件版本 **取值范围**: 数组长度为[1,32] 
+        **参数解释**: 插件版本 **取值范围**: 长度为[1,32]个字符 
 
         :param version: The version of this ExtensionInfo.
         :type version: str
@@ -122,10 +120,9 @@ class ExtensionInfo:
         self._version = version
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -151,10 +148,6 @@ class ExtensionInfo:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

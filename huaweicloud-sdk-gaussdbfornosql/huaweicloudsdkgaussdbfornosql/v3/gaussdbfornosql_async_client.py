@@ -17,7 +17,7 @@ except ImportError as e:
 
 class GaussDBforNoSQLAsyncClient(Client):
     def __init__(self):
-        super(GaussDBforNoSQLAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkgaussdbfornosql.v3.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CloudtestAsyncClient(Client):
     def __init__(self):
-        super(CloudtestAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudtest.v1.model")
 
     @classmethod

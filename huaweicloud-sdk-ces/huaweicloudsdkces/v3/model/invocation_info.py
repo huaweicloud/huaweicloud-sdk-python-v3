@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -63,9 +61,9 @@ class InvocationInfo:
         :type instance_name: str
         :param instance_type: **参数解释**: 主机类型，仅支持ECS弹性云服务器和BMS裸金属服务器 **取值范围**: - ECS: 弹性云服务器 - BMS：裸金属服务器 
         :type instance_type: str
-        :param intranet_ips: **参数解释**: 内网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
+        :param intranet_ips: **参数解释**: 内网ip列表 
         :type intranet_ips: list[str]
-        :param elastic_ips: **参数解释**: 弹性公网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
+        :param elastic_ips: **参数解释**: 弹性公网ip列表 
         :type elastic_ips: list[str]
         :param invocation_type: **参数解释**: 任务类型 **取值范围**: - INSTALL：安装 - UPDATE：升级 - ROLLBACK：回滚 - RETRY：重试 
         :type invocation_type: str
@@ -224,7 +222,7 @@ class InvocationInfo:
     def intranet_ips(self):
         r"""Gets the intranet_ips of this InvocationInfo.
 
-        **参数解释**: 内网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
+        **参数解释**: 内网ip列表 
 
         :return: The intranet_ips of this InvocationInfo.
         :rtype: list[str]
@@ -235,7 +233,7 @@ class InvocationInfo:
     def intranet_ips(self, intranet_ips):
         r"""Sets the intranet_ips of this InvocationInfo.
 
-        **参数解释**: 内网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
+        **参数解释**: 内网ip列表 
 
         :param intranet_ips: The intranet_ips of this InvocationInfo.
         :type intranet_ips: list[str]
@@ -246,7 +244,7 @@ class InvocationInfo:
     def elastic_ips(self):
         r"""Gets the elastic_ips of this InvocationInfo.
 
-        **参数解释**: 弹性公网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
+        **参数解释**: 弹性公网ip列表 
 
         :return: The elastic_ips of this InvocationInfo.
         :rtype: list[str]
@@ -257,7 +255,7 @@ class InvocationInfo:
     def elastic_ips(self, elastic_ips):
         r"""Sets the elastic_ips of this InvocationInfo.
 
-        **参数解释**: 弹性公网ip列表 **取值范围**: 返回数组长度为[0,10]，数组内元素格式为：长度为1到15个字符的字符串，其中每个字符可以是数字（0-9）或任意其他单个字符 
+        **参数解释**: 弹性公网ip列表 
 
         :param elastic_ips: The elastic_ips of this InvocationInfo.
         :type elastic_ips: list[str]
@@ -441,10 +439,9 @@ class InvocationInfo:
         self._result_msg = result_msg
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -470,10 +467,6 @@ class InvocationInfo:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

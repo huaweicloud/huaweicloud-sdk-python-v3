@@ -24,7 +24,6 @@ from __future__ import absolute_import
 import hashlib
 import math
 import hmac
-import six
 import copy
 import binascii
 
@@ -103,17 +102,11 @@ ALGORITHM_HASH_LENGTH = get_hash_len(HMAC_ALGORITHM)
 UTF_8 = "utf-8"
 EXPAND_CEIL = _get_expand_ceil(DERIVATION_KEY_LENGTH, ALGORITHM_HASH_LENGTH)
 
-if six.PY2:
 
-    def hmac_sha256(key_byte, message, hmac_algorithm):
+def hmac_sha256(key_byte, message, hmac_algorithm):
+    if isinstance(key_byte, str) and isinstance(message, str):
+        return hmac.new(key_byte.encode(UTF_8), message.encode(UTF_8), digestmod=hmac_algorithm).digest()
+    if isinstance(key_byte, bytes) and isinstance(message, bytes):
         return hmac.new(key_byte, message, digestmod=hmac_algorithm).digest()
 
-else:
-
-    def hmac_sha256(key_byte, message, hmac_algorithm):
-        if isinstance(key_byte, str) and isinstance(message, str):
-            return hmac.new(key_byte.encode(UTF_8), message.encode(UTF_8), digestmod=hmac_algorithm).digest()
-        elif isinstance(key_byte, bytes) and isinstance(message, bytes):
-            return hmac.new(key_byte, message, digestmod=hmac_algorithm).digest()
-        else:
-            raise SdkException()
+    raise SdkException(f"not expecting type ({type(key_byte)}, {type(message)})")

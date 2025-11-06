@@ -17,7 +17,7 @@ except ImportError as e:
 
 class FrsClient(Client):
     def __init__(self):
-        super(FrsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkfrs.v2.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class VpcClient(Client):
     def __init__(self):
-        super(VpcClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvpc.v2.model")
 
     @classmethod

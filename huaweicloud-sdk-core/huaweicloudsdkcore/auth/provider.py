@@ -20,9 +20,9 @@
  under the LICENSE.
 """
 import os
-import six
+import configparser
 from abc import abstractmethod, ABC
-from huaweicloudsdkcore.utils import six_utils, filepath_utils
+from huaweicloudsdkcore.utils import filepath_utils
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 from huaweicloudsdkcore.exceptions.exceptions import ApiTypeError, ApiValueError, SdkException
 
@@ -108,13 +108,7 @@ class ProfileCredentialProvider(CredentialProvider):
         return ProfileCredentialProvider(_CredentialType.GLOBAL)
 
     def get_credentials(self):
-        if six.PY3:
-            import configparser
-            parser = configparser.ConfigParser()
-        else:
-            from backports import configparser
-            parser = configparser.SafeConfigParser()
-
+        parser = configparser.ConfigParser()
         path = self._get_credentials_file_path()
         if not filepath_utils.is_path_exist(path) or not parser.read(path, encoding=self._ENCODING):
             raise ApiValueError("credentials file '%s' does not exist" % path)
@@ -186,7 +180,7 @@ class MetadataCredentialProvider(CredentialProvider):
 
 class MetadataBasicCredentialProvider(MetadataCredentialProvider):
     def __init__(self, credential_type=_CredentialType.BASIC):
-        super(MetadataBasicCredentialProvider, self).__init__(credential_type)
+        super().__init__(credential_type)
         self._project_id = None
 
     @property
@@ -205,7 +199,7 @@ class MetadataBasicCredentialProvider(MetadataCredentialProvider):
 
 class MetadataGlobalCredentialProvider(MetadataCredentialProvider):
     def __init__(self, credential_type=_CredentialType.GLOBAL):
-        super(MetadataGlobalCredentialProvider, self).__init__(credential_type)
+        super().__init__(credential_type)
         self._domain_id = None
 
     @property

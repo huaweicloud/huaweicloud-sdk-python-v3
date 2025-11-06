@@ -17,7 +17,7 @@ except ImportError as e:
 
 class EdgeSecClient(Client):
     def __init__(self):
-        super(EdgeSecClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkedgesec.v2.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CfwAsyncClient(Client):
     def __init__(self):
-        super(CfwAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcfw.v1.model")
 
     @classmethod

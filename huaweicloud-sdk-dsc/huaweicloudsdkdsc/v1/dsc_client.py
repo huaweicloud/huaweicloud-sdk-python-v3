@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DscClient(Client):
     def __init__(self):
-        super(DscClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdsc.v1.model")
 
     @classmethod

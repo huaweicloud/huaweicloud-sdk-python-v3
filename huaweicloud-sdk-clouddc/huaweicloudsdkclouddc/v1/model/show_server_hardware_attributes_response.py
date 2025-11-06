@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -24,7 +22,8 @@ class ShowServerHardwareAttributesResponse(SdkResponse):
         'network_adapters': 'list[NetworkAdapter]',
         'fans': 'list[Fan]',
         'powers': 'list[Power]',
-        'storage_controllers': 'list[StorageController]'
+        'storage_controllers': 'list[StorageController]',
+        'metrics': 'list[HardwareMetric]'
     }
 
     attribute_map = {
@@ -34,10 +33,11 @@ class ShowServerHardwareAttributesResponse(SdkResponse):
         'network_adapters': 'network_adapters',
         'fans': 'fans',
         'powers': 'powers',
-        'storage_controllers': 'storage_controllers'
+        'storage_controllers': 'storage_controllers',
+        'metrics': 'metrics'
     }
 
-    def __init__(self, summary=None, memorys=None, processors=None, network_adapters=None, fans=None, powers=None, storage_controllers=None):
+    def __init__(self, summary=None, memorys=None, processors=None, network_adapters=None, fans=None, powers=None, storage_controllers=None, metrics=None):
         r"""ShowServerHardwareAttributesResponse
 
         The model defined in huaweicloud sdk
@@ -56,9 +56,11 @@ class ShowServerHardwareAttributesResponse(SdkResponse):
         :type powers: list[:class:`huaweicloudsdkclouddc.v1.Power`]
         :param storage_controllers: 存储控制器列表
         :type storage_controllers: list[:class:`huaweicloudsdkclouddc.v1.StorageController`]
+        :param metrics: **参数解释**： 监控指标信息 **约束限制**： 不涉及 
+        :type metrics: list[:class:`huaweicloudsdkclouddc.v1.HardwareMetric`]
         """
         
-        super(ShowServerHardwareAttributesResponse, self).__init__()
+        super().__init__()
 
         self._summary = None
         self._memorys = None
@@ -67,6 +69,7 @@ class ShowServerHardwareAttributesResponse(SdkResponse):
         self._fans = None
         self._powers = None
         self._storage_controllers = None
+        self._metrics = None
         self.discriminator = None
 
         if summary is not None:
@@ -83,6 +86,8 @@ class ShowServerHardwareAttributesResponse(SdkResponse):
             self.powers = powers
         if storage_controllers is not None:
             self.storage_controllers = storage_controllers
+        if metrics is not None:
+            self.metrics = metrics
 
     @property
     def summary(self):
@@ -234,11 +239,35 @@ class ShowServerHardwareAttributesResponse(SdkResponse):
         """
         self._storage_controllers = storage_controllers
 
+    @property
+    def metrics(self):
+        r"""Gets the metrics of this ShowServerHardwareAttributesResponse.
+
+        **参数解释**： 监控指标信息 **约束限制**： 不涉及 
+
+        :return: The metrics of this ShowServerHardwareAttributesResponse.
+        :rtype: list[:class:`huaweicloudsdkclouddc.v1.HardwareMetric`]
+        """
+        return self._metrics
+
+    @metrics.setter
+    def metrics(self, metrics):
+        r"""Sets the metrics of this ShowServerHardwareAttributesResponse.
+
+        **参数解释**： 监控指标信息 **约束限制**： 不涉及 
+
+        :param metrics: The metrics of this ShowServerHardwareAttributesResponse.
+        :type metrics: list[:class:`huaweicloudsdkclouddc.v1.HardwareMetric`]
+        """
+        self._metrics = metrics
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ShowServerHardwareAttributesResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -264,10 +293,6 @@ class ShowServerHardwareAttributesResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class OmsClient(Client):
     def __init__(self):
-        super(OmsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkoms.v2.model")
 
     @classmethod

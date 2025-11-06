@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -31,7 +29,7 @@ class NotificationResp:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 通知类型。 **取值范围**： 枚举值。 - notification：SMN通知。 - contact：云账号联系人。 - contactGroup：通知组。 - autoscaling：AS通知，只在AS中使用，不推荐客户使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 
+        :param type: **参数解释**： 通知类型。 **取值范围**： 枚举值。 - notification：通知组或主题订阅。 - contact：云账号联系人。 - contactGroup：（已废弃）通知组。 - autoscaling：AS通知，只在AS中使用，不推荐客户使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 
         :type type: str
         :param notification_list: **参数解释**：  告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。 
         :type notification_list: list[str]
@@ -52,7 +50,7 @@ class NotificationResp:
     def type(self):
         r"""Gets the type of this NotificationResp.
 
-        **参数解释**： 通知类型。 **取值范围**： 枚举值。 - notification：SMN通知。 - contact：云账号联系人。 - contactGroup：通知组。 - autoscaling：AS通知，只在AS中使用，不推荐客户使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 
+        **参数解释**： 通知类型。 **取值范围**： 枚举值。 - notification：通知组或主题订阅。 - contact：云账号联系人。 - contactGroup：（已废弃）通知组。 - autoscaling：AS通知，只在AS中使用，不推荐客户使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 
 
         :return: The type of this NotificationResp.
         :rtype: str
@@ -63,7 +61,7 @@ class NotificationResp:
     def type(self, type):
         r"""Sets the type of this NotificationResp.
 
-        **参数解释**： 通知类型。 **取值范围**： 枚举值。 - notification：SMN通知。 - contact：云账号联系人。 - contactGroup：通知组。 - autoscaling：AS通知，只在AS中使用，不推荐客户使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 
+        **参数解释**： 通知类型。 **取值范围**： 枚举值。 - notification：通知组或主题订阅。 - contact：云账号联系人。 - contactGroup：（已废弃）通知组。 - autoscaling：AS通知，只在AS中使用，不推荐客户使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 
 
         :param type: The type of this NotificationResp.
         :type type: str
@@ -93,10 +91,9 @@ class NotificationResp:
         self._notification_list = notification_list
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -122,10 +119,6 @@ class NotificationResp:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

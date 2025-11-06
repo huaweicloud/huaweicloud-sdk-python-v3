@@ -20,15 +20,13 @@
  under the LICENSE.
 """
 
-import six
-
 
 class SdkException(Exception):
     def __init__(self, error_msg):
         """
         The base exception class.
         """
-        super(SdkException, self).__init__()
+        super().__init__()
         self._error_msg = error_msg
 
     @property
@@ -48,7 +46,7 @@ class ConnectionException(SdkException):
         """
         The base exception class of connection exceptions.
         """
-        super(ConnectionException, self).__init__(error_msg)
+        super().__init__(error_msg)
 
 
 class HostUnreachableException(ConnectionException):
@@ -56,7 +54,7 @@ class HostUnreachableException(ConnectionException):
         """
         Host Unreachable Exception
         """
-        super(HostUnreachableException, self).__init__(error_msg)
+        super().__init__(error_msg)
 
 
 class SslHandShakeException(ConnectionException):
@@ -64,7 +62,7 @@ class SslHandShakeException(ConnectionException):
         """
         Ssl HandShake Exception
         """
-        super(SslHandShakeException, self).__init__(error_msg)
+        super().__init__(error_msg)
 
 
 class ServiceResponseException(SdkException):
@@ -72,7 +70,7 @@ class ServiceResponseException(SdkException):
         """
         The base exception class of service response exceptions.
         """
-        super(ServiceResponseException, self).__init__(sdk_error.error_msg)
+        super().__init__(sdk_error.error_msg)
         self._status_code = status_code
         self._error_code = sdk_error.error_code
         self._request_id = sdk_error.request_id
@@ -121,7 +119,7 @@ class ClientRequestException(ServiceResponseException):
         """
         Client Request Exception
         """
-        super(ClientRequestException, self).__init__(status_code, sdk_error)
+        super().__init__(status_code, sdk_error)
 
 
 class ServerResponseException(ServiceResponseException):
@@ -129,7 +127,7 @@ class ServerResponseException(ServiceResponseException):
         """
         Server Response Exception
         """
-        super(ServerResponseException, self).__init__(status_code, sdk_error)
+        super().__init__(status_code, sdk_error)
 
 
 class RequestTimeoutException(SdkException):
@@ -137,7 +135,7 @@ class RequestTimeoutException(SdkException):
         """
         The base exception class of timeout exceptions.
         """
-        super(RequestTimeoutException, self).__init__(error_msg)
+        super().__init__(error_msg)
 
 
 class CallTimeoutException(RequestTimeoutException):
@@ -145,7 +143,7 @@ class CallTimeoutException(RequestTimeoutException):
         """
         Call Timeout Exception
         """
-        super(CallTimeoutException, self).__init__(error_msg)
+        super().__init__(error_msg)
 
 
 class RetryOutageException(RequestTimeoutException):
@@ -153,7 +151,7 @@ class RetryOutageException(RequestTimeoutException):
         """
         Retry Outage Exception
         """
-        super(RetryOutageException, self).__init__(error_msg)
+        super().__init__(error_msg)
 
 
 class SdkError(object):
@@ -200,7 +198,7 @@ def render_path(path_to_item):
     """Returns a string representation of a path"""
     result = ""
     for pth in path_to_item:
-        if isinstance(pth, six.integer_types):
+        if isinstance(pth, int):
             result += "[{0}]".format(pth)
         else:
             result += "['{0}']".format(pth)
@@ -233,7 +231,7 @@ class ApiTypeError(TypeError):
         full_msg = msg
         if path_to_item:
             full_msg = "%s at %s" % (msg, render_path(path_to_item))
-        super(ApiTypeError, self).__init__(full_msg)
+        super().__init__(full_msg)
 
 
 class ApiValueError(ValueError):
@@ -251,7 +249,7 @@ class ApiValueError(ValueError):
         full_msg = msg
         if path_to_item:
             full_msg = "%s at %s" % (msg, render_path(path_to_item))
-        super(ApiValueError, self).__init__(full_msg)
+        super().__init__(full_msg)
 
 
 class ApiKeyError(KeyError):
@@ -268,4 +266,4 @@ class ApiKeyError(KeyError):
         full_msg = msg
         if path_to_item:
             full_msg = "%s at %s" % (msg, render_path(path_to_item))
-        super(ApiKeyError, self).__init__(full_msg)
+        super().__init__(full_msg)

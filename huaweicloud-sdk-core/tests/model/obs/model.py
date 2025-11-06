@@ -60,7 +60,7 @@ class ListBucketsResponse(_Model):
     }
 
     def __init__(self, owner=None, buckets=None):
-        super(ListBucketsResponse, self).__init__()
+        super().__init__()
 
         self._owner = None
         self._buckets = None

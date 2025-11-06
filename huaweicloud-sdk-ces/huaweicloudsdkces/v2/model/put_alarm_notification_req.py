@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -41,9 +39,9 @@ class PutAlarmNotificationReq:
 
         :param notification_enabled: **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type notification_enabled: bool
-        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
         :param notification_begin_time: **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_begin_time: str
@@ -101,7 +99,7 @@ class PutAlarmNotificationReq:
     def alarm_notifications(self):
         r"""Gets the alarm_notifications of this PutAlarmNotificationReq.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
 
         :return: The alarm_notifications of this PutAlarmNotificationReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -112,7 +110,7 @@ class PutAlarmNotificationReq:
     def alarm_notifications(self, alarm_notifications):
         r"""Sets the alarm_notifications of this PutAlarmNotificationReq.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
 
         :param alarm_notifications: The alarm_notifications of this PutAlarmNotificationReq.
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -123,7 +121,7 @@ class PutAlarmNotificationReq:
     def ok_notifications(self):
         r"""Gets the ok_notifications of this PutAlarmNotificationReq.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
 
         :return: The ok_notifications of this PutAlarmNotificationReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -134,7 +132,7 @@ class PutAlarmNotificationReq:
     def ok_notifications(self, ok_notifications):
         r"""Sets the ok_notifications of this PutAlarmNotificationReq.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 不涉及。 **取值范围**： 包含的通知信息的数量最多为10个。 **默认取值**： 不涉及。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
 
         :param ok_notifications: The ok_notifications of this PutAlarmNotificationReq.
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -208,10 +206,9 @@ class PutAlarmNotificationReq:
         self._effective_timezone = effective_timezone
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -237,10 +234,6 @@ class PutAlarmNotificationReq:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

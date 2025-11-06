@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CocAsyncClient(Client):
     def __init__(self):
-        super(CocAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcoc.v1.model")
 
     @classmethod
@@ -293,7 +293,7 @@ class CocAsyncClient(Client):
 
         return http_info
 
-    def handle_alarm_async(self, request):
+    def handler_alarm_async(self, request):
         r"""自动处理告警
 
         自动处理告警
@@ -301,23 +301,23 @@ class CocAsyncClient(Client):
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for HandleAlarm
-        :type request: :class:`huaweicloudsdkcoc.v1.HandleAlarmRequest`
-        :rtype: :class:`huaweicloudsdkcoc.v1.HandleAlarmResponse`
+        :param request: Request instance for HandlerAlarm
+        :type request: :class:`huaweicloudsdkcoc.v1.HandlerAlarmRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.HandlerAlarmResponse`
         """
-        http_info = self._handle_alarm_http_info(request)
+        http_info = self._handler_alarm_http_info(request)
         return self._call_api(**http_info)
 
-    def handle_alarm_async_invoker(self, request):
-        http_info = self._handle_alarm_http_info(request)
+    def handler_alarm_async_invoker(self, request):
+        http_info = self._handler_alarm_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _handle_alarm_http_info(self, request):
+    def _handler_alarm_http_info(self, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v1/alarm-mgmt/alarm/{alarm_id}/auto-process",
             "request_type": request.__class__.__name__,
-            "response_type": "HandleAlarmResponse"
+            "response_type": "HandlerAlarmResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -31,7 +29,7 @@ class Notification:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 通知类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - notification：SMN通知。 - contact：云账号联系人。 - contactGroup：通知组。 - autoscaling：AS通知，只在AS中使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 **默认取值**： 不涉及。 
+        :param type: **参数解释**： 通知类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - notification：通知组或主题订阅。 - contact：云账号联系人。 - contactGroup：（已废弃）通知组。 - autoscaling：AS通知，只在AS中使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 **默认取值**： 不涉及。 
         :type type: str
         :param notification_list: **参数解释**：  告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。 **约束限制**： 当type为notification时，notification_list列表不能为空；当type为autoscaling时，列表必须为[]。若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。若alarm_notifications、ok_notification同时存在时，notification_list值保持一致。最多包含20个通知对象。 
         :type notification_list: list[str]
@@ -50,7 +48,7 @@ class Notification:
     def type(self):
         r"""Gets the type of this Notification.
 
-        **参数解释**： 通知类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - notification：SMN通知。 - contact：云账号联系人。 - contactGroup：通知组。 - autoscaling：AS通知，只在AS中使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 **默认取值**： 不涉及。 
+        **参数解释**： 通知类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - notification：通知组或主题订阅。 - contact：云账号联系人。 - contactGroup：（已废弃）通知组。 - autoscaling：AS通知，只在AS中使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 **默认取值**： 不涉及。 
 
         :return: The type of this Notification.
         :rtype: str
@@ -61,7 +59,7 @@ class Notification:
     def type(self, type):
         r"""Sets the type of this Notification.
 
-        **参数解释**： 通知类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - notification：SMN通知。 - contact：云账号联系人。 - contactGroup：通知组。 - autoscaling：AS通知，只在AS中使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 **默认取值**： 不涉及。 
+        **参数解释**： 通知类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - notification：通知组或主题订阅。 - contact：云账号联系人。 - contactGroup：（已废弃）通知组。 - autoscaling：AS通知，只在AS中使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 **默认取值**： 不涉及。 
 
         :param type: The type of this Notification.
         :type type: str
@@ -91,10 +89,9 @@ class Notification:
         self._notification_list = notification_list
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -120,10 +117,6 @@ class Notification:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

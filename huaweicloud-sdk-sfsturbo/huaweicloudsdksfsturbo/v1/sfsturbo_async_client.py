@@ -17,7 +17,7 @@ except ImportError as e:
 
 class SFSTurboAsyncClient(Client):
     def __init__(self):
-        super(SFSTurboAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdksfsturbo.v1.model")
 
     @classmethod

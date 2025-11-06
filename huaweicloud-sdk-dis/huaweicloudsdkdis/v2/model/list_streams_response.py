@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -46,7 +44,7 @@ class ListStreamsResponse(SdkResponse):
         :type stream_info_list: list[:class:`huaweicloudsdkdis.v2.StreamInfo`]
         """
         
-        super(ListStreamsResponse, self).__init__()
+        super().__init__()
 
         self._total_number = None
         self._stream_names = None
@@ -152,10 +150,12 @@ class ListStreamsResponse(SdkResponse):
         self._stream_info_list = stream_info_list
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ListStreamsResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -181,10 +181,6 @@ class ListStreamsResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

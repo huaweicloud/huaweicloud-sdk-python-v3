@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -69,7 +67,7 @@ class ExtendInfo:
         :type time_interval: int
         :param enable_legend: 是否开启图例
         :type enable_legend: bool
-        :param full_screen_widget_num: 大屏展示视图数量, 可以取得值必须与console页面可选值保持一致
+        :param full_screen_widget_num: 大屏展示视图数量, 可以取的值必须与console页面可选值保持一致
         :type full_screen_widget_num: int
         """
         
@@ -335,7 +333,7 @@ class ExtendInfo:
     def full_screen_widget_num(self):
         r"""Gets the full_screen_widget_num of this ExtendInfo.
 
-        大屏展示视图数量, 可以取得值必须与console页面可选值保持一致
+        大屏展示视图数量, 可以取的值必须与console页面可选值保持一致
 
         :return: The full_screen_widget_num of this ExtendInfo.
         :rtype: int
@@ -346,7 +344,7 @@ class ExtendInfo:
     def full_screen_widget_num(self, full_screen_widget_num):
         r"""Sets the full_screen_widget_num of this ExtendInfo.
 
-        大屏展示视图数量, 可以取得值必须与console页面可选值保持一致
+        大屏展示视图数量, 可以取的值必须与console页面可选值保持一致
 
         :param full_screen_widget_num: The full_screen_widget_num of this ExtendInfo.
         :type full_screen_widget_num: int
@@ -354,10 +352,9 @@ class ExtendInfo:
         self._full_screen_widget_num = full_screen_widget_num
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -383,10 +380,6 @@ class ExtendInfo:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

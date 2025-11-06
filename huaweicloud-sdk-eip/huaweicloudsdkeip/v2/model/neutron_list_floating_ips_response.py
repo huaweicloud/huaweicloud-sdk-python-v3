@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -38,7 +36,7 @@ class NeutronListFloatingIpsResponse(SdkResponse):
         :type floatingips_links: list[:class:`huaweicloudsdkeip.v2.Pager`]
         """
         
-        super(NeutronListFloatingIpsResponse, self).__init__()
+        super().__init__()
 
         self._floatingips = None
         self._floatingips_links = None
@@ -94,10 +92,12 @@ class NeutronListFloatingIpsResponse(SdkResponse):
         self._floatingips_links = floatingips_links
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("NeutronListFloatingIpsResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -123,10 +123,6 @@ class NeutronListFloatingIpsResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

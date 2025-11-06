@@ -17,7 +17,7 @@ except ImportError as e:
 
 class FunctionGraphAsyncClient(Client):
     def __init__(self):
-        super(FunctionGraphAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkfunctiongraph.v2.model")
 
     @classmethod

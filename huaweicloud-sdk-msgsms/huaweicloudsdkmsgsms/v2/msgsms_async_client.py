@@ -17,7 +17,7 @@ except ImportError as e:
 
 class MsgsmsAsyncClient(Client):
     def __init__(self):
-        super(MsgsmsAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmsgsms.v2.model")
 
     @classmethod

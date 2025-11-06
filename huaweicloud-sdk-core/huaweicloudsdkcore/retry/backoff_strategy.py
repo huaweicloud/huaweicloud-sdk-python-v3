@@ -22,16 +22,13 @@
 from abc import abstractmethod, ABC
 from random import randint
 
-from huaweicloudsdkcore.utils import six_utils
-
 _BASE_DELAY_MS = 10  # 10ms
 _MAX_DELAY_MS = 60 * 1000  # 60s
 
 
 class BackoffStrategy(ABC):
     @abstractmethod
-    def calculate_retry_delay_millis(self, retries):
-        # type: (int) -> int
+    def calculate_retry_delay_millis(self, retries: int) -> int:
         pass
 
 
@@ -47,13 +44,13 @@ class ExponentialBackoffStrategy(BackoffStrategy):
 
 class EqualJitterBackoffStrategy(ExponentialBackoffStrategy):
     def calculate_retry_delay_millis(self, retries):
-        half_expo_delay = super(EqualJitterBackoffStrategy, self).calculate_retry_delay_millis(retries) // 2
+        half_expo_delay = super().calculate_retry_delay_millis(retries) // 2
         return half_expo_delay + randint(1, half_expo_delay)
 
 
 class RandomJitterBackoffStrategy(ExponentialBackoffStrategy):
     def calculate_retry_delay_millis(self, retries):
-        expo_delay = super(RandomJitterBackoffStrategy, self).calculate_retry_delay_millis(retries)
+        expo_delay = super().calculate_retry_delay_millis(retries)
         return randint(1, expo_delay)
 
 

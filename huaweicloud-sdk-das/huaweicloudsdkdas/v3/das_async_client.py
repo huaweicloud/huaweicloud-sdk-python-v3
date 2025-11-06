@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DasAsyncClient(Client):
     def __init__(self):
-        super(DasAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdas.v3.model")
 
     @classmethod

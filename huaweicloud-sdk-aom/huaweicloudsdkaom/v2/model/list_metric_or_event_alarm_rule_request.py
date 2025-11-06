@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -73,7 +71,7 @@ class ListMetricOrEventAlarmRuleRequest:
         :type bind_notification_rule_id: str
         :param related_cce_clusters: CCE集群id。
         :type related_cce_clusters: str
-        :param enterprise_project_id: 企业项目id。  - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
+        :param enterprise_project_id: 企业项目id。获取方式请参见：[获取企业项目ID](aom_04_0024.xml)。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
         :type enterprise_project_id: str
         """
         
@@ -364,7 +362,7 @@ class ListMetricOrEventAlarmRuleRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListMetricOrEventAlarmRuleRequest.
 
-        企业项目id。  - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
+        企业项目id。获取方式请参见：[获取企业项目ID](aom_04_0024.xml)。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
 
         :return: The enterprise_project_id of this ListMetricOrEventAlarmRuleRequest.
         :rtype: str
@@ -375,7 +373,7 @@ class ListMetricOrEventAlarmRuleRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListMetricOrEventAlarmRuleRequest.
 
-        企业项目id。  - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
+        企业项目id。获取方式请参见：[获取企业项目ID](aom_04_0024.xml)。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
 
         :param enterprise_project_id: The enterprise_project_id of this ListMetricOrEventAlarmRuleRequest.
         :type enterprise_project_id: str
@@ -383,10 +381,9 @@ class ListMetricOrEventAlarmRuleRequest:
         self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -412,10 +409,6 @@ class ListMetricOrEventAlarmRuleRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

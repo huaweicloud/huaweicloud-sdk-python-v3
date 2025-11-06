@@ -1,0 +1,137 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class RepositoryMemberList:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'total': 'int',
+        'users': 'list[RepositoryMember]'
+    }
+
+    attribute_map = {
+        'total': 'total',
+        'users': 'users'
+    }
+
+    def __init__(self, total=None, users=None):
+        r"""RepositoryMemberList
+
+        The model defined in huaweicloud sdk
+
+        :param total: 仓库成员总数
+        :type total: int
+        :param users: 仓库成员列表
+        :type users: list[:class:`huaweicloudsdkcodeartsrepo.v3.RepositoryMember`]
+        """
+        
+        
+
+        self._total = None
+        self._users = None
+        self.discriminator = None
+
+        if total is not None:
+            self.total = total
+        if users is not None:
+            self.users = users
+
+    @property
+    def total(self):
+        r"""Gets the total of this RepositoryMemberList.
+
+        仓库成员总数
+
+        :return: The total of this RepositoryMemberList.
+        :rtype: int
+        """
+        return self._total
+
+    @total.setter
+    def total(self, total):
+        r"""Sets the total of this RepositoryMemberList.
+
+        仓库成员总数
+
+        :param total: The total of this RepositoryMemberList.
+        :type total: int
+        """
+        self._total = total
+
+    @property
+    def users(self):
+        r"""Gets the users of this RepositoryMemberList.
+
+        仓库成员列表
+
+        :return: The users of this RepositoryMemberList.
+        :rtype: list[:class:`huaweicloudsdkcodeartsrepo.v3.RepositoryMember`]
+        """
+        return self._users
+
+    @users.setter
+    def users(self, users):
+        r"""Sets the users of this RepositoryMemberList.
+
+        仓库成员列表
+
+        :param users: The users of this RepositoryMemberList.
+        :type users: list[:class:`huaweicloudsdkcodeartsrepo.v3.RepositoryMember`]
+        """
+        self._users = users
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, RepositoryMemberList):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -25,7 +23,8 @@ class Restore:
         'port': 'int',
         'public_ip': 'PublicIp',
         'enterprise_project_id': 'str',
-        'ipv6_enable': 'bool'
+        'ipv6_enable': 'bool',
+        'number_of_cn': 'int'
     }
 
     attribute_map = {
@@ -37,10 +36,11 @@ class Restore:
         'port': 'port',
         'public_ip': 'public_ip',
         'enterprise_project_id': 'enterprise_project_id',
-        'ipv6_enable': 'ipv6_enable'
+        'ipv6_enable': 'ipv6_enable',
+        'number_of_cn': 'number_of_cn'
     }
 
-    def __init__(self, name=None, subnet_id=None, security_group_id=None, vpc_id=None, availability_zone=None, port=None, public_ip=None, enterprise_project_id=None, ipv6_enable=None):
+    def __init__(self, name=None, subnet_id=None, security_group_id=None, vpc_id=None, availability_zone=None, port=None, public_ip=None, enterprise_project_id=None, ipv6_enable=None, number_of_cn=None):
         r"""Restore
 
         The model defined in huaweicloud sdk
@@ -63,6 +63,8 @@ class Restore:
         :type enterprise_project_id: str
         :param ipv6_enable: **参数解释**： 指定网络协议类型，表明是否支持IPv6，默认不使用IPv6。 **取值范围**： 不涉及。
         :type ipv6_enable: bool
+        :param number_of_cn: **参数解释**： CN部署量。取值范围为3~集群节点数，最大值为20，默认值为3。 **取值范围**： 不涉及。
+        :type number_of_cn: int
         """
         
         
@@ -76,6 +78,7 @@ class Restore:
         self._public_ip = None
         self._enterprise_project_id = None
         self._ipv6_enable = None
+        self._number_of_cn = None
         self.discriminator = None
 
         self.name = name
@@ -95,6 +98,8 @@ class Restore:
             self.enterprise_project_id = enterprise_project_id
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
+        if number_of_cn is not None:
+            self.number_of_cn = number_of_cn
 
     @property
     def name(self):
@@ -290,11 +295,32 @@ class Restore:
         """
         self._ipv6_enable = ipv6_enable
 
+    @property
+    def number_of_cn(self):
+        r"""Gets the number_of_cn of this Restore.
+
+        **参数解释**： CN部署量。取值范围为3~集群节点数，最大值为20，默认值为3。 **取值范围**： 不涉及。
+
+        :return: The number_of_cn of this Restore.
+        :rtype: int
+        """
+        return self._number_of_cn
+
+    @number_of_cn.setter
+    def number_of_cn(self, number_of_cn):
+        r"""Sets the number_of_cn of this Restore.
+
+        **参数解释**： CN部署量。取值范围为3~集群节点数，最大值为20，默认值为3。 **取值范围**： 不涉及。
+
+        :param number_of_cn: The number_of_cn of this Restore.
+        :type number_of_cn: int
+        """
+        self._number_of_cn = number_of_cn
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -320,10 +346,6 @@ class Restore:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

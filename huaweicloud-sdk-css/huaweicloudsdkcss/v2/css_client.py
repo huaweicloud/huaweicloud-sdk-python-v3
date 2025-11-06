@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CssClient(Client):
     def __init__(self):
-        super(CssClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcss.v2.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class RomaAsyncClient(Client):
     def __init__(self):
-        super(RomaAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkroma.v2.model")
 
     @classmethod

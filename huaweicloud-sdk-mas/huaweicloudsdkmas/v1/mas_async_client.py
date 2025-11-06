@@ -17,7 +17,7 @@ except ImportError as e:
 
 class MasAsyncClient(Client):
     def __init__(self):
-        super(MasAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmas.v1.model")
 
     @classmethod

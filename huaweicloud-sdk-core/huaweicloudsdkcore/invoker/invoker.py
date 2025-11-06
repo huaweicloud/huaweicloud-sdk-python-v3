@@ -21,13 +21,10 @@
 """
 import time
 
+from huaweicloudsdkcore.auth.credentials import Credentials
 from huaweicloudsdkcore.retry.backoff_strategy import BackoffStrategy
 
-try:
-    from typing import TypeVar, Generic
-except ImportError:
-    from typing_extensions import TypeVar, Generic
-from typing import Callable
+from typing import TypeVar, Generic, Dict, Any, Callable
 
 from huaweicloudsdkcore.client import Client
 from huaweicloudsdkcore.sdk_response import SdkResponse, FutureSdkResponse
@@ -38,18 +35,15 @@ _MAX_RETRIES_LIMIT = 10
 
 
 class BaseInvoker(Generic[_TInvoker]):
-    def __init__(self, client, http_info):
-        # type: (Client, dict) -> None
+    def __init__(self, client: Client, http_info: Dict[str, Any]):
         self._client = client
         self._http_info = http_info
 
-    def add_header(self, key, value):
-        # type: (str, str) -> _TInvoker
+    def add_header(self, key: str, value: str) -> _TInvoker:
         self._http_info.setdefault("header_params", {})[key] = value
         return self
 
-    def replace_credential_when(self, func):
-        # type: (Callable) -> _TInvoker
+    def replace_credential_when(self, func: Callable[[Credentials], Credentials]) -> _TInvoker:
         old_cred = self._client.get_credentials()
         new_cred = func(old_cred)
         if not new_cred or not isinstance(new_cred, old_cred.__class__):
@@ -61,13 +55,12 @@ class BaseInvoker(Generic[_TInvoker]):
 
 class SyncInvoker(BaseInvoker["SyncInvoker"]):
     def __init__(self, client, http_info):
-        super(SyncInvoker, self).__init__(client, http_info)
+        super().__init__(client, http_info)
         self._retry_condition = None
         self._max_retries = 0
         self._backoff_strategy = None
 
-    def invoke(self):
-        # type: () -> SdkResponse
+    def invoke(self) -> SdkResponse:
         if not self._max_retries or not self._retry_condition:
             return self._client.do_http_request(**self._http_info)
 
@@ -122,8 +115,7 @@ class SyncInvoker(BaseInvoker["SyncInvoker"]):
 class AsyncInvoker(BaseInvoker["AsyncInvoker"]):
     def __init__(self, client, http_info):
         http_info["async_request"] = True
-        super(AsyncInvoker, self).__init__(client, http_info)
+        super().__init__(client, http_info)
 
-    def invoke(self):
-        # type: () -> FutureSdkResponse
+    def invoke(self) -> FutureSdkResponse:
         return self._client.do_http_request(**self._http_info)

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -23,7 +21,7 @@ class ListEventDetailResponse(SdkResponse):
         'sub_event_type': 'str',
         'event_users': 'list[str]',
         'event_sources': 'list[str]',
-        'event_info': 'list[EventInfoDetail]',
+        'event_info': 'list[EventInfoDetailResp]',
         'meta_data': 'TotalMetaData'
     }
 
@@ -42,23 +40,23 @@ class ListEventDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param event_name: 事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
+        :param event_name: **参数解释**： 事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。 **取值范围**： 不涉及。 
         :type event_name: str
-        :param event_type: 事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
+        :param event_type: **参数解释**： 事件类型。 **取值范围**： 值为EVENT.SYS或EVENT.CUSTOM。 - EVENT.SYS: 系统事件。 - EVENT.CUSTOM: 自定义事件。 
         :type event_type: str
-        :param sub_event_type: 事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+        :param sub_event_type: **参数解释**： 事件子类。 **取值范围**： 枚举类型。 当事件类型为系统事件时，参数值为SUB_EVENT.OPS或SUB_EVENT.PLAN。 当事件类型为自定义事件时，参数值为SUB_EVENT.CUSTOM。 - SUB_EVENT.OPS：运维事件。 - SUB_EVENT.PLAN：计划事件。 - SUB_EVENT.CUSTOM：自定义事件。 
         :type sub_event_type: str
-        :param event_users: 上报事件时用户的名称，也可能为projectID。
+        :param event_users: **参数解释**： 上报事件时用户的名称，也可能为projectID。 **取值范围**： 不涉及。 
         :type event_users: list[str]
-        :param event_sources: 事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
+        :param event_sources: **参数解释**： 事件来源。 如果是系统事件则值为各服务的命名空间，可查看支持监控的服务列表。如果是自定义事件，则为用户自定义上报定义。 **取值范围**： 不涉及。 
         :type event_sources: list[str]
-        :param event_info: 一条或者多条事件详细信息。
-        :type event_info: list[:class:`huaweicloudsdkces.v1.EventInfoDetail`]
+        :param event_info: **参数解释**： 一条或者多条事件详细信息。 
+        :type event_info: list[:class:`huaweicloudsdkces.v1.EventInfoDetailResp`]
         :param meta_data: 
         :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
         """
         
-        super(ListEventDetailResponse, self).__init__()
+        super().__init__()
 
         self._event_name = None
         self._event_type = None
@@ -88,7 +86,7 @@ class ListEventDetailResponse(SdkResponse):
     def event_name(self):
         r"""Gets the event_name of this ListEventDetailResponse.
 
-        事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
+        **参数解释**： 事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。 **取值范围**： 不涉及。 
 
         :return: The event_name of this ListEventDetailResponse.
         :rtype: str
@@ -99,7 +97,7 @@ class ListEventDetailResponse(SdkResponse):
     def event_name(self, event_name):
         r"""Sets the event_name of this ListEventDetailResponse.
 
-        事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。
+        **参数解释**： 事件名称，值为系统产生的事件名称，或用户自定义上报的事件名称。 **取值范围**： 不涉及。 
 
         :param event_name: The event_name of this ListEventDetailResponse.
         :type event_name: str
@@ -110,7 +108,7 @@ class ListEventDetailResponse(SdkResponse):
     def event_type(self):
         r"""Gets the event_type of this ListEventDetailResponse.
 
-        事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
+        **参数解释**： 事件类型。 **取值范围**： 值为EVENT.SYS或EVENT.CUSTOM。 - EVENT.SYS: 系统事件。 - EVENT.CUSTOM: 自定义事件。 
 
         :return: The event_type of this ListEventDetailResponse.
         :rtype: str
@@ -121,7 +119,7 @@ class ListEventDetailResponse(SdkResponse):
     def event_type(self, event_type):
         r"""Sets the event_type of this ListEventDetailResponse.
 
-        事件类型，值为EVENT.SYS或EVENT.CUSTOM，EVENT.SYS表示系统事件，EVENT.CUSTOM表示自定义事件。
+        **参数解释**： 事件类型。 **取值范围**： 值为EVENT.SYS或EVENT.CUSTOM。 - EVENT.SYS: 系统事件。 - EVENT.CUSTOM: 自定义事件。 
 
         :param event_type: The event_type of this ListEventDetailResponse.
         :type event_type: str
@@ -132,7 +130,7 @@ class ListEventDetailResponse(SdkResponse):
     def sub_event_type(self):
         r"""Gets the sub_event_type of this ListEventDetailResponse.
 
-        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+        **参数解释**： 事件子类。 **取值范围**： 枚举类型。 当事件类型为系统事件时，参数值为SUB_EVENT.OPS或SUB_EVENT.PLAN。 当事件类型为自定义事件时，参数值为SUB_EVENT.CUSTOM。 - SUB_EVENT.OPS：运维事件。 - SUB_EVENT.PLAN：计划事件。 - SUB_EVENT.CUSTOM：自定义事件。 
 
         :return: The sub_event_type of this ListEventDetailResponse.
         :rtype: str
@@ -143,7 +141,7 @@ class ListEventDetailResponse(SdkResponse):
     def sub_event_type(self, sub_event_type):
         r"""Sets the sub_event_type of this ListEventDetailResponse.
 
-        事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
+        **参数解释**： 事件子类。 **取值范围**： 枚举类型。 当事件类型为系统事件时，参数值为SUB_EVENT.OPS或SUB_EVENT.PLAN。 当事件类型为自定义事件时，参数值为SUB_EVENT.CUSTOM。 - SUB_EVENT.OPS：运维事件。 - SUB_EVENT.PLAN：计划事件。 - SUB_EVENT.CUSTOM：自定义事件。 
 
         :param sub_event_type: The sub_event_type of this ListEventDetailResponse.
         :type sub_event_type: str
@@ -154,7 +152,7 @@ class ListEventDetailResponse(SdkResponse):
     def event_users(self):
         r"""Gets the event_users of this ListEventDetailResponse.
 
-        上报事件时用户的名称，也可能为projectID。
+        **参数解释**： 上报事件时用户的名称，也可能为projectID。 **取值范围**： 不涉及。 
 
         :return: The event_users of this ListEventDetailResponse.
         :rtype: list[str]
@@ -165,7 +163,7 @@ class ListEventDetailResponse(SdkResponse):
     def event_users(self, event_users):
         r"""Sets the event_users of this ListEventDetailResponse.
 
-        上报事件时用户的名称，也可能为projectID。
+        **参数解释**： 上报事件时用户的名称，也可能为projectID。 **取值范围**： 不涉及。 
 
         :param event_users: The event_users of this ListEventDetailResponse.
         :type event_users: list[str]
@@ -176,7 +174,7 @@ class ListEventDetailResponse(SdkResponse):
     def event_sources(self):
         r"""Gets the event_sources of this ListEventDetailResponse.
 
-        事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
+        **参数解释**： 事件来源。 如果是系统事件则值为各服务的命名空间，可查看支持监控的服务列表。如果是自定义事件，则为用户自定义上报定义。 **取值范围**： 不涉及。 
 
         :return: The event_sources of this ListEventDetailResponse.
         :rtype: list[str]
@@ -187,7 +185,7 @@ class ListEventDetailResponse(SdkResponse):
     def event_sources(self, event_sources):
         r"""Sets the event_sources of this ListEventDetailResponse.
 
-        事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
+        **参数解释**： 事件来源。 如果是系统事件则值为各服务的命名空间，可查看支持监控的服务列表。如果是自定义事件，则为用户自定义上报定义。 **取值范围**： 不涉及。 
 
         :param event_sources: The event_sources of this ListEventDetailResponse.
         :type event_sources: list[str]
@@ -198,10 +196,10 @@ class ListEventDetailResponse(SdkResponse):
     def event_info(self):
         r"""Gets the event_info of this ListEventDetailResponse.
 
-        一条或者多条事件详细信息。
+        **参数解释**： 一条或者多条事件详细信息。 
 
         :return: The event_info of this ListEventDetailResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v1.EventInfoDetail`]
+        :rtype: list[:class:`huaweicloudsdkces.v1.EventInfoDetailResp`]
         """
         return self._event_info
 
@@ -209,10 +207,10 @@ class ListEventDetailResponse(SdkResponse):
     def event_info(self, event_info):
         r"""Sets the event_info of this ListEventDetailResponse.
 
-        一条或者多条事件详细信息。
+        **参数解释**： 一条或者多条事件详细信息。 
 
         :param event_info: The event_info of this ListEventDetailResponse.
-        :type event_info: list[:class:`huaweicloudsdkces.v1.EventInfoDetail`]
+        :type event_info: list[:class:`huaweicloudsdkces.v1.EventInfoDetailResp`]
         """
         self._event_info = event_info
 
@@ -235,10 +233,12 @@ class ListEventDetailResponse(SdkResponse):
         self._meta_data = meta_data
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ListEventDetailResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -264,10 +264,6 @@ class ListEventDetailResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

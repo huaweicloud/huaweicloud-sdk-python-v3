@@ -17,7 +17,7 @@ except ImportError as e:
 
 class TmsClient(Client):
     def __init__(self):
-        super(TmsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdktms.v1.model")
 
     @classmethod

@@ -144,7 +144,6 @@ from huaweicloudsdklts.v2.model.enable_log_collection_request import EnableLogCo
 from huaweicloudsdklts.v2.model.enable_log_collection_response import EnableLogCollectionResponse
 from huaweicloudsdklts.v2.model.event import Event
 from huaweicloudsdklts.v2.model.events import Events
-from huaweicloudsdklts.v2.model.field_model import FieldModel
 from huaweicloudsdklts.v2.model.frequency import Frequency
 from huaweicloudsdklts.v2.model.frequency_resp_body import FrequencyRespBody
 from huaweicloudsdklts.v2.model.get_access_config_list_request_body import GetAccessConfigListRequestBody
@@ -231,6 +230,7 @@ from huaweicloudsdklts.v2.model.log_group import LogGroup
 from huaweicloudsdklts.v2.model.log_mapping_config import LogMappingConfig
 from huaweicloudsdklts.v2.model.log_mapping_stream_info import LogMappingStreamInfo
 from huaweicloudsdklts.v2.model.log_stream_res_body import LogStreamResBody
+from huaweicloudsdklts.v2.model.log_streams import LogStreams
 from huaweicloudsdklts.v2.model.log_transfer_detail import LogTransferDetail
 from huaweicloudsdklts.v2.model.lts_struct_template_info import LtsStructTemplateInfo
 from huaweicloudsdklts.v2.model.member_groupand_stream_log_streams import MemberGroupandStreamLogStreams
@@ -281,7 +281,6 @@ from huaweicloudsdklts.v2.model.show_struct_template_rule import ShowStructTempl
 from huaweicloudsdklts.v2.model.show_struct_templatecluster_info import ShowStructTemplateclusterInfo
 from huaweicloudsdklts.v2.model.sort import Sort
 from huaweicloudsdklts.v2.model.sql_alarm_rule_resp_list import SqlAlarmRuleRespList
-from huaweicloudsdklts.v2.model.sql_notification_save_rule import SqlNotificationSaveRule
 from huaweicloudsdklts.v2.model.sql_request import SqlRequest
 from huaweicloudsdklts.v2.model.struct_config import StructConfig
 from huaweicloudsdklts.v2.model.struct_field_info import StructFieldInfo
@@ -295,6 +294,7 @@ from huaweicloudsdklts.v2.model.tag_field import TagField
 from huaweicloudsdklts.v2.model.tag_field_new import TagFieldNew
 from huaweicloudsdklts.v2.model.tag_fields_info import TagFieldsInfo
 from huaweicloudsdklts.v2.model.tags_body import TagsBody
+from huaweicloudsdklts.v2.model.tags_request_body import TagsRequestBody
 from huaweicloudsdklts.v2.model.tags_res_body import TagsResBody
 from huaweicloudsdklts.v2.model.template_rule import TemplateRule
 from huaweicloudsdklts.v2.model.time_range import TimeRange

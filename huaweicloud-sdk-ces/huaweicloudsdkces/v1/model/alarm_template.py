@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -43,9 +41,9 @@ class AlarmTemplate:
         :type template_name: str
         :param template_description: 自定义告警模板描述。
         :type template_description: str
-        :param namespace: 自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，各资源的监控指标名称可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param namespace: 自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，可查看各资源的“[服务命名空间](ces_03_0059.xml)”。
         :type namespace: str
-        :param dimension_name: 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param dimension_name: 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
         :type dimension_name: str
         :param template_items: 自定义告警模板添加的一组或者多个告警策略。
         :type template_items: list[:class:`huaweicloudsdkces.v1.TemplateItem`]
@@ -124,7 +122,7 @@ class AlarmTemplate:
     def namespace(self):
         r"""Gets the namespace of this AlarmTemplate.
 
-        自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，各资源的监控指标名称可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，可查看各资源的“[服务命名空间](ces_03_0059.xml)”。
 
         :return: The namespace of this AlarmTemplate.
         :rtype: str
@@ -135,7 +133,7 @@ class AlarmTemplate:
     def namespace(self, namespace):
         r"""Sets the namespace of this AlarmTemplate.
 
-        自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，各资源的监控指标名称可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，可查看各资源的“[服务命名空间](ces_03_0059.xml)”。
 
         :param namespace: The namespace of this AlarmTemplate.
         :type namespace: str
@@ -146,7 +144,7 @@ class AlarmTemplate:
     def dimension_name(self):
         r"""Gets the dimension_name of this AlarmTemplate.
 
-        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
 
         :return: The dimension_name of this AlarmTemplate.
         :rtype: str
@@ -157,7 +155,7 @@ class AlarmTemplate:
     def dimension_name(self, dimension_name):
         r"""Sets the dimension_name of this AlarmTemplate.
 
-        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
 
         :param dimension_name: The dimension_name of this AlarmTemplate.
         :type dimension_name: str
@@ -209,10 +207,9 @@ class AlarmTemplate:
         self._template_id = template_id
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -238,10 +235,6 @@ class AlarmTemplate:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

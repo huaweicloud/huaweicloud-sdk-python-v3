@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ApigClient(Client):
     def __init__(self):
-        super(ApigClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkapig.v2.model")
 
     @classmethod

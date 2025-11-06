@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -65,7 +63,7 @@ class ListAlarmRespBodyAlarms:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: **参数解释**： 告警规则id。     **取值范围**： 以al开头，后跟22个数字或字母。 
+        :param alarm_id: **参数解释**： 告警规则id。如 al123232232341232132 **取值范围**： 以al开头，后跟22个数字或字母。长度为24个字符。 
         :type alarm_id: str
         :param name: **参数解释**： 告警名称。     **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。 
         :type name: str
@@ -83,9 +81,9 @@ class ListAlarmRespBodyAlarms:
         :type enabled: bool
         :param notification_enabled: **参数解释**： 是否开启告警通知。     **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
         :type notification_enabled: bool
-        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
-        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
         :param notification_begin_time: **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
         :type notification_begin_time: str
@@ -171,7 +169,7 @@ class ListAlarmRespBodyAlarms:
     def alarm_id(self):
         r"""Gets the alarm_id of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警规则id。     **取值范围**： 以al开头，后跟22个数字或字母。 
+        **参数解释**： 告警规则id。如 al123232232341232132 **取值范围**： 以al开头，后跟22个数字或字母。长度为24个字符。 
 
         :return: The alarm_id of this ListAlarmRespBodyAlarms.
         :rtype: str
@@ -182,7 +180,7 @@ class ListAlarmRespBodyAlarms:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警规则id。     **取值范围**： 以al开头，后跟22个数字或字母。 
+        **参数解释**： 告警规则id。如 al123232232341232132 **取值范围**： 以al开头，后跟22个数字或字母。长度为24个字符。 
 
         :param alarm_id: The alarm_id of this ListAlarmRespBodyAlarms.
         :type alarm_id: str
@@ -365,7 +363,7 @@ class ListAlarmRespBodyAlarms:
     def alarm_notifications(self):
         r"""Gets the alarm_notifications of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 
 
         :return: The alarm_notifications of this ListAlarmRespBodyAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
@@ -376,7 +374,7 @@ class ListAlarmRespBodyAlarms:
     def alarm_notifications(self, alarm_notifications):
         r"""Sets the alarm_notifications of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 
 
         :param alarm_notifications: The alarm_notifications of this ListAlarmRespBodyAlarms.
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
@@ -387,7 +385,7 @@ class ListAlarmRespBodyAlarms:
     def ok_notifications(self):
         r"""Gets the ok_notifications of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 
 
         :return: The ok_notifications of this ListAlarmRespBodyAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
@@ -398,7 +396,7 @@ class ListAlarmRespBodyAlarms:
     def ok_notifications(self, ok_notifications):
         r"""Sets the ok_notifications of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **取值范围**： 包含的通知信息的数量最多为10个。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 
 
         :param ok_notifications: The ok_notifications of this ListAlarmRespBodyAlarms.
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
@@ -582,10 +580,9 @@ class ListAlarmRespBodyAlarms:
         self._tags = tags
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -611,10 +608,6 @@ class ListAlarmRespBodyAlarms:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

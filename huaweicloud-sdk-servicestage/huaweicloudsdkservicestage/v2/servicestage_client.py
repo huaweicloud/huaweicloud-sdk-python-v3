@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ServiceStageClient(Client):
     def __init__(self):
-        super(ServiceStageClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkservicestage.v2.model")
 
     @classmethod

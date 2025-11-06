@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CtsClient(Client):
     def __init__(self):
-        super(CtsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcts.v3.model")
 
     @classmethod

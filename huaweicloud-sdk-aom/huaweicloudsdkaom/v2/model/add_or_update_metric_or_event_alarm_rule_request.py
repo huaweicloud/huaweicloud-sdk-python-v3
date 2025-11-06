@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -35,7 +33,7 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
 
         :param action_id: 告警规则id。 - 新增告警时，填写\&quot;add-alarm-action\&quot; - 更新告警时，填写“update-alarm-action”
         :type action_id: str
-        :param enterprise_project_id: 企业项目id。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
+        :param enterprise_project_id: 企业项目id。获取方式请参见：[获取企业项目ID](aom_04_0024.xml) 。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
         :type enterprise_project_id: str
         :param body: Body of the AddOrUpdateMetricOrEventAlarmRuleRequest
         :type body: :class:`huaweicloudsdkaom.v2.AddOrUpdateAlarmRuleV4RequestBody`
@@ -80,7 +78,7 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
 
-        企业项目id。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
+        企业项目id。获取方式请参见：[获取企业项目ID](aom_04_0024.xml) 。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
 
         :return: The enterprise_project_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
         :rtype: str
@@ -91,7 +89,7 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
 
-        企业项目id。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
+        企业项目id。获取方式请参见：[获取企业项目ID](aom_04_0024.xml) 。 - 查询单个企业项目下实例，填写企业项目id。  - 查询所有企业项目下实例，填写“all_granted_eps”。
 
         :param enterprise_project_id: The enterprise_project_id of this AddOrUpdateMetricOrEventAlarmRuleRequest.
         :type enterprise_project_id: str
@@ -117,10 +115,9 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
         self._body = body
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -146,10 +143,6 @@ class AddOrUpdateMetricOrEventAlarmRuleRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class LiveAsyncClient(Client):
     def __init__(self):
-        super(LiveAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdklive.v2.model")
 
     @classmethod

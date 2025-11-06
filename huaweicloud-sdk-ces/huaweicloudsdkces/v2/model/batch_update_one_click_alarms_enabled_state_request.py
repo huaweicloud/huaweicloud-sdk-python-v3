@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -18,7 +16,7 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
 
     openapi_types = {
         'one_click_alarm_id': 'str',
-        'body': 'BatchUpdateOneClickAlarmsEnabledStateRequestBody'
+        'body': 'BatchEnableAlarmsRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +32,7 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
         :param one_click_alarm_id: **参数解释**： 一键告警ID。 **约束限制**： 不涉及。 **取值范围**： 只能为字母或者数字，字符长度为[1,64] **默认取值**： 不涉及。 
         :type one_click_alarm_id: str
         :param body: Body of the BatchUpdateOneClickAlarmsEnabledStateRequest
-        :type body: :class:`huaweicloudsdkces.v2.BatchUpdateOneClickAlarmsEnabledStateRequestBody`
+        :type body: :class:`huaweicloudsdkces.v2.BatchEnableAlarmsRequestBody`
         """
         
         
@@ -74,7 +72,7 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
         r"""Gets the body of this BatchUpdateOneClickAlarmsEnabledStateRequest.
 
         :return: The body of this BatchUpdateOneClickAlarmsEnabledStateRequest.
-        :rtype: :class:`huaweicloudsdkces.v2.BatchUpdateOneClickAlarmsEnabledStateRequestBody`
+        :rtype: :class:`huaweicloudsdkces.v2.BatchEnableAlarmsRequestBody`
         """
         return self._body
 
@@ -83,15 +81,14 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
         r"""Sets the body of this BatchUpdateOneClickAlarmsEnabledStateRequest.
 
         :param body: The body of this BatchUpdateOneClickAlarmsEnabledStateRequest.
-        :type body: :class:`huaweicloudsdkces.v2.BatchUpdateOneClickAlarmsEnabledStateRequestBody`
+        :type body: :class:`huaweicloudsdkces.v2.BatchEnableAlarmsRequestBody`
         """
         self._body = body
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -117,10 +114,6 @@ class BatchUpdateOneClickAlarmsEnabledStateRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

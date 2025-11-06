@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -47,9 +45,9 @@ class ListEventsRequest:
         :type event_level: str
         :param resource_id: 告警资源ID
         :type resource_id: str
-        :param _from: 查询开始时间，格式为时间戳（毫秒），默认查询从当前时间起三十天内的数据
+        :param _from: 查询开始时间，格式为时间戳（毫秒），from 必须小于 to，且查询时间范围最大不超过30天。
         :type _from: str
-        :param to: 查询截止时间，格式为时间戳（毫秒），默认查询从当前时间起三十天内的数据
+        :param to: 查询截止时间，格式为时间戳（毫秒），from 必须小于 to，且查询时间范围最大不超过30天。
         :type to: str
         """
         
@@ -71,10 +69,8 @@ class ListEventsRequest:
             self.event_level = event_level
         if resource_id is not None:
             self.resource_id = resource_id
-        if _from is not None:
-            self._from = _from
-        if to is not None:
-            self.to = to
+        self._from = _from
+        self.to = to
 
     @property
     def offset(self):
@@ -168,7 +164,7 @@ class ListEventsRequest:
     def _from(self):
         r"""Gets the _from of this ListEventsRequest.
 
-        查询开始时间，格式为时间戳（毫秒），默认查询从当前时间起三十天内的数据
+        查询开始时间，格式为时间戳（毫秒），from 必须小于 to，且查询时间范围最大不超过30天。
 
         :return: The _from of this ListEventsRequest.
         :rtype: str
@@ -179,7 +175,7 @@ class ListEventsRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListEventsRequest.
 
-        查询开始时间，格式为时间戳（毫秒），默认查询从当前时间起三十天内的数据
+        查询开始时间，格式为时间戳（毫秒），from 必须小于 to，且查询时间范围最大不超过30天。
 
         :param _from: The _from of this ListEventsRequest.
         :type _from: str
@@ -190,7 +186,7 @@ class ListEventsRequest:
     def to(self):
         r"""Gets the to of this ListEventsRequest.
 
-        查询截止时间，格式为时间戳（毫秒），默认查询从当前时间起三十天内的数据
+        查询截止时间，格式为时间戳（毫秒），from 必须小于 to，且查询时间范围最大不超过30天。
 
         :return: The to of this ListEventsRequest.
         :rtype: str
@@ -201,7 +197,7 @@ class ListEventsRequest:
     def to(self, to):
         r"""Sets the to of this ListEventsRequest.
 
-        查询截止时间，格式为时间戳（毫秒），默认查询从当前时间起三十天内的数据
+        查询截止时间，格式为时间戳（毫秒），from 必须小于 to，且查询时间范围最大不超过30天。
 
         :param to: The to of this ListEventsRequest.
         :type to: str
@@ -209,10 +205,9 @@ class ListEventsRequest:
         self._to = to
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -238,10 +233,6 @@ class ListEventsRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

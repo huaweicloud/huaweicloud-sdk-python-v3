@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CodeArtsPipelineClient(Client):
     def __init__(self):
-        super(CodeArtsPipelineClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcodeartspipeline.v2.model")
 
     @classmethod

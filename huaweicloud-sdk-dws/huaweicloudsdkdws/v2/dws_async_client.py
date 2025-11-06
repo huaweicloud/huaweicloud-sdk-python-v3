@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DwsAsyncClient(Client):
     def __init__(self):
-        super(DwsAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdws.v2.model")
 
     @classmethod
@@ -2760,6 +2760,8 @@ class DwsAsyncClient(Client):
             path_params['disaster_recovery_id'] = local_var_params['disaster_recovery_id']
 
         query_params = []
+        if 'need_send_request' in local_var_params:
+            query_params.append(('need_send_request', local_var_params['need_send_request']))
 
         header_params = {}
 
@@ -6306,6 +6308,12 @@ class DwsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'primary_cluster_id' in local_var_params:
+            query_params.append(('primary_cluster_id', local_var_params['primary_cluster_id']))
+        if 'standby_cluster_id' in local_var_params:
+            query_params.append(('standby_cluster_id', local_var_params['standby_cluster_id']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
 
         header_params = {}
 
@@ -9858,7 +9866,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def resize_preparation_async(self, request):
-        r"""集群扩容前检查
+        r"""集群扩容前准备
 
         下发扩容配置文件，完成扩容准备工作。
         
@@ -11408,7 +11416,7 @@ class DwsAsyncClient(Client):
         return http_info
 
     def show_resize_preparation_async(self, request):
-        r"""查询节点列表
+        r"""获取扩容准备信息
 
         获取扩容准备信息。
         

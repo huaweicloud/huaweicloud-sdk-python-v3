@@ -17,7 +17,7 @@ except ImportError as e:
 
 class OrgIDAsyncClient(Client):
     def __init__(self):
-        super(OrgIDAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkorgid.v1.model")
 
     @classmethod

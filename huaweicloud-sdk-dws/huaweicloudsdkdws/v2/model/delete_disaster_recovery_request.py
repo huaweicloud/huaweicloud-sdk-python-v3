@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -17,28 +15,35 @@ class DeleteDisasterRecoveryRequest:
     sensitive_list = []
 
     openapi_types = {
-        'disaster_recovery_id': 'str'
+        'disaster_recovery_id': 'str',
+        'need_send_request': 'int'
     }
 
     attribute_map = {
-        'disaster_recovery_id': 'disaster_recovery_id'
+        'disaster_recovery_id': 'disaster_recovery_id',
+        'need_send_request': 'need_send_request'
     }
 
-    def __init__(self, disaster_recovery_id=None):
+    def __init__(self, disaster_recovery_id=None, need_send_request=None):
         r"""DeleteDisasterRecoveryRequest
 
         The model defined in huaweicloud sdk
 
         :param disaster_recovery_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type disaster_recovery_id: str
+        :param need_send_request: **参数解释**： 跨region时是否需要向另一个集群发请求。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type need_send_request: int
         """
         
         
 
         self._disaster_recovery_id = None
+        self._need_send_request = None
         self.discriminator = None
 
         self.disaster_recovery_id = disaster_recovery_id
+        if need_send_request is not None:
+            self.need_send_request = need_send_request
 
     @property
     def disaster_recovery_id(self):
@@ -62,11 +67,32 @@ class DeleteDisasterRecoveryRequest:
         """
         self._disaster_recovery_id = disaster_recovery_id
 
+    @property
+    def need_send_request(self):
+        r"""Gets the need_send_request of this DeleteDisasterRecoveryRequest.
+
+        **参数解释**： 跨region时是否需要向另一个集群发请求。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The need_send_request of this DeleteDisasterRecoveryRequest.
+        :rtype: int
+        """
+        return self._need_send_request
+
+    @need_send_request.setter
+    def need_send_request(self, need_send_request):
+        r"""Sets the need_send_request of this DeleteDisasterRecoveryRequest.
+
+        **参数解释**： 跨region时是否需要向另一个集群发请求。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param need_send_request: The need_send_request of this DeleteDisasterRecoveryRequest.
+        :type need_send_request: int
+        """
+        self._need_send_request = need_send_request
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -92,10 +118,6 @@ class DeleteDisasterRecoveryRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

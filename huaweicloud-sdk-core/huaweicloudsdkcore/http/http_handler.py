@@ -30,14 +30,14 @@ def default_response_handler(**kwargs):
     content_type = _response.headers.get("Content-Type")
     content_length = _response.headers.get("Content-Length")
     if content_type and content_type.endswith("octet-stream"):
-        content_length = content_length if content_length else -1
+        content_length = content_length or -1
     else:
-        content_length = content_length if content_length else len(_response.content)
+        content_length = content_length or len(_response.content)
 
     kwargs.get("logger").info("\"{} {}\" {} {} {} {}".format(
         _response.request.method,
         _response.request.url, _response.status_code, content_length,
-        _response.elapsed, _response.headers.get("X-Request-Id") if "X-Request-Id" in _response.headers else "")
+        _response.elapsed, _response.headers.get("X-Request-Id", ""))
     )
 
 

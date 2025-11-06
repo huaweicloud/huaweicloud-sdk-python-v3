@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DrisClient(Client):
     def __init__(self):
-        super(DrisClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdris.v1.model")
 
     @classmethod

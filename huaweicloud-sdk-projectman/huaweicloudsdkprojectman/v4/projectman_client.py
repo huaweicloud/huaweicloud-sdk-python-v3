@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ProjectManClient(Client):
     def __init__(self):
-        super(ProjectManClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkprojectman.v4.model")
 
     @classmethod

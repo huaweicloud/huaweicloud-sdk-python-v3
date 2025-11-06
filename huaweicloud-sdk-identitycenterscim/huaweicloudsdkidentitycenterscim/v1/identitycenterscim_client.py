@@ -17,7 +17,7 @@ except ImportError as e:
 
 class IdentityCenterSCIMClient(Client):
     def __init__(self):
-        super(IdentityCenterSCIMClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkidentitycenterscim.v1.model")
 
     @classmethod

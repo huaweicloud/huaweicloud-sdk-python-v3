@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CdnClient(Client):
     def __init__(self):
-        super(CdnClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcdn.v1.model")
 
     @classmethod

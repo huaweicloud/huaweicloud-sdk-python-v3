@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -45,11 +43,11 @@ class AlarmNotification:
 
         :param notification_type: 通知类型。 - “direct”：直接告警 - “alarm_policy”：告警降噪
         :type notification_type: str
-        :param route_group_enable: 启用分组规则。 - 当通知类型为“alarm_policy”时：true - 当通知类型为“direct”时：false
+        :param route_group_enable: 启用告警分组规则。 - 当通知类型为“alarm_policy”时：true - 当通知类型为“direct”时：false 如果告警触发“notify_triggered”或告警恢复“notify_resolved”都设置为false（即都不进行告警通知），则route_group_enable需设置为false。
         :type route_group_enable: bool
-        :param route_group_rule: 分组规则名称。 - 当route_group_enable 为true时，填分组规则名称 - 当route_group_enable 为false时，填“”
+        :param route_group_rule: 告警分组规则名称。 - 当route_group_enable 为true时，填告警分组规则名称 - 当route_group_enable 为false时，填“”
         :type route_group_rule: str
-        :param notification_enable: 是否启用告警行动规则。 - 当通知类型为“direct”时，填true - 当通知类型为“alarm_policy”时，填false
+        :param notification_enable: 是否启用告警通知规则。 - 当通知类型为“direct”时，填true - 当通知类型为“alarm_policy”时，填false 如果告警触发“notify_triggered”或告警恢复“notify_resolved”都设置为false（即都不进行告警通知），则notification_enable需设置为false。
         :type notification_enable: bool
         :param bind_notification_rule_id: 告警行动策略id。 - 当notification_enable为true时，填告警行动策略id - 当notification_enable为false时，填“”
         :type bind_notification_rule_id: str
@@ -113,7 +111,7 @@ class AlarmNotification:
     def route_group_enable(self):
         r"""Gets the route_group_enable of this AlarmNotification.
 
-        启用分组规则。 - 当通知类型为“alarm_policy”时：true - 当通知类型为“direct”时：false
+        启用告警分组规则。 - 当通知类型为“alarm_policy”时：true - 当通知类型为“direct”时：false 如果告警触发“notify_triggered”或告警恢复“notify_resolved”都设置为false（即都不进行告警通知），则route_group_enable需设置为false。
 
         :return: The route_group_enable of this AlarmNotification.
         :rtype: bool
@@ -124,7 +122,7 @@ class AlarmNotification:
     def route_group_enable(self, route_group_enable):
         r"""Sets the route_group_enable of this AlarmNotification.
 
-        启用分组规则。 - 当通知类型为“alarm_policy”时：true - 当通知类型为“direct”时：false
+        启用告警分组规则。 - 当通知类型为“alarm_policy”时：true - 当通知类型为“direct”时：false 如果告警触发“notify_triggered”或告警恢复“notify_resolved”都设置为false（即都不进行告警通知），则route_group_enable需设置为false。
 
         :param route_group_enable: The route_group_enable of this AlarmNotification.
         :type route_group_enable: bool
@@ -135,7 +133,7 @@ class AlarmNotification:
     def route_group_rule(self):
         r"""Gets the route_group_rule of this AlarmNotification.
 
-        分组规则名称。 - 当route_group_enable 为true时，填分组规则名称 - 当route_group_enable 为false时，填“”
+        告警分组规则名称。 - 当route_group_enable 为true时，填告警分组规则名称 - 当route_group_enable 为false时，填“”
 
         :return: The route_group_rule of this AlarmNotification.
         :rtype: str
@@ -146,7 +144,7 @@ class AlarmNotification:
     def route_group_rule(self, route_group_rule):
         r"""Sets the route_group_rule of this AlarmNotification.
 
-        分组规则名称。 - 当route_group_enable 为true时，填分组规则名称 - 当route_group_enable 为false时，填“”
+        告警分组规则名称。 - 当route_group_enable 为true时，填告警分组规则名称 - 当route_group_enable 为false时，填“”
 
         :param route_group_rule: The route_group_rule of this AlarmNotification.
         :type route_group_rule: str
@@ -157,7 +155,7 @@ class AlarmNotification:
     def notification_enable(self):
         r"""Gets the notification_enable of this AlarmNotification.
 
-        是否启用告警行动规则。 - 当通知类型为“direct”时，填true - 当通知类型为“alarm_policy”时，填false
+        是否启用告警通知规则。 - 当通知类型为“direct”时，填true - 当通知类型为“alarm_policy”时，填false 如果告警触发“notify_triggered”或告警恢复“notify_resolved”都设置为false（即都不进行告警通知），则notification_enable需设置为false。
 
         :return: The notification_enable of this AlarmNotification.
         :rtype: bool
@@ -168,7 +166,7 @@ class AlarmNotification:
     def notification_enable(self, notification_enable):
         r"""Sets the notification_enable of this AlarmNotification.
 
-        是否启用告警行动规则。 - 当通知类型为“direct”时，填true - 当通知类型为“alarm_policy”时，填false
+        是否启用告警通知规则。 - 当通知类型为“direct”时，填true - 当通知类型为“alarm_policy”时，填false 如果告警触发“notify_triggered”或告警恢复“notify_resolved”都设置为false（即都不进行告警通知），则notification_enable需设置为false。
 
         :param notification_enable: The notification_enable of this AlarmNotification.
         :type notification_enable: bool
@@ -264,10 +262,9 @@ class AlarmNotification:
         self._notify_frequency = notify_frequency
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -293,10 +290,6 @@ class AlarmNotification:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

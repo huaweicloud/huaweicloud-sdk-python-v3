@@ -17,7 +17,7 @@ except ImportError as e:
 
 class AsAsyncClient(Client):
     def __init__(self):
-        super(AsAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkas.v1.model")
 
     @classmethod

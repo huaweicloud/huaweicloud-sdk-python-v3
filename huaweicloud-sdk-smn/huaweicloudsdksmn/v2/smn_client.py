@@ -17,7 +17,7 @@ except ImportError as e:
 
 class SmnClient(Client):
     def __init__(self):
-        super(SmnClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdksmn.v2.model")
 
     @classmethod

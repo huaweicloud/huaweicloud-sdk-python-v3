@@ -38,8 +38,7 @@ class SdkExchangeCache:
     _CACHE = {}
 
     @classmethod
-    def put(cls, exchange):
-        # type: (SdkExchange) -> str
+    def put(cls, exchange: SdkExchange) -> str:
         hash_code = str(hash(exchange))
         cls._CACHE[hash_code] = exchange
         return hash_code

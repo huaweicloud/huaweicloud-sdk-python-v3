@@ -17,7 +17,7 @@ except ImportError as e:
 
 class LiveClient(Client):
     def __init__(self):
-        super(LiveClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdklive.v1.model")
 
     @classmethod

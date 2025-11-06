@@ -17,7 +17,7 @@ except ImportError as e:
 
 class AosClient(Client):
     def __init__(self):
-        super(AosClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkaos.v1.model")
 
     @classmethod

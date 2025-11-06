@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DdsAsyncClient(Client):
     def __init__(self):
-        super(DdsAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdds.v3.model")
 
     @classmethod

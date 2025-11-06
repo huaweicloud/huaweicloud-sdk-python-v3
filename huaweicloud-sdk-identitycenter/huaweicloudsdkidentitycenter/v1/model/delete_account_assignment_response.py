@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -34,7 +32,7 @@ class DeleteAccountAssignmentResponse(SdkResponse):
         :type account_assignment_deletion_status: :class:`huaweicloudsdkidentitycenter.v1.AccountAssignmentOperationStatusDto`
         """
         
-        super(DeleteAccountAssignmentResponse, self).__init__()
+        super().__init__()
 
         self._account_assignment_deletion_status = None
         self.discriminator = None
@@ -61,10 +59,12 @@ class DeleteAccountAssignmentResponse(SdkResponse):
         self._account_assignment_deletion_status = account_assignment_deletion_status
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("DeleteAccountAssignmentResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -90,10 +90,6 @@ class DeleteAccountAssignmentResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

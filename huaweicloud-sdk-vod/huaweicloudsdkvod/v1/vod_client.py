@@ -17,7 +17,7 @@ except ImportError as e:
 
 class VodClient(Client):
     def __init__(self):
-        super(VodClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvod.v1.model")
 
     @classmethod

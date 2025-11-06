@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -19,6 +17,7 @@ class LeakageListInfo:
     openapi_types = {
         'id': 'str',
         'policyid': 'str',
+        'policyname': 'str',
         'url': 'str',
         'category': 'str',
         'contents': 'list[str]',
@@ -31,6 +30,7 @@ class LeakageListInfo:
     attribute_map = {
         'id': 'id',
         'policyid': 'policyid',
+        'policyname': 'policyname',
         'url': 'url',
         'category': 'category',
         'contents': 'contents',
@@ -40,7 +40,7 @@ class LeakageListInfo:
         'action': 'action'
     }
 
-    def __init__(self, id=None, policyid=None, url=None, category=None, contents=None, timestamp=None, status=None, description=None, action=None):
+    def __init__(self, id=None, policyid=None, policyname=None, url=None, category=None, contents=None, timestamp=None, status=None, description=None, action=None):
         r"""LeakageListInfo
 
         The model defined in huaweicloud sdk
@@ -49,6 +49,8 @@ class LeakageListInfo:
         :type id: str
         :param policyid: 策略id
         :type policyid: str
+        :param policyname: 策略名称
+        :type policyname: str
         :param url: 规则应用的url
         :type url: str
         :param category: 类别（响应码：code，敏感信息：sensitive）
@@ -69,6 +71,7 @@ class LeakageListInfo:
 
         self._id = None
         self._policyid = None
+        self._policyname = None
         self._url = None
         self._category = None
         self._contents = None
@@ -82,6 +85,8 @@ class LeakageListInfo:
             self.id = id
         if policyid is not None:
             self.policyid = policyid
+        if policyname is not None:
+            self.policyname = policyname
         if url is not None:
             self.url = url
         if category is not None:
@@ -140,6 +145,28 @@ class LeakageListInfo:
         :type policyid: str
         """
         self._policyid = policyid
+
+    @property
+    def policyname(self):
+        r"""Gets the policyname of this LeakageListInfo.
+
+        策略名称
+
+        :return: The policyname of this LeakageListInfo.
+        :rtype: str
+        """
+        return self._policyname
+
+    @policyname.setter
+    def policyname(self, policyname):
+        r"""Sets the policyname of this LeakageListInfo.
+
+        策略名称
+
+        :param policyname: The policyname of this LeakageListInfo.
+        :type policyname: str
+        """
+        self._policyname = policyname
 
     @property
     def url(self):
@@ -292,10 +319,9 @@ class LeakageListInfo:
         self._action = action
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -321,10 +347,6 @@ class LeakageListInfo:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

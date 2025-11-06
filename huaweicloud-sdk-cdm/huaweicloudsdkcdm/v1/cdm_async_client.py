@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CdmAsyncClient(Client):
     def __init__(self):
-        super(CdmAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcdm.v1.model")
 
     @classmethod

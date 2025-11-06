@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -38,7 +36,7 @@ class ListAppQuantitiesV2Response(SdkResponse):
         :type unauthed_nums: int
         """
         
-        super(ListAppQuantitiesV2Response, self).__init__()
+        super().__init__()
 
         self._authed_nums = None
         self._unauthed_nums = None
@@ -94,10 +92,12 @@ class ListAppQuantitiesV2Response(SdkResponse):
         self._unauthed_nums = unauthed_nums
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ListAppQuantitiesV2Response.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -123,10 +123,6 @@ class ListAppQuantitiesV2Response(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

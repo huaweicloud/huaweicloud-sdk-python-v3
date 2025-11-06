@@ -17,7 +17,7 @@ except ImportError as e:
 
 class OctopusAsyncClient(Client):
     def __init__(self):
-        super(OctopusAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkoctopus.v2.model")
 
     @classmethod

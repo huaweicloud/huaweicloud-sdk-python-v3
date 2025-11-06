@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ImageSearchAsyncClient(Client):
     def __init__(self):
-        super(ImageSearchAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkimagesearch.v2.model")
 
     @classmethod

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -29,7 +27,10 @@ class PromInstanceEpsModel:
         'is_deleted_tag': 'int',
         'deleted_time': 'int',
         'prom_spec_config': 'PromConfigModel',
-        'cce_spec_config': 'str'
+        'cce_spec_config': 'str',
+        'prom_limits': 'PromLimits',
+        'limits_update_time': 'int',
+        'application': 'ApplicationModel'
     }
 
     attribute_map = {
@@ -45,10 +46,13 @@ class PromInstanceEpsModel:
         'is_deleted_tag': 'is_deleted_tag',
         'deleted_time': 'deleted_time',
         'prom_spec_config': 'prom_spec_config',
-        'cce_spec_config': 'cce_spec_config'
+        'cce_spec_config': 'cce_spec_config',
+        'prom_limits': 'prom_limits',
+        'limits_update_time': 'limits_update_time',
+        'application': 'application'
     }
 
-    def __init__(self, prom_name=None, prom_id=None, prom_type=None, prom_version=None, prom_create_timestamp=None, prom_update_timestamp=None, prom_status=None, enterprise_project_id=None, project_id=None, is_deleted_tag=None, deleted_time=None, prom_spec_config=None, cce_spec_config=None):
+    def __init__(self, prom_name=None, prom_id=None, prom_type=None, prom_version=None, prom_create_timestamp=None, prom_update_timestamp=None, prom_status=None, enterprise_project_id=None, project_id=None, is_deleted_tag=None, deleted_time=None, prom_spec_config=None, cce_spec_config=None, prom_limits=None, limits_update_time=None, application=None):
         r"""PromInstanceEpsModel
 
         The model defined in huaweicloud sdk
@@ -57,7 +61,7 @@ class PromInstanceEpsModel:
         :type prom_name: str
         :param prom_id: Prometheus实例id。
         :type prom_id: str
-        :param prom_type: Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
+        :param prom_type: Prometheus实例类型。  - default：默认普罗实例 - ECS：Prometheus for ECS - CCE：Prometheus for CCE - REMOTE_WRITE：Prometheus 通用实例 - CLOUD_SERVICE：Prometheus for 云服务 - ACROSS_ACCOUNT：Prometheus for 多账号聚合实例 （暂不支持ACROSS_ACCOUNT类型）
         :type prom_type: str
         :param prom_version: Prometheus实例版本号。
         :type prom_version: str
@@ -79,6 +83,12 @@ class PromInstanceEpsModel:
         :type prom_spec_config: :class:`huaweicloudsdkaom.v2.PromConfigModel`
         :param cce_spec_config: Prometheus实例所属CCE特殊配置。
         :type cce_spec_config: str
+        :param prom_limits: 
+        :type prom_limits: :class:`huaweicloudsdkaom.v2.PromLimits`
+        :param limits_update_time: 指标存储周期修改时间。
+        :type limits_update_time: int
+        :param application: 
+        :type application: :class:`huaweicloudsdkaom.v2.ApplicationModel`
         """
         
         
@@ -96,6 +106,9 @@ class PromInstanceEpsModel:
         self._deleted_time = None
         self._prom_spec_config = None
         self._cce_spec_config = None
+        self._prom_limits = None
+        self._limits_update_time = None
+        self._application = None
         self.discriminator = None
 
         self.prom_name = prom_name
@@ -122,6 +135,12 @@ class PromInstanceEpsModel:
             self.prom_spec_config = prom_spec_config
         if cce_spec_config is not None:
             self.cce_spec_config = cce_spec_config
+        if prom_limits is not None:
+            self.prom_limits = prom_limits
+        if limits_update_time is not None:
+            self.limits_update_time = limits_update_time
+        if application is not None:
+            self.application = application
 
     @property
     def prom_name(self):
@@ -171,7 +190,7 @@ class PromInstanceEpsModel:
     def prom_type(self):
         r"""Gets the prom_type of this PromInstanceEpsModel.
 
-        Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
+        Prometheus实例类型。  - default：默认普罗实例 - ECS：Prometheus for ECS - CCE：Prometheus for CCE - REMOTE_WRITE：Prometheus 通用实例 - CLOUD_SERVICE：Prometheus for 云服务 - ACROSS_ACCOUNT：Prometheus for 多账号聚合实例 （暂不支持ACROSS_ACCOUNT类型）
 
         :return: The prom_type of this PromInstanceEpsModel.
         :rtype: str
@@ -182,7 +201,7 @@ class PromInstanceEpsModel:
     def prom_type(self, prom_type):
         r"""Sets the prom_type of this PromInstanceEpsModel.
 
-        Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
+        Prometheus实例类型。  - default：默认普罗实例 - ECS：Prometheus for ECS - CCE：Prometheus for CCE - REMOTE_WRITE：Prometheus 通用实例 - CLOUD_SERVICE：Prometheus for 云服务 - ACROSS_ACCOUNT：Prometheus for 多账号聚合实例 （暂不支持ACROSS_ACCOUNT类型）
 
         :param prom_type: The prom_type of this PromInstanceEpsModel.
         :type prom_type: str
@@ -405,11 +424,68 @@ class PromInstanceEpsModel:
         """
         self._cce_spec_config = cce_spec_config
 
+    @property
+    def prom_limits(self):
+        r"""Gets the prom_limits of this PromInstanceEpsModel.
+
+        :return: The prom_limits of this PromInstanceEpsModel.
+        :rtype: :class:`huaweicloudsdkaom.v2.PromLimits`
+        """
+        return self._prom_limits
+
+    @prom_limits.setter
+    def prom_limits(self, prom_limits):
+        r"""Sets the prom_limits of this PromInstanceEpsModel.
+
+        :param prom_limits: The prom_limits of this PromInstanceEpsModel.
+        :type prom_limits: :class:`huaweicloudsdkaom.v2.PromLimits`
+        """
+        self._prom_limits = prom_limits
+
+    @property
+    def limits_update_time(self):
+        r"""Gets the limits_update_time of this PromInstanceEpsModel.
+
+        指标存储周期修改时间。
+
+        :return: The limits_update_time of this PromInstanceEpsModel.
+        :rtype: int
+        """
+        return self._limits_update_time
+
+    @limits_update_time.setter
+    def limits_update_time(self, limits_update_time):
+        r"""Sets the limits_update_time of this PromInstanceEpsModel.
+
+        指标存储周期修改时间。
+
+        :param limits_update_time: The limits_update_time of this PromInstanceEpsModel.
+        :type limits_update_time: int
+        """
+        self._limits_update_time = limits_update_time
+
+    @property
+    def application(self):
+        r"""Gets the application of this PromInstanceEpsModel.
+
+        :return: The application of this PromInstanceEpsModel.
+        :rtype: :class:`huaweicloudsdkaom.v2.ApplicationModel`
+        """
+        return self._application
+
+    @application.setter
+    def application(self, application):
+        r"""Sets the application of this PromInstanceEpsModel.
+
+        :param application: The application of this PromInstanceEpsModel.
+        :type application: :class:`huaweicloudsdkaom.v2.ApplicationModel`
+        """
+        self._application = application
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -435,10 +511,6 @@ class PromInstanceEpsModel:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

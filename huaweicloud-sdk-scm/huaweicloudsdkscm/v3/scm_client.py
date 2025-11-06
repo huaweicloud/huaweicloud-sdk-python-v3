@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ScmClient(Client):
     def __init__(self):
-        super(ScmClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkscm.v3.model")
 
     @classmethod

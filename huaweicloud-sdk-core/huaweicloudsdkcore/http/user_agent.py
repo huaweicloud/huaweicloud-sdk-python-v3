@@ -71,7 +71,7 @@ class _UserAgent:
 
             with open(self._app_file_path, "r", encoding="utf-8") as file:
                 app_id = file.readline().strip()
-                return app_id if app_id else None
+                return app_id or None
         except Exception:
             return None
 

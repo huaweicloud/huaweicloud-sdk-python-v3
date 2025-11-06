@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -34,7 +32,7 @@ class CinderListVolumeTypesResponse(SdkResponse):
         :type volume_types: list[:class:`huaweicloudsdkevs.v2.VolumeType`]
         """
         
-        super(CinderListVolumeTypesResponse, self).__init__()
+        super().__init__()
 
         self._volume_types = None
         self.discriminator = None
@@ -61,10 +59,12 @@ class CinderListVolumeTypesResponse(SdkResponse):
         self._volume_types = volume_types
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("CinderListVolumeTypesResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -90,10 +90,6 @@ class CinderListVolumeTypesResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

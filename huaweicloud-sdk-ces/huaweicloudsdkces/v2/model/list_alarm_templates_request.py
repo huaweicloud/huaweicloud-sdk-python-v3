@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -53,7 +51,7 @@ class ListAlarmTemplatesRequest:
         :type template_type: str
         :param template_name: 告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]，支持模糊匹配
         :type template_name: str
-        :param product_name: 支持按照产品名称粒度进行查询告警模板，产品名称一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :param product_name: （已废弃）支持按照产品名称粒度进行查询告警模板，产品名称一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
         :type product_name: str
         """
         
@@ -219,7 +217,7 @@ class ListAlarmTemplatesRequest:
     def product_name(self):
         r"""Gets the product_name of this ListAlarmTemplatesRequest.
 
-        支持按照产品名称粒度进行查询告警模板，产品名称一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+        （已废弃）支持按照产品名称粒度进行查询告警模板，产品名称一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
 
         :return: The product_name of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -230,7 +228,7 @@ class ListAlarmTemplatesRequest:
     def product_name(self, product_name):
         r"""Sets the product_name of this ListAlarmTemplatesRequest.
 
-        支持按照产品名称粒度进行查询告警模板，产品名称一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+        （已废弃）支持按照产品名称粒度进行查询告警模板，产品名称一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
 
         :param product_name: The product_name of this ListAlarmTemplatesRequest.
         :type product_name: str
@@ -238,10 +236,9 @@ class ListAlarmTemplatesRequest:
         self._product_name = product_name
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -267,10 +264,6 @@ class ListAlarmTemplatesRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

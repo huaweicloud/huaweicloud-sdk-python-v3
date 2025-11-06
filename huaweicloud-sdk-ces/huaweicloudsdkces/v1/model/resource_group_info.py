@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -23,7 +21,7 @@ class ResourceGroupInfo:
         'group_id': 'str',
         'create_time': 'int',
         'instance_statistics': 'InstanceStatistics',
-        'status': 'str',
+        'status': 'StatusSchema',
         'enterprise_project_id': 'str',
         'resources': 'list[Resource]'
     }
@@ -47,7 +45,7 @@ class ResourceGroupInfo:
 
         :param group_name: 资源分组的名称，如：ResourceGroup-Test01。
         :type group_name: str
-        :param type: 资源分组添加资源方式，EPS：同步企业项目，TAG：标签动态匹配，空值：手动添加；
+        :param type: 资源添加/匹配方式，取值只能为EPS（匹配企业项目）,TAG（匹配标签）,NAME（匹配实例名称）, COMB（组合匹配）,Manual/空值（手动添加）
         :type type: str
         :param relation_ids: 企业项目ID列表
         :type relation_ids: list[str]
@@ -57,8 +55,8 @@ class ResourceGroupInfo:
         :type create_time: int
         :param instance_statistics: 
         :type instance_statistics: :class:`huaweicloudsdkces.v1.InstanceStatistics`
-        :param status: 资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkces.v1.StatusSchema`
         :param enterprise_project_id: 创建资源分组时关联的企业项目，默认值为0，表示企业项目为default。
         :type enterprise_project_id: str
         :param resources: 一组或者多个资源信息，默认为空。
@@ -123,7 +121,7 @@ class ResourceGroupInfo:
     def type(self):
         r"""Gets the type of this ResourceGroupInfo.
 
-        资源分组添加资源方式，EPS：同步企业项目，TAG：标签动态匹配，空值：手动添加；
+        资源添加/匹配方式，取值只能为EPS（匹配企业项目）,TAG（匹配标签）,NAME（匹配实例名称）, COMB（组合匹配）,Manual/空值（手动添加）
 
         :return: The type of this ResourceGroupInfo.
         :rtype: str
@@ -134,7 +132,7 @@ class ResourceGroupInfo:
     def type(self, type):
         r"""Sets the type of this ResourceGroupInfo.
 
-        资源分组添加资源方式，EPS：同步企业项目，TAG：标签动态匹配，空值：手动添加；
+        资源添加/匹配方式，取值只能为EPS（匹配企业项目）,TAG（匹配标签）,NAME（匹配实例名称）, COMB（组合匹配）,Manual/空值（手动添加）
 
         :param type: The type of this ResourceGroupInfo.
         :type type: str
@@ -229,10 +227,8 @@ class ResourceGroupInfo:
     def status(self):
         r"""Gets the status of this ResourceGroupInfo.
 
-        资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
-
         :return: The status of this ResourceGroupInfo.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v1.StatusSchema`
         """
         return self._status
 
@@ -240,10 +236,8 @@ class ResourceGroupInfo:
     def status(self, status):
         r"""Sets the status of this ResourceGroupInfo.
 
-        资源分组的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
-
         :param status: The status of this ResourceGroupInfo.
-        :type status: str
+        :type status: :class:`huaweicloudsdkces.v1.StatusSchema`
         """
         self._status = status
 
@@ -292,10 +286,9 @@ class ResourceGroupInfo:
         self._resources = resources
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -321,10 +314,6 @@ class ResourceGroupInfo:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class EpsAsyncClient(Client):
     def __init__(self):
-        super(EpsAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkeps.v1.model")
 
     @classmethod

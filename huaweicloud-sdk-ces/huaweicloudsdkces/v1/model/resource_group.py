@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -19,7 +17,7 @@ class ResourceGroup:
     openapi_types = {
         'namespace': 'str',
         'dimensions': 'list[MetricsDimension]',
-        'status': 'str',
+        'status': 'StatusSchema',
         'event_type': 'int'
     }
 
@@ -35,12 +33,12 @@ class ResourceGroup:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param namespace: **参数解释** 资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。 **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。 **默认取值** 不涉及 
         :type namespace: str
-        :param dimensions: 一个或者多个资源维度。
+        :param dimensions: **参数解释** 资源的维度信息 **约束限制** 不超过4个维度 
         :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
-        :param status: 资源分组中该资源的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
-        :type status: str
+        :param status: 
+        :type status: :class:`huaweicloudsdkces.v1.StatusSchema`
         :param event_type: 事件类型，默认为0。
         :type event_type: int
         """
@@ -66,7 +64,7 @@ class ResourceGroup:
     def namespace(self):
         r"""Gets the namespace of this ResourceGroup.
 
-        资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        **参数解释** 资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。 **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。 **默认取值** 不涉及 
 
         :return: The namespace of this ResourceGroup.
         :rtype: str
@@ -77,7 +75,7 @@ class ResourceGroup:
     def namespace(self, namespace):
         r"""Sets the namespace of this ResourceGroup.
 
-        资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        **参数解释** 资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。 **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。 **默认取值** 不涉及 
 
         :param namespace: The namespace of this ResourceGroup.
         :type namespace: str
@@ -88,7 +86,7 @@ class ResourceGroup:
     def dimensions(self):
         r"""Gets the dimensions of this ResourceGroup.
 
-        一个或者多个资源维度。
+        **参数解释** 资源的维度信息 **约束限制** 不超过4个维度 
 
         :return: The dimensions of this ResourceGroup.
         :rtype: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
@@ -99,7 +97,7 @@ class ResourceGroup:
     def dimensions(self, dimensions):
         r"""Sets the dimensions of this ResourceGroup.
 
-        一个或者多个资源维度。
+        **参数解释** 资源的维度信息 **约束限制** 不超过4个维度 
 
         :param dimensions: The dimensions of this ResourceGroup.
         :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
@@ -110,10 +108,8 @@ class ResourceGroup:
     def status(self):
         r"""Gets the status of this ResourceGroup.
 
-        资源分组中该资源的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
-
         :return: The status of this ResourceGroup.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkces.v1.StatusSchema`
         """
         return self._status
 
@@ -121,10 +117,8 @@ class ResourceGroup:
     def status(self, status):
         r"""Sets the status of this ResourceGroup.
 
-        资源分组中该资源的当前状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未设置告警规则。
-
         :param status: The status of this ResourceGroup.
-        :type status: str
+        :type status: :class:`huaweicloudsdkces.v1.StatusSchema`
         """
         self._status = status
 
@@ -151,10 +145,9 @@ class ResourceGroup:
         self._event_type = event_type
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -180,10 +173,6 @@ class ResourceGroup:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

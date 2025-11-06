@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -37,13 +35,13 @@ class ListAlarmTemplatesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_template_id: 自定义告警模的ID，如：at1603330892378wkDm77y6B。
+        :param alarm_template_id: 自定义告警模版的ID，如：at1603330892378wkDm77y6B。
         :type alarm_template_id: str
-        :param namespace: 自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param namespace: 自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。
         :type namespace: str
-        :param dname: 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        :param dname: 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
         :type dname: str
-        :param start: 分页起始值，类型为integer，默认值为0。
+        :param start: 分页起始位置，值为告警模版的ID，如：at1603330892378wkDm77y6B。
         :type start: str
         :param limit: 单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
         :type limit: str
@@ -73,7 +71,7 @@ class ListAlarmTemplatesRequest:
     def alarm_template_id(self):
         r"""Gets the alarm_template_id of this ListAlarmTemplatesRequest.
 
-        自定义告警模的ID，如：at1603330892378wkDm77y6B。
+        自定义告警模版的ID，如：at1603330892378wkDm77y6B。
 
         :return: The alarm_template_id of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -84,7 +82,7 @@ class ListAlarmTemplatesRequest:
     def alarm_template_id(self, alarm_template_id):
         r"""Sets the alarm_template_id of this ListAlarmTemplatesRequest.
 
-        自定义告警模的ID，如：at1603330892378wkDm77y6B。
+        自定义告警模版的ID，如：at1603330892378wkDm77y6B。
 
         :param alarm_template_id: The alarm_template_id of this ListAlarmTemplatesRequest.
         :type alarm_template_id: str
@@ -95,7 +93,7 @@ class ListAlarmTemplatesRequest:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmTemplatesRequest.
 
-        自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。
 
         :return: The namespace of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -106,7 +104,7 @@ class ListAlarmTemplatesRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmTemplatesRequest.
 
-        自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。
 
         :param namespace: The namespace of this ListAlarmTemplatesRequest.
         :type namespace: str
@@ -117,7 +115,7 @@ class ListAlarmTemplatesRequest:
     def dname(self):
         r"""Gets the dname of this ListAlarmTemplatesRequest.
 
-        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
 
         :return: The dname of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -128,7 +126,7 @@ class ListAlarmTemplatesRequest:
     def dname(self, dname):
         r"""Sets the dname of this ListAlarmTemplatesRequest.
 
-        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
+        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
 
         :param dname: The dname of this ListAlarmTemplatesRequest.
         :type dname: str
@@ -139,7 +137,7 @@ class ListAlarmTemplatesRequest:
     def start(self):
         r"""Gets the start of this ListAlarmTemplatesRequest.
 
-        分页起始值，类型为integer，默认值为0。
+        分页起始位置，值为告警模版的ID，如：at1603330892378wkDm77y6B。
 
         :return: The start of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -150,7 +148,7 @@ class ListAlarmTemplatesRequest:
     def start(self, start):
         r"""Sets the start of this ListAlarmTemplatesRequest.
 
-        分页起始值，类型为integer，默认值为0。
+        分页起始位置，值为告警模版的ID，如：at1603330892378wkDm77y6B。
 
         :param start: The start of this ListAlarmTemplatesRequest.
         :type start: str
@@ -180,10 +178,9 @@ class ListAlarmTemplatesRequest:
         self._limit = limit
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -209,10 +206,6 @@ class ListAlarmTemplatesRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

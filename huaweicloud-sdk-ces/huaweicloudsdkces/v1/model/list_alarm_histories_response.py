@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -18,8 +16,8 @@ class ListAlarmHistoriesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'alarm_histories': 'list[AlarmHistoryInfo]',
-        'meta_data': 'MetaDataForAlarmHistory'
+        'alarm_histories': 'list[AlarmHistoryInfoResp]',
+        'meta_data': 'MetaDataForAlarmHistoryResp'
     }
 
     attribute_map = {
@@ -32,13 +30,13 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param alarm_histories: 一条或者多条告警历史详细信息
-        :type alarm_histories: list[:class:`huaweicloudsdkces.v1.AlarmHistoryInfo`]
+        :param alarm_histories: **参数解释**： 一条或者多条告警历史详细信息 
+        :type alarm_histories: list[:class:`huaweicloudsdkces.v1.AlarmHistoryInfoResp`]
         :param meta_data: 
-        :type meta_data: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistory`
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistoryResp`
         """
         
-        super(ListAlarmHistoriesResponse, self).__init__()
+        super().__init__()
 
         self._alarm_histories = None
         self._meta_data = None
@@ -53,10 +51,10 @@ class ListAlarmHistoriesResponse(SdkResponse):
     def alarm_histories(self):
         r"""Gets the alarm_histories of this ListAlarmHistoriesResponse.
 
-        一条或者多条告警历史详细信息
+        **参数解释**： 一条或者多条告警历史详细信息 
 
         :return: The alarm_histories of this ListAlarmHistoriesResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmHistoryInfo`]
+        :rtype: list[:class:`huaweicloudsdkces.v1.AlarmHistoryInfoResp`]
         """
         return self._alarm_histories
 
@@ -64,10 +62,10 @@ class ListAlarmHistoriesResponse(SdkResponse):
     def alarm_histories(self, alarm_histories):
         r"""Sets the alarm_histories of this ListAlarmHistoriesResponse.
 
-        一条或者多条告警历史详细信息
+        **参数解释**： 一条或者多条告警历史详细信息 
 
         :param alarm_histories: The alarm_histories of this ListAlarmHistoriesResponse.
-        :type alarm_histories: list[:class:`huaweicloudsdkces.v1.AlarmHistoryInfo`]
+        :type alarm_histories: list[:class:`huaweicloudsdkces.v1.AlarmHistoryInfoResp`]
         """
         self._alarm_histories = alarm_histories
 
@@ -76,7 +74,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
         r"""Gets the meta_data of this ListAlarmHistoriesResponse.
 
         :return: The meta_data of this ListAlarmHistoriesResponse.
-        :rtype: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistory`
+        :rtype: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistoryResp`
         """
         return self._meta_data
 
@@ -85,15 +83,17 @@ class ListAlarmHistoriesResponse(SdkResponse):
         r"""Sets the meta_data of this ListAlarmHistoriesResponse.
 
         :param meta_data: The meta_data of this ListAlarmHistoriesResponse.
-        :type meta_data: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistory`
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaDataForAlarmHistoryResp`
         """
         self._meta_data = meta_data
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ListAlarmHistoriesResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -119,10 +119,6 @@ class ListAlarmHistoriesResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

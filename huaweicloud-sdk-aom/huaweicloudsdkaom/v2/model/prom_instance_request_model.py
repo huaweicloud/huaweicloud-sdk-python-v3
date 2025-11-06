@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -21,7 +19,8 @@ class PromInstanceRequestModel:
         'prom_type': 'str',
         'prom_version': 'str',
         'enterprise_project_id': 'str',
-        'project_id': 'str'
+        'project_id': 'str',
+        'aggr_prometheus_info': 'list[AggrPrometheusInfo]'
     }
 
     attribute_map = {
@@ -29,17 +28,18 @@ class PromInstanceRequestModel:
         'prom_type': 'prom_type',
         'prom_version': 'prom_version',
         'enterprise_project_id': 'enterprise_project_id',
-        'project_id': 'project_id'
+        'project_id': 'project_id',
+        'aggr_prometheus_info': 'aggr_prometheus_info'
     }
 
-    def __init__(self, prom_name=None, prom_type=None, prom_version=None, enterprise_project_id=None, project_id=None):
+    def __init__(self, prom_name=None, prom_type=None, prom_version=None, enterprise_project_id=None, project_id=None, aggr_prometheus_info=None):
         r"""PromInstanceRequestModel
 
         The model defined in huaweicloud sdk
 
         :param prom_name: Prometheus实例名称 名称不能以下划线或中划线开头结尾，只含有中文、英文、数字、下划线、中划线、长度1-100。
         :type prom_name: str
-        :param prom_type: Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
+        :param prom_type: Prometheus实例类型。 - ECS：Prometheus for ECS - CCE：Prometheus for CCE - REMOTE_WRITE：Prometheus 通用实例 - CLOUD_SERVICE：Prometheus for 云服务 - ACROSS_ACCOUNT：Prometheus for 多账号聚合实例 [（暂不支持ACROSS_ACCOUNT类型）](tag:hws_eu,g42,sbc,OCB,ctc,cmcc,srg,hk_sbc,ctc,DT)
         :type prom_type: str
         :param prom_version: Prometheus实例版本号。
         :type prom_version: str
@@ -47,6 +47,8 @@ class PromInstanceRequestModel:
         :type enterprise_project_id: str
         :param project_id: Prometheus实例所属projectId。
         :type project_id: str
+        :param aggr_prometheus_info: 被聚合的账号和普罗实例列表。
+        :type aggr_prometheus_info: list[:class:`huaweicloudsdkaom.v2.AggrPrometheusInfo`]
         """
         
         
@@ -56,6 +58,7 @@ class PromInstanceRequestModel:
         self._prom_version = None
         self._enterprise_project_id = None
         self._project_id = None
+        self._aggr_prometheus_info = None
         self.discriminator = None
 
         self.prom_name = prom_name
@@ -66,6 +69,8 @@ class PromInstanceRequestModel:
             self.enterprise_project_id = enterprise_project_id
         if project_id is not None:
             self.project_id = project_id
+        if aggr_prometheus_info is not None:
+            self.aggr_prometheus_info = aggr_prometheus_info
 
     @property
     def prom_name(self):
@@ -93,7 +98,7 @@ class PromInstanceRequestModel:
     def prom_type(self):
         r"""Gets the prom_type of this PromInstanceRequestModel.
 
-        Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
+        Prometheus实例类型。 - ECS：Prometheus for ECS - CCE：Prometheus for CCE - REMOTE_WRITE：Prometheus 通用实例 - CLOUD_SERVICE：Prometheus for 云服务 - ACROSS_ACCOUNT：Prometheus for 多账号聚合实例 [（暂不支持ACROSS_ACCOUNT类型）](tag:hws_eu,g42,sbc,OCB,ctc,cmcc,srg,hk_sbc,ctc,DT)
 
         :return: The prom_type of this PromInstanceRequestModel.
         :rtype: str
@@ -104,7 +109,7 @@ class PromInstanceRequestModel:
     def prom_type(self, prom_type):
         r"""Sets the prom_type of this PromInstanceRequestModel.
 
-        Prometheus实例类型（暂时不支持VPC、KUBERNETES）。
+        Prometheus实例类型。 - ECS：Prometheus for ECS - CCE：Prometheus for CCE - REMOTE_WRITE：Prometheus 通用实例 - CLOUD_SERVICE：Prometheus for 云服务 - ACROSS_ACCOUNT：Prometheus for 多账号聚合实例 [（暂不支持ACROSS_ACCOUNT类型）](tag:hws_eu,g42,sbc,OCB,ctc,cmcc,srg,hk_sbc,ctc,DT)
 
         :param prom_type: The prom_type of this PromInstanceRequestModel.
         :type prom_type: str
@@ -177,11 +182,32 @@ class PromInstanceRequestModel:
         """
         self._project_id = project_id
 
+    @property
+    def aggr_prometheus_info(self):
+        r"""Gets the aggr_prometheus_info of this PromInstanceRequestModel.
+
+        被聚合的账号和普罗实例列表。
+
+        :return: The aggr_prometheus_info of this PromInstanceRequestModel.
+        :rtype: list[:class:`huaweicloudsdkaom.v2.AggrPrometheusInfo`]
+        """
+        return self._aggr_prometheus_info
+
+    @aggr_prometheus_info.setter
+    def aggr_prometheus_info(self, aggr_prometheus_info):
+        r"""Sets the aggr_prometheus_info of this PromInstanceRequestModel.
+
+        被聚合的账号和普罗实例列表。
+
+        :param aggr_prometheus_info: The aggr_prometheus_info of this PromInstanceRequestModel.
+        :type aggr_prometheus_info: list[:class:`huaweicloudsdkaom.v2.AggrPrometheusInfo`]
+        """
+        self._aggr_prometheus_info = aggr_prometheus_info
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -207,10 +233,6 @@ class PromInstanceRequestModel:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

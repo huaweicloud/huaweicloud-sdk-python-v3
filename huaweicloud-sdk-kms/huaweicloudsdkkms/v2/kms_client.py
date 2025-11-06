@@ -17,7 +17,7 @@ except ImportError as e:
 
 class KmsClient(Client):
     def __init__(self):
-        super(KmsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkkms.v2.model")
 
     @classmethod

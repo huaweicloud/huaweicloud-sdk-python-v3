@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -33,11 +31,11 @@ class RelationModel:
 
         The model defined in huaweicloud sdk
 
-        :param key: 指定查询字段的key，对应metadata里面的key 。
+        :param key: 指定查询字段的key，对应metadata里面的key 。当metadata_relation参数不为空时 key参数必填。
         :type key: str
         :param value: 查询条件中指定key的值。
         :type value: list[str]
-        :param relation: 该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。
+        :param relation: 该条件与其他条件的组合方式。  - AND：必须满足所有条件。 -  OR：可以满足其中一个条件。 -  NOT：必须不满足所有条件。
         :type relation: str
         """
         
@@ -48,8 +46,7 @@ class RelationModel:
         self._relation = None
         self.discriminator = None
 
-        if key is not None:
-            self.key = key
+        self.key = key
         if value is not None:
             self.value = value
         if relation is not None:
@@ -59,7 +56,7 @@ class RelationModel:
     def key(self):
         r"""Gets the key of this RelationModel.
 
-        指定查询字段的key，对应metadata里面的key 。
+        指定查询字段的key，对应metadata里面的key 。当metadata_relation参数不为空时 key参数必填。
 
         :return: The key of this RelationModel.
         :rtype: str
@@ -70,7 +67,7 @@ class RelationModel:
     def key(self, key):
         r"""Sets the key of this RelationModel.
 
-        指定查询字段的key，对应metadata里面的key 。
+        指定查询字段的key，对应metadata里面的key 。当metadata_relation参数不为空时 key参数必填。
 
         :param key: The key of this RelationModel.
         :type key: str
@@ -103,7 +100,7 @@ class RelationModel:
     def relation(self):
         r"""Gets the relation of this RelationModel.
 
-        该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。
+        该条件与其他条件的组合方式。  - AND：必须满足所有条件。 -  OR：可以满足其中一个条件。 -  NOT：必须不满足所有条件。
 
         :return: The relation of this RelationModel.
         :rtype: str
@@ -114,7 +111,7 @@ class RelationModel:
     def relation(self, relation):
         r"""Sets the relation of this RelationModel.
 
-        该条件与其他条件的组合方式。 AND：必须满足所有条件； OR：可以满足其中一个条件； NOT：必须不满足所有条件。
+        该条件与其他条件的组合方式。  - AND：必须满足所有条件。 -  OR：可以满足其中一个条件。 -  NOT：必须不满足所有条件。
 
         :param relation: The relation of this RelationModel.
         :type relation: str
@@ -122,10 +119,9 @@ class RelationModel:
         self._relation = relation
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -151,10 +147,6 @@ class RelationModel:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -31,7 +29,7 @@ class UpdateResourceGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 资源分组ID。
+        :param group_id: **参数解释**: 资源分组ID **约束限制**: 不涉及 **取值范围**: 以rg开头，后跟22位由字母或数字组成的字符串 **默认取值**: 不涉及
         :type group_id: str
         :param body: Body of the UpdateResourceGroupRequest
         :type body: :class:`huaweicloudsdkces.v1.UpdateResourceGroupRequestBody`
@@ -51,7 +49,7 @@ class UpdateResourceGroupRequest:
     def group_id(self):
         r"""Gets the group_id of this UpdateResourceGroupRequest.
 
-        资源分组ID。
+        **参数解释**: 资源分组ID **约束限制**: 不涉及 **取值范围**: 以rg开头，后跟22位由字母或数字组成的字符串 **默认取值**: 不涉及
 
         :return: The group_id of this UpdateResourceGroupRequest.
         :rtype: str
@@ -62,7 +60,7 @@ class UpdateResourceGroupRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this UpdateResourceGroupRequest.
 
-        资源分组ID。
+        **参数解释**: 资源分组ID **约束限制**: 不涉及 **取值范围**: 以rg开头，后跟22位由字母或数字组成的字符串 **默认取值**: 不涉及
 
         :param group_id: The group_id of this UpdateResourceGroupRequest.
         :type group_id: str
@@ -88,10 +86,9 @@ class UpdateResourceGroupRequest:
         self._body = body
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -117,10 +114,6 @@ class UpdateResourceGroupRequest:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

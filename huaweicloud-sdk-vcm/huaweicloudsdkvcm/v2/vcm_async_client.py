@@ -17,7 +17,7 @@ except ImportError as e:
 
 class VcmAsyncClient(Client):
     def __init__(self):
-        super(VcmAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvcm.v2.model")
 
     @classmethod

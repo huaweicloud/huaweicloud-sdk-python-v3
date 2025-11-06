@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CssAsyncClient(Client):
     def __init__(self):
-        super(CssAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcss.v2.model")
 
     @classmethod

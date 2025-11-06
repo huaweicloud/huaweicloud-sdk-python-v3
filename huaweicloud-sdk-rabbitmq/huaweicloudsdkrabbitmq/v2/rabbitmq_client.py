@@ -17,7 +17,7 @@ except ImportError as e:
 
 class RabbitMQClient(Client):
     def __init__(self):
-        super(RabbitMQClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkrabbitmq.v2.model")
 
     @classmethod

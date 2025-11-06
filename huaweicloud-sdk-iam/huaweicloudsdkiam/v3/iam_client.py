@@ -17,7 +17,7 @@ except ImportError as e:
 
 class IamClient(Client):
     def __init__(self):
-        super(IamClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkiam.v3.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CbhClient(Client):
     def __init__(self):
-        super(CbhClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcbh.v1.model")
 
     @classmethod

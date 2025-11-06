@@ -17,7 +17,7 @@ except ImportError as e:
 
 class RgcClient(Client):
     def __init__(self):
-        super(RgcClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkrgc.v1.model")
 
     @classmethod

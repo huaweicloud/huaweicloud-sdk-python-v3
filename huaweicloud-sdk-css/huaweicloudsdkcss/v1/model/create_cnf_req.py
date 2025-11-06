@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -20,17 +18,19 @@ class CreateCnfReq:
         'name': 'str',
         'conf_content': 'str',
         'setting': 'Setting',
-        'sensitive_words': 'list[str]'
+        'sensitive_words': 'list[str]',
+        'desc': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'conf_content': 'conf_content',
         'setting': 'setting',
-        'sensitive_words': 'sensitive_words'
+        'sensitive_words': 'sensitive_words',
+        'desc': 'desc'
     }
 
-    def __init__(self, name=None, conf_content=None, setting=None, sensitive_words=None):
+    def __init__(self, name=None, conf_content=None, setting=None, sensitive_words=None, desc=None):
         r"""CreateCnfReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +43,8 @@ class CreateCnfReq:
         :type setting: :class:`huaweicloudsdkcss.v1.Setting`
         :param sensitive_words: 敏感字符替换 输入需要隐藏的敏感字串列表。配置隐藏字符串列表后，在返回的配置内容中，会将所有在列表中的字串隐藏为***（列表最大支持20条，单个字串最大长度512字节）
         :type sensitive_words: list[str]
+        :param desc: **参数解释**： 配置文件描述。 **约束限制**： 不涉及 **取值范围**： 不超过128个字符。 **默认取值**： 不涉及
+        :type desc: str
         """
         
         
@@ -51,6 +53,7 @@ class CreateCnfReq:
         self._conf_content = None
         self._setting = None
         self._sensitive_words = None
+        self._desc = None
         self.discriminator = None
 
         self.name = name
@@ -58,6 +61,8 @@ class CreateCnfReq:
         self.setting = setting
         if sensitive_words is not None:
             self.sensitive_words = sensitive_words
+        if desc is not None:
+            self.desc = desc
 
     @property
     def name(self):
@@ -143,11 +148,32 @@ class CreateCnfReq:
         """
         self._sensitive_words = sensitive_words
 
+    @property
+    def desc(self):
+        r"""Gets the desc of this CreateCnfReq.
+
+        **参数解释**： 配置文件描述。 **约束限制**： 不涉及 **取值范围**： 不超过128个字符。 **默认取值**： 不涉及
+
+        :return: The desc of this CreateCnfReq.
+        :rtype: str
+        """
+        return self._desc
+
+    @desc.setter
+    def desc(self, desc):
+        r"""Sets the desc of this CreateCnfReq.
+
+        **参数解释**： 配置文件描述。 **约束限制**： 不涉及 **取值范围**： 不超过128个字符。 **默认取值**： 不涉及
+
+        :param desc: The desc of this CreateCnfReq.
+        :type desc: str
+        """
+        self._desc = desc
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -173,10 +199,6 @@ class CreateCnfReq:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

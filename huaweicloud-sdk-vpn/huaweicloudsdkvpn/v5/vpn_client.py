@@ -17,7 +17,7 @@ except ImportError as e:
 
 class VpnClient(Client):
     def __init__(self):
-        super(VpnClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvpn.v5.model")
 
     @classmethod

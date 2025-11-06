@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ImageClient(Client):
     def __init__(self):
-        super(ImageClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkimage.v2.model")
 
     @classmethod

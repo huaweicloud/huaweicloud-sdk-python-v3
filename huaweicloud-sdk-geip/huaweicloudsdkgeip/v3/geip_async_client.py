@@ -17,7 +17,7 @@ except ImportError as e:
 
 class GeipAsyncClient(Client):
     def __init__(self):
-        super(GeipAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkgeip.v3.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DgcClient(Client):
     def __init__(self):
-        super(DgcClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdgc.v1.model")
 
     @classmethod

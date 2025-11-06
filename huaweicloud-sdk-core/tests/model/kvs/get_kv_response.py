@@ -15,7 +15,7 @@ class GetKvResponse(SdkResponse):
     }
 
     def __init__(self, kv_doc=None):
-        super(GetKvResponse, self).__init__()
+        super().__init__()
 
         self._kv_doc = None
         self.discriminator = None

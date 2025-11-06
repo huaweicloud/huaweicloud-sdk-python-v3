@@ -17,7 +17,7 @@ except ImportError as e:
 
 class OcrClient(Client):
     def __init__(self):
-        super(OcrClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkocr.v1.model")
 
     @classmethod

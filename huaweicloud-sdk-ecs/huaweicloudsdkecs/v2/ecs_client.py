@@ -17,7 +17,7 @@ except ImportError as e:
 
 class EcsClient(Client):
     def __init__(self):
-        super(EcsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkecs.v2.model")
 
     @classmethod

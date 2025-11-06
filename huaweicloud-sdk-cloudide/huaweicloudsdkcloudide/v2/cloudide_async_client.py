@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CloudIDEAsyncClient(Client):
     def __init__(self):
-        super(CloudIDEAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudide.v2.model")
 
     @classmethod

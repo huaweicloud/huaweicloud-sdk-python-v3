@@ -17,7 +17,7 @@ except ImportError as e:
 
 class IDMEClassicAPIClient(Client):
     def __init__(self):
-        super(IDMEClassicAPIClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkidmeclassicapi.v1.model")
 
     @classmethod

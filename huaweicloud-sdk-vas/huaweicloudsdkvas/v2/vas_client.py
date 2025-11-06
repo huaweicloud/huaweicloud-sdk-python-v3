@@ -17,7 +17,7 @@ except ImportError as e:
 
 class VasClient(Client):
     def __init__(self):
-        super(VasClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkvas.v2.model")
 
     @classmethod

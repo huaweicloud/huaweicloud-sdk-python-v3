@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -65,7 +63,8 @@ class OperateUsedJobSchedule:
 
         if id is not None:
             self.id = id
-        self.job_schedule_type = job_schedule_type
+        if job_schedule_type is not None:
+            self.job_schedule_type = job_schedule_type
         if one_time_occurrence is not None:
             self.one_time_occurrence = one_time_occurrence
         if frequency is not None:
@@ -192,10 +191,9 @@ class OperateUsedJobSchedule:
         self._duration = duration
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -221,10 +219,6 @@ class OperateUsedJobSchedule:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class MaStudioClient(Client):
     def __init__(self):
-        super(MaStudioClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmastudio.v1.model")
 
     @classmethod

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -35,7 +33,8 @@ class CreateAccessConfigRequestBody:
         'application_id': 'str',
         'environment_id': 'str',
         'component_id': 'list[str]',
-        'access_config_type_source': 'str'
+        'access_config_type_source': 'str',
+        'recursive_depth': 'int'
     }
 
     attribute_map = {
@@ -57,10 +56,11 @@ class CreateAccessConfigRequestBody:
         'application_id': 'application_id',
         'environment_id': 'environment_id',
         'component_id': 'component_id',
-        'access_config_type_source': 'access_config_type_source'
+        'access_config_type_source': 'access_config_type_source',
+        'recursive_depth': 'recursive_depth'
     }
 
-    def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, binary_collect=None, log_split=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None, access_config_type_source=None):
+    def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, binary_collect=None, log_split=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None, access_config_type_source=None, recursive_depth=None):
         r"""CreateAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -103,6 +103,8 @@ class CreateAccessConfigRequestBody:
         :type component_id: list[str]
         :param access_config_type_source: 日志接入自建软件来源
         :type access_config_type_source: str
+        :param recursive_depth: **参数解释：** 采集路径递归最大深度。 **取值范围：** 不涉及。
+        :type recursive_depth: int
         """
         
         
@@ -126,6 +128,7 @@ class CreateAccessConfigRequestBody:
         self._environment_id = None
         self._component_id = None
         self._access_config_type_source = None
+        self._recursive_depth = None
         self.discriminator = None
 
         self.access_config_name = access_config_name
@@ -162,6 +165,8 @@ class CreateAccessConfigRequestBody:
             self.component_id = component_id
         if access_config_type_source is not None:
             self.access_config_type_source = access_config_type_source
+        if recursive_depth is not None:
+            self.recursive_depth = recursive_depth
 
     @property
     def access_config_name(self):
@@ -569,11 +574,32 @@ class CreateAccessConfigRequestBody:
         """
         self._access_config_type_source = access_config_type_source
 
+    @property
+    def recursive_depth(self):
+        r"""Gets the recursive_depth of this CreateAccessConfigRequestBody.
+
+        **参数解释：** 采集路径递归最大深度。 **取值范围：** 不涉及。
+
+        :return: The recursive_depth of this CreateAccessConfigRequestBody.
+        :rtype: int
+        """
+        return self._recursive_depth
+
+    @recursive_depth.setter
+    def recursive_depth(self, recursive_depth):
+        r"""Sets the recursive_depth of this CreateAccessConfigRequestBody.
+
+        **参数解释：** 采集路径递归最大深度。 **取值范围：** 不涉及。
+
+        :param recursive_depth: The recursive_depth of this CreateAccessConfigRequestBody.
+        :type recursive_depth: int
+        """
+        self._recursive_depth = recursive_depth
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -599,10 +625,6 @@ class CreateAccessConfigRequestBody:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -61,13 +59,13 @@ class UpdateNotificationMasksRequestBody:
         :type relation_ids: list[str]
         :param relation_type: 
         :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
-        :param metric_names: 关联指标名称，relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽
+        :param metric_names: **参数解释** 关联指标名称列表。 **约束限制**： relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽。包含的指标名称最多为50个，最少为0个。 
         :type metric_names: list[str]
-        :param product_metrics: 按云产品维度屏蔽时的指标信息
+        :param product_metrics: **参数解释** 按云产品维度屏蔽时的指标信息。 **约束限制**：| 包含的指标信息最多为50个，最少为0个。 
         :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
-        :param resource_level: dimension: 子维度,product: 云产品
+        :param resource_level: **参数解释** 资源类型。 **约束限制**： **取值范围**： 枚举值，取值为dimension、product - dimension: 子维度 - product: 云产品 **默认取值**： 不涉及。 
         :type resource_level: str
-        :param product_name: 资源为云产品时云产品名称
+        :param product_name: **参数解释** 资源为云产品时的云产品名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。 **默认取值**： 不涉及。 
         :type product_name: str
         :param resources: **参数解释**： 关联资源。           **约束限制**： 数组长度为[1,100] 
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -195,7 +193,7 @@ class UpdateNotificationMasksRequestBody:
     def metric_names(self):
         r"""Gets the metric_names of this UpdateNotificationMasksRequestBody.
 
-        关联指标名称，relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽
+        **参数解释** 关联指标名称列表。 **约束限制**： relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽。包含的指标名称最多为50个，最少为0个。 
 
         :return: The metric_names of this UpdateNotificationMasksRequestBody.
         :rtype: list[str]
@@ -206,7 +204,7 @@ class UpdateNotificationMasksRequestBody:
     def metric_names(self, metric_names):
         r"""Sets the metric_names of this UpdateNotificationMasksRequestBody.
 
-        关联指标名称，relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽
+        **参数解释** 关联指标名称列表。 **约束限制**： relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽。包含的指标名称最多为50个，最少为0个。 
 
         :param metric_names: The metric_names of this UpdateNotificationMasksRequestBody.
         :type metric_names: list[str]
@@ -217,7 +215,7 @@ class UpdateNotificationMasksRequestBody:
     def product_metrics(self):
         r"""Gets the product_metrics of this UpdateNotificationMasksRequestBody.
 
-        按云产品维度屏蔽时的指标信息
+        **参数解释** 按云产品维度屏蔽时的指标信息。 **约束限制**：| 包含的指标信息最多为50个，最少为0个。 
 
         :return: The product_metrics of this UpdateNotificationMasksRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
@@ -228,7 +226,7 @@ class UpdateNotificationMasksRequestBody:
     def product_metrics(self, product_metrics):
         r"""Sets the product_metrics of this UpdateNotificationMasksRequestBody.
 
-        按云产品维度屏蔽时的指标信息
+        **参数解释** 按云产品维度屏蔽时的指标信息。 **约束限制**：| 包含的指标信息最多为50个，最少为0个。 
 
         :param product_metrics: The product_metrics of this UpdateNotificationMasksRequestBody.
         :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
@@ -239,7 +237,7 @@ class UpdateNotificationMasksRequestBody:
     def resource_level(self):
         r"""Gets the resource_level of this UpdateNotificationMasksRequestBody.
 
-        dimension: 子维度,product: 云产品
+        **参数解释** 资源类型。 **约束限制**： **取值范围**： 枚举值，取值为dimension、product - dimension: 子维度 - product: 云产品 **默认取值**： 不涉及。 
 
         :return: The resource_level of this UpdateNotificationMasksRequestBody.
         :rtype: str
@@ -250,7 +248,7 @@ class UpdateNotificationMasksRequestBody:
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this UpdateNotificationMasksRequestBody.
 
-        dimension: 子维度,product: 云产品
+        **参数解释** 资源类型。 **约束限制**： **取值范围**： 枚举值，取值为dimension、product - dimension: 子维度 - product: 云产品 **默认取值**： 不涉及。 
 
         :param resource_level: The resource_level of this UpdateNotificationMasksRequestBody.
         :type resource_level: str
@@ -261,7 +259,7 @@ class UpdateNotificationMasksRequestBody:
     def product_name(self):
         r"""Gets the product_name of this UpdateNotificationMasksRequestBody.
 
-        资源为云产品时云产品名称
+        **参数解释** 资源为云产品时的云产品名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。 **默认取值**： 不涉及。 
 
         :return: The product_name of this UpdateNotificationMasksRequestBody.
         :rtype: str
@@ -272,7 +270,7 @@ class UpdateNotificationMasksRequestBody:
     def product_name(self, product_name):
         r"""Sets the product_name of this UpdateNotificationMasksRequestBody.
 
-        资源为云产品时云产品名称
+        **参数解释** 资源为云产品时的云产品名称。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。 **默认取值**： 不涉及。 
 
         :param product_name: The product_name of this UpdateNotificationMasksRequestBody.
         :type product_name: str
@@ -430,10 +428,9 @@ class UpdateNotificationMasksRequestBody:
         self._effective_timezone = effective_timezone
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -459,10 +456,6 @@ class UpdateNotificationMasksRequestBody:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

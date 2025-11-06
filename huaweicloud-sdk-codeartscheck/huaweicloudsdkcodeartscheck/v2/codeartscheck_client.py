@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CodeArtsCheckClient(Client):
     def __init__(self):
-        super(CodeArtsCheckClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcodeartscheck.v2.model")
 
     @classmethod

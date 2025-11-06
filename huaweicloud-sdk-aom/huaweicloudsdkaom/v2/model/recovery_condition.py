@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -29,7 +27,7 @@ class RecoveryCondition:
 
         The model defined in huaweicloud sdk
 
-        :param recovery_timeframe: 告警恢复周期的个数。
+        :param recovery_timeframe: 告警恢复周期的个数。取值范围为1~3 (如果recovery_timeframe 参数不为空，该参数必填）
         :type recovery_timeframe: int
         """
         
@@ -45,7 +43,7 @@ class RecoveryCondition:
     def recovery_timeframe(self):
         r"""Gets the recovery_timeframe of this RecoveryCondition.
 
-        告警恢复周期的个数。
+        告警恢复周期的个数。取值范围为1~3 (如果recovery_timeframe 参数不为空，该参数必填）
 
         :return: The recovery_timeframe of this RecoveryCondition.
         :rtype: int
@@ -56,7 +54,7 @@ class RecoveryCondition:
     def recovery_timeframe(self, recovery_timeframe):
         r"""Sets the recovery_timeframe of this RecoveryCondition.
 
-        告警恢复周期的个数。
+        告警恢复周期的个数。取值范围为1~3 (如果recovery_timeframe 参数不为空，该参数必填）
 
         :param recovery_timeframe: The recovery_timeframe of this RecoveryCondition.
         :type recovery_timeframe: int
@@ -64,10 +62,9 @@ class RecoveryCondition:
         self._recovery_timeframe = recovery_timeframe
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -93,10 +90,6 @@ class RecoveryCondition:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

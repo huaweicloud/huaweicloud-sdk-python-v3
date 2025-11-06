@@ -17,7 +17,7 @@ except ImportError as e:
 
 class ImsClient(Client):
     def __init__(self):
-        super(ImsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkims.v2.model")
 
     @classmethod

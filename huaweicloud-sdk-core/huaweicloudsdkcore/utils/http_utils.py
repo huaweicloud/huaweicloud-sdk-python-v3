@@ -23,8 +23,6 @@
 import datetime
 import decimal
 
-import six
-
 from huaweicloudsdkcore.http.formdata import FormFile
 from huaweicloudsdkcore.http.primitive_types import PRIMITIVE_TYPES
 from huaweicloudsdkcore.http.bson_types import BSON_TYPES
@@ -56,11 +54,10 @@ def sanitize_for_serialization(obj):
         obj_dict = obj
 
     else:
-        obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr, _ in six.iteritems(obj.openapi_types)
+        obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr, _ in obj.openapi_types.items()
                     if getattr(obj, attr) is not None}
 
-    return {key: sanitize_for_serialization(val)
-            for key, val in six.iteritems(obj_dict)}
+    return {key: sanitize_for_serialization(val) for key, val in obj_dict.items()}
 
 
 def sanitize_for_bson_serialization(obj):
@@ -92,11 +89,10 @@ def sanitize_for_bson_serialization(obj):
         return obj
 
     else:
-        obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr, _ in six.iteritems(obj.openapi_types)
+        obj_dict = {obj.attribute_map[attr]: getattr(obj, attr) for attr, _ in obj.openapi_types.items()
                     if getattr(obj, attr) is not None}
 
-    return {key: sanitize_for_bson_serialization(val)
-            for key, val in six.iteritems(obj_dict)}
+    return {key: sanitize_for_bson_serialization(val) for key, val in obj_dict.items()}
 
 
 def dict_params_to_tuple(k, v):
@@ -138,7 +134,7 @@ def parameters_to_tuples(params, collection_formats):
     new_params = []
     if collection_formats is None:
         collection_formats = {}
-    for k, v in six.iteritems(params) if isinstance(params, dict) else params:
+    for k, v in params.items() if isinstance(params, dict) else params:
         if k in collection_formats:
             collection_format = collection_formats[k]
             if collection_format == 'multi':

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DlfAsyncClient(Client):
     def __init__(self):
-        super(DlfAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdlf.v1.model")
 
     @classmethod

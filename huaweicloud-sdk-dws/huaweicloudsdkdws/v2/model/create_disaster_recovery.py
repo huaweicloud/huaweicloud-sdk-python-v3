@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -23,7 +21,14 @@ class CreateDisasterRecovery:
         'standby_cluster_id': 'str',
         'dr_sync_period': 'str',
         'primary_obs_bucket': 'str',
-        'standby_obs_bucket': 'str'
+        'standby_obs_bucket': 'str',
+        'discovery_recovery_id': 'str',
+        'primary_cluster_region': 'str',
+        'standby_cluster_region': 'str',
+        'primary_cluster_project_id': 'str',
+        'standby_cluster_project_id': 'str',
+        'cluster_role': 'str',
+        'primary_cluster_info': 'CreateDrClusterDto'
     }
 
     attribute_map = {
@@ -33,10 +38,17 @@ class CreateDisasterRecovery:
         'standby_cluster_id': 'standby_cluster_id',
         'dr_sync_period': 'dr_sync_period',
         'primary_obs_bucket': 'primary_obs_bucket',
-        'standby_obs_bucket': 'standby_obs_bucket'
+        'standby_obs_bucket': 'standby_obs_bucket',
+        'discovery_recovery_id': 'discovery_recovery_id',
+        'primary_cluster_region': 'primary_cluster_region',
+        'standby_cluster_region': 'standby_cluster_region',
+        'primary_cluster_project_id': 'primary_cluster_project_id',
+        'standby_cluster_project_id': 'standby_cluster_project_id',
+        'cluster_role': 'cluster_role',
+        'primary_cluster_info': 'primary_cluster_info'
     }
 
-    def __init__(self, name=None, dr_type=None, primary_cluster_id=None, standby_cluster_id=None, dr_sync_period=None, primary_obs_bucket=None, standby_obs_bucket=None):
+    def __init__(self, name=None, dr_type=None, primary_cluster_id=None, standby_cluster_id=None, dr_sync_period=None, primary_obs_bucket=None, standby_obs_bucket=None, discovery_recovery_id=None, primary_cluster_region=None, standby_cluster_region=None, primary_cluster_project_id=None, standby_cluster_project_id=None, cluster_role=None, primary_cluster_info=None):
         r"""CreateDisasterRecovery
 
         The model defined in huaweicloud sdk
@@ -55,6 +67,20 @@ class CreateDisasterRecovery:
         :type primary_obs_bucket: str
         :param standby_obs_bucket: **参数解释**： 备集群obs桶。 **取值范围**： 不涉及。
         :type standby_obs_bucket: str
+        :param discovery_recovery_id: **参数解释**： 容灾ID。 **取值范围**： 不涉及。
+        :type discovery_recovery_id: str
+        :param primary_cluster_region: **参数解释**： 容灾主Region。 **取值范围**： 不涉及。
+        :type primary_cluster_region: str
+        :param standby_cluster_region: **参数解释**： 容灾备Region。 **取值范围**： 不涉及。
+        :type standby_cluster_region: str
+        :param primary_cluster_project_id: **参数解释**： 容灾主集群项目ID。 **取值范围**： 不涉及。
+        :type primary_cluster_project_id: str
+        :param standby_cluster_project_id: **参数解释**： 容灾备集群项目ID。 **取值范围**： 不涉及。
+        :type standby_cluster_project_id: str
+        :param cluster_role: **参数解释**： 集群角色。 **取值范围**： 不涉及。
+        :type cluster_role: str
+        :param primary_cluster_info: 
+        :type primary_cluster_info: :class:`huaweicloudsdkdws.v2.CreateDrClusterDto`
         """
         
         
@@ -66,6 +92,13 @@ class CreateDisasterRecovery:
         self._dr_sync_period = None
         self._primary_obs_bucket = None
         self._standby_obs_bucket = None
+        self._discovery_recovery_id = None
+        self._primary_cluster_region = None
+        self._standby_cluster_region = None
+        self._primary_cluster_project_id = None
+        self._standby_cluster_project_id = None
+        self._cluster_role = None
+        self._primary_cluster_info = None
         self.discriminator = None
 
         self.name = name
@@ -77,6 +110,20 @@ class CreateDisasterRecovery:
             self.primary_obs_bucket = primary_obs_bucket
         if standby_obs_bucket is not None:
             self.standby_obs_bucket = standby_obs_bucket
+        if discovery_recovery_id is not None:
+            self.discovery_recovery_id = discovery_recovery_id
+        if primary_cluster_region is not None:
+            self.primary_cluster_region = primary_cluster_region
+        if standby_cluster_region is not None:
+            self.standby_cluster_region = standby_cluster_region
+        if primary_cluster_project_id is not None:
+            self.primary_cluster_project_id = primary_cluster_project_id
+        if standby_cluster_project_id is not None:
+            self.standby_cluster_project_id = standby_cluster_project_id
+        if cluster_role is not None:
+            self.cluster_role = cluster_role
+        if primary_cluster_info is not None:
+            self.primary_cluster_info = primary_cluster_info
 
     @property
     def name(self):
@@ -232,11 +279,160 @@ class CreateDisasterRecovery:
         """
         self._standby_obs_bucket = standby_obs_bucket
 
+    @property
+    def discovery_recovery_id(self):
+        r"""Gets the discovery_recovery_id of this CreateDisasterRecovery.
+
+        **参数解释**： 容灾ID。 **取值范围**： 不涉及。
+
+        :return: The discovery_recovery_id of this CreateDisasterRecovery.
+        :rtype: str
+        """
+        return self._discovery_recovery_id
+
+    @discovery_recovery_id.setter
+    def discovery_recovery_id(self, discovery_recovery_id):
+        r"""Sets the discovery_recovery_id of this CreateDisasterRecovery.
+
+        **参数解释**： 容灾ID。 **取值范围**： 不涉及。
+
+        :param discovery_recovery_id: The discovery_recovery_id of this CreateDisasterRecovery.
+        :type discovery_recovery_id: str
+        """
+        self._discovery_recovery_id = discovery_recovery_id
+
+    @property
+    def primary_cluster_region(self):
+        r"""Gets the primary_cluster_region of this CreateDisasterRecovery.
+
+        **参数解释**： 容灾主Region。 **取值范围**： 不涉及。
+
+        :return: The primary_cluster_region of this CreateDisasterRecovery.
+        :rtype: str
+        """
+        return self._primary_cluster_region
+
+    @primary_cluster_region.setter
+    def primary_cluster_region(self, primary_cluster_region):
+        r"""Sets the primary_cluster_region of this CreateDisasterRecovery.
+
+        **参数解释**： 容灾主Region。 **取值范围**： 不涉及。
+
+        :param primary_cluster_region: The primary_cluster_region of this CreateDisasterRecovery.
+        :type primary_cluster_region: str
+        """
+        self._primary_cluster_region = primary_cluster_region
+
+    @property
+    def standby_cluster_region(self):
+        r"""Gets the standby_cluster_region of this CreateDisasterRecovery.
+
+        **参数解释**： 容灾备Region。 **取值范围**： 不涉及。
+
+        :return: The standby_cluster_region of this CreateDisasterRecovery.
+        :rtype: str
+        """
+        return self._standby_cluster_region
+
+    @standby_cluster_region.setter
+    def standby_cluster_region(self, standby_cluster_region):
+        r"""Sets the standby_cluster_region of this CreateDisasterRecovery.
+
+        **参数解释**： 容灾备Region。 **取值范围**： 不涉及。
+
+        :param standby_cluster_region: The standby_cluster_region of this CreateDisasterRecovery.
+        :type standby_cluster_region: str
+        """
+        self._standby_cluster_region = standby_cluster_region
+
+    @property
+    def primary_cluster_project_id(self):
+        r"""Gets the primary_cluster_project_id of this CreateDisasterRecovery.
+
+        **参数解释**： 容灾主集群项目ID。 **取值范围**： 不涉及。
+
+        :return: The primary_cluster_project_id of this CreateDisasterRecovery.
+        :rtype: str
+        """
+        return self._primary_cluster_project_id
+
+    @primary_cluster_project_id.setter
+    def primary_cluster_project_id(self, primary_cluster_project_id):
+        r"""Sets the primary_cluster_project_id of this CreateDisasterRecovery.
+
+        **参数解释**： 容灾主集群项目ID。 **取值范围**： 不涉及。
+
+        :param primary_cluster_project_id: The primary_cluster_project_id of this CreateDisasterRecovery.
+        :type primary_cluster_project_id: str
+        """
+        self._primary_cluster_project_id = primary_cluster_project_id
+
+    @property
+    def standby_cluster_project_id(self):
+        r"""Gets the standby_cluster_project_id of this CreateDisasterRecovery.
+
+        **参数解释**： 容灾备集群项目ID。 **取值范围**： 不涉及。
+
+        :return: The standby_cluster_project_id of this CreateDisasterRecovery.
+        :rtype: str
+        """
+        return self._standby_cluster_project_id
+
+    @standby_cluster_project_id.setter
+    def standby_cluster_project_id(self, standby_cluster_project_id):
+        r"""Sets the standby_cluster_project_id of this CreateDisasterRecovery.
+
+        **参数解释**： 容灾备集群项目ID。 **取值范围**： 不涉及。
+
+        :param standby_cluster_project_id: The standby_cluster_project_id of this CreateDisasterRecovery.
+        :type standby_cluster_project_id: str
+        """
+        self._standby_cluster_project_id = standby_cluster_project_id
+
+    @property
+    def cluster_role(self):
+        r"""Gets the cluster_role of this CreateDisasterRecovery.
+
+        **参数解释**： 集群角色。 **取值范围**： 不涉及。
+
+        :return: The cluster_role of this CreateDisasterRecovery.
+        :rtype: str
+        """
+        return self._cluster_role
+
+    @cluster_role.setter
+    def cluster_role(self, cluster_role):
+        r"""Sets the cluster_role of this CreateDisasterRecovery.
+
+        **参数解释**： 集群角色。 **取值范围**： 不涉及。
+
+        :param cluster_role: The cluster_role of this CreateDisasterRecovery.
+        :type cluster_role: str
+        """
+        self._cluster_role = cluster_role
+
+    @property
+    def primary_cluster_info(self):
+        r"""Gets the primary_cluster_info of this CreateDisasterRecovery.
+
+        :return: The primary_cluster_info of this CreateDisasterRecovery.
+        :rtype: :class:`huaweicloudsdkdws.v2.CreateDrClusterDto`
+        """
+        return self._primary_cluster_info
+
+    @primary_cluster_info.setter
+    def primary_cluster_info(self, primary_cluster_info):
+        r"""Sets the primary_cluster_info of this CreateDisasterRecovery.
+
+        :param primary_cluster_info: The primary_cluster_info of this CreateDisasterRecovery.
+        :type primary_cluster_info: :class:`huaweicloudsdkdws.v2.CreateDrClusterDto`
+        """
+        self._primary_cluster_info = primary_cluster_info
+
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -262,10 +458,6 @@ class CreateDisasterRecovery:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

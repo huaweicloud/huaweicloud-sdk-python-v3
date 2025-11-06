@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -37,7 +35,7 @@ class AgentStatusInfo:
         :type instance_id: str
         :param uniagent_status: **参数解释**: uniagent运行状态 **取值范围**: - none: 未安装 - running: 运行中 - silent: 静默状态，用于大规模插件异常时，紧急规避的一种措施，现象是kill掉telescope，只保留uniagent的心跳功能 - unknown: 心跳故障，不上报心跳数据，属于连接丢失故障 
         :type uniagent_status: str
-        :param extensions: **参数解释**: 插件信息列表 **取值范围**: 数组长度为[1,10] 
+        :param extensions: **参数解释**: 插件信息列表 
         :type extensions: list[:class:`huaweicloudsdkces.v3.ExtensionInfo`]
         """
         
@@ -103,7 +101,7 @@ class AgentStatusInfo:
     def extensions(self):
         r"""Gets the extensions of this AgentStatusInfo.
 
-        **参数解释**: 插件信息列表 **取值范围**: 数组长度为[1,10] 
+        **参数解释**: 插件信息列表 
 
         :return: The extensions of this AgentStatusInfo.
         :rtype: list[:class:`huaweicloudsdkces.v3.ExtensionInfo`]
@@ -114,7 +112,7 @@ class AgentStatusInfo:
     def extensions(self, extensions):
         r"""Sets the extensions of this AgentStatusInfo.
 
-        **参数解释**: 插件信息列表 **取值范围**: 数组长度为[1,10] 
+        **参数解释**: 插件信息列表 
 
         :param extensions: The extensions of this AgentStatusInfo.
         :type extensions: list[:class:`huaweicloudsdkces.v3.ExtensionInfo`]
@@ -122,10 +120,9 @@ class AgentStatusInfo:
         self._extensions = extensions
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -151,10 +148,6 @@ class AgentStatusInfo:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

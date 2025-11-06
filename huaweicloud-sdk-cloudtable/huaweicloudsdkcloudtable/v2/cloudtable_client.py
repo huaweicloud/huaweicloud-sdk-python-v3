@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CloudTableClient(Client):
     def __init__(self):
-        super(CloudTableClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcloudtable.v2.model")
 
     @classmethod

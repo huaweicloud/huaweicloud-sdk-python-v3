@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CbsAsyncClient(Client):
     def __init__(self):
-        super(CbsAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcbs.v1.model")
 
     @classmethod

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class CsmsClient(Client):
     def __init__(self):
-        super(CsmsClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkcsms.v1.model")
 
     @classmethod

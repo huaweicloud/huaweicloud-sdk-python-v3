@@ -17,7 +17,7 @@ except ImportError as e:
 
 class AsmClient(Client):
     def __init__(self):
-        super(AsmClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkasm.v1.model")
 
     @classmethod

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
@@ -41,7 +39,7 @@ class EventInfo:
 
         :param event_name: 事件名称。
         :type event_name: str
-        :param event_type: 事件类型。
+        :param event_type: 枚举类型 EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，EVENT.CUSTOM为自定义事件
         :type event_type: str
         :param sub_event_type: 事件子类。 枚举类型：SUB_EVENT.OPS为运维事件，SUB_EVENT.PLAN为计划事件，SUB_EVENT.CUSTOM为自定义事件。
         :type sub_event_type: str
@@ -49,7 +47,7 @@ class EventInfo:
         :type event_count: int
         :param latest_occur_time: 此事件最近一次发生的时间。
         :type latest_occur_time: int
-        :param latest_event_source: 事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
+        :param latest_event_source: 事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”；如果是自定义事件，则为用户自定义上报定义。
         :type latest_event_source: str
         """
         
@@ -102,7 +100,7 @@ class EventInfo:
     def event_type(self):
         r"""Gets the event_type of this EventInfo.
 
-        事件类型。
+        枚举类型 EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，EVENT.CUSTOM为自定义事件
 
         :return: The event_type of this EventInfo.
         :rtype: str
@@ -113,7 +111,7 @@ class EventInfo:
     def event_type(self, event_type):
         r"""Sets the event_type of this EventInfo.
 
-        事件类型。
+        枚举类型 EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，EVENT.CUSTOM为自定义事件
 
         :param event_type: The event_type of this EventInfo.
         :type event_type: str
@@ -190,7 +188,7 @@ class EventInfo:
     def latest_event_source(self):
         r"""Gets the latest_event_source of this EventInfo.
 
-        事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
+        事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”；如果是自定义事件，则为用户自定义上报定义。
 
         :return: The latest_event_source of this EventInfo.
         :rtype: str
@@ -201,7 +199,7 @@ class EventInfo:
     def latest_event_source(self, latest_event_source):
         r"""Sets the latest_event_source of this EventInfo.
 
-        事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”；如果是自定义事件，则为用户自定义上报定义。
+        事件来源，如果是系统事件则值为各服务的命名空间，各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”；如果是自定义事件，则为用户自定义上报定义。
 
         :param latest_event_source: The latest_event_source of this EventInfo.
         :type latest_event_source: str
@@ -209,10 +207,9 @@ class EventInfo:
         self._latest_event_source = latest_event_source
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -238,10 +235,6 @@ class EventInfo:
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -18,8 +16,8 @@ class ListAlarmsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'metric_alarms': 'list[MetricAlarms]',
-        'meta_data': 'MetaData'
+        'metric_alarms': 'list[MetricAlarmsResp]',
+        'meta_data': 'MetaDataResp'
     }
 
     attribute_map = {
@@ -32,13 +30,13 @@ class ListAlarmsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param metric_alarms: 告警对象列表。
-        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
+        :param metric_alarms: **参数解释**： 查询的告警对象列表。 
+        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarmsResp`]
         :param meta_data: 
-        :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaDataResp`
         """
         
-        super(ListAlarmsResponse, self).__init__()
+        super().__init__()
 
         self._metric_alarms = None
         self._meta_data = None
@@ -53,10 +51,10 @@ class ListAlarmsResponse(SdkResponse):
     def metric_alarms(self):
         r"""Gets the metric_alarms of this ListAlarmsResponse.
 
-        告警对象列表。
+        **参数解释**： 查询的告警对象列表。 
 
         :return: The metric_alarms of this ListAlarmsResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
+        :rtype: list[:class:`huaweicloudsdkces.v1.MetricAlarmsResp`]
         """
         return self._metric_alarms
 
@@ -64,10 +62,10 @@ class ListAlarmsResponse(SdkResponse):
     def metric_alarms(self, metric_alarms):
         r"""Sets the metric_alarms of this ListAlarmsResponse.
 
-        告警对象列表。
+        **参数解释**： 查询的告警对象列表。 
 
         :param metric_alarms: The metric_alarms of this ListAlarmsResponse.
-        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarms`]
+        :type metric_alarms: list[:class:`huaweicloudsdkces.v1.MetricAlarmsResp`]
         """
         self._metric_alarms = metric_alarms
 
@@ -76,7 +74,7 @@ class ListAlarmsResponse(SdkResponse):
         r"""Gets the meta_data of this ListAlarmsResponse.
 
         :return: The meta_data of this ListAlarmsResponse.
-        :rtype: :class:`huaweicloudsdkces.v1.MetaData`
+        :rtype: :class:`huaweicloudsdkces.v1.MetaDataResp`
         """
         return self._meta_data
 
@@ -85,15 +83,17 @@ class ListAlarmsResponse(SdkResponse):
         r"""Sets the meta_data of this ListAlarmsResponse.
 
         :param meta_data: The meta_data of this ListAlarmsResponse.
-        :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`
+        :type meta_data: :class:`huaweicloudsdkces.v1.MetaDataResp`
         """
         self._meta_data = meta_data
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("ListAlarmsResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -119,10 +119,6 @@ class ListAlarmsResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

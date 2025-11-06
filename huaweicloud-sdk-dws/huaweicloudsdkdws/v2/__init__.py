@@ -122,6 +122,7 @@ from huaweicloudsdkdws.v2.model.create_disaster_recovery import CreateDisasterRe
 from huaweicloudsdkdws.v2.model.create_disaster_recovery_req import CreateDisasterRecoveryReq
 from huaweicloudsdkdws.v2.model.create_disaster_recovery_request import CreateDisasterRecoveryRequest
 from huaweicloudsdkdws.v2.model.create_disaster_recovery_response import CreateDisasterRecoveryResponse
+from huaweicloudsdkdws.v2.model.create_dr_cluster_dto import CreateDrClusterDto
 from huaweicloudsdkdws.v2.model.create_event_sub_request import CreateEventSubRequest
 from huaweicloudsdkdws.v2.model.create_event_sub_response import CreateEventSubResponse
 from huaweicloudsdkdws.v2.model.create_logical_cluster_info import CreateLogicalClusterInfo
@@ -243,6 +244,7 @@ from huaweicloudsdkdws.v2.model.export_user_authority_request import ExportUserA
 from huaweicloudsdkdws.v2.model.export_user_authority_response import ExportUserAuthorityResponse
 from huaweicloudsdkdws.v2.model.ext_data_source import ExtDataSource
 from huaweicloudsdkdws.v2.model.ext_data_source_req import ExtDataSourceReq
+from huaweicloudsdkdws.v2.model.ext_fine_grained_snapshot_detail import ExtFineGrainedSnapshotDetail
 from huaweicloudsdkdws.v2.model.failed_reason import FailedReason
 from huaweicloudsdkdws.v2.model.fine_grained_snapshot_detail import FineGrainedSnapshotDetail
 from huaweicloudsdkdws.v2.model.flavor_attribute_info import FlavorAttributeInfo

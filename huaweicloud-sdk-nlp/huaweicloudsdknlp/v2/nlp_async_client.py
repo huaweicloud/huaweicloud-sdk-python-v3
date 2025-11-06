@@ -17,7 +17,7 @@ except ImportError as e:
 
 class NlpAsyncClient(Client):
     def __init__(self):
-        super(NlpAsyncClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdknlp.v2.model")
 
     @classmethod

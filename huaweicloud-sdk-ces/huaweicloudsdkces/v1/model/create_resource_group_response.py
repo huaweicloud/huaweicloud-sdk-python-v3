@@ -1,7 +1,5 @@
 # coding: utf-8
 
-import six
-
 from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
@@ -30,11 +28,11 @@ class CreateResourceGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 创建的资源分组ID，如：rg1606377637506DmVOENVyL。
+        :param group_id: **参数解释** 资源分组ID，如：rg1606377637506DmVOENVyL **约束限制** 不涉及 **取值范围** 以\&quot;rg\&quot;开头，后面跟着22个字母或数字 **默认取值** 不涉及 
         :type group_id: str
         """
         
-        super(CreateResourceGroupResponse, self).__init__()
+        super().__init__()
 
         self._group_id = None
         self.discriminator = None
@@ -46,7 +44,7 @@ class CreateResourceGroupResponse(SdkResponse):
     def group_id(self):
         r"""Gets the group_id of this CreateResourceGroupResponse.
 
-        创建的资源分组ID，如：rg1606377637506DmVOENVyL。
+        **参数解释** 资源分组ID，如：rg1606377637506DmVOENVyL **约束限制** 不涉及 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字 **默认取值** 不涉及 
 
         :return: The group_id of this CreateResourceGroupResponse.
         :rtype: str
@@ -57,7 +55,7 @@ class CreateResourceGroupResponse(SdkResponse):
     def group_id(self, group_id):
         r"""Sets the group_id of this CreateResourceGroupResponse.
 
-        创建的资源分组ID，如：rg1606377637506DmVOENVyL。
+        **参数解释** 资源分组ID，如：rg1606377637506DmVOENVyL **约束限制** 不涉及 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字 **默认取值** 不涉及 
 
         :param group_id: The group_id of this CreateResourceGroupResponse.
         :type group_id: str
@@ -65,10 +63,12 @@ class CreateResourceGroupResponse(SdkResponse):
         self._group_id = group_id
 
     def to_dict(self):
-        """Returns the model properties as a dict"""
+        import warnings
+        warnings.warn("CreateResourceGroupResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
-        for attr, _ in six.iteritems(self.openapi_types):
+        for attr, _ in self.openapi_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
@@ -94,10 +94,6 @@ class CreateResourceGroupResponse(SdkResponse):
     def to_str(self):
         """Returns the string representation of the model"""
         import simplejson as json
-        if six.PY2:
-            import sys
-            reload(sys)
-            sys.setdefaultencoding("utf-8")
         return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
 
     def __repr__(self):

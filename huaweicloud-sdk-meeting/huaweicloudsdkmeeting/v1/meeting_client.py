@@ -17,7 +17,7 @@ except ImportError as e:
 
 class MeetingClient(Client):
     def __init__(self):
-        super(MeetingClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkmeeting.v1.model")
 
     @classmethod

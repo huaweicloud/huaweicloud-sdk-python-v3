@@ -17,7 +17,7 @@ except ImportError as e:
 
 class DataArtsStudioClient(Client):
     def __init__(self):
-        super(DataArtsStudioClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdkdataartsstudio.v1.model")
 
     @classmethod
@@ -12283,6 +12283,83 @@ class DataArtsStudioClient(Client):
         header_params = {}
         if 'workspace' in local_var_params:
             header_params['workspace'] = local_var_params['workspace']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_factory_alarm_rules(self, request):
+        r"""查询通知规则列表
+
+        查询通知规则列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListFactoryAlarmRules
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryAlarmRulesRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactoryAlarmRulesResponse`
+        """
+        http_info = self._list_factory_alarm_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_factory_alarm_rules_invoker(self, request):
+        http_info = self._list_factory_alarm_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_factory_alarm_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/alarm/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactoryAlarmRulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'remind_type' in local_var_params:
+            query_params.append(('remind_type', local_var_params['remind_type']))
+        if 'ding_name' in local_var_params:
+            query_params.append(('ding_name', local_var_params['ding_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
 
         form_params = {}
 

@@ -17,7 +17,7 @@ except ImportError as e:
 
 class SecMasterClient(Client):
     def __init__(self):
-        super(SecMasterClient, self).__init__()
+        super().__init__()
         self.model_package = importlib.import_module("huaweicloudsdksecmaster.v2.model")
 
     @classmethod
