@@ -41,7 +41,7 @@ class VideoLayerConfig:
         :type video_cover_url: str
         :param loop_count: **参数解释**： 循环播放视频次数。  特殊取值： * 0：表示不播放 * -1：表示持续循环播放  **约束限制**： 不涉及。
         :type loop_count: int
-        :param video_sound: **参数解释**： 视频声音大小，0 - 100，表示开启视频声音原视频音量的百分比  特殊取值： * 0：表示不开启声音（默认值）  **约束限制**： 不涉及。
+        :param video_sound: **参数解释**： 按照百分比，调整视频素材的音量，取值为0-100。  特殊取值为0，表示不开启声音（默认值）。  **约束限制**： 不涉及。
         :type video_sound: int
         :param is_play_the_entire_video: **参数解释**： 是否播放完整个视频，true表示播放完整个视频，false表示当场景文本/音频结束时，视频也同时不再播放。  特殊取值： 默认值为false  **约束限制**： 不涉及。
         :type is_play_the_entire_video: bool
@@ -137,7 +137,7 @@ class VideoLayerConfig:
     def video_sound(self):
         r"""Gets the video_sound of this VideoLayerConfig.
 
-        **参数解释**： 视频声音大小，0 - 100，表示开启视频声音原视频音量的百分比  特殊取值： * 0：表示不开启声音（默认值）  **约束限制**： 不涉及。
+        **参数解释**： 按照百分比，调整视频素材的音量，取值为0-100。  特殊取值为0，表示不开启声音（默认值）。  **约束限制**： 不涉及。
 
         :return: The video_sound of this VideoLayerConfig.
         :rtype: int
@@ -148,7 +148,7 @@ class VideoLayerConfig:
     def video_sound(self, video_sound):
         r"""Sets the video_sound of this VideoLayerConfig.
 
-        **参数解释**： 视频声音大小，0 - 100，表示开启视频声音原视频音量的百分比  特殊取值： * 0：表示不开启声音（默认值）  **约束限制**： 不涉及。
+        **参数解释**： 按照百分比，调整视频素材的音量，取值为0-100。  特殊取值为0，表示不开启声音（默认值）。  **约束限制**： 不涉及。
 
         :param video_sound: The video_sound of this VideoLayerConfig.
         :type video_sound: int

@@ -27,7 +27,8 @@ class CreateKeywordsAlarmRuleRequestBody:
         'recovery_policy': 'int',
         'notification_frequency': 'int',
         'alarm_action_rule_name': 'str',
-        'tags': 'list[TagsRequestBody]'
+        'tags': 'list[TagsRequestBody]',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class CreateKeywordsAlarmRuleRequestBody:
         'recovery_policy': 'recovery_policy',
         'notification_frequency': 'notification_frequency',
         'alarm_action_rule_name': 'alarm_action_rule_name',
-        'tags': 'tags'
+        'tags': 'tags',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, domain_id=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None, tags=None):
+    def __init__(self, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, domain_id=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None, tags=None, enterprise_project_id=None):
         r"""CreateKeywordsAlarmRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class CreateKeywordsAlarmRuleRequestBody:
         :type alarm_action_rule_name: str
         :param tags: **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。 **约束限制：** 不涉及。
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsRequestBody`]
+        :param enterprise_project_id: **参数解释：** 企业项目id信息。 **约束限制：** 不涉及。
+        :type enterprise_project_id: str
         """
         
         
@@ -94,6 +98,7 @@ class CreateKeywordsAlarmRuleRequestBody:
         self._notification_frequency = None
         self._alarm_action_rule_name = None
         self._tags = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.keywords_alarm_rule_name = keywords_alarm_rule_name
@@ -116,6 +121,8 @@ class CreateKeywordsAlarmRuleRequestBody:
             self.alarm_action_rule_name = alarm_action_rule_name
         if tags is not None:
             self.tags = tags
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def keywords_alarm_rule_name(self):
@@ -398,6 +405,28 @@ class CreateKeywordsAlarmRuleRequestBody:
         :type tags: list[:class:`huaweicloudsdklts.v2.TagsRequestBody`]
         """
         self._tags = tags
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this CreateKeywordsAlarmRuleRequestBody.
+
+        **参数解释：** 企业项目id信息。 **约束限制：** 不涉及。
+
+        :return: The enterprise_project_id of this CreateKeywordsAlarmRuleRequestBody.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this CreateKeywordsAlarmRuleRequestBody.
+
+        **参数解释：** 企业项目id信息。 **约束限制：** 不涉及。
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateKeywordsAlarmRuleRequestBody.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         result = {}

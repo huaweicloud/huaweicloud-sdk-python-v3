@@ -33,6 +33,7 @@ class CreateSmartChatRoomReq:
         'chat_subtitle_config': 'ChatSubtitleConfig',
         'chat_video_type': 'str',
         'exit_mute_threshold': 'int',
+        'enable_semantic_action': 'bool',
         'chat_resource_config': 'list[ChatResourceConfig]'
     }
 
@@ -55,10 +56,11 @@ class CreateSmartChatRoomReq:
         'chat_subtitle_config': 'chat_subtitle_config',
         'chat_video_type': 'chat_video_type',
         'exit_mute_threshold': 'exit_mute_threshold',
+        'enable_semantic_action': 'enable_semantic_action',
         'chat_resource_config': 'chat_resource_config'
     }
 
-    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, billing_mode=None, reuse_resource=None, concurrency=None, client_nums=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, exit_mute_threshold=None, chat_resource_config=None):
+    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, billing_mode=None, reuse_resource=None, concurrency=None, client_nums=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, exit_mute_threshold=None, enable_semantic_action=None, chat_resource_config=None):
         r"""CreateSmartChatRoomReq
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class CreateSmartChatRoomReq:
         :type chat_video_type: str
         :param exit_mute_threshold: **参数解释**： 静默退出时长。
         :type exit_mute_threshold: int
+        :param enable_semantic_action: 是否优先级加载模型资产
+        :type enable_semantic_action: bool
         :param chat_resource_config: 资源配置。
         :type chat_resource_config: list[:class:`huaweicloudsdkmetastudio.v1.ChatResourceConfig`]
         """
@@ -123,6 +127,7 @@ class CreateSmartChatRoomReq:
         self._chat_subtitle_config = None
         self._chat_video_type = None
         self._exit_mute_threshold = None
+        self._enable_semantic_action = None
         self._chat_resource_config = None
         self.discriminator = None
 
@@ -161,6 +166,8 @@ class CreateSmartChatRoomReq:
             self.chat_video_type = chat_video_type
         if exit_mute_threshold is not None:
             self.exit_mute_threshold = exit_mute_threshold
+        if enable_semantic_action is not None:
+            self.enable_semantic_action = enable_semantic_action
         if chat_resource_config is not None:
             self.chat_resource_config = chat_resource_config
 
@@ -539,6 +546,28 @@ class CreateSmartChatRoomReq:
         :type exit_mute_threshold: int
         """
         self._exit_mute_threshold = exit_mute_threshold
+
+    @property
+    def enable_semantic_action(self):
+        r"""Gets the enable_semantic_action of this CreateSmartChatRoomReq.
+
+        是否优先级加载模型资产
+
+        :return: The enable_semantic_action of this CreateSmartChatRoomReq.
+        :rtype: bool
+        """
+        return self._enable_semantic_action
+
+    @enable_semantic_action.setter
+    def enable_semantic_action(self, enable_semantic_action):
+        r"""Sets the enable_semantic_action of this CreateSmartChatRoomReq.
+
+        是否优先级加载模型资产
+
+        :param enable_semantic_action: The enable_semantic_action of this CreateSmartChatRoomReq.
+        :type enable_semantic_action: bool
+        """
+        self._enable_semantic_action = enable_semantic_action
 
     @property
     def chat_resource_config(self):

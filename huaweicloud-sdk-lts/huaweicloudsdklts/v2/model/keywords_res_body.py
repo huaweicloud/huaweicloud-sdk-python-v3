@@ -23,7 +23,9 @@ class KeywordsResBody:
         'condition': 'str',
         'number': 'int',
         'search_time_range': 'int',
-        'search_time_range_unit': 'str'
+        'search_time_range_unit': 'str',
+        'custom_date': 'CustomDate',
+        'is_time_range_relative': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class KeywordsResBody:
         'condition': 'condition',
         'number': 'number',
         'search_time_range': 'search_time_range',
-        'search_time_range_unit': 'search_time_range_unit'
+        'search_time_range_unit': 'search_time_range_unit',
+        'custom_date': 'custom_date',
+        'is_time_range_relative': 'is_time_range_relative'
     }
 
-    def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, keywords=None, condition=None, number=None, search_time_range=None, search_time_range_unit=None):
+    def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, keywords=None, condition=None, number=None, search_time_range=None, search_time_range_unit=None, custom_date=None, is_time_range_relative=None):
         r"""KeywordsResBody
 
         The model defined in huaweicloud sdk
@@ -61,6 +65,10 @@ class KeywordsResBody:
         :type search_time_range: int
         :param search_time_range_unit: 查询时间单位
         :type search_time_range_unit: str
+        :param custom_date: 
+        :type custom_date: :class:`huaweicloudsdklts.v2.CustomDate`
+        :param is_time_range_relative: **参数解释：** 是否是相对时间。（暂不开放，后续aom上线该功能后一起开放） **约束限制：** 不涉及。 **取值范围：** - true - false **默认取值：** true
+        :type is_time_range_relative: bool
         """
         
         
@@ -74,6 +82,8 @@ class KeywordsResBody:
         self._number = None
         self._search_time_range = None
         self._search_time_range_unit = None
+        self._custom_date = None
+        self._is_time_range_relative = None
         self.discriminator = None
 
         if log_stream_id is not None:
@@ -94,6 +104,10 @@ class KeywordsResBody:
             self.search_time_range = search_time_range
         if search_time_range_unit is not None:
             self.search_time_range_unit = search_time_range_unit
+        if custom_date is not None:
+            self.custom_date = custom_date
+        if is_time_range_relative is not None:
+            self.is_time_range_relative = is_time_range_relative
 
     @property
     def log_stream_id(self):
@@ -292,6 +306,46 @@ class KeywordsResBody:
         :type search_time_range_unit: str
         """
         self._search_time_range_unit = search_time_range_unit
+
+    @property
+    def custom_date(self):
+        r"""Gets the custom_date of this KeywordsResBody.
+
+        :return: The custom_date of this KeywordsResBody.
+        :rtype: :class:`huaweicloudsdklts.v2.CustomDate`
+        """
+        return self._custom_date
+
+    @custom_date.setter
+    def custom_date(self, custom_date):
+        r"""Sets the custom_date of this KeywordsResBody.
+
+        :param custom_date: The custom_date of this KeywordsResBody.
+        :type custom_date: :class:`huaweicloudsdklts.v2.CustomDate`
+        """
+        self._custom_date = custom_date
+
+    @property
+    def is_time_range_relative(self):
+        r"""Gets the is_time_range_relative of this KeywordsResBody.
+
+        **参数解释：** 是否是相对时间。（暂不开放，后续aom上线该功能后一起开放） **约束限制：** 不涉及。 **取值范围：** - true - false **默认取值：** true
+
+        :return: The is_time_range_relative of this KeywordsResBody.
+        :rtype: bool
+        """
+        return self._is_time_range_relative
+
+    @is_time_range_relative.setter
+    def is_time_range_relative(self, is_time_range_relative):
+        r"""Sets the is_time_range_relative of this KeywordsResBody.
+
+        **参数解释：** 是否是相对时间。（暂不开放，后续aom上线该功能后一起开放） **约束限制：** 不涉及。 **取值范围：** - true - false **默认取值：** true
+
+        :param is_time_range_relative: The is_time_range_relative of this KeywordsResBody.
+        :type is_time_range_relative: bool
+        """
+        self._is_time_range_relative = is_time_range_relative
 
     def to_dict(self):
         result = {}

@@ -20,9 +20,10 @@ class SqlRequest:
         'log_group_id': 'str',
         'log_group_name': 'str',
         'sql': 'str',
-        'sql_request_title': 'str',
         'search_time_range': 'int',
-        'search_time_range_unit': 'str'
+        'search_time_range_unit': 'str',
+        'custom_date': 'CustomDate',
+        'is_time_range_relative': 'bool'
     }
 
     attribute_map = {
@@ -31,12 +32,13 @@ class SqlRequest:
         'log_group_id': 'log_group_id',
         'log_group_name': 'log_group_name',
         'sql': 'sql',
-        'sql_request_title': 'sql_request_title',
         'search_time_range': 'search_time_range',
-        'search_time_range_unit': 'search_time_range_unit'
+        'search_time_range_unit': 'search_time_range_unit',
+        'custom_date': 'custom_date',
+        'is_time_range_relative': 'is_time_range_relative'
     }
 
-    def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, sql=None, sql_request_title=None, search_time_range=None, search_time_range_unit=None):
+    def __init__(self, log_stream_id=None, log_stream_name=None, log_group_id=None, log_group_name=None, sql=None, search_time_range=None, search_time_range_unit=None, custom_date=None, is_time_range_relative=None):
         r"""SqlRequest
 
         The model defined in huaweicloud sdk
@@ -51,12 +53,14 @@ class SqlRequest:
         :type log_group_name: str
         :param sql: sql语句
         :type sql: str
-        :param sql_request_title: 图表名称
-        :type sql_request_title: str
         :param search_time_range: 查询执行任务时最近数据的时间范围(当search_time_range_unit为minute，则最大值为60;当search_time_range_unit为hour，则最大值为24)
         :type search_time_range: int
         :param search_time_range_unit: 查询时间单位
         :type search_time_range_unit: str
+        :param custom_date: 
+        :type custom_date: :class:`huaweicloudsdklts.v2.CustomDate`
+        :param is_time_range_relative: **参数解释：** 告警查询日志的时间区间为相对时间还是整点时间。（暂不开放，后续aom上线该功能后一起开放） **约束限制：** 不涉及。 **取值范围：** - true: 相对时间。 - false: 整点时间。 **默认取值：** true
+        :type is_time_range_relative: bool
         """
         
         
@@ -66,9 +70,10 @@ class SqlRequest:
         self._log_group_id = None
         self._log_group_name = None
         self._sql = None
-        self._sql_request_title = None
         self._search_time_range = None
         self._search_time_range_unit = None
+        self._custom_date = None
+        self._is_time_range_relative = None
         self.discriminator = None
 
         self.log_stream_id = log_stream_id
@@ -78,9 +83,14 @@ class SqlRequest:
         if log_group_name is not None:
             self.log_group_name = log_group_name
         self.sql = sql
-        self.sql_request_title = sql_request_title
-        self.search_time_range = search_time_range
-        self.search_time_range_unit = search_time_range_unit
+        if search_time_range is not None:
+            self.search_time_range = search_time_range
+        if search_time_range_unit is not None:
+            self.search_time_range_unit = search_time_range_unit
+        if custom_date is not None:
+            self.custom_date = custom_date
+        if is_time_range_relative is not None:
+            self.is_time_range_relative = is_time_range_relative
 
     @property
     def log_stream_id(self):
@@ -193,28 +203,6 @@ class SqlRequest:
         self._sql = sql
 
     @property
-    def sql_request_title(self):
-        r"""Gets the sql_request_title of this SqlRequest.
-
-        图表名称
-
-        :return: The sql_request_title of this SqlRequest.
-        :rtype: str
-        """
-        return self._sql_request_title
-
-    @sql_request_title.setter
-    def sql_request_title(self, sql_request_title):
-        r"""Sets the sql_request_title of this SqlRequest.
-
-        图表名称
-
-        :param sql_request_title: The sql_request_title of this SqlRequest.
-        :type sql_request_title: str
-        """
-        self._sql_request_title = sql_request_title
-
-    @property
     def search_time_range(self):
         r"""Gets the search_time_range of this SqlRequest.
 
@@ -257,6 +245,46 @@ class SqlRequest:
         :type search_time_range_unit: str
         """
         self._search_time_range_unit = search_time_range_unit
+
+    @property
+    def custom_date(self):
+        r"""Gets the custom_date of this SqlRequest.
+
+        :return: The custom_date of this SqlRequest.
+        :rtype: :class:`huaweicloudsdklts.v2.CustomDate`
+        """
+        return self._custom_date
+
+    @custom_date.setter
+    def custom_date(self, custom_date):
+        r"""Sets the custom_date of this SqlRequest.
+
+        :param custom_date: The custom_date of this SqlRequest.
+        :type custom_date: :class:`huaweicloudsdklts.v2.CustomDate`
+        """
+        self._custom_date = custom_date
+
+    @property
+    def is_time_range_relative(self):
+        r"""Gets the is_time_range_relative of this SqlRequest.
+
+        **参数解释：** 告警查询日志的时间区间为相对时间还是整点时间。（暂不开放，后续aom上线该功能后一起开放） **约束限制：** 不涉及。 **取值范围：** - true: 相对时间。 - false: 整点时间。 **默认取值：** true
+
+        :return: The is_time_range_relative of this SqlRequest.
+        :rtype: bool
+        """
+        return self._is_time_range_relative
+
+    @is_time_range_relative.setter
+    def is_time_range_relative(self, is_time_range_relative):
+        r"""Sets the is_time_range_relative of this SqlRequest.
+
+        **参数解释：** 告警查询日志的时间区间为相对时间还是整点时间。（暂不开放，后续aom上线该功能后一起开放） **约束限制：** 不涉及。 **取值范围：** - true: 相对时间。 - false: 整点时间。 **默认取值：** true
+
+        :param is_time_range_relative: The is_time_range_relative of this SqlRequest.
+        :type is_time_range_relative: bool
+        """
+        self._is_time_range_relative = is_time_range_relative
 
     def to_dict(self):
         result = {}

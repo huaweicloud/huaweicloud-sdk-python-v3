@@ -27,6 +27,7 @@ class ShowScriptResponse(SdkResponse):
         'configuration': 'dict(str, object)',
         'description': 'str',
         'owner': 'str',
+        'version': 'int',
         'target_status': 'str',
         'approvers': 'list[JobApprover]'
     }
@@ -43,11 +44,12 @@ class ShowScriptResponse(SdkResponse):
         'configuration': 'configuration',
         'description': 'description',
         'owner': 'owner',
+        'version': 'version',
         'target_status': 'targetStatus',
         'approvers': 'approvers'
     }
 
-    def __init__(self, name=None, id=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, owner=None, target_status=None, approvers=None):
+    def __init__(self, name=None, id=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, owner=None, version=None, target_status=None, approvers=None):
         r"""ShowScriptResponse
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class ShowScriptResponse(SdkResponse):
         :type description: str
         :param owner: 责任人名称
         :type owner: str
+        :param version: 脚本最新提交版本
+        :type version: int
         :param target_status: 在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态: - 保存态表示脚本仅保存，无法调度运行，需要提交并审核通过后才能运行。 - 提交态表示脚本保存后会自动提交，需要审核通过才能运行。 - 生产态表示脚本跳过审批环节，创建后可以直接运行。注意：只有工作空间的管理员用户才能创建生产态的脚本。
         :type target_status: str
         :param approvers: 在开启审批开关后，需要填写该字段，表示脚本审批人
@@ -93,6 +97,7 @@ class ShowScriptResponse(SdkResponse):
         self._configuration = None
         self._description = None
         self._owner = None
+        self._version = None
         self._target_status = None
         self._approvers = None
         self.discriminator = None
@@ -119,6 +124,8 @@ class ShowScriptResponse(SdkResponse):
             self.description = description
         if owner is not None:
             self.owner = owner
+        if version is not None:
+            self.version = version
         if target_status is not None:
             self.target_status = target_status
         if approvers is not None:
@@ -365,6 +372,28 @@ class ShowScriptResponse(SdkResponse):
         :type owner: str
         """
         self._owner = owner
+
+    @property
+    def version(self):
+        r"""Gets the version of this ShowScriptResponse.
+
+        脚本最新提交版本
+
+        :return: The version of this ShowScriptResponse.
+        :rtype: int
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        r"""Sets the version of this ShowScriptResponse.
+
+        脚本最新提交版本
+
+        :param version: The version of this ShowScriptResponse.
+        :type version: int
+        """
+        self._version = version
 
     @property
     def target_status(self):

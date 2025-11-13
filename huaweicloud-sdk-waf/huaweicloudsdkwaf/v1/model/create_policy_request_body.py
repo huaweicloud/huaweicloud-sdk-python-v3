@@ -29,7 +29,7 @@ class CreatePolicyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64为字符）
+        :param name: 策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64位字符）
         :type name: str
         :param log_action_replaced: cc规则和精准防护规则“防护动作”选择“仅记录”时，Web基础防护是否命中策略规则并阻断，默认为true
         :type log_action_replaced: bool
@@ -49,7 +49,7 @@ class CreatePolicyRequestBody:
     def name(self):
         r"""Gets the name of this CreatePolicyRequestBody.
 
-        策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64为字符）
+        策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64位字符）
 
         :return: The name of this CreatePolicyRequestBody.
         :rtype: str
@@ -60,7 +60,7 @@ class CreatePolicyRequestBody:
     def name(self, name):
         r"""Sets the name of this CreatePolicyRequestBody.
 
-        策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64为字符）
+        策略名称（策略名称只能由数字、字母和下划线组成，长度不能超过64位字符）
 
         :param name: The name of this CreatePolicyRequestBody.
         :type name: str

@@ -994,6 +994,75 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def create_history_transaction_export_task_async(self, request):
+        r"""创建导出历史事务任务
+
+        DAS收集历史事务开关打开后，支持创建一次性导出指定时间范围内的历史事务数据任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateHistoryTransactionExportTask
+        :type request: :class:`huaweicloudsdkdas.v3.CreateHistoryTransactionExportTaskRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.CreateHistoryTransactionExportTaskResponse`
+        """
+        http_info = self._create_history_transaction_export_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_history_transaction_export_task_async_invoker(self, request):
+        http_info = self._create_history_transaction_export_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_history_transaction_export_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/transaction/{instance_id}/create-export-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHistoryTransactionExportTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_snapshots_async(self, request):
         r"""创建快照
 
@@ -1330,6 +1399,75 @@ class DasAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_history_transaction_export_task_async(self, request):
+        r"""删除导出历史事务任务
+
+        DAS收集历史事务开关打开后，删除历史事务导出任务记录对应的OBS文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteHistoryTransactionExportTask
+        :type request: :class:`huaweicloudsdkdas.v3.DeleteHistoryTransactionExportTaskRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.DeleteHistoryTransactionExportTaskResponse`
+        """
+        http_info = self._delete_history_transaction_export_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_history_transaction_export_task_async_invoker(self, request):
+        http_info = self._delete_history_transaction_export_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_history_transaction_export_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/transaction/{instance_id}/delete-export-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHistoryTransactionExportTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2616,6 +2754,77 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def list_history_transaction_export_task_async(self, request):
+        r"""查询历史事务导出任务列表
+
+        DAS收集历史事务开关打开后，查询历史事务导出任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListHistoryTransactionExportTask
+        :type request: :class:`huaweicloudsdkdas.v3.ListHistoryTransactionExportTaskRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListHistoryTransactionExportTaskResponse`
+        """
+        http_info = self._list_history_transaction_export_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_history_transaction_export_task_async_invoker(self, request):
+        http_info = self._list_history_transaction_export_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_history_transaction_export_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/transaction/{instance_id}/get-export-task-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHistoryTransactionExportTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_innodb_locks_async(self, request):
         r"""查询InnoDB锁等待列表
 
@@ -3650,6 +3859,144 @@ class DasAsyncClient(Client):
 
         return http_info
 
+    def login_built_in_account_async(self, request):
+        r"""内置账号登录
+
+        内置账号登录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for LoginBuiltInAccount
+        :type request: :class:`huaweicloudsdkdas.v3.LoginBuiltInAccountRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.LoginBuiltInAccountResponse`
+        """
+        http_info = self._login_built_in_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def login_built_in_account_async_invoker(self, request):
+        http_info = self._login_built_in_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _login_built_in_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/login-built-in-account",
+            "request_type": request.__class__.__name__,
+            "response_type": "LoginBuiltInAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def logoff_built_in_account_async(self, request):
+        r"""内置账号登出
+
+        内置账号登出
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for LogoffBuiltInAccount
+        :type request: :class:`huaweicloudsdkdas.v3.LogoffBuiltInAccountRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.LogoffBuiltInAccountResponse`
+        """
+        http_info = self._logoff_built_in_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def logoff_built_in_account_async_invoker(self, request):
+        http_info = self._logoff_built_in_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _logoff_built_in_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/logoff-built-in-account",
+            "request_type": request.__class__.__name__,
+            "response_type": "LogoffBuiltInAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def parse_sql_limit_rules_async(self, request):
         r"""根据原始SQL生成SQL限流关键字
 
@@ -4244,6 +4591,75 @@ class DasAsyncClient(Client):
         query_params = []
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_history_transaction_export_task_info_async(self, request):
+        r"""查询历史事务导出任务详情
+
+        DAS收集历史事务开关打开后，查询历史事务导出任务详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowHistoryTransactionExportTaskInfo
+        :type request: :class:`huaweicloudsdkdas.v3.ShowHistoryTransactionExportTaskInfoRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowHistoryTransactionExportTaskInfoResponse`
+        """
+        http_info = self._show_history_transaction_export_task_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_history_transaction_export_task_info_async_invoker(self, request):
+        http_info = self._show_history_transaction_export_task_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_history_transaction_export_task_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/transaction/{instance_id}/get-export-task-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHistoryTransactionExportTaskInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 

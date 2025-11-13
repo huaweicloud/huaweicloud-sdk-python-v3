@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdkmsgsms"
-version = "3.1.174"
+version = "3.1.175"
 description = "MSGSMS"
 readme = "README_PYPI.md"
 authors = [
@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Software Development"
 ]
 dependencies = [
-    "huaweicloudsdkcore>=3.1.174"
+    "huaweicloudsdkcore>=3.1.175"
 ]
 
 [project.urls]

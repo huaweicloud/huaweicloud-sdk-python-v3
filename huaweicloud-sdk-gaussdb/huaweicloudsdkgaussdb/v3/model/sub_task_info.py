@@ -17,16 +17,18 @@ class SubTaskInfo:
     openapi_types = {
         'sub_task_name': 'str',
         'percent': 'str',
+        'status': 'str',
         'remaining_time': 'str'
     }
 
     attribute_map = {
         'sub_task_name': 'sub_task_name',
         'percent': 'percent',
+        'status': 'status',
         'remaining_time': 'remaining_time'
     }
 
-    def __init__(self, sub_task_name=None, percent=None, remaining_time=None):
+    def __init__(self, sub_task_name=None, percent=None, status=None, remaining_time=None):
         r"""SubTaskInfo
 
         The model defined in huaweicloud sdk
@@ -35,6 +37,8 @@ class SubTaskInfo:
         :type sub_task_name: str
         :param percent: **参数解释**：  子任务进度百分比。  **取值范围**：  0-100。
         :type percent: str
+        :param status: **参数解释**：  子任务状态。  **取值范围**：  - Pending：表示待执行。 - Running：表示运行中。 - Completed：表示已完成。
+        :type status: str
         :param remaining_time: **参数解释**：  剩余时间，单位为秒。  **取值范围**：  不涉及。
         :type remaining_time: str
         """
@@ -43,6 +47,7 @@ class SubTaskInfo:
 
         self._sub_task_name = None
         self._percent = None
+        self._status = None
         self._remaining_time = None
         self.discriminator = None
 
@@ -50,6 +55,8 @@ class SubTaskInfo:
             self.sub_task_name = sub_task_name
         if percent is not None:
             self.percent = percent
+        if status is not None:
+            self.status = status
         if remaining_time is not None:
             self.remaining_time = remaining_time
 
@@ -96,6 +103,28 @@ class SubTaskInfo:
         :type percent: str
         """
         self._percent = percent
+
+    @property
+    def status(self):
+        r"""Gets the status of this SubTaskInfo.
+
+        **参数解释**：  子任务状态。  **取值范围**：  - Pending：表示待执行。 - Running：表示运行中。 - Completed：表示已完成。
+
+        :return: The status of this SubTaskInfo.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this SubTaskInfo.
+
+        **参数解释**：  子任务状态。  **取值范围**：  - Pending：表示待执行。 - Running：表示运行中。 - Completed：表示已完成。
+
+        :param status: The status of this SubTaskInfo.
+        :type status: str
+        """
+        self._status = status
 
     @property
     def remaining_time(self):

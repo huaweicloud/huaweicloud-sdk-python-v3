@@ -23,7 +23,9 @@ class ListDiagnosisTasksRequest:
         'start_time': 'int',
         'end_time': 'int',
         'page_index': 'int',
-        'page_size': 'int'
+        'page_size': 'int',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class ListDiagnosisTasksRequest:
         'start_time': 'start_time',
         'end_time': 'end_time',
         'page_index': 'page_index',
-        'page_size': 'page_size'
+        'page_size': 'page_size',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, task_id=None, type=None, status=None, region=None, creator=None, start_time=None, end_time=None, page_index=None, page_size=None):
+    def __init__(self, task_id=None, type=None, status=None, region=None, creator=None, start_time=None, end_time=None, page_index=None, page_size=None, offset=None, limit=None):
         r"""ListDiagnosisTasksRequest
 
         The model defined in huaweicloud sdk
@@ -61,6 +65,10 @@ class ListDiagnosisTasksRequest:
         :type page_index: int
         :param page_size: 分页查询页大小
         :type page_size: int
+        :param offset: 分页查询页索引
+        :type offset: int
+        :param limit: 分页查询页大小
+        :type limit: int
         """
         
         
@@ -74,6 +82,8 @@ class ListDiagnosisTasksRequest:
         self._end_time = None
         self._page_index = None
         self._page_size = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         if task_id is not None:
@@ -90,8 +100,14 @@ class ListDiagnosisTasksRequest:
             self.start_time = start_time
         if end_time is not None:
             self.end_time = end_time
-        self.page_index = page_index
-        self.page_size = page_size
+        if page_index is not None:
+            self.page_index = page_index
+        if page_size is not None:
+            self.page_size = page_size
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def task_id(self):
@@ -290,6 +306,50 @@ class ListDiagnosisTasksRequest:
         :type page_size: int
         """
         self._page_size = page_size
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListDiagnosisTasksRequest.
+
+        分页查询页索引
+
+        :return: The offset of this ListDiagnosisTasksRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListDiagnosisTasksRequest.
+
+        分页查询页索引
+
+        :param offset: The offset of this ListDiagnosisTasksRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListDiagnosisTasksRequest.
+
+        分页查询页大小
+
+        :return: The limit of this ListDiagnosisTasksRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListDiagnosisTasksRequest.
+
+        分页查询页大小
+
+        :param limit: The limit of this ListDiagnosisTasksRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         result = {}

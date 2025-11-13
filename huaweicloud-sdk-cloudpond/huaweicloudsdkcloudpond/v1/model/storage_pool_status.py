@@ -11,6 +11,7 @@ class StoragePoolStatus:
     AVAILABLE = "AVAILABLE"
     EXPANDING = "EXPANDING"
     PENDING_PAYMENT = "PENDING_PAYMENT"
+    FROZEN = "FROZEN"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -17,6 +17,7 @@ class HtapLTSConfigResponseInstance:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'mode': 'str',
         'engine_name': 'str',
         'engine_version': 'str',
         'status': 'str',
@@ -27,6 +28,7 @@ class HtapLTSConfigResponseInstance:
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'mode': 'mode',
         'engine_name': 'engine_name',
         'engine_version': 'engine_version',
         'status': 'status',
@@ -34,7 +36,7 @@ class HtapLTSConfigResponseInstance:
         'enterprise_project_name': 'enterprise_project_name'
     }
 
-    def __init__(self, id=None, name=None, engine_name=None, engine_version=None, status=None, enterprise_project_id=None, enterprise_project_name=None):
+    def __init__(self, id=None, name=None, mode=None, engine_name=None, engine_version=None, status=None, enterprise_project_id=None, enterprise_project_name=None):
         r"""HtapLTSConfigResponseInstance
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class HtapLTSConfigResponseInstance:
         :type id: str
         :param name: **参数解释**： HTAP标准版实例名称。  **取值范围**：  不涉及。
         :type name: str
+        :param mode: **参数解释**：  HTAP标准版实例模式。  **取值范围**：  - Cluster：集群模式。 - Single：单机模式。
+        :type mode: str
         :param engine_name: **参数解释**： 引擎类型。  **取值范围**：  不涉及。
         :type engine_name: str
         :param engine_version: **参数解释**： 引擎版本。  **取值范围**：  不涉及。
@@ -59,6 +63,7 @@ class HtapLTSConfigResponseInstance:
 
         self._id = None
         self._name = None
+        self._mode = None
         self._engine_name = None
         self._engine_version = None
         self._status = None
@@ -68,6 +73,7 @@ class HtapLTSConfigResponseInstance:
 
         self.id = id
         self.name = name
+        self.mode = mode
         self.engine_name = engine_name
         self.engine_version = engine_version
         self.status = status
@@ -119,6 +125,28 @@ class HtapLTSConfigResponseInstance:
         :type name: str
         """
         self._name = name
+
+    @property
+    def mode(self):
+        r"""Gets the mode of this HtapLTSConfigResponseInstance.
+
+        **参数解释**：  HTAP标准版实例模式。  **取值范围**：  - Cluster：集群模式。 - Single：单机模式。
+
+        :return: The mode of this HtapLTSConfigResponseInstance.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        r"""Sets the mode of this HtapLTSConfigResponseInstance.
+
+        **参数解释**：  HTAP标准版实例模式。  **取值范围**：  - Cluster：集群模式。 - Single：单机模式。
+
+        :param mode: The mode of this HtapLTSConfigResponseInstance.
+        :type mode: str
+        """
+        self._mode = mode
 
     @property
     def engine_name(self):

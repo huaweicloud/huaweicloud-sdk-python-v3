@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class SendMessageRep:
+class SendMessageReq:
 
     """
     Attributes:
@@ -27,7 +27,7 @@ class SendMessageRep:
     }
 
     def __init__(self, topic=None, body=None, property_list=None):
-        r"""SendMessageRep
+        r"""SendMessageReq
 
         The model defined in huaweicloud sdk
 
@@ -55,66 +55,66 @@ class SendMessageRep:
 
     @property
     def topic(self):
-        r"""Gets the topic of this SendMessageRep.
+        r"""Gets the topic of this SendMessageReq.
 
         **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :return: The topic of this SendMessageRep.
+        :return: The topic of this SendMessageReq.
         :rtype: str
         """
         return self._topic
 
     @topic.setter
     def topic(self, topic):
-        r"""Sets the topic of this SendMessageRep.
+        r"""Sets the topic of this SendMessageReq.
 
         **参数解释**： 主题名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :param topic: The topic of this SendMessageRep.
+        :param topic: The topic of this SendMessageReq.
         :type topic: str
         """
         self._topic = topic
 
     @property
     def body(self):
-        r"""Gets the body of this SendMessageRep.
+        r"""Gets the body of this SendMessageReq.
 
         **参数解释**： 消息内容。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :return: The body of this SendMessageRep.
+        :return: The body of this SendMessageReq.
         :rtype: str
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        r"""Sets the body of this SendMessageRep.
+        r"""Sets the body of this SendMessageReq.
 
         **参数解释**： 消息内容。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
-        :param body: The body of this SendMessageRep.
+        :param body: The body of this SendMessageReq.
         :type body: str
         """
         self._body = body
 
     @property
     def property_list(self):
-        r"""Gets the property_list of this SendMessageRep.
+        r"""Gets the property_list of this SendMessageReq.
 
         **参数解释**： 特性列表。
 
-        :return: The property_list of this SendMessageRep.
+        :return: The property_list of this SendMessageReq.
         :rtype: list[:class:`huaweicloudsdkrocketmq.v2.SendMessageProperties`]
         """
         return self._property_list
 
     @property_list.setter
     def property_list(self, property_list):
-        r"""Sets the property_list of this SendMessageRep.
+        r"""Sets the property_list of this SendMessageReq.
 
         **参数解释**： 特性列表。
 
-        :param property_list: The property_list of this SendMessageRep.
+        :param property_list: The property_list of this SendMessageReq.
         :type property_list: list[:class:`huaweicloudsdkrocketmq.v2.SendMessageProperties`]
         """
         self._property_list = property_list
@@ -156,7 +156,7 @@ class SendMessageRep:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SendMessageRep):
+        if not isinstance(other, SendMessageReq):
             return False
 
         return self.__dict__ == other.__dict__

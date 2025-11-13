@@ -19,7 +19,8 @@ class CreateFirewallOption:
         'description': 'str',
         'enterprise_project_id': 'str',
         'tags': 'list[ResourceTag]',
-        'admin_state_up': 'bool'
+        'admin_state_up': 'bool',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class CreateFirewallOption:
         'description': 'description',
         'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
-        'admin_state_up': 'admin_state_up'
+        'admin_state_up': 'admin_state_up',
+        'type': 'type'
     }
 
-    def __init__(self, name=None, description=None, enterprise_project_id=None, tags=None, admin_state_up=None):
+    def __init__(self, name=None, description=None, enterprise_project_id=None, tags=None, admin_state_up=None, type=None):
         r"""CreateFirewallOption
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class CreateFirewallOption:
         :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         :param admin_state_up: 功能说明：ACL是否开启，默认值true 取值范围：true表示ACL开启；false表示ACL关闭
         :type admin_state_up: bool
+        :param type: 参数解释：   网络ACL支持关联的子网类型。 约束限制：   不涉及。 取值范围：   normal：表示网络ACL支持关联普通子网。   clouddcn：表示网络ACL支持关联CloudDCN子网。 默认取值：   normal
+        :type type: str
         """
         
         
@@ -54,6 +58,7 @@ class CreateFirewallOption:
         self._enterprise_project_id = None
         self._tags = None
         self._admin_state_up = None
+        self._type = None
         self.discriminator = None
 
         self.name = name
@@ -65,6 +70,8 @@ class CreateFirewallOption:
             self.tags = tags
         if admin_state_up is not None:
             self.admin_state_up = admin_state_up
+        if type is not None:
+            self.type = type
 
     @property
     def name(self):
@@ -175,6 +182,28 @@ class CreateFirewallOption:
         :type admin_state_up: bool
         """
         self._admin_state_up = admin_state_up
+
+    @property
+    def type(self):
+        r"""Gets the type of this CreateFirewallOption.
+
+        参数解释：   网络ACL支持关联的子网类型。 约束限制：   不涉及。 取值范围：   normal：表示网络ACL支持关联普通子网。   clouddcn：表示网络ACL支持关联CloudDCN子网。 默认取值：   normal
+
+        :return: The type of this CreateFirewallOption.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this CreateFirewallOption.
+
+        参数解释：   网络ACL支持关联的子网类型。 约束限制：   不涉及。 取值范围：   normal：表示网络ACL支持关联普通子网。   clouddcn：表示网络ACL支持关联CloudDCN子网。 默认取值：   normal
+
+        :param type: The type of this CreateFirewallOption.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         result = {}

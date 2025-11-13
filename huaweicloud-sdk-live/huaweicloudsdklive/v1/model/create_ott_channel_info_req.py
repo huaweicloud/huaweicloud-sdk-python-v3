@@ -20,6 +20,8 @@ class CreateOttChannelInfoReq:
         'id': 'str',
         'name': 'str',
         'state': 'str',
+        'mode': 'str',
+        'region': 'str',
         'input': 'InputStreamInfo',
         'encoder_settings': 'list[ModifyOttChannelEncoderSettingsEncoderSettings]',
         'record_settings': 'CreateOttChannelInfoReqRecordSettings',
@@ -33,6 +35,8 @@ class CreateOttChannelInfoReq:
         'id': 'id',
         'name': 'name',
         'state': 'state',
+        'mode': 'mode',
+        'region': 'region',
         'input': 'input',
         'encoder_settings': 'encoder_settings',
         'record_settings': 'record_settings',
@@ -40,7 +44,7 @@ class CreateOttChannelInfoReq:
         'encoder_settings_expand': 'encoder_settings_expand'
     }
 
-    def __init__(self, domain=None, app_name=None, id=None, name=None, state=None, input=None, encoder_settings=None, record_settings=None, endpoints=None, encoder_settings_expand=None):
+    def __init__(self, domain=None, app_name=None, id=None, name=None, state=None, mode=None, region=None, input=None, encoder_settings=None, record_settings=None, endpoints=None, encoder_settings_expand=None):
         r"""CreateOttChannelInfoReq
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class CreateOttChannelInfoReq:
         :type name: str
         :param state: 频道状态 - ON：频道下发成功后，自动启动拉流、转码、录制等功能 - OFF：仅保存频道信息，不启动频道
         :type state: str
+        :param mode: 频道模式 ADD_CDN：一站式服务，源站和CDN绑在一起（默认） ONLY_OS：独立源站服务，CDN和源站解耦
+        :type mode: str
+        :param region: 当mode是ONLY_OS时，该字段生效，表示频道所在Region
+        :type region: str
         :param input: 
         :type input: :class:`huaweicloudsdklive.v1.InputStreamInfo`
         :param encoder_settings: 转码模板配置
@@ -74,6 +82,8 @@ class CreateOttChannelInfoReq:
         self._id = None
         self._name = None
         self._state = None
+        self._mode = None
+        self._region = None
         self._input = None
         self._encoder_settings = None
         self._record_settings = None
@@ -87,6 +97,10 @@ class CreateOttChannelInfoReq:
         if name is not None:
             self.name = name
         self.state = state
+        if mode is not None:
+            self.mode = mode
+        if region is not None:
+            self.region = region
         self.input = input
         if encoder_settings is not None:
             self.encoder_settings = encoder_settings
@@ -204,6 +218,50 @@ class CreateOttChannelInfoReq:
         :type state: str
         """
         self._state = state
+
+    @property
+    def mode(self):
+        r"""Gets the mode of this CreateOttChannelInfoReq.
+
+        频道模式 ADD_CDN：一站式服务，源站和CDN绑在一起（默认） ONLY_OS：独立源站服务，CDN和源站解耦
+
+        :return: The mode of this CreateOttChannelInfoReq.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        r"""Sets the mode of this CreateOttChannelInfoReq.
+
+        频道模式 ADD_CDN：一站式服务，源站和CDN绑在一起（默认） ONLY_OS：独立源站服务，CDN和源站解耦
+
+        :param mode: The mode of this CreateOttChannelInfoReq.
+        :type mode: str
+        """
+        self._mode = mode
+
+    @property
+    def region(self):
+        r"""Gets the region of this CreateOttChannelInfoReq.
+
+        当mode是ONLY_OS时，该字段生效，表示频道所在Region
+
+        :return: The region of this CreateOttChannelInfoReq.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        r"""Sets the region of this CreateOttChannelInfoReq.
+
+        当mode是ONLY_OS时，该字段生效，表示频道所在Region
+
+        :param region: The region of this CreateOttChannelInfoReq.
+        :type region: str
+        """
+        self._region = region
 
     @property
     def input(self):

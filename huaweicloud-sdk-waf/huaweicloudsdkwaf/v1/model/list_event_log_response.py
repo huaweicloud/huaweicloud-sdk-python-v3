@@ -30,9 +30,9 @@ class ListEventLogResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 
+        :param total: 防护事件下载文件总数
         :type total: int
-        :param items: 
+        :param items: 防护事件下载文件列表
         :type items: list[:class:`huaweicloudsdkwaf.v1.EventDump`]
         """
         
@@ -51,6 +51,8 @@ class ListEventLogResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListEventLogResponse.
 
+        防护事件下载文件总数
+
         :return: The total of this ListEventLogResponse.
         :rtype: int
         """
@@ -59,6 +61,8 @@ class ListEventLogResponse(SdkResponse):
     @total.setter
     def total(self, total):
         r"""Sets the total of this ListEventLogResponse.
+
+        防护事件下载文件总数
 
         :param total: The total of this ListEventLogResponse.
         :type total: int
@@ -69,6 +73,8 @@ class ListEventLogResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListEventLogResponse.
 
+        防护事件下载文件列表
+
         :return: The items of this ListEventLogResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.EventDump`]
         """
@@ -77,6 +83,8 @@ class ListEventLogResponse(SdkResponse):
     @items.setter
     def items(self, items):
         r"""Sets the items of this ListEventLogResponse.
+
+        防护事件下载文件列表
 
         :param items: The items of this ListEventLogResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.EventDump`]

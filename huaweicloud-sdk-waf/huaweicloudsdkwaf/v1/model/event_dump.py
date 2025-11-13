@@ -51,31 +51,31 @@ class EventDump:
 
         The model defined in huaweicloud sdk
 
-        :param source: 
+        :param source: 文件来源
         :type source: str
-        :param state: 
+        :param state: 文件状态
         :type state: str
-        :param description: 
+        :param description: 事件描述
         :type description: str
-        :param id: 
+        :param id: 文件id
         :type id: str
-        :param filename: 
+        :param filename: 文件名
         :type filename: str
-        :param obsname: 
+        :param obsname: 文件obs名
         :type obsname: str
-        :param tenantid: 
+        :param tenantid: 租户id
         :type tenantid: str
-        :param start: 
+        :param start: 统计开始时间
         :type start: int
-        :param end: 
+        :param end: 统计截止时间
         :type end: int
-        :param total: 
+        :param total: 总计事件数
         :type total: int
-        :param url: 
+        :param url: 链接
         :type url: str
-        :param urltimestamp: 
+        :param urltimestamp: 更新url时间戳
         :type urltimestamp: int
-        :param timestamp: 
+        :param timestamp: 文件生成时间戳
         :type timestamp: int
         """
         
@@ -127,6 +127,8 @@ class EventDump:
     def source(self):
         r"""Gets the source of this EventDump.
 
+        文件来源
+
         :return: The source of this EventDump.
         :rtype: str
         """
@@ -135,6 +137,8 @@ class EventDump:
     @source.setter
     def source(self, source):
         r"""Sets the source of this EventDump.
+
+        文件来源
 
         :param source: The source of this EventDump.
         :type source: str
@@ -145,6 +149,8 @@ class EventDump:
     def state(self):
         r"""Gets the state of this EventDump.
 
+        文件状态
+
         :return: The state of this EventDump.
         :rtype: str
         """
@@ -153,6 +159,8 @@ class EventDump:
     @state.setter
     def state(self, state):
         r"""Sets the state of this EventDump.
+
+        文件状态
 
         :param state: The state of this EventDump.
         :type state: str
@@ -163,6 +171,8 @@ class EventDump:
     def description(self):
         r"""Gets the description of this EventDump.
 
+        事件描述
+
         :return: The description of this EventDump.
         :rtype: str
         """
@@ -171,6 +181,8 @@ class EventDump:
     @description.setter
     def description(self, description):
         r"""Sets the description of this EventDump.
+
+        事件描述
 
         :param description: The description of this EventDump.
         :type description: str
@@ -181,6 +193,8 @@ class EventDump:
     def id(self):
         r"""Gets the id of this EventDump.
 
+        文件id
+
         :return: The id of this EventDump.
         :rtype: str
         """
@@ -189,6 +203,8 @@ class EventDump:
     @id.setter
     def id(self, id):
         r"""Sets the id of this EventDump.
+
+        文件id
 
         :param id: The id of this EventDump.
         :type id: str
@@ -199,6 +215,8 @@ class EventDump:
     def filename(self):
         r"""Gets the filename of this EventDump.
 
+        文件名
+
         :return: The filename of this EventDump.
         :rtype: str
         """
@@ -207,6 +225,8 @@ class EventDump:
     @filename.setter
     def filename(self, filename):
         r"""Sets the filename of this EventDump.
+
+        文件名
 
         :param filename: The filename of this EventDump.
         :type filename: str
@@ -217,6 +237,8 @@ class EventDump:
     def obsname(self):
         r"""Gets the obsname of this EventDump.
 
+        文件obs名
+
         :return: The obsname of this EventDump.
         :rtype: str
         """
@@ -225,6 +247,8 @@ class EventDump:
     @obsname.setter
     def obsname(self, obsname):
         r"""Sets the obsname of this EventDump.
+
+        文件obs名
 
         :param obsname: The obsname of this EventDump.
         :type obsname: str
@@ -235,6 +259,8 @@ class EventDump:
     def tenantid(self):
         r"""Gets the tenantid of this EventDump.
 
+        租户id
+
         :return: The tenantid of this EventDump.
         :rtype: str
         """
@@ -243,6 +269,8 @@ class EventDump:
     @tenantid.setter
     def tenantid(self, tenantid):
         r"""Sets the tenantid of this EventDump.
+
+        租户id
 
         :param tenantid: The tenantid of this EventDump.
         :type tenantid: str
@@ -253,6 +281,8 @@ class EventDump:
     def start(self):
         r"""Gets the start of this EventDump.
 
+        统计开始时间
+
         :return: The start of this EventDump.
         :rtype: int
         """
@@ -261,6 +291,8 @@ class EventDump:
     @start.setter
     def start(self, start):
         r"""Sets the start of this EventDump.
+
+        统计开始时间
 
         :param start: The start of this EventDump.
         :type start: int
@@ -271,6 +303,8 @@ class EventDump:
     def end(self):
         r"""Gets the end of this EventDump.
 
+        统计截止时间
+
         :return: The end of this EventDump.
         :rtype: int
         """
@@ -279,6 +313,8 @@ class EventDump:
     @end.setter
     def end(self, end):
         r"""Sets the end of this EventDump.
+
+        统计截止时间
 
         :param end: The end of this EventDump.
         :type end: int
@@ -289,6 +325,8 @@ class EventDump:
     def total(self):
         r"""Gets the total of this EventDump.
 
+        总计事件数
+
         :return: The total of this EventDump.
         :rtype: int
         """
@@ -297,6 +335,8 @@ class EventDump:
     @total.setter
     def total(self, total):
         r"""Sets the total of this EventDump.
+
+        总计事件数
 
         :param total: The total of this EventDump.
         :type total: int
@@ -307,6 +347,8 @@ class EventDump:
     def url(self):
         r"""Gets the url of this EventDump.
 
+        链接
+
         :return: The url of this EventDump.
         :rtype: str
         """
@@ -315,6 +357,8 @@ class EventDump:
     @url.setter
     def url(self, url):
         r"""Sets the url of this EventDump.
+
+        链接
 
         :param url: The url of this EventDump.
         :type url: str
@@ -325,6 +369,8 @@ class EventDump:
     def urltimestamp(self):
         r"""Gets the urltimestamp of this EventDump.
 
+        更新url时间戳
+
         :return: The urltimestamp of this EventDump.
         :rtype: int
         """
@@ -333,6 +379,8 @@ class EventDump:
     @urltimestamp.setter
     def urltimestamp(self, urltimestamp):
         r"""Sets the urltimestamp of this EventDump.
+
+        更新url时间戳
 
         :param urltimestamp: The urltimestamp of this EventDump.
         :type urltimestamp: int
@@ -343,6 +391,8 @@ class EventDump:
     def timestamp(self):
         r"""Gets the timestamp of this EventDump.
 
+        文件生成时间戳
+
         :return: The timestamp of this EventDump.
         :rtype: int
         """
@@ -351,6 +401,8 @@ class EventDump:
     @timestamp.setter
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this EventDump.
+
+        文件生成时间戳
 
         :param timestamp: The timestamp of this EventDump.
         :type timestamp: int

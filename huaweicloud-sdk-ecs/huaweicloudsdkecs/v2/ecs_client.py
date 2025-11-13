@@ -306,6 +306,73 @@ class EcsClient(Client):
 
         return http_info
 
+    def batch_add_server_group_member(self, request):
+        r"""云服务器组批量添加成员
+
+        将云服务器加入云服务器组。添加成功后，该云服务器与云服务器组中的其他成员尽量分散地创建在不同主机上。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchAddServerGroupMember
+        :type request: :class:`huaweicloudsdkecs.v2.BatchAddServerGroupMemberRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchAddServerGroupMemberResponse`
+        """
+        http_info = self._batch_add_server_group_member_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_add_server_group_member_invoker(self, request):
+        http_info = self._batch_add_server_group_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_add_server_group_member_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/add_members",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddServerGroupMemberResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_group_id' in local_var_params:
+            path_params['server_group_id'] = local_var_params['server_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_add_server_nics(self, request):
         r"""批量添加云服务器网卡
 
@@ -478,6 +545,73 @@ class EcsClient(Client):
         path_params = {}
         if 'server_id' in local_var_params:
             path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_server_group_member(self, request):
+        r"""云服务器组批量删除成员
+
+        将弹性云服务器移出云服务器组。移出后，该云服务器与云服务器组中的成员不再遵从反亲和策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteServerGroupMember
+        :type request: :class:`huaweicloudsdkecs.v2.BatchDeleteServerGroupMemberRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerGroupMemberResponse`
+        """
+        http_info = self._batch_delete_server_group_member_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_server_group_member_invoker(self, request):
+        http_info = self._batch_delete_server_group_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_server_group_member_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/remove_members",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteServerGroupMemberResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_group_id' in local_var_params:
+            path_params['server_group_id'] = local_var_params['server_group_id']
 
         query_params = []
 

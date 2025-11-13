@@ -17,7 +17,7 @@ class ExportJobRequest:
     openapi_types = {
         'workspace': 'str',
         'job_name': 'str',
-        'body': 'ExportJobsReq'
+        'body': 'ExportJobReq'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class ExportJobRequest:
         :param job_name: 作业名称.
         :type job_name: str
         :param body: Body of the ExportJobRequest
-        :type body: :class:`huaweicloudsdkdgc.v1.ExportJobsReq`
+        :type body: :class:`huaweicloudsdkdgc.v1.ExportJobReq`
         """
         
         
@@ -101,7 +101,7 @@ class ExportJobRequest:
         r"""Gets the body of this ExportJobRequest.
 
         :return: The body of this ExportJobRequest.
-        :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobsReq`
+        :rtype: :class:`huaweicloudsdkdgc.v1.ExportJobReq`
         """
         return self._body
 
@@ -110,7 +110,7 @@ class ExportJobRequest:
         r"""Sets the body of this ExportJobRequest.
 
         :param body: The body of this ExportJobRequest.
-        :type body: :class:`huaweicloudsdkdgc.v1.ExportJobsReq`
+        :type body: :class:`huaweicloudsdkdgc.v1.ExportJobReq`
         """
         self._body = body
 

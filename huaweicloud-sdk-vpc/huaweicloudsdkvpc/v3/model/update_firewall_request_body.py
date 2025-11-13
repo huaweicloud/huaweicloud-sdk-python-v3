@@ -15,28 +15,35 @@ class UpdateFirewallRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'firewall': 'UpdateFirewallOption'
+        'firewall': 'UpdateFirewallOption',
+        'dry_run': 'bool'
     }
 
     attribute_map = {
-        'firewall': 'firewall'
+        'firewall': 'firewall',
+        'dry_run': 'dry_run'
     }
 
-    def __init__(self, firewall=None):
+    def __init__(self, firewall=None, dry_run=None):
         r"""UpdateFirewallRequestBody
 
         The model defined in huaweicloud sdk
 
         :param firewall: 
         :type firewall: :class:`huaweicloudsdkvpc.v3.UpdateFirewallOption`
+        :param dry_run: 功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新网络ACL。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新网络ACL。
+        :type dry_run: bool
         """
         
         
 
         self._firewall = None
+        self._dry_run = None
         self.discriminator = None
 
         self.firewall = firewall
+        if dry_run is not None:
+            self.dry_run = dry_run
 
     @property
     def firewall(self):
@@ -55,6 +62,28 @@ class UpdateFirewallRequestBody:
         :type firewall: :class:`huaweicloudsdkvpc.v3.UpdateFirewallOption`
         """
         self._firewall = firewall
+
+    @property
+    def dry_run(self):
+        r"""Gets the dry_run of this UpdateFirewallRequestBody.
+
+        功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新网络ACL。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新网络ACL。
+
+        :return: The dry_run of this UpdateFirewallRequestBody.
+        :rtype: bool
+        """
+        return self._dry_run
+
+    @dry_run.setter
+    def dry_run(self, dry_run):
+        r"""Sets the dry_run of this UpdateFirewallRequestBody.
+
+        功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新网络ACL。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新网络ACL。
+
+        :param dry_run: The dry_run of this UpdateFirewallRequestBody.
+        :type dry_run: bool
+        """
+        self._dry_run = dry_run
 
     def to_dict(self):
         result = {}

@@ -19,7 +19,7 @@ class SqlAlarmRuleRespList:
         'is_css_sql': 'bool',
         'sql_alarm_rule_id': 'str',
         'sql_alarm_rule_description': 'str',
-        'sql_requests': 'list[SqlRequest]',
+        'sql_requests': 'list[SqlRequestResponse]',
         'frequency': 'FrequencyRespBody',
         'condition_expression': 'str',
         'topics': 'list[Topics]',
@@ -76,7 +76,7 @@ class SqlAlarmRuleRespList:
         :param sql_alarm_rule_description: SQL告警信息描述
         :type sql_alarm_rule_description: str
         :param sql_requests: SQL详细信息
-        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
+        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequestResponse`]
         :param frequency: 
         :type frequency: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         :param condition_expression: 条件表达式
@@ -262,7 +262,7 @@ class SqlAlarmRuleRespList:
         SQL详细信息
 
         :return: The sql_requests of this SqlAlarmRuleRespList.
-        :rtype: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
+        :rtype: list[:class:`huaweicloudsdklts.v2.SqlRequestResponse`]
         """
         return self._sql_requests
 
@@ -273,7 +273,7 @@ class SqlAlarmRuleRespList:
         SQL详细信息
 
         :param sql_requests: The sql_requests of this SqlAlarmRuleRespList.
-        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
+        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequestResponse`]
         """
         self._sql_requests = sql_requests
 

@@ -13243,6 +13243,75 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def download_import_excel_template(self, request):
+        r"""HTAP数据同步模板下载
+
+        HTAP数据同步模板下载。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadImportExcelTemplate
+        :type request: :class:`huaweicloudsdkgaussdb.v3.DownloadImportExcelTemplateRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.DownloadImportExcelTemplateResponse`
+        """
+        http_info = self._download_import_excel_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_import_excel_template_invoker(self, request):
+        http_info = self._download_import_excel_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_import_excel_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/htap/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadImportExcelTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'template_type' in local_var_params:
+            query_params.append(('template_type', local_var_params['template_type']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_click_house_data_base(self, request):
         r"""查询数据库列表
 
@@ -16709,6 +16778,85 @@ class GaussDBClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_import_excel_template(self, request):
+        r"""HTAP库表导入校验
+
+        创建数据同步时支持Excel导入并进行校验。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UploadImportExcelTemplate
+        :type request: :class:`huaweicloudsdkgaussdb.v3.UploadImportExcelTemplateRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.UploadImportExcelTemplateResponse`
+        """
+        http_info = self._upload_import_excel_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_import_excel_template_invoker(self, request):
+        http_info = self._upload_import_excel_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_import_excel_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/htap/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadImportExcelTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+        if 'template_type' in local_var_params:
+            form_params['template_type'] = local_var_params['template_type']
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+        if 'is_instance_level' in local_var_params:
+            form_params['is_instance_level'] = local_var_params['is_instance_level']
+        if 'selected_dbs' in local_var_params:
+            form_params['selected_dbs'] = local_var_params['selected_dbs']
+        if 'is_support_regexp' in local_var_params:
+            form_params['is_support_regexp'] = local_var_params['is_support_regexp']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
 
         auth_settings = []
 

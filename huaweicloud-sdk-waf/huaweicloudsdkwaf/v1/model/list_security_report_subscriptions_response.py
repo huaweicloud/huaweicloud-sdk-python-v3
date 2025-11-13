@@ -30,9 +30,9 @@ class ListSecurityReportSubscriptionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 
+        :param total: 安全报告订阅数
         :type total: int
-        :param items: 
+        :param items: 安全报告订阅列表
         :type items: list[:class:`huaweicloudsdkwaf.v1.SecurityReportSubscriptionSummaryResponse`]
         """
         
@@ -51,6 +51,8 @@ class ListSecurityReportSubscriptionsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListSecurityReportSubscriptionsResponse.
 
+        安全报告订阅数
+
         :return: The total of this ListSecurityReportSubscriptionsResponse.
         :rtype: int
         """
@@ -59,6 +61,8 @@ class ListSecurityReportSubscriptionsResponse(SdkResponse):
     @total.setter
     def total(self, total):
         r"""Sets the total of this ListSecurityReportSubscriptionsResponse.
+
+        安全报告订阅数
 
         :param total: The total of this ListSecurityReportSubscriptionsResponse.
         :type total: int
@@ -69,6 +73,8 @@ class ListSecurityReportSubscriptionsResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListSecurityReportSubscriptionsResponse.
 
+        安全报告订阅列表
+
         :return: The items of this ListSecurityReportSubscriptionsResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.SecurityReportSubscriptionSummaryResponse`]
         """
@@ -77,6 +83,8 @@ class ListSecurityReportSubscriptionsResponse(SdkResponse):
     @items.setter
     def items(self, items):
         r"""Sets the items of this ListSecurityReportSubscriptionsResponse.
+
+        安全报告订阅列表
 
         :param items: The items of this ListSecurityReportSubscriptionsResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.SecurityReportSubscriptionSummaryResponse`]

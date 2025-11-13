@@ -30,9 +30,9 @@ class ListAntiTamperPolicyRulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 防泄漏规则数量
+        :param total: 防泄露规则数量
         :type total: int
-        :param items: 防泄漏规则列表
+        :param items: 防泄露规则列表
         :type items: list[:class:`huaweicloudsdkwaf.v1.LeakageListInfo`]
         """
         
@@ -51,7 +51,7 @@ class ListAntiTamperPolicyRulesResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListAntiTamperPolicyRulesResponse.
 
-        防泄漏规则数量
+        防泄露规则数量
 
         :return: The total of this ListAntiTamperPolicyRulesResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListAntiTamperPolicyRulesResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListAntiTamperPolicyRulesResponse.
 
-        防泄漏规则数量
+        防泄露规则数量
 
         :param total: The total of this ListAntiTamperPolicyRulesResponse.
         :type total: int
@@ -73,7 +73,7 @@ class ListAntiTamperPolicyRulesResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListAntiTamperPolicyRulesResponse.
 
-        防泄漏规则列表
+        防泄露规则列表
 
         :return: The items of this ListAntiTamperPolicyRulesResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.LeakageListInfo`]
@@ -84,7 +84,7 @@ class ListAntiTamperPolicyRulesResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListAntiTamperPolicyRulesResponse.
 
-        防泄漏规则列表
+        防泄露规则列表
 
         :param items: The items of this ListAntiTamperPolicyRulesResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.LeakageListInfo`]

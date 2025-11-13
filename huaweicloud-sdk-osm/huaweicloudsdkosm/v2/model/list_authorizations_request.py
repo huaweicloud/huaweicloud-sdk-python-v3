@@ -45,7 +45,7 @@ class ListAuthorizationsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param sub_customer_name: 子用户名称
+        :param sub_customer_name: 子账号名称
         :type sub_customer_name: str
         :param incident_id: 工单id
         :type incident_id: str
@@ -106,7 +106,7 @@ class ListAuthorizationsRequest:
     def sub_customer_name(self):
         r"""Gets the sub_customer_name of this ListAuthorizationsRequest.
 
-        子用户名称
+        子账号名称
 
         :return: The sub_customer_name of this ListAuthorizationsRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class ListAuthorizationsRequest:
     def sub_customer_name(self, sub_customer_name):
         r"""Sets the sub_customer_name of this ListAuthorizationsRequest.
 
-        子用户名称
+        子账号名称
 
         :param sub_customer_name: The sub_customer_name of this ListAuthorizationsRequest.
         :type sub_customer_name: str

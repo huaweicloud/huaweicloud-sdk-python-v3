@@ -15,28 +15,35 @@ class AssociateSubnetFirewallRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'subnets': 'list[FirewallAssociation]'
+        'subnets': 'list[FirewallAssociation]',
+        'dry_run': 'bool'
     }
 
     attribute_map = {
-        'subnets': 'subnets'
+        'subnets': 'subnets',
+        'dry_run': 'dry_run'
     }
 
-    def __init__(self, subnets=None):
+    def __init__(self, subnets=None, dry_run=None):
         r"""AssociateSubnetFirewallRequestBody
 
         The model defined in huaweicloud sdk
 
         :param subnets: 绑定ACL的子网列表
         :type subnets: list[:class:`huaweicloudsdkvpc.v3.FirewallAssociation`]
+        :param dry_run: 功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会执行网络ACL绑定子网。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接执行网络ACL绑定子网。
+        :type dry_run: bool
         """
         
         
 
         self._subnets = None
+        self._dry_run = None
         self.discriminator = None
 
         self.subnets = subnets
+        if dry_run is not None:
+            self.dry_run = dry_run
 
     @property
     def subnets(self):
@@ -59,6 +66,28 @@ class AssociateSubnetFirewallRequestBody:
         :type subnets: list[:class:`huaweicloudsdkvpc.v3.FirewallAssociation`]
         """
         self._subnets = subnets
+
+    @property
+    def dry_run(self):
+        r"""Gets the dry_run of this AssociateSubnetFirewallRequestBody.
+
+        功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会执行网络ACL绑定子网。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接执行网络ACL绑定子网。
+
+        :return: The dry_run of this AssociateSubnetFirewallRequestBody.
+        :rtype: bool
+        """
+        return self._dry_run
+
+    @dry_run.setter
+    def dry_run(self, dry_run):
+        r"""Sets the dry_run of this AssociateSubnetFirewallRequestBody.
+
+        功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会执行网络ACL绑定子网。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接执行网络ACL绑定子网。
+
+        :param dry_run: The dry_run of this AssociateSubnetFirewallRequestBody.
+        :type dry_run: bool
+        """
+        self._dry_run = dry_run
 
     def to_dict(self):
         result = {}

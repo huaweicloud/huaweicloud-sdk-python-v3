@@ -19,6 +19,7 @@ class DigitalAssetSummary:
         'asset_name': 'str',
         'asset_state': 'str',
         'asset_type': 'str',
+        'block_reason_code': 'str',
         'cover_url': 'str',
         'thumbnail_url': 'str'
     }
@@ -28,11 +29,12 @@ class DigitalAssetSummary:
         'asset_name': 'asset_name',
         'asset_state': 'asset_state',
         'asset_type': 'asset_type',
+        'block_reason_code': 'block_reason_code',
         'cover_url': 'cover_url',
         'thumbnail_url': 'thumbnail_url'
     }
 
-    def __init__(self, asset_id=None, asset_name=None, asset_state=None, asset_type=None, cover_url=None, thumbnail_url=None):
+    def __init__(self, asset_id=None, asset_name=None, asset_state=None, asset_type=None, block_reason_code=None, cover_url=None, thumbnail_url=None):
         r"""DigitalAssetSummary
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class DigitalAssetSummary:
         :type asset_state: str
         :param asset_type: 资产类型。 公共资产类型： * VOICE_MODEL：音色模型（仅系统管理员可上传，普通租户仅可查询） * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板
         :type asset_type: str
+        :param block_reason_code: 冻结原因编号。
+        :type block_reason_code: str
         :param cover_url: 封面图片路径。
         :type cover_url: str
         :param thumbnail_url: 缩略图路径。
@@ -57,6 +61,7 @@ class DigitalAssetSummary:
         self._asset_name = None
         self._asset_state = None
         self._asset_type = None
+        self._block_reason_code = None
         self._cover_url = None
         self._thumbnail_url = None
         self.discriminator = None
@@ -69,6 +74,8 @@ class DigitalAssetSummary:
             self.asset_state = asset_state
         if asset_type is not None:
             self.asset_type = asset_type
+        if block_reason_code is not None:
+            self.block_reason_code = block_reason_code
         if cover_url is not None:
             self.cover_url = cover_url
         if thumbnail_url is not None:
@@ -161,6 +168,28 @@ class DigitalAssetSummary:
         :type asset_type: str
         """
         self._asset_type = asset_type
+
+    @property
+    def block_reason_code(self):
+        r"""Gets the block_reason_code of this DigitalAssetSummary.
+
+        冻结原因编号。
+
+        :return: The block_reason_code of this DigitalAssetSummary.
+        :rtype: str
+        """
+        return self._block_reason_code
+
+    @block_reason_code.setter
+    def block_reason_code(self, block_reason_code):
+        r"""Sets the block_reason_code of this DigitalAssetSummary.
+
+        冻结原因编号。
+
+        :param block_reason_code: The block_reason_code of this DigitalAssetSummary.
+        :type block_reason_code: str
+        """
+        self._block_reason_code = block_reason_code
 
     @property
     def cover_url(self):

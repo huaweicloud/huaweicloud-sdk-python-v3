@@ -1283,6 +1283,71 @@ class MrsAsyncClient(Client):
 
         return http_info
 
+    def list_security_rule_status_async(self, request):
+        r"""获取当前集群通信安全授权状态
+
+        获取当前集群通信安全授权状态
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSecurityRuleStatus
+        :type request: :class:`huaweicloudsdkmrs.v2.ListSecurityRuleStatusRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ListSecurityRuleStatusResponse`
+        """
+        http_info = self._list_security_rule_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_rule_status_async_invoker(self, request):
+        http_info = self._list_security_rule_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_rule_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/security-rule/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityRuleStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def shrink_cluster_async(self, request):
         r"""缩容集群
 
@@ -1750,6 +1815,136 @@ class MrsAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sync_requirements_async(self, request):
+        r"""查询指定集群的IAM同步情况
+
+        查询指定集群的IAM同步情况
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSyncRequirements
+        :type request: :class:`huaweicloudsdkmrs.v2.ListSyncRequirementsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ListSyncRequirementsResponse`
+        """
+        http_info = self._list_sync_requirements_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sync_requirements_async_invoker(self, request):
+        http_info = self._list_sync_requirements_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sync_requirements_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/iam-sync/is-synchronous",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSyncRequirementsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sync_status_async(self, request):
+        r"""查询当前集群是否在IAM同步进行中
+
+        查询当前集群是否在IAM同步进行中
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSyncStatus
+        :type request: :class:`huaweicloudsdkmrs.v2.ListSyncStatusRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.ListSyncStatusResponse`
+        """
+        http_info = self._list_sync_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sync_status_async_invoker(self, request):
+        http_info = self._list_sync_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sync_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/iam-sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSyncStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

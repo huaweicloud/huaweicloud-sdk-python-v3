@@ -41,9 +41,9 @@ class Flag:
         :type pci_dss: str
         :param cname: old：代表域名使用的老的cname，new：代表域名使用新的cname
         :type cname: str
-        :param is_dual_az: 域名是否开启ipv6   - true：支持   - false：不支持
+        :param is_dual_az: 域名是否开启ipv6   - true：开启   - false：不开启
         :type is_dual_az: str
-        :param ipv6: 域名是否开启ipv6   - true：支持   - false：不支持
+        :param ipv6: 域名是否开启ipv6   - true：开启   - false：不开启
         :type ipv6: str
         """
         
@@ -137,7 +137,7 @@ class Flag:
     def is_dual_az(self):
         r"""Gets the is_dual_az of this Flag.
 
-        域名是否开启ipv6   - true：支持   - false：不支持
+        域名是否开启ipv6   - true：开启   - false：不开启
 
         :return: The is_dual_az of this Flag.
         :rtype: str
@@ -148,7 +148,7 @@ class Flag:
     def is_dual_az(self, is_dual_az):
         r"""Sets the is_dual_az of this Flag.
 
-        域名是否开启ipv6   - true：支持   - false：不支持
+        域名是否开启ipv6   - true：开启   - false：不开启
 
         :param is_dual_az: The is_dual_az of this Flag.
         :type is_dual_az: str
@@ -159,7 +159,7 @@ class Flag:
     def ipv6(self):
         r"""Gets the ipv6 of this Flag.
 
-        域名是否开启ipv6   - true：支持   - false：不支持
+        域名是否开启ipv6   - true：开启   - false：不开启
 
         :return: The ipv6 of this Flag.
         :rtype: str
@@ -170,7 +170,7 @@ class Flag:
     def ipv6(self, ipv6):
         r"""Sets the ipv6 of this Flag.
 
-        域名是否开启ipv6   - true：支持   - false：不支持
+        域名是否开启ipv6   - true：开启   - false：不开启
 
         :param ipv6: The ipv6 of this Flag.
         :type ipv6: str

@@ -51,19 +51,19 @@ class TmsResourceInstancesRequest:
         :type limit: int
         :param action: 操作标识
         :type action: str
-        :param tags: 
+        :param tags: 标签
         :type tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
-        :param sys_tags: 
+        :param sys_tags: 系统标签
         :type sys_tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
-        :param matches: 
+        :param matches: tms资源标签
         :type matches: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
         :param without_any_tag: 无任何标签的资源筛选标识
         :type without_any_tag: str
-        :param tags_any: 
+        :param tags_any: 任意标签的资源筛选标识
         :type tags_any: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
-        :param not_tags_any: 
+        :param not_tags_any: 不标识于标签
         :type not_tags_any: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
-        :param not_tags: 
+        :param not_tags: 不标识于标签
         :type not_tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
         """
         
@@ -172,6 +172,8 @@ class TmsResourceInstancesRequest:
     def tags(self):
         r"""Gets the tags of this TmsResourceInstancesRequest.
 
+        标签
+
         :return: The tags of this TmsResourceInstancesRequest.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
         """
@@ -180,6 +182,8 @@ class TmsResourceInstancesRequest:
     @tags.setter
     def tags(self, tags):
         r"""Sets the tags of this TmsResourceInstancesRequest.
+
+        标签
 
         :param tags: The tags of this TmsResourceInstancesRequest.
         :type tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
@@ -190,6 +194,8 @@ class TmsResourceInstancesRequest:
     def sys_tags(self):
         r"""Gets the sys_tags of this TmsResourceInstancesRequest.
 
+        系统标签
+
         :return: The sys_tags of this TmsResourceInstancesRequest.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
         """
@@ -198,6 +204,8 @@ class TmsResourceInstancesRequest:
     @sys_tags.setter
     def sys_tags(self, sys_tags):
         r"""Sets the sys_tags of this TmsResourceInstancesRequest.
+
+        系统标签
 
         :param sys_tags: The sys_tags of this TmsResourceInstancesRequest.
         :type sys_tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
@@ -208,6 +216,8 @@ class TmsResourceInstancesRequest:
     def matches(self):
         r"""Gets the matches of this TmsResourceInstancesRequest.
 
+        tms资源标签
+
         :return: The matches of this TmsResourceInstancesRequest.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
         """
@@ -216,6 +226,8 @@ class TmsResourceInstancesRequest:
     @matches.setter
     def matches(self, matches):
         r"""Sets the matches of this TmsResourceInstancesRequest.
+
+        tms资源标签
 
         :param matches: The matches of this TmsResourceInstancesRequest.
         :type matches: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
@@ -248,6 +260,8 @@ class TmsResourceInstancesRequest:
     def tags_any(self):
         r"""Gets the tags_any of this TmsResourceInstancesRequest.
 
+        任意标签的资源筛选标识
+
         :return: The tags_any of this TmsResourceInstancesRequest.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
         """
@@ -256,6 +270,8 @@ class TmsResourceInstancesRequest:
     @tags_any.setter
     def tags_any(self, tags_any):
         r"""Sets the tags_any of this TmsResourceInstancesRequest.
+
+        任意标签的资源筛选标识
 
         :param tags_any: The tags_any of this TmsResourceInstancesRequest.
         :type tags_any: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
@@ -266,6 +282,8 @@ class TmsResourceInstancesRequest:
     def not_tags_any(self):
         r"""Gets the not_tags_any of this TmsResourceInstancesRequest.
 
+        不标识于标签
+
         :return: The not_tags_any of this TmsResourceInstancesRequest.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
         """
@@ -274,6 +292,8 @@ class TmsResourceInstancesRequest:
     @not_tags_any.setter
     def not_tags_any(self, not_tags_any):
         r"""Sets the not_tags_any of this TmsResourceInstancesRequest.
+
+        不标识于标签
 
         :param not_tags_any: The not_tags_any of this TmsResourceInstancesRequest.
         :type not_tags_any: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
@@ -284,6 +304,8 @@ class TmsResourceInstancesRequest:
     def not_tags(self):
         r"""Gets the not_tags of this TmsResourceInstancesRequest.
 
+        不标识于标签
+
         :return: The not_tags of this TmsResourceInstancesRequest.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]
         """
@@ -292,6 +314,8 @@ class TmsResourceInstancesRequest:
     @not_tags.setter
     def not_tags(self, not_tags):
         r"""Sets the not_tags of this TmsResourceInstancesRequest.
+
+        不标识于标签
 
         :param not_tags: The not_tags of this TmsResourceInstancesRequest.
         :type not_tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstancesTag`]

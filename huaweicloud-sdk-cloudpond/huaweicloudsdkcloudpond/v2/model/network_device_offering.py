@@ -39,7 +39,7 @@ class NetworkDeviceOffering:
 
         The model defined in huaweicloud sdk
 
-        :param id: 销售策略ID
+        :param id: 网络设备商品ID
         :type id: str
         :param zone_code: 地区编码，表示允许在这个地区购买部署
         :type zone_code: str
@@ -85,7 +85,7 @@ class NetworkDeviceOffering:
     def id(self):
         r"""Gets the id of this NetworkDeviceOffering.
 
-        销售策略ID
+        网络设备商品ID
 
         :return: The id of this NetworkDeviceOffering.
         :rtype: str
@@ -96,7 +96,7 @@ class NetworkDeviceOffering:
     def id(self, id):
         r"""Sets the id of this NetworkDeviceOffering.
 
-        销售策略ID
+        网络设备商品ID
 
         :param id: The id of this NetworkDeviceOffering.
         :type id: str

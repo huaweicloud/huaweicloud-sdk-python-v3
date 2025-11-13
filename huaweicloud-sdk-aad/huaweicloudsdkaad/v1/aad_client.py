@@ -1822,6 +1822,71 @@ class AadClient(Client):
 
         return http_info
 
+    def show_lts_config(self, request):
+        r"""查询日志配置
+
+        查询日志配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLtsConfig
+        :type request: :class:`huaweicloudsdkaad.v1.ShowLtsConfigRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.ShowLtsConfigResponse`
+        """
+        http_info = self._show_lts_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_lts_config_invoker(self, request):
+        http_info = self._show_lts_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_lts_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cnad/config/lts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLtsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_policy(self, request):
         r"""查询策略详情
 
@@ -2061,6 +2126,73 @@ class AadClient(Client):
             path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_lts_config(self, request):
+        r"""设置日志配置
+
+        设置日志配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateLtsConfig
+        :type request: :class:`huaweicloudsdkaad.v1.UpdateLtsConfigRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.UpdateLtsConfigResponse`
+        """
+        http_info = self._update_lts_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_lts_config_invoker(self, request):
+        http_info = self._update_lts_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_lts_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/cnad/config/lts",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLtsConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

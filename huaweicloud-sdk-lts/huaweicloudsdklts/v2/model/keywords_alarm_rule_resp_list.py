@@ -20,22 +20,20 @@ class KeywordsAlarmRuleRespList:
         'keywords_alarm_rule_name': 'str',
         'keywords_alarm_rule_description': 'str',
         'condition_expression': 'str',
-        'keywords_requests': 'list[KeywordsRequest]',
+        'keywords_requests': 'list[KeywordsRequestResponse]',
         'frequency': 'Frequency',
         'keywords_alarm_level': 'str',
-        'keywords_alarm_send': 'bool',
         'domain_id': 'str',
         'create_time': 'int',
         'update_time': 'int',
-        'topics': 'list[Topics]',
-        'template_name': 'str',
         'status': 'str',
         'trigger_condition_count': 'int',
         'trigger_condition_frequency': 'int',
         'whether_recovery_policy': 'bool',
         'recovery_policy': 'int',
         'notification_frequency': 'int',
-        'alarm_action_rule_name': 'str'
+        'alarm_action_rule_name': 'str',
+        'tags': 'list[TagsResBody]'
     }
 
     attribute_map = {
@@ -47,22 +45,20 @@ class KeywordsAlarmRuleRespList:
         'keywords_requests': 'keywords_requests',
         'frequency': 'frequency',
         'keywords_alarm_level': 'keywords_alarm_level',
-        'keywords_alarm_send': 'keywords_alarm_send',
         'domain_id': 'domain_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
-        'topics': 'topics',
-        'template_name': 'template_name',
         'status': 'status',
         'trigger_condition_count': 'trigger_condition_count',
         'trigger_condition_frequency': 'trigger_condition_frequency',
         'whether_recovery_policy': 'whether_recovery_policy',
         'recovery_policy': 'recovery_policy',
         'notification_frequency': 'notification_frequency',
-        'alarm_action_rule_name': 'alarm_action_rule_name'
+        'alarm_action_rule_name': 'alarm_action_rule_name',
+        'tags': 'tags'
     }
 
-    def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, template_name=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
+    def __init__(self, project_id=None, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, condition_expression=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, domain_id=None, create_time=None, update_time=None, status=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None, tags=None):
         r"""KeywordsAlarmRuleRespList
 
         The model defined in huaweicloud sdk
@@ -78,23 +74,17 @@ class KeywordsAlarmRuleRespList:
         :param condition_expression: 条件
         :type condition_expression: str
         :param keywords_requests: 关键词详细信息
-        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
+        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequestResponse`]
         :param frequency: 
         :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
         :param keywords_alarm_level: 告警级别
         :type keywords_alarm_level: str
-        :param keywords_alarm_send: 是否发送
-        :type keywords_alarm_send: bool
         :param domain_id: domainId
         :type domain_id: str
         :param create_time: 创建时间（毫秒时间戳）
         :type create_time: int
         :param update_time: 更新时间（毫秒时间戳）
         :type update_time: int
-        :param topics: 通知主题
-        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
-        :param template_name: 消息模板名称
-        :type template_name: str
         :param status: 告警状态
         :type status: str
         :param trigger_condition_count: 触发条件：触发周期;默认为1
@@ -109,6 +99,8 @@ class KeywordsAlarmRuleRespList:
         :type notification_frequency: int
         :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
         :type alarm_action_rule_name: str
+        :param tags: **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
         """
         
         
@@ -121,12 +113,9 @@ class KeywordsAlarmRuleRespList:
         self._keywords_requests = None
         self._frequency = None
         self._keywords_alarm_level = None
-        self._keywords_alarm_send = None
         self._domain_id = None
         self._create_time = None
         self._update_time = None
-        self._topics = None
-        self._template_name = None
         self._status = None
         self._trigger_condition_count = None
         self._trigger_condition_frequency = None
@@ -134,6 +123,7 @@ class KeywordsAlarmRuleRespList:
         self._recovery_policy = None
         self._notification_frequency = None
         self._alarm_action_rule_name = None
+        self._tags = None
         self.discriminator = None
 
         if project_id is not None:
@@ -145,13 +135,9 @@ class KeywordsAlarmRuleRespList:
         self.keywords_requests = keywords_requests
         self.frequency = frequency
         self.keywords_alarm_level = keywords_alarm_level
-        self.keywords_alarm_send = keywords_alarm_send
         self.domain_id = domain_id
         self.create_time = create_time
         self.update_time = update_time
-        self.topics = topics
-        if template_name is not None:
-            self.template_name = template_name
         if status is not None:
             self.status = status
         if trigger_condition_count is not None:
@@ -165,6 +151,8 @@ class KeywordsAlarmRuleRespList:
         self.notification_frequency = notification_frequency
         if alarm_action_rule_name is not None:
             self.alarm_action_rule_name = alarm_action_rule_name
+        if tags is not None:
+            self.tags = tags
 
     @property
     def project_id(self):
@@ -283,7 +271,7 @@ class KeywordsAlarmRuleRespList:
         关键词详细信息
 
         :return: The keywords_requests of this KeywordsAlarmRuleRespList.
-        :rtype: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
+        :rtype: list[:class:`huaweicloudsdklts.v2.KeywordsRequestResponse`]
         """
         return self._keywords_requests
 
@@ -294,7 +282,7 @@ class KeywordsAlarmRuleRespList:
         关键词详细信息
 
         :param keywords_requests: The keywords_requests of this KeywordsAlarmRuleRespList.
-        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequest`]
+        :type keywords_requests: list[:class:`huaweicloudsdklts.v2.KeywordsRequestResponse`]
         """
         self._keywords_requests = keywords_requests
 
@@ -337,28 +325,6 @@ class KeywordsAlarmRuleRespList:
         :type keywords_alarm_level: str
         """
         self._keywords_alarm_level = keywords_alarm_level
-
-    @property
-    def keywords_alarm_send(self):
-        r"""Gets the keywords_alarm_send of this KeywordsAlarmRuleRespList.
-
-        是否发送
-
-        :return: The keywords_alarm_send of this KeywordsAlarmRuleRespList.
-        :rtype: bool
-        """
-        return self._keywords_alarm_send
-
-    @keywords_alarm_send.setter
-    def keywords_alarm_send(self, keywords_alarm_send):
-        r"""Sets the keywords_alarm_send of this KeywordsAlarmRuleRespList.
-
-        是否发送
-
-        :param keywords_alarm_send: The keywords_alarm_send of this KeywordsAlarmRuleRespList.
-        :type keywords_alarm_send: bool
-        """
-        self._keywords_alarm_send = keywords_alarm_send
 
     @property
     def domain_id(self):
@@ -425,50 +391,6 @@ class KeywordsAlarmRuleRespList:
         :type update_time: int
         """
         self._update_time = update_time
-
-    @property
-    def topics(self):
-        r"""Gets the topics of this KeywordsAlarmRuleRespList.
-
-        通知主题
-
-        :return: The topics of this KeywordsAlarmRuleRespList.
-        :rtype: list[:class:`huaweicloudsdklts.v2.Topics`]
-        """
-        return self._topics
-
-    @topics.setter
-    def topics(self, topics):
-        r"""Sets the topics of this KeywordsAlarmRuleRespList.
-
-        通知主题
-
-        :param topics: The topics of this KeywordsAlarmRuleRespList.
-        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
-        """
-        self._topics = topics
-
-    @property
-    def template_name(self):
-        r"""Gets the template_name of this KeywordsAlarmRuleRespList.
-
-        消息模板名称
-
-        :return: The template_name of this KeywordsAlarmRuleRespList.
-        :rtype: str
-        """
-        return self._template_name
-
-    @template_name.setter
-    def template_name(self, template_name):
-        r"""Sets the template_name of this KeywordsAlarmRuleRespList.
-
-        消息模板名称
-
-        :param template_name: The template_name of this KeywordsAlarmRuleRespList.
-        :type template_name: str
-        """
-        self._template_name = template_name
 
     @property
     def status(self):
@@ -623,6 +545,28 @@ class KeywordsAlarmRuleRespList:
         :type alarm_action_rule_name: str
         """
         self._alarm_action_rule_name = alarm_action_rule_name
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this KeywordsAlarmRuleRespList.
+
+        **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。
+
+        :return: The tags of this KeywordsAlarmRuleRespList.
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this KeywordsAlarmRuleRespList.
+
+        **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。
+
+        :param tags: The tags of this KeywordsAlarmRuleRespList.
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         result = {}

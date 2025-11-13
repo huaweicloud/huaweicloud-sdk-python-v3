@@ -79,7 +79,7 @@ class UpdateHostRequestBody:
         :type ipv6_enable: bool
         :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
         :type web_tag: str
-        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
+        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
         :type exclusive_ip: bool
         :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
         :type paid_type: str
@@ -360,7 +360,7 @@ class UpdateHostRequestBody:
     def exclusive_ip(self):
         r"""Gets the exclusive_ip of this UpdateHostRequestBody.
 
-        是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
 
         :return: The exclusive_ip of this UpdateHostRequestBody.
         :rtype: bool
@@ -371,7 +371,7 @@ class UpdateHostRequestBody:
     def exclusive_ip(self, exclusive_ip):
         r"""Sets the exclusive_ip of this UpdateHostRequestBody.
 
-        是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
 
         :param exclusive_ip: The exclusive_ip of this UpdateHostRequestBody.
         :type exclusive_ip: bool

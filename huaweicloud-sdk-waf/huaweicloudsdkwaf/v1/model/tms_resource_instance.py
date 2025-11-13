@@ -35,15 +35,15 @@ class TmsResourceInstance:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 
+        :param resource_id: 资源id
         :type resource_id: str
-        :param resource_name: 
+        :param resource_name: 资源名称
         :type resource_name: str
-        :param resource_detail: 
+        :param resource_detail: 资源细节
         :type resource_detail: object
-        :param tags: 
+        :param tags: 系统标签键值对
         :type tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
-        :param sys_tags: 
+        :param sys_tags: 系统标签键值对
         :type sys_tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
         """
         
@@ -71,6 +71,8 @@ class TmsResourceInstance:
     def resource_id(self):
         r"""Gets the resource_id of this TmsResourceInstance.
 
+        资源id
+
         :return: The resource_id of this TmsResourceInstance.
         :rtype: str
         """
@@ -79,6 +81,8 @@ class TmsResourceInstance:
     @resource_id.setter
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this TmsResourceInstance.
+
+        资源id
 
         :param resource_id: The resource_id of this TmsResourceInstance.
         :type resource_id: str
@@ -89,6 +93,8 @@ class TmsResourceInstance:
     def resource_name(self):
         r"""Gets the resource_name of this TmsResourceInstance.
 
+        资源名称
+
         :return: The resource_name of this TmsResourceInstance.
         :rtype: str
         """
@@ -97,6 +103,8 @@ class TmsResourceInstance:
     @resource_name.setter
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this TmsResourceInstance.
+
+        资源名称
 
         :param resource_name: The resource_name of this TmsResourceInstance.
         :type resource_name: str
@@ -107,6 +115,8 @@ class TmsResourceInstance:
     def resource_detail(self):
         r"""Gets the resource_detail of this TmsResourceInstance.
 
+        资源细节
+
         :return: The resource_detail of this TmsResourceInstance.
         :rtype: object
         """
@@ -115,6 +125,8 @@ class TmsResourceInstance:
     @resource_detail.setter
     def resource_detail(self, resource_detail):
         r"""Sets the resource_detail of this TmsResourceInstance.
+
+        资源细节
 
         :param resource_detail: The resource_detail of this TmsResourceInstance.
         :type resource_detail: object
@@ -125,6 +137,8 @@ class TmsResourceInstance:
     def tags(self):
         r"""Gets the tags of this TmsResourceInstance.
 
+        系统标签键值对
+
         :return: The tags of this TmsResourceInstance.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
         """
@@ -133,6 +147,8 @@ class TmsResourceInstance:
     @tags.setter
     def tags(self, tags):
         r"""Sets the tags of this TmsResourceInstance.
+
+        系统标签键值对
 
         :param tags: The tags of this TmsResourceInstance.
         :type tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
@@ -143,6 +159,8 @@ class TmsResourceInstance:
     def sys_tags(self):
         r"""Gets the sys_tags of this TmsResourceInstance.
 
+        系统标签键值对
+
         :return: The sys_tags of this TmsResourceInstance.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]
         """
@@ -151,6 +169,8 @@ class TmsResourceInstance:
     @sys_tags.setter
     def sys_tags(self, sys_tags):
         r"""Sets the sys_tags of this TmsResourceInstance.
+
+        系统标签键值对
 
         :param sys_tags: The sys_tags of this TmsResourceInstance.
         :type sys_tags: list[:class:`huaweicloudsdkwaf.v1.TmsResourceTag`]

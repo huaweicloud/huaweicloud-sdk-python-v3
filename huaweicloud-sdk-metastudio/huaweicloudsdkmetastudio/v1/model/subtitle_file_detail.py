@@ -19,7 +19,8 @@ class SubtitleFileDetail:
         'subtitle_file_state': 'str',
         'subtitle_file_download_url': 'str',
         'subtitle_file_upload_url': 'str',
-        'generate_time': 'str'
+        'generate_time': 'str',
+        'error_info': 'ErrorResponse'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class SubtitleFileDetail:
         'subtitle_file_state': 'subtitle_file_state',
         'subtitle_file_download_url': 'subtitle_file_download_url',
         'subtitle_file_upload_url': 'subtitle_file_upload_url',
-        'generate_time': 'generate_time'
+        'generate_time': 'generate_time',
+        'error_info': 'error_info'
     }
 
-    def __init__(self, sequence_no=None, subtitle_file_state=None, subtitle_file_download_url=None, subtitle_file_upload_url=None, generate_time=None):
+    def __init__(self, sequence_no=None, subtitle_file_state=None, subtitle_file_download_url=None, subtitle_file_upload_url=None, generate_time=None, error_info=None):
         r"""SubtitleFileDetail
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class SubtitleFileDetail:
         :type subtitle_file_upload_url: str
         :param generate_time: 字幕文件生成时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type generate_time: str
+        :param error_info: 
+        :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
         """
         
         
@@ -54,6 +58,7 @@ class SubtitleFileDetail:
         self._subtitle_file_download_url = None
         self._subtitle_file_upload_url = None
         self._generate_time = None
+        self._error_info = None
         self.discriminator = None
 
         if sequence_no is not None:
@@ -66,6 +71,8 @@ class SubtitleFileDetail:
             self.subtitle_file_upload_url = subtitle_file_upload_url
         if generate_time is not None:
             self.generate_time = generate_time
+        if error_info is not None:
+            self.error_info = error_info
 
     @property
     def sequence_no(self):
@@ -176,6 +183,24 @@ class SubtitleFileDetail:
         :type generate_time: str
         """
         self._generate_time = generate_time
+
+    @property
+    def error_info(self):
+        r"""Gets the error_info of this SubtitleFileDetail.
+
+        :return: The error_info of this SubtitleFileDetail.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
+        """
+        return self._error_info
+
+    @error_info.setter
+    def error_info(self, error_info):
+        r"""Sets the error_info of this SubtitleFileDetail.
+
+        :param error_info: The error_info of this SubtitleFileDetail.
+        :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
+        """
+        self._error_info = error_info
 
     def to_dict(self):
         result = {}

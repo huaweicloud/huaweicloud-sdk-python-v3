@@ -18,7 +18,7 @@ class Port:
         'admin_state_up': 'bool',
         'bindinghost_id': 'str',
         'bindingprofile': 'object',
-        'bindingvif_details': 'object',
+        'bindingvif_details': 'BindingVifDetails',
         'bindingvif_type': 'str',
         'bindingvnic_type': 'str',
         'created_at': 'datetime',
@@ -49,7 +49,7 @@ class Port:
         'extra_dhcp_opts': 'list[ExtraDhcpOpt]',
         'position_type': 'str',
         'instance_info': 'object',
-        'tags': 'list[str]',
+        'tags': 'list[ResourceTag]',
         'allowed_address_pairs': 'list[AllowedAddressPair]'
     }
 
@@ -103,8 +103,8 @@ class Port:
         :type bindinghost_id: str
         :param bindingprofile: 1、功能描述：提供用户设置自定义信息 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
         :type bindingprofile: object
-        :param bindingvif_details: 1、功能描述：vif的详细信息， \&quot;ovs_hybrid_plug\&quot;: 是否为ovs/bridge混合模式 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
-        :type bindingvif_details: object
+        :param bindingvif_details: 
+        :type bindingvif_details: :class:`huaweicloudsdkvpc.v3.BindingVifDetails`
         :param bindingvif_type: 1、功能描述：端口的接口类型 (ovs/hw_veb等)(扩展属性) 2、取值范围：N/A 3、约束：管理员权限，普通租户不可见 4、默认值：N/A 5、权限：N/A
         :type bindingvif_type: str
         :param bindingvnic_type: 1、功能描述：绑定的vNIC类型normal: 软交换direct: SRIOV硬直通（不支持） 2、取值范围：normal或者direct 3、约束：N/A 4、默认值：N/A 5、权限：N/A
@@ -165,8 +165,8 @@ class Port:
         :type position_type: str
         :param instance_info: 1、功能描述：端口绑定实例信息 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
         :type instance_info: object
-        :param tags: 1、功能描述：端口标签 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
-        :type tags: list[str]
+        :param tags: 参数解释： 端口的标签信息，包括标签键和标签值，可用来分类和标识资源。 取值范围： 不涉及。
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         :param allowed_address_pairs: 1、功能描述：IP/Mac对列表 2、取值范围：N/A 3、约束： - IP地址不允许为 “0.0.0.0/0” - 如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。 - 如果allowed_address_pairs的IP地址为“1.1.1.1/0”，表示关闭源目地址检查开关。 - 被绑定的云服务器网卡allowed_address_pairs的IP地址填“1.1.1.1/0”。 4、默认值：N/A 5、权限：N/A
         :type allowed_address_pairs: list[:class:`huaweicloudsdkvpc.v3.AllowedAddressPair`]
         """
@@ -318,10 +318,8 @@ class Port:
     def bindingvif_details(self):
         r"""Gets the bindingvif_details of this Port.
 
-        1、功能描述：vif的详细信息， \"ovs_hybrid_plug\": 是否为ovs/bridge混合模式 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
-
         :return: The bindingvif_details of this Port.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkvpc.v3.BindingVifDetails`
         """
         return self._bindingvif_details
 
@@ -329,10 +327,8 @@ class Port:
     def bindingvif_details(self, bindingvif_details):
         r"""Sets the bindingvif_details of this Port.
 
-        1、功能描述：vif的详细信息， \"ovs_hybrid_plug\": 是否为ovs/bridge混合模式 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
-
         :param bindingvif_details: The bindingvif_details of this Port.
-        :type bindingvif_details: object
+        :type bindingvif_details: :class:`huaweicloudsdkvpc.v3.BindingVifDetails`
         """
         self._bindingvif_details = bindingvif_details
 
@@ -1000,10 +996,10 @@ class Port:
     def tags(self):
         r"""Gets the tags of this Port.
 
-        1、功能描述：端口标签 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
+        参数解释： 端口的标签信息，包括标签键和标签值，可用来分类和标识资源。 取值范围： 不涉及。
 
         :return: The tags of this Port.
-        :rtype: list[str]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         return self._tags
 
@@ -1011,10 +1007,10 @@ class Port:
     def tags(self, tags):
         r"""Sets the tags of this Port.
 
-        1、功能描述：端口标签 2、取值范围：N/A 3、约束：N/A 4、默认值：N/A 5、权限：N/A
+        参数解释： 端口的标签信息，包括标签键和标签值，可用来分类和标识资源。 取值范围： 不涉及。
 
         :param tags: The tags of this Port.
-        :type tags: list[str]
+        :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         self._tags = tags
 

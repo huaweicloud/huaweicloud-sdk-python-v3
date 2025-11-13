@@ -16,15 +16,17 @@ class NodeSqlFilterRulePattern:
 
     openapi_types = {
         'pattern': 'str',
-        'max_concurrency': 'int'
+        'max_concurrency': 'int',
+        'expire_at': 'int'
     }
 
     attribute_map = {
         'pattern': 'pattern',
-        'max_concurrency': 'max_concurrency'
+        'max_concurrency': 'max_concurrency',
+        'expire_at': 'expire_at'
     }
 
-    def __init__(self, pattern=None, max_concurrency=None):
+    def __init__(self, pattern=None, max_concurrency=None, expire_at=None):
         r"""NodeSqlFilterRulePattern
 
         The model defined in huaweicloud sdk
@@ -33,16 +35,21 @@ class NodeSqlFilterRulePattern:
         :type pattern: str
         :param max_concurrency: 最大并发数。取值范围：非负整数。
         :type max_concurrency: int
+        :param expire_at: **参数解释**：  SQL限流失效时间，标准秒级时间戳，永久生效SQL限流规则该字段为null。  **约束限制**：  不涉及。  **取值范围**：  0 - 9223372036854775807。  **默认取值**：  不涉及。
+        :type expire_at: int
         """
         
         
 
         self._pattern = None
         self._max_concurrency = None
+        self._expire_at = None
         self.discriminator = None
 
         self.pattern = pattern
         self.max_concurrency = max_concurrency
+        if expire_at is not None:
+            self.expire_at = expire_at
 
     @property
     def pattern(self):
@@ -87,6 +94,28 @@ class NodeSqlFilterRulePattern:
         :type max_concurrency: int
         """
         self._max_concurrency = max_concurrency
+
+    @property
+    def expire_at(self):
+        r"""Gets the expire_at of this NodeSqlFilterRulePattern.
+
+        **参数解释**：  SQL限流失效时间，标准秒级时间戳，永久生效SQL限流规则该字段为null。  **约束限制**：  不涉及。  **取值范围**：  0 - 9223372036854775807。  **默认取值**：  不涉及。
+
+        :return: The expire_at of this NodeSqlFilterRulePattern.
+        :rtype: int
+        """
+        return self._expire_at
+
+    @expire_at.setter
+    def expire_at(self, expire_at):
+        r"""Sets the expire_at of this NodeSqlFilterRulePattern.
+
+        **参数解释**：  SQL限流失效时间，标准秒级时间戳，永久生效SQL限流规则该字段为null。  **约束限制**：  不涉及。  **取值范围**：  0 - 9223372036854775807。  **默认取值**：  不涉及。
+
+        :param expire_at: The expire_at of this NodeSqlFilterRulePattern.
+        :type expire_at: int
+        """
+        self._expire_at = expire_at
 
     def to_dict(self):
         result = {}

@@ -27,7 +27,8 @@ class FirewallDetail:
         'tags': 'list[ResourceTag]',
         'associations': 'list[FirewallAssociation]',
         'ingress_rules': 'list[FirewallRuleDetail]',
-        'egress_rules': 'list[FirewallRuleDetail]'
+        'egress_rules': 'list[FirewallRuleDetail]',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class FirewallDetail:
         'tags': 'tags',
         'associations': 'associations',
         'ingress_rules': 'ingress_rules',
-        'egress_rules': 'egress_rules'
+        'egress_rules': 'egress_rules',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, admin_state_up=None, status=None, enterprise_project_id=None, tags=None, associations=None, ingress_rules=None, egress_rules=None):
+    def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, admin_state_up=None, status=None, enterprise_project_id=None, tags=None, associations=None, ingress_rules=None, egress_rules=None, type=None):
         r"""FirewallDetail
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class FirewallDetail:
         :type ingress_rules: list[:class:`huaweicloudsdkvpc.v3.FirewallRuleDetail`]
         :param egress_rules: 功能说明：ACL出方向规则列表
         :type egress_rules: list[:class:`huaweicloudsdkvpc.v3.FirewallRuleDetail`]
+        :param type: 参数解释： 网络ACL支持绑定的子网类型。 取值范围： normal：默认值，表示网络ACL支持绑定普通子网。 CloudDCN：表示网络ACL支持绑定CloudDCN子网。
+        :type type: str
         """
         
         
@@ -94,6 +98,7 @@ class FirewallDetail:
         self._associations = None
         self._ingress_rules = None
         self._egress_rules = None
+        self._type = None
         self.discriminator = None
 
         self.id = id
@@ -109,6 +114,7 @@ class FirewallDetail:
         self.associations = associations
         self.ingress_rules = ingress_rules
         self.egress_rules = egress_rules
+        self.type = type
 
     @property
     def id(self):
@@ -395,6 +401,28 @@ class FirewallDetail:
         :type egress_rules: list[:class:`huaweicloudsdkvpc.v3.FirewallRuleDetail`]
         """
         self._egress_rules = egress_rules
+
+    @property
+    def type(self):
+        r"""Gets the type of this FirewallDetail.
+
+        参数解释： 网络ACL支持绑定的子网类型。 取值范围： normal：默认值，表示网络ACL支持绑定普通子网。 CloudDCN：表示网络ACL支持绑定CloudDCN子网。
+
+        :return: The type of this FirewallDetail.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this FirewallDetail.
+
+        参数解释： 网络ACL支持绑定的子网类型。 取值范围： normal：默认值，表示网络ACL支持绑定普通子网。 CloudDCN：表示网络ACL支持绑定CloudDCN子网。
+
+        :param type: The type of this FirewallDetail.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         result = {}

@@ -1278,6 +1278,10 @@ class CocAsyncClient(Client):
             query_params.append(('page_index', local_var_params['page_index']))
         if 'page_size' in local_var_params:
             query_params.append(('page_size', local_var_params['page_size']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

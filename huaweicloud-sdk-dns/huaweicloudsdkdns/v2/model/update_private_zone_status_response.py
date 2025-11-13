@@ -64,13 +64,13 @@ class UpdatePrivateZoneStatusResponse(SdkResponse):
         :type description: str
         :param email: **参数解释：** 管理该域名的管理员邮箱，用于生成该域名的SOA记录。 **取值范围：** 不涉及。
         :type email: str
-        :param zone_type: **参数解释：** 域名类型。 **取值范围：** public：公网域名。
+        :param zone_type: **参数解释：** 域名类型。 **取值范围：** private：内网域名。
         :type zone_type: str
         :param ttl: **参数解释：** 该域名下SOA记录中的有效缓存时间，以秒为单位。 **取值范围：** 1~2147483647。
         :type ttl: int
         :param serial: **参数解释：** 该域名下SOA记录中用于标识域名文件变更的序列值，用于主从节点同步。 **取值范围：** 不涉及。
         :type serial: int
-        :param status: **参数解释：** 公网域名状态。 **取值范围：** - ACTIVE：正常 - DISABLE：暂停
+        :param status: **参数解释：** 内网域名状态。 **取值范围：** - ACTIVE：正常 - DISABLE：暂停
         :type status: str
         :param record_num: **参数解释：** 该域名下的记录集个数。 **取值范围：** 不涉及。
         :type record_num: int
@@ -230,7 +230,7 @@ class UpdatePrivateZoneStatusResponse(SdkResponse):
     def zone_type(self):
         r"""Gets the zone_type of this UpdatePrivateZoneStatusResponse.
 
-        **参数解释：** 域名类型。 **取值范围：** public：公网域名。
+        **参数解释：** 域名类型。 **取值范围：** private：内网域名。
 
         :return: The zone_type of this UpdatePrivateZoneStatusResponse.
         :rtype: str
@@ -241,7 +241,7 @@ class UpdatePrivateZoneStatusResponse(SdkResponse):
     def zone_type(self, zone_type):
         r"""Sets the zone_type of this UpdatePrivateZoneStatusResponse.
 
-        **参数解释：** 域名类型。 **取值范围：** public：公网域名。
+        **参数解释：** 域名类型。 **取值范围：** private：内网域名。
 
         :param zone_type: The zone_type of this UpdatePrivateZoneStatusResponse.
         :type zone_type: str
@@ -296,7 +296,7 @@ class UpdatePrivateZoneStatusResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this UpdatePrivateZoneStatusResponse.
 
-        **参数解释：** 公网域名状态。 **取值范围：** - ACTIVE：正常 - DISABLE：暂停
+        **参数解释：** 内网域名状态。 **取值范围：** - ACTIVE：正常 - DISABLE：暂停
 
         :return: The status of this UpdatePrivateZoneStatusResponse.
         :rtype: str
@@ -307,7 +307,7 @@ class UpdatePrivateZoneStatusResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this UpdatePrivateZoneStatusResponse.
 
-        **参数解释：** 公网域名状态。 **取值范围：** - ACTIVE：正常 - DISABLE：暂停
+        **参数解释：** 内网域名状态。 **取值范围：** - ACTIVE：正常 - DISABLE：暂停
 
         :param status: The status of this UpdatePrivateZoneStatusResponse.
         :type status: str

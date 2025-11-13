@@ -30,9 +30,9 @@ class ListAntileakageRulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 防泄漏规则数量
+        :param total: 防泄露规则数量
         :type total: int
-        :param items: 防泄漏规则列表
+        :param items: 防泄露规则列表
         :type items: list[:class:`huaweicloudsdkwaf.v1.LeakageListInfo`]
         """
         
@@ -51,7 +51,7 @@ class ListAntileakageRulesResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListAntileakageRulesResponse.
 
-        防泄漏规则数量
+        防泄露规则数量
 
         :return: The total of this ListAntileakageRulesResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListAntileakageRulesResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListAntileakageRulesResponse.
 
-        防泄漏规则数量
+        防泄露规则数量
 
         :param total: The total of this ListAntileakageRulesResponse.
         :type total: int
@@ -73,7 +73,7 @@ class ListAntileakageRulesResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListAntileakageRulesResponse.
 
-        防泄漏规则列表
+        防泄露规则列表
 
         :return: The items of this ListAntileakageRulesResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.LeakageListInfo`]
@@ -84,7 +84,7 @@ class ListAntileakageRulesResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListAntileakageRulesResponse.
 
-        防泄漏规则列表
+        防泄露规则列表
 
         :param items: The items of this ListAntileakageRulesResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.LeakageListInfo`]

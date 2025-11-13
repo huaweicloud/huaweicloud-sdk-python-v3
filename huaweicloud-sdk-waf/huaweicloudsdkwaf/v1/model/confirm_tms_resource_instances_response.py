@@ -30,9 +30,9 @@ class ConfirmTmsResourceInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_count: 
+        :param total_count: 资源总数
         :type total_count: int
-        :param resources: 
+        :param resources: 资源列表
         :type resources: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstance`]
         """
         
@@ -51,6 +51,8 @@ class ConfirmTmsResourceInstancesResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ConfirmTmsResourceInstancesResponse.
 
+        资源总数
+
         :return: The total_count of this ConfirmTmsResourceInstancesResponse.
         :rtype: int
         """
@@ -59,6 +61,8 @@ class ConfirmTmsResourceInstancesResponse(SdkResponse):
     @total_count.setter
     def total_count(self, total_count):
         r"""Sets the total_count of this ConfirmTmsResourceInstancesResponse.
+
+        资源总数
 
         :param total_count: The total_count of this ConfirmTmsResourceInstancesResponse.
         :type total_count: int
@@ -69,6 +73,8 @@ class ConfirmTmsResourceInstancesResponse(SdkResponse):
     def resources(self):
         r"""Gets the resources of this ConfirmTmsResourceInstancesResponse.
 
+        资源列表
+
         :return: The resources of this ConfirmTmsResourceInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstance`]
         """
@@ -77,6 +83,8 @@ class ConfirmTmsResourceInstancesResponse(SdkResponse):
     @resources.setter
     def resources(self, resources):
         r"""Sets the resources of this ConfirmTmsResourceInstancesResponse.
+
+        资源列表
 
         :param resources: The resources of this ConfirmTmsResourceInstancesResponse.
         :type resources: list[:class:`huaweicloudsdkwaf.v1.TmsResourceInstance`]

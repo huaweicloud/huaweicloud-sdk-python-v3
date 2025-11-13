@@ -431,6 +431,70 @@ class CcmClient(Client):
 
         return http_info
 
+    def create_agency(self, request):
+        r"""创建服务委托
+
+        用户授权PCA创建服务委托，用于访问OBS桶，更新吊销列表。
+        &gt; 用户所使用账号token需要具备安全管理员（secu_admin）权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateAgency
+        :type request: :class:`huaweicloudsdkccm.v1.CreateAgencyRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.CreateAgencyResponse`
+        """
+        http_info = self._create_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_agency_invoker(self, request):
+        http_info = self._create_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_agency_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_ca_tag(self, request):
         r"""创建CA标签
 
@@ -1840,6 +1904,70 @@ class CcmClient(Client):
 
         return http_info
 
+    def show_agency(self, request):
+        r"""查看是否有服务委托
+
+        查看是否有服务委托。
+        &gt; 用户所使用账号token需要具备安全管理员（secu_admin）权限。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAgency
+        :type request: :class:`huaweicloudsdkccm.v1.ShowAgencyRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ShowAgencyResponse`
+        """
+        http_info = self._show_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_agency_invoker(self, request):
+        http_info = self._show_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificate-authorities/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_certificate(self, request):
         r"""查询证书详情
 
@@ -1994,6 +2122,69 @@ class CcmClient(Client):
             "resource_path": "/v1/private-certificates/quotas",
             "request_type": request.__class__.__name__,
             "response_type": "ShowCertificateQuotaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_console_config(self, request):
+        r"""查询局点支持特性
+
+        查询局点支持特性。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowConsoleConfig
+        :type request: :class:`huaweicloudsdkccm.v1.ShowConsoleConfigRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.ShowConsoleConfigResponse`
+        """
+        http_info = self._show_console_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_console_config_invoker(self, request):
+        http_info = self._show_console_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_console_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/pca/config/console",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConsoleConfigResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2890,6 +3081,73 @@ class CcmClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_ocsp_switch(self, request):
+        r"""更新OCSP开关
+
+        启用或禁用当前CA的OCSP。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateOcspSwitch
+        :type request: :class:`huaweicloudsdkccm.v1.UpdateOcspSwitchRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.UpdateOcspSwitchResponse`
+        """
+        http_info = self._update_ocsp_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_ocsp_switch_invoker(self, request):
+        http_info = self._update_ocsp_switch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ocsp_switch_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/ocsp/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOcspSwitchResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ca_id' in local_var_params:
+            path_params['ca_id'] = local_var_params['ca_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

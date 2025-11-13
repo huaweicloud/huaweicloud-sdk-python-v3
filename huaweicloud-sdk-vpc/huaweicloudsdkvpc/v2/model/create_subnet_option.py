@@ -27,7 +27,8 @@ class CreateSubnetOption:
         'dns_list': 'list[str]',
         'availability_zone': 'str',
         'extra_dhcp_opts': 'list[ExtraDhcpOption]',
-        'tags': 'list[str]'
+        'tags': 'list[str]',
+        'enable_network_address_usage_metrics': 'bool'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class CreateSubnetOption:
         'dns_list': 'dnsList',
         'availability_zone': 'availability_zone',
         'extra_dhcp_opts': 'extra_dhcp_opts',
-        'tags': 'tags'
+        'tags': 'tags',
+        'enable_network_address_usage_metrics': 'enable_network_address_usage_metrics'
     }
 
-    def __init__(self, name=None, description=None, cidr=None, vpc_id=None, gateway_ip=None, ipv6_enable=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, extra_dhcp_opts=None, tags=None):
+    def __init__(self, name=None, description=None, cidr=None, vpc_id=None, gateway_ip=None, ipv6_enable=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, extra_dhcp_opts=None, tags=None, enable_network_address_usage_metrics=None):
         r"""CreateSubnetOption
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class CreateSubnetOption:
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         :param tags: 功能说明：子网资源标签。创建子网时，给子网添加资源标签。 取值范围：最大10个标签, key：标签名称; value：标签值。 格式：[key*value]，每一个标签的key和value之间用*连接
         :type tags: list[str]
+        :param enable_network_address_usage_metrics: 功能说明：是否开启当前子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+        :type enable_network_address_usage_metrics: bool
         """
         
         
@@ -94,6 +98,7 @@ class CreateSubnetOption:
         self._availability_zone = None
         self._extra_dhcp_opts = None
         self._tags = None
+        self._enable_network_address_usage_metrics = None
         self.discriminator = None
 
         self.name = name
@@ -118,6 +123,8 @@ class CreateSubnetOption:
             self.extra_dhcp_opts = extra_dhcp_opts
         if tags is not None:
             self.tags = tags
+        if enable_network_address_usage_metrics is not None:
+            self.enable_network_address_usage_metrics = enable_network_address_usage_metrics
 
     @property
     def name(self):
@@ -404,6 +411,28 @@ class CreateSubnetOption:
         :type tags: list[str]
         """
         self._tags = tags
+
+    @property
+    def enable_network_address_usage_metrics(self):
+        r"""Gets the enable_network_address_usage_metrics of this CreateSubnetOption.
+
+        功能说明：是否开启当前子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+
+        :return: The enable_network_address_usage_metrics of this CreateSubnetOption.
+        :rtype: bool
+        """
+        return self._enable_network_address_usage_metrics
+
+    @enable_network_address_usage_metrics.setter
+    def enable_network_address_usage_metrics(self, enable_network_address_usage_metrics):
+        r"""Sets the enable_network_address_usage_metrics of this CreateSubnetOption.
+
+        功能说明：是否开启当前子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+
+        :param enable_network_address_usage_metrics: The enable_network_address_usage_metrics of this CreateSubnetOption.
+        :type enable_network_address_usage_metrics: bool
+        """
+        self._enable_network_address_usage_metrics = enable_network_address_usage_metrics
 
     def to_dict(self):
         result = {}

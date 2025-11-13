@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdkcore"
-version = "3.1.174"
+version = "3.1.175"
 description = "HuaweiCloud SDK Python Core"
 readme = "README_PYPI.md"
 authors = [

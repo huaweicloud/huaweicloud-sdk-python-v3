@@ -69,7 +69,7 @@ class ListCasesRequest:
         :type query_start_time: str
         :param query_end_time: 查询结束时间
         :type query_end_time: str
-        :param status: 状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
+        :param status: 状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 5：暂停 12：无效 17： 待反馈
         :type status: int
         :param incident_status: 状态列表
         :type incident_status: str
@@ -280,7 +280,7 @@ class ListCasesRequest:
     def status(self):
         r"""Gets the status of this ListCasesRequest.
 
-        状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
+        状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 5：暂停 12：无效 17： 待反馈
 
         :return: The status of this ListCasesRequest.
         :rtype: int
@@ -291,7 +291,7 @@ class ListCasesRequest:
     def status(self, status):
         r"""Sets the status of this ListCasesRequest.
 
-        状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
+        状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 5：暂停 12：无效 17： 待反馈
 
         :param status: The status of this ListCasesRequest.
         :type status: int

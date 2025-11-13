@@ -31,6 +31,7 @@ from huaweicloudsdkdgc.v1.model.execute_script_request import ExecuteScriptReque
 from huaweicloudsdkdgc.v1.model.execute_script_response import ExecuteScriptResponse
 from huaweicloudsdkdgc.v1.model.export_job_list_request import ExportJobListRequest
 from huaweicloudsdkdgc.v1.model.export_job_list_response import ExportJobListResponse
+from huaweicloudsdkdgc.v1.model.export_job_req import ExportJobReq
 from huaweicloudsdkdgc.v1.model.export_job_request import ExportJobRequest
 from huaweicloudsdkdgc.v1.model.export_job_response import ExportJobResponse
 from huaweicloudsdkdgc.v1.model.export_jobs_req import ExportJobsReq

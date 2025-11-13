@@ -22,7 +22,8 @@ class UpdateSubnetOption:
         'primary_dns': 'str',
         'secondary_dns': 'str',
         'dns_list': 'list[str]',
-        'extra_dhcp_opts': 'list[ExtraDhcpOption]'
+        'extra_dhcp_opts': 'list[ExtraDhcpOption]',
+        'enable_network_address_usage_metrics': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class UpdateSubnetOption:
         'primary_dns': 'primary_dns',
         'secondary_dns': 'secondary_dns',
         'dns_list': 'dnsList',
-        'extra_dhcp_opts': 'extra_dhcp_opts'
+        'extra_dhcp_opts': 'extra_dhcp_opts',
+        'enable_network_address_usage_metrics': 'enable_network_address_usage_metrics'
     }
 
-    def __init__(self, name=None, description=None, ipv6_enable=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, extra_dhcp_opts=None):
+    def __init__(self, name=None, description=None, ipv6_enable=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, extra_dhcp_opts=None, enable_network_address_usage_metrics=None):
         r"""UpdateSubnetOption
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class UpdateSubnetOption:
         :type dns_list: list[str]
         :param extra_dhcp_opts: 子网配置的NTP地址或租约时间
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
+        :param enable_network_address_usage_metrics: 功能说明：是否开启当前子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+        :type enable_network_address_usage_metrics: bool
         """
         
         
@@ -69,6 +73,7 @@ class UpdateSubnetOption:
         self._secondary_dns = None
         self._dns_list = None
         self._extra_dhcp_opts = None
+        self._enable_network_address_usage_metrics = None
         self.discriminator = None
 
         self.name = name
@@ -86,6 +91,8 @@ class UpdateSubnetOption:
             self.dns_list = dns_list
         if extra_dhcp_opts is not None:
             self.extra_dhcp_opts = extra_dhcp_opts
+        if enable_network_address_usage_metrics is not None:
+            self.enable_network_address_usage_metrics = enable_network_address_usage_metrics
 
     @property
     def name(self):
@@ -262,6 +269,28 @@ class UpdateSubnetOption:
         :type extra_dhcp_opts: list[:class:`huaweicloudsdkvpc.v2.ExtraDhcpOption`]
         """
         self._extra_dhcp_opts = extra_dhcp_opts
+
+    @property
+    def enable_network_address_usage_metrics(self):
+        r"""Gets the enable_network_address_usage_metrics of this UpdateSubnetOption.
+
+        功能说明：是否开启当前子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+
+        :return: The enable_network_address_usage_metrics of this UpdateSubnetOption.
+        :rtype: bool
+        """
+        return self._enable_network_address_usage_metrics
+
+    @enable_network_address_usage_metrics.setter
+    def enable_network_address_usage_metrics(self, enable_network_address_usage_metrics):
+        r"""Sets the enable_network_address_usage_metrics of this UpdateSubnetOption.
+
+        功能说明：是否开启当前子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+
+        :param enable_network_address_usage_metrics: The enable_network_address_usage_metrics of this UpdateSubnetOption.
+        :type enable_network_address_usage_metrics: bool
+        """
+        self._enable_network_address_usage_metrics = enable_network_address_usage_metrics
 
     def to_dict(self):
         result = {}

@@ -19,7 +19,9 @@ class CreateVpcOption:
         'name': 'str',
         'description': 'str',
         'enterprise_project_id': 'str',
-        'tags': 'list[str]'
+        'tags': 'list[str]',
+        'block_service_endpoint_states': 'str',
+        'enable_network_address_usage_metrics': 'bool'
     }
 
     attribute_map = {
@@ -27,10 +29,12 @@ class CreateVpcOption:
         'name': 'name',
         'description': 'description',
         'enterprise_project_id': 'enterprise_project_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'block_service_endpoint_states': 'block_service_endpoint_states',
+        'enable_network_address_usage_metrics': 'enable_network_address_usage_metrics'
     }
 
-    def __init__(self, cidr=None, name=None, description=None, enterprise_project_id=None, tags=None):
+    def __init__(self, cidr=None, name=None, description=None, enterprise_project_id=None, tags=None, block_service_endpoint_states=None, enable_network_address_usage_metrics=None):
         r"""CreateVpcOption
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class CreateVpcOption:
         :type enterprise_project_id: str
         :param tags: 功能说明：VPC资源标签。创建VPC时，给VPC添加资源标签。 取值范围：最大10个标签, key：标签名称; value：标签值。 格式：[key*value]，每一个标签的key和value之间用*连接
         :type tags: list[str]
+        :param block_service_endpoint_states: 功能说明：默认情况下，VPC中的资源可以通过内网访问服务终结点。开启该项后，VPC将无法通过内网访问服务终结点，请谨慎操作。 无法访问以下云服务：容器镜像服务SWR、云日志服务LTS、企业主机安全HSS、应用运维管理AOM、应用性能管理APM、对象存储服务OBS、API网关APIG。 取值范围： off：代表禁用。 on：代表开启。
+        :type block_service_endpoint_states: str
+        :param enable_network_address_usage_metrics: 功能说明：是否开启VPC内所有子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+        :type enable_network_address_usage_metrics: bool
         """
         
         
@@ -54,6 +62,8 @@ class CreateVpcOption:
         self._description = None
         self._enterprise_project_id = None
         self._tags = None
+        self._block_service_endpoint_states = None
+        self._enable_network_address_usage_metrics = None
         self.discriminator = None
 
         if cidr is not None:
@@ -66,6 +76,10 @@ class CreateVpcOption:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
+        if block_service_endpoint_states is not None:
+            self.block_service_endpoint_states = block_service_endpoint_states
+        if enable_network_address_usage_metrics is not None:
+            self.enable_network_address_usage_metrics = enable_network_address_usage_metrics
 
     @property
     def cidr(self):
@@ -176,6 +190,50 @@ class CreateVpcOption:
         :type tags: list[str]
         """
         self._tags = tags
+
+    @property
+    def block_service_endpoint_states(self):
+        r"""Gets the block_service_endpoint_states of this CreateVpcOption.
+
+        功能说明：默认情况下，VPC中的资源可以通过内网访问服务终结点。开启该项后，VPC将无法通过内网访问服务终结点，请谨慎操作。 无法访问以下云服务：容器镜像服务SWR、云日志服务LTS、企业主机安全HSS、应用运维管理AOM、应用性能管理APM、对象存储服务OBS、API网关APIG。 取值范围： off：代表禁用。 on：代表开启。
+
+        :return: The block_service_endpoint_states of this CreateVpcOption.
+        :rtype: str
+        """
+        return self._block_service_endpoint_states
+
+    @block_service_endpoint_states.setter
+    def block_service_endpoint_states(self, block_service_endpoint_states):
+        r"""Sets the block_service_endpoint_states of this CreateVpcOption.
+
+        功能说明：默认情况下，VPC中的资源可以通过内网访问服务终结点。开启该项后，VPC将无法通过内网访问服务终结点，请谨慎操作。 无法访问以下云服务：容器镜像服务SWR、云日志服务LTS、企业主机安全HSS、应用运维管理AOM、应用性能管理APM、对象存储服务OBS、API网关APIG。 取值范围： off：代表禁用。 on：代表开启。
+
+        :param block_service_endpoint_states: The block_service_endpoint_states of this CreateVpcOption.
+        :type block_service_endpoint_states: str
+        """
+        self._block_service_endpoint_states = block_service_endpoint_states
+
+    @property
+    def enable_network_address_usage_metrics(self):
+        r"""Gets the enable_network_address_usage_metrics of this CreateVpcOption.
+
+        功能说明：是否开启VPC内所有子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+
+        :return: The enable_network_address_usage_metrics of this CreateVpcOption.
+        :rtype: bool
+        """
+        return self._enable_network_address_usage_metrics
+
+    @enable_network_address_usage_metrics.setter
+    def enable_network_address_usage_metrics(self, enable_network_address_usage_metrics):
+        r"""Sets the enable_network_address_usage_metrics of this CreateVpcOption.
+
+        功能说明：是否开启VPC内所有子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+
+        :param enable_network_address_usage_metrics: The enable_network_address_usage_metrics of this CreateVpcOption.
+        :type enable_network_address_usage_metrics: bool
+        """
+        self._enable_network_address_usage_metrics = enable_network_address_usage_metrics
 
     def to_dict(self):
         result = {}

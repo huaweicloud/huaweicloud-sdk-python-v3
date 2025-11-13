@@ -15,6 +15,7 @@ class ProxyFlavor:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'spec_code': 'str',
         'vcpus': 'str',
         'ram': 'str',
@@ -24,6 +25,7 @@ class ProxyFlavor:
     }
 
     attribute_map = {
+        'id': 'id',
         'spec_code': 'spec_code',
         'vcpus': 'vcpus',
         'ram': 'ram',
@@ -32,11 +34,13 @@ class ProxyFlavor:
         'supported_ipv6': 'supported_ipv6'
     }
 
-    def __init__(self, spec_code=None, vcpus=None, ram=None, db_type=None, az_status=None, supported_ipv6=None):
+    def __init__(self, id=None, spec_code=None, vcpus=None, ram=None, db_type=None, az_status=None, supported_ipv6=None):
         r"""ProxyFlavor
 
         The model defined in huaweicloud sdk
 
+        :param id: **参数解释**：  规格ID。  **取值范围**：  不涉及。
+        :type id: str
         :param spec_code: **参数解释**：  规格码。  **取值范围**：  不涉及。
         :type spec_code: str
         :param vcpus: **参数解释**：  cpu核数。  **取值范围**：  不涉及。
@@ -53,6 +57,7 @@ class ProxyFlavor:
         
         
 
+        self._id = None
         self._spec_code = None
         self._vcpus = None
         self._ram = None
@@ -61,6 +66,8 @@ class ProxyFlavor:
         self._supported_ipv6 = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if spec_code is not None:
             self.spec_code = spec_code
         if vcpus is not None:
@@ -73,6 +80,28 @@ class ProxyFlavor:
             self.az_status = az_status
         if supported_ipv6 is not None:
             self.supported_ipv6 = supported_ipv6
+
+    @property
+    def id(self):
+        r"""Gets the id of this ProxyFlavor.
+
+        **参数解释**：  规格ID。  **取值范围**：  不涉及。
+
+        :return: The id of this ProxyFlavor.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this ProxyFlavor.
+
+        **参数解释**：  规格ID。  **取值范围**：  不涉及。
+
+        :param id: The id of this ProxyFlavor.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def spec_code(self):

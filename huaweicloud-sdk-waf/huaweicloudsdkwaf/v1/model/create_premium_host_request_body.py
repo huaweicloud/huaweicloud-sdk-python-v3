@@ -63,15 +63,15 @@ class CreatePremiumHostRequestBody:
         :type proxy: bool
         :param policyid: 防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
         :type policyid: str
-        :param server: 防护域名的源站服务器配置信息
+        :param server: 防护域名的源站服务器配置信息，创建独享模式域名时必填
         :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
         :param block_page: 
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
         :param forward_header_map: 字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
         :type forward_header_map: dict(str, str)
-        :param mode: 添加云模式elb接入域名时，请输入elb-shared，否则不输入
+        :param mode: 添加云模式elb接入域名时，必填，请输入elb-shared，否则不输入
         :type mode: str
-        :param loadbalancer_id: 负载均衡器（ELB）id,可以在ELB侧查询其id，添加云模式elb接入域名时，此为必须输入的值
+        :param loadbalancer_id: 添加云模式elb接入域名时，必填，负载均衡器（ELB）id,可以在ELB侧查询其id
         :type loadbalancer_id: str
         :param listener_id: 监听器id，可在ELB侧监听器页签下查询其id；不输入时，负载均衡器（ELB）下的所有监听器都将接入WAF防护，包括该ELB下未来新增的符合条件的监听器，添加云模式elb接入域名时，可考虑输入此项id
         :type listener_id: str
@@ -109,7 +109,8 @@ class CreatePremiumHostRequestBody:
         self.proxy = proxy
         if policyid is not None:
             self.policyid = policyid
-        self.server = server
+        if server is not None:
+            self.server = server
         if block_page is not None:
             self.block_page = block_page
         if forward_header_map is not None:
@@ -241,7 +242,7 @@ class CreatePremiumHostRequestBody:
     def server(self):
         r"""Gets the server of this CreatePremiumHostRequestBody.
 
-        防护域名的源站服务器配置信息
+        防护域名的源站服务器配置信息，创建独享模式域名时必填
 
         :return: The server of this CreatePremiumHostRequestBody.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
@@ -252,7 +253,7 @@ class CreatePremiumHostRequestBody:
     def server(self, server):
         r"""Sets the server of this CreatePremiumHostRequestBody.
 
-        防护域名的源站服务器配置信息
+        防护域名的源站服务器配置信息，创建独享模式域名时必填
 
         :param server: The server of this CreatePremiumHostRequestBody.
         :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
@@ -303,7 +304,7 @@ class CreatePremiumHostRequestBody:
     def mode(self):
         r"""Gets the mode of this CreatePremiumHostRequestBody.
 
-        添加云模式elb接入域名时，请输入elb-shared，否则不输入
+        添加云模式elb接入域名时，必填，请输入elb-shared，否则不输入
 
         :return: The mode of this CreatePremiumHostRequestBody.
         :rtype: str
@@ -314,7 +315,7 @@ class CreatePremiumHostRequestBody:
     def mode(self, mode):
         r"""Sets the mode of this CreatePremiumHostRequestBody.
 
-        添加云模式elb接入域名时，请输入elb-shared，否则不输入
+        添加云模式elb接入域名时，必填，请输入elb-shared，否则不输入
 
         :param mode: The mode of this CreatePremiumHostRequestBody.
         :type mode: str
@@ -325,7 +326,7 @@ class CreatePremiumHostRequestBody:
     def loadbalancer_id(self):
         r"""Gets the loadbalancer_id of this CreatePremiumHostRequestBody.
 
-        负载均衡器（ELB）id,可以在ELB侧查询其id，添加云模式elb接入域名时，此为必须输入的值
+        添加云模式elb接入域名时，必填，负载均衡器（ELB）id,可以在ELB侧查询其id
 
         :return: The loadbalancer_id of this CreatePremiumHostRequestBody.
         :rtype: str
@@ -336,7 +337,7 @@ class CreatePremiumHostRequestBody:
     def loadbalancer_id(self, loadbalancer_id):
         r"""Sets the loadbalancer_id of this CreatePremiumHostRequestBody.
 
-        负载均衡器（ELB）id,可以在ELB侧查询其id，添加云模式elb接入域名时，此为必须输入的值
+        添加云模式elb接入域名时，必填，负载均衡器（ELB）id,可以在ELB侧查询其id
 
         :param loadbalancer_id: The loadbalancer_id of this CreatePremiumHostRequestBody.
         :type loadbalancer_id: str

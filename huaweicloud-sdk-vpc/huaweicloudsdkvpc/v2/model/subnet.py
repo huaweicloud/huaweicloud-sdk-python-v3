@@ -37,7 +37,9 @@ class Subnet:
         'scope': 'str',
         'tenant_id': 'str',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'enable_network_address_usage_metrics': 'bool',
+        'available_ip_address_count': 'int'
     }
 
     attribute_map = {
@@ -63,10 +65,12 @@ class Subnet:
         'scope': 'scope',
         'tenant_id': 'tenant_id',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'enable_network_address_usage_metrics': 'enable_network_address_usage_metrics',
+        'available_ip_address_count': 'available_ip_address_count'
     }
 
-    def __init__(self, id=None, name=None, description=None, cidr=None, gateway_ip=None, ipv6_enable=None, cidr_v6=None, gateway_ip_v6=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, vpc_id=None, status=None, neutron_network_id=None, neutron_subnet_id=None, neutron_subnet_id_v6=None, extra_dhcp_opts=None, scope=None, tenant_id=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, description=None, cidr=None, gateway_ip=None, ipv6_enable=None, cidr_v6=None, gateway_ip_v6=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, availability_zone=None, vpc_id=None, status=None, neutron_network_id=None, neutron_subnet_id=None, neutron_subnet_id_v6=None, extra_dhcp_opts=None, scope=None, tenant_id=None, created_at=None, updated_at=None, enable_network_address_usage_metrics=None, available_ip_address_count=None):
         r"""Subnet
 
         The model defined in huaweicloud sdk
@@ -117,6 +121,10 @@ class Subnet:
         :type created_at: datetime
         :param updated_at: 功能说明：资源更新UTC时间 格式：yyyy-MM-ddTHH:mm:ss
         :type updated_at: datetime
+        :param enable_network_address_usage_metrics: 功能说明：是否开启当前子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+        :type enable_network_address_usage_metrics: bool
+        :param available_ip_address_count: 功能说明：子网内剩余可用的IPv4地址数量。
+        :type available_ip_address_count: int
         """
         
         
@@ -144,6 +152,8 @@ class Subnet:
         self._tenant_id = None
         self._created_at = None
         self._updated_at = None
+        self._enable_network_address_usage_metrics = None
+        self._available_ip_address_count = None
         self.discriminator = None
 
         self.id = id
@@ -170,6 +180,8 @@ class Subnet:
         self.tenant_id = tenant_id
         self.created_at = created_at
         self.updated_at = updated_at
+        self.enable_network_address_usage_metrics = enable_network_address_usage_metrics
+        self.available_ip_address_count = available_ip_address_count
 
     @property
     def id(self):
@@ -676,6 +688,50 @@ class Subnet:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def enable_network_address_usage_metrics(self):
+        r"""Gets the enable_network_address_usage_metrics of this Subnet.
+
+        功能说明：是否开启当前子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+
+        :return: The enable_network_address_usage_metrics of this Subnet.
+        :rtype: bool
+        """
+        return self._enable_network_address_usage_metrics
+
+    @enable_network_address_usage_metrics.setter
+    def enable_network_address_usage_metrics(self, enable_network_address_usage_metrics):
+        r"""Sets the enable_network_address_usage_metrics of this Subnet.
+
+        功能说明：是否开启当前子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+
+        :param enable_network_address_usage_metrics: The enable_network_address_usage_metrics of this Subnet.
+        :type enable_network_address_usage_metrics: bool
+        """
+        self._enable_network_address_usage_metrics = enable_network_address_usage_metrics
+
+    @property
+    def available_ip_address_count(self):
+        r"""Gets the available_ip_address_count of this Subnet.
+
+        功能说明：子网内剩余可用的IPv4地址数量。
+
+        :return: The available_ip_address_count of this Subnet.
+        :rtype: int
+        """
+        return self._available_ip_address_count
+
+    @available_ip_address_count.setter
+    def available_ip_address_count(self, available_ip_address_count):
+        r"""Sets the available_ip_address_count of this Subnet.
+
+        功能说明：子网内剩余可用的IPv4地址数量。
+
+        :param available_ip_address_count: The available_ip_address_count of this Subnet.
+        :type available_ip_address_count: int
+        """
+        self._available_ip_address_count = available_ip_address_count
 
     def to_dict(self):
         result = {}

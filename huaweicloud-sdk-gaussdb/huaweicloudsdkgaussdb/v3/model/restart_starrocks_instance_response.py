@@ -16,51 +16,51 @@ class RestartStarrocksInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'workflow_id': 'str'
+        'job_id': 'str'
     }
 
     attribute_map = {
-        'workflow_id': 'workflow_id'
+        'job_id': 'job_id'
     }
 
-    def __init__(self, workflow_id=None):
+    def __init__(self, job_id=None):
         r"""RestartStarrocksInstanceResponse
 
         The model defined in huaweicloud sdk
 
-        :param workflow_id: 工作流ID。
-        :type workflow_id: str
+        :param job_id: 工作流ID。
+        :type job_id: str
         """
         
         super().__init__()
 
-        self._workflow_id = None
+        self._job_id = None
         self.discriminator = None
 
-        if workflow_id is not None:
-            self.workflow_id = workflow_id
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
-    def workflow_id(self):
-        r"""Gets the workflow_id of this RestartStarrocksInstanceResponse.
+    def job_id(self):
+        r"""Gets the job_id of this RestartStarrocksInstanceResponse.
 
         工作流ID。
 
-        :return: The workflow_id of this RestartStarrocksInstanceResponse.
+        :return: The job_id of this RestartStarrocksInstanceResponse.
         :rtype: str
         """
-        return self._workflow_id
+        return self._job_id
 
-    @workflow_id.setter
-    def workflow_id(self, workflow_id):
-        r"""Sets the workflow_id of this RestartStarrocksInstanceResponse.
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this RestartStarrocksInstanceResponse.
 
         工作流ID。
 
-        :param workflow_id: The workflow_id of this RestartStarrocksInstanceResponse.
-        :type workflow_id: str
+        :param job_id: The job_id of this RestartStarrocksInstanceResponse.
+        :type job_id: str
         """
-        self._workflow_id = workflow_id
+        self._job_id = job_id
 
     def to_dict(self):
         import warnings

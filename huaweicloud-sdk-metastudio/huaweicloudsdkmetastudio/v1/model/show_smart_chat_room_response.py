@@ -34,6 +34,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
         'chat_subtitle_config': 'ChatSubtitleConfig',
         'chat_video_type': 'str',
         'exit_mute_threshold': 'int',
+        'enable_semantic_action': 'bool',
         'room_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
@@ -62,6 +63,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
         'chat_subtitle_config': 'chat_subtitle_config',
         'chat_video_type': 'chat_video_type',
         'exit_mute_threshold': 'exit_mute_threshold',
+        'enable_semantic_action': 'enable_semantic_action',
         'room_id': 'room_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -71,7 +73,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, billing_mode=None, reuse_resource=None, concurrency=None, client_nums=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, exit_mute_threshold=None, room_id=None, create_time=None, update_time=None, cover_url=None, is_pool_mode=None, chat_resource_config=None, x_request_id=None):
+    def __init__(self, room_name=None, room_description=None, video_config=None, model_asset_id=None, voice_config=None, voice_config_list=None, robot_id=None, billing_mode=None, reuse_resource=None, concurrency=None, client_nums=None, default_language=None, background_config=None, layer_config=None, review_config=None, chat_subtitle_config=None, chat_video_type=None, exit_mute_threshold=None, enable_semantic_action=None, room_id=None, create_time=None, update_time=None, cover_url=None, is_pool_mode=None, chat_resource_config=None, x_request_id=None):
         r"""ShowSmartChatRoomResponse
 
         The model defined in huaweicloud sdk
@@ -112,6 +114,8 @@ class ShowSmartChatRoomResponse(SdkResponse):
         :type chat_video_type: str
         :param exit_mute_threshold: **参数解释**： 静默退出时长。
         :type exit_mute_threshold: int
+        :param enable_semantic_action: 是否优先级加载模型资产
+        :type enable_semantic_action: bool
         :param room_id: 对话ID。
         :type room_id: str
         :param create_time: 智能交互对话创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
@@ -148,6 +152,7 @@ class ShowSmartChatRoomResponse(SdkResponse):
         self._chat_subtitle_config = None
         self._chat_video_type = None
         self._exit_mute_threshold = None
+        self._enable_semantic_action = None
         self._room_id = None
         self._create_time = None
         self._update_time = None
@@ -192,6 +197,8 @@ class ShowSmartChatRoomResponse(SdkResponse):
             self.chat_video_type = chat_video_type
         if exit_mute_threshold is not None:
             self.exit_mute_threshold = exit_mute_threshold
+        if enable_semantic_action is not None:
+            self.enable_semantic_action = enable_semantic_action
         if room_id is not None:
             self.room_id = room_id
         if create_time is not None:
@@ -582,6 +589,28 @@ class ShowSmartChatRoomResponse(SdkResponse):
         :type exit_mute_threshold: int
         """
         self._exit_mute_threshold = exit_mute_threshold
+
+    @property
+    def enable_semantic_action(self):
+        r"""Gets the enable_semantic_action of this ShowSmartChatRoomResponse.
+
+        是否优先级加载模型资产
+
+        :return: The enable_semantic_action of this ShowSmartChatRoomResponse.
+        :rtype: bool
+        """
+        return self._enable_semantic_action
+
+    @enable_semantic_action.setter
+    def enable_semantic_action(self, enable_semantic_action):
+        r"""Sets the enable_semantic_action of this ShowSmartChatRoomResponse.
+
+        是否优先级加载模型资产
+
+        :param enable_semantic_action: The enable_semantic_action of this ShowSmartChatRoomResponse.
+        :type enable_semantic_action: bool
+        """
+        self._enable_semantic_action = enable_semantic_action
 
     @property
     def room_id(self):

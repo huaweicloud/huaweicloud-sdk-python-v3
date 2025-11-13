@@ -57,6 +57,7 @@ from huaweicloudsdkvpc.v3.model.batch_delete_port_tags_response import BatchDele
 from huaweicloudsdkvpc.v3.model.batch_delete_request_body import BatchDeleteRequestBody
 from huaweicloudsdkvpc.v3.model.batch_delete_request_body_sys_tags import BatchDeleteRequestBodySysTags
 from huaweicloudsdkvpc.v3.model.batch_delete_request_body_tags import BatchDeleteRequestBodyTags
+from huaweicloudsdkvpc.v3.model.binding_vif_details import BindingVifDetails
 from huaweicloudsdkvpc.v3.model.cloud_resource import CloudResource
 from huaweicloudsdkvpc.v3.model.clouddcn_resource import ClouddcnResource
 from huaweicloudsdkvpc.v3.model.clouddcn_subnet import ClouddcnSubnet

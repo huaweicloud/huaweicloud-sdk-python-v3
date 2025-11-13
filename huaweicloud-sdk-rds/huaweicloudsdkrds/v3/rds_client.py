@@ -12941,6 +12941,213 @@ class RdsClient(Client):
 
         return http_info
 
+    def batch_modify_subscription(self, request):
+        r"""批量修改订阅
+
+        批量修改订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchModifySubscription
+        :type request: :class:`huaweicloudsdkrds.v3.BatchModifySubscriptionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.BatchModifySubscriptionResponse`
+        """
+        http_info = self._batch_modify_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_modify_subscription_invoker(self, request):
+        http_info = self._batch_modify_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_modify_subscription_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchModifySubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def collect_publication_monitor(self, request):
+        r"""查询发布监控信息
+
+        查询发布监控信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CollectPublicationMonitor
+        :type request: :class:`huaweicloudsdkrds.v3.CollectPublicationMonitorRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CollectPublicationMonitorResponse`
+        """
+        http_info = self._collect_publication_monitor_http_info(request)
+        return self._call_api(**http_info)
+
+    def collect_publication_monitor_invoker(self, request):
+        http_info = self._collect_publication_monitor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_publication_monitor_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/publications/{publication_id}/monitor",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectPublicationMonitorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'publication_id' in local_var_params:
+            path_params['publication_id'] = local_var_params['publication_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def collect_subscription_monitor(self, request):
+        r"""查询订阅监控信息
+
+        查询订阅监控信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CollectSubscriptionMonitor
+        :type request: :class:`huaweicloudsdkrds.v3.CollectSubscriptionMonitorRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CollectSubscriptionMonitorResponse`
+        """
+        http_info = self._collect_subscription_monitor_http_info(request)
+        return self._call_api(**http_info)
+
+    def collect_subscription_monitor_invoker(self, request):
+        http_info = self._collect_subscription_monitor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_subscription_monitor_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/subscriptions/{subscription_id}/monitor",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectSubscriptionMonitorResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'subscription_id' in local_var_params:
+            path_params['subscription_id'] = local_var_params['subscription_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_subscription(self, request):
         r"""创建订阅
 
@@ -13010,6 +13217,73 @@ class RdsClient(Client):
 
         return http_info
 
+    def delete_distribution(self, request):
+        r"""删除当前实例的分发服务器
+
+        删除当前实例的分发服务器
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDistribution
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteDistributionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteDistributionResponse`
+        """
+        http_info = self._delete_distribution_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_distribution_invoker(self, request):
+        http_info = self._delete_distribution_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_distribution_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/distribution",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDistributionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_publication(self, request):
         r"""删除发布
 
@@ -13058,6 +13332,148 @@ class RdsClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_subscription(self, request):
+        r"""删除订阅
+
+        删除订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteSubscription
+        :type request: :class:`huaweicloudsdkrds.v3.DeleteSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.DeleteSubscriptionResponse`
+        """
+        http_info = self._delete_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_subscription_invoker(self, request):
+        http_info = self._delete_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_subscription_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_db_agent_jobs(self, request):
+        r"""查询数据库代理作业列表
+
+        查询数据库代理作业列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDbAgentJobs
+        :type request: :class:`huaweicloudsdkrds.v3.ListDbAgentJobsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListDbAgentJobsResponse`
+        """
+        http_info = self._list_db_agent_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_db_agent_jobs_invoker(self, request):
+        http_info = self._list_db_agent_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_db_agent_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDbAgentJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'job_type' in local_var_params:
+            query_params.append(('job_type', local_var_params['job_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -13294,6 +13710,148 @@ class RdsClient(Client):
 
         return http_info
 
+    def list_publications4_subscription(self, request):
+        r"""查询实例可选的发布
+
+        查询实例可选的RDS for SQL Server实例的发布
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPublications4Subscription
+        :type request: :class:`huaweicloudsdkrds.v3.ListPublications4SubscriptionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListPublications4SubscriptionResponse`
+        """
+        http_info = self._list_publications4_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_publications4_subscription_invoker(self, request):
+        http_info = self._list_publications4_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_publications4_subscription_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/publication-candidates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublications4SubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_replication_profiles(self, request):
+        r"""查询发布订阅配置文件列表
+
+        查询发布订阅配置文件列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListReplicationProfiles
+        :type request: :class:`huaweicloudsdkrds.v3.ListReplicationProfilesRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListReplicationProfilesResponse`
+        """
+        http_info = self._list_replication_profiles_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_replication_profiles_invoker(self, request):
+        http_info = self._list_replication_profiles_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_replication_profiles_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/profiles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListReplicationProfilesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'agent_type' in local_var_params:
+            query_params.append(('agent_type', local_var_params['agent_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_subscriber_instances(self, request):
         r"""查询可配置为当前实例订阅服务器的实例列表
 
@@ -13369,6 +13927,85 @@ class RdsClient(Client):
 
         return http_info
 
+    def list_subscriptions(self, request):
+        r"""查询实例订阅信息
+
+        查询实例订阅信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSubscriptions
+        :type request: :class:`huaweicloudsdkrds.v3.ListSubscriptionsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListSubscriptionsResponse`
+        """
+        http_info = self._list_subscriptions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_subscriptions_invoker(self, request):
+        http_info = self._list_subscriptions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_subscriptions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubscriptionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'publication_id' in local_var_params:
+            query_params.append(('publication_id', local_var_params['publication_id']))
+        if 'is_cloud' in local_var_params:
+            query_params.append(('is_cloud', local_var_params['is_cloud']))
+        if 'publication_name' in local_var_params:
+            query_params.append(('publication_name', local_var_params['publication_name']))
+        if 'subscription_db_name' in local_var_params:
+            query_params.append(('subscription_db_name', local_var_params['subscription_db_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_publication(self, request):
         r"""修改发布
 
@@ -13407,6 +14044,75 @@ class RdsClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'publication_id' in local_var_params:
             path_params['publication_id'] = local_var_params['publication_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def validate_instance_connection(self, request):
+        r"""登录测试
+
+        RDS for SQL Server实例间或与远程SQL Server数据库的连通性测试
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ValidateInstanceConnection
+        :type request: :class:`huaweicloudsdkrds.v3.ValidateInstanceConnectionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ValidateInstanceConnectionResponse`
+        """
+        http_info = self._validate_instance_connection_http_info(request)
+        return self._call_api(**http_info)
+
+    def validate_instance_connection_invoker(self, request):
+        http_info = self._validate_instance_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_instance_connection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/login-test",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateInstanceConnectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 

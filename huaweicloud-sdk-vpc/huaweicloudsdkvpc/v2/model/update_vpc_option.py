@@ -18,17 +18,19 @@ class UpdateVpcOption:
         'name': 'str',
         'description': 'str',
         'cidr': 'str',
-        'routes': 'list[Route]'
+        'routes': 'list[Route]',
+        'enable_network_address_usage_metrics': 'bool'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'cidr': 'cidr',
-        'routes': 'routes'
+        'routes': 'routes',
+        'enable_network_address_usage_metrics': 'enable_network_address_usage_metrics'
     }
 
-    def __init__(self, name=None, description=None, cidr=None, routes=None):
+    def __init__(self, name=None, description=None, cidr=None, routes=None, enable_network_address_usage_metrics=None):
         r"""UpdateVpcOption
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class UpdateVpcOption:
         :type cidr: str
         :param routes: 功能说明：路由信息列表，详情参见route对象
         :type routes: list[:class:`huaweicloudsdkvpc.v2.Route`]
+        :param enable_network_address_usage_metrics: 功能说明：是否开启VPC内所有子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+        :type enable_network_address_usage_metrics: bool
         """
         
         
@@ -49,6 +53,7 @@ class UpdateVpcOption:
         self._description = None
         self._cidr = None
         self._routes = None
+        self._enable_network_address_usage_metrics = None
         self.discriminator = None
 
         if name is not None:
@@ -59,6 +64,8 @@ class UpdateVpcOption:
             self.cidr = cidr
         if routes is not None:
             self.routes = routes
+        if enable_network_address_usage_metrics is not None:
+            self.enable_network_address_usage_metrics = enable_network_address_usage_metrics
 
     @property
     def name(self):
@@ -147,6 +154,28 @@ class UpdateVpcOption:
         :type routes: list[:class:`huaweicloudsdkvpc.v2.Route`]
         """
         self._routes = routes
+
+    @property
+    def enable_network_address_usage_metrics(self):
+        r"""Gets the enable_network_address_usage_metrics of this UpdateVpcOption.
+
+        功能说明：是否开启VPC内所有子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+
+        :return: The enable_network_address_usage_metrics of this UpdateVpcOption.
+        :rtype: bool
+        """
+        return self._enable_network_address_usage_metrics
+
+    @enable_network_address_usage_metrics.setter
+    def enable_network_address_usage_metrics(self, enable_network_address_usage_metrics):
+        r"""Sets the enable_network_address_usage_metrics of this UpdateVpcOption.
+
+        功能说明：是否开启VPC内所有子网的IPv4地址使用量指标监控。 取值范围： true：开启 false：不开启
+
+        :param enable_network_address_usage_metrics: The enable_network_address_usage_metrics of this UpdateVpcOption.
+        :type enable_network_address_usage_metrics: bool
+        """
+        self._enable_network_address_usage_metrics = enable_network_address_usage_metrics
 
     def to_dict(self):
         result = {}

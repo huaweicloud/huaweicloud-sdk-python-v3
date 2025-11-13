@@ -35,7 +35,7 @@ class ListLivePlatformsRequest:
         :type offset: int
         :param limit: 每页显示的条目数量。
         :type limit: int
-        :param access_type: 平台对接类型。
+        :param access_type: 平台对接类型。| * MEITUAN_OFFICIAL：对接美团直播平台官方接口 * MSS_STANDARD：对接MetaStudio定义的标准接口
         :type access_type: str
         """
         
@@ -101,7 +101,7 @@ class ListLivePlatformsRequest:
     def access_type(self):
         r"""Gets the access_type of this ListLivePlatformsRequest.
 
-        平台对接类型。
+        平台对接类型。| * MEITUAN_OFFICIAL：对接美团直播平台官方接口 * MSS_STANDARD：对接MetaStudio定义的标准接口
 
         :return: The access_type of this ListLivePlatformsRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListLivePlatformsRequest:
     def access_type(self, access_type):
         r"""Sets the access_type of this ListLivePlatformsRequest.
 
-        平台对接类型。
+        平台对接类型。| * MEITUAN_OFFICIAL：对接美团直播平台官方接口 * MSS_STANDARD：对接MetaStudio定义的标准接口
 
         :param access_type: The access_type of this ListLivePlatformsRequest.
         :type access_type: str

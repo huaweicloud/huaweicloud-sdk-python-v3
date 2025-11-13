@@ -19,30 +19,28 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         'sql_alarm_rule_name': 'str',
         'alarm_rule_alias': 'str',
         'is_css_sql': 'bool',
-        'index_id': 'str',
         'project_id': 'str',
         'sql_alarm_rule_id': 'str',
         'sql_alarm_rule_description': 'str',
-        'sql_requests': 'list[SqlRequest]',
+        'sql_requests': 'list[SqlRequestResponse]',
         'frequency': 'FrequencyRespBody',
         'condition_expression': 'str',
         'sql_alarm_level': 'str',
         'sql_alarm_send': 'bool',
         'domain_id': 'str',
-        'create_time': 'int',
-        'update_time': 'int',
-        'topics': 'list[Topics]',
-        'language': 'str',
-        'id': 'str',
         'notification_frequency': 'int',
-        'alarm_action_rule_name': 'str'
+        'alarm_action_rule_name': 'str',
+        'trigger_condition_count': 'int',
+        'trigger_condition_frequency': 'int',
+        'whether_recovery_policy': 'bool',
+        'recovery_policy': 'int',
+        'tags': 'list[TagsResBody]'
     }
 
     attribute_map = {
         'sql_alarm_rule_name': 'sql_alarm_rule_name',
         'alarm_rule_alias': 'alarm_rule_alias',
         'is_css_sql': 'is_css_sql',
-        'index_id': 'indexId',
         'project_id': 'projectId',
         'sql_alarm_rule_id': 'sql_alarm_rule_id',
         'sql_alarm_rule_description': 'sql_alarm_rule_description',
@@ -52,16 +50,16 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         'sql_alarm_level': 'sql_alarm_level',
         'sql_alarm_send': 'sql_alarm_send',
         'domain_id': 'domain_id',
-        'create_time': 'create_time',
-        'update_time': 'update_time',
-        'topics': 'topics',
-        'language': 'language',
-        'id': 'id',
         'notification_frequency': 'notification_frequency',
-        'alarm_action_rule_name': 'alarm_action_rule_name'
+        'alarm_action_rule_name': 'alarm_action_rule_name',
+        'trigger_condition_count': 'trigger_condition_count',
+        'trigger_condition_frequency': 'trigger_condition_frequency',
+        'whether_recovery_policy': 'whether_recovery_policy',
+        'recovery_policy': 'recovery_policy',
+        'tags': 'tags'
     }
 
-    def __init__(self, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, index_id=None, project_id=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, create_time=None, update_time=None, topics=None, language=None, id=None, notification_frequency=None, alarm_action_rule_name=None):
+    def __init__(self, sql_alarm_rule_name=None, alarm_rule_alias=None, is_css_sql=None, project_id=None, sql_alarm_rule_id=None, sql_alarm_rule_description=None, sql_requests=None, frequency=None, condition_expression=None, sql_alarm_level=None, sql_alarm_send=None, domain_id=None, notification_frequency=None, alarm_action_rule_name=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, tags=None):
         r"""UpdateSqlAlarmRuleResponse
 
         The model defined in huaweicloud sdk
@@ -72,8 +70,6 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type alarm_rule_alias: str
         :param is_css_sql: 是否管道符sql查询
         :type is_css_sql: bool
-        :param index_id: 索引id
-        :type index_id: str
         :param project_id: 项目id
         :type project_id: str
         :param sql_alarm_rule_id: SQL告警规则id
@@ -81,7 +77,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :param sql_alarm_rule_description: SQL告警信息描述
         :type sql_alarm_rule_description: str
         :param sql_requests: SQL详细信息
-        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
+        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequestResponse`]
         :param frequency: 
         :type frequency: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
         :param condition_expression: 条件表达式
@@ -92,20 +88,20 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type sql_alarm_send: bool
         :param domain_id: domainId
         :type domain_id: str
-        :param create_time: 创建时间（毫秒时间戳）
-        :type create_time: int
-        :param update_time: 更新时间（毫秒时间戳）
-        :type update_time: int
-        :param topics: 主题
-        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
-        :param language: 邮件附加信息语言
-        :type language: str
-        :param id: 规则ID。
-        :type id: str
         :param notification_frequency: 通知频率,单位(分钟)
         :type notification_frequency: int
         :param alarm_action_rule_name: 告警行动规则名称 &gt;alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
         :type alarm_action_rule_name: str
+        :param trigger_condition_count: **参数解释：** 告警触发条件：满足条件次数。满足条件次数是指设置的SQL语句。 **取值范围：** 不涉及。
+        :type trigger_condition_count: int
+        :param trigger_condition_frequency: **参数解释：** 触发条件：触发周期。 **取值范围：** 不涉及。
+        :type trigger_condition_frequency: int
+        :param whether_recovery_policy: **参数解释：** 是否打开恢复通知。 **取值范围：** - true：配置告警恢复策略。 - false：不配置告警恢复策略。
+        :type whether_recovery_policy: bool
+        :param recovery_policy: **参数解释：** 恢复策略周期。 **取值范围：** 不涉及。
+        :type recovery_policy: int
+        :param tags: **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
         """
         
         super().__init__()
@@ -113,7 +109,6 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         self._sql_alarm_rule_name = None
         self._alarm_rule_alias = None
         self._is_css_sql = None
-        self._index_id = None
         self._project_id = None
         self._sql_alarm_rule_id = None
         self._sql_alarm_rule_description = None
@@ -123,13 +118,13 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         self._sql_alarm_level = None
         self._sql_alarm_send = None
         self._domain_id = None
-        self._create_time = None
-        self._update_time = None
-        self._topics = None
-        self._language = None
-        self._id = None
         self._notification_frequency = None
         self._alarm_action_rule_name = None
+        self._trigger_condition_count = None
+        self._trigger_condition_frequency = None
+        self._whether_recovery_policy = None
+        self._recovery_policy = None
+        self._tags = None
         self.discriminator = None
 
         if sql_alarm_rule_name is not None:
@@ -138,8 +133,6 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
             self.alarm_rule_alias = alarm_rule_alias
         if is_css_sql is not None:
             self.is_css_sql = is_css_sql
-        if index_id is not None:
-            self.index_id = index_id
         if project_id is not None:
             self.project_id = project_id
         if sql_alarm_rule_id is not None:
@@ -158,20 +151,20 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
             self.sql_alarm_send = sql_alarm_send
         if domain_id is not None:
             self.domain_id = domain_id
-        if create_time is not None:
-            self.create_time = create_time
-        if update_time is not None:
-            self.update_time = update_time
-        if topics is not None:
-            self.topics = topics
-        if language is not None:
-            self.language = language
-        if id is not None:
-            self.id = id
         if notification_frequency is not None:
             self.notification_frequency = notification_frequency
         if alarm_action_rule_name is not None:
             self.alarm_action_rule_name = alarm_action_rule_name
+        if trigger_condition_count is not None:
+            self.trigger_condition_count = trigger_condition_count
+        if trigger_condition_frequency is not None:
+            self.trigger_condition_frequency = trigger_condition_frequency
+        if whether_recovery_policy is not None:
+            self.whether_recovery_policy = whether_recovery_policy
+        if recovery_policy is not None:
+            self.recovery_policy = recovery_policy
+        if tags is not None:
+            self.tags = tags
 
     @property
     def sql_alarm_rule_name(self):
@@ -238,28 +231,6 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type is_css_sql: bool
         """
         self._is_css_sql = is_css_sql
-
-    @property
-    def index_id(self):
-        r"""Gets the index_id of this UpdateSqlAlarmRuleResponse.
-
-        索引id
-
-        :return: The index_id of this UpdateSqlAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._index_id
-
-    @index_id.setter
-    def index_id(self, index_id):
-        r"""Sets the index_id of this UpdateSqlAlarmRuleResponse.
-
-        索引id
-
-        :param index_id: The index_id of this UpdateSqlAlarmRuleResponse.
-        :type index_id: str
-        """
-        self._index_id = index_id
 
     @property
     def project_id(self):
@@ -334,7 +305,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         SQL详细信息
 
         :return: The sql_requests of this UpdateSqlAlarmRuleResponse.
-        :rtype: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
+        :rtype: list[:class:`huaweicloudsdklts.v2.SqlRequestResponse`]
         """
         return self._sql_requests
 
@@ -345,7 +316,7 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         SQL详细信息
 
         :param sql_requests: The sql_requests of this UpdateSqlAlarmRuleResponse.
-        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequest`]
+        :type sql_requests: list[:class:`huaweicloudsdklts.v2.SqlRequestResponse`]
         """
         self._sql_requests = sql_requests
 
@@ -456,116 +427,6 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         self._domain_id = domain_id
 
     @property
-    def create_time(self):
-        r"""Gets the create_time of this UpdateSqlAlarmRuleResponse.
-
-        创建时间（毫秒时间戳）
-
-        :return: The create_time of this UpdateSqlAlarmRuleResponse.
-        :rtype: int
-        """
-        return self._create_time
-
-    @create_time.setter
-    def create_time(self, create_time):
-        r"""Sets the create_time of this UpdateSqlAlarmRuleResponse.
-
-        创建时间（毫秒时间戳）
-
-        :param create_time: The create_time of this UpdateSqlAlarmRuleResponse.
-        :type create_time: int
-        """
-        self._create_time = create_time
-
-    @property
-    def update_time(self):
-        r"""Gets the update_time of this UpdateSqlAlarmRuleResponse.
-
-        更新时间（毫秒时间戳）
-
-        :return: The update_time of this UpdateSqlAlarmRuleResponse.
-        :rtype: int
-        """
-        return self._update_time
-
-    @update_time.setter
-    def update_time(self, update_time):
-        r"""Sets the update_time of this UpdateSqlAlarmRuleResponse.
-
-        更新时间（毫秒时间戳）
-
-        :param update_time: The update_time of this UpdateSqlAlarmRuleResponse.
-        :type update_time: int
-        """
-        self._update_time = update_time
-
-    @property
-    def topics(self):
-        r"""Gets the topics of this UpdateSqlAlarmRuleResponse.
-
-        主题
-
-        :return: The topics of this UpdateSqlAlarmRuleResponse.
-        :rtype: list[:class:`huaweicloudsdklts.v2.Topics`]
-        """
-        return self._topics
-
-    @topics.setter
-    def topics(self, topics):
-        r"""Sets the topics of this UpdateSqlAlarmRuleResponse.
-
-        主题
-
-        :param topics: The topics of this UpdateSqlAlarmRuleResponse.
-        :type topics: list[:class:`huaweicloudsdklts.v2.Topics`]
-        """
-        self._topics = topics
-
-    @property
-    def language(self):
-        r"""Gets the language of this UpdateSqlAlarmRuleResponse.
-
-        邮件附加信息语言
-
-        :return: The language of this UpdateSqlAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._language
-
-    @language.setter
-    def language(self, language):
-        r"""Sets the language of this UpdateSqlAlarmRuleResponse.
-
-        邮件附加信息语言
-
-        :param language: The language of this UpdateSqlAlarmRuleResponse.
-        :type language: str
-        """
-        self._language = language
-
-    @property
-    def id(self):
-        r"""Gets the id of this UpdateSqlAlarmRuleResponse.
-
-        规则ID。
-
-        :return: The id of this UpdateSqlAlarmRuleResponse.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        r"""Sets the id of this UpdateSqlAlarmRuleResponse.
-
-        规则ID。
-
-        :param id: The id of this UpdateSqlAlarmRuleResponse.
-        :type id: str
-        """
-        self._id = id
-
-    @property
     def notification_frequency(self):
         r"""Gets the notification_frequency of this UpdateSqlAlarmRuleResponse.
 
@@ -608,6 +469,116 @@ class UpdateSqlAlarmRuleResponse(SdkResponse):
         :type alarm_action_rule_name: str
         """
         self._alarm_action_rule_name = alarm_action_rule_name
+
+    @property
+    def trigger_condition_count(self):
+        r"""Gets the trigger_condition_count of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 告警触发条件：满足条件次数。满足条件次数是指设置的SQL语句。 **取值范围：** 不涉及。
+
+        :return: The trigger_condition_count of this UpdateSqlAlarmRuleResponse.
+        :rtype: int
+        """
+        return self._trigger_condition_count
+
+    @trigger_condition_count.setter
+    def trigger_condition_count(self, trigger_condition_count):
+        r"""Sets the trigger_condition_count of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 告警触发条件：满足条件次数。满足条件次数是指设置的SQL语句。 **取值范围：** 不涉及。
+
+        :param trigger_condition_count: The trigger_condition_count of this UpdateSqlAlarmRuleResponse.
+        :type trigger_condition_count: int
+        """
+        self._trigger_condition_count = trigger_condition_count
+
+    @property
+    def trigger_condition_frequency(self):
+        r"""Gets the trigger_condition_frequency of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 触发条件：触发周期。 **取值范围：** 不涉及。
+
+        :return: The trigger_condition_frequency of this UpdateSqlAlarmRuleResponse.
+        :rtype: int
+        """
+        return self._trigger_condition_frequency
+
+    @trigger_condition_frequency.setter
+    def trigger_condition_frequency(self, trigger_condition_frequency):
+        r"""Sets the trigger_condition_frequency of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 触发条件：触发周期。 **取值范围：** 不涉及。
+
+        :param trigger_condition_frequency: The trigger_condition_frequency of this UpdateSqlAlarmRuleResponse.
+        :type trigger_condition_frequency: int
+        """
+        self._trigger_condition_frequency = trigger_condition_frequency
+
+    @property
+    def whether_recovery_policy(self):
+        r"""Gets the whether_recovery_policy of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 是否打开恢复通知。 **取值范围：** - true：配置告警恢复策略。 - false：不配置告警恢复策略。
+
+        :return: The whether_recovery_policy of this UpdateSqlAlarmRuleResponse.
+        :rtype: bool
+        """
+        return self._whether_recovery_policy
+
+    @whether_recovery_policy.setter
+    def whether_recovery_policy(self, whether_recovery_policy):
+        r"""Sets the whether_recovery_policy of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 是否打开恢复通知。 **取值范围：** - true：配置告警恢复策略。 - false：不配置告警恢复策略。
+
+        :param whether_recovery_policy: The whether_recovery_policy of this UpdateSqlAlarmRuleResponse.
+        :type whether_recovery_policy: bool
+        """
+        self._whether_recovery_policy = whether_recovery_policy
+
+    @property
+    def recovery_policy(self):
+        r"""Gets the recovery_policy of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 恢复策略周期。 **取值范围：** 不涉及。
+
+        :return: The recovery_policy of this UpdateSqlAlarmRuleResponse.
+        :rtype: int
+        """
+        return self._recovery_policy
+
+    @recovery_policy.setter
+    def recovery_policy(self, recovery_policy):
+        r"""Sets the recovery_policy of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 恢复策略周期。 **取值范围：** 不涉及。
+
+        :param recovery_policy: The recovery_policy of this UpdateSqlAlarmRuleResponse.
+        :type recovery_policy: int
+        """
+        self._recovery_policy = recovery_policy
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。
+
+        :return: The tags of this UpdateSqlAlarmRuleResponse.
+        :rtype: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this UpdateSqlAlarmRuleResponse.
+
+        **参数解释：** 告警标签信息。标签是以键值对（key-value）的形式表示，key和value为一一对应关系。
+
+        :param tags: The tags of this UpdateSqlAlarmRuleResponse.
+        :type tags: list[:class:`huaweicloudsdklts.v2.TagsResBody`]
+        """
+        self._tags = tags
 
     def to_dict(self):
         import warnings

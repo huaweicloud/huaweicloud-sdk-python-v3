@@ -85,7 +85,7 @@ class PolicyOption:
         :type whiteblackip: bool
         :param geoip: 地理位置访问控制规则是否开启
         :type geoip: bool
-        :param ignore: 误报屏蔽是否开启
+        :param ignore: 全局白名单是否开启
         :type ignore: bool
         :param privacy: 隐私屏蔽是否开启
         :type privacy: bool
@@ -426,7 +426,7 @@ class PolicyOption:
     def ignore(self):
         r"""Gets the ignore of this PolicyOption.
 
-        误报屏蔽是否开启
+        全局白名单是否开启
 
         :return: The ignore of this PolicyOption.
         :rtype: bool
@@ -437,7 +437,7 @@ class PolicyOption:
     def ignore(self, ignore):
         r"""Sets the ignore of this PolicyOption.
 
-        误报屏蔽是否开启
+        全局白名单是否开启
 
         :param ignore: The ignore of this PolicyOption.
         :type ignore: bool

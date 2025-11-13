@@ -37,7 +37,7 @@ class OperationLogItem:
         :type time: int
         :param action: 操作名称,当前已有的action为CREATE_JOB(创建任务),COMMIT_JOB(提交任务),SYSTEM_AUDIT_PASS(系统审核通过),ADMIN_AUDIT_PASS(管理员审核通过),AUDIT_NOT_PASS(审核未通过),TRAINING_FINISH(训练完成),UPLOADING_MODEL(上传语音模型),COMPLETE_JOB(任务完成)
         :type action: str
-        :param operator: 操作者,USER(用户),ADMIN(管理员),SYSTEM(用户)
+        :param operator: 操作者,USER(用户),ADMIN(管理员),SYSTEM(系统用户)
         :type operator: str
         :param external_info: 
         :type external_info: :class:`huaweicloudsdkmetastudio.v1.OpExternalInfo`
@@ -108,7 +108,7 @@ class OperationLogItem:
     def operator(self):
         r"""Gets the operator of this OperationLogItem.
 
-        操作者,USER(用户),ADMIN(管理员),SYSTEM(用户)
+        操作者,USER(用户),ADMIN(管理员),SYSTEM(系统用户)
 
         :return: The operator of this OperationLogItem.
         :rtype: str
@@ -119,7 +119,7 @@ class OperationLogItem:
     def operator(self, operator):
         r"""Sets the operator of this OperationLogItem.
 
-        操作者,USER(用户),ADMIN(管理员),SYSTEM(用户)
+        操作者,USER(用户),ADMIN(管理员),SYSTEM(系统用户)
 
         :param operator: The operator of this OperationLogItem.
         :type operator: str

@@ -22,7 +22,8 @@ class TrafficMirrorFilter:
         'ingress_rules': 'list[TrafficMirrorFilterRule]',
         'egress_rules': 'list[TrafficMirrorFilterRule]',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class TrafficMirrorFilter:
         'ingress_rules': 'ingress_rules',
         'egress_rules': 'egress_rules',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, project_id=None, description=None, name=None, ingress_rules=None, egress_rules=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, project_id=None, description=None, name=None, ingress_rules=None, egress_rules=None, created_at=None, updated_at=None, type=None):
         r"""TrafficMirrorFilter
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class TrafficMirrorFilter:
         :type created_at: datetime
         :param updated_at: 更新时间戳
         :type updated_at: datetime
+        :param type: 参数解释： 流量镜像筛选条件的镜像源类型。 取值范围： eni：弹性网卡
+        :type type: str
         """
         
         
@@ -69,6 +73,7 @@ class TrafficMirrorFilter:
         self._egress_rules = None
         self._created_at = None
         self._updated_at = None
+        self._type = None
         self.discriminator = None
 
         self.id = id
@@ -79,6 +84,7 @@ class TrafficMirrorFilter:
         self.egress_rules = egress_rules
         self.created_at = created_at
         self.updated_at = updated_at
+        self.type = type
 
     @property
     def id(self):
@@ -255,6 +261,28 @@ class TrafficMirrorFilter:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def type(self):
+        r"""Gets the type of this TrafficMirrorFilter.
+
+        参数解释： 流量镜像筛选条件的镜像源类型。 取值范围： eni：弹性网卡
+
+        :return: The type of this TrafficMirrorFilter.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this TrafficMirrorFilter.
+
+        参数解释： 流量镜像筛选条件的镜像源类型。 取值范围： eni：弹性网卡
+
+        :param type: The type of this TrafficMirrorFilter.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         result = {}

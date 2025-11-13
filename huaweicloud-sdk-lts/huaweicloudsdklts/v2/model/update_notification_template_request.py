@@ -16,7 +16,7 @@ class UpdateNotificationTemplateRequest:
 
     openapi_types = {
         'domain_id': 'str',
-        'body': 'CreateNotificationTemplateRequestBody'
+        'body': 'UpdateNotificationTemplateRequestBody'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class UpdateNotificationTemplateRequest:
         :param domain_id: 账号id，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
         :type domain_id: str
         :param body: Body of the UpdateNotificationTemplateRequest
-        :type body: :class:`huaweicloudsdklts.v2.CreateNotificationTemplateRequestBody`
+        :type body: :class:`huaweicloudsdklts.v2.UpdateNotificationTemplateRequestBody`
         """
         
         
@@ -72,7 +72,7 @@ class UpdateNotificationTemplateRequest:
         r"""Gets the body of this UpdateNotificationTemplateRequest.
 
         :return: The body of this UpdateNotificationTemplateRequest.
-        :rtype: :class:`huaweicloudsdklts.v2.CreateNotificationTemplateRequestBody`
+        :rtype: :class:`huaweicloudsdklts.v2.UpdateNotificationTemplateRequestBody`
         """
         return self._body
 
@@ -81,7 +81,7 @@ class UpdateNotificationTemplateRequest:
         r"""Sets the body of this UpdateNotificationTemplateRequest.
 
         :param body: The body of this UpdateNotificationTemplateRequest.
-        :type body: :class:`huaweicloudsdklts.v2.CreateNotificationTemplateRequestBody`
+        :type body: :class:`huaweicloudsdklts.v2.UpdateNotificationTemplateRequestBody`
         """
         self._body = body
 
