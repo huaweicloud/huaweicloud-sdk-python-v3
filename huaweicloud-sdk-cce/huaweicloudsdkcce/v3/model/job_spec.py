@@ -37,17 +37,17 @@ class JobSpec:
 
         The model defined in huaweicloud sdk
 
-        :param type: 任务的类型，例：“CreateCluster”- 创建集群。
+        :param type: **参数解释**： 任务的类型。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type type: str
-        :param cluster_uid: 任务所在的集群的ID。
+        :param cluster_uid: **参数解释**： 任务所在的集群的ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type cluster_uid: str
-        :param resource_id: 任务操作的资源ID。
+        :param resource_id: **参数解释**： 任务操作的资源ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type resource_id: str
-        :param resource_name: 任务操作的资源名称。
+        :param resource_name: **参数解释**： 任务操作的资源名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type resource_name: str
-        :param extend_param: 扩展参数。
+        :param extend_param: **参数解释**： 扩展参数 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type extend_param: dict(str, str)
-        :param sub_jobs: 子任务的列表。  - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成 
+        :param sub_jobs: **参数解释**： 子任务的列表。 - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成  **约束限制**： 不涉及 
         :type sub_jobs: list[:class:`huaweicloudsdkcce.v3.Job`]
         """
         
@@ -78,7 +78,7 @@ class JobSpec:
     def type(self):
         r"""Gets the type of this JobSpec.
 
-        任务的类型，例：“CreateCluster”- 创建集群。
+        **参数解释**： 任务的类型。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The type of this JobSpec.
         :rtype: str
@@ -89,7 +89,7 @@ class JobSpec:
     def type(self, type):
         r"""Sets the type of this JobSpec.
 
-        任务的类型，例：“CreateCluster”- 创建集群。
+        **参数解释**： 任务的类型。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param type: The type of this JobSpec.
         :type type: str
@@ -100,7 +100,7 @@ class JobSpec:
     def cluster_uid(self):
         r"""Gets the cluster_uid of this JobSpec.
 
-        任务所在的集群的ID。
+        **参数解释**： 任务所在的集群的ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The cluster_uid of this JobSpec.
         :rtype: str
@@ -111,7 +111,7 @@ class JobSpec:
     def cluster_uid(self, cluster_uid):
         r"""Sets the cluster_uid of this JobSpec.
 
-        任务所在的集群的ID。
+        **参数解释**： 任务所在的集群的ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param cluster_uid: The cluster_uid of this JobSpec.
         :type cluster_uid: str
@@ -122,7 +122,7 @@ class JobSpec:
     def resource_id(self):
         r"""Gets the resource_id of this JobSpec.
 
-        任务操作的资源ID。
+        **参数解释**： 任务操作的资源ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The resource_id of this JobSpec.
         :rtype: str
@@ -133,7 +133,7 @@ class JobSpec:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this JobSpec.
 
-        任务操作的资源ID。
+        **参数解释**： 任务操作的资源ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param resource_id: The resource_id of this JobSpec.
         :type resource_id: str
@@ -144,7 +144,7 @@ class JobSpec:
     def resource_name(self):
         r"""Gets the resource_name of this JobSpec.
 
-        任务操作的资源名称。
+        **参数解释**： 任务操作的资源名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The resource_name of this JobSpec.
         :rtype: str
@@ -155,7 +155,7 @@ class JobSpec:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this JobSpec.
 
-        任务操作的资源名称。
+        **参数解释**： 任务操作的资源名称。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param resource_name: The resource_name of this JobSpec.
         :type resource_name: str
@@ -166,7 +166,7 @@ class JobSpec:
     def extend_param(self):
         r"""Gets the extend_param of this JobSpec.
 
-        扩展参数。
+        **参数解释**： 扩展参数 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The extend_param of this JobSpec.
         :rtype: dict(str, str)
@@ -177,7 +177,7 @@ class JobSpec:
     def extend_param(self, extend_param):
         r"""Sets the extend_param of this JobSpec.
 
-        扩展参数。
+        **参数解释**： 扩展参数 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param extend_param: The extend_param of this JobSpec.
         :type extend_param: dict(str, str)
@@ -188,7 +188,7 @@ class JobSpec:
     def sub_jobs(self):
         r"""Gets the sub_jobs of this JobSpec.
 
-        子任务的列表。  - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成 
+        **参数解释**： 子任务的列表。 - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成  **约束限制**： 不涉及 
 
         :return: The sub_jobs of this JobSpec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.Job`]
@@ -199,7 +199,7 @@ class JobSpec:
     def sub_jobs(self, sub_jobs):
         r"""Sets the sub_jobs of this JobSpec.
 
-        子任务的列表。  - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成 
+        **参数解释**： 子任务的列表。 - 包含了所有子任务的详细信息 - 在创建集群、节点等场景下，通常会由多个子任务共同组成创建任务，在子任务都完成后，任务才会完成  **约束限制**： 不涉及 
 
         :param sub_jobs: The sub_jobs of this JobSpec.
         :type sub_jobs: list[:class:`huaweicloudsdkcce.v3.Job`]

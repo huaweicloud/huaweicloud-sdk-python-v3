@@ -33,9 +33,9 @@ class NodeCreateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param kind: **参数解释**： API类型，固定值“Node”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“Node”。 **默认取值**： 不涉及 
+        :param kind: **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Node 
         :type kind: str
-        :param api_version: **参数解释**： API版本，固定值“v3”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        :param api_version: **参数解释**： API版本 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： v3 
         :type api_version: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -61,7 +61,7 @@ class NodeCreateRequest:
     def kind(self):
         r"""Gets the kind of this NodeCreateRequest.
 
-        **参数解释**： API类型，固定值“Node”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“Node”。 **默认取值**： 不涉及 
+        **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Node 
 
         :return: The kind of this NodeCreateRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class NodeCreateRequest:
     def kind(self, kind):
         r"""Sets the kind of this NodeCreateRequest.
 
-        **参数解释**： API类型，固定值“Node”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“Node”。 **默认取值**： 不涉及 
+        **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Node 
 
         :param kind: The kind of this NodeCreateRequest.
         :type kind: str
@@ -83,7 +83,7 @@ class NodeCreateRequest:
     def api_version(self):
         r"""Gets the api_version of this NodeCreateRequest.
 
-        **参数解释**： API版本，固定值“v3”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        **参数解释**： API版本 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :return: The api_version of this NodeCreateRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class NodeCreateRequest:
     def api_version(self, api_version):
         r"""Sets the api_version of this NodeCreateRequest.
 
-        **参数解释**： API版本，固定值“v3”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        **参数解释**： API版本 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :param api_version: The api_version of this NodeCreateRequest.
         :type api_version: str

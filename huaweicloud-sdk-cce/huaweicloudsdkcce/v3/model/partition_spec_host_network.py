@@ -27,7 +27,7 @@ class PartitionSpecHostNetwork:
 
         The model defined in huaweicloud sdk
 
-        :param subnet_id: 子网ID
+        :param subnet_id: **参数解释**： 子网ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type subnet_id: str
         """
         
@@ -43,7 +43,7 @@ class PartitionSpecHostNetwork:
     def subnet_id(self):
         r"""Gets the subnet_id of this PartitionSpecHostNetwork.
 
-        子网ID
+        **参数解释**： 子网ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The subnet_id of this PartitionSpecHostNetwork.
         :rtype: str
@@ -54,7 +54,7 @@ class PartitionSpecHostNetwork:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this PartitionSpecHostNetwork.
 
-        子网ID
+        **参数解释**： 子网ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param subnet_id: The subnet_id of this PartitionSpecHostNetwork.
         :type subnet_id: str

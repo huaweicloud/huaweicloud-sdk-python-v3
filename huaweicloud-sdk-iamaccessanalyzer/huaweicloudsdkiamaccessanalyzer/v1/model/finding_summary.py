@@ -85,7 +85,7 @@ class FindingSummary:
         :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
         :param sources: 访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
         :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
-        :param status: 访问分析结果当前状态。
+        :param status: 访问分析结果当前状态。 - active：活跃 - archived：已归档 - resolved：已解决 
         :type status: str
         :param updated_at: 更新访问分析结果的时间。
         :type updated_at: datetime
@@ -435,7 +435,7 @@ class FindingSummary:
     def status(self):
         r"""Gets the status of this FindingSummary.
 
-        访问分析结果当前状态。
+        访问分析结果当前状态。 - active：活跃 - archived：已归档 - resolved：已解决 
 
         :return: The status of this FindingSummary.
         :rtype: str
@@ -446,7 +446,7 @@ class FindingSummary:
     def status(self, status):
         r"""Sets the status of this FindingSummary.
 
-        访问分析结果当前状态。
+        访问分析结果当前状态。 - active：活跃 - archived：已归档 - resolved：已解决 
 
         :param status: The status of this FindingSummary.
         :type status: str

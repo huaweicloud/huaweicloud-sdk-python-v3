@@ -23,7 +23,9 @@ class Update2dModelTrainingJobReq:
         'is_background_replacement': 'bool',
         'batch_name': 'str',
         'tags': 'list[str]',
+        'is_fast_flexus': 'bool',
         'samples_basic_info': 'list[ActionBasicSampleInfo]',
+        'voice_properties': 'VoiceProperties',
         'supported_service': 'list[SupportedServiceEnum]',
         'audio_source_type': 'str'
     }
@@ -37,12 +39,14 @@ class Update2dModelTrainingJobReq:
         'is_background_replacement': 'is_background_replacement',
         'batch_name': 'batch_name',
         'tags': 'tags',
+        'is_fast_flexus': 'is_fast_flexus',
         'samples_basic_info': 'samples_basic_info',
+        'voice_properties': 'voice_properties',
         'supported_service': 'supported_service',
         'audio_source_type': 'audio_source_type'
     }
 
-    def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, action_video_multipart_count=None, is_background_replacement=None, batch_name=None, tags=None, samples_basic_info=None, supported_service=None, audio_source_type=None):
+    def __init__(self, name=None, contact=None, command_message=None, video_multipart_count=None, action_video_multipart_count=None, is_background_replacement=None, batch_name=None, tags=None, is_fast_flexus=None, samples_basic_info=None, voice_properties=None, supported_service=None, audio_source_type=None):
         r"""Update2dModelTrainingJobReq
 
         The model defined in huaweicloud sdk
@@ -63,8 +67,12 @@ class Update2dModelTrainingJobReq:
         :type batch_name: str
         :param tags: 分身数字人训练任务标签。
         :type tags: list[str]
+        :param is_fast_flexus: 是否极速版flexus
+        :type is_fast_flexus: bool
         :param samples_basic_info: 动作视频样例可修改信息。
         :type samples_basic_info: list[:class:`huaweicloudsdkmetastudio.v1.ActionBasicSampleInfo`]
+        :param voice_properties: 
+        :type voice_properties: :class:`huaweicloudsdkmetastudio.v1.VoiceProperties`
         :param supported_service: 该任务所生成的模型支持的业务类型，可多选。  Flexus版数字人仅支持选择“VIDEO_2D”。
         :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
         :param audio_source_type: 声音来源类型 * VIDEO：视频中抽取音频 * AUDIO：单独上传的音频
@@ -81,7 +89,9 @@ class Update2dModelTrainingJobReq:
         self._is_background_replacement = None
         self._batch_name = None
         self._tags = None
+        self._is_fast_flexus = None
         self._samples_basic_info = None
+        self._voice_properties = None
         self._supported_service = None
         self._audio_source_type = None
         self.discriminator = None
@@ -102,8 +112,12 @@ class Update2dModelTrainingJobReq:
             self.batch_name = batch_name
         if tags is not None:
             self.tags = tags
+        if is_fast_flexus is not None:
+            self.is_fast_flexus = is_fast_flexus
         if samples_basic_info is not None:
             self.samples_basic_info = samples_basic_info
+        if voice_properties is not None:
+            self.voice_properties = voice_properties
         if supported_service is not None:
             self.supported_service = supported_service
         if audio_source_type is not None:
@@ -286,6 +300,28 @@ class Update2dModelTrainingJobReq:
         self._tags = tags
 
     @property
+    def is_fast_flexus(self):
+        r"""Gets the is_fast_flexus of this Update2dModelTrainingJobReq.
+
+        是否极速版flexus
+
+        :return: The is_fast_flexus of this Update2dModelTrainingJobReq.
+        :rtype: bool
+        """
+        return self._is_fast_flexus
+
+    @is_fast_flexus.setter
+    def is_fast_flexus(self, is_fast_flexus):
+        r"""Sets the is_fast_flexus of this Update2dModelTrainingJobReq.
+
+        是否极速版flexus
+
+        :param is_fast_flexus: The is_fast_flexus of this Update2dModelTrainingJobReq.
+        :type is_fast_flexus: bool
+        """
+        self._is_fast_flexus = is_fast_flexus
+
+    @property
     def samples_basic_info(self):
         r"""Gets the samples_basic_info of this Update2dModelTrainingJobReq.
 
@@ -306,6 +342,24 @@ class Update2dModelTrainingJobReq:
         :type samples_basic_info: list[:class:`huaweicloudsdkmetastudio.v1.ActionBasicSampleInfo`]
         """
         self._samples_basic_info = samples_basic_info
+
+    @property
+    def voice_properties(self):
+        r"""Gets the voice_properties of this Update2dModelTrainingJobReq.
+
+        :return: The voice_properties of this Update2dModelTrainingJobReq.
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceProperties`
+        """
+        return self._voice_properties
+
+    @voice_properties.setter
+    def voice_properties(self, voice_properties):
+        r"""Sets the voice_properties of this Update2dModelTrainingJobReq.
+
+        :param voice_properties: The voice_properties of this Update2dModelTrainingJobReq.
+        :type voice_properties: :class:`huaweicloudsdkmetastudio.v1.VoiceProperties`
+        """
+        self._voice_properties = voice_properties
 
     @property
     def supported_service(self):

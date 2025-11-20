@@ -19,7 +19,8 @@ class ChangeVulScanPolicyRequestInfo:
         'scan_range_type': 'str',
         'host_ids': 'list[str]',
         'scan_vul_types': 'list[str]',
-        'status': 'str'
+        'status': 'str',
+        'time': 'ChangeVulScanPolicyRequestInfoTime'
     }
 
     attribute_map = {
@@ -27,24 +28,27 @@ class ChangeVulScanPolicyRequestInfo:
         'scan_range_type': 'scan_range_type',
         'host_ids': 'host_ids',
         'scan_vul_types': 'scan_vul_types',
-        'status': 'status'
+        'status': 'status',
+        'time': 'time'
     }
 
-    def __init__(self, scan_period=None, scan_range_type=None, host_ids=None, scan_vul_types=None, status=None):
+    def __init__(self, scan_period=None, scan_range_type=None, host_ids=None, scan_vul_types=None, status=None, time=None):
         r"""ChangeVulScanPolicyRequestInfo
 
         The model defined in huaweicloud sdk
 
-        :param scan_period: 扫描周期 - one_day : 每天 - three_day : 每三天 - one_week : 每周
+        :param scan_period: **参数解释**: 扫描周期 **约束限制**: 不涉及 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月 **默认取值**: 不涉及 
         :type scan_period: str
-        :param scan_range_type: 扫描主机的范围，包含如下：   -all_host : 扫描全部主机   -specific_host : 扫描指定主机
+        :param scan_range_type: **参数解释**: 扫描主机的范围 **约束限制**: 不涉及 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机 **默认取值**: 不涉及 
         :type scan_range_type: str
-        :param host_ids: 主机ID列表；当scan_range_type的值为specific_host时必填
+        :param host_ids: **参数解释**: 主机ID列表； **约束限制**: 当scan_range_type的值为specific_host时 表示扫描的主机列表 必填 **取值范围**: 最小值0，最大值20000 **默认取值**: 不涉及 
         :type host_ids: list[str]
-        :param scan_vul_types: 扫描的漏洞类型列表
+        :param scan_vul_types: **参数解释**: \&quot;扫描的漏洞类型列表\&quot; **约束限制**: 不涉及 **取值范围**: 最小值0，最大值5 **默认取值**: 不涉及 
         :type scan_vul_types: list[str]
-        :param status: 扫描策略状态，包含如下：   -open : 开启   -close : 关闭
+        :param status: **参数解释**: 扫描策略状态 **约束限制**: 不涉及 **取值范围**: - open : 开启 - close : 关闭  **默认取值** : 不涉及 
         :type status: str
+        :param time: 
+        :type time: :class:`huaweicloudsdkhss.v5.ChangeVulScanPolicyRequestInfoTime`
         """
         
         
@@ -54,6 +58,7 @@ class ChangeVulScanPolicyRequestInfo:
         self._host_ids = None
         self._scan_vul_types = None
         self._status = None
+        self._time = None
         self.discriminator = None
 
         self.scan_period = scan_period
@@ -63,12 +68,14 @@ class ChangeVulScanPolicyRequestInfo:
         if scan_vul_types is not None:
             self.scan_vul_types = scan_vul_types
         self.status = status
+        if time is not None:
+            self.time = time
 
     @property
     def scan_period(self):
         r"""Gets the scan_period of this ChangeVulScanPolicyRequestInfo.
 
-        扫描周期 - one_day : 每天 - three_day : 每三天 - one_week : 每周
+        **参数解释**: 扫描周期 **约束限制**: 不涉及 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月 **默认取值**: 不涉及 
 
         :return: The scan_period of this ChangeVulScanPolicyRequestInfo.
         :rtype: str
@@ -79,7 +86,7 @@ class ChangeVulScanPolicyRequestInfo:
     def scan_period(self, scan_period):
         r"""Sets the scan_period of this ChangeVulScanPolicyRequestInfo.
 
-        扫描周期 - one_day : 每天 - three_day : 每三天 - one_week : 每周
+        **参数解释**: 扫描周期 **约束限制**: 不涉及 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月 **默认取值**: 不涉及 
 
         :param scan_period: The scan_period of this ChangeVulScanPolicyRequestInfo.
         :type scan_period: str
@@ -90,7 +97,7 @@ class ChangeVulScanPolicyRequestInfo:
     def scan_range_type(self):
         r"""Gets the scan_range_type of this ChangeVulScanPolicyRequestInfo.
 
-        扫描主机的范围，包含如下：   -all_host : 扫描全部主机   -specific_host : 扫描指定主机
+        **参数解释**: 扫描主机的范围 **约束限制**: 不涉及 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机 **默认取值**: 不涉及 
 
         :return: The scan_range_type of this ChangeVulScanPolicyRequestInfo.
         :rtype: str
@@ -101,7 +108,7 @@ class ChangeVulScanPolicyRequestInfo:
     def scan_range_type(self, scan_range_type):
         r"""Sets the scan_range_type of this ChangeVulScanPolicyRequestInfo.
 
-        扫描主机的范围，包含如下：   -all_host : 扫描全部主机   -specific_host : 扫描指定主机
+        **参数解释**: 扫描主机的范围 **约束限制**: 不涉及 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机 **默认取值**: 不涉及 
 
         :param scan_range_type: The scan_range_type of this ChangeVulScanPolicyRequestInfo.
         :type scan_range_type: str
@@ -112,7 +119,7 @@ class ChangeVulScanPolicyRequestInfo:
     def host_ids(self):
         r"""Gets the host_ids of this ChangeVulScanPolicyRequestInfo.
 
-        主机ID列表；当scan_range_type的值为specific_host时必填
+        **参数解释**: 主机ID列表； **约束限制**: 当scan_range_type的值为specific_host时 表示扫描的主机列表 必填 **取值范围**: 最小值0，最大值20000 **默认取值**: 不涉及 
 
         :return: The host_ids of this ChangeVulScanPolicyRequestInfo.
         :rtype: list[str]
@@ -123,7 +130,7 @@ class ChangeVulScanPolicyRequestInfo:
     def host_ids(self, host_ids):
         r"""Sets the host_ids of this ChangeVulScanPolicyRequestInfo.
 
-        主机ID列表；当scan_range_type的值为specific_host时必填
+        **参数解释**: 主机ID列表； **约束限制**: 当scan_range_type的值为specific_host时 表示扫描的主机列表 必填 **取值范围**: 最小值0，最大值20000 **默认取值**: 不涉及 
 
         :param host_ids: The host_ids of this ChangeVulScanPolicyRequestInfo.
         :type host_ids: list[str]
@@ -134,7 +141,7 @@ class ChangeVulScanPolicyRequestInfo:
     def scan_vul_types(self):
         r"""Gets the scan_vul_types of this ChangeVulScanPolicyRequestInfo.
 
-        扫描的漏洞类型列表
+        **参数解释**: \"扫描的漏洞类型列表\" **约束限制**: 不涉及 **取值范围**: 最小值0，最大值5 **默认取值**: 不涉及 
 
         :return: The scan_vul_types of this ChangeVulScanPolicyRequestInfo.
         :rtype: list[str]
@@ -145,7 +152,7 @@ class ChangeVulScanPolicyRequestInfo:
     def scan_vul_types(self, scan_vul_types):
         r"""Sets the scan_vul_types of this ChangeVulScanPolicyRequestInfo.
 
-        扫描的漏洞类型列表
+        **参数解释**: \"扫描的漏洞类型列表\" **约束限制**: 不涉及 **取值范围**: 最小值0，最大值5 **默认取值**: 不涉及 
 
         :param scan_vul_types: The scan_vul_types of this ChangeVulScanPolicyRequestInfo.
         :type scan_vul_types: list[str]
@@ -156,7 +163,7 @@ class ChangeVulScanPolicyRequestInfo:
     def status(self):
         r"""Gets the status of this ChangeVulScanPolicyRequestInfo.
 
-        扫描策略状态，包含如下：   -open : 开启   -close : 关闭
+        **参数解释**: 扫描策略状态 **约束限制**: 不涉及 **取值范围**: - open : 开启 - close : 关闭  **默认取值** : 不涉及 
 
         :return: The status of this ChangeVulScanPolicyRequestInfo.
         :rtype: str
@@ -167,12 +174,30 @@ class ChangeVulScanPolicyRequestInfo:
     def status(self, status):
         r"""Sets the status of this ChangeVulScanPolicyRequestInfo.
 
-        扫描策略状态，包含如下：   -open : 开启   -close : 关闭
+        **参数解释**: 扫描策略状态 **约束限制**: 不涉及 **取值范围**: - open : 开启 - close : 关闭  **默认取值** : 不涉及 
 
         :param status: The status of this ChangeVulScanPolicyRequestInfo.
         :type status: str
         """
         self._status = status
+
+    @property
+    def time(self):
+        r"""Gets the time of this ChangeVulScanPolicyRequestInfo.
+
+        :return: The time of this ChangeVulScanPolicyRequestInfo.
+        :rtype: :class:`huaweicloudsdkhss.v5.ChangeVulScanPolicyRequestInfoTime`
+        """
+        return self._time
+
+    @time.setter
+    def time(self, time):
+        r"""Sets the time of this ChangeVulScanPolicyRequestInfo.
+
+        :param time: The time of this ChangeVulScanPolicyRequestInfo.
+        :type time: :class:`huaweicloudsdkhss.v5.ChangeVulScanPolicyRequestInfoTime`
+        """
+        self._time = time
 
     def to_dict(self):
         result = {}

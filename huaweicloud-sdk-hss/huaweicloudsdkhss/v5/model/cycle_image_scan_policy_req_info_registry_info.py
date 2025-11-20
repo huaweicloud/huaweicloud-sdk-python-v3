@@ -46,12 +46,9 @@ class CycleImageScanPolicyReqInfoRegistryInfo:
         self._registry_type = None
         self.discriminator = None
 
-        if registry_id is not None:
-            self.registry_id = registry_id
-        if registry_name is not None:
-            self.registry_name = registry_name
-        if registry_type is not None:
-            self.registry_type = registry_type
+        self.registry_id = registry_id
+        self.registry_name = registry_name
+        self.registry_type = registry_type
 
     @property
     def registry_id(self):

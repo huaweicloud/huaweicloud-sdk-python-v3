@@ -38,6 +38,8 @@ from huaweicloudsdklive.v2.model.list_transcode_concurrency_num_request import L
 from huaweicloudsdklive.v2.model.list_transcode_concurrency_num_response import ListTranscodeConcurrencyNumResponse
 from huaweicloudsdklive.v2.model.list_transcode_data_request import ListTranscodeDataRequest
 from huaweicloudsdklive.v2.model.list_transcode_data_response import ListTranscodeDataResponse
+from huaweicloudsdklive.v2.model.list_transcode_task_detail_request import ListTranscodeTaskDetailRequest
+from huaweicloudsdklive.v2.model.list_transcode_task_detail_response import ListTranscodeTaskDetailResponse
 from huaweicloudsdklive.v2.model.list_up_stream_detail_request import ListUpStreamDetailRequest
 from huaweicloudsdklive.v2.model.list_up_stream_detail_response import ListUpStreamDetailResponse
 from huaweicloudsdklive.v2.model.list_users_of_stream_request import ListUsersOfStreamRequest
@@ -60,6 +62,7 @@ from huaweicloudsdklive.v2.model.traffic_data import TrafficData
 from huaweicloudsdklive.v2.model.traffic_summary_data import TrafficSummaryData
 from huaweicloudsdklive.v2.model.transcode_con_num_data import TranscodeConNumData
 from huaweicloudsdklive.v2.model.transcode_data import TranscodeData
+from huaweicloudsdklive.v2.model.transcode_detail_info import TranscodeDetailInfo
 from huaweicloudsdklive.v2.model.transcode_spec import TranscodeSpec
 from huaweicloudsdklive.v2.model.transcode_summary import TranscodeSummary
 from huaweicloudsdklive.v2.model.up_stream_detail import UpStreamDetail

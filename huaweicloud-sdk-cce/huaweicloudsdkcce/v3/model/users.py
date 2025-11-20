@@ -29,7 +29,7 @@ class Users:
 
         The model defined in huaweicloud sdk
 
-        :param name: 当前为固定值“user“。
+        :param name: **参数解释**： 名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： user 
         :type name: str
         :param user: 
         :type user: :class:`huaweicloudsdkcce.v3.User`
@@ -50,7 +50,7 @@ class Users:
     def name(self):
         r"""Gets the name of this Users.
 
-        当前为固定值“user“。
+        **参数解释**： 名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： user 
 
         :return: The name of this Users.
         :rtype: str
@@ -61,7 +61,7 @@ class Users:
     def name(self, name):
         r"""Sets the name of this Users.
 
-        当前为固定值“user“。
+        **参数解释**： 名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： user 
 
         :param name: The name of this Users.
         :type name: str

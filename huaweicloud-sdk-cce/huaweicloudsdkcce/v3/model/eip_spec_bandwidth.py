@@ -29,9 +29,9 @@ class EipSpecBandwidth:
 
         The model defined in huaweicloud sdk
 
-        :param size: 带宽大小
+        :param size: **参数解释**： 带宽大小 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type size: int
-        :param sharetype: 带宽类型
+        :param sharetype: **参数解释**： 带宽大小 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type sharetype: str
         """
         
@@ -50,7 +50,7 @@ class EipSpecBandwidth:
     def size(self):
         r"""Gets the size of this EipSpecBandwidth.
 
-        带宽大小
+        **参数解释**： 带宽大小 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The size of this EipSpecBandwidth.
         :rtype: int
@@ -61,7 +61,7 @@ class EipSpecBandwidth:
     def size(self, size):
         r"""Sets the size of this EipSpecBandwidth.
 
-        带宽大小
+        **参数解释**： 带宽大小 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param size: The size of this EipSpecBandwidth.
         :type size: int
@@ -72,7 +72,7 @@ class EipSpecBandwidth:
     def sharetype(self):
         r"""Gets the sharetype of this EipSpecBandwidth.
 
-        带宽类型
+        **参数解释**： 带宽大小 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The sharetype of this EipSpecBandwidth.
         :rtype: str
@@ -83,7 +83,7 @@ class EipSpecBandwidth:
     def sharetype(self, sharetype):
         r"""Sets the sharetype of this EipSpecBandwidth.
 
-        带宽类型
+        **参数解释**： 带宽大小 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param sharetype: The sharetype of this EipSpecBandwidth.
         :type sharetype: str

@@ -30,9 +30,9 @@ class ResizeClusterResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID
+        :param job_id: **参数解释**： 任务ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type job_id: str
-        :param order_id: 包周期集群变更规格订单ID
+        :param order_id: **参数解释**： 包周期集群变更规格订单ID **约束限制**： v2接口不支持包周期集群规格变更 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type order_id: str
         """
         
@@ -51,7 +51,7 @@ class ResizeClusterResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this ResizeClusterResponse.
 
-        任务ID
+        **参数解释**： 任务ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The job_id of this ResizeClusterResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ResizeClusterResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this ResizeClusterResponse.
 
-        任务ID
+        **参数解释**： 任务ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param job_id: The job_id of this ResizeClusterResponse.
         :type job_id: str
@@ -73,7 +73,7 @@ class ResizeClusterResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this ResizeClusterResponse.
 
-        包周期集群变更规格订单ID
+        **参数解释**： 包周期集群变更规格订单ID **约束限制**： v2接口不支持包周期集群规格变更 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The order_id of this ResizeClusterResponse.
         :rtype: str
@@ -84,7 +84,7 @@ class ResizeClusterResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this ResizeClusterResponse.
 
-        包周期集群变更规格订单ID
+        **参数解释**： 包周期集群变更规格订单ID **约束限制**： v2接口不支持包周期集群规格变更 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param order_id: The order_id of this ResizeClusterResponse.
         :type order_id: str

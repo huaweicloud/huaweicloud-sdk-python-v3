@@ -15,34 +15,41 @@ class UnusedAction:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'str'
+        'action': 'str',
+        'last_accessed': 'object'
     }
 
     attribute_map = {
-        'action': 'action'
+        'action': 'action',
+        'last_accessed': 'last_accessed'
     }
 
-    def __init__(self, action=None):
+    def __init__(self, action=None, last_accessed=None):
         r"""UnusedAction
 
         The model defined in huaweicloud sdk
 
-        :param action: Action 名称。
+        :param action: 授权项名称。
         :type action: str
+        :param last_accessed: 用户使用授权项的最后访问时间。
+        :type last_accessed: object
         """
         
         
 
         self._action = None
+        self._last_accessed = None
         self.discriminator = None
 
         self.action = action
+        if last_accessed is not None:
+            self.last_accessed = last_accessed
 
     @property
     def action(self):
         r"""Gets the action of this UnusedAction.
 
-        Action 名称。
+        授权项名称。
 
         :return: The action of this UnusedAction.
         :rtype: str
@@ -53,12 +60,34 @@ class UnusedAction:
     def action(self, action):
         r"""Sets the action of this UnusedAction.
 
-        Action 名称。
+        授权项名称。
 
         :param action: The action of this UnusedAction.
         :type action: str
         """
         self._action = action
+
+    @property
+    def last_accessed(self):
+        r"""Gets the last_accessed of this UnusedAction.
+
+        用户使用授权项的最后访问时间。
+
+        :return: The last_accessed of this UnusedAction.
+        :rtype: object
+        """
+        return self._last_accessed
+
+    @last_accessed.setter
+    def last_accessed(self, last_accessed):
+        r"""Sets the last_accessed of this UnusedAction.
+
+        用户使用授权项的最后访问时间。
+
+        :param last_accessed: The last_accessed of this UnusedAction.
+        :type last_accessed: object
+        """
+        self._last_accessed = last_accessed
 
     def to_dict(self):
         result = {}

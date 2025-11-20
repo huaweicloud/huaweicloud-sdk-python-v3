@@ -33,13 +33,13 @@ class MasterEIPRequestSpec:
 
         The model defined in huaweicloud sdk
 
-        :param action: 绑定或解绑动作，必选参数。 - 绑定：固定值为{\&quot;action\&quot;:\&quot;bind\&quot;} - 解绑：固定值为{\&quot;action\&quot;:\&quot;unbind\&quot;} 
+        :param action: **参数解释**： 绑定或解绑动作 **约束限制**： 不涉及 **取值范围**： - bind：绑定 - unbind：解绑 **默认取值**： 不涉及 
         :type action: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.MasterEIPRequestSpecSpec`
-        :param bandwidth: 带宽(字段已失效，暂不推荐使用)
+        :param bandwidth: **参数解释**： 带宽(字段已失效，暂不推荐使用) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type bandwidth: str
-        :param elastic_ip: 弹性网卡IP(字段已失效，暂不推荐使用)
+        :param elastic_ip: **参数解释**： 弹性网卡IP(字段已失效，暂不推荐使用) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type elastic_ip: str
         """
         
@@ -64,7 +64,7 @@ class MasterEIPRequestSpec:
     def action(self):
         r"""Gets the action of this MasterEIPRequestSpec.
 
-        绑定或解绑动作，必选参数。 - 绑定：固定值为{\"action\":\"bind\"} - 解绑：固定值为{\"action\":\"unbind\"} 
+        **参数解释**： 绑定或解绑动作 **约束限制**： 不涉及 **取值范围**： - bind：绑定 - unbind：解绑 **默认取值**： 不涉及 
 
         :return: The action of this MasterEIPRequestSpec.
         :rtype: str
@@ -75,7 +75,7 @@ class MasterEIPRequestSpec:
     def action(self, action):
         r"""Sets the action of this MasterEIPRequestSpec.
 
-        绑定或解绑动作，必选参数。 - 绑定：固定值为{\"action\":\"bind\"} - 解绑：固定值为{\"action\":\"unbind\"} 
+        **参数解释**： 绑定或解绑动作 **约束限制**： 不涉及 **取值范围**： - bind：绑定 - unbind：解绑 **默认取值**： 不涉及 
 
         :param action: The action of this MasterEIPRequestSpec.
         :type action: str
@@ -104,7 +104,7 @@ class MasterEIPRequestSpec:
     def bandwidth(self):
         r"""Gets the bandwidth of this MasterEIPRequestSpec.
 
-        带宽(字段已失效，暂不推荐使用)
+        **参数解释**： 带宽(字段已失效，暂不推荐使用) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The bandwidth of this MasterEIPRequestSpec.
         :rtype: str
@@ -115,7 +115,7 @@ class MasterEIPRequestSpec:
     def bandwidth(self, bandwidth):
         r"""Sets the bandwidth of this MasterEIPRequestSpec.
 
-        带宽(字段已失效，暂不推荐使用)
+        **参数解释**： 带宽(字段已失效，暂不推荐使用) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param bandwidth: The bandwidth of this MasterEIPRequestSpec.
         :type bandwidth: str
@@ -126,7 +126,7 @@ class MasterEIPRequestSpec:
     def elastic_ip(self):
         r"""Gets the elastic_ip of this MasterEIPRequestSpec.
 
-        弹性网卡IP(字段已失效，暂不推荐使用)
+        **参数解释**： 弹性网卡IP(字段已失效，暂不推荐使用) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The elastic_ip of this MasterEIPRequestSpec.
         :rtype: str
@@ -137,7 +137,7 @@ class MasterEIPRequestSpec:
     def elastic_ip(self, elastic_ip):
         r"""Sets the elastic_ip of this MasterEIPRequestSpec.
 
-        弹性网卡IP(字段已失效，暂不推荐使用)
+        **参数解释**： 弹性网卡IP(字段已失效，暂不推荐使用) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param elastic_ip: The elastic_ip of this MasterEIPRequestSpec.
         :type elastic_ip: str

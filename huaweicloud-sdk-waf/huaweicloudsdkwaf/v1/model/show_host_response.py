@@ -144,7 +144,7 @@ class ShowHostResponse(SdkResponse):
         :type description: str
         :param http2_enable: 是否支持http2   - true：表示支持http2   - false：表示不支持http2
         :type http2_enable: bool
-        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
         :type exclusive_ip: bool
         :param access_progress: 接入进度，仅用于新版console(前端)使用
         :type access_progress: list[:class:`huaweicloudsdkwaf.v1.AccessProgress`]
@@ -850,7 +850,7 @@ class ShowHostResponse(SdkResponse):
     def exclusive_ip(self):
         r"""Gets the exclusive_ip of this ShowHostResponse.
 
-        是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
 
         :return: The exclusive_ip of this ShowHostResponse.
         :rtype: bool
@@ -861,7 +861,7 @@ class ShowHostResponse(SdkResponse):
     def exclusive_ip(self, exclusive_ip):
         r"""Sets the exclusive_ip of this ShowHostResponse.
 
-        是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
 
         :param exclusive_ip: The exclusive_ip of this ShowHostResponse.
         :type exclusive_ip: bool

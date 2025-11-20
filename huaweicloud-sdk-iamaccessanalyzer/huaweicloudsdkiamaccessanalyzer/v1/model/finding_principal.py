@@ -29,9 +29,9 @@ class FindingPrincipal:
 
         The model defined in huaweicloud sdk
 
-        :param identifier: 外部主体身份的标识符。
+        :param identifier: 主体身份的标识符。
         :type identifier: str
-        :param type: 外部主体身份的类型。
+        :param type: 主体身份的类型。 - all_principal：所有主体 - account：账号 - all_user_in_account： 账号下所有用户 - all_agency_in_account： 账号下所有委托 - all_identity_provider_in_account：账号下所有身份提供商 - specific_user：特定用户 - specific_agency：特定委托 - specific_group：特定用户组 - specific_identity_provider：特定身份提供商 
         :type type: str
         """
         
@@ -48,7 +48,7 @@ class FindingPrincipal:
     def identifier(self):
         r"""Gets the identifier of this FindingPrincipal.
 
-        外部主体身份的标识符。
+        主体身份的标识符。
 
         :return: The identifier of this FindingPrincipal.
         :rtype: str
@@ -59,7 +59,7 @@ class FindingPrincipal:
     def identifier(self, identifier):
         r"""Sets the identifier of this FindingPrincipal.
 
-        外部主体身份的标识符。
+        主体身份的标识符。
 
         :param identifier: The identifier of this FindingPrincipal.
         :type identifier: str
@@ -70,7 +70,7 @@ class FindingPrincipal:
     def type(self):
         r"""Gets the type of this FindingPrincipal.
 
-        外部主体身份的类型。
+        主体身份的类型。 - all_principal：所有主体 - account：账号 - all_user_in_account： 账号下所有用户 - all_agency_in_account： 账号下所有委托 - all_identity_provider_in_account：账号下所有身份提供商 - specific_user：特定用户 - specific_agency：特定委托 - specific_group：特定用户组 - specific_identity_provider：特定身份提供商 
 
         :return: The type of this FindingPrincipal.
         :rtype: str
@@ -81,7 +81,7 @@ class FindingPrincipal:
     def type(self, type):
         r"""Sets the type of this FindingPrincipal.
 
-        外部主体身份的类型。
+        主体身份的类型。 - all_principal：所有主体 - account：账号 - all_user_in_account： 账号下所有用户 - all_agency_in_account： 账号下所有委托 - all_identity_provider_in_account：账号下所有身份提供商 - specific_user：特定用户 - specific_agency：特定委托 - specific_group：特定用户组 - specific_identity_provider：特定身份提供商 
 
         :param type: The type of this FindingPrincipal.
         :type type: str

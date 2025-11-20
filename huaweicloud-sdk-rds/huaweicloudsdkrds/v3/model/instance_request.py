@@ -43,7 +43,8 @@ class InstanceRequest:
         'dry_run': 'bool',
         'count': 'int',
         'serverless_info': 'ServerlessInfo',
-        'is_auto_upgrade': 'bool'
+        'is_auto_upgrade': 'bool',
+        'auto_enlarge_strategy': 'AutoEnlargeStrategyForConsoleApi'
     }
 
     attribute_map = {
@@ -75,10 +76,11 @@ class InstanceRequest:
         'dry_run': 'dry_run',
         'count': 'count',
         'serverless_info': 'serverless_info',
-        'is_auto_upgrade': 'is_auto_upgrade'
+        'is_auto_upgrade': 'is_auto_upgrade',
+        'auto_enlarge_strategy': 'auto_enlarge_strategy'
     }
 
-    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None, unchangeable_param=None, dry_run=None, count=None, serverless_info=None, is_auto_upgrade=None):
+    def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, data_vip=None, security_group_id=None, charge_info=None, time_zone=None, dsspool_id=None, replica_of_id=None, restore_point=None, collation=None, tags=None, unchangeable_param=None, dry_run=None, count=None, serverless_info=None, is_auto_upgrade=None, auto_enlarge_strategy=None):
         r"""InstanceRequest
 
         The model defined in huaweicloud sdk
@@ -141,6 +143,8 @@ class InstanceRequest:
         :type serverless_info: :class:`huaweicloudsdkrds.v3.ServerlessInfo`
         :param is_auto_upgrade: 是否开启自动小版本升级，默认为false，仅支持PostgreSQL。 - true：开启自动小版本升级。 - false：不开启自动小版本升级。
         :type is_auto_upgrade: bool
+        :param auto_enlarge_strategy: 
+        :type auto_enlarge_strategy: :class:`huaweicloudsdkrds.v3.AutoEnlargeStrategyForConsoleApi`
         """
         
         
@@ -174,6 +178,7 @@ class InstanceRequest:
         self._count = None
         self._serverless_info = None
         self._is_auto_upgrade = None
+        self._auto_enlarge_strategy = None
         self.discriminator = None
 
         self.name = name
@@ -225,6 +230,8 @@ class InstanceRequest:
             self.serverless_info = serverless_info
         if is_auto_upgrade is not None:
             self.is_auto_upgrade = is_auto_upgrade
+        if auto_enlarge_strategy is not None:
+            self.auto_enlarge_strategy = auto_enlarge_strategy
 
     @property
     def name(self):
@@ -831,6 +838,24 @@ class InstanceRequest:
         :type is_auto_upgrade: bool
         """
         self._is_auto_upgrade = is_auto_upgrade
+
+    @property
+    def auto_enlarge_strategy(self):
+        r"""Gets the auto_enlarge_strategy of this InstanceRequest.
+
+        :return: The auto_enlarge_strategy of this InstanceRequest.
+        :rtype: :class:`huaweicloudsdkrds.v3.AutoEnlargeStrategyForConsoleApi`
+        """
+        return self._auto_enlarge_strategy
+
+    @auto_enlarge_strategy.setter
+    def auto_enlarge_strategy(self, auto_enlarge_strategy):
+        r"""Sets the auto_enlarge_strategy of this InstanceRequest.
+
+        :param auto_enlarge_strategy: The auto_enlarge_strategy of this InstanceRequest.
+        :type auto_enlarge_strategy: :class:`huaweicloudsdkrds.v3.AutoEnlargeStrategyForConsoleApi`
+        """
+        self._auto_enlarge_strategy = auto_enlarge_strategy
 
     def to_dict(self):
         result = {}

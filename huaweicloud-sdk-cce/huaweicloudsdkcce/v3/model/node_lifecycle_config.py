@@ -31,9 +31,9 @@ class NodeLifecycleConfig:
 
         The model defined in huaweicloud sdk
 
-        :param pre_install: **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： &#x60;&#x60;&#x60; echo -n \&quot;待编码内容\&quot; | base64 &#x60;&#x60;&#x60;  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :param pre_install: **参数解释**： 安装前执行脚本。 **约束限制**： 安装前/后执行脚本统一计算字符，转码后的字符总数不能超过10240。 输入的值需要经过Base64编码，方法如下：   &#x60;&#x60;&#x60;   echo -n \&quot;待编码内容\&quot; | base64   &#x60;&#x60;&#x60; **取值范围**： 不涉及 **默认取值**： 不涉及
         :type pre_install: str
-        :param post_install: **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： &#x60;&#x60;&#x60; echo -n \&quot;待编码内容\&quot; | base64 &#x60;&#x60;&#x60;  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :param post_install: **参数解释**： 安装前执行脚本。 **约束限制**： 安装前/后执行脚本统一计算字符，转码后的字符总数不能超过10240。 输入的值需要经过Base64编码，方法如下：   &#x60;&#x60;&#x60;   echo -n \&quot;待编码内容\&quot; | base64   &#x60;&#x60;&#x60; **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type post_install: str
         :param wait_post_install_finish: **参数解释：** 该参数用于控制重置/纳管/批量重置节点时， **post-install脚本执行完成前允许节点调度** 的行为。当操作的节点属于节点池时，以节点池相关配置为准。当该参数未设置或者为false时，在kubernetes节点就绪时，容器即可被调度到可用节点。当该参数为true时，在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **约束限制：** 不涉及  **取值范围：** - false：在kubernetes节点就绪时，容器即可被调度到可用节点。           - true：在kubernetes节点就绪时且post-install脚本执行完成时，容器才可被调度到可用节点。  **默认取值：** false
         :type wait_post_install_finish: bool
@@ -57,7 +57,7 @@ class NodeLifecycleConfig:
     def pre_install(self):
         r"""Gets the pre_install of this NodeLifecycleConfig.
 
-        **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： ``` echo -n \"待编码内容\" | base64 ```  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 安装前执行脚本。 **约束限制**： 安装前/后执行脚本统一计算字符，转码后的字符总数不能超过10240。 输入的值需要经过Base64编码，方法如下：   ```   echo -n \"待编码内容\" | base64   ``` **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The pre_install of this NodeLifecycleConfig.
         :rtype: str
@@ -68,7 +68,7 @@ class NodeLifecycleConfig:
     def pre_install(self, pre_install):
         r"""Sets the pre_install of this NodeLifecycleConfig.
 
-        **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： ``` echo -n \"待编码内容\" | base64 ```  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 安装前执行脚本。 **约束限制**： 安装前/后执行脚本统一计算字符，转码后的字符总数不能超过10240。 输入的值需要经过Base64编码，方法如下：   ```   echo -n \"待编码内容\" | base64   ``` **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param pre_install: The pre_install of this NodeLifecycleConfig.
         :type pre_install: str
@@ -79,7 +79,7 @@ class NodeLifecycleConfig:
     def post_install(self):
         r"""Gets the post_install of this NodeLifecycleConfig.
 
-        **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： ``` echo -n \"待编码内容\" | base64 ```  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        **参数解释**： 安装前执行脚本。 **约束限制**： 安装前/后执行脚本统一计算字符，转码后的字符总数不能超过10240。 输入的值需要经过Base64编码，方法如下：   ```   echo -n \"待编码内容\" | base64   ``` **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The post_install of this NodeLifecycleConfig.
         :rtype: str
@@ -90,7 +90,7 @@ class NodeLifecycleConfig:
     def post_install(self, post_install):
         r"""Sets the post_install of this NodeLifecycleConfig.
 
-        **参数解释**： 安装前执行脚本。安装前/后执行脚本统一计算字符，输入的值需要经过Base64编码，方法如下： ``` echo -n \"待编码内容\" | base64 ```  **约束限制**： 长度不能超过10240字节。 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        **参数解释**： 安装前执行脚本。 **约束限制**： 安装前/后执行脚本统一计算字符，转码后的字符总数不能超过10240。 输入的值需要经过Base64编码，方法如下：   ```   echo -n \"待编码内容\" | base64   ``` **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param post_install: The post_install of this NodeLifecycleConfig.
         :type post_install: str

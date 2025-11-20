@@ -31,7 +31,7 @@ class RemoveNodesSpec:
 
         :param login: 
         :type login: :class:`huaweicloudsdkcce.v3.Login`
-        :param nodes: 待操作节点列表
+        :param nodes: **参数解释**： 待操作节点列表，当前最多支持同时移除200个节点。 **约束限制**： 不涉及 
         :type nodes: list[:class:`huaweicloudsdkcce.v3.NodeItem`]
         """
         
@@ -67,7 +67,7 @@ class RemoveNodesSpec:
     def nodes(self):
         r"""Gets the nodes of this RemoveNodesSpec.
 
-        待操作节点列表
+        **参数解释**： 待操作节点列表，当前最多支持同时移除200个节点。 **约束限制**： 不涉及 
 
         :return: The nodes of this RemoveNodesSpec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.NodeItem`]
@@ -78,7 +78,7 @@ class RemoveNodesSpec:
     def nodes(self, nodes):
         r"""Sets the nodes of this RemoveNodesSpec.
 
-        待操作节点列表
+        **参数解释**： 待操作节点列表，当前最多支持同时移除200个节点。 **约束限制**： 不涉及 
 
         :param nodes: The nodes of this RemoveNodesSpec.
         :type nodes: list[:class:`huaweicloudsdkcce.v3.NodeItem`]

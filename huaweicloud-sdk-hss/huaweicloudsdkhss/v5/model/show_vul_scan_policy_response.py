@@ -21,7 +21,8 @@ class ShowVulScanPolicyResponse(SdkResponse):
         'scan_range_type': 'str',
         'host_ids': 'list[str]',
         'total_host_num': 'int',
-        'status': 'str'
+        'status': 'str',
+        'time': 'VulScanPolicyResponseInfoTime'
     }
 
     attribute_map = {
@@ -30,26 +31,29 @@ class ShowVulScanPolicyResponse(SdkResponse):
         'scan_range_type': 'scan_range_type',
         'host_ids': 'host_ids',
         'total_host_num': 'total_host_num',
-        'status': 'status'
+        'status': 'status',
+        'time': 'time'
     }
 
-    def __init__(self, scan_period=None, scan_vul_types=None, scan_range_type=None, host_ids=None, total_host_num=None, status=None):
+    def __init__(self, scan_period=None, scan_vul_types=None, scan_range_type=None, host_ids=None, total_host_num=None, status=None, time=None):
         r"""ShowVulScanPolicyResponse
 
         The model defined in huaweicloud sdk
 
-        :param scan_period: 扫描周期 - one_day : 每天 - three_day : 每三天 - one_week : 每周
+        :param scan_period: **参数解释**: 扫描周期 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月 
         :type scan_period: str
-        :param scan_vul_types: 扫描的漏洞类型列表
+        :param scan_vul_types: **参数解释**: \&quot;扫描的漏洞类型列表\&quot; **取值范围**: 最小值0，最大值5 
         :type scan_vul_types: list[str]
-        :param scan_range_type: 扫描主机的范围，包含如下：   -all_host : 扫描全部主机   -specific_host : 扫描指定主机
+        :param scan_range_type: **参数解释**: 扫描主机的范围 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机 
         :type scan_range_type: str
-        :param host_ids: 主机ID列表；当scan_range_type的值为specific_host时表示扫描的主机列表
+        :param host_ids: **参数解释**: 主机ID列表；当scan_range_type的值为specific_host时表示扫描的主机列表 **取值范围**: 最小值0，最大值20000 
         :type host_ids: list[str]
-        :param total_host_num: 可进行漏洞扫描的主机总数
+        :param total_host_num: **参数解释**: 可进行漏洞扫描的主机总数 **取值范围**: 最小值0，最大值20000 
         :type total_host_num: int
-        :param status: 扫描策略状态，包含如下：   -open : 开启   -close : 关闭
+        :param status: **参数解释**: 扫描策略状态 **取值范围**: - open : 开启 - close : 关闭 
         :type status: str
+        :param time: 
+        :type time: :class:`huaweicloudsdkhss.v5.VulScanPolicyResponseInfoTime`
         """
         
         super().__init__()
@@ -60,6 +64,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
         self._host_ids = None
         self._total_host_num = None
         self._status = None
+        self._time = None
         self.discriminator = None
 
         if scan_period is not None:
@@ -74,12 +79,14 @@ class ShowVulScanPolicyResponse(SdkResponse):
             self.total_host_num = total_host_num
         if status is not None:
             self.status = status
+        if time is not None:
+            self.time = time
 
     @property
     def scan_period(self):
         r"""Gets the scan_period of this ShowVulScanPolicyResponse.
 
-        扫描周期 - one_day : 每天 - three_day : 每三天 - one_week : 每周
+        **参数解释**: 扫描周期 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月 
 
         :return: The scan_period of this ShowVulScanPolicyResponse.
         :rtype: str
@@ -90,7 +97,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def scan_period(self, scan_period):
         r"""Sets the scan_period of this ShowVulScanPolicyResponse.
 
-        扫描周期 - one_day : 每天 - three_day : 每三天 - one_week : 每周
+        **参数解释**: 扫描周期 **取值范围**: - one_day：每天 - three_day：每三天 - one_week：每周 - one_month：每月 
 
         :param scan_period: The scan_period of this ShowVulScanPolicyResponse.
         :type scan_period: str
@@ -101,7 +108,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def scan_vul_types(self):
         r"""Gets the scan_vul_types of this ShowVulScanPolicyResponse.
 
-        扫描的漏洞类型列表
+        **参数解释**: \"扫描的漏洞类型列表\" **取值范围**: 最小值0，最大值5 
 
         :return: The scan_vul_types of this ShowVulScanPolicyResponse.
         :rtype: list[str]
@@ -112,7 +119,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def scan_vul_types(self, scan_vul_types):
         r"""Sets the scan_vul_types of this ShowVulScanPolicyResponse.
 
-        扫描的漏洞类型列表
+        **参数解释**: \"扫描的漏洞类型列表\" **取值范围**: 最小值0，最大值5 
 
         :param scan_vul_types: The scan_vul_types of this ShowVulScanPolicyResponse.
         :type scan_vul_types: list[str]
@@ -123,7 +130,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def scan_range_type(self):
         r"""Gets the scan_range_type of this ShowVulScanPolicyResponse.
 
-        扫描主机的范围，包含如下：   -all_host : 扫描全部主机   -specific_host : 扫描指定主机
+        **参数解释**: 扫描主机的范围 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机 
 
         :return: The scan_range_type of this ShowVulScanPolicyResponse.
         :rtype: str
@@ -134,7 +141,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def scan_range_type(self, scan_range_type):
         r"""Sets the scan_range_type of this ShowVulScanPolicyResponse.
 
-        扫描主机的范围，包含如下：   -all_host : 扫描全部主机   -specific_host : 扫描指定主机
+        **参数解释**: 扫描主机的范围 **取值范围**: - all_host：扫描全部主机 - specific_host：扫描指定主机 
 
         :param scan_range_type: The scan_range_type of this ShowVulScanPolicyResponse.
         :type scan_range_type: str
@@ -145,7 +152,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def host_ids(self):
         r"""Gets the host_ids of this ShowVulScanPolicyResponse.
 
-        主机ID列表；当scan_range_type的值为specific_host时表示扫描的主机列表
+        **参数解释**: 主机ID列表；当scan_range_type的值为specific_host时表示扫描的主机列表 **取值范围**: 最小值0，最大值20000 
 
         :return: The host_ids of this ShowVulScanPolicyResponse.
         :rtype: list[str]
@@ -156,7 +163,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def host_ids(self, host_ids):
         r"""Sets the host_ids of this ShowVulScanPolicyResponse.
 
-        主机ID列表；当scan_range_type的值为specific_host时表示扫描的主机列表
+        **参数解释**: 主机ID列表；当scan_range_type的值为specific_host时表示扫描的主机列表 **取值范围**: 最小值0，最大值20000 
 
         :param host_ids: The host_ids of this ShowVulScanPolicyResponse.
         :type host_ids: list[str]
@@ -167,7 +174,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def total_host_num(self):
         r"""Gets the total_host_num of this ShowVulScanPolicyResponse.
 
-        可进行漏洞扫描的主机总数
+        **参数解释**: 可进行漏洞扫描的主机总数 **取值范围**: 最小值0，最大值20000 
 
         :return: The total_host_num of this ShowVulScanPolicyResponse.
         :rtype: int
@@ -178,7 +185,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def total_host_num(self, total_host_num):
         r"""Sets the total_host_num of this ShowVulScanPolicyResponse.
 
-        可进行漏洞扫描的主机总数
+        **参数解释**: 可进行漏洞扫描的主机总数 **取值范围**: 最小值0，最大值20000 
 
         :param total_host_num: The total_host_num of this ShowVulScanPolicyResponse.
         :type total_host_num: int
@@ -189,7 +196,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowVulScanPolicyResponse.
 
-        扫描策略状态，包含如下：   -open : 开启   -close : 关闭
+        **参数解释**: 扫描策略状态 **取值范围**: - open : 开启 - close : 关闭 
 
         :return: The status of this ShowVulScanPolicyResponse.
         :rtype: str
@@ -200,12 +207,30 @@ class ShowVulScanPolicyResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowVulScanPolicyResponse.
 
-        扫描策略状态，包含如下：   -open : 开启   -close : 关闭
+        **参数解释**: 扫描策略状态 **取值范围**: - open : 开启 - close : 关闭 
 
         :param status: The status of this ShowVulScanPolicyResponse.
         :type status: str
         """
         self._status = status
+
+    @property
+    def time(self):
+        r"""Gets the time of this ShowVulScanPolicyResponse.
+
+        :return: The time of this ShowVulScanPolicyResponse.
+        :rtype: :class:`huaweicloudsdkhss.v5.VulScanPolicyResponseInfoTime`
+        """
+        return self._time
+
+    @time.setter
+    def time(self, time):
+        r"""Sets the time of this ShowVulScanPolicyResponse.
+
+        :param time: The time of this ShowVulScanPolicyResponse.
+        :type time: :class:`huaweicloudsdkhss.v5.VulScanPolicyResponseInfoTime`
+        """
+        self._time = time
 
     def to_dict(self):
         import warnings

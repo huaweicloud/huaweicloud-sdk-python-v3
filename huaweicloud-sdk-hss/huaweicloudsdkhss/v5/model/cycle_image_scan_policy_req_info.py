@@ -61,18 +61,12 @@ class CycleImageScanPolicyReqInfo:
         self._registry_info = None
         self.discriminator = None
 
-        if enabled is not None:
-            self.enabled = enabled
-        if scan_cycle is not None:
-            self.scan_cycle = scan_cycle
-        if scan_scope is not None:
-            self.scan_scope = scan_scope
-        if rate_limit is not None:
-            self.rate_limit = rate_limit
-        if time_scope is not None:
-            self.time_scope = time_scope
-        if registry_info is not None:
-            self.registry_info = registry_info
+        self.enabled = enabled
+        self.scan_cycle = scan_cycle
+        self.scan_scope = scan_scope
+        self.rate_limit = rate_limit
+        self.time_scope = time_scope
+        self.registry_info = registry_info
 
     @property
     def enabled(self):

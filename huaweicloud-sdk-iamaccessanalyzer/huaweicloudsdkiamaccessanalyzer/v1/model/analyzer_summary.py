@@ -21,6 +21,7 @@ class AnalyzerSummary:
         'id': 'str',
         'last_analyzed_resource': 'str',
         'last_resource_analyzed_at': 'datetime',
+        'last_all_analyzed_at': 'datetime',
         'name': 'str',
         'organization_id': 'str',
         'status': 'str',
@@ -36,6 +37,7 @@ class AnalyzerSummary:
         'id': 'id',
         'last_analyzed_resource': 'last_analyzed_resource',
         'last_resource_analyzed_at': 'last_resource_analyzed_at',
+        'last_all_analyzed_at': 'last_all_analyzed_at',
         'name': 'name',
         'organization_id': 'organization_id',
         'status': 'status',
@@ -45,7 +47,7 @@ class AnalyzerSummary:
         'urn': 'urn'
     }
 
-    def __init__(self, configuration=None, created_at=None, id=None, last_analyzed_resource=None, last_resource_analyzed_at=None, name=None, organization_id=None, status=None, status_reason=None, tags=None, type=None, urn=None):
+    def __init__(self, configuration=None, created_at=None, id=None, last_analyzed_resource=None, last_resource_analyzed_at=None, last_all_analyzed_at=None, name=None, organization_id=None, status=None, status_reason=None, tags=None, type=None, urn=None):
         r"""AnalyzerSummary
 
         The model defined in huaweicloud sdk
@@ -60,11 +62,13 @@ class AnalyzerSummary:
         :type last_analyzed_resource: str
         :param last_resource_analyzed_at: 最近一次分析资源的时间。
         :type last_resource_analyzed_at: datetime
+        :param last_all_analyzed_at: 最近一次分析全量资源的时间。
+        :type last_all_analyzed_at: datetime
         :param name: 分析器的名称。
         :type name: str
         :param organization_id: 组织ID。
         :type organization_id: str
-        :param status: 分析器的状态。
+        :param status: 分析器的状态。 - active：激活 - creating：创建中 - disabled：禁用 - failed：创建失败 
         :type status: str
         :param status_reason: 
         :type status_reason: :class:`huaweicloudsdkiamaccessanalyzer.v1.StatusReason`
@@ -83,6 +87,7 @@ class AnalyzerSummary:
         self._id = None
         self._last_analyzed_resource = None
         self._last_resource_analyzed_at = None
+        self._last_all_analyzed_at = None
         self._name = None
         self._organization_id = None
         self._status = None
@@ -100,6 +105,8 @@ class AnalyzerSummary:
             self.last_analyzed_resource = last_analyzed_resource
         if last_resource_analyzed_at is not None:
             self.last_resource_analyzed_at = last_resource_analyzed_at
+        if last_all_analyzed_at is not None:
+            self.last_all_analyzed_at = last_all_analyzed_at
         self.name = name
         if organization_id is not None:
             self.organization_id = organization_id
@@ -218,6 +225,28 @@ class AnalyzerSummary:
         self._last_resource_analyzed_at = last_resource_analyzed_at
 
     @property
+    def last_all_analyzed_at(self):
+        r"""Gets the last_all_analyzed_at of this AnalyzerSummary.
+
+        最近一次分析全量资源的时间。
+
+        :return: The last_all_analyzed_at of this AnalyzerSummary.
+        :rtype: datetime
+        """
+        return self._last_all_analyzed_at
+
+    @last_all_analyzed_at.setter
+    def last_all_analyzed_at(self, last_all_analyzed_at):
+        r"""Sets the last_all_analyzed_at of this AnalyzerSummary.
+
+        最近一次分析全量资源的时间。
+
+        :param last_all_analyzed_at: The last_all_analyzed_at of this AnalyzerSummary.
+        :type last_all_analyzed_at: datetime
+        """
+        self._last_all_analyzed_at = last_all_analyzed_at
+
+    @property
     def name(self):
         r"""Gets the name of this AnalyzerSummary.
 
@@ -265,7 +294,7 @@ class AnalyzerSummary:
     def status(self):
         r"""Gets the status of this AnalyzerSummary.
 
-        分析器的状态。
+        分析器的状态。 - active：激活 - creating：创建中 - disabled：禁用 - failed：创建失败 
 
         :return: The status of this AnalyzerSummary.
         :rtype: str
@@ -276,7 +305,7 @@ class AnalyzerSummary:
     def status(self, status):
         r"""Sets the status of this AnalyzerSummary.
 
-        分析器的状态。
+        分析器的状态。 - active：激活 - creating：创建中 - disabled：禁用 - failed：创建失败 
 
         :param status: The status of this AnalyzerSummary.
         :type status: str

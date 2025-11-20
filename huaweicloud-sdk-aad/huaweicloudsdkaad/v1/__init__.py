@@ -26,8 +26,8 @@ from huaweicloudsdkaad.v1.model.block_list_blocking_list import BlockListBlockin
 from huaweicloudsdkaad.v1.model.bw import Bw
 from huaweicloudsdkaad.v1.model.cad_domain_switch_request import CadDomainSwitchRequest
 from huaweicloudsdkaad.v1.model.certificate_body import CertificateBody
-from huaweicloudsdkaad.v1.model.create_aad_domain_request import CreateAadDomainRequest
-from huaweicloudsdkaad.v1.model.create_aad_domain_response import CreateAadDomainResponse
+from huaweicloudsdkaad.v1.model.create_domain_request import CreateDomainRequest
+from huaweicloudsdkaad.v1.model.create_domain_response import CreateDomainResponse
 from huaweicloudsdkaad.v1.model.create_policy_request import CreatePolicyRequest
 from huaweicloudsdkaad.v1.model.create_policy_request_body import CreatePolicyRequestBody
 from huaweicloudsdkaad.v1.model.create_policy_response import CreatePolicyResponse

@@ -18,17 +18,19 @@ class StartResourceScanReqBody:
         'resource_id': 'str',
         'resource_owner_account': 'str',
         'resource_project_id': 'str',
-        'resource_urn': 'str'
+        'resource_urn': 'str',
+        'finding_type': 'FindingType'
     }
 
     attribute_map = {
         'resource_id': 'resource_id',
         'resource_owner_account': 'resource_owner_account',
         'resource_project_id': 'resource_project_id',
-        'resource_urn': 'resource_urn'
+        'resource_urn': 'resource_urn',
+        'finding_type': 'finding_type'
     }
 
-    def __init__(self, resource_id=None, resource_owner_account=None, resource_project_id=None, resource_urn=None):
+    def __init__(self, resource_id=None, resource_owner_account=None, resource_project_id=None, resource_urn=None, finding_type=None):
         r"""StartResourceScanReqBody
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class StartResourceScanReqBody:
         :type resource_project_id: str
         :param resource_urn: 资源的唯一资源标识符。
         :type resource_urn: str
+        :param finding_type: 
+        :type finding_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
         """
         
         
@@ -49,6 +53,7 @@ class StartResourceScanReqBody:
         self._resource_owner_account = None
         self._resource_project_id = None
         self._resource_urn = None
+        self._finding_type = None
         self.discriminator = None
 
         if resource_id is not None:
@@ -57,6 +62,8 @@ class StartResourceScanReqBody:
         if resource_project_id is not None:
             self.resource_project_id = resource_project_id
         self.resource_urn = resource_urn
+        if finding_type is not None:
+            self.finding_type = finding_type
 
     @property
     def resource_id(self):
@@ -145,6 +152,24 @@ class StartResourceScanReqBody:
         :type resource_urn: str
         """
         self._resource_urn = resource_urn
+
+    @property
+    def finding_type(self):
+        r"""Gets the finding_type of this StartResourceScanReqBody.
+
+        :return: The finding_type of this StartResourceScanReqBody.
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
+        """
+        return self._finding_type
+
+    @finding_type.setter
+    def finding_type(self, finding_type):
+        r"""Sets the finding_type of this StartResourceScanReqBody.
+
+        :param finding_type: The finding_type of this StartResourceScanReqBody.
+        :type finding_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
+        """
+        self._finding_type = finding_type
 
     def to_dict(self):
         result = {}

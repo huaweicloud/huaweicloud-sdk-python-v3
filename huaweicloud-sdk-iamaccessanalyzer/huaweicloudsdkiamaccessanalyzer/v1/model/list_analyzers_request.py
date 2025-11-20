@@ -35,7 +35,7 @@ class ListAnalyzersRequest:
         :type limit: int
         :param marker: 页面标记。
         :type marker: str
-        :param type: 分析器的类型。
+        :param type: 分析器的类型。 - account：账号级外部访问分析器 - organization：组织级外部访问分析器 - account_unused_access：账号级未使用访问分析器 - organization_unused_access：组织级未使用访问分析器 - account_privilege_escalation：账号级提权访问分析器 - account_iam_best_practice：账号级IAM最佳实践分析器 
         :type type: str
         """
         
@@ -101,7 +101,7 @@ class ListAnalyzersRequest:
     def type(self):
         r"""Gets the type of this ListAnalyzersRequest.
 
-        分析器的类型。
+        分析器的类型。 - account：账号级外部访问分析器 - organization：组织级外部访问分析器 - account_unused_access：账号级未使用访问分析器 - organization_unused_access：组织级未使用访问分析器 - account_privilege_escalation：账号级提权访问分析器 - account_iam_best_practice：账号级IAM最佳实践分析器 
 
         :return: The type of this ListAnalyzersRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class ListAnalyzersRequest:
     def type(self, type):
         r"""Sets the type of this ListAnalyzersRequest.
 
-        分析器的类型。
+        分析器的类型。 - account：账号级外部访问分析器 - organization：组织级外部访问分析器 - account_unused_access：账号级未使用访问分析器 - organization_unused_access：组织级未使用访问分析器 - account_privilege_escalation：账号级提权访问分析器 - account_iam_best_practice：账号级IAM最佳实践分析器 
 
         :param type: The type of this ListAnalyzersRequest.
         :type type: str

@@ -49,8 +49,7 @@ class ModifyLoginWhiteIpRequestBody:
         if enabled is not None:
             self.enabled = enabled
         self.white_ip = white_ip
-        if host_id_list is not None:
-            self.host_id_list = host_id_list
+        self.host_id_list = host_id_list
 
     @property
     def enabled(self):

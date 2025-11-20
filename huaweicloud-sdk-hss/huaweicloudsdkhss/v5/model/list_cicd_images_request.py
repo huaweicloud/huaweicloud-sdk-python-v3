@@ -36,7 +36,8 @@ class ListCicdImagesRequest:
         'has_unsafe_setting': 'bool',
         'has_vul': 'bool',
         'severity_level': 'str',
-        'risky': 'bool'
+        'risky': 'bool',
+        'pipeline_type': 'str'
     }
 
     attribute_map = {
@@ -61,10 +62,11 @@ class ListCicdImagesRequest:
         'has_unsafe_setting': 'has_unsafe_setting',
         'has_vul': 'has_vul',
         'severity_level': 'severity_level',
-        'risky': 'risky'
+        'risky': 'risky',
+        'pipeline_type': 'pipeline_type'
     }
 
-    def __init__(self, enterprise_project_id=None, namespace=None, image_name=None, image_version=None, sort_key=None, sort_dir=None, limit=None, offset=None, image_id=None, cicd_name=None, latest_version=None, image_size=None, scan_status=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None, has_malicious_file=None, has_unsafe_setting=None, has_vul=None, severity_level=None, risky=None):
+    def __init__(self, enterprise_project_id=None, namespace=None, image_name=None, image_version=None, sort_key=None, sort_dir=None, limit=None, offset=None, image_id=None, cicd_name=None, latest_version=None, image_size=None, scan_status=None, start_latest_update_time=None, end_latest_update_time=None, start_latest_scan_time=None, end_latest_scan_time=None, has_malicious_file=None, has_unsafe_setting=None, has_vul=None, severity_level=None, risky=None, pipeline_type=None):
         r"""ListCicdImagesRequest
 
         The model defined in huaweicloud sdk
@@ -113,6 +115,8 @@ class ListCicdImagesRequest:
         :type severity_level: str
         :param risky: **参数解释**: 有安全风险 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
         :type risky: bool
+        :param pipeline_type: **参数解释**: 流水线类型 **约束限制**: 不涉及 **取值范围**: - jenkins：Jenkins流水线。 - codearts：CodeArts流水线。  **默认取值**: 不涉及 
+        :type pipeline_type: str
         """
         
         
@@ -139,6 +143,7 @@ class ListCicdImagesRequest:
         self._has_vul = None
         self._severity_level = None
         self._risky = None
+        self._pipeline_type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -185,6 +190,8 @@ class ListCicdImagesRequest:
             self.severity_level = severity_level
         if risky is not None:
             self.risky = risky
+        if pipeline_type is not None:
+            self.pipeline_type = pipeline_type
 
     @property
     def enterprise_project_id(self):
@@ -669,6 +676,28 @@ class ListCicdImagesRequest:
         :type risky: bool
         """
         self._risky = risky
+
+    @property
+    def pipeline_type(self):
+        r"""Gets the pipeline_type of this ListCicdImagesRequest.
+
+        **参数解释**: 流水线类型 **约束限制**: 不涉及 **取值范围**: - jenkins：Jenkins流水线。 - codearts：CodeArts流水线。  **默认取值**: 不涉及 
+
+        :return: The pipeline_type of this ListCicdImagesRequest.
+        :rtype: str
+        """
+        return self._pipeline_type
+
+    @pipeline_type.setter
+    def pipeline_type(self, pipeline_type):
+        r"""Sets the pipeline_type of this ListCicdImagesRequest.
+
+        **参数解释**: 流水线类型 **约束限制**: 不涉及 **取值范围**: - jenkins：Jenkins流水线。 - codearts：CodeArts流水线。  **默认取值**: 不涉及 
+
+        :param pipeline_type: The pipeline_type of this ListCicdImagesRequest.
+        :type pipeline_type: str
+        """
+        self._pipeline_type = pipeline_type
 
     def to_dict(self):
         result = {}

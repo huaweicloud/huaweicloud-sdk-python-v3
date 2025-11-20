@@ -29,7 +29,7 @@ class Clusters:
 
         The model defined in huaweicloud sdk
 
-        :param name: 集群名字。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internalCluster”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的cluster的name的值为“externalCluster”。 
+        :param name: **参数解释**： 集群名字。 **约束限制**： 不涉及 **取值范围**： - internalCluster：私网访问的集群 - externalCluster：公网访问的集群  **默认取值**： - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internalCluster”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的cluster的name的值为“externalCluster”。 
         :type name: str
         :param cluster: 
         :type cluster: :class:`huaweicloudsdkcce.v3.ClusterCert`
@@ -50,7 +50,7 @@ class Clusters:
     def name(self):
         r"""Gets the name of this Clusters.
 
-        集群名字。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internalCluster”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的cluster的name的值为“externalCluster”。 
+        **参数解释**： 集群名字。 **约束限制**： 不涉及 **取值范围**： - internalCluster：私网访问的集群 - externalCluster：公网访问的集群  **默认取值**： - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internalCluster”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的cluster的name的值为“externalCluster”。 
 
         :return: The name of this Clusters.
         :rtype: str
@@ -61,7 +61,7 @@ class Clusters:
     def name(self, name):
         r"""Sets the name of this Clusters.
 
-        集群名字。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internalCluster”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的cluster的name的值为“externalCluster”。 
+        **参数解释**： 集群名字。 **约束限制**： 不涉及 **取值范围**： - internalCluster：私网访问的集群 - externalCluster：公网访问的集群  **默认取值**： - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internalCluster”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的cluster的name的值为“externalCluster”。 
 
         :param name: The name of this Clusters.
         :type name: str

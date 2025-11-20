@@ -53,7 +53,7 @@ class ReinstallNodeSpec:
         :type os: str
         :param login: 
         :type login: :class:`huaweicloudsdkcce.v3.Login`
-        :param name: **参数解释**： 节点名称，重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 **约束限制**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)、点(.)组成，长度范围1-56位。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :param name: **参数解释**： 节点名称 &gt; 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。  **约束限制**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)、点(.)组成，长度范围1-56位。 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type name: str
         :param server_config: 
         :type server_config: :class:`huaweicloudsdkcce.v3.ReinstallServerConfig`
@@ -159,7 +159,7 @@ class ReinstallNodeSpec:
     def name(self):
         r"""Gets the name of this ReinstallNodeSpec.
 
-        **参数解释**： 节点名称，重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 **约束限制**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)、点(.)组成，长度范围1-56位。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 节点名称 > 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。  **约束限制**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)、点(.)组成，长度范围1-56位。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The name of this ReinstallNodeSpec.
         :rtype: str
@@ -170,7 +170,7 @@ class ReinstallNodeSpec:
     def name(self, name):
         r"""Sets the name of this ReinstallNodeSpec.
 
-        **参数解释**： 节点名称，重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。 **约束限制**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)、点(.)组成，长度范围1-56位。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        **参数解释**： 节点名称 > 重装时指定将修改节点名称，且服务器名称会同步修改。默认以服务器当前名称作为节点名称。  **约束限制**： 命名规则：以小写字母开头，由小写字母、数字、中划线(-)、点(.)组成，长度范围1-56位。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param name: The name of this ReinstallNodeSpec.
         :type name: str

@@ -21,9 +21,14 @@ class ListHostVulsRequest:
         'host_id': 'str',
         'type': 'str',
         'vul_name': 'str',
+        'vul_id': 'str',
         'handle_status': 'str',
         'status': 'str',
-        'repair_priority': 'str'
+        'repair_priority': 'str',
+        'severity_level': 'str',
+        'is_affect_business': 'bool',
+        'label_list': 'str',
+        'excluded_label_list': 'str'
     }
 
     attribute_map = {
@@ -33,12 +38,17 @@ class ListHostVulsRequest:
         'host_id': 'host_id',
         'type': 'type',
         'vul_name': 'vul_name',
+        'vul_id': 'vul_id',
         'handle_status': 'handle_status',
         'status': 'status',
-        'repair_priority': 'repair_priority'
+        'repair_priority': 'repair_priority',
+        'severity_level': 'severity_level',
+        'is_affect_business': 'is_affect_business',
+        'label_list': 'label_list',
+        'excluded_label_list': 'excluded_label_list'
     }
 
-    def __init__(self, enterprise_project_id=None, limit=None, offset=None, host_id=None, type=None, vul_name=None, handle_status=None, status=None, repair_priority=None):
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, host_id=None, type=None, vul_name=None, vul_id=None, handle_status=None, status=None, repair_priority=None, severity_level=None, is_affect_business=None, label_list=None, excluded_label_list=None):
         r"""ListHostVulsRequest
 
         The model defined in huaweicloud sdk
@@ -51,16 +61,26 @@ class ListHostVulsRequest:
         :type offset: int
         :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
-        :param type: **参数解释**: 查询的漏洞类型 **约束限制**: 不涉及 **取值范围**: - linux_vul   : linux漏洞 - windows_vul : windows漏洞 - web_cms     : Web-CMS漏洞 - app_vul     : 应用漏洞 - urgent_vul  : 应急漏洞  **默认取值**: linux_vul : linux漏洞 
+        :param type: **参数解释**: 查询的漏洞类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：应急漏洞  **默认取值**: linux_vul：linux漏洞 
         :type type: str
         :param vul_name: **参数解释**: 漏洞名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type vul_name: str
-        :param handle_status: **参数解释**: 漏洞当前的处置状态 **约束限制**: 不涉及 **取值范围**: - unhandled ：未处理 - handled : 已处理  **默认取值**: 不涉及 
+        :param vul_id: **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
+        :type vul_id: str
+        :param handle_status: **参数解释**: 漏洞当前的处置状态 **约束限制**: 不涉及 **取值范围**: - unhandled：未处理 - handled：已处理  **默认取值**: 不涉及 
         :type handle_status: str
-        :param status: **参数解释**: 漏洞当前的漏洞状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix            : 未处理 - vul_status_ignored          : 已忽略 - vul_status_verified         : 验证中 - vul_status_fixing           : 修复中 - vul_status_fixed            : 修复成功 - vul_status_reboot           : 修复成功待重启 - vul_status_failed           : 修复失败 - vul_status_fix_after_reboot : 请重启主机再次修复  **默认取值**: 不涉及 
+        :param status: **参数解释**: 漏洞当前的漏洞状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略 - vul_status_verified：验证中 - vul_status_fixing：修复中 - vul_status_fixed：修复成功 - vul_status_reboot：修复成功待重启 - vul_status_failed：修复失败 - vul_status_fix_after_reboot：请重启主机再次修复  **默认取值**: 不涉及 
         :type status: str
-        :param repair_priority: **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical : 紧急 - High     : 高 - Medium   : 中 - Low      : 低  **默认取值**: 不涉及 
+        :param repair_priority: **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低  **默认取值**: 不涉及 
         :type repair_priority: str
+        :param severity_level: **参数解释**: 危险程度（风险等级） **约束限制**: 不涉及 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危  可用逗号连接作为多选 **默认取值**: 不涉及 
+        :type severity_level: str
+        :param is_affect_business: **参数解释**: 是否影响业务 **约束限制**: 不涉及 **取值范围**: - true：影响业务 - false：不影响业务  **默认取值**: 不涉及 
+        :type is_affect_business: bool
+        :param label_list: **参数解释**: 漏洞标签（多个标签之间用逗号连接） **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+        :type label_list: str
+        :param excluded_label_list: **参数解释**: 反选漏洞标签（多个标签之间用逗号连接） **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+        :type excluded_label_list: str
         """
         
         
@@ -71,9 +91,14 @@ class ListHostVulsRequest:
         self._host_id = None
         self._type = None
         self._vul_name = None
+        self._vul_id = None
         self._handle_status = None
         self._status = None
         self._repair_priority = None
+        self._severity_level = None
+        self._is_affect_business = None
+        self._label_list = None
+        self._excluded_label_list = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -87,12 +112,22 @@ class ListHostVulsRequest:
             self.type = type
         if vul_name is not None:
             self.vul_name = vul_name
+        if vul_id is not None:
+            self.vul_id = vul_id
         if handle_status is not None:
             self.handle_status = handle_status
         if status is not None:
             self.status = status
         if repair_priority is not None:
             self.repair_priority = repair_priority
+        if severity_level is not None:
+            self.severity_level = severity_level
+        if is_affect_business is not None:
+            self.is_affect_business = is_affect_business
+        if label_list is not None:
+            self.label_list = label_list
+        if excluded_label_list is not None:
+            self.excluded_label_list = excluded_label_list
 
     @property
     def enterprise_project_id(self):
@@ -186,7 +221,7 @@ class ListHostVulsRequest:
     def type(self):
         r"""Gets the type of this ListHostVulsRequest.
 
-        **参数解释**: 查询的漏洞类型 **约束限制**: 不涉及 **取值范围**: - linux_vul   : linux漏洞 - windows_vul : windows漏洞 - web_cms     : Web-CMS漏洞 - app_vul     : 应用漏洞 - urgent_vul  : 应急漏洞  **默认取值**: linux_vul : linux漏洞 
+        **参数解释**: 查询的漏洞类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：应急漏洞  **默认取值**: linux_vul：linux漏洞 
 
         :return: The type of this ListHostVulsRequest.
         :rtype: str
@@ -197,7 +232,7 @@ class ListHostVulsRequest:
     def type(self, type):
         r"""Sets the type of this ListHostVulsRequest.
 
-        **参数解释**: 查询的漏洞类型 **约束限制**: 不涉及 **取值范围**: - linux_vul   : linux漏洞 - windows_vul : windows漏洞 - web_cms     : Web-CMS漏洞 - app_vul     : 应用漏洞 - urgent_vul  : 应急漏洞  **默认取值**: linux_vul : linux漏洞 
+        **参数解释**: 查询的漏洞类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：应急漏洞  **默认取值**: linux_vul：linux漏洞 
 
         :param type: The type of this ListHostVulsRequest.
         :type type: str
@@ -227,10 +262,32 @@ class ListHostVulsRequest:
         self._vul_name = vul_name
 
     @property
+    def vul_id(self):
+        r"""Gets the vul_id of this ListHostVulsRequest.
+
+        **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
+
+        :return: The vul_id of this ListHostVulsRequest.
+        :rtype: str
+        """
+        return self._vul_id
+
+    @vul_id.setter
+    def vul_id(self, vul_id):
+        r"""Sets the vul_id of this ListHostVulsRequest.
+
+        **参数解释**: 漏洞ID **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
+
+        :param vul_id: The vul_id of this ListHostVulsRequest.
+        :type vul_id: str
+        """
+        self._vul_id = vul_id
+
+    @property
     def handle_status(self):
         r"""Gets the handle_status of this ListHostVulsRequest.
 
-        **参数解释**: 漏洞当前的处置状态 **约束限制**: 不涉及 **取值范围**: - unhandled ：未处理 - handled : 已处理  **默认取值**: 不涉及 
+        **参数解释**: 漏洞当前的处置状态 **约束限制**: 不涉及 **取值范围**: - unhandled：未处理 - handled：已处理  **默认取值**: 不涉及 
 
         :return: The handle_status of this ListHostVulsRequest.
         :rtype: str
@@ -241,7 +298,7 @@ class ListHostVulsRequest:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ListHostVulsRequest.
 
-        **参数解释**: 漏洞当前的处置状态 **约束限制**: 不涉及 **取值范围**: - unhandled ：未处理 - handled : 已处理  **默认取值**: 不涉及 
+        **参数解释**: 漏洞当前的处置状态 **约束限制**: 不涉及 **取值范围**: - unhandled：未处理 - handled：已处理  **默认取值**: 不涉及 
 
         :param handle_status: The handle_status of this ListHostVulsRequest.
         :type handle_status: str
@@ -252,7 +309,7 @@ class ListHostVulsRequest:
     def status(self):
         r"""Gets the status of this ListHostVulsRequest.
 
-        **参数解释**: 漏洞当前的漏洞状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix            : 未处理 - vul_status_ignored          : 已忽略 - vul_status_verified         : 验证中 - vul_status_fixing           : 修复中 - vul_status_fixed            : 修复成功 - vul_status_reboot           : 修复成功待重启 - vul_status_failed           : 修复失败 - vul_status_fix_after_reboot : 请重启主机再次修复  **默认取值**: 不涉及 
+        **参数解释**: 漏洞当前的漏洞状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略 - vul_status_verified：验证中 - vul_status_fixing：修复中 - vul_status_fixed：修复成功 - vul_status_reboot：修复成功待重启 - vul_status_failed：修复失败 - vul_status_fix_after_reboot：请重启主机再次修复  **默认取值**: 不涉及 
 
         :return: The status of this ListHostVulsRequest.
         :rtype: str
@@ -263,7 +320,7 @@ class ListHostVulsRequest:
     def status(self, status):
         r"""Sets the status of this ListHostVulsRequest.
 
-        **参数解释**: 漏洞当前的漏洞状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix            : 未处理 - vul_status_ignored          : 已忽略 - vul_status_verified         : 验证中 - vul_status_fixing           : 修复中 - vul_status_fixed            : 修复成功 - vul_status_reboot           : 修复成功待重启 - vul_status_failed           : 修复失败 - vul_status_fix_after_reboot : 请重启主机再次修复  **默认取值**: 不涉及 
+        **参数解释**: 漏洞当前的漏洞状态 **约束限制**: 不涉及 **取值范围**: - vul_status_unfix：未处理 - vul_status_ignored：已忽略 - vul_status_verified：验证中 - vul_status_fixing：修复中 - vul_status_fixed：修复成功 - vul_status_reboot：修复成功待重启 - vul_status_failed：修复失败 - vul_status_fix_after_reboot：请重启主机再次修复  **默认取值**: 不涉及 
 
         :param status: The status of this ListHostVulsRequest.
         :type status: str
@@ -274,7 +331,7 @@ class ListHostVulsRequest:
     def repair_priority(self):
         r"""Gets the repair_priority of this ListHostVulsRequest.
 
-        **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical : 紧急 - High     : 高 - Medium   : 中 - Low      : 低  **默认取值**: 不涉及 
+        **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低  **默认取值**: 不涉及 
 
         :return: The repair_priority of this ListHostVulsRequest.
         :rtype: str
@@ -285,12 +342,100 @@ class ListHostVulsRequest:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this ListHostVulsRequest.
 
-        **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical : 紧急 - High     : 高 - Medium   : 中 - Low      : 低  **默认取值**: 不涉及 
+        **参数解释**: 漏洞修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高 - Medium：中 - Low：低  **默认取值**: 不涉及 
 
         :param repair_priority: The repair_priority of this ListHostVulsRequest.
         :type repair_priority: str
         """
         self._repair_priority = repair_priority
+
+    @property
+    def severity_level(self):
+        r"""Gets the severity_level of this ListHostVulsRequest.
+
+        **参数解释**: 危险程度（风险等级） **约束限制**: 不涉及 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危  可用逗号连接作为多选 **默认取值**: 不涉及 
+
+        :return: The severity_level of this ListHostVulsRequest.
+        :rtype: str
+        """
+        return self._severity_level
+
+    @severity_level.setter
+    def severity_level(self, severity_level):
+        r"""Sets the severity_level of this ListHostVulsRequest.
+
+        **参数解释**: 危险程度（风险等级） **约束限制**: 不涉及 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危  可用逗号连接作为多选 **默认取值**: 不涉及 
+
+        :param severity_level: The severity_level of this ListHostVulsRequest.
+        :type severity_level: str
+        """
+        self._severity_level = severity_level
+
+    @property
+    def is_affect_business(self):
+        r"""Gets the is_affect_business of this ListHostVulsRequest.
+
+        **参数解释**: 是否影响业务 **约束限制**: 不涉及 **取值范围**: - true：影响业务 - false：不影响业务  **默认取值**: 不涉及 
+
+        :return: The is_affect_business of this ListHostVulsRequest.
+        :rtype: bool
+        """
+        return self._is_affect_business
+
+    @is_affect_business.setter
+    def is_affect_business(self, is_affect_business):
+        r"""Sets the is_affect_business of this ListHostVulsRequest.
+
+        **参数解释**: 是否影响业务 **约束限制**: 不涉及 **取值范围**: - true：影响业务 - false：不影响业务  **默认取值**: 不涉及 
+
+        :param is_affect_business: The is_affect_business of this ListHostVulsRequest.
+        :type is_affect_business: bool
+        """
+        self._is_affect_business = is_affect_business
+
+    @property
+    def label_list(self):
+        r"""Gets the label_list of this ListHostVulsRequest.
+
+        **参数解释**: 漏洞标签（多个标签之间用逗号连接） **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+
+        :return: The label_list of this ListHostVulsRequest.
+        :rtype: str
+        """
+        return self._label_list
+
+    @label_list.setter
+    def label_list(self, label_list):
+        r"""Sets the label_list of this ListHostVulsRequest.
+
+        **参数解释**: 漏洞标签（多个标签之间用逗号连接） **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+
+        :param label_list: The label_list of this ListHostVulsRequest.
+        :type label_list: str
+        """
+        self._label_list = label_list
+
+    @property
+    def excluded_label_list(self):
+        r"""Gets the excluded_label_list of this ListHostVulsRequest.
+
+        **参数解释**: 反选漏洞标签（多个标签之间用逗号连接） **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+
+        :return: The excluded_label_list of this ListHostVulsRequest.
+        :rtype: str
+        """
+        return self._excluded_label_list
+
+    @excluded_label_list.setter
+    def excluded_label_list(self, excluded_label_list):
+        r"""Sets the excluded_label_list of this ListHostVulsRequest.
+
+        **参数解释**: 反选漏洞标签（多个标签之间用逗号连接） **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+
+        :param excluded_label_list: The excluded_label_list of this ListHostVulsRequest.
+        :type excluded_label_list: str
+        """
+        self._excluded_label_list = excluded_label_list
 
     def to_dict(self):
         result = {}

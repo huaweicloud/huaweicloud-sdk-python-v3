@@ -35,7 +35,7 @@ class UpdateFindingsReqBody:
         :type ids: list[str]
         :param resource_urn: 资源的唯一资源标识符。
         :type resource_urn: str
-        :param status: 要更新的访问分析结果状态。
+        :param status: 要更新的访问分析结果状态。 - active：活跃 - archived：已存档 
         :type status: str
         """
         
@@ -100,7 +100,7 @@ class UpdateFindingsReqBody:
     def status(self):
         r"""Gets the status of this UpdateFindingsReqBody.
 
-        要更新的访问分析结果状态。
+        要更新的访问分析结果状态。 - active：活跃 - archived：已存档 
 
         :return: The status of this UpdateFindingsReqBody.
         :rtype: str
@@ -111,7 +111,7 @@ class UpdateFindingsReqBody:
     def status(self, status):
         r"""Sets the status of this UpdateFindingsReqBody.
 
-        要更新的访问分析结果状态。
+        要更新的访问分析结果状态。 - active：活跃 - archived：已存档 
 
         :param status: The status of this UpdateFindingsReqBody.
         :type status: str

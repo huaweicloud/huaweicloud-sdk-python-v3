@@ -56,7 +56,7 @@ class ShowSecurityReportSubscriptionResponse(SdkResponse):
         :type report_category: str
         :param topic_urn: **参数解释：** 报告接收方式使用消息主题类型时需要填该参数。 查询可使用的主题，通过 云日志服务的“查询SMN主题”接口，返回体中的\&quot;topic_urn\&quot;字段 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type topic_urn: str
-        :param subscription_type: **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - slient ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        :param subscription_type: **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
         :type subscription_type: str
         :param report_content_subscription: 
         :type report_content_subscription: :class:`huaweicloudsdkwaf.v1.SecurityReportSubscriptionResponseReportContentSubscription`
@@ -217,7 +217,7 @@ class ShowSecurityReportSubscriptionResponse(SdkResponse):
     def subscription_type(self):
         r"""Gets the subscription_type of this ShowSecurityReportSubscriptionResponse.
 
-        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - slient ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
 
         :return: The subscription_type of this ShowSecurityReportSubscriptionResponse.
         :rtype: str
@@ -228,7 +228,7 @@ class ShowSecurityReportSubscriptionResponse(SdkResponse):
     def subscription_type(self, subscription_type):
         r"""Sets the subscription_type of this ShowSecurityReportSubscriptionResponse.
 
-        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - slient ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
 
         :param subscription_type: The subscription_type of this ShowSecurityReportSubscriptionResponse.
         :type subscription_type: str

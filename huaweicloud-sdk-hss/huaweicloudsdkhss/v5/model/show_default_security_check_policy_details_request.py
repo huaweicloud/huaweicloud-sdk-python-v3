@@ -59,7 +59,7 @@ class ShowDefaultSecurityCheckPolicyDetailsRequest:
         :type support_os: str
         :param check_type: **参数解释** 配置检查（基线）的类型,例如SSH、CentOS 7、Windows Server 2019 R2、Windows Server 2016 R2、MySQL5-Windows、weakpwd、pwdcomplexity **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
         :type check_type: str
-        :param standard: **参数解释** 标准类型，包含如下: **约束限制** 不涉及 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard: 通用安全标准  **默认取值** 不涉及
+        :param standard: **参数解释** 标准类型 **约束限制** 不涉及 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard: 通用安全标准  **默认取值** 不涉及
         :type standard: str
         :param tag: **参数解释** 基线检查项的类型 **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
         :type tag: str
@@ -67,7 +67,7 @@ class ShowDefaultSecurityCheckPolicyDetailsRequest:
         :type check_rule_name: str
         :param severity: **参数解释** 配置检查（基线）检查项的风险程度 **约束限制** 不涉及 **取值范围** - Low    : 低危 - Medium : 中危 - High   : 高危  **默认取值** 不涉及
         :type severity: str
-        :param level: **参数解释** 配置检查（基线）检查项的等级 **约束限制** 不涉及 **取值范围** 字符长度0-32位 **默认取值** 不涉及
+        :param level: **参数解释** 配置检查（基线）检查项的版本信息 **约束限制** 不涉及 **取值范围** 字符长度0-32位 **默认取值** 不涉及
         :type level: str
         :param group_id: **参数解释** 策略组ID **约束限制** 不涉及 **取值范围** 字符长度0-128位 **默认取值** 不涉及
         :type group_id: str
@@ -226,7 +226,7 @@ class ShowDefaultSecurityCheckPolicyDetailsRequest:
     def standard(self):
         r"""Gets the standard of this ShowDefaultSecurityCheckPolicyDetailsRequest.
 
-        **参数解释** 标准类型，包含如下: **约束限制** 不涉及 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard: 通用安全标准  **默认取值** 不涉及
+        **参数解释** 标准类型 **约束限制** 不涉及 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard: 通用安全标准  **默认取值** 不涉及
 
         :return: The standard of this ShowDefaultSecurityCheckPolicyDetailsRequest.
         :rtype: str
@@ -237,7 +237,7 @@ class ShowDefaultSecurityCheckPolicyDetailsRequest:
     def standard(self, standard):
         r"""Sets the standard of this ShowDefaultSecurityCheckPolicyDetailsRequest.
 
-        **参数解释** 标准类型，包含如下: **约束限制** 不涉及 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard: 通用安全标准  **默认取值** 不涉及
+        **参数解释** 标准类型 **约束限制** 不涉及 **取值范围** - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准 - cis_standard: 通用安全标准  **默认取值** 不涉及
 
         :param standard: The standard of this ShowDefaultSecurityCheckPolicyDetailsRequest.
         :type standard: str
@@ -314,7 +314,7 @@ class ShowDefaultSecurityCheckPolicyDetailsRequest:
     def level(self):
         r"""Gets the level of this ShowDefaultSecurityCheckPolicyDetailsRequest.
 
-        **参数解释** 配置检查（基线）检查项的等级 **约束限制** 不涉及 **取值范围** 字符长度0-32位 **默认取值** 不涉及
+        **参数解释** 配置检查（基线）检查项的版本信息 **约束限制** 不涉及 **取值范围** 字符长度0-32位 **默认取值** 不涉及
 
         :return: The level of this ShowDefaultSecurityCheckPolicyDetailsRequest.
         :rtype: str
@@ -325,7 +325,7 @@ class ShowDefaultSecurityCheckPolicyDetailsRequest:
     def level(self, level):
         r"""Sets the level of this ShowDefaultSecurityCheckPolicyDetailsRequest.
 
-        **参数解释** 配置检查（基线）检查项的等级 **约束限制** 不涉及 **取值范围** 字符长度0-32位 **默认取值** 不涉及
+        **参数解释** 配置检查（基线）检查项的版本信息 **约束限制** 不涉及 **取值范围** 字符长度0-32位 **默认取值** 不涉及
 
         :param level: The level of this ShowDefaultSecurityCheckPolicyDetailsRequest.
         :type level: str

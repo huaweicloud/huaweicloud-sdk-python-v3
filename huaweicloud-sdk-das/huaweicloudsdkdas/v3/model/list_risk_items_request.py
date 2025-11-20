@@ -18,17 +18,19 @@ class ListRiskItemsRequest:
         'x_language': 'str',
         'datastore_type': 'str',
         'page': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'datastore_type': 'datastore_type',
         'page': 'page',
-        'limit': 'limit'
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, x_language=None, datastore_type=None, page=None, limit=None):
+    def __init__(self, x_language=None, datastore_type=None, page=None, limit=None, offset=None):
         r"""ListRiskItemsRequest
 
         The model defined in huaweicloud sdk
@@ -37,10 +39,12 @@ class ListRiskItemsRequest:
         :type x_language: str
         :param datastore_type: 数据库类型
         :type datastore_type: str
-        :param page: 页码，默认1
+        :param page: 页码，默认1；待废弃，不建议使用，page和offset同时存在使用offset
         :type page: int
         :param limit: 每页记录数，默认20。
         :type limit: int
+        :param offset: 开始查询的偏移量，默认0
+        :type offset: int
         """
         
         
@@ -49,6 +53,7 @@ class ListRiskItemsRequest:
         self._datastore_type = None
         self._page = None
         self._limit = None
+        self._offset = None
         self.discriminator = None
 
         if x_language is not None:
@@ -58,6 +63,8 @@ class ListRiskItemsRequest:
             self.page = page
         if limit is not None:
             self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def x_language(self):
@@ -107,7 +114,7 @@ class ListRiskItemsRequest:
     def page(self):
         r"""Gets the page of this ListRiskItemsRequest.
 
-        页码，默认1
+        页码，默认1；待废弃，不建议使用，page和offset同时存在使用offset
 
         :return: The page of this ListRiskItemsRequest.
         :rtype: int
@@ -118,7 +125,7 @@ class ListRiskItemsRequest:
     def page(self, page):
         r"""Sets the page of this ListRiskItemsRequest.
 
-        页码，默认1
+        页码，默认1；待废弃，不建议使用，page和offset同时存在使用offset
 
         :param page: The page of this ListRiskItemsRequest.
         :type page: int
@@ -146,6 +153,28 @@ class ListRiskItemsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListRiskItemsRequest.
+
+        开始查询的偏移量，默认0
+
+        :return: The offset of this ListRiskItemsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListRiskItemsRequest.
+
+        开始查询的偏移量，默认0
+
+        :param offset: The offset of this ListRiskItemsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

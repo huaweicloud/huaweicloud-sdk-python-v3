@@ -263,6 +263,7 @@ from huaweicloudsdkcoc.v1.model.list_war_rooms_request import ListWarRoomsReques
 from huaweicloudsdkcoc.v1.model.list_war_rooms_response import ListWarRoomsResponse
 from huaweicloudsdkcoc.v1.model.message_notification import MessageNotification
 from huaweicloudsdkcoc.v1.model.non_compliant_summary import NonCompliantSummary
+from huaweicloudsdkcoc.v1.model.notification_mode import NotificationMode
 from huaweicloudsdkcoc.v1.model.object_filter import ObjectFilter
 from huaweicloudsdkcoc.v1.model.object_filter_v2 import ObjectFilterV2
 from huaweicloudsdkcoc.v1.model.operate_execution_request import OperateExecutionRequest

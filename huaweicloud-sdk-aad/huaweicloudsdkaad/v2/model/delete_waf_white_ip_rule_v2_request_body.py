@@ -35,7 +35,7 @@ class DeleteWafWhiteIpRuleV2RequestBody:
         :type ids: list[str]
         :param domain_name: 域名+端口组合，标准端口80/443无须加端口。
         :type domain_name: str
-        :param overseas_type: 防护区域
+        :param overseas_type: 防护区域,0-大陆,1-海外
         :type overseas_type: int
         """
         
@@ -98,7 +98,7 @@ class DeleteWafWhiteIpRuleV2RequestBody:
     def overseas_type(self):
         r"""Gets the overseas_type of this DeleteWafWhiteIpRuleV2RequestBody.
 
-        防护区域
+        防护区域,0-大陆,1-海外
 
         :return: The overseas_type of this DeleteWafWhiteIpRuleV2RequestBody.
         :rtype: int
@@ -109,7 +109,7 @@ class DeleteWafWhiteIpRuleV2RequestBody:
     def overseas_type(self, overseas_type):
         r"""Sets the overseas_type of this DeleteWafWhiteIpRuleV2RequestBody.
 
-        防护区域
+        防护区域,0-大陆,1-海外
 
         :param overseas_type: The overseas_type of this DeleteWafWhiteIpRuleV2RequestBody.
         :type overseas_type: int

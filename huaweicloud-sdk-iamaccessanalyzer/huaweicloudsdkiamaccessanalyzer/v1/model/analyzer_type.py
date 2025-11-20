@@ -11,6 +11,8 @@ class AnalyzerType:
     ORGANIZATION = "organization"
     ACCOUNT_UNUSED_ACCESS = "account_unused_access"
     ORGANIZATION_UNUSED_ACCESS = "organization_unused_access"
+    ACCOUNT_PRIVILEGE_ESCALATION = "account_privilege_escalation"
+    ACCOUNT_IAM_BEST_PRACTICE = "account_iam_best_practice"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

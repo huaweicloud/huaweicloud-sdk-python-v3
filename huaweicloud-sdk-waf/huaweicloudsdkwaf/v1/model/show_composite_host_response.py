@@ -84,7 +84,7 @@ class ShowCompositeHostResponse(SdkResponse):
         :type proxy: bool
         :param timestamp: 创建防护域名的时间
         :type timestamp: int
-        :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
+        :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
         :type paid_type: str
         :param flag: 
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -98,7 +98,7 @@ class ShowCompositeHostResponse(SdkResponse):
         :type premium_waf_instances: list[:class:`huaweicloudsdkwaf.v1.PremiumWafInstances`]
         :param description: 域名描述
         :type description: str
-        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
         :type exclusive_ip: bool
         :param region: 华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
         :type region: str
@@ -375,7 +375,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def paid_type(self):
         r"""Gets the paid_type of this ShowCompositeHostResponse.
 
-        套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
+        套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
 
         :return: The paid_type of this ShowCompositeHostResponse.
         :rtype: str
@@ -386,7 +386,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def paid_type(self, paid_type):
         r"""Sets the paid_type of this ShowCompositeHostResponse.
 
-        套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
+        套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
 
         :param paid_type: The paid_type of this ShowCompositeHostResponse.
         :type paid_type: str
@@ -525,7 +525,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def exclusive_ip(self):
         r"""Gets the exclusive_ip of this ShowCompositeHostResponse.
 
-        是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
 
         :return: The exclusive_ip of this ShowCompositeHostResponse.
         :rtype: bool
@@ -536,7 +536,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def exclusive_ip(self, exclusive_ip):
         r"""Sets the exclusive_ip of this ShowCompositeHostResponse.
 
-        是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
 
         :param exclusive_ip: The exclusive_ip of this ShowCompositeHostResponse.
         :type exclusive_ip: bool

@@ -29,9 +29,9 @@ class Context:
 
         The model defined in huaweicloud sdk
 
-        :param cluster: 上下文cluster信息。 
+        :param cluster: **参数解释**： 上下文cluster信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type cluster: str
-        :param user: 上下文user信息。 
+        :param user: **参数解释**： 上下文user信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type user: str
         """
         
@@ -50,7 +50,7 @@ class Context:
     def cluster(self):
         r"""Gets the cluster of this Context.
 
-        上下文cluster信息。 
+        **参数解释**： 上下文cluster信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The cluster of this Context.
         :rtype: str
@@ -61,7 +61,7 @@ class Context:
     def cluster(self, cluster):
         r"""Sets the cluster of this Context.
 
-        上下文cluster信息。 
+        **参数解释**： 上下文cluster信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param cluster: The cluster of this Context.
         :type cluster: str
@@ -72,7 +72,7 @@ class Context:
     def user(self):
         r"""Gets the user of this Context.
 
-        上下文user信息。 
+        **参数解释**： 上下文user信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The user of this Context.
         :rtype: str
@@ -83,7 +83,7 @@ class Context:
     def user(self, user):
         r"""Sets the user of this Context.
 
-        上下文user信息。 
+        **参数解释**： 上下文user信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param user: The user of this Context.
         :type user: str

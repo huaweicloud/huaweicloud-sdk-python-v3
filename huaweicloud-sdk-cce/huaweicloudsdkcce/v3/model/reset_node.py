@@ -29,7 +29,7 @@ class ResetNode:
 
         The model defined in huaweicloud sdk
 
-        :param node_id: 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :param node_id: **参数解释**： 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type node_id: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`
@@ -48,7 +48,7 @@ class ResetNode:
     def node_id(self):
         r"""Gets the node_id of this ResetNode.
 
-        节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        **参数解释**： 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The node_id of this ResetNode.
         :rtype: str
@@ -59,7 +59,7 @@ class ResetNode:
     def node_id(self, node_id):
         r"""Sets the node_id of this ResetNode.
 
-        节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        **参数解释**： 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param node_id: The node_id of this ResetNode.
         :type node_id: str

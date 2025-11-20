@@ -58,7 +58,7 @@ class ShowSecurityReportContentResponse(SdkResponse):
         :type report_category: str
         :param topic_urn: **参数解释：** 主题urn，关联报告发送的SMN主题唯一标识。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type topic_urn: str
-        :param subscription_type: **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - slient ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        :param subscription_type: **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
         :type subscription_type: str
         :param report_content_info: 
         :type report_content_info: :class:`huaweicloudsdkwaf.v1.SecurityReportContentResponseReportContentInfo`
@@ -239,7 +239,7 @@ class ShowSecurityReportContentResponse(SdkResponse):
     def subscription_type(self):
         r"""Gets the subscription_type of this ShowSecurityReportContentResponse.
 
-        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - slient ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
 
         :return: The subscription_type of this ShowSecurityReportContentResponse.
         :rtype: str
@@ -250,7 +250,7 @@ class ShowSecurityReportContentResponse(SdkResponse):
     def subscription_type(self, subscription_type):
         r"""Sets the subscription_type of this ShowSecurityReportContentResponse.
 
-        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - slient ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
+        **参数解释：** 订阅类型，接收安全报告的订阅方式（如slient表示静默订阅）。 **约束限制：** 不涉及 **取值范围：** - smn_topic : 消息主题 - silent ： 静默 - message_center ： 消息中心  **默认取值：** 不涉及
 
         :param subscription_type: The subscription_type of this ShowSecurityReportContentResponse.
         :type subscription_type: str

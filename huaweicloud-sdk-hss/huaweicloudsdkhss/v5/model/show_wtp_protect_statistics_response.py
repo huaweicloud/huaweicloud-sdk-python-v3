@@ -34,7 +34,7 @@ class ShowWtpProtectStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param protect_host_num: **参数解释**: 防护服务器总数，包含防护状态是防护中、部分防护、防护暂停、防护失败、防护中断和开启中共6中状态的服务器总数 **取值范围**: 最小值0，最大值1000000 
+        :param protect_host_num: **参数解释**: 防护服务器总数，包含防护状态是防护中、部分防护、防护暂停、防护失败、防护中断和开启中共6种状态的服务器总数 **取值范围**: 最小值0，最大值1000000 
         :type protect_host_num: int
         :param protect_success_host_num: **参数解释**: 防护状态为防护中的服务器总数 **取值范围**: 最小值0，最大值1000000 
         :type protect_success_host_num: int
@@ -65,7 +65,7 @@ class ShowWtpProtectStatisticsResponse(SdkResponse):
     def protect_host_num(self):
         r"""Gets the protect_host_num of this ShowWtpProtectStatisticsResponse.
 
-        **参数解释**: 防护服务器总数，包含防护状态是防护中、部分防护、防护暂停、防护失败、防护中断和开启中共6中状态的服务器总数 **取值范围**: 最小值0，最大值1000000 
+        **参数解释**: 防护服务器总数，包含防护状态是防护中、部分防护、防护暂停、防护失败、防护中断和开启中共6种状态的服务器总数 **取值范围**: 最小值0，最大值1000000 
 
         :return: The protect_host_num of this ShowWtpProtectStatisticsResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class ShowWtpProtectStatisticsResponse(SdkResponse):
     def protect_host_num(self, protect_host_num):
         r"""Sets the protect_host_num of this ShowWtpProtectStatisticsResponse.
 
-        **参数解释**: 防护服务器总数，包含防护状态是防护中、部分防护、防护暂停、防护失败、防护中断和开启中共6中状态的服务器总数 **取值范围**: 最小值0，最大值1000000 
+        **参数解释**: 防护服务器总数，包含防护状态是防护中、部分防护、防护暂停、防护失败、防护中断和开启中共6种状态的服务器总数 **取值范围**: 最小值0，最大值1000000 
 
         :param protect_host_num: The protect_host_num of this ShowWtpProtectStatisticsResponse.
         :type protect_host_num: int

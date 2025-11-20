@@ -33,9 +33,9 @@ class DeleteNodeRequest:
 
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
-        :param node_id: 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :param node_id: **参数解释**： 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type node_id: str
-        :param nodepool_scale_down: 标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数
+        :param nodepool_scale_down: **参数解释**： 标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type nodepool_scale_down: str
         """
         
@@ -77,7 +77,7 @@ class DeleteNodeRequest:
     def node_id(self):
         r"""Gets the node_id of this DeleteNodeRequest.
 
-        节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        **参数解释**： 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The node_id of this DeleteNodeRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class DeleteNodeRequest:
     def node_id(self, node_id):
         r"""Sets the node_id of this DeleteNodeRequest.
 
-        节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        **参数解释**： 节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param node_id: The node_id of this DeleteNodeRequest.
         :type node_id: str
@@ -99,7 +99,7 @@ class DeleteNodeRequest:
     def nodepool_scale_down(self):
         r"""Gets the nodepool_scale_down of this DeleteNodeRequest.
 
-        标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数
+        **参数解释**： 标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The nodepool_scale_down of this DeleteNodeRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class DeleteNodeRequest:
     def nodepool_scale_down(self, nodepool_scale_down):
         r"""Sets the nodepool_scale_down of this DeleteNodeRequest.
 
-        标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数
+        **参数解释**： 标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param nodepool_scale_down: The nodepool_scale_down of this DeleteNodeRequest.
         :type nodepool_scale_down: str

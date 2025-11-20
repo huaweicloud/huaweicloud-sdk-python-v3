@@ -28,7 +28,13 @@ class ListVulHostsRequest:
         'handle_status': 'str',
         'severity_level': 'str',
         'is_affect_business': 'bool',
-        'repair_priority': 'str'
+        'repair_priority': 'str',
+        'cluster_name': 'str',
+        'cluster_id': 'str',
+        'is_container': 'bool',
+        'container_name': 'str',
+        'min_scan_time': 'int',
+        'max_scan_time': 'int'
     }
 
     attribute_map = {
@@ -45,10 +51,16 @@ class ListVulHostsRequest:
         'handle_status': 'handle_status',
         'severity_level': 'severity_level',
         'is_affect_business': 'is_affect_business',
-        'repair_priority': 'repair_priority'
+        'repair_priority': 'repair_priority',
+        'cluster_name': 'cluster_name',
+        'cluster_id': 'cluster_id',
+        'is_container': 'is_container',
+        'container_name': 'container_name',
+        'min_scan_time': 'min_scan_time',
+        'max_scan_time': 'max_scan_time'
     }
 
-    def __init__(self, enterprise_project_id=None, limit=None, offset=None, host_name=None, host_ip=None, vul_id=None, type=None, status=None, asset_value=None, group_name=None, handle_status=None, severity_level=None, is_affect_business=None, repair_priority=None):
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, host_name=None, host_ip=None, vul_id=None, type=None, status=None, asset_value=None, group_name=None, handle_status=None, severity_level=None, is_affect_business=None, repair_priority=None, cluster_name=None, cluster_id=None, is_container=None, container_name=None, min_scan_time=None, max_scan_time=None):
         r"""ListVulHostsRequest
 
         The model defined in huaweicloud sdk
@@ -75,12 +87,24 @@ class ListVulHostsRequest:
         :type group_name: str
         :param handle_status: **参数解释**: 漏洞当前的处置状态 **约束限制**: 不涉及 **取值范围**: - unhandled : 未处理 - handled   : 已处理  **默认取值**: 不涉及 
         :type handle_status: str
-        :param severity_level: **参数解释**: 危险程度 **约束限制**: 不涉及 **取值范围**: - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危 - High     : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium   : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low      : 漏洞cvss评分小于4；对应控制台页面的低危  可用逗号连接作为多选 **默认取值**: 不涉及 
+        :param severity_level: **参数解释**: 危险程度（风险等级） **约束限制**: 不涉及 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危  可用逗号连接作为多选 **默认取值**: 不涉及 
         :type severity_level: str
-        :param is_affect_business: **参数解释**: 是否影响业务 **约束限制**: 不涉及 **取值范围**: - true  : 影响业务 - false : 不影响业务  **默认取值**: 不涉及 
+        :param is_affect_business: **参数解释**: 是否影响业务 **约束限制**: 不涉及 **取值范围**: - true：影响业务 - false：不影响业务  **默认取值**: 不涉及 
         :type is_affect_business: bool
-        :param repair_priority: **参数解释**: 修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical : 紧急 - High     : 高危 - Medium   : 中危 - Low      : 低危  可用逗号连接作为多选 **默认取值**:   不涉及 
+        :param repair_priority: **参数解释**: 修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高危 - Medium：中危 - Low：低危  可用逗号连接作为多选 **默认取值**:   不涉及 
         :type repair_priority: str
+        :param cluster_name: **参数解释**: 集群名称。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64。 **默认取值**: 不涉及 
+        :type cluster_name: str
+        :param cluster_id: **参数解释**:  集群id **约束限制**: 不涉及 **取值范围**: 长度范围1-64位 **默认取值**: 不涉及 
+        :type cluster_id: str
+        :param is_container: **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景  **默认取值**: false 
+        :type is_container: bool
+        :param container_name: **参数解释**: 容器名称（容器场景生效） **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+        :type container_name: str
+        :param min_scan_time: **参数解释**： 扫描任务开始时间的最小值（容器场景生效） **约束限制**: 不涉及 **取值范围**： 最小值0，最大值2^63-1 **默认取值**: 不涉及 
+        :type min_scan_time: int
+        :param max_scan_time: **参数解释**： 扫描任务开始时间的最大值（容器场景生效） **约束限制**: 不涉及 **取值范围**： 最小值0，最大值2^63-1 **默认取值**: 不涉及 
+        :type max_scan_time: int
         """
         
         
@@ -99,6 +123,12 @@ class ListVulHostsRequest:
         self._severity_level = None
         self._is_affect_business = None
         self._repair_priority = None
+        self._cluster_name = None
+        self._cluster_id = None
+        self._is_container = None
+        self._container_name = None
+        self._min_scan_time = None
+        self._max_scan_time = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -127,6 +157,18 @@ class ListVulHostsRequest:
             self.is_affect_business = is_affect_business
         if repair_priority is not None:
             self.repair_priority = repair_priority
+        if cluster_name is not None:
+            self.cluster_name = cluster_name
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
+        if is_container is not None:
+            self.is_container = is_container
+        if container_name is not None:
+            self.container_name = container_name
+        if min_scan_time is not None:
+            self.min_scan_time = min_scan_time
+        if max_scan_time is not None:
+            self.max_scan_time = max_scan_time
 
     @property
     def enterprise_project_id(self):
@@ -374,7 +416,7 @@ class ListVulHostsRequest:
     def severity_level(self):
         r"""Gets the severity_level of this ListVulHostsRequest.
 
-        **参数解释**: 危险程度 **约束限制**: 不涉及 **取值范围**: - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危 - High     : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium   : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low      : 漏洞cvss评分小于4；对应控制台页面的低危  可用逗号连接作为多选 **默认取值**: 不涉及 
+        **参数解释**: 危险程度（风险等级） **约束限制**: 不涉及 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危  可用逗号连接作为多选 **默认取值**: 不涉及 
 
         :return: The severity_level of this ListVulHostsRequest.
         :rtype: str
@@ -385,7 +427,7 @@ class ListVulHostsRequest:
     def severity_level(self, severity_level):
         r"""Sets the severity_level of this ListVulHostsRequest.
 
-        **参数解释**: 危险程度 **约束限制**: 不涉及 **取值范围**: - Critical : 漏洞cvss评分大于等于9；对应控制台页面的高危 - High     : 漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium   : 漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low      : 漏洞cvss评分小于4；对应控制台页面的低危  可用逗号连接作为多选 **默认取值**: 不涉及 
+        **参数解释**: 危险程度（风险等级） **约束限制**: 不涉及 **取值范围**: - Critical：漏洞cvss评分大于等于9；对应控制台页面的高危 - High：漏洞cvss评分大于等于7，小于9；对应控制台页面的中危 - Medium：漏洞cvss评分大于等于4，小于7；对应控制台页面的中危 - Low：漏洞cvss评分小于4；对应控制台页面的低危  可用逗号连接作为多选 **默认取值**: 不涉及 
 
         :param severity_level: The severity_level of this ListVulHostsRequest.
         :type severity_level: str
@@ -396,7 +438,7 @@ class ListVulHostsRequest:
     def is_affect_business(self):
         r"""Gets the is_affect_business of this ListVulHostsRequest.
 
-        **参数解释**: 是否影响业务 **约束限制**: 不涉及 **取值范围**: - true  : 影响业务 - false : 不影响业务  **默认取值**: 不涉及 
+        **参数解释**: 是否影响业务 **约束限制**: 不涉及 **取值范围**: - true：影响业务 - false：不影响业务  **默认取值**: 不涉及 
 
         :return: The is_affect_business of this ListVulHostsRequest.
         :rtype: bool
@@ -407,7 +449,7 @@ class ListVulHostsRequest:
     def is_affect_business(self, is_affect_business):
         r"""Sets the is_affect_business of this ListVulHostsRequest.
 
-        **参数解释**: 是否影响业务 **约束限制**: 不涉及 **取值范围**: - true  : 影响业务 - false : 不影响业务  **默认取值**: 不涉及 
+        **参数解释**: 是否影响业务 **约束限制**: 不涉及 **取值范围**: - true：影响业务 - false：不影响业务  **默认取值**: 不涉及 
 
         :param is_affect_business: The is_affect_business of this ListVulHostsRequest.
         :type is_affect_business: bool
@@ -418,7 +460,7 @@ class ListVulHostsRequest:
     def repair_priority(self):
         r"""Gets the repair_priority of this ListVulHostsRequest.
 
-        **参数解释**: 修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical : 紧急 - High     : 高危 - Medium   : 中危 - Low      : 低危  可用逗号连接作为多选 **默认取值**:   不涉及 
+        **参数解释**: 修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高危 - Medium：中危 - Low：低危  可用逗号连接作为多选 **默认取值**:   不涉及 
 
         :return: The repair_priority of this ListVulHostsRequest.
         :rtype: str
@@ -429,12 +471,144 @@ class ListVulHostsRequest:
     def repair_priority(self, repair_priority):
         r"""Sets the repair_priority of this ListVulHostsRequest.
 
-        **参数解释**: 修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical : 紧急 - High     : 高危 - Medium   : 中危 - Low      : 低危  可用逗号连接作为多选 **默认取值**:   不涉及 
+        **参数解释**: 修复优先级 **约束限制**: 不涉及 **取值范围**: - Critical：紧急 - High：高危 - Medium：中危 - Low：低危  可用逗号连接作为多选 **默认取值**:   不涉及 
 
         :param repair_priority: The repair_priority of this ListVulHostsRequest.
         :type repair_priority: str
         """
         self._repair_priority = repair_priority
+
+    @property
+    def cluster_name(self):
+        r"""Gets the cluster_name of this ListVulHostsRequest.
+
+        **参数解释**: 集群名称。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64。 **默认取值**: 不涉及 
+
+        :return: The cluster_name of this ListVulHostsRequest.
+        :rtype: str
+        """
+        return self._cluster_name
+
+    @cluster_name.setter
+    def cluster_name(self, cluster_name):
+        r"""Sets the cluster_name of this ListVulHostsRequest.
+
+        **参数解释**: 集群名称。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64。 **默认取值**: 不涉及 
+
+        :param cluster_name: The cluster_name of this ListVulHostsRequest.
+        :type cluster_name: str
+        """
+        self._cluster_name = cluster_name
+
+    @property
+    def cluster_id(self):
+        r"""Gets the cluster_id of this ListVulHostsRequest.
+
+        **参数解释**:  集群id **约束限制**: 不涉及 **取值范围**: 长度范围1-64位 **默认取值**: 不涉及 
+
+        :return: The cluster_id of this ListVulHostsRequest.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        r"""Sets the cluster_id of this ListVulHostsRequest.
+
+        **参数解释**:  集群id **约束限制**: 不涉及 **取值范围**: 长度范围1-64位 **默认取值**: 不涉及 
+
+        :param cluster_id: The cluster_id of this ListVulHostsRequest.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
+
+    @property
+    def is_container(self):
+        r"""Gets the is_container of this ListVulHostsRequest.
+
+        **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景  **默认取值**: false 
+
+        :return: The is_container of this ListVulHostsRequest.
+        :rtype: bool
+        """
+        return self._is_container
+
+    @is_container.setter
+    def is_container(self, is_container):
+        r"""Sets the is_container of this ListVulHostsRequest.
+
+        **参数解释**: 是否是容器场景 **约束限制**: 不涉及 **取值范围**: - true：是容器场景 - false：不是容器场景  **默认取值**: false 
+
+        :param is_container: The is_container of this ListVulHostsRequest.
+        :type is_container: bool
+        """
+        self._is_container = is_container
+
+    @property
+    def container_name(self):
+        r"""Gets the container_name of this ListVulHostsRequest.
+
+        **参数解释**: 容器名称（容器场景生效） **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+
+        :return: The container_name of this ListVulHostsRequest.
+        :rtype: str
+        """
+        return self._container_name
+
+    @container_name.setter
+    def container_name(self, container_name):
+        r"""Sets the container_name of this ListVulHostsRequest.
+
+        **参数解释**: 容器名称（容器场景生效） **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
+
+        :param container_name: The container_name of this ListVulHostsRequest.
+        :type container_name: str
+        """
+        self._container_name = container_name
+
+    @property
+    def min_scan_time(self):
+        r"""Gets the min_scan_time of this ListVulHostsRequest.
+
+        **参数解释**： 扫描任务开始时间的最小值（容器场景生效） **约束限制**: 不涉及 **取值范围**： 最小值0，最大值2^63-1 **默认取值**: 不涉及 
+
+        :return: The min_scan_time of this ListVulHostsRequest.
+        :rtype: int
+        """
+        return self._min_scan_time
+
+    @min_scan_time.setter
+    def min_scan_time(self, min_scan_time):
+        r"""Sets the min_scan_time of this ListVulHostsRequest.
+
+        **参数解释**： 扫描任务开始时间的最小值（容器场景生效） **约束限制**: 不涉及 **取值范围**： 最小值0，最大值2^63-1 **默认取值**: 不涉及 
+
+        :param min_scan_time: The min_scan_time of this ListVulHostsRequest.
+        :type min_scan_time: int
+        """
+        self._min_scan_time = min_scan_time
+
+    @property
+    def max_scan_time(self):
+        r"""Gets the max_scan_time of this ListVulHostsRequest.
+
+        **参数解释**： 扫描任务开始时间的最大值（容器场景生效） **约束限制**: 不涉及 **取值范围**： 最小值0，最大值2^63-1 **默认取值**: 不涉及 
+
+        :return: The max_scan_time of this ListVulHostsRequest.
+        :rtype: int
+        """
+        return self._max_scan_time
+
+    @max_scan_time.setter
+    def max_scan_time(self, max_scan_time):
+        r"""Sets the max_scan_time of this ListVulHostsRequest.
+
+        **参数解释**： 扫描任务开始时间的最大值（容器场景生效） **约束限制**: 不涉及 **取值范围**： 最小值0，最大值2^63-1 **默认取值**: 不涉及 
+
+        :param max_scan_time: The max_scan_time of this ListVulHostsRequest.
+        :type max_scan_time: int
+        """
+        self._max_scan_time = max_scan_time
 
     def to_dict(self):
         result = {}

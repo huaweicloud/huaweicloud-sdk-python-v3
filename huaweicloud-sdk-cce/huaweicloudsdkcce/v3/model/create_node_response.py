@@ -36,9 +36,9 @@ class CreateNodeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param kind: **参数解释**： API类型，固定值“Node”。 **取值范围**： 只能为固定值“Node”。 
+        :param kind: **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Node 
         :type kind: str
-        :param api_version: **参数解释**： API版本，固定值“v3”。 **取值范围**： 只能为固定值“v3”。
+        :param api_version: **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Node 
         :type api_version: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.NodeMetadata`
@@ -72,7 +72,7 @@ class CreateNodeResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this CreateNodeResponse.
 
-        **参数解释**： API类型，固定值“Node”。 **取值范围**： 只能为固定值“Node”。 
+        **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Node 
 
         :return: The kind of this CreateNodeResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class CreateNodeResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this CreateNodeResponse.
 
-        **参数解释**： API类型，固定值“Node”。 **取值范围**： 只能为固定值“Node”。 
+        **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Node 
 
         :param kind: The kind of this CreateNodeResponse.
         :type kind: str
@@ -94,7 +94,7 @@ class CreateNodeResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this CreateNodeResponse.
 
-        **参数解释**： API版本，固定值“v3”。 **取值范围**： 只能为固定值“v3”。
+        **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Node 
 
         :return: The api_version of this CreateNodeResponse.
         :rtype: str
@@ -105,7 +105,7 @@ class CreateNodeResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this CreateNodeResponse.
 
-        **参数解释**： API版本，固定值“v3”。 **取值范围**： 只能为固定值“v3”。
+        **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Node 
 
         :param api_version: The api_version of this CreateNodeResponse.
         :type api_version: str

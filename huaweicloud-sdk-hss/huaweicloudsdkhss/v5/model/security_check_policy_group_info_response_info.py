@@ -67,11 +67,11 @@ class SecurityCheckPolicyGroupInfoResponseInfo:
         :type policy_info: :class:`huaweicloudsdkhss.v5.SecurityCheckPolicyInfoResponseInfo`
         :param weak_pwd_policy_info: 
         :type weak_pwd_policy_info: :class:`huaweicloudsdkhss.v5.SecurityCheckPolicyInfoResponseInfo`
-        :param agent_id_list: **参数解释** 应用的主机的agentID列表 
+        :param agent_id_list: **参数解释** 应用的主机的agentID列表 **取值范围** 字符串大小范围20-64 
         :type agent_id_list: list[str]
         :param task_condition: 
         :type task_condition: :class:`huaweicloudsdkhss.v5.SecurityCheckTaskCondition`
-        :param detection_period: **参数解释** 检测周期 
+        :param detection_period: **参数解释** 检测周期 **取值范围** 字符串大小范围1-128 
         :type detection_period: str
         """
         
@@ -309,7 +309,7 @@ class SecurityCheckPolicyGroupInfoResponseInfo:
     def agent_id_list(self):
         r"""Gets the agent_id_list of this SecurityCheckPolicyGroupInfoResponseInfo.
 
-        **参数解释** 应用的主机的agentID列表 
+        **参数解释** 应用的主机的agentID列表 **取值范围** 字符串大小范围20-64 
 
         :return: The agent_id_list of this SecurityCheckPolicyGroupInfoResponseInfo.
         :rtype: list[str]
@@ -320,7 +320,7 @@ class SecurityCheckPolicyGroupInfoResponseInfo:
     def agent_id_list(self, agent_id_list):
         r"""Sets the agent_id_list of this SecurityCheckPolicyGroupInfoResponseInfo.
 
-        **参数解释** 应用的主机的agentID列表 
+        **参数解释** 应用的主机的agentID列表 **取值范围** 字符串大小范围20-64 
 
         :param agent_id_list: The agent_id_list of this SecurityCheckPolicyGroupInfoResponseInfo.
         :type agent_id_list: list[str]
@@ -349,7 +349,7 @@ class SecurityCheckPolicyGroupInfoResponseInfo:
     def detection_period(self):
         r"""Gets the detection_period of this SecurityCheckPolicyGroupInfoResponseInfo.
 
-        **参数解释** 检测周期 
+        **参数解释** 检测周期 **取值范围** 字符串大小范围1-128 
 
         :return: The detection_period of this SecurityCheckPolicyGroupInfoResponseInfo.
         :rtype: str
@@ -360,7 +360,7 @@ class SecurityCheckPolicyGroupInfoResponseInfo:
     def detection_period(self, detection_period):
         r"""Sets the detection_period of this SecurityCheckPolicyGroupInfoResponseInfo.
 
-        **参数解释** 检测周期 
+        **参数解释** 检测周期 **取值范围** 字符串大小范围1-128 
 
         :param detection_period: The detection_period of this SecurityCheckPolicyGroupInfoResponseInfo.
         :type detection_period: str

@@ -26,7 +26,8 @@ class CreateWarRoomRequestBody:
         'application_names': 'list[str]',
         'region_names': 'list[str]',
         'enterprise_project_id': 'str',
-        'notification_type': 'str'
+        'notification_type': 'str',
+        'notification_modes': 'list[NotificationMode]'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class CreateWarRoomRequestBody:
         'application_names': 'application_names',
         'region_names': 'region_names',
         'enterprise_project_id': 'enterprise_project_id',
-        'notification_type': 'notification_type'
+        'notification_type': 'notification_type',
+        'notification_modes': 'notification_modes'
     }
 
-    def __init__(self, war_room_name=None, description=None, region_code_list=None, application_id_list=None, incident_number=None, schedule_group=None, participant=None, war_room_admin=None, application_names=None, region_names=None, enterprise_project_id=None, notification_type=None):
+    def __init__(self, war_room_name=None, description=None, region_code_list=None, application_id_list=None, incident_number=None, schedule_group=None, participant=None, war_room_admin=None, application_names=None, region_names=None, enterprise_project_id=None, notification_type=None, notification_modes=None):
         r"""CreateWarRoomRequestBody
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class CreateWarRoomRequestBody:
         :type enterprise_project_id: str
         :param notification_type: 创建群组方式
         :type notification_type: str
+        :param notification_modes: 发送通知的方式，支持多个通知方式。
+        :type notification_modes: list[:class:`huaweicloudsdkcoc.v1.NotificationMode`]
         """
         
         
@@ -89,6 +93,7 @@ class CreateWarRoomRequestBody:
         self._region_names = None
         self._enterprise_project_id = None
         self._notification_type = None
+        self._notification_modes = None
         self.discriminator = None
 
         self.war_room_name = war_room_name
@@ -109,6 +114,8 @@ class CreateWarRoomRequestBody:
         self.enterprise_project_id = enterprise_project_id
         if notification_type is not None:
             self.notification_type = notification_type
+        if notification_modes is not None:
+            self.notification_modes = notification_modes
 
     @property
     def war_room_name(self):
@@ -373,6 +380,28 @@ class CreateWarRoomRequestBody:
         :type notification_type: str
         """
         self._notification_type = notification_type
+
+    @property
+    def notification_modes(self):
+        r"""Gets the notification_modes of this CreateWarRoomRequestBody.
+
+        发送通知的方式，支持多个通知方式。
+
+        :return: The notification_modes of this CreateWarRoomRequestBody.
+        :rtype: list[:class:`huaweicloudsdkcoc.v1.NotificationMode`]
+        """
+        return self._notification_modes
+
+    @notification_modes.setter
+    def notification_modes(self, notification_modes):
+        r"""Sets the notification_modes of this CreateWarRoomRequestBody.
+
+        发送通知的方式，支持多个通知方式。
+
+        :param notification_modes: The notification_modes of this CreateWarRoomRequestBody.
+        :type notification_modes: list[:class:`huaweicloudsdkcoc.v1.NotificationMode`]
+        """
+        self._notification_modes = notification_modes
 
     def to_dict(self):
         result = {}

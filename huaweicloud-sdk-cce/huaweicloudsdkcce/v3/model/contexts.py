@@ -29,7 +29,7 @@ class Contexts:
 
         The model defined in huaweicloud sdk
 
-        :param name: 上下文的名称。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internal”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的context的name的值为“external”。 
+        :param name: **参数解释**： 上下文的名称。 **约束限制**： 不涉及 **取值范围**： - internal：私网访问 - external：公网访问  **默认取值**： - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internal”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的context的name的值为“external”。 
         :type name: str
         :param context: 
         :type context: :class:`huaweicloudsdkcce.v3.Context`
@@ -50,7 +50,7 @@ class Contexts:
     def name(self):
         r"""Gets the name of this Contexts.
 
-        上下文的名称。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internal”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的context的name的值为“external”。 
+        **参数解释**： 上下文的名称。 **约束限制**： 不涉及 **取值范围**： - internal：私网访问 - external：公网访问  **默认取值**： - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internal”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的context的name的值为“external”。 
 
         :return: The name of this Contexts.
         :rtype: str
@@ -61,7 +61,7 @@ class Contexts:
     def name(self, name):
         r"""Sets the name of this Contexts.
 
-        上下文的名称。 - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internal”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的context的name的值为“external”。 
+        **参数解释**： 上下文的名称。 **约束限制**： 不涉及 **取值范围**： - internal：私网访问 - external：公网访问  **默认取值**： - 若不存在publicIp（虚拟机弹性IP），则集群列表的集群数量为1，该字段值为“internal”。 - 若存在publicIp，则集群列表的集群数量大于1，所有扩展的context的name的值为“external”。 
 
         :param name: The name of this Contexts.
         :type name: str

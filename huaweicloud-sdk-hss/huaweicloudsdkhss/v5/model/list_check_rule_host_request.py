@@ -23,11 +23,11 @@ class ListCheckRuleHostRequest:
         'check_type': 'str',
         'standard': 'str',
         'result_type': 'str',
+        'cluster_id': 'str',
+        'host_name': 'str',
         'host_type': 'str',
         'check_cce': 'bool',
-        'cluster_id': 'str',
-        'policy_group_id': 'str',
-        'host_name': 'str'
+        'policy_group_id': 'str'
     }
 
     attribute_map = {
@@ -39,14 +39,14 @@ class ListCheckRuleHostRequest:
         'check_type': 'check_type',
         'standard': 'standard',
         'result_type': 'result_type',
+        'cluster_id': 'cluster_id',
+        'host_name': 'host_name',
         'host_type': 'host_type',
         'check_cce': 'check_cce',
-        'cluster_id': 'cluster_id',
-        'policy_group_id': 'policy_group_id',
-        'host_name': 'host_name'
+        'policy_group_id': 'policy_group_id'
     }
 
-    def __init__(self, enterprise_project_id=None, offset=None, limit=None, check_rule_id=None, check_name=None, check_type=None, standard=None, result_type=None, host_type=None, check_cce=None, cluster_id=None, policy_group_id=None, host_name=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, check_rule_id=None, check_name=None, check_type=None, standard=None, result_type=None, cluster_id=None, host_name=None, host_type=None, check_cce=None, policy_group_id=None):
         r"""ListCheckRuleHostRequest
 
         The model defined in huaweicloud sdk
@@ -67,16 +67,16 @@ class ListCheckRuleHostRequest:
         :type standard: str
         :param result_type: **参数解释** 检测结果类型 **约束限制** 不涉及 **取值范围** - safe             : 已通过 - unhandled        : 未处理 - ignored          : 已忽略 - fixing           : 修复中 - fix-failed       : 修复失败 - verifying        : 验证中 - add_to_whitelist : 已加白  **默认取值** 不涉及
         :type result_type: str
-        :param host_type: **参数解释** 检测结果类型 **约束限制** 不涉及 **取值范围** 不涉及 **默认取值** 不涉及
-        :type host_type: str
-        :param check_cce: **参数解释** 是否校验cce **约束限制** 不涉及 **取值范围** - true  : 校验cce - false : 不校验cce  **默认取值** false
-        :type check_cce: bool
         :param cluster_id: **参数解释** 集群ID **约束限制** 不涉及 **取值范围** 字符长度0-64位 **默认取值** 不涉及
         :type cluster_id: str
-        :param policy_group_id: **参数解释** 策略组ID，不赋值时，查此检查项租户所有主机，host_id存在时，此值无效 **约束限制** 不涉及 **取值范围** 字符长度0-128位 **默认取值** 不涉及
-        :type policy_group_id: str
         :param host_name: **参数解释** 主机名称或ip **约束限制** 不涉及 **取值范围** 不涉及 **默认取值** 不涉及
         :type host_name: str
+        :param host_type: **参数解释** 主机类型，已废弃 **约束限制** 不涉及 **取值范围** - cce **默认取值** 不涉及
+        :type host_type: str
+        :param check_cce: **参数解释**: 是否只筛选cce主机，已废弃 **约束限制**: 不涉及 **取值范围**: -true：是。 -false：否。 **默认取值**: false 
+        :type check_cce: bool
+        :param policy_group_id: **参数解释** 策略组ID，已废弃 **约束限制** 不涉及 **取值范围** 字符长度0-128位 **默认取值** 不涉及
+        :type policy_group_id: str
         """
         
         
@@ -89,11 +89,11 @@ class ListCheckRuleHostRequest:
         self._check_type = None
         self._standard = None
         self._result_type = None
+        self._cluster_id = None
+        self._host_name = None
         self._host_type = None
         self._check_cce = None
-        self._cluster_id = None
         self._policy_group_id = None
-        self._host_name = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -110,16 +110,16 @@ class ListCheckRuleHostRequest:
         self.standard = standard
         if result_type is not None:
             self.result_type = result_type
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
+        if host_name is not None:
+            self.host_name = host_name
         if host_type is not None:
             self.host_type = host_type
         if check_cce is not None:
             self.check_cce = check_cce
-        if cluster_id is not None:
-            self.cluster_id = cluster_id
         if policy_group_id is not None:
             self.policy_group_id = policy_group_id
-        if host_name is not None:
-            self.host_name = host_name
 
     @property
     def enterprise_project_id(self):
@@ -298,50 +298,6 @@ class ListCheckRuleHostRequest:
         self._result_type = result_type
 
     @property
-    def host_type(self):
-        r"""Gets the host_type of this ListCheckRuleHostRequest.
-
-        **参数解释** 检测结果类型 **约束限制** 不涉及 **取值范围** 不涉及 **默认取值** 不涉及
-
-        :return: The host_type of this ListCheckRuleHostRequest.
-        :rtype: str
-        """
-        return self._host_type
-
-    @host_type.setter
-    def host_type(self, host_type):
-        r"""Sets the host_type of this ListCheckRuleHostRequest.
-
-        **参数解释** 检测结果类型 **约束限制** 不涉及 **取值范围** 不涉及 **默认取值** 不涉及
-
-        :param host_type: The host_type of this ListCheckRuleHostRequest.
-        :type host_type: str
-        """
-        self._host_type = host_type
-
-    @property
-    def check_cce(self):
-        r"""Gets the check_cce of this ListCheckRuleHostRequest.
-
-        **参数解释** 是否校验cce **约束限制** 不涉及 **取值范围** - true  : 校验cce - false : 不校验cce  **默认取值** false
-
-        :return: The check_cce of this ListCheckRuleHostRequest.
-        :rtype: bool
-        """
-        return self._check_cce
-
-    @check_cce.setter
-    def check_cce(self, check_cce):
-        r"""Sets the check_cce of this ListCheckRuleHostRequest.
-
-        **参数解释** 是否校验cce **约束限制** 不涉及 **取值范围** - true  : 校验cce - false : 不校验cce  **默认取值** false
-
-        :param check_cce: The check_cce of this ListCheckRuleHostRequest.
-        :type check_cce: bool
-        """
-        self._check_cce = check_cce
-
-    @property
     def cluster_id(self):
         r"""Gets the cluster_id of this ListCheckRuleHostRequest.
 
@@ -364,28 +320,6 @@ class ListCheckRuleHostRequest:
         self._cluster_id = cluster_id
 
     @property
-    def policy_group_id(self):
-        r"""Gets the policy_group_id of this ListCheckRuleHostRequest.
-
-        **参数解释** 策略组ID，不赋值时，查此检查项租户所有主机，host_id存在时，此值无效 **约束限制** 不涉及 **取值范围** 字符长度0-128位 **默认取值** 不涉及
-
-        :return: The policy_group_id of this ListCheckRuleHostRequest.
-        :rtype: str
-        """
-        return self._policy_group_id
-
-    @policy_group_id.setter
-    def policy_group_id(self, policy_group_id):
-        r"""Sets the policy_group_id of this ListCheckRuleHostRequest.
-
-        **参数解释** 策略组ID，不赋值时，查此检查项租户所有主机，host_id存在时，此值无效 **约束限制** 不涉及 **取值范围** 字符长度0-128位 **默认取值** 不涉及
-
-        :param policy_group_id: The policy_group_id of this ListCheckRuleHostRequest.
-        :type policy_group_id: str
-        """
-        self._policy_group_id = policy_group_id
-
-    @property
     def host_name(self):
         r"""Gets the host_name of this ListCheckRuleHostRequest.
 
@@ -406,6 +340,72 @@ class ListCheckRuleHostRequest:
         :type host_name: str
         """
         self._host_name = host_name
+
+    @property
+    def host_type(self):
+        r"""Gets the host_type of this ListCheckRuleHostRequest.
+
+        **参数解释** 主机类型，已废弃 **约束限制** 不涉及 **取值范围** - cce **默认取值** 不涉及
+
+        :return: The host_type of this ListCheckRuleHostRequest.
+        :rtype: str
+        """
+        return self._host_type
+
+    @host_type.setter
+    def host_type(self, host_type):
+        r"""Sets the host_type of this ListCheckRuleHostRequest.
+
+        **参数解释** 主机类型，已废弃 **约束限制** 不涉及 **取值范围** - cce **默认取值** 不涉及
+
+        :param host_type: The host_type of this ListCheckRuleHostRequest.
+        :type host_type: str
+        """
+        self._host_type = host_type
+
+    @property
+    def check_cce(self):
+        r"""Gets the check_cce of this ListCheckRuleHostRequest.
+
+        **参数解释**: 是否只筛选cce主机，已废弃 **约束限制**: 不涉及 **取值范围**: -true：是。 -false：否。 **默认取值**: false 
+
+        :return: The check_cce of this ListCheckRuleHostRequest.
+        :rtype: bool
+        """
+        return self._check_cce
+
+    @check_cce.setter
+    def check_cce(self, check_cce):
+        r"""Sets the check_cce of this ListCheckRuleHostRequest.
+
+        **参数解释**: 是否只筛选cce主机，已废弃 **约束限制**: 不涉及 **取值范围**: -true：是。 -false：否。 **默认取值**: false 
+
+        :param check_cce: The check_cce of this ListCheckRuleHostRequest.
+        :type check_cce: bool
+        """
+        self._check_cce = check_cce
+
+    @property
+    def policy_group_id(self):
+        r"""Gets the policy_group_id of this ListCheckRuleHostRequest.
+
+        **参数解释** 策略组ID，已废弃 **约束限制** 不涉及 **取值范围** 字符长度0-128位 **默认取值** 不涉及
+
+        :return: The policy_group_id of this ListCheckRuleHostRequest.
+        :rtype: str
+        """
+        return self._policy_group_id
+
+    @policy_group_id.setter
+    def policy_group_id(self, policy_group_id):
+        r"""Sets the policy_group_id of this ListCheckRuleHostRequest.
+
+        **参数解释** 策略组ID，已废弃 **约束限制** 不涉及 **取值范围** 字符长度0-128位 **默认取值** 不涉及
+
+        :param policy_group_id: The policy_group_id of this ListCheckRuleHostRequest.
+        :type policy_group_id: str
+        """
+        self._policy_group_id = policy_group_id
 
     def to_dict(self):
         result = {}

@@ -29,9 +29,9 @@ class PartitionMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param name: 分区名称
+        :param name: **参数解释**： 分区名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type name: str
-        :param creation_timestamp: 创建时间
+        :param creation_timestamp: **参数解释**： 创建时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type creation_timestamp: str
         """
         
@@ -50,7 +50,7 @@ class PartitionMetadata:
     def name(self):
         r"""Gets the name of this PartitionMetadata.
 
-        分区名称
+        **参数解释**： 分区名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The name of this PartitionMetadata.
         :rtype: str
@@ -61,7 +61,7 @@ class PartitionMetadata:
     def name(self, name):
         r"""Sets the name of this PartitionMetadata.
 
-        分区名称
+        **参数解释**： 分区名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param name: The name of this PartitionMetadata.
         :type name: str
@@ -72,7 +72,7 @@ class PartitionMetadata:
     def creation_timestamp(self):
         r"""Gets the creation_timestamp of this PartitionMetadata.
 
-        创建时间
+        **参数解释**： 创建时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The creation_timestamp of this PartitionMetadata.
         :rtype: str
@@ -83,7 +83,7 @@ class PartitionMetadata:
     def creation_timestamp(self, creation_timestamp):
         r"""Sets the creation_timestamp of this PartitionMetadata.
 
-        创建时间
+        **参数解释**： 创建时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param creation_timestamp: The creation_timestamp of this PartitionMetadata.
         :type creation_timestamp: str

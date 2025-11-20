@@ -24,8 +24,8 @@ class ListLogContextRequestBody:
     attribute_map = {
         'line_num': 'line_num',
         'time__': '__time__',
-        'backwards_size': 'backwardsSize',
-        'forwards_size': 'forwardsSize'
+        'backwards_size': 'backwards_size',
+        'forwards_size': 'forwards_size'
     }
 
     def __init__(self, line_num=None, time__=None, backwards_size=None, forwards_size=None):

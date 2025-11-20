@@ -33,7 +33,7 @@ class TrainingAllocatedResource:
 
         :param resource_id: 资源ID。
         :type resource_id: str
-        :param charge_mode: 资源计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性计费 &gt; * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。
+        :param charge_mode: 资源计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性计费 &gt; * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。 * ON_DEMAND: 按需
         :type charge_mode: str
         :param expire_time: 资源过期时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;
         :type expire_time: str
@@ -79,7 +79,7 @@ class TrainingAllocatedResource:
     def charge_mode(self):
         r"""Gets the charge_mode of this TrainingAllocatedResource.
 
-        资源计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性计费 > * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。
+        资源计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性计费 > * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。 * ON_DEMAND: 按需
 
         :return: The charge_mode of this TrainingAllocatedResource.
         :rtype: str
@@ -90,7 +90,7 @@ class TrainingAllocatedResource:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this TrainingAllocatedResource.
 
-        资源计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性计费 > * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。
+        资源计费类型。 * PERIODIC: 包周期 * ONE_TIME：一次性计费 > * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。 * ON_DEMAND: 按需
 
         :param charge_mode: The charge_mode of this TrainingAllocatedResource.
         :type charge_mode: str

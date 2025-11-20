@@ -36,9 +36,9 @@ class ShowJobResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param kind: API类型，固定值“Job”，该值不可修改。
+        :param kind: **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Job 
         :type kind: str
-        :param api_version: API版本，固定值“v3”，该值不可修改。
+        :param api_version: **参数解释**： API版本 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： v3 
         :type api_version: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.JobMetadata`
@@ -72,7 +72,7 @@ class ShowJobResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ShowJobResponse.
 
-        API类型，固定值“Job”，该值不可修改。
+        **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Job 
 
         :return: The kind of this ShowJobResponse.
         :rtype: str
@@ -83,7 +83,7 @@ class ShowJobResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ShowJobResponse.
 
-        API类型，固定值“Job”，该值不可修改。
+        **参数解释**： API类型 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： Job 
 
         :param kind: The kind of this ShowJobResponse.
         :type kind: str
@@ -94,7 +94,7 @@ class ShowJobResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ShowJobResponse.
 
-        API版本，固定值“v3”，该值不可修改。
+        **参数解释**： API版本 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :return: The api_version of this ShowJobResponse.
         :rtype: str
@@ -105,7 +105,7 @@ class ShowJobResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ShowJobResponse.
 
-        API版本，固定值“v3”，该值不可修改。
+        **参数解释**： API版本 **约束限制**： 该值不可修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :param api_version: The api_version of this ShowJobResponse.
         :type api_version: str

@@ -31,7 +31,7 @@ class ShowVulScanTaskEstimatedTimeRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param manual_scan_type: **参数解释**: 漏洞手动检测类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms - app_vul - urgent_vul  **默认取值**: 不涉及 
+        :param manual_scan_type: **参数解释**: 漏洞手动检测类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：紧急漏洞  **默认取值**: 不涉及 
         :type manual_scan_type: list[str]
         :param range_type: **参数解释**: 检测的主机范围 **约束限制**: 不涉及 **取值范围**: - all_host：全部主机 - specific_host：部分主机  **默认取值**: 不涉及 
         :type range_type: str
@@ -57,7 +57,7 @@ class ShowVulScanTaskEstimatedTimeRequestInfo:
     def manual_scan_type(self):
         r"""Gets the manual_scan_type of this ShowVulScanTaskEstimatedTimeRequestInfo.
 
-        **参数解释**: 漏洞手动检测类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms - app_vul - urgent_vul  **默认取值**: 不涉及 
+        **参数解释**: 漏洞手动检测类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：紧急漏洞  **默认取值**: 不涉及 
 
         :return: The manual_scan_type of this ShowVulScanTaskEstimatedTimeRequestInfo.
         :rtype: list[str]
@@ -68,7 +68,7 @@ class ShowVulScanTaskEstimatedTimeRequestInfo:
     def manual_scan_type(self, manual_scan_type):
         r"""Sets the manual_scan_type of this ShowVulScanTaskEstimatedTimeRequestInfo.
 
-        **参数解释**: 漏洞手动检测类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms - app_vul - urgent_vul  **默认取值**: 不涉及 
+        **参数解释**: 漏洞手动检测类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：紧急漏洞  **默认取值**: 不涉及 
 
         :param manual_scan_type: The manual_scan_type of this ShowVulScanTaskEstimatedTimeRequestInfo.
         :type manual_scan_type: list[str]

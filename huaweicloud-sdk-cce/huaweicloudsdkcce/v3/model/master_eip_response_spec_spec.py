@@ -31,11 +31,11 @@ class MasterEIPResponseSpecSpec:
 
         The model defined in huaweicloud sdk
 
-        :param id: 弹性网卡ID
+        :param id: **参数解释**： 弹性网卡ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type id: str
         :param eip: 
         :type eip: :class:`huaweicloudsdkcce.v3.EipSpec`
-        :param is_dynamic: 是否动态创建
+        :param is_dynamic: **参数解释**： 是否动态创建 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type is_dynamic: bool
         """
         
@@ -57,7 +57,7 @@ class MasterEIPResponseSpecSpec:
     def id(self):
         r"""Gets the id of this MasterEIPResponseSpecSpec.
 
-        弹性网卡ID
+        **参数解释**： 弹性网卡ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The id of this MasterEIPResponseSpecSpec.
         :rtype: str
@@ -68,7 +68,7 @@ class MasterEIPResponseSpecSpec:
     def id(self, id):
         r"""Sets the id of this MasterEIPResponseSpecSpec.
 
-        弹性网卡ID
+        **参数解释**： 弹性网卡ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param id: The id of this MasterEIPResponseSpecSpec.
         :type id: str
@@ -97,7 +97,7 @@ class MasterEIPResponseSpecSpec:
     def is_dynamic(self):
         r"""Gets the is_dynamic of this MasterEIPResponseSpecSpec.
 
-        是否动态创建
+        **参数解释**： 是否动态创建 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The is_dynamic of this MasterEIPResponseSpecSpec.
         :rtype: bool
@@ -108,7 +108,7 @@ class MasterEIPResponseSpecSpec:
     def is_dynamic(self, is_dynamic):
         r"""Sets the is_dynamic of this MasterEIPResponseSpecSpec.
 
-        是否动态创建
+        **参数解释**： 是否动态创建 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param is_dynamic: The is_dynamic of this MasterEIPResponseSpecSpec.
         :type is_dynamic: bool

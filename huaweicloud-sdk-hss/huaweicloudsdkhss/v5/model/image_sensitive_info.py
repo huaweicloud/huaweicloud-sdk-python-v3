@@ -63,7 +63,7 @@ class ImageSensitiveInfo:
         :type latest_scan_time: int
         :param handle_status: **参数解释**: 是否已处理 **取值范围**: - unhandled：未处理。 - handled：已处理。 
         :type handle_status: str
-        :param operate_accept: **参数解释**: 操作 **取值范围**: - ignore ：忽略。 - do_not_ignore ：取消忽略。 
+        :param operate_accept: **参数解释**: 操作类型 **取值范围**: - ignore ：忽略。 - do_not_ignore ：取消忽略。 
         :type operate_accept: str
         """
         
@@ -304,7 +304,7 @@ class ImageSensitiveInfo:
     def operate_accept(self):
         r"""Gets the operate_accept of this ImageSensitiveInfo.
 
-        **参数解释**: 操作 **取值范围**: - ignore ：忽略。 - do_not_ignore ：取消忽略。 
+        **参数解释**: 操作类型 **取值范围**: - ignore ：忽略。 - do_not_ignore ：取消忽略。 
 
         :return: The operate_accept of this ImageSensitiveInfo.
         :rtype: str
@@ -315,7 +315,7 @@ class ImageSensitiveInfo:
     def operate_accept(self, operate_accept):
         r"""Sets the operate_accept of this ImageSensitiveInfo.
 
-        **参数解释**: 操作 **取值范围**: - ignore ：忽略。 - do_not_ignore ：取消忽略。 
+        **参数解释**: 操作类型 **取值范围**: - ignore ：忽略。 - do_not_ignore ：取消忽略。 
 
         :param operate_accept: The operate_accept of this ImageSensitiveInfo.
         :type operate_accept: str

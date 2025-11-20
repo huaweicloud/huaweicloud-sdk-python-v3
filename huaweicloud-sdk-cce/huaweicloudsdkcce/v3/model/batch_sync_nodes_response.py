@@ -28,7 +28,7 @@ class BatchSyncNodesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: **参数解释**： 固定值\&quot;Start to batch sync nodes\&quot;，表示批量同步节点成功。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type body: str
         """
         
@@ -44,6 +44,8 @@ class BatchSyncNodesResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this BatchSyncNodesResponse.
 
+        **参数解释**： 固定值\"Start to batch sync nodes\"，表示批量同步节点成功。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
         :return: The body of this BatchSyncNodesResponse.
         :rtype: str
         """
@@ -52,6 +54,8 @@ class BatchSyncNodesResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this BatchSyncNodesResponse.
+
+        **参数解释**： 固定值\"Start to batch sync nodes\"，表示批量同步节点成功。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param body: The body of this BatchSyncNodesResponse.
         :type body: str

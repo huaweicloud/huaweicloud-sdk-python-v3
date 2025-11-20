@@ -28,7 +28,7 @@ class DownloadAssetFileResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 导出任务ID
+        :param task_id: **参数解释**： 导出任务ID **取值范围**： 字符长度0-128位 
         :type task_id: str
         """
         
@@ -44,7 +44,7 @@ class DownloadAssetFileResponse(SdkResponse):
     def task_id(self):
         r"""Gets the task_id of this DownloadAssetFileResponse.
 
-        导出任务ID
+        **参数解释**： 导出任务ID **取值范围**： 字符长度0-128位 
 
         :return: The task_id of this DownloadAssetFileResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class DownloadAssetFileResponse(SdkResponse):
     def task_id(self, task_id):
         r"""Sets the task_id of this DownloadAssetFileResponse.
 
-        导出任务ID
+        **参数解释**： 导出任务ID **取值范围**： 字符长度0-128位 
 
         :param task_id: The task_id of this DownloadAssetFileResponse.
         :type task_id: str

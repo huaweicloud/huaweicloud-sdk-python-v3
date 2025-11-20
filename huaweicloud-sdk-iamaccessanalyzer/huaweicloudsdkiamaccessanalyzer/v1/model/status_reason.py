@@ -29,7 +29,7 @@ class StatusReason:
 
         The model defined in huaweicloud sdk
 
-        :param code: 分析器当前状态的原因。
+        :param code: 分析器当前状态的原因。 - delegated_administrator_deregistered：委托管理员未注册 - trusted_service_disabled：可信服务未开启 - internal_error：内部错误 - organization_deleted：组织已删除 - service_linked_agency_creation_failed：服务关联委托创建失败 
         :type code: str
         :param details: 分析器当前状态的详细原因。
         :type details: str
@@ -49,7 +49,7 @@ class StatusReason:
     def code(self):
         r"""Gets the code of this StatusReason.
 
-        分析器当前状态的原因。
+        分析器当前状态的原因。 - delegated_administrator_deregistered：委托管理员未注册 - trusted_service_disabled：可信服务未开启 - internal_error：内部错误 - organization_deleted：组织已删除 - service_linked_agency_creation_failed：服务关联委托创建失败 
 
         :return: The code of this StatusReason.
         :rtype: str
@@ -60,7 +60,7 @@ class StatusReason:
     def code(self, code):
         r"""Sets the code of this StatusReason.
 
-        分析器当前状态的原因。
+        分析器当前状态的原因。 - delegated_administrator_deregistered：委托管理员未注册 - trusted_service_disabled：可信服务未开启 - internal_error：内部错误 - organization_deleted：组织已删除 - service_linked_agency_creation_failed：服务关联委托创建失败 
 
         :param code: The code of this StatusReason.
         :type code: str

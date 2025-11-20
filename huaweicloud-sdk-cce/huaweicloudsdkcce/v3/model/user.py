@@ -29,9 +29,9 @@ class User:
 
         The model defined in huaweicloud sdk
 
-        :param client_certificate_data: 客户端证书。 
+        :param client_certificate_data: **参数解释**： 客户端证书。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type client_certificate_data: str
-        :param client_key_data: 包含来自TLS客户端密钥文件的PEM编码数据。 
+        :param client_key_data: **参数解释**： 包含来自TLS客户端密钥文件的PEM编码数据。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type client_key_data: str
         """
         
@@ -50,7 +50,7 @@ class User:
     def client_certificate_data(self):
         r"""Gets the client_certificate_data of this User.
 
-        客户端证书。 
+        **参数解释**： 客户端证书。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The client_certificate_data of this User.
         :rtype: str
@@ -61,7 +61,7 @@ class User:
     def client_certificate_data(self, client_certificate_data):
         r"""Sets the client_certificate_data of this User.
 
-        客户端证书。 
+        **参数解释**： 客户端证书。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param client_certificate_data: The client_certificate_data of this User.
         :type client_certificate_data: str
@@ -72,7 +72,7 @@ class User:
     def client_key_data(self):
         r"""Gets the client_key_data of this User.
 
-        包含来自TLS客户端密钥文件的PEM编码数据。 
+        **参数解释**： 包含来自TLS客户端密钥文件的PEM编码数据。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The client_key_data of this User.
         :rtype: str
@@ -83,7 +83,7 @@ class User:
     def client_key_data(self, client_key_data):
         r"""Sets the client_key_data of this User.
 
-        包含来自TLS客户端密钥文件的PEM编码数据。 
+        **参数解释**： 包含来自TLS客户端密钥文件的PEM编码数据。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param client_key_data: The client_key_data of this User.
         :type client_key_data: str

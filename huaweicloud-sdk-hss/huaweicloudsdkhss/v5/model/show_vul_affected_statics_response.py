@@ -22,8 +22,8 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
         'container_num': 'int',
         'data_list': 'list[VulAffectedStatisticsResponseInfoDataList]',
         'total_vul_num': 'int',
-        'extend_tips': 'str',
-        'extend_text_tips': 'str',
+        'extend_tips': 'list[str]',
+        'extend_text_tips': 'list[str]',
         'disabled_operate_types': 'VulAffectedStatisticsResponseInfoDisabledOperateTypes',
         'cce_vul_num': 'int',
         'basic_host_num': 'int',
@@ -62,10 +62,10 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulAffectedStatisticsResponseInfoDataList`]
         :param total_vul_num: **参数解释**: 影响的总漏洞条数(主机+漏洞 以此维度计算) **取值范围**: 最小值0，最大值2147483647 
         :type total_vul_num: int
-        :param extend_tips: **参数解释**: 漏洞修复提示 **取值范围**: - cce_kernel_vul_tips：cce内核修复提示信息 - ubuntu_pro_tips：ubuntu pro的修复提示 
-        :type extend_tips: str
-        :param extend_text_tips: **参数解释**: 漏洞修复提示文本 **取值范围**: 字符长度0-4096位 
-        :type extend_text_tips: str
+        :param extend_tips: 
+        :type extend_tips: list[str]
+        :param extend_text_tips: 
+        :type extend_text_tips: list[str]
         :param disabled_operate_types: 
         :type disabled_operate_types: :class:`huaweicloudsdkhss.v5.VulAffectedStatisticsResponseInfoDisabledOperateTypes`
         :param cce_vul_num: **参数解释**: CCE漏洞数量 **取值范围**: 最小值0，最大值2147483647 
@@ -253,10 +253,8 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
     def extend_tips(self):
         r"""Gets the extend_tips of this ShowVulAffectedStaticsResponse.
 
-        **参数解释**: 漏洞修复提示 **取值范围**: - cce_kernel_vul_tips：cce内核修复提示信息 - ubuntu_pro_tips：ubuntu pro的修复提示 
-
         :return: The extend_tips of this ShowVulAffectedStaticsResponse.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._extend_tips
 
@@ -264,10 +262,8 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
     def extend_tips(self, extend_tips):
         r"""Sets the extend_tips of this ShowVulAffectedStaticsResponse.
 
-        **参数解释**: 漏洞修复提示 **取值范围**: - cce_kernel_vul_tips：cce内核修复提示信息 - ubuntu_pro_tips：ubuntu pro的修复提示 
-
         :param extend_tips: The extend_tips of this ShowVulAffectedStaticsResponse.
-        :type extend_tips: str
+        :type extend_tips: list[str]
         """
         self._extend_tips = extend_tips
 
@@ -275,10 +271,8 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
     def extend_text_tips(self):
         r"""Gets the extend_text_tips of this ShowVulAffectedStaticsResponse.
 
-        **参数解释**: 漏洞修复提示文本 **取值范围**: 字符长度0-4096位 
-
         :return: The extend_text_tips of this ShowVulAffectedStaticsResponse.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._extend_text_tips
 
@@ -286,10 +280,8 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
     def extend_text_tips(self, extend_text_tips):
         r"""Sets the extend_text_tips of this ShowVulAffectedStaticsResponse.
 
-        **参数解释**: 漏洞修复提示文本 **取值范围**: 字符长度0-4096位 
-
         :param extend_text_tips: The extend_text_tips of this ShowVulAffectedStaticsResponse.
-        :type extend_text_tips: str
+        :type extend_text_tips: list[str]
         """
         self._extend_text_tips = extend_text_tips
 

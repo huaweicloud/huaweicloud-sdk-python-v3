@@ -17,16 +17,20 @@ class GetDetailfNodesInfo:
     openapi_types = {
         'status': 'str',
         'port': 'str',
-        'ip': 'str'
+        'ip': 'str',
+        'group_id': 'str',
+        'node_id': 'str'
     }
 
     attribute_map = {
         'status': 'status',
         'port': 'port',
-        'ip': 'ip'
+        'ip': 'ip',
+        'group_id': 'group_id',
+        'node_id': 'node_id'
     }
 
-    def __init__(self, status=None, port=None, ip=None):
+    def __init__(self, status=None, port=None, ip=None, group_id=None, node_id=None):
         r"""GetDetailfNodesInfo
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class GetDetailfNodesInfo:
         :type port: str
         :param ip: DDM实例节点IP。
         :type ip: str
+        :param group_id: 节点所在组ID。
+        :type group_id: str
+        :param node_id: 节点ID。
+        :type node_id: str
         """
         
         
@@ -44,11 +52,15 @@ class GetDetailfNodesInfo:
         self._status = None
         self._port = None
         self._ip = None
+        self._group_id = None
+        self._node_id = None
         self.discriminator = None
 
         self.status = status
         self.port = port
         self.ip = ip
+        self.group_id = group_id
+        self.node_id = node_id
 
     @property
     def status(self):
@@ -115,6 +127,50 @@ class GetDetailfNodesInfo:
         :type ip: str
         """
         self._ip = ip
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this GetDetailfNodesInfo.
+
+        节点所在组ID。
+
+        :return: The group_id of this GetDetailfNodesInfo.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this GetDetailfNodesInfo.
+
+        节点所在组ID。
+
+        :param group_id: The group_id of this GetDetailfNodesInfo.
+        :type group_id: str
+        """
+        self._group_id = group_id
+
+    @property
+    def node_id(self):
+        r"""Gets the node_id of this GetDetailfNodesInfo.
+
+        节点ID。
+
+        :return: The node_id of this GetDetailfNodesInfo.
+        :rtype: str
+        """
+        return self._node_id
+
+    @node_id.setter
+    def node_id(self, node_id):
+        r"""Sets the node_id of this GetDetailfNodesInfo.
+
+        节点ID。
+
+        :param node_id: The node_id of this GetDetailfNodesInfo.
+        :type node_id: str
+        """
+        self._node_id = node_id
 
     def to_dict(self):
         result = {}

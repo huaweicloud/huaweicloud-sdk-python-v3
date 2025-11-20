@@ -119,7 +119,7 @@ class BatchExportSWRBaselineInfoRequestInfo:
         :type has_unsafe_setting: bool
         :param risky: **参数解释**： 是否有安全风险 **约束限制**: 不涉及 **取值范围**： - true：是。 - false：否。  **默认取值**: 不涉及 
         :type risky: bool
-        :param severity_level: **参数解释**: 镜像风险程度，在镜像扫描完成后展示，包含如下: **约束限制**: 不涉及 **取值范围**: - Security : 安全。 - Low : 低危。 - Medium : 中危。 - High : 高危。  **默认取值**: 不涉及 
+        :param severity_level: **参数解释**: 镜像风险程度，在镜像扫描完成后展示 **约束限制**: 不涉及 **取值范围**: - Security : 安全。 - Low : 低危。 - Medium : 中危。 - High : 高危。  **默认取值**: 不涉及 
         :type severity_level: str
         :param instance_name: **参数解释**: 企业镜像实例名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-128位 **默认取值**: 不涉及 
         :type instance_name: str
@@ -650,7 +650,7 @@ class BatchExportSWRBaselineInfoRequestInfo:
     def severity_level(self):
         r"""Gets the severity_level of this BatchExportSWRBaselineInfoRequestInfo.
 
-        **参数解释**: 镜像风险程度，在镜像扫描完成后展示，包含如下: **约束限制**: 不涉及 **取值范围**: - Security : 安全。 - Low : 低危。 - Medium : 中危。 - High : 高危。  **默认取值**: 不涉及 
+        **参数解释**: 镜像风险程度，在镜像扫描完成后展示 **约束限制**: 不涉及 **取值范围**: - Security : 安全。 - Low : 低危。 - Medium : 中危。 - High : 高危。  **默认取值**: 不涉及 
 
         :return: The severity_level of this BatchExportSWRBaselineInfoRequestInfo.
         :rtype: str
@@ -661,7 +661,7 @@ class BatchExportSWRBaselineInfoRequestInfo:
     def severity_level(self, severity_level):
         r"""Sets the severity_level of this BatchExportSWRBaselineInfoRequestInfo.
 
-        **参数解释**: 镜像风险程度，在镜像扫描完成后展示，包含如下: **约束限制**: 不涉及 **取值范围**: - Security : 安全。 - Low : 低危。 - Medium : 中危。 - High : 高危。  **默认取值**: 不涉及 
+        **参数解释**: 镜像风险程度，在镜像扫描完成后展示 **约束限制**: 不涉及 **取值范围**: - Security : 安全。 - Low : 低危。 - Medium : 中危。 - High : 高危。  **默认取值**: 不涉及 
 
         :param severity_level: The severity_level of this BatchExportSWRBaselineInfoRequestInfo.
         :type severity_level: str

@@ -13422,6 +13422,154 @@ class RdsAsyncClient(Client):
 
         return http_info
 
+    def list_db_agent_job_history_steps_async(self, request):
+        r"""查询数据库代理作业执行历史步骤
+
+        查询数据库代理作业执行历史步骤。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDbAgentJobHistorySteps
+        :type request: :class:`huaweicloudsdkrds.v3.ListDbAgentJobHistoryStepsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListDbAgentJobHistoryStepsResponse`
+        """
+        http_info = self._list_db_agent_job_history_steps_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_db_agent_job_history_steps_async_invoker(self, request):
+        http_info = self._list_db_agent_job_history_steps_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_db_agent_job_history_steps_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-jobs/histories/{history_id}/steps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDbAgentJobHistoryStepsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'history_id' in local_var_params:
+            path_params['history_id'] = local_var_params['history_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_db_agent_job_historys_async(self, request):
+        r"""查询数据库代理作业执行历史
+
+        查询数据库代理作业执行历史。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDbAgentJobHistorys
+        :type request: :class:`huaweicloudsdkrds.v3.ListDbAgentJobHistorysRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListDbAgentJobHistorysResponse`
+        """
+        http_info = self._list_db_agent_job_historys_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_db_agent_job_historys_async_invoker(self, request):
+        http_info = self._list_db_agent_job_historys_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_db_agent_job_historys_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-jobs/{job_id}/histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDbAgentJobHistorysResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+        if 'run_status' in local_var_params:
+            query_params.append(('run_status', local_var_params['run_status']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_db_agent_jobs_async(self, request):
         r"""查询数据库代理作业列表
 
@@ -14056,6 +14204,211 @@ class RdsAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def refresh_publication_snapshot_async(self, request):
+        r"""重新生成发布快照
+
+        重新生成发布快照。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RefreshPublicationSnapshot
+        :type request: :class:`huaweicloudsdkrds.v3.RefreshPublicationSnapshotRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.RefreshPublicationSnapshotResponse`
+        """
+        http_info = self._refresh_publication_snapshot_http_info(request)
+        return self._call_api(**http_info)
+
+    def refresh_publication_snapshot_async_invoker(self, request):
+        http_info = self._refresh_publication_snapshot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _refresh_publication_snapshot_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/publications/{publication_id}/reinitialize",
+            "request_type": request.__class__.__name__,
+            "response_type": "RefreshPublicationSnapshotResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'publication_id' in local_var_params:
+            path_params['publication_id'] = local_var_params['publication_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def refresh_subscription_async(self, request):
+        r"""重新生成订阅
+
+        重新生成订阅。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RefreshSubscription
+        :type request: :class:`huaweicloudsdkrds.v3.RefreshSubscriptionRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.RefreshSubscriptionResponse`
+        """
+        http_info = self._refresh_subscription_http_info(request)
+        return self._call_api(**http_info)
+
+    def refresh_subscription_async_invoker(self, request):
+        http_info = self._refresh_subscription_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _refresh_subscription_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/subscriptions/{subscription_id}/reinitialize",
+            "request_type": request.__class__.__name__,
+            "response_type": "RefreshSubscriptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'subscription_id' in local_var_params:
+            path_params['subscription_id'] = local_var_params['subscription_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sync_replication_metadata_async(self, request):
+        r"""同步发布订阅元数据
+
+        同步发布订阅元数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncReplicationMetadata
+        :type request: :class:`huaweicloudsdkrds.v3.SyncReplicationMetadataRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SyncReplicationMetadataResponse`
+        """
+        http_info = self._sync_replication_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_replication_metadata_async_invoker(self, request):
+        http_info = self._sync_replication_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_replication_metadata_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replication/metadata/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncReplicationMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

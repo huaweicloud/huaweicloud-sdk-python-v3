@@ -20,7 +20,9 @@ class ListWafQpsRequest:
         'start_time': 'str',
         'end_time': 'str',
         'recent': 'str',
-        'overseas_type': 'int'
+        'overseas_type': 'int',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ListWafQpsRequest:
         'start_time': 'start_time',
         'end_time': 'end_time',
         'recent': 'recent',
-        'overseas_type': 'overseas_type'
+        'overseas_type': 'overseas_type',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, domains=None, value_type=None, start_time=None, end_time=None, recent=None, overseas_type=None):
+    def __init__(self, domains=None, value_type=None, start_time=None, end_time=None, recent=None, overseas_type=None, limit=None, offset=None):
         r"""ListWafQpsRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class ListWafQpsRequest:
         :type recent: str
         :param overseas_type: 实例类型，0-大陆，1-海外
         :type overseas_type: int
+        :param limit: 限制条数
+        :type limit: int
+        :param offset: 偏移量
+        :type offset: int
         """
         
         
@@ -59,6 +67,8 @@ class ListWafQpsRequest:
         self._end_time = None
         self._recent = None
         self._overseas_type = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         if domains is not None:
@@ -72,6 +82,10 @@ class ListWafQpsRequest:
             self.recent = recent
         if overseas_type is not None:
             self.overseas_type = overseas_type
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def domains(self):
@@ -204,6 +218,50 @@ class ListWafQpsRequest:
         :type overseas_type: int
         """
         self._overseas_type = overseas_type
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListWafQpsRequest.
+
+        限制条数
+
+        :return: The limit of this ListWafQpsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListWafQpsRequest.
+
+        限制条数
+
+        :param limit: The limit of this ListWafQpsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListWafQpsRequest.
+
+        偏移量
+
+        :return: The offset of this ListWafQpsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListWafQpsRequest.
+
+        偏移量
+
+        :param offset: The offset of this ListWafQpsRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

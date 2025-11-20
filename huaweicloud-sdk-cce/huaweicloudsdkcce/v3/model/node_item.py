@@ -27,7 +27,7 @@ class NodeItem:
 
         The model defined in huaweicloud sdk
 
-        :param uid: 节点ID
+        :param uid: **参数解释**： 节点ID，节点ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type uid: str
         """
         
@@ -42,7 +42,7 @@ class NodeItem:
     def uid(self):
         r"""Gets the uid of this NodeItem.
 
-        节点ID
+        **参数解释**： 节点ID，节点ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The uid of this NodeItem.
         :rtype: str
@@ -53,7 +53,7 @@ class NodeItem:
     def uid(self, uid):
         r"""Sets the uid of this NodeItem.
 
-        节点ID
+        **参数解释**： 节点ID，节点ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param uid: The uid of this NodeItem.
         :type uid: str

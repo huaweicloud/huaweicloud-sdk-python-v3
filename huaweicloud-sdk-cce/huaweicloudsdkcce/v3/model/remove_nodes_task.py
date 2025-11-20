@@ -33,9 +33,9 @@ class RemoveNodesTask:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: API版本，固定值“v3”。
+        :param api_version: **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
         :type api_version: str
-        :param kind: API类型，固定值“RemoveNodesTask”。
+        :param kind: **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： RemoveNodesTask 
         :type kind: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
@@ -63,7 +63,7 @@ class RemoveNodesTask:
     def api_version(self):
         r"""Gets the api_version of this RemoveNodesTask.
 
-        API版本，固定值“v3”。
+        **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :return: The api_version of this RemoveNodesTask.
         :rtype: str
@@ -74,7 +74,7 @@ class RemoveNodesTask:
     def api_version(self, api_version):
         r"""Sets the api_version of this RemoveNodesTask.
 
-        API版本，固定值“v3”。
+        **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :param api_version: The api_version of this RemoveNodesTask.
         :type api_version: str
@@ -85,7 +85,7 @@ class RemoveNodesTask:
     def kind(self):
         r"""Gets the kind of this RemoveNodesTask.
 
-        API类型，固定值“RemoveNodesTask”。
+        **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： RemoveNodesTask 
 
         :return: The kind of this RemoveNodesTask.
         :rtype: str
@@ -96,7 +96,7 @@ class RemoveNodesTask:
     def kind(self, kind):
         r"""Sets the kind of this RemoveNodesTask.
 
-        API类型，固定值“RemoveNodesTask”。
+        **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： RemoveNodesTask 
 
         :param kind: The kind of this RemoveNodesTask.
         :type kind: str

@@ -33,13 +33,13 @@ class Premium:
 
         The model defined in huaweicloud sdk
 
-        :param purchased: 是否开通独享模式
+        :param purchased: **参数解释：** 是否开通独享模式 **取值范围：** 不涉及
         :type purchased: bool
-        :param total: 独享实例数量，包括elb
+        :param total: **参数解释：** 独享实例数量，包括elb **取值范围：** 不涉及
         :type total: int
-        :param elb: elb实例数量
+        :param elb: **参数解释：** elb实例数量 **取值范围：** 不涉及
         :type elb: int
-        :param dedicated: 独享WAF实例数量
+        :param dedicated: **参数解释：** 独享WAF实例数量 **取值范围：** 不涉及
         :type dedicated: int
         """
         
@@ -64,7 +64,7 @@ class Premium:
     def purchased(self):
         r"""Gets the purchased of this Premium.
 
-        是否开通独享模式
+        **参数解释：** 是否开通独享模式 **取值范围：** 不涉及
 
         :return: The purchased of this Premium.
         :rtype: bool
@@ -75,7 +75,7 @@ class Premium:
     def purchased(self, purchased):
         r"""Sets the purchased of this Premium.
 
-        是否开通独享模式
+        **参数解释：** 是否开通独享模式 **取值范围：** 不涉及
 
         :param purchased: The purchased of this Premium.
         :type purchased: bool
@@ -86,7 +86,7 @@ class Premium:
     def total(self):
         r"""Gets the total of this Premium.
 
-        独享实例数量，包括elb
+        **参数解释：** 独享实例数量，包括elb **取值范围：** 不涉及
 
         :return: The total of this Premium.
         :rtype: int
@@ -97,7 +97,7 @@ class Premium:
     def total(self, total):
         r"""Sets the total of this Premium.
 
-        独享实例数量，包括elb
+        **参数解释：** 独享实例数量，包括elb **取值范围：** 不涉及
 
         :param total: The total of this Premium.
         :type total: int
@@ -108,7 +108,7 @@ class Premium:
     def elb(self):
         r"""Gets the elb of this Premium.
 
-        elb实例数量
+        **参数解释：** elb实例数量 **取值范围：** 不涉及
 
         :return: The elb of this Premium.
         :rtype: int
@@ -119,7 +119,7 @@ class Premium:
     def elb(self, elb):
         r"""Sets the elb of this Premium.
 
-        elb实例数量
+        **参数解释：** elb实例数量 **取值范围：** 不涉及
 
         :param elb: The elb of this Premium.
         :type elb: int
@@ -130,7 +130,7 @@ class Premium:
     def dedicated(self):
         r"""Gets the dedicated of this Premium.
 
-        独享WAF实例数量
+        **参数解释：** 独享WAF实例数量 **取值范围：** 不涉及
 
         :return: The dedicated of this Premium.
         :rtype: int
@@ -141,7 +141,7 @@ class Premium:
     def dedicated(self, dedicated):
         r"""Sets the dedicated of this Premium.
 
-        独享WAF实例数量
+        **参数解释：** 独享WAF实例数量 **取值范围：** 不涉及
 
         :param dedicated: The dedicated of this Premium.
         :type dedicated: int

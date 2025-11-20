@@ -31,7 +31,7 @@ class FindingFilter:
 
         :param criterion: 
         :type criterion: :class:`huaweicloudsdkiamaccessanalyzer.v1.Criterion`
-        :param key: 过滤键。
+        :param key: 过滤键。 - resource：资源URN - resource_type：资源类型 - resource_owner_account：资源所有者账号 - is_public：公共访问权限 - id：分析结果ID - status：分析结果类型 - principal_type：主体类型 - principal_identifier：主体Identifier - change_type：分析结果状态的变化 - existing_finding_id：已有分析结果ID - existing_finding_status：已有分析结果状态 - condition.g:PrincipalUrn：主体URN - condition.g:PrincipalId：主体ID - condition.g:PrincipalAccount：主体账号 - condition.g:PrincipalOrgId：主体OrgID - condition.g:PrincipalOrgPath：主体组织路径 - condition.g:PrincipalOrgManagementAccountId：主体组织管理账号ID - condition.g:SourceIp：源IP - condition.g:SourceVpc：源VPC - condition.g:SourceVpce：源VPCE - finding_type：分析结果类型 
         :type key: str
         """
         
@@ -66,7 +66,7 @@ class FindingFilter:
     def key(self):
         r"""Gets the key of this FindingFilter.
 
-        过滤键。
+        过滤键。 - resource：资源URN - resource_type：资源类型 - resource_owner_account：资源所有者账号 - is_public：公共访问权限 - id：分析结果ID - status：分析结果类型 - principal_type：主体类型 - principal_identifier：主体Identifier - change_type：分析结果状态的变化 - existing_finding_id：已有分析结果ID - existing_finding_status：已有分析结果状态 - condition.g:PrincipalUrn：主体URN - condition.g:PrincipalId：主体ID - condition.g:PrincipalAccount：主体账号 - condition.g:PrincipalOrgId：主体OrgID - condition.g:PrincipalOrgPath：主体组织路径 - condition.g:PrincipalOrgManagementAccountId：主体组织管理账号ID - condition.g:SourceIp：源IP - condition.g:SourceVpc：源VPC - condition.g:SourceVpce：源VPCE - finding_type：分析结果类型 
 
         :return: The key of this FindingFilter.
         :rtype: str
@@ -77,7 +77,7 @@ class FindingFilter:
     def key(self, key):
         r"""Sets the key of this FindingFilter.
 
-        过滤键。
+        过滤键。 - resource：资源URN - resource_type：资源类型 - resource_owner_account：资源所有者账号 - is_public：公共访问权限 - id：分析结果ID - status：分析结果类型 - principal_type：主体类型 - principal_identifier：主体Identifier - change_type：分析结果状态的变化 - existing_finding_id：已有分析结果ID - existing_finding_status：已有分析结果状态 - condition.g:PrincipalUrn：主体URN - condition.g:PrincipalId：主体ID - condition.g:PrincipalAccount：主体账号 - condition.g:PrincipalOrgId：主体OrgID - condition.g:PrincipalOrgPath：主体组织路径 - condition.g:PrincipalOrgManagementAccountId：主体组织管理账号ID - condition.g:SourceIp：源IP - condition.g:SourceVpc：源VPC - condition.g:SourceVpce：源VPCE - finding_type：分析结果类型 
 
         :param key: The key of this FindingFilter.
         :type key: str

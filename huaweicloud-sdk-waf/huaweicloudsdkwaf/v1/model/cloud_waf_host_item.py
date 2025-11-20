@@ -87,9 +87,9 @@ class CloudWafHostItem:
         :type protect_status: int
         :param access_status: 域名接入状态，0表示未接入，1表示已接入
         :type access_status: int
-        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
         :type exclusive_ip: bool
-        :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
+        :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
         :type paid_type: str
         :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
         :type web_tag: str
@@ -448,7 +448,7 @@ class CloudWafHostItem:
     def exclusive_ip(self):
         r"""Gets the exclusive_ip of this CloudWafHostItem.
 
-        是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
 
         :return: The exclusive_ip of this CloudWafHostItem.
         :rtype: bool
@@ -459,7 +459,7 @@ class CloudWafHostItem:
     def exclusive_ip(self, exclusive_ip):
         r"""Sets the exclusive_ip of this CloudWafHostItem.
 
-        是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
 
         :param exclusive_ip: The exclusive_ip of this CloudWafHostItem.
         :type exclusive_ip: bool
@@ -470,7 +470,7 @@ class CloudWafHostItem:
     def paid_type(self):
         r"""Gets the paid_type of this CloudWafHostItem.
 
-        套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
+        套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
 
         :return: The paid_type of this CloudWafHostItem.
         :rtype: str
@@ -481,7 +481,7 @@ class CloudWafHostItem:
     def paid_type(self, paid_type):
         r"""Sets the paid_type of this CloudWafHostItem.
 
-        套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
+        套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
 
         :param paid_type: The paid_type of this CloudWafHostItem.
         :type paid_type: str

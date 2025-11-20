@@ -27,7 +27,7 @@ class PartitionReqBodyMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param name: 分区名称
+        :param name: **参数解释**： 分区名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type name: str
         """
         
@@ -43,7 +43,7 @@ class PartitionReqBodyMetadata:
     def name(self):
         r"""Gets the name of this PartitionReqBodyMetadata.
 
-        分区名称
+        **参数解释**： 分区名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The name of this PartitionReqBodyMetadata.
         :rtype: str
@@ -54,7 +54,7 @@ class PartitionReqBodyMetadata:
     def name(self, name):
         r"""Sets the name of this PartitionReqBodyMetadata.
 
-        分区名称
+        **参数解释**： 分区名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param name: The name of this PartitionReqBodyMetadata.
         :type name: str

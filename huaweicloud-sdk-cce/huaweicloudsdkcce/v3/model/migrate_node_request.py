@@ -33,7 +33,7 @@ class MigrateNodeRequest:
 
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
-        :param target_cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :param target_cluster_id: **参数解释**： 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type target_cluster_id: str
         :param body: Body of the MigrateNodeRequest
         :type body: :class:`huaweicloudsdkcce.v3.MigrateNodesTask`
@@ -77,7 +77,7 @@ class MigrateNodeRequest:
     def target_cluster_id(self):
         r"""Gets the target_cluster_id of this MigrateNodeRequest.
 
-        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        **参数解释**： 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The target_cluster_id of this MigrateNodeRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class MigrateNodeRequest:
     def target_cluster_id(self, target_cluster_id):
         r"""Sets the target_cluster_id of this MigrateNodeRequest.
 
-        集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        **参数解释**： 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param target_cluster_id: The target_cluster_id of this MigrateNodeRequest.
         :type target_cluster_id: str

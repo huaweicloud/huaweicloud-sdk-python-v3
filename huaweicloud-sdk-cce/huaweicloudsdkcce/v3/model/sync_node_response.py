@@ -28,7 +28,7 @@ class SyncNodeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: **参数解释**： 固定值\&quot;Sync node success\&quot;，表示同步节点成功。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type body: str
         """
         
@@ -44,6 +44,8 @@ class SyncNodeResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this SyncNodeResponse.
 
+        **参数解释**： 固定值\"Sync node success\"，表示同步节点成功。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
         :return: The body of this SyncNodeResponse.
         :rtype: str
         """
@@ -52,6 +54,8 @@ class SyncNodeResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this SyncNodeResponse.
+
+        **参数解释**： 固定值\"Sync node success\"，表示同步节点成功。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param body: The body of this SyncNodeResponse.
         :type body: str

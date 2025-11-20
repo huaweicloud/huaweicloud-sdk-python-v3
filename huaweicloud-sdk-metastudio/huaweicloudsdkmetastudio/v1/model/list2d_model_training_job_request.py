@@ -18,39 +18,49 @@ class List2dModelTrainingJobRequest:
         'x_app_user_id': 'str',
         'offset': 'int',
         'limit': 'int',
+        'state': 'str',
         'sort_key': 'str',
         'sort_dir': 'str',
         'create_until': 'str',
         'create_since': 'str',
-        'state': 'str',
         'query_project_id': 'str',
+        'update_since': 'str',
+        'update_until': 'str',
         'batch_name': 'str',
         'tag': 'str',
         'job_id': 'str',
         'name': 'str',
         'model_resolution': 'str',
-        'is_flexus': 'bool'
+        'is_flexus': 'bool',
+        'is_live_copy': 'bool',
+        'train_location': 'str',
+        'is_ondemand_resource': 'bool'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
         'offset': 'offset',
         'limit': 'limit',
+        'state': 'state',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
         'create_until': 'create_until',
         'create_since': 'create_since',
-        'state': 'state',
         'query_project_id': 'query_project_id',
+        'update_since': 'update_since',
+        'update_until': 'update_until',
         'batch_name': 'batch_name',
         'tag': 'tag',
         'job_id': 'job_id',
         'name': 'name',
         'model_resolution': 'model_resolution',
-        'is_flexus': 'is_flexus'
+        'is_flexus': 'is_flexus',
+        'is_live_copy': 'is_live_copy',
+        'train_location': 'train_location',
+        'is_ondemand_resource': 'is_ondemand_resource'
     }
 
-    def __init__(self, x_app_user_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, state=None, query_project_id=None, batch_name=None, tag=None, job_id=None, name=None, model_resolution=None, is_flexus=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, query_project_id=None, update_since=None, update_until=None, batch_name=None, tag=None, job_id=None, name=None, model_resolution=None, is_flexus=None, is_live_copy=None, train_location=None, is_ondemand_resource=None):
         r"""List2dModelTrainingJobRequest
 
         The model defined in huaweicloud sdk
@@ -61,6 +71,8 @@ class List2dModelTrainingJobRequest:
         :type offset: int
         :param limit: 每页显示的条目数量。
         :type limit: int
+        :param state: 任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state&#x3D;CREATING,PUBLISHED
+        :type state: str
         :param sort_key: 排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
         :type sort_key: str
         :param sort_dir: 排序方式。 * asc：升序 * desc：降序  默认asc升序。
@@ -69,10 +81,12 @@ class List2dModelTrainingJobRequest:
         :type create_until: str
         :param create_since: 过滤创建时间&gt;&#x3D;输入时间的记录。
         :type create_since: str
-        :param state: 任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state&#x3D;CREATING,PUBLISHED
-        :type state: str
         :param query_project_id: 查询租户id。
         :type query_project_id: str
+        :param update_since: 过滤更新时间&gt;&#x3D;输入时间的记录。
+        :type update_since: str
+        :param update_until: 过滤更新时间&gt;&#x3D;输入时间的记录。
+        :type update_until: str
         :param batch_name: 任务批次名称。
         :type batch_name: str
         :param tag: 任务标签。
@@ -85,6 +99,12 @@ class List2dModelTrainingJobRequest:
         :type model_resolution: str
         :param is_flexus: 是否是flexus任务
         :type is_flexus: bool
+        :param is_live_copy: 是否是直播间复刻任务
+        :type is_live_copy: bool
+        :param train_location: 训练region
+        :type train_location: str
+        :param is_ondemand_resource: 是否测试版
+        :type is_ondemand_resource: bool
         """
         
         
@@ -92,18 +112,23 @@ class List2dModelTrainingJobRequest:
         self._x_app_user_id = None
         self._offset = None
         self._limit = None
+        self._state = None
         self._sort_key = None
         self._sort_dir = None
         self._create_until = None
         self._create_since = None
-        self._state = None
         self._query_project_id = None
+        self._update_since = None
+        self._update_until = None
         self._batch_name = None
         self._tag = None
         self._job_id = None
         self._name = None
         self._model_resolution = None
         self._is_flexus = None
+        self._is_live_copy = None
+        self._train_location = None
+        self._is_ondemand_resource = None
         self.discriminator = None
 
         if x_app_user_id is not None:
@@ -112,6 +137,8 @@ class List2dModelTrainingJobRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if state is not None:
+            self.state = state
         if sort_key is not None:
             self.sort_key = sort_key
         if sort_dir is not None:
@@ -120,10 +147,12 @@ class List2dModelTrainingJobRequest:
             self.create_until = create_until
         if create_since is not None:
             self.create_since = create_since
-        if state is not None:
-            self.state = state
         if query_project_id is not None:
             self.query_project_id = query_project_id
+        if update_since is not None:
+            self.update_since = update_since
+        if update_until is not None:
+            self.update_until = update_until
         if batch_name is not None:
             self.batch_name = batch_name
         if tag is not None:
@@ -136,6 +165,12 @@ class List2dModelTrainingJobRequest:
             self.model_resolution = model_resolution
         if is_flexus is not None:
             self.is_flexus = is_flexus
+        if is_live_copy is not None:
+            self.is_live_copy = is_live_copy
+        if train_location is not None:
+            self.train_location = train_location
+        if is_ondemand_resource is not None:
+            self.is_ondemand_resource = is_ondemand_resource
 
     @property
     def x_app_user_id(self):
@@ -202,6 +237,28 @@ class List2dModelTrainingJobRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def state(self):
+        r"""Gets the state of this List2dModelTrainingJobRequest.
+
+        任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
+
+        :return: The state of this List2dModelTrainingJobRequest.
+        :rtype: str
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        r"""Sets the state of this List2dModelTrainingJobRequest.
+
+        任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
+
+        :param state: The state of this List2dModelTrainingJobRequest.
+        :type state: str
+        """
+        self._state = state
 
     @property
     def sort_key(self):
@@ -292,28 +349,6 @@ class List2dModelTrainingJobRequest:
         self._create_since = create_since
 
     @property
-    def state(self):
-        r"""Gets the state of this List2dModelTrainingJobRequest.
-
-        任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
-
-        :return: The state of this List2dModelTrainingJobRequest.
-        :rtype: str
-        """
-        return self._state
-
-    @state.setter
-    def state(self, state):
-        r"""Sets the state of this List2dModelTrainingJobRequest.
-
-        任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
-
-        :param state: The state of this List2dModelTrainingJobRequest.
-        :type state: str
-        """
-        self._state = state
-
-    @property
     def query_project_id(self):
         r"""Gets the query_project_id of this List2dModelTrainingJobRequest.
 
@@ -334,6 +369,50 @@ class List2dModelTrainingJobRequest:
         :type query_project_id: str
         """
         self._query_project_id = query_project_id
+
+    @property
+    def update_since(self):
+        r"""Gets the update_since of this List2dModelTrainingJobRequest.
+
+        过滤更新时间>=输入时间的记录。
+
+        :return: The update_since of this List2dModelTrainingJobRequest.
+        :rtype: str
+        """
+        return self._update_since
+
+    @update_since.setter
+    def update_since(self, update_since):
+        r"""Sets the update_since of this List2dModelTrainingJobRequest.
+
+        过滤更新时间>=输入时间的记录。
+
+        :param update_since: The update_since of this List2dModelTrainingJobRequest.
+        :type update_since: str
+        """
+        self._update_since = update_since
+
+    @property
+    def update_until(self):
+        r"""Gets the update_until of this List2dModelTrainingJobRequest.
+
+        过滤更新时间>=输入时间的记录。
+
+        :return: The update_until of this List2dModelTrainingJobRequest.
+        :rtype: str
+        """
+        return self._update_until
+
+    @update_until.setter
+    def update_until(self, update_until):
+        r"""Sets the update_until of this List2dModelTrainingJobRequest.
+
+        过滤更新时间>=输入时间的记录。
+
+        :param update_until: The update_until of this List2dModelTrainingJobRequest.
+        :type update_until: str
+        """
+        self._update_until = update_until
 
     @property
     def batch_name(self):
@@ -466,6 +545,72 @@ class List2dModelTrainingJobRequest:
         :type is_flexus: bool
         """
         self._is_flexus = is_flexus
+
+    @property
+    def is_live_copy(self):
+        r"""Gets the is_live_copy of this List2dModelTrainingJobRequest.
+
+        是否是直播间复刻任务
+
+        :return: The is_live_copy of this List2dModelTrainingJobRequest.
+        :rtype: bool
+        """
+        return self._is_live_copy
+
+    @is_live_copy.setter
+    def is_live_copy(self, is_live_copy):
+        r"""Sets the is_live_copy of this List2dModelTrainingJobRequest.
+
+        是否是直播间复刻任务
+
+        :param is_live_copy: The is_live_copy of this List2dModelTrainingJobRequest.
+        :type is_live_copy: bool
+        """
+        self._is_live_copy = is_live_copy
+
+    @property
+    def train_location(self):
+        r"""Gets the train_location of this List2dModelTrainingJobRequest.
+
+        训练region
+
+        :return: The train_location of this List2dModelTrainingJobRequest.
+        :rtype: str
+        """
+        return self._train_location
+
+    @train_location.setter
+    def train_location(self, train_location):
+        r"""Sets the train_location of this List2dModelTrainingJobRequest.
+
+        训练region
+
+        :param train_location: The train_location of this List2dModelTrainingJobRequest.
+        :type train_location: str
+        """
+        self._train_location = train_location
+
+    @property
+    def is_ondemand_resource(self):
+        r"""Gets the is_ondemand_resource of this List2dModelTrainingJobRequest.
+
+        是否测试版
+
+        :return: The is_ondemand_resource of this List2dModelTrainingJobRequest.
+        :rtype: bool
+        """
+        return self._is_ondemand_resource
+
+    @is_ondemand_resource.setter
+    def is_ondemand_resource(self, is_ondemand_resource):
+        r"""Sets the is_ondemand_resource of this List2dModelTrainingJobRequest.
+
+        是否测试版
+
+        :param is_ondemand_resource: The is_ondemand_resource of this List2dModelTrainingJobRequest.
+        :type is_ondemand_resource: bool
+        """
+        self._is_ondemand_resource = is_ondemand_resource
 
     def to_dict(self):
         result = {}

@@ -20,8 +20,8 @@ class ShowNotificationTemplateResponse(SdkResponse):
         'type': 'list[str]',
         'desc': 'str',
         'source': 'str',
+        'templates': 'list[SubTemplateResBody]',
         'locale': 'str',
-        'templates': 'list[SubTemplate]',
         'create_time': 'int',
         'modify_time': 'int',
         'project_id': 'str'
@@ -32,30 +32,30 @@ class ShowNotificationTemplateResponse(SdkResponse):
         'type': 'type',
         'desc': 'desc',
         'source': 'source',
-        'locale': 'locale',
         'templates': 'templates',
+        'locale': 'locale',
         'create_time': 'create_time',
         'modify_time': 'modify_time',
         'project_id': 'project_id'
     }
 
-    def __init__(self, name=None, type=None, desc=None, source=None, locale=None, templates=None, create_time=None, modify_time=None, project_id=None):
+    def __init__(self, name=None, type=None, desc=None, source=None, templates=None, locale=None, create_time=None, modify_time=None, project_id=None):
         r"""ShowNotificationTemplateResponse
 
         The model defined in huaweicloud sdk
 
-        :param name: 通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
+        :param name: **参数解释：**  消息模板名称。 **取值范围：**  不涉及。
         :type name: str
-        :param type: 保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
+        :param type: **参数解释：**  消息通知方式。 **取值范围：**  - sms - dingding - wechat - webhook - email - voice - feishu - welink
         :type type: list[str]
-        :param desc: 模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
+        :param desc: **参数解释：**  消息模板描述。 **取值范围：**  不涉及。
         :type desc: str
-        :param source: 模板来源，目前必填为LTS，否则会筛选不出来
+        :param source: **参数解释：**  消息模板来源。 **取值范围：**  不涉及。
         :type source: str
-        :param locale: 语言，必填，目前可填zh-cn和en-us
+        :param templates: **参数解释：**  不同通知渠道下消息模板的详细信息。
+        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplateResBody`]
+        :param locale: **参数解释：**  消息头语言，系统在发送消息时会默认添加消息头，中文如：“尊敬的用户...”；英文如：“Dear User...”。 **取值范围：**  - zh-cn - en-us
         :type locale: str
-        :param templates: 模板正文，为一个数组
-        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
         :param create_time: 创建时间，为毫秒时间戳
         :type create_time: int
         :param modify_time: 更新时间，为毫秒时间戳
@@ -70,8 +70,8 @@ class ShowNotificationTemplateResponse(SdkResponse):
         self._type = None
         self._desc = None
         self._source = None
-        self._locale = None
         self._templates = None
+        self._locale = None
         self._create_time = None
         self._modify_time = None
         self._project_id = None
@@ -83,8 +83,9 @@ class ShowNotificationTemplateResponse(SdkResponse):
         if desc is not None:
             self.desc = desc
         self.source = source
-        self.locale = locale
         self.templates = templates
+        if locale is not None:
+            self.locale = locale
         self.create_time = create_time
         self.modify_time = modify_time
         self.project_id = project_id
@@ -93,7 +94,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
     def name(self):
         r"""Gets the name of this ShowNotificationTemplateResponse.
 
-        通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
+        **参数解释：**  消息模板名称。 **取值范围：**  不涉及。
 
         :return: The name of this ShowNotificationTemplateResponse.
         :rtype: str
@@ -104,7 +105,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this ShowNotificationTemplateResponse.
 
-        通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
+        **参数解释：**  消息模板名称。 **取值范围：**  不涉及。
 
         :param name: The name of this ShowNotificationTemplateResponse.
         :type name: str
@@ -115,7 +116,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowNotificationTemplateResponse.
 
-        保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
+        **参数解释：**  消息通知方式。 **取值范围：**  - sms - dingding - wechat - webhook - email - voice - feishu - welink
 
         :return: The type of this ShowNotificationTemplateResponse.
         :rtype: list[str]
@@ -126,7 +127,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowNotificationTemplateResponse.
 
-        保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
+        **参数解释：**  消息通知方式。 **取值范围：**  - sms - dingding - wechat - webhook - email - voice - feishu - welink
 
         :param type: The type of this ShowNotificationTemplateResponse.
         :type type: list[str]
@@ -137,7 +138,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
     def desc(self):
         r"""Gets the desc of this ShowNotificationTemplateResponse.
 
-        模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
+        **参数解释：**  消息模板描述。 **取值范围：**  不涉及。
 
         :return: The desc of this ShowNotificationTemplateResponse.
         :rtype: str
@@ -148,7 +149,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
     def desc(self, desc):
         r"""Sets the desc of this ShowNotificationTemplateResponse.
 
-        模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
+        **参数解释：**  消息模板描述。 **取值范围：**  不涉及。
 
         :param desc: The desc of this ShowNotificationTemplateResponse.
         :type desc: str
@@ -159,7 +160,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
     def source(self):
         r"""Gets the source of this ShowNotificationTemplateResponse.
 
-        模板来源，目前必填为LTS，否则会筛选不出来
+        **参数解释：**  消息模板来源。 **取值范围：**  不涉及。
 
         :return: The source of this ShowNotificationTemplateResponse.
         :rtype: str
@@ -170,7 +171,7 @@ class ShowNotificationTemplateResponse(SdkResponse):
     def source(self, source):
         r"""Sets the source of this ShowNotificationTemplateResponse.
 
-        模板来源，目前必填为LTS，否则会筛选不出来
+        **参数解释：**  消息模板来源。 **取值范围：**  不涉及。
 
         :param source: The source of this ShowNotificationTemplateResponse.
         :type source: str
@@ -178,10 +179,32 @@ class ShowNotificationTemplateResponse(SdkResponse):
         self._source = source
 
     @property
+    def templates(self):
+        r"""Gets the templates of this ShowNotificationTemplateResponse.
+
+        **参数解释：**  不同通知渠道下消息模板的详细信息。
+
+        :return: The templates of this ShowNotificationTemplateResponse.
+        :rtype: list[:class:`huaweicloudsdklts.v2.SubTemplateResBody`]
+        """
+        return self._templates
+
+    @templates.setter
+    def templates(self, templates):
+        r"""Sets the templates of this ShowNotificationTemplateResponse.
+
+        **参数解释：**  不同通知渠道下消息模板的详细信息。
+
+        :param templates: The templates of this ShowNotificationTemplateResponse.
+        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplateResBody`]
+        """
+        self._templates = templates
+
+    @property
     def locale(self):
         r"""Gets the locale of this ShowNotificationTemplateResponse.
 
-        语言，必填，目前可填zh-cn和en-us
+        **参数解释：**  消息头语言，系统在发送消息时会默认添加消息头，中文如：“尊敬的用户...”；英文如：“Dear User...”。 **取值范围：**  - zh-cn - en-us
 
         :return: The locale of this ShowNotificationTemplateResponse.
         :rtype: str
@@ -192,34 +215,12 @@ class ShowNotificationTemplateResponse(SdkResponse):
     def locale(self, locale):
         r"""Sets the locale of this ShowNotificationTemplateResponse.
 
-        语言，必填，目前可填zh-cn和en-us
+        **参数解释：**  消息头语言，系统在发送消息时会默认添加消息头，中文如：“尊敬的用户...”；英文如：“Dear User...”。 **取值范围：**  - zh-cn - en-us
 
         :param locale: The locale of this ShowNotificationTemplateResponse.
         :type locale: str
         """
         self._locale = locale
-
-    @property
-    def templates(self):
-        r"""Gets the templates of this ShowNotificationTemplateResponse.
-
-        模板正文，为一个数组
-
-        :return: The templates of this ShowNotificationTemplateResponse.
-        :rtype: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
-        """
-        return self._templates
-
-    @templates.setter
-    def templates(self, templates):
-        r"""Sets the templates of this ShowNotificationTemplateResponse.
-
-        模板正文，为一个数组
-
-        :param templates: The templates of this ShowNotificationTemplateResponse.
-        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
-        """
-        self._templates = templates
 
     @property
     def create_time(self):

@@ -31,11 +31,11 @@ class LockNodeScaledownRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: **参数解释**： API版本，固定值“v3”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        :param api_version: **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
         :type api_version: str
-        :param kind: **参数解释**： API版本，固定值“List”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        :param kind: **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： List 
         :type kind: str
-        :param node_list: **参数解释**： 需要关闭缩容保护的节点ID列表，节点ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及
+        :param node_list: **参数解释**： 需要开启缩容保护的节点ID列表，节点ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type node_list: list[str]
         """
         
@@ -55,7 +55,7 @@ class LockNodeScaledownRequestBody:
     def api_version(self):
         r"""Gets the api_version of this LockNodeScaledownRequestBody.
 
-        **参数解释**： API版本，固定值“v3”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :return: The api_version of this LockNodeScaledownRequestBody.
         :rtype: str
@@ -66,7 +66,7 @@ class LockNodeScaledownRequestBody:
     def api_version(self, api_version):
         r"""Sets the api_version of this LockNodeScaledownRequestBody.
 
-        **参数解释**： API版本，固定值“v3”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :param api_version: The api_version of this LockNodeScaledownRequestBody.
         :type api_version: str
@@ -77,7 +77,7 @@ class LockNodeScaledownRequestBody:
     def kind(self):
         r"""Gets the kind of this LockNodeScaledownRequestBody.
 
-        **参数解释**： API版本，固定值“List”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： List 
 
         :return: The kind of this LockNodeScaledownRequestBody.
         :rtype: str
@@ -88,7 +88,7 @@ class LockNodeScaledownRequestBody:
     def kind(self, kind):
         r"""Sets the kind of this LockNodeScaledownRequestBody.
 
-        **参数解释**： API版本，固定值“List”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： List 
 
         :param kind: The kind of this LockNodeScaledownRequestBody.
         :type kind: str
@@ -99,7 +99,7 @@ class LockNodeScaledownRequestBody:
     def node_list(self):
         r"""Gets the node_list of this LockNodeScaledownRequestBody.
 
-        **参数解释**： 需要关闭缩容保护的节点ID列表，节点ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及
+        **参数解释**： 需要开启缩容保护的节点ID列表，节点ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The node_list of this LockNodeScaledownRequestBody.
         :rtype: list[str]
@@ -110,7 +110,7 @@ class LockNodeScaledownRequestBody:
     def node_list(self, node_list):
         r"""Sets the node_list of this LockNodeScaledownRequestBody.
 
-        **参数解释**： 需要关闭缩容保护的节点ID列表，节点ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及
+        **参数解释**： 需要开启缩容保护的节点ID列表，节点ID获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param node_list: The node_list of this LockNodeScaledownRequestBody.
         :type node_list: list[str]

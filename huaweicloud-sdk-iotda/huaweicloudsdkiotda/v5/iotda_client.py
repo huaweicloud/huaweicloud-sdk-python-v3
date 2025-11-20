@@ -5907,6 +5907,347 @@ class IoTDAClient(Client):
 
         return http_info
 
+    def create_domain_configuration(self, request):
+        r"""添加域配置
+
+        应用服务器可调用此接口在物联网平台上添加域配置，域配置配额上限为：1个。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateDomainConfiguration
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateDomainConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateDomainConfigurationResponse`
+        """
+        http_info = self._create_domain_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_domain_configuration_invoker(self, request):
+        http_info = self._create_domain_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_domain_configuration_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/{project_id}/domain-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDomainConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_domain_configuration(self, request):
+        r"""删除域配置
+
+        应用服务器可调用此接口在物联网平台删除域配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDomainConfiguration
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteDomainConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteDomainConfigurationResponse`
+        """
+        http_info = self._delete_domain_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_domain_configuration_invoker(self, request):
+        http_info = self._delete_domain_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domain_configuration_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/{project_id}/domain-configurations/{configuration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'configuration_id' in local_var_params:
+            path_params['configuration_id'] = local_var_params['configuration_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_domain_configurations(self, request):
+        r"""获取域配置列表
+
+        应用服务器可调用此接口在物联网平台获取域配置列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDomainConfigurations
+        :type request: :class:`huaweicloudsdkiotda.v5.ListDomainConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListDomainConfigurationsResponse`
+        """
+        http_info = self._list_domain_configurations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_domain_configurations_invoker(self, request):
+        http_info = self._list_domain_configurations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_configurations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{project_id}/domain-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainConfigurationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_domain_configuration(self, request):
+        r"""查询域配置
+
+        应用服务器可调用此接口在物联网平台查询域配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowDomainConfiguration
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowDomainConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowDomainConfigurationResponse`
+        """
+        http_info = self._show_domain_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_configuration_invoker(self, request):
+        http_info = self._show_domain_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_configuration_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{project_id}/domain-configurations/{configuration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'configuration_id' in local_var_params:
+            path_params['configuration_id'] = local_var_params['configuration_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_domain_configuration(self, request):
+        r"""更新域配置
+
+        应用服务器可调用此接口在物联网平台上更新域配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDomainConfiguration
+        :type request: :class:`huaweicloudsdkiotda.v5.UpdateDomainConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.UpdateDomainConfigurationResponse`
+        """
+        http_info = self._update_domain_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_domain_configuration_invoker(self, request):
+        http_info = self._update_domain_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_configuration_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/{project_id}/domain-configurations/{configuration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'configuration_id' in local_var_params:
+            path_params['configuration_id'] = local_var_params['configuration_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_routing_flow_control_policy(self, request):
         r"""新建数据流转流控策略
 
@@ -10626,6 +10967,278 @@ class IoTDAClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_server_certificate(self, request):
+        r"""添加服务器证书
+
+        应用服务器可调用此接口在物联网平台上添加服务器证书，服务器证书配额限制为：2个。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateServerCertificate
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateServerCertificateRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateServerCertificateResponse`
+        """
+        http_info = self._create_server_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_server_certificate_invoker(self, request):
+        http_info = self._create_server_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_server_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/{project_id}/server-certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateServerCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_server_certificate(self, request):
+        r"""删除服务端证书
+
+        应用服务器可调用此接口在物联网平台删除服务器证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteServerCertificate
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteServerCertificateRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteServerCertificateResponse`
+        """
+        http_info = self._delete_server_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_server_certificate_invoker(self, request):
+        http_info = self._delete_server_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_server_certificate_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/{project_id}/server-certificates/{server_certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServerCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_certificate_id' in local_var_params:
+            path_params['server_certificate_id'] = local_var_params['server_certificate_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_server_certificate(self, request):
+        r"""获取服务器证书列表
+
+        应用服务器可调用此接口在物联网平台上获取服务器证书列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListServerCertificate
+        :type request: :class:`huaweicloudsdkiotda.v5.ListServerCertificateRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListServerCertificateResponse`
+        """
+        http_info = self._list_server_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_server_certificate_invoker(self, request):
+        http_info = self._list_server_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_server_certificate_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{project_id}/server-certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServerCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_server_certificate(self, request):
+        r"""查询服务器证书
+
+        应用服务器可调用此接口在物联网平台查询服务器证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowServerCertificate
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowServerCertificateRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowServerCertificateResponse`
+        """
+        http_info = self._show_server_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_server_certificate_invoker(self, request):
+        http_info = self._show_server_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_certificate_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{project_id}/server-certificates/{server_certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_certificate_id' in local_var_params:
+            path_params['server_certificate_id'] = local_var_params['server_certificate_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

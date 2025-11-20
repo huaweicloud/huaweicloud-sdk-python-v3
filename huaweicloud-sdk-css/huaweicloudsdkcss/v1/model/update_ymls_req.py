@@ -15,28 +15,35 @@ class UpdateYmlsReq:
     sensitive_list = []
 
     openapi_types = {
-        'edit': 'UpdateYmlsReqEdit'
+        'edit': 'UpdateYmlsReqEdit',
+        'inst_type': 'str'
     }
 
     attribute_map = {
-        'edit': 'edit'
+        'edit': 'edit',
+        'inst_type': 'inst_type'
     }
 
-    def __init__(self, edit=None):
+    def __init__(self, edit=None, inst_type=None):
         r"""UpdateYmlsReq
 
         The model defined in huaweicloud sdk
 
         :param edit: 
         :type edit: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEdit`
+        :param inst_type: 节点类型 目前koosearch集群涉及不同类型的节点。 kos: koosearch的搜索中控节点 kos-doc: koosearch的文档解析节点
+        :type inst_type: str
         """
         
         
 
         self._edit = None
+        self._inst_type = None
         self.discriminator = None
 
         self.edit = edit
+        if inst_type is not None:
+            self.inst_type = inst_type
 
     @property
     def edit(self):
@@ -55,6 +62,28 @@ class UpdateYmlsReq:
         :type edit: :class:`huaweicloudsdkcss.v1.UpdateYmlsReqEdit`
         """
         self._edit = edit
+
+    @property
+    def inst_type(self):
+        r"""Gets the inst_type of this UpdateYmlsReq.
+
+        节点类型 目前koosearch集群涉及不同类型的节点。 kos: koosearch的搜索中控节点 kos-doc: koosearch的文档解析节点
+
+        :return: The inst_type of this UpdateYmlsReq.
+        :rtype: str
+        """
+        return self._inst_type
+
+    @inst_type.setter
+    def inst_type(self, inst_type):
+        r"""Sets the inst_type of this UpdateYmlsReq.
+
+        节点类型 目前koosearch集群涉及不同类型的节点。 kos: koosearch的搜索中控节点 kos-doc: koosearch的文档解析节点
+
+        :param inst_type: The inst_type of this UpdateYmlsReq.
+        :type inst_type: str
+        """
+        self._inst_type = inst_type
 
     def to_dict(self):
         result = {}

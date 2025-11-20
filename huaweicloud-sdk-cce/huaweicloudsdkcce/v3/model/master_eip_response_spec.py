@@ -31,11 +31,11 @@ class MasterEIPResponseSpec:
 
         The model defined in huaweicloud sdk
 
-        :param action: 绑定动作
+        :param action: **参数解释**： 绑定动作 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type action: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.MasterEIPResponseSpecSpec`
-        :param elastic_ip: 弹性公网IP
+        :param elastic_ip: **参数解释**： 弹性公网IP **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type elastic_ip: str
         """
         
@@ -57,7 +57,7 @@ class MasterEIPResponseSpec:
     def action(self):
         r"""Gets the action of this MasterEIPResponseSpec.
 
-        绑定动作
+        **参数解释**： 绑定动作 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The action of this MasterEIPResponseSpec.
         :rtype: str
@@ -68,7 +68,7 @@ class MasterEIPResponseSpec:
     def action(self, action):
         r"""Sets the action of this MasterEIPResponseSpec.
 
-        绑定动作
+        **参数解释**： 绑定动作 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param action: The action of this MasterEIPResponseSpec.
         :type action: str
@@ -97,7 +97,7 @@ class MasterEIPResponseSpec:
     def elastic_ip(self):
         r"""Gets the elastic_ip of this MasterEIPResponseSpec.
 
-        弹性公网IP
+        **参数解释**： 弹性公网IP **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The elastic_ip of this MasterEIPResponseSpec.
         :rtype: str
@@ -108,7 +108,7 @@ class MasterEIPResponseSpec:
     def elastic_ip(self, elastic_ip):
         r"""Sets the elastic_ip of this MasterEIPResponseSpec.
 
-        弹性公网IP
+        **参数解释**： 弹性公网IP **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param elastic_ip: The elastic_ip of this MasterEIPResponseSpec.
         :type elastic_ip: str

@@ -437,31 +437,31 @@ class AadClient(Client):
 
         return http_info
 
-    def create_aad_domain(self, request):
+    def create_domain(self, request):
         r"""创建防护域名
 
         创建防护域名
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for CreateAadDomain
-        :type request: :class:`huaweicloudsdkaad.v1.CreateAadDomainRequest`
-        :rtype: :class:`huaweicloudsdkaad.v1.CreateAadDomainResponse`
+        :param request: Request instance for CreateDomain
+        :type request: :class:`huaweicloudsdkaad.v1.CreateDomainRequest`
+        :rtype: :class:`huaweicloudsdkaad.v1.CreateDomainResponse`
         """
-        http_info = self._create_aad_domain_http_info(request)
+        http_info = self._create_domain_http_info(request)
         return self._call_api(**http_info)
 
-    def create_aad_domain_invoker(self, request):
-        http_info = self._create_aad_domain_http_info(request)
+    def create_domain_invoker(self, request):
+        http_info = self._create_domain_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _create_aad_domain_http_info(cls, request):
+    def _create_domain_http_info(cls, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v1/{project_id}/aad/external/domains",
             "request_type": request.__class__.__name__,
-            "response_type": "CreateAadDomainResponse"
+            "response_type": "CreateDomainResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -997,6 +997,10 @@ class AadClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -1192,6 +1196,10 @@ class AadClient(Client):
             path_params['ip'] = local_var_params['ip']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

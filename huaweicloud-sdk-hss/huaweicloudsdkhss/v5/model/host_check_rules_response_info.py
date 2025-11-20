@@ -71,7 +71,7 @@ class HostCheckRulesResponseInfo:
         :type host_type: str
         :param diff_description: **参数解释** 差异化展示提示信息 **取值范围** 字符长度0-2048位
         :type diff_description: str
-        :param description: **参数解释** 差异化展示提示信息 **取值范围** 字符长度0-512位
+        :param description: **参数解释** 忽略或加白的描述 **取值范围** 字符长度0-512位
         :type description: str
         :param enable_fix: **参数解释** 是否支持一键修复 **取值范围** - 1 : 支持一键修复 - 0 : 不支持
         :type enable_fix: int
@@ -332,7 +332,7 @@ class HostCheckRulesResponseInfo:
     def description(self):
         r"""Gets the description of this HostCheckRulesResponseInfo.
 
-        **参数解释** 差异化展示提示信息 **取值范围** 字符长度0-512位
+        **参数解释** 忽略或加白的描述 **取值范围** 字符长度0-512位
 
         :return: The description of this HostCheckRulesResponseInfo.
         :rtype: str
@@ -343,7 +343,7 @@ class HostCheckRulesResponseInfo:
     def description(self, description):
         r"""Sets the description of this HostCheckRulesResponseInfo.
 
-        **参数解释** 差异化展示提示信息 **取值范围** 字符长度0-512位
+        **参数解释** 忽略或加白的描述 **取值范围** 字符长度0-512位
 
         :param description: The description of this HostCheckRulesResponseInfo.
         :type description: str

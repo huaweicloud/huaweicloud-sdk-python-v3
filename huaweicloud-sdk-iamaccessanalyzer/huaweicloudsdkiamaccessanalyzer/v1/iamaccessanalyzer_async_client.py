@@ -364,6 +364,73 @@ class IAMAccessAnalyzerAsyncClient(Client):
 
         return http_info
 
+    def update_analyzer_async(self, request):
+        r"""更新指定分析器的配置
+
+        更新指定分析器的配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateAnalyzer
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.UpdateAnalyzerRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.UpdateAnalyzerResponse`
+        """
+        http_info = self._update_analyzer_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_analyzer_async_invoker(self, request):
+        http_info = self._update_analyzer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_analyzer_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/analyzers/{analyzer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAnalyzerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analyzer_id' in local_var_params:
+            path_params['analyzer_id'] = local_var_params['analyzer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def apply_archive_rule_async(self, request):
         r"""应用存档规则
 
@@ -770,6 +837,209 @@ class IAMAccessAnalyzerAsyncClient(Client):
 
         return http_info
 
+    def create_resource_configurations_async(self, request):
+        r"""创建资源分析配置
+
+        创建指定分析器的资源分析配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateResourceConfigurations
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.CreateResourceConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.CreateResourceConfigurationsResponse`
+        """
+        http_info = self._create_resource_configurations_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_resource_configurations_async_invoker(self, request):
+        http_info = self._create_resource_configurations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_resource_configurations_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/analyzers/{analyzer_id}/resource-configurations/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceConfigurationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analyzer_id' in local_var_params:
+            path_params['analyzer_id'] = local_var_params['analyzer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_resource_configurations_async(self, request):
+        r"""删除资源分析配置
+
+        删除指定分析器的资源分析配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteResourceConfigurations
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.DeleteResourceConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.DeleteResourceConfigurationsResponse`
+        """
+        http_info = self._delete_resource_configurations_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_resource_configurations_async_invoker(self, request):
+        http_info = self._delete_resource_configurations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_configurations_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/analyzers/{analyzer_id}/resource-configurations/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceConfigurationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analyzer_id' in local_var_params:
+            path_params['analyzer_id'] = local_var_params['analyzer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resource_configurations_async(self, request):
+        r"""列举资源分析配置
+
+        列举指定分析器的资源分析配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourceConfigurations
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListResourceConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListResourceConfigurationsResponse`
+        """
+        http_info = self._list_resource_configurations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resource_configurations_async_invoker(self, request):
+        http_info = self._list_resource_configurations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_configurations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/analyzers/{analyzer_id}/resource-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceConfigurationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'analyzer_id' in local_var_params:
+            path_params['analyzer_id'] = local_var_params['analyzer_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_findings_async(self, request):
         r"""检索指定分析器生成的访问分析结果列表
 
@@ -940,6 +1210,335 @@ class IAMAccessAnalyzerAsyncClient(Client):
         path_params = {}
         if 'analyzer_id' in local_var_params:
             path_params['analyzer_id'] = local_var_params['analyzer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_notification_setting_async(self, request):
+        r"""创建消息通知配置
+
+        创建消息通知配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateNotificationSetting
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.CreateNotificationSettingRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.CreateNotificationSettingResponse`
+        """
+        http_info = self._create_notification_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_notification_setting_async_invoker(self, request):
+        http_info = self._create_notification_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_notification_setting_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/notification-settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNotificationSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_notification_setting_async(self, request):
+        r"""删除消息通知配置
+
+        删除消息通知配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteNotificationSetting
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.DeleteNotificationSettingRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.DeleteNotificationSettingResponse`
+        """
+        http_info = self._delete_notification_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_notification_setting_async_invoker(self, request):
+        http_info = self._delete_notification_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_notification_setting_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/notification-settings/{notification_setting_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNotificationSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'notification_setting_id' in local_var_params:
+            path_params['notification_setting_id'] = local_var_params['notification_setting_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_notification_settings_async(self, request):
+        r"""获取消息通知配置列表
+
+        获取消息通知配置列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNotificationSettings
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListNotificationSettingsRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ListNotificationSettingsResponse`
+        """
+        http_info = self._list_notification_settings_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_notification_settings_async_invoker(self, request):
+        http_info = self._list_notification_settings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_notification_settings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/notification-settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotificationSettingsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_notification_setting_async(self, request):
+        r"""获取消息通知配置
+
+        获取消息通知配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowNotificationSetting
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.ShowNotificationSettingRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ShowNotificationSettingResponse`
+        """
+        http_info = self._show_notification_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_notification_setting_async_invoker(self, request):
+        http_info = self._show_notification_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_notification_setting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/notification-settings/{notification_setting_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNotificationSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'notification_setting_id' in local_var_params:
+            path_params['notification_setting_id'] = local_var_params['notification_setting_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['AccessKeyAuth']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_notification_setting_async(self, request):
+        r"""更新消息通知配置
+
+        更新消息通知配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateNotificationSetting
+        :type request: :class:`huaweicloudsdkiamaccessanalyzer.v1.UpdateNotificationSettingRequest`
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.UpdateNotificationSettingResponse`
+        """
+        http_info = self._update_notification_setting_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_notification_setting_async_invoker(self, request):
+        http_info = self._update_notification_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_notification_setting_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/notification-settings/{notification_setting_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNotificationSettingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'notification_setting_id' in local_var_params:
+            path_params['notification_setting_id'] = local_var_params['notification_setting_id']
 
         query_params = []
 

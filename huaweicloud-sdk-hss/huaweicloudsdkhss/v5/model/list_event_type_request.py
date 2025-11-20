@@ -26,7 +26,6 @@ class ListEventTypeRequest:
         'private_ip': 'str',
         'public_ip': 'str',
         'container_name': 'str',
-        'event_type': 'int',
         'handle_status': 'str',
         'severity': 'str',
         'severity_list': 'list[str]',
@@ -49,7 +48,6 @@ class ListEventTypeRequest:
         'private_ip': 'private_ip',
         'public_ip': 'public_ip',
         'container_name': 'container_name',
-        'event_type': 'event_type',
         'handle_status': 'handle_status',
         'severity': 'severity',
         'severity_list': 'severity_list',
@@ -60,7 +58,7 @@ class ListEventTypeRequest:
         'event_name': 'event_name'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, begin_time=None, end_time=None, last_days=None, category=None, host_name=None, host_id=None, private_ip=None, public_ip=None, container_name=None, event_type=None, handle_status=None, severity=None, severity_list=None, attack_tag=None, asset_value=None, tag_list=None, att_ck=None, event_name=None):
+    def __init__(self, region=None, enterprise_project_id=None, begin_time=None, end_time=None, last_days=None, category=None, host_name=None, host_id=None, private_ip=None, public_ip=None, container_name=None, handle_status=None, severity=None, severity_list=None, attack_tag=None, asset_value=None, tag_list=None, att_ck=None, event_name=None):
         r"""ListEventTypeRequest
 
         The model defined in huaweicloud sdk
@@ -87,8 +85,6 @@ class ListEventTypeRequest:
         :type public_ip: str
         :param container_name: 容器实例名称
         :type container_name: str
-        :param event_type: 事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 : 用户账号添加   - 4020 : 用户密码窃取   - 6002 : 端口扫描   - 6003 : 主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
-        :type event_type: int
         :param handle_status: 处置状态，包含如下:   - unhandled ：未处理   - handled : 已处理
         :type handle_status: str
         :param severity: 威胁等级，包含如下:   - Security ：安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
@@ -120,7 +116,6 @@ class ListEventTypeRequest:
         self._private_ip = None
         self._public_ip = None
         self._container_name = None
-        self._event_type = None
         self._handle_status = None
         self._severity = None
         self._severity_list = None
@@ -152,8 +147,6 @@ class ListEventTypeRequest:
             self.public_ip = public_ip
         if container_name is not None:
             self.container_name = container_name
-        if event_type is not None:
-            self.event_type = event_type
         if handle_status is not None:
             self.handle_status = handle_status
         if severity is not None:
@@ -412,28 +405,6 @@ class ListEventTypeRequest:
         :type container_name: str
         """
         self._container_name = container_name
-
-    @property
-    def event_type(self):
-        r"""Gets the event_type of this ListEventTypeRequest.
-
-        事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 : 用户账号添加   - 4020 : 用户密码窃取   - 6002 : 端口扫描   - 6003 : 主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
-
-        :return: The event_type of this ListEventTypeRequest.
-        :rtype: int
-        """
-        return self._event_type
-
-    @event_type.setter
-    def event_type(self, event_type):
-        r"""Sets the event_type of this ListEventTypeRequest.
-
-        事件类型，包含如下:   - 1001 : 通用恶意软件   - 1002 : 病毒   - 1003 : 蠕虫   - 1004 : 木马   - 1005 : 僵尸网络   - 1006 : 后门   - 1010 : Rootkit   - 1011 : 勒索软件   - 1012 ：黑客工具   - 1015 : Webshell   - 1016 : 挖矿   - 1017 : 反弹Shell   - 2001 : 一般漏洞利用   - 2012 : 远程代码执行   - 2047 : Redis漏洞利用   - 2048 : Hadoop漏洞利用   - 2049 : MySQL漏洞利用   - 3002 : 文件提权   - 3003 : 进程提权   - 3004 : 关键文件变更   - 3005 : 文件/目录变更   - 3007 : 进程异常行为   - 3015 : 高危命令执行   - 3018 : 异常Shell   - 3027 : Crontab可疑任务   - 3029 ：系统安全防护被禁用   - 3030 ：备份删除   - 3031 ：异常注册表操作   - 3036 : 容器镜像阻断   - 4002 : 暴力破解   - 4004 : 异常登录   - 4006 : 非法系统账号   - 4014 : 用户账号添加   - 4020 : 用户密码窃取   - 6002 : 端口扫描   - 6003 : 主机扫描   - 13001 : Kubernetes事件删除   - 13002 : Pod异常行为   - 13003 : 枚举用户信息   - 13004 : 绑定集群用户角色
-
-        :param event_type: The event_type of this ListEventTypeRequest.
-        :type event_type: int
-        """
-        self._event_type = event_type
 
     @property
     def handle_status(self):

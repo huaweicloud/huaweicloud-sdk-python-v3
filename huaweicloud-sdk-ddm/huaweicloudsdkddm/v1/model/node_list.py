@@ -18,17 +18,19 @@ class NodeList:
         'port': 'str',
         'status': 'str',
         'node_id': 'str',
-        'ip': 'str'
+        'ip': 'str',
+        'group_id': 'str'
     }
 
     attribute_map = {
         'port': 'port',
         'status': 'status',
         'node_id': 'node_id',
-        'ip': 'ip'
+        'ip': 'ip',
+        'group_id': 'group_id'
     }
 
-    def __init__(self, port=None, status=None, node_id=None, ip=None):
+    def __init__(self, port=None, status=None, node_id=None, ip=None, group_id=None):
         r"""NodeList
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class NodeList:
         :type node_id: str
         :param ip: ip
         :type ip: str
+        :param group_id: 节点所在组ID。
+        :type group_id: str
         """
         
         
@@ -49,6 +53,7 @@ class NodeList:
         self._status = None
         self._node_id = None
         self._ip = None
+        self._group_id = None
         self.discriminator = None
 
         if port is not None:
@@ -59,6 +64,8 @@ class NodeList:
             self.node_id = node_id
         if ip is not None:
             self.ip = ip
+        if group_id is not None:
+            self.group_id = group_id
 
     @property
     def port(self):
@@ -147,6 +154,28 @@ class NodeList:
         :type ip: str
         """
         self._ip = ip
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this NodeList.
+
+        节点所在组ID。
+
+        :return: The group_id of this NodeList.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this NodeList.
+
+        节点所在组ID。
+
+        :param group_id: The group_id of this NodeList.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     def to_dict(self):
         result = {}

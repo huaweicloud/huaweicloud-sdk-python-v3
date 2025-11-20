@@ -31,7 +31,7 @@ class EniNetwork:
 
         The model defined in huaweicloud sdk
 
-        :param eni_subnet_id: **参数解释：** ENI所在子网的IPv4子网ID。 **约束限制：** 暂不支持IPv6。该字段将会被废弃，推荐使用新字段subnets。 **取值范围：** 不涉及 **默认取值：** 不涉及  获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)。](tag:hws_hk) 
+        :param eni_subnet_id: **参数解释：** ENI所在子网的IPv4子网ID。 **约束限制：** 暂不支持IPv6。该字段将会被废弃，推荐使用新字段subnets。 **取值范围：** 不涉及 **默认取值：** 不涉及  获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询，获取响应中neutron_subnet_id字段的值。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)。](tag:hws_hk) 
         :type eni_subnet_id: str
         :param eni_subnet_cidr: ENI子网CIDR(废弃中)
         :type eni_subnet_cidr: str
@@ -56,7 +56,7 @@ class EniNetwork:
     def eni_subnet_id(self):
         r"""Gets the eni_subnet_id of this EniNetwork.
 
-        **参数解释：** ENI所在子网的IPv4子网ID。 **约束限制：** 暂不支持IPv6。该字段将会被废弃，推荐使用新字段subnets。 **取值范围：** 不涉及 **默认取值：** 不涉及  获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)。](tag:hws_hk) 
+        **参数解释：** ENI所在子网的IPv4子网ID。 **约束限制：** 暂不支持IPv6。该字段将会被废弃，推荐使用新字段subnets。 **取值范围：** 不涉及 **默认取值：** 不涉及  获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询，获取响应中neutron_subnet_id字段的值。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)。](tag:hws_hk) 
 
         :return: The eni_subnet_id of this EniNetwork.
         :rtype: str
@@ -67,7 +67,7 @@ class EniNetwork:
     def eni_subnet_id(self, eni_subnet_id):
         r"""Sets the eni_subnet_id of this EniNetwork.
 
-        **参数解释：** ENI所在子网的IPv4子网ID。 **约束限制：** 暂不支持IPv6。该字段将会被废弃，推荐使用新字段subnets。 **取值范围：** 不涉及 **默认取值：** 不涉及  获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)。](tag:hws_hk) 
+        **参数解释：** ENI所在子网的IPv4子网ID。 **约束限制：** 暂不支持IPv6。该字段将会被废弃，推荐使用新字段subnets。 **取值范围：** 不涉及 **默认取值：** 不涉及  获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找IPv4子网ID。 - 方法2：通过虚拟私有云服务的查询子网列表接口查询，获取响应中neutron_subnet_id字段的值。   [链接请参见[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。](tag:hws)   [链接请参见[查询子网列表](https://support.huaweicloud.com/intl/zh-cn/api-vpc/vpc_subnet01_0003.html)。](tag:hws_hk) 
 
         :param eni_subnet_id: The eni_subnet_id of this EniNetwork.
         :type eni_subnet_id: str

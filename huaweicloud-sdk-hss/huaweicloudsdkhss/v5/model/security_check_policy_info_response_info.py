@@ -15,100 +15,35 @@ class SecurityCheckPolicyInfoResponseInfo:
     sensitive_list = []
 
     openapi_types = {
-        'policy_name': 'str',
-        'policy_id': 'str',
-        'content': 'str',
-        'pwd_policy_content': 'PwdCheckTagInfo'
+        'content': 'str'
     }
 
     attribute_map = {
-        'policy_name': 'policy_name',
-        'policy_id': 'policy_id',
-        'content': 'content',
-        'pwd_policy_content': 'pwd_policy_content'
+        'content': 'content'
     }
 
-    def __init__(self, policy_name=None, policy_id=None, content=None, pwd_policy_content=None):
+    def __init__(self, content=None):
         r"""SecurityCheckPolicyInfoResponseInfo
 
         The model defined in huaweicloud sdk
 
-        :param policy_name: **参数解释**： 策略名称 **取值范围**： 字符长度1-256位 
-        :type policy_name: str
-        :param policy_id: **参数解释**： 策略ID **取值范围**： 字符长度0-64位 
-        :type policy_id: str
-        :param content: 策略详情
+        :param content: **参数解释**: 策略详情 **取值范围**: 最小值0，最大值10241 
         :type content: str
-        :param pwd_policy_content: 
-        :type pwd_policy_content: :class:`huaweicloudsdkhss.v5.PwdCheckTagInfo`
         """
         
         
 
-        self._policy_name = None
-        self._policy_id = None
         self._content = None
-        self._pwd_policy_content = None
         self.discriminator = None
 
-        if policy_name is not None:
-            self.policy_name = policy_name
-        if policy_id is not None:
-            self.policy_id = policy_id
         if content is not None:
             self.content = content
-        if pwd_policy_content is not None:
-            self.pwd_policy_content = pwd_policy_content
-
-    @property
-    def policy_name(self):
-        r"""Gets the policy_name of this SecurityCheckPolicyInfoResponseInfo.
-
-        **参数解释**： 策略名称 **取值范围**： 字符长度1-256位 
-
-        :return: The policy_name of this SecurityCheckPolicyInfoResponseInfo.
-        :rtype: str
-        """
-        return self._policy_name
-
-    @policy_name.setter
-    def policy_name(self, policy_name):
-        r"""Sets the policy_name of this SecurityCheckPolicyInfoResponseInfo.
-
-        **参数解释**： 策略名称 **取值范围**： 字符长度1-256位 
-
-        :param policy_name: The policy_name of this SecurityCheckPolicyInfoResponseInfo.
-        :type policy_name: str
-        """
-        self._policy_name = policy_name
-
-    @property
-    def policy_id(self):
-        r"""Gets the policy_id of this SecurityCheckPolicyInfoResponseInfo.
-
-        **参数解释**： 策略ID **取值范围**： 字符长度0-64位 
-
-        :return: The policy_id of this SecurityCheckPolicyInfoResponseInfo.
-        :rtype: str
-        """
-        return self._policy_id
-
-    @policy_id.setter
-    def policy_id(self, policy_id):
-        r"""Sets the policy_id of this SecurityCheckPolicyInfoResponseInfo.
-
-        **参数解释**： 策略ID **取值范围**： 字符长度0-64位 
-
-        :param policy_id: The policy_id of this SecurityCheckPolicyInfoResponseInfo.
-        :type policy_id: str
-        """
-        self._policy_id = policy_id
 
     @property
     def content(self):
         r"""Gets the content of this SecurityCheckPolicyInfoResponseInfo.
 
-        策略详情
+        **参数解释**: 策略详情 **取值范围**: 最小值0，最大值10241 
 
         :return: The content of this SecurityCheckPolicyInfoResponseInfo.
         :rtype: str
@@ -119,30 +54,12 @@ class SecurityCheckPolicyInfoResponseInfo:
     def content(self, content):
         r"""Sets the content of this SecurityCheckPolicyInfoResponseInfo.
 
-        策略详情
+        **参数解释**: 策略详情 **取值范围**: 最小值0，最大值10241 
 
         :param content: The content of this SecurityCheckPolicyInfoResponseInfo.
         :type content: str
         """
         self._content = content
-
-    @property
-    def pwd_policy_content(self):
-        r"""Gets the pwd_policy_content of this SecurityCheckPolicyInfoResponseInfo.
-
-        :return: The pwd_policy_content of this SecurityCheckPolicyInfoResponseInfo.
-        :rtype: :class:`huaweicloudsdkhss.v5.PwdCheckTagInfo`
-        """
-        return self._pwd_policy_content
-
-    @pwd_policy_content.setter
-    def pwd_policy_content(self, pwd_policy_content):
-        r"""Sets the pwd_policy_content of this SecurityCheckPolicyInfoResponseInfo.
-
-        :param pwd_policy_content: The pwd_policy_content of this SecurityCheckPolicyInfoResponseInfo.
-        :type pwd_policy_content: :class:`huaweicloudsdkhss.v5.PwdCheckTagInfo`
-        """
-        self._pwd_policy_content = pwd_policy_content
 
     def to_dict(self):
         result = {}

@@ -57,7 +57,7 @@ class AccessPolicyResp:
         :type clusters: list[str]
         :param access_scope: 
         :type access_scope: :class:`huaweicloudsdkcce.v3.AccessScope`
-        :param policy_type: **参数解释：** 权限类型。 **约束限制：** 不涉及 **取值范围：** - CCEAdminPolicy：管理员权限 - CCEClusterAdminPolicy：运维权限 - CCEEditPolicy：开发权限 - CCEViewPolicy：只读权限  **默认取值：** 不涉及
+        :param policy_type: **参数解释：** 权限类型。 **约束限制：** 不涉及 **取值范围：** - CCEClusterAdminPolicy：管理员权限 - CCEAdminPolicy：运维权限 - CCEEditPolicy：开发权限 - CCEViewPolicy：只读权限  **默认取值：** 不涉及
         :type policy_type: str
         :param principal: 
         :type principal: :class:`huaweicloudsdkcce.v3.Principal`
@@ -234,7 +234,7 @@ class AccessPolicyResp:
     def policy_type(self):
         r"""Gets the policy_type of this AccessPolicyResp.
 
-        **参数解释：** 权限类型。 **约束限制：** 不涉及 **取值范围：** - CCEAdminPolicy：管理员权限 - CCEClusterAdminPolicy：运维权限 - CCEEditPolicy：开发权限 - CCEViewPolicy：只读权限  **默认取值：** 不涉及
+        **参数解释：** 权限类型。 **约束限制：** 不涉及 **取值范围：** - CCEClusterAdminPolicy：管理员权限 - CCEAdminPolicy：运维权限 - CCEEditPolicy：开发权限 - CCEViewPolicy：只读权限  **默认取值：** 不涉及
 
         :return: The policy_type of this AccessPolicyResp.
         :rtype: str
@@ -245,7 +245,7 @@ class AccessPolicyResp:
     def policy_type(self, policy_type):
         r"""Sets the policy_type of this AccessPolicyResp.
 
-        **参数解释：** 权限类型。 **约束限制：** 不涉及 **取值范围：** - CCEAdminPolicy：管理员权限 - CCEClusterAdminPolicy：运维权限 - CCEEditPolicy：开发权限 - CCEViewPolicy：只读权限  **默认取值：** 不涉及
+        **参数解释：** 权限类型。 **约束限制：** 不涉及 **取值范围：** - CCEClusterAdminPolicy：管理员权限 - CCEAdminPolicy：运维权限 - CCEEditPolicy：开发权限 - CCEViewPolicy：只读权限  **默认取值：** 不涉及
 
         :param policy_type: The policy_type of this AccessPolicyResp.
         :type policy_type: str

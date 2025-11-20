@@ -100,6 +100,136 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def create_ddm_configurations_async(self, request):
+        r"""创建参数组
+
+        创建参数组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDdmConfigurations
+        :type request: :class:`huaweicloudsdkddm.v1.CreateDdmConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CreateDdmConfigurationsResponse`
+        """
+        http_info = self._create_ddm_configurations_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ddm_configurations_async_invoker(self, request):
+        http_info = self._create_ddm_configurations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ddm_configurations_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDdmConfigurationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_configuration_async(self, request):
+        r"""删除参数组
+
+        删除参数组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteConfiguration
+        :type request: :class:`huaweicloudsdkddm.v1.DeleteConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.DeleteConfigurationResponse`
+        """
+        http_info = self._delete_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_configuration_async_invoker(self, request):
+        http_info = self._delete_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_configuration_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_database_available_versions_async(self, request):
         r"""查询可变更内核版本
 
@@ -218,6 +348,73 @@ class DdmAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_configuration_async(self, request):
+        r"""修改实例参数
+
+        修改实例参数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyConfiguration
+        :type request: :class:`huaweicloudsdkddm.v1.ModifyConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ModifyConfigurationResponse`
+        """
+        http_info = self._modify_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_configuration_async_invoker(self, request):
+        http_info = self._modify_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_configuration_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -461,6 +658,353 @@ class DdmAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def cancel_migration_async(self, request):
+        r"""取消分片变更
+
+        取消分片变更
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CancelMigration
+        :type request: :class:`huaweicloudsdkddm.v1.CancelMigrationRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CancelMigrationResponse`
+        """
+        http_info = self._cancel_migration_http_info(request)
+        return self._call_api(**http_info)
+
+    def cancel_migration_async_invoker(self, request):
+        http_info = self._cancel_migration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_migration_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration/jobs/{job_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelMigrationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def change_strategy_async(self, request):
+        r"""修改切换路由策略
+
+        修改切换路由策略
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ChangeStrategy
+        :type request: :class:`huaweicloudsdkddm.v1.ChangeStrategyRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ChangeStrategyResponse`
+        """
+        http_info = self._change_strategy_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_strategy_async_invoker(self, request):
+        http_info = self._change_strategy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_strategy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration/jobs/{job_id}/route-switch-strategy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeStrategyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def check_migrate_logic_db_async(self, request):
+        r"""分片变更预校验
+
+        分片变更预校验
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckMigrateLogicDb
+        :type request: :class:`huaweicloudsdkddm.v1.CheckMigrateLogicDbRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CheckMigrateLogicDbResponse`
+        """
+        http_info = self._check_migrate_logic_db_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_migrate_logic_db_async_invoker(self, request):
+        http_info = self._check_migrate_logic_db_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_migrate_logic_db_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration/precheck",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckMigrateLogicDbResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def check_preliminary_results_async(self, request):
+        r"""查询分片变更预校验异步结果
+
+        查询分片变更预校验异步结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckPreliminaryResults
+        :type request: :class:`huaweicloudsdkddm.v1.CheckPreliminaryResultsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CheckPreliminaryResultsResponse`
+        """
+        http_info = self._check_preliminary_results_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_preliminary_results_async_invoker(self, request):
+        http_info = self._check_preliminary_results_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_preliminary_results_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration/precheck/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckPreliminaryResultsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def clean_migration_async(self, request):
+        r"""清理分片变更
+
+        清理分片变更
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CleanMigration
+        :type request: :class:`huaweicloudsdkddm.v1.CleanMigrationRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CleanMigrationResponse`
+        """
+        http_info = self._clean_migration_http_info(request)
+        return self._call_api(**http_info)
+
+    def clean_migration_async_invoker(self, request):
+        http_info = self._clean_migration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _clean_migration_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration/jobs/{job_id}/clean",
+            "request_type": request.__class__.__name__,
+            "response_type": "CleanMigrationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
 
         query_params = []
 
@@ -825,6 +1369,71 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def delete_backup_async(self, request):
+        r"""删除备份
+
+        删除备份
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteBackup
+        :type request: :class:`huaweicloudsdkddm.v1.DeleteBackupRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.DeleteBackupResponse`
+        """
+        http_info = self._delete_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_backup_async_invoker(self, request):
+        http_info = self._delete_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_backup_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBackupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'backup_id' in local_var_params:
+            path_params['backup_id'] = local_var_params['backup_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_database_async(self, request):
         r"""删除DDM逻辑库
 
@@ -1164,6 +1773,71 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def download_schema_metadata_async(self, request):
+        r"""导出逻辑库元数据
+
+        导出所有逻辑库物理分片在数据节点上的分布关系
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadSchemaMetadata
+        :type request: :class:`huaweicloudsdkddm.v1.DownloadSchemaMetadataRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.DownloadSchemaMetadataResponse`
+        """
+        http_info = self._download_schema_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_schema_metadata_async_invoker(self, request):
+        http_info = self._download_schema_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_schema_metadata_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/schema-metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadSchemaMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def execute_kill_logical_processes_async(self, request):
         r"""kill逻辑会话
 
@@ -1432,6 +2106,138 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def list_available_rds_async(self, request):
+        r"""查询创建逻辑库可选取的数据节点实例列表
+
+        查询创建逻辑库可选取的数据节点实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAvailableRds
+        :type request: :class:`huaweicloudsdkddm.v1.ListAvailableRdsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListAvailableRdsResponse`
+        """
+        http_info = self._list_available_rds_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_available_rds_async_invoker(self, request):
+        http_info = self._list_available_rds_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_available_rds_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/available-data-nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailableRdsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_available_rds_for_migrate_async(self, request):
+        r"""查询分片变更可选取的数据节点实例列表
+
+        查询分片变更可选取的数据节点实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAvailableRdsForMigrate
+        :type request: :class:`huaweicloudsdkddm.v1.ListAvailableRdsForMigrateRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListAvailableRdsForMigrateResponse`
+        """
+        http_info = self._list_available_rds_for_migrate_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_available_rds_for_migrate_async_invoker(self, request):
+        http_info = self._list_available_rds_for_migrate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_available_rds_for_migrate_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration/available-data-nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailableRdsForMigrateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_available_rds_list_async(self, request):
         r"""查询创建逻辑库可选取的数据库实例列表
 
@@ -1474,6 +2280,69 @@ class DdmAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_backups_async(self, request):
+        r"""获取备份列表
+
+        获取备份列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBackups
+        :type request: :class:`huaweicloudsdkddm.v1.ListBackupsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListBackupsResponse`
+        """
+        http_info = self._list_backups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_backups_async_invoker(self, request):
+        http_info = self._list_backups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_backups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
 
@@ -2339,6 +3208,144 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def migrate_logic_db_async(self, request):
+        r"""分片变更
+
+        分片变更
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for MigrateLogicDb
+        :type request: :class:`huaweicloudsdkddm.v1.MigrateLogicDbRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.MigrateLogicDbResponse`
+        """
+        http_info = self._migrate_logic_db_http_info(request)
+        return self._call_api(**http_info)
+
+    def migrate_logic_db_async_invoker(self, request):
+        http_info = self._migrate_logic_db_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _migrate_logic_db_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateLogicDbResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def migrate_results_async(self, request):
+        r"""查询分片变更任务详情
+
+        查询分片变更任务详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for MigrateResults
+        :type request: :class:`huaweicloudsdkddm.v1.MigrateResultsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.MigrateResultsResponse`
+        """
+        http_info = self._migrate_results_http_info(request)
+        return self._call_api(**http_info)
+
+    def migrate_results_async_invoker(self, request):
+        http_info = self._migrate_results_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _migrate_results_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateResultsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def rebuild_config_async(self, request):
         r"""DDM表数据重载
 
@@ -2674,6 +3681,546 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def restore2_exist_async(self, request):
+        r"""恢复到新实例
+
+        恢复到新实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for Restore2Exist
+        :type request: :class:`huaweicloudsdkddm.v1.Restore2ExistRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.Restore2ExistResponse`
+        """
+        http_info = self._restore2_exist_http_info(request)
+        return self._call_api(**http_info)
+
+    def restore2_exist_async_invoker(self, request):
+        http_info = self._restore2_exist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore2_exist_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/recovery",
+            "request_type": request.__class__.__name__,
+            "response_type": "Restore2ExistResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restore_metadata_async(self, request):
+        r"""元数据恢复
+
+        元数据恢复
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestoreMetadata
+        :type request: :class:`huaweicloudsdkddm.v1.RestoreMetadataRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.RestoreMetadataResponse`
+        """
+        http_info = self._restore_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def restore_metadata_async_invoker(self, request):
+        http_info = self._restore_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_metadata_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/metadata-recovery",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def retry_migration_async(self, request):
+        r"""重试分片变更
+
+        重试分片变更
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RetryMigration
+        :type request: :class:`huaweicloudsdkddm.v1.RetryMigrationRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.RetryMigrationResponse`
+        """
+        http_info = self._retry_migration_http_info(request)
+        return self._call_api(**http_info)
+
+    def retry_migration_async_invoker(self, request):
+        http_info = self._retry_migration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _retry_migration_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration/jobs/{job_id}/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryMigrationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def rollback_migration_async(self, request):
+        r"""回滚分片变更
+
+        回滚分片变更
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RollbackMigration
+        :type request: :class:`huaweicloudsdkddm.v1.RollbackMigrationRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.RollbackMigrationResponse`
+        """
+        http_info = self._rollback_migration_http_info(request)
+        return self._call_api(**http_info)
+
+    def rollback_migration_async_invoker(self, request):
+        http_info = self._rollback_migration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _rollback_migration_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration/jobs/{job_id}/rollback",
+            "request_type": request.__class__.__name__,
+            "response_type": "RollbackMigrationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_avalible_ddms_async(self, request):
+        r"""查询可用于恢复的实例列表
+
+        查询可用于恢复的实例列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAvalibleDdms
+        :type request: :class:`huaweicloudsdkddm.v1.ShowAvalibleDdmsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowAvalibleDdmsResponse`
+        """
+        http_info = self._show_avalible_ddms_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_avalible_ddms_async_invoker(self, request):
+        http_info = self._show_avalible_ddms_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_avalible_ddms_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/restorable-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAvalibleDdmsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_avalible_rds_async(self, request):
+        r"""查询可用于时间点恢复的数据节点列表
+
+        查询可用于时间点恢复的数据节点列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAvalibleRds
+        :type request: :class:`huaweicloudsdkddm.v1.ShowAvalibleRdsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowAvalibleRdsResponse`
+        """
+        http_info = self._show_avalible_rds_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_avalible_rds_async_invoker(self, request):
+        http_info = self._show_avalible_rds_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_avalible_rds_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/restorable-data-node",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAvalibleRdsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'target_instance_id' in local_var_params:
+            query_params.append(('target_instance_id', local_var_params['target_instance_id']))
+        if 'source_dn_instance_id' in local_var_params:
+            query_params.append(('source_dn_instance_id', local_var_params['source_dn_instance_id']))
+        if 'restore_time' in local_var_params:
+            query_params.append(('restore_time', local_var_params['restore_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_avalible_time_async(self, request):
+        r"""查询可恢复时间段
+
+        查询可恢复时间段
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAvalibleTime
+        :type request: :class:`huaweicloudsdkddm.v1.ShowAvalibleTimeRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowAvalibleTimeResponse`
+        """
+        http_info = self._show_avalible_time_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_avalible_time_async_invoker(self, request):
+        http_info = self._show_avalible_time_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_avalible_time_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/restorable-time-interval",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAvalibleTimeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_backup_async(self, request):
+        r"""查询备份详情
+
+        查询备份详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBackup
+        :type request: :class:`huaweicloudsdkddm.v1.ShowBackupRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowBackupResponse`
+        """
+        http_info = self._show_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_backup_async_invoker(self, request):
+        http_info = self._show_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_backup_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'backup_id' in local_var_params:
+            path_params['backup_id'] = local_var_params['backup_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_database_async(self, request):
         r"""查询DDM逻辑库详细信息
 
@@ -2842,6 +4389,73 @@ class DdmAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_database_async(self, request):
+        r"""查询逻辑库详情
+
+        查询逻辑库详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowInstanceDatabase
+        :type request: :class:`huaweicloudsdkddm.v1.ShowInstanceDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowInstanceDatabaseResponse`
+        """
+        http_info = self._show_instance_database_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_database_async_invoker(self, request):
+        http_info = self._show_instance_database_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_database_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{database_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceDatabaseResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
 
         query_params = []
 
@@ -3224,6 +4838,73 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def show_related_dns_async(self, request):
+        r"""查询实例在恢复时间点关联的数据节点
+
+        查询实例在恢复时间点关联的数据节点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRelatedDns
+        :type request: :class:`huaweicloudsdkddm.v1.ShowRelatedDnsRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowRelatedDnsResponse`
+        """
+        http_info = self._show_related_dns_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_related_dns_async_invoker(self, request):
+        http_info = self._show_related_dns_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_related_dns_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/related-dn",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRelatedDnsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'restore_time' in local_var_params:
+            query_params.append(('restore_time', local_var_params['restore_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def shrink_instance_nodes_async(self, request):
         r"""DDM实例节点缩容
 
@@ -3277,6 +4958,75 @@ class DdmAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def switch_route_async(self, request):
+        r"""切换路由
+
+        切换路由
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SwitchRoute
+        :type request: :class:`huaweicloudsdkddm.v1.SwitchRouteRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.SwitchRouteResponse`
+        """
+        http_info = self._switch_route_http_info(request)
+        return self._call_api(**http_info)
+
+    def switch_route_async_invoker(self, request):
+        http_info = self._switch_route_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_route_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/{db_name}/migration/jobs/{job_id}/route-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchRouteResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'db_name' in local_var_params:
+            path_params['db_name'] = local_var_params['db_name']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -3798,6 +5548,73 @@ class DdmAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
         if 'username' in local_var_params:
             path_params['username'] = local_var_params['username']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upload_schema_metadata_async(self, request):
+        r"""导入逻辑库元数据
+
+        导入所有逻辑库物理分片分布关系，以此创建相同物理分片分布关系的逻辑库。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UploadSchemaMetadata
+        :type request: :class:`huaweicloudsdkddm.v1.UploadSchemaMetadataRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UploadSchemaMetadataResponse`
+        """
+        http_info = self._upload_schema_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def upload_schema_metadata_async_invoker(self, request):
+        http_info = self._upload_schema_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_schema_metadata_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/schema-metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadSchemaMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
 

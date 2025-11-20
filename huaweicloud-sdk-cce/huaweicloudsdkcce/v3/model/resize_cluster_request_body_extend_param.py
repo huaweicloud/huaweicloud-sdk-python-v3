@@ -29,9 +29,9 @@ class ResizeClusterRequestBodyExtendParam:
 
         The model defined in huaweicloud sdk
 
-        :param dec_master_flavor: 专属云CCE集群可指定控制节点的规格
+        :param dec_master_flavor: **参数解释**： 专属云CCE集群可指定控制节点的规格 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type dec_master_flavor: str
-        :param is_auto_pay: 是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 &gt; 包周期集群时生效，不填写此参数时默认不会自动扣款。 
+        :param is_auto_pay: **参数解释**： 是否自动扣款 **约束限制**： 不涉及 **取值范围**： - “true”：自动扣款 - “false”：不自动扣款 &gt; 包周期集群时生效，不填写此参数时默认不会自动扣款。  **默认取值**： 不涉及 
         :type is_auto_pay: str
         """
         
@@ -50,7 +50,7 @@ class ResizeClusterRequestBodyExtendParam:
     def dec_master_flavor(self):
         r"""Gets the dec_master_flavor of this ResizeClusterRequestBodyExtendParam.
 
-        专属云CCE集群可指定控制节点的规格
+        **参数解释**： 专属云CCE集群可指定控制节点的规格 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The dec_master_flavor of this ResizeClusterRequestBodyExtendParam.
         :rtype: str
@@ -61,7 +61,7 @@ class ResizeClusterRequestBodyExtendParam:
     def dec_master_flavor(self, dec_master_flavor):
         r"""Sets the dec_master_flavor of this ResizeClusterRequestBodyExtendParam.
 
-        专属云CCE集群可指定控制节点的规格
+        **参数解释**： 专属云CCE集群可指定控制节点的规格 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param dec_master_flavor: The dec_master_flavor of this ResizeClusterRequestBodyExtendParam.
         :type dec_master_flavor: str
@@ -72,7 +72,7 @@ class ResizeClusterRequestBodyExtendParam:
     def is_auto_pay(self):
         r"""Gets the is_auto_pay of this ResizeClusterRequestBodyExtendParam.
 
-        是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 > 包周期集群时生效，不填写此参数时默认不会自动扣款。 
+        **参数解释**： 是否自动扣款 **约束限制**： 不涉及 **取值范围**： - “true”：自动扣款 - “false”：不自动扣款 > 包周期集群时生效，不填写此参数时默认不会自动扣款。  **默认取值**： 不涉及 
 
         :return: The is_auto_pay of this ResizeClusterRequestBodyExtendParam.
         :rtype: str
@@ -83,7 +83,7 @@ class ResizeClusterRequestBodyExtendParam:
     def is_auto_pay(self, is_auto_pay):
         r"""Sets the is_auto_pay of this ResizeClusterRequestBodyExtendParam.
 
-        是否自动扣款 - “true”：自动扣款 - “false”：不自动扣款 > 包周期集群时生效，不填写此参数时默认不会自动扣款。 
+        **参数解释**： 是否自动扣款 **约束限制**： 不涉及 **取值范围**： - “true”：自动扣款 - “false”：不自动扣款 > 包周期集群时生效，不填写此参数时默认不会自动扣款。  **默认取值**： 不涉及 
 
         :param is_auto_pay: The is_auto_pay of this ResizeClusterRequestBodyExtendParam.
         :type is_auto_pay: str

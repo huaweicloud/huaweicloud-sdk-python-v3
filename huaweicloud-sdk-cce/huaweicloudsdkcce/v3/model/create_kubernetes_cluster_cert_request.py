@@ -16,7 +16,7 @@ class CreateKubernetesClusterCertRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'body': 'CertDuration'
+        'body': 'ClusterCertDuration'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class CreateKubernetesClusterCertRequest:
         :param cluster_id: 集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
         :type cluster_id: str
         :param body: Body of the CreateKubernetesClusterCertRequest
-        :type body: :class:`huaweicloudsdkcce.v3.CertDuration`
+        :type body: :class:`huaweicloudsdkcce.v3.ClusterCertDuration`
         """
         
         
@@ -72,7 +72,7 @@ class CreateKubernetesClusterCertRequest:
         r"""Gets the body of this CreateKubernetesClusterCertRequest.
 
         :return: The body of this CreateKubernetesClusterCertRequest.
-        :rtype: :class:`huaweicloudsdkcce.v3.CertDuration`
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterCertDuration`
         """
         return self._body
 
@@ -81,7 +81,7 @@ class CreateKubernetesClusterCertRequest:
         r"""Sets the body of this CreateKubernetesClusterCertRequest.
 
         :param body: The body of this CreateKubernetesClusterCertRequest.
-        :type body: :class:`huaweicloudsdkcce.v3.CertDuration`
+        :type body: :class:`huaweicloudsdkcce.v3.ClusterCertDuration`
         """
         self._body = body
 

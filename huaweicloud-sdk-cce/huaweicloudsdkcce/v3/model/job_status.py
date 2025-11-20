@@ -29,9 +29,9 @@ class JobStatus:
 
         The model defined in huaweicloud sdk
 
-        :param phase: 任务的状态，有如下四种状态：  - JobPhaseInitializing JobPhase &#x3D; \&quot;Initializing\&quot; - JobPhaseRunning JobPhase &#x3D; \&quot;Running\&quot; - JobPhaseFailed JobPhase &#x3D; \&quot;Failed\&quot; - JobPhaseSuccess JobPhase &#x3D; \&quot;Success\&quot;
+        :param phase: **参数解释**： 任务的状态 **约束限制**： 不涉及 **取值范围**： - Initializing：初始化 - Running：运行中 - Failed：失败 - Success：成功  **默认取值**： 不涉及
         :type phase: str
-        :param reason: 任务变为当前状态的原因
+        :param reason: **参数解释**： 任务变为当前状态的原因 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type reason: str
         """
         
@@ -50,7 +50,7 @@ class JobStatus:
     def phase(self):
         r"""Gets the phase of this JobStatus.
 
-        任务的状态，有如下四种状态：  - JobPhaseInitializing JobPhase = \"Initializing\" - JobPhaseRunning JobPhase = \"Running\" - JobPhaseFailed JobPhase = \"Failed\" - JobPhaseSuccess JobPhase = \"Success\"
+        **参数解释**： 任务的状态 **约束限制**： 不涉及 **取值范围**： - Initializing：初始化 - Running：运行中 - Failed：失败 - Success：成功  **默认取值**： 不涉及
 
         :return: The phase of this JobStatus.
         :rtype: str
@@ -61,7 +61,7 @@ class JobStatus:
     def phase(self, phase):
         r"""Sets the phase of this JobStatus.
 
-        任务的状态，有如下四种状态：  - JobPhaseInitializing JobPhase = \"Initializing\" - JobPhaseRunning JobPhase = \"Running\" - JobPhaseFailed JobPhase = \"Failed\" - JobPhaseSuccess JobPhase = \"Success\"
+        **参数解释**： 任务的状态 **约束限制**： 不涉及 **取值范围**： - Initializing：初始化 - Running：运行中 - Failed：失败 - Success：成功  **默认取值**： 不涉及
 
         :param phase: The phase of this JobStatus.
         :type phase: str
@@ -72,7 +72,7 @@ class JobStatus:
     def reason(self):
         r"""Gets the reason of this JobStatus.
 
-        任务变为当前状态的原因
+        **参数解释**： 任务变为当前状态的原因 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The reason of this JobStatus.
         :rtype: str
@@ -83,7 +83,7 @@ class JobStatus:
     def reason(self, reason):
         r"""Sets the reason of this JobStatus.
 
-        任务变为当前状态的原因
+        **参数解释**： 任务变为当前状态的原因 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param reason: The reason of this JobStatus.
         :type reason: str

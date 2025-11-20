@@ -15,29 +15,36 @@ class AnalyzerConfigurationUnusedAccess:
     sensitive_list = []
 
     openapi_types = {
-        'unused_access_age': 'int'
+        'unused_access_age': 'int',
+        'unused_analysis_rule': 'UnusedAnalysisRule'
     }
 
     attribute_map = {
-        'unused_access_age': 'unused_access_age'
+        'unused_access_age': 'unused_access_age',
+        'unused_analysis_rule': 'unused_analysis_rule'
     }
 
-    def __init__(self, unused_access_age=None):
+    def __init__(self, unused_access_age=None, unused_analysis_rule=None):
         r"""AnalyzerConfigurationUnusedAccess
 
         The model defined in huaweicloud sdk
 
         :param unused_access_age: 生成分析结果的预设天数。
         :type unused_access_age: int
+        :param unused_analysis_rule: 
+        :type unused_analysis_rule: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedAnalysisRule`
         """
         
         
 
         self._unused_access_age = None
+        self._unused_analysis_rule = None
         self.discriminator = None
 
         if unused_access_age is not None:
             self.unused_access_age = unused_access_age
+        if unused_analysis_rule is not None:
+            self.unused_analysis_rule = unused_analysis_rule
 
     @property
     def unused_access_age(self):
@@ -60,6 +67,24 @@ class AnalyzerConfigurationUnusedAccess:
         :type unused_access_age: int
         """
         self._unused_access_age = unused_access_age
+
+    @property
+    def unused_analysis_rule(self):
+        r"""Gets the unused_analysis_rule of this AnalyzerConfigurationUnusedAccess.
+
+        :return: The unused_analysis_rule of this AnalyzerConfigurationUnusedAccess.
+        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedAnalysisRule`
+        """
+        return self._unused_analysis_rule
+
+    @unused_analysis_rule.setter
+    def unused_analysis_rule(self, unused_analysis_rule):
+        r"""Sets the unused_analysis_rule of this AnalyzerConfigurationUnusedAccess.
+
+        :param unused_analysis_rule: The unused_analysis_rule of this AnalyzerConfigurationUnusedAccess.
+        :type unused_analysis_rule: :class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedAnalysisRule`
+        """
+        self._unused_analysis_rule = unused_analysis_rule
 
     def to_dict(self):
         result = {}

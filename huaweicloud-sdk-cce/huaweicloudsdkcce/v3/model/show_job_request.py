@@ -27,7 +27,7 @@ class ShowJobRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :param job_id: **参数解释**： 任务ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type job_id: str
         """
         
@@ -42,7 +42,7 @@ class ShowJobRequest:
     def job_id(self):
         r"""Gets the job_id of this ShowJobRequest.
 
-        任务ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        **参数解释**： 任务ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The job_id of this ShowJobRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowJobRequest:
     def job_id(self, job_id):
         r"""Sets the job_id of this ShowJobRequest.
 
-        任务ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        **参数解释**： 任务ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param job_id: The job_id of this ShowJobRequest.
         :type job_id: str

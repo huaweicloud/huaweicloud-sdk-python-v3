@@ -92,8 +92,7 @@ class ExportVulHandleHistoryRequestBody:
             self.host_ip = host_ip
         if export_size is not None:
             self.export_size = export_size
-        if export_header_list is not None:
-            self.export_header_list = export_header_list
+        self.export_header_list = export_header_list
 
     @property
     def status(self):

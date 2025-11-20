@@ -83,7 +83,7 @@ class SecurityCheckRuleHostResponseInfo:
         :type diff_description: str
         :param description: **参数解释** 忽略或加白的备注 **取值范围** 字符长度0-1024位
         :type description: str
-        :param host_type: **参数解释** 主机类型 **取值范围** - cce
+        :param host_type: **参数解释** 主机类型，当主机为cce类型时，返回cce **取值范围** - cce
         :type host_type: str
         :param enable_fix: **参数解释** 是否支持一键修复 **取值范围** - 1 : 支持一键修复 - 0 : 不支持
         :type enable_fix: int
@@ -404,7 +404,7 @@ class SecurityCheckRuleHostResponseInfo:
     def host_type(self):
         r"""Gets the host_type of this SecurityCheckRuleHostResponseInfo.
 
-        **参数解释** 主机类型 **取值范围** - cce
+        **参数解释** 主机类型，当主机为cce类型时，返回cce **取值范围** - cce
 
         :return: The host_type of this SecurityCheckRuleHostResponseInfo.
         :rtype: str
@@ -415,7 +415,7 @@ class SecurityCheckRuleHostResponseInfo:
     def host_type(self, host_type):
         r"""Sets the host_type of this SecurityCheckRuleHostResponseInfo.
 
-        **参数解释** 主机类型 **取值范围** - cce
+        **参数解释** 主机类型，当主机为cce类型时，返回cce **取值范围** - cce
 
         :param host_type: The host_type of this SecurityCheckRuleHostResponseInfo.
         :type host_type: str

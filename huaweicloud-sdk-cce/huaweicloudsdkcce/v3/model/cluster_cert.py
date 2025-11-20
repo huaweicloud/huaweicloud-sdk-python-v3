@@ -31,11 +31,11 @@ class ClusterCert:
 
         The model defined in huaweicloud sdk
 
-        :param server: 服务器地址。
+        :param server: **参数解释**： 上下文user信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type server: str
-        :param certificate_authority_data: 证书授权数据。
+        :param certificate_authority_data: **参数解释**： 证书授权数据 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type certificate_authority_data: str
-        :param insecure_skip_tls_verify: 不校验服务端证书，在 cluster 类型为 externalCluster 时，该值为 true。
+        :param insecure_skip_tls_verify: **参数解释**： 不校验服务端证书 **约束限制**： 不涉及 **取值范围**： - true：跳过校验服务端证书 - false：校验服务端证书  **默认取值**： 在 cluster 类型为 externalCluster 时，该值为 true。 
         :type insecure_skip_tls_verify: bool
         """
         
@@ -57,7 +57,7 @@ class ClusterCert:
     def server(self):
         r"""Gets the server of this ClusterCert.
 
-        服务器地址。
+        **参数解释**： 上下文user信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The server of this ClusterCert.
         :rtype: str
@@ -68,7 +68,7 @@ class ClusterCert:
     def server(self, server):
         r"""Sets the server of this ClusterCert.
 
-        服务器地址。
+        **参数解释**： 上下文user信息 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param server: The server of this ClusterCert.
         :type server: str
@@ -79,7 +79,7 @@ class ClusterCert:
     def certificate_authority_data(self):
         r"""Gets the certificate_authority_data of this ClusterCert.
 
-        证书授权数据。
+        **参数解释**： 证书授权数据 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The certificate_authority_data of this ClusterCert.
         :rtype: str
@@ -90,7 +90,7 @@ class ClusterCert:
     def certificate_authority_data(self, certificate_authority_data):
         r"""Sets the certificate_authority_data of this ClusterCert.
 
-        证书授权数据。
+        **参数解释**： 证书授权数据 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param certificate_authority_data: The certificate_authority_data of this ClusterCert.
         :type certificate_authority_data: str
@@ -101,7 +101,7 @@ class ClusterCert:
     def insecure_skip_tls_verify(self):
         r"""Gets the insecure_skip_tls_verify of this ClusterCert.
 
-        不校验服务端证书，在 cluster 类型为 externalCluster 时，该值为 true。
+        **参数解释**： 不校验服务端证书 **约束限制**： 不涉及 **取值范围**： - true：跳过校验服务端证书 - false：校验服务端证书  **默认取值**： 在 cluster 类型为 externalCluster 时，该值为 true。 
 
         :return: The insecure_skip_tls_verify of this ClusterCert.
         :rtype: bool
@@ -112,7 +112,7 @@ class ClusterCert:
     def insecure_skip_tls_verify(self, insecure_skip_tls_verify):
         r"""Sets the insecure_skip_tls_verify of this ClusterCert.
 
-        不校验服务端证书，在 cluster 类型为 externalCluster 时，该值为 true。
+        **参数解释**： 不校验服务端证书 **约束限制**： 不涉及 **取值范围**： - true：跳过校验服务端证书 - false：校验服务端证书  **默认取值**： 在 cluster 类型为 externalCluster 时，该值为 true。 
 
         :param insecure_skip_tls_verify: The insecure_skip_tls_verify of this ClusterCert.
         :type insecure_skip_tls_verify: bool

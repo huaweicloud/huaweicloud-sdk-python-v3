@@ -29,9 +29,9 @@ class NodeLabelInfoResponse:
 
         The model defined in huaweicloud sdk
 
-        :param label: **参数解释**: 节点标签名称。 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
+        :param label: **参数解释**: 节点标签名称。 **取值范围**: 字符长度1-512位 
         :type label: str
-        :param children: **参数解释**: 节点名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
+        :param children: **参数解释**: 节点名称 **取值范围**: 字符长度0-256位 
         :type children: list[str]
         """
         
@@ -50,7 +50,7 @@ class NodeLabelInfoResponse:
     def label(self):
         r"""Gets the label of this NodeLabelInfoResponse.
 
-        **参数解释**: 节点标签名称。 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
+        **参数解释**: 节点标签名称。 **取值范围**: 字符长度1-512位 
 
         :return: The label of this NodeLabelInfoResponse.
         :rtype: str
@@ -61,7 +61,7 @@ class NodeLabelInfoResponse:
     def label(self, label):
         r"""Sets the label of this NodeLabelInfoResponse.
 
-        **参数解释**: 节点标签名称。 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
+        **参数解释**: 节点标签名称。 **取值范围**: 字符长度1-512位 
 
         :param label: The label of this NodeLabelInfoResponse.
         :type label: str
@@ -72,7 +72,7 @@ class NodeLabelInfoResponse:
     def children(self):
         r"""Gets the children of this NodeLabelInfoResponse.
 
-        **参数解释**: 节点名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
+        **参数解释**: 节点名称 **取值范围**: 字符长度0-256位 
 
         :return: The children of this NodeLabelInfoResponse.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class NodeLabelInfoResponse:
     def children(self, children):
         r"""Sets the children of this NodeLabelInfoResponse.
 
-        **参数解释**: 节点名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
+        **参数解释**: 节点名称 **取值范围**: 字符长度0-256位 
 
         :param children: The children of this NodeLabelInfoResponse.
         :type children: list[str]

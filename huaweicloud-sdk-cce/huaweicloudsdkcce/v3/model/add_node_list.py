@@ -31,11 +31,11 @@ class AddNodeList:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: **参数解释**： API版本，固定值“v3”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        :param api_version: **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
         :type api_version: str
-        :param kind: **参数解释**： API类型，，固定值“List”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“List”。 **默认取值**： 不涉及
+        :param kind: **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： List 
         :type kind: str
-        :param node_list: **参数解释**： 纳管节点列表。 **约束限制**： 当前最多支持同时纳管200个节点。
+        :param node_list: **参数解释**： 纳管节点列表，当前最多支持同时纳管200个节点。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type node_list: list[:class:`huaweicloudsdkcce.v3.AddNode`]
         """
         
@@ -54,7 +54,7 @@ class AddNodeList:
     def api_version(self):
         r"""Gets the api_version of this AddNodeList.
 
-        **参数解释**： API版本，固定值“v3”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :return: The api_version of this AddNodeList.
         :rtype: str
@@ -65,7 +65,7 @@ class AddNodeList:
     def api_version(self, api_version):
         r"""Sets the api_version of this AddNodeList.
 
-        **参数解释**： API版本，固定值“v3”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“v3”。 **默认取值**： 不涉及
+        **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :param api_version: The api_version of this AddNodeList.
         :type api_version: str
@@ -76,7 +76,7 @@ class AddNodeList:
     def kind(self):
         r"""Gets the kind of this AddNodeList.
 
-        **参数解释**： API类型，，固定值“List”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“List”。 **默认取值**： 不涉及
+        **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： List 
 
         :return: The kind of this AddNodeList.
         :rtype: str
@@ -87,7 +87,7 @@ class AddNodeList:
     def kind(self, kind):
         r"""Sets the kind of this AddNodeList.
 
-        **参数解释**： API类型，，固定值“List”。 **约束限制**： 不涉及 **取值范围**： 只能为固定值“List”。 **默认取值**： 不涉及
+        **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： List 
 
         :param kind: The kind of this AddNodeList.
         :type kind: str
@@ -98,7 +98,7 @@ class AddNodeList:
     def node_list(self):
         r"""Gets the node_list of this AddNodeList.
 
-        **参数解释**： 纳管节点列表。 **约束限制**： 当前最多支持同时纳管200个节点。
+        **参数解释**： 纳管节点列表，当前最多支持同时纳管200个节点。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The node_list of this AddNodeList.
         :rtype: list[:class:`huaweicloudsdkcce.v3.AddNode`]
@@ -109,7 +109,7 @@ class AddNodeList:
     def node_list(self, node_list):
         r"""Sets the node_list of this AddNodeList.
 
-        **参数解释**： 纳管节点列表。 **约束限制**： 当前最多支持同时纳管200个节点。
+        **参数解释**： 纳管节点列表，当前最多支持同时纳管200个节点。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param node_list: The node_list of this AddNodeList.
         :type node_list: list[:class:`huaweicloudsdkcce.v3.AddNode`]

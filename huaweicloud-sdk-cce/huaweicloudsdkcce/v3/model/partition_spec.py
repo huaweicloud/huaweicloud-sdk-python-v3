@@ -35,11 +35,11 @@ class PartitionSpec:
 
         :param host_network: 
         :type host_network: :class:`huaweicloudsdkcce.v3.PartitionSpecHostNetwork`
-        :param container_network: 分区容器子网
+        :param container_network: **参数解释**： 分区容器子网 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type container_network: list[:class:`huaweicloudsdkcce.v3.PartitionSpecContainerNetwork`]
-        :param public_border_group: 群组
+        :param public_border_group: **参数解释**： 群组，IES边缘场景为可用区ID，中心区统一为“center”。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type public_border_group: str
-        :param category: 类别
+        :param category: **参数解释**： 可用区分类 **约束限制**： 不涉及 **取值范围**： - Default: 中心云可用区 - IES: 专属云可用区 - HomeZone: 智能边缘云可用区  **默认取值**： 不涉及 
         :type category: str
         """
         
@@ -82,7 +82,7 @@ class PartitionSpec:
     def container_network(self):
         r"""Gets the container_network of this PartitionSpec.
 
-        分区容器子网
+        **参数解释**： 分区容器子网 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The container_network of this PartitionSpec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.PartitionSpecContainerNetwork`]
@@ -93,7 +93,7 @@ class PartitionSpec:
     def container_network(self, container_network):
         r"""Sets the container_network of this PartitionSpec.
 
-        分区容器子网
+        **参数解释**： 分区容器子网 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param container_network: The container_network of this PartitionSpec.
         :type container_network: list[:class:`huaweicloudsdkcce.v3.PartitionSpecContainerNetwork`]
@@ -104,7 +104,7 @@ class PartitionSpec:
     def public_border_group(self):
         r"""Gets the public_border_group of this PartitionSpec.
 
-        群组
+        **参数解释**： 群组，IES边缘场景为可用区ID，中心区统一为“center”。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The public_border_group of this PartitionSpec.
         :rtype: str
@@ -115,7 +115,7 @@ class PartitionSpec:
     def public_border_group(self, public_border_group):
         r"""Sets the public_border_group of this PartitionSpec.
 
-        群组
+        **参数解释**： 群组，IES边缘场景为可用区ID，中心区统一为“center”。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param public_border_group: The public_border_group of this PartitionSpec.
         :type public_border_group: str
@@ -126,7 +126,7 @@ class PartitionSpec:
     def category(self):
         r"""Gets the category of this PartitionSpec.
 
-        类别
+        **参数解释**： 可用区分类 **约束限制**： 不涉及 **取值范围**： - Default: 中心云可用区 - IES: 专属云可用区 - HomeZone: 智能边缘云可用区  **默认取值**： 不涉及 
 
         :return: The category of this PartitionSpec.
         :rtype: str
@@ -137,7 +137,7 @@ class PartitionSpec:
     def category(self, category):
         r"""Sets the category of this PartitionSpec.
 
-        类别
+        **参数解释**： 可用区分类 **约束限制**： 不涉及 **取值范围**： - Default: 中心云可用区 - IES: 专属云可用区 - HomeZone: 智能边缘云可用区  **默认取值**： 不涉及 
 
         :param category: The category of this PartitionSpec.
         :type category: str

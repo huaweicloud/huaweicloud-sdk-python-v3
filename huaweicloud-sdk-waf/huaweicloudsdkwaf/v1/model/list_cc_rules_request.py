@@ -18,17 +18,25 @@ class ListCcRulesRequest:
         'enterprise_project_id': 'str',
         'policy_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'name': 'str',
+        'status': 'int',
+        'category': 'str',
+        'tag_type': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'policy_id': 'policy_id',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'name': 'name',
+        'status': 'status',
+        'category': 'category',
+        'tag_type': 'tag_type'
     }
 
-    def __init__(self, enterprise_project_id=None, policy_id=None, offset=None, limit=None):
+    def __init__(self, enterprise_project_id=None, policy_id=None, offset=None, limit=None, name=None, status=None, category=None, tag_type=None):
         r"""ListCcRulesRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +49,14 @@ class ListCcRulesRequest:
         :type offset: int
         :param limit: 查询返回记录的数量限制。
         :type limit: int
+        :param name: 规则名称
+        :type name: str
+        :param status: 规则的开启状态，1表示开启，0表示关闭
+        :type status: int
+        :param category: **参数解释：** 防护动作 **取值范围：** - block: 拦截，表示超过“限速频率”将直接拦截。 - log：仅记录，表示超过“限速频率”将只记录不拦截。 - captcha：表示超过“限速频率”后弹出验证码，进行人机验证，完成验证后，请求将不受访问限制。人机验证目前支持英文。 - dynamic_block：上一个限速周期内，请求频率超过“限速频率”将被拦截，那么在下一个限速周期内，请求频率超过“放行频率”将被拦截。 - advanced_captcha：高阶人机验证，表示超过“限速频率”后弹出验证码，进行人机验证。 - js_challenge：要求客户端完成一段脚本的执行或验证，从而验证请求来源的合法性。
+        :type category: str
+        :param tag_type: 限速模式：   - ip：IP限速，根据IP区分单个Web访问者。   - cookie：用户限速，根据Cookie键值区分单个Web访问者。   - header：用户限速，根据Header区分单个Web访问者。   - other：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。   - policy: 策略限速   - domain: 域名限速     - url: url限速
+        :type tag_type: str
         """
         
         
@@ -49,6 +65,10 @@ class ListCcRulesRequest:
         self._policy_id = None
         self._offset = None
         self._limit = None
+        self._name = None
+        self._status = None
+        self._category = None
+        self._tag_type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -56,6 +76,14 @@ class ListCcRulesRequest:
         self.policy_id = policy_id
         self.offset = offset
         self.limit = limit
+        if name is not None:
+            self.name = name
+        if status is not None:
+            self.status = status
+        if category is not None:
+            self.category = category
+        if tag_type is not None:
+            self.tag_type = tag_type
 
     @property
     def enterprise_project_id(self):
@@ -144,6 +172,94 @@ class ListCcRulesRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def name(self):
+        r"""Gets the name of this ListCcRulesRequest.
+
+        规则名称
+
+        :return: The name of this ListCcRulesRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        r"""Sets the name of this ListCcRulesRequest.
+
+        规则名称
+
+        :param name: The name of this ListCcRulesRequest.
+        :type name: str
+        """
+        self._name = name
+
+    @property
+    def status(self):
+        r"""Gets the status of this ListCcRulesRequest.
+
+        规则的开启状态，1表示开启，0表示关闭
+
+        :return: The status of this ListCcRulesRequest.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ListCcRulesRequest.
+
+        规则的开启状态，1表示开启，0表示关闭
+
+        :param status: The status of this ListCcRulesRequest.
+        :type status: int
+        """
+        self._status = status
+
+    @property
+    def category(self):
+        r"""Gets the category of this ListCcRulesRequest.
+
+        **参数解释：** 防护动作 **取值范围：** - block: 拦截，表示超过“限速频率”将直接拦截。 - log：仅记录，表示超过“限速频率”将只记录不拦截。 - captcha：表示超过“限速频率”后弹出验证码，进行人机验证，完成验证后，请求将不受访问限制。人机验证目前支持英文。 - dynamic_block：上一个限速周期内，请求频率超过“限速频率”将被拦截，那么在下一个限速周期内，请求频率超过“放行频率”将被拦截。 - advanced_captcha：高阶人机验证，表示超过“限速频率”后弹出验证码，进行人机验证。 - js_challenge：要求客户端完成一段脚本的执行或验证，从而验证请求来源的合法性。
+
+        :return: The category of this ListCcRulesRequest.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        r"""Sets the category of this ListCcRulesRequest.
+
+        **参数解释：** 防护动作 **取值范围：** - block: 拦截，表示超过“限速频率”将直接拦截。 - log：仅记录，表示超过“限速频率”将只记录不拦截。 - captcha：表示超过“限速频率”后弹出验证码，进行人机验证，完成验证后，请求将不受访问限制。人机验证目前支持英文。 - dynamic_block：上一个限速周期内，请求频率超过“限速频率”将被拦截，那么在下一个限速周期内，请求频率超过“放行频率”将被拦截。 - advanced_captcha：高阶人机验证，表示超过“限速频率”后弹出验证码，进行人机验证。 - js_challenge：要求客户端完成一段脚本的执行或验证，从而验证请求来源的合法性。
+
+        :param category: The category of this ListCcRulesRequest.
+        :type category: str
+        """
+        self._category = category
+
+    @property
+    def tag_type(self):
+        r"""Gets the tag_type of this ListCcRulesRequest.
+
+        限速模式：   - ip：IP限速，根据IP区分单个Web访问者。   - cookie：用户限速，根据Cookie键值区分单个Web访问者。   - header：用户限速，根据Header区分单个Web访问者。   - other：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。   - policy: 策略限速   - domain: 域名限速     - url: url限速
+
+        :return: The tag_type of this ListCcRulesRequest.
+        :rtype: str
+        """
+        return self._tag_type
+
+    @tag_type.setter
+    def tag_type(self, tag_type):
+        r"""Sets the tag_type of this ListCcRulesRequest.
+
+        限速模式：   - ip：IP限速，根据IP区分单个Web访问者。   - cookie：用户限速，根据Cookie键值区分单个Web访问者。   - header：用户限速，根据Header区分单个Web访问者。   - other：根据Referer（自定义请求访问的来源）字段区分单个Web访问者。   - policy: 策略限速   - domain: 域名限速     - url: url限速
+
+        :param tag_type: The tag_type of this ListCcRulesRequest.
+        :type tag_type: str
+        """
+        self._tag_type = tag_type
 
     def to_dict(self):
         result = {}

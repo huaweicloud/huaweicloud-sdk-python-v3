@@ -37,7 +37,7 @@ class ValidatePolicyRequest:
         :type limit: int
         :param marker: 页面标记。
         :type marker: str
-        :param x_language: 返回消息的语言，默认值为&#39;zh-cn&#39;，表示中文。
+        :param x_language: 返回消息的语言，默认值为&#39;zh-cn&#39;。 - zh-cn：中文 - en-us：英文 
         :type x_language: str
         :param body: Body of the ValidatePolicyRequest
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyReqBody`
@@ -108,7 +108,7 @@ class ValidatePolicyRequest:
     def x_language(self):
         r"""Gets the x_language of this ValidatePolicyRequest.
 
-        返回消息的语言，默认值为'zh-cn'，表示中文。
+        返回消息的语言，默认值为'zh-cn'。 - zh-cn：中文 - en-us：英文 
 
         :return: The x_language of this ValidatePolicyRequest.
         :rtype: str
@@ -119,7 +119,7 @@ class ValidatePolicyRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this ValidatePolicyRequest.
 
-        返回消息的语言，默认值为'zh-cn'，表示中文。
+        返回消息的语言，默认值为'zh-cn'。 - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this ValidatePolicyRequest.
         :type x_language: str

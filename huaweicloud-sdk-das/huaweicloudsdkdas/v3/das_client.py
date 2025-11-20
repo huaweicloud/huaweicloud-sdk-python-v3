@@ -3369,6 +3369,8 @@ class DasClient(Client):
             query_params.append(('page', local_var_params['page']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
         if 'x_language' in local_var_params:

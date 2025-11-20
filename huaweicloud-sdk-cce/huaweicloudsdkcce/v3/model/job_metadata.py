@@ -31,11 +31,11 @@ class JobMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param uid: 任务的ID。
+        :param uid: **参数解释**： 任务的ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type uid: str
-        :param creation_timestamp: 任务的创建时间。
+        :param creation_timestamp: **参数解释**： 任务的创建时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type creation_timestamp: str
-        :param update_timestamp: 任务的更新时间。
+        :param update_timestamp: **参数解释**： 任务的更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type update_timestamp: str
         """
         
@@ -57,7 +57,7 @@ class JobMetadata:
     def uid(self):
         r"""Gets the uid of this JobMetadata.
 
-        任务的ID。
+        **参数解释**： 任务的ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The uid of this JobMetadata.
         :rtype: str
@@ -68,7 +68,7 @@ class JobMetadata:
     def uid(self, uid):
         r"""Sets the uid of this JobMetadata.
 
-        任务的ID。
+        **参数解释**： 任务的ID **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param uid: The uid of this JobMetadata.
         :type uid: str
@@ -79,7 +79,7 @@ class JobMetadata:
     def creation_timestamp(self):
         r"""Gets the creation_timestamp of this JobMetadata.
 
-        任务的创建时间。
+        **参数解释**： 任务的创建时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The creation_timestamp of this JobMetadata.
         :rtype: str
@@ -90,7 +90,7 @@ class JobMetadata:
     def creation_timestamp(self, creation_timestamp):
         r"""Sets the creation_timestamp of this JobMetadata.
 
-        任务的创建时间。
+        **参数解释**： 任务的创建时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param creation_timestamp: The creation_timestamp of this JobMetadata.
         :type creation_timestamp: str
@@ -101,7 +101,7 @@ class JobMetadata:
     def update_timestamp(self):
         r"""Gets the update_timestamp of this JobMetadata.
 
-        任务的更新时间。
+        **参数解释**： 任务的更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The update_timestamp of this JobMetadata.
         :rtype: str
@@ -112,7 +112,7 @@ class JobMetadata:
     def update_timestamp(self, update_timestamp):
         r"""Sets the update_timestamp of this JobMetadata.
 
-        任务的更新时间。
+        **参数解释**： 任务的更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param update_timestamp: The update_timestamp of this JobMetadata.
         :type update_timestamp: str

@@ -2678,6 +2678,77 @@ class CceClient(Client):
 
         return http_info
 
+    def list_addon_precheck_tasks(self, request):
+        r"""获取插件检查任务结果列表
+
+        获取集群下插件检查任务结果列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAddonPrecheckTasks
+        :type request: :class:`huaweicloudsdkcce.v3.ListAddonPrecheckTasksRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListAddonPrecheckTasksResponse`
+        """
+        http_info = self._list_addon_precheck_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_addon_precheck_tasks_invoker(self, request):
+        http_info = self._list_addon_precheck_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_addon_precheck_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/addons/precheck/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAddonPrecheckTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'addon_instance_id' in local_var_params:
+            query_params.append(('addon_instance_id', local_var_params['addon_instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_addon_templates(self, request):
         r"""查询AddonTemplates列表
 
@@ -3041,6 +3112,75 @@ class CceClient(Client):
             query_params.append(('type', local_var_params['type']))
         if 'version' in local_var_params:
             query_params.append(('version', local_var_params['version']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hyper_nodes(self, request):
+        r"""查询集群中超节点列表
+
+        该API用于获取指定集群下所有超节点的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHyperNodes
+        :type request: :class:`huaweicloudsdkcce.v3.ListHyperNodesRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ListHyperNodesResponse`
+        """
+        http_info = self._list_hyper_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hyper_nodes_invoker(self, request):
+        http_info = self._list_hyper_nodes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_hyper_nodes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/hypernodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHyperNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -6375,8 +6515,8 @@ class CceClient(Client):
         
         
         &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
-        
-        &gt; - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags，taints，login，userTags与节点池的扩缩容配置相关字段。若此次更新未设置相关值，默认更新为初始值。
+        &gt; - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags，taints，login，userTags与节点池的扩缩容配置相关字段。
+        &gt; - 若此次更新节点池未设置initialNodeCount的相关值，节点池期望节点个数将默认更新为初始值0，如果此时节点池节点个数大于0将导致节点池缩容。若用户期望不填该参数，请在此次更新设置spec下的ignoreInitialNodeCount为true，用于忽略spec.initialNodeCount参数。特殊场景说明：若节点池当前节点数等于0时，可忽略initialNodeCount和ignoreInitialNodeCount参数配置。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

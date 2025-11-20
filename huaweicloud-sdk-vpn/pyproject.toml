@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdkvpn"
-version = "3.1.175"
+version = "3.1.176"
 description = "VPN"
 readme = "README_PYPI.md"
 authors = [
@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Software Development"
 ]
 dependencies = [
-    "huaweicloudsdkcore>=3.1.175"
+    "huaweicloudsdkcore>=3.1.176"
 ]
 
 [project.urls]

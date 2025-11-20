@@ -63,7 +63,7 @@ class ListProductsRequest:
         :type name: str
         :param tag: 按标签模糊查询。
         :type tag: str
-        :param state: 按状态查询，多状态使用英文逗号分隔。
+        :param state: 根据状态查询。多个状态用英文逗号分隔。 文件状态枚举:   * ACTIVED：已激活   * UNACTIVED：未激活   * BLOCK：已冻结   * DELETED：已删除
         :type state: str
         """
         
@@ -304,7 +304,7 @@ class ListProductsRequest:
     def state(self):
         r"""Gets the state of this ListProductsRequest.
 
-        按状态查询，多状态使用英文逗号分隔。
+        根据状态查询。多个状态用英文逗号分隔。 文件状态枚举:   * ACTIVED：已激活   * UNACTIVED：未激活   * BLOCK：已冻结   * DELETED：已删除
 
         :return: The state of this ListProductsRequest.
         :rtype: str
@@ -315,7 +315,7 @@ class ListProductsRequest:
     def state(self, state):
         r"""Sets the state of this ListProductsRequest.
 
-        按状态查询，多状态使用英文逗号分隔。
+        根据状态查询。多个状态用英文逗号分隔。 文件状态枚举:   * ACTIVED：已激活   * UNACTIVED：未激活   * BLOCK：已冻结   * DELETED：已删除
 
         :param state: The state of this ListProductsRequest.
         :type state: str

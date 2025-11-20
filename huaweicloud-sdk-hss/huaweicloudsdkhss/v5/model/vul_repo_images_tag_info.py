@@ -37,7 +37,7 @@ class VulRepoImagesTagInfo:
         :type tag_id: str
         :param tag_name: **参数解释**: 版本名称 **取值范围**: 字符长度0-65535位 
         :type tag_name: str
-        :param size: **参数解释**: \&quot;版本大小\&quot; **取值范围**: 最小值0，最大值2147483547 
+        :param size: **参数解释**: 版本大小 **取值范围**: 最小值0，最大值2147483547 
         :type size: int
         :param app_name: **参数解释**: 版本app名称 **取值范围**: 字符长度0-65535位 
         :type app_name: str
@@ -108,7 +108,7 @@ class VulRepoImagesTagInfo:
     def size(self):
         r"""Gets the size of this VulRepoImagesTagInfo.
 
-        **参数解释**: \"版本大小\" **取值范围**: 最小值0，最大值2147483547 
+        **参数解释**: 版本大小 **取值范围**: 最小值0，最大值2147483547 
 
         :return: The size of this VulRepoImagesTagInfo.
         :rtype: int
@@ -119,7 +119,7 @@ class VulRepoImagesTagInfo:
     def size(self, size):
         r"""Sets the size of this VulRepoImagesTagInfo.
 
-        **参数解释**: \"版本大小\" **取值范围**: 最小值0，最大值2147483547 
+        **参数解释**: 版本大小 **取值范围**: 最小值0，最大值2147483547 
 
         :param size: The size of this VulRepoImagesTagInfo.
         :type size: int

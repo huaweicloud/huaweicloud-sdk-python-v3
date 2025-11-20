@@ -92,7 +92,7 @@ class CreateHostResponse(SdkResponse):
         :type proxy: bool
         :param timestamp: 创建防护域名的时间
         :type timestamp: int
-        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
         :type exclusive_ip: bool
         :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
         :type web_tag: str
@@ -463,7 +463,7 @@ class CreateHostResponse(SdkResponse):
     def exclusive_ip(self):
         r"""Gets the exclusive_ip of this CreateHostResponse.
 
-        是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
 
         :return: The exclusive_ip of this CreateHostResponse.
         :rtype: bool
@@ -474,7 +474,7 @@ class CreateHostResponse(SdkResponse):
     def exclusive_ip(self, exclusive_ip):
         r"""Sets the exclusive_ip of this CreateHostResponse.
 
-        是否使用独享ip   - true：使用独享ip   - false：不适用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
 
         :param exclusive_ip: The exclusive_ip of this CreateHostResponse.
         :type exclusive_ip: bool

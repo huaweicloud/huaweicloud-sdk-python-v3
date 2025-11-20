@@ -31,6 +31,7 @@ from huaweicloudsdkrds.v3.model.article_properties_response import ArticleProper
 from huaweicloudsdkrds.v3.model.attach_eip_request import AttachEipRequest
 from huaweicloudsdkrds.v3.model.attach_eip_response import AttachEipResponse
 from huaweicloudsdkrds.v3.model.auditlog import Auditlog
+from huaweicloudsdkrds.v3.model.auto_enlarge_strategy_for_console_api import AutoEnlargeStrategyForConsoleApi
 from huaweicloudsdkrds.v3.model.available_zone import AvailableZone
 from huaweicloudsdkrds.v3.model.backup_database import BackupDatabase
 from huaweicloudsdkrds.v3.model.backup_datastore import BackupDatastore
@@ -324,6 +325,12 @@ from huaweicloudsdkrds.v3.model.list_databases_request import ListDatabasesReque
 from huaweicloudsdkrds.v3.model.list_databases_response import ListDatabasesResponse
 from huaweicloudsdkrds.v3.model.list_datastores_request import ListDatastoresRequest
 from huaweicloudsdkrds.v3.model.list_datastores_response import ListDatastoresResponse
+from huaweicloudsdkrds.v3.model.list_db_agent_job_history_steps_request import ListDbAgentJobHistoryStepsRequest
+from huaweicloudsdkrds.v3.model.list_db_agent_job_history_steps_response import ListDbAgentJobHistoryStepsResponse
+from huaweicloudsdkrds.v3.model.list_db_agent_job_history_steps_result import ListDbAgentJobHistoryStepsResult
+from huaweicloudsdkrds.v3.model.list_db_agent_job_historys_request import ListDbAgentJobHistorysRequest
+from huaweicloudsdkrds.v3.model.list_db_agent_job_historys_response import ListDbAgentJobHistorysResponse
+from huaweicloudsdkrds.v3.model.list_db_agent_job_historys_result import ListDbAgentJobHistorysResult
 from huaweicloudsdkrds.v3.model.list_db_agent_jobs_request import ListDbAgentJobsRequest
 from huaweicloudsdkrds.v3.model.list_db_agent_jobs_response import ListDbAgentJobsResponse
 from huaweicloudsdkrds.v3.model.list_db_agent_jobs_result import ListDbAgentJobsResult
@@ -560,6 +567,10 @@ from huaweicloudsdkrds.v3.model.recycle_policy import RecyclePolicy
 from huaweicloudsdkrds.v3.model.recycle_policy_request_body import RecyclePolicyRequestBody
 from huaweicloudsdkrds.v3.model.reduce_volume_object import ReduceVolumeObject
 from huaweicloudsdkrds.v3.model.reduce_volume_request_body import ReduceVolumeRequestBody
+from huaweicloudsdkrds.v3.model.refresh_publication_snapshot_request import RefreshPublicationSnapshotRequest
+from huaweicloudsdkrds.v3.model.refresh_publication_snapshot_response import RefreshPublicationSnapshotResponse
+from huaweicloudsdkrds.v3.model.refresh_subscription_request import RefreshSubscriptionRequest
+from huaweicloudsdkrds.v3.model.refresh_subscription_response import RefreshSubscriptionResponse
 from huaweicloudsdkrds.v3.model.related_instance import RelatedInstance
 from huaweicloudsdkrds.v3.model.replace_node_request import ReplaceNodeRequest
 from huaweicloudsdkrds.v3.model.replication_instance_info import ReplicationInstanceInfo
@@ -792,6 +803,8 @@ from huaweicloudsdkrds.v3.model.switch_sql_limit_request import SwitchSqlLimitRe
 from huaweicloudsdkrds.v3.model.switch_sql_limit_response import SwitchSqlLimitResponse
 from huaweicloudsdkrds.v3.model.switch_ssl_request import SwitchSslRequest
 from huaweicloudsdkrds.v3.model.switch_ssl_response import SwitchSslResponse
+from huaweicloudsdkrds.v3.model.sync_replication_metadata_request import SyncReplicationMetadataRequest
+from huaweicloudsdkrds.v3.model.sync_replication_metadata_response import SyncReplicationMetadataResponse
 from huaweicloudsdkrds.v3.model.tag_del_with_key_value import TagDelWithKeyValue
 from huaweicloudsdkrds.v3.model.tag_resp import TagResp
 from huaweicloudsdkrds.v3.model.tag_response import TagResponse

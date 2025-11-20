@@ -34,7 +34,7 @@ class CheckNoNewAccessResponse(SdkResponse):
 
         :param message: 更新后的策略是否允许新访问权限的消息。
         :type message: str
-        :param check_result: 检查新访问权限的结果。
+        :param check_result: 检查新访问权限的结果。 - pass：无新增访问权限 - fail：有新增访问权限 
         :type check_result: str
         :param reasons: 新增action的statement描述。
         :type reasons: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.CheckNoNewAccessReason`]
@@ -80,7 +80,7 @@ class CheckNoNewAccessResponse(SdkResponse):
     def check_result(self):
         r"""Gets the check_result of this CheckNoNewAccessResponse.
 
-        检查新访问权限的结果。
+        检查新访问权限的结果。 - pass：无新增访问权限 - fail：有新增访问权限 
 
         :return: The check_result of this CheckNoNewAccessResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class CheckNoNewAccessResponse(SdkResponse):
     def check_result(self, check_result):
         r"""Sets the check_result of this CheckNoNewAccessResponse.
 
-        检查新访问权限的结果。
+        检查新访问权限的结果。 - pass：无新增访问权限 - fail：有新增访问权限 
 
         :param check_result: The check_result of this CheckNoNewAccessResponse.
         :type check_result: str

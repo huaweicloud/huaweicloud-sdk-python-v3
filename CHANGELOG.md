@@ -1,3 +1,551 @@
+# 3.1.176 2025-11-20
+
+### HuaweiCloud SDK AAD
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDomain**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListInstanceIpRule**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+
+### HuaweiCloud SDK AAD
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `UpdateForwardRule`
+    - `ShowDomainNameConfig`
+    - `UpdateDomainConfig`
+    - `ShowDomainDetail`
+    - `ListGlobalConfig`
+    - `ShowInstanceByInstanceId`
+    - `ListSourceIp`
+    - `ShowAlarmConfig`
+    - `ShowDDoSPeak`
+    - `ListDDoSBlackHoleEvent`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstanceDomains**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListWafQps**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+  - **ListDDoSConnectionNumber**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `ListAddonPrecheckTasks`, `ListHyperNodes`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateKubernetesClusterCert**
+    - changes of request param
+      - `+ expire_at`
+      - `* body: object<CertDuration> -> object<ClusterCertDuration>`
+  - **ShowCluster**
+    - changes of response param
+      - `+ spec.agencyName`
+      - `+ spec.enableAutoResizing`
+  - **UpdateCluster**
+    - changes of request param
+      - `+ spec.agencyName`
+      - `+ spec.enableAutoResizing`
+    - changes of response param
+      - `+ spec.agencyName`
+      - `+ spec.enableAutoResizing`
+  - **DeleteCluster**
+    - changes of response param
+      - `+ spec.agencyName`
+      - `+ spec.enableAutoResizing`
+  - **ShowAutopilotCluster**
+    - changes of response param
+      - `+ spec.enableMasterVolumeEncryption`
+      - `+ spec.enableDistMgt`
+      - `+ spec.deletionProtection`
+  - **UpdateAutopilotCluster**
+    - changes of response param
+      - `+ spec.enableMasterVolumeEncryption`
+      - `+ spec.enableDistMgt`
+      - `+ spec.deletionProtection`
+  - **DeleteAutopilotCluster**
+    - changes of response param
+      - `+ spec.enableMasterVolumeEncryption`
+      - `+ spec.enableDistMgt`
+      - `+ spec.deletionProtection`
+  - **CreateCluster**
+    - changes of request param
+      - `+ spec.agencyName`
+      - `+ spec.enableAutoResizing`
+    - changes of response param
+      - `+ spec.agencyName`
+      - `+ spec.enableAutoResizing`
+  - **ListClusters**
+    - changes of response param
+      - `+ items.spec.agencyName`
+      - `+ items.spec.enableAutoResizing`
+  - **CreateAutopilotCluster**
+    - changes of request param
+      - `+ spec.enableMasterVolumeEncryption`
+      - `+ spec.enableDistMgt`
+      - `+ spec.deletionProtection`
+    - changes of response param
+      - `+ spec.enableMasterVolumeEncryption`
+      - `+ spec.enableDistMgt`
+      - `+ spec.deletionProtection`
+  - **ListAutopilotClusters**
+    - changes of response param
+      - `+ items.spec.enableMasterVolumeEncryption`
+      - `+ items.spec.enableDistMgt`
+      - `+ items.spec.deletionProtection`
+  - **ShowNode**
+    - changes of response param
+      - `+ metadata.ownerReference.hyperNodeName`
+      - `+ metadata.ownerReference.hyperNodeID`
+  - **UpdateNode**
+    - changes of response param
+      - `+ metadata.ownerReference.hyperNodeName`
+      - `+ metadata.ownerReference.hyperNodeID`
+  - **DeleteNode**
+    - changes of response param
+      - `+ metadata.ownerReference.hyperNodeName`
+      - `+ metadata.ownerReference.hyperNodeID`
+  - **CreateNode**
+    - changes of request param
+      - `+ metadata.ownerReference.hyperNodeName`
+      - `+ metadata.ownerReference.hyperNodeID`
+    - changes of response param
+      - `+ metadata.ownerReference.hyperNodeName`
+      - `+ metadata.ownerReference.hyperNodeID`
+  - **ListNodes**
+    - changes of response param
+      - `+ items.metadata.ownerReference.hyperNodeName`
+      - `+ items.metadata.ownerReference.hyperNodeID`
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateWarRoom**
+    - changes of request param
+      - `+ notification_modes`
+  - **ListWarRooms**
+    - changes of response param
+      - `+ data.list.incident.alarm_id`
+      - `+ data.list.incident.source_id`
+
+### HuaweiCloud SDK CSS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateYmls**
+    - changes of request param
+      - `+ inst_type`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRiskItems**
+    - changes of request param
+      - `+ offset`
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `DownloadSchemaMetadata`
+    - `UploadSchemaMetadata`
+    - `ListAvailableRds`
+    - `ListAvailableRdsForMigrate`
+    - `CheckMigrateLogicDb`
+    - `CheckPreliminaryResults`
+    - `MigrateLogicDb`
+    - `MigrateResults`
+    - `CancelMigration`
+    - `RollbackMigration`
+    - `CleanMigration`
+    - `RetryMigration`
+    - `ChangeStrategy`
+    - `SwitchRoute`
+    - `ModifyConfiguration`
+    - `ListBackups`
+    - `DeleteBackup`
+    - `ShowBackup`
+    - `ShowRelatedDns`
+    - `ShowAvalibleTime`
+    - `ShowAvalibleRds`
+    - `ShowAvalibleDdms`
+    - `RestoreMetadata`
+    - `Restore2Exist`
+    - `ShowInstanceDatabase`
+    - `CreateDdmConfigurations`
+    - `DeleteConfiguration`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNode**
+    - changes of response param
+      - `+ group_id`
+      - `+ subnet_id`
+  - **ShowInstance**
+    - changes of response param
+      - `+ nodes.group_id`
+      - `+ nodes.node_id`
+  - **ListNodes**
+    - changes of response param
+      - `+ nodes.group_id`
+
+### HuaweiCloud SDK IAMAccessAnalyzer
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListResourceConfigurations`
+    - `CreateResourceConfigurations`
+    - `DeleteResourceConfigurations`
+    - `ListNotificationSettings`
+    - `CreateNotificationSetting`
+    - `ShowNotificationSetting`
+    - `UpdateNotificationSetting`
+    - `DeleteNotificationSetting`
+    - `UpdateAnalyzer`
+- _Bug Fix_
+  - None
+- _Change_
+  - **StartResourceScan**
+    - changes of request param
+      - `+ finding_type`
+  - **ListFindings**
+    - changes of response param
+      - `+ findings.finding_type: enum value [privilege_escalation,unused_iam_agency,iam_bp_root_user_has_access_key,iam_bp_access_api_with_password,iam_bp_login_protection_disabled,iam_bp_mfa_unconfigured,iam_bp_assign_high_risk_sys_policy_or_role_to_user,iam_bp_attach_high_risk_sys_identity_policy_to_user,iam_bp_assign_high_risk_sys_policy_or_role_to_agency,iam_bp_attach_high_risk_sys_identity_policy_to_agency]`
+      - `+ findings.resource_type: enum value [swr:repo,cbr:backup,ims:image]`
+  - **ListAccessPreviewFindings**
+    - changes of response param
+      - `+ findings.resource_type: enum value [swr:repo,cbr:backup,ims:image]`
+  - **CreateAnalyzer**
+    - changes of request param
+      - `+ configuration.unused_access.unused_analysis_rule`
+      - `+ type: enum value [account_privilege_escalation,account_iam_best_practice]`
+  - **ListAnalyzers**
+    - changes of request param
+      - `+ type: enum value [account_privilege_escalation,account_iam_best_practice]`
+    - changes of response param
+      - `+ analyzers.last_all_analyzed_at`
+      - `+ analyzers.configuration.unused_access.unused_analysis_rule`
+      - `+ analyzers.type: enum value [account_privilege_escalation,account_iam_best_practice]`
+  - **ShowAnalyzer**
+    - changes of response param
+      - `+ analyzer.last_all_analyzed_at`
+      - `+ analyzer.configuration.unused_access.unused_analysis_rule`
+      - `+ analyzer.type: enum value [account_privilege_escalation,account_iam_best_practice]`
+  - **ShowFinding**
+    - changes of response param
+      - `+ finding.finding_type: enum value [privilege_escalation,unused_iam_agency,iam_bp_root_user_has_access_key,iam_bp_access_api_with_password,iam_bp_login_protection_disabled,iam_bp_mfa_unconfigured,iam_bp_assign_high_risk_sys_policy_or_role_to_user,iam_bp_attach_high_risk_sys_identity_policy_to_user,iam_bp_assign_high_risk_sys_policy_or_role_to_agency,iam_bp_attach_high_risk_sys_identity_policy_to_agency]`
+      - `+ finding.resource_type: enum value [swr:repo,cbr:backup,ims:image]`
+      - `+ finding.finding_details.privilege_escalation_details`
+      - `+ finding.finding_details.unused_iam_agency_details`
+      - `+ finding.finding_details.iam_bp_root_user_has_access_key_details`
+      - `+ finding.finding_details.iam_bp_access_api_with_password_details`
+      - `+ finding.finding_details.iam_bp_login_protection_disabled_details`
+      - `+ finding.finding_details.iam_bp_mfa_unconfigured_details`
+      - `+ finding.finding_details.iam_bp_assign_high_risk_sys_policy_or_role_to_user_details`
+      - `+ finding.finding_details.iam_bp_attach_high_risk_sys_identity_policy_to_user_details`
+      - `+ finding.finding_details.iam_bp_assign_high_risk_sys_policy_or_role_to_agency_details`
+      - `+ finding.finding_details.iam_bp_attach_high_risk_sys_identity_policy_to_agency_details`
+      - `+ finding.finding_details.unused_permission_details.last_accessed`
+      - `+ finding.finding_details.unused_permission_details.actions.last_accessed`
+  - **ValidatePolicy**
+    - changes of request param
+      - `+ policy_type: enum value [resource_control_policy,network_control_policy]`
+
+### HuaweiCloud SDK IoTDA
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListDomainConfigurations`
+    - `CreateDomainConfiguration`
+    - `ShowDomainConfiguration`
+    - `UpdateDomainConfiguration`
+    - `DeleteDomainConfiguration`
+    - `ListServerCertificate`
+    - `CreateServerCertificate`
+    - `ShowServerCertificate`
+    - `DeleteServerCertificate`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListTranscodeTaskDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK LTS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowNotificationTemplate**
+    - changes of response param
+      - `- locale: enum value [zh-cn,en-us]`
+      - `+ templates.sendType`
+      - `+ templates.version`
+      - `- templates.sub_type: enum value [sms,dingding,wechat,webhook,email]`
+      - `* templates: list<SubTemplate> -> list<SubTemplateResBody>`
+  - **ListLogContext**
+    - changes of request param
+      - `+ backwards_size`
+      - `+ forwards_size`
+      - `- backwardsSize`
+      - `- forwardsSize`
+  - **UpdateNotificationTemplate**
+    - changes of response param
+      - `- locale: enum value [zh-cn,en-us]`
+      - `+ templates.sendType`
+      - `+ templates.version`
+      - `- templates.sub_type: enum value [sms,dingding,wechat,webhook,email]`
+      - `* templates: list<SubTemplate> -> list<SubTemplateResBody>`
+  - **ListNotificationTemplates**
+    - changes of response param
+      - `- results.locale: enum value [zh-cn,en-us]`
+      - `+ results.templates.sendType`
+      - `+ results.templates.version`
+      - `- results.templates.sub_type: enum value [sms,dingding,wechat,webhook,email]`
+      - `* results.templates: list<SubTemplate> -> list<SubTemplateResBody>`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListTransferAssetJobs`
+    - `TransferAsset`
+    - `ShowTransferAssetJob`
+    - `ExecuteTransferAssetAction`
+    - `Download2dModelTraningEncryptFile`
+    - `ShowTenantServiceConfigs`
+    - `UpdateTenantServiceConfigs`
+    - `ShowTenantAssginRecord`
+    - `ShowTenantNoticeConfiguration`
+    - `SetTenantNoticeConfiguration`
+    - `ShowTenantUserConfiguration`
+    - `SetTenantUserConfiguration`
+    - `DeleteTenantUserConfiguration`
+    - `BindUserAssetResource`
+    - `ListUserQuotas`
+    - `CreateUserQuotas`
+    - `UpdateUserQuotas`
+    - `DeleteUserQuotas`
+    - `CreateTtsOnceCode`
+    - `ShowSmartLiveUserConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ListTtsaJobs`
+    - `CreateTtsa`
+    - `CreateFacialAnimations`
+    - `ListFacialAnimationsData`
+    - `ListTtsaData`
+  - **List2dModelTrainingJob**
+    - changes of request param
+      - `+ update_since`
+      - `+ update_until`
+      - `+ is_live_copy`
+      - `+ train_location`
+      - `+ is_ondemand_resource`
+    - changes of response param
+      - `+ jobs.is_live_copy`
+      - `+ jobs.is_fast_flexus`
+      - `+ jobs.optional_training_location`
+      - `+ jobs.is_background_replacement`
+      - `+ jobs.is_ondemand_resource`
+      - `+ jobs.state: enum value [WAIT_TEST_VIDEO_CHECK,TEST_VIDEO_CHECK_PROCESSING,TEST_VIDEO_CHECK_SUCCESS,TEST_VIDEO_CHECK_FAILED,VIDEO_ANALYZE_PROCESSING,VIDEO_ANALYZE_SUCCESS,VIDEO_ANALYZE_FAILED,ACTION_MARKING,ACTION_MARK_SUCCESS,ACTION_MARK_FAILED,ACTION_MARK_UPLOADED,WAIT_GENERATE_ACTION_MARK,MANUL_STOP_ACTION_MARK]`
+      - `+ jobs.model_version: enum value [V3.3]`
+  - **Create2dModelTrainingJob**
+    - changes of request param
+      - `+ is_ondemand_resource`
+      - `+ is_fast_flexus`
+      - `+ is_live_copy`
+      - `+ model_version: enum value [V3.3]`
+  - **Execute2dModelTrainingCommandByUser**
+    - changes of request param
+      - `+ operation_reason`
+      - `+ command: enum value [CONFIRM_AUTHORIZATION_LETTER,DELETE_JOB_VIDEO]`
+    - changes of response param
+      - `+ error_info`
+  - **ShowLivePlatformAccessType**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+  - **Update2dModelTrainingJob**
+    - changes of request param
+      - `+ is_fast_flexus`
+      - `+ voice_properties`
+  - **Show2dModelTrainingJob**
+    - changes of response param
+      - `+ external_action_json_data_download_url`
+      - `+ is_fast_flexus`
+      - `+ markable_action_video_download_url`
+      - `+ voice_properties`
+      - `+ train_video_rotation_state`
+      - `+ action_video_rotation_state`
+      - `+ is_ondemand_resource`
+      - `+ sub_training_job_info`
+      - `+ is_live_copy`
+      - `+ action_mark_file_download_url`
+      - `+ action_mark_file_upload_url`
+      - `+ optional_training_location`
+      - `+ state: enum value [WAIT_TEST_VIDEO_CHECK,TEST_VIDEO_CHECK_PROCESSING,TEST_VIDEO_CHECK_SUCCESS,TEST_VIDEO_CHECK_FAILED,VIDEO_ANALYZE_PROCESSING,VIDEO_ANALYZE_SUCCESS,VIDEO_ANALYZE_FAILED,ACTION_MARKING,ACTION_MARK_SUCCESS,ACTION_MARK_FAILED,ACTION_MARK_UPLOADED,WAIT_GENERATE_ACTION_MARK,MANUL_STOP_ACTION_MARK]`
+      - `+ model_version: enum value [V3.3]`
+      - `+ operation_logs.redo_reasons`
+      - `+ operation_logs.log_type: enum value [ADMIN_UPDATE_TRAIN_LOCATION,ADMIN_UPDATE_JOB_PRIORITY,SYSTEM_WAIT_ASSET_SYNC,SYSTEM_ANALYSE_FILE_INFO,ADMIN_UPDATE_INFERENCE_DATA_CHAT_PROCESS_VIDEO,ADMIN_UPLOAD_JSON_DATA,ADMIN_DELETE_JSON_DATA,ADMIN_UPDATE_TRAIN_TIME,MAKE_TEST_VIDEO,ADMIN_SET_FLEXUS_RETRY_COUNT,USER_DELETE_JOB_VIDEO,ADMIN_SET_VIDEO_ROTATION_ANGLE,ADMIN_RE_SET_VIDEO_ROTATION_ANGLE,SYSTEM_SET_VIDEO_ROTATION_ANGLE_SUCCESS,SYSTEM_SET_VIDEO_ROTATION_ANGLE_FAILED,COMPILE_JOB_IS_CONSUME,RESTART_TEST_VIDEO_CHECK,SKIP_TEST_VIDEO_CHECK,WAIT_TEST_VIDEO_CHECK,TEST_VIDEO_CHECK_PROCESSING,TEST_VIDEO_CHECK_SUCCESS,TEST_VIDEO_CHECK_FAILED,REDO_INFERENCE_PREPROCESSING,REDO_TRAINING_PREPROCESSING,REDO_TRAINING,REDO_ACTION_DATA_GENERATE,REDO_ACTION_ORI_GENERATE,VIDEO_ANALYZE_PROCESSING,VIDEO_ANALYZE_SUCCESS,VIDEO_ANALYZE_FAILED,ADMIN_RESOLUTION_NORMALIZE,SYSTEM_SET_RESOLUTION_NORMALIZE_SUCCESS,SYSTEM_SET_RESOLUTION_NORMALIZE_FAILED,SYSTEM_ACTION_MARK_PREPROCESS_FAILED,SYSTEM_ACTION_MARK_PREPROCESSING,SYSTEM_ACTION_MARK_PREPROCESS_SUCCESS,REDO_ACTION_MARK,CONFIRM_ACTION_MARK,MANUL_STOP_ACTION_MARK,SYSTEM_INFERENCE_DATA_REASSEMBLE_WAITING,SYSTEM_INFERENCE_DATA_REASSEMBLE_PROCESSING,TIME_OUT_RETRY]`
+      - `+ allocated_resource.charge_mode: enum value [ON_DEMAND]`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListDbAgentJobHistorys`
+    - `RefreshPublicationSnapshot`
+    - `RefreshSubscription`
+    - `SyncReplicationMetadata`
+    - `ListDbAgentJobHistorySteps`
+- _Bug Fix_
+  - None
+- _Change_
+  - **StartInstanceReduceVolumeAction**
+    - changes of request param
+      - `+ reduce_volume.is_delay`
+  - **CreateInstance**
+    - changes of request param
+      - `+ auto_enlarge_strategy`
+
+### HuaweiCloud SDK VPN
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateVpnConnection**
+    - changes of request param
+      - `+ vpn_connection.enable_health_check`
+    - changes of response param
+      - `+ vpn_connection.enable_health_check`
+  - **BatchCreateVpnConnection**
+    - changes of request param
+      - `+ vpn_connections.enable_health_check`
+    - changes of response param
+      - `+ vpn_connections.enable_health_check`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `CreateQuickAccessDomain`
+    - `BatchDeleteAlertNoticeConfig`
+    - `UpdatePremiumInstance`
+    - `CreateAlertNoticeConfig`
+    - `CreateAgency`
+    - `DeleteAgency`
+    - `UpdateIpReputationRule`
+    - `BatchCreatePrivacyRule`
+    - `BatchCreateGeoIpRule`
+    - `BatchCreateAntiTamperRule`
+    - `BatchCreateAntileakageRule`
+    - `BatchCreateIpReputationRule`
+    - `BatchCreateCcRule`
+    - `BatchCreateCustomRule`
+    - `BatchCreateWhiteblackipRule`
+    - `BatchCreateIgnoreRule`
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateCloudWafPostPaidResource**
+    - changes of response param
+      - `+ resources.timestamp`
+      - `+ resources.relativeType`
+      - `+ resources.region`
+  - **DeleteCloudWafPostPaidResource**
+    - changes of response param
+      - `+ resources.timestamp`
+      - `+ resources.relativeType`
+      - `+ resources.region`
+  - **ShowSubscriptionInfo**
+    - changes of response param
+      - `+ resources.timestamp`
+      - `+ resources.relativeType`
+      - `+ resources.region`
+  - **ListCcRules**
+    - changes of request param
+      - `+ name`
+      - `+ status`
+      - `+ category`
+      - `+ tag_type`
+  - **CreateCertificate**
+    - changes of request param
+      - `+ verify_cert_key`
+
 # 3.1.175 2025-11-13
 
 ### HuaweiCloud SDK AAD

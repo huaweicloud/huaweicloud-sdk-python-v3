@@ -28,7 +28,7 @@ class GetAvaliableZoneResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: **参数解释**: 可用区列表信息
+        :param body: **参数解释**: 可用区列表信息 **约束限制**： 不涉及
         :type body: list[:class:`huaweicloudsdkcce.v3.GetAvailableZoneResponseBody`]
         """
         
@@ -44,7 +44,7 @@ class GetAvaliableZoneResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this GetAvaliableZoneResponse.
 
-        **参数解释**: 可用区列表信息
+        **参数解释**: 可用区列表信息 **约束限制**： 不涉及
 
         :return: The body of this GetAvaliableZoneResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.GetAvailableZoneResponseBody`]
@@ -55,7 +55,7 @@ class GetAvaliableZoneResponse(SdkResponse):
     def body(self, body):
         r"""Sets the body of this GetAvaliableZoneResponse.
 
-        **参数解释**: 可用区列表信息
+        **参数解释**: 可用区列表信息 **约束限制**： 不涉及
 
         :param body: The body of this GetAvaliableZoneResponse.
         :type body: list[:class:`huaweicloudsdkcce.v3.GetAvailableZoneResponseBody`]

@@ -18,7 +18,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
     openapi_types = {
         'metadata': 'Metadata',
         'spec': 'OpenAPISpec',
-        'status': 'MasterEIPResponseStatus'
+        'status': 'OpenAPIResponseStatus'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.OpenAPISpec`
         :param status: 
-        :type status: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`
+        :type status: :class:`huaweicloudsdkcce.v3.OpenAPIResponseStatus`
         """
         
         super().__init__()
@@ -95,7 +95,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
         r"""Gets the status of this ShowClusterEndpointsResponse.
 
         :return: The status of this ShowClusterEndpointsResponse.
-        :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`
+        :rtype: :class:`huaweicloudsdkcce.v3.OpenAPIResponseStatus`
         """
         return self._status
 
@@ -104,7 +104,7 @@ class ShowClusterEndpointsResponse(SdkResponse):
         r"""Sets the status of this ShowClusterEndpointsResponse.
 
         :param status: The status of this ShowClusterEndpointsResponse.
-        :type status: :class:`huaweicloudsdkcce.v3.MasterEIPResponseStatus`
+        :type status: :class:`huaweicloudsdkcce.v3.OpenAPIResponseStatus`
         """
         self._status = status
 

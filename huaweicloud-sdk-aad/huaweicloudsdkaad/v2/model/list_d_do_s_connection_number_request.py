@@ -18,17 +18,21 @@ class ListDDoSConnectionNumberRequest:
         'start_time': 'str',
         'end_time': 'str',
         'instance_id': 'str',
-        'ip': 'str'
+        'ip': 'str',
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
         'start_time': 'start_time',
         'end_time': 'end_time',
         'instance_id': 'instance_id',
-        'ip': 'ip'
+        'ip': 'ip',
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self, start_time=None, end_time=None, instance_id=None, ip=None):
+    def __init__(self, start_time=None, end_time=None, instance_id=None, ip=None, limit=None, offset=None):
         r"""ListDDoSConnectionNumberRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class ListDDoSConnectionNumberRequest:
         :type instance_id: str
         :param ip: 高防ip
         :type ip: str
+        :param limit: 限制条数
+        :type limit: int
+        :param offset: 偏移量
+        :type offset: int
         """
         
         
@@ -49,12 +57,18 @@ class ListDDoSConnectionNumberRequest:
         self._end_time = None
         self._instance_id = None
         self._ip = None
+        self._limit = None
+        self._offset = None
         self.discriminator = None
 
         self.start_time = start_time
         self.end_time = end_time
         self.instance_id = instance_id
         self.ip = ip
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
 
     @property
     def start_time(self):
@@ -143,6 +157,50 @@ class ListDDoSConnectionNumberRequest:
         :type ip: str
         """
         self._ip = ip
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListDDoSConnectionNumberRequest.
+
+        限制条数
+
+        :return: The limit of this ListDDoSConnectionNumberRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListDDoSConnectionNumberRequest.
+
+        限制条数
+
+        :param limit: The limit of this ListDDoSConnectionNumberRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListDDoSConnectionNumberRequest.
+
+        偏移量
+
+        :return: The offset of this ListDDoSConnectionNumberRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListDDoSConnectionNumberRequest.
+
+        偏移量
+
+        :param offset: The offset of this ListDDoSConnectionNumberRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

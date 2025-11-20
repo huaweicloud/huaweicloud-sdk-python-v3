@@ -63,13 +63,13 @@ class UpgradeAgentsRequestInfo:
         :type version: str
         :param protect_status: **参数解释**： 防护状态 **约束限制**: 不涉及 **取值范围**： - closed ：未防护。 - opened ：防护中。  **默认取值**: 不涉及 
         :type protect_status: str
-        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        :param os_type: **参数解释**： 操作系统类型 **约束限制**: 不涉及 **取值范围**： - Linux：Linux系统。 - Windows：Windows系统。  **默认取值**: 不涉及 
         :type os_type: str
         :param policy_group_id: **参数解释**： 策略组ID **取值范围**： 字符长度36-64位
         :type policy_group_id: str
         :param group_id: **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
         :type group_id: str
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: 资产重要性 **参数解释**： 资产重要性 **约束限制**: 不涉及 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。  **默认取值**: 不涉及
         :type asset_value: str
         :param host_id_list: **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
         :type host_id_list: list[str]
@@ -273,7 +273,7 @@ class UpgradeAgentsRequestInfo:
     def os_type(self):
         r"""Gets the os_type of this UpgradeAgentsRequestInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **约束限制**: 不涉及 **取值范围**： - Linux：Linux系统。 - Windows：Windows系统。  **默认取值**: 不涉及 
 
         :return: The os_type of this UpgradeAgentsRequestInfo.
         :rtype: str
@@ -284,7 +284,7 @@ class UpgradeAgentsRequestInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this UpgradeAgentsRequestInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **约束限制**: 不涉及 **取值范围**： - Linux：Linux系统。 - Windows：Windows系统。  **默认取值**: 不涉及 
 
         :param os_type: The os_type of this UpgradeAgentsRequestInfo.
         :type os_type: str
@@ -339,7 +339,7 @@ class UpgradeAgentsRequestInfo:
     def asset_value(self):
         r"""Gets the asset_value of this UpgradeAgentsRequestInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        资产重要性 **参数解释**： 资产重要性 **约束限制**: 不涉及 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。  **默认取值**: 不涉及
 
         :return: The asset_value of this UpgradeAgentsRequestInfo.
         :rtype: str
@@ -350,7 +350,7 @@ class UpgradeAgentsRequestInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this UpgradeAgentsRequestInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        资产重要性 **参数解释**： 资产重要性 **约束限制**: 不涉及 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。  **默认取值**: 不涉及
 
         :param asset_value: The asset_value of this UpgradeAgentsRequestInfo.
         :type asset_value: str

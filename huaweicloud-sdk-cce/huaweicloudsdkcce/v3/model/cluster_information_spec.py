@@ -15,6 +15,7 @@ class ClusterInformationSpec:
     sensitive_list = []
 
     openapi_types = {
+        'agency_name': 'str',
         'description': 'str',
         'custom_san': 'list[str]',
         'container_network': 'ContainerNetworkUpdate',
@@ -24,6 +25,7 @@ class ClusterInformationSpec:
     }
 
     attribute_map = {
+        'agency_name': 'agencyName',
         'description': 'description',
         'custom_san': 'customSan',
         'container_network': 'containerNetwork',
@@ -32,12 +34,14 @@ class ClusterInformationSpec:
         'deletion_protection': 'deletionProtection'
     }
 
-    def __init__(self, description=None, custom_san=None, container_network=None, eni_network=None, host_network=None, deletion_protection=None):
+    def __init__(self, agency_name=None, description=None, custom_san=None, container_network=None, eni_network=None, host_network=None, deletion_protection=None):
         r"""ClusterInformationSpec
 
         The model defined in huaweicloud sdk
 
-        :param description: 集群的描述信息。  1. 字符取值范围[0,200]。不包含~$%^&amp;*&lt;&gt;[]{}()&#39;\&quot;#\\等特殊字符。 2. 仅运行和扩容状态（Available、ScalingUp、ScalingDown）的集群允许修改。
+        :param agency_name: **参数解释：** 指定集群使用的委托。该委托用于生成集群中组件使用的临时访问凭证，在集群中自动创建其他相关云服务的资源时会使用该委托权限。当不传或为空时，集群将自动选择使用CCE的系统委托cce_admin_trust或cce_cluster_agency。  [ &gt; 关于CCE系统委托的说明详情参见[系统委托说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0556.html)](tag:hws) [ &gt; 关于CCE系统委托的说明详情参见[系统委托说明](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0556.html)](tag:hws_hk)  **约束限制：** 仅1.27及以上版本集群支持该参数  **取值范围：** 不涉及 **默认取值：** 空 
+        :type agency_name: str
+        :param description: **参数解释：** 集群的描述信息。 **约束限制：** 仅运行和扩容状态（Available、ScalingUp、ScalingDown）的集群允许修改。 **取值范围：** 字符取值范围[0,200]。不包含~$%^&amp;*&lt;&gt;[]{}()&#39;\&quot;#\\等特殊字符。 **默认取值：** 无
         :type description: str
         :param custom_san: 集群的API Server服务端证书中的自定义SAN（Subject Alternative Name）字段，遵从SSL标准X509定义的格式规范。  1. 不允许出现同名重复。 2. 格式符合IP和域名格式。  示例: &#x60;&#x60;&#x60; SAN 1: DNS Name&#x3D;example.com SAN 2: DNS Name&#x3D;www.example.com SAN 3: DNS Name&#x3D;example.net SAN 4: IP Address&#x3D;93.184.216.34 &#x60;&#x60;&#x60;
         :type custom_san: list[str]
@@ -47,12 +51,13 @@ class ClusterInformationSpec:
         :type eni_network: :class:`huaweicloudsdkcce.v3.EniNetworkUpdate`
         :param host_network: 
         :type host_network: :class:`huaweicloudsdkcce.v3.ClusterInformationSpecHostNetwork`
-        :param deletion_protection: 集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
+        :param deletion_protection: **参数解释：** 集群删除保护，如果开启后用户将无法删除该集群。 **约束限制：** 不涉及 **取值范围：** - true: 开启集群删除保护 - false: 关闭集群删除保护  **默认取值：** 默认false
         :type deletion_protection: bool
         """
         
         
 
+        self._agency_name = None
         self._description = None
         self._custom_san = None
         self._container_network = None
@@ -61,6 +66,8 @@ class ClusterInformationSpec:
         self._deletion_protection = None
         self.discriminator = None
 
+        if agency_name is not None:
+            self.agency_name = agency_name
         if description is not None:
             self.description = description
         if custom_san is not None:
@@ -75,10 +82,32 @@ class ClusterInformationSpec:
             self.deletion_protection = deletion_protection
 
     @property
+    def agency_name(self):
+        r"""Gets the agency_name of this ClusterInformationSpec.
+
+        **参数解释：** 指定集群使用的委托。该委托用于生成集群中组件使用的临时访问凭证，在集群中自动创建其他相关云服务的资源时会使用该委托权限。当不传或为空时，集群将自动选择使用CCE的系统委托cce_admin_trust或cce_cluster_agency。  [ > 关于CCE系统委托的说明详情参见[系统委托说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0556.html)](tag:hws) [ > 关于CCE系统委托的说明详情参见[系统委托说明](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0556.html)](tag:hws_hk)  **约束限制：** 仅1.27及以上版本集群支持该参数  **取值范围：** 不涉及 **默认取值：** 空 
+
+        :return: The agency_name of this ClusterInformationSpec.
+        :rtype: str
+        """
+        return self._agency_name
+
+    @agency_name.setter
+    def agency_name(self, agency_name):
+        r"""Sets the agency_name of this ClusterInformationSpec.
+
+        **参数解释：** 指定集群使用的委托。该委托用于生成集群中组件使用的临时访问凭证，在集群中自动创建其他相关云服务的资源时会使用该委托权限。当不传或为空时，集群将自动选择使用CCE的系统委托cce_admin_trust或cce_cluster_agency。  [ > 关于CCE系统委托的说明详情参见[系统委托说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0556.html)](tag:hws) [ > 关于CCE系统委托的说明详情参见[系统委托说明](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0556.html)](tag:hws_hk)  **约束限制：** 仅1.27及以上版本集群支持该参数  **取值范围：** 不涉及 **默认取值：** 空 
+
+        :param agency_name: The agency_name of this ClusterInformationSpec.
+        :type agency_name: str
+        """
+        self._agency_name = agency_name
+
+    @property
     def description(self):
         r"""Gets the description of this ClusterInformationSpec.
 
-        集群的描述信息。  1. 字符取值范围[0,200]。不包含~$%^&*<>[]{}()'\"#\\等特殊字符。 2. 仅运行和扩容状态（Available、ScalingUp、ScalingDown）的集群允许修改。
+        **参数解释：** 集群的描述信息。 **约束限制：** 仅运行和扩容状态（Available、ScalingUp、ScalingDown）的集群允许修改。 **取值范围：** 字符取值范围[0,200]。不包含~$%^&*<>[]{}()'\"#\\等特殊字符。 **默认取值：** 无
 
         :return: The description of this ClusterInformationSpec.
         :rtype: str
@@ -89,7 +118,7 @@ class ClusterInformationSpec:
     def description(self, description):
         r"""Sets the description of this ClusterInformationSpec.
 
-        集群的描述信息。  1. 字符取值范围[0,200]。不包含~$%^&*<>[]{}()'\"#\\等特殊字符。 2. 仅运行和扩容状态（Available、ScalingUp、ScalingDown）的集群允许修改。
+        **参数解释：** 集群的描述信息。 **约束限制：** 仅运行和扩容状态（Available、ScalingUp、ScalingDown）的集群允许修改。 **取值范围：** 字符取值范围[0,200]。不包含~$%^&*<>[]{}()'\"#\\等特殊字符。 **默认取值：** 无
 
         :param description: The description of this ClusterInformationSpec.
         :type description: str
@@ -176,7 +205,7 @@ class ClusterInformationSpec:
     def deletion_protection(self):
         r"""Gets the deletion_protection of this ClusterInformationSpec.
 
-        集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
+        **参数解释：** 集群删除保护，如果开启后用户将无法删除该集群。 **约束限制：** 不涉及 **取值范围：** - true: 开启集群删除保护 - false: 关闭集群删除保护  **默认取值：** 默认false
 
         :return: The deletion_protection of this ClusterInformationSpec.
         :rtype: bool
@@ -187,7 +216,7 @@ class ClusterInformationSpec:
     def deletion_protection(self, deletion_protection):
         r"""Sets the deletion_protection of this ClusterInformationSpec.
 
-        集群删除保护，默认为false关闭，如果开启后用户将无法删除该集群。
+        **参数解释：** 集群删除保护，如果开启后用户将无法删除该集群。 **约束限制：** 不涉及 **取值范围：** - true: 开启集群删除保护 - false: 关闭集群删除保护  **默认取值：** 默认false
 
         :param deletion_protection: The deletion_protection of this ClusterInformationSpec.
         :type deletion_protection: bool

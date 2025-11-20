@@ -27,7 +27,7 @@ class MasterEIPRequestSpecSpec:
 
         The model defined in huaweicloud sdk
 
-        :param id: 弹性网卡ID，绑定时必选，解绑时该字段无效
+        :param id: **参数解释**： 弹性网卡ID，绑定时必选，解绑时该字段无效 &gt; 获取方式:在控制台的“服务列表”中，单击“网络 &gt; 弹性公网IP EIP”，单击弹性公网IP，在详情页的“基本信息”页签下找到“ID”字段复制即可。  **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type id: str
         """
         
@@ -43,7 +43,7 @@ class MasterEIPRequestSpecSpec:
     def id(self):
         r"""Gets the id of this MasterEIPRequestSpecSpec.
 
-        弹性网卡ID，绑定时必选，解绑时该字段无效
+        **参数解释**： 弹性网卡ID，绑定时必选，解绑时该字段无效 > 获取方式:在控制台的“服务列表”中，单击“网络 > 弹性公网IP EIP”，单击弹性公网IP，在详情页的“基本信息”页签下找到“ID”字段复制即可。  **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The id of this MasterEIPRequestSpecSpec.
         :rtype: str
@@ -54,7 +54,7 @@ class MasterEIPRequestSpecSpec:
     def id(self, id):
         r"""Sets the id of this MasterEIPRequestSpecSpec.
 
-        弹性网卡ID，绑定时必选，解绑时该字段无效
+        **参数解释**： 弹性网卡ID，绑定时必选，解绑时该字段无效 > 获取方式:在控制台的“服务列表”中，单击“网络 > 弹性公网IP EIP”，单击弹性公网IP，在详情页的“基本信息”页签下找到“ID”字段复制即可。  **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param id: The id of this MasterEIPRequestSpecSpec.
         :type id: str

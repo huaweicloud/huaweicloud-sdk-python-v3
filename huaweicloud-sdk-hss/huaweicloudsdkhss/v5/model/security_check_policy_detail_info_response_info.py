@@ -53,9 +53,9 @@ class SecurityCheckPolicyDetailInfoResponseInfo:
         :type check_rule_type: int
         :param check_type: **参数解释** 配置检查（基线）的类型，例如SSH、CentOS 7、Windows **取值范围** 字符长度0-256位
         :type check_type: str
-        :param severity: **参数解释** 检查项的风险程度，包含如下: **取值范围** - Low    : 低危 - Medium : 中危 - High   : 高危
+        :param severity: **参数解释** 检查项的风险程度 **取值范围** - Low    : 低危 - Medium : 中危 - High   : 高危
         :type severity: str
-        :param level: **参数解释** 检查项的等级 **取值范围** 字符长度0-32位
+        :param level: **参数解释** 配置检查（基线）检查项的版本信息 **取值范围** 字符长度0-32位
         :type level: str
         :param checked: **参数解释** 检查项是否被选中 **取值范围** - true  : 被选中 - false : 未被选中
         :type checked: bool
@@ -209,7 +209,7 @@ class SecurityCheckPolicyDetailInfoResponseInfo:
     def severity(self):
         r"""Gets the severity of this SecurityCheckPolicyDetailInfoResponseInfo.
 
-        **参数解释** 检查项的风险程度，包含如下: **取值范围** - Low    : 低危 - Medium : 中危 - High   : 高危
+        **参数解释** 检查项的风险程度 **取值范围** - Low    : 低危 - Medium : 中危 - High   : 高危
 
         :return: The severity of this SecurityCheckPolicyDetailInfoResponseInfo.
         :rtype: str
@@ -220,7 +220,7 @@ class SecurityCheckPolicyDetailInfoResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this SecurityCheckPolicyDetailInfoResponseInfo.
 
-        **参数解释** 检查项的风险程度，包含如下: **取值范围** - Low    : 低危 - Medium : 中危 - High   : 高危
+        **参数解释** 检查项的风险程度 **取值范围** - Low    : 低危 - Medium : 中危 - High   : 高危
 
         :param severity: The severity of this SecurityCheckPolicyDetailInfoResponseInfo.
         :type severity: str
@@ -231,7 +231,7 @@ class SecurityCheckPolicyDetailInfoResponseInfo:
     def level(self):
         r"""Gets the level of this SecurityCheckPolicyDetailInfoResponseInfo.
 
-        **参数解释** 检查项的等级 **取值范围** 字符长度0-32位
+        **参数解释** 配置检查（基线）检查项的版本信息 **取值范围** 字符长度0-32位
 
         :return: The level of this SecurityCheckPolicyDetailInfoResponseInfo.
         :rtype: str
@@ -242,7 +242,7 @@ class SecurityCheckPolicyDetailInfoResponseInfo:
     def level(self, level):
         r"""Sets the level of this SecurityCheckPolicyDetailInfoResponseInfo.
 
-        **参数解释** 检查项的等级 **取值范围** 字符长度0-32位
+        **参数解释** 配置检查（基线）检查项的版本信息 **取值范围** 字符长度0-32位
 
         :param level: The level of this SecurityCheckPolicyDetailInfoResponseInfo.
         :type level: str

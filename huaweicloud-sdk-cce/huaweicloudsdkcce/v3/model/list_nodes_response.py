@@ -32,11 +32,11 @@ class ListNodesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param kind: API类型，固定值“List”
+        :param kind: **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： List 
         :type kind: str
-        :param api_version: API版本，固定值“v3”
+        :param api_version: **参数解释**： API版本 **约束限制**： 固定值,不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
         :type api_version: str
-        :param items: 节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。
+        :param items: **参数解释**： 节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type items: list[:class:`huaweicloudsdkcce.v3.Node`]
         """
         
@@ -58,7 +58,7 @@ class ListNodesResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ListNodesResponse.
 
-        API类型，固定值“List”
+        **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： List 
 
         :return: The kind of this ListNodesResponse.
         :rtype: str
@@ -69,7 +69,7 @@ class ListNodesResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ListNodesResponse.
 
-        API类型，固定值“List”
+        **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： List 
 
         :param kind: The kind of this ListNodesResponse.
         :type kind: str
@@ -80,7 +80,7 @@ class ListNodesResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ListNodesResponse.
 
-        API版本，固定值“v3”
+        **参数解释**： API版本 **约束限制**： 固定值,不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :return: The api_version of this ListNodesResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class ListNodesResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ListNodesResponse.
 
-        API版本，固定值“v3”
+        **参数解释**： API版本 **约束限制**： 固定值,不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :param api_version: The api_version of this ListNodesResponse.
         :type api_version: str
@@ -102,7 +102,7 @@ class ListNodesResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ListNodesResponse.
 
-        节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。
+        **参数解释**： 节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The items of this ListNodesResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.Node`]
@@ -113,7 +113,7 @@ class ListNodesResponse(SdkResponse):
     def items(self, items):
         r"""Sets the items of this ListNodesResponse.
 
-        节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。
+        **参数解释**： 节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param items: The items of this ListNodesResponse.
         :type items: list[:class:`huaweicloudsdkcce.v3.Node`]

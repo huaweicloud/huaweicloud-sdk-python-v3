@@ -17,7 +17,9 @@ class WarRoomIncident:
     openapi_types = {
         'id': 'str',
         'incident_id': 'str',
+        'alarm_id': 'str',
         'is_change_event': 'bool',
+        'source_id': 'int',
         'failure_level': 'str',
         'incident_url': 'str'
     }
@@ -25,12 +27,14 @@ class WarRoomIncident:
     attribute_map = {
         'id': 'id',
         'incident_id': 'incident_id',
+        'alarm_id': 'alarm_id',
         'is_change_event': 'is_change_event',
+        'source_id': 'source_id',
         'failure_level': 'failure_level',
         'incident_url': 'incident_url'
     }
 
-    def __init__(self, id=None, incident_id=None, is_change_event=None, failure_level=None, incident_url=None):
+    def __init__(self, id=None, incident_id=None, alarm_id=None, is_change_event=None, source_id=None, failure_level=None, incident_url=None):
         r"""WarRoomIncident
 
         The model defined in huaweicloud sdk
@@ -39,8 +43,12 @@ class WarRoomIncident:
         :type id: str
         :param incident_id: 事件id
         :type incident_id: str
+        :param alarm_id: 告警id
+        :type alarm_id: str
         :param is_change_event: 是否变更事件
         :type is_change_event: bool
+        :param source_id: 源id
+        :type source_id: int
         :param failure_level: 事件级别
         :type failure_level: str
         :param incident_url: 事件单号链接
@@ -51,7 +59,9 @@ class WarRoomIncident:
 
         self._id = None
         self._incident_id = None
+        self._alarm_id = None
         self._is_change_event = None
+        self._source_id = None
         self._failure_level = None
         self._incident_url = None
         self.discriminator = None
@@ -59,8 +69,12 @@ class WarRoomIncident:
         self.id = id
         if incident_id is not None:
             self.incident_id = incident_id
+        if alarm_id is not None:
+            self.alarm_id = alarm_id
         if is_change_event is not None:
             self.is_change_event = is_change_event
+        if source_id is not None:
+            self.source_id = source_id
         if failure_level is not None:
             self.failure_level = failure_level
         if incident_url is not None:
@@ -111,6 +125,28 @@ class WarRoomIncident:
         self._incident_id = incident_id
 
     @property
+    def alarm_id(self):
+        r"""Gets the alarm_id of this WarRoomIncident.
+
+        告警id
+
+        :return: The alarm_id of this WarRoomIncident.
+        :rtype: str
+        """
+        return self._alarm_id
+
+    @alarm_id.setter
+    def alarm_id(self, alarm_id):
+        r"""Sets the alarm_id of this WarRoomIncident.
+
+        告警id
+
+        :param alarm_id: The alarm_id of this WarRoomIncident.
+        :type alarm_id: str
+        """
+        self._alarm_id = alarm_id
+
+    @property
     def is_change_event(self):
         r"""Gets the is_change_event of this WarRoomIncident.
 
@@ -131,6 +167,28 @@ class WarRoomIncident:
         :type is_change_event: bool
         """
         self._is_change_event = is_change_event
+
+    @property
+    def source_id(self):
+        r"""Gets the source_id of this WarRoomIncident.
+
+        源id
+
+        :return: The source_id of this WarRoomIncident.
+        :rtype: int
+        """
+        return self._source_id
+
+    @source_id.setter
+    def source_id(self, source_id):
+        r"""Sets the source_id of this WarRoomIncident.
+
+        源id
+
+        :param source_id: The source_id of this WarRoomIncident.
+        :type source_id: int
+        """
+        self._source_id = source_id
 
     @property
     def failure_level(self):

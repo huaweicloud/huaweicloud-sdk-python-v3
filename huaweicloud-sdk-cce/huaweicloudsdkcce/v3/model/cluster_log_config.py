@@ -29,7 +29,7 @@ class ClusterLogConfig:
 
         The model defined in huaweicloud sdk
 
-        :param ttl_in_days: **参数解释**： 日志存储时长，单位（天） **取值范围**： 0-30
+        :param ttl_in_days: **参数解释**：  存储时长，单位：天。  **约束限制**：  不涉及  **取值范围**： 0-30  **默认取值**： 不涉及
         :type ttl_in_days: int
         :param log_configs: **参数解释**： 日志配置项详细信息 **约束限制**: 不涉及
         :type log_configs: list[:class:`huaweicloudsdkcce.v3.ClusterLogConfigLogConfigs`]
@@ -50,7 +50,7 @@ class ClusterLogConfig:
     def ttl_in_days(self):
         r"""Gets the ttl_in_days of this ClusterLogConfig.
 
-        **参数解释**： 日志存储时长，单位（天） **取值范围**： 0-30
+        **参数解释**：  存储时长，单位：天。  **约束限制**：  不涉及  **取值范围**： 0-30  **默认取值**： 不涉及
 
         :return: The ttl_in_days of this ClusterLogConfig.
         :rtype: int
@@ -61,7 +61,7 @@ class ClusterLogConfig:
     def ttl_in_days(self, ttl_in_days):
         r"""Sets the ttl_in_days of this ClusterLogConfig.
 
-        **参数解释**： 日志存储时长，单位（天） **取值范围**： 0-30
+        **参数解释**：  存储时长，单位：天。  **约束限制**：  不涉及  **取值范围**： 0-30  **默认取值**： 不涉及
 
         :param ttl_in_days: The ttl_in_days of this ClusterLogConfig.
         :type ttl_in_days: int

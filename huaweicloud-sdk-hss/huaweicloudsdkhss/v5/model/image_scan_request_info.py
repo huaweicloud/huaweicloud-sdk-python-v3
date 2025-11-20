@@ -22,7 +22,8 @@ class ImageScanRequestInfo:
         'repository_address': 'str',
         'login_user_name': 'str',
         'login_password': 'str',
-        'namespace': 'str'
+        'namespace': 'str',
+        'pipeline_type': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ImageScanRequestInfo:
         'repository_address': 'repository_address',
         'login_user_name': 'login_user_name',
         'login_password': 'login_password',
-        'namespace': 'namespace'
+        'namespace': 'namespace',
+        'pipeline_type': 'pipeline_type'
     }
 
-    def __init__(self, scan_type=None, image_name=None, image_version=None, is_blocking=None, repository_address=None, login_user_name=None, login_password=None, namespace=None):
+    def __init__(self, scan_type=None, image_name=None, image_version=None, is_blocking=None, repository_address=None, login_user_name=None, login_password=None, namespace=None, pipeline_type=None):
         r"""ImageScanRequestInfo
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ImageScanRequestInfo:
         :type login_password: str
         :param namespace: **参数解释**: 组织名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type namespace: str
+        :param pipeline_type: **参数解释**: 流水线类型 **约束限制**: 不涉及 **取值范围**: - jenkins：Jenkins流水线。 - codearts：CodeArts流水线。  **默认取值**: 不涉及 
+        :type pipeline_type: str
         """
         
         
@@ -69,6 +73,7 @@ class ImageScanRequestInfo:
         self._login_user_name = None
         self._login_password = None
         self._namespace = None
+        self._pipeline_type = None
         self.discriminator = None
 
         if scan_type is not None:
@@ -87,6 +92,8 @@ class ImageScanRequestInfo:
             self.login_password = login_password
         if namespace is not None:
             self.namespace = namespace
+        if pipeline_type is not None:
+            self.pipeline_type = pipeline_type
 
     @property
     def scan_type(self):
@@ -263,6 +270,28 @@ class ImageScanRequestInfo:
         :type namespace: str
         """
         self._namespace = namespace
+
+    @property
+    def pipeline_type(self):
+        r"""Gets the pipeline_type of this ImageScanRequestInfo.
+
+        **参数解释**: 流水线类型 **约束限制**: 不涉及 **取值范围**: - jenkins：Jenkins流水线。 - codearts：CodeArts流水线。  **默认取值**: 不涉及 
+
+        :return: The pipeline_type of this ImageScanRequestInfo.
+        :rtype: str
+        """
+        return self._pipeline_type
+
+    @pipeline_type.setter
+    def pipeline_type(self, pipeline_type):
+        r"""Sets the pipeline_type of this ImageScanRequestInfo.
+
+        **参数解释**: 流水线类型 **约束限制**: 不涉及 **取值范围**: - jenkins：Jenkins流水线。 - codearts：CodeArts流水线。  **默认取值**: 不涉及 
+
+        :param pipeline_type: The pipeline_type of this ImageScanRequestInfo.
+        :type pipeline_type: str
+        """
+        self._pipeline_type = pipeline_type
 
     def to_dict(self):
         result = {}

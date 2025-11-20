@@ -31,7 +31,7 @@ class UntagResourceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。
+        :param resource_type: 资源类型。 - analyzers：分析器 
         :type resource_type: str
         :param resource_id: 资源的唯一标识符。
         :type resource_id: str
@@ -55,7 +55,7 @@ class UntagResourceRequest:
     def resource_type(self):
         r"""Gets the resource_type of this UntagResourceRequest.
 
-        资源类型。
+        资源类型。 - analyzers：分析器 
 
         :return: The resource_type of this UntagResourceRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UntagResourceRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this UntagResourceRequest.
 
-        资源类型。
+        资源类型。 - analyzers：分析器 
 
         :param resource_type: The resource_type of this UntagResourceRequest.
         :type resource_type: str

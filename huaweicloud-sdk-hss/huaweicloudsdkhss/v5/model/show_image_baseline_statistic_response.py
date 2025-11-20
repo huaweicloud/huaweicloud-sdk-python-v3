@@ -32,11 +32,11 @@ class ShowImageBaselineStatisticResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param image_weak_pwd: **参数解释**: 弱口令检测 **取值范围**: 最小值0，2147483647 
+        :param image_weak_pwd: **参数解释**: 弱口令检测 **取值范围**: 最小值0，最大值2147483647 
         :type image_weak_pwd: int
-        :param pwd_policy: **参数解释**: 口令复杂度策略检测 **取值范围**: 最小值0，2147483647 
+        :param pwd_policy: **参数解释**: 口令复杂度策略检测 **取值范围**: 最小值0，最大值2147483647 
         :type pwd_policy: int
-        :param security_check: **参数解释**: 服务器配置检测 **取值范围**: 最小值0，2147483647 
+        :param security_check: **参数解释**: 服务器配置检测 **取值范围**: 最小值0，最大值2147483647 
         :type security_check: int
         """
         
@@ -58,7 +58,7 @@ class ShowImageBaselineStatisticResponse(SdkResponse):
     def image_weak_pwd(self):
         r"""Gets the image_weak_pwd of this ShowImageBaselineStatisticResponse.
 
-        **参数解释**: 弱口令检测 **取值范围**: 最小值0，2147483647 
+        **参数解释**: 弱口令检测 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The image_weak_pwd of this ShowImageBaselineStatisticResponse.
         :rtype: int
@@ -69,7 +69,7 @@ class ShowImageBaselineStatisticResponse(SdkResponse):
     def image_weak_pwd(self, image_weak_pwd):
         r"""Sets the image_weak_pwd of this ShowImageBaselineStatisticResponse.
 
-        **参数解释**: 弱口令检测 **取值范围**: 最小值0，2147483647 
+        **参数解释**: 弱口令检测 **取值范围**: 最小值0，最大值2147483647 
 
         :param image_weak_pwd: The image_weak_pwd of this ShowImageBaselineStatisticResponse.
         :type image_weak_pwd: int
@@ -80,7 +80,7 @@ class ShowImageBaselineStatisticResponse(SdkResponse):
     def pwd_policy(self):
         r"""Gets the pwd_policy of this ShowImageBaselineStatisticResponse.
 
-        **参数解释**: 口令复杂度策略检测 **取值范围**: 最小值0，2147483647 
+        **参数解释**: 口令复杂度策略检测 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The pwd_policy of this ShowImageBaselineStatisticResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class ShowImageBaselineStatisticResponse(SdkResponse):
     def pwd_policy(self, pwd_policy):
         r"""Sets the pwd_policy of this ShowImageBaselineStatisticResponse.
 
-        **参数解释**: 口令复杂度策略检测 **取值范围**: 最小值0，2147483647 
+        **参数解释**: 口令复杂度策略检测 **取值范围**: 最小值0，最大值2147483647 
 
         :param pwd_policy: The pwd_policy of this ShowImageBaselineStatisticResponse.
         :type pwd_policy: int
@@ -102,7 +102,7 @@ class ShowImageBaselineStatisticResponse(SdkResponse):
     def security_check(self):
         r"""Gets the security_check of this ShowImageBaselineStatisticResponse.
 
-        **参数解释**: 服务器配置检测 **取值范围**: 最小值0，2147483647 
+        **参数解释**: 服务器配置检测 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The security_check of this ShowImageBaselineStatisticResponse.
         :rtype: int
@@ -113,7 +113,7 @@ class ShowImageBaselineStatisticResponse(SdkResponse):
     def security_check(self, security_check):
         r"""Sets the security_check of this ShowImageBaselineStatisticResponse.
 
-        **参数解释**: 服务器配置检测 **取值范围**: 最小值0，2147483647 
+        **参数解释**: 服务器配置检测 **取值范围**: 最小值0，最大值2147483647 
 
         :param security_check: The security_check of this ShowImageBaselineStatisticResponse.
         :type security_check: int

@@ -29,9 +29,9 @@ class CertRevokeConfigRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: 用户ID
+        :param user_id: **参数解释**： 用户ID，获取方式参见本接口的接口约束 **约束限制**： 与agencyId互斥，二选一填写 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type user_id: str
-        :param agency_id: 委托用户ID
+        :param agency_id: **参数解释**： 用户ID，获取方式参见[如何获取用户ID](cce_02_0249.xml#section1) **约束限制**： 与agencyId互斥，二选一填写 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type agency_id: str
         """
         
@@ -50,7 +50,7 @@ class CertRevokeConfigRequestBody:
     def user_id(self):
         r"""Gets the user_id of this CertRevokeConfigRequestBody.
 
-        用户ID
+        **参数解释**： 用户ID，获取方式参见本接口的接口约束 **约束限制**： 与agencyId互斥，二选一填写 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The user_id of this CertRevokeConfigRequestBody.
         :rtype: str
@@ -61,7 +61,7 @@ class CertRevokeConfigRequestBody:
     def user_id(self, user_id):
         r"""Sets the user_id of this CertRevokeConfigRequestBody.
 
-        用户ID
+        **参数解释**： 用户ID，获取方式参见本接口的接口约束 **约束限制**： 与agencyId互斥，二选一填写 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param user_id: The user_id of this CertRevokeConfigRequestBody.
         :type user_id: str
@@ -72,7 +72,7 @@ class CertRevokeConfigRequestBody:
     def agency_id(self):
         r"""Gets the agency_id of this CertRevokeConfigRequestBody.
 
-        委托用户ID
+        **参数解释**： 用户ID，获取方式参见[如何获取用户ID](cce_02_0249.xml#section1) **约束限制**： 与agencyId互斥，二选一填写 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :return: The agency_id of this CertRevokeConfigRequestBody.
         :rtype: str
@@ -83,7 +83,7 @@ class CertRevokeConfigRequestBody:
     def agency_id(self, agency_id):
         r"""Sets the agency_id of this CertRevokeConfigRequestBody.
 
-        委托用户ID
+        **参数解释**： 用户ID，获取方式参见[如何获取用户ID](cce_02_0249.xml#section1) **约束限制**： 与agencyId互斥，二选一填写 **取值范围**： 不涉及 **默认取值**： 不涉及
 
         :param agency_id: The agency_id of this CertRevokeConfigRequestBody.
         :type agency_id: str

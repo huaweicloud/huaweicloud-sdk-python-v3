@@ -35,15 +35,15 @@ class SecurityCheckTaskCondition:
 
         The model defined in huaweicloud sdk
 
-        :param type: 定时任务，包含如下:   - fixed_weekday : 固定工作日
+        :param type: **参数解释**： 定时任务类型 **取值范围**： - fixed_weekday : 固定工作日 
         :type type: str
         :param day_of_week: 周几触发，可选0或多个
         :type day_of_week: list[str]
-        :param hour: 在此参数表示的小时触发定时任务
+        :param hour: **参数解释**： 在此参数表示的小时触发定时任务 **取值范围**： 最小值0，最大值23 
         :type hour: int
-        :param minute: 在此参数表示的分钟触发定时任务
+        :param minute: **参数解释**： 在此参数表示的分钟触发定时任务 **取值范围**： 最小值0，最大值59 
         :type minute: int
-        :param random_offset: 随机偏移时间
+        :param random_offset: **参数解释**： 随机偏移时间 **取值范围**： 最小值0，最大值7200 
         :type random_offset: int
         """
         
@@ -71,7 +71,7 @@ class SecurityCheckTaskCondition:
     def type(self):
         r"""Gets the type of this SecurityCheckTaskCondition.
 
-        定时任务，包含如下:   - fixed_weekday : 固定工作日
+        **参数解释**： 定时任务类型 **取值范围**： - fixed_weekday : 固定工作日 
 
         :return: The type of this SecurityCheckTaskCondition.
         :rtype: str
@@ -82,7 +82,7 @@ class SecurityCheckTaskCondition:
     def type(self, type):
         r"""Sets the type of this SecurityCheckTaskCondition.
 
-        定时任务，包含如下:   - fixed_weekday : 固定工作日
+        **参数解释**： 定时任务类型 **取值范围**： - fixed_weekday : 固定工作日 
 
         :param type: The type of this SecurityCheckTaskCondition.
         :type type: str
@@ -115,7 +115,7 @@ class SecurityCheckTaskCondition:
     def hour(self):
         r"""Gets the hour of this SecurityCheckTaskCondition.
 
-        在此参数表示的小时触发定时任务
+        **参数解释**： 在此参数表示的小时触发定时任务 **取值范围**： 最小值0，最大值23 
 
         :return: The hour of this SecurityCheckTaskCondition.
         :rtype: int
@@ -126,7 +126,7 @@ class SecurityCheckTaskCondition:
     def hour(self, hour):
         r"""Sets the hour of this SecurityCheckTaskCondition.
 
-        在此参数表示的小时触发定时任务
+        **参数解释**： 在此参数表示的小时触发定时任务 **取值范围**： 最小值0，最大值23 
 
         :param hour: The hour of this SecurityCheckTaskCondition.
         :type hour: int
@@ -137,7 +137,7 @@ class SecurityCheckTaskCondition:
     def minute(self):
         r"""Gets the minute of this SecurityCheckTaskCondition.
 
-        在此参数表示的分钟触发定时任务
+        **参数解释**： 在此参数表示的分钟触发定时任务 **取值范围**： 最小值0，最大值59 
 
         :return: The minute of this SecurityCheckTaskCondition.
         :rtype: int
@@ -148,7 +148,7 @@ class SecurityCheckTaskCondition:
     def minute(self, minute):
         r"""Sets the minute of this SecurityCheckTaskCondition.
 
-        在此参数表示的分钟触发定时任务
+        **参数解释**： 在此参数表示的分钟触发定时任务 **取值范围**： 最小值0，最大值59 
 
         :param minute: The minute of this SecurityCheckTaskCondition.
         :type minute: int
@@ -159,7 +159,7 @@ class SecurityCheckTaskCondition:
     def random_offset(self):
         r"""Gets the random_offset of this SecurityCheckTaskCondition.
 
-        随机偏移时间
+        **参数解释**： 随机偏移时间 **取值范围**： 最小值0，最大值7200 
 
         :return: The random_offset of this SecurityCheckTaskCondition.
         :rtype: int
@@ -170,7 +170,7 @@ class SecurityCheckTaskCondition:
     def random_offset(self, random_offset):
         r"""Sets the random_offset of this SecurityCheckTaskCondition.
 
-        随机偏移时间
+        **参数解释**： 随机偏移时间 **取值范围**： 最小值0，最大值7200 
 
         :param random_offset: The random_offset of this SecurityCheckTaskCondition.
         :type random_offset: int

@@ -72,7 +72,7 @@ class ShowBaselineOverviewResponse(SdkResponse):
         :type check_type_num: int
         :param check_rule_num: **参数解释**: 基线检测项（检测规则）数量。例如SSH基线检测了17条规则，CentOS 7基线检测了60条规则，值就是17+60&#x3D;77。 **取值范围**: 取值0-2147483647 
         :type check_rule_num: int
-        :param check_rule_pass_rate: **参数解释**: 基线检查项通过率\&quot;。 **取值范围**: 取值0-2147483647 
+        :param check_rule_pass_rate: **参数解释**: 基线检查项通过率。 **取值范围**: 取值0-2147483647 
         :type check_rule_pass_rate: int
         :param cn_standard_check_rule_pass_rate: **参数解释**: 云安全实践基线检查项通过率。 **取值范围**: 取值0-2147483647 
         :type cn_standard_check_rule_pass_rate: int
@@ -273,7 +273,7 @@ class ShowBaselineOverviewResponse(SdkResponse):
     def check_rule_pass_rate(self):
         r"""Gets the check_rule_pass_rate of this ShowBaselineOverviewResponse.
 
-        **参数解释**: 基线检查项通过率\"。 **取值范围**: 取值0-2147483647 
+        **参数解释**: 基线检查项通过率。 **取值范围**: 取值0-2147483647 
 
         :return: The check_rule_pass_rate of this ShowBaselineOverviewResponse.
         :rtype: int
@@ -284,7 +284,7 @@ class ShowBaselineOverviewResponse(SdkResponse):
     def check_rule_pass_rate(self, check_rule_pass_rate):
         r"""Sets the check_rule_pass_rate of this ShowBaselineOverviewResponse.
 
-        **参数解释**: 基线检查项通过率\"。 **取值范围**: 取值0-2147483647 
+        **参数解释**: 基线检查项通过率。 **取值范围**: 取值0-2147483647 
 
         :param check_rule_pass_rate: The check_rule_pass_rate of this ShowBaselineOverviewResponse.
         :type check_rule_pass_rate: int

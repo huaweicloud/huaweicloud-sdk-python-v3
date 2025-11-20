@@ -15,20 +15,80 @@ class ListDomainRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'int',
+        'offset': 'int'
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'offset': 'offset'
     }
 
-    def __init__(self):
+    def __init__(self, limit=None, offset=None):
         r"""ListDomainRequest
 
         The model defined in huaweicloud sdk
 
+        :param limit: 限制条数
+        :type limit: int
+        :param offset: 偏移量
+        :type offset: int
         """
         
         
+
+        self._limit = None
+        self._offset = None
         self.discriminator = None
+
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListDomainRequest.
+
+        限制条数
+
+        :return: The limit of this ListDomainRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListDomainRequest.
+
+        限制条数
+
+        :param limit: The limit of this ListDomainRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListDomainRequest.
+
+        偏移量
+
+        :return: The offset of this ListDomainRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListDomainRequest.
+
+        偏移量
+
+        :param offset: The offset of this ListDomainRequest.
+        :type offset: int
+        """
+        self._offset = offset
 
     def to_dict(self):
         result = {}

@@ -16,21 +16,25 @@ class UnusedPermissionDetails:
 
     openapi_types = {
         'service': 'str',
+        'last_accessed': 'datetime',
         'actions': 'list[UnusedAction]'
     }
 
     attribute_map = {
         'service': 'service',
+        'last_accessed': 'last_accessed',
         'actions': 'actions'
     }
 
-    def __init__(self, service=None, actions=None):
+    def __init__(self, service=None, last_accessed=None, actions=None):
         r"""UnusedPermissionDetails
 
         The model defined in huaweicloud sdk
 
         :param service: 权限对应的云服务名称。
         :type service: str
+        :param last_accessed: 用户使用云服务的最后访问时间。
+        :type last_accessed: datetime
         :param actions: 未使用的操作列表。
         :type actions: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.UnusedAction`]
         """
@@ -38,10 +42,13 @@ class UnusedPermissionDetails:
         
 
         self._service = None
+        self._last_accessed = None
         self._actions = None
         self.discriminator = None
 
         self.service = service
+        if last_accessed is not None:
+            self.last_accessed = last_accessed
         self.actions = actions
 
     @property
@@ -65,6 +72,28 @@ class UnusedPermissionDetails:
         :type service: str
         """
         self._service = service
+
+    @property
+    def last_accessed(self):
+        r"""Gets the last_accessed of this UnusedPermissionDetails.
+
+        用户使用云服务的最后访问时间。
+
+        :return: The last_accessed of this UnusedPermissionDetails.
+        :rtype: datetime
+        """
+        return self._last_accessed
+
+    @last_accessed.setter
+    def last_accessed(self, last_accessed):
+        r"""Sets the last_accessed of this UnusedPermissionDetails.
+
+        用户使用云服务的最后访问时间。
+
+        :param last_accessed: The last_accessed of this UnusedPermissionDetails.
+        :type last_accessed: datetime
+        """
+        self._last_accessed = last_accessed
 
     @property
     def actions(self):

@@ -30,7 +30,7 @@ class ListTrustServiceStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param trusted_services_enabled: xxx
+        :param trusted_services_enabled: **参数解释**: 可信服务状态 **取值范围**: - true：是。 - false：否。 
         :type trusted_services_enabled: bool
         :param x_request_id: 
         :type x_request_id: str
@@ -51,7 +51,7 @@ class ListTrustServiceStatusResponse(SdkResponse):
     def trusted_services_enabled(self):
         r"""Gets the trusted_services_enabled of this ListTrustServiceStatusResponse.
 
-        xxx
+        **参数解释**: 可信服务状态 **取值范围**: - true：是。 - false：否。 
 
         :return: The trusted_services_enabled of this ListTrustServiceStatusResponse.
         :rtype: bool
@@ -62,7 +62,7 @@ class ListTrustServiceStatusResponse(SdkResponse):
     def trusted_services_enabled(self, trusted_services_enabled):
         r"""Sets the trusted_services_enabled of this ListTrustServiceStatusResponse.
 
-        xxx
+        **参数解释**: 可信服务状态 **取值范围**: - true：是。 - false：否。 
 
         :param trusted_services_enabled: The trusted_services_enabled of this ListTrustServiceStatusResponse.
         :type trusted_services_enabled: bool

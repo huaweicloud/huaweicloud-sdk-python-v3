@@ -59,7 +59,7 @@ class NodePoolSpec:
         :type node_management: :class:`huaweicloudsdkcce.v3.NodeManagement`
         :param pod_security_groups: 1.21版本集群节点池支持绑定安全组，最多五个。
         :type pod_security_groups: list[:class:`huaweicloudsdkcce.v3.SecurityID`]
-        :param extension_scale_groups: 节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义
+        :param extension_scale_groups: **参数解释**： 节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义。 **约束限制**： 更新节点池时如果未指定则保持原伸缩组配置，如果指定伸缩组（包括空数组），则基于请求体刷新所有伸缩组配置。
         :type extension_scale_groups: list[:class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`]
         :param custom_security_groups: 节点池自定义安全组相关配置。支持节点池新扩容节点绑定指定的安全组。  - 未指定安全组ID，新建节点将添加Node节点默认安全组。  - 指定有效安全组ID，新建节点将使用指定安全组。  - 指定安全组，应避免对CCE运行依赖的端口规则进行修改。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
         :type custom_security_groups: list[str]
@@ -232,7 +232,7 @@ class NodePoolSpec:
     def extension_scale_groups(self):
         r"""Gets the extension_scale_groups of this NodePoolSpec.
 
-        节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义
+        **参数解释**： 节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义。 **约束限制**： 更新节点池时如果未指定则保持原伸缩组配置，如果指定伸缩组（包括空数组），则基于请求体刷新所有伸缩组配置。
 
         :return: The extension_scale_groups of this NodePoolSpec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`]
@@ -243,7 +243,7 @@ class NodePoolSpec:
     def extension_scale_groups(self, extension_scale_groups):
         r"""Sets the extension_scale_groups of this NodePoolSpec.
 
-        节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义
+        **参数解释**： 节点池扩展伸缩组配置列表，详情参见ExtensionScaleGroup类型定义。 **约束限制**： 更新节点池时如果未指定则保持原伸缩组配置，如果指定伸缩组（包括空数组），则基于请求体刷新所有伸缩组配置。
 
         :param extension_scale_groups: The extension_scale_groups of this NodePoolSpec.
         :type extension_scale_groups: list[:class:`huaweicloudsdkcce.v3.ExtensionScaleGroup`]

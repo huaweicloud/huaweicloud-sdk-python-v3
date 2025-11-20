@@ -34,7 +34,8 @@ class CICDImageResponseInfo:
         'vul_num': 'int',
         'unsafe_setting_num': 'int',
         'malicious_file_num': 'int',
-        'severity_level': 'str'
+        'severity_level': 'str',
+        'pipeline_type': 'str'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class CICDImageResponseInfo:
         'vul_num': 'vul_num',
         'unsafe_setting_num': 'unsafe_setting_num',
         'malicious_file_num': 'malicious_file_num',
-        'severity_level': 'severity_level'
+        'severity_level': 'severity_level',
+        'pipeline_type': 'pipeline_type'
     }
 
-    def __init__(self, image_id=None, cicd_name=None, namespace=None, image_name=None, image_digest=None, image_version=None, registry_name=None, image_type=None, registry_type=None, latest_version=None, scan_status=None, scan_failed_desc=None, scan_failed_code=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, severity_level=None):
+    def __init__(self, image_id=None, cicd_name=None, namespace=None, image_name=None, image_digest=None, image_version=None, registry_name=None, image_type=None, registry_type=None, latest_version=None, scan_status=None, scan_failed_desc=None, scan_failed_code=None, image_size=None, latest_update_time=None, latest_scan_time=None, vul_num=None, unsafe_setting_num=None, malicious_file_num=None, severity_level=None, pipeline_type=None):
         r"""CICDImageResponseInfo
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class CICDImageResponseInfo:
         :type malicious_file_num: int
         :param severity_level: **参数解释**: 镜像风险程度，在镜像扫描完成后展示 **取值范围**: - Security：安全。 - Low：低危。 - Medium：中危。 - High：高危。 
         :type severity_level: str
+        :param pipeline_type: **参数解释**: 流水线类型 **取值范围**: - jenkins：Jenkins流水线。 - codearts：CodeArts流水线。 minLength: 1 maxLength: 32 x-example: \&quot;jenkins\&quot; 
+        :type pipeline_type: str
         """
         
         
@@ -129,6 +133,7 @@ class CICDImageResponseInfo:
         self._unsafe_setting_num = None
         self._malicious_file_num = None
         self._severity_level = None
+        self._pipeline_type = None
         self.discriminator = None
 
         if image_id is not None:
@@ -171,6 +176,8 @@ class CICDImageResponseInfo:
             self.malicious_file_num = malicious_file_num
         if severity_level is not None:
             self.severity_level = severity_level
+        if pipeline_type is not None:
+            self.pipeline_type = pipeline_type
 
     @property
     def image_id(self):
@@ -611,6 +618,28 @@ class CICDImageResponseInfo:
         :type severity_level: str
         """
         self._severity_level = severity_level
+
+    @property
+    def pipeline_type(self):
+        r"""Gets the pipeline_type of this CICDImageResponseInfo.
+
+        **参数解释**: 流水线类型 **取值范围**: - jenkins：Jenkins流水线。 - codearts：CodeArts流水线。 minLength: 1 maxLength: 32 x-example: \"jenkins\" 
+
+        :return: The pipeline_type of this CICDImageResponseInfo.
+        :rtype: str
+        """
+        return self._pipeline_type
+
+    @pipeline_type.setter
+    def pipeline_type(self, pipeline_type):
+        r"""Sets the pipeline_type of this CICDImageResponseInfo.
+
+        **参数解释**: 流水线类型 **取值范围**: - jenkins：Jenkins流水线。 - codearts：CodeArts流水线。 minLength: 1 maxLength: 32 x-example: \"jenkins\" 
+
+        :param pipeline_type: The pipeline_type of this CICDImageResponseInfo.
+        :type pipeline_type: str
+        """
+        self._pipeline_type = pipeline_type
 
     def to_dict(self):
         result = {}

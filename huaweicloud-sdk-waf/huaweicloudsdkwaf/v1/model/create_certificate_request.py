@@ -16,21 +16,25 @@ class CreateCertificateRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
+        'verify_cert_key': 'bool',
         'body': 'CreateCertificateRequestBody'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
+        'verify_cert_key': 'verify_cert_key',
         'body': 'body'
     }
 
-    def __init__(self, enterprise_project_id=None, body=None):
+    def __init__(self, enterprise_project_id=None, verify_cert_key=None, body=None):
         r"""CreateCertificateRequest
 
         The model defined in huaweicloud sdk
 
         :param enterprise_project_id: **参数解释：** 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目ID。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。 **约束限制：** 不涉及 **取值范围：**  - 0：代表default企业项目  - all_granted_eps：代表所有企业项目  - 其它企业项目ID：长度为36个字符  **默认取值：** 0
         :type enterprise_project_id: str
+        :param verify_cert_key: 是否验证证书和私钥，true为验证，false为不验证
+        :type verify_cert_key: bool
         :param body: Body of the CreateCertificateRequest
         :type body: :class:`huaweicloudsdkwaf.v1.CreateCertificateRequestBody`
         """
@@ -38,11 +42,14 @@ class CreateCertificateRequest:
         
 
         self._enterprise_project_id = None
+        self._verify_cert_key = None
         self._body = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if verify_cert_key is not None:
+            self.verify_cert_key = verify_cert_key
         if body is not None:
             self.body = body
 
@@ -67,6 +74,28 @@ class CreateCertificateRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def verify_cert_key(self):
+        r"""Gets the verify_cert_key of this CreateCertificateRequest.
+
+        是否验证证书和私钥，true为验证，false为不验证
+
+        :return: The verify_cert_key of this CreateCertificateRequest.
+        :rtype: bool
+        """
+        return self._verify_cert_key
+
+    @verify_cert_key.setter
+    def verify_cert_key(self, verify_cert_key):
+        r"""Sets the verify_cert_key of this CreateCertificateRequest.
+
+        是否验证证书和私钥，true为验证，false为不验证
+
+        :param verify_cert_key: The verify_cert_key of this CreateCertificateRequest.
+        :type verify_cert_key: bool
+        """
+        self._verify_cert_key = verify_cert_key
 
     @property
     def body(self):

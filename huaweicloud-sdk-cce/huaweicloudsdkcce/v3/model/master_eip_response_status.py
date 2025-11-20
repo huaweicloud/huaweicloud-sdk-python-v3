@@ -29,9 +29,9 @@ class MasterEIPResponseStatus:
 
         The model defined in huaweicloud sdk
 
-        :param private_endpoint: 集群访问的PrivateIP(HA集群返回VIP)
+        :param private_endpoint: **参数解释**： 集群访问的PrivateIP(HA集群返回VIP) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type private_endpoint: str
-        :param public_endpoint: 集群访问的PublicIP
+        :param public_endpoint: **参数解释**： 集群访问的PublicIP **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type public_endpoint: str
         """
         
@@ -50,7 +50,7 @@ class MasterEIPResponseStatus:
     def private_endpoint(self):
         r"""Gets the private_endpoint of this MasterEIPResponseStatus.
 
-        集群访问的PrivateIP(HA集群返回VIP)
+        **参数解释**： 集群访问的PrivateIP(HA集群返回VIP) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The private_endpoint of this MasterEIPResponseStatus.
         :rtype: str
@@ -61,7 +61,7 @@ class MasterEIPResponseStatus:
     def private_endpoint(self, private_endpoint):
         r"""Sets the private_endpoint of this MasterEIPResponseStatus.
 
-        集群访问的PrivateIP(HA集群返回VIP)
+        **参数解释**： 集群访问的PrivateIP(HA集群返回VIP) **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param private_endpoint: The private_endpoint of this MasterEIPResponseStatus.
         :type private_endpoint: str
@@ -72,7 +72,7 @@ class MasterEIPResponseStatus:
     def public_endpoint(self):
         r"""Gets the public_endpoint of this MasterEIPResponseStatus.
 
-        集群访问的PublicIP
+        **参数解释**： 集群访问的PublicIP **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The public_endpoint of this MasterEIPResponseStatus.
         :rtype: str
@@ -83,7 +83,7 @@ class MasterEIPResponseStatus:
     def public_endpoint(self, public_endpoint):
         r"""Sets the public_endpoint of this MasterEIPResponseStatus.
 
-        集群访问的PublicIP
+        **参数解释**： 集群访问的PublicIP **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param public_endpoint: The public_endpoint of this MasterEIPResponseStatus.
         :type public_endpoint: str

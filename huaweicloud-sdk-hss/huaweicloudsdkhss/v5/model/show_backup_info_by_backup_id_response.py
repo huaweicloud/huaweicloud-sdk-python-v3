@@ -60,7 +60,7 @@ class ShowBackupInfoByBackupIdResponse(SdkResponse):
         :type created_at: int
         :param status: **参数解释** 备份状态 **取值范围** 字符长度0-65535位 
         :type status: str
-        :param resource_size: **参数解释** 创建时间 **取值范围** 取值0-2147483647 
+        :param resource_size: **参数解释** 资源大小 **取值范围** 取值0-2147483647 
         :type resource_size: int
         :param resource_id: **参数解释** 资源ID 对应host主机ID **取值范围** 字符长度0-65535位 
         :type resource_id: str
@@ -246,7 +246,7 @@ class ShowBackupInfoByBackupIdResponse(SdkResponse):
     def resource_size(self):
         r"""Gets the resource_size of this ShowBackupInfoByBackupIdResponse.
 
-        **参数解释** 创建时间 **取值范围** 取值0-2147483647 
+        **参数解释** 资源大小 **取值范围** 取值0-2147483647 
 
         :return: The resource_size of this ShowBackupInfoByBackupIdResponse.
         :rtype: int
@@ -257,7 +257,7 @@ class ShowBackupInfoByBackupIdResponse(SdkResponse):
     def resource_size(self, resource_size):
         r"""Sets the resource_size of this ShowBackupInfoByBackupIdResponse.
 
-        **参数解释** 创建时间 **取值范围** 取值0-2147483647 
+        **参数解释** 资源大小 **取值范围** 取值0-2147483647 
 
         :param resource_size: The resource_size of this ShowBackupInfoByBackupIdResponse.
         :type resource_size: int

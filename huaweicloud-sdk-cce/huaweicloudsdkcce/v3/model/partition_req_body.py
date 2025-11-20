@@ -18,7 +18,7 @@ class PartitionReqBody:
         'kind': 'str',
         'api_version': 'str',
         'metadata': 'PartitionReqBodyMetadata',
-        'spec': 'PartitionSpec'
+        'spec': 'PartitionReqBodySpec'
     }
 
     attribute_map = {
@@ -33,14 +33,14 @@ class PartitionReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param kind: 资源类型
+        :param kind: **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： Partition 
         :type kind: str
-        :param api_version: API版本
+        :param api_version: **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
         :type api_version: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcce.v3.PartitionReqBodyMetadata`
         :param spec: 
-        :type spec: :class:`huaweicloudsdkcce.v3.PartitionSpec`
+        :type spec: :class:`huaweicloudsdkcce.v3.PartitionReqBodySpec`
         """
         
         
@@ -64,7 +64,7 @@ class PartitionReqBody:
     def kind(self):
         r"""Gets the kind of this PartitionReqBody.
 
-        资源类型
+        **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： Partition 
 
         :return: The kind of this PartitionReqBody.
         :rtype: str
@@ -75,7 +75,7 @@ class PartitionReqBody:
     def kind(self, kind):
         r"""Sets the kind of this PartitionReqBody.
 
-        资源类型
+        **参数解释**： API类型 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： Partition 
 
         :param kind: The kind of this PartitionReqBody.
         :type kind: str
@@ -86,7 +86,7 @@ class PartitionReqBody:
     def api_version(self):
         r"""Gets the api_version of this PartitionReqBody.
 
-        API版本
+        **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :return: The api_version of this PartitionReqBody.
         :rtype: str
@@ -97,7 +97,7 @@ class PartitionReqBody:
     def api_version(self, api_version):
         r"""Sets the api_version of this PartitionReqBody.
 
-        API版本
+        **参数解释**： API版本 **约束限制**： 固定值，不允许修改 **取值范围**： 不涉及 **默认取值**： v3 
 
         :param api_version: The api_version of this PartitionReqBody.
         :type api_version: str
@@ -127,7 +127,7 @@ class PartitionReqBody:
         r"""Gets the spec of this PartitionReqBody.
 
         :return: The spec of this PartitionReqBody.
-        :rtype: :class:`huaweicloudsdkcce.v3.PartitionSpec`
+        :rtype: :class:`huaweicloudsdkcce.v3.PartitionReqBodySpec`
         """
         return self._spec
 
@@ -136,7 +136,7 @@ class PartitionReqBody:
         r"""Sets the spec of this PartitionReqBody.
 
         :param spec: The spec of this PartitionReqBody.
-        :type spec: :class:`huaweicloudsdkcce.v3.PartitionSpec`
+        :type spec: :class:`huaweicloudsdkcce.v3.PartitionReqBodySpec`
         """
         self._spec = spec
 

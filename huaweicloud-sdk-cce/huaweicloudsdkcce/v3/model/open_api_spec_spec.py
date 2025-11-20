@@ -31,7 +31,7 @@ class OpenAPISpecSpec:
 
         :param eip: 
         :type eip: :class:`huaweicloudsdkcce.v3.EipSpec`
-        :param is_dynamic: 是否动态创建
+        :param is_dynamic: **参数解释**： 是否动态创建 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type is_dynamic: bool
         """
         
@@ -68,7 +68,7 @@ class OpenAPISpecSpec:
     def is_dynamic(self):
         r"""Gets the is_dynamic of this OpenAPISpecSpec.
 
-        是否动态创建
+        **参数解释**： 是否动态创建 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The is_dynamic of this OpenAPISpecSpec.
         :rtype: bool
@@ -79,7 +79,7 @@ class OpenAPISpecSpec:
     def is_dynamic(self, is_dynamic):
         r"""Sets the is_dynamic of this OpenAPISpecSpec.
 
-        是否动态创建
+        **参数解释**： 是否动态创建 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param is_dynamic: The is_dynamic of this OpenAPISpecSpec.
         :type is_dynamic: bool

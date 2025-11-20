@@ -16,21 +16,29 @@ class ShowLivePlatformAccessTypeRequest:
 
     openapi_types = {
         'x_app_user_id': 'str',
+        'offset': 'int',
+        'limit': 'int',
         'used': 'bool'
     }
 
     attribute_map = {
         'x_app_user_id': 'X-App-UserId',
+        'offset': 'offset',
+        'limit': 'limit',
         'used': 'used'
     }
 
-    def __init__(self, x_app_user_id=None, used=None):
+    def __init__(self, x_app_user_id=None, offset=None, limit=None, used=None):
         r"""ShowLivePlatformAccessTypeRequest
 
         The model defined in huaweicloud sdk
 
         :param x_app_user_id: 第三方用户ID。不允许输入中文。
         :type x_app_user_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询。
+        :type offset: int
+        :param limit: 每页显示的条目数量。
+        :type limit: int
         :param used: 是否已使用
         :type used: bool
         """
@@ -38,11 +46,17 @@ class ShowLivePlatformAccessTypeRequest:
         
 
         self._x_app_user_id = None
+        self._offset = None
+        self._limit = None
         self._used = None
         self.discriminator = None
 
         if x_app_user_id is not None:
             self.x_app_user_id = x_app_user_id
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         if used is not None:
             self.used = used
 
@@ -67,6 +81,50 @@ class ShowLivePlatformAccessTypeRequest:
         :type x_app_user_id: str
         """
         self._x_app_user_id = x_app_user_id
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ShowLivePlatformAccessTypeRequest.
+
+        偏移量，表示从此偏移量开始查询。
+
+        :return: The offset of this ShowLivePlatformAccessTypeRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ShowLivePlatformAccessTypeRequest.
+
+        偏移量，表示从此偏移量开始查询。
+
+        :param offset: The offset of this ShowLivePlatformAccessTypeRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ShowLivePlatformAccessTypeRequest.
+
+        每页显示的条目数量。
+
+        :return: The limit of this ShowLivePlatformAccessTypeRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ShowLivePlatformAccessTypeRequest.
+
+        每页显示的条目数量。
+
+        :param limit: The limit of this ShowLivePlatformAccessTypeRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     @property
     def used(self):

@@ -360,6 +360,75 @@ class AadAsyncClient(Client):
 
         return http_info
 
+    def list_d_do_s_black_hole_event_async(self, request):
+        r"""黑洞事件列表
+
+        黑洞事件列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDDoSBlackHoleEvent
+        :type request: :class:`huaweicloudsdkaad.v2.ListDDoSBlackHoleEventRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.ListDDoSBlackHoleEventResponse`
+        """
+        http_info = self._list_d_do_s_black_hole_event_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_d_do_s_black_hole_event_async_invoker(self, request):
+        http_info = self._list_d_do_s_black_hole_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_d_do_s_black_hole_event_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/aad/instances/ddos-info/attack/blackhole-event",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDDoSBlackHoleEventResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_d_do_s_connection_number_async(self, request):
         r"""查询新建连接数和并发连接数
 
@@ -404,6 +473,10 @@ class AadAsyncClient(Client):
             query_params.append(('end_time', local_var_params['end_time']))
         if 'ip' in local_var_params:
             query_params.append(('ip', local_var_params['ip']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -569,6 +642,69 @@ class AadAsyncClient(Client):
 
         return http_info
 
+    def list_global_config_async(self, request):
+        r"""查询控制台WAF全局配置
+
+        查询控制台WAF全局配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGlobalConfig
+        :type request: :class:`huaweicloudsdkaad.v2.ListGlobalConfigRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.ListGlobalConfigResponse`
+        """
+        http_info = self._list_global_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_global_config_async_invoker(self, request):
+        http_info = self._list_global_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_global_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/aad/domains/global-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGlobalConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instance_domains_async(self, request):
         r"""查询实例关联的域名信息
 
@@ -605,6 +741,73 @@ class AadAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_source_ip_async(self, request):
+        r"""查询回源ip列表
+
+        查询回源ip列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSourceIp
+        :type request: :class:`huaweicloudsdkaad.v2.ListSourceIpRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.ListSourceIpResponse`
+        """
+        http_info = self._list_source_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_source_ip_async_invoker(self, request):
+        http_info = self._list_source_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_source_ip_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/aad/source-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSourceIpResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -970,6 +1173,10 @@ class AadAsyncClient(Client):
             query_params.append(('recent', local_var_params['recent']))
         if 'overseas_type' in local_var_params:
             query_params.append(('overseas_type', local_var_params['overseas_type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -1131,6 +1338,140 @@ class AadAsyncClient(Client):
 
         return http_info
 
+    def show_alarm_config_async(self, request):
+        r"""查询告警设置
+
+        查询告警设置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAlarmConfig
+        :type request: :class:`huaweicloudsdkaad.v2.ShowAlarmConfigRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.ShowAlarmConfigResponse`
+        """
+        http_info = self._show_alarm_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_alarm_config_async_invoker(self, request):
+        http_info = self._show_alarm_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_alarm_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/aad/alarm",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlarmConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_d_do_s_peak_async(self, request):
+        r"""查询高防入流量峰值、攻击流量峰值、DDoS攻击次数
+
+        查询高防入流量峰值、攻击流量峰值、DDoS攻击次数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDDoSPeak
+        :type request: :class:`huaweicloudsdkaad.v2.ShowDDoSPeakRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.ShowDDoSPeakResponse`
+        """
+        http_info = self._show_d_do_s_peak_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_d_do_s_peak_async_invoker(self, request):
+        http_info = self._show_d_do_s_peak_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_d_do_s_peak_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/aad/instances/{instance_id}/ddos-info/flow/peak",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDDoSPeakResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_domain_certificate_async(self, request):
         r"""查询域名关联的证书信息
 
@@ -1196,6 +1537,138 @@ class AadAsyncClient(Client):
 
         return http_info
 
+    def show_domain_detail_async(self, request):
+        r"""查询域名详情
+
+        查询域名详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDomainDetail
+        :type request: :class:`huaweicloudsdkaad.v2.ShowDomainDetailRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.ShowDomainDetailResponse`
+        """
+        http_info = self._show_domain_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_detail_async_invoker(self, request):
+        http_info = self._show_domain_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/aad/domains/{domain_id}/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_domain_name_config_async(self, request):
+        r"""查看域名配置
+
+        查看域名配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDomainNameConfig
+        :type request: :class:`huaweicloudsdkaad.v2.ShowDomainNameConfigRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.ShowDomainNameConfigResponse`
+        """
+        http_info = self._show_domain_name_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_name_config_async_invoker(self, request):
+        http_info = self._show_domain_name_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_name_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/aad/domains/{domain_id}/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainNameConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_flow_block_async(self, request):
         r"""查询流量封禁信息
 
@@ -1234,6 +1707,71 @@ class AadAsyncClient(Client):
         query_params = []
         if 'instance_id' in local_var_params:
             query_params.append(('instance_id', local_var_params['instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_instance_by_instance_id_async(self, request):
+        r"""查询实例详情
+
+        查询实例详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowInstanceByInstanceId
+        :type request: :class:`huaweicloudsdkaad.v2.ShowInstanceByInstanceIdRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.ShowInstanceByInstanceIdResponse`
+        """
+        http_info = self._show_instance_by_instance_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_instance_by_instance_id_async_invoker(self, request):
+        http_info = self._show_instance_by_instance_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_by_instance_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/aad/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceByInstanceIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -1380,6 +1918,144 @@ class AadAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_domain_config_async(self, request):
+        r"""修改域名配置
+
+        修改域名配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateDomainConfig
+        :type request: :class:`huaweicloudsdkaad.v2.UpdateDomainConfigRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.UpdateDomainConfigResponse`
+        """
+        http_info = self._update_domain_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_domain_config_async_invoker(self, request):
+        http_info = self._update_domain_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_domain_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/aad/domains/{domain_id}/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_forward_rule_async(self, request):
+        r"""修改转发规则中的源站IP
+
+        修改转发规则中的源站IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateForwardRule
+        :type request: :class:`huaweicloudsdkaad.v2.UpdateForwardRuleRequest`
+        :rtype: :class:`huaweicloudsdkaad.v2.UpdateForwardRuleResponse`
+        """
+        http_info = self._update_forward_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_forward_rule_async_invoker(self, request):
+        http_info = self._update_forward_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_forward_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/aad/forward-rules/{instance_id}/{ip}/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateForwardRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+        if 'ip' in local_var_params:
+            path_params['ip'] = local_var_params['ip']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

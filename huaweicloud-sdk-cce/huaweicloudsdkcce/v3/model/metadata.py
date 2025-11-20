@@ -37,17 +37,17 @@ class Metadata:
 
         The model defined in huaweicloud sdk
 
-        :param uid: 唯一id标识
+        :param uid: **参数解释**： 唯一id标识 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type uid: str
-        :param name: 资源名称
+        :param name: **参数解释**： 资源名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type name: str
-        :param labels: 资源标签，key/value对格式，接口保留字段，填写不会生效
+        :param labels: **参数解释**： 资源标签，key/value对格式，接口保留字段，填写不会生效 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type labels: dict(str, str)
-        :param annotations: 资源注解，由key/value组成 
+        :param annotations: **参数解释**： 资源注解，由key/value组成 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type annotations: dict(str, str)
-        :param update_timestamp: 更新时间
+        :param update_timestamp: **参数解释**： 更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type update_timestamp: date
-        :param creation_timestamp: 创建时间
+        :param creation_timestamp: **参数解释**： 创建时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type creation_timestamp: date
         """
         
@@ -78,7 +78,7 @@ class Metadata:
     def uid(self):
         r"""Gets the uid of this Metadata.
 
-        唯一id标识
+        **参数解释**： 唯一id标识 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The uid of this Metadata.
         :rtype: str
@@ -89,7 +89,7 @@ class Metadata:
     def uid(self, uid):
         r"""Sets the uid of this Metadata.
 
-        唯一id标识
+        **参数解释**： 唯一id标识 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param uid: The uid of this Metadata.
         :type uid: str
@@ -100,7 +100,7 @@ class Metadata:
     def name(self):
         r"""Gets the name of this Metadata.
 
-        资源名称
+        **参数解释**： 资源名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The name of this Metadata.
         :rtype: str
@@ -111,7 +111,7 @@ class Metadata:
     def name(self, name):
         r"""Sets the name of this Metadata.
 
-        资源名称
+        **参数解释**： 资源名称 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param name: The name of this Metadata.
         :type name: str
@@ -122,7 +122,7 @@ class Metadata:
     def labels(self):
         r"""Gets the labels of this Metadata.
 
-        资源标签，key/value对格式，接口保留字段，填写不会生效
+        **参数解释**： 资源标签，key/value对格式，接口保留字段，填写不会生效 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The labels of this Metadata.
         :rtype: dict(str, str)
@@ -133,7 +133,7 @@ class Metadata:
     def labels(self, labels):
         r"""Sets the labels of this Metadata.
 
-        资源标签，key/value对格式，接口保留字段，填写不会生效
+        **参数解释**： 资源标签，key/value对格式，接口保留字段，填写不会生效 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param labels: The labels of this Metadata.
         :type labels: dict(str, str)
@@ -144,7 +144,7 @@ class Metadata:
     def annotations(self):
         r"""Gets the annotations of this Metadata.
 
-        资源注解，由key/value组成 
+        **参数解释**： 资源注解，由key/value组成 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The annotations of this Metadata.
         :rtype: dict(str, str)
@@ -155,7 +155,7 @@ class Metadata:
     def annotations(self, annotations):
         r"""Sets the annotations of this Metadata.
 
-        资源注解，由key/value组成 
+        **参数解释**： 资源注解，由key/value组成 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param annotations: The annotations of this Metadata.
         :type annotations: dict(str, str)
@@ -166,7 +166,7 @@ class Metadata:
     def update_timestamp(self):
         r"""Gets the update_timestamp of this Metadata.
 
-        更新时间
+        **参数解释**： 更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The update_timestamp of this Metadata.
         :rtype: date
@@ -177,7 +177,7 @@ class Metadata:
     def update_timestamp(self, update_timestamp):
         r"""Sets the update_timestamp of this Metadata.
 
-        更新时间
+        **参数解释**： 更新时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param update_timestamp: The update_timestamp of this Metadata.
         :type update_timestamp: date
@@ -188,7 +188,7 @@ class Metadata:
     def creation_timestamp(self):
         r"""Gets the creation_timestamp of this Metadata.
 
-        创建时间
+        **参数解释**： 创建时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :return: The creation_timestamp of this Metadata.
         :rtype: date
@@ -199,7 +199,7 @@ class Metadata:
     def creation_timestamp(self, creation_timestamp):
         r"""Sets the creation_timestamp of this Metadata.
 
-        创建时间
+        **参数解释**： 创建时间 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
         :param creation_timestamp: The creation_timestamp of this Metadata.
         :type creation_timestamp: date

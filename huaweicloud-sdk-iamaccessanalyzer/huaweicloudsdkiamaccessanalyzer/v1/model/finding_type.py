@@ -8,9 +8,19 @@ class FindingType:
     allowed enum values
     """
     EXTERNAL_ACCESS = "external_access"
+    PRIVILEGE_ESCALATION = "privilege_escalation"
     UNUSED_IAM_USER_ACCESS_KEY = "unused_iam_user_access_key"
     UNUSED_IAM_USER_PASSWORD = "unused_iam_user_password"
     UNUSED_PERMISSION = "unused_permission"
+    UNUSED_IAM_AGENCY = "unused_iam_agency"
+    IAM_BP_ROOT_USER_HAS_ACCESS_KEY = "iam_bp_root_user_has_access_key"
+    IAM_BP_ACCESS_API_WITH_PASSWORD = "iam_bp_access_api_with_password"
+    IAM_BP_LOGIN_PROTECTION_DISABLED = "iam_bp_login_protection_disabled"
+    IAM_BP_MFA_UNCONFIGURED = "iam_bp_mfa_unconfigured"
+    IAM_BP_ASSIGN_HIGH_RISK_SYS_POLICY_OR_ROLE_TO_USER = "iam_bp_assign_high_risk_sys_policy_or_role_to_user"
+    IAM_BP_ATTACH_HIGH_RISK_SYS_IDENTITY_POLICY_TO_USER = "iam_bp_attach_high_risk_sys_identity_policy_to_user"
+    IAM_BP_ASSIGN_HIGH_RISK_SYS_POLICY_OR_ROLE_TO_AGENCY = "iam_bp_assign_high_risk_sys_policy_or_role_to_agency"
+    IAM_BP_ATTACH_HIGH_RISK_SYS_IDENTITY_POLICY_TO_AGENCY = "iam_bp_attach_high_risk_sys_identity_policy_to_agency"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

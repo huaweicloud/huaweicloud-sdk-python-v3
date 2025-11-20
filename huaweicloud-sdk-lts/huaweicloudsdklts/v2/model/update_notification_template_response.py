@@ -20,8 +20,8 @@ class UpdateNotificationTemplateResponse(SdkResponse):
         'type': 'list[str]',
         'desc': 'str',
         'source': 'str',
-        'locale': 'str',
-        'templates': 'list[SubTemplate]'
+        'templates': 'list[SubTemplateResBody]',
+        'locale': 'str'
     }
 
     attribute_map = {
@@ -29,27 +29,27 @@ class UpdateNotificationTemplateResponse(SdkResponse):
         'type': 'type',
         'desc': 'desc',
         'source': 'source',
-        'locale': 'locale',
-        'templates': 'templates'
+        'templates': 'templates',
+        'locale': 'locale'
     }
 
-    def __init__(self, name=None, type=None, desc=None, source=None, locale=None, templates=None):
+    def __init__(self, name=None, type=None, desc=None, source=None, templates=None, locale=None):
         r"""UpdateNotificationTemplateResponse
 
         The model defined in huaweicloud sdk
 
-        :param name: 通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
+        :param name: **参数解释：**  消息模板名称。 **取值范围：**  不涉及。
         :type name: str
-        :param type: 保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
+        :param type: **参数解释：**  消息通知方式。 **取值范围：**  - sms - dingding - wechat - webhook - email - voice - feishu - welink
         :type type: list[str]
-        :param desc: 模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
+        :param desc: **参数解释：**  消息模板描述。 **取值范围：**  不涉及。
         :type desc: str
-        :param source: 模板来源，目前必填为LTS，否则会筛选不出来
+        :param source: **参数解释：**  消息模板来源。 **取值范围：**  不涉及。
         :type source: str
-        :param locale: 语言，必填，目前可填zh-cn和en-us
+        :param templates: **参数解释：**  不同通知渠道下消息模板的详细信息。
+        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplateResBody`]
+        :param locale: **参数解释：**  消息头语言，系统在发送消息时会默认添加消息头，中文如：“尊敬的用户...”；英文如：“Dear User...”。 **取值范围：**  - zh-cn - en-us
         :type locale: str
-        :param templates: 模板正文，为一个数组
-        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
         """
         
         super().__init__()
@@ -58,8 +58,8 @@ class UpdateNotificationTemplateResponse(SdkResponse):
         self._type = None
         self._desc = None
         self._source = None
-        self._locale = None
         self._templates = None
+        self._locale = None
         self.discriminator = None
 
         if name is not None:
@@ -70,16 +70,16 @@ class UpdateNotificationTemplateResponse(SdkResponse):
             self.desc = desc
         if source is not None:
             self.source = source
-        if locale is not None:
-            self.locale = locale
         if templates is not None:
             self.templates = templates
+        if locale is not None:
+            self.locale = locale
 
     @property
     def name(self):
         r"""Gets the name of this UpdateNotificationTemplateResponse.
 
-        通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
+        **参数解释：**  消息模板名称。 **取值范围：**  不涉及。
 
         :return: The name of this UpdateNotificationTemplateResponse.
         :rtype: str
@@ -90,7 +90,7 @@ class UpdateNotificationTemplateResponse(SdkResponse):
     def name(self, name):
         r"""Sets the name of this UpdateNotificationTemplateResponse.
 
-        通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
+        **参数解释：**  消息模板名称。 **取值范围：**  不涉及。
 
         :param name: The name of this UpdateNotificationTemplateResponse.
         :type name: str
@@ -101,7 +101,7 @@ class UpdateNotificationTemplateResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this UpdateNotificationTemplateResponse.
 
-        保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
+        **参数解释：**  消息通知方式。 **取值范围：**  - sms - dingding - wechat - webhook - email - voice - feishu - welink
 
         :return: The type of this UpdateNotificationTemplateResponse.
         :rtype: list[str]
@@ -112,7 +112,7 @@ class UpdateNotificationTemplateResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this UpdateNotificationTemplateResponse.
 
-        保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
+        **参数解释：**  消息通知方式。 **取值范围：**  - sms - dingding - wechat - webhook - email - voice - feishu - welink
 
         :param type: The type of this UpdateNotificationTemplateResponse.
         :type type: list[str]
@@ -123,7 +123,7 @@ class UpdateNotificationTemplateResponse(SdkResponse):
     def desc(self):
         r"""Gets the desc of this UpdateNotificationTemplateResponse.
 
-        模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
+        **参数解释：**  消息模板描述。 **取值范围：**  不涉及。
 
         :return: The desc of this UpdateNotificationTemplateResponse.
         :rtype: str
@@ -134,7 +134,7 @@ class UpdateNotificationTemplateResponse(SdkResponse):
     def desc(self, desc):
         r"""Sets the desc of this UpdateNotificationTemplateResponse.
 
-        模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
+        **参数解释：**  消息模板描述。 **取值范围：**  不涉及。
 
         :param desc: The desc of this UpdateNotificationTemplateResponse.
         :type desc: str
@@ -145,7 +145,7 @@ class UpdateNotificationTemplateResponse(SdkResponse):
     def source(self):
         r"""Gets the source of this UpdateNotificationTemplateResponse.
 
-        模板来源，目前必填为LTS，否则会筛选不出来
+        **参数解释：**  消息模板来源。 **取值范围：**  不涉及。
 
         :return: The source of this UpdateNotificationTemplateResponse.
         :rtype: str
@@ -156,7 +156,7 @@ class UpdateNotificationTemplateResponse(SdkResponse):
     def source(self, source):
         r"""Sets the source of this UpdateNotificationTemplateResponse.
 
-        模板来源，目前必填为LTS，否则会筛选不出来
+        **参数解释：**  消息模板来源。 **取值范围：**  不涉及。
 
         :param source: The source of this UpdateNotificationTemplateResponse.
         :type source: str
@@ -164,10 +164,32 @@ class UpdateNotificationTemplateResponse(SdkResponse):
         self._source = source
 
     @property
+    def templates(self):
+        r"""Gets the templates of this UpdateNotificationTemplateResponse.
+
+        **参数解释：**  不同通知渠道下消息模板的详细信息。
+
+        :return: The templates of this UpdateNotificationTemplateResponse.
+        :rtype: list[:class:`huaweicloudsdklts.v2.SubTemplateResBody`]
+        """
+        return self._templates
+
+    @templates.setter
+    def templates(self, templates):
+        r"""Sets the templates of this UpdateNotificationTemplateResponse.
+
+        **参数解释：**  不同通知渠道下消息模板的详细信息。
+
+        :param templates: The templates of this UpdateNotificationTemplateResponse.
+        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplateResBody`]
+        """
+        self._templates = templates
+
+    @property
     def locale(self):
         r"""Gets the locale of this UpdateNotificationTemplateResponse.
 
-        语言，必填，目前可填zh-cn和en-us
+        **参数解释：**  消息头语言，系统在发送消息时会默认添加消息头，中文如：“尊敬的用户...”；英文如：“Dear User...”。 **取值范围：**  - zh-cn - en-us
 
         :return: The locale of this UpdateNotificationTemplateResponse.
         :rtype: str
@@ -178,34 +200,12 @@ class UpdateNotificationTemplateResponse(SdkResponse):
     def locale(self, locale):
         r"""Sets the locale of this UpdateNotificationTemplateResponse.
 
-        语言，必填，目前可填zh-cn和en-us
+        **参数解释：**  消息头语言，系统在发送消息时会默认添加消息头，中文如：“尊敬的用户...”；英文如：“Dear User...”。 **取值范围：**  - zh-cn - en-us
 
         :param locale: The locale of this UpdateNotificationTemplateResponse.
         :type locale: str
         """
         self._locale = locale
-
-    @property
-    def templates(self):
-        r"""Gets the templates of this UpdateNotificationTemplateResponse.
-
-        模板正文，为一个数组
-
-        :return: The templates of this UpdateNotificationTemplateResponse.
-        :rtype: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
-        """
-        return self._templates
-
-    @templates.setter
-    def templates(self, templates):
-        r"""Sets the templates of this UpdateNotificationTemplateResponse.
-
-        模板正文，为一个数组
-
-        :param templates: The templates of this UpdateNotificationTemplateResponse.
-        :type templates: list[:class:`huaweicloudsdklts.v2.SubTemplate`]
-        """
-        self._templates = templates
 
     def to_dict(self):
         import warnings

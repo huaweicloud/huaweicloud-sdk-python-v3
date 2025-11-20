@@ -25,7 +25,9 @@ class ShowNodeResponse(SdkResponse):
         'subnet_name': 'str',
         'datavolume_id': 'str',
         'res_subnet_ip': 'str',
-        'systemvolume_id': 'str'
+        'systemvolume_id': 'str',
+        'group_id': 'str',
+        'subnet_id': 'str'
     }
 
     attribute_map = {
@@ -38,10 +40,12 @@ class ShowNodeResponse(SdkResponse):
         'subnet_name': 'subnet_name',
         'datavolume_id': 'datavolume_id',
         'res_subnet_ip': 'res_subnet_ip',
-        'systemvolume_id': 'systemvolume_id'
+        'systemvolume_id': 'systemvolume_id',
+        'group_id': 'group_id',
+        'subnet_id': 'subnet_id'
     }
 
-    def __init__(self, status=None, name=None, node_id=None, private_ip=None, floating_ip=None, server_id=None, subnet_name=None, datavolume_id=None, res_subnet_ip=None, systemvolume_id=None):
+    def __init__(self, status=None, name=None, node_id=None, private_ip=None, floating_ip=None, server_id=None, subnet_name=None, datavolume_id=None, res_subnet_ip=None, systemvolume_id=None, group_id=None, subnet_id=None):
         r"""ShowNodeResponse
 
         The model defined in huaweicloud sdk
@@ -66,6 +70,10 @@ class ShowNodeResponse(SdkResponse):
         :type res_subnet_ip: str
         :param systemvolume_id: 系统盘id。
         :type systemvolume_id: str
+        :param group_id: 节点所在组ID。
+        :type group_id: str
+        :param subnet_id: 子网ID。
+        :type subnet_id: str
         """
         
         super().__init__()
@@ -80,6 +88,8 @@ class ShowNodeResponse(SdkResponse):
         self._datavolume_id = None
         self._res_subnet_ip = None
         self._systemvolume_id = None
+        self._group_id = None
+        self._subnet_id = None
         self.discriminator = None
 
         if status is not None:
@@ -102,6 +112,10 @@ class ShowNodeResponse(SdkResponse):
             self.res_subnet_ip = res_subnet_ip
         if systemvolume_id is not None:
             self.systemvolume_id = systemvolume_id
+        if group_id is not None:
+            self.group_id = group_id
+        if subnet_id is not None:
+            self.subnet_id = subnet_id
 
     @property
     def status(self):
@@ -322,6 +336,50 @@ class ShowNodeResponse(SdkResponse):
         :type systemvolume_id: str
         """
         self._systemvolume_id = systemvolume_id
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this ShowNodeResponse.
+
+        节点所在组ID。
+
+        :return: The group_id of this ShowNodeResponse.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this ShowNodeResponse.
+
+        节点所在组ID。
+
+        :param group_id: The group_id of this ShowNodeResponse.
+        :type group_id: str
+        """
+        self._group_id = group_id
+
+    @property
+    def subnet_id(self):
+        r"""Gets the subnet_id of this ShowNodeResponse.
+
+        子网ID。
+
+        :return: The subnet_id of this ShowNodeResponse.
+        :rtype: str
+        """
+        return self._subnet_id
+
+    @subnet_id.setter
+    def subnet_id(self, subnet_id):
+        r"""Sets the subnet_id of this ShowNodeResponse.
+
+        子网ID。
+
+        :param subnet_id: The subnet_id of this ShowNodeResponse.
+        :type subnet_id: str
+        """
+        self._subnet_id = subnet_id
 
     def to_dict(self):
         import warnings

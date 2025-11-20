@@ -2415,6 +2415,77 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def execute_transfer_asset_action_async(self, request):
+        r"""转移资产任务控制
+
+        转移资产任务控制
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExecuteTransferAssetAction
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ExecuteTransferAssetActionRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ExecuteTransferAssetActionResponse`
+        """
+        http_info = self._execute_transfer_asset_action_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_transfer_asset_action_async_invoker(self, request):
+        http_info = self._execute_transfer_asset_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_transfer_asset_action_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-assets-action/transfers/{job_id}/{action}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteTransferAssetActionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+        if 'action' in local_var_params:
+            path_params['action'] = local_var_params['action']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_asset_summary_async(self, request):
         r"""查询资产概要
 
@@ -2578,6 +2649,81 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('supported_service', local_var_params['supported_service']))
         if 'app_user_id' in local_var_params:
             query_params.append(('app_user_id', local_var_params['app_user_id']))
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_transfer_asset_jobs_async(self, request):
+        r"""资产转移任务列表
+
+        资产转移任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTransferAssetJobs
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListTransferAssetJobsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListTransferAssetJobsResponse`
+        """
+        http_info = self._list_transfer_asset_jobs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_transfer_asset_jobs_async_invoker(self, request):
+        http_info = self._list_transfer_asset_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_transfer_asset_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-assets-action/transfers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTransferAssetJobsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'role' in local_var_params:
+            query_params.append(('role', local_var_params['role']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'transfer_type' in local_var_params:
+            query_params.append(('transfer_type', local_var_params['transfer_type']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -2787,6 +2933,140 @@ class MetaStudioAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_transfer_asset_job_async(self, request):
+        r"""查询转移资产任务详情
+
+        查询转移资产任务详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTransferAssetJob
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTransferAssetJobRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTransferAssetJobResponse`
+        """
+        http_info = self._show_transfer_asset_job_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_transfer_asset_job_async_invoker(self, request):
+        http_info = self._show_transfer_asset_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_transfer_asset_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-assets-action/transfers/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTransferAssetJobResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def transfer_asset_async(self, request):
+        r"""转移资产给其他用户
+
+        转移资产给其他用户
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for TransferAsset
+        :type request: :class:`huaweicloudsdkmetastudio.v1.TransferAssetRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.TransferAssetResponse`
+        """
+        http_info = self._transfer_asset_http_info(request)
+        return self._call_api(**http_info)
+
+    def transfer_asset_async_invoker(self, request):
+        http_info = self._transfer_asset_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _transfer_asset_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-assets-action/transfers",
+            "request_type": request.__class__.__name__,
+            "response_type": "TransferAssetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -7099,75 +7379,6 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
-    def show_encrypt_file_async(self, request):
-        r"""下载加密文件
-
-        下载加密文件
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowEncryptFile
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowEncryptFileRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowEncryptFileResponse`
-        """
-        http_info = self._show_encrypt_file_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_encrypt_file_async_invoker(self, request):
-        http_info = self._show_encrypt_file_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_encrypt_file_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/voice-training-manage/common/encrypt-file-download",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowEncryptFileResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'tenant_id' in local_var_params:
-            query_params.append(('tenant_id', local_var_params['tenant_id']))
-        if 'job_id' in local_var_params:
-            query_params.append(('job_id', local_var_params['job_id']))
-        if 'once_token' in local_var_params:
-            query_params.append(('once_token', local_var_params['once_token']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_intent_and_question_async(self, request):
         r"""创建知识库意图和问法
 
@@ -9248,6 +9459,10 @@ class MetaStudioAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
         if 'used' in local_var_params:
             query_params.append(('used', local_var_params['used']))
 
@@ -13540,6 +13755,69 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def show_smart_live_user_config_async(self, request):
+        r"""租户查询直播租户级配置
+
+        该接口用于租户设置直播租户级配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSmartLiveUserConfig
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowSmartLiveUserConfigRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowSmartLiveUserConfigResponse`
+        """
+        http_info = self._show_smart_live_user_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_smart_live_user_config_async_invoker(self, request):
+        http_info = self._show_smart_live_user_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_smart_live_user_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-live-configs/user-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSmartLiveUserConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_smart_live_user_config_async(self, request):
         r"""租户设置直播租户级配置
 
@@ -15118,31 +15396,31 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
-    def create_facial_animations_async(self, request):
-        r"""创建语音驱动表情动画任务
+    def bind_user_asset_resource_async(self, request):
+        r"""资源绑定接口
 
-        该接口用于创建驱动数字人表情的任务。
+        资源绑定接口。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreateFacialAnimations
-        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateFacialAnimationsRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateFacialAnimationsResponse`
+        :param request: Request instance for BindUserAssetResource
+        :type request: :class:`huaweicloudsdkmetastudio.v1.BindUserAssetResourceRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.BindUserAssetResourceResponse`
         """
-        http_info = self._create_facial_animations_http_info(request)
+        http_info = self._bind_user_asset_resource_http_info(request)
         return self._call_api(**http_info)
 
-    def create_facial_animations_async_invoker(self, request):
-        http_info = self._create_facial_animations_http_info(request)
+    def bind_user_asset_resource_async_invoker(self, request):
+        http_info = self._bind_user_asset_resource_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_facial_animations_http_info(self, request):
+    def _bind_user_asset_resource_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/ttsa/fas",
+            "resource_path": "/v1/{project_id}/tenants/bind-resource",
             "request_type": request.__class__.__name__,
-            "response_type": "CreateFacialAnimationsResponse"
+            "response_type": "BindUserAssetResourceResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -15162,274 +15440,6 @@ class MetaStudioAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=utf-8'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_ttsa_async(self, request):
-        r"""创建语音驱动任务
-
-        该接口用于创建驱动数字人表情、动作及语音的任务。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateTtsa
-        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateTtsaRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateTtsaResponse`
-        """
-        http_info = self._create_ttsa_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_ttsa_async_invoker(self, request):
-        http_info = self._create_ttsa_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_ttsa_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/ttsa-jobs",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateTtsaResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_facial_animations_data_async(self, request):
-        r"""获取语音驱动表情数据
-
-        该接口用于获取生成的数字人表情驱动数据
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListFacialAnimationsData
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ListFacialAnimationsDataRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListFacialAnimationsDataResponse`
-        """
-        http_info = self._list_facial_animations_data_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_facial_animations_data_async_invoker(self, request):
-        http_info = self._list_facial_animations_data_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_facial_animations_data_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/fas-jobs/{job_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListFacialAnimationsDataResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'job_id' in local_var_params:
-            path_params['job_id'] = local_var_params['job_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_ttsa_data_async(self, request):
-        r"""获取语音驱动数据
-
-        该接口用于获取生成的数字人驱动数据，包括语音、表情、动作等。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListTtsaData
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ListTtsaDataRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListTtsaDataResponse`
-        """
-        http_info = self._list_ttsa_data_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_ttsa_data_async_invoker(self, request):
-        http_info = self._list_ttsa_data_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_ttsa_data_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/ttsa-jobs/{job_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListTtsaDataResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'job_id' in local_var_params:
-            path_params['job_id'] = local_var_params['job_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-Request-Id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_ttsa_jobs_async(self, request):
-        r"""获取语音驱动任务列表
-
-        该接口用于查询驱动数字人表情、动作及语音的任务列表。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListTtsaJobs
-        :type request: :class:`huaweicloudsdkmetastudio.v1.ListTtsaJobsRequest`
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListTtsaJobsResponse`
-        """
-        http_info = self._list_ttsa_jobs_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_ttsa_jobs_async_invoker(self, request):
-        http_info = self._list_ttsa_jobs_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_ttsa_jobs_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/ttsa-jobs",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListTtsaJobsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-        if 'x_app_user_id' in local_var_params:
-            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
-
-        form_params = {}
-
-        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -15493,6 +15503,201 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('resource_expire_start_time', local_var_params['resource_expire_start_time']))
         if 'resource_expire_end_time' in local_var_params:
             query_params.append(('resource_expire_end_time', local_var_params['resource_expire_end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_user_quotas_async(self, request):
+        r"""创建子账户配额
+
+        创建子账户（IAM用户）配额，需要先开启子账户隔离后才能配置。只有根账户可创建。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateUserQuotas
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateUserQuotasRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateUserQuotasResponse`
+        """
+        http_info = self._create_user_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_user_quotas_async_invoker(self, request):
+        http_info = self._create_user_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_user_quotas_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/user/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUserQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_tenant_user_configuration_async(self, request):
+        r"""删除租户个性化配置
+
+        删除租户个性化配置。由租户下用户操作设置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTenantUserConfiguration
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteTenantUserConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteTenantUserConfigurationResponse`
+        """
+        http_info = self._delete_tenant_user_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_tenant_user_configuration_async_invoker(self, request):
+        http_info = self._delete_tenant_user_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_tenant_user_configuration_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/tenants/user-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTenantUserConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_user_quotas_async(self, request):
+        r"""删除子账户配额
+
+        删除子账户（IAM用户）配额，需要先开启子账户隔离后才能配置。只有根账户可删除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteUserQuotas
+        :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteUserQuotasRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteUserQuotasResponse`
+        """
+        http_info = self._delete_user_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_user_quotas_async_invoker(self, request):
+        http_info = self._delete_user_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_user_quotas_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/user/quotas/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteUserQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -15609,6 +15814,205 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def list_user_quotas_async(self, request):
+        r"""查询子账户配额
+
+        查询子账户（IAM用户）配额。只有根账户可查询。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserQuotas
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ListUserQuotasRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ListUserQuotasResponse`
+        """
+        http_info = self._list_user_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_quotas_async_invoker(self, request):
+        http_info = self._list_user_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/user/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'user_id' in local_var_params:
+            query_params.append(('user_id', local_var_params['user_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_tenant_notice_configuration_async(self, request):
+        r"""设置租户个性化通知配置
+
+        设置租户个性化通知配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetTenantNoticeConfiguration
+        :type request: :class:`huaweicloudsdkmetastudio.v1.SetTenantNoticeConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SetTenantNoticeConfigurationResponse`
+        """
+        http_info = self._set_tenant_notice_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_tenant_notice_configuration_async_invoker(self, request):
+        http_info = self._set_tenant_notice_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_tenant_notice_configuration_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/tenants/notice-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetTenantNoticeConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_tenant_user_configuration_async(self, request):
+        r"""设置租户个性化配置
+
+        设置租户个性化配置。由租户下用户操作设置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetTenantUserConfiguration
+        :type request: :class:`huaweicloudsdkmetastudio.v1.SetTenantUserConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.SetTenantUserConfigurationResponse`
+        """
+        http_info = self._set_tenant_user_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_tenant_user_configuration_async_invoker(self, request):
+        http_info = self._set_tenant_user_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_tenant_user_configuration_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/tenants/user-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetTenantUserConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_resource_usage_async(self, request):
         r"""查看租户资源用量信息
 
@@ -15651,6 +16055,272 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('resource', local_var_params['resource']))
         if 'business' in local_var_params:
             query_params.append(('business', local_var_params['business']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tenant_assgin_record_async(self, request):
+        r"""查询租户下分配的资源详情
+
+        该接口用于普通租户查询租户下的资源详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTenantAssginRecord
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTenantAssginRecordRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTenantAssginRecordResponse`
+        """
+        http_info = self._show_tenant_assgin_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tenant_assgin_record_async_invoker(self, request):
+        http_info = self._show_tenant_assgin_record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tenant_assgin_record_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tenants/resource/assignrecourd",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTenantAssginRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tenant_notice_configuration_async(self, request):
+        r"""查询租户个性化通知配置
+
+        查询租户个性化通知配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTenantNoticeConfiguration
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTenantNoticeConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTenantNoticeConfigurationResponse`
+        """
+        http_info = self._show_tenant_notice_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tenant_notice_configuration_async_invoker(self, request):
+        http_info = self._show_tenant_notice_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tenant_notice_configuration_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tenants/notice-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTenantNoticeConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tenant_service_configs_async(self, request):
+        r"""查看租户服务业务配置
+
+        查看租户服务业务配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTenantServiceConfigs
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTenantServiceConfigsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTenantServiceConfigsResponse`
+        """
+        http_info = self._show_tenant_service_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tenant_service_configs_async_invoker(self, request):
+        http_info = self._show_tenant_service_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tenant_service_configs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tenants/service-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTenantServiceConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_tenant_user_configuration_async(self, request):
+        r"""查询租户个性化配置
+
+        查询租户个性化配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTenantUserConfiguration
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowTenantUserConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowTenantUserConfigurationResponse`
+        """
+        http_info = self._show_tenant_user_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_tenant_user_configuration_async_invoker(self, request):
+        http_info = self._show_tenant_user_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tenant_user_configuration_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tenants/user-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTenantUserConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -15775,6 +16445,138 @@ class MetaStudioAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_tenant_service_configs_async(self, request):
+        r"""设置租户服务配置
+
+        设置租户服务业务配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTenantServiceConfigs
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateTenantServiceConfigsRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateTenantServiceConfigsResponse`
+        """
+        http_info = self._update_tenant_service_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_tenant_service_configs_async_invoker(self, request):
+        http_info = self._update_tenant_service_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_tenant_service_configs_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/tenants/service-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTenantServiceConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_user_quotas_async(self, request):
+        r"""设置子账户配额
+
+        设置子账户（IAM用户）配额，需要先开启子账户隔离后才能配置。只有根账户可修改。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateUserQuotas
+        :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateUserQuotasRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateUserQuotasResponse`
+        """
+        http_info = self._update_user_quotas_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_user_quotas_async_invoker(self, request):
+        http_info = self._update_user_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_quotas_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/user/quotas/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserQuotasResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'user_id' in local_var_params:
+            path_params['user_id'] = local_var_params['user_id']
 
         query_params = []
 
@@ -16664,6 +17466,75 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def show_encrypt_file_async(self, request):
+        r"""下载加密文件
+
+        下载加密文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowEncryptFile
+        :type request: :class:`huaweicloudsdkmetastudio.v1.ShowEncryptFileRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowEncryptFileResponse`
+        """
+        http_info = self._show_encrypt_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_encrypt_file_async_invoker(self, request):
+        http_info = self._show_encrypt_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_encrypt_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/voice-training-manage/common/encrypt-file-download",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEncryptFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'once_token' in local_var_params:
+            query_params.append(('once_token', local_var_params['once_token']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_job_audit_result_async(self, request):
         r"""获取语音训练任务审核结果
 
@@ -17260,6 +18131,75 @@ class MetaStudioAsyncClient(Client):
 
         return http_info
 
+    def download2d_model_traning_encrypt_file_async(self, request):
+        r"""下载加密文件
+
+        下载加密文件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for Download2dModelTraningEncryptFile
+        :type request: :class:`huaweicloudsdkmetastudio.v1.Download2dModelTraningEncryptFileRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.Download2dModelTraningEncryptFileResponse`
+        """
+        http_info = self._download2d_model_traning_encrypt_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def download2d_model_traning_encrypt_file_async_invoker(self, request):
+        http_info = self._download2d_model_traning_encrypt_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download2d_model_traning_encrypt_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/digital-human-training-manage/user/encrypt-file-download",
+            "request_type": request.__class__.__name__,
+            "response_type": "Download2dModelTraningEncryptFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job_id', local_var_params['job_id']))
+        if 'once_token' in local_var_params:
+            query_params.append(('once_token', local_var_params['once_token']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def execute2d_model_training_command_by_user_async(self, request):
         r"""租户执行分身数字人模型训练任务命令
 
@@ -17369,6 +18309,8 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
         if 'sort_key' in local_var_params:
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
@@ -17377,10 +18319,12 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('create_until', local_var_params['create_until']))
         if 'create_since' in local_var_params:
             query_params.append(('create_since', local_var_params['create_since']))
-        if 'state' in local_var_params:
-            query_params.append(('state', local_var_params['state']))
         if 'query_project_id' in local_var_params:
             query_params.append(('query_project_id', local_var_params['query_project_id']))
+        if 'update_since' in local_var_params:
+            query_params.append(('update_since', local_var_params['update_since']))
+        if 'update_until' in local_var_params:
+            query_params.append(('update_until', local_var_params['update_until']))
         if 'batch_name' in local_var_params:
             query_params.append(('batch_name', local_var_params['batch_name']))
         if 'tag' in local_var_params:
@@ -17393,6 +18337,12 @@ class MetaStudioAsyncClient(Client):
             query_params.append(('model_resolution', local_var_params['model_resolution']))
         if 'is_flexus' in local_var_params:
             query_params.append(('is_flexus', local_var_params['is_flexus']))
+        if 'is_live_copy' in local_var_params:
+            query_params.append(('is_live_copy', local_var_params['is_live_copy']))
+        if 'train_location' in local_var_params:
+            query_params.append(('train_location', local_var_params['train_location']))
+        if 'is_ondemand_resource' in local_var_params:
+            query_params.append(('is_ondemand_resource', local_var_params['is_ondemand_resource']))
 
         header_params = {}
         if 'x_app_user_id' in local_var_params:
@@ -18027,6 +18977,73 @@ class MetaStudioAsyncClient(Client):
         path_params = {}
         if 'job_id' in local_var_params:
             path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'x_app_user_id' in local_var_params:
+            header_params['X-App-UserId'] = local_var_params['x_app_user_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_tts_once_code_async(self, request):
+        r"""外部接口-获取TTS一次性token
+
+        该接口用于获取TTS租户级一次性token。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTtsOnceCode
+        :type request: :class:`huaweicloudsdkmetastudio.v1.CreateTtsOnceCodeRequest`
+        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateTtsOnceCodeResponse`
+        """
+        http_info = self._create_tts_once_code_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_tts_once_code_async_invoker(self, request):
+        http_info = self._create_tts_once_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_tts_once_code_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ttsc/once-code",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTtsOnceCodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 

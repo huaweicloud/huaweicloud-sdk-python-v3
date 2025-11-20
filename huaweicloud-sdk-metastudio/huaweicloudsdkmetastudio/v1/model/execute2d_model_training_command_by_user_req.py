@@ -17,26 +17,30 @@ class Execute2dModelTrainingCommandByUserReq:
     openapi_types = {
         'command': 'str',
         'command_message': 'str',
-        'comment_data': 'CommentData'
+        'comment_data': 'CommentData',
+        'operation_reason': 'str'
     }
 
     attribute_map = {
         'command': 'command',
         'command_message': 'command_message',
-        'comment_data': 'comment_data'
+        'comment_data': 'comment_data',
+        'operation_reason': 'operation_reason'
     }
 
-    def __init__(self, command=None, command_message=None, comment_data=None):
+    def __init__(self, command=None, command_message=None, comment_data=None, operation_reason=None):
         r"""Execute2dModelTrainingCommandByUserReq
 
         The model defined in huaweicloud sdk
 
-        :param command: 命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取训练视频已上传分片信息 * CONFIRM_REPAIR:用户发起优化模型请求 * CONFIRM_MULTIPART_UPLOADED：确认训练视频所有分片文件已上传 * GET_ACTION_VIDEO_MULTIPART_UPLOADED：获取动作编排视频分片上传地址 * CONFIRM_ACTION_VIDEO_MULTIPART_UPLOADED：确认动作编排视频所有分片文件已上传 &gt; * CONFIRM_ACCEPT、CONFIRM_REJECT、CONFIRM_ANSWER、CONFIRM_PENDING、CONFIRM_ACTIVE命令仅NA白名单用户可用。
+        :param command: 命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取训练视频已上传分片信息 * CONFIRM_REPAIR:用户发起优化模型请求 * CONFIRM_MULTIPART_UPLOADED：确认训练视频所有分片文件已上传 * GET_ACTION_VIDEO_MULTIPART_UPLOADED：获取动作编排视频分片上传地址 * CONFIRM_ACTION_VIDEO_MULTIPART_UPLOADED：确认动作编排视频所有分片文件已上传 * CONFIRM_AUTHORIZATION_LETTER：确认授权书已上传 &gt; * CONFIRM_ACCEPT、CONFIRM_REJECT、CONFIRM_ANSWER、CONFIRM_PENDING、CONFIRM_ACTIVE命令仅NA白名单用户可用。 * DELETE_JOB_VIDEO：删除任务相关视频
         :type command: str
         :param command_message: 命令类型： * UPDATE_VIDEO: 更新视频 * UPLOAD_VIDEO: 上传视频 * CONFIRM_ACTION_VIDEO: 确认动作编排视频 * GET_ACTION_VIDEO_MULTIPART: 获取动作编排视频分片
         :type command_message: str
         :param comment_data: 
         :type comment_data: :class:`huaweicloudsdkmetastudio.v1.CommentData`
+        :param operation_reason: 操作原因
+        :type operation_reason: str
         """
         
         
@@ -44,6 +48,7 @@ class Execute2dModelTrainingCommandByUserReq:
         self._command = None
         self._command_message = None
         self._comment_data = None
+        self._operation_reason = None
         self.discriminator = None
 
         self.command = command
@@ -51,12 +56,14 @@ class Execute2dModelTrainingCommandByUserReq:
             self.command_message = command_message
         if comment_data is not None:
             self.comment_data = comment_data
+        if operation_reason is not None:
+            self.operation_reason = operation_reason
 
     @property
     def command(self):
         r"""Gets the command of this Execute2dModelTrainingCommandByUserReq.
 
-        命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取训练视频已上传分片信息 * CONFIRM_REPAIR:用户发起优化模型请求 * CONFIRM_MULTIPART_UPLOADED：确认训练视频所有分片文件已上传 * GET_ACTION_VIDEO_MULTIPART_UPLOADED：获取动作编排视频分片上传地址 * CONFIRM_ACTION_VIDEO_MULTIPART_UPLOADED：确认动作编排视频所有分片文件已上传 > * CONFIRM_ACCEPT、CONFIRM_REJECT、CONFIRM_ANSWER、CONFIRM_PENDING、CONFIRM_ACTIVE命令仅NA白名单用户可用。
+        命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取训练视频已上传分片信息 * CONFIRM_REPAIR:用户发起优化模型请求 * CONFIRM_MULTIPART_UPLOADED：确认训练视频所有分片文件已上传 * GET_ACTION_VIDEO_MULTIPART_UPLOADED：获取动作编排视频分片上传地址 * CONFIRM_ACTION_VIDEO_MULTIPART_UPLOADED：确认动作编排视频所有分片文件已上传 * CONFIRM_AUTHORIZATION_LETTER：确认授权书已上传 > * CONFIRM_ACCEPT、CONFIRM_REJECT、CONFIRM_ANSWER、CONFIRM_PENDING、CONFIRM_ACTIVE命令仅NA白名单用户可用。 * DELETE_JOB_VIDEO：删除任务相关视频
 
         :return: The command of this Execute2dModelTrainingCommandByUserReq.
         :rtype: str
@@ -67,7 +74,7 @@ class Execute2dModelTrainingCommandByUserReq:
     def command(self, command):
         r"""Sets the command of this Execute2dModelTrainingCommandByUserReq.
 
-        命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取训练视频已上传分片信息 * CONFIRM_REPAIR:用户发起优化模型请求 * CONFIRM_MULTIPART_UPLOADED：确认训练视频所有分片文件已上传 * GET_ACTION_VIDEO_MULTIPART_UPLOADED：获取动作编排视频分片上传地址 * CONFIRM_ACTION_VIDEO_MULTIPART_UPLOADED：确认动作编排视频所有分片文件已上传 > * CONFIRM_ACCEPT、CONFIRM_REJECT、CONFIRM_ANSWER、CONFIRM_PENDING、CONFIRM_ACTIVE命令仅NA白名单用户可用。
+        命令类型。 * SUBMITVERIFYING: 提交审核 * CONFIRM_ACCEPT：用户确认训练效果 * CONFIRM_REJECT：用户驳回训练效果 * CONFIRM_ANSWER：用户答复 * CONFIRM_PENDING：用户挂起任务 * CONFIRM_ACTIVE：用户激活任务 * GET_MULTIPART_UPLOADED：获取训练视频已上传分片信息 * CONFIRM_REPAIR:用户发起优化模型请求 * CONFIRM_MULTIPART_UPLOADED：确认训练视频所有分片文件已上传 * GET_ACTION_VIDEO_MULTIPART_UPLOADED：获取动作编排视频分片上传地址 * CONFIRM_ACTION_VIDEO_MULTIPART_UPLOADED：确认动作编排视频所有分片文件已上传 * CONFIRM_AUTHORIZATION_LETTER：确认授权书已上传 > * CONFIRM_ACCEPT、CONFIRM_REJECT、CONFIRM_ANSWER、CONFIRM_PENDING、CONFIRM_ACTIVE命令仅NA白名单用户可用。 * DELETE_JOB_VIDEO：删除任务相关视频
 
         :param command: The command of this Execute2dModelTrainingCommandByUserReq.
         :type command: str
@@ -113,6 +120,28 @@ class Execute2dModelTrainingCommandByUserReq:
         :type comment_data: :class:`huaweicloudsdkmetastudio.v1.CommentData`
         """
         self._comment_data = comment_data
+
+    @property
+    def operation_reason(self):
+        r"""Gets the operation_reason of this Execute2dModelTrainingCommandByUserReq.
+
+        操作原因
+
+        :return: The operation_reason of this Execute2dModelTrainingCommandByUserReq.
+        :rtype: str
+        """
+        return self._operation_reason
+
+    @operation_reason.setter
+    def operation_reason(self, operation_reason):
+        r"""Sets the operation_reason of this Execute2dModelTrainingCommandByUserReq.
+
+        操作原因
+
+        :param operation_reason: The operation_reason of this Execute2dModelTrainingCommandByUserReq.
+        :type operation_reason: str
+        """
+        self._operation_reason = operation_reason
 
     def to_dict(self):
         result = {}

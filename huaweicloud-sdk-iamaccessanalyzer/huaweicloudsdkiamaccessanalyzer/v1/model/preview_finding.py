@@ -55,7 +55,7 @@ class PreviewFinding:
 
         :param action: 允许外部主体使用的操作。
         :type action: list[str]
-        :param change_type: 结果状态的变化。
+        :param change_type: 结果状态的变化。 - unchanged：没有变化 - new：新增 - changed：有变化 
         :type change_type: str
         :param condition: 分析的策略语句中导致访问预览分析结果的条件。
         :type condition: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingCondition`]
@@ -63,7 +63,7 @@ class PreviewFinding:
         :type created_at: datetime
         :param existing_finding_id: 访问分析结果的唯一标识符。
         :type existing_finding_id: str
-        :param existing_finding_status: 访问分析结果当前状态。
+        :param existing_finding_status: 访问分析结果当前状态。 - active：活跃 - archived：已解决 - resolved：已存档 
         :type existing_finding_status: str
         :param id: 访问分析结果的唯一标识符。
         :type id: str
@@ -79,7 +79,7 @@ class PreviewFinding:
         :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
         :param sources: 访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
         :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
-        :param status: 变化后的状态。
+        :param status: 变化后的状态。 - active：活跃 - archived：已解决 - resolved：已存档 
         :type status: str
         """
         
@@ -145,7 +145,7 @@ class PreviewFinding:
     def change_type(self):
         r"""Gets the change_type of this PreviewFinding.
 
-        结果状态的变化。
+        结果状态的变化。 - unchanged：没有变化 - new：新增 - changed：有变化 
 
         :return: The change_type of this PreviewFinding.
         :rtype: str
@@ -156,7 +156,7 @@ class PreviewFinding:
     def change_type(self, change_type):
         r"""Sets the change_type of this PreviewFinding.
 
-        结果状态的变化。
+        结果状态的变化。 - unchanged：没有变化 - new：新增 - changed：有变化 
 
         :param change_type: The change_type of this PreviewFinding.
         :type change_type: str
@@ -233,7 +233,7 @@ class PreviewFinding:
     def existing_finding_status(self):
         r"""Gets the existing_finding_status of this PreviewFinding.
 
-        访问分析结果当前状态。
+        访问分析结果当前状态。 - active：活跃 - archived：已解决 - resolved：已存档 
 
         :return: The existing_finding_status of this PreviewFinding.
         :rtype: str
@@ -244,7 +244,7 @@ class PreviewFinding:
     def existing_finding_status(self, existing_finding_status):
         r"""Sets the existing_finding_status of this PreviewFinding.
 
-        访问分析结果当前状态。
+        访问分析结果当前状态。 - active：活跃 - archived：已解决 - resolved：已存档 
 
         :param existing_finding_status: The existing_finding_status of this PreviewFinding.
         :type existing_finding_status: str
@@ -401,7 +401,7 @@ class PreviewFinding:
     def status(self):
         r"""Gets the status of this PreviewFinding.
 
-        变化后的状态。
+        变化后的状态。 - active：活跃 - archived：已解决 - resolved：已存档 
 
         :return: The status of this PreviewFinding.
         :rtype: str
@@ -412,7 +412,7 @@ class PreviewFinding:
     def status(self, status):
         r"""Sets the status of this PreviewFinding.
 
-        变化后的状态。
+        变化后的状态。 - active：活跃 - archived：已解决 - resolved：已存档 
 
         :param status: The status of this PreviewFinding.
         :type status: str
