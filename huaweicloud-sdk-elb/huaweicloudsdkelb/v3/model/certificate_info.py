@@ -95,7 +95,7 @@ class CertificateInfo:
         :type enc_certificate: str
         :param enc_private_key: **参数解释**：服务器SM双证书的私钥。  **取值范围**：PEM编码格式，最大长度8192个字符。
         :type enc_private_key: str
-        :param scm_certificate_id: **参数解释**：云证书管理服务（CCM）中的证书ID。  **取值范围**：不涉及
+        :param scm_certificate_id: **参数解释**：云证书与管理服务（CCM）中的证书ID。  **取值范围**：不涉及
         :type scm_certificate_id: str
         :param common_name: **参数解释**：证书绑定的主域名。  **取值范围**：不涉及
         :type common_name: str
@@ -103,7 +103,7 @@ class CertificateInfo:
         :type fingerprint: str
         :param subject_alternative_names: **参数解释**：证书绑定的域名列表。  **取值范围**：不涉及
         :type subject_alternative_names: list[str]
-        :param source: **参数解释**：标记当前证书来源。  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。
+        :param source: **参数解释**：标记当前证书来源。  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。
         :type source: str
         :param protection_status: **参数解释**：修改保护状态。  **取值范围**：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护，即禁止通过控制台修改。
         :type protection_status: str
@@ -479,7 +479,7 @@ class CertificateInfo:
     def scm_certificate_id(self):
         r"""Gets the scm_certificate_id of this CertificateInfo.
 
-        **参数解释**：云证书管理服务（CCM）中的证书ID。  **取值范围**：不涉及
+        **参数解释**：云证书与管理服务（CCM）中的证书ID。  **取值范围**：不涉及
 
         :return: The scm_certificate_id of this CertificateInfo.
         :rtype: str
@@ -490,7 +490,7 @@ class CertificateInfo:
     def scm_certificate_id(self, scm_certificate_id):
         r"""Sets the scm_certificate_id of this CertificateInfo.
 
-        **参数解释**：云证书管理服务（CCM）中的证书ID。  **取值范围**：不涉及
+        **参数解释**：云证书与管理服务（CCM）中的证书ID。  **取值范围**：不涉及
 
         :param scm_certificate_id: The scm_certificate_id of this CertificateInfo.
         :type scm_certificate_id: str
@@ -567,7 +567,7 @@ class CertificateInfo:
     def source(self):
         r"""Gets the source of this CertificateInfo.
 
-        **参数解释**：标记当前证书来源。  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。
+        **参数解释**：标记当前证书来源。  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。
 
         :return: The source of this CertificateInfo.
         :rtype: str
@@ -578,7 +578,7 @@ class CertificateInfo:
     def source(self, source):
         r"""Sets the source of this CertificateInfo.
 
-        **参数解释**：标记当前证书来源。  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。
+        **参数解释**：标记当前证书来源。  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。
 
         :param source: The source of this CertificateInfo.
         :type source: str

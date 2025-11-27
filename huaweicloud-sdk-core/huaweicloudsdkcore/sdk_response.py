@@ -28,7 +28,7 @@ from requests.exceptions import ConnectionError
 from huaweicloudsdkcore.exceptions.exception_handler import process_connection_error
 
 
-class SdkResponse(object):
+class SdkResponse:
     def __init__(self):
         self._status_code = None
         self._raw_content = None

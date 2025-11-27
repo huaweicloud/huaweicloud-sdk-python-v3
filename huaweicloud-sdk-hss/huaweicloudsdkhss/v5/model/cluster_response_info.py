@@ -39,19 +39,19 @@ class ClusterResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_name: 集群名称
+        :param cluster_name: **参数解释**： 集群名称 **取值范围**： 不涉及 
         :type cluster_name: str
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID **取值范围**： 不涉及 
         :type cluster_id: str
-        :param cluster_version: 集群版本
+        :param cluster_version: **参数解释**： 集群版本 **取值范围**： 不涉及 
         :type cluster_version: str
-        :param protect_status: **参数解释**： 防护状态 **取值范围**: - unprotected：未保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 
+        :param protect_status: **参数解释**： 白名单规则类型 **取值范围**: - unprotected：未保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 
         :type protect_status: str
-        :param policy_num: 策略数量
+        :param policy_num: **参数解释**： 策略数量 **取值范围**： 不涉及 
         :type policy_num: int
         :param cluster_status: **参数解释**： 集群运行状态 **取值范围**: - Available：可用。 - Unavailable：不可用。 
         :type cluster_status: str
-        :param cluster_type: 集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws：亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
+        :param cluster_type: **参数解释**： 集群类型 **取值范围**: - k8s：原生集群。 - cce：CCE集群。 - ali：阿里云集群。 - tencent：腾讯云集群。 - azure：微软云集群。 - aws：亚马逊集群。 - self_built_hw：华为云自建集群。 - self_built_idc：IDC自建集群。 
         :type cluster_type: str
         """
         
@@ -85,7 +85,7 @@ class ClusterResponseInfo:
     def cluster_name(self):
         r"""Gets the cluster_name of this ClusterResponseInfo.
 
-        集群名称
+        **参数解释**： 集群名称 **取值范围**： 不涉及 
 
         :return: The cluster_name of this ClusterResponseInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class ClusterResponseInfo:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this ClusterResponseInfo.
 
-        集群名称
+        **参数解释**： 集群名称 **取值范围**： 不涉及 
 
         :param cluster_name: The cluster_name of this ClusterResponseInfo.
         :type cluster_name: str
@@ -107,7 +107,7 @@ class ClusterResponseInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this ClusterResponseInfo.
 
-        集群ID
+        **参数解释**： 集群ID **取值范围**： 不涉及 
 
         :return: The cluster_id of this ClusterResponseInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class ClusterResponseInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ClusterResponseInfo.
 
-        集群ID
+        **参数解释**： 集群ID **取值范围**： 不涉及 
 
         :param cluster_id: The cluster_id of this ClusterResponseInfo.
         :type cluster_id: str
@@ -129,7 +129,7 @@ class ClusterResponseInfo:
     def cluster_version(self):
         r"""Gets the cluster_version of this ClusterResponseInfo.
 
-        集群版本
+        **参数解释**： 集群版本 **取值范围**： 不涉及 
 
         :return: The cluster_version of this ClusterResponseInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class ClusterResponseInfo:
     def cluster_version(self, cluster_version):
         r"""Sets the cluster_version of this ClusterResponseInfo.
 
-        集群版本
+        **参数解释**： 集群版本 **取值范围**： 不涉及 
 
         :param cluster_version: The cluster_version of this ClusterResponseInfo.
         :type cluster_version: str
@@ -151,7 +151,7 @@ class ClusterResponseInfo:
     def protect_status(self):
         r"""Gets the protect_status of this ClusterResponseInfo.
 
-        **参数解释**： 防护状态 **取值范围**: - unprotected：未保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 
+        **参数解释**： 白名单规则类型 **取值范围**: - unprotected：未保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 
 
         :return: The protect_status of this ClusterResponseInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class ClusterResponseInfo:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ClusterResponseInfo.
 
-        **参数解释**： 防护状态 **取值范围**: - unprotected：未保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 
+        **参数解释**： 白名单规则类型 **取值范围**: - unprotected：未保护。 - plugin error：插件错误。 - protected with policy：受策略保护。 - deploy policy failed：部署策略失败。 - protected without policy：无策略保护。 - uninstall failed：卸载失败。 - uninstall：卸载。 
 
         :param protect_status: The protect_status of this ClusterResponseInfo.
         :type protect_status: str
@@ -173,7 +173,7 @@ class ClusterResponseInfo:
     def policy_num(self):
         r"""Gets the policy_num of this ClusterResponseInfo.
 
-        策略数量
+        **参数解释**： 策略数量 **取值范围**： 不涉及 
 
         :return: The policy_num of this ClusterResponseInfo.
         :rtype: int
@@ -184,7 +184,7 @@ class ClusterResponseInfo:
     def policy_num(self, policy_num):
         r"""Sets the policy_num of this ClusterResponseInfo.
 
-        策略数量
+        **参数解释**： 策略数量 **取值范围**： 不涉及 
 
         :param policy_num: The policy_num of this ClusterResponseInfo.
         :type policy_num: int
@@ -217,7 +217,7 @@ class ClusterResponseInfo:
     def cluster_type(self):
         r"""Gets the cluster_type of this ClusterResponseInfo.
 
-        集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws：亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
+        **参数解释**： 集群类型 **取值范围**: - k8s：原生集群。 - cce：CCE集群。 - ali：阿里云集群。 - tencent：腾讯云集群。 - azure：微软云集群。 - aws：亚马逊集群。 - self_built_hw：华为云自建集群。 - self_built_idc：IDC自建集群。 
 
         :return: The cluster_type of this ClusterResponseInfo.
         :rtype: str
@@ -228,7 +228,7 @@ class ClusterResponseInfo:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this ClusterResponseInfo.
 
-        集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws：亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
+        **参数解释**： 集群类型 **取值范围**: - k8s：原生集群。 - cce：CCE集群。 - ali：阿里云集群。 - tencent：腾讯云集群。 - azure：微软云集群。 - aws：亚马逊集群。 - self_built_hw：华为云自建集群。 - self_built_idc：IDC自建集群。 
 
         :param cluster_type: The cluster_type of this ClusterResponseInfo.
         :type cluster_type: str

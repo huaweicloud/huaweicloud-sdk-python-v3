@@ -469,6 +469,10 @@ class EswClient(Client):
             query_params.append(('id', local_var_params['id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -542,6 +546,10 @@ class EswClient(Client):
             query_params.append(('vpc_id', local_var_params['vpc_id']))
         if 'virsubnet_id' in local_var_params:
             query_params.append(('virsubnet_id', local_var_params['virsubnet_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -674,6 +682,10 @@ class EswClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -802,6 +814,10 @@ class EswClient(Client):
             path_params['resource_id'] = local_var_params['resource_id']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 

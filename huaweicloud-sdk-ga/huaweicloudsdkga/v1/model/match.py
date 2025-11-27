@@ -29,9 +29,9 @@ class Match:
 
         The model defined in huaweicloud sdk
 
-        :param key: 匹配的KEY。
+        :param key: 匹配资源实例的属性类型。 取值范围： resource_name：通过资源名称匹配
         :type key: str
-        :param value: 匹配的VALUE。
+        :param value: 匹配资源实例的属性值。
         :type value: str
         """
         
@@ -48,7 +48,7 @@ class Match:
     def key(self):
         r"""Gets the key of this Match.
 
-        匹配的KEY。
+        匹配资源实例的属性类型。 取值范围： resource_name：通过资源名称匹配
 
         :return: The key of this Match.
         :rtype: str
@@ -59,7 +59,7 @@ class Match:
     def key(self, key):
         r"""Sets the key of this Match.
 
-        匹配的KEY。
+        匹配资源实例的属性类型。 取值范围： resource_name：通过资源名称匹配
 
         :param key: The key of this Match.
         :type key: str
@@ -70,7 +70,7 @@ class Match:
     def value(self):
         r"""Gets the value of this Match.
 
-        匹配的VALUE。
+        匹配资源实例的属性值。
 
         :return: The value of this Match.
         :rtype: str
@@ -81,7 +81,7 @@ class Match:
     def value(self, value):
         r"""Sets the value of this Match.
 
-        匹配的VALUE。
+        匹配资源实例的属性值。
 
         :param value: The value of this Match.
         :type value: str

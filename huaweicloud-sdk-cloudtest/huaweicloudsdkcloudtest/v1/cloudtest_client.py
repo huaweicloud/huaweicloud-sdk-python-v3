@@ -646,6 +646,71 @@ class CloudtestClient(Client):
 
         return http_info
 
+    def batch_update_test_cases_in_diff_version(self, request):
+        r"""在不同分支或者迭代下批量修改用例
+
+        在不同分支或者迭代下批量修改用例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpdateTestCasesInDiffVersion
+        :type request: :class:`huaweicloudsdkcloudtest.v1.BatchUpdateTestCasesInDiffVersionRequest`
+        :rtype: :class:`huaweicloudsdkcloudtest.v1.BatchUpdateTestCasesInDiffVersionResponse`
+        """
+        http_info = self._batch_update_test_cases_in_diff_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_update_test_cases_in_diff_version_invoker(self, request):
+        http_info = self._batch_update_test_cases_in_diff_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_test_cases_in_diff_version_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/batch/update/testcases",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateTestCasesInDiffVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_update_version_test_cases(self, request):
         r"""批量更新用例属性
 

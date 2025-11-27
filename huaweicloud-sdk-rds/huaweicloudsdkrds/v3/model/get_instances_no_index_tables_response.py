@@ -16,20 +16,51 @@ class GetInstancesNoIndexTablesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'tables': 'list[Table]'
     }
 
     attribute_map = {
+        'tables': 'tables'
     }
 
-    def __init__(self):
+    def __init__(self, tables=None):
         r"""GetInstancesNoIndexTablesResponse
 
         The model defined in huaweicloud sdk
 
+        :param tables: 特殊表格列表。
+        :type tables: list[:class:`huaweicloudsdkrds.v3.Table`]
         """
         
         super().__init__()
+
+        self._tables = None
         self.discriminator = None
+
+        if tables is not None:
+            self.tables = tables
+
+    @property
+    def tables(self):
+        r"""Gets the tables of this GetInstancesNoIndexTablesResponse.
+
+        特殊表格列表。
+
+        :return: The tables of this GetInstancesNoIndexTablesResponse.
+        :rtype: list[:class:`huaweicloudsdkrds.v3.Table`]
+        """
+        return self._tables
+
+    @tables.setter
+    def tables(self, tables):
+        r"""Sets the tables of this GetInstancesNoIndexTablesResponse.
+
+        特殊表格列表。
+
+        :param tables: The tables of this GetInstancesNoIndexTablesResponse.
+        :type tables: list[:class:`huaweicloudsdkrds.v3.Table`]
+        """
+        self._tables = tables
 
     def to_dict(self):
         import warnings

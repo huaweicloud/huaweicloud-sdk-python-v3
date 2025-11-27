@@ -67,13 +67,13 @@ class ExportAntiVirusResultRequest:
         :type host_name: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
-        :param public_ip: 服务器公网IP
+        :param public_ip: **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
         :type public_ip: str
         :param handle_status: 处置状态，包含如下:   - unhandled：未处理   - handled：已处理
         :type handle_status: str
         :param severity_list: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
         :type severity_list: list[str]
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
         :type asset_value: str
         :param malware_name: 病毒名称
         :type malware_name: str
@@ -256,7 +256,7 @@ class ExportAntiVirusResultRequest:
     def public_ip(self):
         r"""Gets the public_ip of this ExportAntiVirusResultRequest.
 
-        服务器公网IP
+        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
 
         :return: The public_ip of this ExportAntiVirusResultRequest.
         :rtype: str
@@ -267,7 +267,7 @@ class ExportAntiVirusResultRequest:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ExportAntiVirusResultRequest.
 
-        服务器公网IP
+        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
 
         :param public_ip: The public_ip of this ExportAntiVirusResultRequest.
         :type public_ip: str
@@ -322,7 +322,7 @@ class ExportAntiVirusResultRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ExportAntiVirusResultRequest.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
 
         :return: The asset_value of this ExportAntiVirusResultRequest.
         :rtype: str
@@ -333,7 +333,7 @@ class ExportAntiVirusResultRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ExportAntiVirusResultRequest.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
 
         :param asset_value: The asset_value of this ExportAntiVirusResultRequest.
         :type asset_value: str

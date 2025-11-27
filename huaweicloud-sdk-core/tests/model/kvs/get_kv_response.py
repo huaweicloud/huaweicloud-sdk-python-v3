@@ -24,7 +24,7 @@ class GetKvResponse(SdkResponse):
             self.kv_doc = kv_doc
 
 
-class GetKvRequest(object):
+class GetKvRequest:
     openapi_types = {
         'table_name': 'test-table',
         'primary_key': 'dict',
@@ -40,7 +40,7 @@ class GetKvRequest(object):
         self.primary_key = primary_key
 
 
-class BsonBody(object):
+class BsonBody:
     openapi_types = {
         'doc_field': 'dict',
         'binary_field': 'bytes',

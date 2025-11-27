@@ -38,7 +38,7 @@ from huaweicloudsdkcore.exceptions.exception_handler import process_connection_e
 from huaweicloudsdkcore.http.future_session import FutureSession
 
 
-class HttpClient(object):
+class HttpClient:
     def __init__(self, config, http_handler, exception_handler, logger):
         self._logger = logger
         self._exception_handler = exception_handler

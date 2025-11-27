@@ -18,11 +18,13 @@ class ListNatGatewaySnatRulesRequest:
         'admin_state_up': 'bool',
         'cidr': 'str',
         'limit': 'int',
-        'floating_ip_address': 'list[str]',
-        'floating_ip_id': 'list[str]',
+        'floating_ip_address': 'str',
+        'global_eip_address': 'str',
+        'floating_ip_id': 'str',
+        'global_eip_id': 'str',
         'id': 'str',
         'description': 'str',
-        'created_at': 'str',
+        'created_at': 'datetime',
         'nat_gateway_id': 'list[str]',
         'network_id': 'str',
         'source_type': 'int',
@@ -35,7 +37,9 @@ class ListNatGatewaySnatRulesRequest:
         'cidr': 'cidr',
         'limit': 'limit',
         'floating_ip_address': 'floating_ip_address',
+        'global_eip_address': 'global_eip_address',
         'floating_ip_id': 'floating_ip_id',
+        'global_eip_id': 'global_eip_id',
         'id': 'id',
         'description': 'description',
         'created_at': 'created_at',
@@ -46,7 +50,7 @@ class ListNatGatewaySnatRulesRequest:
         'marker': 'marker'
     }
 
-    def __init__(self, admin_state_up=None, cidr=None, limit=None, floating_ip_address=None, floating_ip_id=None, id=None, description=None, created_at=None, nat_gateway_id=None, network_id=None, source_type=None, status=None, marker=None):
+    def __init__(self, admin_state_up=None, cidr=None, limit=None, floating_ip_address=None, global_eip_address=None, floating_ip_id=None, global_eip_id=None, id=None, description=None, created_at=None, nat_gateway_id=None, network_id=None, source_type=None, status=None, marker=None):
         r"""ListNatGatewaySnatRulesRequest
 
         The model defined in huaweicloud sdk
@@ -55,25 +59,29 @@ class ListNatGatewaySnatRulesRequest:
         :type admin_state_up: bool
         :param cidr: 可以是网段或者主机格式，与network_id参数二选一。 Source_type&#x3D;0时，cidr必须是vpc子网网段的子集(不能相等）; Source_type&#x3D;1时，cidr必须指定专线侧网段。
         :type cidr: str
-        :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        :param limit: 功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
         :type limit: int
-        :param floating_ip_address: 功能说明：弹性公网IP。
-        :type floating_ip_address: list[str]
-        :param floating_ip_id: 功能说明：弹性公网IP的id。
-        :type floating_ip_id: list[str]
+        :param floating_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        :type floating_ip_address: str
+        :param global_eip_address: 功能说明：全域弹性公网IP，多个全域弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+        :type global_eip_address: str
+        :param floating_ip_id: 功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
+        :type floating_ip_id: str
+        :param global_eip_id: 功能说明：全域弹性公网IP的id，多个全域弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
+        :type global_eip_id: str
         :param id: SNAT规则的ID。
         :type id: str
         :param description: SNAT规则的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
         :param created_at: SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
-        :type created_at: str
+        :type created_at: datetime
         :param nat_gateway_id: 公网NAT网关实例的ID。
         :type nat_gateway_id: list[str]
         :param network_id: 规则使用的网络id。与cidr参数二选一。
         :type network_id: str
         :param source_type: 0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
         :type source_type: int
-        :param status: SNAT规则的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;EIP_FREEZED\&quot;：EIP冻结 \&quot;INACTIVE\&quot;：不可用
+        :param status: SNAT规则的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 EIP_FREEZED: EIP冻结 INACTIVE: 不可用
         :type status: str
         :param marker: 分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
         :type marker: str
@@ -85,7 +93,9 @@ class ListNatGatewaySnatRulesRequest:
         self._cidr = None
         self._limit = None
         self._floating_ip_address = None
+        self._global_eip_address = None
         self._floating_ip_id = None
+        self._global_eip_id = None
         self._id = None
         self._description = None
         self._created_at = None
@@ -104,8 +114,12 @@ class ListNatGatewaySnatRulesRequest:
             self.limit = limit
         if floating_ip_address is not None:
             self.floating_ip_address = floating_ip_address
+        if global_eip_address is not None:
+            self.global_eip_address = global_eip_address
         if floating_ip_id is not None:
             self.floating_ip_id = floating_ip_id
+        if global_eip_id is not None:
+            self.global_eip_id = global_eip_id
         if id is not None:
             self.id = id
         if description is not None:
@@ -171,7 +185,7 @@ class ListNatGatewaySnatRulesRequest:
     def limit(self):
         r"""Gets the limit of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :return: The limit of this ListNatGatewaySnatRulesRequest.
         :rtype: int
@@ -182,7 +196,7 @@ class ListNatGatewaySnatRulesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :param limit: The limit of this ListNatGatewaySnatRulesRequest.
         :type limit: int
@@ -193,10 +207,10 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_address(self):
         r"""Gets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：弹性公网IP。
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
 
         :return: The floating_ip_address of this ListNatGatewaySnatRulesRequest.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._floating_ip_address
 
@@ -204,21 +218,43 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_address(self, floating_ip_address):
         r"""Sets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：弹性公网IP。
+        功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
 
         :param floating_ip_address: The floating_ip_address of this ListNatGatewaySnatRulesRequest.
-        :type floating_ip_address: list[str]
+        :type floating_ip_address: str
         """
         self._floating_ip_address = floating_ip_address
+
+    @property
+    def global_eip_address(self):
+        r"""Gets the global_eip_address of this ListNatGatewaySnatRulesRequest.
+
+        功能说明：全域弹性公网IP，多个全域弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+
+        :return: The global_eip_address of this ListNatGatewaySnatRulesRequest.
+        :rtype: str
+        """
+        return self._global_eip_address
+
+    @global_eip_address.setter
+    def global_eip_address(self, global_eip_address):
+        r"""Sets the global_eip_address of this ListNatGatewaySnatRulesRequest.
+
+        功能说明：全域弹性公网IP，多个全域弹性公网IP使用逗号分隔。 取值范围：最大长度1024字节。
+
+        :param global_eip_address: The global_eip_address of this ListNatGatewaySnatRulesRequest.
+        :type global_eip_address: str
+        """
+        self._global_eip_address = global_eip_address
 
     @property
     def floating_ip_id(self):
         r"""Gets the floating_ip_id of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：弹性公网IP的id。
+        功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
 
         :return: The floating_ip_id of this ListNatGatewaySnatRulesRequest.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._floating_ip_id
 
@@ -226,12 +262,34 @@ class ListNatGatewaySnatRulesRequest:
     def floating_ip_id(self, floating_ip_id):
         r"""Sets the floating_ip_id of this ListNatGatewaySnatRulesRequest.
 
-        功能说明：弹性公网IP的id。
+        功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
 
         :param floating_ip_id: The floating_ip_id of this ListNatGatewaySnatRulesRequest.
-        :type floating_ip_id: list[str]
+        :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
+
+    @property
+    def global_eip_id(self):
+        r"""Gets the global_eip_id of this ListNatGatewaySnatRulesRequest.
+
+        功能说明：全域弹性公网IP的id，多个全域弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
+
+        :return: The global_eip_id of this ListNatGatewaySnatRulesRequest.
+        :rtype: str
+        """
+        return self._global_eip_id
+
+    @global_eip_id.setter
+    def global_eip_id(self, global_eip_id):
+        r"""Sets the global_eip_id of this ListNatGatewaySnatRulesRequest.
+
+        功能说明：全域弹性公网IP的id，多个全域弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
+
+        :param global_eip_id: The global_eip_id of this ListNatGatewaySnatRulesRequest.
+        :type global_eip_id: str
+        """
+        self._global_eip_id = global_eip_id
 
     @property
     def id(self):
@@ -284,7 +342,7 @@ class ListNatGatewaySnatRulesRequest:
         SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :return: The created_at of this ListNatGatewaySnatRulesRequest.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -295,7 +353,7 @@ class ListNatGatewaySnatRulesRequest:
         SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :param created_at: The created_at of this ListNatGatewaySnatRulesRequest.
-        :type created_at: str
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -369,7 +427,7 @@ class ListNatGatewaySnatRulesRequest:
     def status(self):
         r"""Gets the status of this ListNatGatewaySnatRulesRequest.
 
-        SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
+        SNAT规则的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 EIP_FREEZED: EIP冻结 INACTIVE: 不可用
 
         :return: The status of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -380,7 +438,7 @@ class ListNatGatewaySnatRulesRequest:
     def status(self, status):
         r"""Sets the status of this ListNatGatewaySnatRulesRequest.
 
-        SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
+        SNAT规则的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 EIP_FREEZED: EIP冻结 INACTIVE: 不可用
 
         :param status: The status of this ListNatGatewaySnatRulesRequest.
         :type status: str

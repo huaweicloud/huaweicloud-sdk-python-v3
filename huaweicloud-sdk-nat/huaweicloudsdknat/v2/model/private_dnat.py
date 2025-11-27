@@ -19,6 +19,7 @@ class PrivateDnat:
         'project_id': 'str',
         'description': 'str',
         'transit_ip_id': 'str',
+        'transit_ip_address': 'str',
         'gateway_id': 'str',
         'network_interface_id': 'str',
         'type': 'str',
@@ -28,7 +29,8 @@ class PrivateDnat:
         'transit_service_port': 'str',
         'enterprise_project_id': 'str',
         'created_at': 'datetime',
-        'updated_at': 'datetime'
+        'updated_at': 'datetime',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -36,6 +38,7 @@ class PrivateDnat:
         'project_id': 'project_id',
         'description': 'description',
         'transit_ip_id': 'transit_ip_id',
+        'transit_ip_address': 'transit_ip_address',
         'gateway_id': 'gateway_id',
         'network_interface_id': 'network_interface_id',
         'type': 'type',
@@ -45,10 +48,11 @@ class PrivateDnat:
         'transit_service_port': 'transit_service_port',
         'enterprise_project_id': 'enterprise_project_id',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'status': 'status'
     }
 
-    def __init__(self, id=None, project_id=None, description=None, transit_ip_id=None, gateway_id=None, network_interface_id=None, type=None, protocol=None, private_ip_address=None, internal_service_port=None, transit_service_port=None, enterprise_project_id=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, project_id=None, description=None, transit_ip_id=None, transit_ip_address=None, gateway_id=None, network_interface_id=None, type=None, protocol=None, private_ip_address=None, internal_service_port=None, transit_service_port=None, enterprise_project_id=None, created_at=None, updated_at=None, status=None):
         r"""PrivateDnat
 
         The model defined in huaweicloud sdk
@@ -61,17 +65,19 @@ class PrivateDnat:
         :type description: str
         :param transit_ip_id: 中转IP的ID。
         :type transit_ip_id: str
+        :param transit_ip_address: 中转IP的地址。
+        :type transit_ip_address: str
         :param gateway_id: 私网NAT网关实例的ID。
         :type gateway_id: str
-        :param network_interface_id: 网络接口ID，支持计算、ELB、VIP等实例的端口。
+        :param network_interface_id: 网络接口ID，支持计算、ELBV2、ELBV3、VIP等实例的端口。
         :type network_interface_id: str
-        :param type: DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELB的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
+        :param type: DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELBv2的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
         :type type: str
         :param protocol: 协议类型。 目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
         :type protocol: str
-        :param private_ip_address: 后端实例的私网IP地址。
+        :param private_ip_address: 后端资源（计算实例、ELBV2、ELBV3、VIP等）的私网IP地址。
         :type private_ip_address: str
-        :param internal_service_port: 后端实例的端口号。
+        :param internal_service_port: 后端实例的端口号（计算实例、ELBV2、ELBV3、VIP等)。
         :type internal_service_port: str
         :param transit_service_port: 中转IP的端口号。
         :type transit_service_port: str
@@ -81,6 +87,8 @@ class PrivateDnat:
         :type created_at: datetime
         :param updated_at: DNAT规则的更新时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
         :type updated_at: datetime
+        :param status: 私网NAT的DNAT规则状态。 取值为： \&quot;ACTIVE\&quot;：正常运行 \&quot;FROZEN\&quot;：冻结 \&quot;INACTIVE\&quot;：不可用
+        :type status: str
         """
         
         
@@ -89,6 +97,7 @@ class PrivateDnat:
         self._project_id = None
         self._description = None
         self._transit_ip_id = None
+        self._transit_ip_address = None
         self._gateway_id = None
         self._network_interface_id = None
         self._type = None
@@ -99,6 +108,7 @@ class PrivateDnat:
         self._enterprise_project_id = None
         self._created_at = None
         self._updated_at = None
+        self._status = None
         self.discriminator = None
 
         if id is not None:
@@ -109,6 +119,8 @@ class PrivateDnat:
             self.description = description
         if transit_ip_id is not None:
             self.transit_ip_id = transit_ip_id
+        if transit_ip_address is not None:
+            self.transit_ip_address = transit_ip_address
         if gateway_id is not None:
             self.gateway_id = gateway_id
         if network_interface_id is not None:
@@ -129,6 +141,8 @@ class PrivateDnat:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if status is not None:
+            self.status = status
 
     @property
     def id(self):
@@ -219,6 +233,28 @@ class PrivateDnat:
         self._transit_ip_id = transit_ip_id
 
     @property
+    def transit_ip_address(self):
+        r"""Gets the transit_ip_address of this PrivateDnat.
+
+        中转IP的地址。
+
+        :return: The transit_ip_address of this PrivateDnat.
+        :rtype: str
+        """
+        return self._transit_ip_address
+
+    @transit_ip_address.setter
+    def transit_ip_address(self, transit_ip_address):
+        r"""Sets the transit_ip_address of this PrivateDnat.
+
+        中转IP的地址。
+
+        :param transit_ip_address: The transit_ip_address of this PrivateDnat.
+        :type transit_ip_address: str
+        """
+        self._transit_ip_address = transit_ip_address
+
+    @property
     def gateway_id(self):
         r"""Gets the gateway_id of this PrivateDnat.
 
@@ -244,7 +280,7 @@ class PrivateDnat:
     def network_interface_id(self):
         r"""Gets the network_interface_id of this PrivateDnat.
 
-        网络接口ID，支持计算、ELB、VIP等实例的端口。
+        网络接口ID，支持计算、ELBV2、ELBV3、VIP等实例的端口。
 
         :return: The network_interface_id of this PrivateDnat.
         :rtype: str
@@ -255,7 +291,7 @@ class PrivateDnat:
     def network_interface_id(self, network_interface_id):
         r"""Sets the network_interface_id of this PrivateDnat.
 
-        网络接口ID，支持计算、ELB、VIP等实例的端口。
+        网络接口ID，支持计算、ELBV2、ELBV3、VIP等实例的端口。
 
         :param network_interface_id: The network_interface_id of this PrivateDnat.
         :type network_interface_id: str
@@ -266,7 +302,7 @@ class PrivateDnat:
     def type(self):
         r"""Gets the type of this PrivateDnat.
 
-        DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELB的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
+        DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELBv2的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
 
         :return: The type of this PrivateDnat.
         :rtype: str
@@ -277,7 +313,7 @@ class PrivateDnat:
     def type(self, type):
         r"""Sets the type of this PrivateDnat.
 
-        DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELB的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
+        DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELBv2的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
 
         :param type: The type of this PrivateDnat.
         :type type: str
@@ -310,7 +346,7 @@ class PrivateDnat:
     def private_ip_address(self):
         r"""Gets the private_ip_address of this PrivateDnat.
 
-        后端实例的私网IP地址。
+        后端资源（计算实例、ELBV2、ELBV3、VIP等）的私网IP地址。
 
         :return: The private_ip_address of this PrivateDnat.
         :rtype: str
@@ -321,7 +357,7 @@ class PrivateDnat:
     def private_ip_address(self, private_ip_address):
         r"""Sets the private_ip_address of this PrivateDnat.
 
-        后端实例的私网IP地址。
+        后端资源（计算实例、ELBV2、ELBV3、VIP等）的私网IP地址。
 
         :param private_ip_address: The private_ip_address of this PrivateDnat.
         :type private_ip_address: str
@@ -332,7 +368,7 @@ class PrivateDnat:
     def internal_service_port(self):
         r"""Gets the internal_service_port of this PrivateDnat.
 
-        后端实例的端口号。
+        后端实例的端口号（计算实例、ELBV2、ELBV3、VIP等)。
 
         :return: The internal_service_port of this PrivateDnat.
         :rtype: str
@@ -343,7 +379,7 @@ class PrivateDnat:
     def internal_service_port(self, internal_service_port):
         r"""Sets the internal_service_port of this PrivateDnat.
 
-        后端实例的端口号。
+        后端实例的端口号（计算实例、ELBV2、ELBV3、VIP等)。
 
         :param internal_service_port: The internal_service_port of this PrivateDnat.
         :type internal_service_port: str
@@ -437,6 +473,28 @@ class PrivateDnat:
         :type updated_at: datetime
         """
         self._updated_at = updated_at
+
+    @property
+    def status(self):
+        r"""Gets the status of this PrivateDnat.
+
+        私网NAT的DNAT规则状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
+
+        :return: The status of this PrivateDnat.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this PrivateDnat.
+
+        私网NAT的DNAT规则状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
+
+        :param status: The status of this PrivateDnat.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         result = {}

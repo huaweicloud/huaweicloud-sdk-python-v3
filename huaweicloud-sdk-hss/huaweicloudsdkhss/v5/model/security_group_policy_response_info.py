@@ -59,7 +59,7 @@ class SecurityGroupPolicyResponseInfo:
         :type workload_id: str
         :param workload_name: 工作负载名称
         :type workload_name: str
-        :param workload_type: 工作负载类型
+        :param workload_type: **参数解释**: 工作负载类型 **取值范围**: - deployments：无状态负载 - statefulsets：有状态负载 - daemonsets：守护进程表 
         :type workload_type: str
         :param namespace_id: 命名空间id
         :type namespace_id: str
@@ -235,7 +235,7 @@ class SecurityGroupPolicyResponseInfo:
     def workload_type(self):
         r"""Gets the workload_type of this SecurityGroupPolicyResponseInfo.
 
-        工作负载类型
+        **参数解释**: 工作负载类型 **取值范围**: - deployments：无状态负载 - statefulsets：有状态负载 - daemonsets：守护进程表 
 
         :return: The workload_type of this SecurityGroupPolicyResponseInfo.
         :rtype: str
@@ -246,7 +246,7 @@ class SecurityGroupPolicyResponseInfo:
     def workload_type(self, workload_type):
         r"""Sets the workload_type of this SecurityGroupPolicyResponseInfo.
 
-        工作负载类型
+        **参数解释**: 工作负载类型 **取值范围**: - deployments：无状态负载 - statefulsets：有状态负载 - daemonsets：守护进程表 
 
         :param workload_type: The workload_type of this SecurityGroupPolicyResponseInfo.
         :type workload_type: str

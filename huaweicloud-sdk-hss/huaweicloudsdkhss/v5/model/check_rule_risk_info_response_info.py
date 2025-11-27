@@ -26,6 +26,7 @@ class CheckRuleRiskInfoResponseInfo:
         'status': 'str',
         'enable_fix': 'int',
         'enable_click': 'bool',
+        'not_enable_click_description': 'str',
         'rule_params': 'list[CheckRuleFixParamInfo]'
     }
 
@@ -41,10 +42,11 @@ class CheckRuleRiskInfoResponseInfo:
         'status': 'status',
         'enable_fix': 'enable_fix',
         'enable_click': 'enable_click',
+        'not_enable_click_description': 'not_enable_click_description',
         'rule_params': 'rule_params'
     }
 
-    def __init__(self, severity=None, check_name=None, check_type=None, standard=None, check_rule_name=None, check_rule_id=None, host_num=None, scan_result=None, status=None, enable_fix=None, enable_click=None, rule_params=None):
+    def __init__(self, severity=None, check_name=None, check_type=None, standard=None, check_rule_name=None, check_rule_id=None, host_num=None, scan_result=None, status=None, enable_fix=None, enable_click=None, not_enable_click_description=None, rule_params=None):
         r"""CheckRuleRiskInfoResponseInfo
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class CheckRuleRiskInfoResponseInfo:
         :type enable_fix: int
         :param enable_click: **参数解释**: 该检查项的修复&amp;忽略&amp;验证按钮是否可单击 **取值范围**: - true：按钮可单击 - false：按钮不可单击 
         :type enable_click: bool
+        :param not_enable_click_description: **参数解释** 不可点击的原因 **取值范围**  字符长度0-512位
+        :type not_enable_click_description: str
         :param rule_params: **参数解释**: 支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据 **取值范围**: 不涉及 
         :type rule_params: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
         """
@@ -88,6 +92,7 @@ class CheckRuleRiskInfoResponseInfo:
         self._status = None
         self._enable_fix = None
         self._enable_click = None
+        self._not_enable_click_description = None
         self._rule_params = None
         self.discriminator = None
 
@@ -113,6 +118,8 @@ class CheckRuleRiskInfoResponseInfo:
             self.enable_fix = enable_fix
         if enable_click is not None:
             self.enable_click = enable_click
+        if not_enable_click_description is not None:
+            self.not_enable_click_description = not_enable_click_description
         if rule_params is not None:
             self.rule_params = rule_params
 
@@ -357,6 +364,28 @@ class CheckRuleRiskInfoResponseInfo:
         :type enable_click: bool
         """
         self._enable_click = enable_click
+
+    @property
+    def not_enable_click_description(self):
+        r"""Gets the not_enable_click_description of this CheckRuleRiskInfoResponseInfo.
+
+        **参数解释** 不可点击的原因 **取值范围**  字符长度0-512位
+
+        :return: The not_enable_click_description of this CheckRuleRiskInfoResponseInfo.
+        :rtype: str
+        """
+        return self._not_enable_click_description
+
+    @not_enable_click_description.setter
+    def not_enable_click_description(self, not_enable_click_description):
+        r"""Sets the not_enable_click_description of this CheckRuleRiskInfoResponseInfo.
+
+        **参数解释** 不可点击的原因 **取值范围**  字符长度0-512位
+
+        :param not_enable_click_description: The not_enable_click_description of this CheckRuleRiskInfoResponseInfo.
+        :type not_enable_click_description: str
+        """
+        self._not_enable_click_description = not_enable_click_description
 
     @property
     def rule_params(self):

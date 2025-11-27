@@ -127,7 +127,7 @@ class CreateListenerOption:
         :type tls_ciphers_policy: str
         :param security_policy_id: **参数解释**：自定义安全策略的ID。  [**约束限制**： - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。 - QUIC监听器不支持该字段。 - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。 - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（既支持ecc又支持rsa）](tag:hws,hws_hk,hws_eu,g42,hk_g42,ocb,tlf,ctc,hcso,ct,sbc,tm,cmcc,dt)  [**约束限制**： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)  **取值范围**：不涉及  **默认取值**：不涉及  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)  [不支持QUIC。](tag:tm,dt)
         :type security_policy_id: str
-        :param enable_member_retry: **参数解释**：是否开启后端服务器的重试。  [**约束限制**： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  **取值范围**：true 开启重试，false 不开启重试。默认：true。  **默认取值**：不涉及  [不支持QUIC。](tag:tm,dt)
+        :param enable_member_retry: **参数解释**：是否开启后端服务器的重试。  [**约束限制**： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  **取值范围**：true 开启重试，false 不开启重试。  **默认取值**：true  [不支持QUIC。](tag:tm,dt)
         :type enable_member_retry: bool
         :param keepalive_timeout: **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s，默认值为300s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。  **默认取值**：不涉及
         :type keepalive_timeout: int
@@ -642,7 +642,7 @@ class CreateListenerOption:
     def enable_member_retry(self):
         r"""Gets the enable_member_retry of this CreateListenerOption.
 
-        **参数解释**：是否开启后端服务器的重试。  [**约束限制**： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  **取值范围**：true 开启重试，false 不开启重试。默认：true。  **默认取值**：不涉及  [不支持QUIC。](tag:tm,dt)
+        **参数解释**：是否开启后端服务器的重试。  [**约束限制**： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  **取值范围**：true 开启重试，false 不开启重试。  **默认取值**：true  [不支持QUIC。](tag:tm,dt)
 
         :return: The enable_member_retry of this CreateListenerOption.
         :rtype: bool
@@ -653,7 +653,7 @@ class CreateListenerOption:
     def enable_member_retry(self, enable_member_retry):
         r"""Sets the enable_member_retry of this CreateListenerOption.
 
-        **参数解释**：是否开启后端服务器的重试。  [**约束限制**： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  **取值范围**：true 开启重试，false 不开启重试。默认：true。  **默认取值**：不涉及  [不支持QUIC。](tag:tm,dt)
+        **参数解释**：是否开启后端服务器的重试。  [**约束限制**： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  **取值范围**：true 开启重试，false 不开启重试。  **默认取值**：true  [不支持QUIC。](tag:tm,dt)
 
         :param enable_member_retry: The enable_member_retry of this CreateListenerOption.
         :type enable_member_retry: bool

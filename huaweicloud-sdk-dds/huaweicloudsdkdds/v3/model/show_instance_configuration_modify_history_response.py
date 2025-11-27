@@ -16,29 +16,36 @@ class ShowInstanceConfigurationModifyHistoryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'histories': 'list[ConfigurationModifyHistoryInfo]'
+        'histories': 'list[ConfigurationModifyHistoryInfo]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'histories': 'histories'
+        'histories': 'histories',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, histories=None):
+    def __init__(self, histories=None, total_count=None):
         r"""ShowInstanceConfigurationModifyHistoryResponse
 
         The model defined in huaweicloud sdk
 
         :param histories: 实例参数的修改历史列表。
         :type histories: list[:class:`huaweicloudsdkdds.v3.ConfigurationModifyHistoryInfo`]
+        :param total_count: 总数。
+        :type total_count: int
         """
         
         super().__init__()
 
         self._histories = None
+        self._total_count = None
         self.discriminator = None
 
         if histories is not None:
             self.histories = histories
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
     def histories(self):
@@ -61,6 +68,28 @@ class ShowInstanceConfigurationModifyHistoryResponse(SdkResponse):
         :type histories: list[:class:`huaweicloudsdkdds.v3.ConfigurationModifyHistoryInfo`]
         """
         self._histories = histories
+
+    @property
+    def total_count(self):
+        r"""Gets the total_count of this ShowInstanceConfigurationModifyHistoryResponse.
+
+        总数。
+
+        :return: The total_count of this ShowInstanceConfigurationModifyHistoryResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ShowInstanceConfigurationModifyHistoryResponse.
+
+        总数。
+
+        :param total_count: The total_count of this ShowInstanceConfigurationModifyHistoryResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         import warnings

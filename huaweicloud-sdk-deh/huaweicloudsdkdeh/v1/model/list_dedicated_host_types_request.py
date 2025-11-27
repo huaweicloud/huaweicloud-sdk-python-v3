@@ -15,28 +15,42 @@ class ListDedicatedHostTypesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'availability_zone': 'str'
+        'availability_zone': 'str',
+        'limit': 'str',
+        'marker': 'str'
     }
 
     attribute_map = {
-        'availability_zone': 'availability_zone'
+        'availability_zone': 'availability_zone',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, availability_zone=None):
+    def __init__(self, availability_zone=None, limit=None, marker=None):
         r"""ListDedicatedHostTypesRequest
 
         The model defined in huaweicloud sdk
 
         :param availability_zone: AZ。
         :type availability_zone: str
+        :param limit: 查询返回云服务器列表当前页面的数量。
+        :type limit: str
+        :param marker: 以单页最后一条专属主机的host_type作为分页标记
+        :type marker: str
         """
         
         
 
         self._availability_zone = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         self.availability_zone = availability_zone
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def availability_zone(self):
@@ -59,6 +73,50 @@ class ListDedicatedHostTypesRequest:
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListDedicatedHostTypesRequest.
+
+        查询返回云服务器列表当前页面的数量。
+
+        :return: The limit of this ListDedicatedHostTypesRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListDedicatedHostTypesRequest.
+
+        查询返回云服务器列表当前页面的数量。
+
+        :param limit: The limit of this ListDedicatedHostTypesRequest.
+        :type limit: str
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListDedicatedHostTypesRequest.
+
+        以单页最后一条专属主机的host_type作为分页标记
+
+        :return: The marker of this ListDedicatedHostTypesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListDedicatedHostTypesRequest.
+
+        以单页最后一条专属主机的host_type作为分页标记
+
+        :param marker: The marker of this ListDedicatedHostTypesRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         result = {}

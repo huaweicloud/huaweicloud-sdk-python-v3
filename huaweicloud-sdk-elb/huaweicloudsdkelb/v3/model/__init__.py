@@ -134,6 +134,7 @@ from huaweicloudsdkelb.v3.model.create_security_policy_request_body import Creat
 from huaweicloudsdkelb.v3.model.create_security_policy_response import CreateSecurityPolicyResponse
 from huaweicloudsdkelb.v3.model.create_traffic_limit_config import CreateTrafficLimitConfig
 from huaweicloudsdkelb.v3.model.create_traffic_mirror_config import CreateTrafficMirrorConfig
+from huaweicloudsdkelb.v3.model.custom_qos_limit import CustomQosLimit
 from huaweicloudsdkelb.v3.model.delete_certificate_request import DeleteCertificateRequest
 from huaweicloudsdkelb.v3.model.delete_certificate_response import DeleteCertificateResponse
 from huaweicloudsdkelb.v3.model.delete_health_monitor_request import DeleteHealthMonitorRequest
@@ -184,6 +185,8 @@ from huaweicloudsdkelb.v3.model.ip_group import IpGroup
 from huaweicloudsdkelb.v3.model.ip_group_ip import IpGroupIp
 from huaweicloudsdkelb.v3.model.ip_info import IpInfo
 from huaweicloudsdkelb.v3.model.job_entities import JobEntities
+from huaweicloudsdkelb.v3.model.l4_limit import L4Limit
+from huaweicloudsdkelb.v3.model.l7_limit import L7Limit
 from huaweicloudsdkelb.v3.model.l7_policy import L7Policy
 from huaweicloudsdkelb.v3.model.l7_rule import L7Rule
 from huaweicloudsdkelb.v3.model.list_all_members_request import ListAllMembersRequest

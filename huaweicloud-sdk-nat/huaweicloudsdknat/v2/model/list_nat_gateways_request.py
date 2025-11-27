@@ -15,10 +15,11 @@ class ListNatGatewaysRequest:
     sensitive_list = []
 
     openapi_types = {
+        'tenant_id': 'str',
         'id': 'str',
         'enterprise_project_id': 'str',
         'description': 'str',
-        'created_at': 'str',
+        'created_at': 'datetime',
         'name': 'str',
         'status': 'list[str]',
         'spec': 'list[str]',
@@ -26,10 +27,13 @@ class ListNatGatewaysRequest:
         'internal_network_id': 'str',
         'router_id': 'str',
         'limit': 'int',
-        'marker': 'str'
+        'marker': 'str',
+        'sort_key': 'str',
+        'sort_dir': 'str'
     }
 
     attribute_map = {
+        'tenant_id': 'tenant_id',
         'id': 'id',
         'enterprise_project_id': 'enterprise_project_id',
         'description': 'description',
@@ -41,27 +45,31 @@ class ListNatGatewaysRequest:
         'internal_network_id': 'internal_network_id',
         'router_id': 'router_id',
         'limit': 'limit',
-        'marker': 'marker'
+        'marker': 'marker',
+        'sort_key': 'sort_key',
+        'sort_dir': 'sort_dir'
     }
 
-    def __init__(self, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, admin_state_up=None, internal_network_id=None, router_id=None, limit=None, marker=None):
+    def __init__(self, tenant_id=None, id=None, enterprise_project_id=None, description=None, created_at=None, name=None, status=None, spec=None, admin_state_up=None, internal_network_id=None, router_id=None, limit=None, marker=None, sort_key=None, sort_dir=None):
         r"""ListNatGatewaysRequest
 
         The model defined in huaweicloud sdk
 
+        :param tenant_id: 项目的ID。
+        :type tenant_id: str
         :param id: 公网NAT网关实例的ID。
         :type id: str
         :param enterprise_project_id: 企业项目ID。创建公网NAT网关实例时，关联的企业项目ID。
         :type enterprise_project_id: str
         :param description: 公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param created_at: 公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
-        :type created_at: str
+        :param created_at: 公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        :type created_at: datetime
         :param name: 公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
         :type name: str
-        :param status: 公网NAT网关实例的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;INACTIVE\&quot;：不可用
+        :param status: 公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
         :type status: list[str]
-        :param spec: 公网NAT网关实例的规格。 取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000 \&quot;2\&quot;：中型，SNAT最大连接数50000 \&quot;3\&quot;：大型，SNAT最大连接数200000 \&quot;4\&quot;：超大型，SNAT最大连接数1000000 
+        :param spec: 公网NAT网关实例的规格。 取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000 \&quot;2\&quot;：中型，SNAT最大连接数50000 \&quot;3\&quot;：大型，SNAT最大连接数200000 \&quot;4\&quot;：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
         :type spec: list[str]
         :param admin_state_up: 解冻/冻结状态。 取值范围： \&quot;true\&quot;：解冻 \&quot;false\&quot;：冻结
         :type admin_state_up: bool
@@ -69,14 +77,19 @@ class ListNatGatewaysRequest:
         :type internal_network_id: str
         :param router_id: VPC的id。
         :type router_id: str
-        :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        :param limit: 功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
         :type limit: int
         :param marker: 分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
         :type marker: str
+        :param sort_key: 排序使用的key
+        :type sort_key: str
+        :param sort_dir: 返回结果按照升序或降序排列，默认降序desc，升序为asc
+        :type sort_dir: str
         """
         
         
 
+        self._tenant_id = None
         self._id = None
         self._enterprise_project_id = None
         self._description = None
@@ -89,8 +102,12 @@ class ListNatGatewaysRequest:
         self._router_id = None
         self._limit = None
         self._marker = None
+        self._sort_key = None
+        self._sort_dir = None
         self.discriminator = None
 
+        if tenant_id is not None:
+            self.tenant_id = tenant_id
         if id is not None:
             self.id = id
         if enterprise_project_id is not None:
@@ -115,6 +132,32 @@ class ListNatGatewaysRequest:
             self.limit = limit
         if marker is not None:
             self.marker = marker
+        if sort_key is not None:
+            self.sort_key = sort_key
+        if sort_dir is not None:
+            self.sort_dir = sort_dir
+
+    @property
+    def tenant_id(self):
+        r"""Gets the tenant_id of this ListNatGatewaysRequest.
+
+        项目的ID。
+
+        :return: The tenant_id of this ListNatGatewaysRequest.
+        :rtype: str
+        """
+        return self._tenant_id
+
+    @tenant_id.setter
+    def tenant_id(self, tenant_id):
+        r"""Sets the tenant_id of this ListNatGatewaysRequest.
+
+        项目的ID。
+
+        :param tenant_id: The tenant_id of this ListNatGatewaysRequest.
+        :type tenant_id: str
+        """
+        self._tenant_id = tenant_id
 
     @property
     def id(self):
@@ -186,10 +229,10 @@ class ListNatGatewaysRequest:
     def created_at(self):
         r"""Gets the created_at of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
+        公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :return: The created_at of this ListNatGatewaysRequest.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -197,10 +240,10 @@ class ListNatGatewaysRequest:
     def created_at(self, created_at):
         r"""Sets the created_at of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
+        公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :param created_at: The created_at of this ListNatGatewaysRequest.
-        :type created_at: str
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -230,7 +273,7 @@ class ListNatGatewaysRequest:
     def status(self):
         r"""Gets the status of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
+        公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
 
         :return: The status of this ListNatGatewaysRequest.
         :rtype: list[str]
@@ -241,7 +284,7 @@ class ListNatGatewaysRequest:
     def status(self, status):
         r"""Sets the status of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
+        公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
 
         :param status: The status of this ListNatGatewaysRequest.
         :type status: list[str]
@@ -252,7 +295,7 @@ class ListNatGatewaysRequest:
     def spec(self):
         r"""Gets the spec of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
+        公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
 
         :return: The spec of this ListNatGatewaysRequest.
         :rtype: list[str]
@@ -263,7 +306,7 @@ class ListNatGatewaysRequest:
     def spec(self, spec):
         r"""Sets the spec of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
+        公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
 
         :param spec: The spec of this ListNatGatewaysRequest.
         :type spec: list[str]
@@ -340,7 +383,7 @@ class ListNatGatewaysRequest:
     def limit(self):
         r"""Gets the limit of this ListNatGatewaysRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :return: The limit of this ListNatGatewaysRequest.
         :rtype: int
@@ -351,7 +394,7 @@ class ListNatGatewaysRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListNatGatewaysRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :param limit: The limit of this ListNatGatewaysRequest.
         :type limit: int
@@ -379,6 +422,50 @@ class ListNatGatewaysRequest:
         :type marker: str
         """
         self._marker = marker
+
+    @property
+    def sort_key(self):
+        r"""Gets the sort_key of this ListNatGatewaysRequest.
+
+        排序使用的key
+
+        :return: The sort_key of this ListNatGatewaysRequest.
+        :rtype: str
+        """
+        return self._sort_key
+
+    @sort_key.setter
+    def sort_key(self, sort_key):
+        r"""Sets the sort_key of this ListNatGatewaysRequest.
+
+        排序使用的key
+
+        :param sort_key: The sort_key of this ListNatGatewaysRequest.
+        :type sort_key: str
+        """
+        self._sort_key = sort_key
+
+    @property
+    def sort_dir(self):
+        r"""Gets the sort_dir of this ListNatGatewaysRequest.
+
+        返回结果按照升序或降序排列，默认降序desc，升序为asc
+
+        :return: The sort_dir of this ListNatGatewaysRequest.
+        :rtype: str
+        """
+        return self._sort_dir
+
+    @sort_dir.setter
+    def sort_dir(self, sort_dir):
+        r"""Sets the sort_dir of this ListNatGatewaysRequest.
+
+        返回结果按照升序或降序排列，默认降序desc，升序为asc
+
+        :param sort_dir: The sort_dir of this ListNatGatewaysRequest.
+        :type sort_dir: str
+        """
+        self._sort_dir = sort_dir
 
     def to_dict(self):
         result = {}

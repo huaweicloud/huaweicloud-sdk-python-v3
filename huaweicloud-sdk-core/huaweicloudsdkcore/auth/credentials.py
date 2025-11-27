@@ -26,8 +26,9 @@ import threading
 from abc import abstractmethod, ABC
 from typing import Callable, Optional, Dict, Any
 
-from huaweicloudsdkcore.auth.internal import IamHelper, MetadataAccessor
-from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException, SdkException
+from huaweicloudsdkcore.auth.internal import IamHelper, MetadataAccessor, StsHelper
+from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException, SdkException, \
+    HostUnreachableException
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
@@ -355,30 +356,32 @@ class BasicCredentials(Credentials):
         req = IamHelper.get_keystone_list_projects_request(http_client.config, self.iam_endpoint, region_id=region_id)
         try:
             http_client.logger.info("project id of region '%s' not found in BasicCredentials, "
-                                    "trying to get project id from IAM service automatically: %s",
+                                    "trying to get project id from IAM service: %s",
                                     region_id, self.iam_endpoint)
             response = http_client.do_request_sync(self.process_auth_request(req, http_client).result())
             trace_id = response.headers.get("X-IAM-Trace-Id")
             data = json.loads(response.content)
             projects = data.get("projects")
             if not projects:
-                raise SdkException("Failed to get project id of region '%s' automatically, X-IAM-Trace-Id=%s. " % (
-                    region_id, trace_id) + "Confirm that the project exists in your account, "
-                                           "or set project id manually: BasicCredentials(ak, sk, project_id)")
+                raise SdkException(
+                    f"Failed to get project id of region '{region_id}', X-IAM-Trace-Id={trace_id}. "
+                    "Confirm that the project exists in your account, "
+                    "or set project id manually: BasicCredentials(ak, sk, project_id)"
+                )
             elif len(projects) > 1:
                 project_ids = ",".join(map(lambda project: project["id"], projects))
-                raise SdkException("Multiple project ids found: [%s], X-IAM-Trace-Id=%s. " % (project_ids, trace_id) +
+                raise SdkException(f"Multiple project ids found: [{project_ids}], X-IAM-Trace-Id={trace_id}. "
                                    "Please select one when initializing the credentials: "
                                    "BasicCredentials(ak, sk, project_id)")
 
             self.project_id = projects[0]["id"]
-            http_client.logger.info("success to get project id of region '%s' automatically: %s",
+            http_client.logger.info("success to get project id of region '%s': %s",
                                     region_id, string_utils.mask(self.project_id))
             if cache_name:
                 with self._LOCK:
                     self._CACHE[cache_name] = self.project_id
         except ServiceResponseException as e:
-            raise SdkException("Failed to get project id of region '%s' automatically, %s" % (region_id, e))
+            raise SdkException(f"Failed to get project id of region '{region_id}', {e}")
         self._derived_predicate = derived_predicate
 
         return self
@@ -440,29 +443,11 @@ class GlobalCredentials(Credentials):
         derived_predicate = self._derived_predicate
         self._derived_predicate = None
 
-        if self.iam_endpoint is None:
-            self.iam_endpoint = IamHelper.get_iam_endpoint(region_id)
-        req = IamHelper.get_keystone_list_auth_domains_request(http_client.config, self.iam_endpoint)
-        try:
-            http_client.logger.info('domain id not found in GlobalCredentials, '
-                                    'trying to get domain id from IAM service automatically: %s', self.iam_endpoint)
-            response = http_client.do_request_sync(self.process_auth_request(req, http_client).result())
-            trace_id = response.headers.get("X-IAM-Trace-Id")
-            data = json.loads(response.content)
-            domains = data.get("domains")
-            if not domains:
-                raise SdkException("Failed to get domain id automatically, X-IAM-Trace-Id=%s. " % trace_id +
-                                   "Please confirm that you have 'iam:users:getUser' permission, "
-                                   "or set domain id manully: GlobalCredentials(ak, sk, domain_id)")
+        self.domain_id = self.__auto_get_domain_id(http_client, region_id)
 
-            self.domain_id = domains[0]["id"]
-            http_client.logger.info('success to get domain id automatically: %s', string_utils.mask(self.domain_id))
-
-            if cache_name:
-                with self._LOCK:
-                    self._CACHE[cache_name] = self.domain_id
-        except ServiceResponseException as e:
-            raise SdkException("Failed to get domain id automatically, " + str(e))
+        if cache_name:
+            with self._LOCK:
+                self._CACHE[cache_name] = self.domain_id
 
         self._derived_predicate = derived_predicate
 
@@ -479,3 +464,44 @@ class GlobalCredentials(Credentials):
 
         if not self._region_id:
             self._region_id = "globe"
+
+    def __auto_get_domain_id(self, http_client: HttpClient, region_id: str):
+        failed_msg_prefix = "Failed to get domain id, "
+        iam_endpoint = self.iam_endpoint or IamHelper.get_iam_endpoint(region_id)
+        req = IamHelper.get_keystone_list_auth_domains_request(http_client.config, iam_endpoint)
+        http_client.logger.info('domain id not found in GlobalCredentials, '
+                                'trying to get domain id from %s', iam_endpoint)
+        try:
+            response = http_client.do_request_sync(self.process_auth_request(req, http_client).result())
+        except ServiceResponseException as e:
+            raise SdkException(failed_msg_prefix + str(e))
+        trace_id = response.headers.get("X-IAM-Trace-Id")
+        data = json.loads(response.content)
+        domains = data.get("domains")
+        if domains:
+            domain_id = domains[0]["id"]
+            http_client.logger.info('success to get domain id: %s', string_utils.mask(domain_id))
+            return domain_id
+
+        sts_endpoint = StsHelper.get_sts_endpoint(region_id)
+        if not sts_endpoint:
+            raise SdkException(f"{failed_msg_prefix}X-IAM-Trace-Id={trace_id}. " +
+                               "Please confirm that you have 'iam:users:getUser' permission, "
+                               "or set domain id: GlobalCredentials(ak, sk, domain_id)")
+
+        req = StsHelper.get_caller_identity_request(http_client.config, sts_endpoint)
+        http_client.logger.info("domains is empty, trying to get domain id from %s", sts_endpoint)
+        try:
+            response = http_client.do_request_sync(self.process_auth_request(req, http_client).result())
+        except HostUnreachableException as hostException:
+            raise SdkException(failed_msg_prefix + str(hostException))
+        except ServiceResponseException as se:
+            raise SdkException(failed_msg_prefix +
+                               (f"{se.status_code}, requestId: {se.request_id}" if se.status_code == 404 else str(se)))
+
+        data = json.loads(response.content)
+        domain_id = data.get("account_id")
+        if not domain_id:
+            raise SdkException(f"{failed_msg_prefix}account_id not found")
+        http_client.logger.info('success to get domain id: %s', string_utils.mask(domain_id))
+        return domain_id

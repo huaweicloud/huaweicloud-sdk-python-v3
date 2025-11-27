@@ -8,6 +8,7 @@ class HealthCheckProtocol:
     allowed enum values
     """
     TCP = "TCP"
+    UDP = "UDP"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

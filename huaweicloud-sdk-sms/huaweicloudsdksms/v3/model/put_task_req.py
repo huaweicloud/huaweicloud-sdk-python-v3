@@ -121,7 +121,7 @@ class PutTaskReq:
         :type source_server: :class:`huaweicloudsdksms.v3.PostSourceServerBody`
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServer`
-        :param state: 任务状态
+        :param state: 迁移任务状态 READY: 准备就绪 RUNNING: 迁移中 SYNCING: 同步中 MIGRATE_SUCCESS: 迁移成功 SYNC_SUCCESS: 同步成功 MIGRATE_FAIL: 失败 SYNC_FAIL: 同步失败 ABORTING: 中止中 ABORT: 中止 SKIPPING: 跳过中 DELETING: 删除中 RESETING: 回滚中
         :type state: str
         :param estimate_complete_time: 预估完成时间
         :type estimate_complete_time: int
@@ -133,7 +133,7 @@ class PutTaskReq:
         :type start_date: int
         :param finish_date: 任务结束时间
         :type finish_date: int
-        :param migrate_speed: 迁移速率，单位：MB/S
+        :param migrate_speed: 迁移速率，单位：Mbit/s
         :type migrate_speed: float
         :param error_json: 错误信息
         :type error_json: str
@@ -619,7 +619,7 @@ class PutTaskReq:
     def state(self):
         r"""Gets the state of this PutTaskReq.
 
-        任务状态
+        迁移任务状态 READY: 准备就绪 RUNNING: 迁移中 SYNCING: 同步中 MIGRATE_SUCCESS: 迁移成功 SYNC_SUCCESS: 同步成功 MIGRATE_FAIL: 失败 SYNC_FAIL: 同步失败 ABORTING: 中止中 ABORT: 中止 SKIPPING: 跳过中 DELETING: 删除中 RESETING: 回滚中
 
         :return: The state of this PutTaskReq.
         :rtype: str
@@ -630,7 +630,7 @@ class PutTaskReq:
     def state(self, state):
         r"""Sets the state of this PutTaskReq.
 
-        任务状态
+        迁移任务状态 READY: 准备就绪 RUNNING: 迁移中 SYNCING: 同步中 MIGRATE_SUCCESS: 迁移成功 SYNC_SUCCESS: 同步成功 MIGRATE_FAIL: 失败 SYNC_FAIL: 同步失败 ABORTING: 中止中 ABORT: 中止 SKIPPING: 跳过中 DELETING: 删除中 RESETING: 回滚中
 
         :param state: The state of this PutTaskReq.
         :type state: str
@@ -751,7 +751,7 @@ class PutTaskReq:
     def migrate_speed(self):
         r"""Gets the migrate_speed of this PutTaskReq.
 
-        迁移速率，单位：MB/S
+        迁移速率，单位：Mbit/s
 
         :return: The migrate_speed of this PutTaskReq.
         :rtype: float
@@ -762,7 +762,7 @@ class PutTaskReq:
     def migrate_speed(self, migrate_speed):
         r"""Sets the migrate_speed of this PutTaskReq.
 
-        迁移速率，单位：MB/S
+        迁移速率，单位：Mbit/s
 
         :param migrate_speed: The migrate_speed of this PutTaskReq.
         :type migrate_speed: float

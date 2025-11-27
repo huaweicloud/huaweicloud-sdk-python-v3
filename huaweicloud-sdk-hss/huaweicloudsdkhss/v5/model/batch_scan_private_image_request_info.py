@@ -53,7 +53,7 @@ class BatchScanPrivateImageRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param repo_type: 仓库类型，现阶段接入了swr镜像仓库，包含如下:   - SWR : SWR镜像仓库
+        :param repo_type: 仓库类型。（该字段已废弃）
         :type repo_type: str
         :param image_info_list: 要扫描的镜像信息列表，operate_all参数为false时为必填
         :type image_info_list: list[:class:`huaweicloudsdkhss.v5.BatchScanSwrImageInfo`]
@@ -133,7 +133,7 @@ class BatchScanPrivateImageRequestInfo:
     def repo_type(self):
         r"""Gets the repo_type of this BatchScanPrivateImageRequestInfo.
 
-        仓库类型，现阶段接入了swr镜像仓库，包含如下:   - SWR : SWR镜像仓库
+        仓库类型。（该字段已废弃）
 
         :return: The repo_type of this BatchScanPrivateImageRequestInfo.
         :rtype: str
@@ -144,7 +144,7 @@ class BatchScanPrivateImageRequestInfo:
     def repo_type(self, repo_type):
         r"""Sets the repo_type of this BatchScanPrivateImageRequestInfo.
 
-        仓库类型，现阶段接入了swr镜像仓库，包含如下:   - SWR : SWR镜像仓库
+        仓库类型。（该字段已废弃）
 
         :param repo_type: The repo_type of this BatchScanPrivateImageRequestInfo.
         :type repo_type: str

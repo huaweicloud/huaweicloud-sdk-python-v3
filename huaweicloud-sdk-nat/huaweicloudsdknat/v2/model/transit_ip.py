@@ -22,9 +22,10 @@ class TransitIp:
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'virsubnet_id': 'str',
-        'tags': 'list[PrivateTag]',
+        'tags': 'list[Tag]',
         'gateway_id': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class TransitIp:
         'virsubnet_id': 'virsubnet_id',
         'tags': 'tags',
         'gateway_id': 'gateway_id',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'status': 'status'
     }
 
-    def __init__(self, id=None, project_id=None, network_interface_id=None, ip_address=None, created_at=None, updated_at=None, virsubnet_id=None, tags=None, gateway_id=None, enterprise_project_id=None):
+    def __init__(self, id=None, project_id=None, network_interface_id=None, ip_address=None, created_at=None, updated_at=None, virsubnet_id=None, tags=None, gateway_id=None, enterprise_project_id=None, status=None):
         r"""TransitIp
 
         The model defined in huaweicloud sdk
@@ -57,14 +59,16 @@ class TransitIp:
         :type created_at: datetime
         :param updated_at: 中转IP的更新时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ
         :type updated_at: datetime
-        :param virsubnet_id: 当前租户子网的ID。
+        :param virsubnet_id: 当前租户子网的ID。取值约束：与transit_subnet_id参数二选一。默认空字符串。
         :type virsubnet_id: str
         :param tags: 标签列表。
-        :type tags: list[:class:`huaweicloudsdknat.v2.PrivateTag`]
+        :type tags: list[:class:`huaweicloudsdknat.v2.Tag`]
         :param gateway_id: 中转IP绑定的私网NAT网关实例的ID。
         :type gateway_id: str
         :param enterprise_project_id: 企业项目ID。创建中转IP时，关联的企业项目ID。
         :type enterprise_project_id: str
+        :param status: 私网NAT中转IP的状态。 取值为： \&quot;ACTIVE\&quot;：正常运行 \&quot;FROZEN\&quot;：冻结 \&quot;INACTIVE\&quot;：不可用
+        :type status: str
         """
         
         
@@ -79,6 +83,7 @@ class TransitIp:
         self._tags = None
         self._gateway_id = None
         self._enterprise_project_id = None
+        self._status = None
         self.discriminator = None
 
         self.id = id
@@ -93,6 +98,8 @@ class TransitIp:
             self.tags = tags
         self.gateway_id = gateway_id
         self.enterprise_project_id = enterprise_project_id
+        if status is not None:
+            self.status = status
 
     @property
     def id(self):
@@ -230,7 +237,7 @@ class TransitIp:
     def virsubnet_id(self):
         r"""Gets the virsubnet_id of this TransitIp.
 
-        当前租户子网的ID。
+        当前租户子网的ID。取值约束：与transit_subnet_id参数二选一。默认空字符串。
 
         :return: The virsubnet_id of this TransitIp.
         :rtype: str
@@ -241,7 +248,7 @@ class TransitIp:
     def virsubnet_id(self, virsubnet_id):
         r"""Sets the virsubnet_id of this TransitIp.
 
-        当前租户子网的ID。
+        当前租户子网的ID。取值约束：与transit_subnet_id参数二选一。默认空字符串。
 
         :param virsubnet_id: The virsubnet_id of this TransitIp.
         :type virsubnet_id: str
@@ -255,7 +262,7 @@ class TransitIp:
         标签列表。
 
         :return: The tags of this TransitIp.
-        :rtype: list[:class:`huaweicloudsdknat.v2.PrivateTag`]
+        :rtype: list[:class:`huaweicloudsdknat.v2.Tag`]
         """
         return self._tags
 
@@ -266,7 +273,7 @@ class TransitIp:
         标签列表。
 
         :param tags: The tags of this TransitIp.
-        :type tags: list[:class:`huaweicloudsdknat.v2.PrivateTag`]
+        :type tags: list[:class:`huaweicloudsdknat.v2.Tag`]
         """
         self._tags = tags
 
@@ -313,6 +320,28 @@ class TransitIp:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def status(self):
+        r"""Gets the status of this TransitIp.
+
+        私网NAT中转IP的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
+
+        :return: The status of this TransitIp.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this TransitIp.
+
+        私网NAT中转IP的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
+
+        :param status: The status of this TransitIp.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         result = {}

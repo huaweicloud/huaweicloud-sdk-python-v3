@@ -24,7 +24,7 @@ from typing import List, Tuple, Dict, Any
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 
 
-class SdkRequest(object):
+class SdkRequest:
     def __init__(self,
                  method: str = 'GET',
                  schema: str = None,

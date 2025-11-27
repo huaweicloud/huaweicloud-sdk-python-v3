@@ -26,7 +26,7 @@ from huaweicloudsdkcore.exceptions.exception_handler import DefaultExceptionHand
 EXCEPTION_HANDLER = DefaultExceptionHandler()
 
 
-class MockResponse(object):
+class MockResponse:
     def __init__(self, text):
         self.text = text
         self.status_code = 400

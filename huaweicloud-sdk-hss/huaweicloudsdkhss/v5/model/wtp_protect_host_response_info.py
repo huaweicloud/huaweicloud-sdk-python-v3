@@ -85,7 +85,7 @@ class WtpProtectHostResponseInfo:
         :type group_id: str
         :param group_name: **参数解释**: 服务器组名称 **取值范围**: 字符长度0-256位 
         :type group_name: str
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
         :param os_bit: **参数解释**： 操作系统位数 **取值范围**： 字符长度1-64位 
         :type os_bit: str
@@ -336,7 +336,7 @@ class WtpProtectHostResponseInfo:
     def asset_value(self):
         r"""Gets the asset_value of this WtpProtectHostResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :return: The asset_value of this WtpProtectHostResponseInfo.
         :rtype: str
@@ -347,7 +347,7 @@ class WtpProtectHostResponseInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this WtpProtectHostResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :param asset_value: The asset_value of this WtpProtectHostResponseInfo.
         :type asset_value: str

@@ -1029,6 +1029,71 @@ class EvsAsyncClient(Client):
 
         return http_info
 
+    def delete_volume_in_recycle_async(self, request):
+        r"""删除回收站中单个云硬盘
+
+        删除回收站中单个云硬盘。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteVolumeInRecycle
+        :type request: :class:`huaweicloudsdkevs.v2.DeleteVolumeInRecycleRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.DeleteVolumeInRecycleResponse`
+        """
+        http_info = self._delete_volume_in_recycle_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_volume_in_recycle_async_invoker(self, request):
+        http_info = self._delete_volume_in_recycle_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_volume_in_recycle_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/recycle-bin-volumes/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVolumeInRecycleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'volume_id' in local_var_params:
+            path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_snapshots_async(self, request):
         r"""查询云硬盘快照详情列表
 
@@ -1343,6 +1408,81 @@ class EvsAsyncClient(Client):
 
         return http_info
 
+    def list_volumes_in_recycle_async(self, request):
+        r"""查询回收站中所有云硬盘详情
+
+        查询回收站中所有云硬盘的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVolumesInRecycle
+        :type request: :class:`huaweicloudsdkevs.v2.ListVolumesInRecycleRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ListVolumesInRecycleResponse`
+        """
+        http_info = self._list_volumes_in_recycle_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_volumes_in_recycle_async_invoker(self, request):
+        http_info = self._list_volumes_in_recycle_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_volumes_in_recycle_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/recycle-bin-volumes/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVolumesInRecycleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'service_type' in local_var_params:
+            query_params.append(('service_type', local_var_params['service_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_volume_qo_s_async(self, request):
         r"""修改云硬盘QoS
 
@@ -1554,6 +1694,71 @@ class EvsAsyncClient(Client):
 
         return http_info
 
+    def revert_volume_in_recycle_async(self, request):
+        r"""还原回收站中单个云硬盘
+
+        还原回收站中单个云硬盘。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RevertVolumeInRecycle
+        :type request: :class:`huaweicloudsdkevs.v2.RevertVolumeInRecycleRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.RevertVolumeInRecycleResponse`
+        """
+        http_info = self._revert_volume_in_recycle_http_info(request)
+        return self._call_api(**http_info)
+
+    def revert_volume_in_recycle_async_invoker(self, request):
+        http_info = self._revert_volume_in_recycle_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _revert_volume_in_recycle_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/recycle-bin-volumes/{volume_id}/revert",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevertVolumeInRecycleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'volume_id' in local_var_params:
+            path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def rollback_snapshot_async(self, request):
         r"""回滚快照到云硬盘
 
@@ -1658,6 +1863,69 @@ class EvsAsyncClient(Client):
         path_params = {}
         if 'job_id' in local_var_params:
             path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_recycle_policy_async(self, request):
+        r"""查询回收站策略
+
+        查询回收站策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRecyclePolicy
+        :type request: :class:`huaweicloudsdkevs.v2.ShowRecyclePolicyRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ShowRecyclePolicyResponse`
+        """
+        http_info = self._show_recycle_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_recycle_policy_async_invoker(self, request):
+        http_info = self._show_recycle_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_recycle_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/recycle-bin-volumes/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecyclePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -1817,6 +2085,71 @@ class EvsAsyncClient(Client):
 
         return http_info
 
+    def show_volume_in_recycle_async(self, request):
+        r"""查询回收站中单个云硬盘详情
+
+        查询回收站中单个云硬盘的详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVolumeInRecycle
+        :type request: :class:`huaweicloudsdkevs.v2.ShowVolumeInRecycleRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ShowVolumeInRecycleResponse`
+        """
+        http_info = self._show_volume_in_recycle_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_volume_in_recycle_async_invoker(self, request):
+        http_info = self._show_volume_in_recycle_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_volume_in_recycle_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/recycle-bin-volumes/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVolumeInRecycleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'volume_id' in local_var_params:
+            path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_volume_tags_async(self, request):
         r"""查询云硬盘标签
 
@@ -1909,6 +2242,71 @@ class EvsAsyncClient(Client):
             "resource_path": "/v2/{project_id}/cloudvolumes/unsubscribe",
             "request_type": request.__class__.__name__,
             "response_type": "UnsubscribePostpaidVolumeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_recycle_policy_async(self, request):
+        r"""更新回收站策略
+
+        更新回收站策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRecyclePolicy
+        :type request: :class:`huaweicloudsdkevs.v2.UpdateRecyclePolicyRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.UpdateRecyclePolicyResponse`
+        """
+        http_info = self._update_recycle_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_recycle_policy_async_invoker(self, request):
+        http_info = self._update_recycle_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_recycle_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/recycle-bin-volumes/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecyclePolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

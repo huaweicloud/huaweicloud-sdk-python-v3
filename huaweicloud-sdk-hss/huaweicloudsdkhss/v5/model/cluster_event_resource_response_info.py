@@ -41,21 +41,21 @@ class ClusterEventResourceResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param enforcement_action: 执行动作
+        :param enforcement_action: **参数解释**: 执行动作 **取值范围**: 字符长度1-256位 
         :type enforcement_action: str
-        :param group: Group
+        :param group: **参数解释**: 组 **取值范围**: 字符长度1-256位 
         :type group: str
-        :param message: 信息
+        :param message: **参数解释**: 信息 **取值范围**: 字符长度1-256位 
         :type message: str
-        :param name: 名称
+        :param name: **参数解释**: 名称 **取值范围**: 字符长度1-256位 
         :type name: str
-        :param namespace: 命名空间
+        :param namespace: **参数解释**: 命名空间 **取值范围**: 字符长度0-256位 
         :type namespace: str
-        :param version: 版本
+        :param version: **参数解释**: 版本 **取值范围**: 字符长度0-128位 
         :type version: str
-        :param kind: 资源类型
+        :param kind: **参数解释**: 资源类型 **取值范围**: 字符长度1-64位 
         :type kind: str
-        :param resource_name: 资源名称
+        :param resource_name: **参数解释**: 资源名称 **取值范围**: 字符长度1-256位 
         :type resource_name: str
         """
         
@@ -92,7 +92,7 @@ class ClusterEventResourceResponseInfo:
     def enforcement_action(self):
         r"""Gets the enforcement_action of this ClusterEventResourceResponseInfo.
 
-        执行动作
+        **参数解释**: 执行动作 **取值范围**: 字符长度1-256位 
 
         :return: The enforcement_action of this ClusterEventResourceResponseInfo.
         :rtype: str
@@ -103,7 +103,7 @@ class ClusterEventResourceResponseInfo:
     def enforcement_action(self, enforcement_action):
         r"""Sets the enforcement_action of this ClusterEventResourceResponseInfo.
 
-        执行动作
+        **参数解释**: 执行动作 **取值范围**: 字符长度1-256位 
 
         :param enforcement_action: The enforcement_action of this ClusterEventResourceResponseInfo.
         :type enforcement_action: str
@@ -114,7 +114,7 @@ class ClusterEventResourceResponseInfo:
     def group(self):
         r"""Gets the group of this ClusterEventResourceResponseInfo.
 
-        Group
+        **参数解释**: 组 **取值范围**: 字符长度1-256位 
 
         :return: The group of this ClusterEventResourceResponseInfo.
         :rtype: str
@@ -125,7 +125,7 @@ class ClusterEventResourceResponseInfo:
     def group(self, group):
         r"""Sets the group of this ClusterEventResourceResponseInfo.
 
-        Group
+        **参数解释**: 组 **取值范围**: 字符长度1-256位 
 
         :param group: The group of this ClusterEventResourceResponseInfo.
         :type group: str
@@ -136,7 +136,7 @@ class ClusterEventResourceResponseInfo:
     def message(self):
         r"""Gets the message of this ClusterEventResourceResponseInfo.
 
-        信息
+        **参数解释**: 信息 **取值范围**: 字符长度1-256位 
 
         :return: The message of this ClusterEventResourceResponseInfo.
         :rtype: str
@@ -147,7 +147,7 @@ class ClusterEventResourceResponseInfo:
     def message(self, message):
         r"""Sets the message of this ClusterEventResourceResponseInfo.
 
-        信息
+        **参数解释**: 信息 **取值范围**: 字符长度1-256位 
 
         :param message: The message of this ClusterEventResourceResponseInfo.
         :type message: str
@@ -158,7 +158,7 @@ class ClusterEventResourceResponseInfo:
     def name(self):
         r"""Gets the name of this ClusterEventResourceResponseInfo.
 
-        名称
+        **参数解释**: 名称 **取值范围**: 字符长度1-256位 
 
         :return: The name of this ClusterEventResourceResponseInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class ClusterEventResourceResponseInfo:
     def name(self, name):
         r"""Sets the name of this ClusterEventResourceResponseInfo.
 
-        名称
+        **参数解释**: 名称 **取值范围**: 字符长度1-256位 
 
         :param name: The name of this ClusterEventResourceResponseInfo.
         :type name: str
@@ -180,7 +180,7 @@ class ClusterEventResourceResponseInfo:
     def namespace(self):
         r"""Gets the namespace of this ClusterEventResourceResponseInfo.
 
-        命名空间
+        **参数解释**: 命名空间 **取值范围**: 字符长度0-256位 
 
         :return: The namespace of this ClusterEventResourceResponseInfo.
         :rtype: str
@@ -191,7 +191,7 @@ class ClusterEventResourceResponseInfo:
     def namespace(self, namespace):
         r"""Sets the namespace of this ClusterEventResourceResponseInfo.
 
-        命名空间
+        **参数解释**: 命名空间 **取值范围**: 字符长度0-256位 
 
         :param namespace: The namespace of this ClusterEventResourceResponseInfo.
         :type namespace: str
@@ -202,7 +202,7 @@ class ClusterEventResourceResponseInfo:
     def version(self):
         r"""Gets the version of this ClusterEventResourceResponseInfo.
 
-        版本
+        **参数解释**: 版本 **取值范围**: 字符长度0-128位 
 
         :return: The version of this ClusterEventResourceResponseInfo.
         :rtype: str
@@ -213,7 +213,7 @@ class ClusterEventResourceResponseInfo:
     def version(self, version):
         r"""Sets the version of this ClusterEventResourceResponseInfo.
 
-        版本
+        **参数解释**: 版本 **取值范围**: 字符长度0-128位 
 
         :param version: The version of this ClusterEventResourceResponseInfo.
         :type version: str
@@ -224,7 +224,7 @@ class ClusterEventResourceResponseInfo:
     def kind(self):
         r"""Gets the kind of this ClusterEventResourceResponseInfo.
 
-        资源类型
+        **参数解释**: 资源类型 **取值范围**: 字符长度1-64位 
 
         :return: The kind of this ClusterEventResourceResponseInfo.
         :rtype: str
@@ -235,7 +235,7 @@ class ClusterEventResourceResponseInfo:
     def kind(self, kind):
         r"""Sets the kind of this ClusterEventResourceResponseInfo.
 
-        资源类型
+        **参数解释**: 资源类型 **取值范围**: 字符长度1-64位 
 
         :param kind: The kind of this ClusterEventResourceResponseInfo.
         :type kind: str
@@ -246,7 +246,7 @@ class ClusterEventResourceResponseInfo:
     def resource_name(self):
         r"""Gets the resource_name of this ClusterEventResourceResponseInfo.
 
-        资源名称
+        **参数解释**: 资源名称 **取值范围**: 字符长度1-256位 
 
         :return: The resource_name of this ClusterEventResourceResponseInfo.
         :rtype: str
@@ -257,7 +257,7 @@ class ClusterEventResourceResponseInfo:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this ClusterEventResourceResponseInfo.
 
-        资源名称
+        **参数解释**: 资源名称 **取值范围**: 字符长度1-256位 
 
         :param resource_name: The resource_name of this ClusterEventResourceResponseInfo.
         :type resource_name: str

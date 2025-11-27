@@ -32,7 +32,7 @@ class CloneLoadbalancerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param loadbalancer_list: 
+        :param loadbalancer_list: **参数解释**：新实例信息。
         :type loadbalancer_list: list[:class:`huaweicloudsdkelb.v3.CloneLoadbalancerResponseBodyLoadbalancerList`]
         :param request_id: **参数解释**：请求ID。  **取值范围**：由数字、小写字母和中划线（-）组成的字符串，自动生成。
         :type request_id: str
@@ -58,6 +58,8 @@ class CloneLoadbalancerResponse(SdkResponse):
     def loadbalancer_list(self):
         r"""Gets the loadbalancer_list of this CloneLoadbalancerResponse.
 
+        **参数解释**：新实例信息。
+
         :return: The loadbalancer_list of this CloneLoadbalancerResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.CloneLoadbalancerResponseBodyLoadbalancerList`]
         """
@@ -66,6 +68,8 @@ class CloneLoadbalancerResponse(SdkResponse):
     @loadbalancer_list.setter
     def loadbalancer_list(self, loadbalancer_list):
         r"""Sets the loadbalancer_list of this CloneLoadbalancerResponse.
+
+        **参数解释**：新实例信息。
 
         :param loadbalancer_list: The loadbalancer_list of this CloneLoadbalancerResponse.
         :type loadbalancer_list: list[:class:`huaweicloudsdkelb.v3.CloneLoadbalancerResponseBodyLoadbalancerList`]

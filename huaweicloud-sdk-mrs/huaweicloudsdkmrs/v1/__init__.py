@@ -44,6 +44,8 @@ from huaweicloudsdkmrs.v1.model.host_model import HostModel
 from huaweicloudsdkmrs.v1.model.job_exe_result import JobExeResult
 from huaweicloudsdkmrs.v1.model.list_all_tags_request import ListAllTagsRequest
 from huaweicloudsdkmrs.v1.model.list_all_tags_response import ListAllTagsResponse
+from huaweicloudsdkmrs.v1.model.list_async_task_status_request import ListAsyncTaskStatusRequest
+from huaweicloudsdkmrs.v1.model.list_async_task_status_response import ListAsyncTaskStatusResponse
 from huaweicloudsdkmrs.v1.model.list_available_zones_request import ListAvailableZonesRequest
 from huaweicloudsdkmrs.v1.model.list_available_zones_response import ListAvailableZonesResponse
 from huaweicloudsdkmrs.v1.model.list_cluster_tags_request import ListClusterTagsRequest

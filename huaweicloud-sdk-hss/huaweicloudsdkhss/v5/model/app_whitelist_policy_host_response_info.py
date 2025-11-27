@@ -59,7 +59,7 @@ class AppWhitelistPolicyHostResponseInfo:
         :type public_ip: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
         :param policy_name: 策略名称
         :type policy_name: str
@@ -215,7 +215,7 @@ class AppWhitelistPolicyHostResponseInfo:
     def asset_value(self):
         r"""Gets the asset_value of this AppWhitelistPolicyHostResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :return: The asset_value of this AppWhitelistPolicyHostResponseInfo.
         :rtype: str
@@ -226,7 +226,7 @@ class AppWhitelistPolicyHostResponseInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this AppWhitelistPolicyHostResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :param asset_value: The asset_value of this AppWhitelistPolicyHostResponseInfo.
         :type asset_value: str

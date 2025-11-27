@@ -38,6 +38,7 @@ class ExceptionHandler(ABC):
 
 class DefaultExceptionHandler(ExceptionHandler):
     _X_REQUEST_ID = "X-Request-Id"
+    _LOWER_X_REQUEST_ID = "x-request-id"
     _CODE = "code"
     _MESSAGE = "message"
     _ERROR_CODE = "error_code"
@@ -50,7 +51,7 @@ class DefaultExceptionHandler(ExceptionHandler):
         if response.status_code < 400:
             return
 
-        request_id = response.headers.get(self._X_REQUEST_ID)
+        request_id = response.headers.get(self._X_REQUEST_ID, response.headers.get(self._LOWER_X_REQUEST_ID))
         sdk_error = exceptions.SdkError(request_id=request_id)
         try:
             sdk_error_dict = json.loads(response.text)

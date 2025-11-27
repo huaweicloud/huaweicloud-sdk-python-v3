@@ -41,7 +41,7 @@ class CreateSecurityGroupPolicyRequestBody:
         :type workload_id: str
         :param workload_name: 工作负载名称
         :type workload_name: str
-        :param workload_type: 工作负载类型
+        :param workload_type: **参数解释**: 工作负载类型 **取值范围**: - deployments：无状态负载 - statefulsets：有状态负载 - daemonsets：守护进程表 
         :type workload_type: str
         :param security_groups: 安全组列表
         :type security_groups: list[:class:`huaweicloudsdkhss.v5.SecurityGroup`]
@@ -132,7 +132,7 @@ class CreateSecurityGroupPolicyRequestBody:
     def workload_type(self):
         r"""Gets the workload_type of this CreateSecurityGroupPolicyRequestBody.
 
-        工作负载类型
+        **参数解释**: 工作负载类型 **取值范围**: - deployments：无状态负载 - statefulsets：有状态负载 - daemonsets：守护进程表 
 
         :return: The workload_type of this CreateSecurityGroupPolicyRequestBody.
         :rtype: str
@@ -143,7 +143,7 @@ class CreateSecurityGroupPolicyRequestBody:
     def workload_type(self, workload_type):
         r"""Sets the workload_type of this CreateSecurityGroupPolicyRequestBody.
 
-        工作负载类型
+        **参数解释**: 工作负载类型 **取值范围**: - deployments：无状态负载 - statefulsets：有状态负载 - daemonsets：守护进程表 
 
         :param workload_type: The workload_type of this CreateSecurityGroupPolicyRequestBody.
         :type workload_type: str

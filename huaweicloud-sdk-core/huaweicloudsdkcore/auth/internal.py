@@ -23,12 +23,12 @@
 import json
 import os
 import time
-from typing import Dict
+from typing import Dict, Optional
 
 import requests
 from six.moves.urllib.parse import urlparse
 
-from huaweicloudsdkcore.auth.endpoint import get_iam_endpoint_by_id
+from huaweicloudsdkcore.auth import endpoint
 from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
@@ -36,7 +36,7 @@ from huaweicloudsdkcore.http.user_agent import user_agent_string
 from huaweicloudsdkcore.sdk_request import SdkRequest
 
 
-class MetadataAccessor(object):
+class MetadataAccessor:
     METADATA_ENDPOINT = "http://169.254.169.254"
     GET_TOKEN_PATH = "/meta-data/latest/api/token"
     GET_SECURITY_KEY_PATH = "/openstack/latest/securitykey"
@@ -94,7 +94,32 @@ class MetadataAccessor(object):
         return json.loads(resp.text).get("credential")
 
 
-class IamHelper(object):
+class StsHelper:
+    STS_ENDPOINT_ENV_NAME = "HUAWEICLOUD_SDK_STS_ENDPOINT"
+    GET_CALLER_IDENTITY_URI = "/v5/caller-identity"
+
+    @classmethod
+    def get_sts_endpoint(cls, region_id: str = None) -> Optional[str]:
+        return os.getenv(cls.STS_ENDPOINT_ENV_NAME) or endpoint.get_sts_endpoint_by_id(region_id)
+
+    @classmethod
+    def get_caller_identity_request(cls, config: HttpConfig, sts_endpoint: str) -> SdkRequest:
+        url_parse_result = urlparse(sts_endpoint)
+        schema = url_parse_result.scheme
+        host = url_parse_result.netloc
+        resource_path = cls.GET_CALLER_IDENTITY_URI
+        return SdkRequest(
+            method="GET",
+            schema=schema,
+            host=host,
+            resource_path=resource_path,
+            header_params={"User-Agent": user_agent_string},
+            query_params=[],
+            signing_algorithm=config.signing_algorithm
+        )
+
+
+class IamHelper:
     DEFAULT_ENDPOINT = "https://iam.myhuaweicloud.com"
     KEYSTONE_LIST_PROJECT_URI = "/v3/projects"
     KEYSTONE_LIST_AUTH_DOMAINS_URI = "/v3/auth/domains"
@@ -108,7 +133,7 @@ class IamHelper(object):
         if env:
             return env
 
-        return get_iam_endpoint_by_id(region_id, cls.DEFAULT_ENDPOINT)
+        return endpoint.get_iam_endpoint_by_id(region_id, cls.DEFAULT_ENDPOINT)
 
     @classmethod
     def get_keystone_list_projects_request(cls, config: HttpConfig, iam_endpoint: str, region_id: str) -> SdkRequest:
@@ -118,16 +143,16 @@ class IamHelper(object):
         resource_path = cls.KEYSTONE_LIST_PROJECT_URI
         query_params = [('name', region_id)]
 
-        sdk_request = SdkRequest(method="GET",
-                                 schema=schema,
-                                 host=host,
-                                 resource_path=resource_path,
-                                 header_params={"User-Agent": user_agent_string},
-                                 query_params=query_params,
-                                 body="",
-                                 signing_algorithm=config.signing_algorithm)
-
-        return sdk_request
+        return SdkRequest(
+            method="GET",
+            schema=schema,
+            host=host,
+            resource_path=resource_path,
+            header_params={"User-Agent": user_agent_string},
+            query_params=query_params,
+            body="",
+            signing_algorithm=config.signing_algorithm
+        )
 
     @classmethod
     def get_create_temporary_access_key_by_token_request(cls, config: HttpConfig, iam_endpoint: str, auth_token: str,
@@ -147,16 +172,18 @@ class IamHelper(object):
         }
         url_parse_result = urlparse(iam_endpoint)
         header_params = {"Content-Type": "application/json;charset=UTF-8", "User-Agent": user_agent_string}
-        return SdkRequest(method="POST",
-                          schema=url_parse_result.scheme,
-                          host=url_parse_result.netloc,
-                          resource_path=cls.CREATE_TEMPORARY_ACCESS_KEY_BY_TOKEN_URI,
-                          uri=cls.CREATE_TEMPORARY_ACCESS_KEY_BY_TOKEN_URI,
-                          header_params=header_params,
-                          query_params=[],
-                          body=json.dumps(request_body),
-                          stream=False,
-                          signing_algorithm=config.signing_algorithm)
+        return SdkRequest(
+            method="POST",
+            schema=url_parse_result.scheme,
+            host=url_parse_result.netloc,
+            resource_path=cls.CREATE_TEMPORARY_ACCESS_KEY_BY_TOKEN_URI,
+            uri=cls.CREATE_TEMPORARY_ACCESS_KEY_BY_TOKEN_URI,
+            header_params=header_params,
+            query_params=[],
+            body=json.dumps(request_body),
+            stream=False,
+            signing_algorithm=config.signing_algorithm
+        )
 
     @staticmethod
     def create_temporary_access_key_by_token(http_client: HttpClient, request) -> Dict[str, str]:
@@ -179,16 +206,18 @@ class IamHelper(object):
         url_parse_result = urlparse(iam_endpoint)
         header_params = {"X-Idp-Id": idp_id,
                          "Content-Type": "application/json;charset=UTF-8", "User-Agent": user_agent_string}
-        return SdkRequest(method="POST",
-                          schema=url_parse_result.scheme,
-                          host=url_parse_result.netloc,
-                          resource_path=cls.CREATE_TOKEN_BY_ID_TOKEN_URI,
-                          uri=cls.CREATE_TOKEN_BY_ID_TOKEN_URI,
-                          header_params=header_params,
-                          query_params=[],
-                          body=json.dumps(request_body),
-                          stream=False,
-                          signing_algorithm=config.signing_algorithm)
+        return SdkRequest(
+            method="POST",
+            schema=url_parse_result.scheme,
+            host=url_parse_result.netloc,
+            resource_path=cls.CREATE_TOKEN_BY_ID_TOKEN_URI,
+            uri=cls.CREATE_TOKEN_BY_ID_TOKEN_URI,
+            header_params=header_params,
+            query_params=[],
+            body=json.dumps(request_body),
+            stream=False,
+            signing_algorithm=config.signing_algorithm
+        )
 
     @staticmethod
     def create_unscoped_token_by_id_token(http_client: HttpClient, request: SdkRequest) -> str:
@@ -205,13 +234,13 @@ class IamHelper(object):
         host = url_parse_result.netloc
         resource_path = cls.KEYSTONE_LIST_AUTH_DOMAINS_URI
 
-        sdk_request = SdkRequest(method="GET",
-                                 schema=schema,
-                                 host=host,
-                                 resource_path=resource_path,
-                                 header_params={"User-Agent": "huaweicloud-usdk-python/3.0"},
-                                 query_params=[],
-                                 body="",
-                                 signing_algorithm=config.signing_algorithm)
-
-        return sdk_request
+        return SdkRequest(
+            method="GET",
+            schema=schema,
+            host=host,
+            resource_path=resource_path,
+            header_params={"User-Agent": user_agent_string},
+            query_params=[],
+            body="",
+            signing_algorithm=config.signing_algorithm
+        )

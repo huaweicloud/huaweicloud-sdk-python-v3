@@ -73,9 +73,9 @@ class ProtectionServeInfo:
         :type public_ip: str
         :param private_ip: 私有ip
         :type private_ip: str
-        :param os_type: 操作系统类型
+        :param os_type: **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
         :type os_type: str
-        :param rasp_status: 应用防护状态 |- 应用防护状态，包含如下6种。 - 0 ：防护开启中。 - 2 ：防护成功。 - 4 ：防护失败（安装失败）。 - 6 ：未防护。 - 8 ：部分防护。 - 9 ：防护失败。
+        :param rasp_status: **参数解释**: 应用防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下7种。 - app_install_processing：防护开启中。 - app_protected：防护成功。 - app_install_failed：防护失败（安装失败）。 - app_not_configure：未防护。 - app_partially_protected：部分防护。 - app_all_failed：防护失败。 - app_uninstall_processing：卸载中。 **默认取值**: 不涉及 
         :type rasp_status: str
         :param policy_name: 防护策略名称
         :type policy_name: str
@@ -83,7 +83,7 @@ class ProtectionServeInfo:
         :type is_friendly_user: bool
         :param agent_support_auto_attach: agent是否支持动态加载
         :type agent_support_auto_attach: bool
-        :param agent_status: Agent状态
+        :param agent_status: **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: 包含如下6种。 - installed ：已安装。 - not_installed ：未安装。 - online ：在线。 - offline ：离线。 - install_failed ：安装失败。 - installing ：安装中。 **默认取值**: 不涉及 
         :type agent_status: str
         :param auto_attach: 动态加载是否开启
         :type auto_attach: bool
@@ -294,7 +294,7 @@ class ProtectionServeInfo:
     def os_type(self):
         r"""Gets the os_type of this ProtectionServeInfo.
 
-        操作系统类型
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :return: The os_type of this ProtectionServeInfo.
         :rtype: str
@@ -305,7 +305,7 @@ class ProtectionServeInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this ProtectionServeInfo.
 
-        操作系统类型
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :param os_type: The os_type of this ProtectionServeInfo.
         :type os_type: str
@@ -316,7 +316,7 @@ class ProtectionServeInfo:
     def rasp_status(self):
         r"""Gets the rasp_status of this ProtectionServeInfo.
 
-        应用防护状态 |- 应用防护状态，包含如下6种。 - 0 ：防护开启中。 - 2 ：防护成功。 - 4 ：防护失败（安装失败）。 - 6 ：未防护。 - 8 ：部分防护。 - 9 ：防护失败。
+        **参数解释**: 应用防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下7种。 - app_install_processing：防护开启中。 - app_protected：防护成功。 - app_install_failed：防护失败（安装失败）。 - app_not_configure：未防护。 - app_partially_protected：部分防护。 - app_all_failed：防护失败。 - app_uninstall_processing：卸载中。 **默认取值**: 不涉及 
 
         :return: The rasp_status of this ProtectionServeInfo.
         :rtype: str
@@ -327,7 +327,7 @@ class ProtectionServeInfo:
     def rasp_status(self, rasp_status):
         r"""Sets the rasp_status of this ProtectionServeInfo.
 
-        应用防护状态 |- 应用防护状态，包含如下6种。 - 0 ：防护开启中。 - 2 ：防护成功。 - 4 ：防护失败（安装失败）。 - 6 ：未防护。 - 8 ：部分防护。 - 9 ：防护失败。
+        **参数解释**: 应用防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下7种。 - app_install_processing：防护开启中。 - app_protected：防护成功。 - app_install_failed：防护失败（安装失败）。 - app_not_configure：未防护。 - app_partially_protected：部分防护。 - app_all_failed：防护失败。 - app_uninstall_processing：卸载中。 **默认取值**: 不涉及 
 
         :param rasp_status: The rasp_status of this ProtectionServeInfo.
         :type rasp_status: str
@@ -404,7 +404,7 @@ class ProtectionServeInfo:
     def agent_status(self):
         r"""Gets the agent_status of this ProtectionServeInfo.
 
-        Agent状态
+        **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: 包含如下6种。 - installed ：已安装。 - not_installed ：未安装。 - online ：在线。 - offline ：离线。 - install_failed ：安装失败。 - installing ：安装中。 **默认取值**: 不涉及 
 
         :return: The agent_status of this ProtectionServeInfo.
         :rtype: str
@@ -415,7 +415,7 @@ class ProtectionServeInfo:
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this ProtectionServeInfo.
 
-        Agent状态
+        **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: 包含如下6种。 - installed ：已安装。 - not_installed ：未安装。 - online ：在线。 - offline ：离线。 - install_failed ：安装失败。 - installing ：安装中。 **默认取值**: 不涉及 
 
         :param agent_status: The agent_status of this ProtectionServeInfo.
         :type agent_status: str

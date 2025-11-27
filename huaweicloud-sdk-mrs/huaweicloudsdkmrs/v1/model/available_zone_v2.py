@@ -23,7 +23,9 @@ class AvailableZoneV2:
         'region_id': 'str',
         'az_group_id': 'str',
         'az_type': 'str',
-        'az_tags': 'AvailableTag'
+        'az_tags': 'AvailableTag',
+        'az_category': 'int',
+        'charge_policy': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class AvailableZoneV2:
         'region_id': 'region_id',
         'az_group_id': 'az_group_id',
         'az_type': 'az_type',
-        'az_tags': 'az_tags'
+        'az_tags': 'az_tags',
+        'az_category': 'az_category',
+        'charge_policy': 'charge_policy'
     }
 
-    def __init__(self, id=None, az_code=None, az_name=None, az_id=None, status=None, region_id=None, az_group_id=None, az_type=None, az_tags=None):
+    def __init__(self, id=None, az_code=None, az_name=None, az_id=None, status=None, region_id=None, az_group_id=None, az_type=None, az_tags=None, az_category=None, charge_policy=None):
         r"""AvailableZoneV2
 
         The model defined in huaweicloud sdk
@@ -61,6 +65,10 @@ class AvailableZoneV2:
         :type az_type: str
         :param az_tags: 
         :type az_tags: :class:`huaweicloudsdkmrs.v1.AvailableTag`
+        :param az_category: 当前可用区的类型，包括： - 0: 大云主可用区 - 21: 本地可用区 - 41: 边缘可用区
+        :type az_category: int
+        :param charge_policy: 当前可用区的销售策略，包括： - charge: 计费 - notCharge: 非计费
+        :type charge_policy: str
         """
         
         
@@ -74,6 +82,8 @@ class AvailableZoneV2:
         self._az_group_id = None
         self._az_type = None
         self._az_tags = None
+        self._az_category = None
+        self._charge_policy = None
         self.discriminator = None
 
         if id is not None:
@@ -94,6 +104,10 @@ class AvailableZoneV2:
             self.az_type = az_type
         if az_tags is not None:
             self.az_tags = az_tags
+        if az_category is not None:
+            self.az_category = az_category
+        if charge_policy is not None:
+            self.charge_policy = charge_policy
 
     @property
     def id(self):
@@ -288,6 +302,50 @@ class AvailableZoneV2:
         :type az_tags: :class:`huaweicloudsdkmrs.v1.AvailableTag`
         """
         self._az_tags = az_tags
+
+    @property
+    def az_category(self):
+        r"""Gets the az_category of this AvailableZoneV2.
+
+        当前可用区的类型，包括： - 0: 大云主可用区 - 21: 本地可用区 - 41: 边缘可用区
+
+        :return: The az_category of this AvailableZoneV2.
+        :rtype: int
+        """
+        return self._az_category
+
+    @az_category.setter
+    def az_category(self, az_category):
+        r"""Sets the az_category of this AvailableZoneV2.
+
+        当前可用区的类型，包括： - 0: 大云主可用区 - 21: 本地可用区 - 41: 边缘可用区
+
+        :param az_category: The az_category of this AvailableZoneV2.
+        :type az_category: int
+        """
+        self._az_category = az_category
+
+    @property
+    def charge_policy(self):
+        r"""Gets the charge_policy of this AvailableZoneV2.
+
+        当前可用区的销售策略，包括： - charge: 计费 - notCharge: 非计费
+
+        :return: The charge_policy of this AvailableZoneV2.
+        :rtype: str
+        """
+        return self._charge_policy
+
+    @charge_policy.setter
+    def charge_policy(self, charge_policy):
+        r"""Sets the charge_policy of this AvailableZoneV2.
+
+        当前可用区的销售策略，包括： - charge: 计费 - notCharge: 非计费
+
+        :param charge_policy: The charge_policy of this AvailableZoneV2.
+        :type charge_policy: str
+        """
+        self._charge_policy = charge_policy
 
     def to_dict(self):
         result = {}

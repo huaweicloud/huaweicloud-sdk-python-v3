@@ -63,27 +63,27 @@ class ListWtpProtectHostRequest:
         :type host_name: str
         :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
-        :param public_ip: 服务器公网IP
+        :param public_ip: **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
         :type public_ip: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
-        :param group_name: 服务器组名称
+        :param group_name: **参数解释**: 服务器组名称。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 无 
         :type group_name: str
-        :param os_type: 操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        :param os_type: **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
         :type os_type: str
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
         :type asset_value: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param protect_status: **参数解释**: 网页防篡改防护开启状态 **约束限制**: 不涉及 **取值范围**: - opened ：已开启网页防篡改防护。  **默认取值**: 不涉及 
+        :param protect_status: **参数解释**: 网页防篡改防护开启状态。 **约束限制**: 不涉及 **取值范围**: - opened ：已开启网页防篡改防护。  **默认取值**: 无 
         :type protect_status: str
-        :param wtp_status: **参数解释**: 网页防篡改详细防护状态 **约束限制**: 不涉及 **取值范围**: - opened : 防护中。 - opening : 开启中。 - open_failed : 防护失败。 - partial_protection : 部分防护。 - protection_interruption : 防护中断。  **默认取值**: 不涉及 
+        :param wtp_status: **参数解释**: 网页防篡改详细防护状态。 **约束限制**: 不涉及 **取值范围**: - opened : 防护中。 - opening : 开启中。 - open_failed : 防护失败。 - partial_protection : 部分防护。 - protection_interruption : 防护中断。  **默认取值**: 无 
         :type wtp_status: str
-        :param agent_status: **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: - not_installed : agent未安装。 - online : agent在线。 - offline : agent不在线。  **默认取值**: 不涉及 
+        :param agent_status: **参数解释**: Agent状态。 **约束限制**: 不涉及 **取值范围**: - not_installed : agent未安装。 - online : agent在线。 - offline : agent不在线。  **默认取值**: 无 
         :type agent_status: str
-        :param rasp_status: **参数解释**: 动态网页防篡改防护开启状态 **约束限制**: 不涉及 **取值范围**: - opened ：已开启动态网页防篡改防护。 - closed ：未开启动态网页防篡改防护。  **默认取值**: 不涉及 
+        :param rasp_status: **参数解释**: 动态网页防篡改防护开启状态。 **约束限制**: 不涉及 **取值范围**: - opened ：已开启动态网页防篡改防护。 - closed ：未开启动态网页防篡改防护。  **默认取值**: 无 
         :type rasp_status: str
         """
         
@@ -229,7 +229,7 @@ class ListWtpProtectHostRequest:
     def public_ip(self):
         r"""Gets the public_ip of this ListWtpProtectHostRequest.
 
-        服务器公网IP
+        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
 
         :return: The public_ip of this ListWtpProtectHostRequest.
         :rtype: str
@@ -240,7 +240,7 @@ class ListWtpProtectHostRequest:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ListWtpProtectHostRequest.
 
-        服务器公网IP
+        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
 
         :param public_ip: The public_ip of this ListWtpProtectHostRequest.
         :type public_ip: str
@@ -273,7 +273,7 @@ class ListWtpProtectHostRequest:
     def group_name(self):
         r"""Gets the group_name of this ListWtpProtectHostRequest.
 
-        服务器组名称
+        **参数解释**: 服务器组名称。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 无 
 
         :return: The group_name of this ListWtpProtectHostRequest.
         :rtype: str
@@ -284,7 +284,7 @@ class ListWtpProtectHostRequest:
     def group_name(self, group_name):
         r"""Sets the group_name of this ListWtpProtectHostRequest.
 
-        服务器组名称
+        **参数解释**: 服务器组名称。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 无 
 
         :param group_name: The group_name of this ListWtpProtectHostRequest.
         :type group_name: str
@@ -295,7 +295,7 @@ class ListWtpProtectHostRequest:
     def os_type(self):
         r"""Gets the os_type of this ListWtpProtectHostRequest.
 
-        操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
 
         :return: The os_type of this ListWtpProtectHostRequest.
         :rtype: str
@@ -306,7 +306,7 @@ class ListWtpProtectHostRequest:
     def os_type(self, os_type):
         r"""Sets the os_type of this ListWtpProtectHostRequest.
 
-        操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
 
         :param os_type: The os_type of this ListWtpProtectHostRequest.
         :type os_type: str
@@ -317,7 +317,7 @@ class ListWtpProtectHostRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ListWtpProtectHostRequest.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
 
         :return: The asset_value of this ListWtpProtectHostRequest.
         :rtype: str
@@ -328,7 +328,7 @@ class ListWtpProtectHostRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ListWtpProtectHostRequest.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
 
         :param asset_value: The asset_value of this ListWtpProtectHostRequest.
         :type asset_value: str
@@ -383,7 +383,7 @@ class ListWtpProtectHostRequest:
     def protect_status(self):
         r"""Gets the protect_status of this ListWtpProtectHostRequest.
 
-        **参数解释**: 网页防篡改防护开启状态 **约束限制**: 不涉及 **取值范围**: - opened ：已开启网页防篡改防护。  **默认取值**: 不涉及 
+        **参数解释**: 网页防篡改防护开启状态。 **约束限制**: 不涉及 **取值范围**: - opened ：已开启网页防篡改防护。  **默认取值**: 无 
 
         :return: The protect_status of this ListWtpProtectHostRequest.
         :rtype: str
@@ -394,7 +394,7 @@ class ListWtpProtectHostRequest:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ListWtpProtectHostRequest.
 
-        **参数解释**: 网页防篡改防护开启状态 **约束限制**: 不涉及 **取值范围**: - opened ：已开启网页防篡改防护。  **默认取值**: 不涉及 
+        **参数解释**: 网页防篡改防护开启状态。 **约束限制**: 不涉及 **取值范围**: - opened ：已开启网页防篡改防护。  **默认取值**: 无 
 
         :param protect_status: The protect_status of this ListWtpProtectHostRequest.
         :type protect_status: str
@@ -405,7 +405,7 @@ class ListWtpProtectHostRequest:
     def wtp_status(self):
         r"""Gets the wtp_status of this ListWtpProtectHostRequest.
 
-        **参数解释**: 网页防篡改详细防护状态 **约束限制**: 不涉及 **取值范围**: - opened : 防护中。 - opening : 开启中。 - open_failed : 防护失败。 - partial_protection : 部分防护。 - protection_interruption : 防护中断。  **默认取值**: 不涉及 
+        **参数解释**: 网页防篡改详细防护状态。 **约束限制**: 不涉及 **取值范围**: - opened : 防护中。 - opening : 开启中。 - open_failed : 防护失败。 - partial_protection : 部分防护。 - protection_interruption : 防护中断。  **默认取值**: 无 
 
         :return: The wtp_status of this ListWtpProtectHostRequest.
         :rtype: str
@@ -416,7 +416,7 @@ class ListWtpProtectHostRequest:
     def wtp_status(self, wtp_status):
         r"""Sets the wtp_status of this ListWtpProtectHostRequest.
 
-        **参数解释**: 网页防篡改详细防护状态 **约束限制**: 不涉及 **取值范围**: - opened : 防护中。 - opening : 开启中。 - open_failed : 防护失败。 - partial_protection : 部分防护。 - protection_interruption : 防护中断。  **默认取值**: 不涉及 
+        **参数解释**: 网页防篡改详细防护状态。 **约束限制**: 不涉及 **取值范围**: - opened : 防护中。 - opening : 开启中。 - open_failed : 防护失败。 - partial_protection : 部分防护。 - protection_interruption : 防护中断。  **默认取值**: 无 
 
         :param wtp_status: The wtp_status of this ListWtpProtectHostRequest.
         :type wtp_status: str
@@ -427,7 +427,7 @@ class ListWtpProtectHostRequest:
     def agent_status(self):
         r"""Gets the agent_status of this ListWtpProtectHostRequest.
 
-        **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: - not_installed : agent未安装。 - online : agent在线。 - offline : agent不在线。  **默认取值**: 不涉及 
+        **参数解释**: Agent状态。 **约束限制**: 不涉及 **取值范围**: - not_installed : agent未安装。 - online : agent在线。 - offline : agent不在线。  **默认取值**: 无 
 
         :return: The agent_status of this ListWtpProtectHostRequest.
         :rtype: str
@@ -438,7 +438,7 @@ class ListWtpProtectHostRequest:
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this ListWtpProtectHostRequest.
 
-        **参数解释**: Agent状态 **约束限制**: 不涉及 **取值范围**: - not_installed : agent未安装。 - online : agent在线。 - offline : agent不在线。  **默认取值**: 不涉及 
+        **参数解释**: Agent状态。 **约束限制**: 不涉及 **取值范围**: - not_installed : agent未安装。 - online : agent在线。 - offline : agent不在线。  **默认取值**: 无 
 
         :param agent_status: The agent_status of this ListWtpProtectHostRequest.
         :type agent_status: str
@@ -449,7 +449,7 @@ class ListWtpProtectHostRequest:
     def rasp_status(self):
         r"""Gets the rasp_status of this ListWtpProtectHostRequest.
 
-        **参数解释**: 动态网页防篡改防护开启状态 **约束限制**: 不涉及 **取值范围**: - opened ：已开启动态网页防篡改防护。 - closed ：未开启动态网页防篡改防护。  **默认取值**: 不涉及 
+        **参数解释**: 动态网页防篡改防护开启状态。 **约束限制**: 不涉及 **取值范围**: - opened ：已开启动态网页防篡改防护。 - closed ：未开启动态网页防篡改防护。  **默认取值**: 无 
 
         :return: The rasp_status of this ListWtpProtectHostRequest.
         :rtype: str
@@ -460,7 +460,7 @@ class ListWtpProtectHostRequest:
     def rasp_status(self, rasp_status):
         r"""Sets the rasp_status of this ListWtpProtectHostRequest.
 
-        **参数解释**: 动态网页防篡改防护开启状态 **约束限制**: 不涉及 **取值范围**: - opened ：已开启动态网页防篡改防护。 - closed ：未开启动态网页防篡改防护。  **默认取值**: 不涉及 
+        **参数解释**: 动态网页防篡改防护开启状态。 **约束限制**: 不涉及 **取值范围**: - opened ：已开启动态网页防篡改防护。 - closed ：未开启动态网页防篡改防护。  **默认取值**: 无 
 
         :param rasp_status: The rasp_status of this ListWtpProtectHostRequest.
         :type rasp_status: str

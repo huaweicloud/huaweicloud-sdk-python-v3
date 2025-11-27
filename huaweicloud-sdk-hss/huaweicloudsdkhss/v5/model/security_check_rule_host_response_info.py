@@ -28,6 +28,7 @@ class SecurityCheckRuleHostResponseInfo:
         'description': 'str',
         'host_type': 'str',
         'enable_fix': 'int',
+        'enable_verify': 'bool',
         'enable_click': 'bool',
         'cancel_ignore_enable_click': 'bool',
         'result_type': 'str',
@@ -49,6 +50,7 @@ class SecurityCheckRuleHostResponseInfo:
         'description': 'description',
         'host_type': 'host_type',
         'enable_fix': 'enable_fix',
+        'enable_verify': 'enable_verify',
         'enable_click': 'enable_click',
         'cancel_ignore_enable_click': 'cancel_ignore_enable_click',
         'result_type': 'result_type',
@@ -56,7 +58,7 @@ class SecurityCheckRuleHostResponseInfo:
         'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, host_id=None, host_name=None, check_name=None, baseline_name=None, host_public_ip=None, host_private_ip=None, scan_time=None, failed_num=None, passed_num=None, diff_description=None, description=None, host_type=None, enable_fix=None, enable_click=None, cancel_ignore_enable_click=None, result_type=None, fix_failed_reason=None, cluster_id=None):
+    def __init__(self, host_id=None, host_name=None, check_name=None, baseline_name=None, host_public_ip=None, host_private_ip=None, scan_time=None, failed_num=None, passed_num=None, diff_description=None, description=None, host_type=None, enable_fix=None, enable_verify=None, enable_click=None, cancel_ignore_enable_click=None, result_type=None, fix_failed_reason=None, cluster_id=None):
         r"""SecurityCheckRuleHostResponseInfo
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class SecurityCheckRuleHostResponseInfo:
         :type host_type: str
         :param enable_fix: **参数解释** 是否支持一键修复 **取值范围** - 1 : 支持一键修复 - 0 : 不支持
         :type enable_fix: int
+        :param enable_verify: **参数解释** 该检查项是否可验证，要求为Linux且agent版本&gt;&#x3D;3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+        :type enable_verify: bool
         :param enable_click: **参数解释** 该检查项的修复&amp;忽略&amp;验证按钮是否可单击 **取值范围** - true  : 按钮可单击 - false : 按钮不可单击
         :type enable_click: bool
         :param cancel_ignore_enable_click: **参数解释** 已忽略检查项是否可点击 **取值范围** - true  : 按钮可单击 - false : 按钮不可单击
@@ -95,7 +99,7 @@ class SecurityCheckRuleHostResponseInfo:
         :type result_type: str
         :param fix_failed_reason: **参数解释** 修复失败原因 **取值范围** 字符长度0-256位
         :type fix_failed_reason: str
-        :param cluster_id: **参数解释** 集群ID **取值范围** 字符长度0-64位
+        :param cluster_id: **参数解释** 集群ID **取值范围**  字符长度0-64位
         :type cluster_id: str
         """
         
@@ -114,6 +118,7 @@ class SecurityCheckRuleHostResponseInfo:
         self._description = None
         self._host_type = None
         self._enable_fix = None
+        self._enable_verify = None
         self._enable_click = None
         self._cancel_ignore_enable_click = None
         self._result_type = None
@@ -147,6 +152,8 @@ class SecurityCheckRuleHostResponseInfo:
             self.host_type = host_type
         if enable_fix is not None:
             self.enable_fix = enable_fix
+        if enable_verify is not None:
+            self.enable_verify = enable_verify
         if enable_click is not None:
             self.enable_click = enable_click
         if cancel_ignore_enable_click is not None:
@@ -445,6 +452,28 @@ class SecurityCheckRuleHostResponseInfo:
         self._enable_fix = enable_fix
 
     @property
+    def enable_verify(self):
+        r"""Gets the enable_verify of this SecurityCheckRuleHostResponseInfo.
+
+        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+
+        :return: The enable_verify of this SecurityCheckRuleHostResponseInfo.
+        :rtype: bool
+        """
+        return self._enable_verify
+
+    @enable_verify.setter
+    def enable_verify(self, enable_verify):
+        r"""Sets the enable_verify of this SecurityCheckRuleHostResponseInfo.
+
+        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+
+        :param enable_verify: The enable_verify of this SecurityCheckRuleHostResponseInfo.
+        :type enable_verify: bool
+        """
+        self._enable_verify = enable_verify
+
+    @property
     def enable_click(self):
         r"""Gets the enable_click of this SecurityCheckRuleHostResponseInfo.
 
@@ -536,7 +565,7 @@ class SecurityCheckRuleHostResponseInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this SecurityCheckRuleHostResponseInfo.
 
-        **参数解释** 集群ID **取值范围** 字符长度0-64位
+        **参数解释** 集群ID **取值范围**  字符长度0-64位
 
         :return: The cluster_id of this SecurityCheckRuleHostResponseInfo.
         :rtype: str
@@ -547,7 +576,7 @@ class SecurityCheckRuleHostResponseInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this SecurityCheckRuleHostResponseInfo.
 
-        **参数解释** 集群ID **取值范围** 字符长度0-64位
+        **参数解释** 集群ID **取值范围**  字符长度0-64位
 
         :param cluster_id: The cluster_id of this SecurityCheckRuleHostResponseInfo.
         :type cluster_id: str

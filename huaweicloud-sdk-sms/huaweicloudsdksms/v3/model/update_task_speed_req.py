@@ -67,7 +67,7 @@ class UpdateTaskSpeedReq:
         :type totalsize: int
         :param process_trace: 迁移或同步时，具体的迁移详情
         :type process_trace: str
-        :param migrate_speed: 实施迁移速率，单位Mb/s
+        :param migrate_speed: 实施迁移速率，单位Mbit/s
         :type migrate_speed: float
         :param compress_rate: 实施文件压缩率
         :type compress_rate: float
@@ -81,9 +81,9 @@ class UpdateTaskSpeedReq:
         :type total_mem_usage: float
         :param agent_mem_usage: Agent的内存使用值，单位是MB
         :type agent_mem_usage: float
-        :param total_disk_io: 主机的磁盘I/O值，单位是MB/s
+        :param total_disk_io: 主机的磁盘I/O值，单位是Mbit/s
         :type total_disk_io: float
-        :param agent_disk_io: Agent的磁盘I/O值，单位是MB/s
+        :param agent_disk_io: Agent的磁盘I/O值，单位是Mbit/s
         :type agent_disk_io: float
         :param need_migration_test: 是否开启迁移演练
         :type need_migration_test: bool
@@ -253,7 +253,7 @@ class UpdateTaskSpeedReq:
     def migrate_speed(self):
         r"""Gets the migrate_speed of this UpdateTaskSpeedReq.
 
-        实施迁移速率，单位Mb/s
+        实施迁移速率，单位Mbit/s
 
         :return: The migrate_speed of this UpdateTaskSpeedReq.
         :rtype: float
@@ -264,7 +264,7 @@ class UpdateTaskSpeedReq:
     def migrate_speed(self, migrate_speed):
         r"""Sets the migrate_speed of this UpdateTaskSpeedReq.
 
-        实施迁移速率，单位Mb/s
+        实施迁移速率，单位Mbit/s
 
         :param migrate_speed: The migrate_speed of this UpdateTaskSpeedReq.
         :type migrate_speed: float
@@ -407,7 +407,7 @@ class UpdateTaskSpeedReq:
     def total_disk_io(self):
         r"""Gets the total_disk_io of this UpdateTaskSpeedReq.
 
-        主机的磁盘I/O值，单位是MB/s
+        主机的磁盘I/O值，单位是Mbit/s
 
         :return: The total_disk_io of this UpdateTaskSpeedReq.
         :rtype: float
@@ -418,7 +418,7 @@ class UpdateTaskSpeedReq:
     def total_disk_io(self, total_disk_io):
         r"""Sets the total_disk_io of this UpdateTaskSpeedReq.
 
-        主机的磁盘I/O值，单位是MB/s
+        主机的磁盘I/O值，单位是Mbit/s
 
         :param total_disk_io: The total_disk_io of this UpdateTaskSpeedReq.
         :type total_disk_io: float
@@ -429,7 +429,7 @@ class UpdateTaskSpeedReq:
     def agent_disk_io(self):
         r"""Gets the agent_disk_io of this UpdateTaskSpeedReq.
 
-        Agent的磁盘I/O值，单位是MB/s
+        Agent的磁盘I/O值，单位是Mbit/s
 
         :return: The agent_disk_io of this UpdateTaskSpeedReq.
         :rtype: float
@@ -440,7 +440,7 @@ class UpdateTaskSpeedReq:
     def agent_disk_io(self, agent_disk_io):
         r"""Sets the agent_disk_io of this UpdateTaskSpeedReq.
 
-        Agent的磁盘I/O值，单位是MB/s
+        Agent的磁盘I/O值，单位是Mbit/s
 
         :param agent_disk_io: The agent_disk_io of this UpdateTaskSpeedReq.
         :type agent_disk_io: float

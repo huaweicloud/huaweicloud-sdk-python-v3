@@ -20,27 +20,45 @@
 import logging
 
 import pytest
+import requests
 import responses
-from huaweicloudsdkcore.exceptions.exceptions import SdkException
-from huaweicloudsdkcore.exceptions.exception_handler import DefaultExceptionHandler
-from huaweicloudsdkcore.http.http_handler import HttpHandler
-from huaweicloudsdkcore.http.http_config import HttpConfig
-from huaweicloudsdkcore.http.http_client import HttpClient
-from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
+from urllib3.exceptions import NewConnectionError
+
+from huaweicloudsdkcore.auth import endpoint
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
+from huaweicloudsdkcore.exceptions.exception_handler import DefaultExceptionHandler
+from huaweicloudsdkcore.exceptions.exceptions import SdkException
+from huaweicloudsdkcore.http.http_client import HttpClient
+from huaweicloudsdkcore.http.http_config import HttpConfig
+from huaweicloudsdkcore.http.http_handler import HttpHandler
 from huaweicloudsdkcore.sdk_request import SdkRequest
+from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
+from tests.util.response_registry import OrderedRegistry
 
 
-@pytest.fixture()
+@pytest.fixture
 def sdk_request():
     yield SdkRequest(schema="https", host="service.region-1.com", resource_path="/test",
                      header_params={}, query_params=[], signing_algorithm=SigningAlgorithm.get_default())
 
 
 @pytest.fixture
-def mocked_responses():
-    with responses.RequestsMock() as resps:
+def mocked_empty_domain_responses():
+    with responses.RequestsMock(registry=OrderedRegistry) as resps:
+        resps.add(
+            method=responses.GET,
+            url="https://iam.myhuaweicloud.com/v3/auth/domains",
+            content_type="application/json",
+            headers={"X-IAM-Trace-Id": "trace-id"},
+            body="{\"domains\":[]}"
+        )
         yield resps
+        resps.reset()
+
+
+@pytest.fixture()
+def mock_sts_endpoint(monkeypatch):
+    monkeypatch.setattr(endpoint, "get_sts_endpoint_by_id", lambda x: "https://localhost")
 
 
 @pytest.fixture
@@ -93,8 +111,9 @@ def test_global_credentials_sign_with_temp_aksk(sdk_request):
     assert "Authorization" in result.header_params
 
 
-def test_auto_get_project_id(mocked_http_client, mocked_responses):
-    mocked_responses.add(
+@responses.activate
+def test_auto_get_project_id(mocked_http_client):
+    responses.add(
         method=responses.GET,
         url="https://iam.myhuaweicloud.com/v3/projects",
         content_type="application/json",
@@ -107,8 +126,9 @@ def test_auto_get_project_id(mocked_http_client, mocked_responses):
     assert "project_id" == credentials.project_id
 
 
-def test_empty_project_id(mocked_http_client, mocked_responses):
-    mocked_responses.add(
+@responses.activate
+def test_empty_project_id(mocked_http_client):
+    responses.add(
         method=responses.GET,
         url="https://iam.myhuaweicloud.com/v3/projects",
         content_type="application/json",
@@ -121,13 +141,14 @@ def test_empty_project_id(mocked_http_client, mocked_responses):
         credentials.process_auth_params(mocked_http_client, "region-id-2")
         raise AssertionError("Should have thrown a SdkException: Failed to get project id...")
     except SdkException as e:
-        assert ("Failed to get project id of region 'region-id-2' automatically, X-IAM-Trace-Id=trace-id. "
+        assert ("Failed to get project id of region 'region-id-2', X-IAM-Trace-Id=trace-id. "
                 "Confirm that the project exists in your account, "
                 "or set project id manually: BasicCredentials(ak, sk, project_id)") == e.error_msg
 
 
-def test_multiple_project_ids(mocked_http_client, mocked_responses):
-    mocked_responses.add(
+@responses.activate
+def test_multiple_project_ids(mocked_http_client):
+    responses.add(
         method=responses.GET,
         url="https://iam.myhuaweicloud.com/v3/projects",
         content_type="application/json",
@@ -145,8 +166,9 @@ def test_multiple_project_ids(mocked_http_client, mocked_responses):
                 'BasicCredentials(ak, sk, project_id)') == e.error_msg
 
 
-def test_auto_get_domain_id(mocked_http_client, mocked_responses):
-    mocked_responses.add(
+@responses.activate
+def test_auto_get_domain_id(mocked_http_client):
+    responses.add(
         method=responses.GET,
         url="https://iam.myhuaweicloud.com/v3/auth/domains",
         content_type="application/json",
@@ -159,23 +181,87 @@ def test_auto_get_domain_id(mocked_http_client, mocked_responses):
     assert "domain_id" == credentials.domain_id
 
 
-def test_empty_domain_id(mocked_http_client, mocked_responses):
-    mocked_responses.add(
-        method=responses.GET,
-        url="https://iam.myhuaweicloud.com/v3/auth/domains",
-        content_type="application/json",
-        headers={"X-IAM-Trace-Id": "trace-id"},
-        body="{\"domains\":[]}"
-    )
-
+def test_empty_domain_id(mocked_http_client, mocked_empty_domain_responses):
     credentials = GlobalCredentials("ak2", "sk2")
     try:
         credentials.process_auth_params(mocked_http_client, "region-id")
         raise AssertionError("Should have thrown a SdkException: Failed to get domain id...")
     except SdkException as e:
-        assert ("Failed to get domain id automatically, X-IAM-Trace-Id=trace-id. "
+        assert ("Failed to get domain id, X-IAM-Trace-Id=trace-id. "
                 "Please confirm that you have 'iam:users:getUser' permission, "
-                "or set domain id manully: GlobalCredentials(ak, sk, domain_id)") == e.error_msg
+                "or set domain id: GlobalCredentials(ak, sk, domain_id)") == e.error_msg
+
+
+def test_get_domain_id_v5(mock_sts_endpoint, mocked_http_client, mocked_empty_domain_responses):
+    mocked_empty_domain_responses.add(
+        method=responses.GET,
+        url="https://localhost/v5/caller-identity",
+        content_type="application/json",
+        headers={"x-request-id": "request-id"},
+        body='{"account_id": "domain_id"}'
+    )
+
+    credentials = GlobalCredentials("ak", "sk")
+    credentials.process_auth_params(mocked_http_client, "region-id")
+    assert "domain_id" == credentials.domain_id
+
+
+def test_get_domain_id_v5_unknown_host(mock_sts_endpoint, mocked_http_client, mocked_empty_domain_responses):
+    class MockException(Exception):
+        def __init__(self, reason):
+            self.reason = reason
+
+        def __str__(self):
+            return "Name or service not known"
+
+    mocked_empty_domain_responses.add(
+        method=responses.GET,
+        url="https://localhost/v5/caller-identity",
+        body=requests.exceptions.ConnectionError(
+            MockException(NewConnectionError(None, "Name or service not known")))
+    )
+
+    credentials = GlobalCredentials("ak", "sk")
+    try:
+        credentials.process_auth_params(mocked_http_client, "region-id")
+    except SdkException as e:
+        assert "Failed to get domain id automatically" in e.error_msg
+        assert "Name or service not known" in e.error_msg
+
+
+def test_get_domain_id_v5_status_404(mock_sts_endpoint, mocked_http_client, mocked_empty_domain_responses):
+    mocked_empty_domain_responses.add(
+        method=responses.GET,
+        url="https://localhost/v5/caller-identity",
+        content_type="application/json",
+        headers={"x-request-id": "request-id"},
+        body='{"error_code": "xxx", "error_msg": "not found"}',
+        status=404
+    )
+
+    credentials = GlobalCredentials("ak", "sk")
+    try:
+        credentials.process_auth_params(mocked_http_client, "region-id")
+    except SdkException as e:
+        assert e.error_msg == "Failed to get domain id automatically, 404, requestId: request-id"
+
+
+def test_get_domain_id_v5_status_500(mock_sts_endpoint, mocked_http_client, mocked_empty_domain_responses):
+    mocked_empty_domain_responses.add(
+        method=responses.GET,
+        url="https://localhost/v5/caller-identity",
+        content_type="application/json",
+        headers={"x-request-id": "request-id"},
+        body='{"error_code": "xxx", "error_msg": "service internal error"}',
+        status=500
+    )
+
+    credentials = GlobalCredentials("ak", "sk")
+    try:
+        credentials.process_auth_params(mocked_http_client, "region-id")
+    except SdkException as e:
+        assert "Failed to get domain id automatically" in e.error_msg
+        assert "service internal error" in e.error_msg
 
 
 def test_new_basic_credentials():

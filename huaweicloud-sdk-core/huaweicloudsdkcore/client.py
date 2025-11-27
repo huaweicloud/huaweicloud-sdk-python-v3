@@ -186,7 +186,7 @@ class ClientBuilder(Generic[T]):
         return client
 
 
-class Client(object):
+class Client:
     _CONTENT_TYPE = "Content-Type"
     _APPLICATION_JSON = "application/json"
     _APPLICATION_XML = "application/xml"

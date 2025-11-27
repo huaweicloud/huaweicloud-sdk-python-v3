@@ -16,192 +16,109 @@ class GetDocumentAtomicInfoResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'atomic_unique_key': 'str',
-        'atomic_name_zh': 'str',
-        'atomic_name_en': 'str',
-        'tags': 'list[str]',
-        'inputs': 'list[AtomicInputModel]',
-        'outputs': 'AtomicOutputModel'
+        'error_code': 'str',
+        'error_msg': 'str',
+        'data': 'object'
     }
 
     attribute_map = {
-        'atomic_unique_key': 'atomic_unique_key',
-        'atomic_name_zh': 'atomic_name_zh',
-        'atomic_name_en': 'atomic_name_en',
-        'tags': 'tags',
-        'inputs': 'inputs',
-        'outputs': 'outputs'
+        'error_code': 'error_code',
+        'error_msg': 'error_msg',
+        'data': 'data'
     }
 
-    def __init__(self, atomic_unique_key=None, atomic_name_zh=None, atomic_name_en=None, tags=None, inputs=None, outputs=None):
+    def __init__(self, error_code=None, error_msg=None, data=None):
         r"""GetDocumentAtomicInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param atomic_unique_key: 原子能力唯一标识：只允许字母+下划线，字母开头
-        :type atomic_unique_key: str
-        :param atomic_name_zh: 中文名
-        :type atomic_name_zh: str
-        :param atomic_name_en: 英文名
-        :type atomic_name_en: str
-        :param tags: 标签信息
-        :type tags: list[str]
-        :param inputs: 原子能力入参
-        :type inputs: list[:class:`huaweicloudsdkcoc.v1.AtomicInputModel`]
-        :param outputs: 
-        :type outputs: :class:`huaweicloudsdkcoc.v1.AtomicOutputModel`
+        :param error_code: 错误码
+        :type error_code: str
+        :param error_msg: 错误信息
+        :type error_msg: str
+        :param data: 返回数据。
+        :type data: :class:`huaweicloudsdkcoc.v1.object`
         """
         
         super().__init__()
 
-        self._atomic_unique_key = None
-        self._atomic_name_zh = None
-        self._atomic_name_en = None
-        self._tags = None
-        self._inputs = None
-        self._outputs = None
+        self._error_code = None
+        self._error_msg = None
+        self._data = None
         self.discriminator = None
 
-        if atomic_unique_key is not None:
-            self.atomic_unique_key = atomic_unique_key
-        if atomic_name_zh is not None:
-            self.atomic_name_zh = atomic_name_zh
-        if atomic_name_en is not None:
-            self.atomic_name_en = atomic_name_en
-        if tags is not None:
-            self.tags = tags
-        if inputs is not None:
-            self.inputs = inputs
-        if outputs is not None:
-            self.outputs = outputs
+        if error_code is not None:
+            self.error_code = error_code
+        if error_msg is not None:
+            self.error_msg = error_msg
+        if data is not None:
+            self.data = data
 
     @property
-    def atomic_unique_key(self):
-        r"""Gets the atomic_unique_key of this GetDocumentAtomicInfoResponse.
+    def error_code(self):
+        r"""Gets the error_code of this GetDocumentAtomicInfoResponse.
 
-        原子能力唯一标识：只允许字母+下划线，字母开头
+        错误码
 
-        :return: The atomic_unique_key of this GetDocumentAtomicInfoResponse.
+        :return: The error_code of this GetDocumentAtomicInfoResponse.
         :rtype: str
         """
-        return self._atomic_unique_key
+        return self._error_code
 
-    @atomic_unique_key.setter
-    def atomic_unique_key(self, atomic_unique_key):
-        r"""Sets the atomic_unique_key of this GetDocumentAtomicInfoResponse.
+    @error_code.setter
+    def error_code(self, error_code):
+        r"""Sets the error_code of this GetDocumentAtomicInfoResponse.
 
-        原子能力唯一标识：只允许字母+下划线，字母开头
+        错误码
 
-        :param atomic_unique_key: The atomic_unique_key of this GetDocumentAtomicInfoResponse.
-        :type atomic_unique_key: str
+        :param error_code: The error_code of this GetDocumentAtomicInfoResponse.
+        :type error_code: str
         """
-        self._atomic_unique_key = atomic_unique_key
+        self._error_code = error_code
 
     @property
-    def atomic_name_zh(self):
-        r"""Gets the atomic_name_zh of this GetDocumentAtomicInfoResponse.
+    def error_msg(self):
+        r"""Gets the error_msg of this GetDocumentAtomicInfoResponse.
 
-        中文名
+        错误信息
 
-        :return: The atomic_name_zh of this GetDocumentAtomicInfoResponse.
+        :return: The error_msg of this GetDocumentAtomicInfoResponse.
         :rtype: str
         """
-        return self._atomic_name_zh
+        return self._error_msg
 
-    @atomic_name_zh.setter
-    def atomic_name_zh(self, atomic_name_zh):
-        r"""Sets the atomic_name_zh of this GetDocumentAtomicInfoResponse.
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        r"""Sets the error_msg of this GetDocumentAtomicInfoResponse.
 
-        中文名
+        错误信息
 
-        :param atomic_name_zh: The atomic_name_zh of this GetDocumentAtomicInfoResponse.
-        :type atomic_name_zh: str
+        :param error_msg: The error_msg of this GetDocumentAtomicInfoResponse.
+        :type error_msg: str
         """
-        self._atomic_name_zh = atomic_name_zh
+        self._error_msg = error_msg
 
     @property
-    def atomic_name_en(self):
-        r"""Gets the atomic_name_en of this GetDocumentAtomicInfoResponse.
+    def data(self):
+        r"""Gets the data of this GetDocumentAtomicInfoResponse.
 
-        英文名
+        返回数据。
 
-        :return: The atomic_name_en of this GetDocumentAtomicInfoResponse.
-        :rtype: str
+        :return: The data of this GetDocumentAtomicInfoResponse.
+        :rtype: :class:`huaweicloudsdkcoc.v1.object`
         """
-        return self._atomic_name_en
+        return self._data
 
-    @atomic_name_en.setter
-    def atomic_name_en(self, atomic_name_en):
-        r"""Sets the atomic_name_en of this GetDocumentAtomicInfoResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this GetDocumentAtomicInfoResponse.
 
-        英文名
+        返回数据。
 
-        :param atomic_name_en: The atomic_name_en of this GetDocumentAtomicInfoResponse.
-        :type atomic_name_en: str
+        :param data: The data of this GetDocumentAtomicInfoResponse.
+        :type data: :class:`huaweicloudsdkcoc.v1.object`
         """
-        self._atomic_name_en = atomic_name_en
-
-    @property
-    def tags(self):
-        r"""Gets the tags of this GetDocumentAtomicInfoResponse.
-
-        标签信息
-
-        :return: The tags of this GetDocumentAtomicInfoResponse.
-        :rtype: list[str]
-        """
-        return self._tags
-
-    @tags.setter
-    def tags(self, tags):
-        r"""Sets the tags of this GetDocumentAtomicInfoResponse.
-
-        标签信息
-
-        :param tags: The tags of this GetDocumentAtomicInfoResponse.
-        :type tags: list[str]
-        """
-        self._tags = tags
-
-    @property
-    def inputs(self):
-        r"""Gets the inputs of this GetDocumentAtomicInfoResponse.
-
-        原子能力入参
-
-        :return: The inputs of this GetDocumentAtomicInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkcoc.v1.AtomicInputModel`]
-        """
-        return self._inputs
-
-    @inputs.setter
-    def inputs(self, inputs):
-        r"""Sets the inputs of this GetDocumentAtomicInfoResponse.
-
-        原子能力入参
-
-        :param inputs: The inputs of this GetDocumentAtomicInfoResponse.
-        :type inputs: list[:class:`huaweicloudsdkcoc.v1.AtomicInputModel`]
-        """
-        self._inputs = inputs
-
-    @property
-    def outputs(self):
-        r"""Gets the outputs of this GetDocumentAtomicInfoResponse.
-
-        :return: The outputs of this GetDocumentAtomicInfoResponse.
-        :rtype: :class:`huaweicloudsdkcoc.v1.AtomicOutputModel`
-        """
-        return self._outputs
-
-    @outputs.setter
-    def outputs(self, outputs):
-        r"""Sets the outputs of this GetDocumentAtomicInfoResponse.
-
-        :param outputs: The outputs of this GetDocumentAtomicInfoResponse.
-        :type outputs: :class:`huaweicloudsdkcoc.v1.AtomicOutputModel`
-        """
-        self._outputs = outputs
+        self._data = data
 
     def to_dict(self):
         import warnings

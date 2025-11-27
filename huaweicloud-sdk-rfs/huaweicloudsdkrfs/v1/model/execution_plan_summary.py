@@ -1,0 +1,195 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ExecutionPlanSummary:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'resource_add': 'int',
+        'resource_update': 'int',
+        'resource_delete': 'int',
+        'resource_import': 'int'
+    }
+
+    attribute_map = {
+        'resource_add': 'resource_add',
+        'resource_update': 'resource_update',
+        'resource_delete': 'resource_delete',
+        'resource_import': 'resource_import'
+    }
+
+    def __init__(self, resource_add=None, resource_update=None, resource_delete=None, resource_import=None):
+        r"""ExecutionPlanSummary
+
+        The model defined in huaweicloud sdk
+
+        :param resource_add: 新增资源数
+        :type resource_add: int
+        :param resource_update: 更新资源数
+        :type resource_update: int
+        :param resource_delete: 删除资源数
+        :type resource_delete: int
+        :param resource_import: 导入资源数
+        :type resource_import: int
+        """
+        
+        
+
+        self._resource_add = None
+        self._resource_update = None
+        self._resource_delete = None
+        self._resource_import = None
+        self.discriminator = None
+
+        if resource_add is not None:
+            self.resource_add = resource_add
+        if resource_update is not None:
+            self.resource_update = resource_update
+        if resource_delete is not None:
+            self.resource_delete = resource_delete
+        if resource_import is not None:
+            self.resource_import = resource_import
+
+    @property
+    def resource_add(self):
+        r"""Gets the resource_add of this ExecutionPlanSummary.
+
+        新增资源数
+
+        :return: The resource_add of this ExecutionPlanSummary.
+        :rtype: int
+        """
+        return self._resource_add
+
+    @resource_add.setter
+    def resource_add(self, resource_add):
+        r"""Sets the resource_add of this ExecutionPlanSummary.
+
+        新增资源数
+
+        :param resource_add: The resource_add of this ExecutionPlanSummary.
+        :type resource_add: int
+        """
+        self._resource_add = resource_add
+
+    @property
+    def resource_update(self):
+        r"""Gets the resource_update of this ExecutionPlanSummary.
+
+        更新资源数
+
+        :return: The resource_update of this ExecutionPlanSummary.
+        :rtype: int
+        """
+        return self._resource_update
+
+    @resource_update.setter
+    def resource_update(self, resource_update):
+        r"""Sets the resource_update of this ExecutionPlanSummary.
+
+        更新资源数
+
+        :param resource_update: The resource_update of this ExecutionPlanSummary.
+        :type resource_update: int
+        """
+        self._resource_update = resource_update
+
+    @property
+    def resource_delete(self):
+        r"""Gets the resource_delete of this ExecutionPlanSummary.
+
+        删除资源数
+
+        :return: The resource_delete of this ExecutionPlanSummary.
+        :rtype: int
+        """
+        return self._resource_delete
+
+    @resource_delete.setter
+    def resource_delete(self, resource_delete):
+        r"""Sets the resource_delete of this ExecutionPlanSummary.
+
+        删除资源数
+
+        :param resource_delete: The resource_delete of this ExecutionPlanSummary.
+        :type resource_delete: int
+        """
+        self._resource_delete = resource_delete
+
+    @property
+    def resource_import(self):
+        r"""Gets the resource_import of this ExecutionPlanSummary.
+
+        导入资源数
+
+        :return: The resource_import of this ExecutionPlanSummary.
+        :rtype: int
+        """
+        return self._resource_import
+
+    @resource_import.setter
+    def resource_import(self, resource_import):
+        r"""Sets the resource_import of this ExecutionPlanSummary.
+
+        导入资源数
+
+        :param resource_import: The resource_import of this ExecutionPlanSummary.
+        :type resource_import: int
+        """
+        self._resource_import = resource_import
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ExecutionPlanSummary):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

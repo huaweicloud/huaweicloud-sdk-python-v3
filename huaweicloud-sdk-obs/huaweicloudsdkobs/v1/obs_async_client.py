@@ -442,6 +442,8 @@ class ObsAsyncClient(Client):
             query_params.append(('customdomain', local_var_params['customdomain']))
 
         header_params = {}
+        if 'content_md5' in local_var_params:
+            header_params['Content-MD5'] = local_var_params['content_md5']
         if 'date' in local_var_params:
             header_params['Date'] = local_var_params['date']
 

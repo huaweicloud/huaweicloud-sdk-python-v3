@@ -33,7 +33,7 @@ class ListResourcesByTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 资源类型。
+        :param resource_type: 资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
         :type resource_type: :class:`huaweicloudsdkga.v1.ResourceType`
         :param limit: 每页返回的个数。
         :type limit: int
@@ -63,7 +63,7 @@ class ListResourcesByTagRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListResourcesByTagRequest.
 
-        资源类型。
+        资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
 
         :return: The resource_type of this ListResourcesByTagRequest.
         :rtype: :class:`huaweicloudsdkga.v1.ResourceType`
@@ -74,7 +74,7 @@ class ListResourcesByTagRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListResourcesByTagRequest.
 
-        资源类型。
+        资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
 
         :param resource_type: The resource_type of this ListResourcesByTagRequest.
         :type resource_type: :class:`huaweicloudsdkga.v1.ResourceType`

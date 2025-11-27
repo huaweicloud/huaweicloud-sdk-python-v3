@@ -47,7 +47,7 @@ class FeatureRuleInfo:
         :type chk_feature_name: str
         :param chk_feature_desc: 检测特性规则描述
         :type chk_feature_desc: str
-        :param os_type: 操作系统类型
+        :param os_type: **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
         :type os_type: str
         :param feature_configure: 检测特性规则配置信息
         :type feature_configure: str
@@ -158,7 +158,7 @@ class FeatureRuleInfo:
     def os_type(self):
         r"""Gets the os_type of this FeatureRuleInfo.
 
-        操作系统类型
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :return: The os_type of this FeatureRuleInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class FeatureRuleInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this FeatureRuleInfo.
 
-        操作系统类型
+        **参数解释**: 策略支持的操作系统 **约束限制**: 不涉及 **取值范围**: 包含如下：   - Windows : Windows系统   - Linux : Linux系统 **默认取值**: 不涉及
 
         :param os_type: The os_type of this FeatureRuleInfo.
         :type os_type: str

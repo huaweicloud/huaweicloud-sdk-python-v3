@@ -61,17 +61,17 @@ class ListAppWhitelistPolicyHostRequest:
         :type learning_status: str
         :param apply_status: **策略学习状态**： 策略应用状态 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
         :type apply_status: bool
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
         :type asset_value: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
-        :param os_type: 操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        :param os_type: **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
         :type os_type: str
         :param policy_id: 策略ID
         :type policy_id: str
-        :param public_ip: 服务器公网IP
+        :param public_ip: **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
         :type public_ip: str
         """
         
@@ -249,7 +249,7 @@ class ListAppWhitelistPolicyHostRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ListAppWhitelistPolicyHostRequest.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
 
         :return: The asset_value of this ListAppWhitelistPolicyHostRequest.
         :rtype: str
@@ -260,7 +260,7 @@ class ListAppWhitelistPolicyHostRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ListAppWhitelistPolicyHostRequest.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
 
         :param asset_value: The asset_value of this ListAppWhitelistPolicyHostRequest.
         :type asset_value: str
@@ -315,7 +315,7 @@ class ListAppWhitelistPolicyHostRequest:
     def os_type(self):
         r"""Gets the os_type of this ListAppWhitelistPolicyHostRequest.
 
-        操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
 
         :return: The os_type of this ListAppWhitelistPolicyHostRequest.
         :rtype: str
@@ -326,7 +326,7 @@ class ListAppWhitelistPolicyHostRequest:
     def os_type(self, os_type):
         r"""Sets the os_type of this ListAppWhitelistPolicyHostRequest.
 
-        操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
 
         :param os_type: The os_type of this ListAppWhitelistPolicyHostRequest.
         :type os_type: str
@@ -359,7 +359,7 @@ class ListAppWhitelistPolicyHostRequest:
     def public_ip(self):
         r"""Gets the public_ip of this ListAppWhitelistPolicyHostRequest.
 
-        服务器公网IP
+        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
 
         :return: The public_ip of this ListAppWhitelistPolicyHostRequest.
         :rtype: str
@@ -370,7 +370,7 @@ class ListAppWhitelistPolicyHostRequest:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ListAppWhitelistPolicyHostRequest.
 
-        服务器公网IP
+        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
 
         :param public_ip: The public_ip of this ListAppWhitelistPolicyHostRequest.
         :type public_ip: str

@@ -17,6 +17,8 @@ class FlavorInfo:
     openapi_types = {
         'connection': 'int',
         'cps': 'int',
+        'tls_connection': 'int',
+        'tls_cps': 'int',
         'qps': 'int',
         'bandwidth': 'int',
         'lcu': 'int',
@@ -26,13 +28,15 @@ class FlavorInfo:
     attribute_map = {
         'connection': 'connection',
         'cps': 'cps',
+        'tls_connection': 'tls_connection',
+        'tls_cps': 'tls_cps',
         'qps': 'qps',
         'bandwidth': 'bandwidth',
         'lcu': 'lcu',
         'https_cps': 'https_cps'
     }
 
-    def __init__(self, connection=None, cps=None, qps=None, bandwidth=None, lcu=None, https_cps=None):
+    def __init__(self, connection=None, cps=None, tls_connection=None, tls_cps=None, qps=None, bandwidth=None, lcu=None, https_cps=None):
         r"""FlavorInfo
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class FlavorInfo:
         :type connection: int
         :param cps: **参数解释**：每秒新建连接数。单位：个。  **取值范围**：不涉及
         :type cps: int
+        :param tls_connection: **参数解释**：tls最大并发连接数。单位：个。  **取值范围**：不涉及
+        :type tls_connection: int
+        :param tls_cps: **参数解释**：tls每秒新建连接数。单位：个。  **取值范围**：不涉及
+        :type tls_cps: int
         :param qps: **参数解释**：每秒查询速率。单位：个。仅7层LB有该指标。  **取值范围**：不涉及
         :type qps: int
         :param bandwidth: **参数解释**：带宽。单位：Kbit/s。  **取值范围**：不涉及
@@ -55,6 +63,8 @@ class FlavorInfo:
 
         self._connection = None
         self._cps = None
+        self._tls_connection = None
+        self._tls_cps = None
         self._qps = None
         self._bandwidth = None
         self._lcu = None
@@ -63,6 +73,10 @@ class FlavorInfo:
 
         self.connection = connection
         self.cps = cps
+        if tls_connection is not None:
+            self.tls_connection = tls_connection
+        if tls_cps is not None:
+            self.tls_cps = tls_cps
         if qps is not None:
             self.qps = qps
         if bandwidth is not None:
@@ -115,6 +129,50 @@ class FlavorInfo:
         :type cps: int
         """
         self._cps = cps
+
+    @property
+    def tls_connection(self):
+        r"""Gets the tls_connection of this FlavorInfo.
+
+        **参数解释**：tls最大并发连接数。单位：个。  **取值范围**：不涉及
+
+        :return: The tls_connection of this FlavorInfo.
+        :rtype: int
+        """
+        return self._tls_connection
+
+    @tls_connection.setter
+    def tls_connection(self, tls_connection):
+        r"""Sets the tls_connection of this FlavorInfo.
+
+        **参数解释**：tls最大并发连接数。单位：个。  **取值范围**：不涉及
+
+        :param tls_connection: The tls_connection of this FlavorInfo.
+        :type tls_connection: int
+        """
+        self._tls_connection = tls_connection
+
+    @property
+    def tls_cps(self):
+        r"""Gets the tls_cps of this FlavorInfo.
+
+        **参数解释**：tls每秒新建连接数。单位：个。  **取值范围**：不涉及
+
+        :return: The tls_cps of this FlavorInfo.
+        :rtype: int
+        """
+        return self._tls_cps
+
+    @tls_cps.setter
+    def tls_cps(self, tls_cps):
+        r"""Sets the tls_cps of this FlavorInfo.
+
+        **参数解释**：tls每秒新建连接数。单位：个。  **取值范围**：不涉及
+
+        :param tls_cps: The tls_cps of this FlavorInfo.
+        :type tls_cps: int
+        """
+        self._tls_cps = tls_cps
 
     @property
     def qps(self):

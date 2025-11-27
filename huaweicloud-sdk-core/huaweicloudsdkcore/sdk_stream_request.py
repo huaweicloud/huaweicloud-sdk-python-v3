@@ -21,7 +21,7 @@
 """
 
 
-class SdkStreamRequest(object):
+class SdkStreamRequest:
     def __init__(self, stream):
         self._stream = stream
 

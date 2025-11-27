@@ -79,7 +79,7 @@ class PostTask:
         :type start_target_server: bool
         :param auto_start: 是否自动启动
         :type auto_start: bool
-        :param os_type: 操作系统类型
+        :param os_type: 操作系统类型 WINDOWS:Windows系统类型 LINUX:Linux系统类型
         :type os_type: str
         :param source_server: 
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerByTask`
@@ -276,7 +276,7 @@ class PostTask:
     def os_type(self):
         r"""Gets the os_type of this PostTask.
 
-        操作系统类型
+        操作系统类型 WINDOWS:Windows系统类型 LINUX:Linux系统类型
 
         :return: The os_type of this PostTask.
         :rtype: str
@@ -287,7 +287,7 @@ class PostTask:
     def os_type(self, os_type):
         r"""Sets the os_type of this PostTask.
 
-        操作系统类型
+        操作系统类型 WINDOWS:Windows系统类型 LINUX:Linux系统类型
 
         :param os_type: The os_type of this PostTask.
         :type os_type: str

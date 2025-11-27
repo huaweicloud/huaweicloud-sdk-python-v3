@@ -23,7 +23,8 @@ class ListTransitIpsRequest:
         'ip_address': 'list[str]',
         'gateway_id': 'list[str]',
         'enterprise_project_id': 'list[str]',
-        'virsubnet_id': 'list[str]'
+        'virsubnet_id': 'list[str]',
+        'transit_subnet_id': 'list[str]'
     }
 
     attribute_map = {
@@ -35,15 +36,16 @@ class ListTransitIpsRequest:
         'ip_address': 'ip_address',
         'gateway_id': 'gateway_id',
         'enterprise_project_id': 'enterprise_project_id',
-        'virsubnet_id': 'virsubnet_id'
+        'virsubnet_id': 'virsubnet_id',
+        'transit_subnet_id': 'transit_subnet_id'
     }
 
-    def __init__(self, limit=None, marker=None, page_reverse=None, id=None, network_interface_id=None, ip_address=None, gateway_id=None, enterprise_project_id=None, virsubnet_id=None):
+    def __init__(self, limit=None, marker=None, page_reverse=None, id=None, network_interface_id=None, ip_address=None, gateway_id=None, enterprise_project_id=None, virsubnet_id=None, transit_subnet_id=None):
         r"""ListTransitIpsRequest
 
         The model defined in huaweicloud sdk
 
-        :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        :param limit: 功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
         :type limit: int
         :param marker: 功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
         :type marker: str
@@ -61,6 +63,8 @@ class ListTransitIpsRequest:
         :type enterprise_project_id: list[str]
         :param virsubnet_id: 当前租户子网的ID。
         :type virsubnet_id: list[str]
+        :param transit_subnet_id: 中转子网的ID。
+        :type transit_subnet_id: list[str]
         """
         
         
@@ -74,6 +78,7 @@ class ListTransitIpsRequest:
         self._gateway_id = None
         self._enterprise_project_id = None
         self._virsubnet_id = None
+        self._transit_subnet_id = None
         self.discriminator = None
 
         if limit is not None:
@@ -94,12 +99,14 @@ class ListTransitIpsRequest:
             self.enterprise_project_id = enterprise_project_id
         if virsubnet_id is not None:
             self.virsubnet_id = virsubnet_id
+        if transit_subnet_id is not None:
+            self.transit_subnet_id = transit_subnet_id
 
     @property
     def limit(self):
         r"""Gets the limit of this ListTransitIpsRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :return: The limit of this ListTransitIpsRequest.
         :rtype: int
@@ -110,7 +117,7 @@ class ListTransitIpsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListTransitIpsRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :param limit: The limit of this ListTransitIpsRequest.
         :type limit: int
@@ -292,6 +299,28 @@ class ListTransitIpsRequest:
         :type virsubnet_id: list[str]
         """
         self._virsubnet_id = virsubnet_id
+
+    @property
+    def transit_subnet_id(self):
+        r"""Gets the transit_subnet_id of this ListTransitIpsRequest.
+
+        中转子网的ID。
+
+        :return: The transit_subnet_id of this ListTransitIpsRequest.
+        :rtype: list[str]
+        """
+        return self._transit_subnet_id
+
+    @transit_subnet_id.setter
+    def transit_subnet_id(self, transit_subnet_id):
+        r"""Sets the transit_subnet_id of this ListTransitIpsRequest.
+
+        中转子网的ID。
+
+        :param transit_subnet_id: The transit_subnet_id of this ListTransitIpsRequest.
+        :type transit_subnet_id: list[str]
+        """
+        self._transit_subnet_id = transit_subnet_id
 
     def to_dict(self):
         result = {}

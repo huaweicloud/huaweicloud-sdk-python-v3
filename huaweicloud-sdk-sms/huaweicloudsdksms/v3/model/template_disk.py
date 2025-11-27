@@ -43,7 +43,7 @@ class TemplateDisk:
         :type index: int
         :param name: 磁盘名称
         :type name: str
-        :param disktype: 磁盘类型，同volumetype字段
+        :param disktype: 磁盘类型，同volumetype字段（长文本信息，非枚举数据，来源于EVS服务） 详细类型请参考EIP服务API文档中“查询单个云硬盘详情”部分，查看响应参数的中volume_type字段描述
         :type disktype: str
         :param size: 磁盘大小，单位：GB
         :type size: int
@@ -140,7 +140,7 @@ class TemplateDisk:
     def disktype(self):
         r"""Gets the disktype of this TemplateDisk.
 
-        磁盘类型，同volumetype字段
+        磁盘类型，同volumetype字段（长文本信息，非枚举数据，来源于EVS服务） 详细类型请参考EIP服务API文档中“查询单个云硬盘详情”部分，查看响应参数的中volume_type字段描述
 
         :return: The disktype of this TemplateDisk.
         :rtype: str
@@ -151,7 +151,7 @@ class TemplateDisk:
     def disktype(self, disktype):
         r"""Sets the disktype of this TemplateDisk.
 
-        磁盘类型，同volumetype字段
+        磁盘类型，同volumetype字段（长文本信息，非枚举数据，来源于EVS服务） 详细类型请参考EIP服务API文档中“查询单个云硬盘详情”部分，查看响应参数的中volume_type字段描述
 
         :param disktype: The disktype of this TemplateDisk.
         :type disktype: str

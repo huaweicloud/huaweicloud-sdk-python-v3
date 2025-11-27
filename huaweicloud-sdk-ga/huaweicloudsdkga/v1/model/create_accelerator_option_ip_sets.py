@@ -29,7 +29,7 @@ class CreateAcceleratorOptionIpSets:
 
         The model defined in huaweicloud sdk
 
-        :param ip_type: IP地址类型，取值：IPV4，IPV6
+        :param ip_type: IP地址类型。 约束限制： 支持单独配置IPV4或同时配置IPV4和IPV6。 取值范围：IPV4、IPV6
         :type ip_type: str
         :param area: 
         :type area: :class:`huaweicloudsdkga.v1.Area`
@@ -48,7 +48,7 @@ class CreateAcceleratorOptionIpSets:
     def ip_type(self):
         r"""Gets the ip_type of this CreateAcceleratorOptionIpSets.
 
-        IP地址类型，取值：IPV4，IPV6
+        IP地址类型。 约束限制： 支持单独配置IPV4或同时配置IPV4和IPV6。 取值范围：IPV4、IPV6
 
         :return: The ip_type of this CreateAcceleratorOptionIpSets.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateAcceleratorOptionIpSets:
     def ip_type(self, ip_type):
         r"""Sets the ip_type of this CreateAcceleratorOptionIpSets.
 
-        IP地址类型，取值：IPV4，IPV6
+        IP地址类型。 约束限制： 支持单独配置IPV4或同时配置IPV4和IPV6。 取值范围：IPV4、IPV6
 
         :param ip_type: The ip_type of this CreateAcceleratorOptionIpSets.
         :type ip_type: str

@@ -49,7 +49,7 @@ class ListProtectionServersRequest:
         :type limit: int
         :param host_name: 云主机名称
         :type host_name: str
-        :param os_type: 操作系统类型，包含如下2种。  - linux ：linux类型应用防护。  - windows ：windows类型应用防护。
+        :param os_type: 操作系统类型，包含如下2种。 - Linux - Windows
         :type os_type: str
         :param host_ip: 云主机私有IP
         :type host_ip: str
@@ -177,7 +177,7 @@ class ListProtectionServersRequest:
     def os_type(self):
         r"""Gets the os_type of this ListProtectionServersRequest.
 
-        操作系统类型，包含如下2种。  - linux ：linux类型应用防护。  - windows ：windows类型应用防护。
+        操作系统类型，包含如下2种。 - Linux - Windows
 
         :return: The os_type of this ListProtectionServersRequest.
         :rtype: str
@@ -188,7 +188,7 @@ class ListProtectionServersRequest:
     def os_type(self, os_type):
         r"""Sets the os_type of this ListProtectionServersRequest.
 
-        操作系统类型，包含如下2种。  - linux ：linux类型应用防护。  - windows ：windows类型应用防护。
+        操作系统类型，包含如下2种。 - Linux - Windows
 
         :param os_type: The os_type of this ListProtectionServersRequest.
         :type os_type: str

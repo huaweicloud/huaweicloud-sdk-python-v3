@@ -16,15 +16,17 @@ class DownlinkVpc:
 
     openapi_types = {
         'vpc_id': 'str',
-        'virsubnet_id': 'str'
+        'virsubnet_id': 'str',
+        'ngport_ip_address': 'str'
     }
 
     attribute_map = {
         'vpc_id': 'vpc_id',
-        'virsubnet_id': 'virsubnet_id'
+        'virsubnet_id': 'virsubnet_id',
+        'ngport_ip_address': 'ngport_ip_address'
     }
 
-    def __init__(self, vpc_id=None, virsubnet_id=None):
+    def __init__(self, vpc_id=None, virsubnet_id=None, ngport_ip_address=None):
         r"""DownlinkVpc
 
         The model defined in huaweicloud sdk
@@ -33,16 +35,21 @@ class DownlinkVpc:
         :type vpc_id: str
         :param virsubnet_id: 私网NAT网关实例所属子网的ID。
         :type virsubnet_id: str
+        :param ngport_ip_address: 私网NAT网关的ngport_ip_addrss。
+        :type ngport_ip_address: str
         """
         
         
 
         self._vpc_id = None
         self._virsubnet_id = None
+        self._ngport_ip_address = None
         self.discriminator = None
 
         self.vpc_id = vpc_id
         self.virsubnet_id = virsubnet_id
+        if ngport_ip_address is not None:
+            self.ngport_ip_address = ngport_ip_address
 
     @property
     def vpc_id(self):
@@ -87,6 +94,28 @@ class DownlinkVpc:
         :type virsubnet_id: str
         """
         self._virsubnet_id = virsubnet_id
+
+    @property
+    def ngport_ip_address(self):
+        r"""Gets the ngport_ip_address of this DownlinkVpc.
+
+        私网NAT网关的ngport_ip_addrss。
+
+        :return: The ngport_ip_address of this DownlinkVpc.
+        :rtype: str
+        """
+        return self._ngport_ip_address
+
+    @ngport_ip_address.setter
+    def ngport_ip_address(self, ngport_ip_address):
+        r"""Sets the ngport_ip_address of this DownlinkVpc.
+
+        私网NAT网关的ngport_ip_addrss。
+
+        :param ngport_ip_address: The ngport_ip_address of this DownlinkVpc.
+        :type ngport_ip_address: str
+        """
+        self._ngport_ip_address = ngport_ip_address
 
     def to_dict(self):
         result = {}

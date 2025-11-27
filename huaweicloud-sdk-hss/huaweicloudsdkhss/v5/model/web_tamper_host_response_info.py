@@ -53,7 +53,7 @@ class WebTamperHostResponseInfo:
         :type agent_id: str
         :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
         :type os_type: str
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
         :param web_app_list: web应用列表
         :type web_app_list: list[str]
@@ -224,7 +224,7 @@ class WebTamperHostResponseInfo:
     def asset_value(self):
         r"""Gets the asset_value of this WebTamperHostResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :return: The asset_value of this WebTamperHostResponseInfo.
         :rtype: str
@@ -235,7 +235,7 @@ class WebTamperHostResponseInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this WebTamperHostResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :param asset_value: The asset_value of this WebTamperHostResponseInfo.
         :type asset_value: str

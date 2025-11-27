@@ -47,7 +47,7 @@ class ListPrivateNatsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        :param limit: 功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
         :type limit: int
         :param marker: 功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
         :type marker: str
@@ -59,9 +59,9 @@ class ListPrivateNatsRequest:
         :type name: list[str]
         :param description: 私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: list[str]
-        :param spec: 私网NAT网关实例的规格。 取值为： \&quot;Small\&quot;：小型 \&quot;Medium\&quot;：中型 \&quot;Large\&quot;：大型 \&quot;Extra-large\&quot;：超大型
+        :param spec: 私网NAT网关实例的规格。 取值为： \&quot;Small\&quot;：小型 \&quot;Medium\&quot;：中型 \&quot;Large\&quot;：大型 \&quot;Extra-large\&quot;：超大型 \&quot;Extra-xlarge\&quot;：企业型
         :type spec: list[str]
-        :param status: 私网NAT网关实例的状态。 取值为： \&quot;ACTIVE\&quot;：正常运行 \&quot;FROZEN\&quot;：冻结
+        :param status: 私网NAT网关实例的状态。 取值为： \&quot;ACTIVE\&quot;：正常运行 \&quot;FROZEN\&quot;：冻结 \&quot;INACTIVE\&quot;：不可用
         :type status: list[str]
         :param vpc_id: 私网NAT网关实例所属VPC的ID。
         :type vpc_id: list[str]
@@ -113,7 +113,7 @@ class ListPrivateNatsRequest:
     def limit(self):
         r"""Gets the limit of this ListPrivateNatsRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :return: The limit of this ListPrivateNatsRequest.
         :rtype: int
@@ -124,7 +124,7 @@ class ListPrivateNatsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPrivateNatsRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :param limit: The limit of this ListPrivateNatsRequest.
         :type limit: int
@@ -245,7 +245,7 @@ class ListPrivateNatsRequest:
     def spec(self):
         r"""Gets the spec of this ListPrivateNatsRequest.
 
-        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
+        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型 \"Extra-xlarge\"：企业型
 
         :return: The spec of this ListPrivateNatsRequest.
         :rtype: list[str]
@@ -256,7 +256,7 @@ class ListPrivateNatsRequest:
     def spec(self, spec):
         r"""Sets the spec of this ListPrivateNatsRequest.
 
-        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
+        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型 \"Extra-xlarge\"：企业型
 
         :param spec: The spec of this ListPrivateNatsRequest.
         :type spec: list[str]
@@ -267,7 +267,7 @@ class ListPrivateNatsRequest:
     def status(self):
         r"""Gets the status of this ListPrivateNatsRequest.
 
-        私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结
+        私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
 
         :return: The status of this ListPrivateNatsRequest.
         :rtype: list[str]
@@ -278,7 +278,7 @@ class ListPrivateNatsRequest:
     def status(self, status):
         r"""Sets the status of this ListPrivateNatsRequest.
 
-        私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结
+        私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
 
         :param status: The status of this ListPrivateNatsRequest.
         :type status: list[str]

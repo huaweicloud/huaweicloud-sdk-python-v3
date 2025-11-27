@@ -24,7 +24,7 @@ from mimetypes import MimeTypes
 from huaweicloudsdkcore.utils.filepath_utils import ensure_file_in_rb_mode
 
 
-class FormFile(object):
+class FormFile:
     TYPE = "file"
 
     def __init__(self, f, content_type=None):

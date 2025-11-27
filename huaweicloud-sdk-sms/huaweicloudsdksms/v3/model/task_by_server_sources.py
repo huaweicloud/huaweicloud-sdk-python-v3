@@ -79,7 +79,7 @@ class TaskByServerSources:
         :type id: str
         :param name: 任务名称
         :type name: str
-        :param type: 任务类型
+        :param type: 迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
         :type type: str
         :param state: 任务状态
         :type state: str
@@ -105,7 +105,7 @@ class TaskByServerSources:
         :type project_id: str
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerById`
-        :param log_collect_status: 日志收集状态
+        :param log_collect_status: 日志收集状态 INIT:就绪 UPLOADING:上传中 UPLOAD_FAIL:上传失败 UPLOADED:已上传
         :type log_collect_status: str
         :param exist_server: 是否使用已有虚拟机
         :type exist_server: bool
@@ -113,7 +113,7 @@ class TaskByServerSources:
         :type use_public_ip: bool
         :param clone_server: 
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
-        :param remain_seconds: 已迁移时长
+        :param remain_seconds: 迁移剩余时间（秒）
         :type remain_seconds: int
         :param log_bucket: 上传日志指定桶名称
         :type log_bucket: str
@@ -255,7 +255,7 @@ class TaskByServerSources:
     def type(self):
         r"""Gets the type of this TaskByServerSources.
 
-        任务类型
+        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
         :return: The type of this TaskByServerSources.
         :rtype: str
@@ -266,7 +266,7 @@ class TaskByServerSources:
     def type(self, type):
         r"""Sets the type of this TaskByServerSources.
 
-        任务类型
+        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
         :param type: The type of this TaskByServerSources.
         :type type: str
@@ -537,7 +537,7 @@ class TaskByServerSources:
     def log_collect_status(self):
         r"""Gets the log_collect_status of this TaskByServerSources.
 
-        日志收集状态
+        日志收集状态 INIT:就绪 UPLOADING:上传中 UPLOAD_FAIL:上传失败 UPLOADED:已上传
 
         :return: The log_collect_status of this TaskByServerSources.
         :rtype: str
@@ -548,7 +548,7 @@ class TaskByServerSources:
     def log_collect_status(self, log_collect_status):
         r"""Sets the log_collect_status of this TaskByServerSources.
 
-        日志收集状态
+        日志收集状态 INIT:就绪 UPLOADING:上传中 UPLOAD_FAIL:上传失败 UPLOADED:已上传
 
         :param log_collect_status: The log_collect_status of this TaskByServerSources.
         :type log_collect_status: str
@@ -621,7 +621,7 @@ class TaskByServerSources:
     def remain_seconds(self):
         r"""Gets the remain_seconds of this TaskByServerSources.
 
-        已迁移时长
+        迁移剩余时间（秒）
 
         :return: The remain_seconds of this TaskByServerSources.
         :rtype: int
@@ -632,7 +632,7 @@ class TaskByServerSources:
     def remain_seconds(self, remain_seconds):
         r"""Sets the remain_seconds of this TaskByServerSources.
 
-        已迁移时长
+        迁移剩余时间（秒）
 
         :param remain_seconds: The remain_seconds of this TaskByServerSources.
         :type remain_seconds: int

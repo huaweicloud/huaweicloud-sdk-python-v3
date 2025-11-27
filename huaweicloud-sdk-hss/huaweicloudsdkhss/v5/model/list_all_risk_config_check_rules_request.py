@@ -25,7 +25,8 @@ class ListAllRiskConfigCheckRulesRequest:
         'severity': 'str',
         'cluster_id': 'str',
         'tag': 'str',
-        'policy_group_id': 'str'
+        'policy_group_id': 'str',
+        'statistics_flag': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListAllRiskConfigCheckRulesRequest:
         'severity': 'severity',
         'cluster_id': 'cluster_id',
         'tag': 'tag',
-        'policy_group_id': 'policy_group_id'
+        'policy_group_id': 'policy_group_id',
+        'statistics_flag': 'statistics_flag'
     }
 
-    def __init__(self, enterprise_project_id=None, offset=None, limit=None, check_type=None, standard=None, statistics_scan_result=None, check_rule_name=None, severity=None, cluster_id=None, tag=None, policy_group_id=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, check_type=None, standard=None, statistics_scan_result=None, check_rule_name=None, severity=None, cluster_id=None, tag=None, policy_group_id=None, statistics_flag=None):
         r"""ListAllRiskConfigCheckRulesRequest
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ListAllRiskConfigCheckRulesRequest:
         :type tag: str
         :param policy_group_id: **参数解释** 策略组ID，不赋值时，查租户所有主机，host_id存在时，此值无效 **约束限制** 不涉及 **取值范围** 字符长度0-128位 **默认取值** 不涉及
         :type policy_group_id: str
+        :param statistics_flag: **参数解释** 是否从统计维度展示数据 **约束限制** 不涉及 **取值范围** - false : 不从统计维度展示 - true  : 从统计维度展示  **默认取值** false
+        :type statistics_flag: str
         """
         
         
@@ -84,6 +88,7 @@ class ListAllRiskConfigCheckRulesRequest:
         self._cluster_id = None
         self._tag = None
         self._policy_group_id = None
+        self._statistics_flag = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -106,6 +111,8 @@ class ListAllRiskConfigCheckRulesRequest:
             self.tag = tag
         if policy_group_id is not None:
             self.policy_group_id = policy_group_id
+        if statistics_flag is not None:
+            self.statistics_flag = statistics_flag
 
     @property
     def enterprise_project_id(self):
@@ -348,6 +355,28 @@ class ListAllRiskConfigCheckRulesRequest:
         :type policy_group_id: str
         """
         self._policy_group_id = policy_group_id
+
+    @property
+    def statistics_flag(self):
+        r"""Gets the statistics_flag of this ListAllRiskConfigCheckRulesRequest.
+
+        **参数解释** 是否从统计维度展示数据 **约束限制** 不涉及 **取值范围** - false : 不从统计维度展示 - true  : 从统计维度展示  **默认取值** false
+
+        :return: The statistics_flag of this ListAllRiskConfigCheckRulesRequest.
+        :rtype: str
+        """
+        return self._statistics_flag
+
+    @statistics_flag.setter
+    def statistics_flag(self, statistics_flag):
+        r"""Sets the statistics_flag of this ListAllRiskConfigCheckRulesRequest.
+
+        **参数解释** 是否从统计维度展示数据 **约束限制** 不涉及 **取值范围** - false : 不从统计维度展示 - true  : 从统计维度展示  **默认取值** false
+
+        :param statistics_flag: The statistics_flag of this ListAllRiskConfigCheckRulesRequest.
+        :type statistics_flag: str
+        """
+        self._statistics_flag = statistics_flag
 
     def to_dict(self):
         result = {}

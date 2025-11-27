@@ -35,7 +35,7 @@ class UpdatePrivateNatOption:
         :type name: str
         :param description: 私网NAT网关的描述。长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param spec: 私网NAT网关实例的规格。 取值为： \&quot;Small\&quot;：小型 \&quot;Medium\&quot;：中型 \&quot;Large\&quot;：大型 \&quot;Extra-large\&quot;：超大型
+        :param spec: 私网NAT网关实例的规格。 取值为： \&quot;Small\&quot;：小型 \&quot;Medium\&quot;：中型 \&quot;Large\&quot;：大型 \&quot;Extra-large\&quot;：超大型 \&quot;Extra-xlarge\&quot;：企业型
         :type spec: str
         """
         
@@ -101,7 +101,7 @@ class UpdatePrivateNatOption:
     def spec(self):
         r"""Gets the spec of this UpdatePrivateNatOption.
 
-        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
+        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型 \"Extra-xlarge\"：企业型
 
         :return: The spec of this UpdatePrivateNatOption.
         :rtype: str
@@ -112,7 +112,7 @@ class UpdatePrivateNatOption:
     def spec(self, spec):
         r"""Sets the spec of this UpdatePrivateNatOption.
 
-        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
+        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型 \"Extra-xlarge\"：企业型
 
         :param spec: The spec of this UpdatePrivateNatOption.
         :type spec: str

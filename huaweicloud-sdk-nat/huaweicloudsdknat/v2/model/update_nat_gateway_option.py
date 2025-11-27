@@ -18,17 +18,19 @@ class UpdateNatGatewayOption:
         'name': 'str',
         'description': 'str',
         'spec': 'str',
-        'session_conf': 'SessionConfiguration'
+        'session_conf': 'SessionConfiguration',
+        'prepaid_options': 'UpdateNatGatewayOptionPrepaidOptions'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'spec': 'spec',
-        'session_conf': 'session_conf'
+        'session_conf': 'session_conf',
+        'prepaid_options': 'prepaid_options'
     }
 
-    def __init__(self, name=None, description=None, spec=None, session_conf=None):
+    def __init__(self, name=None, description=None, spec=None, session_conf=None, prepaid_options=None):
         r"""UpdateNatGatewayOption
 
         The model defined in huaweicloud sdk
@@ -37,10 +39,12 @@ class UpdateNatGatewayOption:
         :type name: str
         :param description: 公网NAT网关的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param spec: 公网NAT网关的规格。 取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000 \&quot;2\&quot;：中型，SNAT最大连接数50000 \&quot;3\&quot;：大型，SNAT最大连接数200000 \&quot;4\&quot;：超大型，SNAT最大连接数1000000 
+        :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
         :type spec: str
         :param session_conf: 
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
+        :param prepaid_options: 
+        :type prepaid_options: :class:`huaweicloudsdknat.v2.UpdateNatGatewayOptionPrepaidOptions`
         """
         
         
@@ -49,6 +53,7 @@ class UpdateNatGatewayOption:
         self._description = None
         self._spec = None
         self._session_conf = None
+        self._prepaid_options = None
         self.discriminator = None
 
         if name is not None:
@@ -59,6 +64,8 @@ class UpdateNatGatewayOption:
             self.spec = spec
         if session_conf is not None:
             self.session_conf = session_conf
+        if prepaid_options is not None:
+            self.prepaid_options = prepaid_options
 
     @property
     def name(self):
@@ -108,7 +115,7 @@ class UpdateNatGatewayOption:
     def spec(self):
         r"""Gets the spec of this UpdateNatGatewayOption.
 
-        公网NAT网关的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
+        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
 
         :return: The spec of this UpdateNatGatewayOption.
         :rtype: str
@@ -119,7 +126,7 @@ class UpdateNatGatewayOption:
     def spec(self, spec):
         r"""Sets the spec of this UpdateNatGatewayOption.
 
-        公网NAT网关的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 
+        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
 
         :param spec: The spec of this UpdateNatGatewayOption.
         :type spec: str
@@ -143,6 +150,24 @@ class UpdateNatGatewayOption:
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
         """
         self._session_conf = session_conf
+
+    @property
+    def prepaid_options(self):
+        r"""Gets the prepaid_options of this UpdateNatGatewayOption.
+
+        :return: The prepaid_options of this UpdateNatGatewayOption.
+        :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayOptionPrepaidOptions`
+        """
+        return self._prepaid_options
+
+    @prepaid_options.setter
+    def prepaid_options(self, prepaid_options):
+        r"""Sets the prepaid_options of this UpdateNatGatewayOption.
+
+        :param prepaid_options: The prepaid_options of this UpdateNatGatewayOption.
+        :type prepaid_options: :class:`huaweicloudsdknat.v2.UpdateNatGatewayOptionPrepaidOptions`
+        """
+        self._prepaid_options = prepaid_options
 
     def to_dict(self):
         result = {}

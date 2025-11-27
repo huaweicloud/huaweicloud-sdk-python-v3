@@ -1354,6 +1354,87 @@ class BssClient(Client):
 
         return http_info
 
+    def list_customer_coupon_change_records(self, request):
+        r"""查询优惠券收支明细
+
+        功能描述：客户可以查询自身优惠券的收支明细情况(此接口不适用于伙伴的转售类客户。)
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCustomerCouponChangeRecords
+        :type request: :class:`huaweicloudsdkbss.v2.ListCustomerCouponChangeRecordsRequest`
+        :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerCouponChangeRecordsResponse`
+        """
+        http_info = self._list_customer_coupon_change_records_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_customer_coupon_change_records_invoker(self, request):
+        http_info = self._list_customer_coupon_change_records_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_customer_coupon_change_records_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/promotions/benefits/account-change-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomerCouponChangeRecordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'balance_type' in local_var_params:
+            query_params.append(('balance_type', local_var_params['balance_type']))
+        if 'revenue_expense_type' in local_var_params:
+            query_params.append(('revenue_expense_type', local_var_params['revenue_expense_type']))
+        if 'trade_type' in local_var_params:
+            query_params.append(('trade_type', local_var_params['trade_type']))
+        if 'trade_id' in local_var_params:
+            query_params.append(('trade_id', local_var_params['trade_id']))
+        if 'trade_time_begin' in local_var_params:
+            query_params.append(('trade_time_begin', local_var_params['trade_time_begin']))
+        if 'trade_time_end' in local_var_params:
+            query_params.append(('trade_time_end', local_var_params['trade_time_end']))
+        if 'coupon_id' in local_var_params:
+            query_params.append(('coupon_id', local_var_params['coupon_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_customer_on_demand_resources(self, request):
         r"""查询客户按需资源列表
 
@@ -3500,7 +3581,7 @@ class BssClient(Client):
         return http_info
 
     def list_service_resources(self, request):
-        r"""根据云服务类型查询资源列表
+        r"""根据云服务类型查询资源类型列表
 
         伙伴在伙伴销售平台根据云服务类型查询关联的资源类型编码和名称，用于查询按需产品的价格或包年/包月产品的价格。
         
@@ -5795,10 +5876,7 @@ class BssClient(Client):
     def list_pay_per_use_customer_resources(self, request):
         r"""查询客户包年/包月资源列表
 
-        客户在伙伴销售平台查询某个或所有的包年/包月资源。
-        
-        &gt;![](public_sys-resources/icon-note.gif) **说明：** 
-        &gt;成功调用本接口后，如果您需要对已生效状态的资源进行续订，您可以调用“[查询包年/包月产品价格](https://support.huaweicloud.com/api-bpconsole/bcloud_01002.html)”接口对查询到的包年/包月资源进行续订询价，然后再调用“[续订包年/包月资源](https://support.huaweicloud.com/api-bpconsole/api_order_00018.html)”接口进行续订。
+        功能描述：伙伴/客户在伙伴/客户自建平台查询某个或所有的包年/包月资源
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6152,11 +6230,7 @@ class BssClient(Client):
     def show_refund_order_details(self, request):
         r"""查询退款订单的金额详情
 
-        客户在伙伴销售平台查询某次退订订单或者降配订单的退款金额来自哪些资源和对应订单。
-        
-        &gt;![](public_sys-resources/icon-note.gif) **说明：** 
-        &gt;-   可以在调用完“[退订包年/包月资源](https://support.huaweicloud.com/api-oce/api_order_00019.html)”接口生成退订订单ID后，调用该接口查询退订订单对应的金额所属资源和订单。例如，调用“[退订包年/包月资源](https://support.huaweicloud.com/api-oce/api_order_00019.html)”接口退订资源及其已续费周期后，您可以调用本小节的接口查询到退订金额归属的原开通订单ID和原续费订单ID。
-        &gt;-   2018年5月份之后退订的订单才能查询到归属的原订单ID。
+        功能描述：伙伴/客户在伙伴/客户销售平台查询某次退订订单或者降配订单的退款金额来自哪些资源和对应订单
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6191,6 +6265,10 @@ class BssClient(Client):
         query_params = []
         if 'order_id' in local_var_params:
             query_params.append(('order_id', local_var_params['order_id']))
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
 
         header_params = {}
 

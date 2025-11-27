@@ -101,12 +101,15 @@ class PostMigProjectBody:
             self.start_target_server = start_target_server
         if speed_limit is not None:
             self.speed_limit = speed_limit
-        self.use_public_ip = use_public_ip
-        self.exist_server = exist_server
+        if use_public_ip is not None:
+            self.use_public_ip = use_public_ip
+        if exist_server is not None:
+            self.exist_server = exist_server
         self.type = type
         if enterprise_project is not None:
             self.enterprise_project = enterprise_project
-        self.syncing = syncing
+        if syncing is not None:
+            self.syncing = syncing
         if start_network_check is not None:
             self.start_network_check = start_network_check
 

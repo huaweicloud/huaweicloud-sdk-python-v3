@@ -33,6 +33,761 @@ class NatAsyncClient(Client):
 
         return client_builder
 
+    def batch_create_delete_transit_subnet_tags_async(self, request):
+        r"""批量添加删除中转子网标签
+
+        - 为指定中转子网实例批量添加或删除标签
+        - 标签管理服务需要使用该接口批量管理中转子网实例的标签。
+        - 一个中转子网上最多有20个标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchCreateDeleteTransitSubnetTags
+        :type request: :class:`huaweicloudsdknat.v2.BatchCreateDeleteTransitSubnetTagsRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.BatchCreateDeleteTransitSubnetTagsResponse`
+        """
+        http_info = self._batch_create_delete_transit_subnet_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_create_delete_transit_subnet_tags_async_invoker(self, request):
+        http_info = self._batch_create_delete_transit_subnet_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_delete_transit_subnet_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/transit-subnets/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateDeleteTransitSubnetTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_transit_subnet_async(self, request):
+        r"""创建中转子网
+
+        创建中转子网。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTransitSubnet
+        :type request: :class:`huaweicloudsdknat.v2.CreateTransitSubnetRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.CreateTransitSubnetResponse`
+        """
+        http_info = self._create_transit_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_transit_subnet_async_invoker(self, request):
+        http_info = self._create_transit_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_transit_subnet_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/private-nat/transit-subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTransitSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_transit_subnet_tag_async(self, request):
+        r"""添加中转子网标签
+
+        - 为指定中转子网添加标签
+        - 一个中转子网上最多有20个标签。
+        - 此接口为幂等接口：
+        - 创建时，如果创建的标签已经存在（key相同），则覆盖。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateTransitSubnetTag
+        :type request: :class:`huaweicloudsdknat.v2.CreateTransitSubnetTagRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.CreateTransitSubnetTagResponse`
+        """
+        http_info = self._create_transit_subnet_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_transit_subnet_tag_async_invoker(self, request):
+        http_info = self._create_transit_subnet_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_transit_subnet_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/transit-subnets/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTransitSubnetTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_transit_subnet_async(self, request):
+        r"""删除中转子网
+
+        删除中转子网。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTransitSubnet
+        :type request: :class:`huaweicloudsdknat.v2.DeleteTransitSubnetRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.DeleteTransitSubnetResponse`
+        """
+        http_info = self._delete_transit_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_transit_subnet_async_invoker(self, request):
+        http_info = self._delete_transit_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_transit_subnet_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/private-nat/transit-subnets/{transit_subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTransitSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'transit_subnet_id' in local_var_params:
+            path_params['transit_subnet_id'] = local_var_params['transit_subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_transit_subnet_tag_async(self, request):
+        r"""删除中转子网标签
+
+        - 幂等接口：
+        - 删除时，不对标签字符集做校验，调用接口前必须要做encodeURI，服务端需要对接口uri做decodeURI。删除的key不存在报404，key不能为空或者空字符串。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteTransitSubnetTag
+        :type request: :class:`huaweicloudsdknat.v2.DeleteTransitSubnetTagRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.DeleteTransitSubnetTagResponse`
+        """
+        http_info = self._delete_transit_subnet_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_transit_subnet_tag_async_invoker(self, request):
+        http_info = self._delete_transit_subnet_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_transit_subnet_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/transit-subnets/{resource_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTransitSubnetTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_transit_subnet_async(self, request):
+        r"""查询中转子网列表
+
+        查询中转子网列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTransitSubnet
+        :type request: :class:`huaweicloudsdknat.v2.ListTransitSubnetRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ListTransitSubnetResponse`
+        """
+        http_info = self._list_transit_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_transit_subnet_async_invoker(self, request):
+        http_info = self._list_transit_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_transit_subnet_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/transit-subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTransitSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'csv'
+        if 'virsubnet_project_id' in local_var_params:
+            query_params.append(('virsubnet_project_id', local_var_params['virsubnet_project_id']))
+            collection_formats['virsubnet_project_id'] = 'csv'
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+            collection_formats['vpc_id'] = 'csv'
+        if 'virsubnet_id' in local_var_params:
+            query_params.append(('virsubnet_id', local_var_params['virsubnet_id']))
+            collection_formats['virsubnet_id'] = 'csv'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+            collection_formats['status'] = 'csv'
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_transit_subnet_tags_async(self, request):
+        r"""查询中转子网项目标签
+
+        - 查询租户在指定Project的所有中转子网标签集合。
+        - 标签管理服务需要能够列出当前租户全部已使用的中转子网标签集合，为打中转子网标签和过滤中转子网实例时提供标签联想功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTransitSubnetTags
+        :type request: :class:`huaweicloudsdknat.v2.ListTransitSubnetTagsRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ListTransitSubnetTagsResponse`
+        """
+        http_info = self._list_transit_subnet_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_transit_subnet_tags_async_invoker(self, request):
+        http_info = self._list_transit_subnet_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_transit_subnet_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/transit-subnets/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTransitSubnetTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_transit_subnets_by_tags_async(self, request):
+        r"""查询中转子网实例
+
+        - 使用标签过滤中转子网实例。
+        - 标签管理服务需要提供按标签过滤中转子网服务实例并汇总显示在列表中，需要中转子网服务提供查询能力。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTransitSubnetsByTags
+        :type request: :class:`huaweicloudsdknat.v2.ListTransitSubnetsByTagsRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ListTransitSubnetsByTagsResponse`
+        """
+        http_info = self._list_transit_subnets_by_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_transit_subnets_by_tags_async_invoker(self, request):
+        http_info = self._list_transit_subnets_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_transit_subnets_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/transit-subnets/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTransitSubnetsByTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_transit_subnet_async(self, request):
+        r"""查询指定的中转子网详情
+
+        查询指定的中转子网详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTransitSubnet
+        :type request: :class:`huaweicloudsdknat.v2.ShowTransitSubnetRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ShowTransitSubnetResponse`
+        """
+        http_info = self._show_transit_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_transit_subnet_async_invoker(self, request):
+        http_info = self._show_transit_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_transit_subnet_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/transit-subnets/{transit_subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTransitSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'transit_subnet_id' in local_var_params:
+            path_params['transit_subnet_id'] = local_var_params['transit_subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_transit_subnet_tags_async(self, request):
+        r"""查询中转子网标签
+
+        - 查询指定中转子网实例的标签信息。
+        - 标签管理服务需要使用该接口查询指定中转子网实例的全部标签数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowTransitSubnetTags
+        :type request: :class:`huaweicloudsdknat.v2.ShowTransitSubnetTagsRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ShowTransitSubnetTagsResponse`
+        """
+        http_info = self._show_transit_subnet_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_transit_subnet_tags_async_invoker(self, request):
+        http_info = self._show_transit_subnet_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_transit_subnet_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/transit-subnets/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTransitSubnetTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_transit_subnet_async(self, request):
+        r"""更新中转子网
+
+        更新指定的中转子网。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTransitSubnet
+        :type request: :class:`huaweicloudsdknat.v2.UpdateTransitSubnetRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.UpdateTransitSubnetResponse`
+        """
+        http_info = self._update_transit_subnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_transit_subnet_async_invoker(self, request):
+        http_info = self._update_transit_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_transit_subnet_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/private-nat/transit-subnets/{transit_subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTransitSubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'transit_subnet_id' in local_var_params:
+            path_params['transit_subnet_id'] = local_var_params['transit_subnet_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_nat_gateway_dnat_rules_async(self, request):
         r"""批量创建DNAT规则
 
@@ -402,11 +1157,15 @@ class NatAsyncClient(Client):
             query_params.append(('external_service_port', local_var_params['external_service_port']))
         if 'floating_ip_address' in local_var_params:
             query_params.append(('floating_ip_address', local_var_params['floating_ip_address']))
+        if 'global_eip_address' in local_var_params:
+            query_params.append(('global_eip_address', local_var_params['global_eip_address']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
             collection_formats['status'] = 'csv'
         if 'floating_ip_id' in local_var_params:
             query_params.append(('floating_ip_id', local_var_params['floating_ip_id']))
+        if 'global_eip_id' in local_var_params:
+            query_params.append(('global_eip_id', local_var_params['global_eip_id']))
         if 'internal_service_port' in local_var_params:
             query_params.append(('internal_service_port', local_var_params['internal_service_port']))
         if 'limit' in local_var_params:
@@ -513,9 +1272,6 @@ class NatAsyncClient(Client):
         if 'transit_ip_id' in local_var_params:
             query_params.append(('transit_ip_id', local_var_params['transit_ip_id']))
             collection_formats['transit_ip_id'] = 'csv'
-        if 'external_ip_address' in local_var_params:
-            query_params.append(('external_ip_address', local_var_params['external_ip_address']))
-            collection_formats['external_ip_address'] = 'csv'
         if 'network_interface_id' in local_var_params:
             query_params.append(('network_interface_id', local_var_params['network_interface_id']))
             collection_formats['network_interface_id'] = 'csv'
@@ -525,6 +1281,18 @@ class NatAsyncClient(Client):
         if 'private_ip_address' in local_var_params:
             query_params.append(('private_ip_address', local_var_params['private_ip_address']))
             collection_formats['private_ip_address'] = 'csv'
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+            collection_formats['protocol'] = 'csv'
+        if 'internal_service_port' in local_var_params:
+            query_params.append(('internal_service_port', local_var_params['internal_service_port']))
+            collection_formats['internal_service_port'] = 'csv'
+        if 'transit_service_port' in local_var_params:
+            query_params.append(('transit_service_port', local_var_params['transit_service_port']))
+            collection_formats['transit_service_port'] = 'csv'
+        if 'transit_ip_address' in local_var_params:
+            query_params.append(('transit_ip_address', local_var_params['transit_ip_address']))
+            collection_formats['transit_ip_address'] = 'csv'
 
         header_params = {}
 
@@ -1954,6 +2722,69 @@ class NatAsyncClient(Client):
 
         return http_info
 
+    def list_nat_gateway_specs_async(self, request):
+        r"""支持创建的NAT网关规格列表
+
+        支持创建的NAT网关规格列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNatGatewaySpecs
+        :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaySpecsRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewaySpecsResponse`
+        """
+        http_info = self._list_nat_gateway_specs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_nat_gateway_specs_async_invoker(self, request):
+        http_info = self._list_nat_gateway_specs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_nat_gateway_specs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/nat_gateway_specs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNatGatewaySpecsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_nat_gateway_tag_async(self, request):
         r"""查询公网NAT网关项目标签
 
@@ -2054,6 +2885,8 @@ class NatAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'tenant_id' in local_var_params:
+            query_params.append(('tenant_id', local_var_params['tenant_id']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
         if 'enterprise_project_id' in local_var_params:
@@ -2080,6 +2913,10 @@ class NatAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
 
         header_params = {}
 
@@ -2309,6 +3146,69 @@ class NatAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_specs_async(self, request):
+        r"""查询项目支持的网关规格列表
+
+        查询项目支持的网关规格列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSpecs
+        :type request: :class:`huaweicloudsdknat.v2.ListSpecsRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ListSpecsResponse`
+        """
+        http_info = self._list_specs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_specs_async_invoker(self, request):
+        http_info = self._list_specs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_specs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/specs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSpecsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -2916,6 +3816,9 @@ class NatAsyncClient(Client):
         if 'virsubnet_id' in local_var_params:
             query_params.append(('virsubnet_id', local_var_params['virsubnet_id']))
             collection_formats['virsubnet_id'] = 'csv'
+        if 'transit_subnet_id' in local_var_params:
+            query_params.append(('transit_subnet_id', local_var_params['transit_subnet_id']))
+            collection_formats['transit_subnet_id'] = 'csv'
 
         header_params = {}
 
@@ -3314,10 +4217,12 @@ class NatAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'floating_ip_address' in local_var_params:
             query_params.append(('floating_ip_address', local_var_params['floating_ip_address']))
-            collection_formats['floating_ip_address'] = 'csv'
+        if 'global_eip_address' in local_var_params:
+            query_params.append(('global_eip_address', local_var_params['global_eip_address']))
         if 'floating_ip_id' in local_var_params:
             query_params.append(('floating_ip_id', local_var_params['floating_ip_id']))
-            collection_formats['floating_ip_id'] = 'csv'
+        if 'global_eip_id' in local_var_params:
+            query_params.append(('global_eip_id', local_var_params['global_eip_id']))
         if 'id' in local_var_params:
             query_params.append(('id', local_var_params['id']))
         if 'description' in local_var_params:

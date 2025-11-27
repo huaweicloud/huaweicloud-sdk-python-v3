@@ -1,3 +1,797 @@
+# 3.1.177 2025-11-27
+
+### HuaweiCloud SDK Core
+
+- _Features_
+    - None
+- _Bug Fix_
+    - None
+- _Change_
+    - Optimize the logic for automatically obtaining domainId
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `ListCustomerCouponChangeRecords`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRefundOrderDetails**
+    - changes of request param
+      - `+ customer_id`
+      - `+ indirect_partner_id`
+  - **ListCustomerselfResourceRecords**
+    - changes of response param
+      - `+ fee_records.period_num`
+  - **ListSubCustomerBillDetail**
+    - changes of response param
+      - `+ fee_records.period_num`
+  - **ListPayPerUseCustomerResources**
+    - changes of request param
+      - `+ customer_id`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.period_num`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRefundOrderDetails**
+    - changes of request param
+      - `+ customer_id`
+      - `+ indirect_partner_id`
+  - **ListCustomerselfResourceRecords**
+    - changes of response param
+      - `+ fee_records.period_num`
+  - **ListPayPerUseCustomerResources**
+    - changes of request param
+      - `+ customer_id`
+  - **ListCustomerselfResourceRecordDetails**
+    - changes of response param
+      - `+ monthly_records.period_num`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateKubernetesClusterCert**
+    - changes of request param
+      - `* expire_at: date -> string`
+
+### HuaweiCloud SDK CDN
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListExportTasks`
+    - `CreateExportTask`
+    - `ShowSpecialUser`
+    - `ExportStatsOpen`
+    - `ListCdnDomainTopPath`
+    - `ShowDomainCountryStat`
+    - `CreateAccessControlTask`
+    - `ListAccessControlTask`
+    - `ListBanUrl`
+    - `ListDomainConfigs`
+    - `ListSpecialConfiguration`
+    - `CreateDomainByDuplicate`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowStatsConfigs**
+    - changes of request param
+      - `+ limit`
+      - `+ offset`
+
+### HuaweiCloud SDK Cloudtest
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `BatchUpdateTestCasesInDiffVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK COC
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `ListGroupAliResourceRelations`
+    - `ListGroupOtherResourceRelations`
+    - `CountResources`
+    - `SyncResourceAgent`
+    - `ListResourceViews`
+    - `CreateResourceViews`
+    - `UpdateResourceViews`
+    - `DeleteResourceViews`
+    - `SyncResourcesOfResourceView`
+    - `CountResourcesOfResourceView`
+    - `ListResourcesOfResourceView`
+    - `ListResourceTags`
+    - `CreateResourceTags`
+    - `ListGroupRmsResourceRelations`
+    - `UpdateGroupRmsResourceRelation`
+    - `CreateGroupRmsResourceRelation`
+    - `DeleteGroupRmsResourceRelation`
+    - `CountGroupRmsResourceRelations`
+    - `ImportOtherResource`
+    - `ListApplicationView`
+    - `ListCapacityView`
+    - `ListCapacityOrder`
+    - `ListEnterpriseProjectCollect`
+    - `UpdateEnterpriseProjectCollect`
+    - `ListVendorAccount`
+    - `CreateVendorAccount`
+    - `UpdateVendorAccount`
+    - `DeleteVendorAccount`
+    - `CountOtherResource`
+    - `CreateApplication`
+    - `UpdateApplication`
+    - `DeleteApplication`
+    - `ListApplicationGroups`
+    - `CreateApplicationGroup`
+    - `SyncGroupResource`
+    - `UpdateApplicationGroup`
+    - `DeleteApplicationGroup`
+    - `ListApplicationComponents`
+    - `CreateApplicationComponents`
+    - `UpdateApplicationComponent`
+    - `DeleteApplicationComponent`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListExecutionInstances**
+    - changes of response param
+      - `+ data.start_time`
+      - `- data.strat_time`
+  - **GetDocumentAtomicInfo**
+    - changes of response param
+      - `+ error_msg`
+      - `+ data`
+      - `+ error_code`
+      - `- outputs`
+      - `- atomic_name_en`
+      - `- atomic_name_zh`
+      - `- inputs`
+      - `- atomic_unique_key`
+      - `- tags`
+  - **DeleteDocument**
+    - changes of response param
+      - `+ data`
+  - **GetDocument**
+    - changes of response param
+      - `+ error_msg`
+      - `+ data`
+      - `+ error_code`
+      - `- update_time`
+      - `- creator`
+      - `- enterprise_project_id`
+      - `- create_time`
+      - `- versions`
+      - `- modifier`
+      - `- name`
+      - `- id`
+      - `- document_id`
+      - `- version`
+      - `- content`
+  - **UpdateDocument**
+    - changes of response param
+      - `+ data`
+  - **ExecuteDocument**
+    - changes of response param
+      - `+ data`
+  - **ListScriptResourceTags**
+    - changes of response param
+      - `+ data`
+      - `- total`
+      - `- tags`
+  - **ListResources**
+    - changes of response param
+      - `* data.tags: object -> list<TagResponse>`
+  - **CreateDocument**
+    - changes of response param
+      - `+ data`
+  - **GetExecution**
+    - changes of response param
+      - `+ data.id`
+  - **ListExecutions**
+    - changes of response param
+      - `+ data.id`
+  - **UpdateResourceTags**
+    - changes of response param
+      - `+ data`
+  - **BatchCreateApplicationView**
+    - changes of response param
+      - `+ data`
+      - `- application_ids`
+      - `- group_ids`
+      - `- component_ids`
+  - **ListPublicScripts**
+    - changes of response param
+      - `+ data.data.status`
+
+### HuaweiCloud SDK DAS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListInspectionReport`
+    - `ListEmailRecord`
+    - `ListEmailTemplate`
+    - `UpdateEmailTemplate`
+    - `AddEmailTemplate`
+    - `DeleteEmailTemplate`
+    - `BatchSubscribeReport`
+    - `ListInstanceGroup`
+    - `UpdateInstanceGroup`
+    - `AddInstanceGroup`
+    - `DeleteInstanceGroup`
+    - `AddInstanceToGroup`
+    - `BatchSendEmail`
+    - `CheckCredentialForBatchInspection`
+    - `SaveCredentialForBatchInspection`
+    - `ShowCredential`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `RestoreNewInstance`, `ListInstances`
+  - **ShowBackupDownloadLink**
+    - changes of request param
+      - `- X-Language`
+    - changes of response param
+      - `+ group_id`
+      - `+ group_name`
+  - **RestoreNewInstance**
+    - changes of request param
+      - `+ restore_point`
+      - `- datastore`
+      - `- region`
+      - `- port`
+      - `- mode`
+      - `- tags`
+      - `- flavor.storage`
+      - `* flavor: list<CreateInstanceFlavorOption> -> list<RestoreNewInstanceFlavorOption>`
+      - `* body: object<CreateInstanceRequestBody> -> object<RestoreNewInstanceRequestBody>`
+    - changes of response param
+      - `- tags`
+      - `- port`
+      - `- flavor.storage`
+      - `* flavor: list<CreateInstanceFlavorOption> -> list<RestoreNewInstanceFlavorOption>`
+  - **ShowInstanceConfigurationModifyHistory**
+    - changes of response param
+      - `+ total_count`
+
+### HuaweiCloud SDK DeH
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListDedicatedHostTypes**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+
+### HuaweiCloud SDK ELB
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFlavors**
+    - changes of response param
+      - `+ flavors.info.tls_connection`
+      - `+ flavors.info.tls_cps`
+  - **ShowFlavor**
+    - changes of response param
+      - `+ flavor.info.tls_connection`
+      - `+ flavor.info.tls_cps`
+  - **ListLoadBalancers**
+    - changes of response param
+      - `+ loadbalancers.custom_qos_limit`
+  - **CreateLoadBalancer**
+    - changes of response param
+      - `+ loadbalancer.custom_qos_limit`
+  - **ShowLoadBalancer**
+    - changes of response param
+      - `+ loadbalancer.custom_qos_limit`
+  - **UpdateLoadBalancer**
+    - changes of response param
+      - `+ loadbalancer.custom_qos_limit`
+  - **BatchAddAvailableZones**
+    - changes of response param
+      - `+ loadbalancer.custom_qos_limit`
+  - **BatchRemoveAvailableZones**
+    - changes of response param
+      - `+ loadbalancer.custom_qos_limit`
+
+### HuaweiCloud SDK ESW
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListResourceJobs**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+  - **ListInstances**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+  - **ListConnections**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+  - **ListConnectionsAllInstances**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+
+### HuaweiCloud SDK EVS
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListVolumesInRecycle`
+    - `ShowVolumeInRecycle`
+    - `DeleteVolumeInRecycle`
+    - `RevertVolumeInRecycle`
+    - `ShowRecyclePolicy`
+    - `UpdateRecyclePolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateVolume**
+    - changes of response param
+      - `- metadata.full_clone`
+  - **ListVolumesByTags**
+    - changes of response param
+      - `- resources.resource_detail.metadata.full_clone`
+
+### HuaweiCloud SDK GA
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListByoipPools`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEndpoints**
+    - changes of response param
+      - `+ endpoints.resource_type: enum value [ECS,ELB,CUSTOM_IP,CUSTOM_DOMAIN_NAME,CUSTOM_EIP]`
+  - **CreateEndpoint**
+    - changes of request param
+      - `+ endpoint.resource_type: enum value [ECS,ELB,CUSTOM_IP,CUSTOM_DOMAIN_NAME,CUSTOM_EIP]`
+    - changes of response param
+      - `+ endpoint.resource_type: enum value [ECS,ELB,CUSTOM_IP,CUSTOM_DOMAIN_NAME,CUSTOM_EIP]`
+  - **ShowEndpoint**
+    - changes of response param
+      - `+ endpoint.resource_type: enum value [ECS,ELB,CUSTOM_IP,CUSTOM_DOMAIN_NAME,CUSTOM_EIP]`
+  - **UpdateEndpoint**
+    - changes of response param
+      - `+ endpoint.resource_type: enum value [ECS,ELB,CUSTOM_IP,CUSTOM_DOMAIN_NAME,CUSTOM_EIP]`
+  - **ListHealthChecks**
+    - changes of response param
+      - `+ health_checks.protocol: enum value [UDP]`
+  - **CreateHealthCheck**
+    - changes of request param
+      - `+ health_check.protocol: enum value [UDP]`
+    - changes of response param
+      - `+ health_check.protocol: enum value [UDP]`
+  - **ShowHealthCheck**
+    - changes of response param
+      - `+ health_check.protocol: enum value [UDP]`
+  - **UpdateHealthCheck**
+    - changes of request param
+      - `+ health_check.protocol: enum value [UDP]`
+    - changes of response param
+      - `+ health_check.protocol: enum value [UDP]`
+  - **ListAccelerators**
+    - changes of response param
+      - `+ accelerators.ip_sets.ip_type: enum value [IPV6]`
+  - **CreateAccelerator**
+    - changes of response param
+      - `+ accelerator.ip_sets.ip_type: enum value [IPV6]`
+  - **ShowAccelerator**
+    - changes of response param
+      - `+ accelerator.ip_sets.ip_type: enum value [IPV6]`
+  - **UpdateAccelerator**
+    - changes of response param
+      - `+ accelerator.ip_sets.ip_type: enum value [IPV6]`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `ListSslCertDownloadAddresses`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `SwitchLogCollectionStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowErrorLogSwitchStatus**
+    - changes of request param
+      - `+ X-Language: enum value [zh-cn,en-us]`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ChangeSensitiveInfo`
+    - `ShowFilePathWhiteDetail`
+    - `ChangeFilePathWhiteDetail`
+    - `RestoreDuplicationInfo`
+    - `AssociateBackupPolicy`
+    - `ListServerlessAsset`
+    - `ListServerlessAssetDetail`
+    - `SwitchWebTamperProtectStatus`
+    - `ListWebTamperProtectStatistics`
+    - `ListWebTamperImageOptions`
+    - `ListWebTamperProtectionConfigs`
+    - `UpdateWebTamperProtectionConfig`
+    - `CreateWebTamperProtectionConfig`
+    - `DeleteWebTamperProtectionConfig`
+    - `ListWebTamperEvent`
+    - `ListWebTamperProtectionContainer`
+    - `ListWebTamperProtectionDirectory`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListRaspEvents**
+    - changes of response param
+      - `* data_list.alarm_time: object -> integer`
+  - **ListClusterProtectPolicyTemplates**
+    - changes of request param
+      - `* limit: required -> optional`
+      - `* offset: required -> optional`
+  - **ExportBaselineSecurityCheckReport**
+    - changes of request param
+      - `+ tag`
+      - `+ check_type`
+      - `+ statistics_scan_result`
+      - `+ check_rule_name`
+      - `+ cluster_id`
+  - **ListRiskConfigCheckRules**
+    - changes of response param
+      - `+ data_list.not_enable_click_description`
+  - **ListCheckRuleHost**
+    - changes of response param
+      - `+ data_list.enable_verify`
+  - **ListHostCheckRules**
+    - changes of response param
+      - `+ data_list.enable_verify`
+  - **ListAllRiskConfigCheckRules**
+    - changes of request param
+      - `+ statistics_flag`
+
+### HuaweiCloud SDK IoTDA
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the following APIs:
+    - `ListExportTasks`
+    - `CreateExportTask`
+    - `DeleteExportTask`
+    - `ShowExportTask`
+    - `ShowCertificate`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRuleAction**
+    - changes of response param
+      - `+ channel_detail.mqtt_device_forwarding`
+  - **UpdateRuleAction**
+    - changes of request param
+      - `+ channel_detail.mqtt_device_forwarding`
+    - changes of response param
+      - `+ channel_detail.mqtt_device_forwarding`
+  - **CreateRuleAction**
+    - changes of request param
+      - `+ channel_detail.mqtt_device_forwarding`
+    - changes of response param
+      - `+ channel_detail.mqtt_device_forwarding`
+  - **ListRuleActions**
+    - changes of response param
+      - `+ actions.channel_detail.mqtt_device_forwarding`
+
+### HuaweiCloud SDK MRS
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the API `ListAsyncTaskStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListClusters**
+    - changes of response param
+      - `+ clusters.azCategory`
+  - **ShowClusterDetails**
+    - changes of response param
+      - `+ cluster.azCategory`
+  - **ListAvailableZones**
+    - changes of response param
+      - `+ available_zones.az_category`
+      - `+ available_zones.charge_policy`
+
+### HuaweiCloud SDK NAT
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListTransitSubnet`
+    - `CreateTransitSubnet`
+    - `ShowTransitSubnet`
+    - `UpdateTransitSubnet`
+    - `DeleteTransitSubnet`
+    - `ListTransitSubnetsByTags`
+    - `ListTransitSubnetTags`
+    - `ShowTransitSubnetTags`
+    - `CreateTransitSubnetTag`
+    - `BatchCreateDeleteTransitSubnetTags`
+    - `DeleteTransitSubnetTag`
+    - `ListSpecs`
+    - `ListNatGatewaySpecs`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListNatGatewayDnatRules**
+    - changes of request param
+      - `+ global_eip_address`
+      - `+ global_eip_id`
+      - `* created_at: string -> date-time`
+  - **ListNatGatewaySnatRules**
+    - changes of request param
+      - `+ global_eip_address`
+      - `+ global_eip_id`
+      - `* floating_ip_address: list<string> -> string`
+      - `* floating_ip_id: list<string> -> string`
+      - `* created_at: string -> date-time`
+  - **ListPrivateDnats**
+    - changes of request param
+      - `+ protocol`
+      - `+ internal_service_port`
+      - `+ transit_service_port`
+      - `+ transit_ip_address`
+      - `- external_ip_address`
+    - changes of response param
+      - `+ dnat_rules.transit_ip_address`
+      - `+ dnat_rules.status`
+  - **CreatePrivateDnat**
+    - changes of response param
+      - `+ dnat_rule.transit_ip_address`
+      - `+ dnat_rule.status`
+  - **ShowPrivateDnat**
+    - changes of response param
+      - `+ dnat_rule.transit_ip_address`
+      - `+ dnat_rule.status`
+  - **UpdatePrivateDnat**
+    - changes of request param
+      - `+ dnat_rule.transit_ip_address`
+    - changes of response param
+      - `+ dnat_rule.transit_ip_address`
+      - `+ dnat_rule.status`
+  - **ListPrivateNatsByTags**
+    - changes of response param
+      - `+ resources.tags`
+      - `- resources.resource_tag`
+  - **ListTransitIpsByTags**
+    - changes of response param
+      - `+ resources.tags`
+      - `- resources.resource_tag`
+  - **ListNatGateways**
+    - changes of request param
+      - `+ tenant_id`
+      - `+ sort_key`
+      - `+ sort_dir`
+      - `* created_at: string -> date-time`
+    - changes of response param
+      - `+ nat_gateways.pps_max`
+      - `+ nat_gateways.bps_max`
+      - `+ nat_gateways.spec: enum value [5]`
+      - `* nat_gateways.created_at: string -> date-time`
+  - **CreateNatGateway**
+    - changes of request param
+      - `+ nat_gateway.tags`
+      - `+ nat_gateway.prepaid_options`
+      - `+ nat_gateway.spec: enum value [5]`
+    - changes of response param
+      - `+ nat_gateway_id`
+      - `+ order_id`
+      - `+ nat_gateway.pps_max`
+      - `+ nat_gateway.bps_max`
+      - `+ nat_gateway.spec: enum value [5]`
+      - `* nat_gateway.created_at: string -> date-time`
+  - **ShowNatGateway**
+    - changes of response param
+      - `+ nat_gateway.pps_max`
+      - `+ nat_gateway.bps_max`
+      - `+ nat_gateway.spec: enum value [5]`
+      - `* nat_gateway.created_at: string -> date-time`
+  - **UpdateNatGateway**
+    - changes of request param
+      - `+ nat_gateway.prepaid_options`
+      - `+ nat_gateway.spec: enum value [5]`
+    - changes of response param
+      - `+ order_id`
+      - `+ nat_gateway.pps_max`
+      - `+ nat_gateway.bps_max`
+      - `+ nat_gateway.spec: enum value [5]`
+      - `* nat_gateway.created_at: string -> date-time`
+  - **ListPrivateNats**
+    - changes of response param
+      - `+ gateways.rule_max`
+      - `+ gateways.transit_ip_pool_size_max`
+      - `+ gateways.spec: enum value [Extra-xlarge]`
+      - `+ gateways.status: enum value [INACTIVE]`
+      - `+ gateways.downlink_vpcs.ngport_ip_address`
+      - `* gateways.tags: list<PrivateTag> -> list<Tag>`
+  - **CreatePrivateNat**
+    - changes of request param
+      - `+ gateway.spec: enum value [Extra-xlarge]`
+      - `+ gateway.downlink_vpcs.ngport_ip_address`
+      - `* gateway.tags: list<PrivateTag> -> list<Tag>`
+    - changes of response param
+      - `+ gateway.rule_max`
+      - `+ gateway.transit_ip_pool_size_max`
+      - `+ gateway.spec: enum value [Extra-xlarge]`
+      - `+ gateway.status: enum value [INACTIVE]`
+      - `+ gateway.downlink_vpcs.ngport_ip_address`
+      - `* gateway.tags: list<PrivateTag> -> list<Tag>`
+  - **ShowPrivateNat**
+    - changes of response param
+      - `+ gateway.rule_max`
+      - `+ gateway.transit_ip_pool_size_max`
+      - `+ gateway.spec: enum value [Extra-xlarge]`
+      - `+ gateway.status: enum value [INACTIVE]`
+      - `+ gateway.downlink_vpcs.ngport_ip_address`
+      - `* gateway.tags: list<PrivateTag> -> list<Tag>`
+  - **UpdatePrivateNat**
+    - changes of request param
+      - `+ gateway.spec: enum value [Extra-xlarge]`
+    - changes of response param
+      - `+ gateway.rule_max`
+      - `+ gateway.transit_ip_pool_size_max`
+      - `+ gateway.spec: enum value [Extra-xlarge]`
+      - `+ gateway.status: enum value [INACTIVE]`
+      - `+ gateway.downlink_vpcs.ngport_ip_address`
+      - `* gateway.tags: list<PrivateTag> -> list<Tag>`
+  - **ListPrivateSnats**
+    - changes of response param
+      - `+ snat_rules.status`
+  - **CreatePrivateSnat**
+    - changes of response param
+      - `+ snat_rule.status`
+  - **ShowPrivateSnat**
+    - changes of response param
+      - `+ snat_rule.status`
+  - **UpdatePrivateSnat**
+    - changes of response param
+      - `+ snat_rule.status`
+  - **ListTransitIps**
+    - changes of request param
+      - `+ transit_subnet_id`
+    - changes of response param
+      - `+ transit_ips.status`
+      - `* transit_ips.tags: list<PrivateTag> -> list<Tag>`
+  - **CreateTransitIp**
+    - changes of response param
+      - `+ transit_ip.status`
+      - `* transit_ip.tags: list<PrivateTag> -> list<Tag>`
+  - **ShowTransitIp**
+    - changes of response param
+      - `+ transit_ip.status`
+      - `* transit_ip.tags: list<PrivateTag> -> list<Tag>`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListRemoteDb`
+    - `ListReplicationErrors`
+    - `UpdateStatistics`
+    - `RestartDbAgentJob`
+    - `ModifyDbAgentJob`
+    - `SwitchDbAgentJob`
+    - `CreateDistribution`
+    - `BatchModifyPublication`
+    - `CreatePublication`
+- _Bug Fix_
+  - None
+- _Change_
+  - **GetInstancesNoIndexTables**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK WAF
+
+- _API Version_
+  - V1
+- _Features_
+  - Support the following APIs:
+    - `BatchDeleteRules`
+    - `CreateEventExportJob`
+    - `CopyPolicyById`
+    - `BatchDeleteCompositeHosts`
+    - `BatchUpdateGeoipRules`
+    - `BatchUpdateCcRules`
+    - `BatchUpdateCustomRules`
+    - `BatchUpdateWhiteblackipRules`
+    - `BatchUpdateIpReputationRules`
+    - `BatchUpdateAntitamperRules`
+    - `BatchUpdateAntileakageRules`
+    - `BatchUpdateIgnoreRules`
+    - `BatchUpdatePrivacyRules`
+    - `ConfirmDnsDomain`
+    - `UpdatePremiumInstanceProgress`
+    - `UpdateSecurityReportSubscription`
+    - `DeleteSecurityReportSubscription`
+    - `DeleteIpReputationRule`
+    - `CreateSecurityReportSubscription`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.176 2025-11-20
 
 ### HuaweiCloud SDK AAD

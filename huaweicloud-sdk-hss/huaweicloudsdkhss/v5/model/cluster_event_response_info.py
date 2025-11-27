@@ -57,35 +57,35 @@ class ClusterEventResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param action: 阻断动作
+        :param action: **参数解释**: 阻断动作 **取值范围**: 字符长度1-32位 
         :type action: str
-        :param cluster_name: 集群名称
+        :param cluster_name: **参数解释**: 集群名称 **取值范围**: 字符长度1-64位 
         :type cluster_name: str
-        :param cluster_id: 集群Id
+        :param cluster_id: **参数解释**: 集群Id **取值范围**: 字符长度1-256位 
         :type cluster_id: str
-        :param event_name: 事件名称
+        :param event_name: **参数解释**: 事件名称 **取值范围**: 字符长度1-128位 
         :type event_name: str
-        :param event_class_id: 事件唯一标识
+        :param event_class_id: **参数解释**: 事件唯一标识 **取值范围**: 字符长度1-128位 
         :type event_class_id: str
-        :param event_id: 事件id
+        :param event_id: **参数解释**: 事件id **取值范围**: 字符长度1-128位 
         :type event_id: str
-        :param event_type: 事件类型
+        :param event_type: **参数解释**: 事件类型 **取值范围**: 最小值1000，最大值30000 
         :type event_type: int
-        :param event_content: 事件内容
+        :param event_content: **参数解释**: 事件内容 **取值范围**: 字符长度1-128位 
         :type event_content: str
-        :param handle_status: 处理状态，包含如下:   - unhandled：未处理   - handled：已处理
+        :param handle_status: **参数解释**: 处理状态 **取值范围**: - unhandled：未处理。 - handled：已处理。 
         :type handle_status: str
-        :param create_time: 创建时间
+        :param create_time: **参数解释**: 创建时间 **取值范围**: 最小值0，最大值9223372036854775807 
         :type create_time: int
-        :param update_time: 更新时间
+        :param update_time: **参数解释**: 更新时间 **取值范围**: 最小值0，最大值9223372036854775807 
         :type update_time: int
-        :param project_id: 项目ID
+        :param project_id: **参数解释**: 项目ID **取值范围**: 字符长度1-128位 
         :type project_id: str
-        :param enterprise_project_id: 企业ID
+        :param enterprise_project_id: **参数解释**: 企业ID **取值范围**: 字符长度1-256位 
         :type enterprise_project_id: str
-        :param policy_name: 策略名称
+        :param policy_name: **参数解释**: 策略名称 **取值范围**: 字符长度1-128位 
         :type policy_name: str
-        :param policy_id: 策略ID
+        :param policy_id: **参数解释**: 策略ID **取值范围**: 字符长度1-128位 
         :type policy_id: str
         :param resource_info: 
         :type resource_info: :class:`huaweicloudsdkhss.v5.ClusterEventResourceResponseInfo`
@@ -148,7 +148,7 @@ class ClusterEventResponseInfo:
     def action(self):
         r"""Gets the action of this ClusterEventResponseInfo.
 
-        阻断动作
+        **参数解释**: 阻断动作 **取值范围**: 字符长度1-32位 
 
         :return: The action of this ClusterEventResponseInfo.
         :rtype: str
@@ -159,7 +159,7 @@ class ClusterEventResponseInfo:
     def action(self, action):
         r"""Sets the action of this ClusterEventResponseInfo.
 
-        阻断动作
+        **参数解释**: 阻断动作 **取值范围**: 字符长度1-32位 
 
         :param action: The action of this ClusterEventResponseInfo.
         :type action: str
@@ -170,7 +170,7 @@ class ClusterEventResponseInfo:
     def cluster_name(self):
         r"""Gets the cluster_name of this ClusterEventResponseInfo.
 
-        集群名称
+        **参数解释**: 集群名称 **取值范围**: 字符长度1-64位 
 
         :return: The cluster_name of this ClusterEventResponseInfo.
         :rtype: str
@@ -181,7 +181,7 @@ class ClusterEventResponseInfo:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this ClusterEventResponseInfo.
 
-        集群名称
+        **参数解释**: 集群名称 **取值范围**: 字符长度1-64位 
 
         :param cluster_name: The cluster_name of this ClusterEventResponseInfo.
         :type cluster_name: str
@@ -192,7 +192,7 @@ class ClusterEventResponseInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this ClusterEventResponseInfo.
 
-        集群Id
+        **参数解释**: 集群Id **取值范围**: 字符长度1-256位 
 
         :return: The cluster_id of this ClusterEventResponseInfo.
         :rtype: str
@@ -203,7 +203,7 @@ class ClusterEventResponseInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ClusterEventResponseInfo.
 
-        集群Id
+        **参数解释**: 集群Id **取值范围**: 字符长度1-256位 
 
         :param cluster_id: The cluster_id of this ClusterEventResponseInfo.
         :type cluster_id: str
@@ -214,7 +214,7 @@ class ClusterEventResponseInfo:
     def event_name(self):
         r"""Gets the event_name of this ClusterEventResponseInfo.
 
-        事件名称
+        **参数解释**: 事件名称 **取值范围**: 字符长度1-128位 
 
         :return: The event_name of this ClusterEventResponseInfo.
         :rtype: str
@@ -225,7 +225,7 @@ class ClusterEventResponseInfo:
     def event_name(self, event_name):
         r"""Sets the event_name of this ClusterEventResponseInfo.
 
-        事件名称
+        **参数解释**: 事件名称 **取值范围**: 字符长度1-128位 
 
         :param event_name: The event_name of this ClusterEventResponseInfo.
         :type event_name: str
@@ -236,7 +236,7 @@ class ClusterEventResponseInfo:
     def event_class_id(self):
         r"""Gets the event_class_id of this ClusterEventResponseInfo.
 
-        事件唯一标识
+        **参数解释**: 事件唯一标识 **取值范围**: 字符长度1-128位 
 
         :return: The event_class_id of this ClusterEventResponseInfo.
         :rtype: str
@@ -247,7 +247,7 @@ class ClusterEventResponseInfo:
     def event_class_id(self, event_class_id):
         r"""Sets the event_class_id of this ClusterEventResponseInfo.
 
-        事件唯一标识
+        **参数解释**: 事件唯一标识 **取值范围**: 字符长度1-128位 
 
         :param event_class_id: The event_class_id of this ClusterEventResponseInfo.
         :type event_class_id: str
@@ -258,7 +258,7 @@ class ClusterEventResponseInfo:
     def event_id(self):
         r"""Gets the event_id of this ClusterEventResponseInfo.
 
-        事件id
+        **参数解释**: 事件id **取值范围**: 字符长度1-128位 
 
         :return: The event_id of this ClusterEventResponseInfo.
         :rtype: str
@@ -269,7 +269,7 @@ class ClusterEventResponseInfo:
     def event_id(self, event_id):
         r"""Sets the event_id of this ClusterEventResponseInfo.
 
-        事件id
+        **参数解释**: 事件id **取值范围**: 字符长度1-128位 
 
         :param event_id: The event_id of this ClusterEventResponseInfo.
         :type event_id: str
@@ -280,7 +280,7 @@ class ClusterEventResponseInfo:
     def event_type(self):
         r"""Gets the event_type of this ClusterEventResponseInfo.
 
-        事件类型
+        **参数解释**: 事件类型 **取值范围**: 最小值1000，最大值30000 
 
         :return: The event_type of this ClusterEventResponseInfo.
         :rtype: int
@@ -291,7 +291,7 @@ class ClusterEventResponseInfo:
     def event_type(self, event_type):
         r"""Sets the event_type of this ClusterEventResponseInfo.
 
-        事件类型
+        **参数解释**: 事件类型 **取值范围**: 最小值1000，最大值30000 
 
         :param event_type: The event_type of this ClusterEventResponseInfo.
         :type event_type: int
@@ -302,7 +302,7 @@ class ClusterEventResponseInfo:
     def event_content(self):
         r"""Gets the event_content of this ClusterEventResponseInfo.
 
-        事件内容
+        **参数解释**: 事件内容 **取值范围**: 字符长度1-128位 
 
         :return: The event_content of this ClusterEventResponseInfo.
         :rtype: str
@@ -313,7 +313,7 @@ class ClusterEventResponseInfo:
     def event_content(self, event_content):
         r"""Sets the event_content of this ClusterEventResponseInfo.
 
-        事件内容
+        **参数解释**: 事件内容 **取值范围**: 字符长度1-128位 
 
         :param event_content: The event_content of this ClusterEventResponseInfo.
         :type event_content: str
@@ -324,7 +324,7 @@ class ClusterEventResponseInfo:
     def handle_status(self):
         r"""Gets the handle_status of this ClusterEventResponseInfo.
 
-        处理状态，包含如下:   - unhandled：未处理   - handled：已处理
+        **参数解释**: 处理状态 **取值范围**: - unhandled：未处理。 - handled：已处理。 
 
         :return: The handle_status of this ClusterEventResponseInfo.
         :rtype: str
@@ -335,7 +335,7 @@ class ClusterEventResponseInfo:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ClusterEventResponseInfo.
 
-        处理状态，包含如下:   - unhandled：未处理   - handled：已处理
+        **参数解释**: 处理状态 **取值范围**: - unhandled：未处理。 - handled：已处理。 
 
         :param handle_status: The handle_status of this ClusterEventResponseInfo.
         :type handle_status: str
@@ -346,7 +346,7 @@ class ClusterEventResponseInfo:
     def create_time(self):
         r"""Gets the create_time of this ClusterEventResponseInfo.
 
-        创建时间
+        **参数解释**: 创建时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The create_time of this ClusterEventResponseInfo.
         :rtype: int
@@ -357,7 +357,7 @@ class ClusterEventResponseInfo:
     def create_time(self, create_time):
         r"""Sets the create_time of this ClusterEventResponseInfo.
 
-        创建时间
+        **参数解释**: 创建时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param create_time: The create_time of this ClusterEventResponseInfo.
         :type create_time: int
@@ -368,7 +368,7 @@ class ClusterEventResponseInfo:
     def update_time(self):
         r"""Gets the update_time of this ClusterEventResponseInfo.
 
-        更新时间
+        **参数解释**: 更新时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The update_time of this ClusterEventResponseInfo.
         :rtype: int
@@ -379,7 +379,7 @@ class ClusterEventResponseInfo:
     def update_time(self, update_time):
         r"""Sets the update_time of this ClusterEventResponseInfo.
 
-        更新时间
+        **参数解释**: 更新时间 **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param update_time: The update_time of this ClusterEventResponseInfo.
         :type update_time: int
@@ -390,7 +390,7 @@ class ClusterEventResponseInfo:
     def project_id(self):
         r"""Gets the project_id of this ClusterEventResponseInfo.
 
-        项目ID
+        **参数解释**: 项目ID **取值范围**: 字符长度1-128位 
 
         :return: The project_id of this ClusterEventResponseInfo.
         :rtype: str
@@ -401,7 +401,7 @@ class ClusterEventResponseInfo:
     def project_id(self, project_id):
         r"""Sets the project_id of this ClusterEventResponseInfo.
 
-        项目ID
+        **参数解释**: 项目ID **取值范围**: 字符长度1-128位 
 
         :param project_id: The project_id of this ClusterEventResponseInfo.
         :type project_id: str
@@ -412,7 +412,7 @@ class ClusterEventResponseInfo:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ClusterEventResponseInfo.
 
-        企业ID
+        **参数解释**: 企业ID **取值范围**: 字符长度1-256位 
 
         :return: The enterprise_project_id of this ClusterEventResponseInfo.
         :rtype: str
@@ -423,7 +423,7 @@ class ClusterEventResponseInfo:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ClusterEventResponseInfo.
 
-        企业ID
+        **参数解释**: 企业ID **取值范围**: 字符长度1-256位 
 
         :param enterprise_project_id: The enterprise_project_id of this ClusterEventResponseInfo.
         :type enterprise_project_id: str
@@ -434,7 +434,7 @@ class ClusterEventResponseInfo:
     def policy_name(self):
         r"""Gets the policy_name of this ClusterEventResponseInfo.
 
-        策略名称
+        **参数解释**: 策略名称 **取值范围**: 字符长度1-128位 
 
         :return: The policy_name of this ClusterEventResponseInfo.
         :rtype: str
@@ -445,7 +445,7 @@ class ClusterEventResponseInfo:
     def policy_name(self, policy_name):
         r"""Sets the policy_name of this ClusterEventResponseInfo.
 
-        策略名称
+        **参数解释**: 策略名称 **取值范围**: 字符长度1-128位 
 
         :param policy_name: The policy_name of this ClusterEventResponseInfo.
         :type policy_name: str
@@ -456,7 +456,7 @@ class ClusterEventResponseInfo:
     def policy_id(self):
         r"""Gets the policy_id of this ClusterEventResponseInfo.
 
-        策略ID
+        **参数解释**: 策略ID **取值范围**: 字符长度1-128位 
 
         :return: The policy_id of this ClusterEventResponseInfo.
         :rtype: str
@@ -467,7 +467,7 @@ class ClusterEventResponseInfo:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this ClusterEventResponseInfo.
 
-        策略ID
+        **参数解释**: 策略ID **取值范围**: 字符长度1-128位 
 
         :param policy_id: The policy_id of this ClusterEventResponseInfo.
         :type policy_id: str

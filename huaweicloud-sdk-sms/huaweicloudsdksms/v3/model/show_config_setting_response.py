@@ -34,7 +34,7 @@ class ShowConfigSettingResponse(SdkResponse):
 
         :param task_id: 任务ID
         :type task_id: str
-        :param migrate_type: 迁移类型
+        :param migrate_type: 迁移类型 WINDOWS_MIGRATE_BLOCK: windows块级迁移 LINUX_MIGRATE_FILE: linux文件级迁移 LINUX_MIGRATE_BLOCK: linux块级迁移
         :type migrate_type: str
         :param configurations: 配置项的具体配置信息
         :type configurations: list[:class:`huaweicloudsdksms.v3.ConfigBody`]
@@ -80,7 +80,7 @@ class ShowConfigSettingResponse(SdkResponse):
     def migrate_type(self):
         r"""Gets the migrate_type of this ShowConfigSettingResponse.
 
-        迁移类型
+        迁移类型 WINDOWS_MIGRATE_BLOCK: windows块级迁移 LINUX_MIGRATE_FILE: linux文件级迁移 LINUX_MIGRATE_BLOCK: linux块级迁移
 
         :return: The migrate_type of this ShowConfigSettingResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class ShowConfigSettingResponse(SdkResponse):
     def migrate_type(self, migrate_type):
         r"""Sets the migrate_type of this ShowConfigSettingResponse.
 
-        迁移类型
+        迁移类型 WINDOWS_MIGRATE_BLOCK: windows块级迁移 LINUX_MIGRATE_FILE: linux文件级迁移 LINUX_MIGRATE_BLOCK: linux块级迁移
 
         :param migrate_type: The migrate_type of this ShowConfigSettingResponse.
         :type migrate_type: str

@@ -59,7 +59,7 @@ class ServerDisk:
         :type os_disk: bool
         :param relation_name: Linux系统 目的端ECS中与源端关联的磁盘名称
         :type relation_name: str
-        :param inode_size: inode数量
+        :param inode_size: inode大小
         :type inode_size: int
         """
         
@@ -270,7 +270,7 @@ class ServerDisk:
     def inode_size(self):
         r"""Gets the inode_size of this ServerDisk.
 
-        inode数量
+        inode大小
 
         :return: The inode_size of this ServerDisk.
         :rtype: int
@@ -281,7 +281,7 @@ class ServerDisk:
     def inode_size(self, inode_size):
         r"""Sets the inode_size of this ServerDisk.
 
-        inode数量
+        inode大小
 
         :param inode_size: The inode_size of this ServerDisk.
         :type inode_size: int

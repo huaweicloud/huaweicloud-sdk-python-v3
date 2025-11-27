@@ -64,7 +64,8 @@ class LoadBalancer:
         'protection_status': 'str',
         'protection_reason': 'str',
         'log_group_id': 'str',
-        'log_topic_id': 'str'
+        'log_topic_id': 'str',
+        'custom_qos_limit': 'CustomQosLimit'
     }
 
     attribute_map = {
@@ -117,10 +118,11 @@ class LoadBalancer:
         'protection_status': 'protection_status',
         'protection_reason': 'protection_reason',
         'log_group_id': 'log_group_id',
-        'log_topic_id': 'log_topic_id'
+        'log_topic_id': 'log_topic_id',
+        'custom_qos_limit': 'custom_qos_limit'
     }
 
-    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, billing_info=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, gw_flavor_id=None, loadbalancer_type=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None, charge_mode=None, service_lb_mode=None, instance_type=None, instance_id=None, proxy_protocol_extensions=None, waf_failure_action=None, protection_status=None, protection_reason=None, log_group_id=None, log_topic_id=None):
+    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, billing_info=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, gw_flavor_id=None, loadbalancer_type=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None, charge_mode=None, service_lb_mode=None, instance_type=None, instance_id=None, proxy_protocol_extensions=None, waf_failure_action=None, protection_status=None, protection_reason=None, log_group_id=None, log_topic_id=None, custom_qos_limit=None):
         r"""LoadBalancer
 
         The model defined in huaweicloud sdk
@@ -175,11 +177,11 @@ class LoadBalancer:
         :type enterprise_project_id: str
         :param billing_info: **参数解释**：资源账单信息。  **取值范围**： - 空：按需计费。 [- 非空：包周期计费，格式为：order_id:product_id:region_id:project_id。如：CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
         :type billing_info: str
-        :param l4_flavor_id: **参数解释**：负载均衡器4层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示4层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
+        :param l4_flavor_id: **参数解释**：负载均衡器4层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示4层上限规格。  **取值范围**：不涉及  [HCSO场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
         :type l4_flavor_id: str
         :param l4_scale_flavor_id: **参数解释**：四层弹性规格ID。  **取值范围**：不涉及  &gt; 该字段已经废弃，请勿使用。
         :type l4_scale_flavor_id: str
-        :param l7_flavor_id: **参数解释**：负载均衡器7层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示7层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
+        :param l7_flavor_id: **参数解释**：负载均衡器7层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示7层上限规格。  **取值范围**：不涉及  [HCSO场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
         :type l7_flavor_id: str
         :param l7_scale_flavor_id: **参数解释**：七层弹性Flavor ID。  **取值范围**：不涉及  &gt; 该字段已经废弃，请勿使用。
         :type l7_scale_flavor_id: str
@@ -197,7 +199,7 @@ class LoadBalancer:
         :type elb_virsubnet_type: str
         :param ip_target_enable: **参数解释**：是否启用IP类型后端转发。 [开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,dt,hcso_dt,hws_eu) [开启IP类型后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、云下数据中心的服务器。](tag:srg,fcs)  **取值范围**： - true：开启。 - false：不开启。  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type ip_target_enable: bool
-        :param frozen_scene: **参数解释**：负载均衡器的冻结场景。 若负载均衡器有多个冻结场景，用逗号分隔。  **取值范围**： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
+        :param frozen_scene: **参数解释**：负载均衡器的冻结场景。 若负载均衡器有多个冻结场景，用逗号分隔。  **取值范围**： [- POLICE：公安冻结场景。](tag:hws) - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
         :type frozen_scene: str
         :param deletion_protection_enable: **参数解释**：是否开启删除保护。仅当前局点启用删除保护特性后才会返回该字段。  **取值范围**： - false：不开启。 - true：开启。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type deletion_protection_enable: bool
@@ -225,6 +227,8 @@ class LoadBalancer:
         :type log_group_id: str
         :param log_topic_id: **参数解释**：LB所关联的云日志服务（LTS）的日志组下的日志流ID。  **取值范围**：不涉及
         :type log_topic_id: str
+        :param custom_qos_limit: 
+        :type custom_qos_limit: :class:`huaweicloudsdkelb.v3.CustomQosLimit`
         """
         
         
@@ -279,6 +283,7 @@ class LoadBalancer:
         self._protection_reason = None
         self._log_group_id = None
         self._log_topic_id = None
+        self._custom_qos_limit = None
         self.discriminator = None
 
         self.id = id
@@ -346,6 +351,8 @@ class LoadBalancer:
             self.log_group_id = log_group_id
         if log_topic_id is not None:
             self.log_topic_id = log_topic_id
+        if custom_qos_limit is not None:
+            self.custom_qos_limit = custom_qos_limit
 
     @property
     def id(self):
@@ -901,7 +908,7 @@ class LoadBalancer:
     def l4_flavor_id(self):
         r"""Gets the l4_flavor_id of this LoadBalancer.
 
-        **参数解释**：负载均衡器4层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示4层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
+        **参数解释**：负载均衡器4层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示4层上限规格。  **取值范围**：不涉及  [HCSO场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
 
         :return: The l4_flavor_id of this LoadBalancer.
         :rtype: str
@@ -912,7 +919,7 @@ class LoadBalancer:
     def l4_flavor_id(self, l4_flavor_id):
         r"""Sets the l4_flavor_id of this LoadBalancer.
 
-        **参数解释**：负载均衡器4层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示4层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
+        **参数解释**：负载均衡器4层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示4层上限规格。  **取值范围**：不涉及  [HCSO场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,fcs)
 
         :param l4_flavor_id: The l4_flavor_id of this LoadBalancer.
         :type l4_flavor_id: str
@@ -945,7 +952,7 @@ class LoadBalancer:
     def l7_flavor_id(self):
         r"""Gets the l7_flavor_id of this LoadBalancer.
 
-        **参数解释**：负载均衡器7层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示7层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
+        **参数解释**：负载均衡器7层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示7层上限规格。  **取值范围**：不涉及  [HCSO场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
 
         :return: The l7_flavor_id of this LoadBalancer.
         :rtype: str
@@ -956,7 +963,7 @@ class LoadBalancer:
     def l7_flavor_id(self, l7_flavor_id):
         r"""Sets the l7_flavor_id of this LoadBalancer.
 
-        **参数解释**：负载均衡器7层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示7层上限规格。  **取值范围**：不涉及  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
+        **参数解释**：负载均衡器7层规格ID。 若当前负载均衡器是弹性规格实例，则该字段表示7层上限规格。  **取值范围**：不涉及  [HCSO场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hk_vdf,srg,fcs)
 
         :param l7_flavor_id: The l7_flavor_id of this LoadBalancer.
         :type l7_flavor_id: str
@@ -1143,7 +1150,7 @@ class LoadBalancer:
     def frozen_scene(self):
         r"""Gets the frozen_scene of this LoadBalancer.
 
-        **参数解释**：负载均衡器的冻结场景。 若负载均衡器有多个冻结场景，用逗号分隔。  **取值范围**： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
+        **参数解释**：负载均衡器的冻结场景。 若负载均衡器有多个冻结场景，用逗号分隔。  **取值范围**： [- POLICE：公安冻结场景。](tag:hws) - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
 
         :return: The frozen_scene of this LoadBalancer.
         :rtype: str
@@ -1154,7 +1161,7 @@ class LoadBalancer:
     def frozen_scene(self, frozen_scene):
         r"""Sets the frozen_scene of this LoadBalancer.
 
-        **参数解释**：负载均衡器的冻结场景。 若负载均衡器有多个冻结场景，用逗号分隔。  **取值范围**： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
+        **参数解释**：负载均衡器的冻结场景。 若负载均衡器有多个冻结场景，用逗号分隔。  **取值范围**： [- POLICE：公安冻结场景。](tag:hws) - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - PARTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - AREAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,hcso_dt,ocb,hws_ocb)
 
         :param frozen_scene: The frozen_scene of this LoadBalancer.
         :type frozen_scene: str
@@ -1442,6 +1449,24 @@ class LoadBalancer:
         :type log_topic_id: str
         """
         self._log_topic_id = log_topic_id
+
+    @property
+    def custom_qos_limit(self):
+        r"""Gets the custom_qos_limit of this LoadBalancer.
+
+        :return: The custom_qos_limit of this LoadBalancer.
+        :rtype: :class:`huaweicloudsdkelb.v3.CustomQosLimit`
+        """
+        return self._custom_qos_limit
+
+    @custom_qos_limit.setter
+    def custom_qos_limit(self, custom_qos_limit):
+        r"""Sets the custom_qos_limit of this LoadBalancer.
+
+        :param custom_qos_limit: The custom_qos_limit of this LoadBalancer.
+        :type custom_qos_limit: :class:`huaweicloudsdkelb.v3.CustomQosLimit`
+        """
+        self._custom_qos_limit = custom_qos_limit
 
     def to_dict(self):
         result = {}

@@ -75,13 +75,13 @@ class ListCertificatesRequest:
         :type domain: list[str]
         :param type: **参数解释**：证书的类型。 支持多值查询，查询条件格式：type&#x3D;xxx&amp;type&#x3D;xxx。  **约束限制**：不涉及  **取值范围**： - server：服务器证书。 - client：CA证书。 - server_sm：服务器SM双证书。  **默认取值**：不涉及
         :type type: list[str]
-        :param scm_certificate_id: **参数解释**：云证书管理服务（CCM）中的证书ID。 支持多值查询，查询条件格式：scm_certificate_id&#x3D;xxx&amp;scm_certificate_id&#x3D;xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        :param scm_certificate_id: **参数解释**：云证书与管理服务（CCM）中的证书ID。 支持多值查询，查询条件格式：scm_certificate_id&#x3D;xxx&amp;scm_certificate_id&#x3D;xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type scm_certificate_id: list[str]
         :param common_name: **参数解释**：证书的主域名。 支持多值查询，查询条件格式：common_name&#x3D;xxx&amp;common_name&#x3D;xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type common_name: list[str]
         :param fingerprint: **参数解释**：证书的指纹。 支持多值查询，查询条件格式：fingerprint&#x3D;xxx&amp;fingerprint&#x3D;xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type fingerprint: list[str]
-        :param source: **参数解释**：证书来源。 支持多值查询，查询条件格式：source&#x3D;xxx&amp;source&#x3D;xxx。  **约束限制**：不涉及  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：不涉及
+        :param source: **参数解释**：证书来源。 支持多值查询，查询条件格式：source&#x3D;xxx&amp;source&#x3D;xxx。  **约束限制**：不涉及  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：不涉及
         :type source: list[str]
         :param protection_status: **参数解释**：修改保护状态。 支持多值查询，查询条件格式：protection_status&#x3D;xxx&amp;protection_status&#x3D;xxx。  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护 - consoleProtection: 控制台修改保护，即禁止通过控制台修改。  **默认取值**：不涉及
         :type protection_status: list[str]
@@ -346,7 +346,7 @@ class ListCertificatesRequest:
     def scm_certificate_id(self):
         r"""Gets the scm_certificate_id of this ListCertificatesRequest.
 
-        **参数解释**：云证书管理服务（CCM）中的证书ID。 支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：云证书与管理服务（CCM）中的证书ID。 支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The scm_certificate_id of this ListCertificatesRequest.
         :rtype: list[str]
@@ -357,7 +357,7 @@ class ListCertificatesRequest:
     def scm_certificate_id(self, scm_certificate_id):
         r"""Sets the scm_certificate_id of this ListCertificatesRequest.
 
-        **参数解释**：云证书管理服务（CCM）中的证书ID。 支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：云证书与管理服务（CCM）中的证书ID。 支持多值查询，查询条件格式：scm_certificate_id=xxx&scm_certificate_id=xxx。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param scm_certificate_id: The scm_certificate_id of this ListCertificatesRequest.
         :type scm_certificate_id: list[str]
@@ -412,7 +412,7 @@ class ListCertificatesRequest:
     def source(self):
         r"""Gets the source of this ListCertificatesRequest.
 
-        **参数解释**：证书来源。 支持多值查询，查询条件格式：source=xxx&source=xxx。  **约束限制**：不涉及  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：不涉及
+        **参数解释**：证书来源。 支持多值查询，查询条件格式：source=xxx&source=xxx。  **约束限制**：不涉及  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：不涉及
 
         :return: The source of this ListCertificatesRequest.
         :rtype: list[str]
@@ -423,7 +423,7 @@ class ListCertificatesRequest:
     def source(self, source):
         r"""Sets the source of this ListCertificatesRequest.
 
-        **参数解释**：证书来源。 支持多值查询，查询条件格式：source=xxx&source=xxx。  **约束限制**：不涉及  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：不涉及
+        **参数解释**：证书来源。 支持多值查询，查询条件格式：source=xxx&source=xxx。  **约束限制**：不涉及  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：不涉及
 
         :param source: The source of this ListCertificatesRequest.
         :type source: list[str]

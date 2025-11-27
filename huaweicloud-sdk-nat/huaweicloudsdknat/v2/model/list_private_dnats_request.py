@@ -23,10 +23,13 @@ class ListPrivateDnatsRequest:
         'description': 'list[str]',
         'gateway_id': 'list[str]',
         'transit_ip_id': 'list[str]',
-        'external_ip_address': 'list[str]',
         'network_interface_id': 'list[str]',
         'type': 'list[str]',
-        'private_ip_address': 'list[str]'
+        'private_ip_address': 'list[str]',
+        'protocol': 'list[str]',
+        'internal_service_port': 'list[str]',
+        'transit_service_port': 'list[str]',
+        'transit_ip_address': 'list[str]'
     }
 
     attribute_map = {
@@ -38,18 +41,21 @@ class ListPrivateDnatsRequest:
         'description': 'description',
         'gateway_id': 'gateway_id',
         'transit_ip_id': 'transit_ip_id',
-        'external_ip_address': 'external_ip_address',
         'network_interface_id': 'network_interface_id',
         'type': 'type',
-        'private_ip_address': 'private_ip_address'
+        'private_ip_address': 'private_ip_address',
+        'protocol': 'protocol',
+        'internal_service_port': 'internal_service_port',
+        'transit_service_port': 'transit_service_port',
+        'transit_ip_address': 'transit_ip_address'
     }
 
-    def __init__(self, limit=None, marker=None, page_reverse=None, id=None, enterprise_project_id=None, description=None, gateway_id=None, transit_ip_id=None, external_ip_address=None, network_interface_id=None, type=None, private_ip_address=None):
+    def __init__(self, limit=None, marker=None, page_reverse=None, id=None, enterprise_project_id=None, description=None, gateway_id=None, transit_ip_id=None, network_interface_id=None, type=None, private_ip_address=None, protocol=None, internal_service_port=None, transit_service_port=None, transit_ip_address=None):
         r"""ListPrivateDnatsRequest
 
         The model defined in huaweicloud sdk
 
-        :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        :param limit: 功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
         :type limit: int
         :param marker: 功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
         :type marker: str
@@ -65,14 +71,20 @@ class ListPrivateDnatsRequest:
         :type gateway_id: list[str]
         :param transit_ip_id: 中转IP的ID。
         :type transit_ip_id: list[str]
-        :param external_ip_address: 中转IP的地址。
-        :type external_ip_address: list[str]
-        :param network_interface_id: 网络接口ID，支持计算、ELB、VIP等实例的网络接口。
+        :param network_interface_id: 计算实例、ELBV2、ELBV3、VIP等资源的端口ID。
         :type network_interface_id: list[str]
-        :param type: DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELB的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
+        :param type: DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELBv2的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
         :type type: list[str]
-        :param private_ip_address: 后端实例的IP私网地址。
+        :param private_ip_address: 后端资源（计算实例、ELBV2、ELBV3、VIP等）的私网IP地址。
         :type private_ip_address: list[str]
+        :param protocol: DNAT规则协议类型， 目前支持TCP/tcp/Tcp/tCp/tcP/TCp/tCP/TcP、 UDP/udp/Udp/uDp/udP/UDp/uDP/UdP、 ANY/any/Any/aNy/anY/ANy/aNY/AnY。 分别对应协议号6、17、0。
+        :type protocol: list[str]
+        :param internal_service_port: 后端实例的端口号（计算实例、ELBV2、ELBV3、VIP等)。
+        :type internal_service_port: list[str]
+        :param transit_service_port: 中转IP的端口号。
+        :type transit_service_port: list[str]
+        :param transit_ip_address: 中转IP的地址。
+        :type transit_ip_address: list[str]
         """
         
         
@@ -85,10 +97,13 @@ class ListPrivateDnatsRequest:
         self._description = None
         self._gateway_id = None
         self._transit_ip_id = None
-        self._external_ip_address = None
         self._network_interface_id = None
         self._type = None
         self._private_ip_address = None
+        self._protocol = None
+        self._internal_service_port = None
+        self._transit_service_port = None
+        self._transit_ip_address = None
         self.discriminator = None
 
         if limit is not None:
@@ -107,20 +122,26 @@ class ListPrivateDnatsRequest:
             self.gateway_id = gateway_id
         if transit_ip_id is not None:
             self.transit_ip_id = transit_ip_id
-        if external_ip_address is not None:
-            self.external_ip_address = external_ip_address
         if network_interface_id is not None:
             self.network_interface_id = network_interface_id
         if type is not None:
             self.type = type
         if private_ip_address is not None:
             self.private_ip_address = private_ip_address
+        if protocol is not None:
+            self.protocol = protocol
+        if internal_service_port is not None:
+            self.internal_service_port = internal_service_port
+        if transit_service_port is not None:
+            self.transit_service_port = transit_service_port
+        if transit_ip_address is not None:
+            self.transit_ip_address = transit_ip_address
 
     @property
     def limit(self):
         r"""Gets the limit of this ListPrivateDnatsRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :return: The limit of this ListPrivateDnatsRequest.
         :rtype: int
@@ -131,7 +152,7 @@ class ListPrivateDnatsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPrivateDnatsRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :param limit: The limit of this ListPrivateDnatsRequest.
         :type limit: int
@@ -293,32 +314,10 @@ class ListPrivateDnatsRequest:
         self._transit_ip_id = transit_ip_id
 
     @property
-    def external_ip_address(self):
-        r"""Gets the external_ip_address of this ListPrivateDnatsRequest.
-
-        中转IP的地址。
-
-        :return: The external_ip_address of this ListPrivateDnatsRequest.
-        :rtype: list[str]
-        """
-        return self._external_ip_address
-
-    @external_ip_address.setter
-    def external_ip_address(self, external_ip_address):
-        r"""Sets the external_ip_address of this ListPrivateDnatsRequest.
-
-        中转IP的地址。
-
-        :param external_ip_address: The external_ip_address of this ListPrivateDnatsRequest.
-        :type external_ip_address: list[str]
-        """
-        self._external_ip_address = external_ip_address
-
-    @property
     def network_interface_id(self):
         r"""Gets the network_interface_id of this ListPrivateDnatsRequest.
 
-        网络接口ID，支持计算、ELB、VIP等实例的网络接口。
+        计算实例、ELBV2、ELBV3、VIP等资源的端口ID。
 
         :return: The network_interface_id of this ListPrivateDnatsRequest.
         :rtype: list[str]
@@ -329,7 +328,7 @@ class ListPrivateDnatsRequest:
     def network_interface_id(self, network_interface_id):
         r"""Sets the network_interface_id of this ListPrivateDnatsRequest.
 
-        网络接口ID，支持计算、ELB、VIP等实例的网络接口。
+        计算实例、ELBV2、ELBV3、VIP等资源的端口ID。
 
         :param network_interface_id: The network_interface_id of this ListPrivateDnatsRequest.
         :type network_interface_id: list[str]
@@ -340,7 +339,7 @@ class ListPrivateDnatsRequest:
     def type(self):
         r"""Gets the type of this ListPrivateDnatsRequest.
 
-        DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELB的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
+        DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELBv2的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
 
         :return: The type of this ListPrivateDnatsRequest.
         :rtype: list[str]
@@ -351,7 +350,7 @@ class ListPrivateDnatsRequest:
     def type(self, type):
         r"""Sets the type of this ListPrivateDnatsRequest.
 
-        DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELB的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
+        DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELBv2的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
 
         :param type: The type of this ListPrivateDnatsRequest.
         :type type: list[str]
@@ -362,7 +361,7 @@ class ListPrivateDnatsRequest:
     def private_ip_address(self):
         r"""Gets the private_ip_address of this ListPrivateDnatsRequest.
 
-        后端实例的IP私网地址。
+        后端资源（计算实例、ELBV2、ELBV3、VIP等）的私网IP地址。
 
         :return: The private_ip_address of this ListPrivateDnatsRequest.
         :rtype: list[str]
@@ -373,12 +372,100 @@ class ListPrivateDnatsRequest:
     def private_ip_address(self, private_ip_address):
         r"""Sets the private_ip_address of this ListPrivateDnatsRequest.
 
-        后端实例的IP私网地址。
+        后端资源（计算实例、ELBV2、ELBV3、VIP等）的私网IP地址。
 
         :param private_ip_address: The private_ip_address of this ListPrivateDnatsRequest.
         :type private_ip_address: list[str]
         """
         self._private_ip_address = private_ip_address
+
+    @property
+    def protocol(self):
+        r"""Gets the protocol of this ListPrivateDnatsRequest.
+
+        DNAT规则协议类型， 目前支持TCP/tcp/Tcp/tCp/tcP/TCp/tCP/TcP、 UDP/udp/Udp/uDp/udP/UDp/uDP/UdP、 ANY/any/Any/aNy/anY/ANy/aNY/AnY。 分别对应协议号6、17、0。
+
+        :return: The protocol of this ListPrivateDnatsRequest.
+        :rtype: list[str]
+        """
+        return self._protocol
+
+    @protocol.setter
+    def protocol(self, protocol):
+        r"""Sets the protocol of this ListPrivateDnatsRequest.
+
+        DNAT规则协议类型， 目前支持TCP/tcp/Tcp/tCp/tcP/TCp/tCP/TcP、 UDP/udp/Udp/uDp/udP/UDp/uDP/UdP、 ANY/any/Any/aNy/anY/ANy/aNY/AnY。 分别对应协议号6、17、0。
+
+        :param protocol: The protocol of this ListPrivateDnatsRequest.
+        :type protocol: list[str]
+        """
+        self._protocol = protocol
+
+    @property
+    def internal_service_port(self):
+        r"""Gets the internal_service_port of this ListPrivateDnatsRequest.
+
+        后端实例的端口号（计算实例、ELBV2、ELBV3、VIP等)。
+
+        :return: The internal_service_port of this ListPrivateDnatsRequest.
+        :rtype: list[str]
+        """
+        return self._internal_service_port
+
+    @internal_service_port.setter
+    def internal_service_port(self, internal_service_port):
+        r"""Sets the internal_service_port of this ListPrivateDnatsRequest.
+
+        后端实例的端口号（计算实例、ELBV2、ELBV3、VIP等)。
+
+        :param internal_service_port: The internal_service_port of this ListPrivateDnatsRequest.
+        :type internal_service_port: list[str]
+        """
+        self._internal_service_port = internal_service_port
+
+    @property
+    def transit_service_port(self):
+        r"""Gets the transit_service_port of this ListPrivateDnatsRequest.
+
+        中转IP的端口号。
+
+        :return: The transit_service_port of this ListPrivateDnatsRequest.
+        :rtype: list[str]
+        """
+        return self._transit_service_port
+
+    @transit_service_port.setter
+    def transit_service_port(self, transit_service_port):
+        r"""Sets the transit_service_port of this ListPrivateDnatsRequest.
+
+        中转IP的端口号。
+
+        :param transit_service_port: The transit_service_port of this ListPrivateDnatsRequest.
+        :type transit_service_port: list[str]
+        """
+        self._transit_service_port = transit_service_port
+
+    @property
+    def transit_ip_address(self):
+        r"""Gets the transit_ip_address of this ListPrivateDnatsRequest.
+
+        中转IP的地址。
+
+        :return: The transit_ip_address of this ListPrivateDnatsRequest.
+        :rtype: list[str]
+        """
+        return self._transit_ip_address
+
+    @transit_ip_address.setter
+    def transit_ip_address(self, transit_ip_address):
+        r"""Sets the transit_ip_address of this ListPrivateDnatsRequest.
+
+        中转IP的地址。
+
+        :param transit_ip_address: The transit_ip_address of this ListPrivateDnatsRequest.
+        :type transit_ip_address: list[str]
+        """
+        self._transit_ip_address = transit_ip_address
 
     def to_dict(self):
         result = {}

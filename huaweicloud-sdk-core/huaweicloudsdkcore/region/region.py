@@ -24,7 +24,7 @@ import warnings
 from typing import List
 
 
-class Region(object):
+class Region:
     def __init__(self, *args, **kwargs):
         """
         There are two ways to initialize the region object.

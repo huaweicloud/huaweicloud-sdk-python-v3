@@ -81,7 +81,7 @@ class ListImageLocalRequest:
         :type limit: int
         :param scan_status: 扫描状态，包含如下:   - unscan : 未扫描   - success : 扫描完成   - scanning : 扫描中   - failed : 扫描失败   - waiting_for_scan : 等待扫描
         :type scan_status: str
-        :param local_image_type: 镜像类型，包含如下:  - other_image : 非SWR镜像  - swr_image : SWR镜像
+        :param local_image_type: **参数解释** : 镜像类型 **约束限制** : 不涉及 **取值范围** : 包含如下两种:  - other_image : 非SWR镜像  - swr_image : SWR镜像 **默认取值** : 不涉及 
         :type local_image_type: str
         :param image_size: 镜像大小，单位字节
         :type image_size: int
@@ -322,7 +322,7 @@ class ListImageLocalRequest:
     def local_image_type(self):
         r"""Gets the local_image_type of this ListImageLocalRequest.
 
-        镜像类型，包含如下:  - other_image : 非SWR镜像  - swr_image : SWR镜像
+        **参数解释** : 镜像类型 **约束限制** : 不涉及 **取值范围** : 包含如下两种:  - other_image : 非SWR镜像  - swr_image : SWR镜像 **默认取值** : 不涉及 
 
         :return: The local_image_type of this ListImageLocalRequest.
         :rtype: str
@@ -333,7 +333,7 @@ class ListImageLocalRequest:
     def local_image_type(self, local_image_type):
         r"""Sets the local_image_type of this ListImageLocalRequest.
 
-        镜像类型，包含如下:  - other_image : 非SWR镜像  - swr_image : SWR镜像
+        **参数解释** : 镜像类型 **约束限制** : 不涉及 **取值范围** : 包含如下两种:  - other_image : 非SWR镜像  - swr_image : SWR镜像 **默认取值** : 不涉及 
 
         :param local_image_type: The local_image_type of this ListImageLocalRequest.
         :type local_image_type: str

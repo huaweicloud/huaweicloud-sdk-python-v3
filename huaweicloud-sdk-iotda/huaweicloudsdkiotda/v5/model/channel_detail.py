@@ -25,7 +25,8 @@ class ChannelDetail:
         'influxdb_forwarding': 'InfluxDBForwarding',
         'functiongraph_forwarding': 'FunctionGraphForwarding',
         'mrs_kafka_forwarding': 'MrsKafkaForwarding',
-        'dms_rocketmq_forwarding': 'DmsRocketMQForwarding'
+        'dms_rocketmq_forwarding': 'DmsRocketMQForwarding',
+        'mqtt_device_forwarding': 'MqttDeviceForwarding'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ChannelDetail:
         'influxdb_forwarding': 'influxdb_forwarding',
         'functiongraph_forwarding': 'functiongraph_forwarding',
         'mrs_kafka_forwarding': 'mrs_kafka_forwarding',
-        'dms_rocketmq_forwarding': 'dms_rocketmq_forwarding'
+        'dms_rocketmq_forwarding': 'dms_rocketmq_forwarding',
+        'mqtt_device_forwarding': 'mqtt_device_forwarding'
     }
 
-    def __init__(self, http_forwarding=None, dis_forwarding=None, obs_forwarding=None, amqp_forwarding=None, dms_kafka_forwarding=None, roma_forwarding=None, mysql_forwarding=None, influxdb_forwarding=None, functiongraph_forwarding=None, mrs_kafka_forwarding=None, dms_rocketmq_forwarding=None):
+    def __init__(self, http_forwarding=None, dis_forwarding=None, obs_forwarding=None, amqp_forwarding=None, dms_kafka_forwarding=None, roma_forwarding=None, mysql_forwarding=None, influxdb_forwarding=None, functiongraph_forwarding=None, mrs_kafka_forwarding=None, dms_rocketmq_forwarding=None, mqtt_device_forwarding=None):
         r"""ChannelDetail
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ChannelDetail:
         :type mrs_kafka_forwarding: :class:`huaweicloudsdkiotda.v5.MrsKafkaForwarding`
         :param dms_rocketmq_forwarding: 
         :type dms_rocketmq_forwarding: :class:`huaweicloudsdkiotda.v5.DmsRocketMQForwarding`
+        :param mqtt_device_forwarding: 
+        :type mqtt_device_forwarding: :class:`huaweicloudsdkiotda.v5.MqttDeviceForwarding`
         """
         
         
@@ -84,6 +88,7 @@ class ChannelDetail:
         self._functiongraph_forwarding = None
         self._mrs_kafka_forwarding = None
         self._dms_rocketmq_forwarding = None
+        self._mqtt_device_forwarding = None
         self.discriminator = None
 
         if http_forwarding is not None:
@@ -108,6 +113,8 @@ class ChannelDetail:
             self.mrs_kafka_forwarding = mrs_kafka_forwarding
         if dms_rocketmq_forwarding is not None:
             self.dms_rocketmq_forwarding = dms_rocketmq_forwarding
+        if mqtt_device_forwarding is not None:
+            self.mqtt_device_forwarding = mqtt_device_forwarding
 
     @property
     def http_forwarding(self):
@@ -306,6 +313,24 @@ class ChannelDetail:
         :type dms_rocketmq_forwarding: :class:`huaweicloudsdkiotda.v5.DmsRocketMQForwarding`
         """
         self._dms_rocketmq_forwarding = dms_rocketmq_forwarding
+
+    @property
+    def mqtt_device_forwarding(self):
+        r"""Gets the mqtt_device_forwarding of this ChannelDetail.
+
+        :return: The mqtt_device_forwarding of this ChannelDetail.
+        :rtype: :class:`huaweicloudsdkiotda.v5.MqttDeviceForwarding`
+        """
+        return self._mqtt_device_forwarding
+
+    @mqtt_device_forwarding.setter
+    def mqtt_device_forwarding(self, mqtt_device_forwarding):
+        r"""Sets the mqtt_device_forwarding of this ChannelDetail.
+
+        :param mqtt_device_forwarding: The mqtt_device_forwarding of this ChannelDetail.
+        :type mqtt_device_forwarding: :class:`huaweicloudsdkiotda.v5.MqttDeviceForwarding`
+        """
+        self._mqtt_device_forwarding = mqtt_device_forwarding
 
     def to_dict(self):
         result = {}

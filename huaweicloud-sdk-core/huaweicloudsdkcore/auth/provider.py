@@ -216,7 +216,7 @@ class MetadataGlobalCredentialProvider(MetadataCredentialProvider):
         return credentials
 
 
-class CredentialProviderChain(object):
+class CredentialProviderChain:
     def __init__(self, providers):
         self._providers = providers
 

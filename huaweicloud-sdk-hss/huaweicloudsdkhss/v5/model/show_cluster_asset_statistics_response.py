@@ -34,13 +34,13 @@ class ShowClusterAssetStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param cluster_num: 集群数量
+        :param cluster_num: **参数解释**: 集群数量 **取值范围**: 最小值0，最大值65535 
         :type cluster_num: int
-        :param work_load_num: 工作负载数量
+        :param work_load_num: **参数解释**: 工作负载数量 **取值范围**: 最小值0，最大值65535 
         :type work_load_num: int
-        :param service_num: 服务数量
+        :param service_num: **参数解释**: 服务数量 **取值范围**: 最小值0，最大值65535 
         :type service_num: int
-        :param pod_num: pod数量
+        :param pod_num: **参数解释**: pod数量 **取值范围**: 最小值0，最大值65535 
         :type pod_num: int
         """
         
@@ -65,7 +65,7 @@ class ShowClusterAssetStatisticsResponse(SdkResponse):
     def cluster_num(self):
         r"""Gets the cluster_num of this ShowClusterAssetStatisticsResponse.
 
-        集群数量
+        **参数解释**: 集群数量 **取值范围**: 最小值0，最大值65535 
 
         :return: The cluster_num of this ShowClusterAssetStatisticsResponse.
         :rtype: int
@@ -76,7 +76,7 @@ class ShowClusterAssetStatisticsResponse(SdkResponse):
     def cluster_num(self, cluster_num):
         r"""Sets the cluster_num of this ShowClusterAssetStatisticsResponse.
 
-        集群数量
+        **参数解释**: 集群数量 **取值范围**: 最小值0，最大值65535 
 
         :param cluster_num: The cluster_num of this ShowClusterAssetStatisticsResponse.
         :type cluster_num: int
@@ -87,7 +87,7 @@ class ShowClusterAssetStatisticsResponse(SdkResponse):
     def work_load_num(self):
         r"""Gets the work_load_num of this ShowClusterAssetStatisticsResponse.
 
-        工作负载数量
+        **参数解释**: 工作负载数量 **取值范围**: 最小值0，最大值65535 
 
         :return: The work_load_num of this ShowClusterAssetStatisticsResponse.
         :rtype: int
@@ -98,7 +98,7 @@ class ShowClusterAssetStatisticsResponse(SdkResponse):
     def work_load_num(self, work_load_num):
         r"""Sets the work_load_num of this ShowClusterAssetStatisticsResponse.
 
-        工作负载数量
+        **参数解释**: 工作负载数量 **取值范围**: 最小值0，最大值65535 
 
         :param work_load_num: The work_load_num of this ShowClusterAssetStatisticsResponse.
         :type work_load_num: int
@@ -109,7 +109,7 @@ class ShowClusterAssetStatisticsResponse(SdkResponse):
     def service_num(self):
         r"""Gets the service_num of this ShowClusterAssetStatisticsResponse.
 
-        服务数量
+        **参数解释**: 服务数量 **取值范围**: 最小值0，最大值65535 
 
         :return: The service_num of this ShowClusterAssetStatisticsResponse.
         :rtype: int
@@ -120,7 +120,7 @@ class ShowClusterAssetStatisticsResponse(SdkResponse):
     def service_num(self, service_num):
         r"""Sets the service_num of this ShowClusterAssetStatisticsResponse.
 
-        服务数量
+        **参数解释**: 服务数量 **取值范围**: 最小值0，最大值65535 
 
         :param service_num: The service_num of this ShowClusterAssetStatisticsResponse.
         :type service_num: int
@@ -131,7 +131,7 @@ class ShowClusterAssetStatisticsResponse(SdkResponse):
     def pod_num(self):
         r"""Gets the pod_num of this ShowClusterAssetStatisticsResponse.
 
-        pod数量
+        **参数解释**: pod数量 **取值范围**: 最小值0，最大值65535 
 
         :return: The pod_num of this ShowClusterAssetStatisticsResponse.
         :rtype: int
@@ -142,7 +142,7 @@ class ShowClusterAssetStatisticsResponse(SdkResponse):
     def pod_num(self, pod_num):
         r"""Sets the pod_num of this ShowClusterAssetStatisticsResponse.
 
-        pod数量
+        **参数解释**: pod数量 **取值范围**: 最小值0，最大值65535 
 
         :param pod_num: The pod_num of this ShowClusterAssetStatisticsResponse.
         :type pod_num: int

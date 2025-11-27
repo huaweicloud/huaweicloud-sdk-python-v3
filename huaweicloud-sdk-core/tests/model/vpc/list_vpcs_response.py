@@ -19,7 +19,7 @@
 """
 
 
-class ListVpcsResponse(object):
+class ListVpcsResponse:
     openapi_types = {
         'vpcs': 'list[Vpc]'
     }
@@ -35,7 +35,7 @@ class ListVpcsResponse(object):
             self.vpcs = vpcs
 
 
-class Vpc(object):
+class Vpc:
     openapi_types = {
         'id': 'str',
         'name': 'str',
@@ -67,7 +67,7 @@ class Vpc(object):
         self.enterprise_project_id = enterprise_project_id
 
 
-class Route(object):
+class Route:
     openapi_types = {
         'destination': 'str',
         'nexthop': 'str'

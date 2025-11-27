@@ -64,7 +64,8 @@ class MonthlyBillRes:
         'consume_time': 'str',
         'be_id': 'str',
         'extend_params': 'ResRelation',
-        'account_name': 'str'
+        'account_name': 'str',
+        'period_num': 'decimal.Decimal'
     }
 
     attribute_map = {
@@ -117,10 +118,11 @@ class MonthlyBillRes:
         'consume_time': 'consume_time',
         'be_id': 'be_id',
         'extend_params': 'extend_params',
-        'account_name': 'account_name'
+        'account_name': 'account_name',
+        'period_num': 'period_num'
     }
 
-    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None, payer_account_id=None, effective_time=None, expire_time=None, consume_time=None, be_id=None, extend_params=None, account_name=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, id=None, product_spec_desc=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, pre_order_id=None, az_code_infos=None, payer_account_id=None, effective_time=None, expire_time=None, consume_time=None, be_id=None, extend_params=None, account_name=None, period_num=None):
         r"""MonthlyBillRes
 
         The model defined in huaweicloud sdk
@@ -225,6 +227,8 @@ class MonthlyBillRes:
         :type extend_params: :class:`huaweicloudsdkbssintl.v2.ResRelation`
         :param account_name: |参数名称：消费的客户登录名称。| |参数约束及描述：范围限制：0-128，如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户登录名称。 如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户登录名称。如果是企业主自己的消费记录，则为企业主的客户登录名称；如果是某个企业子客户的消费记录，则此处为企业子的客户登录名称。|
         :type account_name: str
+        :param period_num: |参数名称：周期数量| |参数的约束及描述：该参数非必填|
+        :type period_num: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
         """
         
         
@@ -279,6 +283,7 @@ class MonthlyBillRes:
         self._be_id = None
         self._extend_params = None
         self._account_name = None
+        self._period_num = None
         self.discriminator = None
 
         if cycle is not None:
@@ -381,6 +386,8 @@ class MonthlyBillRes:
             self.extend_params = extend_params
         if account_name is not None:
             self.account_name = account_name
+        if period_num is not None:
+            self.period_num = period_num
 
     @property
     def cycle(self):
@@ -1477,6 +1484,28 @@ class MonthlyBillRes:
         :type account_name: str
         """
         self._account_name = account_name
+
+    @property
+    def period_num(self):
+        r"""Gets the period_num of this MonthlyBillRes.
+
+        |参数名称：周期数量| |参数的约束及描述：该参数非必填|
+
+        :return: The period_num of this MonthlyBillRes.
+        :rtype: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
+        """
+        return self._period_num
+
+    @period_num.setter
+    def period_num(self, period_num):
+        r"""Sets the period_num of this MonthlyBillRes.
+
+        |参数名称：周期数量| |参数的约束及描述：该参数非必填|
+
+        :param period_num: The period_num of this MonthlyBillRes.
+        :type period_num: :class:`huaweicloudsdkbssintl.v2.decimal.Decimal`
+        """
+        self._period_num = period_num
 
     def to_dict(self):
         result = {}

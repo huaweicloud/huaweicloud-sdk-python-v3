@@ -29,7 +29,7 @@ class DatastoreResult:
 
         The model defined in huaweicloud sdk
 
-        :param node_type: node_type参数模板节点类型。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
+        :param node_type: node_type参数模板节点类型。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。 - readonly，表示副本集只读节点类型。 - shard_readonly，表示集群只读节点类型。
         :type node_type: str
         :param version: version数据库版本。DDS引擎取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
         :type version: str
@@ -48,7 +48,7 @@ class DatastoreResult:
     def node_type(self):
         r"""Gets the node_type of this DatastoreResult.
 
-        node_type参数模板节点类型。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
+        node_type参数模板节点类型。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。 - readonly，表示副本集只读节点类型。 - shard_readonly，表示集群只读节点类型。
 
         :return: The node_type of this DatastoreResult.
         :rtype: str
@@ -59,7 +59,7 @@ class DatastoreResult:
     def node_type(self, node_type):
         r"""Sets the node_type of this DatastoreResult.
 
-        node_type参数模板节点类型。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
+        node_type参数模板节点类型。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。 - readonly，表示副本集只读节点类型。 - shard_readonly，表示集群只读节点类型。
 
         :param node_type: The node_type of this DatastoreResult.
         :type node_type: str

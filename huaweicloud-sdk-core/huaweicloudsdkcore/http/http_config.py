@@ -26,7 +26,7 @@ from urllib.parse import quote_plus
 from huaweicloudsdkcore.signer.algorithm import SigningAlgorithm
 
 
-class HttpConfig(object):
+class HttpConfig:
     def __init__(self,
                  proxy_protocol: str = None,
                  proxy_host: str = None,

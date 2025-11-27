@@ -59,7 +59,7 @@ class DecorRelatedJitterBackoffStrategy(BackoffStrategy):
         return min(_MAX_DELAY_MS, randint(_BASE_DELAY_MS, _BASE_DELAY_MS * 3))
 
 
-class BackoffStrategies(object):
+class BackoffStrategies:
     NONE = NoBackoffStrategy()
     RANDOM_JITTER = RandomJitterBackoffStrategy()
     EQUAL_JITTER = EqualJitterBackoffStrategy()

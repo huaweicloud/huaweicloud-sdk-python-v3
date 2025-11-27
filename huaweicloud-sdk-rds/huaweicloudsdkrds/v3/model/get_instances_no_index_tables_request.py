@@ -17,16 +17,20 @@ class GetInstancesNoIndexTablesRequest:
     openapi_types = {
         'instance_id': 'str',
         'newest': 'bool',
-        'table_type': 'str'
+        'table_type': 'str',
+        'offset': 'str',
+        'limit': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
         'newest': 'newest',
-        'table_type': 'table_type'
+        'table_type': 'table_type',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, instance_id=None, newest=None, table_type=None):
+    def __init__(self, instance_id=None, newest=None, table_type=None, offset=None, limit=None):
         r"""GetInstancesNoIndexTablesRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class GetInstancesNoIndexTablesRequest:
         :type newest: bool
         :param table_type: 表格类型。
         :type table_type: str
+        :param offset: 索引位置，偏移量。
+        :type offset: str
+        :param limit: 查询记录数。
+        :type limit: str
         """
         
         
@@ -44,11 +52,17 @@ class GetInstancesNoIndexTablesRequest:
         self._instance_id = None
         self._newest = None
         self._table_type = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         self.instance_id = instance_id
         self.newest = newest
         self.table_type = table_type
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def instance_id(self):
@@ -115,6 +129,50 @@ class GetInstancesNoIndexTablesRequest:
         :type table_type: str
         """
         self._table_type = table_type
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this GetInstancesNoIndexTablesRequest.
+
+        索引位置，偏移量。
+
+        :return: The offset of this GetInstancesNoIndexTablesRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this GetInstancesNoIndexTablesRequest.
+
+        索引位置，偏移量。
+
+        :param offset: The offset of this GetInstancesNoIndexTablesRequest.
+        :type offset: str
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this GetInstancesNoIndexTablesRequest.
+
+        查询记录数。
+
+        :return: The limit of this GetInstancesNoIndexTablesRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this GetInstancesNoIndexTablesRequest.
+
+        查询记录数。
+
+        :param limit: The limit of this GetInstancesNoIndexTablesRequest.
+        :type limit: str
+        """
+        self._limit = limit
 
     def to_dict(self):
         result = {}

@@ -298,6 +298,74 @@ class CdnAsyncClient(Client):
 
         return http_info
 
+    def create_access_control_task_async(self, request):
+        r"""创建封禁/解禁URL任务
+
+        创建封禁/解禁URL任务，如需使用本接口，请提交工单申请。
+        - 单租户调用频率：10次/s。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAccessControlTask
+        :type request: :class:`huaweicloudsdkcdn.v2.CreateAccessControlTaskRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreateAccessControlTaskResponse`
+        """
+        http_info = self._create_access_control_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_access_control_task_async_invoker(self, request):
+        http_info = self._create_access_control_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_access_control_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/content/access-control-urls/{action}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAccessControlTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'action' in local_var_params:
+            path_params['action'] = local_var_params['action']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_domain_async(self, request):
         r"""创建加速域名
 
@@ -363,6 +431,74 @@ class CdnAsyncClient(Client):
 
         return http_info
 
+    def create_domain_by_duplicate_async(self, request):
+        r"""复制配置到新添加域名
+
+        将存量加速域名的配置复制给新添加的域名。
+        - 已开通CDN服务。
+        - 如果加速域名的服务范围包含中国大陆，加速域名需要已完成备案。
+        - 单租户调用频率：20次/min。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDomainByDuplicate
+        :type request: :class:`huaweicloudsdkcdn.v2.CreateDomainByDuplicateRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreateDomainByDuplicateResponse`
+        """
+        http_info = self._create_domain_by_duplicate_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_domain_by_duplicate_async_invoker(self, request):
+        http_info = self._create_domain_by_duplicate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_domain_by_duplicate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/domains/duplicate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDomainByDuplicateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_domain_template_async(self, request):
         r"""创建域名模板。
 
@@ -388,6 +524,71 @@ class CdnAsyncClient(Client):
             "resource_path": "/v1.0/cdn/configuration/templates",
             "request_type": request.__class__.__name__,
             "response_type": "CreateDomainTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_export_task_async(self, request):
+        r"""创建统计数据异步导出任务
+
+        创建统计数据异步导出任务，目前支持话单数据导出、top url导出
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateExportTask
+        :type request: :class:`huaweicloudsdkcdn.v2.CreateExportTaskRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.CreateExportTaskResponse`
+        """
+        http_info = self._create_export_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_export_task_async_invoker(self, request):
+        http_info = self._create_export_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_export_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cdn/statistics/export-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateExportTaskResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1479,6 +1680,221 @@ class CdnAsyncClient(Client):
 
         return http_info
 
+    def export_stats_open_async(self, request):
+        r"""CDN数据导出
+
+        CDN数据导出
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ExportStatsOpen
+        :type request: :class:`huaweicloudsdkcdn.v2.ExportStatsOpenRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ExportStatsOpenResponse`
+        """
+        http_info = self._export_stats_open_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_stats_open_async_invoker(self, request):
+        http_info = self._export_stats_open_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_stats_open_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/statistics/stats/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportStatsOpenResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_access_control_task_async(self, request):
+        r"""查询封禁/解禁URL任务
+
+        查询封禁/解禁URL任务，如需使用本接口，请提交工单申请。
+        - 单租户调用频率：30次/s。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAccessControlTask
+        :type request: :class:`huaweicloudsdkcdn.v2.ListAccessControlTaskRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ListAccessControlTaskResponse`
+        """
+        http_info = self._list_access_control_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_access_control_task_async_invoker(self, request):
+        http_info = self._list_access_control_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_access_control_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/content/access-control-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccessControlTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_ban_url_async(self, request):
+        r"""查询已封禁的URL
+
+        查询已封禁的URL，如需使用本接口，请提交工单申请。
+        - 单租户调用频率：30次/s。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListBanUrl
+        :type request: :class:`huaweicloudsdkcdn.v2.ListBanUrlRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ListBanUrlResponse`
+        """
+        http_info = self._list_ban_url_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ban_url_async_invoker(self, request):
+        http_info = self._list_ban_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ban_url_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/content/ban-urls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBanUrlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_number' in local_var_params:
+            query_params.append(('page_number', local_var_params['page_number']))
+        if 'url' in local_var_params:
+            query_params.append(('url', local_var_params['url']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_cdn_domain_top_ips_async(self, request):
         r"""查询域名top ip统计分析数据
 
@@ -1608,6 +2024,81 @@ class CdnAsyncClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'include_ratio' in local_var_params:
             query_params.append(('include_ratio', local_var_params['include_ratio']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_cdn_domain_top_path_async(self, request):
+        r"""查询 TOP Path明细
+
+        查询 TOP Path明细
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCdnDomainTopPath
+        :type request: :class:`huaweicloudsdkcdn.v2.ListCdnDomainTopPathRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ListCdnDomainTopPathResponse`
+        """
+        http_info = self._list_cdn_domain_top_path_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cdn_domain_top_path_async_invoker(self, request):
+        http_info = self._list_cdn_domain_top_path_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cdn_domain_top_path_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/statistics/top-path",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCdnDomainTopPathResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+        if 'stat_type' in local_var_params:
+            query_params.append(('stat_type', local_var_params['stat_type']))
+        if 'service_area' in local_var_params:
+            query_params.append(('service_area', local_var_params['service_area']))
+        if 'user_domain_id' in local_var_params:
+            query_params.append(('user_domain_id', local_var_params['user_domain_id']))
 
         header_params = {}
 
@@ -1877,6 +2368,76 @@ class CdnAsyncClient(Client):
 
         return http_info
 
+    def list_domain_configs_async(self, request):
+        r"""查询加速域名基础信息
+
+        查询加速域名的基础信息，包含cname状态、加速域名是否支持复制配置。
+        - 单租户调用频率：5次/s。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDomainConfigs
+        :type request: :class:`huaweicloudsdkcdn.v2.ListDomainConfigsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ListDomainConfigsResponse`
+        """
+        http_info = self._list_domain_configs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_domain_configs_async_invoker(self, request):
+        http_info = self._list_domain_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_domain_configs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/configuration/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain_names' in local_var_params:
+            query_params.append(('domain_names', local_var_params['domain_names']))
+        if 'item' in local_var_params:
+            query_params.append(('item', local_var_params['item']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_domains_async(self, request):
         r"""查询加速域名
 
@@ -1941,6 +2502,77 @@ class CdnAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_export_tasks_async(self, request):
+        r"""分页查询统计数据异步导出
+
+        分页查询统计数据异步导出任务，按修改时间降序排列，当任务状态为success时，返回参数中会包含download_link
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListExportTasks
+        :type request: :class:`huaweicloudsdkcdn.v2.ListExportTasksRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ListExportTasksResponse`
+        """
+        http_info = self._list_export_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_export_tasks_async_invoker(self, request):
+        http_info = self._list_export_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_export_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cdn/statistics/export-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExportTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'task_name' in local_var_params:
+            query_params.append(('task_name', local_var_params['task_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2064,6 +2696,76 @@ class CdnAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_special_configuration_async(self, request):
+        r"""查询加速域名的特殊配置
+
+        查询加速域名的特殊配置，当前支持查询备忘录信息。
+        - 单租户调用频率：15次/s。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSpecialConfiguration
+        :type request: :class:`huaweicloudsdkcdn.v2.ListSpecialConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ListSpecialConfigurationResponse`
+        """
+        http_info = self._list_special_configuration_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_special_configuration_async_invoker(self, request):
+        http_info = self._list_special_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_special_configuration_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/configuration/special-configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSpecialConfigurationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page_size', local_var_params['page_size']))
+        if 'page_number' in local_var_params:
+            query_params.append(('page_number', local_var_params['page_number']))
 
         header_params = {}
 
@@ -2646,6 +3348,85 @@ class CdnAsyncClient(Client):
             query_params.append(('status', local_var_params['status']))
         if 'service_area' in local_var_params:
             query_params.append(('service_area', local_var_params['service_area']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_domain_country_stat_async(self, request):
+        r"""CDN查询域名的国家统计数据
+
+        CDN查询域名的国家统计数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDomainCountryStat
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainCountryStatRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainCountryStatResponse`
+        """
+        http_info = self._show_domain_country_stat_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_domain_country_stat_async_invoker(self, request):
+        http_info = self._show_domain_country_stat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_country_stat_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/statistics/domain-country-stats",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainCountryStatResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'domain_name' in local_var_params:
+            query_params.append(('domain_name', local_var_params['domain_name']))
+        if 'stat_type' in local_var_params:
+            query_params.append(('stat_type', local_var_params['stat_type']))
+        if 'country' in local_var_params:
+            query_params.append(('country', local_var_params['country']))
+        if 'group_by' in local_var_params:
+            query_params.append(('group_by', local_var_params['group_by']))
+        if 'user_domain_id' in local_var_params:
+            query_params.append(('user_domain_id', local_var_params['user_domain_id']))
 
         header_params = {}
 
@@ -3437,6 +4218,69 @@ class CdnAsyncClient(Client):
 
         return http_info
 
+    def show_special_user_async(self, request):
+        r"""查询CDN特殊用户接口
+
+        查询CDN特殊用户接口
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSpecialUser
+        :type request: :class:`huaweicloudsdkcdn.v2.ShowSpecialUserRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v2.ShowSpecialUserResponse`
+        """
+        http_info = self._show_special_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_special_user_async_invoker(self, request):
+        http_info = self._show_special_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_special_user_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/statistics/special-user",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSpecialUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_stats_configs_async(self, request):
         r"""查询统计配置
 
@@ -3477,6 +4321,10 @@ class CdnAsyncClient(Client):
         query_params = []
         if 'config_type' in local_var_params:
             query_params.append(('config_type', local_var_params['config_type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 

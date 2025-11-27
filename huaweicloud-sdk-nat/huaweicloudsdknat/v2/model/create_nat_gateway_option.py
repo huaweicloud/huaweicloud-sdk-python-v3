@@ -18,25 +18,29 @@ class CreateNatGatewayOption:
         'name': 'str',
         'router_id': 'str',
         'internal_network_id': 'str',
+        'ngport_ip_address': 'str',
         'description': 'str',
+        'tags': 'list[str]',
         'spec': 'str',
         'enterprise_project_id': 'str',
         'session_conf': 'SessionConfiguration',
-        'ngport_ip_address': 'str'
+        'prepaid_options': 'PrepaidOptions'
     }
 
     attribute_map = {
         'name': 'name',
         'router_id': 'router_id',
         'internal_network_id': 'internal_network_id',
+        'ngport_ip_address': 'ngport_ip_address',
         'description': 'description',
+        'tags': 'tags',
         'spec': 'spec',
         'enterprise_project_id': 'enterprise_project_id',
         'session_conf': 'session_conf',
-        'ngport_ip_address': 'ngport_ip_address'
+        'prepaid_options': 'prepaid_options'
     }
 
-    def __init__(self, name=None, router_id=None, internal_network_id=None, description=None, spec=None, enterprise_project_id=None, session_conf=None, ngport_ip_address=None):
+    def __init__(self, name=None, router_id=None, internal_network_id=None, ngport_ip_address=None, description=None, tags=None, spec=None, enterprise_project_id=None, session_conf=None, prepaid_options=None):
         r"""CreateNatGatewayOption
 
         The model defined in huaweicloud sdk
@@ -47,16 +51,20 @@ class CreateNatGatewayOption:
         :type router_id: str
         :param internal_network_id: 公网NAT网关下行口（DVR的下一跳）所属的network id。
         :type internal_network_id: str
+        :param ngport_ip_address: 公网NAT网关ng口占用的ip。
+        :type ngport_ip_address: str
         :param description: 公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
+        :param tags: 标签列表, 用以标识资源类型
+        :type tags: list[str]
+        :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
         :type spec: str
         :param enterprise_project_id: 企业项目ID 创建公网NAT网关实例时，关联的企业项目ID。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
         :type enterprise_project_id: str
         :param session_conf: 
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
-        :param ngport_ip_address: 公网NAT网关私有IP地址，由VPC中子网分配。
-        :type ngport_ip_address: str
+        :param prepaid_options: 
+        :type prepaid_options: :class:`huaweicloudsdknat.v2.PrepaidOptions`
         """
         
         
@@ -64,25 +72,31 @@ class CreateNatGatewayOption:
         self._name = None
         self._router_id = None
         self._internal_network_id = None
+        self._ngport_ip_address = None
         self._description = None
+        self._tags = None
         self._spec = None
         self._enterprise_project_id = None
         self._session_conf = None
-        self._ngport_ip_address = None
+        self._prepaid_options = None
         self.discriminator = None
 
         self.name = name
         self.router_id = router_id
         self.internal_network_id = internal_network_id
+        if ngport_ip_address is not None:
+            self.ngport_ip_address = ngport_ip_address
         if description is not None:
             self.description = description
+        if tags is not None:
+            self.tags = tags
         self.spec = spec
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if session_conf is not None:
             self.session_conf = session_conf
-        if ngport_ip_address is not None:
-            self.ngport_ip_address = ngport_ip_address
+        if prepaid_options is not None:
+            self.prepaid_options = prepaid_options
 
     @property
     def name(self):
@@ -151,6 +165,28 @@ class CreateNatGatewayOption:
         self._internal_network_id = internal_network_id
 
     @property
+    def ngport_ip_address(self):
+        r"""Gets the ngport_ip_address of this CreateNatGatewayOption.
+
+        公网NAT网关ng口占用的ip。
+
+        :return: The ngport_ip_address of this CreateNatGatewayOption.
+        :rtype: str
+        """
+        return self._ngport_ip_address
+
+    @ngport_ip_address.setter
+    def ngport_ip_address(self, ngport_ip_address):
+        r"""Sets the ngport_ip_address of this CreateNatGatewayOption.
+
+        公网NAT网关ng口占用的ip。
+
+        :param ngport_ip_address: The ngport_ip_address of this CreateNatGatewayOption.
+        :type ngport_ip_address: str
+        """
+        self._ngport_ip_address = ngport_ip_address
+
+    @property
     def description(self):
         r"""Gets the description of this CreateNatGatewayOption.
 
@@ -173,10 +209,32 @@ class CreateNatGatewayOption:
         self._description = description
 
     @property
+    def tags(self):
+        r"""Gets the tags of this CreateNatGatewayOption.
+
+        标签列表, 用以标识资源类型
+
+        :return: The tags of this CreateNatGatewayOption.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this CreateNatGatewayOption.
+
+        标签列表, 用以标识资源类型
+
+        :param tags: The tags of this CreateNatGatewayOption.
+        :type tags: list[str]
+        """
+        self._tags = tags
+
+    @property
     def spec(self):
         r"""Gets the spec of this CreateNatGatewayOption.
 
-        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
+        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
 
         :return: The spec of this CreateNatGatewayOption.
         :rtype: str
@@ -187,7 +245,7 @@ class CreateNatGatewayOption:
     def spec(self, spec):
         r"""Sets the spec of this CreateNatGatewayOption.
 
-        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
+        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
 
         :param spec: The spec of this CreateNatGatewayOption.
         :type spec: str
@@ -235,26 +293,22 @@ class CreateNatGatewayOption:
         self._session_conf = session_conf
 
     @property
-    def ngport_ip_address(self):
-        r"""Gets the ngport_ip_address of this CreateNatGatewayOption.
+    def prepaid_options(self):
+        r"""Gets the prepaid_options of this CreateNatGatewayOption.
 
-        公网NAT网关私有IP地址，由VPC中子网分配。
-
-        :return: The ngport_ip_address of this CreateNatGatewayOption.
-        :rtype: str
+        :return: The prepaid_options of this CreateNatGatewayOption.
+        :rtype: :class:`huaweicloudsdknat.v2.PrepaidOptions`
         """
-        return self._ngport_ip_address
+        return self._prepaid_options
 
-    @ngport_ip_address.setter
-    def ngport_ip_address(self, ngport_ip_address):
-        r"""Sets the ngport_ip_address of this CreateNatGatewayOption.
+    @prepaid_options.setter
+    def prepaid_options(self, prepaid_options):
+        r"""Sets the prepaid_options of this CreateNatGatewayOption.
 
-        公网NAT网关私有IP地址，由VPC中子网分配。
-
-        :param ngport_ip_address: The ngport_ip_address of this CreateNatGatewayOption.
-        :type ngport_ip_address: str
+        :param prepaid_options: The prepaid_options of this CreateNatGatewayOption.
+        :type prepaid_options: :class:`huaweicloudsdknat.v2.PrepaidOptions`
         """
-        self._ngport_ip_address = ngport_ip_address
+        self._prepaid_options = prepaid_options
 
     def to_dict(self):
         result = {}

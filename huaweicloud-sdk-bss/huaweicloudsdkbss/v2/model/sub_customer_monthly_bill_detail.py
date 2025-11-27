@@ -61,7 +61,8 @@ class SubCustomerMonthlyBillDetail:
         'sub_resource_type_code': 'str',
         'sub_resource_type_name': 'str',
         'sub_resource_id': 'str',
-        'sub_resource_name': 'str'
+        'sub_resource_name': 'str',
+        'period_num': 'decimal.Decimal'
     }
 
     attribute_map = {
@@ -111,10 +112,11 @@ class SubCustomerMonthlyBillDetail:
         'sub_resource_type_code': 'sub_resource_type_code',
         'sub_resource_type_name': 'sub_resource_type_name',
         'sub_resource_id': 'sub_resource_id',
-        'sub_resource_name': 'sub_resource_name'
+        'sub_resource_name': 'sub_resource_name',
+        'period_num': 'period_num'
     }
 
-    def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
+    def __init__(self, bill_cycle=None, customer_id=None, association_type=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, charging_mode=None, trade_time=None, trade_id=None, id=None, bill_detail_type=None, resource_id=None, resource_name=None, product_spec_desc=None, region_code=None, product_id=None, product_name=None, resource_tag=None, consume_time=None, usage_type=None, usage_amount=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, official_amount=None, official_discount_amount=None, payment_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, debt_amount=None, writeoff_amount=None, period_type=None, account_manager_id=None, partner_id=None, region_name=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, period_num=None):
         r"""SubCustomerMonthlyBillDetail
 
         The model defined in huaweicloud sdk
@@ -213,6 +215,8 @@ class SubCustomerMonthlyBillDetail:
         :type sub_resource_id: str
         :param sub_resource_name: 整机的子云服务的自身的资源名称，资源标识。（如果为预留实例，则为预留实例标识）
         :type sub_resource_name: str
+        :param period_num: 周期数量，该参数非必填
+        :type period_num: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
         """
         
         
@@ -264,6 +268,7 @@ class SubCustomerMonthlyBillDetail:
         self._sub_resource_type_name = None
         self._sub_resource_id = None
         self._sub_resource_name = None
+        self._period_num = None
         self.discriminator = None
 
         if bill_cycle is not None:
@@ -360,6 +365,8 @@ class SubCustomerMonthlyBillDetail:
             self.sub_resource_id = sub_resource_id
         if sub_resource_name is not None:
             self.sub_resource_name = sub_resource_name
+        if period_num is not None:
+            self.period_num = period_num
 
     @property
     def bill_cycle(self):
@@ -1394,6 +1401,28 @@ class SubCustomerMonthlyBillDetail:
         :type sub_resource_name: str
         """
         self._sub_resource_name = sub_resource_name
+
+    @property
+    def period_num(self):
+        r"""Gets the period_num of this SubCustomerMonthlyBillDetail.
+
+        周期数量，该参数非必填
+
+        :return: The period_num of this SubCustomerMonthlyBillDetail.
+        :rtype: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
+        """
+        return self._period_num
+
+    @period_num.setter
+    def period_num(self, period_num):
+        r"""Sets the period_num of this SubCustomerMonthlyBillDetail.
+
+        周期数量，该参数非必填
+
+        :param period_num: The period_num of this SubCustomerMonthlyBillDetail.
+        :type period_num: :class:`huaweicloudsdkbss.v2.decimal.Decimal`
+        """
+        self._period_num = period_num
 
     def to_dict(self):
         result = {}

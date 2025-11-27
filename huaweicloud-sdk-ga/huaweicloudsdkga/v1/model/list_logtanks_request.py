@@ -47,7 +47,7 @@ class ListLogtanksRequest:
         :type status: str
         :param resource_ids: 资源ID列表。
         :type resource_ids: list[str]
-        :param resource_type: 关联云日志的资源类型。
+        :param resource_type: 云日志的资源类型。 取值范围： LISTENER：监听器
         :type resource_type: str
         """
         
@@ -188,7 +188,7 @@ class ListLogtanksRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ListLogtanksRequest.
 
-        关联云日志的资源类型。
+        云日志的资源类型。 取值范围： LISTENER：监听器
 
         :return: The resource_type of this ListLogtanksRequest.
         :rtype: str
@@ -199,7 +199,7 @@ class ListLogtanksRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListLogtanksRequest.
 
-        关联云日志的资源类型。
+        云日志的资源类型。 取值范围： LISTENER：监听器
 
         :param resource_type: The resource_type of this ListLogtanksRequest.
         :type resource_type: str

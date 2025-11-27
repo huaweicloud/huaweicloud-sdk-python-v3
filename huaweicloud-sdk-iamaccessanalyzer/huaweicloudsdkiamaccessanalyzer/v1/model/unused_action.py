@@ -16,7 +16,7 @@ class UnusedAction:
 
     openapi_types = {
         'action': 'str',
-        'last_accessed': 'object'
+        'last_accessed': 'datetime'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class UnusedAction:
         :param action: 授权项名称。
         :type action: str
         :param last_accessed: 用户使用授权项的最后访问时间。
-        :type last_accessed: object
+        :type last_accessed: datetime
         """
         
         
@@ -74,7 +74,7 @@ class UnusedAction:
         用户使用授权项的最后访问时间。
 
         :return: The last_accessed of this UnusedAction.
-        :rtype: object
+        :rtype: datetime
         """
         return self._last_accessed
 
@@ -85,7 +85,7 @@ class UnusedAction:
         用户使用授权项的最后访问时间。
 
         :param last_accessed: The last_accessed of this UnusedAction.
-        :type last_accessed: object
+        :type last_accessed: datetime
         """
         self._last_accessed = last_accessed
 

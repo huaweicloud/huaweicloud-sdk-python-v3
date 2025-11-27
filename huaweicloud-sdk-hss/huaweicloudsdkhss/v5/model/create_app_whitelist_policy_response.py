@@ -16,20 +16,51 @@ class CreateAppWhitelistPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'policy_id': 'str'
     }
 
     attribute_map = {
+        'policy_id': 'policy_id'
     }
 
-    def __init__(self):
+    def __init__(self, policy_id=None):
         r"""CreateAppWhitelistPolicyResponse
 
         The model defined in huaweicloud sdk
 
+        :param policy_id: 策略ID
+        :type policy_id: str
         """
         
         super().__init__()
+
+        self._policy_id = None
         self.discriminator = None
+
+        if policy_id is not None:
+            self.policy_id = policy_id
+
+    @property
+    def policy_id(self):
+        r"""Gets the policy_id of this CreateAppWhitelistPolicyResponse.
+
+        策略ID
+
+        :return: The policy_id of this CreateAppWhitelistPolicyResponse.
+        :rtype: str
+        """
+        return self._policy_id
+
+    @policy_id.setter
+    def policy_id(self, policy_id):
+        r"""Sets the policy_id of this CreateAppWhitelistPolicyResponse.
+
+        策略ID
+
+        :param policy_id: The policy_id of this CreateAppWhitelistPolicyResponse.
+        :type policy_id: str
+        """
+        self._policy_id = policy_id
 
     def to_dict(self):
         import warnings

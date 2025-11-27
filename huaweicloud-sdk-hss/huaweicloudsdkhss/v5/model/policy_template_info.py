@@ -41,21 +41,21 @@ class PolicyTemplateInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 模板ID
+        :param id: **参数解释**: 模板ID **取值范围**: 字符长度0-128 
         :type id: str
-        :param template_name: 模板名称
+        :param template_name: **参数解释**: 模板名称 **取值范围**: 字符长度1-255 
         :type template_name: str
-        :param template_type: 模板类型
+        :param template_type: **参数解释**: 模板类型 **取值范围**: 字符长度1-16 
         :type template_type: str
-        :param description: 描述
+        :param description: **参数解释**: 描述 **取值范围**: 字符长度0-2048 
         :type description: str
-        :param target_kind: 策略模板应用资源类型，多个资源类型通过分号份隔连接
+        :param target_kind: **参数解释**: 策略模板应用资源类型，多个资源类型通过分号份隔连接 **取值范围**: 字符长度1-255 
         :type target_kind: str
-        :param tag: 标签
+        :param tag: **参数解释**: 标签 **取值范围**: 字符长度0-2048 
         :type tag: str
-        :param level: 推荐级别
+        :param level: **参数解释**: 推荐级别 **取值范围**: 字符长度1-5 
         :type level: str
-        :param constraint_template: 策略模板内容
+        :param constraint_template: **参数解释**: 策略模板内容 **取值范围**: 字符长度1-65535 
         :type constraint_template: str
         """
         
@@ -87,7 +87,7 @@ class PolicyTemplateInfo:
     def id(self):
         r"""Gets the id of this PolicyTemplateInfo.
 
-        模板ID
+        **参数解释**: 模板ID **取值范围**: 字符长度0-128 
 
         :return: The id of this PolicyTemplateInfo.
         :rtype: str
@@ -98,7 +98,7 @@ class PolicyTemplateInfo:
     def id(self, id):
         r"""Sets the id of this PolicyTemplateInfo.
 
-        模板ID
+        **参数解释**: 模板ID **取值范围**: 字符长度0-128 
 
         :param id: The id of this PolicyTemplateInfo.
         :type id: str
@@ -109,7 +109,7 @@ class PolicyTemplateInfo:
     def template_name(self):
         r"""Gets the template_name of this PolicyTemplateInfo.
 
-        模板名称
+        **参数解释**: 模板名称 **取值范围**: 字符长度1-255 
 
         :return: The template_name of this PolicyTemplateInfo.
         :rtype: str
@@ -120,7 +120,7 @@ class PolicyTemplateInfo:
     def template_name(self, template_name):
         r"""Sets the template_name of this PolicyTemplateInfo.
 
-        模板名称
+        **参数解释**: 模板名称 **取值范围**: 字符长度1-255 
 
         :param template_name: The template_name of this PolicyTemplateInfo.
         :type template_name: str
@@ -131,7 +131,7 @@ class PolicyTemplateInfo:
     def template_type(self):
         r"""Gets the template_type of this PolicyTemplateInfo.
 
-        模板类型
+        **参数解释**: 模板类型 **取值范围**: 字符长度1-16 
 
         :return: The template_type of this PolicyTemplateInfo.
         :rtype: str
@@ -142,7 +142,7 @@ class PolicyTemplateInfo:
     def template_type(self, template_type):
         r"""Sets the template_type of this PolicyTemplateInfo.
 
-        模板类型
+        **参数解释**: 模板类型 **取值范围**: 字符长度1-16 
 
         :param template_type: The template_type of this PolicyTemplateInfo.
         :type template_type: str
@@ -153,7 +153,7 @@ class PolicyTemplateInfo:
     def description(self):
         r"""Gets the description of this PolicyTemplateInfo.
 
-        描述
+        **参数解释**: 描述 **取值范围**: 字符长度0-2048 
 
         :return: The description of this PolicyTemplateInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class PolicyTemplateInfo:
     def description(self, description):
         r"""Sets the description of this PolicyTemplateInfo.
 
-        描述
+        **参数解释**: 描述 **取值范围**: 字符长度0-2048 
 
         :param description: The description of this PolicyTemplateInfo.
         :type description: str
@@ -175,7 +175,7 @@ class PolicyTemplateInfo:
     def target_kind(self):
         r"""Gets the target_kind of this PolicyTemplateInfo.
 
-        策略模板应用资源类型，多个资源类型通过分号份隔连接
+        **参数解释**: 策略模板应用资源类型，多个资源类型通过分号份隔连接 **取值范围**: 字符长度1-255 
 
         :return: The target_kind of this PolicyTemplateInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class PolicyTemplateInfo:
     def target_kind(self, target_kind):
         r"""Sets the target_kind of this PolicyTemplateInfo.
 
-        策略模板应用资源类型，多个资源类型通过分号份隔连接
+        **参数解释**: 策略模板应用资源类型，多个资源类型通过分号份隔连接 **取值范围**: 字符长度1-255 
 
         :param target_kind: The target_kind of this PolicyTemplateInfo.
         :type target_kind: str
@@ -197,7 +197,7 @@ class PolicyTemplateInfo:
     def tag(self):
         r"""Gets the tag of this PolicyTemplateInfo.
 
-        标签
+        **参数解释**: 标签 **取值范围**: 字符长度0-2048 
 
         :return: The tag of this PolicyTemplateInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class PolicyTemplateInfo:
     def tag(self, tag):
         r"""Sets the tag of this PolicyTemplateInfo.
 
-        标签
+        **参数解释**: 标签 **取值范围**: 字符长度0-2048 
 
         :param tag: The tag of this PolicyTemplateInfo.
         :type tag: str
@@ -219,7 +219,7 @@ class PolicyTemplateInfo:
     def level(self):
         r"""Gets the level of this PolicyTemplateInfo.
 
-        推荐级别
+        **参数解释**: 推荐级别 **取值范围**: 字符长度1-5 
 
         :return: The level of this PolicyTemplateInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class PolicyTemplateInfo:
     def level(self, level):
         r"""Sets the level of this PolicyTemplateInfo.
 
-        推荐级别
+        **参数解释**: 推荐级别 **取值范围**: 字符长度1-5 
 
         :param level: The level of this PolicyTemplateInfo.
         :type level: str
@@ -241,7 +241,7 @@ class PolicyTemplateInfo:
     def constraint_template(self):
         r"""Gets the constraint_template of this PolicyTemplateInfo.
 
-        策略模板内容
+        **参数解释**: 策略模板内容 **取值范围**: 字符长度1-65535 
 
         :return: The constraint_template of this PolicyTemplateInfo.
         :rtype: str
@@ -252,7 +252,7 @@ class PolicyTemplateInfo:
     def constraint_template(self, constraint_template):
         r"""Sets the constraint_template of this PolicyTemplateInfo.
 
-        策略模板内容
+        **参数解释**: 策略模板内容 **取值范围**: 字符长度1-65535 
 
         :param constraint_template: The constraint_template of this PolicyTemplateInfo.
         :type constraint_template: str

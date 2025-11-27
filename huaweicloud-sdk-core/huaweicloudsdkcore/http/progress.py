@@ -29,7 +29,7 @@ _CHUNK_SIZE = 65536
 _INTERVAL = 102400
 
 
-class ProgressNotifier(object):
+class ProgressNotifier:
 
     def __init__(self, callback=None, total_amount=-1, interval=_INTERVAL):
         self.callback = callback
@@ -77,7 +77,7 @@ class ProgressNotifier(object):
         self._queue.put(None)
 
 
-class ProgressRequestBody(object):
+class ProgressRequestBody:
     def __init__(self, _file, notifier):
         self._file = _file
         self._notifier = notifier

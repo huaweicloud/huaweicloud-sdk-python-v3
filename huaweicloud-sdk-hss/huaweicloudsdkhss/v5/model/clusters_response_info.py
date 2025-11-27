@@ -55,7 +55,7 @@ class ClustersResponseInfo:
         :type namespace_num: int
         :param policy_num: 策略数量
         :type policy_num: int
-        :param protection_status: 防护状态：true、false
+        :param protection_status: **参数解释**: 防护状态 **取值范围**: - true: 防护中 - false: 未防护 
         :type protection_status: bool
         """
         
@@ -246,7 +246,7 @@ class ClustersResponseInfo:
     def protection_status(self):
         r"""Gets the protection_status of this ClustersResponseInfo.
 
-        防护状态：true、false
+        **参数解释**: 防护状态 **取值范围**: - true: 防护中 - false: 未防护 
 
         :return: The protection_status of this ClustersResponseInfo.
         :rtype: bool
@@ -257,7 +257,7 @@ class ClustersResponseInfo:
     def protection_status(self, protection_status):
         r"""Sets the protection_status of this ClustersResponseInfo.
 
-        防护状态：true、false
+        **参数解释**: 防护状态 **取值范围**: - true: 防护中 - false: 未防护 
 
         :param protection_status: The protection_status of this ClustersResponseInfo.
         :type protection_status: bool

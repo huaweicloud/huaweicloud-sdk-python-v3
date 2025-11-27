@@ -17,7 +17,7 @@ class RaspProtectHistoryResponseInfo:
     openapi_types = {
         'host_name': 'str',
         'private_ip': 'str',
-        'alarm_time': 'object',
+        'alarm_time': 'int',
         'event_name': 'str',
         'severity': 'str',
         'req_src_ip': 'str',
@@ -72,7 +72,7 @@ class RaspProtectHistoryResponseInfo:
         :param private_ip: 主机私有IP
         :type private_ip: str
         :param alarm_time: 告警时间(ms)
-        :type alarm_time: object
+        :type alarm_time: int
         :param event_name: 告警名称
         :type event_name: str
         :param severity: 告警级别
@@ -230,7 +230,7 @@ class RaspProtectHistoryResponseInfo:
         告警时间(ms)
 
         :return: The alarm_time of this RaspProtectHistoryResponseInfo.
-        :rtype: object
+        :rtype: int
         """
         return self._alarm_time
 
@@ -241,7 +241,7 @@ class RaspProtectHistoryResponseInfo:
         告警时间(ms)
 
         :param alarm_time: The alarm_time of this RaspProtectHistoryResponseInfo.
-        :type alarm_time: object
+        :type alarm_time: int
         """
         self._alarm_time = alarm_time
 

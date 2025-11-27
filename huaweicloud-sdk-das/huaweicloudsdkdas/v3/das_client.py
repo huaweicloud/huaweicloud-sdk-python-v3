@@ -445,6 +445,71 @@ class DasClient(Client):
 
         return http_info
 
+    def add_email_template(self, request):
+        r"""新增邮件模板
+
+        新增邮件模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddEmailTemplate
+        :type request: :class:`huaweicloudsdkdas.v3.AddEmailTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.AddEmailTemplateResponse`
+        """
+        http_info = self._add_email_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_email_template_invoker(self, request):
+        http_info = self._add_email_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_email_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/batch-inspection/email-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddEmailTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_full_sql_task(self, request):
         r"""创建全量SQL明细解析任务
 
@@ -487,6 +552,266 @@ class DasClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_instance_group(self, request):
+        r"""新增实例组
+
+        新增实例组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddInstanceGroup
+        :type request: :class:`huaweicloudsdkdas.v3.AddInstanceGroupRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.AddInstanceGroupResponse`
+        """
+        http_info = self._add_instance_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_instance_group_invoker(self, request):
+        http_info = self._add_instance_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_instance_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/batch-inspection/instance-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddInstanceGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_instance_to_group(self, request):
+        r"""将实例添加到实例组
+
+        将实例添加到实例组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddInstanceToGroup
+        :type request: :class:`huaweicloudsdkdas.v3.AddInstanceToGroupRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.AddInstanceToGroupResponse`
+        """
+        http_info = self._add_instance_to_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_instance_to_group_invoker(self, request):
+        http_info = self._add_instance_to_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_instance_to_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/batch-inspection/add-instance-to-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddInstanceToGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_send_email(self, request):
+        r"""批量发送邮件
+
+        批量发送邮件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchSendEmail
+        :type request: :class:`huaweicloudsdkdas.v3.BatchSendEmailRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.BatchSendEmailResponse`
+        """
+        http_info = self._batch_send_email_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_send_email_invoker(self, request):
+        http_info = self._batch_send_email_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_send_email_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/batch-inspection/batch-send-email",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSendEmailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_subscribe_report(self, request):
+        r"""批量订阅/取消订阅
+
+        批量订阅/取消订阅
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchSubscribeReport
+        :type request: :class:`huaweicloudsdkdas.v3.BatchSubscribeReportRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.BatchSubscribeReportResponse`
+        """
+        http_info = self._batch_subscribe_report_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_subscribe_report_invoker(self, request):
+        http_info = self._batch_subscribe_report_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_subscribe_report_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/batch-inspection/batch-subscribe",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSubscribeReportResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 
@@ -894,6 +1219,71 @@ class DasClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def check_credential_for_batch_inspection(self, request):
+        r"""测试AK/SK
+
+        测试AK/SK，测试用户AK/SK能否正常访问OBS桶。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckCredentialForBatchInspection
+        :type request: :class:`huaweicloudsdkdas.v3.CheckCredentialForBatchInspectionRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.CheckCredentialForBatchInspectionResponse`
+        """
+        http_info = self._check_credential_for_batch_inspection_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_credential_for_batch_inspection_invoker(self, request):
+        http_info = self._check_credential_for_batch_inspection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_credential_for_batch_inspection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/batch-inspection/check-credential",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckCredentialForBatchInspectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -1420,6 +1810,71 @@ class DasClient(Client):
 
         return http_info
 
+    def delete_email_template(self, request):
+        r"""删除邮件模板
+
+        删除邮件模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEmailTemplate
+        :type request: :class:`huaweicloudsdkdas.v3.DeleteEmailTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.DeleteEmailTemplateResponse`
+        """
+        http_info = self._delete_email_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_email_template_invoker(self, request):
+        http_info = self._delete_email_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_email_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/batch-inspection/email-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEmailTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_history_transaction_export_task(self, request):
         r"""删除导出历史事务任务
 
@@ -1462,6 +1917,71 @@ class DasClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_instance_group(self, request):
+        r"""删除实例组
+
+        删除实例组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteInstanceGroup
+        :type request: :class:`huaweicloudsdkdas.v3.DeleteInstanceGroupRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.DeleteInstanceGroupResponse`
+        """
+        http_info = self._delete_instance_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_instance_group_invoker(self, request):
+        http_info = self._delete_instance_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_instance_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/batch-inspection/instance-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
 
         form_params = {}
 
@@ -2580,6 +3100,150 @@ class DasClient(Client):
 
         return http_info
 
+    def list_email_record(self, request):
+        r"""查询邮件推送记录
+
+        查询邮件推送记录
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEmailRecord
+        :type request: :class:`huaweicloudsdkdas.v3.ListEmailRecordRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListEmailRecordResponse`
+        """
+        http_info = self._list_email_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_email_record_invoker(self, request):
+        http_info = self._list_email_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_email_record_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/batch-inspection/email-record",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEmailRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+        if 'send_status' in local_var_params:
+            query_params.append(('send_status', local_var_params['send_status']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_email_template(self, request):
+        r"""查询邮件模板列表
+
+        查询邮件模板列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListEmailTemplate
+        :type request: :class:`huaweicloudsdkdas.v3.ListEmailTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListEmailTemplateResponse`
+        """
+        http_info = self._list_email_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_email_template_invoker(self, request):
+        http_info = self._list_email_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_email_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/batch-inspection/email-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEmailTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_full_sql_tasks(self, request):
         r"""查询SQL洞察任务列表
 
@@ -2895,6 +3559,85 @@ class DasClient(Client):
 
         return http_info
 
+    def list_inspection_report(self, request):
+        r"""查询巡检报告列表
+
+        查询巡检报告列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInspectionReport
+        :type request: :class:`huaweicloudsdkdas.v3.ListInspectionReportRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListInspectionReportResponse`
+        """
+        http_info = self._list_inspection_report_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_inspection_report_invoker(self, request):
+        http_info = self._list_inspection_report_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_inspection_report_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/batch-inspection/health-report-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInspectionReportResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_at' in local_var_params:
+            query_params.append(('start_at', local_var_params['start_at']))
+        if 'end_at' in local_var_params:
+            query_params.append(('end_at', local_var_params['end_at']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'health_rank' in local_var_params:
+            query_params.append(('health_rank', local_var_params['health_rank']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'asc' in local_var_params:
+            query_params.append(('asc', local_var_params['asc']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instance_distribution(self, request):
         r"""查询实例分布情况
 
@@ -2937,6 +3680,77 @@ class DasClient(Client):
         header_params = {}
         if 'x_language' in local_var_params:
             header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instance_group(self, request):
+        r"""查询实例组列表
+
+        查询实例组列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInstanceGroup
+        :type request: :class:`huaweicloudsdkdas.v3.ListInstanceGroupRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ListInstanceGroupResponse`
+        """
+        http_info = self._list_instance_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_group_invoker(self, request):
+        http_info = self._list_instance_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/batch-inspection/instance-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'group_name' in local_var_params:
+            query_params.append(('group_name', local_var_params['group_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
 
         form_params = {}
 
@@ -4205,6 +5019,71 @@ class DasClient(Client):
 
         return http_info
 
+    def save_credential_for_batch_inspection(self, request):
+        r"""保存AK/SK
+
+        保存AK/SK，用于后台任务访问OBS上传实例诊断报告
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SaveCredentialForBatchInspection
+        :type request: :class:`huaweicloudsdkdas.v3.SaveCredentialForBatchInspectionRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.SaveCredentialForBatchInspectionResponse`
+        """
+        http_info = self._save_credential_for_batch_inspection_http_info(request)
+        return self._call_api(**http_info)
+
+    def save_credential_for_batch_inspection_invoker(self, request):
+        http_info = self._save_credential_for_batch_inspection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _save_credential_for_batch_inspection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/batch-inspection/save-credential",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveCredentialForBatchInspectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_threshold_for_metric(self, request):
         r"""设置指标阈值
 
@@ -4251,6 +5130,69 @@ class DasClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_credential(self, request):
+        r"""查询AK/SK
+
+        查询AK/SK。用于判断是否已保存AK/SK
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCredential
+        :type request: :class:`huaweicloudsdkdas.v3.ShowCredentialRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.ShowCredentialResponse`
+        """
+        http_info = self._show_credential_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_credential_invoker(self, request):
+        http_info = self._show_credential_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_credential_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/batch-inspection/get-credential",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCredentialResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -5587,6 +6529,71 @@ class DasClient(Client):
 
         return http_info
 
+    def update_email_template(self, request):
+        r"""修改邮件模板
+
+        修改邮件模板
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEmailTemplate
+        :type request: :class:`huaweicloudsdkdas.v3.UpdateEmailTemplateRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.UpdateEmailTemplateResponse`
+        """
+        http_info = self._update_email_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_email_template_invoker(self, request):
+        http_info = self._update_email_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_email_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/batch-inspection/email-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEmailTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_health_report_settings(self, request):
         r"""更新实例诊断报告设置
 
@@ -5623,6 +6630,71 @@ class DasClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_instance_group(self, request):
+        r"""修改实例组
+
+        修改实例组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateInstanceGroup
+        :type request: :class:`huaweicloudsdkdas.v3.UpdateInstanceGroupRequest`
+        :rtype: :class:`huaweicloudsdkdas.v3.UpdateInstanceGroupResponse`
+        """
+        http_info = self._update_instance_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_instance_group_invoker(self, request):
+        http_info = self._update_instance_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/batch-inspection/instance-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 

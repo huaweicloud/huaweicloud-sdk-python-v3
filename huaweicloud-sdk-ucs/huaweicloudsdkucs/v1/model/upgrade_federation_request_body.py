@@ -1,0 +1,108 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class UpgradeFederationRequestBody:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'target_version': 'str'
+    }
+
+    attribute_map = {
+        'target_version': 'targetVersion'
+    }
+
+    def __init__(self, target_version=None):
+        r"""UpgradeFederationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param target_version: 目标版本
+        :type target_version: str
+        """
+        
+        
+
+        self._target_version = None
+        self.discriminator = None
+
+        if target_version is not None:
+            self.target_version = target_version
+
+    @property
+    def target_version(self):
+        r"""Gets the target_version of this UpgradeFederationRequestBody.
+
+        目标版本
+
+        :return: The target_version of this UpgradeFederationRequestBody.
+        :rtype: str
+        """
+        return self._target_version
+
+    @target_version.setter
+    def target_version(self, target_version):
+        r"""Sets the target_version of this UpgradeFederationRequestBody.
+
+        目标版本
+
+        :param target_version: The target_version of this UpgradeFederationRequestBody.
+        :type target_version: str
+        """
+        self._target_version = target_version
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, UpgradeFederationRequestBody):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

@@ -39,7 +39,7 @@ class Version:
         :type links: list[:class:`huaweicloudsdksms.v3.Link`]
         :param status: 版本状态。 SUPPORTED表示支持的版本
         :type status: str
-        :param updated: 版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。例如：2018-09-30T00:00:00Z
+        :param updated: 版本更新时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。例如：2018-09-30T00:00:00Z
         :type updated: str
         """
         
@@ -130,7 +130,7 @@ class Version:
     def updated(self):
         r"""Gets the updated of this Version.
 
-        版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。例如：2018-09-30T00:00:00Z
+        版本更新时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。例如：2018-09-30T00:00:00Z
 
         :return: The updated of this Version.
         :rtype: str
@@ -141,7 +141,7 @@ class Version:
     def updated(self, updated):
         r"""Sets the updated of this Version.
 
-        版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。例如：2018-09-30T00:00:00Z
+        版本更新时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。例如：2018-09-30T00:00:00Z
 
         :param updated: The updated of this Version.
         :type updated: str

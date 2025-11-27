@@ -41,7 +41,7 @@ class CloneServer:
         :type name: str
         :param clone_error: 克隆错误信息
         :type clone_error: str
-        :param clone_state: 克隆状态
+        :param clone_state: 克隆状态 NOT_READY: 未准备好 READY: 就绪 PREPARING: 准备创建中 CREATING: 创建中 ERROR: 克隆错误 FINISHED: 克隆结束
         :type clone_state: str
         :param error_msg: 克隆错误信息描述
         :type error_msg: str
@@ -137,7 +137,7 @@ class CloneServer:
     def clone_state(self):
         r"""Gets the clone_state of this CloneServer.
 
-        克隆状态
+        克隆状态 NOT_READY: 未准备好 READY: 就绪 PREPARING: 准备创建中 CREATING: 创建中 ERROR: 克隆错误 FINISHED: 克隆结束
 
         :return: The clone_state of this CloneServer.
         :rtype: str
@@ -148,7 +148,7 @@ class CloneServer:
     def clone_state(self, clone_state):
         r"""Sets the clone_state of this CloneServer.
 
-        克隆状态
+        克隆状态 NOT_READY: 未准备好 READY: 就绪 PREPARING: 准备创建中 CREATING: 创建中 ERROR: 克隆错误 FINISHED: 克隆结束
 
         :param clone_state: The clone_state of this CloneServer.
         :type clone_state: str

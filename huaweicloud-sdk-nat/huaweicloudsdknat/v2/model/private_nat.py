@@ -24,8 +24,10 @@ class PrivateNat:
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'downlink_vpcs': 'list[DownlinkVpc]',
-        'tags': 'list[PrivateTag]',
-        'enterprise_project_id': 'str'
+        'tags': 'list[Tag]',
+        'enterprise_project_id': 'str',
+        'rule_max': 'int',
+        'transit_ip_pool_size_max': 'int'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class PrivateNat:
         'updated_at': 'updated_at',
         'downlink_vpcs': 'downlink_vpcs',
         'tags': 'tags',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'rule_max': 'rule_max',
+        'transit_ip_pool_size_max': 'transit_ip_pool_size_max'
     }
 
-    def __init__(self, id=None, project_id=None, name=None, description=None, spec=None, status=None, created_at=None, updated_at=None, downlink_vpcs=None, tags=None, enterprise_project_id=None):
+    def __init__(self, id=None, project_id=None, name=None, description=None, spec=None, status=None, created_at=None, updated_at=None, downlink_vpcs=None, tags=None, enterprise_project_id=None, rule_max=None, transit_ip_pool_size_max=None):
         r"""PrivateNat
 
         The model defined in huaweicloud sdk
@@ -55,9 +59,9 @@ class PrivateNat:
         :type name: str
         :param description: 私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param spec: 私网NAT网关实例的规格。 取值为： \&quot;Small\&quot;：小型 \&quot;Medium\&quot;：中型 \&quot;Large\&quot;：大型 \&quot;Extra-large\&quot;：超大型
+        :param spec: 私网NAT网关实例的规格。 取值为： \&quot;Small\&quot;：小型 \&quot;Medium\&quot;：中型 \&quot;Large\&quot;：大型 \&quot;Extra-large\&quot;：超大型 \&quot;Extra-xlarge\&quot;：企业型
         :type spec: str
-        :param status: 私网NAT网关实例的状态。 取值为： \&quot;ACTIVE\&quot;：正常运行 \&quot;FROZEN\&quot;：冻结
+        :param status: 私网NAT网关实例的状态。 取值为： \&quot;ACTIVE\&quot;：正常运行 \&quot;FROZEN\&quot;：冻结 \&quot;INACTIVE\&quot;：不可用
         :type status: str
         :param created_at: 私网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
         :type created_at: datetime
@@ -66,9 +70,13 @@ class PrivateNat:
         :param downlink_vpcs: 私网NAT网关实例所属的VPC实例。
         :type downlink_vpcs: list[:class:`huaweicloudsdknat.v2.DownlinkVpc`]
         :param tags: 标签列表。
-        :type tags: list[:class:`huaweicloudsdknat.v2.PrivateTag`]
+        :type tags: list[:class:`huaweicloudsdknat.v2.Tag`]
         :param enterprise_project_id: 企业项目ID。 创建私网NAT网关实例时，关联的企业项目ID。
         :type enterprise_project_id: str
+        :param rule_max: 最大规则数。
+        :type rule_max: int
+        :param transit_ip_pool_size_max: 中转ip池大小
+        :type transit_ip_pool_size_max: int
         """
         
         
@@ -84,6 +92,8 @@ class PrivateNat:
         self._downlink_vpcs = None
         self._tags = None
         self._enterprise_project_id = None
+        self._rule_max = None
+        self._transit_ip_pool_size_max = None
         self.discriminator = None
 
         self.id = id
@@ -98,6 +108,10 @@ class PrivateNat:
         if tags is not None:
             self.tags = tags
         self.enterprise_project_id = enterprise_project_id
+        if rule_max is not None:
+            self.rule_max = rule_max
+        if transit_ip_pool_size_max is not None:
+            self.transit_ip_pool_size_max = transit_ip_pool_size_max
 
     @property
     def id(self):
@@ -191,7 +205,7 @@ class PrivateNat:
     def spec(self):
         r"""Gets the spec of this PrivateNat.
 
-        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
+        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型 \"Extra-xlarge\"：企业型
 
         :return: The spec of this PrivateNat.
         :rtype: str
@@ -202,7 +216,7 @@ class PrivateNat:
     def spec(self, spec):
         r"""Sets the spec of this PrivateNat.
 
-        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
+        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型 \"Extra-xlarge\"：企业型
 
         :param spec: The spec of this PrivateNat.
         :type spec: str
@@ -213,7 +227,7 @@ class PrivateNat:
     def status(self):
         r"""Gets the status of this PrivateNat.
 
-        私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结
+        私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
 
         :return: The status of this PrivateNat.
         :rtype: str
@@ -224,7 +238,7 @@ class PrivateNat:
     def status(self, status):
         r"""Sets the status of this PrivateNat.
 
-        私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结
+        私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
 
         :param status: The status of this PrivateNat.
         :type status: str
@@ -304,7 +318,7 @@ class PrivateNat:
         标签列表。
 
         :return: The tags of this PrivateNat.
-        :rtype: list[:class:`huaweicloudsdknat.v2.PrivateTag`]
+        :rtype: list[:class:`huaweicloudsdknat.v2.Tag`]
         """
         return self._tags
 
@@ -315,7 +329,7 @@ class PrivateNat:
         标签列表。
 
         :param tags: The tags of this PrivateNat.
-        :type tags: list[:class:`huaweicloudsdknat.v2.PrivateTag`]
+        :type tags: list[:class:`huaweicloudsdknat.v2.Tag`]
         """
         self._tags = tags
 
@@ -340,6 +354,50 @@ class PrivateNat:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def rule_max(self):
+        r"""Gets the rule_max of this PrivateNat.
+
+        最大规则数。
+
+        :return: The rule_max of this PrivateNat.
+        :rtype: int
+        """
+        return self._rule_max
+
+    @rule_max.setter
+    def rule_max(self, rule_max):
+        r"""Sets the rule_max of this PrivateNat.
+
+        最大规则数。
+
+        :param rule_max: The rule_max of this PrivateNat.
+        :type rule_max: int
+        """
+        self._rule_max = rule_max
+
+    @property
+    def transit_ip_pool_size_max(self):
+        r"""Gets the transit_ip_pool_size_max of this PrivateNat.
+
+        中转ip池大小
+
+        :return: The transit_ip_pool_size_max of this PrivateNat.
+        :rtype: int
+        """
+        return self._transit_ip_pool_size_max
+
+    @transit_ip_pool_size_max.setter
+    def transit_ip_pool_size_max(self, transit_ip_pool_size_max):
+        r"""Sets the transit_ip_pool_size_max of this PrivateNat.
+
+        中转ip池大小
+
+        :param transit_ip_pool_size_max: The transit_ip_pool_size_max of this PrivateNat.
+        :type transit_ip_pool_size_max: int
+        """
+        self._transit_ip_pool_size_max = transit_ip_pool_size_max
 
     def to_dict(self):
         result = {}

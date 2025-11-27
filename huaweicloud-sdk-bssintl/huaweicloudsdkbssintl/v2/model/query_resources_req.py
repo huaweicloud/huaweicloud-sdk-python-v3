@@ -23,7 +23,8 @@ class QueryResourcesReq:
         'limit': 'int',
         'expire_time_begin': 'str',
         'expire_time_end': 'str',
-        'service_type_code': 'str'
+        'service_type_code': 'str',
+        'customer_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class QueryResourcesReq:
         'limit': 'limit',
         'expire_time_begin': 'expire_time_begin',
         'expire_time_end': 'expire_time_end',
-        'service_type_code': 'service_type_code'
+        'service_type_code': 'service_type_code',
+        'customer_id': 'customer_id'
     }
 
-    def __init__(self, resource_ids=None, order_id=None, only_main_resource=None, status_list=None, offset=None, limit=None, expire_time_begin=None, expire_time_end=None, service_type_code=None):
+    def __init__(self, resource_ids=None, order_id=None, only_main_resource=None, status_list=None, offset=None, limit=None, expire_time_begin=None, expire_time_end=None, service_type_code=None, customer_id=None):
         r"""QueryResourcesReq
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class QueryResourcesReq:
         :type expire_time_end: str
         :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。 此参数不携带、携带值为null，不作为筛选条件。此参数不允许为空串，有参数校验。
         :type service_type_code: str
+        :param customer_id: 客户账号ID，非必填，范围限制:0-64，伙伴查询子客户包年/包月资源列表时必须携带该字段。除此之外，此参数不做处理。
+        :type customer_id: str
         """
         
         
@@ -74,6 +78,7 @@ class QueryResourcesReq:
         self._expire_time_begin = None
         self._expire_time_end = None
         self._service_type_code = None
+        self._customer_id = None
         self.discriminator = None
 
         if resource_ids is not None:
@@ -94,6 +99,8 @@ class QueryResourcesReq:
             self.expire_time_end = expire_time_end
         if service_type_code is not None:
             self.service_type_code = service_type_code
+        if customer_id is not None:
+            self.customer_id = customer_id
 
     @property
     def resource_ids(self):
@@ -292,6 +299,28 @@ class QueryResourcesReq:
         :type service_type_code: str
         """
         self._service_type_code = service_type_code
+
+    @property
+    def customer_id(self):
+        r"""Gets the customer_id of this QueryResourcesReq.
+
+        客户账号ID，非必填，范围限制:0-64，伙伴查询子客户包年/包月资源列表时必须携带该字段。除此之外，此参数不做处理。
+
+        :return: The customer_id of this QueryResourcesReq.
+        :rtype: str
+        """
+        return self._customer_id
+
+    @customer_id.setter
+    def customer_id(self, customer_id):
+        r"""Sets the customer_id of this QueryResourcesReq.
+
+        客户账号ID，非必填，范围限制:0-64，伙伴查询子客户包年/包月资源列表时必须携带该字段。除此之外，此参数不做处理。
+
+        :param customer_id: The customer_id of this QueryResourcesReq.
+        :type customer_id: str
+        """
+        self._customer_id = customer_id
 
     def to_dict(self):
         result = {}

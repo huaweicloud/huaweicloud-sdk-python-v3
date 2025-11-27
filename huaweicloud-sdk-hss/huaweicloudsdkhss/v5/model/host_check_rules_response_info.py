@@ -27,6 +27,7 @@ class HostCheckRulesResponseInfo:
         'description': 'str',
         'enable_fix': 'int',
         'enable_click': 'bool',
+        'enable_verify': 'bool',
         'cancel_ignore_enable_click': 'bool',
         'fix_failed_reason': 'str'
     }
@@ -44,11 +45,12 @@ class HostCheckRulesResponseInfo:
         'description': 'description',
         'enable_fix': 'enable_fix',
         'enable_click': 'enable_click',
+        'enable_verify': 'enable_verify',
         'cancel_ignore_enable_click': 'cancel_ignore_enable_click',
         'fix_failed_reason': 'fix_failed_reason'
     }
 
-    def __init__(self, check_rule_id=None, check_rule_name=None, tag=None, severity=None, result_type=None, rule_params=None, scan_time=None, host_type=None, diff_description=None, description=None, enable_fix=None, enable_click=None, cancel_ignore_enable_click=None, fix_failed_reason=None):
+    def __init__(self, check_rule_id=None, check_rule_name=None, tag=None, severity=None, result_type=None, rule_params=None, scan_time=None, host_type=None, diff_description=None, description=None, enable_fix=None, enable_click=None, enable_verify=None, cancel_ignore_enable_click=None, fix_failed_reason=None):
         r"""HostCheckRulesResponseInfo
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class HostCheckRulesResponseInfo:
         :type enable_fix: int
         :param enable_click: **参数解释** 该检查项的修复 &amp; 验证 按钮是否可单击 **取值范围** - true  : 按钮可单击 - false : 按钮不可单击
         :type enable_click: bool
+        :param enable_verify: **参数解释** 该检查项是否可验证，要求为Linux且agent版本&gt;&#x3D;3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+        :type enable_verify: bool
         :param cancel_ignore_enable_click: **参数解释** 已忽略检查项是否可点击 **取值范围** - true  : 按钮可单击 - false : 按钮不可单击
         :type cancel_ignore_enable_click: bool
         :param fix_failed_reason: **参数解释** 修复失败原因 **取值范围** 不涉及
@@ -97,6 +101,7 @@ class HostCheckRulesResponseInfo:
         self._description = None
         self._enable_fix = None
         self._enable_click = None
+        self._enable_verify = None
         self._cancel_ignore_enable_click = None
         self._fix_failed_reason = None
         self.discriminator = None
@@ -125,6 +130,8 @@ class HostCheckRulesResponseInfo:
             self.enable_fix = enable_fix
         if enable_click is not None:
             self.enable_click = enable_click
+        if enable_verify is not None:
+            self.enable_verify = enable_verify
         if cancel_ignore_enable_click is not None:
             self.cancel_ignore_enable_click = cancel_ignore_enable_click
         if fix_failed_reason is not None:
@@ -393,6 +400,28 @@ class HostCheckRulesResponseInfo:
         :type enable_click: bool
         """
         self._enable_click = enable_click
+
+    @property
+    def enable_verify(self):
+        r"""Gets the enable_verify of this HostCheckRulesResponseInfo.
+
+        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+
+        :return: The enable_verify of this HostCheckRulesResponseInfo.
+        :rtype: bool
+        """
+        return self._enable_verify
+
+    @enable_verify.setter
+    def enable_verify(self, enable_verify):
+        r"""Sets the enable_verify of this HostCheckRulesResponseInfo.
+
+        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+
+        :param enable_verify: The enable_verify of this HostCheckRulesResponseInfo.
+        :type enable_verify: bool
+        """
+        self._enable_verify = enable_verify
 
     @property
     def cancel_ignore_enable_click(self):

@@ -154,7 +154,7 @@ class RetryOutageException(RequestTimeoutException):
         super().__init__(error_msg)
 
 
-class SdkError(object):
+class SdkError:
     def __init__(self, request_id=None, error_code=None, error_msg=None, encoded_auth_msg=None):
         self._error_msg = error_msg
         self._error_code = error_code

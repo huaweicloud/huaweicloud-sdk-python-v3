@@ -25,7 +25,12 @@ class ExportBaselineRequestBody:
         'host_id': 'str',
         'limit': 'int',
         'offset': 'int',
-        'export_headers': 'list[list[str]]'
+        'export_headers': 'list[list[str]]',
+        'tag': 'str',
+        'check_type': 'str',
+        'statistics_scan_result': 'str',
+        'check_rule_name': 'str',
+        'cluster_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +44,15 @@ class ExportBaselineRequestBody:
         'host_id': 'host_id',
         'limit': 'limit',
         'offset': 'offset',
-        'export_headers': 'export_headers'
+        'export_headers': 'export_headers',
+        'tag': 'tag',
+        'check_type': 'check_type',
+        'statistics_scan_result': 'statistics_scan_result',
+        'check_rule_name': 'check_rule_name',
+        'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, category=None, export_size=None, group_id=None, check_name=None, standard=None, scan_result=None, severity=None, host_id=None, limit=None, offset=None, export_headers=None):
+    def __init__(self, category=None, export_size=None, group_id=None, check_name=None, standard=None, scan_result=None, severity=None, host_id=None, limit=None, offset=None, export_headers=None, tag=None, check_type=None, statistics_scan_result=None, check_rule_name=None, cluster_id=None):
         r"""ExportBaselineRequestBody
 
         The model defined in huaweicloud sdk
@@ -69,6 +79,16 @@ class ExportBaselineRequestBody:
         :type offset: int
         :param export_headers: 导出配置检测数据的表头信息列表
         :type export_headers: list[list[str]]
+        :param tag: **参数解释** 基线检查项的类型 **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
+        :type tag: str
+        :param check_type: **参数解释** 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
+        :type check_type: str
+        :param statistics_scan_result: **参数解释** 统计结果类型，包含如下： **约束限制** 不涉及 **取值范围** - pass      : 已通过，表示查看主机全部通过的检查项 - failed    : 未通过，表示查看主机全部未通过 &amp; 全部未处理的检查项 - processed : 已处理，表示查看主机存在未通过 &amp; 未通过主机已全部处理(忽略、加白)的检查项  **默认取值** 不涉及
+        :type statistics_scan_result: str
+        :param check_rule_name: **参数解释** 检查项（检查规则）名称，支持模糊匹配 **约束限制** 不涉及 **取值范围** 字符长度0-2048位 **默认取值** 不涉及
+        :type check_rule_name: str
+        :param cluster_id: **参数解释** 集群ID **约束限制** 不涉及 **取值范围** 字符长度0-64位 **默认取值** 不涉及
+        :type cluster_id: str
         """
         
         
@@ -84,6 +104,11 @@ class ExportBaselineRequestBody:
         self._limit = None
         self._offset = None
         self._export_headers = None
+        self._tag = None
+        self._check_type = None
+        self._statistics_scan_result = None
+        self._check_rule_name = None
+        self._cluster_id = None
         self.discriminator = None
 
         if category is not None:
@@ -107,6 +132,16 @@ class ExportBaselineRequestBody:
         if offset is not None:
             self.offset = offset
         self.export_headers = export_headers
+        if tag is not None:
+            self.tag = tag
+        if check_type is not None:
+            self.check_type = check_type
+        if statistics_scan_result is not None:
+            self.statistics_scan_result = statistics_scan_result
+        if check_rule_name is not None:
+            self.check_rule_name = check_rule_name
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
 
     @property
     def category(self):
@@ -349,6 +384,116 @@ class ExportBaselineRequestBody:
         :type export_headers: list[list[str]]
         """
         self._export_headers = export_headers
+
+    @property
+    def tag(self):
+        r"""Gets the tag of this ExportBaselineRequestBody.
+
+        **参数解释** 基线检查项的类型 **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
+
+        :return: The tag of this ExportBaselineRequestBody.
+        :rtype: str
+        """
+        return self._tag
+
+    @tag.setter
+    def tag(self, tag):
+        r"""Sets the tag of this ExportBaselineRequestBody.
+
+        **参数解释** 基线检查项的类型 **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
+
+        :param tag: The tag of this ExportBaselineRequestBody.
+        :type tag: str
+        """
+        self._tag = tag
+
+    @property
+    def check_type(self):
+        r"""Gets the check_type of this ExportBaselineRequestBody.
+
+        **参数解释** 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
+
+        :return: The check_type of this ExportBaselineRequestBody.
+        :rtype: str
+        """
+        return self._check_type
+
+    @check_type.setter
+    def check_type(self, check_type):
+        r"""Sets the check_type of this ExportBaselineRequestBody.
+
+        **参数解释** 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **约束限制** 不涉及 **取值范围** 字符长度0-256位 **默认取值** 不涉及
+
+        :param check_type: The check_type of this ExportBaselineRequestBody.
+        :type check_type: str
+        """
+        self._check_type = check_type
+
+    @property
+    def statistics_scan_result(self):
+        r"""Gets the statistics_scan_result of this ExportBaselineRequestBody.
+
+        **参数解释** 统计结果类型，包含如下： **约束限制** 不涉及 **取值范围** - pass      : 已通过，表示查看主机全部通过的检查项 - failed    : 未通过，表示查看主机全部未通过 & 全部未处理的检查项 - processed : 已处理，表示查看主机存在未通过 & 未通过主机已全部处理(忽略、加白)的检查项  **默认取值** 不涉及
+
+        :return: The statistics_scan_result of this ExportBaselineRequestBody.
+        :rtype: str
+        """
+        return self._statistics_scan_result
+
+    @statistics_scan_result.setter
+    def statistics_scan_result(self, statistics_scan_result):
+        r"""Sets the statistics_scan_result of this ExportBaselineRequestBody.
+
+        **参数解释** 统计结果类型，包含如下： **约束限制** 不涉及 **取值范围** - pass      : 已通过，表示查看主机全部通过的检查项 - failed    : 未通过，表示查看主机全部未通过 & 全部未处理的检查项 - processed : 已处理，表示查看主机存在未通过 & 未通过主机已全部处理(忽略、加白)的检查项  **默认取值** 不涉及
+
+        :param statistics_scan_result: The statistics_scan_result of this ExportBaselineRequestBody.
+        :type statistics_scan_result: str
+        """
+        self._statistics_scan_result = statistics_scan_result
+
+    @property
+    def check_rule_name(self):
+        r"""Gets the check_rule_name of this ExportBaselineRequestBody.
+
+        **参数解释** 检查项（检查规则）名称，支持模糊匹配 **约束限制** 不涉及 **取值范围** 字符长度0-2048位 **默认取值** 不涉及
+
+        :return: The check_rule_name of this ExportBaselineRequestBody.
+        :rtype: str
+        """
+        return self._check_rule_name
+
+    @check_rule_name.setter
+    def check_rule_name(self, check_rule_name):
+        r"""Sets the check_rule_name of this ExportBaselineRequestBody.
+
+        **参数解释** 检查项（检查规则）名称，支持模糊匹配 **约束限制** 不涉及 **取值范围** 字符长度0-2048位 **默认取值** 不涉及
+
+        :param check_rule_name: The check_rule_name of this ExportBaselineRequestBody.
+        :type check_rule_name: str
+        """
+        self._check_rule_name = check_rule_name
+
+    @property
+    def cluster_id(self):
+        r"""Gets the cluster_id of this ExportBaselineRequestBody.
+
+        **参数解释** 集群ID **约束限制** 不涉及 **取值范围** 字符长度0-64位 **默认取值** 不涉及
+
+        :return: The cluster_id of this ExportBaselineRequestBody.
+        :rtype: str
+        """
+        return self._cluster_id
+
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        r"""Sets the cluster_id of this ExportBaselineRequestBody.
+
+        **参数解释** 集群ID **约束限制** 不涉及 **取值范围** 字符长度0-64位 **默认取值** 不涉及
+
+        :param cluster_id: The cluster_id of this ExportBaselineRequestBody.
+        :type cluster_id: str
+        """
+        self._cluster_id = cluster_id
 
     def to_dict(self):
         result = {}

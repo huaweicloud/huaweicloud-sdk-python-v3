@@ -18,17 +18,17 @@ class Resource:
         'resource_detail': 'object',
         'resource_id': 'str',
         'resource_name': 'str',
-        'resource_tag': 'list[ResourceTag]'
+        'tags': 'list[ResourceTag]'
     }
 
     attribute_map = {
         'resource_detail': 'resource_detail',
         'resource_id': 'resource_id',
         'resource_name': 'resource_name',
-        'resource_tag': 'resource_tag'
+        'tags': 'tags'
     }
 
-    def __init__(self, resource_detail=None, resource_id=None, resource_name=None, resource_tag=None):
+    def __init__(self, resource_detail=None, resource_id=None, resource_name=None, tags=None):
         r"""Resource
 
         The model defined in huaweicloud sdk
@@ -39,8 +39,8 @@ class Resource:
         :type resource_id: str
         :param resource_name: 资源名称，资源没有名称时默认为空字符串。
         :type resource_name: str
-        :param resource_tag: 标签列表，没有标签默认为空数组。
-        :type resource_tag: list[:class:`huaweicloudsdknat.v2.ResourceTag`]
+        :param tags: 标签列表，没有标签默认为空数组。
+        :type tags: list[:class:`huaweicloudsdknat.v2.ResourceTag`]
         """
         
         
@@ -48,13 +48,13 @@ class Resource:
         self._resource_detail = None
         self._resource_id = None
         self._resource_name = None
-        self._resource_tag = None
+        self._tags = None
         self.discriminator = None
 
         self.resource_detail = resource_detail
         self.resource_id = resource_id
         self.resource_name = resource_name
-        self.resource_tag = resource_tag
+        self.tags = tags
 
     @property
     def resource_detail(self):
@@ -123,26 +123,26 @@ class Resource:
         self._resource_name = resource_name
 
     @property
-    def resource_tag(self):
-        r"""Gets the resource_tag of this Resource.
+    def tags(self):
+        r"""Gets the tags of this Resource.
 
         标签列表，没有标签默认为空数组。
 
-        :return: The resource_tag of this Resource.
+        :return: The tags of this Resource.
         :rtype: list[:class:`huaweicloudsdknat.v2.ResourceTag`]
         """
-        return self._resource_tag
+        return self._tags
 
-    @resource_tag.setter
-    def resource_tag(self, resource_tag):
-        r"""Sets the resource_tag of this Resource.
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this Resource.
 
         标签列表，没有标签默认为空数组。
 
-        :param resource_tag: The resource_tag of this Resource.
-        :type resource_tag: list[:class:`huaweicloudsdknat.v2.ResourceTag`]
+        :param tags: The tags of this Resource.
+        :type tags: list[:class:`huaweicloudsdknat.v2.ResourceTag`]
         """
-        self._resource_tag = resource_tag
+        self._tags = tags
 
     def to_dict(self):
         result = {}

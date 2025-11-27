@@ -17,16 +17,20 @@ class ListInstancesRequest:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'description': 'str'
+        'description': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'description': 'description'
+        'description': 'description',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, id=None, name=None, description=None):
+    def __init__(self, id=None, name=None, description=None, limit=None, marker=None):
         r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class ListInstancesRequest:
         :type name: str
         :param description: - 参数解释：ESW的描述信息。 - 约束限制：   - 长度范围为0~255个字符。   - 不能包含“&lt;”和“&gt;”。 - 取值范围：不涉及。 - 默认取值：不涉及。
         :type description: str
+        :param limit: - 参数解释：分页查询每页返回的记录个数。 - 约束限制：limit需要和marker配合使用，详细规则请见marker的参数说明。 - 取值范围：0~2^31-1。 - 默认取值：2000。
+        :type limit: int
+        :param marker: - 参数解释：分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 约束限制：marker需要和limit配合使用。   - 若不传入marker和limit参数，查询结果返回第一页全部资源记录。   - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。   - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。   - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11~2000条（limit默认值2000）资源记录。 - 取值范围：不涉及。 - 默认取值：不涉及。
+        :type marker: str
         """
         
         
@@ -44,6 +52,8 @@ class ListInstancesRequest:
         self._id = None
         self._name = None
         self._description = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if id is not None:
@@ -52,6 +62,10 @@ class ListInstancesRequest:
             self.name = name
         if description is not None:
             self.description = description
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def id(self):
@@ -118,6 +132,50 @@ class ListInstancesRequest:
         :type description: str
         """
         self._description = description
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListInstancesRequest.
+
+        - 参数解释：分页查询每页返回的记录个数。 - 约束限制：limit需要和marker配合使用，详细规则请见marker的参数说明。 - 取值范围：0~2^31-1。 - 默认取值：2000。
+
+        :return: The limit of this ListInstancesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListInstancesRequest.
+
+        - 参数解释：分页查询每页返回的记录个数。 - 约束限制：limit需要和marker配合使用，详细规则请见marker的参数说明。 - 取值范围：0~2^31-1。 - 默认取值：2000。
+
+        :param limit: The limit of this ListInstancesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListInstancesRequest.
+
+        - 参数解释：分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 约束限制：marker需要和limit配合使用。   - 若不传入marker和limit参数，查询结果返回第一页全部资源记录。   - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。   - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。   - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11~2000条（limit默认值2000）资源记录。 - 取值范围：不涉及。 - 默认取值：不涉及。
+
+        :return: The marker of this ListInstancesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListInstancesRequest.
+
+        - 参数解释：分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 约束限制：marker需要和limit配合使用。   - 若不传入marker和limit参数，查询结果返回第一页全部资源记录。   - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。   - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。   - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11~2000条（limit默认值2000）资源记录。 - 取值范围：不涉及。 - 默认取值：不涉及。
+
+        :param marker: The marker of this ListInstancesRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         result = {}

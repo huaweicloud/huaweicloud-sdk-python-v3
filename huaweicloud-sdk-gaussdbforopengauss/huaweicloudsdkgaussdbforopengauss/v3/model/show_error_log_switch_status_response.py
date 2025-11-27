@@ -28,7 +28,7 @@ class ShowErrorLogSwitchStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 采集状态
+        :param status: **参数解释**: 采集状态。 **取值范围**: - ON：开启采集 - OFF：关闭采集
         :type status: str
         """
         
@@ -44,7 +44,7 @@ class ShowErrorLogSwitchStatusResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowErrorLogSwitchStatusResponse.
 
-        采集状态
+        **参数解释**: 采集状态。 **取值范围**: - ON：开启采集 - OFF：关闭采集
 
         :return: The status of this ShowErrorLogSwitchStatusResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowErrorLogSwitchStatusResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowErrorLogSwitchStatusResponse.
 
-        采集状态
+        **参数解释**: 采集状态。 **取值范围**: - ON：开启采集 - OFF：关闭采集
 
         :param status: The status of this ShowErrorLogSwitchStatusResponse.
         :type status: str

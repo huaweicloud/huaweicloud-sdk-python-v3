@@ -28,7 +28,7 @@ class ShowAppRaspSwitchStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 开启状态
+        :param status: **参数解释**: 应用防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下7种。 - app_install_processing：防护开启中。 - app_protected：防护成功。 - app_install_failed：防护失败（安装失败）。 - app_not_configure：未防护。 - app_partially_protected：部分防护。 - app_all_failed：防护失败。 - app_uninstall_processing：卸载中。 **默认取值**: 不涉及 
         :type status: str
         """
         
@@ -44,7 +44,7 @@ class ShowAppRaspSwitchStatusResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowAppRaspSwitchStatusResponse.
 
-        开启状态
+        **参数解释**: 应用防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下7种。 - app_install_processing：防护开启中。 - app_protected：防护成功。 - app_install_failed：防护失败（安装失败）。 - app_not_configure：未防护。 - app_partially_protected：部分防护。 - app_all_failed：防护失败。 - app_uninstall_processing：卸载中。 **默认取值**: 不涉及 
 
         :return: The status of this ShowAppRaspSwitchStatusResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class ShowAppRaspSwitchStatusResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowAppRaspSwitchStatusResponse.
 
-        开启状态
+        **参数解释**: 应用防护状态 **约束限制**: 不涉及 **取值范围**: 包含如下7种。 - app_install_processing：防护开启中。 - app_protected：防护成功。 - app_install_failed：防护失败（安装失败）。 - app_not_configure：未防护。 - app_partially_protected：部分防护。 - app_all_failed：防护失败。 - app_uninstall_processing：卸载中。 **默认取值**: 不涉及 
 
         :param status: The status of this ShowAppRaspSwitchStatusResponse.
         :type status: str

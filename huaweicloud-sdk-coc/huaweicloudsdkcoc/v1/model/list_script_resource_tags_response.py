@@ -16,76 +16,47 @@ class ListScriptResourceTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[ScriptTag]',
-        'total': 'int'
+        'data': 'ListTagsResponse'
     }
 
     attribute_map = {
-        'tags': 'tags',
-        'total': 'total'
+        'data': 'data'
     }
 
-    def __init__(self, tags=None, total=None):
+    def __init__(self, data=None):
         r"""ListScriptResourceTagsResponse
 
         The model defined in huaweicloud sdk
 
-        :param tags: 
-        :type tags: list[:class:`huaweicloudsdkcoc.v1.ScriptTag`]
-        :param total: 总条数。
-        :type total: int
+        :param data: 
+        :type data: :class:`huaweicloudsdkcoc.v1.ListTagsResponse`
         """
         
         super().__init__()
 
-        self._tags = None
-        self._total = None
+        self._data = None
         self.discriminator = None
 
-        if tags is not None:
-            self.tags = tags
-        if total is not None:
-            self.total = total
+        if data is not None:
+            self.data = data
 
     @property
-    def tags(self):
-        r"""Gets the tags of this ListScriptResourceTagsResponse.
+    def data(self):
+        r"""Gets the data of this ListScriptResourceTagsResponse.
 
-        :return: The tags of this ListScriptResourceTagsResponse.
-        :rtype: list[:class:`huaweicloudsdkcoc.v1.ScriptTag`]
+        :return: The data of this ListScriptResourceTagsResponse.
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListTagsResponse`
         """
-        return self._tags
+        return self._data
 
-    @tags.setter
-    def tags(self, tags):
-        r"""Sets the tags of this ListScriptResourceTagsResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this ListScriptResourceTagsResponse.
 
-        :param tags: The tags of this ListScriptResourceTagsResponse.
-        :type tags: list[:class:`huaweicloudsdkcoc.v1.ScriptTag`]
+        :param data: The data of this ListScriptResourceTagsResponse.
+        :type data: :class:`huaweicloudsdkcoc.v1.ListTagsResponse`
         """
-        self._tags = tags
-
-    @property
-    def total(self):
-        r"""Gets the total of this ListScriptResourceTagsResponse.
-
-        总条数。
-
-        :return: The total of this ListScriptResourceTagsResponse.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        r"""Sets the total of this ListScriptResourceTagsResponse.
-
-        总条数。
-
-        :param total: The total of this ListScriptResourceTagsResponse.
-        :type total: int
-        """
-        self._total = total
+        self._data = data
 
     def to_dict(self):
         import warnings

@@ -61,41 +61,41 @@ class ClusterPolicyResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群id
+        :param cluster_id: **参数解释**： 集群ID **取值范围**： 不涉及 
         :type cluster_id: str
-        :param cluster_name: 集群名称
+        :param cluster_name: **参数解释**： 集群名称 **取值范围**： 不涉及 
         :type cluster_name: str
-        :param content: 策略内容
+        :param content: **参数解释**： 策略内容 **取值范围**： 不涉及 
         :type content: object
-        :param deploy_content: deploy内容
+        :param deploy_content: **参数解释**： 部署内容 **取值范围**： 不涉及 
         :type deploy_content: str
-        :param parameters: 参数
+        :param parameters: **参数解释**： 参数 **取值范围**： 不涉及 
         :type parameters: str
-        :param policy_name: 策略名称
+        :param policy_name: **参数解释**： 策略名称 **取值范围**： 不涉及 
         :type policy_name: str
-        :param policy_id: 策略ID
+        :param policy_id: **参数解释**： 策略ID **取值范围**： 不涉及 
         :type policy_id: str
-        :param resources: 资源
+        :param resources: **参数解释**： 资源 **取值范围**： 不涉及 
         :type resources: list[:class:`huaweicloudsdkhss.v5.Resources`]
-        :param template_id: 模板ID
+        :param template_id: **参数解释**： 模板ID **取值范围**： 不涉及 
         :type template_id: str
-        :param template_name: 模板名称
+        :param template_name: **参数解释**： 模板名称 **取值范围**： 不涉及 
         :type template_name: str
-        :param template_type: 模板类型
+        :param template_type: **参数解释**： 模板类型 **取值范围**： 不涉及 
         :type template_type: str
-        :param description: 策略描述
+        :param description: **参数解释**： 策略描述 **取值范围**： 不涉及 
         :type description: str
-        :param update_time: 更新时间
+        :param update_time: **参数解释**： 更新时间 **取值范围**： 不涉及 
         :type update_time: int
-        :param create_time: 创建时间
+        :param create_time: **参数解释**： 创建时间 **取值范围**： 不涉及 
         :type create_time: int
-        :param image_num: 防护镜像数量
+        :param image_num: **参数解释**： 防护镜像数量 **取值范围**： 不涉及 
         :type image_num: int
-        :param labels_num: 防护标签数量
+        :param labels_num: **参数解释**： 防护标签数量 **取值范围**： 不涉及 
         :type labels_num: int
-        :param status: 状态
+        :param status: **参数解释**： 状态 **取值范围**： 不涉及 
         :type status: str
-        :param white_images: 白名单镜像
+        :param white_images: **参数解释**： 白名单镜像 **取值范围**： 不涉及 
         :type white_images: list[:class:`huaweicloudsdkhss.v5.WhiteImageInfo`]
         """
         
@@ -162,7 +162,7 @@ class ClusterPolicyResponseInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this ClusterPolicyResponseInfo.
 
-        集群id
+        **参数解释**： 集群ID **取值范围**： 不涉及 
 
         :return: The cluster_id of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -173,7 +173,7 @@ class ClusterPolicyResponseInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this ClusterPolicyResponseInfo.
 
-        集群id
+        **参数解释**： 集群ID **取值范围**： 不涉及 
 
         :param cluster_id: The cluster_id of this ClusterPolicyResponseInfo.
         :type cluster_id: str
@@ -184,7 +184,7 @@ class ClusterPolicyResponseInfo:
     def cluster_name(self):
         r"""Gets the cluster_name of this ClusterPolicyResponseInfo.
 
-        集群名称
+        **参数解释**： 集群名称 **取值范围**： 不涉及 
 
         :return: The cluster_name of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -195,7 +195,7 @@ class ClusterPolicyResponseInfo:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this ClusterPolicyResponseInfo.
 
-        集群名称
+        **参数解释**： 集群名称 **取值范围**： 不涉及 
 
         :param cluster_name: The cluster_name of this ClusterPolicyResponseInfo.
         :type cluster_name: str
@@ -206,7 +206,7 @@ class ClusterPolicyResponseInfo:
     def content(self):
         r"""Gets the content of this ClusterPolicyResponseInfo.
 
-        策略内容
+        **参数解释**： 策略内容 **取值范围**： 不涉及 
 
         :return: The content of this ClusterPolicyResponseInfo.
         :rtype: object
@@ -217,7 +217,7 @@ class ClusterPolicyResponseInfo:
     def content(self, content):
         r"""Sets the content of this ClusterPolicyResponseInfo.
 
-        策略内容
+        **参数解释**： 策略内容 **取值范围**： 不涉及 
 
         :param content: The content of this ClusterPolicyResponseInfo.
         :type content: object
@@ -228,7 +228,7 @@ class ClusterPolicyResponseInfo:
     def deploy_content(self):
         r"""Gets the deploy_content of this ClusterPolicyResponseInfo.
 
-        deploy内容
+        **参数解释**： 部署内容 **取值范围**： 不涉及 
 
         :return: The deploy_content of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -239,7 +239,7 @@ class ClusterPolicyResponseInfo:
     def deploy_content(self, deploy_content):
         r"""Sets the deploy_content of this ClusterPolicyResponseInfo.
 
-        deploy内容
+        **参数解释**： 部署内容 **取值范围**： 不涉及 
 
         :param deploy_content: The deploy_content of this ClusterPolicyResponseInfo.
         :type deploy_content: str
@@ -250,7 +250,7 @@ class ClusterPolicyResponseInfo:
     def parameters(self):
         r"""Gets the parameters of this ClusterPolicyResponseInfo.
 
-        参数
+        **参数解释**： 参数 **取值范围**： 不涉及 
 
         :return: The parameters of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -261,7 +261,7 @@ class ClusterPolicyResponseInfo:
     def parameters(self, parameters):
         r"""Sets the parameters of this ClusterPolicyResponseInfo.
 
-        参数
+        **参数解释**： 参数 **取值范围**： 不涉及 
 
         :param parameters: The parameters of this ClusterPolicyResponseInfo.
         :type parameters: str
@@ -272,7 +272,7 @@ class ClusterPolicyResponseInfo:
     def policy_name(self):
         r"""Gets the policy_name of this ClusterPolicyResponseInfo.
 
-        策略名称
+        **参数解释**： 策略名称 **取值范围**： 不涉及 
 
         :return: The policy_name of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -283,7 +283,7 @@ class ClusterPolicyResponseInfo:
     def policy_name(self, policy_name):
         r"""Sets the policy_name of this ClusterPolicyResponseInfo.
 
-        策略名称
+        **参数解释**： 策略名称 **取值范围**： 不涉及 
 
         :param policy_name: The policy_name of this ClusterPolicyResponseInfo.
         :type policy_name: str
@@ -294,7 +294,7 @@ class ClusterPolicyResponseInfo:
     def policy_id(self):
         r"""Gets the policy_id of this ClusterPolicyResponseInfo.
 
-        策略ID
+        **参数解释**： 策略ID **取值范围**： 不涉及 
 
         :return: The policy_id of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -305,7 +305,7 @@ class ClusterPolicyResponseInfo:
     def policy_id(self, policy_id):
         r"""Sets the policy_id of this ClusterPolicyResponseInfo.
 
-        策略ID
+        **参数解释**： 策略ID **取值范围**： 不涉及 
 
         :param policy_id: The policy_id of this ClusterPolicyResponseInfo.
         :type policy_id: str
@@ -316,7 +316,7 @@ class ClusterPolicyResponseInfo:
     def resources(self):
         r"""Gets the resources of this ClusterPolicyResponseInfo.
 
-        资源
+        **参数解释**： 资源 **取值范围**： 不涉及 
 
         :return: The resources of this ClusterPolicyResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.Resources`]
@@ -327,7 +327,7 @@ class ClusterPolicyResponseInfo:
     def resources(self, resources):
         r"""Sets the resources of this ClusterPolicyResponseInfo.
 
-        资源
+        **参数解释**： 资源 **取值范围**： 不涉及 
 
         :param resources: The resources of this ClusterPolicyResponseInfo.
         :type resources: list[:class:`huaweicloudsdkhss.v5.Resources`]
@@ -338,7 +338,7 @@ class ClusterPolicyResponseInfo:
     def template_id(self):
         r"""Gets the template_id of this ClusterPolicyResponseInfo.
 
-        模板ID
+        **参数解释**： 模板ID **取值范围**： 不涉及 
 
         :return: The template_id of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -349,7 +349,7 @@ class ClusterPolicyResponseInfo:
     def template_id(self, template_id):
         r"""Sets the template_id of this ClusterPolicyResponseInfo.
 
-        模板ID
+        **参数解释**： 模板ID **取值范围**： 不涉及 
 
         :param template_id: The template_id of this ClusterPolicyResponseInfo.
         :type template_id: str
@@ -360,7 +360,7 @@ class ClusterPolicyResponseInfo:
     def template_name(self):
         r"""Gets the template_name of this ClusterPolicyResponseInfo.
 
-        模板名称
+        **参数解释**： 模板名称 **取值范围**： 不涉及 
 
         :return: The template_name of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -371,7 +371,7 @@ class ClusterPolicyResponseInfo:
     def template_name(self, template_name):
         r"""Sets the template_name of this ClusterPolicyResponseInfo.
 
-        模板名称
+        **参数解释**： 模板名称 **取值范围**： 不涉及 
 
         :param template_name: The template_name of this ClusterPolicyResponseInfo.
         :type template_name: str
@@ -382,7 +382,7 @@ class ClusterPolicyResponseInfo:
     def template_type(self):
         r"""Gets the template_type of this ClusterPolicyResponseInfo.
 
-        模板类型
+        **参数解释**： 模板类型 **取值范围**： 不涉及 
 
         :return: The template_type of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -393,7 +393,7 @@ class ClusterPolicyResponseInfo:
     def template_type(self, template_type):
         r"""Sets the template_type of this ClusterPolicyResponseInfo.
 
-        模板类型
+        **参数解释**： 模板类型 **取值范围**： 不涉及 
 
         :param template_type: The template_type of this ClusterPolicyResponseInfo.
         :type template_type: str
@@ -404,7 +404,7 @@ class ClusterPolicyResponseInfo:
     def description(self):
         r"""Gets the description of this ClusterPolicyResponseInfo.
 
-        策略描述
+        **参数解释**： 策略描述 **取值范围**： 不涉及 
 
         :return: The description of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -415,7 +415,7 @@ class ClusterPolicyResponseInfo:
     def description(self, description):
         r"""Sets the description of this ClusterPolicyResponseInfo.
 
-        策略描述
+        **参数解释**： 策略描述 **取值范围**： 不涉及 
 
         :param description: The description of this ClusterPolicyResponseInfo.
         :type description: str
@@ -426,7 +426,7 @@ class ClusterPolicyResponseInfo:
     def update_time(self):
         r"""Gets the update_time of this ClusterPolicyResponseInfo.
 
-        更新时间
+        **参数解释**： 更新时间 **取值范围**： 不涉及 
 
         :return: The update_time of this ClusterPolicyResponseInfo.
         :rtype: int
@@ -437,7 +437,7 @@ class ClusterPolicyResponseInfo:
     def update_time(self, update_time):
         r"""Sets the update_time of this ClusterPolicyResponseInfo.
 
-        更新时间
+        **参数解释**： 更新时间 **取值范围**： 不涉及 
 
         :param update_time: The update_time of this ClusterPolicyResponseInfo.
         :type update_time: int
@@ -448,7 +448,7 @@ class ClusterPolicyResponseInfo:
     def create_time(self):
         r"""Gets the create_time of this ClusterPolicyResponseInfo.
 
-        创建时间
+        **参数解释**： 创建时间 **取值范围**： 不涉及 
 
         :return: The create_time of this ClusterPolicyResponseInfo.
         :rtype: int
@@ -459,7 +459,7 @@ class ClusterPolicyResponseInfo:
     def create_time(self, create_time):
         r"""Sets the create_time of this ClusterPolicyResponseInfo.
 
-        创建时间
+        **参数解释**： 创建时间 **取值范围**： 不涉及 
 
         :param create_time: The create_time of this ClusterPolicyResponseInfo.
         :type create_time: int
@@ -470,7 +470,7 @@ class ClusterPolicyResponseInfo:
     def image_num(self):
         r"""Gets the image_num of this ClusterPolicyResponseInfo.
 
-        防护镜像数量
+        **参数解释**： 防护镜像数量 **取值范围**： 不涉及 
 
         :return: The image_num of this ClusterPolicyResponseInfo.
         :rtype: int
@@ -481,7 +481,7 @@ class ClusterPolicyResponseInfo:
     def image_num(self, image_num):
         r"""Sets the image_num of this ClusterPolicyResponseInfo.
 
-        防护镜像数量
+        **参数解释**： 防护镜像数量 **取值范围**： 不涉及 
 
         :param image_num: The image_num of this ClusterPolicyResponseInfo.
         :type image_num: int
@@ -492,7 +492,7 @@ class ClusterPolicyResponseInfo:
     def labels_num(self):
         r"""Gets the labels_num of this ClusterPolicyResponseInfo.
 
-        防护标签数量
+        **参数解释**： 防护标签数量 **取值范围**： 不涉及 
 
         :return: The labels_num of this ClusterPolicyResponseInfo.
         :rtype: int
@@ -503,7 +503,7 @@ class ClusterPolicyResponseInfo:
     def labels_num(self, labels_num):
         r"""Sets the labels_num of this ClusterPolicyResponseInfo.
 
-        防护标签数量
+        **参数解释**： 防护标签数量 **取值范围**： 不涉及 
 
         :param labels_num: The labels_num of this ClusterPolicyResponseInfo.
         :type labels_num: int
@@ -514,7 +514,7 @@ class ClusterPolicyResponseInfo:
     def status(self):
         r"""Gets the status of this ClusterPolicyResponseInfo.
 
-        状态
+        **参数解释**： 状态 **取值范围**： 不涉及 
 
         :return: The status of this ClusterPolicyResponseInfo.
         :rtype: str
@@ -525,7 +525,7 @@ class ClusterPolicyResponseInfo:
     def status(self, status):
         r"""Sets the status of this ClusterPolicyResponseInfo.
 
-        状态
+        **参数解释**： 状态 **取值范围**： 不涉及 
 
         :param status: The status of this ClusterPolicyResponseInfo.
         :type status: str
@@ -536,7 +536,7 @@ class ClusterPolicyResponseInfo:
     def white_images(self):
         r"""Gets the white_images of this ClusterPolicyResponseInfo.
 
-        白名单镜像
+        **参数解释**： 白名单镜像 **取值范围**： 不涉及 
 
         :return: The white_images of this ClusterPolicyResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.WhiteImageInfo`]
@@ -547,7 +547,7 @@ class ClusterPolicyResponseInfo:
     def white_images(self, white_images):
         r"""Sets the white_images of this ClusterPolicyResponseInfo.
 
-        白名单镜像
+        **参数解释**： 白名单镜像 **取值范围**： 不涉及 
 
         :param white_images: The white_images of this ClusterPolicyResponseInfo.
         :type white_images: list[:class:`huaweicloudsdkhss.v5.WhiteImageInfo`]

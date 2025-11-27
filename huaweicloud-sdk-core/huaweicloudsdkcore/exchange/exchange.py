@@ -21,7 +21,7 @@
 """
 
 
-class SdkExchange(object):
+class SdkExchange:
     def __init__(self):
         self._api_reference = None
 

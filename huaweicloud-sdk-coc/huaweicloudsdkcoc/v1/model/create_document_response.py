@@ -16,54 +16,58 @@ class CreateDocumentResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str',
+        'data': 'str',
         'x_request_id': 'str'
     }
 
     attribute_map = {
-        'body': 'body',
+        'data': 'data',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, body=None, x_request_id=None):
+    def __init__(self, data=None, x_request_id=None):
         r"""CreateDocumentResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param data: **参数解释：** 创建作业，系统返回的作业id。 **取值范围：** 不涉及。
+        :type data: str
         :param x_request_id: 
         :type x_request_id: str
         """
         
         super().__init__()
 
-        self._body = None
+        self._data = None
         self._x_request_id = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if data is not None:
+            self.data = data
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
     @property
-    def body(self):
-        r"""Gets the body of this CreateDocumentResponse.
+    def data(self):
+        r"""Gets the data of this CreateDocumentResponse.
 
-        :return: The body of this CreateDocumentResponse.
+        **参数解释：** 创建作业，系统返回的作业id。 **取值范围：** 不涉及。
+
+        :return: The data of this CreateDocumentResponse.
         :rtype: str
         """
-        return self._body
+        return self._data
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this CreateDocumentResponse.
+    @data.setter
+    def data(self, data):
+        r"""Sets the data of this CreateDocumentResponse.
 
-        :param body: The body of this CreateDocumentResponse.
-        :type body: str
+        **参数解释：** 创建作业，系统返回的作业id。 **取值范围：** 不涉及。
+
+        :param data: The data of this CreateDocumentResponse.
+        :type data: str
         """
-        self._body = body
+        self._data = data
 
     @property
     def x_request_id(self):

@@ -31,7 +31,7 @@ class ConfirmPolicyIpReputationMapRequest:
 
         :param lang: **参数解释：** 语言的类型 - cn代表中文 - en代表英文  **约束限制：** 不涉及 **取值范围：** - cn - en  **默认取值：** - cn
         :type lang: str
-        :param type: **参数解释：** 语言 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :param type: **参数解释：** 防护选项的详细信息的类型，当前仅支持“idc”。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type type: str
         """
         
@@ -70,7 +70,7 @@ class ConfirmPolicyIpReputationMapRequest:
     def type(self):
         r"""Gets the type of this ConfirmPolicyIpReputationMapRequest.
 
-        **参数解释：** 语言 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 防护选项的详细信息的类型，当前仅支持“idc”。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The type of this ConfirmPolicyIpReputationMapRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ConfirmPolicyIpReputationMapRequest:
     def type(self, type):
         r"""Sets the type of this ConfirmPolicyIpReputationMapRequest.
 
-        **参数解释：** 语言 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        **参数解释：** 防护选项的详细信息的类型，当前仅支持“idc”。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param type: The type of this ConfirmPolicyIpReputationMapRequest.
         :type type: str

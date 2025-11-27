@@ -61,7 +61,7 @@ class ListAntiVirusHostRequest:
         :type host_name: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
-        :param public_ip: 服务器公网IP
+        :param public_ip: **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
         :type public_ip: str
         :param group_id: **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type group_id: str
@@ -248,7 +248,7 @@ class ListAntiVirusHostRequest:
     def public_ip(self):
         r"""Gets the public_ip of this ListAntiVirusHostRequest.
 
-        服务器公网IP
+        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
 
         :return: The public_ip of this ListAntiVirusHostRequest.
         :rtype: str
@@ -259,7 +259,7 @@ class ListAntiVirusHostRequest:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ListAntiVirusHostRequest.
 
-        服务器公网IP
+        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
 
         :param public_ip: The public_ip of this ListAntiVirusHostRequest.
         :type public_ip: str

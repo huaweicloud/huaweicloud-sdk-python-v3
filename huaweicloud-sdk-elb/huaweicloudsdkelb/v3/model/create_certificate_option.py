@@ -77,9 +77,9 @@ class CreateCertificateOption:
         :type enc_certificate: str
         :param enc_private_key: **参数解释**：服务器SM双证书的私钥。  **约束限制**：仅当type为server_sm时，才支持且必须传入。  **取值范围**：PEM编码格式，最大长度8192个字符。  **默认取值**：不涉及
         :type enc_private_key: str
-        :param scm_certificate_id: **参数解释**：云证书管理服务（CCM）中的证书ID。  **约束限制**：仅记录证书ID，不验证其是否真实存在云证书管理服务中。并且需要将云证书管理服务中对应证书的内容手动设置到当前接口相应字段中（可能涉及字段certificate、private_key、enc_certificate和enc_private_key）  **取值范围**：不涉及  **默认取值**：不涉及
+        :param scm_certificate_id: **参数解释**：云证书与管理服务（CCM）中的证书ID。  **约束限制**：仅记录证书ID，不验证其是否真实存在云证书与管理服务中。并且需要将云证书与管理服务中对应证书的内容手动设置到当前接口相应字段中（可能涉及字段certificate、private_key、enc_certificate和enc_private_key）  **取值范围**：不涉及  **默认取值**：不涉及
         :type scm_certificate_id: str
-        :param source: **参数解释**：标记当前证书来源。  **约束限制**：无  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：当scm_certificate_id不为空，默认取值为\&quot;scm\&quot;。否则默认为空值。
+        :param source: **参数解释**：标记当前证书来源。  **约束限制**：无  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：当scm_certificate_id不为空，默认取值为\&quot;scm\&quot;。否则默认为空值。
         :type source: str
         :param protection_status: **参数解释**：修改保护状态。  **约束限制**：不涉及  **取值范围**： - nonProtection: 不保护 - consoleProtection: 控制台修改保护，即禁止通过控制台修改。  **默认取值**：nonProtection
         :type protection_status: str
@@ -383,7 +383,7 @@ class CreateCertificateOption:
     def scm_certificate_id(self):
         r"""Gets the scm_certificate_id of this CreateCertificateOption.
 
-        **参数解释**：云证书管理服务（CCM）中的证书ID。  **约束限制**：仅记录证书ID，不验证其是否真实存在云证书管理服务中。并且需要将云证书管理服务中对应证书的内容手动设置到当前接口相应字段中（可能涉及字段certificate、private_key、enc_certificate和enc_private_key）  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：云证书与管理服务（CCM）中的证书ID。  **约束限制**：仅记录证书ID，不验证其是否真实存在云证书与管理服务中。并且需要将云证书与管理服务中对应证书的内容手动设置到当前接口相应字段中（可能涉及字段certificate、private_key、enc_certificate和enc_private_key）  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The scm_certificate_id of this CreateCertificateOption.
         :rtype: str
@@ -394,7 +394,7 @@ class CreateCertificateOption:
     def scm_certificate_id(self, scm_certificate_id):
         r"""Sets the scm_certificate_id of this CreateCertificateOption.
 
-        **参数解释**：云证书管理服务（CCM）中的证书ID。  **约束限制**：仅记录证书ID，不验证其是否真实存在云证书管理服务中。并且需要将云证书管理服务中对应证书的内容手动设置到当前接口相应字段中（可能涉及字段certificate、private_key、enc_certificate和enc_private_key）  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：云证书与管理服务（CCM）中的证书ID。  **约束限制**：仅记录证书ID，不验证其是否真实存在云证书与管理服务中。并且需要将云证书与管理服务中对应证书的内容手动设置到当前接口相应字段中（可能涉及字段certificate、private_key、enc_certificate和enc_private_key）  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param scm_certificate_id: The scm_certificate_id of this CreateCertificateOption.
         :type scm_certificate_id: str
@@ -405,7 +405,7 @@ class CreateCertificateOption:
     def source(self):
         r"""Gets the source of this CreateCertificateOption.
 
-        **参数解释**：标记当前证书来源。  **约束限制**：无  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：当scm_certificate_id不为空，默认取值为\"scm\"。否则默认为空值。
+        **参数解释**：标记当前证书来源。  **约束限制**：无  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：当scm_certificate_id不为空，默认取值为\"scm\"。否则默认为空值。
 
         :return: The source of this CreateCertificateOption.
         :rtype: str
@@ -416,7 +416,7 @@ class CreateCertificateOption:
     def source(self, source):
         r"""Sets the source of this CreateCertificateOption.
 
-        **参数解释**：标记当前证书来源。  **约束限制**：无  **取值范围**： - scm：表示关联云证书管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：当scm_certificate_id不为空，默认取值为\"scm\"。否则默认为空值。
+        **参数解释**：标记当前证书来源。  **约束限制**：无  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：当scm_certificate_id不为空，默认取值为\"scm\"。否则默认为空值。
 
         :param source: The source of this CreateCertificateOption.
         :type source: str

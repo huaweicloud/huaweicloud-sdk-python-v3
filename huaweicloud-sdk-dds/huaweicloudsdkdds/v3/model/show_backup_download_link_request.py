@@ -15,24 +15,20 @@ class ShowBackupDownloadLinkRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
         'instance_id': 'str',
         'backup_id': 'str'
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
         'instance_id': 'instance_id',
         'backup_id': 'backup_id'
     }
 
-    def __init__(self, x_language=None, instance_id=None, backup_id=None):
+    def __init__(self, instance_id=None, backup_id=None):
         r"""ShowBackupDownloadLinkRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言。
-        :type x_language: str
         :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
         :type instance_id: str
         :param backup_id: 备份ID。
@@ -41,37 +37,12 @@ class ShowBackupDownloadLinkRequest:
         
         
 
-        self._x_language = None
         self._instance_id = None
         self._backup_id = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
         self.instance_id = instance_id
         self.backup_id = backup_id
-
-    @property
-    def x_language(self):
-        r"""Gets the x_language of this ShowBackupDownloadLinkRequest.
-
-        语言。
-
-        :return: The x_language of this ShowBackupDownloadLinkRequest.
-        :rtype: str
-        """
-        return self._x_language
-
-    @x_language.setter
-    def x_language(self, x_language):
-        r"""Sets the x_language of this ShowBackupDownloadLinkRequest.
-
-        语言。
-
-        :param x_language: The x_language of this ShowBackupDownloadLinkRequest.
-        :type x_language: str
-        """
-        self._x_language = x_language
 
     @property
     def instance_id(self):

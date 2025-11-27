@@ -21,7 +21,7 @@
 """
 
 
-class ApiReference(object):
+class ApiReference:
     def __init__(self):
         self._name = None
         self._method = None

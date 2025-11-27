@@ -67,7 +67,7 @@ def _get_credentials_file_dir():
     return os.path.abspath(os.curdir)
 
 
-class TestMetadataCredentialProvider(object):
+class TestMetadataCredentialProvider:
     def test_metadata_credential_provider(self):
         basic = MetadataCredentialProvider.get_basic_credential_metadata_provider()
         assert isinstance(basic, MetadataBasicCredentialProvider)

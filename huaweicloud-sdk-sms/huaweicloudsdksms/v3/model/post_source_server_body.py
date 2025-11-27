@@ -21,7 +21,6 @@ class PostSourceServerBody:
         'hostname': 'str',
         'os_type': 'str',
         'os_version': 'str',
-        'virtualization_type': 'str',
         'linux_block_check': 'str',
         'firmware': 'str',
         'cpu_quantity': 'int',
@@ -57,7 +56,6 @@ class PostSourceServerBody:
         'hostname': 'hostname',
         'os_type': 'os_type',
         'os_version': 'os_version',
-        'virtualization_type': 'virtualization_type',
         'linux_block_check': 'linux_block_check',
         'firmware': 'firmware',
         'cpu_quantity': 'cpu_quantity',
@@ -86,7 +84,7 @@ class PostSourceServerBody:
         'platform': 'platform'
     }
 
-    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, virtualization_type=None, linux_block_check=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None, kernel_version=None, migration_cycle=None, state=None, oem_system=None, start_type=None, io_read_wait=None, has_tc=None, platform=None):
+    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, linux_block_check=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None, kernel_version=None, migration_cycle=None, state=None, oem_system=None, start_type=None, io_read_wait=None, has_tc=None, platform=None):
         r"""PostSourceServerBody
 
         The model defined in huaweicloud sdk
@@ -103,8 +101,6 @@ class PostSourceServerBody:
         :type os_type: str
         :param os_version: 操作系统版本，注册必选，更新非必选
         :type os_version: str
-        :param virtualization_type: 操作系统虚拟化方式
-        :type virtualization_type: str
         :param linux_block_check: Linux操作系统块检查
         :type linux_block_check: str
         :param firmware: 源端服务器启动类型，如BIOS或者UEFI
@@ -145,7 +141,7 @@ class PostSourceServerBody:
         :type kernel_version: str
         :param migration_cycle: 迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中
         :type migration_cycle: str
-        :param state: 源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready: 迁移演练已就绪 premiging: 迁移演练中 premiged: 迁移演练已完成 premigfailed: 迁移演练失败
+        :param state: 源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready：迁移演练就绪 premiged：迁移演练完成 premigfailed：迁移演练失败 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 error：错误
         :type state: str
         :param oem_system: 是否是OEM操作系统(Windows)
         :type oem_system: bool
@@ -167,7 +163,6 @@ class PostSourceServerBody:
         self._hostname = None
         self._os_type = None
         self._os_version = None
-        self._virtualization_type = None
         self._linux_block_check = None
         self._firmware = None
         self._cpu_quantity = None
@@ -208,8 +203,6 @@ class PostSourceServerBody:
             self.os_type = os_type
         if os_version is not None:
             self.os_version = os_version
-        if virtualization_type is not None:
-            self.virtualization_type = virtualization_type
         if linux_block_check is not None:
             self.linux_block_check = linux_block_check
         if firmware is not None:
@@ -394,28 +387,6 @@ class PostSourceServerBody:
         :type os_version: str
         """
         self._os_version = os_version
-
-    @property
-    def virtualization_type(self):
-        r"""Gets the virtualization_type of this PostSourceServerBody.
-
-        操作系统虚拟化方式
-
-        :return: The virtualization_type of this PostSourceServerBody.
-        :rtype: str
-        """
-        return self._virtualization_type
-
-    @virtualization_type.setter
-    def virtualization_type(self, virtualization_type):
-        r"""Sets the virtualization_type of this PostSourceServerBody.
-
-        操作系统虚拟化方式
-
-        :param virtualization_type: The virtualization_type of this PostSourceServerBody.
-        :type virtualization_type: str
-        """
-        self._virtualization_type = virtualization_type
 
     @property
     def linux_block_check(self):
@@ -861,7 +832,7 @@ class PostSourceServerBody:
     def state(self):
         r"""Gets the state of this PostSourceServerBody.
 
-        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready: 迁移演练已就绪 premiging: 迁移演练中 premiged: 迁移演练已完成 premigfailed: 迁移演练失败
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready：迁移演练就绪 premiged：迁移演练完成 premigfailed：迁移演练失败 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 error：错误
 
         :return: The state of this PostSourceServerBody.
         :rtype: str
@@ -872,7 +843,7 @@ class PostSourceServerBody:
     def state(self, state):
         r"""Sets the state of this PostSourceServerBody.
 
-        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready: 迁移演练已就绪 premiging: 迁移演练中 premiged: 迁移演练已完成 premigfailed: 迁移演练失败
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败 premigready：迁移演练就绪 premiged：迁移演练完成 premigfailed：迁移演练失败 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成 error：错误
 
         :param state: The state of this PostSourceServerBody.
         :type state: str

@@ -67,7 +67,7 @@ class ResultResourceResponseInfo:
         :type agent_status: str
         :param protect_status: 防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
         :type protect_status: str
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
         :param os_name: 操作系统名称
         :type os_name: str
@@ -318,7 +318,7 @@ class ResultResourceResponseInfo:
     def asset_value(self):
         r"""Gets the asset_value of this ResultResourceResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :return: The asset_value of this ResultResourceResponseInfo.
         :rtype: str
@@ -329,7 +329,7 @@ class ResultResourceResponseInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ResultResourceResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :param asset_value: The asset_value of this ResultResourceResponseInfo.
         :type asset_value: str

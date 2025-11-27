@@ -17,6 +17,7 @@ class SetBucketCustomedomainRequest:
     sensitive_list = []
 
     openapi_types = {
+        'content_md5': 'str',
         'date': 'str',
         'bucket_name': 'str',
         'customdomain': 'str',
@@ -24,17 +25,20 @@ class SetBucketCustomedomainRequest:
     }
 
     attribute_map = {
+        'content_md5': 'Content-MD5',
         'date': 'Date',
         'bucket_name': 'bucket_name',
         'customdomain': 'customdomain',
         'body': 'body'
     }
 
-    def __init__(self, date=None, bucket_name=None, customdomain=None, body=None):
+    def __init__(self, content_md5=None, date=None, bucket_name=None, customdomain=None, body=None):
         r"""SetBucketCustomedomainRequest
 
         The model defined in huaweicloud sdk
 
+        :param content_md5: When setting up a custom domain certificate, this header field must be included to verify whether the content of the request message body matches the content sent.  Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog&#x3D;&#x3D;
+        :type content_md5: str
         :param date: Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
         :type date: str
         :param bucket_name: Name of the requested bucket
@@ -47,18 +51,43 @@ class SetBucketCustomedomainRequest:
         
         
 
+        self._content_md5 = None
         self._date = None
         self._bucket_name = None
         self._customdomain = None
         self._body = None
         self.discriminator = None
 
+        if content_md5 is not None:
+            self.content_md5 = content_md5
         if date is not None:
             self.date = date
         self.bucket_name = bucket_name
         self.customdomain = customdomain
         if body is not None:
             self.body = body
+
+    @property
+    def content_md5(self):
+        r"""Gets the content_md5 of this SetBucketCustomedomainRequest.
+
+        When setting up a custom domain certificate, this header field must be included to verify whether the content of the request message body matches the content sent.  Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog==
+
+        :return: The content_md5 of this SetBucketCustomedomainRequest.
+        :rtype: str
+        """
+        return self._content_md5
+
+    @content_md5.setter
+    def content_md5(self, content_md5):
+        r"""Sets the content_md5 of this SetBucketCustomedomainRequest.
+
+        When setting up a custom domain certificate, this header field must be included to verify whether the content of the request message body matches the content sent.  Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.  Example: n58IG6hfM7vqI4K0vnWpog==
+
+        :param content_md5: The content_md5 of this SetBucketCustomedomainRequest.
+        :type content_md5: str
+        """
+        self._content_md5 = content_md5
 
     @property
     def date(self):

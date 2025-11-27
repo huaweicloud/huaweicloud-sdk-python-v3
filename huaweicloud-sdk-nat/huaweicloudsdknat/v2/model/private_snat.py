@@ -24,7 +24,8 @@ class PrivateSnat:
         'transit_ip_associations': 'list[AssociatedTransitIp]',
         'created_at': 'datetime',
         'updated_at': 'datetime',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class PrivateSnat:
         'transit_ip_associations': 'transit_ip_associations',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'status': 'status'
     }
 
-    def __init__(self, id=None, project_id=None, gateway_id=None, cidr=None, virsubnet_id=None, description=None, transit_ip_associations=None, created_at=None, updated_at=None, enterprise_project_id=None):
+    def __init__(self, id=None, project_id=None, gateway_id=None, cidr=None, virsubnet_id=None, description=None, transit_ip_associations=None, created_at=None, updated_at=None, enterprise_project_id=None, status=None):
         r"""PrivateSnat
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class PrivateSnat:
         :type updated_at: datetime
         :param enterprise_project_id: 企业项目id
         :type enterprise_project_id: str
+        :param status: 私网NAT的SNAT规则状态。 取值为： \&quot;ACTIVE\&quot;：正常运行 \&quot;FROZEN\&quot;：冻结 \&quot;INACTIVE\&quot;：不可用
+        :type status: str
         """
         
         
@@ -79,6 +83,7 @@ class PrivateSnat:
         self._created_at = None
         self._updated_at = None
         self._enterprise_project_id = None
+        self._status = None
         self.discriminator = None
 
         if id is not None:
@@ -101,6 +106,8 @@ class PrivateSnat:
             self.updated_at = updated_at
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if status is not None:
+            self.status = status
 
     @property
     def id(self):
@@ -321,6 +328,28 @@ class PrivateSnat:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def status(self):
+        r"""Gets the status of this PrivateSnat.
+
+        私网NAT的SNAT规则状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
+
+        :return: The status of this PrivateSnat.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this PrivateSnat.
+
+        私网NAT的SNAT规则状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
+
+        :param status: The status of this PrivateSnat.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         result = {}

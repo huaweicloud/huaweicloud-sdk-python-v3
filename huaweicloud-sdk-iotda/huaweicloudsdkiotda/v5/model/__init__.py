@@ -23,6 +23,7 @@ from huaweicloudsdkiotda.v5.model.add_device_group_response import AddDeviceGrou
 from huaweicloudsdkiotda.v5.model.add_device_proxy import AddDeviceProxy
 from huaweicloudsdkiotda.v5.model.add_device_request import AddDeviceRequest
 from huaweicloudsdkiotda.v5.model.add_device_response import AddDeviceResponse
+from huaweicloudsdkiotda.v5.model.add_export_task import AddExportTask
 from huaweicloudsdkiotda.v5.model.add_flow_control_policy import AddFlowControlPolicy
 from huaweicloudsdkiotda.v5.model.add_functions_request import AddFunctionsRequest
 from huaweicloudsdkiotda.v5.model.add_functions_response import AddFunctionsResponse
@@ -103,6 +104,8 @@ from huaweicloudsdkiotda.v5.model.create_device_proxy_response import CreateDevi
 from huaweicloudsdkiotda.v5.model.create_domain_configuration_dto import CreateDomainConfigurationDTO
 from huaweicloudsdkiotda.v5.model.create_domain_configuration_request import CreateDomainConfigurationRequest
 from huaweicloudsdkiotda.v5.model.create_domain_configuration_response import CreateDomainConfigurationResponse
+from huaweicloudsdkiotda.v5.model.create_export_task_request import CreateExportTaskRequest
+from huaweicloudsdkiotda.v5.model.create_export_task_response import CreateExportTaskResponse
 from huaweicloudsdkiotda.v5.model.create_message_request import CreateMessageRequest
 from huaweicloudsdkiotda.v5.model.create_message_response import CreateMessageResponse
 from huaweicloudsdkiotda.v5.model.create_or_delete_device_in_group_request import CreateOrDeleteDeviceInGroupRequest
@@ -168,6 +171,8 @@ from huaweicloudsdkiotda.v5.model.delete_device_tunnel_request import DeleteDevi
 from huaweicloudsdkiotda.v5.model.delete_device_tunnel_response import DeleteDeviceTunnelResponse
 from huaweicloudsdkiotda.v5.model.delete_domain_configuration_request import DeleteDomainConfigurationRequest
 from huaweicloudsdkiotda.v5.model.delete_domain_configuration_response import DeleteDomainConfigurationResponse
+from huaweicloudsdkiotda.v5.model.delete_export_task_request import DeleteExportTaskRequest
+from huaweicloudsdkiotda.v5.model.delete_export_task_response import DeleteExportTaskResponse
 from huaweicloudsdkiotda.v5.model.delete_functions_request import DeleteFunctionsRequest
 from huaweicloudsdkiotda.v5.model.delete_functions_response import DeleteFunctionsResponse
 from huaweicloudsdkiotda.v5.model.delete_harmony_soft_bus_request import DeleteHarmonySoftBusRequest
@@ -220,6 +225,7 @@ from huaweicloudsdkiotda.v5.model.effective_time_range import EffectiveTimeRange
 from huaweicloudsdkiotda.v5.model.effective_time_range_response_dto import EffectiveTimeRangeResponseDTO
 from huaweicloudsdkiotda.v5.model.error_info import ErrorInfo
 from huaweicloudsdkiotda.v5.model.error_info_dto import ErrorInfoDTO
+from huaweicloudsdkiotda.v5.model.export_task import ExportTask
 from huaweicloudsdkiotda.v5.model.file_location import FileLocation
 from huaweicloudsdkiotda.v5.model.flow_control_policy_info import FlowControlPolicyInfo
 from huaweicloudsdkiotda.v5.model.freeze_device_request import FreezeDeviceRequest
@@ -271,6 +277,8 @@ from huaweicloudsdkiotda.v5.model.list_devices_request import ListDevicesRequest
 from huaweicloudsdkiotda.v5.model.list_devices_response import ListDevicesResponse
 from huaweicloudsdkiotda.v5.model.list_domain_configurations_request import ListDomainConfigurationsRequest
 from huaweicloudsdkiotda.v5.model.list_domain_configurations_response import ListDomainConfigurationsResponse
+from huaweicloudsdkiotda.v5.model.list_export_tasks_request import ListExportTasksRequest
+from huaweicloudsdkiotda.v5.model.list_export_tasks_response import ListExportTasksResponse
 from huaweicloudsdkiotda.v5.model.list_functions_request import ListFunctionsRequest
 from huaweicloudsdkiotda.v5.model.list_functions_response import ListFunctionsResponse
 from huaweicloudsdkiotda.v5.model.list_harmony_soft_bus_request import ListHarmonySoftBusRequest
@@ -304,6 +312,7 @@ from huaweicloudsdkiotda.v5.model.list_server_certificate_response import ListSe
 from huaweicloudsdkiotda.v5.model.message_result import MessageResult
 from huaweicloudsdkiotda.v5.model.module_dto import ModuleDTO
 from huaweicloudsdkiotda.v5.model.module_search_dto import ModuleSearchDTO
+from huaweicloudsdkiotda.v5.model.mqtt_device_forwarding import MqttDeviceForwarding
 from huaweicloudsdkiotda.v5.model.mrs_kafka_forwarding import MrsKafkaForwarding
 from huaweicloudsdkiotda.v5.model.mysql_forwarding import MysqlForwarding
 from huaweicloudsdkiotda.v5.model.net_address import NetAddress
@@ -373,6 +382,8 @@ from huaweicloudsdkiotda.v5.model.show_async_device_command_request import ShowA
 from huaweicloudsdkiotda.v5.model.show_async_device_command_response import ShowAsyncDeviceCommandResponse
 from huaweicloudsdkiotda.v5.model.show_batch_task_request import ShowBatchTaskRequest
 from huaweicloudsdkiotda.v5.model.show_batch_task_response import ShowBatchTaskResponse
+from huaweicloudsdkiotda.v5.model.show_certificate_request import ShowCertificateRequest
+from huaweicloudsdkiotda.v5.model.show_certificate_response import ShowCertificateResponse
 from huaweicloudsdkiotda.v5.model.show_device_authentication_template_request import ShowDeviceAuthenticationTemplateRequest
 from huaweicloudsdkiotda.v5.model.show_device_authentication_template_response import ShowDeviceAuthenticationTemplateResponse
 from huaweicloudsdkiotda.v5.model.show_device_authorizer_request import ShowDeviceAuthorizerRequest
@@ -397,6 +408,8 @@ from huaweicloudsdkiotda.v5.model.show_devices_in_group_request import ShowDevic
 from huaweicloudsdkiotda.v5.model.show_devices_in_group_response import ShowDevicesInGroupResponse
 from huaweicloudsdkiotda.v5.model.show_domain_configuration_request import ShowDomainConfigurationRequest
 from huaweicloudsdkiotda.v5.model.show_domain_configuration_response import ShowDomainConfigurationResponse
+from huaweicloudsdkiotda.v5.model.show_export_task_request import ShowExportTaskRequest
+from huaweicloudsdkiotda.v5.model.show_export_task_response import ShowExportTaskResponse
 from huaweicloudsdkiotda.v5.model.show_harmony_soft_bus_request import ShowHarmonySoftBusRequest
 from huaweicloudsdkiotda.v5.model.show_harmony_soft_bus_response import ShowHarmonySoftBusResponse
 from huaweicloudsdkiotda.v5.model.show_ota_module_request import ShowOtaModuleRequest

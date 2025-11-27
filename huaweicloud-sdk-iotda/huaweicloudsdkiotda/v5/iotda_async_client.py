@@ -2708,6 +2708,77 @@ class IoTDAAsyncClient(Client):
 
         return http_info
 
+    def show_certificate_async(self, request):
+        r"""查询CA证书
+
+        应用服务器可调用此接口在物联网平台查询CA证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCertificate
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowCertificateRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowCertificateResponse`
+        """
+        http_info = self._show_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_certificate_async_invoker(self, request):
+        http_info = self._show_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_certificate_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'sp_auth_token' in local_var_params:
+            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
+        if 'stage_auth_token' in local_var_params:
+            header_params['Stage-Auth-Token'] = local_var_params['stage_auth_token']
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_certificate_async(self, request):
         r"""更新CA证书
 
@@ -5929,7 +6000,7 @@ class IoTDAAsyncClient(Client):
     def _create_domain_configuration_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/{project_id}/domain-configurations",
+            "resource_path": "/v5/iot/{project_id}/domain-configurations",
             "request_type": request.__class__.__name__,
             "response_type": "CreateDomainConfigurationResponse"
             }
@@ -5996,7 +6067,7 @@ class IoTDAAsyncClient(Client):
     def _delete_domain_configuration_http_info(self, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/{project_id}/domain-configurations/{configuration_id}",
+            "resource_path": "/v5/iot/{project_id}/domain-configurations/{configuration_id}",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteDomainConfigurationResponse"
             }
@@ -6063,7 +6134,7 @@ class IoTDAAsyncClient(Client):
     def _list_domain_configurations_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/{project_id}/domain-configurations",
+            "resource_path": "/v5/iot/{project_id}/domain-configurations",
             "request_type": request.__class__.__name__,
             "response_type": "ListDomainConfigurationsResponse"
             }
@@ -6134,7 +6205,7 @@ class IoTDAAsyncClient(Client):
     def _show_domain_configuration_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/{project_id}/domain-configurations/{configuration_id}",
+            "resource_path": "/v5/iot/{project_id}/domain-configurations/{configuration_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowDomainConfigurationResponse"
             }
@@ -6201,7 +6272,7 @@ class IoTDAAsyncClient(Client):
     def _update_domain_configuration_http_info(self, request):
         http_info = {
             "method": "PUT",
-            "resource_path": "/{project_id}/domain-configurations/{configuration_id}",
+            "resource_path": "/v5/iot/{project_id}/domain-configurations/{configuration_id}",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateDomainConfigurationResponse"
             }
@@ -6227,6 +6298,286 @@ class IoTDAAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_export_task_async(self, request):
+        r"""创建导出任务
+
+        应用服务器可调用此接口创建资源导出任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateExportTask
+        :type request: :class:`huaweicloudsdkiotda.v5.CreateExportTaskRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.CreateExportTaskResponse`
+        """
+        http_info = self._create_export_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_export_task_async_invoker(self, request):
+        http_info = self._create_export_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_export_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/iot/{project_id}/export-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateExportTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_export_task_async(self, request):
+        r"""删除导出任务
+
+        应用服务器可调用此接口删除在平台创建的导出任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteExportTask
+        :type request: :class:`huaweicloudsdkiotda.v5.DeleteExportTaskRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.DeleteExportTaskResponse`
+        """
+        http_info = self._delete_export_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_export_task_async_invoker(self, request):
+        http_info = self._delete_export_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_export_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/iot/{project_id}/export-tasks/{export_task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteExportTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'export_task_id' in local_var_params:
+            path_params['export_task_id'] = local_var_params['export_task_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_export_tasks_async(self, request):
+        r"""查询导出任务列表
+
+        应用服务器可调用此接口查询已创建的导出任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListExportTasks
+        :type request: :class:`huaweicloudsdkiotda.v5.ListExportTasksRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ListExportTasksResponse`
+        """
+        http_info = self._list_export_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_export_tasks_async_invoker(self, request):
+        http_info = self._list_export_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_export_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/export-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExportTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+        if 'resource_condition' in local_var_params:
+            query_params.append(('resource_condition', local_var_params['resource_condition']))
+        if 'app_type' in local_var_params:
+            query_params.append(('app_type', local_var_params['app_type']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_export_task_async(self, request):
+        r"""下载导出文件
+
+        应用服务器可调用此接口下载已经完成的导出任务生成的文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowExportTask
+        :type request: :class:`huaweicloudsdkiotda.v5.ShowExportTaskRequest`
+        :rtype: :class:`huaweicloudsdkiotda.v5.ShowExportTaskResponse`
+        """
+        http_info = self._show_export_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_export_task_async_invoker(self, request):
+        http_info = self._show_export_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_export_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/iot/{project_id}/export-tasks/{export_task_id}/file",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExportTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'export_task_id' in local_var_params:
+            path_params['export_task_id'] = local_var_params['export_task_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'instance_id' in local_var_params:
+            header_params['Instance-Id'] = local_var_params['instance_id']
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -11010,7 +11361,7 @@ class IoTDAAsyncClient(Client):
     def _create_server_certificate_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/{project_id}/server-certificates",
+            "resource_path": "/v5/iot/{project_id}/server-certificates",
             "request_type": request.__class__.__name__,
             "response_type": "CreateServerCertificateResponse"
             }
@@ -11077,7 +11428,7 @@ class IoTDAAsyncClient(Client):
     def _delete_server_certificate_http_info(self, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/{project_id}/server-certificates/{server_certificate_id}",
+            "resource_path": "/v5/iot/{project_id}/server-certificates/{server_certificate_id}",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteServerCertificateResponse"
             }
@@ -11144,7 +11495,7 @@ class IoTDAAsyncClient(Client):
     def _list_server_certificate_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/{project_id}/server-certificates",
+            "resource_path": "/v5/iot/{project_id}/server-certificates",
             "request_type": request.__class__.__name__,
             "response_type": "ListServerCertificateResponse"
             }
@@ -11215,7 +11566,7 @@ class IoTDAAsyncClient(Client):
     def _show_server_certificate_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/{project_id}/server-certificates/{server_certificate_id}",
+            "resource_path": "/v5/iot/{project_id}/server-certificates/{server_certificate_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowServerCertificateResponse"
             }

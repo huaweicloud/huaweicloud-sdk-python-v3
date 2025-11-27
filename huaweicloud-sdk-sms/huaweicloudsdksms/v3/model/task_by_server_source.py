@@ -65,7 +65,7 @@ class TaskByServerSource:
         :type id: str
         :param name: 任务名称
         :type name: str
-        :param type: 任务类型
+        :param type: 迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
         :type type: str
         :param state: 任务状态
         :type state: str
@@ -87,7 +87,7 @@ class TaskByServerSource:
         :type project_id: str
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerById`
-        :param log_collect_status: 日志收集状态
+        :param log_collect_status: 日志收集状态 INIT:就绪 UPLOADING:上传中 UPLOAD_FAIL:上传失败 UPLOADED:已上传
         :type log_collect_status: str
         :param exist_server: 是否使用已有虚拟机
         :type exist_server: bool
@@ -206,7 +206,7 @@ class TaskByServerSource:
     def type(self):
         r"""Gets the type of this TaskByServerSource.
 
-        任务类型
+        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
         :return: The type of this TaskByServerSource.
         :rtype: str
@@ -217,7 +217,7 @@ class TaskByServerSource:
     def type(self, type):
         r"""Sets the type of this TaskByServerSource.
 
-        任务类型
+        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
         :param type: The type of this TaskByServerSource.
         :type type: str
@@ -444,7 +444,7 @@ class TaskByServerSource:
     def log_collect_status(self):
         r"""Gets the log_collect_status of this TaskByServerSource.
 
-        日志收集状态
+        日志收集状态 INIT:就绪 UPLOADING:上传中 UPLOAD_FAIL:上传失败 UPLOADED:已上传
 
         :return: The log_collect_status of this TaskByServerSource.
         :rtype: str
@@ -455,7 +455,7 @@ class TaskByServerSource:
     def log_collect_status(self, log_collect_status):
         r"""Sets the log_collect_status of this TaskByServerSource.
 
-        日志收集状态
+        日志收集状态 INIT:就绪 UPLOADING:上传中 UPLOAD_FAIL:上传失败 UPLOADED:已上传
 
         :param log_collect_status: The log_collect_status of this TaskByServerSource.
         :type log_collect_status: str

@@ -125,7 +125,7 @@ class AppWhitelistEventResponseInfo:
         :type policy_name: str
         :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
         :type os_type: str
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
         :param host_status: **参数解释**： 主机状态 **取值范围**: - ACTIVE：正在运行。 - SHUTOFF：关机。 - BUILDING：创建中。 - ERROR：故障。 
         :type host_status: str
@@ -727,7 +727,7 @@ class AppWhitelistEventResponseInfo:
     def asset_value(self):
         r"""Gets the asset_value of this AppWhitelistEventResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :return: The asset_value of this AppWhitelistEventResponseInfo.
         :rtype: str
@@ -738,7 +738,7 @@ class AppWhitelistEventResponseInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this AppWhitelistEventResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :param asset_value: The asset_value of this AppWhitelistEventResponseInfo.
         :type asset_value: str

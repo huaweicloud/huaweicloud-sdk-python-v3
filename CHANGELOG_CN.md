@@ -1,3 +1,797 @@
+# 3.1.177 2025-11-27
+
+### HuaweiCloud SDK Core
+
+- _新增特性_
+    - 无
+- _解决问题_
+    - 无
+- _特性变更_
+    - 优化自动获取domainId逻辑
+
+### HuaweiCloud SDK BSS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListCustomerCouponChangeRecords`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRefundOrderDetails**
+    - 请求参数变更
+      - `+ customer_id`
+      - `+ indirect_partner_id`
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `+ fee_records.period_num`
+  - **ListSubCustomerBillDetail**
+    - 响应参数变更
+      - `+ fee_records.period_num`
+  - **ListPayPerUseCustomerResources**
+    - 请求参数变更
+      - `+ customer_id`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.period_num`
+
+### HuaweiCloud SDK BSSINTL
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRefundOrderDetails**
+    - 请求参数变更
+      - `+ customer_id`
+      - `+ indirect_partner_id`
+  - **ListCustomerselfResourceRecords**
+    - 响应参数变更
+      - `+ fee_records.period_num`
+  - **ListPayPerUseCustomerResources**
+    - 请求参数变更
+      - `+ customer_id`
+  - **ListCustomerselfResourceRecordDetails**
+    - 响应参数变更
+      - `+ monthly_records.period_num`
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateKubernetesClusterCert**
+    - 请求参数变更
+      - `* expire_at: date -> string`
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ListExportTasks`
+    - `CreateExportTask`
+    - `ShowSpecialUser`
+    - `ExportStatsOpen`
+    - `ListCdnDomainTopPath`
+    - `ShowDomainCountryStat`
+    - `CreateAccessControlTask`
+    - `ListAccessControlTask`
+    - `ListBanUrl`
+    - `ListDomainConfigs`
+    - `ListSpecialConfiguration`
+    - `CreateDomainByDuplicate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowStatsConfigs**
+    - 请求参数变更
+      - `+ limit`
+      - `+ offset`
+
+### HuaweiCloud SDK Cloudtest
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`BatchUpdateTestCasesInDiffVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK COC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `ListGroupAliResourceRelations`
+    - `ListGroupOtherResourceRelations`
+    - `CountResources`
+    - `SyncResourceAgent`
+    - `ListResourceViews`
+    - `CreateResourceViews`
+    - `UpdateResourceViews`
+    - `DeleteResourceViews`
+    - `SyncResourcesOfResourceView`
+    - `CountResourcesOfResourceView`
+    - `ListResourcesOfResourceView`
+    - `ListResourceTags`
+    - `CreateResourceTags`
+    - `ListGroupRmsResourceRelations`
+    - `UpdateGroupRmsResourceRelation`
+    - `CreateGroupRmsResourceRelation`
+    - `DeleteGroupRmsResourceRelation`
+    - `CountGroupRmsResourceRelations`
+    - `ImportOtherResource`
+    - `ListApplicationView`
+    - `ListCapacityView`
+    - `ListCapacityOrder`
+    - `ListEnterpriseProjectCollect`
+    - `UpdateEnterpriseProjectCollect`
+    - `ListVendorAccount`
+    - `CreateVendorAccount`
+    - `UpdateVendorAccount`
+    - `DeleteVendorAccount`
+    - `CountOtherResource`
+    - `CreateApplication`
+    - `UpdateApplication`
+    - `DeleteApplication`
+    - `ListApplicationGroups`
+    - `CreateApplicationGroup`
+    - `SyncGroupResource`
+    - `UpdateApplicationGroup`
+    - `DeleteApplicationGroup`
+    - `ListApplicationComponents`
+    - `CreateApplicationComponents`
+    - `UpdateApplicationComponent`
+    - `DeleteApplicationComponent`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListExecutionInstances**
+    - 响应参数变更
+      - `+ data.start_time`
+      - `- data.strat_time`
+  - **GetDocumentAtomicInfo**
+    - 响应参数变更
+      - `+ error_msg`
+      - `+ data`
+      - `+ error_code`
+      - `- outputs`
+      - `- atomic_name_en`
+      - `- atomic_name_zh`
+      - `- inputs`
+      - `- atomic_unique_key`
+      - `- tags`
+  - **DeleteDocument**
+    - 响应参数变更
+      - `+ data`
+  - **GetDocument**
+    - 响应参数变更
+      - `+ error_msg`
+      - `+ data`
+      - `+ error_code`
+      - `- update_time`
+      - `- creator`
+      - `- enterprise_project_id`
+      - `- create_time`
+      - `- versions`
+      - `- modifier`
+      - `- name`
+      - `- id`
+      - `- document_id`
+      - `- version`
+      - `- content`
+  - **UpdateDocument**
+    - 响应参数变更
+      - `+ data`
+  - **ExecuteDocument**
+    - 响应参数变更
+      - `+ data`
+  - **ListScriptResourceTags**
+    - 响应参数变更
+      - `+ data`
+      - `- total`
+      - `- tags`
+  - **ListResources**
+    - 响应参数变更
+      - `* data.tags: object -> list<TagResponse>`
+  - **CreateDocument**
+    - 响应参数变更
+      - `+ data`
+  - **GetExecution**
+    - 响应参数变更
+      - `+ data.id`
+  - **ListExecutions**
+    - 响应参数变更
+      - `+ data.id`
+  - **UpdateResourceTags**
+    - 响应参数变更
+      - `+ data`
+  - **BatchCreateApplicationView**
+    - 响应参数变更
+      - `+ data`
+      - `- application_ids`
+      - `- group_ids`
+      - `- component_ids`
+  - **ListPublicScripts**
+    - 响应参数变更
+      - `+ data.data.status`
+
+### HuaweiCloud SDK DAS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListInspectionReport`
+    - `ListEmailRecord`
+    - `ListEmailTemplate`
+    - `UpdateEmailTemplate`
+    - `AddEmailTemplate`
+    - `DeleteEmailTemplate`
+    - `BatchSubscribeReport`
+    - `ListInstanceGroup`
+    - `UpdateInstanceGroup`
+    - `AddInstanceGroup`
+    - `DeleteInstanceGroup`
+    - `AddInstanceToGroup`
+    - `BatchSendEmail`
+    - `CheckCredentialForBatchInspection`
+    - `SaveCredentialForBatchInspection`
+    - `ShowCredential`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`RestoreNewInstance`、`ListInstances`
+  - **ShowBackupDownloadLink**
+    - 请求参数变更
+      - `- X-Language`
+    - 响应参数变更
+      - `+ group_id`
+      - `+ group_name`
+  - **RestoreNewInstance**
+    - 请求参数变更
+      - `+ restore_point`
+      - `- datastore`
+      - `- region`
+      - `- port`
+      - `- mode`
+      - `- tags`
+      - `- flavor.storage`
+      - `* flavor: list<CreateInstanceFlavorOption> -> list<RestoreNewInstanceFlavorOption>`
+      - `* body: object<CreateInstanceRequestBody> -> object<RestoreNewInstanceRequestBody>`
+    - 响应参数变更
+      - `- tags`
+      - `- port`
+      - `- flavor.storage`
+      - `* flavor: list<CreateInstanceFlavorOption> -> list<RestoreNewInstanceFlavorOption>`
+  - **ShowInstanceConfigurationModifyHistory**
+    - 响应参数变更
+      - `+ total_count`
+
+### HuaweiCloud SDK DeH
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListDedicatedHostTypes**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+
+### HuaweiCloud SDK ELB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFlavors**
+    - 响应参数变更
+      - `+ flavors.info.tls_connection`
+      - `+ flavors.info.tls_cps`
+  - **ShowFlavor**
+    - 响应参数变更
+      - `+ flavor.info.tls_connection`
+      - `+ flavor.info.tls_cps`
+  - **ListLoadBalancers**
+    - 响应参数变更
+      - `+ loadbalancers.custom_qos_limit`
+  - **CreateLoadBalancer**
+    - 响应参数变更
+      - `+ loadbalancer.custom_qos_limit`
+  - **ShowLoadBalancer**
+    - 响应参数变更
+      - `+ loadbalancer.custom_qos_limit`
+  - **UpdateLoadBalancer**
+    - 响应参数变更
+      - `+ loadbalancer.custom_qos_limit`
+  - **BatchAddAvailableZones**
+    - 响应参数变更
+      - `+ loadbalancer.custom_qos_limit`
+  - **BatchRemoveAvailableZones**
+    - 响应参数变更
+      - `+ loadbalancer.custom_qos_limit`
+
+### HuaweiCloud SDK ESW
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListResourceJobs**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+  - **ListInstances**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+  - **ListConnections**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+  - **ListConnectionsAllInstances**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+
+### HuaweiCloud SDK EVS
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ListVolumesInRecycle`
+    - `ShowVolumeInRecycle`
+    - `DeleteVolumeInRecycle`
+    - `RevertVolumeInRecycle`
+    - `ShowRecyclePolicy`
+    - `UpdateRecyclePolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateVolume**
+    - 响应参数变更
+      - `- metadata.full_clone`
+  - **ListVolumesByTags**
+    - 响应参数变更
+      - `- resources.resource_detail.metadata.full_clone`
+
+### HuaweiCloud SDK GA
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListByoipPools`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEndpoints**
+    - 响应参数变更
+      - `+ endpoints.resource_type: enum value [ECS,ELB,CUSTOM_IP,CUSTOM_DOMAIN_NAME,CUSTOM_EIP]`
+  - **CreateEndpoint**
+    - 请求参数变更
+      - `+ endpoint.resource_type: enum value [ECS,ELB,CUSTOM_IP,CUSTOM_DOMAIN_NAME,CUSTOM_EIP]`
+    - 响应参数变更
+      - `+ endpoint.resource_type: enum value [ECS,ELB,CUSTOM_IP,CUSTOM_DOMAIN_NAME,CUSTOM_EIP]`
+  - **ShowEndpoint**
+    - 响应参数变更
+      - `+ endpoint.resource_type: enum value [ECS,ELB,CUSTOM_IP,CUSTOM_DOMAIN_NAME,CUSTOM_EIP]`
+  - **UpdateEndpoint**
+    - 响应参数变更
+      - `+ endpoint.resource_type: enum value [ECS,ELB,CUSTOM_IP,CUSTOM_DOMAIN_NAME,CUSTOM_EIP]`
+  - **ListHealthChecks**
+    - 响应参数变更
+      - `+ health_checks.protocol: enum value [UDP]`
+  - **CreateHealthCheck**
+    - 请求参数变更
+      - `+ health_check.protocol: enum value [UDP]`
+    - 响应参数变更
+      - `+ health_check.protocol: enum value [UDP]`
+  - **ShowHealthCheck**
+    - 响应参数变更
+      - `+ health_check.protocol: enum value [UDP]`
+  - **UpdateHealthCheck**
+    - 请求参数变更
+      - `+ health_check.protocol: enum value [UDP]`
+    - 响应参数变更
+      - `+ health_check.protocol: enum value [UDP]`
+  - **ListAccelerators**
+    - 响应参数变更
+      - `+ accelerators.ip_sets.ip_type: enum value [IPV6]`
+  - **CreateAccelerator**
+    - 响应参数变更
+      - `+ accelerator.ip_sets.ip_type: enum value [IPV6]`
+  - **ShowAccelerator**
+    - 响应参数变更
+      - `+ accelerator.ip_sets.ip_type: enum value [IPV6]`
+  - **UpdateAccelerator**
+    - 响应参数变更
+      - `+ accelerator.ip_sets.ip_type: enum value [IPV6]`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`ListSslCertDownloadAddresses`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`SwitchLogCollectionStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowErrorLogSwitchStatus**
+    - 请求参数变更
+      - `+ X-Language: enum value [zh-cn,en-us]`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ChangeSensitiveInfo`
+    - `ShowFilePathWhiteDetail`
+    - `ChangeFilePathWhiteDetail`
+    - `RestoreDuplicationInfo`
+    - `AssociateBackupPolicy`
+    - `ListServerlessAsset`
+    - `ListServerlessAssetDetail`
+    - `SwitchWebTamperProtectStatus`
+    - `ListWebTamperProtectStatistics`
+    - `ListWebTamperImageOptions`
+    - `ListWebTamperProtectionConfigs`
+    - `UpdateWebTamperProtectionConfig`
+    - `CreateWebTamperProtectionConfig`
+    - `DeleteWebTamperProtectionConfig`
+    - `ListWebTamperEvent`
+    - `ListWebTamperProtectionContainer`
+    - `ListWebTamperProtectionDirectory`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListRaspEvents**
+    - 响应参数变更
+      - `* data_list.alarm_time: object -> integer`
+  - **ListClusterProtectPolicyTemplates**
+    - 请求参数变更
+      - `* limit: required -> optional`
+      - `* offset: required -> optional`
+  - **ExportBaselineSecurityCheckReport**
+    - 请求参数变更
+      - `+ tag`
+      - `+ check_type`
+      - `+ statistics_scan_result`
+      - `+ check_rule_name`
+      - `+ cluster_id`
+  - **ListRiskConfigCheckRules**
+    - 响应参数变更
+      - `+ data_list.not_enable_click_description`
+  - **ListCheckRuleHost**
+    - 响应参数变更
+      - `+ data_list.enable_verify`
+  - **ListHostCheckRules**
+    - 响应参数变更
+      - `+ data_list.enable_verify`
+  - **ListAllRiskConfigCheckRules**
+    - 请求参数变更
+      - `+ statistics_flag`
+
+### HuaweiCloud SDK IoTDA
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持以下接口：
+    - `ListExportTasks`
+    - `CreateExportTask`
+    - `DeleteExportTask`
+    - `ShowExportTask`
+    - `ShowCertificate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRuleAction**
+    - 响应参数变更
+      - `+ channel_detail.mqtt_device_forwarding`
+  - **UpdateRuleAction**
+    - 请求参数变更
+      - `+ channel_detail.mqtt_device_forwarding`
+    - 响应参数变更
+      - `+ channel_detail.mqtt_device_forwarding`
+  - **CreateRuleAction**
+    - 请求参数变更
+      - `+ channel_detail.mqtt_device_forwarding`
+    - 响应参数变更
+      - `+ channel_detail.mqtt_device_forwarding`
+  - **ListRuleActions**
+    - 响应参数变更
+      - `+ actions.channel_detail.mqtt_device_forwarding`
+
+### HuaweiCloud SDK MRS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListAsyncTaskStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListClusters**
+    - 响应参数变更
+      - `+ clusters.azCategory`
+  - **ShowClusterDetails**
+    - 响应参数变更
+      - `+ cluster.azCategory`
+  - **ListAvailableZones**
+    - 响应参数变更
+      - `+ available_zones.az_category`
+      - `+ available_zones.charge_policy`
+
+### HuaweiCloud SDK NAT
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `ListTransitSubnet`
+    - `CreateTransitSubnet`
+    - `ShowTransitSubnet`
+    - `UpdateTransitSubnet`
+    - `DeleteTransitSubnet`
+    - `ListTransitSubnetsByTags`
+    - `ListTransitSubnetTags`
+    - `ShowTransitSubnetTags`
+    - `CreateTransitSubnetTag`
+    - `BatchCreateDeleteTransitSubnetTags`
+    - `DeleteTransitSubnetTag`
+    - `ListSpecs`
+    - `ListNatGatewaySpecs`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListNatGatewayDnatRules**
+    - 请求参数变更
+      - `+ global_eip_address`
+      - `+ global_eip_id`
+      - `* created_at: string -> date-time`
+  - **ListNatGatewaySnatRules**
+    - 请求参数变更
+      - `+ global_eip_address`
+      - `+ global_eip_id`
+      - `* floating_ip_address: list<string> -> string`
+      - `* floating_ip_id: list<string> -> string`
+      - `* created_at: string -> date-time`
+  - **ListPrivateDnats**
+    - 请求参数变更
+      - `+ protocol`
+      - `+ internal_service_port`
+      - `+ transit_service_port`
+      - `+ transit_ip_address`
+      - `- external_ip_address`
+    - 响应参数变更
+      - `+ dnat_rules.transit_ip_address`
+      - `+ dnat_rules.status`
+  - **CreatePrivateDnat**
+    - 响应参数变更
+      - `+ dnat_rule.transit_ip_address`
+      - `+ dnat_rule.status`
+  - **ShowPrivateDnat**
+    - 响应参数变更
+      - `+ dnat_rule.transit_ip_address`
+      - `+ dnat_rule.status`
+  - **UpdatePrivateDnat**
+    - 请求参数变更
+      - `+ dnat_rule.transit_ip_address`
+    - 响应参数变更
+      - `+ dnat_rule.transit_ip_address`
+      - `+ dnat_rule.status`
+  - **ListPrivateNatsByTags**
+    - 响应参数变更
+      - `+ resources.tags`
+      - `- resources.resource_tag`
+  - **ListTransitIpsByTags**
+    - 响应参数变更
+      - `+ resources.tags`
+      - `- resources.resource_tag`
+  - **ListNatGateways**
+    - 请求参数变更
+      - `+ tenant_id`
+      - `+ sort_key`
+      - `+ sort_dir`
+      - `* created_at: string -> date-time`
+    - 响应参数变更
+      - `+ nat_gateways.pps_max`
+      - `+ nat_gateways.bps_max`
+      - `+ nat_gateways.spec: enum value [5]`
+      - `* nat_gateways.created_at: string -> date-time`
+  - **CreateNatGateway**
+    - 请求参数变更
+      - `+ nat_gateway.tags`
+      - `+ nat_gateway.prepaid_options`
+      - `+ nat_gateway.spec: enum value [5]`
+    - 响应参数变更
+      - `+ nat_gateway_id`
+      - `+ order_id`
+      - `+ nat_gateway.pps_max`
+      - `+ nat_gateway.bps_max`
+      - `+ nat_gateway.spec: enum value [5]`
+      - `* nat_gateway.created_at: string -> date-time`
+  - **ShowNatGateway**
+    - 响应参数变更
+      - `+ nat_gateway.pps_max`
+      - `+ nat_gateway.bps_max`
+      - `+ nat_gateway.spec: enum value [5]`
+      - `* nat_gateway.created_at: string -> date-time`
+  - **UpdateNatGateway**
+    - 请求参数变更
+      - `+ nat_gateway.prepaid_options`
+      - `+ nat_gateway.spec: enum value [5]`
+    - 响应参数变更
+      - `+ order_id`
+      - `+ nat_gateway.pps_max`
+      - `+ nat_gateway.bps_max`
+      - `+ nat_gateway.spec: enum value [5]`
+      - `* nat_gateway.created_at: string -> date-time`
+  - **ListPrivateNats**
+    - 响应参数变更
+      - `+ gateways.rule_max`
+      - `+ gateways.transit_ip_pool_size_max`
+      - `+ gateways.spec: enum value [Extra-xlarge]`
+      - `+ gateways.status: enum value [INACTIVE]`
+      - `+ gateways.downlink_vpcs.ngport_ip_address`
+      - `* gateways.tags: list<PrivateTag> -> list<Tag>`
+  - **CreatePrivateNat**
+    - 请求参数变更
+      - `+ gateway.spec: enum value [Extra-xlarge]`
+      - `+ gateway.downlink_vpcs.ngport_ip_address`
+      - `* gateway.tags: list<PrivateTag> -> list<Tag>`
+    - 响应参数变更
+      - `+ gateway.rule_max`
+      - `+ gateway.transit_ip_pool_size_max`
+      - `+ gateway.spec: enum value [Extra-xlarge]`
+      - `+ gateway.status: enum value [INACTIVE]`
+      - `+ gateway.downlink_vpcs.ngport_ip_address`
+      - `* gateway.tags: list<PrivateTag> -> list<Tag>`
+  - **ShowPrivateNat**
+    - 响应参数变更
+      - `+ gateway.rule_max`
+      - `+ gateway.transit_ip_pool_size_max`
+      - `+ gateway.spec: enum value [Extra-xlarge]`
+      - `+ gateway.status: enum value [INACTIVE]`
+      - `+ gateway.downlink_vpcs.ngport_ip_address`
+      - `* gateway.tags: list<PrivateTag> -> list<Tag>`
+  - **UpdatePrivateNat**
+    - 请求参数变更
+      - `+ gateway.spec: enum value [Extra-xlarge]`
+    - 响应参数变更
+      - `+ gateway.rule_max`
+      - `+ gateway.transit_ip_pool_size_max`
+      - `+ gateway.spec: enum value [Extra-xlarge]`
+      - `+ gateway.status: enum value [INACTIVE]`
+      - `+ gateway.downlink_vpcs.ngport_ip_address`
+      - `* gateway.tags: list<PrivateTag> -> list<Tag>`
+  - **ListPrivateSnats**
+    - 响应参数变更
+      - `+ snat_rules.status`
+  - **CreatePrivateSnat**
+    - 响应参数变更
+      - `+ snat_rule.status`
+  - **ShowPrivateSnat**
+    - 响应参数变更
+      - `+ snat_rule.status`
+  - **UpdatePrivateSnat**
+    - 响应参数变更
+      - `+ snat_rule.status`
+  - **ListTransitIps**
+    - 请求参数变更
+      - `+ transit_subnet_id`
+    - 响应参数变更
+      - `+ transit_ips.status`
+      - `* transit_ips.tags: list<PrivateTag> -> list<Tag>`
+  - **CreateTransitIp**
+    - 响应参数变更
+      - `+ transit_ip.status`
+      - `* transit_ip.tags: list<PrivateTag> -> list<Tag>`
+  - **ShowTransitIp**
+    - 响应参数变更
+      - `+ transit_ip.status`
+      - `* transit_ip.tags: list<PrivateTag> -> list<Tag>`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListRemoteDb`
+    - `ListReplicationErrors`
+    - `UpdateStatistics`
+    - `RestartDbAgentJob`
+    - `ModifyDbAgentJob`
+    - `SwitchDbAgentJob`
+    - `CreateDistribution`
+    - `BatchModifyPublication`
+    - `CreatePublication`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **GetInstancesNoIndexTables**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持以下接口：
+    - `BatchDeleteRules`
+    - `CreateEventExportJob`
+    - `CopyPolicyById`
+    - `BatchDeleteCompositeHosts`
+    - `BatchUpdateGeoipRules`
+    - `BatchUpdateCcRules`
+    - `BatchUpdateCustomRules`
+    - `BatchUpdateWhiteblackipRules`
+    - `BatchUpdateIpReputationRules`
+    - `BatchUpdateAntitamperRules`
+    - `BatchUpdateAntileakageRules`
+    - `BatchUpdateIgnoreRules`
+    - `BatchUpdatePrivacyRules`
+    - `ConfirmDnsDomain`
+    - `UpdatePremiumInstanceProgress`
+    - `UpdateSecurityReportSubscription`
+    - `DeleteSecurityReportSubscription`
+    - `DeleteIpReputationRule`
+    - `CreateSecurityReportSubscription`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.176 2025-11-20
 
 ### HuaweiCloud SDK AAD

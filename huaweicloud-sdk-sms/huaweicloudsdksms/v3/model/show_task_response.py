@@ -138,7 +138,7 @@ class ShowTaskResponse(SdkResponse):
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerResponse`
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TaskTargetServer`
-        :param state: 任务状态
+        :param state: 迁移任务状态 READY: 准备就绪 RUNNING: 迁移中 SYNCING: 同步中 MIGRATE_SUCCESS: 迁移成功 SYNC_SUCCESS: 同步成功 MIGRATE_FAIL: 失败 SYNC_FAIL: 同步失败 ABORTING: 中止中 ABORT: 中止 SKIPPING: 跳过中 DELETING: 删除中 RESETING: 回滚中
         :type state: str
         :param estimate_complete_time: 预估完成时间
         :type estimate_complete_time: int
@@ -150,7 +150,7 @@ class ShowTaskResponse(SdkResponse):
         :type start_date: int
         :param finish_date: 任务结束时间
         :type finish_date: int
-        :param migrate_speed: 迁移速率，单位：MB/S
+        :param migrate_speed: 迁移速率，单位：Mbit/s
         :type migrate_speed: float
         :param compress_rate: 压缩率
         :type compress_rate: float
@@ -178,9 +178,9 @@ class ShowTaskResponse(SdkResponse):
         :type total_mem_usage: float
         :param agent_mem_usage: Agent的内存使用值，单位是MB
         :type agent_mem_usage: float
-        :param total_disk_io: 主机的磁盘I/O值，单位是MB/s
+        :param total_disk_io: 主机的磁盘I/O值，单位是Mbit/s
         :type total_disk_io: float
-        :param agent_disk_io: Agent的磁盘I/O值，单位是MB/s
+        :param agent_disk_io: Agent的磁盘I/O值，单位是Mbit/s
         :type agent_disk_io: float
         :param need_migration_test: 是否开启迁移演练
         :type need_migration_test: bool
@@ -661,7 +661,7 @@ class ShowTaskResponse(SdkResponse):
     def state(self):
         r"""Gets the state of this ShowTaskResponse.
 
-        任务状态
+        迁移任务状态 READY: 准备就绪 RUNNING: 迁移中 SYNCING: 同步中 MIGRATE_SUCCESS: 迁移成功 SYNC_SUCCESS: 同步成功 MIGRATE_FAIL: 失败 SYNC_FAIL: 同步失败 ABORTING: 中止中 ABORT: 中止 SKIPPING: 跳过中 DELETING: 删除中 RESETING: 回滚中
 
         :return: The state of this ShowTaskResponse.
         :rtype: str
@@ -672,7 +672,7 @@ class ShowTaskResponse(SdkResponse):
     def state(self, state):
         r"""Sets the state of this ShowTaskResponse.
 
-        任务状态
+        迁移任务状态 READY: 准备就绪 RUNNING: 迁移中 SYNCING: 同步中 MIGRATE_SUCCESS: 迁移成功 SYNC_SUCCESS: 同步成功 MIGRATE_FAIL: 失败 SYNC_FAIL: 同步失败 ABORTING: 中止中 ABORT: 中止 SKIPPING: 跳过中 DELETING: 删除中 RESETING: 回滚中
 
         :param state: The state of this ShowTaskResponse.
         :type state: str
@@ -793,7 +793,7 @@ class ShowTaskResponse(SdkResponse):
     def migrate_speed(self):
         r"""Gets the migrate_speed of this ShowTaskResponse.
 
-        迁移速率，单位：MB/S
+        迁移速率，单位：Mbit/s
 
         :return: The migrate_speed of this ShowTaskResponse.
         :rtype: float
@@ -804,7 +804,7 @@ class ShowTaskResponse(SdkResponse):
     def migrate_speed(self, migrate_speed):
         r"""Sets the migrate_speed of this ShowTaskResponse.
 
-        迁移速率，单位：MB/S
+        迁移速率，单位：Mbit/s
 
         :param migrate_speed: The migrate_speed of this ShowTaskResponse.
         :type migrate_speed: float
@@ -1093,7 +1093,7 @@ class ShowTaskResponse(SdkResponse):
     def total_disk_io(self):
         r"""Gets the total_disk_io of this ShowTaskResponse.
 
-        主机的磁盘I/O值，单位是MB/s
+        主机的磁盘I/O值，单位是Mbit/s
 
         :return: The total_disk_io of this ShowTaskResponse.
         :rtype: float
@@ -1104,7 +1104,7 @@ class ShowTaskResponse(SdkResponse):
     def total_disk_io(self, total_disk_io):
         r"""Sets the total_disk_io of this ShowTaskResponse.
 
-        主机的磁盘I/O值，单位是MB/s
+        主机的磁盘I/O值，单位是Mbit/s
 
         :param total_disk_io: The total_disk_io of this ShowTaskResponse.
         :type total_disk_io: float
@@ -1115,7 +1115,7 @@ class ShowTaskResponse(SdkResponse):
     def agent_disk_io(self):
         r"""Gets the agent_disk_io of this ShowTaskResponse.
 
-        Agent的磁盘I/O值，单位是MB/s
+        Agent的磁盘I/O值，单位是Mbit/s
 
         :return: The agent_disk_io of this ShowTaskResponse.
         :rtype: float
@@ -1126,7 +1126,7 @@ class ShowTaskResponse(SdkResponse):
     def agent_disk_io(self, agent_disk_io):
         r"""Sets the agent_disk_io of this ShowTaskResponse.
 
-        Agent的磁盘I/O值，单位是MB/s
+        Agent的磁盘I/O值，单位是Mbit/s
 
         :param agent_disk_io: The agent_disk_io of this ShowTaskResponse.
         :type agent_disk_io: float

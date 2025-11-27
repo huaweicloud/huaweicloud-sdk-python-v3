@@ -44,23 +44,23 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值10000 
         :type total_num: int
-        :param x_auth_token: 用户Token。
+        :param x_auth_token: **参数解释**: 用户Token **取值范围**: 字符长度1-32768位 
         :type x_auth_token: str
-        :param project_id: 项目ID
+        :param project_id: **参数解释**: 项目ID **取值范围**: 字符长度1-32768位 
         :type project_id: str
-        :param enterprise_project_id: 企业ID
+        :param enterprise_project_id: **参数解释**: 主机所属的企业项目ID **取值范围**: 字符长度1-256位 
         :type enterprise_project_id: str
-        :param region: Region
+        :param region: **参数解释**: Region ID **取值范围**: 字符长度1-32768位 
         :type region: str
-        :param general_policy_num: general策略数
+        :param general_policy_num: **参数解释**: 通用策略数 **取值范围**: 最小值0，最大值2147483647 
         :type general_policy_num: int
-        :param malicious_image_policy_num: malicious_image策略数
+        :param malicious_image_policy_num: **参数解释**: 恶意镜像策略数 **取值范围**: 最小值0，最大值2147483647 
         :type malicious_image_policy_num: int
-        :param security_policy_num: security_policy策略数
+        :param security_policy_num: **参数解释**: 安全镜像策略数 **取值范围**: 最小值0，最大值2147483647 
         :type security_policy_num: int
-        :param data_list: 集群防护策略列表
+        :param data_list: **参数解释**: 集群防护策略列表 **取值范围**: 取值0-10000个ClusterPolicyResponseInfo对象 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ClusterPolicyResponseInfo`]
         """
         
@@ -100,7 +100,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListClusterProtectionPolicyDetailResponse.
 
-        总数
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值10000 
 
         :return: The total_num of this ListClusterProtectionPolicyDetailResponse.
         :rtype: int
@@ -111,7 +111,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListClusterProtectionPolicyDetailResponse.
 
-        总数
+        **参数解释**: 总数 **取值范围**: 最小值0，最大值10000 
 
         :param total_num: The total_num of this ListClusterProtectionPolicyDetailResponse.
         :type total_num: int
@@ -122,7 +122,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def x_auth_token(self):
         r"""Gets the x_auth_token of this ListClusterProtectionPolicyDetailResponse.
 
-        用户Token。
+        **参数解释**: 用户Token **取值范围**: 字符长度1-32768位 
 
         :return: The x_auth_token of this ListClusterProtectionPolicyDetailResponse.
         :rtype: str
@@ -133,7 +133,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def x_auth_token(self, x_auth_token):
         r"""Sets the x_auth_token of this ListClusterProtectionPolicyDetailResponse.
 
-        用户Token。
+        **参数解释**: 用户Token **取值范围**: 字符长度1-32768位 
 
         :param x_auth_token: The x_auth_token of this ListClusterProtectionPolicyDetailResponse.
         :type x_auth_token: str
@@ -144,7 +144,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def project_id(self):
         r"""Gets the project_id of this ListClusterProtectionPolicyDetailResponse.
 
-        项目ID
+        **参数解释**: 项目ID **取值范围**: 字符长度1-32768位 
 
         :return: The project_id of this ListClusterProtectionPolicyDetailResponse.
         :rtype: str
@@ -155,7 +155,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this ListClusterProtectionPolicyDetailResponse.
 
-        项目ID
+        **参数解释**: 项目ID **取值范围**: 字符长度1-32768位 
 
         :param project_id: The project_id of this ListClusterProtectionPolicyDetailResponse.
         :type project_id: str
@@ -166,7 +166,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListClusterProtectionPolicyDetailResponse.
 
-        企业ID
+        **参数解释**: 主机所属的企业项目ID **取值范围**: 字符长度1-256位 
 
         :return: The enterprise_project_id of this ListClusterProtectionPolicyDetailResponse.
         :rtype: str
@@ -177,7 +177,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListClusterProtectionPolicyDetailResponse.
 
-        企业ID
+        **参数解释**: 主机所属的企业项目ID **取值范围**: 字符长度1-256位 
 
         :param enterprise_project_id: The enterprise_project_id of this ListClusterProtectionPolicyDetailResponse.
         :type enterprise_project_id: str
@@ -188,7 +188,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def region(self):
         r"""Gets the region of this ListClusterProtectionPolicyDetailResponse.
 
-        Region
+        **参数解释**: Region ID **取值范围**: 字符长度1-32768位 
 
         :return: The region of this ListClusterProtectionPolicyDetailResponse.
         :rtype: str
@@ -199,7 +199,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def region(self, region):
         r"""Sets the region of this ListClusterProtectionPolicyDetailResponse.
 
-        Region
+        **参数解释**: Region ID **取值范围**: 字符长度1-32768位 
 
         :param region: The region of this ListClusterProtectionPolicyDetailResponse.
         :type region: str
@@ -210,7 +210,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def general_policy_num(self):
         r"""Gets the general_policy_num of this ListClusterProtectionPolicyDetailResponse.
 
-        general策略数
+        **参数解释**: 通用策略数 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The general_policy_num of this ListClusterProtectionPolicyDetailResponse.
         :rtype: int
@@ -221,7 +221,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def general_policy_num(self, general_policy_num):
         r"""Sets the general_policy_num of this ListClusterProtectionPolicyDetailResponse.
 
-        general策略数
+        **参数解释**: 通用策略数 **取值范围**: 最小值0，最大值2147483647 
 
         :param general_policy_num: The general_policy_num of this ListClusterProtectionPolicyDetailResponse.
         :type general_policy_num: int
@@ -232,7 +232,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def malicious_image_policy_num(self):
         r"""Gets the malicious_image_policy_num of this ListClusterProtectionPolicyDetailResponse.
 
-        malicious_image策略数
+        **参数解释**: 恶意镜像策略数 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The malicious_image_policy_num of this ListClusterProtectionPolicyDetailResponse.
         :rtype: int
@@ -243,7 +243,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def malicious_image_policy_num(self, malicious_image_policy_num):
         r"""Sets the malicious_image_policy_num of this ListClusterProtectionPolicyDetailResponse.
 
-        malicious_image策略数
+        **参数解释**: 恶意镜像策略数 **取值范围**: 最小值0，最大值2147483647 
 
         :param malicious_image_policy_num: The malicious_image_policy_num of this ListClusterProtectionPolicyDetailResponse.
         :type malicious_image_policy_num: int
@@ -254,7 +254,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def security_policy_num(self):
         r"""Gets the security_policy_num of this ListClusterProtectionPolicyDetailResponse.
 
-        security_policy策略数
+        **参数解释**: 安全镜像策略数 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The security_policy_num of this ListClusterProtectionPolicyDetailResponse.
         :rtype: int
@@ -265,7 +265,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def security_policy_num(self, security_policy_num):
         r"""Sets the security_policy_num of this ListClusterProtectionPolicyDetailResponse.
 
-        security_policy策略数
+        **参数解释**: 安全镜像策略数 **取值范围**: 最小值0，最大值2147483647 
 
         :param security_policy_num: The security_policy_num of this ListClusterProtectionPolicyDetailResponse.
         :type security_policy_num: int
@@ -276,7 +276,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListClusterProtectionPolicyDetailResponse.
 
-        集群防护策略列表
+        **参数解释**: 集群防护策略列表 **取值范围**: 取值0-10000个ClusterPolicyResponseInfo对象 
 
         :return: The data_list of this ListClusterProtectionPolicyDetailResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ClusterPolicyResponseInfo`]
@@ -287,7 +287,7 @@ class ListClusterProtectionPolicyDetailResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListClusterProtectionPolicyDetailResponse.
 
-        集群防护策略列表
+        **参数解释**: 集群防护策略列表 **取值范围**: 取值0-10000个ClusterPolicyResponseInfo对象 
 
         :param data_list: The data_list of this ListClusterProtectionPolicyDetailResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ClusterPolicyResponseInfo`]

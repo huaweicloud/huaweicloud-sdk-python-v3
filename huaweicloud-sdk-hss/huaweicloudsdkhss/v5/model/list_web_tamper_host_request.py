@@ -57,11 +57,11 @@ class ListWebTamperHostRequest:
         :type host_name: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
-        :param public_ip: 服务器公网IP
+        :param public_ip: **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
         :type public_ip: str
         :param group_id: **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type group_id: str
-        :param os_type: 操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        :param os_type: **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
         :type os_type: str
         :param web_app_name: Web应用名称
         :type web_app_name: str
@@ -238,7 +238,7 @@ class ListWebTamperHostRequest:
     def public_ip(self):
         r"""Gets the public_ip of this ListWebTamperHostRequest.
 
-        服务器公网IP
+        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
 
         :return: The public_ip of this ListWebTamperHostRequest.
         :rtype: str
@@ -249,7 +249,7 @@ class ListWebTamperHostRequest:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ListWebTamperHostRequest.
 
-        服务器公网IP
+        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
 
         :param public_ip: The public_ip of this ListWebTamperHostRequest.
         :type public_ip: str
@@ -282,7 +282,7 @@ class ListWebTamperHostRequest:
     def os_type(self):
         r"""Gets the os_type of this ListWebTamperHostRequest.
 
-        操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
 
         :return: The os_type of this ListWebTamperHostRequest.
         :rtype: str
@@ -293,7 +293,7 @@ class ListWebTamperHostRequest:
     def os_type(self, os_type):
         r"""Sets the os_type of this ListWebTamperHostRequest.
 
-        操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
 
         :param os_type: The os_type of this ListWebTamperHostRequest.
         :type os_type: str

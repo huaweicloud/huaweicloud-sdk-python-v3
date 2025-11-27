@@ -26,7 +26,7 @@ class BatchListResourceResponseData:
         'region_id': 'str',
         'ep_id': 'str',
         'ep_name': 'str',
-        'tags': 'object',
+        'tags': 'list[TagResponse]',
         'agent_id': 'str',
         'agent_state': 'str',
         'properties': 'object',
@@ -94,7 +94,7 @@ class BatchListResourceResponseData:
         :param ep_name: **参数解释：** 企业项目名称。 **取值范围：** 由中文、英文字母、数字、下划线、中划线组成，且不能使用任何大小写形式的“default”，不超过255个字符。
         :type ep_name: str
         :param tags: **参数解释：** 资源标签。 **取值范围：** 不涉及。
-        :type tags: object
+        :type tags: list[:class:`huaweicloudsdkcoc.v1.TagResponse`]
         :param agent_id: **参数解释：** uniagent的id值。 **取值范围：** 不涉及。
         :type agent_id: str
         :param agent_state: **参数解释：** uniagent的状态。 **取值范围：** - ONLINE：运行中。 - OFFLINE：异常。 - INSTALLING：安装中。 - FAILED：安装失败。 - UNINSTALLED：已卸载。 - null：未安装。
@@ -442,7 +442,7 @@ class BatchListResourceResponseData:
         **参数解释：** 资源标签。 **取值范围：** 不涉及。
 
         :return: The tags of this BatchListResourceResponseData.
-        :rtype: object
+        :rtype: list[:class:`huaweicloudsdkcoc.v1.TagResponse`]
         """
         return self._tags
 
@@ -453,7 +453,7 @@ class BatchListResourceResponseData:
         **参数解释：** 资源标签。 **取值范围：** 不涉及。
 
         :param tags: The tags of this BatchListResourceResponseData.
-        :type tags: object
+        :type tags: list[:class:`huaweicloudsdkcoc.v1.TagResponse`]
         """
         self._tags = tags
 

@@ -34,7 +34,7 @@ from huaweicloudsdkcore.utils import six_utils as six
 from urllib.parse import quote, unquote
 
 
-class Signer(object):
+class Signer:
     _ENCODE_UTF8 = "utf-8"
     _ENCODE_ISO_8859_1 = "iso-8859-1"
     _BASIC_DATE_FORMAT = "%Y%m%dT%H%M%SZ"

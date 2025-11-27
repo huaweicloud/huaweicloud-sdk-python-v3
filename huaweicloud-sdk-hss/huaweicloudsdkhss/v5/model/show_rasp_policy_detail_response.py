@@ -34,7 +34,7 @@ class ShowRaspPolicyDetailResponse(SdkResponse):
 
         :param policy_name: 防护策略名称
         :type policy_name: str
-        :param os_type: 操作系统类型
+        :param os_type: **参数解释** 操作系统类型 **取值范围** 包含以下两种: - Linux : linux系统 - Windows: windows系统
         :type os_type: str
         :param rule_list: list
         :type rule_list: list[:class:`huaweicloudsdkhss.v5.CheckFeatureRuleInfo`]
@@ -80,7 +80,7 @@ class ShowRaspPolicyDetailResponse(SdkResponse):
     def os_type(self):
         r"""Gets the os_type of this ShowRaspPolicyDetailResponse.
 
-        操作系统类型
+        **参数解释** 操作系统类型 **取值范围** 包含以下两种: - Linux : linux系统 - Windows: windows系统
 
         :return: The os_type of this ShowRaspPolicyDetailResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class ShowRaspPolicyDetailResponse(SdkResponse):
     def os_type(self, os_type):
         r"""Sets the os_type of this ShowRaspPolicyDetailResponse.
 
-        操作系统类型
+        **参数解释** 操作系统类型 **取值范围** 包含以下两种: - Linux : linux系统 - Windows: windows系统
 
         :param os_type: The os_type of this ShowRaspPolicyDetailResponse.
         :type os_type: str

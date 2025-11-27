@@ -35,15 +35,15 @@ class Resources:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群id
+        :param cluster_id: **参数解释**： 集群id **取值范围**： 不涉及 
         :type cluster_id: str
-        :param cluster_name: 集群名称
+        :param cluster_name: **参数解释**： 集群名称 **取值范围**： 不涉及 
         :type cluster_name: str
-        :param images: 镜像
+        :param images: **参数解释**： 镜像 **取值范围**： 不涉及 
         :type images: str
-        :param labels: 标签
+        :param labels: **参数解释**： 标签 **取值范围**： 不涉及 
         :type labels: str
-        :param namespace: 命名空间
+        :param namespace: **参数解释**： 命名空间 **取值范围**： 不涉及 
         :type namespace: str
         """
         
@@ -71,7 +71,7 @@ class Resources:
     def cluster_id(self):
         r"""Gets the cluster_id of this Resources.
 
-        集群id
+        **参数解释**： 集群id **取值范围**： 不涉及 
 
         :return: The cluster_id of this Resources.
         :rtype: str
@@ -82,7 +82,7 @@ class Resources:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this Resources.
 
-        集群id
+        **参数解释**： 集群id **取值范围**： 不涉及 
 
         :param cluster_id: The cluster_id of this Resources.
         :type cluster_id: str
@@ -93,7 +93,7 @@ class Resources:
     def cluster_name(self):
         r"""Gets the cluster_name of this Resources.
 
-        集群名称
+        **参数解释**： 集群名称 **取值范围**： 不涉及 
 
         :return: The cluster_name of this Resources.
         :rtype: str
@@ -104,7 +104,7 @@ class Resources:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this Resources.
 
-        集群名称
+        **参数解释**： 集群名称 **取值范围**： 不涉及 
 
         :param cluster_name: The cluster_name of this Resources.
         :type cluster_name: str
@@ -115,7 +115,7 @@ class Resources:
     def images(self):
         r"""Gets the images of this Resources.
 
-        镜像
+        **参数解释**： 镜像 **取值范围**： 不涉及 
 
         :return: The images of this Resources.
         :rtype: str
@@ -126,7 +126,7 @@ class Resources:
     def images(self, images):
         r"""Sets the images of this Resources.
 
-        镜像
+        **参数解释**： 镜像 **取值范围**： 不涉及 
 
         :param images: The images of this Resources.
         :type images: str
@@ -137,7 +137,7 @@ class Resources:
     def labels(self):
         r"""Gets the labels of this Resources.
 
-        标签
+        **参数解释**： 标签 **取值范围**： 不涉及 
 
         :return: The labels of this Resources.
         :rtype: str
@@ -148,7 +148,7 @@ class Resources:
     def labels(self, labels):
         r"""Sets the labels of this Resources.
 
-        标签
+        **参数解释**： 标签 **取值范围**： 不涉及 
 
         :param labels: The labels of this Resources.
         :type labels: str
@@ -159,7 +159,7 @@ class Resources:
     def namespace(self):
         r"""Gets the namespace of this Resources.
 
-        命名空间
+        **参数解释**： 命名空间 **取值范围**： 不涉及 
 
         :return: The namespace of this Resources.
         :rtype: str
@@ -170,7 +170,7 @@ class Resources:
     def namespace(self, namespace):
         r"""Sets the namespace of this Resources.
 
-        命名空间
+        **参数解释**： 命名空间 **取值范围**： 不涉及 
 
         :param namespace: The namespace of this Resources.
         :type namespace: str

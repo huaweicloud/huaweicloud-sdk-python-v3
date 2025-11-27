@@ -41,7 +41,7 @@ def default_response_handler(**kwargs):
     )
 
 
-class HttpHandler(object):
+class HttpHandler:
     def __init__(self):
         self._request_handlers = [default_request_handler]
         self._response_handlers = [default_response_handler]

@@ -69,7 +69,7 @@ def mock_list_buckets_response1():
     return resp
 
 
-class Response(object):
+class Response:
     def __init__(self):
         self.content = None
         self.headers = None

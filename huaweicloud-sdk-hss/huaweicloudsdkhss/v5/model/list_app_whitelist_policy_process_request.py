@@ -69,7 +69,7 @@ class ListAppWhitelistPolicyProcessRequest:
         :type process_path: str
         :param handle_status: **参数解释**： 确认状态 **约束限制**: 不涉及 **取值范围**: - confirmed：已确认 - unconfirmed：未确认  **默认取值**: 不涉及 
         :type handle_status: str
-        :param os_type: 操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        :param os_type: **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
         :type os_type: str
         :param file_signer: **参数解释**： 文件签名 **约束限制**： 不涉及 **取值范围**： 字符长度1-128位 **默认取值**： 不涉及 
         :type file_signer: str
@@ -336,7 +336,7 @@ class ListAppWhitelistPolicyProcessRequest:
     def os_type(self):
         r"""Gets the os_type of this ListAppWhitelistPolicyProcessRequest.
 
-        操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
 
         :return: The os_type of this ListAppWhitelistPolicyProcessRequest.
         :rtype: str
@@ -347,7 +347,7 @@ class ListAppWhitelistPolicyProcessRequest:
     def os_type(self, os_type):
         r"""Sets the os_type of this ListAppWhitelistPolicyProcessRequest.
 
-        操作系统类型，包含如下2种。   - Linux：Linux。   - Windows：Windows。
+        **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
 
         :param os_type: The os_type of this ListAppWhitelistPolicyProcessRequest.
         :type os_type: str

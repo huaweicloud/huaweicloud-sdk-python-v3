@@ -17,16 +17,20 @@ class ListConnectionsRequest:
     openapi_types = {
         'instance_id': 'str',
         'id': 'str',
-        'name': 'str'
+        'name': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
         'id': 'id',
-        'name': 'name'
+        'name': 'name',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, instance_id=None, id=None, name=None):
+    def __init__(self, instance_id=None, id=None, name=None, limit=None, marker=None):
         r"""ListConnectionsRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class ListConnectionsRequest:
         :type id: str
         :param name: - 参数解释：二层连接的名称。 - 约束限制：   - 长度范围为1~64个字符。   - 名称由中文、英文字母、数字、下划线（_）、中划线（-）、点（.）组成。 - 取值范围：不涉及。 - 默认取值：不涉及。
         :type name: str
+        :param limit: - 参数解释：分页查询每页返回的记录个数。 - 约束限制：limit需要和marker配合使用，详细规则请见marker的参数说明。 - 取值范围：0~2^31-1。 - 默认取值：2000。
+        :type limit: int
+        :param marker: - 参数解释：分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 约束限制：marker需要和limit配合使用。   - 若不传入marker和limit参数，查询结果返回第一页全部资源记录。   - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。   - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。   - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11~2000条（limit默认值2000）资源记录。 - 取值范围：不涉及。 - 默认取值：不涉及。
+        :type marker: str
         """
         
         
@@ -44,6 +52,8 @@ class ListConnectionsRequest:
         self._instance_id = None
         self._id = None
         self._name = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -51,6 +61,10 @@ class ListConnectionsRequest:
             self.id = id
         if name is not None:
             self.name = name
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def instance_id(self):
@@ -117,6 +131,50 @@ class ListConnectionsRequest:
         :type name: str
         """
         self._name = name
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListConnectionsRequest.
+
+        - 参数解释：分页查询每页返回的记录个数。 - 约束限制：limit需要和marker配合使用，详细规则请见marker的参数说明。 - 取值范围：0~2^31-1。 - 默认取值：2000。
+
+        :return: The limit of this ListConnectionsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListConnectionsRequest.
+
+        - 参数解释：分页查询每页返回的记录个数。 - 约束限制：limit需要和marker配合使用，详细规则请见marker的参数说明。 - 取值范围：0~2^31-1。 - 默认取值：2000。
+
+        :param limit: The limit of this ListConnectionsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListConnectionsRequest.
+
+        - 参数解释：分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 约束限制：marker需要和limit配合使用。   - 若不传入marker和limit参数，查询结果返回第一页全部资源记录。   - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。   - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。   - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11~2000条（limit默认值2000）资源记录。 - 取值范围：不涉及。 - 默认取值：不涉及。
+
+        :return: The marker of this ListConnectionsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListConnectionsRequest.
+
+        - 参数解释：分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 约束限制：marker需要和limit配合使用。   - 若不传入marker和limit参数，查询结果返回第一页全部资源记录。   - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。   - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。   - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11~2000条（limit默认值2000）资源记录。 - 取值范围：不涉及。 - 默认取值：不涉及。
+
+        :param marker: The marker of this ListConnectionsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         result = {}

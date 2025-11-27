@@ -3945,6 +3945,138 @@ class CocAsyncClient(Client):
 
         return http_info
 
+    def create_resource_tags_async(self, request):
+        r"""添加资源标签
+
+        添加资源标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateResourceTags
+        :type request: :class:`huaweicloudsdkcoc.v1.CreateResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CreateResourceTagsResponse`
+        """
+        http_info = self._create_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_resource_tags_async_invoker(self, request):
+        http_info = self._create_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resources/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resource_tags_async(self, request):
+        r"""查询资源标签
+
+        查询资源标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourceTags
+        :type request: :class:`huaweicloudsdkcoc.v1.ListResourceTagsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListResourceTagsResponse`
+        """
+        http_info = self._list_resource_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resource_tags_async_invoker(self, request):
+        http_info = self._list_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resources/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_scheduled_task_async(self, request):
         r"""新建定时运维
 
@@ -6040,6 +6172,203 @@ class CocAsyncClient(Client):
 
         return http_info
 
+    def create_application_async(self, request):
+        r"""创建应用
+
+        创建应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateApplication
+        :type request: :class:`huaweicloudsdkcoc.v1.CreateApplicationRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CreateApplicationResponse`
+        """
+        http_info = self._create_application_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_application_async_invoker(self, request):
+        http_info = self._create_application_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_application_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_application_async(self, request):
+        r"""删除应用
+
+        删除应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteApplication
+        :type request: :class:`huaweicloudsdkcoc.v1.DeleteApplicationRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.DeleteApplicationResponse`
+        """
+        http_info = self._delete_application_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_application_async_invoker(self, request):
+        http_info = self._delete_application_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_application_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/applications/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_application_async(self, request):
+        r"""修改应用
+
+        修改应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateApplication
+        :type request: :class:`huaweicloudsdkcoc.v1.UpdateApplicationRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.UpdateApplicationResponse`
+        """
+        http_info = self._update_application_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_application_async_invoker(self, request):
+        http_info = self._update_application_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_application_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/applications/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApplicationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_create_application_view_async(self, request):
         r"""批量创建应用，分组，组件
 
@@ -6091,6 +6420,82 @@ class CocAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_application_view_async(self, request):
+        r"""查询应用、组件、分组名称列表
+
+        查询应用、组件、分组名称列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListApplicationView
+        :type request: :class:`huaweicloudsdkcoc.v1.ListApplicationViewRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListApplicationViewResponse`
+        """
+        http_info = self._list_application_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_application_view_async_invoker(self, request):
+        http_info = self._list_application_view_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_application_view_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/application-view/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplicationViewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name_like' in local_var_params:
+            query_params.append(('name_like', local_var_params['name_like']))
+        if 'code_list' in local_var_params:
+            query_params.append(('code_list', local_var_params['code_list']))
+            collection_formats['code_list'] = 'csv'
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'page_no' in local_var_params:
+            query_params.append(('page_no', local_var_params['page_no']))
+        if 'is_collection' in local_var_params:
+            query_params.append(('is_collection', local_var_params['is_collection']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -6269,6 +6674,1666 @@ class CocAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_application_components_async(self, request):
+        r"""创建组件
+
+        创建组件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateApplicationComponents
+        :type request: :class:`huaweicloudsdkcoc.v1.CreateApplicationComponentsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CreateApplicationComponentsResponse`
+        """
+        http_info = self._create_application_components_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_application_components_async_invoker(self, request):
+        http_info = self._create_application_components_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_application_components_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/components",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApplicationComponentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_application_component_async(self, request):
+        r"""删除组件
+
+        删除组件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteApplicationComponent
+        :type request: :class:`huaweicloudsdkcoc.v1.DeleteApplicationComponentRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.DeleteApplicationComponentResponse`
+        """
+        http_info = self._delete_application_component_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_application_component_async_invoker(self, request):
+        http_info = self._delete_application_component_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_application_component_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/components/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApplicationComponentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_application_components_async(self, request):
+        r"""查询组件
+
+        查询组件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListApplicationComponents
+        :type request: :class:`huaweicloudsdkcoc.v1.ListApplicationComponentsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListApplicationComponentsResponse`
+        """
+        http_info = self._list_application_components_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_application_components_async_invoker(self, request):
+        http_info = self._list_application_components_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_application_components_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/components",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplicationComponentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'application_id' in local_var_params:
+            query_params.append(('application_id', local_var_params['application_id']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_application_component_async(self, request):
+        r"""修改组件
+
+        修改组件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateApplicationComponent
+        :type request: :class:`huaweicloudsdkcoc.v1.UpdateApplicationComponentRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.UpdateApplicationComponentResponse`
+        """
+        http_info = self._update_application_component_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_application_component_async_invoker(self, request):
+        http_info = self._update_application_component_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_application_component_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/components/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApplicationComponentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_other_resource_async(self, request):
+        r"""查询线下IDC资源数量
+
+        查询IDC离线资源的数量。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountOtherResource
+        :type request: :class:`huaweicloudsdkcoc.v1.CountOtherResourceRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CountOtherResourceResponse`
+        """
+        http_info = self._count_other_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_other_resource_async_invoker(self, request):
+        http_info = self._count_other_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_other_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/other-resources/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountOtherResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'is_delegated' in local_var_params:
+            query_params.append(('is_delegated', local_var_params['is_delegated']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'is_delegate_domain' in local_var_params:
+            query_params.append(('is_delegate_domain', local_var_params['is_delegate_domain']))
+        if 'name_list' in local_var_params:
+            query_params.append(('name_list', local_var_params['name_list']))
+            collection_formats['name_list'] = 'csv'
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'create_since' in local_var_params:
+            query_params.append(('create_since', local_var_params['create_since']))
+        if 'create_until' in local_var_params:
+            query_params.append(('create_until', local_var_params['create_until']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+        if 'os_type' in local_var_params:
+            query_params.append(('os_type', local_var_params['os_type']))
+        if 'os_version_list' in local_var_params:
+            query_params.append(('os_version_list', local_var_params['os_version_list']))
+        if 'agent_state' in local_var_params:
+            query_params.append(('agent_state', local_var_params['agent_state']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_other_resource_async(self, request):
+        r"""导入IDC离线资源
+
+        管理线下设备提供IDC离线资源纳管功能-导入IDC离线资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ImportOtherResource
+        :type request: :class:`huaweicloudsdkcoc.v1.ImportOtherResourceRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ImportOtherResourceResponse`
+        """
+        http_info = self._import_other_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_other_resource_async_invoker(self, request):
+        http_info = self._import_other_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_other_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/other-resources/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportOtherResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+        if 'type' in local_var_params:
+            form_params['type'] = local_var_params['type']
+        if 'region_id' in local_var_params:
+            form_params['region_id'] = local_var_params['region_id']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_enterprise_project_collect_async(self, request):
+        r"""查询企业项目收藏
+
+        查询企业项目收藏。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListEnterpriseProjectCollect
+        :type request: :class:`huaweicloudsdkcoc.v1.ListEnterpriseProjectCollectRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListEnterpriseProjectCollectResponse`
+        """
+        http_info = self._list_enterprise_project_collect_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_enterprise_project_collect_async_invoker(self, request):
+        http_info = self._list_enterprise_project_collect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_enterprise_project_collect_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/enterprise-project-collect",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseProjectCollectResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_enterprise_project_collect_async(self, request):
+        r"""更新企业项目收藏
+
+        更新企业项目收藏。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateEnterpriseProjectCollect
+        :type request: :class:`huaweicloudsdkcoc.v1.UpdateEnterpriseProjectCollectRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.UpdateEnterpriseProjectCollectResponse`
+        """
+        http_info = self._update_enterprise_project_collect_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_enterprise_project_collect_async_invoker(self, request):
+        http_info = self._update_enterprise_project_collect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_enterprise_project_collect_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/enterprise-project-collect",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEnterpriseProjectCollectResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_application_group_async(self, request):
+        r"""创建分组
+
+        创建分组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateApplicationGroup
+        :type request: :class:`huaweicloudsdkcoc.v1.CreateApplicationGroupRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CreateApplicationGroupResponse`
+        """
+        http_info = self._create_application_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_application_group_async_invoker(self, request):
+        http_info = self._create_application_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_application_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApplicationGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_application_group_async(self, request):
+        r"""删除分组
+
+        删除分组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteApplicationGroup
+        :type request: :class:`huaweicloudsdkcoc.v1.DeleteApplicationGroupRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.DeleteApplicationGroupResponse`
+        """
+        http_info = self._delete_application_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_application_group_async_invoker(self, request):
+        http_info = self._delete_application_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_application_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/groups/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApplicationGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+        if 'force_delete' in local_var_params:
+            query_params.append(('force_delete', local_var_params['force_delete']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_application_groups_async(self, request):
+        r"""查询分组
+
+        查询应用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListApplicationGroups
+        :type request: :class:`huaweicloudsdkcoc.v1.ListApplicationGroupsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListApplicationGroupsResponse`
+        """
+        http_info = self._list_application_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_application_groups_async_invoker(self, request):
+        http_info = self._list_application_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_application_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplicationGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id_list' in local_var_params:
+            query_params.append(('id_list', local_var_params['id_list']))
+            collection_formats['id_list'] = 'csv'
+        if 'component_id' in local_var_params:
+            query_params.append(('component_id', local_var_params['component_id']))
+        if 'application_id' in local_var_params:
+            query_params.append(('application_id', local_var_params['application_id']))
+        if 'name_like' in local_var_params:
+            query_params.append(('name_like', local_var_params['name_like']))
+        if 'code' in local_var_params:
+            query_params.append(('code', local_var_params['code']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sync_group_resource_async(self, request):
+        r"""分组智能同步资源
+
+        分组智能同步资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncGroupResource
+        :type request: :class:`huaweicloudsdkcoc.v1.SyncGroupResourceRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.SyncGroupResourceResponse`
+        """
+        http_info = self._sync_group_resource_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_group_resource_async_invoker(self, request):
+        http_info = self._sync_group_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_group_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/groups/{id}/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncGroupResourceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_application_group_async(self, request):
+        r"""修改分组
+
+        修改分组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateApplicationGroup
+        :type request: :class:`huaweicloudsdkcoc.v1.UpdateApplicationGroupRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.UpdateApplicationGroupResponse`
+        """
+        http_info = self._update_application_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_application_group_async_invoker(self, request):
+        http_info = self._update_application_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_application_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/groups/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApplicationGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_group_ali_resource_relations_async(self, request):
+        r"""查询分组关联的阿里云资源
+
+        查询分组关联的阿里云资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGroupAliResourceRelations
+        :type request: :class:`huaweicloudsdkcoc.v1.ListGroupAliResourceRelationsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListGroupAliResourceRelationsResponse`
+        """
+        http_info = self._list_group_ali_resource_relations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_group_ali_resource_relations_async_invoker(self, request):
+        http_info = self._list_group_ali_resource_relations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_group_ali_resource_relations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/group-resource-relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupAliResourceRelationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'application_id' in local_var_params:
+            query_params.append(('application_id', local_var_params['application_id']))
+        if 'component_id' in local_var_params:
+            query_params.append(('component_id', local_var_params['component_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'vendor' in local_var_params:
+            query_params.append(('vendor', local_var_params['vendor']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'resource_id_list' in local_var_params:
+            query_params.append(('resource_id_list', local_var_params['resource_id_list']))
+            collection_formats['resource_id_list'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'az_id' in local_var_params:
+            query_params.append(('az_id', local_var_params['az_id']))
+        if 'ip_type' in local_var_params:
+            query_params.append(('ip_type', local_var_params['ip_type']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'agent_state' in local_var_params:
+            query_params.append(('agent_state', local_var_params['agent_state']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'os_type' in local_var_params:
+            query_params.append(('os_type', local_var_params['os_type']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+        if 'flavor_name' in local_var_params:
+            query_params.append(('flavor_name', local_var_params['flavor_name']))
+        if 'ip_list' in local_var_params:
+            query_params.append(('ip_list', local_var_params['ip_list']))
+            collection_formats['ip_list'] = 'csv'
+        if 'is_collected' in local_var_params:
+            query_params.append(('is_collected', local_var_params['is_collected']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_group_other_resource_relations_async(self, request):
+        r"""查询分组关联的离线资源
+
+        查询分组关联的离线资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGroupOtherResourceRelations
+        :type request: :class:`huaweicloudsdkcoc.v1.ListGroupOtherResourceRelationsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListGroupOtherResourceRelationsResponse`
+        """
+        http_info = self._list_group_other_resource_relations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_group_other_resource_relations_async_invoker(self, request):
+        http_info = self._list_group_other_resource_relations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_group_other_resource_relations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/group-resource-relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupOtherResourceRelationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'application_id' in local_var_params:
+            query_params.append(('application_id', local_var_params['application_id']))
+        if 'component_id' in local_var_params:
+            query_params.append(('component_id', local_var_params['component_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'vendor' in local_var_params:
+            query_params.append(('vendor', local_var_params['vendor']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'resource_id_list' in local_var_params:
+            query_params.append(('resource_id_list', local_var_params['resource_id_list']))
+            collection_formats['resource_id_list'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'az_id' in local_var_params:
+            query_params.append(('az_id', local_var_params['az_id']))
+        if 'ip_type' in local_var_params:
+            query_params.append(('ip_type', local_var_params['ip_type']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'agent_state' in local_var_params:
+            query_params.append(('agent_state', local_var_params['agent_state']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'os_type' in local_var_params:
+            query_params.append(('os_type', local_var_params['os_type']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+        if 'flavor_name' in local_var_params:
+            query_params.append(('flavor_name', local_var_params['flavor_name']))
+        if 'ip_list' in local_var_params:
+            query_params.append(('ip_list', local_var_params['ip_list']))
+            collection_formats['ip_list'] = 'csv'
+        if 'is_collected' in local_var_params:
+            query_params.append(('is_collected', local_var_params['is_collected']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_group_rms_resource_relations_async(self, request):
+        r"""查询分组关联的资源总数
+
+        分组管理多个资源后，可查询分组关联的资源总数， 应用id和分组id不能共存，且必填其中一个。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountGroupRmsResourceRelations
+        :type request: :class:`huaweicloudsdkcoc.v1.CountGroupRmsResourceRelationsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CountGroupRmsResourceRelationsResponse`
+        """
+        http_info = self._count_group_rms_resource_relations_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_group_rms_resource_relations_async_invoker(self, request):
+        http_info = self._count_group_rms_resource_relations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_group_rms_resource_relations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/group-resource-relations/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountGroupRmsResourceRelationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'application_id' in local_var_params:
+            query_params.append(('application_id', local_var_params['application_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'vendor' in local_var_params:
+            query_params.append(('vendor', local_var_params['vendor']))
+        if 'resource_id_list' in local_var_params:
+            query_params.append(('resource_id_list', local_var_params['resource_id_list']))
+            collection_formats['resource_id_list'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'az_id' in local_var_params:
+            query_params.append(('az_id', local_var_params['az_id']))
+        if 'ip_type' in local_var_params:
+            query_params.append(('ip_type', local_var_params['ip_type']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'agent_state' in local_var_params:
+            query_params.append(('agent_state', local_var_params['agent_state']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'os_type' in local_var_params:
+            query_params.append(('os_type', local_var_params['os_type']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_group_rms_resource_relation_async(self, request):
+        r"""创建分组资源关联
+
+        创建分组资源关联。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateGroupRmsResourceRelation
+        :type request: :class:`huaweicloudsdkcoc.v1.CreateGroupRmsResourceRelationRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CreateGroupRmsResourceRelationResponse`
+        """
+        http_info = self._create_group_rms_resource_relation_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_group_rms_resource_relation_async_invoker(self, request):
+        http_info = self._create_group_rms_resource_relation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_group_rms_resource_relation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/group-resource-relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGroupRmsResourceRelationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_group_rms_resource_relation_async(self, request):
+        r"""解绑分组资源关联
+
+        解绑分组资源关联。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteGroupRmsResourceRelation
+        :type request: :class:`huaweicloudsdkcoc.v1.DeleteGroupRmsResourceRelationRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.DeleteGroupRmsResourceRelationResponse`
+        """
+        http_info = self._delete_group_rms_resource_relation_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_group_rms_resource_relation_async_invoker(self, request):
+        http_info = self._delete_group_rms_resource_relation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_group_rms_resource_relation_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/group-resource-relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGroupRmsResourceRelationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id_list' in local_var_params:
+            query_params.append(('id_list', local_var_params['id_list']))
+            collection_formats['id_list'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_capacity_order_async(self, request):
+        r"""查询应用、组件、分组容量数据的排名
+
+        查询应用、组件、分组容量数据的排名，其中应用、组件和分组ID，有且仅有1个有值。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCapacityOrder
+        :type request: :class:`huaweicloudsdkcoc.v1.ListCapacityOrderRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListCapacityOrderResponse`
+        """
+        http_info = self._list_capacity_order_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_capacity_order_async_invoker(self, request):
+        http_info = self._list_capacity_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_capacity_order_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/capacity/order",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCapacityOrderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'application_id' in local_var_params:
+            query_params.append(('application_id', local_var_params['application_id']))
+        if 'component_id' in local_var_params:
+            query_params.append(('component_id', local_var_params['component_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_capacity_view_async(self, request):
+        r"""查询应用的容量数据
+
+        云运维中心支持查看应用、子应用、组件或分组下已关联的资源容量详情，按照资源类型展示资源核心数据。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCapacityView
+        :type request: :class:`huaweicloudsdkcoc.v1.ListCapacityViewRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListCapacityViewResponse`
+        """
+        http_info = self._list_capacity_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_capacity_view_async_invoker(self, request):
+        http_info = self._list_capacity_view_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_capacity_view_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/capacity",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCapacityViewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_group_rms_resource_relations_async(self, request):
+        r"""查询分组关联的华为云资源
+
+        查询分组关联的华为云资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGroupRmsResourceRelations
+        :type request: :class:`huaweicloudsdkcoc.v1.ListGroupRmsResourceRelationsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListGroupRmsResourceRelationsResponse`
+        """
+        http_info = self._list_group_rms_resource_relations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_group_rms_resource_relations_async_invoker(self, request):
+        http_info = self._list_group_rms_resource_relations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_group_rms_resource_relations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/group-resource-relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupRmsResourceRelationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'application_id' in local_var_params:
+            query_params.append(('application_id', local_var_params['application_id']))
+        if 'component_id' in local_var_params:
+            query_params.append(('component_id', local_var_params['component_id']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+        if 'vendor' in local_var_params:
+            query_params.append(('vendor', local_var_params['vendor']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'resource_id_list' in local_var_params:
+            query_params.append(('resource_id_list', local_var_params['resource_id_list']))
+            collection_formats['resource_id_list'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'az_id' in local_var_params:
+            query_params.append(('az_id', local_var_params['az_id']))
+        if 'ip_type' in local_var_params:
+            query_params.append(('ip_type', local_var_params['ip_type']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'agent_state' in local_var_params:
+            query_params.append(('agent_state', local_var_params['agent_state']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'os_type' in local_var_params:
+            query_params.append(('os_type', local_var_params['os_type']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+        if 'flavor_name' in local_var_params:
+            query_params.append(('flavor_name', local_var_params['flavor_name']))
+        if 'ip_list' in local_var_params:
+            query_params.append(('ip_list', local_var_params['ip_list']))
+            collection_formats['ip_list'] = 'csv'
+        if 'is_collected' in local_var_params:
+            query_params.append(('is_collected', local_var_params['is_collected']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_group_rms_resource_relation_async(self, request):
+        r"""转移资源
+
+        转移资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGroupRmsResourceRelation
+        :type request: :class:`huaweicloudsdkcoc.v1.UpdateGroupRmsResourceRelationRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.UpdateGroupRmsResourceRelationResponse`
+        """
+        http_info = self._update_group_rms_resource_relation_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_group_rms_resource_relation_async_invoker(self, request):
+        http_info = self._update_group_rms_resource_relation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_group_rms_resource_relation_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/group-resource-relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGroupRmsResourceRelationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -6495,6 +8560,116 @@ class CocAsyncClient(Client):
 
         return http_info
 
+    def count_resources_async(self, request):
+        r"""查询用户资源总数
+
+        查询用户资源总数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountResources
+        :type request: :class:`huaweicloudsdkcoc.v1.CountResourcesRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CountResourcesResponse`
+        """
+        http_info = self._count_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_resources_async_invoker(self, request):
+        http_info = self._count_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resources/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'resource_id_list' in local_var_params:
+            query_params.append(('resource_id_list', local_var_params['resource_id_list']))
+            collection_formats['resource_id_list'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'az_id' in local_var_params:
+            query_params.append(('az_id', local_var_params['az_id']))
+        if 'ip_type' in local_var_params:
+            query_params.append(('ip_type', local_var_params['ip_type']))
+        if 'ip' in local_var_params:
+            query_params.append(('ip', local_var_params['ip']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'agent_state' in local_var_params:
+            query_params.append(('agent_state', local_var_params['agent_state']))
+        if 'image_name' in local_var_params:
+            query_params.append(('image_name', local_var_params['image_name']))
+        if 'os_type' in local_var_params:
+            query_params.append(('os_type', local_var_params['os_type']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+        if 'tag_key' in local_var_params:
+            query_params.append(('tag_key', local_var_params['tag_key']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'component_id' in local_var_params:
+            query_params.append(('component_id', local_var_params['component_id']))
+        if 'application_id' in local_var_params:
+            query_params.append(('application_id', local_var_params['application_id']))
+        if 'cce_cluster_id' in local_var_params:
+            query_params.append(('cce_cluster_id', local_var_params['cce_cluster_id']))
+        if 'ep_id' in local_var_params:
+            query_params.append(('ep_id', local_var_params['ep_id']))
+        if 'is_delegated' in local_var_params:
+            query_params.append(('is_delegated', local_var_params['is_delegated']))
+        if 'is_collected' in local_var_params:
+            query_params.append(('is_collected', local_var_params['is_collected']))
+        if 'flavor_name' in local_var_params:
+            query_params.append(('flavor_name', local_var_params['flavor_name']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_resources_async(self, request):
         r"""查询用户所有资源
 
@@ -6667,6 +8842,814 @@ class CocAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sync_resource_agent_async(self, request):
+        r"""同步华为云资源Agent信息
+
+        同步华为云资源Agent信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncResourceAgent
+        :type request: :class:`huaweicloudsdkcoc.v1.SyncResourceAgentRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.SyncResourceAgentResponse`
+        """
+        http_info = self._sync_resource_agent_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_resource_agent_async_invoker(self, request):
+        http_info = self._sync_resource_agent_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_resource_agent_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resources/uniagent/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncResourceAgentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def count_resources_of_resource_view_async(self, request):
+        r"""查询CMDB跨账号资源视图聚合的资源总数
+
+        查询CMDB跨账号资源视图聚合的资源总数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CountResourcesOfResourceView
+        :type request: :class:`huaweicloudsdkcoc.v1.CountResourcesOfResourceViewRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CountResourcesOfResourceViewResponse`
+        """
+        http_info = self._count_resources_of_resource_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def count_resources_of_resource_view_async_invoker(self, request):
+        http_info = self._count_resources_of_resource_view_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_resources_of_resource_view_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource/views/resources/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountResourcesOfResourceViewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'view_id' in local_var_params:
+            query_params.append(('view_id', local_var_params['view_id']))
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_resource_views_async(self, request):
+        r"""创建CMDB跨账号资源视图
+
+        创建CMDB跨账号资源视图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateResourceViews
+        :type request: :class:`huaweicloudsdkcoc.v1.CreateResourceViewsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CreateResourceViewsResponse`
+        """
+        http_info = self._create_resource_views_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_resource_views_async_invoker(self, request):
+        http_info = self._create_resource_views_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_resource_views_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource/views",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceViewsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_resource_views_async(self, request):
+        r"""删除CMDB的跨账号资源管理视图
+
+        删除CMDB的跨账号资源管理视图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteResourceViews
+        :type request: :class:`huaweicloudsdkcoc.v1.DeleteResourceViewsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.DeleteResourceViewsResponse`
+        """
+        http_info = self._delete_resource_views_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_resource_views_async_invoker(self, request):
+        http_info = self._delete_resource_views_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_views_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource/views/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceViewsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resource_views_async(self, request):
+        r"""查询CMDB跨账号资源视图
+
+        查询CMDB跨账号资源视图。视图是一组筛选器，用户可以自由配置筛选范围，用于在跨账号场景下访问华为云中的资源信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourceViews
+        :type request: :class:`huaweicloudsdkcoc.v1.ListResourceViewsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListResourceViewsResponse`
+        """
+        http_info = self._list_resource_views_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resource_views_async_invoker(self, request):
+        http_info = self._list_resource_views_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_views_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource/views",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceViewsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resources_of_resource_view_async(self, request):
+        r"""查询CMDB跨账号资源视图聚合的资源
+
+        查询CMDB跨账号资源视图聚合的资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListResourcesOfResourceView
+        :type request: :class:`huaweicloudsdkcoc.v1.ListResourcesOfResourceViewRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListResourcesOfResourceViewResponse`
+        """
+        http_info = self._list_resources_of_resource_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resources_of_resource_view_async_invoker(self, request):
+        http_info = self._list_resources_of_resource_view_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resources_of_resource_view_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource/views/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourcesOfResourceViewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'view_id' in local_var_params:
+            query_params.append(('view_id', local_var_params['view_id']))
+        if 'provider' in local_var_params:
+            query_params.append(('provider', local_var_params['provider']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sync_resources_of_resource_view_async(self, request):
+        r"""同步CMDB跨账号资源视图
+
+        同步CMDB跨账号资源视图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncResourcesOfResourceView
+        :type request: :class:`huaweicloudsdkcoc.v1.SyncResourcesOfResourceViewRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.SyncResourcesOfResourceViewResponse`
+        """
+        http_info = self._sync_resources_of_resource_view_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_resources_of_resource_view_async_invoker(self, request):
+        http_info = self._sync_resources_of_resource_view_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_resources_of_resource_view_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource/views/{id}/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncResourcesOfResourceViewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_resource_views_async(self, request):
+        r"""更新CMDB跨账号资源视图
+
+        更新CMDB跨账号资源视图。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateResourceViews
+        :type request: :class:`huaweicloudsdkcoc.v1.UpdateResourceViewsRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.UpdateResourceViewsResponse`
+        """
+        http_info = self._update_resource_views_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_resource_views_async_invoker(self, request):
+        http_info = self._update_resource_views_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_resource_views_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource/views/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateResourceViewsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_vendor_account_async(self, request):
+        r"""创建云厂商账号
+
+        创建云厂商（阿里云、AWS、Azure和HCS等）账号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateVendorAccount
+        :type request: :class:`huaweicloudsdkcoc.v1.CreateVendorAccountRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.CreateVendorAccountResponse`
+        """
+        http_info = self._create_vendor_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_vendor_account_async_invoker(self, request):
+        http_info = self._create_vendor_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vendor_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/vendor-account",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVendorAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_vendor_account_async(self, request):
+        r"""删除云厂商账号
+
+        增加云广商账号，不需要后，可删除云厂商账号。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteVendorAccount
+        :type request: :class:`huaweicloudsdkcoc.v1.DeleteVendorAccountRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.DeleteVendorAccountResponse`
+        """
+        http_info = self._delete_vendor_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_vendor_account_async_invoker(self, request):
+        http_info = self._delete_vendor_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vendor_account_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/vendor-account/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVendorAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vendor_account_async(self, request):
+        r"""查询云厂商账号
+
+        查询所有云厂商（阿里云、AWS、Azure和HCS等）账号信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVendorAccount
+        :type request: :class:`huaweicloudsdkcoc.v1.ListVendorAccountRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ListVendorAccountResponse`
+        """
+        http_info = self._list_vendor_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vendor_account_async_invoker(self, request):
+        http_info = self._list_vendor_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vendor_account_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/vendor-account",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVendorAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'vendor' in local_var_params:
+            query_params.append(('vendor', local_var_params['vendor']))
+        if 'account_id' in local_var_params:
+            query_params.append(('account_id', local_var_params['account_id']))
+        if 'account_name' in local_var_params:
+            query_params.append(('account_name', local_var_params['account_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_vendor_account_async(self, request):
+        r"""修改云厂商账号
+
+        修改所有云厂商（阿里云、AWS、Azure和HCS等）账号信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVendorAccount
+        :type request: :class:`huaweicloudsdkcoc.v1.UpdateVendorAccountRequest`
+        :rtype: :class:`huaweicloudsdkcoc.v1.UpdateVendorAccountResponse`
+        """
+        http_info = self._update_vendor_account_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_vendor_account_async_invoker(self, request):
+        http_info = self._update_vendor_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vendor_account_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/vendor-account/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVendorAccountResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
 
         query_params = []
 

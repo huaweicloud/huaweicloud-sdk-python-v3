@@ -16,7 +16,7 @@ class ExecuteDocumentRequest:
 
     openapi_types = {
         'document_id': 'str',
-        'body': 'ExecuteDocumentRequsetBody'
+        'body': 'ExecuteDocumentRequestBody'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class ExecuteDocumentRequest:
         :param document_id: 
         :type document_id: str
         :param body: Body of the ExecuteDocumentRequest
-        :type body: :class:`huaweicloudsdkcoc.v1.ExecuteDocumentRequsetBody`
+        :type body: :class:`huaweicloudsdkcoc.v1.ExecuteDocumentRequestBody`
         """
         
         
@@ -68,7 +68,7 @@ class ExecuteDocumentRequest:
         r"""Gets the body of this ExecuteDocumentRequest.
 
         :return: The body of this ExecuteDocumentRequest.
-        :rtype: :class:`huaweicloudsdkcoc.v1.ExecuteDocumentRequsetBody`
+        :rtype: :class:`huaweicloudsdkcoc.v1.ExecuteDocumentRequestBody`
         """
         return self._body
 
@@ -77,7 +77,7 @@ class ExecuteDocumentRequest:
         r"""Sets the body of this ExecuteDocumentRequest.
 
         :param body: The body of this ExecuteDocumentRequest.
-        :type body: :class:`huaweicloudsdkcoc.v1.ExecuteDocumentRequsetBody`
+        :type body: :class:`huaweicloudsdkcoc.v1.ExecuteDocumentRequestBody`
         """
         self._body = body
 

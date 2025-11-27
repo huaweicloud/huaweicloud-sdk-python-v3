@@ -17,7 +17,6 @@ class VolumeMetadata:
     openapi_types = {
         'system__cmkid': 'str',
         'system__encrypted': 'str',
-        'full_clone': 'str',
         'hwpassthrough': 'str',
         'order_id': 'str'
     }
@@ -25,12 +24,11 @@ class VolumeMetadata:
     attribute_map = {
         'system__cmkid': '__system__cmkid',
         'system__encrypted': '__system__encrypted',
-        'full_clone': 'full_clone',
         'hwpassthrough': 'hw:passthrough',
         'order_id': 'orderID'
     }
 
-    def __init__(self, system__cmkid=None, system__encrypted=None, full_clone=None, hwpassthrough=None, order_id=None):
+    def __init__(self, system__cmkid=None, system__encrypted=None, hwpassthrough=None, order_id=None):
         r"""VolumeMetadata
 
         The model defined in huaweicloud sdk
@@ -39,8 +37,6 @@ class VolumeMetadata:
         :type system__cmkid: str
         :param system__encrypted: metadata中的表示加密功能的字段，0代表不加密，1代表加密。 不指定该字段时，云硬盘的加密属性与数据源保持一致，如果不是从数据源创建的场景，则默认不加密。
         :type system__encrypted: str
-        :param full_clone: 从快照创建云硬盘时的创建方式。 * 0表示使用链接克隆方式。 * 1表示使用全量克隆方式。
-        :type full_clone: str
         :param hwpassthrough: * true表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令。 * false表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，即为默认类型，VBD只能支持简单的SCSI读写命令。 * 该字段不存在时，云硬盘默认为VBD类型。
         :type hwpassthrough: str
         :param order_id: metadata中的表示云硬盘计费类型的字段。 当该字段有值时，表示该云硬盘的计费类型为包周期计费，否则计费类型为按需计费。
@@ -51,7 +47,6 @@ class VolumeMetadata:
 
         self._system__cmkid = None
         self._system__encrypted = None
-        self._full_clone = None
         self._hwpassthrough = None
         self._order_id = None
         self.discriminator = None
@@ -60,8 +55,6 @@ class VolumeMetadata:
             self.system__cmkid = system__cmkid
         if system__encrypted is not None:
             self.system__encrypted = system__encrypted
-        if full_clone is not None:
-            self.full_clone = full_clone
         if hwpassthrough is not None:
             self.hwpassthrough = hwpassthrough
         if order_id is not None:
@@ -110,28 +103,6 @@ class VolumeMetadata:
         :type system__encrypted: str
         """
         self._system__encrypted = system__encrypted
-
-    @property
-    def full_clone(self):
-        r"""Gets the full_clone of this VolumeMetadata.
-
-        从快照创建云硬盘时的创建方式。 * 0表示使用链接克隆方式。 * 1表示使用全量克隆方式。
-
-        :return: The full_clone of this VolumeMetadata.
-        :rtype: str
-        """
-        return self._full_clone
-
-    @full_clone.setter
-    def full_clone(self, full_clone):
-        r"""Sets the full_clone of this VolumeMetadata.
-
-        从快照创建云硬盘时的创建方式。 * 0表示使用链接克隆方式。 * 1表示使用全量克隆方式。
-
-        :param full_clone: The full_clone of this VolumeMetadata.
-        :type full_clone: str
-        """
-        self._full_clone = full_clone
 
     @property
     def hwpassthrough(self):

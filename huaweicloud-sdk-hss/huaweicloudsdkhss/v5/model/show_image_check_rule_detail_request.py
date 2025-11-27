@@ -65,7 +65,7 @@ class ShowImageCheckRuleDetailRequest:
         :type image_id: str
         :param check_name: 基线名称
         :type check_name: str
-        :param check_type: 基线类型
+        :param check_type: **参数解释** : 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **约束限制** : 不涉及 **取值范围** : check_type的值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-configs **默认取值** : 不涉及 
         :type check_type: str
         :param check_rule_id: 检查项id
         :type check_rule_id: str
@@ -291,7 +291,7 @@ class ShowImageCheckRuleDetailRequest:
     def check_type(self):
         r"""Gets the check_type of this ShowImageCheckRuleDetailRequest.
 
-        基线类型
+        **参数解释** : 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **约束限制** : 不涉及 **取值范围** : check_type的值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-configs **默认取值** : 不涉及 
 
         :return: The check_type of this ShowImageCheckRuleDetailRequest.
         :rtype: str
@@ -302,7 +302,7 @@ class ShowImageCheckRuleDetailRequest:
     def check_type(self, check_type):
         r"""Sets the check_type of this ShowImageCheckRuleDetailRequest.
 
-        基线类型
+        **参数解释** : 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **约束限制** : 不涉及 **取值范围** : check_type的值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-configs **默认取值** : 不涉及 
 
         :param check_type: The check_type of this ShowImageCheckRuleDetailRequest.
         :type check_type: str

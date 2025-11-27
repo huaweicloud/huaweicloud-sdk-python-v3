@@ -51,7 +51,7 @@ class CreateMasterSlaveHealthMonitorOption:
         :type delay: int
         :param domain_name: **参数解释**：发送健康检查请求的域名。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：以数字或字母开头，只能包含数字、字母、’-’、’.’。  **默认取值**：null，表示使用负载均衡器的vip作为http请求的目的地址。
         :type domain_name: str
-        :param expected_codes: **参数解释**：期望响应状态码。  **约束限制**：该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204  **默认取值**：200
+        :param expected_codes: **参数解释**：期望响应状态码。  **约束限制**：该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204  **默认取值**：若健康检查type为GRPC，则默认值为0，其他为200。
         :type expected_codes: str
         :param http_method: **参数解释**：HTTP请求方法。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：GET、HEAD、POST  **默认取值**：GET
         :type http_method: str
@@ -153,7 +153,7 @@ class CreateMasterSlaveHealthMonitorOption:
     def expected_codes(self):
         r"""Gets the expected_codes of this CreateMasterSlaveHealthMonitorOption.
 
-        **参数解释**：期望响应状态码。  **约束限制**：该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204  **默认取值**：200
+        **参数解释**：期望响应状态码。  **约束限制**：该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204  **默认取值**：若健康检查type为GRPC，则默认值为0，其他为200。
 
         :return: The expected_codes of this CreateMasterSlaveHealthMonitorOption.
         :rtype: str
@@ -164,7 +164,7 @@ class CreateMasterSlaveHealthMonitorOption:
     def expected_codes(self, expected_codes):
         r"""Sets the expected_codes of this CreateMasterSlaveHealthMonitorOption.
 
-        **参数解释**：期望响应状态码。  **约束限制**：该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204  **默认取值**：200
+        **参数解释**：期望响应状态码。  **约束限制**：该字段仅在HTTP/HTTPS/GRPC协议下有效，其他协议可以设置但不会生效。  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204  **默认取值**：若健康检查type为GRPC，则默认值为0，其他为200。
 
         :param expected_codes: The expected_codes of this CreateMasterSlaveHealthMonitorOption.
         :type expected_codes: str

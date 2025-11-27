@@ -12,6 +12,7 @@ from huaweicloudsdkga.v1.model.area import Area
 from huaweicloudsdkga.v1.model.associate_listener_request import AssociateListenerRequest
 from huaweicloudsdkga.v1.model.associate_listener_request_body import AssociateListenerRequestBody
 from huaweicloudsdkga.v1.model.associate_listener_response import AssociateListenerResponse
+from huaweicloudsdkga.v1.model.byoip_pool import ByoipPool
 from huaweicloudsdkga.v1.model.client_affinity import ClientAffinity
 from huaweicloudsdkga.v1.model.config_status import ConfigStatus
 from huaweicloudsdkga.v1.model.count_resources_by_tag_request import CountResourcesByTagRequest
@@ -83,6 +84,8 @@ from huaweicloudsdkga.v1.model.list_accelerators_request import ListAccelerators
 from huaweicloudsdkga.v1.model.list_accelerators_response import ListAcceleratorsResponse
 from huaweicloudsdkga.v1.model.list_all_pops_request import ListAllPopsRequest
 from huaweicloudsdkga.v1.model.list_all_pops_response import ListAllPopsResponse
+from huaweicloudsdkga.v1.model.list_byoip_pools_request import ListByoipPoolsRequest
+from huaweicloudsdkga.v1.model.list_byoip_pools_response import ListByoipPoolsResponse
 from huaweicloudsdkga.v1.model.list_endpoint_groups_request import ListEndpointGroupsRequest
 from huaweicloudsdkga.v1.model.list_endpoint_groups_response import ListEndpointGroupsResponse
 from huaweicloudsdkga.v1.model.list_endpoints_request import ListEndpointsRequest

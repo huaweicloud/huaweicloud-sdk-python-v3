@@ -49,7 +49,25 @@ __IAM_ENDPOINT_DICT = {
     "tr-west-1": "https://iam.tr-west-1.myhuaweicloud.com",
     "cn-north-12": "https://iam.cn-north-12.myhuaweicloud.com"
 }
+__STS_ENDPOINT_DICT = {
+    "cn-north-4": "https://sts.cn-north-4.myhuaweicloud.com",
+    "cn-south-1": "https://sts.cn-south-1.myhuaweicloud.com",
+    "cn-east-3": "https://sts.cn-east-3.myhuaweicloud.com",
+    "cn-southwest-2": "https://sts.cn-southwest-2.myhuaweicloud.com",
+    "ap-southeast-1": "https://sts.ap-southeast-1.myhuaweicloud.com",
+    "ap-southeast-3": "https://sts.ap-southeast-3.myhuaweicloud.com",
+    "ap-southeast-2": "https://sts.ap-southeast-2.myhuaweicloud.com",
+    "sa-brazil-1": "https://sts.sa-brazil-1.myhuaweicloud.com",
+    "la-south-2": "https://sts.la-south-2.myhuaweicloud.com",
+    "af-south-1": "https://sts.af-south-1.myhuaweicloud.com",
+    "ap-southeast-4": "https://sts.ap-southeast-4.myhuaweicloud.com",
+    "tr-west-1": "https://sts.tr-west-1.myhuaweicloud.com"
+}
 
 
 def get_iam_endpoint_by_id(region_id, default=None):
     return __IAM_ENDPOINT_DICT.get(region_id, default)
+
+
+def get_sts_endpoint_by_id(region_id, default=None):
+    return __STS_ENDPOINT_DICT.get(region_id, default)

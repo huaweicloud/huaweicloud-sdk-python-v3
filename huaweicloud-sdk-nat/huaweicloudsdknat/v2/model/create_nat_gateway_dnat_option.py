@@ -55,17 +55,17 @@ class CreateNatGatewayDnatOption:
         :type private_ip: str
         :param nat_gateway_id: 公网NAT网关实例的ID。
         :type nat_gateway_id: str
-        :param internal_service_port: 虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
+        :param internal_service_port: 虚拟机或者裸机对外提供服务的协议端口号。 取值范围: 0~65535。
         :type internal_service_port: int
         :param floating_ip_id: 弹性公网IP的id。
         :type floating_ip_id: str
-        :param external_service_port: Floatingip对外提供服务的端口号。 取值范围：0~65535。
+        :param external_service_port: Floatingip对外提供服务的端口号。 取值范围: 0~65535。
         :type external_service_port: int
         :param protocol: 协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
         :type protocol: str
-        :param internal_service_port_range: 虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
+        :param internal_service_port_range: 虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明: 该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围: 1~65535。 约束: 只能以’-’字符连接端口范围。 
         :type internal_service_port_range: str
-        :param external_service_port_range: Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
+        :param external_service_port_range: Floatingip对外提供服务的端口号范围。 功能说明: 该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围: 1~65535。 约束: 只能以’-’字符连接端口范围。 
         :type external_service_port_range: str
         :param global_eip_id: 全域弹性公网IP的id。
         :type global_eip_id: str
@@ -196,7 +196,7 @@ class CreateNatGatewayDnatOption:
     def internal_service_port(self):
         r"""Gets the internal_service_port of this CreateNatGatewayDnatOption.
 
-        虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
+        虚拟机或者裸机对外提供服务的协议端口号。 取值范围: 0~65535。
 
         :return: The internal_service_port of this CreateNatGatewayDnatOption.
         :rtype: int
@@ -207,7 +207,7 @@ class CreateNatGatewayDnatOption:
     def internal_service_port(self, internal_service_port):
         r"""Sets the internal_service_port of this CreateNatGatewayDnatOption.
 
-        虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
+        虚拟机或者裸机对外提供服务的协议端口号。 取值范围: 0~65535。
 
         :param internal_service_port: The internal_service_port of this CreateNatGatewayDnatOption.
         :type internal_service_port: int
@@ -240,7 +240,7 @@ class CreateNatGatewayDnatOption:
     def external_service_port(self):
         r"""Gets the external_service_port of this CreateNatGatewayDnatOption.
 
-        Floatingip对外提供服务的端口号。 取值范围：0~65535。
+        Floatingip对外提供服务的端口号。 取值范围: 0~65535。
 
         :return: The external_service_port of this CreateNatGatewayDnatOption.
         :rtype: int
@@ -251,7 +251,7 @@ class CreateNatGatewayDnatOption:
     def external_service_port(self, external_service_port):
         r"""Sets the external_service_port of this CreateNatGatewayDnatOption.
 
-        Floatingip对外提供服务的端口号。 取值范围：0~65535。
+        Floatingip对外提供服务的端口号。 取值范围: 0~65535。
 
         :param external_service_port: The external_service_port of this CreateNatGatewayDnatOption.
         :type external_service_port: int
@@ -284,7 +284,7 @@ class CreateNatGatewayDnatOption:
     def internal_service_port_range(self):
         r"""Gets the internal_service_port_range of this CreateNatGatewayDnatOption.
 
-        虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
+        虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明: 该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围: 1~65535。 约束: 只能以’-’字符连接端口范围。 
 
         :return: The internal_service_port_range of this CreateNatGatewayDnatOption.
         :rtype: str
@@ -295,7 +295,7 @@ class CreateNatGatewayDnatOption:
     def internal_service_port_range(self, internal_service_port_range):
         r"""Sets the internal_service_port_range of this CreateNatGatewayDnatOption.
 
-        虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
+        虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明: 该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围: 1~65535。 约束: 只能以’-’字符连接端口范围。 
 
         :param internal_service_port_range: The internal_service_port_range of this CreateNatGatewayDnatOption.
         :type internal_service_port_range: str
@@ -306,7 +306,7 @@ class CreateNatGatewayDnatOption:
     def external_service_port_range(self):
         r"""Gets the external_service_port_range of this CreateNatGatewayDnatOption.
 
-        Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
+        Floatingip对外提供服务的端口号范围。 功能说明: 该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围: 1~65535。 约束: 只能以’-’字符连接端口范围。 
 
         :return: The external_service_port_range of this CreateNatGatewayDnatOption.
         :rtype: str
@@ -317,7 +317,7 @@ class CreateNatGatewayDnatOption:
     def external_service_port_range(self, external_service_port_range):
         r"""Sets the external_service_port_range of this CreateNatGatewayDnatOption.
 
-        Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
+        Floatingip对外提供服务的端口号范围。 功能说明: 该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围: 1~65535。 约束: 只能以’-’字符连接端口范围。 
 
         :param external_service_port_range: The external_service_port_range of this CreateNatGatewayDnatOption.
         :type external_service_port_range: str

@@ -1670,7 +1670,7 @@ class BssintlAsyncClient(Client):
         return http_info
 
     def list_service_resources_async(self, request):
-        r"""根据云服务类型查询资源列表
+        r"""根据云服务类型查询资源类型列表
 
         功能描述：伙伴在伙伴销售平台根据云服务类型查询关联的资源类型编码和名称，用于查询按需产品的价格或包年/包月产品的价格。
         
@@ -3184,7 +3184,7 @@ class BssintlAsyncClient(Client):
     def list_pay_per_use_customer_resources_async(self, request):
         r"""查询客户包年/包月资源列表
 
-        功能描述：客户在客户自建平台查询某个或所有的包年/包月资源
+        功能描述：伙伴/客户在伙伴/客户自建平台查询某个或所有的包年/包月资源
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3517,7 +3517,7 @@ class BssintlAsyncClient(Client):
     def show_refund_order_details_async(self, request):
         r"""查询退款订单的金额详情
 
-        功能描述：客户在伙伴销售平台查询某次退订订单或者降配订单的退款金额来自哪些资源和对应订单
+        功能描述：伙伴/客户在伙伴/客户销售平台查询某次退订订单或者降配订单的退款金额来自哪些资源和对应订单
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3552,6 +3552,10 @@ class BssintlAsyncClient(Client):
         query_params = []
         if 'order_id' in local_var_params:
             query_params.append(('order_id', local_var_params['order_id']))
+        if 'customer_id' in local_var_params:
+            query_params.append(('customer_id', local_var_params['customer_id']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
 
         header_params = {}
 

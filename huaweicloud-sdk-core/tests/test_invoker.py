@@ -73,7 +73,7 @@ def test_invoker_add_header(mocked_client):
      .invoke())
 
 
-class TestRetry(object):
+class TestRetry:
     URL = "https://example.com/invoker/retry"
 
     @classmethod

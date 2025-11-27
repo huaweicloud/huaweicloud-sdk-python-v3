@@ -31,7 +31,7 @@ class AccelerateIp:
 
         The model defined in huaweicloud sdk
 
-        :param ip_type: IP地址类型。
+        :param ip_type: IP地址类型。 取值范围：IPV4、IPV6
         :type ip_type: str
         :param ip_address: IP地址。
         :type ip_address: str
@@ -56,7 +56,7 @@ class AccelerateIp:
     def ip_type(self):
         r"""Gets the ip_type of this AccelerateIp.
 
-        IP地址类型。
+        IP地址类型。 取值范围：IPV4、IPV6
 
         :return: The ip_type of this AccelerateIp.
         :rtype: str
@@ -67,7 +67,7 @@ class AccelerateIp:
     def ip_type(self, ip_type):
         r"""Sets the ip_type of this AccelerateIp.
 
-        IP地址类型。
+        IP地址类型。 取值范围：IPV4、IPV6
 
         :param ip_type: The ip_type of this AccelerateIp.
         :type ip_type: str

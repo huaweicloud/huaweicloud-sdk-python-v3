@@ -46,8 +46,7 @@ class ExportVulRequestBody:
         self._host_id_list = None
         self.discriminator = None
 
-        if export_headers is not None:
-            self.export_headers = export_headers
+        self.export_headers = export_headers
         if vul_id_list is not None:
             self.vul_id_list = vul_id_list
         if host_id_list is not None:

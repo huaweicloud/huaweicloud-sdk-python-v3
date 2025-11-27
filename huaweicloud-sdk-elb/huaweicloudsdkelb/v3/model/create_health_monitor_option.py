@@ -55,7 +55,7 @@ class CreateHealthMonitorOption:
 
         :param admin_state_up: **参数解释**：健康检查的管理状态。  **约束限制**：不涉及  **取值范围**： - true：表示开启健康检查。 - false表示关闭健康检查。  **默认取值**：true
         :type admin_state_up: bool
-        :param delay: **参数解释**：健康检查间隔。  **约束限制**：不涉及  **取值范围**：1-50，单位：秒。  **默认取值**：true
+        :param delay: **参数解释**：健康检查间隔。  **约束限制**：不涉及  **取值范围**：1-50，单位：秒。  **默认取值**：不涉及
         :type delay: int
         :param domain_name: **参数解释**：发送健康检查请求的域名。  **约束限制**：当type为HTTP/HTTPS时生效。  **取值范围**：以数字或字母开头，只能包含数字、字母、’-’、’.’。  **默认取值**：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。
         :type domain_name: str
@@ -151,7 +151,7 @@ class CreateHealthMonitorOption:
     def delay(self):
         r"""Gets the delay of this CreateHealthMonitorOption.
 
-        **参数解释**：健康检查间隔。  **约束限制**：不涉及  **取值范围**：1-50，单位：秒。  **默认取值**：true
+        **参数解释**：健康检查间隔。  **约束限制**：不涉及  **取值范围**：1-50，单位：秒。  **默认取值**：不涉及
 
         :return: The delay of this CreateHealthMonitorOption.
         :rtype: int
@@ -162,7 +162,7 @@ class CreateHealthMonitorOption:
     def delay(self, delay):
         r"""Sets the delay of this CreateHealthMonitorOption.
 
-        **参数解释**：健康检查间隔。  **约束限制**：不涉及  **取值范围**：1-50，单位：秒。  **默认取值**：true
+        **参数解释**：健康检查间隔。  **约束限制**：不涉及  **取值范围**：1-50，单位：秒。  **默认取值**：不涉及
 
         :param delay: The delay of this CreateHealthMonitorOption.
         :type delay: int

@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class _Model(object):
+class _Model:
     openapi_types = {}
 
     def to_dict(self):

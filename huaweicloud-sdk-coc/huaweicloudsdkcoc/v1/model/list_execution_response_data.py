@@ -15,6 +15,7 @@ class ListExecutionResponseData:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'execution_id': 'str',
         'document_name': 'str',
         'document_id': 'str',
@@ -35,6 +36,7 @@ class ListExecutionResponseData:
     }
 
     attribute_map = {
+        'id': 'id',
         'execution_id': 'execution_id',
         'document_name': 'document_name',
         'document_id': 'document_id',
@@ -54,11 +56,13 @@ class ListExecutionResponseData:
         'targets': 'targets'
     }
 
-    def __init__(self, execution_id=None, document_name=None, document_id=None, document_version_id=None, document_version=None, start_time=None, end_time=None, update_time=None, creator=None, status=None, description=None, parameters=None, sys_tags=None, tags=None, type=None, target_parameter_name=None, targets=None):
+    def __init__(self, id=None, execution_id=None, document_name=None, document_id=None, document_version_id=None, document_version=None, start_time=None, end_time=None, update_time=None, creator=None, status=None, description=None, parameters=None, sys_tags=None, tags=None, type=None, target_parameter_name=None, targets=None):
         r"""ListExecutionResponseData
 
         The model defined in huaweicloud sdk
 
+        :param id: id
+        :type id: str
         :param execution_id: 工单唯一id
         :type execution_id: str
         :param document_name: 作业名称
@@ -97,6 +101,7 @@ class ListExecutionResponseData:
         
         
 
+        self._id = None
         self._execution_id = None
         self._document_name = None
         self._document_id = None
@@ -116,6 +121,8 @@ class ListExecutionResponseData:
         self._targets = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if execution_id is not None:
             self.execution_id = execution_id
         if document_name is not None:
@@ -150,6 +157,28 @@ class ListExecutionResponseData:
             self.target_parameter_name = target_parameter_name
         if targets is not None:
             self.targets = targets
+
+    @property
+    def id(self):
+        r"""Gets the id of this ListExecutionResponseData.
+
+        id
+
+        :return: The id of this ListExecutionResponseData.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this ListExecutionResponseData.
+
+        id
+
+        :param id: The id of this ListExecutionResponseData.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def execution_id(self):

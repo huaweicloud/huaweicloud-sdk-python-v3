@@ -47,7 +47,7 @@ class GetNetworkPolicy:
         :type policy_content: :class:`huaweicloudsdkhss.v5.NetworkPolicyBody`
         :param create_time: 创建时间
         :type create_time: datetime
-        :param deploy_status: 下发策略到cce成功与否
+        :param deploy_status: **参数解释**: 下发策略到cce成功与否 **取值范围**: - true: 成功 - false: 失败 
         :type deploy_status: bool
         """
         
@@ -184,7 +184,7 @@ class GetNetworkPolicy:
     def deploy_status(self):
         r"""Gets the deploy_status of this GetNetworkPolicy.
 
-        下发策略到cce成功与否
+        **参数解释**: 下发策略到cce成功与否 **取值范围**: - true: 成功 - false: 失败 
 
         :return: The deploy_status of this GetNetworkPolicy.
         :rtype: bool
@@ -195,7 +195,7 @@ class GetNetworkPolicy:
     def deploy_status(self, deploy_status):
         r"""Sets the deploy_status of this GetNetworkPolicy.
 
-        下发策略到cce成功与否
+        **参数解释**: 下发策略到cce成功与否 **取值范围**: - true: 成功 - false: 失败 
 
         :param deploy_status: The deploy_status of this GetNetworkPolicy.
         :type deploy_status: bool

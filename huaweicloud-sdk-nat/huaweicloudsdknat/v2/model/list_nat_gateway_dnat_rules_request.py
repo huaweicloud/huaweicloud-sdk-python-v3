@@ -18,13 +18,15 @@ class ListNatGatewayDnatRulesRequest:
         'admin_state_up': 'bool',
         'external_service_port': 'int',
         'floating_ip_address': 'str',
+        'global_eip_address': 'str',
         'status': 'list[str]',
         'floating_ip_id': 'str',
+        'global_eip_id': 'str',
         'internal_service_port': 'int',
         'limit': 'int',
         'id': 'str',
         'description': 'str',
-        'created_at': 'str',
+        'created_at': 'datetime',
         'nat_gateway_id': 'list[str]',
         'port_id': 'str',
         'private_ip': 'str',
@@ -36,8 +38,10 @@ class ListNatGatewayDnatRulesRequest:
         'admin_state_up': 'admin_state_up',
         'external_service_port': 'external_service_port',
         'floating_ip_address': 'floating_ip_address',
+        'global_eip_address': 'global_eip_address',
         'status': 'status',
         'floating_ip_id': 'floating_ip_id',
+        'global_eip_id': 'global_eip_id',
         'internal_service_port': 'internal_service_port',
         'limit': 'limit',
         'id': 'id',
@@ -50,7 +54,7 @@ class ListNatGatewayDnatRulesRequest:
         'marker': 'marker'
     }
 
-    def __init__(self, admin_state_up=None, external_service_port=None, floating_ip_address=None, status=None, floating_ip_id=None, internal_service_port=None, limit=None, id=None, description=None, created_at=None, nat_gateway_id=None, port_id=None, private_ip=None, protocol=None, marker=None):
+    def __init__(self, admin_state_up=None, external_service_port=None, floating_ip_address=None, global_eip_address=None, status=None, floating_ip_id=None, global_eip_id=None, internal_service_port=None, limit=None, id=None, description=None, created_at=None, nat_gateway_id=None, port_id=None, private_ip=None, protocol=None, marker=None):
         r"""ListNatGatewayDnatRulesRequest
 
         The model defined in huaweicloud sdk
@@ -61,20 +65,24 @@ class ListNatGatewayDnatRulesRequest:
         :type external_service_port: int
         :param floating_ip_address: 弹性公网的IP地址。
         :type floating_ip_address: str
-        :param status: DNAT规则的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;EIP_FREEZED\&quot;：EIP冻结 \&quot;INACTIVE\&quot;：不可用
+        :param global_eip_address: 全域弹性公网的IP地址。
+        :type global_eip_address: str
+        :param status: DNAT规则的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 EIP_FREEZED: EIP冻结 INACTIVE: 不可用
         :type status: list[str]
         :param floating_ip_id: 弹性公网IP的id。
         :type floating_ip_id: str
+        :param global_eip_id: 全域弹性公网IP的id。
+        :type global_eip_id: str
         :param internal_service_port: 虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
         :type internal_service_port: int
-        :param limit: 功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        :param limit: 功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
         :type limit: int
         :param id: DNAT规则的ID。
         :type id: str
         :param description: DNAT规则的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
         :param created_at: DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
-        :type created_at: str
+        :type created_at: datetime
         :param nat_gateway_id: 公网NAT网关实例的ID。
         :type nat_gateway_id: list[str]
         :param port_id: 虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
@@ -92,8 +100,10 @@ class ListNatGatewayDnatRulesRequest:
         self._admin_state_up = None
         self._external_service_port = None
         self._floating_ip_address = None
+        self._global_eip_address = None
         self._status = None
         self._floating_ip_id = None
+        self._global_eip_id = None
         self._internal_service_port = None
         self._limit = None
         self._id = None
@@ -112,10 +122,14 @@ class ListNatGatewayDnatRulesRequest:
             self.external_service_port = external_service_port
         if floating_ip_address is not None:
             self.floating_ip_address = floating_ip_address
+        if global_eip_address is not None:
+            self.global_eip_address = global_eip_address
         if status is not None:
             self.status = status
         if floating_ip_id is not None:
             self.floating_ip_id = floating_ip_id
+        if global_eip_id is not None:
+            self.global_eip_id = global_eip_id
         if internal_service_port is not None:
             self.internal_service_port = internal_service_port
         if limit is not None:
@@ -204,10 +218,32 @@ class ListNatGatewayDnatRulesRequest:
         self._floating_ip_address = floating_ip_address
 
     @property
+    def global_eip_address(self):
+        r"""Gets the global_eip_address of this ListNatGatewayDnatRulesRequest.
+
+        全域弹性公网的IP地址。
+
+        :return: The global_eip_address of this ListNatGatewayDnatRulesRequest.
+        :rtype: str
+        """
+        return self._global_eip_address
+
+    @global_eip_address.setter
+    def global_eip_address(self, global_eip_address):
+        r"""Sets the global_eip_address of this ListNatGatewayDnatRulesRequest.
+
+        全域弹性公网的IP地址。
+
+        :param global_eip_address: The global_eip_address of this ListNatGatewayDnatRulesRequest.
+        :type global_eip_address: str
+        """
+        self._global_eip_address = global_eip_address
+
+    @property
     def status(self):
         r"""Gets the status of this ListNatGatewayDnatRulesRequest.
 
-        DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
+        DNAT规则的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 EIP_FREEZED: EIP冻结 INACTIVE: 不可用
 
         :return: The status of this ListNatGatewayDnatRulesRequest.
         :rtype: list[str]
@@ -218,7 +254,7 @@ class ListNatGatewayDnatRulesRequest:
     def status(self, status):
         r"""Sets the status of this ListNatGatewayDnatRulesRequest.
 
-        DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
+        DNAT规则的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 EIP_FREEZED: EIP冻结 INACTIVE: 不可用
 
         :param status: The status of this ListNatGatewayDnatRulesRequest.
         :type status: list[str]
@@ -248,6 +284,28 @@ class ListNatGatewayDnatRulesRequest:
         self._floating_ip_id = floating_ip_id
 
     @property
+    def global_eip_id(self):
+        r"""Gets the global_eip_id of this ListNatGatewayDnatRulesRequest.
+
+        全域弹性公网IP的id。
+
+        :return: The global_eip_id of this ListNatGatewayDnatRulesRequest.
+        :rtype: str
+        """
+        return self._global_eip_id
+
+    @global_eip_id.setter
+    def global_eip_id(self, global_eip_id):
+        r"""Sets the global_eip_id of this ListNatGatewayDnatRulesRequest.
+
+        全域弹性公网IP的id。
+
+        :param global_eip_id: The global_eip_id of this ListNatGatewayDnatRulesRequest.
+        :type global_eip_id: str
+        """
+        self._global_eip_id = global_eip_id
+
+    @property
     def internal_service_port(self):
         r"""Gets the internal_service_port of this ListNatGatewayDnatRulesRequest.
 
@@ -273,7 +331,7 @@ class ListNatGatewayDnatRulesRequest:
     def limit(self):
         r"""Gets the limit of this ListNatGatewayDnatRulesRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :return: The limit of this ListNatGatewayDnatRulesRequest.
         :rtype: int
@@ -284,7 +342,7 @@ class ListNatGatewayDnatRulesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListNatGatewayDnatRulesRequest.
 
-        功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
+        功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000。
 
         :param limit: The limit of this ListNatGatewayDnatRulesRequest.
         :type limit: int
@@ -342,7 +400,7 @@ class ListNatGatewayDnatRulesRequest:
         DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :return: The created_at of this ListNatGatewayDnatRulesRequest.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -353,7 +411,7 @@ class ListNatGatewayDnatRulesRequest:
         DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :param created_at: The created_at of this ListNatGatewayDnatRulesRequest.
-        :type created_at: str
+        :type created_at: datetime
         """
         self._created_at = created_at
 

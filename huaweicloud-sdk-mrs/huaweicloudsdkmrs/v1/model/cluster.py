@@ -82,7 +82,8 @@ class Cluster:
         'task_node_groups': 'list[NodeGroupV10]',
         'eip_id': 'str',
         'eip_address': 'str',
-        'eipv6_address': 'str'
+        'eipv6_address': 'str',
+        'az_category': 'int'
     }
 
     attribute_map = {
@@ -153,10 +154,11 @@ class Cluster:
         'task_node_groups': 'taskNodeGroups',
         'eip_id': 'eipId',
         'eip_address': 'eipAddress',
-        'eipv6_address': 'eipv6Address'
+        'eipv6_address': 'eipv6Address',
+        'az_category': 'azCategory'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None, total_node_num=None, cluster_state=None, stage_desc=None, create_at=None, update_at=None, charging_start_time=None, billing_type=None, data_center=None, vpc=None, vpc_id=None, duration=None, fee=None, hadoop_version=None, component_list=None, external_ip=None, external_alternate_ip=None, internal_ip=None, deployment_id=None, remark=None, order_id=None, az_id=None, az_name=None, az_code=None, availability_zone_id=None, instance_id=None, vnc=None, tenant_id=None, volume_size=None, volume_type=None, subnet_id=None, subnet_name=None, security_groups_id=None, slave_security_groups_id=None, bootstrap_scripts=None, safe_mode=None, cluster_version=None, node_public_cert_name=None, master_node_ip=None, private_ip_first=None, error_info=None, tags=None, master_node_num=None, core_node_num=None, master_node_size=None, core_node_size=None, master_node_product_id=None, master_node_spec_id=None, core_node_product_id=None, core_node_spec_id=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, enterprise_project_id=None, is_mrs_manager_finish=None, cluster_type=None, log_collection=None, period_type=None, scale=None, node_groups=None, task_node_groups=None, eip_id=None, eip_address=None, eipv6_address=None):
+    def __init__(self, cluster_id=None, cluster_name=None, total_node_num=None, cluster_state=None, stage_desc=None, create_at=None, update_at=None, charging_start_time=None, billing_type=None, data_center=None, vpc=None, vpc_id=None, duration=None, fee=None, hadoop_version=None, component_list=None, external_ip=None, external_alternate_ip=None, internal_ip=None, deployment_id=None, remark=None, order_id=None, az_id=None, az_name=None, az_code=None, availability_zone_id=None, instance_id=None, vnc=None, tenant_id=None, volume_size=None, volume_type=None, subnet_id=None, subnet_name=None, security_groups_id=None, slave_security_groups_id=None, bootstrap_scripts=None, safe_mode=None, cluster_version=None, node_public_cert_name=None, master_node_ip=None, private_ip_first=None, error_info=None, tags=None, master_node_num=None, core_node_num=None, master_node_size=None, core_node_size=None, master_node_product_id=None, master_node_spec_id=None, core_node_product_id=None, core_node_spec_id=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, enterprise_project_id=None, is_mrs_manager_finish=None, cluster_type=None, log_collection=None, period_type=None, scale=None, node_groups=None, task_node_groups=None, eip_id=None, eip_address=None, eipv6_address=None, az_category=None):
         r"""Cluster
 
         The model defined in huaweicloud sdk
@@ -297,6 +299,8 @@ class Cluster:
         :type eip_address: str
         :param eipv6_address: 集群弹性公网ip的IPV6地址，IPv4时无此字段。
         :type eipv6_address: str
+        :param az_category: 表示当前可用区的类型。 - 0：大云主可用区 - 21：本地可用区 - 41：边缘可用区
+        :type az_category: int
         """
         
         
@@ -369,6 +373,7 @@ class Cluster:
         self._eip_id = None
         self._eip_address = None
         self._eipv6_address = None
+        self._az_category = None
         self.discriminator = None
 
         if cluster_id is not None:
@@ -507,6 +512,8 @@ class Cluster:
             self.eip_address = eip_address
         if eipv6_address is not None:
             self.eipv6_address = eipv6_address
+        if az_category is not None:
+            self.az_category = az_category
 
     @property
     def cluster_id(self):
@@ -2003,6 +2010,28 @@ class Cluster:
         :type eipv6_address: str
         """
         self._eipv6_address = eipv6_address
+
+    @property
+    def az_category(self):
+        r"""Gets the az_category of this Cluster.
+
+        表示当前可用区的类型。 - 0：大云主可用区 - 21：本地可用区 - 41：边缘可用区
+
+        :return: The az_category of this Cluster.
+        :rtype: int
+        """
+        return self._az_category
+
+    @az_category.setter
+    def az_category(self, az_category):
+        r"""Sets the az_category of this Cluster.
+
+        表示当前可用区的类型。 - 0：大云主可用区 - 21：本地可用区 - 41：边缘可用区
+
+        :param az_category: The az_category of this Cluster.
+        :type az_category: int
+        """
+        self._az_category = az_category
 
     def to_dict(self):
         result = {}

@@ -39,9 +39,9 @@ class ListScheduledTasksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_name: 任务名称，默认为空。对应取值如下：  \&quot;RESIZE_FLAVOR\&quot;：变更实例的CPU和内存规格
+        :param job_name: 任务名称，默认为空。对应取值如下： \&quot;RESIZE_FLAVOR\&quot;：变更实例的CPU和内存规格
         :type job_name: str
-        :param job_status: 任务执行状态，默认为空。 取值：  值为\&quot;Pending\&quot;，表示任务未执行。  值为\&quot;Running\&quot;，表示任务正在执行。  值为\&quot;Completed\&quot;，表示任务执行成功。  值为\&quot;Failed\&quot;，表示任务执行失败。  值为\&quot;Canceled\&quot;，表示任务取消执行。
+        :param job_status: 任务执行状态，默认为空。 取值： - 值为\&quot;Pending\&quot;，表示任务未执行。 - 值为\&quot;Running\&quot;，表示任务正在执行。 - 值为\&quot;Completed\&quot;，表示任务执行成功。 - 值为\&quot;Failed\&quot;，表示任务执行失败。 - 值为\&quot;Canceled\&quot;，表示任务取消执行。
         :type job_status: str
         :param instance_id: 实例ID，不传该值默认查所有符合条件的实例。
         :type instance_id: str
@@ -85,7 +85,7 @@ class ListScheduledTasksRequest:
     def job_name(self):
         r"""Gets the job_name of this ListScheduledTasksRequest.
 
-        任务名称，默认为空。对应取值如下：  \"RESIZE_FLAVOR\"：变更实例的CPU和内存规格
+        任务名称，默认为空。对应取值如下： \"RESIZE_FLAVOR\"：变更实例的CPU和内存规格
 
         :return: The job_name of this ListScheduledTasksRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ListScheduledTasksRequest:
     def job_name(self, job_name):
         r"""Sets the job_name of this ListScheduledTasksRequest.
 
-        任务名称，默认为空。对应取值如下：  \"RESIZE_FLAVOR\"：变更实例的CPU和内存规格
+        任务名称，默认为空。对应取值如下： \"RESIZE_FLAVOR\"：变更实例的CPU和内存规格
 
         :param job_name: The job_name of this ListScheduledTasksRequest.
         :type job_name: str
@@ -107,7 +107,7 @@ class ListScheduledTasksRequest:
     def job_status(self):
         r"""Gets the job_status of this ListScheduledTasksRequest.
 
-        任务执行状态，默认为空。 取值：  值为\"Pending\"，表示任务未执行。  值为\"Running\"，表示任务正在执行。  值为\"Completed\"，表示任务执行成功。  值为\"Failed\"，表示任务执行失败。  值为\"Canceled\"，表示任务取消执行。
+        任务执行状态，默认为空。 取值： - 值为\"Pending\"，表示任务未执行。 - 值为\"Running\"，表示任务正在执行。 - 值为\"Completed\"，表示任务执行成功。 - 值为\"Failed\"，表示任务执行失败。 - 值为\"Canceled\"，表示任务取消执行。
 
         :return: The job_status of this ListScheduledTasksRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ListScheduledTasksRequest:
     def job_status(self, job_status):
         r"""Sets the job_status of this ListScheduledTasksRequest.
 
-        任务执行状态，默认为空。 取值：  值为\"Pending\"，表示任务未执行。  值为\"Running\"，表示任务正在执行。  值为\"Completed\"，表示任务执行成功。  值为\"Failed\"，表示任务执行失败。  值为\"Canceled\"，表示任务取消执行。
+        任务执行状态，默认为空。 取值： - 值为\"Pending\"，表示任务未执行。 - 值为\"Running\"，表示任务正在执行。 - 值为\"Completed\"，表示任务执行成功。 - 值为\"Failed\"，表示任务执行失败。 - 值为\"Canceled\"，表示任务取消执行。
 
         :param job_status: The job_status of this ListScheduledTasksRequest.
         :type job_status: str

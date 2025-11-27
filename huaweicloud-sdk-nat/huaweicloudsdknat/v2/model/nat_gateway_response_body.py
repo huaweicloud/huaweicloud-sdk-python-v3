@@ -22,7 +22,7 @@ class NatGatewayResponseBody:
         'spec': 'str',
         'status': 'str',
         'admin_state_up': 'bool',
-        'created_at': 'str',
+        'created_at': 'datetime',
         'router_id': 'str',
         'internal_network_id': 'str',
         'enterprise_project_id': 'str',
@@ -30,7 +30,9 @@ class NatGatewayResponseBody:
         'ngport_ip_address': 'str',
         'billing_info': 'str',
         'dnat_rules_limit': 'int',
-        'snat_rule_public_ip_limit': 'int'
+        'snat_rule_public_ip_limit': 'int',
+        'pps_max': 'int',
+        'bps_max': 'int'
     }
 
     attribute_map = {
@@ -49,10 +51,12 @@ class NatGatewayResponseBody:
         'ngport_ip_address': 'ngport_ip_address',
         'billing_info': 'billing_info',
         'dnat_rules_limit': 'dnat_rules_limit',
-        'snat_rule_public_ip_limit': 'snat_rule_public_ip_limit'
+        'snat_rule_public_ip_limit': 'snat_rule_public_ip_limit',
+        'pps_max': 'pps_max',
+        'bps_max': 'bps_max'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, spec=None, status=None, admin_state_up=None, created_at=None, router_id=None, internal_network_id=None, enterprise_project_id=None, session_conf=None, ngport_ip_address=None, billing_info=None, dnat_rules_limit=None, snat_rule_public_ip_limit=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, spec=None, status=None, admin_state_up=None, created_at=None, router_id=None, internal_network_id=None, enterprise_project_id=None, session_conf=None, ngport_ip_address=None, billing_info=None, dnat_rules_limit=None, snat_rule_public_ip_limit=None, pps_max=None, bps_max=None):
         r"""NatGatewayResponseBody
 
         The model defined in huaweicloud sdk
@@ -65,14 +69,14 @@ class NatGatewayResponseBody:
         :type name: str
         :param description: 公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
+        :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
         :type spec: str
-        :param status: 公网NAT网关实例的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;INACTIVE\&quot;：不可用
+        :param status: 公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
         :type status: str
         :param admin_state_up: 解冻/冻结状态。 取值范围： - \&quot;true\&quot;：解冻 - \&quot;false\&quot;：冻结
         :type admin_state_up: bool
-        :param created_at: 公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
-        :type created_at: str
+        :param created_at: 公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        :type created_at: datetime
         :param router_id: VPC的id。
         :type router_id: str
         :param internal_network_id: 公网NAT网关下行口（DVR的下一跳）所属的network id。
@@ -89,6 +93,10 @@ class NatGatewayResponseBody:
         :type dnat_rules_limit: int
         :param snat_rule_public_ip_limit: 公网NAT网关下SNAT规则EIP池中EIP数量限制，默认为20。
         :type snat_rule_public_ip_limit: int
+        :param pps_max: 网关每秒能够接收或发送的数据包数量，代表网络设备的流量处理能力。
+        :type pps_max: int
+        :param bps_max: 网关每秒能够接收或发送的带宽大小，代表网络设备的流量处理能力。单位M
+        :type bps_max: int
         """
         
         
@@ -109,24 +117,46 @@ class NatGatewayResponseBody:
         self._billing_info = None
         self._dnat_rules_limit = None
         self._snat_rule_public_ip_limit = None
+        self._pps_max = None
+        self._bps_max = None
         self.discriminator = None
 
-        self.id = id
-        self.tenant_id = tenant_id
-        self.name = name
-        self.description = description
-        self.spec = spec
-        self.status = status
-        self.admin_state_up = admin_state_up
-        self.created_at = created_at
-        self.router_id = router_id
-        self.internal_network_id = internal_network_id
-        self.enterprise_project_id = enterprise_project_id
-        self.session_conf = session_conf
-        self.ngport_ip_address = ngport_ip_address
-        self.billing_info = billing_info
-        self.dnat_rules_limit = dnat_rules_limit
-        self.snat_rule_public_ip_limit = snat_rule_public_ip_limit
+        if id is not None:
+            self.id = id
+        if tenant_id is not None:
+            self.tenant_id = tenant_id
+        if name is not None:
+            self.name = name
+        if description is not None:
+            self.description = description
+        if spec is not None:
+            self.spec = spec
+        if status is not None:
+            self.status = status
+        if admin_state_up is not None:
+            self.admin_state_up = admin_state_up
+        if created_at is not None:
+            self.created_at = created_at
+        if router_id is not None:
+            self.router_id = router_id
+        if internal_network_id is not None:
+            self.internal_network_id = internal_network_id
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
+        if session_conf is not None:
+            self.session_conf = session_conf
+        if ngport_ip_address is not None:
+            self.ngport_ip_address = ngport_ip_address
+        if billing_info is not None:
+            self.billing_info = billing_info
+        if dnat_rules_limit is not None:
+            self.dnat_rules_limit = dnat_rules_limit
+        if snat_rule_public_ip_limit is not None:
+            self.snat_rule_public_ip_limit = snat_rule_public_ip_limit
+        if pps_max is not None:
+            self.pps_max = pps_max
+        if bps_max is not None:
+            self.bps_max = bps_max
 
     @property
     def id(self):
@@ -220,7 +250,7 @@ class NatGatewayResponseBody:
     def spec(self):
         r"""Gets the spec of this NatGatewayResponseBody.
 
-        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
+        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
 
         :return: The spec of this NatGatewayResponseBody.
         :rtype: str
@@ -231,7 +261,7 @@ class NatGatewayResponseBody:
     def spec(self, spec):
         r"""Sets the spec of this NatGatewayResponseBody.
 
-        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
+        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
 
         :param spec: The spec of this NatGatewayResponseBody.
         :type spec: str
@@ -242,7 +272,7 @@ class NatGatewayResponseBody:
     def status(self):
         r"""Gets the status of this NatGatewayResponseBody.
 
-        公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
+        公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
 
         :return: The status of this NatGatewayResponseBody.
         :rtype: str
@@ -253,7 +283,7 @@ class NatGatewayResponseBody:
     def status(self, status):
         r"""Sets the status of this NatGatewayResponseBody.
 
-        公网NAT网关实例的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"INACTIVE\"：不可用
+        公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
 
         :param status: The status of this NatGatewayResponseBody.
         :type status: str
@@ -286,10 +316,10 @@ class NatGatewayResponseBody:
     def created_at(self):
         r"""Gets the created_at of this NatGatewayResponseBody.
 
-        公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
+        公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :return: The created_at of this NatGatewayResponseBody.
-        :rtype: str
+        :rtype: datetime
         """
         return self._created_at
 
@@ -297,10 +327,10 @@ class NatGatewayResponseBody:
     def created_at(self, created_at):
         r"""Sets the created_at of this NatGatewayResponseBody.
 
-        公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
+        公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
 
         :param created_at: The created_at of this NatGatewayResponseBody.
-        :type created_at: str
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -475,6 +505,50 @@ class NatGatewayResponseBody:
         :type snat_rule_public_ip_limit: int
         """
         self._snat_rule_public_ip_limit = snat_rule_public_ip_limit
+
+    @property
+    def pps_max(self):
+        r"""Gets the pps_max of this NatGatewayResponseBody.
+
+        网关每秒能够接收或发送的数据包数量，代表网络设备的流量处理能力。
+
+        :return: The pps_max of this NatGatewayResponseBody.
+        :rtype: int
+        """
+        return self._pps_max
+
+    @pps_max.setter
+    def pps_max(self, pps_max):
+        r"""Sets the pps_max of this NatGatewayResponseBody.
+
+        网关每秒能够接收或发送的数据包数量，代表网络设备的流量处理能力。
+
+        :param pps_max: The pps_max of this NatGatewayResponseBody.
+        :type pps_max: int
+        """
+        self._pps_max = pps_max
+
+    @property
+    def bps_max(self):
+        r"""Gets the bps_max of this NatGatewayResponseBody.
+
+        网关每秒能够接收或发送的带宽大小，代表网络设备的流量处理能力。单位M
+
+        :return: The bps_max of this NatGatewayResponseBody.
+        :rtype: int
+        """
+        return self._bps_max
+
+    @bps_max.setter
+    def bps_max(self, bps_max):
+        r"""Sets the bps_max of this NatGatewayResponseBody.
+
+        网关每秒能够接收或发送的带宽大小，代表网络设备的流量处理能力。单位M
+
+        :param bps_max: The bps_max of this NatGatewayResponseBody.
+        :type bps_max: int
+        """
+        self._bps_max = bps_max
 
     def to_dict(self):
         result = {}

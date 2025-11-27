@@ -41,21 +41,21 @@ class ListTagResourceInstancesRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数（action为count时无此参数）如果action为filter默认为0,必须为数字，不能为负数。
+        :param offset: 索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数（action为count时无此参数）如果action为filter默认为0，必须为数字，不能为负数。
         :type offset: str
         :param limit: 查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1。
         :type limit: str
         :param action: 操作标识（仅限于filter，count）：filter（过滤），count(查询总条数) 如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可。
         :type action: str
-        :param matches: 搜索字段,key为要匹配的字段，如resource_name等。value为匹配的值。此字段为固定字典值。 根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索（不区分大小写），如果value为空字符串精确匹配。resource_id为精确匹配。第一期只做resource_name，后续在扩展。
+        :param matches: 搜索字段,key为要匹配的字段，如resource_name等。value为匹配的值。此字段为固定字典值。 根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索（不区分大小写），如果value为空字符串精确匹配。resource_id为精确匹配。第一期只做resource_name，后续再扩展。
         :type matches: list[:class:`huaweicloudsdknat.v2.Match`]
-        :param not_tags: 不包含标签，最多包含10个key，每个key下面的value最多10个, 结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
+        :param not_tags: 不包含标签，最多包含20个key，每个key下面的value最多20个, 结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
         :type not_tags: list[:class:`huaweicloudsdknat.v2.Tags`]
-        :param tags: 包含标签，最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
+        :param tags: 包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
         :type tags: list[:class:`huaweicloudsdknat.v2.Tags`]
-        :param tags_any: 包含任意标签，最多包含10个key，每个key下面的value最多10个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
+        :param tags_any: 包含任意标签，最多包含20个key，每个key下面的value最多20个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
         :type tags_any: list[:class:`huaweicloudsdknat.v2.Tags`]
-        :param not_tags_any: 不包含任意标签，最多包含10个key，每个key下面的value最多10个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
+        :param not_tags_any: 不包含任意标签，最多包含20个key，每个key下面的value最多20个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
         :type not_tags_any: list[:class:`huaweicloudsdknat.v2.Tags`]
         """
         
@@ -91,7 +91,7 @@ class ListTagResourceInstancesRequestBody:
     def offset(self):
         r"""Gets the offset of this ListTagResourceInstancesRequestBody.
 
-        索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数（action为count时无此参数）如果action为filter默认为0,必须为数字，不能为负数。
+        索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数（action为count时无此参数）如果action为filter默认为0，必须为数字，不能为负数。
 
         :return: The offset of this ListTagResourceInstancesRequestBody.
         :rtype: str
@@ -102,7 +102,7 @@ class ListTagResourceInstancesRequestBody:
     def offset(self, offset):
         r"""Sets the offset of this ListTagResourceInstancesRequestBody.
 
-        索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数（action为count时无此参数）如果action为filter默认为0,必须为数字，不能为负数。
+        索引位置， 从offset指定的下一条数据开始查询。 查询第一页数据时，不需要传入此参数，查询后续页码数据时，将查询前一页数据时响应体中的值带入此参数（action为count时无此参数）如果action为filter默认为0，必须为数字，不能为负数。
 
         :param offset: The offset of this ListTagResourceInstancesRequestBody.
         :type offset: str
@@ -157,7 +157,7 @@ class ListTagResourceInstancesRequestBody:
     def matches(self):
         r"""Gets the matches of this ListTagResourceInstancesRequestBody.
 
-        搜索字段,key为要匹配的字段，如resource_name等。value为匹配的值。此字段为固定字典值。 根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索（不区分大小写），如果value为空字符串精确匹配。resource_id为精确匹配。第一期只做resource_name，后续在扩展。
+        搜索字段,key为要匹配的字段，如resource_name等。value为匹配的值。此字段为固定字典值。 根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索（不区分大小写），如果value为空字符串精确匹配。resource_id为精确匹配。第一期只做resource_name，后续再扩展。
 
         :return: The matches of this ListTagResourceInstancesRequestBody.
         :rtype: list[:class:`huaweicloudsdknat.v2.Match`]
@@ -168,7 +168,7 @@ class ListTagResourceInstancesRequestBody:
     def matches(self, matches):
         r"""Sets the matches of this ListTagResourceInstancesRequestBody.
 
-        搜索字段,key为要匹配的字段，如resource_name等。value为匹配的值。此字段为固定字典值。 根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索（不区分大小写），如果value为空字符串精确匹配。resource_id为精确匹配。第一期只做resource_name，后续在扩展。
+        搜索字段,key为要匹配的字段，如resource_name等。value为匹配的值。此字段为固定字典值。 根据不同的字段确认是否需要模糊匹配，如resource_name默认为模糊搜索（不区分大小写），如果value为空字符串精确匹配。resource_id为精确匹配。第一期只做resource_name，后续再扩展。
 
         :param matches: The matches of this ListTagResourceInstancesRequestBody.
         :type matches: list[:class:`huaweicloudsdknat.v2.Match`]
@@ -179,7 +179,7 @@ class ListTagResourceInstancesRequestBody:
     def not_tags(self):
         r"""Gets the not_tags of this ListTagResourceInstancesRequestBody.
 
-        不包含标签，最多包含10个key，每个key下面的value最多10个, 结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
+        不包含标签，最多包含20个key，每个key下面的value最多20个, 结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
         :return: The not_tags of this ListTagResourceInstancesRequestBody.
         :rtype: list[:class:`huaweicloudsdknat.v2.Tags`]
@@ -190,7 +190,7 @@ class ListTagResourceInstancesRequestBody:
     def not_tags(self, not_tags):
         r"""Sets the not_tags of this ListTagResourceInstancesRequestBody.
 
-        不包含标签，最多包含10个key，每个key下面的value最多10个, 结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
+        不包含标签，最多包含20个key，每个key下面的value最多20个, 结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
         :param not_tags: The not_tags of this ListTagResourceInstancesRequestBody.
         :type not_tags: list[:class:`huaweicloudsdknat.v2.Tags`]
@@ -201,7 +201,7 @@ class ListTagResourceInstancesRequestBody:
     def tags(self):
         r"""Gets the tags of this ListTagResourceInstancesRequestBody.
 
-        包含标签，最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
+        包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 
         :return: The tags of this ListTagResourceInstancesRequestBody.
         :rtype: list[:class:`huaweicloudsdknat.v2.Tags`]
@@ -212,7 +212,7 @@ class ListTagResourceInstancesRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this ListTagResourceInstancesRequestBody.
 
-        包含标签，最多包含10个key，每个key下面的value最多10个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
+        包含标签，最多包含20个key，每个key下面的value最多20个，结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。无tag过滤条件时返回全量数据。
 
         :param tags: The tags of this ListTagResourceInstancesRequestBody.
         :type tags: list[:class:`huaweicloudsdknat.v2.Tags`]
@@ -223,7 +223,7 @@ class ListTagResourceInstancesRequestBody:
     def tags_any(self):
         r"""Gets the tags_any of this ListTagResourceInstancesRequestBody.
 
-        包含任意标签，最多包含10个key，每个key下面的value最多10个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
+        包含任意标签，最多包含20个key，每个key下面的value最多20个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
         :return: The tags_any of this ListTagResourceInstancesRequestBody.
         :rtype: list[:class:`huaweicloudsdknat.v2.Tags`]
@@ -234,7 +234,7 @@ class ListTagResourceInstancesRequestBody:
     def tags_any(self, tags_any):
         r"""Sets the tags_any of this ListTagResourceInstancesRequestBody.
 
-        包含任意标签，最多包含10个key，每个key下面的value最多10个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
+        包含任意标签，最多包含20个key，每个key下面的value最多20个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
         :param tags_any: The tags_any of this ListTagResourceInstancesRequestBody.
         :type tags_any: list[:class:`huaweicloudsdknat.v2.Tags`]
@@ -245,7 +245,7 @@ class ListTagResourceInstancesRequestBody:
     def not_tags_any(self):
         r"""Gets the not_tags_any of this ListTagResourceInstancesRequestBody.
 
-        不包含任意标签，最多包含10个key，每个key下面的value最多10个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
+        不包含任意标签，最多包含20个key，每个key下面的value最多20个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
         :return: The not_tags_any of this ListTagResourceInstancesRequestBody.
         :rtype: list[:class:`huaweicloudsdknat.v2.Tags`]
@@ -256,7 +256,7 @@ class ListTagResourceInstancesRequestBody:
     def not_tags_any(self, not_tags_any):
         r"""Sets the not_tags_any of this ListTagResourceInstancesRequestBody.
 
-        不包含任意标签，最多包含10个key，每个key下面的value最多10个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
+        不包含任意标签，最多包含20个key，每个key下面的value最多20个,结构体不能缺失，key不能为空或者空字符串。Key不能重复，同一个key中values不能重复。返回不包含任意标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。无过滤条件时返回全量数据。
 
         :param not_tags_any: The not_tags_any of this ListTagResourceInstancesRequestBody.
         :type not_tags_any: list[:class:`huaweicloudsdknat.v2.Tags`]

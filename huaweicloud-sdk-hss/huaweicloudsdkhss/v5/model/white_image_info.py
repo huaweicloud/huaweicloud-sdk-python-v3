@@ -31,11 +31,11 @@ class WhiteImageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释**： 集群ID **取值范围**： 不涉及 
         :type cluster_id: str
-        :param image_name: 镜像名称
+        :param image_name: **参数解释**： 镜像名称 **取值范围**： 不涉及 
         :type image_name: str
-        :param image_version: 镜像版本
+        :param image_version: **参数解释**： 镜像版本 **取值范围**： 不涉及 
         :type image_version: str
         """
         
@@ -54,7 +54,7 @@ class WhiteImageInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this WhiteImageInfo.
 
-        集群ID
+        **参数解释**： 集群ID **取值范围**： 不涉及 
 
         :return: The cluster_id of this WhiteImageInfo.
         :rtype: str
@@ -65,7 +65,7 @@ class WhiteImageInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this WhiteImageInfo.
 
-        集群ID
+        **参数解释**： 集群ID **取值范围**： 不涉及 
 
         :param cluster_id: The cluster_id of this WhiteImageInfo.
         :type cluster_id: str
@@ -76,7 +76,7 @@ class WhiteImageInfo:
     def image_name(self):
         r"""Gets the image_name of this WhiteImageInfo.
 
-        镜像名称
+        **参数解释**： 镜像名称 **取值范围**： 不涉及 
 
         :return: The image_name of this WhiteImageInfo.
         :rtype: str
@@ -87,7 +87,7 @@ class WhiteImageInfo:
     def image_name(self, image_name):
         r"""Sets the image_name of this WhiteImageInfo.
 
-        镜像名称
+        **参数解释**： 镜像名称 **取值范围**： 不涉及 
 
         :param image_name: The image_name of this WhiteImageInfo.
         :type image_name: str
@@ -98,7 +98,7 @@ class WhiteImageInfo:
     def image_version(self):
         r"""Gets the image_version of this WhiteImageInfo.
 
-        镜像版本
+        **参数解释**： 镜像版本 **取值范围**： 不涉及 
 
         :return: The image_version of this WhiteImageInfo.
         :rtype: str
@@ -109,7 +109,7 @@ class WhiteImageInfo:
     def image_version(self, image_version):
         r"""Sets the image_version of this WhiteImageInfo.
 
-        镜像版本
+        **参数解释**： 镜像版本 **取值范围**： 不涉及 
 
         :param image_version: The image_version of this WhiteImageInfo.
         :type image_version: str

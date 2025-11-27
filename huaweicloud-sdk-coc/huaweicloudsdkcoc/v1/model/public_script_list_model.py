@@ -19,6 +19,7 @@ class PublicScriptListModel:
         'script_uuid': 'str',
         'name': 'str',
         'type': 'str',
+        'status': 'str',
         'gmt_created': 'int',
         'description': 'str',
         'properties': 'PublicScriptPropertiesModel'
@@ -29,12 +30,13 @@ class PublicScriptListModel:
         'script_uuid': 'script_uuid',
         'name': 'name',
         'type': 'type',
+        'status': 'status',
         'gmt_created': 'gmt_created',
         'description': 'description',
         'properties': 'properties'
     }
 
-    def __init__(self, id=None, script_uuid=None, name=None, type=None, gmt_created=None, description=None, properties=None):
+    def __init__(self, id=None, script_uuid=None, name=None, type=None, status=None, gmt_created=None, description=None, properties=None):
         r"""PublicScriptListModel
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class PublicScriptListModel:
         :type name: str
         :param type: 脚本类型 SHELL:shell脚本 PYTHON:python脚本 BAT:bat脚本
         :type type: str
+        :param status: 脚本状态
+        :type status: str
         :param gmt_created: 创建时间
         :type gmt_created: int
         :param description: 脚本描述： 根据X-Language(X-Language) 进行国际化
@@ -61,6 +65,7 @@ class PublicScriptListModel:
         self._script_uuid = None
         self._name = None
         self._type = None
+        self._status = None
         self._gmt_created = None
         self._description = None
         self._properties = None
@@ -70,6 +75,8 @@ class PublicScriptListModel:
         self.script_uuid = script_uuid
         self.name = name
         self.type = type
+        if status is not None:
+            self.status = status
         self.gmt_created = gmt_created
         self.description = description
         self.properties = properties
@@ -161,6 +168,28 @@ class PublicScriptListModel:
         :type type: str
         """
         self._type = type
+
+    @property
+    def status(self):
+        r"""Gets the status of this PublicScriptListModel.
+
+        脚本状态
+
+        :return: The status of this PublicScriptListModel.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this PublicScriptListModel.
+
+        脚本状态
+
+        :param status: The status of this PublicScriptListModel.
+        :type status: str
+        """
+        self._status = status
 
     @property
     def gmt_created(self):

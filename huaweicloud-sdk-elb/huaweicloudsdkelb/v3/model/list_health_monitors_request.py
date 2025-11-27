@@ -85,7 +85,7 @@ class ListHealthMonitorsRequest:
         :type timeout: int
         :param type: **参数解释**：健康检查请求协议。 支持多值查询，查询条件格式：*****type&#x3D;xxx&amp;type&#x3D;xxx*****。  **约束限制**：不涉及  **取值范围**：TCP、UDP_CONNECT、HTTP、HTTPS、TLS和GRPC。  **默认取值**：不涉及
         :type type: list[str]
-        :param expected_codes: **参数解释**：期望响应状态码。 支持多值查询，查询条件格式：****expected_codes&#x3D;xxx&amp;expected_codes&#x3D;xxx****。  **约束限制**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  **取值范围**：不涉及  **默认取值**：不涉及
+        :param expected_codes: **参数解释**：期望响应状态码。 支持多值查询，查询条件格式：****expected_codes&#x3D;xxx&amp;expected_codes&#x3D;xxx****。  **约束限制**：不涉及  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  **默认取值**：不涉及
         :type expected_codes: list[str]
         :param url_path: **参数解释**：健康检查测试member健康时发送的http请求路径。 支持多值查询，查询条件格式：***url_path&#x3D;xxx&amp;url_path&#x3D;xxx***。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type url_path: list[str]
@@ -441,7 +441,7 @@ class ListHealthMonitorsRequest:
     def expected_codes(self):
         r"""Gets the expected_codes of this ListHealthMonitorsRequest.
 
-        **参数解释**：期望响应状态码。 支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。  **约束限制**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：期望响应状态码。 支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。  **约束限制**：不涉及  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  **默认取值**：不涉及
 
         :return: The expected_codes of this ListHealthMonitorsRequest.
         :rtype: list[str]
@@ -452,7 +452,7 @@ class ListHealthMonitorsRequest:
     def expected_codes(self, expected_codes):
         r"""Sets the expected_codes of this ListHealthMonitorsRequest.
 
-        **参数解释**：期望响应状态码。 支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。  **约束限制**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：期望响应状态码。 支持多值查询，查询条件格式：****expected_codes=xxx&expected_codes=xxx****。  **约束限制**：不涉及  **取值范围**： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。  **默认取值**：不涉及
 
         :param expected_codes: The expected_codes of this ListHealthMonitorsRequest.
         :type expected_codes: list[str]

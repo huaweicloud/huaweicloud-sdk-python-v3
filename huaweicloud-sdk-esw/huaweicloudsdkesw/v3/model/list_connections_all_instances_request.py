@@ -19,7 +19,9 @@ class ListConnectionsAllInstancesRequest:
         'name': 'str',
         'instance_id': 'str',
         'vpc_id': 'str',
-        'virsubnet_id': 'str'
+        'virsubnet_id': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
@@ -27,10 +29,12 @@ class ListConnectionsAllInstancesRequest:
         'name': 'name',
         'instance_id': 'instance_id',
         'vpc_id': 'vpc_id',
-        'virsubnet_id': 'virsubnet_id'
+        'virsubnet_id': 'virsubnet_id',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, id=None, name=None, instance_id=None, vpc_id=None, virsubnet_id=None):
+    def __init__(self, id=None, name=None, instance_id=None, vpc_id=None, virsubnet_id=None, limit=None, marker=None):
         r"""ListConnectionsAllInstancesRequest
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class ListConnectionsAllInstancesRequest:
         :type vpc_id: str
         :param virsubnet_id: - 参数解释：二层连接关联的二层子网ID。 - 约束限制：   - 需要使用本租户下可操作的子网资源的ID；此值即为子网详情中的“网络ID”参数值。   - 带“-”的UUID格式。 - 取值范围：不涉及。 - 默认取值：不涉及。
         :type virsubnet_id: str
+        :param limit: - 参数解释：分页查询每页返回的记录个数。 - 约束限制：limit需要和marker配合使用，详细规则请见marker的参数说明。 - 取值范围：0~2^31-1。 - 默认取值：2000。
+        :type limit: int
+        :param marker: - 参数解释：分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 约束限制：marker需要和limit配合使用。   - 若不传入marker和limit参数，查询结果返回第一页全部资源记录。   - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。   - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。   - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11~2000条（limit默认值2000）资源记录。 - 取值范围：不涉及。 - 默认取值：不涉及。
+        :type marker: str
         """
         
         
@@ -54,6 +62,8 @@ class ListConnectionsAllInstancesRequest:
         self._instance_id = None
         self._vpc_id = None
         self._virsubnet_id = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         if id is not None:
@@ -66,6 +76,10 @@ class ListConnectionsAllInstancesRequest:
             self.vpc_id = vpc_id
         if virsubnet_id is not None:
             self.virsubnet_id = virsubnet_id
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def id(self):
@@ -176,6 +190,50 @@ class ListConnectionsAllInstancesRequest:
         :type virsubnet_id: str
         """
         self._virsubnet_id = virsubnet_id
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListConnectionsAllInstancesRequest.
+
+        - 参数解释：分页查询每页返回的记录个数。 - 约束限制：limit需要和marker配合使用，详细规则请见marker的参数说明。 - 取值范围：0~2^31-1。 - 默认取值：2000。
+
+        :return: The limit of this ListConnectionsAllInstancesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListConnectionsAllInstancesRequest.
+
+        - 参数解释：分页查询每页返回的记录个数。 - 约束限制：limit需要和marker配合使用，详细规则请见marker的参数说明。 - 取值范围：0~2^31-1。 - 默认取值：2000。
+
+        :param limit: The limit of this ListConnectionsAllInstancesRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this ListConnectionsAllInstancesRequest.
+
+        - 参数解释：分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 约束限制：marker需要和limit配合使用。   - 若不传入marker和limit参数，查询结果返回第一页全部资源记录。   - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。   - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。   - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11~2000条（limit默认值2000）资源记录。 - 取值范围：不涉及。 - 默认取值：不涉及。
+
+        :return: The marker of this ListConnectionsAllInstancesRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this ListConnectionsAllInstancesRequest.
+
+        - 参数解释：分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 约束限制：marker需要和limit配合使用。   - 若不传入marker和limit参数，查询结果返回第一页全部资源记录。   - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。   - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。   - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11~2000条（limit默认值2000）资源记录。 - 取值范围：不涉及。 - 默认取值：不涉及。
+
+        :param marker: The marker of this ListConnectionsAllInstancesRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         result = {}

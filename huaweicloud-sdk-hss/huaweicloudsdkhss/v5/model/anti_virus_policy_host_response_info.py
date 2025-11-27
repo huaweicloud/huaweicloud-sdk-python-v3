@@ -43,7 +43,7 @@ class AntiVirusPolicyHostResponseInfo:
         :type private_ip: str
         :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
         :type public_ip: str
-        :param asset_value: 资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
         """
         
@@ -159,7 +159,7 @@ class AntiVirusPolicyHostResponseInfo:
     def asset_value(self):
         r"""Gets the asset_value of this AntiVirusPolicyHostResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :return: The asset_value of this AntiVirusPolicyHostResponseInfo.
         :rtype: str
@@ -170,7 +170,7 @@ class AntiVirusPolicyHostResponseInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this AntiVirusPolicyHostResponseInfo.
 
-        资产重要性，包含如下3种   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
 
         :param asset_value: The asset_value of this AntiVirusPolicyHostResponseInfo.
         :type asset_value: str
