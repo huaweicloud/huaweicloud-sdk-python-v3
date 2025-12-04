@@ -35,7 +35,7 @@ class CreatePrivacyRuleRequestBody:
 
         :param url: 隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;（星号）结尾代表路径前缀
         :type url: str
-        :param category: 屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
+        :param category: **参数解释：** 屏蔽字段 **约束限制：** 不涉及 **取值范围：**  - params: 请求参数  - cookie: 根据Cookie区分的Web访问者  - header: 自定义HTTP首部  - form: 表单参数  **默认取值：** 不涉及
         :type category: str
         :param index: 屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。屏蔽字段名的长度不能超过2048字节，且只能由数字、字母、下划线和中划线组成。
         :type index: str
@@ -83,7 +83,7 @@ class CreatePrivacyRuleRequestBody:
     def category(self):
         r"""Gets the category of this CreatePrivacyRuleRequestBody.
 
-        屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
+        **参数解释：** 屏蔽字段 **约束限制：** 不涉及 **取值范围：**  - params: 请求参数  - cookie: 根据Cookie区分的Web访问者  - header: 自定义HTTP首部  - form: 表单参数  **默认取值：** 不涉及
 
         :return: The category of this CreatePrivacyRuleRequestBody.
         :rtype: str
@@ -94,7 +94,7 @@ class CreatePrivacyRuleRequestBody:
     def category(self, category):
         r"""Sets the category of this CreatePrivacyRuleRequestBody.
 
-        屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
+        **参数解释：** 屏蔽字段 **约束限制：** 不涉及 **取值范围：**  - params: 请求参数  - cookie: 根据Cookie区分的Web访问者  - header: 自定义HTTP首部  - form: 表单参数  **默认取值：** 不涉及
 
         :param category: The category of this CreatePrivacyRuleRequestBody.
         :type category: str

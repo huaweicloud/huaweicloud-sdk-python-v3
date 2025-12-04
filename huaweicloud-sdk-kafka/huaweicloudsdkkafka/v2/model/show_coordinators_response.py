@@ -28,7 +28,7 @@ class ShowCoordinatorsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param coordinators: 所有消费组对应的协调器列表。
+        :param coordinators: **参数解释**： 所有消费组对应的协调器列表。
         :type coordinators: list[:class:`huaweicloudsdkkafka.v2.ShowCoordinatorsRespCoordinators`]
         """
         
@@ -44,7 +44,7 @@ class ShowCoordinatorsResponse(SdkResponse):
     def coordinators(self):
         r"""Gets the coordinators of this ShowCoordinatorsResponse.
 
-        所有消费组对应的协调器列表。
+        **参数解释**： 所有消费组对应的协调器列表。
 
         :return: The coordinators of this ShowCoordinatorsResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCoordinatorsRespCoordinators`]
@@ -55,7 +55,7 @@ class ShowCoordinatorsResponse(SdkResponse):
     def coordinators(self, coordinators):
         r"""Sets the coordinators of this ShowCoordinatorsResponse.
 
-        所有消费组对应的协调器列表。
+        **参数解释**： 所有消费组对应的协调器列表。
 
         :param coordinators: The coordinators of this ShowCoordinatorsResponse.
         :type coordinators: list[:class:`huaweicloudsdkkafka.v2.ShowCoordinatorsRespCoordinators`]

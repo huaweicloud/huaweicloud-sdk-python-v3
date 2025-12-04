@@ -17,15 +17,17 @@ class ListRepositoryTagResponse(SdkResponse):
 
     openapi_types = {
         'tags': 'list[ShowReposTagRespV3]',
-        'next_marker': 'str'
+        'next_marker': 'str',
+        'has_more': 'bool'
     }
 
     attribute_map = {
         'tags': 'tags',
-        'next_marker': 'nextMarker'
+        'next_marker': 'nextMarker',
+        'has_more': 'has_more'
     }
 
-    def __init__(self, tags=None, next_marker=None):
+    def __init__(self, tags=None, next_marker=None, has_more=None):
         r"""ListRepositoryTagResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class ListRepositoryTagResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkswr.v2.ShowReposTagRespV3`]
         :param next_marker: 下次分页查询时的起始位置。
         :type next_marker: str
+        :param has_more: 表示分页查询时是否还有下一页
+        :type has_more: bool
         """
         
         super().__init__()
 
         self._tags = None
         self._next_marker = None
+        self._has_more = None
         self.discriminator = None
 
         if tags is not None:
             self.tags = tags
         if next_marker is not None:
             self.next_marker = next_marker
+        if has_more is not None:
+            self.has_more = has_more
 
     @property
     def tags(self):
@@ -90,6 +97,28 @@ class ListRepositoryTagResponse(SdkResponse):
         :type next_marker: str
         """
         self._next_marker = next_marker
+
+    @property
+    def has_more(self):
+        r"""Gets the has_more of this ListRepositoryTagResponse.
+
+        表示分页查询时是否还有下一页
+
+        :return: The has_more of this ListRepositoryTagResponse.
+        :rtype: bool
+        """
+        return self._has_more
+
+    @has_more.setter
+    def has_more(self, has_more):
+        r"""Sets the has_more of this ListRepositoryTagResponse.
+
+        表示分页查询时是否还有下一页
+
+        :param has_more: The has_more of this ListRepositoryTagResponse.
+        :type has_more: bool
+        """
+        self._has_more = has_more
 
     def to_dict(self):
         import warnings

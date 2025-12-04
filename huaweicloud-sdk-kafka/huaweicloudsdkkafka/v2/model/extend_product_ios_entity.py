@@ -33,11 +33,11 @@ class ExtendProductIosEntity:
 
         The model defined in huaweicloud sdk
 
-        :param io_spec: 存储IO规格。
+        :param io_spec: **参数解释**： 存储IO规格。 **取值范围**： - dms.physical.storage.high.v2：高IO云硬盘。 - dms.physical.storage.ultra.v2：超高IO云硬盘。 - [dms.physical.storage.general：通用型SSD云硬盘。](tag:hws,hws_hk,dt,ax) - [dms.physical.storage.extreme：极速型SSD云硬盘。](tag:hws,hws_hk,dt,ax)
         :type io_spec: str
         :param available_zones: 有可用资源的可用区列表。
         :type available_zones: list[str]
-        :param type: IO类型。
+        :param type: **参数解释**： IO类型。 **取值范围**： evs
         :type type: str
         :param unavailable_zones: 资源售罄的可用区列表。
         :type unavailable_zones: list[str]
@@ -64,7 +64,7 @@ class ExtendProductIosEntity:
     def io_spec(self):
         r"""Gets the io_spec of this ExtendProductIosEntity.
 
-        存储IO规格。
+        **参数解释**： 存储IO规格。 **取值范围**： - dms.physical.storage.high.v2：高IO云硬盘。 - dms.physical.storage.ultra.v2：超高IO云硬盘。 - [dms.physical.storage.general：通用型SSD云硬盘。](tag:hws,hws_hk,dt,ax) - [dms.physical.storage.extreme：极速型SSD云硬盘。](tag:hws,hws_hk,dt,ax)
 
         :return: The io_spec of this ExtendProductIosEntity.
         :rtype: str
@@ -75,7 +75,7 @@ class ExtendProductIosEntity:
     def io_spec(self, io_spec):
         r"""Sets the io_spec of this ExtendProductIosEntity.
 
-        存储IO规格。
+        **参数解释**： 存储IO规格。 **取值范围**： - dms.physical.storage.high.v2：高IO云硬盘。 - dms.physical.storage.ultra.v2：超高IO云硬盘。 - [dms.physical.storage.general：通用型SSD云硬盘。](tag:hws,hws_hk,dt,ax) - [dms.physical.storage.extreme：极速型SSD云硬盘。](tag:hws,hws_hk,dt,ax)
 
         :param io_spec: The io_spec of this ExtendProductIosEntity.
         :type io_spec: str
@@ -108,7 +108,7 @@ class ExtendProductIosEntity:
     def type(self):
         r"""Gets the type of this ExtendProductIosEntity.
 
-        IO类型。
+        **参数解释**： IO类型。 **取值范围**： evs
 
         :return: The type of this ExtendProductIosEntity.
         :rtype: str
@@ -119,7 +119,7 @@ class ExtendProductIosEntity:
     def type(self, type):
         r"""Sets the type of this ExtendProductIosEntity.
 
-        IO类型。
+        **参数解释**： IO类型。 **取值范围**： evs
 
         :param type: The type of this ExtendProductIosEntity.
         :type type: str

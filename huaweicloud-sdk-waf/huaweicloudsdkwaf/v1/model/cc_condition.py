@@ -35,7 +35,7 @@ class CcCondition:
 
         The model defined in huaweicloud sdk
 
-        :param category: 字段类型
+        :param category: **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - ip  - ipv6  - asn  - params  - cookie  - referer  - user-agent  - header  - response_code  - response_header  - response_body  - request_body  - method  - tls_fingerprint  - tls_ja3_fingerprint  **默认取值：** 不涉及
         :type category: str
         :param logic_operation: 条件列表匹配逻辑。   -  如果字段类型category是url， 匹配逻辑可以为：contain、 not_contain、 equal、 not_equal、 prefix、 not_prefix、 suffix、 not_suffix、 contain_any、 not_contain_all、 equal_any、 not_equal_all、 equal_any、 not_equal_all、 prefix_any、 not_prefix_all、 suffix_any、 not_suffix_all、 len_greater、 len_less、len_equal或者len_not_equal   - 如果字段类型category是ip或者ipv6，匹配逻辑可以为： equal、not_equal、equal_any或者not_equal_all   - 如果字段类型category是params、cookie或者header, 匹配逻辑可以为：contain、 not_contain、 equal、 not_equal、 prefix、 not_prefix、 suffix、 not_suffix、 contain_any、 not_contain_all、 equal_any、not_equal_all、 equal_any、 not_equal_all、 prefix_any、 not_prefix_all、 suffix_any、 not_suffix_all、 len_greater、 len_less、len_equal、len_not_equal、、num_greater、num_less、num_equal、num_not_equal、exist或者not_exist
         :type logic_operation: str
@@ -69,7 +69,7 @@ class CcCondition:
     def category(self):
         r"""Gets the category of this CcCondition.
 
-        字段类型
+        **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - ip  - ipv6  - asn  - params  - cookie  - referer  - user-agent  - header  - response_code  - response_header  - response_body  - request_body  - method  - tls_fingerprint  - tls_ja3_fingerprint  **默认取值：** 不涉及
 
         :return: The category of this CcCondition.
         :rtype: str
@@ -80,7 +80,7 @@ class CcCondition:
     def category(self, category):
         r"""Sets the category of this CcCondition.
 
-        字段类型
+        **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - ip  - ipv6  - asn  - params  - cookie  - referer  - user-agent  - header  - response_code  - response_header  - response_body  - request_body  - method  - tls_fingerprint  - tls_ja3_fingerprint  **默认取值：** 不涉及
 
         :param category: The category of this CcCondition.
         :type category: str

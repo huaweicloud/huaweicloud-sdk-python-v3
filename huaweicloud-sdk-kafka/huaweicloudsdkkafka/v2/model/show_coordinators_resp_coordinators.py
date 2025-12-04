@@ -33,13 +33,13 @@ class ShowCoordinatorsRespCoordinators:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 消费组ID。
+        :param group_id: **参数解释**： 消费组ID。 **取值范围**： 不涉及。
         :type group_id: str
-        :param id: 对应协调器的broker id。
+        :param id: **参数解释**： 对应协调器的broker id。 **取值范围**： 不涉及。
         :type id: int
-        :param host: 对应协调器的地址。
+        :param host: **参数解释**： 对应协调器的地址。 **取值范围**： 不涉及。
         :type host: str
-        :param port: 端口号。
+        :param port: **参数解释**： 端口号。 **取值范围**： 不涉及。
         :type port: int
         """
         
@@ -64,7 +64,7 @@ class ShowCoordinatorsRespCoordinators:
     def group_id(self):
         r"""Gets the group_id of this ShowCoordinatorsRespCoordinators.
 
-        消费组ID。
+        **参数解释**： 消费组ID。 **取值范围**： 不涉及。
 
         :return: The group_id of this ShowCoordinatorsRespCoordinators.
         :rtype: str
@@ -75,7 +75,7 @@ class ShowCoordinatorsRespCoordinators:
     def group_id(self, group_id):
         r"""Sets the group_id of this ShowCoordinatorsRespCoordinators.
 
-        消费组ID。
+        **参数解释**： 消费组ID。 **取值范围**： 不涉及。
 
         :param group_id: The group_id of this ShowCoordinatorsRespCoordinators.
         :type group_id: str
@@ -86,7 +86,7 @@ class ShowCoordinatorsRespCoordinators:
     def id(self):
         r"""Gets the id of this ShowCoordinatorsRespCoordinators.
 
-        对应协调器的broker id。
+        **参数解释**： 对应协调器的broker id。 **取值范围**： 不涉及。
 
         :return: The id of this ShowCoordinatorsRespCoordinators.
         :rtype: int
@@ -97,7 +97,7 @@ class ShowCoordinatorsRespCoordinators:
     def id(self, id):
         r"""Sets the id of this ShowCoordinatorsRespCoordinators.
 
-        对应协调器的broker id。
+        **参数解释**： 对应协调器的broker id。 **取值范围**： 不涉及。
 
         :param id: The id of this ShowCoordinatorsRespCoordinators.
         :type id: int
@@ -108,7 +108,7 @@ class ShowCoordinatorsRespCoordinators:
     def host(self):
         r"""Gets the host of this ShowCoordinatorsRespCoordinators.
 
-        对应协调器的地址。
+        **参数解释**： 对应协调器的地址。 **取值范围**： 不涉及。
 
         :return: The host of this ShowCoordinatorsRespCoordinators.
         :rtype: str
@@ -119,7 +119,7 @@ class ShowCoordinatorsRespCoordinators:
     def host(self, host):
         r"""Sets the host of this ShowCoordinatorsRespCoordinators.
 
-        对应协调器的地址。
+        **参数解释**： 对应协调器的地址。 **取值范围**： 不涉及。
 
         :param host: The host of this ShowCoordinatorsRespCoordinators.
         :type host: str
@@ -130,7 +130,7 @@ class ShowCoordinatorsRespCoordinators:
     def port(self):
         r"""Gets the port of this ShowCoordinatorsRespCoordinators.
 
-        端口号。
+        **参数解释**： 端口号。 **取值范围**： 不涉及。
 
         :return: The port of this ShowCoordinatorsRespCoordinators.
         :rtype: int
@@ -141,7 +141,7 @@ class ShowCoordinatorsRespCoordinators:
     def port(self, port):
         r"""Sets the port of this ShowCoordinatorsRespCoordinators.
 
-        端口号。
+        **参数解释**： 端口号。 **取值范围**： 不涉及。
 
         :param port: The port of this ShowCoordinatorsRespCoordinators.
         :type port: int

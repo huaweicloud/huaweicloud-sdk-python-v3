@@ -29,7 +29,7 @@ class TriggerConfig:
 
         The model defined in huaweicloud sdk
 
-        :param type: 触发类型，镜像签名、老化规则只支持manual(手动)、scheduled(定时+手动)；同步策略支持manual(手动)、scheduled(定时+手动)、event_based(事件触发+手动)
+        :param type: 触发类型，老化规则只支持manual(手动)、scheduled(定时+手动)；同步策略支持manual(手动)、scheduled(定时+手动)、event_based(事件触发+手动);镜像签名支持manual(手动)、event_based(事件触发+手动)
         :type type: str
         :param trigger_settings: 
         :type trigger_settings: :class:`huaweicloudsdkswr.v2.TriggerSetting`
@@ -49,7 +49,7 @@ class TriggerConfig:
     def type(self):
         r"""Gets the type of this TriggerConfig.
 
-        触发类型，镜像签名、老化规则只支持manual(手动)、scheduled(定时+手动)；同步策略支持manual(手动)、scheduled(定时+手动)、event_based(事件触发+手动)
+        触发类型，老化规则只支持manual(手动)、scheduled(定时+手动)；同步策略支持manual(手动)、scheduled(定时+手动)、event_based(事件触发+手动);镜像签名支持manual(手动)、event_based(事件触发+手动)
 
         :return: The type of this TriggerConfig.
         :rtype: str
@@ -60,7 +60,7 @@ class TriggerConfig:
     def type(self, type):
         r"""Sets the type of this TriggerConfig.
 
-        触发类型，镜像签名、老化规则只支持manual(手动)、scheduled(定时+手动)；同步策略支持manual(手动)、scheduled(定时+手动)、event_based(事件触发+手动)
+        触发类型，老化规则只支持manual(手动)、scheduled(定时+手动)；同步策略支持manual(手动)、scheduled(定时+手动)、event_based(事件触发+手动);镜像签名支持manual(手动)、event_based(事件触发+手动)
 
         :param type: The type of this TriggerConfig.
         :type type: str

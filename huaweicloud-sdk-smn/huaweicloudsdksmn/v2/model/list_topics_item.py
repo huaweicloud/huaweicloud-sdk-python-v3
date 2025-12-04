@@ -20,7 +20,9 @@ class ListTopicsItem:
         'display_name': 'str',
         'push_policy': 'int',
         'enterprise_project_id': 'str',
-        'topic_id': 'str'
+        'topic_id': 'str',
+        'create_time': 'str',
+        'update_time': 'str'
     }
 
     attribute_map = {
@@ -29,10 +31,12 @@ class ListTopicsItem:
         'display_name': 'display_name',
         'push_policy': 'push_policy',
         'enterprise_project_id': 'enterprise_project_id',
-        'topic_id': 'topic_id'
+        'topic_id': 'topic_id',
+        'create_time': 'create_time',
+        'update_time': 'update_time'
     }
 
-    def __init__(self, topic_urn=None, name=None, display_name=None, push_policy=None, enterprise_project_id=None, topic_id=None):
+    def __init__(self, topic_urn=None, name=None, display_name=None, push_policy=None, enterprise_project_id=None, topic_id=None, create_time=None, update_time=None):
         r"""ListTopicsItem
 
         The model defined in huaweicloud sdk
@@ -49,6 +53,10 @@ class ListTopicsItem:
         :type enterprise_project_id: str
         :param topic_id: 主题ID。
         :type topic_id: str
+        :param create_time: 创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type create_time: str
+        :param update_time: 更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type update_time: str
         """
         
         
@@ -59,6 +67,8 @@ class ListTopicsItem:
         self._push_policy = None
         self._enterprise_project_id = None
         self._topic_id = None
+        self._create_time = None
+        self._update_time = None
         self.discriminator = None
 
         self.topic_urn = topic_urn
@@ -67,6 +77,8 @@ class ListTopicsItem:
         self.push_policy = push_policy
         self.enterprise_project_id = enterprise_project_id
         self.topic_id = topic_id
+        self.create_time = create_time
+        self.update_time = update_time
 
     @property
     def topic_urn(self):
@@ -199,6 +211,50 @@ class ListTopicsItem:
         :type topic_id: str
         """
         self._topic_id = topic_id
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this ListTopicsItem.
+
+        创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :return: The create_time of this ListTopicsItem.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this ListTopicsItem.
+
+        创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :param create_time: The create_time of this ListTopicsItem.
+        :type create_time: str
+        """
+        self._create_time = create_time
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this ListTopicsItem.
+
+        更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :return: The update_time of this ListTopicsItem.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this ListTopicsItem.
+
+        更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :param update_time: The update_time of this ListTopicsItem.
+        :type update_time: str
+        """
+        self._update_time = update_time
 
     def to_dict(self):
         result = {}

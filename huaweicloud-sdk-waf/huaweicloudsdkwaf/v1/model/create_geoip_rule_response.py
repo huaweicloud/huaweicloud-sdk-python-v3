@@ -54,7 +54,7 @@ class CreateGeoipRuleResponse(SdkResponse):
         :type geoip: str
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
-        :param status: 规则状态，0：关闭，1：开启
+        :param status: **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
         :type status: int
         :param ip_type: ip范围。若您的网站使用独享模式，请确认独享引擎是否全部升级到最新版本，避免造成异常。202412之后的版本支持配置IP范围
         :type ip_type: str
@@ -210,7 +210,7 @@ class CreateGeoipRuleResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this CreateGeoipRuleResponse.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :return: The status of this CreateGeoipRuleResponse.
         :rtype: int
@@ -221,7 +221,7 @@ class CreateGeoipRuleResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this CreateGeoipRuleResponse.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :param status: The status of this CreateGeoipRuleResponse.
         :type status: int

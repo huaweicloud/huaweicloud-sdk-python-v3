@@ -20,6 +20,8 @@ class ListRepositoryTagRequest:
         'limit': 'int',
         'marker': 'str',
         'tag': 'str',
+        'order_column': 'str',
+        'order_type': 'str',
         'with_manifest': 'bool'
     }
 
@@ -29,10 +31,12 @@ class ListRepositoryTagRequest:
         'limit': 'limit',
         'marker': 'marker',
         'tag': 'tag',
+        'order_column': 'order_column',
+        'order_type': 'order_type',
         'with_manifest': 'with_manifest'
     }
 
-    def __init__(self, namespace=None, repository=None, limit=None, marker=None, tag=None, with_manifest=None):
+    def __init__(self, namespace=None, repository=None, limit=None, marker=None, tag=None, order_column=None, order_type=None, with_manifest=None):
         r"""ListRepositoryTagRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +51,10 @@ class ListRepositoryTagRequest:
         :type marker: str
         :param tag: 镜像版本名。
         :type tag: str
+        :param order_column: 按列排序，可设置为updated_at（按更新时间排序）或者tag（按照镜像版本排序）。注意：order_column和order_type参数需要配套使用。
+        :type order_column: str
+        :param order_type: 排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
+        :type order_type: str
         :param with_manifest: 是否返回镜像的manifest信息
         :type with_manifest: bool
         """
@@ -58,6 +66,8 @@ class ListRepositoryTagRequest:
         self._limit = None
         self._marker = None
         self._tag = None
+        self._order_column = None
+        self._order_type = None
         self._with_manifest = None
         self.discriminator = None
 
@@ -69,6 +79,10 @@ class ListRepositoryTagRequest:
             self.marker = marker
         if tag is not None:
             self.tag = tag
+        if order_column is not None:
+            self.order_column = order_column
+        if order_type is not None:
+            self.order_type = order_type
         if with_manifest is not None:
             self.with_manifest = with_manifest
 
@@ -181,6 +195,50 @@ class ListRepositoryTagRequest:
         :type tag: str
         """
         self._tag = tag
+
+    @property
+    def order_column(self):
+        r"""Gets the order_column of this ListRepositoryTagRequest.
+
+        按列排序，可设置为updated_at（按更新时间排序）或者tag（按照镜像版本排序）。注意：order_column和order_type参数需要配套使用。
+
+        :return: The order_column of this ListRepositoryTagRequest.
+        :rtype: str
+        """
+        return self._order_column
+
+    @order_column.setter
+    def order_column(self, order_column):
+        r"""Sets the order_column of this ListRepositoryTagRequest.
+
+        按列排序，可设置为updated_at（按更新时间排序）或者tag（按照镜像版本排序）。注意：order_column和order_type参数需要配套使用。
+
+        :param order_column: The order_column of this ListRepositoryTagRequest.
+        :type order_column: str
+        """
+        self._order_column = order_column
+
+    @property
+    def order_type(self):
+        r"""Gets the order_type of this ListRepositoryTagRequest.
+
+        排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
+
+        :return: The order_type of this ListRepositoryTagRequest.
+        :rtype: str
+        """
+        return self._order_type
+
+    @order_type.setter
+    def order_type(self, order_type):
+        r"""Sets the order_type of this ListRepositoryTagRequest.
+
+        排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
+
+        :param order_type: The order_type of this ListRepositoryTagRequest.
+        :type order_type: str
+        """
+        self._order_type = order_type
 
     @property
     def with_manifest(self):

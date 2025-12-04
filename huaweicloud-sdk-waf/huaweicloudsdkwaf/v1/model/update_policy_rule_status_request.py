@@ -39,7 +39,7 @@ class UpdatePolicyRuleStatusRequest:
         :type enterprise_project_id: str
         :param policy_id: 策略id（策略id从查询防护策略列表接口获取）
         :type policy_id: str
-        :param ruletype: 策略类型
+        :param ruletype: **参数解释：** 策略类型 **约束限制：** 不涉及 **取值范围：**  - custom：精准防护   - cc: cc攻击   - whiteblackip: 黑白名单  - geoip: 地理位置  - privacy: 私屏蔽防护  - antitamper: 防篡改规则  - ignore: 全局白名单  **默认取值：** 不涉及
         :type ruletype: str
         :param rule_id: 规则id，根据不同的规则类型（ruletype）调用规则列表接口获取规则id，例如黑白名单（whiteblackip）规则id，您可以通过调用查询黑白名单规则列表（ListWhiteblackipRule）获取规则id
         :type rule_id: str
@@ -112,7 +112,7 @@ class UpdatePolicyRuleStatusRequest:
     def ruletype(self):
         r"""Gets the ruletype of this UpdatePolicyRuleStatusRequest.
 
-        策略类型
+        **参数解释：** 策略类型 **约束限制：** 不涉及 **取值范围：**  - custom：精准防护   - cc: cc攻击   - whiteblackip: 黑白名单  - geoip: 地理位置  - privacy: 私屏蔽防护  - antitamper: 防篡改规则  - ignore: 全局白名单  **默认取值：** 不涉及
 
         :return: The ruletype of this UpdatePolicyRuleStatusRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class UpdatePolicyRuleStatusRequest:
     def ruletype(self, ruletype):
         r"""Sets the ruletype of this UpdatePolicyRuleStatusRequest.
 
-        策略类型
+        **参数解释：** 策略类型 **约束限制：** 不涉及 **取值范围：**  - custom：精准防护   - cc: cc攻击   - whiteblackip: 黑白名单  - geoip: 地理位置  - privacy: 私屏蔽防护  - antitamper: 防篡改规则  - ignore: 全局白名单  **默认取值：** 不涉及
 
         :param ruletype: The ruletype of this UpdatePolicyRuleStatusRequest.
         :type ruletype: str

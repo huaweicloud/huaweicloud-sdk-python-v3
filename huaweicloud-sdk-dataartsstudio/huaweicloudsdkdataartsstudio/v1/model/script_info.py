@@ -24,7 +24,9 @@ class ScriptInfo:
         'database': 'str',
         'queue_name': 'str',
         'configuration': 'object',
-        'description': 'str'
+        'description': 'str',
+        'owner': 'str',
+        'version': 'int'
     }
 
     attribute_map = {
@@ -37,10 +39,12 @@ class ScriptInfo:
         'database': 'database',
         'queue_name': 'queue_name',
         'configuration': 'configuration',
-        'description': 'description'
+        'description': 'description',
+        'owner': 'owner',
+        'version': 'version'
     }
 
-    def __init__(self, name=None, type=None, directory=None, id=None, create_user=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None):
+    def __init__(self, name=None, type=None, directory=None, id=None, create_user=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, owner=None, version=None):
         r"""ScriptInfo
 
         The model defined in huaweicloud sdk
@@ -65,6 +69,10 @@ class ScriptInfo:
         :type configuration: object
         :param description: 描述，长度不能超过255个字符。
         :type description: str
+        :param owner: 责任人名称。
+        :type owner: str
+        :param version: 脚本最新提交版本。
+        :type version: int
         """
         
         
@@ -79,6 +87,8 @@ class ScriptInfo:
         self._queue_name = None
         self._configuration = None
         self._description = None
+        self._owner = None
+        self._version = None
         self.discriminator = None
 
         if name is not None:
@@ -101,6 +111,10 @@ class ScriptInfo:
             self.configuration = configuration
         if description is not None:
             self.description = description
+        if owner is not None:
+            self.owner = owner
+        if version is not None:
+            self.version = version
 
     @property
     def name(self):
@@ -321,6 +335,50 @@ class ScriptInfo:
         :type description: str
         """
         self._description = description
+
+    @property
+    def owner(self):
+        r"""Gets the owner of this ScriptInfo.
+
+        责任人名称。
+
+        :return: The owner of this ScriptInfo.
+        :rtype: str
+        """
+        return self._owner
+
+    @owner.setter
+    def owner(self, owner):
+        r"""Sets the owner of this ScriptInfo.
+
+        责任人名称。
+
+        :param owner: The owner of this ScriptInfo.
+        :type owner: str
+        """
+        self._owner = owner
+
+    @property
+    def version(self):
+        r"""Gets the version of this ScriptInfo.
+
+        脚本最新提交版本。
+
+        :return: The version of this ScriptInfo.
+        :rtype: int
+        """
+        return self._version
+
+    @version.setter
+    def version(self, version):
+        r"""Sets the version of this ScriptInfo.
+
+        脚本最新提交版本。
+
+        :param version: The version of this ScriptInfo.
+        :type version: int
+        """
+        self._version = version
 
     def to_dict(self):
         result = {}

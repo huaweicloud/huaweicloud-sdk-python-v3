@@ -41,21 +41,21 @@ class ShowClusterRespCluster:
 
         The model defined in huaweicloud sdk
 
-        :param controller: 控制器ID。
+        :param controller: **参数解释**： 控制器ID。 **取值范围**： 不涉及。
         :type controller: str
-        :param brokers: 节点列表。
+        :param brokers: **参数解释**： 节点列表。
         :type brokers: list[:class:`huaweicloudsdkkafka.v2.ShowClusterRespClusterBrokers`]
-        :param topics_count: 主题数量。
+        :param topics_count: **参数解释**： 主题数量。 **取值范围**： 不涉及。
         :type topics_count: int
-        :param partitions_count: 分区数量。
+        :param partitions_count: **参数解释**： 分区数量。 **取值范围**： 不涉及。
         :type partitions_count: int
-        :param online_partitions_count: 在线分区数量。
+        :param online_partitions_count: **参数解释**： 在线分区数量。 **取值范围**： 不涉及。
         :type online_partitions_count: int
-        :param replicas_count: 副本数量。
+        :param replicas_count: **参数解释**： 副本数量。 **取值范围**： 不涉及。
         :type replicas_count: int
-        :param isr_replicas_count: ISR（In-Sync Replicas） 副本总数。
+        :param isr_replicas_count: **参数解释**： ISR（In-Sync Replicas） 副本总数。 **取值范围**： 不涉及。
         :type isr_replicas_count: int
-        :param consumers_count: 消费组数量。
+        :param consumers_count: **参数解释**： 消费组数量。 **取值范围**： 不涉及。
         :type consumers_count: int
         """
         
@@ -92,7 +92,7 @@ class ShowClusterRespCluster:
     def controller(self):
         r"""Gets the controller of this ShowClusterRespCluster.
 
-        控制器ID。
+        **参数解释**： 控制器ID。 **取值范围**： 不涉及。
 
         :return: The controller of this ShowClusterRespCluster.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowClusterRespCluster:
     def controller(self, controller):
         r"""Sets the controller of this ShowClusterRespCluster.
 
-        控制器ID。
+        **参数解释**： 控制器ID。 **取值范围**： 不涉及。
 
         :param controller: The controller of this ShowClusterRespCluster.
         :type controller: str
@@ -114,7 +114,7 @@ class ShowClusterRespCluster:
     def brokers(self):
         r"""Gets the brokers of this ShowClusterRespCluster.
 
-        节点列表。
+        **参数解释**： 节点列表。
 
         :return: The brokers of this ShowClusterRespCluster.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowClusterRespClusterBrokers`]
@@ -125,7 +125,7 @@ class ShowClusterRespCluster:
     def brokers(self, brokers):
         r"""Sets the brokers of this ShowClusterRespCluster.
 
-        节点列表。
+        **参数解释**： 节点列表。
 
         :param brokers: The brokers of this ShowClusterRespCluster.
         :type brokers: list[:class:`huaweicloudsdkkafka.v2.ShowClusterRespClusterBrokers`]
@@ -136,7 +136,7 @@ class ShowClusterRespCluster:
     def topics_count(self):
         r"""Gets the topics_count of this ShowClusterRespCluster.
 
-        主题数量。
+        **参数解释**： 主题数量。 **取值范围**： 不涉及。
 
         :return: The topics_count of this ShowClusterRespCluster.
         :rtype: int
@@ -147,7 +147,7 @@ class ShowClusterRespCluster:
     def topics_count(self, topics_count):
         r"""Sets the topics_count of this ShowClusterRespCluster.
 
-        主题数量。
+        **参数解释**： 主题数量。 **取值范围**： 不涉及。
 
         :param topics_count: The topics_count of this ShowClusterRespCluster.
         :type topics_count: int
@@ -158,7 +158,7 @@ class ShowClusterRespCluster:
     def partitions_count(self):
         r"""Gets the partitions_count of this ShowClusterRespCluster.
 
-        分区数量。
+        **参数解释**： 分区数量。 **取值范围**： 不涉及。
 
         :return: The partitions_count of this ShowClusterRespCluster.
         :rtype: int
@@ -169,7 +169,7 @@ class ShowClusterRespCluster:
     def partitions_count(self, partitions_count):
         r"""Sets the partitions_count of this ShowClusterRespCluster.
 
-        分区数量。
+        **参数解释**： 分区数量。 **取值范围**： 不涉及。
 
         :param partitions_count: The partitions_count of this ShowClusterRespCluster.
         :type partitions_count: int
@@ -180,7 +180,7 @@ class ShowClusterRespCluster:
     def online_partitions_count(self):
         r"""Gets the online_partitions_count of this ShowClusterRespCluster.
 
-        在线分区数量。
+        **参数解释**： 在线分区数量。 **取值范围**： 不涉及。
 
         :return: The online_partitions_count of this ShowClusterRespCluster.
         :rtype: int
@@ -191,7 +191,7 @@ class ShowClusterRespCluster:
     def online_partitions_count(self, online_partitions_count):
         r"""Sets the online_partitions_count of this ShowClusterRespCluster.
 
-        在线分区数量。
+        **参数解释**： 在线分区数量。 **取值范围**： 不涉及。
 
         :param online_partitions_count: The online_partitions_count of this ShowClusterRespCluster.
         :type online_partitions_count: int
@@ -202,7 +202,7 @@ class ShowClusterRespCluster:
     def replicas_count(self):
         r"""Gets the replicas_count of this ShowClusterRespCluster.
 
-        副本数量。
+        **参数解释**： 副本数量。 **取值范围**： 不涉及。
 
         :return: The replicas_count of this ShowClusterRespCluster.
         :rtype: int
@@ -213,7 +213,7 @@ class ShowClusterRespCluster:
     def replicas_count(self, replicas_count):
         r"""Sets the replicas_count of this ShowClusterRespCluster.
 
-        副本数量。
+        **参数解释**： 副本数量。 **取值范围**： 不涉及。
 
         :param replicas_count: The replicas_count of this ShowClusterRespCluster.
         :type replicas_count: int
@@ -224,7 +224,7 @@ class ShowClusterRespCluster:
     def isr_replicas_count(self):
         r"""Gets the isr_replicas_count of this ShowClusterRespCluster.
 
-        ISR（In-Sync Replicas） 副本总数。
+        **参数解释**： ISR（In-Sync Replicas） 副本总数。 **取值范围**： 不涉及。
 
         :return: The isr_replicas_count of this ShowClusterRespCluster.
         :rtype: int
@@ -235,7 +235,7 @@ class ShowClusterRespCluster:
     def isr_replicas_count(self, isr_replicas_count):
         r"""Sets the isr_replicas_count of this ShowClusterRespCluster.
 
-        ISR（In-Sync Replicas） 副本总数。
+        **参数解释**： ISR（In-Sync Replicas） 副本总数。 **取值范围**： 不涉及。
 
         :param isr_replicas_count: The isr_replicas_count of this ShowClusterRespCluster.
         :type isr_replicas_count: int
@@ -246,7 +246,7 @@ class ShowClusterRespCluster:
     def consumers_count(self):
         r"""Gets the consumers_count of this ShowClusterRespCluster.
 
-        消费组数量。
+        **参数解释**： 消费组数量。 **取值范围**： 不涉及。
 
         :return: The consumers_count of this ShowClusterRespCluster.
         :rtype: int
@@ -257,7 +257,7 @@ class ShowClusterRespCluster:
     def consumers_count(self, consumers_count):
         r"""Sets the consumers_count of this ShowClusterRespCluster.
 
-        消费组数量。
+        **参数解释**： 消费组数量。 **取值范围**： 不涉及。
 
         :param consumers_count: The consumers_count of this ShowClusterRespCluster.
         :type consumers_count: int

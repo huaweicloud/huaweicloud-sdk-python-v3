@@ -76,15 +76,15 @@ class ShowCompositeHostResponse(SdkResponse):
         :type policyid: str
         :param access_code: cname前缀
         :type access_code: str
-        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :param protect_status: **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
         :type protect_status: int
-        :param access_status: 域名接入状态，0表示未接入，1表示已接入
+        :param access_status: **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
         :type access_status: int
         :param proxy: 防护域名是否使用代理   - false：不使用代理   - true：使用代理
         :type proxy: bool
         :param timestamp: 创建防护域名的时间
         :type timestamp: int
-        :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
+        :param paid_type: **参数解释：** 套餐付费模式标识，用于指定套餐的计费方式 **约束限制：** 不涉及 **取值范围：**  - prePaid:包周期模式  - postPaid:按需模式  **默认取值：** prePaid
         :type paid_type: str
         :param flag: 
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -287,7 +287,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def protect_status(self):
         r"""Gets the protect_status of this ShowCompositeHostResponse.
 
-        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
 
         :return: The protect_status of this ShowCompositeHostResponse.
         :rtype: int
@@ -298,7 +298,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ShowCompositeHostResponse.
 
-        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
 
         :param protect_status: The protect_status of this ShowCompositeHostResponse.
         :type protect_status: int
@@ -309,7 +309,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def access_status(self):
         r"""Gets the access_status of this ShowCompositeHostResponse.
 
-        域名接入状态，0表示未接入，1表示已接入
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
         :return: The access_status of this ShowCompositeHostResponse.
         :rtype: int
@@ -320,7 +320,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def access_status(self, access_status):
         r"""Sets the access_status of this ShowCompositeHostResponse.
 
-        域名接入状态，0表示未接入，1表示已接入
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
         :param access_status: The access_status of this ShowCompositeHostResponse.
         :type access_status: int
@@ -375,7 +375,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def paid_type(self):
         r"""Gets the paid_type of this ShowCompositeHostResponse.
 
-        套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
+        **参数解释：** 套餐付费模式标识，用于指定套餐的计费方式 **约束限制：** 不涉及 **取值范围：**  - prePaid:包周期模式  - postPaid:按需模式  **默认取值：** prePaid
 
         :return: The paid_type of this ShowCompositeHostResponse.
         :rtype: str
@@ -386,7 +386,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def paid_type(self, paid_type):
         r"""Sets the paid_type of this ShowCompositeHostResponse.
 
-        套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
+        **参数解释：** 套餐付费模式标识，用于指定套餐的计费方式 **约束限制：** 不涉及 **取值范围：**  - prePaid:包周期模式  - postPaid:按需模式  **默认取值：** prePaid
 
         :param paid_type: The paid_type of this ShowCompositeHostResponse.
         :type paid_type: str

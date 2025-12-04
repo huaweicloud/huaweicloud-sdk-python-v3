@@ -16,27 +16,23 @@ class MeshCluster:
 
     openapi_types = {
         'cluster_id': 'str',
-        'project_id': 'str',
         'injection': 'InjectionConfig',
         'installation': 'InstallationConfig'
     }
 
     attribute_map = {
         'cluster_id': 'clusterID',
-        'project_id': 'projectID',
         'injection': 'injection',
         'installation': 'installation'
     }
 
-    def __init__(self, cluster_id=None, project_id=None, injection=None, installation=None):
+    def __init__(self, cluster_id=None, injection=None, installation=None):
         r"""MeshCluster
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 集群ID，资源唯一标识，通过该ID查询需要添加的集群
         :type cluster_id: str
-        :param project_id: 集群所属的projectID
-        :type project_id: str
         :param injection: 
         :type injection: :class:`huaweicloudsdkasm.v1.InjectionConfig`
         :param installation: 
@@ -46,13 +42,11 @@ class MeshCluster:
         
 
         self._cluster_id = None
-        self._project_id = None
         self._injection = None
         self._installation = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
-        self.project_id = project_id
         if injection is not None:
             self.injection = injection
         self.installation = installation
@@ -78,28 +72,6 @@ class MeshCluster:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
-
-    @property
-    def project_id(self):
-        r"""Gets the project_id of this MeshCluster.
-
-        集群所属的projectID
-
-        :return: The project_id of this MeshCluster.
-        :rtype: str
-        """
-        return self._project_id
-
-    @project_id.setter
-    def project_id(self, project_id):
-        r"""Sets the project_id of this MeshCluster.
-
-        集群所属的projectID
-
-        :param project_id: The project_id of this MeshCluster.
-        :type project_id: str
-        """
-        self._project_id = project_id
 
     @property
     def injection(self):

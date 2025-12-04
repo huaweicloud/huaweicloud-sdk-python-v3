@@ -28,7 +28,7 @@ class ShowBucketListResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 桶名列表
         :type body: list[str]
         """
         
@@ -44,6 +44,8 @@ class ShowBucketListResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ShowBucketListResponse.
 
+        桶名列表
+
         :return: The body of this ShowBucketListResponse.
         :rtype: list[str]
         """
@@ -52,6 +54,8 @@ class ShowBucketListResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this ShowBucketListResponse.
+
+        桶名列表
 
         :param body: The body of this ShowBucketListResponse.
         :type body: list[str]

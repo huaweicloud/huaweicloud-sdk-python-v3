@@ -31,11 +31,11 @@ class ShowPartitionEndMessageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
         :param topic: **参数解释**： Topic名称。 **约束限制**： Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
-        :param partition: **参数解释**： 分区编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        :param partition: **参数解释**： 分区编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type partition: int
         """
         
@@ -54,7 +54,7 @@ class ShowPartitionEndMessageRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowPartitionEndMessageRequest.
 
-        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowPartitionEndMessageRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class ShowPartitionEndMessageRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowPartitionEndMessageRequest.
 
-        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowPartitionEndMessageRequest.
         :type instance_id: str
@@ -98,7 +98,7 @@ class ShowPartitionEndMessageRequest:
     def partition(self):
         r"""Gets the partition of this ShowPartitionEndMessageRequest.
 
-        **参数解释**： 分区编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        **参数解释**： 分区编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The partition of this ShowPartitionEndMessageRequest.
         :rtype: int
@@ -109,7 +109,7 @@ class ShowPartitionEndMessageRequest:
     def partition(self, partition):
         r"""Sets the partition of this ShowPartitionEndMessageRequest.
 
-        **参数解释**： 分区编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。 
+        **参数解释**： 分区编号。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param partition: The partition of this ShowPartitionEndMessageRequest.
         :type partition: int

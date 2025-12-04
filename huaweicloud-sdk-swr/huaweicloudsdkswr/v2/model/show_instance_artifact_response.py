@@ -27,7 +27,8 @@ class ShowInstanceArtifactResponse(SdkResponse):
         'pull_time': 'str',
         'push_time': 'str',
         'size': 'int',
-        'tags': 'list[ArtifactTag]'
+        'tags': 'list[ArtifactTag]',
+        'scan_overview': 'dict(str, NativeReportSummary)'
     }
 
     attribute_map = {
@@ -42,10 +43,11 @@ class ShowInstanceArtifactResponse(SdkResponse):
         'pull_time': 'pull_time',
         'push_time': 'push_time',
         'size': 'size',
-        'tags': 'tags'
+        'tags': 'tags',
+        'scan_overview': 'scan_overview'
     }
 
-    def __init__(self, digest=None, id=None, repository_id=None, repository_name=None, type=None, namespace_id=None, media_type=None, manifest_media_type=None, pull_time=None, push_time=None, size=None, tags=None):
+    def __init__(self, digest=None, id=None, repository_id=None, repository_name=None, type=None, namespace_id=None, media_type=None, manifest_media_type=None, pull_time=None, push_time=None, size=None, tags=None, scan_overview=None):
         r"""ShowInstanceArtifactResponse
 
         The model defined in huaweicloud sdk
@@ -74,6 +76,8 @@ class ShowInstanceArtifactResponse(SdkResponse):
         :type size: int
         :param tags: 制品版本的Tag列表
         :type tags: list[:class:`huaweicloudsdkswr.v2.ArtifactTag`]
+        :param scan_overview: 制品扫描摘要,支持制品扫描报告类型为application/vnd.security.vulnerability.report; version&#x3D;1.1的制品扫描摘要
+        :type scan_overview: dict(str, NativeReportSummary)
         """
         
         super().__init__()
@@ -90,6 +94,7 @@ class ShowInstanceArtifactResponse(SdkResponse):
         self._push_time = None
         self._size = None
         self._tags = None
+        self._scan_overview = None
         self.discriminator = None
 
         if digest is not None:
@@ -116,6 +121,8 @@ class ShowInstanceArtifactResponse(SdkResponse):
             self.size = size
         if tags is not None:
             self.tags = tags
+        if scan_overview is not None:
+            self.scan_overview = scan_overview
 
     @property
     def digest(self):
@@ -380,6 +387,28 @@ class ShowInstanceArtifactResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkswr.v2.ArtifactTag`]
         """
         self._tags = tags
+
+    @property
+    def scan_overview(self):
+        r"""Gets the scan_overview of this ShowInstanceArtifactResponse.
+
+        制品扫描摘要,支持制品扫描报告类型为application/vnd.security.vulnerability.report; version=1.1的制品扫描摘要
+
+        :return: The scan_overview of this ShowInstanceArtifactResponse.
+        :rtype: dict(str, NativeReportSummary)
+        """
+        return self._scan_overview
+
+    @scan_overview.setter
+    def scan_overview(self, scan_overview):
+        r"""Sets the scan_overview of this ShowInstanceArtifactResponse.
+
+        制品扫描摘要,支持制品扫描报告类型为application/vnd.security.vulnerability.report; version=1.1的制品扫描摘要
+
+        :param scan_overview: The scan_overview of this ShowInstanceArtifactResponse.
+        :type scan_overview: dict(str, NativeReportSummary)
+        """
+        self._scan_overview = scan_overview
 
     def to_dict(self):
         import warnings

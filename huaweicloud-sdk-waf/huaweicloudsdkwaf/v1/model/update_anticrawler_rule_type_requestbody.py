@@ -27,7 +27,7 @@ class UpdateAnticrawlerRuleTypeRequestbody:
 
         The model defined in huaweicloud sdk
 
-        :param anticrawler_type: JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
+        :param anticrawler_type: **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
         :type anticrawler_type: str
         """
         
@@ -42,7 +42,7 @@ class UpdateAnticrawlerRuleTypeRequestbody:
     def anticrawler_type(self):
         r"""Gets the anticrawler_type of this UpdateAnticrawlerRuleTypeRequestbody.
 
-        JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
+        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
 
         :return: The anticrawler_type of this UpdateAnticrawlerRuleTypeRequestbody.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateAnticrawlerRuleTypeRequestbody:
     def anticrawler_type(self, anticrawler_type):
         r"""Sets the anticrawler_type of this UpdateAnticrawlerRuleTypeRequestbody.
 
-        JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
+        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
 
         :param anticrawler_type: The anticrawler_type of this UpdateAnticrawlerRuleTypeRequestbody.
         :type anticrawler_type: str

@@ -61,7 +61,7 @@ class StartTaskReq:
         :type dst_sk: str
         :param dst_security_token: 目标端节点临时Token
         :type dst_security_token: str
-        :param source_cdn_authentication_key: CDN鉴权秘钥。
+        :param source_cdn_authentication_key: CDN鉴权密钥。
         :type source_cdn_authentication_key: str
         :param migrate_failed_object: 迁移类型，标识是否为全量迁移，默认false（全量迁移）。 值为true时表示只重传失败对象。 值为空或者为false时表示全量迁移。
         :type migrate_failed_object: bool
@@ -280,7 +280,7 @@ class StartTaskReq:
     def source_cdn_authentication_key(self):
         r"""Gets the source_cdn_authentication_key of this StartTaskReq.
 
-        CDN鉴权秘钥。
+        CDN鉴权密钥。
 
         :return: The source_cdn_authentication_key of this StartTaskReq.
         :rtype: str
@@ -291,7 +291,7 @@ class StartTaskReq:
     def source_cdn_authentication_key(self, source_cdn_authentication_key):
         r"""Sets the source_cdn_authentication_key of this StartTaskReq.
 
-        CDN鉴权秘钥。
+        CDN鉴权密钥。
 
         :param source_cdn_authentication_key: The source_cdn_authentication_key of this StartTaskReq.
         :type source_cdn_authentication_key: str

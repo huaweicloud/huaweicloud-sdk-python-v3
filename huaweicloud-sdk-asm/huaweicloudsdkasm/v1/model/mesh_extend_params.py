@@ -36,8 +36,7 @@ class MeshExtendParams:
         self._clusters = None
         self.discriminator = None
 
-        if clusters is not None:
-            self.clusters = clusters
+        self.clusters = clusters
 
     @property
     def clusters(self):

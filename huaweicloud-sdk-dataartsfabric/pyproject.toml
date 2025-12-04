@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdkdataartsfabric"
-version = "3.1.177"
+version = "3.1.178"
 description = "DataArtsFabric"
 readme = "README_PYPI.md"
 authors = [
@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Software Development"
 ]
 dependencies = [
-    "huaweicloudsdkcore>=3.1.177"
+    "huaweicloudsdkcore>=3.1.178"
 ]
 
 [project.urls]

@@ -641,7 +641,7 @@ class KafkaAsyncClient(Client):
     def create_instance_user_async(self, request):
         r"""创建用户
 
-        创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。 [ 2023年7月15日前创建的Kafka实例，一个实例最多创建20个用户。2023年7月15日及以后创建的Kafka实例，一个实例最多创建500个用户。](tag:hws,hws_hk)
+        创建Kafka实例的用户，用户可连接开启SASL的Kafka实例。 [ 2023年7月15日前创建的Kafka实例，一个实例最多创建20个用户。2023年7月15日及以后创建的Kafka实例，一个实例最多创建500个用户。](tag:hws,hws_hk) [一个实例最多创建500个用户。](tag:fcs,ax,hcs)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1175,7 +1175,7 @@ class KafkaAsyncClient(Client):
 
         创建实例。
         
-        [该接口支持创建按需和包周期两种计费方式的实例。](tag:hws,hws_eu,hws_hk,ctc,cmcc)
+        [该接口支持创建按需和包周期两种计费方式的实例。](tag:hws,hws_eu,hws_hk,ctc,cmcc,ax)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1505,6 +1505,75 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def delete_instance_consumer_group_async(self, request):
+        r"""删除指定消费组
+
+        删除指定消费组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteInstanceConsumerGroup
+        :type request: :class:`huaweicloudsdkkafka.v2.DeleteInstanceConsumerGroupRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.DeleteInstanceConsumerGroupResponse`
+        """
+        http_info = self._delete_instance_consumer_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_instance_consumer_group_async_invoker(self, request):
+        http_info = self._delete_instance_consumer_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instance_consumer_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/groups/{group}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceConsumerGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group' in local_var_params:
+            path_params['group'] = local_var_params['group']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_kafka_message_async(self, request):
         r"""Kafka删除消息
 
@@ -1708,6 +1777,140 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def delete_scheduled_task_async(self, request):
+        r"""删除指定的定时任务
+
+        删除指定的定时任务。仅当定时任务处于执行成功或已取消状态时，方可执行删除操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteScheduledTask
+        :type request: :class:`huaweicloudsdkkafka.v2.DeleteScheduledTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.DeleteScheduledTaskResponse`
+        """
+        http_info = self._delete_scheduled_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_scheduled_task_async_invoker(self, request):
+        http_info = self._delete_scheduled_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_scheduled_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/scheduled-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScheduledTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_user_async(self, request):
+        r"""删除指定用户
+
+        删除指定用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteUser
+        :type request: :class:`huaweicloudsdkkafka.v2.DeleteUserRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.DeleteUserResponse`
+        """
+        http_info = self._delete_user_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_user_async_invoker(self, request):
+        http_info = self._delete_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_user_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/users/{user_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteUserResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_available_zones_async(self, request):
         r"""查询可用区信息
 
@@ -1809,8 +2012,8 @@ class KafkaAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'begin_time' in local_var_params:
@@ -1832,6 +2035,69 @@ class KafkaAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_config_features_async(self, request):
+        r"""查询特性开关列表
+
+        获取特性开关列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListConfigFeatures
+        :type request: :class:`huaweicloudsdkkafka.v2.ListConfigFeaturesRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListConfigFeaturesResponse`
+        """
+        http_info = self._list_config_features_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_config_features_async_invoker(self, request):
+        http_info = self._list_config_features_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_config_features_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/config/features",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigFeaturesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -2574,6 +2840,79 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def list_scheduled_tasks_async(self, request):
+        r"""查询实例的定时任务列表
+
+        查询实例的定时任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListScheduledTasks
+        :type request: :class:`huaweicloudsdkkafka.v2.ListScheduledTasksRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListScheduledTasksResponse`
+        """
+        http_info = self._list_scheduled_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_scheduled_tasks_async_invoker(self, request):
+        http_info = self._list_scheduled_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scheduled_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/scheduled-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScheduledTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_topic_partitions_async(self, request):
         r"""查询Topic的分区列表
 
@@ -2716,6 +3055,77 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def list_user_policies_async(self, request):
+        r"""查询用户策略
+
+        查询用户策略。
+        
+        Kafka实例开启SASL功能后，才支持查询用户策略功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUserPolicies
+        :type request: :class:`huaweicloudsdkkafka.v2.ListUserPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListUserPoliciesResponse`
+        """
+        http_info = self._list_user_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_user_policies_async_invoker(self, request):
+        http_info = self._list_user_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{engine}/instances/{instance_id}/users/{user_name}/access-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_instance_configs_async(self, request):
         r"""修改实例配置
 
@@ -2741,6 +3151,73 @@ class KafkaAsyncClient(Client):
             "resource_path": "/v2/{project_id}/instances/{instance_id}/configs",
             "request_type": request.__class__.__name__,
             "response_type": "ModifyInstanceConfigsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_kafka_public_ip_access_switch_async(self, request):
+        r"""开启或者关闭Kafka实例公网访问功能
+
+        开启或者关闭Kafka实例公网访问功能。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyKafkaPublicIpAccessSwitch
+        :type request: :class:`huaweicloudsdkkafka.v2.ModifyKafkaPublicIpAccessSwitchRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ModifyKafkaPublicIpAccessSwitchResponse`
+        """
+        http_info = self._modify_kafka_public_ip_access_switch_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_kafka_public_ip_access_switch_async_invoker(self, request):
+        http_info = self._modify_kafka_public_ip_access_switch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_kafka_public_ip_access_switch_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/public-boundwidth",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyKafkaPublicIpAccessSwitchResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2819,6 +3296,71 @@ class KafkaAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_recycle_policy_async(self, request):
+        r"""更新回收站策略
+
+        更新回收站策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyRecyclePolicy
+        :type request: :class:`huaweicloudsdkkafka.v2.ModifyRecyclePolicyRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ModifyRecyclePolicyResponse`
+        """
+        http_info = self._modify_recycle_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_recycle_policy_async_invoker(self, request):
+        http_info = self._modify_recycle_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_recycle_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/recycle",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyRecyclePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -3334,7 +3876,7 @@ class KafkaAsyncClient(Client):
     def resize_kafka_instance_async(self, request):
         r"""实例扩容
 
-        实例规格变更。[当前通过调用API，只支持按需实例进行实例扩容。](tag:hws,hws_hk,ctc,cmcc,hws_eu)
+        实例规格变更。[当前通过调用API，只支持按需实例进行实例扩容。](tag:hws,hws_hk,ctc,cmcc,hws_eu,ax)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3463,10 +4005,75 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def restore_recycle_instance_async(self, request):
+        r"""恢复回收站实例
+
+        恢复回收站实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestoreRecycleInstance
+        :type request: :class:`huaweicloudsdkkafka.v2.RestoreRecycleInstanceRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.RestoreRecycleInstanceResponse`
+        """
+        http_info = self._restore_recycle_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def restore_recycle_instance_async_invoker(self, request):
+        http_info = self._restore_recycle_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_recycle_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/recycle",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreRecycleInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def send_kafka_message_async(self, request):
         r"""Kafka生产消息
 
-        在控制台发送指定消息到Kafka实例
+        在控制台发送指定消息到Kafka实例。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3520,6 +4127,79 @@ class KafkaAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_user_policies_async(self, request):
+        r"""创建/删除用户策略
+
+        创建/删除用户策略。
+        
+        Kafka实例开启SASL功能后，才支持创建/删除用户策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SetUserPolicies
+        :type request: :class:`huaweicloudsdkkafka.v2.SetUserPoliciesRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.SetUserPoliciesResponse`
+        """
+        http_info = self._set_user_policies_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_user_policies_async_invoker(self, request):
+        http_info = self._set_user_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_user_policies_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{engine}/instances/{instance_id}/users/{user_name}/access-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetUserPoliciesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine' in local_var_params:
+            path_params['engine'] = local_var_params['engine']
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -3587,6 +4267,73 @@ class KafkaAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_background_task_progress_async(self, request):
+        r"""查询后台任务中的指定实例的变更进度
+
+        查询后台任务中的指定实例的变更进度。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowBackgroundTaskProgress
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowBackgroundTaskProgressRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowBackgroundTaskProgressResponse`
+        """
+        http_info = self._show_background_task_progress_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_background_task_progress_async_invoker(self, request):
+        http_info = self._show_background_task_progress_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_background_task_progress_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/tasks/{task_id}/progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackgroundTaskProgressResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -4257,6 +5004,12 @@ class KafkaAsyncClient(Client):
             query_params.append(('partition', local_var_params['partition']))
         if 'keyword' in local_var_params:
             query_params.append(('keyword', local_var_params['keyword']))
+        if 'key' in local_var_params:
+            query_params.append(('key', local_var_params['key']))
+        if 'include' in local_var_params:
+            query_params.append(('include', local_var_params['include']))
+        if 'exclude' in local_var_params:
+            query_params.append(('exclude', local_var_params['exclude']))
 
         header_params = {}
 
@@ -4418,6 +5171,71 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def show_kafka_cluster_async(self, request):
+        r"""查询Kafka集群信息
+
+        查询Kafka集群信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKafkaCluster
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaClusterRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaClusterResponse`
+        """
+        http_info = self._show_kafka_cluster_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_kafka_cluster_async_invoker(self, request):
+        http_info = self._show_kafka_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_kafka_cluster_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/manage/cluster",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKafkaClusterResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_kafka_instance_extend_product_info_async(self, request):
         r"""查询实例的扩容规格列表
 
@@ -4473,6 +5291,75 @@ class KafkaAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_kafka_product_cores_async(self, request):
+        r"""查询Kafka产品规格核数
+
+        查询Kafka产品规格核数。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKafkaProductCores
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaProductCoresRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaProductCoresResponse`
+        """
+        http_info = self._show_kafka_product_cores_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_kafka_product_cores_async_invoker(self, request):
+        http_info = self._show_kafka_product_cores_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_kafka_product_cores_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/kafka/products/cores",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKafkaProductCoresResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'product_id' in local_var_params:
+            query_params.append(('product_id', local_var_params['product_id']))
+        if 'broker_num' in local_var_params:
+            query_params.append(('broker_num', local_var_params['broker_num']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -4613,6 +5500,71 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def show_kafka_scale_pre_check_info_async(self, request):
+        r"""获取Kafka实例扩容前置检查信息
+
+        获取Kafka实例扩容前置检查信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKafkaScalePreCheckInfo
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaScalePreCheckInfoRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaScalePreCheckInfoResponse`
+        """
+        http_info = self._show_kafka_scale_pre_check_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_kafka_scale_pre_check_info_async_invoker(self, request):
+        http_info = self._show_kafka_scale_pre_check_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_kafka_scale_pre_check_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/extend-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKafkaScalePreCheckInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_kafka_tags_async(self, request):
         r"""查询实例标签
 
@@ -4678,10 +5630,77 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
-    def show_kafka_topic_partition_diskusage_async(self, request):
-        r"""查询topic的磁盘存储情况
+    def show_kafka_topic_detail_async(self, request):
+        r"""获取Kafka Topic详细信息
 
-        查询topic在Broker上磁盘占用情况。
+        获取Kafka Topic详细信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKafkaTopicDetail
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowKafkaTopicDetailRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowKafkaTopicDetailResponse`
+        """
+        http_info = self._show_kafka_topic_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_kafka_topic_detail_async_invoker(self, request):
+        http_info = self._show_kafka_topic_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_kafka_topic_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/kafka/{project_id}/instances/{instance_id}/topics-detail/{topic}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKafkaTopicDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'topic' in local_var_params:
+            path_params['topic'] = local_var_params['topic']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_kafka_topic_partition_diskusage_async(self, request):
+        r"""查询Topic的磁盘存储情况
+
+        查询Topic在Broker上磁盘占用情况。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5372,6 +6391,134 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def show_recycle_instances_async(self, request):
+        r"""查询回收站实例列表
+
+        查询回收站实例列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowRecycleInstances
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowRecycleInstancesRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowRecycleInstancesResponse`
+        """
+        http_info = self._show_recycle_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_recycle_instances_async_invoker(self, request):
+        http_info = self._show_recycle_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_recycle_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/recycle",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecycleInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_spec_convert_product_async(self, request):
+        r"""查询旧规格升级新规格映射
+
+        查询旧规格实例可升级的新规格信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowSpecConvertProduct
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowSpecConvertProductRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowSpecConvertProductResponse`
+        """
+        http_info = self._show_spec_convert_product_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_spec_convert_product_async_invoker(self, request):
+        http_info = self._show_spec_convert_product_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_spec_convert_product_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/spec-convert",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSpecConvertProductResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_topic_access_policy_async(self, request):
         r"""查询用户权限
 
@@ -5429,6 +6576,136 @@ class KafkaAsyncClient(Client):
             ['application/json'])
 
         auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_upgrade_instance_version_async(self, request):
+        r"""查询Kafka实例版本信息
+
+        查询Kafka实例版本信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowUpgradeInstanceVersion
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowUpgradeInstanceVersionRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowUpgradeInstanceVersionResponse`
+        """
+        http_info = self._show_upgrade_instance_version_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_upgrade_instance_version_async_invoker(self, request):
+        http_info = self._show_upgrade_instance_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_upgrade_instance_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUpgradeInstanceVersionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_volume_expand_config_async(self, request):
+        r"""查询磁盘自动扩容配置
+
+        查询磁盘自动扩容配置，包括磁盘自动扩容是否开启，以及开启后的扩容阈值、扩容步长、扩容上限信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVolumeExpandConfig
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowVolumeExpandConfigRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowVolumeExpandConfigResponse`
+        """
+        http_info = self._show_volume_expand_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_volume_expand_config_async_invoker(self, request):
+        http_info = self._show_volume_expand_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_volume_expand_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/auto-volume-expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVolumeExpandConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats
@@ -6121,6 +7398,77 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def update_scheduled_task_async(self, request):
+        r"""修改指定的定时任务
+
+        修改指定的定时任务。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateScheduledTask
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateScheduledTaskRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateScheduledTaskResponse`
+        """
+        http_info = self._update_scheduled_task_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_scheduled_task_async_invoker(self, request):
+        http_info = self._update_scheduled_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_scheduled_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/scheduled-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScheduledTaskResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'execute_at' in local_var_params:
+            query_params.append(('execute_at', local_var_params['execute_at']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_topic_access_policy_async(self, request):
         r"""设置用户权限
 
@@ -6259,12 +7607,146 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def update_volume_expansion_config_async(self, request):
+        r"""修改磁盘自动扩容配置
+
+        该接口用于修改磁盘自动扩容配置，包含磁盘自动扩容是否开启、扩容阈值、扩容步长，以及扩容上限的配置。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVolumeExpansionConfig
+        :type request: :class:`huaweicloudsdkkafka.v2.UpdateVolumeExpansionConfigRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateVolumeExpansionConfigResponse`
+        """
+        http_info = self._update_volume_expansion_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_volume_expansion_config_async_invoker(self, request):
+        http_info = self._update_volume_expansion_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_volume_expansion_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/auto-volume-expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVolumeExpansionConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_instance_async(self, request):
+        r"""实例升级
+
+        实例内核升级。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpgradeInstance
+        :type request: :class:`huaweicloudsdkkafka.v2.UpgradeInstanceRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpgradeInstanceResponse`
+        """
+        http_info = self._upgrade_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_instance_async_invoker(self, request):
+        http_info = self._upgrade_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upgrade_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/kafka/instances/{instance_id}/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_connector_async(self, request):
         r"""开启Smart Connect（按需实例）
 
         开启Smart Connect，提交创建Smart Connect节点任务。
         
-        [**当前通过调用API，只支持按需实例创建Smart Connect节点。**](tag:hws,hws_hk,g42,hk_g42,ctc)
+        [**当前通过调用API，只支持按需实例创建Smart Connect节点。**](tag:hws,hws_hk,g42,hk_g42,ctc,cmcc)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -6596,8 +8078,71 @@ class KafkaAsyncClient(Client):
 
         return http_info
 
+    def list_obs_buckets_async(self, request):
+        r"""查询OBS桶列表
+
+        查询OBS桶列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListObsBuckets
+        :type request: :class:`huaweicloudsdkkafka.v2.ListObsBucketsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListObsBucketsResponse`
+        """
+        http_info = self._list_obs_buckets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_obs_buckets_async_invoker(self, request):
+        http_info = self._list_obs_buckets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_obs_buckets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/dms/obs/buckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObsBucketsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def modify_connector_task_async(self, request):
-        r"""修改Smart Connect任务配置。
+        r"""修改Smart Connect任务配置
 
         修改Smart Connect任务配置。
         
@@ -6921,6 +8466,71 @@ class KafkaAsyncClient(Client):
             ['application/json'])
 
         auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_connector_resource_info_async(self, request):
+        r"""查询开启Smart Connector功能所需资源信息
+
+        查询开启Smart Connector功能所需要使用的资源的情况
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowConnectorResourceInfo
+        :type request: :class:`huaweicloudsdkkafka.v2.ShowConnectorResourceInfoRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ShowConnectorResourceInfoResponse`
+        """
+        http_info = self._show_connector_resource_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_connector_resource_info_async_invoker(self, request):
+        http_info = self._show_connector_resource_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_connector_resource_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/connector",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConnectorResourceInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['IAM_AUTH_TYPE_NEW']
 
         http_info["cname"] = cname
         http_info["collection_formats"] = collection_formats

@@ -33,13 +33,13 @@ class ListInstanceConsumerGroupsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :param offset: **参数解释**： 偏移量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
         :type offset: str
-        :param limit: 当次查询返回的最大消费组ID个数，默认值为10，取值范围为1~50。
+        :param limit: **参数解释**： 当次查询返回的最大消费组ID个数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 10。
         :type limit: str
-        :param group: 消费组名过滤查询，过滤方式为字段包含过滤。
+        :param group: **参数解释**： 消费组名过滤查询，过滤方式为字段包含过滤。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type group: str
         """
         
@@ -63,7 +63,7 @@ class ListInstanceConsumerGroupsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListInstanceConsumerGroupsRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListInstanceConsumerGroupsRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class ListInstanceConsumerGroupsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListInstanceConsumerGroupsRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListInstanceConsumerGroupsRequest.
         :type instance_id: str
@@ -85,7 +85,7 @@ class ListInstanceConsumerGroupsRequest:
     def offset(self):
         r"""Gets the offset of this ListInstanceConsumerGroupsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
 
         :return: The offset of this ListInstanceConsumerGroupsRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class ListInstanceConsumerGroupsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListInstanceConsumerGroupsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        **参数解释**： 偏移量。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
 
         :param offset: The offset of this ListInstanceConsumerGroupsRequest.
         :type offset: str
@@ -107,7 +107,7 @@ class ListInstanceConsumerGroupsRequest:
     def limit(self):
         r"""Gets the limit of this ListInstanceConsumerGroupsRequest.
 
-        当次查询返回的最大消费组ID个数，默认值为10，取值范围为1~50。
+        **参数解释**： 当次查询返回的最大消费组ID个数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 10。
 
         :return: The limit of this ListInstanceConsumerGroupsRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ListInstanceConsumerGroupsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListInstanceConsumerGroupsRequest.
 
-        当次查询返回的最大消费组ID个数，默认值为10，取值范围为1~50。
+        **参数解释**： 当次查询返回的最大消费组ID个数。 **约束限制**： 不涉及。 **取值范围**： 1~50。 **默认取值**： 10。
 
         :param limit: The limit of this ListInstanceConsumerGroupsRequest.
         :type limit: str
@@ -129,7 +129,7 @@ class ListInstanceConsumerGroupsRequest:
     def group(self):
         r"""Gets the group of this ListInstanceConsumerGroupsRequest.
 
-        消费组名过滤查询，过滤方式为字段包含过滤。
+        **参数解释**： 消费组名过滤查询，过滤方式为字段包含过滤。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The group of this ListInstanceConsumerGroupsRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListInstanceConsumerGroupsRequest:
     def group(self, group):
         r"""Sets the group of this ListInstanceConsumerGroupsRequest.
 
-        消费组名过滤查询，过滤方式为字段包含过滤。
+        **参数解释**： 消费组名过滤查询，过滤方式为字段包含过滤。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param group: The group of this ListInstanceConsumerGroupsRequest.
         :type group: str

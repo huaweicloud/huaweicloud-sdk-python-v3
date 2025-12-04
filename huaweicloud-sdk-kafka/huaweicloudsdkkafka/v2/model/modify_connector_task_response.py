@@ -62,7 +62,7 @@ class ModifyConnectorTaskResponse(SdkResponse):
         :type sink_task: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskRespSinkConfig`
         :param id: **参数解释**： Smart Connect任务的id。 **取值范围**： 不涉及。
         :type id: str
-        :param status: **参数解释**： Smart Connect任务的状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： Smart Connect任务的状态。 **取值范围**： - PAUSED：暂停。 - RUNNING：运行中。 - WAITING：等待中。 - RESTARTING：重启中。
         :type status: str
         :param create_time: **参数解释**： Smart Connect任务的创建时间。 **取值范围**： 不涉及。
         :type create_time: int
@@ -275,7 +275,7 @@ class ModifyConnectorTaskResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ModifyConnectorTaskResponse.
 
-        **参数解释**： Smart Connect任务的状态。 **取值范围**： 不涉及。
+        **参数解释**： Smart Connect任务的状态。 **取值范围**： - PAUSED：暂停。 - RUNNING：运行中。 - WAITING：等待中。 - RESTARTING：重启中。
 
         :return: The status of this ModifyConnectorTaskResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class ModifyConnectorTaskResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ModifyConnectorTaskResponse.
 
-        **参数解释**： Smart Connect任务的状态。 **取值范围**： 不涉及。
+        **参数解释**： Smart Connect任务的状态。 **取值范围**： - PAUSED：暂停。 - RUNNING：运行中。 - WAITING：等待中。 - RESTARTING：重启中。
 
         :param status: The status of this ModifyConnectorTaskResponse.
         :type status: str

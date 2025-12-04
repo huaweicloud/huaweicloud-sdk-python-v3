@@ -47,27 +47,27 @@ class ListProductsRespDetail:
 
         The model defined in huaweicloud sdk
 
-        :param tps: 单位时间内的消息量最大值。
+        :param tps: **参数解释**： 单位时间内的消息量最大值。 **取值范围**： 不涉及。
         :type tps: str
-        :param storage: 消息存储空间。
+        :param storage: **参数解释**： 消息存储空间。 **取值范围**： 不涉及。
         :type storage: str
-        :param partition_num: Kafka实例的分区数量。
+        :param partition_num: **参数解释**： Kafka实例的分区数量。 **取值范围**： 不涉及。
         :type partition_num: str
-        :param product_id: 产品ID。
+        :param product_id: **参数解释**： 产品ID。 **取值范围**： 不涉及。
         :type product_id: str
-        :param spec_code: 规格ID。
+        :param spec_code: **参数解释**： 规格ID。 **取值范围**： 不涉及。
         :type spec_code: str
-        :param io: IO信息。
+        :param io: **参数解释**： IO信息。
         :type io: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespIo`]
-        :param bandwidth: Kafka实例的基准带宽。
+        :param bandwidth: **参数解释**： Kafka实例的基准带宽。 **取值范围**： 不涉及。
         :type bandwidth: str
-        :param unavailable_zones: 资源售罄的可用区列表。
+        :param unavailable_zones: **参数解释**： 资源售罄的可用区列表。 **取值范围**： 不涉及。
         :type unavailable_zones: list[str]
-        :param available_zones: 有可用资源的可用区列表。
+        :param available_zones: **参数解释**： 有可用资源的可用区列表。 **取值范围**： 不涉及。
         :type available_zones: list[str]
-        :param ecs_flavor_id: 该产品规格对应的虚拟机规格。
+        :param ecs_flavor_id: **参数解释**： 该产品规格对应的虚拟机规格。 **取值范围**： 不涉及。
         :type ecs_flavor_id: str
-        :param arch_type: 实例规格架构类型。当前仅支持X86。
+        :param arch_type: **参数解释**： 实例规格架构类型。当前仅支持X86。 **取值范围**： 不涉及。
         :type arch_type: str
         """
         
@@ -113,7 +113,7 @@ class ListProductsRespDetail:
     def tps(self):
         r"""Gets the tps of this ListProductsRespDetail.
 
-        单位时间内的消息量最大值。
+        **参数解释**： 单位时间内的消息量最大值。 **取值范围**： 不涉及。
 
         :return: The tps of this ListProductsRespDetail.
         :rtype: str
@@ -124,7 +124,7 @@ class ListProductsRespDetail:
     def tps(self, tps):
         r"""Sets the tps of this ListProductsRespDetail.
 
-        单位时间内的消息量最大值。
+        **参数解释**： 单位时间内的消息量最大值。 **取值范围**： 不涉及。
 
         :param tps: The tps of this ListProductsRespDetail.
         :type tps: str
@@ -135,7 +135,7 @@ class ListProductsRespDetail:
     def storage(self):
         r"""Gets the storage of this ListProductsRespDetail.
 
-        消息存储空间。
+        **参数解释**： 消息存储空间。 **取值范围**： 不涉及。
 
         :return: The storage of this ListProductsRespDetail.
         :rtype: str
@@ -146,7 +146,7 @@ class ListProductsRespDetail:
     def storage(self, storage):
         r"""Sets the storage of this ListProductsRespDetail.
 
-        消息存储空间。
+        **参数解释**： 消息存储空间。 **取值范围**： 不涉及。
 
         :param storage: The storage of this ListProductsRespDetail.
         :type storage: str
@@ -157,7 +157,7 @@ class ListProductsRespDetail:
     def partition_num(self):
         r"""Gets the partition_num of this ListProductsRespDetail.
 
-        Kafka实例的分区数量。
+        **参数解释**： Kafka实例的分区数量。 **取值范围**： 不涉及。
 
         :return: The partition_num of this ListProductsRespDetail.
         :rtype: str
@@ -168,7 +168,7 @@ class ListProductsRespDetail:
     def partition_num(self, partition_num):
         r"""Sets the partition_num of this ListProductsRespDetail.
 
-        Kafka实例的分区数量。
+        **参数解释**： Kafka实例的分区数量。 **取值范围**： 不涉及。
 
         :param partition_num: The partition_num of this ListProductsRespDetail.
         :type partition_num: str
@@ -179,7 +179,7 @@ class ListProductsRespDetail:
     def product_id(self):
         r"""Gets the product_id of this ListProductsRespDetail.
 
-        产品ID。
+        **参数解释**： 产品ID。 **取值范围**： 不涉及。
 
         :return: The product_id of this ListProductsRespDetail.
         :rtype: str
@@ -190,7 +190,7 @@ class ListProductsRespDetail:
     def product_id(self, product_id):
         r"""Sets the product_id of this ListProductsRespDetail.
 
-        产品ID。
+        **参数解释**： 产品ID。 **取值范围**： 不涉及。
 
         :param product_id: The product_id of this ListProductsRespDetail.
         :type product_id: str
@@ -201,7 +201,7 @@ class ListProductsRespDetail:
     def spec_code(self):
         r"""Gets the spec_code of this ListProductsRespDetail.
 
-        规格ID。
+        **参数解释**： 规格ID。 **取值范围**： 不涉及。
 
         :return: The spec_code of this ListProductsRespDetail.
         :rtype: str
@@ -212,7 +212,7 @@ class ListProductsRespDetail:
     def spec_code(self, spec_code):
         r"""Sets the spec_code of this ListProductsRespDetail.
 
-        规格ID。
+        **参数解释**： 规格ID。 **取值范围**： 不涉及。
 
         :param spec_code: The spec_code of this ListProductsRespDetail.
         :type spec_code: str
@@ -223,7 +223,7 @@ class ListProductsRespDetail:
     def io(self):
         r"""Gets the io of this ListProductsRespDetail.
 
-        IO信息。
+        **参数解释**： IO信息。
 
         :return: The io of this ListProductsRespDetail.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespIo`]
@@ -234,7 +234,7 @@ class ListProductsRespDetail:
     def io(self, io):
         r"""Sets the io of this ListProductsRespDetail.
 
-        IO信息。
+        **参数解释**： IO信息。
 
         :param io: The io of this ListProductsRespDetail.
         :type io: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespIo`]
@@ -245,7 +245,7 @@ class ListProductsRespDetail:
     def bandwidth(self):
         r"""Gets the bandwidth of this ListProductsRespDetail.
 
-        Kafka实例的基准带宽。
+        **参数解释**： Kafka实例的基准带宽。 **取值范围**： 不涉及。
 
         :return: The bandwidth of this ListProductsRespDetail.
         :rtype: str
@@ -256,7 +256,7 @@ class ListProductsRespDetail:
     def bandwidth(self, bandwidth):
         r"""Sets the bandwidth of this ListProductsRespDetail.
 
-        Kafka实例的基准带宽。
+        **参数解释**： Kafka实例的基准带宽。 **取值范围**： 不涉及。
 
         :param bandwidth: The bandwidth of this ListProductsRespDetail.
         :type bandwidth: str
@@ -267,7 +267,7 @@ class ListProductsRespDetail:
     def unavailable_zones(self):
         r"""Gets the unavailable_zones of this ListProductsRespDetail.
 
-        资源售罄的可用区列表。
+        **参数解释**： 资源售罄的可用区列表。 **取值范围**： 不涉及。
 
         :return: The unavailable_zones of this ListProductsRespDetail.
         :rtype: list[str]
@@ -278,7 +278,7 @@ class ListProductsRespDetail:
     def unavailable_zones(self, unavailable_zones):
         r"""Sets the unavailable_zones of this ListProductsRespDetail.
 
-        资源售罄的可用区列表。
+        **参数解释**： 资源售罄的可用区列表。 **取值范围**： 不涉及。
 
         :param unavailable_zones: The unavailable_zones of this ListProductsRespDetail.
         :type unavailable_zones: list[str]
@@ -289,7 +289,7 @@ class ListProductsRespDetail:
     def available_zones(self):
         r"""Gets the available_zones of this ListProductsRespDetail.
 
-        有可用资源的可用区列表。
+        **参数解释**： 有可用资源的可用区列表。 **取值范围**： 不涉及。
 
         :return: The available_zones of this ListProductsRespDetail.
         :rtype: list[str]
@@ -300,7 +300,7 @@ class ListProductsRespDetail:
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this ListProductsRespDetail.
 
-        有可用资源的可用区列表。
+        **参数解释**： 有可用资源的可用区列表。 **取值范围**： 不涉及。
 
         :param available_zones: The available_zones of this ListProductsRespDetail.
         :type available_zones: list[str]
@@ -311,7 +311,7 @@ class ListProductsRespDetail:
     def ecs_flavor_id(self):
         r"""Gets the ecs_flavor_id of this ListProductsRespDetail.
 
-        该产品规格对应的虚拟机规格。
+        **参数解释**： 该产品规格对应的虚拟机规格。 **取值范围**： 不涉及。
 
         :return: The ecs_flavor_id of this ListProductsRespDetail.
         :rtype: str
@@ -322,7 +322,7 @@ class ListProductsRespDetail:
     def ecs_flavor_id(self, ecs_flavor_id):
         r"""Sets the ecs_flavor_id of this ListProductsRespDetail.
 
-        该产品规格对应的虚拟机规格。
+        **参数解释**： 该产品规格对应的虚拟机规格。 **取值范围**： 不涉及。
 
         :param ecs_flavor_id: The ecs_flavor_id of this ListProductsRespDetail.
         :type ecs_flavor_id: str
@@ -333,7 +333,7 @@ class ListProductsRespDetail:
     def arch_type(self):
         r"""Gets the arch_type of this ListProductsRespDetail.
 
-        实例规格架构类型。当前仅支持X86。
+        **参数解释**： 实例规格架构类型。当前仅支持X86。 **取值范围**： 不涉及。
 
         :return: The arch_type of this ListProductsRespDetail.
         :rtype: str
@@ -344,7 +344,7 @@ class ListProductsRespDetail:
     def arch_type(self, arch_type):
         r"""Sets the arch_type of this ListProductsRespDetail.
 
-        实例规格架构类型。当前仅支持X86。
+        **参数解释**： 实例规格架构类型。当前仅支持X86。 **取值范围**： 不涉及。
 
         :param arch_type: The arch_type of this ListProductsRespDetail.
         :type arch_type: str

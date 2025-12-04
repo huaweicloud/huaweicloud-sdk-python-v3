@@ -36,8 +36,7 @@ class Selector:
         self._field_selector = None
         self.discriminator = None
 
-        if field_selector is not None:
-            self.field_selector = field_selector
+        self.field_selector = field_selector
 
     @property
     def field_selector(self):

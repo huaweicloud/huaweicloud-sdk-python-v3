@@ -16,21 +16,29 @@ class TopicAttribute:
 
     openapi_types = {
         'access_policy': 'str',
+        'create_time': 'str',
+        'update_time': 'str',
         'introduction': 'str'
     }
 
     attribute_map = {
         'access_policy': 'access_policy',
+        'create_time': 'create_time',
+        'update_time': 'update_time',
         'introduction': 'introduction'
     }
 
-    def __init__(self, access_policy=None, introduction=None):
+    def __init__(self, access_policy=None, create_time=None, update_time=None, introduction=None):
         r"""TopicAttribute
 
         The model defined in huaweicloud sdk
 
         :param access_policy: topic的访问策略
         :type access_policy: str
+        :param create_time: topic的访问策略创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type create_time: str
+        :param update_time: topic的访问策略更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+        :type update_time: str
         :param introduction: topic的简介
         :type introduction: str
         """
@@ -38,11 +46,17 @@ class TopicAttribute:
         
 
         self._access_policy = None
+        self._create_time = None
+        self._update_time = None
         self._introduction = None
         self.discriminator = None
 
         if access_policy is not None:
             self.access_policy = access_policy
+        if create_time is not None:
+            self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
         if introduction is not None:
             self.introduction = introduction
 
@@ -67,6 +81,50 @@ class TopicAttribute:
         :type access_policy: str
         """
         self._access_policy = access_policy
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this TopicAttribute.
+
+        topic的访问策略创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :return: The create_time of this TopicAttribute.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this TopicAttribute.
+
+        topic的访问策略创建时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :param create_time: The create_time of this TopicAttribute.
+        :type create_time: str
+        """
+        self._create_time = create_time
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this TopicAttribute.
+
+        topic的访问策略更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :return: The update_time of this TopicAttribute.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this TopicAttribute.
+
+        topic的访问策略更新时间。时间格式为UTC时间，YYYY-MM-DDTHH:MM:SSZ。
+
+        :param update_time: The update_time of this TopicAttribute.
+        :type update_time: str
+        """
+        self._update_time = update_time
 
     @property
     def introduction(self):

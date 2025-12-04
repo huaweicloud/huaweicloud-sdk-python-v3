@@ -81,7 +81,7 @@ class UpdateHostRequestBody:
         :type web_tag: str
         :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
         :type exclusive_ip: bool
-        :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
+        :param paid_type: **参数解释：** 套餐付费模式标识，用于指定套餐的计费方式 **约束限制：** 不涉及 **取值范围：**  - prePaid:包周期模式  - postPaid:按需模式  **默认取值：** prePaid
         :type paid_type: str
         :param block_page: 
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -382,7 +382,7 @@ class UpdateHostRequestBody:
     def paid_type(self):
         r"""Gets the paid_type of this UpdateHostRequestBody.
 
-        套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
+        **参数解释：** 套餐付费模式标识，用于指定套餐的计费方式 **约束限制：** 不涉及 **取值范围：**  - prePaid:包周期模式  - postPaid:按需模式  **默认取值：** prePaid
 
         :return: The paid_type of this UpdateHostRequestBody.
         :rtype: str
@@ -393,7 +393,7 @@ class UpdateHostRequestBody:
     def paid_type(self, paid_type):
         r"""Sets the paid_type of this UpdateHostRequestBody.
 
-        套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
+        **参数解释：** 套餐付费模式标识，用于指定套餐的计费方式 **约束限制：** 不涉及 **取值范围：**  - prePaid:包周期模式  - postPaid:按需模式  **默认取值：** prePaid
 
         :param paid_type: The paid_type of this UpdateHostRequestBody.
         :type paid_type: str

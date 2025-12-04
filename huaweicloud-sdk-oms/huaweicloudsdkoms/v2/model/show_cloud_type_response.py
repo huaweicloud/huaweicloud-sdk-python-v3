@@ -28,7 +28,7 @@ class ShowCloudTypeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 
+        :param body: 支持的云服务类型
         :type body: list[str]
         """
         
@@ -44,6 +44,8 @@ class ShowCloudTypeResponse(SdkResponse):
     def body(self):
         r"""Gets the body of this ShowCloudTypeResponse.
 
+        支持的云服务类型
+
         :return: The body of this ShowCloudTypeResponse.
         :rtype: list[str]
         """
@@ -52,6 +54,8 @@ class ShowCloudTypeResponse(SdkResponse):
     @body.setter
     def body(self, body):
         r"""Sets the body of this ShowCloudTypeResponse.
+
+        支持的云服务类型
 
         :param body: The body of this ShowCloudTypeResponse.
         :type body: list[str]

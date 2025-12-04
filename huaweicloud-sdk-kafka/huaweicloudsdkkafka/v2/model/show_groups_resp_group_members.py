@@ -33,13 +33,13 @@ class ShowGroupsRespGroupMembers:
 
         The model defined in huaweicloud sdk
 
-        :param host: 消费组consumer地址。
+        :param host: **参数解释**： 消费组consumer地址。 **取值范围**： 不涉及。
         :type host: str
-        :param assignment: consumer分配到的分区信息。
+        :param assignment: **参数解释**： consumer分配到的分区信息。
         :type assignment: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupAssignment`]
-        :param member_id: 消费组consumer的ID。
+        :param member_id: **参数解释**： 消费组consumer的ID。 **取值范围**： 不涉及。
         :type member_id: str
-        :param client_id: 客户端ID。
+        :param client_id: **参数解释**： 客户端ID。 **取值范围**： 不涉及。
         :type client_id: str
         """
         
@@ -64,7 +64,7 @@ class ShowGroupsRespGroupMembers:
     def host(self):
         r"""Gets the host of this ShowGroupsRespGroupMembers.
 
-        消费组consumer地址。
+        **参数解释**： 消费组consumer地址。 **取值范围**： 不涉及。
 
         :return: The host of this ShowGroupsRespGroupMembers.
         :rtype: str
@@ -75,7 +75,7 @@ class ShowGroupsRespGroupMembers:
     def host(self, host):
         r"""Sets the host of this ShowGroupsRespGroupMembers.
 
-        消费组consumer地址。
+        **参数解释**： 消费组consumer地址。 **取值范围**： 不涉及。
 
         :param host: The host of this ShowGroupsRespGroupMembers.
         :type host: str
@@ -86,7 +86,7 @@ class ShowGroupsRespGroupMembers:
     def assignment(self):
         r"""Gets the assignment of this ShowGroupsRespGroupMembers.
 
-        consumer分配到的分区信息。
+        **参数解释**： consumer分配到的分区信息。
 
         :return: The assignment of this ShowGroupsRespGroupMembers.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupAssignment`]
@@ -97,7 +97,7 @@ class ShowGroupsRespGroupMembers:
     def assignment(self, assignment):
         r"""Sets the assignment of this ShowGroupsRespGroupMembers.
 
-        consumer分配到的分区信息。
+        **参数解释**： consumer分配到的分区信息。
 
         :param assignment: The assignment of this ShowGroupsRespGroupMembers.
         :type assignment: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupAssignment`]
@@ -108,7 +108,7 @@ class ShowGroupsRespGroupMembers:
     def member_id(self):
         r"""Gets the member_id of this ShowGroupsRespGroupMembers.
 
-        消费组consumer的ID。
+        **参数解释**： 消费组consumer的ID。 **取值范围**： 不涉及。
 
         :return: The member_id of this ShowGroupsRespGroupMembers.
         :rtype: str
@@ -119,7 +119,7 @@ class ShowGroupsRespGroupMembers:
     def member_id(self, member_id):
         r"""Sets the member_id of this ShowGroupsRespGroupMembers.
 
-        消费组consumer的ID。
+        **参数解释**： 消费组consumer的ID。 **取值范围**： 不涉及。
 
         :param member_id: The member_id of this ShowGroupsRespGroupMembers.
         :type member_id: str
@@ -130,7 +130,7 @@ class ShowGroupsRespGroupMembers:
     def client_id(self):
         r"""Gets the client_id of this ShowGroupsRespGroupMembers.
 
-        客户端ID。
+        **参数解释**： 客户端ID。 **取值范围**： 不涉及。
 
         :return: The client_id of this ShowGroupsRespGroupMembers.
         :rtype: str
@@ -141,7 +141,7 @@ class ShowGroupsRespGroupMembers:
     def client_id(self, client_id):
         r"""Sets the client_id of this ShowGroupsRespGroupMembers.
 
-        客户端ID。
+        **参数解释**： 客户端ID。 **取值范围**： 不涉及。
 
         :param client_id: The client_id of this ShowGroupsRespGroupMembers.
         :type client_id: str

@@ -39,19 +39,19 @@ class ShowClusterRespClusterBrokers:
 
         The model defined in huaweicloud sdk
 
-        :param host: 节点IP。
+        :param host: **参数解释**： 节点IP。 **取值范围**： 不涉及。
         :type host: str
-        :param port: 端口号。
+        :param port: **参数解释**： 端口号。 **取值范围**： 不涉及。
         :type port: int
-        :param broker_id: 节点ID。
+        :param broker_id: **参数解释**： 节点ID。 **取值范围**： 不涉及。
         :type broker_id: str
-        :param is_controller: 是否为contoller节点。
+        :param is_controller: **参数解释**： 是否为controller节点。 **取值范围**： - true：是controller节点。 - false：不是controller节点。
         :type is_controller: bool
-        :param version: 服务端版本。
+        :param version: **参数解释**： 服务端版本。 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax)
         :type version: str
-        :param register_time: broker注册时间，为unix时间戳格式。
+        :param register_time: **参数解释**： broker注册时间，为unix时间戳格式。 **取值范围**： 不涉及。
         :type register_time: int
-        :param is_health: Kafka实例节点的连通性是否正常。
+        :param is_health: **参数解释**： Kafka实例节点的连通性是否正常。 **取值范围**： - true：正常。 - false：不正常。
         :type is_health: bool
         """
         
@@ -85,7 +85,7 @@ class ShowClusterRespClusterBrokers:
     def host(self):
         r"""Gets the host of this ShowClusterRespClusterBrokers.
 
-        节点IP。
+        **参数解释**： 节点IP。 **取值范围**： 不涉及。
 
         :return: The host of this ShowClusterRespClusterBrokers.
         :rtype: str
@@ -96,7 +96,7 @@ class ShowClusterRespClusterBrokers:
     def host(self, host):
         r"""Sets the host of this ShowClusterRespClusterBrokers.
 
-        节点IP。
+        **参数解释**： 节点IP。 **取值范围**： 不涉及。
 
         :param host: The host of this ShowClusterRespClusterBrokers.
         :type host: str
@@ -107,7 +107,7 @@ class ShowClusterRespClusterBrokers:
     def port(self):
         r"""Gets the port of this ShowClusterRespClusterBrokers.
 
-        端口号。
+        **参数解释**： 端口号。 **取值范围**： 不涉及。
 
         :return: The port of this ShowClusterRespClusterBrokers.
         :rtype: int
@@ -118,7 +118,7 @@ class ShowClusterRespClusterBrokers:
     def port(self, port):
         r"""Sets the port of this ShowClusterRespClusterBrokers.
 
-        端口号。
+        **参数解释**： 端口号。 **取值范围**： 不涉及。
 
         :param port: The port of this ShowClusterRespClusterBrokers.
         :type port: int
@@ -129,7 +129,7 @@ class ShowClusterRespClusterBrokers:
     def broker_id(self):
         r"""Gets the broker_id of this ShowClusterRespClusterBrokers.
 
-        节点ID。
+        **参数解释**： 节点ID。 **取值范围**： 不涉及。
 
         :return: The broker_id of this ShowClusterRespClusterBrokers.
         :rtype: str
@@ -140,7 +140,7 @@ class ShowClusterRespClusterBrokers:
     def broker_id(self, broker_id):
         r"""Sets the broker_id of this ShowClusterRespClusterBrokers.
 
-        节点ID。
+        **参数解释**： 节点ID。 **取值范围**： 不涉及。
 
         :param broker_id: The broker_id of this ShowClusterRespClusterBrokers.
         :type broker_id: str
@@ -151,7 +151,7 @@ class ShowClusterRespClusterBrokers:
     def is_controller(self):
         r"""Gets the is_controller of this ShowClusterRespClusterBrokers.
 
-        是否为contoller节点。
+        **参数解释**： 是否为controller节点。 **取值范围**： - true：是controller节点。 - false：不是controller节点。
 
         :return: The is_controller of this ShowClusterRespClusterBrokers.
         :rtype: bool
@@ -162,7 +162,7 @@ class ShowClusterRespClusterBrokers:
     def is_controller(self, is_controller):
         r"""Sets the is_controller of this ShowClusterRespClusterBrokers.
 
-        是否为contoller节点。
+        **参数解释**： 是否为controller节点。 **取值范围**： - true：是controller节点。 - false：不是controller节点。
 
         :param is_controller: The is_controller of this ShowClusterRespClusterBrokers.
         :type is_controller: bool
@@ -173,7 +173,7 @@ class ShowClusterRespClusterBrokers:
     def version(self):
         r"""Gets the version of this ShowClusterRespClusterBrokers.
 
-        服务端版本。
+        **参数解释**： 服务端版本。 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax)
 
         :return: The version of this ShowClusterRespClusterBrokers.
         :rtype: str
@@ -184,7 +184,7 @@ class ShowClusterRespClusterBrokers:
     def version(self, version):
         r"""Sets the version of this ShowClusterRespClusterBrokers.
 
-        服务端版本。
+        **参数解释**： 服务端版本。 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax)
 
         :param version: The version of this ShowClusterRespClusterBrokers.
         :type version: str
@@ -195,7 +195,7 @@ class ShowClusterRespClusterBrokers:
     def register_time(self):
         r"""Gets the register_time of this ShowClusterRespClusterBrokers.
 
-        broker注册时间，为unix时间戳格式。
+        **参数解释**： broker注册时间，为unix时间戳格式。 **取值范围**： 不涉及。
 
         :return: The register_time of this ShowClusterRespClusterBrokers.
         :rtype: int
@@ -206,7 +206,7 @@ class ShowClusterRespClusterBrokers:
     def register_time(self, register_time):
         r"""Sets the register_time of this ShowClusterRespClusterBrokers.
 
-        broker注册时间，为unix时间戳格式。
+        **参数解释**： broker注册时间，为unix时间戳格式。 **取值范围**： 不涉及。
 
         :param register_time: The register_time of this ShowClusterRespClusterBrokers.
         :type register_time: int
@@ -217,7 +217,7 @@ class ShowClusterRespClusterBrokers:
     def is_health(self):
         r"""Gets the is_health of this ShowClusterRespClusterBrokers.
 
-        Kafka实例节点的连通性是否正常。
+        **参数解释**： Kafka实例节点的连通性是否正常。 **取值范围**： - true：正常。 - false：不正常。
 
         :return: The is_health of this ShowClusterRespClusterBrokers.
         :rtype: bool
@@ -228,7 +228,7 @@ class ShowClusterRespClusterBrokers:
     def is_health(self, is_health):
         r"""Sets the is_health of this ShowClusterRespClusterBrokers.
 
-        Kafka实例节点的连通性是否正常。
+        **参数解释**： Kafka实例节点的连通性是否正常。 **取值范围**： - true：正常。 - false：不正常。
 
         :param is_health: The is_health of this ShowClusterRespClusterBrokers.
         :type is_health: bool

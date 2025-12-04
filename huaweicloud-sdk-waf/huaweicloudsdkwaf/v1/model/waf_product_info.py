@@ -33,7 +33,7 @@ class WafProductInfo:
 
         :param resource_spec_code: waf规格   -  professional：标准   - enterprise：专业   - ultimate：企业版
         :type resource_spec_code: str
-        :param period_type: 订购周期类型 month: 月；year: 年
+        :param period_type: **参数解释：** 订购周期类型标识，用于指定套餐的订购时间周期单位 **约束限制：** 不涉及 **取值范围：**  - month:月  - year:年 **默认取值：** 不涉及
         :type period_type: str
         :param period_num: 订购周期数
         :type period_num: int
@@ -79,7 +79,7 @@ class WafProductInfo:
     def period_type(self):
         r"""Gets the period_type of this WafProductInfo.
 
-        订购周期类型 month: 月；year: 年
+        **参数解释：** 订购周期类型标识，用于指定套餐的订购时间周期单位 **约束限制：** 不涉及 **取值范围：**  - month:月  - year:年 **默认取值：** 不涉及
 
         :return: The period_type of this WafProductInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class WafProductInfo:
     def period_type(self, period_type):
         r"""Sets the period_type of this WafProductInfo.
 
-        订购周期类型 month: 月；year: 年
+        **参数解释：** 订购周期类型标识，用于指定套餐的订购时间周期单位 **约束限制：** 不涉及 **取值范围：**  - month:月  - year:年 **默认取值：** 不涉及
 
         :param period_type: The period_type of this WafProductInfo.
         :type period_type: str

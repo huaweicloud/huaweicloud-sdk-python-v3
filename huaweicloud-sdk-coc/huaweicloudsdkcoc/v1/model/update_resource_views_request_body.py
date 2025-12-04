@@ -19,7 +19,8 @@ class UpdateResourceViewsRequestBody:
         'resource_types': 'list[str]',
         'organization_id': 'str',
         'view_type': 'str',
-        'name': 'str'
+        'name': 'str',
+        'domain_ids': 'list[str]'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class UpdateResourceViewsRequestBody:
         'resource_types': 'resource_types',
         'organization_id': 'organization_id',
         'view_type': 'view_type',
-        'name': 'name'
+        'name': 'name',
+        'domain_ids': 'domain_ids'
     }
 
-    def __init__(self, organization_unit_ids=None, resource_types=None, organization_id=None, view_type=None, name=None):
+    def __init__(self, organization_unit_ids=None, resource_types=None, organization_id=None, view_type=None, name=None, domain_ids=None):
         r"""UpdateResourceViewsRequestBody
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class UpdateResourceViewsRequestBody:
         :type view_type: str
         :param name: **参数解释：** 视图名称。 **约束限制：** 不涉及。 **取值范围：** 用户自定义编辑。 **默认取值：** 不涉及。
         :type name: str
+        :param domain_ids: **参数解释：** 视图包含的租户账号id值组成列表。 **取值范围：** 不涉及。 example:   - id1   - id2
+        :type domain_ids: list[str]
         """
         
         
@@ -54,6 +58,7 @@ class UpdateResourceViewsRequestBody:
         self._organization_id = None
         self._view_type = None
         self._name = None
+        self._domain_ids = None
         self.discriminator = None
 
         self.organization_unit_ids = organization_unit_ids
@@ -62,6 +67,8 @@ class UpdateResourceViewsRequestBody:
             self.organization_id = organization_id
         self.view_type = view_type
         self.name = name
+        if domain_ids is not None:
+            self.domain_ids = domain_ids
 
     @property
     def organization_unit_ids(self):
@@ -172,6 +179,28 @@ class UpdateResourceViewsRequestBody:
         :type name: str
         """
         self._name = name
+
+    @property
+    def domain_ids(self):
+        r"""Gets the domain_ids of this UpdateResourceViewsRequestBody.
+
+        **参数解释：** 视图包含的租户账号id值组成列表。 **取值范围：** 不涉及。 example:   - id1   - id2
+
+        :return: The domain_ids of this UpdateResourceViewsRequestBody.
+        :rtype: list[str]
+        """
+        return self._domain_ids
+
+    @domain_ids.setter
+    def domain_ids(self, domain_ids):
+        r"""Sets the domain_ids of this UpdateResourceViewsRequestBody.
+
+        **参数解释：** 视图包含的租户账号id值组成列表。 **取值范围：** 不涉及。 example:   - id1   - id2
+
+        :param domain_ids: The domain_ids of this UpdateResourceViewsRequestBody.
+        :type domain_ids: list[str]
+        """
+        self._domain_ids = domain_ids
 
     def to_dict(self):
         result = {}

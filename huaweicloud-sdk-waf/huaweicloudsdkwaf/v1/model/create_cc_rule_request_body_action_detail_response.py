@@ -29,7 +29,7 @@ class CreateCcRuleRequestBodyActionDetailResponse:
 
         The model defined in huaweicloud sdk
 
-        :param content_type: 内容类型，值可为“application/json”、“text/html”、“text/xml”。
+        :param content_type: **参数解释：** 内容类型 **约束限制：** 不涉及 **取值范围：**  - text/html  - text/xml  - application/json  **默认取值：** 不涉及
         :type content_type: str
         :param content: 防护页面内容
         :type content: str
@@ -50,7 +50,7 @@ class CreateCcRuleRequestBodyActionDetailResponse:
     def content_type(self):
         r"""Gets the content_type of this CreateCcRuleRequestBodyActionDetailResponse.
 
-        内容类型，值可为“application/json”、“text/html”、“text/xml”。
+        **参数解释：** 内容类型 **约束限制：** 不涉及 **取值范围：**  - text/html  - text/xml  - application/json  **默认取值：** 不涉及
 
         :return: The content_type of this CreateCcRuleRequestBodyActionDetailResponse.
         :rtype: str
@@ -61,7 +61,7 @@ class CreateCcRuleRequestBodyActionDetailResponse:
     def content_type(self, content_type):
         r"""Sets the content_type of this CreateCcRuleRequestBodyActionDetailResponse.
 
-        内容类型，值可为“application/json”、“text/html”、“text/xml”。
+        **参数解释：** 内容类型 **约束限制：** 不涉及 **取值范围：**  - text/html  - text/xml  - application/json  **默认取值：** 不涉及
 
         :param content_type: The content_type of this CreateCcRuleRequestBodyActionDetailResponse.
         :type content_type: str

@@ -29,9 +29,9 @@ class ShowCeshierarchyRespQueues1:
 
         The model defined in huaweicloud sdk
 
-        :param name: Topic名称。
+        :param name: **参数解释**： Topic名称。 **取值范围**： 不涉及。
         :type name: str
-        :param partitions: 分区信息。
+        :param partitions: **参数解释**：  分区信息。
         :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespPartitions`]
         """
         
@@ -50,7 +50,7 @@ class ShowCeshierarchyRespQueues1:
     def name(self):
         r"""Gets the name of this ShowCeshierarchyRespQueues1.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowCeshierarchyRespQueues1.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowCeshierarchyRespQueues1:
     def name(self, name):
         r"""Sets the name of this ShowCeshierarchyRespQueues1.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowCeshierarchyRespQueues1.
         :type name: str
@@ -72,7 +72,7 @@ class ShowCeshierarchyRespQueues1:
     def partitions(self):
         r"""Gets the partitions of this ShowCeshierarchyRespQueues1.
 
-        分区信息。
+        **参数解释**：  分区信息。
 
         :return: The partitions of this ShowCeshierarchyRespQueues1.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespPartitions`]
@@ -83,7 +83,7 @@ class ShowCeshierarchyRespQueues1:
     def partitions(self, partitions):
         r"""Sets the partitions of this ShowCeshierarchyRespQueues1.
 
-        分区信息。
+        **参数解释**：  分区信息。
 
         :param partitions: The partitions of this ShowCeshierarchyRespQueues1.
         :type partitions: list[:class:`huaweicloudsdkkafka.v2.ShowCeshierarchyRespPartitions`]

@@ -35,15 +35,15 @@ class ShowGroupsRespGroupGroupMessageOffsets:
 
         The model defined in huaweicloud sdk
 
-        :param partition: 分区编号。
+        :param partition: **参数解释**： 分区编号。 **取值范围**： 不涉及。
         :type partition: int
-        :param lag: 剩余可消费消息数，即消息堆积数。
+        :param lag: **参数解释**： 剩余可消费消息数，即消息堆积数。 **取值范围**： 不涉及。
         :type lag: int
-        :param topic: Topic名称。
+        :param topic: **参数解释**： Topic名称。 **取值范围**： 不涉及。
         :type topic: str
-        :param message_current_offset: 当前消费进度。
+        :param message_current_offset: **参数解释**： 当前消费进度。 **取值范围**： 不涉及。
         :type message_current_offset: int
-        :param message_log_end_offset: 最大消息位置（LEO）。
+        :param message_log_end_offset: **参数解释**： 最大消息位置（LEO）。 **取值范围**： 不涉及。
         :type message_log_end_offset: int
         """
         
@@ -71,7 +71,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def partition(self):
         r"""Gets the partition of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        分区编号。
+        **参数解释**： 分区编号。 **取值范围**： 不涉及。
 
         :return: The partition of this ShowGroupsRespGroupGroupMessageOffsets.
         :rtype: int
@@ -82,7 +82,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def partition(self, partition):
         r"""Sets the partition of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        分区编号。
+        **参数解释**： 分区编号。 **取值范围**： 不涉及。
 
         :param partition: The partition of this ShowGroupsRespGroupGroupMessageOffsets.
         :type partition: int
@@ -93,7 +93,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def lag(self):
         r"""Gets the lag of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        剩余可消费消息数，即消息堆积数。
+        **参数解释**： 剩余可消费消息数，即消息堆积数。 **取值范围**： 不涉及。
 
         :return: The lag of this ShowGroupsRespGroupGroupMessageOffsets.
         :rtype: int
@@ -104,7 +104,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def lag(self, lag):
         r"""Sets the lag of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        剩余可消费消息数，即消息堆积数。
+        **参数解释**： 剩余可消费消息数，即消息堆积数。 **取值范围**： 不涉及。
 
         :param lag: The lag of this ShowGroupsRespGroupGroupMessageOffsets.
         :type lag: int
@@ -115,7 +115,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def topic(self):
         r"""Gets the topic of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :return: The topic of this ShowGroupsRespGroupGroupMessageOffsets.
         :rtype: str
@@ -126,7 +126,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def topic(self, topic):
         r"""Sets the topic of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :param topic: The topic of this ShowGroupsRespGroupGroupMessageOffsets.
         :type topic: str
@@ -137,7 +137,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def message_current_offset(self):
         r"""Gets the message_current_offset of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        当前消费进度。
+        **参数解释**： 当前消费进度。 **取值范围**： 不涉及。
 
         :return: The message_current_offset of this ShowGroupsRespGroupGroupMessageOffsets.
         :rtype: int
@@ -148,7 +148,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def message_current_offset(self, message_current_offset):
         r"""Sets the message_current_offset of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        当前消费进度。
+        **参数解释**： 当前消费进度。 **取值范围**： 不涉及。
 
         :param message_current_offset: The message_current_offset of this ShowGroupsRespGroupGroupMessageOffsets.
         :type message_current_offset: int
@@ -159,7 +159,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def message_log_end_offset(self):
         r"""Gets the message_log_end_offset of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        最大消息位置（LEO）。
+        **参数解释**： 最大消息位置（LEO）。 **取值范围**： 不涉及。
 
         :return: The message_log_end_offset of this ShowGroupsRespGroupGroupMessageOffsets.
         :rtype: int
@@ -170,7 +170,7 @@ class ShowGroupsRespGroupGroupMessageOffsets:
     def message_log_end_offset(self, message_log_end_offset):
         r"""Sets the message_log_end_offset of this ShowGroupsRespGroupGroupMessageOffsets.
 
-        最大消息位置（LEO）。
+        **参数解释**： 最大消息位置（LEO）。 **取值范围**： 不涉及。
 
         :param message_log_end_offset: The message_log_end_offset of this ShowGroupsRespGroupGroupMessageOffsets.
         :type message_log_end_offset: int

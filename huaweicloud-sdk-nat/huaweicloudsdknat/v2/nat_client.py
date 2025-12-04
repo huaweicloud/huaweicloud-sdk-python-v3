@@ -3559,6 +3559,73 @@ class NatClient(Client):
 
         return http_info
 
+    def update_nat_gateway_to_period(self, request):
+        r"""公网NAT网关按需转包
+
+        公网NAT网关按需转包。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateNatGatewayToPeriod
+        :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayToPeriodRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayToPeriodResponse`
+        """
+        http_info = self._update_nat_gateway_to_period_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_nat_gateway_to_period_invoker(self, request):
+        http_info = self._update_nat_gateway_to_period_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_nat_gateway_to_period_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/nat_gateways/{nat_gateway_id}/change_to_period",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNatGatewayToPeriodResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'nat_gateway_id' in local_var_params:
+            path_params['nat_gateway_id'] = local_var_params['nat_gateway_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_private_nat(self, request):
         r"""更新私网NAT网关
 

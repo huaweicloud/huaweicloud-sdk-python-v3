@@ -36,8 +36,7 @@ class InstallationConfig:
         self._nodes = None
         self.discriminator = None
 
-        if nodes is not None:
-            self.nodes = nodes
+        self.nodes = nodes
 
     @property
     def nodes(self):

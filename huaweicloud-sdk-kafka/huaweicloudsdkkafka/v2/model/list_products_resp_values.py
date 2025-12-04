@@ -33,13 +33,13 @@ class ListProductsRespValues:
 
         The model defined in huaweicloud sdk
 
-        :param detail: 规格详情。
+        :param detail: **参数解释**： 规格详情。
         :type detail: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespDetail`]
-        :param name: 实例类型。
+        :param name: **参数解释**： 实例类型。 **取值范围**： 不涉及。
         :type name: str
-        :param unavailable_zones: 资源售罄的可用区列表。
+        :param unavailable_zones: **参数解释**： 资源售罄的可用区列表。 **取值范围**： 不涉及。
         :type unavailable_zones: list[str]
-        :param available_zones: 有可用资源的可用区列表。
+        :param available_zones: **参数解释**： 有可用资源的可用区列表。 **取值范围**： 不涉及。
         :type available_zones: list[str]
         """
         
@@ -64,7 +64,7 @@ class ListProductsRespValues:
     def detail(self):
         r"""Gets the detail of this ListProductsRespValues.
 
-        规格详情。
+        **参数解释**： 规格详情。
 
         :return: The detail of this ListProductsRespValues.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespDetail`]
@@ -75,7 +75,7 @@ class ListProductsRespValues:
     def detail(self, detail):
         r"""Sets the detail of this ListProductsRespValues.
 
-        规格详情。
+        **参数解释**： 规格详情。
 
         :param detail: The detail of this ListProductsRespValues.
         :type detail: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespDetail`]
@@ -86,7 +86,7 @@ class ListProductsRespValues:
     def name(self):
         r"""Gets the name of this ListProductsRespValues.
 
-        实例类型。
+        **参数解释**： 实例类型。 **取值范围**： 不涉及。
 
         :return: The name of this ListProductsRespValues.
         :rtype: str
@@ -97,7 +97,7 @@ class ListProductsRespValues:
     def name(self, name):
         r"""Sets the name of this ListProductsRespValues.
 
-        实例类型。
+        **参数解释**： 实例类型。 **取值范围**： 不涉及。
 
         :param name: The name of this ListProductsRespValues.
         :type name: str
@@ -108,7 +108,7 @@ class ListProductsRespValues:
     def unavailable_zones(self):
         r"""Gets the unavailable_zones of this ListProductsRespValues.
 
-        资源售罄的可用区列表。
+        **参数解释**： 资源售罄的可用区列表。 **取值范围**： 不涉及。
 
         :return: The unavailable_zones of this ListProductsRespValues.
         :rtype: list[str]
@@ -119,7 +119,7 @@ class ListProductsRespValues:
     def unavailable_zones(self, unavailable_zones):
         r"""Sets the unavailable_zones of this ListProductsRespValues.
 
-        资源售罄的可用区列表。
+        **参数解释**： 资源售罄的可用区列表。 **取值范围**： 不涉及。
 
         :param unavailable_zones: The unavailable_zones of this ListProductsRespValues.
         :type unavailable_zones: list[str]
@@ -130,7 +130,7 @@ class ListProductsRespValues:
     def available_zones(self):
         r"""Gets the available_zones of this ListProductsRespValues.
 
-        有可用资源的可用区列表。
+        **参数解释**： 有可用资源的可用区列表。 **取值范围**： 不涉及。
 
         :return: The available_zones of this ListProductsRespValues.
         :rtype: list[str]
@@ -141,7 +141,7 @@ class ListProductsRespValues:
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this ListProductsRespValues.
 
-        有可用资源的可用区列表。
+        **参数解释**： 有可用资源的可用区列表。 **取值范围**： 不涉及。
 
         :param available_zones: The available_zones of this ListProductsRespValues.
         :type available_zones: list[str]

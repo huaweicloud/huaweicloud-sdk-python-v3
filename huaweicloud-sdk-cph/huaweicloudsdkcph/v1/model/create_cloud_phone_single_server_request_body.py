@@ -59,7 +59,7 @@ class CreateCloudPhoneSingleServerRequestBody:
         :type nics: list[:class:`huaweicloudsdkcph.v1.NicForSingleServer`]
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBodyPublicIp`
-        :param availability_zone: 待创建云手机裸服务器所在的可用区（AZ）的名称。如上海一可用区1为cn-east-3a。
+        :param availability_zone: 待创建云手机裸服务器所在的可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
         :type availability_zone: str
         :param data_volume: 
         :type data_volume: :class:`huaweicloudsdkcph.v1.CreateCloudPhoneSingleServerRequestBodyDataVolume`
@@ -230,7 +230,7 @@ class CreateCloudPhoneSingleServerRequestBody:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateCloudPhoneSingleServerRequestBody.
 
-        待创建云手机裸服务器所在的可用区（AZ）的名称。如上海一可用区1为cn-east-3a。
+        待创建云手机裸服务器所在的可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
 
         :return: The availability_zone of this CreateCloudPhoneSingleServerRequestBody.
         :rtype: str
@@ -241,7 +241,7 @@ class CreateCloudPhoneSingleServerRequestBody:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateCloudPhoneSingleServerRequestBody.
 
-        待创建云手机裸服务器所在的可用区（AZ）的名称。如上海一可用区1为cn-east-3a。
+        待创建云手机裸服务器所在的可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
 
         :param availability_zone: The availability_zone of this CreateCloudPhoneSingleServerRequestBody.
         :type availability_zone: str

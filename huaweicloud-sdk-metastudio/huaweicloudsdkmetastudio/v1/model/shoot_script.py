@@ -53,7 +53,7 @@ class ShootScript:
         :type audio_drive_file_external_url: str
         :param background_config: 背景配置。
         :type background_config: list[:class:`huaweicloudsdkmetastudio.v1.BackgroundConfigInfo`]
-        :param layer_config: 图层配置。
+        :param layer_config: 图层配置。 &gt; * 视频编码格式采用VP8且数字人模型和输出视频的分辨率不一致时，该参数必须携带
         :type layer_config: list[:class:`huaweicloudsdkmetastudio.v1.LayerConfig`]
         :param audio_config: 
         :type audio_config: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
@@ -220,7 +220,7 @@ class ShootScript:
     def layer_config(self):
         r"""Gets the layer_config of this ShootScript.
 
-        图层配置。
+        图层配置。 > * 视频编码格式采用VP8且数字人模型和输出视频的分辨率不一致时，该参数必须携带
 
         :return: The layer_config of this ShootScript.
         :rtype: list[:class:`huaweicloudsdkmetastudio.v1.LayerConfig`]
@@ -231,7 +231,7 @@ class ShootScript:
     def layer_config(self, layer_config):
         r"""Sets the layer_config of this ShootScript.
 
-        图层配置。
+        图层配置。 > * 视频编码格式采用VP8且数字人模型和输出视频的分辨率不一致时，该参数必须携带
 
         :param layer_config: The layer_config of this ShootScript.
         :type layer_config: list[:class:`huaweicloudsdkmetastudio.v1.LayerConfig`]

@@ -29,7 +29,7 @@ class ListEngineSupportFeaturesEntity:
 
         The model defined in huaweicloud sdk
 
-        :param name: 功能名称。
+        :param name: **参数解释**： 功能名称。 **取值范围**： 不涉及。
         :type name: str
         :param properties: 
         :type properties: :class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesPropertiesEntity`
@@ -50,7 +50,7 @@ class ListEngineSupportFeaturesEntity:
     def name(self):
         r"""Gets the name of this ListEngineSupportFeaturesEntity.
 
-        功能名称。
+        **参数解释**： 功能名称。 **取值范围**： 不涉及。
 
         :return: The name of this ListEngineSupportFeaturesEntity.
         :rtype: str
@@ -61,7 +61,7 @@ class ListEngineSupportFeaturesEntity:
     def name(self, name):
         r"""Sets the name of this ListEngineSupportFeaturesEntity.
 
-        功能名称。
+        **参数解释**： 功能名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ListEngineSupportFeaturesEntity.
         :type name: str

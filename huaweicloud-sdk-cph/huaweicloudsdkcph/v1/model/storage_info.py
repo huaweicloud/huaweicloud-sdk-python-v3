@@ -37,7 +37,7 @@ class StorageInfo:
 
         :param phone_id: 云手机ID。
         :type phone_id: str
-        :param include_files: 需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、星号（*）、等号这些字符。[文件导出打包时仅保留路径最后一级的文件权限、属主、标签等元数据，如对文件的上层目录权限有要求，建议参考[云手机数据备份与恢复](https://support.huaweicloud.com/api-cph/cph_api_0801.html)](tag:hws)。
+        :param include_files: 需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、星号（*）、波浪号（~）、等号这些字符，星号只能在文件路径末尾。[文件导出打包时仅保留路径最后一级的文件权限、属主、标签等元数据，如对文件的上层目录权限有要求，建议参考[云手机数据备份与恢复](https://support.huaweicloud.com/api-cph/cph_api_0801.html)。](tag:hws)
         :type include_files: list[str]
         :param exclude_files: 不能导出数据的存储路径。exclude_files优先级比include_files高，如果冲突，exclude_files生效。 路径要求同include_files。
         :type exclude_files: list[str]
@@ -89,7 +89,7 @@ class StorageInfo:
     def include_files(self):
         r"""Gets the include_files of this StorageInfo.
 
-        需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、星号（*）、等号这些字符。[文件导出打包时仅保留路径最后一级的文件权限、属主、标签等元数据，如对文件的上层目录权限有要求，建议参考[云手机数据备份与恢复](https://support.huaweicloud.com/api-cph/cph_api_0801.html)](tag:hws)。
+        需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、星号（*）、波浪号（~）、等号这些字符，星号只能在文件路径末尾。[文件导出打包时仅保留路径最后一级的文件权限、属主、标签等元数据，如对文件的上层目录权限有要求，建议参考[云手机数据备份与恢复](https://support.huaweicloud.com/api-cph/cph_api_0801.html)。](tag:hws)
 
         :return: The include_files of this StorageInfo.
         :rtype: list[str]
@@ -100,7 +100,7 @@ class StorageInfo:
     def include_files(self, include_files):
         r"""Sets the include_files of this StorageInfo.
 
-        需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、星号（*）、等号这些字符。[文件导出打包时仅保留路径最后一级的文件权限、属主、标签等元数据，如对文件的上层目录权限有要求，建议参考[云手机数据备份与恢复](https://support.huaweicloud.com/api-cph/cph_api_0801.html)](tag:hws)。
+        需要导出数据的存储路径，绝对路径，最大长度4096字节。仅支持导出/data和、cache目录下的数据。目前只支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、星号（*）、波浪号（~）、等号这些字符，星号只能在文件路径末尾。[文件导出打包时仅保留路径最后一级的文件权限、属主、标签等元数据，如对文件的上层目录权限有要求，建议参考[云手机数据备份与恢复](https://support.huaweicloud.com/api-cph/cph_api_0801.html)。](tag:hws)
 
         :param include_files: The include_files of this StorageInfo.
         :type include_files: list[str]

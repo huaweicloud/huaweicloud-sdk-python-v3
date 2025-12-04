@@ -20,7 +20,7 @@ class ShowInstanceExtendProductInfoRespDetail:
         'partition_num': 'str',
         'product_id': 'str',
         'spec_code': 'str',
-        'io': 'list[ListProductsRespIo]',
+        'io': 'list[ShowInstanceExtendProductInfoRespIo]',
         'bandwidth': 'str',
         'recommend_max_cons_groups': 'str',
         'unavailable_zones': 'list[str]',
@@ -60,7 +60,7 @@ class ShowInstanceExtendProductInfoRespDetail:
         :param spec_code: 规格ID。
         :type spec_code: str
         :param io: IO信息。
-        :type io: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespIo`]
+        :type io: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespIo`]
         :param bandwidth: Kafka实例的基准带宽。
         :type bandwidth: str
         :param recommend_max_cons_groups: Kafka实例最大消费组数参考值。
@@ -233,7 +233,7 @@ class ShowInstanceExtendProductInfoRespDetail:
         IO信息。
 
         :return: The io of this ShowInstanceExtendProductInfoRespDetail.
-        :rtype: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespIo`]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespIo`]
         """
         return self._io
 
@@ -244,7 +244,7 @@ class ShowInstanceExtendProductInfoRespDetail:
         IO信息。
 
         :param io: The io of this ShowInstanceExtendProductInfoRespDetail.
-        :type io: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespIo`]
+        :type io: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceExtendProductInfoRespIo`]
         """
         self._io = io
 

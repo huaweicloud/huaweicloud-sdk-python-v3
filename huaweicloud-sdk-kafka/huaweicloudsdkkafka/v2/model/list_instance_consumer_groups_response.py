@@ -30,9 +30,9 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param groups: 所有的消费组。
+        :param groups: **参数解释**： 所有消费组的信息。
         :type groups: list[:class:`huaweicloudsdkkafka.v2.GroupInfoSimple`]
-        :param total: 所有的消费组总数。
+        :param total: **参数解释**： 消费组总数。 **取值范围**： 不涉及。
         :type total: int
         """
         
@@ -51,7 +51,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def groups(self):
         r"""Gets the groups of this ListInstanceConsumerGroupsResponse.
 
-        所有的消费组。
+        **参数解释**： 所有消费组的信息。
 
         :return: The groups of this ListInstanceConsumerGroupsResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.GroupInfoSimple`]
@@ -62,7 +62,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def groups(self, groups):
         r"""Sets the groups of this ListInstanceConsumerGroupsResponse.
 
-        所有的消费组。
+        **参数解释**： 所有消费组的信息。
 
         :param groups: The groups of this ListInstanceConsumerGroupsResponse.
         :type groups: list[:class:`huaweicloudsdkkafka.v2.GroupInfoSimple`]
@@ -73,7 +73,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ListInstanceConsumerGroupsResponse.
 
-        所有的消费组总数。
+        **参数解释**： 消费组总数。 **取值范围**： 不涉及。
 
         :return: The total of this ListInstanceConsumerGroupsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListInstanceConsumerGroupsResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ListInstanceConsumerGroupsResponse.
 
-        所有的消费组总数。
+        **参数解释**： 消费组总数。 **取值范围**： 不涉及。
 
         :param total: The total of this ListInstanceConsumerGroupsResponse.
         :type total: int

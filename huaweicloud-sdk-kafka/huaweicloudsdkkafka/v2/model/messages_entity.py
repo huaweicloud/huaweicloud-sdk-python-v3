@@ -47,27 +47,27 @@ class MessagesEntity:
 
         The model defined in huaweicloud sdk
 
-        :param topic: Topic名称。
+        :param topic: **参数解释**： Topic名称。 **取值范围**： 不涉及。
         :type topic: str
-        :param partition: 消息所在的分区。
+        :param partition: **参数解释**： 消息所在的分区。 **取值范围**： 不涉及。
         :type partition: int
-        :param key: 消息key。
+        :param key: **参数解释**： 消息key。 **取值范围**： 不涉及。
         :type key: str
-        :param value: 消息内容。
+        :param value: **参数解释**： 消息内容。 **取值范围**： 不涉及。
         :type value: str
-        :param size: 消息大小。
+        :param size: **参数解释**： 消息大小。 **取值范围**： 不涉及。
         :type size: int
-        :param timestamp: 生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        :param timestamp: **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及。
         :type timestamp: int
-        :param huge_message: 大数据标识。
+        :param huge_message: **参数解释**： 大数据标识。 **取值范围**： 不涉及。
         :type huge_message: bool
-        :param message_offset: 消息偏移量。
+        :param message_offset: **参数解释**： 消息偏移量。 **取值范围**： 不涉及。
         :type message_offset: int
-        :param message_id: 消息ID。
+        :param message_id: **参数解释**： 消息ID。 **取值范围**： 不涉及。
         :type message_id: str
-        :param app_id: 应用ID。
+        :param app_id: **参数解释**： 应用ID。 **取值范围**： 不涉及。
         :type app_id: str
-        :param tag: 消息标签。
+        :param tag: **参数解释**： 消息标签。 **取值范围**： 不涉及。
         :type tag: str
         """
         
@@ -113,7 +113,7 @@ class MessagesEntity:
     def topic(self):
         r"""Gets the topic of this MessagesEntity.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :return: The topic of this MessagesEntity.
         :rtype: str
@@ -124,7 +124,7 @@ class MessagesEntity:
     def topic(self, topic):
         r"""Sets the topic of this MessagesEntity.
 
-        Topic名称。
+        **参数解释**： Topic名称。 **取值范围**： 不涉及。
 
         :param topic: The topic of this MessagesEntity.
         :type topic: str
@@ -135,7 +135,7 @@ class MessagesEntity:
     def partition(self):
         r"""Gets the partition of this MessagesEntity.
 
-        消息所在的分区。
+        **参数解释**： 消息所在的分区。 **取值范围**： 不涉及。
 
         :return: The partition of this MessagesEntity.
         :rtype: int
@@ -146,7 +146,7 @@ class MessagesEntity:
     def partition(self, partition):
         r"""Sets the partition of this MessagesEntity.
 
-        消息所在的分区。
+        **参数解释**： 消息所在的分区。 **取值范围**： 不涉及。
 
         :param partition: The partition of this MessagesEntity.
         :type partition: int
@@ -157,7 +157,7 @@ class MessagesEntity:
     def key(self):
         r"""Gets the key of this MessagesEntity.
 
-        消息key。
+        **参数解释**： 消息key。 **取值范围**： 不涉及。
 
         :return: The key of this MessagesEntity.
         :rtype: str
@@ -168,7 +168,7 @@ class MessagesEntity:
     def key(self, key):
         r"""Sets the key of this MessagesEntity.
 
-        消息key。
+        **参数解释**： 消息key。 **取值范围**： 不涉及。
 
         :param key: The key of this MessagesEntity.
         :type key: str
@@ -179,7 +179,7 @@ class MessagesEntity:
     def value(self):
         r"""Gets the value of this MessagesEntity.
 
-        消息内容。
+        **参数解释**： 消息内容。 **取值范围**： 不涉及。
 
         :return: The value of this MessagesEntity.
         :rtype: str
@@ -190,7 +190,7 @@ class MessagesEntity:
     def value(self, value):
         r"""Sets the value of this MessagesEntity.
 
-        消息内容。
+        **参数解释**： 消息内容。 **取值范围**： 不涉及。
 
         :param value: The value of this MessagesEntity.
         :type value: str
@@ -201,7 +201,7 @@ class MessagesEntity:
     def size(self):
         r"""Gets the size of this MessagesEntity.
 
-        消息大小。
+        **参数解释**： 消息大小。 **取值范围**： 不涉及。
 
         :return: The size of this MessagesEntity.
         :rtype: int
@@ -212,7 +212,7 @@ class MessagesEntity:
     def size(self, size):
         r"""Sets the size of this MessagesEntity.
 
-        消息大小。
+        **参数解释**： 消息大小。 **取值范围**： 不涉及。
 
         :param size: The size of this MessagesEntity.
         :type size: int
@@ -223,7 +223,7 @@ class MessagesEntity:
     def timestamp(self):
         r"""Gets the timestamp of this MessagesEntity.
 
-        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及。
 
         :return: The timestamp of this MessagesEntity.
         :rtype: int
@@ -234,7 +234,7 @@ class MessagesEntity:
     def timestamp(self, timestamp):
         r"""Sets the timestamp of this MessagesEntity.
 
-        生产消息的时间。 格式为Unix时间戳。单位为毫秒。
+        **参数解释**： 生产消息的时间。 格式为Unix时间戳。单位为毫秒。 **取值范围**： 不涉及。
 
         :param timestamp: The timestamp of this MessagesEntity.
         :type timestamp: int
@@ -245,7 +245,7 @@ class MessagesEntity:
     def huge_message(self):
         r"""Gets the huge_message of this MessagesEntity.
 
-        大数据标识。
+        **参数解释**： 大数据标识。 **取值范围**： 不涉及。
 
         :return: The huge_message of this MessagesEntity.
         :rtype: bool
@@ -256,7 +256,7 @@ class MessagesEntity:
     def huge_message(self, huge_message):
         r"""Sets the huge_message of this MessagesEntity.
 
-        大数据标识。
+        **参数解释**： 大数据标识。 **取值范围**： 不涉及。
 
         :param huge_message: The huge_message of this MessagesEntity.
         :type huge_message: bool
@@ -267,7 +267,7 @@ class MessagesEntity:
     def message_offset(self):
         r"""Gets the message_offset of this MessagesEntity.
 
-        消息偏移量。
+        **参数解释**： 消息偏移量。 **取值范围**： 不涉及。
 
         :return: The message_offset of this MessagesEntity.
         :rtype: int
@@ -278,7 +278,7 @@ class MessagesEntity:
     def message_offset(self, message_offset):
         r"""Sets the message_offset of this MessagesEntity.
 
-        消息偏移量。
+        **参数解释**： 消息偏移量。 **取值范围**： 不涉及。
 
         :param message_offset: The message_offset of this MessagesEntity.
         :type message_offset: int
@@ -289,7 +289,7 @@ class MessagesEntity:
     def message_id(self):
         r"""Gets the message_id of this MessagesEntity.
 
-        消息ID。
+        **参数解释**： 消息ID。 **取值范围**： 不涉及。
 
         :return: The message_id of this MessagesEntity.
         :rtype: str
@@ -300,7 +300,7 @@ class MessagesEntity:
     def message_id(self, message_id):
         r"""Sets the message_id of this MessagesEntity.
 
-        消息ID。
+        **参数解释**： 消息ID。 **取值范围**： 不涉及。
 
         :param message_id: The message_id of this MessagesEntity.
         :type message_id: str
@@ -311,7 +311,7 @@ class MessagesEntity:
     def app_id(self):
         r"""Gets the app_id of this MessagesEntity.
 
-        应用ID。
+        **参数解释**： 应用ID。 **取值范围**： 不涉及。
 
         :return: The app_id of this MessagesEntity.
         :rtype: str
@@ -322,7 +322,7 @@ class MessagesEntity:
     def app_id(self, app_id):
         r"""Sets the app_id of this MessagesEntity.
 
-        应用ID。
+        **参数解释**： 应用ID。 **取值范围**： 不涉及。
 
         :param app_id: The app_id of this MessagesEntity.
         :type app_id: str
@@ -333,7 +333,7 @@ class MessagesEntity:
     def tag(self):
         r"""Gets the tag of this MessagesEntity.
 
-        消息标签。
+        **参数解释**： 消息标签。 **取值范围**： 不涉及。
 
         :return: The tag of this MessagesEntity.
         :rtype: str
@@ -344,7 +344,7 @@ class MessagesEntity:
     def tag(self, tag):
         r"""Sets the tag of this MessagesEntity.
 
-        消息标签。
+        **参数解释**： 消息标签。 **取值范围**： 不涉及。
 
         :param tag: The tag of this MessagesEntity.
         :type tag: str

@@ -15,7 +15,7 @@ class UpdateBandwidthPolicyRequest:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str',
+        'task_id': 'int',
         'body': 'UpdateBandwidthPolicyReq'
     }
 
@@ -30,7 +30,7 @@ class UpdateBandwidthPolicyRequest:
         The model defined in huaweicloud sdk
 
         :param task_id: 任务ID。
-        :type task_id: str
+        :type task_id: int
         :param body: Body of the UpdateBandwidthPolicyRequest
         :type body: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyReq`
         """
@@ -52,7 +52,7 @@ class UpdateBandwidthPolicyRequest:
         任务ID。
 
         :return: The task_id of this UpdateBandwidthPolicyRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._task_id
 
@@ -63,7 +63,7 @@ class UpdateBandwidthPolicyRequest:
         任务ID。
 
         :param task_id: The task_id of this UpdateBandwidthPolicyRequest.
-        :type task_id: str
+        :type task_id: int
         """
         self._task_id = task_id
 

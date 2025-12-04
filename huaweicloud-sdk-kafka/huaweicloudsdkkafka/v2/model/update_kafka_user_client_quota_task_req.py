@@ -26,10 +26,10 @@ class UpdateKafkaUserClientQuotaTaskReq:
     attribute_map = {
         'user': 'user',
         'client': 'client',
-        'user_default': 'user-default',
-        'client_default': 'client-default',
-        'producer_byte_rate': 'producer-byte-rate',
-        'consumer_byte_rate': 'consumer-byte-rate'
+        'user_default': 'user_default',
+        'client_default': 'client_default',
+        'producer_byte_rate': 'producer_byte_rate',
+        'consumer_byte_rate': 'consumer_byte_rate'
     }
 
     def __init__(self, user=None, client=None, user_default=None, client_default=None, producer_byte_rate=None, consumer_byte_rate=None):
@@ -41,9 +41,9 @@ class UpdateKafkaUserClientQuotaTaskReq:
         :type user: str
         :param client: 客户端ID。  不对全部用户/客户端限流时，用户名和客户端ID不能同时为空。
         :type client: str
-        :param user_default: 是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
+        :param user_default: 是否使用用户默认设置。   - 是：表示对全部用户限流。此时不能同时设置用户名。   - 否：表示对特定用户限流。此时需要设置用户名。
         :type user_default: bool
-        :param client_default: 是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
+        :param client_default: 是否使用客户端默认设置。   - 是：表示对全部客户端限流。此时不能设置客户端ID。   - 否：表示对特定客户端限流。此时需要设置客户端ID。
         :type client_default: bool
         :param producer_byte_rate: 生产上限速率（单位为B/s）。
         :type producer_byte_rate: int
@@ -122,7 +122,7 @@ class UpdateKafkaUserClientQuotaTaskReq:
     def user_default(self):
         r"""Gets the user_default of this UpdateKafkaUserClientQuotaTaskReq.
 
-        是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
+        是否使用用户默认设置。   - 是：表示对全部用户限流。此时不能同时设置用户名。   - 否：表示对特定用户限流。此时需要设置用户名。
 
         :return: The user_default of this UpdateKafkaUserClientQuotaTaskReq.
         :rtype: bool
@@ -133,7 +133,7 @@ class UpdateKafkaUserClientQuotaTaskReq:
     def user_default(self, user_default):
         r"""Sets the user_default of this UpdateKafkaUserClientQuotaTaskReq.
 
-        是否使用用户默认设置。   - 是，表示对全部用户限流。此时不能同时设置用户名。   - 否，表示对特定用户限流。此时需要设置用户名。
+        是否使用用户默认设置。   - 是：表示对全部用户限流。此时不能同时设置用户名。   - 否：表示对特定用户限流。此时需要设置用户名。
 
         :param user_default: The user_default of this UpdateKafkaUserClientQuotaTaskReq.
         :type user_default: bool
@@ -144,7 +144,7 @@ class UpdateKafkaUserClientQuotaTaskReq:
     def client_default(self):
         r"""Gets the client_default of this UpdateKafkaUserClientQuotaTaskReq.
 
-        是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
+        是否使用客户端默认设置。   - 是：表示对全部客户端限流。此时不能设置客户端ID。   - 否：表示对特定客户端限流。此时需要设置客户端ID。
 
         :return: The client_default of this UpdateKafkaUserClientQuotaTaskReq.
         :rtype: bool
@@ -155,7 +155,7 @@ class UpdateKafkaUserClientQuotaTaskReq:
     def client_default(self, client_default):
         r"""Sets the client_default of this UpdateKafkaUserClientQuotaTaskReq.
 
-        是否使用客户端默认设置。   - 是，表示对全部客户端限流。此时不能设置客户端ID。   - 否，表示对特定客户端限流。此时需要设置客户端ID。
+        是否使用客户端默认设置。   - 是：表示对全部客户端限流。此时不能设置客户端ID。   - 否：表示对特定客户端限流。此时需要设置客户端ID。
 
         :param client_default: The client_default of this UpdateKafkaUserClientQuotaTaskReq.
         :type client_default: bool

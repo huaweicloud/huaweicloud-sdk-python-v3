@@ -15,28 +15,35 @@ class UpdateNamespaceRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'metadata': 'NamespaceMetadata'
+        'metadata': 'NamespaceMetadata',
+        'cve_allowlist': 'UpdateCVEAllowlistRequest'
     }
 
     attribute_map = {
-        'metadata': 'metadata'
+        'metadata': 'metadata',
+        'cve_allowlist': 'cve_allowlist'
     }
 
-    def __init__(self, metadata=None):
+    def __init__(self, metadata=None, cve_allowlist=None):
         r"""UpdateNamespaceRequestBody
 
         The model defined in huaweicloud sdk
 
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkswr.v2.NamespaceMetadata`
+        :param cve_allowlist: 
+        :type cve_allowlist: :class:`huaweicloudsdkswr.v2.UpdateCVEAllowlistRequest`
         """
         
         
 
         self._metadata = None
+        self._cve_allowlist = None
         self.discriminator = None
 
         self.metadata = metadata
+        if cve_allowlist is not None:
+            self.cve_allowlist = cve_allowlist
 
     @property
     def metadata(self):
@@ -55,6 +62,24 @@ class UpdateNamespaceRequestBody:
         :type metadata: :class:`huaweicloudsdkswr.v2.NamespaceMetadata`
         """
         self._metadata = metadata
+
+    @property
+    def cve_allowlist(self):
+        r"""Gets the cve_allowlist of this UpdateNamespaceRequestBody.
+
+        :return: The cve_allowlist of this UpdateNamespaceRequestBody.
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateCVEAllowlistRequest`
+        """
+        return self._cve_allowlist
+
+    @cve_allowlist.setter
+    def cve_allowlist(self, cve_allowlist):
+        r"""Sets the cve_allowlist of this UpdateNamespaceRequestBody.
+
+        :param cve_allowlist: The cve_allowlist of this UpdateNamespaceRequestBody.
+        :type cve_allowlist: :class:`huaweicloudsdkswr.v2.UpdateCVEAllowlistRequest`
+        """
+        self._cve_allowlist = cve_allowlist
 
     def to_dict(self):
         result = {}

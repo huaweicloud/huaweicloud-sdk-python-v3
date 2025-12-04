@@ -29,7 +29,6 @@ class ShowSyncTaskResponse(SdkResponse):
         'enable_kms': 'bool',
         'enable_metadata_migration': 'bool',
         'enable_restore': 'bool',
-        'dst_storage_policy': 'str',
         'app_id': 'str',
         'monthly_acceptance_request': 'int',
         'monthly_success_object': 'int',
@@ -37,6 +36,7 @@ class ShowSyncTaskResponse(SdkResponse):
         'monthly_skip_object': 'int',
         'monthly_size': 'int',
         'object_overwrite_mode': 'str',
+        'dst_storage_policy': 'str',
         'consistency_check': 'str'
     }
 
@@ -54,7 +54,6 @@ class ShowSyncTaskResponse(SdkResponse):
         'enable_kms': 'enable_kms',
         'enable_metadata_migration': 'enable_metadata_migration',
         'enable_restore': 'enable_restore',
-        'dst_storage_policy': 'dst_storage_policy',
         'app_id': 'app_id',
         'monthly_acceptance_request': 'monthly_acceptance_request',
         'monthly_success_object': 'monthly_success_object',
@@ -62,10 +61,11 @@ class ShowSyncTaskResponse(SdkResponse):
         'monthly_skip_object': 'monthly_skip_object',
         'monthly_size': 'monthly_size',
         'object_overwrite_mode': 'object_overwrite_mode',
+        'dst_storage_policy': 'dst_storage_policy',
         'consistency_check': 'consistency_check'
     }
 
-    def __init__(self, sync_task_id=None, src_cloud_type=None, src_region=None, src_bucket=None, create_time=None, last_start_time=None, dst_bucket=None, dst_region=None, description=None, status=None, enable_kms=None, enable_metadata_migration=None, enable_restore=None, dst_storage_policy=None, app_id=None, monthly_acceptance_request=None, monthly_success_object=None, monthly_failure_object=None, monthly_skip_object=None, monthly_size=None, object_overwrite_mode=None, consistency_check=None):
+    def __init__(self, sync_task_id=None, src_cloud_type=None, src_region=None, src_bucket=None, create_time=None, last_start_time=None, dst_bucket=None, dst_region=None, description=None, status=None, enable_kms=None, enable_metadata_migration=None, enable_restore=None, app_id=None, monthly_acceptance_request=None, monthly_success_object=None, monthly_failure_object=None, monthly_skip_object=None, monthly_size=None, object_overwrite_mode=None, dst_storage_policy=None, consistency_check=None):
         r"""ShowSyncTaskResponse
 
         The model defined in huaweicloud sdk
@@ -96,8 +96,6 @@ class ShowSyncTaskResponse(SdkResponse):
         :type enable_metadata_migration: bool
         :param enable_restore: 是否自动解冻归档数据，默认否。 开启后，如果遇到归档类型数据，会自动解冻再进行迁移。
         :type enable_restore: bool
-        :param dst_storage_policy: 目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
-        :type dst_storage_policy: str
         :param app_id: 当源端为腾讯云时，需要填写此参数。
         :type app_id: str
         :param monthly_acceptance_request: 当月接收同步请求对象数
@@ -110,8 +108,10 @@ class ShowSyncTaskResponse(SdkResponse):
         :type monthly_skip_object: int
         :param monthly_size: 当月同步对象容量大小（Byte）。
         :type monthly_size: int
-        :param object_overwrite_mode: 迁移前同名对象覆盖方式，用于迁移前判断源端与目的端有同名对象时，覆盖目的端或跳过迁移。默认SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE。 NO_OVERWRITE：不覆盖。迁移前源端对象与目的端对象同名时，不做对比直接跳过迁移。 SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE：大小/最后修改时间对比覆盖。默认配置。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象大小和最后修改时间，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。源端与目的端同名对象大小不相同，或目的端对象的最后修改时间晚于源端对象的最后修改时间(源端较新)，覆盖目的端。 CRC64_COMPARISON_OVERWRITE：CRC64对比覆盖。目前仅支持华为/阿里/腾讯。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象元数据中CRC64值是否相同，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE(大小/最后修改时间对比覆盖)来对比进行覆盖判断。 FULL_OVERWRITE：全覆盖。迁移前源端对象与目的端对象同名时，不做对比覆盖目的端。
+        :param object_overwrite_mode: 迁移前同名对象覆盖方式，用于迁移前判断源端与目的端有同名对象时，覆盖目的端或跳过迁移。默认SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE。 NO_OVERWRITE：不覆盖。迁移前源端对象与目的端对象同名时，不做对比直接跳过迁移。 SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE：大小/最后修改时间对比覆盖。默认配置。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象大小和最后修改时间，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。源端与目的端同名对象大小不相同，或目的端对象的最后修改时间晚于源端对象的最后修改时间(源端较新)，覆盖目的端。  CRC64_COMPARISON_OVERWRITE：CRC64对比覆盖。目前仅支持华为/阿里/腾讯。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象元数据中CRC64值是否相同，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE(大小/最后修改时间对比覆盖)来对比进行覆盖判断。 FULL_OVERWRITE：全覆盖。迁移前源端对象与目的端对象同名时，不做对比覆盖目的端。
         :type object_overwrite_mode: str
+        :param dst_storage_policy: 目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
+        :type dst_storage_policy: str
         :param consistency_check: 迁移后对象一致性校验方式，用于迁移后校验对象是否一致，所有校验方式需满足源端/目的端对象的加密状态一致，具体校验方式和校验结果可通过对象列表查看。默认size_last_modified。 size_last_modified：默认配置。迁移后，通过对比源端和目的端对象大小和最后修改时间，判断对象迁移后数据是否完整。源端与目的端同名对象大小相同，且目的端对象的最后修改时间不早于源端对象的最后修改时间，则代表该对象迁移成功。 crc64：目前仅支持华为/阿里/腾讯。迁移后，通过对比源端和目的端对象元数据中CRC64值是否相同，判断对象是否迁移完成。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用大小/最后修改时间校验方式来校验。 no_check：目前仅支持HTTP/HTTPS数据源。当源端对象无法通过标准http协议中content-length字段获取数据大小时，默认数据下载成功即迁移成功，不对数据做额外校验。当源端对象能正常通过标准http协议中content-length字段获取数据大小时，则采用大小/最后修改时间校验方式来校验。
         :type consistency_check: str
         """
@@ -131,7 +131,6 @@ class ShowSyncTaskResponse(SdkResponse):
         self._enable_kms = None
         self._enable_metadata_migration = None
         self._enable_restore = None
-        self._dst_storage_policy = None
         self._app_id = None
         self._monthly_acceptance_request = None
         self._monthly_success_object = None
@@ -139,6 +138,7 @@ class ShowSyncTaskResponse(SdkResponse):
         self._monthly_skip_object = None
         self._monthly_size = None
         self._object_overwrite_mode = None
+        self._dst_storage_policy = None
         self._consistency_check = None
         self.discriminator = None
 
@@ -168,8 +168,6 @@ class ShowSyncTaskResponse(SdkResponse):
             self.enable_metadata_migration = enable_metadata_migration
         if enable_restore is not None:
             self.enable_restore = enable_restore
-        if dst_storage_policy is not None:
-            self.dst_storage_policy = dst_storage_policy
         if app_id is not None:
             self.app_id = app_id
         if monthly_acceptance_request is not None:
@@ -184,6 +182,8 @@ class ShowSyncTaskResponse(SdkResponse):
             self.monthly_size = monthly_size
         if object_overwrite_mode is not None:
             self.object_overwrite_mode = object_overwrite_mode
+        if dst_storage_policy is not None:
+            self.dst_storage_policy = dst_storage_policy
         if consistency_check is not None:
             self.consistency_check = consistency_check
 
@@ -474,28 +474,6 @@ class ShowSyncTaskResponse(SdkResponse):
         self._enable_restore = enable_restore
 
     @property
-    def dst_storage_policy(self):
-        r"""Gets the dst_storage_policy of this ShowSyncTaskResponse.
-
-        目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
-
-        :return: The dst_storage_policy of this ShowSyncTaskResponse.
-        :rtype: str
-        """
-        return self._dst_storage_policy
-
-    @dst_storage_policy.setter
-    def dst_storage_policy(self, dst_storage_policy):
-        r"""Sets the dst_storage_policy of this ShowSyncTaskResponse.
-
-        目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
-
-        :param dst_storage_policy: The dst_storage_policy of this ShowSyncTaskResponse.
-        :type dst_storage_policy: str
-        """
-        self._dst_storage_policy = dst_storage_policy
-
-    @property
     def app_id(self):
         r"""Gets the app_id of this ShowSyncTaskResponse.
 
@@ -631,7 +609,7 @@ class ShowSyncTaskResponse(SdkResponse):
     def object_overwrite_mode(self):
         r"""Gets the object_overwrite_mode of this ShowSyncTaskResponse.
 
-        迁移前同名对象覆盖方式，用于迁移前判断源端与目的端有同名对象时，覆盖目的端或跳过迁移。默认SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE。 NO_OVERWRITE：不覆盖。迁移前源端对象与目的端对象同名时，不做对比直接跳过迁移。 SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE：大小/最后修改时间对比覆盖。默认配置。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象大小和最后修改时间，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。源端与目的端同名对象大小不相同，或目的端对象的最后修改时间晚于源端对象的最后修改时间(源端较新)，覆盖目的端。 CRC64_COMPARISON_OVERWRITE：CRC64对比覆盖。目前仅支持华为/阿里/腾讯。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象元数据中CRC64值是否相同，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE(大小/最后修改时间对比覆盖)来对比进行覆盖判断。 FULL_OVERWRITE：全覆盖。迁移前源端对象与目的端对象同名时，不做对比覆盖目的端。
+        迁移前同名对象覆盖方式，用于迁移前判断源端与目的端有同名对象时，覆盖目的端或跳过迁移。默认SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE。 NO_OVERWRITE：不覆盖。迁移前源端对象与目的端对象同名时，不做对比直接跳过迁移。 SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE：大小/最后修改时间对比覆盖。默认配置。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象大小和最后修改时间，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。源端与目的端同名对象大小不相同，或目的端对象的最后修改时间晚于源端对象的最后修改时间(源端较新)，覆盖目的端。  CRC64_COMPARISON_OVERWRITE：CRC64对比覆盖。目前仅支持华为/阿里/腾讯。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象元数据中CRC64值是否相同，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE(大小/最后修改时间对比覆盖)来对比进行覆盖判断。 FULL_OVERWRITE：全覆盖。迁移前源端对象与目的端对象同名时，不做对比覆盖目的端。
 
         :return: The object_overwrite_mode of this ShowSyncTaskResponse.
         :rtype: str
@@ -642,12 +620,34 @@ class ShowSyncTaskResponse(SdkResponse):
     def object_overwrite_mode(self, object_overwrite_mode):
         r"""Sets the object_overwrite_mode of this ShowSyncTaskResponse.
 
-        迁移前同名对象覆盖方式，用于迁移前判断源端与目的端有同名对象时，覆盖目的端或跳过迁移。默认SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE。 NO_OVERWRITE：不覆盖。迁移前源端对象与目的端对象同名时，不做对比直接跳过迁移。 SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE：大小/最后修改时间对比覆盖。默认配置。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象大小和最后修改时间，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。源端与目的端同名对象大小不相同，或目的端对象的最后修改时间晚于源端对象的最后修改时间(源端较新)，覆盖目的端。 CRC64_COMPARISON_OVERWRITE：CRC64对比覆盖。目前仅支持华为/阿里/腾讯。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象元数据中CRC64值是否相同，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE(大小/最后修改时间对比覆盖)来对比进行覆盖判断。 FULL_OVERWRITE：全覆盖。迁移前源端对象与目的端对象同名时，不做对比覆盖目的端。
+        迁移前同名对象覆盖方式，用于迁移前判断源端与目的端有同名对象时，覆盖目的端或跳过迁移。默认SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE。 NO_OVERWRITE：不覆盖。迁移前源端对象与目的端对象同名时，不做对比直接跳过迁移。 SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE：大小/最后修改时间对比覆盖。默认配置。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象大小和最后修改时间，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。源端与目的端同名对象大小不相同，或目的端对象的最后修改时间晚于源端对象的最后修改时间(源端较新)，覆盖目的端。  CRC64_COMPARISON_OVERWRITE：CRC64对比覆盖。目前仅支持华为/阿里/腾讯。迁移前源端对象与目的端对象同名时，通过对比源端和目的端对象元数据中CRC64值是否相同，判断是否覆盖目的端，需满足源端/目的端对象的加密状态一致。如果源端与目的端对象元数据中不存在CRC64值，则系统会默认使用SIZE_LAST_MODIFIED_COMPARISON_OVERWRITE(大小/最后修改时间对比覆盖)来对比进行覆盖判断。 FULL_OVERWRITE：全覆盖。迁移前源端对象与目的端对象同名时，不做对比覆盖目的端。
 
         :param object_overwrite_mode: The object_overwrite_mode of this ShowSyncTaskResponse.
         :type object_overwrite_mode: str
         """
         self._object_overwrite_mode = object_overwrite_mode
+
+    @property
+    def dst_storage_policy(self):
+        r"""Gets the dst_storage_policy of this ShowSyncTaskResponse.
+
+        目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
+
+        :return: The dst_storage_policy of this ShowSyncTaskResponse.
+        :rtype: str
+        """
+        return self._dst_storage_policy
+
+    @dst_storage_policy.setter
+    def dst_storage_policy(self, dst_storage_policy):
+        r"""Sets the dst_storage_policy of this ShowSyncTaskResponse.
+
+        目的端存储类型设置，当且仅当目的端为华为云OBS时需要，默认为标准存储 STANDARD：华为云OBS标准存储 IA：华为云OBS低频存储 ARCHIVE：华为云OBS归档存储 DEEP_ARCHIVE：华为云OBS深度归档存储 SRC_STORAGE_MAPPING：保留源端存储类型，将源端存储类型映射为华为云OBS存储类型
+
+        :param dst_storage_policy: The dst_storage_policy of this ShowSyncTaskResponse.
+        :type dst_storage_policy: str
+        """
+        self._dst_storage_policy = dst_storage_policy
 
     @property
     def consistency_check(self):

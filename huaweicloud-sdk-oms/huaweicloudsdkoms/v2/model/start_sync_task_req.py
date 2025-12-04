@@ -43,7 +43,7 @@ class StartSyncTaskReq:
         :type dst_ak: str
         :param dst_sk: 目的端节点SK（最大长度100个字符）。
         :type dst_sk: str
-        :param source_cdn_authentication_key: CDN鉴权秘钥。
+        :param source_cdn_authentication_key: CDN鉴权密钥。
         :type source_cdn_authentication_key: str
         """
         
@@ -155,7 +155,7 @@ class StartSyncTaskReq:
     def source_cdn_authentication_key(self):
         r"""Gets the source_cdn_authentication_key of this StartSyncTaskReq.
 
-        CDN鉴权秘钥。
+        CDN鉴权密钥。
 
         :return: The source_cdn_authentication_key of this StartSyncTaskReq.
         :rtype: str
@@ -166,7 +166,7 @@ class StartSyncTaskReq:
     def source_cdn_authentication_key(self, source_cdn_authentication_key):
         r"""Sets the source_cdn_authentication_key of this StartSyncTaskReq.
 
-        CDN鉴权秘钥。
+        CDN鉴权密钥。
 
         :param source_cdn_authentication_key: The source_cdn_authentication_key of this StartSyncTaskReq.
         :type source_cdn_authentication_key: str

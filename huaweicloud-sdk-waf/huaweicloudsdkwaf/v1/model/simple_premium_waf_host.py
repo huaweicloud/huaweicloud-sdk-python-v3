@@ -69,9 +69,9 @@ class SimplePremiumWafHost:
         :type description: str
         :param policyid: 防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
         :type policyid: str
-        :param protect_status: 域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :param protect_status: **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
         :type protect_status: int
-        :param access_status: 域名接入状态，0表示未接入，1表示已接入
+        :param access_status: **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
         :type access_status: int
         :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
         :type web_tag: str
@@ -291,7 +291,7 @@ class SimplePremiumWafHost:
     def protect_status(self):
         r"""Gets the protect_status of this SimplePremiumWafHost.
 
-        域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
 
         :return: The protect_status of this SimplePremiumWafHost.
         :rtype: int
@@ -302,7 +302,7 @@ class SimplePremiumWafHost:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this SimplePremiumWafHost.
 
-        域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
 
         :param protect_status: The protect_status of this SimplePremiumWafHost.
         :type protect_status: int
@@ -313,7 +313,7 @@ class SimplePremiumWafHost:
     def access_status(self):
         r"""Gets the access_status of this SimplePremiumWafHost.
 
-        域名接入状态，0表示未接入，1表示已接入
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
         :return: The access_status of this SimplePremiumWafHost.
         :rtype: int
@@ -324,7 +324,7 @@ class SimplePremiumWafHost:
     def access_status(self, access_status):
         r"""Sets the access_status of this SimplePremiumWafHost.
 
-        域名接入状态，0表示未接入，1表示已接入
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
         :param access_status: The access_status of this SimplePremiumWafHost.
         :type access_status: int

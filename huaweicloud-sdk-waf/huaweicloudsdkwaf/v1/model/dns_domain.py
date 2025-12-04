@@ -33,13 +33,13 @@ class DnsDomain:
 
         The model defined in huaweicloud sdk
 
-        :param id: 
+        :param id: dns-id
         :type id: str
-        :param domain: 
+        :param domain: 域名
         :type domain: str
-        :param servers: 
+        :param servers: dns服务信息
         :type servers: list[:class:`huaweicloudsdkwaf.v1.Server`]
-        :param protect_port: 
+        :param protect_port: 防护端口
         :type protect_port: str
         """
         
@@ -64,6 +64,8 @@ class DnsDomain:
     def id(self):
         r"""Gets the id of this DnsDomain.
 
+        dns-id
+
         :return: The id of this DnsDomain.
         :rtype: str
         """
@@ -72,6 +74,8 @@ class DnsDomain:
     @id.setter
     def id(self, id):
         r"""Sets the id of this DnsDomain.
+
+        dns-id
 
         :param id: The id of this DnsDomain.
         :type id: str
@@ -82,6 +86,8 @@ class DnsDomain:
     def domain(self):
         r"""Gets the domain of this DnsDomain.
 
+        域名
+
         :return: The domain of this DnsDomain.
         :rtype: str
         """
@@ -90,6 +96,8 @@ class DnsDomain:
     @domain.setter
     def domain(self, domain):
         r"""Sets the domain of this DnsDomain.
+
+        域名
 
         :param domain: The domain of this DnsDomain.
         :type domain: str
@@ -100,6 +108,8 @@ class DnsDomain:
     def servers(self):
         r"""Gets the servers of this DnsDomain.
 
+        dns服务信息
+
         :return: The servers of this DnsDomain.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.Server`]
         """
@@ -108,6 +118,8 @@ class DnsDomain:
     @servers.setter
     def servers(self, servers):
         r"""Sets the servers of this DnsDomain.
+
+        dns服务信息
 
         :param servers: The servers of this DnsDomain.
         :type servers: list[:class:`huaweicloudsdkwaf.v1.Server`]
@@ -118,6 +130,8 @@ class DnsDomain:
     def protect_port(self):
         r"""Gets the protect_port of this DnsDomain.
 
+        防护端口
+
         :return: The protect_port of this DnsDomain.
         :rtype: str
         """
@@ -126,6 +140,8 @@ class DnsDomain:
     @protect_port.setter
     def protect_port(self, protect_port):
         r"""Sets the protect_port of this DnsDomain.
+
+        防护端口
 
         :param protect_port: The protect_port of this DnsDomain.
         :type protect_port: str

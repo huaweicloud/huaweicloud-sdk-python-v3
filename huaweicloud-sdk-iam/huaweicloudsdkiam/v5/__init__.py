@@ -201,8 +201,6 @@ from huaweicloudsdkiam.v5.model.show_login_profile_v5_request import ShowLoginPr
 from huaweicloudsdkiam.v5.model.show_login_profile_v5_response import ShowLoginProfileV5Response
 from huaweicloudsdkiam.v5.model.show_password_policy_v5_request import ShowPasswordPolicyV5Request
 from huaweicloudsdkiam.v5.model.show_password_policy_v5_response import ShowPasswordPolicyV5Response
-from huaweicloudsdkiam.v5.model.show_token_policy_v5_request import ShowTokenPolicyV5Request
-from huaweicloudsdkiam.v5.model.show_token_policy_v5_response import ShowTokenPolicyV5Response
 from huaweicloudsdkiam.v5.model.show_user_last_login_v5_request import ShowUserLastLoginV5Request
 from huaweicloudsdkiam.v5.model.show_user_last_login_v5_response import ShowUserLastLoginV5Response
 from huaweicloudsdkiam.v5.model.show_user_v5_request import ShowUserV5Request
@@ -211,7 +209,6 @@ from huaweicloudsdkiam.v5.model.tag import Tag
 from huaweicloudsdkiam.v5.model.tag_resource_v5_request import TagResourceV5Request
 from huaweicloudsdkiam.v5.model.tag_resource_v5_response import TagResourceV5Response
 from huaweicloudsdkiam.v5.model.tags import Tags
-from huaweicloudsdkiam.v5.model.token_policy import TokenPolicy
 from huaweicloudsdkiam.v5.model.trust_agency import TrustAgency
 from huaweicloudsdkiam.v5.model.trust_agency_id import TrustAgencyId
 from huaweicloudsdkiam.v5.model.trust_agency_name import TrustAgencyName
@@ -236,9 +233,6 @@ from huaweicloudsdkiam.v5.model.update_login_profile_v5_response import UpdateLo
 from huaweicloudsdkiam.v5.model.update_password_policy_req_body import UpdatePasswordPolicyReqBody
 from huaweicloudsdkiam.v5.model.update_password_policy_v5_request import UpdatePasswordPolicyV5Request
 from huaweicloudsdkiam.v5.model.update_password_policy_v5_response import UpdatePasswordPolicyV5Response
-from huaweicloudsdkiam.v5.model.update_token_policy_req_body import UpdateTokenPolicyReqBody
-from huaweicloudsdkiam.v5.model.update_token_policy_v5_request import UpdateTokenPolicyV5Request
-from huaweicloudsdkiam.v5.model.update_token_policy_v5_response import UpdateTokenPolicyV5Response
 from huaweicloudsdkiam.v5.model.update_trust_policy_req_body import UpdateTrustPolicyReqBody
 from huaweicloudsdkiam.v5.model.update_trust_policy_v5_request import UpdateTrustPolicyV5Request
 from huaweicloudsdkiam.v5.model.update_trust_policy_v5_response import UpdateTrustPolicyV5Response

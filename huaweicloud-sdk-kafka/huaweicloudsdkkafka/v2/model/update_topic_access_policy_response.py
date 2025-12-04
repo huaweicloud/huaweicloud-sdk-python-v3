@@ -16,20 +16,51 @@ class UpdateTopicAccessPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'job_id': 'str'
     }
 
     attribute_map = {
+        'job_id': 'job_id'
     }
 
-    def __init__(self):
+    def __init__(self, job_id=None):
         r"""UpdateTopicAccessPolicyResponse
 
         The model defined in huaweicloud sdk
 
+        :param job_id: **参数解释**： 后台任务ID。 **取值范围**： 不涉及。
+        :type job_id: str
         """
         
         super().__init__()
+
+        self._job_id = None
         self.discriminator = None
+
+        if job_id is not None:
+            self.job_id = job_id
+
+    @property
+    def job_id(self):
+        r"""Gets the job_id of this UpdateTopicAccessPolicyResponse.
+
+        **参数解释**： 后台任务ID。 **取值范围**： 不涉及。
+
+        :return: The job_id of this UpdateTopicAccessPolicyResponse.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        r"""Sets the job_id of this UpdateTopicAccessPolicyResponse.
+
+        **参数解释**： 后台任务ID。 **取值范围**： 不涉及。
+
+        :param job_id: The job_id of this UpdateTopicAccessPolicyResponse.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         import warnings

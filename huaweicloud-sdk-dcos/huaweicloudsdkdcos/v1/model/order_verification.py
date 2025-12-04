@@ -18,7 +18,6 @@ class OrderVerification:
         'result': 'str',
         'details': 'OrderServiceDetails',
         'attachments': 'list[UploadFileInfo]',
-        'meet_expectation': 'bool',
         'comments': 'str'
     }
 
@@ -26,11 +25,10 @@ class OrderVerification:
         'result': 'result',
         'details': 'details',
         'attachments': 'attachments',
-        'meet_expectation': 'meet_expectation',
         'comments': 'comments'
     }
 
-    def __init__(self, result=None, details=None, attachments=None, meet_expectation=None, comments=None):
+    def __init__(self, result=None, details=None, attachments=None, comments=None):
         r"""OrderVerification
 
         The model defined in huaweicloud sdk
@@ -41,8 +39,6 @@ class OrderVerification:
         :type details: :class:`huaweicloudsdkdcos.v1.OrderServiceDetails`
         :param attachments: 附件
         :type attachments: list[:class:`huaweicloudsdkdcos.v1.UploadFileInfo`]
-        :param meet_expectation: 是否符合预期
-        :type meet_expectation: bool
         :param comments: 客户验收意见说明
         :type comments: str
         """
@@ -52,7 +48,6 @@ class OrderVerification:
         self._result = None
         self._details = None
         self._attachments = None
-        self._meet_expectation = None
         self._comments = None
         self.discriminator = None
 
@@ -62,8 +57,6 @@ class OrderVerification:
             self.details = details
         if attachments is not None:
             self.attachments = attachments
-        if meet_expectation is not None:
-            self.meet_expectation = meet_expectation
         if comments is not None:
             self.comments = comments
 
@@ -128,28 +121,6 @@ class OrderVerification:
         :type attachments: list[:class:`huaweicloudsdkdcos.v1.UploadFileInfo`]
         """
         self._attachments = attachments
-
-    @property
-    def meet_expectation(self):
-        r"""Gets the meet_expectation of this OrderVerification.
-
-        是否符合预期
-
-        :return: The meet_expectation of this OrderVerification.
-        :rtype: bool
-        """
-        return self._meet_expectation
-
-    @meet_expectation.setter
-    def meet_expectation(self, meet_expectation):
-        r"""Sets the meet_expectation of this OrderVerification.
-
-        是否符合预期
-
-        :param meet_expectation: The meet_expectation of this OrderVerification.
-        :type meet_expectation: bool
-        """
-        self._meet_expectation = meet_expectation
 
     @property
     def comments(self):

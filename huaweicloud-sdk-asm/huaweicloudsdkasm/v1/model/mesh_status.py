@@ -15,29 +15,36 @@ class MeshStatus:
     sensitive_list = []
 
     openapi_types = {
-        'phase': 'str'
+        'phase': 'str',
+        'update_timestamp': 'datetime'
     }
 
     attribute_map = {
-        'phase': 'phase'
+        'phase': 'phase',
+        'update_timestamp': 'updateTimestamp'
     }
 
-    def __init__(self, phase=None):
+    def __init__(self, phase=None, update_timestamp=None):
         r"""MeshStatus
 
         The model defined in huaweicloud sdk
 
         :param phase: 网格状态，取值如下 - Running：运行中，表示网格处于正常运行状态 - Creating：创建中，表示网格正处于创建过程中 - CreateFailed：创建失败 - Deleting：删除中，表示网格正处于删除过程中 - DeleteFailed：删除失败 - Upgrading：升级中，表示网格正处于升级过程中 - UpgradeFailed：升级失败 - RollingBack：回滚中，表示网格正处于回滚过程中 - RollbackFailed：回滚失败
         :type phase: str
+        :param update_timestamp: 网格更新时间
+        :type update_timestamp: datetime
         """
         
         
 
         self._phase = None
+        self._update_timestamp = None
         self.discriminator = None
 
         if phase is not None:
             self.phase = phase
+        if update_timestamp is not None:
+            self.update_timestamp = update_timestamp
 
     @property
     def phase(self):
@@ -60,6 +67,28 @@ class MeshStatus:
         :type phase: str
         """
         self._phase = phase
+
+    @property
+    def update_timestamp(self):
+        r"""Gets the update_timestamp of this MeshStatus.
+
+        网格更新时间
+
+        :return: The update_timestamp of this MeshStatus.
+        :rtype: datetime
+        """
+        return self._update_timestamp
+
+    @update_timestamp.setter
+    def update_timestamp(self, update_timestamp):
+        r"""Sets the update_timestamp of this MeshStatus.
+
+        网格更新时间
+
+        :param update_timestamp: The update_timestamp of this MeshStatus.
+        :type update_timestamp: datetime
+        """
+        self._update_timestamp = update_timestamp
 
     def to_dict(self):
         result = {}

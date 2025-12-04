@@ -48,11 +48,11 @@ class BatchCreatePrivacyRuleResponse(SdkResponse):
         :type policyid: str
         :param timestamp: 创建规则的时间，格式为13位毫秒时间戳
         :type timestamp: int
-        :param status: 规则状态，0：关闭，1：开启
+        :param status: **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
         :type status: int
         :param url: 隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
         :type url: str
-        :param category: 屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
+        :param category: **参数解释：** 屏蔽字段 **约束限制：** 不涉及 **取值范围：**  - params: 请求参数  - cookie: 根据Cookie区分的Web访问者  - header: 自定义HTTP首部  - form: 表单参数  **默认取值：** 不涉及
         :type category: str
         :param index: 屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。
         :type index: str
@@ -159,7 +159,7 @@ class BatchCreatePrivacyRuleResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this BatchCreatePrivacyRuleResponse.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :return: The status of this BatchCreatePrivacyRuleResponse.
         :rtype: int
@@ -170,7 +170,7 @@ class BatchCreatePrivacyRuleResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this BatchCreatePrivacyRuleResponse.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :param status: The status of this BatchCreatePrivacyRuleResponse.
         :type status: int
@@ -203,7 +203,7 @@ class BatchCreatePrivacyRuleResponse(SdkResponse):
     def category(self):
         r"""Gets the category of this BatchCreatePrivacyRuleResponse.
 
-        屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
+        **参数解释：** 屏蔽字段 **约束限制：** 不涉及 **取值范围：**  - params: 请求参数  - cookie: 根据Cookie区分的Web访问者  - header: 自定义HTTP首部  - form: 表单参数  **默认取值：** 不涉及
 
         :return: The category of this BatchCreatePrivacyRuleResponse.
         :rtype: str
@@ -214,7 +214,7 @@ class BatchCreatePrivacyRuleResponse(SdkResponse):
     def category(self, category):
         r"""Sets the category of this BatchCreatePrivacyRuleResponse.
 
-        屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
+        **参数解释：** 屏蔽字段 **约束限制：** 不涉及 **取值范围：**  - params: 请求参数  - cookie: 根据Cookie区分的Web访问者  - header: 自定义HTTP首部  - form: 表单参数  **默认取值：** 不涉及
 
         :param category: The category of this BatchCreatePrivacyRuleResponse.
         :type category: str

@@ -39,9 +39,9 @@ class PremiumWafServer:
 
         The model defined in huaweicloud sdk
 
-        :param front_protocol: 客户端请求访问防护域名源站服务器的协议
+        :param front_protocol: **参数解释：** 客户端请求访问防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
         :type front_protocol: str
-        :param back_protocol: WAF转发客户端请求到防护域名源站服务器的协议
+        :param back_protocol: **参数解释：** WAF转发客户端请求到防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
         :type back_protocol: str
         :param weight: 源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
         :type weight: int
@@ -79,7 +79,7 @@ class PremiumWafServer:
     def front_protocol(self):
         r"""Gets the front_protocol of this PremiumWafServer.
 
-        客户端请求访问防护域名源站服务器的协议
+        **参数解释：** 客户端请求访问防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
 
         :return: The front_protocol of this PremiumWafServer.
         :rtype: str
@@ -90,7 +90,7 @@ class PremiumWafServer:
     def front_protocol(self, front_protocol):
         r"""Sets the front_protocol of this PremiumWafServer.
 
-        客户端请求访问防护域名源站服务器的协议
+        **参数解释：** 客户端请求访问防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
 
         :param front_protocol: The front_protocol of this PremiumWafServer.
         :type front_protocol: str
@@ -101,7 +101,7 @@ class PremiumWafServer:
     def back_protocol(self):
         r"""Gets the back_protocol of this PremiumWafServer.
 
-        WAF转发客户端请求到防护域名源站服务器的协议
+        **参数解释：** WAF转发客户端请求到防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
 
         :return: The back_protocol of this PremiumWafServer.
         :rtype: str
@@ -112,7 +112,7 @@ class PremiumWafServer:
     def back_protocol(self, back_protocol):
         r"""Sets the back_protocol of this PremiumWafServer.
 
-        WAF转发客户端请求到防护域名源站服务器的协议
+        **参数解释：** WAF转发客户端请求到防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
 
         :param back_protocol: The back_protocol of this PremiumWafServer.
         :type back_protocol: str

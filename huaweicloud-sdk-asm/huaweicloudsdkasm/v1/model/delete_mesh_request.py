@@ -15,47 +15,34 @@ class DeleteMeshRequest:
     sensitive_list = []
 
     openapi_types = {
-        'mesh_id': 'str',
-        'content_type': 'str',
-        'x_apply_project_id': 'str'
+        'mesh_id': 'str'
     }
 
     attribute_map = {
-        'mesh_id': 'mesh_id',
-        'content_type': 'Content-Type',
-        'x_apply_project_id': 'X-Apply-ProjectID'
+        'mesh_id': 'mesh_id'
     }
 
-    def __init__(self, mesh_id=None, content_type=None, x_apply_project_id=None):
+    def __init__(self, mesh_id=None):
         r"""DeleteMeshRequest
 
         The model defined in huaweicloud sdk
 
-        :param mesh_id: 网格ID
+        :param mesh_id: 网格ID。
         :type mesh_id: str
-        :param content_type: 消息体的类型（格式）
-        :type content_type: str
-        :param x_apply_project_id: 网格所属ProjectID
-        :type x_apply_project_id: str
         """
         
         
 
         self._mesh_id = None
-        self._content_type = None
-        self._x_apply_project_id = None
         self.discriminator = None
 
         self.mesh_id = mesh_id
-        self.content_type = content_type
-        if x_apply_project_id is not None:
-            self.x_apply_project_id = x_apply_project_id
 
     @property
     def mesh_id(self):
         r"""Gets the mesh_id of this DeleteMeshRequest.
 
-        网格ID
+        网格ID。
 
         :return: The mesh_id of this DeleteMeshRequest.
         :rtype: str
@@ -66,56 +53,12 @@ class DeleteMeshRequest:
     def mesh_id(self, mesh_id):
         r"""Sets the mesh_id of this DeleteMeshRequest.
 
-        网格ID
+        网格ID。
 
         :param mesh_id: The mesh_id of this DeleteMeshRequest.
         :type mesh_id: str
         """
         self._mesh_id = mesh_id
-
-    @property
-    def content_type(self):
-        r"""Gets the content_type of this DeleteMeshRequest.
-
-        消息体的类型（格式）
-
-        :return: The content_type of this DeleteMeshRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        r"""Sets the content_type of this DeleteMeshRequest.
-
-        消息体的类型（格式）
-
-        :param content_type: The content_type of this DeleteMeshRequest.
-        :type content_type: str
-        """
-        self._content_type = content_type
-
-    @property
-    def x_apply_project_id(self):
-        r"""Gets the x_apply_project_id of this DeleteMeshRequest.
-
-        网格所属ProjectID
-
-        :return: The x_apply_project_id of this DeleteMeshRequest.
-        :rtype: str
-        """
-        return self._x_apply_project_id
-
-    @x_apply_project_id.setter
-    def x_apply_project_id(self, x_apply_project_id):
-        r"""Sets the x_apply_project_id of this DeleteMeshRequest.
-
-        网格所属ProjectID
-
-        :param x_apply_project_id: The x_apply_project_id of this DeleteMeshRequest.
-        :type x_apply_project_id: str
-        """
-        self._x_apply_project_id = x_apply_project_id
 
     def to_dict(self):
         result = {}

@@ -30,9 +30,9 @@ class ListInstancesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param instances: 实例列表
+        :param instances: **参数解释**： 实例列表。
         :type instances: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceResp`]
-        :param instance_num: 实例数量。
+        :param instance_num: **参数解释**： 实例数量。 **取值范围**： 不涉及。
         :type instance_num: int
         """
         
@@ -51,7 +51,7 @@ class ListInstancesResponse(SdkResponse):
     def instances(self):
         r"""Gets the instances of this ListInstancesResponse.
 
-        实例列表
+        **参数解释**： 实例列表。
 
         :return: The instances of this ListInstancesResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceResp`]
@@ -62,7 +62,7 @@ class ListInstancesResponse(SdkResponse):
     def instances(self, instances):
         r"""Sets the instances of this ListInstancesResponse.
 
-        实例列表
+        **参数解释**： 实例列表。
 
         :param instances: The instances of this ListInstancesResponse.
         :type instances: list[:class:`huaweicloudsdkkafka.v2.ShowInstanceResp`]
@@ -73,7 +73,7 @@ class ListInstancesResponse(SdkResponse):
     def instance_num(self):
         r"""Gets the instance_num of this ListInstancesResponse.
 
-        实例数量。
+        **参数解释**： 实例数量。 **取值范围**： 不涉及。
 
         :return: The instance_num of this ListInstancesResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListInstancesResponse(SdkResponse):
     def instance_num(self, instance_num):
         r"""Sets the instance_num of this ListInstancesResponse.
 
-        实例数量。
+        **参数解释**： 实例数量。 **取值范围**： 不涉及。
 
         :param instance_num: The instance_num of this ListInstancesResponse.
         :type instance_num: int

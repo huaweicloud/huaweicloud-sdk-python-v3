@@ -29,9 +29,9 @@ class UpdateInstanceTopicReqTopicOtherConfigs:
 
         The model defined in huaweicloud sdk
 
-        :param name: 配置名称
+        :param name: **参数解释**： 配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param value: 配置值
+        :param value: **参数解释**： 配置值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class UpdateInstanceTopicReqTopicOtherConfigs:
     def name(self):
         r"""Gets the name of this UpdateInstanceTopicReqTopicOtherConfigs.
 
-        配置名称
+        **参数解释**： 配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this UpdateInstanceTopicReqTopicOtherConfigs.
         :rtype: str
@@ -61,7 +61,7 @@ class UpdateInstanceTopicReqTopicOtherConfigs:
     def name(self, name):
         r"""Sets the name of this UpdateInstanceTopicReqTopicOtherConfigs.
 
-        配置名称
+        **参数解释**： 配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this UpdateInstanceTopicReqTopicOtherConfigs.
         :type name: str
@@ -72,7 +72,7 @@ class UpdateInstanceTopicReqTopicOtherConfigs:
     def value(self):
         r"""Gets the value of this UpdateInstanceTopicReqTopicOtherConfigs.
 
-        配置值
+        **参数解释**： 配置值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The value of this UpdateInstanceTopicReqTopicOtherConfigs.
         :rtype: str
@@ -83,7 +83,7 @@ class UpdateInstanceTopicReqTopicOtherConfigs:
     def value(self, value):
         r"""Sets the value of this UpdateInstanceTopicReqTopicOtherConfigs.
 
-        配置值
+        **参数解释**： 配置值。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param value: The value of this UpdateInstanceTopicReqTopicOtherConfigs.
         :type value: str

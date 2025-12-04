@@ -1580,9 +1580,9 @@ class WafAsyncClient(Client):
         r"""变更包周期云模式waf规格
 
         变更包周期云模式waf规格。注：
-         - 1.变更某产品规格的前提是必须已购买该产品 
-         - 2.waf版本只支持升配，不支持降配；扩展包数量可以增加或者减少，但不支持数量减少为0 
-         - 3.不支持同时升降配，如增加域名扩展包数量，同时减少规则扩展包数量
+         - 变更某产品规格的前提是必须已购买该产品 
+         - 云模式支持版本降配，扩展包支持减少数量，最少可以到0 
+         - 不支持同时升降配，如增加域名扩展包数量，同时减少规则扩展包数量
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4046,6 +4046,73 @@ class WafAsyncClient(Client):
             collection_formats['role_id_list'] = 'csv'
 
         header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_alert_notice_config_async(self, request):
+        r"""删除告警通知配置
+
+        删除告警通知配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteAlertNoticeConfig
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteAlertNoticeConfigRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteAlertNoticeConfigResponse`
+        """
+        http_info = self._delete_alert_notice_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_alert_notice_config_async_invoker(self, request):
+        http_info = self._delete_alert_notice_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_alert_notice_config_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/waf/alert/{alert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlertNoticeConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'alert_id' in local_var_params:
+            path_params['alert_id'] = local_var_params['alert_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -8330,6 +8397,74 @@ class WafAsyncClient(Client):
 
         return http_info
 
+    def list_source_ip_top5_async(self, request):
+        r"""查询攻击源ip
+
+        查询攻击源ip
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSourceIpTop5
+        :type request: :class:`huaweicloudsdkwaf.v1.ListSourceIpTop5Request`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListSourceIpTop5Response`
+        """
+        http_info = self._list_source_ip_top5_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_source_ip_top5_async_invoker(self, request):
+        http_info = self._list_source_ip_top5_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_source_ip_top5_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/event/attack/source",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSourceIpTop5Response"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'recent' in local_var_params:
+            query_params.append(('recent', local_var_params['recent']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_statistics_async(self, request):
         r"""查询安全总览请求与攻击数量
 
@@ -8376,6 +8511,74 @@ class WafAsyncClient(Client):
             query_params.append(('hosts', local_var_params['hosts']))
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_threats_async(self, request):
+        r"""查询攻击事件分布类型
+
+        查询攻击事件分布类型。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListThreats
+        :type request: :class:`huaweicloudsdkwaf.v1.ListThreatsRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListThreatsResponse`
+        """
+        http_info = self._list_threats_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_threats_async_invoker(self, request):
+        http_info = self._list_threats_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_threats_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/event/attack/type",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListThreatsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'recent' in local_var_params:
+            query_params.append(('recent', local_var_params['recent']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
 
         header_params = {}
 
@@ -8677,6 +8880,83 @@ class WafAsyncClient(Client):
             query_params.append(('hosts', local_var_params['hosts']))
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_url_async(self, request):
+        r"""查询事件日志中的url
+
+        查询QPS。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListUrl
+        :type request: :class:`huaweicloudsdkwaf.v1.ListUrlRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListUrlResponse`
+        """
+        http_info = self._list_url_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_url_async_invoker(self, request):
+        http_info = self._list_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_url_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/event/url",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUrlResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'top' in local_var_params:
+            query_params.append(('top', local_var_params['top']))
+        if 'recent' in local_var_params:
+            query_params.append(('recent', local_var_params['recent']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'csv'
 
         header_params = {}
 

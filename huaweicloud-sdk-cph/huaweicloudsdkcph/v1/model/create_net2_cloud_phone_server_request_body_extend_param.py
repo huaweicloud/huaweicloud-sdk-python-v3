@@ -37,7 +37,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
 
         The model defined in huaweicloud sdk
 
-        :param charging_mode: 计费类型。  [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
+        :param charging_mode: 计费类型。  [- 0：包周期](tag:hws,hws_hk,cmcc,ctc) [- 1：按需](tag:fcs)
         :type charging_mode: int
         :param period_type: 订购周期类型。 - 2：月 - 3：年
         :type period_type: int
@@ -75,7 +75,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def charging_mode(self):
         r"""Gets the charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        计费类型。  [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
+        计费类型。  [- 0：包周期](tag:hws,hws_hk,cmcc,ctc) [- 1：按需](tag:fcs)
 
         :return: The charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :rtype: int
@@ -86,7 +86,7 @@ class CreateNet2CloudPhoneServerRequestBodyExtendParam:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
 
-        计费类型。  [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
+        计费类型。  [- 0：包周期](tag:hws,hws_hk,cmcc,ctc) [- 1：按需](tag:fcs)
 
         :param charging_mode: The charging_mode of this CreateNet2CloudPhoneServerRequestBodyExtendParam.
         :type charging_mode: int

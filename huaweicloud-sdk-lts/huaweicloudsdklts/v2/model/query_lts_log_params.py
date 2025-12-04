@@ -23,6 +23,7 @@ class QueryLtsLogParams:
         'line_num': 'str',
         'time__': 'str',
         'is_desc': 'bool',
+        'scroll_id': 'str',
         'search_type': 'str',
         'limit': 'int',
         'highlight': 'bool',
@@ -40,6 +41,7 @@ class QueryLtsLogParams:
         'line_num': 'line_num',
         'time__': '__time__',
         'is_desc': 'is_desc',
+        'scroll_id': 'scroll_id',
         'search_type': 'search_type',
         'limit': 'limit',
         'highlight': 'highlight',
@@ -48,7 +50,7 @@ class QueryLtsLogParams:
         'is_analysis_query': 'is_analysis_query'
     }
 
-    def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, time__=None, is_desc=None, search_type=None, limit=None, highlight=None, is_iterative=None, query=None, is_analysis_query=None):
+    def __init__(self, start_time=None, end_time=None, labels=None, is_count=None, keywords=None, line_num=None, time__=None, is_desc=None, scroll_id=None, search_type=None, limit=None, highlight=None, is_iterative=None, query=None, is_analysis_query=None):
         r"""QueryLtsLogParams
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class QueryLtsLogParams:
         :type time__: str
         :param is_desc: 顺序或者倒序查询, 默认为false(顺序查询)
         :type is_desc: bool
+        :param scroll_id: **参数解释：** 分页查询时，若上次查询的返回结果中包含该字段，需要增加该字段参与分页查询。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type scroll_id: str
         :param search_type: 首次查询为 “init”, 分页查询时为 “forwards”或者“backwards”, 默认为首次查询“init”, 与 is_desc 参数配合进行分页查询。
         :type search_type: str
         :param limit: 表示每次查询的日志条数，不填时默认为50，建议您设置为100。
@@ -93,6 +97,7 @@ class QueryLtsLogParams:
         self._line_num = None
         self._time__ = None
         self._is_desc = None
+        self._scroll_id = None
         self._search_type = None
         self._limit = None
         self._highlight = None
@@ -115,6 +120,8 @@ class QueryLtsLogParams:
             self.time__ = time__
         if is_desc is not None:
             self.is_desc = is_desc
+        if scroll_id is not None:
+            self.scroll_id = scroll_id
         if search_type is not None:
             self.search_type = search_type
         if limit is not None:
@@ -303,6 +310,28 @@ class QueryLtsLogParams:
         :type is_desc: bool
         """
         self._is_desc = is_desc
+
+    @property
+    def scroll_id(self):
+        r"""Gets the scroll_id of this QueryLtsLogParams.
+
+        **参数解释：** 分页查询时，若上次查询的返回结果中包含该字段，需要增加该字段参与分页查询。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The scroll_id of this QueryLtsLogParams.
+        :rtype: str
+        """
+        return self._scroll_id
+
+    @scroll_id.setter
+    def scroll_id(self, scroll_id):
+        r"""Sets the scroll_id of this QueryLtsLogParams.
+
+        **参数解释：** 分页查询时，若上次查询的返回结果中包含该字段，需要增加该字段参与分页查询。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param scroll_id: The scroll_id of this QueryLtsLogParams.
+        :type scroll_id: str
+        """
+        self._scroll_id = scroll_id
 
     @property
     def search_type(self):

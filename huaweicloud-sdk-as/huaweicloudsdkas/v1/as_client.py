@@ -827,6 +827,71 @@ class AsClient(Client):
 
         return http_info
 
+    def close_warm_pool_new(self, request):
+        r"""关闭暖池（V2版本）
+
+        关闭伸缩组的暖池
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CloseWarmPoolNew
+        :type request: :class:`huaweicloudsdkas.v1.CloseWarmPoolNewRequest`
+        :rtype: :class:`huaweicloudsdkas.v1.CloseWarmPoolNewResponse`
+        """
+        http_info = self._close_warm_pool_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def close_warm_pool_new_invoker(self, request):
+        http_info = self._close_warm_pool_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _close_warm_pool_new_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/scaling-groups/{scaling_group_id}/warm-pool",
+            "request_type": request.__class__.__name__,
+            "response_type": "CloseWarmPoolNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_group_scheduled_task(self, request):
         r"""创建计划任务
 
@@ -2956,6 +3021,75 @@ class AsClient(Client):
 
         return http_info
 
+    def list_warm_pool_instances_new(self, request):
+        r"""查询暖池内实例信息（V2版本）
+
+        查询暖池内实例信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListWarmPoolInstancesNew
+        :type request: :class:`huaweicloudsdkas.v1.ListWarmPoolInstancesNewRequest`
+        :rtype: :class:`huaweicloudsdkas.v1.ListWarmPoolInstancesNewResponse`
+        """
+        http_info = self._list_warm_pool_instances_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_warm_pool_instances_new_invoker(self, request):
+        http_info = self._list_warm_pool_instances_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_warm_pool_instances_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/scaling-groups/{scaling_group_id}/warm-pool-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWarmPoolInstancesNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def pause_scaling_group(self, request):
         r"""停止弹性伸缩组
 
@@ -3115,6 +3249,73 @@ class AsClient(Client):
             "resource_path": "/autoscaling-api/{project_id}/scaling-groups/{scaling_group_id}/warm-pool",
             "request_type": request.__class__.__name__,
             "response_type": "PutWarmPoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def put_warm_pool_new(self, request):
+        r"""开启暖池（V2版本）
+
+        开启并修改暖池参数
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for PutWarmPoolNew
+        :type request: :class:`huaweicloudsdkas.v1.PutWarmPoolNewRequest`
+        :rtype: :class:`huaweicloudsdkas.v1.PutWarmPoolNewResponse`
+        """
+        http_info = self._put_warm_pool_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def put_warm_pool_new_invoker(self, request):
+        http_info = self._put_warm_pool_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _put_warm_pool_new_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/scaling-groups/{scaling_group_id}/warm-pool",
+            "request_type": request.__class__.__name__,
+            "response_type": "PutWarmPoolNewResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3706,6 +3907,71 @@ class AsClient(Client):
             "resource_path": "/autoscaling-api/{project_id}/scaling-groups/{scaling_group_id}/warm-pool",
             "request_type": request.__class__.__name__,
             "response_type": "ShowWarmPoolResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scaling_group_id' in local_var_params:
+            path_params['scaling_group_id'] = local_var_params['scaling_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_warm_pool_new(self, request):
+        r"""查询暖池信息（V2版本）
+
+        查询暖池信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowWarmPoolNew
+        :type request: :class:`huaweicloudsdkas.v1.ShowWarmPoolNewRequest`
+        :rtype: :class:`huaweicloudsdkas.v1.ShowWarmPoolNewResponse`
+        """
+        http_info = self._show_warm_pool_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_warm_pool_new_invoker(self, request):
+        http_info = self._show_warm_pool_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_warm_pool_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/scaling-groups/{scaling_group_id}/warm-pool",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWarmPoolNewResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

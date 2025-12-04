@@ -19,7 +19,7 @@ class ListFoldersAndFilesRequest:
         'cloud_storage_assignment_id': 'str',
         'folder_url': 'str',
         'marker': 'str',
-        'max_keys': 'int'
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -27,10 +27,10 @@ class ListFoldersAndFilesRequest:
         'cloud_storage_assignment_id': 'cloud_storage_assignment_id',
         'folder_url': 'folder_url',
         'marker': 'marker',
-        'max_keys': 'max_keys'
+        'limit': 'limit'
     }
 
-    def __init__(self, user_name=None, cloud_storage_assignment_id=None, folder_url=None, marker=None, max_keys=None):
+    def __init__(self, user_name=None, cloud_storage_assignment_id=None, folder_url=None, marker=None, limit=None):
         r"""ListFoldersAndFilesRequest
 
         The model defined in huaweicloud sdk
@@ -43,8 +43,8 @@ class ListFoldersAndFilesRequest:
         :type folder_url: str
         :param marker: 指定一个标识符，从该标识符以后按文件名的字典顺序返回文件列表。
         :type marker: str
-        :param max_keys: 列举文件系统的最大数目，返回的文件系统列表将是按照字典顺序的最多前 maxKeys 个，默认取值为1000。
-        :type max_keys: int
+        :param limit: 列举文件系统的最大数目，返回的文件系统列表将是按照字典顺序的最多前 limit 个，默认取值为1000。
+        :type limit: int
         """
         
         
@@ -53,7 +53,7 @@ class ListFoldersAndFilesRequest:
         self._cloud_storage_assignment_id = None
         self._folder_url = None
         self._marker = None
-        self._max_keys = None
+        self._limit = None
         self.discriminator = None
 
         self.user_name = user_name
@@ -62,8 +62,8 @@ class ListFoldersAndFilesRequest:
         self.folder_url = folder_url
         if marker is not None:
             self.marker = marker
-        if max_keys is not None:
-            self.max_keys = max_keys
+        if limit is not None:
+            self.limit = limit
 
     @property
     def user_name(self):
@@ -154,26 +154,26 @@ class ListFoldersAndFilesRequest:
         self._marker = marker
 
     @property
-    def max_keys(self):
-        r"""Gets the max_keys of this ListFoldersAndFilesRequest.
+    def limit(self):
+        r"""Gets the limit of this ListFoldersAndFilesRequest.
 
-        列举文件系统的最大数目，返回的文件系统列表将是按照字典顺序的最多前 maxKeys 个，默认取值为1000。
+        列举文件系统的最大数目，返回的文件系统列表将是按照字典顺序的最多前 limit 个，默认取值为1000。
 
-        :return: The max_keys of this ListFoldersAndFilesRequest.
+        :return: The limit of this ListFoldersAndFilesRequest.
         :rtype: int
         """
-        return self._max_keys
+        return self._limit
 
-    @max_keys.setter
-    def max_keys(self, max_keys):
-        r"""Sets the max_keys of this ListFoldersAndFilesRequest.
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListFoldersAndFilesRequest.
 
-        列举文件系统的最大数目，返回的文件系统列表将是按照字典顺序的最多前 maxKeys 个，默认取值为1000。
+        列举文件系统的最大数目，返回的文件系统列表将是按照字典顺序的最多前 limit 个，默认取值为1000。
 
-        :param max_keys: The max_keys of this ListFoldersAndFilesRequest.
-        :type max_keys: int
+        :param limit: The limit of this ListFoldersAndFilesRequest.
+        :type limit: int
         """
-        self._max_keys = max_keys
+        self._limit = limit
 
     def to_dict(self):
         result = {}

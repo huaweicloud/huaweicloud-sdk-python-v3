@@ -36,7 +36,7 @@ class AsmClient(Client):
     def create_mesh(self, request):
         r"""创建网格
 
-        该API用于创建一个网格
+        该API用于创建一个网格。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -55,7 +55,7 @@ class AsmClient(Client):
     def _create_mesh_http_info(cls, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/meshes",
+            "resource_path": "/v1/{project_id}/meshes",
             "request_type": request.__class__.__name__,
             "response_type": "CreateMeshResponse"
             }
@@ -73,8 +73,6 @@ class AsmClient(Client):
         header_params = {}
         if 'content_type' in local_var_params:
             header_params['Content-Type'] = local_var_params['content_type']
-        if 'x_apply_project_id' in local_var_params:
-            header_params['X-Apply-ProjectID'] = local_var_params['x_apply_project_id']
 
         form_params = {}
 
@@ -124,7 +122,7 @@ class AsmClient(Client):
     def _delete_mesh_http_info(cls, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/v1/meshes/{mesh_id}",
+            "resource_path": "/v1/{project_id}/meshes/{mesh_id}",
             "request_type": request.__class__.__name__,
             "response_type": "DeleteMeshResponse"
             }
@@ -142,10 +140,6 @@ class AsmClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
-        if 'x_apply_project_id' in local_var_params:
-            header_params['X-Apply-ProjectID'] = local_var_params['x_apply_project_id']
 
         form_params = {}
 
@@ -193,7 +187,7 @@ class AsmClient(Client):
     def _list_meshes_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/meshes",
+            "resource_path": "/v1/{project_id}/meshes",
             "request_type": request.__class__.__name__,
             "response_type": "ListMeshesResponse"
             }
@@ -209,10 +203,6 @@ class AsmClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
-        if 'x_apply_project_id' in local_var_params:
-            header_params['X-Apply-ProjectID'] = local_var_params['x_apply_project_id']
 
         form_params = {}
 
@@ -260,7 +250,7 @@ class AsmClient(Client):
     def _show_mesh_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/meshes/{mesh_id}",
+            "resource_path": "/v1/{project_id}/meshes/{mesh_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowMeshResponse"
             }
@@ -278,10 +268,6 @@ class AsmClient(Client):
         query_params = []
 
         header_params = {}
-        if 'content_type' in local_var_params:
-            header_params['Content-Type'] = local_var_params['content_type']
-        if 'x_apply_project_id' in local_var_params:
-            header_params['X-Apply-ProjectID'] = local_var_params['x_apply_project_id']
 
         form_params = {}
 

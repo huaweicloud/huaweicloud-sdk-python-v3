@@ -63,11 +63,11 @@ class CreateHostRequestBody:
         :type web_tag: str
         :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不使用独享ip
         :type exclusive_ip: bool
-        :param paid_type: 套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
+        :param paid_type: **参数解释：** 套餐付费模式标识，用于指定套餐的计费方式 **约束限制：** 不涉及 **取值范围：**  - prePaid:包周期模式  - postPaid:按需模式  **默认取值：** prePaid
         :type paid_type: str
         :param proxy: 防护域名是否使用代理   - false：不使用代理   - true：使用代理
         :type proxy: bool
-        :param lb_algorithm: LB负载均衡，仅专业版和企业版支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
+        :param lb_algorithm: **参数解释：** LB负载均衡，仅专业版和企业版支持配置负载均衡算法 **约束限制：** 不涉及 **取值范围：**  - ip_hash: 源IP Hash,将某个IP的请求定向到同一个服务器  - round_robin: 加权轮询,所有请求将按权重轮流分配给源站服务器  - session_hash: 将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效  **默认取值：** 不涉及
         :type lb_algorithm: str
         :param description: 域名描述
         :type description: str
@@ -271,7 +271,7 @@ class CreateHostRequestBody:
     def paid_type(self):
         r"""Gets the paid_type of this CreateHostRequestBody.
 
-        套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
+        **参数解释：** 套餐付费模式标识，用于指定套餐的计费方式 **约束限制：** 不涉及 **取值范围：**  - prePaid:包周期模式  - postPaid:按需模式  **默认取值：** prePaid
 
         :return: The paid_type of this CreateHostRequestBody.
         :rtype: str
@@ -282,7 +282,7 @@ class CreateHostRequestBody:
     def paid_type(self, paid_type):
         r"""Sets the paid_type of this CreateHostRequestBody.
 
-        套餐付费模式，默认值为prePaid。prePaid：包周期模式；postPaid：按需模式。
+        **参数解释：** 套餐付费模式标识，用于指定套餐的计费方式 **约束限制：** 不涉及 **取值范围：**  - prePaid:包周期模式  - postPaid:按需模式  **默认取值：** prePaid
 
         :param paid_type: The paid_type of this CreateHostRequestBody.
         :type paid_type: str
@@ -315,7 +315,7 @@ class CreateHostRequestBody:
     def lb_algorithm(self):
         r"""Gets the lb_algorithm of this CreateHostRequestBody.
 
-        LB负载均衡，仅专业版和企业版支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
+        **参数解释：** LB负载均衡，仅专业版和企业版支持配置负载均衡算法 **约束限制：** 不涉及 **取值范围：**  - ip_hash: 源IP Hash,将某个IP的请求定向到同一个服务器  - round_robin: 加权轮询,所有请求将按权重轮流分配给源站服务器  - session_hash: 将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效  **默认取值：** 不涉及
 
         :return: The lb_algorithm of this CreateHostRequestBody.
         :rtype: str
@@ -326,7 +326,7 @@ class CreateHostRequestBody:
     def lb_algorithm(self, lb_algorithm):
         r"""Sets the lb_algorithm of this CreateHostRequestBody.
 
-        LB负载均衡，仅专业版和企业版支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
+        **参数解释：** LB负载均衡，仅专业版和企业版支持配置负载均衡算法 **约束限制：** 不涉及 **取值范围：**  - ip_hash: 源IP Hash,将某个IP的请求定向到同一个服务器  - round_robin: 加权轮询,所有请求将按权重轮流分配给源站服务器  - session_hash: 将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效  **默认取值：** 不涉及
 
         :param lb_algorithm: The lb_algorithm of this CreateHostRequestBody.
         :type lb_algorithm: str

@@ -687,7 +687,7 @@ class SwrAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-Swr-Dockerlogin", ]
+        response_headers = ["X-Swr-Dockerlogin", "X-Swr-Expireat", ]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1920,6 +1920,10 @@ class SwrAsyncClient(Client):
             query_params.append(('marker', local_var_params['marker']))
         if 'tag' in local_var_params:
             query_params.append(('tag', local_var_params['tag']))
+        if 'order_column' in local_var_params:
+            query_params.append(('order_column', local_var_params['order_column']))
+        if 'order_type' in local_var_params:
+            query_params.append(('order_type', local_var_params['order_type']))
         if 'with_manifest' in local_var_params:
             query_params.append(('with_manifest', local_var_params['with_manifest']))
 
@@ -6680,6 +6684,77 @@ class SwrAsyncClient(Client):
 
         return http_info
 
+    def list_instance_artifact_vulnerabilities_async(self, request):
+        r"""获取制品扫描的漏洞信息
+
+        获取制品扫描的漏洞信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstanceArtifactVulnerabilities
+        :type request: :class:`huaweicloudsdkswr.v2.ListInstanceArtifactVulnerabilitiesRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListInstanceArtifactVulnerabilitiesResponse`
+        """
+        http_info = self._list_instance_artifact_vulnerabilities_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instance_artifact_vulnerabilities_async_invoker(self, request):
+        http_info = self._list_instance_artifact_vulnerabilities_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_artifact_vulnerabilities_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/namespaces/{namespace_name}/repositories/{repository_name}/artifacts/{reference}/vulnerabilities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceArtifactVulnerabilitiesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'namespace_name' in local_var_params:
+            path_params['namespace_name'] = local_var_params['namespace_name']
+        if 'repository_name' in local_var_params:
+            path_params['repository_name'] = local_var_params['repository_name']
+        if 'reference' in local_var_params:
+            path_params['reference'] = local_var_params['reference']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_instance_artifacts_async(self, request):
         r"""获取制品版本列表
 
@@ -8973,6 +9048,8 @@ class SwrAsyncClient(Client):
             path_params['reference'] = local_var_params['reference']
 
         query_params = []
+        if 'with_scan_overview' in local_var_params:
+            query_params.append(('with_scan_overview', local_var_params['with_scan_overview']))
 
         header_params = {}
 
@@ -9929,6 +10006,77 @@ class SwrAsyncClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def start_manual_scanning_async(self, request):
+        r"""手动启动制品扫描
+
+        手动启动制品扫描
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for StartManualScanning
+        :type request: :class:`huaweicloudsdkswr.v2.StartManualScanningRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.StartManualScanningResponse`
+        """
+        http_info = self._start_manual_scanning_http_info(request)
+        return self._call_api(**http_info)
+
+    def start_manual_scanning_async_invoker(self, request):
+        http_info = self._start_manual_scanning_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_manual_scanning_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/namespaces/{namespace_name}/repositories/{repository_name}/artifacts/{reference}/scan",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartManualScanningResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'namespace_name' in local_var_params:
+            path_params['namespace_name'] = local_var_params['namespace_name']
+        if 'repository_name' in local_var_params:
+            path_params['repository_name'] = local_var_params['repository_name']
+        if 'reference' in local_var_params:
+            path_params['reference'] = local_var_params['reference']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

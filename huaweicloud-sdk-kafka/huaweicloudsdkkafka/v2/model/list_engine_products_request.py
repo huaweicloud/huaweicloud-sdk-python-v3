@@ -29,9 +29,9 @@ class ListEngineProductsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param engine: 消息引擎的类型。
+        :param engine: **参数解释**： 消息引擎的类型。 **约束限制**： 不涉及。 **取值范围**： kafka **默认取值**： 不涉及。
         :type engine: str
-        :param product_id: 产品ID。
+        :param product_id: **参数解释**： 产品ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type product_id: str
         """
         
@@ -49,7 +49,7 @@ class ListEngineProductsRequest:
     def engine(self):
         r"""Gets the engine of this ListEngineProductsRequest.
 
-        消息引擎的类型。
+        **参数解释**： 消息引擎的类型。 **约束限制**： 不涉及。 **取值范围**： kafka **默认取值**： 不涉及。
 
         :return: The engine of this ListEngineProductsRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class ListEngineProductsRequest:
     def engine(self, engine):
         r"""Sets the engine of this ListEngineProductsRequest.
 
-        消息引擎的类型。
+        **参数解释**： 消息引擎的类型。 **约束限制**： 不涉及。 **取值范围**： kafka **默认取值**： 不涉及。
 
         :param engine: The engine of this ListEngineProductsRequest.
         :type engine: str
@@ -71,7 +71,7 @@ class ListEngineProductsRequest:
     def product_id(self):
         r"""Gets the product_id of this ListEngineProductsRequest.
 
-        产品ID。
+        **参数解释**： 产品ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The product_id of this ListEngineProductsRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ListEngineProductsRequest:
     def product_id(self, product_id):
         r"""Sets the product_id of this ListEngineProductsRequest.
 
-        产品ID。
+        **参数解释**： 产品ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param product_id: The product_id of this ListEngineProductsRequest.
         :type product_id: str

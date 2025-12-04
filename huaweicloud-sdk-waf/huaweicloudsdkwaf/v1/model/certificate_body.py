@@ -43,7 +43,7 @@ class CertificateBody:
         :type name: str
         :param expire_time: 证书过期时间戳
         :type expire_time: int
-        :param exp_status: 证书过期状态，0-未过期，1-已过期，2-即将过期（一个月内即将过期）
+        :param exp_status: **参数解释：** 证书过期状态 **约束限制：** 不涉及 **取值范围：**  - 0:未过期  - 1:已过期  - 2:即将过期（证书将在一个月内过期）  **默认取值：** 不涉及
         :type exp_status: int
         :param timestamp: 证书上传时间戳
         :type timestamp: int
@@ -141,7 +141,7 @@ class CertificateBody:
     def exp_status(self):
         r"""Gets the exp_status of this CertificateBody.
 
-        证书过期状态，0-未过期，1-已过期，2-即将过期（一个月内即将过期）
+        **参数解释：** 证书过期状态 **约束限制：** 不涉及 **取值范围：**  - 0:未过期  - 1:已过期  - 2:即将过期（证书将在一个月内过期）  **默认取值：** 不涉及
 
         :return: The exp_status of this CertificateBody.
         :rtype: int
@@ -152,7 +152,7 @@ class CertificateBody:
     def exp_status(self, exp_status):
         r"""Sets the exp_status of this CertificateBody.
 
-        证书过期状态，0-未过期，1-已过期，2-即将过期（一个月内即将过期）
+        **参数解释：** 证书过期状态 **约束限制：** 不涉及 **取值范围：**  - 0:未过期  - 1:已过期  - 2:即将过期（证书将在一个月内过期）  **默认取值：** 不涉及
 
         :param exp_status: The exp_status of this CertificateBody.
         :type exp_status: int

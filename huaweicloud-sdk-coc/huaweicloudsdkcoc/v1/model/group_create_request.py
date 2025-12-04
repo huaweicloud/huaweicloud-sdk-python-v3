@@ -22,7 +22,8 @@ class GroupCreateRequest:
         'application_id': 'str',
         'sync_mode': 'str',
         'sync_rules': 'list[GroupUpdateRequestSyncRules]',
-        'relation_configurations': 'list[GroupRelationConfiguration]'
+        'relation_configurations': 'list[GroupRelationConfiguration]',
+        'related_domain_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class GroupCreateRequest:
         'application_id': 'application_id',
         'sync_mode': 'sync_mode',
         'sync_rules': 'sync_rules',
-        'relation_configurations': 'relation_configurations'
+        'relation_configurations': 'relation_configurations',
+        'related_domain_id': 'related_domain_id'
     }
 
-    def __init__(self, name=None, component_id=None, vendor=None, region_id=None, application_id=None, sync_mode=None, sync_rules=None, relation_configurations=None):
+    def __init__(self, name=None, component_id=None, vendor=None, region_id=None, application_id=None, sync_mode=None, sync_rules=None, relation_configurations=None, related_domain_id=None):
         r"""GroupCreateRequest
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class GroupCreateRequest:
         :type sync_rules: list[:class:`huaweicloudsdkcoc.v1.GroupUpdateRequestSyncRules`]
         :param relation_configurations: 分组配置信息。
         :type relation_configurations: list[:class:`huaweicloudsdkcoc.v1.GroupRelationConfiguration`]
+        :param related_domain_id: 关联帐号id。
+        :type related_domain_id: str
         """
         
         
@@ -69,6 +73,7 @@ class GroupCreateRequest:
         self._sync_mode = None
         self._sync_rules = None
         self._relation_configurations = None
+        self._related_domain_id = None
         self.discriminator = None
 
         self.name = name
@@ -83,6 +88,8 @@ class GroupCreateRequest:
             self.sync_rules = sync_rules
         if relation_configurations is not None:
             self.relation_configurations = relation_configurations
+        if related_domain_id is not None:
+            self.related_domain_id = related_domain_id
 
     @property
     def name(self):
@@ -259,6 +266,28 @@ class GroupCreateRequest:
         :type relation_configurations: list[:class:`huaweicloudsdkcoc.v1.GroupRelationConfiguration`]
         """
         self._relation_configurations = relation_configurations
+
+    @property
+    def related_domain_id(self):
+        r"""Gets the related_domain_id of this GroupCreateRequest.
+
+        关联帐号id。
+
+        :return: The related_domain_id of this GroupCreateRequest.
+        :rtype: str
+        """
+        return self._related_domain_id
+
+    @related_domain_id.setter
+    def related_domain_id(self, related_domain_id):
+        r"""Sets the related_domain_id of this GroupCreateRequest.
+
+        关联帐号id。
+
+        :param related_domain_id: The related_domain_id of this GroupCreateRequest.
+        :type related_domain_id: str
+        """
+        self._related_domain_id = related_domain_id
 
     def to_dict(self):
         result = {}

@@ -102,7 +102,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
         :type traffic_type: str
         :param volume_mode: 手机物理磁盘是否独立。 - 0：不独立 - 1：独立
         :type volume_mode: int
-        :param availability_zone: 云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
+        :param availability_zone: 云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
         :type availability_zone: str
         :param has_encrypt: 当前手机是否开启文件级加密。
         :type has_encrypt: bool
@@ -550,7 +550,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def availability_zone(self):
         r"""Gets the availability_zone of this ShowCloudPhoneDetailResponse.
 
-        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
 
         :return: The availability_zone of this ShowCloudPhoneDetailResponse.
         :rtype: str
@@ -561,7 +561,7 @@ class ShowCloudPhoneDetailResponse(SdkResponse):
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this ShowCloudPhoneDetailResponse.
 
-        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
 
         :param availability_zone: The availability_zone of this ShowCloudPhoneDetailResponse.
         :type availability_zone: str

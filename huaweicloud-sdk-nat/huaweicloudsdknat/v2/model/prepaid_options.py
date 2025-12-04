@@ -33,13 +33,13 @@ class PrepaidOptions:
 
         The model defined in huaweicloud sdk
 
-        :param period_type: month: 包月 year: 包年
+        :param period_type: 订购周期类型，当前支持包月和包年: month: 包月 year: 包年
         :type period_type: str
-        :param period_num: 周期大小
+        :param period_num: 订购周期数，取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
         :type period_num: int
-        :param is_auto_renew: 是否自动续费
+        :param is_auto_renew: 是否自动续订； true：自动续订 false：不自动续订
         :type is_auto_renew: bool
-        :param is_auto_pay: 是否自动支付
+        :param is_auto_pay: 下单订购后，是否自动从客户的账户中支付; true：自动支付 false：不自动支付。
         :type is_auto_pay: bool
         """
         
@@ -51,10 +51,8 @@ class PrepaidOptions:
         self._is_auto_pay = None
         self.discriminator = None
 
-        if period_type is not None:
-            self.period_type = period_type
-        if period_num is not None:
-            self.period_num = period_num
+        self.period_type = period_type
+        self.period_num = period_num
         if is_auto_renew is not None:
             self.is_auto_renew = is_auto_renew
         if is_auto_pay is not None:
@@ -64,7 +62,7 @@ class PrepaidOptions:
     def period_type(self):
         r"""Gets the period_type of this PrepaidOptions.
 
-        month: 包月 year: 包年
+        订购周期类型，当前支持包月和包年: month: 包月 year: 包年
 
         :return: The period_type of this PrepaidOptions.
         :rtype: str
@@ -75,7 +73,7 @@ class PrepaidOptions:
     def period_type(self, period_type):
         r"""Sets the period_type of this PrepaidOptions.
 
-        month: 包月 year: 包年
+        订购周期类型，当前支持包月和包年: month: 包月 year: 包年
 
         :param period_type: The period_type of this PrepaidOptions.
         :type period_type: str
@@ -86,7 +84,7 @@ class PrepaidOptions:
     def period_num(self):
         r"""Gets the period_num of this PrepaidOptions.
 
-        周期大小
+        订购周期数，取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
 
         :return: The period_num of this PrepaidOptions.
         :rtype: int
@@ -97,7 +95,7 @@ class PrepaidOptions:
     def period_num(self, period_num):
         r"""Sets the period_num of this PrepaidOptions.
 
-        周期大小
+        订购周期数，取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
 
         :param period_num: The period_num of this PrepaidOptions.
         :type period_num: int
@@ -108,7 +106,7 @@ class PrepaidOptions:
     def is_auto_renew(self):
         r"""Gets the is_auto_renew of this PrepaidOptions.
 
-        是否自动续费
+        是否自动续订； true：自动续订 false：不自动续订
 
         :return: The is_auto_renew of this PrepaidOptions.
         :rtype: bool
@@ -119,7 +117,7 @@ class PrepaidOptions:
     def is_auto_renew(self, is_auto_renew):
         r"""Sets the is_auto_renew of this PrepaidOptions.
 
-        是否自动续费
+        是否自动续订； true：自动续订 false：不自动续订
 
         :param is_auto_renew: The is_auto_renew of this PrepaidOptions.
         :type is_auto_renew: bool
@@ -130,7 +128,7 @@ class PrepaidOptions:
     def is_auto_pay(self):
         r"""Gets the is_auto_pay of this PrepaidOptions.
 
-        是否自动支付
+        下单订购后，是否自动从客户的账户中支付; true：自动支付 false：不自动支付。
 
         :return: The is_auto_pay of this PrepaidOptions.
         :rtype: bool
@@ -141,7 +139,7 @@ class PrepaidOptions:
     def is_auto_pay(self, is_auto_pay):
         r"""Sets the is_auto_pay of this PrepaidOptions.
 
-        是否自动支付
+        下单订购后，是否自动从客户的账户中支付; true：自动支付 false：不自动支付。
 
         :param is_auto_pay: The is_auto_pay of this PrepaidOptions.
         :type is_auto_pay: bool

@@ -17,16 +17,18 @@ class CreateLlmConfigReq:
     openapi_types = {
         'name': 'str',
         'llm_url': 'str',
-        'api_key': 'str'
+        'api_key': 'str',
+        'model': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'llm_url': 'llm_url',
-        'api_key': 'api_key'
+        'api_key': 'api_key',
+        'model': 'model'
     }
 
-    def __init__(self, name=None, llm_url=None, api_key=None):
+    def __init__(self, name=None, llm_url=None, api_key=None, model=None):
         r"""CreateLlmConfigReq
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class CreateLlmConfigReq:
         :type llm_url: str
         :param api_key: 密钥。
         :type api_key: str
+        :param model: model参数
+        :type model: str
         """
         
         
@@ -44,11 +48,14 @@ class CreateLlmConfigReq:
         self._name = None
         self._llm_url = None
         self._api_key = None
+        self._model = None
         self.discriminator = None
 
         self.name = name
         self.llm_url = llm_url
         self.api_key = api_key
+        if model is not None:
+            self.model = model
 
     @property
     def name(self):
@@ -115,6 +122,28 @@ class CreateLlmConfigReq:
         :type api_key: str
         """
         self._api_key = api_key
+
+    @property
+    def model(self):
+        r"""Gets the model of this CreateLlmConfigReq.
+
+        model参数
+
+        :return: The model of this CreateLlmConfigReq.
+        :rtype: str
+        """
+        return self._model
+
+    @model.setter
+    def model(self, model):
+        r"""Sets the model of this CreateLlmConfigReq.
+
+        model参数
+
+        :param model: The model of this CreateLlmConfigReq.
+        :type model: str
+        """
+        self._model = model
 
     def to_dict(self):
         result = {}

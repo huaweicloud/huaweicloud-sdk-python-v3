@@ -37,17 +37,17 @@ class PortProtocol:
 
         The model defined in huaweicloud sdk
 
-        :param private_plain_enable: 是否开启内网明文访问连接方式。  取值范围：   - true: 开启内网明文访问连接方式，连接地址：ip:9092，访问协议PLAINTEXT。   - false: 关闭内网明文访问。  默认为false。
+        :param private_plain_enable: **参数解释**： 是否开启内网明文访问连接方式。 **约束限制**： 不涉及。 **取值范围**： - true：开启内网明文访问连接方式，连接地址：ip:9092，访问协议PLAINTEXT。 - false：关闭内网明文访问。 **默认取值**： false。
         :type private_plain_enable: bool
-        :param private_sasl_ssl_enable: 是否开启安全协议为SASL_SSL的内网密文接入方式。  取值范围：   - true: 开启安全协议为SASL_SSL的内网密文接入方式。           private_sasl_ssl_enable和private_sasl_plaintext_enable不能同时为true。   - false: 关闭安全协议为SASL_SSL的内网接入方式。  默认为false。
+        :param private_sasl_ssl_enable: **参数解释**： 是否开启安全协议为SASL_SSL的内网密文接入方式。 **约束限制**： private_sasl_ssl_enable和private_sasl_plaintext_enable不能同时为true。 **取值范围**： - true：开启安全协议为SASL_SSL的内网密文接入方式。          - false：关闭安全协议为SASL_SSL的内网接入方式。 **默认取值**： false。
         :type private_sasl_ssl_enable: bool
-        :param private_sasl_plaintext_enable: 是否开启安全协议为SASL_PLAINTEXT的内网密文接入方式。  取值范围：   - true: 开启安全协议为SASL_PLAINTEXT的内网密文接入方式，连接地址：ip:9093，访问协议SASL_PLAINTEXT。           private_sasl_plaintext_enable和private_sasl_ssl_enable不能同时为true。   - false: 关闭安全协议为SASL_PLAINTEXT的内网密文接入方式。  默认为false。
+        :param private_sasl_plaintext_enable: **参数解释**： 是否开启安全协议为SASL_PLAINTEXT的内网密文接入方式。 **约束限制**： private_sasl_plaintext_enable和private_sasl_ssl_enable不能同时为true。 **取值范围**： - true：开启安全协议为SASL_PLAINTEXT的内网密文接入方式，连接地址：ip:9093，访问协议SASL_PLAINTEXT。     - false：关闭安全协议为SASL_PLAINTEXT的内网密文接入方式。 **默认取值**： false。
         :type private_sasl_plaintext_enable: bool
-        :param public_plain_enable: 是否开启公网明文访问连接方式。  取值范围：   - true: 开启公网明文访问连接方式，连接地址：ip:9094，访问协议PLAINTEXT。           开启公网明文接入前，需要先开启公网访问功能。   - false: 关闭公网明文接入方式。  默认为false。
+        :param public_plain_enable: **参数解释**： 是否开启公网明文访问连接方式。 **约束限制**： 开启公网明文接入前，需要先开启公网访问功能。 **取值范围**： - true：开启公网明文访问连接方式，连接地址：ip:9094，访问协议PLAINTEXT。     - false：关闭公网明文接入方式。 **默认取值**： false。
         :type public_plain_enable: bool
-        :param public_sasl_ssl_enable: 是否开启安全协议为SASL_SSL的公网密文接入。  取值范围：   - true: 开启安全协议为SASL_SSL的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_SSL。           public_sasl_ssl_enable和public_sasl_plaintext_enable不能同时为true。           为true时，需要实例开启公网。   - false: 关闭安全协议为SASL_SSL的公网密文接入方式。  默认为false。
+        :param public_sasl_ssl_enable: **参数解释**： 是否开启安全协议为SASL_SSL的公网密文接入。 **约束限制**： public_sasl_ssl_enable和public_sasl_plaintext_enable不能同时为true。 为true时，需要实例开启公网。 **取值范围**： - true：开启安全协议为SASL_SSL的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_SSL。 - false：关闭安全协议为SASL_SSL的公网密文接入方式。 **默认取值**： false。
         :type public_sasl_ssl_enable: bool
-        :param public_sasl_plaintext_enable: 是否开启安全协议为SASL_PLAINTEXT的公网密文接入方式。  取值范围：   - true: 开启安全协议为SASL_PLAINTEXT的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_PLAINTEXT。           public_sasl_plaintext_enable和public_sasl_ssl_enable不能同时为true。           为true时，需要实例开启公网。   - false: 关闭安全协议为SASL_PLAINTEXT的公网密文接入方式。  默认为false。
+        :param public_sasl_plaintext_enable: **参数解释**： 是否开启安全协议为SASL_PLAINTEXT的公网密文接入方式。 **约束限制**： public_sasl_plaintext_enable和public_sasl_ssl_enable不能同时为true。 为true时，需要实例开启公网。 **取值范围**： - true：开启安全协议为SASL_PLAINTEXT的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_PLAINTEXT。           - false：关闭安全协议为SASL_PLAINTEXT的公网密文接入方式。 **默认取值**： false。
         :type public_sasl_plaintext_enable: bool
         """
         
@@ -78,7 +78,7 @@ class PortProtocol:
     def private_plain_enable(self):
         r"""Gets the private_plain_enable of this PortProtocol.
 
-        是否开启内网明文访问连接方式。  取值范围：   - true: 开启内网明文访问连接方式，连接地址：ip:9092，访问协议PLAINTEXT。   - false: 关闭内网明文访问。  默认为false。
+        **参数解释**： 是否开启内网明文访问连接方式。 **约束限制**： 不涉及。 **取值范围**： - true：开启内网明文访问连接方式，连接地址：ip:9092，访问协议PLAINTEXT。 - false：关闭内网明文访问。 **默认取值**： false。
 
         :return: The private_plain_enable of this PortProtocol.
         :rtype: bool
@@ -89,7 +89,7 @@ class PortProtocol:
     def private_plain_enable(self, private_plain_enable):
         r"""Sets the private_plain_enable of this PortProtocol.
 
-        是否开启内网明文访问连接方式。  取值范围：   - true: 开启内网明文访问连接方式，连接地址：ip:9092，访问协议PLAINTEXT。   - false: 关闭内网明文访问。  默认为false。
+        **参数解释**： 是否开启内网明文访问连接方式。 **约束限制**： 不涉及。 **取值范围**： - true：开启内网明文访问连接方式，连接地址：ip:9092，访问协议PLAINTEXT。 - false：关闭内网明文访问。 **默认取值**： false。
 
         :param private_plain_enable: The private_plain_enable of this PortProtocol.
         :type private_plain_enable: bool
@@ -100,7 +100,7 @@ class PortProtocol:
     def private_sasl_ssl_enable(self):
         r"""Gets the private_sasl_ssl_enable of this PortProtocol.
 
-        是否开启安全协议为SASL_SSL的内网密文接入方式。  取值范围：   - true: 开启安全协议为SASL_SSL的内网密文接入方式。           private_sasl_ssl_enable和private_sasl_plaintext_enable不能同时为true。   - false: 关闭安全协议为SASL_SSL的内网接入方式。  默认为false。
+        **参数解释**： 是否开启安全协议为SASL_SSL的内网密文接入方式。 **约束限制**： private_sasl_ssl_enable和private_sasl_plaintext_enable不能同时为true。 **取值范围**： - true：开启安全协议为SASL_SSL的内网密文接入方式。          - false：关闭安全协议为SASL_SSL的内网接入方式。 **默认取值**： false。
 
         :return: The private_sasl_ssl_enable of this PortProtocol.
         :rtype: bool
@@ -111,7 +111,7 @@ class PortProtocol:
     def private_sasl_ssl_enable(self, private_sasl_ssl_enable):
         r"""Sets the private_sasl_ssl_enable of this PortProtocol.
 
-        是否开启安全协议为SASL_SSL的内网密文接入方式。  取值范围：   - true: 开启安全协议为SASL_SSL的内网密文接入方式。           private_sasl_ssl_enable和private_sasl_plaintext_enable不能同时为true。   - false: 关闭安全协议为SASL_SSL的内网接入方式。  默认为false。
+        **参数解释**： 是否开启安全协议为SASL_SSL的内网密文接入方式。 **约束限制**： private_sasl_ssl_enable和private_sasl_plaintext_enable不能同时为true。 **取值范围**： - true：开启安全协议为SASL_SSL的内网密文接入方式。          - false：关闭安全协议为SASL_SSL的内网接入方式。 **默认取值**： false。
 
         :param private_sasl_ssl_enable: The private_sasl_ssl_enable of this PortProtocol.
         :type private_sasl_ssl_enable: bool
@@ -122,7 +122,7 @@ class PortProtocol:
     def private_sasl_plaintext_enable(self):
         r"""Gets the private_sasl_plaintext_enable of this PortProtocol.
 
-        是否开启安全协议为SASL_PLAINTEXT的内网密文接入方式。  取值范围：   - true: 开启安全协议为SASL_PLAINTEXT的内网密文接入方式，连接地址：ip:9093，访问协议SASL_PLAINTEXT。           private_sasl_plaintext_enable和private_sasl_ssl_enable不能同时为true。   - false: 关闭安全协议为SASL_PLAINTEXT的内网密文接入方式。  默认为false。
+        **参数解释**： 是否开启安全协议为SASL_PLAINTEXT的内网密文接入方式。 **约束限制**： private_sasl_plaintext_enable和private_sasl_ssl_enable不能同时为true。 **取值范围**： - true：开启安全协议为SASL_PLAINTEXT的内网密文接入方式，连接地址：ip:9093，访问协议SASL_PLAINTEXT。     - false：关闭安全协议为SASL_PLAINTEXT的内网密文接入方式。 **默认取值**： false。
 
         :return: The private_sasl_plaintext_enable of this PortProtocol.
         :rtype: bool
@@ -133,7 +133,7 @@ class PortProtocol:
     def private_sasl_plaintext_enable(self, private_sasl_plaintext_enable):
         r"""Sets the private_sasl_plaintext_enable of this PortProtocol.
 
-        是否开启安全协议为SASL_PLAINTEXT的内网密文接入方式。  取值范围：   - true: 开启安全协议为SASL_PLAINTEXT的内网密文接入方式，连接地址：ip:9093，访问协议SASL_PLAINTEXT。           private_sasl_plaintext_enable和private_sasl_ssl_enable不能同时为true。   - false: 关闭安全协议为SASL_PLAINTEXT的内网密文接入方式。  默认为false。
+        **参数解释**： 是否开启安全协议为SASL_PLAINTEXT的内网密文接入方式。 **约束限制**： private_sasl_plaintext_enable和private_sasl_ssl_enable不能同时为true。 **取值范围**： - true：开启安全协议为SASL_PLAINTEXT的内网密文接入方式，连接地址：ip:9093，访问协议SASL_PLAINTEXT。     - false：关闭安全协议为SASL_PLAINTEXT的内网密文接入方式。 **默认取值**： false。
 
         :param private_sasl_plaintext_enable: The private_sasl_plaintext_enable of this PortProtocol.
         :type private_sasl_plaintext_enable: bool
@@ -144,7 +144,7 @@ class PortProtocol:
     def public_plain_enable(self):
         r"""Gets the public_plain_enable of this PortProtocol.
 
-        是否开启公网明文访问连接方式。  取值范围：   - true: 开启公网明文访问连接方式，连接地址：ip:9094，访问协议PLAINTEXT。           开启公网明文接入前，需要先开启公网访问功能。   - false: 关闭公网明文接入方式。  默认为false。
+        **参数解释**： 是否开启公网明文访问连接方式。 **约束限制**： 开启公网明文接入前，需要先开启公网访问功能。 **取值范围**： - true：开启公网明文访问连接方式，连接地址：ip:9094，访问协议PLAINTEXT。     - false：关闭公网明文接入方式。 **默认取值**： false。
 
         :return: The public_plain_enable of this PortProtocol.
         :rtype: bool
@@ -155,7 +155,7 @@ class PortProtocol:
     def public_plain_enable(self, public_plain_enable):
         r"""Sets the public_plain_enable of this PortProtocol.
 
-        是否开启公网明文访问连接方式。  取值范围：   - true: 开启公网明文访问连接方式，连接地址：ip:9094，访问协议PLAINTEXT。           开启公网明文接入前，需要先开启公网访问功能。   - false: 关闭公网明文接入方式。  默认为false。
+        **参数解释**： 是否开启公网明文访问连接方式。 **约束限制**： 开启公网明文接入前，需要先开启公网访问功能。 **取值范围**： - true：开启公网明文访问连接方式，连接地址：ip:9094，访问协议PLAINTEXT。     - false：关闭公网明文接入方式。 **默认取值**： false。
 
         :param public_plain_enable: The public_plain_enable of this PortProtocol.
         :type public_plain_enable: bool
@@ -166,7 +166,7 @@ class PortProtocol:
     def public_sasl_ssl_enable(self):
         r"""Gets the public_sasl_ssl_enable of this PortProtocol.
 
-        是否开启安全协议为SASL_SSL的公网密文接入。  取值范围：   - true: 开启安全协议为SASL_SSL的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_SSL。           public_sasl_ssl_enable和public_sasl_plaintext_enable不能同时为true。           为true时，需要实例开启公网。   - false: 关闭安全协议为SASL_SSL的公网密文接入方式。  默认为false。
+        **参数解释**： 是否开启安全协议为SASL_SSL的公网密文接入。 **约束限制**： public_sasl_ssl_enable和public_sasl_plaintext_enable不能同时为true。 为true时，需要实例开启公网。 **取值范围**： - true：开启安全协议为SASL_SSL的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_SSL。 - false：关闭安全协议为SASL_SSL的公网密文接入方式。 **默认取值**： false。
 
         :return: The public_sasl_ssl_enable of this PortProtocol.
         :rtype: bool
@@ -177,7 +177,7 @@ class PortProtocol:
     def public_sasl_ssl_enable(self, public_sasl_ssl_enable):
         r"""Sets the public_sasl_ssl_enable of this PortProtocol.
 
-        是否开启安全协议为SASL_SSL的公网密文接入。  取值范围：   - true: 开启安全协议为SASL_SSL的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_SSL。           public_sasl_ssl_enable和public_sasl_plaintext_enable不能同时为true。           为true时，需要实例开启公网。   - false: 关闭安全协议为SASL_SSL的公网密文接入方式。  默认为false。
+        **参数解释**： 是否开启安全协议为SASL_SSL的公网密文接入。 **约束限制**： public_sasl_ssl_enable和public_sasl_plaintext_enable不能同时为true。 为true时，需要实例开启公网。 **取值范围**： - true：开启安全协议为SASL_SSL的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_SSL。 - false：关闭安全协议为SASL_SSL的公网密文接入方式。 **默认取值**： false。
 
         :param public_sasl_ssl_enable: The public_sasl_ssl_enable of this PortProtocol.
         :type public_sasl_ssl_enable: bool
@@ -188,7 +188,7 @@ class PortProtocol:
     def public_sasl_plaintext_enable(self):
         r"""Gets the public_sasl_plaintext_enable of this PortProtocol.
 
-        是否开启安全协议为SASL_PLAINTEXT的公网密文接入方式。  取值范围：   - true: 开启安全协议为SASL_PLAINTEXT的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_PLAINTEXT。           public_sasl_plaintext_enable和public_sasl_ssl_enable不能同时为true。           为true时，需要实例开启公网。   - false: 关闭安全协议为SASL_PLAINTEXT的公网密文接入方式。  默认为false。
+        **参数解释**： 是否开启安全协议为SASL_PLAINTEXT的公网密文接入方式。 **约束限制**： public_sasl_plaintext_enable和public_sasl_ssl_enable不能同时为true。 为true时，需要实例开启公网。 **取值范围**： - true：开启安全协议为SASL_PLAINTEXT的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_PLAINTEXT。           - false：关闭安全协议为SASL_PLAINTEXT的公网密文接入方式。 **默认取值**： false。
 
         :return: The public_sasl_plaintext_enable of this PortProtocol.
         :rtype: bool
@@ -199,7 +199,7 @@ class PortProtocol:
     def public_sasl_plaintext_enable(self, public_sasl_plaintext_enable):
         r"""Sets the public_sasl_plaintext_enable of this PortProtocol.
 
-        是否开启安全协议为SASL_PLAINTEXT的公网密文接入方式。  取值范围：   - true: 开启安全协议为SASL_PLAINTEXT的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_PLAINTEXT。           public_sasl_plaintext_enable和public_sasl_ssl_enable不能同时为true。           为true时，需要实例开启公网。   - false: 关闭安全协议为SASL_PLAINTEXT的公网密文接入方式。  默认为false。
+        **参数解释**： 是否开启安全协议为SASL_PLAINTEXT的公网密文接入方式。 **约束限制**： public_sasl_plaintext_enable和public_sasl_ssl_enable不能同时为true。 为true时，需要实例开启公网。 **取值范围**： - true：开启安全协议为SASL_PLAINTEXT的公网密文接入方式，连接地址：ip:9095，访问协议：SASL_PLAINTEXT。           - false：关闭安全协议为SASL_PLAINTEXT的公网密文接入方式。 **默认取值**： false。
 
         :param public_sasl_plaintext_enable: The public_sasl_plaintext_enable of this PortProtocol.
         :type public_sasl_plaintext_enable: bool

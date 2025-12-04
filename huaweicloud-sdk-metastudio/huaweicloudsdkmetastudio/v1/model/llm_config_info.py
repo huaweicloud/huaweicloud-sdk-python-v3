@@ -18,6 +18,7 @@ class LlmConfigInfo:
         'llm_config_id': 'str',
         'name': 'str',
         'llm_url': 'str',
+        'model': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -26,11 +27,12 @@ class LlmConfigInfo:
         'llm_config_id': 'llm_config_id',
         'name': 'name',
         'llm_url': 'llm_url',
+        'model': 'model',
         'create_time': 'create_time',
         'update_time': 'update_time'
     }
 
-    def __init__(self, llm_config_id=None, name=None, llm_url=None, create_time=None, update_time=None):
+    def __init__(self, llm_config_id=None, name=None, llm_url=None, model=None, create_time=None, update_time=None):
         r"""LlmConfigInfo
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class LlmConfigInfo:
         :type name: str
         :param llm_url: 大语言模型地址。
         :type llm_url: str
+        :param model: model参数
+        :type model: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -52,6 +56,7 @@ class LlmConfigInfo:
         self._llm_config_id = None
         self._name = None
         self._llm_url = None
+        self._model = None
         self._create_time = None
         self._update_time = None
         self.discriminator = None
@@ -62,6 +67,8 @@ class LlmConfigInfo:
             self.name = name
         if llm_url is not None:
             self.llm_url = llm_url
+        if model is not None:
+            self.model = model
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -132,6 +139,28 @@ class LlmConfigInfo:
         :type llm_url: str
         """
         self._llm_url = llm_url
+
+    @property
+    def model(self):
+        r"""Gets the model of this LlmConfigInfo.
+
+        model参数
+
+        :return: The model of this LlmConfigInfo.
+        :rtype: str
+        """
+        return self._model
+
+    @model.setter
+    def model(self, model):
+        r"""Sets the model of this LlmConfigInfo.
+
+        model参数
+
+        :param model: The model of this LlmConfigInfo.
+        :type model: str
+        """
+        self._model = model
 
     @property
     def create_time(self):

@@ -37,17 +37,17 @@ class ShowGroupsRespGroup:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 消费组名称。
+        :param group_id: **参数解释**： 消费组名称。 **取值范围**： 不涉及。
         :type group_id: str
-        :param state: 消费组状态。包含以下状态： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        :param state: **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
         :type state: str
-        :param coordinator_id: 协调器编号。
+        :param coordinator_id: **参数解释**： 协调器编号。 **取值范围**： 不涉及。
         :type coordinator_id: int
-        :param members: 消费者列表。
+        :param members: **参数解释**： 消费者列表。
         :type members: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupMembers`]
-        :param group_message_offsets: 消费进度。
+        :param group_message_offsets: **参数解释**： 消费进度。
         :type group_message_offsets: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupGroupMessageOffsets`]
-        :param assignment_strategy: 分区分配策略。
+        :param assignment_strategy: **参数解释**： 分区分配策略。 **取值范围**： 不涉及。
         :type assignment_strategy: str
         """
         
@@ -78,7 +78,7 @@ class ShowGroupsRespGroup:
     def group_id(self):
         r"""Gets the group_id of this ShowGroupsRespGroup.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **取值范围**： 不涉及。
 
         :return: The group_id of this ShowGroupsRespGroup.
         :rtype: str
@@ -89,7 +89,7 @@ class ShowGroupsRespGroup:
     def group_id(self, group_id):
         r"""Sets the group_id of this ShowGroupsRespGroup.
 
-        消费组名称。
+        **参数解释**： 消费组名称。 **取值范围**： 不涉及。
 
         :param group_id: The group_id of this ShowGroupsRespGroup.
         :type group_id: str
@@ -100,7 +100,7 @@ class ShowGroupsRespGroup:
     def state(self):
         r"""Gets the state of this ShowGroupsRespGroup.
 
-        消费组状态。包含以下状态： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
 
         :return: The state of this ShowGroupsRespGroup.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowGroupsRespGroup:
     def state(self, state):
         r"""Sets the state of this ShowGroupsRespGroup.
 
-        消费组状态。包含以下状态： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
 
         :param state: The state of this ShowGroupsRespGroup.
         :type state: str
@@ -122,7 +122,7 @@ class ShowGroupsRespGroup:
     def coordinator_id(self):
         r"""Gets the coordinator_id of this ShowGroupsRespGroup.
 
-        协调器编号。
+        **参数解释**： 协调器编号。 **取值范围**： 不涉及。
 
         :return: The coordinator_id of this ShowGroupsRespGroup.
         :rtype: int
@@ -133,7 +133,7 @@ class ShowGroupsRespGroup:
     def coordinator_id(self, coordinator_id):
         r"""Sets the coordinator_id of this ShowGroupsRespGroup.
 
-        协调器编号。
+        **参数解释**： 协调器编号。 **取值范围**： 不涉及。
 
         :param coordinator_id: The coordinator_id of this ShowGroupsRespGroup.
         :type coordinator_id: int
@@ -144,7 +144,7 @@ class ShowGroupsRespGroup:
     def members(self):
         r"""Gets the members of this ShowGroupsRespGroup.
 
-        消费者列表。
+        **参数解释**： 消费者列表。
 
         :return: The members of this ShowGroupsRespGroup.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupMembers`]
@@ -155,7 +155,7 @@ class ShowGroupsRespGroup:
     def members(self, members):
         r"""Sets the members of this ShowGroupsRespGroup.
 
-        消费者列表。
+        **参数解释**： 消费者列表。
 
         :param members: The members of this ShowGroupsRespGroup.
         :type members: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupMembers`]
@@ -166,7 +166,7 @@ class ShowGroupsRespGroup:
     def group_message_offsets(self):
         r"""Gets the group_message_offsets of this ShowGroupsRespGroup.
 
-        消费进度。
+        **参数解释**： 消费进度。
 
         :return: The group_message_offsets of this ShowGroupsRespGroup.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupGroupMessageOffsets`]
@@ -177,7 +177,7 @@ class ShowGroupsRespGroup:
     def group_message_offsets(self, group_message_offsets):
         r"""Sets the group_message_offsets of this ShowGroupsRespGroup.
 
-        消费进度。
+        **参数解释**： 消费进度。
 
         :param group_message_offsets: The group_message_offsets of this ShowGroupsRespGroup.
         :type group_message_offsets: list[:class:`huaweicloudsdkkafka.v2.ShowGroupsRespGroupGroupMessageOffsets`]
@@ -188,7 +188,7 @@ class ShowGroupsRespGroup:
     def assignment_strategy(self):
         r"""Gets the assignment_strategy of this ShowGroupsRespGroup.
 
-        分区分配策略。
+        **参数解释**： 分区分配策略。 **取值范围**： 不涉及。
 
         :return: The assignment_strategy of this ShowGroupsRespGroup.
         :rtype: str
@@ -199,7 +199,7 @@ class ShowGroupsRespGroup:
     def assignment_strategy(self, assignment_strategy):
         r"""Sets the assignment_strategy of this ShowGroupsRespGroup.
 
-        分区分配策略。
+        **参数解释**： 分区分配策略。 **取值范围**： 不涉及。
 
         :param assignment_strategy: The assignment_strategy of this ShowGroupsRespGroup.
         :type assignment_strategy: str

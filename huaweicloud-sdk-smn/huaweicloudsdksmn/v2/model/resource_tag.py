@@ -29,9 +29,9 @@ class ResourceTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键，表示要匹配的字段。  当前key的参数值只能取“resource_name”，此时value的参数值为云服务器名称。  - key不能重复，value为匹配的值。  - 此字段为固定字典值。  - 不允许为空字符串。
+        :param key: 键。  - 最大长度127个unicode字符。  - key不能为空。
         :type key: str
-        :param value: 值。  当前key的参数值只能取“resource_name”，此时value的参数值为云服务器名称。  - 每个值最大长度255个unicode字符。  - 不可以为空。
+        :param value: 值。  - 每个值最大长度255个unicode字符。
         :type value: str
         """
         
@@ -48,7 +48,7 @@ class ResourceTag:
     def key(self):
         r"""Gets the key of this ResourceTag.
 
-        键，表示要匹配的字段。  当前key的参数值只能取“resource_name”，此时value的参数值为云服务器名称。  - key不能重复，value为匹配的值。  - 此字段为固定字典值。  - 不允许为空字符串。
+        键。  - 最大长度127个unicode字符。  - key不能为空。
 
         :return: The key of this ResourceTag.
         :rtype: str
@@ -59,7 +59,7 @@ class ResourceTag:
     def key(self, key):
         r"""Sets the key of this ResourceTag.
 
-        键，表示要匹配的字段。  当前key的参数值只能取“resource_name”，此时value的参数值为云服务器名称。  - key不能重复，value为匹配的值。  - 此字段为固定字典值。  - 不允许为空字符串。
+        键。  - 最大长度127个unicode字符。  - key不能为空。
 
         :param key: The key of this ResourceTag.
         :type key: str
@@ -70,7 +70,7 @@ class ResourceTag:
     def value(self):
         r"""Gets the value of this ResourceTag.
 
-        值。  当前key的参数值只能取“resource_name”，此时value的参数值为云服务器名称。  - 每个值最大长度255个unicode字符。  - 不可以为空。
+        值。  - 每个值最大长度255个unicode字符。
 
         :return: The value of this ResourceTag.
         :rtype: str
@@ -81,7 +81,7 @@ class ResourceTag:
     def value(self, value):
         r"""Sets the value of this ResourceTag.
 
-        值。  当前key的参数值只能取“resource_name”，此时value的参数值为云服务器名称。  - 每个值最大长度255个unicode字符。  - 不可以为空。
+        值。  - 每个值最大长度255个unicode字符。
 
         :param value: The value of this ResourceTag.
         :type value: str

@@ -15,79 +15,20 @@ class ListMeshesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'content_type': 'str',
-        'x_apply_project_id': 'str'
     }
 
     attribute_map = {
-        'content_type': 'Content-Type',
-        'x_apply_project_id': 'X-Apply-ProjectID'
     }
 
-    def __init__(self, content_type=None, x_apply_project_id=None):
+    def __init__(self):
         r"""ListMeshesRequest
 
         The model defined in huaweicloud sdk
 
-        :param content_type: 消息体的类型（格式）
-        :type content_type: str
-        :param x_apply_project_id: 网格所属ProjectID
-        :type x_apply_project_id: str
         """
         
         
-
-        self._content_type = None
-        self._x_apply_project_id = None
         self.discriminator = None
-
-        self.content_type = content_type
-        if x_apply_project_id is not None:
-            self.x_apply_project_id = x_apply_project_id
-
-    @property
-    def content_type(self):
-        r"""Gets the content_type of this ListMeshesRequest.
-
-        消息体的类型（格式）
-
-        :return: The content_type of this ListMeshesRequest.
-        :rtype: str
-        """
-        return self._content_type
-
-    @content_type.setter
-    def content_type(self, content_type):
-        r"""Sets the content_type of this ListMeshesRequest.
-
-        消息体的类型（格式）
-
-        :param content_type: The content_type of this ListMeshesRequest.
-        :type content_type: str
-        """
-        self._content_type = content_type
-
-    @property
-    def x_apply_project_id(self):
-        r"""Gets the x_apply_project_id of this ListMeshesRequest.
-
-        网格所属ProjectID
-
-        :return: The x_apply_project_id of this ListMeshesRequest.
-        :rtype: str
-        """
-        return self._x_apply_project_id
-
-    @x_apply_project_id.setter
-    def x_apply_project_id(self, x_apply_project_id):
-        r"""Sets the x_apply_project_id of this ListMeshesRequest.
-
-        网格所属ProjectID
-
-        :param x_apply_project_id: The x_apply_project_id of this ListMeshesRequest.
-        :type x_apply_project_id: str
-        """
-        self._x_apply_project_id = x_apply_project_id
 
     def to_dict(self):
         result = {}

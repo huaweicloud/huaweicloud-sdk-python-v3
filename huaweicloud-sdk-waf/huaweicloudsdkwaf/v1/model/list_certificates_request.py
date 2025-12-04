@@ -49,7 +49,7 @@ class ListCertificatesRequest:
         :type name: str
         :param host: 是否获取证书关联的域名，默认为false   -true:获取已关联域名的证书   -false:获取未关联域名的证书
         :type host: bool
-        :param exp_status: 证书过期状态，0-未过期，1-已过期，2-即将过期（证书将在一个月内过期）
+        :param exp_status: **参数解释：** 证书过期状态 **约束限制：** 不涉及 **取值范围：**  - 0:未过期  - 1:已过期  - 2:即将过期（证书将在一个月内过期）  **默认取值：** 不涉及
         :type exp_status: int
         :param query_scm: 查询结果的证书来源服务是否包括SCM服务，值为true或者false。
         :type query_scm: bool
@@ -195,7 +195,7 @@ class ListCertificatesRequest:
     def exp_status(self):
         r"""Gets the exp_status of this ListCertificatesRequest.
 
-        证书过期状态，0-未过期，1-已过期，2-即将过期（证书将在一个月内过期）
+        **参数解释：** 证书过期状态 **约束限制：** 不涉及 **取值范围：**  - 0:未过期  - 1:已过期  - 2:即将过期（证书将在一个月内过期）  **默认取值：** 不涉及
 
         :return: The exp_status of this ListCertificatesRequest.
         :rtype: int
@@ -206,7 +206,7 @@ class ListCertificatesRequest:
     def exp_status(self, exp_status):
         r"""Sets the exp_status of this ListCertificatesRequest.
 
-        证书过期状态，0-未过期，1-已过期，2-即将过期（证书将在一个月内过期）
+        **参数解释：** 证书过期状态 **约束限制：** 不涉及 **取值范围：**  - 0:未过期  - 1:已过期  - 2:即将过期（证书将在一个月内过期）  **默认取值：** 不涉及
 
         :param exp_status: The exp_status of this ListCertificatesRequest.
         :type exp_status: int

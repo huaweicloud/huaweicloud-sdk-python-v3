@@ -41,7 +41,7 @@ class CreateRecordSetRequestBody:
         :type name: str
         :param ttl: 解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位
         :type ttl: int
-        :param records: 解析记录的值，不同类型解析记录对应的值的规则不同，必须是合法IP信息
+        :param records: 解析记录的值，不同类型解析记录对应的值的规则不同
         :type records: list[str]
         :param line: 解析线路ID
         :type line: str
@@ -119,7 +119,7 @@ class CreateRecordSetRequestBody:
     def records(self):
         r"""Gets the records of this CreateRecordSetRequestBody.
 
-        解析记录的值，不同类型解析记录对应的值的规则不同，必须是合法IP信息
+        解析记录的值，不同类型解析记录对应的值的规则不同
 
         :return: The records of this CreateRecordSetRequestBody.
         :rtype: list[str]
@@ -130,7 +130,7 @@ class CreateRecordSetRequestBody:
     def records(self, records):
         r"""Sets the records of this CreateRecordSetRequestBody.
 
-        解析记录的值，不同类型解析记录对应的值的规则不同，必须是合法IP信息
+        解析记录的值，不同类型解析记录对应的值的规则不同
 
         :param records: The records of this CreateRecordSetRequestBody.
         :type records: list[str]

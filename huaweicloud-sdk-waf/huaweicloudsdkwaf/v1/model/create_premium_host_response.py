@@ -78,7 +78,7 @@ class CreatePremiumHostResponse(SdkResponse):
         :type id: str
         :param hostname: 防护域名
         :type hostname: str
-        :param protocol: 对外协议，客户端（例如浏览器）请求访问网站的协议类型
+        :param protocol: **参数解释：** 对外协议，客户端（例如浏览器）请求访问网站的协议类型 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  - HTTP&amp;HTTPS: 同事  **默认取值：** 不涉及
         :type protocol: str
         :param server: 防护域名的源站服务器配置信息
         :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
@@ -114,9 +114,9 @@ class CreatePremiumHostResponse(SdkResponse):
         :type projectid: str
         :param enterprise_project_id: 企业项目ID，对应华为云控制台用户名-&gt;企业-&gt;项目管理-&gt;点击项目名称-&gt;ID
         :type enterprise_project_id: str
-        :param protect_status: 域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :param protect_status: **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
         :type protect_status: int
-        :param access_status: 域名接入状态，0表示未接入，1表示已接入
+        :param access_status: **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
         :type access_status: int
         :param block_page: 
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -249,7 +249,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def protocol(self):
         r"""Gets the protocol of this CreatePremiumHostResponse.
 
-        对外协议，客户端（例如浏览器）请求访问网站的协议类型
+        **参数解释：** 对外协议，客户端（例如浏览器）请求访问网站的协议类型 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  - HTTP&HTTPS: 同事  **默认取值：** 不涉及
 
         :return: The protocol of this CreatePremiumHostResponse.
         :rtype: str
@@ -260,7 +260,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def protocol(self, protocol):
         r"""Sets the protocol of this CreatePremiumHostResponse.
 
-        对外协议，客户端（例如浏览器）请求访问网站的协议类型
+        **参数解释：** 对外协议，客户端（例如浏览器）请求访问网站的协议类型 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  - HTTP&HTTPS: 同事  **默认取值：** 不涉及
 
         :param protocol: The protocol of this CreatePremiumHostResponse.
         :type protocol: str
@@ -641,7 +641,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def protect_status(self):
         r"""Gets the protect_status of this CreatePremiumHostResponse.
 
-        域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
 
         :return: The protect_status of this CreatePremiumHostResponse.
         :rtype: int
@@ -652,7 +652,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this CreatePremiumHostResponse.
 
-        域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
 
         :param protect_status: The protect_status of this CreatePremiumHostResponse.
         :type protect_status: int
@@ -663,7 +663,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def access_status(self):
         r"""Gets the access_status of this CreatePremiumHostResponse.
 
-        域名接入状态，0表示未接入，1表示已接入
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
         :return: The access_status of this CreatePremiumHostResponse.
         :rtype: int
@@ -674,7 +674,7 @@ class CreatePremiumHostResponse(SdkResponse):
     def access_status(self, access_status):
         r"""Sets the access_status of this CreatePremiumHostResponse.
 
-        域名接入状态，0表示未接入，1表示已接入
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
         :param access_status: The access_status of this CreatePremiumHostResponse.
         :type access_status: int

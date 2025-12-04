@@ -37,7 +37,7 @@ class SmnConfig:
         :type language: str
         :param topic_urn: 迁移任务所绑定的SMN消息主题的urn号。
         :type topic_urn: str
-        :param trigger_conditions: SMN消息的触发条件，取决于迁移任务状态。  迁移任务状态的取值范围为SUCCESS或者FAILURE。  - FAILURE表示任务失败后发送SMN消息。 - SUCCESS表示任务成功后发送SMN消息。
+        :param trigger_conditions:   SMN消息的触发条件，取决于迁移任务状态。  迁移任务状态的取值范围为SUCCESS或者FAILURE。  - FAILURE表示任务失败后发送SMN消息。 - SUCCESS表示任务成功后发送SMN消息。
         :type trigger_conditions: list[str]
         :param message_template_name: 如果设置此值，则表示用模板方式发送smn信息。 模板示例: {  “Task_Status”: \&quot;\&quot;,     \&quot;Task_Name\&quot; : \&quot;\&quot;,     \&quot;Start_Time\&quot;: \&quot;\&quot;,     \&quot;Total_Time_Used\&quot;: \&quot;\&quot;,     \&quot;Transferred_Data\&quot;: \&quot;\&quot;,     \&quot;Average_Speed\&quot;: \&quot;\&quot;,     \&quot;Source_Bucket\&quot;: \&quot;\&quot;,     \&quot;Destination_Bucket\&quot;: \&quot;\&quot;,     \&quot;List_File_Bucket\&quot;: \&quot;\&quot;,     \&quot;List_File_Key\&quot;: \&quot;\&quot;,     \&quot;Success_object_list_path\&quot;: \&quot;\&quot;,     \&quot;Skip_object_list_path\&quot;: \&quot;\&quot;,     \&quot;Failed_object_list_path\&quot;: \&quot;\&quot; }
         :type message_template_name: str
@@ -106,7 +106,7 @@ class SmnConfig:
     def trigger_conditions(self):
         r"""Gets the trigger_conditions of this SmnConfig.
 
-        SMN消息的触发条件，取决于迁移任务状态。  迁移任务状态的取值范围为SUCCESS或者FAILURE。  - FAILURE表示任务失败后发送SMN消息。 - SUCCESS表示任务成功后发送SMN消息。
+          SMN消息的触发条件，取决于迁移任务状态。  迁移任务状态的取值范围为SUCCESS或者FAILURE。  - FAILURE表示任务失败后发送SMN消息。 - SUCCESS表示任务成功后发送SMN消息。
 
         :return: The trigger_conditions of this SmnConfig.
         :rtype: list[str]
@@ -117,7 +117,7 @@ class SmnConfig:
     def trigger_conditions(self, trigger_conditions):
         r"""Sets the trigger_conditions of this SmnConfig.
 
-        SMN消息的触发条件，取决于迁移任务状态。  迁移任务状态的取值范围为SUCCESS或者FAILURE。  - FAILURE表示任务失败后发送SMN消息。 - SUCCESS表示任务成功后发送SMN消息。
+          SMN消息的触发条件，取决于迁移任务状态。  迁移任务状态的取值范围为SUCCESS或者FAILURE。  - FAILURE表示任务失败后发送SMN消息。 - SUCCESS表示任务成功后发送SMN消息。
 
         :param trigger_conditions: The trigger_conditions of this SmnConfig.
         :type trigger_conditions: list[str]

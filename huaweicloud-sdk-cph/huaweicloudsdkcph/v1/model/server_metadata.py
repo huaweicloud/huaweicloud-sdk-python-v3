@@ -31,11 +31,11 @@ class ServerMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param product_id: 订单ID，不超过64个字节。
+        :param product_id: 产品ID，不超过64个字节。
         :type product_id: str
-        :param order_id: 产品ID，不超过64个字节。
+        :param order_id: 订单ID，不超过64个字节。
         :type order_id: str
-        :param charging_mode: 计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
+        :param charging_mode: 计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc,ctc) [- 1：按需](tag:fcs)
         :type charging_mode: int
         """
         
@@ -57,7 +57,7 @@ class ServerMetadata:
     def product_id(self):
         r"""Gets the product_id of this ServerMetadata.
 
-        订单ID，不超过64个字节。
+        产品ID，不超过64个字节。
 
         :return: The product_id of this ServerMetadata.
         :rtype: str
@@ -68,7 +68,7 @@ class ServerMetadata:
     def product_id(self, product_id):
         r"""Sets the product_id of this ServerMetadata.
 
-        订单ID，不超过64个字节。
+        产品ID，不超过64个字节。
 
         :param product_id: The product_id of this ServerMetadata.
         :type product_id: str
@@ -79,7 +79,7 @@ class ServerMetadata:
     def order_id(self):
         r"""Gets the order_id of this ServerMetadata.
 
-        产品ID，不超过64个字节。
+        订单ID，不超过64个字节。
 
         :return: The order_id of this ServerMetadata.
         :rtype: str
@@ -90,7 +90,7 @@ class ServerMetadata:
     def order_id(self, order_id):
         r"""Sets the order_id of this ServerMetadata.
 
-        产品ID，不超过64个字节。
+        订单ID，不超过64个字节。
 
         :param order_id: The order_id of this ServerMetadata.
         :type order_id: str
@@ -101,7 +101,7 @@ class ServerMetadata:
     def charging_mode(self):
         r"""Gets the charging_mode of this ServerMetadata.
 
-        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
+        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc,ctc) [- 1：按需](tag:fcs)
 
         :return: The charging_mode of this ServerMetadata.
         :rtype: int
@@ -112,7 +112,7 @@ class ServerMetadata:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ServerMetadata.
 
-        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc) [- 1：按需](tag:fcs)
+        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc,ctc) [- 1：按需](tag:fcs)
 
         :param charging_mode: The charging_mode of this ServerMetadata.
         :type charging_mode: int

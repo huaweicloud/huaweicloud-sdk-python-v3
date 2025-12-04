@@ -27,7 +27,7 @@ class UpdateInstanceTopicReq:
 
         The model defined in huaweicloud sdk
 
-        :param topics: 修改的Topic列表。
+        :param topics: **参数解释**： 待修改的Topic列表。 **约束限制**： 不涉及。
         :type topics: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopics`]
         """
         
@@ -43,7 +43,7 @@ class UpdateInstanceTopicReq:
     def topics(self):
         r"""Gets the topics of this UpdateInstanceTopicReq.
 
-        修改的Topic列表。
+        **参数解释**： 待修改的Topic列表。 **约束限制**： 不涉及。
 
         :return: The topics of this UpdateInstanceTopicReq.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopics`]
@@ -54,7 +54,7 @@ class UpdateInstanceTopicReq:
     def topics(self, topics):
         r"""Sets the topics of this UpdateInstanceTopicReq.
 
-        修改的Topic列表。
+        **参数解释**： 待修改的Topic列表。 **约束限制**： 不涉及。
 
         :param topics: The topics of this UpdateInstanceTopicReq.
         :type topics: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopics`]

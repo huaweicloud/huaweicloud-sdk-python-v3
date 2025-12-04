@@ -29,9 +29,9 @@ class Server:
 
         The model defined in huaweicloud sdk
 
-        :param type: 
+        :param type: 类型
         :type type: str
-        :param address: 
+        :param address: 地址
         :type address: str
         """
         
@@ -50,6 +50,8 @@ class Server:
     def type(self):
         r"""Gets the type of this Server.
 
+        类型
+
         :return: The type of this Server.
         :rtype: str
         """
@@ -58,6 +60,8 @@ class Server:
     @type.setter
     def type(self, type):
         r"""Sets the type of this Server.
+
+        类型
 
         :param type: The type of this Server.
         :type type: str
@@ -68,6 +72,8 @@ class Server:
     def address(self):
         r"""Gets the address of this Server.
 
+        地址
+
         :return: The address of this Server.
         :rtype: str
         """
@@ -76,6 +82,8 @@ class Server:
     @address.setter
     def address(self, address):
         r"""Sets the address of this Server.
+
+        地址
 
         :param address: The address of this Server.
         :type address: str

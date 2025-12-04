@@ -44,7 +44,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
         :type timestamp: int
         :param description: 规则描述
         :type description: str
-        :param status: 状态（开启：1，关闭：0）
+        :param status: **参数解释：** 功能状态标识，用于指定对应功能的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
         :type status: int
         """
         
@@ -160,7 +160,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this UpdatePolicyRuleStatusResponse.
 
-        状态（开启：1，关闭：0）
+        **参数解释：** 功能状态标识，用于指定对应功能的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :return: The status of this UpdatePolicyRuleStatusResponse.
         :rtype: int
@@ -171,7 +171,7 @@ class UpdatePolicyRuleStatusResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this UpdatePolicyRuleStatusResponse.
 
-        状态（开启：1，关闭：0）
+        **参数解释：** 功能状态标识，用于指定对应功能的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :param status: The status of this UpdatePolicyRuleStatusResponse.
         :type status: int

@@ -43,21 +43,21 @@ class ListEngineProductsEntity:
 
         The model defined in huaweicloud sdk
 
-        :param type: 产品类型。当前产品类型有单机和集群。
+        :param type: **参数解释**： 产品类型。 **取值范围**： - single    - cluster
         :type type: str
-        :param product_id: 产品ID。
+        :param product_id: **参数解释**： 产品ID。 **取值范围**： 不涉及。
         :type product_id: str
-        :param ecs_flavor_id: 底层资源类型。
+        :param ecs_flavor_id: **参数解释**： 底层资源类型。 **取值范围**： 不涉及。
         :type ecs_flavor_id: str
-        :param billing_code: 账单计费类型。
+        :param billing_code: **参数解释**： 账单计费类型。 **取值范围**： 不涉及。
         :type billing_code: str
-        :param arch_types: CPU架构。
+        :param arch_types: **参数解释**： CPU架构。
         :type arch_types: list[str]
-        :param charging_mode: [计费模式。monthly：包年/包月类型。hourly：按需类型。](tag:hws,hws_hk,ctc,cmcc)[暂未使用。](tag:hws_ocb,ocb,hcs,fcs)[计费模式。hourly：按需类型。](tag:dt,g42,tm,hk_g42,hk_tm,sbc,hk_sbc,hws_eu)
+        :param charging_mode: **参数解释**： 计费模式。
         :type charging_mode: list[str]
-        :param ios: 支持的磁盘IO类型列表。
+        :param ios: **参数解释**： 支持的磁盘IO类型列表。
         :type ios: list[:class:`huaweicloudsdkkafka.v2.ListEngineIosEntity`]
-        :param support_features: 当前规格实例支持的功能特性列表。
+        :param support_features: **参数解释**： 当前规格实例支持的功能特性列表。
         :type support_features: list[:class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesEntity`]
         :param properties: 
         :type properties: :class:`huaweicloudsdkkafka.v2.ListEnginePropertiesEntity`
@@ -99,7 +99,7 @@ class ListEngineProductsEntity:
     def type(self):
         r"""Gets the type of this ListEngineProductsEntity.
 
-        产品类型。当前产品类型有单机和集群。
+        **参数解释**： 产品类型。 **取值范围**： - single    - cluster
 
         :return: The type of this ListEngineProductsEntity.
         :rtype: str
@@ -110,7 +110,7 @@ class ListEngineProductsEntity:
     def type(self, type):
         r"""Sets the type of this ListEngineProductsEntity.
 
-        产品类型。当前产品类型有单机和集群。
+        **参数解释**： 产品类型。 **取值范围**： - single    - cluster
 
         :param type: The type of this ListEngineProductsEntity.
         :type type: str
@@ -121,7 +121,7 @@ class ListEngineProductsEntity:
     def product_id(self):
         r"""Gets the product_id of this ListEngineProductsEntity.
 
-        产品ID。
+        **参数解释**： 产品ID。 **取值范围**： 不涉及。
 
         :return: The product_id of this ListEngineProductsEntity.
         :rtype: str
@@ -132,7 +132,7 @@ class ListEngineProductsEntity:
     def product_id(self, product_id):
         r"""Sets the product_id of this ListEngineProductsEntity.
 
-        产品ID。
+        **参数解释**： 产品ID。 **取值范围**： 不涉及。
 
         :param product_id: The product_id of this ListEngineProductsEntity.
         :type product_id: str
@@ -143,7 +143,7 @@ class ListEngineProductsEntity:
     def ecs_flavor_id(self):
         r"""Gets the ecs_flavor_id of this ListEngineProductsEntity.
 
-        底层资源类型。
+        **参数解释**： 底层资源类型。 **取值范围**： 不涉及。
 
         :return: The ecs_flavor_id of this ListEngineProductsEntity.
         :rtype: str
@@ -154,7 +154,7 @@ class ListEngineProductsEntity:
     def ecs_flavor_id(self, ecs_flavor_id):
         r"""Sets the ecs_flavor_id of this ListEngineProductsEntity.
 
-        底层资源类型。
+        **参数解释**： 底层资源类型。 **取值范围**： 不涉及。
 
         :param ecs_flavor_id: The ecs_flavor_id of this ListEngineProductsEntity.
         :type ecs_flavor_id: str
@@ -165,7 +165,7 @@ class ListEngineProductsEntity:
     def billing_code(self):
         r"""Gets the billing_code of this ListEngineProductsEntity.
 
-        账单计费类型。
+        **参数解释**： 账单计费类型。 **取值范围**： 不涉及。
 
         :return: The billing_code of this ListEngineProductsEntity.
         :rtype: str
@@ -176,7 +176,7 @@ class ListEngineProductsEntity:
     def billing_code(self, billing_code):
         r"""Sets the billing_code of this ListEngineProductsEntity.
 
-        账单计费类型。
+        **参数解释**： 账单计费类型。 **取值范围**： 不涉及。
 
         :param billing_code: The billing_code of this ListEngineProductsEntity.
         :type billing_code: str
@@ -187,7 +187,7 @@ class ListEngineProductsEntity:
     def arch_types(self):
         r"""Gets the arch_types of this ListEngineProductsEntity.
 
-        CPU架构。
+        **参数解释**： CPU架构。
 
         :return: The arch_types of this ListEngineProductsEntity.
         :rtype: list[str]
@@ -198,7 +198,7 @@ class ListEngineProductsEntity:
     def arch_types(self, arch_types):
         r"""Sets the arch_types of this ListEngineProductsEntity.
 
-        CPU架构。
+        **参数解释**： CPU架构。
 
         :param arch_types: The arch_types of this ListEngineProductsEntity.
         :type arch_types: list[str]
@@ -209,7 +209,7 @@ class ListEngineProductsEntity:
     def charging_mode(self):
         r"""Gets the charging_mode of this ListEngineProductsEntity.
 
-        [计费模式。monthly：包年/包月类型。hourly：按需类型。](tag:hws,hws_hk,ctc,cmcc)[暂未使用。](tag:hws_ocb,ocb,hcs,fcs)[计费模式。hourly：按需类型。](tag:dt,g42,tm,hk_g42,hk_tm,sbc,hk_sbc,hws_eu)
+        **参数解释**： 计费模式。
 
         :return: The charging_mode of this ListEngineProductsEntity.
         :rtype: list[str]
@@ -220,7 +220,7 @@ class ListEngineProductsEntity:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ListEngineProductsEntity.
 
-        [计费模式。monthly：包年/包月类型。hourly：按需类型。](tag:hws,hws_hk,ctc,cmcc)[暂未使用。](tag:hws_ocb,ocb,hcs,fcs)[计费模式。hourly：按需类型。](tag:dt,g42,tm,hk_g42,hk_tm,sbc,hk_sbc,hws_eu)
+        **参数解释**： 计费模式。
 
         :param charging_mode: The charging_mode of this ListEngineProductsEntity.
         :type charging_mode: list[str]
@@ -231,7 +231,7 @@ class ListEngineProductsEntity:
     def ios(self):
         r"""Gets the ios of this ListEngineProductsEntity.
 
-        支持的磁盘IO类型列表。
+        **参数解释**： 支持的磁盘IO类型列表。
 
         :return: The ios of this ListEngineProductsEntity.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ListEngineIosEntity`]
@@ -242,7 +242,7 @@ class ListEngineProductsEntity:
     def ios(self, ios):
         r"""Sets the ios of this ListEngineProductsEntity.
 
-        支持的磁盘IO类型列表。
+        **参数解释**： 支持的磁盘IO类型列表。
 
         :param ios: The ios of this ListEngineProductsEntity.
         :type ios: list[:class:`huaweicloudsdkkafka.v2.ListEngineIosEntity`]
@@ -253,7 +253,7 @@ class ListEngineProductsEntity:
     def support_features(self):
         r"""Gets the support_features of this ListEngineProductsEntity.
 
-        当前规格实例支持的功能特性列表。
+        **参数解释**： 当前规格实例支持的功能特性列表。
 
         :return: The support_features of this ListEngineProductsEntity.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesEntity`]
@@ -264,7 +264,7 @@ class ListEngineProductsEntity:
     def support_features(self, support_features):
         r"""Sets the support_features of this ListEngineProductsEntity.
 
-        当前规格实例支持的功能特性列表。
+        **参数解释**： 当前规格实例支持的功能特性列表。
 
         :param support_features: The support_features of this ListEngineProductsEntity.
         :type support_features: list[:class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesEntity`]

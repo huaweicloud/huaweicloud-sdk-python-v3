@@ -18,17 +18,19 @@ class ListLogContextRequestBody:
         'line_num': 'str',
         'time__': 'str',
         'backwards_size': 'int',
-        'forwards_size': 'int'
+        'forwards_size': 'int',
+        'scroll_id': 'str'
     }
 
     attribute_map = {
         'line_num': 'line_num',
         'time__': '__time__',
         'backwards_size': 'backwards_size',
-        'forwards_size': 'forwards_size'
+        'forwards_size': 'forwards_size',
+        'scroll_id': 'scroll_id'
     }
 
-    def __init__(self, line_num=None, time__=None, backwards_size=None, forwards_size=None):
+    def __init__(self, line_num=None, time__=None, backwards_size=None, forwards_size=None, scroll_id=None):
         r"""ListLogContextRequestBody
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ListLogContextRequestBody:
         :type backwards_size: int
         :param forwards_size: 指定起始日志往后（下文）的日志条数，取值范围 [0, 500] ，默认值100
         :type forwards_size: int
+        :param scroll_id: 分页查询时，若上次查询的返回结果中包含该字段，需要增加该字段参与分页查询。
+        :type scroll_id: str
         """
         
         
@@ -49,6 +53,7 @@ class ListLogContextRequestBody:
         self._time__ = None
         self._backwards_size = None
         self._forwards_size = None
+        self._scroll_id = None
         self.discriminator = None
 
         if line_num is not None:
@@ -59,6 +64,8 @@ class ListLogContextRequestBody:
             self.backwards_size = backwards_size
         if forwards_size is not None:
             self.forwards_size = forwards_size
+        if scroll_id is not None:
+            self.scroll_id = scroll_id
 
     @property
     def line_num(self):
@@ -147,6 +154,28 @@ class ListLogContextRequestBody:
         :type forwards_size: int
         """
         self._forwards_size = forwards_size
+
+    @property
+    def scroll_id(self):
+        r"""Gets the scroll_id of this ListLogContextRequestBody.
+
+        分页查询时，若上次查询的返回结果中包含该字段，需要增加该字段参与分页查询。
+
+        :return: The scroll_id of this ListLogContextRequestBody.
+        :rtype: str
+        """
+        return self._scroll_id
+
+    @scroll_id.setter
+    def scroll_id(self, scroll_id):
+        r"""Sets the scroll_id of this ListLogContextRequestBody.
+
+        分页查询时，若上次查询的返回结果中包含该字段，需要增加该字段参与分页查询。
+
+        :param scroll_id: The scroll_id of this ListLogContextRequestBody.
+        :type scroll_id: str
+        """
+        self._scroll_id = scroll_id
 
     def to_dict(self):
         result = {}

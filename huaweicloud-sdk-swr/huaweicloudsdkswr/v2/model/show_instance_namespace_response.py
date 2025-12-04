@@ -21,7 +21,8 @@ class ShowInstanceNamespaceResponse(SdkResponse):
         'namespace_id': 'int',
         'created_at': 'str',
         'updated_at': 'str',
-        'repo_count': 'int'
+        'repo_count': 'int',
+        'cve_allowlist': 'CVEAllowlist'
     }
 
     attribute_map = {
@@ -30,10 +31,11 @@ class ShowInstanceNamespaceResponse(SdkResponse):
         'namespace_id': 'namespace_id',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
-        'repo_count': 'repo_count'
+        'repo_count': 'repo_count',
+        'cve_allowlist': 'cve_allowlist'
     }
 
-    def __init__(self, name=None, metadata=None, namespace_id=None, created_at=None, updated_at=None, repo_count=None):
+    def __init__(self, name=None, metadata=None, namespace_id=None, created_at=None, updated_at=None, repo_count=None, cve_allowlist=None):
         r"""ShowInstanceNamespaceResponse
 
         The model defined in huaweicloud sdk
@@ -50,6 +52,8 @@ class ShowInstanceNamespaceResponse(SdkResponse):
         :type updated_at: str
         :param repo_count: 镜像数量
         :type repo_count: int
+        :param cve_allowlist: 
+        :type cve_allowlist: :class:`huaweicloudsdkswr.v2.CVEAllowlist`
         """
         
         super().__init__()
@@ -60,6 +64,7 @@ class ShowInstanceNamespaceResponse(SdkResponse):
         self._created_at = None
         self._updated_at = None
         self._repo_count = None
+        self._cve_allowlist = None
         self.discriminator = None
 
         if name is not None:
@@ -74,6 +79,8 @@ class ShowInstanceNamespaceResponse(SdkResponse):
             self.updated_at = updated_at
         if repo_count is not None:
             self.repo_count = repo_count
+        if cve_allowlist is not None:
+            self.cve_allowlist = cve_allowlist
 
     @property
     def name(self):
@@ -202,6 +209,24 @@ class ShowInstanceNamespaceResponse(SdkResponse):
         :type repo_count: int
         """
         self._repo_count = repo_count
+
+    @property
+    def cve_allowlist(self):
+        r"""Gets the cve_allowlist of this ShowInstanceNamespaceResponse.
+
+        :return: The cve_allowlist of this ShowInstanceNamespaceResponse.
+        :rtype: :class:`huaweicloudsdkswr.v2.CVEAllowlist`
+        """
+        return self._cve_allowlist
+
+    @cve_allowlist.setter
+    def cve_allowlist(self, cve_allowlist):
+        r"""Sets the cve_allowlist of this ShowInstanceNamespaceResponse.
+
+        :param cve_allowlist: The cve_allowlist of this ShowInstanceNamespaceResponse.
+        :type cve_allowlist: :class:`huaweicloudsdkswr.v2.CVEAllowlist`
+        """
+        self._cve_allowlist = cve_allowlist
 
     def to_dict(self):
         import warnings

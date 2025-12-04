@@ -21,6 +21,9 @@ class UpdateFlinkJarJobRequestBody:
         'cu_number': 'int',
         'manager_cu_number': 'int',
         'parallel_number': 'int',
+        'checkpoint_enabled': 'bool',
+        'checkpoint_mode': 'int',
+        'checkpoint_interval': 'int',
         'log_enabled': 'bool',
         'obs_bucket': 'str',
         'smn_topic': 'str',
@@ -52,6 +55,9 @@ class UpdateFlinkJarJobRequestBody:
         'cu_number': 'cu_number',
         'manager_cu_number': 'manager_cu_number',
         'parallel_number': 'parallel_number',
+        'checkpoint_enabled': 'checkpoint_enabled',
+        'checkpoint_mode': 'checkpoint_mode',
+        'checkpoint_interval': 'checkpoint_interval',
         'log_enabled': 'log_enabled',
         'obs_bucket': 'obs_bucket',
         'smn_topic': 'smn_topic',
@@ -76,7 +82,7 @@ class UpdateFlinkJarJobRequestBody:
         'resource_config_version': 'resource_config_version'
     }
 
-    def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, tm_cus=None, tm_slot_num=None, feature=None, flink_version=None, execution_agency_urn=None, image=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None, job_type=None, resource_config=None, resource_config_version=None):
+    def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, tm_cus=None, tm_slot_num=None, feature=None, flink_version=None, execution_agency_urn=None, image=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None, job_type=None, resource_config=None, resource_config_version=None):
         r"""UpdateFlinkJarJobRequestBody
 
         The model defined in huaweicloud sdk
@@ -93,6 +99,12 @@ class UpdateFlinkJarJobRequestBody:
         :type manager_cu_number: int
         :param parallel_number: 用户为作业选择的并发量。默认为1。
         :type parallel_number: int
+        :param checkpoint_enabled: 是否开启作业自动快照功能。 开启：true； 关闭：false； 默认：false
+        :type checkpoint_enabled: bool
+        :param checkpoint_mode: 快照模式。 1：exactly_once（精确一次） 2：at_least_once（至少一次） 默认：1
+        :type checkpoint_mode: int
+        :param checkpoint_interval: 快照间隔，单位为秒。 默认：10 取值范围：1-3600
+        :type checkpoint_interval: int
         :param log_enabled: 是否开启作业日志。 开启：true； 关闭：false； 默认：false。
         :type log_enabled: bool
         :param obs_bucket: 当log_enabled&#x3D;&#x3D;true时，用户授权保存日志的OBS路。
@@ -147,6 +159,9 @@ class UpdateFlinkJarJobRequestBody:
         self._cu_number = None
         self._manager_cu_number = None
         self._parallel_number = None
+        self._checkpoint_enabled = None
+        self._checkpoint_mode = None
+        self._checkpoint_interval = None
         self._log_enabled = None
         self._obs_bucket = None
         self._smn_topic = None
@@ -183,6 +198,12 @@ class UpdateFlinkJarJobRequestBody:
             self.manager_cu_number = manager_cu_number
         if parallel_number is not None:
             self.parallel_number = parallel_number
+        if checkpoint_enabled is not None:
+            self.checkpoint_enabled = checkpoint_enabled
+        if checkpoint_mode is not None:
+            self.checkpoint_mode = checkpoint_mode
+        if checkpoint_interval is not None:
+            self.checkpoint_interval = checkpoint_interval
         if log_enabled is not None:
             self.log_enabled = log_enabled
         if obs_bucket is not None:
@@ -359,6 +380,72 @@ class UpdateFlinkJarJobRequestBody:
         :type parallel_number: int
         """
         self._parallel_number = parallel_number
+
+    @property
+    def checkpoint_enabled(self):
+        r"""Gets the checkpoint_enabled of this UpdateFlinkJarJobRequestBody.
+
+        是否开启作业自动快照功能。 开启：true； 关闭：false； 默认：false
+
+        :return: The checkpoint_enabled of this UpdateFlinkJarJobRequestBody.
+        :rtype: bool
+        """
+        return self._checkpoint_enabled
+
+    @checkpoint_enabled.setter
+    def checkpoint_enabled(self, checkpoint_enabled):
+        r"""Sets the checkpoint_enabled of this UpdateFlinkJarJobRequestBody.
+
+        是否开启作业自动快照功能。 开启：true； 关闭：false； 默认：false
+
+        :param checkpoint_enabled: The checkpoint_enabled of this UpdateFlinkJarJobRequestBody.
+        :type checkpoint_enabled: bool
+        """
+        self._checkpoint_enabled = checkpoint_enabled
+
+    @property
+    def checkpoint_mode(self):
+        r"""Gets the checkpoint_mode of this UpdateFlinkJarJobRequestBody.
+
+        快照模式。 1：exactly_once（精确一次） 2：at_least_once（至少一次） 默认：1
+
+        :return: The checkpoint_mode of this UpdateFlinkJarJobRequestBody.
+        :rtype: int
+        """
+        return self._checkpoint_mode
+
+    @checkpoint_mode.setter
+    def checkpoint_mode(self, checkpoint_mode):
+        r"""Sets the checkpoint_mode of this UpdateFlinkJarJobRequestBody.
+
+        快照模式。 1：exactly_once（精确一次） 2：at_least_once（至少一次） 默认：1
+
+        :param checkpoint_mode: The checkpoint_mode of this UpdateFlinkJarJobRequestBody.
+        :type checkpoint_mode: int
+        """
+        self._checkpoint_mode = checkpoint_mode
+
+    @property
+    def checkpoint_interval(self):
+        r"""Gets the checkpoint_interval of this UpdateFlinkJarJobRequestBody.
+
+        快照间隔，单位为秒。 默认：10 取值范围：1-3600
+
+        :return: The checkpoint_interval of this UpdateFlinkJarJobRequestBody.
+        :rtype: int
+        """
+        return self._checkpoint_interval
+
+    @checkpoint_interval.setter
+    def checkpoint_interval(self, checkpoint_interval):
+        r"""Sets the checkpoint_interval of this UpdateFlinkJarJobRequestBody.
+
+        快照间隔，单位为秒。 默认：10 取值范围：1-3600
+
+        :param checkpoint_interval: The checkpoint_interval of this UpdateFlinkJarJobRequestBody.
+        :type checkpoint_interval: int
+        """
+        self._checkpoint_interval = checkpoint_interval
 
     @property
     def log_enabled(self):

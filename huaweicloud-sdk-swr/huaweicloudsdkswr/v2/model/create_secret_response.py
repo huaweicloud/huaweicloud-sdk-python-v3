@@ -17,15 +17,17 @@ class CreateSecretResponse(SdkResponse):
 
     openapi_types = {
         'auths': 'dict(str, AuthInfo)',
-        'x_swr_dockerlogin': 'str'
+        'x_swr_dockerlogin': 'str',
+        'x_swr_expireat': 'str'
     }
 
     attribute_map = {
         'auths': 'auths',
-        'x_swr_dockerlogin': 'X-Swr-Dockerlogin'
+        'x_swr_dockerlogin': 'X-Swr-Dockerlogin',
+        'x_swr_expireat': 'X-Swr-Expireat'
     }
 
-    def __init__(self, auths=None, x_swr_dockerlogin=None):
+    def __init__(self, auths=None, x_swr_dockerlogin=None, x_swr_expireat=None):
         r"""CreateSecretResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class CreateSecretResponse(SdkResponse):
         :type auths: dict(str, AuthInfo)
         :param x_swr_dockerlogin: 
         :type x_swr_dockerlogin: str
+        :param x_swr_expireat: 
+        :type x_swr_expireat: str
         """
         
         super().__init__()
 
         self._auths = None
         self._x_swr_dockerlogin = None
+        self._x_swr_expireat = None
         self.discriminator = None
 
         if auths is not None:
             self.auths = auths
         if x_swr_dockerlogin is not None:
             self.x_swr_dockerlogin = x_swr_dockerlogin
+        if x_swr_expireat is not None:
+            self.x_swr_expireat = x_swr_expireat
 
     @property
     def auths(self):
@@ -86,6 +93,24 @@ class CreateSecretResponse(SdkResponse):
         :type x_swr_dockerlogin: str
         """
         self._x_swr_dockerlogin = x_swr_dockerlogin
+
+    @property
+    def x_swr_expireat(self):
+        r"""Gets the x_swr_expireat of this CreateSecretResponse.
+
+        :return: The x_swr_expireat of this CreateSecretResponse.
+        :rtype: str
+        """
+        return self._x_swr_expireat
+
+    @x_swr_expireat.setter
+    def x_swr_expireat(self, x_swr_expireat):
+        r"""Sets the x_swr_expireat of this CreateSecretResponse.
+
+        :param x_swr_expireat: The x_swr_expireat of this CreateSecretResponse.
+        :type x_swr_expireat: str
+        """
+        self._x_swr_expireat = x_swr_expireat
 
     def to_dict(self):
         import warnings

@@ -27,7 +27,7 @@ class ShowCeshierarchyRespInstanceIds:
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例ID。
+        :param name: **参数解释**： 实例ID。 **取值范围**： 不涉及。
         :type name: str
         """
         
@@ -43,7 +43,7 @@ class ShowCeshierarchyRespInstanceIds:
     def name(self):
         r"""Gets the name of this ShowCeshierarchyRespInstanceIds.
 
-        实例ID。
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :return: The name of this ShowCeshierarchyRespInstanceIds.
         :rtype: str
@@ -54,7 +54,7 @@ class ShowCeshierarchyRespInstanceIds:
     def name(self, name):
         r"""Sets the name of this ShowCeshierarchyRespInstanceIds.
 
-        实例ID。
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowCeshierarchyRespInstanceIds.
         :type name: str

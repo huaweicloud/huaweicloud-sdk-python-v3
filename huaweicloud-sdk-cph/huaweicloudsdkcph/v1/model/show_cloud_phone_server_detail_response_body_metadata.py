@@ -31,7 +31,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param charging_mode: 计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc)
+        :param charging_mode: 计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc,ctc)
         :type charging_mode: int
         :param product_id: 产品ID，不超过64个字节。
         :type product_id: str
@@ -57,7 +57,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
     def charging_mode(self):
         r"""Gets the charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
-        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc)
+        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc,ctc)
 
         :return: The charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
         :rtype: int
@@ -68,7 +68,7 @@ class ShowCloudPhoneServerDetailResponseBodyMetadata:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
 
-        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc)
+        计费类型。 [- 0：包周期](tag:hws,hws_hk,cmcc,ctc)
 
         :param charging_mode: The charging_mode of this ShowCloudPhoneServerDetailResponseBodyMetadata.
         :type charging_mode: int

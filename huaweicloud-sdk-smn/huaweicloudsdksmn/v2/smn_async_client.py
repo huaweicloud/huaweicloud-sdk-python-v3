@@ -700,6 +700,73 @@ class SmnAsyncClient(Client):
 
         return http_info
 
+    def create_kms_key_async(self, request):
+        r"""主题绑定KMS密钥
+
+        为主题绑定KMS密钥。KMS密钥于绑定后五分钟生效，生效后该主题下发布的消息（确认订阅消息、取消订阅消息、主题消息）均使用指定密钥的数据密钥进行加解密，并将消息内容在SMN服务内部加密传输。执行绑定KMS密钥时，用户需要先在IAM处创建名为smn_kms_agency的委托，并将资源操作权限授权给SMN服务。SMN会使用该委托进行创建数据密钥操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateKmsKey
+        :type request: :class:`huaweicloudsdksmn.v2.CreateKmsKeyRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.CreateKmsKeyResponse`
+        """
+        http_info = self._create_kms_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_kms_key_async_invoker(self, request):
+        http_info = self._create_kms_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_kms_key_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/kms",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKmsKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_logtank_async(self, request):
         r"""绑定云日志
 
@@ -1021,6 +1088,73 @@ class SmnAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_kms_key_async(self, request):
+        r"""删除主题下KMS密钥
+
+        删除主题绑定的密钥。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteKmsKey
+        :type request: :class:`huaweicloudsdksmn.v2.DeleteKmsKeyRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.DeleteKmsKeyResponse`
+        """
+        http_info = self._delete_kms_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_kms_key_async_invoker(self, request):
+        http_info = self._delete_kms_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_kms_key_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/kms/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKmsKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -1632,6 +1766,71 @@ class SmnAsyncClient(Client):
 
         return http_info
 
+    def download_http_sign_cert_async(self, request):
+        r"""下载HTTP签名证书
+
+        下载HTTP签名证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DownloadHttpSignCert
+        :type request: :class:`huaweicloudsdksmn.v2.DownloadHttpSignCertRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.DownloadHttpSignCertResponse`
+        """
+        http_info = self._download_http_sign_cert_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_http_sign_cert_async_invoker(self, request):
+        http_info = self._download_http_sign_cert_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_http_sign_cert_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/notifications/certifications/download/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadHttpSignCertResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["content-type", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_cloud_service_async(self, request):
         r"""查询授权云服务列表
 
@@ -1657,6 +1856,69 @@ class SmnAsyncClient(Client):
             "resource_path": "/v2/notifications/cloud_service",
             "request_type": request.__class__.__name__,
             "response_type": "ListCloudServiceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_cloud_services_async(self, request):
+        r"""查询授权服务列表
+
+        查询授权服务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCloudServices
+        :type request: :class:`huaweicloudsdksmn.v2.ListCloudServicesRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.ListCloudServicesResponse`
+        """
+        http_info = self._list_cloud_services_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cloud_services_async_invoker(self, request):
+        http_info = self._list_cloud_services_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_services_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/notifications/cloud-services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudServicesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -2582,6 +2844,83 @@ class SmnAsyncClient(Client):
 
         return http_info
 
+    def list_topics_with_associated_resources_async(self, request):
+        r"""查询主题列表及主题关联资源信息
+
+        查询Topic及Topic关联资源信息列表，关联资源信息随业务演进会持续扩展。Topic列表默认按照创建时间进行降序排列。分页查询可以指定offset以及limit。如果不存在Topic，则返回空列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTopicsWithAssociatedResources
+        :type request: :class:`huaweicloudsdksmn.v2.ListTopicsWithAssociatedResourcesRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.ListTopicsWithAssociatedResourcesResponse`
+        """
+        http_info = self._list_topics_with_associated_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_topics_with_associated_resources_async_invoker(self, request):
+        http_info = self._list_topics_with_associated_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_topics_with_associated_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/topics-with-associated-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopicsWithAssociatedResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'topic_id' in local_var_params:
+            query_params.append(('topic_id', local_var_params['topic_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'fuzzy_name' in local_var_params:
+            query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
+        if 'fuzzy_display_name' in local_var_params:
+            query_params.append(('fuzzy_display_name', local_var_params['fuzzy_display_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_version_async(self, request):
         r"""查询SMN API V2版本信息
 
@@ -2789,6 +3128,7 @@ class SmnAsyncClient(Client):
         
         只需要设置其中一个，如果同时设置，生效的优先级为
         message_structure &gt; message_template_name &gt; message。
+        若发布消息的主题下绑定了KMS密钥，请确保发布消息前，用户需要先在IAM处创建名为smn_kms_agency的委托，并将资源操作权限授权给SMN服务。当发布消息时，SMN会使用该委托进行创建数据密钥和解密数据密钥操作。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2919,6 +3259,71 @@ class SmnAsyncClient(Client):
 
         return http_info
 
+    def show_kms_key_async(self, request):
+        r"""查询主题下KMS密钥
+
+        查询主题下密钥ID。执行绑定KMS密钥时，用户需要先在IAM处创建名为smn_kms_agency的委托，并将资源操作权限授权给SMN服务。SMN会使用该委托进行查询密钥信息操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowKmsKey
+        :type request: :class:`huaweicloudsdksmn.v2.ShowKmsKeyRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.ShowKmsKeyResponse`
+        """
+        http_info = self._show_kms_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_kms_key_async_invoker(self, request):
+        http_info = self._show_kms_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_kms_key_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/kms",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKmsKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_notify_policy_async(self, request):
         r"""查询通知策略
 
@@ -2957,6 +3362,75 @@ class SmnAsyncClient(Client):
             path_params['topic_urn'] = local_var_params['topic_urn']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def subscribe_topic_async(self, request):
+        r"""订阅主题
+
+        订阅终端确认订阅主题消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SubscribeTopic
+        :type request: :class:`huaweicloudsdksmn.v2.SubscribeTopicRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.SubscribeTopicResponse`
+        """
+        http_info = self._subscribe_topic_http_info(request)
+        return self._call_api(**http_info)
+
+    def subscribe_topic_async_invoker(self, request):
+        http_info = self._subscribe_topic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _subscribe_topic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/notifications/subscriptions/subscribe",
+            "request_type": request.__class__.__name__,
+            "response_type": "SubscribeTopicResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'topic_urn' in local_var_params:
+            query_params.append(('topic_urn', local_var_params['topic_urn']))
+        if 'endpoint' in local_var_params:
+            query_params.append(('endpoint', local_var_params['endpoint']))
+        if 'token' in local_var_params:
+            query_params.append(('token', local_var_params['token']))
 
         header_params = {}
 
@@ -3035,6 +3509,140 @@ class SmnAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def unsubscribe_topic_async(self, request):
+        r"""取消订阅主题
+
+        订阅终端取消订阅主题消息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UnsubscribeTopic
+        :type request: :class:`huaweicloudsdksmn.v2.UnsubscribeTopicRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.UnsubscribeTopicResponse`
+        """
+        http_info = self._unsubscribe_topic_http_info(request)
+        return self._call_api(**http_info)
+
+    def unsubscribe_topic_async_invoker(self, request):
+        http_info = self._unsubscribe_topic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unsubscribe_topic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/notifications/subscriptions/unsubscribe",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnsubscribeTopicResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'subscription_urn' in local_var_params:
+            query_params.append(('subscription_urn', local_var_params['subscription_urn']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_kms_key_async(self, request):
+        r"""更新主题下KMS密钥
+
+        更新密钥ID。执行更新KMS密钥时，用户需要先在IAM处创建名为smn_kms_agency的委托，并将对应的资源操作权限授权给SMN服务。SMN会使用该委托进行查询密钥状态和创建数据密钥操作。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateKmsKey
+        :type request: :class:`huaweicloudsdksmn.v2.UpdateKmsKeyRequest`
+        :rtype: :class:`huaweicloudsdksmn.v2.UpdateKmsKeyResponse`
+        """
+        http_info = self._update_kms_key_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_kms_key_async_invoker(self, request):
+        http_info = self._update_kms_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_kms_key_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/kms/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKmsKeyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'topic_urn' in local_var_params:
+            path_params['topic_urn'] = local_var_params['topic_urn']
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

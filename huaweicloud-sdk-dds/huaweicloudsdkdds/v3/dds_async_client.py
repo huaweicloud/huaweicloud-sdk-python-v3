@@ -1162,6 +1162,71 @@ class DdsAsyncClient(Client):
 
         return http_info
 
+    def create_instance_async(self, request):
+        r"""创建实例
+
+        创建文档数据库实例，包括集群实例、副本集实例、以及单节点实例。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateInstance
+        :type request: :class:`huaweicloudsdkdds.v3.CreateInstanceRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.CreateInstanceResponse`
+        """
+        http_info = self._create_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_instance_async_invoker(self, request):
+        http_info = self._create_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_ip_async(self, request):
         r"""创建集群的Shard/Config IP
 
@@ -3380,6 +3445,87 @@ class DdsAsyncClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_instances_async(self, request):
+        r"""查询实例列表和详情
+
+        根据指定条件查询实例列表和详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListInstances
+        :type request: :class:`huaweicloudsdkdds.v3.ListInstancesRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ListInstancesResponse`
+        """
+        http_info = self._list_instances_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_instances_async_invoker(self, request):
+        http_info = self._list_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
+        if 'datastore_type' in local_var_params:
+            query_params.append(('datastore_type', local_var_params['datastore_type']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'subnet_id' in local_var_params:
+            query_params.append(('subnet_id', local_var_params['subnet_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 

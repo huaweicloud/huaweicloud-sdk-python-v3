@@ -28,7 +28,7 @@ class ShowInstanceConfigsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param kafka_configs: kafka配置列表。
+        :param kafka_configs: Kafka配置列表。
         :type kafka_configs: list[:class:`huaweicloudsdkkafka.v2.InstanceConfig`]
         """
         
@@ -44,7 +44,7 @@ class ShowInstanceConfigsResponse(SdkResponse):
     def kafka_configs(self):
         r"""Gets the kafka_configs of this ShowInstanceConfigsResponse.
 
-        kafka配置列表。
+        Kafka配置列表。
 
         :return: The kafka_configs of this ShowInstanceConfigsResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.InstanceConfig`]
@@ -55,7 +55,7 @@ class ShowInstanceConfigsResponse(SdkResponse):
     def kafka_configs(self, kafka_configs):
         r"""Sets the kafka_configs of this ShowInstanceConfigsResponse.
 
-        kafka配置列表。
+        Kafka配置列表。
 
         :param kafka_configs: The kafka_configs of this ShowInstanceConfigsResponse.
         :type kafka_configs: list[:class:`huaweicloudsdkkafka.v2.InstanceConfig`]

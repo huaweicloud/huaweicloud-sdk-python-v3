@@ -41,9 +41,9 @@ class ListSubscriberInstancesRequest:
         :type x_language: str
         :param instance_id: 实例ID
         :type instance_id: str
-        :param subscriber_instance_id: 实例ID
+        :param subscriber_instance_id: 订阅实例ID
         :type subscriber_instance_id: str
-        :param subscriber_instance_name: 实例名
+        :param subscriber_instance_name: 订阅实例名
         :type subscriber_instance_name: str
         :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
         :type offset: int
@@ -121,7 +121,7 @@ class ListSubscriberInstancesRequest:
     def subscriber_instance_id(self):
         r"""Gets the subscriber_instance_id of this ListSubscriberInstancesRequest.
 
-        实例ID
+        订阅实例ID
 
         :return: The subscriber_instance_id of this ListSubscriberInstancesRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListSubscriberInstancesRequest:
     def subscriber_instance_id(self, subscriber_instance_id):
         r"""Sets the subscriber_instance_id of this ListSubscriberInstancesRequest.
 
-        实例ID
+        订阅实例ID
 
         :param subscriber_instance_id: The subscriber_instance_id of this ListSubscriberInstancesRequest.
         :type subscriber_instance_id: str
@@ -143,7 +143,7 @@ class ListSubscriberInstancesRequest:
     def subscriber_instance_name(self):
         r"""Gets the subscriber_instance_name of this ListSubscriberInstancesRequest.
 
-        实例名
+        订阅实例名
 
         :return: The subscriber_instance_name of this ListSubscriberInstancesRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class ListSubscriberInstancesRequest:
     def subscriber_instance_name(self, subscriber_instance_name):
         r"""Sets the subscriber_instance_name of this ListSubscriberInstancesRequest.
 
-        实例名
+        订阅实例名
 
         :param subscriber_instance_name: The subscriber_instance_name of this ListSubscriberInstancesRequest.
         :type subscriber_instance_name: str

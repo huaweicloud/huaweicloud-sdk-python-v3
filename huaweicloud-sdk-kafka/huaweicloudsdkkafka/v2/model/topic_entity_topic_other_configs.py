@@ -47,7 +47,7 @@ class TopicEntityTopicOtherConfigs:
         :type config_type: str
         :param value: **参数解释**： 配置值。 **取值范围**： 不涉及
         :type value: str
-        :param value_type: **参数解释**： 配置值类型。 **取值范围**： 不涉及
+        :param value_type: **参数解释**： 配置值类型。 **取值范围**： - string：字符串类型。 - integer：整数类型。 - enum：枚举值类型。
         :type value_type: str
         """
         
@@ -188,7 +188,7 @@ class TopicEntityTopicOtherConfigs:
     def value_type(self):
         r"""Gets the value_type of this TopicEntityTopicOtherConfigs.
 
-        **参数解释**： 配置值类型。 **取值范围**： 不涉及
+        **参数解释**： 配置值类型。 **取值范围**： - string：字符串类型。 - integer：整数类型。 - enum：枚举值类型。
 
         :return: The value_type of this TopicEntityTopicOtherConfigs.
         :rtype: str
@@ -199,7 +199,7 @@ class TopicEntityTopicOtherConfigs:
     def value_type(self, value_type):
         r"""Sets the value_type of this TopicEntityTopicOtherConfigs.
 
-        **参数解释**： 配置值类型。 **取值范围**： 不涉及
+        **参数解释**： 配置值类型。 **取值范围**： - string：字符串类型。 - integer：整数类型。 - enum：枚举值类型。
 
         :param value_type: The value_type of this TopicEntityTopicOtherConfigs.
         :type value_type: str

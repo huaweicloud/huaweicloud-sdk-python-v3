@@ -130,9 +130,9 @@ class ShowPremiumHostResponse(SdkResponse):
         :type certificateid: str
         :param certificatename: 证书名称
         :type certificatename: str
-        :param protect_status: 域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :param protect_status: **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
         :type protect_status: int
-        :param access_status: 域名接入状态，0表示未接入，1表示已接入
+        :param access_status: **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
         :type access_status: int
         :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
         :type web_tag: str
@@ -727,7 +727,7 @@ class ShowPremiumHostResponse(SdkResponse):
     def protect_status(self):
         r"""Gets the protect_status of this ShowPremiumHostResponse.
 
-        域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
 
         :return: The protect_status of this ShowPremiumHostResponse.
         :rtype: int
@@ -738,7 +738,7 @@ class ShowPremiumHostResponse(SdkResponse):
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ShowPremiumHostResponse.
 
-        域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        **参数解释：** 域名防护状态标识，用于指定域名在WAF中的防护运行状态 **约束限制：** 不涉及 **取值范围：**  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测  **默认取值：** 不涉及
 
         :param protect_status: The protect_status of this ShowPremiumHostResponse.
         :type protect_status: int
@@ -749,7 +749,7 @@ class ShowPremiumHostResponse(SdkResponse):
     def access_status(self):
         r"""Gets the access_status of this ShowPremiumHostResponse.
 
-        域名接入状态，0表示未接入，1表示已接入
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
         :return: The access_status of this ShowPremiumHostResponse.
         :rtype: int
@@ -760,7 +760,7 @@ class ShowPremiumHostResponse(SdkResponse):
     def access_status(self, access_status):
         r"""Sets the access_status of this ShowPremiumHostResponse.
 
-        域名接入状态，0表示未接入，1表示已接入
+        **参数解释：** 域名接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
         :param access_status: The access_status of this ShowPremiumHostResponse.
         :type access_status: int

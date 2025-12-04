@@ -3302,8 +3302,8 @@ class WorkspaceAppClient(Client):
             query_params.append(('folder_url', local_var_params['folder_url']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
-        if 'max_keys' in local_var_params:
-            query_params.append(('max_keys', local_var_params['max_keys']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 

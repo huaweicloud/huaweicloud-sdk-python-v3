@@ -33,13 +33,13 @@ class ListEngineSupportFeaturesPropertiesEntity:
 
         The model defined in huaweicloud sdk
 
-        :param max_task: 转储功能的最大任务数。
+        :param max_task: **参数解释**： Smart Connect的最大任务数。 **取值范围**： 不涉及。
         :type max_task: str
-        :param min_task: 转储功能的最小任务数。
+        :param min_task: **参数解释**： Smart Connect的最小任务数。 **取值范围**： 不涉及。
         :type min_task: str
-        :param max_node: 转储功能的最大节点数。
+        :param max_node: **参数解释**： Smart Connect的最大节点数。 **取值范围**： 不涉及。
         :type max_node: str
-        :param min_node: 转储功能的最小节点数。
+        :param min_node: **参数解释**： Smart Connect的最小节点数。 **取值范围**： 不涉及。
         :type min_node: str
         """
         
@@ -64,7 +64,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
     def max_task(self):
         r"""Gets the max_task of this ListEngineSupportFeaturesPropertiesEntity.
 
-        转储功能的最大任务数。
+        **参数解释**： Smart Connect的最大任务数。 **取值范围**： 不涉及。
 
         :return: The max_task of this ListEngineSupportFeaturesPropertiesEntity.
         :rtype: str
@@ -75,7 +75,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
     def max_task(self, max_task):
         r"""Sets the max_task of this ListEngineSupportFeaturesPropertiesEntity.
 
-        转储功能的最大任务数。
+        **参数解释**： Smart Connect的最大任务数。 **取值范围**： 不涉及。
 
         :param max_task: The max_task of this ListEngineSupportFeaturesPropertiesEntity.
         :type max_task: str
@@ -86,7 +86,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
     def min_task(self):
         r"""Gets the min_task of this ListEngineSupportFeaturesPropertiesEntity.
 
-        转储功能的最小任务数。
+        **参数解释**： Smart Connect的最小任务数。 **取值范围**： 不涉及。
 
         :return: The min_task of this ListEngineSupportFeaturesPropertiesEntity.
         :rtype: str
@@ -97,7 +97,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
     def min_task(self, min_task):
         r"""Sets the min_task of this ListEngineSupportFeaturesPropertiesEntity.
 
-        转储功能的最小任务数。
+        **参数解释**： Smart Connect的最小任务数。 **取值范围**： 不涉及。
 
         :param min_task: The min_task of this ListEngineSupportFeaturesPropertiesEntity.
         :type min_task: str
@@ -108,7 +108,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
     def max_node(self):
         r"""Gets the max_node of this ListEngineSupportFeaturesPropertiesEntity.
 
-        转储功能的最大节点数。
+        **参数解释**： Smart Connect的最大节点数。 **取值范围**： 不涉及。
 
         :return: The max_node of this ListEngineSupportFeaturesPropertiesEntity.
         :rtype: str
@@ -119,7 +119,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
     def max_node(self, max_node):
         r"""Sets the max_node of this ListEngineSupportFeaturesPropertiesEntity.
 
-        转储功能的最大节点数。
+        **参数解释**： Smart Connect的最大节点数。 **取值范围**： 不涉及。
 
         :param max_node: The max_node of this ListEngineSupportFeaturesPropertiesEntity.
         :type max_node: str
@@ -130,7 +130,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
     def min_node(self):
         r"""Gets the min_node of this ListEngineSupportFeaturesPropertiesEntity.
 
-        转储功能的最小节点数。
+        **参数解释**： Smart Connect的最小节点数。 **取值范围**： 不涉及。
 
         :return: The min_node of this ListEngineSupportFeaturesPropertiesEntity.
         :rtype: str
@@ -141,7 +141,7 @@ class ListEngineSupportFeaturesPropertiesEntity:
     def min_node(self, min_node):
         r"""Sets the min_node of this ListEngineSupportFeaturesPropertiesEntity.
 
-        转储功能的最小节点数。
+        **参数解释**： Smart Connect的最小节点数。 **取值范围**： 不涉及。
 
         :param min_node: The min_node of this ListEngineSupportFeaturesPropertiesEntity.
         :type min_node: str

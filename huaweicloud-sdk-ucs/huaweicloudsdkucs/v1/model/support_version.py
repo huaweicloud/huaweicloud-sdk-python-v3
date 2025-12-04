@@ -31,7 +31,7 @@ class SupportVersion:
 
         The model defined in huaweicloud sdk
 
-        :param category: 支持的集群类型（CCE，thirdParty等）
+        :param category: 支持的集群类型
         :type category: str
         :param cluster_type: 支持的集群类型（BareMetal，VirtualMachine，windows等）
         :type cluster_type: str
@@ -57,7 +57,7 @@ class SupportVersion:
     def category(self):
         r"""Gets the category of this SupportVersion.
 
-        支持的集群类型（CCE，thirdParty等）
+        支持的集群类型
 
         :return: The category of this SupportVersion.
         :rtype: str
@@ -68,7 +68,7 @@ class SupportVersion:
     def category(self, category):
         r"""Sets the category of this SupportVersion.
 
-        支持的集群类型（CCE，thirdParty等）
+        支持的集群类型
 
         :param category: The category of this SupportVersion.
         :type category: str

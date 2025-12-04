@@ -41,21 +41,21 @@ class CreateInstanceTopicReq:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释**： Topic名称。 **约束限制**： 长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。 **取值范围**： 不涉及 **默认取值**： 不涉及。 
+        :param id: **参数解释**： Topic名称。 **约束限制**： 长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。 **取值范围**： 不涉及 **默认取值**： 不涉及。
         :type id: str
-        :param replication: **参数解释**： 副本数，配置数据的可靠性。副本数和代理数有关，如果有3个代理，最大副本数是3。 **约束限制**： 不涉及。 **取值范围**： 不涉及 **默认取值**： 不涉及。 
+        :param replication: **参数解释**： 副本数，配置数据的可靠性。 **约束限制**： 副本数和代理数有关，如果有3个代理，最大副本数是3。 **取值范围**： 不涉及 **默认取值**： 不涉及。
         :type replication: int
         :param sync_message_flush: **参数解释**： 是否使用同步落盘，同步落盘会导致性能降低。 **约束限制**： 不涉及。 **取值范围**： - true：同步落盘。 - false：不使用同步落盘。 **默认取值**： false
         :type sync_message_flush: bool
-        :param partition: **参数解释**： Topic分区数，设置消费的并发数。 **约束限制**： 不涉及。 **取值范围**： 1-200。 **默认取值**： 不涉及。 
+        :param partition: **参数解释**： Topic分区数，设置消费的并发数。 **约束限制**： 不涉及。 **取值范围**： 1-200。 **默认取值**： 不涉及。
         :type partition: int
-        :param sync_replication: **参数解释**： 是否开启同步复制。 **约束限制**： 不涉及。 **取值范围**： - true：开启。开启后，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效。 - false：不开启。 **默认取值**： false。 
+        :param sync_replication: **参数解释**： 是否开启同步复制。 **约束限制**： 不涉及。 **取值范围**： - true：开启。开启后，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效。 - false：不开启。 **默认取值**： false。
         :type sync_replication: bool
         :param retention_time: **参数解释**： 消息老化时间。 **约束限制**： 不涉及。 **取值范围**： 1-720 **默认取值**： 72
         :type retention_time: int
         :param topic_other_configs: **参数解释**： Topic配置
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.CreateInstanceTopicReqTopicOtherConfigs`]
-        :param topic_desc: **参数解释**： Topic描述。 **约束限制**： 不涉及。 **取值范围**： 0-200个字符。 **默认取值**： 不涉及。  
+        :param topic_desc: **参数解释**： Topic描述。 **约束限制**： 不涉及。 **取值范围**： 0-200个字符。 **默认取值**： 不涉及。
         :type topic_desc: str
         """
         
@@ -91,7 +91,7 @@ class CreateInstanceTopicReq:
     def id(self):
         r"""Gets the id of this CreateInstanceTopicReq.
 
-        **参数解释**： Topic名称。 **约束限制**： 长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。 **取值范围**： 不涉及 **默认取值**： 不涉及。 
+        **参数解释**： Topic名称。 **约束限制**： 长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。 **取值范围**： 不涉及 **默认取值**： 不涉及。
 
         :return: The id of this CreateInstanceTopicReq.
         :rtype: str
@@ -102,7 +102,7 @@ class CreateInstanceTopicReq:
     def id(self, id):
         r"""Sets the id of this CreateInstanceTopicReq.
 
-        **参数解释**： Topic名称。 **约束限制**： 长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。 **取值范围**： 不涉及 **默认取值**： 不涉及。 
+        **参数解释**： Topic名称。 **约束限制**： 长度为3-200，以字母开头且只支持大小写字母、中横线、下划线、点以及数字。 **取值范围**： 不涉及 **默认取值**： 不涉及。
 
         :param id: The id of this CreateInstanceTopicReq.
         :type id: str
@@ -113,7 +113,7 @@ class CreateInstanceTopicReq:
     def replication(self):
         r"""Gets the replication of this CreateInstanceTopicReq.
 
-        **参数解释**： 副本数，配置数据的可靠性。副本数和代理数有关，如果有3个代理，最大副本数是3。 **约束限制**： 不涉及。 **取值范围**： 不涉及 **默认取值**： 不涉及。 
+        **参数解释**： 副本数，配置数据的可靠性。 **约束限制**： 副本数和代理数有关，如果有3个代理，最大副本数是3。 **取值范围**： 不涉及 **默认取值**： 不涉及。
 
         :return: The replication of this CreateInstanceTopicReq.
         :rtype: int
@@ -124,7 +124,7 @@ class CreateInstanceTopicReq:
     def replication(self, replication):
         r"""Sets the replication of this CreateInstanceTopicReq.
 
-        **参数解释**： 副本数，配置数据的可靠性。副本数和代理数有关，如果有3个代理，最大副本数是3。 **约束限制**： 不涉及。 **取值范围**： 不涉及 **默认取值**： 不涉及。 
+        **参数解释**： 副本数，配置数据的可靠性。 **约束限制**： 副本数和代理数有关，如果有3个代理，最大副本数是3。 **取值范围**： 不涉及 **默认取值**： 不涉及。
 
         :param replication: The replication of this CreateInstanceTopicReq.
         :type replication: int
@@ -157,7 +157,7 @@ class CreateInstanceTopicReq:
     def partition(self):
         r"""Gets the partition of this CreateInstanceTopicReq.
 
-        **参数解释**： Topic分区数，设置消费的并发数。 **约束限制**： 不涉及。 **取值范围**： 1-200。 **默认取值**： 不涉及。 
+        **参数解释**： Topic分区数，设置消费的并发数。 **约束限制**： 不涉及。 **取值范围**： 1-200。 **默认取值**： 不涉及。
 
         :return: The partition of this CreateInstanceTopicReq.
         :rtype: int
@@ -168,7 +168,7 @@ class CreateInstanceTopicReq:
     def partition(self, partition):
         r"""Sets the partition of this CreateInstanceTopicReq.
 
-        **参数解释**： Topic分区数，设置消费的并发数。 **约束限制**： 不涉及。 **取值范围**： 1-200。 **默认取值**： 不涉及。 
+        **参数解释**： Topic分区数，设置消费的并发数。 **约束限制**： 不涉及。 **取值范围**： 1-200。 **默认取值**： 不涉及。
 
         :param partition: The partition of this CreateInstanceTopicReq.
         :type partition: int
@@ -179,7 +179,7 @@ class CreateInstanceTopicReq:
     def sync_replication(self):
         r"""Gets the sync_replication of this CreateInstanceTopicReq.
 
-        **参数解释**： 是否开启同步复制。 **约束限制**： 不涉及。 **取值范围**： - true：开启。开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效。 - false：不开启。 **默认取值**： false。 
+        **参数解释**： 是否开启同步复制。 **约束限制**： 不涉及。 **取值范围**： - true：开启。开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效。 - false：不开启。 **默认取值**： false。
 
         :return: The sync_replication of this CreateInstanceTopicReq.
         :rtype: bool
@@ -190,7 +190,7 @@ class CreateInstanceTopicReq:
     def sync_replication(self, sync_replication):
         r"""Sets the sync_replication of this CreateInstanceTopicReq.
 
-        **参数解释**： 是否开启同步复制。 **约束限制**： 不涉及。 **取值范围**： - true：开启。开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效。 - false：不开启。 **默认取值**： false。 
+        **参数解释**： 是否开启同步复制。 **约束限制**： 不涉及。 **取值范围**： - true：开启。开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效。 - false：不开启。 **默认取值**： false。
 
         :param sync_replication: The sync_replication of this CreateInstanceTopicReq.
         :type sync_replication: bool
@@ -245,7 +245,7 @@ class CreateInstanceTopicReq:
     def topic_desc(self):
         r"""Gets the topic_desc of this CreateInstanceTopicReq.
 
-        **参数解释**： Topic描述。 **约束限制**： 不涉及。 **取值范围**： 0-200个字符。 **默认取值**： 不涉及。  
+        **参数解释**： Topic描述。 **约束限制**： 不涉及。 **取值范围**： 0-200个字符。 **默认取值**： 不涉及。
 
         :return: The topic_desc of this CreateInstanceTopicReq.
         :rtype: str
@@ -256,7 +256,7 @@ class CreateInstanceTopicReq:
     def topic_desc(self, topic_desc):
         r"""Sets the topic_desc of this CreateInstanceTopicReq.
 
-        **参数解释**： Topic描述。 **约束限制**： 不涉及。 **取值范围**： 0-200个字符。 **默认取值**： 不涉及。  
+        **参数解释**： Topic描述。 **约束限制**： 不涉及。 **取值范围**： 0-200个字符。 **默认取值**： 不涉及。
 
         :param topic_desc: The topic_desc of this CreateInstanceTopicReq.
         :type topic_desc: str

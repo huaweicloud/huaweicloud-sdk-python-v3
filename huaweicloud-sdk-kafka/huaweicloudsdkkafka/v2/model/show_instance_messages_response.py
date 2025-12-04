@@ -32,11 +32,11 @@ class ShowInstanceMessagesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param messages: 消息列表。
+        :param messages: **参数解释**： 消息列表。
         :type messages: list[:class:`huaweicloudsdkkafka.v2.MessagesEntity`]
-        :param total: 消息总条数。
+        :param total: **参数解释**： 消息总条数。 **取值范围**： 不涉及。
         :type total: int
-        :param size: 每页消息条数。
+        :param size: **参数解释**： 每页消息条数。 **取值范围**： 不涉及。
         :type size: int
         """
         
@@ -58,7 +58,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
     def messages(self):
         r"""Gets the messages of this ShowInstanceMessagesResponse.
 
-        消息列表。
+        **参数解释**： 消息列表。
 
         :return: The messages of this ShowInstanceMessagesResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.MessagesEntity`]
@@ -69,7 +69,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
     def messages(self, messages):
         r"""Sets the messages of this ShowInstanceMessagesResponse.
 
-        消息列表。
+        **参数解释**： 消息列表。
 
         :param messages: The messages of this ShowInstanceMessagesResponse.
         :type messages: list[:class:`huaweicloudsdkkafka.v2.MessagesEntity`]
@@ -80,7 +80,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
     def total(self):
         r"""Gets the total of this ShowInstanceMessagesResponse.
 
-        消息总条数。
+        **参数解释**： 消息总条数。 **取值范围**： 不涉及。
 
         :return: The total of this ShowInstanceMessagesResponse.
         :rtype: int
@@ -91,7 +91,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
     def total(self, total):
         r"""Sets the total of this ShowInstanceMessagesResponse.
 
-        消息总条数。
+        **参数解释**： 消息总条数。 **取值范围**： 不涉及。
 
         :param total: The total of this ShowInstanceMessagesResponse.
         :type total: int
@@ -102,7 +102,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
     def size(self):
         r"""Gets the size of this ShowInstanceMessagesResponse.
 
-        每页消息条数。
+        **参数解释**： 每页消息条数。 **取值范围**： 不涉及。
 
         :return: The size of this ShowInstanceMessagesResponse.
         :rtype: int
@@ -113,7 +113,7 @@ class ShowInstanceMessagesResponse(SdkResponse):
     def size(self, size):
         r"""Sets the size of this ShowInstanceMessagesResponse.
 
-        每页消息条数。
+        **参数解释**： 每页消息条数。 **取值范围**： 不涉及。
 
         :param size: The size of this ShowInstanceMessagesResponse.
         :type size: int

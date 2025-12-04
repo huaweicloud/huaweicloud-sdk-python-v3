@@ -35,7 +35,7 @@ class CreateValueListRequestBody:
 
         :param name: 引用表名称，只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64
         :type name: str
-        :param type: 引用表类型，参见枚举列表
+        :param type: **参数解释：** 引用表类型 **约束限制：** 不涉及 **取值范围：**  - url  - params  - ip  - cookie  - referer  - user-agent  - header  - response_code  - response_header  - response_body  **默认取值：** 不涉及
         :type type: str
         :param values: 引用表的值
         :type values: list[str]
@@ -83,7 +83,7 @@ class CreateValueListRequestBody:
     def type(self):
         r"""Gets the type of this CreateValueListRequestBody.
 
-        引用表类型，参见枚举列表
+        **参数解释：** 引用表类型 **约束限制：** 不涉及 **取值范围：**  - url  - params  - ip  - cookie  - referer  - user-agent  - header  - response_code  - response_header  - response_body  **默认取值：** 不涉及
 
         :return: The type of this CreateValueListRequestBody.
         :rtype: str
@@ -94,7 +94,7 @@ class CreateValueListRequestBody:
     def type(self, type):
         r"""Sets the type of this CreateValueListRequestBody.
 
-        引用表类型，参见枚举列表
+        **参数解释：** 引用表类型 **约束限制：** 不涉及 **取值范围：**  - url  - params  - ip  - cookie  - referer  - user-agent  - header  - response_code  - response_header  - response_body  **默认取值：** 不涉及
 
         :param type: The type of this CreateValueListRequestBody.
         :type type: str

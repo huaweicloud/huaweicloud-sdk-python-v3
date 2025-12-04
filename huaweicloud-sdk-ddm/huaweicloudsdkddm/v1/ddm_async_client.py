@@ -687,6 +687,140 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def batch_delete_nodes_async(self, request):
+        r"""批量删除实例的节点
+
+        批量删除实例的节点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteNodes
+        :type request: :class:`huaweicloudsdkddm.v1.BatchDeleteNodesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.BatchDeleteNodesResponse`
+        """
+        http_info = self._batch_delete_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_nodes_async_invoker(self, request):
+        http_info = self._batch_delete_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_nodes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def bind_eip_async(self, request):
+        r"""绑定弹性公网IP
+
+        绑定弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BindEip
+        :type request: :class:`huaweicloudsdkddm.v1.BindEipRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.BindEipResponse`
+        """
+        http_info = self._bind_eip_http_info(request)
+        return self._call_api(**http_info)
+
+    def bind_eip_async_invoker(self, request):
+        http_info = self._bind_eip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _bind_eip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "BindEipResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def cancel_migration_async(self, request):
         r"""取消分片变更
 
@@ -1137,6 +1271,71 @@ class DdmAsyncClient(Client):
         path_params = {}
         if 'instance_id' in local_var_params:
             path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_ddm_instance_async(self, request):
+        r"""购买创建DDM实例
+
+        购买创建DDM实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDdmInstance
+        :type request: :class:`huaweicloudsdkddm.v1.CreateDdmInstanceRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.CreateDdmInstanceResponse`
+        """
+        http_info = self._create_ddm_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_ddm_instance_async_invoker(self, request):
+        http_info = self._create_ddm_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ddm_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDdmInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -1639,6 +1838,73 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def delete_group_async(self, request):
+        r"""删除实例组
+
+        删除实例组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteGroup
+        :type request: :class:`huaweicloudsdkddm.v1.DeleteGroupRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.DeleteGroupResponse`
+        """
+        http_info = self._delete_group_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_group_async_invoker(self, request):
+        http_info = self._delete_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGroupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_instance_async(self, request):
         r"""删除DDM实例
 
@@ -1692,6 +1958,73 @@ class DdmAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_nodes_async(self, request):
+        r"""删除实例的节点
+
+        删除实例的节点。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteNodes
+        :type request: :class:`huaweicloudsdkddm.v1.DeleteNodesRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.DeleteNodesResponse`
+        """
+        http_info = self._delete_nodes_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_nodes_async_invoker(self, request):
+        http_info = self._delete_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_nodes_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNodesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -3139,6 +3472,73 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def list_tasks_async(self, request):
+        r"""查询任务列表
+
+        查询任务列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTasks
+        :type request: :class:`huaweicloudsdkddm.v1.ListTasksRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ListTasksResponse`
+        """
+        http_info = self._list_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tasks_async_invoker(self, request):
+        http_info = self._list_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_users_async(self, request):
         r"""查询DDM帐号列表
 
@@ -3332,6 +3732,73 @@ class DdmAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def modify_eip_async(self, request):
+        r"""修改实例的ELB IP
+
+        修改实例的ELB IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ModifyEip
+        :type request: :class:`huaweicloudsdkddm.v1.ModifyEipRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ModifyEipResponse`
+        """
+        http_info = self._modify_eip_http_info(request)
+        return self._call_api(**http_info)
+
+    def modify_eip_async_invoker(self, request):
+        http_info = self._modify_eip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_eip_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/elb/ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyEipResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -3614,6 +4081,71 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def restart_ddm_instance_async(self, request):
+        r"""重启DDM实例
+
+        重启DDM实例
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestartDdmInstance
+        :type request: :class:`huaweicloudsdkddm.v1.RestartDdmInstanceRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.RestartDdmInstanceResponse`
+        """
+        http_info = self._restart_ddm_instance_http_info(request)
+        return self._call_api(**http_info)
+
+    def restart_ddm_instance_async_invoker(self, request):
+        http_info = self._restart_ddm_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_ddm_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartDdmInstanceResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def restart_instance_async(self, request):
         r"""重启DDM实例
 
@@ -3667,6 +4199,73 @@ class DdmAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def restart_node_async(self, request):
+        r"""重启DDM节点
+
+        重启DDM节点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RestartNode
+        :type request: :class:`huaweicloudsdkddm.v1.RestartNodeRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.RestartNodeResponse`
+        """
+        http_info = self._restart_node_http_info(request)
+        return self._call_api(**http_info)
+
+    def restart_node_async_invoker(self, request):
+        http_info = self._restart_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartNodeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -4353,6 +4952,73 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def show_ddm_node_detail_async(self, request):
+        r"""查询DDM实例节点详情
+
+        查询DDM实例节点详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDdmNodeDetail
+        :type request: :class:`huaweicloudsdkddm.v1.ShowDdmNodeDetailRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowDdmNodeDetailResponse`
+        """
+        http_info = self._show_ddm_node_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_ddm_node_detail_async_invoker(self, request):
+        http_info = self._show_ddm_node_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ddm_node_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDdmNodeDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_instance_async(self, request):
         r"""查询DDM实例详情
 
@@ -4838,6 +5504,75 @@ class DdmAsyncClient(Client):
 
         return http_info
 
+    def show_public_ip_async(self, request):
+        r"""获取DDM实例绑定的弹性公网IP信息
+
+        获取DDM实例绑定的弹性公网IP信息
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowPublicIp
+        :type request: :class:`huaweicloudsdkddm.v1.ShowPublicIpRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ShowPublicIpResponse`
+        """
+        http_info = self._show_public_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_public_ip_async_invoker(self, request):
+        http_info = self._show_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_public_ip_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/public-ips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicIpResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_related_dns_async(self, request):
         r"""查询实例在恢复时间点关联的数据节点
 
@@ -5094,6 +5829,136 @@ class DdmAsyncClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def sync_dn_information_async(self, request):
+        r"""同步数据节点
+
+        同步数据节点
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SyncDnInformation
+        :type request: :class:`huaweicloudsdkddm.v1.SyncDnInformationRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.SyncDnInformationResponse`
+        """
+        http_info = self._sync_dn_information_http_info(request)
+        return self._call_api(**http_info)
+
+    def sync_dn_information_async_invoker(self, request):
+        http_info = self._sync_dn_information_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sync_dn_information_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/data-nodes/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncDnInformationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def unbind_eip_async(self, request):
+        r"""解绑弹性公网IP
+
+        解绑弹性公网IP
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UnbindEip
+        :type request: :class:`huaweicloudsdkddm.v1.UnbindEipRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.UnbindEipResponse`
+        """
+        http_info = self._unbind_eip_http_info(request)
+        return self._call_api(**http_info)
+
+    def unbind_eip_async_invoker(self, request):
+        http_info = self._unbind_eip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unbind_eip_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnbindEipResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

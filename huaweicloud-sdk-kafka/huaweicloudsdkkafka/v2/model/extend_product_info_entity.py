@@ -45,7 +45,7 @@ class ExtendProductInfoEntity:
 
         The model defined in huaweicloud sdk
 
-        :param type: 实例类型。
+        :param type: **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
         :type type: str
         :param product_id: 产品ID。
         :type product_id: str
@@ -106,7 +106,7 @@ class ExtendProductInfoEntity:
     def type(self):
         r"""Gets the type of this ExtendProductInfoEntity.
 
-        实例类型。
+        **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
 
         :return: The type of this ExtendProductInfoEntity.
         :rtype: str
@@ -117,7 +117,7 @@ class ExtendProductInfoEntity:
     def type(self, type):
         r"""Sets the type of this ExtendProductInfoEntity.
 
-        实例类型。
+        **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
 
         :param type: The type of this ExtendProductInfoEntity.
         :type type: str

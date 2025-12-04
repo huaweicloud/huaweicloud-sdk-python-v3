@@ -31,11 +31,11 @@ class ListInstanceTopicsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
         :param offset: **参数解释**： 偏移量，表示从此偏移量开始查询。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
         :type offset: str
-        :param limit: **参数解释**： 当次查询返回的最大实例个数。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
+        :param limit: **参数解释**： 当次查询返回的最大实例个数。 **约束限制**： 不涉及。 **取值范围**： 大于等于0，小于等于200。 **默认取值**： 50。
         :type limit: str
         """
         
@@ -56,7 +56,7 @@ class ListInstanceTopicsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListInstanceTopicsRequest.
 
-        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ListInstanceTopicsRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ListInstanceTopicsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListInstanceTopicsRequest.
 
-        **参数解释**： 实例ID。获取方法如下：登录Kafka控制台，在Kafka实例详情页面查找实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ListInstanceTopicsRequest.
         :type instance_id: str
@@ -100,7 +100,7 @@ class ListInstanceTopicsRequest:
     def limit(self):
         r"""Gets the limit of this ListInstanceTopicsRequest.
 
-        **参数解释**： 当次查询返回的最大实例个数。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
+        **参数解释**： 当次查询返回的最大实例个数。 **约束限制**： 不涉及。 **取值范围**： 大于等于0，小于等于200。 **默认取值**： 50。
 
         :return: The limit of this ListInstanceTopicsRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListInstanceTopicsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListInstanceTopicsRequest.
 
-        **参数解释**： 当次查询返回的最大实例个数。 **约束限制**： 不涉及。 **取值范围**： 大于等于0。 **默认取值**： 不涉及。
+        **参数解释**： 当次查询返回的最大实例个数。 **约束限制**： 不涉及。 **取值范围**： 大于等于0，小于等于200。 **默认取值**： 50。
 
         :param limit: The limit of this ListInstanceTopicsRequest.
         :type limit: str

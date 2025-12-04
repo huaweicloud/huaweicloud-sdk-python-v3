@@ -29,7 +29,7 @@ class StatisticsTimelineItem:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键值，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）、CC攻击防护（CC）
+        :param key: **参数解释：** 键值标识，用于区分不同的防护统计类型 **约束限制：** 不涉及 **取值范围：**  - ACCESS:请求总量  - CRAWLER:Bot攻击防护  - ATTACK:攻击总量  - WEB_ATTACK:Web基础防护  - PRECISE:精准防护  - CC:CC攻击防护 **默认取值：** 不涉及
         :type key: str
         :param timeline: 对应键值的时间线统计数据
         :type timeline: list[:class:`huaweicloudsdkwaf.v1.TimeLineItem`]
@@ -50,7 +50,7 @@ class StatisticsTimelineItem:
     def key(self):
         r"""Gets the key of this StatisticsTimelineItem.
 
-        键值，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）、CC攻击防护（CC）
+        **参数解释：** 键值标识，用于区分不同的防护统计类型 **约束限制：** 不涉及 **取值范围：**  - ACCESS:请求总量  - CRAWLER:Bot攻击防护  - ATTACK:攻击总量  - WEB_ATTACK:Web基础防护  - PRECISE:精准防护  - CC:CC攻击防护 **默认取值：** 不涉及
 
         :return: The key of this StatisticsTimelineItem.
         :rtype: str
@@ -61,7 +61,7 @@ class StatisticsTimelineItem:
     def key(self, key):
         r"""Sets the key of this StatisticsTimelineItem.
 
-        键值，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）、CC攻击防护（CC）
+        **参数解释：** 键值标识，用于区分不同的防护统计类型 **约束限制：** 不涉及 **取值范围：**  - ACCESS:请求总量  - CRAWLER:Bot攻击防护  - ATTACK:攻击总量  - WEB_ATTACK:Web基础防护  - PRECISE:精准防护  - CC:CC攻击防护 **默认取值：** 不涉及
 
         :param key: The key of this StatisticsTimelineItem.
         :type key: str

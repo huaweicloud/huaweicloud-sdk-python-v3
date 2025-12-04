@@ -15,7 +15,7 @@ class ShowTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str'
+        'task_id': 'int'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class ShowTaskRequest:
         The model defined in huaweicloud sdk
 
         :param task_id: 任务ID
-        :type task_id: str
+        :type task_id: int
         """
         
         
@@ -45,7 +45,7 @@ class ShowTaskRequest:
         任务ID
 
         :return: The task_id of this ShowTaskRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._task_id
 
@@ -56,7 +56,7 @@ class ShowTaskRequest:
         任务ID
 
         :param task_id: The task_id of this ShowTaskRequest.
-        :type task_id: str
+        :type task_id: int
         """
         self._task_id = task_id
 

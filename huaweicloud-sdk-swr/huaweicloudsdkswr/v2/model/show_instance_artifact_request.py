@@ -18,17 +18,19 @@ class ShowInstanceArtifactRequest:
         'instance_id': 'str',
         'namespace_name': 'str',
         'repository_name': 'str',
-        'reference': 'str'
+        'reference': 'str',
+        'with_scan_overview': 'bool'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
         'namespace_name': 'namespace_name',
         'repository_name': 'repository_name',
-        'reference': 'reference'
+        'reference': 'reference',
+        'with_scan_overview': 'with_scan_overview'
     }
 
-    def __init__(self, instance_id=None, namespace_name=None, repository_name=None, reference=None):
+    def __init__(self, instance_id=None, namespace_name=None, repository_name=None, reference=None, with_scan_overview=None):
         r"""ShowInstanceArtifactRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ShowInstanceArtifactRequest:
         :type repository_name: str
         :param reference: 制品摘要
         :type reference: str
+        :param with_scan_overview: 是否返回制品扫描摘要
+        :type with_scan_overview: bool
         """
         
         
@@ -49,12 +53,15 @@ class ShowInstanceArtifactRequest:
         self._namespace_name = None
         self._repository_name = None
         self._reference = None
+        self._with_scan_overview = None
         self.discriminator = None
 
         self.instance_id = instance_id
         self.namespace_name = namespace_name
         self.repository_name = repository_name
         self.reference = reference
+        if with_scan_overview is not None:
+            self.with_scan_overview = with_scan_overview
 
     @property
     def instance_id(self):
@@ -143,6 +150,28 @@ class ShowInstanceArtifactRequest:
         :type reference: str
         """
         self._reference = reference
+
+    @property
+    def with_scan_overview(self):
+        r"""Gets the with_scan_overview of this ShowInstanceArtifactRequest.
+
+        是否返回制品扫描摘要
+
+        :return: The with_scan_overview of this ShowInstanceArtifactRequest.
+        :rtype: bool
+        """
+        return self._with_scan_overview
+
+    @with_scan_overview.setter
+    def with_scan_overview(self, with_scan_overview):
+        r"""Sets the with_scan_overview of this ShowInstanceArtifactRequest.
+
+        是否返回制品扫描摘要
+
+        :param with_scan_overview: The with_scan_overview of this ShowInstanceArtifactRequest.
+        :type with_scan_overview: bool
+        """
+        self._with_scan_overview = with_scan_overview
 
     def to_dict(self):
         result = {}

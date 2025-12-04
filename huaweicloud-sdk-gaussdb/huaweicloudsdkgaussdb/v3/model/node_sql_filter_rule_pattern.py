@@ -48,8 +48,7 @@ class NodeSqlFilterRulePattern:
 
         self.pattern = pattern
         self.max_concurrency = max_concurrency
-        if expire_at is not None:
-            self.expire_at = expire_at
+        self.expire_at = expire_at
 
     @property
     def pattern(self):

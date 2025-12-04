@@ -18,6 +18,7 @@ class ChangeCloudPhoneServerRequestBody:
         'phone_model_name': 'str',
         'image_id': 'str',
         'keypair_name': 'str',
+        'availability_zone': 'str',
         'ports': 'list[Port]',
         'extend_param': 'ChangeCloudPhoneServerRequestBodyExtendParam',
         'tenant_vpc_id': 'str',
@@ -34,6 +35,7 @@ class ChangeCloudPhoneServerRequestBody:
         'phone_model_name': 'phone_model_name',
         'image_id': 'image_id',
         'keypair_name': 'keypair_name',
+        'availability_zone': 'availability_zone',
         'ports': 'ports',
         'extend_param': 'extend_param',
         'tenant_vpc_id': 'tenant_vpc_id',
@@ -46,7 +48,7 @@ class ChangeCloudPhoneServerRequestBody:
         '_property': 'property'
     }
 
-    def __init__(self, phone_model_name=None, image_id=None, keypair_name=None, ports=None, extend_param=None, tenant_vpc_id=None, nics=None, public_ip=None, phone_count_per_ip=None, phone_data_volume=None, server_share_data_volume=None, band_width=None, _property=None):
+    def __init__(self, phone_model_name=None, image_id=None, keypair_name=None, availability_zone=None, ports=None, extend_param=None, tenant_vpc_id=None, nics=None, public_ip=None, phone_count_per_ip=None, phone_data_volume=None, server_share_data_volume=None, band_width=None, _property=None):
         r"""ChangeCloudPhoneServerRequestBody
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ChangeCloudPhoneServerRequestBody:
         :type image_id: str
         :param keypair_name: 密钥对名称，不超过64个字节，用于云手机ADB登录。
         :type keypair_name: str
+        :param availability_zone: 云手机服务器所在的可用区，不填则维持原可用区不变。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
+        :type availability_zone: str
         :param ports: 云手机启用的应用端口，云手机服务会做端口转发。
         :type ports: list[:class:`huaweicloudsdkcph.v1.Port`]
         :param extend_param: 
@@ -84,6 +88,7 @@ class ChangeCloudPhoneServerRequestBody:
         self._phone_model_name = None
         self._image_id = None
         self._keypair_name = None
+        self._availability_zone = None
         self._ports = None
         self._extend_param = None
         self._tenant_vpc_id = None
@@ -100,6 +105,8 @@ class ChangeCloudPhoneServerRequestBody:
         self.image_id = image_id
         if keypair_name is not None:
             self.keypair_name = keypair_name
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
         if ports is not None:
             self.ports = ports
         if extend_param is not None:
@@ -182,6 +189,28 @@ class ChangeCloudPhoneServerRequestBody:
         :type keypair_name: str
         """
         self._keypair_name = keypair_name
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this ChangeCloudPhoneServerRequestBody.
+
+        云手机服务器所在的可用区，不填则维持原可用区不变。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
+
+        :return: The availability_zone of this ChangeCloudPhoneServerRequestBody.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this ChangeCloudPhoneServerRequestBody.
+
+        云手机服务器所在的可用区，不填则维持原可用区不变。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
+
+        :param availability_zone: The availability_zone of this ChangeCloudPhoneServerRequestBody.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
 
     @property
     def ports(self):

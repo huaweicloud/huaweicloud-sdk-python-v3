@@ -54,7 +54,7 @@ class ShowAntileakageRuleResponse(SdkResponse):
         :type contents: list[str]
         :param timestamp: 创建规则时间戳
         :type timestamp: int
-        :param status: 规则状态，0：关闭，1：开启
+        :param status: **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
         :type status: int
         :param description: 规则描述
         :type description: str
@@ -225,7 +225,7 @@ class ShowAntileakageRuleResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowAntileakageRuleResponse.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :return: The status of this ShowAntileakageRuleResponse.
         :rtype: int
@@ -236,7 +236,7 @@ class ShowAntileakageRuleResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowAntileakageRuleResponse.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :param status: The status of this ShowAntileakageRuleResponse.
         :type status: int

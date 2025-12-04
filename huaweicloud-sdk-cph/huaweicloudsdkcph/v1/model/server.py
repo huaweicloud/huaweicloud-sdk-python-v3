@@ -65,7 +65,7 @@ class Server:
 
         :param server_name: 云手机服务器名称，不超过65字符，只支持英文字母、数字、汉字、下划线和中划线。
         :type server_name: str
-        :param availability_zone: 云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
+        :param availability_zone: 云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
         :type availability_zone: str
         :param server_id: 云手机服务器的唯一标识，不超过32个字节。
         :type server_id: str
@@ -191,7 +191,7 @@ class Server:
     def availability_zone(self):
         r"""Gets the availability_zone of this Server.
 
-        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
 
         :return: The availability_zone of this Server.
         :rtype: str
@@ -202,7 +202,7 @@ class Server:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this Server.
 
-        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
+        云手机服务器所在的可用区。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
 
         :param availability_zone: The availability_zone of this Server.
         :type availability_zone: str

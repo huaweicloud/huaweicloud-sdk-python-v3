@@ -31,7 +31,7 @@ class ShowAddonInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 插件示例id
+        :param id: 插件实例id
         :type id: str
         :param is_database_status: 是否使用数据库存储的插件状态
         :type is_database_status: str
@@ -56,7 +56,7 @@ class ShowAddonInstanceRequest:
     def id(self):
         r"""Gets the id of this ShowAddonInstanceRequest.
 
-        插件示例id
+        插件实例id
 
         :return: The id of this ShowAddonInstanceRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowAddonInstanceRequest:
     def id(self, id):
         r"""Sets the id of this ShowAddonInstanceRequest.
 
-        插件示例id
+        插件实例id
 
         :param id: The id of this ShowAddonInstanceRequest.
         :type id: str

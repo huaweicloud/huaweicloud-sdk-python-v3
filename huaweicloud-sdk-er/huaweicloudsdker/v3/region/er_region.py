@@ -56,6 +56,8 @@ class ErRegion:
                         "https://er.cn-southwest-3.myhuaweicloud.com")
     CN_NORTH_11 = Region("cn-north-11",
                         "https://er.cn-north-11.myhuaweicloud.com")
+    MY_KUALALUMPUR_1 = Region("my-kualalumpur-1",
+                        "https://er.my-kualalumpur-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
@@ -83,6 +85,7 @@ class ErRegion:
         "cn-north-12": CN_NORTH_12,
         "cn-southwest-3": CN_SOUTHWEST_3,
         "cn-north-11": CN_NORTH_11,
+        "my-kualalumpur-1": MY_KUALALUMPUR_1,
     }
 
     @classmethod

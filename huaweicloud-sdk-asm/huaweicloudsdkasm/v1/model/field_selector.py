@@ -46,12 +46,9 @@ class FieldSelector:
         self._values = None
         self.discriminator = None
 
-        if key is not None:
-            self.key = key
-        if operator is not None:
-            self.operator = operator
-        if values is not None:
-            self.values = values
+        self.key = key
+        self.operator = operator
+        self.values = values
 
     @property
     def key(self):

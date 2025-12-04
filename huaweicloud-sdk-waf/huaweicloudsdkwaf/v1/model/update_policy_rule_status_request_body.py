@@ -27,7 +27,7 @@ class UpdatePolicyRuleStatusRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态（开启：1，关闭：0）
+        :param status: **参数解释：** 功能状态标识，用于指定对应功能的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
         :type status: int
         """
         
@@ -43,7 +43,7 @@ class UpdatePolicyRuleStatusRequestBody:
     def status(self):
         r"""Gets the status of this UpdatePolicyRuleStatusRequestBody.
 
-        状态（开启：1，关闭：0）
+        **参数解释：** 功能状态标识，用于指定对应功能的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :return: The status of this UpdatePolicyRuleStatusRequestBody.
         :rtype: int
@@ -54,7 +54,7 @@ class UpdatePolicyRuleStatusRequestBody:
     def status(self, status):
         r"""Sets the status of this UpdatePolicyRuleStatusRequestBody.
 
-        状态（开启：1，关闭：0）
+        **参数解释：** 功能状态标识，用于指定对应功能的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :param status: The status of this UpdatePolicyRuleStatusRequestBody.
         :type status: int

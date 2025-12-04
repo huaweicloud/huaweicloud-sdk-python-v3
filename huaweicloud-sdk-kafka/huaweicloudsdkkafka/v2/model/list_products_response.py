@@ -17,7 +17,7 @@ class ListProductsResponse(SdkResponse):
 
     openapi_types = {
         'hourly': 'list[ListProductsRespHourly]',
-        'monthly': 'list[ListProductsRespHourly]'
+        'monthly': 'list[ListProductsRespMonthly]'
     }
 
     attribute_map = {
@@ -30,10 +30,10 @@ class ListProductsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param hourly: 表示按需付费的产品列表。
+        :param hourly: **参数解释**： 表示按需付费的产品列表。
         :type hourly: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespHourly`]
-        :param monthly: 表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
-        :type monthly: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespHourly`]
+        :param monthly: **参数解释**： 表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
+        :type monthly: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespMonthly`]
         """
         
         super().__init__()
@@ -51,7 +51,7 @@ class ListProductsResponse(SdkResponse):
     def hourly(self):
         r"""Gets the hourly of this ListProductsResponse.
 
-        表示按需付费的产品列表。
+        **参数解释**： 表示按需付费的产品列表。
 
         :return: The hourly of this ListProductsResponse.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespHourly`]
@@ -62,7 +62,7 @@ class ListProductsResponse(SdkResponse):
     def hourly(self, hourly):
         r"""Sets the hourly of this ListProductsResponse.
 
-        表示按需付费的产品列表。
+        **参数解释**： 表示按需付费的产品列表。
 
         :param hourly: The hourly of this ListProductsResponse.
         :type hourly: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespHourly`]
@@ -73,10 +73,10 @@ class ListProductsResponse(SdkResponse):
     def monthly(self):
         r"""Gets the monthly of this ListProductsResponse.
 
-        表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
+        **参数解释**： 表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
 
         :return: The monthly of this ListProductsResponse.
-        :rtype: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespHourly`]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespMonthly`]
         """
         return self._monthly
 
@@ -84,10 +84,10 @@ class ListProductsResponse(SdkResponse):
     def monthly(self, monthly):
         r"""Sets the monthly of this ListProductsResponse.
 
-        表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
+        **参数解释**： 表示包年包月的产品列表。当前暂不支持通过API创建包年包月的Kafka实例。
 
         :param monthly: The monthly of this ListProductsResponse.
-        :type monthly: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespHourly`]
+        :type monthly: list[:class:`huaweicloudsdkkafka.v2.ListProductsRespMonthly`]
         """
         self._monthly = monthly
 

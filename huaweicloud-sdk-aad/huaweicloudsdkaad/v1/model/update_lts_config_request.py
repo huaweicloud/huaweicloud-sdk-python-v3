@@ -41,8 +41,7 @@ class UpdateLtsConfigRequest:
         self._body = None
         self.discriminator = None
 
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
+        self.enterprise_project_id = enterprise_project_id
         if body is not None:
             self.body = body
 

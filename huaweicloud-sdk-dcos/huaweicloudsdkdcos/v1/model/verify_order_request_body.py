@@ -15,58 +15,29 @@ class VerifyOrderRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'meet_expectation': 'bool',
         'comments': 'str'
     }
 
     attribute_map = {
-        'meet_expectation': 'meet_expectation',
         'comments': 'comments'
     }
 
-    def __init__(self, meet_expectation=None, comments=None):
+    def __init__(self, comments=None):
         r"""VerifyOrderRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param meet_expectation: 是否符合预期
-        :type meet_expectation: bool
         :param comments: 客户验收意见说明
         :type comments: str
         """
         
         
 
-        self._meet_expectation = None
         self._comments = None
         self.discriminator = None
 
-        if meet_expectation is not None:
-            self.meet_expectation = meet_expectation
         if comments is not None:
             self.comments = comments
-
-    @property
-    def meet_expectation(self):
-        r"""Gets the meet_expectation of this VerifyOrderRequestBody.
-
-        是否符合预期
-
-        :return: The meet_expectation of this VerifyOrderRequestBody.
-        :rtype: bool
-        """
-        return self._meet_expectation
-
-    @meet_expectation.setter
-    def meet_expectation(self, meet_expectation):
-        r"""Sets the meet_expectation of this VerifyOrderRequestBody.
-
-        是否符合预期
-
-        :param meet_expectation: The meet_expectation of this VerifyOrderRequestBody.
-        :type meet_expectation: bool
-        """
-        self._meet_expectation = meet_expectation
 
     @property
     def comments(self):

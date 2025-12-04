@@ -16,29 +16,36 @@ class ListProjectTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'tags': 'list[Tags]'
+        'tags': 'list[Tags]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'tags': 'tags'
+        'tags': 'tags',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, tags=None):
+    def __init__(self, tags=None, total_count=None):
         r"""ListProjectTagsResponse
 
         The model defined in huaweicloud sdk
 
         :param tags: 资源标签列表。
         :type tags: list[:class:`huaweicloudsdkcph.v1.Tags`]
+        :param total_count: 标签总数。
+        :type total_count: int
         """
         
         super().__init__()
 
         self._tags = None
+        self._total_count = None
         self.discriminator = None
 
         if tags is not None:
             self.tags = tags
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
     def tags(self):
@@ -61,6 +68,28 @@ class ListProjectTagsResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkcph.v1.Tags`]
         """
         self._tags = tags
+
+    @property
+    def total_count(self):
+        r"""Gets the total_count of this ListProjectTagsResponse.
+
+        标签总数。
+
+        :return: The total_count of this ListProjectTagsResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ListProjectTagsResponse.
+
+        标签总数。
+
+        :param total_count: The total_count of this ListProjectTagsResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         import warnings

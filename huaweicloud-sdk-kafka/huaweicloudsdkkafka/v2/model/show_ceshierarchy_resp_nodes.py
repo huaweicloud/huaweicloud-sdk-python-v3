@@ -27,7 +27,7 @@ class ShowCeshierarchyRespNodes:
 
         The model defined in huaweicloud sdk
 
-        :param name: 节点名称。
+        :param name: **参数解释**： 节点名称。 **取值范围**： 不涉及。
         :type name: str
         """
         
@@ -43,7 +43,7 @@ class ShowCeshierarchyRespNodes:
     def name(self):
         r"""Gets the name of this ShowCeshierarchyRespNodes.
 
-        节点名称。
+        **参数解释**： 节点名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowCeshierarchyRespNodes.
         :rtype: str
@@ -54,7 +54,7 @@ class ShowCeshierarchyRespNodes:
     def name(self, name):
         r"""Sets the name of this ShowCeshierarchyRespNodes.
 
-        节点名称。
+        **参数解释**： 节点名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowCeshierarchyRespNodes.
         :type name: str

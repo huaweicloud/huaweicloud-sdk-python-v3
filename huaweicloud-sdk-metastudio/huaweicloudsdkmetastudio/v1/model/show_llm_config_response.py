@@ -19,6 +19,7 @@ class ShowLlmConfigResponse(SdkResponse):
         'llm_config_id': 'str',
         'name': 'str',
         'llm_url': 'str',
+        'model': 'str',
         'create_time': 'str',
         'update_time': 'str',
         'x_request_id': 'str'
@@ -28,12 +29,13 @@ class ShowLlmConfigResponse(SdkResponse):
         'llm_config_id': 'llm_config_id',
         'name': 'name',
         'llm_url': 'llm_url',
+        'model': 'model',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, llm_config_id=None, name=None, llm_url=None, create_time=None, update_time=None, x_request_id=None):
+    def __init__(self, llm_config_id=None, name=None, llm_url=None, model=None, create_time=None, update_time=None, x_request_id=None):
         r"""ShowLlmConfigResponse
 
         The model defined in huaweicloud sdk
@@ -44,6 +46,8 @@ class ShowLlmConfigResponse(SdkResponse):
         :type name: str
         :param llm_url: 大语言模型地址。
         :type llm_url: str
+        :param model: model参数
+        :type model: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -57,6 +61,7 @@ class ShowLlmConfigResponse(SdkResponse):
         self._llm_config_id = None
         self._name = None
         self._llm_url = None
+        self._model = None
         self._create_time = None
         self._update_time = None
         self._x_request_id = None
@@ -68,6 +73,8 @@ class ShowLlmConfigResponse(SdkResponse):
             self.name = name
         if llm_url is not None:
             self.llm_url = llm_url
+        if model is not None:
+            self.model = model
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -140,6 +147,28 @@ class ShowLlmConfigResponse(SdkResponse):
         :type llm_url: str
         """
         self._llm_url = llm_url
+
+    @property
+    def model(self):
+        r"""Gets the model of this ShowLlmConfigResponse.
+
+        model参数
+
+        :return: The model of this ShowLlmConfigResponse.
+        :rtype: str
+        """
+        return self._model
+
+    @model.setter
+    def model(self, model):
+        r"""Sets the model of this ShowLlmConfigResponse.
+
+        model参数
+
+        :param model: The model of this ShowLlmConfigResponse.
+        :type model: str
+        """
+        self._model = model
 
     @property
     def create_time(self):

@@ -3,6 +3,8 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkasm.v1.model.access_logging import AccessLogging
+from huaweicloudsdkasm.v1.model.aom import Aom
 from huaweicloudsdkasm.v1.model.create_mesh_request import CreateMeshRequest
 from huaweicloudsdkasm.v1.model.create_mesh_response import CreateMeshResponse
 from huaweicloudsdkasm.v1.model.delete_mesh_request import DeleteMeshRequest
@@ -12,13 +14,21 @@ from huaweicloudsdkasm.v1.model.injection_config import InjectionConfig
 from huaweicloudsdkasm.v1.model.installation_config import InstallationConfig
 from huaweicloudsdkasm.v1.model.list_meshes_request import ListMeshesRequest
 from huaweicloudsdkasm.v1.model.list_meshes_response import ListMeshesResponse
+from huaweicloudsdkasm.v1.model.lts_config import LtsConfig
 from huaweicloudsdkasm.v1.model.mesh import Mesh
 from huaweicloudsdkasm.v1.model.mesh_cluster import MeshCluster
+from huaweicloudsdkasm.v1.model.mesh_config import MeshConfig
 from huaweicloudsdkasm.v1.model.mesh_extend_params import MeshExtendParams
 from huaweicloudsdkasm.v1.model.mesh_metadata import MeshMetadata
 from huaweicloudsdkasm.v1.model.mesh_spec import MeshSpec
 from huaweicloudsdkasm.v1.model.mesh_status import MeshStatus
 from huaweicloudsdkasm.v1.model.mesh_tags import MeshTags
+from huaweicloudsdkasm.v1.model.metric import Metric
+from huaweicloudsdkasm.v1.model.proxy_config import ProxyConfig
 from huaweicloudsdkasm.v1.model.selector import Selector
 from huaweicloudsdkasm.v1.model.show_mesh_request import ShowMeshRequest
 from huaweicloudsdkasm.v1.model.show_mesh_response import ShowMeshResponse
+from huaweicloudsdkasm.v1.model.telemetry_config import TelemetryConfig
+from huaweicloudsdkasm.v1.model.tracing import Tracing
+from huaweicloudsdkasm.v1.model.tracing_extension_provider import TracingExtensionProvider
+from huaweicloudsdkasm.v1.model.zipkin_tracing_provider import ZipkinTracingProvider

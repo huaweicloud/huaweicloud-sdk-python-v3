@@ -47,7 +47,7 @@ class SmartConnectTaskReqSinkConfig:
 
         :param consumer_strategy: 转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时需要填写）
         :type consumer_strategy: str
-        :param destination_file_type: 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时需要填写）
+        :param destination_file_type: **参数解释**： 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示） **取值范围**： TEXT。
         :type destination_file_type: str
         :param deliver_time_interval: 数据转储周期（秒），默认配置为300秒。（仅目标端类型为OBS时需要填写）
         :type deliver_time_interval: int
@@ -128,7 +128,7 @@ class SmartConnectTaskReqSinkConfig:
     def destination_file_type(self):
         r"""Gets the destination_file_type of this SmartConnectTaskReqSinkConfig.
 
-        转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时需要填写）
+        **参数解释**： 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示） **取值范围**： TEXT。
 
         :return: The destination_file_type of this SmartConnectTaskReqSinkConfig.
         :rtype: str
@@ -139,7 +139,7 @@ class SmartConnectTaskReqSinkConfig:
     def destination_file_type(self, destination_file_type):
         r"""Sets the destination_file_type of this SmartConnectTaskReqSinkConfig.
 
-        转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时需要填写）
+        **参数解释**： 转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时会显示） **取值范围**： TEXT。
 
         :param destination_file_type: The destination_file_type of this SmartConnectTaskReqSinkConfig.
         :type destination_file_type: str

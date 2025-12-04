@@ -197,177 +197,177 @@ class ShowInstanceResp:
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名称。
+        :param name: **参数解释**： 实例名称。 **取值范围**： 不涉及。
         :type name: str
-        :param engine: 引擎。
+        :param engine: **参数解释**： 引擎。 **取值范围**： kafka
         :type engine: str
-        :param engine_version: 版本。
+        :param engine_version: **参数解释**： Kafka的版本。 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax)
         :type engine_version: str
-        :param description: 实例描述。
+        :param description: **参数解释**： 实例描述。 **取值范围**： 不涉及。
         :type description: str
-        :param specification: 实例规格。
+        :param specification: **参数解释**： 实例规格。 **取值范围**： 不涉及。
         :type specification: str
-        :param storage_space: 消息存储空间，单位：GB。
+        :param storage_space: **参数解释**： 消息存储空间，单位：GB。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [- Kafka实例规格为kafka.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
         :type storage_space: int
-        :param partition_num: Kafka实例的分区数量。
+        :param partition_num: **参数解释**： Kafka实例的分区数量。 **取值范围**： 不涉及。
         :type partition_num: str
-        :param used_storage_space: 已使用的消息存储空间，单位：GB。
+        :param used_storage_space: **参数解释**： 已使用的消息存储空间，单位：GB。 **取值范围**： 不涉及。
         :type used_storage_space: int
-        :param dns_enable: 实例是否开启域名访问功能。 - true：开启 - false：未开启
+        :param dns_enable: **参数解释**： 实例是否开启域名访问功能。 **取值范围**： - true：开启 - false：未开启
         :type dns_enable: bool
-        :param connect_address: 实例连接IP地址。
+        :param connect_address: **参数解释**： 实例连接IP地址。 **取值范围**： 不涉及。
         :type connect_address: str
-        :param port: 实例连接端口。
+        :param port: **参数解释**： 实例连接端口。 **取值范围**： 不涉及。
         :type port: int
-        :param status: 实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。
+        :param status: **参数解释**： 实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。 **取值范围**： 不涉及。
         :type status: str
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。 **取值范围**： 不涉及。
         :type instance_id: str
-        :param resource_spec_code: 资源规格标识。   [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
+        :param resource_spec_code: **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax)
         :type resource_spec_code: str
-        :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
+        :param charging_mode: **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
         :type charging_mode: int
-        :param vpc_id: VPC ID。
+        :param vpc_id: **参数解释**： VPC ID。 **取值范围**： 不涉及。
         :type vpc_id: str
-        :param vpc_name: VPC的名称。
+        :param vpc_name: **参数解释**： VPC的名称。 **取值范围**： 不涉及。
         :type vpc_name: str
-        :param created_at: 完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
+        :param created_at: **参数解释**： 完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **取值范围**： 不涉及。
         :type created_at: str
-        :param subnet_name: 子网名称。
+        :param subnet_name: **参数解释**： 子网名称。 **取值范围**： 不涉及。
         :type subnet_name: str
-        :param subnet_cidr: 子网网段。
+        :param subnet_cidr: **参数解释**： 子网网段。 **取值范围**： 不涉及。
         :type subnet_cidr: str
-        :param user_id: 用户ID。
+        :param user_id: **参数解释**： 用户ID。 **取值范围**： 不涉及。
         :type user_id: str
-        :param user_name: 用户名。
+        :param user_name: **参数解释**： 用户名。 **取值范围**： 不涉及。
         :type user_name: str
-        :param access_user: 实例访问用户名。
+        :param access_user: **参数解释**： 实例访问用户名。 **取值范围**： 不涉及。
         :type access_user: str
-        :param order_id: 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
+        :param order_id: **参数解释**： 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。 **取值范围**： 不涉及。
         :type order_id: str
-        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm:ss。
+        :param maintain_begin: **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
         :type maintain_begin: str
-        :param maintain_end: 维护时间窗结束时间，格式为HH:mm:ss。
+        :param maintain_end: **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
         :type maintain_end: str
-        :param enable_publicip: 实例是否开启公网访问功能。 - true：开启 - false：未开启
+        :param enable_publicip: **参数解释**： 实例是否开启公网访问功能。 **取值范围**： - true：开启 - false：未开启
         :type enable_publicip: bool
-        :param management_connect_address: Kafka实例的Kafka Manager连接地址。
+        :param management_connect_address: **参数解释**： Kafka实例的Kafka Manager连接地址。 **取值范围**： 不涉及。
         :type management_connect_address: str
-        :param ssl_enable: 是否开启安全认证。 - true：开启 - false：未开启
+        :param ssl_enable: **参数解释**： 是否开启安全认证。 **取值范围**： - true：开启 - false：未开启
         :type ssl_enable: bool
-        :param broker_ssl_enable: 是否开启broker间副本加密传输。 - true：开启 - false：未开启
+        :param broker_ssl_enable: **参数解释**： 是否开启broker间副本加密传输。 **取值范围**： - true：开启 - false：未开启
         :type broker_ssl_enable: bool
-        :param kafka_security_protocol: Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。  - PLAINTEXT: 既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
+        :param kafka_security_protocol: **参数解释**： Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。 **取值范围**： - PLAINTEXT：既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL：采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT：明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
         :type kafka_security_protocol: str
-        :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+        :param sasl_enabled_mechanisms: **参数解释**： 开启SASL后使用的认证机制。
         :type sasl_enabled_mechanisms: list[str]
-        :param ssl_two_way_enable: 是否开启双向认证。
+        :param ssl_two_way_enable: **参数解释**： 是否开启双向认证。 **取值范围**： - true：开启 - false：未开启
         :type ssl_two_way_enable: bool
-        :param cert_replaced: 是否能够证书替换。
+        :param cert_replaced: **参数解释**： 是否开启证书替换。 **取值范围**： - true：开启 - false：未开启
         :type cert_replaced: bool
-        :param public_management_connect_address: 公网访问Kafka Manager连接地址。
+        :param public_management_connect_address: **参数解释**： 公网访问Kafka Manager连接地址。 **取值范围**： 不涉及。
         :type public_management_connect_address: str
-        :param enterprise_project_id: 企业项目ID。
+        :param enterprise_project_id: **参数解释**： 企业项目ID。 **取值范围**： 不涉及。
         :type enterprise_project_id: str
-        :param is_logical_volume: 实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
+        :param is_logical_volume: **参数解释**： 实例扩容时用于区分老实例与新实例。 **取值范围**： - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例。
         :type is_logical_volume: bool
-        :param extend_times: 实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
+        :param extend_times: **参数解释**： 实例扩容磁盘次数。 **取值范围**： 不涉及。
         :type extend_times: int
-        :param enable_auto_topic: 是否打开kafka自动创建Topic功能。   - true：开启   - false：关闭
+        :param enable_auto_topic: **参数解释**： 是否开启自动创建Topic。 **取值范围**： - true：开启 - false：关闭
         :type enable_auto_topic: bool
-        :param type: 实例类型：集群，cluster。
+        :param type: **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
         :type type: str
-        :param product_id: 产品标识。
+        :param product_id: **参数解释**： 产品标识。 **取值范围**： 不涉及。
         :type product_id: str
-        :param security_group_id: 安全组ID。
+        :param security_group_id: **参数解释**： 安全组ID。 **取值范围**： 不涉及。
         :type security_group_id: str
-        :param security_group_name: 租户安全组名称。
+        :param security_group_name: **参数解释**： 安全组名称。 **取值范围**： 不涉及。
         :type security_group_name: str
-        :param subnet_id: 子网ID。
+        :param subnet_id: **参数解释**： 子网ID。 **取值范围**： 不涉及。
         :type subnet_id: str
-        :param available_zones: 实例节点所在的可用区，返回“可用区ID”。
+        :param available_zones: **参数解释**： 实例节点所在的可用区，返回“可用区ID”。
         :type available_zones: list[str]
-        :param available_zone_names: 实例节点所在的可用区名称，返回“可用区名称”。
+        :param available_zone_names: **参数解释**： 实例节点所在的可用区名称，返回“可用区名称”。
         :type available_zone_names: list[str]
-        :param total_storage_space: 总共消息存储空间，单位：GB。
+        :param total_storage_space: **参数解释**： 总共消息存储空间，单位：GB。 **取值范围**： 不涉及。
         :type total_storage_space: int
-        :param public_connect_address: 实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
+        :param public_connect_address: **参数解释**： 实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。 **取值范围**： 不涉及。
         :type public_connect_address: str
-        :param public_connect_domain_name: 实例公网连接域名。当实例开启了公网访问，实例才包含该参数。
+        :param public_connect_domain_name: **参数解释**： 实例公网连接域名。当实例开启了公网访问，实例才包含该参数。 **取值范围**： 不涉及。
         :type public_connect_domain_name: str
-        :param storage_resource_id: 存储资源ID。
+        :param storage_resource_id: **参数解释**： 存储资源ID。 **取值范围**： 不涉及。
         :type storage_resource_id: str
-        :param storage_spec_code: IO规格。
+        :param storage_spec_code: **参数解释**： IO规格。 **取值范围**： 不涉及。
         :type storage_spec_code: str
-        :param service_type: 服务类型。
+        :param service_type: **参数解释**： 服务类型。 **取值范围**： advanced。
         :type service_type: str
-        :param storage_type: 存储类型。
+        :param storage_type: **参数解释**： 存储类型。 **取值范围**： hec
         :type storage_type: str
-        :param retention_policy: 消息老化策略。
+        :param retention_policy: **参数解释**： 消息老化策略。 **取值范围**： - time_base：表示自动删除最老消息。 - produce_reject：表示拒绝消息写入。
         :type retention_policy: str
-        :param kafka_public_status: Kafka公网开启状态。
+        :param kafka_public_status: **参数解释**： Kafka公网开启状态。 **取值范围**： - true：开启公网。 - closed：关闭公网。 - false：未使用公网。 - freezed：公网冻结。 - actived：公网解冻。
         :type kafka_public_status: str
-        :param public_bandwidth: kafka公网访问带宽。
+        :param public_bandwidth: **参数解释**： kafka公网访问带宽。 **取值范围**： 不涉及。
         :type public_bandwidth: int
-        :param enable_log_collection: 是否开启消息收集功能。
+        :param enable_log_collection: **参数解释**： 是否开启消息收集功能。 **取值范围**： - true：开启 - false：不开启
         :type enable_log_collection: bool
-        :param new_auth_cert: 是否开启新证书。
+        :param new_auth_cert: **参数解释**： 是否开启新证书。 **取值范围**： - true：开启 - false：不开启
         :type new_auth_cert: bool
-        :param cross_vpc_info: 跨VPC访问信息。
+        :param cross_vpc_info: **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
         :type cross_vpc_info: str
-        :param ipv6_enable: 是否开启ipv6。
+        :param ipv6_enable: **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启 - false：不开启
         :type ipv6_enable: bool
-        :param ipv6_connect_addresses: IPv6的连接地址。
+        :param ipv6_connect_addresses: **参数解释**： IPv6的连接地址。
         :type ipv6_connect_addresses: list[str]
-        :param connector_enable: 是否开启转储。新规格产品暂不支持开启转储。
+        :param connector_enable: **参数解释**： 是否开启转储。 **取值范围**： - true：开启 - false：不开启
         :type connector_enable: bool
-        :param connector_node_num: connector节点数量。
+        :param connector_node_num: **参数解释**： connector节点数量。 **取值范围**： 2-16。
         :type connector_node_num: int
-        :param connector_id: 转储任务ID。
+        :param connector_id: **参数解释**： 转储任务ID。 **取值范围**： 不涉及。
         :type connector_id: str
-        :param rest_enable: 是否开启Kafka rest功能。
+        :param rest_enable: **参数解释**： 是否开启Kafka rest功能。 **取值范围**： - true：开启 - false：不开启
         :type rest_enable: bool
-        :param rest_connect_address: Kafka rest连接地址。
+        :param rest_connect_address: **参数解释**：  Kafka rest连接地址。 **取值范围**： 不涉及。
         :type rest_connect_address: str
-        :param public_boundwidth: kafka公网访问带宽。待删除版本。
+        :param public_boundwidth: **参数解释**： Kafka公网访问带宽。待删除版本。 **取值范围**： 不涉及。
         :type public_boundwidth: int
-        :param message_query_inst_enable: 是否开启消息查询功能。
+        :param message_query_inst_enable: **参数解释**： 是否开启消息查询功能。 **取值范围**： - true：开启 - false：不开启
         :type message_query_inst_enable: bool
-        :param vpc_client_plain: 是否开启VPC明文访问。
+        :param vpc_client_plain: **参数解释**： 是否开启VPC明文访问。 **取值范围**： - true：开启 - false：不开启
         :type vpc_client_plain: bool
-        :param support_features: Kafka实例支持的特性功能。
+        :param support_features: **参数解释**： Kafka实例支持的特性功能。 **取值范围**： 不涉及。
         :type support_features: str
-        :param trace_enable: 是否开启消息轨迹功能。
+        :param trace_enable: **参数解释**： 是否开启消息轨迹功能。 **取值范围**： - true：开启 - false：不开启
         :type trace_enable: bool
-        :param agent_enable: 是否开启代理。
+        :param agent_enable: **参数解释**： 是否开启代理。 **取值范围**： - true：开启 - false：不开启
         :type agent_enable: bool
-        :param pod_connect_address: 租户侧连接地址。
+        :param pod_connect_address: **参数解释**： 租户侧连接地址。 **取值范围**： 不涉及。
         :type pod_connect_address: str
-        :param disk_encrypted: 是否开启磁盘加密。
+        :param disk_encrypted: **参数解释**： 是否开启磁盘加密。 **取值范围**： - true：开启 - false：不开启
         :type disk_encrypted: bool
-        :param disk_encrypted_key: 磁盘加密key，未开启磁盘加密时为空。
+        :param disk_encrypted_key: **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **取值范围**： 不涉及。
         :type disk_encrypted_key: str
-        :param kafka_private_connect_address: Kafka实例内网连接地址。
+        :param kafka_private_connect_address: **参数解释**： Kafka实例内网连接地址。 **取值范围**： 不涉及。
         :type kafka_private_connect_address: str
-        :param kafka_private_connect_domain_name: Kafka实例内网连接域名。
+        :param kafka_private_connect_domain_name: **参数解释**： Kafka实例内网连接域名。 **取值范围**： 不涉及。
         :type kafka_private_connect_domain_name: str
-        :param ces_version: 云监控版本。
+        :param ces_version: **参数解释**： 云监控版本。 **取值范围**： 不涉及。
         :type ces_version: str
-        :param public_access_enabled:  区分实例什么时候开启的公网访问  取值范围：   - true：已开启公网访问   - actived：已开启公网访问   - closed：已关闭公网访问   - false：已关闭公网访问 
+        :param public_access_enabled: **参数解释**： 区分实例什么时候开启的公网访问 **取值范围**： - true：已开启公网访问 - actived：已开启公网访问 - closed：已关闭公网访问 - false：已关闭公网访问
         :type public_access_enabled: str
-        :param node_num: 节点数。
+        :param node_num: **参数解释**： 节点数。 **取值范围**： - [1：Kafka单机实例的节点数。](tag:hws,hws_hk,hws_eu,dt,hcs,ax) - 3~50：Kafka集群实例的节点数。
         :type node_num: int
         :param port_protocols: 
         :type port_protocols: :class:`huaweicloudsdkkafka.v2.PortProtocolsEntity`
-        :param enable_acl: 是否开启访问控制。
+        :param enable_acl: **参数解释**： 是否开启访问控制。 **取值范围**： - true：开启 - false：不开启
         :type enable_acl: bool
-        :param new_spec_billing_enable: 是否启用新规格计费。
+        :param new_spec_billing_enable: **参数解释**： 是否启用新规格计费。 **取值范围**： - true：开启 - false：不开启
         :type new_spec_billing_enable: bool
-        :param broker_num: 节点数量。
+        :param broker_num: **参数解释**： 节点数量。 **取值范围**： 不涉及。
         :type broker_num: int
-        :param tags: 标签列表。
+        :param tags: **参数解释**： 标签列表。
         :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
-        :param dr_enable: 是否为容灾实例。
+        :param dr_enable: **参数解释**：  是否为容灾实例。 **取值范围**： - true：是容灾实例。 - false：不是容灾实例。
         :type dr_enable: bool
         """
         
@@ -638,7 +638,7 @@ class ShowInstanceResp:
     def name(self):
         r"""Gets the name of this ShowInstanceResp.
 
-        实例名称。
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :return: The name of this ShowInstanceResp.
         :rtype: str
@@ -649,7 +649,7 @@ class ShowInstanceResp:
     def name(self, name):
         r"""Sets the name of this ShowInstanceResp.
 
-        实例名称。
+        **参数解释**： 实例名称。 **取值范围**： 不涉及。
 
         :param name: The name of this ShowInstanceResp.
         :type name: str
@@ -660,7 +660,7 @@ class ShowInstanceResp:
     def engine(self):
         r"""Gets the engine of this ShowInstanceResp.
 
-        引擎。
+        **参数解释**： 引擎。 **取值范围**： kafka
 
         :return: The engine of this ShowInstanceResp.
         :rtype: str
@@ -671,7 +671,7 @@ class ShowInstanceResp:
     def engine(self, engine):
         r"""Sets the engine of this ShowInstanceResp.
 
-        引擎。
+        **参数解释**： 引擎。 **取值范围**： kafka
 
         :param engine: The engine of this ShowInstanceResp.
         :type engine: str
@@ -682,7 +682,7 @@ class ShowInstanceResp:
     def engine_version(self):
         r"""Gets the engine_version of this ShowInstanceResp.
 
-        版本。
+        **参数解释**： Kafka的版本。 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax)
 
         :return: The engine_version of this ShowInstanceResp.
         :rtype: str
@@ -693,7 +693,7 @@ class ShowInstanceResp:
     def engine_version(self, engine_version):
         r"""Sets the engine_version of this ShowInstanceResp.
 
-        版本。
+        **参数解释**： Kafka的版本。 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax)
 
         :param engine_version: The engine_version of this ShowInstanceResp.
         :type engine_version: str
@@ -704,7 +704,7 @@ class ShowInstanceResp:
     def description(self):
         r"""Gets the description of this ShowInstanceResp.
 
-        实例描述。
+        **参数解释**： 实例描述。 **取值范围**： 不涉及。
 
         :return: The description of this ShowInstanceResp.
         :rtype: str
@@ -715,7 +715,7 @@ class ShowInstanceResp:
     def description(self, description):
         r"""Sets the description of this ShowInstanceResp.
 
-        实例描述。
+        **参数解释**： 实例描述。 **取值范围**： 不涉及。
 
         :param description: The description of this ShowInstanceResp.
         :type description: str
@@ -726,7 +726,7 @@ class ShowInstanceResp:
     def specification(self):
         r"""Gets the specification of this ShowInstanceResp.
 
-        实例规格。
+        **参数解释**： 实例规格。 **取值范围**： 不涉及。
 
         :return: The specification of this ShowInstanceResp.
         :rtype: str
@@ -737,7 +737,7 @@ class ShowInstanceResp:
     def specification(self, specification):
         r"""Sets the specification of this ShowInstanceResp.
 
-        实例规格。
+        **参数解释**： 实例规格。 **取值范围**： 不涉及。
 
         :param specification: The specification of this ShowInstanceResp.
         :type specification: str
@@ -748,7 +748,7 @@ class ShowInstanceResp:
     def storage_space(self):
         r"""Gets the storage_space of this ShowInstanceResp.
 
-        消息存储空间，单位：GB。
+        **参数解释**： 消息存储空间，单位：GB。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [- Kafka实例规格为kafka.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
 
         :return: The storage_space of this ShowInstanceResp.
         :rtype: int
@@ -759,7 +759,7 @@ class ShowInstanceResp:
     def storage_space(self, storage_space):
         r"""Sets the storage_space of this ShowInstanceResp.
 
-        消息存储空间，单位：GB。
+        **参数解释**： 消息存储空间，单位：GB。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [- Kafka实例规格为kafka.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
 
         :param storage_space: The storage_space of this ShowInstanceResp.
         :type storage_space: int
@@ -770,7 +770,7 @@ class ShowInstanceResp:
     def partition_num(self):
         r"""Gets the partition_num of this ShowInstanceResp.
 
-        Kafka实例的分区数量。
+        **参数解释**： Kafka实例的分区数量。 **取值范围**： 不涉及。
 
         :return: The partition_num of this ShowInstanceResp.
         :rtype: str
@@ -781,7 +781,7 @@ class ShowInstanceResp:
     def partition_num(self, partition_num):
         r"""Sets the partition_num of this ShowInstanceResp.
 
-        Kafka实例的分区数量。
+        **参数解释**： Kafka实例的分区数量。 **取值范围**： 不涉及。
 
         :param partition_num: The partition_num of this ShowInstanceResp.
         :type partition_num: str
@@ -792,7 +792,7 @@ class ShowInstanceResp:
     def used_storage_space(self):
         r"""Gets the used_storage_space of this ShowInstanceResp.
 
-        已使用的消息存储空间，单位：GB。
+        **参数解释**： 已使用的消息存储空间，单位：GB。 **取值范围**： 不涉及。
 
         :return: The used_storage_space of this ShowInstanceResp.
         :rtype: int
@@ -803,7 +803,7 @@ class ShowInstanceResp:
     def used_storage_space(self, used_storage_space):
         r"""Sets the used_storage_space of this ShowInstanceResp.
 
-        已使用的消息存储空间，单位：GB。
+        **参数解释**： 已使用的消息存储空间，单位：GB。 **取值范围**： 不涉及。
 
         :param used_storage_space: The used_storage_space of this ShowInstanceResp.
         :type used_storage_space: int
@@ -814,7 +814,7 @@ class ShowInstanceResp:
     def dns_enable(self):
         r"""Gets the dns_enable of this ShowInstanceResp.
 
-        实例是否开启域名访问功能。 - true：开启 - false：未开启
+        **参数解释**： 实例是否开启域名访问功能。 **取值范围**： - true：开启 - false：未开启
 
         :return: The dns_enable of this ShowInstanceResp.
         :rtype: bool
@@ -825,7 +825,7 @@ class ShowInstanceResp:
     def dns_enable(self, dns_enable):
         r"""Sets the dns_enable of this ShowInstanceResp.
 
-        实例是否开启域名访问功能。 - true：开启 - false：未开启
+        **参数解释**： 实例是否开启域名访问功能。 **取值范围**： - true：开启 - false：未开启
 
         :param dns_enable: The dns_enable of this ShowInstanceResp.
         :type dns_enable: bool
@@ -836,7 +836,7 @@ class ShowInstanceResp:
     def connect_address(self):
         r"""Gets the connect_address of this ShowInstanceResp.
 
-        实例连接IP地址。
+        **参数解释**： 实例连接IP地址。 **取值范围**： 不涉及。
 
         :return: The connect_address of this ShowInstanceResp.
         :rtype: str
@@ -847,7 +847,7 @@ class ShowInstanceResp:
     def connect_address(self, connect_address):
         r"""Sets the connect_address of this ShowInstanceResp.
 
-        实例连接IP地址。
+        **参数解释**： 实例连接IP地址。 **取值范围**： 不涉及。
 
         :param connect_address: The connect_address of this ShowInstanceResp.
         :type connect_address: str
@@ -858,7 +858,7 @@ class ShowInstanceResp:
     def port(self):
         r"""Gets the port of this ShowInstanceResp.
 
-        实例连接端口。
+        **参数解释**： 实例连接端口。 **取值范围**： 不涉及。
 
         :return: The port of this ShowInstanceResp.
         :rtype: int
@@ -869,7 +869,7 @@ class ShowInstanceResp:
     def port(self, port):
         r"""Sets the port of this ShowInstanceResp.
 
-        实例连接端口。
+        **参数解释**： 实例连接端口。 **取值范围**： 不涉及。
 
         :param port: The port of this ShowInstanceResp.
         :type port: int
@@ -880,7 +880,7 @@ class ShowInstanceResp:
     def status(self):
         r"""Gets the status of this ShowInstanceResp.
 
-        实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。
+        **参数解释**： 实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。 **取值范围**： 不涉及。
 
         :return: The status of this ShowInstanceResp.
         :rtype: str
@@ -891,7 +891,7 @@ class ShowInstanceResp:
     def status(self, status):
         r"""Sets the status of this ShowInstanceResp.
 
-        实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。
+        **参数解释**： 实例的状态。详细状态说明请参考[实例状态说明](kafka-api-180514012.xml)。 **取值范围**： 不涉及。
 
         :param status: The status of this ShowInstanceResp.
         :type status: str
@@ -902,7 +902,7 @@ class ShowInstanceResp:
     def instance_id(self):
         r"""Gets the instance_id of this ShowInstanceResp.
 
-        实例ID。
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :return: The instance_id of this ShowInstanceResp.
         :rtype: str
@@ -913,7 +913,7 @@ class ShowInstanceResp:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowInstanceResp.
 
-        实例ID。
+        **参数解释**： 实例ID。 **取值范围**： 不涉及。
 
         :param instance_id: The instance_id of this ShowInstanceResp.
         :type instance_id: str
@@ -924,7 +924,7 @@ class ShowInstanceResp:
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this ShowInstanceResp.
 
-        资源规格标识。   [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
+        **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax)
 
         :return: The resource_spec_code of this ShowInstanceResp.
         :rtype: str
@@ -935,7 +935,7 @@ class ShowInstanceResp:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this ShowInstanceResp.
 
-        资源规格标识。   [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
+        **参数解释**： 资源规格标识。 **取值范围**： [- dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。 - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。 - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。 - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax)
 
         :param resource_spec_code: The resource_spec_code of this ShowInstanceResp.
         :type resource_spec_code: str
@@ -946,7 +946,7 @@ class ShowInstanceResp:
     def charging_mode(self):
         r"""Gets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
+        **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
 
         :return: The charging_mode of this ShowInstanceResp.
         :rtype: int
@@ -957,7 +957,7 @@ class ShowInstanceResp:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this ShowInstanceResp.
 
-        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb) [付费模式，1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
+        **参数解释**： 付费模式。 **取值范围**： [- 1表示按需计费。 - 0表示包年/包月计费。](tag:hws,hws_hk,ctc,cmcc,ax)[付费模式，暂未使用。](tag:hws_ocb,ocb) [- 1表示按需计费。](tag:dt,g42,tm,hk_g42,hk_tm,hcs,fcs,sbc,hk_sbc,hws_eu)
 
         :param charging_mode: The charging_mode of this ShowInstanceResp.
         :type charging_mode: int
@@ -968,7 +968,7 @@ class ShowInstanceResp:
     def vpc_id(self):
         r"""Gets the vpc_id of this ShowInstanceResp.
 
-        VPC ID。
+        **参数解释**： VPC ID。 **取值范围**： 不涉及。
 
         :return: The vpc_id of this ShowInstanceResp.
         :rtype: str
@@ -979,7 +979,7 @@ class ShowInstanceResp:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ShowInstanceResp.
 
-        VPC ID。
+        **参数解释**： VPC ID。 **取值范围**： 不涉及。
 
         :param vpc_id: The vpc_id of this ShowInstanceResp.
         :type vpc_id: str
@@ -990,7 +990,7 @@ class ShowInstanceResp:
     def vpc_name(self):
         r"""Gets the vpc_name of this ShowInstanceResp.
 
-        VPC的名称。
+        **参数解释**： VPC的名称。 **取值范围**： 不涉及。
 
         :return: The vpc_name of this ShowInstanceResp.
         :rtype: str
@@ -1001,7 +1001,7 @@ class ShowInstanceResp:
     def vpc_name(self, vpc_name):
         r"""Sets the vpc_name of this ShowInstanceResp.
 
-        VPC的名称。
+        **参数解释**： VPC的名称。 **取值范围**： 不涉及。
 
         :param vpc_name: The vpc_name of this ShowInstanceResp.
         :type vpc_name: str
@@ -1012,7 +1012,7 @@ class ShowInstanceResp:
     def created_at(self):
         r"""Gets the created_at of this ShowInstanceResp.
 
-        完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
+        **参数解释**： 完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **取值范围**： 不涉及。
 
         :return: The created_at of this ShowInstanceResp.
         :rtype: str
@@ -1023,7 +1023,7 @@ class ShowInstanceResp:
     def created_at(self, created_at):
         r"""Sets the created_at of this ShowInstanceResp.
 
-        完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
+        **参数解释**： 完成创建时间。  格式为时间戳，指从格林威治时间 1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。 **取值范围**： 不涉及。
 
         :param created_at: The created_at of this ShowInstanceResp.
         :type created_at: str
@@ -1034,7 +1034,7 @@ class ShowInstanceResp:
     def subnet_name(self):
         r"""Gets the subnet_name of this ShowInstanceResp.
 
-        子网名称。
+        **参数解释**： 子网名称。 **取值范围**： 不涉及。
 
         :return: The subnet_name of this ShowInstanceResp.
         :rtype: str
@@ -1045,7 +1045,7 @@ class ShowInstanceResp:
     def subnet_name(self, subnet_name):
         r"""Sets the subnet_name of this ShowInstanceResp.
 
-        子网名称。
+        **参数解释**： 子网名称。 **取值范围**： 不涉及。
 
         :param subnet_name: The subnet_name of this ShowInstanceResp.
         :type subnet_name: str
@@ -1056,7 +1056,7 @@ class ShowInstanceResp:
     def subnet_cidr(self):
         r"""Gets the subnet_cidr of this ShowInstanceResp.
 
-        子网网段。
+        **参数解释**： 子网网段。 **取值范围**： 不涉及。
 
         :return: The subnet_cidr of this ShowInstanceResp.
         :rtype: str
@@ -1067,7 +1067,7 @@ class ShowInstanceResp:
     def subnet_cidr(self, subnet_cidr):
         r"""Sets the subnet_cidr of this ShowInstanceResp.
 
-        子网网段。
+        **参数解释**： 子网网段。 **取值范围**： 不涉及。
 
         :param subnet_cidr: The subnet_cidr of this ShowInstanceResp.
         :type subnet_cidr: str
@@ -1078,7 +1078,7 @@ class ShowInstanceResp:
     def user_id(self):
         r"""Gets the user_id of this ShowInstanceResp.
 
-        用户ID。
+        **参数解释**： 用户ID。 **取值范围**： 不涉及。
 
         :return: The user_id of this ShowInstanceResp.
         :rtype: str
@@ -1089,7 +1089,7 @@ class ShowInstanceResp:
     def user_id(self, user_id):
         r"""Sets the user_id of this ShowInstanceResp.
 
-        用户ID。
+        **参数解释**： 用户ID。 **取值范围**： 不涉及。
 
         :param user_id: The user_id of this ShowInstanceResp.
         :type user_id: str
@@ -1100,7 +1100,7 @@ class ShowInstanceResp:
     def user_name(self):
         r"""Gets the user_name of this ShowInstanceResp.
 
-        用户名。
+        **参数解释**： 用户名。 **取值范围**： 不涉及。
 
         :return: The user_name of this ShowInstanceResp.
         :rtype: str
@@ -1111,7 +1111,7 @@ class ShowInstanceResp:
     def user_name(self, user_name):
         r"""Sets the user_name of this ShowInstanceResp.
 
-        用户名。
+        **参数解释**： 用户名。 **取值范围**： 不涉及。
 
         :param user_name: The user_name of this ShowInstanceResp.
         :type user_name: str
@@ -1122,7 +1122,7 @@ class ShowInstanceResp:
     def access_user(self):
         r"""Gets the access_user of this ShowInstanceResp.
 
-        实例访问用户名。
+        **参数解释**： 实例访问用户名。 **取值范围**： 不涉及。
 
         :return: The access_user of this ShowInstanceResp.
         :rtype: str
@@ -1133,7 +1133,7 @@ class ShowInstanceResp:
     def access_user(self, access_user):
         r"""Sets the access_user of this ShowInstanceResp.
 
-        实例访问用户名。
+        **参数解释**： 实例访问用户名。 **取值范围**： 不涉及。
 
         :param access_user: The access_user of this ShowInstanceResp.
         :type access_user: str
@@ -1144,7 +1144,7 @@ class ShowInstanceResp:
     def order_id(self):
         r"""Gets the order_id of this ShowInstanceResp.
 
-        订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
+        **参数解释**： 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。 **取值范围**： 不涉及。
 
         :return: The order_id of this ShowInstanceResp.
         :rtype: str
@@ -1155,7 +1155,7 @@ class ShowInstanceResp:
     def order_id(self, order_id):
         r"""Sets the order_id of this ShowInstanceResp.
 
-        订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
+        **参数解释**： 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。 **取值范围**： 不涉及。
 
         :param order_id: The order_id of this ShowInstanceResp.
         :type order_id: str
@@ -1166,7 +1166,7 @@ class ShowInstanceResp:
     def maintain_begin(self):
         r"""Gets the maintain_begin of this ShowInstanceResp.
 
-        维护时间窗开始时间，格式为HH:mm:ss。
+        **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
 
         :return: The maintain_begin of this ShowInstanceResp.
         :rtype: str
@@ -1177,7 +1177,7 @@ class ShowInstanceResp:
     def maintain_begin(self, maintain_begin):
         r"""Sets the maintain_begin of this ShowInstanceResp.
 
-        维护时间窗开始时间，格式为HH:mm:ss。
+        **参数解释**： 维护时间窗开始时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
 
         :param maintain_begin: The maintain_begin of this ShowInstanceResp.
         :type maintain_begin: str
@@ -1188,7 +1188,7 @@ class ShowInstanceResp:
     def maintain_end(self):
         r"""Gets the maintain_end of this ShowInstanceResp.
 
-        维护时间窗结束时间，格式为HH:mm:ss。
+        **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
 
         :return: The maintain_end of this ShowInstanceResp.
         :rtype: str
@@ -1199,7 +1199,7 @@ class ShowInstanceResp:
     def maintain_end(self, maintain_end):
         r"""Sets the maintain_end of this ShowInstanceResp.
 
-        维护时间窗结束时间，格式为HH:mm:ss。
+        **参数解释**： 维护时间窗结束时间，格式为HH:mm:ss。 **取值范围**： 不涉及。
 
         :param maintain_end: The maintain_end of this ShowInstanceResp.
         :type maintain_end: str
@@ -1210,7 +1210,7 @@ class ShowInstanceResp:
     def enable_publicip(self):
         r"""Gets the enable_publicip of this ShowInstanceResp.
 
-        实例是否开启公网访问功能。 - true：开启 - false：未开启
+        **参数解释**： 实例是否开启公网访问功能。 **取值范围**： - true：开启 - false：未开启
 
         :return: The enable_publicip of this ShowInstanceResp.
         :rtype: bool
@@ -1221,7 +1221,7 @@ class ShowInstanceResp:
     def enable_publicip(self, enable_publicip):
         r"""Sets the enable_publicip of this ShowInstanceResp.
 
-        实例是否开启公网访问功能。 - true：开启 - false：未开启
+        **参数解释**： 实例是否开启公网访问功能。 **取值范围**： - true：开启 - false：未开启
 
         :param enable_publicip: The enable_publicip of this ShowInstanceResp.
         :type enable_publicip: bool
@@ -1232,7 +1232,7 @@ class ShowInstanceResp:
     def management_connect_address(self):
         r"""Gets the management_connect_address of this ShowInstanceResp.
 
-        Kafka实例的Kafka Manager连接地址。
+        **参数解释**： Kafka实例的Kafka Manager连接地址。 **取值范围**： 不涉及。
 
         :return: The management_connect_address of this ShowInstanceResp.
         :rtype: str
@@ -1243,7 +1243,7 @@ class ShowInstanceResp:
     def management_connect_address(self, management_connect_address):
         r"""Sets the management_connect_address of this ShowInstanceResp.
 
-        Kafka实例的Kafka Manager连接地址。
+        **参数解释**： Kafka实例的Kafka Manager连接地址。 **取值范围**： 不涉及。
 
         :param management_connect_address: The management_connect_address of this ShowInstanceResp.
         :type management_connect_address: str
@@ -1254,7 +1254,7 @@ class ShowInstanceResp:
     def ssl_enable(self):
         r"""Gets the ssl_enable of this ShowInstanceResp.
 
-        是否开启安全认证。 - true：开启 - false：未开启
+        **参数解释**： 是否开启安全认证。 **取值范围**： - true：开启 - false：未开启
 
         :return: The ssl_enable of this ShowInstanceResp.
         :rtype: bool
@@ -1265,7 +1265,7 @@ class ShowInstanceResp:
     def ssl_enable(self, ssl_enable):
         r"""Sets the ssl_enable of this ShowInstanceResp.
 
-        是否开启安全认证。 - true：开启 - false：未开启
+        **参数解释**： 是否开启安全认证。 **取值范围**： - true：开启 - false：未开启
 
         :param ssl_enable: The ssl_enable of this ShowInstanceResp.
         :type ssl_enable: bool
@@ -1276,7 +1276,7 @@ class ShowInstanceResp:
     def broker_ssl_enable(self):
         r"""Gets the broker_ssl_enable of this ShowInstanceResp.
 
-        是否开启broker间副本加密传输。 - true：开启 - false：未开启
+        **参数解释**： 是否开启broker间副本加密传输。 **取值范围**： - true：开启 - false：未开启
 
         :return: The broker_ssl_enable of this ShowInstanceResp.
         :rtype: bool
@@ -1287,7 +1287,7 @@ class ShowInstanceResp:
     def broker_ssl_enable(self, broker_ssl_enable):
         r"""Sets the broker_ssl_enable of this ShowInstanceResp.
 
-        是否开启broker间副本加密传输。 - true：开启 - false：未开启
+        **参数解释**： 是否开启broker间副本加密传输。 **取值范围**： - true：开启 - false：未开启
 
         :param broker_ssl_enable: The broker_ssl_enable of this ShowInstanceResp.
         :type broker_ssl_enable: bool
@@ -1298,7 +1298,7 @@ class ShowInstanceResp:
     def kafka_security_protocol(self):
         r"""Gets the kafka_security_protocol of this ShowInstanceResp.
 
-        Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。  - PLAINTEXT: 既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
+        **参数解释**： Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。 **取值范围**： - PLAINTEXT：既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL：采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT：明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
 
         :return: The kafka_security_protocol of this ShowInstanceResp.
         :rtype: str
@@ -1309,7 +1309,7 @@ class ShowInstanceResp:
     def kafka_security_protocol(self, kafka_security_protocol):
         r"""Sets the kafka_security_protocol of this ShowInstanceResp.
 
-        Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。  - PLAINTEXT: 既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
+        **参数解释**： Kafka使用的安全协议。 若实例详情中不存在port_protocols返回参数，则kafka_security_protocol同时代表内网访问、公网访问以及跨VPC访问的安全协议。 若实例详情中存在port_protocols返回参数，则kafka_security_protocol仅代表跨VPC访问的安全协议。内网访问公网访问的安全协议请参考port_protocols参数。 **取值范围**： - PLAINTEXT：既未采用SSL证书进行加密传输，也不支持账号密码认证。性能更好，安全性较低，建议在生产环境下公网访问不使用此方式。 - SASL_SSL：采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT：明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
 
         :param kafka_security_protocol: The kafka_security_protocol of this ShowInstanceResp.
         :type kafka_security_protocol: str
@@ -1320,7 +1320,7 @@ class ShowInstanceResp:
     def sasl_enabled_mechanisms(self):
         r"""Gets the sasl_enabled_mechanisms of this ShowInstanceResp.
 
-        开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+        **参数解释**： 开启SASL后使用的认证机制。
 
         :return: The sasl_enabled_mechanisms of this ShowInstanceResp.
         :rtype: list[str]
@@ -1331,7 +1331,7 @@ class ShowInstanceResp:
     def sasl_enabled_mechanisms(self, sasl_enabled_mechanisms):
         r"""Sets the sasl_enabled_mechanisms of this ShowInstanceResp.
 
-        开启SASL后使用的认证机制。 - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+        **参数解释**： 开启SASL后使用的认证机制。
 
         :param sasl_enabled_mechanisms: The sasl_enabled_mechanisms of this ShowInstanceResp.
         :type sasl_enabled_mechanisms: list[str]
@@ -1342,7 +1342,7 @@ class ShowInstanceResp:
     def ssl_two_way_enable(self):
         r"""Gets the ssl_two_way_enable of this ShowInstanceResp.
 
-        是否开启双向认证。
+        **参数解释**： 是否开启双向认证。 **取值范围**： - true：开启 - false：未开启
 
         :return: The ssl_two_way_enable of this ShowInstanceResp.
         :rtype: bool
@@ -1353,7 +1353,7 @@ class ShowInstanceResp:
     def ssl_two_way_enable(self, ssl_two_way_enable):
         r"""Sets the ssl_two_way_enable of this ShowInstanceResp.
 
-        是否开启双向认证。
+        **参数解释**： 是否开启双向认证。 **取值范围**： - true：开启 - false：未开启
 
         :param ssl_two_way_enable: The ssl_two_way_enable of this ShowInstanceResp.
         :type ssl_two_way_enable: bool
@@ -1364,7 +1364,7 @@ class ShowInstanceResp:
     def cert_replaced(self):
         r"""Gets the cert_replaced of this ShowInstanceResp.
 
-        是否能够证书替换。
+        **参数解释**： 是否开启证书替换。 **取值范围**： - true：开启 - false：未开启
 
         :return: The cert_replaced of this ShowInstanceResp.
         :rtype: bool
@@ -1375,7 +1375,7 @@ class ShowInstanceResp:
     def cert_replaced(self, cert_replaced):
         r"""Sets the cert_replaced of this ShowInstanceResp.
 
-        是否能够证书替换。
+        **参数解释**： 是否开启证书替换。 **取值范围**： - true：开启 - false：未开启
 
         :param cert_replaced: The cert_replaced of this ShowInstanceResp.
         :type cert_replaced: bool
@@ -1386,7 +1386,7 @@ class ShowInstanceResp:
     def public_management_connect_address(self):
         r"""Gets the public_management_connect_address of this ShowInstanceResp.
 
-        公网访问Kafka Manager连接地址。
+        **参数解释**： 公网访问Kafka Manager连接地址。 **取值范围**： 不涉及。
 
         :return: The public_management_connect_address of this ShowInstanceResp.
         :rtype: str
@@ -1397,7 +1397,7 @@ class ShowInstanceResp:
     def public_management_connect_address(self, public_management_connect_address):
         r"""Sets the public_management_connect_address of this ShowInstanceResp.
 
-        公网访问Kafka Manager连接地址。
+        **参数解释**： 公网访问Kafka Manager连接地址。 **取值范围**： 不涉及。
 
         :param public_management_connect_address: The public_management_connect_address of this ShowInstanceResp.
         :type public_management_connect_address: str
@@ -1408,7 +1408,7 @@ class ShowInstanceResp:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ShowInstanceResp.
 
-        企业项目ID。
+        **参数解释**： 企业项目ID。 **取值范围**： 不涉及。
 
         :return: The enterprise_project_id of this ShowInstanceResp.
         :rtype: str
@@ -1419,7 +1419,7 @@ class ShowInstanceResp:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ShowInstanceResp.
 
-        企业项目ID。
+        **参数解释**： 企业项目ID。 **取值范围**： 不涉及。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowInstanceResp.
         :type enterprise_project_id: str
@@ -1430,7 +1430,7 @@ class ShowInstanceResp:
     def is_logical_volume(self):
         r"""Gets the is_logical_volume of this ShowInstanceResp.
 
-        实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
+        **参数解释**： 实例扩容时用于区分老实例与新实例。 **取值范围**： - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例。
 
         :return: The is_logical_volume of this ShowInstanceResp.
         :rtype: bool
@@ -1441,7 +1441,7 @@ class ShowInstanceResp:
     def is_logical_volume(self, is_logical_volume):
         r"""Sets the is_logical_volume of this ShowInstanceResp.
 
-        实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
+        **参数解释**： 实例扩容时用于区分老实例与新实例。 **取值范围**： - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例。
 
         :param is_logical_volume: The is_logical_volume of this ShowInstanceResp.
         :type is_logical_volume: bool
@@ -1452,7 +1452,7 @@ class ShowInstanceResp:
     def extend_times(self):
         r"""Gets the extend_times of this ShowInstanceResp.
 
-        实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
+        **参数解释**： 实例扩容磁盘次数。 **取值范围**： 不涉及。
 
         :return: The extend_times of this ShowInstanceResp.
         :rtype: int
@@ -1463,7 +1463,7 @@ class ShowInstanceResp:
     def extend_times(self, extend_times):
         r"""Sets the extend_times of this ShowInstanceResp.
 
-        实例扩容磁盘次数，如果超过20次则无法扩容磁盘。
+        **参数解释**： 实例扩容磁盘次数。 **取值范围**： 不涉及。
 
         :param extend_times: The extend_times of this ShowInstanceResp.
         :type extend_times: int
@@ -1474,7 +1474,7 @@ class ShowInstanceResp:
     def enable_auto_topic(self):
         r"""Gets the enable_auto_topic of this ShowInstanceResp.
 
-        是否打开kafka自动创建Topic功能。   - true：开启   - false：关闭
+        **参数解释**： 是否开启自动创建Topic。 **取值范围**： - true：开启 - false：关闭
 
         :return: The enable_auto_topic of this ShowInstanceResp.
         :rtype: bool
@@ -1485,7 +1485,7 @@ class ShowInstanceResp:
     def enable_auto_topic(self, enable_auto_topic):
         r"""Sets the enable_auto_topic of this ShowInstanceResp.
 
-        是否打开kafka自动创建Topic功能。   - true：开启   - false：关闭
+        **参数解释**： 是否开启自动创建Topic。 **取值范围**： - true：开启 - false：关闭
 
         :param enable_auto_topic: The enable_auto_topic of this ShowInstanceResp.
         :type enable_auto_topic: bool
@@ -1496,7 +1496,7 @@ class ShowInstanceResp:
     def type(self):
         r"""Gets the type of this ShowInstanceResp.
 
-        实例类型：集群，cluster。
+        **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
 
         :return: The type of this ShowInstanceResp.
         :rtype: str
@@ -1507,7 +1507,7 @@ class ShowInstanceResp:
     def type(self, type):
         r"""Sets the type of this ShowInstanceResp.
 
-        实例类型：集群，cluster。
+        **参数解释**： 实例类型。 **取值范围**： - single：单机。 - cluster：集群。
 
         :param type: The type of this ShowInstanceResp.
         :type type: str
@@ -1518,7 +1518,7 @@ class ShowInstanceResp:
     def product_id(self):
         r"""Gets the product_id of this ShowInstanceResp.
 
-        产品标识。
+        **参数解释**： 产品标识。 **取值范围**： 不涉及。
 
         :return: The product_id of this ShowInstanceResp.
         :rtype: str
@@ -1529,7 +1529,7 @@ class ShowInstanceResp:
     def product_id(self, product_id):
         r"""Sets the product_id of this ShowInstanceResp.
 
-        产品标识。
+        **参数解释**： 产品标识。 **取值范围**： 不涉及。
 
         :param product_id: The product_id of this ShowInstanceResp.
         :type product_id: str
@@ -1540,7 +1540,7 @@ class ShowInstanceResp:
     def security_group_id(self):
         r"""Gets the security_group_id of this ShowInstanceResp.
 
-        安全组ID。
+        **参数解释**： 安全组ID。 **取值范围**： 不涉及。
 
         :return: The security_group_id of this ShowInstanceResp.
         :rtype: str
@@ -1551,7 +1551,7 @@ class ShowInstanceResp:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this ShowInstanceResp.
 
-        安全组ID。
+        **参数解释**： 安全组ID。 **取值范围**： 不涉及。
 
         :param security_group_id: The security_group_id of this ShowInstanceResp.
         :type security_group_id: str
@@ -1562,7 +1562,7 @@ class ShowInstanceResp:
     def security_group_name(self):
         r"""Gets the security_group_name of this ShowInstanceResp.
 
-        租户安全组名称。
+        **参数解释**： 安全组名称。 **取值范围**： 不涉及。
 
         :return: The security_group_name of this ShowInstanceResp.
         :rtype: str
@@ -1573,7 +1573,7 @@ class ShowInstanceResp:
     def security_group_name(self, security_group_name):
         r"""Sets the security_group_name of this ShowInstanceResp.
 
-        租户安全组名称。
+        **参数解释**： 安全组名称。 **取值范围**： 不涉及。
 
         :param security_group_name: The security_group_name of this ShowInstanceResp.
         :type security_group_name: str
@@ -1584,7 +1584,7 @@ class ShowInstanceResp:
     def subnet_id(self):
         r"""Gets the subnet_id of this ShowInstanceResp.
 
-        子网ID。
+        **参数解释**： 子网ID。 **取值范围**： 不涉及。
 
         :return: The subnet_id of this ShowInstanceResp.
         :rtype: str
@@ -1595,7 +1595,7 @@ class ShowInstanceResp:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this ShowInstanceResp.
 
-        子网ID。
+        **参数解释**： 子网ID。 **取值范围**： 不涉及。
 
         :param subnet_id: The subnet_id of this ShowInstanceResp.
         :type subnet_id: str
@@ -1606,7 +1606,7 @@ class ShowInstanceResp:
     def available_zones(self):
         r"""Gets the available_zones of this ShowInstanceResp.
 
-        实例节点所在的可用区，返回“可用区ID”。
+        **参数解释**： 实例节点所在的可用区，返回“可用区ID”。
 
         :return: The available_zones of this ShowInstanceResp.
         :rtype: list[str]
@@ -1617,7 +1617,7 @@ class ShowInstanceResp:
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this ShowInstanceResp.
 
-        实例节点所在的可用区，返回“可用区ID”。
+        **参数解释**： 实例节点所在的可用区，返回“可用区ID”。
 
         :param available_zones: The available_zones of this ShowInstanceResp.
         :type available_zones: list[str]
@@ -1628,7 +1628,7 @@ class ShowInstanceResp:
     def available_zone_names(self):
         r"""Gets the available_zone_names of this ShowInstanceResp.
 
-        实例节点所在的可用区名称，返回“可用区名称”。
+        **参数解释**： 实例节点所在的可用区名称，返回“可用区名称”。
 
         :return: The available_zone_names of this ShowInstanceResp.
         :rtype: list[str]
@@ -1639,7 +1639,7 @@ class ShowInstanceResp:
     def available_zone_names(self, available_zone_names):
         r"""Sets the available_zone_names of this ShowInstanceResp.
 
-        实例节点所在的可用区名称，返回“可用区名称”。
+        **参数解释**： 实例节点所在的可用区名称，返回“可用区名称”。
 
         :param available_zone_names: The available_zone_names of this ShowInstanceResp.
         :type available_zone_names: list[str]
@@ -1650,7 +1650,7 @@ class ShowInstanceResp:
     def total_storage_space(self):
         r"""Gets the total_storage_space of this ShowInstanceResp.
 
-        总共消息存储空间，单位：GB。
+        **参数解释**： 总共消息存储空间，单位：GB。 **取值范围**： 不涉及。
 
         :return: The total_storage_space of this ShowInstanceResp.
         :rtype: int
@@ -1661,7 +1661,7 @@ class ShowInstanceResp:
     def total_storage_space(self, total_storage_space):
         r"""Sets the total_storage_space of this ShowInstanceResp.
 
-        总共消息存储空间，单位：GB。
+        **参数解释**： 总共消息存储空间，单位：GB。 **取值范围**： 不涉及。
 
         :param total_storage_space: The total_storage_space of this ShowInstanceResp.
         :type total_storage_space: int
@@ -1672,7 +1672,7 @@ class ShowInstanceResp:
     def public_connect_address(self):
         r"""Gets the public_connect_address of this ShowInstanceResp.
 
-        实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
+        **参数解释**： 实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。 **取值范围**： 不涉及。
 
         :return: The public_connect_address of this ShowInstanceResp.
         :rtype: str
@@ -1683,7 +1683,7 @@ class ShowInstanceResp:
     def public_connect_address(self, public_connect_address):
         r"""Sets the public_connect_address of this ShowInstanceResp.
 
-        实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。
+        **参数解释**： 实例公网连接IP地址。当实例开启了公网访问，实例才包含该参数。 **取值范围**： 不涉及。
 
         :param public_connect_address: The public_connect_address of this ShowInstanceResp.
         :type public_connect_address: str
@@ -1694,7 +1694,7 @@ class ShowInstanceResp:
     def public_connect_domain_name(self):
         r"""Gets the public_connect_domain_name of this ShowInstanceResp.
 
-        实例公网连接域名。当实例开启了公网访问，实例才包含该参数。
+        **参数解释**： 实例公网连接域名。当实例开启了公网访问，实例才包含该参数。 **取值范围**： 不涉及。
 
         :return: The public_connect_domain_name of this ShowInstanceResp.
         :rtype: str
@@ -1705,7 +1705,7 @@ class ShowInstanceResp:
     def public_connect_domain_name(self, public_connect_domain_name):
         r"""Sets the public_connect_domain_name of this ShowInstanceResp.
 
-        实例公网连接域名。当实例开启了公网访问，实例才包含该参数。
+        **参数解释**： 实例公网连接域名。当实例开启了公网访问，实例才包含该参数。 **取值范围**： 不涉及。
 
         :param public_connect_domain_name: The public_connect_domain_name of this ShowInstanceResp.
         :type public_connect_domain_name: str
@@ -1716,7 +1716,7 @@ class ShowInstanceResp:
     def storage_resource_id(self):
         r"""Gets the storage_resource_id of this ShowInstanceResp.
 
-        存储资源ID。
+        **参数解释**： 存储资源ID。 **取值范围**： 不涉及。
 
         :return: The storage_resource_id of this ShowInstanceResp.
         :rtype: str
@@ -1727,7 +1727,7 @@ class ShowInstanceResp:
     def storage_resource_id(self, storage_resource_id):
         r"""Sets the storage_resource_id of this ShowInstanceResp.
 
-        存储资源ID。
+        **参数解释**： 存储资源ID。 **取值范围**： 不涉及。
 
         :param storage_resource_id: The storage_resource_id of this ShowInstanceResp.
         :type storage_resource_id: str
@@ -1738,7 +1738,7 @@ class ShowInstanceResp:
     def storage_spec_code(self):
         r"""Gets the storage_spec_code of this ShowInstanceResp.
 
-        IO规格。
+        **参数解释**： IO规格。 **取值范围**： 不涉及。
 
         :return: The storage_spec_code of this ShowInstanceResp.
         :rtype: str
@@ -1749,7 +1749,7 @@ class ShowInstanceResp:
     def storage_spec_code(self, storage_spec_code):
         r"""Sets the storage_spec_code of this ShowInstanceResp.
 
-        IO规格。
+        **参数解释**： IO规格。 **取值范围**： 不涉及。
 
         :param storage_spec_code: The storage_spec_code of this ShowInstanceResp.
         :type storage_spec_code: str
@@ -1760,7 +1760,7 @@ class ShowInstanceResp:
     def service_type(self):
         r"""Gets the service_type of this ShowInstanceResp.
 
-        服务类型。
+        **参数解释**： 服务类型。 **取值范围**： advanced。
 
         :return: The service_type of this ShowInstanceResp.
         :rtype: str
@@ -1771,7 +1771,7 @@ class ShowInstanceResp:
     def service_type(self, service_type):
         r"""Sets the service_type of this ShowInstanceResp.
 
-        服务类型。
+        **参数解释**： 服务类型。 **取值范围**： advanced。
 
         :param service_type: The service_type of this ShowInstanceResp.
         :type service_type: str
@@ -1782,7 +1782,7 @@ class ShowInstanceResp:
     def storage_type(self):
         r"""Gets the storage_type of this ShowInstanceResp.
 
-        存储类型。
+        **参数解释**： 存储类型。 **取值范围**： hec
 
         :return: The storage_type of this ShowInstanceResp.
         :rtype: str
@@ -1793,7 +1793,7 @@ class ShowInstanceResp:
     def storage_type(self, storage_type):
         r"""Sets the storage_type of this ShowInstanceResp.
 
-        存储类型。
+        **参数解释**： 存储类型。 **取值范围**： hec
 
         :param storage_type: The storage_type of this ShowInstanceResp.
         :type storage_type: str
@@ -1804,7 +1804,7 @@ class ShowInstanceResp:
     def retention_policy(self):
         r"""Gets the retention_policy of this ShowInstanceResp.
 
-        消息老化策略。
+        **参数解释**： 消息老化策略。 **取值范围**： - time_base：表示自动删除最老消息。 - produce_reject：表示拒绝消息写入。
 
         :return: The retention_policy of this ShowInstanceResp.
         :rtype: str
@@ -1815,7 +1815,7 @@ class ShowInstanceResp:
     def retention_policy(self, retention_policy):
         r"""Sets the retention_policy of this ShowInstanceResp.
 
-        消息老化策略。
+        **参数解释**： 消息老化策略。 **取值范围**： - time_base：表示自动删除最老消息。 - produce_reject：表示拒绝消息写入。
 
         :param retention_policy: The retention_policy of this ShowInstanceResp.
         :type retention_policy: str
@@ -1826,7 +1826,7 @@ class ShowInstanceResp:
     def kafka_public_status(self):
         r"""Gets the kafka_public_status of this ShowInstanceResp.
 
-        Kafka公网开启状态。
+        **参数解释**： Kafka公网开启状态。 **取值范围**： - true：开启公网。 - closed：关闭公网。 - false：未使用公网。 - freezed：公网冻结。 - actived：公网解冻。
 
         :return: The kafka_public_status of this ShowInstanceResp.
         :rtype: str
@@ -1837,7 +1837,7 @@ class ShowInstanceResp:
     def kafka_public_status(self, kafka_public_status):
         r"""Sets the kafka_public_status of this ShowInstanceResp.
 
-        Kafka公网开启状态。
+        **参数解释**： Kafka公网开启状态。 **取值范围**： - true：开启公网。 - closed：关闭公网。 - false：未使用公网。 - freezed：公网冻结。 - actived：公网解冻。
 
         :param kafka_public_status: The kafka_public_status of this ShowInstanceResp.
         :type kafka_public_status: str
@@ -1848,7 +1848,7 @@ class ShowInstanceResp:
     def public_bandwidth(self):
         r"""Gets the public_bandwidth of this ShowInstanceResp.
 
-        kafka公网访问带宽。
+        **参数解释**： kafka公网访问带宽。 **取值范围**： 不涉及。
 
         :return: The public_bandwidth of this ShowInstanceResp.
         :rtype: int
@@ -1859,7 +1859,7 @@ class ShowInstanceResp:
     def public_bandwidth(self, public_bandwidth):
         r"""Sets the public_bandwidth of this ShowInstanceResp.
 
-        kafka公网访问带宽。
+        **参数解释**： kafka公网访问带宽。 **取值范围**： 不涉及。
 
         :param public_bandwidth: The public_bandwidth of this ShowInstanceResp.
         :type public_bandwidth: int
@@ -1870,7 +1870,7 @@ class ShowInstanceResp:
     def enable_log_collection(self):
         r"""Gets the enable_log_collection of this ShowInstanceResp.
 
-        是否开启消息收集功能。
+        **参数解释**： 是否开启消息收集功能。 **取值范围**： - true：开启 - false：不开启
 
         :return: The enable_log_collection of this ShowInstanceResp.
         :rtype: bool
@@ -1881,7 +1881,7 @@ class ShowInstanceResp:
     def enable_log_collection(self, enable_log_collection):
         r"""Sets the enable_log_collection of this ShowInstanceResp.
 
-        是否开启消息收集功能。
+        **参数解释**： 是否开启消息收集功能。 **取值范围**： - true：开启 - false：不开启
 
         :param enable_log_collection: The enable_log_collection of this ShowInstanceResp.
         :type enable_log_collection: bool
@@ -1892,7 +1892,7 @@ class ShowInstanceResp:
     def new_auth_cert(self):
         r"""Gets the new_auth_cert of this ShowInstanceResp.
 
-        是否开启新证书。
+        **参数解释**： 是否开启新证书。 **取值范围**： - true：开启 - false：不开启
 
         :return: The new_auth_cert of this ShowInstanceResp.
         :rtype: bool
@@ -1903,7 +1903,7 @@ class ShowInstanceResp:
     def new_auth_cert(self, new_auth_cert):
         r"""Sets the new_auth_cert of this ShowInstanceResp.
 
-        是否开启新证书。
+        **参数解释**： 是否开启新证书。 **取值范围**： - true：开启 - false：不开启
 
         :param new_auth_cert: The new_auth_cert of this ShowInstanceResp.
         :type new_auth_cert: bool
@@ -1914,7 +1914,7 @@ class ShowInstanceResp:
     def cross_vpc_info(self):
         r"""Gets the cross_vpc_info of this ShowInstanceResp.
 
-        跨VPC访问信息。
+        **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
 
         :return: The cross_vpc_info of this ShowInstanceResp.
         :rtype: str
@@ -1925,7 +1925,7 @@ class ShowInstanceResp:
     def cross_vpc_info(self, cross_vpc_info):
         r"""Sets the cross_vpc_info of this ShowInstanceResp.
 
-        跨VPC访问信息。
+        **参数解释**： 跨VPC访问信息。 **取值范围**： 不涉及。
 
         :param cross_vpc_info: The cross_vpc_info of this ShowInstanceResp.
         :type cross_vpc_info: str
@@ -1936,7 +1936,7 @@ class ShowInstanceResp:
     def ipv6_enable(self):
         r"""Gets the ipv6_enable of this ShowInstanceResp.
 
-        是否开启ipv6。
+        **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启 - false：不开启
 
         :return: The ipv6_enable of this ShowInstanceResp.
         :rtype: bool
@@ -1947,7 +1947,7 @@ class ShowInstanceResp:
     def ipv6_enable(self, ipv6_enable):
         r"""Sets the ipv6_enable of this ShowInstanceResp.
 
-        是否开启ipv6。
+        **参数解释**： 是否开启IPv6。 **取值范围**： - true：开启 - false：不开启
 
         :param ipv6_enable: The ipv6_enable of this ShowInstanceResp.
         :type ipv6_enable: bool
@@ -1958,7 +1958,7 @@ class ShowInstanceResp:
     def ipv6_connect_addresses(self):
         r"""Gets the ipv6_connect_addresses of this ShowInstanceResp.
 
-        IPv6的连接地址。
+        **参数解释**： IPv6的连接地址。
 
         :return: The ipv6_connect_addresses of this ShowInstanceResp.
         :rtype: list[str]
@@ -1969,7 +1969,7 @@ class ShowInstanceResp:
     def ipv6_connect_addresses(self, ipv6_connect_addresses):
         r"""Sets the ipv6_connect_addresses of this ShowInstanceResp.
 
-        IPv6的连接地址。
+        **参数解释**： IPv6的连接地址。
 
         :param ipv6_connect_addresses: The ipv6_connect_addresses of this ShowInstanceResp.
         :type ipv6_connect_addresses: list[str]
@@ -1980,7 +1980,7 @@ class ShowInstanceResp:
     def connector_enable(self):
         r"""Gets the connector_enable of this ShowInstanceResp.
 
-        是否开启转储。新规格产品暂不支持开启转储。
+        **参数解释**： 是否开启转储。 **取值范围**： - true：开启 - false：不开启
 
         :return: The connector_enable of this ShowInstanceResp.
         :rtype: bool
@@ -1991,7 +1991,7 @@ class ShowInstanceResp:
     def connector_enable(self, connector_enable):
         r"""Sets the connector_enable of this ShowInstanceResp.
 
-        是否开启转储。新规格产品暂不支持开启转储。
+        **参数解释**： 是否开启转储。 **取值范围**： - true：开启 - false：不开启
 
         :param connector_enable: The connector_enable of this ShowInstanceResp.
         :type connector_enable: bool
@@ -2002,7 +2002,7 @@ class ShowInstanceResp:
     def connector_node_num(self):
         r"""Gets the connector_node_num of this ShowInstanceResp.
 
-        connector节点数量。
+        **参数解释**： connector节点数量。 **取值范围**： 2-16。
 
         :return: The connector_node_num of this ShowInstanceResp.
         :rtype: int
@@ -2013,7 +2013,7 @@ class ShowInstanceResp:
     def connector_node_num(self, connector_node_num):
         r"""Sets the connector_node_num of this ShowInstanceResp.
 
-        connector节点数量。
+        **参数解释**： connector节点数量。 **取值范围**： 2-16。
 
         :param connector_node_num: The connector_node_num of this ShowInstanceResp.
         :type connector_node_num: int
@@ -2024,7 +2024,7 @@ class ShowInstanceResp:
     def connector_id(self):
         r"""Gets the connector_id of this ShowInstanceResp.
 
-        转储任务ID。
+        **参数解释**： 转储任务ID。 **取值范围**： 不涉及。
 
         :return: The connector_id of this ShowInstanceResp.
         :rtype: str
@@ -2035,7 +2035,7 @@ class ShowInstanceResp:
     def connector_id(self, connector_id):
         r"""Sets the connector_id of this ShowInstanceResp.
 
-        转储任务ID。
+        **参数解释**： 转储任务ID。 **取值范围**： 不涉及。
 
         :param connector_id: The connector_id of this ShowInstanceResp.
         :type connector_id: str
@@ -2046,7 +2046,7 @@ class ShowInstanceResp:
     def rest_enable(self):
         r"""Gets the rest_enable of this ShowInstanceResp.
 
-        是否开启Kafka rest功能。
+        **参数解释**： 是否开启Kafka rest功能。 **取值范围**： - true：开启 - false：不开启
 
         :return: The rest_enable of this ShowInstanceResp.
         :rtype: bool
@@ -2057,7 +2057,7 @@ class ShowInstanceResp:
     def rest_enable(self, rest_enable):
         r"""Sets the rest_enable of this ShowInstanceResp.
 
-        是否开启Kafka rest功能。
+        **参数解释**： 是否开启Kafka rest功能。 **取值范围**： - true：开启 - false：不开启
 
         :param rest_enable: The rest_enable of this ShowInstanceResp.
         :type rest_enable: bool
@@ -2068,7 +2068,7 @@ class ShowInstanceResp:
     def rest_connect_address(self):
         r"""Gets the rest_connect_address of this ShowInstanceResp.
 
-        Kafka rest连接地址。
+        **参数解释**：  Kafka rest连接地址。 **取值范围**： 不涉及。
 
         :return: The rest_connect_address of this ShowInstanceResp.
         :rtype: str
@@ -2079,7 +2079,7 @@ class ShowInstanceResp:
     def rest_connect_address(self, rest_connect_address):
         r"""Sets the rest_connect_address of this ShowInstanceResp.
 
-        Kafka rest连接地址。
+        **参数解释**：  Kafka rest连接地址。 **取值范围**： 不涉及。
 
         :param rest_connect_address: The rest_connect_address of this ShowInstanceResp.
         :type rest_connect_address: str
@@ -2090,7 +2090,7 @@ class ShowInstanceResp:
     def public_boundwidth(self):
         r"""Gets the public_boundwidth of this ShowInstanceResp.
 
-        kafka公网访问带宽。待删除版本。
+        **参数解释**： Kafka公网访问带宽。待删除版本。 **取值范围**： 不涉及。
 
         :return: The public_boundwidth of this ShowInstanceResp.
         :rtype: int
@@ -2101,7 +2101,7 @@ class ShowInstanceResp:
     def public_boundwidth(self, public_boundwidth):
         r"""Sets the public_boundwidth of this ShowInstanceResp.
 
-        kafka公网访问带宽。待删除版本。
+        **参数解释**： Kafka公网访问带宽。待删除版本。 **取值范围**： 不涉及。
 
         :param public_boundwidth: The public_boundwidth of this ShowInstanceResp.
         :type public_boundwidth: int
@@ -2112,7 +2112,7 @@ class ShowInstanceResp:
     def message_query_inst_enable(self):
         r"""Gets the message_query_inst_enable of this ShowInstanceResp.
 
-        是否开启消息查询功能。
+        **参数解释**： 是否开启消息查询功能。 **取值范围**： - true：开启 - false：不开启
 
         :return: The message_query_inst_enable of this ShowInstanceResp.
         :rtype: bool
@@ -2123,7 +2123,7 @@ class ShowInstanceResp:
     def message_query_inst_enable(self, message_query_inst_enable):
         r"""Sets the message_query_inst_enable of this ShowInstanceResp.
 
-        是否开启消息查询功能。
+        **参数解释**： 是否开启消息查询功能。 **取值范围**： - true：开启 - false：不开启
 
         :param message_query_inst_enable: The message_query_inst_enable of this ShowInstanceResp.
         :type message_query_inst_enable: bool
@@ -2134,7 +2134,7 @@ class ShowInstanceResp:
     def vpc_client_plain(self):
         r"""Gets the vpc_client_plain of this ShowInstanceResp.
 
-        是否开启VPC明文访问。
+        **参数解释**： 是否开启VPC明文访问。 **取值范围**： - true：开启 - false：不开启
 
         :return: The vpc_client_plain of this ShowInstanceResp.
         :rtype: bool
@@ -2145,7 +2145,7 @@ class ShowInstanceResp:
     def vpc_client_plain(self, vpc_client_plain):
         r"""Sets the vpc_client_plain of this ShowInstanceResp.
 
-        是否开启VPC明文访问。
+        **参数解释**： 是否开启VPC明文访问。 **取值范围**： - true：开启 - false：不开启
 
         :param vpc_client_plain: The vpc_client_plain of this ShowInstanceResp.
         :type vpc_client_plain: bool
@@ -2156,7 +2156,7 @@ class ShowInstanceResp:
     def support_features(self):
         r"""Gets the support_features of this ShowInstanceResp.
 
-        Kafka实例支持的特性功能。
+        **参数解释**： Kafka实例支持的特性功能。 **取值范围**： 不涉及。
 
         :return: The support_features of this ShowInstanceResp.
         :rtype: str
@@ -2167,7 +2167,7 @@ class ShowInstanceResp:
     def support_features(self, support_features):
         r"""Sets the support_features of this ShowInstanceResp.
 
-        Kafka实例支持的特性功能。
+        **参数解释**： Kafka实例支持的特性功能。 **取值范围**： 不涉及。
 
         :param support_features: The support_features of this ShowInstanceResp.
         :type support_features: str
@@ -2178,7 +2178,7 @@ class ShowInstanceResp:
     def trace_enable(self):
         r"""Gets the trace_enable of this ShowInstanceResp.
 
-        是否开启消息轨迹功能。
+        **参数解释**： 是否开启消息轨迹功能。 **取值范围**： - true：开启 - false：不开启
 
         :return: The trace_enable of this ShowInstanceResp.
         :rtype: bool
@@ -2189,7 +2189,7 @@ class ShowInstanceResp:
     def trace_enable(self, trace_enable):
         r"""Sets the trace_enable of this ShowInstanceResp.
 
-        是否开启消息轨迹功能。
+        **参数解释**： 是否开启消息轨迹功能。 **取值范围**： - true：开启 - false：不开启
 
         :param trace_enable: The trace_enable of this ShowInstanceResp.
         :type trace_enable: bool
@@ -2200,7 +2200,7 @@ class ShowInstanceResp:
     def agent_enable(self):
         r"""Gets the agent_enable of this ShowInstanceResp.
 
-        是否开启代理。
+        **参数解释**： 是否开启代理。 **取值范围**： - true：开启 - false：不开启
 
         :return: The agent_enable of this ShowInstanceResp.
         :rtype: bool
@@ -2211,7 +2211,7 @@ class ShowInstanceResp:
     def agent_enable(self, agent_enable):
         r"""Sets the agent_enable of this ShowInstanceResp.
 
-        是否开启代理。
+        **参数解释**： 是否开启代理。 **取值范围**： - true：开启 - false：不开启
 
         :param agent_enable: The agent_enable of this ShowInstanceResp.
         :type agent_enable: bool
@@ -2222,7 +2222,7 @@ class ShowInstanceResp:
     def pod_connect_address(self):
         r"""Gets the pod_connect_address of this ShowInstanceResp.
 
-        租户侧连接地址。
+        **参数解释**： 租户侧连接地址。 **取值范围**： 不涉及。
 
         :return: The pod_connect_address of this ShowInstanceResp.
         :rtype: str
@@ -2233,7 +2233,7 @@ class ShowInstanceResp:
     def pod_connect_address(self, pod_connect_address):
         r"""Sets the pod_connect_address of this ShowInstanceResp.
 
-        租户侧连接地址。
+        **参数解释**： 租户侧连接地址。 **取值范围**： 不涉及。
 
         :param pod_connect_address: The pod_connect_address of this ShowInstanceResp.
         :type pod_connect_address: str
@@ -2244,7 +2244,7 @@ class ShowInstanceResp:
     def disk_encrypted(self):
         r"""Gets the disk_encrypted of this ShowInstanceResp.
 
-        是否开启磁盘加密。
+        **参数解释**： 是否开启磁盘加密。 **取值范围**： - true：开启 - false：不开启
 
         :return: The disk_encrypted of this ShowInstanceResp.
         :rtype: bool
@@ -2255,7 +2255,7 @@ class ShowInstanceResp:
     def disk_encrypted(self, disk_encrypted):
         r"""Sets the disk_encrypted of this ShowInstanceResp.
 
-        是否开启磁盘加密。
+        **参数解释**： 是否开启磁盘加密。 **取值范围**： - true：开启 - false：不开启
 
         :param disk_encrypted: The disk_encrypted of this ShowInstanceResp.
         :type disk_encrypted: bool
@@ -2266,7 +2266,7 @@ class ShowInstanceResp:
     def disk_encrypted_key(self):
         r"""Gets the disk_encrypted_key of this ShowInstanceResp.
 
-        磁盘加密key，未开启磁盘加密时为空。
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **取值范围**： 不涉及。
 
         :return: The disk_encrypted_key of this ShowInstanceResp.
         :rtype: str
@@ -2277,7 +2277,7 @@ class ShowInstanceResp:
     def disk_encrypted_key(self, disk_encrypted_key):
         r"""Sets the disk_encrypted_key of this ShowInstanceResp.
 
-        磁盘加密key，未开启磁盘加密时为空。
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **取值范围**： 不涉及。
 
         :param disk_encrypted_key: The disk_encrypted_key of this ShowInstanceResp.
         :type disk_encrypted_key: str
@@ -2288,7 +2288,7 @@ class ShowInstanceResp:
     def kafka_private_connect_address(self):
         r"""Gets the kafka_private_connect_address of this ShowInstanceResp.
 
-        Kafka实例内网连接地址。
+        **参数解释**： Kafka实例内网连接地址。 **取值范围**： 不涉及。
 
         :return: The kafka_private_connect_address of this ShowInstanceResp.
         :rtype: str
@@ -2299,7 +2299,7 @@ class ShowInstanceResp:
     def kafka_private_connect_address(self, kafka_private_connect_address):
         r"""Sets the kafka_private_connect_address of this ShowInstanceResp.
 
-        Kafka实例内网连接地址。
+        **参数解释**： Kafka实例内网连接地址。 **取值范围**： 不涉及。
 
         :param kafka_private_connect_address: The kafka_private_connect_address of this ShowInstanceResp.
         :type kafka_private_connect_address: str
@@ -2310,7 +2310,7 @@ class ShowInstanceResp:
     def kafka_private_connect_domain_name(self):
         r"""Gets the kafka_private_connect_domain_name of this ShowInstanceResp.
 
-        Kafka实例内网连接域名。
+        **参数解释**： Kafka实例内网连接域名。 **取值范围**： 不涉及。
 
         :return: The kafka_private_connect_domain_name of this ShowInstanceResp.
         :rtype: str
@@ -2321,7 +2321,7 @@ class ShowInstanceResp:
     def kafka_private_connect_domain_name(self, kafka_private_connect_domain_name):
         r"""Sets the kafka_private_connect_domain_name of this ShowInstanceResp.
 
-        Kafka实例内网连接域名。
+        **参数解释**： Kafka实例内网连接域名。 **取值范围**： 不涉及。
 
         :param kafka_private_connect_domain_name: The kafka_private_connect_domain_name of this ShowInstanceResp.
         :type kafka_private_connect_domain_name: str
@@ -2332,7 +2332,7 @@ class ShowInstanceResp:
     def ces_version(self):
         r"""Gets the ces_version of this ShowInstanceResp.
 
-        云监控版本。
+        **参数解释**： 云监控版本。 **取值范围**： 不涉及。
 
         :return: The ces_version of this ShowInstanceResp.
         :rtype: str
@@ -2343,7 +2343,7 @@ class ShowInstanceResp:
     def ces_version(self, ces_version):
         r"""Sets the ces_version of this ShowInstanceResp.
 
-        云监控版本。
+        **参数解释**： 云监控版本。 **取值范围**： 不涉及。
 
         :param ces_version: The ces_version of this ShowInstanceResp.
         :type ces_version: str
@@ -2354,7 +2354,7 @@ class ShowInstanceResp:
     def public_access_enabled(self):
         r"""Gets the public_access_enabled of this ShowInstanceResp.
 
-         区分实例什么时候开启的公网访问  取值范围：   - true：已开启公网访问   - actived：已开启公网访问   - closed：已关闭公网访问   - false：已关闭公网访问 
+        **参数解释**： 区分实例什么时候开启的公网访问 **取值范围**： - true：已开启公网访问 - actived：已开启公网访问 - closed：已关闭公网访问 - false：已关闭公网访问
 
         :return: The public_access_enabled of this ShowInstanceResp.
         :rtype: str
@@ -2365,7 +2365,7 @@ class ShowInstanceResp:
     def public_access_enabled(self, public_access_enabled):
         r"""Sets the public_access_enabled of this ShowInstanceResp.
 
-         区分实例什么时候开启的公网访问  取值范围：   - true：已开启公网访问   - actived：已开启公网访问   - closed：已关闭公网访问   - false：已关闭公网访问 
+        **参数解释**： 区分实例什么时候开启的公网访问 **取值范围**： - true：已开启公网访问 - actived：已开启公网访问 - closed：已关闭公网访问 - false：已关闭公网访问
 
         :param public_access_enabled: The public_access_enabled of this ShowInstanceResp.
         :type public_access_enabled: str
@@ -2376,7 +2376,7 @@ class ShowInstanceResp:
     def node_num(self):
         r"""Gets the node_num of this ShowInstanceResp.
 
-        节点数。
+        **参数解释**： 节点数。 **取值范围**： - [1：Kafka单机实例的节点数。](tag:hws,hws_hk,hws_eu,dt,hcs,ax) - 3~50：Kafka集群实例的节点数。
 
         :return: The node_num of this ShowInstanceResp.
         :rtype: int
@@ -2387,7 +2387,7 @@ class ShowInstanceResp:
     def node_num(self, node_num):
         r"""Sets the node_num of this ShowInstanceResp.
 
-        节点数。
+        **参数解释**： 节点数。 **取值范围**： - [1：Kafka单机实例的节点数。](tag:hws,hws_hk,hws_eu,dt,hcs,ax) - 3~50：Kafka集群实例的节点数。
 
         :param node_num: The node_num of this ShowInstanceResp.
         :type node_num: int
@@ -2416,7 +2416,7 @@ class ShowInstanceResp:
     def enable_acl(self):
         r"""Gets the enable_acl of this ShowInstanceResp.
 
-        是否开启访问控制。
+        **参数解释**： 是否开启访问控制。 **取值范围**： - true：开启 - false：不开启
 
         :return: The enable_acl of this ShowInstanceResp.
         :rtype: bool
@@ -2427,7 +2427,7 @@ class ShowInstanceResp:
     def enable_acl(self, enable_acl):
         r"""Sets the enable_acl of this ShowInstanceResp.
 
-        是否开启访问控制。
+        **参数解释**： 是否开启访问控制。 **取值范围**： - true：开启 - false：不开启
 
         :param enable_acl: The enable_acl of this ShowInstanceResp.
         :type enable_acl: bool
@@ -2438,7 +2438,7 @@ class ShowInstanceResp:
     def new_spec_billing_enable(self):
         r"""Gets the new_spec_billing_enable of this ShowInstanceResp.
 
-        是否启用新规格计费。
+        **参数解释**： 是否启用新规格计费。 **取值范围**： - true：开启 - false：不开启
 
         :return: The new_spec_billing_enable of this ShowInstanceResp.
         :rtype: bool
@@ -2449,7 +2449,7 @@ class ShowInstanceResp:
     def new_spec_billing_enable(self, new_spec_billing_enable):
         r"""Sets the new_spec_billing_enable of this ShowInstanceResp.
 
-        是否启用新规格计费。
+        **参数解释**： 是否启用新规格计费。 **取值范围**： - true：开启 - false：不开启
 
         :param new_spec_billing_enable: The new_spec_billing_enable of this ShowInstanceResp.
         :type new_spec_billing_enable: bool
@@ -2460,7 +2460,7 @@ class ShowInstanceResp:
     def broker_num(self):
         r"""Gets the broker_num of this ShowInstanceResp.
 
-        节点数量。
+        **参数解释**： 节点数量。 **取值范围**： 不涉及。
 
         :return: The broker_num of this ShowInstanceResp.
         :rtype: int
@@ -2471,7 +2471,7 @@ class ShowInstanceResp:
     def broker_num(self, broker_num):
         r"""Sets the broker_num of this ShowInstanceResp.
 
-        节点数量。
+        **参数解释**： 节点数量。 **取值范围**： 不涉及。
 
         :param broker_num: The broker_num of this ShowInstanceResp.
         :type broker_num: int
@@ -2482,7 +2482,7 @@ class ShowInstanceResp:
     def tags(self):
         r"""Gets the tags of this ShowInstanceResp.
 
-        标签列表。
+        **参数解释**： 标签列表。
 
         :return: The tags of this ShowInstanceResp.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
@@ -2493,7 +2493,7 @@ class ShowInstanceResp:
     def tags(self, tags):
         r"""Sets the tags of this ShowInstanceResp.
 
-        标签列表。
+        **参数解释**： 标签列表。
 
         :param tags: The tags of this ShowInstanceResp.
         :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
@@ -2504,7 +2504,7 @@ class ShowInstanceResp:
     def dr_enable(self):
         r"""Gets the dr_enable of this ShowInstanceResp.
 
-        是否为容灾实例。
+        **参数解释**：  是否为容灾实例。 **取值范围**： - true：是容灾实例。 - false：不是容灾实例。
 
         :return: The dr_enable of this ShowInstanceResp.
         :rtype: bool
@@ -2515,7 +2515,7 @@ class ShowInstanceResp:
     def dr_enable(self, dr_enable):
         r"""Sets the dr_enable of this ShowInstanceResp.
 
-        是否为容灾实例。
+        **参数解释**：  是否为容灾实例。 **取值范围**： - true：是容灾实例。 - false：不是容灾实例。
 
         :param dr_enable: The dr_enable of this ShowInstanceResp.
         :type dr_enable: bool

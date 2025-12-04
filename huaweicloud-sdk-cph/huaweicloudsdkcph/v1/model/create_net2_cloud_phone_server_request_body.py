@@ -59,7 +59,7 @@ class CreateNet2CloudPhoneServerRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param server_name: 云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
+        :param server_name: 云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc,ctc)会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
         :type server_name: str
         :param server_model_name: 云手机服务器规格，不超过64个字节。
         :type server_model_name: str
@@ -67,7 +67,7 @@ class CreateNet2CloudPhoneServerRequestBody:
         :type phone_model_name: str
         :param image_id: 云手机镜像ID，不超过32个字节。
         :type image_id: str
-        :param count: [创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)的云手机服务器个数，最多可[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)10台。
+        :param count: [创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc,ctc)的云手机服务器个数，最多可[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc,ctc)10台。
         :type count: int
         :param keypair_name: 密钥对名称，不超过64个字节，用于云手机ADB登录。
         :type keypair_name: str
@@ -89,7 +89,7 @@ class CreateNet2CloudPhoneServerRequestBody:
         :type server_share_data_volume: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyServerShareDataVolume`
         :param band_width: 
         :type band_width: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyBandWidth`
-        :param availability_zone: 待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
+        :param availability_zone: 待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
         :type availability_zone: str
         :param _property: 云手机属性列表，为Json格式字符串。只可以预置有权限修改的属性。字符串长度[1,8192]。
         :type _property: str
@@ -145,7 +145,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def server_name(self):
         r"""Gets the server_name of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
+        云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc,ctc)会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
 
         :return: The server_name of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: str
@@ -156,7 +156,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def server_name(self, server_name):
         r"""Sets the server_name of this CreateNet2CloudPhoneServerRequestBody.
 
-        云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
+        云手机服务器名称，  不超过60个字符，只支持英文字母、数字、汉字、下划线和中划线。  批量[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc,ctc)会在服务器名称后自动添加序号，比如设置此参数为server-1，那么创建的云手机服务器名称会自动按序增加数字后缀，比如为server-1-0001。
 
         :param server_name: The server_name of this CreateNet2CloudPhoneServerRequestBody.
         :type server_name: str
@@ -233,7 +233,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def count(self):
         r"""Gets the count of this CreateNet2CloudPhoneServerRequestBody.
 
-        [创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)的云手机服务器个数，最多可[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)10台。
+        [创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc,ctc)的云手机服务器个数，最多可[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc,ctc)10台。
 
         :return: The count of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: int
@@ -244,7 +244,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def count(self, count):
         r"""Sets the count of this CreateNet2CloudPhoneServerRequestBody.
 
-        [创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)的云手机服务器个数，最多可[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc)10台。
+        [创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc,ctc)的云手机服务器个数，最多可[创建](tag:fcs)[购买](tag:hws,hws_hk,cmcc,ctc)10台。
 
         :param count: The count of this CreateNet2CloudPhoneServerRequestBody.
         :type count: int
@@ -455,7 +455,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateNet2CloudPhoneServerRequestBody.
 
-        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
+        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
 
         :return: The availability_zone of this CreateNet2CloudPhoneServerRequestBody.
         :rtype: str
@@ -466,7 +466,7 @@ class CreateNet2CloudPhoneServerRequestBody:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateNet2CloudPhoneServerRequestBody.
 
-        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc)
+        待创建云服务器所在的可用区，需要指定可用区（AZ）的名称。[如上海一可用区1为cn-east-3a。](tag:hws,hws_hk,cmcc,ctc)
 
         :param availability_zone: The availability_zone of this CreateNet2CloudPhoneServerRequestBody.
         :type availability_zone: str

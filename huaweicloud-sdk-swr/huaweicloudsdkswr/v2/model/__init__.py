@@ -13,6 +13,8 @@ from huaweicloudsdkswr.v2.model.audit_log import AuditLog
 from huaweicloudsdkswr.v2.model.auth_info import AuthInfo
 from huaweicloudsdkswr.v2.model.auth_token import AuthToken
 from huaweicloudsdkswr.v2.model.build_history import BuildHistory
+from huaweicloudsdkswr.v2.model.cve_allowlist import CVEAllowlist
+from huaweicloudsdkswr.v2.model.cve_allowlist_item import CVEAllowlistItem
 from huaweicloudsdkswr.v2.model.create_authorization_token_request import CreateAuthorizationTokenRequest
 from huaweicloudsdkswr.v2.model.create_authorization_token_response import CreateAuthorizationTokenResponse
 from huaweicloudsdkswr.v2.model.create_endpoint_policy_request_body import CreateEndpointPolicyRequestBody
@@ -181,6 +183,8 @@ from huaweicloudsdkswr.v2.model.list_instance_accessories_request import ListIns
 from huaweicloudsdkswr.v2.model.list_instance_accessories_response import ListInstanceAccessoriesResponse
 from huaweicloudsdkswr.v2.model.list_instance_all_artifacts_request import ListInstanceAllArtifactsRequest
 from huaweicloudsdkswr.v2.model.list_instance_all_artifacts_response import ListInstanceAllArtifactsResponse
+from huaweicloudsdkswr.v2.model.list_instance_artifact_vulnerabilities_request import ListInstanceArtifactVulnerabilitiesRequest
+from huaweicloudsdkswr.v2.model.list_instance_artifact_vulnerabilities_response import ListInstanceArtifactVulnerabilitiesResponse
 from huaweicloudsdkswr.v2.model.list_instance_artifacts_request import ListInstanceArtifactsRequest
 from huaweicloudsdkswr.v2.model.list_instance_artifacts_response import ListInstanceArtifactsResponse
 from huaweicloudsdkswr.v2.model.list_instance_internal_endpoints_request import ListInstanceInternalEndpointsRequest
@@ -270,6 +274,7 @@ from huaweicloudsdkswr.v2.model.list_triggers_details_request import ListTrigger
 from huaweicloudsdkswr.v2.model.list_triggers_details_response import ListTriggersDetailsResponse
 from huaweicloudsdkswr.v2.model.namespace import Namespace
 from huaweicloudsdkswr.v2.model.namespace_metadata import NamespaceMetadata
+from huaweicloudsdkswr.v2.model.native_report_summary import NativeReportSummary
 from huaweicloudsdkswr.v2.model.project_tag import ProjectTag
 from huaweicloudsdkswr.v2.model.registry import Registry
 from huaweicloudsdkswr.v2.model.replication_policy import ReplicationPolicy
@@ -287,6 +292,7 @@ from huaweicloudsdkswr.v2.model.retention_rule_response_body import RetentionRul
 from huaweicloudsdkswr.v2.model.retention_selector import RetentionSelector
 from huaweicloudsdkswr.v2.model.rule import Rule
 from huaweicloudsdkswr.v2.model.rule_selector import RuleSelector
+from huaweicloudsdkswr.v2.model.scanner import Scanner
 from huaweicloudsdkswr.v2.model.scope_rule import ScopeRule
 from huaweicloudsdkswr.v2.model.show_access_domain_request import ShowAccessDomainRequest
 from huaweicloudsdkswr.v2.model.show_access_domain_response import ShowAccessDomainResponse
@@ -358,6 +364,8 @@ from huaweicloudsdkswr.v2.model.sign_rule_selector import SignRuleSelector
 from huaweicloudsdkswr.v2.model.sign_scope_rule import SignScopeRule
 from huaweicloudsdkswr.v2.model.signature_execution_sub_task import SignatureExecutionSubTask
 from huaweicloudsdkswr.v2.model.signature_execution_task import SignatureExecutionTask
+from huaweicloudsdkswr.v2.model.start_manual_scanning_request import StartManualScanningRequest
+from huaweicloudsdkswr.v2.model.start_manual_scanning_response import StartManualScanningResponse
 from huaweicloudsdkswr.v2.model.stop_instance_replication_policy_execution_request import StopInstanceReplicationPolicyExecutionRequest
 from huaweicloudsdkswr.v2.model.stop_instance_replication_policy_execution_response import StopInstanceReplicationPolicyExecutionResponse
 from huaweicloudsdkswr.v2.model.subtask import Subtask
@@ -373,6 +381,7 @@ from huaweicloudsdkswr.v2.model.trigger import Trigger
 from huaweicloudsdkswr.v2.model.trigger_config import TriggerConfig
 from huaweicloudsdkswr.v2.model.trigger_histories import TriggerHistories
 from huaweicloudsdkswr.v2.model.trigger_setting import TriggerSetting
+from huaweicloudsdkswr.v2.model.update_cve_allowlist_request import UpdateCVEAllowlistRequest
 from huaweicloudsdkswr.v2.model.update_domain_name_request import UpdateDomainNameRequest
 from huaweicloudsdkswr.v2.model.update_domain_name_request_body import UpdateDomainNameRequestBody
 from huaweicloudsdkswr.v2.model.update_domain_name_response import UpdateDomainNameResponse
@@ -427,4 +436,8 @@ from huaweicloudsdkswr.v2.model.update_webhook_policy_request_body import Update
 from huaweicloudsdkswr.v2.model.update_white_list_request_body import UpdateWhiteListRequestBody
 from huaweicloudsdkswr.v2.model.user_auth import UserAuth
 from huaweicloudsdkswr.v2.model.version_detail import VersionDetail
+from huaweicloudsdkswr.v2.model.vulnerability import Vulnerability
+from huaweicloudsdkswr.v2.model.vulnerability_preferred_cvss import VulnerabilityPreferredCvss
+from huaweicloudsdkswr.v2.model.vulnerability_reports import VulnerabilityReports
+from huaweicloudsdkswr.v2.model.vulnerability_summary import VulnerabilitySummary
 from huaweicloudsdkswr.v2.model.webhook_policy_detail import WebhookPolicyDetail

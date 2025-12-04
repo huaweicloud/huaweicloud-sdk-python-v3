@@ -21,7 +21,7 @@ class TriggerCondition:
         'metric_unit': 'str',
         'metric_labels': 'list[str]',
         'promql': 'str',
-        'promql_expr': 'list[str]',
+        'promql_expr': 'str',
         'trigger_times': 'int',
         'trigger_interval': 'str',
         'trigger_type': 'str',
@@ -84,7 +84,7 @@ class TriggerCondition:
         :param promql: Prometheus语句。
         :type promql: str
         :param promql_expr: Prometheus语句模板。
-        :type promql_expr: list[str]
+        :type promql_expr: str
         :param trigger_times: 连续周期个数。
         :type trigger_times: int
         :param trigger_interval: 检查频率周期。 - 当trigger_type 为“HOURLY”时，填“” - 当trigger_type为“DAILY”时，格式为：“小时” 例如 每天凌晨三点\&quot;03:00\&quot; - 当trigger_type为“WEEKLY”时，格式为：“星期 小时”例如每周一凌晨三点 “1 03:00” - 当trigger_type为“CRON”时，格式为 标准CRON表达式 - 当trigger_type为“FIXED_RATE”时，秒的取值为15s，30s，分钟为 1~59，小时为 1~24。例如：“15s”，“30s”，“1min”，“1h”
@@ -325,7 +325,7 @@ class TriggerCondition:
         Prometheus语句模板。
 
         :return: The promql_expr of this TriggerCondition.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._promql_expr
 
@@ -336,7 +336,7 @@ class TriggerCondition:
         Prometheus语句模板。
 
         :param promql_expr: The promql_expr of this TriggerCondition.
-        :type promql_expr: list[str]
+        :type promql_expr: str
         """
         self._promql_expr = promql_expr
 

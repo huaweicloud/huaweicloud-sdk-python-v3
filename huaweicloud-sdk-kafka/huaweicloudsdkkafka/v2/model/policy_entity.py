@@ -35,7 +35,7 @@ class PolicyEntity:
         :type owner: bool
         :param user_name: 用户名。
         :type user_name: str
-        :param access_policy: 权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
+        :param access_policy: 权限类型。 - all：拥有发布、订阅权限。 - pub：拥有发布权限。 - sub：拥有订阅权限。
         :type access_policy: str
         """
         
@@ -101,7 +101,7 @@ class PolicyEntity:
     def access_policy(self):
         r"""Gets the access_policy of this PolicyEntity.
 
-        权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
+        权限类型。 - all：拥有发布、订阅权限。 - pub：拥有发布权限。 - sub：拥有订阅权限。
 
         :return: The access_policy of this PolicyEntity.
         :rtype: str
@@ -112,7 +112,7 @@ class PolicyEntity:
     def access_policy(self, access_policy):
         r"""Sets the access_policy of this PolicyEntity.
 
-        权限类型。 - all：拥有发布、订阅权限; - pub：拥有发布权限; - sub：拥有订阅权限。
+        权限类型。 - all：拥有发布、订阅权限。 - pub：拥有发布权限。 - sub：拥有订阅权限。
 
         :param access_policy: The access_policy of this PolicyEntity.
         :type access_policy: str

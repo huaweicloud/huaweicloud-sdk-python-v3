@@ -31,7 +31,7 @@ class CreatePunishmentRuleRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param category: 攻击惩罚类别
+        :param category: **参数解释：** 攻击惩罚类别 **约束限制：** 不涉及 **取值范围：**  - long_ip_block  - long_cookie_block  - long_params_block  - short_ip_block  - short_cookie_block  - short_params_block  **默认取值：** 不涉及
         :type category: str
         :param block_time: 拦截时间，如果选择前缀为long的攻击惩罚类别，则block_time时长范围设置为301-1800;选择前缀为short的攻击惩罚类别，则block_time时长范围为0-300之间
         :type block_time: int
@@ -55,7 +55,7 @@ class CreatePunishmentRuleRequestBody:
     def category(self):
         r"""Gets the category of this CreatePunishmentRuleRequestBody.
 
-        攻击惩罚类别
+        **参数解释：** 攻击惩罚类别 **约束限制：** 不涉及 **取值范围：**  - long_ip_block  - long_cookie_block  - long_params_block  - short_ip_block  - short_cookie_block  - short_params_block  **默认取值：** 不涉及
 
         :return: The category of this CreatePunishmentRuleRequestBody.
         :rtype: str
@@ -66,7 +66,7 @@ class CreatePunishmentRuleRequestBody:
     def category(self, category):
         r"""Sets the category of this CreatePunishmentRuleRequestBody.
 
-        攻击惩罚类别
+        **参数解释：** 攻击惩罚类别 **约束限制：** 不涉及 **取值范围：**  - long_ip_block  - long_cookie_block  - long_params_block  - short_ip_block  - short_cookie_block  - short_params_block  **默认取值：** 不涉及
 
         :param category: The category of this CreatePunishmentRuleRequestBody.
         :type category: str

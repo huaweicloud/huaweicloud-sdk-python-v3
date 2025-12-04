@@ -25,7 +25,10 @@ class ShowInstanceMessagesRequest:
         'download': 'bool',
         'message_offset': 'str',
         'partition': 'str',
-        'keyword': 'str'
+        'keyword': 'str',
+        'key': 'str',
+        'include': 'str',
+        'exclude': 'str'
     }
 
     attribute_map = {
@@ -39,36 +42,45 @@ class ShowInstanceMessagesRequest:
         'download': 'download',
         'message_offset': 'message_offset',
         'partition': 'partition',
-        'keyword': 'keyword'
+        'keyword': 'keyword',
+        'key': 'key',
+        'include': 'include',
+        'exclude': 'exclude'
     }
 
-    def __init__(self, instance_id=None, topic=None, asc=None, start_time=None, end_time=None, limit=None, offset=None, download=None, message_offset=None, partition=None, keyword=None):
+    def __init__(self, instance_id=None, topic=None, asc=None, start_time=None, end_time=None, limit=None, offset=None, download=None, message_offset=None, partition=None, keyword=None, key=None, include=None, exclude=None):
         r"""ShowInstanceMessagesRequest
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type instance_id: str
-        :param topic: Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
+        :param topic: **参数解释**： Topic名称。 **约束限制**： Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic: str
-        :param asc: 是否按照时间排序。
+        :param asc: **参数解释**： 是否按照时间排序。 **约束限制**： 不涉及。 **取值范围**： - true：按照时间排序。 - false：不按照时间排序。 **默认取值**： 不涉及。
         :type asc: bool
-        :param start_time: 开始时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
+        :param start_time: **参数解释**： 开始时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type start_time: str
-        :param end_time: 结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
+        :param end_time: **参数解释**： 结束时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type end_time: str
-        :param limit: 每一页显示的message数量。
+        :param limit: **参数解释**： 每一页显示的消息数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type limit: str
-        :param offset: 页数。
+        :param offset: **参数解释**： 页数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type offset: str
-        :param download: 是否下载。
+        :param download: **参数解释**： 是否下载消息到本地。 **约束限制**： 不涉及。 **取值范围**： - true：下载。 - false：不下载。 **默认取值**： 不涉及。
         :type download: bool
-        :param message_offset: 消息偏移量。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
+        :param message_offset: **参数解释**： 消息偏移量。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type message_offset: str
-        :param partition: 分区。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
+        :param partition: **参数解释**： 分区。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type partition: str
-        :param keyword: 关键词。 取值范围为0~50。
+        :param keyword: **参数解释**： 设置查询消息的关键词。 **约束限制**： 不涉及。 **取值范围**： 0~50字符。 **默认取值**： 不涉及。
         :type keyword: str
+        :param key: **参数解释**： 设置消息的KEY，查询结果为包含KEY的所有消息。 **约束限制**： 由于查询资源和性能限制，最大搜索10000条消息且所有消息总大小不超过200MB，最多返回包含KEY的前10条消息。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type key: str
+        :param include: **参数解释**： 设置消息正文中包含的关键词，查询结果为包含此关键词的消息。 **约束限制**： 多个关键字用%2C隔开，%2C是“,”的URL编码形式。 **取值范围**： include与exclude的关键词总数不得超过20个。 **默认取值**： 不涉及。
+        :type include: str
+        :param exclude: **参数解释**： 设置消息正文中需要排除的关键词，查询结果为不包含此关键词的消息。 **约束限制**： 多个关键字用%2C隔开，%2C是“,”的URL编码形式。 **取值范围**： include与exclude的关键词总数不得超过20个。 **默认取值**： 不涉及。
+        :type exclude: str
         """
         
         
@@ -84,6 +96,9 @@ class ShowInstanceMessagesRequest:
         self._message_offset = None
         self._partition = None
         self._keyword = None
+        self._key = None
+        self._include = None
+        self._exclude = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -106,12 +121,18 @@ class ShowInstanceMessagesRequest:
             self.partition = partition
         if keyword is not None:
             self.keyword = keyword
+        if key is not None:
+            self.key = key
+        if include is not None:
+            self.include = include
+        if exclude is not None:
+            self.exclude = exclude
 
     @property
     def instance_id(self):
         r"""Gets the instance_id of this ShowInstanceMessagesRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The instance_id of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -122,7 +143,7 @@ class ShowInstanceMessagesRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowInstanceMessagesRequest.
 
-        实例ID。
+        **参数解释**： 实例ID。获取方法如下：调用“查询所有实例列表”接口，从响应体中获取实例ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param instance_id: The instance_id of this ShowInstanceMessagesRequest.
         :type instance_id: str
@@ -133,7 +154,7 @@ class ShowInstanceMessagesRequest:
     def topic(self):
         r"""Gets the topic of this ShowInstanceMessagesRequest.
 
-        Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
+        **参数解释**： Topic名称。 **约束限制**： Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -144,7 +165,7 @@ class ShowInstanceMessagesRequest:
     def topic(self, topic):
         r"""Sets the topic of this ShowInstanceMessagesRequest.
 
-        Topic名称。  Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。
+        **参数解释**： Topic名称。 **约束限制**： Topic名称必须以字母开头且只支持大小写字母、中横线、下划线以及数字。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic: The topic of this ShowInstanceMessagesRequest.
         :type topic: str
@@ -155,7 +176,7 @@ class ShowInstanceMessagesRequest:
     def asc(self):
         r"""Gets the asc of this ShowInstanceMessagesRequest.
 
-        是否按照时间排序。
+        **参数解释**： 是否按照时间排序。 **约束限制**： 不涉及。 **取值范围**： - true：按照时间排序。 - false：不按照时间排序。 **默认取值**： 不涉及。
 
         :return: The asc of this ShowInstanceMessagesRequest.
         :rtype: bool
@@ -166,7 +187,7 @@ class ShowInstanceMessagesRequest:
     def asc(self, asc):
         r"""Sets the asc of this ShowInstanceMessagesRequest.
 
-        是否按照时间排序。
+        **参数解释**： 是否按照时间排序。 **约束限制**： 不涉及。 **取值范围**： - true：按照时间排序。 - false：不按照时间排序。 **默认取值**： 不涉及。
 
         :param asc: The asc of this ShowInstanceMessagesRequest.
         :type asc: bool
@@ -177,7 +198,7 @@ class ShowInstanceMessagesRequest:
     def start_time(self):
         r"""Gets the start_time of this ShowInstanceMessagesRequest.
 
-        开始时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
+        **参数解释**： 开始时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The start_time of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -188,7 +209,7 @@ class ShowInstanceMessagesRequest:
     def start_time(self, start_time):
         r"""Sets the start_time of this ShowInstanceMessagesRequest.
 
-        开始时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
+        **参数解释**： 开始时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param start_time: The start_time of this ShowInstanceMessagesRequest.
         :type start_time: str
@@ -199,7 +220,7 @@ class ShowInstanceMessagesRequest:
     def end_time(self):
         r"""Gets the end_time of this ShowInstanceMessagesRequest.
 
-        结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
+        **参数解释**： 结束时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The end_time of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -210,7 +231,7 @@ class ShowInstanceMessagesRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ShowInstanceMessagesRequest.
 
-        结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
+        **参数解释**： 结束时间。  Unix毫秒时间戳。  **约束限制**： 查询消息偏移量时，为必选参数。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param end_time: The end_time of this ShowInstanceMessagesRequest.
         :type end_time: str
@@ -221,7 +242,7 @@ class ShowInstanceMessagesRequest:
     def limit(self):
         r"""Gets the limit of this ShowInstanceMessagesRequest.
 
-        每一页显示的message数量。
+        **参数解释**： 每一页显示的消息数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The limit of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -232,7 +253,7 @@ class ShowInstanceMessagesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowInstanceMessagesRequest.
 
-        每一页显示的message数量。
+        **参数解释**： 每一页显示的消息数量。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param limit: The limit of this ShowInstanceMessagesRequest.
         :type limit: str
@@ -243,7 +264,7 @@ class ShowInstanceMessagesRequest:
     def offset(self):
         r"""Gets the offset of this ShowInstanceMessagesRequest.
 
-        页数。
+        **参数解释**： 页数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The offset of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -254,7 +275,7 @@ class ShowInstanceMessagesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowInstanceMessagesRequest.
 
-        页数。
+        **参数解释**： 页数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param offset: The offset of this ShowInstanceMessagesRequest.
         :type offset: str
@@ -265,7 +286,7 @@ class ShowInstanceMessagesRequest:
     def download(self):
         r"""Gets the download of this ShowInstanceMessagesRequest.
 
-        是否下载。
+        **参数解释**： 是否下载消息到本地。 **约束限制**： 不涉及。 **取值范围**： - true：下载。 - false：不下载。 **默认取值**： 不涉及。
 
         :return: The download of this ShowInstanceMessagesRequest.
         :rtype: bool
@@ -276,7 +297,7 @@ class ShowInstanceMessagesRequest:
     def download(self, download):
         r"""Sets the download of this ShowInstanceMessagesRequest.
 
-        是否下载。
+        **参数解释**： 是否下载消息到本地。 **约束限制**： 不涉及。 **取值范围**： - true：下载。 - false：不下载。 **默认取值**： 不涉及。
 
         :param download: The download of this ShowInstanceMessagesRequest.
         :type download: bool
@@ -287,7 +308,7 @@ class ShowInstanceMessagesRequest:
     def message_offset(self):
         r"""Gets the message_offset of this ShowInstanceMessagesRequest.
 
-        消息偏移量。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
+        **参数解释**： 消息偏移量。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The message_offset of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -298,7 +319,7 @@ class ShowInstanceMessagesRequest:
     def message_offset(self, message_offset):
         r"""Sets the message_offset of this ShowInstanceMessagesRequest.
 
-        消息偏移量。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
+        **参数解释**： 消息偏移量。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param message_offset: The message_offset of this ShowInstanceMessagesRequest.
         :type message_offset: str
@@ -309,7 +330,7 @@ class ShowInstanceMessagesRequest:
     def partition(self):
         r"""Gets the partition of this ShowInstanceMessagesRequest.
 
-        分区。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
+        **参数解释**： 分区。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The partition of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -320,7 +341,7 @@ class ShowInstanceMessagesRequest:
     def partition(self, partition):
         r"""Sets the partition of this ShowInstanceMessagesRequest.
 
-        分区。  **查询消息内容时，为必选参数。**  若start_time、end_time参数不为空，该参数无效。
+        **参数解释**： 分区。 **约束限制**： 查询消息内容时，为必选参数。  若start_time、end_time参数不为空，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param partition: The partition of this ShowInstanceMessagesRequest.
         :type partition: str
@@ -331,7 +352,7 @@ class ShowInstanceMessagesRequest:
     def keyword(self):
         r"""Gets the keyword of this ShowInstanceMessagesRequest.
 
-        关键词。 取值范围为0~50。
+        **参数解释**： 设置查询消息的关键词。 **约束限制**： 不涉及。 **取值范围**： 0~50字符。 **默认取值**： 不涉及。
 
         :return: The keyword of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -342,12 +363,78 @@ class ShowInstanceMessagesRequest:
     def keyword(self, keyword):
         r"""Sets the keyword of this ShowInstanceMessagesRequest.
 
-        关键词。 取值范围为0~50。
+        **参数解释**： 设置查询消息的关键词。 **约束限制**： 不涉及。 **取值范围**： 0~50字符。 **默认取值**： 不涉及。
 
         :param keyword: The keyword of this ShowInstanceMessagesRequest.
         :type keyword: str
         """
         self._keyword = keyword
+
+    @property
+    def key(self):
+        r"""Gets the key of this ShowInstanceMessagesRequest.
+
+        **参数解释**： 设置消息的KEY，查询结果为包含KEY的所有消息。 **约束限制**： 由于查询资源和性能限制，最大搜索10000条消息且所有消息总大小不超过200MB，最多返回包含KEY的前10条消息。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The key of this ShowInstanceMessagesRequest.
+        :rtype: str
+        """
+        return self._key
+
+    @key.setter
+    def key(self, key):
+        r"""Sets the key of this ShowInstanceMessagesRequest.
+
+        **参数解释**： 设置消息的KEY，查询结果为包含KEY的所有消息。 **约束限制**： 由于查询资源和性能限制，最大搜索10000条消息且所有消息总大小不超过200MB，最多返回包含KEY的前10条消息。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param key: The key of this ShowInstanceMessagesRequest.
+        :type key: str
+        """
+        self._key = key
+
+    @property
+    def include(self):
+        r"""Gets the include of this ShowInstanceMessagesRequest.
+
+        **参数解释**： 设置消息正文中包含的关键词，查询结果为包含此关键词的消息。 **约束限制**： 多个关键字用%2C隔开，%2C是“,”的URL编码形式。 **取值范围**： include与exclude的关键词总数不得超过20个。 **默认取值**： 不涉及。
+
+        :return: The include of this ShowInstanceMessagesRequest.
+        :rtype: str
+        """
+        return self._include
+
+    @include.setter
+    def include(self, include):
+        r"""Sets the include of this ShowInstanceMessagesRequest.
+
+        **参数解释**： 设置消息正文中包含的关键词，查询结果为包含此关键词的消息。 **约束限制**： 多个关键字用%2C隔开，%2C是“,”的URL编码形式。 **取值范围**： include与exclude的关键词总数不得超过20个。 **默认取值**： 不涉及。
+
+        :param include: The include of this ShowInstanceMessagesRequest.
+        :type include: str
+        """
+        self._include = include
+
+    @property
+    def exclude(self):
+        r"""Gets the exclude of this ShowInstanceMessagesRequest.
+
+        **参数解释**： 设置消息正文中需要排除的关键词，查询结果为不包含此关键词的消息。 **约束限制**： 多个关键字用%2C隔开，%2C是“,”的URL编码形式。 **取值范围**： include与exclude的关键词总数不得超过20个。 **默认取值**： 不涉及。
+
+        :return: The exclude of this ShowInstanceMessagesRequest.
+        :rtype: str
+        """
+        return self._exclude
+
+    @exclude.setter
+    def exclude(self, exclude):
+        r"""Sets the exclude of this ShowInstanceMessagesRequest.
+
+        **参数解释**： 设置消息正文中需要排除的关键词，查询结果为不包含此关键词的消息。 **约束限制**： 多个关键字用%2C隔开，%2C是“,”的URL编码形式。 **取值范围**： include与exclude的关键词总数不得超过20个。 **默认取值**： 不涉及。
+
+        :param exclude: The exclude of this ShowInstanceMessagesRequest.
+        :type exclude: str
+        """
+        self._exclude = exclude
 
     def to_dict(self):
         result = {}

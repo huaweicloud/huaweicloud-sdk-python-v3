@@ -39,9 +39,9 @@ class WafServer:
 
         The model defined in huaweicloud sdk
 
-        :param front_protocol: 客户端请求访问防护域名源站服务器的协议
+        :param front_protocol: **参数解释：** 客户端请求访问防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
         :type front_protocol: str
-        :param back_protocol: WAF转发客户端请求到防护域名源站服务器的协议
+        :param back_protocol: **参数解释：** WAF转发客户端请求到防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
         :type back_protocol: str
         :param weight: 源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
         :type weight: int
@@ -49,7 +49,7 @@ class WafServer:
         :type address: str
         :param port: WAF转发客户端请求到源站服务的业务端口
         :type port: int
-        :param type: 源站地址为ipv4或ipv6
+        :param type: **参数解释：** 源站地址类型，为ipv4或ipv6 **约束限制：** 不涉及 **取值范围：** - ipv4  - ipv6  **默认取值：** 不涉及
         :type type: str
         :param vpc_id: VPC id,通过以下步骤获取VPC id：   - 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台-&gt;单击系统管理-&gt;独享引擎-&gt;VPC\\子网   - 2.登录虚拟私有云 VPC控制台-&gt;虚拟私有云-&gt;单击虚拟私有云的名称-&gt;基本信息的ID
         :type vpc_id: str
@@ -85,7 +85,7 @@ class WafServer:
     def front_protocol(self):
         r"""Gets the front_protocol of this WafServer.
 
-        客户端请求访问防护域名源站服务器的协议
+        **参数解释：** 客户端请求访问防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
 
         :return: The front_protocol of this WafServer.
         :rtype: str
@@ -96,7 +96,7 @@ class WafServer:
     def front_protocol(self, front_protocol):
         r"""Sets the front_protocol of this WafServer.
 
-        客户端请求访问防护域名源站服务器的协议
+        **参数解释：** 客户端请求访问防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
 
         :param front_protocol: The front_protocol of this WafServer.
         :type front_protocol: str
@@ -107,7 +107,7 @@ class WafServer:
     def back_protocol(self):
         r"""Gets the back_protocol of this WafServer.
 
-        WAF转发客户端请求到防护域名源站服务器的协议
+        **参数解释：** WAF转发客户端请求到防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
 
         :return: The back_protocol of this WafServer.
         :rtype: str
@@ -118,7 +118,7 @@ class WafServer:
     def back_protocol(self, back_protocol):
         r"""Sets the back_protocol of this WafServer.
 
-        WAF转发客户端请求到防护域名源站服务器的协议
+        **参数解释：** WAF转发客户端请求到防护域名源站服务器的协议 **约束限制：** 不涉及 **取值范围：**  - HTTP: HTTP协议  - HTTPS: HTTPS协议  **默认取值：** 不涉及
 
         :param back_protocol: The back_protocol of this WafServer.
         :type back_protocol: str
@@ -195,7 +195,7 @@ class WafServer:
     def type(self):
         r"""Gets the type of this WafServer.
 
-        源站地址为ipv4或ipv6
+        **参数解释：** 源站地址类型，为ipv4或ipv6 **约束限制：** 不涉及 **取值范围：** - ipv4  - ipv6  **默认取值：** 不涉及
 
         :return: The type of this WafServer.
         :rtype: str
@@ -206,7 +206,7 @@ class WafServer:
     def type(self, type):
         r"""Sets the type of this WafServer.
 
-        源站地址为ipv4或ipv6
+        **参数解释：** 源站地址类型，为ipv4或ipv6 **约束限制：** 不涉及 **取值范围：** - ipv4  - ipv6  **默认取值：** 不涉及
 
         :param type: The type of this WafServer.
         :type type: str

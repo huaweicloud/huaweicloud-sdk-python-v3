@@ -35,15 +35,15 @@ class BssParam:
 
         The model defined in huaweicloud sdk
 
-        :param is_auto_renew: 是否自动续订。  取值范围：   - true: 自动续订。   - false: 不自动续订。  默认不自动续订。
+        :param is_auto_renew: **参数解释**： 是否自动续订。 **约束限制**： 不涉及。 **取值范围**： - true：自动续订。 - false：不自动续订。 **默认取值**： false
         :type is_auto_renew: bool
-        :param charging_mode: 计费模式。  功能说明：付费方式。  取值范围：   - prePaid：预付费，即包年包月；   - postPaid：后付费，即按需付费；  默认为postPaid。
+        :param charging_mode: **参数解释**： 计费模式。 **约束限制**： 不涉及。 **取值范围**： - prePaid：预付费，即包年包月。 - postPaid：后付费，即按需付费。 **默认取值**： postPaid。
         :type charging_mode: str
-        :param is_auto_pay: 下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  取值范围：   - true：是（自动支付）   - false：否（需要客户手动支付）  默认为手动支付。
+        :param is_auto_pay: **参数解释**： 下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。 **约束限制**： 不涉及。 **取值范围**： - true：是（自动支付） - false：否（需要客户手动支付） **默认取值**： false
         :type is_auto_pay: bool
-        :param period_type: 订购周期类型。  取值范围：   - month：月   - year：年  **chargingMode为prePaid时生效且为必选值。**
+        :param period_type: **参数解释**： 订购周期类型。 **约束限制**： chargingMode为prePaid时生效且为必选值。 **取值范围**： - month：月。 - year：年。 **默认取值**： 不涉及。
         :type period_type: str
-        :param period_num: 订购周期数。  取值范围：   - periodType&#x3D;month（周期类型为月）时，取值为[1，9]；  - periodType&#x3D;year（周期类型为年）时，取值为[1，3]；  **chargingMode为prePaid时生效且为必选值。**
+        :param period_num: **参数解释**： 订购周期数。 **约束限制**： chargingMode为prePaid时生效且为必选值。 **取值范围**： - periodType&#x3D;month（周期类型为月）时，取值为[1，9]。 - periodType&#x3D;year（周期类型为年）时，取值为[1，3]。 **默认取值**： 不涉及。
         :type period_num: int
         """
         
@@ -71,7 +71,7 @@ class BssParam:
     def is_auto_renew(self):
         r"""Gets the is_auto_renew of this BssParam.
 
-        是否自动续订。  取值范围：   - true: 自动续订。   - false: 不自动续订。  默认不自动续订。
+        **参数解释**： 是否自动续订。 **约束限制**： 不涉及。 **取值范围**： - true：自动续订。 - false：不自动续订。 **默认取值**： false
 
         :return: The is_auto_renew of this BssParam.
         :rtype: bool
@@ -82,7 +82,7 @@ class BssParam:
     def is_auto_renew(self, is_auto_renew):
         r"""Sets the is_auto_renew of this BssParam.
 
-        是否自动续订。  取值范围：   - true: 自动续订。   - false: 不自动续订。  默认不自动续订。
+        **参数解释**： 是否自动续订。 **约束限制**： 不涉及。 **取值范围**： - true：自动续订。 - false：不自动续订。 **默认取值**： false
 
         :param is_auto_renew: The is_auto_renew of this BssParam.
         :type is_auto_renew: bool
@@ -93,7 +93,7 @@ class BssParam:
     def charging_mode(self):
         r"""Gets the charging_mode of this BssParam.
 
-        计费模式。  功能说明：付费方式。  取值范围：   - prePaid：预付费，即包年包月；   - postPaid：后付费，即按需付费；  默认为postPaid。
+        **参数解释**： 计费模式。 **约束限制**： 不涉及。 **取值范围**： - prePaid：预付费，即包年包月。 - postPaid：后付费，即按需付费。 **默认取值**： postPaid。
 
         :return: The charging_mode of this BssParam.
         :rtype: str
@@ -104,7 +104,7 @@ class BssParam:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this BssParam.
 
-        计费模式。  功能说明：付费方式。  取值范围：   - prePaid：预付费，即包年包月；   - postPaid：后付费，即按需付费；  默认为postPaid。
+        **参数解释**： 计费模式。 **约束限制**： 不涉及。 **取值范围**： - prePaid：预付费，即包年包月。 - postPaid：后付费，即按需付费。 **默认取值**： postPaid。
 
         :param charging_mode: The charging_mode of this BssParam.
         :type charging_mode: str
@@ -115,7 +115,7 @@ class BssParam:
     def is_auto_pay(self):
         r"""Gets the is_auto_pay of this BssParam.
 
-        下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  取值范围：   - true：是（自动支付）   - false：否（需要客户手动支付）  默认为手动支付。
+        **参数解释**： 下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。 **约束限制**： 不涉及。 **取值范围**： - true：是（自动支付） - false：否（需要客户手动支付） **默认取值**： false
 
         :return: The is_auto_pay of this BssParam.
         :rtype: bool
@@ -126,7 +126,7 @@ class BssParam:
     def is_auto_pay(self, is_auto_pay):
         r"""Sets the is_auto_pay of this BssParam.
 
-        下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。  取值范围：   - true：是（自动支付）   - false：否（需要客户手动支付）  默认为手动支付。
+        **参数解释**： 下单订购后，是否自动从客户的账户中支付，而不需要客户手动去进行支付。 **约束限制**： 不涉及。 **取值范围**： - true：是（自动支付） - false：否（需要客户手动支付） **默认取值**： false
 
         :param is_auto_pay: The is_auto_pay of this BssParam.
         :type is_auto_pay: bool
@@ -137,7 +137,7 @@ class BssParam:
     def period_type(self):
         r"""Gets the period_type of this BssParam.
 
-        订购周期类型。  取值范围：   - month：月   - year：年  **chargingMode为prePaid时生效且为必选值。**
+        **参数解释**： 订购周期类型。 **约束限制**： chargingMode为prePaid时生效且为必选值。 **取值范围**： - month：月。 - year：年。 **默认取值**： 不涉及。
 
         :return: The period_type of this BssParam.
         :rtype: str
@@ -148,7 +148,7 @@ class BssParam:
     def period_type(self, period_type):
         r"""Sets the period_type of this BssParam.
 
-        订购周期类型。  取值范围：   - month：月   - year：年  **chargingMode为prePaid时生效且为必选值。**
+        **参数解释**： 订购周期类型。 **约束限制**： chargingMode为prePaid时生效且为必选值。 **取值范围**： - month：月。 - year：年。 **默认取值**： 不涉及。
 
         :param period_type: The period_type of this BssParam.
         :type period_type: str
@@ -159,7 +159,7 @@ class BssParam:
     def period_num(self):
         r"""Gets the period_num of this BssParam.
 
-        订购周期数。  取值范围：   - periodType=month（周期类型为月）时，取值为[1，9]；  - periodType=year（周期类型为年）时，取值为[1，3]；  **chargingMode为prePaid时生效且为必选值。**
+        **参数解释**： 订购周期数。 **约束限制**： chargingMode为prePaid时生效且为必选值。 **取值范围**： - periodType=month（周期类型为月）时，取值为[1，9]。 - periodType=year（周期类型为年）时，取值为[1，3]。 **默认取值**： 不涉及。
 
         :return: The period_num of this BssParam.
         :rtype: int
@@ -170,7 +170,7 @@ class BssParam:
     def period_num(self, period_num):
         r"""Sets the period_num of this BssParam.
 
-        订购周期数。  取值范围：   - periodType=month（周期类型为月）时，取值为[1，9]；  - periodType=year（周期类型为年）时，取值为[1，3]；  **chargingMode为prePaid时生效且为必选值。**
+        **参数解释**： 订购周期数。 **约束限制**： chargingMode为prePaid时生效且为必选值。 **取值范围**： - periodType=month（周期类型为月）时，取值为[1，9]。 - periodType=year（周期类型为年）时，取值为[1，3]。 **默认取值**： 不涉及。
 
         :param period_num: The period_num of this BssParam.
         :type period_num: int

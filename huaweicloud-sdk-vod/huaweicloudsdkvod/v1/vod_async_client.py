@@ -2240,6 +2240,79 @@ class VodAsyncClient(Client):
 
         return http_info
 
+    def list_cdn_statistics_async(self, request):
+        r"""查询CDN统计信息
+
+        查询CDN的统计数据，包括流量、峰值带宽、请求总数、请求命中率、流量命中率。查询存在1小时误差。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCdnStatistics
+        :type request: :class:`huaweicloudsdkvod.v1.ListCdnStatisticsRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListCdnStatisticsResponse`
+        """
+        http_info = self._list_cdn_statistics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_cdn_statistics_async_invoker(self, request):
+        http_info = self._list_cdn_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cdn_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/asset/cdn-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCdnStatisticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'stat_type' in local_var_params:
+            query_params.append(('stat_type', local_var_params['stat_type']))
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
+        if 'interval' in local_var_params:
+            query_params.append(('interval', local_var_params['interval']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_domain_logs_async(self, request):
         r"""查询域名播放日志
 

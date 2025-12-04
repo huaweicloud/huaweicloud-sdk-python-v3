@@ -47,7 +47,7 @@ class ListInstanceConsumerGroupTopicsRequest:
         :type instance_id: str
         :param group: 消费组ID。
         :type group: str
-        :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
+        :param offset: 偏移量，表示从此偏移量开始查询，offset大于等于0。
         :type offset: int
         :param limit: 当次查询返回的最大Topic个数，默认值为10，取值范围为1~50。
         :type limit: int
@@ -155,7 +155,7 @@ class ListInstanceConsumerGroupTopicsRequest:
     def offset(self):
         r"""Gets the offset of this ListInstanceConsumerGroupTopicsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        偏移量，表示从此偏移量开始查询，offset大于等于0。
 
         :return: The offset of this ListInstanceConsumerGroupTopicsRequest.
         :rtype: int
@@ -166,7 +166,7 @@ class ListInstanceConsumerGroupTopicsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListInstanceConsumerGroupTopicsRequest.
 
-        偏移量，表示从此偏移量开始查询， offset大于等于0。
+        偏移量，表示从此偏移量开始查询，offset大于等于0。
 
         :param offset: The offset of this ListInstanceConsumerGroupTopicsRequest.
         :type offset: int

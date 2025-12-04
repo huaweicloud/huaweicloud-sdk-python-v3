@@ -41,21 +41,21 @@ class UpdateInstanceTopicReqTopics:
 
         The model defined in huaweicloud sdk
 
-        :param id: Topic名称，不支持修改。
+        :param id: **参数解释**： Topic名称，不支持修改。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type id: str
-        :param retention_time: 老化时间，单位小时。
+        :param retention_time: **参数解释**： 老化时间，单位小时。 **约束限制**： 不涉及。 **取值范围**： 0-720。 **默认取值**： 不涉及。
         :type retention_time: int
-        :param sync_replication: 是否同步复制。
+        :param sync_replication: **参数解释**： 是否同步复制。 **约束限制**： 不涉及。 **取值范围**： - true：开启同步复制。 - false：不开启同步复制。 **默认取值**： 不涉及。
         :type sync_replication: bool
-        :param sync_message_flush: 是否同步落盘。
+        :param sync_message_flush: **参数解释**： 是否同步落盘。 **约束限制**： 不涉及。 **取值范围**： - true：开启同步落盘。 - false：不开启同步落盘。 **默认取值**： 不涉及。
         :type sync_message_flush: bool
-        :param new_partition_numbers: 分区数。
+        :param new_partition_numbers: **参数解释**： 分区数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type new_partition_numbers: int
-        :param new_partition_brokers: 增加分区时指定broker列表
+        :param new_partition_brokers: **参数解释**： 增加分区时指定broker列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type new_partition_brokers: list[int]
-        :param topic_other_configs: Topic配置
+        :param topic_other_configs: **参数解释**： Topic配置。 **约束限制**： 不涉及。
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopicOtherConfigs`]
-        :param topic_desc: Topic描述
+        :param topic_desc: **参数解释**： Topic描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type topic_desc: str
         """
         
@@ -91,7 +91,7 @@ class UpdateInstanceTopicReqTopics:
     def id(self):
         r"""Gets the id of this UpdateInstanceTopicReqTopics.
 
-        Topic名称，不支持修改。
+        **参数解释**： Topic名称，不支持修改。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The id of this UpdateInstanceTopicReqTopics.
         :rtype: str
@@ -102,7 +102,7 @@ class UpdateInstanceTopicReqTopics:
     def id(self, id):
         r"""Sets the id of this UpdateInstanceTopicReqTopics.
 
-        Topic名称，不支持修改。
+        **参数解释**： Topic名称，不支持修改。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param id: The id of this UpdateInstanceTopicReqTopics.
         :type id: str
@@ -113,7 +113,7 @@ class UpdateInstanceTopicReqTopics:
     def retention_time(self):
         r"""Gets the retention_time of this UpdateInstanceTopicReqTopics.
 
-        老化时间，单位小时。
+        **参数解释**： 老化时间，单位小时。 **约束限制**： 不涉及。 **取值范围**： 0-720。 **默认取值**： 不涉及。
 
         :return: The retention_time of this UpdateInstanceTopicReqTopics.
         :rtype: int
@@ -124,7 +124,7 @@ class UpdateInstanceTopicReqTopics:
     def retention_time(self, retention_time):
         r"""Sets the retention_time of this UpdateInstanceTopicReqTopics.
 
-        老化时间，单位小时。
+        **参数解释**： 老化时间，单位小时。 **约束限制**： 不涉及。 **取值范围**： 0-720。 **默认取值**： 不涉及。
 
         :param retention_time: The retention_time of this UpdateInstanceTopicReqTopics.
         :type retention_time: int
@@ -135,7 +135,7 @@ class UpdateInstanceTopicReqTopics:
     def sync_replication(self):
         r"""Gets the sync_replication of this UpdateInstanceTopicReqTopics.
 
-        是否同步复制。
+        **参数解释**： 是否同步复制。 **约束限制**： 不涉及。 **取值范围**： - true：开启同步复制。 - false：不开启同步复制。 **默认取值**： 不涉及。
 
         :return: The sync_replication of this UpdateInstanceTopicReqTopics.
         :rtype: bool
@@ -146,7 +146,7 @@ class UpdateInstanceTopicReqTopics:
     def sync_replication(self, sync_replication):
         r"""Sets the sync_replication of this UpdateInstanceTopicReqTopics.
 
-        是否同步复制。
+        **参数解释**： 是否同步复制。 **约束限制**： 不涉及。 **取值范围**： - true：开启同步复制。 - false：不开启同步复制。 **默认取值**： 不涉及。
 
         :param sync_replication: The sync_replication of this UpdateInstanceTopicReqTopics.
         :type sync_replication: bool
@@ -157,7 +157,7 @@ class UpdateInstanceTopicReqTopics:
     def sync_message_flush(self):
         r"""Gets the sync_message_flush of this UpdateInstanceTopicReqTopics.
 
-        是否同步落盘。
+        **参数解释**： 是否同步落盘。 **约束限制**： 不涉及。 **取值范围**： - true：开启同步落盘。 - false：不开启同步落盘。 **默认取值**： 不涉及。
 
         :return: The sync_message_flush of this UpdateInstanceTopicReqTopics.
         :rtype: bool
@@ -168,7 +168,7 @@ class UpdateInstanceTopicReqTopics:
     def sync_message_flush(self, sync_message_flush):
         r"""Sets the sync_message_flush of this UpdateInstanceTopicReqTopics.
 
-        是否同步落盘。
+        **参数解释**： 是否同步落盘。 **约束限制**： 不涉及。 **取值范围**： - true：开启同步落盘。 - false：不开启同步落盘。 **默认取值**： 不涉及。
 
         :param sync_message_flush: The sync_message_flush of this UpdateInstanceTopicReqTopics.
         :type sync_message_flush: bool
@@ -179,7 +179,7 @@ class UpdateInstanceTopicReqTopics:
     def new_partition_numbers(self):
         r"""Gets the new_partition_numbers of this UpdateInstanceTopicReqTopics.
 
-        分区数。
+        **参数解释**： 分区数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The new_partition_numbers of this UpdateInstanceTopicReqTopics.
         :rtype: int
@@ -190,7 +190,7 @@ class UpdateInstanceTopicReqTopics:
     def new_partition_numbers(self, new_partition_numbers):
         r"""Sets the new_partition_numbers of this UpdateInstanceTopicReqTopics.
 
-        分区数。
+        **参数解释**： 分区数。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param new_partition_numbers: The new_partition_numbers of this UpdateInstanceTopicReqTopics.
         :type new_partition_numbers: int
@@ -201,7 +201,7 @@ class UpdateInstanceTopicReqTopics:
     def new_partition_brokers(self):
         r"""Gets the new_partition_brokers of this UpdateInstanceTopicReqTopics.
 
-        增加分区时指定broker列表
+        **参数解释**： 增加分区时指定broker列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The new_partition_brokers of this UpdateInstanceTopicReqTopics.
         :rtype: list[int]
@@ -212,7 +212,7 @@ class UpdateInstanceTopicReqTopics:
     def new_partition_brokers(self, new_partition_brokers):
         r"""Sets the new_partition_brokers of this UpdateInstanceTopicReqTopics.
 
-        增加分区时指定broker列表
+        **参数解释**： 增加分区时指定broker列表。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param new_partition_brokers: The new_partition_brokers of this UpdateInstanceTopicReqTopics.
         :type new_partition_brokers: list[int]
@@ -223,7 +223,7 @@ class UpdateInstanceTopicReqTopics:
     def topic_other_configs(self):
         r"""Gets the topic_other_configs of this UpdateInstanceTopicReqTopics.
 
-        Topic配置
+        **参数解释**： Topic配置。 **约束限制**： 不涉及。
 
         :return: The topic_other_configs of this UpdateInstanceTopicReqTopics.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopicOtherConfigs`]
@@ -234,7 +234,7 @@ class UpdateInstanceTopicReqTopics:
     def topic_other_configs(self, topic_other_configs):
         r"""Sets the topic_other_configs of this UpdateInstanceTopicReqTopics.
 
-        Topic配置
+        **参数解释**： Topic配置。 **约束限制**： 不涉及。
 
         :param topic_other_configs: The topic_other_configs of this UpdateInstanceTopicReqTopics.
         :type topic_other_configs: list[:class:`huaweicloudsdkkafka.v2.UpdateInstanceTopicReqTopicOtherConfigs`]
@@ -245,7 +245,7 @@ class UpdateInstanceTopicReqTopics:
     def topic_desc(self):
         r"""Gets the topic_desc of this UpdateInstanceTopicReqTopics.
 
-        Topic描述
+        **参数解释**： Topic描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The topic_desc of this UpdateInstanceTopicReqTopics.
         :rtype: str
@@ -256,7 +256,7 @@ class UpdateInstanceTopicReqTopics:
     def topic_desc(self, topic_desc):
         r"""Sets the topic_desc of this UpdateInstanceTopicReqTopics.
 
-        Topic描述
+        **参数解释**： Topic描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param topic_desc: The topic_desc of this UpdateInstanceTopicReqTopics.
         :type topic_desc: str

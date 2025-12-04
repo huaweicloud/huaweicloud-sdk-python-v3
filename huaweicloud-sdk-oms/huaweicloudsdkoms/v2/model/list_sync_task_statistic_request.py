@@ -35,11 +35,11 @@ class ListSyncTaskStatisticRequest:
 
         :param sync_task_id: 同步任务ID。
         :type sync_task_id: str
-        :param data_type: 统计数据类型： 多类型查询用‘,’分割； REQUEST：接收同步请求对象数 SUCCESS：同步成功对象数 FAILURE：同步失败对象数 SKIP：同步跳过对象数 SIZE：同步成功对象容量(Byte)
+        :param data_type: 统计数据类型： 多类型查询用‘,’分隔； REQUEST：接收同步请求对象数 SUCCESS：同步成功对象数 FAILURE：同步失败对象数 SKIP：同步跳过对象数 SIZE：同步成功对象容量(Byte)
         :type data_type: str
         :param start_time: 查询开始时间
         :type start_time: str
-        :param end_time: 查询开始时间
+        :param end_time: 查询结束时间
         :type end_time: str
         """
         
@@ -82,7 +82,7 @@ class ListSyncTaskStatisticRequest:
     def data_type(self):
         r"""Gets the data_type of this ListSyncTaskStatisticRequest.
 
-        统计数据类型： 多类型查询用‘,’分割； REQUEST：接收同步请求对象数 SUCCESS：同步成功对象数 FAILURE：同步失败对象数 SKIP：同步跳过对象数 SIZE：同步成功对象容量(Byte)
+        统计数据类型： 多类型查询用‘,’分隔； REQUEST：接收同步请求对象数 SUCCESS：同步成功对象数 FAILURE：同步失败对象数 SKIP：同步跳过对象数 SIZE：同步成功对象容量(Byte)
 
         :return: The data_type of this ListSyncTaskStatisticRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class ListSyncTaskStatisticRequest:
     def data_type(self, data_type):
         r"""Sets the data_type of this ListSyncTaskStatisticRequest.
 
-        统计数据类型： 多类型查询用‘,’分割； REQUEST：接收同步请求对象数 SUCCESS：同步成功对象数 FAILURE：同步失败对象数 SKIP：同步跳过对象数 SIZE：同步成功对象容量(Byte)
+        统计数据类型： 多类型查询用‘,’分隔； REQUEST：接收同步请求对象数 SUCCESS：同步成功对象数 FAILURE：同步失败对象数 SKIP：同步跳过对象数 SIZE：同步成功对象容量(Byte)
 
         :param data_type: The data_type of this ListSyncTaskStatisticRequest.
         :type data_type: str
@@ -126,7 +126,7 @@ class ListSyncTaskStatisticRequest:
     def end_time(self):
         r"""Gets the end_time of this ListSyncTaskStatisticRequest.
 
-        查询开始时间
+        查询结束时间
 
         :return: The end_time of this ListSyncTaskStatisticRequest.
         :rtype: str
@@ -137,7 +137,7 @@ class ListSyncTaskStatisticRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListSyncTaskStatisticRequest.
 
-        查询开始时间
+        查询结束时间
 
         :param end_time: The end_time of this ListSyncTaskStatisticRequest.
         :type end_time: str

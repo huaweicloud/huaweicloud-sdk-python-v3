@@ -63,7 +63,7 @@ class UpdatePolicyRequestBody:
         :type hosts: list[str]
         :param bind_host: 与防护策略绑定的防护的域名信息数组，相对于hosts字段，包含更详细的域名信息
         :type bind_host: list[:class:`huaweicloudsdkwaf.v1.BindHost`]
-        :param extend: 扩展字段，用于存放Web基础防护中一些开关配置等信息
+        :param extend: 扩展字段，用于存放Web基础防护中一些开关配置等信息，当修改字段为 shiro_rememberMe_enable,deep_decode,check_all_headers 时，需要额外增加一层extend字段嵌套.示例 key为 extend，value为 {\&quot;shiro_rememberMe_enable\&quot;:true}
         :type extend: dict(str, str)
         """
         
@@ -292,7 +292,7 @@ class UpdatePolicyRequestBody:
     def extend(self):
         r"""Gets the extend of this UpdatePolicyRequestBody.
 
-        扩展字段，用于存放Web基础防护中一些开关配置等信息
+        扩展字段，用于存放Web基础防护中一些开关配置等信息，当修改字段为 shiro_rememberMe_enable,deep_decode,check_all_headers 时，需要额外增加一层extend字段嵌套.示例 key为 extend，value为 {\"shiro_rememberMe_enable\":true}
 
         :return: The extend of this UpdatePolicyRequestBody.
         :rtype: dict(str, str)
@@ -303,7 +303,7 @@ class UpdatePolicyRequestBody:
     def extend(self, extend):
         r"""Sets the extend of this UpdatePolicyRequestBody.
 
-        扩展字段，用于存放Web基础防护中一些开关配置等信息
+        扩展字段，用于存放Web基础防护中一些开关配置等信息，当修改字段为 shiro_rememberMe_enable,deep_decode,check_all_headers 时，需要额外增加一层extend字段嵌套.示例 key为 extend，value为 {\"shiro_rememberMe_enable\":true}
 
         :param extend: The extend of this UpdatePolicyRequestBody.
         :type extend: dict(str, str)

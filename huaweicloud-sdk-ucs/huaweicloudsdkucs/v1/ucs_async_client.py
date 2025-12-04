@@ -1097,7 +1097,7 @@ class UcsAsyncClient(Client):
 
         return http_info
 
-    def disable_clustergroup_policy_async(self, request):
+    def disable_cluster_group_policy_async(self, request):
         r"""舰队关闭策略中心
 
         舰队关闭策略中心
@@ -1105,23 +1105,23 @@ class UcsAsyncClient(Client):
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for DisableClustergroupPolicy
-        :type request: :class:`huaweicloudsdkucs.v1.DisableClustergroupPolicyRequest`
-        :rtype: :class:`huaweicloudsdkucs.v1.DisableClustergroupPolicyResponse`
+        :param request: Request instance for DisableClusterGroupPolicy
+        :type request: :class:`huaweicloudsdkucs.v1.DisableClusterGroupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkucs.v1.DisableClusterGroupPolicyResponse`
         """
-        http_info = self._disable_clustergroup_policy_http_info(request)
+        http_info = self._disable_cluster_group_policy_http_info(request)
         return self._call_api(**http_info)
 
-    def disable_clustergroup_policy_async_invoker(self, request):
-        http_info = self._disable_clustergroup_policy_http_info(request)
+    def disable_cluster_group_policy_async_invoker(self, request):
+        http_info = self._disable_cluster_group_policy_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _disable_clustergroup_policy_http_info(self, request):
+    def _disable_cluster_group_policy_http_info(self, request):
         http_info = {
             "method": "DELETE",
             "resource_path": "/v1/clustergroups/{clustergroupid}/policy",
             "request_type": request.__class__.__name__,
-            "response_type": "DisableClustergroupPolicyResponse"
+            "response_type": "DisableClusterGroupPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1294,7 +1294,7 @@ class UcsAsyncClient(Client):
 
         return http_info
 
-    def enable_clustergroup_policy_async(self, request):
+    def enable_cluster_group_policy_async(self, request):
         r"""舰队启用策略中心
 
         舰队启用策略中心
@@ -1302,23 +1302,23 @@ class UcsAsyncClient(Client):
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for EnableClustergroupPolicy
-        :type request: :class:`huaweicloudsdkucs.v1.EnableClustergroupPolicyRequest`
-        :rtype: :class:`huaweicloudsdkucs.v1.EnableClustergroupPolicyResponse`
+        :param request: Request instance for EnableClusterGroupPolicy
+        :type request: :class:`huaweicloudsdkucs.v1.EnableClusterGroupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkucs.v1.EnableClusterGroupPolicyResponse`
         """
-        http_info = self._enable_clustergroup_policy_http_info(request)
+        http_info = self._enable_cluster_group_policy_http_info(request)
         return self._call_api(**http_info)
 
-    def enable_clustergroup_policy_async_invoker(self, request):
-        http_info = self._enable_clustergroup_policy_http_info(request)
+    def enable_cluster_group_policy_async_invoker(self, request):
+        http_info = self._enable_cluster_group_policy_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _enable_clustergroup_policy_http_info(self, request):
+    def _enable_cluster_group_policy_http_info(self, request):
         http_info = {
             "method": "POST",
             "resource_path": "/v1/clustergroups/{clustergroupid}/policy",
             "request_type": request.__class__.__name__,
-            "response_type": "EnableClustergroupPolicyResponse"
+            "response_type": "EnableClusterGroupPolicyResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3981,9 +3981,9 @@ class UcsAsyncClient(Client):
         return http_info
 
     def create_cluster_policy_instance_async(self, request):
-        r"""创建集群建策略实例
+        r"""创建集群策略实例
 
-        创建集群建策略实例
+        创建集群策略实例
         
         Please refer to HUAWEI cloud API Explorer for details.
 

@@ -17,15 +17,17 @@ class UpdateInstanceNamespaceResponse(SdkResponse):
 
     openapi_types = {
         'namespace_name': 'str',
-        'metadata': 'NamespaceMetadata'
+        'metadata': 'NamespaceMetadata',
+        'cve_allowlist': 'UpdateCVEAllowlistRequest'
     }
 
     attribute_map = {
         'namespace_name': 'namespace_name',
-        'metadata': 'metadata'
+        'metadata': 'metadata',
+        'cve_allowlist': 'cve_allowlist'
     }
 
-    def __init__(self, namespace_name=None, metadata=None):
+    def __init__(self, namespace_name=None, metadata=None, cve_allowlist=None):
         r"""UpdateInstanceNamespaceResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class UpdateInstanceNamespaceResponse(SdkResponse):
         :type namespace_name: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkswr.v2.NamespaceMetadata`
+        :param cve_allowlist: 
+        :type cve_allowlist: :class:`huaweicloudsdkswr.v2.UpdateCVEAllowlistRequest`
         """
         
         super().__init__()
 
         self._namespace_name = None
         self._metadata = None
+        self._cve_allowlist = None
         self.discriminator = None
 
         if namespace_name is not None:
             self.namespace_name = namespace_name
         if metadata is not None:
             self.metadata = metadata
+        if cve_allowlist is not None:
+            self.cve_allowlist = cve_allowlist
 
     @property
     def namespace_name(self):
@@ -86,6 +93,24 @@ class UpdateInstanceNamespaceResponse(SdkResponse):
         :type metadata: :class:`huaweicloudsdkswr.v2.NamespaceMetadata`
         """
         self._metadata = metadata
+
+    @property
+    def cve_allowlist(self):
+        r"""Gets the cve_allowlist of this UpdateInstanceNamespaceResponse.
+
+        :return: The cve_allowlist of this UpdateInstanceNamespaceResponse.
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateCVEAllowlistRequest`
+        """
+        return self._cve_allowlist
+
+    @cve_allowlist.setter
+    def cve_allowlist(self, cve_allowlist):
+        r"""Sets the cve_allowlist of this UpdateInstanceNamespaceResponse.
+
+        :param cve_allowlist: The cve_allowlist of this UpdateInstanceNamespaceResponse.
+        :type cve_allowlist: :class:`huaweicloudsdkswr.v2.UpdateCVEAllowlistRequest`
+        """
+        self._cve_allowlist = cve_allowlist
 
     def to_dict(self):
         import warnings

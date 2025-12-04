@@ -89,7 +89,7 @@ class SmartConnectTaskReqSourceConfig:
         :type provenance_header_enabled: bool
         :param consumer_strategy: 启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅源端类型为Kafka时需要填写）
         :type consumer_strategy: str
-        :param compression_type: 复制消息所使用的压缩算法。（仅源端类型为Kafka时需要填写） - none - gzip - snappy - lz4 - zstd 
+        :param compression_type: **参数解释**： 压缩算法。（仅源端类型为Kafka时会显示） **约束限制**： 不涉及。 **取值范围**： - none - gzip - snappy - lz4 - zstd **默认取值**： 不涉及。
         :type compression_type: str
         :param topics_mapping: Topic映射，用于自定义目标端Topic名称。不能同时设置“重命名Topic”和“Topic映射”。Topic映射请按照“源端Topic:目的端Topic”的格式填写，如涉及多个Topic映射，请用“,”分隔开，例如：topic-sc-1:topic-sc-2,topic-sc-3:topic-sc-4。（仅源端类型为Kafka时需要填写）
         :type topics_mapping: str
@@ -485,7 +485,7 @@ class SmartConnectTaskReqSourceConfig:
     def compression_type(self):
         r"""Gets the compression_type of this SmartConnectTaskReqSourceConfig.
 
-        复制消息所使用的压缩算法。（仅源端类型为Kafka时需要填写） - none - gzip - snappy - lz4 - zstd 
+        **参数解释**： 压缩算法。（仅源端类型为Kafka时会显示） **约束限制**： 不涉及。 **取值范围**： - none - gzip - snappy - lz4 - zstd **默认取值**： 不涉及。
 
         :return: The compression_type of this SmartConnectTaskReqSourceConfig.
         :rtype: str
@@ -496,7 +496,7 @@ class SmartConnectTaskReqSourceConfig:
     def compression_type(self, compression_type):
         r"""Sets the compression_type of this SmartConnectTaskReqSourceConfig.
 
-        复制消息所使用的压缩算法。（仅源端类型为Kafka时需要填写） - none - gzip - snappy - lz4 - zstd 
+        **参数解释**： 压缩算法。（仅源端类型为Kafka时会显示） **约束限制**： 不涉及。 **取值范围**： - none - gzip - snappy - lz4 - zstd **默认取值**： 不涉及。
 
         :param compression_type: The compression_type of this SmartConnectTaskReqSourceConfig.
         :type compression_type: str

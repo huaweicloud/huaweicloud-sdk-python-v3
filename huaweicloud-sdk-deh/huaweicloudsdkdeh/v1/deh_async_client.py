@@ -337,6 +337,16 @@ class DeHAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'flavor' in local_var_params:
+            query_params.append(('flavor', local_var_params['flavor']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'host_type' in local_var_params:
+            query_params.append(('host_type', local_var_params['host_type']))
 
         header_params = {}
 

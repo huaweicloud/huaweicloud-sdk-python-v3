@@ -1296,9 +1296,9 @@ class OmsClient(Client):
         return http_info
 
     def show_region_info(self, request):
-        r"""查询云厂商支持的reigon
+        r"""查询云厂商支持的region
 
-        查询云厂商支持的reigon
+        查询云厂商支持的region
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2004,6 +2004,69 @@ class OmsClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_privacy_agreement_record(self, request):
+        r"""同意隐私协议
+
+        创建迁移任务、任务组、评估任务时，记录用户同意隐私协议。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePrivacyAgreementRecord
+        :type request: :class:`huaweicloudsdkoms.v2.UpdatePrivacyAgreementRecordRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.UpdatePrivacyAgreementRecordResponse`
+        """
+        http_info = self._update_privacy_agreement_record_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_privacy_agreement_record_invoker(self, request):
+        http_info = self._update_privacy_agreement_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_privacy_agreement_record_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/privacy-agreements",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrivacyAgreementRecordResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 

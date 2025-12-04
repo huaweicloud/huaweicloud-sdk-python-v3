@@ -47,7 +47,7 @@ class AntiTamperRuleResponseBody:
         :type timestamp: int
         :param description: 该规则备注
         :type description: str
-        :param status: 规则状态，0：关闭，1：开启
+        :param status: **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
         :type status: int
         :param hostname: 防篡改的域名
         :type hostname: str
@@ -173,7 +173,7 @@ class AntiTamperRuleResponseBody:
     def status(self):
         r"""Gets the status of this AntiTamperRuleResponseBody.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :return: The status of this AntiTamperRuleResponseBody.
         :rtype: int
@@ -184,7 +184,7 @@ class AntiTamperRuleResponseBody:
     def status(self, status):
         r"""Sets the status of this AntiTamperRuleResponseBody.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :param status: The status of this AntiTamperRuleResponseBody.
         :type status: int

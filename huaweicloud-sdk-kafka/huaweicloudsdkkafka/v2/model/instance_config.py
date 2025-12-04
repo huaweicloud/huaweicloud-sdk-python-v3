@@ -43,11 +43,11 @@ class InstanceConfig:
         :type valid_values: str
         :param default_value: 默认值。
         :type default_value: str
-        :param config_type: 配置类型：static/dynamic。
+        :param config_type: **参数解释**： 配置类型。 **取值范围**： - dynamic：动态。 - static：静态。
         :type config_type: str
         :param value: 配置当前值。
         :type value: str
-        :param value_type: 值类型。
+        :param value_type: **参数解释**： 值类型。 **取值范围**： - string：字符串类型。 - integer：整数类型。 - enum：枚举值类型。
         :type value_type: str
         """
         
@@ -144,7 +144,7 @@ class InstanceConfig:
     def config_type(self):
         r"""Gets the config_type of this InstanceConfig.
 
-        配置类型：static/dynamic。
+        **参数解释**： 配置类型。 **取值范围**： - dynamic：动态。 - static：静态。
 
         :return: The config_type of this InstanceConfig.
         :rtype: str
@@ -155,7 +155,7 @@ class InstanceConfig:
     def config_type(self, config_type):
         r"""Sets the config_type of this InstanceConfig.
 
-        配置类型：static/dynamic。
+        **参数解释**： 配置类型。 **取值范围**： - dynamic：动态。 - static：静态。
 
         :param config_type: The config_type of this InstanceConfig.
         :type config_type: str
@@ -188,7 +188,7 @@ class InstanceConfig:
     def value_type(self):
         r"""Gets the value_type of this InstanceConfig.
 
-        值类型。
+        **参数解释**： 值类型。 **取值范围**： - string：字符串类型。 - integer：整数类型。 - enum：枚举值类型。
 
         :return: The value_type of this InstanceConfig.
         :rtype: str
@@ -199,7 +199,7 @@ class InstanceConfig:
     def value_type(self, value_type):
         r"""Sets the value_type of this InstanceConfig.
 
-        值类型。
+        **参数解释**： 值类型。 **取值范围**： - string：字符串类型。 - integer：整数类型。 - enum：枚举值类型。
 
         :param value_type: The value_type of this InstanceConfig.
         :type value_type: str

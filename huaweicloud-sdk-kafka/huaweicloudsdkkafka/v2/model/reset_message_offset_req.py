@@ -51,8 +51,7 @@ class ResetMessageOffsetReq:
         self._timestamp = None
         self.discriminator = None
 
-        if topic is not None:
-            self.topic = topic
+        self.topic = topic
         self.partition = partition
         if message_offset is not None:
             self.message_offset = message_offset

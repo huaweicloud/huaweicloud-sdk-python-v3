@@ -16,54 +16,29 @@ class DownloadHttpCertResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str',
         'content_type': 'str'
     }
 
     attribute_map = {
-        'body': 'body',
         'content_type': 'content-type'
     }
 
-    def __init__(self, body=None, content_type=None):
+    def __init__(self, content_type=None):
         r"""DownloadHttpCertResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
         :param content_type: 
         :type content_type: str
         """
         
         super().__init__()
 
-        self._body = None
         self._content_type = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
         if content_type is not None:
             self.content_type = content_type
-
-    @property
-    def body(self):
-        r"""Gets the body of this DownloadHttpCertResponse.
-
-        :return: The body of this DownloadHttpCertResponse.
-        :rtype: str
-        """
-        return self._body
-
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this DownloadHttpCertResponse.
-
-        :param body: The body of this DownloadHttpCertResponse.
-        :type body: str
-        """
-        self._body = body
 
     @property
     def content_type(self):

@@ -1393,6 +1393,79 @@ class LiveAsyncClient(Client):
 
         return http_info
 
+    def list_carousel_task_detail_async(self, request):
+        r"""查询轮播任务监控数据接口
+
+        查询轮播任务监控数据接口，包括轮播任务帧率码率情况。
+        
+        最大查询跨度3小时，最大查询周期7天。
+        
+        返回的帧率码率数据列表粒度为1秒钟。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCarouselTaskDetail
+        :type request: :class:`huaweicloudsdklive.v2.ListCarouselTaskDetailRequest`
+        :rtype: :class:`huaweicloudsdklive.v2.ListCarouselTaskDetailResponse`
+        """
+        http_info = self._list_carousel_task_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_carousel_task_detail_async_invoker(self, request):
+        http_info = self._list_carousel_task_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_carousel_task_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/stats/carousel-task/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCarouselTaskDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'carousel_task_id' in local_var_params:
+            query_params.append(('carousel_task_id', local_var_params['carousel_task_id']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-Request-Id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_single_stream_bitrate_async(self, request):
         r"""查询推流码率数据接口
 

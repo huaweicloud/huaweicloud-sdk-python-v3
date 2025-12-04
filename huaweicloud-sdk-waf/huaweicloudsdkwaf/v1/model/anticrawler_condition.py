@@ -33,7 +33,7 @@ class AnticrawlerCondition:
 
         The model defined in huaweicloud sdk
 
-        :param category: 字段类型
+        :param category: **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - user-agent  **默认取值：** 不涉及
         :type category: str
         :param logic_operation: 条件列表匹配逻辑, 包括：contain、not_contain、equal、not_equal、prefix、not_prefix、suffix、not_suffix、contain_any、not_contain_all、equal_any、not_equal_all、prefix_any、not_prefix_all、suffix_any、not_suffix_all
         :type logic_operation: str
@@ -64,7 +64,7 @@ class AnticrawlerCondition:
     def category(self):
         r"""Gets the category of this AnticrawlerCondition.
 
-        字段类型
+        **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - user-agent  **默认取值：** 不涉及
 
         :return: The category of this AnticrawlerCondition.
         :rtype: str
@@ -75,7 +75,7 @@ class AnticrawlerCondition:
     def category(self, category):
         r"""Sets the category of this AnticrawlerCondition.
 
-        字段类型
+        **参数解释：** 字段类型 **约束限制：** 不涉及 **取值范围：**  - url  - user-agent  **默认取值：** 不涉及
 
         :param category: The category of this AnticrawlerCondition.
         :type category: str

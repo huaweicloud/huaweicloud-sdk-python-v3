@@ -50,11 +50,11 @@ class DeleteAnticrawlerRuleResponse(SdkResponse):
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.AnticrawlerCondition`]
         :param name: 规则名称
         :type name: str
-        :param type: JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
+        :param type: **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
         :type type: str
         :param timestamp: 创建规则时间戳
         :type timestamp: int
-        :param status: 规则状态，0：关闭，1：开启
+        :param status: **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
         :type status: int
         :param priority: 执行该规则的优先级，值越小，优先级越高，值相同时，规则创建时间早，优先级越高。取值范围：0到65535。
         :type priority: int
@@ -181,7 +181,7 @@ class DeleteAnticrawlerRuleResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this DeleteAnticrawlerRuleResponse.
 
-        JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
+        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
 
         :return: The type of this DeleteAnticrawlerRuleResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class DeleteAnticrawlerRuleResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this DeleteAnticrawlerRuleResponse.
 
-        JS脚本反爬虫规则类型，指定防护路径：anticrawler_specific_url 排除防护路径：anticrawler_except_url
+        **参数解释：** JS脚本反爬虫规则类型 **约束限制：** 不涉及 **取值范围：**  - anticrawler_except_url: 防护所有路径模式，在该模式下，查询的JS脚本反爬虫规则为排除的防护路径规则  - anticrawler_specific_url: 防护指定路径模式，在该模式下，查询的JS脚本反爬虫规则为指定要防护的路径规则  **默认取值：** anticrawler_except_url
 
         :param type: The type of this DeleteAnticrawlerRuleResponse.
         :type type: str
@@ -225,7 +225,7 @@ class DeleteAnticrawlerRuleResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this DeleteAnticrawlerRuleResponse.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :return: The status of this DeleteAnticrawlerRuleResponse.
         :rtype: int
@@ -236,7 +236,7 @@ class DeleteAnticrawlerRuleResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this DeleteAnticrawlerRuleResponse.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :param status: The status of this DeleteAnticrawlerRuleResponse.
         :type status: int

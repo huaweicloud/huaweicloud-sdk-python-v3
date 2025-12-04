@@ -93,71 +93,71 @@ class CreateInstanceByEngineReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
+        :param name: **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: str
-        :param description: 实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\&quot;&gt;\&quot;与\&quot;&lt;\&quot;，字符串首字符不能为\&quot;&#x3D;\&quot;,\&quot;+\&quot;,\&quot;-\&quot;,\&quot;@\&quot;的全角和半角字符。](tag:hcs,fcs)  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
+        :param description: **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\&quot;&gt;\&quot;与\&quot;&lt;\&quot;，字符串首字符不能为\&quot;&#x3D;\&quot;,\&quot;+\&quot;,\&quot;-\&quot;,\&quot;@\&quot;的全角和半角字符。](tag:hcs,fcs) \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\\\\\或者\\\\\&quot;。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type description: str
-        :param engine: 消息引擎。取值填写为：kafka。
+        :param engine: **参数解释**： 消息引擎。 **约束限制**： 不涉及 **取值范围**： kafka **默认取值**： 不涉及。
         :type engine: str
-        :param engine_version: 消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
+        :param engine_version: **参数解释**： 消息引擎的版本。 **约束限制**： 不涉及 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc,hws_eu) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax) **默认取值**： 不涉及。
         :type engine_version: str
-        :param broker_num: 代理个数。
+        :param broker_num: **参数解释**： 代理个数。 **约束限制**： 不涉及。 **取值范围**： [- Kafka实例规格为kafka.2u4g.cluster.small时，代理数取值范围3-30。](tag:hws,hws_hk,hws_eu,dt,ax) - Kafka实例规格为kafka.2u4g.cluster时，代理数取值范围3-30。 - Kafka实例规格为kafka.4u8g.cluster时，代理数取值范围3-30。 - Kafka实例规格为kafka.8u16g.cluster时，代理数取值范围3-50。 - Kafka实例规格为kafka.12u24g.cluster时，代理数取值范围3-50。 - Kafka实例规格为kafka.16u32g.cluster时，代理数取值范围3-50。 **默认取值**： 不涉及。
         :type broker_num: int
-        :param storage_space: 消息存储空间，单位GB。   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)      [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs)   [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。   - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
+        :param storage_space: **参数解释**： 消息存储空间，单位GB。 **约束限制**： 不涉及。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [- Kafka实例规格为s6.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs) **默认取值**： 不涉及。
         :type storage_space: int
-        :param access_user: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
+        :param access_user: **参数解释**：  认证用户名。 **约束限制**： 只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type access_user: str
-        :param password: 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）和空格，并且不能以-开头
+        :param password: **参数解释**： 实例的认证密码。 **约束限制**： - 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。 - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母。   - 大写字母。   - 数字。   - 特殊字符包括（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}]:&#39;\&quot;,&lt;.&gt;/?）和空格，并且不能以-开头。    **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type password: str
-        :param vpc_id: 虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
+        :param vpc_id: **参数解释**：  虚拟私有云ID。获取方法如下：参考《虚拟私有云 API参考》，调用“查询VPC列表”接口，从响应体中获取VPC ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vpc_id: str
-        :param security_group_id: 指定实例所属的安全组。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
+        :param security_group_id: **参数解释**： 指定实例所属的安全组。获取方法如下：参考《虚拟私有云 API参考》，调用“查询安全组列表”接口，从响应体中获取安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type security_group_id: str
-        :param subnet_id: 子网信息。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
+        :param subnet_id: **参数解释**： 子网信息。获取方法如下：参考《虚拟私有云 API参考》，调用“查询子网列表”接口，从响应体中获取子网ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type subnet_id: str
-        :param available_zones: 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。  创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
+        :param available_zones: **参数解释**： 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。 **约束限制**： 该参数不能为空数组或者数组的值为空。  创建Kafka实例，节点需要部署在1个或3个及以上可用区中。如果部署在多个可用区中，以英文逗号隔开多个可用区ID。
         :type available_zones: list[str]
-        :param product_id: 产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        :param product_id: **参数解释**： 产品ID。产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type product_id: str
-        :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。
+        :param maintain_begin: **参数解释**： 维护时间窗开始时间。 **约束限制**： 格式为HH:mm。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type maintain_begin: str
-        :param maintain_end: 维护时间窗结束时间，格式为HH:mm。
+        :param maintain_end: **参数解释**： 维护时间窗结束时间。 **约束限制**： 格式为HH:mm。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type maintain_end: str
-        :param enable_publicip: 是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
+        :param enable_publicip: **参数解释**： 是否开启公网访问功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
         :type enable_publicip: bool
-        :param tenant_ips: 创建实例时可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网IP地址数量必须小于等于创建的节点数量。  如果指定的内网IP地址数量小于创建的节点数量时，系统会自动为剩余的节点随机分配内网IP地址。
+        :param tenant_ips: **参数解释**： 创建实例时可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。 **约束限制**： 指定内网IP地址数量必须小于等于创建的节点数量。  如果指定的内网IP地址数量小于创建的节点数量时，系统会自动为剩余的节点随机分配内网IP地址。
         :type tenant_ips: list[str]
-        :param publicip_id: 实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        :param publicip_id: **参数解释**： 实例绑定的弹性IP地址的ID。 **约束限制**： 以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type publicip_id: str
-        :param ssl_enable: 是否开启SASL加密访问。  [实例创建后将不支持动态开启和关闭。](tag:ocb,hws_ocb,hcs)  - true：开启SASL加密访问。 - false：关闭SASL加密访问。
+        :param ssl_enable: **参数解释**： 是否开启SASL加密访问。  [实例创建后将不支持动态开启和关闭。](tag:ocb,hws_ocb,hcs) **约束限制**： 不涉及。 **取值范围**： - true：开启SASL加密访问。 - false：关闭SASL加密访问。 **默认取值**： 不涉及。
         :type ssl_enable: bool
-        :param kafka_security_protocol: 开启SASL后使用的安全协议。 - SASL_SSL: 使用SSL证书加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 通过明文传输，支持账号密码认证，性能更好。  若该字段值为空，默认开启SASL_SSL认证机制。实例创建后，此参数不支持动态修改。 若创建实例时，使用了port_protocol参数，则Kafka的内网访问安全协议以及公网访问安全协议会使用port_protocol中的值，则此参数无效。
+        :param kafka_security_protocol: **参数解释**： 开启SASL后使用的安全协议。 **约束限制**： 若该字段值为空，默认开启SASL_SSL认证机制。实例创建后，此参数不支持动态修改。 若创建实例时，使用了port_protocol参数，则Kafka的内网访问安全协议以及公网访问安全协议会使用port_protocol中的值，则此参数无效。 **取值范围**： - SASL_SSL：使用SSL证书加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT：通过明文传输，支持账号密码认证，性能更好。 **默认取值**： 不涉及。
         :type kafka_security_protocol: str
-        :param sasl_enabled_mechanisms: 开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可，支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+        :param sasl_enabled_mechanisms: **参数解释**： 开启SASL后使用的认证机制。 **约束限制**： 如果开启了SASL认证功能（即ssl_enable&#x3D;true），该字段为必选。若该字段值为空，默认开启PLAIN认证机制。
         :type sasl_enabled_mechanisms: list[str]
         :param port_protocol: 
         :type port_protocol: :class:`huaweicloudsdkkafka.v2.PortProtocol`
-        :param retention_policy: 磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
+        :param retention_policy: **参数解释**： 磁盘的容量到达容量阈值后，对于消息的处理策略。 **约束限制**： 不涉及。 **取值范围**： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。 **默认取值**： 不涉及。
         :type retention_policy: str
-        :param ipv6_enable: 是否开启ipv6。仅在虚拟私有云支持ipv6时生效。
+        :param ipv6_enable: **参数解释**： 是否开启IPv6。 **约束限制**： 仅在虚拟私有云支持IPv6时生效。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
         :type ipv6_enable: bool
-        :param disk_encrypted_enable: 是否开启磁盘加密。
+        :param disk_encrypted_enable: **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
         :type disk_encrypted_enable: bool
-        :param disk_encrypted_key: 磁盘加密key，未开启磁盘加密时为空
+        :param disk_encrypted_key: **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type disk_encrypted_key: str
-        :param connector_enable: 是否开启消息转储功能。  默认不开启消息转储。
+        :param connector_enable: **参数解释**： 是否开启Smart Connect功能。Smart Connect用于Kafka实例和其他云服务之间的数据同步，或者两个Kafka实例之间的数据同步，实现数据的备份或迁移。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
         :type connector_enable: bool
-        :param enable_auto_topic: 是否打开kafka自动创建Topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
+        :param enable_auto_topic: **参数解释**： 是否开启kafka自动创建Topic功能。当您选择开启，向一个未创建的Topic生产或消费消息时，系统会自动创建此Topic。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
         :type enable_auto_topic: bool
-        :param storage_spec_code: 存储IO规格。  取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  [如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
+        :param storage_spec_code: **参数解释**： 云硬盘类型。[如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb,ax)》的“磁盘类型及性能介绍”。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) **约束限制**： 不涉及。 **取值范围**： - dms.physical.storage.high.v2：高IO云硬盘。 - dms.physical.storage.ultra.v2：超高IO云硬盘。 - [dms.physical.storage.general：通用型SSD云硬盘。](tag:hws,hws_hk,dt,ax) - [dms.physical.storage.extreme：极速型SSD云硬盘。](tag:hws,hws_hk,dt,ax) **默认取值**： 不涉及。
         :type storage_spec_code: str
-        :param enterprise_project_id: 企业项目ID。若为企业项目账号，该参数必填。
+        :param enterprise_project_id: **参数解释**： 企业项目ID。 **约束限制**： 若为企业项目账号，该参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type enterprise_project_id: str
-        :param tags: 标签列表。
+        :param tags: **参数解释**： Kafka实例的标签信息。 **约束限制**： 不涉及。
         :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
-        :param arch_type: CPU架构。当前只支持X86架构[以及arm架构](tag:hcs,fcs,ctc)。  取值范围：   - X86   [- arm](tag:hcs,fcs,ctc)
+        :param arch_type: **参数解释**： CPU架构。 **约束限制**： 不涉及。 **取值范围**： - X86 [- ARM](tag:hcs,fcs,ctc) **默认取值**： 不涉及。
         :type arch_type: str
-        :param vpc_client_plain: VPC内网明文访问。
+        :param vpc_client_plain: **参数解释**： VPC内网明文访问。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type vpc_client_plain: bool
         :param bss_param: 
         :type bss_param: :class:`huaweicloudsdkkafka.v2.BssParam`
@@ -263,7 +263,7 @@ class CreateInstanceByEngineReq:
     def name(self):
         r"""Gets the name of this CreateInstanceByEngineReq.
 
-        实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
+        **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The name of this CreateInstanceByEngineReq.
         :rtype: str
@@ -274,7 +274,7 @@ class CreateInstanceByEngineReq:
     def name(self, name):
         r"""Sets the name of this CreateInstanceByEngineReq.
 
-        实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
+        **参数解释**： 实例名称。 **约束限制**： 由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param name: The name of this CreateInstanceByEngineReq.
         :type name: str
@@ -285,7 +285,7 @@ class CreateInstanceByEngineReq:
     def description(self):
         r"""Gets the description of this CreateInstanceByEngineReq.
 
-        实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs,fcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
+        **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs,fcs) \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\\\\\或者\\\\\"。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The description of this CreateInstanceByEngineReq.
         :rtype: str
@@ -296,7 +296,7 @@ class CreateInstanceByEngineReq:
     def description(self, description):
         r"""Sets the description of this CreateInstanceByEngineReq.
 
-        实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs,fcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
+        **参数解释**： 实例的描述信息。 **约束限制**： 长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs,fcs) \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\\\\\或者\\\\\"。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param description: The description of this CreateInstanceByEngineReq.
         :type description: str
@@ -307,7 +307,7 @@ class CreateInstanceByEngineReq:
     def engine(self):
         r"""Gets the engine of this CreateInstanceByEngineReq.
 
-        消息引擎。取值填写为：kafka。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及 **取值范围**： kafka **默认取值**： 不涉及。
 
         :return: The engine of this CreateInstanceByEngineReq.
         :rtype: str
@@ -318,7 +318,7 @@ class CreateInstanceByEngineReq:
     def engine(self, engine):
         r"""Sets the engine of this CreateInstanceByEngineReq.
 
-        消息引擎。取值填写为：kafka。
+        **参数解释**： 消息引擎。 **约束限制**： 不涉及 **取值范围**： kafka **默认取值**： 不涉及。
 
         :param engine: The engine of this CreateInstanceByEngineReq.
         :type engine: str
@@ -329,7 +329,7 @@ class CreateInstanceByEngineReq:
     def engine_version(self):
         r"""Gets the engine_version of this CreateInstanceByEngineReq.
 
-        消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
+        **参数解释**： 消息引擎的版本。 **约束限制**： 不涉及 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc,hws_eu) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax) **默认取值**： 不涉及。
 
         :return: The engine_version of this CreateInstanceByEngineReq.
         :rtype: str
@@ -340,7 +340,7 @@ class CreateInstanceByEngineReq:
     def engine_version(self, engine_version):
         r"""Sets the engine_version of this CreateInstanceByEngineReq.
 
-        消息引擎的版本。取值填写为：   [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,sbc,cmcc)   [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc)   - 2.7   [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu)
+        **参数解释**： 消息引擎的版本。 **约束限制**： 不涉及 **取值范围**： [- 1.1.0](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,sbc,cmcc,ax) [- 2.3.0](tag:g42,tm,hk_g42,ctc,hk_tm,dt,sbc,cmcc,hws_eu) - 2.7 [- 3.x](tag:hws,hws_hk,dt,sbc,hcs,fcs,ctc,tm,hk_tm,hws_eu,ax) **默认取值**： 不涉及。
 
         :param engine_version: The engine_version of this CreateInstanceByEngineReq.
         :type engine_version: str
@@ -351,7 +351,7 @@ class CreateInstanceByEngineReq:
     def broker_num(self):
         r"""Gets the broker_num of this CreateInstanceByEngineReq.
 
-        代理个数。
+        **参数解释**： 代理个数。 **约束限制**： 不涉及。 **取值范围**： [- Kafka实例规格为kafka.2u4g.cluster.small时，代理数取值范围3-30。](tag:hws,hws_hk,hws_eu,dt,ax) - Kafka实例规格为kafka.2u4g.cluster时，代理数取值范围3-30。 - Kafka实例规格为kafka.4u8g.cluster时，代理数取值范围3-30。 - Kafka实例规格为kafka.8u16g.cluster时，代理数取值范围3-50。 - Kafka实例规格为kafka.12u24g.cluster时，代理数取值范围3-50。 - Kafka实例规格为kafka.16u32g.cluster时，代理数取值范围3-50。 **默认取值**： 不涉及。
 
         :return: The broker_num of this CreateInstanceByEngineReq.
         :rtype: int
@@ -362,7 +362,7 @@ class CreateInstanceByEngineReq:
     def broker_num(self, broker_num):
         r"""Sets the broker_num of this CreateInstanceByEngineReq.
 
-        代理个数。
+        **参数解释**： 代理个数。 **约束限制**： 不涉及。 **取值范围**： [- Kafka实例规格为kafka.2u4g.cluster.small时，代理数取值范围3-30。](tag:hws,hws_hk,hws_eu,dt,ax) - Kafka实例规格为kafka.2u4g.cluster时，代理数取值范围3-30。 - Kafka实例规格为kafka.4u8g.cluster时，代理数取值范围3-30。 - Kafka实例规格为kafka.8u16g.cluster时，代理数取值范围3-50。 - Kafka实例规格为kafka.12u24g.cluster时，代理数取值范围3-50。 - Kafka实例规格为kafka.16u32g.cluster时，代理数取值范围3-50。 **默认取值**： 不涉及。
 
         :param broker_num: The broker_num of this CreateInstanceByEngineReq.
         :type broker_num: int
@@ -373,7 +373,7 @@ class CreateInstanceByEngineReq:
     def storage_space(self):
         r"""Gets the storage_space of this CreateInstanceByEngineReq.
 
-        消息存储空间，单位GB。   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)      [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs)   [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。   - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
+        **参数解释**： 消息存储空间，单位GB。 **约束限制**： 不涉及。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [- Kafka实例规格为s6.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs) **默认取值**： 不涉及。
 
         :return: The storage_space of this CreateInstanceByEngineReq.
         :rtype: int
@@ -384,7 +384,7 @@ class CreateInstanceByEngineReq:
     def storage_space(self, storage_space):
         r"""Sets the storage_space of this CreateInstanceByEngineReq.
 
-        消息存储空间，单位GB。   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)      [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs)   [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。   - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。   - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs)
+        **参数解释**： 消息存储空间，单位GB。 **约束限制**： 不涉及。 **取值范围**： [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。 - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。 - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 1500000GB。 - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 1500000GB。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) [- Kafka实例规格为s6.2u4g.cluster.small时，存储空间取值范围300GB~300000GB。](tag:hws,hws_hk,hws_eu,dt,ax) [- Kafka实例规格为kafka.2u8g.cluster时，存储空间取值范围300GB~300000GB。](tag:fcs) [- Kafka实例规格为kafka.4u16g.cluster时，存储空间取值范围300GB~600000GB。 - Kafka实例规格为kafka.8u32g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.16u64g.cluster时，存储空间取值范围300GB~1500000GB。 - Kafka实例规格为kafka.32u128g.cluster时，存储空间取值范围300GB~1500000GB。](tag:hcs,fcs) **默认取值**： 不涉及。
 
         :param storage_space: The storage_space of this CreateInstanceByEngineReq.
         :type storage_space: int
@@ -395,7 +395,7 @@ class CreateInstanceByEngineReq:
     def access_user(self):
         r"""Gets the access_user of this CreateInstanceByEngineReq.
 
-        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
+        **参数解释**：  认证用户名。 **约束限制**： 只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The access_user of this CreateInstanceByEngineReq.
         :rtype: str
@@ -406,7 +406,7 @@ class CreateInstanceByEngineReq:
     def access_user(self, access_user):
         r"""Sets the access_user of this CreateInstanceByEngineReq.
 
-        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  认证用户名，只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
+        **参数解释**：  认证用户名。 **约束限制**： 只能由英文字母开头且由英文字母、数字、中划线、下划线组成，长度为4~64的字符。当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param access_user: The access_user of this CreateInstanceByEngineReq.
         :type access_user: str
@@ -417,7 +417,7 @@ class CreateInstanceByEngineReq:
     def password(self):
         r"""Gets the password of this CreateInstanceByEngineReq.
 
-        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
+        **参数解释**： 实例的认证密码。 **约束限制**： - 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。 - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母。   - 大写字母。   - 数字。   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头。    **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The password of this CreateInstanceByEngineReq.
         :rtype: str
@@ -428,7 +428,7 @@ class CreateInstanceByEngineReq:
     def password(self, password):
         r"""Sets the password of this CreateInstanceByEngineReq.
 
-        当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
+        **参数解释**： 实例的认证密码。 **约束限制**： - 当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。 - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母。   - 大写字母。   - 数字。   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头。    **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param password: The password of this CreateInstanceByEngineReq.
         :type password: str
@@ -439,7 +439,7 @@ class CreateInstanceByEngineReq:
     def vpc_id(self):
         r"""Gets the vpc_id of this CreateInstanceByEngineReq.
 
-        虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
+        **参数解释**：  虚拟私有云ID。获取方法如下：参考《虚拟私有云 API参考》，调用“查询VPC列表”接口，从响应体中获取VPC ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vpc_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -450,7 +450,7 @@ class CreateInstanceByEngineReq:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this CreateInstanceByEngineReq.
 
-        虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
+        **参数解释**：  虚拟私有云ID。获取方法如下：参考《虚拟私有云 API参考》，调用“查询VPC列表”接口，从响应体中获取VPC ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vpc_id: The vpc_id of this CreateInstanceByEngineReq.
         :type vpc_id: str
@@ -461,7 +461,7 @@ class CreateInstanceByEngineReq:
     def security_group_id(self):
         r"""Gets the security_group_id of this CreateInstanceByEngineReq.
 
-        指定实例所属的安全组。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
+        **参数解释**： 指定实例所属的安全组。获取方法如下：参考《虚拟私有云 API参考》，调用“查询安全组列表”接口，从响应体中获取安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The security_group_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -472,7 +472,7 @@ class CreateInstanceByEngineReq:
     def security_group_id(self, security_group_id):
         r"""Sets the security_group_id of this CreateInstanceByEngineReq.
 
-        指定实例所属的安全组。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
+        **参数解释**： 指定实例所属的安全组。获取方法如下：参考《虚拟私有云 API参考》，调用“查询安全组列表”接口，从响应体中获取安全组ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param security_group_id: The security_group_id of this CreateInstanceByEngineReq.
         :type security_group_id: str
@@ -483,7 +483,7 @@ class CreateInstanceByEngineReq:
     def subnet_id(self):
         r"""Gets the subnet_id of this CreateInstanceByEngineReq.
 
-        子网信息。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
+        **参数解释**： 子网信息。获取方法如下：参考《虚拟私有云 API参考》，调用“查询子网列表”接口，从响应体中获取子网ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The subnet_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -494,7 +494,7 @@ class CreateInstanceByEngineReq:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this CreateInstanceByEngineReq.
 
-        子网信息。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
+        **参数解释**： 子网信息。获取方法如下：参考《虚拟私有云 API参考》，调用“查询子网列表”接口，从响应体中获取子网ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param subnet_id: The subnet_id of this CreateInstanceByEngineReq.
         :type subnet_id: str
@@ -505,7 +505,7 @@ class CreateInstanceByEngineReq:
     def available_zones(self):
         r"""Gets the available_zones of this CreateInstanceByEngineReq.
 
-        创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。  创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
+        **参数解释**： 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。 **约束限制**： 该参数不能为空数组或者数组的值为空。  创建Kafka实例，节点需要部署在1个或3个及以上可用区中。如果部署在多个可用区中，以英文逗号隔开多个可用区ID。
 
         :return: The available_zones of this CreateInstanceByEngineReq.
         :rtype: list[str]
@@ -516,7 +516,7 @@ class CreateInstanceByEngineReq:
     def available_zones(self, available_zones):
         r"""Sets the available_zones of this CreateInstanceByEngineReq.
 
-        创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。  创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
+        **参数解释**： 创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。 **约束限制**： 该参数不能为空数组或者数组的值为空。  创建Kafka实例，节点需要部署在1个或3个及以上可用区中。如果部署在多个可用区中，以英文逗号隔开多个可用区ID。
 
         :param available_zones: The available_zones of this CreateInstanceByEngineReq.
         :type available_zones: list[str]
@@ -527,7 +527,7 @@ class CreateInstanceByEngineReq:
     def product_id(self):
         r"""Gets the product_id of this CreateInstanceByEngineReq.
 
-        产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        **参数解释**： 产品ID。产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The product_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -538,7 +538,7 @@ class CreateInstanceByEngineReq:
     def product_id(self, product_id):
         r"""Sets the product_id of this CreateInstanceByEngineReq.
 
-        产品ID。  产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。
+        **参数解释**： 产品ID。产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param product_id: The product_id of this CreateInstanceByEngineReq.
         :type product_id: str
@@ -549,7 +549,7 @@ class CreateInstanceByEngineReq:
     def maintain_begin(self):
         r"""Gets the maintain_begin of this CreateInstanceByEngineReq.
 
-        维护时间窗开始时间，格式为HH:mm。
+        **参数解释**： 维护时间窗开始时间。 **约束限制**： 格式为HH:mm。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The maintain_begin of this CreateInstanceByEngineReq.
         :rtype: str
@@ -560,7 +560,7 @@ class CreateInstanceByEngineReq:
     def maintain_begin(self, maintain_begin):
         r"""Sets the maintain_begin of this CreateInstanceByEngineReq.
 
-        维护时间窗开始时间，格式为HH:mm。
+        **参数解释**： 维护时间窗开始时间。 **约束限制**： 格式为HH:mm。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param maintain_begin: The maintain_begin of this CreateInstanceByEngineReq.
         :type maintain_begin: str
@@ -571,7 +571,7 @@ class CreateInstanceByEngineReq:
     def maintain_end(self):
         r"""Gets the maintain_end of this CreateInstanceByEngineReq.
 
-        维护时间窗结束时间，格式为HH:mm。
+        **参数解释**： 维护时间窗结束时间。 **约束限制**： 格式为HH:mm。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The maintain_end of this CreateInstanceByEngineReq.
         :rtype: str
@@ -582,7 +582,7 @@ class CreateInstanceByEngineReq:
     def maintain_end(self, maintain_end):
         r"""Sets the maintain_end of this CreateInstanceByEngineReq.
 
-        维护时间窗结束时间，格式为HH:mm。
+        **参数解释**： 维护时间窗结束时间。 **约束限制**： 格式为HH:mm。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param maintain_end: The maintain_end of this CreateInstanceByEngineReq.
         :type maintain_end: str
@@ -593,7 +593,7 @@ class CreateInstanceByEngineReq:
     def enable_publicip(self):
         r"""Gets the enable_publicip of this CreateInstanceByEngineReq.
 
-        是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
+        **参数解释**： 是否开启公网访问功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
 
         :return: The enable_publicip of this CreateInstanceByEngineReq.
         :rtype: bool
@@ -604,7 +604,7 @@ class CreateInstanceByEngineReq:
     def enable_publicip(self, enable_publicip):
         r"""Sets the enable_publicip of this CreateInstanceByEngineReq.
 
-        是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
+        **参数解释**： 是否开启公网访问功能。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
 
         :param enable_publicip: The enable_publicip of this CreateInstanceByEngineReq.
         :type enable_publicip: bool
@@ -615,7 +615,7 @@ class CreateInstanceByEngineReq:
     def tenant_ips(self):
         r"""Gets the tenant_ips of this CreateInstanceByEngineReq.
 
-        创建实例时可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网IP地址数量必须小于等于创建的节点数量。  如果指定的内网IP地址数量小于创建的节点数量时，系统会自动为剩余的节点随机分配内网IP地址。
+        **参数解释**： 创建实例时可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。 **约束限制**： 指定内网IP地址数量必须小于等于创建的节点数量。  如果指定的内网IP地址数量小于创建的节点数量时，系统会自动为剩余的节点随机分配内网IP地址。
 
         :return: The tenant_ips of this CreateInstanceByEngineReq.
         :rtype: list[str]
@@ -626,7 +626,7 @@ class CreateInstanceByEngineReq:
     def tenant_ips(self, tenant_ips):
         r"""Sets the tenant_ips of this CreateInstanceByEngineReq.
 
-        创建实例时可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。  指定内网IP地址数量必须小于等于创建的节点数量。  如果指定的内网IP地址数量小于创建的节点数量时，系统会自动为剩余的节点随机分配内网IP地址。
+        **参数解释**： 创建实例时可以手动指定实例节点的内网IP地址，仅支持指定IPv4地址。 **约束限制**： 指定内网IP地址数量必须小于等于创建的节点数量。  如果指定的内网IP地址数量小于创建的节点数量时，系统会自动为剩余的节点随机分配内网IP地址。
 
         :param tenant_ips: The tenant_ips of this CreateInstanceByEngineReq.
         :type tenant_ips: list[str]
@@ -637,7 +637,7 @@ class CreateInstanceByEngineReq:
     def publicip_id(self):
         r"""Gets the publicip_id of this CreateInstanceByEngineReq.
 
-        实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        **参数解释**： 实例绑定的弹性IP地址的ID。 **约束限制**： 以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The publicip_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -648,7 +648,7 @@ class CreateInstanceByEngineReq:
     def publicip_id(self, publicip_id):
         r"""Sets the publicip_id of this CreateInstanceByEngineReq.
 
-        实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
+        **参数解释**： 实例绑定的弹性IP地址的ID。 **约束限制**： 以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param publicip_id: The publicip_id of this CreateInstanceByEngineReq.
         :type publicip_id: str
@@ -659,7 +659,7 @@ class CreateInstanceByEngineReq:
     def ssl_enable(self):
         r"""Gets the ssl_enable of this CreateInstanceByEngineReq.
 
-        是否开启SASL加密访问。  [实例创建后将不支持动态开启和关闭。](tag:ocb,hws_ocb,hcs)  - true：开启SASL加密访问。 - false：关闭SASL加密访问。
+        **参数解释**： 是否开启SASL加密访问。  [实例创建后将不支持动态开启和关闭。](tag:ocb,hws_ocb,hcs) **约束限制**： 不涉及。 **取值范围**： - true：开启SASL加密访问。 - false：关闭SASL加密访问。 **默认取值**： 不涉及。
 
         :return: The ssl_enable of this CreateInstanceByEngineReq.
         :rtype: bool
@@ -670,7 +670,7 @@ class CreateInstanceByEngineReq:
     def ssl_enable(self, ssl_enable):
         r"""Sets the ssl_enable of this CreateInstanceByEngineReq.
 
-        是否开启SASL加密访问。  [实例创建后将不支持动态开启和关闭。](tag:ocb,hws_ocb,hcs)  - true：开启SASL加密访问。 - false：关闭SASL加密访问。
+        **参数解释**： 是否开启SASL加密访问。  [实例创建后将不支持动态开启和关闭。](tag:ocb,hws_ocb,hcs) **约束限制**： 不涉及。 **取值范围**： - true：开启SASL加密访问。 - false：关闭SASL加密访问。 **默认取值**： 不涉及。
 
         :param ssl_enable: The ssl_enable of this CreateInstanceByEngineReq.
         :type ssl_enable: bool
@@ -681,7 +681,7 @@ class CreateInstanceByEngineReq:
     def kafka_security_protocol(self):
         r"""Gets the kafka_security_protocol of this CreateInstanceByEngineReq.
 
-        开启SASL后使用的安全协议。 - SASL_SSL: 使用SSL证书加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 通过明文传输，支持账号密码认证，性能更好。  若该字段值为空，默认开启SASL_SSL认证机制。实例创建后，此参数不支持动态修改。 若创建实例时，使用了port_protocol参数，则Kafka的内网访问安全协议以及公网访问安全协议会使用port_protocol中的值，则此参数无效。
+        **参数解释**： 开启SASL后使用的安全协议。 **约束限制**： 若该字段值为空，默认开启SASL_SSL认证机制。实例创建后，此参数不支持动态修改。 若创建实例时，使用了port_protocol参数，则Kafka的内网访问安全协议以及公网访问安全协议会使用port_protocol中的值，则此参数无效。 **取值范围**： - SASL_SSL：使用SSL证书加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT：通过明文传输，支持账号密码认证，性能更好。 **默认取值**： 不涉及。
 
         :return: The kafka_security_protocol of this CreateInstanceByEngineReq.
         :rtype: str
@@ -692,7 +692,7 @@ class CreateInstanceByEngineReq:
     def kafka_security_protocol(self, kafka_security_protocol):
         r"""Sets the kafka_security_protocol of this CreateInstanceByEngineReq.
 
-        开启SASL后使用的安全协议。 - SASL_SSL: 使用SSL证书加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 通过明文传输，支持账号密码认证，性能更好。  若该字段值为空，默认开启SASL_SSL认证机制。实例创建后，此参数不支持动态修改。 若创建实例时，使用了port_protocol参数，则Kafka的内网访问安全协议以及公网访问安全协议会使用port_protocol中的值，则此参数无效。
+        **参数解释**： 开启SASL后使用的安全协议。 **约束限制**： 若该字段值为空，默认开启SASL_SSL认证机制。实例创建后，此参数不支持动态修改。 若创建实例时，使用了port_protocol参数，则Kafka的内网访问安全协议以及公网访问安全协议会使用port_protocol中的值，则此参数无效。 **取值范围**： - SASL_SSL：使用SSL证书加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT：通过明文传输，支持账号密码认证，性能更好。 **默认取值**： 不涉及。
 
         :param kafka_security_protocol: The kafka_security_protocol of this CreateInstanceByEngineReq.
         :type kafka_security_protocol: str
@@ -703,7 +703,7 @@ class CreateInstanceByEngineReq:
     def sasl_enabled_mechanisms(self):
         r"""Gets the sasl_enabled_mechanisms of this CreateInstanceByEngineReq.
 
-        开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可，支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+        **参数解释**： 开启SASL后使用的认证机制。 **约束限制**： 如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。若该字段值为空，默认开启PLAIN认证机制。
 
         :return: The sasl_enabled_mechanisms of this CreateInstanceByEngineReq.
         :rtype: list[str]
@@ -714,7 +714,7 @@ class CreateInstanceByEngineReq:
     def sasl_enabled_mechanisms(self, sasl_enabled_mechanisms):
         r"""Sets the sasl_enabled_mechanisms of this CreateInstanceByEngineReq.
 
-        开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可，支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
+        **参数解释**： 开启SASL后使用的认证机制。 **约束限制**： 如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。若该字段值为空，默认开启PLAIN认证机制。
 
         :param sasl_enabled_mechanisms: The sasl_enabled_mechanisms of this CreateInstanceByEngineReq.
         :type sasl_enabled_mechanisms: list[str]
@@ -743,7 +743,7 @@ class CreateInstanceByEngineReq:
     def retention_policy(self):
         r"""Gets the retention_policy of this CreateInstanceByEngineReq.
 
-        磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
+        **参数解释**： 磁盘的容量到达容量阈值后，对于消息的处理策略。 **约束限制**： 不涉及。 **取值范围**： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。 **默认取值**： 不涉及。
 
         :return: The retention_policy of this CreateInstanceByEngineReq.
         :rtype: str
@@ -754,7 +754,7 @@ class CreateInstanceByEngineReq:
     def retention_policy(self, retention_policy):
         r"""Sets the retention_policy of this CreateInstanceByEngineReq.
 
-        磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
+        **参数解释**： 磁盘的容量到达容量阈值后，对于消息的处理策略。 **约束限制**： 不涉及。 **取值范围**： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。 **默认取值**： 不涉及。
 
         :param retention_policy: The retention_policy of this CreateInstanceByEngineReq.
         :type retention_policy: str
@@ -765,7 +765,7 @@ class CreateInstanceByEngineReq:
     def ipv6_enable(self):
         r"""Gets the ipv6_enable of this CreateInstanceByEngineReq.
 
-        是否开启ipv6。仅在虚拟私有云支持ipv6时生效。
+        **参数解释**： 是否开启IPv6。 **约束限制**： 仅在虚拟私有云支持IPv6时生效。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
 
         :return: The ipv6_enable of this CreateInstanceByEngineReq.
         :rtype: bool
@@ -776,7 +776,7 @@ class CreateInstanceByEngineReq:
     def ipv6_enable(self, ipv6_enable):
         r"""Sets the ipv6_enable of this CreateInstanceByEngineReq.
 
-        是否开启ipv6。仅在虚拟私有云支持ipv6时生效。
+        **参数解释**： 是否开启IPv6。 **约束限制**： 仅在虚拟私有云支持IPv6时生效。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
 
         :param ipv6_enable: The ipv6_enable of this CreateInstanceByEngineReq.
         :type ipv6_enable: bool
@@ -787,7 +787,7 @@ class CreateInstanceByEngineReq:
     def disk_encrypted_enable(self):
         r"""Gets the disk_encrypted_enable of this CreateInstanceByEngineReq.
 
-        是否开启磁盘加密。
+        **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
 
         :return: The disk_encrypted_enable of this CreateInstanceByEngineReq.
         :rtype: bool
@@ -798,7 +798,7 @@ class CreateInstanceByEngineReq:
     def disk_encrypted_enable(self, disk_encrypted_enable):
         r"""Sets the disk_encrypted_enable of this CreateInstanceByEngineReq.
 
-        是否开启磁盘加密。
+        **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
 
         :param disk_encrypted_enable: The disk_encrypted_enable of this CreateInstanceByEngineReq.
         :type disk_encrypted_enable: bool
@@ -809,7 +809,7 @@ class CreateInstanceByEngineReq:
     def disk_encrypted_key(self):
         r"""Gets the disk_encrypted_key of this CreateInstanceByEngineReq.
 
-        磁盘加密key，未开启磁盘加密时为空
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The disk_encrypted_key of this CreateInstanceByEngineReq.
         :rtype: str
@@ -820,7 +820,7 @@ class CreateInstanceByEngineReq:
     def disk_encrypted_key(self, disk_encrypted_key):
         r"""Sets the disk_encrypted_key of this CreateInstanceByEngineReq.
 
-        磁盘加密key，未开启磁盘加密时为空
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param disk_encrypted_key: The disk_encrypted_key of this CreateInstanceByEngineReq.
         :type disk_encrypted_key: str
@@ -831,7 +831,7 @@ class CreateInstanceByEngineReq:
     def connector_enable(self):
         r"""Gets the connector_enable of this CreateInstanceByEngineReq.
 
-        是否开启消息转储功能。  默认不开启消息转储。
+        **参数解释**： 是否开启Smart Connect功能。Smart Connect用于Kafka实例和其他云服务之间的数据同步，或者两个Kafka实例之间的数据同步，实现数据的备份或迁移。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
 
         :return: The connector_enable of this CreateInstanceByEngineReq.
         :rtype: bool
@@ -842,7 +842,7 @@ class CreateInstanceByEngineReq:
     def connector_enable(self, connector_enable):
         r"""Sets the connector_enable of this CreateInstanceByEngineReq.
 
-        是否开启消息转储功能。  默认不开启消息转储。
+        **参数解释**： 是否开启Smart Connect功能。Smart Connect用于Kafka实例和其他云服务之间的数据同步，或者两个Kafka实例之间的数据同步，实现数据的备份或迁移。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
 
         :param connector_enable: The connector_enable of this CreateInstanceByEngineReq.
         :type connector_enable: bool
@@ -853,7 +853,7 @@ class CreateInstanceByEngineReq:
     def enable_auto_topic(self):
         r"""Gets the enable_auto_topic of this CreateInstanceByEngineReq.
 
-        是否打开kafka自动创建Topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
+        **参数解释**： 是否开启kafka自动创建Topic功能。当您选择开启，向一个未创建的Topic生产或消费消息时，系统会自动创建此Topic。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
 
         :return: The enable_auto_topic of this CreateInstanceByEngineReq.
         :rtype: bool
@@ -864,7 +864,7 @@ class CreateInstanceByEngineReq:
     def enable_auto_topic(self, enable_auto_topic):
         r"""Sets the enable_auto_topic of this CreateInstanceByEngineReq.
 
-        是否打开kafka自动创建Topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
+        **参数解释**： 是否开启kafka自动创建Topic功能。当您选择开启，向一个未创建的Topic生产或消费消息时，系统会自动创建此Topic。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
 
         :param enable_auto_topic: The enable_auto_topic of this CreateInstanceByEngineReq.
         :type enable_auto_topic: bool
@@ -875,7 +875,7 @@ class CreateInstanceByEngineReq:
     def storage_spec_code(self):
         r"""Gets the storage_spec_code of this CreateInstanceByEngineReq.
 
-        存储IO规格。  取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  [如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
+        **参数解释**： 云硬盘类型。[如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb,ax)》的“磁盘类型及性能介绍”。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) **约束限制**： 不涉及。 **取值范围**： - dms.physical.storage.high.v2：高IO云硬盘。 - dms.physical.storage.ultra.v2：超高IO云硬盘。 - [dms.physical.storage.general：通用型SSD云硬盘。](tag:hws,hws_hk,dt,ax) - [dms.physical.storage.extreme：极速型SSD云硬盘。](tag:hws,hws_hk,dt,ax) **默认取值**： 不涉及。
 
         :return: The storage_spec_code of this CreateInstanceByEngineReq.
         :rtype: str
@@ -886,7 +886,7 @@ class CreateInstanceByEngineReq:
     def storage_spec_code(self, storage_spec_code):
         r"""Sets the storage_spec_code of this CreateInstanceByEngineReq.
 
-        存储IO规格。  取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  [如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt)
+        **参数解释**： 云硬盘类型。[如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb,ax)》的“磁盘类型及性能介绍”。](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm,dt,ax) **约束限制**： 不涉及。 **取值范围**： - dms.physical.storage.high.v2：高IO云硬盘。 - dms.physical.storage.ultra.v2：超高IO云硬盘。 - [dms.physical.storage.general：通用型SSD云硬盘。](tag:hws,hws_hk,dt,ax) - [dms.physical.storage.extreme：极速型SSD云硬盘。](tag:hws,hws_hk,dt,ax) **默认取值**： 不涉及。
 
         :param storage_spec_code: The storage_spec_code of this CreateInstanceByEngineReq.
         :type storage_spec_code: str
@@ -897,7 +897,7 @@ class CreateInstanceByEngineReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateInstanceByEngineReq.
 
-        企业项目ID。若为企业项目账号，该参数必填。
+        **参数解释**： 企业项目ID。 **约束限制**： 若为企业项目账号，该参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The enterprise_project_id of this CreateInstanceByEngineReq.
         :rtype: str
@@ -908,7 +908,7 @@ class CreateInstanceByEngineReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateInstanceByEngineReq.
 
-        企业项目ID。若为企业项目账号，该参数必填。
+        **参数解释**： 企业项目ID。 **约束限制**： 若为企业项目账号，该参数必填。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateInstanceByEngineReq.
         :type enterprise_project_id: str
@@ -919,7 +919,7 @@ class CreateInstanceByEngineReq:
     def tags(self):
         r"""Gets the tags of this CreateInstanceByEngineReq.
 
-        标签列表。
+        **参数解释**： Kafka实例的标签信息。 **约束限制**： 不涉及。
 
         :return: The tags of this CreateInstanceByEngineReq.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
@@ -930,7 +930,7 @@ class CreateInstanceByEngineReq:
     def tags(self, tags):
         r"""Sets the tags of this CreateInstanceByEngineReq.
 
-        标签列表。
+        **参数解释**： Kafka实例的标签信息。 **约束限制**： 不涉及。
 
         :param tags: The tags of this CreateInstanceByEngineReq.
         :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
@@ -941,7 +941,7 @@ class CreateInstanceByEngineReq:
     def arch_type(self):
         r"""Gets the arch_type of this CreateInstanceByEngineReq.
 
-        CPU架构。当前只支持X86架构[以及arm架构](tag:hcs,fcs,ctc)。  取值范围：   - X86   [- arm](tag:hcs,fcs,ctc)
+        **参数解释**： CPU架构。 **约束限制**： 不涉及。 **取值范围**： - X86 [- ARM](tag:hcs,fcs,ctc) **默认取值**： 不涉及。
 
         :return: The arch_type of this CreateInstanceByEngineReq.
         :rtype: str
@@ -952,7 +952,7 @@ class CreateInstanceByEngineReq:
     def arch_type(self, arch_type):
         r"""Sets the arch_type of this CreateInstanceByEngineReq.
 
-        CPU架构。当前只支持X86架构[以及arm架构](tag:hcs,fcs,ctc)。  取值范围：   - X86   [- arm](tag:hcs,fcs,ctc)
+        **参数解释**： CPU架构。 **约束限制**： 不涉及。 **取值范围**： - X86 [- ARM](tag:hcs,fcs,ctc) **默认取值**： 不涉及。
 
         :param arch_type: The arch_type of this CreateInstanceByEngineReq.
         :type arch_type: str
@@ -963,7 +963,7 @@ class CreateInstanceByEngineReq:
     def vpc_client_plain(self):
         r"""Gets the vpc_client_plain of this CreateInstanceByEngineReq.
 
-        VPC内网明文访问。
+        **参数解释**： VPC内网明文访问。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The vpc_client_plain of this CreateInstanceByEngineReq.
         :rtype: bool
@@ -974,7 +974,7 @@ class CreateInstanceByEngineReq:
     def vpc_client_plain(self, vpc_client_plain):
         r"""Sets the vpc_client_plain of this CreateInstanceByEngineReq.
 
-        VPC内网明文访问。
+        **参数解释**： VPC内网明文访问。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param vpc_client_plain: The vpc_client_plain of this CreateInstanceByEngineReq.
         :type vpc_client_plain: bool

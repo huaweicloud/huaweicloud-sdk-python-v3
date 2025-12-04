@@ -41,7 +41,7 @@ class CreateGeoIpRuleRequestBody:
         :type geoip: str
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
-        :param status: 规则状态，0：关闭，1：开启
+        :param status: **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
         :type status: int
         :param description: 规则描述
         :type description: str
@@ -135,7 +135,7 @@ class CreateGeoIpRuleRequestBody:
     def status(self):
         r"""Gets the status of this CreateGeoIpRuleRequestBody.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :return: The status of this CreateGeoIpRuleRequestBody.
         :rtype: int
@@ -146,7 +146,7 @@ class CreateGeoIpRuleRequestBody:
     def status(self, status):
         r"""Sets the status of this CreateGeoIpRuleRequestBody.
 
-        规则状态，0：关闭，1：开启
+        **参数解释：** 规则状态标识，用于指定规则的启用或关闭状态 **约束限制：** 不涉及 **取值范围：**  - 0：关闭  - 1：开启 **默认取值：** 不涉及
 
         :param status: The status of this CreateGeoIpRuleRequestBody.
         :type status: int

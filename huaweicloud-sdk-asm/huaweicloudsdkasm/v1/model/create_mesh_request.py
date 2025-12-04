@@ -16,25 +16,21 @@ class CreateMeshRequest:
 
     openapi_types = {
         'content_type': 'str',
-        'x_apply_project_id': 'str',
         'body': 'Mesh'
     }
 
     attribute_map = {
         'content_type': 'Content-Type',
-        'x_apply_project_id': 'X-Apply-ProjectID',
         'body': 'body'
     }
 
-    def __init__(self, content_type=None, x_apply_project_id=None, body=None):
+    def __init__(self, content_type=None, body=None):
         r"""CreateMeshRequest
 
         The model defined in huaweicloud sdk
 
-        :param content_type: 消息体的类型（格式）
+        :param content_type: 消息体的类型（格式）。 取值范围： - application/json;charset&#x3D;utf-8：指定内容为JSON格式，并以UTF8字符编码进行编码 - application/json：指定内容为JSON格式
         :type content_type: str
-        :param x_apply_project_id: 网格所属ProjectID
-        :type x_apply_project_id: str
         :param body: Body of the CreateMeshRequest
         :type body: :class:`huaweicloudsdkasm.v1.Mesh`
         """
@@ -42,13 +38,10 @@ class CreateMeshRequest:
         
 
         self._content_type = None
-        self._x_apply_project_id = None
         self._body = None
         self.discriminator = None
 
         self.content_type = content_type
-        if x_apply_project_id is not None:
-            self.x_apply_project_id = x_apply_project_id
         if body is not None:
             self.body = body
 
@@ -56,7 +49,7 @@ class CreateMeshRequest:
     def content_type(self):
         r"""Gets the content_type of this CreateMeshRequest.
 
-        消息体的类型（格式）
+        消息体的类型（格式）。 取值范围： - application/json;charset=utf-8：指定内容为JSON格式，并以UTF8字符编码进行编码 - application/json：指定内容为JSON格式
 
         :return: The content_type of this CreateMeshRequest.
         :rtype: str
@@ -67,34 +60,12 @@ class CreateMeshRequest:
     def content_type(self, content_type):
         r"""Sets the content_type of this CreateMeshRequest.
 
-        消息体的类型（格式）
+        消息体的类型（格式）。 取值范围： - application/json;charset=utf-8：指定内容为JSON格式，并以UTF8字符编码进行编码 - application/json：指定内容为JSON格式
 
         :param content_type: The content_type of this CreateMeshRequest.
         :type content_type: str
         """
         self._content_type = content_type
-
-    @property
-    def x_apply_project_id(self):
-        r"""Gets the x_apply_project_id of this CreateMeshRequest.
-
-        网格所属ProjectID
-
-        :return: The x_apply_project_id of this CreateMeshRequest.
-        :rtype: str
-        """
-        return self._x_apply_project_id
-
-    @x_apply_project_id.setter
-    def x_apply_project_id(self, x_apply_project_id):
-        r"""Sets the x_apply_project_id of this CreateMeshRequest.
-
-        网格所属ProjectID
-
-        :param x_apply_project_id: The x_apply_project_id of this CreateMeshRequest.
-        :type x_apply_project_id: str
-        """
-        self._x_apply_project_id = x_apply_project_id
 
     @property
     def body(self):

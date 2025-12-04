@@ -16,7 +16,7 @@ class ModifyVmNicRequest:
 
     openapi_types = {
         'nic_id': 'str',
-        'body': 'BareMetalModifyPortRequest'
+        'body': 'BareMetalModifyPortRequestBody'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class ModifyVmNicRequest:
         :param nic_id: 
         :type nic_id: str
         :param body: Body of the ModifyVmNicRequest
-        :type body: :class:`huaweicloudsdkbms.v1.BareMetalModifyPortRequest`
+        :type body: :class:`huaweicloudsdkbms.v1.BareMetalModifyPortRequestBody`
         """
         
         
@@ -68,7 +68,7 @@ class ModifyVmNicRequest:
         r"""Gets the body of this ModifyVmNicRequest.
 
         :return: The body of this ModifyVmNicRequest.
-        :rtype: :class:`huaweicloudsdkbms.v1.BareMetalModifyPortRequest`
+        :rtype: :class:`huaweicloudsdkbms.v1.BareMetalModifyPortRequestBody`
         """
         return self._body
 
@@ -77,7 +77,7 @@ class ModifyVmNicRequest:
         r"""Sets the body of this ModifyVmNicRequest.
 
         :param body: The body of this ModifyVmNicRequest.
-        :type body: :class:`huaweicloudsdkbms.v1.BareMetalModifyPortRequest`
+        :type body: :class:`huaweicloudsdkbms.v1.BareMetalModifyPortRequestBody`
         """
         self._body = body
 

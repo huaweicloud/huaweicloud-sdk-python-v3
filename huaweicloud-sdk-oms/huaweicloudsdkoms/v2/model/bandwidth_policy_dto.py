@@ -31,11 +31,11 @@ class BandwidthPolicyDto:
 
         The model defined in huaweicloud sdk
 
-        :param end: 流量控制结束时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
+        :param end: 流量控制结束时间，格式为“hh:mm”。例如“12:03”表示12时03分。
         :type end: str
         :param max_bandwidth: 时段内允许的最大流量带宽，单位Byte/s，取值范围为&gt;&#x3D; 1048576Byte/s（相当于1MB/s）且&lt;&#x3D;209715200Byte/s（相当于200MB/s）。
         :type max_bandwidth: int
-        :param start: 流量控制开始时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
+        :param start: 流量控制开始时间，格式为“hh:mm”。例如“12:03”表示12时03分。
         :type start: str
         """
         
@@ -54,7 +54,7 @@ class BandwidthPolicyDto:
     def end(self):
         r"""Gets the end of this BandwidthPolicyDto.
 
-        流量控制结束时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
+        流量控制结束时间，格式为“hh:mm”。例如“12:03”表示12时03分。
 
         :return: The end of this BandwidthPolicyDto.
         :rtype: str
@@ -65,7 +65,7 @@ class BandwidthPolicyDto:
     def end(self, end):
         r"""Sets the end of this BandwidthPolicyDto.
 
-        流量控制结束时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
+        流量控制结束时间，格式为“hh:mm”。例如“12:03”表示12时03分。
 
         :param end: The end of this BandwidthPolicyDto.
         :type end: str
@@ -98,7 +98,7 @@ class BandwidthPolicyDto:
     def start(self):
         r"""Gets the start of this BandwidthPolicyDto.
 
-        流量控制开始时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
+        流量控制开始时间，格式为“hh:mm”。例如“12:03”表示12时03分。
 
         :return: The start of this BandwidthPolicyDto.
         :rtype: str
@@ -109,7 +109,7 @@ class BandwidthPolicyDto:
     def start(self, start):
         r"""Sets the start of this BandwidthPolicyDto.
 
-        流量控制开始时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
+        流量控制开始时间，格式为“hh:mm”。例如“12:03”表示12时03分。
 
         :param start: The start of this BandwidthPolicyDto.
         :type start: str

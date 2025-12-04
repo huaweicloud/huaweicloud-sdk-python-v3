@@ -61,41 +61,41 @@ class PortProtocolsEntity:
 
         The model defined in huaweicloud sdk
 
-        :param private_plain_enable: 实例是否支持内网PLAINTEXT访问接入方式。  - true：实例支持内网PLAINTEXT访问方式接入方式。  - false：实例不支持内网PLAINTEXT访问接入方式。
+        :param private_plain_enable: **参数解释**： 实例是否支持内网PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持内网PLAINTEXT访问方式接入方式。 - false：实例不支持内网PLAINTEXT访问接入方式。
         :type private_plain_enable: bool
-        :param private_plain_address: kafka内网PLAINTEXT接入方式连接地址。
+        :param private_plain_address: **参数解释**： Kafka内网PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
         :type private_plain_address: str
-        :param private_plain_domain_name: 内网明文连接域名
+        :param private_plain_domain_name: **参数解释**： 内网明文连接域名。 **取值范围**： 不涉及
         :type private_plain_domain_name: str
-        :param private_sasl_ssl_enable: 实例是否支持内网SASL_SSL访问接入方式。  - true：实例支持内网SASL_SSL访问方式接入方式。  - false：实例不支持内网SASL_SSL访问接入方式。
+        :param private_sasl_ssl_enable: **参数解释**： 实例是否支持内网SASL_SSL访问接入方式。 **取值范围**： - true：实例支持内网SASL_SSL访问方式接入方式。 - false：实例不支持内网SASL_SSL访问接入方式。
         :type private_sasl_ssl_enable: bool
-        :param private_sasl_ssl_address: kafka内网SASL_SSL接入方式连接地址。
+        :param private_sasl_ssl_address: **参数解释**： Kafka内网SASL_SSL接入方式连接地址。 **取值范围**： 不涉及
         :type private_sasl_ssl_address: str
-        :param private_sasl_ssl_domain_name: 内网SASL_SSL连接域名
+        :param private_sasl_ssl_domain_name: **参数解释**： 内网SASL_SSL连接域名。 **取值范围**： 不涉及
         :type private_sasl_ssl_domain_name: str
-        :param private_sasl_plaintext_enable: 实例是否支持内网SASL_PLAINTEXT访问接入方式。  - true，实例支持内网SASL_PLAINTEXT访问方式接入方式。  - false，实例不支持内网SASL_PLAINTEXT访问接入方式。
+        :param private_sasl_plaintext_enable: **参数解释**： 实例是否支持内网SASL_PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持内网SASL_PLAINTEXT访问方式接入方式。 - false：实例不支持内网SASL_PLAINTEXT访问接入方式。
         :type private_sasl_plaintext_enable: bool
-        :param private_sasl_plaintext_address: kafka内网SASL_PLAINTEXT接入方式连接地址。
+        :param private_sasl_plaintext_address: **参数解释**： Kafka内网SASL_PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
         :type private_sasl_plaintext_address: str
-        :param private_sasl_plaintext_domain_name: 内网SASL_PLAINTEXT连接域名
+        :param private_sasl_plaintext_domain_name: **参数解释**： 内网SASL_PLAINTEXT连接域名。 **取值范围**： 不涉及
         :type private_sasl_plaintext_domain_name: str
-        :param public_plain_enable: 实例是否支持公网PLAINTEXT访问接入方式。  - true，实例支持公网PLAINTEXT访问方式接入方式。  - false，实例不支持公网PLAINTEXT访问接入方式。
+        :param public_plain_enable: **参数解释**： 实例是否支持公网PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持公网PLAINTEXT访问方式接入方式。 - false：实例不支持公网PLAINTEXT访问接入方式。
         :type public_plain_enable: bool
-        :param public_plain_address: kafka公网PLAINTEXT接入方式连接地址。
+        :param public_plain_address: **参数解释**： Kafka公网PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
         :type public_plain_address: str
-        :param public_plain_domain_name: 公网明文连接域名
+        :param public_plain_domain_name: **参数解释**： 公网明文连接域名。 **取值范围**： 不涉及
         :type public_plain_domain_name: str
-        :param public_sasl_ssl_enable: 实例是否支持公网SASL_SSL访问接入方式。  - true，实例支持内网SASL_SSL访问方式接入方式。  - false，实例不支持公网SASL_SSL访问接入方式。
+        :param public_sasl_ssl_enable: **参数解释**： 实例是否支持公网SASL_SSL访问接入方式。 **取值范围**： - true：实例支持内网SASL_SSL访问方式接入方式。 - false：实例不支持公网SASL_SSL访问接入方式。
         :type public_sasl_ssl_enable: bool
-        :param public_sasl_ssl_address: kafka公网SASL_SSL接入方式连接地址。
+        :param public_sasl_ssl_address: **参数解释**： Kafka公网SASL_SSL接入方式连接地址。 **取值范围**： 不涉及
         :type public_sasl_ssl_address: str
-        :param public_sasl_ssl_domain_name: 公网SASL_SSL连接域名
+        :param public_sasl_ssl_domain_name: **参数解释**： 公网SASL_SSL连接域名。 **取值范围**： 不涉及
         :type public_sasl_ssl_domain_name: str
-        :param public_sasl_plaintext_enable: 实例是否支持公网SASL_PLAINTEXT访问接入方式。  - true，实例支持公网SASL_PLAINTEXT访问方式接入方式。  - false，实例不支持公网SASL_PLAINTEXT访问接入方式。
+        :param public_sasl_plaintext_enable: **参数解释**： 实例是否支持公网SASL_PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持公网SASL_PLAINTEXT访问方式接入方式。 - false：实例不支持公网SASL_PLAINTEXT访问接入方式。
         :type public_sasl_plaintext_enable: bool
-        :param public_sasl_plaintext_address: kafka公网SASL_PLAINTEXT接入方式连接地址。
+        :param public_sasl_plaintext_address: **参数解释**： Kafka公网SASL_PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
         :type public_sasl_plaintext_address: str
-        :param public_sasl_plaintext_domain_name: 公网SASL_PLAINTEXT连接域名
+        :param public_sasl_plaintext_domain_name: **参数解释**： 公网SASL_PLAINTEXT连接域名。 **取值范围**： 不涉及
         :type public_sasl_plaintext_domain_name: str
         """
         
@@ -162,7 +162,7 @@ class PortProtocolsEntity:
     def private_plain_enable(self):
         r"""Gets the private_plain_enable of this PortProtocolsEntity.
 
-        实例是否支持内网PLAINTEXT访问接入方式。  - true：实例支持内网PLAINTEXT访问方式接入方式。  - false：实例不支持内网PLAINTEXT访问接入方式。
+        **参数解释**： 实例是否支持内网PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持内网PLAINTEXT访问方式接入方式。 - false：实例不支持内网PLAINTEXT访问接入方式。
 
         :return: The private_plain_enable of this PortProtocolsEntity.
         :rtype: bool
@@ -173,7 +173,7 @@ class PortProtocolsEntity:
     def private_plain_enable(self, private_plain_enable):
         r"""Sets the private_plain_enable of this PortProtocolsEntity.
 
-        实例是否支持内网PLAINTEXT访问接入方式。  - true：实例支持内网PLAINTEXT访问方式接入方式。  - false：实例不支持内网PLAINTEXT访问接入方式。
+        **参数解释**： 实例是否支持内网PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持内网PLAINTEXT访问方式接入方式。 - false：实例不支持内网PLAINTEXT访问接入方式。
 
         :param private_plain_enable: The private_plain_enable of this PortProtocolsEntity.
         :type private_plain_enable: bool
@@ -184,7 +184,7 @@ class PortProtocolsEntity:
     def private_plain_address(self):
         r"""Gets the private_plain_address of this PortProtocolsEntity.
 
-        kafka内网PLAINTEXT接入方式连接地址。
+        **参数解释**： Kafka内网PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
 
         :return: The private_plain_address of this PortProtocolsEntity.
         :rtype: str
@@ -195,7 +195,7 @@ class PortProtocolsEntity:
     def private_plain_address(self, private_plain_address):
         r"""Sets the private_plain_address of this PortProtocolsEntity.
 
-        kafka内网PLAINTEXT接入方式连接地址。
+        **参数解释**： Kafka内网PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
 
         :param private_plain_address: The private_plain_address of this PortProtocolsEntity.
         :type private_plain_address: str
@@ -206,7 +206,7 @@ class PortProtocolsEntity:
     def private_plain_domain_name(self):
         r"""Gets the private_plain_domain_name of this PortProtocolsEntity.
 
-        内网明文连接域名
+        **参数解释**： 内网明文连接域名。 **取值范围**： 不涉及
 
         :return: The private_plain_domain_name of this PortProtocolsEntity.
         :rtype: str
@@ -217,7 +217,7 @@ class PortProtocolsEntity:
     def private_plain_domain_name(self, private_plain_domain_name):
         r"""Sets the private_plain_domain_name of this PortProtocolsEntity.
 
-        内网明文连接域名
+        **参数解释**： 内网明文连接域名。 **取值范围**： 不涉及
 
         :param private_plain_domain_name: The private_plain_domain_name of this PortProtocolsEntity.
         :type private_plain_domain_name: str
@@ -228,7 +228,7 @@ class PortProtocolsEntity:
     def private_sasl_ssl_enable(self):
         r"""Gets the private_sasl_ssl_enable of this PortProtocolsEntity.
 
-        实例是否支持内网SASL_SSL访问接入方式。  - true：实例支持内网SASL_SSL访问方式接入方式。  - false：实例不支持内网SASL_SSL访问接入方式。
+        **参数解释**： 实例是否支持内网SASL_SSL访问接入方式。 **取值范围**： - true：实例支持内网SASL_SSL访问方式接入方式。 - false：实例不支持内网SASL_SSL访问接入方式。
 
         :return: The private_sasl_ssl_enable of this PortProtocolsEntity.
         :rtype: bool
@@ -239,7 +239,7 @@ class PortProtocolsEntity:
     def private_sasl_ssl_enable(self, private_sasl_ssl_enable):
         r"""Sets the private_sasl_ssl_enable of this PortProtocolsEntity.
 
-        实例是否支持内网SASL_SSL访问接入方式。  - true：实例支持内网SASL_SSL访问方式接入方式。  - false：实例不支持内网SASL_SSL访问接入方式。
+        **参数解释**： 实例是否支持内网SASL_SSL访问接入方式。 **取值范围**： - true：实例支持内网SASL_SSL访问方式接入方式。 - false：实例不支持内网SASL_SSL访问接入方式。
 
         :param private_sasl_ssl_enable: The private_sasl_ssl_enable of this PortProtocolsEntity.
         :type private_sasl_ssl_enable: bool
@@ -250,7 +250,7 @@ class PortProtocolsEntity:
     def private_sasl_ssl_address(self):
         r"""Gets the private_sasl_ssl_address of this PortProtocolsEntity.
 
-        kafka内网SASL_SSL接入方式连接地址。
+        **参数解释**： Kafka内网SASL_SSL接入方式连接地址。 **取值范围**： 不涉及
 
         :return: The private_sasl_ssl_address of this PortProtocolsEntity.
         :rtype: str
@@ -261,7 +261,7 @@ class PortProtocolsEntity:
     def private_sasl_ssl_address(self, private_sasl_ssl_address):
         r"""Sets the private_sasl_ssl_address of this PortProtocolsEntity.
 
-        kafka内网SASL_SSL接入方式连接地址。
+        **参数解释**： Kafka内网SASL_SSL接入方式连接地址。 **取值范围**： 不涉及
 
         :param private_sasl_ssl_address: The private_sasl_ssl_address of this PortProtocolsEntity.
         :type private_sasl_ssl_address: str
@@ -272,7 +272,7 @@ class PortProtocolsEntity:
     def private_sasl_ssl_domain_name(self):
         r"""Gets the private_sasl_ssl_domain_name of this PortProtocolsEntity.
 
-        内网SASL_SSL连接域名
+        **参数解释**： 内网SASL_SSL连接域名。 **取值范围**： 不涉及
 
         :return: The private_sasl_ssl_domain_name of this PortProtocolsEntity.
         :rtype: str
@@ -283,7 +283,7 @@ class PortProtocolsEntity:
     def private_sasl_ssl_domain_name(self, private_sasl_ssl_domain_name):
         r"""Sets the private_sasl_ssl_domain_name of this PortProtocolsEntity.
 
-        内网SASL_SSL连接域名
+        **参数解释**： 内网SASL_SSL连接域名。 **取值范围**： 不涉及
 
         :param private_sasl_ssl_domain_name: The private_sasl_ssl_domain_name of this PortProtocolsEntity.
         :type private_sasl_ssl_domain_name: str
@@ -294,7 +294,7 @@ class PortProtocolsEntity:
     def private_sasl_plaintext_enable(self):
         r"""Gets the private_sasl_plaintext_enable of this PortProtocolsEntity.
 
-        实例是否支持内网SASL_PLAINTEXT访问接入方式。  - true，实例支持内网SASL_PLAINTEXT访问方式接入方式。  - false，实例不支持内网SASL_PLAINTEXT访问接入方式。
+        **参数解释**： 实例是否支持内网SASL_PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持内网SASL_PLAINTEXT访问方式接入方式。 - false：实例不支持内网SASL_PLAINTEXT访问接入方式。
 
         :return: The private_sasl_plaintext_enable of this PortProtocolsEntity.
         :rtype: bool
@@ -305,7 +305,7 @@ class PortProtocolsEntity:
     def private_sasl_plaintext_enable(self, private_sasl_plaintext_enable):
         r"""Sets the private_sasl_plaintext_enable of this PortProtocolsEntity.
 
-        实例是否支持内网SASL_PLAINTEXT访问接入方式。  - true，实例支持内网SASL_PLAINTEXT访问方式接入方式。  - false，实例不支持内网SASL_PLAINTEXT访问接入方式。
+        **参数解释**： 实例是否支持内网SASL_PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持内网SASL_PLAINTEXT访问方式接入方式。 - false：实例不支持内网SASL_PLAINTEXT访问接入方式。
 
         :param private_sasl_plaintext_enable: The private_sasl_plaintext_enable of this PortProtocolsEntity.
         :type private_sasl_plaintext_enable: bool
@@ -316,7 +316,7 @@ class PortProtocolsEntity:
     def private_sasl_plaintext_address(self):
         r"""Gets the private_sasl_plaintext_address of this PortProtocolsEntity.
 
-        kafka内网SASL_PLAINTEXT接入方式连接地址。
+        **参数解释**： Kafka内网SASL_PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
 
         :return: The private_sasl_plaintext_address of this PortProtocolsEntity.
         :rtype: str
@@ -327,7 +327,7 @@ class PortProtocolsEntity:
     def private_sasl_plaintext_address(self, private_sasl_plaintext_address):
         r"""Sets the private_sasl_plaintext_address of this PortProtocolsEntity.
 
-        kafka内网SASL_PLAINTEXT接入方式连接地址。
+        **参数解释**： Kafka内网SASL_PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
 
         :param private_sasl_plaintext_address: The private_sasl_plaintext_address of this PortProtocolsEntity.
         :type private_sasl_plaintext_address: str
@@ -338,7 +338,7 @@ class PortProtocolsEntity:
     def private_sasl_plaintext_domain_name(self):
         r"""Gets the private_sasl_plaintext_domain_name of this PortProtocolsEntity.
 
-        内网SASL_PLAINTEXT连接域名
+        **参数解释**： 内网SASL_PLAINTEXT连接域名。 **取值范围**： 不涉及
 
         :return: The private_sasl_plaintext_domain_name of this PortProtocolsEntity.
         :rtype: str
@@ -349,7 +349,7 @@ class PortProtocolsEntity:
     def private_sasl_plaintext_domain_name(self, private_sasl_plaintext_domain_name):
         r"""Sets the private_sasl_plaintext_domain_name of this PortProtocolsEntity.
 
-        内网SASL_PLAINTEXT连接域名
+        **参数解释**： 内网SASL_PLAINTEXT连接域名。 **取值范围**： 不涉及
 
         :param private_sasl_plaintext_domain_name: The private_sasl_plaintext_domain_name of this PortProtocolsEntity.
         :type private_sasl_plaintext_domain_name: str
@@ -360,7 +360,7 @@ class PortProtocolsEntity:
     def public_plain_enable(self):
         r"""Gets the public_plain_enable of this PortProtocolsEntity.
 
-        实例是否支持公网PLAINTEXT访问接入方式。  - true，实例支持公网PLAINTEXT访问方式接入方式。  - false，实例不支持公网PLAINTEXT访问接入方式。
+        **参数解释**： 实例是否支持公网PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持公网PLAINTEXT访问方式接入方式。 - false：实例不支持公网PLAINTEXT访问接入方式。
 
         :return: The public_plain_enable of this PortProtocolsEntity.
         :rtype: bool
@@ -371,7 +371,7 @@ class PortProtocolsEntity:
     def public_plain_enable(self, public_plain_enable):
         r"""Sets the public_plain_enable of this PortProtocolsEntity.
 
-        实例是否支持公网PLAINTEXT访问接入方式。  - true，实例支持公网PLAINTEXT访问方式接入方式。  - false，实例不支持公网PLAINTEXT访问接入方式。
+        **参数解释**： 实例是否支持公网PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持公网PLAINTEXT访问方式接入方式。 - false：实例不支持公网PLAINTEXT访问接入方式。
 
         :param public_plain_enable: The public_plain_enable of this PortProtocolsEntity.
         :type public_plain_enable: bool
@@ -382,7 +382,7 @@ class PortProtocolsEntity:
     def public_plain_address(self):
         r"""Gets the public_plain_address of this PortProtocolsEntity.
 
-        kafka公网PLAINTEXT接入方式连接地址。
+        **参数解释**： Kafka公网PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
 
         :return: The public_plain_address of this PortProtocolsEntity.
         :rtype: str
@@ -393,7 +393,7 @@ class PortProtocolsEntity:
     def public_plain_address(self, public_plain_address):
         r"""Sets the public_plain_address of this PortProtocolsEntity.
 
-        kafka公网PLAINTEXT接入方式连接地址。
+        **参数解释**： Kafka公网PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
 
         :param public_plain_address: The public_plain_address of this PortProtocolsEntity.
         :type public_plain_address: str
@@ -404,7 +404,7 @@ class PortProtocolsEntity:
     def public_plain_domain_name(self):
         r"""Gets the public_plain_domain_name of this PortProtocolsEntity.
 
-        公网明文连接域名
+        **参数解释**： 公网明文连接域名。 **取值范围**： 不涉及
 
         :return: The public_plain_domain_name of this PortProtocolsEntity.
         :rtype: str
@@ -415,7 +415,7 @@ class PortProtocolsEntity:
     def public_plain_domain_name(self, public_plain_domain_name):
         r"""Sets the public_plain_domain_name of this PortProtocolsEntity.
 
-        公网明文连接域名
+        **参数解释**： 公网明文连接域名。 **取值范围**： 不涉及
 
         :param public_plain_domain_name: The public_plain_domain_name of this PortProtocolsEntity.
         :type public_plain_domain_name: str
@@ -426,7 +426,7 @@ class PortProtocolsEntity:
     def public_sasl_ssl_enable(self):
         r"""Gets the public_sasl_ssl_enable of this PortProtocolsEntity.
 
-        实例是否支持公网SASL_SSL访问接入方式。  - true，实例支持内网SASL_SSL访问方式接入方式。  - false，实例不支持公网SASL_SSL访问接入方式。
+        **参数解释**： 实例是否支持公网SASL_SSL访问接入方式。 **取值范围**： - true：实例支持内网SASL_SSL访问方式接入方式。 - false：实例不支持公网SASL_SSL访问接入方式。
 
         :return: The public_sasl_ssl_enable of this PortProtocolsEntity.
         :rtype: bool
@@ -437,7 +437,7 @@ class PortProtocolsEntity:
     def public_sasl_ssl_enable(self, public_sasl_ssl_enable):
         r"""Sets the public_sasl_ssl_enable of this PortProtocolsEntity.
 
-        实例是否支持公网SASL_SSL访问接入方式。  - true，实例支持内网SASL_SSL访问方式接入方式。  - false，实例不支持公网SASL_SSL访问接入方式。
+        **参数解释**： 实例是否支持公网SASL_SSL访问接入方式。 **取值范围**： - true：实例支持内网SASL_SSL访问方式接入方式。 - false：实例不支持公网SASL_SSL访问接入方式。
 
         :param public_sasl_ssl_enable: The public_sasl_ssl_enable of this PortProtocolsEntity.
         :type public_sasl_ssl_enable: bool
@@ -448,7 +448,7 @@ class PortProtocolsEntity:
     def public_sasl_ssl_address(self):
         r"""Gets the public_sasl_ssl_address of this PortProtocolsEntity.
 
-        kafka公网SASL_SSL接入方式连接地址。
+        **参数解释**： Kafka公网SASL_SSL接入方式连接地址。 **取值范围**： 不涉及
 
         :return: The public_sasl_ssl_address of this PortProtocolsEntity.
         :rtype: str
@@ -459,7 +459,7 @@ class PortProtocolsEntity:
     def public_sasl_ssl_address(self, public_sasl_ssl_address):
         r"""Sets the public_sasl_ssl_address of this PortProtocolsEntity.
 
-        kafka公网SASL_SSL接入方式连接地址。
+        **参数解释**： Kafka公网SASL_SSL接入方式连接地址。 **取值范围**： 不涉及
 
         :param public_sasl_ssl_address: The public_sasl_ssl_address of this PortProtocolsEntity.
         :type public_sasl_ssl_address: str
@@ -470,7 +470,7 @@ class PortProtocolsEntity:
     def public_sasl_ssl_domain_name(self):
         r"""Gets the public_sasl_ssl_domain_name of this PortProtocolsEntity.
 
-        公网SASL_SSL连接域名
+        **参数解释**： 公网SASL_SSL连接域名。 **取值范围**： 不涉及
 
         :return: The public_sasl_ssl_domain_name of this PortProtocolsEntity.
         :rtype: str
@@ -481,7 +481,7 @@ class PortProtocolsEntity:
     def public_sasl_ssl_domain_name(self, public_sasl_ssl_domain_name):
         r"""Sets the public_sasl_ssl_domain_name of this PortProtocolsEntity.
 
-        公网SASL_SSL连接域名
+        **参数解释**： 公网SASL_SSL连接域名。 **取值范围**： 不涉及
 
         :param public_sasl_ssl_domain_name: The public_sasl_ssl_domain_name of this PortProtocolsEntity.
         :type public_sasl_ssl_domain_name: str
@@ -492,7 +492,7 @@ class PortProtocolsEntity:
     def public_sasl_plaintext_enable(self):
         r"""Gets the public_sasl_plaintext_enable of this PortProtocolsEntity.
 
-        实例是否支持公网SASL_PLAINTEXT访问接入方式。  - true，实例支持公网SASL_PLAINTEXT访问方式接入方式。  - false，实例不支持公网SASL_PLAINTEXT访问接入方式。
+        **参数解释**： 实例是否支持公网SASL_PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持公网SASL_PLAINTEXT访问方式接入方式。 - false：实例不支持公网SASL_PLAINTEXT访问接入方式。
 
         :return: The public_sasl_plaintext_enable of this PortProtocolsEntity.
         :rtype: bool
@@ -503,7 +503,7 @@ class PortProtocolsEntity:
     def public_sasl_plaintext_enable(self, public_sasl_plaintext_enable):
         r"""Sets the public_sasl_plaintext_enable of this PortProtocolsEntity.
 
-        实例是否支持公网SASL_PLAINTEXT访问接入方式。  - true，实例支持公网SASL_PLAINTEXT访问方式接入方式。  - false，实例不支持公网SASL_PLAINTEXT访问接入方式。
+        **参数解释**： 实例是否支持公网SASL_PLAINTEXT访问接入方式。 **取值范围**： - true：实例支持公网SASL_PLAINTEXT访问方式接入方式。 - false：实例不支持公网SASL_PLAINTEXT访问接入方式。
 
         :param public_sasl_plaintext_enable: The public_sasl_plaintext_enable of this PortProtocolsEntity.
         :type public_sasl_plaintext_enable: bool
@@ -514,7 +514,7 @@ class PortProtocolsEntity:
     def public_sasl_plaintext_address(self):
         r"""Gets the public_sasl_plaintext_address of this PortProtocolsEntity.
 
-        kafka公网SASL_PLAINTEXT接入方式连接地址。
+        **参数解释**： Kafka公网SASL_PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
 
         :return: The public_sasl_plaintext_address of this PortProtocolsEntity.
         :rtype: str
@@ -525,7 +525,7 @@ class PortProtocolsEntity:
     def public_sasl_plaintext_address(self, public_sasl_plaintext_address):
         r"""Sets the public_sasl_plaintext_address of this PortProtocolsEntity.
 
-        kafka公网SASL_PLAINTEXT接入方式连接地址。
+        **参数解释**： Kafka公网SASL_PLAINTEXT接入方式连接地址。 **取值范围**： 不涉及
 
         :param public_sasl_plaintext_address: The public_sasl_plaintext_address of this PortProtocolsEntity.
         :type public_sasl_plaintext_address: str
@@ -536,7 +536,7 @@ class PortProtocolsEntity:
     def public_sasl_plaintext_domain_name(self):
         r"""Gets the public_sasl_plaintext_domain_name of this PortProtocolsEntity.
 
-        公网SASL_PLAINTEXT连接域名
+        **参数解释**： 公网SASL_PLAINTEXT连接域名。 **取值范围**： 不涉及
 
         :return: The public_sasl_plaintext_domain_name of this PortProtocolsEntity.
         :rtype: str
@@ -547,7 +547,7 @@ class PortProtocolsEntity:
     def public_sasl_plaintext_domain_name(self, public_sasl_plaintext_domain_name):
         r"""Sets the public_sasl_plaintext_domain_name of this PortProtocolsEntity.
 
-        公网SASL_PLAINTEXT连接域名
+        **参数解释**： 公网SASL_PLAINTEXT连接域名。 **取值范围**： 不涉及
 
         :param public_sasl_plaintext_domain_name: The public_sasl_plaintext_domain_name of this PortProtocolsEntity.
         :type public_sasl_plaintext_domain_name: str

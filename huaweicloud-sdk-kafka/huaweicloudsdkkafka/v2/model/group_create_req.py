@@ -29,9 +29,9 @@ class GroupCreateReq:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 消费组名称
+        :param group_name: **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及
         :type group_name: str
-        :param group_desc: 消费组描述
+        :param group_desc: **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及
         :type group_desc: str
         """
         
@@ -50,7 +50,7 @@ class GroupCreateReq:
     def group_name(self):
         r"""Gets the group_name of this GroupCreateReq.
 
-        消费组名称
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及
 
         :return: The group_name of this GroupCreateReq.
         :rtype: str
@@ -61,7 +61,7 @@ class GroupCreateReq:
     def group_name(self, group_name):
         r"""Sets the group_name of this GroupCreateReq.
 
-        消费组名称
+        **参数解释**： 消费组名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及
 
         :param group_name: The group_name of this GroupCreateReq.
         :type group_name: str
@@ -72,7 +72,7 @@ class GroupCreateReq:
     def group_desc(self):
         r"""Gets the group_desc of this GroupCreateReq.
 
-        消费组描述
+        **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及
 
         :return: The group_desc of this GroupCreateReq.
         :rtype: str
@@ -83,7 +83,7 @@ class GroupCreateReq:
     def group_desc(self, group_desc):
         r"""Sets the group_desc of this GroupCreateReq.
 
-        消费组描述
+        **参数解释**： 消费组描述。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及
 
         :param group_desc: The group_desc of this GroupCreateReq.
         :type group_desc: str

@@ -37,17 +37,17 @@ class GroupInfoSimple:
 
         The model defined in huaweicloud sdk
 
-        :param created_at: 创建时间。
+        :param created_at: **参数解释**： 创建时间。 **取值范围**： 不涉及。
         :type created_at: int
-        :param group_id: 消费组ID。
+        :param group_id: **参数解释**： 消费组ID。 **取值范围**： 不涉及。
         :type group_id: str
-        :param state: 消费组状态。包含以下状态： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        :param state: **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
         :type state: str
-        :param coordinator_id: 协调器编号。
+        :param coordinator_id: **参数解释**： 协调器编号。 **取值范围**： 不涉及。
         :type coordinator_id: int
-        :param group_desc: 消费组描述。
+        :param group_desc: **参数解释**： 消费组的描述信息。 **取值范围**： 不涉及。
         :type group_desc: str
-        :param lag: 堆积数。
+        :param lag: **参数解释**： 堆积数。 **取值范围**： 不涉及。
         :type lag: int
         """
         
@@ -78,7 +78,7 @@ class GroupInfoSimple:
     def created_at(self):
         r"""Gets the created_at of this GroupInfoSimple.
 
-        创建时间。
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :return: The created_at of this GroupInfoSimple.
         :rtype: int
@@ -89,7 +89,7 @@ class GroupInfoSimple:
     def created_at(self, created_at):
         r"""Sets the created_at of this GroupInfoSimple.
 
-        创建时间。
+        **参数解释**： 创建时间。 **取值范围**： 不涉及。
 
         :param created_at: The created_at of this GroupInfoSimple.
         :type created_at: int
@@ -100,7 +100,7 @@ class GroupInfoSimple:
     def group_id(self):
         r"""Gets the group_id of this GroupInfoSimple.
 
-        消费组ID。
+        **参数解释**： 消费组ID。 **取值范围**： 不涉及。
 
         :return: The group_id of this GroupInfoSimple.
         :rtype: str
@@ -111,7 +111,7 @@ class GroupInfoSimple:
     def group_id(self, group_id):
         r"""Sets the group_id of this GroupInfoSimple.
 
-        消费组ID。
+        **参数解释**： 消费组ID。 **取值范围**： 不涉及。
 
         :param group_id: The group_id of this GroupInfoSimple.
         :type group_id: str
@@ -122,7 +122,7 @@ class GroupInfoSimple:
     def state(self):
         r"""Gets the state of this GroupInfoSimple.
 
-        消费组状态。包含以下状态： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
 
         :return: The state of this GroupInfoSimple.
         :rtype: str
@@ -133,7 +133,7 @@ class GroupInfoSimple:
     def state(self, state):
         r"""Sets the state of this GroupInfoSimple.
 
-        消费组状态。包含以下状态： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
+        **参数解释**： 消费组状态。 **取值范围**： - Dead：消费组内没有任何成员，且没有任何元数据。 - Empty：消费组内没有任何成员，存在元数据。 - PreparingRebalance：准备开启rebalance。 - CompletingRebalance：所有成员加入group。 - Stable：消费组内成员可正常消费。
 
         :param state: The state of this GroupInfoSimple.
         :type state: str
@@ -144,7 +144,7 @@ class GroupInfoSimple:
     def coordinator_id(self):
         r"""Gets the coordinator_id of this GroupInfoSimple.
 
-        协调器编号。
+        **参数解释**： 协调器编号。 **取值范围**： 不涉及。
 
         :return: The coordinator_id of this GroupInfoSimple.
         :rtype: int
@@ -155,7 +155,7 @@ class GroupInfoSimple:
     def coordinator_id(self, coordinator_id):
         r"""Sets the coordinator_id of this GroupInfoSimple.
 
-        协调器编号。
+        **参数解释**： 协调器编号。 **取值范围**： 不涉及。
 
         :param coordinator_id: The coordinator_id of this GroupInfoSimple.
         :type coordinator_id: int
@@ -166,7 +166,7 @@ class GroupInfoSimple:
     def group_desc(self):
         r"""Gets the group_desc of this GroupInfoSimple.
 
-        消费组描述。
+        **参数解释**： 消费组的描述信息。 **取值范围**： 不涉及。
 
         :return: The group_desc of this GroupInfoSimple.
         :rtype: str
@@ -177,7 +177,7 @@ class GroupInfoSimple:
     def group_desc(self, group_desc):
         r"""Sets the group_desc of this GroupInfoSimple.
 
-        消费组描述。
+        **参数解释**： 消费组的描述信息。 **取值范围**： 不涉及。
 
         :param group_desc: The group_desc of this GroupInfoSimple.
         :type group_desc: str
@@ -188,7 +188,7 @@ class GroupInfoSimple:
     def lag(self):
         r"""Gets the lag of this GroupInfoSimple.
 
-        堆积数。
+        **参数解释**： 堆积数。 **取值范围**： 不涉及。
 
         :return: The lag of this GroupInfoSimple.
         :rtype: int
@@ -199,7 +199,7 @@ class GroupInfoSimple:
     def lag(self, lag):
         r"""Sets the lag of this GroupInfoSimple.
 
-        堆积数。
+        **参数解释**： 堆积数。 **取值范围**： 不涉及。
 
         :param lag: The lag of this GroupInfoSimple.
         :type lag: int

@@ -17,7 +17,7 @@ class ResetUserPasswrodRequest:
     openapi_types = {
         'instance_id': 'str',
         'user_name': 'str',
-        'body': 'ResetUserPasswrodReq'
+        'body': 'ResetUserPasswordReq'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class ResetUserPasswrodRequest:
         :param user_name: 用户名称。
         :type user_name: str
         :param body: Body of the ResetUserPasswrodRequest
-        :type body: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodReq`
+        :type body: :class:`huaweicloudsdkkafka.v2.ResetUserPasswordReq`
         """
         
         
@@ -100,7 +100,7 @@ class ResetUserPasswrodRequest:
         r"""Gets the body of this ResetUserPasswrodRequest.
 
         :return: The body of this ResetUserPasswrodRequest.
-        :rtype: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodReq`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResetUserPasswordReq`
         """
         return self._body
 
@@ -109,7 +109,7 @@ class ResetUserPasswrodRequest:
         r"""Sets the body of this ResetUserPasswrodRequest.
 
         :param body: The body of this ResetUserPasswrodRequest.
-        :type body: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodReq`
+        :type body: :class:`huaweicloudsdkkafka.v2.ResetUserPasswordReq`
         """
         self._body = body
 

@@ -86,11 +86,11 @@ class ShowInstanceResponse(SdkResponse):
         :type service_ip: str
         :param security_group_ids: 独享引擎绑定的安全组
         :type security_group_ids: list[str]
-        :param status: 独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
+        :param status: **参数解释：** 独享引擎计费状态标识，用于指示独享引擎当前的计费使用状态 **约束限制：** 不涉及 **取值范围：**  - 0：正常计费  - 1：冻结，资源和数据会保留，但租户无法再正常使用云服务  - 2：终止，资源和数据将清除 **默认取值：** 不涉及
         :type status: int
-        :param run_status: 独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
+        :param run_status: **参数解释：** 独享引擎运行状态标识，用于反映独享引擎当前的运行生命周期状态 **约束限制：** 不涉及 **取值范围：**  - 0：创建中  - 1：运行中  - 2：删除中  - 3：已删除  - 4：创建失败  - 5：已冻结  - 6：异常  - 7：更新中  - 8：更新失败 **默认取值：** 不涉及
         :type run_status: int
-        :param access_status: 独享引擎接入状态（0：未接入，1：已接入）
+        :param access_status: **参数解释：** 独享引擎接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
         :type access_status: int
         :param upgradable: 独享引擎是否可升级（0：不可升级，1：可升级）
         :type upgradable: int
@@ -397,7 +397,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowInstanceResponse.
 
-        独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
+        **参数解释：** 独享引擎计费状态标识，用于指示独享引擎当前的计费使用状态 **约束限制：** 不涉及 **取值范围：**  - 0：正常计费  - 1：冻结，资源和数据会保留，但租户无法再正常使用云服务  - 2：终止，资源和数据将清除 **默认取值：** 不涉及
 
         :return: The status of this ShowInstanceResponse.
         :rtype: int
@@ -408,7 +408,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowInstanceResponse.
 
-        独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
+        **参数解释：** 独享引擎计费状态标识，用于指示独享引擎当前的计费使用状态 **约束限制：** 不涉及 **取值范围：**  - 0：正常计费  - 1：冻结，资源和数据会保留，但租户无法再正常使用云服务  - 2：终止，资源和数据将清除 **默认取值：** 不涉及
 
         :param status: The status of this ShowInstanceResponse.
         :type status: int
@@ -419,7 +419,7 @@ class ShowInstanceResponse(SdkResponse):
     def run_status(self):
         r"""Gets the run_status of this ShowInstanceResponse.
 
-        独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
+        **参数解释：** 独享引擎运行状态标识，用于反映独享引擎当前的运行生命周期状态 **约束限制：** 不涉及 **取值范围：**  - 0：创建中  - 1：运行中  - 2：删除中  - 3：已删除  - 4：创建失败  - 5：已冻结  - 6：异常  - 7：更新中  - 8：更新失败 **默认取值：** 不涉及
 
         :return: The run_status of this ShowInstanceResponse.
         :rtype: int
@@ -430,7 +430,7 @@ class ShowInstanceResponse(SdkResponse):
     def run_status(self, run_status):
         r"""Sets the run_status of this ShowInstanceResponse.
 
-        独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
+        **参数解释：** 独享引擎运行状态标识，用于反映独享引擎当前的运行生命周期状态 **约束限制：** 不涉及 **取值范围：**  - 0：创建中  - 1：运行中  - 2：删除中  - 3：已删除  - 4：创建失败  - 5：已冻结  - 6：异常  - 7：更新中  - 8：更新失败 **默认取值：** 不涉及
 
         :param run_status: The run_status of this ShowInstanceResponse.
         :type run_status: int
@@ -441,7 +441,7 @@ class ShowInstanceResponse(SdkResponse):
     def access_status(self):
         r"""Gets the access_status of this ShowInstanceResponse.
 
-        独享引擎接入状态（0：未接入，1：已接入）
+        **参数解释：** 独享引擎接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
         :return: The access_status of this ShowInstanceResponse.
         :rtype: int
@@ -452,7 +452,7 @@ class ShowInstanceResponse(SdkResponse):
     def access_status(self, access_status):
         r"""Sets the access_status of this ShowInstanceResponse.
 
-        独享引擎接入状态（0：未接入，1：已接入）
+        **参数解释：** 独享引擎接入状态 **约束限制：** 不涉及 **取值范围：**  - 0: 未接入  - 1: 已接入  **默认取值：** 不涉及
 
         :param access_status: The access_status of this ShowInstanceResponse.
         :type access_status: int

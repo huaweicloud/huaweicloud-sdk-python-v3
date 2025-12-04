@@ -44,7 +44,7 @@ class ShowValueListResponse(SdkResponse):
         :type id: str
         :param name: 引用表名称
         :type name: str
-        :param type: 引用表类型
+        :param type: **参数解释：** 引用表类型 **约束限制：** 不涉及 **取值范围：**  - url  - params  - ip  - cookie  - referer  - user-agent  - header  - response_code  - response_header  - response_body  **默认取值：** 不涉及
         :type type: str
         :param description: 引用表描述
         :type description: str
@@ -130,7 +130,7 @@ class ShowValueListResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowValueListResponse.
 
-        引用表类型
+        **参数解释：** 引用表类型 **约束限制：** 不涉及 **取值范围：**  - url  - params  - ip  - cookie  - referer  - user-agent  - header  - response_code  - response_header  - response_body  **默认取值：** 不涉及
 
         :return: The type of this ShowValueListResponse.
         :rtype: str
@@ -141,7 +141,7 @@ class ShowValueListResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowValueListResponse.
 
-        引用表类型
+        **参数解释：** 引用表类型 **约束限制：** 不涉及 **取值范围：**  - url  - params  - ip  - cookie  - referer  - user-agent  - header  - response_code  - response_header  - response_body  **默认取值：** 不涉及
 
         :param type: The type of this ShowValueListResponse.
         :type type: str

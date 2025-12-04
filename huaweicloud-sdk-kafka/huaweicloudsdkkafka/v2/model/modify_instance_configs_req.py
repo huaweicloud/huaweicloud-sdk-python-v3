@@ -27,7 +27,7 @@ class ModifyInstanceConfigsReq:
 
         The model defined in huaweicloud sdk
 
-        :param kafka_configs: kafka待修改配置列表。
+        :param kafka_configs: Kafka待修改配置列表。
         :type kafka_configs: list[:class:`huaweicloudsdkkafka.v2.ModifyInstanceConfig`]
         """
         
@@ -43,7 +43,7 @@ class ModifyInstanceConfigsReq:
     def kafka_configs(self):
         r"""Gets the kafka_configs of this ModifyInstanceConfigsReq.
 
-        kafka待修改配置列表。
+        Kafka待修改配置列表。
 
         :return: The kafka_configs of this ModifyInstanceConfigsReq.
         :rtype: list[:class:`huaweicloudsdkkafka.v2.ModifyInstanceConfig`]
@@ -54,7 +54,7 @@ class ModifyInstanceConfigsReq:
     def kafka_configs(self, kafka_configs):
         r"""Sets the kafka_configs of this ModifyInstanceConfigsReq.
 
-        kafka待修改配置列表。
+        Kafka待修改配置列表。
 
         :param kafka_configs: The kafka_configs of this ModifyInstanceConfigsReq.
         :type kafka_configs: list[:class:`huaweicloudsdkkafka.v2.ModifyInstanceConfig`]

@@ -30,9 +30,9 @@ class ConfirmDnsDomainResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param next_marker: 
+        :param next_marker: dns标识
         :type next_marker: str
-        :param items: 
+        :param items: dns域名列表
         :type items: list[:class:`huaweicloudsdkwaf.v1.DnsDomain`]
         """
         
@@ -51,6 +51,8 @@ class ConfirmDnsDomainResponse(SdkResponse):
     def next_marker(self):
         r"""Gets the next_marker of this ConfirmDnsDomainResponse.
 
+        dns标识
+
         :return: The next_marker of this ConfirmDnsDomainResponse.
         :rtype: str
         """
@@ -59,6 +61,8 @@ class ConfirmDnsDomainResponse(SdkResponse):
     @next_marker.setter
     def next_marker(self, next_marker):
         r"""Sets the next_marker of this ConfirmDnsDomainResponse.
+
+        dns标识
 
         :param next_marker: The next_marker of this ConfirmDnsDomainResponse.
         :type next_marker: str
@@ -69,6 +73,8 @@ class ConfirmDnsDomainResponse(SdkResponse):
     def items(self):
         r"""Gets the items of this ConfirmDnsDomainResponse.
 
+        dns域名列表
+
         :return: The items of this ConfirmDnsDomainResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.DnsDomain`]
         """
@@ -77,6 +83,8 @@ class ConfirmDnsDomainResponse(SdkResponse):
     @items.setter
     def items(self, items):
         r"""Sets the items of this ConfirmDnsDomainResponse.
+
+        dns域名列表
 
         :param items: The items of this ConfirmDnsDomainResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.DnsDomain`]

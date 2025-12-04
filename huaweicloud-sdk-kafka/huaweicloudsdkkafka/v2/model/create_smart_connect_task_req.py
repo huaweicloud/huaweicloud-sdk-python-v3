@@ -49,11 +49,11 @@ class CreateSmartConnectTaskReq:
         :type topics: str
         :param topics_regex: SmartConnect任务配置的Topic正则表达式。
         :type topics_regex: str
-        :param source_type: SmartConnect任务的源端类型。
+        :param source_type: **参数解释**： SmartConnect任务的源端类型。 **约束限制**： 不涉及。 **取值范围**： - KAFKA_REPLICATOR_SOURCE：Kafka数据复制。 - NONE：不配置。 **默认取值**： 不涉及。
         :type source_type: str
         :param source_task: 
         :type source_task: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskReqSourceConfig`
-        :param sink_type: SmartConnect任务的目标端类型。
+        :param sink_type: **参数解释**： SmartConnect任务的目标端类型。 **约束限制**： 不涉及。 **取值范围**： - OBS_SINK：转储。 - NONE：不配置。 **默认取值**： 不涉及。
         :type sink_type: str
         :param sink_task: 
         :type sink_task: :class:`huaweicloudsdkkafka.v2.SmartConnectTaskReqSinkConfig`
@@ -180,7 +180,7 @@ class CreateSmartConnectTaskReq:
     def source_type(self):
         r"""Gets the source_type of this CreateSmartConnectTaskReq.
 
-        SmartConnect任务的源端类型。
+        **参数解释**： SmartConnect任务的源端类型。 **约束限制**： 不涉及。 **取值范围**： - KAFKA_REPLICATOR_SOURCE：Kafka数据复制。 - NONE：不配置。 **默认取值**： 不涉及。
 
         :return: The source_type of this CreateSmartConnectTaskReq.
         :rtype: str
@@ -191,7 +191,7 @@ class CreateSmartConnectTaskReq:
     def source_type(self, source_type):
         r"""Sets the source_type of this CreateSmartConnectTaskReq.
 
-        SmartConnect任务的源端类型。
+        **参数解释**： SmartConnect任务的源端类型。 **约束限制**： 不涉及。 **取值范围**： - KAFKA_REPLICATOR_SOURCE：Kafka数据复制。 - NONE：不配置。 **默认取值**： 不涉及。
 
         :param source_type: The source_type of this CreateSmartConnectTaskReq.
         :type source_type: str
@@ -220,7 +220,7 @@ class CreateSmartConnectTaskReq:
     def sink_type(self):
         r"""Gets the sink_type of this CreateSmartConnectTaskReq.
 
-        SmartConnect任务的目标端类型。
+        **参数解释**： SmartConnect任务的目标端类型。 **约束限制**： 不涉及。 **取值范围**： - OBS_SINK：转储。 - NONE：不配置。 **默认取值**： 不涉及。
 
         :return: The sink_type of this CreateSmartConnectTaskReq.
         :rtype: str
@@ -231,7 +231,7 @@ class CreateSmartConnectTaskReq:
     def sink_type(self, sink_type):
         r"""Sets the sink_type of this CreateSmartConnectTaskReq.
 
-        SmartConnect任务的目标端类型。
+        **参数解释**： SmartConnect任务的目标端类型。 **约束限制**： 不涉及。 **取值范围**： - OBS_SINK：转储。 - NONE：不配置。 **默认取值**： 不涉及。
 
         :param sink_type: The sink_type of this CreateSmartConnectTaskReq.
         :type sink_type: str

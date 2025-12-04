@@ -25,6 +25,7 @@ from huaweicloudsdkdds.v3.model.backup_for_list import BackupForList
 from huaweicloudsdkdds.v3.model.backup_policy import BackupPolicy
 from huaweicloudsdkdds.v3.model.backup_policy_item import BackupPolicyItem
 from huaweicloudsdkdds.v3.model.backup_strategy import BackupStrategy
+from huaweicloudsdkdds.v3.model.backup_strategy_for_item_response import BackupStrategyForItemResponse
 from huaweicloudsdkdds.v3.model.balancer_active_window import BalancerActiveWindow
 from huaweicloudsdkdds.v3.model.batch_delete_backup_request import BatchDeleteBackupRequest
 from huaweicloudsdkdds.v3.model.batch_delete_backup_request_body import BatchDeleteBackupRequestBody
@@ -66,6 +67,11 @@ from huaweicloudsdkdds.v3.model.create_database_role_response import CreateDatab
 from huaweicloudsdkdds.v3.model.create_database_user_request import CreateDatabaseUserRequest
 from huaweicloudsdkdds.v3.model.create_database_user_request_body import CreateDatabaseUserRequestBody
 from huaweicloudsdkdds.v3.model.create_database_user_response import CreateDatabaseUserResponse
+from huaweicloudsdkdds.v3.model.create_instance_configurations_option import CreateInstanceConfigurationsOption
+from huaweicloudsdkdds.v3.model.create_instance_flavor_option import CreateInstanceFlavorOption
+from huaweicloudsdkdds.v3.model.create_instance_request import CreateInstanceRequest
+from huaweicloudsdkdds.v3.model.create_instance_request_body import CreateInstanceRequestBody
+from huaweicloudsdkdds.v3.model.create_instance_response import CreateInstanceResponse
 from huaweicloudsdkdds.v3.model.create_ip_request import CreateIpRequest
 from huaweicloudsdkdds.v3.model.create_ip_request_body import CreateIpRequestBody
 from huaweicloudsdkdds.v3.model.create_ip_response import CreateIpResponse
@@ -78,6 +84,7 @@ from huaweicloudsdkdds.v3.model.create_manual_backup_request_body import CreateM
 from huaweicloudsdkdds.v3.model.create_manual_backup_response import CreateManualBackupResponse
 from huaweicloudsdkdds.v3.model.database_info_item import DatabaseInfoItem
 from huaweicloudsdkdds.v3.model.datastore import Datastore
+from huaweicloudsdkdds.v3.model.datastore_item import DatastoreItem
 from huaweicloudsdkdds.v3.model.datastore_result import DatastoreResult
 from huaweicloudsdkdds.v3.model.delete_audit_log_request import DeleteAuditLogRequest
 from huaweicloudsdkdds.v3.model.delete_audit_log_request_body import DeleteAuditLogRequestBody
@@ -139,6 +146,7 @@ from huaweicloudsdkdds.v3.model.expand_replicaset_node_response import ExpandRep
 from huaweicloudsdkdds.v3.model.flavor import Flavor
 from huaweicloudsdkdds.v3.model.flavor_info import FlavorInfo
 from huaweicloudsdkdds.v3.model.get_backup_download_link_response_body_files import GetBackupDownloadLinkResponseBodyFiles
+from huaweicloudsdkdds.v3.model.group_response_item import GroupResponseItem
 from huaweicloudsdkdds.v3.model.history_info import HistoryInfo
 from huaweicloudsdkdds.v3.model.instance_item import InstanceItem
 from huaweicloudsdkdds.v3.model.instance_item_tag_item import InstanceItemTagItem
@@ -184,6 +192,8 @@ from huaweicloudsdkdds.v3.model.list_instance_tags_response import ListInstanceT
 from huaweicloudsdkdds.v3.model.list_instances_by_tags_request import ListInstancesByTagsRequest
 from huaweicloudsdkdds.v3.model.list_instances_by_tags_request_body import ListInstancesByTagsRequestBody
 from huaweicloudsdkdds.v3.model.list_instances_by_tags_response import ListInstancesByTagsResponse
+from huaweicloudsdkdds.v3.model.list_instances_request import ListInstancesRequest
+from huaweicloudsdkdds.v3.model.list_instances_response import ListInstancesResponse
 from huaweicloudsdkdds.v3.model.list_lts_configs_request import ListLtsConfigsRequest
 from huaweicloudsdkdds.v3.model.list_lts_configs_response import ListLtsConfigsResponse
 from huaweicloudsdkdds.v3.model.list_lts_error_logs_request import ListLtsErrorLogsRequest
@@ -224,10 +234,12 @@ from huaweicloudsdkdds.v3.model.migrate_az_request import MigrateAzRequest
 from huaweicloudsdkdds.v3.model.migrate_az_request_body import MigrateAzRequestBody
 from huaweicloudsdkdds.v3.model.migrate_az_response import MigrateAzResponse
 from huaweicloudsdkdds.v3.model.mongo_update_repl_set_v3_request_body import MongoUpdateReplSetV3RequestBody
+from huaweicloudsdkdds.v3.model.node_item import NodeItem
 from huaweicloudsdkdds.v3.model.ops_window_request_body import OpsWindowRequestBody
 from huaweicloudsdkdds.v3.model.param_group_info_result import ParamGroupInfoResult
 from huaweicloudsdkdds.v3.model.produce_auditlog_links_request_body import ProduceAuditlogLinksRequestBody
 from huaweicloudsdkdds.v3.model.query_connections_response import QueryConnectionsResponse
+from huaweicloudsdkdds.v3.model.query_instance_response import QueryInstanceResponse
 from huaweicloudsdkdds.v3.model.query_match_item import QueryMatchItem
 from huaweicloudsdkdds.v3.model.query_project_tag_item import QueryProjectTagItem
 from huaweicloudsdkdds.v3.model.query_resource_tag_item import QueryResourceTagItem
@@ -359,6 +371,8 @@ from huaweicloudsdkdds.v3.model.switchover_replica_set_request import Switchover
 from huaweicloudsdkdds.v3.model.switchover_replica_set_request_body import SwitchoverReplicaSetRequestBody
 from huaweicloudsdkdds.v3.model.switchover_replica_set_response import SwitchoverReplicaSetResponse
 from huaweicloudsdkdds.v3.model.tag_item import TagItem
+from huaweicloudsdkdds.v3.model.tag_response import TagResponse
+from huaweicloudsdkdds.v3.model.tag_with_key_value import TagWithKeyValue
 from huaweicloudsdkdds.v3.model.target import Target
 from huaweicloudsdkdds.v3.model.update_backup_download_policy_request import UpdateBackupDownloadPolicyRequest
 from huaweicloudsdkdds.v3.model.update_backup_download_policy_request_body import UpdateBackupDownloadPolicyRequestBody
@@ -398,4 +412,5 @@ from huaweicloudsdkdds.v3.model.upgrade_database_version_response import Upgrade
 from huaweicloudsdkdds.v3.model.upgrade_result import UpgradeResult
 from huaweicloudsdkdds.v3.model.validate_configuration_name_request import ValidateConfigurationNameRequest
 from huaweicloudsdkdds.v3.model.validate_configuration_name_response import ValidateConfigurationNameResponse
+from huaweicloudsdkdds.v3.model.volume import Volume
 from huaweicloudsdkdds.v3.model.weak_password_check_request_body import WeakPasswordCheckRequestBody

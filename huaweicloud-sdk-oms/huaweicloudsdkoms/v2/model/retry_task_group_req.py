@@ -53,7 +53,7 @@ class RetryTaskGroupReq:
         :type dst_ak: str
         :param dst_sk: 目的端sk（最大长度100个字符）
         :type dst_sk: str
-        :param source_cdn_authentication_key: cdn鉴权秘钥
+        :param source_cdn_authentication_key: cdn鉴权密钥
         :type source_cdn_authentication_key: str
         :param migrate_failed_object: 失败任务重试方式，标识是否为全量重新迁移，默认false（全量重新迁移）。 值为true时表示只重传失败对象。 值为空或者为false时表示全量重新迁移（默认跳过目的端已迁移对象）。
         :type migrate_failed_object: bool
@@ -224,7 +224,7 @@ class RetryTaskGroupReq:
     def source_cdn_authentication_key(self):
         r"""Gets the source_cdn_authentication_key of this RetryTaskGroupReq.
 
-        cdn鉴权秘钥
+        cdn鉴权密钥
 
         :return: The source_cdn_authentication_key of this RetryTaskGroupReq.
         :rtype: str
@@ -235,7 +235,7 @@ class RetryTaskGroupReq:
     def source_cdn_authentication_key(self, source_cdn_authentication_key):
         r"""Sets the source_cdn_authentication_key of this RetryTaskGroupReq.
 
-        cdn鉴权秘钥
+        cdn鉴权密钥
 
         :param source_cdn_authentication_key: The source_cdn_authentication_key of this RetryTaskGroupReq.
         :type source_cdn_authentication_key: str
