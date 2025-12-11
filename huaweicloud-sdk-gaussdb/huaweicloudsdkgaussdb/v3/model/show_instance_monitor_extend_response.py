@@ -17,15 +17,17 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
 
     openapi_types = {
         'monitor_switch': 'bool',
-        'period': 'int'
+        'period': 'int',
+        'allow': 'bool'
     }
 
     attribute_map = {
         'monitor_switch': 'monitor_switch',
-        'period': 'period'
+        'period': 'period',
+        'allow': 'allow'
     }
 
-    def __init__(self, monitor_switch=None, period=None):
+    def __init__(self, monitor_switch=None, period=None, allow=None):
         r"""ShowInstanceMonitorExtendResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
         :type monitor_switch: bool
         :param period: 采集周期，仅在monitor_switch为true时返回。  - 1：采集周期为1s。 - 5：采集周期为5s。
         :type period: int
+        :param allow: **参数解释**：  能否开启秒级监控。  **取值范围**： - true: 可以开启。 - false：不能开启，8vcpu以下规格不允许开启秒级监控。
+        :type allow: bool
         """
         
         super().__init__()
 
         self._monitor_switch = None
         self._period = None
+        self._allow = None
         self.discriminator = None
 
         if monitor_switch is not None:
             self.monitor_switch = monitor_switch
         if period is not None:
             self.period = period
+        if allow is not None:
+            self.allow = allow
 
     @property
     def monitor_switch(self):
@@ -90,6 +97,28 @@ class ShowInstanceMonitorExtendResponse(SdkResponse):
         :type period: int
         """
         self._period = period
+
+    @property
+    def allow(self):
+        r"""Gets the allow of this ShowInstanceMonitorExtendResponse.
+
+        **参数解释**：  能否开启秒级监控。  **取值范围**： - true: 可以开启。 - false：不能开启，8vcpu以下规格不允许开启秒级监控。
+
+        :return: The allow of this ShowInstanceMonitorExtendResponse.
+        :rtype: bool
+        """
+        return self._allow
+
+    @allow.setter
+    def allow(self, allow):
+        r"""Sets the allow of this ShowInstanceMonitorExtendResponse.
+
+        **参数解释**：  能否开启秒级监控。  **取值范围**： - true: 可以开启。 - false：不能开启，8vcpu以下规格不允许开启秒级监控。
+
+        :param allow: The allow of this ShowInstanceMonitorExtendResponse.
+        :type allow: bool
+        """
+        self._allow = allow
 
     def to_dict(self):
         import warnings

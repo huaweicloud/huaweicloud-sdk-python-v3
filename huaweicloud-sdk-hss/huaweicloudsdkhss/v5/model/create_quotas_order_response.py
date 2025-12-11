@@ -28,7 +28,7 @@ class CreateQuotasOrderResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param order_id: 订单ID
+        :param order_id: **参数解释**： 订单ID **约束限制**: 不涉及 **取值范围**： 字符长度1-256 **默认取值**: 不涉及
         :type order_id: str
         """
         
@@ -44,7 +44,7 @@ class CreateQuotasOrderResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this CreateQuotasOrderResponse.
 
-        订单ID
+        **参数解释**： 订单ID **约束限制**: 不涉及 **取值范围**： 字符长度1-256 **默认取值**: 不涉及
 
         :return: The order_id of this CreateQuotasOrderResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateQuotasOrderResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this CreateQuotasOrderResponse.
 
-        订单ID
+        **参数解释**： 订单ID **约束限制**: 不涉及 **取值范围**： 字符长度1-256 **默认取值**: 不涉及
 
         :param order_id: The order_id of this CreateQuotasOrderResponse.
         :type order_id: str

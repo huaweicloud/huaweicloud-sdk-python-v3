@@ -38,17 +38,17 @@ class ShowAntivirusStatisticResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_malware_num: 病毒总数
+        :param total_malware_num: **参数解释**： 病毒总数 **取值范围**： 最小值0，最大值2147483647，单位：个 
         :type total_malware_num: int
         :param malware_host_num: **参数解释**: 影响主机数量 **取值范围**: 最小值0，最大值2147483647 
         :type malware_host_num: int
-        :param total_task_num: 累计扫描任务数
+        :param total_task_num: **参数解释**： 累计扫描任务数 **取值范围**： 最小值0，最大值2147483647，单位：个 
         :type total_task_num: int
-        :param scanning_task_num: 运行中任务数
+        :param scanning_task_num: **参数解释**： 运行中任务数 **取值范围**： 最小值0，最大值2147483647，单位：个 
         :type scanning_task_num: int
-        :param latest_scan_time: 启动时间，毫秒
+        :param latest_scan_time: **参数解释**： 启动时间 **取值范围**： 最小值0，最大值9223372036854775807；时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
         :type latest_scan_time: int
-        :param scan_type: 任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        :param scan_type: **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
         :type scan_type: str
         """
         
@@ -79,7 +79,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def total_malware_num(self):
         r"""Gets the total_malware_num of this ShowAntivirusStatisticResponse.
 
-        病毒总数
+        **参数解释**： 病毒总数 **取值范围**： 最小值0，最大值2147483647，单位：个 
 
         :return: The total_malware_num of this ShowAntivirusStatisticResponse.
         :rtype: int
@@ -90,7 +90,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def total_malware_num(self, total_malware_num):
         r"""Sets the total_malware_num of this ShowAntivirusStatisticResponse.
 
-        病毒总数
+        **参数解释**： 病毒总数 **取值范围**： 最小值0，最大值2147483647，单位：个 
 
         :param total_malware_num: The total_malware_num of this ShowAntivirusStatisticResponse.
         :type total_malware_num: int
@@ -123,7 +123,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def total_task_num(self):
         r"""Gets the total_task_num of this ShowAntivirusStatisticResponse.
 
-        累计扫描任务数
+        **参数解释**： 累计扫描任务数 **取值范围**： 最小值0，最大值2147483647，单位：个 
 
         :return: The total_task_num of this ShowAntivirusStatisticResponse.
         :rtype: int
@@ -134,7 +134,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def total_task_num(self, total_task_num):
         r"""Sets the total_task_num of this ShowAntivirusStatisticResponse.
 
-        累计扫描任务数
+        **参数解释**： 累计扫描任务数 **取值范围**： 最小值0，最大值2147483647，单位：个 
 
         :param total_task_num: The total_task_num of this ShowAntivirusStatisticResponse.
         :type total_task_num: int
@@ -145,7 +145,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def scanning_task_num(self):
         r"""Gets the scanning_task_num of this ShowAntivirusStatisticResponse.
 
-        运行中任务数
+        **参数解释**： 运行中任务数 **取值范围**： 最小值0，最大值2147483647，单位：个 
 
         :return: The scanning_task_num of this ShowAntivirusStatisticResponse.
         :rtype: int
@@ -156,7 +156,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def scanning_task_num(self, scanning_task_num):
         r"""Sets the scanning_task_num of this ShowAntivirusStatisticResponse.
 
-        运行中任务数
+        **参数解释**： 运行中任务数 **取值范围**： 最小值0，最大值2147483647，单位：个 
 
         :param scanning_task_num: The scanning_task_num of this ShowAntivirusStatisticResponse.
         :type scanning_task_num: int
@@ -167,7 +167,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def latest_scan_time(self):
         r"""Gets the latest_scan_time of this ShowAntivirusStatisticResponse.
 
-        启动时间，毫秒
+        **参数解释**： 启动时间 **取值范围**： 最小值0，最大值9223372036854775807；时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
 
         :return: The latest_scan_time of this ShowAntivirusStatisticResponse.
         :rtype: int
@@ -178,7 +178,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def latest_scan_time(self, latest_scan_time):
         r"""Sets the latest_scan_time of this ShowAntivirusStatisticResponse.
 
-        启动时间，毫秒
+        **参数解释**： 启动时间 **取值范围**： 最小值0，最大值9223372036854775807；时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
 
         :param latest_scan_time: The latest_scan_time of this ShowAntivirusStatisticResponse.
         :type latest_scan_time: int
@@ -189,7 +189,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def scan_type(self):
         r"""Gets the scan_type of this ShowAntivirusStatisticResponse.
 
-        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
 
         :return: The scan_type of this ShowAntivirusStatisticResponse.
         :rtype: str
@@ -200,7 +200,7 @@ class ShowAntivirusStatisticResponse(SdkResponse):
     def scan_type(self, scan_type):
         r"""Sets the scan_type of this ShowAntivirusStatisticResponse.
 
-        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
 
         :param scan_type: The scan_type of this ShowAntivirusStatisticResponse.
         :type scan_type: str

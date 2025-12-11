@@ -51,7 +51,7 @@ class ListHostProtectHistoryInfoRequest:
         :type enterprise_project_id: str
         :param region: **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type region: str
-        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param host_id: **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
@@ -153,7 +153,7 @@ class ListHostProtectHistoryInfoRequest:
     def host_id(self):
         r"""Gets the host_id of this ListHostProtectHistoryInfoRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ListHostProtectHistoryInfoRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ListHostProtectHistoryInfoRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListHostProtectHistoryInfoRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ListHostProtectHistoryInfoRequest.
         :type host_id: str

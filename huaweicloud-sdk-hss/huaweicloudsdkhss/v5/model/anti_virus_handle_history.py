@@ -55,13 +55,13 @@ class AntiVirusHandleHistory:
 
         The model defined in huaweicloud sdk
 
-        :param result_id: 病毒查杀结果ID
+        :param result_id: **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
         :type result_id: str
-        :param malware_type: 病毒类型
+        :param malware_type: **参数解释**： 病毒类型 **取值范围**： Trojan（木马）、Virus（病毒）、Worm（蠕虫）等 
         :type malware_type: str
-        :param malware_name: 病毒名称
+        :param malware_name: **参数解释**： 病毒名称 **取值范围**： 字符长度1-128位 
         :type malware_name: str
-        :param severity: **参数解释**： 威胁等级 **取值范围**： - Security：安全 - Low：低危 - Medium：中危 - High：高危 - Critical：危急 
+        :param severity: **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
         :type severity: str
         :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
@@ -69,21 +69,21 @@ class AntiVirusHandleHistory:
         :type host_name: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
         :type public_ip: str
         :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
-        :param occur_time: **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
+        :param occur_time: **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
         :type occur_time: int
         :param handle_status: **参数解释**： 处理状态 **取值范围**： - unhandled：未处理 - handled：已处理 
         :type handle_status: str
-        :param handle_method: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
+        :param handle_method: **参数解释**: 处理方式 **取值范围**: 包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 
         :type handle_method: str
-        :param notes: 备注信息
+        :param notes: **参数解释** 备注信息 **取值范围** 字符长度0-512位 
         :type notes: str
-        :param handle_time: 处置时间
+        :param handle_time: **参数解释**: 处置时间 **取值范围**: 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
         :type handle_time: int
-        :param user_name: 用户名
+        :param user_name: **参数解释**: 用户名 **取值范围**: 字符长度1-64位 
         :type user_name: str
         """
         
@@ -141,7 +141,7 @@ class AntiVirusHandleHistory:
     def result_id(self):
         r"""Gets the result_id of this AntiVirusHandleHistory.
 
-        病毒查杀结果ID
+        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
 
         :return: The result_id of this AntiVirusHandleHistory.
         :rtype: str
@@ -152,7 +152,7 @@ class AntiVirusHandleHistory:
     def result_id(self, result_id):
         r"""Sets the result_id of this AntiVirusHandleHistory.
 
-        病毒查杀结果ID
+        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
 
         :param result_id: The result_id of this AntiVirusHandleHistory.
         :type result_id: str
@@ -163,7 +163,7 @@ class AntiVirusHandleHistory:
     def malware_type(self):
         r"""Gets the malware_type of this AntiVirusHandleHistory.
 
-        病毒类型
+        **参数解释**： 病毒类型 **取值范围**： Trojan（木马）、Virus（病毒）、Worm（蠕虫）等 
 
         :return: The malware_type of this AntiVirusHandleHistory.
         :rtype: str
@@ -174,7 +174,7 @@ class AntiVirusHandleHistory:
     def malware_type(self, malware_type):
         r"""Sets the malware_type of this AntiVirusHandleHistory.
 
-        病毒类型
+        **参数解释**： 病毒类型 **取值范围**： Trojan（木马）、Virus（病毒）、Worm（蠕虫）等 
 
         :param malware_type: The malware_type of this AntiVirusHandleHistory.
         :type malware_type: str
@@ -185,7 +185,7 @@ class AntiVirusHandleHistory:
     def malware_name(self):
         r"""Gets the malware_name of this AntiVirusHandleHistory.
 
-        病毒名称
+        **参数解释**： 病毒名称 **取值范围**： 字符长度1-128位 
 
         :return: The malware_name of this AntiVirusHandleHistory.
         :rtype: str
@@ -196,7 +196,7 @@ class AntiVirusHandleHistory:
     def malware_name(self, malware_name):
         r"""Sets the malware_name of this AntiVirusHandleHistory.
 
-        病毒名称
+        **参数解释**： 病毒名称 **取值范围**： 字符长度1-128位 
 
         :param malware_name: The malware_name of this AntiVirusHandleHistory.
         :type malware_name: str
@@ -207,7 +207,7 @@ class AntiVirusHandleHistory:
     def severity(self):
         r"""Gets the severity of this AntiVirusHandleHistory.
 
-        **参数解释**： 威胁等级 **取值范围**： - Security：安全 - Low：低危 - Medium：中危 - High：高危 - Critical：危急 
+        **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
 
         :return: The severity of this AntiVirusHandleHistory.
         :rtype: str
@@ -218,7 +218,7 @@ class AntiVirusHandleHistory:
     def severity(self, severity):
         r"""Sets the severity of this AntiVirusHandleHistory.
 
-        **参数解释**： 威胁等级 **取值范围**： - Security：安全 - Low：低危 - Medium：中危 - High：高危 - Critical：危急 
+        **参数解释**： 威胁等级 **取值范围**： Security（安全）、Low（低危）、Medium（中危）、High（高危）、Critical（致命） 
 
         :param severity: The severity of this AntiVirusHandleHistory.
         :type severity: str
@@ -295,7 +295,7 @@ class AntiVirusHandleHistory:
     def public_ip(self):
         r"""Gets the public_ip of this AntiVirusHandleHistory.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :return: The public_ip of this AntiVirusHandleHistory.
         :rtype: str
@@ -306,7 +306,7 @@ class AntiVirusHandleHistory:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this AntiVirusHandleHistory.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :param public_ip: The public_ip of this AntiVirusHandleHistory.
         :type public_ip: str
@@ -339,7 +339,7 @@ class AntiVirusHandleHistory:
     def occur_time(self):
         r"""Gets the occur_time of this AntiVirusHandleHistory.
 
-        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :return: The occur_time of this AntiVirusHandleHistory.
         :rtype: int
@@ -350,7 +350,7 @@ class AntiVirusHandleHistory:
     def occur_time(self, occur_time):
         r"""Sets the occur_time of this AntiVirusHandleHistory.
 
-        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :param occur_time: The occur_time of this AntiVirusHandleHistory.
         :type occur_time: int
@@ -383,7 +383,7 @@ class AntiVirusHandleHistory:
     def handle_method(self):
         r"""Gets the handle_method of this AntiVirusHandleHistory.
 
-        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
+        **参数解释**: 处理方式 **取值范围**: 包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 
 
         :return: The handle_method of this AntiVirusHandleHistory.
         :rtype: str
@@ -394,7 +394,7 @@ class AntiVirusHandleHistory:
     def handle_method(self, handle_method):
         r"""Sets the handle_method of this AntiVirusHandleHistory.
 
-        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
+        **参数解释**: 处理方式 **取值范围**: 包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 
 
         :param handle_method: The handle_method of this AntiVirusHandleHistory.
         :type handle_method: str
@@ -405,7 +405,7 @@ class AntiVirusHandleHistory:
     def notes(self):
         r"""Gets the notes of this AntiVirusHandleHistory.
 
-        备注信息
+        **参数解释** 备注信息 **取值范围** 字符长度0-512位 
 
         :return: The notes of this AntiVirusHandleHistory.
         :rtype: str
@@ -416,7 +416,7 @@ class AntiVirusHandleHistory:
     def notes(self, notes):
         r"""Sets the notes of this AntiVirusHandleHistory.
 
-        备注信息
+        **参数解释** 备注信息 **取值范围** 字符长度0-512位 
 
         :param notes: The notes of this AntiVirusHandleHistory.
         :type notes: str
@@ -427,7 +427,7 @@ class AntiVirusHandleHistory:
     def handle_time(self):
         r"""Gets the handle_time of this AntiVirusHandleHistory.
 
-        处置时间
+        **参数解释**: 处置时间 **取值范围**: 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
 
         :return: The handle_time of this AntiVirusHandleHistory.
         :rtype: int
@@ -438,7 +438,7 @@ class AntiVirusHandleHistory:
     def handle_time(self, handle_time):
         r"""Sets the handle_time of this AntiVirusHandleHistory.
 
-        处置时间
+        **参数解释**: 处置时间 **取值范围**: 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
 
         :param handle_time: The handle_time of this AntiVirusHandleHistory.
         :type handle_time: int
@@ -449,7 +449,7 @@ class AntiVirusHandleHistory:
     def user_name(self):
         r"""Gets the user_name of this AntiVirusHandleHistory.
 
-        用户名
+        **参数解释**: 用户名 **取值范围**: 字符长度1-64位 
 
         :return: The user_name of this AntiVirusHandleHistory.
         :rtype: str
@@ -460,7 +460,7 @@ class AntiVirusHandleHistory:
     def user_name(self, user_name):
         r"""Sets the user_name of this AntiVirusHandleHistory.
 
-        用户名
+        **参数解释**: 用户名 **取值范围**: 字符长度1-64位 
 
         :param user_name: The user_name of this AntiVirusHandleHistory.
         :type user_name: str

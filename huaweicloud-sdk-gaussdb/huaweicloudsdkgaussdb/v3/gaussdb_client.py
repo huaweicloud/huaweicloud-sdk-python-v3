@@ -102,6 +102,73 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def batch_delete_backup(self, request):
+        r"""批量删除手动备份
+
+        批量删除手动备份。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteBackup
+        :type request: :class:`huaweicloudsdkgaussdb.v3.BatchDeleteBackupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.BatchDeleteBackupResponse`
+        """
+        http_info = self._batch_delete_backup_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_backup_invoker(self, request):
+        http_info = self._batch_delete_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_backup_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteBackupResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_tag_action(self, request):
         r"""批量添加或删除标签
 
@@ -4552,6 +4619,8 @@ class GaussDBClient(Client):
             query_params.append(('job_id', local_var_params['job_id']))
         if 'job_name' in local_var_params:
             query_params.append(('job_name', local_var_params['job_name']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -5555,6 +5624,75 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def set_auto_sql_limiting(self, request):
+        r"""开启自治限流
+
+        开启自治限流。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetAutoSqlLimiting
+        :type request: :class:`huaweicloudsdkgaussdb.v3.SetAutoSqlLimitingRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.SetAutoSqlLimitingResponse`
+        """
+        http_info = self._set_auto_sql_limiting_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_auto_sql_limiting_invoker(self, request):
+        http_info = self._set_auto_sql_limiting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_auto_sql_limiting_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auto-sql-limiting",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetAutoSqlLimitingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def set_gauss_my_sql_proxy_weight(self, request):
         r"""设置读写分离权重
 
@@ -6237,6 +6375,75 @@ class GaussDBClient(Client):
 
         return http_info
 
+    def show_auto_sql_limiting_log(self, request):
+        r"""查询自治限流执行记录
+
+        查询自治限流执行记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAutoSqlLimitingLog
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowAutoSqlLimitingLogRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowAutoSqlLimitingLogResponse`
+        """
+        http_info = self._show_auto_sql_limiting_log_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_auto_sql_limiting_log_invoker(self, request):
+        http_info = self._show_auto_sql_limiting_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auto_sql_limiting_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/auto-sql-limiting/log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoSqlLimitingLogResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_backup_restore_time(self, request):
         r"""查询可恢复时间段
 
@@ -6277,6 +6484,12 @@ class GaussDBClient(Client):
         query_params = []
         if 'date' in local_var_params:
             query_params.append(('date', local_var_params['date']))
+        if 'date2' in local_var_params:
+            query_params.append(('date', local_var_params['date2']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -6845,6 +7058,8 @@ class GaussDBClient(Client):
             query_params.append(('begin_time', local_var_params['begin_time']))
         if 'end_time' in local_var_params:
             query_params.append(('end_time', local_var_params['end_time']))
+        if 'display_offsite_backup' in local_var_params:
+            query_params.append(('display_offsite_backup', local_var_params['display_offsite_backup']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -7180,6 +7395,10 @@ class GaussDBClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'query_type' in local_var_params:
+            query_params.append(('query_type', local_var_params['query_type']))
+        if 'proxy_id' in local_var_params:
+            query_params.append(('proxy_id', local_var_params['proxy_id']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -7322,6 +7541,77 @@ class GaussDBClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'enterprise_project_name' in local_var_params:
             query_params.append(('enterprise_project_name', local_var_params['enterprise_project_name']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_historical_sql_filter_rule(self, request):
+        r"""查询历史SQL限流规则
+
+        查询历史SQL限流规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHistoricalSqlFilterRule
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowHistoricalSqlFilterRuleRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowHistoricalSqlFilterRuleResponse`
+        """
+        http_info = self._show_historical_sql_filter_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_historical_sql_filter_rule_invoker(self, request):
+        http_info = self._show_historical_sql_filter_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_historical_sql_filter_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/history-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHistoricalSqlFilterRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'node_id' in local_var_params:
+            query_params.append(('node_id', local_var_params['node_id']))
+        if 'sql_type' in local_var_params:
+            query_params.append(('sql_type', local_var_params['sql_type']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -8654,6 +8944,75 @@ class GaussDBClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_sql_auto_sql_limiting(self, request):
+        r"""查询自治限流规则
+
+        查询自治限流规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowSqlAutoSqlLimiting
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlAutoSqlLimitingRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlAutoSqlLimitingResponse`
+        """
+        http_info = self._show_sql_auto_sql_limiting_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_sql_auto_sql_limiting_invoker(self, request):
+        http_info = self._show_sql_auto_sql_limiting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_auto_sql_limiting_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auto-sql-limiting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlAutoSqlLimitingResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 

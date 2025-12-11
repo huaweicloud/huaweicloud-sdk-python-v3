@@ -32,7 +32,7 @@ class ListAntiVirusPaidHostsResponse(SdkResponse):
 
         :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
-        :param data_list: data list
+        :param data_list: **参数解释**: 查询到的按量杀毒服务器详细信息列表 **取值范围**: 最小值0，最大值100 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AntiVirusPaidHostResponseInfo`]
         """
         
@@ -73,7 +73,7 @@ class ListAntiVirusPaidHostsResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListAntiVirusPaidHostsResponse.
 
-        data list
+        **参数解释**: 查询到的按量杀毒服务器详细信息列表 **取值范围**: 最小值0，最大值100 
 
         :return: The data_list of this ListAntiVirusPaidHostsResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.AntiVirusPaidHostResponseInfo`]
@@ -84,7 +84,7 @@ class ListAntiVirusPaidHostsResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListAntiVirusPaidHostsResponse.
 
-        data list
+        **参数解释**: 查询到的按量杀毒服务器详细信息列表 **取值范围**: 最小值0，最大值100 
 
         :param data_list: The data_list of this ListAntiVirusPaidHostsResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AntiVirusPaidHostResponseInfo`]

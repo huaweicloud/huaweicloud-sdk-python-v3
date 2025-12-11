@@ -71,7 +71,7 @@ class ListAppChangeHistoriesRequest:
         :type offset: int
         :param start_time: **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
         :type start_time: int
-        :param end_time: **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        :param end_time: **参数解释**: 结束时间，13位时间戳 **约束限制**: 需大于等于begin_time，未传begin_time时默认从时间戳0开始查询 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
         :type end_time: int
         """
         
@@ -362,7 +362,7 @@ class ListAppChangeHistoriesRequest:
     def end_time(self):
         r"""Gets the end_time of this ListAppChangeHistoriesRequest.
 
-        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 结束时间，13位时间戳 **约束限制**: 需大于等于begin_time，未传begin_time时默认从时间戳0开始查询 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
 
         :return: The end_time of this ListAppChangeHistoriesRequest.
         :rtype: int
@@ -373,7 +373,7 @@ class ListAppChangeHistoriesRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListAppChangeHistoriesRequest.
 
-        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 结束时间，13位时间戳 **约束限制**: 需大于等于begin_time，未传begin_time时默认从时间戳0开始查询 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
 
         :param end_time: The end_time of this ListAppChangeHistoriesRequest.
         :type end_time: int

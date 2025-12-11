@@ -53,11 +53,11 @@ class UpgradeAgentsRequestInfo:
         :type operate_all: bool
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
         :type public_ip: str
         :param version: **参数解释**： 防护版本 **约束限制**: 不涉及 **取值范围**： - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。  **默认取值**: 不涉及 
         :type version: str
@@ -67,7 +67,7 @@ class UpgradeAgentsRequestInfo:
         :type os_type: str
         :param policy_group_id: **参数解释**： 策略组ID **取值范围**： 字符长度36-64位
         :type policy_group_id: str
-        :param group_id: **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
+        :param group_id: **参数解释**: 主机所属服务器组的唯一标识ID **取值范围**: 字符长度0-64位 
         :type group_id: str
         :param asset_value: 资产重要性 **参数解释**： 资产重要性 **约束限制**: 不涉及 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。  **默认取值**: 不涉及
         :type asset_value: str
@@ -163,7 +163,7 @@ class UpgradeAgentsRequestInfo:
     def host_id(self):
         r"""Gets the host_id of this UpgradeAgentsRequestInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this UpgradeAgentsRequestInfo.
         :rtype: str
@@ -174,7 +174,7 @@ class UpgradeAgentsRequestInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this UpgradeAgentsRequestInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this UpgradeAgentsRequestInfo.
         :type host_id: str
@@ -207,7 +207,7 @@ class UpgradeAgentsRequestInfo:
     def public_ip(self):
         r"""Gets the public_ip of this UpgradeAgentsRequestInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :return: The public_ip of this UpgradeAgentsRequestInfo.
         :rtype: str
@@ -218,7 +218,7 @@ class UpgradeAgentsRequestInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this UpgradeAgentsRequestInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :param public_ip: The public_ip of this UpgradeAgentsRequestInfo.
         :type public_ip: str
@@ -317,7 +317,7 @@ class UpgradeAgentsRequestInfo:
     def group_id(self):
         r"""Gets the group_id of this UpgradeAgentsRequestInfo.
 
-        **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
+        **参数解释**: 主机所属服务器组的唯一标识ID **取值范围**: 字符长度0-64位 
 
         :return: The group_id of this UpgradeAgentsRequestInfo.
         :rtype: str
@@ -328,7 +328,7 @@ class UpgradeAgentsRequestInfo:
     def group_id(self, group_id):
         r"""Sets the group_id of this UpgradeAgentsRequestInfo.
 
-        **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
+        **参数解释**: 主机所属服务器组的唯一标识ID **取值范围**: 字符长度0-64位 
 
         :param group_id: The group_id of this UpgradeAgentsRequestInfo.
         :type group_id: str

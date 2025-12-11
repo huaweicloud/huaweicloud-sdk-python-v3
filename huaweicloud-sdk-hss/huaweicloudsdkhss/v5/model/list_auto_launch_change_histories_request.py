@@ -53,7 +53,7 @@ class ListAutoLaunchChangeHistoriesRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param host_id: **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
         :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_ip: str
@@ -75,7 +75,7 @@ class ListAutoLaunchChangeHistoriesRequest:
         :type offset: int
         :param start_time: **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
         :type start_time: int
-        :param end_time: **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        :param end_time: **参数解释**: 结束时间，13位时间戳 **约束限制**: 需大于等于begin_time，未传begin_time时默认从时间戳0开始查询 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
         :type end_time: int
         """
         
@@ -149,7 +149,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def host_id(self):
         r"""Gets the host_id of this ListAutoLaunchChangeHistoriesRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: str
@@ -160,7 +160,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListAutoLaunchChangeHistoriesRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ListAutoLaunchChangeHistoriesRequest.
         :type host_id: str
@@ -391,7 +391,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def end_time(self):
         r"""Gets the end_time of this ListAutoLaunchChangeHistoriesRequest.
 
-        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 结束时间，13位时间戳 **约束限制**: 需大于等于begin_time，未传begin_time时默认从时间戳0开始查询 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
 
         :return: The end_time of this ListAutoLaunchChangeHistoriesRequest.
         :rtype: int
@@ -402,7 +402,7 @@ class ListAutoLaunchChangeHistoriesRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListAutoLaunchChangeHistoriesRequest.
 
-        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 结束时间，13位时间戳 **约束限制**: 需大于等于begin_time，未传begin_time时默认从时间戳0开始查询 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
 
         :param end_time: The end_time of this ListAutoLaunchChangeHistoriesRequest.
         :type end_time: int

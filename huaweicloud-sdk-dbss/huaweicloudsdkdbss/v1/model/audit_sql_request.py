@@ -63,19 +63,19 @@ class AuditSqlRequest:
         :type db_ip: str
         :param db_user: 数据库用户
         :type db_user: str
-        :param query_type: 查询类型 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
+        :param query_type: 查询类型 - LOGIN: LOGIN - CREATE_TABLE: CREATE TABLE - CREATE_TABLESPACE: CREATE TABLESPACE - DROP_TABLE: DROP TABLE - DROP_TABLESPACE: DROP TABLESPACE - DELETE: DELETE - INSERT: INSERT - INSERT_SELECT: INSERT SELECT - SELECT: SELECT - SELECT_FOR_UPDATE: SELECT FOR UPDATE - UPDATE: UPDATE - CREATE_USER: CREATE USER - DROP_USER: DROP USER - GRANT: GRANT - OPERATE: OPERATE - ALL: ALL
         :type query_type: str
         :param rule_name: 规则名称
         :type rule_name: str
         :param sql_statement: sql语句
         :type sql_statement: str
-        :param sql_response: 响应结果 - SUCCESS - FAILED
+        :param sql_response: 响应结果 - SUCCESS：成功 - FAILED：失败
         :type sql_response: str
         :param page: 页码
         :type page: int
         :param size: 条数
         :type size: int
-        :param time_order: 时间顺序 - DESC - ASC
+        :param time_order: 时间顺序 - DESC：降序 - ASC：升序
         :type time_order: str
         """
         
@@ -251,7 +251,7 @@ class AuditSqlRequest:
     def query_type(self):
         r"""Gets the query_type of this AuditSqlRequest.
 
-        查询类型 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
+        查询类型 - LOGIN: LOGIN - CREATE_TABLE: CREATE TABLE - CREATE_TABLESPACE: CREATE TABLESPACE - DROP_TABLE: DROP TABLE - DROP_TABLESPACE: DROP TABLESPACE - DELETE: DELETE - INSERT: INSERT - INSERT_SELECT: INSERT SELECT - SELECT: SELECT - SELECT_FOR_UPDATE: SELECT FOR UPDATE - UPDATE: UPDATE - CREATE_USER: CREATE USER - DROP_USER: DROP USER - GRANT: GRANT - OPERATE: OPERATE - ALL: ALL
 
         :return: The query_type of this AuditSqlRequest.
         :rtype: str
@@ -262,7 +262,7 @@ class AuditSqlRequest:
     def query_type(self, query_type):
         r"""Sets the query_type of this AuditSqlRequest.
 
-        查询类型 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
+        查询类型 - LOGIN: LOGIN - CREATE_TABLE: CREATE TABLE - CREATE_TABLESPACE: CREATE TABLESPACE - DROP_TABLE: DROP TABLE - DROP_TABLESPACE: DROP TABLESPACE - DELETE: DELETE - INSERT: INSERT - INSERT_SELECT: INSERT SELECT - SELECT: SELECT - SELECT_FOR_UPDATE: SELECT FOR UPDATE - UPDATE: UPDATE - CREATE_USER: CREATE USER - DROP_USER: DROP USER - GRANT: GRANT - OPERATE: OPERATE - ALL: ALL
 
         :param query_type: The query_type of this AuditSqlRequest.
         :type query_type: str
@@ -317,7 +317,7 @@ class AuditSqlRequest:
     def sql_response(self):
         r"""Gets the sql_response of this AuditSqlRequest.
 
-        响应结果 - SUCCESS - FAILED
+        响应结果 - SUCCESS：成功 - FAILED：失败
 
         :return: The sql_response of this AuditSqlRequest.
         :rtype: str
@@ -328,7 +328,7 @@ class AuditSqlRequest:
     def sql_response(self, sql_response):
         r"""Sets the sql_response of this AuditSqlRequest.
 
-        响应结果 - SUCCESS - FAILED
+        响应结果 - SUCCESS：成功 - FAILED：失败
 
         :param sql_response: The sql_response of this AuditSqlRequest.
         :type sql_response: str
@@ -383,7 +383,7 @@ class AuditSqlRequest:
     def time_order(self):
         r"""Gets the time_order of this AuditSqlRequest.
 
-        时间顺序 - DESC - ASC
+        时间顺序 - DESC：降序 - ASC：升序
 
         :return: The time_order of this AuditSqlRequest.
         :rtype: str
@@ -394,7 +394,7 @@ class AuditSqlRequest:
     def time_order(self, time_order):
         r"""Sets the time_order of this AuditSqlRequest.
 
-        时间顺序 - DESC - ASC
+        时间顺序 - DESC：降序 - ASC：升序
 
         :param time_order: The time_order of this AuditSqlRequest.
         :type time_order: str

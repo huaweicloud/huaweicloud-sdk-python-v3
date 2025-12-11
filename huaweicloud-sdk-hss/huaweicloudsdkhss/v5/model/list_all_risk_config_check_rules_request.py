@@ -26,7 +26,7 @@ class ListAllRiskConfigCheckRulesRequest:
         'cluster_id': 'str',
         'tag': 'str',
         'policy_group_id': 'str',
-        'statistics_flag': 'str'
+        'statistics_flag': 'bool'
     }
 
     attribute_map = {
@@ -72,7 +72,7 @@ class ListAllRiskConfigCheckRulesRequest:
         :param policy_group_id: **参数解释** 策略组ID，不赋值时，查租户所有主机，host_id存在时，此值无效 **约束限制** 不涉及 **取值范围** 字符长度0-128位 **默认取值** 不涉及
         :type policy_group_id: str
         :param statistics_flag: **参数解释** 是否从统计维度展示数据 **约束限制** 不涉及 **取值范围** - false : 不从统计维度展示 - true  : 从统计维度展示  **默认取值** false
-        :type statistics_flag: str
+        :type statistics_flag: bool
         """
         
         
@@ -363,7 +363,7 @@ class ListAllRiskConfigCheckRulesRequest:
         **参数解释** 是否从统计维度展示数据 **约束限制** 不涉及 **取值范围** - false : 不从统计维度展示 - true  : 从统计维度展示  **默认取值** false
 
         :return: The statistics_flag of this ListAllRiskConfigCheckRulesRequest.
-        :rtype: str
+        :rtype: bool
         """
         return self._statistics_flag
 
@@ -374,7 +374,7 @@ class ListAllRiskConfigCheckRulesRequest:
         **参数解释** 是否从统计维度展示数据 **约束限制** 不涉及 **取值范围** - false : 不从统计维度展示 - true  : 从统计维度展示  **默认取值** false
 
         :param statistics_flag: The statistics_flag of this ListAllRiskConfigCheckRulesRequest.
-        :type statistics_flag: str
+        :type statistics_flag: bool
         """
         self._statistics_flag = statistics_flag
 

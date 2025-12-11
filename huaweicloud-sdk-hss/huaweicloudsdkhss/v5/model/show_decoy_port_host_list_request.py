@@ -45,7 +45,7 @@ class ShowDecoyPortHostListRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param group_id: **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param group_id: **参数解释**: 服务器组的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type group_id: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
@@ -151,7 +151,7 @@ class ShowDecoyPortHostListRequest:
     def group_id(self):
         r"""Gets the group_id of this ShowDecoyPortHostListRequest.
 
-        **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器组的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The group_id of this ShowDecoyPortHostListRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class ShowDecoyPortHostListRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ShowDecoyPortHostListRequest.
 
-        **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器组的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param group_id: The group_id of this ShowDecoyPortHostListRequest.
         :type group_id: str

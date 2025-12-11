@@ -41,9 +41,9 @@ class OperateLogGetRequest:
         :type time: :class:`huaweicloudsdkdbss.v1.TimeRangeBean`
         :param user_name: 操作日志用户名
         :type user_name: str
-        :param action: 动作名称 - CREATE - DELETE - DOWNLOAD - UPDATE
+        :param action: 动作名称 - CREATE：创建 - DELETE：删除 - DOWNLOAD：下载 - UPDATE：更新
         :type action: str
-        :param result: 执行结果 - success - fail
+        :param result: 执行结果 - success：成功 - fail：失败
         :type result: str
         :param page: 页数
         :type page: str
@@ -115,7 +115,7 @@ class OperateLogGetRequest:
     def action(self):
         r"""Gets the action of this OperateLogGetRequest.
 
-        动作名称 - CREATE - DELETE - DOWNLOAD - UPDATE
+        动作名称 - CREATE：创建 - DELETE：删除 - DOWNLOAD：下载 - UPDATE：更新
 
         :return: The action of this OperateLogGetRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class OperateLogGetRequest:
     def action(self, action):
         r"""Sets the action of this OperateLogGetRequest.
 
-        动作名称 - CREATE - DELETE - DOWNLOAD - UPDATE
+        动作名称 - CREATE：创建 - DELETE：删除 - DOWNLOAD：下载 - UPDATE：更新
 
         :param action: The action of this OperateLogGetRequest.
         :type action: str
@@ -137,7 +137,7 @@ class OperateLogGetRequest:
     def result(self):
         r"""Gets the result of this OperateLogGetRequest.
 
-        执行结果 - success - fail
+        执行结果 - success：成功 - fail：失败
 
         :return: The result of this OperateLogGetRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class OperateLogGetRequest:
     def result(self, result):
         r"""Sets the result of this OperateLogGetRequest.
 
-        执行结果 - success - fail
+        执行结果 - success：成功 - fail：失败
 
         :param result: The result of this OperateLogGetRequest.
         :type result: str

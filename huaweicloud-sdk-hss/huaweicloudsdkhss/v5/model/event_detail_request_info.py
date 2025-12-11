@@ -49,7 +49,7 @@ class EventDetailRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param agent_id: **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         :param process_pid: **参数解释**： 进程ID **取值范围**： 最小值0，最大值2147483647 
         :type process_pid: int
@@ -57,7 +57,7 @@ class EventDetailRequestInfo:
         :type file_hash: str
         :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
-        :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        :param file_attr: **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
         :type file_attr: str
         :param keyword: **参数解释**： 告警事件关键字，仅用于告警白名单 **取值范围**： 字符长度1-256位 
         :type keyword: str
@@ -120,7 +120,7 @@ class EventDetailRequestInfo:
     def agent_id(self):
         r"""Gets the agent_id of this EventDetailRequestInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this EventDetailRequestInfo.
         :rtype: str
@@ -131,7 +131,7 @@ class EventDetailRequestInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this EventDetailRequestInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this EventDetailRequestInfo.
         :type agent_id: str
@@ -208,7 +208,7 @@ class EventDetailRequestInfo:
     def file_attr(self):
         r"""Gets the file_attr of this EventDetailRequestInfo.
 
-        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
 
         :return: The file_attr of this EventDetailRequestInfo.
         :rtype: str
@@ -219,7 +219,7 @@ class EventDetailRequestInfo:
     def file_attr(self, file_attr):
         r"""Sets the file_attr of this EventDetailRequestInfo.
 
-        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
 
         :param file_attr: The file_attr of this EventDetailRequestInfo.
         :type file_attr: str

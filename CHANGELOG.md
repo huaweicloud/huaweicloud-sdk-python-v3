@@ -1,3 +1,331 @@
+# 3.1.179 2025-12-11
+
+### HuaweiCloud SDK CloudDC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListIDcs**
+    - changes of response param
+      - `+ count`
+  - **ShowServerStatus**
+    - changes of response param
+      - `+ server_status.unknown`
+      - `+ server_status.ok.count`
+      - `+ server_status.ok.dc_stats`
+      - `* server_status.ok: object -> object<ServerState>`
+      - `+ server_status.warning.count`
+      - `+ server_status.warning.dc_stats`
+      - `* server_status.warning: object -> object<ServerState>`
+      - `+ server_status.critical.count`
+      - `+ server_status.critical.dc_stats`
+      - `* server_status.critical: object -> object<ServerState>`
+      - `+ server_status.health.count`
+      - `+ server_status.health.dc_stats`
+      - `* server_status.health: object -> object<ServerState>`
+      - `+ server_status.unhealth.count`
+      - `+ server_status.unhealth.dc_stats`
+      - `* server_status.unhealth: object -> object<ServerState>`
+      - `+ server_status.isolation.count`
+      - `+ server_status.isolation.dc_stats`
+      - `* server_status.isolation: object -> object<ServerState>`
+  - **ListIRacks**
+    - changes of response param
+      - `+ count`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListEnvironments**
+    - changes of response param
+      - `+ result.project_id`
+  - **ShowEnvironmentDetail**
+    - changes of response param
+      - `+ result.project_id`
+
+### HuaweiCloud SDK DDM
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListAvailableRds**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+  - **ListAvailableRdsForMigrate**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+  - **ListTasks**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+  - **ListBackups**
+    - changes of request param
+      - `+ instance_id`
+      - `+ instance_name`
+      - `+ backup_name`
+      - `+ offset`
+      - `+ limit`
+  - **ShowAvalibleDdms**
+    - changes of request param
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RestartInstance**
+    - changes of request param
+      - `+ is_serial`
+      - `+ is_force`
+  - **ListAuditlogs**
+    - changes of response param
+      - `+ total_size`
+
+### HuaweiCloud SDK ER
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the APIs `UpdatePropagationRoutePolicy`, `ChangeAssociationRoutePolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDB
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ShowHistoricalSqlFilterRule`
+    - `SetAutoSqlLimiting`
+    - `ShowSqlAutoSqlLimiting`
+    - `ShowAutoSqlLimitingLog`
+    - `BatchDeleteBackup`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowProxyVersion**
+    - changes of response param
+      - `+ risk`
+  - **SwitchGaussMySqlConfiguration**
+    - changes of response param
+      - `+ param_group_name`
+  - **ShowInstanceMonitorExtend**
+    - changes of response param
+      - `+ allow`
+  - **ListRecycleInstances**
+    - changes of response param
+      - `* total_count: string -> int32`
+      - `+ instances.recycle_bakcups`
+      - `* instances.create_at: int32 -> int64`
+      - `* instances.deleted_at: int32 -> int64`
+  - **ListScheduleJobs**
+    - changes of request param
+      - `+ instance_id`
+    - changes of response param
+      - `+ schedules.proxy_id`
+      - `+ schedules.proxy_name`
+  - **ShowBackupRestoreTime**
+    - changes of request param
+      - `+ date`
+      - `+ start_time`
+      - `+ end_time`
+  - **ShowGaussMySqlIncrementalBackupList**
+    - changes of request param
+      - `+ display_offsite_backup`
+    - changes of response param
+      - `+ backups.backup_type`
+  - **ShowGaussMySqlProxyFlavors**
+    - changes of request param
+      - `+ query_type`
+      - `+ proxy_id`
+  - **ShowGaussMySqlProxyList**
+    - changes of response param
+      - `+ proxy_list.htap_nodes`
+      - `+ proxy_list.proxy.type`
+      - `+ proxy_list.proxy.created_at`
+      - `+ proxy_list.proxy.updated_at`
+      - `+ proxy_list.proxy.support_ap_node`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateConfiguration**
+    - changes of request param
+      - `+ instance_id`
+  - **ShowApplyHistory**
+    - changes of response param
+      - `+ total_count`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the API `BatchDeleteInstanceTag`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDeploymentForm**
+    - changes of request param
+      - `+ consistency`
+      - `+ consistency_protocol`
+      - `+ engine_version`
+    - changes of response param
+      - `+ max_shard_count`
+      - `+ each_shard_num`
+      - `+ each_expand_nodes`
+  - **ListRestorableInstancesDetails**
+    - changes of request param
+      - `+ backup_restore_type`
+      - `+ source_backup_schema`
+      - `+ target_instance_id`
+      - `+ instance_name`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the APIs `ShowFilePathWhiteLists`, `ChangeFilePathWhiteLists`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowVulReportData**
+    - changes of response param
+      - `+ summary`
+      - `- sumary.vul_num_unfixed`
+      - `- sumary.vul_num_linux`
+      - `- sumary.vul_num_windows`
+      - `- sumary.vul_num_web_cms`
+      - `- sumary.vul_num_app`
+      - `- sumary.host_num_risk`
+      - `- sumary.host_num_high_risk`
+      - `- sumary.host_num_medium_risk`
+      - `- sumary.host_num_low_risk`
+      - `- sumary.affect_asset_num_important`
+      - `- sumary.affect_asset_num_common`
+      - `- sumary.affect_asset_num_test`
+  - **ListPortHost**
+    - changes of request param
+      - `* category: optional -> required`
+  - **ListWebAppAndServices**
+    - changes of request param
+      - `* name: required -> optional`
+  - **ShowWebTamperHostPolicy**
+    - changes of response param
+      - `+ protect_dir_info.protect_dir_list.exclude_file_path`
+  - **ListAllRiskConfigCheckRules**
+    - changes of request param
+      - `* statistics_flag: string -> boolean`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateDomainApiAclPolicy**
+    - changes of request param
+      - `* api_acl_policy.allow_vpc_endpoints: list<AllowVpcEndpointsResult> -> list<AllowVpcEndpointsOption>`
+
+### HuaweiCloud SDK OCR
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **RecognizeSmartDocumentRecognizer**
+    - changes of request param
+      - `+ image_layout`
+      - `+ character_mode`
+    - changes of response param
+      - `+ result.ocr_result.words_block_list.char_list`
+      - `+ result.layout_result.layout_block_list.formula_id`
+      - `+ result.formula_result.formula_list.type`
+
+### HuaweiCloud SDK RDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSqlStatistics**
+    - changes of response param
+      - `+ list.canUse`
+      - `- list.can_use`
+      - `* list.query_id: int64 -> string`
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the APIs `ListSyncRegions`, `CheckAgency`, `CreateAgency`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowShareFeatureGates**
+    - changes of response param
+      - `+ enable_image_quota`
+
+### HuaweiCloud SDK VPC
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `ListVirsubnetCidrReservations`
+    - `CreateVirsubnetCidrReservation`
+    - `ShowVirsubnetCidrReservation`
+    - `UpdateVirsubnetCidrReservation`
+    - `DeleteVirsubnetCidrReservation`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFirewall**
+    - changes of response param
+      - `+ firewalls.type`
+
 # 3.1.178 2025-12-04
 
 ### HuaweiCloud SDK AAD

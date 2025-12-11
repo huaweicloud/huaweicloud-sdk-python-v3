@@ -29,9 +29,9 @@ class MultiValueTagInfo:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。最大长度128个unicode字符。 key不能为空
+        :param key: **参数解释**: 标签键。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 不涉及 
         :type key: str
-        :param values: 值列表。每个值最大长度255个unicode字符
+        :param values: **参数解释**: 标签值列表。 **约束限制**: 不涉及 **取值范围**: 每个值字符长度1-256位。 **默认取值**: 不涉及 
         :type values: list[str]
         """
         
@@ -50,7 +50,7 @@ class MultiValueTagInfo:
     def key(self):
         r"""Gets the key of this MultiValueTagInfo.
 
-        键。最大长度128个unicode字符。 key不能为空
+        **参数解释**: 标签键。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 不涉及 
 
         :return: The key of this MultiValueTagInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class MultiValueTagInfo:
     def key(self, key):
         r"""Sets the key of this MultiValueTagInfo.
 
-        键。最大长度128个unicode字符。 key不能为空
+        **参数解释**: 标签键。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 不涉及 
 
         :param key: The key of this MultiValueTagInfo.
         :type key: str
@@ -72,7 +72,7 @@ class MultiValueTagInfo:
     def values(self):
         r"""Gets the values of this MultiValueTagInfo.
 
-        值列表。每个值最大长度255个unicode字符
+        **参数解释**: 标签值列表。 **约束限制**: 不涉及 **取值范围**: 每个值字符长度1-256位。 **默认取值**: 不涉及 
 
         :return: The values of this MultiValueTagInfo.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class MultiValueTagInfo:
     def values(self, values):
         r"""Sets the values of this MultiValueTagInfo.
 
-        值列表。每个值最大长度255个unicode字符
+        **参数解释**: 标签值列表。 **约束限制**: 不涉及 **取值范围**: 每个值字符长度1-256位。 **默认取值**: 不涉及 
 
         :param values: The values of this MultiValueTagInfo.
         :type values: list[str]

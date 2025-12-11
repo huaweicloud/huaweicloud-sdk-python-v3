@@ -49,29 +49,29 @@ class PortHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param container_id: 镜像id
+        :param container_id: **参数解释**: 容器ID **取值范围**: 字符长度1-128位 
         :type container_id: str
-        :param host_id: 主机id
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
-        :param host_ip: 主机ip
+        :param host_ip: **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
         :type host_ip: str
-        :param host_name: 主机名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param laddr: 监听ip
+        :param laddr: **参数解释**: 端口的监听IP地址（0.0.0.0表示监听所有网卡） **取值范围**: 支持IPv4或IPv6格式，IPv4长度7-15位，IPv6长度15-39位 
         :type laddr: str
-        :param path: 进程可执行文件路径
+        :param path: **参数解释**: 占用当前端口的进程对应的可执行文件绝对路径 **取值范围**: 字符长度0-512位 
         :type path: str
-        :param pid: pid
+        :param pid: **参数解释**: 占用当前端口的进程ID **取值范围**: 非负整数，最小值0（无对应进程时为0）；单位：个 
         :type pid: int
-        :param port: 端口
+        :param port: **参数解释**: 端口的具体编号 **取值范围**: 1-65535（TCP/UDP标准端口范围） 
         :type port: int
         :param status: 状态
         :type status: str
-        :param type: 端口类型：目前包括TCP，UDP两种
+        :param type: **参数解释**: 端口类型 **取值范围**: 目前包括TCP，UDP两种 
         :type type: str
-        :param container_name: 容器名称
+        :param container_name: **参数解释**： 容器实例名称，只有容器类型的告警有 **取值范围**： 字符长度1-256位 
         :type container_name: str
-        :param agent_id: agent id
+        :param agent_id: **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         """
         
@@ -120,7 +120,7 @@ class PortHostResponseInfo:
     def container_id(self):
         r"""Gets the container_id of this PortHostResponseInfo.
 
-        镜像id
+        **参数解释**: 容器ID **取值范围**: 字符长度1-128位 
 
         :return: The container_id of this PortHostResponseInfo.
         :rtype: str
@@ -131,7 +131,7 @@ class PortHostResponseInfo:
     def container_id(self, container_id):
         r"""Sets the container_id of this PortHostResponseInfo.
 
-        镜像id
+        **参数解释**: 容器ID **取值范围**: 字符长度1-128位 
 
         :param container_id: The container_id of this PortHostResponseInfo.
         :type container_id: str
@@ -142,7 +142,7 @@ class PortHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this PortHostResponseInfo.
 
-        主机id
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this PortHostResponseInfo.
         :rtype: str
@@ -153,7 +153,7 @@ class PortHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this PortHostResponseInfo.
 
-        主机id
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this PortHostResponseInfo.
         :type host_id: str
@@ -164,7 +164,7 @@ class PortHostResponseInfo:
     def host_ip(self):
         r"""Gets the host_ip of this PortHostResponseInfo.
 
-        主机ip
+        **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
 
         :return: The host_ip of this PortHostResponseInfo.
         :rtype: str
@@ -175,7 +175,7 @@ class PortHostResponseInfo:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this PortHostResponseInfo.
 
-        主机ip
+        **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
 
         :param host_ip: The host_ip of this PortHostResponseInfo.
         :type host_ip: str
@@ -186,7 +186,7 @@ class PortHostResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this PortHostResponseInfo.
 
-        主机名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this PortHostResponseInfo.
         :rtype: str
@@ -197,7 +197,7 @@ class PortHostResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this PortHostResponseInfo.
 
-        主机名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this PortHostResponseInfo.
         :type host_name: str
@@ -208,7 +208,7 @@ class PortHostResponseInfo:
     def laddr(self):
         r"""Gets the laddr of this PortHostResponseInfo.
 
-        监听ip
+        **参数解释**: 端口的监听IP地址（0.0.0.0表示监听所有网卡） **取值范围**: 支持IPv4或IPv6格式，IPv4长度7-15位，IPv6长度15-39位 
 
         :return: The laddr of this PortHostResponseInfo.
         :rtype: str
@@ -219,7 +219,7 @@ class PortHostResponseInfo:
     def laddr(self, laddr):
         r"""Sets the laddr of this PortHostResponseInfo.
 
-        监听ip
+        **参数解释**: 端口的监听IP地址（0.0.0.0表示监听所有网卡） **取值范围**: 支持IPv4或IPv6格式，IPv4长度7-15位，IPv6长度15-39位 
 
         :param laddr: The laddr of this PortHostResponseInfo.
         :type laddr: str
@@ -230,7 +230,7 @@ class PortHostResponseInfo:
     def path(self):
         r"""Gets the path of this PortHostResponseInfo.
 
-        进程可执行文件路径
+        **参数解释**: 占用当前端口的进程对应的可执行文件绝对路径 **取值范围**: 字符长度0-512位 
 
         :return: The path of this PortHostResponseInfo.
         :rtype: str
@@ -241,7 +241,7 @@ class PortHostResponseInfo:
     def path(self, path):
         r"""Sets the path of this PortHostResponseInfo.
 
-        进程可执行文件路径
+        **参数解释**: 占用当前端口的进程对应的可执行文件绝对路径 **取值范围**: 字符长度0-512位 
 
         :param path: The path of this PortHostResponseInfo.
         :type path: str
@@ -252,7 +252,7 @@ class PortHostResponseInfo:
     def pid(self):
         r"""Gets the pid of this PortHostResponseInfo.
 
-        pid
+        **参数解释**: 占用当前端口的进程ID **取值范围**: 非负整数，最小值0（无对应进程时为0）；单位：个 
 
         :return: The pid of this PortHostResponseInfo.
         :rtype: int
@@ -263,7 +263,7 @@ class PortHostResponseInfo:
     def pid(self, pid):
         r"""Sets the pid of this PortHostResponseInfo.
 
-        pid
+        **参数解释**: 占用当前端口的进程ID **取值范围**: 非负整数，最小值0（无对应进程时为0）；单位：个 
 
         :param pid: The pid of this PortHostResponseInfo.
         :type pid: int
@@ -274,7 +274,7 @@ class PortHostResponseInfo:
     def port(self):
         r"""Gets the port of this PortHostResponseInfo.
 
-        端口
+        **参数解释**: 端口的具体编号 **取值范围**: 1-65535（TCP/UDP标准端口范围） 
 
         :return: The port of this PortHostResponseInfo.
         :rtype: int
@@ -285,7 +285,7 @@ class PortHostResponseInfo:
     def port(self, port):
         r"""Sets the port of this PortHostResponseInfo.
 
-        端口
+        **参数解释**: 端口的具体编号 **取值范围**: 1-65535（TCP/UDP标准端口范围） 
 
         :param port: The port of this PortHostResponseInfo.
         :type port: int
@@ -318,7 +318,7 @@ class PortHostResponseInfo:
     def type(self):
         r"""Gets the type of this PortHostResponseInfo.
 
-        端口类型：目前包括TCP，UDP两种
+        **参数解释**: 端口类型 **取值范围**: 目前包括TCP，UDP两种 
 
         :return: The type of this PortHostResponseInfo.
         :rtype: str
@@ -329,7 +329,7 @@ class PortHostResponseInfo:
     def type(self, type):
         r"""Sets the type of this PortHostResponseInfo.
 
-        端口类型：目前包括TCP，UDP两种
+        **参数解释**: 端口类型 **取值范围**: 目前包括TCP，UDP两种 
 
         :param type: The type of this PortHostResponseInfo.
         :type type: str
@@ -340,7 +340,7 @@ class PortHostResponseInfo:
     def container_name(self):
         r"""Gets the container_name of this PortHostResponseInfo.
 
-        容器名称
+        **参数解释**： 容器实例名称，只有容器类型的告警有 **取值范围**： 字符长度1-256位 
 
         :return: The container_name of this PortHostResponseInfo.
         :rtype: str
@@ -351,7 +351,7 @@ class PortHostResponseInfo:
     def container_name(self, container_name):
         r"""Sets the container_name of this PortHostResponseInfo.
 
-        容器名称
+        **参数解释**： 容器实例名称，只有容器类型的告警有 **取值范围**： 字符长度1-256位 
 
         :param container_name: The container_name of this PortHostResponseInfo.
         :type container_name: str
@@ -362,7 +362,7 @@ class PortHostResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this PortHostResponseInfo.
 
-        agent id
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this PortHostResponseInfo.
         :rtype: str
@@ -373,7 +373,7 @@ class PortHostResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this PortHostResponseInfo.
 
-        agent id
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this PortHostResponseInfo.
         :type agent_id: str

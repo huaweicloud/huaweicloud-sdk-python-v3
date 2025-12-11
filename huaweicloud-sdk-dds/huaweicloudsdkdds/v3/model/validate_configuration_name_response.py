@@ -28,7 +28,7 @@ class ValidateConfigurationNameResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param is_existed: 参数组名称是否存在。 - true：参数组名称存在 - false：参数组名称不存在
+        :param is_existed: **参数解释：** 参数组名称是否存在。 **取值范围：** - true：参数组名称存在。 - false：参数组名称不存在。
         :type is_existed: bool
         """
         
@@ -44,7 +44,7 @@ class ValidateConfigurationNameResponse(SdkResponse):
     def is_existed(self):
         r"""Gets the is_existed of this ValidateConfigurationNameResponse.
 
-        参数组名称是否存在。 - true：参数组名称存在 - false：参数组名称不存在
+        **参数解释：** 参数组名称是否存在。 **取值范围：** - true：参数组名称存在。 - false：参数组名称不存在。
 
         :return: The is_existed of this ValidateConfigurationNameResponse.
         :rtype: bool
@@ -55,7 +55,7 @@ class ValidateConfigurationNameResponse(SdkResponse):
     def is_existed(self, is_existed):
         r"""Sets the is_existed of this ValidateConfigurationNameResponse.
 
-        参数组名称是否存在。 - true：参数组名称存在 - false：参数组名称不存在
+        **参数解释：** 参数组名称是否存在。 **取值范围：** - true：参数组名称存在。 - false：参数组名称不存在。
 
         :param is_existed: The is_existed of this ValidateConfigurationNameResponse.
         :type is_existed: bool

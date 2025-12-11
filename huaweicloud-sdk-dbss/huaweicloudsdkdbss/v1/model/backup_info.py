@@ -63,7 +63,7 @@ class BackupInfo:
         :type end_time: datetime
         :param file_size: 文件大小
         :type file_size: int
-        :param file_size_unit: 文件大小单位 - Byte - KB - MB - GB
+        :param file_size_unit: 文件大小单位 - Byte：Byte - KB：kb - MB: mb - GB: gb
         :type file_size_unit: str
         :param id: 备份ID
         :type id: str
@@ -244,7 +244,7 @@ class BackupInfo:
     def file_size_unit(self):
         r"""Gets the file_size_unit of this BackupInfo.
 
-        文件大小单位 - Byte - KB - MB - GB
+        文件大小单位 - Byte：Byte - KB：kb - MB: mb - GB: gb
 
         :return: The file_size_unit of this BackupInfo.
         :rtype: str
@@ -255,7 +255,7 @@ class BackupInfo:
     def file_size_unit(self, file_size_unit):
         r"""Sets the file_size_unit of this BackupInfo.
 
-        文件大小单位 - Byte - KB - MB - GB
+        文件大小单位 - Byte：Byte - KB：kb - MB: mb - GB: gb
 
         :param file_size_unit: The file_size_unit of this BackupInfo.
         :type file_size_unit: str

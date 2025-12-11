@@ -43,13 +43,13 @@ class SensitiveMaskResponseRules:
         :type id: str
         :param name: 规则名称
         :type name: str
-        :param type: 规则类型
+        :param type: 规则类型 - BUILD_IN：系统内置 - USER_DEFINE：自定义
         :type type: str
         :param regex: 规则正则表达式
         :type regex: str
         :param mask_value: 替换值
         :type mask_value: str
-        :param status: 规则状态
+        :param status: 规则状态 - ON：启用 - OFF：禁用
         :type status: str
         :param operate_time: 操作时间
         :type operate_time: str
@@ -129,7 +129,7 @@ class SensitiveMaskResponseRules:
     def type(self):
         r"""Gets the type of this SensitiveMaskResponseRules.
 
-        规则类型
+        规则类型 - BUILD_IN：系统内置 - USER_DEFINE：自定义
 
         :return: The type of this SensitiveMaskResponseRules.
         :rtype: str
@@ -140,7 +140,7 @@ class SensitiveMaskResponseRules:
     def type(self, type):
         r"""Sets the type of this SensitiveMaskResponseRules.
 
-        规则类型
+        规则类型 - BUILD_IN：系统内置 - USER_DEFINE：自定义
 
         :param type: The type of this SensitiveMaskResponseRules.
         :type type: str
@@ -195,7 +195,7 @@ class SensitiveMaskResponseRules:
     def status(self):
         r"""Gets the status of this SensitiveMaskResponseRules.
 
-        规则状态
+        规则状态 - ON：启用 - OFF：禁用
 
         :return: The status of this SensitiveMaskResponseRules.
         :rtype: str
@@ -206,7 +206,7 @@ class SensitiveMaskResponseRules:
     def status(self, status):
         r"""Sets the status of this SensitiveMaskResponseRules.
 
-        规则状态
+        规则状态 - ON：启用 - OFF：禁用
 
         :param status: The status of this SensitiveMaskResponseRules.
         :type status: str

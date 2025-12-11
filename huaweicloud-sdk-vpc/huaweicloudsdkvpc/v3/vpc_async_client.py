@@ -962,6 +962,71 @@ class VpcAsyncClient(Client):
 
         return http_info
 
+    def create_virsubnet_cidr_reservation_async(self, request):
+        r"""创建子网预留网段
+
+        子网预留网段是子网网段范围的IP网段，此IP网段内的IP不会被子网内的实例占用。用户可以通过创建子网预留网段来预留某个IP网段，用于后续的特殊场景使用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateVirsubnetCidrReservation
+        :type request: :class:`huaweicloudsdkvpc.v3.CreateVirsubnetCidrReservationRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.CreateVirsubnetCidrReservationResponse`
+        """
+        http_info = self._create_virsubnet_cidr_reservation_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_virsubnet_cidr_reservation_async_invoker(self, request):
+        http_info = self._create_virsubnet_cidr_reservation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_virsubnet_cidr_reservation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/virsubnet-cidr-reservations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVirsubnetCidrReservationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_port_tag_async(self, request):
         r"""删除端口资源标签
 
@@ -1392,6 +1457,71 @@ class VpcAsyncClient(Client):
         path_params = {}
         if 'traffic_mirror_session_id' in local_var_params:
             path_params['traffic_mirror_session_id'] = local_var_params['traffic_mirror_session_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_virsubnet_cidr_reservation_async(self, request):
+        r"""删除子网预留网段
+
+        当您已创建的子网预留网段不再使用时，您可以通过调用该接口删除子网预留网段资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteVirsubnetCidrReservation
+        :type request: :class:`huaweicloudsdkvpc.v3.DeleteVirsubnetCidrReservationRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.DeleteVirsubnetCidrReservationResponse`
+        """
+        http_info = self._delete_virsubnet_cidr_reservation_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_virsubnet_cidr_reservation_async_invoker(self, request):
+        http_info = self._delete_virsubnet_cidr_reservation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_virsubnet_cidr_reservation_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/virsubnet-cidr-reservations/{virsubnet_cidr_reservation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVirsubnetCidrReservationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'virsubnet_cidr_reservation_id' in local_var_params:
+            path_params['virsubnet_cidr_reservation_id'] = local_var_params['virsubnet_cidr_reservation_id']
 
         query_params = []
 
@@ -2056,6 +2186,93 @@ class VpcAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:
             query_params.append(('marker', local_var_params['marker']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_virsubnet_cidr_reservations_async(self, request):
+        r"""查询子网预留网段列表
+
+        当您的子网预留网段创建成功后，您可以通过调用该接口查询所有子网预留网段信息，包括子网预留网段名称、IP网段等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListVirsubnetCidrReservations
+        :type request: :class:`huaweicloudsdkvpc.v3.ListVirsubnetCidrReservationsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListVirsubnetCidrReservationsResponse`
+        """
+        http_info = self._list_virsubnet_cidr_reservations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_virsubnet_cidr_reservations_async_invoker(self, request):
+        http_info = self._list_virsubnet_cidr_reservations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_virsubnet_cidr_reservations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/virsubnet-cidr-reservations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVirsubnetCidrReservationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'virsubnet_id' in local_var_params:
+            query_params.append(('virsubnet_id', local_var_params['virsubnet_id']))
+            collection_formats['virsubnet_id'] = 'csv'
+        if 'cidr' in local_var_params:
+            query_params.append(('cidr', local_var_params['cidr']))
+            collection_formats['cidr'] = 'csv'
+        if 'ip_version' in local_var_params:
+            query_params.append(('ip_version', local_var_params['ip_version']))
+            collection_formats['ip_version'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -2801,6 +3018,71 @@ class VpcAsyncClient(Client):
 
         return http_info
 
+    def show_virsubnet_cidr_reservation_async(self, request):
+        r"""查询子网预留网段
+
+        当您的子网预留网段创建成功后，您可以通过调用该接口查询单个子网预留网段的详细信息，包括子网预留网段的名称、IP网段等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowVirsubnetCidrReservation
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowVirsubnetCidrReservationRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowVirsubnetCidrReservationResponse`
+        """
+        http_info = self._show_virsubnet_cidr_reservation_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_virsubnet_cidr_reservation_async_invoker(self, request):
+        http_info = self._show_virsubnet_cidr_reservation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_virsubnet_cidr_reservation_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/virsubnet-cidr-reservations/{virsubnet_cidr_reservation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVirsubnetCidrReservationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'virsubnet_cidr_reservation_id' in local_var_params:
+            path_params['virsubnet_cidr_reservation_id'] = local_var_params['virsubnet_cidr_reservation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_security_group_async(self, request):
         r"""更新安全组
 
@@ -3105,6 +3387,73 @@ class VpcAsyncClient(Client):
         path_params = {}
         if 'traffic_mirror_session_id' in local_var_params:
             path_params['traffic_mirror_session_id'] = local_var_params['traffic_mirror_session_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_virsubnet_cidr_reservation_async(self, request):
+        r"""更新子网预留网段
+
+        当您的子网预留网段创建成功后，您可以通过调用该接口更新子网预留网段的基本信息，包括子网预留网段的名称、描述信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateVirsubnetCidrReservation
+        :type request: :class:`huaweicloudsdkvpc.v3.UpdateVirsubnetCidrReservationRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.UpdateVirsubnetCidrReservationResponse`
+        """
+        http_info = self._update_virsubnet_cidr_reservation_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_virsubnet_cidr_reservation_async_invoker(self, request):
+        http_info = self._update_virsubnet_cidr_reservation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_virsubnet_cidr_reservation_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/virsubnet-cidr-reservations/{virsubnet_cidr_reservation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVirsubnetCidrReservationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'virsubnet_cidr_reservation_id' in local_var_params:
+            path_params['virsubnet_cidr_reservation_id'] = local_var_params['virsubnet_cidr_reservation_id']
 
         query_params = []
 

@@ -27,7 +27,7 @@ class ChangeFilePathWhiteDetailRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param customized_path: 自定义路径，选填，可编辑
+        :param customized_path: **参数解释**: 自定义路径，选填，可编辑 **取值范围**: 不涉及 
         :type customized_path: list[str]
         """
         
@@ -43,7 +43,7 @@ class ChangeFilePathWhiteDetailRequestInfo:
     def customized_path(self):
         r"""Gets the customized_path of this ChangeFilePathWhiteDetailRequestInfo.
 
-        自定义路径，选填，可编辑
+        **参数解释**: 自定义路径，选填，可编辑 **取值范围**: 不涉及 
 
         :return: The customized_path of this ChangeFilePathWhiteDetailRequestInfo.
         :rtype: list[str]
@@ -54,7 +54,7 @@ class ChangeFilePathWhiteDetailRequestInfo:
     def customized_path(self, customized_path):
         r"""Sets the customized_path of this ChangeFilePathWhiteDetailRequestInfo.
 
-        自定义路径，选填，可编辑
+        **参数解释**: 自定义路径，选填，可编辑 **取值范围**: 不涉及 
 
         :param customized_path: The customized_path of this ChangeFilePathWhiteDetailRequestInfo.
         :type customized_path: list[str]

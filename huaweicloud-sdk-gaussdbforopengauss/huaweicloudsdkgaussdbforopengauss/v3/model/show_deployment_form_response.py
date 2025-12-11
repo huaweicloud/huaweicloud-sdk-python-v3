@@ -19,17 +19,23 @@ class ShowDeploymentFormResponse(SdkResponse):
         'initial_node_num': 'int',
         'solution': 'str',
         'shard_num': 'int',
-        'replica_num': 'int'
+        'replica_num': 'int',
+        'each_expand_nodes': 'int',
+        'max_shard_count': 'int',
+        'each_shard_num': 'int'
     }
 
     attribute_map = {
         'initial_node_num': 'initial_node_num',
         'solution': 'solution',
         'shard_num': 'shard_num',
-        'replica_num': 'replica_num'
+        'replica_num': 'replica_num',
+        'each_expand_nodes': 'each_expand_nodes',
+        'max_shard_count': 'max_shard_count',
+        'each_shard_num': 'each_shard_num'
     }
 
-    def __init__(self, initial_node_num=None, solution=None, shard_num=None, replica_num=None):
+    def __init__(self, initial_node_num=None, solution=None, shard_num=None, replica_num=None, each_expand_nodes=None, max_shard_count=None, each_shard_num=None):
         r"""ShowDeploymentFormResponse
 
         The model defined in huaweicloud sdk
@@ -42,6 +48,12 @@ class ShowDeploymentFormResponse(SdkResponse):
         :type shard_num: int
         :param replica_num: 副本数。
         :type replica_num: int
+        :param each_expand_nodes: **参数解释**: 每次扩容的最小节点数。 **取值范围**: 不涉及。
+        :type each_expand_nodes: int
+        :param max_shard_count: **参数解释**: 最大分片数。 **取值范围**: 不涉及。
+        :type max_shard_count: int
+        :param each_shard_num: **参数解释**: 每分片节点数。 **取值范围**: 不涉及。
+        :type each_shard_num: int
         """
         
         super().__init__()
@@ -50,6 +62,9 @@ class ShowDeploymentFormResponse(SdkResponse):
         self._solution = None
         self._shard_num = None
         self._replica_num = None
+        self._each_expand_nodes = None
+        self._max_shard_count = None
+        self._each_shard_num = None
         self.discriminator = None
 
         if initial_node_num is not None:
@@ -60,6 +75,12 @@ class ShowDeploymentFormResponse(SdkResponse):
             self.shard_num = shard_num
         if replica_num is not None:
             self.replica_num = replica_num
+        if each_expand_nodes is not None:
+            self.each_expand_nodes = each_expand_nodes
+        if max_shard_count is not None:
+            self.max_shard_count = max_shard_count
+        if each_shard_num is not None:
+            self.each_shard_num = each_shard_num
 
     @property
     def initial_node_num(self):
@@ -148,6 +169,72 @@ class ShowDeploymentFormResponse(SdkResponse):
         :type replica_num: int
         """
         self._replica_num = replica_num
+
+    @property
+    def each_expand_nodes(self):
+        r"""Gets the each_expand_nodes of this ShowDeploymentFormResponse.
+
+        **参数解释**: 每次扩容的最小节点数。 **取值范围**: 不涉及。
+
+        :return: The each_expand_nodes of this ShowDeploymentFormResponse.
+        :rtype: int
+        """
+        return self._each_expand_nodes
+
+    @each_expand_nodes.setter
+    def each_expand_nodes(self, each_expand_nodes):
+        r"""Sets the each_expand_nodes of this ShowDeploymentFormResponse.
+
+        **参数解释**: 每次扩容的最小节点数。 **取值范围**: 不涉及。
+
+        :param each_expand_nodes: The each_expand_nodes of this ShowDeploymentFormResponse.
+        :type each_expand_nodes: int
+        """
+        self._each_expand_nodes = each_expand_nodes
+
+    @property
+    def max_shard_count(self):
+        r"""Gets the max_shard_count of this ShowDeploymentFormResponse.
+
+        **参数解释**: 最大分片数。 **取值范围**: 不涉及。
+
+        :return: The max_shard_count of this ShowDeploymentFormResponse.
+        :rtype: int
+        """
+        return self._max_shard_count
+
+    @max_shard_count.setter
+    def max_shard_count(self, max_shard_count):
+        r"""Sets the max_shard_count of this ShowDeploymentFormResponse.
+
+        **参数解释**: 最大分片数。 **取值范围**: 不涉及。
+
+        :param max_shard_count: The max_shard_count of this ShowDeploymentFormResponse.
+        :type max_shard_count: int
+        """
+        self._max_shard_count = max_shard_count
+
+    @property
+    def each_shard_num(self):
+        r"""Gets the each_shard_num of this ShowDeploymentFormResponse.
+
+        **参数解释**: 每分片节点数。 **取值范围**: 不涉及。
+
+        :return: The each_shard_num of this ShowDeploymentFormResponse.
+        :rtype: int
+        """
+        return self._each_shard_num
+
+    @each_shard_num.setter
+    def each_shard_num(self, each_shard_num):
+        r"""Sets the each_shard_num of this ShowDeploymentFormResponse.
+
+        **参数解释**: 每分片节点数。 **取值范围**: 不涉及。
+
+        :param each_shard_num: The each_shard_num of this ShowDeploymentFormResponse.
+        :type each_shard_num: int
+        """
+        self._each_shard_num = each_shard_num
 
     def to_dict(self):
         import warnings

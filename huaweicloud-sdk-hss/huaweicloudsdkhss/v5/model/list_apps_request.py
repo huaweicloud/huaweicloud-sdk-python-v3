@@ -47,7 +47,7 @@ class ListAppsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param host_id: **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
@@ -113,7 +113,7 @@ class ListAppsRequest:
     def host_id(self):
         r"""Gets the host_id of this ListAppsRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ListAppsRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class ListAppsRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListAppsRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ListAppsRequest.
         :type host_id: str

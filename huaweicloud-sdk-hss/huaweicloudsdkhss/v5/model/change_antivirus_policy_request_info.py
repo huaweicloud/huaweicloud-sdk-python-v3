@@ -61,9 +61,9 @@ class ChangeAntivirusPolicyRequestInfo:
         :type policy_id: str
         :param policy_name: 策略名称
         :type policy_name: str
-        :param start_type: 启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        :param start_type: **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
         :type start_type: str
-        :param scan_type: 任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        :param scan_type: **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
         :type scan_type: str
         :param scan_period: 启动类型，包含如下:   - day ：每天   - week : 每周   - month : 每月
         :type scan_period: str
@@ -83,7 +83,7 @@ class ChangeAntivirusPolicyRequestInfo:
         :type scan_dir: str
         :param ignore_dir: 排除目录，多个用;分隔
         :type ignore_dir: str
-        :param action: 处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        :param action: **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
         :type action: str
         :param whether_paid_task: 此次扫描任务是否消耗按次计费配额
         :type whether_paid_task: bool
@@ -185,7 +185,7 @@ class ChangeAntivirusPolicyRequestInfo:
     def start_type(self):
         r"""Gets the start_type of this ChangeAntivirusPolicyRequestInfo.
 
-        启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
 
         :return: The start_type of this ChangeAntivirusPolicyRequestInfo.
         :rtype: str
@@ -196,7 +196,7 @@ class ChangeAntivirusPolicyRequestInfo:
     def start_type(self, start_type):
         r"""Sets the start_type of this ChangeAntivirusPolicyRequestInfo.
 
-        启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
 
         :param start_type: The start_type of this ChangeAntivirusPolicyRequestInfo.
         :type start_type: str
@@ -207,7 +207,7 @@ class ChangeAntivirusPolicyRequestInfo:
     def scan_type(self):
         r"""Gets the scan_type of this ChangeAntivirusPolicyRequestInfo.
 
-        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
 
         :return: The scan_type of this ChangeAntivirusPolicyRequestInfo.
         :rtype: str
@@ -218,7 +218,7 @@ class ChangeAntivirusPolicyRequestInfo:
     def scan_type(self, scan_type):
         r"""Sets the scan_type of this ChangeAntivirusPolicyRequestInfo.
 
-        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
 
         :param scan_type: The scan_type of this ChangeAntivirusPolicyRequestInfo.
         :type scan_type: str
@@ -427,7 +427,7 @@ class ChangeAntivirusPolicyRequestInfo:
     def action(self):
         r"""Gets the action of this ChangeAntivirusPolicyRequestInfo.
 
-        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
 
         :return: The action of this ChangeAntivirusPolicyRequestInfo.
         :rtype: str
@@ -438,7 +438,7 @@ class ChangeAntivirusPolicyRequestInfo:
     def action(self, action):
         r"""Sets the action of this ChangeAntivirusPolicyRequestInfo.
 
-        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
 
         :param action: The action of this ChangeAntivirusPolicyRequestInfo.
         :type action: str

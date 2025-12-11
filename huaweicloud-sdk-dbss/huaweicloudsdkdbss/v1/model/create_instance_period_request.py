@@ -79,7 +79,7 @@ class CreateInstancePeriodRequest:
         :type comment: str
         :param region: 云服务器所在区域ID
         :type region: str
-        :param cloud_service_type: 服务类型： - hws.service.type.dbss
+        :param cloud_service_type: 服务类型： - hws.service.type.dbss: 数据库审计
         :type cloud_service_type: str
         :param charging_mode: 计费模式： - 0: 包周期计费 - 1: 按需计费
         :type charging_mode: int
@@ -346,7 +346,7 @@ class CreateInstancePeriodRequest:
     def cloud_service_type(self):
         r"""Gets the cloud_service_type of this CreateInstancePeriodRequest.
 
-        服务类型： - hws.service.type.dbss
+        服务类型： - hws.service.type.dbss: 数据库审计
 
         :return: The cloud_service_type of this CreateInstancePeriodRequest.
         :rtype: str
@@ -357,7 +357,7 @@ class CreateInstancePeriodRequest:
     def cloud_service_type(self, cloud_service_type):
         r"""Sets the cloud_service_type of this CreateInstancePeriodRequest.
 
-        服务类型： - hws.service.type.dbss
+        服务类型： - hws.service.type.dbss: 数据库审计
 
         :param cloud_service_type: The cloud_service_type of this CreateInstancePeriodRequest.
         :type cloud_service_type: str

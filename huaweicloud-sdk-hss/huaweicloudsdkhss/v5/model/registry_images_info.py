@@ -85,13 +85,13 @@ class RegistryImagesInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释**: id **取值范围**: 最小值0，最大值9223372036854775807 
+        :param id: **参数解释**: 镜像记录的唯一标识ID **取值范围**: 最小值0，最大值9223372036854775807 
         :type id: int
         :param namespace: **参数解释**: 组织名称 **取值范围**: 字符长度0-64位 
         :type namespace: str
         :param image_name: **参数解释**: 镜像名称 **取值范围**: 字符长度0-128位 
         :type image_name: str
-        :param image_id: **参数解释**: 镜像id **取值范围**: 字符长度0-64位 
+        :param image_id: **参数解释**: 镜像的唯一标识ID **取值范围**: 字符长度0-64位 
         :type image_id: str
         :param image_digest: **参数解释**: 镜像digest **取值范围**: 字符长度0-128位 
         :type image_digest: str
@@ -99,11 +99,11 @@ class RegistryImagesInfo:
         :type image_version: str
         :param image_type: **参数解释**: 镜像类型 **取值范围**: - private_image：SWR私有镜像。 - shared_image：SWR共享镜像。 - instance_image：SWR企业版镜像。 - harbor：Harbor仓库镜像。 - jfrog：Jfrog镜像。 
         :type image_type: str
-        :param registry_id: **参数解释**: 镜像仓id **取值范围**: 字符长度1-64位 
+        :param registry_id: **参数解释**: 镜像所属仓库的唯一标识ID **取值范围**: 字符长度1-64位 
         :type registry_id: str
         :param registry_name: **参数解释**: 镜像仓库名称 **取值范围**: 字符长度1-128位 
         :type registry_name: str
-        :param registry_type: **参数解释**： 镜像仓库类型 **取值范围**： - SwrPrivate：swr私有。 - SwrShared：swr共享。 - SwrEnterprise：swr企业。 - Harbor：harbor仓库。 - Jfrog：jfrog仓库。 - Other：其他仓库。 
+        :param registry_type: **参数解释**： 镜像仓库类型 **取值范围**： - SwrPrivate：SWR私有。 - SwrShared：SWR共享。 - SwrEnterprise：SWR企业。 - Harbor：Harbor仓库。 - Jfrog：Jfrog仓库。 - Other：其他仓库。 
         :type registry_type: str
         :param latest_version: 是否是最新版本
         :type latest_version: bool
@@ -113,19 +113,19 @@ class RegistryImagesInfo:
         :type scan_failed_desc: str
         :param scan_failed_code: **参数解释**： 扫描失败原因code **取值范围**： 扫描失败原因code和描述对应关系如下 - unknown_error：未知错误。 - authentication_failed：认证失败。 - download_failed：镜像下载失败。请向技术人员寻求帮助。 - image_over_sized：镜像大小超限，不支持扫描。建议精简镜像。 - get_detail_info_not_found：获取镜像详细信息失败，镜像仓中可能已经不存在此镜像。请重新同步最新镜像。 - image_layer_over_sized：镜像层数超限，不支持扫描。建议精简镜像。 - schema_v1_not_support：Schema V1镜像不支持扫描。建议升级到V2版本。 - access_swr_failed：访问SWR服务出错。请向技术人员寻求帮助。 - swr_authentication_error：缺少SWR授权。请参考镜像授权指导设置权限。 - failed_to_scan_vulnerability：漏洞扫描失败。 - failed_to_scan_file：文件扫描失败。 - failed_to_scan_software：软件扫描失败。 - failed_to_check_sensitive_information：敏感信息核查失败。 - failed_to_check_baseline：基线检查失败。 - failed_to_check_software_compliance：软件合规检查失败。 - failed_to_query_basic_image_information：基础镜像信息查询失败。 - failed_to_check_build_cmd：镜像构建指令扫描失败。 - response_timed_out：响应超时。 - database_error：数据库错误。 - failed_to_send_the_scan_request：发送扫描请求失败。 
         :type scan_failed_code: str
-        :param image_size: **参数解释**: 镜像大小 **取值范围**: 取值0-2147483547 
+        :param image_size: **参数解释**: 镜像大小 **取值范围**: 取值0-2147483547，单位为字节（bytes） 
         :type image_size: int
-        :param latest_update_time: **参数解释**: 镜像版本最后更新时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 
+        :param latest_update_time: **参数解释**: 镜像版本最后更新时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） 
         :type latest_update_time: int
-        :param latest_scan_time: **参数解释**: 最近扫描时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 
+        :param latest_scan_time: **参数解释**: 最近扫描时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） 
         :type latest_scan_time: int
-        :param latest_sync_time: **参数解释**: 最近同步时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 
+        :param latest_sync_time: **参数解释**: 最近同步时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） 
         :type latest_sync_time: int
-        :param vul_num: **参数解释**: 漏洞个数 **取值范围**: 取值0-2147483647 
+        :param vul_num: **参数解释**: 镜像扫描出的漏洞总数量 **取值范围**: 取值0-2147483647；单位：个 
         :type vul_num: int
-        :param unsafe_setting_num: **参数解释**: 基线扫描未通过数 **取值范围**: 取值0-2147483647 
+        :param unsafe_setting_num: **参数解释**: 基线扫描未通过数 **取值范围**: 取值0-2147483647；单位：项 
         :type unsafe_setting_num: int
-        :param malicious_file_num: **参数解释**: 恶意文件数 **取值范围**: 取值0-2147483647 
+        :param malicious_file_num: **参数解释**: 镜像扫描出的恶意文件数 **取值范围**: 取值0-2147483647；单位：个 
         :type malicious_file_num: int
         :param domain_name: **参数解释**: 拥有者（共享镜像参数） **取值范围**: 字符长度0-128 
         :type domain_name: str
@@ -135,9 +135,9 @@ class RegistryImagesInfo:
         :type scannable: bool
         :param is_multiple_arch: 是否是多架构镜像
         :type is_multiple_arch: bool
-        :param instance_name: **参数解释**: 企业版镜像实例名称 **取值范围**: 字符长度0-128 
+        :param instance_name: **参数解释**: SWR企业版镜像所属仓库实例名称 **取值范围**: 字符长度0-128 
         :type instance_name: str
-        :param instance_id: **参数解释**: 企业版镜像实例ID **取值范围**: 字符长度0-64 
+        :param instance_id: **参数解释**: SWR企业版镜像所属仓库实例的唯一标识ID **取值范围**: 字符长度0-64 
         :type instance_id: str
         :param instance_url: **参数解释**: 企业版镜像实例URL **取值范围**: 字符长度0-256 
         :type instance_url: str
@@ -246,7 +246,7 @@ class RegistryImagesInfo:
     def id(self):
         r"""Gets the id of this RegistryImagesInfo.
 
-        **参数解释**: id **取值范围**: 最小值0，最大值9223372036854775807 
+        **参数解释**: 镜像记录的唯一标识ID **取值范围**: 最小值0，最大值9223372036854775807 
 
         :return: The id of this RegistryImagesInfo.
         :rtype: int
@@ -257,7 +257,7 @@ class RegistryImagesInfo:
     def id(self, id):
         r"""Sets the id of this RegistryImagesInfo.
 
-        **参数解释**: id **取值范围**: 最小值0，最大值9223372036854775807 
+        **参数解释**: 镜像记录的唯一标识ID **取值范围**: 最小值0，最大值9223372036854775807 
 
         :param id: The id of this RegistryImagesInfo.
         :type id: int
@@ -312,7 +312,7 @@ class RegistryImagesInfo:
     def image_id(self):
         r"""Gets the image_id of this RegistryImagesInfo.
 
-        **参数解释**: 镜像id **取值范围**: 字符长度0-64位 
+        **参数解释**: 镜像的唯一标识ID **取值范围**: 字符长度0-64位 
 
         :return: The image_id of this RegistryImagesInfo.
         :rtype: str
@@ -323,7 +323,7 @@ class RegistryImagesInfo:
     def image_id(self, image_id):
         r"""Sets the image_id of this RegistryImagesInfo.
 
-        **参数解释**: 镜像id **取值范围**: 字符长度0-64位 
+        **参数解释**: 镜像的唯一标识ID **取值范围**: 字符长度0-64位 
 
         :param image_id: The image_id of this RegistryImagesInfo.
         :type image_id: str
@@ -400,7 +400,7 @@ class RegistryImagesInfo:
     def registry_id(self):
         r"""Gets the registry_id of this RegistryImagesInfo.
 
-        **参数解释**: 镜像仓id **取值范围**: 字符长度1-64位 
+        **参数解释**: 镜像所属仓库的唯一标识ID **取值范围**: 字符长度1-64位 
 
         :return: The registry_id of this RegistryImagesInfo.
         :rtype: str
@@ -411,7 +411,7 @@ class RegistryImagesInfo:
     def registry_id(self, registry_id):
         r"""Sets the registry_id of this RegistryImagesInfo.
 
-        **参数解释**: 镜像仓id **取值范围**: 字符长度1-64位 
+        **参数解释**: 镜像所属仓库的唯一标识ID **取值范围**: 字符长度1-64位 
 
         :param registry_id: The registry_id of this RegistryImagesInfo.
         :type registry_id: str
@@ -444,7 +444,7 @@ class RegistryImagesInfo:
     def registry_type(self):
         r"""Gets the registry_type of this RegistryImagesInfo.
 
-        **参数解释**： 镜像仓库类型 **取值范围**： - SwrPrivate：swr私有。 - SwrShared：swr共享。 - SwrEnterprise：swr企业。 - Harbor：harbor仓库。 - Jfrog：jfrog仓库。 - Other：其他仓库。 
+        **参数解释**： 镜像仓库类型 **取值范围**： - SwrPrivate：SWR私有。 - SwrShared：SWR共享。 - SwrEnterprise：SWR企业。 - Harbor：Harbor仓库。 - Jfrog：Jfrog仓库。 - Other：其他仓库。 
 
         :return: The registry_type of this RegistryImagesInfo.
         :rtype: str
@@ -455,7 +455,7 @@ class RegistryImagesInfo:
     def registry_type(self, registry_type):
         r"""Sets the registry_type of this RegistryImagesInfo.
 
-        **参数解释**： 镜像仓库类型 **取值范围**： - SwrPrivate：swr私有。 - SwrShared：swr共享。 - SwrEnterprise：swr企业。 - Harbor：harbor仓库。 - Jfrog：jfrog仓库。 - Other：其他仓库。 
+        **参数解释**： 镜像仓库类型 **取值范围**： - SwrPrivate：SWR私有。 - SwrShared：SWR共享。 - SwrEnterprise：SWR企业。 - Harbor：Harbor仓库。 - Jfrog：Jfrog仓库。 - Other：其他仓库。 
 
         :param registry_type: The registry_type of this RegistryImagesInfo.
         :type registry_type: str
@@ -554,7 +554,7 @@ class RegistryImagesInfo:
     def image_size(self):
         r"""Gets the image_size of this RegistryImagesInfo.
 
-        **参数解释**: 镜像大小 **取值范围**: 取值0-2147483547 
+        **参数解释**: 镜像大小 **取值范围**: 取值0-2147483547，单位为字节（bytes） 
 
         :return: The image_size of this RegistryImagesInfo.
         :rtype: int
@@ -565,7 +565,7 @@ class RegistryImagesInfo:
     def image_size(self, image_size):
         r"""Sets the image_size of this RegistryImagesInfo.
 
-        **参数解释**: 镜像大小 **取值范围**: 取值0-2147483547 
+        **参数解释**: 镜像大小 **取值范围**: 取值0-2147483547，单位为字节（bytes） 
 
         :param image_size: The image_size of this RegistryImagesInfo.
         :type image_size: int
@@ -576,7 +576,7 @@ class RegistryImagesInfo:
     def latest_update_time(self):
         r"""Gets the latest_update_time of this RegistryImagesInfo.
 
-        **参数解释**: 镜像版本最后更新时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 
+        **参数解释**: 镜像版本最后更新时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） 
 
         :return: The latest_update_time of this RegistryImagesInfo.
         :rtype: int
@@ -587,7 +587,7 @@ class RegistryImagesInfo:
     def latest_update_time(self, latest_update_time):
         r"""Sets the latest_update_time of this RegistryImagesInfo.
 
-        **参数解释**: 镜像版本最后更新时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 
+        **参数解释**: 镜像版本最后更新时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） 
 
         :param latest_update_time: The latest_update_time of this RegistryImagesInfo.
         :type latest_update_time: int
@@ -598,7 +598,7 @@ class RegistryImagesInfo:
     def latest_scan_time(self):
         r"""Gets the latest_scan_time of this RegistryImagesInfo.
 
-        **参数解释**: 最近扫描时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 
+        **参数解释**: 最近扫描时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） 
 
         :return: The latest_scan_time of this RegistryImagesInfo.
         :rtype: int
@@ -609,7 +609,7 @@ class RegistryImagesInfo:
     def latest_scan_time(self, latest_scan_time):
         r"""Sets the latest_scan_time of this RegistryImagesInfo.
 
-        **参数解释**: 最近扫描时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 
+        **参数解释**: 最近扫描时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） 
 
         :param latest_scan_time: The latest_scan_time of this RegistryImagesInfo.
         :type latest_scan_time: int
@@ -620,7 +620,7 @@ class RegistryImagesInfo:
     def latest_sync_time(self):
         r"""Gets the latest_sync_time of this RegistryImagesInfo.
 
-        **参数解释**: 最近同步时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 
+        **参数解释**: 最近同步时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） 
 
         :return: The latest_sync_time of this RegistryImagesInfo.
         :rtype: int
@@ -631,7 +631,7 @@ class RegistryImagesInfo:
     def latest_sync_time(self, latest_sync_time):
         r"""Sets the latest_sync_time of this RegistryImagesInfo.
 
-        **参数解释**: 最近同步时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 
+        **参数解释**: 最近同步时间，时间单位 毫秒（ms） **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） 
 
         :param latest_sync_time: The latest_sync_time of this RegistryImagesInfo.
         :type latest_sync_time: int
@@ -642,7 +642,7 @@ class RegistryImagesInfo:
     def vul_num(self):
         r"""Gets the vul_num of this RegistryImagesInfo.
 
-        **参数解释**: 漏洞个数 **取值范围**: 取值0-2147483647 
+        **参数解释**: 镜像扫描出的漏洞总数量 **取值范围**: 取值0-2147483647；单位：个 
 
         :return: The vul_num of this RegistryImagesInfo.
         :rtype: int
@@ -653,7 +653,7 @@ class RegistryImagesInfo:
     def vul_num(self, vul_num):
         r"""Sets the vul_num of this RegistryImagesInfo.
 
-        **参数解释**: 漏洞个数 **取值范围**: 取值0-2147483647 
+        **参数解释**: 镜像扫描出的漏洞总数量 **取值范围**: 取值0-2147483647；单位：个 
 
         :param vul_num: The vul_num of this RegistryImagesInfo.
         :type vul_num: int
@@ -664,7 +664,7 @@ class RegistryImagesInfo:
     def unsafe_setting_num(self):
         r"""Gets the unsafe_setting_num of this RegistryImagesInfo.
 
-        **参数解释**: 基线扫描未通过数 **取值范围**: 取值0-2147483647 
+        **参数解释**: 基线扫描未通过数 **取值范围**: 取值0-2147483647；单位：项 
 
         :return: The unsafe_setting_num of this RegistryImagesInfo.
         :rtype: int
@@ -675,7 +675,7 @@ class RegistryImagesInfo:
     def unsafe_setting_num(self, unsafe_setting_num):
         r"""Sets the unsafe_setting_num of this RegistryImagesInfo.
 
-        **参数解释**: 基线扫描未通过数 **取值范围**: 取值0-2147483647 
+        **参数解释**: 基线扫描未通过数 **取值范围**: 取值0-2147483647；单位：项 
 
         :param unsafe_setting_num: The unsafe_setting_num of this RegistryImagesInfo.
         :type unsafe_setting_num: int
@@ -686,7 +686,7 @@ class RegistryImagesInfo:
     def malicious_file_num(self):
         r"""Gets the malicious_file_num of this RegistryImagesInfo.
 
-        **参数解释**: 恶意文件数 **取值范围**: 取值0-2147483647 
+        **参数解释**: 镜像扫描出的恶意文件数 **取值范围**: 取值0-2147483647；单位：个 
 
         :return: The malicious_file_num of this RegistryImagesInfo.
         :rtype: int
@@ -697,7 +697,7 @@ class RegistryImagesInfo:
     def malicious_file_num(self, malicious_file_num):
         r"""Sets the malicious_file_num of this RegistryImagesInfo.
 
-        **参数解释**: 恶意文件数 **取值范围**: 取值0-2147483647 
+        **参数解释**: 镜像扫描出的恶意文件数 **取值范围**: 取值0-2147483647；单位：个 
 
         :param malicious_file_num: The malicious_file_num of this RegistryImagesInfo.
         :type malicious_file_num: int
@@ -796,7 +796,7 @@ class RegistryImagesInfo:
     def instance_name(self):
         r"""Gets the instance_name of this RegistryImagesInfo.
 
-        **参数解释**: 企业版镜像实例名称 **取值范围**: 字符长度0-128 
+        **参数解释**: SWR企业版镜像所属仓库实例名称 **取值范围**: 字符长度0-128 
 
         :return: The instance_name of this RegistryImagesInfo.
         :rtype: str
@@ -807,7 +807,7 @@ class RegistryImagesInfo:
     def instance_name(self, instance_name):
         r"""Sets the instance_name of this RegistryImagesInfo.
 
-        **参数解释**: 企业版镜像实例名称 **取值范围**: 字符长度0-128 
+        **参数解释**: SWR企业版镜像所属仓库实例名称 **取值范围**: 字符长度0-128 
 
         :param instance_name: The instance_name of this RegistryImagesInfo.
         :type instance_name: str
@@ -818,7 +818,7 @@ class RegistryImagesInfo:
     def instance_id(self):
         r"""Gets the instance_id of this RegistryImagesInfo.
 
-        **参数解释**: 企业版镜像实例ID **取值范围**: 字符长度0-64 
+        **参数解释**: SWR企业版镜像所属仓库实例的唯一标识ID **取值范围**: 字符长度0-64 
 
         :return: The instance_id of this RegistryImagesInfo.
         :rtype: str
@@ -829,7 +829,7 @@ class RegistryImagesInfo:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this RegistryImagesInfo.
 
-        **参数解释**: 企业版镜像实例ID **取值范围**: 字符长度0-64 
+        **参数解释**: SWR企业版镜像所属仓库实例的唯一标识ID **取值范围**: 字符长度0-64 
 
         :param instance_id: The instance_id of this RegistryImagesInfo.
         :type instance_id: str

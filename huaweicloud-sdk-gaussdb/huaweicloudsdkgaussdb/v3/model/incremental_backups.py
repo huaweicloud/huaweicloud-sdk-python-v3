@@ -20,6 +20,7 @@ class IncrementalBackups:
         'begin_time': 'str',
         'end_time': 'str',
         'size': 'float',
+        'backup_type': 'str',
         'instance_id': 'str'
     }
 
@@ -29,10 +30,11 @@ class IncrementalBackups:
         'begin_time': 'begin_time',
         'end_time': 'end_time',
         'size': 'size',
+        'backup_type': 'backup_type',
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, id=None, name=None, begin_time=None, end_time=None, size=None, instance_id=None):
+    def __init__(self, id=None, name=None, begin_time=None, end_time=None, size=None, backup_type=None, instance_id=None):
         r"""IncrementalBackups
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class IncrementalBackups:
         :type end_time: str
         :param size: 备份大小，(单位：KB)。
         :type size: float
+        :param backup_type: **参数解释**：  增量备份类型。  **取值范围**：  - Log: 同区域增量备份。 - OffSiteLog：跨区域增量备份。
+        :type backup_type: str
         :param instance_id: 实例ID。
         :type instance_id: str
         """
@@ -58,6 +62,7 @@ class IncrementalBackups:
         self._begin_time = None
         self._end_time = None
         self._size = None
+        self._backup_type = None
         self._instance_id = None
         self.discriminator = None
 
@@ -71,6 +76,8 @@ class IncrementalBackups:
             self.end_time = end_time
         if size is not None:
             self.size = size
+        if backup_type is not None:
+            self.backup_type = backup_type
         if instance_id is not None:
             self.instance_id = instance_id
 
@@ -183,6 +190,28 @@ class IncrementalBackups:
         :type size: float
         """
         self._size = size
+
+    @property
+    def backup_type(self):
+        r"""Gets the backup_type of this IncrementalBackups.
+
+        **参数解释**：  增量备份类型。  **取值范围**：  - Log: 同区域增量备份。 - OffSiteLog：跨区域增量备份。
+
+        :return: The backup_type of this IncrementalBackups.
+        :rtype: str
+        """
+        return self._backup_type
+
+    @backup_type.setter
+    def backup_type(self, backup_type):
+        r"""Sets the backup_type of this IncrementalBackups.
+
+        **参数解释**：  增量备份类型。  **取值范围**：  - Log: 同区域增量备份。 - OffSiteLog：跨区域增量备份。
+
+        :param backup_type: The backup_type of this IncrementalBackups.
+        :type backup_type: str
+        """
+        self._backup_type = backup_type
 
     @property
     def instance_id(self):

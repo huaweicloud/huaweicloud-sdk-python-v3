@@ -28,7 +28,7 @@ class UpdateAuditSqlRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态  - SUCCESS:成功  - FAILED:失败
+        :param status: 状态  - SUCCESS: 成功  - FAILED: 失败
         :type status: str
         """
         
@@ -44,7 +44,7 @@ class UpdateAuditSqlRuleResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this UpdateAuditSqlRuleResponse.
 
-        状态  - SUCCESS:成功  - FAILED:失败
+        状态  - SUCCESS: 成功  - FAILED: 失败
 
         :return: The status of this UpdateAuditSqlRuleResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class UpdateAuditSqlRuleResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this UpdateAuditSqlRuleResponse.
 
-        状态  - SUCCESS:成功  - FAILED:失败
+        状态  - SUCCESS: 成功  - FAILED: 失败
 
         :param status: The status of this UpdateAuditSqlRuleResponse.
         :type status: str

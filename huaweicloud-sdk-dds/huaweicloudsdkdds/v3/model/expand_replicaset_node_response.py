@@ -30,9 +30,9 @@ class ExpandReplicasetNodeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID，仅按需实例返回该参数。
+        :param job_id: **参数解释：** 任务ID，仅按需实例返回该参数。 **取值范围：** 不涉及。
         :type job_id: str
-        :param order_id: 订单ID，仅包周期实例返回该参数。
+        :param order_id: **参数解释：** 订单ID，仅包周期实例返回该参数。 **取值范围：** 不涉及。
         :type order_id: str
         """
         
@@ -51,7 +51,7 @@ class ExpandReplicasetNodeResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this ExpandReplicasetNodeResponse.
 
-        任务ID，仅按需实例返回该参数。
+        **参数解释：** 任务ID，仅按需实例返回该参数。 **取值范围：** 不涉及。
 
         :return: The job_id of this ExpandReplicasetNodeResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ExpandReplicasetNodeResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this ExpandReplicasetNodeResponse.
 
-        任务ID，仅按需实例返回该参数。
+        **参数解释：** 任务ID，仅按需实例返回该参数。 **取值范围：** 不涉及。
 
         :param job_id: The job_id of this ExpandReplicasetNodeResponse.
         :type job_id: str
@@ -73,7 +73,7 @@ class ExpandReplicasetNodeResponse(SdkResponse):
     def order_id(self):
         r"""Gets the order_id of this ExpandReplicasetNodeResponse.
 
-        订单ID，仅包周期实例返回该参数。
+        **参数解释：** 订单ID，仅包周期实例返回该参数。 **取值范围：** 不涉及。
 
         :return: The order_id of this ExpandReplicasetNodeResponse.
         :rtype: str
@@ -84,7 +84,7 @@ class ExpandReplicasetNodeResponse(SdkResponse):
     def order_id(self, order_id):
         r"""Sets the order_id of this ExpandReplicasetNodeResponse.
 
-        订单ID，仅包周期实例返回该参数。
+        **参数解释：** 订单ID，仅包周期实例返回该参数。 **取值范围：** 不涉及。
 
         :param order_id: The order_id of this ExpandReplicasetNodeResponse.
         :type order_id: str

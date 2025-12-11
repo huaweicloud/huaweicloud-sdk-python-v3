@@ -39,11 +39,11 @@ class AuditSqlResponseSqlOperatedObjInfo:
 
         :param column_name: 列名
         :type column_name: str
-        :param object_type: 操作对象类型
+        :param object_type: 操作对象类型 - VARIABLE: 变量 - \&quot;\&quot;: 空
         :type object_type: str
         :param schema_name: schema名称
         :type schema_name: str
-        :param sql_type: sql类型
+        :param sql_type: sql类型 - LOGIN: LOGIN - CREATE_TABLE: CREATE TABLE - CREATE_TABLESPACE: CREATE TABLESPACE - DROP_TABLE: DROP TABLE - DROP_TABLESPACE: DROP TABLESPACE - DELETE: DELETE - INSERT: INSERT - INSERT_SELECT: INSERT SELECT - SELECT: SELECT - SELECT_FOR_UPDATE: SELECT FOR UPDATE - UPDATE: UPDATE - CREATE_USER: CREATE USER - DROP_USER: DROP USER - GRANT: GRANT - OPERATE: OPERATE - ALL: ALL
         :type sql_type: str
         :param sys_name: 系统名称
         :type sys_name: str
@@ -100,7 +100,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
     def object_type(self):
         r"""Gets the object_type of this AuditSqlResponseSqlOperatedObjInfo.
 
-        操作对象类型
+        操作对象类型 - VARIABLE: 变量 - \"\": 空
 
         :return: The object_type of this AuditSqlResponseSqlOperatedObjInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
     def object_type(self, object_type):
         r"""Sets the object_type of this AuditSqlResponseSqlOperatedObjInfo.
 
-        操作对象类型
+        操作对象类型 - VARIABLE: 变量 - \"\": 空
 
         :param object_type: The object_type of this AuditSqlResponseSqlOperatedObjInfo.
         :type object_type: str
@@ -144,7 +144,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
     def sql_type(self):
         r"""Gets the sql_type of this AuditSqlResponseSqlOperatedObjInfo.
 
-        sql类型
+        sql类型 - LOGIN: LOGIN - CREATE_TABLE: CREATE TABLE - CREATE_TABLESPACE: CREATE TABLESPACE - DROP_TABLE: DROP TABLE - DROP_TABLESPACE: DROP TABLESPACE - DELETE: DELETE - INSERT: INSERT - INSERT_SELECT: INSERT SELECT - SELECT: SELECT - SELECT_FOR_UPDATE: SELECT FOR UPDATE - UPDATE: UPDATE - CREATE_USER: CREATE USER - DROP_USER: DROP USER - GRANT: GRANT - OPERATE: OPERATE - ALL: ALL
 
         :return: The sql_type of this AuditSqlResponseSqlOperatedObjInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class AuditSqlResponseSqlOperatedObjInfo:
     def sql_type(self, sql_type):
         r"""Sets the sql_type of this AuditSqlResponseSqlOperatedObjInfo.
 
-        sql类型
+        sql类型 - LOGIN: LOGIN - CREATE_TABLE: CREATE TABLE - CREATE_TABLESPACE: CREATE TABLESPACE - DROP_TABLE: DROP TABLE - DROP_TABLESPACE: DROP TABLESPACE - DELETE: DELETE - INSERT: INSERT - INSERT_SELECT: INSERT SELECT - SELECT: SELECT - SELECT_FOR_UPDATE: SELECT FOR UPDATE - UPDATE: UPDATE - CREATE_USER: CREATE USER - DROP_USER: DROP USER - GRANT: GRANT - OPERATE: OPERATE - ALL: ALL
 
         :param sql_type: The sql_type of this AuditSqlResponseSqlOperatedObjInfo.
         :type sql_type: str

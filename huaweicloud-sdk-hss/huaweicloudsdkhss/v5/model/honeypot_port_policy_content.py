@@ -37,7 +37,7 @@ class HoneypotPortPolicyContent:
 
         The model defined in huaweicloud sdk
 
-        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
         :type os_type: str
         :param policy_name: 策略名称
         :type policy_name: str
@@ -73,7 +73,7 @@ class HoneypotPortPolicyContent:
     def os_type(self):
         r"""Gets the os_type of this HoneypotPortPolicyContent.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :return: The os_type of this HoneypotPortPolicyContent.
         :rtype: str
@@ -84,7 +84,7 @@ class HoneypotPortPolicyContent:
     def os_type(self, os_type):
         r"""Sets the os_type of this HoneypotPortPolicyContent.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :param os_type: The os_type of this HoneypotPortPolicyContent.
         :type os_type: str

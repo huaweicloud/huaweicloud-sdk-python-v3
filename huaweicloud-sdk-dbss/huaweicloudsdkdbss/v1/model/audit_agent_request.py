@@ -51,7 +51,7 @@ class AuditAgentRequest:
         :type agent_id: str
         :param agent_type: agent类型 - APP：应用端 - DB：数据库端
         :type agent_type: str
-        :param agent_os: agent OS类型: - LINUX64_X86 - LINUX64_ARM - WINDOWS64
+        :param agent_os: agent OS类型: - LINUX64_X86：LINUX64_X86 - LINUX64_ARM：LINUX64_ARM - WINDOWS64：WINDOWS64
         :type agent_os: str
         :param agent_ip: agent IP，安装节点类型为应用端时必输。
         :type agent_ip: str
@@ -183,7 +183,7 @@ class AuditAgentRequest:
     def agent_os(self):
         r"""Gets the agent_os of this AuditAgentRequest.
 
-        agent OS类型: - LINUX64_X86 - LINUX64_ARM - WINDOWS64
+        agent OS类型: - LINUX64_X86：LINUX64_X86 - LINUX64_ARM：LINUX64_ARM - WINDOWS64：WINDOWS64
 
         :return: The agent_os of this AuditAgentRequest.
         :rtype: str
@@ -194,7 +194,7 @@ class AuditAgentRequest:
     def agent_os(self, agent_os):
         r"""Sets the agent_os of this AuditAgentRequest.
 
-        agent OS类型: - LINUX64_X86 - LINUX64_ARM - WINDOWS64
+        agent OS类型: - LINUX64_X86：LINUX64_X86 - LINUX64_ARM：LINUX64_ARM - WINDOWS64：WINDOWS64
 
         :param agent_os: The agent_os of this AuditAgentRequest.
         :type agent_os: str

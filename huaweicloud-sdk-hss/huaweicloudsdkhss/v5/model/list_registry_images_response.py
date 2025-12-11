@@ -30,9 +30,9 @@ class ListRegistryImagesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: **参数解释**: 总数 **取值范围**: 0-2147483547 
+        :param total_num: **参数解释**: 满足查询条件的镜像记录总数量 **取值范围**: 0-2147483547；单位：个 
         :type total_num: int
-        :param data_list: 仓库镜像列表
+        :param data_list: **参数解释**: 查询到的仓库镜像详细信息列表 **取值范围**: 数组长度0-当前查询的limit值（1-200），数组元素为RegistryImagesInfo对象 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.RegistryImagesInfo`]
         """
         
@@ -51,7 +51,7 @@ class ListRegistryImagesResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListRegistryImagesResponse.
 
-        **参数解释**: 总数 **取值范围**: 0-2147483547 
+        **参数解释**: 满足查询条件的镜像记录总数量 **取值范围**: 0-2147483547；单位：个 
 
         :return: The total_num of this ListRegistryImagesResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListRegistryImagesResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListRegistryImagesResponse.
 
-        **参数解释**: 总数 **取值范围**: 0-2147483547 
+        **参数解释**: 满足查询条件的镜像记录总数量 **取值范围**: 0-2147483547；单位：个 
 
         :param total_num: The total_num of this ListRegistryImagesResponse.
         :type total_num: int
@@ -73,7 +73,7 @@ class ListRegistryImagesResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListRegistryImagesResponse.
 
-        仓库镜像列表
+        **参数解释**: 查询到的仓库镜像详细信息列表 **取值范围**: 数组长度0-当前查询的limit值（1-200），数组元素为RegistryImagesInfo对象 
 
         :return: The data_list of this ListRegistryImagesResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.RegistryImagesInfo`]
@@ -84,7 +84,7 @@ class ListRegistryImagesResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListRegistryImagesResponse.
 
-        仓库镜像列表
+        **参数解释**: 查询到的仓库镜像详细信息列表 **取值范围**: 数组长度0-当前查询的limit值（1-200），数组元素为RegistryImagesInfo对象 
 
         :param data_list: The data_list of this ListRegistryImagesResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.RegistryImagesInfo`]

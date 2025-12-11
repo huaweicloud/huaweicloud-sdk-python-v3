@@ -29,9 +29,9 @@ class AddHostsGroupRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 服务器组名称
+        :param group_name: **参数解释**: 服务器组名称 **取值范围**: 字符长度1-128位 
         :type group_name: str
-        :param host_id_list: 服务器ID列表
+        :param host_id_list: **参数解释**： 服务器ID列表 **取值范围**: 不涉及 
         :type host_id_list: list[str]
         """
         
@@ -48,7 +48,7 @@ class AddHostsGroupRequestInfo:
     def group_name(self):
         r"""Gets the group_name of this AddHostsGroupRequestInfo.
 
-        服务器组名称
+        **参数解释**: 服务器组名称 **取值范围**: 字符长度1-128位 
 
         :return: The group_name of this AddHostsGroupRequestInfo.
         :rtype: str
@@ -59,7 +59,7 @@ class AddHostsGroupRequestInfo:
     def group_name(self, group_name):
         r"""Sets the group_name of this AddHostsGroupRequestInfo.
 
-        服务器组名称
+        **参数解释**: 服务器组名称 **取值范围**: 字符长度1-128位 
 
         :param group_name: The group_name of this AddHostsGroupRequestInfo.
         :type group_name: str
@@ -70,7 +70,7 @@ class AddHostsGroupRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this AddHostsGroupRequestInfo.
 
-        服务器ID列表
+        **参数解释**： 服务器ID列表 **取值范围**: 不涉及 
 
         :return: The host_id_list of this AddHostsGroupRequestInfo.
         :rtype: list[str]
@@ -81,7 +81,7 @@ class AddHostsGroupRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this AddHostsGroupRequestInfo.
 
-        服务器ID列表
+        **参数解释**： 服务器ID列表 **取值范围**: 不涉及 
 
         :param host_id_list: The host_id_list of this AddHostsGroupRequestInfo.
         :type host_id_list: list[str]

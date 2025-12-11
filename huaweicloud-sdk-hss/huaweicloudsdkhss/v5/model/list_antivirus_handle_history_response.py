@@ -32,7 +32,7 @@ class ListAntivirusHandleHistoryResponse(SdkResponse):
 
         :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
-        :param data_list: 病毒查杀历史处置记录
+        :param data_list: **参数解释**: 病毒查杀历史处置记录 **取值范围**: 最小值0，最大值100 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AntiVirusHandleHistory`]
         """
         
@@ -73,7 +73,7 @@ class ListAntivirusHandleHistoryResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListAntivirusHandleHistoryResponse.
 
-        病毒查杀历史处置记录
+        **参数解释**: 病毒查杀历史处置记录 **取值范围**: 最小值0，最大值100 
 
         :return: The data_list of this ListAntivirusHandleHistoryResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.AntiVirusHandleHistory`]
@@ -84,7 +84,7 @@ class ListAntivirusHandleHistoryResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListAntivirusHandleHistoryResponse.
 
-        病毒查杀历史处置记录
+        **参数解释**: 病毒查杀历史处置记录 **取值范围**: 最小值0，最大值100 
 
         :param data_list: The data_list of this ListAntivirusHandleHistoryResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AntiVirusHandleHistory`]

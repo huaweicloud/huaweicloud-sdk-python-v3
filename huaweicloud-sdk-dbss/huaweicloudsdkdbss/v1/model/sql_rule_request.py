@@ -35,7 +35,7 @@ class SqlRuleRequest:
         :type page: int
         :param size: 每页大小
         :type size: int
-        :param risk_levels: 风险级别 - HIGH - MEDIUM - LOW - NO_RISK
+        :param risk_levels: 风险级别 - HIGH：高 - MEDIUM：中 - LOW：低 - NO_RISK：无风险
         :type risk_levels: str
         """
         
@@ -101,7 +101,7 @@ class SqlRuleRequest:
     def risk_levels(self):
         r"""Gets the risk_levels of this SqlRuleRequest.
 
-        风险级别 - HIGH - MEDIUM - LOW - NO_RISK
+        风险级别 - HIGH：高 - MEDIUM：中 - LOW：低 - NO_RISK：无风险
 
         :return: The risk_levels of this SqlRuleRequest.
         :rtype: str
@@ -112,7 +112,7 @@ class SqlRuleRequest:
     def risk_levels(self, risk_levels):
         r"""Sets the risk_levels of this SqlRuleRequest.
 
-        风险级别 - HIGH - MEDIUM - LOW - NO_RISK
+        风险级别 - HIGH：高 - MEDIUM：中 - LOW：低 - NO_RISK：无风险
 
         :param risk_levels: The risk_levels of this SqlRuleRequest.
         :type risk_levels: str

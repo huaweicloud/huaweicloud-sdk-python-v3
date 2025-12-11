@@ -55,7 +55,7 @@ class EcsSpecificationBean:
         :type ram: int
         :param vcpus: CPU
         :type vcpus: int
-        :param az_type: 可用区类型 - DEDICATED - DEC - EDGE
+        :param az_type: 可用区类型 - DEDICATED: 大网 - DEC: 边缘小站 - EDGE: 专属
         :type az_type: str
         """
         
@@ -239,7 +239,7 @@ class EcsSpecificationBean:
     def az_type(self):
         r"""Gets the az_type of this EcsSpecificationBean.
 
-        可用区类型 - DEDICATED - DEC - EDGE
+        可用区类型 - DEDICATED: 大网 - DEC: 边缘小站 - EDGE: 专属
 
         :return: The az_type of this EcsSpecificationBean.
         :rtype: str
@@ -250,7 +250,7 @@ class EcsSpecificationBean:
     def az_type(self, az_type):
         r"""Sets the az_type of this EcsSpecificationBean.
 
-        可用区类型 - DEDICATED - DEC - EDGE
+        可用区类型 - DEDICATED: 大网 - DEC: 边缘小站 - EDGE: 专属
 
         :param az_type: The az_type of this EcsSpecificationBean.
         :type az_type: str

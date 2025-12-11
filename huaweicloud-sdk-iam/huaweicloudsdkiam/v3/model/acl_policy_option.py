@@ -17,7 +17,7 @@ class AclPolicyOption:
     openapi_types = {
         'allow_address_netmasks': 'list[AllowAddressNetmasksOption]',
         'allow_ip_ranges': 'list[AllowIpRangesOption]',
-        'allow_vpc_endpoints': 'list[AllowVpcEndpointsResult]'
+        'allow_vpc_endpoints': 'list[AllowVpcEndpointsOption]'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class AclPolicyOption:
         :param allow_ip_ranges: 允许访问的IP地址区间。
         :type allow_ip_ranges: list[:class:`huaweicloudsdkiam.v3.AllowIpRangesOption`]
         :param allow_vpc_endpoints: 允许访问的VPC端点。
-        :type allow_vpc_endpoints: list[:class:`huaweicloudsdkiam.v3.AllowVpcEndpointsResult`]
+        :type allow_vpc_endpoints: list[:class:`huaweicloudsdkiam.v3.AllowVpcEndpointsOption`]
         """
         
         
@@ -104,7 +104,7 @@ class AclPolicyOption:
         允许访问的VPC端点。
 
         :return: The allow_vpc_endpoints of this AclPolicyOption.
-        :rtype: list[:class:`huaweicloudsdkiam.v3.AllowVpcEndpointsResult`]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.AllowVpcEndpointsOption`]
         """
         return self._allow_vpc_endpoints
 
@@ -115,7 +115,7 @@ class AclPolicyOption:
         允许访问的VPC端点。
 
         :param allow_vpc_endpoints: The allow_vpc_endpoints of this AclPolicyOption.
-        :type allow_vpc_endpoints: list[:class:`huaweicloudsdkiam.v3.AllowVpcEndpointsResult`]
+        :type allow_vpc_endpoints: list[:class:`huaweicloudsdkiam.v3.AllowVpcEndpointsOption`]
         """
         self._allow_vpc_endpoints = allow_vpc_endpoints
 

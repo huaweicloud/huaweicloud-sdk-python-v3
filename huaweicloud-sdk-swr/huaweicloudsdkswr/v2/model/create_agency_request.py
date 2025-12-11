@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ModelProperty:
+class CreateAgencyRequest:
 
     """
     Attributes:
@@ -15,78 +15,20 @@ class ModelProperty:
     sensitive_list = []
 
     openapi_types = {
-        'phone_id': 'str',
-        '_property': 'str'
     }
 
     attribute_map = {
-        'phone_id': 'phone_id',
-        '_property': 'property'
     }
 
-    def __init__(self, phone_id=None, _property=None):
-        r"""ModelProperty
+    def __init__(self):
+        r"""CreateAgencyRequest
 
         The model defined in huaweicloud sdk
 
-        :param phone_id: 云手机id，不超过32个字节。
-        :type phone_id: str
-        :param _property: 云手机属性列表，为Json格式字符串。
-        :type _property: str
         """
         
         
-
-        self._phone_id = None
-        self.__property = None
         self.discriminator = None
-
-        self.phone_id = phone_id
-        self._property = _property
-
-    @property
-    def phone_id(self):
-        r"""Gets the phone_id of this ModelProperty.
-
-        云手机id，不超过32个字节。
-
-        :return: The phone_id of this ModelProperty.
-        :rtype: str
-        """
-        return self._phone_id
-
-    @phone_id.setter
-    def phone_id(self, phone_id):
-        r"""Sets the phone_id of this ModelProperty.
-
-        云手机id，不超过32个字节。
-
-        :param phone_id: The phone_id of this ModelProperty.
-        :type phone_id: str
-        """
-        self._phone_id = phone_id
-
-    @property
-    def _property(self):
-        r"""Gets the _property of this ModelProperty.
-
-        云手机属性列表，为Json格式字符串。
-
-        :return: The _property of this ModelProperty.
-        :rtype: str
-        """
-        return self.__property
-
-    @_property.setter
-    def _property(self, _property):
-        r"""Sets the _property of this ModelProperty.
-
-        云手机属性列表，为Json格式字符串。
-
-        :param _property: The _property of this ModelProperty.
-        :type _property: str
-        """
-        self.__property = _property
 
     def to_dict(self):
         result = {}
@@ -125,7 +67,7 @@ class ModelProperty:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ModelProperty):
+        if not isinstance(other, CreateAgencyRequest):
             return False
 
         return self.__dict__ == other.__dict__

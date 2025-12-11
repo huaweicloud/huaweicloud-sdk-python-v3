@@ -1,3 +1,331 @@
+# 3.1.179 2025-12-11
+
+### HuaweiCloud SDK CloudDC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListIDcs**
+    - 响应参数变更
+      - `+ count`
+  - **ShowServerStatus**
+    - 响应参数变更
+      - `+ server_status.unknown`
+      - `+ server_status.ok.count`
+      - `+ server_status.ok.dc_stats`
+      - `* server_status.ok: object -> object<ServerState>`
+      - `+ server_status.warning.count`
+      - `+ server_status.warning.dc_stats`
+      - `* server_status.warning: object -> object<ServerState>`
+      - `+ server_status.critical.count`
+      - `+ server_status.critical.dc_stats`
+      - `* server_status.critical: object -> object<ServerState>`
+      - `+ server_status.health.count`
+      - `+ server_status.health.dc_stats`
+      - `* server_status.health: object -> object<ServerState>`
+      - `+ server_status.unhealth.count`
+      - `+ server_status.unhealth.dc_stats`
+      - `* server_status.unhealth: object -> object<ServerState>`
+      - `+ server_status.isolation.count`
+      - `+ server_status.isolation.dc_stats`
+      - `* server_status.isolation: object -> object<ServerState>`
+  - **ListIRacks**
+    - 响应参数变更
+      - `+ count`
+
+### HuaweiCloud SDK CodeArtsDeploy
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListEnvironments**
+    - 响应参数变更
+      - `+ result.project_id`
+  - **ShowEnvironmentDetail**
+    - 响应参数变更
+      - `+ result.project_id`
+
+### HuaweiCloud SDK DDM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAvailableRds**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+  - **ListAvailableRdsForMigrate**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+  - **ListTasks**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+  - **ListBackups**
+    - 请求参数变更
+      - `+ instance_id`
+      - `+ instance_name`
+      - `+ backup_name`
+      - `+ offset`
+      - `+ limit`
+  - **ShowAvalibleDdms**
+    - 请求参数变更
+      - `+ offset`
+      - `+ limit`
+
+### HuaweiCloud SDK DDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RestartInstance**
+    - 请求参数变更
+      - `+ is_serial`
+      - `+ is_force`
+  - **ListAuditlogs**
+    - 响应参数变更
+      - `+ total_size`
+
+### HuaweiCloud SDK ER
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`UpdatePropagationRoutePolicy`、`ChangeAssociationRoutePolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ShowHistoricalSqlFilterRule`
+    - `SetAutoSqlLimiting`
+    - `ShowSqlAutoSqlLimiting`
+    - `ShowAutoSqlLimitingLog`
+    - `BatchDeleteBackup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowProxyVersion**
+    - 响应参数变更
+      - `+ risk`
+  - **SwitchGaussMySqlConfiguration**
+    - 响应参数变更
+      - `+ param_group_name`
+  - **ShowInstanceMonitorExtend**
+    - 响应参数变更
+      - `+ allow`
+  - **ListRecycleInstances**
+    - 响应参数变更
+      - `* total_count: string -> int32`
+      - `+ instances.recycle_bakcups`
+      - `* instances.create_at: int32 -> int64`
+      - `* instances.deleted_at: int32 -> int64`
+  - **ListScheduleJobs**
+    - 请求参数变更
+      - `+ instance_id`
+    - 响应参数变更
+      - `+ schedules.proxy_id`
+      - `+ schedules.proxy_name`
+  - **ShowBackupRestoreTime**
+    - 请求参数变更
+      - `+ date`
+      - `+ start_time`
+      - `+ end_time`
+  - **ShowGaussMySqlIncrementalBackupList**
+    - 请求参数变更
+      - `+ display_offsite_backup`
+    - 响应参数变更
+      - `+ backups.backup_type`
+  - **ShowGaussMySqlProxyFlavors**
+    - 请求参数变更
+      - `+ query_type`
+      - `+ proxy_id`
+  - **ShowGaussMySqlProxyList**
+    - 响应参数变更
+      - `+ proxy_list.htap_nodes`
+      - `+ proxy_list.proxy.type`
+      - `+ proxy_list.proxy.created_at`
+      - `+ proxy_list.proxy.updated_at`
+      - `+ proxy_list.proxy.support_ap_node`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateConfiguration**
+    - 请求参数变更
+      - `+ instance_id`
+  - **ShowApplyHistory**
+    - 响应参数变更
+      - `+ total_count`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`BatchDeleteInstanceTag`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDeploymentForm**
+    - 请求参数变更
+      - `+ consistency`
+      - `+ consistency_protocol`
+      - `+ engine_version`
+    - 响应参数变更
+      - `+ max_shard_count`
+      - `+ each_shard_num`
+      - `+ each_expand_nodes`
+  - **ListRestorableInstancesDetails**
+    - 请求参数变更
+      - `+ backup_restore_type`
+      - `+ source_backup_schema`
+      - `+ target_instance_id`
+      - `+ instance_name`
+
+### HuaweiCloud SDK HSS
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 支持接口`ShowFilePathWhiteLists`、`ChangeFilePathWhiteLists`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowVulReportData**
+    - 响应参数变更
+      - `+ summary`
+      - `- sumary.vul_num_unfixed`
+      - `- sumary.vul_num_linux`
+      - `- sumary.vul_num_windows`
+      - `- sumary.vul_num_web_cms`
+      - `- sumary.vul_num_app`
+      - `- sumary.host_num_risk`
+      - `- sumary.host_num_high_risk`
+      - `- sumary.host_num_medium_risk`
+      - `- sumary.host_num_low_risk`
+      - `- sumary.affect_asset_num_important`
+      - `- sumary.affect_asset_num_common`
+      - `- sumary.affect_asset_num_test`
+  - **ListPortHost**
+    - 请求参数变更
+      - `* category: optional -> required`
+  - **ListWebAppAndServices**
+    - 请求参数变更
+      - `* name: required -> optional`
+  - **ShowWebTamperHostPolicy**
+    - 响应参数变更
+      - `+ protect_dir_info.protect_dir_list.exclude_file_path`
+  - **ListAllRiskConfigCheckRules**
+    - 请求参数变更
+      - `* statistics_flag: string -> boolean`
+
+### HuaweiCloud SDK IAM
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateDomainApiAclPolicy**
+    - 请求参数变更
+      - `* api_acl_policy.allow_vpc_endpoints: list<AllowVpcEndpointsResult> -> list<AllowVpcEndpointsOption>`
+
+### HuaweiCloud SDK OCR
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RecognizeSmartDocumentRecognizer**
+    - 请求参数变更
+      - `+ image_layout`
+      - `+ character_mode`
+    - 响应参数变更
+      - `+ result.ocr_result.words_block_list.char_list`
+      - `+ result.layout_result.layout_block_list.formula_id`
+      - `+ result.formula_result.formula_list.type`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSqlStatistics**
+    - 响应参数变更
+      - `+ list.canUse`
+      - `- list.can_use`
+      - `* list.query_id: int64 -> string`
+
+### HuaweiCloud SDK SWR
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持接口`ListSyncRegions`、`CheckAgency`、`CreateAgency`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowShareFeatureGates**
+    - 响应参数变更
+      - `+ enable_image_quota`
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListVirsubnetCidrReservations`
+    - `CreateVirsubnetCidrReservation`
+    - `ShowVirsubnetCidrReservation`
+    - `UpdateVirsubnetCidrReservation`
+    - `DeleteVirsubnetCidrReservation`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFirewall**
+    - 响应参数变更
+      - `+ firewalls.type`
+
 # 3.1.178 2025-12-04
 
 ### HuaweiCloud SDK AAD

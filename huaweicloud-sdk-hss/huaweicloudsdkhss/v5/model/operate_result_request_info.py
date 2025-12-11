@@ -39,19 +39,19 @@ class OperateResultRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param agent_id: **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param result_id: 病毒查杀结果ID
+        :param result_id: **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
         :type result_id: str
-        :param event_type: 事件类型
+        :param event_type: **参数解释**: 病毒查杀结果对应的事件类型标识 **取值范围**: 0-10（具体含义：0&#x3D;文件病毒事件、1&#x3D;内存病毒事件...，详见产品错误码/枚举文档） 
         :type event_type: int
-        :param occur_time: **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
+        :param occur_time: **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
         :type occur_time: int
         :param file_hash: **参数解释**： 文件哈希 **取值范围**： 字符长度1-256位 
         :type file_hash: str
         :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
-        :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        :param file_attr: **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
         :type file_attr: str
         """
         
@@ -79,7 +79,7 @@ class OperateResultRequestInfo:
     def agent_id(self):
         r"""Gets the agent_id of this OperateResultRequestInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this OperateResultRequestInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class OperateResultRequestInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this OperateResultRequestInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this OperateResultRequestInfo.
         :type agent_id: str
@@ -101,7 +101,7 @@ class OperateResultRequestInfo:
     def result_id(self):
         r"""Gets the result_id of this OperateResultRequestInfo.
 
-        病毒查杀结果ID
+        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
 
         :return: The result_id of this OperateResultRequestInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class OperateResultRequestInfo:
     def result_id(self, result_id):
         r"""Sets the result_id of this OperateResultRequestInfo.
 
-        病毒查杀结果ID
+        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
 
         :param result_id: The result_id of this OperateResultRequestInfo.
         :type result_id: str
@@ -123,7 +123,7 @@ class OperateResultRequestInfo:
     def event_type(self):
         r"""Gets the event_type of this OperateResultRequestInfo.
 
-        事件类型
+        **参数解释**: 病毒查杀结果对应的事件类型标识 **取值范围**: 0-10（具体含义：0=文件病毒事件、1=内存病毒事件...，详见产品错误码/枚举文档） 
 
         :return: The event_type of this OperateResultRequestInfo.
         :rtype: int
@@ -134,7 +134,7 @@ class OperateResultRequestInfo:
     def event_type(self, event_type):
         r"""Sets the event_type of this OperateResultRequestInfo.
 
-        事件类型
+        **参数解释**: 病毒查杀结果对应的事件类型标识 **取值范围**: 0-10（具体含义：0=文件病毒事件、1=内存病毒事件...，详见产品错误码/枚举文档） 
 
         :param event_type: The event_type of this OperateResultRequestInfo.
         :type event_type: int
@@ -145,7 +145,7 @@ class OperateResultRequestInfo:
     def occur_time(self):
         r"""Gets the occur_time of this OperateResultRequestInfo.
 
-        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :return: The occur_time of this OperateResultRequestInfo.
         :rtype: int
@@ -156,7 +156,7 @@ class OperateResultRequestInfo:
     def occur_time(self, occur_time):
         r"""Sets the occur_time of this OperateResultRequestInfo.
 
-        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :param occur_time: The occur_time of this OperateResultRequestInfo.
         :type occur_time: int
@@ -211,7 +211,7 @@ class OperateResultRequestInfo:
     def file_attr(self):
         r"""Gets the file_attr of this OperateResultRequestInfo.
 
-        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
 
         :return: The file_attr of this OperateResultRequestInfo.
         :rtype: str
@@ -222,7 +222,7 @@ class OperateResultRequestInfo:
     def file_attr(self, file_attr):
         r"""Sets the file_attr of this OperateResultRequestInfo.
 
-        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
 
         :param file_attr: The file_attr of this OperateResultRequestInfo.
         :type file_attr: str

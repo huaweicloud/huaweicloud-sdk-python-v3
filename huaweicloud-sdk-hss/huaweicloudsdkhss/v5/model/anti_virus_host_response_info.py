@@ -39,15 +39,15 @@ class AntiVirusHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
         :type public_ip: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param agent_id: **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         :param os_type: 操作系统类型，包含如下2种。   - Linux ：Linux   - Windows ：Windows
         :type os_type: str
@@ -85,7 +85,7 @@ class AntiVirusHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AntiVirusHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this AntiVirusHostResponseInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class AntiVirusHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AntiVirusHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this AntiVirusHostResponseInfo.
         :type host_id: str
@@ -129,7 +129,7 @@ class AntiVirusHostResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this AntiVirusHostResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :return: The public_ip of this AntiVirusHostResponseInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class AntiVirusHostResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this AntiVirusHostResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :param public_ip: The public_ip of this AntiVirusHostResponseInfo.
         :type public_ip: str
@@ -173,7 +173,7 @@ class AntiVirusHostResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this AntiVirusHostResponseInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this AntiVirusHostResponseInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class AntiVirusHostResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this AntiVirusHostResponseInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this AntiVirusHostResponseInfo.
         :type agent_id: str

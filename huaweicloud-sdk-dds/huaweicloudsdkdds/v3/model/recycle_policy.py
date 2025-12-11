@@ -29,9 +29,9 @@ class RecyclePolicy:
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 打开回收策略，不可关闭 - true 打开回收策略
+        :param enabled: **参数解释：** 打开回收策略。 **约束限制：** 不可关闭。 **取值范围：** true。 **默认取值：** true。
         :type enabled: bool
-        :param retention_period_in_days: 策略保持时长（1-7天），天数为正整数，不填默认保留7天
+        :param retention_period_in_days: **参数解释：** 策略保持时长（1-7天），天数为正整数，不填默认保留7天。 **约束限制：** 正整数。 **取值范围：** 1-7。 **默认取值：** 7。
         :type retention_period_in_days: int
         """
         
@@ -49,7 +49,7 @@ class RecyclePolicy:
     def enabled(self):
         r"""Gets the enabled of this RecyclePolicy.
 
-        打开回收策略，不可关闭 - true 打开回收策略
+        **参数解释：** 打开回收策略。 **约束限制：** 不可关闭。 **取值范围：** true。 **默认取值：** true。
 
         :return: The enabled of this RecyclePolicy.
         :rtype: bool
@@ -60,7 +60,7 @@ class RecyclePolicy:
     def enabled(self, enabled):
         r"""Sets the enabled of this RecyclePolicy.
 
-        打开回收策略，不可关闭 - true 打开回收策略
+        **参数解释：** 打开回收策略。 **约束限制：** 不可关闭。 **取值范围：** true。 **默认取值：** true。
 
         :param enabled: The enabled of this RecyclePolicy.
         :type enabled: bool
@@ -71,7 +71,7 @@ class RecyclePolicy:
     def retention_period_in_days(self):
         r"""Gets the retention_period_in_days of this RecyclePolicy.
 
-        策略保持时长（1-7天），天数为正整数，不填默认保留7天
+        **参数解释：** 策略保持时长（1-7天），天数为正整数，不填默认保留7天。 **约束限制：** 正整数。 **取值范围：** 1-7。 **默认取值：** 7。
 
         :return: The retention_period_in_days of this RecyclePolicy.
         :rtype: int
@@ -82,7 +82,7 @@ class RecyclePolicy:
     def retention_period_in_days(self, retention_period_in_days):
         r"""Sets the retention_period_in_days of this RecyclePolicy.
 
-        策略保持时长（1-7天），天数为正整数，不填默认保留7天
+        **参数解释：** 策略保持时长（1-7天），天数为正整数，不填默认保留7天。 **约束限制：** 正整数。 **取值范围：** 1-7。 **默认取值：** 7。
 
         :param retention_period_in_days: The retention_period_in_days of this RecyclePolicy.
         :type retention_period_in_days: int

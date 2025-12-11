@@ -32,7 +32,7 @@ class ListAntiVirusResultResponse(SdkResponse):
 
         :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
-        :param data_list: 结果列表详情
+        :param data_list: **参数解释**: 病毒查杀结果详细信息列表 **取值范围**: 最小值0，最大值1000 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AntiVirusResultResponseInfo`]
         """
         
@@ -73,7 +73,7 @@ class ListAntiVirusResultResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListAntiVirusResultResponse.
 
-        结果列表详情
+        **参数解释**: 病毒查杀结果详细信息列表 **取值范围**: 最小值0，最大值1000 
 
         :return: The data_list of this ListAntiVirusResultResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.AntiVirusResultResponseInfo`]
@@ -84,7 +84,7 @@ class ListAntiVirusResultResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListAntiVirusResultResponse.
 
-        结果列表详情
+        **参数解释**: 病毒查杀结果详细信息列表 **取值范围**: 最小值0，最大值1000 
 
         :param data_list: The data_list of this ListAntiVirusResultResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.AntiVirusResultResponseInfo`]

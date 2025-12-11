@@ -53,7 +53,7 @@ class RuleScopeInfo:
         :type name: str
         :param action: 审计范围动作
         :type action: str
-        :param status: 审计范围规则状态
+        :param status: 审计范围规则状态 - OFF：禁用  - ON: 启用
         :type status: str
         :param exception_ips: 审计范围例外IP
         :type exception_ips: str
@@ -179,7 +179,7 @@ class RuleScopeInfo:
     def status(self):
         r"""Gets the status of this RuleScopeInfo.
 
-        审计范围规则状态
+        审计范围规则状态 - OFF：禁用  - ON: 启用
 
         :return: The status of this RuleScopeInfo.
         :rtype: str
@@ -190,7 +190,7 @@ class RuleScopeInfo:
     def status(self, status):
         r"""Sets the status of this RuleScopeInfo.
 
-        审计范围规则状态
+        审计范围规则状态 - OFF：禁用  - ON: 启用
 
         :param status: The status of this RuleScopeInfo.
         :type status: str

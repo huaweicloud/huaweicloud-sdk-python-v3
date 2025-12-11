@@ -47,7 +47,7 @@ class AppChangeResponseInfo:
         :type agent_id: str
         :param variation_type: **参数解释**: 变更类型 **取值范围**: - add：新建 - delete：删除 - modify：修改 
         :type variation_type: str
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param app_name: **参数解释**: 软件名称 **取值范围**: 字符长度1-256位 
         :type app_name: str
@@ -143,7 +143,7 @@ class AppChangeResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AppChangeResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this AppChangeResponseInfo.
         :rtype: str
@@ -154,7 +154,7 @@ class AppChangeResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AppChangeResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this AppChangeResponseInfo.
         :type host_id: str

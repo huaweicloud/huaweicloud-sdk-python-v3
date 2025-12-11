@@ -16,15 +16,19 @@ class ShowGaussMySqlProxyFlavorsRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'query_type': 'str',
+        'proxy_id': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'query_type': 'query_type',
+        'proxy_id': 'proxy_id'
     }
 
-    def __init__(self, x_language=None, instance_id=None):
+    def __init__(self, x_language=None, instance_id=None, query_type=None, proxy_id=None):
         r"""ShowGaussMySqlProxyFlavorsRequest
 
         The model defined in huaweicloud sdk
@@ -33,17 +37,27 @@ class ShowGaussMySqlProxyFlavorsRequest:
         :type x_language: str
         :param instance_id: 实例ID。
         :type instance_id: str
+        :param query_type: 查询的场景
+        :type query_type: str
+        :param proxy_id: 数据代理的ID, 规格变更场景需要传该参数，过滤掉无法变更的目标规格
+        :type proxy_id: str
         """
         
         
 
         self._x_language = None
         self._instance_id = None
+        self._query_type = None
+        self._proxy_id = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
         self.instance_id = instance_id
+        if query_type is not None:
+            self.query_type = query_type
+        if proxy_id is not None:
+            self.proxy_id = proxy_id
 
     @property
     def x_language(self):
@@ -88,6 +102,50 @@ class ShowGaussMySqlProxyFlavorsRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def query_type(self):
+        r"""Gets the query_type of this ShowGaussMySqlProxyFlavorsRequest.
+
+        查询的场景
+
+        :return: The query_type of this ShowGaussMySqlProxyFlavorsRequest.
+        :rtype: str
+        """
+        return self._query_type
+
+    @query_type.setter
+    def query_type(self, query_type):
+        r"""Sets the query_type of this ShowGaussMySqlProxyFlavorsRequest.
+
+        查询的场景
+
+        :param query_type: The query_type of this ShowGaussMySqlProxyFlavorsRequest.
+        :type query_type: str
+        """
+        self._query_type = query_type
+
+    @property
+    def proxy_id(self):
+        r"""Gets the proxy_id of this ShowGaussMySqlProxyFlavorsRequest.
+
+        数据代理的ID, 规格变更场景需要传该参数，过滤掉无法变更的目标规格
+
+        :return: The proxy_id of this ShowGaussMySqlProxyFlavorsRequest.
+        :rtype: str
+        """
+        return self._proxy_id
+
+    @proxy_id.setter
+    def proxy_id(self, proxy_id):
+        r"""Sets the proxy_id of this ShowGaussMySqlProxyFlavorsRequest.
+
+        数据代理的ID, 规格变更场景需要传该参数，过滤掉无法变更的目标规格
+
+        :param proxy_id: The proxy_id of this ShowGaussMySqlProxyFlavorsRequest.
+        :type proxy_id: str
+        """
+        self._proxy_id = proxy_id
 
     def to_dict(self):
         result = {}

@@ -27,7 +27,7 @@ class RunImageSynchronizeRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        :param image_type: **参数解释**: 镜像类型 **约束限制**: 必选参数，仅支持指定取值 **取值范围**: - private_image : 私有镜像仓库 - shared_image : 共享镜像仓库 **默认取值**: 不涉及 
         :type image_type: str
         """
         
@@ -42,7 +42,7 @@ class RunImageSynchronizeRequestInfo:
     def image_type(self):
         r"""Gets the image_type of this RunImageSynchronizeRequestInfo.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        **参数解释**: 镜像类型 **约束限制**: 必选参数，仅支持指定取值 **取值范围**: - private_image : 私有镜像仓库 - shared_image : 共享镜像仓库 **默认取值**: 不涉及 
 
         :return: The image_type of this RunImageSynchronizeRequestInfo.
         :rtype: str
@@ -53,7 +53,7 @@ class RunImageSynchronizeRequestInfo:
     def image_type(self, image_type):
         r"""Sets the image_type of this RunImageSynchronizeRequestInfo.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库
+        **参数解释**: 镜像类型 **约束限制**: 必选参数，仅支持指定取值 **取值范围**: - private_image : 私有镜像仓库 - shared_image : 共享镜像仓库 **默认取值**: 不涉及 
 
         :param image_type: The image_type of this RunImageSynchronizeRequestInfo.
         :type image_type: str

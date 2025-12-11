@@ -45,25 +45,25 @@ class DaemonSetInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: daemonset名称
+        :param name: **参数解释**: daemonset名称。 **取值范围**: 字符长度0-256位 
         :type name: str
-        :param namespace_name: 命名空间名称
+        :param namespace_name: **参数解释**: 命名空间名称。 **取值范围**: 字符长度0-256位 
         :type namespace_name: str
-        :param cluster_id: 集群id
+        :param cluster_id: **参数解释**: 集群的唯一标识ID，用于唯一确定DaemonSet所属的集群实例。 **取值范围**: 符合标准UUID格式，字符串长度36位 
         :type cluster_id: str
-        :param cluster_type: 集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws 亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
+        :param cluster_type: **参数解释**: DaemonSet所属集群的部署类型，用于区分不同云厂商或部署模式的集群。 **取值范围**: k8s（原生集群）、cce（CCE集群）、ali（阿里云集群）、tencent（腾讯云集群）、azure（微软云集群）、aws（亚马逊集群）、self_built_hw（华为云自建集群）、self_built_idc（IDC自建集群） 
         :type cluster_type: str
-        :param cluster_name: 集群名称
+        :param cluster_name: **参数解释**: 集群名称。 **取值范围**: 字符串长度0-256 
         :type cluster_name: str
-        :param status: 状态，包含以下几种 -Running：正常运行 -Failed：存在异常
+        :param status: **参数解释**: DaemonSet的运行状态，用于标识当前实例的运行健康度； **取值范围**: Running（正常运行）、Failed（存在异常） 
         :type status: str
-        :param pods_num: 实例个数
+        :param pods_num: **参数解释**: 当前DaemonSet对应的Pod实例总数量； **取值范围**: 非负整数，单位为个，最小值0，无上限（取决于集群资源） 
         :type pods_num: int
-        :param image_name: 镜像名称
+        :param image_name: **参数解释**: DaemonSet实例所使用的容器镜像的完整名称，包含镜像仓库、镜像名及标签； **取值范围**: 符合容器镜像命名规范，字符长度1 - 256位 
         :type image_name: str
-        :param match_labels: 标签
+        :param match_labels: **参数解释**: 用于匹配Pod的标签集合，K8s通过该标签关联DaemonSet与对应Pod； **取值范围**: 数组元素数量≥0，每个元素的key为标签名称，val为标签值，key和val字符长度均为1 - 63位 
         :type match_labels: list[:class:`huaweicloudsdkhss.v5.LabelInfo`]
-        :param create_time: 创建时间
+        :param create_time: **参数解释**: DaemonSet资源的创建时间； **取值范围**: 以毫秒级时间戳格式返回，取值为非负长整数，对应UTC时间1970 - 01 - 01起的毫秒数 
         :type create_time: int
         """
         
@@ -106,7 +106,7 @@ class DaemonSetInfo:
     def name(self):
         r"""Gets the name of this DaemonSetInfo.
 
-        daemonset名称
+        **参数解释**: daemonset名称。 **取值范围**: 字符长度0-256位 
 
         :return: The name of this DaemonSetInfo.
         :rtype: str
@@ -117,7 +117,7 @@ class DaemonSetInfo:
     def name(self, name):
         r"""Sets the name of this DaemonSetInfo.
 
-        daemonset名称
+        **参数解释**: daemonset名称。 **取值范围**: 字符长度0-256位 
 
         :param name: The name of this DaemonSetInfo.
         :type name: str
@@ -128,7 +128,7 @@ class DaemonSetInfo:
     def namespace_name(self):
         r"""Gets the namespace_name of this DaemonSetInfo.
 
-        命名空间名称
+        **参数解释**: 命名空间名称。 **取值范围**: 字符长度0-256位 
 
         :return: The namespace_name of this DaemonSetInfo.
         :rtype: str
@@ -139,7 +139,7 @@ class DaemonSetInfo:
     def namespace_name(self, namespace_name):
         r"""Sets the namespace_name of this DaemonSetInfo.
 
-        命名空间名称
+        **参数解释**: 命名空间名称。 **取值范围**: 字符长度0-256位 
 
         :param namespace_name: The namespace_name of this DaemonSetInfo.
         :type namespace_name: str
@@ -150,7 +150,7 @@ class DaemonSetInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this DaemonSetInfo.
 
-        集群id
+        **参数解释**: 集群的唯一标识ID，用于唯一确定DaemonSet所属的集群实例。 **取值范围**: 符合标准UUID格式，字符串长度36位 
 
         :return: The cluster_id of this DaemonSetInfo.
         :rtype: str
@@ -161,7 +161,7 @@ class DaemonSetInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this DaemonSetInfo.
 
-        集群id
+        **参数解释**: 集群的唯一标识ID，用于唯一确定DaemonSet所属的集群实例。 **取值范围**: 符合标准UUID格式，字符串长度36位 
 
         :param cluster_id: The cluster_id of this DaemonSetInfo.
         :type cluster_id: str
@@ -172,7 +172,7 @@ class DaemonSetInfo:
     def cluster_type(self):
         r"""Gets the cluster_type of this DaemonSetInfo.
 
-        集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws 亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
+        **参数解释**: DaemonSet所属集群的部署类型，用于区分不同云厂商或部署模式的集群。 **取值范围**: k8s（原生集群）、cce（CCE集群）、ali（阿里云集群）、tencent（腾讯云集群）、azure（微软云集群）、aws（亚马逊集群）、self_built_hw（华为云自建集群）、self_built_idc（IDC自建集群） 
 
         :return: The cluster_type of this DaemonSetInfo.
         :rtype: str
@@ -183,7 +183,7 @@ class DaemonSetInfo:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this DaemonSetInfo.
 
-        集群类型，包含以下几种： - k8s：原生集群 - cce：CCE集群 - ali：阿里云集群 - tencent：腾讯云集群 - azure：微软云集群 - aws 亚马逊集群 - self_built_hw：华为云自建集群 - self_built_idc：IDC自建集群
+        **参数解释**: DaemonSet所属集群的部署类型，用于区分不同云厂商或部署模式的集群。 **取值范围**: k8s（原生集群）、cce（CCE集群）、ali（阿里云集群）、tencent（腾讯云集群）、azure（微软云集群）、aws（亚马逊集群）、self_built_hw（华为云自建集群）、self_built_idc（IDC自建集群） 
 
         :param cluster_type: The cluster_type of this DaemonSetInfo.
         :type cluster_type: str
@@ -194,7 +194,7 @@ class DaemonSetInfo:
     def cluster_name(self):
         r"""Gets the cluster_name of this DaemonSetInfo.
 
-        集群名称
+        **参数解释**: 集群名称。 **取值范围**: 字符串长度0-256 
 
         :return: The cluster_name of this DaemonSetInfo.
         :rtype: str
@@ -205,7 +205,7 @@ class DaemonSetInfo:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this DaemonSetInfo.
 
-        集群名称
+        **参数解释**: 集群名称。 **取值范围**: 字符串长度0-256 
 
         :param cluster_name: The cluster_name of this DaemonSetInfo.
         :type cluster_name: str
@@ -216,7 +216,7 @@ class DaemonSetInfo:
     def status(self):
         r"""Gets the status of this DaemonSetInfo.
 
-        状态，包含以下几种 -Running：正常运行 -Failed：存在异常
+        **参数解释**: DaemonSet的运行状态，用于标识当前实例的运行健康度； **取值范围**: Running（正常运行）、Failed（存在异常） 
 
         :return: The status of this DaemonSetInfo.
         :rtype: str
@@ -227,7 +227,7 @@ class DaemonSetInfo:
     def status(self, status):
         r"""Sets the status of this DaemonSetInfo.
 
-        状态，包含以下几种 -Running：正常运行 -Failed：存在异常
+        **参数解释**: DaemonSet的运行状态，用于标识当前实例的运行健康度； **取值范围**: Running（正常运行）、Failed（存在异常） 
 
         :param status: The status of this DaemonSetInfo.
         :type status: str
@@ -238,7 +238,7 @@ class DaemonSetInfo:
     def pods_num(self):
         r"""Gets the pods_num of this DaemonSetInfo.
 
-        实例个数
+        **参数解释**: 当前DaemonSet对应的Pod实例总数量； **取值范围**: 非负整数，单位为个，最小值0，无上限（取决于集群资源） 
 
         :return: The pods_num of this DaemonSetInfo.
         :rtype: int
@@ -249,7 +249,7 @@ class DaemonSetInfo:
     def pods_num(self, pods_num):
         r"""Sets the pods_num of this DaemonSetInfo.
 
-        实例个数
+        **参数解释**: 当前DaemonSet对应的Pod实例总数量； **取值范围**: 非负整数，单位为个，最小值0，无上限（取决于集群资源） 
 
         :param pods_num: The pods_num of this DaemonSetInfo.
         :type pods_num: int
@@ -260,7 +260,7 @@ class DaemonSetInfo:
     def image_name(self):
         r"""Gets the image_name of this DaemonSetInfo.
 
-        镜像名称
+        **参数解释**: DaemonSet实例所使用的容器镜像的完整名称，包含镜像仓库、镜像名及标签； **取值范围**: 符合容器镜像命名规范，字符长度1 - 256位 
 
         :return: The image_name of this DaemonSetInfo.
         :rtype: str
@@ -271,7 +271,7 @@ class DaemonSetInfo:
     def image_name(self, image_name):
         r"""Sets the image_name of this DaemonSetInfo.
 
-        镜像名称
+        **参数解释**: DaemonSet实例所使用的容器镜像的完整名称，包含镜像仓库、镜像名及标签； **取值范围**: 符合容器镜像命名规范，字符长度1 - 256位 
 
         :param image_name: The image_name of this DaemonSetInfo.
         :type image_name: str
@@ -282,7 +282,7 @@ class DaemonSetInfo:
     def match_labels(self):
         r"""Gets the match_labels of this DaemonSetInfo.
 
-        标签
+        **参数解释**: 用于匹配Pod的标签集合，K8s通过该标签关联DaemonSet与对应Pod； **取值范围**: 数组元素数量≥0，每个元素的key为标签名称，val为标签值，key和val字符长度均为1 - 63位 
 
         :return: The match_labels of this DaemonSetInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.LabelInfo`]
@@ -293,7 +293,7 @@ class DaemonSetInfo:
     def match_labels(self, match_labels):
         r"""Sets the match_labels of this DaemonSetInfo.
 
-        标签
+        **参数解释**: 用于匹配Pod的标签集合，K8s通过该标签关联DaemonSet与对应Pod； **取值范围**: 数组元素数量≥0，每个元素的key为标签名称，val为标签值，key和val字符长度均为1 - 63位 
 
         :param match_labels: The match_labels of this DaemonSetInfo.
         :type match_labels: list[:class:`huaweicloudsdkhss.v5.LabelInfo`]
@@ -304,7 +304,7 @@ class DaemonSetInfo:
     def create_time(self):
         r"""Gets the create_time of this DaemonSetInfo.
 
-        创建时间
+        **参数解释**: DaemonSet资源的创建时间； **取值范围**: 以毫秒级时间戳格式返回，取值为非负长整数，对应UTC时间1970 - 01 - 01起的毫秒数 
 
         :return: The create_time of this DaemonSetInfo.
         :rtype: int
@@ -315,7 +315,7 @@ class DaemonSetInfo:
     def create_time(self, create_time):
         r"""Sets the create_time of this DaemonSetInfo.
 
-        创建时间
+        **参数解释**: DaemonSet资源的创建时间； **取值范围**: 以毫秒级时间戳格式返回，取值为非负长整数，对应UTC时间1970 - 01 - 01起的毫秒数 
 
         :param create_time: The create_time of this DaemonSetInfo.
         :type create_time: int

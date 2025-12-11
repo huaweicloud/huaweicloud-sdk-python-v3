@@ -30,9 +30,9 @@ class ListInstancesByTagsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param instances: 实例列表。
+        :param instances: **参数解释：** 实例列表。 **取值范围：** 不涉及。
         :type instances: list[:class:`huaweicloudsdkdds.v3.InstanceItem`]
-        :param total_count: 总记录数。
+        :param total_count: **参数解释：** 总记录数。 **取值范围：** 不涉及。
         :type total_count: int
         """
         
@@ -51,7 +51,7 @@ class ListInstancesByTagsResponse(SdkResponse):
     def instances(self):
         r"""Gets the instances of this ListInstancesByTagsResponse.
 
-        实例列表。
+        **参数解释：** 实例列表。 **取值范围：** 不涉及。
 
         :return: The instances of this ListInstancesByTagsResponse.
         :rtype: list[:class:`huaweicloudsdkdds.v3.InstanceItem`]
@@ -62,7 +62,7 @@ class ListInstancesByTagsResponse(SdkResponse):
     def instances(self, instances):
         r"""Sets the instances of this ListInstancesByTagsResponse.
 
-        实例列表。
+        **参数解释：** 实例列表。 **取值范围：** 不涉及。
 
         :param instances: The instances of this ListInstancesByTagsResponse.
         :type instances: list[:class:`huaweicloudsdkdds.v3.InstanceItem`]
@@ -73,7 +73,7 @@ class ListInstancesByTagsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListInstancesByTagsResponse.
 
-        总记录数。
+        **参数解释：** 总记录数。 **取值范围：** 不涉及。
 
         :return: The total_count of this ListInstancesByTagsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListInstancesByTagsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListInstancesByTagsResponse.
 
-        总记录数。
+        **参数解释：** 总记录数。 **取值范围：** 不涉及。
 
         :param total_count: The total_count of this ListInstancesByTagsResponse.
         :type total_count: int

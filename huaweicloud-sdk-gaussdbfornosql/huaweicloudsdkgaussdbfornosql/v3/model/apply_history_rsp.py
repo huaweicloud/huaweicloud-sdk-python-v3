@@ -35,15 +35,15 @@ class ApplyHistoryRsp:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释：** 实例ID。 **取值范围：** 不涉及。
         :type instance_id: str
-        :param instance_name: 实例名称
+        :param instance_name: **参数解释：** 实例名称。 **取值范围：** 不涉及。
         :type instance_name: str
-        :param applied_at: 生效时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。  [其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。](tag:hc)  [其中，T指某个时间的开始；Z指时区偏移量。](tag:hk)
+        :param applied_at: **参数解释：** 生效时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
         :type applied_at: datetime
-        :param apply_result: - SUCCESS：应用成功。 - FAILED:应用失败。
+        :param apply_result: **参数解释：** 应用结果。 **取值范围：** - SUCCESS：应用成功。 - FAILED:应用失败。 - APPLYING: 应用中。
         :type apply_result: str
-        :param failure_reason: 失败原因
+        :param failure_reason: **参数解释：** 失败原因。 **取值范围：** 不涉及。
         :type failure_reason: str
         """
         
@@ -67,7 +67,7 @@ class ApplyHistoryRsp:
     def instance_id(self):
         r"""Gets the instance_id of this ApplyHistoryRsp.
 
-        实例ID。
+        **参数解释：** 实例ID。 **取值范围：** 不涉及。
 
         :return: The instance_id of this ApplyHistoryRsp.
         :rtype: str
@@ -78,7 +78,7 @@ class ApplyHistoryRsp:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ApplyHistoryRsp.
 
-        实例ID。
+        **参数解释：** 实例ID。 **取值范围：** 不涉及。
 
         :param instance_id: The instance_id of this ApplyHistoryRsp.
         :type instance_id: str
@@ -89,7 +89,7 @@ class ApplyHistoryRsp:
     def instance_name(self):
         r"""Gets the instance_name of this ApplyHistoryRsp.
 
-        实例名称
+        **参数解释：** 实例名称。 **取值范围：** 不涉及。
 
         :return: The instance_name of this ApplyHistoryRsp.
         :rtype: str
@@ -100,7 +100,7 @@ class ApplyHistoryRsp:
     def instance_name(self, instance_name):
         r"""Sets the instance_name of this ApplyHistoryRsp.
 
-        实例名称
+        **参数解释：** 实例名称。 **取值范围：** 不涉及。
 
         :param instance_name: The instance_name of this ApplyHistoryRsp.
         :type instance_name: str
@@ -111,7 +111,7 @@ class ApplyHistoryRsp:
     def applied_at(self):
         r"""Gets the applied_at of this ApplyHistoryRsp.
 
-        生效时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  [其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。](tag:hc)  [其中，T指某个时间的开始；Z指时区偏移量。](tag:hk)
+        **参数解释：** 生效时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
 
         :return: The applied_at of this ApplyHistoryRsp.
         :rtype: datetime
@@ -122,7 +122,7 @@ class ApplyHistoryRsp:
     def applied_at(self, applied_at):
         r"""Sets the applied_at of this ApplyHistoryRsp.
 
-        生效时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。  [其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。](tag:hc)  [其中，T指某个时间的开始；Z指时区偏移量。](tag:hk)
+        **参数解释：** 生效时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 其中，T指某个时间的开始；Z指时区偏移量。 **取值范围：** 不涉及。
 
         :param applied_at: The applied_at of this ApplyHistoryRsp.
         :type applied_at: datetime
@@ -133,7 +133,7 @@ class ApplyHistoryRsp:
     def apply_result(self):
         r"""Gets the apply_result of this ApplyHistoryRsp.
 
-        - SUCCESS：应用成功。 - FAILED:应用失败。
+        **参数解释：** 应用结果。 **取值范围：** - SUCCESS：应用成功。 - FAILED:应用失败。 - APPLYING: 应用中。
 
         :return: The apply_result of this ApplyHistoryRsp.
         :rtype: str
@@ -144,7 +144,7 @@ class ApplyHistoryRsp:
     def apply_result(self, apply_result):
         r"""Sets the apply_result of this ApplyHistoryRsp.
 
-        - SUCCESS：应用成功。 - FAILED:应用失败。
+        **参数解释：** 应用结果。 **取值范围：** - SUCCESS：应用成功。 - FAILED:应用失败。 - APPLYING: 应用中。
 
         :param apply_result: The apply_result of this ApplyHistoryRsp.
         :type apply_result: str
@@ -155,7 +155,7 @@ class ApplyHistoryRsp:
     def failure_reason(self):
         r"""Gets the failure_reason of this ApplyHistoryRsp.
 
-        失败原因
+        **参数解释：** 失败原因。 **取值范围：** 不涉及。
 
         :return: The failure_reason of this ApplyHistoryRsp.
         :rtype: str
@@ -166,7 +166,7 @@ class ApplyHistoryRsp:
     def failure_reason(self, failure_reason):
         r"""Sets the failure_reason of this ApplyHistoryRsp.
 
-        失败原因
+        **参数解释：** 失败原因。 **取值范围：** 不涉及。
 
         :param failure_reason: The failure_reason of this ApplyHistoryRsp.
         :type failure_reason: str

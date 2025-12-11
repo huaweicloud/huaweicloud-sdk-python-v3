@@ -63,7 +63,7 @@ class SecurityCheckRuleHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
@@ -89,7 +89,7 @@ class SecurityCheckRuleHostResponseInfo:
         :type host_type: str
         :param enable_fix: **参数解释** 是否支持一键修复 **取值范围** - 1 : 支持一键修复 - 0 : 不支持
         :type enable_fix: int
-        :param enable_verify: **参数解释** 该检查项是否可验证，要求为Linux且agent版本&gt;&#x3D;3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+        :param enable_verify: **参数解释** 该检查项是否可验证，要求为Linux且agent版本&gt;&#x3D;3.2.24 **取值范围** - true  : 可验证 - false : 不可验证
         :type enable_verify: bool
         :param enable_click: **参数解释** 该检查项的修复&amp;忽略&amp;验证按钮是否可单击 **取值范围** - true  : 按钮可单击 - false : 按钮不可单击
         :type enable_click: bool
@@ -99,7 +99,7 @@ class SecurityCheckRuleHostResponseInfo:
         :type result_type: str
         :param fix_failed_reason: **参数解释** 修复失败原因 **取值范围** 字符长度0-256位
         :type fix_failed_reason: str
-        :param cluster_id: **参数解释** 集群ID **取值范围**  字符长度0-64位
+        :param cluster_id: **参数解释** 集群ID **取值范围** 字符长度0-64位
         :type cluster_id: str
         """
         
@@ -169,7 +169,7 @@ class SecurityCheckRuleHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this SecurityCheckRuleHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this SecurityCheckRuleHostResponseInfo.
         :rtype: str
@@ -180,7 +180,7 @@ class SecurityCheckRuleHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this SecurityCheckRuleHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this SecurityCheckRuleHostResponseInfo.
         :type host_id: str
@@ -455,7 +455,7 @@ class SecurityCheckRuleHostResponseInfo:
     def enable_verify(self):
         r"""Gets the enable_verify of this SecurityCheckRuleHostResponseInfo.
 
-        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围** - true  : 可验证 - false : 不可验证
 
         :return: The enable_verify of this SecurityCheckRuleHostResponseInfo.
         :rtype: bool
@@ -466,7 +466,7 @@ class SecurityCheckRuleHostResponseInfo:
     def enable_verify(self, enable_verify):
         r"""Sets the enable_verify of this SecurityCheckRuleHostResponseInfo.
 
-        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围** - true  : 可验证 - false : 不可验证
 
         :param enable_verify: The enable_verify of this SecurityCheckRuleHostResponseInfo.
         :type enable_verify: bool
@@ -565,7 +565,7 @@ class SecurityCheckRuleHostResponseInfo:
     def cluster_id(self):
         r"""Gets the cluster_id of this SecurityCheckRuleHostResponseInfo.
 
-        **参数解释** 集群ID **取值范围**  字符长度0-64位
+        **参数解释** 集群ID **取值范围** 字符长度0-64位
 
         :return: The cluster_id of this SecurityCheckRuleHostResponseInfo.
         :rtype: str
@@ -576,7 +576,7 @@ class SecurityCheckRuleHostResponseInfo:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this SecurityCheckRuleHostResponseInfo.
 
-        **参数解释** 集群ID **取值范围**  字符长度0-64位
+        **参数解释** 集群ID **取值范围** 字符长度0-64位
 
         :param cluster_id: The cluster_id of this SecurityCheckRuleHostResponseInfo.
         :type cluster_id: str

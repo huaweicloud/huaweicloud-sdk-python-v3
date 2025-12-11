@@ -16,35 +16,42 @@ class SwitchGaussMySqlConfigurationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'job_id': 'str',
+        'param_group_name': 'str'
     }
 
     attribute_map = {
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'param_group_name': 'param_group_name'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, job_id=None, param_group_name=None):
         r"""SwitchGaussMySqlConfigurationResponse
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 应用参数模板的任务ID。
+        :param job_id: **参数解释**：  应用参数模板的任务ID。  **取值范围**：  不涉及。
         :type job_id: str
+        :param param_group_name: **参数解释**：  参数模板的名称。  **取值范围**：  支持Default-TaurusDB V2.0和用户自定义参数模板，其中Default-TaurusDB V2.0表示TaurusDB系统默认参数模板。
+        :type param_group_name: str
         """
         
         super().__init__()
 
         self._job_id = None
+        self._param_group_name = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
+        if param_group_name is not None:
+            self.param_group_name = param_group_name
 
     @property
     def job_id(self):
         r"""Gets the job_id of this SwitchGaussMySqlConfigurationResponse.
 
-        应用参数模板的任务ID。
+        **参数解释**：  应用参数模板的任务ID。  **取值范围**：  不涉及。
 
         :return: The job_id of this SwitchGaussMySqlConfigurationResponse.
         :rtype: str
@@ -55,12 +62,34 @@ class SwitchGaussMySqlConfigurationResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this SwitchGaussMySqlConfigurationResponse.
 
-        应用参数模板的任务ID。
+        **参数解释**：  应用参数模板的任务ID。  **取值范围**：  不涉及。
 
         :param job_id: The job_id of this SwitchGaussMySqlConfigurationResponse.
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def param_group_name(self):
+        r"""Gets the param_group_name of this SwitchGaussMySqlConfigurationResponse.
+
+        **参数解释**：  参数模板的名称。  **取值范围**：  支持Default-TaurusDB V2.0和用户自定义参数模板，其中Default-TaurusDB V2.0表示TaurusDB系统默认参数模板。
+
+        :return: The param_group_name of this SwitchGaussMySqlConfigurationResponse.
+        :rtype: str
+        """
+        return self._param_group_name
+
+    @param_group_name.setter
+    def param_group_name(self, param_group_name):
+        r"""Sets the param_group_name of this SwitchGaussMySqlConfigurationResponse.
+
+        **参数解释**：  参数模板的名称。  **取值范围**：  支持Default-TaurusDB V2.0和用户自定义参数模板，其中Default-TaurusDB V2.0表示TaurusDB系统默认参数模板。
+
+        :param param_group_name: The param_group_name of this SwitchGaussMySqlConfigurationResponse.
+        :type param_group_name: str
+        """
+        self._param_group_name = param_group_name
 
     def to_dict(self):
         import warnings

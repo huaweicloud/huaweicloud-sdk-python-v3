@@ -31,7 +31,7 @@ class ShowResourceTagRequest:
 
         :param resource_id: 资源ID
         :type resource_id: str
-        :param resource_type: 标签资源类型: - instance: 企业路由器实例 - route-table: 路由表 - vpc-attachment: VPC连接 - vgw-attachment: 虚拟网关连接 - peering-attachment: 对等连接（Peering）连接 - vpn-attachment: VPN网关连接 -  -  -  -  - attachments: 所有连接类型
+        :param resource_type: 标签资源类型: - instance: 企业路由器实例 - route-table: 路由表 - vpc-attachment: VPC连接 - vgw-attachment: 虚拟网关连接 - peering-attachment: 对等连接（Peering）连接 - vpn-attachment: VPN网关连接 - attachments: 所有连接类型
         :type resource_type: str
         """
         
@@ -70,7 +70,7 @@ class ShowResourceTagRequest:
     def resource_type(self):
         r"""Gets the resource_type of this ShowResourceTagRequest.
 
-        标签资源类型: - instance: 企业路由器实例 - route-table: 路由表 - vpc-attachment: VPC连接 - vgw-attachment: 虚拟网关连接 - peering-attachment: 对等连接（Peering）连接 - vpn-attachment: VPN网关连接 -  -  -  -  - attachments: 所有连接类型
+        标签资源类型: - instance: 企业路由器实例 - route-table: 路由表 - vpc-attachment: VPC连接 - vgw-attachment: 虚拟网关连接 - peering-attachment: 对等连接（Peering）连接 - vpn-attachment: VPN网关连接 - attachments: 所有连接类型
 
         :return: The resource_type of this ShowResourceTagRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ShowResourceTagRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ShowResourceTagRequest.
 
-        标签资源类型: - instance: 企业路由器实例 - route-table: 路由表 - vpc-attachment: VPC连接 - vgw-attachment: 虚拟网关连接 - peering-attachment: 对等连接（Peering）连接 - vpn-attachment: VPN网关连接 -  -  -  -  - attachments: 所有连接类型
+        标签资源类型: - instance: 企业路由器实例 - route-table: 路由表 - vpc-attachment: VPC连接 - vgw-attachment: 虚拟网关连接 - peering-attachment: 对等连接（Peering）连接 - vpn-attachment: VPN网关连接 - attachments: 所有连接类型
 
         :param resource_type: The resource_type of this ShowResourceTagRequest.
         :type resource_type: str

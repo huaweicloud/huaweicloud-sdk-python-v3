@@ -22,7 +22,8 @@ class ListScheduleJobsRequest:
         'start_time': 'str',
         'end_time': 'str',
         'job_id': 'str',
-        'job_name': 'str'
+        'job_name': 'str',
+        'instance_id': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ListScheduleJobsRequest:
         'start_time': 'start_time',
         'end_time': 'end_time',
         'job_id': 'job_id',
-        'job_name': 'job_name'
+        'job_name': 'job_name',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, x_language=None, offset=None, limit=None, status=None, start_time=None, end_time=None, job_id=None, job_name=None):
+    def __init__(self, x_language=None, offset=None, limit=None, status=None, start_time=None, end_time=None, job_id=None, job_name=None, instance_id=None):
         r"""ListScheduleJobsRequest
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ListScheduleJobsRequest:
         :type job_id: str
         :param job_name: 任务调度类型。
         :type job_name: str
+        :param instance_id: 实例ID，此参数是实例的唯一标识。
+        :type instance_id: str
         """
         
         
@@ -69,6 +73,7 @@ class ListScheduleJobsRequest:
         self._end_time = None
         self._job_id = None
         self._job_name = None
+        self._instance_id = None
         self.discriminator = None
 
         if x_language is not None:
@@ -87,6 +92,8 @@ class ListScheduleJobsRequest:
             self.job_id = job_id
         if job_name is not None:
             self.job_name = job_name
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def x_language(self):
@@ -263,6 +270,28 @@ class ListScheduleJobsRequest:
         :type job_name: str
         """
         self._job_name = job_name
+
+    @property
+    def instance_id(self):
+        r"""Gets the instance_id of this ListScheduleJobsRequest.
+
+        实例ID，此参数是实例的唯一标识。
+
+        :return: The instance_id of this ListScheduleJobsRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this ListScheduleJobsRequest.
+
+        实例ID，此参数是实例的唯一标识。
+
+        :param instance_id: The instance_id of this ListScheduleJobsRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         result = {}

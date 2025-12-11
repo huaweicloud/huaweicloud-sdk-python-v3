@@ -28,7 +28,7 @@ class RestartInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 工作流ID。
+        :param job_id: **参数解释：** 任务ID。 **取值范围：** 不涉及。
         :type job_id: str
         """
         
@@ -44,7 +44,7 @@ class RestartInstanceResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this RestartInstanceResponse.
 
-        工作流ID。
+        **参数解释：** 任务ID。 **取值范围：** 不涉及。
 
         :return: The job_id of this RestartInstanceResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class RestartInstanceResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this RestartInstanceResponse.
 
-        工作流ID。
+        **参数解释：** 任务ID。 **取值范围：** 不涉及。
 
         :param job_id: The job_id of this RestartInstanceResponse.
         :type job_id: str

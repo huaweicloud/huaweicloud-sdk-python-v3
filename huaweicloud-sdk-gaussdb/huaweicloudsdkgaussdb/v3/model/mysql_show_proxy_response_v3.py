@@ -17,16 +17,18 @@ class MysqlShowProxyResponseV3:
     openapi_types = {
         'proxy': 'MysqlProxyV3',
         'master_node': 'MysqlProxyNodeV3',
-        'readonly_nodes': 'list[MysqlProxyNodeV3]'
+        'readonly_nodes': 'list[MysqlProxyNodeV3]',
+        'htap_nodes': 'list[MysqlProxyNodeV3]'
     }
 
     attribute_map = {
         'proxy': 'proxy',
         'master_node': 'master_node',
-        'readonly_nodes': 'readonly_nodes'
+        'readonly_nodes': 'readonly_nodes',
+        'htap_nodes': 'htap_nodes'
     }
 
-    def __init__(self, proxy=None, master_node=None, readonly_nodes=None):
+    def __init__(self, proxy=None, master_node=None, readonly_nodes=None, htap_nodes=None):
         r"""MysqlShowProxyResponseV3
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class MysqlShowProxyResponseV3:
         :type master_node: :class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodeV3`
         :param readonly_nodes: 只读节点信息。
         :type readonly_nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodeV3`]
+        :param htap_nodes: **参数解释**：  HTAP节点信息。 
+        :type htap_nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodeV3`]
         """
         
         
@@ -44,6 +48,7 @@ class MysqlShowProxyResponseV3:
         self._proxy = None
         self._master_node = None
         self._readonly_nodes = None
+        self._htap_nodes = None
         self.discriminator = None
 
         if proxy is not None:
@@ -52,6 +57,8 @@ class MysqlShowProxyResponseV3:
             self.master_node = master_node
         if readonly_nodes is not None:
             self.readonly_nodes = readonly_nodes
+        if htap_nodes is not None:
+            self.htap_nodes = htap_nodes
 
     @property
     def proxy(self):
@@ -110,6 +117,28 @@ class MysqlShowProxyResponseV3:
         :type readonly_nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodeV3`]
         """
         self._readonly_nodes = readonly_nodes
+
+    @property
+    def htap_nodes(self):
+        r"""Gets the htap_nodes of this MysqlShowProxyResponseV3.
+
+        **参数解释**：  HTAP节点信息。 
+
+        :return: The htap_nodes of this MysqlShowProxyResponseV3.
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodeV3`]
+        """
+        return self._htap_nodes
+
+    @htap_nodes.setter
+    def htap_nodes(self, htap_nodes):
+        r"""Sets the htap_nodes of this MysqlShowProxyResponseV3.
+
+        **参数解释**：  HTAP节点信息。 
+
+        :param htap_nodes: The htap_nodes of this MysqlShowProxyResponseV3.
+        :type htap_nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodeV3`]
+        """
+        self._htap_nodes = htap_nodes
 
     def to_dict(self):
         result = {}

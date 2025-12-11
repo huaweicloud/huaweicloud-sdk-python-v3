@@ -41,13 +41,13 @@ class AvailableHostListDataList:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param agent_id: **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         :param conflict_port: 冲突的端口
         :type conflict_port: list[int]
@@ -92,7 +92,7 @@ class AvailableHostListDataList:
     def host_id(self):
         r"""Gets the host_id of this AvailableHostListDataList.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this AvailableHostListDataList.
         :rtype: str
@@ -103,7 +103,7 @@ class AvailableHostListDataList:
     def host_id(self, host_id):
         r"""Sets the host_id of this AvailableHostListDataList.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this AvailableHostListDataList.
         :type host_id: str
@@ -158,7 +158,7 @@ class AvailableHostListDataList:
     def agent_id(self):
         r"""Gets the agent_id of this AvailableHostListDataList.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this AvailableHostListDataList.
         :rtype: str
@@ -169,7 +169,7 @@ class AvailableHostListDataList:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this AvailableHostListDataList.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this AvailableHostListDataList.
         :type agent_id: str

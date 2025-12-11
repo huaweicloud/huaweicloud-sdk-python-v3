@@ -79,7 +79,7 @@ class HostCheckRulesResponseInfo:
         :type enable_fix: int
         :param enable_click: **参数解释** 该检查项的修复 &amp; 验证 按钮是否可单击 **取值范围** - true  : 按钮可单击 - false : 按钮不可单击
         :type enable_click: bool
-        :param enable_verify: **参数解释** 该检查项是否可验证，要求为Linux且agent版本&gt;&#x3D;3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+        :param enable_verify: **参数解释** 该检查项是否可验证，要求为Linux且agent版本&gt;&#x3D;3.2.24 **取值范围** - true  : 可验证 - false : 不可验证
         :type enable_verify: bool
         :param cancel_ignore_enable_click: **参数解释** 已忽略检查项是否可点击 **取值范围** - true  : 按钮可单击 - false : 按钮不可单击
         :type cancel_ignore_enable_click: bool
@@ -405,7 +405,7 @@ class HostCheckRulesResponseInfo:
     def enable_verify(self):
         r"""Gets the enable_verify of this HostCheckRulesResponseInfo.
 
-        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围** - true  : 可验证 - false : 不可验证
 
         :return: The enable_verify of this HostCheckRulesResponseInfo.
         :rtype: bool
@@ -416,7 +416,7 @@ class HostCheckRulesResponseInfo:
     def enable_verify(self, enable_verify):
         r"""Sets the enable_verify of this HostCheckRulesResponseInfo.
 
-        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围**  - true  : 可验证 - false : 不可验证
+        **参数解释** 该检查项是否可验证，要求为Linux且agent版本>=3.2.24 **取值范围** - true  : 可验证 - false : 不可验证
 
         :param enable_verify: The enable_verify of this HostCheckRulesResponseInfo.
         :type enable_verify: bool

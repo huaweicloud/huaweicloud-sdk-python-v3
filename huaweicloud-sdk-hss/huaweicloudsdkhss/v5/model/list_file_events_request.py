@@ -51,13 +51,13 @@ class ListFileEventsRequest:
         :type enterprise_project_id: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param begin_time: **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        :param begin_time: **参数解释**: 开始时间，13位时间戳 **约束限制**: 需小于等于end_time，未传end_time时默认查询至当前时间 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
         :type begin_time: int
-        :param end_time: **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        :param end_time: **参数解释**: 结束时间，13位时间戳 **约束限制**: 需大于等于begin_time，未传begin_time时默认从时间戳0开始查询 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
         :type end_time: int
         :param file_name: 文件名称
         :type file_name: str
-        :param file_path: 文件路径
+        :param file_path: **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
         :type file_path: str
         :param change_type: 变更类型，包含如下:   - \&quot;all\&quot; : 全部   - \&quot;registry\&quot; : 注册表   - \&quot;file\&quot; : 文件
         :type change_type: str
@@ -155,7 +155,7 @@ class ListFileEventsRequest:
     def begin_time(self):
         r"""Gets the begin_time of this ListFileEventsRequest.
 
-        **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 开始时间，13位时间戳 **约束限制**: 需小于等于end_time，未传end_time时默认查询至当前时间 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
 
         :return: The begin_time of this ListFileEventsRequest.
         :rtype: int
@@ -166,7 +166,7 @@ class ListFileEventsRequest:
     def begin_time(self, begin_time):
         r"""Sets the begin_time of this ListFileEventsRequest.
 
-        **参数解释**: 开始时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 开始时间，13位时间戳 **约束限制**: 需小于等于end_time，未传end_time时默认查询至当前时间 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
 
         :param begin_time: The begin_time of this ListFileEventsRequest.
         :type begin_time: int
@@ -177,7 +177,7 @@ class ListFileEventsRequest:
     def end_time(self):
         r"""Gets the end_time of this ListFileEventsRequest.
 
-        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 结束时间，13位时间戳 **约束限制**: 需大于等于begin_time，未传begin_time时默认从时间戳0开始查询 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
 
         :return: The end_time of this ListFileEventsRequest.
         :rtype: int
@@ -188,7 +188,7 @@ class ListFileEventsRequest:
     def end_time(self, end_time):
         r"""Sets the end_time of this ListFileEventsRequest.
 
-        **参数解释**: 结束时间，13位时间戳 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 结束时间，13位时间戳 **约束限制**: 需大于等于begin_time，未传begin_time时默认从时间戳0开始查询 **取值范围**: 最小值0，最大值9223372036854775807（UTC时区，从1970-01-01 00:00:00开始计算） **默认取值**: 不涉及 
 
         :param end_time: The end_time of this ListFileEventsRequest.
         :type end_time: int
@@ -221,7 +221,7 @@ class ListFileEventsRequest:
     def file_path(self):
         r"""Gets the file_path of this ListFileEventsRequest.
 
-        文件路径
+        **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
 
         :return: The file_path of this ListFileEventsRequest.
         :rtype: str
@@ -232,7 +232,7 @@ class ListFileEventsRequest:
     def file_path(self, file_path):
         r"""Sets the file_path of this ListFileEventsRequest.
 
-        文件路径
+        **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
 
         :param file_path: The file_path of this ListFileEventsRequest.
         :type file_path: str

@@ -20,7 +20,8 @@ class ShowGaussMySqlIncrementalBackupListRequest:
         'offset': 'str',
         'limit': 'str',
         'begin_time': 'str',
-        'end_time': 'str'
+        'end_time': 'str',
+        'display_offsite_backup': 'bool'
     }
 
     attribute_map = {
@@ -29,10 +30,11 @@ class ShowGaussMySqlIncrementalBackupListRequest:
         'offset': 'offset',
         'limit': 'limit',
         'begin_time': 'begin_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'display_offsite_backup': 'display_offsite_backup'
     }
 
-    def __init__(self, x_language=None, instance_id=None, offset=None, limit=None, begin_time=None, end_time=None):
+    def __init__(self, x_language=None, instance_id=None, offset=None, limit=None, begin_time=None, end_time=None, display_offsite_backup=None):
         r"""ShowGaussMySqlIncrementalBackupListRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ShowGaussMySqlIncrementalBackupListRequest:
         :type begin_time: str
         :param end_time: 查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  “end_time”有值时，“begin_time”必选。
         :type end_time: str
+        :param display_offsite_backup: **参数解释**：  是否展示跨区域增量备份。  **约束限制**：  不涉及。  **取值范围**：  - true：展示同区域和跨区域增量备份。 - false：仅展示同区域增量备份。  **默认取值**：  false。
+        :type display_offsite_backup: bool
         """
         
         
@@ -59,6 +63,7 @@ class ShowGaussMySqlIncrementalBackupListRequest:
         self._limit = None
         self._begin_time = None
         self._end_time = None
+        self._display_offsite_backup = None
         self.discriminator = None
 
         if x_language is not None:
@@ -72,6 +77,8 @@ class ShowGaussMySqlIncrementalBackupListRequest:
             self.begin_time = begin_time
         if end_time is not None:
             self.end_time = end_time
+        if display_offsite_backup is not None:
+            self.display_offsite_backup = display_offsite_backup
 
     @property
     def x_language(self):
@@ -204,6 +211,28 @@ class ShowGaussMySqlIncrementalBackupListRequest:
         :type end_time: str
         """
         self._end_time = end_time
+
+    @property
+    def display_offsite_backup(self):
+        r"""Gets the display_offsite_backup of this ShowGaussMySqlIncrementalBackupListRequest.
+
+        **参数解释**：  是否展示跨区域增量备份。  **约束限制**：  不涉及。  **取值范围**：  - true：展示同区域和跨区域增量备份。 - false：仅展示同区域增量备份。  **默认取值**：  false。
+
+        :return: The display_offsite_backup of this ShowGaussMySqlIncrementalBackupListRequest.
+        :rtype: bool
+        """
+        return self._display_offsite_backup
+
+    @display_offsite_backup.setter
+    def display_offsite_backup(self, display_offsite_backup):
+        r"""Sets the display_offsite_backup of this ShowGaussMySqlIncrementalBackupListRequest.
+
+        **参数解释**：  是否展示跨区域增量备份。  **约束限制**：  不涉及。  **取值范围**：  - true：展示同区域和跨区域增量备份。 - false：仅展示同区域增量备份。  **默认取值**：  false。
+
+        :param display_offsite_backup: The display_offsite_backup of this ShowGaussMySqlIncrementalBackupListRequest.
+        :type display_offsite_backup: bool
+        """
+        self._display_offsite_backup = display_offsite_backup
 
     def to_dict(self):
         result = {}

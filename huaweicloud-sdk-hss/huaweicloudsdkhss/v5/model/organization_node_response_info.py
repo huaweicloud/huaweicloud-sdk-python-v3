@@ -37,17 +37,17 @@ class OrganizationNodeResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param parent_id: 父节点Id
+        :param parent_id: **参数解释** 当前组织节点的父节点唯一标识ID，用于标识组织树层级关系（根节点父ID通常为“0”或空）； **取值范围** 字符长度1-64位，符合平台组织节点ID命名规范 
         :type parent_id: str
-        :param id: 节点Id
+        :param id: **参数解释** 组织树节点的唯一标识ID，用于唯一确定某个组织节点； **取值范围** 字符长度1-64位，符合平台组织节点ID命名规范（如UUID或数字组合） 
         :type id: str
-        :param urn: 组织的统一资源名称，格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
+        :param urn: **参数解释** 组织节点的统一资源名称（URN），用于跨服务唯一标识组织资源； **取值范围** 字符长度1-256位，格式为organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx，符合平台URN命名规范 
         :type urn: str
-        :param name: 名称
+        :param name: **参数解释** 组织节点的名称（可能是组织单元名称或账号名称，与org_type对应）； **取值范围** 字符长度1-64位，支持字母、数字、连字符、下划线及中文，不能以特殊字符开头或结尾 
         :type name: str
-        :param org_type: **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - unit：组织单元 - account：账号  **默认取值**: 不涉及 
+        :param org_type: **参数解释**: 节点（组织单元或账号）的类型； **取值范围**: unit（组织单元）、account（账号） 
         :type org_type: str
-        :param delegated: 组织或账号是否已授权。   - true: 已授权（无需授权）。   - false: 未授权。
+        :param delegated: **参数解释**: 标识组织节点（组织单元或账号）是否已完成授权； **取值范围**: true（已授权，无需重复授权）、false（未授权，需完成授权后使用） 
         :type delegated: bool
         """
         
@@ -78,7 +78,7 @@ class OrganizationNodeResponseInfo:
     def parent_id(self):
         r"""Gets the parent_id of this OrganizationNodeResponseInfo.
 
-        父节点Id
+        **参数解释** 当前组织节点的父节点唯一标识ID，用于标识组织树层级关系（根节点父ID通常为“0”或空）； **取值范围** 字符长度1-64位，符合平台组织节点ID命名规范 
 
         :return: The parent_id of this OrganizationNodeResponseInfo.
         :rtype: str
@@ -89,7 +89,7 @@ class OrganizationNodeResponseInfo:
     def parent_id(self, parent_id):
         r"""Sets the parent_id of this OrganizationNodeResponseInfo.
 
-        父节点Id
+        **参数解释** 当前组织节点的父节点唯一标识ID，用于标识组织树层级关系（根节点父ID通常为“0”或空）； **取值范围** 字符长度1-64位，符合平台组织节点ID命名规范 
 
         :param parent_id: The parent_id of this OrganizationNodeResponseInfo.
         :type parent_id: str
@@ -100,7 +100,7 @@ class OrganizationNodeResponseInfo:
     def id(self):
         r"""Gets the id of this OrganizationNodeResponseInfo.
 
-        节点Id
+        **参数解释** 组织树节点的唯一标识ID，用于唯一确定某个组织节点； **取值范围** 字符长度1-64位，符合平台组织节点ID命名规范（如UUID或数字组合） 
 
         :return: The id of this OrganizationNodeResponseInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class OrganizationNodeResponseInfo:
     def id(self, id):
         r"""Sets the id of this OrganizationNodeResponseInfo.
 
-        节点Id
+        **参数解释** 组织树节点的唯一标识ID，用于唯一确定某个组织节点； **取值范围** 字符长度1-64位，符合平台组织节点ID命名规范（如UUID或数字组合） 
 
         :param id: The id of this OrganizationNodeResponseInfo.
         :type id: str
@@ -122,7 +122,7 @@ class OrganizationNodeResponseInfo:
     def urn(self):
         r"""Gets the urn of this OrganizationNodeResponseInfo.
 
-        组织的统一资源名称，格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
+        **参数解释** 组织节点的统一资源名称（URN），用于跨服务唯一标识组织资源； **取值范围** 字符长度1-256位，格式为organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx，符合平台URN命名规范 
 
         :return: The urn of this OrganizationNodeResponseInfo.
         :rtype: str
@@ -133,7 +133,7 @@ class OrganizationNodeResponseInfo:
     def urn(self, urn):
         r"""Sets the urn of this OrganizationNodeResponseInfo.
 
-        组织的统一资源名称，格式：organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx。
+        **参数解释** 组织节点的统一资源名称（URN），用于跨服务唯一标识组织资源； **取值范围** 字符长度1-256位，格式为organizations::{management_account_id}:xxxxx:{org_id}/xxxxxxxx，符合平台URN命名规范 
 
         :param urn: The urn of this OrganizationNodeResponseInfo.
         :type urn: str
@@ -144,7 +144,7 @@ class OrganizationNodeResponseInfo:
     def name(self):
         r"""Gets the name of this OrganizationNodeResponseInfo.
 
-        名称
+        **参数解释** 组织节点的名称（可能是组织单元名称或账号名称，与org_type对应）； **取值范围** 字符长度1-64位，支持字母、数字、连字符、下划线及中文，不能以特殊字符开头或结尾 
 
         :return: The name of this OrganizationNodeResponseInfo.
         :rtype: str
@@ -155,7 +155,7 @@ class OrganizationNodeResponseInfo:
     def name(self, name):
         r"""Sets the name of this OrganizationNodeResponseInfo.
 
-        名称
+        **参数解释** 组织节点的名称（可能是组织单元名称或账号名称，与org_type对应）； **取值范围** 字符长度1-64位，支持字母、数字、连字符、下划线及中文，不能以特殊字符开头或结尾 
 
         :param name: The name of this OrganizationNodeResponseInfo.
         :type name: str
@@ -166,7 +166,7 @@ class OrganizationNodeResponseInfo:
     def org_type(self):
         r"""Gets the org_type of this OrganizationNodeResponseInfo.
 
-        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - unit：组织单元 - account：账号  **默认取值**: 不涉及 
+        **参数解释**: 节点（组织单元或账号）的类型； **取值范围**: unit（组织单元）、account（账号） 
 
         :return: The org_type of this OrganizationNodeResponseInfo.
         :rtype: str
@@ -177,7 +177,7 @@ class OrganizationNodeResponseInfo:
     def org_type(self, org_type):
         r"""Sets the org_type of this OrganizationNodeResponseInfo.
 
-        **参数解释**: 节点类型 **约束限制**: 不涉及 **取值范围**: - unit：组织单元 - account：账号  **默认取值**: 不涉及 
+        **参数解释**: 节点（组织单元或账号）的类型； **取值范围**: unit（组织单元）、account（账号） 
 
         :param org_type: The org_type of this OrganizationNodeResponseInfo.
         :type org_type: str
@@ -188,7 +188,7 @@ class OrganizationNodeResponseInfo:
     def delegated(self):
         r"""Gets the delegated of this OrganizationNodeResponseInfo.
 
-        组织或账号是否已授权。   - true: 已授权（无需授权）。   - false: 未授权。
+        **参数解释**: 标识组织节点（组织单元或账号）是否已完成授权； **取值范围**: true（已授权，无需重复授权）、false（未授权，需完成授权后使用） 
 
         :return: The delegated of this OrganizationNodeResponseInfo.
         :rtype: bool
@@ -199,7 +199,7 @@ class OrganizationNodeResponseInfo:
     def delegated(self, delegated):
         r"""Sets the delegated of this OrganizationNodeResponseInfo.
 
-        组织或账号是否已授权。   - true: 已授权（无需授权）。   - false: 未授权。
+        **参数解释**: 标识组织节点（组织单元或账号）是否已完成授权； **取值范围**: true（已授权，无需重复授权）、false（未授权，需完成授权后使用） 
 
         :param delegated: The delegated of this OrganizationNodeResponseInfo.
         :type delegated: bool

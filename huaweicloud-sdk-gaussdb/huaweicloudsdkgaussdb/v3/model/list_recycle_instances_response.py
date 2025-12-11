@@ -16,7 +16,7 @@ class ListRecycleInstancesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_count': 'str',
+        'total_count': 'int',
         'instances': 'list[RecycleInstanceV3]'
     }
 
@@ -31,7 +31,7 @@ class ListRecycleInstancesResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param total_count: 数据总数
-        :type total_count: str
+        :type total_count: int
         :param instances: 回收站实例信息
         :type instances: list[:class:`huaweicloudsdkgaussdb.v3.RecycleInstanceV3`]
         """
@@ -54,7 +54,7 @@ class ListRecycleInstancesResponse(SdkResponse):
         数据总数
 
         :return: The total_count of this ListRecycleInstancesResponse.
-        :rtype: str
+        :rtype: int
         """
         return self._total_count
 
@@ -65,7 +65,7 @@ class ListRecycleInstancesResponse(SdkResponse):
         数据总数
 
         :param total_count: The total_count of this ListRecycleInstancesResponse.
-        :type total_count: str
+        :type total_count: int
         """
         self._total_count = total_count
 

@@ -57,37 +57,37 @@ class AntiVirusResultResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param result_id: 病毒查杀结果ID
+        :param result_id: **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
         :type result_id: str
-        :param malware_type: 病毒类型
+        :param malware_type: **参数解释**： 病毒类型 **取值范围**： Trojan（木马）、Virus（病毒）、Worm（蠕虫）等 
         :type malware_type: str
-        :param malware_name: 病毒名称
+        :param malware_name: **参数解释**： 病毒名称 **取值范围**： 字符长度1-128位 
         :type malware_name: str
-        :param severity: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
+        :param severity: **参数解释**: 威胁等级 **取值范围**: 包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 
         :type severity: str
-        :param task_id: 任务ID
+        :param task_id: **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
         :type task_id: str
-        :param task_name: 任务名称
+        :param task_name: **参数解释**: 任务名称 **取值范围**: 最大长度255个unicode字符。 
         :type task_name: str
         :param file_info: 
         :type file_info: :class:`huaweicloudsdkhss.v5.ResultFileResponseInfo`
         :param resource_info: 
         :type resource_info: :class:`huaweicloudsdkhss.v5.ResultResourceResponseInfo`
-        :param event_type: 事件类型
+        :param event_type: **参数解释**: 病毒查杀结果对应的事件类型标识 **取值范围**: 0-10（具体含义：0&#x3D;文件病毒事件、1&#x3D;内存病毒事件...，详见产品错误码/枚举文档） 
         :type event_type: int
-        :param occur_time: **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
+        :param occur_time: **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
         :type occur_time: int
         :param handle_status: **参数解释**： 处理状态 **取值范围**： - unhandled：未处理 - handled：已处理 
         :type handle_status: str
-        :param handle_method: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
+        :param handle_method: **参数解释**: 处理方式 **取值范围**: 包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 
         :type handle_method: str
-        :param memo: 备注信息
+        :param memo: **参数解释** 备注信息 **取值范围** 字符长度0-512位 
         :type memo: str
-        :param operate_accept_list: 支持的处理操作
+        :param operate_accept_list: **参数解释**: 后续处置操作列表 **取值范围**: 数组元素为处置操作枚举字符串（如“isolate_and_kill”“ignore”等），数组长度0-4（具体支持操作因结果状态而异） 
         :type operate_accept_list: list[str]
-        :param operate_detail_list: 操作详情信息列表（页面不展示）
+        :param operate_detail_list: **参数解释**: 操作详情信息列表（页面不展示） **取值范围**: 数组长度0-100 
         :type operate_detail_list: list[:class:`huaweicloudsdkhss.v5.ResultDetailResponseInfo`]
-        :param isolate_tag: 自动隔离查杀标识
+        :param isolate_tag: **参数解释**: 自动隔离查杀标识 **取值范围**: 字符长度1-16位，枚举值为“auto_isolate”（自动隔离）、“manual”（手动操作）、“none”（未隔离） 
         :type isolate_tag: str
         """
         
@@ -148,7 +148,7 @@ class AntiVirusResultResponseInfo:
     def result_id(self):
         r"""Gets the result_id of this AntiVirusResultResponseInfo.
 
-        病毒查杀结果ID
+        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
 
         :return: The result_id of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -159,7 +159,7 @@ class AntiVirusResultResponseInfo:
     def result_id(self, result_id):
         r"""Sets the result_id of this AntiVirusResultResponseInfo.
 
-        病毒查杀结果ID
+        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
 
         :param result_id: The result_id of this AntiVirusResultResponseInfo.
         :type result_id: str
@@ -170,7 +170,7 @@ class AntiVirusResultResponseInfo:
     def malware_type(self):
         r"""Gets the malware_type of this AntiVirusResultResponseInfo.
 
-        病毒类型
+        **参数解释**： 病毒类型 **取值范围**： Trojan（木马）、Virus（病毒）、Worm（蠕虫）等 
 
         :return: The malware_type of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -181,7 +181,7 @@ class AntiVirusResultResponseInfo:
     def malware_type(self, malware_type):
         r"""Sets the malware_type of this AntiVirusResultResponseInfo.
 
-        病毒类型
+        **参数解释**： 病毒类型 **取值范围**： Trojan（木马）、Virus（病毒）、Worm（蠕虫）等 
 
         :param malware_type: The malware_type of this AntiVirusResultResponseInfo.
         :type malware_type: str
@@ -192,7 +192,7 @@ class AntiVirusResultResponseInfo:
     def malware_name(self):
         r"""Gets the malware_name of this AntiVirusResultResponseInfo.
 
-        病毒名称
+        **参数解释**： 病毒名称 **取值范围**： 字符长度1-128位 
 
         :return: The malware_name of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -203,7 +203,7 @@ class AntiVirusResultResponseInfo:
     def malware_name(self, malware_name):
         r"""Sets the malware_name of this AntiVirusResultResponseInfo.
 
-        病毒名称
+        **参数解释**： 病毒名称 **取值范围**： 字符长度1-128位 
 
         :param malware_name: The malware_name of this AntiVirusResultResponseInfo.
         :type malware_name: str
@@ -214,7 +214,7 @@ class AntiVirusResultResponseInfo:
     def severity(self):
         r"""Gets the severity of this AntiVirusResultResponseInfo.
 
-        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
+        **参数解释**: 威胁等级 **取值范围**: 包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 
 
         :return: The severity of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -225,7 +225,7 @@ class AntiVirusResultResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this AntiVirusResultResponseInfo.
 
-        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
+        **参数解释**: 威胁等级 **取值范围**: 包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 
 
         :param severity: The severity of this AntiVirusResultResponseInfo.
         :type severity: str
@@ -236,7 +236,7 @@ class AntiVirusResultResponseInfo:
     def task_id(self):
         r"""Gets the task_id of this AntiVirusResultResponseInfo.
 
-        任务ID
+        **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
 
         :return: The task_id of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -247,7 +247,7 @@ class AntiVirusResultResponseInfo:
     def task_id(self, task_id):
         r"""Sets the task_id of this AntiVirusResultResponseInfo.
 
-        任务ID
+        **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
 
         :param task_id: The task_id of this AntiVirusResultResponseInfo.
         :type task_id: str
@@ -258,7 +258,7 @@ class AntiVirusResultResponseInfo:
     def task_name(self):
         r"""Gets the task_name of this AntiVirusResultResponseInfo.
 
-        任务名称
+        **参数解释**: 任务名称 **取值范围**: 最大长度255个unicode字符。 
 
         :return: The task_name of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -269,7 +269,7 @@ class AntiVirusResultResponseInfo:
     def task_name(self, task_name):
         r"""Sets the task_name of this AntiVirusResultResponseInfo.
 
-        任务名称
+        **参数解释**: 任务名称 **取值范围**: 最大长度255个unicode字符。 
 
         :param task_name: The task_name of this AntiVirusResultResponseInfo.
         :type task_name: str
@@ -316,7 +316,7 @@ class AntiVirusResultResponseInfo:
     def event_type(self):
         r"""Gets the event_type of this AntiVirusResultResponseInfo.
 
-        事件类型
+        **参数解释**: 病毒查杀结果对应的事件类型标识 **取值范围**: 0-10（具体含义：0=文件病毒事件、1=内存病毒事件...，详见产品错误码/枚举文档） 
 
         :return: The event_type of this AntiVirusResultResponseInfo.
         :rtype: int
@@ -327,7 +327,7 @@ class AntiVirusResultResponseInfo:
     def event_type(self, event_type):
         r"""Sets the event_type of this AntiVirusResultResponseInfo.
 
-        事件类型
+        **参数解释**: 病毒查杀结果对应的事件类型标识 **取值范围**: 0-10（具体含义：0=文件病毒事件、1=内存病毒事件...，详见产品错误码/枚举文档） 
 
         :param event_type: The event_type of this AntiVirusResultResponseInfo.
         :type event_type: int
@@ -338,7 +338,7 @@ class AntiVirusResultResponseInfo:
     def occur_time(self):
         r"""Gets the occur_time of this AntiVirusResultResponseInfo.
 
-        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :return: The occur_time of this AntiVirusResultResponseInfo.
         :rtype: int
@@ -349,7 +349,7 @@ class AntiVirusResultResponseInfo:
     def occur_time(self, occur_time):
         r"""Sets the occur_time of this AntiVirusResultResponseInfo.
 
-        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807 
+        **参数解释**： 发生时间，毫秒 **取值范围**： 最小值0，最大值9223372036854775807，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :param occur_time: The occur_time of this AntiVirusResultResponseInfo.
         :type occur_time: int
@@ -382,7 +382,7 @@ class AntiVirusResultResponseInfo:
     def handle_method(self):
         r"""Gets the handle_method of this AntiVirusResultResponseInfo.
 
-        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
+        **参数解释**: 处理方式 **取值范围**: 包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 
 
         :return: The handle_method of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -393,7 +393,7 @@ class AntiVirusResultResponseInfo:
     def handle_method(self, handle_method):
         r"""Sets the handle_method of this AntiVirusResultResponseInfo.
 
-        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件
+        **参数解释**: 处理方式 **取值范围**: 包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 
 
         :param handle_method: The handle_method of this AntiVirusResultResponseInfo.
         :type handle_method: str
@@ -404,7 +404,7 @@ class AntiVirusResultResponseInfo:
     def memo(self):
         r"""Gets the memo of this AntiVirusResultResponseInfo.
 
-        备注信息
+        **参数解释** 备注信息 **取值范围** 字符长度0-512位 
 
         :return: The memo of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -415,7 +415,7 @@ class AntiVirusResultResponseInfo:
     def memo(self, memo):
         r"""Sets the memo of this AntiVirusResultResponseInfo.
 
-        备注信息
+        **参数解释** 备注信息 **取值范围** 字符长度0-512位 
 
         :param memo: The memo of this AntiVirusResultResponseInfo.
         :type memo: str
@@ -426,7 +426,7 @@ class AntiVirusResultResponseInfo:
     def operate_accept_list(self):
         r"""Gets the operate_accept_list of this AntiVirusResultResponseInfo.
 
-        支持的处理操作
+        **参数解释**: 后续处置操作列表 **取值范围**: 数组元素为处置操作枚举字符串（如“isolate_and_kill”“ignore”等），数组长度0-4（具体支持操作因结果状态而异） 
 
         :return: The operate_accept_list of this AntiVirusResultResponseInfo.
         :rtype: list[str]
@@ -437,7 +437,7 @@ class AntiVirusResultResponseInfo:
     def operate_accept_list(self, operate_accept_list):
         r"""Sets the operate_accept_list of this AntiVirusResultResponseInfo.
 
-        支持的处理操作
+        **参数解释**: 后续处置操作列表 **取值范围**: 数组元素为处置操作枚举字符串（如“isolate_and_kill”“ignore”等），数组长度0-4（具体支持操作因结果状态而异） 
 
         :param operate_accept_list: The operate_accept_list of this AntiVirusResultResponseInfo.
         :type operate_accept_list: list[str]
@@ -448,7 +448,7 @@ class AntiVirusResultResponseInfo:
     def operate_detail_list(self):
         r"""Gets the operate_detail_list of this AntiVirusResultResponseInfo.
 
-        操作详情信息列表（页面不展示）
+        **参数解释**: 操作详情信息列表（页面不展示） **取值范围**: 数组长度0-100 
 
         :return: The operate_detail_list of this AntiVirusResultResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ResultDetailResponseInfo`]
@@ -459,7 +459,7 @@ class AntiVirusResultResponseInfo:
     def operate_detail_list(self, operate_detail_list):
         r"""Sets the operate_detail_list of this AntiVirusResultResponseInfo.
 
-        操作详情信息列表（页面不展示）
+        **参数解释**: 操作详情信息列表（页面不展示） **取值范围**: 数组长度0-100 
 
         :param operate_detail_list: The operate_detail_list of this AntiVirusResultResponseInfo.
         :type operate_detail_list: list[:class:`huaweicloudsdkhss.v5.ResultDetailResponseInfo`]
@@ -470,7 +470,7 @@ class AntiVirusResultResponseInfo:
     def isolate_tag(self):
         r"""Gets the isolate_tag of this AntiVirusResultResponseInfo.
 
-        自动隔离查杀标识
+        **参数解释**: 自动隔离查杀标识 **取值范围**: 字符长度1-16位，枚举值为“auto_isolate”（自动隔离）、“manual”（手动操作）、“none”（未隔离） 
 
         :return: The isolate_tag of this AntiVirusResultResponseInfo.
         :rtype: str
@@ -481,7 +481,7 @@ class AntiVirusResultResponseInfo:
     def isolate_tag(self, isolate_tag):
         r"""Sets the isolate_tag of this AntiVirusResultResponseInfo.
 
-        自动隔离查杀标识
+        **参数解释**: 自动隔离查杀标识 **取值范围**: 字符长度1-16位，枚举值为“auto_isolate”（自动隔离）、“manual”（手动操作）、“none”（未隔离） 
 
         :param isolate_tag: The isolate_tag of this AntiVirusResultResponseInfo.
         :type isolate_tag: str

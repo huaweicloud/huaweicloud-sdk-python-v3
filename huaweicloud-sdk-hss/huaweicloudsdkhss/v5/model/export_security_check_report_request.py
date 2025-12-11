@@ -41,9 +41,9 @@ class ExportSecurityCheckReportRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param group_id: **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param group_id: **参数解释**: 服务器组的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type group_id: str
-        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param host_id: **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
         :param check_name: **参数解释** : \&quot;配置检查（基线）的名称，例如SSH、CentOS 7、Windows\&quot;。 **约束限制** : 不涉及 **取值范围** : 字符长度1-256位 **默认取值** : 不涉及 
         :type check_name: str
@@ -107,7 +107,7 @@ class ExportSecurityCheckReportRequest:
     def group_id(self):
         r"""Gets the group_id of this ExportSecurityCheckReportRequest.
 
-        **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器组的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The group_id of this ExportSecurityCheckReportRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ExportSecurityCheckReportRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ExportSecurityCheckReportRequest.
 
-        **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器组的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param group_id: The group_id of this ExportSecurityCheckReportRequest.
         :type group_id: str
@@ -129,7 +129,7 @@ class ExportSecurityCheckReportRequest:
     def host_id(self):
         r"""Gets the host_id of this ExportSecurityCheckReportRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ExportSecurityCheckReportRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ExportSecurityCheckReportRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ExportSecurityCheckReportRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ExportSecurityCheckReportRequest.
         :type host_id: str

@@ -35,13 +35,13 @@ class AntiVirusPolicyHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
         :type public_ip: str
         :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
@@ -71,7 +71,7 @@ class AntiVirusPolicyHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AntiVirusPolicyHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this AntiVirusPolicyHostResponseInfo.
         :rtype: str
@@ -82,7 +82,7 @@ class AntiVirusPolicyHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AntiVirusPolicyHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this AntiVirusPolicyHostResponseInfo.
         :type host_id: str
@@ -137,7 +137,7 @@ class AntiVirusPolicyHostResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this AntiVirusPolicyHostResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :return: The public_ip of this AntiVirusPolicyHostResponseInfo.
         :rtype: str
@@ -148,7 +148,7 @@ class AntiVirusPolicyHostResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this AntiVirusPolicyHostResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :param public_ip: The public_ip of this AntiVirusPolicyHostResponseInfo.
         :type public_ip: str

@@ -37,11 +37,11 @@ class CreateInstancePeriodRequestProductInfos:
 
         :param product_id: 产品ID
         :type product_id: str
-        :param cloud_service_type: 服务类型： - hws.service.type.dbss
+        :param cloud_service_type: 服务类型： - hws.service.type.dbss: 数据库审计
         :type cloud_service_type: str
-        :param resource_type: 资源类型: - hws.resource.type.dbss
+        :param resource_type: 资源类型: - hws.resource.type.dbss：数据库审计
         :type resource_type: str
-        :param resource_spec_code: 资源规格： - dbss.bypassaudit.low - dbss.bypassaudit.medium - dbss.bypassaudit.high
+        :param resource_spec_code: 资源规格： - dbss.bypassaudit.low：基础版 - dbss.bypassaudit.medium：高级版 - dbss.bypassaudit.high：专业版
         :type resource_spec_code: str
         :param product_spec_desc: 产品规格描述。json字符串格式 ：{\&quot;specDesc\&quot;:{\&quot;zh-cn\&quot;:{\&quot;key1\&quot;:\&quot;value1\&quot;},\&quot;en-us\&quot;:{\&quot;key1\&quot;:\&quot;value1\&quot;}}}
         :type product_spec_desc: str
@@ -89,7 +89,7 @@ class CreateInstancePeriodRequestProductInfos:
     def cloud_service_type(self):
         r"""Gets the cloud_service_type of this CreateInstancePeriodRequestProductInfos.
 
-        服务类型： - hws.service.type.dbss
+        服务类型： - hws.service.type.dbss: 数据库审计
 
         :return: The cloud_service_type of this CreateInstancePeriodRequestProductInfos.
         :rtype: str
@@ -100,7 +100,7 @@ class CreateInstancePeriodRequestProductInfos:
     def cloud_service_type(self, cloud_service_type):
         r"""Sets the cloud_service_type of this CreateInstancePeriodRequestProductInfos.
 
-        服务类型： - hws.service.type.dbss
+        服务类型： - hws.service.type.dbss: 数据库审计
 
         :param cloud_service_type: The cloud_service_type of this CreateInstancePeriodRequestProductInfos.
         :type cloud_service_type: str
@@ -111,7 +111,7 @@ class CreateInstancePeriodRequestProductInfos:
     def resource_type(self):
         r"""Gets the resource_type of this CreateInstancePeriodRequestProductInfos.
 
-        资源类型: - hws.resource.type.dbss
+        资源类型: - hws.resource.type.dbss：数据库审计
 
         :return: The resource_type of this CreateInstancePeriodRequestProductInfos.
         :rtype: str
@@ -122,7 +122,7 @@ class CreateInstancePeriodRequestProductInfos:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this CreateInstancePeriodRequestProductInfos.
 
-        资源类型: - hws.resource.type.dbss
+        资源类型: - hws.resource.type.dbss：数据库审计
 
         :param resource_type: The resource_type of this CreateInstancePeriodRequestProductInfos.
         :type resource_type: str
@@ -133,7 +133,7 @@ class CreateInstancePeriodRequestProductInfos:
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this CreateInstancePeriodRequestProductInfos.
 
-        资源规格： - dbss.bypassaudit.low - dbss.bypassaudit.medium - dbss.bypassaudit.high
+        资源规格： - dbss.bypassaudit.low：基础版 - dbss.bypassaudit.medium：高级版 - dbss.bypassaudit.high：专业版
 
         :return: The resource_spec_code of this CreateInstancePeriodRequestProductInfos.
         :rtype: str
@@ -144,7 +144,7 @@ class CreateInstancePeriodRequestProductInfos:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this CreateInstancePeriodRequestProductInfos.
 
-        资源规格： - dbss.bypassaudit.low - dbss.bypassaudit.medium - dbss.bypassaudit.high
+        资源规格： - dbss.bypassaudit.low：基础版 - dbss.bypassaudit.medium：高级版 - dbss.bypassaudit.high：专业版
 
         :param resource_spec_code: The resource_spec_code of this CreateInstancePeriodRequestProductInfos.
         :type resource_spec_code: str

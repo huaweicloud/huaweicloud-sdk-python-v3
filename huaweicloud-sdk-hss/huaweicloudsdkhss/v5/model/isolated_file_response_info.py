@@ -57,9 +57,9 @@ class IsolatedFileResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
         :type os_type: str
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
@@ -67,13 +67,13 @@ class IsolatedFileResponseInfo:
         :type file_hash: str
         :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
-        :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        :param file_attr: **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
         :type file_attr: str
         :param isolation_status: 隔离状态，包含如下:   - isolated : 已隔离   - restored : 已恢复   - isolating : 已下发隔离任务   - restoring : 已下发恢复任务
         :type isolation_status: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
         :type public_ip: str
         :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
@@ -132,7 +132,7 @@ class IsolatedFileResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this IsolatedFileResponseInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :return: The os_type of this IsolatedFileResponseInfo.
         :rtype: str
@@ -143,7 +143,7 @@ class IsolatedFileResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this IsolatedFileResponseInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :param os_type: The os_type of this IsolatedFileResponseInfo.
         :type os_type: str
@@ -154,7 +154,7 @@ class IsolatedFileResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this IsolatedFileResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this IsolatedFileResponseInfo.
         :rtype: str
@@ -165,7 +165,7 @@ class IsolatedFileResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this IsolatedFileResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this IsolatedFileResponseInfo.
         :type host_id: str
@@ -242,7 +242,7 @@ class IsolatedFileResponseInfo:
     def file_attr(self):
         r"""Gets the file_attr of this IsolatedFileResponseInfo.
 
-        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
 
         :return: The file_attr of this IsolatedFileResponseInfo.
         :rtype: str
@@ -253,7 +253,7 @@ class IsolatedFileResponseInfo:
     def file_attr(self, file_attr):
         r"""Sets the file_attr of this IsolatedFileResponseInfo.
 
-        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
 
         :param file_attr: The file_attr of this IsolatedFileResponseInfo.
         :type file_attr: str
@@ -308,7 +308,7 @@ class IsolatedFileResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this IsolatedFileResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :return: The public_ip of this IsolatedFileResponseInfo.
         :rtype: str
@@ -319,7 +319,7 @@ class IsolatedFileResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this IsolatedFileResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :param public_ip: The public_ip of this IsolatedFileResponseInfo.
         :type public_ip: str

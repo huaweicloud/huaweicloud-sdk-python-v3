@@ -43,23 +43,23 @@ class AccountResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param account_name: 账号名称
+        :param account_name: **参数解释**: 账号的唯一名称，用于标识账号身份； **取值范围**: 字符长度1-64位，支持字母、数字、连字符、下划线，不能以特殊字符开头或结尾 
         :type account_name: str
-        :param account_id: 账号Id
+        :param account_id: **参数解释**: 账号的唯一标识ID，用于唯一确定某个账号； **取值范围**: 字符长度1-64位，符合平台账号ID命名规范（如UUID或数字组合） 
         :type account_id: str
-        :param organization_id: 组织Id
+        :param organization_id: **参数解释**: 账号所属组织的唯一标识ID； **取值范围**: 字符长度1-64位，符合平台组织ID命名规范 
         :type organization_id: str
-        :param project_id: 项目Id
+        :param project_id: **参数解释**: 账号所属项目的唯一标识ID； **取值范围**: 字符长度1-64位，符合平台项目ID命名规范； 
         :type project_id: str
-        :param project_name: 项目名称
+        :param project_name: **参数解释**: 账号所属项目的名称，用于直观标识项目； **取值范围**: 字符长度1-64位，支持字母、数字、连字符、下划线及中文，无复杂度额外要求 
         :type project_name: str
-        :param host_num: 主机数量
+        :param host_num: **参数解释**: 当前账号下已关联的主机总数量； **取值范围**: 非负整数，最小值0，最大值取决于平台资源配额；单位：台 
         :type host_num: int
-        :param vulnerability_num: 漏洞风险数量
+        :param vulnerability_num: **参数解释**: 当前账号下主机存在的漏洞风险总数量； **取值范围**: 非负整数，取值范围0-2147483647；单位：个 
         :type vulnerability_num: int
-        :param baseline_num: 基线检测风险数量
+        :param baseline_num: **参数解释**: 当前账号下主机基线检测未通过的风险总数量； **取值范围**: 非负整数，取值范围0-2147483647；单位：个 
         :type baseline_num: int
-        :param intrusion_num: 安全告警风险数量
+        :param intrusion_num: **参数解释**: 当前账号下主机发生的安全入侵告警总数量； **取值范围**: 非负整数，取值范围0-2147483647；单位：条 
         :type intrusion_num: int
         """
         
@@ -99,7 +99,7 @@ class AccountResponseInfo:
     def account_name(self):
         r"""Gets the account_name of this AccountResponseInfo.
 
-        账号名称
+        **参数解释**: 账号的唯一名称，用于标识账号身份； **取值范围**: 字符长度1-64位，支持字母、数字、连字符、下划线，不能以特殊字符开头或结尾 
 
         :return: The account_name of this AccountResponseInfo.
         :rtype: str
@@ -110,7 +110,7 @@ class AccountResponseInfo:
     def account_name(self, account_name):
         r"""Sets the account_name of this AccountResponseInfo.
 
-        账号名称
+        **参数解释**: 账号的唯一名称，用于标识账号身份； **取值范围**: 字符长度1-64位，支持字母、数字、连字符、下划线，不能以特殊字符开头或结尾 
 
         :param account_name: The account_name of this AccountResponseInfo.
         :type account_name: str
@@ -121,7 +121,7 @@ class AccountResponseInfo:
     def account_id(self):
         r"""Gets the account_id of this AccountResponseInfo.
 
-        账号Id
+        **参数解释**: 账号的唯一标识ID，用于唯一确定某个账号； **取值范围**: 字符长度1-64位，符合平台账号ID命名规范（如UUID或数字组合） 
 
         :return: The account_id of this AccountResponseInfo.
         :rtype: str
@@ -132,7 +132,7 @@ class AccountResponseInfo:
     def account_id(self, account_id):
         r"""Sets the account_id of this AccountResponseInfo.
 
-        账号Id
+        **参数解释**: 账号的唯一标识ID，用于唯一确定某个账号； **取值范围**: 字符长度1-64位，符合平台账号ID命名规范（如UUID或数字组合） 
 
         :param account_id: The account_id of this AccountResponseInfo.
         :type account_id: str
@@ -143,7 +143,7 @@ class AccountResponseInfo:
     def organization_id(self):
         r"""Gets the organization_id of this AccountResponseInfo.
 
-        组织Id
+        **参数解释**: 账号所属组织的唯一标识ID； **取值范围**: 字符长度1-64位，符合平台组织ID命名规范 
 
         :return: The organization_id of this AccountResponseInfo.
         :rtype: str
@@ -154,7 +154,7 @@ class AccountResponseInfo:
     def organization_id(self, organization_id):
         r"""Sets the organization_id of this AccountResponseInfo.
 
-        组织Id
+        **参数解释**: 账号所属组织的唯一标识ID； **取值范围**: 字符长度1-64位，符合平台组织ID命名规范 
 
         :param organization_id: The organization_id of this AccountResponseInfo.
         :type organization_id: str
@@ -165,7 +165,7 @@ class AccountResponseInfo:
     def project_id(self):
         r"""Gets the project_id of this AccountResponseInfo.
 
-        项目Id
+        **参数解释**: 账号所属项目的唯一标识ID； **取值范围**: 字符长度1-64位，符合平台项目ID命名规范； 
 
         :return: The project_id of this AccountResponseInfo.
         :rtype: str
@@ -176,7 +176,7 @@ class AccountResponseInfo:
     def project_id(self, project_id):
         r"""Sets the project_id of this AccountResponseInfo.
 
-        项目Id
+        **参数解释**: 账号所属项目的唯一标识ID； **取值范围**: 字符长度1-64位，符合平台项目ID命名规范； 
 
         :param project_id: The project_id of this AccountResponseInfo.
         :type project_id: str
@@ -187,7 +187,7 @@ class AccountResponseInfo:
     def project_name(self):
         r"""Gets the project_name of this AccountResponseInfo.
 
-        项目名称
+        **参数解释**: 账号所属项目的名称，用于直观标识项目； **取值范围**: 字符长度1-64位，支持字母、数字、连字符、下划线及中文，无复杂度额外要求 
 
         :return: The project_name of this AccountResponseInfo.
         :rtype: str
@@ -198,7 +198,7 @@ class AccountResponseInfo:
     def project_name(self, project_name):
         r"""Sets the project_name of this AccountResponseInfo.
 
-        项目名称
+        **参数解释**: 账号所属项目的名称，用于直观标识项目； **取值范围**: 字符长度1-64位，支持字母、数字、连字符、下划线及中文，无复杂度额外要求 
 
         :param project_name: The project_name of this AccountResponseInfo.
         :type project_name: str
@@ -209,7 +209,7 @@ class AccountResponseInfo:
     def host_num(self):
         r"""Gets the host_num of this AccountResponseInfo.
 
-        主机数量
+        **参数解释**: 当前账号下已关联的主机总数量； **取值范围**: 非负整数，最小值0，最大值取决于平台资源配额；单位：台 
 
         :return: The host_num of this AccountResponseInfo.
         :rtype: int
@@ -220,7 +220,7 @@ class AccountResponseInfo:
     def host_num(self, host_num):
         r"""Sets the host_num of this AccountResponseInfo.
 
-        主机数量
+        **参数解释**: 当前账号下已关联的主机总数量； **取值范围**: 非负整数，最小值0，最大值取决于平台资源配额；单位：台 
 
         :param host_num: The host_num of this AccountResponseInfo.
         :type host_num: int
@@ -231,7 +231,7 @@ class AccountResponseInfo:
     def vulnerability_num(self):
         r"""Gets the vulnerability_num of this AccountResponseInfo.
 
-        漏洞风险数量
+        **参数解释**: 当前账号下主机存在的漏洞风险总数量； **取值范围**: 非负整数，取值范围0-2147483647；单位：个 
 
         :return: The vulnerability_num of this AccountResponseInfo.
         :rtype: int
@@ -242,7 +242,7 @@ class AccountResponseInfo:
     def vulnerability_num(self, vulnerability_num):
         r"""Sets the vulnerability_num of this AccountResponseInfo.
 
-        漏洞风险数量
+        **参数解释**: 当前账号下主机存在的漏洞风险总数量； **取值范围**: 非负整数，取值范围0-2147483647；单位：个 
 
         :param vulnerability_num: The vulnerability_num of this AccountResponseInfo.
         :type vulnerability_num: int
@@ -253,7 +253,7 @@ class AccountResponseInfo:
     def baseline_num(self):
         r"""Gets the baseline_num of this AccountResponseInfo.
 
-        基线检测风险数量
+        **参数解释**: 当前账号下主机基线检测未通过的风险总数量； **取值范围**: 非负整数，取值范围0-2147483647；单位：个 
 
         :return: The baseline_num of this AccountResponseInfo.
         :rtype: int
@@ -264,7 +264,7 @@ class AccountResponseInfo:
     def baseline_num(self, baseline_num):
         r"""Sets the baseline_num of this AccountResponseInfo.
 
-        基线检测风险数量
+        **参数解释**: 当前账号下主机基线检测未通过的风险总数量； **取值范围**: 非负整数，取值范围0-2147483647；单位：个 
 
         :param baseline_num: The baseline_num of this AccountResponseInfo.
         :type baseline_num: int
@@ -275,7 +275,7 @@ class AccountResponseInfo:
     def intrusion_num(self):
         r"""Gets the intrusion_num of this AccountResponseInfo.
 
-        安全告警风险数量
+        **参数解释**: 当前账号下主机发生的安全入侵告警总数量； **取值范围**: 非负整数，取值范围0-2147483647；单位：条 
 
         :return: The intrusion_num of this AccountResponseInfo.
         :rtype: int
@@ -286,7 +286,7 @@ class AccountResponseInfo:
     def intrusion_num(self, intrusion_num):
         r"""Sets the intrusion_num of this AccountResponseInfo.
 
-        安全告警风险数量
+        **参数解释**: 当前账号下主机发生的安全入侵告警总数量； **取值范围**: 非负整数，取值范围0-2147483647；单位：条 
 
         :param intrusion_num: The intrusion_num of this AccountResponseInfo.
         :type intrusion_num: int

@@ -33,6 +33,132 @@ class SwrAsyncClient(Client):
 
         return client_builder
 
+    def check_agency_async(self, request):
+        r"""查询委托是否存在
+
+        检查租户是否已委托SWR服务通过触发器功能调用CCE、CCI服务，一般由前端控制台自动调用，用户无需手动调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CheckAgency
+        :type request: :class:`huaweicloudsdkswr.v2.CheckAgencyRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CheckAgencyResponse`
+        """
+        http_info = self._check_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_agency_async_invoker(self, request):
+        http_info = self._check_agency_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_agency_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_agency_async(self, request):
+        r"""创建委托
+
+        租户首次使用SWR服务时创建SWR服务内部委托，一般由前端控制台自动调用，用户无需手动调用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateAgency
+        :type request: :class:`huaweicloudsdkswr.v2.CreateAgencyRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.CreateAgencyResponse`
+        """
+        http_info = self._create_agency_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_agency_async_invoker(self, request):
+        http_info = self._create_agency_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_agency_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_authorization_token_async(self, request):
         r"""生成增强型登录指令(新)
 
@@ -2309,6 +2435,69 @@ class SwrAsyncClient(Client):
             body = request.get_file_stream()
 
         response_headers = ["Content-Range", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_sync_regions_async(self, request):
+        r"""获取可进行镜像同步的区域列表
+
+        获取可进行镜像同步的区域列表，用户可以将镜像手动或自动同步到此接口返回的区域。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListSyncRegions
+        :type request: :class:`huaweicloudsdkswr.v2.ListSyncRegionsRequest`
+        :rtype: :class:`huaweicloudsdkswr.v2.ListSyncRegionsResponse`
+        """
+        http_info = self._list_sync_regions_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_sync_regions_async_invoker(self, request):
+        http_info = self._list_sync_regions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sync_regions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSyncRegionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])

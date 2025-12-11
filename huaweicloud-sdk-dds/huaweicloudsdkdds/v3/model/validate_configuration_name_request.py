@@ -27,7 +27,7 @@ class ValidateConfigurationNameRequest:
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数模板名称。
+        :param name: **参数解释：** 参数模板名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type name: str
         """
         
@@ -42,7 +42,7 @@ class ValidateConfigurationNameRequest:
     def name(self):
         r"""Gets the name of this ValidateConfigurationNameRequest.
 
-        参数模板名称。
+        **参数解释：** 参数模板名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The name of this ValidateConfigurationNameRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class ValidateConfigurationNameRequest:
     def name(self, name):
         r"""Sets the name of this ValidateConfigurationNameRequest.
 
-        参数模板名称。
+        **参数解释：** 参数模板名称。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param name: The name of this ValidateConfigurationNameRequest.
         :type name: str

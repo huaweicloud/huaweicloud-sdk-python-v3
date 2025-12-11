@@ -17,16 +17,18 @@ class SmartDocumentRecognizerWordsBlockList:
     openapi_types = {
         'words': 'str',
         'location': 'list[list[int]]',
-        'confidence': 'float'
+        'confidence': 'float',
+        'char_list': 'list[SmartDocumentRecognizerCharList]'
     }
 
     attribute_map = {
         'words': 'words',
         'location': 'location',
-        'confidence': 'confidence'
+        'confidence': 'confidence',
+        'char_list': 'char_list'
     }
 
-    def __init__(self, words=None, location=None, confidence=None):
+    def __init__(self, words=None, location=None, confidence=None, char_list=None):
         r"""SmartDocumentRecognizerWordsBlockList
 
         The model defined in huaweicloud sdk
@@ -35,8 +37,10 @@ class SmartDocumentRecognizerWordsBlockList:
         :type words: str
         :param location: 文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type location: list[list[int]]
-        :param confidence: 文字块识别结果的置信度。  
+        :param confidence: 文字块识别结果的置信度。 
         :type confidence: float
+        :param char_list: 当入参character_mode为True时返回该字段，表示当前文字块对应的单字符识别列表，输出顺序从左到右，先上后下。 
+        :type char_list: list[:class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerCharList`]
         """
         
         
@@ -44,6 +48,7 @@ class SmartDocumentRecognizerWordsBlockList:
         self._words = None
         self._location = None
         self._confidence = None
+        self._char_list = None
         self.discriminator = None
 
         if words is not None:
@@ -52,6 +57,8 @@ class SmartDocumentRecognizerWordsBlockList:
             self.location = location
         if confidence is not None:
             self.confidence = confidence
+        if char_list is not None:
+            self.char_list = char_list
 
     @property
     def words(self):
@@ -101,7 +108,7 @@ class SmartDocumentRecognizerWordsBlockList:
     def confidence(self):
         r"""Gets the confidence of this SmartDocumentRecognizerWordsBlockList.
 
-        文字块识别结果的置信度。  
+        文字块识别结果的置信度。 
 
         :return: The confidence of this SmartDocumentRecognizerWordsBlockList.
         :rtype: float
@@ -112,12 +119,34 @@ class SmartDocumentRecognizerWordsBlockList:
     def confidence(self, confidence):
         r"""Sets the confidence of this SmartDocumentRecognizerWordsBlockList.
 
-        文字块识别结果的置信度。  
+        文字块识别结果的置信度。 
 
         :param confidence: The confidence of this SmartDocumentRecognizerWordsBlockList.
         :type confidence: float
         """
         self._confidence = confidence
+
+    @property
+    def char_list(self):
+        r"""Gets the char_list of this SmartDocumentRecognizerWordsBlockList.
+
+        当入参character_mode为True时返回该字段，表示当前文字块对应的单字符识别列表，输出顺序从左到右，先上后下。 
+
+        :return: The char_list of this SmartDocumentRecognizerWordsBlockList.
+        :rtype: list[:class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerCharList`]
+        """
+        return self._char_list
+
+    @char_list.setter
+    def char_list(self, char_list):
+        r"""Sets the char_list of this SmartDocumentRecognizerWordsBlockList.
+
+        当入参character_mode为True时返回该字段，表示当前文字块对应的单字符识别列表，输出顺序从左到右，先上后下。 
+
+        :param char_list: The char_list of this SmartDocumentRecognizerWordsBlockList.
+        :type char_list: list[:class:`huaweicloudsdkocr.v1.SmartDocumentRecognizerCharList`]
+        """
+        self._char_list = char_list
 
     def to_dict(self):
         result = {}

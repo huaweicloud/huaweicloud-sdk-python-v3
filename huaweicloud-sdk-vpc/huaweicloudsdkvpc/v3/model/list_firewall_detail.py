@@ -25,7 +25,8 @@ class ListFirewallDetail:
         'status': 'str',
         'enterprise_project_id': 'str',
         'tags': 'list[ResourceTag]',
-        'associations': 'list[FirewallAssociation]'
+        'associations': 'list[FirewallAssociation]',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListFirewallDetail:
         'status': 'status',
         'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags',
-        'associations': 'associations'
+        'associations': 'associations',
+        'type': 'type'
     }
 
-    def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, admin_state_up=None, status=None, enterprise_project_id=None, tags=None, associations=None):
+    def __init__(self, id=None, name=None, description=None, project_id=None, created_at=None, updated_at=None, admin_state_up=None, status=None, enterprise_project_id=None, tags=None, associations=None, type=None):
         r"""ListFirewallDetail
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ListFirewallDetail:
         :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         :param associations: 功能说明：ACL绑定的子网列表
         :type associations: list[:class:`huaweicloudsdkvpc.v3.FirewallAssociation`]
+        :param type: 参数解释： 网络ACL支持绑定的子网类型。 取值范围： normal：默认值，表示网络ACL支持绑定普通子网。 CloudDCN：表示网络ACL支持绑定CloudDCN子网。
+        :type type: str
         """
         
         
@@ -84,6 +88,7 @@ class ListFirewallDetail:
         self._enterprise_project_id = None
         self._tags = None
         self._associations = None
+        self._type = None
         self.discriminator = None
 
         self.id = id
@@ -97,6 +102,7 @@ class ListFirewallDetail:
         self.enterprise_project_id = enterprise_project_id
         self.tags = tags
         self.associations = associations
+        self.type = type
 
     @property
     def id(self):
@@ -339,6 +345,28 @@ class ListFirewallDetail:
         :type associations: list[:class:`huaweicloudsdkvpc.v3.FirewallAssociation`]
         """
         self._associations = associations
+
+    @property
+    def type(self):
+        r"""Gets the type of this ListFirewallDetail.
+
+        参数解释： 网络ACL支持绑定的子网类型。 取值范围： normal：默认值，表示网络ACL支持绑定普通子网。 CloudDCN：表示网络ACL支持绑定CloudDCN子网。
+
+        :return: The type of this ListFirewallDetail.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ListFirewallDetail.
+
+        参数解释： 网络ACL支持绑定的子网类型。 取值范围： normal：默认值，表示网络ACL支持绑定普通子网。 CloudDCN：表示网络ACL支持绑定CloudDCN子网。
+
+        :param type: The type of this ListFirewallDetail.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         result = {}

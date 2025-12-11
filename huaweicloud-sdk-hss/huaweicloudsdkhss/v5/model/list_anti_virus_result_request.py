@@ -63,23 +63,23 @@ class ListAntiVirusResultRequest:
         :type host_name: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
-        :param public_ip: **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        :param public_ip: **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
         :type public_ip: str
-        :param handle_status: 处置状态，包含如下:   - unhandled：未处理   - handled：已处理
+        :param handle_status: **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理 **默认取值**: 不涉及 
         :type handle_status: str
-        :param severity_list: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
+        :param severity_list: **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
         :type severity_list: list[str]
-        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
+        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
         :type asset_value: str
-        :param malware_name: 病毒名称
+        :param malware_name: **参数解释**: 病毒名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type malware_name: str
-        :param file_path: 文件路径
+        :param file_path: **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
         :type file_path: str
-        :param file_hash: 文件hash，当前为sha256
+        :param file_hash: **参数解释**： 文件hash，当前为sha256 **约束限制**： 需为合法的SHA256哈希值 **取值范围**： 字符长度64位 **默认取值**： 不涉及 
         :type file_hash: str
-        :param task_name: 任务名称
+        :param task_name: **参数解释**: 任务名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type task_name: str
-        :param manual_isolate: 是否使用手动隔离按钮
+        :param manual_isolate: **参数解释**: 是否使用手动隔离按钮 **约束限制**: 不涉及 **取值范围**: true（已使用手动隔离）、false（未使用手动隔离） **默认取值**: 不涉及 
         :type manual_isolate: bool
         """
         
@@ -242,7 +242,7 @@ class ListAntiVirusResultRequest:
     def public_ip(self):
         r"""Gets the public_ip of this ListAntiVirusResultRequest.
 
-        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
 
         :return: The public_ip of this ListAntiVirusResultRequest.
         :rtype: str
@@ -253,7 +253,7 @@ class ListAntiVirusResultRequest:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ListAntiVirusResultRequest.
 
-        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
 
         :param public_ip: The public_ip of this ListAntiVirusResultRequest.
         :type public_ip: str
@@ -264,7 +264,7 @@ class ListAntiVirusResultRequest:
     def handle_status(self):
         r"""Gets the handle_status of this ListAntiVirusResultRequest.
 
-        处置状态，包含如下:   - unhandled：未处理   - handled：已处理
+        **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理 **默认取值**: 不涉及 
 
         :return: The handle_status of this ListAntiVirusResultRequest.
         :rtype: str
@@ -275,7 +275,7 @@ class ListAntiVirusResultRequest:
     def handle_status(self, handle_status):
         r"""Sets the handle_status of this ListAntiVirusResultRequest.
 
-        处置状态，包含如下:   - unhandled：未处理   - handled：已处理
+        **参数解释**: 处置状态 **约束限制**: 不涉及 **取值范围**: 包含如下:   - unhandled：未处理   - handled：已处理 **默认取值**: 不涉及 
 
         :param handle_status: The handle_status of this ListAntiVirusResultRequest.
         :type handle_status: str
@@ -286,7 +286,7 @@ class ListAntiVirusResultRequest:
     def severity_list(self):
         r"""Gets the severity_list of this ListAntiVirusResultRequest.
 
-        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
+        **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
 
         :return: The severity_list of this ListAntiVirusResultRequest.
         :rtype: list[str]
@@ -297,7 +297,7 @@ class ListAntiVirusResultRequest:
     def severity_list(self, severity_list):
         r"""Sets the severity_list of this ListAntiVirusResultRequest.
 
-        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
+        **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
 
         :param severity_list: The severity_list of this ListAntiVirusResultRequest.
         :type severity_list: list[str]
@@ -308,7 +308,7 @@ class ListAntiVirusResultRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ListAntiVirusResultRequest.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
 
         :return: The asset_value of this ListAntiVirusResultRequest.
         :rtype: str
@@ -319,7 +319,7 @@ class ListAntiVirusResultRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ListAntiVirusResultRequest.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
 
         :param asset_value: The asset_value of this ListAntiVirusResultRequest.
         :type asset_value: str
@@ -330,7 +330,7 @@ class ListAntiVirusResultRequest:
     def malware_name(self):
         r"""Gets the malware_name of this ListAntiVirusResultRequest.
 
-        病毒名称
+        **参数解释**: 病毒名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The malware_name of this ListAntiVirusResultRequest.
         :rtype: str
@@ -341,7 +341,7 @@ class ListAntiVirusResultRequest:
     def malware_name(self, malware_name):
         r"""Sets the malware_name of this ListAntiVirusResultRequest.
 
-        病毒名称
+        **参数解释**: 病毒名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param malware_name: The malware_name of this ListAntiVirusResultRequest.
         :type malware_name: str
@@ -352,7 +352,7 @@ class ListAntiVirusResultRequest:
     def file_path(self):
         r"""Gets the file_path of this ListAntiVirusResultRequest.
 
-        文件路径
+        **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
 
         :return: The file_path of this ListAntiVirusResultRequest.
         :rtype: str
@@ -363,7 +363,7 @@ class ListAntiVirusResultRequest:
     def file_path(self, file_path):
         r"""Sets the file_path of this ListAntiVirusResultRequest.
 
-        文件路径
+        **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
 
         :param file_path: The file_path of this ListAntiVirusResultRequest.
         :type file_path: str
@@ -374,7 +374,7 @@ class ListAntiVirusResultRequest:
     def file_hash(self):
         r"""Gets the file_hash of this ListAntiVirusResultRequest.
 
-        文件hash，当前为sha256
+        **参数解释**： 文件hash，当前为sha256 **约束限制**： 需为合法的SHA256哈希值 **取值范围**： 字符长度64位 **默认取值**： 不涉及 
 
         :return: The file_hash of this ListAntiVirusResultRequest.
         :rtype: str
@@ -385,7 +385,7 @@ class ListAntiVirusResultRequest:
     def file_hash(self, file_hash):
         r"""Sets the file_hash of this ListAntiVirusResultRequest.
 
-        文件hash，当前为sha256
+        **参数解释**： 文件hash，当前为sha256 **约束限制**： 需为合法的SHA256哈希值 **取值范围**： 字符长度64位 **默认取值**： 不涉及 
 
         :param file_hash: The file_hash of this ListAntiVirusResultRequest.
         :type file_hash: str
@@ -396,7 +396,7 @@ class ListAntiVirusResultRequest:
     def task_name(self):
         r"""Gets the task_name of this ListAntiVirusResultRequest.
 
-        任务名称
+        **参数解释**: 任务名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The task_name of this ListAntiVirusResultRequest.
         :rtype: str
@@ -407,7 +407,7 @@ class ListAntiVirusResultRequest:
     def task_name(self, task_name):
         r"""Sets the task_name of this ListAntiVirusResultRequest.
 
-        任务名称
+        **参数解释**: 任务名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param task_name: The task_name of this ListAntiVirusResultRequest.
         :type task_name: str
@@ -418,7 +418,7 @@ class ListAntiVirusResultRequest:
     def manual_isolate(self):
         r"""Gets the manual_isolate of this ListAntiVirusResultRequest.
 
-        是否使用手动隔离按钮
+        **参数解释**: 是否使用手动隔离按钮 **约束限制**: 不涉及 **取值范围**: true（已使用手动隔离）、false（未使用手动隔离） **默认取值**: 不涉及 
 
         :return: The manual_isolate of this ListAntiVirusResultRequest.
         :rtype: bool
@@ -429,7 +429,7 @@ class ListAntiVirusResultRequest:
     def manual_isolate(self, manual_isolate):
         r"""Sets the manual_isolate of this ListAntiVirusResultRequest.
 
-        是否使用手动隔离按钮
+        **参数解释**: 是否使用手动隔离按钮 **约束限制**: 不涉及 **取值范围**: true（已使用手动隔离）、false（未使用手动隔离） **默认取值**: 不涉及 
 
         :param manual_isolate: The manual_isolate of this ListAntiVirusResultRequest.
         :type manual_isolate: bool

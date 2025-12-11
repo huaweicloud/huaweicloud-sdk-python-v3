@@ -31,11 +31,11 @@ class ShowApplyHistoryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param config_id: 参数组id
+        :param config_id: **参数解释：** 参数组id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type config_id: str
-        :param offset: 索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。  取值必须为数字，不能为负数。
+        :param offset: **参数解释：** 索引位置，偏移量。 **约束限制：** 不涉及。 **取值范围：** 取值必须为数字，不能为负数。 **默认取值：** 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。
         :type offset: int
-        :param limit: 查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
+        :param limit: **参数解释：** 查询个数上限值。 **约束限制：** 不涉及。 **取值范围：** 取值范围: 1~100。 **默认取值：** 不传该参数时，默认查询前100条信息。
         :type limit: int
         """
         
@@ -56,7 +56,7 @@ class ShowApplyHistoryRequest:
     def config_id(self):
         r"""Gets the config_id of this ShowApplyHistoryRequest.
 
-        参数组id
+        **参数解释：** 参数组id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The config_id of this ShowApplyHistoryRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowApplyHistoryRequest:
     def config_id(self, config_id):
         r"""Sets the config_id of this ShowApplyHistoryRequest.
 
-        参数组id
+        **参数解释：** 参数组id。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param config_id: The config_id of this ShowApplyHistoryRequest.
         :type config_id: str
@@ -78,7 +78,7 @@ class ShowApplyHistoryRequest:
     def offset(self):
         r"""Gets the offset of this ShowApplyHistoryRequest.
 
-        索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。  取值必须为数字，不能为负数。
+        **参数解释：** 索引位置，偏移量。 **约束限制：** 不涉及。 **取值范围：** 取值必须为数字，不能为负数。 **默认取值：** 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。
 
         :return: The offset of this ShowApplyHistoryRequest.
         :rtype: int
@@ -89,7 +89,7 @@ class ShowApplyHistoryRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowApplyHistoryRequest.
 
-        索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。  取值必须为数字，不能为负数。
+        **参数解释：** 索引位置，偏移量。 **约束限制：** 不涉及。 **取值范围：** 取值必须为数字，不能为负数。 **默认取值：** 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。
 
         :param offset: The offset of this ShowApplyHistoryRequest.
         :type offset: int
@@ -100,7 +100,7 @@ class ShowApplyHistoryRequest:
     def limit(self):
         r"""Gets the limit of this ShowApplyHistoryRequest.
 
-        查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
+        **参数解释：** 查询个数上限值。 **约束限制：** 不涉及。 **取值范围：** 取值范围: 1~100。 **默认取值：** 不传该参数时，默认查询前100条信息。
 
         :return: The limit of this ShowApplyHistoryRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class ShowApplyHistoryRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowApplyHistoryRequest.
 
-        查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
+        **参数解释：** 查询个数上限值。 **约束限制：** 不涉及。 **取值范围：** 取值范围: 1~100。 **默认取值：** 不传该参数时，默认查询前100条信息。
 
         :param limit: The limit of this ShowApplyHistoryRequest.
         :type limit: int

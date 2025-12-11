@@ -55,13 +55,13 @@ class UserResponseInfo:
 
         :param agent_id: **参数解释**: Agent ID **取值范围**: 字符长度1-64位 
         :type agent_id: str
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
         :param host_ip: **参数解释**: 服务器IP **取值范围**: 字符长度1-128位 
         :type host_ip: str
-        :param user_name: 用户名
+        :param user_name: **参数解释**: 用户名 **取值范围**: 字符长度1-64位 
         :type user_name: str
         :param login_permission: **参数解释**: 是否允许登录 **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
         :type login_permission: bool
@@ -156,7 +156,7 @@ class UserResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this UserResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this UserResponseInfo.
         :rtype: str
@@ -167,7 +167,7 @@ class UserResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this UserResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this UserResponseInfo.
         :type host_id: str
@@ -222,7 +222,7 @@ class UserResponseInfo:
     def user_name(self):
         r"""Gets the user_name of this UserResponseInfo.
 
-        用户名
+        **参数解释**: 用户名 **取值范围**: 字符长度1-64位 
 
         :return: The user_name of this UserResponseInfo.
         :rtype: str
@@ -233,7 +233,7 @@ class UserResponseInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this UserResponseInfo.
 
-        用户名
+        **参数解释**: 用户名 **取值范围**: 字符长度1-64位 
 
         :param user_name: The user_name of this UserResponseInfo.
         :type user_name: str

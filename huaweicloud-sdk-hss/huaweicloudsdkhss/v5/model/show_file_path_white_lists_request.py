@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowPorcessTopRequest:
+class ShowFilePathWhiteListsRequest:
 
     """
     Attributes:
@@ -15,51 +15,109 @@ class ShowPorcessTopRequest:
     sensitive_list = []
 
     openapi_types = {
-        'enterprise_project_id': 'str'
+        'region': 'str',
+        'enterprise_project_id': 'str',
+        'file_path': 'str'
     }
 
     attribute_map = {
-        'enterprise_project_id': 'enterprise_project_id'
+        'region': 'region',
+        'enterprise_project_id': 'enterprise_project_id',
+        'file_path': 'file_path'
     }
 
-    def __init__(self, enterprise_project_id=None):
-        r"""ShowPorcessTopRequest
+    def __init__(self, region=None, enterprise_project_id=None, file_path=None):
+        r"""ShowFilePathWhiteListsRequest
 
         The model defined in huaweicloud sdk
 
+        :param region: **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+        :type region: str
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
+        :param file_path: **参数解释**: \&quot;文件路径\&quot; **约束限制**: 不涉及 **取值范围**: 字符长度0-65535位 **默认取值**: 不涉及 
+        :type file_path: str
         """
         
         
 
+        self._region = None
         self._enterprise_project_id = None
+        self._file_path = None
         self.discriminator = None
 
+        if region is not None:
+            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if file_path is not None:
+            self.file_path = file_path
+
+    @property
+    def region(self):
+        r"""Gets the region of this ShowFilePathWhiteListsRequest.
+
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+
+        :return: The region of this ShowFilePathWhiteListsRequest.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        r"""Sets the region of this ShowFilePathWhiteListsRequest.
+
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
+
+        :param region: The region of this ShowFilePathWhiteListsRequest.
+        :type region: str
+        """
+        self._region = region
 
     @property
     def enterprise_project_id(self):
-        r"""Gets the enterprise_project_id of this ShowPorcessTopRequest.
+        r"""Gets the enterprise_project_id of this ShowFilePathWhiteListsRequest.
 
         **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
-        :return: The enterprise_project_id of this ShowPorcessTopRequest.
+        :return: The enterprise_project_id of this ShowFilePathWhiteListsRequest.
         :rtype: str
         """
         return self._enterprise_project_id
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        r"""Sets the enterprise_project_id of this ShowPorcessTopRequest.
+        r"""Sets the enterprise_project_id of this ShowFilePathWhiteListsRequest.
 
         **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
-        :param enterprise_project_id: The enterprise_project_id of this ShowPorcessTopRequest.
+        :param enterprise_project_id: The enterprise_project_id of this ShowFilePathWhiteListsRequest.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def file_path(self):
+        r"""Gets the file_path of this ShowFilePathWhiteListsRequest.
+
+        **参数解释**: \"文件路径\" **约束限制**: 不涉及 **取值范围**: 字符长度0-65535位 **默认取值**: 不涉及 
+
+        :return: The file_path of this ShowFilePathWhiteListsRequest.
+        :rtype: str
+        """
+        return self._file_path
+
+    @file_path.setter
+    def file_path(self, file_path):
+        r"""Sets the file_path of this ShowFilePathWhiteListsRequest.
+
+        **参数解释**: \"文件路径\" **约束限制**: 不涉及 **取值范围**: 字符长度0-65535位 **默认取值**: 不涉及 
+
+        :param file_path: The file_path of this ShowFilePathWhiteListsRequest.
+        :type file_path: str
+        """
+        self._file_path = file_path
 
     def to_dict(self):
         result = {}
@@ -98,7 +156,7 @@ class ShowPorcessTopRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowPorcessTopRequest):
+        if not isinstance(other, ShowFilePathWhiteListsRequest):
             return False
 
         return self.__dict__ == other.__dict__

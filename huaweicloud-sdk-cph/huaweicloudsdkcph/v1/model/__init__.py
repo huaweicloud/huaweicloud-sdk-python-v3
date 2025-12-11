@@ -110,7 +110,6 @@ from huaweicloudsdkcph.v1.model.list_resource_tags_response import ListResourceT
 from huaweicloudsdkcph.v1.model.list_share_files_request import ListShareFilesRequest
 from huaweicloudsdkcph.v1.model.list_share_files_response import ListShareFilesResponse
 from huaweicloudsdkcph.v1.model.match import Match
-from huaweicloudsdkcph.v1.model.model_property import ModelProperty
 from huaweicloudsdkcph.v1.model.nic import Nic
 from huaweicloudsdkcph.v1.model.nic_for_single_server import NicForSingleServer
 from huaweicloudsdkcph.v1.model.nic_ipv6_bandwidth import NicIpv6Bandwidth
@@ -124,6 +123,7 @@ from huaweicloudsdkcph.v1.model.phone_metadata import PhoneMetadata
 from huaweicloudsdkcph.v1.model.phone_model import PhoneModel
 from huaweicloudsdkcph.v1.model.phone_property import PhoneProperty
 from huaweicloudsdkcph.v1.model.port import Port
+from huaweicloudsdkcph.v1.model.property_to_update import PropertyToUpdate
 from huaweicloudsdkcph.v1.model.push_file_request import PushFileRequest
 from huaweicloudsdkcph.v1.model.push_file_request_body import PushFileRequestBody
 from huaweicloudsdkcph.v1.model.push_file_response import PushFileResponse

@@ -15,6 +15,10 @@ from huaweicloudsdkswr.v2.model.auth_token import AuthToken
 from huaweicloudsdkswr.v2.model.build_history import BuildHistory
 from huaweicloudsdkswr.v2.model.cve_allowlist import CVEAllowlist
 from huaweicloudsdkswr.v2.model.cve_allowlist_item import CVEAllowlistItem
+from huaweicloudsdkswr.v2.model.check_agency_request import CheckAgencyRequest
+from huaweicloudsdkswr.v2.model.check_agency_response import CheckAgencyResponse
+from huaweicloudsdkswr.v2.model.create_agency_request import CreateAgencyRequest
+from huaweicloudsdkswr.v2.model.create_agency_response import CreateAgencyResponse
 from huaweicloudsdkswr.v2.model.create_authorization_token_request import CreateAuthorizationTokenRequest
 from huaweicloudsdkswr.v2.model.create_authorization_token_response import CreateAuthorizationTokenResponse
 from huaweicloudsdkswr.v2.model.create_endpoint_policy_request_body import CreateEndpointPolicyRequestBody
@@ -270,12 +274,15 @@ from huaweicloudsdkswr.v2.model.list_sub_resource_instances_request import ListS
 from huaweicloudsdkswr.v2.model.list_sub_resource_instances_response import ListSubResourceInstancesResponse
 from huaweicloudsdkswr.v2.model.list_sub_resource_tags_request import ListSubResourceTagsRequest
 from huaweicloudsdkswr.v2.model.list_sub_resource_tags_response import ListSubResourceTagsResponse
+from huaweicloudsdkswr.v2.model.list_sync_regions_request import ListSyncRegionsRequest
+from huaweicloudsdkswr.v2.model.list_sync_regions_response import ListSyncRegionsResponse
 from huaweicloudsdkswr.v2.model.list_triggers_details_request import ListTriggersDetailsRequest
 from huaweicloudsdkswr.v2.model.list_triggers_details_response import ListTriggersDetailsResponse
 from huaweicloudsdkswr.v2.model.namespace import Namespace
 from huaweicloudsdkswr.v2.model.namespace_metadata import NamespaceMetadata
 from huaweicloudsdkswr.v2.model.native_report_summary import NativeReportSummary
 from huaweicloudsdkswr.v2.model.project_tag import ProjectTag
+from huaweicloudsdkswr.v2.model.region_info import RegionInfo
 from huaweicloudsdkswr.v2.model.registry import Registry
 from huaweicloudsdkswr.v2.model.replication_policy import ReplicationPolicy
 from huaweicloudsdkswr.v2.model.replication_registry import ReplicationRegistry

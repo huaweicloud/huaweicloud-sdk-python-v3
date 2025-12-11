@@ -30,9 +30,9 @@ class ShowFilePathWhiteDetailResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param default_path: **参数解释**: \&quot;默认路径，不可编辑\&quot; **取值范围**: 最小值0，最大值20000 
+        :param default_path: **参数解释**: 默认路径，不可编辑 **取值范围**: 最小值0，最大值20000 
         :type default_path: list[str]
-        :param customized_path: **参数解释**: \&quot;自定义路径，选填，可编辑\&quot; **取值范围**: 最小值0，最大值20000 
+        :param customized_path: **参数解释**: 自定义路径，选填，可编辑 **取值范围**: 最小值0，最大值20000 
         :type customized_path: list[str]
         """
         
@@ -51,7 +51,7 @@ class ShowFilePathWhiteDetailResponse(SdkResponse):
     def default_path(self):
         r"""Gets the default_path of this ShowFilePathWhiteDetailResponse.
 
-        **参数解释**: \"默认路径，不可编辑\" **取值范围**: 最小值0，最大值20000 
+        **参数解释**: 默认路径，不可编辑 **取值范围**: 最小值0，最大值20000 
 
         :return: The default_path of this ShowFilePathWhiteDetailResponse.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class ShowFilePathWhiteDetailResponse(SdkResponse):
     def default_path(self, default_path):
         r"""Sets the default_path of this ShowFilePathWhiteDetailResponse.
 
-        **参数解释**: \"默认路径，不可编辑\" **取值范围**: 最小值0，最大值20000 
+        **参数解释**: 默认路径，不可编辑 **取值范围**: 最小值0，最大值20000 
 
         :param default_path: The default_path of this ShowFilePathWhiteDetailResponse.
         :type default_path: list[str]
@@ -73,7 +73,7 @@ class ShowFilePathWhiteDetailResponse(SdkResponse):
     def customized_path(self):
         r"""Gets the customized_path of this ShowFilePathWhiteDetailResponse.
 
-        **参数解释**: \"自定义路径，选填，可编辑\" **取值范围**: 最小值0，最大值20000 
+        **参数解释**: 自定义路径，选填，可编辑 **取值范围**: 最小值0，最大值20000 
 
         :return: The customized_path of this ShowFilePathWhiteDetailResponse.
         :rtype: list[str]
@@ -84,7 +84,7 @@ class ShowFilePathWhiteDetailResponse(SdkResponse):
     def customized_path(self, customized_path):
         r"""Sets the customized_path of this ShowFilePathWhiteDetailResponse.
 
-        **参数解释**: \"自定义路径，选填，可编辑\" **取值范围**: 最小值0，最大值20000 
+        **参数解释**: 自定义路径，选填，可编辑 **取值范围**: 最小值0，最大值20000 
 
         :param customized_path: The customized_path of this ShowFilePathWhiteDetailResponse.
         :type customized_path: list[str]

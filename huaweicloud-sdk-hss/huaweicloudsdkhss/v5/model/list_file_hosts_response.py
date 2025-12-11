@@ -30,9 +30,9 @@ class ListFileHostsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 变更云服务器数量
+        :param total_num: **参数解释**： 变更云服务器数量 **取值范围**： 最小值0，最大值2147483647，单位：台 
         :type total_num: int
-        :param data_list: 变更云服务器信息列表
+        :param data_list: **参数解释**： 变更云服务器信息列表 **取值范围**： 最小值0，最大值100000 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.FileHostResponseInfo`]
         """
         
@@ -51,7 +51,7 @@ class ListFileHostsResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListFileHostsResponse.
 
-        变更云服务器数量
+        **参数解释**： 变更云服务器数量 **取值范围**： 最小值0，最大值2147483647，单位：台 
 
         :return: The total_num of this ListFileHostsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListFileHostsResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListFileHostsResponse.
 
-        变更云服务器数量
+        **参数解释**： 变更云服务器数量 **取值范围**： 最小值0，最大值2147483647，单位：台 
 
         :param total_num: The total_num of this ListFileHostsResponse.
         :type total_num: int
@@ -73,7 +73,7 @@ class ListFileHostsResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListFileHostsResponse.
 
-        变更云服务器信息列表
+        **参数解释**： 变更云服务器信息列表 **取值范围**： 最小值0，最大值100000 
 
         :return: The data_list of this ListFileHostsResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.FileHostResponseInfo`]
@@ -84,7 +84,7 @@ class ListFileHostsResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListFileHostsResponse.
 
-        变更云服务器信息列表
+        **参数解释**： 变更云服务器信息列表 **取值范围**： 最小值0，最大值100000 
 
         :param data_list: The data_list of this ListFileHostsResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.FileHostResponseInfo`]

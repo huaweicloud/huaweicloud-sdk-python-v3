@@ -16,15 +16,17 @@ class SmartDocumentRecognizerFormulaBlock:
 
     openapi_types = {
         'formula': 'str',
-        'location': 'list[list[int]]'
+        'location': 'list[list[int]]',
+        'type': 'str'
     }
 
     attribute_map = {
         'formula': 'formula',
-        'location': 'location'
+        'location': 'location',
+        'type': 'type'
     }
 
-    def __init__(self, formula=None, location=None):
+    def __init__(self, formula=None, location=None, type=None):
         r"""SmartDocumentRecognizerFormulaBlock
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class SmartDocumentRecognizerFormulaBlock:
         :type formula: str
         :param location: 数学公式位置信息，列表形式，分别表示4个顶点的x, y坐标；坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type location: list[list[int]]
+        :param type: 公式类别，取值包含formula、embedded_formula。 formula: 独立公式 embedded_formula: 行内公式 
+        :type type: str
         """
         
         
 
         self._formula = None
         self._location = None
+        self._type = None
         self.discriminator = None
 
         if formula is not None:
             self.formula = formula
         if location is not None:
             self.location = location
+        if type is not None:
+            self.type = type
 
     @property
     def formula(self):
@@ -89,6 +96,28 @@ class SmartDocumentRecognizerFormulaBlock:
         :type location: list[list[int]]
         """
         self._location = location
+
+    @property
+    def type(self):
+        r"""Gets the type of this SmartDocumentRecognizerFormulaBlock.
+
+        公式类别，取值包含formula、embedded_formula。 formula: 独立公式 embedded_formula: 行内公式 
+
+        :return: The type of this SmartDocumentRecognizerFormulaBlock.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this SmartDocumentRecognizerFormulaBlock.
+
+        公式类别，取值包含formula、embedded_formula。 formula: 独立公式 embedded_formula: 行内公式 
+
+        :param type: The type of this SmartDocumentRecognizerFormulaBlock.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         result = {}

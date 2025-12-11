@@ -37,17 +37,17 @@ class FileHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_name: 服务器名称
+        :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_id: 服务器ID
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
-        :param change_total_num: 变更总数
+        :param change_total_num: **参数解释**： 文件变更与注册表变更总数量 **取值范围**： 最小值0，最大值2147483647 
         :type change_total_num: int
-        :param change_file_num: 变更文件
+        :param change_file_num: **参数解释**： 文件变更总数量 **取值范围**： 最小值0，最大值2147483647 
         :type change_file_num: int
-        :param change_registry_num: 变更注册表
+        :param change_registry_num: **参数解释**： 注册表变更总数量 **取值范围**： 最小值0，最大值2147483647 
         :type change_registry_num: int
-        :param latest_time: 最后变更时间
+        :param latest_time: **参数解释**： 最后一次文件/注册表变更时间 **取值范围**： 非负长整数，时间格式：13位毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
         :type latest_time: int
         """
         
@@ -78,7 +78,7 @@ class FileHostResponseInfo:
     def host_name(self):
         r"""Gets the host_name of this FileHostResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :return: The host_name of this FileHostResponseInfo.
         :rtype: str
@@ -89,7 +89,7 @@ class FileHostResponseInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this FileHostResponseInfo.
 
-        服务器名称
+        **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
 
         :param host_name: The host_name of this FileHostResponseInfo.
         :type host_name: str
@@ -100,7 +100,7 @@ class FileHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this FileHostResponseInfo.
 
-        服务器ID
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this FileHostResponseInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class FileHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this FileHostResponseInfo.
 
-        服务器ID
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this FileHostResponseInfo.
         :type host_id: str
@@ -122,7 +122,7 @@ class FileHostResponseInfo:
     def change_total_num(self):
         r"""Gets the change_total_num of this FileHostResponseInfo.
 
-        变更总数
+        **参数解释**： 文件变更与注册表变更总数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The change_total_num of this FileHostResponseInfo.
         :rtype: int
@@ -133,7 +133,7 @@ class FileHostResponseInfo:
     def change_total_num(self, change_total_num):
         r"""Sets the change_total_num of this FileHostResponseInfo.
 
-        变更总数
+        **参数解释**： 文件变更与注册表变更总数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param change_total_num: The change_total_num of this FileHostResponseInfo.
         :type change_total_num: int
@@ -144,7 +144,7 @@ class FileHostResponseInfo:
     def change_file_num(self):
         r"""Gets the change_file_num of this FileHostResponseInfo.
 
-        变更文件
+        **参数解释**： 文件变更总数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The change_file_num of this FileHostResponseInfo.
         :rtype: int
@@ -155,7 +155,7 @@ class FileHostResponseInfo:
     def change_file_num(self, change_file_num):
         r"""Sets the change_file_num of this FileHostResponseInfo.
 
-        变更文件
+        **参数解释**： 文件变更总数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param change_file_num: The change_file_num of this FileHostResponseInfo.
         :type change_file_num: int
@@ -166,7 +166,7 @@ class FileHostResponseInfo:
     def change_registry_num(self):
         r"""Gets the change_registry_num of this FileHostResponseInfo.
 
-        变更注册表
+        **参数解释**： 注册表变更总数量 **取值范围**： 最小值0，最大值2147483647 
 
         :return: The change_registry_num of this FileHostResponseInfo.
         :rtype: int
@@ -177,7 +177,7 @@ class FileHostResponseInfo:
     def change_registry_num(self, change_registry_num):
         r"""Sets the change_registry_num of this FileHostResponseInfo.
 
-        变更注册表
+        **参数解释**： 注册表变更总数量 **取值范围**： 最小值0，最大值2147483647 
 
         :param change_registry_num: The change_registry_num of this FileHostResponseInfo.
         :type change_registry_num: int
@@ -188,7 +188,7 @@ class FileHostResponseInfo:
     def latest_time(self):
         r"""Gets the latest_time of this FileHostResponseInfo.
 
-        最后变更时间
+        **参数解释**： 最后一次文件/注册表变更时间 **取值范围**： 非负长整数，时间格式：13位毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :return: The latest_time of this FileHostResponseInfo.
         :rtype: int
@@ -199,7 +199,7 @@ class FileHostResponseInfo:
     def latest_time(self, latest_time):
         r"""Sets the latest_time of this FileHostResponseInfo.
 
-        最后变更时间
+        **参数解释**： 最后一次文件/注册表变更时间 **取值范围**： 非负长整数，时间格式：13位毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :param latest_time: The latest_time of this FileHostResponseInfo.
         :type latest_time: int

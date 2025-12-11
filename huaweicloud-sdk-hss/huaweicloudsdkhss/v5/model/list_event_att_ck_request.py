@@ -87,7 +87,7 @@ class ListEventAttCkRequest:
         :type severity_list: list[str]
         :param attack_tag: **参数解释**: 攻击标识 **约束限制**: 不涉及 **取值范围**: - attack_success：攻击成功 - attack_attempt：攻击尝试 - attack_blocked：攻击被阻断 - abnormal_behavior：异常行为 - collapsible_host：主机失陷 - system_vulnerability：系统脆弱性  **默认取值**: 不涉及 
         :type attack_tag: str
-        :param asset_value: **参数解释**: 资产重要性 **约束限制**: 不涉及 **取值范围**: - important：重要资产 - common：般资产 - test：测试资产  **默认取值**: 不涉及 
+        :param asset_value: **参数解释**: 资产重要性 **约束限制**: 不涉及 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**: 不涉及 
         :type asset_value: str
         :param tag_list: 事件标签列表，例如:[\&quot;热点事件\&quot;]
         :type tag_list: list[str]
@@ -461,7 +461,7 @@ class ListEventAttCkRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ListEventAttCkRequest.
 
-        **参数解释**: 资产重要性 **约束限制**: 不涉及 **取值范围**: - important：重要资产 - common：般资产 - test：测试资产  **默认取值**: 不涉及 
+        **参数解释**: 资产重要性 **约束限制**: 不涉及 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**: 不涉及 
 
         :return: The asset_value of this ListEventAttCkRequest.
         :rtype: str
@@ -472,7 +472,7 @@ class ListEventAttCkRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ListEventAttCkRequest.
 
-        **参数解释**: 资产重要性 **约束限制**: 不涉及 **取值范围**: - important：重要资产 - common：般资产 - test：测试资产  **默认取值**: 不涉及 
+        **参数解释**: 资产重要性 **约束限制**: 不涉及 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**: 不涉及 
 
         :param asset_value: The asset_value of this ListEventAttCkRequest.
         :type asset_value: str

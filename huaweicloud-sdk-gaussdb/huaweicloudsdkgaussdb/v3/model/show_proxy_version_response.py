@@ -18,16 +18,18 @@ class ShowProxyVersionResponse(SdkResponse):
     openapi_types = {
         'current_version': 'str',
         'latest_version': 'str',
-        'can_upgrade': 'bool'
+        'can_upgrade': 'bool',
+        'risk': 'ProxyEngineRisk'
     }
 
     attribute_map = {
         'current_version': 'current_version',
         'latest_version': 'latest_version',
-        'can_upgrade': 'can_upgrade'
+        'can_upgrade': 'can_upgrade',
+        'risk': 'risk'
     }
 
-    def __init__(self, current_version=None, latest_version=None, can_upgrade=None):
+    def __init__(self, current_version=None, latest_version=None, can_upgrade=None, risk=None):
         r"""ShowProxyVersionResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class ShowProxyVersionResponse(SdkResponse):
         :type latest_version: str
         :param can_upgrade: 是否能升级
         :type can_upgrade: bool
+        :param risk: 
+        :type risk: :class:`huaweicloudsdkgaussdb.v3.ProxyEngineRisk`
         """
         
         super().__init__()
@@ -45,6 +49,7 @@ class ShowProxyVersionResponse(SdkResponse):
         self._current_version = None
         self._latest_version = None
         self._can_upgrade = None
+        self._risk = None
         self.discriminator = None
 
         if current_version is not None:
@@ -53,6 +58,8 @@ class ShowProxyVersionResponse(SdkResponse):
             self.latest_version = latest_version
         if can_upgrade is not None:
             self.can_upgrade = can_upgrade
+        if risk is not None:
+            self.risk = risk
 
     @property
     def current_version(self):
@@ -119,6 +126,24 @@ class ShowProxyVersionResponse(SdkResponse):
         :type can_upgrade: bool
         """
         self._can_upgrade = can_upgrade
+
+    @property
+    def risk(self):
+        r"""Gets the risk of this ShowProxyVersionResponse.
+
+        :return: The risk of this ShowProxyVersionResponse.
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ProxyEngineRisk`
+        """
+        return self._risk
+
+    @risk.setter
+    def risk(self, risk):
+        r"""Sets the risk of this ShowProxyVersionResponse.
+
+        :param risk: The risk of this ShowProxyVersionResponse.
+        :type risk: :class:`huaweicloudsdkgaussdb.v3.ProxyEngineRisk`
+        """
+        self._risk = risk
 
     def to_dict(self):
         import warnings

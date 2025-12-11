@@ -55,7 +55,7 @@ class ProductInfoBeanNew:
         :type resource_name: str
         :param resource_spec_code: 资源规格
         :type resource_spec_code: str
-        :param resource_type: 资源类型
+        :param resource_type: 资源类型: - hws.resource.type.dbss：数据库审计
         :type resource_type: str
         """
         
@@ -246,7 +246,7 @@ class ProductInfoBeanNew:
     def resource_type(self):
         r"""Gets the resource_type of this ProductInfoBeanNew.
 
-        资源类型
+        资源类型: - hws.resource.type.dbss：数据库审计
 
         :return: The resource_type of this ProductInfoBeanNew.
         :rtype: str
@@ -257,7 +257,7 @@ class ProductInfoBeanNew:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ProductInfoBeanNew.
 
-        资源类型
+        资源类型: - hws.resource.type.dbss：数据库审计
 
         :param resource_type: The resource_type of this ProductInfoBeanNew.
         :type resource_type: str

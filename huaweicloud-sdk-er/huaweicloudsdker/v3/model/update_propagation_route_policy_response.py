@@ -4,7 +4,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowPorcessTopResponse(SdkResponse):
+class UpdatePropagationRoutePolicyResponse(SdkResponse):
 
     """
     Attributes:
@@ -16,84 +16,80 @@ class ShowPorcessTopResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total_num': 'int',
-        'data_list': 'list[CommonTopResponseInfo]'
+        'propagation': 'Propagation',
+        'request_id': 'str'
     }
 
     attribute_map = {
-        'total_num': 'total_num',
-        'data_list': 'data_list'
+        'propagation': 'propagation',
+        'request_id': 'request_id'
     }
 
-    def __init__(self, total_num=None, data_list=None):
-        r"""ShowPorcessTopResponse
+    def __init__(self, propagation=None, request_id=None):
+        r"""UpdatePropagationRoutePolicyResponse
 
         The model defined in huaweicloud sdk
 
-        :param total_num: **参数解释**: TOP5总数 **取值范围**: 取值0-5位 
-        :type total_num: int
-        :param data_list: **参数解释**: TOP5列表 
-        :type data_list: list[:class:`huaweicloudsdkhss.v5.CommonTopResponseInfo`]
+        :param propagation: 
+        :type propagation: :class:`huaweicloudsdker.v3.Propagation`
+        :param request_id: 请求ID
+        :type request_id: str
         """
         
         super().__init__()
 
-        self._total_num = None
-        self._data_list = None
+        self._propagation = None
+        self._request_id = None
         self.discriminator = None
 
-        if total_num is not None:
-            self.total_num = total_num
-        if data_list is not None:
-            self.data_list = data_list
+        if propagation is not None:
+            self.propagation = propagation
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
-    def total_num(self):
-        r"""Gets the total_num of this ShowPorcessTopResponse.
+    def propagation(self):
+        r"""Gets the propagation of this UpdatePropagationRoutePolicyResponse.
 
-        **参数解释**: TOP5总数 **取值范围**: 取值0-5位 
-
-        :return: The total_num of this ShowPorcessTopResponse.
-        :rtype: int
+        :return: The propagation of this UpdatePropagationRoutePolicyResponse.
+        :rtype: :class:`huaweicloudsdker.v3.Propagation`
         """
-        return self._total_num
+        return self._propagation
 
-    @total_num.setter
-    def total_num(self, total_num):
-        r"""Sets the total_num of this ShowPorcessTopResponse.
+    @propagation.setter
+    def propagation(self, propagation):
+        r"""Sets the propagation of this UpdatePropagationRoutePolicyResponse.
 
-        **参数解释**: TOP5总数 **取值范围**: 取值0-5位 
-
-        :param total_num: The total_num of this ShowPorcessTopResponse.
-        :type total_num: int
+        :param propagation: The propagation of this UpdatePropagationRoutePolicyResponse.
+        :type propagation: :class:`huaweicloudsdker.v3.Propagation`
         """
-        self._total_num = total_num
+        self._propagation = propagation
 
     @property
-    def data_list(self):
-        r"""Gets the data_list of this ShowPorcessTopResponse.
+    def request_id(self):
+        r"""Gets the request_id of this UpdatePropagationRoutePolicyResponse.
 
-        **参数解释**: TOP5列表 
+        请求ID
 
-        :return: The data_list of this ShowPorcessTopResponse.
-        :rtype: list[:class:`huaweicloudsdkhss.v5.CommonTopResponseInfo`]
+        :return: The request_id of this UpdatePropagationRoutePolicyResponse.
+        :rtype: str
         """
-        return self._data_list
+        return self._request_id
 
-    @data_list.setter
-    def data_list(self, data_list):
-        r"""Sets the data_list of this ShowPorcessTopResponse.
+    @request_id.setter
+    def request_id(self, request_id):
+        r"""Sets the request_id of this UpdatePropagationRoutePolicyResponse.
 
-        **参数解释**: TOP5列表 
+        请求ID
 
-        :param data_list: The data_list of this ShowPorcessTopResponse.
-        :type data_list: list[:class:`huaweicloudsdkhss.v5.CommonTopResponseInfo`]
+        :param request_id: The request_id of this UpdatePropagationRoutePolicyResponse.
+        :type request_id: str
         """
-        self._data_list = data_list
+        self._request_id = request_id
 
     def to_dict(self):
         import warnings
-        warnings.warn("ShowPorcessTopResponse.to_dict() is deprecated and no longer maintained, "
+        warnings.warn("UpdatePropagationRoutePolicyResponse.to_dict() is deprecated and no longer maintained, "
                       "use to_json_object() to get the response content.", DeprecationWarning)
         result = {}
 
@@ -131,7 +127,7 @@ class ShowPorcessTopResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowPorcessTopResponse):
+        if not isinstance(other, UpdatePropagationRoutePolicyResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -47,7 +47,7 @@ class ListRegistryRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param registry_name: **参数解释**: 仓库名称 **取值范围**: 字符长度1-128位 
+        :param registry_name: **参数解释**: 仓库名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type registry_name: str
         :param registry_id: **参数解释**: 仓库ID **取值范围**: 字符长度1-64位 
         :type registry_id: str
@@ -158,7 +158,7 @@ class ListRegistryRequest:
     def registry_name(self):
         r"""Gets the registry_name of this ListRegistryRequest.
 
-        **参数解释**: 仓库名称 **取值范围**: 字符长度1-128位 
+        **参数解释**: 仓库名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The registry_name of this ListRegistryRequest.
         :rtype: str
@@ -169,7 +169,7 @@ class ListRegistryRequest:
     def registry_name(self, registry_name):
         r"""Sets the registry_name of this ListRegistryRequest.
 
-        **参数解释**: 仓库名称 **取值范围**: 字符长度1-128位 
+        **参数解释**: 仓库名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param registry_name: The registry_name of this ListRegistryRequest.
         :type registry_name: str

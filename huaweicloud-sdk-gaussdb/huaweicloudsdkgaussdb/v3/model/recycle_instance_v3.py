@@ -31,7 +31,8 @@ class RecycleInstanceV3:
         'enterprise_project_name': 'str',
         'backup_level': 'str',
         'recycle_backup_id': 'str',
-        'recycle_status': 'str'
+        'recycle_status': 'str',
+        'recycle_bakcups': 'list[RecycleBackupV3]'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class RecycleInstanceV3:
         'enterprise_project_name': 'enterprise_project_name',
         'backup_level': 'backup_level',
         'recycle_backup_id': 'recycle_backup_id',
-        'recycle_status': 'recycle_status'
+        'recycle_status': 'recycle_status',
+        'recycle_bakcups': 'recycle_bakcups'
     }
 
-    def __init__(self, id=None, name=None, ha_mode=None, engine_name=None, engine_version=None, pay_model=None, create_at=None, deleted_at=None, volume_type=None, volume_size=None, data_vip=None, data_vip_ipv6=None, enterprise_project_id=None, enterprise_project_name=None, backup_level=None, recycle_backup_id=None, recycle_status=None):
+    def __init__(self, id=None, name=None, ha_mode=None, engine_name=None, engine_version=None, pay_model=None, create_at=None, deleted_at=None, volume_type=None, volume_size=None, data_vip=None, data_vip_ipv6=None, enterprise_project_id=None, enterprise_project_name=None, backup_level=None, recycle_backup_id=None, recycle_status=None, recycle_bakcups=None):
         r"""RecycleInstanceV3
 
         The model defined in huaweicloud sdk
@@ -93,6 +95,8 @@ class RecycleInstanceV3:
         :type recycle_backup_id: str
         :param recycle_status: 回收状态。
         :type recycle_status: str
+        :param recycle_bakcups: **参数解释**：  实例所有的回收站备份列表。
+        :type recycle_bakcups: list[:class:`huaweicloudsdkgaussdb.v3.RecycleBackupV3`]
         """
         
         
@@ -114,6 +118,7 @@ class RecycleInstanceV3:
         self._backup_level = None
         self._recycle_backup_id = None
         self._recycle_status = None
+        self._recycle_bakcups = None
         self.discriminator = None
 
         if id is not None:
@@ -150,6 +155,8 @@ class RecycleInstanceV3:
             self.recycle_backup_id = recycle_backup_id
         if recycle_status is not None:
             self.recycle_status = recycle_status
+        if recycle_bakcups is not None:
+            self.recycle_bakcups = recycle_bakcups
 
     @property
     def id(self):
@@ -524,6 +531,28 @@ class RecycleInstanceV3:
         :type recycle_status: str
         """
         self._recycle_status = recycle_status
+
+    @property
+    def recycle_bakcups(self):
+        r"""Gets the recycle_bakcups of this RecycleInstanceV3.
+
+        **参数解释**：  实例所有的回收站备份列表。
+
+        :return: The recycle_bakcups of this RecycleInstanceV3.
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.RecycleBackupV3`]
+        """
+        return self._recycle_bakcups
+
+    @recycle_bakcups.setter
+    def recycle_bakcups(self, recycle_bakcups):
+        r"""Sets the recycle_bakcups of this RecycleInstanceV3.
+
+        **参数解释**：  实例所有的回收站备份列表。
+
+        :param recycle_bakcups: The recycle_bakcups of this RecycleInstanceV3.
+        :type recycle_bakcups: list[:class:`huaweicloudsdkgaussdb.v3.RecycleBackupV3`]
+        """
+        self._recycle_bakcups = recycle_bakcups
 
     def to_dict(self):
         result = {}

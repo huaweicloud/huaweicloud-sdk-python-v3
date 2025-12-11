@@ -16,35 +16,64 @@ class ShowApplyHistoryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'total_count': 'int',
         'histories': 'list[ApplyHistoryRsp]'
     }
 
     attribute_map = {
+        'total_count': 'total_count',
         'histories': 'histories'
     }
 
-    def __init__(self, histories=None):
+    def __init__(self, total_count=None, histories=None):
         r"""ShowApplyHistoryResponse
 
         The model defined in huaweicloud sdk
 
-        :param histories: 参数组模板应用历史列表
+        :param total_count: **参数解释：** 总记录数。 **取值范围：** 不涉及。
+        :type total_count: int
+        :param histories: **参数解释：** 参数组模板应用历史列表。 **取值范围：** 不涉及。
         :type histories: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ApplyHistoryRsp`]
         """
         
         super().__init__()
 
+        self._total_count = None
         self._histories = None
         self.discriminator = None
 
+        if total_count is not None:
+            self.total_count = total_count
         if histories is not None:
             self.histories = histories
+
+    @property
+    def total_count(self):
+        r"""Gets the total_count of this ShowApplyHistoryResponse.
+
+        **参数解释：** 总记录数。 **取值范围：** 不涉及。
+
+        :return: The total_count of this ShowApplyHistoryResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ShowApplyHistoryResponse.
+
+        **参数解释：** 总记录数。 **取值范围：** 不涉及。
+
+        :param total_count: The total_count of this ShowApplyHistoryResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     @property
     def histories(self):
         r"""Gets the histories of this ShowApplyHistoryResponse.
 
-        参数组模板应用历史列表
+        **参数解释：** 参数组模板应用历史列表。 **取值范围：** 不涉及。
 
         :return: The histories of this ShowApplyHistoryResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ApplyHistoryRsp`]
@@ -55,7 +84,7 @@ class ShowApplyHistoryResponse(SdkResponse):
     def histories(self, histories):
         r"""Sets the histories of this ShowApplyHistoryResponse.
 
-        参数组模板应用历史列表
+        **参数解释：** 参数组模板应用历史列表。 **取值范围：** 不涉及。
 
         :param histories: The histories of this ShowApplyHistoryResponse.
         :type histories: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ApplyHistoryRsp`]

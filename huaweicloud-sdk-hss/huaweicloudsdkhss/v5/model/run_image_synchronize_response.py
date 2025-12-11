@@ -30,9 +30,9 @@ class RunImageSynchronizeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param error_code: 错误编码
+        :param error_code: **参数解释**: 错误编码 **取值范围**: 0（成功）、非0（失败） 
         :type error_code: int
-        :param error_description: 错误描述
+        :param error_description: **参数解释**: 错误描述 **取值范围**: 字符长度0-512位 
         :type error_description: str
         """
         
@@ -51,7 +51,7 @@ class RunImageSynchronizeResponse(SdkResponse):
     def error_code(self):
         r"""Gets the error_code of this RunImageSynchronizeResponse.
 
-        错误编码
+        **参数解释**: 错误编码 **取值范围**: 0（成功）、非0（失败） 
 
         :return: The error_code of this RunImageSynchronizeResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class RunImageSynchronizeResponse(SdkResponse):
     def error_code(self, error_code):
         r"""Sets the error_code of this RunImageSynchronizeResponse.
 
-        错误编码
+        **参数解释**: 错误编码 **取值范围**: 0（成功）、非0（失败） 
 
         :param error_code: The error_code of this RunImageSynchronizeResponse.
         :type error_code: int
@@ -73,7 +73,7 @@ class RunImageSynchronizeResponse(SdkResponse):
     def error_description(self):
         r"""Gets the error_description of this RunImageSynchronizeResponse.
 
-        错误描述
+        **参数解释**: 错误描述 **取值范围**: 字符长度0-512位 
 
         :return: The error_description of this RunImageSynchronizeResponse.
         :rtype: str
@@ -84,7 +84,7 @@ class RunImageSynchronizeResponse(SdkResponse):
     def error_description(self, error_description):
         r"""Sets the error_description of this RunImageSynchronizeResponse.
 
-        错误描述
+        **参数解释**: 错误描述 **取值范围**: 字符长度0-512位 
 
         :param error_description: The error_description of this RunImageSynchronizeResponse.
         :type error_description: str

@@ -59,11 +59,11 @@ class CreateAntiVirusPolicyRequestBody:
 
         :param policy_name: 策略名称
         :type policy_name: str
-        :param start_type: 启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        :param start_type: **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
         :type start_type: str
         :param scan_period: 启动类型，包含如下:   - day ：每天   - week : 每周   - month : 每月
         :type scan_period: str
-        :param scan_type: 任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        :param scan_type: **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
         :type scan_type: str
         :param scan_period_date: 扫描周期日期（1-28；扫描周期为week时，1-7代表周日至周六；扫描周期为month时，1-28代表每月1日到28日）
         :type scan_period_date: int
@@ -81,11 +81,11 @@ class CreateAntiVirusPolicyRequestBody:
         :type scan_dir: str
         :param ignore_dir: 排除目录，多个用;分隔
         :type ignore_dir: str
-        :param action: 处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        :param action: **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
         :type action: str
         :param whether_paid_task: 此次扫描任务是否付费
         :type whether_paid_task: bool
-        :param task_id: 任务ID
+        :param task_id: **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
         :type task_id: str
         :param host_ids: 策略管理主机列表
         :type host_ids: list[str]
@@ -164,7 +164,7 @@ class CreateAntiVirusPolicyRequestBody:
     def start_type(self):
         r"""Gets the start_type of this CreateAntiVirusPolicyRequestBody.
 
-        启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
 
         :return: The start_type of this CreateAntiVirusPolicyRequestBody.
         :rtype: str
@@ -175,7 +175,7 @@ class CreateAntiVirusPolicyRequestBody:
     def start_type(self, start_type):
         r"""Sets the start_type of this CreateAntiVirusPolicyRequestBody.
 
-        启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
 
         :param start_type: The start_type of this CreateAntiVirusPolicyRequestBody.
         :type start_type: str
@@ -208,7 +208,7 @@ class CreateAntiVirusPolicyRequestBody:
     def scan_type(self):
         r"""Gets the scan_type of this CreateAntiVirusPolicyRequestBody.
 
-        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
 
         :return: The scan_type of this CreateAntiVirusPolicyRequestBody.
         :rtype: str
@@ -219,7 +219,7 @@ class CreateAntiVirusPolicyRequestBody:
     def scan_type(self, scan_type):
         r"""Sets the scan_type of this CreateAntiVirusPolicyRequestBody.
 
-        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
 
         :param scan_type: The scan_type of this CreateAntiVirusPolicyRequestBody.
         :type scan_type: str
@@ -406,7 +406,7 @@ class CreateAntiVirusPolicyRequestBody:
     def action(self):
         r"""Gets the action of this CreateAntiVirusPolicyRequestBody.
 
-        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
 
         :return: The action of this CreateAntiVirusPolicyRequestBody.
         :rtype: str
@@ -417,7 +417,7 @@ class CreateAntiVirusPolicyRequestBody:
     def action(self, action):
         r"""Sets the action of this CreateAntiVirusPolicyRequestBody.
 
-        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
 
         :param action: The action of this CreateAntiVirusPolicyRequestBody.
         :type action: str
@@ -450,7 +450,7 @@ class CreateAntiVirusPolicyRequestBody:
     def task_id(self):
         r"""Gets the task_id of this CreateAntiVirusPolicyRequestBody.
 
-        任务ID
+        **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
 
         :return: The task_id of this CreateAntiVirusPolicyRequestBody.
         :rtype: str
@@ -461,7 +461,7 @@ class CreateAntiVirusPolicyRequestBody:
     def task_id(self, task_id):
         r"""Sets the task_id of this CreateAntiVirusPolicyRequestBody.
 
-        任务ID
+        **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
 
         :param task_id: The task_id of this CreateAntiVirusPolicyRequestBody.
         :type task_id: str

@@ -49,7 +49,7 @@ class PolicyTemplateInfo:
         :type template_type: str
         :param description: **参数解释**: 描述 **取值范围**: 字符长度0-2048 
         :type description: str
-        :param target_kind: **参数解释**: 策略模板应用资源类型，多个资源类型通过分号份隔连接 **取值范围**: 字符长度1-255 
+        :param target_kind: **参数解释**: 策略模板应用资源类型，多个资源类型通过分号分隔连接 **取值范围**: 字符长度1-255 
         :type target_kind: str
         :param tag: **参数解释**: 标签 **取值范围**: 字符长度0-2048 
         :type tag: str
@@ -175,7 +175,7 @@ class PolicyTemplateInfo:
     def target_kind(self):
         r"""Gets the target_kind of this PolicyTemplateInfo.
 
-        **参数解释**: 策略模板应用资源类型，多个资源类型通过分号份隔连接 **取值范围**: 字符长度1-255 
+        **参数解释**: 策略模板应用资源类型，多个资源类型通过分号分隔连接 **取值范围**: 字符长度1-255 
 
         :return: The target_kind of this PolicyTemplateInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class PolicyTemplateInfo:
     def target_kind(self, target_kind):
         r"""Sets the target_kind of this PolicyTemplateInfo.
 
-        **参数解释**: 策略模板应用资源类型，多个资源类型通过分号份隔连接 **取值范围**: 字符长度1-255 
+        **参数解释**: 策略模板应用资源类型，多个资源类型通过分号分隔连接 **取值范围**: 字符长度1-255 
 
         :param target_kind: The target_kind of this PolicyTemplateInfo.
         :type target_kind: str

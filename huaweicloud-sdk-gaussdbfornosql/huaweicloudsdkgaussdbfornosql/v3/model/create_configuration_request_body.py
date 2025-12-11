@@ -18,29 +18,33 @@ class CreateConfigurationRequestBody:
         'name': 'str',
         'description': 'str',
         'datastore': 'CreateConfigurationDatastoreOption',
-        'values': 'dict(str, str)'
+        'values': 'dict(str, str)',
+        'instance_id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'datastore': 'datastore',
-        'values': 'values'
+        'values': 'values',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, name=None, description=None, datastore=None, values=None):
+    def __init__(self, name=None, description=None, datastore=None, values=None, instance_id=None):
         r"""CreateConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param name: 参数模板名称。最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。
+        :param name: **参数解释：** 参数模板名称。 **约束限制：** 最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type name: str
-        :param description: 参数模板描述。最长256个字符，不支持&gt;!&lt;\&quot;&amp;&#39;&#x3D;特殊字符。默认为空。
+        :param description: **参数解释：** 参数模板描述。 **约束限制：** 最长256个字符，不支持&gt;!&lt;\&quot;&amp;&#39;&#x3D;特殊字符。 **取值范围：** 不涉及。 **默认取值：** 空。
         :type description: str
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationDatastoreOption`
-        :param values: 参数值对象，用户基于默认参数模板自定义的参数值。默认不修改参数值。
+        :param values: **参数解释：** 参数值对象，用户基于默认参数模板自定义的参数值。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 默认不修改参数值。
         :type values: dict(str, str)
+        :param instance_id: **参数解释：** 实例ID。 **约束限制：** 实例ID可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 若传入此参数，则会基于此实例的参数信息创建参数模板。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type instance_id: str
         """
         
         
@@ -49,20 +53,24 @@ class CreateConfigurationRequestBody:
         self._description = None
         self._datastore = None
         self._values = None
+        self._instance_id = None
         self.discriminator = None
 
         self.name = name
         if description is not None:
             self.description = description
-        self.datastore = datastore
+        if datastore is not None:
+            self.datastore = datastore
         if values is not None:
             self.values = values
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def name(self):
         r"""Gets the name of this CreateConfigurationRequestBody.
 
-        参数模板名称。最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。
+        **参数解释：** 参数模板名称。 **约束限制：** 最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The name of this CreateConfigurationRequestBody.
         :rtype: str
@@ -73,7 +81,7 @@ class CreateConfigurationRequestBody:
     def name(self, name):
         r"""Sets the name of this CreateConfigurationRequestBody.
 
-        参数模板名称。最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。
+        **参数解释：** 参数模板名称。 **约束限制：** 最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param name: The name of this CreateConfigurationRequestBody.
         :type name: str
@@ -84,7 +92,7 @@ class CreateConfigurationRequestBody:
     def description(self):
         r"""Gets the description of this CreateConfigurationRequestBody.
 
-        参数模板描述。最长256个字符，不支持>!<\"&'=特殊字符。默认为空。
+        **参数解释：** 参数模板描述。 **约束限制：** 最长256个字符，不支持>!<\"&'=特殊字符。 **取值范围：** 不涉及。 **默认取值：** 空。
 
         :return: The description of this CreateConfigurationRequestBody.
         :rtype: str
@@ -95,7 +103,7 @@ class CreateConfigurationRequestBody:
     def description(self, description):
         r"""Sets the description of this CreateConfigurationRequestBody.
 
-        参数模板描述。最长256个字符，不支持>!<\"&'=特殊字符。默认为空。
+        **参数解释：** 参数模板描述。 **约束限制：** 最长256个字符，不支持>!<\"&'=特殊字符。 **取值范围：** 不涉及。 **默认取值：** 空。
 
         :param description: The description of this CreateConfigurationRequestBody.
         :type description: str
@@ -124,7 +132,7 @@ class CreateConfigurationRequestBody:
     def values(self):
         r"""Gets the values of this CreateConfigurationRequestBody.
 
-        参数值对象，用户基于默认参数模板自定义的参数值。默认不修改参数值。
+        **参数解释：** 参数值对象，用户基于默认参数模板自定义的参数值。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 默认不修改参数值。
 
         :return: The values of this CreateConfigurationRequestBody.
         :rtype: dict(str, str)
@@ -135,12 +143,34 @@ class CreateConfigurationRequestBody:
     def values(self, values):
         r"""Sets the values of this CreateConfigurationRequestBody.
 
-        参数值对象，用户基于默认参数模板自定义的参数值。默认不修改参数值。
+        **参数解释：** 参数值对象，用户基于默认参数模板自定义的参数值。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 默认不修改参数值。
 
         :param values: The values of this CreateConfigurationRequestBody.
         :type values: dict(str, str)
         """
         self._values = values
+
+    @property
+    def instance_id(self):
+        r"""Gets the instance_id of this CreateConfigurationRequestBody.
+
+        **参数解释：** 实例ID。 **约束限制：** 实例ID可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 若传入此参数，则会基于此实例的参数信息创建参数模板。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The instance_id of this CreateConfigurationRequestBody.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this CreateConfigurationRequestBody.
+
+        **参数解释：** 实例ID。 **约束限制：** 实例ID可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 若传入此参数，则会基于此实例的参数信息创建参数模板。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param instance_id: The instance_id of this CreateConfigurationRequestBody.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         result = {}

@@ -26,7 +26,9 @@ class ScheduleTask:
         'end_time': 'str',
         'job_status': 'str',
         'datastore_type': 'str',
-        'target_config': 'object'
+        'target_config': 'object',
+        'proxy_id': 'str',
+        'proxy_name': 'str'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class ScheduleTask:
         'end_time': 'end_time',
         'job_status': 'job_status',
         'datastore_type': 'datastore_type',
-        'target_config': 'target_config'
+        'target_config': 'target_config',
+        'proxy_id': 'proxy_id',
+        'proxy_name': 'proxy_name'
     }
 
-    def __init__(self, job_id=None, instance_id=None, instance_name=None, instance_status=None, project_id=None, job_name=None, create_time=None, start_time=None, end_time=None, job_status=None, datastore_type=None, target_config=None):
+    def __init__(self, job_id=None, instance_id=None, instance_name=None, instance_status=None, project_id=None, job_name=None, create_time=None, start_time=None, end_time=None, job_status=None, datastore_type=None, target_config=None, proxy_id=None, proxy_name=None):
         r"""ScheduleTask
 
         The model defined in huaweicloud sdk
@@ -59,7 +63,7 @@ class ScheduleTask:
         :type instance_status: str
         :param project_id: 租户在某一region下的project ID。
         :type project_id: str
-        :param job_name: 任务名称。取值有：    - \&quot;CreateGaussDBforMySQLInstance\&quot;表示创建实例。    - \&quot;RestoreGaussDBforMySQLNewInstance\&quot;表示恢复新实例。    - \&quot;AddGaussDBforMySQLNodes\&quot;表示添加节点。    - \&quot;DeleteGaussDBforMySQLNode\&quot;表示删除节点。    - \&quot;RebootGaussDBforMySQLInstance\&quot;表示重启实例。    - \&quot;ModifyGaussDBforMySQLPort\&quot;表示修改实例端口。    - \&quot;ModifyGaussDBforMySQLSecurityGroup\&quot;表示修改实例安全组。    - \&quot;ResizeGaussDBforMySQLFlavor\&quot;表示实例规格变更。    - \&quot;SwitchoverGaussDBforMySQLMasterNode\&quot;表示只读升主。    - \&quot;GaussDBforMySQLBindEIP\&quot;表示绑定弹性公网IP。    - \&quot;GaussDBforMySQLUnbindEIP\&quot;表示解绑弹性公网IP。    - \&quot;RenameGaussDBforMySQLInstance\&quot;表示修改实例名称。    - \&quot;DeleteGaussDBforMySQLInstance\&quot;表示删除实例集群。    - \&quot;UpgradeGaussDBforMySQLDatabaseVersion\&quot;表示版本升级。    - \&quot;EnlargeGaussDBforMySQLProxy\&quot;表示实例的数据库代理节点扩容。    - \&quot;ReduceGaussDBforMySQLProxy\&quot;表示实例的数据库代理节点缩容。    - \&quot;OpenGaussDBforMySQLProxy\&quot;表示开启实例的数据库代理。    - \&quot;CloseGaussDBforMySQLProxy\&quot;表示关闭实例的数据库代理。    - \&quot;GaussdbforMySQLModifyProxyIp\&quot;表示修改数据库代理ip。    - \&quot;ScaleGaussDBforMySQLProxy\&quot;表示实例的数据库代理节点规格变更。    - \&quot;GaussDBforMySQLModifyInstanceMetricExtend\&quot;表示实例秒级监控。    - \&quot;GaussDBforMySQLModifyInstanceDataVip\&quot;表示修改实例数据Vip。    - \&quot;GaussDBforMySQLSwitchSSL\&quot;表示切换实例SSL开关。    - \&quot;GaussDBforMySQLModifyProxyConsist\&quot;表示修改代理一致性。    - \&quot;GaussDBforMySQLModifyProxyWeight\&quot;表示修改代理权重。
+        :param job_name: **参数解释**： 任务名称。  **取值范围**：   - PROXY_VERSION_UPGRADE：表示数据库代理版本升级。   - VERSION_UPGRADE：表示实例版本升级。   - RESIZE_FLAVOR：表示实例规格变更。   - REBOOT_NODE：表示重启节点。   - REBOOT_INSTANCE：表示重启实例。
         :type job_name: str
         :param create_time: 任务创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。 说明：创建时返回值为空，数据库实例创建成功后该值不为空
         :type create_time: str
@@ -73,6 +77,10 @@ class ScheduleTask:
         :type datastore_type: str
         :param target_config: 实例配置相关信息，比如规格等。
         :type target_config: object
+        :param proxy_id: **参数解释**：  数据库代理ID，严格匹配UUID规则。  **取值范围**：  只能由英文字母、数字组成，后缀为po01，长度为36个字符。
+        :type proxy_id: str
+        :param proxy_name: **参数解释**：  数据库代理名称。  **取值范围**：  不涉及。
+        :type proxy_name: str
         """
         
         
@@ -89,6 +97,8 @@ class ScheduleTask:
         self._job_status = None
         self._datastore_type = None
         self._target_config = None
+        self._proxy_id = None
+        self._proxy_name = None
         self.discriminator = None
 
         if job_id is not None:
@@ -115,6 +125,10 @@ class ScheduleTask:
             self.datastore_type = datastore_type
         if target_config is not None:
             self.target_config = target_config
+        if proxy_id is not None:
+            self.proxy_id = proxy_id
+        if proxy_name is not None:
+            self.proxy_name = proxy_name
 
     @property
     def job_id(self):
@@ -230,7 +244,7 @@ class ScheduleTask:
     def job_name(self):
         r"""Gets the job_name of this ScheduleTask.
 
-        任务名称。取值有：    - \"CreateGaussDBforMySQLInstance\"表示创建实例。    - \"RestoreGaussDBforMySQLNewInstance\"表示恢复新实例。    - \"AddGaussDBforMySQLNodes\"表示添加节点。    - \"DeleteGaussDBforMySQLNode\"表示删除节点。    - \"RebootGaussDBforMySQLInstance\"表示重启实例。    - \"ModifyGaussDBforMySQLPort\"表示修改实例端口。    - \"ModifyGaussDBforMySQLSecurityGroup\"表示修改实例安全组。    - \"ResizeGaussDBforMySQLFlavor\"表示实例规格变更。    - \"SwitchoverGaussDBforMySQLMasterNode\"表示只读升主。    - \"GaussDBforMySQLBindEIP\"表示绑定弹性公网IP。    - \"GaussDBforMySQLUnbindEIP\"表示解绑弹性公网IP。    - \"RenameGaussDBforMySQLInstance\"表示修改实例名称。    - \"DeleteGaussDBforMySQLInstance\"表示删除实例集群。    - \"UpgradeGaussDBforMySQLDatabaseVersion\"表示版本升级。    - \"EnlargeGaussDBforMySQLProxy\"表示实例的数据库代理节点扩容。    - \"ReduceGaussDBforMySQLProxy\"表示实例的数据库代理节点缩容。    - \"OpenGaussDBforMySQLProxy\"表示开启实例的数据库代理。    - \"CloseGaussDBforMySQLProxy\"表示关闭实例的数据库代理。    - \"GaussdbforMySQLModifyProxyIp\"表示修改数据库代理ip。    - \"ScaleGaussDBforMySQLProxy\"表示实例的数据库代理节点规格变更。    - \"GaussDBforMySQLModifyInstanceMetricExtend\"表示实例秒级监控。    - \"GaussDBforMySQLModifyInstanceDataVip\"表示修改实例数据Vip。    - \"GaussDBforMySQLSwitchSSL\"表示切换实例SSL开关。    - \"GaussDBforMySQLModifyProxyConsist\"表示修改代理一致性。    - \"GaussDBforMySQLModifyProxyWeight\"表示修改代理权重。
+        **参数解释**： 任务名称。  **取值范围**：   - PROXY_VERSION_UPGRADE：表示数据库代理版本升级。   - VERSION_UPGRADE：表示实例版本升级。   - RESIZE_FLAVOR：表示实例规格变更。   - REBOOT_NODE：表示重启节点。   - REBOOT_INSTANCE：表示重启实例。
 
         :return: The job_name of this ScheduleTask.
         :rtype: str
@@ -241,7 +255,7 @@ class ScheduleTask:
     def job_name(self, job_name):
         r"""Sets the job_name of this ScheduleTask.
 
-        任务名称。取值有：    - \"CreateGaussDBforMySQLInstance\"表示创建实例。    - \"RestoreGaussDBforMySQLNewInstance\"表示恢复新实例。    - \"AddGaussDBforMySQLNodes\"表示添加节点。    - \"DeleteGaussDBforMySQLNode\"表示删除节点。    - \"RebootGaussDBforMySQLInstance\"表示重启实例。    - \"ModifyGaussDBforMySQLPort\"表示修改实例端口。    - \"ModifyGaussDBforMySQLSecurityGroup\"表示修改实例安全组。    - \"ResizeGaussDBforMySQLFlavor\"表示实例规格变更。    - \"SwitchoverGaussDBforMySQLMasterNode\"表示只读升主。    - \"GaussDBforMySQLBindEIP\"表示绑定弹性公网IP。    - \"GaussDBforMySQLUnbindEIP\"表示解绑弹性公网IP。    - \"RenameGaussDBforMySQLInstance\"表示修改实例名称。    - \"DeleteGaussDBforMySQLInstance\"表示删除实例集群。    - \"UpgradeGaussDBforMySQLDatabaseVersion\"表示版本升级。    - \"EnlargeGaussDBforMySQLProxy\"表示实例的数据库代理节点扩容。    - \"ReduceGaussDBforMySQLProxy\"表示实例的数据库代理节点缩容。    - \"OpenGaussDBforMySQLProxy\"表示开启实例的数据库代理。    - \"CloseGaussDBforMySQLProxy\"表示关闭实例的数据库代理。    - \"GaussdbforMySQLModifyProxyIp\"表示修改数据库代理ip。    - \"ScaleGaussDBforMySQLProxy\"表示实例的数据库代理节点规格变更。    - \"GaussDBforMySQLModifyInstanceMetricExtend\"表示实例秒级监控。    - \"GaussDBforMySQLModifyInstanceDataVip\"表示修改实例数据Vip。    - \"GaussDBforMySQLSwitchSSL\"表示切换实例SSL开关。    - \"GaussDBforMySQLModifyProxyConsist\"表示修改代理一致性。    - \"GaussDBforMySQLModifyProxyWeight\"表示修改代理权重。
+        **参数解释**： 任务名称。  **取值范围**：   - PROXY_VERSION_UPGRADE：表示数据库代理版本升级。   - VERSION_UPGRADE：表示实例版本升级。   - RESIZE_FLAVOR：表示实例规格变更。   - REBOOT_NODE：表示重启节点。   - REBOOT_INSTANCE：表示重启实例。
 
         :param job_name: The job_name of this ScheduleTask.
         :type job_name: str
@@ -379,6 +393,50 @@ class ScheduleTask:
         :type target_config: object
         """
         self._target_config = target_config
+
+    @property
+    def proxy_id(self):
+        r"""Gets the proxy_id of this ScheduleTask.
+
+        **参数解释**：  数据库代理ID，严格匹配UUID规则。  **取值范围**：  只能由英文字母、数字组成，后缀为po01，长度为36个字符。
+
+        :return: The proxy_id of this ScheduleTask.
+        :rtype: str
+        """
+        return self._proxy_id
+
+    @proxy_id.setter
+    def proxy_id(self, proxy_id):
+        r"""Sets the proxy_id of this ScheduleTask.
+
+        **参数解释**：  数据库代理ID，严格匹配UUID规则。  **取值范围**：  只能由英文字母、数字组成，后缀为po01，长度为36个字符。
+
+        :param proxy_id: The proxy_id of this ScheduleTask.
+        :type proxy_id: str
+        """
+        self._proxy_id = proxy_id
+
+    @property
+    def proxy_name(self):
+        r"""Gets the proxy_name of this ScheduleTask.
+
+        **参数解释**：  数据库代理名称。  **取值范围**：  不涉及。
+
+        :return: The proxy_name of this ScheduleTask.
+        :rtype: str
+        """
+        return self._proxy_name
+
+    @proxy_name.setter
+    def proxy_name(self, proxy_name):
+        r"""Sets the proxy_name of this ScheduleTask.
+
+        **参数解释**：  数据库代理名称。  **取值范围**：  不涉及。
+
+        :param proxy_name: The proxy_name of this ScheduleTask.
+        :type proxy_name: str
+        """
+        self._proxy_name = proxy_name
 
     def to_dict(self):
         result = {}

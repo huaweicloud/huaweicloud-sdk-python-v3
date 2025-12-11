@@ -35,7 +35,7 @@ class RestoreDuplicationRequestInfo:
         :type server_id: str
         :param power_on: **参数解释**： 恢复后是否开机, 默认开机。 **约束限制**: 不涉及 **取值范围**: - true：开机 - false: 不开机 **默认取值**: true 
         :type power_on: bool
-        :param mappings: **参数解释**： 恢复的映射关系(整机恢复时必填，卷恢复时可选但是不会用到填写的值） **取值范围**: 不涉及 
+        :param mappings: **参数解释**： 恢复的映射关系（整机恢复时必填，卷恢复时可选但是不会用到填写的值） **取值范围**: 不涉及 
         :type mappings: list[:class:`huaweicloudsdkhss.v5.BackupRestoreServerMappingInfo`]
         """
         
@@ -101,7 +101,7 @@ class RestoreDuplicationRequestInfo:
     def mappings(self):
         r"""Gets the mappings of this RestoreDuplicationRequestInfo.
 
-        **参数解释**： 恢复的映射关系(整机恢复时必填，卷恢复时可选但是不会用到填写的值） **取值范围**: 不涉及 
+        **参数解释**： 恢复的映射关系（整机恢复时必填，卷恢复时可选但是不会用到填写的值） **取值范围**: 不涉及 
 
         :return: The mappings of this RestoreDuplicationRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.BackupRestoreServerMappingInfo`]
@@ -112,7 +112,7 @@ class RestoreDuplicationRequestInfo:
     def mappings(self, mappings):
         r"""Sets the mappings of this RestoreDuplicationRequestInfo.
 
-        **参数解释**： 恢复的映射关系(整机恢复时必填，卷恢复时可选但是不会用到填写的值） **取值范围**: 不涉及 
+        **参数解释**： 恢复的映射关系（整机恢复时必填，卷恢复时可选但是不会用到填写的值） **取值范围**: 不涉及 
 
         :param mappings: The mappings of this RestoreDuplicationRequestInfo.
         :type mappings: list[:class:`huaweicloudsdkhss.v5.BackupRestoreServerMappingInfo`]

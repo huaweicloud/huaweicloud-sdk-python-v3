@@ -40,7 +40,7 @@ class ShowCommonPortResponse(SdkResponse):
         :type port: int
         :param type: **参数解释** 端口类型 **取值范围** - TCP：TCP协议 - UDP：UDP协议 - TCP6：TCP6协议 - UDP6：UDP6协议 
         :type type: str
-        :param status: **参数解释** 状态 **取值范围** - normal：正常 - danger：危险 - unknow：未知 
+        :param status: **参数解释** 状态 **取值范围** - normal：正常 - danger：危险 - unknown：未知 
         :type status: str
         :param description: **参数解释** 中文描述 **取值范围** 字符长度1-256 
         :type description: str
@@ -116,7 +116,7 @@ class ShowCommonPortResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowCommonPortResponse.
 
-        **参数解释** 状态 **取值范围** - normal：正常 - danger：危险 - unknow：未知 
+        **参数解释** 状态 **取值范围** - normal：正常 - danger：危险 - unknown：未知 
 
         :return: The status of this ShowCommonPortResponse.
         :rtype: str
@@ -127,7 +127,7 @@ class ShowCommonPortResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowCommonPortResponse.
 
-        **参数解释** 状态 **取值范围** - normal：正常 - danger：危险 - unknow：未知 
+        **参数解释** 状态 **取值范围** - normal：正常 - danger：危险 - unknown：未知 
 
         :param status: The status of this ShowCommonPortResponse.
         :type status: str

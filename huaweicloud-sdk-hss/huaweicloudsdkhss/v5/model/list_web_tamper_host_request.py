@@ -51,15 +51,15 @@ class ListWebTamperHostRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param host_id: **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
-        :param public_ip: **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        :param public_ip: **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
         :type public_ip: str
-        :param group_id: **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param group_id: **参数解释**: 服务器组的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type group_id: str
         :param os_type: **参数解释**: 操作系统类型。 **约束限制**: 不涉及 **取值范围**: - Linux：Linux操作系统。 - Windows：Windows操作系统。  **默认取值**: 无 
         :type os_type: str
@@ -172,7 +172,7 @@ class ListWebTamperHostRequest:
     def host_id(self):
         r"""Gets the host_id of this ListWebTamperHostRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ListWebTamperHostRequest.
         :rtype: str
@@ -183,7 +183,7 @@ class ListWebTamperHostRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListWebTamperHostRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ListWebTamperHostRequest.
         :type host_id: str
@@ -238,7 +238,7 @@ class ListWebTamperHostRequest:
     def public_ip(self):
         r"""Gets the public_ip of this ListWebTamperHostRequest.
 
-        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
 
         :return: The public_ip of this ListWebTamperHostRequest.
         :rtype: str
@@ -249,7 +249,7 @@ class ListWebTamperHostRequest:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ListWebTamperHostRequest.
 
-        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
 
         :param public_ip: The public_ip of this ListWebTamperHostRequest.
         :type public_ip: str
@@ -260,7 +260,7 @@ class ListWebTamperHostRequest:
     def group_id(self):
         r"""Gets the group_id of this ListWebTamperHostRequest.
 
-        **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器组的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The group_id of this ListWebTamperHostRequest.
         :rtype: str
@@ -271,7 +271,7 @@ class ListWebTamperHostRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ListWebTamperHostRequest.
 
-        **参数解释**: 服务器组ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器组的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param group_id: The group_id of this ListWebTamperHostRequest.
         :type group_id: str

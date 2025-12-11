@@ -29,9 +29,9 @@ class ResultDetailResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param keyword: 告警事件关键字，仅用于告警白名单
+        :param keyword: **参数解释**： 告警事件关键字，仅用于告警白名单 **取值范围**： 字符长度0-128位 
         :type keyword: str
-        :param hash: 告警事件hash，仅用于告警白名单
+        :param hash: **参数解释**： 告警事件hash，仅用于告警白名单 **取值范围**： 字符长度64位（SHA256哈希） 
         :type hash: str
         """
         
@@ -50,7 +50,7 @@ class ResultDetailResponseInfo:
     def keyword(self):
         r"""Gets the keyword of this ResultDetailResponseInfo.
 
-        告警事件关键字，仅用于告警白名单
+        **参数解释**： 告警事件关键字，仅用于告警白名单 **取值范围**： 字符长度0-128位 
 
         :return: The keyword of this ResultDetailResponseInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class ResultDetailResponseInfo:
     def keyword(self, keyword):
         r"""Sets the keyword of this ResultDetailResponseInfo.
 
-        告警事件关键字，仅用于告警白名单
+        **参数解释**： 告警事件关键字，仅用于告警白名单 **取值范围**： 字符长度0-128位 
 
         :param keyword: The keyword of this ResultDetailResponseInfo.
         :type keyword: str
@@ -72,7 +72,7 @@ class ResultDetailResponseInfo:
     def hash(self):
         r"""Gets the hash of this ResultDetailResponseInfo.
 
-        告警事件hash，仅用于告警白名单
+        **参数解释**： 告警事件hash，仅用于告警白名单 **取值范围**： 字符长度64位（SHA256哈希） 
 
         :return: The hash of this ResultDetailResponseInfo.
         :rtype: str
@@ -83,7 +83,7 @@ class ResultDetailResponseInfo:
     def hash(self, hash):
         r"""Sets the hash of this ResultDetailResponseInfo.
 
-        告警事件hash，仅用于告警白名单
+        **参数解释**： 告警事件hash，仅用于告警白名单 **取值范围**： 字符长度64位（SHA256哈希） 
 
         :param hash: The hash of this ResultDetailResponseInfo.
         :type hash: str

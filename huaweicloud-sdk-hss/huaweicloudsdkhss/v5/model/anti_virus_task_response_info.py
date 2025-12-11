@@ -53,29 +53,29 @@ class AntiVirusTaskResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务ID
+        :param task_id: **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
         :type task_id: str
-        :param task_name: 任务名称
+        :param task_name: **参数解释**: 任务名称 **取值范围**: 最大长度255个unicode字符。 
         :type task_name: str
-        :param scan_type: 任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        :param scan_type: **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
         :type scan_type: str
-        :param start_type: 启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        :param start_type: **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
         :type start_type: str
-        :param action: 处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        :param action: **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
         :type action: str
-        :param start_time: 启动时间，毫秒
+        :param start_time: **参数解释**： 启动时间 **取值范围**： 最小值0，最大值9223372036854775807；时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
         :type start_time: int
-        :param task_status: 任务状态，包含如下2种   - scanning ：扫描中   - finish ：扫描完成
+        :param task_status: **参数解释**: 任务状态 **取值范围**: 包含如下2种   - scanning：扫描中   - finish：扫描完成 
         :type task_status: str
-        :param host_num: 关联服务器数
+        :param host_num: **参数解释**: 关联服务器数 **取值范围**: 非负整数，最小值0；单位：台 
         :type host_num: int
-        :param success_host_num: 扫描成功服务器数
+        :param success_host_num: **参数解释**: 扫描成功服务器数 **取值范围**: 非负整数，最小值0；单位：台 
         :type success_host_num: int
-        :param fail_host_num: 扫描失败服务器数
+        :param fail_host_num: **参数解释**: 扫描失败服务器数 **取值范围**: 非负整数，最小值0；单位：台 
         :type fail_host_num: int
-        :param cancel_host_num: 已取消服务器数
+        :param cancel_host_num: **参数解释**: 已取消服务器数 **取值范围**: 非负整数，最小值0；单位：台 
         :type cancel_host_num: int
-        :param host_info_list: 主机信息
+        :param host_info_list: **参数解释**: 关联的服务器详细信息列表 **取值范围**: 数组个数0-10000 
         :type host_info_list: list[:class:`huaweicloudsdkhss.v5.AntiVirusTaskHostResponseInfo`]
         :param rescan: 是否需要重新扫描
         :type rescan: bool
@@ -134,7 +134,7 @@ class AntiVirusTaskResponseInfo:
     def task_id(self):
         r"""Gets the task_id of this AntiVirusTaskResponseInfo.
 
-        任务ID
+        **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
 
         :return: The task_id of this AntiVirusTaskResponseInfo.
         :rtype: str
@@ -145,7 +145,7 @@ class AntiVirusTaskResponseInfo:
     def task_id(self, task_id):
         r"""Sets the task_id of this AntiVirusTaskResponseInfo.
 
-        任务ID
+        **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
 
         :param task_id: The task_id of this AntiVirusTaskResponseInfo.
         :type task_id: str
@@ -156,7 +156,7 @@ class AntiVirusTaskResponseInfo:
     def task_name(self):
         r"""Gets the task_name of this AntiVirusTaskResponseInfo.
 
-        任务名称
+        **参数解释**: 任务名称 **取值范围**: 最大长度255个unicode字符。 
 
         :return: The task_name of this AntiVirusTaskResponseInfo.
         :rtype: str
@@ -167,7 +167,7 @@ class AntiVirusTaskResponseInfo:
     def task_name(self, task_name):
         r"""Sets the task_name of this AntiVirusTaskResponseInfo.
 
-        任务名称
+        **参数解释**: 任务名称 **取值范围**: 最大长度255个unicode字符。 
 
         :param task_name: The task_name of this AntiVirusTaskResponseInfo.
         :type task_name: str
@@ -178,7 +178,7 @@ class AntiVirusTaskResponseInfo:
     def scan_type(self):
         r"""Gets the scan_type of this AntiVirusTaskResponseInfo.
 
-        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
 
         :return: The scan_type of this AntiVirusTaskResponseInfo.
         :rtype: str
@@ -189,7 +189,7 @@ class AntiVirusTaskResponseInfo:
     def scan_type(self, scan_type):
         r"""Sets the scan_type of this AntiVirusTaskResponseInfo.
 
-        任务类型，包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描
+        **参数解释**： 任务类型 **取值范围**： 包含如下:   - quick ：快速扫描   - full : 全盘扫描   - custom : 自定义扫描 
 
         :param scan_type: The scan_type of this AntiVirusTaskResponseInfo.
         :type scan_type: str
@@ -200,7 +200,7 @@ class AntiVirusTaskResponseInfo:
     def start_type(self):
         r"""Gets the start_type of this AntiVirusTaskResponseInfo.
 
-        启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
 
         :return: The start_type of this AntiVirusTaskResponseInfo.
         :rtype: str
@@ -211,7 +211,7 @@ class AntiVirusTaskResponseInfo:
     def start_type(self, start_type):
         r"""Sets the start_type of this AntiVirusTaskResponseInfo.
 
-        启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
 
         :param start_type: The start_type of this AntiVirusTaskResponseInfo.
         :type start_type: str
@@ -222,7 +222,7 @@ class AntiVirusTaskResponseInfo:
     def action(self):
         r"""Gets the action of this AntiVirusTaskResponseInfo.
 
-        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
 
         :return: The action of this AntiVirusTaskResponseInfo.
         :rtype: str
@@ -233,7 +233,7 @@ class AntiVirusTaskResponseInfo:
     def action(self, action):
         r"""Sets the action of this AntiVirusTaskResponseInfo.
 
-        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
 
         :param action: The action of this AntiVirusTaskResponseInfo.
         :type action: str
@@ -244,7 +244,7 @@ class AntiVirusTaskResponseInfo:
     def start_time(self):
         r"""Gets the start_time of this AntiVirusTaskResponseInfo.
 
-        启动时间，毫秒
+        **参数解释**： 启动时间 **取值范围**： 最小值0，最大值9223372036854775807；时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
 
         :return: The start_time of this AntiVirusTaskResponseInfo.
         :rtype: int
@@ -255,7 +255,7 @@ class AntiVirusTaskResponseInfo:
     def start_time(self, start_time):
         r"""Sets the start_time of this AntiVirusTaskResponseInfo.
 
-        启动时间，毫秒
+        **参数解释**： 启动时间 **取值范围**： 最小值0，最大值9223372036854775807；时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
 
         :param start_time: The start_time of this AntiVirusTaskResponseInfo.
         :type start_time: int
@@ -266,7 +266,7 @@ class AntiVirusTaskResponseInfo:
     def task_status(self):
         r"""Gets the task_status of this AntiVirusTaskResponseInfo.
 
-        任务状态，包含如下2种   - scanning ：扫描中   - finish ：扫描完成
+        **参数解释**: 任务状态 **取值范围**: 包含如下2种   - scanning：扫描中   - finish：扫描完成 
 
         :return: The task_status of this AntiVirusTaskResponseInfo.
         :rtype: str
@@ -277,7 +277,7 @@ class AntiVirusTaskResponseInfo:
     def task_status(self, task_status):
         r"""Sets the task_status of this AntiVirusTaskResponseInfo.
 
-        任务状态，包含如下2种   - scanning ：扫描中   - finish ：扫描完成
+        **参数解释**: 任务状态 **取值范围**: 包含如下2种   - scanning：扫描中   - finish：扫描完成 
 
         :param task_status: The task_status of this AntiVirusTaskResponseInfo.
         :type task_status: str
@@ -288,7 +288,7 @@ class AntiVirusTaskResponseInfo:
     def host_num(self):
         r"""Gets the host_num of this AntiVirusTaskResponseInfo.
 
-        关联服务器数
+        **参数解释**: 关联服务器数 **取值范围**: 非负整数，最小值0；单位：台 
 
         :return: The host_num of this AntiVirusTaskResponseInfo.
         :rtype: int
@@ -299,7 +299,7 @@ class AntiVirusTaskResponseInfo:
     def host_num(self, host_num):
         r"""Sets the host_num of this AntiVirusTaskResponseInfo.
 
-        关联服务器数
+        **参数解释**: 关联服务器数 **取值范围**: 非负整数，最小值0；单位：台 
 
         :param host_num: The host_num of this AntiVirusTaskResponseInfo.
         :type host_num: int
@@ -310,7 +310,7 @@ class AntiVirusTaskResponseInfo:
     def success_host_num(self):
         r"""Gets the success_host_num of this AntiVirusTaskResponseInfo.
 
-        扫描成功服务器数
+        **参数解释**: 扫描成功服务器数 **取值范围**: 非负整数，最小值0；单位：台 
 
         :return: The success_host_num of this AntiVirusTaskResponseInfo.
         :rtype: int
@@ -321,7 +321,7 @@ class AntiVirusTaskResponseInfo:
     def success_host_num(self, success_host_num):
         r"""Sets the success_host_num of this AntiVirusTaskResponseInfo.
 
-        扫描成功服务器数
+        **参数解释**: 扫描成功服务器数 **取值范围**: 非负整数，最小值0；单位：台 
 
         :param success_host_num: The success_host_num of this AntiVirusTaskResponseInfo.
         :type success_host_num: int
@@ -332,7 +332,7 @@ class AntiVirusTaskResponseInfo:
     def fail_host_num(self):
         r"""Gets the fail_host_num of this AntiVirusTaskResponseInfo.
 
-        扫描失败服务器数
+        **参数解释**: 扫描失败服务器数 **取值范围**: 非负整数，最小值0；单位：台 
 
         :return: The fail_host_num of this AntiVirusTaskResponseInfo.
         :rtype: int
@@ -343,7 +343,7 @@ class AntiVirusTaskResponseInfo:
     def fail_host_num(self, fail_host_num):
         r"""Sets the fail_host_num of this AntiVirusTaskResponseInfo.
 
-        扫描失败服务器数
+        **参数解释**: 扫描失败服务器数 **取值范围**: 非负整数，最小值0；单位：台 
 
         :param fail_host_num: The fail_host_num of this AntiVirusTaskResponseInfo.
         :type fail_host_num: int
@@ -354,7 +354,7 @@ class AntiVirusTaskResponseInfo:
     def cancel_host_num(self):
         r"""Gets the cancel_host_num of this AntiVirusTaskResponseInfo.
 
-        已取消服务器数
+        **参数解释**: 已取消服务器数 **取值范围**: 非负整数，最小值0；单位：台 
 
         :return: The cancel_host_num of this AntiVirusTaskResponseInfo.
         :rtype: int
@@ -365,7 +365,7 @@ class AntiVirusTaskResponseInfo:
     def cancel_host_num(self, cancel_host_num):
         r"""Sets the cancel_host_num of this AntiVirusTaskResponseInfo.
 
-        已取消服务器数
+        **参数解释**: 已取消服务器数 **取值范围**: 非负整数，最小值0；单位：台 
 
         :param cancel_host_num: The cancel_host_num of this AntiVirusTaskResponseInfo.
         :type cancel_host_num: int
@@ -376,7 +376,7 @@ class AntiVirusTaskResponseInfo:
     def host_info_list(self):
         r"""Gets the host_info_list of this AntiVirusTaskResponseInfo.
 
-        主机信息
+        **参数解释**: 关联的服务器详细信息列表 **取值范围**: 数组个数0-10000 
 
         :return: The host_info_list of this AntiVirusTaskResponseInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.AntiVirusTaskHostResponseInfo`]
@@ -387,7 +387,7 @@ class AntiVirusTaskResponseInfo:
     def host_info_list(self, host_info_list):
         r"""Sets the host_info_list of this AntiVirusTaskResponseInfo.
 
-        主机信息
+        **参数解释**: 关联的服务器详细信息列表 **取值范围**: 数组个数0-10000 
 
         :param host_info_list: The host_info_list of this AntiVirusTaskResponseInfo.
         :type host_info_list: list[:class:`huaweicloudsdkhss.v5.AntiVirusTaskHostResponseInfo`]

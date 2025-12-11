@@ -33,9 +33,9 @@ class ShowAssetStatisticRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param host_id: **参数解释**： 主机ID **约束限制**： 不涉及 **取值范围**： 字符长度1-128位 **默认取值**： 不涉及 
+        :param host_id: **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
-        :param category: **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: host 
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
         :type category: str
         """
         
@@ -78,7 +78,7 @@ class ShowAssetStatisticRequest:
     def host_id(self):
         r"""Gets the host_id of this ShowAssetStatisticRequest.
 
-        **参数解释**： 主机ID **约束限制**： 不涉及 **取值范围**： 字符长度1-128位 **默认取值**： 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ShowAssetStatisticRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ShowAssetStatisticRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ShowAssetStatisticRequest.
 
-        **参数解释**： 主机ID **约束限制**： 不涉及 **取值范围**： 字符长度1-128位 **默认取值**： 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ShowAssetStatisticRequest.
         :type host_id: str
@@ -100,7 +100,7 @@ class ShowAssetStatisticRequest:
     def category(self):
         r"""Gets the category of this ShowAssetStatisticRequest.
 
-        **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :return: The category of this ShowAssetStatisticRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowAssetStatisticRequest:
     def category(self, category):
         r"""Sets the category of this ShowAssetStatisticRequest.
 
-        **参数解释**: 类别，默认为host **约束限制**: 不涉及 **取值范围**: - host：主机 - container：容器  **默认取值**: host 
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :param category: The category of this ShowAssetStatisticRequest.
         :type category: str

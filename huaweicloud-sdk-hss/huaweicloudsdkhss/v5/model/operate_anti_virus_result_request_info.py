@@ -35,7 +35,7 @@ class OperateAntiVirusResultRequestInfo:
 
         :param operate_type: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - manual_isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件
         :type operate_type: str
-        :param memo: 备注信息
+        :param memo: **参数解释** 备注信息 **取值范围** 字符长度0-512位 
         :type memo: str
         :param operate_results: 处置的结果列表
         :type operate_results: list[:class:`huaweicloudsdkhss.v5.OperateResultRequestInfo`]
@@ -85,7 +85,7 @@ class OperateAntiVirusResultRequestInfo:
     def memo(self):
         r"""Gets the memo of this OperateAntiVirusResultRequestInfo.
 
-        备注信息
+        **参数解释** 备注信息 **取值范围** 字符长度0-512位 
 
         :return: The memo of this OperateAntiVirusResultRequestInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class OperateAntiVirusResultRequestInfo:
     def memo(self, memo):
         r"""Sets the memo of this OperateAntiVirusResultRequestInfo.
 
-        备注信息
+        **参数解释** 备注信息 **取值范围** 字符长度0-512位 
 
         :param memo: The memo of this OperateAntiVirusResultRequestInfo.
         :type memo: str

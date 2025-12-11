@@ -57,7 +57,7 @@ class SchedulerConfigBase:
         :type notice: str
         :param start_time: 开始时间
         :type start_time: str
-        :param status: 模板状态
+        :param status: 模板状态 - ON: 开启 - OFF：关闭
         :type status: str
         :param topic_urn: 主题URN
         :type topic_urn: str
@@ -253,7 +253,7 @@ class SchedulerConfigBase:
     def status(self):
         r"""Gets the status of this SchedulerConfigBase.
 
-        模板状态
+        模板状态 - ON: 开启 - OFF：关闭
 
         :return: The status of this SchedulerConfigBase.
         :rtype: str
@@ -264,7 +264,7 @@ class SchedulerConfigBase:
     def status(self, status):
         r"""Sets the status of this SchedulerConfigBase.
 
-        模板状态
+        模板状态 - ON: 开启 - OFF：关闭
 
         :param status: The status of this SchedulerConfigBase.
         :type status: str

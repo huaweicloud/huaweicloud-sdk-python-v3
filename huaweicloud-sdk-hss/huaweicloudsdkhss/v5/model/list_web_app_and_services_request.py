@@ -98,7 +98,8 @@ class ListWebAppAndServicesRequest:
         if limit is not None:
             self.limit = limit
         self.category = category
-        self.name = name
+        if name is not None:
+            self.name = name
         self.catalogue = catalogue
         if host_name is not None:
             self.host_name = host_name

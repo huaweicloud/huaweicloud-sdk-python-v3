@@ -7200,10 +7200,10 @@ class HssClient(Client):
         path_params = {}
 
         query_params = []
-        if 'is_refresh' in local_var_params:
-            query_params.append(('is_refresh', local_var_params['is_refresh']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'is_refresh' in local_var_params:
+            query_params.append(('is_refresh', local_var_params['is_refresh']))
 
         header_params = {}
         if 'x_security_token' in local_var_params:
@@ -7350,16 +7350,16 @@ class HssClient(Client):
             query_params.append(('host_name', local_var_params['host_name']))
         if 'host_ip' in local_var_params:
             query_params.append(('host_ip', local_var_params['host_ip']))
-        if 'port' in local_var_params:
-            query_params.append(('port', local_var_params['port']))
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
         if 'category' in local_var_params:
             query_params.append(('category', local_var_params['category']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'port' in local_var_params:
+            query_params.append(('port', local_var_params['port']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
 
         header_params = {}
 
@@ -8805,14 +8805,14 @@ class HssClient(Client):
         path_params = {}
 
         query_params = []
-        if 'user_name' in local_var_params:
-            query_params.append(('user_name', local_var_params['user_name']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
         if 'category' in local_var_params:
             query_params.append(('category', local_var_params['category']))
 
@@ -12094,31 +12094,31 @@ class HssClient(Client):
 
         return http_info
 
-    def show_porcess_top(self, request):
-        r"""资产管理-概览-进程Top
+    def show_port_top(self, request):
+        r"""资产管理-概览-端口Top
 
-        资产管理-概览-进程Top
+        资产管理-概览-端口Top
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ShowPorcessTop
-        :type request: :class:`huaweicloudsdkhss.v5.ShowPorcessTopRequest`
-        :rtype: :class:`huaweicloudsdkhss.v5.ShowPorcessTopResponse`
+        :param request: Request instance for ShowPortTop
+        :type request: :class:`huaweicloudsdkhss.v5.ShowPortTopRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ShowPortTopResponse`
         """
-        http_info = self._show_porcess_top_http_info(request)
+        http_info = self._show_port_top_http_info(request)
         return self._call_api(**http_info)
 
-    def show_porcess_top_invoker(self, request):
-        http_info = self._show_porcess_top_http_info(request)
+    def show_port_top_invoker(self, request):
+        http_info = self._show_port_top_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _show_porcess_top_http_info(cls, request):
+    def _show_port_top_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v5/{project_id}/asset/overview/statistics/top/process",
+            "resource_path": "/v5/{project_id}/asset/overview/statistics/top/port",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowPorcessTopResponse"
+            "response_type": "ShowPortTopResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -12159,31 +12159,31 @@ class HssClient(Client):
 
         return http_info
 
-    def show_port_top(self, request):
-        r"""资产管理-概览-端口Top
+    def show_process_top(self, request):
+        r"""资产管理-概览-进程Top
 
-        资产管理-概览-端口Top
+        资产管理-概览-进程Top
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for ShowPortTop
-        :type request: :class:`huaweicloudsdkhss.v5.ShowPortTopRequest`
-        :rtype: :class:`huaweicloudsdkhss.v5.ShowPortTopResponse`
+        :param request: Request instance for ShowProcessTop
+        :type request: :class:`huaweicloudsdkhss.v5.ShowProcessTopRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ShowProcessTopResponse`
         """
-        http_info = self._show_port_top_http_info(request)
+        http_info = self._show_process_top_http_info(request)
         return self._call_api(**http_info)
 
-    def show_port_top_invoker(self, request):
-        http_info = self._show_port_top_http_info(request)
+    def show_process_top_invoker(self, request):
+        http_info = self._show_process_top_http_info(request)
         return SyncInvoker(self, http_info)
 
     @classmethod
-    def _show_port_top_http_info(cls, request):
+    def _show_process_top_http_info(cls, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v5/{project_id}/asset/overview/statistics/top/port",
+            "resource_path": "/v5/{project_id}/asset/overview/statistics/top/process",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowPortTopResponse"
+            "response_type": "ShowProcessTopResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -24318,9 +24318,9 @@ class HssClient(Client):
         return http_info
 
     def change_file_path_white_detail(self, request):
-        r"""修改镜像的敏感信息文件路径白名单
+        r"""修改镜像的敏感信息文件路径白名单--接口已废弃
 
-        修改镜像的敏感信息文件路径白名单
+        修改镜像的敏感信息文件路径白名单--接口已废弃
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -24342,6 +24342,75 @@ class HssClient(Client):
             "resource_path": "/v5/{project_id}/image/sensitive/filepath_whitelist",
             "request_type": request.__class__.__name__,
             "response_type": "ChangeFilePathWhiteDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def change_file_path_white_lists(self, request):
+        r"""修改镜像的敏感信息文件路径白名单
+
+        修改镜像的敏感信息文件路径白名单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeFilePathWhiteLists
+        :type request: :class:`huaweicloudsdkhss.v5.ChangeFilePathWhiteListsRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ChangeFilePathWhiteListsResponse`
+        """
+        http_info = self._change_file_path_white_lists_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_file_path_white_lists_invoker(self, request):
+        http_info = self._change_file_path_white_lists_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_file_path_white_lists_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/image/sensitive/filepath-whitelist",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeFilePathWhiteListsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -27453,9 +27522,9 @@ class HssClient(Client):
         return http_info
 
     def run_image_synchronize(self, request):
-        r"""从SWR服务同步镜像列表
+        r"""从SWR服务同步镜像列表--接口已废弃
 
-        从SWR服务同步镜像列表
+        从SWR服务同步镜像列表--接口已废弃
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -27589,9 +27658,9 @@ class HssClient(Client):
         return http_info
 
     def show_file_path_white_detail(self, request):
-        r"""查询镜像的敏感信息文件路径白名单
+        r"""查询镜像的敏感信息文件路径白名单--接口已废弃
 
-        查询镜像的敏感信息文件路径白名单
+        查询镜像的敏感信息文件路径白名单--接口已废弃
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -27613,6 +27682,75 @@ class HssClient(Client):
             "resource_path": "/v5/{project_id}/image/sensitive/filepath_whitelist",
             "request_type": request.__class__.__name__,
             "response_type": "ShowFilePathWhiteDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'file_path' in local_var_params:
+            query_params.append(('file_path', local_var_params['file_path']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_file_path_white_lists(self, request):
+        r"""查询镜像的敏感信息文件路径白名单
+
+        查询镜像的敏感信息文件路径白名单
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowFilePathWhiteLists
+        :type request: :class:`huaweicloudsdkhss.v5.ShowFilePathWhiteListsRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ShowFilePathWhiteListsResponse`
+        """
+        http_info = self._show_file_path_white_lists_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_file_path_white_lists_invoker(self, request):
+        http_info = self._show_file_path_white_lists_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_file_path_white_lists_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/image/sensitive/filepath-whitelist",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFilePathWhiteListsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -32365,10 +32503,10 @@ class HssClient(Client):
             query_params.append(('handle_method', local_var_params['handle_method']))
         if 'user_name' in local_var_params:
             query_params.append(('user_name', local_var_params['user_name']))
-        if 'event_type' in local_var_params:
-            query_params.append(('event_type', local_var_params['event_type']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'event_type' in local_var_params:
+            query_params.append(('event_type', local_var_params['event_type']))
         if 'sort_key' in local_var_params:
             query_params.append(('sort_key', local_var_params['sort_key']))
 

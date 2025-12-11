@@ -30,9 +30,9 @@ class ShowBaselineScanStatusResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param scan_status: 扫描状态，包含如下:   - neverscan: 未扫描   - scanning: 扫描中   - scanned: 扫描完成   - failed: 扫描失败
+        :param scan_status: **参数解释**: 扫描状态 **约束限制**: 不涉及 **取值范围**: - neverscan: 未扫描 - scanning: 扫描中 - scanned: 扫描完成 - failed: 扫描失败  **默认取值**: 不涉及 
         :type scan_status: str
-        :param scanned_time: 扫描结束时间，单位毫秒
+        :param scanned_time: **参数解释**: 扫描结束时间，单位毫秒 **约束限制**: 不涉及 **取值范围**: 大小0-4070880000000 **默认取值**: 不涉及 
         :type scanned_time: int
         """
         
@@ -51,7 +51,7 @@ class ShowBaselineScanStatusResponse(SdkResponse):
     def scan_status(self):
         r"""Gets the scan_status of this ShowBaselineScanStatusResponse.
 
-        扫描状态，包含如下:   - neverscan: 未扫描   - scanning: 扫描中   - scanned: 扫描完成   - failed: 扫描失败
+        **参数解释**: 扫描状态 **约束限制**: 不涉及 **取值范围**: - neverscan: 未扫描 - scanning: 扫描中 - scanned: 扫描完成 - failed: 扫描失败  **默认取值**: 不涉及 
 
         :return: The scan_status of this ShowBaselineScanStatusResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class ShowBaselineScanStatusResponse(SdkResponse):
     def scan_status(self, scan_status):
         r"""Sets the scan_status of this ShowBaselineScanStatusResponse.
 
-        扫描状态，包含如下:   - neverscan: 未扫描   - scanning: 扫描中   - scanned: 扫描完成   - failed: 扫描失败
+        **参数解释**: 扫描状态 **约束限制**: 不涉及 **取值范围**: - neverscan: 未扫描 - scanning: 扫描中 - scanned: 扫描完成 - failed: 扫描失败  **默认取值**: 不涉及 
 
         :param scan_status: The scan_status of this ShowBaselineScanStatusResponse.
         :type scan_status: str
@@ -73,7 +73,7 @@ class ShowBaselineScanStatusResponse(SdkResponse):
     def scanned_time(self):
         r"""Gets the scanned_time of this ShowBaselineScanStatusResponse.
 
-        扫描结束时间，单位毫秒
+        **参数解释**: 扫描结束时间，单位毫秒 **约束限制**: 不涉及 **取值范围**: 大小0-4070880000000 **默认取值**: 不涉及 
 
         :return: The scanned_time of this ShowBaselineScanStatusResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ShowBaselineScanStatusResponse(SdkResponse):
     def scanned_time(self, scanned_time):
         r"""Sets the scanned_time of this ShowBaselineScanStatusResponse.
 
-        扫描结束时间，单位毫秒
+        **参数解释**: 扫描结束时间，单位毫秒 **约束限制**: 不涉及 **取值范围**: 大小0-4070880000000 **默认取值**: 不涉及 
 
         :param scanned_time: The scanned_time of this ShowBaselineScanStatusResponse.
         :type scanned_time: int

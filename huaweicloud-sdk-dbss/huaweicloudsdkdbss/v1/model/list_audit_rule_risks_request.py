@@ -35,7 +35,7 @@ class ListAuditRuleRisksRequest:
         :type instance_id: str
         :param name: 风险名称
         :type name: str
-        :param risk_levels: 风险级别 - LOW - MEDIUM - HIGH - NO_RISK
+        :param risk_levels: 风险级别 - LOW：低 - MEDIUM：中 - HIGH：高 - NO_RISK：无风险
         :type risk_levels: str
         """
         
@@ -100,7 +100,7 @@ class ListAuditRuleRisksRequest:
     def risk_levels(self):
         r"""Gets the risk_levels of this ListAuditRuleRisksRequest.
 
-        风险级别 - LOW - MEDIUM - HIGH - NO_RISK
+        风险级别 - LOW：低 - MEDIUM：中 - HIGH：高 - NO_RISK：无风险
 
         :return: The risk_levels of this ListAuditRuleRisksRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListAuditRuleRisksRequest:
     def risk_levels(self, risk_levels):
         r"""Sets the risk_levels of this ListAuditRuleRisksRequest.
 
-        风险级别 - LOW - MEDIUM - HIGH - NO_RISK
+        风险级别 - LOW：低 - MEDIUM：中 - HIGH：高 - NO_RISK：无风险
 
         :param risk_levels: The risk_levels of this ListAuditRuleRisksRequest.
         :type risk_levels: str

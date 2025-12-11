@@ -31,11 +31,11 @@ class InstanceItem:
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例ID。
+        :param instance_id: **参数解释：** 实例ID。 **取值范围：** 不涉及。
         :type instance_id: str
-        :param instance_name: 实例名称
+        :param instance_name: **参数解释：** 实例名称 **取值范围：** 不涉及。
         :type instance_name: str
-        :param tags: 标签列表。如果没有标签，默认为空数组。
+        :param tags: **参数解释：** 标签列表。如果没有标签，默认为空数组。 **取值范围：** 不涉及。
         :type tags: list[:class:`huaweicloudsdkdds.v3.InstanceItemTagItem`]
         """
         
@@ -54,7 +54,7 @@ class InstanceItem:
     def instance_id(self):
         r"""Gets the instance_id of this InstanceItem.
 
-        实例ID。
+        **参数解释：** 实例ID。 **取值范围：** 不涉及。
 
         :return: The instance_id of this InstanceItem.
         :rtype: str
@@ -65,7 +65,7 @@ class InstanceItem:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this InstanceItem.
 
-        实例ID。
+        **参数解释：** 实例ID。 **取值范围：** 不涉及。
 
         :param instance_id: The instance_id of this InstanceItem.
         :type instance_id: str
@@ -76,7 +76,7 @@ class InstanceItem:
     def instance_name(self):
         r"""Gets the instance_name of this InstanceItem.
 
-        实例名称
+        **参数解释：** 实例名称 **取值范围：** 不涉及。
 
         :return: The instance_name of this InstanceItem.
         :rtype: str
@@ -87,7 +87,7 @@ class InstanceItem:
     def instance_name(self, instance_name):
         r"""Sets the instance_name of this InstanceItem.
 
-        实例名称
+        **参数解释：** 实例名称 **取值范围：** 不涉及。
 
         :param instance_name: The instance_name of this InstanceItem.
         :type instance_name: str
@@ -98,7 +98,7 @@ class InstanceItem:
     def tags(self):
         r"""Gets the tags of this InstanceItem.
 
-        标签列表。如果没有标签，默认为空数组。
+        **参数解释：** 标签列表。如果没有标签，默认为空数组。 **取值范围：** 不涉及。
 
         :return: The tags of this InstanceItem.
         :rtype: list[:class:`huaweicloudsdkdds.v3.InstanceItemTagItem`]
@@ -109,7 +109,7 @@ class InstanceItem:
     def tags(self, tags):
         r"""Sets the tags of this InstanceItem.
 
-        标签列表。如果没有标签，默认为空数组。
+        **参数解释：** 标签列表。如果没有标签，默认为空数组。 **取值范围：** 不涉及。
 
         :param tags: The tags of this InstanceItem.
         :type tags: list[:class:`huaweicloudsdkdds.v3.InstanceItemTagItem`]

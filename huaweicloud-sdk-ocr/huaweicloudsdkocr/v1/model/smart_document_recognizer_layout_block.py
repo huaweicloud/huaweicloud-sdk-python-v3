@@ -20,7 +20,8 @@ class SmartDocumentRecognizerLayoutBlock:
         'text': 'str',
         'words_ids': 'list[int]',
         'table_id': 'int',
-        'form_id': 'int'
+        'form_id': 'int',
+        'formula_id': 'int'
     }
 
     attribute_map = {
@@ -29,17 +30,18 @@ class SmartDocumentRecognizerLayoutBlock:
         'text': 'text',
         'words_ids': 'words_ids',
         'table_id': 'table_id',
-        'form_id': 'form_id'
+        'form_id': 'form_id',
+        'formula_id': 'formula_id'
     }
 
-    def __init__(self, location=None, type=None, text=None, words_ids=None, table_id=None, form_id=None):
+    def __init__(self, location=None, type=None, text=None, words_ids=None, table_id=None, form_id=None, formula_id=None):
         r"""SmartDocumentRecognizerLayoutBlock
 
         The model defined in huaweicloud sdk
 
         :param location: 文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
         :type location: list[list[int]]
-        :param type: 文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory共15个类别。     
+        :param type: 文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory、footnote共16个类别。 
         :type type: str
         :param text: 文档区域文字内容。对于表格与图像，不返回其中的文字内容。 
         :type text: str
@@ -49,6 +51,8 @@ class SmartDocumentRecognizerLayoutBlock:
         :type table_id: int
         :param form_id: 仅当type为\&quot;form\&quot;且入参form为True时返回该字段，表示当前有线表单区域对应form_result中哪一项识别结果。 
         :type form_id: int
+        :param formula_id: 仅当type为\&quot;formula\&quot;且入参formula为True时返回该字段，表示当前公式识别区域对应formula_result中哪一项识别结果。 
+        :type formula_id: int
         """
         
         
@@ -59,6 +63,7 @@ class SmartDocumentRecognizerLayoutBlock:
         self._words_ids = None
         self._table_id = None
         self._form_id = None
+        self._formula_id = None
         self.discriminator = None
 
         if location is not None:
@@ -73,6 +78,8 @@ class SmartDocumentRecognizerLayoutBlock:
             self.table_id = table_id
         if form_id is not None:
             self.form_id = form_id
+        if formula_id is not None:
+            self.formula_id = formula_id
 
     @property
     def location(self):
@@ -100,7 +107,7 @@ class SmartDocumentRecognizerLayoutBlock:
     def type(self):
         r"""Gets the type of this SmartDocumentRecognizerLayoutBlock.
 
-        文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory共15个类别。     
+        文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory、footnote共16个类别。 
 
         :return: The type of this SmartDocumentRecognizerLayoutBlock.
         :rtype: str
@@ -111,7 +118,7 @@ class SmartDocumentRecognizerLayoutBlock:
     def type(self, type):
         r"""Sets the type of this SmartDocumentRecognizerLayoutBlock.
 
-        文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory共15个类别。     
+        文档区域类别，包含text、title、sub_title、image、image_caption、form、table、table_caption、header、footer、page_number、reference、formula、stamp、directory、footnote共16个类别。 
 
         :param type: The type of this SmartDocumentRecognizerLayoutBlock.
         :type type: str
@@ -205,6 +212,28 @@ class SmartDocumentRecognizerLayoutBlock:
         :type form_id: int
         """
         self._form_id = form_id
+
+    @property
+    def formula_id(self):
+        r"""Gets the formula_id of this SmartDocumentRecognizerLayoutBlock.
+
+        仅当type为\"formula\"且入参formula为True时返回该字段，表示当前公式识别区域对应formula_result中哪一项识别结果。 
+
+        :return: The formula_id of this SmartDocumentRecognizerLayoutBlock.
+        :rtype: int
+        """
+        return self._formula_id
+
+    @formula_id.setter
+    def formula_id(self, formula_id):
+        r"""Sets the formula_id of this SmartDocumentRecognizerLayoutBlock.
+
+        仅当type为\"formula\"且入参formula为True时返回该字段，表示当前公式识别区域对应formula_result中哪一项识别结果。 
+
+        :param formula_id: The formula_id of this SmartDocumentRecognizerLayoutBlock.
+        :type formula_id: int
+        """
+        self._formula_id = formula_id
 
     def to_dict(self):
         result = {}

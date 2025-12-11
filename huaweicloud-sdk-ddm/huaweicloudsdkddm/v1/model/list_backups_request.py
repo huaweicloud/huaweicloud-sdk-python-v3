@@ -15,20 +15,167 @@ class ListBackupsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'instance_id': 'str',
+        'instance_name': 'str',
+        'backup_name': 'str',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
+        'instance_id': 'instance_id',
+        'instance_name': 'instance_name',
+        'backup_name': 'backup_name',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self):
+    def __init__(self, instance_id=None, instance_name=None, backup_name=None, offset=None, limit=None):
         r"""ListBackupsRequest
 
         The model defined in huaweicloud sdk
 
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param instance_name: 实例名称。
+        :type instance_name: str
+        :param backup_name: 备份名称。
+        :type backup_name: str
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
+        :type offset: int
+        :param limit: 分页参数：每页多少条。
+        :type limit: int
         """
         
         
+
+        self._instance_id = None
+        self._instance_name = None
+        self._backup_name = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
+
+        if instance_id is not None:
+            self.instance_id = instance_id
+        if instance_name is not None:
+            self.instance_name = instance_name
+        if backup_name is not None:
+            self.backup_name = backup_name
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
+
+    @property
+    def instance_id(self):
+        r"""Gets the instance_id of this ListBackupsRequest.
+
+        实例ID。
+
+        :return: The instance_id of this ListBackupsRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        r"""Sets the instance_id of this ListBackupsRequest.
+
+        实例ID。
+
+        :param instance_id: The instance_id of this ListBackupsRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
+
+    @property
+    def instance_name(self):
+        r"""Gets the instance_name of this ListBackupsRequest.
+
+        实例名称。
+
+        :return: The instance_name of this ListBackupsRequest.
+        :rtype: str
+        """
+        return self._instance_name
+
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        r"""Sets the instance_name of this ListBackupsRequest.
+
+        实例名称。
+
+        :param instance_name: The instance_name of this ListBackupsRequest.
+        :type instance_name: str
+        """
+        self._instance_name = instance_name
+
+    @property
+    def backup_name(self):
+        r"""Gets the backup_name of this ListBackupsRequest.
+
+        备份名称。
+
+        :return: The backup_name of this ListBackupsRequest.
+        :rtype: str
+        """
+        return self._backup_name
+
+    @backup_name.setter
+    def backup_name(self, backup_name):
+        r"""Sets the backup_name of this ListBackupsRequest.
+
+        备份名称。
+
+        :param backup_name: The backup_name of this ListBackupsRequest.
+        :type backup_name: str
+        """
+        self._backup_name = backup_name
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListBackupsRequest.
+
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
+
+        :return: The offset of this ListBackupsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListBackupsRequest.
+
+        索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0。取值必须为数字，且不能为负数。
+
+        :param offset: The offset of this ListBackupsRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListBackupsRequest.
+
+        分页参数：每页多少条。
+
+        :return: The limit of this ListBackupsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListBackupsRequest.
+
+        分页参数：每页多少条。
+
+        :param limit: The limit of this ListBackupsRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         result = {}

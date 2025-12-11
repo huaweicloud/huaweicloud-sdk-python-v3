@@ -31,11 +31,11 @@ class DeleteHostsGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param region: Region ID
+        :param region: **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type region: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param group_id: 服务器组ID
+        :param group_id: **参数解释**: 服务器组id **约束限制**: 不涉及 **取值范围**: 字符范围0-128位 **默认取值**: 不涉及 
         :type group_id: str
         """
         
@@ -56,7 +56,7 @@ class DeleteHostsGroupRequest:
     def region(self):
         r"""Gets the region of this DeleteHostsGroupRequest.
 
-        Region ID
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The region of this DeleteHostsGroupRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class DeleteHostsGroupRequest:
     def region(self, region):
         r"""Sets the region of this DeleteHostsGroupRequest.
 
-        Region ID
+        **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param region: The region of this DeleteHostsGroupRequest.
         :type region: str
@@ -78,7 +78,7 @@ class DeleteHostsGroupRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this DeleteHostsGroupRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this DeleteHostsGroupRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class DeleteHostsGroupRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this DeleteHostsGroupRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteHostsGroupRequest.
         :type enterprise_project_id: str
@@ -100,7 +100,7 @@ class DeleteHostsGroupRequest:
     def group_id(self):
         r"""Gets the group_id of this DeleteHostsGroupRequest.
 
-        服务器组ID
+        **参数解释**: 服务器组id **约束限制**: 不涉及 **取值范围**: 字符范围0-128位 **默认取值**: 不涉及 
 
         :return: The group_id of this DeleteHostsGroupRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class DeleteHostsGroupRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this DeleteHostsGroupRequest.
 
-        服务器组ID
+        **参数解释**: 服务器组id **约束限制**: 不涉及 **取值范围**: 字符范围0-128位 **默认取值**: 不涉及 
 
         :param group_id: The group_id of this DeleteHostsGroupRequest.
         :type group_id: str

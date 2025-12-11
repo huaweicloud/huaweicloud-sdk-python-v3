@@ -45,7 +45,7 @@ class ListHostRaspProtectHistoryInfoRequest:
         :type enterprise_project_id: str
         :param region: **参数解释**: 区域ID，用于查询目的区域内的资产。获取方式请参见[获取区域ID](hss_02_0026.xml)。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type region: str
-        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param host_id: **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
         :param start_time: **参数解释**: 查询起始时间，单位毫秒，不可早于30天前，如早于30天前，则按照30天前计算。 **约束限制**: 不涉及 **取值范围**: 取值0-4070880000000 **默认取值**: 不涉及 
         :type start_time: int
@@ -132,7 +132,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def host_id(self):
         r"""Gets the host_id of this ListHostRaspProtectHistoryInfoRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ListHostRaspProtectHistoryInfoRequest.
         :rtype: str
@@ -143,7 +143,7 @@ class ListHostRaspProtectHistoryInfoRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListHostRaspProtectHistoryInfoRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ListHostRaspProtectHistoryInfoRequest.
         :type host_id: str

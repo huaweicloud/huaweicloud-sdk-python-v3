@@ -73,7 +73,7 @@ class CheckRuleRiskInfoResponseInfo:
         :type enable_fix: int
         :param enable_click: **参数解释**: 该检查项的修复&amp;忽略&amp;验证按钮是否可单击 **取值范围**: - true：按钮可单击 - false：按钮不可单击 
         :type enable_click: bool
-        :param not_enable_click_description: **参数解释** 不可点击的原因 **取值范围**  字符长度0-512位
+        :param not_enable_click_description: **参数解释** 不可点击的原因 **取值范围** 字符长度0-512位
         :type not_enable_click_description: str
         :param rule_params: **参数解释**: 支持传递参数修复的检查项可传递参数的范围，只有支持传递参数修复的检查项才返回此数据 **取值范围**: 不涉及 
         :type rule_params: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixParamInfo`]
@@ -369,7 +369,7 @@ class CheckRuleRiskInfoResponseInfo:
     def not_enable_click_description(self):
         r"""Gets the not_enable_click_description of this CheckRuleRiskInfoResponseInfo.
 
-        **参数解释** 不可点击的原因 **取值范围**  字符长度0-512位
+        **参数解释** 不可点击的原因 **取值范围** 字符长度0-512位
 
         :return: The not_enable_click_description of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -380,7 +380,7 @@ class CheckRuleRiskInfoResponseInfo:
     def not_enable_click_description(self, not_enable_click_description):
         r"""Sets the not_enable_click_description of this CheckRuleRiskInfoResponseInfo.
 
-        **参数解释** 不可点击的原因 **取值范围**  字符长度0-512位
+        **参数解释** 不可点击的原因 **取值范围** 字符长度0-512位
 
         :param not_enable_click_description: The not_enable_click_description of this CheckRuleRiskInfoResponseInfo.
         :type not_enable_click_description: str

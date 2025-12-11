@@ -31,9 +31,9 @@ class SwitchAntivirusTaskRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务ID
+        :param task_id: **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
         :type task_id: str
-        :param task_name: 任务名称
+        :param task_name: **参数解释**: 任务名称 **取值范围**: 最大长度255个unicode字符。 
         :type task_name: str
         :param host_ids: 关联主机列表
         :type host_ids: list[str]
@@ -54,7 +54,7 @@ class SwitchAntivirusTaskRequestInfo:
     def task_id(self):
         r"""Gets the task_id of this SwitchAntivirusTaskRequestInfo.
 
-        任务ID
+        **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
 
         :return: The task_id of this SwitchAntivirusTaskRequestInfo.
         :rtype: str
@@ -65,7 +65,7 @@ class SwitchAntivirusTaskRequestInfo:
     def task_id(self, task_id):
         r"""Sets the task_id of this SwitchAntivirusTaskRequestInfo.
 
-        任务ID
+        **参数解释**： 任务ID **取值范围**: 字符长度1-64位 
 
         :param task_id: The task_id of this SwitchAntivirusTaskRequestInfo.
         :type task_id: str
@@ -76,7 +76,7 @@ class SwitchAntivirusTaskRequestInfo:
     def task_name(self):
         r"""Gets the task_name of this SwitchAntivirusTaskRequestInfo.
 
-        任务名称
+        **参数解释**: 任务名称 **取值范围**: 最大长度255个unicode字符。 
 
         :return: The task_name of this SwitchAntivirusTaskRequestInfo.
         :rtype: str
@@ -87,7 +87,7 @@ class SwitchAntivirusTaskRequestInfo:
     def task_name(self, task_name):
         r"""Sets the task_name of this SwitchAntivirusTaskRequestInfo.
 
-        任务名称
+        **参数解释**: 任务名称 **取值范围**: 最大长度255个unicode字符。 
 
         :param task_name: The task_name of this SwitchAntivirusTaskRequestInfo.
         :type task_name: str

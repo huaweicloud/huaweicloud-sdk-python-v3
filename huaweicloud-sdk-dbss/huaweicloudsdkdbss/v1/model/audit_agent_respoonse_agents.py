@@ -53,7 +53,7 @@ class AuditAgentRespoonseAgents:
 
         :param agent_id: agent ID
         :type agent_id: str
-        :param agent_type: agent 类型
+        :param agent_type: agent 类型 - DB: 数据库端 - APP: 应用端
         :type agent_type: str
         :param agent_os: agent OS
         :type agent_os: str
@@ -63,13 +63,13 @@ class AuditAgentRespoonseAgents:
         :type mem_threshold: int
         :param cpu_threshold: cpu阈值
         :type cpu_threshold: int
-        :param status: agent状态
+        :param status: agent状态 - 1：开启 - 0：关闭
         :type status: int
         :param agent_nic: agent网卡
         :type agent_nic: str
         :param db_name: 数据库名称
         :type db_name: str
-        :param datacap_status: 数据流量抓取状态
+        :param datacap_status: 数据流量抓取状态 - 1：运行中 - 2：休眠中 - 3：已停止 - 4：异常
         :type datacap_status: int
         :param agent_url: agent安装地址
         :type agent_url: str
@@ -145,7 +145,7 @@ class AuditAgentRespoonseAgents:
     def agent_type(self):
         r"""Gets the agent_type of this AuditAgentRespoonseAgents.
 
-        agent 类型
+        agent 类型 - DB: 数据库端 - APP: 应用端
 
         :return: The agent_type of this AuditAgentRespoonseAgents.
         :rtype: str
@@ -156,7 +156,7 @@ class AuditAgentRespoonseAgents:
     def agent_type(self, agent_type):
         r"""Sets the agent_type of this AuditAgentRespoonseAgents.
 
-        agent 类型
+        agent 类型 - DB: 数据库端 - APP: 应用端
 
         :param agent_type: The agent_type of this AuditAgentRespoonseAgents.
         :type agent_type: str
@@ -255,7 +255,7 @@ class AuditAgentRespoonseAgents:
     def status(self):
         r"""Gets the status of this AuditAgentRespoonseAgents.
 
-        agent状态
+        agent状态 - 1：开启 - 0：关闭
 
         :return: The status of this AuditAgentRespoonseAgents.
         :rtype: int
@@ -266,7 +266,7 @@ class AuditAgentRespoonseAgents:
     def status(self, status):
         r"""Sets the status of this AuditAgentRespoonseAgents.
 
-        agent状态
+        agent状态 - 1：开启 - 0：关闭
 
         :param status: The status of this AuditAgentRespoonseAgents.
         :type status: int
@@ -321,7 +321,7 @@ class AuditAgentRespoonseAgents:
     def datacap_status(self):
         r"""Gets the datacap_status of this AuditAgentRespoonseAgents.
 
-        数据流量抓取状态
+        数据流量抓取状态 - 1：运行中 - 2：休眠中 - 3：已停止 - 4：异常
 
         :return: The datacap_status of this AuditAgentRespoonseAgents.
         :rtype: int
@@ -332,7 +332,7 @@ class AuditAgentRespoonseAgents:
     def datacap_status(self, datacap_status):
         r"""Sets the datacap_status of this AuditAgentRespoonseAgents.
 
-        数据流量抓取状态
+        数据流量抓取状态 - 1：运行中 - 2：休眠中 - 3：已停止 - 4：异常
 
         :param datacap_status: The datacap_status of this AuditAgentRespoonseAgents.
         :type datacap_status: int

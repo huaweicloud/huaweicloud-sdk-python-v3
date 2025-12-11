@@ -20,7 +20,11 @@ class ListRestorableInstancesDetailsRequest:
         'backup_id': 'str',
         'restore_time': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'backup_restore_type': 'str',
+        'source_backup_schema': 'str',
+        'target_instance_id': 'str',
+        'instance_name': 'str'
     }
 
     attribute_map = {
@@ -29,10 +33,14 @@ class ListRestorableInstancesDetailsRequest:
         'backup_id': 'backup_id',
         'restore_time': 'restore_time',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'backup_restore_type': 'backup_restore_type',
+        'source_backup_schema': 'source_backup_schema',
+        'target_instance_id': 'target_instance_id',
+        'instance_name': 'instance_name'
     }
 
-    def __init__(self, x_language=None, source_instance_id=None, backup_id=None, restore_time=None, offset=None, limit=None):
+    def __init__(self, x_language=None, source_instance_id=None, backup_id=None, restore_time=None, offset=None, limit=None, backup_restore_type=None, source_backup_schema=None, target_instance_id=None, instance_name=None):
         r"""ListRestorableInstancesDetailsRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +57,14 @@ class ListRestorableInstancesDetailsRequest:
         :type offset: int
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
         :type limit: int
+        :param backup_restore_type: **参数解释**: 查备份恢复的粒度。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE   - DATABASE **默认取值**: INSTANCE
+        :type backup_restore_type: str
+        :param source_backup_schema: **参数解释**: 源实例的备份类型。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE **默认取值**: INSTANCE
+        :type source_backup_schema: str
+        :param target_instance_id: **参数解释**: 目标实例ID，通过此参数过滤实例列表。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        :type target_instance_id: str
+        :param instance_name: **参数解释**: 目标实例名称，通过此参数过滤实例列表。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        :type instance_name: str
         """
         
         
@@ -59,6 +75,10 @@ class ListRestorableInstancesDetailsRequest:
         self._restore_time = None
         self._offset = None
         self._limit = None
+        self._backup_restore_type = None
+        self._source_backup_schema = None
+        self._target_instance_id = None
+        self._instance_name = None
         self.discriminator = None
 
         if x_language is not None:
@@ -72,6 +92,14 @@ class ListRestorableInstancesDetailsRequest:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        if backup_restore_type is not None:
+            self.backup_restore_type = backup_restore_type
+        if source_backup_schema is not None:
+            self.source_backup_schema = source_backup_schema
+        if target_instance_id is not None:
+            self.target_instance_id = target_instance_id
+        if instance_name is not None:
+            self.instance_name = instance_name
 
     @property
     def x_language(self):
@@ -204,6 +232,94 @@ class ListRestorableInstancesDetailsRequest:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def backup_restore_type(self):
+        r"""Gets the backup_restore_type of this ListRestorableInstancesDetailsRequest.
+
+        **参数解释**: 查备份恢复的粒度。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE   - DATABASE **默认取值**: INSTANCE
+
+        :return: The backup_restore_type of this ListRestorableInstancesDetailsRequest.
+        :rtype: str
+        """
+        return self._backup_restore_type
+
+    @backup_restore_type.setter
+    def backup_restore_type(self, backup_restore_type):
+        r"""Sets the backup_restore_type of this ListRestorableInstancesDetailsRequest.
+
+        **参数解释**: 查备份恢复的粒度。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE   - DATABASE **默认取值**: INSTANCE
+
+        :param backup_restore_type: The backup_restore_type of this ListRestorableInstancesDetailsRequest.
+        :type backup_restore_type: str
+        """
+        self._backup_restore_type = backup_restore_type
+
+    @property
+    def source_backup_schema(self):
+        r"""Gets the source_backup_schema of this ListRestorableInstancesDetailsRequest.
+
+        **参数解释**: 源实例的备份类型。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE **默认取值**: INSTANCE
+
+        :return: The source_backup_schema of this ListRestorableInstancesDetailsRequest.
+        :rtype: str
+        """
+        return self._source_backup_schema
+
+    @source_backup_schema.setter
+    def source_backup_schema(self, source_backup_schema):
+        r"""Sets the source_backup_schema of this ListRestorableInstancesDetailsRequest.
+
+        **参数解释**: 源实例的备份类型。 **约束限制**: 不涉及。 **取值范围**:   - INSTANCE   - DATABASE_TABLE **默认取值**: INSTANCE
+
+        :param source_backup_schema: The source_backup_schema of this ListRestorableInstancesDetailsRequest.
+        :type source_backup_schema: str
+        """
+        self._source_backup_schema = source_backup_schema
+
+    @property
+    def target_instance_id(self):
+        r"""Gets the target_instance_id of this ListRestorableInstancesDetailsRequest.
+
+        **参数解释**: 目标实例ID，通过此参数过滤实例列表。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :return: The target_instance_id of this ListRestorableInstancesDetailsRequest.
+        :rtype: str
+        """
+        return self._target_instance_id
+
+    @target_instance_id.setter
+    def target_instance_id(self, target_instance_id):
+        r"""Sets the target_instance_id of this ListRestorableInstancesDetailsRequest.
+
+        **参数解释**: 目标实例ID，通过此参数过滤实例列表。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :param target_instance_id: The target_instance_id of this ListRestorableInstancesDetailsRequest.
+        :type target_instance_id: str
+        """
+        self._target_instance_id = target_instance_id
+
+    @property
+    def instance_name(self):
+        r"""Gets the instance_name of this ListRestorableInstancesDetailsRequest.
+
+        **参数解释**: 目标实例名称，通过此参数过滤实例列表。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :return: The instance_name of this ListRestorableInstancesDetailsRequest.
+        :rtype: str
+        """
+        return self._instance_name
+
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        r"""Sets the instance_name of this ListRestorableInstancesDetailsRequest.
+
+        **参数解释**: 目标实例名称，通过此参数过滤实例列表。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :param instance_name: The instance_name of this ListRestorableInstancesDetailsRequest.
+        :type instance_name: str
+        """
+        self._instance_name = instance_name
 
     def to_dict(self):
         result = {}

@@ -26,7 +26,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         'enable_pipeline': 'bool',
         'enable_authorization_token': 'bool',
         'enable_resource': 'bool',
-        'enable_list_v3': 'bool'
+        'enable_list_v3': 'bool',
+        'enable_image_quota': 'bool'
     }
 
     attribute_map = {
@@ -40,10 +41,11 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         'enable_pipeline': 'enable_pipeline',
         'enable_authorization_token': 'enable_authorization_token',
         'enable_resource': 'enable_resource',
-        'enable_list_v3': 'enable_list_v3'
+        'enable_list_v3': 'enable_list_v3',
+        'enable_image_quota': 'enable_image_quota'
     }
 
-    def __init__(self, enable_experience=None, enable_hss_service=None, enable_image_scan=None, enable_sm3=None, enable_image_sync=None, enable_cci_service=None, enable_image_label=None, enable_pipeline=None, enable_authorization_token=None, enable_resource=None, enable_list_v3=None):
+    def __init__(self, enable_experience=None, enable_hss_service=None, enable_image_scan=None, enable_sm3=None, enable_image_sync=None, enable_cci_service=None, enable_image_label=None, enable_pipeline=None, enable_authorization_token=None, enable_resource=None, enable_list_v3=None, enable_image_quota=None):
         r"""ShowShareFeatureGatesResponse
 
         The model defined in huaweicloud sdk
@@ -70,6 +72,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         :type enable_resource: bool
         :param enable_list_v3: 是否支持list v3接口
         :type enable_list_v3: bool
+        :param enable_image_quota: 是否启用镜像配额
+        :type enable_image_quota: bool
         """
         
         super().__init__()
@@ -85,6 +89,7 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         self._enable_authorization_token = None
         self._enable_resource = None
         self._enable_list_v3 = None
+        self._enable_image_quota = None
         self.discriminator = None
 
         if enable_experience is not None:
@@ -109,6 +114,8 @@ class ShowShareFeatureGatesResponse(SdkResponse):
             self.enable_resource = enable_resource
         if enable_list_v3 is not None:
             self.enable_list_v3 = enable_list_v3
+        if enable_image_quota is not None:
+            self.enable_image_quota = enable_image_quota
 
     @property
     def enable_experience(self):
@@ -351,6 +358,28 @@ class ShowShareFeatureGatesResponse(SdkResponse):
         :type enable_list_v3: bool
         """
         self._enable_list_v3 = enable_list_v3
+
+    @property
+    def enable_image_quota(self):
+        r"""Gets the enable_image_quota of this ShowShareFeatureGatesResponse.
+
+        是否启用镜像配额
+
+        :return: The enable_image_quota of this ShowShareFeatureGatesResponse.
+        :rtype: bool
+        """
+        return self._enable_image_quota
+
+    @enable_image_quota.setter
+    def enable_image_quota(self, enable_image_quota):
+        r"""Sets the enable_image_quota of this ShowShareFeatureGatesResponse.
+
+        是否启用镜像配额
+
+        :param enable_image_quota: The enable_image_quota of this ShowShareFeatureGatesResponse.
+        :type enable_image_quota: bool
+        """
+        self._enable_image_quota = enable_image_quota
 
     def to_dict(self):
         import warnings

@@ -26,6 +26,10 @@ class MysqlProxyV3:
         'vcpus': 'str',
         'ram': 'str',
         'node_num': 'int',
+        'type': 'str',
+        'created_at': 'str',
+        'updated_at': 'str',
+        'support_ap_node': 'bool',
         'mode': 'str',
         'nodes': 'list[MysqlProxyNodes]',
         'flavor_ref': 'str',
@@ -54,6 +58,10 @@ class MysqlProxyV3:
         'vcpus': 'vcpus',
         'ram': 'ram',
         'node_num': 'node_num',
+        'type': 'type',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at',
+        'support_ap_node': 'support_ap_node',
         'mode': 'mode',
         'nodes': 'nodes',
         'flavor_ref': 'flavor_ref',
@@ -70,7 +78,7 @@ class MysqlProxyV3:
         'new_node_weight': 'new_node_weight'
     }
 
-    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None, consistence_mode=None, subnet_id=None, ssl_option=None, new_node_auto_add_status=None, new_node_weight=None):
+    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, type=None, created_at=None, updated_at=None, support_ap_node=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None, consistence_mode=None, subnet_id=None, ssl_option=None, new_node_auto_add_status=None, new_node_weight=None):
         r"""MysqlProxyV3
 
         The model defined in huaweicloud sdk
@@ -97,6 +105,14 @@ class MysqlProxyV3:
         :type ram: str
         :param node_num: Proxy节点个数。
         :type node_num: int
+        :param type: **参数解释**：  数据库代理读写模式。  **取值范围**：  - readwrite：读写模式 - readonly：只读模式 
+        :type type: str
+        :param created_at: 数据库代理创建时间。
+        :type created_at: str
+        :param updated_at: 数据库代更新时间。
+        :type updated_at: str
+        :param support_ap_node: 是否支持HTAP节点。
+        :type support_ap_node: bool
         :param mode: Proxy主备模式，取值范围：Cluster。
         :type mode: str
         :param nodes: Proxy节点信息。
@@ -140,6 +156,10 @@ class MysqlProxyV3:
         self._vcpus = None
         self._ram = None
         self._node_num = None
+        self._type = None
+        self._created_at = None
+        self._updated_at = None
+        self._support_ap_node = None
         self._mode = None
         self._nodes = None
         self._flavor_ref = None
@@ -178,6 +198,14 @@ class MysqlProxyV3:
             self.ram = ram
         if node_num is not None:
             self.node_num = node_num
+        if type is not None:
+            self.type = type
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
+        if support_ap_node is not None:
+            self.support_ap_node = support_ap_node
         if mode is not None:
             self.mode = mode
         if nodes is not None:
@@ -448,6 +476,94 @@ class MysqlProxyV3:
         :type node_num: int
         """
         self._node_num = node_num
+
+    @property
+    def type(self):
+        r"""Gets the type of this MysqlProxyV3.
+
+        **参数解释**：  数据库代理读写模式。  **取值范围**：  - readwrite：读写模式 - readonly：只读模式 
+
+        :return: The type of this MysqlProxyV3.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this MysqlProxyV3.
+
+        **参数解释**：  数据库代理读写模式。  **取值范围**：  - readwrite：读写模式 - readonly：只读模式 
+
+        :param type: The type of this MysqlProxyV3.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def created_at(self):
+        r"""Gets the created_at of this MysqlProxyV3.
+
+        数据库代理创建时间。
+
+        :return: The created_at of this MysqlProxyV3.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        r"""Sets the created_at of this MysqlProxyV3.
+
+        数据库代理创建时间。
+
+        :param created_at: The created_at of this MysqlProxyV3.
+        :type created_at: str
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        r"""Gets the updated_at of this MysqlProxyV3.
+
+        数据库代更新时间。
+
+        :return: The updated_at of this MysqlProxyV3.
+        :rtype: str
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        r"""Sets the updated_at of this MysqlProxyV3.
+
+        数据库代更新时间。
+
+        :param updated_at: The updated_at of this MysqlProxyV3.
+        :type updated_at: str
+        """
+        self._updated_at = updated_at
+
+    @property
+    def support_ap_node(self):
+        r"""Gets the support_ap_node of this MysqlProxyV3.
+
+        是否支持HTAP节点。
+
+        :return: The support_ap_node of this MysqlProxyV3.
+        :rtype: bool
+        """
+        return self._support_ap_node
+
+    @support_ap_node.setter
+    def support_ap_node(self, support_ap_node):
+        r"""Sets the support_ap_node of this MysqlProxyV3.
+
+        是否支持HTAP节点。
+
+        :param support_ap_node: The support_ap_node of this MysqlProxyV3.
+        :type support_ap_node: bool
+        """
+        self._support_ap_node = support_ap_node
 
     @property
     def mode(self):

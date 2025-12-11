@@ -25,9 +25,11 @@ class SmartDocumentRecognizerRequestBody:
         'return_excel': 'bool',
         'form': 'bool',
         'formula': 'bool',
+        'image_layout': 'bool',
         'kv_map': 'str',
         'erase_seal': 'bool',
-        'pdf_page_number': 'int'
+        'pdf_page_number': 'int',
+        'character_mode': 'bool'
     }
 
     attribute_map = {
@@ -41,12 +43,14 @@ class SmartDocumentRecognizerRequestBody:
         'return_excel': 'return_excel',
         'form': 'form',
         'formula': 'formula',
+        'image_layout': 'image_layout',
         'kv_map': 'kv_map',
         'erase_seal': 'erase_seal',
-        'pdf_page_number': 'pdf_page_number'
+        'pdf_page_number': 'pdf_page_number',
+        'character_mode': 'character_mode'
     }
 
-    def __init__(self, data=None, url=None, single_orientation_mode=None, language=None, kv=None, table=None, layout=None, return_excel=None, form=None, formula=None, kv_map=None, erase_seal=None, pdf_page_number=None):
+    def __init__(self, data=None, url=None, single_orientation_mode=None, language=None, kv=None, table=None, layout=None, return_excel=None, form=None, formula=None, image_layout=None, kv_map=None, erase_seal=None, pdf_page_number=None, character_mode=None):
         r"""SmartDocumentRecognizerRequestBody
 
         The model defined in huaweicloud sdk
@@ -71,12 +75,16 @@ class SmartDocumentRecognizerRequestBody:
         :type form: bool
         :param formula: 是否进行公式识别，识别结果为latex序列。若是，结果会以“formula_result”这一关键字返回。  - 开启公式识别后会降低响应速度。 - 当前仅支持3行以内公式识别，不支持3行以上的多行公式。 
         :type formula: bool
+        :param image_layout: 是否对文档中的图片进行二次版面分析。若是，结果会在“layout_result”中返回，并带有“image_layout”的关键字。 
+        :type image_layout: bool
         :param kv_map: 需要传入字典的json序列化后字符串，用于对kv_result中的特定key值进行归一化映射。例如，kv_result中包含{\&quot;名称\&quot;：\&quot;小明\&quot;}的键值对，若传入{\&quot;名称\&quot;：\&quot;姓名\&quot;}的kv_map，则返回结果为{“姓名”：“小明”}。  &gt; 参数传入示例： - \&quot;kv_map\&quot;:\&quot;{\\\&quot;名称\\\&quot;:\\\&quot;姓名\\\&quot;}\&quot; 
         :type kv_map: str
         :param erase_seal: 是否打开印章擦除功能。可选值包括： - true：打开印章擦除功能。 - false：关闭印章擦除功能。  开启后，可提升印章遮挡区域的文字识别精度。 
         :type erase_seal: bool
         :param pdf_page_number: 指定PDF页码识别。传入该参数时，则识别指定页码的内容。如果不传该参数，则默认识别第1页。 
         :type pdf_page_number: int
+        :param character_mode: 是否返回单字符信息。开启后，单字符识别结果将会在“ocr_result”中的“char_list”返回单字符信息。如果不传入该参数，则默认不返回单字符信息。 
+        :type character_mode: bool
         """
         
         
@@ -91,9 +99,11 @@ class SmartDocumentRecognizerRequestBody:
         self._return_excel = None
         self._form = None
         self._formula = None
+        self._image_layout = None
         self._kv_map = None
         self._erase_seal = None
         self._pdf_page_number = None
+        self._character_mode = None
         self.discriminator = None
 
         if data is not None:
@@ -116,12 +126,16 @@ class SmartDocumentRecognizerRequestBody:
             self.form = form
         if formula is not None:
             self.formula = formula
+        if image_layout is not None:
+            self.image_layout = image_layout
         if kv_map is not None:
             self.kv_map = kv_map
         if erase_seal is not None:
             self.erase_seal = erase_seal
         if pdf_page_number is not None:
             self.pdf_page_number = pdf_page_number
+        if character_mode is not None:
+            self.character_mode = character_mode
 
     @property
     def data(self):
@@ -344,6 +358,28 @@ class SmartDocumentRecognizerRequestBody:
         self._formula = formula
 
     @property
+    def image_layout(self):
+        r"""Gets the image_layout of this SmartDocumentRecognizerRequestBody.
+
+        是否对文档中的图片进行二次版面分析。若是，结果会在“layout_result”中返回，并带有“image_layout”的关键字。 
+
+        :return: The image_layout of this SmartDocumentRecognizerRequestBody.
+        :rtype: bool
+        """
+        return self._image_layout
+
+    @image_layout.setter
+    def image_layout(self, image_layout):
+        r"""Sets the image_layout of this SmartDocumentRecognizerRequestBody.
+
+        是否对文档中的图片进行二次版面分析。若是，结果会在“layout_result”中返回，并带有“image_layout”的关键字。 
+
+        :param image_layout: The image_layout of this SmartDocumentRecognizerRequestBody.
+        :type image_layout: bool
+        """
+        self._image_layout = image_layout
+
+    @property
     def kv_map(self):
         r"""Gets the kv_map of this SmartDocumentRecognizerRequestBody.
 
@@ -408,6 +444,28 @@ class SmartDocumentRecognizerRequestBody:
         :type pdf_page_number: int
         """
         self._pdf_page_number = pdf_page_number
+
+    @property
+    def character_mode(self):
+        r"""Gets the character_mode of this SmartDocumentRecognizerRequestBody.
+
+        是否返回单字符信息。开启后，单字符识别结果将会在“ocr_result”中的“char_list”返回单字符信息。如果不传入该参数，则默认不返回单字符信息。 
+
+        :return: The character_mode of this SmartDocumentRecognizerRequestBody.
+        :rtype: bool
+        """
+        return self._character_mode
+
+    @character_mode.setter
+    def character_mode(self, character_mode):
+        r"""Sets the character_mode of this SmartDocumentRecognizerRequestBody.
+
+        是否返回单字符信息。开启后，单字符识别结果将会在“ocr_result”中的“char_list”返回单字符信息。如果不传入该参数，则默认不返回单字符信息。 
+
+        :param character_mode: The character_mode of this SmartDocumentRecognizerRequestBody.
+        :type character_mode: bool
+        """
+        self._character_mode = character_mode
 
     def to_dict(self):
         result = {}

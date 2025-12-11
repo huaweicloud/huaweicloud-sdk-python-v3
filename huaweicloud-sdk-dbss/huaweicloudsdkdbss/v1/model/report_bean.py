@@ -67,7 +67,7 @@ class ReportBean:
         :type percentum: int
         :param start_time: 开始时间
         :type start_time: str
-        :param template_type: 报表类型 - PDF - ZIP
+        :param template_type: 报表类型 - PDF: pdf - ZIP: zip
         :type template_type: str
         :param type: 周期 - AUDIT_REPORT_DAY: 按天 - AUDIT_REPORT_WEEK： 按周 - AUDIT_REPORT_MONTH： 按月 - AUDIT_REPORT_YEAR：按年 - AUDIT_REPORT_REAL_TIME：立即
         :type type: str
@@ -318,7 +318,7 @@ class ReportBean:
     def template_type(self):
         r"""Gets the template_type of this ReportBean.
 
-        报表类型 - PDF - ZIP
+        报表类型 - PDF: pdf - ZIP: zip
 
         :return: The template_type of this ReportBean.
         :rtype: str
@@ -329,7 +329,7 @@ class ReportBean:
     def template_type(self, template_type):
         r"""Sets the template_type of this ReportBean.
 
-        报表类型 - PDF - ZIP
+        报表类型 - PDF: pdf - ZIP: zip
 
         :param template_type: The template_type of this ReportBean.
         :type template_type: str

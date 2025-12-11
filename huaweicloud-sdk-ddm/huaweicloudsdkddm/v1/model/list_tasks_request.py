@@ -16,15 +16,19 @@ class ListTasksRequest:
 
     openapi_types = {
         'start_time': 'float',
-        'end_time': 'float'
+        'end_time': 'float',
+        'offset': 'int',
+        'limit': 'int'
     }
 
     attribute_map = {
         'start_time': 'start_time',
-        'end_time': 'end_time'
+        'end_time': 'end_time',
+        'offset': 'offset',
+        'limit': 'limit'
     }
 
-    def __init__(self, start_time=None, end_time=None):
+    def __init__(self, start_time=None, end_time=None, offset=None, limit=None):
         r"""ListTasksRequest
 
         The model defined in huaweicloud sdk
@@ -33,16 +37,26 @@ class ListTasksRequest:
         :type start_time: float
         :param end_time: 开始时间。
         :type end_time: float
+        :param offset: offset
+        :type offset: int
+        :param limit: query
+        :type limit: int
         """
         
         
 
         self._start_time = None
         self._end_time = None
+        self._offset = None
+        self._limit = None
         self.discriminator = None
 
         self.start_time = start_time
         self.end_time = end_time
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
 
     @property
     def start_time(self):
@@ -87,6 +101,50 @@ class ListTasksRequest:
         :type end_time: float
         """
         self._end_time = end_time
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ListTasksRequest.
+
+        offset
+
+        :return: The offset of this ListTasksRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ListTasksRequest.
+
+        offset
+
+        :param offset: The offset of this ListTasksRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListTasksRequest.
+
+        query
+
+        :return: The limit of this ListTasksRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListTasksRequest.
+
+        query
+
+        :param limit: The limit of this ListTasksRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     def to_dict(self):
         result = {}

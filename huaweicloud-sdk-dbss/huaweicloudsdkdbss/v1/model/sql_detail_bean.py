@@ -141,7 +141,7 @@ class SqlDetailBean:
         :type db_service_name: str
         :param db_session_id: 数据库连接ID
         :type db_session_id: str
-        :param db_type: 数据库类型
+        :param db_type: 数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG： DAMENG - TAURUS: Taurus DB - DWS: GaussDB(DWS) - KINGBASE: Kingbase - GAUSSDBOPENGAUSS：GaussDB/openGauss - GREENPLUM： Greenplum - HIGHGO: HIGHGO - SHENTONG： ShenTong - GBASE8A: GBase 8a - GBASE8S： GBase 8s - GBASEXDM： GBase XDM - MONGODB: MongoDB - DDS： DDS(MongoDB)
         :type db_type: str
         :param db_user: 数据库用户
         :type db_user: str
@@ -682,7 +682,7 @@ class SqlDetailBean:
     def db_type(self):
         r"""Gets the db_type of this SqlDetailBean.
 
-        数据库类型
+        数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG： DAMENG - TAURUS: Taurus DB - DWS: GaussDB(DWS) - KINGBASE: Kingbase - GAUSSDBOPENGAUSS：GaussDB/openGauss - GREENPLUM： Greenplum - HIGHGO: HIGHGO - SHENTONG： ShenTong - GBASE8A: GBase 8a - GBASE8S： GBase 8s - GBASEXDM： GBase XDM - MONGODB: MongoDB - DDS： DDS(MongoDB)
 
         :return: The db_type of this SqlDetailBean.
         :rtype: str
@@ -693,7 +693,7 @@ class SqlDetailBean:
     def db_type(self, db_type):
         r"""Sets the db_type of this SqlDetailBean.
 
-        数据库类型
+        数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG： DAMENG - TAURUS: Taurus DB - DWS: GaussDB(DWS) - KINGBASE: Kingbase - GAUSSDBOPENGAUSS：GaussDB/openGauss - GREENPLUM： Greenplum - HIGHGO: HIGHGO - SHENTONG： ShenTong - GBASE8A: GBase 8a - GBASE8S： GBase 8s - GBASEXDM： GBase XDM - MONGODB: MongoDB - DDS： DDS(MongoDB)
 
         :param db_type: The db_type of this SqlDetailBean.
         :type db_type: str

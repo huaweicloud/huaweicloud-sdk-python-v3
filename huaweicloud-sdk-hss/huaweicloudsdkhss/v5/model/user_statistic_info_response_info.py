@@ -29,9 +29,9 @@ class UserStatisticInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 账号名称，参考windows文件命名规则，支持字母、数字、下划线，特殊字符!@.-等
+        :param user_name: **参数解释**: 资产中的账号名称，用于唯一标识账号 **取值范围**: 字符长度1-64位，参考Windows文件命名规则，支持字母、数字、下划线、中文及!@.-等特殊字符，不含中文标点符号 
         :type user_name: str
-        :param num: 当前账号的主机数量
+        :param num: **参数解释**: 当前账号关联的资产（主机/容器）数量 **取值范围**: 非负整数，最小值0；单位：台（主机）/个（容器） 
         :type num: int
         """
         
@@ -50,7 +50,7 @@ class UserStatisticInfoResponseInfo:
     def user_name(self):
         r"""Gets the user_name of this UserStatisticInfoResponseInfo.
 
-        账号名称，参考windows文件命名规则，支持字母、数字、下划线，特殊字符!@.-等
+        **参数解释**: 资产中的账号名称，用于唯一标识账号 **取值范围**: 字符长度1-64位，参考Windows文件命名规则，支持字母、数字、下划线、中文及!@.-等特殊字符，不含中文标点符号 
 
         :return: The user_name of this UserStatisticInfoResponseInfo.
         :rtype: str
@@ -61,7 +61,7 @@ class UserStatisticInfoResponseInfo:
     def user_name(self, user_name):
         r"""Sets the user_name of this UserStatisticInfoResponseInfo.
 
-        账号名称，参考windows文件命名规则，支持字母、数字、下划线，特殊字符!@.-等
+        **参数解释**: 资产中的账号名称，用于唯一标识账号 **取值范围**: 字符长度1-64位，参考Windows文件命名规则，支持字母、数字、下划线、中文及!@.-等特殊字符，不含中文标点符号 
 
         :param user_name: The user_name of this UserStatisticInfoResponseInfo.
         :type user_name: str
@@ -72,7 +72,7 @@ class UserStatisticInfoResponseInfo:
     def num(self):
         r"""Gets the num of this UserStatisticInfoResponseInfo.
 
-        当前账号的主机数量
+        **参数解释**: 当前账号关联的资产（主机/容器）数量 **取值范围**: 非负整数，最小值0；单位：台（主机）/个（容器） 
 
         :return: The num of this UserStatisticInfoResponseInfo.
         :rtype: int
@@ -83,7 +83,7 @@ class UserStatisticInfoResponseInfo:
     def num(self, num):
         r"""Sets the num of this UserStatisticInfoResponseInfo.
 
-        当前账号的主机数量
+        **参数解释**: 当前账号关联的资产（主机/容器）数量 **取值范围**: 非负整数，最小值0；单位：台（主机）/个（容器） 
 
         :param num: The num of this UserStatisticInfoResponseInfo.
         :type num: int

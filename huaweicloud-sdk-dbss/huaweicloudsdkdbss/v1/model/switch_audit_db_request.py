@@ -35,7 +35,7 @@ class SwitchAuditDbRequest:
         :type id: str
         :param status: 开关状态 - ON:开启 - OFF:关闭
         :type status: str
-        :param lts_audit_switch: 是否关闭LTS审计,DWS数据库场景使用。若用户未选择关闭LTS审计,则不做操作。 - 1 :是 - 0 或 其它:保持原状
+        :param lts_audit_switch: 是否关闭LTS审计,DWS数据库场景使用。若用户未选择关闭LTS审计,则不做操作。 - 1 : 是 - 0 或 其它: 保持原状
         :type lts_audit_switch: int
         """
         
@@ -99,7 +99,7 @@ class SwitchAuditDbRequest:
     def lts_audit_switch(self):
         r"""Gets the lts_audit_switch of this SwitchAuditDbRequest.
 
-        是否关闭LTS审计,DWS数据库场景使用。若用户未选择关闭LTS审计,则不做操作。 - 1 :是 - 0 或 其它:保持原状
+        是否关闭LTS审计,DWS数据库场景使用。若用户未选择关闭LTS审计,则不做操作。 - 1 : 是 - 0 或 其它: 保持原状
 
         :return: The lts_audit_switch of this SwitchAuditDbRequest.
         :rtype: int
@@ -110,7 +110,7 @@ class SwitchAuditDbRequest:
     def lts_audit_switch(self, lts_audit_switch):
         r"""Sets the lts_audit_switch of this SwitchAuditDbRequest.
 
-        是否关闭LTS审计,DWS数据库场景使用。若用户未选择关闭LTS审计,则不做操作。 - 1 :是 - 0 或 其它:保持原状
+        是否关闭LTS审计,DWS数据库场景使用。若用户未选择关闭LTS审计,则不做操作。 - 1 : 是 - 0 或 其它: 保持原状
 
         :param lts_audit_switch: The lts_audit_switch of this SwitchAuditDbRequest.
         :type lts_audit_switch: int

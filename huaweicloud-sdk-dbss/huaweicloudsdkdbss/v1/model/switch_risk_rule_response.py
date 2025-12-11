@@ -28,7 +28,7 @@ class SwitchRiskRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 响应状态
+        :param status: 响应状态 - SUCCESS: 成功  - FAILED: 失败
         :type status: str
         """
         
@@ -44,7 +44,7 @@ class SwitchRiskRuleResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this SwitchRiskRuleResponse.
 
-        响应状态
+        响应状态 - SUCCESS: 成功  - FAILED: 失败
 
         :return: The status of this SwitchRiskRuleResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class SwitchRiskRuleResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this SwitchRiskRuleResponse.
 
-        响应状态
+        响应状态 - SUCCESS: 成功  - FAILED: 失败
 
         :param status: The status of this SwitchRiskRuleResponse.
         :type status: str

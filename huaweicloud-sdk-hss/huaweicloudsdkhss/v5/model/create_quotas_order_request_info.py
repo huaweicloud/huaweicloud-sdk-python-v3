@@ -37,17 +37,17 @@ class CreateQuotasOrderRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_spec_code: 资源规格   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        :param resource_spec_code: **参数解释**： 资源规格 **约束限制**: 不涉及 **取值范围**： - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
         :type resource_spec_code: str
-        :param period_type: 订购周期类型   - 2 : 月   - 3 : 年
+        :param period_type: **参数解释**： 订购周期类型 **约束限制**: 不涉及 **取值范围**： - 2 : 月 - 3 : 年 **默认取值**: 不涉及
         :type period_type: int
-        :param period_num: 订购周期数
+        :param period_num: **参数解释**： 订购周期数 **约束限制**: 不涉及 **取值范围**： 整数类型1-1000 **默认取值**: 不涉及
         :type period_num: int
-        :param is_auto_renew: 是否支持自动续订，true表示自动续订，false表示不自动续订，默认值为false
+        :param is_auto_renew: **参数解释**： 是否支持自动续订，true表示自动续订，false表示不自动续订 **约束限制**: 不涉及 **取值范围**： true/false **默认取值**: false
         :type is_auto_renew: bool
-        :param is_auto_pay: 是否支持自动支付，true表示支持，false表示不支持，默认值为false
+        :param is_auto_pay: **参数解释**： 是否支持自动支付，true表示支持，false表示不支持 **约束限制**: 不涉及 **取值范围**： true/false **默认取值**: false
         :type is_auto_pay: bool
-        :param subscription_num: 订购数量
+        :param subscription_num: **参数解释**： 订购数量 **约束限制**: 不涉及 **取值范围**： 整数类型1-500 **默认取值**: 不涉及
         :type subscription_num: int
         """
         
@@ -74,7 +74,7 @@ class CreateQuotasOrderRequestInfo:
     def resource_spec_code(self):
         r"""Gets the resource_spec_code of this CreateQuotasOrderRequestInfo.
 
-        资源规格   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        **参数解释**： 资源规格 **约束限制**: 不涉及 **取值范围**： - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
 
         :return: The resource_spec_code of this CreateQuotasOrderRequestInfo.
         :rtype: str
@@ -85,7 +85,7 @@ class CreateQuotasOrderRequestInfo:
     def resource_spec_code(self, resource_spec_code):
         r"""Sets the resource_spec_code of this CreateQuotasOrderRequestInfo.
 
-        资源规格   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
+        **参数解释**： 资源规格 **约束限制**: 不涉及 **取值范围**： - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
 
         :param resource_spec_code: The resource_spec_code of this CreateQuotasOrderRequestInfo.
         :type resource_spec_code: str
@@ -96,7 +96,7 @@ class CreateQuotasOrderRequestInfo:
     def period_type(self):
         r"""Gets the period_type of this CreateQuotasOrderRequestInfo.
 
-        订购周期类型   - 2 : 月   - 3 : 年
+        **参数解释**： 订购周期类型 **约束限制**: 不涉及 **取值范围**： - 2 : 月 - 3 : 年 **默认取值**: 不涉及
 
         :return: The period_type of this CreateQuotasOrderRequestInfo.
         :rtype: int
@@ -107,7 +107,7 @@ class CreateQuotasOrderRequestInfo:
     def period_type(self, period_type):
         r"""Sets the period_type of this CreateQuotasOrderRequestInfo.
 
-        订购周期类型   - 2 : 月   - 3 : 年
+        **参数解释**： 订购周期类型 **约束限制**: 不涉及 **取值范围**： - 2 : 月 - 3 : 年 **默认取值**: 不涉及
 
         :param period_type: The period_type of this CreateQuotasOrderRequestInfo.
         :type period_type: int
@@ -118,7 +118,7 @@ class CreateQuotasOrderRequestInfo:
     def period_num(self):
         r"""Gets the period_num of this CreateQuotasOrderRequestInfo.
 
-        订购周期数
+        **参数解释**： 订购周期数 **约束限制**: 不涉及 **取值范围**： 整数类型1-1000 **默认取值**: 不涉及
 
         :return: The period_num of this CreateQuotasOrderRequestInfo.
         :rtype: int
@@ -129,7 +129,7 @@ class CreateQuotasOrderRequestInfo:
     def period_num(self, period_num):
         r"""Sets the period_num of this CreateQuotasOrderRequestInfo.
 
-        订购周期数
+        **参数解释**： 订购周期数 **约束限制**: 不涉及 **取值范围**： 整数类型1-1000 **默认取值**: 不涉及
 
         :param period_num: The period_num of this CreateQuotasOrderRequestInfo.
         :type period_num: int
@@ -140,7 +140,7 @@ class CreateQuotasOrderRequestInfo:
     def is_auto_renew(self):
         r"""Gets the is_auto_renew of this CreateQuotasOrderRequestInfo.
 
-        是否支持自动续订，true表示自动续订，false表示不自动续订，默认值为false
+        **参数解释**： 是否支持自动续订，true表示自动续订，false表示不自动续订 **约束限制**: 不涉及 **取值范围**： true/false **默认取值**: false
 
         :return: The is_auto_renew of this CreateQuotasOrderRequestInfo.
         :rtype: bool
@@ -151,7 +151,7 @@ class CreateQuotasOrderRequestInfo:
     def is_auto_renew(self, is_auto_renew):
         r"""Sets the is_auto_renew of this CreateQuotasOrderRequestInfo.
 
-        是否支持自动续订，true表示自动续订，false表示不自动续订，默认值为false
+        **参数解释**： 是否支持自动续订，true表示自动续订，false表示不自动续订 **约束限制**: 不涉及 **取值范围**： true/false **默认取值**: false
 
         :param is_auto_renew: The is_auto_renew of this CreateQuotasOrderRequestInfo.
         :type is_auto_renew: bool
@@ -162,7 +162,7 @@ class CreateQuotasOrderRequestInfo:
     def is_auto_pay(self):
         r"""Gets the is_auto_pay of this CreateQuotasOrderRequestInfo.
 
-        是否支持自动支付，true表示支持，false表示不支持，默认值为false
+        **参数解释**： 是否支持自动支付，true表示支持，false表示不支持 **约束限制**: 不涉及 **取值范围**： true/false **默认取值**: false
 
         :return: The is_auto_pay of this CreateQuotasOrderRequestInfo.
         :rtype: bool
@@ -173,7 +173,7 @@ class CreateQuotasOrderRequestInfo:
     def is_auto_pay(self, is_auto_pay):
         r"""Sets the is_auto_pay of this CreateQuotasOrderRequestInfo.
 
-        是否支持自动支付，true表示支持，false表示不支持，默认值为false
+        **参数解释**： 是否支持自动支付，true表示支持，false表示不支持 **约束限制**: 不涉及 **取值范围**： true/false **默认取值**: false
 
         :param is_auto_pay: The is_auto_pay of this CreateQuotasOrderRequestInfo.
         :type is_auto_pay: bool
@@ -184,7 +184,7 @@ class CreateQuotasOrderRequestInfo:
     def subscription_num(self):
         r"""Gets the subscription_num of this CreateQuotasOrderRequestInfo.
 
-        订购数量
+        **参数解释**： 订购数量 **约束限制**: 不涉及 **取值范围**： 整数类型1-500 **默认取值**: 不涉及
 
         :return: The subscription_num of this CreateQuotasOrderRequestInfo.
         :rtype: int
@@ -195,7 +195,7 @@ class CreateQuotasOrderRequestInfo:
     def subscription_num(self, subscription_num):
         r"""Sets the subscription_num of this CreateQuotasOrderRequestInfo.
 
-        订购数量
+        **参数解释**： 订购数量 **约束限制**: 不涉及 **取值范围**： 整数类型1-500 **默认取值**: 不涉及
 
         :param subscription_num: The subscription_num of this CreateQuotasOrderRequestInfo.
         :type subscription_num: int

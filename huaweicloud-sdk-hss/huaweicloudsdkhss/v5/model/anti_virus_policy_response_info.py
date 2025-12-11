@@ -63,7 +63,7 @@ class AntiVirusPolicyResponseInfo:
         :type policy_id: str
         :param policy_name: 策略名称
         :type policy_name: str
-        :param start_type: 启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        :param start_type: **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
         :type start_type: str
         :param scan_period: 启动类型，包含如下:   - day ：每天   - week : 每周   - month : 每月
         :type scan_period: str
@@ -81,7 +81,7 @@ class AntiVirusPolicyResponseInfo:
         :type scan_dir: str
         :param ignore_dir: 排除目录，多个用;分隔
         :type ignore_dir: str
-        :param action: 处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        :param action: **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
         :type action: str
         :param invalidate: 失效，包含如下:   - true ：是   - fasle ：否
         :type invalidate: bool
@@ -199,7 +199,7 @@ class AntiVirusPolicyResponseInfo:
     def start_type(self):
         r"""Gets the start_type of this AntiVirusPolicyResponseInfo.
 
-        启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
 
         :return: The start_type of this AntiVirusPolicyResponseInfo.
         :rtype: str
@@ -210,7 +210,7 @@ class AntiVirusPolicyResponseInfo:
     def start_type(self, start_type):
         r"""Sets the start_type of this AntiVirusPolicyResponseInfo.
 
-        启动类型，包含如下:   - now : 立即启动   - later : 稍后启动   - period : 周期启动
+        **参数解释**： 启动类型 **取值范围**： 包含如下   - now：立即启动   - later：稍后启动   - period：周期启动 
 
         :param start_type: The start_type of this AntiVirusPolicyResponseInfo.
         :type start_type: str
@@ -397,7 +397,7 @@ class AntiVirusPolicyResponseInfo:
     def action(self):
         r"""Gets the action of this AntiVirusPolicyResponseInfo.
 
-        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
 
         :return: The action of this AntiVirusPolicyResponseInfo.
         :rtype: str
@@ -408,7 +408,7 @@ class AntiVirusPolicyResponseInfo:
     def action(self, action):
         r"""Sets the action of this AntiVirusPolicyResponseInfo.
 
-        处置动作，包含如下:   - auto：自动处置   - manual：人工处置
+        **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
 
         :param action: The action of this AntiVirusPolicyResponseInfo.
         :type action: str

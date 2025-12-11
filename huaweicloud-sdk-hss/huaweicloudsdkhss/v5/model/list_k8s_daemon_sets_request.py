@@ -41,11 +41,11 @@ class ListK8sDaemonSetsRequest:
         :type enterprise_project_id: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param daemonset_name: daemonset名称
+        :param daemonset_name: **参数解释**: daemonset名称，用作查询参数。 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 无 
         :type daemonset_name: str
-        :param namespace_name: 命名空间名称
+        :param namespace_name: **参数解释**: 命名空间名称，用作查询参数。 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 无 
         :type namespace_name: str
-        :param cluster_name: 所属集群名称
+        :param cluster_name: **参数解释**: 所属集群名称，用作查询参数。 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 无 
         :type cluster_name: str
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
@@ -121,7 +121,7 @@ class ListK8sDaemonSetsRequest:
     def daemonset_name(self):
         r"""Gets the daemonset_name of this ListK8sDaemonSetsRequest.
 
-        daemonset名称
+        **参数解释**: daemonset名称，用作查询参数。 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 无 
 
         :return: The daemonset_name of this ListK8sDaemonSetsRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListK8sDaemonSetsRequest:
     def daemonset_name(self, daemonset_name):
         r"""Sets the daemonset_name of this ListK8sDaemonSetsRequest.
 
-        daemonset名称
+        **参数解释**: daemonset名称，用作查询参数。 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 无 
 
         :param daemonset_name: The daemonset_name of this ListK8sDaemonSetsRequest.
         :type daemonset_name: str
@@ -143,7 +143,7 @@ class ListK8sDaemonSetsRequest:
     def namespace_name(self):
         r"""Gets the namespace_name of this ListK8sDaemonSetsRequest.
 
-        命名空间名称
+        **参数解释**: 命名空间名称，用作查询参数。 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 无 
 
         :return: The namespace_name of this ListK8sDaemonSetsRequest.
         :rtype: str
@@ -154,7 +154,7 @@ class ListK8sDaemonSetsRequest:
     def namespace_name(self, namespace_name):
         r"""Sets the namespace_name of this ListK8sDaemonSetsRequest.
 
-        命名空间名称
+        **参数解释**: 命名空间名称，用作查询参数。 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 无 
 
         :param namespace_name: The namespace_name of this ListK8sDaemonSetsRequest.
         :type namespace_name: str
@@ -165,7 +165,7 @@ class ListK8sDaemonSetsRequest:
     def cluster_name(self):
         r"""Gets the cluster_name of this ListK8sDaemonSetsRequest.
 
-        所属集群名称
+        **参数解释**: 所属集群名称，用作查询参数。 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 无 
 
         :return: The cluster_name of this ListK8sDaemonSetsRequest.
         :rtype: str
@@ -176,7 +176,7 @@ class ListK8sDaemonSetsRequest:
     def cluster_name(self, cluster_name):
         r"""Sets the cluster_name of this ListK8sDaemonSetsRequest.
 
-        所属集群名称
+        **参数解释**: 所属集群名称，用作查询参数。 **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 无 
 
         :param cluster_name: The cluster_name of this ListK8sDaemonSetsRequest.
         :type cluster_name: str

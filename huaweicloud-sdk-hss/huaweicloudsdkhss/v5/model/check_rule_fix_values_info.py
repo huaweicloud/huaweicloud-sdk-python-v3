@@ -29,9 +29,9 @@ class CheckRuleFixValuesInfo:
 
         The model defined in huaweicloud sdk
 
-        :param rule_param_id: 检查项的参数ID
+        :param rule_param_id: **参数解释**: 检查项的参数ID **约束限制**: 不涉及 **取值范围**: 字符串大小范围1-128 **默认取值**: 不涉及 
         :type rule_param_id: int
-        :param fix_value: 检查项的参数值
+        :param fix_value: **参数解释**: 修复检查项参数具体值 **约束限制**: 不涉及 **取值范围**: 字符串大小范围0-512 **默认取值**: 不涉及 
         :type fix_value: int
         """
         
@@ -50,7 +50,7 @@ class CheckRuleFixValuesInfo:
     def rule_param_id(self):
         r"""Gets the rule_param_id of this CheckRuleFixValuesInfo.
 
-        检查项的参数ID
+        **参数解释**: 检查项的参数ID **约束限制**: 不涉及 **取值范围**: 字符串大小范围1-128 **默认取值**: 不涉及 
 
         :return: The rule_param_id of this CheckRuleFixValuesInfo.
         :rtype: int
@@ -61,7 +61,7 @@ class CheckRuleFixValuesInfo:
     def rule_param_id(self, rule_param_id):
         r"""Sets the rule_param_id of this CheckRuleFixValuesInfo.
 
-        检查项的参数ID
+        **参数解释**: 检查项的参数ID **约束限制**: 不涉及 **取值范围**: 字符串大小范围1-128 **默认取值**: 不涉及 
 
         :param rule_param_id: The rule_param_id of this CheckRuleFixValuesInfo.
         :type rule_param_id: int
@@ -72,7 +72,7 @@ class CheckRuleFixValuesInfo:
     def fix_value(self):
         r"""Gets the fix_value of this CheckRuleFixValuesInfo.
 
-        检查项的参数值
+        **参数解释**: 修复检查项参数具体值 **约束限制**: 不涉及 **取值范围**: 字符串大小范围0-512 **默认取值**: 不涉及 
 
         :return: The fix_value of this CheckRuleFixValuesInfo.
         :rtype: int
@@ -83,7 +83,7 @@ class CheckRuleFixValuesInfo:
     def fix_value(self, fix_value):
         r"""Sets the fix_value of this CheckRuleFixValuesInfo.
 
-        检查项的参数值
+        **参数解释**: 修复检查项参数具体值 **约束限制**: 不涉及 **取值范围**: 字符串大小范围0-512 **默认取值**: 不涉及 
 
         :param fix_value: The fix_value of this CheckRuleFixValuesInfo.
         :type fix_value: int

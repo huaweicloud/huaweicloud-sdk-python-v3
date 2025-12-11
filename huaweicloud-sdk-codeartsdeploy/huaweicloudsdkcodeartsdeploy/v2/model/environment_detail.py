@@ -19,6 +19,7 @@ class EnvironmentDetail:
         'name': 'str',
         'description': 'str',
         'os': 'str',
+        'project_id': 'str',
         'nick_name': 'str',
         'deploy_type': 'int',
         'created_time': 'str',
@@ -32,6 +33,7 @@ class EnvironmentDetail:
         'name': 'name',
         'description': 'description',
         'os': 'os',
+        'project_id': 'project_id',
         'nick_name': 'nick_name',
         'deploy_type': 'deploy_type',
         'created_time': 'created_time',
@@ -40,7 +42,7 @@ class EnvironmentDetail:
         'permission': 'permission'
     }
 
-    def __init__(self, id=None, name=None, description=None, os=None, nick_name=None, deploy_type=None, created_time=None, instance_count=None, created_by=None, permission=None):
+    def __init__(self, id=None, name=None, description=None, os=None, project_id=None, nick_name=None, deploy_type=None, created_time=None, instance_count=None, created_by=None, permission=None):
         r"""EnvironmentDetail
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class EnvironmentDetail:
         :type description: str
         :param os: 操作系统
         :type os: str
+        :param project_id: 项目ID
+        :type project_id: str
         :param nick_name: 用户昵称
         :type nick_name: str
         :param deploy_type: 部署类型：0表示主机, 1表示kubernetes
@@ -73,6 +77,7 @@ class EnvironmentDetail:
         self._name = None
         self._description = None
         self._os = None
+        self._project_id = None
         self._nick_name = None
         self._deploy_type = None
         self._created_time = None
@@ -89,6 +94,8 @@ class EnvironmentDetail:
             self.description = description
         if os is not None:
             self.os = os
+        if project_id is not None:
+            self.project_id = project_id
         if nick_name is not None:
             self.nick_name = nick_name
         if deploy_type is not None:
@@ -189,6 +196,28 @@ class EnvironmentDetail:
         :type os: str
         """
         self._os = os
+
+    @property
+    def project_id(self):
+        r"""Gets the project_id of this EnvironmentDetail.
+
+        项目ID
+
+        :return: The project_id of this EnvironmentDetail.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        r"""Sets the project_id of this EnvironmentDetail.
+
+        项目ID
+
+        :param project_id: The project_id of this EnvironmentDetail.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     @property
     def nick_name(self):

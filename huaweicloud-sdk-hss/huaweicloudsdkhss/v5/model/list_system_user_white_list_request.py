@@ -43,13 +43,13 @@ class ListSystemUserWhiteListRequest:
 
         :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param host_id: **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param host_id: **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
-        :param public_ip: **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        :param public_ip: **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
         :type public_ip: str
         :param system_user_name: 系统用户名
         :type system_user_name: str
@@ -112,7 +112,7 @@ class ListSystemUserWhiteListRequest:
     def host_id(self):
         r"""Gets the host_id of this ListSystemUserWhiteListRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The host_id of this ListSystemUserWhiteListRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class ListSystemUserWhiteListRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ListSystemUserWhiteListRequest.
 
-        **参数解释**: 服务器ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 服务器的唯一标识ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ListSystemUserWhiteListRequest.
         :type host_id: str
@@ -178,7 +178,7 @@ class ListSystemUserWhiteListRequest:
     def public_ip(self):
         r"""Gets the public_ip of this ListSystemUserWhiteListRequest.
 
-        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
 
         :return: The public_ip of this ListSystemUserWhiteListRequest.
         :rtype: str
@@ -189,7 +189,7 @@ class ListSystemUserWhiteListRequest:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ListSystemUserWhiteListRequest.
 
-        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
 
         :param public_ip: The public_ip of this ListSystemUserWhiteListRequest.
         :type public_ip: str

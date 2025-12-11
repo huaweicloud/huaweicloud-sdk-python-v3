@@ -35,13 +35,13 @@ class ChangeCheckRuleActionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param host_id: 主机ID，不赋值时，查租户所有主机
+        :param host_id: **参数解释**: 主机ID，不赋值时，查租户所有主机 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 不涉及 
         :type host_id: str
-        :param check_cce: 是否校验cce
+        :param check_cce: **参数解释**: 是否校验cce **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
         :type check_cce: bool
-        :param action: 动作 - \&quot;ignore\&quot; - \&quot;unignore\&quot; - \&quot;fix\&quot; - \&quot;verify\&quot;
+        :param action: **参数解释**: 对检查项的操作类型 **约束限制**: 不涉及 **取值范围**: - ignore：忽略 - unignore：取消忽略 - fix：修复 - verify：验证 - add_to_whitelist：加白  **默认取值**: ignore 
         :type action: str
         :param body: Body of the ChangeCheckRuleActionRequest
         :type body: :class:`huaweicloudsdkhss.v5.CheckRuleIdListRequestInfo`
@@ -70,7 +70,7 @@ class ChangeCheckRuleActionRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ChangeCheckRuleActionRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ChangeCheckRuleActionRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ChangeCheckRuleActionRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ChangeCheckRuleActionRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ChangeCheckRuleActionRequest.
         :type enterprise_project_id: str
@@ -92,7 +92,7 @@ class ChangeCheckRuleActionRequest:
     def host_id(self):
         r"""Gets the host_id of this ChangeCheckRuleActionRequest.
 
-        主机ID，不赋值时，查租户所有主机
+        **参数解释**: 主机ID，不赋值时，查租户所有主机 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 不涉及 
 
         :return: The host_id of this ChangeCheckRuleActionRequest.
         :rtype: str
@@ -103,7 +103,7 @@ class ChangeCheckRuleActionRequest:
     def host_id(self, host_id):
         r"""Sets the host_id of this ChangeCheckRuleActionRequest.
 
-        主机ID，不赋值时，查租户所有主机
+        **参数解释**: 主机ID，不赋值时，查租户所有主机 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ChangeCheckRuleActionRequest.
         :type host_id: str
@@ -114,7 +114,7 @@ class ChangeCheckRuleActionRequest:
     def check_cce(self):
         r"""Gets the check_cce of this ChangeCheckRuleActionRequest.
 
-        是否校验cce
+        **参数解释**: 是否校验cce **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
 
         :return: The check_cce of this ChangeCheckRuleActionRequest.
         :rtype: bool
@@ -125,7 +125,7 @@ class ChangeCheckRuleActionRequest:
     def check_cce(self, check_cce):
         r"""Sets the check_cce of this ChangeCheckRuleActionRequest.
 
-        是否校验cce
+        **参数解释**: 是否校验cce **约束限制**: 不涉及 **取值范围**: - true：是 - false：否  **默认取值**: 不涉及 
 
         :param check_cce: The check_cce of this ChangeCheckRuleActionRequest.
         :type check_cce: bool
@@ -136,7 +136,7 @@ class ChangeCheckRuleActionRequest:
     def action(self):
         r"""Gets the action of this ChangeCheckRuleActionRequest.
 
-        动作 - \"ignore\" - \"unignore\" - \"fix\" - \"verify\"
+        **参数解释**: 对检查项的操作类型 **约束限制**: 不涉及 **取值范围**: - ignore：忽略 - unignore：取消忽略 - fix：修复 - verify：验证 - add_to_whitelist：加白  **默认取值**: ignore 
 
         :return: The action of this ChangeCheckRuleActionRequest.
         :rtype: str
@@ -147,7 +147,7 @@ class ChangeCheckRuleActionRequest:
     def action(self, action):
         r"""Sets the action of this ChangeCheckRuleActionRequest.
 
-        动作 - \"ignore\" - \"unignore\" - \"fix\" - \"verify\"
+        **参数解释**: 对检查项的操作类型 **约束限制**: 不涉及 **取值范围**: - ignore：忽略 - unignore：取消忽略 - fix：修复 - verify：验证 - add_to_whitelist：加白  **默认取值**: ignore 
 
         :param action: The action of this ChangeCheckRuleActionRequest.
         :type action: str

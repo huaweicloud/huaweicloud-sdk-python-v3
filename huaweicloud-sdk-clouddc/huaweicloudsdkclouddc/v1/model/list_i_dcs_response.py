@@ -17,15 +17,17 @@ class ListIDcsResponse(SdkResponse):
 
     openapi_types = {
         'idcs': 'list[IDc]',
-        'page_info': 'PageInfo'
+        'page_info': 'PageInfo',
+        'count': 'int'
     }
 
     attribute_map = {
         'idcs': 'idcs',
-        'page_info': 'page_info'
+        'page_info': 'page_info',
+        'count': 'count'
     }
 
-    def __init__(self, idcs=None, page_info=None):
+    def __init__(self, idcs=None, page_info=None, count=None):
         r"""ListIDcsResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class ListIDcsResponse(SdkResponse):
         :type idcs: list[:class:`huaweicloudsdkclouddc.v1.IDc`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkclouddc.v1.PageInfo`
+        :param count: 机房总数
+        :type count: int
         """
         
         super().__init__()
 
         self._idcs = None
         self._page_info = None
+        self._count = None
         self.discriminator = None
 
         if idcs is not None:
             self.idcs = idcs
         if page_info is not None:
             self.page_info = page_info
+        if count is not None:
+            self.count = count
 
     @property
     def idcs(self):
@@ -82,6 +89,28 @@ class ListIDcsResponse(SdkResponse):
         :type page_info: :class:`huaweicloudsdkclouddc.v1.PageInfo`
         """
         self._page_info = page_info
+
+    @property
+    def count(self):
+        r"""Gets the count of this ListIDcsResponse.
+
+        机房总数
+
+        :return: The count of this ListIDcsResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        r"""Sets the count of this ListIDcsResponse.
+
+        机房总数
+
+        :param count: The count of this ListIDcsResponse.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         import warnings

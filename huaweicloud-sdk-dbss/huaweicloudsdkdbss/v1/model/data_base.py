@@ -65,11 +65,11 @@ class DataBase:
         :type id: str
         :param name: 数据库名称
         :type name: str
-        :param type: 添加的数据库类型： - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
+        :param type: 添加的数据库类型： - MYSQL：MySQL - ORACLE：Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SqlServer - DAMENG: Dameng - TAURUS: Taurus - DWS: Dws - KINGBASE: Kingbase - GAUSSDBOPENGAUSS：GaussDB(for openGauss) - GREENPLUM：Greenplum - HIGHGO：HighGo - SHENTONG：ShenTong - GBASE8A：GBase 8a - GBASE8S：GBase 8s - GBASEXDM：GBase XDM - MONGODB：MongoDB - DDS：DDS（Document Database Service）
         :type type: str
         :param version: 数据库版本
         :type version: str
-        :param charset: 数据库字符集 - GBK - UTF8
+        :param charset: 数据库字符集 - GBK：GBK - UTF8：UTF8
         :type charset: str
         :param ip: 数据库IP
         :type ip: str
@@ -81,11 +81,11 @@ class DataBase:
         :type status: str
         :param instance_name: 数据库实例名
         :type instance_name: str
-        :param audit_status: 数据库的运行状态 - ACTIVE - SHUTOFF - ERROR
+        :param audit_status: 数据库的运行状态 - ACTIVE：运行中 - SHUTOFF：已关闭 - ERROR：故障
         :type audit_status: str
         :param agent_url: agent的唯一ID
         :type agent_url: list[str]
-        :param db_classification: 数据库分类 - RDS: 表示RDS数据库 - ECS:自建数据库
+        :param db_classification: 数据库分类 - RDS: 表示RDS数据库 - ECS: 自建数据库
         :type db_classification: str
         :param rds_audit_switch_mismatch: rds实例审计开关状态不匹配。当数据库审计开启且rds侧日志上传开关关闭时该字段为true。
         :type rds_audit_switch_mismatch: bool
@@ -196,7 +196,7 @@ class DataBase:
     def type(self):
         r"""Gets the type of this DataBase.
 
-        添加的数据库类型： - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
+        添加的数据库类型： - MYSQL：MySQL - ORACLE：Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SqlServer - DAMENG: Dameng - TAURUS: Taurus - DWS: Dws - KINGBASE: Kingbase - GAUSSDBOPENGAUSS：GaussDB(for openGauss) - GREENPLUM：Greenplum - HIGHGO：HighGo - SHENTONG：ShenTong - GBASE8A：GBase 8a - GBASE8S：GBase 8s - GBASEXDM：GBase XDM - MONGODB：MongoDB - DDS：DDS（Document Database Service）
 
         :return: The type of this DataBase.
         :rtype: str
@@ -207,7 +207,7 @@ class DataBase:
     def type(self, type):
         r"""Sets the type of this DataBase.
 
-        添加的数据库类型： - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
+        添加的数据库类型： - MYSQL：MySQL - ORACLE：Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SqlServer - DAMENG: Dameng - TAURUS: Taurus - DWS: Dws - KINGBASE: Kingbase - GAUSSDBOPENGAUSS：GaussDB(for openGauss) - GREENPLUM：Greenplum - HIGHGO：HighGo - SHENTONG：ShenTong - GBASE8A：GBase 8a - GBASE8S：GBase 8s - GBASEXDM：GBase XDM - MONGODB：MongoDB - DDS：DDS（Document Database Service）
 
         :param type: The type of this DataBase.
         :type type: str
@@ -240,7 +240,7 @@ class DataBase:
     def charset(self):
         r"""Gets the charset of this DataBase.
 
-        数据库字符集 - GBK - UTF8
+        数据库字符集 - GBK：GBK - UTF8：UTF8
 
         :return: The charset of this DataBase.
         :rtype: str
@@ -251,7 +251,7 @@ class DataBase:
     def charset(self, charset):
         r"""Sets the charset of this DataBase.
 
-        数据库字符集 - GBK - UTF8
+        数据库字符集 - GBK：GBK - UTF8：UTF8
 
         :param charset: The charset of this DataBase.
         :type charset: str
@@ -372,7 +372,7 @@ class DataBase:
     def audit_status(self):
         r"""Gets the audit_status of this DataBase.
 
-        数据库的运行状态 - ACTIVE - SHUTOFF - ERROR
+        数据库的运行状态 - ACTIVE：运行中 - SHUTOFF：已关闭 - ERROR：故障
 
         :return: The audit_status of this DataBase.
         :rtype: str
@@ -383,7 +383,7 @@ class DataBase:
     def audit_status(self, audit_status):
         r"""Sets the audit_status of this DataBase.
 
-        数据库的运行状态 - ACTIVE - SHUTOFF - ERROR
+        数据库的运行状态 - ACTIVE：运行中 - SHUTOFF：已关闭 - ERROR：故障
 
         :param audit_status: The audit_status of this DataBase.
         :type audit_status: str
@@ -416,7 +416,7 @@ class DataBase:
     def db_classification(self):
         r"""Gets the db_classification of this DataBase.
 
-        数据库分类 - RDS: 表示RDS数据库 - ECS:自建数据库
+        数据库分类 - RDS: 表示RDS数据库 - ECS: 自建数据库
 
         :return: The db_classification of this DataBase.
         :rtype: str
@@ -427,7 +427,7 @@ class DataBase:
     def db_classification(self, db_classification):
         r"""Sets the db_classification of this DataBase.
 
-        数据库分类 - RDS: 表示RDS数据库 - ECS:自建数据库
+        数据库分类 - RDS: 表示RDS数据库 - ECS: 自建数据库
 
         :param db_classification: The db_classification of this DataBase.
         :type db_classification: str

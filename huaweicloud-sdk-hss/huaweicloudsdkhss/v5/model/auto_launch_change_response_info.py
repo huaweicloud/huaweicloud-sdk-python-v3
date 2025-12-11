@@ -53,7 +53,7 @@ class AutoLaunchChangeResponseInfo:
         :type variation_type: str
         :param type: **参数解释**: 自启动项类型 **取值范围**: - 0：自启动服务 - 1：定时任务 - 2：预加载动态库 - 3：Run注册表键 - 4：开机启动文件夹 
         :type type: int
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
@@ -179,7 +179,7 @@ class AutoLaunchChangeResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AutoLaunchChangeResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this AutoLaunchChangeResponseInfo.
         :rtype: str
@@ -190,7 +190,7 @@ class AutoLaunchChangeResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AutoLaunchChangeResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this AutoLaunchChangeResponseInfo.
         :type host_id: str

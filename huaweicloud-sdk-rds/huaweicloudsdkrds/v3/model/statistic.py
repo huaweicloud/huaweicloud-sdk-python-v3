@@ -17,7 +17,7 @@ class Statistic:
     openapi_types = {
         'user_name': 'str',
         'database': 'str',
-        'query_id': 'int',
+        'query_id': 'str',
         'calls': 'int',
         'query': 'str',
         'rows': 'int',
@@ -31,7 +31,7 @@ class Statistic:
         'calls': 'calls',
         'query': 'query',
         'rows': 'rows',
-        'can_use': 'can_use'
+        'can_use': 'canUse'
     }
 
     def __init__(self, user_name=None, database=None, query_id=None, calls=None, query=None, rows=None, can_use=None):
@@ -44,7 +44,7 @@ class Statistic:
         :param database: 数据库名称
         :type database: str
         :param query_id: 由SQL的语法解析树计算出的内部哈希码。
-        :type query_id: int
+        :type query_id: str
         :param calls: 调用次数
         :type calls: int
         :param query: SQL语句的文本形式。
@@ -132,7 +132,7 @@ class Statistic:
         由SQL的语法解析树计算出的内部哈希码。
 
         :return: The query_id of this Statistic.
-        :rtype: int
+        :rtype: str
         """
         return self._query_id
 
@@ -143,7 +143,7 @@ class Statistic:
         由SQL的语法解析树计算出的内部哈希码。
 
         :param query_id: The query_id of this Statistic.
-        :type query_id: int
+        :type query_id: str
         """
         self._query_id = query_id
 

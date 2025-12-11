@@ -45,7 +45,7 @@ class RuleRiskResponseRules:
         :type id: str
         :param name: 风险规则名称
         :type name: str
-        :param type: 风险规则类型
+        :param type: 风险规则类型 - LOGIN：登录  - OPERATE：操作
         :type type: str
         :param feature: 风险规则特征
         :type feature: str
@@ -53,9 +53,9 @@ class RuleRiskResponseRules:
         :type status: str
         :param rank: 风险规则优先级。数字越小优先级越高。
         :type rank: int
-        :param risk_level: 风险级别 - LOW - MEDIUM - HIGH - NO_RISK
+        :param risk_level: 风险级别 - LOW：低 - MEDIUM：中 - HIGH：高 - NO_RISK：无风险
         :type risk_level: str
-        :param rule_type: 规则类型
+        :param rule_type: 规则类型 - SYSTEM: 系统  - CUSTOMIZE: 自定义
         :type rule_type: str
         """
         
@@ -132,7 +132,7 @@ class RuleRiskResponseRules:
     def type(self):
         r"""Gets the type of this RuleRiskResponseRules.
 
-        风险规则类型
+        风险规则类型 - LOGIN：登录  - OPERATE：操作
 
         :return: The type of this RuleRiskResponseRules.
         :rtype: str
@@ -143,7 +143,7 @@ class RuleRiskResponseRules:
     def type(self, type):
         r"""Sets the type of this RuleRiskResponseRules.
 
-        风险规则类型
+        风险规则类型 - LOGIN：登录  - OPERATE：操作
 
         :param type: The type of this RuleRiskResponseRules.
         :type type: str
@@ -220,7 +220,7 @@ class RuleRiskResponseRules:
     def risk_level(self):
         r"""Gets the risk_level of this RuleRiskResponseRules.
 
-        风险级别 - LOW - MEDIUM - HIGH - NO_RISK
+        风险级别 - LOW：低 - MEDIUM：中 - HIGH：高 - NO_RISK：无风险
 
         :return: The risk_level of this RuleRiskResponseRules.
         :rtype: str
@@ -231,7 +231,7 @@ class RuleRiskResponseRules:
     def risk_level(self, risk_level):
         r"""Sets the risk_level of this RuleRiskResponseRules.
 
-        风险级别 - LOW - MEDIUM - HIGH - NO_RISK
+        风险级别 - LOW：低 - MEDIUM：中 - HIGH：高 - NO_RISK：无风险
 
         :param risk_level: The risk_level of this RuleRiskResponseRules.
         :type risk_level: str
@@ -242,7 +242,7 @@ class RuleRiskResponseRules:
     def rule_type(self):
         r"""Gets the rule_type of this RuleRiskResponseRules.
 
-        规则类型
+        规则类型 - SYSTEM: 系统  - CUSTOMIZE: 自定义
 
         :return: The rule_type of this RuleRiskResponseRules.
         :rtype: str
@@ -253,7 +253,7 @@ class RuleRiskResponseRules:
     def rule_type(self, rule_type):
         r"""Sets the rule_type of this RuleRiskResponseRules.
 
-        规则类型
+        规则类型 - SYSTEM: 系统  - CUSTOMIZE: 自定义
 
         :param rule_type: The rule_type of this RuleRiskResponseRules.
         :type rule_type: str

@@ -35,15 +35,15 @@ class ListInstancesByTagsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。 - “action”值为“count”时，不传该参数。 - “action”值为“filter”时，取值必须为数字，不能为负数。默认取0值，表示从第一条数据开始查询。&#39;
+        :param offset: **参数解释：** 索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。 **约束限制：**   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值必须为数字，不能为负数。 **取值范围：** 不涉及。 **默认取值：** 默认取0值，表示从第一条数据开始查询。
         :type offset: str
-        :param limit: 查询记录数。   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值范围：1~100。不传该参数时，默认查询前100条实例信息。
+        :param limit: **参数解释：** 查询记录数。 **约束限制：**   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值范围：1~100。不传该参数时，默认查询前100条实例信息。 **取值范围：** 1~100 **默认取值：** 不涉及。
         :type limit: str
-        :param action: 操作标识。   - 取值为“filter”，表示根据标签过滤条件查询实例。   - 取值为“count”，表示仅返回总记录数，禁止返回其他字段。
+        :param action: **参数解释：** 操作标识。 **约束限制：** - 取值为“count”，表示仅返回总记录数，禁止返回其他字段。 - 取值为“filter”，表示根据标签过滤条件查询实例。 **取值范围：** count和filter **默认取值：** 不涉及。
         :type action: str
-        :param matches: 搜索字段。   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空
+        :param matches: **参数解释：** 搜索字段。 **约束限制：**   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空， **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type matches: list[:class:`huaweicloudsdkdds.v3.QueryMatchItem`]
-        :param tags: 包含标签，最多包含10个key。
+        :param tags: **参数解释：** 包含标签。 **约束限制：** 最多包含10个key。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type tags: list[:class:`huaweicloudsdkdds.v3.QueryTagItem`]
         """
         
@@ -70,7 +70,7 @@ class ListInstancesByTagsRequestBody:
     def offset(self):
         r"""Gets the offset of this ListInstancesByTagsRequestBody.
 
-        索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。 - “action”值为“count”时，不传该参数。 - “action”值为“filter”时，取值必须为数字，不能为负数。默认取0值，表示从第一条数据开始查询。'
+        **参数解释：** 索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。 **约束限制：**   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值必须为数字，不能为负数。 **取值范围：** 不涉及。 **默认取值：** 默认取0值，表示从第一条数据开始查询。
 
         :return: The offset of this ListInstancesByTagsRequestBody.
         :rtype: str
@@ -81,7 +81,7 @@ class ListInstancesByTagsRequestBody:
     def offset(self, offset):
         r"""Sets the offset of this ListInstancesByTagsRequestBody.
 
-        索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。 - “action”值为“count”时，不传该参数。 - “action”值为“filter”时，取值必须为数字，不能为负数。默认取0值，表示从第一条数据开始查询。'
+        **参数解释：** 索引位置偏移量，表示从第一条数据偏移offset条数据后开始查询。 **约束限制：**   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值必须为数字，不能为负数。 **取值范围：** 不涉及。 **默认取值：** 默认取0值，表示从第一条数据开始查询。
 
         :param offset: The offset of this ListInstancesByTagsRequestBody.
         :type offset: str
@@ -92,7 +92,7 @@ class ListInstancesByTagsRequestBody:
     def limit(self):
         r"""Gets the limit of this ListInstancesByTagsRequestBody.
 
-        查询记录数。   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值范围：1~100。不传该参数时，默认查询前100条实例信息。
+        **参数解释：** 查询记录数。 **约束限制：**   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值范围：1~100。不传该参数时，默认查询前100条实例信息。 **取值范围：** 1~100 **默认取值：** 不涉及。
 
         :return: The limit of this ListInstancesByTagsRequestBody.
         :rtype: str
@@ -103,7 +103,7 @@ class ListInstancesByTagsRequestBody:
     def limit(self, limit):
         r"""Sets the limit of this ListInstancesByTagsRequestBody.
 
-        查询记录数。   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值范围：1~100。不传该参数时，默认查询前100条实例信息。
+        **参数解释：** 查询记录数。 **约束限制：**   - “action”值为“count”时，不传该参数。   - “action”值为“filter”时，取值范围：1~100。不传该参数时，默认查询前100条实例信息。 **取值范围：** 1~100 **默认取值：** 不涉及。
 
         :param limit: The limit of this ListInstancesByTagsRequestBody.
         :type limit: str
@@ -114,7 +114,7 @@ class ListInstancesByTagsRequestBody:
     def action(self):
         r"""Gets the action of this ListInstancesByTagsRequestBody.
 
-        操作标识。   - 取值为“filter”，表示根据标签过滤条件查询实例。   - 取值为“count”，表示仅返回总记录数，禁止返回其他字段。
+        **参数解释：** 操作标识。 **约束限制：** - 取值为“count”，表示仅返回总记录数，禁止返回其他字段。 - 取值为“filter”，表示根据标签过滤条件查询实例。 **取值范围：** count和filter **默认取值：** 不涉及。
 
         :return: The action of this ListInstancesByTagsRequestBody.
         :rtype: str
@@ -125,7 +125,7 @@ class ListInstancesByTagsRequestBody:
     def action(self, action):
         r"""Sets the action of this ListInstancesByTagsRequestBody.
 
-        操作标识。   - 取值为“filter”，表示根据标签过滤条件查询实例。   - 取值为“count”，表示仅返回总记录数，禁止返回其他字段。
+        **参数解释：** 操作标识。 **约束限制：** - 取值为“count”，表示仅返回总记录数，禁止返回其他字段。 - 取值为“filter”，表示根据标签过滤条件查询实例。 **取值范围：** count和filter **默认取值：** 不涉及。
 
         :param action: The action of this ListInstancesByTagsRequestBody.
         :type action: str
@@ -136,7 +136,7 @@ class ListInstancesByTagsRequestBody:
     def matches(self):
         r"""Gets the matches of this ListInstancesByTagsRequestBody.
 
-        搜索字段。   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空
+        **参数解释：** 搜索字段。 **约束限制：**   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空， **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The matches of this ListInstancesByTagsRequestBody.
         :rtype: list[:class:`huaweicloudsdkdds.v3.QueryMatchItem`]
@@ -147,7 +147,7 @@ class ListInstancesByTagsRequestBody:
     def matches(self, matches):
         r"""Sets the matches of this ListInstancesByTagsRequestBody.
 
-        搜索字段。   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空
+        **参数解释：** 搜索字段。 **约束限制：**   - 该字段值为空，表示不按照实例名称或实例ID查询。   - 该字段值不为空， **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param matches: The matches of this ListInstancesByTagsRequestBody.
         :type matches: list[:class:`huaweicloudsdkdds.v3.QueryMatchItem`]
@@ -158,7 +158,7 @@ class ListInstancesByTagsRequestBody:
     def tags(self):
         r"""Gets the tags of this ListInstancesByTagsRequestBody.
 
-        包含标签，最多包含10个key。
+        **参数解释：** 包含标签。 **约束限制：** 最多包含10个key。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The tags of this ListInstancesByTagsRequestBody.
         :rtype: list[:class:`huaweicloudsdkdds.v3.QueryTagItem`]
@@ -169,7 +169,7 @@ class ListInstancesByTagsRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this ListInstancesByTagsRequestBody.
 
-        包含标签，最多包含10个key。
+        **参数解释：** 包含标签。 **约束限制：** 最多包含10个key。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param tags: The tags of this ListInstancesByTagsRequestBody.
         :type tags: list[:class:`huaweicloudsdkdds.v3.QueryTagItem`]

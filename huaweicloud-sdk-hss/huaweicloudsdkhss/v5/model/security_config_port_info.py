@@ -39,7 +39,7 @@ class SecurityConfigPortInfo:
         :type port: int
         :param type: **参数解释**： 类型 **取值范围**： 不涉及 
         :type type: str
-        :param status: **参数解释**： 端口危险程度 **取值范围**： - normal：正常端口 - danger：危险端口 - unknow：未知端口 
+        :param status: **参数解释**： 端口危险程度 **取值范围**： - normal：正常端口 - danger：危险端口 - unknown：未知端口 
         :type status: str
         :param port_status: **参数解释**： 端口状态 **取值范围**： - 0：未处理 - 1：已忽略 - 2：无需处理 
         :type port_status: int
@@ -115,7 +115,7 @@ class SecurityConfigPortInfo:
     def status(self):
         r"""Gets the status of this SecurityConfigPortInfo.
 
-        **参数解释**： 端口危险程度 **取值范围**： - normal：正常端口 - danger：危险端口 - unknow：未知端口 
+        **参数解释**： 端口危险程度 **取值范围**： - normal：正常端口 - danger：危险端口 - unknown：未知端口 
 
         :return: The status of this SecurityConfigPortInfo.
         :rtype: str
@@ -126,7 +126,7 @@ class SecurityConfigPortInfo:
     def status(self, status):
         r"""Sets the status of this SecurityConfigPortInfo.
 
-        **参数解释**： 端口危险程度 **取值范围**： - normal：正常端口 - danger：危险端口 - unknow：未知端口 
+        **参数解释**： 端口危险程度 **取值范围**： - normal：正常端口 - danger：危险端口 - unknown：未知端口 
 
         :param status: The status of this SecurityConfigPortInfo.
         :type status: str

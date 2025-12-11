@@ -17,6 +17,7 @@ class ShowVulReportDataResponse(SdkResponse):
 
     openapi_types = {
         'sumary': 'ShowVulReportDataResponseInfoSumary',
+        'summary': 'ShowVulReportDataResponseInfoSummary',
         'hosts': 'list[ShowVulReportDataResponseInfoHosts]',
         'vulnerabilities': 'list[ShowVulReportDataResponseInfoVulnerabilities]',
         'report_create_time': 'int',
@@ -26,6 +27,7 @@ class ShowVulReportDataResponse(SdkResponse):
 
     attribute_map = {
         'sumary': 'sumary',
+        'summary': 'summary',
         'hosts': 'hosts',
         'vulnerabilities': 'vulnerabilities',
         'report_create_time': 'report_create_time',
@@ -33,13 +35,15 @@ class ShowVulReportDataResponse(SdkResponse):
         'host_total_count': 'host_total_count'
     }
 
-    def __init__(self, sumary=None, hosts=None, vulnerabilities=None, report_create_time=None, vulnerability_total_count=None, host_total_count=None):
+    def __init__(self, sumary=None, summary=None, hosts=None, vulnerabilities=None, report_create_time=None, vulnerability_total_count=None, host_total_count=None):
         r"""ShowVulReportDataResponse
 
         The model defined in huaweicloud sdk
 
         :param sumary: 
         :type sumary: :class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoSumary`
+        :param summary: 
+        :type summary: :class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoSummary`
         :param hosts: 主机列表
         :type hosts: list[:class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoHosts`]
         :param vulnerabilities: 漏洞列表
@@ -55,6 +59,7 @@ class ShowVulReportDataResponse(SdkResponse):
         super().__init__()
 
         self._sumary = None
+        self._summary = None
         self._hosts = None
         self._vulnerabilities = None
         self._report_create_time = None
@@ -64,6 +69,8 @@ class ShowVulReportDataResponse(SdkResponse):
 
         if sumary is not None:
             self.sumary = sumary
+        if summary is not None:
+            self.summary = summary
         if hosts is not None:
             self.hosts = hosts
         if vulnerabilities is not None:
@@ -92,6 +99,24 @@ class ShowVulReportDataResponse(SdkResponse):
         :type sumary: :class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoSumary`
         """
         self._sumary = sumary
+
+    @property
+    def summary(self):
+        r"""Gets the summary of this ShowVulReportDataResponse.
+
+        :return: The summary of this ShowVulReportDataResponse.
+        :rtype: :class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoSummary`
+        """
+        return self._summary
+
+    @summary.setter
+    def summary(self, summary):
+        r"""Sets the summary of this ShowVulReportDataResponse.
+
+        :param summary: The summary of this ShowVulReportDataResponse.
+        :type summary: :class:`huaweicloudsdkhss.v5.ShowVulReportDataResponseInfoSummary`
+        """
+        self._summary = summary
 
     @property
     def hosts(self):

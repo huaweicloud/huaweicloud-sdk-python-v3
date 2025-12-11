@@ -63,17 +63,17 @@ class AuditSqlResponseSql:
         :type db_ip: str
         :param db_user: 数据库用户名
         :type db_user: str
-        :param query_type: 查询类型 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
+        :param query_type: 查询类型 - LOGIN: LOGIN - CREATE_TABLE: CREATE TABLE - CREATE_TABLESPACE: CREATE TABLESPACE - DROP_TABLE: DROP TABLE - DROP_TABLESPACE: DROP TABLESPACE - DELETE: DELETE - INSERT: INSERT - INSERT_SELECT: INSERT SELECT - SELECT: SELECT - SELECT_FOR_UPDATE: SELECT FOR UPDATE - UPDATE: UPDATE - CREATE_USER: CREATE USER - DROP_USER: DROP USER - GRANT: GRANT - OPERATE: OPERATE - ALL: ALL
         :type query_type: str
         :param operated_obj_info: 操作对象列表
         :type operated_obj_info: list[:class:`huaweicloudsdkdbss.v1.AuditSqlResponseSqlOperatedObjInfo`]
         :param rule_name: 规则名称
         :type rule_name: str
-        :param risk_level: 风险级别 - HIGH - MEDIUM - LOW - NO_RISK
+        :param risk_level: 风险级别 - HIGH：高 - MEDIUM：中 - LOW：低 - NO_RISK：无风险
         :type risk_level: str
         :param start_time: 审计开始时间
         :type start_time: str
-        :param sql_response: 响应结果 - SUCCESS - FAILED
+        :param sql_response: 响应结果 - SUCCESS：成功 - FAILED：失败
         :type sql_response: str
         :param db_instance: 数据库实例
         :type db_instance: str
@@ -257,7 +257,7 @@ class AuditSqlResponseSql:
     def query_type(self):
         r"""Gets the query_type of this AuditSqlResponseSql.
 
-        查询类型 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
+        查询类型 - LOGIN: LOGIN - CREATE_TABLE: CREATE TABLE - CREATE_TABLESPACE: CREATE TABLESPACE - DROP_TABLE: DROP TABLE - DROP_TABLESPACE: DROP TABLESPACE - DELETE: DELETE - INSERT: INSERT - INSERT_SELECT: INSERT SELECT - SELECT: SELECT - SELECT_FOR_UPDATE: SELECT FOR UPDATE - UPDATE: UPDATE - CREATE_USER: CREATE USER - DROP_USER: DROP USER - GRANT: GRANT - OPERATE: OPERATE - ALL: ALL
 
         :return: The query_type of this AuditSqlResponseSql.
         :rtype: str
@@ -268,7 +268,7 @@ class AuditSqlResponseSql:
     def query_type(self, query_type):
         r"""Sets the query_type of this AuditSqlResponseSql.
 
-        查询类型 LOGIN,CREATE_TABLE,CREATE_TABLESPACE,DROP_TABLE, DROP_TABLESPACE,DELETE,INSERT,INSERT_SELECT,SELECT,SELECT_FOR_UPDATE, UPDATE,CREATE_USER,DROP_USER,GRANT,OPERATE ALL
+        查询类型 - LOGIN: LOGIN - CREATE_TABLE: CREATE TABLE - CREATE_TABLESPACE: CREATE TABLESPACE - DROP_TABLE: DROP TABLE - DROP_TABLESPACE: DROP TABLESPACE - DELETE: DELETE - INSERT: INSERT - INSERT_SELECT: INSERT SELECT - SELECT: SELECT - SELECT_FOR_UPDATE: SELECT FOR UPDATE - UPDATE: UPDATE - CREATE_USER: CREATE USER - DROP_USER: DROP USER - GRANT: GRANT - OPERATE: OPERATE - ALL: ALL
 
         :param query_type: The query_type of this AuditSqlResponseSql.
         :type query_type: str
@@ -323,7 +323,7 @@ class AuditSqlResponseSql:
     def risk_level(self):
         r"""Gets the risk_level of this AuditSqlResponseSql.
 
-        风险级别 - HIGH - MEDIUM - LOW - NO_RISK
+        风险级别 - HIGH：高 - MEDIUM：中 - LOW：低 - NO_RISK：无风险
 
         :return: The risk_level of this AuditSqlResponseSql.
         :rtype: str
@@ -334,7 +334,7 @@ class AuditSqlResponseSql:
     def risk_level(self, risk_level):
         r"""Sets the risk_level of this AuditSqlResponseSql.
 
-        风险级别 - HIGH - MEDIUM - LOW - NO_RISK
+        风险级别 - HIGH：高 - MEDIUM：中 - LOW：低 - NO_RISK：无风险
 
         :param risk_level: The risk_level of this AuditSqlResponseSql.
         :type risk_level: str
@@ -367,7 +367,7 @@ class AuditSqlResponseSql:
     def sql_response(self):
         r"""Gets the sql_response of this AuditSqlResponseSql.
 
-        响应结果 - SUCCESS - FAILED
+        响应结果 - SUCCESS：成功 - FAILED：失败
 
         :return: The sql_response of this AuditSqlResponseSql.
         :rtype: str
@@ -378,7 +378,7 @@ class AuditSqlResponseSql:
     def sql_response(self, sql_response):
         r"""Sets the sql_response of this AuditSqlResponseSql.
 
-        响应结果 - SUCCESS - FAILED
+        响应结果 - SUCCESS：成功 - FAILED：失败
 
         :param sql_response: The sql_response of this AuditSqlResponseSql.
         :type sql_response: str

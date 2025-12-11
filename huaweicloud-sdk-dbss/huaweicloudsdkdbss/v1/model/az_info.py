@@ -39,7 +39,7 @@ class AzInfo:
         :type zone_name: str
         :param zone_number: 可用区编号
         :type zone_number: int
-        :param az_type: 可用区类型
+        :param az_type: 可用区类型 - DEDICATED: 大网 - DEC: 边缘小站 - EDGE: 专属
         :type az_type: str
         :param alias: 可用区中文别名
         :type alias: str
@@ -110,7 +110,7 @@ class AzInfo:
     def az_type(self):
         r"""Gets the az_type of this AzInfo.
 
-        可用区类型
+        可用区类型 - DEDICATED: 大网 - DEC: 边缘小站 - EDGE: 专属
 
         :return: The az_type of this AzInfo.
         :rtype: str
@@ -121,7 +121,7 @@ class AzInfo:
     def az_type(self, az_type):
         r"""Sets the az_type of this AzInfo.
 
-        可用区类型
+        可用区类型 - DEDICATED: 大网 - DEC: 边缘小站 - EDGE: 专属
 
         :param az_type: The az_type of this AzInfo.
         :type az_type: str

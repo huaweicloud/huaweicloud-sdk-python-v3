@@ -28,7 +28,7 @@ class DeleteAuditWhitelistResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态  - SUCCESS:成功  - FAILED:失败
+        :param status: 状态  - SUCCESS: 成功  - FAILED: 失败
         :type status: str
         """
         
@@ -44,7 +44,7 @@ class DeleteAuditWhitelistResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this DeleteAuditWhitelistResponse.
 
-        状态  - SUCCESS:成功  - FAILED:失败
+        状态  - SUCCESS: 成功  - FAILED: 失败
 
         :return: The status of this DeleteAuditWhitelistResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class DeleteAuditWhitelistResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this DeleteAuditWhitelistResponse.
 
-        状态  - SUCCESS:成功  - FAILED:失败
+        状态  - SUCCESS: 成功  - FAILED: 失败
 
         :param status: The status of this DeleteAuditWhitelistResponse.
         :type status: str

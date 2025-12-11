@@ -447,6 +447,75 @@ class GaussDBforopenGaussAsyncClient(Client):
 
         return http_info
 
+    def batch_delete_instance_tag_async(self, request):
+        r"""批量删除实例标签
+
+        批量删除实例标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteInstanceTag
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.BatchDeleteInstanceTagRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BatchDeleteInstanceTagResponse`
+        """
+        http_info = self._batch_delete_instance_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_instance_tag_async_invoker(self, request):
+        http_info = self._batch_delete_instance_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_instance_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteInstanceTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_set_backup_policy_async(self, request):
         r"""批量设置自动备份策略
 
@@ -7233,6 +7302,14 @@ class GaussDBforopenGaussAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'backup_restore_type' in local_var_params:
+            query_params.append(('backup_restore_type', local_var_params['backup_restore_type']))
+        if 'source_backup_schema' in local_var_params:
+            query_params.append(('source_backup_schema', local_var_params['source_backup_schema']))
+        if 'target_instance_id' in local_var_params:
+            query_params.append(('target_instance_id', local_var_params['target_instance_id']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
 
         header_params = {}
         if 'x_language' in local_var_params:
@@ -10233,6 +10310,12 @@ class GaussDBforopenGaussAsyncClient(Client):
             query_params.append(('solution', local_var_params['solution']))
         if 'instance_id' in local_var_params:
             query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'consistency' in local_var_params:
+            query_params.append(('consistency', local_var_params['consistency']))
+        if 'consistency_protocol' in local_var_params:
+            query_params.append(('consistency_protocol', local_var_params['consistency_protocol']))
+        if 'engine_version' in local_var_params:
+            query_params.append(('engine_version', local_var_params['engine_version']))
 
         header_params = {}
         if 'x_language' in local_var_params:

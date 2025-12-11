@@ -43,21 +43,21 @@ class CreateDatabaseRequestDatabase:
 
         The model defined in huaweicloud sdk
 
-        :param db_classification: 数据库分类 - RDS: RDS数据库 - ECS:自建数据库
+        :param db_classification: 数据库分类 - RDS: RDS数据库 - ECS: 自建数据库
         :type db_classification: str
         :param name: 数据库名称
         :type name: str
-        :param type: 数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
+        :param type: 数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG： DAMENG - TAURUS: Taurus DB - DWS: GaussDB(DWS) - KINGBASE: Kingbase - GAUSSDBOPENGAUSS：GaussDB/openGauss - GREENPLUM： Greenplum - HIGHGO: HIGHGO - SHENTONG： ShenTong - GBASE8A: GBase 8a - GBASE8S： GBase 8s - GBASEXDM： GBase XDM - MONGODB: MongoDB - DDS： DDS(MongoDB)
         :type type: str
         :param version: 数据库版本
         :type version: str
-        :param charset: 字符集。 - GBK - UTF8
+        :param charset: 字符集。 - GBK： GBK - UTF8：UTF8
         :type charset: str
         :param ip: 数据库IP
         :type ip: str
         :param port: 数据库端口
         :type port: str
-        :param os: 数据库操作系统 - LINUX64 - WINDOWS64 - UNIX
+        :param os: 数据库操作系统 - LINUX64：LINUX64 - WINDOWS64：WINDOWS64 - UNIX：UNIX
         :type os: str
         :param instance_name: 数据库实例名称
         :type instance_name: str
@@ -91,7 +91,7 @@ class CreateDatabaseRequestDatabase:
     def db_classification(self):
         r"""Gets the db_classification of this CreateDatabaseRequestDatabase.
 
-        数据库分类 - RDS: RDS数据库 - ECS:自建数据库
+        数据库分类 - RDS: RDS数据库 - ECS: 自建数据库
 
         :return: The db_classification of this CreateDatabaseRequestDatabase.
         :rtype: str
@@ -102,7 +102,7 @@ class CreateDatabaseRequestDatabase:
     def db_classification(self, db_classification):
         r"""Sets the db_classification of this CreateDatabaseRequestDatabase.
 
-        数据库分类 - RDS: RDS数据库 - ECS:自建数据库
+        数据库分类 - RDS: RDS数据库 - ECS: 自建数据库
 
         :param db_classification: The db_classification of this CreateDatabaseRequestDatabase.
         :type db_classification: str
@@ -135,7 +135,7 @@ class CreateDatabaseRequestDatabase:
     def type(self):
         r"""Gets the type of this CreateDatabaseRequestDatabase.
 
-        数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
+        数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG： DAMENG - TAURUS: Taurus DB - DWS: GaussDB(DWS) - KINGBASE: Kingbase - GAUSSDBOPENGAUSS：GaussDB/openGauss - GREENPLUM： Greenplum - HIGHGO: HIGHGO - SHENTONG： ShenTong - GBASE8A: GBase 8a - GBASE8S： GBase 8s - GBASEXDM： GBase XDM - MONGODB: MongoDB - DDS： DDS(MongoDB)
 
         :return: The type of this CreateDatabaseRequestDatabase.
         :rtype: str
@@ -146,7 +146,7 @@ class CreateDatabaseRequestDatabase:
     def type(self, type):
         r"""Sets the type of this CreateDatabaseRequestDatabase.
 
-        数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - GAUSSDBOPENGAUSS - GREENPLUM - HIGHGO - SHENTONG - GBASE8A - GBASE8S - GBASEXDM - MONGODB - DDS
+        数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG： DAMENG - TAURUS: Taurus DB - DWS: GaussDB(DWS) - KINGBASE: Kingbase - GAUSSDBOPENGAUSS：GaussDB/openGauss - GREENPLUM： Greenplum - HIGHGO: HIGHGO - SHENTONG： ShenTong - GBASE8A: GBase 8a - GBASE8S： GBase 8s - GBASEXDM： GBase XDM - MONGODB: MongoDB - DDS： DDS(MongoDB)
 
         :param type: The type of this CreateDatabaseRequestDatabase.
         :type type: str
@@ -179,7 +179,7 @@ class CreateDatabaseRequestDatabase:
     def charset(self):
         r"""Gets the charset of this CreateDatabaseRequestDatabase.
 
-        字符集。 - GBK - UTF8
+        字符集。 - GBK： GBK - UTF8：UTF8
 
         :return: The charset of this CreateDatabaseRequestDatabase.
         :rtype: str
@@ -190,7 +190,7 @@ class CreateDatabaseRequestDatabase:
     def charset(self, charset):
         r"""Sets the charset of this CreateDatabaseRequestDatabase.
 
-        字符集。 - GBK - UTF8
+        字符集。 - GBK： GBK - UTF8：UTF8
 
         :param charset: The charset of this CreateDatabaseRequestDatabase.
         :type charset: str
@@ -245,7 +245,7 @@ class CreateDatabaseRequestDatabase:
     def os(self):
         r"""Gets the os of this CreateDatabaseRequestDatabase.
 
-        数据库操作系统 - LINUX64 - WINDOWS64 - UNIX
+        数据库操作系统 - LINUX64：LINUX64 - WINDOWS64：WINDOWS64 - UNIX：UNIX
 
         :return: The os of this CreateDatabaseRequestDatabase.
         :rtype: str
@@ -256,7 +256,7 @@ class CreateDatabaseRequestDatabase:
     def os(self, os):
         r"""Sets the os of this CreateDatabaseRequestDatabase.
 
-        数据库操作系统 - LINUX64 - WINDOWS64 - UNIX
+        数据库操作系统 - LINUX64：LINUX64 - WINDOWS64：WINDOWS64 - UNIX：UNIX
 
         :param os: The os of this CreateDatabaseRequestDatabase.
         :type os: str

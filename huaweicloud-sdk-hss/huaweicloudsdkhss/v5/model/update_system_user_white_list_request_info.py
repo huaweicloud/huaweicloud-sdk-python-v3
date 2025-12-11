@@ -31,7 +31,7 @@ class UpdateSystemUserWhiteListRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param system_user_name_list: 系统用户名列表
         :type system_user_name_list: list[str]
@@ -55,7 +55,7 @@ class UpdateSystemUserWhiteListRequestInfo:
     def host_id(self):
         r"""Gets the host_id of this UpdateSystemUserWhiteListRequestInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this UpdateSystemUserWhiteListRequestInfo.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateSystemUserWhiteListRequestInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this UpdateSystemUserWhiteListRequestInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this UpdateSystemUserWhiteListRequestInfo.
         :type host_id: str

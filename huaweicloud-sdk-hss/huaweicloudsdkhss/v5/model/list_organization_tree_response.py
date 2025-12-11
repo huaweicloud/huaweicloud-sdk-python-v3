@@ -34,7 +34,7 @@ class ListOrganizationTreeResponse(SdkResponse):
 
         :param total_num: **参数解释**: 总数 **取值范围**: 最小值0，最大值2147483647 
         :type total_num: int
-        :param data_list: 事件列表详情
+        :param data_list: **参数解释** 存储查询到的组织树节点详细信息列表； **取值范围** 数组长度0-当前查询的默认limit值（常规默认10条，未指定时按平台默认规则），数组元素为OrganizationNodeResponseInfo对象 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.OrganizationNodeResponseInfo`]
         :param x_request_id: 
         :type x_request_id: str
@@ -80,7 +80,7 @@ class ListOrganizationTreeResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListOrganizationTreeResponse.
 
-        事件列表详情
+        **参数解释** 存储查询到的组织树节点详细信息列表； **取值范围** 数组长度0-当前查询的默认limit值（常规默认10条，未指定时按平台默认规则），数组元素为OrganizationNodeResponseInfo对象 
 
         :return: The data_list of this ListOrganizationTreeResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.OrganizationNodeResponseInfo`]
@@ -91,7 +91,7 @@ class ListOrganizationTreeResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListOrganizationTreeResponse.
 
-        事件列表详情
+        **参数解释** 存储查询到的组织树节点详细信息列表； **取值范围** 数组长度0-当前查询的默认limit值（常规默认10条，未指定时按平台默认规则），数组元素为OrganizationNodeResponseInfo对象 
 
         :param data_list: The data_list of this ListOrganizationTreeResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.OrganizationNodeResponseInfo`]

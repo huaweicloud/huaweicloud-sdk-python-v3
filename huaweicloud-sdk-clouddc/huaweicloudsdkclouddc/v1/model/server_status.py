@@ -16,43 +16,47 @@ class ServerStatus:
 
     openapi_types = {
         'total': 'ServerState',
-        'ok': 'object',
-        'warning': 'object',
-        'critical': 'object',
-        'health': 'object',
-        'unhealth': 'object',
-        'isolation': 'object'
+        'ok': 'ServerState',
+        'warning': 'ServerState',
+        'unknown': 'ServerState',
+        'critical': 'ServerState',
+        'health': 'ServerState',
+        'unhealth': 'ServerState',
+        'isolation': 'ServerState'
     }
 
     attribute_map = {
         'total': 'total',
         'ok': 'ok',
         'warning': 'warning',
+        'unknown': 'unknown',
         'critical': 'critical',
         'health': 'health',
         'unhealth': 'unhealth',
         'isolation': 'isolation'
     }
 
-    def __init__(self, total=None, ok=None, warning=None, critical=None, health=None, unhealth=None, isolation=None):
+    def __init__(self, total=None, ok=None, warning=None, unknown=None, critical=None, health=None, unhealth=None, isolation=None):
         r"""ServerStatus
 
         The model defined in huaweicloud sdk
 
         :param total: 
         :type total: :class:`huaweicloudsdkclouddc.v1.ServerState`
-        :param ok: 服务器运行OK状态所有对象
-        :type ok: object
-        :param warning: 服务器运行Warning状态所有对象
-        :type warning: object
-        :param critical: 服务器运行Critical状态所有对象
-        :type critical: object
-        :param health: 服务器运行Health状态所有对象
-        :type health: object
-        :param unhealth: 服务器运行UnHealth状态所有对象
-        :type unhealth: object
-        :param isolation: 服务器运行Isolation状态所有对象
-        :type isolation: object
+        :param ok: 
+        :type ok: :class:`huaweicloudsdkclouddc.v1.ServerState`
+        :param warning: 
+        :type warning: :class:`huaweicloudsdkclouddc.v1.ServerState`
+        :param unknown: 
+        :type unknown: :class:`huaweicloudsdkclouddc.v1.ServerState`
+        :param critical: 
+        :type critical: :class:`huaweicloudsdkclouddc.v1.ServerState`
+        :param health: 
+        :type health: :class:`huaweicloudsdkclouddc.v1.ServerState`
+        :param unhealth: 
+        :type unhealth: :class:`huaweicloudsdkclouddc.v1.ServerState`
+        :param isolation: 
+        :type isolation: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         
         
@@ -60,6 +64,7 @@ class ServerStatus:
         self._total = None
         self._ok = None
         self._warning = None
+        self._unknown = None
         self._critical = None
         self._health = None
         self._unhealth = None
@@ -69,6 +74,8 @@ class ServerStatus:
         self.total = total
         self.ok = ok
         self.warning = warning
+        if unknown is not None:
+            self.unknown = unknown
         self.critical = critical
         self.health = health
         if unhealth is not None:
@@ -97,10 +104,8 @@ class ServerStatus:
     def ok(self):
         r"""Gets the ok of this ServerStatus.
 
-        服务器运行OK状态所有对象
-
         :return: The ok of this ServerStatus.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         return self._ok
 
@@ -108,10 +113,8 @@ class ServerStatus:
     def ok(self, ok):
         r"""Sets the ok of this ServerStatus.
 
-        服务器运行OK状态所有对象
-
         :param ok: The ok of this ServerStatus.
-        :type ok: object
+        :type ok: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         self._ok = ok
 
@@ -119,10 +122,8 @@ class ServerStatus:
     def warning(self):
         r"""Gets the warning of this ServerStatus.
 
-        服务器运行Warning状态所有对象
-
         :return: The warning of this ServerStatus.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         return self._warning
 
@@ -130,21 +131,35 @@ class ServerStatus:
     def warning(self, warning):
         r"""Sets the warning of this ServerStatus.
 
-        服务器运行Warning状态所有对象
-
         :param warning: The warning of this ServerStatus.
-        :type warning: object
+        :type warning: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         self._warning = warning
+
+    @property
+    def unknown(self):
+        r"""Gets the unknown of this ServerStatus.
+
+        :return: The unknown of this ServerStatus.
+        :rtype: :class:`huaweicloudsdkclouddc.v1.ServerState`
+        """
+        return self._unknown
+
+    @unknown.setter
+    def unknown(self, unknown):
+        r"""Sets the unknown of this ServerStatus.
+
+        :param unknown: The unknown of this ServerStatus.
+        :type unknown: :class:`huaweicloudsdkclouddc.v1.ServerState`
+        """
+        self._unknown = unknown
 
     @property
     def critical(self):
         r"""Gets the critical of this ServerStatus.
 
-        服务器运行Critical状态所有对象
-
         :return: The critical of this ServerStatus.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         return self._critical
 
@@ -152,10 +167,8 @@ class ServerStatus:
     def critical(self, critical):
         r"""Sets the critical of this ServerStatus.
 
-        服务器运行Critical状态所有对象
-
         :param critical: The critical of this ServerStatus.
-        :type critical: object
+        :type critical: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         self._critical = critical
 
@@ -163,10 +176,8 @@ class ServerStatus:
     def health(self):
         r"""Gets the health of this ServerStatus.
 
-        服务器运行Health状态所有对象
-
         :return: The health of this ServerStatus.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         return self._health
 
@@ -174,10 +185,8 @@ class ServerStatus:
     def health(self, health):
         r"""Sets the health of this ServerStatus.
 
-        服务器运行Health状态所有对象
-
         :param health: The health of this ServerStatus.
-        :type health: object
+        :type health: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         self._health = health
 
@@ -185,10 +194,8 @@ class ServerStatus:
     def unhealth(self):
         r"""Gets the unhealth of this ServerStatus.
 
-        服务器运行UnHealth状态所有对象
-
         :return: The unhealth of this ServerStatus.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         return self._unhealth
 
@@ -196,10 +203,8 @@ class ServerStatus:
     def unhealth(self, unhealth):
         r"""Sets the unhealth of this ServerStatus.
 
-        服务器运行UnHealth状态所有对象
-
         :param unhealth: The unhealth of this ServerStatus.
-        :type unhealth: object
+        :type unhealth: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         self._unhealth = unhealth
 
@@ -207,10 +212,8 @@ class ServerStatus:
     def isolation(self):
         r"""Gets the isolation of this ServerStatus.
 
-        服务器运行Isolation状态所有对象
-
         :return: The isolation of this ServerStatus.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         return self._isolation
 
@@ -218,10 +221,8 @@ class ServerStatus:
     def isolation(self, isolation):
         r"""Sets the isolation of this ServerStatus.
 
-        服务器运行Isolation状态所有对象
-
         :param isolation: The isolation of this ServerStatus.
-        :type isolation: object
+        :type isolation: :class:`huaweicloudsdkclouddc.v1.ServerState`
         """
         self._isolation = isolation
 

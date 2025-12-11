@@ -45,7 +45,7 @@ class AlarmLogResponseAlarmLog:
 
         :param id: 告警ID
         :type id: str
-        :param alarm_life: 告警状态 - ON - OFF
+        :param alarm_life: 告警状态 - ON：持续中 - OFF：已关闭
         :type alarm_life: str
         :param send_email: 是否发送邮件
         :type send_email: bool
@@ -121,7 +121,7 @@ class AlarmLogResponseAlarmLog:
     def alarm_life(self):
         r"""Gets the alarm_life of this AlarmLogResponseAlarmLog.
 
-        告警状态 - ON - OFF
+        告警状态 - ON：持续中 - OFF：已关闭
 
         :return: The alarm_life of this AlarmLogResponseAlarmLog.
         :rtype: str
@@ -132,7 +132,7 @@ class AlarmLogResponseAlarmLog:
     def alarm_life(self, alarm_life):
         r"""Sets the alarm_life of this AlarmLogResponseAlarmLog.
 
-        告警状态 - ON - OFF
+        告警状态 - ON：持续中 - OFF：已关闭
 
         :param alarm_life: The alarm_life of this AlarmLogResponseAlarmLog.
         :type alarm_life: str

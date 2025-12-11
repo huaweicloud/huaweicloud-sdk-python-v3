@@ -27,7 +27,7 @@ class CheckRuleIdListRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param check_rules: 检查项ID列表
+        :param check_rules: **参数解释**: 检查项ID列表 **约束限制**: 不涉及 **取值范围**: 元素个数范围0-2147483647 **默认取值**: 不涉及 
         :type check_rules: list[:class:`huaweicloudsdkhss.v5.CheckRuleKeyInfoRequestInfo`]
         """
         
@@ -43,7 +43,7 @@ class CheckRuleIdListRequestInfo:
     def check_rules(self):
         r"""Gets the check_rules of this CheckRuleIdListRequestInfo.
 
-        检查项ID列表
+        **参数解释**: 检查项ID列表 **约束限制**: 不涉及 **取值范围**: 元素个数范围0-2147483647 **默认取值**: 不涉及 
 
         :return: The check_rules of this CheckRuleIdListRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.CheckRuleKeyInfoRequestInfo`]
@@ -54,7 +54,7 @@ class CheckRuleIdListRequestInfo:
     def check_rules(self, check_rules):
         r"""Sets the check_rules of this CheckRuleIdListRequestInfo.
 
-        检查项ID列表
+        **参数解释**: 检查项ID列表 **约束限制**: 不涉及 **取值范围**: 元素个数范围0-2147483647 **默认取值**: 不涉及 
 
         :param check_rules: The check_rules of this CheckRuleIdListRequestInfo.
         :type check_rules: list[:class:`huaweicloudsdkhss.v5.CheckRuleKeyInfoRequestInfo`]

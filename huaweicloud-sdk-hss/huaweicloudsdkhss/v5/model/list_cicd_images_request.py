@@ -75,9 +75,9 @@ class ListCicdImagesRequest:
         :type enterprise_project_id: str
         :param namespace: **参数解释**: 组织名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。  **默认取值**: 不涉及 
         :type namespace: str
-        :param image_name: **参数解释**: 镜像名称 **取值范围**: 字符长度1-128位 
+        :param image_name: **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type image_name: str
-        :param image_version: **参数解释**: 镜像版本 **取值范围**: 字符长度1-64位 
+        :param image_version: **参数解释**: 镜像版本 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type image_version: str
         :param sort_key: **参数解释**: 可排序字段 **约束限制**: 不涉及 **取值范围**: - latest_scan_time：最近扫描时间。  **默认取值**: 不涉及 
         :type sort_key: str
@@ -241,7 +241,7 @@ class ListCicdImagesRequest:
     def image_name(self):
         r"""Gets the image_name of this ListCicdImagesRequest.
 
-        **参数解释**: 镜像名称 **取值范围**: 字符长度1-128位 
+        **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The image_name of this ListCicdImagesRequest.
         :rtype: str
@@ -252,7 +252,7 @@ class ListCicdImagesRequest:
     def image_name(self, image_name):
         r"""Sets the image_name of this ListCicdImagesRequest.
 
-        **参数解释**: 镜像名称 **取值范围**: 字符长度1-128位 
+        **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param image_name: The image_name of this ListCicdImagesRequest.
         :type image_name: str
@@ -263,7 +263,7 @@ class ListCicdImagesRequest:
     def image_version(self):
         r"""Gets the image_version of this ListCicdImagesRequest.
 
-        **参数解释**: 镜像版本 **取值范围**: 字符长度1-64位 
+        **参数解释**: 镜像版本 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The image_version of this ListCicdImagesRequest.
         :rtype: str
@@ -274,7 +274,7 @@ class ListCicdImagesRequest:
     def image_version(self, image_version):
         r"""Sets the image_version of this ListCicdImagesRequest.
 
-        **参数解释**: 镜像版本 **取值范围**: 字符长度1-64位 
+        **参数解释**: 镜像版本 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param image_version: The image_version of this ListCicdImagesRequest.
         :type image_version: str

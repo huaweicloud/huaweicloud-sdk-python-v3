@@ -28,8 +28,8 @@ class ListAntivirusHandleHistoryRequest:
         'asset_value': 'str',
         'handle_method': 'str',
         'user_name': 'str',
-        'event_type': 'int',
         'sort_dir': 'str',
+        'event_type': 'int',
         'sort_key': 'str'
     }
 
@@ -47,12 +47,12 @@ class ListAntivirusHandleHistoryRequest:
         'asset_value': 'asset_value',
         'handle_method': 'handle_method',
         'user_name': 'user_name',
-        'event_type': 'event_type',
         'sort_dir': 'sort_dir',
+        'event_type': 'event_type',
         'sort_key': 'sort_key'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, malware_name=None, file_path=None, severity_list=None, host_name=None, private_ip=None, public_ip=None, asset_value=None, handle_method=None, user_name=None, event_type=None, sort_dir=None, sort_key=None):
+    def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, malware_name=None, file_path=None, severity_list=None, host_name=None, private_ip=None, public_ip=None, asset_value=None, handle_method=None, user_name=None, sort_dir=None, event_type=None, sort_key=None):
         r"""ListAntivirusHandleHistoryRequest
 
         The model defined in huaweicloud sdk
@@ -65,29 +65,29 @@ class ListAntivirusHandleHistoryRequest:
         :type offset: int
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param malware_name: 病毒名称
+        :param malware_name: **参数解释**: 病毒名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type malware_name: str
-        :param file_path: 文件路径
+        :param file_path: **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
         :type file_path: str
-        :param severity_list: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
+        :param severity_list: **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
         :type severity_list: list[str]
         :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
         :param private_ip: **参数解释**: 服务器私有IP **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type private_ip: str
-        :param public_ip: **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        :param public_ip: **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
         :type public_ip: str
-        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
+        :param asset_value: **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
         :type asset_value: str
-        :param handle_method: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件
+        :param handle_method: **参数解释**: 处理方式 **约束限制**: 不涉及 **取值范围**: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 **默认取值**: 不涉及 
         :type handle_method: str
-        :param user_name: 用户名
+        :param user_name: **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type user_name: str
-        :param event_type: 事件类型
-        :type event_type: int
-        :param sort_dir: 排序顺序，若sort_key不为空,设置返回结果按照sort_key升序或降序排序,默认降序排序，包含如下:   - asc : 升序   - desc : 降序
+        :param sort_dir: **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
         :type sort_dir: str
-        :param sort_key: 排序字段，包含如下:   - handle_time : 处置时间
+        :param event_type: **参数解释**: 事件类型 **约束限制**: 不涉及 **取值范围**: 0（病毒查杀事件）、1（恶意文件处置事件） **默认取值**: 不涉及 
+        :type event_type: int
+        :param sort_key: **参数解释**: 排序字段 **约束限制**: 不涉及 **取值范围**: handle_time（处置时间） **默认取值**: 不涉及 
         :type sort_key: str
         """
         
@@ -106,8 +106,8 @@ class ListAntivirusHandleHistoryRequest:
         self._asset_value = None
         self._handle_method = None
         self._user_name = None
-        self._event_type = None
         self._sort_dir = None
+        self._event_type = None
         self._sort_key = None
         self.discriminator = None
 
@@ -135,10 +135,10 @@ class ListAntivirusHandleHistoryRequest:
             self.handle_method = handle_method
         if user_name is not None:
             self.user_name = user_name
-        if event_type is not None:
-            self.event_type = event_type
         if sort_dir is not None:
             self.sort_dir = sort_dir
+        if event_type is not None:
+            self.event_type = event_type
         if sort_key is not None:
             self.sort_key = sort_key
 
@@ -234,7 +234,7 @@ class ListAntivirusHandleHistoryRequest:
     def malware_name(self):
         r"""Gets the malware_name of this ListAntivirusHandleHistoryRequest.
 
-        病毒名称
+        **参数解释**: 病毒名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The malware_name of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -245,7 +245,7 @@ class ListAntivirusHandleHistoryRequest:
     def malware_name(self, malware_name):
         r"""Sets the malware_name of this ListAntivirusHandleHistoryRequest.
 
-        病毒名称
+        **参数解释**: 病毒名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param malware_name: The malware_name of this ListAntivirusHandleHistoryRequest.
         :type malware_name: str
@@ -256,7 +256,7 @@ class ListAntivirusHandleHistoryRequest:
     def file_path(self):
         r"""Gets the file_path of this ListAntivirusHandleHistoryRequest.
 
-        文件路径
+        **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
 
         :return: The file_path of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -267,7 +267,7 @@ class ListAntivirusHandleHistoryRequest:
     def file_path(self, file_path):
         r"""Sets the file_path of this ListAntivirusHandleHistoryRequest.
 
-        文件路径
+        **参数解释**： 文件路径 **约束限制**： 不涉及 **取值范围**： 字符数1-512位 **默认取值**： 不涉及 
 
         :param file_path: The file_path of this ListAntivirusHandleHistoryRequest.
         :type file_path: str
@@ -278,7 +278,7 @@ class ListAntivirusHandleHistoryRequest:
     def severity_list(self):
         r"""Gets the severity_list of this ListAntivirusHandleHistoryRequest.
 
-        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
+        **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
 
         :return: The severity_list of this ListAntivirusHandleHistoryRequest.
         :rtype: list[str]
@@ -289,7 +289,7 @@ class ListAntivirusHandleHistoryRequest:
     def severity_list(self, severity_list):
         r"""Sets the severity_list of this ListAntivirusHandleHistoryRequest.
 
-        威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命
+        **参数解释**: 威胁等级 **约束限制**: 不涉及 **取值范围**: 威胁等级，包含如下:   - Low：低危   - Medium：中危   - High：高危   - Critical：致命 **默认取值**: 不涉及 
 
         :param severity_list: The severity_list of this ListAntivirusHandleHistoryRequest.
         :type severity_list: list[str]
@@ -344,7 +344,7 @@ class ListAntivirusHandleHistoryRequest:
     def public_ip(self):
         r"""Gets the public_ip of this ListAntivirusHandleHistoryRequest.
 
-        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
 
         :return: The public_ip of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -355,7 +355,7 @@ class ListAntivirusHandleHistoryRequest:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ListAntivirusHandleHistoryRequest.
 
-        **参数解释**: 服务器弹性IP地址。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 无 
+        **参数解释**: 服务器弹性IP地址 **约束限制**: 不涉及 **取值范围**: IPv4格式（长度7-15位）、IPv6格式（长度15-39位） **默认取值**: 无 
 
         :param public_ip: The public_ip of this ListAntivirusHandleHistoryRequest.
         :type public_ip: str
@@ -366,7 +366,7 @@ class ListAntivirusHandleHistoryRequest:
     def asset_value(self):
         r"""Gets the asset_value of this ListAntivirusHandleHistoryRequest.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
 
         :return: The asset_value of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -377,7 +377,7 @@ class ListAntivirusHandleHistoryRequest:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this ListAntivirusHandleHistoryRequest.
 
-        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产。 - common：一般资产。 - test：测试资产。  **默认取值**： 无 
+        **参数解释**： 资产重要性 **约束限制**： 不涉及 **取值范围**： - important：重要资产 - common：一般资产 - test：测试资产  **默认取值**： 无 
 
         :param asset_value: The asset_value of this ListAntivirusHandleHistoryRequest.
         :type asset_value: str
@@ -388,7 +388,7 @@ class ListAntivirusHandleHistoryRequest:
     def handle_method(self):
         r"""Gets the handle_method of this ListAntivirusHandleHistoryRequest.
 
-        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件
+        **参数解释**: 处理方式 **约束限制**: 不涉及 **取值范围**: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 **默认取值**: 不涉及 
 
         :return: The handle_method of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -399,7 +399,7 @@ class ListAntivirusHandleHistoryRequest:
     def handle_method(self, handle_method):
         r"""Sets the handle_method of this ListAntivirusHandleHistoryRequest.
 
-        处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件
+        **参数解释**: 处理方式 **约束限制**: 不涉及 **取值范围**: 处理方式，包含如下:   - mark_as_handled：手动处理   - ignore：忽略   - add_to_alarm_whitelist：加入告警白名单   - isolate_and_kill：隔离文件   - unhandle：取消手动处理   - do_not_ignore：取消忽略   - remove_from_alarm_whitelist：删除告警白名单   - do_not_isolate_or_kill：取消隔离文件 **默认取值**: 不涉及 
 
         :param handle_method: The handle_method of this ListAntivirusHandleHistoryRequest.
         :type handle_method: str
@@ -410,7 +410,7 @@ class ListAntivirusHandleHistoryRequest:
     def user_name(self):
         r"""Gets the user_name of this ListAntivirusHandleHistoryRequest.
 
-        用户名
+        **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The user_name of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -421,7 +421,7 @@ class ListAntivirusHandleHistoryRequest:
     def user_name(self, user_name):
         r"""Sets the user_name of this ListAntivirusHandleHistoryRequest.
 
-        用户名
+        **参数解释**: 用户名 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param user_name: The user_name of this ListAntivirusHandleHistoryRequest.
         :type user_name: str
@@ -429,32 +429,10 @@ class ListAntivirusHandleHistoryRequest:
         self._user_name = user_name
 
     @property
-    def event_type(self):
-        r"""Gets the event_type of this ListAntivirusHandleHistoryRequest.
-
-        事件类型
-
-        :return: The event_type of this ListAntivirusHandleHistoryRequest.
-        :rtype: int
-        """
-        return self._event_type
-
-    @event_type.setter
-    def event_type(self, event_type):
-        r"""Sets the event_type of this ListAntivirusHandleHistoryRequest.
-
-        事件类型
-
-        :param event_type: The event_type of this ListAntivirusHandleHistoryRequest.
-        :type event_type: int
-        """
-        self._event_type = event_type
-
-    @property
     def sort_dir(self):
         r"""Gets the sort_dir of this ListAntivirusHandleHistoryRequest.
 
-        排序顺序，若sort_key不为空,设置返回结果按照sort_key升序或降序排序,默认降序排序，包含如下:   - asc : 升序   - desc : 降序
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
 
         :return: The sort_dir of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -465,7 +443,7 @@ class ListAntivirusHandleHistoryRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListAntivirusHandleHistoryRequest.
 
-        排序顺序，若sort_key不为空,设置返回结果按照sort_key升序或降序排序,默认降序排序，包含如下:   - asc : 升序   - desc : 降序
+        **参数解释**: 排序的顺序 **约束限制**: 不涉及 **取值范围**:   - asc  : 正序   - desc : 倒序  **默认取值**: 正序排序 
 
         :param sort_dir: The sort_dir of this ListAntivirusHandleHistoryRequest.
         :type sort_dir: str
@@ -473,10 +451,32 @@ class ListAntivirusHandleHistoryRequest:
         self._sort_dir = sort_dir
 
     @property
+    def event_type(self):
+        r"""Gets the event_type of this ListAntivirusHandleHistoryRequest.
+
+        **参数解释**: 事件类型 **约束限制**: 不涉及 **取值范围**: 0（病毒查杀事件）、1（恶意文件处置事件） **默认取值**: 不涉及 
+
+        :return: The event_type of this ListAntivirusHandleHistoryRequest.
+        :rtype: int
+        """
+        return self._event_type
+
+    @event_type.setter
+    def event_type(self, event_type):
+        r"""Sets the event_type of this ListAntivirusHandleHistoryRequest.
+
+        **参数解释**: 事件类型 **约束限制**: 不涉及 **取值范围**: 0（病毒查杀事件）、1（恶意文件处置事件） **默认取值**: 不涉及 
+
+        :param event_type: The event_type of this ListAntivirusHandleHistoryRequest.
+        :type event_type: int
+        """
+        self._event_type = event_type
+
+    @property
     def sort_key(self):
         r"""Gets the sort_key of this ListAntivirusHandleHistoryRequest.
 
-        排序字段，包含如下:   - handle_time : 处置时间
+        **参数解释**: 排序字段 **约束限制**: 不涉及 **取值范围**: handle_time（处置时间） **默认取值**: 不涉及 
 
         :return: The sort_key of this ListAntivirusHandleHistoryRequest.
         :rtype: str
@@ -487,7 +487,7 @@ class ListAntivirusHandleHistoryRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListAntivirusHandleHistoryRequest.
 
-        排序字段，包含如下:   - handle_time : 处置时间
+        **参数解释**: 排序字段 **约束限制**: 不涉及 **取值范围**: handle_time（处置时间） **默认取值**: 不涉及 
 
         :param sort_key: The sort_key of this ListAntivirusHandleHistoryRequest.
         :type sort_key: str

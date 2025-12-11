@@ -47,9 +47,9 @@ class AntivirusResultDetailInfo:
 
         The model defined in huaweicloud sdk
 
-        :param result_id: 病毒查杀结果ID
+        :param result_id: **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
         :type result_id: str
-        :param malware_name: 病毒名称
+        :param malware_name: **参数解释**： 病毒名称 **取值范围**： 字符长度1-128位 
         :type malware_name: str
         :param file_path: **参数解释**： 文件路径 **取值范围**： 字符长度1-256位 
         :type file_path: str
@@ -57,17 +57,17 @@ class AntivirusResultDetailInfo:
         :type file_hash: str
         :param file_size: **参数解释**: 文件大小 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值9223372036854775807 **默认取值**: 不涉及 
         :type file_size: int
-        :param file_owner: 文件属性
+        :param file_owner: **参数解释**： 文件属性 **取值范围**： 字符长度0-64位 
         :type file_owner: str
-        :param file_attr: **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        :param file_attr: **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
         :type file_attr: str
-        :param file_ctime: 文件创建时间
+        :param file_ctime: **参数解释**： 文件创建时间 **取值范围**： 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
         :type file_ctime: int
-        :param file_mtime: 文件更新时间
+        :param file_mtime: **参数解释**： 文件更新时间 **取值范围**： 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
         :type file_mtime: int
         :param update_time: 更新时间，毫秒
         :type update_time: int
-        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param agent_id: **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         """
         
@@ -113,7 +113,7 @@ class AntivirusResultDetailInfo:
     def result_id(self):
         r"""Gets the result_id of this AntivirusResultDetailInfo.
 
-        病毒查杀结果ID
+        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
 
         :return: The result_id of this AntivirusResultDetailInfo.
         :rtype: str
@@ -124,7 +124,7 @@ class AntivirusResultDetailInfo:
     def result_id(self, result_id):
         r"""Sets the result_id of this AntivirusResultDetailInfo.
 
-        病毒查杀结果ID
+        **参数解释**： 病毒查杀结果ID **取值范围**： 字符长度1-64位 
 
         :param result_id: The result_id of this AntivirusResultDetailInfo.
         :type result_id: str
@@ -135,7 +135,7 @@ class AntivirusResultDetailInfo:
     def malware_name(self):
         r"""Gets the malware_name of this AntivirusResultDetailInfo.
 
-        病毒名称
+        **参数解释**： 病毒名称 **取值范围**： 字符长度1-128位 
 
         :return: The malware_name of this AntivirusResultDetailInfo.
         :rtype: str
@@ -146,7 +146,7 @@ class AntivirusResultDetailInfo:
     def malware_name(self, malware_name):
         r"""Sets the malware_name of this AntivirusResultDetailInfo.
 
-        病毒名称
+        **参数解释**： 病毒名称 **取值范围**： 字符长度1-128位 
 
         :param malware_name: The malware_name of this AntivirusResultDetailInfo.
         :type malware_name: str
@@ -223,7 +223,7 @@ class AntivirusResultDetailInfo:
     def file_owner(self):
         r"""Gets the file_owner of this AntivirusResultDetailInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度0-64位 
 
         :return: The file_owner of this AntivirusResultDetailInfo.
         :rtype: str
@@ -234,7 +234,7 @@ class AntivirusResultDetailInfo:
     def file_owner(self, file_owner):
         r"""Sets the file_owner of this AntivirusResultDetailInfo.
 
-        文件属性
+        **参数解释**： 文件属性 **取值范围**： 字符长度0-64位 
 
         :param file_owner: The file_owner of this AntivirusResultDetailInfo.
         :type file_owner: str
@@ -245,7 +245,7 @@ class AntivirusResultDetailInfo:
     def file_attr(self):
         r"""Gets the file_attr of this AntivirusResultDetailInfo.
 
-        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
 
         :return: The file_attr of this AntivirusResultDetailInfo.
         :rtype: str
@@ -256,7 +256,7 @@ class AntivirusResultDetailInfo:
     def file_attr(self, file_attr):
         r"""Sets the file_attr of this AntivirusResultDetailInfo.
 
-        **参数解释**： 文件属性 **取值范围**： 字符长度1-256位 
+        **参数解释**： 文件的系统属性（如读写权限、隐藏属性、执行权限等） **取值范围**： 字符长度1-256位 
 
         :param file_attr: The file_attr of this AntivirusResultDetailInfo.
         :type file_attr: str
@@ -267,7 +267,7 @@ class AntivirusResultDetailInfo:
     def file_ctime(self):
         r"""Gets the file_ctime of this AntivirusResultDetailInfo.
 
-        文件创建时间
+        **参数解释**： 文件创建时间 **取值范围**： 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :return: The file_ctime of this AntivirusResultDetailInfo.
         :rtype: int
@@ -278,7 +278,7 @@ class AntivirusResultDetailInfo:
     def file_ctime(self, file_ctime):
         r"""Sets the file_ctime of this AntivirusResultDetailInfo.
 
-        文件创建时间
+        **参数解释**： 文件创建时间 **取值范围**： 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :param file_ctime: The file_ctime of this AntivirusResultDetailInfo.
         :type file_ctime: int
@@ -289,7 +289,7 @@ class AntivirusResultDetailInfo:
     def file_mtime(self):
         r"""Gets the file_mtime of this AntivirusResultDetailInfo.
 
-        文件更新时间
+        **参数解释**： 文件更新时间 **取值范围**： 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :return: The file_mtime of this AntivirusResultDetailInfo.
         :rtype: int
@@ -300,7 +300,7 @@ class AntivirusResultDetailInfo:
     def file_mtime(self, file_mtime):
         r"""Sets the file_mtime of this AntivirusResultDetailInfo.
 
-        文件更新时间
+        **参数解释**： 文件更新时间 **取值范围**： 非负长整数，时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算），单位：ms 
 
         :param file_mtime: The file_mtime of this AntivirusResultDetailInfo.
         :type file_mtime: int
@@ -333,7 +333,7 @@ class AntivirusResultDetailInfo:
     def agent_id(self):
         r"""Gets the agent_id of this AntivirusResultDetailInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this AntivirusResultDetailInfo.
         :rtype: str
@@ -344,7 +344,7 @@ class AntivirusResultDetailInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this AntivirusResultDetailInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this AntivirusResultDetailInfo.
         :type agent_id: str

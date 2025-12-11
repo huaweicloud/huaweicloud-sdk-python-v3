@@ -18,45 +18,45 @@ class ListPortHostRequest:
         'enterprise_project_id': 'str',
         'host_name': 'str',
         'host_ip': 'str',
-        'port': 'int',
-        'type': 'str',
         'category': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'port': 'int',
+        'type': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'host_name': 'host_name',
         'host_ip': 'host_ip',
-        'port': 'port',
-        'type': 'type',
         'category': 'category',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'port': 'port',
+        'type': 'type'
     }
 
-    def __init__(self, enterprise_project_id=None, host_name=None, host_ip=None, port=None, type=None, category=None, limit=None, offset=None):
+    def __init__(self, enterprise_project_id=None, host_name=None, host_ip=None, category=None, limit=None, offset=None, port=None, type=None):
         r"""ListPortHostRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param host_name: 主机名称
+        :param host_name: **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_name: str
-        :param host_ip: 主机ip
+        :param host_ip: **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
         :type host_ip: str
-        :param port: 端口号
-        :type port: int
-        :param type: 端口类型：目前包括TCP，UDP两种
-        :type type: str
-        :param category: 类别，默认为host，包含如下： - host：主机 - container：容器
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
         :type category: str
-        :param limit: 每页显示数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
+        :param port: **参数解释**: 端口号 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值65535（TCP/UDP标准端口范围） **默认取值**: 不涉及 
+        :type port: int
+        :param type: **参数解释**: 端口类型 **约束限制**: 不涉及 **取值范围**: TCP、UDP **默认取值**: 不涉及 
+        :type type: str
         """
         
         
@@ -64,11 +64,11 @@ class ListPortHostRequest:
         self._enterprise_project_id = None
         self._host_name = None
         self._host_ip = None
-        self._port = None
-        self._type = None
         self._category = None
         self._limit = None
         self._offset = None
+        self._port = None
+        self._type = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -77,21 +77,20 @@ class ListPortHostRequest:
             self.host_name = host_name
         if host_ip is not None:
             self.host_ip = host_ip
-        self.port = port
-        if type is not None:
-            self.type = type
-        if category is not None:
-            self.category = category
+        self.category = category
         if limit is not None:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        self.port = port
+        if type is not None:
+            self.type = type
 
     @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListPortHostRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListPortHostRequest.
         :rtype: str
@@ -102,7 +101,7 @@ class ListPortHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListPortHostRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListPortHostRequest.
         :type enterprise_project_id: str
@@ -113,7 +112,7 @@ class ListPortHostRequest:
     def host_name(self):
         r"""Gets the host_name of this ListPortHostRequest.
 
-        主机名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_name of this ListPortHostRequest.
         :rtype: str
@@ -124,7 +123,7 @@ class ListPortHostRequest:
     def host_name(self, host_name):
         r"""Sets the host_name of this ListPortHostRequest.
 
-        主机名称
+        **参数解释**: 服务器名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_name: The host_name of this ListPortHostRequest.
         :type host_name: str
@@ -135,7 +134,7 @@ class ListPortHostRequest:
     def host_ip(self):
         r"""Gets the host_ip of this ListPortHostRequest.
 
-        主机ip
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :return: The host_ip of this ListPortHostRequest.
         :rtype: str
@@ -146,7 +145,7 @@ class ListPortHostRequest:
     def host_ip(self, host_ip):
         r"""Sets the host_ip of this ListPortHostRequest.
 
-        主机ip
+        **参数解释**: 服务器IP **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
 
         :param host_ip: The host_ip of this ListPortHostRequest.
         :type host_ip: str
@@ -154,54 +153,10 @@ class ListPortHostRequest:
         self._host_ip = host_ip
 
     @property
-    def port(self):
-        r"""Gets the port of this ListPortHostRequest.
-
-        端口号
-
-        :return: The port of this ListPortHostRequest.
-        :rtype: int
-        """
-        return self._port
-
-    @port.setter
-    def port(self, port):
-        r"""Sets the port of this ListPortHostRequest.
-
-        端口号
-
-        :param port: The port of this ListPortHostRequest.
-        :type port: int
-        """
-        self._port = port
-
-    @property
-    def type(self):
-        r"""Gets the type of this ListPortHostRequest.
-
-        端口类型：目前包括TCP，UDP两种
-
-        :return: The type of this ListPortHostRequest.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        r"""Sets the type of this ListPortHostRequest.
-
-        端口类型：目前包括TCP，UDP两种
-
-        :param type: The type of this ListPortHostRequest.
-        :type type: str
-        """
-        self._type = type
-
-    @property
     def category(self):
         r"""Gets the category of this ListPortHostRequest.
 
-        类别，默认为host，包含如下： - host：主机 - container：容器
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :return: The category of this ListPortHostRequest.
         :rtype: str
@@ -212,7 +167,7 @@ class ListPortHostRequest:
     def category(self, category):
         r"""Sets the category of this ListPortHostRequest.
 
-        类别，默认为host，包含如下： - host：主机 - container：容器
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
 
         :param category: The category of this ListPortHostRequest.
         :type category: str
@@ -223,7 +178,7 @@ class ListPortHostRequest:
     def limit(self):
         r"""Gets the limit of this ListPortHostRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListPortHostRequest.
         :rtype: int
@@ -234,7 +189,7 @@ class ListPortHostRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListPortHostRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListPortHostRequest.
         :type limit: int
@@ -245,7 +200,7 @@ class ListPortHostRequest:
     def offset(self):
         r"""Gets the offset of this ListPortHostRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListPortHostRequest.
         :rtype: int
@@ -256,12 +211,56 @@ class ListPortHostRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListPortHostRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListPortHostRequest.
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def port(self):
+        r"""Gets the port of this ListPortHostRequest.
+
+        **参数解释**: 端口号 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值65535（TCP/UDP标准端口范围） **默认取值**: 不涉及 
+
+        :return: The port of this ListPortHostRequest.
+        :rtype: int
+        """
+        return self._port
+
+    @port.setter
+    def port(self, port):
+        r"""Sets the port of this ListPortHostRequest.
+
+        **参数解释**: 端口号 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值65535（TCP/UDP标准端口范围） **默认取值**: 不涉及 
+
+        :param port: The port of this ListPortHostRequest.
+        :type port: int
+        """
+        self._port = port
+
+    @property
+    def type(self):
+        r"""Gets the type of this ListPortHostRequest.
+
+        **参数解释**: 端口类型 **约束限制**: 不涉及 **取值范围**: TCP、UDP **默认取值**: 不涉及 
+
+        :return: The type of this ListPortHostRequest.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        r"""Sets the type of this ListPortHostRequest.
+
+        **参数解释**: 端口类型 **约束限制**: 不涉及 **取值范围**: TCP、UDP **默认取值**: 不涉及 
+
+        :param type: The type of this ListPortHostRequest.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         result = {}

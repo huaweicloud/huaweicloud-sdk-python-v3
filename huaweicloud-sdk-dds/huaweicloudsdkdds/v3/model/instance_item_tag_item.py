@@ -29,9 +29,9 @@ class InstanceItemTagItem:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
+        :param key: **参数解释：** 标签键。 **取值范围：** 最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
         :type key: str
-        :param value: 标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
+        :param value: **参数解释：** 标签值。 **取值范围：** 最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class InstanceItemTagItem:
     def key(self):
         r"""Gets the key of this InstanceItemTagItem.
 
-        标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
+        **参数解释：** 标签键。 **取值范围：** 最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
         :return: The key of this InstanceItemTagItem.
         :rtype: str
@@ -61,7 +61,7 @@ class InstanceItemTagItem:
     def key(self, key):
         r"""Sets the key of this InstanceItemTagItem.
 
-        标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
+        **参数解释：** 标签键。 **取值范围：** 最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
         :param key: The key of this InstanceItemTagItem.
         :type key: str
@@ -72,7 +72,7 @@ class InstanceItemTagItem:
     def value(self):
         r"""Gets the value of this InstanceItemTagItem.
 
-        标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
+        **参数解释：** 标签值。 **取值范围：** 最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 
         :return: The value of this InstanceItemTagItem.
         :rtype: str
@@ -83,7 +83,7 @@ class InstanceItemTagItem:
     def value(self, value):
         r"""Sets the value of this InstanceItemTagItem.
 
-        标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
+        **参数解释：** 标签值。 **取值范围：** 最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 
         :param value: The value of this InstanceItemTagItem.
         :type value: str

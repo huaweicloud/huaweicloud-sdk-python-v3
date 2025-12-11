@@ -35,15 +35,15 @@ class SwitchHostsProtectStatusRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param version: 主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        :param version: **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
         :type version: str
-        :param charging_mode: 付费模式，当version不为“hss.version.null”时，则需必填该参数   - packet_cycle : 包周期   - on_demand : 按需
+        :param charging_mode: **参数解释**： 计费模式 **约束限制**: 不涉及 **取值范围**： - packet_cycle ：包年/包月。 - on_demand ：按需计费。 **默认取值**: 不涉及
         :type charging_mode: str
-        :param resource_id: HSS配额ID，不填该参数时，则随机选择对应版本配额
+        :param resource_id: **参数解释**: 资源ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type resource_id: str
-        :param host_id_list: 服务器列表
+        :param host_id_list: **参数解释**： 服务器ID列表 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及 
         :type host_id_list: list[str]
-        :param tags: 资源标签列表
+        :param tags: **参数解释**： 资源标签列表 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及
         :type tags: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
         """
         
@@ -69,7 +69,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def version(self):
         r"""Gets the version of this SwitchHostsProtectStatusRequestInfo.
 
-        主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
 
         :return: The version of this SwitchHostsProtectStatusRequestInfo.
         :rtype: str
@@ -80,7 +80,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def version(self, version):
         r"""Sets the version of this SwitchHostsProtectStatusRequestInfo.
 
-        主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
+        **参数解释**： 主机开通的版本 **约束限制**: 不涉及 **取值范围**： 包含如下7种输入。 - hss.version.null ：无。 - hss.version.basic ：基础版。 - hss.version.advanced ：专业版。 - hss.version.enterprise ：企业版。 - hss.version.premium ：旗舰版。 - hss.version.wtp ：网页防篡改版。 - hss.version.container.enterprise：容器版。 **默认取值**: 不涉及
 
         :param version: The version of this SwitchHostsProtectStatusRequestInfo.
         :type version: str
@@ -91,7 +91,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def charging_mode(self):
         r"""Gets the charging_mode of this SwitchHostsProtectStatusRequestInfo.
 
-        付费模式，当version不为“hss.version.null”时，则需必填该参数   - packet_cycle : 包周期   - on_demand : 按需
+        **参数解释**： 计费模式 **约束限制**: 不涉及 **取值范围**： - packet_cycle ：包年/包月。 - on_demand ：按需计费。 **默认取值**: 不涉及
 
         :return: The charging_mode of this SwitchHostsProtectStatusRequestInfo.
         :rtype: str
@@ -102,7 +102,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def charging_mode(self, charging_mode):
         r"""Sets the charging_mode of this SwitchHostsProtectStatusRequestInfo.
 
-        付费模式，当version不为“hss.version.null”时，则需必填该参数   - packet_cycle : 包周期   - on_demand : 按需
+        **参数解释**： 计费模式 **约束限制**: 不涉及 **取值范围**： - packet_cycle ：包年/包月。 - on_demand ：按需计费。 **默认取值**: 不涉及
 
         :param charging_mode: The charging_mode of this SwitchHostsProtectStatusRequestInfo.
         :type charging_mode: str
@@ -113,7 +113,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def resource_id(self):
         r"""Gets the resource_id of this SwitchHostsProtectStatusRequestInfo.
 
-        HSS配额ID，不填该参数时，则随机选择对应版本配额
+        **参数解释**: 资源ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The resource_id of this SwitchHostsProtectStatusRequestInfo.
         :rtype: str
@@ -124,7 +124,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this SwitchHostsProtectStatusRequestInfo.
 
-        HSS配额ID，不填该参数时，则随机选择对应版本配额
+        **参数解释**: 资源ID **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param resource_id: The resource_id of this SwitchHostsProtectStatusRequestInfo.
         :type resource_id: str
@@ -135,7 +135,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def host_id_list(self):
         r"""Gets the host_id_list of this SwitchHostsProtectStatusRequestInfo.
 
-        服务器列表
+        **参数解释**： 服务器ID列表 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及 
 
         :return: The host_id_list of this SwitchHostsProtectStatusRequestInfo.
         :rtype: list[str]
@@ -146,7 +146,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def host_id_list(self, host_id_list):
         r"""Sets the host_id_list of this SwitchHostsProtectStatusRequestInfo.
 
-        服务器列表
+        **参数解释**： 服务器ID列表 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及 
 
         :param host_id_list: The host_id_list of this SwitchHostsProtectStatusRequestInfo.
         :type host_id_list: list[str]
@@ -157,7 +157,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def tags(self):
         r"""Gets the tags of this SwitchHostsProtectStatusRequestInfo.
 
-        资源标签列表
+        **参数解释**： 资源标签列表 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及
 
         :return: The tags of this SwitchHostsProtectStatusRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.TagInfo`]
@@ -168,7 +168,7 @@ class SwitchHostsProtectStatusRequestInfo:
     def tags(self, tags):
         r"""Sets the tags of this SwitchHostsProtectStatusRequestInfo.
 
-        资源标签列表
+        **参数解释**： 资源标签列表 **约束限制**: 不涉及 **取值范围**: 不涉及 **默认取值**: 不涉及
 
         :param tags: The tags of this SwitchHostsProtectStatusRequestInfo.
         :type tags: list[:class:`huaweicloudsdkhss.v5.TagInfo`]

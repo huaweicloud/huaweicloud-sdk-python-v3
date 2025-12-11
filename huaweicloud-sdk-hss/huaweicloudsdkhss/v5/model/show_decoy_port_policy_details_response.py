@@ -40,7 +40,7 @@ class ShowDecoyPortPolicyDetailsResponse(SdkResponse):
         :type policy_name: str
         :param port_list: 端口与协议
         :type port_list: list[:class:`huaweicloudsdkhss.v5.PolicyDetailsPortList`]
-        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
         :type os_type: str
         :param white_ip: ip白名单
         :type white_ip: list[str]
@@ -116,7 +116,7 @@ class ShowDecoyPortPolicyDetailsResponse(SdkResponse):
     def os_type(self):
         r"""Gets the os_type of this ShowDecoyPortPolicyDetailsResponse.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :return: The os_type of this ShowDecoyPortPolicyDetailsResponse.
         :rtype: str
@@ -127,7 +127,7 @@ class ShowDecoyPortPolicyDetailsResponse(SdkResponse):
     def os_type(self, os_type):
         r"""Sets the os_type of this ShowDecoyPortPolicyDetailsResponse.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :param os_type: The os_type of this ShowDecoyPortPolicyDetailsResponse.
         :type os_type: str

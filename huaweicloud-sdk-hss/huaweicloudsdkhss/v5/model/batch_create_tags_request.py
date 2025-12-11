@@ -31,9 +31,9 @@ class BatchCreateTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss
+        :param resource_type: **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位。 **默认取值**: hss 
         :type resource_type: str
-        :param resource_id: 由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID
+        :param resource_id: **参数解释**: 由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 无 
         :type resource_id: str
         :param body: Body of the BatchCreateTagsRequest
         :type body: :class:`huaweicloudsdkhss.v5.BatchCreateTagsRequestInfo`
@@ -55,7 +55,7 @@ class BatchCreateTagsRequest:
     def resource_type(self):
         r"""Gets the resource_type of this BatchCreateTagsRequest.
 
-        由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss
+        **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位。 **默认取值**: hss 
 
         :return: The resource_type of this BatchCreateTagsRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class BatchCreateTagsRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this BatchCreateTagsRequest.
 
-        由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss
+        **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位。 **默认取值**: hss 
 
         :param resource_type: The resource_type of this BatchCreateTagsRequest.
         :type resource_type: str
@@ -77,7 +77,7 @@ class BatchCreateTagsRequest:
     def resource_id(self):
         r"""Gets the resource_id of this BatchCreateTagsRequest.
 
-        由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID
+        **参数解释**: 由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 无 
 
         :return: The resource_id of this BatchCreateTagsRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class BatchCreateTagsRequest:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this BatchCreateTagsRequest.
 
-        由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID
+        **参数解释**: 由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 无 
 
         :param resource_id: The resource_id of this BatchCreateTagsRequest.
         :type resource_id: str

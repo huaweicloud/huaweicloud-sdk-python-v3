@@ -59,19 +59,19 @@ class ExportWebTamperHostRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_id_list: **参数解释**: 服务器ID列表 **取值范围**: 不涉及 
         :type host_id_list: list[str]
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
         :type public_ip: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
         :param agent_id: **参数解释**: Agent ID。（已废弃，请使用host_id） **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
         :type os_type: str
         :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
@@ -153,7 +153,7 @@ class ExportWebTamperHostRequestInfo:
     def host_id(self):
         r"""Gets the host_id of this ExportWebTamperHostRequestInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this ExportWebTamperHostRequestInfo.
         :rtype: str
@@ -164,7 +164,7 @@ class ExportWebTamperHostRequestInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this ExportWebTamperHostRequestInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this ExportWebTamperHostRequestInfo.
         :type host_id: str
@@ -219,7 +219,7 @@ class ExportWebTamperHostRequestInfo:
     def public_ip(self):
         r"""Gets the public_ip of this ExportWebTamperHostRequestInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :return: The public_ip of this ExportWebTamperHostRequestInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class ExportWebTamperHostRequestInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ExportWebTamperHostRequestInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :param public_ip: The public_ip of this ExportWebTamperHostRequestInfo.
         :type public_ip: str
@@ -285,7 +285,7 @@ class ExportWebTamperHostRequestInfo:
     def os_type(self):
         r"""Gets the os_type of this ExportWebTamperHostRequestInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :return: The os_type of this ExportWebTamperHostRequestInfo.
         :rtype: str
@@ -296,7 +296,7 @@ class ExportWebTamperHostRequestInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this ExportWebTamperHostRequestInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :param os_type: The os_type of this ExportWebTamperHostRequestInfo.
         :type os_type: str

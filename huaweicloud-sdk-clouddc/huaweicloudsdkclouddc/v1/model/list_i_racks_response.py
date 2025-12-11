@@ -17,15 +17,17 @@ class ListIRacksResponse(SdkResponse):
 
     openapi_types = {
         'iracks': 'list[IRack]',
-        'page_info': 'PageInfo'
+        'page_info': 'PageInfo',
+        'count': 'int'
     }
 
     attribute_map = {
         'iracks': 'iracks',
-        'page_info': 'page_info'
+        'page_info': 'page_info',
+        'count': 'count'
     }
 
-    def __init__(self, iracks=None, page_info=None):
+    def __init__(self, iracks=None, page_info=None, count=None):
         r"""ListIRacksResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class ListIRacksResponse(SdkResponse):
         :type iracks: list[:class:`huaweicloudsdkclouddc.v1.IRack`]
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkclouddc.v1.PageInfo`
+        :param count: 机柜总数
+        :type count: int
         """
         
         super().__init__()
 
         self._iracks = None
         self._page_info = None
+        self._count = None
         self.discriminator = None
 
         if iracks is not None:
             self.iracks = iracks
         if page_info is not None:
             self.page_info = page_info
+        if count is not None:
+            self.count = count
 
     @property
     def iracks(self):
@@ -82,6 +89,28 @@ class ListIRacksResponse(SdkResponse):
         :type page_info: :class:`huaweicloudsdkclouddc.v1.PageInfo`
         """
         self._page_info = page_info
+
+    @property
+    def count(self):
+        r"""Gets the count of this ListIRacksResponse.
+
+        机柜总数
+
+        :return: The count of this ListIRacksResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        r"""Sets the count of this ListIRacksResponse.
+
+        机柜总数
+
+        :param count: The count of this ListIRacksResponse.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         import warnings

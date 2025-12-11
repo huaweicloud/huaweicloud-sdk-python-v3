@@ -83,11 +83,11 @@ class ListRegistryImagesRequest:
         :type enterprise_project_id: str
         :param namespace: **参数解释**: 组织名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。  **默认取值**: 不涉及 
         :type namespace: str
-        :param image_name: **参数解释**: 镜像名称 **取值范围**: 字符长度1-128位 
+        :param image_name: **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type image_name: str
-        :param image_version: **参数解释**: 镜像版本 **取值范围**: 字符长度1-64位 
+        :param image_version: **参数解释**: 镜像版本 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type image_version: str
-        :param registry_name: **参数解释**: 仓库名称 **取值范围**: 字符长度1-128位 
+        :param registry_name: **参数解释**: 仓库名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type registry_name: str
         :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
@@ -99,37 +99,37 @@ class ListRegistryImagesRequest:
         :type sort_dir: str
         :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值1-200 **默认取值**: 10 
         :type limit: int
-        :param latest_version: 仅关注最新版本镜像
+        :param latest_version: **参数解释**: 仅关注最新版本镜像 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: false 
         :type latest_version: bool
-        :param image_size: **参数解释**: 镜像大小 **约束限制**: 不涉及 **取值范围**: 取值0-2147483547 **默认取值**: 不涉及 
+        :param image_size: **参数解释**: 镜像大小 **约束限制**: 取值为非负整数，单位为字节（bytes） **取值范围**: 取值0-2147483547 **默认取值**: 不涉及 
         :type image_size: int
         :param scan_status: **参数解释**: 扫描状态 **约束限制**: 不涉及 **取值范围**: - unscan：未扫描。 - success：扫描完成。 - scanning：扫描中。 - failed：扫描失败。 - waiting_for_scan：等待扫描。  **默认取值**: 不涉及 
         :type scan_status: str
-        :param start_latest_update_time: **参数解释**: 创建时间开始日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        :param start_latest_update_time: **参数解释**: 最后更新时间的查询起始值，时间单位 毫秒（ms） **约束限制**: 需≤end_latest_update_time，未传end参数时默认查询至当前时间 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
         :type start_latest_update_time: int
-        :param end_latest_update_time: **参数解释**: 创建时间结束日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        :param end_latest_update_time: **参数解释**: 最后更新时间的查询结束值，时间单位 毫秒（ms） **约束限制**: 需≥start_latest_update_time，未传start参数时默认从0开始 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
         :type end_latest_update_time: int
-        :param start_latest_scan_time: **参数解释**: 最近一次扫描完成时间开始日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        :param start_latest_scan_time: **参数解释**: 最近一次扫描完成时间的查询起始值，时间单位 毫秒（ms） **约束限制**: 需≤end_latest_scan_time，未传end参数时默认查询至当前时间 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
         :type start_latest_scan_time: int
-        :param end_latest_scan_time: **参数解释**: 最近一次扫描完成时间结束日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        :param end_latest_scan_time: **参数解释**: 最近一次扫描完成时间的查询结束值，时间单位 毫秒（ms） **约束限制**: 需≥start_latest_scan_time，未传start参数时默认从0开始 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
         :type end_latest_scan_time: int
-        :param start_latest_sync_time: **参数解释**: 最近一次同步完成时间开始日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        :param start_latest_sync_time: **参数解释**: 最近一次同步完成时间的查询起始值，时间单位 毫秒（ms） **约束限制**: 需≤end_latest_sync_time，未传end参数时默认查询至当前时间 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
         :type start_latest_sync_time: int
-        :param end_latest_sync_time: **参数解释**: 最近一次同步完成时间结束日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        :param end_latest_sync_time: **参数解释**: 最近一次同步完成时间的查询结束值，时间单位 毫秒（ms） **约束限制**: 需≥start_latest_sync_time，未传start参数时默认从0开始 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
         :type end_latest_sync_time: int
-        :param has_malicious_file: 是否存在恶意文件
+        :param has_malicious_file: **参数解释**: 是否存在恶意文件 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
         :type has_malicious_file: bool
-        :param has_unsafe_setting: 是否存在基线检查风险
+        :param has_unsafe_setting: **参数解释**： 是否存在基线检查风险 **约束限制**: 不涉及 **取值范围**： - true：是。 - false：否。  **默认取值**: 不涉及 
         :type has_unsafe_setting: bool
-        :param has_vul: 是否存在软件漏洞
+        :param has_vul: **参数解释**： 是否存在软件漏洞 **约束限制**: 不涉及 **取值范围**： - true：是。 - false：否。  **默认取值**: 不涉及 
         :type has_vul: bool
-        :param risky: 有安全风险
+        :param risky: **参数解释**: 有安全风险 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
         :type risky: bool
-        :param instance_id: **参数解释**： 企业仓库实例ID，SWR企业版可以使用该参数 **约束限制**： 不涉及 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
+        :param instance_id: **参数解释**： 企业仓库实例ID，SWR企业版可以使用该参数，需要到SWR企业版服务中获取 **约束限制**： 仅SWR企业版镜像查询有效 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
         :type instance_id: str
-        :param instance_name: **参数解释**： 企业镜像实例名称，SWR企业版可以使用该参数 **约束限制**： 不涉及 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
+        :param instance_name: **参数解释**： 企业仓库实例名称，SWR企业版可以使用该参数，需要到SWR企业版服务中获取 **约束限制**： 仅SWR企业版镜像查询有效 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
         :type instance_name: str
-        :param is_multarch: 是否是多架构镜像
+        :param is_multarch: **参数解释**: 是否是多架构镜像 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
         :type is_multarch: bool
         :param severity_level: **参数解释**: 镜像风险程度，在镜像扫描完成后展示 **约束限制**: 不涉及 **取值范围**: - Security：安全。 - Low：低危。 - Medium：中危。 - High：高危。  **默认取值**: 不涉及 
         :type severity_level: str
@@ -269,7 +269,7 @@ class ListRegistryImagesRequest:
     def image_name(self):
         r"""Gets the image_name of this ListRegistryImagesRequest.
 
-        **参数解释**: 镜像名称 **取值范围**: 字符长度1-128位 
+        **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The image_name of this ListRegistryImagesRequest.
         :rtype: str
@@ -280,7 +280,7 @@ class ListRegistryImagesRequest:
     def image_name(self, image_name):
         r"""Sets the image_name of this ListRegistryImagesRequest.
 
-        **参数解释**: 镜像名称 **取值范围**: 字符长度1-128位 
+        **参数解释**: 镜像名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param image_name: The image_name of this ListRegistryImagesRequest.
         :type image_name: str
@@ -291,7 +291,7 @@ class ListRegistryImagesRequest:
     def image_version(self):
         r"""Gets the image_version of this ListRegistryImagesRequest.
 
-        **参数解释**: 镜像版本 **取值范围**: 字符长度1-64位 
+        **参数解释**: 镜像版本 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The image_version of this ListRegistryImagesRequest.
         :rtype: str
@@ -302,7 +302,7 @@ class ListRegistryImagesRequest:
     def image_version(self, image_version):
         r"""Sets the image_version of this ListRegistryImagesRequest.
 
-        **参数解释**: 镜像版本 **取值范围**: 字符长度1-64位 
+        **参数解释**: 镜像版本 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param image_version: The image_version of this ListRegistryImagesRequest.
         :type image_version: str
@@ -313,7 +313,7 @@ class ListRegistryImagesRequest:
     def registry_name(self):
         r"""Gets the registry_name of this ListRegistryImagesRequest.
 
-        **参数解释**: 仓库名称 **取值范围**: 字符长度1-128位 
+        **参数解释**: 仓库名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The registry_name of this ListRegistryImagesRequest.
         :rtype: str
@@ -324,7 +324,7 @@ class ListRegistryImagesRequest:
     def registry_name(self, registry_name):
         r"""Sets the registry_name of this ListRegistryImagesRequest.
 
-        **参数解释**: 仓库名称 **取值范围**: 字符长度1-128位 
+        **参数解释**: 仓库名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param registry_name: The registry_name of this ListRegistryImagesRequest.
         :type registry_name: str
@@ -445,7 +445,7 @@ class ListRegistryImagesRequest:
     def latest_version(self):
         r"""Gets the latest_version of this ListRegistryImagesRequest.
 
-        仅关注最新版本镜像
+        **参数解释**: 仅关注最新版本镜像 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: false 
 
         :return: The latest_version of this ListRegistryImagesRequest.
         :rtype: bool
@@ -456,7 +456,7 @@ class ListRegistryImagesRequest:
     def latest_version(self, latest_version):
         r"""Sets the latest_version of this ListRegistryImagesRequest.
 
-        仅关注最新版本镜像
+        **参数解释**: 仅关注最新版本镜像 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: false 
 
         :param latest_version: The latest_version of this ListRegistryImagesRequest.
         :type latest_version: bool
@@ -467,7 +467,7 @@ class ListRegistryImagesRequest:
     def image_size(self):
         r"""Gets the image_size of this ListRegistryImagesRequest.
 
-        **参数解释**: 镜像大小 **约束限制**: 不涉及 **取值范围**: 取值0-2147483547 **默认取值**: 不涉及 
+        **参数解释**: 镜像大小 **约束限制**: 取值为非负整数，单位为字节（bytes） **取值范围**: 取值0-2147483547 **默认取值**: 不涉及 
 
         :return: The image_size of this ListRegistryImagesRequest.
         :rtype: int
@@ -478,7 +478,7 @@ class ListRegistryImagesRequest:
     def image_size(self, image_size):
         r"""Sets the image_size of this ListRegistryImagesRequest.
 
-        **参数解释**: 镜像大小 **约束限制**: 不涉及 **取值范围**: 取值0-2147483547 **默认取值**: 不涉及 
+        **参数解释**: 镜像大小 **约束限制**: 取值为非负整数，单位为字节（bytes） **取值范围**: 取值0-2147483547 **默认取值**: 不涉及 
 
         :param image_size: The image_size of this ListRegistryImagesRequest.
         :type image_size: int
@@ -511,7 +511,7 @@ class ListRegistryImagesRequest:
     def start_latest_update_time(self):
         r"""Gets the start_latest_update_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 创建时间开始日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最后更新时间的查询起始值，时间单位 毫秒（ms） **约束限制**: 需≤end_latest_update_time，未传end参数时默认查询至当前时间 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :return: The start_latest_update_time of this ListRegistryImagesRequest.
         :rtype: int
@@ -522,7 +522,7 @@ class ListRegistryImagesRequest:
     def start_latest_update_time(self, start_latest_update_time):
         r"""Sets the start_latest_update_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 创建时间开始日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最后更新时间的查询起始值，时间单位 毫秒（ms） **约束限制**: 需≤end_latest_update_time，未传end参数时默认查询至当前时间 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :param start_latest_update_time: The start_latest_update_time of this ListRegistryImagesRequest.
         :type start_latest_update_time: int
@@ -533,7 +533,7 @@ class ListRegistryImagesRequest:
     def end_latest_update_time(self):
         r"""Gets the end_latest_update_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 创建时间结束日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最后更新时间的查询结束值，时间单位 毫秒（ms） **约束限制**: 需≥start_latest_update_time，未传start参数时默认从0开始 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :return: The end_latest_update_time of this ListRegistryImagesRequest.
         :rtype: int
@@ -544,7 +544,7 @@ class ListRegistryImagesRequest:
     def end_latest_update_time(self, end_latest_update_time):
         r"""Sets the end_latest_update_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 创建时间结束日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最后更新时间的查询结束值，时间单位 毫秒（ms） **约束限制**: 需≥start_latest_update_time，未传start参数时默认从0开始 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :param end_latest_update_time: The end_latest_update_time of this ListRegistryImagesRequest.
         :type end_latest_update_time: int
@@ -555,7 +555,7 @@ class ListRegistryImagesRequest:
     def start_latest_scan_time(self):
         r"""Gets the start_latest_scan_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 最近一次扫描完成时间开始日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最近一次扫描完成时间的查询起始值，时间单位 毫秒（ms） **约束限制**: 需≤end_latest_scan_time，未传end参数时默认查询至当前时间 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :return: The start_latest_scan_time of this ListRegistryImagesRequest.
         :rtype: int
@@ -566,7 +566,7 @@ class ListRegistryImagesRequest:
     def start_latest_scan_time(self, start_latest_scan_time):
         r"""Sets the start_latest_scan_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 最近一次扫描完成时间开始日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最近一次扫描完成时间的查询起始值，时间单位 毫秒（ms） **约束限制**: 需≤end_latest_scan_time，未传end参数时默认查询至当前时间 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :param start_latest_scan_time: The start_latest_scan_time of this ListRegistryImagesRequest.
         :type start_latest_scan_time: int
@@ -577,7 +577,7 @@ class ListRegistryImagesRequest:
     def end_latest_scan_time(self):
         r"""Gets the end_latest_scan_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 最近一次扫描完成时间结束日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最近一次扫描完成时间的查询结束值，时间单位 毫秒（ms） **约束限制**: 需≥start_latest_scan_time，未传start参数时默认从0开始 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :return: The end_latest_scan_time of this ListRegistryImagesRequest.
         :rtype: int
@@ -588,7 +588,7 @@ class ListRegistryImagesRequest:
     def end_latest_scan_time(self, end_latest_scan_time):
         r"""Sets the end_latest_scan_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 最近一次扫描完成时间结束日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最近一次扫描完成时间的查询结束值，时间单位 毫秒（ms） **约束限制**: 需≥start_latest_scan_time，未传start参数时默认从0开始 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :param end_latest_scan_time: The end_latest_scan_time of this ListRegistryImagesRequest.
         :type end_latest_scan_time: int
@@ -599,7 +599,7 @@ class ListRegistryImagesRequest:
     def start_latest_sync_time(self):
         r"""Gets the start_latest_sync_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 最近一次同步完成时间开始日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最近一次同步完成时间的查询起始值，时间单位 毫秒（ms） **约束限制**: 需≤end_latest_sync_time，未传end参数时默认查询至当前时间 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :return: The start_latest_sync_time of this ListRegistryImagesRequest.
         :rtype: int
@@ -610,7 +610,7 @@ class ListRegistryImagesRequest:
     def start_latest_sync_time(self, start_latest_sync_time):
         r"""Sets the start_latest_sync_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 最近一次同步完成时间开始日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最近一次同步完成时间的查询起始值，时间单位 毫秒（ms） **约束限制**: 需≤end_latest_sync_time，未传end参数时默认查询至当前时间 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :param start_latest_sync_time: The start_latest_sync_time of this ListRegistryImagesRequest.
         :type start_latest_sync_time: int
@@ -621,7 +621,7 @@ class ListRegistryImagesRequest:
     def end_latest_sync_time(self):
         r"""Gets the end_latest_sync_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 最近一次同步完成时间结束日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最近一次同步完成时间的查询结束值，时间单位 毫秒（ms） **约束限制**: 需≥start_latest_sync_time，未传start参数时默认从0开始 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :return: The end_latest_sync_time of this ListRegistryImagesRequest.
         :rtype: int
@@ -632,7 +632,7 @@ class ListRegistryImagesRequest:
     def end_latest_sync_time(self, end_latest_sync_time):
         r"""Sets the end_latest_sync_time of this ListRegistryImagesRequest.
 
-        **参数解释**: 最近一次同步完成时间结束日期，时间单位 毫秒（ms） **约束限制**: 不涉及 **取值范围**: 取值0-9223372036854775807 **默认取值**: 不涉及 
+        **参数解释**: 最近一次同步完成时间的查询结束值，时间单位 毫秒（ms） **约束限制**: 需≥start_latest_sync_time，未传start参数时默认从0开始 **取值范围**: 取值0-9223372036854775807 ms（UTC时区，1970-01-01 00:00:00起） **默认取值**: 不涉及 
 
         :param end_latest_sync_time: The end_latest_sync_time of this ListRegistryImagesRequest.
         :type end_latest_sync_time: int
@@ -643,7 +643,7 @@ class ListRegistryImagesRequest:
     def has_malicious_file(self):
         r"""Gets the has_malicious_file of this ListRegistryImagesRequest.
 
-        是否存在恶意文件
+        **参数解释**: 是否存在恶意文件 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
 
         :return: The has_malicious_file of this ListRegistryImagesRequest.
         :rtype: bool
@@ -654,7 +654,7 @@ class ListRegistryImagesRequest:
     def has_malicious_file(self, has_malicious_file):
         r"""Sets the has_malicious_file of this ListRegistryImagesRequest.
 
-        是否存在恶意文件
+        **参数解释**: 是否存在恶意文件 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
 
         :param has_malicious_file: The has_malicious_file of this ListRegistryImagesRequest.
         :type has_malicious_file: bool
@@ -665,7 +665,7 @@ class ListRegistryImagesRequest:
     def has_unsafe_setting(self):
         r"""Gets the has_unsafe_setting of this ListRegistryImagesRequest.
 
-        是否存在基线检查风险
+        **参数解释**： 是否存在基线检查风险 **约束限制**: 不涉及 **取值范围**： - true：是。 - false：否。  **默认取值**: 不涉及 
 
         :return: The has_unsafe_setting of this ListRegistryImagesRequest.
         :rtype: bool
@@ -676,7 +676,7 @@ class ListRegistryImagesRequest:
     def has_unsafe_setting(self, has_unsafe_setting):
         r"""Sets the has_unsafe_setting of this ListRegistryImagesRequest.
 
-        是否存在基线检查风险
+        **参数解释**： 是否存在基线检查风险 **约束限制**: 不涉及 **取值范围**： - true：是。 - false：否。  **默认取值**: 不涉及 
 
         :param has_unsafe_setting: The has_unsafe_setting of this ListRegistryImagesRequest.
         :type has_unsafe_setting: bool
@@ -687,7 +687,7 @@ class ListRegistryImagesRequest:
     def has_vul(self):
         r"""Gets the has_vul of this ListRegistryImagesRequest.
 
-        是否存在软件漏洞
+        **参数解释**： 是否存在软件漏洞 **约束限制**: 不涉及 **取值范围**： - true：是。 - false：否。  **默认取值**: 不涉及 
 
         :return: The has_vul of this ListRegistryImagesRequest.
         :rtype: bool
@@ -698,7 +698,7 @@ class ListRegistryImagesRequest:
     def has_vul(self, has_vul):
         r"""Sets the has_vul of this ListRegistryImagesRequest.
 
-        是否存在软件漏洞
+        **参数解释**： 是否存在软件漏洞 **约束限制**: 不涉及 **取值范围**： - true：是。 - false：否。  **默认取值**: 不涉及 
 
         :param has_vul: The has_vul of this ListRegistryImagesRequest.
         :type has_vul: bool
@@ -709,7 +709,7 @@ class ListRegistryImagesRequest:
     def risky(self):
         r"""Gets the risky of this ListRegistryImagesRequest.
 
-        有安全风险
+        **参数解释**: 有安全风险 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
 
         :return: The risky of this ListRegistryImagesRequest.
         :rtype: bool
@@ -720,7 +720,7 @@ class ListRegistryImagesRequest:
     def risky(self, risky):
         r"""Sets the risky of this ListRegistryImagesRequest.
 
-        有安全风险
+        **参数解释**: 有安全风险 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
 
         :param risky: The risky of this ListRegistryImagesRequest.
         :type risky: bool
@@ -731,7 +731,7 @@ class ListRegistryImagesRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListRegistryImagesRequest.
 
-        **参数解释**： 企业仓库实例ID，SWR企业版可以使用该参数 **约束限制**： 不涉及 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
+        **参数解释**： 企业仓库实例ID，SWR企业版可以使用该参数，需要到SWR企业版服务中获取 **约束限制**： 仅SWR企业版镜像查询有效 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
 
         :return: The instance_id of this ListRegistryImagesRequest.
         :rtype: str
@@ -742,7 +742,7 @@ class ListRegistryImagesRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListRegistryImagesRequest.
 
-        **参数解释**： 企业仓库实例ID，SWR企业版可以使用该参数 **约束限制**： 不涉及 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
+        **参数解释**： 企业仓库实例ID，SWR企业版可以使用该参数，需要到SWR企业版服务中获取 **约束限制**： 仅SWR企业版镜像查询有效 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
 
         :param instance_id: The instance_id of this ListRegistryImagesRequest.
         :type instance_id: str
@@ -753,7 +753,7 @@ class ListRegistryImagesRequest:
     def instance_name(self):
         r"""Gets the instance_name of this ListRegistryImagesRequest.
 
-        **参数解释**： 企业镜像实例名称，SWR企业版可以使用该参数 **约束限制**： 不涉及 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
+        **参数解释**： 企业仓库实例名称，SWR企业版可以使用该参数，需要到SWR企业版服务中获取 **约束限制**： 仅SWR企业版镜像查询有效 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
 
         :return: The instance_name of this ListRegistryImagesRequest.
         :rtype: str
@@ -764,7 +764,7 @@ class ListRegistryImagesRequest:
     def instance_name(self, instance_name):
         r"""Sets the instance_name of this ListRegistryImagesRequest.
 
-        **参数解释**： 企业镜像实例名称，SWR企业版可以使用该参数 **约束限制**： 不涉及 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
+        **参数解释**： 企业仓库实例名称，SWR企业版可以使用该参数，需要到SWR企业版服务中获取 **约束限制**： 仅SWR企业版镜像查询有效 **取值范围**： 字符长度0-128位 **默认取值**： 不涉及 
 
         :param instance_name: The instance_name of this ListRegistryImagesRequest.
         :type instance_name: str
@@ -775,7 +775,7 @@ class ListRegistryImagesRequest:
     def is_multarch(self):
         r"""Gets the is_multarch of this ListRegistryImagesRequest.
 
-        是否是多架构镜像
+        **参数解释**: 是否是多架构镜像 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
 
         :return: The is_multarch of this ListRegistryImagesRequest.
         :rtype: bool
@@ -786,7 +786,7 @@ class ListRegistryImagesRequest:
     def is_multarch(self, is_multarch):
         r"""Sets the is_multarch of this ListRegistryImagesRequest.
 
-        是否是多架构镜像
+        **参数解释**: 是否是多架构镜像 **约束限制**: 不涉及 **取值范围**: - true：是。 - false：否。  **默认取值**: 不涉及 
 
         :param is_multarch: The is_multarch of this ListRegistryImagesRequest.
         :type is_multarch: bool

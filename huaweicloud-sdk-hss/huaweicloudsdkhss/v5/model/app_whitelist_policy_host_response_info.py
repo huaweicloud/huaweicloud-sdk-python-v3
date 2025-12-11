@@ -51,11 +51,11 @@ class AppWhitelistPolicyHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
         :type public_ip: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
@@ -65,7 +65,7 @@ class AppWhitelistPolicyHostResponseInfo:
         :type policy_name: str
         :param event_num: **参数解释**: 主机发生事件数 **取值范围**: 最小值0，最大值2147483647 
         :type event_num: int
-        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
         :type os_type: str
         :param learning_status: **参数解释**： 学习状态 **约束限制**: 不涉及 **取值范围**: - effecting：学习完成，策略生效 - learned：学习完成，待确认 - learning：学习中 - pause：暂停 - abnormal：学习异常  **默认取值**: 不涉及 
         :type learning_status: str
@@ -127,7 +127,7 @@ class AppWhitelistPolicyHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AppWhitelistPolicyHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this AppWhitelistPolicyHostResponseInfo.
         :rtype: str
@@ -138,7 +138,7 @@ class AppWhitelistPolicyHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AppWhitelistPolicyHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this AppWhitelistPolicyHostResponseInfo.
         :type host_id: str
@@ -171,7 +171,7 @@ class AppWhitelistPolicyHostResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this AppWhitelistPolicyHostResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :return: The public_ip of this AppWhitelistPolicyHostResponseInfo.
         :rtype: str
@@ -182,7 +182,7 @@ class AppWhitelistPolicyHostResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this AppWhitelistPolicyHostResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :param public_ip: The public_ip of this AppWhitelistPolicyHostResponseInfo.
         :type public_ip: str
@@ -281,7 +281,7 @@ class AppWhitelistPolicyHostResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this AppWhitelistPolicyHostResponseInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :return: The os_type of this AppWhitelistPolicyHostResponseInfo.
         :rtype: str
@@ -292,7 +292,7 @@ class AppWhitelistPolicyHostResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this AppWhitelistPolicyHostResponseInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :param os_type: The os_type of this AppWhitelistPolicyHostResponseInfo.
         :type os_type: str

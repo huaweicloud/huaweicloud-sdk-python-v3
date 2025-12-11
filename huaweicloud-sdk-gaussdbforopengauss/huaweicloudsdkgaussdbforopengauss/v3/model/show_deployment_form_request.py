@@ -17,16 +17,22 @@ class ShowDeploymentFormRequest:
     openapi_types = {
         'x_language': 'str',
         'solution': 'str',
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'consistency': 'str',
+        'consistency_protocol': 'str',
+        'engine_version': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'solution': 'solution',
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'consistency': 'consistency',
+        'consistency_protocol': 'consistency_protocol',
+        'engine_version': 'engine_version'
     }
 
-    def __init__(self, x_language=None, solution=None, instance_id=None):
+    def __init__(self, x_language=None, solution=None, instance_id=None, consistency=None, consistency_protocol=None, engine_version=None):
         r"""ShowDeploymentFormRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +43,12 @@ class ShowDeploymentFormRequest:
         :type solution: str
         :param instance_id: 实例ID。
         :type instance_id: str
+        :param consistency: **参数解释**: 事务一致性类型。 **约束限制**: 不涉及。 **取值范围**: - strong - eventual **默认取值**: 不涉及。
+        :type consistency: str
+        :param consistency_protocol: **参数解释**: 副本一致性协议类型。 **约束限制**: 不涉及。 **取值范围**: - quorum - paxos **默认取值**: 不涉及。
+        :type consistency_protocol: str
+        :param engine_version: **参数解释**: 引擎版本号。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        :type engine_version: str
         """
         
         
@@ -44,6 +56,9 @@ class ShowDeploymentFormRequest:
         self._x_language = None
         self._solution = None
         self._instance_id = None
+        self._consistency = None
+        self._consistency_protocol = None
+        self._engine_version = None
         self.discriminator = None
 
         if x_language is not None:
@@ -52,6 +67,12 @@ class ShowDeploymentFormRequest:
             self.solution = solution
         if instance_id is not None:
             self.instance_id = instance_id
+        if consistency is not None:
+            self.consistency = consistency
+        if consistency_protocol is not None:
+            self.consistency_protocol = consistency_protocol
+        if engine_version is not None:
+            self.engine_version = engine_version
 
     @property
     def x_language(self):
@@ -118,6 +139,72 @@ class ShowDeploymentFormRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def consistency(self):
+        r"""Gets the consistency of this ShowDeploymentFormRequest.
+
+        **参数解释**: 事务一致性类型。 **约束限制**: 不涉及。 **取值范围**: - strong - eventual **默认取值**: 不涉及。
+
+        :return: The consistency of this ShowDeploymentFormRequest.
+        :rtype: str
+        """
+        return self._consistency
+
+    @consistency.setter
+    def consistency(self, consistency):
+        r"""Sets the consistency of this ShowDeploymentFormRequest.
+
+        **参数解释**: 事务一致性类型。 **约束限制**: 不涉及。 **取值范围**: - strong - eventual **默认取值**: 不涉及。
+
+        :param consistency: The consistency of this ShowDeploymentFormRequest.
+        :type consistency: str
+        """
+        self._consistency = consistency
+
+    @property
+    def consistency_protocol(self):
+        r"""Gets the consistency_protocol of this ShowDeploymentFormRequest.
+
+        **参数解释**: 副本一致性协议类型。 **约束限制**: 不涉及。 **取值范围**: - quorum - paxos **默认取值**: 不涉及。
+
+        :return: The consistency_protocol of this ShowDeploymentFormRequest.
+        :rtype: str
+        """
+        return self._consistency_protocol
+
+    @consistency_protocol.setter
+    def consistency_protocol(self, consistency_protocol):
+        r"""Sets the consistency_protocol of this ShowDeploymentFormRequest.
+
+        **参数解释**: 副本一致性协议类型。 **约束限制**: 不涉及。 **取值范围**: - quorum - paxos **默认取值**: 不涉及。
+
+        :param consistency_protocol: The consistency_protocol of this ShowDeploymentFormRequest.
+        :type consistency_protocol: str
+        """
+        self._consistency_protocol = consistency_protocol
+
+    @property
+    def engine_version(self):
+        r"""Gets the engine_version of this ShowDeploymentFormRequest.
+
+        **参数解释**: 引擎版本号。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :return: The engine_version of this ShowDeploymentFormRequest.
+        :rtype: str
+        """
+        return self._engine_version
+
+    @engine_version.setter
+    def engine_version(self, engine_version):
+        r"""Sets the engine_version of this ShowDeploymentFormRequest.
+
+        **参数解释**: 引擎版本号。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :param engine_version: The engine_version of this ShowDeploymentFormRequest.
+        :type engine_version: str
+        """
+        self._engine_version = engine_version
 
     def to_dict(self):
         result = {}

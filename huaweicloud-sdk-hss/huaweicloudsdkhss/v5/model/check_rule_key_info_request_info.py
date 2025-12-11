@@ -33,13 +33,13 @@ class CheckRuleKeyInfoRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        :param check_name: **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
         :type check_name: str
-        :param check_rule_id: 检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules
+        :param check_rule_id: **参数解释**: 检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及 
         :type check_rule_id: str
-        :param standard: 基线标准, 类别包含如下：   - cn_standard#等保合规标准   - hw_standard#云安全实践标准
+        :param standard: **参数解释**: 基线标准 **约束限制**: 不涉及 **取值范围**: - cn_standard：等保合规 - hw_standard：云安全实践 - cis_standard：通用安全标准  **默认取值**: 不涉及 
         :type standard: str
-        :param fix_values: 用户键入的检查项修复参数数组
+        :param fix_values: **参数解释**: 用户键入的检查项修复参数数组 **约束限制**: 不涉及 **取值范围**: 元素个数0-10000 **默认取值**: 不涉及 
         :type fix_values: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixValuesInfo`]
         """
         
@@ -64,7 +64,7 @@ class CheckRuleKeyInfoRequestInfo:
     def check_name(self):
         r"""Gets the check_name of this CheckRuleKeyInfoRequestInfo.
 
-        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :return: The check_name of this CheckRuleKeyInfoRequestInfo.
         :rtype: str
@@ -75,7 +75,7 @@ class CheckRuleKeyInfoRequestInfo:
     def check_name(self, check_name):
         r"""Sets the check_name of this CheckRuleKeyInfoRequestInfo.
 
-        配置检查（基线）的名称，例如SSH、CentOS 7、Windows
+        **参数解释**: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows **约束限制**: 不涉及 **取值范围**: 字符长度0-256位 **默认取值**: 不涉及 
 
         :param check_name: The check_name of this CheckRuleKeyInfoRequestInfo.
         :type check_name: str
@@ -86,7 +86,7 @@ class CheckRuleKeyInfoRequestInfo:
     def check_rule_id(self):
         r"""Gets the check_rule_id of this CheckRuleKeyInfoRequestInfo.
 
-        检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules
+        **参数解释**: 检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及 
 
         :return: The check_rule_id of this CheckRuleKeyInfoRequestInfo.
         :rtype: str
@@ -97,7 +97,7 @@ class CheckRuleKeyInfoRequestInfo:
     def check_rule_id(self, check_rule_id):
         r"""Sets the check_rule_id of this CheckRuleKeyInfoRequestInfo.
 
-        检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules
+        **参数解释**: 检查项ID，值可以通过这个接口的返回数据获得：/v5/{project_id}/baseline/risk-config/{check_name}/check-rules **约束限制**: 不涉及 **取值范围**: 字符长度0-64位 **默认取值**: 不涉及 
 
         :param check_rule_id: The check_rule_id of this CheckRuleKeyInfoRequestInfo.
         :type check_rule_id: str
@@ -108,7 +108,7 @@ class CheckRuleKeyInfoRequestInfo:
     def standard(self):
         r"""Gets the standard of this CheckRuleKeyInfoRequestInfo.
 
-        基线标准, 类别包含如下：   - cn_standard#等保合规标准   - hw_standard#云安全实践标准
+        **参数解释**: 基线标准 **约束限制**: 不涉及 **取值范围**: - cn_standard：等保合规 - hw_standard：云安全实践 - cis_standard：通用安全标准  **默认取值**: 不涉及 
 
         :return: The standard of this CheckRuleKeyInfoRequestInfo.
         :rtype: str
@@ -119,7 +119,7 @@ class CheckRuleKeyInfoRequestInfo:
     def standard(self, standard):
         r"""Sets the standard of this CheckRuleKeyInfoRequestInfo.
 
-        基线标准, 类别包含如下：   - cn_standard#等保合规标准   - hw_standard#云安全实践标准
+        **参数解释**: 基线标准 **约束限制**: 不涉及 **取值范围**: - cn_standard：等保合规 - hw_standard：云安全实践 - cis_standard：通用安全标准  **默认取值**: 不涉及 
 
         :param standard: The standard of this CheckRuleKeyInfoRequestInfo.
         :type standard: str
@@ -130,7 +130,7 @@ class CheckRuleKeyInfoRequestInfo:
     def fix_values(self):
         r"""Gets the fix_values of this CheckRuleKeyInfoRequestInfo.
 
-        用户键入的检查项修复参数数组
+        **参数解释**: 用户键入的检查项修复参数数组 **约束限制**: 不涉及 **取值范围**: 元素个数0-10000 **默认取值**: 不涉及 
 
         :return: The fix_values of this CheckRuleKeyInfoRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixValuesInfo`]
@@ -141,7 +141,7 @@ class CheckRuleKeyInfoRequestInfo:
     def fix_values(self, fix_values):
         r"""Sets the fix_values of this CheckRuleKeyInfoRequestInfo.
 
-        用户键入的检查项修复参数数组
+        **参数解释**: 用户键入的检查项修复参数数组 **约束限制**: 不涉及 **取值范围**: 元素个数0-10000 **默认取值**: 不涉及 
 
         :param fix_values: The fix_values of this CheckRuleKeyInfoRequestInfo.
         :type fix_values: list[:class:`huaweicloudsdkhss.v5.CheckRuleFixValuesInfo`]

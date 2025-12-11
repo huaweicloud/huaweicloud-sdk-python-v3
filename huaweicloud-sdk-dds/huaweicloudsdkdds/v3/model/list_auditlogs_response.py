@@ -17,21 +17,25 @@ class ListAuditlogsResponse(SdkResponse):
 
     openapi_types = {
         'total_record': 'int',
+        'total_size': 'int',
         'audit_logs': 'list[ListAuditlogsResult]'
     }
 
     attribute_map = {
         'total_record': 'total_record',
+        'total_size': 'total_size',
         'audit_logs': 'audit_logs'
     }
 
-    def __init__(self, total_record=None, audit_logs=None):
+    def __init__(self, total_record=None, total_size=None, audit_logs=None):
         r"""ListAuditlogsResponse
 
         The model defined in huaweicloud sdk
 
         :param total_record: 总记录数。
         :type total_record: int
+        :param total_size: 当前实例审计日志使用总量，单位：byte。
+        :type total_size: int
         :param audit_logs: 审计日志具体信息。
         :type audit_logs: list[:class:`huaweicloudsdkdds.v3.ListAuditlogsResult`]
         """
@@ -39,11 +43,14 @@ class ListAuditlogsResponse(SdkResponse):
         super().__init__()
 
         self._total_record = None
+        self._total_size = None
         self._audit_logs = None
         self.discriminator = None
 
         if total_record is not None:
             self.total_record = total_record
+        if total_size is not None:
+            self.total_size = total_size
         if audit_logs is not None:
             self.audit_logs = audit_logs
 
@@ -68,6 +75,28 @@ class ListAuditlogsResponse(SdkResponse):
         :type total_record: int
         """
         self._total_record = total_record
+
+    @property
+    def total_size(self):
+        r"""Gets the total_size of this ListAuditlogsResponse.
+
+        当前实例审计日志使用总量，单位：byte。
+
+        :return: The total_size of this ListAuditlogsResponse.
+        :rtype: int
+        """
+        return self._total_size
+
+    @total_size.setter
+    def total_size(self, total_size):
+        r"""Sets the total_size of this ListAuditlogsResponse.
+
+        当前实例审计日志使用总量，单位：byte。
+
+        :param total_size: The total_size of this ListAuditlogsResponse.
+        :type total_size: int
+        """
+        self._total_size = total_size
 
     @property
     def audit_logs(self):

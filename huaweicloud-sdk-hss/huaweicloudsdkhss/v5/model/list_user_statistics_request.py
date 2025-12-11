@@ -15,84 +15,62 @@ class ListUserStatisticsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'user_name': 'str',
         'enterprise_project_id': 'str',
         'limit': 'int',
         'offset': 'int',
+        'user_name': 'str',
         'category': 'str'
     }
 
     attribute_map = {
-        'user_name': 'user_name',
         'enterprise_project_id': 'enterprise_project_id',
         'limit': 'limit',
         'offset': 'offset',
+        'user_name': 'user_name',
         'category': 'category'
     }
 
-    def __init__(self, user_name=None, enterprise_project_id=None, limit=None, offset=None, category=None):
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, user_name=None, category=None):
         r"""ListUserStatisticsRequest
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 账号名称，参考windows文件命名规则，支持字母、数字、下划线、中文，特殊字符!@.-等，不包括中文标点符号
-        :type user_name: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param limit: 每页显示数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
+        :param user_name: **参数解释**: 用于筛选指定名称的账号统计数据（支持模糊匹配） **约束限制**: 符合Windows文件命名规则，不包含中文标点符号 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :type user_name: str
         :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
         :type category: str
         """
         
         
 
-        self._user_name = None
         self._enterprise_project_id = None
         self._limit = None
         self._offset = None
+        self._user_name = None
         self._category = None
         self.discriminator = None
 
-        if user_name is not None:
-            self.user_name = user_name
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if limit is not None:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if user_name is not None:
+            self.user_name = user_name
         self.category = category
-
-    @property
-    def user_name(self):
-        r"""Gets the user_name of this ListUserStatisticsRequest.
-
-        账号名称，参考windows文件命名规则，支持字母、数字、下划线、中文，特殊字符!@.-等，不包括中文标点符号
-
-        :return: The user_name of this ListUserStatisticsRequest.
-        :rtype: str
-        """
-        return self._user_name
-
-    @user_name.setter
-    def user_name(self, user_name):
-        r"""Sets the user_name of this ListUserStatisticsRequest.
-
-        账号名称，参考windows文件命名规则，支持字母、数字、下划线、中文，特殊字符!@.-等，不包括中文标点符号
-
-        :param user_name: The user_name of this ListUserStatisticsRequest.
-        :type user_name: str
-        """
-        self._user_name = user_name
 
     @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListUserStatisticsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListUserStatisticsRequest.
         :rtype: str
@@ -103,7 +81,7 @@ class ListUserStatisticsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListUserStatisticsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListUserStatisticsRequest.
         :type enterprise_project_id: str
@@ -114,7 +92,7 @@ class ListUserStatisticsRequest:
     def limit(self):
         r"""Gets the limit of this ListUserStatisticsRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListUserStatisticsRequest.
         :rtype: int
@@ -125,7 +103,7 @@ class ListUserStatisticsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListUserStatisticsRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListUserStatisticsRequest.
         :type limit: int
@@ -136,7 +114,7 @@ class ListUserStatisticsRequest:
     def offset(self):
         r"""Gets the offset of this ListUserStatisticsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListUserStatisticsRequest.
         :rtype: int
@@ -147,12 +125,34 @@ class ListUserStatisticsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListUserStatisticsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListUserStatisticsRequest.
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def user_name(self):
+        r"""Gets the user_name of this ListUserStatisticsRequest.
+
+        **参数解释**: 用于筛选指定名称的账号统计数据（支持模糊匹配） **约束限制**: 符合Windows文件命名规则，不包含中文标点符号 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+
+        :return: The user_name of this ListUserStatisticsRequest.
+        :rtype: str
+        """
+        return self._user_name
+
+    @user_name.setter
+    def user_name(self, user_name):
+        r"""Sets the user_name of this ListUserStatisticsRequest.
+
+        **参数解释**: 用于筛选指定名称的账号统计数据（支持模糊匹配） **约束限制**: 符合Windows文件命名规则，不包含中文标点符号 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+
+        :param user_name: The user_name of this ListUserStatisticsRequest.
+        :type user_name: str
+        """
+        self._user_name = user_name
 
     @property
     def category(self):

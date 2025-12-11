@@ -51,27 +51,27 @@ class ResultResourceResponseInfo:
 
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
-        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param agent_id: **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
         :type public_ip: str
-        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
         :type os_type: str
-        :param host_status: 服务器状态，包含如下4种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+        :param host_status: **参数解释**: 服务器状态 **取值范围**: 包含如下4种   - ACTIVE：运行中   - SHUTOFF：关机   - BUILDING：创建中   - ERROR：故障 
         :type host_status: str
-        :param agent_status: Agent状态，包含如下5种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
+        :param agent_status: **参数解释**: Agent的运行状态 **取值范围**: 包含如下5种   - installed：已安装   - not_installed：未安装   - online：在线   - offline：离线   - install_failed：安装失败   - installing：安装中 
         :type agent_status: str
-        :param protect_status: 防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
+        :param protect_status: **参数解释**: 防护状态 **取值范围**: 包含如下2种 - closed：未防护 - opened：防护中 
         :type protect_status: str
         :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
-        :param os_name: 操作系统名称
+        :param os_name: **参数解释**: 操作系统名称 **取值范围**: 字符长度0-128位 
         :type os_name: str
-        :param os_version: 操作系统版本
+        :param os_version: **参数解释**: 操作系统版本 **取值范围**: 字符长度0-64位 
         :type os_version: str
         """
         
@@ -142,7 +142,7 @@ class ResultResourceResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this ResultResourceResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this ResultResourceResponseInfo.
         :rtype: str
@@ -153,7 +153,7 @@ class ResultResourceResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this ResultResourceResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this ResultResourceResponseInfo.
         :type host_id: str
@@ -164,7 +164,7 @@ class ResultResourceResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this ResultResourceResponseInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this ResultResourceResponseInfo.
         :rtype: str
@@ -175,7 +175,7 @@ class ResultResourceResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this ResultResourceResponseInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this ResultResourceResponseInfo.
         :type agent_id: str
@@ -208,7 +208,7 @@ class ResultResourceResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this ResultResourceResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :return: The public_ip of this ResultResourceResponseInfo.
         :rtype: str
@@ -219,7 +219,7 @@ class ResultResourceResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this ResultResourceResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :param public_ip: The public_ip of this ResultResourceResponseInfo.
         :type public_ip: str
@@ -230,7 +230,7 @@ class ResultResourceResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this ResultResourceResponseInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :return: The os_type of this ResultResourceResponseInfo.
         :rtype: str
@@ -241,7 +241,7 @@ class ResultResourceResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this ResultResourceResponseInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :param os_type: The os_type of this ResultResourceResponseInfo.
         :type os_type: str
@@ -252,7 +252,7 @@ class ResultResourceResponseInfo:
     def host_status(self):
         r"""Gets the host_status of this ResultResourceResponseInfo.
 
-        服务器状态，包含如下4种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+        **参数解释**: 服务器状态 **取值范围**: 包含如下4种   - ACTIVE：运行中   - SHUTOFF：关机   - BUILDING：创建中   - ERROR：故障 
 
         :return: The host_status of this ResultResourceResponseInfo.
         :rtype: str
@@ -263,7 +263,7 @@ class ResultResourceResponseInfo:
     def host_status(self, host_status):
         r"""Sets the host_status of this ResultResourceResponseInfo.
 
-        服务器状态，包含如下4种。   - ACTIVE ：运行中。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
+        **参数解释**: 服务器状态 **取值范围**: 包含如下4种   - ACTIVE：运行中   - SHUTOFF：关机   - BUILDING：创建中   - ERROR：故障 
 
         :param host_status: The host_status of this ResultResourceResponseInfo.
         :type host_status: str
@@ -274,7 +274,7 @@ class ResultResourceResponseInfo:
     def agent_status(self):
         r"""Gets the agent_status of this ResultResourceResponseInfo.
 
-        Agent状态，包含如下5种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
+        **参数解释**: Agent的运行状态 **取值范围**: 包含如下5种   - installed：已安装   - not_installed：未安装   - online：在线   - offline：离线   - install_failed：安装失败   - installing：安装中 
 
         :return: The agent_status of this ResultResourceResponseInfo.
         :rtype: str
@@ -285,7 +285,7 @@ class ResultResourceResponseInfo:
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this ResultResourceResponseInfo.
 
-        Agent状态，包含如下5种。   - installed ：已安装。   - not_installed ：未安装。   - online ：在线。   - offline ：离线。   - install_failed ：安装失败。   - installing ：安装中。
+        **参数解释**: Agent的运行状态 **取值范围**: 包含如下5种   - installed：已安装   - not_installed：未安装   - online：在线   - offline：离线   - install_failed：安装失败   - installing：安装中 
 
         :param agent_status: The agent_status of this ResultResourceResponseInfo.
         :type agent_status: str
@@ -296,7 +296,7 @@ class ResultResourceResponseInfo:
     def protect_status(self):
         r"""Gets the protect_status of this ResultResourceResponseInfo.
 
-        防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
+        **参数解释**: 防护状态 **取值范围**: 包含如下2种 - closed：未防护 - opened：防护中 
 
         :return: The protect_status of this ResultResourceResponseInfo.
         :rtype: str
@@ -307,7 +307,7 @@ class ResultResourceResponseInfo:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this ResultResourceResponseInfo.
 
-        防护状态，包含如下2种。 - closed ：未防护。 - opened ：防护中。
+        **参数解释**: 防护状态 **取值范围**: 包含如下2种 - closed：未防护 - opened：防护中 
 
         :param protect_status: The protect_status of this ResultResourceResponseInfo.
         :type protect_status: str
@@ -340,7 +340,7 @@ class ResultResourceResponseInfo:
     def os_name(self):
         r"""Gets the os_name of this ResultResourceResponseInfo.
 
-        操作系统名称
+        **参数解释**: 操作系统名称 **取值范围**: 字符长度0-128位 
 
         :return: The os_name of this ResultResourceResponseInfo.
         :rtype: str
@@ -351,7 +351,7 @@ class ResultResourceResponseInfo:
     def os_name(self, os_name):
         r"""Sets the os_name of this ResultResourceResponseInfo.
 
-        操作系统名称
+        **参数解释**: 操作系统名称 **取值范围**: 字符长度0-128位 
 
         :param os_name: The os_name of this ResultResourceResponseInfo.
         :type os_name: str
@@ -362,7 +362,7 @@ class ResultResourceResponseInfo:
     def os_version(self):
         r"""Gets the os_version of this ResultResourceResponseInfo.
 
-        操作系统版本
+        **参数解释**: 操作系统版本 **取值范围**: 字符长度0-64位 
 
         :return: The os_version of this ResultResourceResponseInfo.
         :rtype: str
@@ -373,7 +373,7 @@ class ResultResourceResponseInfo:
     def os_version(self, os_version):
         r"""Sets the os_version of this ResultResourceResponseInfo.
 
-        操作系统版本
+        **参数解释**: 操作系统版本 **取值范围**: 字符长度0-64位 
 
         :param os_version: The os_version of this ResultResourceResponseInfo.
         :type os_version: str

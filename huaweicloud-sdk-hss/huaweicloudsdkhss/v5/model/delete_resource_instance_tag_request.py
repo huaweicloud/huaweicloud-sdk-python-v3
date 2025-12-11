@@ -31,11 +31,11 @@ class DeleteResourceInstanceTagRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss
+        :param resource_type: **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位。 **默认取值**: hss 
         :type resource_type: str
-        :param resource_id: 由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID
+        :param resource_id: **参数解释**: 由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 无 
         :type resource_id: str
-        :param key: 待删除的key
+        :param key: **参数解释**: 待删除的标签key。 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位。 **默认取值**: 无 
         :type key: str
         """
         
@@ -54,7 +54,7 @@ class DeleteResourceInstanceTagRequest:
     def resource_type(self):
         r"""Gets the resource_type of this DeleteResourceInstanceTagRequest.
 
-        由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss
+        **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位。 **默认取值**: hss 
 
         :return: The resource_type of this DeleteResourceInstanceTagRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class DeleteResourceInstanceTagRequest:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this DeleteResourceInstanceTagRequest.
 
-        由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss
+        **参数解释**: 由标签管理服务定义的资源类别，企业主机安全服务调用此接口时资源类别为hss。 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位。 **默认取值**: hss 
 
         :param resource_type: The resource_type of this DeleteResourceInstanceTagRequest.
         :type resource_type: str
@@ -76,7 +76,7 @@ class DeleteResourceInstanceTagRequest:
     def resource_id(self):
         r"""Gets the resource_id of this DeleteResourceInstanceTagRequest.
 
-        由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID
+        **参数解释**: 由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 无 
 
         :return: The resource_id of this DeleteResourceInstanceTagRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class DeleteResourceInstanceTagRequest:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this DeleteResourceInstanceTagRequest.
 
-        由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID
+        **参数解释**: 由标签管理服务定义的资源id，企业主机安全服务调用此接口时资源id为配额ID。 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位。 **默认取值**: 无 
 
         :param resource_id: The resource_id of this DeleteResourceInstanceTagRequest.
         :type resource_id: str
@@ -98,7 +98,7 @@ class DeleteResourceInstanceTagRequest:
     def key(self):
         r"""Gets the key of this DeleteResourceInstanceTagRequest.
 
-        待删除的key
+        **参数解释**: 待删除的标签key。 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位。 **默认取值**: 无 
 
         :return: The key of this DeleteResourceInstanceTagRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class DeleteResourceInstanceTagRequest:
     def key(self, key):
         r"""Sets the key of this DeleteResourceInstanceTagRequest.
 
-        待删除的key
+        **参数解释**: 待删除的标签key。 **约束限制**: 不涉及 **取值范围**: 字符长度1-256位。 **默认取值**: 无 
 
         :param key: The key of this DeleteResourceInstanceTagRequest.
         :type key: str

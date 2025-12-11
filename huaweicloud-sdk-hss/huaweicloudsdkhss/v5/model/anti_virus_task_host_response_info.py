@@ -67,47 +67,47 @@ class AntiVirusTaskHostResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
-        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
         :type public_ip: str
         :param asset_value: **参数解释**： 资产重要性。 **取值范围**： - important ：重要资产。 - common ：一般资产。 - test ：测试资产。
         :type asset_value: str
-        :param start_time: 启动时间，毫秒
+        :param start_time: **参数解释**： 启动时间 **取值范围**： 最小值0，最大值9223372036854775807；时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
         :type start_time: int
-        :param run_duration: 运行时长，秒
+        :param run_duration: **参数解释**: 运行时长 **取值范围**: 非负整数，最小值0；单位：s（秒） 
         :type run_duration: int
-        :param scan_progress: 扫描进度
+        :param scan_progress: **参数解释**： 扫描进度 **取值范围**： 字符串格式，支持百分比（如“50%”）或0-100的数值字符串 
         :type scan_progress: str
-        :param virus_num: 新发现病毒数量
+        :param virus_num: **参数解释** 新发现病毒数量 **取值范围** 非负整数，最小值0；单位：个 
         :type virus_num: int
-        :param scan_file_num: 已扫描的文件数量
+        :param scan_file_num: **参数解释**: 已扫描的文件数量 **取值范围**: 非负整数，最小值0；单位：个 
         :type scan_file_num: int
-        :param host_task_status: 服务器扫描状态，包含如下4种   - scanning ：扫描中   - success ：扫描成功   - fail ：扫描失败   - cancel ：取消扫描
+        :param host_task_status: **参数解释**: 服务器扫描状态 **取值范围**: - scanning ：扫描中 - success ：扫描成功 - fail ：扫描失败 - cancel ：取消扫描 
         :type host_task_status: str
-        :param fail_reason: 失败原因
+        :param fail_reason: **参数解释**: 失败原因 **取值范围**: 字符长度0-512位 
         :type fail_reason: str
-        :param deleted: 是否删除，包含如下:   - true ：已删除   - false : 未删除
+        :param deleted: **参数解释**： 是否删除 **取值范围**： 包含如下:   - true ：已删除   - false : 未删除 
         :type deleted: bool
-        :param whether_using_quota: 是否使用病毒查杀按次计费配额
+        :param whether_using_quota: **参数解释**： 是否使用病毒查杀按次计费配额 **取值范围**： 0（未使用）、1（已使用） 
         :type whether_using_quota: int
-        :param agent_id: **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        :param agent_id: **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type agent_id: str
-        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
         :type os_type: str
-        :param host_status: **参数解释**： 主机状态 **取值范围**: - ACTIVE：正在运行。 - SHUTOFF：关机。 - BUILDING：创建中。 - ERROR：故障。 
+        :param host_status: **参数解释**： 主机状态 **取值范围**: - ACTIVE：正在运行 - SHUTOFF：关机 - BUILDING：创建中 - ERROR：故障 
         :type host_status: str
-        :param agent_status: **参数解释**： Agent状态 **取值范围**: - installed：已安装。 - not_installed：未安装。 - online：在线。 - offline：离线。 - install_failed：安装失败。 - installing：安装中。 - not_online：不在线的（除了在线以外的所有状态，仅作为查询条件）。 
+        :param agent_status: **参数解释**： Agent状态 **取值范围**: - installed：已安装 - not_installed：未安 - online：在线 - offline：离线 - install_failed：安装失败 - installing：安装中 - not_online：不在线的（除了在线以外的所有状态，仅作为查询条件） 
         :type agent_status: str
-        :param protect_status: 防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
+        :param protect_status: **参数解释**: 防护状态 **取值范围**:  - closed ：关闭  - opened ：开启 
         :type protect_status: str
-        :param os_name: 操作系统名称
+        :param os_name: **参数解释**: 操作系统名称 **取值范围**: 字符长度0-128位 
         :type os_name: str
-        :param os_version: 系统版本
+        :param os_version: **参数解释**： 系统版本号 **取值范围**： 字符长度0-64位 
         :type os_version: str
         """
         
@@ -183,7 +183,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -194,7 +194,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this AntiVirusTaskHostResponseInfo.
         :type host_id: str
@@ -249,7 +249,7 @@ class AntiVirusTaskHostResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :return: The public_ip of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -260,7 +260,7 @@ class AntiVirusTaskHostResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :param public_ip: The public_ip of this AntiVirusTaskHostResponseInfo.
         :type public_ip: str
@@ -293,7 +293,7 @@ class AntiVirusTaskHostResponseInfo:
     def start_time(self):
         r"""Gets the start_time of this AntiVirusTaskHostResponseInfo.
 
-        启动时间，毫秒
+        **参数解释**： 启动时间 **取值范围**： 最小值0，最大值9223372036854775807；时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
 
         :return: The start_time of this AntiVirusTaskHostResponseInfo.
         :rtype: int
@@ -304,7 +304,7 @@ class AntiVirusTaskHostResponseInfo:
     def start_time(self, start_time):
         r"""Sets the start_time of this AntiVirusTaskHostResponseInfo.
 
-        启动时间，毫秒
+        **参数解释**： 启动时间 **取值范围**： 最小值0，最大值9223372036854775807；时间格式：毫秒级时间戳（UTC时区，从1970-01-01 00:00:00开始计算）；单位：ms 
 
         :param start_time: The start_time of this AntiVirusTaskHostResponseInfo.
         :type start_time: int
@@ -315,7 +315,7 @@ class AntiVirusTaskHostResponseInfo:
     def run_duration(self):
         r"""Gets the run_duration of this AntiVirusTaskHostResponseInfo.
 
-        运行时长，秒
+        **参数解释**: 运行时长 **取值范围**: 非负整数，最小值0；单位：s（秒） 
 
         :return: The run_duration of this AntiVirusTaskHostResponseInfo.
         :rtype: int
@@ -326,7 +326,7 @@ class AntiVirusTaskHostResponseInfo:
     def run_duration(self, run_duration):
         r"""Sets the run_duration of this AntiVirusTaskHostResponseInfo.
 
-        运行时长，秒
+        **参数解释**: 运行时长 **取值范围**: 非负整数，最小值0；单位：s（秒） 
 
         :param run_duration: The run_duration of this AntiVirusTaskHostResponseInfo.
         :type run_duration: int
@@ -337,7 +337,7 @@ class AntiVirusTaskHostResponseInfo:
     def scan_progress(self):
         r"""Gets the scan_progress of this AntiVirusTaskHostResponseInfo.
 
-        扫描进度
+        **参数解释**： 扫描进度 **取值范围**： 字符串格式，支持百分比（如“50%”）或0-100的数值字符串 
 
         :return: The scan_progress of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -348,7 +348,7 @@ class AntiVirusTaskHostResponseInfo:
     def scan_progress(self, scan_progress):
         r"""Sets the scan_progress of this AntiVirusTaskHostResponseInfo.
 
-        扫描进度
+        **参数解释**： 扫描进度 **取值范围**： 字符串格式，支持百分比（如“50%”）或0-100的数值字符串 
 
         :param scan_progress: The scan_progress of this AntiVirusTaskHostResponseInfo.
         :type scan_progress: str
@@ -359,7 +359,7 @@ class AntiVirusTaskHostResponseInfo:
     def virus_num(self):
         r"""Gets the virus_num of this AntiVirusTaskHostResponseInfo.
 
-        新发现病毒数量
+        **参数解释** 新发现病毒数量 **取值范围** 非负整数，最小值0；单位：个 
 
         :return: The virus_num of this AntiVirusTaskHostResponseInfo.
         :rtype: int
@@ -370,7 +370,7 @@ class AntiVirusTaskHostResponseInfo:
     def virus_num(self, virus_num):
         r"""Sets the virus_num of this AntiVirusTaskHostResponseInfo.
 
-        新发现病毒数量
+        **参数解释** 新发现病毒数量 **取值范围** 非负整数，最小值0；单位：个 
 
         :param virus_num: The virus_num of this AntiVirusTaskHostResponseInfo.
         :type virus_num: int
@@ -381,7 +381,7 @@ class AntiVirusTaskHostResponseInfo:
     def scan_file_num(self):
         r"""Gets the scan_file_num of this AntiVirusTaskHostResponseInfo.
 
-        已扫描的文件数量
+        **参数解释**: 已扫描的文件数量 **取值范围**: 非负整数，最小值0；单位：个 
 
         :return: The scan_file_num of this AntiVirusTaskHostResponseInfo.
         :rtype: int
@@ -392,7 +392,7 @@ class AntiVirusTaskHostResponseInfo:
     def scan_file_num(self, scan_file_num):
         r"""Sets the scan_file_num of this AntiVirusTaskHostResponseInfo.
 
-        已扫描的文件数量
+        **参数解释**: 已扫描的文件数量 **取值范围**: 非负整数，最小值0；单位：个 
 
         :param scan_file_num: The scan_file_num of this AntiVirusTaskHostResponseInfo.
         :type scan_file_num: int
@@ -403,7 +403,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_task_status(self):
         r"""Gets the host_task_status of this AntiVirusTaskHostResponseInfo.
 
-        服务器扫描状态，包含如下4种   - scanning ：扫描中   - success ：扫描成功   - fail ：扫描失败   - cancel ：取消扫描
+        **参数解释**: 服务器扫描状态 **取值范围**: - scanning ：扫描中 - success ：扫描成功 - fail ：扫描失败 - cancel ：取消扫描 
 
         :return: The host_task_status of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -414,7 +414,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_task_status(self, host_task_status):
         r"""Sets the host_task_status of this AntiVirusTaskHostResponseInfo.
 
-        服务器扫描状态，包含如下4种   - scanning ：扫描中   - success ：扫描成功   - fail ：扫描失败   - cancel ：取消扫描
+        **参数解释**: 服务器扫描状态 **取值范围**: - scanning ：扫描中 - success ：扫描成功 - fail ：扫描失败 - cancel ：取消扫描 
 
         :param host_task_status: The host_task_status of this AntiVirusTaskHostResponseInfo.
         :type host_task_status: str
@@ -425,7 +425,7 @@ class AntiVirusTaskHostResponseInfo:
     def fail_reason(self):
         r"""Gets the fail_reason of this AntiVirusTaskHostResponseInfo.
 
-        失败原因
+        **参数解释**: 失败原因 **取值范围**: 字符长度0-512位 
 
         :return: The fail_reason of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -436,7 +436,7 @@ class AntiVirusTaskHostResponseInfo:
     def fail_reason(self, fail_reason):
         r"""Sets the fail_reason of this AntiVirusTaskHostResponseInfo.
 
-        失败原因
+        **参数解释**: 失败原因 **取值范围**: 字符长度0-512位 
 
         :param fail_reason: The fail_reason of this AntiVirusTaskHostResponseInfo.
         :type fail_reason: str
@@ -447,7 +447,7 @@ class AntiVirusTaskHostResponseInfo:
     def deleted(self):
         r"""Gets the deleted of this AntiVirusTaskHostResponseInfo.
 
-        是否删除，包含如下:   - true ：已删除   - false : 未删除
+        **参数解释**： 是否删除 **取值范围**： 包含如下:   - true ：已删除   - false : 未删除 
 
         :return: The deleted of this AntiVirusTaskHostResponseInfo.
         :rtype: bool
@@ -458,7 +458,7 @@ class AntiVirusTaskHostResponseInfo:
     def deleted(self, deleted):
         r"""Sets the deleted of this AntiVirusTaskHostResponseInfo.
 
-        是否删除，包含如下:   - true ：已删除   - false : 未删除
+        **参数解释**： 是否删除 **取值范围**： 包含如下:   - true ：已删除   - false : 未删除 
 
         :param deleted: The deleted of this AntiVirusTaskHostResponseInfo.
         :type deleted: bool
@@ -469,7 +469,7 @@ class AntiVirusTaskHostResponseInfo:
     def whether_using_quota(self):
         r"""Gets the whether_using_quota of this AntiVirusTaskHostResponseInfo.
 
-        是否使用病毒查杀按次计费配额
+        **参数解释**： 是否使用病毒查杀按次计费配额 **取值范围**： 0（未使用）、1（已使用） 
 
         :return: The whether_using_quota of this AntiVirusTaskHostResponseInfo.
         :rtype: int
@@ -480,7 +480,7 @@ class AntiVirusTaskHostResponseInfo:
     def whether_using_quota(self, whether_using_quota):
         r"""Sets the whether_using_quota of this AntiVirusTaskHostResponseInfo.
 
-        是否使用病毒查杀按次计费配额
+        **参数解释**： 是否使用病毒查杀按次计费配额 **取值范围**： 0（未使用）、1（已使用） 
 
         :param whether_using_quota: The whether_using_quota of this AntiVirusTaskHostResponseInfo.
         :type whether_using_quota: int
@@ -491,7 +491,7 @@ class AntiVirusTaskHostResponseInfo:
     def agent_id(self):
         r"""Gets the agent_id of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The agent_id of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -502,7 +502,7 @@ class AntiVirusTaskHostResponseInfo:
     def agent_id(self, agent_id):
         r"""Sets the agent_id of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**: Agent ID **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
+        **参数解释**: 主机上安装的杀毒Agent的唯一标识ID，用于关联主机与杀毒服务 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param agent_id: The agent_id of this AntiVirusTaskHostResponseInfo.
         :type agent_id: str
@@ -513,7 +513,7 @@ class AntiVirusTaskHostResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :return: The os_type of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -524,7 +524,7 @@ class AntiVirusTaskHostResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :param os_type: The os_type of this AntiVirusTaskHostResponseInfo.
         :type os_type: str
@@ -535,7 +535,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_status(self):
         r"""Gets the host_status of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**： 主机状态 **取值范围**: - ACTIVE：正在运行。 - SHUTOFF：关机。 - BUILDING：创建中。 - ERROR：故障。 
+        **参数解释**： 主机状态 **取值范围**: - ACTIVE：正在运行 - SHUTOFF：关机 - BUILDING：创建中 - ERROR：故障 
 
         :return: The host_status of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -546,7 +546,7 @@ class AntiVirusTaskHostResponseInfo:
     def host_status(self, host_status):
         r"""Sets the host_status of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**： 主机状态 **取值范围**: - ACTIVE：正在运行。 - SHUTOFF：关机。 - BUILDING：创建中。 - ERROR：故障。 
+        **参数解释**： 主机状态 **取值范围**: - ACTIVE：正在运行 - SHUTOFF：关机 - BUILDING：创建中 - ERROR：故障 
 
         :param host_status: The host_status of this AntiVirusTaskHostResponseInfo.
         :type host_status: str
@@ -557,7 +557,7 @@ class AntiVirusTaskHostResponseInfo:
     def agent_status(self):
         r"""Gets the agent_status of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**： Agent状态 **取值范围**: - installed：已安装。 - not_installed：未安装。 - online：在线。 - offline：离线。 - install_failed：安装失败。 - installing：安装中。 - not_online：不在线的（除了在线以外的所有状态，仅作为查询条件）。 
+        **参数解释**： Agent状态 **取值范围**: - installed：已安装 - not_installed：未安 - online：在线 - offline：离线 - install_failed：安装失败 - installing：安装中 - not_online：不在线的（除了在线以外的所有状态，仅作为查询条件） 
 
         :return: The agent_status of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -568,7 +568,7 @@ class AntiVirusTaskHostResponseInfo:
     def agent_status(self, agent_status):
         r"""Sets the agent_status of this AntiVirusTaskHostResponseInfo.
 
-        **参数解释**： Agent状态 **取值范围**: - installed：已安装。 - not_installed：未安装。 - online：在线。 - offline：离线。 - install_failed：安装失败。 - installing：安装中。 - not_online：不在线的（除了在线以外的所有状态，仅作为查询条件）。 
+        **参数解释**： Agent状态 **取值范围**: - installed：已安装 - not_installed：未安 - online：在线 - offline：离线 - install_failed：安装失败 - installing：安装中 - not_online：不在线的（除了在线以外的所有状态，仅作为查询条件） 
 
         :param agent_status: The agent_status of this AntiVirusTaskHostResponseInfo.
         :type agent_status: str
@@ -579,7 +579,7 @@ class AntiVirusTaskHostResponseInfo:
     def protect_status(self):
         r"""Gets the protect_status of this AntiVirusTaskHostResponseInfo.
 
-        防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
+        **参数解释**: 防护状态 **取值范围**:  - closed ：关闭  - opened ：开启 
 
         :return: The protect_status of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -590,7 +590,7 @@ class AntiVirusTaskHostResponseInfo:
     def protect_status(self, protect_status):
         r"""Sets the protect_status of this AntiVirusTaskHostResponseInfo.
 
-        防护状态，包含如下2种。   - closed ：关闭。   - opened ：开启。
+        **参数解释**: 防护状态 **取值范围**:  - closed ：关闭  - opened ：开启 
 
         :param protect_status: The protect_status of this AntiVirusTaskHostResponseInfo.
         :type protect_status: str
@@ -601,7 +601,7 @@ class AntiVirusTaskHostResponseInfo:
     def os_name(self):
         r"""Gets the os_name of this AntiVirusTaskHostResponseInfo.
 
-        操作系统名称
+        **参数解释**: 操作系统名称 **取值范围**: 字符长度0-128位 
 
         :return: The os_name of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -612,7 +612,7 @@ class AntiVirusTaskHostResponseInfo:
     def os_name(self, os_name):
         r"""Sets the os_name of this AntiVirusTaskHostResponseInfo.
 
-        操作系统名称
+        **参数解释**: 操作系统名称 **取值范围**: 字符长度0-128位 
 
         :param os_name: The os_name of this AntiVirusTaskHostResponseInfo.
         :type os_name: str
@@ -623,7 +623,7 @@ class AntiVirusTaskHostResponseInfo:
     def os_version(self):
         r"""Gets the os_version of this AntiVirusTaskHostResponseInfo.
 
-        系统版本
+        **参数解释**： 系统版本号 **取值范围**： 字符长度0-64位 
 
         :return: The os_version of this AntiVirusTaskHostResponseInfo.
         :rtype: str
@@ -634,7 +634,7 @@ class AntiVirusTaskHostResponseInfo:
     def os_version(self, os_version):
         r"""Sets the os_version of this AntiVirusTaskHostResponseInfo.
 
-        系统版本
+        **参数解释**： 系统版本号 **取值范围**： 字符长度0-64位 
 
         :param os_version: The os_version of this AntiVirusTaskHostResponseInfo.
         :type os_version: str

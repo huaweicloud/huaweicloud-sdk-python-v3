@@ -39,7 +39,7 @@ class HostGroupItem:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
+        :param group_id: **参数解释**: 主机所属服务器组的唯一标识ID **取值范围**: 字符长度0-64位 
         :type group_id: str
         :param group_name: **参数解释**: 服务器组名称 **取值范围**: 字符长度0-256位 
         :type group_name: str
@@ -85,7 +85,7 @@ class HostGroupItem:
     def group_id(self):
         r"""Gets the group_id of this HostGroupItem.
 
-        **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
+        **参数解释**: 主机所属服务器组的唯一标识ID **取值范围**: 字符长度0-64位 
 
         :return: The group_id of this HostGroupItem.
         :rtype: str
@@ -96,7 +96,7 @@ class HostGroupItem:
     def group_id(self, group_id):
         r"""Sets the group_id of this HostGroupItem.
 
-        **参数解释**: 服务器组ID **取值范围**: 字符长度0-64位 
+        **参数解释**: 主机所属服务器组的唯一标识ID **取值范围**: 字符长度0-64位 
 
         :param group_id: The group_id of this HostGroupItem.
         :type group_id: str

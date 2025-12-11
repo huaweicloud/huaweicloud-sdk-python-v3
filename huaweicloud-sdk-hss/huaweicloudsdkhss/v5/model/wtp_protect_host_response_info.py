@@ -75,9 +75,9 @@ class WtpProtectHostResponseInfo:
 
         :param host_name: **参数解释**: 服务器名称 **取值范围**: 字符长度1-256位 
         :type host_name: str
-        :param host_id: **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        :param host_id: **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
         :type host_id: str
-        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        :param public_ip: **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
         :type public_ip: str
         :param private_ip: **参数解释**： 服务器私有IP **取值范围**： 字符长度1-128位 
         :type private_ip: str
@@ -89,7 +89,7 @@ class WtpProtectHostResponseInfo:
         :type asset_value: str
         :param os_bit: **参数解释**： 操作系统位数 **取值范围**： 字符长度1-64位 
         :type os_bit: str
-        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        :param os_type: **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
         :type os_type: str
         :param protect_status: **参数解释**: 网页防篡改防护状态 **取值范围**: - opening : 开启中。 - opened : 防护中。 - closed : 未防护。 - open_failed : 防护失败。 - partial_protection : 部分防护。 - protection_interruption : 防护中断。 - protection_pause : 防护暂停。 
         :type protect_status: str
@@ -226,7 +226,7 @@ class WtpProtectHostResponseInfo:
     def host_id(self):
         r"""Gets the host_id of this WtpProtectHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :return: The host_id of this WtpProtectHostResponseInfo.
         :rtype: str
@@ -237,7 +237,7 @@ class WtpProtectHostResponseInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this WtpProtectHostResponseInfo.
 
-        **参数解释**： 主机ID **取值范围**： 字符长度1-64位 
+        **参数解释**： 服务器（主机）的唯一标识ID **取值范围**： 字符长度1-64位 
 
         :param host_id: The host_id of this WtpProtectHostResponseInfo.
         :type host_id: str
@@ -248,7 +248,7 @@ class WtpProtectHostResponseInfo:
     def public_ip(self):
         r"""Gets the public_ip of this WtpProtectHostResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :return: The public_ip of this WtpProtectHostResponseInfo.
         :rtype: str
@@ -259,7 +259,7 @@ class WtpProtectHostResponseInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this WtpProtectHostResponseInfo.
 
-        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位 
+        **参数解释**： 弹性公网IP地址 **取值范围**： 字符长度1-256位，支持IPv4或IPv6格式（IPv4长度7-15位，IPv6长度15-39位） 
 
         :param public_ip: The public_ip of this WtpProtectHostResponseInfo.
         :type public_ip: str
@@ -380,7 +380,7 @@ class WtpProtectHostResponseInfo:
     def os_type(self):
         r"""Gets the os_type of this WtpProtectHostResponseInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :return: The os_type of this WtpProtectHostResponseInfo.
         :rtype: str
@@ -391,7 +391,7 @@ class WtpProtectHostResponseInfo:
     def os_type(self, os_type):
         r"""Sets the os_type of this WtpProtectHostResponseInfo.
 
-        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux。 - Windows：Windows。 
+        **参数解释**： 操作系统类型 **取值范围**： - Linux：Linux - Windows：Windows 
 
         :param os_type: The os_type of this WtpProtectHostResponseInfo.
         :type os_type: str

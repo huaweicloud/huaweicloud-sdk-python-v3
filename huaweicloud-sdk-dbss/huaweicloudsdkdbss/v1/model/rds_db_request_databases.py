@@ -31,7 +31,7 @@ class RdsDbRequestDatabases:
 
         :param id: rds数据库id，可在查询rds数据库列表接口的ID字段获取。
         :type id: str
-        :param type: 数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - MARIADB - GAUSSDBOPENGAUSS
+        :param type: 数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG:  DAMENG - TAURUS: Taurus DB - DWS: GaussDB(DWS) - KINGBASE: Kingbase - MARIADB: MariaDB - GAUSSDBOPENGAUSS: GaussDB/openGauss
         :type type: str
         """
         
@@ -70,7 +70,7 @@ class RdsDbRequestDatabases:
     def type(self):
         r"""Gets the type of this RdsDbRequestDatabases.
 
-        数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - MARIADB - GAUSSDBOPENGAUSS
+        数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG:  DAMENG - TAURUS: Taurus DB - DWS: GaussDB(DWS) - KINGBASE: Kingbase - MARIADB: MariaDB - GAUSSDBOPENGAUSS: GaussDB/openGauss
 
         :return: The type of this RdsDbRequestDatabases.
         :rtype: str
@@ -81,7 +81,7 @@ class RdsDbRequestDatabases:
     def type(self, type):
         r"""Sets the type of this RdsDbRequestDatabases.
 
-        数据库类型 - MYSQL - ORACLE - POSTGRESQL - SQLSERVER - DAMENG - TAURUS - DWS - KINGBASE - MARIADB - GAUSSDBOPENGAUSS
+        数据库类型 - MYSQL: MySQL - ORACLE: Oracle - POSTGRESQL: PostgreSQL - SQLSERVER: SQL Server - DAMENG:  DAMENG - TAURUS: Taurus DB - DWS: GaussDB(DWS) - KINGBASE: Kingbase - MARIADB: MariaDB - GAUSSDBOPENGAUSS: GaussDB/openGauss
 
         :param type: The type of this RdsDbRequestDatabases.
         :type type: str
