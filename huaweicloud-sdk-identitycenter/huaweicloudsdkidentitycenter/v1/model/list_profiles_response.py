@@ -20,7 +20,7 @@ class ListProfilesResponse(SdkResponse):
     }
 
     attribute_map = {
-        'application_profiles': 'applicationProfiles'
+        'application_profiles': 'application_profiles'
     }
 
     def __init__(self, application_profiles=None):

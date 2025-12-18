@@ -56,6 +56,7 @@ from huaweicloudsdkclouddc.v1.model.image import Image
 from huaweicloudsdkclouddc.v1.model.image_id import ImageId
 from huaweicloudsdkclouddc.v1.model.instance import Instance
 from huaweicloudsdkclouddc.v1.model.instance_id import InstanceId
+from huaweicloudsdkclouddc.v1.model.instance_operation_status import InstanceOperationStatus
 from huaweicloudsdkclouddc.v1.model.instance_state import InstanceState
 from huaweicloudsdkclouddc.v1.model.list_alarms_request import ListAlarmsRequest
 from huaweicloudsdkclouddc.v1.model.list_alarms_response import ListAlarmsResponse

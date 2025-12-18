@@ -17,16 +17,18 @@ class HostNetwork:
     openapi_types = {
         'vpc': 'str',
         'subnet': 'str',
-        'security_group': 'str'
+        'security_group': 'str',
+        'control_plane_security_group': 'str'
     }
 
     attribute_map = {
         'vpc': 'vpc',
         'subnet': 'subnet',
-        'security_group': 'SecurityGroup'
+        'security_group': 'SecurityGroup',
+        'control_plane_security_group': 'controlPlaneSecurityGroup'
     }
 
-    def __init__(self, vpc=None, subnet=None, security_group=None):
+    def __init__(self, vpc=None, subnet=None, security_group=None, control_plane_security_group=None):
         r"""HostNetwork
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class HostNetwork:
         :type subnet: str
         :param security_group: 集群默认的Node节点安全组ID，不指定该字段系统将自动为用户创建默认Node节点安全组，指定该字段时集群将绑定指定的安全组。Node节点安全组需要放通部分端口来保证正常通信。[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/cce_faq/cce_faq_00265.html)。](tag:hws)[详细设置请参考[集群安全组规则配置](https://support.huaweicloud.com/intl/zh-cn/cce_faq/cce_faq_00265.html)。](tag:hws_hk) 
         :type security_group: str
+        :param control_plane_security_group: **参数解释：** 集群控制面节点安全组ID。 **约束限制：** 创建成功后自动生成，填写无效。 **取值范围：** 不涉及 **默认取值：** 不涉及 
+        :type control_plane_security_group: str
         """
         
         
@@ -44,12 +48,15 @@ class HostNetwork:
         self._vpc = None
         self._subnet = None
         self._security_group = None
+        self._control_plane_security_group = None
         self.discriminator = None
 
         self.vpc = vpc
         self.subnet = subnet
         if security_group is not None:
             self.security_group = security_group
+        if control_plane_security_group is not None:
+            self.control_plane_security_group = control_plane_security_group
 
     @property
     def vpc(self):
@@ -116,6 +123,28 @@ class HostNetwork:
         :type security_group: str
         """
         self._security_group = security_group
+
+    @property
+    def control_plane_security_group(self):
+        r"""Gets the control_plane_security_group of this HostNetwork.
+
+        **参数解释：** 集群控制面节点安全组ID。 **约束限制：** 创建成功后自动生成，填写无效。 **取值范围：** 不涉及 **默认取值：** 不涉及 
+
+        :return: The control_plane_security_group of this HostNetwork.
+        :rtype: str
+        """
+        return self._control_plane_security_group
+
+    @control_plane_security_group.setter
+    def control_plane_security_group(self, control_plane_security_group):
+        r"""Sets the control_plane_security_group of this HostNetwork.
+
+        **参数解释：** 集群控制面节点安全组ID。 **约束限制：** 创建成功后自动生成，填写无效。 **取值范围：** 不涉及 **默认取值：** 不涉及 
+
+        :param control_plane_security_group: The control_plane_security_group of this HostNetwork.
+        :type control_plane_security_group: str
+        """
+        self._control_plane_security_group = control_plane_security_group
 
     def to_dict(self):
         result = {}

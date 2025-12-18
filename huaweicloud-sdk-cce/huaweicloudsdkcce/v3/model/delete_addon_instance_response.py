@@ -16,47 +16,155 @@ class DeleteAddonInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'str'
+        'kind': 'str',
+        'api_version': 'str',
+        'metadata': 'AddonMetadata',
+        'spec': 'InstanceSpec',
+        'status': 'AddonInstanceStatus'
     }
 
     attribute_map = {
-        'body': 'body'
+        'kind': 'kind',
+        'api_version': 'apiVersion',
+        'metadata': 'metadata',
+        'spec': 'spec',
+        'status': 'status'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
         r"""DeleteAddonInstanceResponse
 
         The model defined in huaweicloud sdk
 
-        :param body: 
-        :type body: str
+        :param kind: API类型，固定值“Addon”，该值不可修改。
+        :type kind: str
+        :param api_version: API版本，固定值“v3”，该值不可修改。
+        :type api_version: str
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkcce.v3.AddonMetadata`
+        :param spec: 
+        :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
         """
         
         super().__init__()
 
-        self._body = None
+        self._kind = None
+        self._api_version = None
+        self._metadata = None
+        self._spec = None
+        self._status = None
         self.discriminator = None
 
-        if body is not None:
-            self.body = body
+        if kind is not None:
+            self.kind = kind
+        if api_version is not None:
+            self.api_version = api_version
+        if metadata is not None:
+            self.metadata = metadata
+        if spec is not None:
+            self.spec = spec
+        if status is not None:
+            self.status = status
 
     @property
-    def body(self):
-        r"""Gets the body of this DeleteAddonInstanceResponse.
+    def kind(self):
+        r"""Gets the kind of this DeleteAddonInstanceResponse.
 
-        :return: The body of this DeleteAddonInstanceResponse.
+        API类型，固定值“Addon”，该值不可修改。
+
+        :return: The kind of this DeleteAddonInstanceResponse.
         :rtype: str
         """
-        return self._body
+        return self._kind
 
-    @body.setter
-    def body(self, body):
-        r"""Sets the body of this DeleteAddonInstanceResponse.
+    @kind.setter
+    def kind(self, kind):
+        r"""Sets the kind of this DeleteAddonInstanceResponse.
 
-        :param body: The body of this DeleteAddonInstanceResponse.
-        :type body: str
+        API类型，固定值“Addon”，该值不可修改。
+
+        :param kind: The kind of this DeleteAddonInstanceResponse.
+        :type kind: str
         """
-        self._body = body
+        self._kind = kind
+
+    @property
+    def api_version(self):
+        r"""Gets the api_version of this DeleteAddonInstanceResponse.
+
+        API版本，固定值“v3”，该值不可修改。
+
+        :return: The api_version of this DeleteAddonInstanceResponse.
+        :rtype: str
+        """
+        return self._api_version
+
+    @api_version.setter
+    def api_version(self, api_version):
+        r"""Sets the api_version of this DeleteAddonInstanceResponse.
+
+        API版本，固定值“v3”，该值不可修改。
+
+        :param api_version: The api_version of this DeleteAddonInstanceResponse.
+        :type api_version: str
+        """
+        self._api_version = api_version
+
+    @property
+    def metadata(self):
+        r"""Gets the metadata of this DeleteAddonInstanceResponse.
+
+        :return: The metadata of this DeleteAddonInstanceResponse.
+        :rtype: :class:`huaweicloudsdkcce.v3.AddonMetadata`
+        """
+        return self._metadata
+
+    @metadata.setter
+    def metadata(self, metadata):
+        r"""Sets the metadata of this DeleteAddonInstanceResponse.
+
+        :param metadata: The metadata of this DeleteAddonInstanceResponse.
+        :type metadata: :class:`huaweicloudsdkcce.v3.AddonMetadata`
+        """
+        self._metadata = metadata
+
+    @property
+    def spec(self):
+        r"""Gets the spec of this DeleteAddonInstanceResponse.
+
+        :return: The spec of this DeleteAddonInstanceResponse.
+        :rtype: :class:`huaweicloudsdkcce.v3.InstanceSpec`
+        """
+        return self._spec
+
+    @spec.setter
+    def spec(self, spec):
+        r"""Sets the spec of this DeleteAddonInstanceResponse.
+
+        :param spec: The spec of this DeleteAddonInstanceResponse.
+        :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
+        """
+        self._spec = spec
+
+    @property
+    def status(self):
+        r"""Gets the status of this DeleteAddonInstanceResponse.
+
+        :return: The status of this DeleteAddonInstanceResponse.
+        :rtype: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this DeleteAddonInstanceResponse.
+
+        :param status: The status of this DeleteAddonInstanceResponse.
+        :type status: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
+        """
+        self._status = status
 
     def to_dict(self):
         import warnings

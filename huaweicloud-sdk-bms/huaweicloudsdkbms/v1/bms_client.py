@@ -1480,6 +1480,24 @@ class BmsClient(Client):
         path_params = {}
 
         query_params = []
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+            collection_formats['availability_zone'] = 'csv'
+        if 'flavor_id' in local_var_params:
+            query_params.append(('flavor_id', local_var_params['flavor_id']))
+            collection_formats['flavor_id'] = 'csv'
+        if 'dec_project_id' in local_var_params:
+            query_params.append(('dec_project_id', local_var_params['dec_project_id']))
+            collection_formats['dec_project_id'] = 'csv'
+        if 'check_limit' in local_var_params:
+            query_params.append(('check_limit', local_var_params['check_limit']))
+            collection_formats['check_limit'] = 'csv'
+        if 'expectation' in local_var_params:
+            query_params.append(('expectation', local_var_params['expectation']))
+            collection_formats['expectation'] = 'csv'
+        if 'resource_type' in local_var_params:
+            query_params.append(('resource_type', local_var_params['resource_type']))
+            collection_formats['resource_type'] = 'csv'
 
         header_params = {}
 

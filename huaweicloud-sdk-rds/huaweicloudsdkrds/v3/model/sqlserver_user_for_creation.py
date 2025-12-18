@@ -16,15 +16,17 @@ class SqlserverUserForCreation:
 
     openapi_types = {
         'name': 'str',
-        'password': 'str'
+        'password': 'str',
+        'instance_readonly': 'bool'
     }
 
     attribute_map = {
         'name': 'name',
-        'password': 'password'
+        'password': 'password',
+        'instance_readonly': 'instance_readonly'
     }
 
-    def __init__(self, name=None, password=None):
+    def __init__(self, name=None, password=None, instance_readonly=None):
         r"""SqlserverUserForCreation
 
         The model defined in huaweicloud sdk
@@ -33,16 +35,21 @@ class SqlserverUserForCreation:
         :type name: str
         :param password: 数据库帐号密码。  取值范围：非空，密码长度在8到128个字符之间，至少包含大写字母、小写字母、数字、特殊字符三种字符的组合。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
         :type password: str
+        :param instance_readonly: 是否创建实例级只读账号。
+        :type instance_readonly: bool
         """
         
         
 
         self._name = None
         self._password = None
+        self._instance_readonly = None
         self.discriminator = None
 
         self.name = name
         self.password = password
+        if instance_readonly is not None:
+            self.instance_readonly = instance_readonly
 
     @property
     def name(self):
@@ -87,6 +94,28 @@ class SqlserverUserForCreation:
         :type password: str
         """
         self._password = password
+
+    @property
+    def instance_readonly(self):
+        r"""Gets the instance_readonly of this SqlserverUserForCreation.
+
+        是否创建实例级只读账号。
+
+        :return: The instance_readonly of this SqlserverUserForCreation.
+        :rtype: bool
+        """
+        return self._instance_readonly
+
+    @instance_readonly.setter
+    def instance_readonly(self, instance_readonly):
+        r"""Sets the instance_readonly of this SqlserverUserForCreation.
+
+        是否创建实例级只读账号。
+
+        :param instance_readonly: The instance_readonly of this SqlserverUserForCreation.
+        :type instance_readonly: bool
+        """
+        self._instance_readonly = instance_readonly
 
     def to_dict(self):
         result = {}

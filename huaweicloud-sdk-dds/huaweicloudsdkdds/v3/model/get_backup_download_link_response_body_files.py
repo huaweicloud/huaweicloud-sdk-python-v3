@@ -18,17 +18,21 @@ class GetBackupDownloadLinkResponseBodyFiles:
         'name': 'str',
         'size': 'int',
         'download_link': 'str',
-        'link_expired_time': 'str'
+        'link_expired_time': 'str',
+        'group_id': 'str',
+        'group_name': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'size': 'size',
         'download_link': 'download_link',
-        'link_expired_time': 'link_expired_time'
+        'link_expired_time': 'link_expired_time',
+        'group_id': 'group_id',
+        'group_name': 'group_name'
     }
 
-    def __init__(self, name=None, size=None, download_link=None, link_expired_time=None):
+    def __init__(self, name=None, size=None, download_link=None, link_expired_time=None, group_id=None, group_name=None):
         r"""GetBackupDownloadLinkResponseBodyFiles
 
         The model defined in huaweicloud sdk
@@ -41,6 +45,10 @@ class GetBackupDownloadLinkResponseBodyFiles:
         :type download_link: str
         :param link_expired_time: 下载链接过期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如UTC时间偏移显示为+0000。
         :type link_expired_time: str
+        :param group_id: 组ID。
+        :type group_id: str
+        :param group_name: 组名。
+        :type group_name: str
         """
         
         
@@ -49,12 +57,18 @@ class GetBackupDownloadLinkResponseBodyFiles:
         self._size = None
         self._download_link = None
         self._link_expired_time = None
+        self._group_id = None
+        self._group_name = None
         self.discriminator = None
 
         self.name = name
         self.size = size
         self.download_link = download_link
         self.link_expired_time = link_expired_time
+        if group_id is not None:
+            self.group_id = group_id
+        if group_name is not None:
+            self.group_name = group_name
 
     @property
     def name(self):
@@ -143,6 +157,50 @@ class GetBackupDownloadLinkResponseBodyFiles:
         :type link_expired_time: str
         """
         self._link_expired_time = link_expired_time
+
+    @property
+    def group_id(self):
+        r"""Gets the group_id of this GetBackupDownloadLinkResponseBodyFiles.
+
+        组ID。
+
+        :return: The group_id of this GetBackupDownloadLinkResponseBodyFiles.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        r"""Sets the group_id of this GetBackupDownloadLinkResponseBodyFiles.
+
+        组ID。
+
+        :param group_id: The group_id of this GetBackupDownloadLinkResponseBodyFiles.
+        :type group_id: str
+        """
+        self._group_id = group_id
+
+    @property
+    def group_name(self):
+        r"""Gets the group_name of this GetBackupDownloadLinkResponseBodyFiles.
+
+        组名。
+
+        :return: The group_name of this GetBackupDownloadLinkResponseBodyFiles.
+        :rtype: str
+        """
+        return self._group_name
+
+    @group_name.setter
+    def group_name(self, group_name):
+        r"""Sets the group_name of this GetBackupDownloadLinkResponseBodyFiles.
+
+        组名。
+
+        :param group_name: The group_name of this GetBackupDownloadLinkResponseBodyFiles.
+        :type group_name: str
+        """
+        self._group_name = group_name
 
     def to_dict(self):
         result = {}

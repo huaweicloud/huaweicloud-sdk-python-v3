@@ -17,6 +17,8 @@ class CreateInstanceReq:
     openapi_types = {
         'name': 'str',
         'description': 'str',
+        'disk_encrypted_enable': 'bool',
+        'disk_encrypted_key': 'str',
         'engine': 'str',
         'engine_version': 'str',
         'enable_acl': 'bool',
@@ -43,6 +45,8 @@ class CreateInstanceReq:
     attribute_map = {
         'name': 'name',
         'description': 'description',
+        'disk_encrypted_enable': 'disk_encrypted_enable',
+        'disk_encrypted_key': 'disk_encrypted_key',
         'engine': 'engine',
         'engine_version': 'engine_version',
         'enable_acl': 'enable_acl',
@@ -66,7 +70,7 @@ class CreateInstanceReq:
         'bss_param': 'bss_param'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, enable_acl=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, broker_num=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None, bss_param=None):
+    def __init__(self, name=None, description=None, disk_encrypted_enable=None, disk_encrypted_key=None, engine=None, engine_version=None, enable_acl=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, broker_num=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None, bss_param=None):
         r"""CreateInstanceReq
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,10 @@ class CreateInstanceReq:
         :type name: str
         :param description: 实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\&quot;&gt;\&quot;与\&quot;&lt;\&quot;，字符串首字符不能为\&quot;&#x3D;\&quot;,\&quot;+\&quot;,\&quot;-\&quot;,\&quot;@\&quot;的全角和半角字符。](tag:hcs)  &gt; \\与\&quot;在json报文中属于特殊字符，如果参数值中需要显示\\或者\&quot;字符，请在字符前增加转义字符\\，比如\\\\或者\\\&quot;。
         :type description: str
+        :param disk_encrypted_enable: **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
+        :type disk_encrypted_enable: bool
+        :param disk_encrypted_key: **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :type disk_encrypted_key: str
         :param engine: 消息引擎：rabbitmq。
         :type engine: str
         :param engine_version: 消息引擎的版本。   - RabbitMQ版本有：3.8.35[、AMQP-0-9-1](tag:hws,hws_hk)[和3.7.17](tag:tm,hk_tm,hk_sbc,sbc)。 
@@ -123,6 +131,8 @@ class CreateInstanceReq:
 
         self._name = None
         self._description = None
+        self._disk_encrypted_enable = None
+        self._disk_encrypted_key = None
         self._engine = None
         self._engine_version = None
         self._enable_acl = None
@@ -149,6 +159,10 @@ class CreateInstanceReq:
         self.name = name
         if description is not None:
             self.description = description
+        if disk_encrypted_enable is not None:
+            self.disk_encrypted_enable = disk_encrypted_enable
+        if disk_encrypted_key is not None:
+            self.disk_encrypted_key = disk_encrypted_key
         self.engine = engine
         self.engine_version = engine_version
         if enable_acl is not None:
@@ -226,6 +240,50 @@ class CreateInstanceReq:
         :type description: str
         """
         self._description = description
+
+    @property
+    def disk_encrypted_enable(self):
+        r"""Gets the disk_encrypted_enable of this CreateInstanceReq.
+
+        **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
+
+        :return: The disk_encrypted_enable of this CreateInstanceReq.
+        :rtype: bool
+        """
+        return self._disk_encrypted_enable
+
+    @disk_encrypted_enable.setter
+    def disk_encrypted_enable(self, disk_encrypted_enable):
+        r"""Sets the disk_encrypted_enable of this CreateInstanceReq.
+
+        **参数解释**： 是否开启磁盘加密。 **约束限制**： 不涉及。 **取值范围**： - true：开启。 - false：不开启。 **默认取值**： false。
+
+        :param disk_encrypted_enable: The disk_encrypted_enable of this CreateInstanceReq.
+        :type disk_encrypted_enable: bool
+        """
+        self._disk_encrypted_enable = disk_encrypted_enable
+
+    @property
+    def disk_encrypted_key(self):
+        r"""Gets the disk_encrypted_key of this CreateInstanceReq.
+
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :return: The disk_encrypted_key of this CreateInstanceReq.
+        :rtype: str
+        """
+        return self._disk_encrypted_key
+
+    @disk_encrypted_key.setter
+    def disk_encrypted_key(self, disk_encrypted_key):
+        r"""Sets the disk_encrypted_key of this CreateInstanceReq.
+
+        **参数解释**： 磁盘加密key，未开启磁盘加密时为空。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+
+        :param disk_encrypted_key: The disk_encrypted_key of this CreateInstanceReq.
+        :type disk_encrypted_key: str
+        """
+        self._disk_encrypted_key = disk_encrypted_key
 
     @property
     def engine(self):

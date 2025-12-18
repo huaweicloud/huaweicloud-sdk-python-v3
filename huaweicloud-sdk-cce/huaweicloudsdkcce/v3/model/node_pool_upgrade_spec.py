@@ -15,110 +15,92 @@ class NodePoolUpgradeSpec:
     sensitive_list = []
 
     openapi_types = {
-        'node_pool_id': 'str',
-        'node_i_ds': 'list[str]',
-        'force': 'bool',
-        'node_template': 'NodeTemplate',
         'max_unavailable': 'int',
+        'force': 'bool',
         'retry_times': 'int',
-        'skipped_nodes': 'list[str]'
+        'skipped_nodes': 'list[str]',
+        'node_i_ds': 'list[str]',
+        'node_pool_id': 'str',
+        'node_template': 'NodeTemplate'
     }
 
     attribute_map = {
-        'node_pool_id': 'nodePoolID',
-        'node_i_ds': 'nodeIDs',
-        'force': 'force',
-        'node_template': 'nodeTemplate',
         'max_unavailable': 'maxUnavailable',
+        'force': 'force',
         'retry_times': 'retryTimes',
-        'skipped_nodes': 'skippedNodes'
+        'skipped_nodes': 'skippedNodes',
+        'node_i_ds': 'nodeIDs',
+        'node_pool_id': 'nodePoolID',
+        'node_template': 'nodeTemplate'
     }
 
-    def __init__(self, node_pool_id=None, node_i_ds=None, force=None, node_template=None, max_unavailable=None, retry_times=None, skipped_nodes=None):
+    def __init__(self, max_unavailable=None, force=None, retry_times=None, skipped_nodes=None, node_i_ds=None, node_pool_id=None, node_template=None):
         r"""NodePoolUpgradeSpec
 
         The model defined in huaweicloud sdk
 
-        :param node_pool_id: 节点池id。
-        :type node_pool_id: str
-        :param node_i_ds: 
-        :type node_i_ds: list[str]
+        :param max_unavailable: **参数解释**： 每批最大同步节点。节点升级时，允许节点不可用的最大数量。节点重置方式进行同步时节点将不可用，请合理设置该参数，尽量避免出现集群节点不可用数量过多导致Pod无法调度的情况。 **约束限制**： 不涉及 **取值范围**： 取值范围[1-20] **默认取值**： 不涉及 
+        :type max_unavailable: int
         :param force: Pod无法驱逐时，是否强制重置。
         :type force: bool
-        :param node_template: 
-        :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplate`
-        :param max_unavailable: 
-        :type max_unavailable: int
         :param retry_times: 
         :type retry_times: int
         :param skipped_nodes: 
         :type skipped_nodes: list[str]
+        :param node_i_ds: **参数解释**： 本次操作同步的节点池中选择的节点ID列表，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type node_i_ds: list[str]
+        :param node_pool_id: **参数解释**： 节点池ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+        :type node_pool_id: str
+        :param node_template: 
+        :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplate`
         """
         
         
 
-        self._node_pool_id = None
-        self._node_i_ds = None
-        self._force = None
-        self._node_template = None
         self._max_unavailable = None
+        self._force = None
         self._retry_times = None
         self._skipped_nodes = None
+        self._node_i_ds = None
+        self._node_pool_id = None
+        self._node_template = None
         self.discriminator = None
 
-        self.node_pool_id = node_pool_id
-        if node_i_ds is not None:
-            self.node_i_ds = node_i_ds
-        if force is not None:
-            self.force = force
-        if node_template is not None:
-            self.node_template = node_template
         if max_unavailable is not None:
             self.max_unavailable = max_unavailable
+        if force is not None:
+            self.force = force
         if retry_times is not None:
             self.retry_times = retry_times
         if skipped_nodes is not None:
             self.skipped_nodes = skipped_nodes
+        if node_i_ds is not None:
+            self.node_i_ds = node_i_ds
+        self.node_pool_id = node_pool_id
+        if node_template is not None:
+            self.node_template = node_template
 
     @property
-    def node_pool_id(self):
-        r"""Gets the node_pool_id of this NodePoolUpgradeSpec.
+    def max_unavailable(self):
+        r"""Gets the max_unavailable of this NodePoolUpgradeSpec.
 
-        节点池id。
+        **参数解释**： 每批最大同步节点。节点升级时，允许节点不可用的最大数量。节点重置方式进行同步时节点将不可用，请合理设置该参数，尽量避免出现集群节点不可用数量过多导致Pod无法调度的情况。 **约束限制**： 不涉及 **取值范围**： 取值范围[1-20] **默认取值**： 不涉及 
 
-        :return: The node_pool_id of this NodePoolUpgradeSpec.
-        :rtype: str
+        :return: The max_unavailable of this NodePoolUpgradeSpec.
+        :rtype: int
         """
-        return self._node_pool_id
+        return self._max_unavailable
 
-    @node_pool_id.setter
-    def node_pool_id(self, node_pool_id):
-        r"""Sets the node_pool_id of this NodePoolUpgradeSpec.
+    @max_unavailable.setter
+    def max_unavailable(self, max_unavailable):
+        r"""Sets the max_unavailable of this NodePoolUpgradeSpec.
 
-        节点池id。
+        **参数解释**： 每批最大同步节点。节点升级时，允许节点不可用的最大数量。节点重置方式进行同步时节点将不可用，请合理设置该参数，尽量避免出现集群节点不可用数量过多导致Pod无法调度的情况。 **约束限制**： 不涉及 **取值范围**： 取值范围[1-20] **默认取值**： 不涉及 
 
-        :param node_pool_id: The node_pool_id of this NodePoolUpgradeSpec.
-        :type node_pool_id: str
+        :param max_unavailable: The max_unavailable of this NodePoolUpgradeSpec.
+        :type max_unavailable: int
         """
-        self._node_pool_id = node_pool_id
-
-    @property
-    def node_i_ds(self):
-        r"""Gets the node_i_ds of this NodePoolUpgradeSpec.
-
-        :return: The node_i_ds of this NodePoolUpgradeSpec.
-        :rtype: list[str]
-        """
-        return self._node_i_ds
-
-    @node_i_ds.setter
-    def node_i_ds(self, node_i_ds):
-        r"""Sets the node_i_ds of this NodePoolUpgradeSpec.
-
-        :param node_i_ds: The node_i_ds of this NodePoolUpgradeSpec.
-        :type node_i_ds: list[str]
-        """
-        self._node_i_ds = node_i_ds
+        self._max_unavailable = max_unavailable
 
     @property
     def force(self):
@@ -141,42 +123,6 @@ class NodePoolUpgradeSpec:
         :type force: bool
         """
         self._force = force
-
-    @property
-    def node_template(self):
-        r"""Gets the node_template of this NodePoolUpgradeSpec.
-
-        :return: The node_template of this NodePoolUpgradeSpec.
-        :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplate`
-        """
-        return self._node_template
-
-    @node_template.setter
-    def node_template(self, node_template):
-        r"""Sets the node_template of this NodePoolUpgradeSpec.
-
-        :param node_template: The node_template of this NodePoolUpgradeSpec.
-        :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplate`
-        """
-        self._node_template = node_template
-
-    @property
-    def max_unavailable(self):
-        r"""Gets the max_unavailable of this NodePoolUpgradeSpec.
-
-        :return: The max_unavailable of this NodePoolUpgradeSpec.
-        :rtype: int
-        """
-        return self._max_unavailable
-
-    @max_unavailable.setter
-    def max_unavailable(self, max_unavailable):
-        r"""Sets the max_unavailable of this NodePoolUpgradeSpec.
-
-        :param max_unavailable: The max_unavailable of this NodePoolUpgradeSpec.
-        :type max_unavailable: int
-        """
-        self._max_unavailable = max_unavailable
 
     @property
     def retry_times(self):
@@ -213,6 +159,68 @@ class NodePoolUpgradeSpec:
         :type skipped_nodes: list[str]
         """
         self._skipped_nodes = skipped_nodes
+
+    @property
+    def node_i_ds(self):
+        r"""Gets the node_i_ds of this NodePoolUpgradeSpec.
+
+        **参数解释**： 本次操作同步的节点池中选择的节点ID列表，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The node_i_ds of this NodePoolUpgradeSpec.
+        :rtype: list[str]
+        """
+        return self._node_i_ds
+
+    @node_i_ds.setter
+    def node_i_ds(self, node_i_ds):
+        r"""Sets the node_i_ds of this NodePoolUpgradeSpec.
+
+        **参数解释**： 本次操作同步的节点池中选择的节点ID列表，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param node_i_ds: The node_i_ds of this NodePoolUpgradeSpec.
+        :type node_i_ds: list[str]
+        """
+        self._node_i_ds = node_i_ds
+
+    @property
+    def node_pool_id(self):
+        r"""Gets the node_pool_id of this NodePoolUpgradeSpec.
+
+        **参数解释**： 节点池ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :return: The node_pool_id of this NodePoolUpgradeSpec.
+        :rtype: str
+        """
+        return self._node_pool_id
+
+    @node_pool_id.setter
+    def node_pool_id(self, node_pool_id):
+        r"""Sets the node_pool_id of this NodePoolUpgradeSpec.
+
+        **参数解释**： 节点池ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
+
+        :param node_pool_id: The node_pool_id of this NodePoolUpgradeSpec.
+        :type node_pool_id: str
+        """
+        self._node_pool_id = node_pool_id
+
+    @property
+    def node_template(self):
+        r"""Gets the node_template of this NodePoolUpgradeSpec.
+
+        :return: The node_template of this NodePoolUpgradeSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplate`
+        """
+        return self._node_template
+
+    @node_template.setter
+    def node_template(self, node_template):
+        r"""Sets the node_template of this NodePoolUpgradeSpec.
+
+        :param node_template: The node_template of this NodePoolUpgradeSpec.
+        :type node_template: :class:`huaweicloudsdkcce.v3.NodeTemplate`
+        """
+        self._node_template = node_template
 
     def to_dict(self):
         result = {}

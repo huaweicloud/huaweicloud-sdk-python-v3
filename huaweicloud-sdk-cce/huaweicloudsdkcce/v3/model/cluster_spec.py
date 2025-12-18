@@ -30,6 +30,7 @@ class ClusterSpec:
         'eni_network': 'EniNetwork',
         'service_network': 'ServiceNetwork',
         'authentication': 'Authentication',
+        'public_access': 'PublicAccess',
         'billing_mode': 'int',
         'masters': 'list[MasterSpec]',
         'kubernetes_svc_ip_range': 'str',
@@ -62,6 +63,7 @@ class ClusterSpec:
         'eni_network': 'eniNetwork',
         'service_network': 'serviceNetwork',
         'authentication': 'authentication',
+        'public_access': 'publicAccess',
         'billing_mode': 'billingMode',
         'masters': 'masters',
         'kubernetes_svc_ip_range': 'kubernetesSvcIpRange',
@@ -78,7 +80,7 @@ class ClusterSpec:
         'encryption_config': 'encryptionConfig'
     }
 
-    def __init__(self, category=None, agency_name=None, type=None, flavor=None, version=None, platform_version=None, legacy_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, enable_dist_mgt=None, deletion_protection=None, configurations_override=None, cluster_ops=None, encryption_config=None):
+    def __init__(self, category=None, agency_name=None, type=None, flavor=None, version=None, platform_version=None, legacy_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, public_access=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, enable_dist_mgt=None, deletion_protection=None, configurations_override=None, cluster_ops=None, encryption_config=None):
         r"""ClusterSpec
 
         The model defined in huaweicloud sdk
@@ -113,6 +115,8 @@ class ClusterSpec:
         :type service_network: :class:`huaweicloudsdkcce.v3.ServiceNetwork`
         :param authentication: 
         :type authentication: :class:`huaweicloudsdkcce.v3.Authentication`
+        :param public_access: 
+        :type public_access: :class:`huaweicloudsdkcce.v3.PublicAccess`
         :param billing_mode: 集群的计费方式。 - 0: 按需计费 [- 1: 包周期](tag:hws,hws_hk)  默认为“按需计费”。 
         :type billing_mode: int
         :param masters: **参数解释：** 集群控制节点的高级配置，支持指定控制节点的可用区。 **约束限制：** 该参数未配置时将不返回。 
@@ -160,6 +164,7 @@ class ClusterSpec:
         self._eni_network = None
         self._service_network = None
         self._authentication = None
+        self._public_access = None
         self._billing_mode = None
         self._masters = None
         self._kubernetes_svc_ip_range = None
@@ -202,6 +207,8 @@ class ClusterSpec:
             self.service_network = service_network
         if authentication is not None:
             self.authentication = authentication
+        if public_access is not None:
+            self.public_access = public_access
         if billing_mode is not None:
             self.billing_mode = billing_mode
         if masters is not None:
@@ -540,6 +547,24 @@ class ClusterSpec:
         :type authentication: :class:`huaweicloudsdkcce.v3.Authentication`
         """
         self._authentication = authentication
+
+    @property
+    def public_access(self):
+        r"""Gets the public_access of this ClusterSpec.
+
+        :return: The public_access of this ClusterSpec.
+        :rtype: :class:`huaweicloudsdkcce.v3.PublicAccess`
+        """
+        return self._public_access
+
+    @public_access.setter
+    def public_access(self, public_access):
+        r"""Sets the public_access of this ClusterSpec.
+
+        :param public_access: The public_access of this ClusterSpec.
+        :type public_access: :class:`huaweicloudsdkcce.v3.PublicAccess`
+        """
+        self._public_access = public_access
 
     @property
     def billing_mode(self):

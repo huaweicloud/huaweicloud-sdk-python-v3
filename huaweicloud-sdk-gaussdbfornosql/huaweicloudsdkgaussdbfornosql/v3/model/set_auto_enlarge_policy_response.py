@@ -16,20 +16,51 @@ class SetAutoEnlargePolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'error_results': 'list[SetAutoPolicyErrorResults]'
     }
 
     attribute_map = {
+        'error_results': 'error_results'
     }
 
-    def __init__(self):
+    def __init__(self, error_results=None):
         r"""SetAutoEnlargePolicyResponse
 
         The model defined in huaweicloud sdk
 
+        :param error_results: **参数解释：** 设置磁盘自动扩容策略失败的实例信息列表。 **取值范围：** 不涉及
+        :type error_results: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SetAutoPolicyErrorResults`]
         """
         
         super().__init__()
+
+        self._error_results = None
         self.discriminator = None
+
+        if error_results is not None:
+            self.error_results = error_results
+
+    @property
+    def error_results(self):
+        r"""Gets the error_results of this SetAutoEnlargePolicyResponse.
+
+        **参数解释：** 设置磁盘自动扩容策略失败的实例信息列表。 **取值范围：** 不涉及
+
+        :return: The error_results of this SetAutoEnlargePolicyResponse.
+        :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SetAutoPolicyErrorResults`]
+        """
+        return self._error_results
+
+    @error_results.setter
+    def error_results(self, error_results):
+        r"""Sets the error_results of this SetAutoEnlargePolicyResponse.
+
+        **参数解释：** 设置磁盘自动扩容策略失败的实例信息列表。 **取值范围：** 不涉及
+
+        :param error_results: The error_results of this SetAutoEnlargePolicyResponse.
+        :type error_results: list[:class:`huaweicloudsdkgaussdbfornosql.v3.SetAutoPolicyErrorResults`]
+        """
+        self._error_results = error_results
 
     def to_dict(self):
         import warnings

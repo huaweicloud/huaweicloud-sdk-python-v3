@@ -16,7 +16,7 @@ class IntelligentKillSessionStatistic:
 
     openapi_types = {
         'keyword': 'str',
-        'raw_sql': 'str',
+        'raw_sql_text': 'str',
         'ids': 'list[int]',
         'count': 'int',
         'total_time': 'float',
@@ -29,7 +29,7 @@ class IntelligentKillSessionStatistic:
 
     attribute_map = {
         'keyword': 'keyword',
-        'raw_sql': 'raw_sql',
+        'raw_sql_text': 'raw_sql_text',
         'ids': 'ids',
         'count': 'count',
         'total_time': 'total_time',
@@ -40,15 +40,15 @@ class IntelligentKillSessionStatistic:
         'type': 'type'
     }
 
-    def __init__(self, keyword=None, raw_sql=None, ids=None, count=None, total_time=None, avg_time=None, max_time=None, strategy=None, advice_concurrency=None, type=None):
+    def __init__(self, keyword=None, raw_sql_text=None, ids=None, count=None, total_time=None, avg_time=None, max_time=None, strategy=None, advice_concurrency=None, type=None):
         r"""IntelligentKillSessionStatistic
 
         The model defined in huaweicloud sdk
 
         :param keyword: **参数解释**：  该类统计维度下提取到的限流关键字。  **约束限制**：  不涉及。
         :type keyword: str
-        :param raw_sql: **参数解释**：  随机选取符合sql限流关键字的用户某条sql样例。  **约束限制**：  不涉及。
-        :type raw_sql: str
+        :param raw_sql_text: **参数解释**：  随机选取符合sql限流关键字的用户某条sql样例。  **约束限制**：  不涉及。
+        :type raw_sql_text: str
         :param ids: **参数解释**：  符合该统计维度的线程id。  **约束限制**：  不涉及。
         :type ids: list[int]
         :param count: **参数解释**：  符合该统计维度的线程id总数量。  **约束限制**：  不涉及。
@@ -70,7 +70,7 @@ class IntelligentKillSessionStatistic:
         
 
         self._keyword = None
-        self._raw_sql = None
+        self._raw_sql_text = None
         self._ids = None
         self._count = None
         self._total_time = None
@@ -83,8 +83,8 @@ class IntelligentKillSessionStatistic:
 
         if keyword is not None:
             self.keyword = keyword
-        if raw_sql is not None:
-            self.raw_sql = raw_sql
+        if raw_sql_text is not None:
+            self.raw_sql_text = raw_sql_text
         if ids is not None:
             self.ids = ids
         if count is not None:
@@ -125,26 +125,26 @@ class IntelligentKillSessionStatistic:
         self._keyword = keyword
 
     @property
-    def raw_sql(self):
-        r"""Gets the raw_sql of this IntelligentKillSessionStatistic.
+    def raw_sql_text(self):
+        r"""Gets the raw_sql_text of this IntelligentKillSessionStatistic.
 
         **参数解释**：  随机选取符合sql限流关键字的用户某条sql样例。  **约束限制**：  不涉及。
 
-        :return: The raw_sql of this IntelligentKillSessionStatistic.
+        :return: The raw_sql_text of this IntelligentKillSessionStatistic.
         :rtype: str
         """
-        return self._raw_sql
+        return self._raw_sql_text
 
-    @raw_sql.setter
-    def raw_sql(self, raw_sql):
-        r"""Sets the raw_sql of this IntelligentKillSessionStatistic.
+    @raw_sql_text.setter
+    def raw_sql_text(self, raw_sql_text):
+        r"""Sets the raw_sql_text of this IntelligentKillSessionStatistic.
 
         **参数解释**：  随机选取符合sql限流关键字的用户某条sql样例。  **约束限制**：  不涉及。
 
-        :param raw_sql: The raw_sql of this IntelligentKillSessionStatistic.
-        :type raw_sql: str
+        :param raw_sql_text: The raw_sql_text of this IntelligentKillSessionStatistic.
+        :type raw_sql_text: str
         """
-        self._raw_sql = raw_sql
+        self._raw_sql_text = raw_sql_text
 
     @property
     def ids(self):

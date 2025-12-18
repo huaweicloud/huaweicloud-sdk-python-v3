@@ -17,19 +17,15 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
 
     openapi_types = {
         'files': 'list[GetBackupDownloadLinkResponseBodyFiles]',
-        'bucket': 'str',
-        'group_id': 'str',
-        'group_name': 'str'
+        'bucket': 'str'
     }
 
     attribute_map = {
         'files': 'files',
-        'bucket': 'bucket',
-        'group_id': 'group_id',
-        'group_name': 'group_name'
+        'bucket': 'bucket'
     }
 
-    def __init__(self, files=None, bucket=None, group_id=None, group_name=None):
+    def __init__(self, files=None, bucket=None):
         r"""ShowBackupDownloadLinkResponse
 
         The model defined in huaweicloud sdk
@@ -38,28 +34,18 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
         :type files: list[:class:`huaweicloudsdkdds.v3.GetBackupDownloadLinkResponseBodyFiles`]
         :param bucket: OBS桶名。
         :type bucket: str
-        :param group_id: 组ID。
-        :type group_id: str
-        :param group_name: 组名。
-        :type group_name: str
         """
         
         super().__init__()
 
         self._files = None
         self._bucket = None
-        self._group_id = None
-        self._group_name = None
         self.discriminator = None
 
         if files is not None:
             self.files = files
         if bucket is not None:
             self.bucket = bucket
-        if group_id is not None:
-            self.group_id = group_id
-        if group_name is not None:
-            self.group_name = group_name
 
     @property
     def files(self):
@@ -104,50 +90,6 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
         :type bucket: str
         """
         self._bucket = bucket
-
-    @property
-    def group_id(self):
-        r"""Gets the group_id of this ShowBackupDownloadLinkResponse.
-
-        组ID。
-
-        :return: The group_id of this ShowBackupDownloadLinkResponse.
-        :rtype: str
-        """
-        return self._group_id
-
-    @group_id.setter
-    def group_id(self, group_id):
-        r"""Sets the group_id of this ShowBackupDownloadLinkResponse.
-
-        组ID。
-
-        :param group_id: The group_id of this ShowBackupDownloadLinkResponse.
-        :type group_id: str
-        """
-        self._group_id = group_id
-
-    @property
-    def group_name(self):
-        r"""Gets the group_name of this ShowBackupDownloadLinkResponse.
-
-        组名。
-
-        :return: The group_name of this ShowBackupDownloadLinkResponse.
-        :rtype: str
-        """
-        return self._group_name
-
-    @group_name.setter
-    def group_name(self, group_name):
-        r"""Sets the group_name of this ShowBackupDownloadLinkResponse.
-
-        组名。
-
-        :param group_name: The group_name of this ShowBackupDownloadLinkResponse.
-        :type group_name: str
-        """
-        self._group_name = group_name
 
     def to_dict(self):
         import warnings

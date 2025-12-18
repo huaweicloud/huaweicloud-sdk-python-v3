@@ -30,9 +30,9 @@ class CreateBackResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务ID。
+        :param job_id: **参数解释：** 任务ID。 **取值范围：** 不涉及。
         :type job_id: str
-        :param backup_id: 备份ID。
+        :param backup_id: **参数解释：** 备份ID。 **取值范围：** 不涉及。
         :type backup_id: str
         """
         
@@ -51,7 +51,7 @@ class CreateBackResponse(SdkResponse):
     def job_id(self):
         r"""Gets the job_id of this CreateBackResponse.
 
-        任务ID。
+        **参数解释：** 任务ID。 **取值范围：** 不涉及。
 
         :return: The job_id of this CreateBackResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class CreateBackResponse(SdkResponse):
     def job_id(self, job_id):
         r"""Sets the job_id of this CreateBackResponse.
 
-        任务ID。
+        **参数解释：** 任务ID。 **取值范围：** 不涉及。
 
         :param job_id: The job_id of this CreateBackResponse.
         :type job_id: str
@@ -73,7 +73,7 @@ class CreateBackResponse(SdkResponse):
     def backup_id(self):
         r"""Gets the backup_id of this CreateBackResponse.
 
-        备份ID。
+        **参数解释：** 备份ID。 **取值范围：** 不涉及。
 
         :return: The backup_id of this CreateBackResponse.
         :rtype: str
@@ -84,7 +84,7 @@ class CreateBackResponse(SdkResponse):
     def backup_id(self, backup_id):
         r"""Sets the backup_id of this CreateBackResponse.
 
-        备份ID。
+        **参数解释：** 备份ID。 **取值范围：** 不涉及。
 
         :param backup_id: The backup_id of this CreateBackResponse.
         :type backup_id: str

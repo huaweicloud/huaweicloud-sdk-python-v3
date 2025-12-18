@@ -15,35 +15,42 @@ class ServiceNetwork:
     sensitive_list = []
 
     openapi_types = {
-        'i_pv4_cidr': 'str'
+        'i_pv4_cidr': 'str',
+        'i_pv6_cidr': 'str'
     }
 
     attribute_map = {
-        'i_pv4_cidr': 'IPv4CIDR'
+        'i_pv4_cidr': 'IPv4CIDR',
+        'i_pv6_cidr': 'IPv6CIDR'
     }
 
-    def __init__(self, i_pv4_cidr=None):
+    def __init__(self, i_pv4_cidr=None, i_pv6_cidr=None):
         r"""ServiceNetwork
 
         The model defined in huaweicloud sdk
 
-        :param i_pv4_cidr: kubernetes clusterIP IPv4 CIDR取值范围。创建集群时若未传参，默认为\&quot;10.247.0.0/16\&quot;。
+        :param i_pv4_cidr: **参数解释：** kubernetes clusterIP IPv4 CIDR取值范围。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 默认为\&quot;10.247.0.0/16\&quot;。 
         :type i_pv4_cidr: str
+        :param i_pv6_cidr: **参数解释：** kubernetes clusterIP IPv6 CIDR取值范围。 **约束限制：** 仅开启IPV6双栈的Turbo集群支持配置IPv6服务网段。 **取值范围：** 不涉及 **默认取值：** Turbo集群默认为\&quot;fc00::/112\&quot; CCE集群默认为\&quot;fd00:1234::/120\&quot; 
+        :type i_pv6_cidr: str
         """
         
         
 
         self._i_pv4_cidr = None
+        self._i_pv6_cidr = None
         self.discriminator = None
 
         if i_pv4_cidr is not None:
             self.i_pv4_cidr = i_pv4_cidr
+        if i_pv6_cidr is not None:
+            self.i_pv6_cidr = i_pv6_cidr
 
     @property
     def i_pv4_cidr(self):
         r"""Gets the i_pv4_cidr of this ServiceNetwork.
 
-        kubernetes clusterIP IPv4 CIDR取值范围。创建集群时若未传参，默认为\"10.247.0.0/16\"。
+        **参数解释：** kubernetes clusterIP IPv4 CIDR取值范围。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 默认为\"10.247.0.0/16\"。 
 
         :return: The i_pv4_cidr of this ServiceNetwork.
         :rtype: str
@@ -54,12 +61,34 @@ class ServiceNetwork:
     def i_pv4_cidr(self, i_pv4_cidr):
         r"""Sets the i_pv4_cidr of this ServiceNetwork.
 
-        kubernetes clusterIP IPv4 CIDR取值范围。创建集群时若未传参，默认为\"10.247.0.0/16\"。
+        **参数解释：** kubernetes clusterIP IPv4 CIDR取值范围。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 默认为\"10.247.0.0/16\"。 
 
         :param i_pv4_cidr: The i_pv4_cidr of this ServiceNetwork.
         :type i_pv4_cidr: str
         """
         self._i_pv4_cidr = i_pv4_cidr
+
+    @property
+    def i_pv6_cidr(self):
+        r"""Gets the i_pv6_cidr of this ServiceNetwork.
+
+        **参数解释：** kubernetes clusterIP IPv6 CIDR取值范围。 **约束限制：** 仅开启IPV6双栈的Turbo集群支持配置IPv6服务网段。 **取值范围：** 不涉及 **默认取值：** Turbo集群默认为\"fc00::/112\" CCE集群默认为\"fd00:1234::/120\" 
+
+        :return: The i_pv6_cidr of this ServiceNetwork.
+        :rtype: str
+        """
+        return self._i_pv6_cidr
+
+    @i_pv6_cidr.setter
+    def i_pv6_cidr(self, i_pv6_cidr):
+        r"""Sets the i_pv6_cidr of this ServiceNetwork.
+
+        **参数解释：** kubernetes clusterIP IPv6 CIDR取值范围。 **约束限制：** 仅开启IPV6双栈的Turbo集群支持配置IPv6服务网段。 **取值范围：** 不涉及 **默认取值：** Turbo集群默认为\"fc00::/112\" CCE集群默认为\"fd00:1234::/120\" 
+
+        :param i_pv6_cidr: The i_pv6_cidr of this ServiceNetwork.
+        :type i_pv6_cidr: str
+        """
+        self._i_pv6_cidr = i_pv6_cidr
 
     def to_dict(self):
         result = {}

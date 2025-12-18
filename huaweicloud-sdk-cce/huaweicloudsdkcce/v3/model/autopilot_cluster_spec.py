@@ -36,9 +36,6 @@ class AutopilotClusterSpec:
         'kube_proxy_mode': 'str',
         'az': 'str',
         'extend_param': 'AutopilotClusterExtendParam',
-        'enable_master_volume_encryption': 'bool',
-        'enable_dist_mgt': 'bool',
-        'deletion_protection': 'bool',
         'configurations_override': 'list[AutopilotPackageConfiguration]'
     }
 
@@ -64,13 +61,10 @@ class AutopilotClusterSpec:
         'kube_proxy_mode': 'kubeProxyMode',
         'az': 'az',
         'extend_param': 'extendParam',
-        'enable_master_volume_encryption': 'enableMasterVolumeEncryption',
-        'enable_dist_mgt': 'enableDistMgt',
-        'deletion_protection': 'deletionProtection',
         'configurations_override': 'configurationsOverride'
     }
 
-    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, enable_snat=None, enable_swr_image_access=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, enable_master_volume_encryption=None, enable_dist_mgt=None, deletion_protection=None, configurations_override=None):
+    def __init__(self, category=None, type=None, flavor=None, version=None, platform_version=None, description=None, custom_san=None, enable_snat=None, enable_swr_image_access=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, billing_mode=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, configurations_override=None):
         r"""AutopilotClusterSpec
 
         The model defined in huaweicloud sdk
@@ -117,12 +111,6 @@ class AutopilotClusterSpec:
         :type az: str
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcce.v3.AutopilotClusterExtendParam`
-        :param enable_master_volume_encryption: **参数解释：** 集群控制节点系统盘、数据盘加密。默认使用AES_256加密算法。CCE、Turbo集群1.25及以上版本开始支持。 **约束限制：** 集群创建后不支持修改。开启后存在一定的磁盘读写性能损耗。 **取值范围：** - true: 开启控制节点磁盘加密 - false: 关闭控制节点磁盘加密  **默认取值：** 默认false 
-        :type enable_master_volume_encryption: bool
-        :param enable_dist_mgt: **参数解释：** 集群开启对分布式云支持。 **约束限制：** 目前只有Turbo集群支持。 **取值范围：** - true: 开启对分布式云支持 - false: 关闭对分布式云支持  **默认取值：** 默认false 
-        :type enable_dist_mgt: bool
-        :param deletion_protection: **参数解释：** 集群删除保护，如果开启后用户将无法删除该集群。 **约束限制：** 不涉及。 **取值范围：** - true: 开启集群删除保护 - false: 关闭集群删除保护  **默认取值：** 默认false 
-        :type deletion_protection: bool
         :param configurations_override: 覆盖集群默认组件配置  若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。  当前支持的可配置组件及其参数详见 [[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0213.html)](tag:hws) [[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0213.html)](tag:hws_hk) 
         :type configurations_override: list[:class:`huaweicloudsdkcce.v3.AutopilotPackageConfiguration`]
         """
@@ -150,9 +138,6 @@ class AutopilotClusterSpec:
         self._kube_proxy_mode = None
         self._az = None
         self._extend_param = None
-        self._enable_master_volume_encryption = None
-        self._enable_dist_mgt = None
-        self._deletion_protection = None
         self._configurations_override = None
         self.discriminator = None
 
@@ -195,12 +180,6 @@ class AutopilotClusterSpec:
             self.az = az
         if extend_param is not None:
             self.extend_param = extend_param
-        if enable_master_volume_encryption is not None:
-            self.enable_master_volume_encryption = enable_master_volume_encryption
-        if enable_dist_mgt is not None:
-            self.enable_dist_mgt = enable_dist_mgt
-        if deletion_protection is not None:
-            self.deletion_protection = deletion_protection
         if configurations_override is not None:
             self.configurations_override = configurations_override
 
@@ -641,72 +620,6 @@ class AutopilotClusterSpec:
         :type extend_param: :class:`huaweicloudsdkcce.v3.AutopilotClusterExtendParam`
         """
         self._extend_param = extend_param
-
-    @property
-    def enable_master_volume_encryption(self):
-        r"""Gets the enable_master_volume_encryption of this AutopilotClusterSpec.
-
-        **参数解释：** 集群控制节点系统盘、数据盘加密。默认使用AES_256加密算法。CCE、Turbo集群1.25及以上版本开始支持。 **约束限制：** 集群创建后不支持修改。开启后存在一定的磁盘读写性能损耗。 **取值范围：** - true: 开启控制节点磁盘加密 - false: 关闭控制节点磁盘加密  **默认取值：** 默认false 
-
-        :return: The enable_master_volume_encryption of this AutopilotClusterSpec.
-        :rtype: bool
-        """
-        return self._enable_master_volume_encryption
-
-    @enable_master_volume_encryption.setter
-    def enable_master_volume_encryption(self, enable_master_volume_encryption):
-        r"""Sets the enable_master_volume_encryption of this AutopilotClusterSpec.
-
-        **参数解释：** 集群控制节点系统盘、数据盘加密。默认使用AES_256加密算法。CCE、Turbo集群1.25及以上版本开始支持。 **约束限制：** 集群创建后不支持修改。开启后存在一定的磁盘读写性能损耗。 **取值范围：** - true: 开启控制节点磁盘加密 - false: 关闭控制节点磁盘加密  **默认取值：** 默认false 
-
-        :param enable_master_volume_encryption: The enable_master_volume_encryption of this AutopilotClusterSpec.
-        :type enable_master_volume_encryption: bool
-        """
-        self._enable_master_volume_encryption = enable_master_volume_encryption
-
-    @property
-    def enable_dist_mgt(self):
-        r"""Gets the enable_dist_mgt of this AutopilotClusterSpec.
-
-        **参数解释：** 集群开启对分布式云支持。 **约束限制：** 目前只有Turbo集群支持。 **取值范围：** - true: 开启对分布式云支持 - false: 关闭对分布式云支持  **默认取值：** 默认false 
-
-        :return: The enable_dist_mgt of this AutopilotClusterSpec.
-        :rtype: bool
-        """
-        return self._enable_dist_mgt
-
-    @enable_dist_mgt.setter
-    def enable_dist_mgt(self, enable_dist_mgt):
-        r"""Sets the enable_dist_mgt of this AutopilotClusterSpec.
-
-        **参数解释：** 集群开启对分布式云支持。 **约束限制：** 目前只有Turbo集群支持。 **取值范围：** - true: 开启对分布式云支持 - false: 关闭对分布式云支持  **默认取值：** 默认false 
-
-        :param enable_dist_mgt: The enable_dist_mgt of this AutopilotClusterSpec.
-        :type enable_dist_mgt: bool
-        """
-        self._enable_dist_mgt = enable_dist_mgt
-
-    @property
-    def deletion_protection(self):
-        r"""Gets the deletion_protection of this AutopilotClusterSpec.
-
-        **参数解释：** 集群删除保护，如果开启后用户将无法删除该集群。 **约束限制：** 不涉及。 **取值范围：** - true: 开启集群删除保护 - false: 关闭集群删除保护  **默认取值：** 默认false 
-
-        :return: The deletion_protection of this AutopilotClusterSpec.
-        :rtype: bool
-        """
-        return self._deletion_protection
-
-    @deletion_protection.setter
-    def deletion_protection(self, deletion_protection):
-        r"""Sets the deletion_protection of this AutopilotClusterSpec.
-
-        **参数解释：** 集群删除保护，如果开启后用户将无法删除该集群。 **约束限制：** 不涉及。 **取值范围：** - true: 开启集群删除保护 - false: 关闭集群删除保护  **默认取值：** 默认false 
-
-        :param deletion_protection: The deletion_protection of this AutopilotClusterSpec.
-        :type deletion_protection: bool
-        """
-        self._deletion_protection = deletion_protection
 
     @property
     def configurations_override(self):

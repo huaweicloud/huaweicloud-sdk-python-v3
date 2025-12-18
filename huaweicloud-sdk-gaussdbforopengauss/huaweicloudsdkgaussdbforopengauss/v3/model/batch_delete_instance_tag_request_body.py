@@ -27,7 +27,7 @@ class BatchDeleteInstanceTagRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param keys: 需要删除的标签列表
+        :param keys: **参数解释**: 需要删除的标签列表。
         :type keys: list[str]
         """
         
@@ -43,7 +43,7 @@ class BatchDeleteInstanceTagRequestBody:
     def keys(self):
         r"""Gets the keys of this BatchDeleteInstanceTagRequestBody.
 
-        需要删除的标签列表
+        **参数解释**: 需要删除的标签列表。
 
         :return: The keys of this BatchDeleteInstanceTagRequestBody.
         :rtype: list[str]
@@ -54,7 +54,7 @@ class BatchDeleteInstanceTagRequestBody:
     def keys(self, keys):
         r"""Sets the keys of this BatchDeleteInstanceTagRequestBody.
 
-        需要删除的标签列表
+        **参数解释**: 需要删除的标签列表。
 
         :param keys: The keys of this BatchDeleteInstanceTagRequestBody.
         :type keys: list[str]

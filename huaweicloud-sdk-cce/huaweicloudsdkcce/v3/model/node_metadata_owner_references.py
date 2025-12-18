@@ -3,7 +3,7 @@
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class NodeMetadataOwnerReference:
+class NodeMetadataOwnerReferences:
 
     """
     Attributes:
@@ -29,7 +29,7 @@ class NodeMetadataOwnerReference:
     }
 
     def __init__(self, nodepool_name=None, nodepool_id=None, hyper_node_name=None, hyper_node_id=None):
-        r"""NodeMetadataOwnerReference
+        r"""NodeMetadataOwnerReferences
 
         The model defined in huaweicloud sdk
 
@@ -62,88 +62,88 @@ class NodeMetadataOwnerReference:
 
     @property
     def nodepool_name(self):
-        r"""Gets the nodepool_name of this NodeMetadataOwnerReference.
+        r"""Gets the nodepool_name of this NodeMetadataOwnerReferences.
 
         **参数解释**： 节点池名称 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
-        :return: The nodepool_name of this NodeMetadataOwnerReference.
+        :return: The nodepool_name of this NodeMetadataOwnerReferences.
         :rtype: str
         """
         return self._nodepool_name
 
     @nodepool_name.setter
     def nodepool_name(self, nodepool_name):
-        r"""Sets the nodepool_name of this NodeMetadataOwnerReference.
+        r"""Sets the nodepool_name of this NodeMetadataOwnerReferences.
 
         **参数解释**： 节点池名称 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及
 
-        :param nodepool_name: The nodepool_name of this NodeMetadataOwnerReference.
+        :param nodepool_name: The nodepool_name of this NodeMetadataOwnerReferences.
         :type nodepool_name: str
         """
         self._nodepool_name = nodepool_name
 
     @property
     def nodepool_id(self):
-        r"""Gets the nodepool_id of this NodeMetadataOwnerReference.
+        r"""Gets the nodepool_id of this NodeMetadataOwnerReferences.
 
         **参数解释**： 节点池ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
-        :return: The nodepool_id of this NodeMetadataOwnerReference.
+        :return: The nodepool_id of this NodeMetadataOwnerReferences.
         :rtype: str
         """
         return self._nodepool_id
 
     @nodepool_id.setter
     def nodepool_id(self, nodepool_id):
-        r"""Sets the nodepool_id of this NodeMetadataOwnerReference.
+        r"""Sets the nodepool_id of this NodeMetadataOwnerReferences.
 
         **参数解释**： 节点池ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 **约束限制**： 创建成功后自动生成，填写无效。 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
-        :param nodepool_id: The nodepool_id of this NodeMetadataOwnerReference.
+        :param nodepool_id: The nodepool_id of this NodeMetadataOwnerReferences.
         :type nodepool_id: str
         """
         self._nodepool_id = nodepool_id
 
     @property
     def hyper_node_name(self):
-        r"""Gets the hyper_node_name of this NodeMetadataOwnerReference.
+        r"""Gets the hyper_node_name of this NodeMetadataOwnerReferences.
 
         **参数解释**： 超节点名称。如果节点不属于超节点，此字段不展示。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
-        :return: The hyper_node_name of this NodeMetadataOwnerReference.
+        :return: The hyper_node_name of this NodeMetadataOwnerReferences.
         :rtype: str
         """
         return self._hyper_node_name
 
     @hyper_node_name.setter
     def hyper_node_name(self, hyper_node_name):
-        r"""Sets the hyper_node_name of this NodeMetadataOwnerReference.
+        r"""Sets the hyper_node_name of this NodeMetadataOwnerReferences.
 
         **参数解释**： 超节点名称。如果节点不属于超节点，此字段不展示。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
-        :param hyper_node_name: The hyper_node_name of this NodeMetadataOwnerReference.
+        :param hyper_node_name: The hyper_node_name of this NodeMetadataOwnerReferences.
         :type hyper_node_name: str
         """
         self._hyper_node_name = hyper_node_name
 
     @property
     def hyper_node_id(self):
-        r"""Gets the hyper_node_id of this NodeMetadataOwnerReference.
+        r"""Gets the hyper_node_id of this NodeMetadataOwnerReferences.
 
         **参数解释**： 超节点ID。如果节点不属于超节点，此字段不展示。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
-        :return: The hyper_node_id of this NodeMetadataOwnerReference.
+        :return: The hyper_node_id of this NodeMetadataOwnerReferences.
         :rtype: str
         """
         return self._hyper_node_id
 
     @hyper_node_id.setter
     def hyper_node_id(self, hyper_node_id):
-        r"""Sets the hyper_node_id of this NodeMetadataOwnerReference.
+        r"""Sets the hyper_node_id of this NodeMetadataOwnerReferences.
 
         **参数解释**： 超节点ID。如果节点不属于超节点，此字段不展示。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
 
-        :param hyper_node_id: The hyper_node_id of this NodeMetadataOwnerReference.
+        :param hyper_node_id: The hyper_node_id of this NodeMetadataOwnerReferences.
         :type hyper_node_id: str
         """
         self._hyper_node_id = hyper_node_id
@@ -185,7 +185,7 @@ class NodeMetadataOwnerReference:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, NodeMetadataOwnerReference):
+        if not isinstance(other, NodeMetadataOwnerReferences):
             return False
 
         return self.__dict__ == other.__dict__

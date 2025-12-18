@@ -15,28 +15,42 @@ class ShowFlavorCapacityRequest:
     sensitive_list = []
 
     openapi_types = {
-        'flavor_id': 'str'
+        'flavor_id': 'str',
+        'count': 'str',
+        'region_ids': 'str'
     }
 
     attribute_map = {
-        'flavor_id': 'flavor_id'
+        'flavor_id': 'flavor_id',
+        'count': 'count',
+        'region_ids': 'region_ids'
     }
 
-    def __init__(self, flavor_id=None):
+    def __init__(self, flavor_id=None, count=None, region_ids=None):
         r"""ShowFlavorCapacityRequest
 
         The model defined in huaweicloud sdk
 
         :param flavor_id: 
         :type flavor_id: str
+        :param count: 
+        :type count: str
+        :param region_ids: 
+        :type region_ids: str
         """
         
         
 
         self._flavor_id = None
+        self._count = None
+        self._region_ids = None
         self.discriminator = None
 
         self.flavor_id = flavor_id
+        if count is not None:
+            self.count = count
+        if region_ids is not None:
+            self.region_ids = region_ids
 
     @property
     def flavor_id(self):
@@ -55,6 +69,42 @@ class ShowFlavorCapacityRequest:
         :type flavor_id: str
         """
         self._flavor_id = flavor_id
+
+    @property
+    def count(self):
+        r"""Gets the count of this ShowFlavorCapacityRequest.
+
+        :return: The count of this ShowFlavorCapacityRequest.
+        :rtype: str
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        r"""Sets the count of this ShowFlavorCapacityRequest.
+
+        :param count: The count of this ShowFlavorCapacityRequest.
+        :type count: str
+        """
+        self._count = count
+
+    @property
+    def region_ids(self):
+        r"""Gets the region_ids of this ShowFlavorCapacityRequest.
+
+        :return: The region_ids of this ShowFlavorCapacityRequest.
+        :rtype: str
+        """
+        return self._region_ids
+
+    @region_ids.setter
+    def region_ids(self, region_ids):
+        r"""Sets the region_ids of this ShowFlavorCapacityRequest.
+
+        :param region_ids: The region_ids of this ShowFlavorCapacityRequest.
+        :type region_ids: str
+        """
+        self._region_ids = region_ids
 
     def to_dict(self):
         result = {}

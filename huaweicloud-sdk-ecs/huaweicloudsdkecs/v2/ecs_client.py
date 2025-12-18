@@ -5584,6 +5584,10 @@ class EcsClient(Client):
             path_params['flavor_id'] = local_var_params['flavor_id']
 
         query_params = []
+        if 'count' in local_var_params:
+            query_params.append(('count', local_var_params['count']))
+        if 'region_ids' in local_var_params:
+            query_params.append(('region_ids', local_var_params['region_ids']))
 
         header_params = {}
 

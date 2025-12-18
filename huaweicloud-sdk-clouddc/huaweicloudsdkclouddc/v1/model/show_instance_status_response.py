@@ -17,21 +17,25 @@ class ShowInstanceStatusResponse(SdkResponse):
 
     openapi_types = {
         'state': 'InstanceState',
+        'operation_state': 'InstanceOperationStatus',
         'error': 'ErrorStatus'
     }
 
     attribute_map = {
         'state': 'state',
+        'operation_state': 'operation_state',
         'error': 'error'
     }
 
-    def __init__(self, state=None, error=None):
+    def __init__(self, state=None, operation_state=None, error=None):
         r"""ShowInstanceStatusResponse
 
         The model defined in huaweicloud sdk
 
         :param state: 
         :type state: :class:`huaweicloudsdkclouddc.v1.InstanceState`
+        :param operation_state: 
+        :type operation_state: :class:`huaweicloudsdkclouddc.v1.InstanceOperationStatus`
         :param error: 
         :type error: :class:`huaweicloudsdkclouddc.v1.ErrorStatus`
         """
@@ -39,11 +43,14 @@ class ShowInstanceStatusResponse(SdkResponse):
         super().__init__()
 
         self._state = None
+        self._operation_state = None
         self._error = None
         self.discriminator = None
 
         if state is not None:
             self.state = state
+        if operation_state is not None:
+            self.operation_state = operation_state
         if error is not None:
             self.error = error
 
@@ -64,6 +71,24 @@ class ShowInstanceStatusResponse(SdkResponse):
         :type state: :class:`huaweicloudsdkclouddc.v1.InstanceState`
         """
         self._state = state
+
+    @property
+    def operation_state(self):
+        r"""Gets the operation_state of this ShowInstanceStatusResponse.
+
+        :return: The operation_state of this ShowInstanceStatusResponse.
+        :rtype: :class:`huaweicloudsdkclouddc.v1.InstanceOperationStatus`
+        """
+        return self._operation_state
+
+    @operation_state.setter
+    def operation_state(self, operation_state):
+        r"""Sets the operation_state of this ShowInstanceStatusResponse.
+
+        :param operation_state: The operation_state of this ShowInstanceStatusResponse.
+        :type operation_state: :class:`huaweicloudsdkclouddc.v1.InstanceOperationStatus`
+        """
+        self._operation_state = operation_state
 
     @property
     def error(self):

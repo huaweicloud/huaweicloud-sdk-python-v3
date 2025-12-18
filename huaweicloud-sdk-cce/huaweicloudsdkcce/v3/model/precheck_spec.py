@@ -33,13 +33,13 @@ class PrecheckSpec:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 集群ID
+        :param cluster_id: **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 
         :type cluster_id: str
-        :param cluster_version: 集群版本
+        :param cluster_version: **参数解释：** 集群版本，请填写当前集群的补丁版本，可登录控制台在总览页面进行查看 **约束限制：** 不涉及 **取值范围：** 不涉及 
         :type cluster_version: str
-        :param target_version: 升级目标版本
+        :param target_version: **参数解释：** 升级目标版本，如果填写大版本，则自动选择最新补丁版本 **约束限制：** 不涉及 **取值范围：** 高于集群当前版本的可用集群版本 
         :type target_version: str
-        :param skipped_check_item_list: 跳过检查的项目列表
+        :param skipped_check_item_list: **参数解释：** 跳过检查的项目列表 **约束限制：** 不涉及 **取值范围：** 不涉及 
         :type skipped_check_item_list: list[:class:`huaweicloudsdkcce.v3.SkippedCheckItemList`]
         """
         
@@ -64,7 +64,7 @@ class PrecheckSpec:
     def cluster_id(self):
         r"""Gets the cluster_id of this PrecheckSpec.
 
-        集群ID
+        **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 
 
         :return: The cluster_id of this PrecheckSpec.
         :rtype: str
@@ -75,7 +75,7 @@ class PrecheckSpec:
     def cluster_id(self, cluster_id):
         r"""Sets the cluster_id of this PrecheckSpec.
 
-        集群ID
+        **参数解释：** 集群ID **约束限制：** 不涉及 **取值范围：** 不涉及 
 
         :param cluster_id: The cluster_id of this PrecheckSpec.
         :type cluster_id: str
@@ -86,7 +86,7 @@ class PrecheckSpec:
     def cluster_version(self):
         r"""Gets the cluster_version of this PrecheckSpec.
 
-        集群版本
+        **参数解释：** 集群版本，请填写当前集群的补丁版本，可登录控制台在总览页面进行查看 **约束限制：** 不涉及 **取值范围：** 不涉及 
 
         :return: The cluster_version of this PrecheckSpec.
         :rtype: str
@@ -97,7 +97,7 @@ class PrecheckSpec:
     def cluster_version(self, cluster_version):
         r"""Sets the cluster_version of this PrecheckSpec.
 
-        集群版本
+        **参数解释：** 集群版本，请填写当前集群的补丁版本，可登录控制台在总览页面进行查看 **约束限制：** 不涉及 **取值范围：** 不涉及 
 
         :param cluster_version: The cluster_version of this PrecheckSpec.
         :type cluster_version: str
@@ -108,7 +108,7 @@ class PrecheckSpec:
     def target_version(self):
         r"""Gets the target_version of this PrecheckSpec.
 
-        升级目标版本
+        **参数解释：** 升级目标版本，如果填写大版本，则自动选择最新补丁版本 **约束限制：** 不涉及 **取值范围：** 高于集群当前版本的可用集群版本 
 
         :return: The target_version of this PrecheckSpec.
         :rtype: str
@@ -119,7 +119,7 @@ class PrecheckSpec:
     def target_version(self, target_version):
         r"""Sets the target_version of this PrecheckSpec.
 
-        升级目标版本
+        **参数解释：** 升级目标版本，如果填写大版本，则自动选择最新补丁版本 **约束限制：** 不涉及 **取值范围：** 高于集群当前版本的可用集群版本 
 
         :param target_version: The target_version of this PrecheckSpec.
         :type target_version: str
@@ -130,7 +130,7 @@ class PrecheckSpec:
     def skipped_check_item_list(self):
         r"""Gets the skipped_check_item_list of this PrecheckSpec.
 
-        跳过检查的项目列表
+        **参数解释：** 跳过检查的项目列表 **约束限制：** 不涉及 **取值范围：** 不涉及 
 
         :return: The skipped_check_item_list of this PrecheckSpec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.SkippedCheckItemList`]
@@ -141,7 +141,7 @@ class PrecheckSpec:
     def skipped_check_item_list(self, skipped_check_item_list):
         r"""Sets the skipped_check_item_list of this PrecheckSpec.
 
-        跳过检查的项目列表
+        **参数解释：** 跳过检查的项目列表 **约束限制：** 不涉及 **取值范围：** 不涉及 
 
         :param skipped_check_item_list: The skipped_check_item_list of this PrecheckSpec.
         :type skipped_check_item_list: list[:class:`huaweicloudsdkcce.v3.SkippedCheckItemList`]

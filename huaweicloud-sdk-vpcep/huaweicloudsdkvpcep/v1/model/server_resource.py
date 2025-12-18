@@ -1,0 +1,136 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ServerResource:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'resource_id': 'str',
+        'availability_zone_id': 'str'
+    }
+
+    attribute_map = {
+        'resource_id': 'resource_id',
+        'availability_zone_id': 'availability_zone_id'
+    }
+
+    def __init__(self, resource_id=None, availability_zone_id=None):
+        r"""ServerResource
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 后端elb实例ID。
+        :type resource_id: str
+        :param availability_zone_id: elb所在的az_id。
+        :type availability_zone_id: str
+        """
+        
+        
+
+        self._resource_id = None
+        self._availability_zone_id = None
+        self.discriminator = None
+
+        self.resource_id = resource_id
+        if availability_zone_id is not None:
+            self.availability_zone_id = availability_zone_id
+
+    @property
+    def resource_id(self):
+        r"""Gets the resource_id of this ServerResource.
+
+        后端elb实例ID。
+
+        :return: The resource_id of this ServerResource.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        r"""Sets the resource_id of this ServerResource.
+
+        后端elb实例ID。
+
+        :param resource_id: The resource_id of this ServerResource.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
+
+    @property
+    def availability_zone_id(self):
+        r"""Gets the availability_zone_id of this ServerResource.
+
+        elb所在的az_id。
+
+        :return: The availability_zone_id of this ServerResource.
+        :rtype: str
+        """
+        return self._availability_zone_id
+
+    @availability_zone_id.setter
+    def availability_zone_id(self, availability_zone_id):
+        r"""Sets the availability_zone_id of this ServerResource.
+
+        elb所在的az_id。
+
+        :param availability_zone_id: The availability_zone_id of this ServerResource.
+        :type availability_zone_id: str
+        """
+        self._availability_zone_id = availability_zone_id
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ServerResource):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

@@ -65,7 +65,7 @@ class CreateUserOption:
         :type phone: str
         :param enabled: 是否启用IAM用户。true为启用，false为停用，默认为true。
         :type enabled: bool
-        :param pwd_status: IAM用户首次登录是否重置密码，默认需要重置。
+        :param pwd_status: IAM用户首次登录是否重置密码，当password参数不为空时生效，默认需要重置。
         :type pwd_status: bool
         :param xuser_type: IAM用户在外部系统中的类型。长度小于等于64字符。xuser_type如果存在且不等于TenantIdp时，则需要与同一租户中的xaccount_type、xdomain_type校验，须与xuser_id同时存在。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
         :type xuser_type: str
@@ -294,7 +294,7 @@ class CreateUserOption:
     def pwd_status(self):
         r"""Gets the pwd_status of this CreateUserOption.
 
-        IAM用户首次登录是否重置密码，默认需要重置。
+        IAM用户首次登录是否重置密码，当password参数不为空时生效，默认需要重置。
 
         :return: The pwd_status of this CreateUserOption.
         :rtype: bool
@@ -305,7 +305,7 @@ class CreateUserOption:
     def pwd_status(self, pwd_status):
         r"""Sets the pwd_status of this CreateUserOption.
 
-        IAM用户首次登录是否重置密码，默认需要重置。
+        IAM用户首次登录是否重置密码，当password参数不为空时生效，默认需要重置。
 
         :param pwd_status: The pwd_status of this CreateUserOption.
         :type pwd_status: bool

@@ -15,111 +15,28 @@ class UpgradeNodePool:
     sensitive_list = []
 
     openapi_types = {
-        'kind': 'str',
-        'api_version': 'str',
-        'metadata': 'NodePoolMetadata',
         'spec': 'NodePoolUpgradeSpec'
     }
 
     attribute_map = {
-        'kind': 'kind',
-        'api_version': 'apiVersion',
-        'metadata': 'metadata',
         'spec': 'spec'
     }
 
-    def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
+    def __init__(self, spec=None):
         r"""UpgradeNodePool
 
         The model defined in huaweicloud sdk
 
-        :param kind: API类型，固定值“NodePool”。
-        :type kind: str
-        :param api_version: API版本，固定值“v3”。
-        :type api_version: str
-        :param metadata: 
-        :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolUpgradeSpec`
         """
         
         
 
-        self._kind = None
-        self._api_version = None
-        self._metadata = None
         self._spec = None
         self.discriminator = None
 
-        if kind is not None:
-            self.kind = kind
-        if api_version is not None:
-            self.api_version = api_version
-        if metadata is not None:
-            self.metadata = metadata
         self.spec = spec
-
-    @property
-    def kind(self):
-        r"""Gets the kind of this UpgradeNodePool.
-
-        API类型，固定值“NodePool”。
-
-        :return: The kind of this UpgradeNodePool.
-        :rtype: str
-        """
-        return self._kind
-
-    @kind.setter
-    def kind(self, kind):
-        r"""Sets the kind of this UpgradeNodePool.
-
-        API类型，固定值“NodePool”。
-
-        :param kind: The kind of this UpgradeNodePool.
-        :type kind: str
-        """
-        self._kind = kind
-
-    @property
-    def api_version(self):
-        r"""Gets the api_version of this UpgradeNodePool.
-
-        API版本，固定值“v3”。
-
-        :return: The api_version of this UpgradeNodePool.
-        :rtype: str
-        """
-        return self._api_version
-
-    @api_version.setter
-    def api_version(self, api_version):
-        r"""Sets the api_version of this UpgradeNodePool.
-
-        API版本，固定值“v3”。
-
-        :param api_version: The api_version of this UpgradeNodePool.
-        :type api_version: str
-        """
-        self._api_version = api_version
-
-    @property
-    def metadata(self):
-        r"""Gets the metadata of this UpgradeNodePool.
-
-        :return: The metadata of this UpgradeNodePool.
-        :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
-        """
-        return self._metadata
-
-    @metadata.setter
-    def metadata(self, metadata):
-        r"""Sets the metadata of this UpgradeNodePool.
-
-        :param metadata: The metadata of this UpgradeNodePool.
-        :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
-        """
-        self._metadata = metadata
 
     @property
     def spec(self):

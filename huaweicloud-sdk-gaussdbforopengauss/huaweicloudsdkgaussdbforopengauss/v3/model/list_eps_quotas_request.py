@@ -18,17 +18,19 @@ class ListEpsQuotasRequest:
         'x_language': 'str',
         'offset': 'int',
         'limit': 'int',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'enterprise_project_name': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'offset': 'offset',
         'limit': 'limit',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'enterprise_project_name': 'enterprise_project_name'
     }
 
-    def __init__(self, x_language=None, offset=None, limit=None, enterprise_project_id=None):
+    def __init__(self, x_language=None, offset=None, limit=None, enterprise_project_id=None, enterprise_project_name=None):
         r"""ListEpsQuotasRequest
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class ListEpsQuotasRequest:
         :type limit: int
         :param enterprise_project_id: 企业项目ID。 - 对于未开通企业多项目服务的用户，不传该参数。 - 对于已开通企业多项目服务的用户，不传该参数时，表示为default企业项目。
         :type enterprise_project_id: str
+        :param enterprise_project_name: 企业项目名称。
+        :type enterprise_project_name: str
         """
         
         
@@ -49,6 +53,7 @@ class ListEpsQuotasRequest:
         self._offset = None
         self._limit = None
         self._enterprise_project_id = None
+        self._enterprise_project_name = None
         self.discriminator = None
 
         if x_language is not None:
@@ -59,6 +64,8 @@ class ListEpsQuotasRequest:
             self.limit = limit
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if enterprise_project_name is not None:
+            self.enterprise_project_name = enterprise_project_name
 
     @property
     def x_language(self):
@@ -147,6 +154,28 @@ class ListEpsQuotasRequest:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def enterprise_project_name(self):
+        r"""Gets the enterprise_project_name of this ListEpsQuotasRequest.
+
+        企业项目名称。
+
+        :return: The enterprise_project_name of this ListEpsQuotasRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_name
+
+    @enterprise_project_name.setter
+    def enterprise_project_name(self, enterprise_project_name):
+        r"""Sets the enterprise_project_name of this ListEpsQuotasRequest.
+
+        企业项目名称。
+
+        :param enterprise_project_name: The enterprise_project_name of this ListEpsQuotasRequest.
+        :type enterprise_project_name: str
+        """
+        self._enterprise_project_name = enterprise_project_name
 
     def to_dict(self):
         result = {}

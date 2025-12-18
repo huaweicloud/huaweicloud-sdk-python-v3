@@ -16,37 +16,44 @@ class ShowModifyHistoryRequest:
 
     openapi_types = {
         'instance_id': 'str',
-        'offset': 'int',
-        'limit': 'int'
+        'parameter_name': 'str',
+        'offset': 'str',
+        'limit': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
+        'parameter_name': 'parameter_name',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None):
+    def __init__(self, instance_id=None, parameter_name=None, offset=None, limit=None):
         r"""ShowModifyHistoryRequest
 
         The model defined in huaweicloud sdk
 
-        :param instance_id: 实例id
+        :param instance_id: **参数解释：** 实例ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type instance_id: str
-        :param offset: 索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。  取值必须为数字，不能为负数。
-        :type offset: int
-        :param limit: 查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
-        :type limit: int
+        :param parameter_name: **参数解释：** 参数名称，支持模糊查询。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type parameter_name: str
+        :param offset: **参数解释：** 索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 **约束限制：** 取值必须为数字，不能为负数。 **取值范围：** 非负整数。 **默认取值：** 0
+        :type offset: str
+        :param limit: **参数解释：** 查询个数上限值。 **约束限制：** 不涉及。 **取值范围：** 1~100。 **默认取值：** 100。不传该参数时，默认查询前100条信息。
+        :type limit: str
         """
         
         
 
         self._instance_id = None
+        self._parameter_name = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        if parameter_name is not None:
+            self.parameter_name = parameter_name
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -56,7 +63,7 @@ class ShowModifyHistoryRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ShowModifyHistoryRequest.
 
-        实例id
+        **参数解释：** 实例ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :return: The instance_id of this ShowModifyHistoryRequest.
         :rtype: str
@@ -67,7 +74,7 @@ class ShowModifyHistoryRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ShowModifyHistoryRequest.
 
-        实例id
+        **参数解释：** 实例ID。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
 
         :param instance_id: The instance_id of this ShowModifyHistoryRequest.
         :type instance_id: str
@@ -75,13 +82,35 @@ class ShowModifyHistoryRequest:
         self._instance_id = instance_id
 
     @property
+    def parameter_name(self):
+        r"""Gets the parameter_name of this ShowModifyHistoryRequest.
+
+        **参数解释：** 参数名称，支持模糊查询。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The parameter_name of this ShowModifyHistoryRequest.
+        :rtype: str
+        """
+        return self._parameter_name
+
+    @parameter_name.setter
+    def parameter_name(self, parameter_name):
+        r"""Sets the parameter_name of this ShowModifyHistoryRequest.
+
+        **参数解释：** 参数名称，支持模糊查询。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param parameter_name: The parameter_name of this ShowModifyHistoryRequest.
+        :type parameter_name: str
+        """
+        self._parameter_name = parameter_name
+
+    @property
     def offset(self):
         r"""Gets the offset of this ShowModifyHistoryRequest.
 
-        索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。  取值必须为数字，不能为负数。
+        **参数解释：** 索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 **约束限制：** 取值必须为数字，不能为负数。 **取值范围：** 非负整数。 **默认取值：** 0
 
         :return: The offset of this ShowModifyHistoryRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._offset
 
@@ -89,10 +118,10 @@ class ShowModifyHistoryRequest:
     def offset(self, offset):
         r"""Sets the offset of this ShowModifyHistoryRequest.
 
-        索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。  取值必须为数字，不能为负数。
+        **参数解释：** 索引位置，偏移量。 从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。 **约束限制：** 取值必须为数字，不能为负数。 **取值范围：** 非负整数。 **默认取值：** 0
 
         :param offset: The offset of this ShowModifyHistoryRequest.
-        :type offset: int
+        :type offset: str
         """
         self._offset = offset
 
@@ -100,10 +129,10 @@ class ShowModifyHistoryRequest:
     def limit(self):
         r"""Gets the limit of this ShowModifyHistoryRequest.
 
-        查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
+        **参数解释：** 查询个数上限值。 **约束限制：** 不涉及。 **取值范围：** 1~100。 **默认取值：** 100。不传该参数时，默认查询前100条信息。
 
         :return: The limit of this ShowModifyHistoryRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._limit
 
@@ -111,10 +140,10 @@ class ShowModifyHistoryRequest:
     def limit(self, limit):
         r"""Sets the limit of this ShowModifyHistoryRequest.
 
-        查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
+        **参数解释：** 查询个数上限值。 **约束限制：** 不涉及。 **取值范围：** 1~100。 **默认取值：** 100。不传该参数时，默认查询前100条信息。
 
         :param limit: The limit of this ShowModifyHistoryRequest.
-        :type limit: int
+        :type limit: str
         """
         self._limit = limit
 

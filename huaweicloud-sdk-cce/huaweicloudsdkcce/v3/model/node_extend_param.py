@@ -30,6 +30,8 @@ class NodeExtendParam:
         'alpha_cce_post_install': 'str',
         'alpha_cce_node_image_id': 'str',
         'charging_mode': 'int',
+        'market_type': 'str',
+        'spot_price': 'str',
         'agency_name': 'str',
         'kube_reserved_mem': 'int',
         'system_reserved_mem': 'int',
@@ -53,6 +55,8 @@ class NodeExtendParam:
         'alpha_cce_post_install': 'alpha.cce/postInstall',
         'alpha_cce_node_image_id': 'alpha.cce/NodeImageID',
         'charging_mode': 'chargingMode',
+        'market_type': 'marketType',
+        'spot_price': 'spotPrice',
         'agency_name': 'agency_name',
         'kube_reserved_mem': 'kubeReservedMem',
         'system_reserved_mem': 'systemReservedMem',
@@ -60,7 +64,7 @@ class NodeExtendParam:
         'security_reinforcement_type': 'securityReinforcementType'
     }
 
-    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, charging_mode=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, init_node_password=None, security_reinforcement_type=None):
+    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, charging_mode=None, market_type=None, spot_price=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, init_node_password=None, security_reinforcement_type=None):
         r"""NodeExtendParam
 
         The model defined in huaweicloud sdk
@@ -95,6 +99,10 @@ class NodeExtendParam:
         :type alpha_cce_node_image_id: str
         :param charging_mode: 节点的计费模式。已废弃，请使用NodeSpec中的billingMode字段。 
         :type charging_mode: int
+        :param market_type: **参数解释**： 创建竞价实例时，需指定该参数的值为“spot”。 **约束限制**： 仅当billingMode&#x3D;0时此参数生效 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type market_type: str
+        :param spot_price: **参数解释**： 用户愿意为竞价实例每小时支付的最高价格。 **约束限制**： - 仅当billingMode&#x3D;0且marketType&#x3D;spot时，该参数设置后生效。 - 当billingMode&#x3D;0且marketType&#x3D;spot时，如果不传递spotPrice，默认使用按需购买的价格作为竞价。 - spotPrice需要小于等于按需价格并大于等于云服务器市场价格。  **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type spot_price: str
         :param agency_name: 委托的名称。  委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为CCE节点提供访问云服务器的临时凭证。 作为响应参数仅在创建节点传入时返回该字段。 
         :type agency_name: str
         :param kube_reserved_mem: 节点内存预留，Kubernetes相关组件预留值。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) 
@@ -124,6 +132,8 @@ class NodeExtendParam:
         self._alpha_cce_post_install = None
         self._alpha_cce_node_image_id = None
         self._charging_mode = None
+        self._market_type = None
+        self._spot_price = None
         self._agency_name = None
         self._kube_reserved_mem = None
         self._system_reserved_mem = None
@@ -161,6 +171,10 @@ class NodeExtendParam:
             self.alpha_cce_node_image_id = alpha_cce_node_image_id
         if charging_mode is not None:
             self.charging_mode = charging_mode
+        if market_type is not None:
+            self.market_type = market_type
+        if spot_price is not None:
+            self.spot_price = spot_price
         if agency_name is not None:
             self.agency_name = agency_name
         if kube_reserved_mem is not None:
@@ -501,6 +515,50 @@ class NodeExtendParam:
         :type charging_mode: int
         """
         self._charging_mode = charging_mode
+
+    @property
+    def market_type(self):
+        r"""Gets the market_type of this NodeExtendParam.
+
+        **参数解释**： 创建竞价实例时，需指定该参数的值为“spot”。 **约束限制**： 仅当billingMode=0时此参数生效 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The market_type of this NodeExtendParam.
+        :rtype: str
+        """
+        return self._market_type
+
+    @market_type.setter
+    def market_type(self, market_type):
+        r"""Sets the market_type of this NodeExtendParam.
+
+        **参数解释**： 创建竞价实例时，需指定该参数的值为“spot”。 **约束限制**： 仅当billingMode=0时此参数生效 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param market_type: The market_type of this NodeExtendParam.
+        :type market_type: str
+        """
+        self._market_type = market_type
+
+    @property
+    def spot_price(self):
+        r"""Gets the spot_price of this NodeExtendParam.
+
+        **参数解释**： 用户愿意为竞价实例每小时支付的最高价格。 **约束限制**： - 仅当billingMode=0且marketType=spot时，该参数设置后生效。 - 当billingMode=0且marketType=spot时，如果不传递spotPrice，默认使用按需购买的价格作为竞价。 - spotPrice需要小于等于按需价格并大于等于云服务器市场价格。  **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The spot_price of this NodeExtendParam.
+        :rtype: str
+        """
+        return self._spot_price
+
+    @spot_price.setter
+    def spot_price(self, spot_price):
+        r"""Sets the spot_price of this NodeExtendParam.
+
+        **参数解释**： 用户愿意为竞价实例每小时支付的最高价格。 **约束限制**： - 仅当billingMode=0且marketType=spot时，该参数设置后生效。 - 当billingMode=0且marketType=spot时，如果不传递spotPrice，默认使用按需购买的价格作为竞价。 - spotPrice需要小于等于按需价格并大于等于云服务器市场价格。  **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param spot_price: The spot_price of this NodeExtendParam.
+        :type spot_price: str
+        """
+        self._spot_price = spot_price
 
     @property
     def agency_name(self):

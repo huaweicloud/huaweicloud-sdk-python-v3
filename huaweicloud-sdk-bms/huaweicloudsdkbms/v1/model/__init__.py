@@ -14,6 +14,7 @@ from huaweicloudsdkbms.v1.model.addresses import Addresses
 from huaweicloudsdkbms.v1.model.attach_baremetal_server_volume_request import AttachBaremetalServerVolumeRequest
 from huaweicloudsdkbms.v1.model.attach_baremetal_server_volume_response import AttachBaremetalServerVolumeResponse
 from huaweicloudsdkbms.v1.model.attach_volume_body import AttachVolumeBody
+from huaweicloudsdkbms.v1.model.available_resource_resp import AvailableResourceResp
 from huaweicloudsdkbms.v1.model.band_width import BandWidth
 from huaweicloudsdkbms.v1.model.bare_metal_modify_port_request import BareMetalModifyPortRequest
 from huaweicloudsdkbms.v1.model.bare_metal_modify_port_request_body import BareMetalModifyPortRequestBody

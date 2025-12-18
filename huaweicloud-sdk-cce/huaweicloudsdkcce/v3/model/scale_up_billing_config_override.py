@@ -29,7 +29,7 @@ class ScaleUpBillingConfigOverride:
 
         The model defined in huaweicloud sdk
 
-        :param billing_mode: 节点计费类型，0(按需)，1(包周期)
+        :param billing_mode: **参数解释**： 节点计费类型 **约束限制**： 选填参数，不填表示使用节点池默认计费配置 **取值范围**： - 0：按需 - 1：包周期 **默认取值**： 不涉及
         :type billing_mode: int
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcce.v3.ScaleUpExtendParam`
@@ -41,7 +41,8 @@ class ScaleUpBillingConfigOverride:
         self._extend_param = None
         self.discriminator = None
 
-        self.billing_mode = billing_mode
+        if billing_mode is not None:
+            self.billing_mode = billing_mode
         if extend_param is not None:
             self.extend_param = extend_param
 
@@ -49,7 +50,7 @@ class ScaleUpBillingConfigOverride:
     def billing_mode(self):
         r"""Gets the billing_mode of this ScaleUpBillingConfigOverride.
 
-        节点计费类型，0(按需)，1(包周期)
+        **参数解释**： 节点计费类型 **约束限制**： 选填参数，不填表示使用节点池默认计费配置 **取值范围**： - 0：按需 - 1：包周期 **默认取值**： 不涉及
 
         :return: The billing_mode of this ScaleUpBillingConfigOverride.
         :rtype: int
@@ -60,7 +61,7 @@ class ScaleUpBillingConfigOverride:
     def billing_mode(self, billing_mode):
         r"""Sets the billing_mode of this ScaleUpBillingConfigOverride.
 
-        节点计费类型，0(按需)，1(包周期)
+        **参数解释**： 节点计费类型 **约束限制**： 选填参数，不填表示使用节点池默认计费配置 **取值范围**： - 0：按需 - 1：包周期 **默认取值**： 不涉及
 
         :param billing_mode: The billing_mode of this ScaleUpBillingConfigOverride.
         :type billing_mode: int

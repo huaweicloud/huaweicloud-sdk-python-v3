@@ -16,35 +16,42 @@ class ShowModifyHistoryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'histories': 'list[ConfigurationHistoryRsp]'
+        'histories': 'list[ConfigurationHistoryRsp]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'histories': 'histories'
+        'histories': 'histories',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, histories=None):
+    def __init__(self, histories=None, total_count=None):
         r"""ShowModifyHistoryResponse
 
         The model defined in huaweicloud sdk
 
-        :param histories: 实例参数的修改历史列表
+        :param histories: 实例参数的修改历史列表。
         :type histories: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ConfigurationHistoryRsp`]
+        :param total_count: **参数解释：** 参数修改历史记录总条数。 **约束限制：** 默认返回参数历史修改记录总条数。若为参数名搜索，返回符合要求的记录总条数。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+        :type total_count: int
         """
         
         super().__init__()
 
         self._histories = None
+        self._total_count = None
         self.discriminator = None
 
         if histories is not None:
             self.histories = histories
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
     def histories(self):
         r"""Gets the histories of this ShowModifyHistoryResponse.
 
-        实例参数的修改历史列表
+        实例参数的修改历史列表。
 
         :return: The histories of this ShowModifyHistoryResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ConfigurationHistoryRsp`]
@@ -55,12 +62,34 @@ class ShowModifyHistoryResponse(SdkResponse):
     def histories(self, histories):
         r"""Sets the histories of this ShowModifyHistoryResponse.
 
-        实例参数的修改历史列表
+        实例参数的修改历史列表。
 
         :param histories: The histories of this ShowModifyHistoryResponse.
         :type histories: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ConfigurationHistoryRsp`]
         """
         self._histories = histories
+
+    @property
+    def total_count(self):
+        r"""Gets the total_count of this ShowModifyHistoryResponse.
+
+        **参数解释：** 参数修改历史记录总条数。 **约束限制：** 默认返回参数历史修改记录总条数。若为参数名搜索，返回符合要求的记录总条数。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :return: The total_count of this ShowModifyHistoryResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ShowModifyHistoryResponse.
+
+        **参数解释：** 参数修改历史记录总条数。 **约束限制：** 默认返回参数历史修改记录总条数。若为参数名搜索，返回符合要求的记录总条数。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
+
+        :param total_count: The total_count of this ShowModifyHistoryResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         import warnings

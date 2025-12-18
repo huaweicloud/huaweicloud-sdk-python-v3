@@ -16,51 +16,20 @@ class UpgradeNodePoolResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'jobid': 'str'
     }
 
     attribute_map = {
-        'jobid': 'jobid'
     }
 
-    def __init__(self, jobid=None):
+    def __init__(self):
         r"""UpgradeNodePoolResponse
 
         The model defined in huaweicloud sdk
 
-        :param jobid: Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
-        :type jobid: str
         """
         
         super().__init__()
-
-        self._jobid = None
         self.discriminator = None
-
-        if jobid is not None:
-            self.jobid = jobid
-
-    @property
-    def jobid(self):
-        r"""Gets the jobid of this UpgradeNodePoolResponse.
-
-        Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
-
-        :return: The jobid of this UpgradeNodePoolResponse.
-        :rtype: str
-        """
-        return self._jobid
-
-    @jobid.setter
-    def jobid(self, jobid):
-        r"""Sets the jobid of this UpgradeNodePoolResponse.
-
-        Job ID returned after the job is delivered. The job ID can be used to query the job execution status.
-
-        :param jobid: The jobid of this UpgradeNodePoolResponse.
-        :type jobid: str
-        """
-        self._jobid = jobid
 
     def to_dict(self):
         import warnings

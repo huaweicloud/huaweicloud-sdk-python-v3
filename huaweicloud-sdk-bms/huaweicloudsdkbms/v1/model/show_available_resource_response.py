@@ -16,72 +16,47 @@ class ShowAvailableResourceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'availability_zone': 'str',
-        'flavors': 'list[FlavorResource]'
+        'available_resource': 'list[AvailableResourceResp]'
     }
 
     attribute_map = {
-        'availability_zone': 'availability_zone',
-        'flavors': 'flavors'
+        'available_resource': 'available_resource'
     }
 
-    def __init__(self, availability_zone=None, flavors=None):
+    def __init__(self, available_resource=None):
         r"""ShowAvailableResourceResponse
 
         The model defined in huaweicloud sdk
 
-        :param availability_zone: 
-        :type availability_zone: str
-        :param flavors: 
-        :type flavors: list[:class:`huaweicloudsdkbms.v1.FlavorResource`]
+        :param available_resource: 
+        :type available_resource: list[:class:`huaweicloudsdkbms.v1.AvailableResourceResp`]
         """
         
         super().__init__()
 
-        self._availability_zone = None
-        self._flavors = None
+        self._available_resource = None
         self.discriminator = None
 
-        if availability_zone is not None:
-            self.availability_zone = availability_zone
-        if flavors is not None:
-            self.flavors = flavors
+        if available_resource is not None:
+            self.available_resource = available_resource
 
     @property
-    def availability_zone(self):
-        r"""Gets the availability_zone of this ShowAvailableResourceResponse.
+    def available_resource(self):
+        r"""Gets the available_resource of this ShowAvailableResourceResponse.
 
-        :return: The availability_zone of this ShowAvailableResourceResponse.
-        :rtype: str
+        :return: The available_resource of this ShowAvailableResourceResponse.
+        :rtype: list[:class:`huaweicloudsdkbms.v1.AvailableResourceResp`]
         """
-        return self._availability_zone
+        return self._available_resource
 
-    @availability_zone.setter
-    def availability_zone(self, availability_zone):
-        r"""Sets the availability_zone of this ShowAvailableResourceResponse.
+    @available_resource.setter
+    def available_resource(self, available_resource):
+        r"""Sets the available_resource of this ShowAvailableResourceResponse.
 
-        :param availability_zone: The availability_zone of this ShowAvailableResourceResponse.
-        :type availability_zone: str
+        :param available_resource: The available_resource of this ShowAvailableResourceResponse.
+        :type available_resource: list[:class:`huaweicloudsdkbms.v1.AvailableResourceResp`]
         """
-        self._availability_zone = availability_zone
-
-    @property
-    def flavors(self):
-        r"""Gets the flavors of this ShowAvailableResourceResponse.
-
-        :return: The flavors of this ShowAvailableResourceResponse.
-        :rtype: list[:class:`huaweicloudsdkbms.v1.FlavorResource`]
-        """
-        return self._flavors
-
-    @flavors.setter
-    def flavors(self, flavors):
-        r"""Sets the flavors of this ShowAvailableResourceResponse.
-
-        :param flavors: The flavors of this ShowAvailableResourceResponse.
-        :type flavors: list[:class:`huaweicloudsdkbms.v1.FlavorResource`]
-        """
-        self._flavors = flavors
+        self._available_resource = available_resource
 
     def to_dict(self):
         import warnings
