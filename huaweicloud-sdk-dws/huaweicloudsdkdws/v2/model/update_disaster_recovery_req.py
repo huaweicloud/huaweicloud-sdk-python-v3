@@ -47,7 +47,7 @@ class UpdateDisasterRecoveryReq:
         :type reset_action: str
         :param standby_to_role: **参数解释**： 备集群角色。 **取值范围**： 不涉及。
         :type standby_to_role: str
-        :param dr_status: **参数解释**： 容灾状态。 **取值范围**： 不涉及。
+        :param dr_status: **参数解释**： 容灾状态。 **取值范围**： - creating，容灾创建中。 - create_failed，容灾创建失败。 - unstart，容灾未启动。 - starting，容灾启动中。 - start_failed，容灾启动失败。 - running，容灾运行中。 - stopping，容灾停止中。 - stop_failed，容灾停止失败。 - switchovering，灾备切换中。 - abnormal，容灾异常。 - deleting，容灾删除中。 - deleted，容灾已删除。
         :type dr_status: str
         """
         
@@ -188,7 +188,7 @@ class UpdateDisasterRecoveryReq:
     def dr_status(self):
         r"""Gets the dr_status of this UpdateDisasterRecoveryReq.
 
-        **参数解释**： 容灾状态。 **取值范围**： 不涉及。
+        **参数解释**： 容灾状态。 **取值范围**： - creating，容灾创建中。 - create_failed，容灾创建失败。 - unstart，容灾未启动。 - starting，容灾启动中。 - start_failed，容灾启动失败。 - running，容灾运行中。 - stopping，容灾停止中。 - stop_failed，容灾停止失败。 - switchovering，灾备切换中。 - abnormal，容灾异常。 - deleting，容灾删除中。 - deleted，容灾已删除。
 
         :return: The dr_status of this UpdateDisasterRecoveryReq.
         :rtype: str
@@ -199,7 +199,7 @@ class UpdateDisasterRecoveryReq:
     def dr_status(self, dr_status):
         r"""Sets the dr_status of this UpdateDisasterRecoveryReq.
 
-        **参数解释**： 容灾状态。 **取值范围**： 不涉及。
+        **参数解释**： 容灾状态。 **取值范围**： - creating，容灾创建中。 - create_failed，容灾创建失败。 - unstart，容灾未启动。 - starting，容灾启动中。 - start_failed，容灾启动失败。 - running，容灾运行中。 - stopping，容灾停止中。 - stop_failed，容灾停止失败。 - switchovering，灾备切换中。 - abnormal，容灾异常。 - deleting，容灾删除中。 - deleted，容灾已删除。
 
         :param dr_status: The dr_status of this UpdateDisasterRecoveryReq.
         :type dr_status: str

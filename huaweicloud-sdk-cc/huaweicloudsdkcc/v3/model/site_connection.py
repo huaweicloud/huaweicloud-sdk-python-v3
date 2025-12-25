@@ -17,15 +17,15 @@ class SiteConnection:
     openapi_types = {
         'id': 'str',
         'site_network_id': 'str',
-        'state': 'SiteConnectionStateEnum',
+        'state': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'edge_pair': 'list[DirectedEdge]',
-        'cross_region_type': 'CrossRegionTypeEnum',
+        'cross_region_type': 'str',
         'global_connection_bandwidth_id': 'str',
         'bandwidth_size': 'int',
         'is_frozen': 'bool',
-        'frozen_effect': 'FrozenEffectEnum',
+        'frozen_effect': 'str',
         'is_bind_bandwidth': 'bool'
     }
 
@@ -53,24 +53,24 @@ class SiteConnection:
         :type id: str
         :param site_network_id: 分支网络ID。
         :type site_network_id: str
-        :param state: 
-        :type state: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`
+        :param state: 分支网络连接状态。 - AVAILABLE （可用） - CREATING （创建中） - UPDATING （更新中） - DELETING （删除中） - FREEZING （冻结中） - UNFREEZING （解冻中） - RECOVERING （恢复中） - FAILED （失败） - FREEZED （冻结） - DELETED （已删除）
+        :type state: str
         :param created_at: 实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type updated_at: datetime
         :param edge_pair: 分支网络连接的两个端点定义，长度固定为2的数组。
         :type edge_pair: list[:class:`huaweicloudsdkcc.v3.DirectedEdge`]
-        :param cross_region_type: 
-        :type cross_region_type: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`
+        :param cross_region_type: 跨地域类型。 - intra-region （同地域） - inter-region （跨地域）
+        :type cross_region_type: str
         :param global_connection_bandwidth_id: 全域互联带宽ID。
         :type global_connection_bandwidth_id: str
         :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
         :param is_frozen: 是否冻结。
         :type is_frozen: bool
-        :param frozen_effect: 
-        :type frozen_effect: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`
+        :param frozen_effect: 冻结效果。 - RELEASABLE（冻结可释放） - UNRELEASABLE（冻结不可释放）
+        :type frozen_effect: str
         :param is_bind_bandwidth: 是否绑定带宽包。
         :type is_bind_bandwidth: bool
         """
@@ -156,8 +156,10 @@ class SiteConnection:
     def state(self):
         r"""Gets the state of this SiteConnection.
 
+        分支网络连接状态。 - AVAILABLE （可用） - CREATING （创建中） - UPDATING （更新中） - DELETING （删除中） - FREEZING （冻结中） - UNFREEZING （解冻中） - RECOVERING （恢复中） - FAILED （失败） - FREEZED （冻结） - DELETED （已删除）
+
         :return: The state of this SiteConnection.
-        :rtype: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`
+        :rtype: str
         """
         return self._state
 
@@ -165,8 +167,10 @@ class SiteConnection:
     def state(self, state):
         r"""Sets the state of this SiteConnection.
 
+        分支网络连接状态。 - AVAILABLE （可用） - CREATING （创建中） - UPDATING （更新中） - DELETING （删除中） - FREEZING （冻结中） - UNFREEZING （解冻中） - RECOVERING （恢复中） - FAILED （失败） - FREEZED （冻结） - DELETED （已删除）
+
         :param state: The state of this SiteConnection.
-        :type state: :class:`huaweicloudsdkcc.v3.SiteConnectionStateEnum`
+        :type state: str
         """
         self._state = state
 
@@ -240,8 +244,10 @@ class SiteConnection:
     def cross_region_type(self):
         r"""Gets the cross_region_type of this SiteConnection.
 
+        跨地域类型。 - intra-region （同地域） - inter-region （跨地域）
+
         :return: The cross_region_type of this SiteConnection.
-        :rtype: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`
+        :rtype: str
         """
         return self._cross_region_type
 
@@ -249,8 +255,10 @@ class SiteConnection:
     def cross_region_type(self, cross_region_type):
         r"""Sets the cross_region_type of this SiteConnection.
 
+        跨地域类型。 - intra-region （同地域） - inter-region （跨地域）
+
         :param cross_region_type: The cross_region_type of this SiteConnection.
-        :type cross_region_type: :class:`huaweicloudsdkcc.v3.CrossRegionTypeEnum`
+        :type cross_region_type: str
         """
         self._cross_region_type = cross_region_type
 
@@ -324,8 +332,10 @@ class SiteConnection:
     def frozen_effect(self):
         r"""Gets the frozen_effect of this SiteConnection.
 
+        冻结效果。 - RELEASABLE（冻结可释放） - UNRELEASABLE（冻结不可释放）
+
         :return: The frozen_effect of this SiteConnection.
-        :rtype: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`
+        :rtype: str
         """
         return self._frozen_effect
 
@@ -333,8 +343,10 @@ class SiteConnection:
     def frozen_effect(self, frozen_effect):
         r"""Sets the frozen_effect of this SiteConnection.
 
+        冻结效果。 - RELEASABLE（冻结可释放） - UNRELEASABLE（冻结不可释放）
+
         :param frozen_effect: The frozen_effect of this SiteConnection.
-        :type frozen_effect: :class:`huaweicloudsdkcc.v3.FrozenEffectEnum`
+        :type frozen_effect: str
         """
         self._frozen_effect = frozen_effect
 

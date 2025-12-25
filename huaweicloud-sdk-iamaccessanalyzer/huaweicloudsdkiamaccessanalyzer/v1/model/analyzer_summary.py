@@ -27,7 +27,7 @@ class AnalyzerSummary:
         'status': 'str',
         'status_reason': 'StatusReason',
         'tags': 'list[Tag]',
-        'type': 'AnalyzerType',
+        'type': 'str',
         'urn': 'str'
     }
 
@@ -74,8 +74,8 @@ class AnalyzerSummary:
         :type status_reason: :class:`huaweicloudsdkiamaccessanalyzer.v1.StatusReason`
         :param tags: 自定义标签列表。
         :type tags: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.Tag`]
-        :param type: 
-        :type type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
+        :param type: 分析器的类型。 - account: 账号级外部访问分析器 - organization：组织级外部访问分析器 - account_unused_access：账号级未使用访问分析器 - organization_unused_access：组织级未使用访问分析器 - account_privilege_escalation：账号级提权访问分析器 - account_iam_best_practice：账号级IAM最佳实践分析器 
+        :type type: str
         :param urn: 分析器的唯一资源标识符。
         :type urn: str
         """
@@ -356,8 +356,10 @@ class AnalyzerSummary:
     def type(self):
         r"""Gets the type of this AnalyzerSummary.
 
+        分析器的类型。 - account: 账号级外部访问分析器 - organization：组织级外部访问分析器 - account_unused_access：账号级未使用访问分析器 - organization_unused_access：组织级未使用访问分析器 - account_privilege_escalation：账号级提权访问分析器 - account_iam_best_practice：账号级IAM最佳实践分析器 
+
         :return: The type of this AnalyzerSummary.
-        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
+        :rtype: str
         """
         return self._type
 
@@ -365,8 +367,10 @@ class AnalyzerSummary:
     def type(self, type):
         r"""Sets the type of this AnalyzerSummary.
 
+        分析器的类型。 - account: 账号级外部访问分析器 - organization：组织级外部访问分析器 - account_unused_access：账号级未使用访问分析器 - organization_unused_access：组织级未使用访问分析器 - account_privilege_escalation：账号级提权访问分析器 - account_iam_best_practice：账号级IAM最佳实践分析器 
+
         :param type: The type of this AnalyzerSummary.
-        :type type: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerType`
+        :type type: str
         """
         self._type = type
 

@@ -69,7 +69,7 @@ class EventResponse:
         :type name_space: str
         :param severity: **参数解释**： 事件级别。 **取值范围**： 不涉及。
         :type severity: str
-        :param source_type: **参数解释**： 事件源类别。 **取值范围**： 不涉及。
+        :param source_type: **参数解释**： 事件源类别。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
         :type source_type: str
         :param occur_time: **参数解释**： 时间。 **取值范围**： 不涉及。
         :type occur_time: int
@@ -79,7 +79,7 @@ class EventResponse:
         :type source_id: str
         :param source_name: **参数解释**： 事件源名称。 **取值范围**： 不涉及。
         :type source_name: str
-        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 状态。 **取值范围**： - 1：已保存。 - 2：已处理。
         :type status: int
         :param subject: **参数解释**： 事件主题。 **取值范围**： 不涉及。
         :type subject: str
@@ -295,7 +295,7 @@ class EventResponse:
     def source_type(self):
         r"""Gets the source_type of this EventResponse.
 
-        **参数解释**： 事件源类别。 **取值范围**： 不涉及。
+        **参数解释**： 事件源类别。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
 
         :return: The source_type of this EventResponse.
         :rtype: str
@@ -306,7 +306,7 @@ class EventResponse:
     def source_type(self, source_type):
         r"""Sets the source_type of this EventResponse.
 
-        **参数解释**： 事件源类别。 **取值范围**： 不涉及。
+        **参数解释**： 事件源类别。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
 
         :param source_type: The source_type of this EventResponse.
         :type source_type: str
@@ -405,7 +405,7 @@ class EventResponse:
     def status(self):
         r"""Gets the status of this EventResponse.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - 1：已保存。 - 2：已处理。
 
         :return: The status of this EventResponse.
         :rtype: int
@@ -416,7 +416,7 @@ class EventResponse:
     def status(self, status):
         r"""Sets the status of this EventResponse.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - 1：已保存。 - 2：已处理。
 
         :param status: The status of this EventResponse.
         :type status: int

@@ -35,7 +35,7 @@ class SimulationSrlz:
         'scenario_id': 'int',
         'simulator_name': 'str',
         'labels': 'list[object]',
-        'status': 'Status15eEnum',
+        'status': 'int',
         'batch': 'str'
     }
 
@@ -110,7 +110,7 @@ class SimulationSrlz:
         :param labels: 场景资源标签
         :type labels: list[object]
         :param status: 子任务状态  * &#x60;0&#x60; - Success  成功 * &#x60;1&#x60; - Pending  等待中 * &#x60;2&#x60; - Scheduling  调度 * &#x60;3&#x60; - Running  运行 * &#x60;4&#x60; - Canceled  取消 * &#x60;10&#x60; - Prepare Fail  准备失败 * &#x60;11&#x60; - Controller Fail  控制失败 * &#x60;12&#x60; - License Fail  许可失败 * &#x60;13&#x60; - Simulator Fail  仿真器失败 * &#x60;14&#x60; - Algorithm Fail  算法失败 * &#x60;15&#x60; - Evaluation Fail  评测失败 * &#x60;16&#x60; - Evicted  丢失 * &#x60;31&#x60; - Timeout  超时 * &#x60;32&#x60; - Unknown  未知
-        :type status: :class:`huaweicloudsdkoctopus.v2.Status15eEnum`
+        :type status: :class:`huaweicloudsdkoctopus.v2.int`
         :param batch: 关联batch
         :type batch: str
         """
@@ -617,7 +617,7 @@ class SimulationSrlz:
         子任务状态  * `0` - Success  成功 * `1` - Pending  等待中 * `2` - Scheduling  调度 * `3` - Running  运行 * `4` - Canceled  取消 * `10` - Prepare Fail  准备失败 * `11` - Controller Fail  控制失败 * `12` - License Fail  许可失败 * `13` - Simulator Fail  仿真器失败 * `14` - Algorithm Fail  算法失败 * `15` - Evaluation Fail  评测失败 * `16` - Evicted  丢失 * `31` - Timeout  超时 * `32` - Unknown  未知
 
         :return: The status of this SimulationSrlz.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.Status15eEnum`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.int`
         """
         return self._status
 
@@ -628,7 +628,7 @@ class SimulationSrlz:
         子任务状态  * `0` - Success  成功 * `1` - Pending  等待中 * `2` - Scheduling  调度 * `3` - Running  运行 * `4` - Canceled  取消 * `10` - Prepare Fail  准备失败 * `11` - Controller Fail  控制失败 * `12` - License Fail  许可失败 * `13` - Simulator Fail  仿真器失败 * `14` - Algorithm Fail  算法失败 * `15` - Evaluation Fail  评测失败 * `16` - Evicted  丢失 * `31` - Timeout  超时 * `32` - Unknown  未知
 
         :param status: The status of this SimulationSrlz.
-        :type status: :class:`huaweicloudsdkoctopus.v2.Status15eEnum`
+        :type status: :class:`huaweicloudsdkoctopus.v2.int`
         """
         self._status = status
 

@@ -43,7 +43,7 @@ class GrantAuthority:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 权限类型。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 权限类型。 **取值范围**： - DATABASE：数据库。 - SCHEMA：模式。 - TABLE：表。 - VIEW：视图。 - COLUMN：列。 - FUNCTION：函数。 - SEQUENCE：序列。 - NODEGROUP：节点组。
         :type type: str
         :param database: **参数解释**： 数据库名称。 **取值范围**： 不涉及。
         :type database: str
@@ -99,7 +99,7 @@ class GrantAuthority:
     def type(self):
         r"""Gets the type of this GrantAuthority.
 
-        **参数解释**： 权限类型。 **取值范围**： 不涉及。
+        **参数解释**： 权限类型。 **取值范围**： - DATABASE：数据库。 - SCHEMA：模式。 - TABLE：表。 - VIEW：视图。 - COLUMN：列。 - FUNCTION：函数。 - SEQUENCE：序列。 - NODEGROUP：节点组。
 
         :return: The type of this GrantAuthority.
         :rtype: str
@@ -110,7 +110,7 @@ class GrantAuthority:
     def type(self, type):
         r"""Sets the type of this GrantAuthority.
 
-        **参数解释**： 权限类型。 **取值范围**： 不涉及。
+        **参数解释**： 权限类型。 **取值范围**： - DATABASE：数据库。 - SCHEMA：模式。 - TABLE：表。 - VIEW：视图。 - COLUMN：列。 - FUNCTION：函数。 - SEQUENCE：序列。 - NODEGROUP：节点组。
 
         :param type: The type of this GrantAuthority.
         :type type: str

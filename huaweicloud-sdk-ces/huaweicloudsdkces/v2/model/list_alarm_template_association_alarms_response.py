@@ -32,7 +32,7 @@ class ListAlarmTemplateAssociationAlarmsResponse(SdkResponse):
 
         :param alarms: 告警规则列表
         :type alarms: list[:class:`huaweicloudsdkces.v2.ListAssociationAlarmsResponseAlarms`]
-        :param count: 告警规则列表总数
+        :param count: **参数解释**： 告警规则列表总数。     **取值范围**： 取值范围为0-1000. 
         :type count: int
         """
         
@@ -73,7 +73,7 @@ class ListAlarmTemplateAssociationAlarmsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAlarmTemplateAssociationAlarmsResponse.
 
-        告警规则列表总数
+        **参数解释**： 告警规则列表总数。     **取值范围**： 取值范围为0-1000. 
 
         :return: The count of this ListAlarmTemplateAssociationAlarmsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListAlarmTemplateAssociationAlarmsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAlarmTemplateAssociationAlarmsResponse.
 
-        告警规则列表总数
+        **参数解释**： 告警规则列表总数。     **取值范围**： 取值范围为0-1000. 
 
         :param count: The count of this ListAlarmTemplateAssociationAlarmsResponse.
         :type count: int

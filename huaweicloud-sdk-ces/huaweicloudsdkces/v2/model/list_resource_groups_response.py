@@ -30,9 +30,9 @@ class ListResourceGroupsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 资源分组总数
+        :param count: **参数解释** 资源分组总数。 **取值范围** 在[0,1000]区间内。
         :type count: int
-        :param resource_groups: 资源分组列表
+        :param resource_groups: **参数解释** 资源分组列表。
         :type resource_groups: list[:class:`huaweicloudsdkces.v2.OneResourceGroupResp`]
         """
         
@@ -51,7 +51,7 @@ class ListResourceGroupsResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListResourceGroupsResponse.
 
-        资源分组总数
+        **参数解释** 资源分组总数。 **取值范围** 在[0,1000]区间内。
 
         :return: The count of this ListResourceGroupsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListResourceGroupsResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListResourceGroupsResponse.
 
-        资源分组总数
+        **参数解释** 资源分组总数。 **取值范围** 在[0,1000]区间内。
 
         :param count: The count of this ListResourceGroupsResponse.
         :type count: int
@@ -73,7 +73,7 @@ class ListResourceGroupsResponse(SdkResponse):
     def resource_groups(self):
         r"""Gets the resource_groups of this ListResourceGroupsResponse.
 
-        资源分组列表
+        **参数解释** 资源分组列表。
 
         :return: The resource_groups of this ListResourceGroupsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.OneResourceGroupResp`]
@@ -84,7 +84,7 @@ class ListResourceGroupsResponse(SdkResponse):
     def resource_groups(self, resource_groups):
         r"""Sets the resource_groups of this ListResourceGroupsResponse.
 
-        资源分组列表
+        **参数解释** 资源分组列表。
 
         :param resource_groups: The resource_groups of this ListResourceGroupsResponse.
         :type resource_groups: list[:class:`huaweicloudsdkces.v2.OneResourceGroupResp`]

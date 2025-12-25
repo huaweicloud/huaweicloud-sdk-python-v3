@@ -16,7 +16,7 @@ class ShowLivePlatformAccessTypeResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'access_types': 'list[AccessTypeEnum]',
+        'access_types': 'list[str]',
         'x_request_id': 'str'
     }
 
@@ -31,7 +31,7 @@ class ShowLivePlatformAccessTypeResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param access_types: 平台对接类型列表
-        :type access_types: list[:class:`huaweicloudsdkmetastudio.v1.AccessTypeEnum`]
+        :type access_types: list[str]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -54,7 +54,7 @@ class ShowLivePlatformAccessTypeResponse(SdkResponse):
         平台对接类型列表
 
         :return: The access_types of this ShowLivePlatformAccessTypeResponse.
-        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.AccessTypeEnum`]
+        :rtype: list[str]
         """
         return self._access_types
 
@@ -65,7 +65,7 @@ class ShowLivePlatformAccessTypeResponse(SdkResponse):
         平台对接类型列表
 
         :param access_types: The access_types of this ShowLivePlatformAccessTypeResponse.
-        :type access_types: list[:class:`huaweicloudsdkmetastudio.v1.AccessTypeEnum`]
+        :type access_types: list[str]
         """
         self._access_types = access_types
 

@@ -20,7 +20,7 @@ class StandElementValueVOList:
         'directory_id': 'str',
         'directory_path': 'str',
         'row_id': 'str',
-        'status': 'BizStatusEnum',
+        'status': 'str',
         'approval_info': 'ApprovalVO',
         'new_biz': 'BizVersionManageVO',
         'from_public': 'bool',
@@ -61,8 +61,8 @@ class StandElementValueVOList:
         :type directory_path: str
         :param row_id: 标准行的ID，ID字符串。
         :type row_id: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :param status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+        :type status: str
         :param approval_info: 
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
         :param new_biz: 
@@ -235,8 +235,10 @@ class StandElementValueVOList:
     def status(self):
         r"""Gets the status of this StandElementValueVOList.
 
+        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+
         :return: The status of this StandElementValueVOList.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :rtype: str
         """
         return self._status
 
@@ -244,8 +246,10 @@ class StandElementValueVOList:
     def status(self, status):
         r"""Sets the status of this StandElementValueVOList.
 
+        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+
         :param status: The status of this StandElementValueVOList.
-        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :type status: str
         """
         self._status = status
 

@@ -4,16 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ImageServerStatus:
-    """
-    allowed enum values
-    """
-    CREATING = "CREATING"
-    ACTIVE = "ACTIVE"
-    BUILDING = "BUILDING"
-    BUILT = "BUILT"
-    ERROR = "ERROR"
-    DELETING = "DELETING"
-    NULL = "null"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

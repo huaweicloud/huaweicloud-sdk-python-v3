@@ -18,8 +18,8 @@ class StoragePool:
         'id': 'str',
         'name': 'str',
         'edge_site_id': 'str',
-        'storage_type': 'StorageType',
-        'status': 'StoragePoolStatus',
+        'storage_type': 'str',
+        'status': 'str',
         'assigned_size': 'int',
         'resource_spec_code': 'str',
         'product_info': 'ProductInfo',
@@ -57,10 +57,10 @@ class StoragePool:
         :type name: str
         :param edge_site_id: 边缘小站ID
         :type edge_site_id: str
-        :param storage_type: 
-        :type storage_type: :class:`huaweicloudsdkcloudpond.v1.StorageType`
-        :param status: 
-        :type status: :class:`huaweicloudsdkcloudpond.v1.StoragePoolStatus`
+        :param storage_type: 存储类型。 - SAS：高IO - SSD：超高IO - SAS_SD：高IO(软件定义型专用) - SSD_SD：超高IO(软件定义型专用) - SAS_ARM：高IO（鲲鹏） - SSD_ARM：超高IO（鲲鹏） [- VS_SMALL_CAP：视图存储-小容量型](tag:cmcc) [- VS_MEDIUM_CAP：视图存储-中容量型](tag:cmcc) [- VS_LARGE_CAP：视图存储-大容量型](tag:cmcc) [- VS_SMALL_CAP：边缘对象存储-小容量型](tag:hws) [- VS_MEDIUM_CAP：边缘对象存储-中容量型](tag:hws) [- VS_LARGE_CAP：边缘对象存储-大容量型](tag:hws) [- CBR_STANDARD_SMALL_CAP:云备份(基础版)-小容量型](tag:hws) [- CBR_STANDARD_MEDIUM_CAP:云备份(基础版)-中容量型](tag:hws) [- CBR_STANDARD_LARGE_CAP:云备份(基础版)-大容量型](tag:hws) [- CBR_PROFESSIONAL_SMALL_CAP:云备份(专业版)-小容量型](tag:hws) [- CBR_PROFESSIONAL_MEDIUM_CAP:云备份(专业版)-中容量型](tag:hws) [- CBR_PROFESSIONAL_LARGE_CAP:云备份(专业版)-大容量型](tag:hws)
+        :type storage_type: str
+        :param status: 存储池状态。 - CREATING：创建中 - AVAILABLE：可用 - EXPANDING：扩容中 - PENDING_PAYMENT：待支付 - FROZEN：已冻结
+        :type status: str
         :param assigned_size: 存储池大小。 当前购买的存储容量。
         :type assigned_size: int
         :param resource_spec_code: 资源规格编码
@@ -193,8 +193,10 @@ class StoragePool:
     def storage_type(self):
         r"""Gets the storage_type of this StoragePool.
 
+        存储类型。 - SAS：高IO - SSD：超高IO - SAS_SD：高IO(软件定义型专用) - SSD_SD：超高IO(软件定义型专用) - SAS_ARM：高IO（鲲鹏） - SSD_ARM：超高IO（鲲鹏） [- VS_SMALL_CAP：视图存储-小容量型](tag:cmcc) [- VS_MEDIUM_CAP：视图存储-中容量型](tag:cmcc) [- VS_LARGE_CAP：视图存储-大容量型](tag:cmcc) [- VS_SMALL_CAP：边缘对象存储-小容量型](tag:hws) [- VS_MEDIUM_CAP：边缘对象存储-中容量型](tag:hws) [- VS_LARGE_CAP：边缘对象存储-大容量型](tag:hws) [- CBR_STANDARD_SMALL_CAP:云备份(基础版)-小容量型](tag:hws) [- CBR_STANDARD_MEDIUM_CAP:云备份(基础版)-中容量型](tag:hws) [- CBR_STANDARD_LARGE_CAP:云备份(基础版)-大容量型](tag:hws) [- CBR_PROFESSIONAL_SMALL_CAP:云备份(专业版)-小容量型](tag:hws) [- CBR_PROFESSIONAL_MEDIUM_CAP:云备份(专业版)-中容量型](tag:hws) [- CBR_PROFESSIONAL_LARGE_CAP:云备份(专业版)-大容量型](tag:hws)
+
         :return: The storage_type of this StoragePool.
-        :rtype: :class:`huaweicloudsdkcloudpond.v1.StorageType`
+        :rtype: str
         """
         return self._storage_type
 
@@ -202,8 +204,10 @@ class StoragePool:
     def storage_type(self, storage_type):
         r"""Sets the storage_type of this StoragePool.
 
+        存储类型。 - SAS：高IO - SSD：超高IO - SAS_SD：高IO(软件定义型专用) - SSD_SD：超高IO(软件定义型专用) - SAS_ARM：高IO（鲲鹏） - SSD_ARM：超高IO（鲲鹏） [- VS_SMALL_CAP：视图存储-小容量型](tag:cmcc) [- VS_MEDIUM_CAP：视图存储-中容量型](tag:cmcc) [- VS_LARGE_CAP：视图存储-大容量型](tag:cmcc) [- VS_SMALL_CAP：边缘对象存储-小容量型](tag:hws) [- VS_MEDIUM_CAP：边缘对象存储-中容量型](tag:hws) [- VS_LARGE_CAP：边缘对象存储-大容量型](tag:hws) [- CBR_STANDARD_SMALL_CAP:云备份(基础版)-小容量型](tag:hws) [- CBR_STANDARD_MEDIUM_CAP:云备份(基础版)-中容量型](tag:hws) [- CBR_STANDARD_LARGE_CAP:云备份(基础版)-大容量型](tag:hws) [- CBR_PROFESSIONAL_SMALL_CAP:云备份(专业版)-小容量型](tag:hws) [- CBR_PROFESSIONAL_MEDIUM_CAP:云备份(专业版)-中容量型](tag:hws) [- CBR_PROFESSIONAL_LARGE_CAP:云备份(专业版)-大容量型](tag:hws)
+
         :param storage_type: The storage_type of this StoragePool.
-        :type storage_type: :class:`huaweicloudsdkcloudpond.v1.StorageType`
+        :type storage_type: str
         """
         self._storage_type = storage_type
 
@@ -211,8 +215,10 @@ class StoragePool:
     def status(self):
         r"""Gets the status of this StoragePool.
 
+        存储池状态。 - CREATING：创建中 - AVAILABLE：可用 - EXPANDING：扩容中 - PENDING_PAYMENT：待支付 - FROZEN：已冻结
+
         :return: The status of this StoragePool.
-        :rtype: :class:`huaweicloudsdkcloudpond.v1.StoragePoolStatus`
+        :rtype: str
         """
         return self._status
 
@@ -220,8 +226,10 @@ class StoragePool:
     def status(self, status):
         r"""Sets the status of this StoragePool.
 
+        存储池状态。 - CREATING：创建中 - AVAILABLE：可用 - EXPANDING：扩容中 - PENDING_PAYMENT：待支付 - FROZEN：已冻结
+
         :param status: The status of this StoragePool.
-        :type status: :class:`huaweicloudsdkcloudpond.v1.StoragePoolStatus`
+        :type status: str
         """
         self._status = status
 

@@ -77,7 +77,7 @@ class RedisProgress:
         :type fail_count: int
         :param redistributing: **参数解释**： cm_ctl查询的重分布结果。 **取值范围**： 不涉及。
         :type redistributing: bool
-        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 状态。 **取值范围**： - PREPARE：准备。 - RUNNING：运行中。 - WAITING：等待中。 - PAUSE：已暂停。 - PAUSING：暂停中。 - SUCCESS：成功。 - FAIL：失败。
         :type status: str
         :param pause_by_user: **参数解释**： 是否用户暂停。 **取值范围**： 不涉及。
         :type pause_by_user: bool
@@ -398,7 +398,7 @@ class RedisProgress:
     def status(self):
         r"""Gets the status of this RedisProgress.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - PREPARE：准备。 - RUNNING：运行中。 - WAITING：等待中。 - PAUSE：已暂停。 - PAUSING：暂停中。 - SUCCESS：成功。 - FAIL：失败。
 
         :return: The status of this RedisProgress.
         :rtype: str
@@ -409,7 +409,7 @@ class RedisProgress:
     def status(self, status):
         r"""Sets the status of this RedisProgress.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - PREPARE：准备。 - RUNNING：运行中。 - WAITING：等待中。 - PAUSE：已暂停。 - PAUSING：暂停中。 - SUCCESS：成功。 - FAIL：失败。
 
         :param status: The status of this RedisProgress.
         :type status: str

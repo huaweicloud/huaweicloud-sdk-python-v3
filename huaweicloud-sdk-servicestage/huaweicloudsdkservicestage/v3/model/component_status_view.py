@@ -15,10 +15,10 @@ class ComponentStatusView:
     sensitive_list = []
 
     openapi_types = {
-        'component_status': 'ComponentStatusType',
+        'component_status': 'str',
         'available_replica': 'int',
         'replica': 'int',
-        'fail_detail': 'ComponentFailDetail',
+        'fail_detail': 'str',
         'last_job_id': 'str',
         'creator': 'str',
         'create_time': 'int',
@@ -44,13 +44,13 @@ class ComponentStatusView:
         The model defined in huaweicloud sdk
 
         :param component_status: 
-        :type component_status: :class:`huaweicloudsdkservicestage.v3.ComponentStatusType`
+        :type component_status: str
         :param available_replica: 
         :type available_replica: int
         :param replica: 
         :type replica: int
-        :param fail_detail: 
-        :type fail_detail: :class:`huaweicloudsdkservicestage.v3.ComponentFailDetail`
+        :param fail_detail: cluster_deleted,        // 集群被删除 cluster_unavailable,    // 集群不可用 cluster_inaccessible,   // 集群无法访问 namespace_deleted,      // 命名空间被删除 namespace_unavailable,  // 命名空间不可用 namespace_inaccessible, // 命名空间无法访问 resource_deleted,       // 资源已删除 create_failed,          // 创建组件失败 delete_failed           // 删除组件失败 
+        :type fail_detail: str
         :param last_job_id: 
         :type last_job_id: str
         :param creator: 
@@ -100,7 +100,7 @@ class ComponentStatusView:
         r"""Gets the component_status of this ComponentStatusView.
 
         :return: The component_status of this ComponentStatusView.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentStatusType`
+        :rtype: str
         """
         return self._component_status
 
@@ -109,7 +109,7 @@ class ComponentStatusView:
         r"""Sets the component_status of this ComponentStatusView.
 
         :param component_status: The component_status of this ComponentStatusView.
-        :type component_status: :class:`huaweicloudsdkservicestage.v3.ComponentStatusType`
+        :type component_status: str
         """
         self._component_status = component_status
 
@@ -153,8 +153,10 @@ class ComponentStatusView:
     def fail_detail(self):
         r"""Gets the fail_detail of this ComponentStatusView.
 
+        cluster_deleted,        // 集群被删除 cluster_unavailable,    // 集群不可用 cluster_inaccessible,   // 集群无法访问 namespace_deleted,      // 命名空间被删除 namespace_unavailable,  // 命名空间不可用 namespace_inaccessible, // 命名空间无法访问 resource_deleted,       // 资源已删除 create_failed,          // 创建组件失败 delete_failed           // 删除组件失败 
+
         :return: The fail_detail of this ComponentStatusView.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentFailDetail`
+        :rtype: str
         """
         return self._fail_detail
 
@@ -162,8 +164,10 @@ class ComponentStatusView:
     def fail_detail(self, fail_detail):
         r"""Sets the fail_detail of this ComponentStatusView.
 
+        cluster_deleted,        // 集群被删除 cluster_unavailable,    // 集群不可用 cluster_inaccessible,   // 集群无法访问 namespace_deleted,      // 命名空间被删除 namespace_unavailable,  // 命名空间不可用 namespace_inaccessible, // 命名空间无法访问 resource_deleted,       // 资源已删除 create_failed,          // 创建组件失败 delete_failed           // 删除组件失败 
+
         :param fail_detail: The fail_detail of this ComponentStatusView.
-        :type fail_detail: :class:`huaweicloudsdkservicestage.v3.ComponentFailDetail`
+        :type fail_detail: str
         """
         self._fail_detail = fail_detail
 

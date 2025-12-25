@@ -47,7 +47,7 @@ class ListPacifyWordsRequest:
         :type limit: int
         :param robot_id: 应用ID。
         :type robot_id: str
-        :param language: 智能交互语言 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
+        :param language: 智能交互语言 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持） * fr：法语（仅海外站点支持）
         :type language: str
         :param pacify_words_type: 安抚话术类型 &gt; 0:通用安抚话术, 1:基于意图匹配安抚话术
         :type pacify_words_type: int
@@ -172,7 +172,7 @@ class ListPacifyWordsRequest:
     def language(self):
         r"""Gets the language of this ListPacifyWordsRequest.
 
-        智能交互语言 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
+        智能交互语言 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持） * fr：法语（仅海外站点支持）
 
         :return: The language of this ListPacifyWordsRequest.
         :rtype: str
@@ -183,7 +183,7 @@ class ListPacifyWordsRequest:
     def language(self, language):
         r"""Sets the language of this ListPacifyWordsRequest.
 
-        智能交互语言 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
+        智能交互语言 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持） * fr：法语（仅海外站点支持）
 
         :param language: The language of this ListPacifyWordsRequest.
         :type language: str

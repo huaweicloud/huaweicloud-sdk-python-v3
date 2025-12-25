@@ -29,7 +29,7 @@ class DeleteAlarmRuleResourcesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: Alarm实例ID
+        :param alarm_id: **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位的字母或数字。          **默认取值**： 不涉及。 
         :type alarm_id: str
         :param body: Body of the DeleteAlarmRuleResourcesRequest
         :type body: :class:`huaweicloudsdkces.v2.ResourcesReqV2`
@@ -49,7 +49,7 @@ class DeleteAlarmRuleResourcesRequest:
     def alarm_id(self):
         r"""Gets the alarm_id of this DeleteAlarmRuleResourcesRequest.
 
-        Alarm实例ID
+        **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位的字母或数字。          **默认取值**： 不涉及。 
 
         :return: The alarm_id of this DeleteAlarmRuleResourcesRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class DeleteAlarmRuleResourcesRequest:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this DeleteAlarmRuleResourcesRequest.
 
-        Alarm实例ID
+        **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位的字母或数字。          **默认取值**： 不涉及。 
 
         :param alarm_id: The alarm_id of this DeleteAlarmRuleResourcesRequest.
         :type alarm_id: str

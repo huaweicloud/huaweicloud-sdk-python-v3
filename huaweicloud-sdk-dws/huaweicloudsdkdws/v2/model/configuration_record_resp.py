@@ -45,7 +45,7 @@ class ConfigurationRecordResp:
         :type start_time: str
         :param end_time: **参数解释**： 结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 状态。 **取值范围**： - Applying：应用中； - In-Sync：已同步； - Pending-Reboot：待重启；
         :type status: str
         :param failed_reason: **参数解释**： 失败原因。 **取值范围**： 不涉及。
         :type failed_reason: str
@@ -166,7 +166,7 @@ class ConfigurationRecordResp:
     def status(self):
         r"""Gets the status of this ConfigurationRecordResp.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - Applying：应用中； - In-Sync：已同步； - Pending-Reboot：待重启；
 
         :return: The status of this ConfigurationRecordResp.
         :rtype: str
@@ -177,7 +177,7 @@ class ConfigurationRecordResp:
     def status(self, status):
         r"""Sets the status of this ConfigurationRecordResp.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - Applying：应用中； - In-Sync：已同步； - Pending-Reboot：待重启；
 
         :param status: The status of this ConfigurationRecordResp.
         :type status: str

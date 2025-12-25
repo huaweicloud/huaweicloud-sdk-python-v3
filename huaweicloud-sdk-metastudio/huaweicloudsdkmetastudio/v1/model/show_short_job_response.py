@@ -16,9 +16,9 @@ class ShowShortJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_type': 'ShortJobType',
+        'job_type': 'str',
         'job_id': 'str',
-        'state': 'JobState',
+        'state': 'str',
         'job_failed_code': 'str',
         'job_failed_reason': 'str',
         'create_time': 'int',
@@ -42,12 +42,12 @@ class ShowShortJobResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_type: 
-        :type job_type: :class:`huaweicloudsdkmetastudio.v1.ShortJobType`
+        :param job_type: 短任务类型。 * VOICE_ASSESS: 声音质量检测
+        :type job_type: str
         :param job_id: 任务id。
         :type job_id: str
-        :param state: 
-        :type state: :class:`huaweicloudsdkmetastudio.v1.JobState`
+        :param state: 任务状态。 * CREATING: 创建中 * SYSTEM_AUDITING: 系统审核中 * AUDITING: 人工审核中 * WAITING_SPLIT: 等待切割 * SPLITTING: 切割中 * SPLIT_FAILED: 切割失败 * ANNOTATING: 标注中 * WAITING: 等待训练 * PROCESSING: 任务训练中 * RESULT_REVIEW: 审核结果 * AUDIT_FAILED: 审核失败,等待用户重传数据 * UPLOADING: 上传中 * FAILED: 失败 * SUCCEED: 成功
+        :type state: str
         :param job_failed_code: 当任务失败时呈现,失败错误码。
         :type job_failed_code: str
         :param job_failed_reason: 当任务失败时呈现,失败原因。
@@ -93,8 +93,10 @@ class ShowShortJobResponse(SdkResponse):
     def job_type(self):
         r"""Gets the job_type of this ShowShortJobResponse.
 
+        短任务类型。 * VOICE_ASSESS: 声音质量检测
+
         :return: The job_type of this ShowShortJobResponse.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ShortJobType`
+        :rtype: str
         """
         return self._job_type
 
@@ -102,8 +104,10 @@ class ShowShortJobResponse(SdkResponse):
     def job_type(self, job_type):
         r"""Sets the job_type of this ShowShortJobResponse.
 
+        短任务类型。 * VOICE_ASSESS: 声音质量检测
+
         :param job_type: The job_type of this ShowShortJobResponse.
-        :type job_type: :class:`huaweicloudsdkmetastudio.v1.ShortJobType`
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -133,8 +137,10 @@ class ShowShortJobResponse(SdkResponse):
     def state(self):
         r"""Gets the state of this ShowShortJobResponse.
 
+        任务状态。 * CREATING: 创建中 * SYSTEM_AUDITING: 系统审核中 * AUDITING: 人工审核中 * WAITING_SPLIT: 等待切割 * SPLITTING: 切割中 * SPLIT_FAILED: 切割失败 * ANNOTATING: 标注中 * WAITING: 等待训练 * PROCESSING: 任务训练中 * RESULT_REVIEW: 审核结果 * AUDIT_FAILED: 审核失败,等待用户重传数据 * UPLOADING: 上传中 * FAILED: 失败 * SUCCEED: 成功
+
         :return: The state of this ShowShortJobResponse.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.JobState`
+        :rtype: str
         """
         return self._state
 
@@ -142,8 +148,10 @@ class ShowShortJobResponse(SdkResponse):
     def state(self, state):
         r"""Sets the state of this ShowShortJobResponse.
 
+        任务状态。 * CREATING: 创建中 * SYSTEM_AUDITING: 系统审核中 * AUDITING: 人工审核中 * WAITING_SPLIT: 等待切割 * SPLITTING: 切割中 * SPLIT_FAILED: 切割失败 * ANNOTATING: 标注中 * WAITING: 等待训练 * PROCESSING: 任务训练中 * RESULT_REVIEW: 审核结果 * AUDIT_FAILED: 审核失败,等待用户重传数据 * UPLOADING: 上传中 * FAILED: 失败 * SUCCEED: 成功
+
         :param state: The state of this ShowShortJobResponse.
-        :type state: :class:`huaweicloudsdkmetastudio.v1.JobState`
+        :type state: str
         """
         self._state = state
 

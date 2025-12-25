@@ -32,7 +32,8 @@ class AlarmHistoryItemV2:
         'additional_info': 'AdditionalInfo',
         'alarm_actions': 'list[AlarmHistoryItemV2AlarmActions]',
         'ok_actions': 'list[AlarmHistoryItemV2AlarmActions]',
-        'data_points': 'list[DataPointInfo]'
+        'data_points': 'list[DataPointInfo]',
+        'mask_status': 'str'
     }
 
     attribute_map = {
@@ -53,27 +54,28 @@ class AlarmHistoryItemV2:
         'additional_info': 'additional_info',
         'alarm_actions': 'alarm_actions',
         'ok_actions': 'ok_actions',
-        'data_points': 'data_points'
+        'data_points': 'data_points',
+        'mask_status': 'mask_status'
     }
 
-    def __init__(self, record_id=None, alarm_id=None, name=None, status=None, level=None, type=None, action_enabled=None, begin_time=None, end_time=None, first_alarm_time=None, last_alarm_time=None, alarm_recovery_time=None, metric=None, condition=None, additional_info=None, alarm_actions=None, ok_actions=None, data_points=None):
+    def __init__(self, record_id=None, alarm_id=None, name=None, status=None, level=None, type=None, action_enabled=None, begin_time=None, end_time=None, first_alarm_time=None, last_alarm_time=None, alarm_recovery_time=None, metric=None, condition=None, additional_info=None, alarm_actions=None, ok_actions=None, data_points=None, mask_status=None):
         r"""AlarmHistoryItemV2
 
         The model defined in huaweicloud sdk
 
-        :param record_id: **参数解释**： 告警记录ID。 **取值范围**： 字符串长度为24。 
+        :param record_id: **参数解释**： 告警记录ID。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 
         :type record_id: str
-        :param alarm_id: **参数解释**： 告警规则的ID，如：al1603131199286dzxpqK3Ez。 **取值范围**： 字符串长度为24 
+        :param alarm_id: **参数解释**： 告警规则ID。 **取值范围**： 以al开头，后跟22位的字母或数字。 
         :type alarm_id: str
-        :param name: **参数解释**： 告警规则的名称，如：alarm-test01。 **取值范围**： 字符串长度在 1 到 128 之间。 
+        :param name: **参数解释**： 告警名称。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度为[1,128]个字符。 
         :type name: str
-        :param status: **参数解释**： 告警记录的状态。 **取值范围**： 取值为ok，alarm，invalid, ok_manual； ok为正常，alarm为告警，invalid为已失效,ok_manual为手动恢复。 
+        :param status: **参数解释**： 告警规则状态 **取值范围**： 枚举值。 - ok：正常 - alarm：告警 - invalid：已失效 - insufficient_data: 数据不足 - ok_manual: 手动恢复 
         :type status: str
-        :param level: **参数解释**： 告警记录的告警级别。 **取值范围**： 值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。 
+        :param level: **参数解释**： 告警记录的告警级别。 **取值范围**： 值为1,2,3,4 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 
         :type level: int
-        :param type: **参数解释**： 告警规则类型。 **取值范围**： 枚举值。ALL_INSTANCE为全部资源指标告警，RESOURCE_GROUP为资源分组指标告警，MULTI_INSTANCE为指定资源指标告警，EVENT.SYS为系统事件告警，EVENT.CUSTOM自定义事件告警，DNSHealthCheck为健康检查告警。 
+        :param type: **参数解释**： 告警规则类型。 **取值范围**： 枚举值 - ALL_INSTANCE：全部资源指标告警 - RESOURCE_GROUP：资源分组指标告警 - MULTI_INSTANCE：指定资源指标告警 - EVENT.SYS：系统事件告警 - EVENT.CUSTOM：自定义事件告警 - DNSHealthCheck：健康检查告警 
         :type type: str
-        :param action_enabled: **参数解释**： 是否发送通知 **取值范围**： true：发送通知 false：不发送通知 
+        :param action_enabled: **参数解释**： 是否发送通知 **取值范围**： - true：发送通知 - false：不发送通知 
         :type action_enabled: bool
         :param begin_time: **参数解释**： 产生时间,UTC时间 **取值范围**： 不涉及。 
         :type begin_time: datetime
@@ -91,12 +93,14 @@ class AlarmHistoryItemV2:
         :type condition: :class:`huaweicloudsdkces.v2.AlarmHistoryItemV2Condition`
         :param additional_info: 
         :type additional_info: :class:`huaweicloudsdkces.v2.AdditionalInfo`
-        :param alarm_actions: **参数解释**： 告警触发的动作列表。  结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notification_list\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notification_list：告警状态发生变化时，被通知对象的列表。 
+        :param alarm_actions: **参数解释**： 告警触发时，通知组/主题订阅的信息。结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notification_list\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } 
         :type alarm_actions: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2AlarmActions`]
-        :param ok_actions: **参数解释**： 告警恢复触发的动作。  结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notification_list\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } type取值：  notification：通知。  notification_list：告警状态发生变化时，被通知对象的列表。 
+        :param ok_actions: **参数解释**： 告警恢复时，通知组/主题订阅的信息。结构如下：  {  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notification_list\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } 
         :type ok_actions: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2AlarmActions`]
         :param data_points: **参数解释**： 计算出该条告警记录的资源监控数据上报时间和监控数值。 
         :type data_points: list[:class:`huaweicloudsdkces.v2.DataPointInfo`]
+        :param mask_status: **参数解释**： 告警屏蔽状态。 **取值范围**： - MASKED：已屏蔽 - UN_MASKED：未屏蔽 
+        :type mask_status: str
         """
         
         
@@ -119,6 +123,7 @@ class AlarmHistoryItemV2:
         self._alarm_actions = None
         self._ok_actions = None
         self._data_points = None
+        self._mask_status = None
         self.discriminator = None
 
         if record_id is not None:
@@ -157,12 +162,14 @@ class AlarmHistoryItemV2:
             self.ok_actions = ok_actions
         if data_points is not None:
             self.data_points = data_points
+        if mask_status is not None:
+            self.mask_status = mask_status
 
     @property
     def record_id(self):
         r"""Gets the record_id of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警记录ID。 **取值范围**： 字符串长度为24。 
+        **参数解释**： 告警记录ID。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 
 
         :return: The record_id of this AlarmHistoryItemV2.
         :rtype: str
@@ -173,7 +180,7 @@ class AlarmHistoryItemV2:
     def record_id(self, record_id):
         r"""Sets the record_id of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警记录ID。 **取值范围**： 字符串长度为24。 
+        **参数解释**： 告警记录ID。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 
 
         :param record_id: The record_id of this AlarmHistoryItemV2.
         :type record_id: str
@@ -184,7 +191,7 @@ class AlarmHistoryItemV2:
     def alarm_id(self):
         r"""Gets the alarm_id of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警规则的ID，如：al1603131199286dzxpqK3Ez。 **取值范围**： 字符串长度为24 
+        **参数解释**： 告警规则ID。 **取值范围**： 以al开头，后跟22位的字母或数字。 
 
         :return: The alarm_id of this AlarmHistoryItemV2.
         :rtype: str
@@ -195,7 +202,7 @@ class AlarmHistoryItemV2:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警规则的ID，如：al1603131199286dzxpqK3Ez。 **取值范围**： 字符串长度为24 
+        **参数解释**： 告警规则ID。 **取值范围**： 以al开头，后跟22位的字母或数字。 
 
         :param alarm_id: The alarm_id of this AlarmHistoryItemV2.
         :type alarm_id: str
@@ -206,7 +213,7 @@ class AlarmHistoryItemV2:
     def name(self):
         r"""Gets the name of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警规则的名称，如：alarm-test01。 **取值范围**： 字符串长度在 1 到 128 之间。 
+        **参数解释**： 告警名称。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度为[1,128]个字符。 
 
         :return: The name of this AlarmHistoryItemV2.
         :rtype: str
@@ -217,7 +224,7 @@ class AlarmHistoryItemV2:
     def name(self, name):
         r"""Sets the name of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警规则的名称，如：alarm-test01。 **取值范围**： 字符串长度在 1 到 128 之间。 
+        **参数解释**： 告警名称。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度为[1,128]个字符。 
 
         :param name: The name of this AlarmHistoryItemV2.
         :type name: str
@@ -228,7 +235,7 @@ class AlarmHistoryItemV2:
     def status(self):
         r"""Gets the status of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警记录的状态。 **取值范围**： 取值为ok，alarm，invalid, ok_manual； ok为正常，alarm为告警，invalid为已失效,ok_manual为手动恢复。 
+        **参数解释**： 告警规则状态 **取值范围**： 枚举值。 - ok：正常 - alarm：告警 - invalid：已失效 - insufficient_data: 数据不足 - ok_manual: 手动恢复 
 
         :return: The status of this AlarmHistoryItemV2.
         :rtype: str
@@ -239,7 +246,7 @@ class AlarmHistoryItemV2:
     def status(self, status):
         r"""Sets the status of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警记录的状态。 **取值范围**： 取值为ok，alarm，invalid, ok_manual； ok为正常，alarm为告警，invalid为已失效,ok_manual为手动恢复。 
+        **参数解释**： 告警规则状态 **取值范围**： 枚举值。 - ok：正常 - alarm：告警 - invalid：已失效 - insufficient_data: 数据不足 - ok_manual: 手动恢复 
 
         :param status: The status of this AlarmHistoryItemV2.
         :type status: str
@@ -250,7 +257,7 @@ class AlarmHistoryItemV2:
     def level(self):
         r"""Gets the level of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警记录的告警级别。 **取值范围**： 值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。 
+        **参数解释**： 告警记录的告警级别。 **取值范围**： 值为1,2,3,4 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 
 
         :return: The level of this AlarmHistoryItemV2.
         :rtype: int
@@ -261,7 +268,7 @@ class AlarmHistoryItemV2:
     def level(self, level):
         r"""Sets the level of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警记录的告警级别。 **取值范围**： 值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。 
+        **参数解释**： 告警记录的告警级别。 **取值范围**： 值为1,2,3,4 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 
 
         :param level: The level of this AlarmHistoryItemV2.
         :type level: int
@@ -272,7 +279,7 @@ class AlarmHistoryItemV2:
     def type(self):
         r"""Gets the type of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警规则类型。 **取值范围**： 枚举值。ALL_INSTANCE为全部资源指标告警，RESOURCE_GROUP为资源分组指标告警，MULTI_INSTANCE为指定资源指标告警，EVENT.SYS为系统事件告警，EVENT.CUSTOM自定义事件告警，DNSHealthCheck为健康检查告警。 
+        **参数解释**： 告警规则类型。 **取值范围**： 枚举值 - ALL_INSTANCE：全部资源指标告警 - RESOURCE_GROUP：资源分组指标告警 - MULTI_INSTANCE：指定资源指标告警 - EVENT.SYS：系统事件告警 - EVENT.CUSTOM：自定义事件告警 - DNSHealthCheck：健康检查告警 
 
         :return: The type of this AlarmHistoryItemV2.
         :rtype: str
@@ -283,7 +290,7 @@ class AlarmHistoryItemV2:
     def type(self, type):
         r"""Sets the type of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警规则类型。 **取值范围**： 枚举值。ALL_INSTANCE为全部资源指标告警，RESOURCE_GROUP为资源分组指标告警，MULTI_INSTANCE为指定资源指标告警，EVENT.SYS为系统事件告警，EVENT.CUSTOM自定义事件告警，DNSHealthCheck为健康检查告警。 
+        **参数解释**： 告警规则类型。 **取值范围**： 枚举值 - ALL_INSTANCE：全部资源指标告警 - RESOURCE_GROUP：资源分组指标告警 - MULTI_INSTANCE：指定资源指标告警 - EVENT.SYS：系统事件告警 - EVENT.CUSTOM：自定义事件告警 - DNSHealthCheck：健康检查告警 
 
         :param type: The type of this AlarmHistoryItemV2.
         :type type: str
@@ -294,7 +301,7 @@ class AlarmHistoryItemV2:
     def action_enabled(self):
         r"""Gets the action_enabled of this AlarmHistoryItemV2.
 
-        **参数解释**： 是否发送通知 **取值范围**： true：发送通知 false：不发送通知 
+        **参数解释**： 是否发送通知 **取值范围**： - true：发送通知 - false：不发送通知 
 
         :return: The action_enabled of this AlarmHistoryItemV2.
         :rtype: bool
@@ -305,7 +312,7 @@ class AlarmHistoryItemV2:
     def action_enabled(self, action_enabled):
         r"""Sets the action_enabled of this AlarmHistoryItemV2.
 
-        **参数解释**： 是否发送通知 **取值范围**： true：发送通知 false：不发送通知 
+        **参数解释**： 是否发送通知 **取值范围**： - true：发送通知 - false：不发送通知 
 
         :param action_enabled: The action_enabled of this AlarmHistoryItemV2.
         :type action_enabled: bool
@@ -480,7 +487,7 @@ class AlarmHistoryItemV2:
     def alarm_actions(self):
         r"""Gets the alarm_actions of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警触发的动作列表。  结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notification_list：告警状态发生变化时，被通知对象的列表。 
+        **参数解释**： 告警触发时，通知组/主题订阅的信息。结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } 
 
         :return: The alarm_actions of this AlarmHistoryItemV2.
         :rtype: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2AlarmActions`]
@@ -491,7 +498,7 @@ class AlarmHistoryItemV2:
     def alarm_actions(self, alarm_actions):
         r"""Sets the alarm_actions of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警触发的动作列表。  结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值： notification：通知。 autoscaling：弹性伸缩。 notification_list：告警状态发生变化时，被通知对象的列表。 
+        **参数解释**： 告警触发时，通知组/主题订阅的信息。结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } 
 
         :param alarm_actions: The alarm_actions of this AlarmHistoryItemV2.
         :type alarm_actions: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2AlarmActions`]
@@ -502,7 +509,7 @@ class AlarmHistoryItemV2:
     def ok_actions(self):
         r"""Gets the ok_actions of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notification_list：告警状态发生变化时，被通知对象的列表。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } 
 
         :return: The ok_actions of this AlarmHistoryItemV2.
         :rtype: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2AlarmActions`]
@@ -513,7 +520,7 @@ class AlarmHistoryItemV2:
     def ok_actions(self, ok_actions):
         r"""Sets the ok_actions of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警恢复触发的动作。  结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：  notification：通知。  notification_list：告警状态发生变化时，被通知对象的列表。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。结构如下：  {  \"type\": \"notification\", \"notification_list\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } 
 
         :param ok_actions: The ok_actions of this AlarmHistoryItemV2.
         :type ok_actions: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2AlarmActions`]
@@ -541,6 +548,28 @@ class AlarmHistoryItemV2:
         :type data_points: list[:class:`huaweicloudsdkces.v2.DataPointInfo`]
         """
         self._data_points = data_points
+
+    @property
+    def mask_status(self):
+        r"""Gets the mask_status of this AlarmHistoryItemV2.
+
+        **参数解释**： 告警屏蔽状态。 **取值范围**： - MASKED：已屏蔽 - UN_MASKED：未屏蔽 
+
+        :return: The mask_status of this AlarmHistoryItemV2.
+        :rtype: str
+        """
+        return self._mask_status
+
+    @mask_status.setter
+    def mask_status(self, mask_status):
+        r"""Sets the mask_status of this AlarmHistoryItemV2.
+
+        **参数解释**： 告警屏蔽状态。 **取值范围**： - MASKED：已屏蔽 - UN_MASKED：未屏蔽 
+
+        :param mask_status: The mask_status of this AlarmHistoryItemV2.
+        :type mask_status: str
+        """
+        self._mask_status = mask_status
 
     def to_dict(self):
         result = {}

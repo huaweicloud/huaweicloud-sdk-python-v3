@@ -15,7 +15,7 @@ class AssignAppAuthorizationsReq:
     sensitive_list = []
 
     openapi_types = {
-        'authorization_type': 'AssignType',
+        'authorization_type': 'str',
         'users': 'list[AccountInfo]',
         'del_users': 'list[AccountInfo]'
     }
@@ -31,8 +31,8 @@ class AssignAppAuthorizationsReq:
 
         The model defined in huaweicloud sdk
 
-        :param authorization_type: 
-        :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
+        :param authorization_type: * &#x60;ALL_USER&#x60; - 全部用户 * &#x60;ASSIGN_USER&#x60; - 授权指定用户
+        :type authorization_type: str
         :param users: 新增授权用户列表，一次请求数量区间 [0, 100]。
         :type users: list[:class:`huaweicloudsdkworkspace.v2.AccountInfo`]
         :param del_users: 取消授权用户列表，一次请求数量区间 [0, 100]。
@@ -56,8 +56,10 @@ class AssignAppAuthorizationsReq:
     def authorization_type(self):
         r"""Gets the authorization_type of this AssignAppAuthorizationsReq.
 
+        * `ALL_USER` - 全部用户 * `ASSIGN_USER` - 授权指定用户
+
         :return: The authorization_type of this AssignAppAuthorizationsReq.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
+        :rtype: str
         """
         return self._authorization_type
 
@@ -65,8 +67,10 @@ class AssignAppAuthorizationsReq:
     def authorization_type(self, authorization_type):
         r"""Sets the authorization_type of this AssignAppAuthorizationsReq.
 
+        * `ALL_USER` - 全部用户 * `ASSIGN_USER` - 授权指定用户
+
         :param authorization_type: The authorization_type of this AssignAppAuthorizationsReq.
-        :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
+        :type authorization_type: str
         """
         self._authorization_type = authorization_type
 

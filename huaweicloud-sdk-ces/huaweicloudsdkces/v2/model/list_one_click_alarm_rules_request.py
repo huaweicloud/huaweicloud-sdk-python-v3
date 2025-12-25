@@ -27,7 +27,7 @@ class ListOneClickAlarmRulesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param one_click_alarm_id: 一键告警ID
+        :param one_click_alarm_id: **参数解释** 一键告警ID **约束限制** 不涉及 **取值范围** 长度为1到64字符，只能包含字母数字 **默认取值** 不涉及 
         :type one_click_alarm_id: str
         """
         
@@ -42,7 +42,7 @@ class ListOneClickAlarmRulesRequest:
     def one_click_alarm_id(self):
         r"""Gets the one_click_alarm_id of this ListOneClickAlarmRulesRequest.
 
-        一键告警ID
+        **参数解释** 一键告警ID **约束限制** 不涉及 **取值范围** 长度为1到64字符，只能包含字母数字 **默认取值** 不涉及 
 
         :return: The one_click_alarm_id of this ListOneClickAlarmRulesRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class ListOneClickAlarmRulesRequest:
     def one_click_alarm_id(self, one_click_alarm_id):
         r"""Sets the one_click_alarm_id of this ListOneClickAlarmRulesRequest.
 
-        一键告警ID
+        **参数解释** 一键告警ID **约束限制** 不涉及 **取值范围** 长度为1到64字符，只能包含字母数字 **默认取值** 不涉及 
 
         :param one_click_alarm_id: The one_click_alarm_id of this ListOneClickAlarmRulesRequest.
         :type one_click_alarm_id: str

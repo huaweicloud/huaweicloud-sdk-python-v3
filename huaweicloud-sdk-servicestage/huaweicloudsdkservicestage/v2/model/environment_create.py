@@ -19,7 +19,7 @@ class EnvironmentCreate:
         'alias': 'str',
         'description': 'str',
         'enterprise_project_id': 'str',
-        'charge_mode': 'ChargeMode',
+        'charge_mode': 'str',
         'deploy_mode': 'str',
         'vpc_id': 'str',
         'base_resources': 'list[Resource]',
@@ -51,8 +51,8 @@ class EnvironmentCreate:
         :type description: str
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
-        :param charge_mode: 
-        :type charge_mode: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
+        :param charge_mode: 收费模式，支持provided、on_demanded、monthly三种模式。  默认provided，表示使用用户提供的已有资源，无需收费。 
+        :type charge_mode: str
         :param deploy_mode: 
         :type deploy_mode: str
         :param vpc_id: 虚拟私有云ID。
@@ -183,8 +183,10 @@ class EnvironmentCreate:
     def charge_mode(self):
         r"""Gets the charge_mode of this EnvironmentCreate.
 
+        收费模式，支持provided、on_demanded、monthly三种模式。  默认provided，表示使用用户提供的已有资源，无需收费。 
+
         :return: The charge_mode of this EnvironmentCreate.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
+        :rtype: str
         """
         return self._charge_mode
 
@@ -192,8 +194,10 @@ class EnvironmentCreate:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this EnvironmentCreate.
 
+        收费模式，支持provided、on_demanded、monthly三种模式。  默认provided，表示使用用户提供的已有资源，无需收费。 
+
         :param charge_mode: The charge_mode of this EnvironmentCreate.
-        :type charge_mode: :class:`huaweicloudsdkservicestage.v2.ChargeMode`
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 

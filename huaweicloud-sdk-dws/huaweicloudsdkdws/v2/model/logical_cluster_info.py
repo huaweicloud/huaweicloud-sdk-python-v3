@@ -57,7 +57,7 @@ class LogicalClusterInfo:
         :type logical_cluster_name: str
         :param cluster_rings: **参数解释**： 逻辑集群主机信息。 **取值范围**： 不涉及。
         :type cluster_rings: list[:class:`huaweicloudsdkdws.v2.ClusterRing`]
-        :param status: **参数解释**： 逻辑集群状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 逻辑集群状态。 **取值范围**： - Failed：失败。 - Normal: 正常。 - Unavailable：不可用。 - Redistributing：重分布中。 - Redistribute_failed：重分布失败。 - Deleted：已删除。
         :type status: str
         :param first_logical_cluster: **参数解释**： 是否为第一个逻辑集群。历史版本中第1个创建或者转换的逻辑集群不能删除，因为其中包含了一些系统视图。 **取值范围**： 不涉及。
         :type first_logical_cluster: bool
@@ -75,7 +75,7 @@ class LogicalClusterInfo:
         :type mode: str
         :param waiting_for_killing: **参数解释**： 作业等待时间。 **取值范围**： 不涉及。
         :type waiting_for_killing: int
-        :param cluster_type: **参数解释**： 集群类型。 **取值范围**： 不涉及。
+        :param cluster_type: **参数解释**： 逻辑集群类型。 **取值范围**： - createFromPlan：计划弹性。 - createFromElastic：自动弹性。
         :type cluster_type: str
         """
         
@@ -193,7 +193,7 @@ class LogicalClusterInfo:
     def status(self):
         r"""Gets the status of this LogicalClusterInfo.
 
-        **参数解释**： 逻辑集群状态。 **取值范围**： 不涉及。
+        **参数解释**： 逻辑集群状态。 **取值范围**： - Failed：失败。 - Normal: 正常。 - Unavailable：不可用。 - Redistributing：重分布中。 - Redistribute_failed：重分布失败。 - Deleted：已删除。
 
         :return: The status of this LogicalClusterInfo.
         :rtype: str
@@ -204,7 +204,7 @@ class LogicalClusterInfo:
     def status(self, status):
         r"""Sets the status of this LogicalClusterInfo.
 
-        **参数解释**： 逻辑集群状态。 **取值范围**： 不涉及。
+        **参数解释**： 逻辑集群状态。 **取值范围**： - Failed：失败。 - Normal: 正常。 - Unavailable：不可用。 - Redistributing：重分布中。 - Redistribute_failed：重分布失败。 - Deleted：已删除。
 
         :param status: The status of this LogicalClusterInfo.
         :type status: str
@@ -387,7 +387,7 @@ class LogicalClusterInfo:
     def cluster_type(self):
         r"""Gets the cluster_type of this LogicalClusterInfo.
 
-        **参数解释**： 集群类型。 **取值范围**： 不涉及。
+        **参数解释**： 逻辑集群类型。 **取值范围**： - createFromPlan：计划弹性。 - createFromElastic：自动弹性。
 
         :return: The cluster_type of this LogicalClusterInfo.
         :rtype: str
@@ -398,7 +398,7 @@ class LogicalClusterInfo:
     def cluster_type(self, cluster_type):
         r"""Sets the cluster_type of this LogicalClusterInfo.
 
-        **参数解释**： 集群类型。 **取值范围**： 不涉及。
+        **参数解释**： 逻辑集群类型。 **取值范围**： - createFromPlan：计划弹性。 - createFromElastic：自动弹性。
 
         :param cluster_type: The cluster_type of this LogicalClusterInfo.
         :type cluster_type: str

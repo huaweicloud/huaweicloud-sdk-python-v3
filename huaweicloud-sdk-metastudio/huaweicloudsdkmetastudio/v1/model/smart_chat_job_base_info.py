@@ -85,7 +85,7 @@ class SmartChatJobBaseInfo:
         :type chat_video_type: str
         :param is_transparent: 是否透明背景
         :type is_transparent: bool
-        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
+        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持） * fr：法语（仅海外站点支持）
         :type default_language: str
         :param client_id: clientId
         :type client_id: str
@@ -429,7 +429,7 @@ class SmartChatJobBaseInfo:
     def default_language(self):
         r"""Gets the default_language of this SmartChatJobBaseInfo.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
+        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持） * fr：法语（仅海外站点支持）
 
         :return: The default_language of this SmartChatJobBaseInfo.
         :rtype: str
@@ -440,7 +440,7 @@ class SmartChatJobBaseInfo:
     def default_language(self, default_language):
         r"""Sets the default_language of this SmartChatJobBaseInfo.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
+        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持） * fr：法语（仅海外站点支持）
 
         :param default_language: The default_language of this SmartChatJobBaseInfo.
         :type default_language: str

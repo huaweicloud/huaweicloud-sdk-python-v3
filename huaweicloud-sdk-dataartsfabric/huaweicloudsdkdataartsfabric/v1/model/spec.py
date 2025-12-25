@@ -16,7 +16,7 @@ class Spec:
 
     openapi_types = {
         'spec_code': 'str',
-        'spec_type': 'SpecType',
+        'spec_type': 'str',
         'resource_type': 'str',
         'stride': 'int',
         'unit': 'str',
@@ -47,8 +47,8 @@ class Spec:
 
         :param spec_code: 资源规格，从规格列表查询获取。
         :type spec_code: str
-        :param spec_type: 
-        :type spec_type: :class:`huaweicloudsdkdataartsfabric.v1.SpecType`
+        :param spec_type: 资源规格类型： 1.APU：APU类型, 2.DPU：DPU类型, 3.MU：MU类型,  4.RESOURCE_USAGE_UNIT：资源使用量类型,  5.TOKENS_USAGE_UNIT：Tokens数使用量类型
+        :type spec_type: str
         :param resource_type: 资源类型
         :type resource_type: str
         :param stride: 步长
@@ -128,8 +128,10 @@ class Spec:
     def spec_type(self):
         r"""Gets the spec_type of this Spec.
 
+        资源规格类型： 1.APU：APU类型, 2.DPU：DPU类型, 3.MU：MU类型,  4.RESOURCE_USAGE_UNIT：资源使用量类型,  5.TOKENS_USAGE_UNIT：Tokens数使用量类型
+
         :return: The spec_type of this Spec.
-        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.SpecType`
+        :rtype: str
         """
         return self._spec_type
 
@@ -137,8 +139,10 @@ class Spec:
     def spec_type(self, spec_type):
         r"""Sets the spec_type of this Spec.
 
+        资源规格类型： 1.APU：APU类型, 2.DPU：DPU类型, 3.MU：MU类型,  4.RESOURCE_USAGE_UNIT：资源使用量类型,  5.TOKENS_USAGE_UNIT：Tokens数使用量类型
+
         :param spec_type: The spec_type of this Spec.
-        :type spec_type: :class:`huaweicloudsdkdataartsfabric.v1.SpecType`
+        :type spec_type: str
         """
         self._spec_type = spec_type
 

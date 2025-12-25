@@ -26,8 +26,8 @@ class PreviewFinding:
         'principal': 'FindingPrincipal',
         'resource': 'str',
         'resource_owner_account': 'str',
-        'resource_type': 'ResourceType',
-        'sources': 'list[FindingSourceType]',
+        'resource_type': 'str',
+        'sources': 'list[str]',
         'status': 'str'
     }
 
@@ -75,10 +75,10 @@ class PreviewFinding:
         :type resource: str
         :param resource_owner_account: 拥有资源的账号ID。
         :type resource_owner_account: str
-        :param resource_type: 
-        :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
+        :param resource_type: 资源的类型。 - iam:agency：IAM委托 - iam:user：IAM用户 - kms:cmk：DEW共享密钥 - obs:bucket：OBS桶 - swr:repo：SWR镜像仓库 - cbr:backup：CBR备份 - ims:image：IMS镜像 
+        :type resource_type: str
         :param sources: 访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
-        :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
+        :type sources: list[str]
         :param status: 变化后的状态。 - active：活跃 - archived：已解决 - resolved：已存档 
         :type status: str
         """
@@ -361,8 +361,10 @@ class PreviewFinding:
     def resource_type(self):
         r"""Gets the resource_type of this PreviewFinding.
 
+        资源的类型。 - iam:agency：IAM委托 - iam:user：IAM用户 - kms:cmk：DEW共享密钥 - obs:bucket：OBS桶 - swr:repo：SWR镜像仓库 - cbr:backup：CBR备份 - ims:image：IMS镜像 
+
         :return: The resource_type of this PreviewFinding.
-        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
+        :rtype: str
         """
         return self._resource_type
 
@@ -370,8 +372,10 @@ class PreviewFinding:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this PreviewFinding.
 
+        资源的类型。 - iam:agency：IAM委托 - iam:user：IAM用户 - kms:cmk：DEW共享密钥 - obs:bucket：OBS桶 - swr:repo：SWR镜像仓库 - cbr:backup：CBR备份 - ims:image：IMS镜像 
+
         :param resource_type: The resource_type of this PreviewFinding.
-        :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -382,7 +386,7 @@ class PreviewFinding:
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
         :return: The sources of this PreviewFinding.
-        :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
+        :rtype: list[str]
         """
         return self._sources
 
@@ -393,7 +397,7 @@ class PreviewFinding:
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
         :param sources: The sources of this PreviewFinding.
-        :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
+        :type sources: list[str]
         """
         self._sources = sources
 

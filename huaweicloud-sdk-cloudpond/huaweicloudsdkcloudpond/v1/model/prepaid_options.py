@@ -17,7 +17,7 @@ class PrepaidOptions:
     openapi_types = {
         'order_id': 'str',
         'product_id': 'str',
-        'pay_mode': 'PayMode'
+        'pay_mode': 'str'
     }
 
     attribute_map = {
@@ -35,8 +35,8 @@ class PrepaidOptions:
         :type order_id: str
         :param product_id: 产品ID
         :type product_id: str
-        :param pay_mode: 
-        :type pay_mode: :class:`huaweicloudsdkcloudpond.v1.PayMode`
+        :param pay_mode: 包周期付款类型 - FULL: 全预付 - HALF：半预付
+        :type pay_mode: str
         """
         
         
@@ -101,8 +101,10 @@ class PrepaidOptions:
     def pay_mode(self):
         r"""Gets the pay_mode of this PrepaidOptions.
 
+        包周期付款类型 - FULL: 全预付 - HALF：半预付
+
         :return: The pay_mode of this PrepaidOptions.
-        :rtype: :class:`huaweicloudsdkcloudpond.v1.PayMode`
+        :rtype: str
         """
         return self._pay_mode
 
@@ -110,8 +112,10 @@ class PrepaidOptions:
     def pay_mode(self, pay_mode):
         r"""Sets the pay_mode of this PrepaidOptions.
 
+        包周期付款类型 - FULL: 全预付 - HALF：半预付
+
         :param pay_mode: The pay_mode of this PrepaidOptions.
-        :type pay_mode: :class:`huaweicloudsdkcloudpond.v1.PayMode`
+        :type pay_mode: str
         """
         self._pay_mode = pay_mode
 

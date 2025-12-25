@@ -15,7 +15,7 @@ class InstanceAction:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'InstanceActionType',
+        'action': 'str',
         'parameters': 'InstanceActionParameters'
     }
 
@@ -29,8 +29,8 @@ class InstanceAction:
 
         The model defined in huaweicloud sdk
 
-        :param action: 
-        :type action: :class:`huaweicloudsdkservicestage.v2.InstanceActionType`
+        :param action: 操作，支持start, stop, restart, scale, rollback。
+        :type action: str
         :param parameters: 
         :type parameters: :class:`huaweicloudsdkservicestage.v2.InstanceActionParameters`
         """
@@ -49,8 +49,10 @@ class InstanceAction:
     def action(self):
         r"""Gets the action of this InstanceAction.
 
+        操作，支持start, stop, restart, scale, rollback。
+
         :return: The action of this InstanceAction.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceActionType`
+        :rtype: str
         """
         return self._action
 
@@ -58,8 +60,10 @@ class InstanceAction:
     def action(self, action):
         r"""Sets the action of this InstanceAction.
 
+        操作，支持start, stop, restart, scale, rollback。
+
         :param action: The action of this InstanceAction.
-        :type action: :class:`huaweicloudsdkservicestage.v2.InstanceActionType`
+        :type action: str
         """
         self._action = action
 

@@ -10,10 +10,16 @@ class SisRegion:
                         "https://sis-ext.cn-north-4.myhuaweicloud.com")
     CN_EAST_3 = Region("cn-east-3",
                         "https://sis-ext.cn-east-3.myhuaweicloud.com")
+    AP_SOUTHEAST_3 = Region("ap-southeast-3",
+                        "https://sis-ext.ap-southeast-3.myhuaweicloud.com")
+    ME_EAST_1 = Region("me-east-1",
+                        "https://sis-ext.me-east-1.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-east-3": CN_EAST_3,
+        "ap-southeast-3": AP_SOUTHEAST_3,
+        "me-east-1": ME_EAST_1,
     }
 
     @classmethod

@@ -30,9 +30,9 @@ class ShowRaspProtectStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param protect_host_num: 防护主机数
+        :param protect_host_num: **参数解释** 当前项目（或指定企业项目）下已添加应用防护的云服务器总数，统计范围为所有已启用RASP防护的主机 **取值范围** 取值0-为该项目下云服务器总数量（无上限，实际受账号资源配额限制） 
         :type protect_host_num: int
-        :param anti_tampering_num: 防御篡改攻击数
+        :param anti_tampering_num: **参数解释** 近7天内当前项目（或指定企业项目）下RASP防护成功拦截的篡改类攻击总数，与功能介绍中&#39;近七天微服务RASP攻击数量&#39;对应 **取值范围** 取值0-无上限（实际受攻击频次限制） 
         :type anti_tampering_num: int
         """
         
@@ -51,7 +51,7 @@ class ShowRaspProtectStatisticsResponse(SdkResponse):
     def protect_host_num(self):
         r"""Gets the protect_host_num of this ShowRaspProtectStatisticsResponse.
 
-        防护主机数
+        **参数解释** 当前项目（或指定企业项目）下已添加应用防护的云服务器总数，统计范围为所有已启用RASP防护的主机 **取值范围** 取值0-为该项目下云服务器总数量（无上限，实际受账号资源配额限制） 
 
         :return: The protect_host_num of this ShowRaspProtectStatisticsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ShowRaspProtectStatisticsResponse(SdkResponse):
     def protect_host_num(self, protect_host_num):
         r"""Sets the protect_host_num of this ShowRaspProtectStatisticsResponse.
 
-        防护主机数
+        **参数解释** 当前项目（或指定企业项目）下已添加应用防护的云服务器总数，统计范围为所有已启用RASP防护的主机 **取值范围** 取值0-为该项目下云服务器总数量（无上限，实际受账号资源配额限制） 
 
         :param protect_host_num: The protect_host_num of this ShowRaspProtectStatisticsResponse.
         :type protect_host_num: int
@@ -73,7 +73,7 @@ class ShowRaspProtectStatisticsResponse(SdkResponse):
     def anti_tampering_num(self):
         r"""Gets the anti_tampering_num of this ShowRaspProtectStatisticsResponse.
 
-        防御篡改攻击数
+        **参数解释** 近7天内当前项目（或指定企业项目）下RASP防护成功拦截的篡改类攻击总数，与功能介绍中'近七天微服务RASP攻击数量'对应 **取值范围** 取值0-无上限（实际受攻击频次限制） 
 
         :return: The anti_tampering_num of this ShowRaspProtectStatisticsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ShowRaspProtectStatisticsResponse(SdkResponse):
     def anti_tampering_num(self, anti_tampering_num):
         r"""Sets the anti_tampering_num of this ShowRaspProtectStatisticsResponse.
 
-        防御篡改攻击数
+        **参数解释** 近7天内当前项目（或指定企业项目）下RASP防护成功拦截的篡改类攻击总数，与功能介绍中'近七天微服务RASP攻击数量'对应 **取值范围** 取值0-无上限（实际受攻击频次限制） 
 
         :param anti_tampering_num: The anti_tampering_num of this ShowRaspProtectStatisticsResponse.
         :type anti_tampering_num: int

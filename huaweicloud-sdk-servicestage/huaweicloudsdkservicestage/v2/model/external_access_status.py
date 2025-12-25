@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ExternalAccessStatus:
-    """
-    allowed enum values
-    """
-    NORMAL = "NORMAL"
-    EXPIRED = "EXPIRED"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

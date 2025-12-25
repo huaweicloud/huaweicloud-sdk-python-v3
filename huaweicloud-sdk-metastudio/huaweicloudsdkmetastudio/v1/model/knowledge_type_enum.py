@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class KnowledgeTypeEnum:
-    """
-    allowed enum values
-    """
-    QUESTION_ANSWER = "QUESTION_ANSWER"
-    DOCUMENT = "DOCUMENT"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

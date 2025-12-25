@@ -4,14 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TaskType:
-    """
-    allowed enum values
-    """
-    CLUSTER = "Cluster"
-    PRECHECK = "PreCheck"
-    ROLLBACK = "Rollback"
-    SNAPSHOT = "Snapshot"
-    POSTCHECK = "PostCheck"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -4,14 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class RelationType:
-    """
-    allowed enum values
-    """
-    ALARM_RULE = "ALARM_RULE"
-    RESOURCE = "RESOURCE"
-    RESOURCE_POLICY_NOTIFICATION = "RESOURCE_POLICY_NOTIFICATION"
-    RESOURCE_POLICY_ALARM = "RESOURCE_POLICY_ALARM"
-    EVENT_SYS = "EVENT.SYS"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

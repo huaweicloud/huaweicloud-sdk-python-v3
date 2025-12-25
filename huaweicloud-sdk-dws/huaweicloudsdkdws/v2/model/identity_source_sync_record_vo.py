@@ -51,7 +51,7 @@ class IdentitySourceSyncRecordVo:
         :type id: str
         :param identity_source_id: **参数解释**： 身份源ID。 **取值范围**： 不涉及。
         :type identity_source_id: str
-        :param identity_source_type: **参数解释**： 身份源类型。 **取值范围**： 不涉及。
+        :param identity_source_type: **参数解释**： 身份源类型。 **取值范围**： - ldap：目录服务数据源。 - oneaccess：聚合型数据源
         :type identity_source_type: str
         :param start_time: **参数解释**： 任务开始时间。 **取值范围**： 不涉及。
         :type start_time: int
@@ -65,7 +65,7 @@ class IdentitySourceSyncRecordVo:
         :type delete_count: int
         :param failed_count: **参数解释**： 失败记录数。 **取值范围**： 大于等于0。
         :type failed_count: int
-        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 状态。 **取值范围**： - RUNNING：运行中。 - FINISHED：已完成。 - FAILED：失败。
         :type status: str
         :param fail_reason: **参数解释**： 失败原因。 **取值范围**： 不涉及。
         :type fail_reason: str
@@ -157,7 +157,7 @@ class IdentitySourceSyncRecordVo:
     def identity_source_type(self):
         r"""Gets the identity_source_type of this IdentitySourceSyncRecordVo.
 
-        **参数解释**： 身份源类型。 **取值范围**： 不涉及。
+        **参数解释**： 身份源类型。 **取值范围**： - ldap：目录服务数据源。 - oneaccess：聚合型数据源
 
         :return: The identity_source_type of this IdentitySourceSyncRecordVo.
         :rtype: str
@@ -168,7 +168,7 @@ class IdentitySourceSyncRecordVo:
     def identity_source_type(self, identity_source_type):
         r"""Sets the identity_source_type of this IdentitySourceSyncRecordVo.
 
-        **参数解释**： 身份源类型。 **取值范围**： 不涉及。
+        **参数解释**： 身份源类型。 **取值范围**： - ldap：目录服务数据源。 - oneaccess：聚合型数据源
 
         :param identity_source_type: The identity_source_type of this IdentitySourceSyncRecordVo.
         :type identity_source_type: str
@@ -311,7 +311,7 @@ class IdentitySourceSyncRecordVo:
     def status(self):
         r"""Gets the status of this IdentitySourceSyncRecordVo.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - RUNNING：运行中。 - FINISHED：已完成。 - FAILED：失败。
 
         :return: The status of this IdentitySourceSyncRecordVo.
         :rtype: str
@@ -322,7 +322,7 @@ class IdentitySourceSyncRecordVo:
     def status(self, status):
         r"""Sets the status of this IdentitySourceSyncRecordVo.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - RUNNING：运行中。 - FINISHED：已完成。 - FAILED：失败。
 
         :param status: The status of this IdentitySourceSyncRecordVo.
         :type status: str

@@ -35,7 +35,7 @@ class ShowSmartChatJobResponse(SdkResponse):
         'job_finish_reason': 'str',
         'rtc_room_info': 'RTCRoomInfoList',
         'chat_state': 'int',
-        'language': 'LanguageEnum',
+        'language': 'str',
         'chat_access_address': 'str',
         'chat_access_rest_address': 'str',
         'x_request_id': 'str'
@@ -98,7 +98,7 @@ class ShowSmartChatJobResponse(SdkResponse):
         :type chat_video_type: str
         :param is_transparent: 是否透明背景
         :type is_transparent: bool
-        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
+        :param default_language: 默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持） * fr：法语（仅海外站点支持）
         :type default_language: str
         :param client_id: clientId
         :type client_id: str
@@ -110,8 +110,8 @@ class ShowSmartChatJobResponse(SdkResponse):
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
         :param chat_state: 数字人智能交互对话的状态。 0: 等待建链 1: 等待关闭链路 2: 建链成功 3: 进入休眠 4: 等待休眠
         :type chat_state: int
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param chat_access_address: 智能交互接入地址。
         :type chat_access_address: str
         :param chat_access_rest_address: 智能交互Rest接口接入地址。
@@ -472,7 +472,7 @@ class ShowSmartChatJobResponse(SdkResponse):
     def default_language(self):
         r"""Gets the default_language of this ShowSmartChatJobResponse.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
+        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持） * fr：法语（仅海外站点支持）
 
         :return: The default_language of this ShowSmartChatJobResponse.
         :rtype: str
@@ -483,7 +483,7 @@ class ShowSmartChatJobResponse(SdkResponse):
     def default_language(self, default_language):
         r"""Sets the default_language of this ShowSmartChatJobResponse.
 
-        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持）
+        默认语言，智能交互接口使用。默认值CN。 * CN：中文。 * EN：英文。 * ESP：西班牙语（仅海外站点支持） * por：葡萄牙语（仅海外站点支持） * Arabic：阿拉伯语（仅海外站点支持） * Thai：泰语（仅海外站点支持） * fr：法语（仅海外站点支持）
 
         :param default_language: The default_language of this ShowSmartChatJobResponse.
         :type default_language: str
@@ -600,8 +600,10 @@ class ShowSmartChatJobResponse(SdkResponse):
     def language(self):
         r"""Gets the language of this ShowSmartChatJobResponse.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this ShowSmartChatJobResponse.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -609,8 +611,10 @@ class ShowSmartChatJobResponse(SdkResponse):
     def language(self, language):
         r"""Sets the language of this ShowSmartChatJobResponse.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this ShowSmartChatJobResponse.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

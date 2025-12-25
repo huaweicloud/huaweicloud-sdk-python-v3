@@ -39,13 +39,13 @@ class ImageBatchSyncReq:
 
         :param event_type: 事件类型。可选值如下： - head_image：头像 - album：相册 - dynamic：动态 - article：帖子 - comment：评论 - room_cover：房间封面 - group_message：群聊图片 - message：私聊图片 - product：商品图片
         :type event_type: str
-        :param categories: 检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 可通过配置上述场景，来完对应场景元素的检测。每个检测场景的检测次数会分类统计。
+        :param categories: 检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - politics：涉政人物的检测。 - image_text：广告图文的检测。 可通过配置上述场景，来完对应场景元素的检测。每个检测场景的检测次数会分类统计。
         :type categories: list[str]
         :param image_text_config: 
         :type image_text_config: :class:`huaweicloudsdkmoderation.v3.ImageBatchSyncReqImageTextConfig`
         :param urls: 图片url列表。
         :type urls: list[:class:`huaweicloudsdkmoderation.v3.ImageBatchSyncReqUrls`]
-        :param language: 指定图片中文字语种类型。 - zh: 中文 - en: 英文 默认值为zh，中国站仅支持zh。
+        :param language: 指定图片中文字语种类型。 - zh: 中文 默认值为zh，中国站仅支持zh。
         :type language: str
         :param biz_type: 用户在控制台界面创建的自定义审核策略名称。 - 如果请求参数中包含biz_type则优先使用biztype。 - 如果未传biz_type则event_type和categories为必传参数。
         :type biz_type: str
@@ -99,7 +99,7 @@ class ImageBatchSyncReq:
     def categories(self):
         r"""Gets the categories of this ImageBatchSyncReq.
 
-        检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 可通过配置上述场景，来完对应场景元素的检测。每个检测场景的检测次数会分类统计。
+        检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - politics：涉政人物的检测。 - image_text：广告图文的检测。 可通过配置上述场景，来完对应场景元素的检测。每个检测场景的检测次数会分类统计。
 
         :return: The categories of this ImageBatchSyncReq.
         :rtype: list[str]
@@ -110,7 +110,7 @@ class ImageBatchSyncReq:
     def categories(self, categories):
         r"""Sets the categories of this ImageBatchSyncReq.
 
-        检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 可通过配置上述场景，来完对应场景元素的检测。每个检测场景的检测次数会分类统计。
+        检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - politics：涉政人物的检测。 - image_text：广告图文的检测。 可通过配置上述场景，来完对应场景元素的检测。每个检测场景的检测次数会分类统计。
 
         :param categories: The categories of this ImageBatchSyncReq.
         :type categories: list[str]
@@ -161,7 +161,7 @@ class ImageBatchSyncReq:
     def language(self):
         r"""Gets the language of this ImageBatchSyncReq.
 
-        指定图片中文字语种类型。 - zh: 中文 - en: 英文 默认值为zh，中国站仅支持zh。
+        指定图片中文字语种类型。 - zh: 中文 默认值为zh，中国站仅支持zh。
 
         :return: The language of this ImageBatchSyncReq.
         :rtype: str
@@ -172,7 +172,7 @@ class ImageBatchSyncReq:
     def language(self, language):
         r"""Sets the language of this ImageBatchSyncReq.
 
-        指定图片中文字语种类型。 - zh: 中文 - en: 英文 默认值为zh，中国站仅支持zh。
+        指定图片中文字语种类型。 - zh: 中文 默认值为zh，中国站仅支持zh。
 
         :param language: The language of this ImageBatchSyncReq.
         :type language: str

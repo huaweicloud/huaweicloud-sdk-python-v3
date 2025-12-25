@@ -29,9 +29,9 @@ class DelResourcesReq:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息
+        :param resources: **参数解释** 当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息 **约束限制** 包含的资源对象个数为1到1000 
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
-        :param product_resources: 当资源添加方式为手动创建、资源层级为云产品时，删除资源分组中的资源只需传递删除的资源信息
+        :param product_resources: **参数解释** 当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息 **约束限制** 包含的资源个数为1到50个 
         :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]
         """
         
@@ -50,7 +50,7 @@ class DelResourcesReq:
     def resources(self):
         r"""Gets the resources of this DelResourcesReq.
 
-        当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息
+        **参数解释** 当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息 **约束限制** 包含的资源对象个数为1到1000 
 
         :return: The resources of this DelResourcesReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -61,7 +61,7 @@ class DelResourcesReq:
     def resources(self, resources):
         r"""Sets the resources of this DelResourcesReq.
 
-        当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息
+        **参数解释** 当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息 **约束限制** 包含的资源对象个数为1到1000 
 
         :param resources: The resources of this DelResourcesReq.
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -72,7 +72,7 @@ class DelResourcesReq:
     def product_resources(self):
         r"""Gets the product_resources of this DelResourcesReq.
 
-        当资源添加方式为手动创建、资源层级为云产品时，删除资源分组中的资源只需传递删除的资源信息
+        **参数解释** 当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息 **约束限制** 包含的资源个数为1到50个 
 
         :return: The product_resources of this DelResourcesReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.ProductResource`]
@@ -83,7 +83,7 @@ class DelResourcesReq:
     def product_resources(self, product_resources):
         r"""Sets the product_resources of this DelResourcesReq.
 
-        当资源添加方式为手动创建、资源层级为云产品时，删除资源分组中的资源只需传递删除的资源信息
+        **参数解释** 当资源添加方式为手动创建、资源层级为子维度时，删除资源分组中的资源只需传递删除的资源信息 **约束限制** 包含的资源个数为1到50个 
 
         :param product_resources: The product_resources of this DelResourcesReq.
         :type product_resources: list[:class:`huaweicloudsdkces.v2.ProductResource`]

@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class StrongConstraintType:
-    """
-    allowed enum values
-    """
-    BOOL = "bool"
-    RANGE = "range"
-    STRUCT = "struct"
-    INTERACTION = "interaction"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

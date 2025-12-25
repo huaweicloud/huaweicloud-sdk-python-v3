@@ -24,7 +24,7 @@ class AlgorithmCreateSrlz:
         'run': 'RunSrlz',
         'name': 'str',
         'description': 'str',
-        'category': 'CategoryF62Enum',
+        'category': 'str',
         'mount_dir': 'str',
         'image_repo_id': 'int'
     }
@@ -68,7 +68,7 @@ class AlgorithmCreateSrlz:
         :param description: 描述
         :type description: str
         :param category: 算法类型  * &#x60;code&#x60; - Code * &#x60;artifact&#x60; - Artifact * &#x60;image&#x60; - Image
-        :type category: :class:`huaweicloudsdkoctopus.v2.CategoryF62Enum`
+        :type category: :class:`huaweicloudsdkoctopus.v2.str`
         :param mount_dir: 挂载目录，需绝对路径
         :type mount_dir: str
         :param image_repo_id: 镜像id
@@ -286,7 +286,7 @@ class AlgorithmCreateSrlz:
         算法类型  * `code` - Code * `artifact` - Artifact * `image` - Image
 
         :return: The category of this AlgorithmCreateSrlz.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.CategoryF62Enum`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.str`
         """
         return self._category
 
@@ -297,7 +297,7 @@ class AlgorithmCreateSrlz:
         算法类型  * `code` - Code * `artifact` - Artifact * `image` - Image
 
         :param category: The category of this AlgorithmCreateSrlz.
-        :type category: :class:`huaweicloudsdkoctopus.v2.CategoryF62Enum`
+        :type category: :class:`huaweicloudsdkoctopus.v2.str`
         """
         self._category = category
 

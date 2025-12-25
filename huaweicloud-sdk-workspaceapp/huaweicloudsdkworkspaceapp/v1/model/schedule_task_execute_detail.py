@@ -19,8 +19,8 @@ class ScheduleTaskExecuteDetail:
         'execute_id': 'str',
         'server_id': 'str',
         'server_name': 'str',
-        'status': 'ScheduleTaskStatus',
-        'task_type': 'ScheduleTaskTypeEnum',
+        'status': 'str',
+        'task_type': 'str',
         'time_zone': 'str',
         'begin_time': 'datetime',
         'end_time': 'datetime',
@@ -55,10 +55,10 @@ class ScheduleTaskExecuteDetail:
         :type server_id: str
         :param server_name: 操作的机器名称。
         :type server_name: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
-        :param task_type: 
-        :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
+        :param status: job状态： * &#x60;WAITING&#x60; - 等待 * &#x60;RUNNING&#x60; - 运行中 * &#x60;SUCCESS&#x60; - 完成 * &#x60;FAILED&#x60; - 失败
+        :type status: str
+        :param task_type: 定时任务类型： * &#x60;RESTART_SERVER&#x60; - 定时重启服务器 * &#x60;START_SERVER&#x60; - 定时开机 * &#x60;STOP_SERVER&#x60; - 定时关机 * &#x60;REINSTALL_OS&#x60; - 定时重装操作系统
+        :type task_type: str
         :param time_zone: 时区。
         :type time_zone: str
         :param begin_time: 子任务开始时间。
@@ -201,8 +201,10 @@ class ScheduleTaskExecuteDetail:
     def status(self):
         r"""Gets the status of this ScheduleTaskExecuteDetail.
 
+        job状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
+
         :return: The status of this ScheduleTaskExecuteDetail.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
+        :rtype: str
         """
         return self._status
 
@@ -210,8 +212,10 @@ class ScheduleTaskExecuteDetail:
     def status(self, status):
         r"""Sets the status of this ScheduleTaskExecuteDetail.
 
+        job状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
+
         :param status: The status of this ScheduleTaskExecuteDetail.
-        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
+        :type status: str
         """
         self._status = status
 
@@ -219,8 +223,10 @@ class ScheduleTaskExecuteDetail:
     def task_type(self):
         r"""Gets the task_type of this ScheduleTaskExecuteDetail.
 
+        定时任务类型： * `RESTART_SERVER` - 定时重启服务器 * `START_SERVER` - 定时开机 * `STOP_SERVER` - 定时关机 * `REINSTALL_OS` - 定时重装操作系统
+
         :return: The task_type of this ScheduleTaskExecuteDetail.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
+        :rtype: str
         """
         return self._task_type
 
@@ -228,8 +234,10 @@ class ScheduleTaskExecuteDetail:
     def task_type(self, task_type):
         r"""Sets the task_type of this ScheduleTaskExecuteDetail.
 
+        定时任务类型： * `RESTART_SERVER` - 定时重启服务器 * `START_SERVER` - 定时开机 * `STOP_SERVER` - 定时关机 * `REINSTALL_OS` - 定时重装操作系统
+
         :param task_type: The task_type of this ScheduleTaskExecuteDetail.
-        :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
+        :type task_type: str
         """
         self._task_type = task_type
 

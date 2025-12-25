@@ -4,18 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CentralNetworkQuotaKeyEnum:
-    """
-    allowed enum values
-    """
-    CENTRAL_NETWORKS_PER_ACCOUNT = "central_networks_per_account"
-    POLICY_VERSIONS_PER_CENTRAL_NETWORK = "policy_versions_per_central_network"
-    SIZE_OF_DOCUMENT_PER_CENTRAL_NETWORK_POLICY_VERSION = "size_of_document_per_central_network_policy_version"
-    PLANES_PER_CENTRAL_NETWORK = "planes_per_central_network"
-    ER_INSTANCES_PER_REGION_PER_CENTRAL_NETWORK = "er_instances_per_region_per_central_network"
-    CONNECTIONS_PER_CENTRAL_NETWORK = "connections_per_central_network"
-    ATTACHMENTS_PER_CENTRAL_NETWORK = "attachments_per_central_network"
-    GDGW_ATTACHMENTS_PER_REGION_PER_CENTRAL_NETWORK = "GDGW_attachments_per_region_per_central_network"
-    ER_ROUTE_TABLE_ATTACHMENTS_PER_REGION_PER_CENTRAL_NETWORK = "ER_ROUTE_TABLE_attachments_per_region_per_central_network"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

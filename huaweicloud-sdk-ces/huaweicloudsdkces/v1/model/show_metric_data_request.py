@@ -53,7 +53,7 @@ class ShowMetricDataRequest:
         :type dim_0: str
         :param dim_1: 指标的第二层维度，目前最大支持4个维度，维度编号从0开始；维度格式为dim.1&#x3D;key,value，如mongos_instance_id,c65d39d7-185c-4616-9aca-ad65703b15f9；key为指标的维度信息，如：文档数据库服务，则第二层维度为mongos_instance_id，value为文档数据库集群实例下的mongos节点ID；各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
         :type dim_1: str
-        :param dim_2: 指标的第三层维度，目前最大支持4个维度，维度编号从0开始；维度格式为dim.2&#x3D;key,value，如mongod_primary_instance_id,5f9498e9-36f8-4317-9ea1-ebe28cba99b4；key为指标的维度信息，如：文档数据库服务，则第三层维度为mongod_primary_instance_id，value为文档数据库实例下的主节点ID；各资源的指标维度名称可查看：“[服务指标维度]ces_03_0059.xml)”。
+        :param dim_2: 指标的第三层维度，目前最大支持4个维度，维度编号从0开始；维度格式为dim.2&#x3D;key,value，如mongod_primary_instance_id,5f9498e9-36f8-4317-9ea1-ebe28cba99b4；key为指标的维度信息，如：文档数据库服务，则第三层维度为mongod_primary_instance_id，value为文档数据库实例下的主节点ID；各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
         :type dim_2: str
         :param dim_3: 指标的第四层维度，目前最大支持4个维度，维度编号从0开始；维度格式为dim.3&#x3D;key,value，如mongod_secondary_instance_id,b46fa2c7-aac6-4ae3-9337-f4ea97f885cb；key为指标的维度信息，如：文档数据库服务，则第四层维度为mongod_secondary_instance_id，value为文档数据库实例下的备节点ID；各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
         :type dim_3: str
@@ -187,7 +187,7 @@ class ShowMetricDataRequest:
     def dim_2(self):
         r"""Gets the dim_2 of this ShowMetricDataRequest.
 
-        指标的第三层维度，目前最大支持4个维度，维度编号从0开始；维度格式为dim.2=key,value，如mongod_primary_instance_id,5f9498e9-36f8-4317-9ea1-ebe28cba99b4；key为指标的维度信息，如：文档数据库服务，则第三层维度为mongod_primary_instance_id，value为文档数据库实例下的主节点ID；各资源的指标维度名称可查看：“[服务指标维度]ces_03_0059.xml)”。
+        指标的第三层维度，目前最大支持4个维度，维度编号从0开始；维度格式为dim.2=key,value，如mongod_primary_instance_id,5f9498e9-36f8-4317-9ea1-ebe28cba99b4；key为指标的维度信息，如：文档数据库服务，则第三层维度为mongod_primary_instance_id，value为文档数据库实例下的主节点ID；各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
 
         :return: The dim_2 of this ShowMetricDataRequest.
         :rtype: str
@@ -198,7 +198,7 @@ class ShowMetricDataRequest:
     def dim_2(self, dim_2):
         r"""Sets the dim_2 of this ShowMetricDataRequest.
 
-        指标的第三层维度，目前最大支持4个维度，维度编号从0开始；维度格式为dim.2=key,value，如mongod_primary_instance_id,5f9498e9-36f8-4317-9ea1-ebe28cba99b4；key为指标的维度信息，如：文档数据库服务，则第三层维度为mongod_primary_instance_id，value为文档数据库实例下的主节点ID；各资源的指标维度名称可查看：“[服务指标维度]ces_03_0059.xml)”。
+        指标的第三层维度，目前最大支持4个维度，维度编号从0开始；维度格式为dim.2=key,value，如mongod_primary_instance_id,5f9498e9-36f8-4317-9ea1-ebe28cba99b4；key为指标的维度信息，如：文档数据库服务，则第三层维度为mongod_primary_instance_id，value为文档数据库实例下的主节点ID；各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
 
         :param dim_2: The dim_2 of this ShowMetricDataRequest.
         :type dim_2: str

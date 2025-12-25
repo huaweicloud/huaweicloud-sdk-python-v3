@@ -17,7 +17,7 @@ class SiteInformation:
     openapi_types = {
         'region_id': 'str',
         'project_id': 'str',
-        'gateway_type': 'GatewayTypeEnum',
+        'gateway_type': 'str',
         'gateway_id': 'str',
         'site_code': 'str',
         'asn': 'int'
@@ -41,8 +41,8 @@ class SiteInformation:
         :type region_id: str
         :param project_id: 实例所属项目ID。
         :type project_id: str
-        :param gateway_type: 
-        :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
+        :param gateway_type: 网关的类型。GDGW：全球接入网关。
+        :type gateway_type: str
         :param gateway_id: 网关的ID。
         :type gateway_id: str
         :param site_code: 站点编码。
@@ -116,8 +116,10 @@ class SiteInformation:
     def gateway_type(self):
         r"""Gets the gateway_type of this SiteInformation.
 
+        网关的类型。GDGW：全球接入网关。
+
         :return: The gateway_type of this SiteInformation.
-        :rtype: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
+        :rtype: str
         """
         return self._gateway_type
 
@@ -125,8 +127,10 @@ class SiteInformation:
     def gateway_type(self, gateway_type):
         r"""Sets the gateway_type of this SiteInformation.
 
+        网关的类型。GDGW：全球接入网关。
+
         :param gateway_type: The gateway_type of this SiteInformation.
-        :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
+        :type gateway_type: str
         """
         self._gateway_type = gateway_type
 

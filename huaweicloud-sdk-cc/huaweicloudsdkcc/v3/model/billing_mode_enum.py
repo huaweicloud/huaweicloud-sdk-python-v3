@@ -4,17 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class BillingModeEnum:
-    """
-    allowed enum values
-    """
-    _1 = "1"
-    _2 = "2"
-    _3 = "3"
-    _4 = "4"
-    _5 = "5"
-    _6 = "6"
-    _7 = "7"
-    _8 = "8"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

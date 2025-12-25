@@ -41,7 +41,7 @@ class WorkloadPlanInfo:
 
         The model defined in huaweicloud sdk
 
-        :param status: **参数解释**： 计划状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 计划状态。 **取值范围**： - 0：表示计划未执行 - 1：表示计划执行中
         :type status: int
         :param project_id: **参数解释**： 项目ID。 **取值范围**： 不涉及。
         :type project_id: str
@@ -88,7 +88,7 @@ class WorkloadPlanInfo:
     def status(self):
         r"""Gets the status of this WorkloadPlanInfo.
 
-        **参数解释**： 计划状态。 **取值范围**： 不涉及。
+        **参数解释**： 计划状态。 **取值范围**： - 0：表示计划未执行 - 1：表示计划执行中
 
         :return: The status of this WorkloadPlanInfo.
         :rtype: int
@@ -99,7 +99,7 @@ class WorkloadPlanInfo:
     def status(self, status):
         r"""Sets the status of this WorkloadPlanInfo.
 
-        **参数解释**： 计划状态。 **取值范围**： 不涉及。
+        **参数解释**： 计划状态。 **取值范围**： - 0：表示计划未执行 - 1：表示计划执行中
 
         :param status: The status of this WorkloadPlanInfo.
         :type status: int

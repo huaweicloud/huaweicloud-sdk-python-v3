@@ -18,7 +18,7 @@ class UpdateReportSettingBody:
         'setting_name': 'str',
         'enabled': 'bool',
         'region_ids': 'list[str]',
-        'resource_types': 'list[ResourceTypeEnum]',
+        'resource_types': 'list[str]',
         'time_range': 'int',
         'report_name_prefix': 'str'
     }
@@ -44,7 +44,7 @@ class UpdateReportSettingBody:
         :param region_ids: 参与统计的资源归属的区域列表，不设置表示全部区域，默认不设置
         :type region_ids: list[str]
         :param resource_types: 参与统计的资源类型列表，不设置表示全部资源类型，默认不设置
-        :type resource_types: list[:class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`]
+        :type resource_types: list[str]
         :param time_range: 参与统计的数据范围（生成报告时刻往前多少天内的数据参与统计，滚动计算），默认7天，取值范围：7到30天，详情类数据报告不受此项配置约束
         :type time_range: int
         :param report_name_prefix: 报告名称的前缀，取值长度为3到128个字符
@@ -143,7 +143,7 @@ class UpdateReportSettingBody:
         参与统计的资源类型列表，不设置表示全部资源类型，默认不设置
 
         :return: The resource_types of this UpdateReportSettingBody.
-        :rtype: list[:class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`]
+        :rtype: list[str]
         """
         return self._resource_types
 
@@ -154,7 +154,7 @@ class UpdateReportSettingBody:
         参与统计的资源类型列表，不设置表示全部资源类型，默认不设置
 
         :param resource_types: The resource_types of this UpdateReportSettingBody.
-        :type resource_types: list[:class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`]
+        :type resource_types: list[str]
         """
         self._resource_types = resource_types
 

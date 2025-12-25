@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Area:
-    """
-    allowed enum values
-    """
-    OUTOFCM = "OUTOFCM"
-    CM = "CM"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

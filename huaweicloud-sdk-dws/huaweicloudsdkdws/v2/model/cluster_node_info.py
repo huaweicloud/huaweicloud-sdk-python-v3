@@ -45,9 +45,9 @@ class ClusterNodeInfo:
         :type id: str
         :param name: **参数解释**： 节点名称。 **取值范围**： 不涉及。
         :type name: str
-        :param status: **参数解释**： 节点状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 节点状态。 **取值范围**： - 100：创建中。 - 199：空闲。 - 200：正常。 - 300：不可用。 - 303：创建失败。 - 304：删除中。 - 400：已删除。 - 800：冻结。 - 900：关机。
         :type status: str
-        :param sub_status: **参数解释**： 节点子状态。 **取值范围**： 不涉及。
+        :param sub_status: **参数解释**： 节点子状态。 **取值范围**： - 110：ECS已就绪。 - 120：软件已部署。 - 130：节点已正常。 - 140：节点已监控。
         :type sub_status: str
         :param spec: **参数解释**： 节点规格。 **取值范围**： 不涉及。
         :type spec: str
@@ -136,7 +136,7 @@ class ClusterNodeInfo:
     def status(self):
         r"""Gets the status of this ClusterNodeInfo.
 
-        **参数解释**： 节点状态。 **取值范围**： 不涉及。
+        **参数解释**： 节点状态。 **取值范围**： - 100：创建中。 - 199：空闲。 - 200：正常。 - 300：不可用。 - 303：创建失败。 - 304：删除中。 - 400：已删除。 - 800：冻结。 - 900：关机。
 
         :return: The status of this ClusterNodeInfo.
         :rtype: str
@@ -147,7 +147,7 @@ class ClusterNodeInfo:
     def status(self, status):
         r"""Sets the status of this ClusterNodeInfo.
 
-        **参数解释**： 节点状态。 **取值范围**： 不涉及。
+        **参数解释**： 节点状态。 **取值范围**： - 100：创建中。 - 199：空闲。 - 200：正常。 - 300：不可用。 - 303：创建失败。 - 304：删除中。 - 400：已删除。 - 800：冻结。 - 900：关机。
 
         :param status: The status of this ClusterNodeInfo.
         :type status: str
@@ -158,7 +158,7 @@ class ClusterNodeInfo:
     def sub_status(self):
         r"""Gets the sub_status of this ClusterNodeInfo.
 
-        **参数解释**： 节点子状态。 **取值范围**： 不涉及。
+        **参数解释**： 节点子状态。 **取值范围**： - 110：ECS已就绪。 - 120：软件已部署。 - 130：节点已正常。 - 140：节点已监控。
 
         :return: The sub_status of this ClusterNodeInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class ClusterNodeInfo:
     def sub_status(self, sub_status):
         r"""Sets the sub_status of this ClusterNodeInfo.
 
-        **参数解释**： 节点子状态。 **取值范围**： 不涉及。
+        **参数解释**： 节点子状态。 **取值范围**： - 110：ECS已就绪。 - 120：软件已部署。 - 130：节点已正常。 - 140：节点已监控。
 
         :param sub_status: The sub_status of this ClusterNodeInfo.
         :type sub_status: str

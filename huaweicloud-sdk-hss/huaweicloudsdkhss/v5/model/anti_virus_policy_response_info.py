@@ -83,7 +83,7 @@ class AntiVirusPolicyResponseInfo:
         :type ignore_dir: str
         :param action: **参数解释**: 处置动作 **取值范围**: - auto：自动处置 - manual：人工处置 
         :type action: str
-        :param invalidate: 失效，包含如下:   - true ：是   - fasle ：否
+        :param invalidate: 失效，包含如下:   - true ：是   - false ：否
         :type invalidate: bool
         :param host_num: **参数解释**: 影响主机数量 **取值范围**: 最小值0，最大值2147483647 
         :type host_num: int
@@ -419,7 +419,7 @@ class AntiVirusPolicyResponseInfo:
     def invalidate(self):
         r"""Gets the invalidate of this AntiVirusPolicyResponseInfo.
 
-        失效，包含如下:   - true ：是   - fasle ：否
+        失效，包含如下:   - true ：是   - false ：否
 
         :return: The invalidate of this AntiVirusPolicyResponseInfo.
         :rtype: bool
@@ -430,7 +430,7 @@ class AntiVirusPolicyResponseInfo:
     def invalidate(self, invalidate):
         r"""Sets the invalidate of this AntiVirusPolicyResponseInfo.
 
-        失效，包含如下:   - true ：是   - fasle ：否
+        失效，包含如下:   - true ：是   - false ：否
 
         :param invalidate: The invalidate of this AntiVirusPolicyResponseInfo.
         :type invalidate: bool

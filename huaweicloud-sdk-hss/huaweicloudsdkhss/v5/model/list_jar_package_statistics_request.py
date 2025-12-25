@@ -16,62 +16,61 @@ class ListJarPackageStatisticsRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'file_name': 'str',
-        'category': 'str',
+        'offset': 'int',
         'limit': 'int',
-        'offset': 'int'
+        'category': 'str',
+        'file_name': 'str'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
-        'file_name': 'file_name',
-        'category': 'category',
+        'offset': 'offset',
         'limit': 'limit',
-        'offset': 'offset'
+        'category': 'category',
+        'file_name': 'file_name'
     }
 
-    def __init__(self, enterprise_project_id=None, file_name=None, category=None, limit=None, offset=None):
+    def __init__(self, enterprise_project_id=None, offset=None, limit=None, category=None, file_name=None):
         r"""ListJarPackageStatisticsRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param file_name: jar包名称
-        :type file_name: str
-        :param category: 类别，包含如下:   - host : 主机   - container : 容器
-        :type category: str
-        :param limit: 每页显示数量
-        :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+        :type limit: int
+        :param category: **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+        :type category: str
+        :param file_name: **参数解释**: 中间件文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
+        :type file_name: str
         """
         
         
 
         self._enterprise_project_id = None
-        self._file_name = None
-        self._category = None
-        self._limit = None
         self._offset = None
+        self._limit = None
+        self._category = None
+        self._file_name = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if file_name is not None:
-            self.file_name = file_name
-        if category is not None:
-            self.category = category
-        if limit is not None:
-            self.limit = limit
         if offset is not None:
             self.offset = offset
+        if limit is not None:
+            self.limit = limit
+        self.category = category
+        if file_name is not None:
+            self.file_name = file_name
 
     @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListJarPackageStatisticsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListJarPackageStatisticsRequest.
         :rtype: str
@@ -82,7 +81,7 @@ class ListJarPackageStatisticsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListJarPackageStatisticsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListJarPackageStatisticsRequest.
         :type enterprise_project_id: str
@@ -90,76 +89,10 @@ class ListJarPackageStatisticsRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def file_name(self):
-        r"""Gets the file_name of this ListJarPackageStatisticsRequest.
-
-        jar包名称
-
-        :return: The file_name of this ListJarPackageStatisticsRequest.
-        :rtype: str
-        """
-        return self._file_name
-
-    @file_name.setter
-    def file_name(self, file_name):
-        r"""Sets the file_name of this ListJarPackageStatisticsRequest.
-
-        jar包名称
-
-        :param file_name: The file_name of this ListJarPackageStatisticsRequest.
-        :type file_name: str
-        """
-        self._file_name = file_name
-
-    @property
-    def category(self):
-        r"""Gets the category of this ListJarPackageStatisticsRequest.
-
-        类别，包含如下:   - host : 主机   - container : 容器
-
-        :return: The category of this ListJarPackageStatisticsRequest.
-        :rtype: str
-        """
-        return self._category
-
-    @category.setter
-    def category(self, category):
-        r"""Sets the category of this ListJarPackageStatisticsRequest.
-
-        类别，包含如下:   - host : 主机   - container : 容器
-
-        :param category: The category of this ListJarPackageStatisticsRequest.
-        :type category: str
-        """
-        self._category = category
-
-    @property
-    def limit(self):
-        r"""Gets the limit of this ListJarPackageStatisticsRequest.
-
-        每页显示数量
-
-        :return: The limit of this ListJarPackageStatisticsRequest.
-        :rtype: int
-        """
-        return self._limit
-
-    @limit.setter
-    def limit(self, limit):
-        r"""Sets the limit of this ListJarPackageStatisticsRequest.
-
-        每页显示数量
-
-        :param limit: The limit of this ListJarPackageStatisticsRequest.
-        :type limit: int
-        """
-        self._limit = limit
-
-    @property
     def offset(self):
         r"""Gets the offset of this ListJarPackageStatisticsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListJarPackageStatisticsRequest.
         :rtype: int
@@ -170,12 +103,78 @@ class ListJarPackageStatisticsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListJarPackageStatisticsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListJarPackageStatisticsRequest.
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ListJarPackageStatisticsRequest.
+
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+
+        :return: The limit of this ListJarPackageStatisticsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ListJarPackageStatisticsRequest.
+
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
+
+        :param limit: The limit of this ListJarPackageStatisticsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def category(self):
+        r"""Gets the category of this ListJarPackageStatisticsRequest.
+
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+
+        :return: The category of this ListJarPackageStatisticsRequest.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        r"""Sets the category of this ListJarPackageStatisticsRequest.
+
+        **参数解释**: 资产类别 **约束限制**: 不涉及 **取值范围**: - host：主机资产 - container：容器资产  **默认取值**: host 
+
+        :param category: The category of this ListJarPackageStatisticsRequest.
+        :type category: str
+        """
+        self._category = category
+
+    @property
+    def file_name(self):
+        r"""Gets the file_name of this ListJarPackageStatisticsRequest.
+
+        **参数解释**: 中间件文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
+
+        :return: The file_name of this ListJarPackageStatisticsRequest.
+        :rtype: str
+        """
+        return self._file_name
+
+    @file_name.setter
+    def file_name(self, file_name):
+        r"""Sets the file_name of this ListJarPackageStatisticsRequest.
+
+        **参数解释**: 中间件文件名称 **约束限制**: 不涉及 **取值范围**: 字符长度0-256 **默认取值**: 不涉及 
+
+        :param file_name: The file_name of this ListJarPackageStatisticsRequest.
+        :type file_name: str
+        """
+        self._file_name = file_name
 
     def to_dict(self):
         result = {}

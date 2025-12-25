@@ -16,8 +16,8 @@ class ListComponentSnapshotsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'ApiVersionObj',
-        'kind': 'ComponentSnapshotKindObj',
+        'api_version': 'str',
+        'kind': 'str',
         'items': 'list[ComponentSnapshotItem]'
     }
 
@@ -32,10 +32,10 @@ class ListComponentSnapshotsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: 
-        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
-        :param kind: 
-        :type kind: :class:`huaweicloudsdkcae.v1.ComponentSnapshotKindObj`
+        :param api_version: API版本，固定值“v1”，该值不可修改。
+        :type api_version: str
+        :param kind: API类型，固定值“ComponentSnapshot”，该值不可修改。
+        :type kind: str
         :param items: 快照列表。
         :type items: list[:class:`huaweicloudsdkcae.v1.ComponentSnapshotItem`]
         """
@@ -58,8 +58,10 @@ class ListComponentSnapshotsResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ListComponentSnapshotsResponse.
 
+        API版本，固定值“v1”，该值不可修改。
+
         :return: The api_version of this ListComponentSnapshotsResponse.
-        :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :rtype: str
         """
         return self._api_version
 
@@ -67,8 +69,10 @@ class ListComponentSnapshotsResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ListComponentSnapshotsResponse.
 
+        API版本，固定值“v1”，该值不可修改。
+
         :param api_version: The api_version of this ListComponentSnapshotsResponse.
-        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -76,8 +80,10 @@ class ListComponentSnapshotsResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ListComponentSnapshotsResponse.
 
+        API类型，固定值“ComponentSnapshot”，该值不可修改。
+
         :return: The kind of this ListComponentSnapshotsResponse.
-        :rtype: :class:`huaweicloudsdkcae.v1.ComponentSnapshotKindObj`
+        :rtype: str
         """
         return self._kind
 
@@ -85,8 +91,10 @@ class ListComponentSnapshotsResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ListComponentSnapshotsResponse.
 
+        API类型，固定值“ComponentSnapshot”，该值不可修改。
+
         :param kind: The kind of this ListComponentSnapshotsResponse.
-        :type kind: :class:`huaweicloudsdkcae.v1.ComponentSnapshotKindObj`
+        :type kind: str
         """
         self._kind = kind
 

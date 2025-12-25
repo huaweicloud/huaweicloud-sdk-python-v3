@@ -17,13 +17,13 @@ class AlarmEntity:
     openapi_types = {
         'alarm_record_id': 'str',
         'eps_id': 'str',
-        'status': 'AlarmStatusEnum',
+        'status': 'str',
         'severity': 'str',
         'generate_time': 'str',
         'last_update_time': 'str',
         'duration': 'str',
-        'alarm_type': 'AlarmTypeEnum',
-        'namespace': 'AlarmNamespaceEnum',
+        'alarm_type': 'str',
+        'namespace': 'str',
         'abnormal_resource': 'str',
         'alarm_policy': 'str',
         'region_id': 'str',
@@ -69,8 +69,8 @@ class AlarmEntity:
         :type alarm_record_id: str
         :param eps_id: 企业项目ID
         :type eps_id: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkbcc.v1.AlarmStatusEnum`
+        :param status: 告警状态，取值范围：ok,alarm,invalid
+        :type status: str
         :param severity: 告警级别,取值范围：1,2,3,4
         :type severity: str
         :param generate_time: 告警产生时间
@@ -79,10 +79,10 @@ class AlarmEntity:
         :type last_update_time: str
         :param duration: 持续时长
         :type duration: str
-        :param alarm_type: 
-        :type alarm_type: :class:`huaweicloudsdkbcc.v1.AlarmTypeEnum`
-        :param namespace: 
-        :type namespace: :class:`huaweicloudsdkbcc.v1.AlarmNamespaceEnum`
+        :param alarm_type: 告警类型
+        :type alarm_type: str
+        :param namespace: 告警命名空间，取值范围：SYS.CBR,SYS.RDS,SYS.GaussDB
+        :type namespace: str
         :param abnormal_resource: 异常资源数量
         :type abnormal_resource: str
         :param alarm_policy: 告警策略
@@ -218,8 +218,10 @@ class AlarmEntity:
     def status(self):
         r"""Gets the status of this AlarmEntity.
 
+        告警状态，取值范围：ok,alarm,invalid
+
         :return: The status of this AlarmEntity.
-        :rtype: :class:`huaweicloudsdkbcc.v1.AlarmStatusEnum`
+        :rtype: str
         """
         return self._status
 
@@ -227,8 +229,10 @@ class AlarmEntity:
     def status(self, status):
         r"""Sets the status of this AlarmEntity.
 
+        告警状态，取值范围：ok,alarm,invalid
+
         :param status: The status of this AlarmEntity.
-        :type status: :class:`huaweicloudsdkbcc.v1.AlarmStatusEnum`
+        :type status: str
         """
         self._status = status
 
@@ -324,8 +328,10 @@ class AlarmEntity:
     def alarm_type(self):
         r"""Gets the alarm_type of this AlarmEntity.
 
+        告警类型
+
         :return: The alarm_type of this AlarmEntity.
-        :rtype: :class:`huaweicloudsdkbcc.v1.AlarmTypeEnum`
+        :rtype: str
         """
         return self._alarm_type
 
@@ -333,8 +339,10 @@ class AlarmEntity:
     def alarm_type(self, alarm_type):
         r"""Sets the alarm_type of this AlarmEntity.
 
+        告警类型
+
         :param alarm_type: The alarm_type of this AlarmEntity.
-        :type alarm_type: :class:`huaweicloudsdkbcc.v1.AlarmTypeEnum`
+        :type alarm_type: str
         """
         self._alarm_type = alarm_type
 
@@ -342,8 +350,10 @@ class AlarmEntity:
     def namespace(self):
         r"""Gets the namespace of this AlarmEntity.
 
+        告警命名空间，取值范围：SYS.CBR,SYS.RDS,SYS.GaussDB
+
         :return: The namespace of this AlarmEntity.
-        :rtype: :class:`huaweicloudsdkbcc.v1.AlarmNamespaceEnum`
+        :rtype: str
         """
         return self._namespace
 
@@ -351,8 +361,10 @@ class AlarmEntity:
     def namespace(self, namespace):
         r"""Sets the namespace of this AlarmEntity.
 
+        告警命名空间，取值范围：SYS.CBR,SYS.RDS,SYS.GaussDB
+
         :param namespace: The namespace of this AlarmEntity.
-        :type namespace: :class:`huaweicloudsdkbcc.v1.AlarmNamespaceEnum`
+        :type namespace: str
         """
         self._namespace = namespace
 

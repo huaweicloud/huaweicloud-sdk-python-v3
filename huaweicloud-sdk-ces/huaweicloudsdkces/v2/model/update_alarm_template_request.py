@@ -29,7 +29,7 @@ class UpdateAlarmTemplateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 告警模板ID
+        :param template_id: **参数解释**： 告警模板的ID。 **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。 **默认取值**： 不涉及。 
         :type template_id: str
         :param body: Body of the UpdateAlarmTemplateRequest
         :type body: :class:`huaweicloudsdkces.v2.UpdateAlarmTemplateRequestBody`
@@ -49,7 +49,7 @@ class UpdateAlarmTemplateRequest:
     def template_id(self):
         r"""Gets the template_id of this UpdateAlarmTemplateRequest.
 
-        告警模板ID
+        **参数解释**： 告警模板的ID。 **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。 **默认取值**： 不涉及。 
 
         :return: The template_id of this UpdateAlarmTemplateRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateAlarmTemplateRequest:
     def template_id(self, template_id):
         r"""Sets the template_id of this UpdateAlarmTemplateRequest.
 
-        告警模板ID
+        **参数解释**： 告警模板的ID。 **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。 **默认取值**： 不涉及。 
 
         :param template_id: The template_id of this UpdateAlarmTemplateRequest.
         :type template_id: str

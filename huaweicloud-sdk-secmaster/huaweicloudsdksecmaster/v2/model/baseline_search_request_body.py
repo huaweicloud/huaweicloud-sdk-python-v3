@@ -21,7 +21,7 @@ class BaselineSearchRequestBody:
         'order': 'str',
         'from_date': 'str',
         'to_date': 'str',
-        'condition': 'object'
+        'condition': 'BaselineSearchRequestBodyCondition'
     }
 
     attribute_map = {
@@ -45,14 +45,14 @@ class BaselineSearchRequestBody:
         :type offset: int
         :param sort_by: 排序关键字
         :type sort_by: str
-        :param order: 降序或升序, DESC|ESC
+        :param order: 降序或升序, DESC|ASC
         :type order: str
         :param from_date: 起始时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
         :type from_date: str
         :param to_date: 截止时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
         :type to_date: str
-        :param condition: 搜索条件表达式
-        :type condition: object
+        :param condition: 
+        :type condition: :class:`huaweicloudsdksecmaster.v2.BaselineSearchRequestBodyCondition`
         """
         
         
@@ -151,7 +151,7 @@ class BaselineSearchRequestBody:
     def order(self):
         r"""Gets the order of this BaselineSearchRequestBody.
 
-        降序或升序, DESC|ESC
+        降序或升序, DESC|ASC
 
         :return: The order of this BaselineSearchRequestBody.
         :rtype: str
@@ -162,7 +162,7 @@ class BaselineSearchRequestBody:
     def order(self, order):
         r"""Sets the order of this BaselineSearchRequestBody.
 
-        降序或升序, DESC|ESC
+        降序或升序, DESC|ASC
 
         :param order: The order of this BaselineSearchRequestBody.
         :type order: str
@@ -217,10 +217,8 @@ class BaselineSearchRequestBody:
     def condition(self):
         r"""Gets the condition of this BaselineSearchRequestBody.
 
-        搜索条件表达式
-
         :return: The condition of this BaselineSearchRequestBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdksecmaster.v2.BaselineSearchRequestBodyCondition`
         """
         return self._condition
 
@@ -228,10 +226,8 @@ class BaselineSearchRequestBody:
     def condition(self, condition):
         r"""Sets the condition of this BaselineSearchRequestBody.
 
-        搜索条件表达式
-
         :param condition: The condition of this BaselineSearchRequestBody.
-        :type condition: object
+        :type condition: :class:`huaweicloudsdksecmaster.v2.BaselineSearchRequestBodyCondition`
         """
         self._condition = condition
 

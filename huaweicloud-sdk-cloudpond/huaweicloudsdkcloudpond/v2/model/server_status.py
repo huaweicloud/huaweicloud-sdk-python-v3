@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ServerStatus:
-    """
-    allowed enum values
-    """
-    PENDING_PAYMENT = "PENDING_PAYMENT"
-    DELIVERING = "DELIVERING"
-    USING = "USING"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -15,7 +15,7 @@ class TargetInfo:
     sensitive_list = []
 
     openapi_types = {
-        'target_type': 'ScheduleTaskTargetTypeEnum',
+        'target_type': 'str',
         'target_id': 'str',
         'target_name': 'str'
     }
@@ -31,8 +31,8 @@ class TargetInfo:
 
         The model defined in huaweicloud sdk
 
-        :param target_type: 
-        :type target_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTargetTypeEnum`
+        :param target_type: 定时任务对象类型： * &#x60;SERVER&#x60; - 服务器 * &#x60;SERVER_GROUP&#x60; - 服务器组
+        :type target_type: str
         :param target_id: 对象id。
         :type target_id: str
         :param target_name: 对象名称。
@@ -55,8 +55,10 @@ class TargetInfo:
     def target_type(self):
         r"""Gets the target_type of this TargetInfo.
 
+        定时任务对象类型： * `SERVER` - 服务器 * `SERVER_GROUP` - 服务器组
+
         :return: The target_type of this TargetInfo.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTargetTypeEnum`
+        :rtype: str
         """
         return self._target_type
 
@@ -64,8 +66,10 @@ class TargetInfo:
     def target_type(self, target_type):
         r"""Sets the target_type of this TargetInfo.
 
+        定时任务对象类型： * `SERVER` - 服务器 * `SERVER_GROUP` - 服务器组
+
         :param target_type: The target_type of this TargetInfo.
-        :type target_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTargetTypeEnum`
+        :type target_type: str
         """
         self._target_type = target_type
 

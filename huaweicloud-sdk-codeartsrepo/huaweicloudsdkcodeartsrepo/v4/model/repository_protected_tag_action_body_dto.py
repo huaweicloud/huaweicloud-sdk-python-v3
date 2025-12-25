@@ -16,7 +16,7 @@ class RepositoryProtectedTagActionBodyDto:
 
     openapi_types = {
         'enable': 'bool',
-        'user_ids': 'list[object]',
+        'user_ids': 'list[int]',
         'user_team_ids': 'list[int]',
         'related_role_ids': 'list[str]',
         'action': 'str'
@@ -38,7 +38,7 @@ class RepositoryProtectedTagActionBodyDto:
         :param enable: **参数解释：** 是否启用。 **约束限制：** 不涉及。 **取值范围：** - true，开启规则限制 - false，关闭规则限制 **默认取值：** 不涉及。
         :type enable: bool
         :param user_ids: **参数解释：** 用户ID列表。 **约束限制：** 不涉及。 **取值范围：** Integer **默认取值：** 不涉及。
-        :type user_ids: list[object]
+        :type user_ids: list[int]
         :param user_team_ids: **参数解释：** 成员组ID列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
         :type user_team_ids: list[int]
         :param related_role_ids: **参数解释：** 关联角色ID列表。 **约束限制：** 不涉及。 **取值范围：** 不涉及。 **默认取值：** 不涉及。
@@ -96,7 +96,7 @@ class RepositoryProtectedTagActionBodyDto:
         **参数解释：** 用户ID列表。 **约束限制：** 不涉及。 **取值范围：** Integer **默认取值：** 不涉及。
 
         :return: The user_ids of this RepositoryProtectedTagActionBodyDto.
-        :rtype: list[object]
+        :rtype: list[int]
         """
         return self._user_ids
 
@@ -107,7 +107,7 @@ class RepositoryProtectedTagActionBodyDto:
         **参数解释：** 用户ID列表。 **约束限制：** 不涉及。 **取值范围：** Integer **默认取值：** 不涉及。
 
         :param user_ids: The user_ids of this RepositoryProtectedTagActionBodyDto.
-        :type user_ids: list[object]
+        :type user_ids: list[int]
         """
         self._user_ids = user_ids
 

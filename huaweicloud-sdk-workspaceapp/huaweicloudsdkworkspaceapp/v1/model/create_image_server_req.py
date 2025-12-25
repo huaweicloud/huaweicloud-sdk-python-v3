@@ -29,7 +29,7 @@ class CreateImageServerReq:
         'ou_name': 'str',
         'is_vdi': 'bool',
         'scheduler_hints': 'WdhParam',
-        'extra_session_type': 'ExtraSessionTypeEnum',
+        'extra_session_type': 'str',
         'extra_session_size': 'int',
         'route_policy': 'RoutePolicy',
         'tags': 'list[TmsTag]',
@@ -91,8 +91,8 @@ class CreateImageServerReq:
         :type is_vdi: bool
         :param scheduler_hints: 
         :type scheduler_hints: :class:`huaweicloudsdkworkspaceapp.v1.WdhParam`
-        :param extra_session_type: 
-        :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        :param extra_session_type: 付费会话类型 * &#x60;GPU&#x60; - GPU规格会话 * &#x60;CPU&#x60; - 普通CPU规格会话
+        :type extra_session_type: str
         :param extra_session_size: 需要付费的会话数，单位/个。
         :type extra_session_size: int
         :param route_policy: 
@@ -458,8 +458,10 @@ class CreateImageServerReq:
     def extra_session_type(self):
         r"""Gets the extra_session_type of this CreateImageServerReq.
 
+        付费会话类型 * `GPU` - GPU规格会话 * `CPU` - 普通CPU规格会话
+
         :return: The extra_session_type of this CreateImageServerReq.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        :rtype: str
         """
         return self._extra_session_type
 
@@ -467,8 +469,10 @@ class CreateImageServerReq:
     def extra_session_type(self, extra_session_type):
         r"""Sets the extra_session_type of this CreateImageServerReq.
 
+        付费会话类型 * `GPU` - GPU规格会话 * `CPU` - 普通CPU规格会话
+
         :param extra_session_type: The extra_session_type of this CreateImageServerReq.
-        :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        :type extra_session_type: str
         """
         self._extra_session_type = extra_session_type
 

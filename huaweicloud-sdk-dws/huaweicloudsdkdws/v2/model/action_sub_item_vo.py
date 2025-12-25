@@ -37,7 +37,7 @@ class ActionSubItemVo:
 
         The model defined in huaweicloud sdk
 
-        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 状态。 **取值范围**： - SUCCESS：成功。 - RUNNING：运行中。 - WAITING：等待中。 - FAILED：失败。 - ROLLBACK_RUNNING：回滚运行中。 - ROLLBACK_SUCCESS：回滚成功。 - ROLLBACK_FAIL：回滚失败。
         :type status: str
         :param detail: **参数解释**： 扩展信息。 **取值范围**： 不涉及。
         :type detail: str
@@ -78,7 +78,7 @@ class ActionSubItemVo:
     def status(self):
         r"""Gets the status of this ActionSubItemVo.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - SUCCESS：成功。 - RUNNING：运行中。 - WAITING：等待中。 - FAILED：失败。 - ROLLBACK_RUNNING：回滚运行中。 - ROLLBACK_SUCCESS：回滚成功。 - ROLLBACK_FAIL：回滚失败。
 
         :return: The status of this ActionSubItemVo.
         :rtype: str
@@ -89,7 +89,7 @@ class ActionSubItemVo:
     def status(self, status):
         r"""Sets the status of this ActionSubItemVo.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - SUCCESS：成功。 - RUNNING：运行中。 - WAITING：等待中。 - FAILED：失败。 - ROLLBACK_RUNNING：回滚运行中。 - ROLLBACK_SUCCESS：回滚成功。 - ROLLBACK_FAIL：回滚失败。
 
         :param status: The status of this ActionSubItemVo.
         :type status: str

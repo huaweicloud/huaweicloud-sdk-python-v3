@@ -19,13 +19,13 @@ class CentralNetworkGdgwAttachment:
         'name': 'str',
         'description': 'str',
         'domain_id': 'str',
-        'state': 'CentralNetworkConnectionStateEnum',
+        'state': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'central_network_id': 'str',
         'central_network_plane_id': 'str',
         'global_connection_bandwidth_id': 'str',
-        'bandwidth_type': 'BandwidthTypeEnum',
+        'bandwidth_type': 'str',
         'bandwidth_size': 'int',
         'is_frozen': 'bool',
         'enterprise_router_id': 'str',
@@ -79,8 +79,8 @@ class CentralNetworkGdgwAttachment:
         :type description: str
         :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param state: 
-        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
+        :param state: 中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+        :type state: str
         :param created_at: 实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
         :type created_at: datetime
         :param updated_at: 实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
@@ -91,8 +91,8 @@ class CentralNetworkGdgwAttachment:
         :type central_network_plane_id: str
         :param global_connection_bandwidth_id: 全域互联带宽ID。
         :type global_connection_bandwidth_id: str
-        :param bandwidth_type: 
-        :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
+        :param bandwidth_type: 带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+        :type bandwidth_type: str
         :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
         :param is_frozen: 是否冻结。
@@ -267,8 +267,10 @@ class CentralNetworkGdgwAttachment:
     def state(self):
         r"""Gets the state of this CentralNetworkGdgwAttachment.
 
+        中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+
         :return: The state of this CentralNetworkGdgwAttachment.
-        :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
+        :rtype: str
         """
         return self._state
 
@@ -276,8 +278,10 @@ class CentralNetworkGdgwAttachment:
     def state(self, state):
         r"""Sets the state of this CentralNetworkGdgwAttachment.
 
+        中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+
         :param state: The state of this CentralNetworkGdgwAttachment.
-        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
+        :type state: str
         """
         self._state = state
 
@@ -395,8 +399,10 @@ class CentralNetworkGdgwAttachment:
     def bandwidth_type(self):
         r"""Gets the bandwidth_type of this CentralNetworkGdgwAttachment.
 
+        带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+
         :return: The bandwidth_type of this CentralNetworkGdgwAttachment.
-        :rtype: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
+        :rtype: str
         """
         return self._bandwidth_type
 
@@ -404,8 +410,10 @@ class CentralNetworkGdgwAttachment:
     def bandwidth_type(self, bandwidth_type):
         r"""Sets the bandwidth_type of this CentralNetworkGdgwAttachment.
 
+        带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+
         :param bandwidth_type: The bandwidth_type of this CentralNetworkGdgwAttachment.
-        :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
+        :type bandwidth_type: str
         """
         self._bandwidth_type = bandwidth_type
 

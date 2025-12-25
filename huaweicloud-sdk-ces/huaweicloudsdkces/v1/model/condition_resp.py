@@ -17,11 +17,11 @@ class ConditionResp:
     openapi_types = {
         'comparison_operator': 'str',
         'count': 'int',
-        'filter': 'FilterResp',
-        'period': 'PeriodResp',
+        'filter': 'str',
+        'period': 'int',
         'unit': 'str',
         'value': 'float',
-        'suppress_duration': 'SuppressDurationResp'
+        'suppress_duration': 'int'
     }
 
     attribute_map = {
@@ -39,20 +39,20 @@ class ConditionResp:
 
         The model defined in huaweicloud sdk
 
-        :param comparison_operator: **参数解释**： 告警阈值的比较条件。 **取值范围**： 只能是&gt;、&#x3D;、&lt;、&gt;&#x3D;、&lt;&#x3D;、!&#x3D;。 
+        :param comparison_operator: **参数解释**： 阈值符号。     **取值范围**： 支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。 
         :type comparison_operator: str
-        :param count: **参数解释**： 触发告警的连续发生次数。 **取值范围**： 取值范围[1, 5]。告警类型为事件告警时，取值范围为[1, 100]。 
+        :param count: **参数解释**： 触发告警的连续发生次数。 **取值范围**： 整数，取值范围[1, 5]。 
         :type count: int
-        :param filter: 
-        :type filter: :class:`huaweicloudsdkces.v1.FilterResp`
-        :param period: 
-        :type period: :class:`huaweicloudsdkces.v1.PeriodResp`
+        :param filter: **参数解释**： 数据聚合的方式。 **取值范围**： 支持 average、variance、min、max、sum。 - average： 平均值 - variance：方差 - min：最小值 - max：最大值 - sum：求和 
+        :type filter: str
+        :param period: **参数解释**： 指标周期，单位是秒。如想了解各个云服务的指标原始周期可以参考“[支持服务列表](ces_03_0059.xml)” **取值范围**： 枚举值。 - 0代表立即触发，仅限事件场景使用。 - 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算。 - 300代表指标按5分钟聚合周期为一个数据点参与告警计算。 - 1200代表指标按20分钟聚合周期为一个数据点参与告警计算。 - 3600代表指标按1小时聚合周期为一个数据点参与告警计算。 - 14400代表指标按4小时聚合周期为一个数据点参与告警计算。 - 86400代表指标按1天聚合周期为一个数据点参与告警计算。 
+        :type period: int
         :param unit: **参数解释**： 数据的单位。 **取值范围**： 长度为[0,32]个字符。 
         :type unit: str
         :param value: **参数解释**： 告警阈值。具体阈值取值请参见附录中各服务监控指标中取值范围，如[支持监控的服务列表](ces_03_0059.xml)中ECS的CPU使用率cpu_util取值范围可配置80。 **取值范围**： 最小值为-1.7976931348623157e+108，最大值为1.7976931348623157e+108。 
         :type value: float
-        :param suppress_duration: 
-        :type suppress_duration: :class:`huaweicloudsdkces.v1.SuppressDurationResp`
+        :param suppress_duration: **参数解释**： 告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题。 **取值范围**： 枚举值，只能为0、300、600、900、1800、3600、10800、21600、43200、86400。 - 0：对于指标类告警，0代表告警一次。对于事件类告警，在立即触发场景中，0代表不抑制；在累计触发场景，0代表只告警一次。 - 300代表满足告警触发条件后每5分钟告警一次。 - 600代表满足告警触发条件后每10分钟告警一次。 - 900代表满足告警触发条件后每15分钟告警一次。 - 1800代表满足告警触发条件后每30分钟告警一次。 - 3600代表满足告警触发条件后每60分钟告警一次。 - 10800代表满足告警触发条件后每3小时告警一次。 - 21600代表满足告警触发条件后每6小时告警一次。 - 43200代表满足告警触发条件后每12小时告警一次。 - 86400代表满足告警触发条件后每一天告警一次。 
+        :type suppress_duration: int
         """
         
         
@@ -85,7 +85,7 @@ class ConditionResp:
     def comparison_operator(self):
         r"""Gets the comparison_operator of this ConditionResp.
 
-        **参数解释**： 告警阈值的比较条件。 **取值范围**： 只能是>、=、<、>=、<=、!=。 
+        **参数解释**： 阈值符号。     **取值范围**： 支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。 
 
         :return: The comparison_operator of this ConditionResp.
         :rtype: str
@@ -96,7 +96,7 @@ class ConditionResp:
     def comparison_operator(self, comparison_operator):
         r"""Sets the comparison_operator of this ConditionResp.
 
-        **参数解释**： 告警阈值的比较条件。 **取值范围**： 只能是>、=、<、>=、<=、!=。 
+        **参数解释**： 阈值符号。     **取值范围**： 支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。 
 
         :param comparison_operator: The comparison_operator of this ConditionResp.
         :type comparison_operator: str
@@ -107,7 +107,7 @@ class ConditionResp:
     def count(self):
         r"""Gets the count of this ConditionResp.
 
-        **参数解释**： 触发告警的连续发生次数。 **取值范围**： 取值范围[1, 5]。告警类型为事件告警时，取值范围为[1, 100]。 
+        **参数解释**： 触发告警的连续发生次数。 **取值范围**： 整数，取值范围[1, 5]。 
 
         :return: The count of this ConditionResp.
         :rtype: int
@@ -118,7 +118,7 @@ class ConditionResp:
     def count(self, count):
         r"""Sets the count of this ConditionResp.
 
-        **参数解释**： 触发告警的连续发生次数。 **取值范围**： 取值范围[1, 5]。告警类型为事件告警时，取值范围为[1, 100]。 
+        **参数解释**： 触发告警的连续发生次数。 **取值范围**： 整数，取值范围[1, 5]。 
 
         :param count: The count of this ConditionResp.
         :type count: int
@@ -129,8 +129,10 @@ class ConditionResp:
     def filter(self):
         r"""Gets the filter of this ConditionResp.
 
+        **参数解释**： 数据聚合的方式。 **取值范围**： 支持 average、variance、min、max、sum。 - average： 平均值 - variance：方差 - min：最小值 - max：最大值 - sum：求和 
+
         :return: The filter of this ConditionResp.
-        :rtype: :class:`huaweicloudsdkces.v1.FilterResp`
+        :rtype: str
         """
         return self._filter
 
@@ -138,8 +140,10 @@ class ConditionResp:
     def filter(self, filter):
         r"""Sets the filter of this ConditionResp.
 
+        **参数解释**： 数据聚合的方式。 **取值范围**： 支持 average、variance、min、max、sum。 - average： 平均值 - variance：方差 - min：最小值 - max：最大值 - sum：求和 
+
         :param filter: The filter of this ConditionResp.
-        :type filter: :class:`huaweicloudsdkces.v1.FilterResp`
+        :type filter: str
         """
         self._filter = filter
 
@@ -147,8 +151,10 @@ class ConditionResp:
     def period(self):
         r"""Gets the period of this ConditionResp.
 
+        **参数解释**： 指标周期，单位是秒。如想了解各个云服务的指标原始周期可以参考“[支持服务列表](ces_03_0059.xml)” **取值范围**： 枚举值。 - 0代表立即触发，仅限事件场景使用。 - 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算。 - 300代表指标按5分钟聚合周期为一个数据点参与告警计算。 - 1200代表指标按20分钟聚合周期为一个数据点参与告警计算。 - 3600代表指标按1小时聚合周期为一个数据点参与告警计算。 - 14400代表指标按4小时聚合周期为一个数据点参与告警计算。 - 86400代表指标按1天聚合周期为一个数据点参与告警计算。 
+
         :return: The period of this ConditionResp.
-        :rtype: :class:`huaweicloudsdkces.v1.PeriodResp`
+        :rtype: int
         """
         return self._period
 
@@ -156,8 +162,10 @@ class ConditionResp:
     def period(self, period):
         r"""Sets the period of this ConditionResp.
 
+        **参数解释**： 指标周期，单位是秒。如想了解各个云服务的指标原始周期可以参考“[支持服务列表](ces_03_0059.xml)” **取值范围**： 枚举值。 - 0代表立即触发，仅限事件场景使用。 - 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算。 - 300代表指标按5分钟聚合周期为一个数据点参与告警计算。 - 1200代表指标按20分钟聚合周期为一个数据点参与告警计算。 - 3600代表指标按1小时聚合周期为一个数据点参与告警计算。 - 14400代表指标按4小时聚合周期为一个数据点参与告警计算。 - 86400代表指标按1天聚合周期为一个数据点参与告警计算。 
+
         :param period: The period of this ConditionResp.
-        :type period: :class:`huaweicloudsdkces.v1.PeriodResp`
+        :type period: int
         """
         self._period = period
 
@@ -209,8 +217,10 @@ class ConditionResp:
     def suppress_duration(self):
         r"""Gets the suppress_duration of this ConditionResp.
 
+        **参数解释**： 告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题。 **取值范围**： 枚举值，只能为0、300、600、900、1800、3600、10800、21600、43200、86400。 - 0：对于指标类告警，0代表告警一次。对于事件类告警，在立即触发场景中，0代表不抑制；在累计触发场景，0代表只告警一次。 - 300代表满足告警触发条件后每5分钟告警一次。 - 600代表满足告警触发条件后每10分钟告警一次。 - 900代表满足告警触发条件后每15分钟告警一次。 - 1800代表满足告警触发条件后每30分钟告警一次。 - 3600代表满足告警触发条件后每60分钟告警一次。 - 10800代表满足告警触发条件后每3小时告警一次。 - 21600代表满足告警触发条件后每6小时告警一次。 - 43200代表满足告警触发条件后每12小时告警一次。 - 86400代表满足告警触发条件后每一天告警一次。 
+
         :return: The suppress_duration of this ConditionResp.
-        :rtype: :class:`huaweicloudsdkces.v1.SuppressDurationResp`
+        :rtype: int
         """
         return self._suppress_duration
 
@@ -218,8 +228,10 @@ class ConditionResp:
     def suppress_duration(self, suppress_duration):
         r"""Sets the suppress_duration of this ConditionResp.
 
+        **参数解释**： 告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题。 **取值范围**： 枚举值，只能为0、300、600、900、1800、3600、10800、21600、43200、86400。 - 0：对于指标类告警，0代表告警一次。对于事件类告警，在立即触发场景中，0代表不抑制；在累计触发场景，0代表只告警一次。 - 300代表满足告警触发条件后每5分钟告警一次。 - 600代表满足告警触发条件后每10分钟告警一次。 - 900代表满足告警触发条件后每15分钟告警一次。 - 1800代表满足告警触发条件后每30分钟告警一次。 - 3600代表满足告警触发条件后每60分钟告警一次。 - 10800代表满足告警触发条件后每3小时告警一次。 - 21600代表满足告警触发条件后每6小时告警一次。 - 43200代表满足告警触发条件后每12小时告警一次。 - 86400代表满足告警触发条件后每一天告警一次。 
+
         :param suppress_duration: The suppress_duration of this ConditionResp.
-        :type suppress_duration: :class:`huaweicloudsdkces.v1.SuppressDurationResp`
+        :type suppress_duration: int
         """
         self._suppress_duration = suppress_duration
 

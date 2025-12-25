@@ -4,16 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class JobTag:
-    """
-    allowed enum values
-    """
-    ECOMMERCE = "ECOMMERCE"
-    NEWS = "NEWS"
-    MARKETING = "MARKETING"
-    LIVE = "LIVE"
-    EDUCATION = "EDUCATION"
-    CUSTOMER = "CUSTOMER"
-    STORYTELLING = "STORYTELLING"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

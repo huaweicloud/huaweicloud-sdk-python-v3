@@ -31,7 +31,7 @@ class Notification:
 
         :param type: **参数解释**： 通知类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - notification：通知组或主题订阅。 - contact：云账号联系人。 - contactGroup：（已废弃）通知组。 - autoscaling：AS通知，只在AS中使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 **默认取值**： 不涉及。 
         :type type: str
-        :param notification_list: **参数解释**：  告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。 **约束限制**： 当type为notification时，notification_list列表不能为空；当type为autoscaling时，列表必须为[]。若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。若alarm_notifications、ok_notification同时存在时，notification_list值保持一致。最多包含20个通知对象。 
+        :param notification_list: **参数解释**：  告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。 **约束限制**： 当type为notification时，notification_list列表不能为空；当type为autoscaling时，列表必须为[]。若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。若alarm_notifications、ok_notification同时存在时，notification_list值保持一致。最多包含20个通知对象，最少可以为0个。 
         :type notification_list: list[str]
         """
         
@@ -70,7 +70,7 @@ class Notification:
     def notification_list(self):
         r"""Gets the notification_list of this Notification.
 
-        **参数解释**：  告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。 **约束限制**： 当type为notification时，notification_list列表不能为空；当type为autoscaling时，列表必须为[]。若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。若alarm_notifications、ok_notification同时存在时，notification_list值保持一致。最多包含20个通知对象。 
+        **参数解释**：  告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。 **约束限制**： 当type为notification时，notification_list列表不能为空；当type为autoscaling时，列表必须为[]。若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。若alarm_notifications、ok_notification同时存在时，notification_list值保持一致。最多包含20个通知对象，最少可以为0个。 
 
         :return: The notification_list of this Notification.
         :rtype: list[str]
@@ -81,7 +81,7 @@ class Notification:
     def notification_list(self, notification_list):
         r"""Sets the notification_list of this Notification.
 
-        **参数解释**：  告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。 **约束限制**： 当type为notification时，notification_list列表不能为空；当type为autoscaling时，列表必须为[]。若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。若alarm_notifications、ok_notification同时存在时，notification_list值保持一致。最多包含20个通知对象。 
+        **参数解释**：  告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。 **约束限制**： 当type为notification时，notification_list列表不能为空；当type为autoscaling时，列表必须为[]。若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。若alarm_notifications、ok_notification同时存在时，notification_list值保持一致。最多包含20个通知对象，最少可以为0个。 
 
         :param notification_list: The notification_list of this Notification.
         :type notification_list: list[str]

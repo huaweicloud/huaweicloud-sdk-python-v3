@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ConnectionBandwidthChargeModeEnum:
-    """
-    allowed enum values
-    """
-    BWD = "bwd"
-    TRF = "trf"
-    _95 = "95"
-    _95AVR = "95avr"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

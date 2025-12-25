@@ -15,7 +15,7 @@ class CentralNetworkQuota:
     sensitive_list = []
 
     openapi_types = {
-        'quota_key': 'CentralNetworkQuotaKeyEnum',
+        'quota_key': 'str',
         'quota_limit': 'int',
         'used': 'int',
         'unit': 'str'
@@ -33,8 +33,8 @@ class CentralNetworkQuota:
 
         The model defined in huaweicloud sdk
 
-        :param quota_key: 
-        :type quota_key: :class:`huaweicloudsdkcc.v3.CentralNetworkQuotaKeyEnum`
+        :param quota_key: 中心网络配额类型。 - central_networks_per_account (每个账户的中心网数) - policy_versions_per_central_network (每个中心网的策略数) - size_of_document_per_central_network_policy_version (中心网络策略文档大小(KB)) - planes_per_central_network (每个中心网的平面数) - er_instances_per_region_per_central_network (每个中心网络每个区域的Er实例数) - connections_per_central_network (每个中心网的连接数) - attachments_per_central_network (每个中心网的附件数) - GDGW_attachments_per_region_per_central_network (每个中心网每个区域的GDGW附件数) - ER_ROUTE_TABLE_attachments_per_region_per_central_network (每个中心网每个区域的ER_ROUTE_TABLE附件数)
+        :type quota_key: str
         :param quota_limit: 配额大小。
         :type quota_limit: int
         :param used: 已使用配额。
@@ -60,8 +60,10 @@ class CentralNetworkQuota:
     def quota_key(self):
         r"""Gets the quota_key of this CentralNetworkQuota.
 
+        中心网络配额类型。 - central_networks_per_account (每个账户的中心网数) - policy_versions_per_central_network (每个中心网的策略数) - size_of_document_per_central_network_policy_version (中心网络策略文档大小(KB)) - planes_per_central_network (每个中心网的平面数) - er_instances_per_region_per_central_network (每个中心网络每个区域的Er实例数) - connections_per_central_network (每个中心网的连接数) - attachments_per_central_network (每个中心网的附件数) - GDGW_attachments_per_region_per_central_network (每个中心网每个区域的GDGW附件数) - ER_ROUTE_TABLE_attachments_per_region_per_central_network (每个中心网每个区域的ER_ROUTE_TABLE附件数)
+
         :return: The quota_key of this CentralNetworkQuota.
-        :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkQuotaKeyEnum`
+        :rtype: str
         """
         return self._quota_key
 
@@ -69,8 +71,10 @@ class CentralNetworkQuota:
     def quota_key(self, quota_key):
         r"""Sets the quota_key of this CentralNetworkQuota.
 
+        中心网络配额类型。 - central_networks_per_account (每个账户的中心网数) - policy_versions_per_central_network (每个中心网的策略数) - size_of_document_per_central_network_policy_version (中心网络策略文档大小(KB)) - planes_per_central_network (每个中心网的平面数) - er_instances_per_region_per_central_network (每个中心网络每个区域的Er实例数) - connections_per_central_network (每个中心网的连接数) - attachments_per_central_network (每个中心网的附件数) - GDGW_attachments_per_region_per_central_network (每个中心网每个区域的GDGW附件数) - ER_ROUTE_TABLE_attachments_per_region_per_central_network (每个中心网每个区域的ER_ROUTE_TABLE附件数)
+
         :param quota_key: The quota_key of this CentralNetworkQuota.
-        :type quota_key: :class:`huaweicloudsdkcc.v3.CentralNetworkQuotaKeyEnum`
+        :type quota_key: str
         """
         self._quota_key = quota_key
 

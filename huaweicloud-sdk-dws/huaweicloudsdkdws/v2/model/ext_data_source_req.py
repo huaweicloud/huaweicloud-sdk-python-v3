@@ -43,7 +43,7 @@ class ExtDataSourceReq:
 
         :param data_source_id: **参数解释**： 外部数据源ID。当数据源为MRS时为必选字段。 **取值范围**： 不涉及。
         :type data_source_id: str
-        :param type: **参数解释**： 数据源类型。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 数据源类型。 **取值范围**： - OBS: obs数据源。 - LAKE_FORMATION: lake_formation数据源。 - MRS: mrs数据源。
         :type type: str
         :param data_source_name: **参数解释**： 外部数据源名称。 **取值范围**： 仅可包含大小写字母、数字、下划线，1到64个字符。
         :type data_source_name: str
@@ -111,7 +111,7 @@ class ExtDataSourceReq:
     def type(self):
         r"""Gets the type of this ExtDataSourceReq.
 
-        **参数解释**： 数据源类型。 **取值范围**： 不涉及。
+        **参数解释**： 数据源类型。 **取值范围**： - OBS: obs数据源。 - LAKE_FORMATION: lake_formation数据源。 - MRS: mrs数据源。
 
         :return: The type of this ExtDataSourceReq.
         :rtype: str
@@ -122,7 +122,7 @@ class ExtDataSourceReq:
     def type(self, type):
         r"""Sets the type of this ExtDataSourceReq.
 
-        **参数解释**： 数据源类型。 **取值范围**： 不涉及。
+        **参数解释**： 数据源类型。 **取值范围**： - OBS: obs数据源。 - LAKE_FORMATION: lake_formation数据源。 - MRS: mrs数据源。
 
         :param type: The type of this ExtDataSourceReq.
         :type type: str

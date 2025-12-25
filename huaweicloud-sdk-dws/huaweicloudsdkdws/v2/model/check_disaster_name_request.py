@@ -35,7 +35,7 @@ class CheckDisasterNameRequest:
 
         :param dr_name: **参数解释**： 容灾名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type dr_name: str
-        :param type: **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param type: **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。 **默认取值**： 不涉及。
         :type type: str
         :param standby_region: **参数解释**： 备集群所在局点。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type standby_region: str
@@ -85,7 +85,7 @@ class CheckDisasterNameRequest:
     def type(self):
         r"""Gets the type of this CheckDisasterNameRequest.
 
-        **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。 **默认取值**： 不涉及。
 
         :return: The type of this CheckDisasterNameRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class CheckDisasterNameRequest:
     def type(self, type):
         r"""Sets the type of this CheckDisasterNameRequest.
 
-        **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。 **默认取值**： 不涉及。
 
         :param type: The type of this CheckDisasterNameRequest.
         :type type: str

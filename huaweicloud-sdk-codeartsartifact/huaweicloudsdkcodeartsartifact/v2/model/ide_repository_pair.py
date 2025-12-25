@@ -37,17 +37,17 @@ class IDERepositoryPair:
 
         The model defined in huaweicloud sdk
 
-        :param repo_name: 仓库名称
+        :param repo_name: **参数解释**: 仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。
         :type repo_name: str
-        :param includes_pattern: 路径
+        :param includes_pattern: **参数解释**: 路径包含规则。 **约束限制**: 最大长度512。 **取值范围**: 不涉及。 **默认取值**: 无。
         :type includes_pattern: str
-        :param project_id: 项目id
+        :param project_id: **参数解释**: 项目ID，可以从调用API处获取，也可以从控制台获取。获取方式请参考[获取项目ID](CloudArtifact_api_0015.xml)。 **约束限制**: 只能由英文字母、数字组成，且长度为32个字符。 **取值范围**: 不涉及。 **默认取值**: 无。
         :type project_id: str
-        :param description: 描述
+        :param description: **参数解释**: 仓库描述。 **约束限制**: 最大长度200。 **取值范围**: 不涉及。 **默认取值**: 无。
         :type description: str
-        :param snapshot: snapshot仓库名称
+        :param snapshot: **参数解释**: snapshot仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。
         :type snapshot: str
-        :param release: release仓库名称
+        :param release: **参数解释**: release仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。
         :type release: str
         """
         
@@ -61,10 +61,8 @@ class IDERepositoryPair:
         self._release = None
         self.discriminator = None
 
-        if repo_name is not None:
-            self.repo_name = repo_name
-        if includes_pattern is not None:
-            self.includes_pattern = includes_pattern
+        self.repo_name = repo_name
+        self.includes_pattern = includes_pattern
         if project_id is not None:
             self.project_id = project_id
         if description is not None:
@@ -78,7 +76,7 @@ class IDERepositoryPair:
     def repo_name(self):
         r"""Gets the repo_name of this IDERepositoryPair.
 
-        仓库名称
+        **参数解释**: 仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :return: The repo_name of this IDERepositoryPair.
         :rtype: str
@@ -89,7 +87,7 @@ class IDERepositoryPair:
     def repo_name(self, repo_name):
         r"""Sets the repo_name of this IDERepositoryPair.
 
-        仓库名称
+        **参数解释**: 仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :param repo_name: The repo_name of this IDERepositoryPair.
         :type repo_name: str
@@ -100,7 +98,7 @@ class IDERepositoryPair:
     def includes_pattern(self):
         r"""Gets the includes_pattern of this IDERepositoryPair.
 
-        路径
+        **参数解释**: 路径包含规则。 **约束限制**: 最大长度512。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :return: The includes_pattern of this IDERepositoryPair.
         :rtype: str
@@ -111,7 +109,7 @@ class IDERepositoryPair:
     def includes_pattern(self, includes_pattern):
         r"""Sets the includes_pattern of this IDERepositoryPair.
 
-        路径
+        **参数解释**: 路径包含规则。 **约束限制**: 最大长度512。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :param includes_pattern: The includes_pattern of this IDERepositoryPair.
         :type includes_pattern: str
@@ -122,7 +120,7 @@ class IDERepositoryPair:
     def project_id(self):
         r"""Gets the project_id of this IDERepositoryPair.
 
-        项目id
+        **参数解释**: 项目ID，可以从调用API处获取，也可以从控制台获取。获取方式请参考[获取项目ID](CloudArtifact_api_0015.xml)。 **约束限制**: 只能由英文字母、数字组成，且长度为32个字符。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :return: The project_id of this IDERepositoryPair.
         :rtype: str
@@ -133,7 +131,7 @@ class IDERepositoryPair:
     def project_id(self, project_id):
         r"""Sets the project_id of this IDERepositoryPair.
 
-        项目id
+        **参数解释**: 项目ID，可以从调用API处获取，也可以从控制台获取。获取方式请参考[获取项目ID](CloudArtifact_api_0015.xml)。 **约束限制**: 只能由英文字母、数字组成，且长度为32个字符。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :param project_id: The project_id of this IDERepositoryPair.
         :type project_id: str
@@ -144,7 +142,7 @@ class IDERepositoryPair:
     def description(self):
         r"""Gets the description of this IDERepositoryPair.
 
-        描述
+        **参数解释**: 仓库描述。 **约束限制**: 最大长度200。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :return: The description of this IDERepositoryPair.
         :rtype: str
@@ -155,7 +153,7 @@ class IDERepositoryPair:
     def description(self, description):
         r"""Sets the description of this IDERepositoryPair.
 
-        描述
+        **参数解释**: 仓库描述。 **约束限制**: 最大长度200。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :param description: The description of this IDERepositoryPair.
         :type description: str
@@ -166,7 +164,7 @@ class IDERepositoryPair:
     def snapshot(self):
         r"""Gets the snapshot of this IDERepositoryPair.
 
-        snapshot仓库名称
+        **参数解释**: snapshot仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :return: The snapshot of this IDERepositoryPair.
         :rtype: str
@@ -177,7 +175,7 @@ class IDERepositoryPair:
     def snapshot(self, snapshot):
         r"""Sets the snapshot of this IDERepositoryPair.
 
-        snapshot仓库名称
+        **参数解释**: snapshot仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :param snapshot: The snapshot of this IDERepositoryPair.
         :type snapshot: str
@@ -188,7 +186,7 @@ class IDERepositoryPair:
     def release(self):
         r"""Gets the release of this IDERepositoryPair.
 
-        release仓库名称
+        **参数解释**: release仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :return: The release of this IDERepositoryPair.
         :rtype: str
@@ -199,7 +197,7 @@ class IDERepositoryPair:
     def release(self, release):
         r"""Sets the release of this IDERepositoryPair.
 
-        release仓库名称
+        **参数解释**: release仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :param release: The release of this IDERepositoryPair.
         :type release: str

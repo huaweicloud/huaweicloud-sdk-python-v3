@@ -23,7 +23,7 @@ class ThirdPartyModelConfig:
         'sis_region': 'int',
         'sis_project_id': 'str',
         'enable_hot_words': 'bool',
-        'asr_type': 'AsrTypeEnum',
+        'asr_type': 'str',
         'asr_account': 'str',
         'asr_secret': 'str'
     }
@@ -63,8 +63,8 @@ class ThirdPartyModelConfig:
         :type sis_project_id: str
         :param enable_hot_words: 是否开启热词（asr_type选择EI_SIS时生效）
         :type enable_hot_words: bool
-        :param asr_type: 
-        :type asr_type: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
+        :param asr_type: 对接的ASR厂商类型 * EI_SIS:华为云SIS（仅国内站点支持） * MOBVOI:出门问问（仅海外站点支持）
+        :type asr_type: str
         :param asr_account: ASR帐号（asr_type选择EI_SIS时不需要配置）。
         :type asr_account: str
         :param asr_secret: ASR密钥（asr_type选择EI_SIS时不需要配置）。
@@ -289,8 +289,10 @@ class ThirdPartyModelConfig:
     def asr_type(self):
         r"""Gets the asr_type of this ThirdPartyModelConfig.
 
+        对接的ASR厂商类型 * EI_SIS:华为云SIS（仅国内站点支持） * MOBVOI:出门问问（仅海外站点支持）
+
         :return: The asr_type of this ThirdPartyModelConfig.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
+        :rtype: str
         """
         return self._asr_type
 
@@ -298,8 +300,10 @@ class ThirdPartyModelConfig:
     def asr_type(self, asr_type):
         r"""Sets the asr_type of this ThirdPartyModelConfig.
 
+        对接的ASR厂商类型 * EI_SIS:华为云SIS（仅国内站点支持） * MOBVOI:出门问问（仅海外站点支持）
+
         :param asr_type: The asr_type of this ThirdPartyModelConfig.
-        :type asr_type: :class:`huaweicloudsdkmetastudio.v1.AsrTypeEnum`
+        :type asr_type: str
         """
         self._asr_type = asr_type
 

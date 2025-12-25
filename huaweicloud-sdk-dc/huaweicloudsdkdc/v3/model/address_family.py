@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AddressFamily:
-    """
-    allowed enum values
-    """
-    IPV4 = "ipv4"
-    IPV6 = "ipv6"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

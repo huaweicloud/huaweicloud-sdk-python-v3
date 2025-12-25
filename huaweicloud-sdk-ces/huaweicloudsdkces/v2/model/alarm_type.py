@@ -4,15 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AlarmType:
-    """
-    allowed enum values
-    """
-    EVENT_SYS = "EVENT.SYS"
-    EVENT_CUSTOM = "EVENT.CUSTOM"
-    DNSHEALTHCHECK = "DNSHealthCheck"
-    RESOURCE_GROUP = "RESOURCE_GROUP"
-    MULTI_INSTANCE = "MULTI_INSTANCE"
-    ALL_INSTANCE = "ALL_INSTANCE"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

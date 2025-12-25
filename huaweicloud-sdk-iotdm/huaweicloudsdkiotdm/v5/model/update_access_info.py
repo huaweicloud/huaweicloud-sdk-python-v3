@@ -37,7 +37,7 @@ class UpdateAccessInfo:
         :type access_type: str
         :param domain_name: **参数说明**：接入域名，如果需要更新域名，则携带该字段。 
         :type domain_name: str
-        :param public_addresses_enable: **参数说明**：是否配置公网接入地址。 **取值范围**： - true：配置公网接入地址，平台将自动分配公网接入地址。约束：分配地址后将不能修改或删除。 
+        :param public_addresses_enable: **参数说明**：是否配置公网接入地址。约束：access_type为APP_HTTPS/APP_AMQP/APP_MQTT的公网地址会同时被解绑或绑定。access_type为DEVICE_MQTT/DEVICE_HTTPS的公网地址会同时被解绑或绑定。 **取值范围**： - true：配置公网接入地址，平台将自动分配公网接入地址。 - false: 解绑公网接入地址，解绑公网地址不会被删除，再次配置公网地址将绑定原来的公网地址。 
         :type public_addresses_enable: bool
         :param ip_whitelist: 
         :type ip_whitelist: :class:`huaweicloudsdkiotdm.v5.IPWhiteList`
@@ -107,7 +107,7 @@ class UpdateAccessInfo:
     def public_addresses_enable(self):
         r"""Gets the public_addresses_enable of this UpdateAccessInfo.
 
-        **参数说明**：是否配置公网接入地址。 **取值范围**： - true：配置公网接入地址，平台将自动分配公网接入地址。约束：分配地址后将不能修改或删除。 
+        **参数说明**：是否配置公网接入地址。约束：access_type为APP_HTTPS/APP_AMQP/APP_MQTT的公网地址会同时被解绑或绑定。access_type为DEVICE_MQTT/DEVICE_HTTPS的公网地址会同时被解绑或绑定。 **取值范围**： - true：配置公网接入地址，平台将自动分配公网接入地址。 - false: 解绑公网接入地址，解绑公网地址不会被删除，再次配置公网地址将绑定原来的公网地址。 
 
         :return: The public_addresses_enable of this UpdateAccessInfo.
         :rtype: bool
@@ -118,7 +118,7 @@ class UpdateAccessInfo:
     def public_addresses_enable(self, public_addresses_enable):
         r"""Sets the public_addresses_enable of this UpdateAccessInfo.
 
-        **参数说明**：是否配置公网接入地址。 **取值范围**： - true：配置公网接入地址，平台将自动分配公网接入地址。约束：分配地址后将不能修改或删除。 
+        **参数说明**：是否配置公网接入地址。约束：access_type为APP_HTTPS/APP_AMQP/APP_MQTT的公网地址会同时被解绑或绑定。access_type为DEVICE_MQTT/DEVICE_HTTPS的公网地址会同时被解绑或绑定。 **取值范围**： - true：配置公网接入地址，平台将自动分配公网接入地址。 - false: 解绑公网接入地址，解绑公网地址不会被删除，再次配置公网地址将绑定原来的公网地址。 
 
         :param public_addresses_enable: The public_addresses_enable of this UpdateAccessInfo.
         :type public_addresses_enable: bool

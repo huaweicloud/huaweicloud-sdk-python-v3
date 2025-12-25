@@ -30,7 +30,7 @@ class ListResourceGroupsServicesResourcesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param count: 资源总数
+        :param count: **参数解释** 资源总数。 **取值范围** 0-10000 
         :type count: int
         :param resources: 资源分组资源列表
         :type resources: list[:class:`huaweicloudsdkces.v2.GetResourceGroupResources`]
@@ -51,7 +51,7 @@ class ListResourceGroupsServicesResourcesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListResourceGroupsServicesResourcesResponse.
 
-        资源总数
+        **参数解释** 资源总数。 **取值范围** 0-10000 
 
         :return: The count of this ListResourceGroupsServicesResourcesResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListResourceGroupsServicesResourcesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListResourceGroupsServicesResourcesResponse.
 
-        资源总数
+        **参数解释** 资源总数。 **取值范围** 0-10000 
 
         :param count: The count of this ListResourceGroupsServicesResourcesResponse.
         :type count: int

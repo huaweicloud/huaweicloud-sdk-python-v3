@@ -18,7 +18,7 @@ class CreateSisHotWords:
         'vocabulary_id': 'str',
         'sis_project_id': 'str',
         'region': 'int',
-        'language': 'LanguageEnum'
+        'language': 'str'
     }
 
     attribute_map = {
@@ -39,8 +39,8 @@ class CreateSisHotWords:
         :type sis_project_id: str
         :param region: 对接SIS服务的区域。 &gt; 0：北京四；3：上海一；
         :type region: int
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         """
         
         
@@ -126,8 +126,10 @@ class CreateSisHotWords:
     def language(self):
         r"""Gets the language of this CreateSisHotWords.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this CreateSisHotWords.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -135,8 +137,10 @@ class CreateSisHotWords:
     def language(self, language):
         r"""Sets the language of this CreateSisHotWords.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this CreateSisHotWords.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

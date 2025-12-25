@@ -4,18 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class BillResourceType:
-    """
-    allowed enum values
-    """
-    _2D_DIGITAL_HUMAN_BASIC = "2D_DIGITAL_HUMAN_BASIC"
-    _2D_DIGITAL_HUMAN_ADVANCED = "2D_DIGITAL_HUMAN_ADVANCED"
-    _2D_DIGITAL_HUMAN_FLEXUS = "2D_DIGITAL_HUMAN_FLEXUS"
-    VOICE_BASIC = "VOICE_BASIC"
-    VOICE_MIDDLE = "VOICE_MIDDLE"
-    VOICE_ADVANCE = "VOICE_ADVANCE"
-    VOICE_THIRD_PARTY = "VOICE_THIRD_PARTY"
-    VOICE_THIRD_PARTY_LJZN = "VOICE_THIRD_PARTY_LJZN"
-    VOICE_FLEXUS = "VOICE_FLEXUS"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

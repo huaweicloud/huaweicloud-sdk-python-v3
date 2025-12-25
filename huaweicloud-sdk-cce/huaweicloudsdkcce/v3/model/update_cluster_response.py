@@ -19,19 +19,17 @@ class UpdateClusterResponse(SdkResponse):
         'kind': 'str',
         'api_version': 'str',
         'metadata': 'ClusterMetadata',
-        'spec': 'ClusterSpec',
-        'status': 'ClusterStatus'
+        'spec': 'ClusterSpec'
     }
 
     attribute_map = {
         'kind': 'kind',
         'api_version': 'apiVersion',
         'metadata': 'metadata',
-        'spec': 'spec',
-        'status': 'status'
+        'spec': 'spec'
     }
 
-    def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
+    def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
         r"""UpdateClusterResponse
 
         The model defined in huaweicloud sdk
@@ -44,8 +42,6 @@ class UpdateClusterResponse(SdkResponse):
         :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
-        :param status: 
-        :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`
         """
         
         super().__init__()
@@ -54,7 +50,6 @@ class UpdateClusterResponse(SdkResponse):
         self._api_version = None
         self._metadata = None
         self._spec = None
-        self._status = None
         self.discriminator = None
 
         if kind is not None:
@@ -65,8 +60,6 @@ class UpdateClusterResponse(SdkResponse):
             self.metadata = metadata
         if spec is not None:
             self.spec = spec
-        if status is not None:
-            self.status = status
 
     @property
     def kind(self):
@@ -147,24 +140,6 @@ class UpdateClusterResponse(SdkResponse):
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
         """
         self._spec = spec
-
-    @property
-    def status(self):
-        r"""Gets the status of this UpdateClusterResponse.
-
-        :return: The status of this UpdateClusterResponse.
-        :rtype: :class:`huaweicloudsdkcce.v3.ClusterStatus`
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        r"""Sets the status of this UpdateClusterResponse.
-
-        :param status: The status of this UpdateClusterResponse.
-        :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`
-        """
-        self._status = status
 
     def to_dict(self):
         import warnings

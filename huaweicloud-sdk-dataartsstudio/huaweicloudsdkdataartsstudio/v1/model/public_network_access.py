@@ -15,7 +15,7 @@ class PublicNetworkAccess:
     sensitive_list = []
 
     openapi_types = {
-        'result': 'DiagnoseResult',
+        'result': 'str',
         'public_network_info': 'list[PublicNetworkStatus]'
     }
 
@@ -29,8 +29,8 @@ class PublicNetworkAccess:
 
         The model defined in huaweicloud sdk
 
-        :param result: 
-        :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
+        :param result: 检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
+        :type result: str
         :param public_network_info: kerberos信息
         :type public_network_info: list[:class:`huaweicloudsdkdataartsstudio.v1.PublicNetworkStatus`]
         """
@@ -50,8 +50,10 @@ class PublicNetworkAccess:
     def result(self):
         r"""Gets the result of this PublicNetworkAccess.
 
+        检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
+
         :return: The result of this PublicNetworkAccess.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
+        :rtype: str
         """
         return self._result
 
@@ -59,8 +61,10 @@ class PublicNetworkAccess:
     def result(self, result):
         r"""Sets the result of this PublicNetworkAccess.
 
+        检测结果 * NO_RISK 无风险 * MEDIUM_RISK 中风险 * HIGH_RISK 高风险 * NOT_SCANNED 未扫描
+
         :param result: The result of this PublicNetworkAccess.
-        :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
+        :type result: str
         """
         self._result = result
 

@@ -24,7 +24,7 @@ class AppInstallJob:
         'instance_name': 'str',
         'operator': 'str',
         'target': 'str',
-        'job_status': 'JobStatus',
+        'job_status': 'str',
         'error_message': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime'
@@ -69,8 +69,8 @@ class AppInstallJob:
         :type operator: str
         :param target: 目标用户。
         :type target: str
-        :param job_status: 
-        :type job_status: :class:`huaweicloudsdkworkspace.v2.JobStatus`
+        :param job_status: 实例类型： * &#x60;INIT&#x60; - 初始化中 * &#x60;WAITING&#x60; - 等待安装结束 * &#x60;SUCCESS&#x60; - 成功 * &#x60;FAIL&#x60; - 失败
+        :type job_status: str
         :param error_message: 任务失败时的原因。
         :type error_message: str
         :param create_time: 创建时间。
@@ -325,8 +325,10 @@ class AppInstallJob:
     def job_status(self):
         r"""Gets the job_status of this AppInstallJob.
 
+        实例类型： * `INIT` - 初始化中 * `WAITING` - 等待安装结束 * `SUCCESS` - 成功 * `FAIL` - 失败
+
         :return: The job_status of this AppInstallJob.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.JobStatus`
+        :rtype: str
         """
         return self._job_status
 
@@ -334,8 +336,10 @@ class AppInstallJob:
     def job_status(self, job_status):
         r"""Sets the job_status of this AppInstallJob.
 
+        实例类型： * `INIT` - 初始化中 * `WAITING` - 等待安装结束 * `SUCCESS` - 成功 * `FAIL` - 失败
+
         :param job_status: The job_status of this AppInstallJob.
-        :type job_status: :class:`huaweicloudsdkworkspace.v2.JobStatus`
+        :type job_status: str
         """
         self._job_status = job_status
 

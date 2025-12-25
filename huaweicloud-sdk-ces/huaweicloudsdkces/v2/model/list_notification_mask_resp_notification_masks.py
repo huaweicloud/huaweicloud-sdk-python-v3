@@ -17,16 +17,16 @@ class ListNotificationMaskRespNotificationMasks:
     openapi_types = {
         'notification_mask_id': 'str',
         'mask_name': 'str',
-        'relation_type': 'RelationType',
+        'relation_type': 'str',
         'relation_id': 'str',
-        'resource_type': 'MaskResourceType',
+        'resource_type': 'str',
         'metric_names': 'list[str]',
-        'product_metrics': 'list[ProductMetric]',
+        'product_metrics': 'list[ProductMetricResp]',
         'resource_level': 'str',
         'product_name': 'str',
-        'resources': 'list[ResourceCategory]',
-        'mask_status': 'MaskStatus',
-        'mask_type': 'MaskType',
+        'resources': 'list[ResourceCategoryResp]',
+        'mask_status': 'str',
+        'mask_type': 'str',
         'create_time': 'int',
         'update_time': 'int',
         'start_date': 'date',
@@ -65,33 +65,33 @@ class ListNotificationMaskRespNotificationMasks:
 
         The model defined in huaweicloud sdk
 
-        :param notification_mask_id: 屏蔽规则ID
+        :param notification_mask_id: **参数解释**： 屏蔽规则ID **约束限制**： 不涉及 **取值范围**： 以nm开头，后跟[0,62]位字母或数字。 **默认取值**： 不涉及 
         :type notification_mask_id: str
         :param mask_name: **参数解释**： 屏蔽规则名称。    **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。      **默认取值**： 不涉及。 
         :type mask_name: str
-        :param relation_type: 
-        :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
-        :param relation_id: **参数解释**： 关联ID       **约束限制**： 不涉及。 **取值范围**： 取值为告警规则ID、告警策略ID。只能包含字母、数字、“-”，长度为[1,64]个字符。      **默认取值**： 不涉及。 
+        :param relation_type: **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，只能为 RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS 长度为[1,32]个字符。 - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - EVENT.SYS 通过事件来屏蔽告警 **默认取值**： 不涉及。 
+        :type relation_type: str
+        :param relation_id: **参数解释**： 关联ID，为告警规则ID或者告警策略ID **约束限制**： 不涉及。 **取值范围**： 只能包含字母、数字、“-”，长度为[1,64]个字符。      **默认取值**： 不涉及。 
         :type relation_id: str
-        :param resource_type: 
-        :type resource_type: :class:`huaweicloudsdkces.v2.MaskResourceType`
-        :param metric_names: 关联指标名称，relation_type为RESOURCE时存在该字段
+        :param resource_type: **参数解释**： 屏蔽资源类型。 **约束限制**： 不涉及。 **取值范围**: - ALL_INSTANCE：全部资源 - MULTI_INSTANCE：多实例资源 **默认取值**： 不涉及。 
+        :type resource_type: str
+        :param metric_names: **参数解释**： 关联指标名称列表，relation_type为RESOURCE时存在该字段 
         :type metric_names: list[str]
-        :param product_metrics: 按云产品维度屏蔽时的指标信息
-        :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
-        :param resource_level: dimension: 子维度,product: 云产品
+        :param product_metrics: **参数解释**： 按云产品维度屏蔽时的指标信息 
+        :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetricResp`]
+        :param resource_level: **参数解释**： 资源层级。 **取值范围**： 枚举值。 - product：资源层级为云产品 - dimension：资源层级为子维度 
         :type resource_level: str
-        :param product_name: 资源为云产品时的云产品名称
+        :param product_name: **参数解释**： 资源为云产品时的云产品名称 **取值范围**： 长度为[0,128]个字符。 
         :type product_name: str
-        :param resources: 关联资源类型，relation_type为RESOURCE时存在该字段,只需要查询出资源的namespace+维度名即可
-        :type resources: list[:class:`huaweicloudsdkces.v2.ResourceCategory`]
-        :param mask_status: 
-        :type mask_status: :class:`huaweicloudsdkces.v2.MaskStatus`
-        :param mask_type: 
-        :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
-        :param create_time: 告警屏蔽的创建时间，UNIX时间戳，单位毫秒。
+        :param resources: **参数解释**： 关联资源类型，relation_type为RESOURCE时存在该字段,只需要查询出资源的namespace+维度名即可 
+        :type resources: list[:class:`huaweicloudsdkces.v2.ResourceCategoryResp`]
+        :param mask_status: **参数解释**： 屏蔽状态。 **约束限制**： 不涉及。 **取值范围**： - UN_MASKED：未屏蔽 - MASK_EFFECTIVE：已生效 - MASK_INEFFECTIVE：未生效 **默认取值**： 不涉及。 
+        :type mask_status: str
+        :param mask_type: **参数解释**： 屏蔽类型。          **约束限制**： 不涉及。 **取值范围**： 只能为START_END_TIME、FOREVER_TIME、CYCLE_TIME - START_END_TIME：按起止时间屏蔽。 - FOREVER_TIME：永久时间屏蔽。 - CYCLE_TIME：按周期时间屏蔽。           **默认取值**： 不涉及。 
+        :type mask_type: str
+        :param create_time: **参数解释**： 告警屏蔽的创建时间，UNIX时间戳，单位毫秒。 **约束限制**： 不涉及。 **取值范围**: 不涉及。 **默认取值**： 不涉及。 
         :type create_time: int
-        :param update_time: 告警屏蔽的更新时间，UNIX时间戳，单位毫秒。
+        :param update_time: **参数解释**： 告警屏蔽的更新时间，UNIX时间戳，单位毫秒。 **约束限制**： 不涉及。 **取值范围**: 不涉及。 **默认取值**： 不涉及。 
         :type update_time: int
         :param start_date: **参数解释**： 屏蔽起始日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
         :type start_date: date
@@ -103,7 +103,7 @@ class ListNotificationMaskRespNotificationMasks:
         :type end_time: str
         :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
         :type effective_timezone: str
-        :param policies: 告警策略列表。
+        :param policies: **参数解释**： 告警策略列表。 
         :type policies: list[:class:`huaweicloudsdkces.v2.PoliciesInListResp`]
         """
         
@@ -172,7 +172,7 @@ class ListNotificationMaskRespNotificationMasks:
     def notification_mask_id(self):
         r"""Gets the notification_mask_id of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽规则ID
+        **参数解释**： 屏蔽规则ID **约束限制**： 不涉及 **取值范围**： 以nm开头，后跟[0,62]位字母或数字。 **默认取值**： 不涉及 
 
         :return: The notification_mask_id of this ListNotificationMaskRespNotificationMasks.
         :rtype: str
@@ -183,7 +183,7 @@ class ListNotificationMaskRespNotificationMasks:
     def notification_mask_id(self, notification_mask_id):
         r"""Sets the notification_mask_id of this ListNotificationMaskRespNotificationMasks.
 
-        屏蔽规则ID
+        **参数解释**： 屏蔽规则ID **约束限制**： 不涉及 **取值范围**： 以nm开头，后跟[0,62]位字母或数字。 **默认取值**： 不涉及 
 
         :param notification_mask_id: The notification_mask_id of this ListNotificationMaskRespNotificationMasks.
         :type notification_mask_id: str
@@ -216,8 +216,10 @@ class ListNotificationMaskRespNotificationMasks:
     def relation_type(self):
         r"""Gets the relation_type of this ListNotificationMaskRespNotificationMasks.
 
+        **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，只能为 RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS 长度为[1,32]个字符。 - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - EVENT.SYS 通过事件来屏蔽告警 **默认取值**： 不涉及。 
+
         :return: The relation_type of this ListNotificationMaskRespNotificationMasks.
-        :rtype: :class:`huaweicloudsdkces.v2.RelationType`
+        :rtype: str
         """
         return self._relation_type
 
@@ -225,8 +227,10 @@ class ListNotificationMaskRespNotificationMasks:
     def relation_type(self, relation_type):
         r"""Sets the relation_type of this ListNotificationMaskRespNotificationMasks.
 
+        **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，只能为 RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS 长度为[1,32]个字符。 - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - EVENT.SYS 通过事件来屏蔽告警 **默认取值**： 不涉及。 
+
         :param relation_type: The relation_type of this ListNotificationMaskRespNotificationMasks.
-        :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
+        :type relation_type: str
         """
         self._relation_type = relation_type
 
@@ -234,7 +238,7 @@ class ListNotificationMaskRespNotificationMasks:
     def relation_id(self):
         r"""Gets the relation_id of this ListNotificationMaskRespNotificationMasks.
 
-        **参数解释**： 关联ID       **约束限制**： 不涉及。 **取值范围**： 取值为告警规则ID、告警策略ID。只能包含字母、数字、“-”，长度为[1,64]个字符。      **默认取值**： 不涉及。 
+        **参数解释**： 关联ID，为告警规则ID或者告警策略ID **约束限制**： 不涉及。 **取值范围**： 只能包含字母、数字、“-”，长度为[1,64]个字符。      **默认取值**： 不涉及。 
 
         :return: The relation_id of this ListNotificationMaskRespNotificationMasks.
         :rtype: str
@@ -245,7 +249,7 @@ class ListNotificationMaskRespNotificationMasks:
     def relation_id(self, relation_id):
         r"""Sets the relation_id of this ListNotificationMaskRespNotificationMasks.
 
-        **参数解释**： 关联ID       **约束限制**： 不涉及。 **取值范围**： 取值为告警规则ID、告警策略ID。只能包含字母、数字、“-”，长度为[1,64]个字符。      **默认取值**： 不涉及。 
+        **参数解释**： 关联ID，为告警规则ID或者告警策略ID **约束限制**： 不涉及。 **取值范围**： 只能包含字母、数字、“-”，长度为[1,64]个字符。      **默认取值**： 不涉及。 
 
         :param relation_id: The relation_id of this ListNotificationMaskRespNotificationMasks.
         :type relation_id: str
@@ -256,8 +260,10 @@ class ListNotificationMaskRespNotificationMasks:
     def resource_type(self):
         r"""Gets the resource_type of this ListNotificationMaskRespNotificationMasks.
 
+        **参数解释**： 屏蔽资源类型。 **约束限制**： 不涉及。 **取值范围**: - ALL_INSTANCE：全部资源 - MULTI_INSTANCE：多实例资源 **默认取值**： 不涉及。 
+
         :return: The resource_type of this ListNotificationMaskRespNotificationMasks.
-        :rtype: :class:`huaweicloudsdkces.v2.MaskResourceType`
+        :rtype: str
         """
         return self._resource_type
 
@@ -265,8 +271,10 @@ class ListNotificationMaskRespNotificationMasks:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ListNotificationMaskRespNotificationMasks.
 
+        **参数解释**： 屏蔽资源类型。 **约束限制**： 不涉及。 **取值范围**: - ALL_INSTANCE：全部资源 - MULTI_INSTANCE：多实例资源 **默认取值**： 不涉及。 
+
         :param resource_type: The resource_type of this ListNotificationMaskRespNotificationMasks.
-        :type resource_type: :class:`huaweicloudsdkces.v2.MaskResourceType`
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -274,7 +282,7 @@ class ListNotificationMaskRespNotificationMasks:
     def metric_names(self):
         r"""Gets the metric_names of this ListNotificationMaskRespNotificationMasks.
 
-        关联指标名称，relation_type为RESOURCE时存在该字段
+        **参数解释**： 关联指标名称列表，relation_type为RESOURCE时存在该字段 
 
         :return: The metric_names of this ListNotificationMaskRespNotificationMasks.
         :rtype: list[str]
@@ -285,7 +293,7 @@ class ListNotificationMaskRespNotificationMasks:
     def metric_names(self, metric_names):
         r"""Sets the metric_names of this ListNotificationMaskRespNotificationMasks.
 
-        关联指标名称，relation_type为RESOURCE时存在该字段
+        **参数解释**： 关联指标名称列表，relation_type为RESOURCE时存在该字段 
 
         :param metric_names: The metric_names of this ListNotificationMaskRespNotificationMasks.
         :type metric_names: list[str]
@@ -296,10 +304,10 @@ class ListNotificationMaskRespNotificationMasks:
     def product_metrics(self):
         r"""Gets the product_metrics of this ListNotificationMaskRespNotificationMasks.
 
-        按云产品维度屏蔽时的指标信息
+        **参数解释**： 按云产品维度屏蔽时的指标信息 
 
         :return: The product_metrics of this ListNotificationMaskRespNotificationMasks.
-        :rtype: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.ProductMetricResp`]
         """
         return self._product_metrics
 
@@ -307,10 +315,10 @@ class ListNotificationMaskRespNotificationMasks:
     def product_metrics(self, product_metrics):
         r"""Sets the product_metrics of this ListNotificationMaskRespNotificationMasks.
 
-        按云产品维度屏蔽时的指标信息
+        **参数解释**： 按云产品维度屏蔽时的指标信息 
 
         :param product_metrics: The product_metrics of this ListNotificationMaskRespNotificationMasks.
-        :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
+        :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetricResp`]
         """
         self._product_metrics = product_metrics
 
@@ -318,7 +326,7 @@ class ListNotificationMaskRespNotificationMasks:
     def resource_level(self):
         r"""Gets the resource_level of this ListNotificationMaskRespNotificationMasks.
 
-        dimension: 子维度,product: 云产品
+        **参数解释**： 资源层级。 **取值范围**： 枚举值。 - product：资源层级为云产品 - dimension：资源层级为子维度 
 
         :return: The resource_level of this ListNotificationMaskRespNotificationMasks.
         :rtype: str
@@ -329,7 +337,7 @@ class ListNotificationMaskRespNotificationMasks:
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this ListNotificationMaskRespNotificationMasks.
 
-        dimension: 子维度,product: 云产品
+        **参数解释**： 资源层级。 **取值范围**： 枚举值。 - product：资源层级为云产品 - dimension：资源层级为子维度 
 
         :param resource_level: The resource_level of this ListNotificationMaskRespNotificationMasks.
         :type resource_level: str
@@ -340,7 +348,7 @@ class ListNotificationMaskRespNotificationMasks:
     def product_name(self):
         r"""Gets the product_name of this ListNotificationMaskRespNotificationMasks.
 
-        资源为云产品时的云产品名称
+        **参数解释**： 资源为云产品时的云产品名称 **取值范围**： 长度为[0,128]个字符。 
 
         :return: The product_name of this ListNotificationMaskRespNotificationMasks.
         :rtype: str
@@ -351,7 +359,7 @@ class ListNotificationMaskRespNotificationMasks:
     def product_name(self, product_name):
         r"""Sets the product_name of this ListNotificationMaskRespNotificationMasks.
 
-        资源为云产品时的云产品名称
+        **参数解释**： 资源为云产品时的云产品名称 **取值范围**： 长度为[0,128]个字符。 
 
         :param product_name: The product_name of this ListNotificationMaskRespNotificationMasks.
         :type product_name: str
@@ -362,10 +370,10 @@ class ListNotificationMaskRespNotificationMasks:
     def resources(self):
         r"""Gets the resources of this ListNotificationMaskRespNotificationMasks.
 
-        关联资源类型，relation_type为RESOURCE时存在该字段,只需要查询出资源的namespace+维度名即可
+        **参数解释**： 关联资源类型，relation_type为RESOURCE时存在该字段,只需要查询出资源的namespace+维度名即可 
 
         :return: The resources of this ListNotificationMaskRespNotificationMasks.
-        :rtype: list[:class:`huaweicloudsdkces.v2.ResourceCategory`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.ResourceCategoryResp`]
         """
         return self._resources
 
@@ -373,10 +381,10 @@ class ListNotificationMaskRespNotificationMasks:
     def resources(self, resources):
         r"""Sets the resources of this ListNotificationMaskRespNotificationMasks.
 
-        关联资源类型，relation_type为RESOURCE时存在该字段,只需要查询出资源的namespace+维度名即可
+        **参数解释**： 关联资源类型，relation_type为RESOURCE时存在该字段,只需要查询出资源的namespace+维度名即可 
 
         :param resources: The resources of this ListNotificationMaskRespNotificationMasks.
-        :type resources: list[:class:`huaweicloudsdkces.v2.ResourceCategory`]
+        :type resources: list[:class:`huaweicloudsdkces.v2.ResourceCategoryResp`]
         """
         self._resources = resources
 
@@ -384,8 +392,10 @@ class ListNotificationMaskRespNotificationMasks:
     def mask_status(self):
         r"""Gets the mask_status of this ListNotificationMaskRespNotificationMasks.
 
+        **参数解释**： 屏蔽状态。 **约束限制**： 不涉及。 **取值范围**： - UN_MASKED：未屏蔽 - MASK_EFFECTIVE：已生效 - MASK_INEFFECTIVE：未生效 **默认取值**： 不涉及。 
+
         :return: The mask_status of this ListNotificationMaskRespNotificationMasks.
-        :rtype: :class:`huaweicloudsdkces.v2.MaskStatus`
+        :rtype: str
         """
         return self._mask_status
 
@@ -393,8 +403,10 @@ class ListNotificationMaskRespNotificationMasks:
     def mask_status(self, mask_status):
         r"""Sets the mask_status of this ListNotificationMaskRespNotificationMasks.
 
+        **参数解释**： 屏蔽状态。 **约束限制**： 不涉及。 **取值范围**： - UN_MASKED：未屏蔽 - MASK_EFFECTIVE：已生效 - MASK_INEFFECTIVE：未生效 **默认取值**： 不涉及。 
+
         :param mask_status: The mask_status of this ListNotificationMaskRespNotificationMasks.
-        :type mask_status: :class:`huaweicloudsdkces.v2.MaskStatus`
+        :type mask_status: str
         """
         self._mask_status = mask_status
 
@@ -402,8 +414,10 @@ class ListNotificationMaskRespNotificationMasks:
     def mask_type(self):
         r"""Gets the mask_type of this ListNotificationMaskRespNotificationMasks.
 
+        **参数解释**： 屏蔽类型。          **约束限制**： 不涉及。 **取值范围**： 只能为START_END_TIME、FOREVER_TIME、CYCLE_TIME - START_END_TIME：按起止时间屏蔽。 - FOREVER_TIME：永久时间屏蔽。 - CYCLE_TIME：按周期时间屏蔽。           **默认取值**： 不涉及。 
+
         :return: The mask_type of this ListNotificationMaskRespNotificationMasks.
-        :rtype: :class:`huaweicloudsdkces.v2.MaskType`
+        :rtype: str
         """
         return self._mask_type
 
@@ -411,8 +425,10 @@ class ListNotificationMaskRespNotificationMasks:
     def mask_type(self, mask_type):
         r"""Sets the mask_type of this ListNotificationMaskRespNotificationMasks.
 
+        **参数解释**： 屏蔽类型。          **约束限制**： 不涉及。 **取值范围**： 只能为START_END_TIME、FOREVER_TIME、CYCLE_TIME - START_END_TIME：按起止时间屏蔽。 - FOREVER_TIME：永久时间屏蔽。 - CYCLE_TIME：按周期时间屏蔽。           **默认取值**： 不涉及。 
+
         :param mask_type: The mask_type of this ListNotificationMaskRespNotificationMasks.
-        :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
+        :type mask_type: str
         """
         self._mask_type = mask_type
 
@@ -420,7 +436,7 @@ class ListNotificationMaskRespNotificationMasks:
     def create_time(self):
         r"""Gets the create_time of this ListNotificationMaskRespNotificationMasks.
 
-        告警屏蔽的创建时间，UNIX时间戳，单位毫秒。
+        **参数解释**： 告警屏蔽的创建时间，UNIX时间戳，单位毫秒。 **约束限制**： 不涉及。 **取值范围**: 不涉及。 **默认取值**： 不涉及。 
 
         :return: The create_time of this ListNotificationMaskRespNotificationMasks.
         :rtype: int
@@ -431,7 +447,7 @@ class ListNotificationMaskRespNotificationMasks:
     def create_time(self, create_time):
         r"""Sets the create_time of this ListNotificationMaskRespNotificationMasks.
 
-        告警屏蔽的创建时间，UNIX时间戳，单位毫秒。
+        **参数解释**： 告警屏蔽的创建时间，UNIX时间戳，单位毫秒。 **约束限制**： 不涉及。 **取值范围**: 不涉及。 **默认取值**： 不涉及。 
 
         :param create_time: The create_time of this ListNotificationMaskRespNotificationMasks.
         :type create_time: int
@@ -442,7 +458,7 @@ class ListNotificationMaskRespNotificationMasks:
     def update_time(self):
         r"""Gets the update_time of this ListNotificationMaskRespNotificationMasks.
 
-        告警屏蔽的更新时间，UNIX时间戳，单位毫秒。
+        **参数解释**： 告警屏蔽的更新时间，UNIX时间戳，单位毫秒。 **约束限制**： 不涉及。 **取值范围**: 不涉及。 **默认取值**： 不涉及。 
 
         :return: The update_time of this ListNotificationMaskRespNotificationMasks.
         :rtype: int
@@ -453,7 +469,7 @@ class ListNotificationMaskRespNotificationMasks:
     def update_time(self, update_time):
         r"""Sets the update_time of this ListNotificationMaskRespNotificationMasks.
 
-        告警屏蔽的更新时间，UNIX时间戳，单位毫秒。
+        **参数解释**： 告警屏蔽的更新时间，UNIX时间戳，单位毫秒。 **约束限制**： 不涉及。 **取值范围**: 不涉及。 **默认取值**： 不涉及。 
 
         :param update_time: The update_time of this ListNotificationMaskRespNotificationMasks.
         :type update_time: int
@@ -574,7 +590,7 @@ class ListNotificationMaskRespNotificationMasks:
     def policies(self):
         r"""Gets the policies of this ListNotificationMaskRespNotificationMasks.
 
-        告警策略列表。
+        **参数解释**： 告警策略列表。 
 
         :return: The policies of this ListNotificationMaskRespNotificationMasks.
         :rtype: list[:class:`huaweicloudsdkces.v2.PoliciesInListResp`]
@@ -585,7 +601,7 @@ class ListNotificationMaskRespNotificationMasks:
     def policies(self, policies):
         r"""Sets the policies of this ListNotificationMaskRespNotificationMasks.
 
-        告警策略列表。
+        **参数解释**： 告警策略列表。 
 
         :param policies: The policies of this ListNotificationMaskRespNotificationMasks.
         :type policies: list[:class:`huaweicloudsdkces.v2.PoliciesInListResp`]

@@ -23,7 +23,7 @@ class DimensionLogicTableAttributeVO:
         'name_ch': 'str',
         'description': 'str',
         'data_type': 'str',
-        'domain_type': 'DataTypeDomainEnum',
+        'domain_type': 'str',
         'data_type_extend': 'str',
         'is_primary_key': 'bool',
         'is_biz_primary': 'bool',
@@ -81,8 +81,8 @@ class DimensionLogicTableAttributeVO:
         :type description: str
         :param data_type: 字段类型。
         :type data_type: str
-        :param domain_type: 
-        :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
+        :param domain_type: 字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
+        :type domain_type: str
         :param data_type_extend: 数据类型扩展字段。
         :type data_type_extend: str
         :param is_primary_key: 是否主键，只读。
@@ -350,8 +350,10 @@ class DimensionLogicTableAttributeVO:
     def domain_type(self):
         r"""Gets the domain_type of this DimensionLogicTableAttributeVO.
 
+        字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
+
         :return: The domain_type of this DimensionLogicTableAttributeVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
+        :rtype: str
         """
         return self._domain_type
 
@@ -359,8 +361,10 @@ class DimensionLogicTableAttributeVO:
     def domain_type(self, domain_type):
         r"""Sets the domain_type of this DimensionLogicTableAttributeVO.
 
+        字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
+
         :param domain_type: The domain_type of this DimensionLogicTableAttributeVO.
-        :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
+        :type domain_type: str
         """
         self._domain_type = domain_type
 

@@ -49,7 +49,7 @@ class RdsRedisInfo:
         :type start_time: str
         :param end_time: **参数解释**： 结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param status: **参数解释**： 状态。 **取值范围**： PREPARE|RUNNING|WAITING|PAUSE|PAUSING|SUCCESS|FAIL。
+        :param status: **参数解释**： 状态。 **取值范围**： - PREPARE：准备。 - RUNNING：运行中。 - WAITING：等待中。 - PAUSE：已暂停。 - PAUSING：暂停中。 - SUCCESS：成功。 - FAIL：失败。
         :type status: str
         :param redis_conf: 
         :type redis_conf: :class:`huaweicloudsdkdws.v2.RedisConf`
@@ -180,7 +180,7 @@ class RdsRedisInfo:
     def status(self):
         r"""Gets the status of this RdsRedisInfo.
 
-        **参数解释**： 状态。 **取值范围**： PREPARE|RUNNING|WAITING|PAUSE|PAUSING|SUCCESS|FAIL。
+        **参数解释**： 状态。 **取值范围**： - PREPARE：准备。 - RUNNING：运行中。 - WAITING：等待中。 - PAUSE：已暂停。 - PAUSING：暂停中。 - SUCCESS：成功。 - FAIL：失败。
 
         :return: The status of this RdsRedisInfo.
         :rtype: str
@@ -191,7 +191,7 @@ class RdsRedisInfo:
     def status(self, status):
         r"""Sets the status of this RdsRedisInfo.
 
-        **参数解释**： 状态。 **取值范围**： PREPARE|RUNNING|WAITING|PAUSE|PAUSING|SUCCESS|FAIL。
+        **参数解释**： 状态。 **取值范围**： - PREPARE：准备。 - RUNNING：运行中。 - WAITING：等待中。 - PAUSE：已暂停。 - PAUSING：暂停中。 - SUCCESS：成功。 - FAIL：失败。
 
         :param status: The status of this RdsRedisInfo.
         :type status: str

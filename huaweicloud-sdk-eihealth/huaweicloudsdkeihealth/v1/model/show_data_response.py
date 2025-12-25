@@ -18,7 +18,7 @@ class ShowDataResponse(SdkResponse):
     openapi_types = {
         'path': 'str',
         'name': 'str',
-        'type': 'PathType',
+        'type': 'str',
         'size': 'int',
         'create_time': 'str',
         'content': 'str',
@@ -49,7 +49,7 @@ class ShowDataResponse(SdkResponse):
         :param name: 名称
         :type name: str
         :param type: 
-        :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
+        :type type: str
         :param size: 大小
         :type size: int
         :param create_time: 创建时间
@@ -145,7 +145,7 @@ class ShowDataResponse(SdkResponse):
         r"""Gets the type of this ShowDataResponse.
 
         :return: The type of this ShowDataResponse.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
+        :rtype: str
         """
         return self._type
 
@@ -154,7 +154,7 @@ class ShowDataResponse(SdkResponse):
         r"""Sets the type of this ShowDataResponse.
 
         :param type: The type of this ShowDataResponse.
-        :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
+        :type type: str
         """
         self._type = type
 

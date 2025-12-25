@@ -65,11 +65,11 @@ class DisasterRecovery:
 
         :param id: **参数解释**： 容灾ID。 **取值范围**： 不涉及。
         :type id: str
-        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 状态。 **取值范围**： - creating，容灾创建中。 - create_failed，容灾创建失败。 - unstart，容灾未启动。 - starting，容灾启动中。 - start_failed，容灾启动失败。 - running，容灾运行中。 - stopping，容灾停止中。 - stop_failed，容灾停止失败。 - switchovering，灾备切换中。 - abnormal，容灾异常。 - deleting，容灾删除中。 - deleted，容灾已删除。
         :type status: str
         :param name: **参数解释**： 名称。 **取值范围**： 不涉及。
         :type name: str
-        :param dr_type: **参数解释**： 容灾类型。 **取值范围**： 不涉及。
+        :param dr_type: **参数解释**： 容灾类型。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。
         :type dr_type: str
         :param primary_cluster_id: **参数解释**： 主集群ID。 **取值范围**： 不涉及。
         :type primary_cluster_id: str
@@ -83,9 +83,9 @@ class DisasterRecovery:
         :type primary_cluster_role: str
         :param standby_cluster_role: **参数解释**： 备集群角色。 **取值范围**： 不涉及。
         :type standby_cluster_role: str
-        :param primary_cluster_status: **参数解释**： 主集群状态。 **取值范围**： 不涉及。
+        :param primary_cluster_status: **参数解释**： 主集群状态。 **取值范围**： - backuping，备份运行中。 - restoring，恢复运行中。 - stopped，集群已停止。 - waiting，容灾运行中。 - abnormal，容灾异常。 - drDeleted，容灾已删除。
         :type primary_cluster_status: str
-        :param standby_cluster_status: **参数解释**： 备集群状态。 **取值范围**： 不涉及。
+        :param standby_cluster_status: **参数解释**： 备集群状态。 **取值范围**： - backuping，备份运行中。 - restoring，恢复运行中。 - stopped，集群已停止。 - waiting，容灾运行中。 - abnormal，容灾异常。 - drDeleted，容灾已删除。
         :type standby_cluster_status: str
         :param primary_cluster_region: **参数解释**： 主集群region。 **取值范围**： 不涉及。
         :type primary_cluster_region: str
@@ -191,7 +191,7 @@ class DisasterRecovery:
     def status(self):
         r"""Gets the status of this DisasterRecovery.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - creating，容灾创建中。 - create_failed，容灾创建失败。 - unstart，容灾未启动。 - starting，容灾启动中。 - start_failed，容灾启动失败。 - running，容灾运行中。 - stopping，容灾停止中。 - stop_failed，容灾停止失败。 - switchovering，灾备切换中。 - abnormal，容灾异常。 - deleting，容灾删除中。 - deleted，容灾已删除。
 
         :return: The status of this DisasterRecovery.
         :rtype: str
@@ -202,7 +202,7 @@ class DisasterRecovery:
     def status(self, status):
         r"""Sets the status of this DisasterRecovery.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - creating，容灾创建中。 - create_failed，容灾创建失败。 - unstart，容灾未启动。 - starting，容灾启动中。 - start_failed，容灾启动失败。 - running，容灾运行中。 - stopping，容灾停止中。 - stop_failed，容灾停止失败。 - switchovering，灾备切换中。 - abnormal，容灾异常。 - deleting，容灾删除中。 - deleted，容灾已删除。
 
         :param status: The status of this DisasterRecovery.
         :type status: str
@@ -235,7 +235,7 @@ class DisasterRecovery:
     def dr_type(self):
         r"""Gets the dr_type of this DisasterRecovery.
 
-        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
+        **参数解释**： 容灾类型。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。
 
         :return: The dr_type of this DisasterRecovery.
         :rtype: str
@@ -246,7 +246,7 @@ class DisasterRecovery:
     def dr_type(self, dr_type):
         r"""Sets the dr_type of this DisasterRecovery.
 
-        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
+        **参数解释**： 容灾类型。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。
 
         :param dr_type: The dr_type of this DisasterRecovery.
         :type dr_type: str
@@ -389,7 +389,7 @@ class DisasterRecovery:
     def primary_cluster_status(self):
         r"""Gets the primary_cluster_status of this DisasterRecovery.
 
-        **参数解释**： 主集群状态。 **取值范围**： 不涉及。
+        **参数解释**： 主集群状态。 **取值范围**： - backuping，备份运行中。 - restoring，恢复运行中。 - stopped，集群已停止。 - waiting，容灾运行中。 - abnormal，容灾异常。 - drDeleted，容灾已删除。
 
         :return: The primary_cluster_status of this DisasterRecovery.
         :rtype: str
@@ -400,7 +400,7 @@ class DisasterRecovery:
     def primary_cluster_status(self, primary_cluster_status):
         r"""Sets the primary_cluster_status of this DisasterRecovery.
 
-        **参数解释**： 主集群状态。 **取值范围**： 不涉及。
+        **参数解释**： 主集群状态。 **取值范围**： - backuping，备份运行中。 - restoring，恢复运行中。 - stopped，集群已停止。 - waiting，容灾运行中。 - abnormal，容灾异常。 - drDeleted，容灾已删除。
 
         :param primary_cluster_status: The primary_cluster_status of this DisasterRecovery.
         :type primary_cluster_status: str
@@ -411,7 +411,7 @@ class DisasterRecovery:
     def standby_cluster_status(self):
         r"""Gets the standby_cluster_status of this DisasterRecovery.
 
-        **参数解释**： 备集群状态。 **取值范围**： 不涉及。
+        **参数解释**： 备集群状态。 **取值范围**： - backuping，备份运行中。 - restoring，恢复运行中。 - stopped，集群已停止。 - waiting，容灾运行中。 - abnormal，容灾异常。 - drDeleted，容灾已删除。
 
         :return: The standby_cluster_status of this DisasterRecovery.
         :rtype: str
@@ -422,7 +422,7 @@ class DisasterRecovery:
     def standby_cluster_status(self, standby_cluster_status):
         r"""Sets the standby_cluster_status of this DisasterRecovery.
 
-        **参数解释**： 备集群状态。 **取值范围**： 不涉及。
+        **参数解释**： 备集群状态。 **取值范围**： - backuping，备份运行中。 - restoring，恢复运行中。 - stopped，集群已停止。 - waiting，容灾运行中。 - abnormal，容灾异常。 - drDeleted，容灾已删除。
 
         :param standby_cluster_status: The standby_cluster_status of this DisasterRecovery.
         :type standby_cluster_status: str

@@ -1,3 +1,846 @@
+# 3.1.181 2025-12-25
+
+### HuaweiCloud SDK BSS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListServiceTypes**
+    - changes of request param
+      - `+ service_type_name`
+
+### HuaweiCloud SDK BSSINTL
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListServiceTypes**
+    - changes of request param
+      - `+ service_type_name`
+
+### HuaweiCloud SDK CCE
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowCluster**
+    - changes of response param
+      - `+ spec.hostNetwork.autoGenerateSecurityGroupHardeningConfig`
+      - `+ spec.containerNetwork.enableContainerCIDRsReservation`
+  - **UpdateCluster**
+    - changes of request param
+      - `+ spec.containerNetwork.containercidrs`
+    - changes of response param
+      - `+ spec.hostNetwork.autoGenerateSecurityGroupHardeningConfig`
+      - `+ spec.containerNetwork.enableContainerCIDRsReservation`
+  - **DeleteCluster**
+    - changes of response param
+      - `+ spec.hostNetwork.autoGenerateSecurityGroupHardeningConfig`
+      - `+ spec.containerNetwork.enableContainerCIDRsReservation`
+  - **CreateCluster**
+    - changes of request param
+      - `+ spec.hostNetwork.autoGenerateSecurityGroupHardeningConfig`
+      - `+ spec.containerNetwork.enableContainerCIDRsReservation`
+    - changes of response param
+      - `+ spec.hostNetwork.autoGenerateSecurityGroupHardeningConfig`
+      - `+ spec.containerNetwork.enableContainerCIDRsReservation`
+  - **ListClusters**
+    - changes of response param
+      - `+ items.spec.hostNetwork.autoGenerateSecurityGroupHardeningConfig`
+      - `+ items.spec.containerNetwork.enableContainerCIDRsReservation`
+  - **ShowNode**
+    - changes of response param
+      - `+ spec.extendParam.containerBaseSize`
+      - `+ spec.extendParam.kubeReservedCpu`
+      - `+ spec.extendParam.systemReservedCpu`
+      - `+ spec.extendParam.kubeReservedPid`
+      - `+ spec.extendParam.systemReservedPid`
+      - `+ spec.extendParam.kubeReservedStorage`
+      - `+ spec.extendParam.systemReservedStorage`
+  - **UpdateNode**
+    - changes of response param
+      - `+ spec.extendParam.containerBaseSize`
+      - `+ spec.extendParam.kubeReservedCpu`
+      - `+ spec.extendParam.systemReservedCpu`
+      - `+ spec.extendParam.kubeReservedPid`
+      - `+ spec.extendParam.systemReservedPid`
+      - `+ spec.extendParam.kubeReservedStorage`
+      - `+ spec.extendParam.systemReservedStorage`
+  - **DeleteNode**
+    - changes of response param
+      - `+ spec.extendParam.containerBaseSize`
+      - `+ spec.extendParam.kubeReservedCpu`
+      - `+ spec.extendParam.systemReservedCpu`
+      - `+ spec.extendParam.kubeReservedPid`
+      - `+ spec.extendParam.systemReservedPid`
+      - `+ spec.extendParam.kubeReservedStorage`
+      - `+ spec.extendParam.systemReservedStorage`
+  - **CreateNode**
+    - changes of request param
+      - `+ spec.extendParam.containerBaseSize`
+      - `+ spec.extendParam.kubeReservedCpu`
+      - `+ spec.extendParam.systemReservedCpu`
+      - `+ spec.extendParam.kubeReservedPid`
+      - `+ spec.extendParam.systemReservedPid`
+      - `+ spec.extendParam.kubeReservedStorage`
+      - `+ spec.extendParam.systemReservedStorage`
+    - changes of response param
+      - `+ spec.extendParam.containerBaseSize`
+      - `+ spec.extendParam.kubeReservedCpu`
+      - `+ spec.extendParam.systemReservedCpu`
+      - `+ spec.extendParam.kubeReservedPid`
+      - `+ spec.extendParam.systemReservedPid`
+      - `+ spec.extendParam.kubeReservedStorage`
+      - `+ spec.extendParam.systemReservedStorage`
+  - **ListNodes**
+    - changes of response param
+      - `+ items.spec.extendParam.containerBaseSize`
+      - `+ items.spec.extendParam.kubeReservedCpu`
+      - `+ items.spec.extendParam.systemReservedCpu`
+      - `+ items.spec.extendParam.kubeReservedPid`
+      - `+ items.spec.extendParam.systemReservedPid`
+      - `+ items.spec.extendParam.kubeReservedStorage`
+      - `+ items.spec.extendParam.systemReservedStorage`
+  - **ShowNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.configurationsOverride`
+      - `+ spec.nodeTemplate.extendParam.containerBaseSize`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.systemReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedPid`
+      - `+ spec.nodeTemplate.extendParam.systemReservedPid`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedStorage`
+      - `+ spec.nodeTemplate.extendParam.systemReservedStorage`
+  - **UpdateNodePool**
+    - changes of response param
+      - `+ status.configurationSyncedNodeCount`
+      - `+ spec.nodeTemplate.configurationsOverride`
+      - `+ spec.nodeTemplate.extendParam.containerBaseSize`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.systemReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedPid`
+      - `+ spec.nodeTemplate.extendParam.systemReservedPid`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedStorage`
+      - `+ spec.nodeTemplate.extendParam.systemReservedStorage`
+  - **DeleteNodePool**
+    - changes of response param
+      - `+ spec.nodeTemplate.configurationsOverride`
+      - `+ spec.nodeTemplate.extendParam.containerBaseSize`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.systemReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedPid`
+      - `+ spec.nodeTemplate.extendParam.systemReservedPid`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedStorage`
+      - `+ spec.nodeTemplate.extendParam.systemReservedStorage`
+  - **UpgradeNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.configurationsOverride`
+      - `+ spec.nodeTemplate.extendParam.containerBaseSize`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.systemReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedPid`
+      - `+ spec.nodeTemplate.extendParam.systemReservedPid`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedStorage`
+      - `+ spec.nodeTemplate.extendParam.systemReservedStorage`
+  - **CreateNodePool**
+    - changes of request param
+      - `+ spec.nodeTemplate.configurationsOverride`
+      - `+ spec.nodeTemplate.extendParam.containerBaseSize`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.systemReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedPid`
+      - `+ spec.nodeTemplate.extendParam.systemReservedPid`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedStorage`
+      - `+ spec.nodeTemplate.extendParam.systemReservedStorage`
+    - changes of response param
+      - `+ status.configurationSyncedNodeCount`
+      - `+ spec.nodeTemplate.configurationsOverride`
+      - `+ spec.nodeTemplate.extendParam.containerBaseSize`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.systemReservedCpu`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedPid`
+      - `+ spec.nodeTemplate.extendParam.systemReservedPid`
+      - `+ spec.nodeTemplate.extendParam.kubeReservedStorage`
+      - `+ spec.nodeTemplate.extendParam.systemReservedStorage`
+  - **ListNodePools**
+    - changes of response param
+      - `+ items.spec.nodeTemplate.configurationsOverride`
+      - `+ items.spec.nodeTemplate.extendParam.containerBaseSize`
+      - `+ items.spec.nodeTemplate.extendParam.kubeReservedCpu`
+      - `+ items.spec.nodeTemplate.extendParam.systemReservedCpu`
+      - `+ items.spec.nodeTemplate.extendParam.kubeReservedPid`
+      - `+ items.spec.nodeTemplate.extendParam.systemReservedPid`
+      - `+ items.spec.nodeTemplate.extendParam.kubeReservedStorage`
+      - `+ items.spec.nodeTemplate.extendParam.systemReservedStorage`
+  - **ListHyperNodes**
+    - changes of response param
+      - `+ hyperNodeList.spec.nodeTemplate.extendParam.containerBaseSize`
+      - `+ hyperNodeList.spec.nodeTemplate.extendParam.kubeReservedCpu`
+      - `+ hyperNodeList.spec.nodeTemplate.extendParam.systemReservedCpu`
+      - `+ hyperNodeList.spec.nodeTemplate.extendParam.kubeReservedPid`
+      - `+ hyperNodeList.spec.nodeTemplate.extendParam.systemReservedPid`
+      - `+ hyperNodeList.spec.nodeTemplate.extendParam.kubeReservedStorage`
+      - `+ hyperNodeList.spec.nodeTemplate.extendParam.systemReservedStorage`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateResourceGroup**
+    - changes of request param
+      - `+ resources.relation_id`
+  - **CreateResourceGroup**
+    - changes of request param
+      - `+ resources.relation_id`
+  - **UpdateAlarm**
+    - changes of request param
+      - `+ alarm_type: enum value [MULTI_INSTANCE]`
+  - **ShowAlarm**
+    - changes of response param
+      - `+ metric_alarms.relation_id`
+      - `+ metric_alarms.ignore_insufficient_data`
+      - `+ metric_alarms.condition.selected_unit`
+      - `* metric_alarms.condition: object<ConditionResp> -> object<AlarmRuleConditionResp>`
+  - **CreateAlarm**
+    - changes of request param
+      - `* metric.dimensions: list<Dimension> -> list<CreateMetricDimension>`
+  - **ListAlarms**
+    - changes of response param
+      - `+ metric_alarms.relation_id`
+      - `+ metric_alarms.ignore_insufficient_data`
+      - `+ metric_alarms.condition.selected_unit`
+      - `* metric_alarms.condition: object<ConditionResp> -> object<AlarmRuleConditionResp>`
+
+### HuaweiCloud SDK CES
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchUpdateOneClickAlarmsEnabledState**
+    - changes of request param
+      - `+ retain_when_all_disabled`
+      - `+ action_type`
+      - `* body: object<BatchEnableAlarmsRequestBody> -> object<BatchUpdateOneClickAlarmsEnabledStateRequestBody>`
+  - **BatchDeleteOneClickAlarms**
+    - changes of request param
+      - `+ action_type`
+  - **BatchUpdateOneClickAlarmPoliciesEnabledState**
+    - changes of request param
+      - `+ retain_when_all_disabled`
+      - `+ action_type`
+  - **ListAlarmHistories**
+    - changes of response param
+      - `+ alarm_histories.mask_status`
+      - `+ alarm_histories.status: enum value [insufficient_data]`
+  - **ShowAlarmTemplate**
+    - changes of response param
+      - `* policies.value: number -> double`
+  - **UpdateAlarmTemplate**
+    - changes of request param
+      - `- policies.extra_info`
+      - `- policies.type`
+      - `* policies.value: number -> double`
+      - `* policies: list<Policies> -> list<UpdateAlarmTemplatePolicies>`
+  - **UpdateResourceGroupAssociationAlarmTemplate**
+    - changes of request param
+      - `+ notice_type_notification_template_list`
+    - changes of response param
+      - `* template_ids: list<TemplateID> -> list<TemplateIDResp>`
+  - **BatchUpdateNotificationMasks**
+    - changes of request param
+      - `- relation_type: enum value [EVENT.SYS]`
+    - changes of response param
+      - `* relation_ids: list<RelationID> -> list<RelationIDResp>`
+  - **UpdateNotificationMask**
+    - changes of request param
+      - `- relation_type: enum value [EVENT.SYS]`
+  - **ListNotificationMasks**
+    - changes of request param
+      - `+ alarm_ids`
+    - changes of response param
+      - `- notification_masks.relation_type: enum value [EVENT.SYS]`
+      - `* notification_masks.metric_names: list<MetricName> -> list<MetricNameResp>`
+      - `* notification_masks.product_metrics: list<ProductMetric> -> list<ProductMetricResp>`
+      - `* notification_masks.resources: list<ResourceCategory> -> list<ResourceCategoryResp>`
+      - `+ notification_masks.policies.namespace`
+      - `+ notification_masks.policies.dimension_name`
+      - `* notification_masks.policies.extra_info: object<MetricExtraInfo> -> object<MetricExtraInfoResp>`
+      - `* notification_masks.policies.hierarchical_value: object<HierarchicalValue> -> object<HierarchicalValueResp>`
+  - **ListNotificationMaskResources**
+    - changes of response param
+      - `* resources.dimensions: list<ResourceDimension> -> list<ResourceDimensionResp>`
+      - `* resources: list<Resource> -> list<ResourceResp>`
+  - **ListAlarmRules**
+    - changes of response param
+      - `* alarms.tags: list<ResourceTag> -> list<ResourceTagResp>`
+      - `- alarms.policies.enabled`
+      - `* alarms.policies.hierarchical_value: object<HierarchicalValue> -> object<HierarchicalValueResp>`
+      - `* alarms.policies: list<Policy> -> list<PolicyResp>`
+  - **UpdateAlarmNotifications**
+    - changes of response param
+      - `+ effective_timezone`
+      - `+ notification_policy_ids`
+      - `+ notification_manner`
+  - **ListResourceGroups**
+    - changes of request param
+      - `+ status`
+    - changes of response param
+      - `+ resource_groups.update_time`
+      - `+ resource_groups.resource_level`
+  - **ShowResourceGroup**
+    - changes of response param
+      - `+ association_alarm_templates`
+      - `+ update_time`
+
+### HuaweiCloud SDK CodeArtsArtifact
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ShowPackageDataDetail`
+    - `ShowPackageInfo`
+    - `ShowAutoDeleteJobSettings`
+    - `DeleteCompletelyUpdateFileState`
+    - `ListFileBuildArchives`
+    - `ListMavenList`
+    - `ListProjectUsers`
+    - `ListChildProxyRepositoriesList`
+    - `ListNetProxy`
+    - `ListDomainIpConfig`
+    - `ListSecGuardList`
+    - `ShowOpenSourceEnabled`
+    - `ShowRepoUserInfo`
+    - `ListMavenUser`
+    - `ShowUserTicket`
+    - `ListProjectRolePermissions`
+    - `ShowMultiRolesUserPermissions`
+    - `ListCapacityMessageSetting`
+    - `ListFiles`
+    - `ShowLatestVersionFilesCount`
+    - `ListLatestVersionFiles`
+    - `ShowFileDetail`
+    - `ShowFileDetailByFullName`
+    - `ShowDomainReleaseRepoStorage`
+    - `ShowProjectStorageInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - **BatchDeleteTrashes**
+    - changes of request param
+      - `+ format`
+      - `- fomat`
+  - **SearchArtifacts**
+    - changes of request param
+      - `* in_project: string -> boolean`
+  - **UpdateArtifactory**
+    - changes of request param
+      - `+ project_id`
+
+### HuaweiCloud SDK CloudDC
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowServer**
+    - changes of response param
+      - `+ operation_state`
+  - **ListServers**
+    - changes of response param
+      - `+ operation_state`
+      - `+ servers.operation_state`
+  - **ListInstances**
+    - changes of response param
+      - `+ instances.operation_state`
+  - **ShowServerHardwareAttributes**
+    - changes of response param
+      - `+ network_adapters.network_ports.permanent_mac_address`
+
+### HuaweiCloud SDK CodeArtsRepo
+
+- _API Version_
+  - V4
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTenantRepositories**
+    - changes of response param
+      - `+ status: enum value [0,3,4,5,7]`
+  - **BatchUpdateRepositoryFilePushPermissions**
+    - changes of request param
+      - `* permissions.actions.user_ids: list<null> -> list<integer>`
+  - **CreateFilePushPermission**
+    - changes of request param
+      - `* actions.user_ids: list<null> -> list<integer>`
+  - **BatchUpdateProtectedBranches**
+    - changes of request param
+      - `* actions.user_ids: list<null> -> list<integer>`
+  - **BatchCreateProtectedBranch**
+    - changes of request param
+      - `* actions.user_ids: list<null> -> list<integer>`
+  - **UpdateProtectedBranch**
+    - changes of request param
+      - `* user_ids: list<null> -> list<integer>`
+  - **BatchUpdateProtectedTags**
+    - changes of request param
+      - `* actions.user_ids: list<null> -> list<integer>`
+  - **BatchCreateProtectedTags**
+    - changes of request param
+      - `* actions.user_ids: list<null> -> list<integer>`
+  - **UpdateProtectedTag**
+    - changes of request param
+      - `* user_ids: list<null> -> list<integer>`
+
+### HuaweiCloud SDK DC
+
+- _API Version_
+  - V3
+- _Features_
+  - Support the following APIs:
+    - `UpdateExtendAttribute`
+    - `ShowVifPeerDetection`
+    - `DeleteVifPeerDetection`
+    - `ListVifPeerDetections`
+    - `CreateVifPeerDetection`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DDS
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateConfiguration**
+    - changes of request param
+      - `+ entity_id`
+  - **ShowConfigurationAppliedHistory**
+    - changes of response param
+      - `+ total_count`
+  - **ListBackups**
+    - changes of request param
+      - `+ order_field`
+      - `+ order_rule`
+      - `+ backup_status`
+      - `+ backup_name`
+      - `+ backup_description`
+      - `+ instance_name`
+    - changes of response param
+      - `+ backups.instance_status`
+      - `+ backups.instance_mode`
+      - `+ backups.is_instance_restoring`
+      - `+ backups.backup_method`
+      - `+ backups.kms_enable`
+      - `+ backups.deletable`
+
+### HuaweiCloud SDK DWS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `ListSnapshotCrossRegion`, `ListSnapshotCrossRegionPolicy`, `AddSnapshotCrossRegionPolicy`, `DeleteSnapshotCrossRegionPolicy`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowModifyHistory**
+    - changes of request param
+      - `* offset: string -> int32`
+      - `* limit: string -> int32`
+    - changes of response param
+      - `* histories.applied: string -> boolean`
+
+### HuaweiCloud SDK HSS
+
+- _API Version_
+  - V5
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRaspProtectStatistics**
+    - changes of request param
+      - `- x-auth-token`
+    - changes of response param
+      - `* anti_tampering_num: int64 -> int32`
+  - **ListJarPackageStatistics**
+    - changes of request param
+      - `* category: optional -> required`
+  - **ListImageRiskConfigs**
+    - changes of request param
+      - `- region`
+  - **ListImageVulnerabilities**
+    - changes of request param
+      - `+ handle_status`
+      - `- region`
+  - **ListRaspEvents**
+    - changes of request param
+      - `- x-auth-token`
+      - `* limit: required -> optional`
+      - `* offset: required -> optional`
+      - `+ app_type: enum value [java]`
+      - `+ protect_status: enum value [closed,opened]`
+  - **AddCicdConfiguration**
+    - changes of response param
+      - `* cicd_id: object -> string`
+
+### HuaweiCloud SDK IAM
+
+- _API Version_
+  - V5
+- _Features_
+  - Support the API `ShowGroupSummary`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IMS
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListImageMembers**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ page_info`
+  - **GlanceListImageMembers**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+    - changes of response param
+      - `+ page_info`
+
+### HuaweiCloud SDK Live
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSingleStreamBitrate**
+    - changes of request param
+      - `+ type`
+  - **ListHistoryStreams**
+    - changes of request param
+      - `* domain: string -> list<string>`
+
+### HuaweiCloud SDK MetaStudio
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowAsyncTtsJob**
+    - changes of response param
+      - `+ code`
+      - `+ message`
+  - **ShowPacifyWordsSwitch**
+    - changes of request param
+      - `+ language: enum value [fr]`
+  - **ShowPacifyWordsTriggerTime**
+    - changes of request param
+      - `+ language: enum value [fr]`
+  - **ShowWelcomeSpeechSwitch**
+    - changes of request param
+      - `+ language: enum value [fr]`
+  - **ShowTtsAuditionFile**
+    - changes of response param
+      - `+ code`
+  - **ListSmartChatJob**
+    - changes of response param
+      - `+ smart_chat_jobs.default_language: enum value [fr]`
+      - `+ smart_chat_jobs.voice_config_list.language: enum value [fr]`
+  - **StartSmartChatJob**
+    - changes of response param
+      - `+ default_language: enum value [fr]`
+      - `+ voice_config_list.language: enum value [fr]`
+  - **ShowSmartChatJob**
+    - changes of response param
+      - `+ default_language: enum value [fr]`
+      - `+ voice_config_list.language: enum value [fr]`
+  - **ListHotWords**
+    - changes of request param
+      - `+ language: enum value [fr]`
+  - **ListPacifyWords**
+    - changes of request param
+      - `+ language: enum value [fr]`
+  - **ListWelcomeSpeech**
+    - changes of request param
+      - `+ language: enum value [fr]`
+  - **CreateDigitalHumanBusinessCard**
+    - changes of request param
+      - `+ card_image_config.id_card_image1`
+      - `+ card_image_config.id_card_image2`
+      - `+ card_image_config.authorize_use_human_image`
+  - **UpdateDigitalHumanBusinessCard**
+    - changes of request param
+      - `+ card_image_config.id_card_image1`
+      - `+ card_image_config.id_card_image2`
+      - `+ card_image_config.authorize_use_human_image`
+  - **CreatePhotoDigitalHumanVideo**
+    - changes of request param
+      - `+ id_card_image1`
+      - `+ id_card_image2`
+      - `+ authorize_use_human_image`
+
+### HuaweiCloud SDK Moderation
+
+- _API Version_
+  - V3
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the APIs `RunCreateAudioStreamModerationJob`, `RunCloseAudioStreamModerationJob`
+
+### HuaweiCloud SDK RocketMQ
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the API `BatchDeleteRocketMqMigrationTask`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `DeleteRocketMqMigrationTask`
+
+### HuaweiCloud SDK SecMaster
+
+- _API Version_
+  - V2
+- _Features_
+  - Support the following APIs:
+    - `ListAlertRuleTemplateMetrics`
+    - `CreateAdhocQuery`
+    - `ShowAdhocResult`
+    - `DeleteAdhocQuery`
+    - `ListTableLogs`
+    - `ListTableHistograms`
+    - `CreateTableAnalysis`
+    - `ShowDataConsumption`
+    - `EnableDataConsumption`
+    - `DisableDataConsumption`
+    - `CreateSqlValidation`
+    - `ListDirectories`
+    - `UpdatePipeSchema`
+    - `ShowPipe`
+    - `UpdatePipe`
+    - `DeletePipe`
+    - `ListPipes`
+    - `ListAnalysisScripts`
+    - `CreateAnalysisScript`
+    - `ShowAnalysisScript`
+    - `UpdateAnalysisScript`
+    - `DeleteAnalysisScript`
+    - `ListRetrieveScripts`
+    - `CreateRetrieveScript`
+    - `ShowRetrieveScript`
+    - `UpdateRetrieveScript`
+    - `DeleteRetrieveScript`
+    - `ListCodeSegments`
+    - `CreateCodeSegment`
+    - `ShowCodeSegment`
+    - `UpdateCodeSegment`
+    - `DeleteCodeSegment`
+    - `ShowSubscriptionResources`
+    - `ListTables`
+    - `CreateTable`
+    - `ShowTable`
+    - `UpdateTable`
+    - `DeleteTable`
+    - `UpdateTableSchema`
+    - `ShowVersion`
+    - `ListDataTransformations`
+    - `CreateDataTransformation`
+    - `ShowDataTransformation`
+    - `UpdateDataTransformation`
+    - `DeleteDataTransformation`
+    - `EnableDataTransformation`
+    - `DisableDataTransformation`
+    - `ListDataTransformationMetrics`
+    - `ShowMonitorStats`
+    - `SearchCheckitems`
+    - `CreateCustomizedCheckitem`
+    - `DeleteCustomizedCheckitems`
+    - `ShowCheckitemDetail`
+    - `UpdateCheckitem`
+    - `SearchCompliancePackages`
+    - `CreateCustomizedCompliancePackage`
+    - `DeleteCustomizedCompliancePackages`
+    - `ShowCompliancePackageDetail`
+    - `UpdateCompliancePackage`
+    - `ListLayoutFieldAll`
+    - `CreateLayoutField`
+    - `DeleteLayoutField`
+    - `ShowLayoutFieldInfo`
+    - `UpdateLayoutField`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following APIs:
+    - `ListAlerts`
+    - `CreateAlert`
+    - `DeleteAlert`
+    - `CreateBatchOrderAlerts`
+    - `ShowAlert`
+    - `ChangeAlert`
+    - `ListIncidents`
+    - `CreateIncident`
+    - `DeleteIncident`
+    - `ShowIncident`
+    - `ChangeIncident`
+    - `ListIndicators`
+    - `CreateIndicator`
+    - `DeleteIndicator`
+    - `ShowIndicatorDetail`
+    - `UpdateIndicator`
+    - `ShowPlaybookMonitors`
+    - `CreateAlertRuleSimulation`
+    - `CopyPlaybookVersion`
+    - `CreatePlaybookRule`
+    - `ListPlaybookInstances`
+    - `ShowPlaybookInstance`
+    - `ChangePlaybookInstance`
+    - `ShowPlaybookTopology`
+    - `ListPlaybookAuditLogs`
+    - `ShowPlaybookStatistics`
+    - `ListPlaybooks`
+    - `CreatePlaybook`
+    - `ShowPlaybook`
+    - `UpdatePlaybook`
+    - `DeletePlaybook`
+    - `ListPlaybookVersions`
+    - `CreatePlaybookVersion`
+    - `ShowPlaybookVersion`
+    - `UpdatePlaybookVersion`
+    - `DeletePlaybookVersion`
+    - `CreatePlaybookApprove`
+    - `ShowPlaybookRule`
+    - `UpdatePlaybookRule`
+    - `DeletePlaybookRule`
+    - `ListPlaybookActions`
+    - `CreatePlaybookAction`
+    - `UpdatePlaybookAction`
+    - `DeletePlaybookAction`
+    - `ListPlaybookApproves`
+    - `ListDataobjectRelations`
+    - `CreateDataobjectRelations`
+    - `DeleteDataobjectRelations`
+    - `ListDataclass`
+    - `ListDataclassFields`
+    - `ListWorkflows`
+    - `CreateDataspace`
+    - `ListWorkspaces`
+    - `CreateWorkspace`
+    - `ShowWorkspace`
+    - `UpdateWorkspace`
+    - `DeleteWorkspace`
+    - `CreatePostPaidOrder`
+    - `BatchSearchMetricHits`
+  - **SearchBaseline**
+    - changes of request param
+      - `+ condition.conditions`
+      - `+ condition.logics`
+    - changes of response param
+      - `* data: list<string> -> list<object>`
+
+### HuaweiCloud SDK SWR
+
+- _API Version_
+  - V2
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowInstanceArtifactAddition**
+    - changes of response param
+      - `* build_histories.size: int32 -> int64`
+  - **ListInstanceTags**
+    - changes of response param
+      - `* tags.size: int32 -> int64`
+  - **ListInstanceArtifacts**
+    - changes of response param
+      - `* artifacts.size: int32 -> int64`
+  - **ListInstanceAllArtifacts**
+    - changes of response param
+      - `* artifacts.size: int32 -> int64`
+  - **ShowInstanceArtifact**
+    - changes of response param
+      - `* size: int32 -> int64`
+
+### HuaweiCloud SDK UCS
+
+- _API Version_
+  - V1
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateCluster**
+    - changes of request param
+      - `- spec.workerConfig`
+  - **RegisterCluster**
+    - changes of request param
+      - `- spec.network`
+
 # 3.1.180 2025-12-18
 
 ### HuaweiCloud SDK CloudDC

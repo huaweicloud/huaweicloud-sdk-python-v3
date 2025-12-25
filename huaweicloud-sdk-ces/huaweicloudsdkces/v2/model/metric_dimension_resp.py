@@ -29,9 +29,9 @@ class MetricDimensionResp:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释**： 指标维度名称。 **取值范围**： 以字母开头，长度为[1,32]个字符。 
+        :param name: **参数解释**： 资源维度名称。 **取值范围**： 以字母开头，长度为[1,32]个字符。 
         :type name: str
-        :param value: **参数解释**： 指标维度值。 **取值范围**： 长度为[0,256]个字符。 
+        :param value: **参数解释**： 资源维度值。 **取值范围**： 长度为[0,256]个字符。 
         :type value: str
         """
         
@@ -50,7 +50,7 @@ class MetricDimensionResp:
     def name(self):
         r"""Gets the name of this MetricDimensionResp.
 
-        **参数解释**： 指标维度名称。 **取值范围**： 以字母开头，长度为[1,32]个字符。 
+        **参数解释**： 资源维度名称。 **取值范围**： 以字母开头，长度为[1,32]个字符。 
 
         :return: The name of this MetricDimensionResp.
         :rtype: str
@@ -61,7 +61,7 @@ class MetricDimensionResp:
     def name(self, name):
         r"""Sets the name of this MetricDimensionResp.
 
-        **参数解释**： 指标维度名称。 **取值范围**： 以字母开头，长度为[1,32]个字符。 
+        **参数解释**： 资源维度名称。 **取值范围**： 以字母开头，长度为[1,32]个字符。 
 
         :param name: The name of this MetricDimensionResp.
         :type name: str
@@ -72,7 +72,7 @@ class MetricDimensionResp:
     def value(self):
         r"""Gets the value of this MetricDimensionResp.
 
-        **参数解释**： 指标维度值。 **取值范围**： 长度为[0,256]个字符。 
+        **参数解释**： 资源维度值。 **取值范围**： 长度为[0,256]个字符。 
 
         :return: The value of this MetricDimensionResp.
         :rtype: str
@@ -83,7 +83,7 @@ class MetricDimensionResp:
     def value(self, value):
         r"""Sets the value of this MetricDimensionResp.
 
-        **参数解释**： 指标维度值。 **取值范围**： 长度为[0,256]个字符。 
+        **参数解释**： 资源维度值。 **取值范围**： 长度为[0,256]个字符。 
 
         :param value: The value of this MetricDimensionResp.
         :type value: str

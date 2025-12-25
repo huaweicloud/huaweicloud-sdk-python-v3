@@ -17,7 +17,7 @@ class AuthorizationMail:
     openapi_types = {
         'id': 'str',
         'account': 'str',
-        'account_auth_type': 'AccountTypeEnum',
+        'account_auth_type': 'str',
         'account_auth_name': 'str',
         'app_group_id': 'str',
         'app_group_name': 'str',
@@ -49,8 +49,8 @@ class AuthorizationMail:
         :type id: str
         :param account: 用户(组)。
         :type account: str
-        :param account_auth_type: 
-        :type account_auth_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
+        :param account_auth_type: 用户类型： * &#x60;USER&#x60; - 用户 * &#x60;USER_GROUP&#x60; - 用户组
+        :type account_auth_type: str
         :param account_auth_name: 授权对象名称。
         :type account_auth_name: str
         :param app_group_id: 应用组ID。
@@ -149,8 +149,10 @@ class AuthorizationMail:
     def account_auth_type(self):
         r"""Gets the account_auth_type of this AuthorizationMail.
 
+        用户类型： * `USER` - 用户 * `USER_GROUP` - 用户组
+
         :return: The account_auth_type of this AuthorizationMail.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
+        :rtype: str
         """
         return self._account_auth_type
 
@@ -158,8 +160,10 @@ class AuthorizationMail:
     def account_auth_type(self, account_auth_type):
         r"""Sets the account_auth_type of this AuthorizationMail.
 
+        用户类型： * `USER` - 用户 * `USER_GROUP` - 用户组
+
         :param account_auth_type: The account_auth_type of this AuthorizationMail.
-        :type account_auth_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
+        :type account_auth_type: str
         """
         self._account_auth_type = account_auth_type
 

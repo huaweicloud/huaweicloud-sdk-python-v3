@@ -23,8 +23,7 @@ class RegisterClusterSpec:
         'city': 'str',
         'region': 'str',
         'project_id': 'str',
-        'manage_type': 'str',
-        'network': 'NetworkConfig'
+        'manage_type': 'str'
     }
 
     attribute_map = {
@@ -36,11 +35,10 @@ class RegisterClusterSpec:
         'city': 'city',
         'region': 'region',
         'project_id': 'projectID',
-        'manage_type': 'manageType',
-        'network': 'network'
+        'manage_type': 'manageType'
     }
 
-    def __init__(self, cluster_group_id=None, category=None, type=None, provider=None, country=None, city=None, region=None, project_id=None, manage_type=None, network=None):
+    def __init__(self, cluster_group_id=None, category=None, type=None, provider=None, country=None, city=None, region=None, project_id=None, manage_type=None):
         r"""RegisterClusterSpec
 
         The model defined in huaweicloud sdk
@@ -63,8 +61,6 @@ class RegisterClusterSpec:
         :type project_id: str
         :param manage_type: 集群管理类型信息。 取值如下： - grouped：在舰队中纳管的集群 - discrete：未加入舰队的集群
         :type manage_type: str
-        :param network: 
-        :type network: :class:`huaweicloudsdkucs.v1.NetworkConfig`
         """
         
         
@@ -78,7 +74,6 @@ class RegisterClusterSpec:
         self._region = None
         self._project_id = None
         self._manage_type = None
-        self._network = None
         self.discriminator = None
 
         if cluster_group_id is not None:
@@ -93,8 +88,6 @@ class RegisterClusterSpec:
         if project_id is not None:
             self.project_id = project_id
         self.manage_type = manage_type
-        if network is not None:
-            self.network = network
 
     @property
     def cluster_group_id(self):
@@ -293,24 +286,6 @@ class RegisterClusterSpec:
         :type manage_type: str
         """
         self._manage_type = manage_type
-
-    @property
-    def network(self):
-        r"""Gets the network of this RegisterClusterSpec.
-
-        :return: The network of this RegisterClusterSpec.
-        :rtype: :class:`huaweicloudsdkucs.v1.NetworkConfig`
-        """
-        return self._network
-
-    @network.setter
-    def network(self, network):
-        r"""Sets the network of this RegisterClusterSpec.
-
-        :param network: The network of this RegisterClusterSpec.
-        :type network: :class:`huaweicloudsdkucs.v1.NetworkConfig`
-        """
-        self._network = network
 
     def to_dict(self):
         result = {}

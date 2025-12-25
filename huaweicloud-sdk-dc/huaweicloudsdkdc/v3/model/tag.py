@@ -29,9 +29,9 @@ class Tag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键，最大长度36个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        :param key: 标签键，取值可以包含任意语种字母、数字、空格，以及_.:&#x3D;+-@特殊字符，但首尾不能含有空格，不能以_sys_开头。
         :type key: str
-        :param value: 标签值，最大长度43个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
+        :param value: 标签值，格式为取值可以包含任意语种字母、数字、空格，以及_.:/&#x3D;+-@特殊字符。
         :type value: str
         """
         
@@ -49,7 +49,7 @@ class Tag:
     def key(self):
         r"""Gets the key of this Tag.
 
-        标签键，最大长度36个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        标签键，取值可以包含任意语种字母、数字、空格，以及_.:=+-@特殊字符，但首尾不能含有空格，不能以_sys_开头。
 
         :return: The key of this Tag.
         :rtype: str
@@ -60,7 +60,7 @@ class Tag:
     def key(self, key):
         r"""Sets the key of this Tag.
 
-        标签键，最大长度36个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，中文。
+        标签键，取值可以包含任意语种字母、数字、空格，以及_.:=+-@特殊字符，但首尾不能含有空格，不能以_sys_开头。
 
         :param key: The key of this Tag.
         :type key: str
@@ -71,7 +71,7 @@ class Tag:
     def value(self):
         r"""Gets the value of this Tag.
 
-        标签值，最大长度43个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
+        标签值，格式为取值可以包含任意语种字母、数字、空格，以及_.:/=+-@特殊字符。
 
         :return: The value of this Tag.
         :rtype: str
@@ -82,7 +82,7 @@ class Tag:
     def value(self, value):
         r"""Sets the value of this Tag.
 
-        标签值，最大长度43个unicode字符，格式为大小写字母，数字，中划线“-”，下划线“_”，点“.”，中文。
+        标签值，格式为取值可以包含任意语种字母、数字、空格，以及_.:/=+-@特殊字符。
 
         :param value: The value of this Tag.
         :type value: str

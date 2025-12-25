@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TransferTypeEnum:
-    """
-    allowed enum values
-    """
-    TRANSFER_OUT = "TRANSFER_OUT"
-    TRANSFER_BACK = "TRANSFER_BACK"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

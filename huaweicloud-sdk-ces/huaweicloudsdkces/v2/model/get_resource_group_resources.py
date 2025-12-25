@@ -37,17 +37,17 @@ class GetResourceGroupResources:
 
         The model defined in huaweicloud sdk
 
-        :param status: 指标告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        :param status: **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
         :type status: str
         :param dimensions: 资源的维度信息
         :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
-        :param tags: 资源的tag信息,格式为key/value的json字符串,样例为\&quot;{\\\&quot;sss\\\&quot;:\\\&quot;aaa\\\&quot;}\&quot;
+        :param tags: **参数解释** 资源的tag信息,格式为key/value的json字符串,样例为\&quot;{\\\&quot;sss\\\&quot;:\\\&quot;aaa\\\&quot;}\&quot;。 **取值范围** 枚举值。 字符串长度[0, 10240] 
         :type tags: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: **参数解释** 企业项目ID。 **取值范围** 由数字、字母和-组成，字符串长度范围[1,128] 
         :type enterprise_project_id: str
-        :param event_status: 事件告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        :param event_status: **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
         :type event_status: str
-        :param resource_name: 资源名称
+        :param resource_name: **参数解释** 资源名称 **取值范围** 长度[0,128]个字符 
         :type resource_name: str
         """
         
@@ -76,7 +76,7 @@ class GetResourceGroupResources:
     def status(self):
         r"""Gets the status of this GetResourceGroupResources.
 
-        指标告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
 
         :return: The status of this GetResourceGroupResources.
         :rtype: str
@@ -87,7 +87,7 @@ class GetResourceGroupResources:
     def status(self, status):
         r"""Sets the status of this GetResourceGroupResources.
 
-        指标告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
 
         :param status: The status of this GetResourceGroupResources.
         :type status: str
@@ -120,7 +120,7 @@ class GetResourceGroupResources:
     def tags(self):
         r"""Gets the tags of this GetResourceGroupResources.
 
-        资源的tag信息,格式为key/value的json字符串,样例为\"{\\\"sss\\\":\\\"aaa\\\"}\"
+        **参数解释** 资源的tag信息,格式为key/value的json字符串,样例为\"{\\\"sss\\\":\\\"aaa\\\"}\"。 **取值范围** 枚举值。 字符串长度[0, 10240] 
 
         :return: The tags of this GetResourceGroupResources.
         :rtype: str
@@ -131,7 +131,7 @@ class GetResourceGroupResources:
     def tags(self, tags):
         r"""Sets the tags of this GetResourceGroupResources.
 
-        资源的tag信息,格式为key/value的json字符串,样例为\"{\\\"sss\\\":\\\"aaa\\\"}\"
+        **参数解释** 资源的tag信息,格式为key/value的json字符串,样例为\"{\\\"sss\\\":\\\"aaa\\\"}\"。 **取值范围** 枚举值。 字符串长度[0, 10240] 
 
         :param tags: The tags of this GetResourceGroupResources.
         :type tags: str
@@ -142,7 +142,7 @@ class GetResourceGroupResources:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this GetResourceGroupResources.
 
-        企业项目ID
+        **参数解释** 企业项目ID。 **取值范围** 由数字、字母和-组成，字符串长度范围[1,128] 
 
         :return: The enterprise_project_id of this GetResourceGroupResources.
         :rtype: str
@@ -153,7 +153,7 @@ class GetResourceGroupResources:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this GetResourceGroupResources.
 
-        企业项目ID
+        **参数解释** 企业项目ID。 **取值范围** 由数字、字母和-组成，字符串长度范围[1,128] 
 
         :param enterprise_project_id: The enterprise_project_id of this GetResourceGroupResources.
         :type enterprise_project_id: str
@@ -164,7 +164,7 @@ class GetResourceGroupResources:
     def event_status(self):
         r"""Gets the event_status of this GetResourceGroupResources.
 
-        事件告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
 
         :return: The event_status of this GetResourceGroupResources.
         :rtype: str
@@ -175,7 +175,7 @@ class GetResourceGroupResources:
     def event_status(self, event_status):
         r"""Sets the event_status of this GetResourceGroupResources.
 
-        事件告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
 
         :param event_status: The event_status of this GetResourceGroupResources.
         :type event_status: str
@@ -186,7 +186,7 @@ class GetResourceGroupResources:
     def resource_name(self):
         r"""Gets the resource_name of this GetResourceGroupResources.
 
-        资源名称
+        **参数解释** 资源名称 **取值范围** 长度[0,128]个字符 
 
         :return: The resource_name of this GetResourceGroupResources.
         :rtype: str
@@ -197,7 +197,7 @@ class GetResourceGroupResources:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this GetResourceGroupResources.
 
-        资源名称
+        **参数解释** 资源名称 **取值范围** 长度[0,128]个字符 
 
         :param resource_name: The resource_name of this GetResourceGroupResources.
         :type resource_name: str

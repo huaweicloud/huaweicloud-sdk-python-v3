@@ -29,9 +29,9 @@ class ExecuteClusterUpgradeActionRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param action: **参数解释**： 当前集群要做的操作。 **取值范围**： 不涉及。
+        :param action: **参数解释**： 当前集群要做的操作。 **约束限制**： 不涉及。 **取值范围**： - update: 下发升级 - rollback: 下发回滚 - commit: 下发提交集群 - retry: 下发重试 **默认取值**： 不涉及。
         :type action: str
-        :param item_id: **参数解释**： 升级项ID。 **取值范围**： 不涉及。
+        :param item_id: **参数解释**： 升级项ID。 **约束限制**： 填写的升级项ID应属于当前集群。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type item_id: str
         """
         
@@ -48,7 +48,7 @@ class ExecuteClusterUpgradeActionRequestBody:
     def action(self):
         r"""Gets the action of this ExecuteClusterUpgradeActionRequestBody.
 
-        **参数解释**： 当前集群要做的操作。 **取值范围**： 不涉及。
+        **参数解释**： 当前集群要做的操作。 **约束限制**： 不涉及。 **取值范围**： - update: 下发升级 - rollback: 下发回滚 - commit: 下发提交集群 - retry: 下发重试 **默认取值**： 不涉及。
 
         :return: The action of this ExecuteClusterUpgradeActionRequestBody.
         :rtype: str
@@ -59,7 +59,7 @@ class ExecuteClusterUpgradeActionRequestBody:
     def action(self, action):
         r"""Sets the action of this ExecuteClusterUpgradeActionRequestBody.
 
-        **参数解释**： 当前集群要做的操作。 **取值范围**： 不涉及。
+        **参数解释**： 当前集群要做的操作。 **约束限制**： 不涉及。 **取值范围**： - update: 下发升级 - rollback: 下发回滚 - commit: 下发提交集群 - retry: 下发重试 **默认取值**： 不涉及。
 
         :param action: The action of this ExecuteClusterUpgradeActionRequestBody.
         :type action: str
@@ -70,7 +70,7 @@ class ExecuteClusterUpgradeActionRequestBody:
     def item_id(self):
         r"""Gets the item_id of this ExecuteClusterUpgradeActionRequestBody.
 
-        **参数解释**： 升级项ID。 **取值范围**： 不涉及。
+        **参数解释**： 升级项ID。 **约束限制**： 填写的升级项ID应属于当前集群。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :return: The item_id of this ExecuteClusterUpgradeActionRequestBody.
         :rtype: str
@@ -81,7 +81,7 @@ class ExecuteClusterUpgradeActionRequestBody:
     def item_id(self, item_id):
         r"""Sets the item_id of this ExecuteClusterUpgradeActionRequestBody.
 
-        **参数解释**： 升级项ID。 **取值范围**： 不涉及。
+        **参数解释**： 升级项ID。 **约束限制**： 填写的升级项ID应属于当前集群。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
 
         :param item_id: The item_id of this ExecuteClusterUpgradeActionRequestBody.
         :type item_id: str

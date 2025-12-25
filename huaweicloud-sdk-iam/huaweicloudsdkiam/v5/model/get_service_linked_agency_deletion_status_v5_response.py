@@ -16,7 +16,7 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'status': 'DeletionTaskStatus',
+        'status': 'str',
         'reason': 'str',
         'agency_usage_list': 'list[AgencyUsage]'
     }
@@ -32,8 +32,8 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 
-        :type status: :class:`huaweicloudsdkiam.v5.DeletionTaskStatus`
+        :param status: 删除任务状态。
+        :type status: str
         :param reason: 删除失败的原因。
         :type reason: str
         :param agency_usage_list: 该服务关联委托正在被使用的场景列表。
@@ -58,8 +58,10 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
     def status(self):
         r"""Gets the status of this GetServiceLinkedAgencyDeletionStatusV5Response.
 
+        删除任务状态。
+
         :return: The status of this GetServiceLinkedAgencyDeletionStatusV5Response.
-        :rtype: :class:`huaweicloudsdkiam.v5.DeletionTaskStatus`
+        :rtype: str
         """
         return self._status
 
@@ -67,8 +69,10 @@ class GetServiceLinkedAgencyDeletionStatusV5Response(SdkResponse):
     def status(self, status):
         r"""Sets the status of this GetServiceLinkedAgencyDeletionStatusV5Response.
 
+        删除任务状态。
+
         :param status: The status of this GetServiceLinkedAgencyDeletionStatusV5Response.
-        :type status: :class:`huaweicloudsdkiam.v5.DeletionTaskStatus`
+        :type status: str
         """
         self._status = status
 

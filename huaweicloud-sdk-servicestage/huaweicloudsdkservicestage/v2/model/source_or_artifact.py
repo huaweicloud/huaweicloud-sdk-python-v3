@@ -21,7 +21,7 @@ class SourceOrArtifact:
         'web_url': 'str',
         'auth': 'str',
         'properties': 'ObsProperties',
-        'repo_type': 'SourceRepoType',
+        'repo_type': 'str',
         'repo_url': 'str',
         'repo_ref': 'str',
         'repo_auth': 'str'
@@ -57,8 +57,8 @@ class SourceOrArtifact:
         :type auth: str
         :param properties: 
         :type properties: :class:`huaweicloudsdkservicestage.v2.ObsProperties`
-        :param repo_type: 
-        :type repo_type: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`
+        :param repo_type: 代码仓类型，支持GitHub、GitLab、Gitee、Bitbucket。
+        :type repo_type: str
         :param repo_url: 代码仓url，如：https://github.com/example/demo.git
         :type repo_url: str
         :param repo_ref: 代码分支或者Tag，默认是master。
@@ -234,8 +234,10 @@ class SourceOrArtifact:
     def repo_type(self):
         r"""Gets the repo_type of this SourceOrArtifact.
 
+        代码仓类型，支持GitHub、GitLab、Gitee、Bitbucket。
+
         :return: The repo_type of this SourceOrArtifact.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`
+        :rtype: str
         """
         return self._repo_type
 
@@ -243,8 +245,10 @@ class SourceOrArtifact:
     def repo_type(self, repo_type):
         r"""Sets the repo_type of this SourceOrArtifact.
 
+        代码仓类型，支持GitHub、GitLab、Gitee、Bitbucket。
+
         :param repo_type: The repo_type of this SourceOrArtifact.
-        :type repo_type: :class:`huaweicloudsdkservicestage.v2.SourceRepoType`
+        :type repo_type: str
         """
         self._repo_type = repo_type
 

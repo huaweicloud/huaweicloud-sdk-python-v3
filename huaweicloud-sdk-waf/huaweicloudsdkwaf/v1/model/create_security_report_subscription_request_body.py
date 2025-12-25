@@ -45,7 +45,7 @@ class CreateSecurityReportSubscriptionRequestBody:
         :type sending_period: str
         :param report_name: **参数解释：** 报告名称，设置订阅报告的名称。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type report_name: str
-        :param report_category: **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report ： 周报 - monthly_report ： 月报 - custom_report ： 自定义  **默认取值：** 不涉及
+        :param report_category: **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report : 周报 - monthly_report : 月报 - custom_report : 自定义  **默认取值：** 不涉及
         :type report_category: str
         :param topic_urn: **参数解释：** 主题urn，设置报告发送的SMN主题唯一标识。报告接收方式使用消息主题类型时需要填该参数。 查询可使用的主题，通过 云日志服务的“查询SMN主题”接口，返回体中的\&quot;topic_urn\&quot;字段 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type topic_urn: str
@@ -136,7 +136,7 @@ class CreateSecurityReportSubscriptionRequestBody:
     def report_category(self):
         r"""Gets the report_category of this CreateSecurityReportSubscriptionRequestBody.
 
-        **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report ： 周报 - monthly_report ： 月报 - custom_report ： 自定义  **默认取值：** 不涉及
+        **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report : 周报 - monthly_report : 月报 - custom_report : 自定义  **默认取值：** 不涉及
 
         :return: The report_category of this CreateSecurityReportSubscriptionRequestBody.
         :rtype: str
@@ -147,7 +147,7 @@ class CreateSecurityReportSubscriptionRequestBody:
     def report_category(self, report_category):
         r"""Sets the report_category of this CreateSecurityReportSubscriptionRequestBody.
 
-        **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report ： 周报 - monthly_report ： 月报 - custom_report ： 自定义  **默认取值：** 不涉及
+        **参数解释：** 报告类别，设置订阅的报告类型（如daily_report表示安全日报）。 **约束限制：** 不涉及 **取值范围：** - daily_report : 日报 - weekly_report : 周报 - monthly_report : 月报 - custom_report : 自定义  **默认取值：** 不涉及
 
         :param report_category: The report_category of this CreateSecurityReportSubscriptionRequestBody.
         :type report_category: str

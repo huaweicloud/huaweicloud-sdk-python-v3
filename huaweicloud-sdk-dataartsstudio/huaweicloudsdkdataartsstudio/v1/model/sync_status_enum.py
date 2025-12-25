@@ -4,18 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SyncStatusEnum:
-    """
-    allowed enum values
-    """
-    NO_NEED = "NO_NEED"
-    CREATE_SUCCESS = "CREATE_SUCCESS"
-    CREATE_FAILED = "CREATE_FAILED"
-    UPDATE_SUCCESS = "UPDATE_SUCCESS"
-    UPDATE_FAILED = "UPDATE_FAILED"
-    SUMMARY_SUCCESS = "SUMMARY_SUCCESS"
-    SUMMARY_FAILED = "SUMMARY_FAILED"
-    RUNNING = "RUNNING"
-    OFFLINE = "OFFLINE"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

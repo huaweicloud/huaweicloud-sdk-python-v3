@@ -184,7 +184,8 @@ class CreateVirtualInterface:
             self.local_gateway_v6_ip = local_gateway_v6_ip
         if remote_gateway_v6_ip is not None:
             self.remote_gateway_v6_ip = remote_gateway_v6_ip
-        self.vgw_id = vgw_id
+        if vgw_id is not None:
+            self.vgw_id = vgw_id
         if gateway_id is not None:
             self.gateway_id = gateway_id
         self.route_mode = route_mode
@@ -192,7 +193,8 @@ class CreateVirtualInterface:
             self.bgp_asn = bgp_asn
         if bgp_md5 is not None:
             self.bgp_md5 = bgp_md5
-        self.remote_ep_group = remote_ep_group
+        if remote_ep_group is not None:
+            self.remote_ep_group = remote_ep_group
         if service_ep_group is not None:
             self.service_ep_group = service_ep_group
         if enable_bfd is not None:

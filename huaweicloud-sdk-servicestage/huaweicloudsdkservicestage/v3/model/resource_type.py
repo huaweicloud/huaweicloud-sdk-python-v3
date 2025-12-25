@@ -4,18 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ResourceType:
-    """
-    allowed enum values
-    """
-    VPC = "vpc"
-    EIP = "eip"
-    ELB = "elb"
-    CCE = "cce"
-    ECS = "ecs"
-    AS = "as"
-    CSE = "cse"
-    DCS = "dcs"
-    RDS = "rds"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

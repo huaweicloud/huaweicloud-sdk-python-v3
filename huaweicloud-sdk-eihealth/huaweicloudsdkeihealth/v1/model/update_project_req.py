@@ -16,7 +16,7 @@ class UpdateProjectReq:
 
     openapi_types = {
         'description': 'str',
-        'status': 'ProjectStatus',
+        'status': 'str',
         'tags': 'list[str]',
         'is_core': 'bool',
         'storage_quota': 'int'
@@ -38,7 +38,7 @@ class UpdateProjectReq:
         :param description: 项目描述
         :type description: str
         :param status: 
-        :type status: :class:`huaweicloudsdkeihealth.v1.ProjectStatus`
+        :type status: str
         :param tags: 项目标签
         :type tags: list[str]
         :param is_core: 是否为核心项目标记
@@ -94,7 +94,7 @@ class UpdateProjectReq:
         r"""Gets the status of this UpdateProjectReq.
 
         :return: The status of this UpdateProjectReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ProjectStatus`
+        :rtype: str
         """
         return self._status
 
@@ -103,7 +103,7 @@ class UpdateProjectReq:
         r"""Sets the status of this UpdateProjectReq.
 
         :param status: The status of this UpdateProjectReq.
-        :type status: :class:`huaweicloudsdkeihealth.v1.ProjectStatus`
+        :type status: str
         """
         self._status = status
 

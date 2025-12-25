@@ -17,7 +17,7 @@ class ValidateServerGroupResponse(SdkResponse):
 
     openapi_types = {
         'result': 'bool',
-        'validate_rule': 'ValidateRuleEnum'
+        'validate_rule': 'str'
     }
 
     attribute_map = {
@@ -32,8 +32,8 @@ class ValidateServerGroupResponse(SdkResponse):
 
         :param result: 校验结果。
         :type result: bool
-        :param validate_rule: 
-        :type validate_rule: :class:`huaweicloudsdkworkspaceapp.v1.ValidateRuleEnum`
+        :param validate_rule: 校验类型： * &#x60;naming&#x60; - 命名规范 * &#x60;duplicate&#x60; - 重复
+        :type validate_rule: str
         """
         
         super().__init__()
@@ -73,8 +73,10 @@ class ValidateServerGroupResponse(SdkResponse):
     def validate_rule(self):
         r"""Gets the validate_rule of this ValidateServerGroupResponse.
 
+        校验类型： * `naming` - 命名规范 * `duplicate` - 重复
+
         :return: The validate_rule of this ValidateServerGroupResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ValidateRuleEnum`
+        :rtype: str
         """
         return self._validate_rule
 
@@ -82,8 +84,10 @@ class ValidateServerGroupResponse(SdkResponse):
     def validate_rule(self, validate_rule):
         r"""Sets the validate_rule of this ValidateServerGroupResponse.
 
+        校验类型： * `naming` - 命名规范 * `duplicate` - 重复
+
         :param validate_rule: The validate_rule of this ValidateServerGroupResponse.
-        :type validate_rule: :class:`huaweicloudsdkworkspaceapp.v1.ValidateRuleEnum`
+        :type validate_rule: str
         """
         self._validate_rule = validate_rule
 

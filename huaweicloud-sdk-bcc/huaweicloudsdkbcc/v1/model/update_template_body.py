@@ -15,7 +15,7 @@ class UpdateTemplateBody:
     sensitive_list = []
 
     openapi_types = {
-        'template_contents': 'list[TemplateItemEnum]'
+        'template_contents': 'list[str]'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class UpdateTemplateBody:
         The model defined in huaweicloud sdk
 
         :param template_contents: 模板内容列表
-        :type template_contents: list[:class:`huaweicloudsdkbcc.v1.TemplateItemEnum`]
+        :type template_contents: list[str]
         """
         
         
@@ -45,7 +45,7 @@ class UpdateTemplateBody:
         模板内容列表
 
         :return: The template_contents of this UpdateTemplateBody.
-        :rtype: list[:class:`huaweicloudsdkbcc.v1.TemplateItemEnum`]
+        :rtype: list[str]
         """
         return self._template_contents
 
@@ -56,7 +56,7 @@ class UpdateTemplateBody:
         模板内容列表
 
         :param template_contents: The template_contents of this UpdateTemplateBody.
-        :type template_contents: list[:class:`huaweicloudsdkbcc.v1.TemplateItemEnum`]
+        :type template_contents: list[str]
         """
         self._template_contents = template_contents
 

@@ -29,9 +29,9 @@ class VulScanTaskHostInfoFailedReasons:
 
         The model defined in huaweicloud sdk
 
-        :param vul_type: 扫描失败的漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞   -urgent_vul : 应急漏洞
+        :param vul_type: **参数解释**: 扫描失败的漏洞类型 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：应急漏洞 
         :type vul_type: str
-        :param failed_reason: 扫描失败的原因
+        :param failed_reason: **参数解释**: 扫描失败的原因 **取值范围**: 字符长度0-128位 
         :type failed_reason: str
         """
         
@@ -50,7 +50,7 @@ class VulScanTaskHostInfoFailedReasons:
     def vul_type(self):
         r"""Gets the vul_type of this VulScanTaskHostInfoFailedReasons.
 
-        扫描失败的漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞   -urgent_vul : 应急漏洞
+        **参数解释**: 扫描失败的漏洞类型 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：应急漏洞 
 
         :return: The vul_type of this VulScanTaskHostInfoFailedReasons.
         :rtype: str
@@ -61,7 +61,7 @@ class VulScanTaskHostInfoFailedReasons:
     def vul_type(self, vul_type):
         r"""Sets the vul_type of this VulScanTaskHostInfoFailedReasons.
 
-        扫描失败的漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞   -app_vul : 应用漏洞   -urgent_vul : 应急漏洞
+        **参数解释**: 扫描失败的漏洞类型 **取值范围**: - linux_vul：linux漏洞 - windows_vul：windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：应急漏洞 
 
         :param vul_type: The vul_type of this VulScanTaskHostInfoFailedReasons.
         :type vul_type: str
@@ -72,7 +72,7 @@ class VulScanTaskHostInfoFailedReasons:
     def failed_reason(self):
         r"""Gets the failed_reason of this VulScanTaskHostInfoFailedReasons.
 
-        扫描失败的原因
+        **参数解释**: 扫描失败的原因 **取值范围**: 字符长度0-128位 
 
         :return: The failed_reason of this VulScanTaskHostInfoFailedReasons.
         :rtype: str
@@ -83,7 +83,7 @@ class VulScanTaskHostInfoFailedReasons:
     def failed_reason(self, failed_reason):
         r"""Sets the failed_reason of this VulScanTaskHostInfoFailedReasons.
 
-        扫描失败的原因
+        **参数解释**: 扫描失败的原因 **取值范围**: 字符长度0-128位 
 
         :param failed_reason: The failed_reason of this VulScanTaskHostInfoFailedReasons.
         :type failed_reason: str

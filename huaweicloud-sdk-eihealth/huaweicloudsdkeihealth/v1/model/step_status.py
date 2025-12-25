@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class StepStatus:
-    """
-    allowed enum values
-    """
-    RUNNING = "RUNNING"
-    FAILED = "FAILED"
-    FINISHED = "FINISHED"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

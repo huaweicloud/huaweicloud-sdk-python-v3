@@ -20,18 +20,18 @@ class ShowServerGroupResponse(SdkResponse):
         'name': 'str',
         'description': 'str',
         'image_id': 'str',
-        'os_type': 'OsTypeEnum',
+        'os_type': 'str',
         'product_id': 'str',
         'subnet_id': 'str',
-        'system_disk_type': 'VolumeType',
+        'system_disk_type': 'str',
         'system_disk_size': 'int',
         'is_vdi': 'bool',
-        'extra_session_type': 'ExtraSessionTypeEnum',
+        'extra_session_type': 'str',
         'extra_session_size': 'int',
-        'app_type': 'AppTypeEnum',
+        'app_type': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
-        'storage_mount_policy': 'StorageFolderMountType',
+        'storage_mount_policy': 'str',
         'enterprise_project_id': 'str',
         'primary_server_group_ids': 'list[str]',
         'secondary_server_group_ids': 'list[str]',
@@ -110,30 +110,30 @@ class ShowServerGroupResponse(SdkResponse):
         :type description: str
         :param image_id: 服务器组关联的镜像ID，用于创建对应组下的云服务器。
         :type image_id: str
-        :param os_type: 
-        :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
+        :param os_type: 系统类型，当前仅支持Windows。 * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; -
+        :type os_type: str
         :param product_id: 产品id。
         :type product_id: str
         :param subnet_id: 网卡对应的子网ID。
         :type subnet_id: str
-        :param system_disk_type: 
-        :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
+        :param system_disk_type: 磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * &#x60;ESSD&#x60; - 极速型SSD * &#x60;SSD&#x60; - 超高IO * &#x60;GPSSD&#x60; - 通用型SSD * &#x60;SAS&#x60; - 高IO * &#x60;SATA&#x60; - 普通IO
+        :type system_disk_type: str
         :param system_disk_size: 磁盘容量，单位GB。
         :type system_disk_size: int
         :param is_vdi: 是否为vdi单会话模式。
         :type is_vdi: bool
-        :param extra_session_type: 
-        :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        :param extra_session_type: 付费会话类型 * &#x60;GPU&#x60; - GPU规格会话 * &#x60;CPU&#x60; - 普通CPU规格会话
+        :type extra_session_type: str
         :param extra_session_size: 付费会话个数。
         :type extra_session_size: int
-        :param app_type: 
-        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        :param app_type: 服务器组应用类型： * &#x60;SESSION_DESKTOP_APP&#x60; - 会话桌面app * &#x60;COMMON_APP&#x60; - 普通app
+        :type app_type: str
         :param create_time: 服务器组创建时间。
         :type create_time: datetime
         :param update_time: 服务器组更新时间。
         :type update_time: datetime
-        :param storage_mount_policy: 
-        :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
+        :param storage_mount_policy: 用户访问APS的应用时，对应NAS存储目录在APS上的挂载策略。 * &#x60;USER&#x60; - 仅挂载个人目录。 * &#x60;SHARE&#x60; - 仅挂载共享目录。 * &#x60;ANY&#x60; - 挂载目录不做限制(个人和共享NAS存储目录都会自动挂载)。
+        :type storage_mount_policy: str
         :param enterprise_project_id: 企业项目ID(0表示默认企业项目Id)。
         :type enterprise_project_id: str
         :param primary_server_group_ids: 主服务器组id列表。
@@ -391,8 +391,10 @@ class ShowServerGroupResponse(SdkResponse):
     def os_type(self):
         r"""Gets the os_type of this ShowServerGroupResponse.
 
+        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
+
         :return: The os_type of this ShowServerGroupResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
+        :rtype: str
         """
         return self._os_type
 
@@ -400,8 +402,10 @@ class ShowServerGroupResponse(SdkResponse):
     def os_type(self, os_type):
         r"""Sets the os_type of this ShowServerGroupResponse.
 
+        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
+
         :param os_type: The os_type of this ShowServerGroupResponse.
-        :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -453,8 +457,10 @@ class ShowServerGroupResponse(SdkResponse):
     def system_disk_type(self):
         r"""Gets the system_disk_type of this ShowServerGroupResponse.
 
+        磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * `ESSD` - 极速型SSD * `SSD` - 超高IO * `GPSSD` - 通用型SSD * `SAS` - 高IO * `SATA` - 普通IO
+
         :return: The system_disk_type of this ShowServerGroupResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
+        :rtype: str
         """
         return self._system_disk_type
 
@@ -462,8 +468,10 @@ class ShowServerGroupResponse(SdkResponse):
     def system_disk_type(self, system_disk_type):
         r"""Sets the system_disk_type of this ShowServerGroupResponse.
 
+        磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * `ESSD` - 极速型SSD * `SSD` - 超高IO * `GPSSD` - 通用型SSD * `SAS` - 高IO * `SATA` - 普通IO
+
         :param system_disk_type: The system_disk_type of this ShowServerGroupResponse.
-        :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
+        :type system_disk_type: str
         """
         self._system_disk_type = system_disk_type
 
@@ -515,8 +523,10 @@ class ShowServerGroupResponse(SdkResponse):
     def extra_session_type(self):
         r"""Gets the extra_session_type of this ShowServerGroupResponse.
 
+        付费会话类型 * `GPU` - GPU规格会话 * `CPU` - 普通CPU规格会话
+
         :return: The extra_session_type of this ShowServerGroupResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        :rtype: str
         """
         return self._extra_session_type
 
@@ -524,8 +534,10 @@ class ShowServerGroupResponse(SdkResponse):
     def extra_session_type(self, extra_session_type):
         r"""Sets the extra_session_type of this ShowServerGroupResponse.
 
+        付费会话类型 * `GPU` - GPU规格会话 * `CPU` - 普通CPU规格会话
+
         :param extra_session_type: The extra_session_type of this ShowServerGroupResponse.
-        :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
+        :type extra_session_type: str
         """
         self._extra_session_type = extra_session_type
 
@@ -555,8 +567,10 @@ class ShowServerGroupResponse(SdkResponse):
     def app_type(self):
         r"""Gets the app_type of this ShowServerGroupResponse.
 
+        服务器组应用类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
+
         :return: The app_type of this ShowServerGroupResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        :rtype: str
         """
         return self._app_type
 
@@ -564,8 +578,10 @@ class ShowServerGroupResponse(SdkResponse):
     def app_type(self, app_type):
         r"""Sets the app_type of this ShowServerGroupResponse.
 
+        服务器组应用类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
+
         :param app_type: The app_type of this ShowServerGroupResponse.
-        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        :type app_type: str
         """
         self._app_type = app_type
 
@@ -617,8 +633,10 @@ class ShowServerGroupResponse(SdkResponse):
     def storage_mount_policy(self):
         r"""Gets the storage_mount_policy of this ShowServerGroupResponse.
 
+        用户访问APS的应用时，对应NAS存储目录在APS上的挂载策略。 * `USER` - 仅挂载个人目录。 * `SHARE` - 仅挂载共享目录。 * `ANY` - 挂载目录不做限制(个人和共享NAS存储目录都会自动挂载)。
+
         :return: The storage_mount_policy of this ShowServerGroupResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
+        :rtype: str
         """
         return self._storage_mount_policy
 
@@ -626,8 +644,10 @@ class ShowServerGroupResponse(SdkResponse):
     def storage_mount_policy(self, storage_mount_policy):
         r"""Sets the storage_mount_policy of this ShowServerGroupResponse.
 
+        用户访问APS的应用时，对应NAS存储目录在APS上的挂载策略。 * `USER` - 仅挂载个人目录。 * `SHARE` - 仅挂载共享目录。 * `ANY` - 挂载目录不做限制(个人和共享NAS存储目录都会自动挂载)。
+
         :param storage_mount_policy: The storage_mount_policy of this ShowServerGroupResponse.
-        :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
+        :type storage_mount_policy: str
         """
         self._storage_mount_policy = storage_mount_policy
 

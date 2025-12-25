@@ -2818,6 +2818,18 @@ class DdsClient(Client):
             query_params.append(('end_time', local_var_params['end_time']))
         if 'mode' in local_var_params:
             query_params.append(('mode', local_var_params['mode']))
+        if 'order_field' in local_var_params:
+            query_params.append(('order_field', local_var_params['order_field']))
+        if 'order_rule' in local_var_params:
+            query_params.append(('order_rule', local_var_params['order_rule']))
+        if 'backup_status' in local_var_params:
+            query_params.append(('backup_status', local_var_params['backup_status']))
+        if 'backup_name' in local_var_params:
+            query_params.append(('backup_name', local_var_params['backup_name']))
+        if 'backup_description' in local_var_params:
+            query_params.append(('backup_description', local_var_params['backup_description']))
+        if 'instance_name' in local_var_params:
+            query_params.append(('instance_name', local_var_params['instance_name']))
 
         header_params = {}
 

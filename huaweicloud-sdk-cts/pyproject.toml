@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "huaweicloudsdkcts"
-version = "3.1.180"
+version = "3.1.181"
 description = "CTS"
 readme = "README_PYPI.md"
 authors = [
@@ -27,7 +27,7 @@ classifiers = [
     "Topic :: Software Development"
 ]
 dependencies = [
-    "huaweicloudsdkcore>=3.1.180"
+    "huaweicloudsdkcore>=3.1.181"
 ]
 
 [project.urls]

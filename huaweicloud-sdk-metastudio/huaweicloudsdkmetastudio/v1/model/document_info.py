@@ -63,7 +63,7 @@ class DocumentInfo:
         :type split_type: int
         :param chunk_size: 分段长度。
         :type chunk_size: int
-        :param chunk_type: 分段策略，多个策略之间用逗号分割。 &gt; title:标题分割；separator:分隔符分割
+        :param chunk_type: 分段策略，如果添加多个策略用逗号隔开。 取值示例： - title：用标题把一段话分割为多个段落。 - separator：用分隔符把一段话分割为多个段落。
         :type chunk_type: str
         :param separators: 分隔符
         :type separators: list[str]
@@ -274,7 +274,7 @@ class DocumentInfo:
     def chunk_type(self):
         r"""Gets the chunk_type of this DocumentInfo.
 
-        分段策略，多个策略之间用逗号分割。 > title:标题分割；separator:分隔符分割
+        分段策略，如果添加多个策略用逗号隔开。 取值示例： - title：用标题把一段话分割为多个段落。 - separator：用分隔符把一段话分割为多个段落。
 
         :return: The chunk_type of this DocumentInfo.
         :rtype: str
@@ -285,7 +285,7 @@ class DocumentInfo:
     def chunk_type(self, chunk_type):
         r"""Sets the chunk_type of this DocumentInfo.
 
-        分段策略，多个策略之间用逗号分割。 > title:标题分割；separator:分隔符分割
+        分段策略，如果添加多个策略用逗号隔开。 取值示例： - title：用标题把一段话分割为多个段落。 - separator：用分隔符把一段话分割为多个段落。
 
         :param chunk_type: The chunk_type of this DocumentInfo.
         :type chunk_type: str

@@ -16,7 +16,7 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'resources': 'list[Resource]',
+        'resources': 'list[ResourceResp]',
         'count': 'int'
     }
 
@@ -30,9 +30,9 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param resources: 通知屏蔽资源列表
-        :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
-        :param count: 资源总数
+        :param resources: **参数解释**： 通知屏蔽资源列表 
+        :type resources: list[:class:`huaweicloudsdkces.v2.ResourceResp`]
+        :param count: **参数解释**： 资源总数 **取值范围**： [0,100] 
         :type count: int
         """
         
@@ -51,10 +51,10 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
     def resources(self):
         r"""Gets the resources of this ListNotificationMaskResourcesResponse.
 
-        通知屏蔽资源列表
+        **参数解释**： 通知屏蔽资源列表 
 
         :return: The resources of this ListNotificationMaskResourcesResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Resource`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.ResourceResp`]
         """
         return self._resources
 
@@ -62,10 +62,10 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
     def resources(self, resources):
         r"""Sets the resources of this ListNotificationMaskResourcesResponse.
 
-        通知屏蔽资源列表
+        **参数解释**： 通知屏蔽资源列表 
 
         :param resources: The resources of this ListNotificationMaskResourcesResponse.
-        :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
+        :type resources: list[:class:`huaweicloudsdkces.v2.ResourceResp`]
         """
         self._resources = resources
 
@@ -73,7 +73,7 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListNotificationMaskResourcesResponse.
 
-        资源总数
+        **参数解释**： 资源总数 **取值范围**： [0,100] 
 
         :return: The count of this ListNotificationMaskResourcesResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListNotificationMaskResourcesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListNotificationMaskResourcesResponse.
 
-        资源总数
+        **参数解释**： 资源总数 **取值范围**： [0,100] 
 
         :param count: The count of this ListNotificationMaskResourcesResponse.
         :type count: int

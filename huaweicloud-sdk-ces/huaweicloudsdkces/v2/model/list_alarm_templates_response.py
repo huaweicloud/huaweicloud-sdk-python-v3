@@ -32,7 +32,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
 
         :param alarm_templates: 告警模板列表
         :type alarm_templates: list[:class:`huaweicloudsdkces.v2.AlarmTemplates`]
-        :param count: 告警模板记录总数
+        :param count: **参数解释**： 告警模板记录总数。 **取值范围**： 字符串长度在 10 到 9999999 之间。 
         :type count: int
         """
         
@@ -73,7 +73,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListAlarmTemplatesResponse.
 
-        告警模板记录总数
+        **参数解释**： 告警模板记录总数。 **取值范围**： 字符串长度在 10 到 9999999 之间。 
 
         :return: The count of this ListAlarmTemplatesResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListAlarmTemplatesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAlarmTemplatesResponse.
 
-        告警模板记录总数
+        **参数解释**： 告警模板记录总数。 **取值范围**： 字符串长度在 10 到 9999999 之间。 
 
         :param count: The count of this ListAlarmTemplatesResponse.
         :type count: int

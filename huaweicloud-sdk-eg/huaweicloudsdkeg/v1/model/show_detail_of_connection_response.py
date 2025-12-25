@@ -25,7 +25,7 @@ class ShowDetailOfConnectionResponse(SdkResponse):
         'subnet_id': 'str',
         'agency': 'str',
         'flavor': 'ConnectionInfoFlavor',
-        'type': 'ConnectionType',
+        'type': 'str',
         'kafka_detail': 'KafkaConnectionDetail',
         'created_time': 'str',
         'updated_time': 'str'
@@ -70,8 +70,8 @@ class ShowDetailOfConnectionResponse(SdkResponse):
         :type agency: str
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkeg.v1.ConnectionInfoFlavor`
-        :param type: 
-        :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
+        :param type: 目标连接类型。目前支持webhook：http连接；kafka：华为云官方kafka实例
+        :type type: str
         :param kafka_detail: 
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaConnectionDetail`
         :param created_time: 创建UTC时间
@@ -318,8 +318,10 @@ class ShowDetailOfConnectionResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowDetailOfConnectionResponse.
 
+        目标连接类型。目前支持webhook：http连接；kafka：华为云官方kafka实例
+
         :return: The type of this ShowDetailOfConnectionResponse.
-        :rtype: :class:`huaweicloudsdkeg.v1.ConnectionType`
+        :rtype: str
         """
         return self._type
 
@@ -327,8 +329,10 @@ class ShowDetailOfConnectionResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowDetailOfConnectionResponse.
 
+        目标连接类型。目前支持webhook：http连接；kafka：华为云官方kafka实例
+
         :param type: The type of this ShowDetailOfConnectionResponse.
-        :type type: :class:`huaweicloudsdkeg.v1.ConnectionType`
+        :type type: str
         """
         self._type = type
 

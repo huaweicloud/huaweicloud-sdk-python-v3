@@ -21,7 +21,7 @@ class ListAlarmsRespAlarms:
         'namespace': 'str',
         'policies': 'list[OneClickAlarmPolicy]',
         'resources': 'list[ResourcesInListResp]',
-        'type': 'AlarmType',
+        'type': 'str',
         'enabled': 'bool',
         'notification_enabled': 'bool',
         'alarm_notifications': 'list[Notification]',
@@ -69,25 +69,25 @@ class ListAlarmsRespAlarms:
         :type policies: list[:class:`huaweicloudsdkces.v2.OneClickAlarmPolicy`]
         :param resources: 资源列表，关联资源需要使用查询告警规则资源接口获取
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
-        :param type: 
-        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
+        :param type: **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 **默认取值**： 不涉及。 
+        :type type: str
         :param enabled: **参数解释**： 是否开启告警规则。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type enabled: bool
-        :param notification_enabled: **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
+        :param notification_enabled: **参数解释**： 是否开启告警通知。说明：若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。    **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type notification_enabled: bool
-        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param notification_begin_time: **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        :param notification_begin_time: **参数解释**： 告警通知开启时间。如 00:00    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_begin_time: str
-        :param notification_end_time: **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        :param notification_end_time: **参数解释**： 告警通知关闭时间。如 08:00  **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_end_time: str
         :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
         :type effective_timezone: str
         :param notification_manner: NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
         :type notification_manner: str
-        :param notification_policy_ids: 关联的通知策略ID列表
+        :param notification_policy_ids: **参数解释** 关联的通知策略ID列表 **约束限制** 包含的通知策略ID个数为0至20 
         :type notification_policy_ids: list[str]
         """
         
@@ -280,8 +280,10 @@ class ListAlarmsRespAlarms:
     def type(self):
         r"""Gets the type of this ListAlarmsRespAlarms.
 
+        **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 **默认取值**： 不涉及。 
+
         :return: The type of this ListAlarmsRespAlarms.
-        :rtype: :class:`huaweicloudsdkces.v2.AlarmType`
+        :rtype: str
         """
         return self._type
 
@@ -289,8 +291,10 @@ class ListAlarmsRespAlarms:
     def type(self, type):
         r"""Sets the type of this ListAlarmsRespAlarms.
 
+        **参数解释**： 告警规则类型 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 **默认取值**： 不涉及。 
+
         :param type: The type of this ListAlarmsRespAlarms.
-        :type type: :class:`huaweicloudsdkces.v2.AlarmType`
+        :type type: str
         """
         self._type = type
 
@@ -320,7 +324,7 @@ class ListAlarmsRespAlarms:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this ListAlarmsRespAlarms.
 
-        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
+        **参数解释**： 是否开启告警通知。说明：若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。    **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :return: The notification_enabled of this ListAlarmsRespAlarms.
         :rtype: bool
@@ -331,7 +335,7 @@ class ListAlarmsRespAlarms:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this ListAlarmsRespAlarms.
 
-        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
+        **参数解释**： 是否开启告警通知。说明：若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。    **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :param notification_enabled: The notification_enabled of this ListAlarmsRespAlarms.
         :type notification_enabled: bool
@@ -342,7 +346,7 @@ class ListAlarmsRespAlarms:
     def alarm_notifications(self):
         r"""Gets the alarm_notifications of this ListAlarmsRespAlarms.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
 
         :return: The alarm_notifications of this ListAlarmsRespAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -353,7 +357,7 @@ class ListAlarmsRespAlarms:
     def alarm_notifications(self, alarm_notifications):
         r"""Sets the alarm_notifications of this ListAlarmsRespAlarms.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
 
         :param alarm_notifications: The alarm_notifications of this ListAlarmsRespAlarms.
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -364,7 +368,7 @@ class ListAlarmsRespAlarms:
     def ok_notifications(self):
         r"""Gets the ok_notifications of this ListAlarmsRespAlarms.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
 
         :return: The ok_notifications of this ListAlarmsRespAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -375,7 +379,7 @@ class ListAlarmsRespAlarms:
     def ok_notifications(self, ok_notifications):
         r"""Sets the ok_notifications of this ListAlarmsRespAlarms.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
 
         :param ok_notifications: The ok_notifications of this ListAlarmsRespAlarms.
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -386,7 +390,7 @@ class ListAlarmsRespAlarms:
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this ListAlarmsRespAlarms.
 
-        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。如 00:00    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_begin_time of this ListAlarmsRespAlarms.
         :rtype: str
@@ -397,7 +401,7 @@ class ListAlarmsRespAlarms:
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this ListAlarmsRespAlarms.
 
-        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。如 00:00    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_begin_time: The notification_begin_time of this ListAlarmsRespAlarms.
         :type notification_begin_time: str
@@ -408,7 +412,7 @@ class ListAlarmsRespAlarms:
     def notification_end_time(self):
         r"""Gets the notification_end_time of this ListAlarmsRespAlarms.
 
-        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。如 08:00  **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_end_time of this ListAlarmsRespAlarms.
         :rtype: str
@@ -419,7 +423,7 @@ class ListAlarmsRespAlarms:
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this ListAlarmsRespAlarms.
 
-        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。如 08:00  **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_end_time: The notification_end_time of this ListAlarmsRespAlarms.
         :type notification_end_time: str
@@ -474,7 +478,7 @@ class ListAlarmsRespAlarms:
     def notification_policy_ids(self):
         r"""Gets the notification_policy_ids of this ListAlarmsRespAlarms.
 
-        关联的通知策略ID列表
+        **参数解释** 关联的通知策略ID列表 **约束限制** 包含的通知策略ID个数为0至20 
 
         :return: The notification_policy_ids of this ListAlarmsRespAlarms.
         :rtype: list[str]
@@ -485,7 +489,7 @@ class ListAlarmsRespAlarms:
     def notification_policy_ids(self, notification_policy_ids):
         r"""Sets the notification_policy_ids of this ListAlarmsRespAlarms.
 
-        关联的通知策略ID列表
+        **参数解释** 关联的通知策略ID列表 **约束限制** 包含的通知策略ID个数为0至20 
 
         :param notification_policy_ids: The notification_policy_ids of this ListAlarmsRespAlarms.
         :type notification_policy_ids: list[str]

@@ -33,13 +33,13 @@ class VulScanTaskHostInfoScanVulList:
 
         The model defined in huaweicloud sdk
 
-        :param vul_id: 漏洞id
+        :param vul_id: **参数解释**: 漏洞id **取值范围**: 字符长度0-256位 
         :type vul_id: str
-        :param vul_name: 漏洞名称
+        :param vul_name: **参数解释**: 漏洞名称 **取值范围**: 字符长度0-1024位 
         :type vul_name: str
-        :param status: 该漏洞的扫描状态，包含如下：   - scanning : 扫描中   - success : 扫描成功   - failed : 扫描失败
+        :param status: **参数解释**: 该漏洞的扫描状态 **取值范围**: - scanning：扫描中 - success：扫描成功 - failed：扫描失败 
         :type status: str
-        :param failed_reason: 该漏洞扫描失败的原因，只有扫描失败的漏洞有该字段
+        :param failed_reason: **参数解释**: 该漏洞扫描失败的原因，只有扫描失败的漏洞有该字段 **取值范围**: 字符长度0-1024位 
         :type failed_reason: str
         """
         
@@ -64,7 +64,7 @@ class VulScanTaskHostInfoScanVulList:
     def vul_id(self):
         r"""Gets the vul_id of this VulScanTaskHostInfoScanVulList.
 
-        漏洞id
+        **参数解释**: 漏洞id **取值范围**: 字符长度0-256位 
 
         :return: The vul_id of this VulScanTaskHostInfoScanVulList.
         :rtype: str
@@ -75,7 +75,7 @@ class VulScanTaskHostInfoScanVulList:
     def vul_id(self, vul_id):
         r"""Sets the vul_id of this VulScanTaskHostInfoScanVulList.
 
-        漏洞id
+        **参数解释**: 漏洞id **取值范围**: 字符长度0-256位 
 
         :param vul_id: The vul_id of this VulScanTaskHostInfoScanVulList.
         :type vul_id: str
@@ -86,7 +86,7 @@ class VulScanTaskHostInfoScanVulList:
     def vul_name(self):
         r"""Gets the vul_name of this VulScanTaskHostInfoScanVulList.
 
-        漏洞名称
+        **参数解释**: 漏洞名称 **取值范围**: 字符长度0-1024位 
 
         :return: The vul_name of this VulScanTaskHostInfoScanVulList.
         :rtype: str
@@ -97,7 +97,7 @@ class VulScanTaskHostInfoScanVulList:
     def vul_name(self, vul_name):
         r"""Sets the vul_name of this VulScanTaskHostInfoScanVulList.
 
-        漏洞名称
+        **参数解释**: 漏洞名称 **取值范围**: 字符长度0-1024位 
 
         :param vul_name: The vul_name of this VulScanTaskHostInfoScanVulList.
         :type vul_name: str
@@ -108,7 +108,7 @@ class VulScanTaskHostInfoScanVulList:
     def status(self):
         r"""Gets the status of this VulScanTaskHostInfoScanVulList.
 
-        该漏洞的扫描状态，包含如下：   - scanning : 扫描中   - success : 扫描成功   - failed : 扫描失败
+        **参数解释**: 该漏洞的扫描状态 **取值范围**: - scanning：扫描中 - success：扫描成功 - failed：扫描失败 
 
         :return: The status of this VulScanTaskHostInfoScanVulList.
         :rtype: str
@@ -119,7 +119,7 @@ class VulScanTaskHostInfoScanVulList:
     def status(self, status):
         r"""Sets the status of this VulScanTaskHostInfoScanVulList.
 
-        该漏洞的扫描状态，包含如下：   - scanning : 扫描中   - success : 扫描成功   - failed : 扫描失败
+        **参数解释**: 该漏洞的扫描状态 **取值范围**: - scanning：扫描中 - success：扫描成功 - failed：扫描失败 
 
         :param status: The status of this VulScanTaskHostInfoScanVulList.
         :type status: str
@@ -130,7 +130,7 @@ class VulScanTaskHostInfoScanVulList:
     def failed_reason(self):
         r"""Gets the failed_reason of this VulScanTaskHostInfoScanVulList.
 
-        该漏洞扫描失败的原因，只有扫描失败的漏洞有该字段
+        **参数解释**: 该漏洞扫描失败的原因，只有扫描失败的漏洞有该字段 **取值范围**: 字符长度0-1024位 
 
         :return: The failed_reason of this VulScanTaskHostInfoScanVulList.
         :rtype: str
@@ -141,7 +141,7 @@ class VulScanTaskHostInfoScanVulList:
     def failed_reason(self, failed_reason):
         r"""Sets the failed_reason of this VulScanTaskHostInfoScanVulList.
 
-        该漏洞扫描失败的原因，只有扫描失败的漏洞有该字段
+        **参数解释**: 该漏洞扫描失败的原因，只有扫描失败的漏洞有该字段 **取值范围**: 字符长度0-1024位 
 
         :param failed_reason: The failed_reason of this VulScanTaskHostInfoScanVulList.
         :type failed_reason: str

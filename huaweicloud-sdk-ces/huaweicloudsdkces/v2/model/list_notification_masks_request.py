@@ -35,13 +35,13 @@ class ListNotificationMasksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 分页偏移量
+        :param offset: **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
         :type offset: int
-        :param limit: 分页大小
+        :param limit: **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
         :type limit: int
-        :param sort_key: 排序关键字，与sort_dir同时使用。 目前只支持create_time与update_time create_time表示按创建时间排序，update_time表示按修改时间排序
+        :param sort_key: **参数解释**： 排序关键字，与sort_dir同时使用。 **约束限制**： 目前只支持create_time与update_time **取值范围**： - create_time：按创建时间排序 - update_time：按修改时间排序 **默认取值**： 不涉及。 
         :type sort_key: str
-        :param sort_dir: 排序顺序，与sort_key同时使用。DESC表示降序排序；ASC表示升序排序；
+        :param sort_dir: **参数解释**： 排序顺序，与sort_key同时使用。 **约束限制**： 不涉及。 **取值范围**： - DESC：降序排序。 - ASC：升序排序。 **默认取值**： 不涉及。 
         :type sort_dir: str
         :param body: Body of the ListNotificationMasksRequest
         :type body: :class:`huaweicloudsdkces.v2.ListNotificationMaskRequestBody`
@@ -71,7 +71,7 @@ class ListNotificationMasksRequest:
     def offset(self):
         r"""Gets the offset of this ListNotificationMasksRequest.
 
-        分页偏移量
+        **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
 
         :return: The offset of this ListNotificationMasksRequest.
         :rtype: int
@@ -82,7 +82,7 @@ class ListNotificationMasksRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListNotificationMasksRequest.
 
-        分页偏移量
+        **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
 
         :param offset: The offset of this ListNotificationMasksRequest.
         :type offset: int
@@ -93,7 +93,7 @@ class ListNotificationMasksRequest:
     def limit(self):
         r"""Gets the limit of this ListNotificationMasksRequest.
 
-        分页大小
+        **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
 
         :return: The limit of this ListNotificationMasksRequest.
         :rtype: int
@@ -104,7 +104,7 @@ class ListNotificationMasksRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListNotificationMasksRequest.
 
-        分页大小
+        **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
 
         :param limit: The limit of this ListNotificationMasksRequest.
         :type limit: int
@@ -115,7 +115,7 @@ class ListNotificationMasksRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListNotificationMasksRequest.
 
-        排序关键字，与sort_dir同时使用。 目前只支持create_time与update_time create_time表示按创建时间排序，update_time表示按修改时间排序
+        **参数解释**： 排序关键字，与sort_dir同时使用。 **约束限制**： 目前只支持create_time与update_time **取值范围**： - create_time：按创建时间排序 - update_time：按修改时间排序 **默认取值**： 不涉及。 
 
         :return: The sort_key of this ListNotificationMasksRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListNotificationMasksRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListNotificationMasksRequest.
 
-        排序关键字，与sort_dir同时使用。 目前只支持create_time与update_time create_time表示按创建时间排序，update_time表示按修改时间排序
+        **参数解释**： 排序关键字，与sort_dir同时使用。 **约束限制**： 目前只支持create_time与update_time **取值范围**： - create_time：按创建时间排序 - update_time：按修改时间排序 **默认取值**： 不涉及。 
 
         :param sort_key: The sort_key of this ListNotificationMasksRequest.
         :type sort_key: str
@@ -137,7 +137,7 @@ class ListNotificationMasksRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListNotificationMasksRequest.
 
-        排序顺序，与sort_key同时使用。DESC表示降序排序；ASC表示升序排序；
+        **参数解释**： 排序顺序，与sort_key同时使用。 **约束限制**： 不涉及。 **取值范围**： - DESC：降序排序。 - ASC：升序排序。 **默认取值**： 不涉及。 
 
         :return: The sort_dir of this ListNotificationMasksRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class ListNotificationMasksRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListNotificationMasksRequest.
 
-        排序顺序，与sort_key同时使用。DESC表示降序排序；ASC表示升序排序；
+        **参数解释**： 排序顺序，与sort_key同时使用。 **约束限制**： 不涉及。 **取值范围**： - DESC：降序排序。 - ASC：升序排序。 **默认取值**： 不涉及。 
 
         :param sort_dir: The sort_dir of this ListNotificationMasksRequest.
         :type sort_dir: str

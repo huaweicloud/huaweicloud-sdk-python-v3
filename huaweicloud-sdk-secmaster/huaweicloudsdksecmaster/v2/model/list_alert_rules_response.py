@@ -17,48 +17,41 @@ class ListAlertRulesResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'records': 'list[AlertRule]',
-        'x_request_id': 'str'
+        'records': 'list[AlertRuleItem]'
     }
 
     attribute_map = {
         'count': 'count',
-        'records': 'records',
-        'x_request_id': 'X-request-id'
+        'records': 'records'
     }
 
-    def __init__(self, count=None, records=None, x_request_id=None):
+    def __init__(self, count=None, records=None):
         r"""ListAlertRulesResponse
 
         The model defined in huaweicloud sdk
 
-        :param count: 总数量。Total count.
+        :param count: 数量
         :type count: int
-        :param records: 告警模型。Alert rules.
-        :type records: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        :param x_request_id: 
-        :type x_request_id: str
+        :param records: 模型记录
+        :type records: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleItem`]
         """
         
         super().__init__()
 
         self._count = None
         self._records = None
-        self._x_request_id = None
         self.discriminator = None
 
         if count is not None:
             self.count = count
         if records is not None:
             self.records = records
-        if x_request_id is not None:
-            self.x_request_id = x_request_id
 
     @property
     def count(self):
         r"""Gets the count of this ListAlertRulesResponse.
 
-        总数量。Total count.
+        数量
 
         :return: The count of this ListAlertRulesResponse.
         :rtype: int
@@ -69,7 +62,7 @@ class ListAlertRulesResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListAlertRulesResponse.
 
-        总数量。Total count.
+        数量
 
         :param count: The count of this ListAlertRulesResponse.
         :type count: int
@@ -80,10 +73,10 @@ class ListAlertRulesResponse(SdkResponse):
     def records(self):
         r"""Gets the records of this ListAlertRulesResponse.
 
-        告警模型。Alert rules.
+        模型记录
 
         :return: The records of this ListAlertRulesResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
+        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleItem`]
         """
         return self._records
 
@@ -91,30 +84,12 @@ class ListAlertRulesResponse(SdkResponse):
     def records(self, records):
         r"""Sets the records of this ListAlertRulesResponse.
 
-        告警模型。Alert rules.
+        模型记录
 
         :param records: The records of this ListAlertRulesResponse.
-        :type records: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
+        :type records: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleItem`]
         """
         self._records = records
-
-    @property
-    def x_request_id(self):
-        r"""Gets the x_request_id of this ListAlertRulesResponse.
-
-        :return: The x_request_id of this ListAlertRulesResponse.
-        :rtype: str
-        """
-        return self._x_request_id
-
-    @x_request_id.setter
-    def x_request_id(self, x_request_id):
-        r"""Sets the x_request_id of this ListAlertRulesResponse.
-
-        :param x_request_id: The x_request_id of this ListAlertRulesResponse.
-        :type x_request_id: str
-        """
-        self._x_request_id = x_request_id
 
     def to_dict(self):
         import warnings

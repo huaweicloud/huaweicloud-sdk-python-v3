@@ -31,7 +31,7 @@ class SimpleFieldDto:
 
         :param column_name: **参数解释**： 指标表对应字段名称。 **取值范围**： 不涉及。
         :type column_name: str
-        :param column_type: **参数解释**： 指标表对应字段类型。 **取值范围**： 不涉及。
+        :param column_type: **参数解释**： 指标表对应字段类型。 **取值范围**： - bigint：大范围的整数，别名为INT8。 - int：常用的整数，别名为INT4。 - varchar：变长字符串。 - text：变长字符串。 - numeric：任意精度型。 - double precision：双精度浮点数，不精准。
         :type column_type: str
         """
         
@@ -72,7 +72,7 @@ class SimpleFieldDto:
     def column_type(self):
         r"""Gets the column_type of this SimpleFieldDto.
 
-        **参数解释**： 指标表对应字段类型。 **取值范围**： 不涉及。
+        **参数解释**： 指标表对应字段类型。 **取值范围**： - bigint：大范围的整数，别名为INT8。 - int：常用的整数，别名为INT4。 - varchar：变长字符串。 - text：变长字符串。 - numeric：任意精度型。 - double precision：双精度浮点数，不精准。
 
         :return: The column_type of this SimpleFieldDto.
         :rtype: str
@@ -83,7 +83,7 @@ class SimpleFieldDto:
     def column_type(self, column_type):
         r"""Sets the column_type of this SimpleFieldDto.
 
-        **参数解释**： 指标表对应字段类型。 **取值范围**： 不涉及。
+        **参数解释**： 指标表对应字段类型。 **取值范围**： - bigint：大范围的整数，别名为INT8。 - int：常用的整数，别名为INT4。 - varchar：变长字符串。 - text：变长字符串。 - numeric：任意精度型。 - double precision：双精度浮点数，不精准。
 
         :param column_type: The column_type of this SimpleFieldDto.
         :type column_type: str

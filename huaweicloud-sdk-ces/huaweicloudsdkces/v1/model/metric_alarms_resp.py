@@ -17,12 +17,14 @@ class MetricAlarmsResp:
     openapi_types = {
         'alarm_name': 'str',
         'alarm_description': 'str',
+        'relation_id': 'str',
         'metric': 'ListAlarmMetricResp',
-        'condition': 'ConditionResp',
+        'condition': 'AlarmRuleConditionResp',
         'alarm_enabled': 'bool',
         'alarm_level': 'int',
         'alarm_type': 'str',
         'alarm_action_enabled': 'bool',
+        'ignore_insufficient_data': 'bool',
         'alarm_actions': 'list[NotificationResp]',
         'ok_actions': 'list[NotificationResp]',
         'insufficientdata_actions': 'list[NotificationResp]',
@@ -38,12 +40,14 @@ class MetricAlarmsResp:
     attribute_map = {
         'alarm_name': 'alarm_name',
         'alarm_description': 'alarm_description',
+        'relation_id': 'relation_id',
         'metric': 'metric',
         'condition': 'condition',
         'alarm_enabled': 'alarm_enabled',
         'alarm_level': 'alarm_level',
         'alarm_type': 'alarm_type',
         'alarm_action_enabled': 'alarm_action_enabled',
+        'ignore_insufficient_data': 'ignore_insufficient_data',
         'alarm_actions': 'alarm_actions',
         'ok_actions': 'ok_actions',
         'insufficientdata_actions': 'insufficientdata_actions',
@@ -56,7 +60,7 @@ class MetricAlarmsResp:
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, alarm_name=None, alarm_description=None, metric=None, condition=None, alarm_enabled=None, alarm_level=None, alarm_type=None, alarm_action_enabled=None, alarm_actions=None, ok_actions=None, insufficientdata_actions=None, alarm_action_begin_time=None, alarm_action_end_time=None, effective_timezone=None, alarm_id=None, update_time=None, alarm_state=None, enterprise_project_id=None):
+    def __init__(self, alarm_name=None, alarm_description=None, relation_id=None, metric=None, condition=None, alarm_enabled=None, alarm_level=None, alarm_type=None, alarm_action_enabled=None, ignore_insufficient_data=None, alarm_actions=None, ok_actions=None, insufficientdata_actions=None, alarm_action_begin_time=None, alarm_action_end_time=None, effective_timezone=None, alarm_id=None, update_time=None, alarm_state=None, enterprise_project_id=None):
         r"""MetricAlarmsResp
 
         The model defined in huaweicloud sdk
@@ -65,18 +69,22 @@ class MetricAlarmsResp:
         :type alarm_name: str
         :param alarm_description: **参数解释**： 告警描述。 **取值范围**： 长度[0,256]个字符。 
         :type alarm_description: str
+        :param relation_id: **参数解释**： 告警规则的ID或者资源分组ID。 **取值范围**： 不涉及 
+        :type relation_id: str
         :param metric: 
         :type metric: :class:`huaweicloudsdkces.v1.ListAlarmMetricResp`
         :param condition: 
-        :type condition: :class:`huaweicloudsdkces.v1.ConditionResp`
-        :param alarm_enabled: **参数解释**： 是否启用该条告警。 **取值范围**： 布尔值。 true:开启。 false:关闭。 
+        :type condition: :class:`huaweicloudsdkces.v1.AlarmRuleConditionResp`
+        :param alarm_enabled: **参数解释**： 是否启用该条告警。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
         :type alarm_enabled: bool
-        :param alarm_level: **参数解释**： 告警级别。 **取值范围**： 级别为1、2、3、4。分别对应紧急、重要、次要、提示。 
+        :param alarm_level: **参数解释**： 告警级别。 **取值范围**： 取值为1、2、3、4 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 
         :type alarm_level: int
         :param alarm_type: **参数解释**： 告警类型。 **取值范围**： 针对事件类型的告警时，告警类型为EVENT.SYS（系统事件）或EVENT.CUSTOM（自定义事件）。 针对资源分组的告警时，告警类型为RESOURCE_GROUP。 针对指定资源的告警时，告警类型为MULTI_INSTANCE。 - EVENT.SYS：针对系统事件的告警类型 - EVENT.CUSTOM：针对自定义事件的告警类型 - RESOURCE_GROUP：针对资源分组的告警类型 - MULTI_INSTANCE：指定资源的告警类型 
         :type alarm_type: str
         :param alarm_action_enabled: **参数解释**： 该条告警触发时，是否开启告警通知。 **取值范围**： 布尔值。 - true：开启告警通知。 - false：不开启告警通知。 
         :type alarm_action_enabled: bool
+        :param ignore_insufficient_data: **参数解释**： 数据不足时，是否产生告警记录(不会发送通知)。 **取值范围**： 值为true或者false - true：数据不足时，产生告警记录 - false：数据不足时，不产生告警记录 
+        :type ignore_insufficient_data: bool
         :param alarm_actions: **参数解释**： 告警触发时，通知组/主题订阅的信息。 
         :type alarm_actions: list[:class:`huaweicloudsdkces.v1.NotificationResp`]
         :param ok_actions: **参数解释**： 告警触发时，通知组/主题订阅的信息。 
@@ -93,7 +101,7 @@ class MetricAlarmsResp:
         :type alarm_id: str
         :param update_time: **参数解释**： 告警状态变更的时间，UNIX时间戳，单位毫秒。 **取值范围** 0 - 9999999999999 
         :type update_time: int
-        :param alarm_state: **参数解释**： 告警状态。 **取值范围**： 只能为ok、alarm、insufficient_data。字符长度为[0,17] - ok：正常 - alarm：告警 - insufficient_data：数据不足 
+        :param alarm_state: **参数解释**： 告警状态。 **取值范围**： 只能为ok、alarm、insufficient_data。 - ok：正常 - alarm：告警 - insufficient_data：数据不足 
         :type alarm_state: str
         :param enterprise_project_id: **参数解释**： 企业项目ID。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，长度为36个字符。也可取值0或all_granted_eps。0：代表默认企业项目ID，all_granted_eps：代表所有企业项目ID。 
         :type enterprise_project_id: str
@@ -103,12 +111,14 @@ class MetricAlarmsResp:
 
         self._alarm_name = None
         self._alarm_description = None
+        self._relation_id = None
         self._metric = None
         self._condition = None
         self._alarm_enabled = None
         self._alarm_level = None
         self._alarm_type = None
         self._alarm_action_enabled = None
+        self._ignore_insufficient_data = None
         self._alarm_actions = None
         self._ok_actions = None
         self._insufficientdata_actions = None
@@ -125,6 +135,8 @@ class MetricAlarmsResp:
             self.alarm_name = alarm_name
         if alarm_description is not None:
             self.alarm_description = alarm_description
+        if relation_id is not None:
+            self.relation_id = relation_id
         if metric is not None:
             self.metric = metric
         if condition is not None:
@@ -137,6 +149,8 @@ class MetricAlarmsResp:
             self.alarm_type = alarm_type
         if alarm_action_enabled is not None:
             self.alarm_action_enabled = alarm_action_enabled
+        if ignore_insufficient_data is not None:
+            self.ignore_insufficient_data = ignore_insufficient_data
         if alarm_actions is not None:
             self.alarm_actions = alarm_actions
         if ok_actions is not None:
@@ -203,6 +217,28 @@ class MetricAlarmsResp:
         self._alarm_description = alarm_description
 
     @property
+    def relation_id(self):
+        r"""Gets the relation_id of this MetricAlarmsResp.
+
+        **参数解释**： 告警规则的ID或者资源分组ID。 **取值范围**： 不涉及 
+
+        :return: The relation_id of this MetricAlarmsResp.
+        :rtype: str
+        """
+        return self._relation_id
+
+    @relation_id.setter
+    def relation_id(self, relation_id):
+        r"""Sets the relation_id of this MetricAlarmsResp.
+
+        **参数解释**： 告警规则的ID或者资源分组ID。 **取值范围**： 不涉及 
+
+        :param relation_id: The relation_id of this MetricAlarmsResp.
+        :type relation_id: str
+        """
+        self._relation_id = relation_id
+
+    @property
     def metric(self):
         r"""Gets the metric of this MetricAlarmsResp.
 
@@ -225,7 +261,7 @@ class MetricAlarmsResp:
         r"""Gets the condition of this MetricAlarmsResp.
 
         :return: The condition of this MetricAlarmsResp.
-        :rtype: :class:`huaweicloudsdkces.v1.ConditionResp`
+        :rtype: :class:`huaweicloudsdkces.v1.AlarmRuleConditionResp`
         """
         return self._condition
 
@@ -234,7 +270,7 @@ class MetricAlarmsResp:
         r"""Sets the condition of this MetricAlarmsResp.
 
         :param condition: The condition of this MetricAlarmsResp.
-        :type condition: :class:`huaweicloudsdkces.v1.ConditionResp`
+        :type condition: :class:`huaweicloudsdkces.v1.AlarmRuleConditionResp`
         """
         self._condition = condition
 
@@ -242,7 +278,7 @@ class MetricAlarmsResp:
     def alarm_enabled(self):
         r"""Gets the alarm_enabled of this MetricAlarmsResp.
 
-        **参数解释**： 是否启用该条告警。 **取值范围**： 布尔值。 true:开启。 false:关闭。 
+        **参数解释**： 是否启用该条告警。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
 
         :return: The alarm_enabled of this MetricAlarmsResp.
         :rtype: bool
@@ -253,7 +289,7 @@ class MetricAlarmsResp:
     def alarm_enabled(self, alarm_enabled):
         r"""Sets the alarm_enabled of this MetricAlarmsResp.
 
-        **参数解释**： 是否启用该条告警。 **取值范围**： 布尔值。 true:开启。 false:关闭。 
+        **参数解释**： 是否启用该条告警。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
 
         :param alarm_enabled: The alarm_enabled of this MetricAlarmsResp.
         :type alarm_enabled: bool
@@ -264,7 +300,7 @@ class MetricAlarmsResp:
     def alarm_level(self):
         r"""Gets the alarm_level of this MetricAlarmsResp.
 
-        **参数解释**： 告警级别。 **取值范围**： 级别为1、2、3、4。分别对应紧急、重要、次要、提示。 
+        **参数解释**： 告警级别。 **取值范围**： 取值为1、2、3、4 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 
 
         :return: The alarm_level of this MetricAlarmsResp.
         :rtype: int
@@ -275,7 +311,7 @@ class MetricAlarmsResp:
     def alarm_level(self, alarm_level):
         r"""Sets the alarm_level of this MetricAlarmsResp.
 
-        **参数解释**： 告警级别。 **取值范围**： 级别为1、2、3、4。分别对应紧急、重要、次要、提示。 
+        **参数解释**： 告警级别。 **取值范围**： 取值为1、2、3、4 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 
 
         :param alarm_level: The alarm_level of this MetricAlarmsResp.
         :type alarm_level: int
@@ -325,6 +361,28 @@ class MetricAlarmsResp:
         :type alarm_action_enabled: bool
         """
         self._alarm_action_enabled = alarm_action_enabled
+
+    @property
+    def ignore_insufficient_data(self):
+        r"""Gets the ignore_insufficient_data of this MetricAlarmsResp.
+
+        **参数解释**： 数据不足时，是否产生告警记录(不会发送通知)。 **取值范围**： 值为true或者false - true：数据不足时，产生告警记录 - false：数据不足时，不产生告警记录 
+
+        :return: The ignore_insufficient_data of this MetricAlarmsResp.
+        :rtype: bool
+        """
+        return self._ignore_insufficient_data
+
+    @ignore_insufficient_data.setter
+    def ignore_insufficient_data(self, ignore_insufficient_data):
+        r"""Sets the ignore_insufficient_data of this MetricAlarmsResp.
+
+        **参数解释**： 数据不足时，是否产生告警记录(不会发送通知)。 **取值范围**： 值为true或者false - true：数据不足时，产生告警记录 - false：数据不足时，不产生告警记录 
+
+        :param ignore_insufficient_data: The ignore_insufficient_data of this MetricAlarmsResp.
+        :type ignore_insufficient_data: bool
+        """
+        self._ignore_insufficient_data = ignore_insufficient_data
 
     @property
     def alarm_actions(self):
@@ -506,7 +564,7 @@ class MetricAlarmsResp:
     def alarm_state(self):
         r"""Gets the alarm_state of this MetricAlarmsResp.
 
-        **参数解释**： 告警状态。 **取值范围**： 只能为ok、alarm、insufficient_data。字符长度为[0,17] - ok：正常 - alarm：告警 - insufficient_data：数据不足 
+        **参数解释**： 告警状态。 **取值范围**： 只能为ok、alarm、insufficient_data。 - ok：正常 - alarm：告警 - insufficient_data：数据不足 
 
         :return: The alarm_state of this MetricAlarmsResp.
         :rtype: str
@@ -517,7 +575,7 @@ class MetricAlarmsResp:
     def alarm_state(self, alarm_state):
         r"""Sets the alarm_state of this MetricAlarmsResp.
 
-        **参数解释**： 告警状态。 **取值范围**： 只能为ok、alarm、insufficient_data。字符长度为[0,17] - ok：正常 - alarm：告警 - insufficient_data：数据不足 
+        **参数解释**： 告警状态。 **取值范围**： 只能为ok、alarm、insufficient_data。 - ok：正常 - alarm：告警 - insufficient_data：数据不足 
 
         :param alarm_state: The alarm_state of this MetricAlarmsResp.
         :type alarm_state: str

@@ -33,7 +33,7 @@ class QuotasResource:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 项目资源类型。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 项目资源类型。 **取值范围**： - rds：节点类型 - cpu：cpu类型 - mem：内存类型 - diskNum：磁盘数量类型 - diskGB：磁盘大小类型
         :type type: str
         :param used: **参数解释**： 已使用的资源数量。 **取值范围**： 不涉及。
         :type used: int
@@ -60,7 +60,7 @@ class QuotasResource:
     def type(self):
         r"""Gets the type of this QuotasResource.
 
-        **参数解释**： 项目资源类型。 **取值范围**： 不涉及。
+        **参数解释**： 项目资源类型。 **取值范围**： - rds：节点类型 - cpu：cpu类型 - mem：内存类型 - diskNum：磁盘数量类型 - diskGB：磁盘大小类型
 
         :return: The type of this QuotasResource.
         :rtype: str
@@ -71,7 +71,7 @@ class QuotasResource:
     def type(self, type):
         r"""Sets the type of this QuotasResource.
 
-        **参数解释**： 项目资源类型。 **取值范围**： 不涉及。
+        **参数解释**： 项目资源类型。 **取值范围**： - rds：节点类型 - cpu：cpu类型 - mem：内存类型 - diskNum：磁盘数量类型 - diskGB：磁盘大小类型
 
         :param type: The type of this QuotasResource.
         :type type: str

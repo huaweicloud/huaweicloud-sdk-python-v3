@@ -20,7 +20,7 @@ class PanguDrugModelResourceRsp:
         'spec_code': 'str',
         'charge_mode': 'str',
         'project_id': 'str',
-        'status': 'DrugModelResourceStatusEnum',
+        'status': 'str',
         'create_time': 'str'
     }
 
@@ -49,8 +49,8 @@ class PanguDrugModelResourceRsp:
         :type charge_mode: str
         :param project_id: **参数解释**： 项目ID。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type project_id: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkeihealth.v1.DrugModelResourceStatusEnum`
+        :param status: **参数解释**： 模型状态。 **约束限制**： 不涉及 **取值范围**： - Normal：正常。 - Freeze：冻结。 - Deleted：删除。 **默认取值**： 不涉及 
+        :type status: str
         :param create_time: **参数解释**： 购买时间，UTC时间。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type create_time: str
         """
@@ -188,8 +188,10 @@ class PanguDrugModelResourceRsp:
     def status(self):
         r"""Gets the status of this PanguDrugModelResourceRsp.
 
+        **参数解释**： 模型状态。 **约束限制**： 不涉及 **取值范围**： - Normal：正常。 - Freeze：冻结。 - Deleted：删除。 **默认取值**： 不涉及 
+
         :return: The status of this PanguDrugModelResourceRsp.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.DrugModelResourceStatusEnum`
+        :rtype: str
         """
         return self._status
 
@@ -197,8 +199,10 @@ class PanguDrugModelResourceRsp:
     def status(self, status):
         r"""Sets the status of this PanguDrugModelResourceRsp.
 
+        **参数解释**： 模型状态。 **约束限制**： 不涉及 **取值范围**： - Normal：正常。 - Freeze：冻结。 - Deleted：删除。 **默认取值**： 不涉及 
+
         :param status: The status of this PanguDrugModelResourceRsp.
-        :type status: :class:`huaweicloudsdkeihealth.v1.DrugModelResourceStatusEnum`
+        :type status: str
         """
         self._status = status
 

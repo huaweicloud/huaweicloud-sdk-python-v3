@@ -15,28 +15,42 @@ class GlanceListImageMembersRequest:
     sensitive_list = []
 
     openapi_types = {
-        'image_id': 'str'
+        'image_id': 'str',
+        'limit': 'int',
+        'marker': 'str'
     }
 
     attribute_map = {
-        'image_id': 'image_id'
+        'image_id': 'image_id',
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self, image_id=None):
+    def __init__(self, image_id=None, limit=None, marker=None):
         r"""GlanceListImageMembersRequest
 
         The model defined in huaweicloud sdk
 
         :param image_id: 镜像id
         :type image_id: str
+        :param limit: 查询镜像成员列表时每页的数量。
+        :type limit: int
+        :param marker: 分页标识，用于查询下一页内容。
+        :type marker: str
         """
         
         
 
         self._image_id = None
+        self._limit = None
+        self._marker = None
         self.discriminator = None
 
         self.image_id = image_id
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
 
     @property
     def image_id(self):
@@ -59,6 +73,50 @@ class GlanceListImageMembersRequest:
         :type image_id: str
         """
         self._image_id = image_id
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this GlanceListImageMembersRequest.
+
+        查询镜像成员列表时每页的数量。
+
+        :return: The limit of this GlanceListImageMembersRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this GlanceListImageMembersRequest.
+
+        查询镜像成员列表时每页的数量。
+
+        :param limit: The limit of this GlanceListImageMembersRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        r"""Gets the marker of this GlanceListImageMembersRequest.
+
+        分页标识，用于查询下一页内容。
+
+        :return: The marker of this GlanceListImageMembersRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        r"""Sets the marker of this GlanceListImageMembersRequest.
+
+        分页标识，用于查询下一页内容。
+
+        :param marker: The marker of this GlanceListImageMembersRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         result = {}

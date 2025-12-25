@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class EventStateEnum:
-    """
-    allowed enum values
-    """
-    NORMAL = "normal"
-    WARNING = "warning"
-    INCIDENT = "incident"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

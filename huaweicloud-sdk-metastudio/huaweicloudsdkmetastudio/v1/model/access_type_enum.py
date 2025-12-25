@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AccessTypeEnum:
-    """
-    allowed enum values
-    """
-    MEITUAN_OFFICIAL = "MEITUAN_OFFICIAL"
-    MSS_STANDARD = "MSS_STANDARD"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

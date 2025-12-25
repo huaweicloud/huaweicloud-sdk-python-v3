@@ -39,19 +39,19 @@ class ImageRiskConfigsInfoResponseInfo:
 
         The model defined in huaweicloud sdk
 
-        :param severity: 风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
+        :param severity: **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 **默认取值** 无 
         :type severity: str
-        :param check_name: 基线名称
+        :param check_name: **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如&#39;CentOS 7&#39;、&#39;EulerOS&#39;等） **约束限制** 仅支持功能介绍中列出的系统基线（CentOS 7、Debian 10、EulerOS、Ubuntu16） **取值范围** 支持的基线名称列表详见功能介绍 **默认取值** 无 
         :type check_name: str
-        :param check_type: **参数解释** : 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **约束限制** : 不涉及 **取值范围** : 不涉及 **默认取值** : 不涉及 
+        :param check_type: **参数解释** 用于区分基线的类型 **取值范围** 字符长度0-256位 
         :type check_type: str
-        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        :param standard: **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 **默认取值** 无 
         :type standard: str
-        :param check_rule_num: 检查项数量
+        :param check_rule_num: **参数解释** 该基线对应的安全配置检测总检查项数量 **取值范围** 取值0-2097152 
         :type check_rule_num: int
-        :param failed_rule_num: 风险项数量
+        :param failed_rule_num: **参数解释** 该基线检测中未通过（存在安全风险）的检查项数量 **取值范围** 取值0-2097152 
         :type failed_rule_num: int
-        :param check_type_desc: 基线描述信息
+        :param check_type_desc: **参数解释** 该基线的详细描述，说明基线的检测目的、适用场景等信息 **取值范围** 字符长度0-65534位，支持中文、英文、数字、常用标点符号及空格 
         :type check_type_desc: str
         """
         
@@ -85,7 +85,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def severity(self):
         r"""Gets the severity of this ImageRiskConfigsInfoResponseInfo.
 
-        风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
+        **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 **默认取值** 无 
 
         :return: The severity of this ImageRiskConfigsInfoResponseInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def severity(self, severity):
         r"""Sets the severity of this ImageRiskConfigsInfoResponseInfo.
 
-        风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
+        **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 **默认取值** 无 
 
         :param severity: The severity of this ImageRiskConfigsInfoResponseInfo.
         :type severity: str
@@ -107,7 +107,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def check_name(self):
         r"""Gets the check_name of this ImageRiskConfigsInfoResponseInfo.
 
-        基线名称
+        **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如'CentOS 7'、'EulerOS'等） **约束限制** 仅支持功能介绍中列出的系统基线（CentOS 7、Debian 10、EulerOS、Ubuntu16） **取值范围** 支持的基线名称列表详见功能介绍 **默认取值** 无 
 
         :return: The check_name of this ImageRiskConfigsInfoResponseInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def check_name(self, check_name):
         r"""Sets the check_name of this ImageRiskConfigsInfoResponseInfo.
 
-        基线名称
+        **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如'CentOS 7'、'EulerOS'等） **约束限制** 仅支持功能介绍中列出的系统基线（CentOS 7、Debian 10、EulerOS、Ubuntu16） **取值范围** 支持的基线名称列表详见功能介绍 **默认取值** 无 
 
         :param check_name: The check_name of this ImageRiskConfigsInfoResponseInfo.
         :type check_name: str
@@ -129,7 +129,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def check_type(self):
         r"""Gets the check_type of this ImageRiskConfigsInfoResponseInfo.
 
-        **参数解释** : 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **约束限制** : 不涉及 **取值范围** : 不涉及 **默认取值** : 不涉及 
+        **参数解释** 用于区分基线的类型 **取值范围** 字符长度0-256位 
 
         :return: The check_type of this ImageRiskConfigsInfoResponseInfo.
         :rtype: str
@@ -140,7 +140,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def check_type(self, check_type):
         r"""Sets the check_type of this ImageRiskConfigsInfoResponseInfo.
 
-        **参数解释** : 配置检查（基线）的类型,Linux系统支持的基线一般check_type和check_name相同,例如SSH、CentOS 7。 Windows系统支持的基线一般check_type和check_name不相同，例如check_name为Windows的配置检查（基线），它的check_type包含Windows Server 2019 R2、Windows Server 2016 R2等。 **约束限制** : 不涉及 **取值范围** : 不涉及 **默认取值** : 不涉及 
+        **参数解释** 用于区分基线的类型 **取值范围** 字符长度0-256位 
 
         :param check_type: The check_type of this ImageRiskConfigsInfoResponseInfo.
         :type check_type: str
@@ -151,7 +151,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def standard(self):
         r"""Gets the standard of this ImageRiskConfigsInfoResponseInfo.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 **默认取值** 无 
 
         :return: The standard of this ImageRiskConfigsInfoResponseInfo.
         :rtype: str
@@ -162,7 +162,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def standard(self, standard):
         r"""Sets the standard of this ImageRiskConfigsInfoResponseInfo.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 **默认取值** 无 
 
         :param standard: The standard of this ImageRiskConfigsInfoResponseInfo.
         :type standard: str
@@ -173,7 +173,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def check_rule_num(self):
         r"""Gets the check_rule_num of this ImageRiskConfigsInfoResponseInfo.
 
-        检查项数量
+        **参数解释** 该基线对应的安全配置检测总检查项数量 **取值范围** 取值0-2097152 
 
         :return: The check_rule_num of this ImageRiskConfigsInfoResponseInfo.
         :rtype: int
@@ -184,7 +184,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def check_rule_num(self, check_rule_num):
         r"""Sets the check_rule_num of this ImageRiskConfigsInfoResponseInfo.
 
-        检查项数量
+        **参数解释** 该基线对应的安全配置检测总检查项数量 **取值范围** 取值0-2097152 
 
         :param check_rule_num: The check_rule_num of this ImageRiskConfigsInfoResponseInfo.
         :type check_rule_num: int
@@ -195,7 +195,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def failed_rule_num(self):
         r"""Gets the failed_rule_num of this ImageRiskConfigsInfoResponseInfo.
 
-        风险项数量
+        **参数解释** 该基线检测中未通过（存在安全风险）的检查项数量 **取值范围** 取值0-2097152 
 
         :return: The failed_rule_num of this ImageRiskConfigsInfoResponseInfo.
         :rtype: int
@@ -206,7 +206,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def failed_rule_num(self, failed_rule_num):
         r"""Sets the failed_rule_num of this ImageRiskConfigsInfoResponseInfo.
 
-        风险项数量
+        **参数解释** 该基线检测中未通过（存在安全风险）的检查项数量 **取值范围** 取值0-2097152 
 
         :param failed_rule_num: The failed_rule_num of this ImageRiskConfigsInfoResponseInfo.
         :type failed_rule_num: int
@@ -217,7 +217,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def check_type_desc(self):
         r"""Gets the check_type_desc of this ImageRiskConfigsInfoResponseInfo.
 
-        基线描述信息
+        **参数解释** 该基线的详细描述，说明基线的检测目的、适用场景等信息 **取值范围** 字符长度0-65534位，支持中文、英文、数字、常用标点符号及空格 
 
         :return: The check_type_desc of this ImageRiskConfigsInfoResponseInfo.
         :rtype: str
@@ -228,7 +228,7 @@ class ImageRiskConfigsInfoResponseInfo:
     def check_type_desc(self, check_type_desc):
         r"""Sets the check_type_desc of this ImageRiskConfigsInfoResponseInfo.
 
-        基线描述信息
+        **参数解释** 该基线的详细描述，说明基线的检测目的、适用场景等信息 **取值范围** 字符长度0-65534位，支持中文、英文、数字、常用标点符号及空格 
 
         :param check_type_desc: The check_type_desc of this ImageRiskConfigsInfoResponseInfo.
         :type check_type_desc: str

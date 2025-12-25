@@ -38,7 +38,6 @@ class ClusterSpec:
         'kube_proxy_mode': 'str',
         'az': 'str',
         'extend_param': 'ClusterExtendParam',
-        'support_istio': 'bool',
         'enable_master_volume_encryption': 'bool',
         'enable_dist_mgt': 'bool',
         'deletion_protection': 'bool',
@@ -71,7 +70,6 @@ class ClusterSpec:
         'kube_proxy_mode': 'kubeProxyMode',
         'az': 'az',
         'extend_param': 'extendParam',
-        'support_istio': 'supportIstio',
         'enable_master_volume_encryption': 'enableMasterVolumeEncryption',
         'enable_dist_mgt': 'enableDistMgt',
         'deletion_protection': 'deletionProtection',
@@ -80,7 +78,7 @@ class ClusterSpec:
         'encryption_config': 'encryptionConfig'
     }
 
-    def __init__(self, category=None, agency_name=None, type=None, flavor=None, version=None, platform_version=None, legacy_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, public_access=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, support_istio=None, enable_master_volume_encryption=None, enable_dist_mgt=None, deletion_protection=None, configurations_override=None, cluster_ops=None, encryption_config=None):
+    def __init__(self, category=None, agency_name=None, type=None, flavor=None, version=None, platform_version=None, legacy_version=None, description=None, custom_san=None, ipv6enable=None, host_network=None, container_network=None, eni_network=None, service_network=None, authentication=None, public_access=None, billing_mode=None, masters=None, kubernetes_svc_ip_range=None, cluster_tags=None, kube_proxy_mode=None, az=None, extend_param=None, enable_master_volume_encryption=None, enable_dist_mgt=None, deletion_protection=None, configurations_override=None, cluster_ops=None, encryption_config=None):
         r"""ClusterSpec
 
         The model defined in huaweicloud sdk
@@ -131,8 +129,6 @@ class ClusterSpec:
         :type az: str
         :param extend_param: 
         :type extend_param: :class:`huaweicloudsdkcce.v3.ClusterExtendParam`
-        :param support_istio: 支持Istio
-        :type support_istio: bool
         :param enable_master_volume_encryption: 集群控制节点系统盘、数据盘加密。默认使用AES_256加密算法。CCE、Turbo集群1.25及以上版本开始支持。集群创建后不支持修改。开启后存在一定的磁盘读写性能损耗。
         :type enable_master_volume_encryption: bool
         :param enable_dist_mgt: 集群开启对分布式云支持。创建CCE Turbo集群时，可在创建集群过程中，开启对分布式云(cloudpond)支持。
@@ -172,7 +168,6 @@ class ClusterSpec:
         self._kube_proxy_mode = None
         self._az = None
         self._extend_param = None
-        self._support_istio = None
         self._enable_master_volume_encryption = None
         self._enable_dist_mgt = None
         self._deletion_protection = None
@@ -223,8 +218,6 @@ class ClusterSpec:
             self.az = az
         if extend_param is not None:
             self.extend_param = extend_param
-        if support_istio is not None:
-            self.support_istio = support_istio
         if enable_master_volume_encryption is not None:
             self.enable_master_volume_encryption = enable_master_volume_encryption
         if enable_dist_mgt is not None:
@@ -715,28 +708,6 @@ class ClusterSpec:
         :type extend_param: :class:`huaweicloudsdkcce.v3.ClusterExtendParam`
         """
         self._extend_param = extend_param
-
-    @property
-    def support_istio(self):
-        r"""Gets the support_istio of this ClusterSpec.
-
-        支持Istio
-
-        :return: The support_istio of this ClusterSpec.
-        :rtype: bool
-        """
-        return self._support_istio
-
-    @support_istio.setter
-    def support_istio(self, support_istio):
-        r"""Sets the support_istio of this ClusterSpec.
-
-        支持Istio
-
-        :param support_istio: The support_istio of this ClusterSpec.
-        :type support_istio: bool
-        """
-        self._support_istio = support_istio
 
     @property
     def enable_master_volume_encryption(self):

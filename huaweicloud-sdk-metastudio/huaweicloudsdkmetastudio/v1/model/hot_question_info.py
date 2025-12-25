@@ -17,7 +17,7 @@ class HotQuestionInfo:
     openapi_types = {
         'hot_question_id': 'str',
         'hot_question': 'str',
-        'language': 'LanguageEnum',
+        'language': 'str',
         'robot_id': 'str',
         'create_time': 'str',
         'update_time': 'str'
@@ -41,8 +41,8 @@ class HotQuestionInfo:
         :type hot_question_id: str
         :param hot_question: 热点问题。
         :type hot_question: str
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param robot_id: 机器人ID。
         :type robot_id: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -122,8 +122,10 @@ class HotQuestionInfo:
     def language(self):
         r"""Gets the language of this HotQuestionInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this HotQuestionInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -131,8 +133,10 @@ class HotQuestionInfo:
     def language(self, language):
         r"""Sets the language of this HotQuestionInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this HotQuestionInfo.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

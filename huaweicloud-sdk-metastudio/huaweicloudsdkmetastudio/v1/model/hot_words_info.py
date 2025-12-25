@@ -17,11 +17,11 @@ class HotWordsInfo:
     openapi_types = {
         'hot_words_id': 'str',
         'robot_id': 'str',
-        'hot_words_type': 'HotWordsTypeEnum',
+        'hot_words_type': 'str',
         'vocabulary_id': 'str',
         'sis_project_id': 'str',
         'region': 'int',
-        'language': 'LanguageEnum',
+        'language': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -47,16 +47,16 @@ class HotWordsInfo:
         :type hot_words_id: str
         :param robot_id: 应用ID。
         :type robot_id: str
-        :param hot_words_type: 
-        :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
+        :param hot_words_type: 热词类型。 &gt; SIS:使用的语音识别服务为SIS时选此类型 &gt; MOBVOI:使用的语音识别服务为MOBVOI时选择此类型
+        :type hot_words_type: str
         :param vocabulary_id: 热词ID(sis中配置)。
         :type vocabulary_id: str
         :param sis_project_id: SIS服务所在区域projectId
         :type sis_project_id: str
         :param region: 对接SIS服务的区域。 &gt; 0：北京四；3：上海一；
         :type region: int
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -143,8 +143,10 @@ class HotWordsInfo:
     def hot_words_type(self):
         r"""Gets the hot_words_type of this HotWordsInfo.
 
+        热词类型。 > SIS:使用的语音识别服务为SIS时选此类型 > MOBVOI:使用的语音识别服务为MOBVOI时选择此类型
+
         :return: The hot_words_type of this HotWordsInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
+        :rtype: str
         """
         return self._hot_words_type
 
@@ -152,8 +154,10 @@ class HotWordsInfo:
     def hot_words_type(self, hot_words_type):
         r"""Sets the hot_words_type of this HotWordsInfo.
 
+        热词类型。 > SIS:使用的语音识别服务为SIS时选此类型 > MOBVOI:使用的语音识别服务为MOBVOI时选择此类型
+
         :param hot_words_type: The hot_words_type of this HotWordsInfo.
-        :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
+        :type hot_words_type: str
         """
         self._hot_words_type = hot_words_type
 
@@ -227,8 +231,10 @@ class HotWordsInfo:
     def language(self):
         r"""Gets the language of this HotWordsInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this HotWordsInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -236,8 +242,10 @@ class HotWordsInfo:
     def language(self, language):
         r"""Sets the language of this HotWordsInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this HotWordsInfo.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

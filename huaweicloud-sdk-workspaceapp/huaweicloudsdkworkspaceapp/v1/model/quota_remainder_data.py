@@ -15,7 +15,7 @@ class QuotaRemainderData:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'QuotaResourceTypeEnum',
+        'type': 'str',
         'remainder': 'int',
         'need': 'int'
     }
@@ -31,8 +31,8 @@ class QuotaRemainderData:
 
         The model defined in huaweicloud sdk
 
-        :param type: 
-        :type type: :class:`huaweicloudsdkworkspaceapp.v1.QuotaResourceTypeEnum`
+        :param type: 配额-资源类型： * GPU_INSTANCES：GPU资源实例数，单位个。 * INSTANCES：普通实例数，单位个。 * VOLUME_GIGABYTES：磁盘总容量，单位GB。 * VOLUMES：磁盘数量，单位个。 * CORES：CPU数量，单位个。 * MEMORY：内存容量，单位MB。
+        :type type: str
         :param remainder: 剩余配额。
         :type remainder: int
         :param need: 所需配额。
@@ -57,8 +57,10 @@ class QuotaRemainderData:
     def type(self):
         r"""Gets the type of this QuotaRemainderData.
 
+        配额-资源类型： * GPU_INSTANCES：GPU资源实例数，单位个。 * INSTANCES：普通实例数，单位个。 * VOLUME_GIGABYTES：磁盘总容量，单位GB。 * VOLUMES：磁盘数量，单位个。 * CORES：CPU数量，单位个。 * MEMORY：内存容量，单位MB。
+
         :return: The type of this QuotaRemainderData.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.QuotaResourceTypeEnum`
+        :rtype: str
         """
         return self._type
 
@@ -66,8 +68,10 @@ class QuotaRemainderData:
     def type(self, type):
         r"""Sets the type of this QuotaRemainderData.
 
+        配额-资源类型： * GPU_INSTANCES：GPU资源实例数，单位个。 * INSTANCES：普通实例数，单位个。 * VOLUME_GIGABYTES：磁盘总容量，单位GB。 * VOLUMES：磁盘数量，单位个。 * CORES：CPU数量，单位个。 * MEMORY：内存容量，单位MB。
+
         :param type: The type of this QuotaRemainderData.
-        :type type: :class:`huaweicloudsdkworkspaceapp.v1.QuotaResourceTypeEnum`
+        :type type: str
         """
         self._type = type
 

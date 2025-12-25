@@ -21,7 +21,9 @@ class VifExtendAttribute:
         'min_rx_interval': 'int',
         'min_tx_interval': 'int',
         'remote_disclaim': 'int',
-        'local_disclaim': 'int'
+        'local_disclaim': 'int',
+        'ipv6_remote_disclaim': 'int',
+        'ipv6_local_disclaim': 'int'
     }
 
     attribute_map = {
@@ -31,28 +33,34 @@ class VifExtendAttribute:
         'min_rx_interval': 'min_rx_interval',
         'min_tx_interval': 'min_tx_interval',
         'remote_disclaim': 'remote_disclaim',
-        'local_disclaim': 'local_disclaim'
+        'local_disclaim': 'local_disclaim',
+        'ipv6_remote_disclaim': 'ipv6_remote_disclaim',
+        'ipv6_local_disclaim': 'ipv6_local_disclaim'
     }
 
-    def __init__(self, ha_type=None, ha_mode=None, detect_multiplier=None, min_rx_interval=None, min_tx_interval=None, remote_disclaim=None, local_disclaim=None):
+    def __init__(self, ha_type=None, ha_mode=None, detect_multiplier=None, min_rx_interval=None, min_tx_interval=None, remote_disclaim=None, local_disclaim=None, ipv6_remote_disclaim=None, ipv6_local_disclaim=None):
         r"""VifExtendAttribute
 
         The model defined in huaweicloud sdk
 
-        :param ha_type: 虚拟接口的可用性检测类型
+        :param ha_type: 虚拟接口的可用性检测类型。取值范围： - nqa：网络质量分析 - bfd：双向转发检测
         :type ha_type: str
-        :param ha_mode: 检测的具体的配置模式
+        :param ha_mode: 虚拟接口可用性检测的配置模式。取值范围： - auto_single：自动单跳bfd - auto_multi：自动多跳bfd - static_single：静态单跳bfd - static_multi：静态多跳bfd - enhance_nqa：增强型nqa
         :type ha_mode: str
         :param detect_multiplier: 检测的重试次数
         :type detect_multiplier: int
-        :param min_rx_interval: 检测的接收时长间隔
+        :param min_rx_interval: 检测的接收时长间隔，单位为毫秒。   - 当ha_type为nqa时，实际生效的时间间隔为按秒为单位将输入的数值向上取整，例如输入1500毫秒，实际时间间隔为2秒；   - 当ha_type为bfd时，实际生效的时间间隔为按毫秒为单位的输入数值。最小值为200毫秒，最大值为1000毫秒。
         :type min_rx_interval: int
-        :param min_tx_interval: 检测的发送时长间隔
+        :param min_tx_interval: 检测的发送时长间隔，单位为毫秒。   - 当ha_type为nqa时，实际生效的时间间隔为按秒为单位将输入的数值向上取整，例如输入1500毫秒，实际时间间隔为2秒；   - 当ha_type为bfd时，实际生效的时间间隔为按毫秒为单位的输入数值。最小值为200毫秒，最大值为1000毫秒。
         :type min_tx_interval: int
         :param remote_disclaim: 检测的远端的标识，用于静态BFD
         :type remote_disclaim: int
         :param local_disclaim: 检测的本端的标识，用于静态BFD
         :type local_disclaim: int
+        :param ipv6_remote_disclaim: 检测的远端的标识，用于静态ipv6 BFD
+        :type ipv6_remote_disclaim: int
+        :param ipv6_local_disclaim: 检测的本端的标识，用于静态ipv6 BFD
+        :type ipv6_local_disclaim: int
         """
         
         
@@ -64,6 +72,8 @@ class VifExtendAttribute:
         self._min_tx_interval = None
         self._remote_disclaim = None
         self._local_disclaim = None
+        self._ipv6_remote_disclaim = None
+        self._ipv6_local_disclaim = None
         self.discriminator = None
 
         if ha_type is not None:
@@ -80,12 +90,16 @@ class VifExtendAttribute:
             self.remote_disclaim = remote_disclaim
         if local_disclaim is not None:
             self.local_disclaim = local_disclaim
+        if ipv6_remote_disclaim is not None:
+            self.ipv6_remote_disclaim = ipv6_remote_disclaim
+        if ipv6_local_disclaim is not None:
+            self.ipv6_local_disclaim = ipv6_local_disclaim
 
     @property
     def ha_type(self):
         r"""Gets the ha_type of this VifExtendAttribute.
 
-        虚拟接口的可用性检测类型
+        虚拟接口的可用性检测类型。取值范围： - nqa：网络质量分析 - bfd：双向转发检测
 
         :return: The ha_type of this VifExtendAttribute.
         :rtype: str
@@ -96,7 +110,7 @@ class VifExtendAttribute:
     def ha_type(self, ha_type):
         r"""Sets the ha_type of this VifExtendAttribute.
 
-        虚拟接口的可用性检测类型
+        虚拟接口的可用性检测类型。取值范围： - nqa：网络质量分析 - bfd：双向转发检测
 
         :param ha_type: The ha_type of this VifExtendAttribute.
         :type ha_type: str
@@ -107,7 +121,7 @@ class VifExtendAttribute:
     def ha_mode(self):
         r"""Gets the ha_mode of this VifExtendAttribute.
 
-        检测的具体的配置模式
+        虚拟接口可用性检测的配置模式。取值范围： - auto_single：自动单跳bfd - auto_multi：自动多跳bfd - static_single：静态单跳bfd - static_multi：静态多跳bfd - enhance_nqa：增强型nqa
 
         :return: The ha_mode of this VifExtendAttribute.
         :rtype: str
@@ -118,7 +132,7 @@ class VifExtendAttribute:
     def ha_mode(self, ha_mode):
         r"""Sets the ha_mode of this VifExtendAttribute.
 
-        检测的具体的配置模式
+        虚拟接口可用性检测的配置模式。取值范围： - auto_single：自动单跳bfd - auto_multi：自动多跳bfd - static_single：静态单跳bfd - static_multi：静态多跳bfd - enhance_nqa：增强型nqa
 
         :param ha_mode: The ha_mode of this VifExtendAttribute.
         :type ha_mode: str
@@ -151,7 +165,7 @@ class VifExtendAttribute:
     def min_rx_interval(self):
         r"""Gets the min_rx_interval of this VifExtendAttribute.
 
-        检测的接收时长间隔
+        检测的接收时长间隔，单位为毫秒。   - 当ha_type为nqa时，实际生效的时间间隔为按秒为单位将输入的数值向上取整，例如输入1500毫秒，实际时间间隔为2秒；   - 当ha_type为bfd时，实际生效的时间间隔为按毫秒为单位的输入数值。最小值为200毫秒，最大值为1000毫秒。
 
         :return: The min_rx_interval of this VifExtendAttribute.
         :rtype: int
@@ -162,7 +176,7 @@ class VifExtendAttribute:
     def min_rx_interval(self, min_rx_interval):
         r"""Sets the min_rx_interval of this VifExtendAttribute.
 
-        检测的接收时长间隔
+        检测的接收时长间隔，单位为毫秒。   - 当ha_type为nqa时，实际生效的时间间隔为按秒为单位将输入的数值向上取整，例如输入1500毫秒，实际时间间隔为2秒；   - 当ha_type为bfd时，实际生效的时间间隔为按毫秒为单位的输入数值。最小值为200毫秒，最大值为1000毫秒。
 
         :param min_rx_interval: The min_rx_interval of this VifExtendAttribute.
         :type min_rx_interval: int
@@ -173,7 +187,7 @@ class VifExtendAttribute:
     def min_tx_interval(self):
         r"""Gets the min_tx_interval of this VifExtendAttribute.
 
-        检测的发送时长间隔
+        检测的发送时长间隔，单位为毫秒。   - 当ha_type为nqa时，实际生效的时间间隔为按秒为单位将输入的数值向上取整，例如输入1500毫秒，实际时间间隔为2秒；   - 当ha_type为bfd时，实际生效的时间间隔为按毫秒为单位的输入数值。最小值为200毫秒，最大值为1000毫秒。
 
         :return: The min_tx_interval of this VifExtendAttribute.
         :rtype: int
@@ -184,7 +198,7 @@ class VifExtendAttribute:
     def min_tx_interval(self, min_tx_interval):
         r"""Sets the min_tx_interval of this VifExtendAttribute.
 
-        检测的发送时长间隔
+        检测的发送时长间隔，单位为毫秒。   - 当ha_type为nqa时，实际生效的时间间隔为按秒为单位将输入的数值向上取整，例如输入1500毫秒，实际时间间隔为2秒；   - 当ha_type为bfd时，实际生效的时间间隔为按毫秒为单位的输入数值。最小值为200毫秒，最大值为1000毫秒。
 
         :param min_tx_interval: The min_tx_interval of this VifExtendAttribute.
         :type min_tx_interval: int
@@ -234,6 +248,50 @@ class VifExtendAttribute:
         :type local_disclaim: int
         """
         self._local_disclaim = local_disclaim
+
+    @property
+    def ipv6_remote_disclaim(self):
+        r"""Gets the ipv6_remote_disclaim of this VifExtendAttribute.
+
+        检测的远端的标识，用于静态ipv6 BFD
+
+        :return: The ipv6_remote_disclaim of this VifExtendAttribute.
+        :rtype: int
+        """
+        return self._ipv6_remote_disclaim
+
+    @ipv6_remote_disclaim.setter
+    def ipv6_remote_disclaim(self, ipv6_remote_disclaim):
+        r"""Sets the ipv6_remote_disclaim of this VifExtendAttribute.
+
+        检测的远端的标识，用于静态ipv6 BFD
+
+        :param ipv6_remote_disclaim: The ipv6_remote_disclaim of this VifExtendAttribute.
+        :type ipv6_remote_disclaim: int
+        """
+        self._ipv6_remote_disclaim = ipv6_remote_disclaim
+
+    @property
+    def ipv6_local_disclaim(self):
+        r"""Gets the ipv6_local_disclaim of this VifExtendAttribute.
+
+        检测的本端的标识，用于静态ipv6 BFD
+
+        :return: The ipv6_local_disclaim of this VifExtendAttribute.
+        :rtype: int
+        """
+        return self._ipv6_local_disclaim
+
+    @ipv6_local_disclaim.setter
+    def ipv6_local_disclaim(self, ipv6_local_disclaim):
+        r"""Sets the ipv6_local_disclaim of this VifExtendAttribute.
+
+        检测的本端的标识，用于静态ipv6 BFD
+
+        :param ipv6_local_disclaim: The ipv6_local_disclaim of this VifExtendAttribute.
+        :type ipv6_local_disclaim: int
+        """
+        self._ipv6_local_disclaim = ipv6_local_disclaim
 
     def to_dict(self):
         result = {}

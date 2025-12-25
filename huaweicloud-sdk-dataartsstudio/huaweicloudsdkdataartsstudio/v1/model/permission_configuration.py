@@ -17,7 +17,7 @@ class PermissionConfiguration:
     openapi_types = {
         'datasource_type': 'str',
         'permission_types': 'list[str]',
-        'permission_actions': 'list[PermissionActions]'
+        'permission_actions': 'list[str]'
     }
 
     attribute_map = {
@@ -36,7 +36,7 @@ class PermissionConfiguration:
         :param permission_types: 数据源操作权限类型
         :type permission_types: list[str]
         :param permission_actions: 数据源支持的权限操作列表
-        :type permission_actions: list[:class:`huaweicloudsdkdataartsstudio.v1.PermissionActions`]
+        :type permission_actions: list[str]
         """
         
         
@@ -104,7 +104,7 @@ class PermissionConfiguration:
         数据源支持的权限操作列表
 
         :return: The permission_actions of this PermissionConfiguration.
-        :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.PermissionActions`]
+        :rtype: list[str]
         """
         return self._permission_actions
 
@@ -115,7 +115,7 @@ class PermissionConfiguration:
         数据源支持的权限操作列表
 
         :param permission_actions: The permission_actions of this PermissionConfiguration.
-        :type permission_actions: list[:class:`huaweicloudsdkdataartsstudio.v1.PermissionActions`]
+        :type permission_actions: list[str]
         """
         self._permission_actions = permission_actions
 

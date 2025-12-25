@@ -19,7 +19,7 @@ class ConfigurationHistoryRsp:
         'old_value': 'str',
         'new_value': 'str',
         'update_result': 'str',
-        'applied': 'str',
+        'applied': 'bool',
         'updated_at': 'str',
         'applied_at': 'str'
     }
@@ -48,7 +48,7 @@ class ConfigurationHistoryRsp:
         :param update_result: **参数解释：** 更新结果。 **约束限制：** 不涉及。 **取值范围：** - SUCCESS：成功。 - FAILED：失败。 **默认取值：** 不涉及。
         :type update_result: str
         :param applied: **参数解释：** 是否生效。 **约束限制：** 不涉及。 **取值范围：** - true:已生效。 - false:未生效。 **默认取值：** 不涉及。
-        :type applied: str
+        :type applied: bool
         :param updated_at: **参数解释：** 更新时间。 **约束限制：** 不涉及。 **取值范围：** 格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **默认取值：** 不涉及。
         :type updated_at: str
         :param applied_at: **参数解释：** 生效时间。 **约束限制：** 不涉及。 **取值范围：** 格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。 **默认取值：** 不涉及。
@@ -169,7 +169,7 @@ class ConfigurationHistoryRsp:
         **参数解释：** 是否生效。 **约束限制：** 不涉及。 **取值范围：** - true:已生效。 - false:未生效。 **默认取值：** 不涉及。
 
         :return: The applied of this ConfigurationHistoryRsp.
-        :rtype: str
+        :rtype: bool
         """
         return self._applied
 
@@ -180,7 +180,7 @@ class ConfigurationHistoryRsp:
         **参数解释：** 是否生效。 **约束限制：** 不涉及。 **取值范围：** - true:已生效。 - false:未生效。 **默认取值：** 不涉及。
 
         :param applied: The applied of this ConfigurationHistoryRsp.
-        :type applied: str
+        :type applied: bool
         """
         self._applied = applied
 

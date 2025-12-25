@@ -59,7 +59,7 @@ class ExtDataSource:
         :type id: str
         :param name: **参数解释**： 数据源名称。 **取值范围**： 不涉及。
         :type name: str
-        :param type: **参数解释**： 类型。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 外部数据源类型。 **取值范围**： - OBS: obs数据源。 - LAKE_FORMATION: lake_formation数据源。 - MRS: mrs数据源。
         :type type: str
         :param connect_info: **参数解释**： 数据库。 **取值范围**： 不涉及。
         :type connect_info: str
@@ -67,9 +67,9 @@ class ExtDataSource:
         :type user_name: str
         :param version: **参数解释**： 版本。 **取值范围**： 不涉及。
         :type version: str
-        :param configure_status: **参数解释**： 配置状态。 **取值范围**： 不涉及。
+        :param configure_status: **参数解释**： 配置状态。 **取值范围**： - 100: CREATING，创建中。 - 200: ACTIVE，已可用。 - 300: FAILED，已失败。 - 400: DELETED，已删除。 - 401: DELETING，删除中。 - 500: UPDATING，更新中。 - 600: PENDING_REBOOT，待重启。
         :type configure_status: str
-        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 状态。 **取值范围**： - 100: CREATING, 创建中。 - 200: AVAILABLE, 可用。 - 300: FAILED, 失败。 - 303: CREATE_FAILED, 创建失败。 - 400: DELETED, 已删除。 - 304: DELETING, 删除中。 - 302: DELETE_FAILED, 删除失败。 - 800: FROZEN, 冻结。 - 801: POLICE_FROZEN, 警方冻结。 - 910: STOPPING, 停止中。 - 900: STOPPED, 已停止。 - 920: STARTING, 启动中。
         :type status: str
         :param data_source_id: **参数解释**： 外部数据源ID。 **取值范围**： 不涉及。
         :type data_source_id: str
@@ -185,7 +185,7 @@ class ExtDataSource:
     def type(self):
         r"""Gets the type of this ExtDataSource.
 
-        **参数解释**： 类型。 **取值范围**： 不涉及。
+        **参数解释**： 外部数据源类型。 **取值范围**： - OBS: obs数据源。 - LAKE_FORMATION: lake_formation数据源。 - MRS: mrs数据源。
 
         :return: The type of this ExtDataSource.
         :rtype: str
@@ -196,7 +196,7 @@ class ExtDataSource:
     def type(self, type):
         r"""Sets the type of this ExtDataSource.
 
-        **参数解释**： 类型。 **取值范围**： 不涉及。
+        **参数解释**： 外部数据源类型。 **取值范围**： - OBS: obs数据源。 - LAKE_FORMATION: lake_formation数据源。 - MRS: mrs数据源。
 
         :param type: The type of this ExtDataSource.
         :type type: str
@@ -273,7 +273,7 @@ class ExtDataSource:
     def configure_status(self):
         r"""Gets the configure_status of this ExtDataSource.
 
-        **参数解释**： 配置状态。 **取值范围**： 不涉及。
+        **参数解释**： 配置状态。 **取值范围**： - 100: CREATING，创建中。 - 200: ACTIVE，已可用。 - 300: FAILED，已失败。 - 400: DELETED，已删除。 - 401: DELETING，删除中。 - 500: UPDATING，更新中。 - 600: PENDING_REBOOT，待重启。
 
         :return: The configure_status of this ExtDataSource.
         :rtype: str
@@ -284,7 +284,7 @@ class ExtDataSource:
     def configure_status(self, configure_status):
         r"""Sets the configure_status of this ExtDataSource.
 
-        **参数解释**： 配置状态。 **取值范围**： 不涉及。
+        **参数解释**： 配置状态。 **取值范围**： - 100: CREATING，创建中。 - 200: ACTIVE，已可用。 - 300: FAILED，已失败。 - 400: DELETED，已删除。 - 401: DELETING，删除中。 - 500: UPDATING，更新中。 - 600: PENDING_REBOOT，待重启。
 
         :param configure_status: The configure_status of this ExtDataSource.
         :type configure_status: str
@@ -295,7 +295,7 @@ class ExtDataSource:
     def status(self):
         r"""Gets the status of this ExtDataSource.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - 100: CREATING, 创建中。 - 200: AVAILABLE, 可用。 - 300: FAILED, 失败。 - 303: CREATE_FAILED, 创建失败。 - 400: DELETED, 已删除。 - 304: DELETING, 删除中。 - 302: DELETE_FAILED, 删除失败。 - 800: FROZEN, 冻结。 - 801: POLICE_FROZEN, 警方冻结。 - 910: STOPPING, 停止中。 - 900: STOPPED, 已停止。 - 920: STARTING, 启动中。
 
         :return: The status of this ExtDataSource.
         :rtype: str
@@ -306,7 +306,7 @@ class ExtDataSource:
     def status(self, status):
         r"""Sets the status of this ExtDataSource.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - 100: CREATING, 创建中。 - 200: AVAILABLE, 可用。 - 300: FAILED, 失败。 - 303: CREATE_FAILED, 创建失败。 - 400: DELETED, 已删除。 - 304: DELETING, 删除中。 - 302: DELETE_FAILED, 删除失败。 - 800: FROZEN, 冻结。 - 801: POLICE_FROZEN, 警方冻结。 - 910: STOPPING, 停止中。 - 900: STOPPED, 已停止。 - 920: STARTING, 启动中。
 
         :param status: The status of this ExtDataSource.
         :type status: str

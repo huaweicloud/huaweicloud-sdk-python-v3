@@ -55,7 +55,7 @@ class CreateDisasterRecovery:
 
         :param name: **参数解释**： 名称。 **取值范围**： 不涉及。
         :type name: str
-        :param dr_type: **参数解释**： 容灾类型。 **取值范围**： 不涉及。
+        :param dr_type: **参数解释**： 容灾类型。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。
         :type dr_type: str
         :param primary_cluster_id: **参数解释**： 主集群ID。 **取值范围**： 不涉及。
         :type primary_cluster_id: str
@@ -151,7 +151,7 @@ class CreateDisasterRecovery:
     def dr_type(self):
         r"""Gets the dr_type of this CreateDisasterRecovery.
 
-        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
+        **参数解释**： 容灾类型。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。
 
         :return: The dr_type of this CreateDisasterRecovery.
         :rtype: str
@@ -162,7 +162,7 @@ class CreateDisasterRecovery:
     def dr_type(self, dr_type):
         r"""Sets the dr_type of this CreateDisasterRecovery.
 
-        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
+        **参数解释**： 容灾类型。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。
 
         :param dr_type: The dr_type of this CreateDisasterRecovery.
         :type dr_type: str

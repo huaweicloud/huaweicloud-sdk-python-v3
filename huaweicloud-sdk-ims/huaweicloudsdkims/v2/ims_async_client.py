@@ -1487,6 +1487,10 @@ class ImsAsyncClient(Client):
             path_params['image_id'] = local_var_params['image_id']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
@@ -2967,6 +2971,10 @@ class ImsAsyncClient(Client):
             path_params['image_id'] = local_var_params['image_id']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 

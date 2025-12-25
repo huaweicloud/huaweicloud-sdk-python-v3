@@ -4,10 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DocumentTemplateVersionEnum:
-    """
-    allowed enum values
-    """
-    _2022_08_30 = "2022.08.30"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

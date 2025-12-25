@@ -15533,7 +15533,7 @@ class MetaStudioAsyncClient(Client):
     def create_user_quotas_async(self, request):
         r"""创建子账户配额
 
-        创建子账户（IAM用户）配额，需要先开启子账户隔离后才能配置。只有根账户可创建。
+        创建子账户（IAM用户）配额，需要先开启子账户隔离后才能配置。 只有根账户可创建。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15663,7 +15663,7 @@ class MetaStudioAsyncClient(Client):
     def delete_user_quotas_async(self, request):
         r"""删除子账户配额
 
-        删除子账户（IAM用户）配额，需要先开启子账户隔离后才能配置。只有根账户可删除。
+        删除子账户（IAM用户）配额，需要先开启子账户隔离后才能配置。 只有根账户可删除。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -15817,7 +15817,7 @@ class MetaStudioAsyncClient(Client):
     def list_user_quotas_async(self, request):
         r"""查询子账户配额
 
-        查询子账户（IAM用户）配额。只有根账户可查询。
+        查询子账户（IAM用户）配额。 只有根账户可查询。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16544,7 +16544,7 @@ class MetaStudioAsyncClient(Client):
     def update_user_quotas_async(self, request):
         r"""设置子账户配额
 
-        设置子账户（IAM用户）配额，需要先开启子账户隔离后才能配置。只有根账户可修改。
+        设置子账户（IAM用户）配额，需要先开启子账户隔离后才能配置。 只有根账户可修改。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -16611,7 +16611,7 @@ class MetaStudioAsyncClient(Client):
     def commit_short_job_async(self, request):
         r"""提交短任务
 
-        提交短任务，执行改接口后，任务会正式开始执行。
+        提交短任务，执行该接口后，任务会正式开始执行。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

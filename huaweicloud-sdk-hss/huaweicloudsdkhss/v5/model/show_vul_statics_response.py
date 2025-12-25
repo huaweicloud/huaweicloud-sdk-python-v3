@@ -40,19 +40,19 @@ class ShowVulStaticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param need_urgent_repair: 需紧急修复的漏洞数
+        :param need_urgent_repair: **参数解释**: 需紧急修复的漏洞数 **取值范围**: 取值0-2147483647 
         :type need_urgent_repair: int
-        :param unrepair: 未完成修复的漏洞数
+        :param unrepair: **参数解释**: 未完成修复的漏洞数 **取值范围**: 取值0-2147483647 
         :type unrepair: int
-        :param existed_vul_hosts: 存在漏洞的服务器数
+        :param existed_vul_hosts: **参数解释**: 存在漏洞的服务器数 **取值范围**: 取值0-2147483647 
         :type existed_vul_hosts: int
-        :param today_handle: 今日处理漏洞数
+        :param today_handle: **参数解释**: 今日处理漏洞数 **取值范围**: 取值0-2147483647 
         :type today_handle: int
-        :param all_handle: 累计处理漏洞数
+        :param all_handle: **参数解释**: 累计处理漏洞数 **取值范围**: 取值0-2147483647 
         :type all_handle: int
-        :param supported: 已支持漏洞数
+        :param supported: **参数解释**: 已支持漏洞数 **取值范围**: 取值0-2147483647 
         :type supported: int
-        :param vul_library_update_time: 漏洞库更新时间
+        :param vul_library_update_time: **参数解释**: 漏洞库更新时间（时间戳，单位为毫秒） **取值范围**: 取值0-9223372036854775807 
         :type vul_library_update_time: int
         """
         
@@ -86,7 +86,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def need_urgent_repair(self):
         r"""Gets the need_urgent_repair of this ShowVulStaticsResponse.
 
-        需紧急修复的漏洞数
+        **参数解释**: 需紧急修复的漏洞数 **取值范围**: 取值0-2147483647 
 
         :return: The need_urgent_repair of this ShowVulStaticsResponse.
         :rtype: int
@@ -97,7 +97,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def need_urgent_repair(self, need_urgent_repair):
         r"""Sets the need_urgent_repair of this ShowVulStaticsResponse.
 
-        需紧急修复的漏洞数
+        **参数解释**: 需紧急修复的漏洞数 **取值范围**: 取值0-2147483647 
 
         :param need_urgent_repair: The need_urgent_repair of this ShowVulStaticsResponse.
         :type need_urgent_repair: int
@@ -108,7 +108,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def unrepair(self):
         r"""Gets the unrepair of this ShowVulStaticsResponse.
 
-        未完成修复的漏洞数
+        **参数解释**: 未完成修复的漏洞数 **取值范围**: 取值0-2147483647 
 
         :return: The unrepair of this ShowVulStaticsResponse.
         :rtype: int
@@ -119,7 +119,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def unrepair(self, unrepair):
         r"""Sets the unrepair of this ShowVulStaticsResponse.
 
-        未完成修复的漏洞数
+        **参数解释**: 未完成修复的漏洞数 **取值范围**: 取值0-2147483647 
 
         :param unrepair: The unrepair of this ShowVulStaticsResponse.
         :type unrepair: int
@@ -130,7 +130,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def existed_vul_hosts(self):
         r"""Gets the existed_vul_hosts of this ShowVulStaticsResponse.
 
-        存在漏洞的服务器数
+        **参数解释**: 存在漏洞的服务器数 **取值范围**: 取值0-2147483647 
 
         :return: The existed_vul_hosts of this ShowVulStaticsResponse.
         :rtype: int
@@ -141,7 +141,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def existed_vul_hosts(self, existed_vul_hosts):
         r"""Sets the existed_vul_hosts of this ShowVulStaticsResponse.
 
-        存在漏洞的服务器数
+        **参数解释**: 存在漏洞的服务器数 **取值范围**: 取值0-2147483647 
 
         :param existed_vul_hosts: The existed_vul_hosts of this ShowVulStaticsResponse.
         :type existed_vul_hosts: int
@@ -152,7 +152,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def today_handle(self):
         r"""Gets the today_handle of this ShowVulStaticsResponse.
 
-        今日处理漏洞数
+        **参数解释**: 今日处理漏洞数 **取值范围**: 取值0-2147483647 
 
         :return: The today_handle of this ShowVulStaticsResponse.
         :rtype: int
@@ -163,7 +163,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def today_handle(self, today_handle):
         r"""Sets the today_handle of this ShowVulStaticsResponse.
 
-        今日处理漏洞数
+        **参数解释**: 今日处理漏洞数 **取值范围**: 取值0-2147483647 
 
         :param today_handle: The today_handle of this ShowVulStaticsResponse.
         :type today_handle: int
@@ -174,7 +174,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def all_handle(self):
         r"""Gets the all_handle of this ShowVulStaticsResponse.
 
-        累计处理漏洞数
+        **参数解释**: 累计处理漏洞数 **取值范围**: 取值0-2147483647 
 
         :return: The all_handle of this ShowVulStaticsResponse.
         :rtype: int
@@ -185,7 +185,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def all_handle(self, all_handle):
         r"""Sets the all_handle of this ShowVulStaticsResponse.
 
-        累计处理漏洞数
+        **参数解释**: 累计处理漏洞数 **取值范围**: 取值0-2147483647 
 
         :param all_handle: The all_handle of this ShowVulStaticsResponse.
         :type all_handle: int
@@ -196,7 +196,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def supported(self):
         r"""Gets the supported of this ShowVulStaticsResponse.
 
-        已支持漏洞数
+        **参数解释**: 已支持漏洞数 **取值范围**: 取值0-2147483647 
 
         :return: The supported of this ShowVulStaticsResponse.
         :rtype: int
@@ -207,7 +207,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def supported(self, supported):
         r"""Sets the supported of this ShowVulStaticsResponse.
 
-        已支持漏洞数
+        **参数解释**: 已支持漏洞数 **取值范围**: 取值0-2147483647 
 
         :param supported: The supported of this ShowVulStaticsResponse.
         :type supported: int
@@ -218,7 +218,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def vul_library_update_time(self):
         r"""Gets the vul_library_update_time of this ShowVulStaticsResponse.
 
-        漏洞库更新时间
+        **参数解释**: 漏洞库更新时间（时间戳，单位为毫秒） **取值范围**: 取值0-9223372036854775807 
 
         :return: The vul_library_update_time of this ShowVulStaticsResponse.
         :rtype: int
@@ -229,7 +229,7 @@ class ShowVulStaticsResponse(SdkResponse):
     def vul_library_update_time(self, vul_library_update_time):
         r"""Sets the vul_library_update_time of this ShowVulStaticsResponse.
 
-        漏洞库更新时间
+        **参数解释**: 漏洞库更新时间（时间戳，单位为毫秒） **取值范围**: 取值0-9223372036854775807 
 
         :param vul_library_update_time: The vul_library_update_time of this ShowVulStaticsResponse.
         :type vul_library_update_time: int

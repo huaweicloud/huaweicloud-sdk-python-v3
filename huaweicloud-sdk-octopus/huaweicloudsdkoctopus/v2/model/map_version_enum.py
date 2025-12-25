@@ -4,14 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class MapVersionEnum:
-    """
-    allowed enum values
-    """
-    V1_4_0 = "v1.4.0"
-    V1_5_0 = "v1.5.0"
-    V1_6_0 = "v1.6.0"
-    V1_6_1 = "v1.6.1"
-    V1_7_0 = "v1.7.0"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

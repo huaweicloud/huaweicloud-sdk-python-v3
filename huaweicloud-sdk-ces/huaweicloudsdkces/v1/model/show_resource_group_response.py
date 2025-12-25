@@ -19,7 +19,7 @@ class ShowResourceGroupResponse(SdkResponse):
         'group_name': 'str',
         'group_id': 'str',
         'resources': 'list[ResourceGroup]',
-        'status': 'StatusSchema',
+        'status': 'str',
         'create_time': 'int',
         'meta_data': 'MetaData',
         'enterprise_project_id': 'str'
@@ -46,8 +46,8 @@ class ShowResourceGroupResponse(SdkResponse):
         :type group_id: str
         :param resources: **参数解释** 创建的资源分组选择一个或者多个资源。 **约束限制** 不超过1000个资源。 
         :type resources: list[:class:`huaweicloudsdkces.v1.ResourceGroup`]
-        :param status: 
-        :type status: :class:`huaweicloudsdkces.v1.StatusSchema`
+        :param status: **参数解释** 资源分组健康状态 **约束限制** 不涉及 **取值范围** - health: 表示健康 - unhealth: 表示不健康 - no_alarm_rule: 表示未配置告警规则 **默认取值** 不涉及 
+        :type status: str
         :param create_time: **参数解释**： 资源分组的创建时间，UNIX时间戳，单位毫秒；如：1603819753000。     **约束限制**： 不涉及。  **取值范围**： 在[1,9223372036854775807]区间内 **默认取值**： 不涉及。 
         :type create_time: int
         :param meta_data: 
@@ -152,8 +152,10 @@ class ShowResourceGroupResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowResourceGroupResponse.
 
+        **参数解释** 资源分组健康状态 **约束限制** 不涉及 **取值范围** - health: 表示健康 - unhealth: 表示不健康 - no_alarm_rule: 表示未配置告警规则 **默认取值** 不涉及 
+
         :return: The status of this ShowResourceGroupResponse.
-        :rtype: :class:`huaweicloudsdkces.v1.StatusSchema`
+        :rtype: str
         """
         return self._status
 
@@ -161,8 +163,10 @@ class ShowResourceGroupResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowResourceGroupResponse.
 
+        **参数解释** 资源分组健康状态 **约束限制** 不涉及 **取值范围** - health: 表示健康 - unhealth: 表示不健康 - no_alarm_rule: 表示未配置告警规则 **默认取值** 不涉及 
+
         :param status: The status of this ShowResourceGroupResponse.
-        :type status: :class:`huaweicloudsdkces.v1.StatusSchema`
+        :type status: str
         """
         self._status = status
 

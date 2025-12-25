@@ -61,7 +61,7 @@ class ListPortStatisticsRequest:
         :type port_string: str
         :param type: **参数解释**: 端口类型 **约束限制**: 不涉及 **取值范围**: - UDP - UDP6 - TCP - TCP6  **默认取值**: 不涉及 
         :type type: str
-        :param status: **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口  **默认取值**: 不涉及 
+        :param status: **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknown: 无已知危险的端口  **默认取值**: 不涉及 
         :type status: str
         :param sort_key: **参数解释**: 排序的key值，目前支持按照端口号port排序 **约束限制**: 不涉及 **取值范围**: - port: 端口号  **默认取值**: 不涉及 
         :type sort_key: str
@@ -282,7 +282,7 @@ class ListPortStatisticsRequest:
     def status(self):
         r"""Gets the status of this ListPortStatisticsRequest.
 
-        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口  **默认取值**: 不涉及 
+        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknown: 无已知危险的端口  **默认取值**: 不涉及 
 
         :return: The status of this ListPortStatisticsRequest.
         :rtype: str
@@ -293,7 +293,7 @@ class ListPortStatisticsRequest:
     def status(self, status):
         r"""Sets the status of this ListPortStatisticsRequest.
 
-        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口  **默认取值**: 不涉及 
+        **参数解释**: 端口状态 **约束限制**: 不涉及 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknown: 无已知危险的端口  **默认取值**: 不涉及 
 
         :param status: The status of this ListPortStatisticsRequest.
         :type status: str

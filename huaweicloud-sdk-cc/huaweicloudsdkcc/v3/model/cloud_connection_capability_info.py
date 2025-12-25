@@ -24,7 +24,7 @@ class CloudConnectionCapabilityInfo:
         'bandwidth': 'CloudConnectionDomainBandwidthValue',
         'support_regions': 'list[str]',
         'support_sites': 'list[str]',
-        'resource_type': 'CloudConnectionCapabilityKeyEnum'
+        'resource_type': 'str'
     }
 
     attribute_map = {
@@ -63,8 +63,8 @@ class CloudConnectionCapabilityInfo:
         :type support_regions: list[str]
         :param support_sites: 租户支持的Site列表。
         :type support_sites: list[str]
-        :param resource_type: 
-        :type resource_type: :class:`huaweicloudsdkcc.v3.CloudConnectionCapabilityKeyEnum`
+        :param resource_type: 租户能力类型，分为： - v2（V2的API） - v3（V3的API） - billing_mode_period_reduce（包周期实时降配） - billing_mode_demand（按需计费） - bwp95（按需计费-95） - bwp95Avg（按需计费-日95） - network-quality（丢包和时延统计） - er（是否支持ER） - domain_bandwidth（租户带宽值） - ipv6（是否支持IPV6） - ipv6_support_regions（IPV6支持的区域列表） - enterprise-cloud-connection.is-support（支持企业版云连接） - enterprise-cloud-connection.support-sites（支持企业版云连接的站点列表） - enterprise-cloud-connection-segment.is-support（支持企业版云连接平面） - enterprise-cloud-connection-dc-attachment.is-support（支持企业版云连接的专线网关连接）
+        :type resource_type: str
         """
         
         
@@ -292,8 +292,10 @@ class CloudConnectionCapabilityInfo:
     def resource_type(self):
         r"""Gets the resource_type of this CloudConnectionCapabilityInfo.
 
+        租户能力类型，分为： - v2（V2的API） - v3（V3的API） - billing_mode_period_reduce（包周期实时降配） - billing_mode_demand（按需计费） - bwp95（按需计费-95） - bwp95Avg（按需计费-日95） - network-quality（丢包和时延统计） - er（是否支持ER） - domain_bandwidth（租户带宽值） - ipv6（是否支持IPV6） - ipv6_support_regions（IPV6支持的区域列表） - enterprise-cloud-connection.is-support（支持企业版云连接） - enterprise-cloud-connection.support-sites（支持企业版云连接的站点列表） - enterprise-cloud-connection-segment.is-support（支持企业版云连接平面） - enterprise-cloud-connection-dc-attachment.is-support（支持企业版云连接的专线网关连接）
+
         :return: The resource_type of this CloudConnectionCapabilityInfo.
-        :rtype: :class:`huaweicloudsdkcc.v3.CloudConnectionCapabilityKeyEnum`
+        :rtype: str
         """
         return self._resource_type
 
@@ -301,8 +303,10 @@ class CloudConnectionCapabilityInfo:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this CloudConnectionCapabilityInfo.
 
+        租户能力类型，分为： - v2（V2的API） - v3（V3的API） - billing_mode_period_reduce（包周期实时降配） - billing_mode_demand（按需计费） - bwp95（按需计费-95） - bwp95Avg（按需计费-日95） - network-quality（丢包和时延统计） - er（是否支持ER） - domain_bandwidth（租户带宽值） - ipv6（是否支持IPV6） - ipv6_support_regions（IPV6支持的区域列表） - enterprise-cloud-connection.is-support（支持企业版云连接） - enterprise-cloud-connection.support-sites（支持企业版云连接的站点列表） - enterprise-cloud-connection-segment.is-support（支持企业版云连接平面） - enterprise-cloud-connection-dc-attachment.is-support（支持企业版云连接的专线网关连接）
+
         :param resource_type: The resource_type of this CloudConnectionCapabilityInfo.
-        :type resource_type: :class:`huaweicloudsdkcc.v3.CloudConnectionCapabilityKeyEnum`
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

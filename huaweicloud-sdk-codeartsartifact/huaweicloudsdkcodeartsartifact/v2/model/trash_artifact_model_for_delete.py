@@ -16,7 +16,7 @@ class TrashArtifactModelForDelete:
 
     openapi_types = {
         'id': 'str',
-        'fomat': 'str',
+        'format': 'str',
         'uri': 'str',
         'status': 'str',
         'include_pattern': 'str'
@@ -24,21 +24,21 @@ class TrashArtifactModelForDelete:
 
     attribute_map = {
         'id': 'id',
-        'fomat': 'fomat',
+        'format': 'format',
         'uri': 'uri',
         'status': 'status',
         'include_pattern': 'include_pattern'
     }
 
-    def __init__(self, id=None, fomat=None, uri=None, status=None, include_pattern=None):
+    def __init__(self, id=None, format=None, uri=None, status=None, include_pattern=None):
         r"""TrashArtifactModelForDelete
 
         The model defined in huaweicloud sdk
 
         :param id: 仓库id
         :type id: str
-        :param fomat: 仓库类型
-        :type fomat: str
+        :param format: 仓库类型
+        :type format: str
         :param uri: URI
         :type uri: str
         :param status: 状态
@@ -50,14 +50,14 @@ class TrashArtifactModelForDelete:
         
 
         self._id = None
-        self._fomat = None
+        self._format = None
         self._uri = None
         self._status = None
         self._include_pattern = None
         self.discriminator = None
 
         self.id = id
-        self.fomat = fomat
+        self.format = format
         self.uri = uri
         self.status = status
         if include_pattern is not None:
@@ -86,26 +86,26 @@ class TrashArtifactModelForDelete:
         self._id = id
 
     @property
-    def fomat(self):
-        r"""Gets the fomat of this TrashArtifactModelForDelete.
+    def format(self):
+        r"""Gets the format of this TrashArtifactModelForDelete.
 
         仓库类型
 
-        :return: The fomat of this TrashArtifactModelForDelete.
+        :return: The format of this TrashArtifactModelForDelete.
         :rtype: str
         """
-        return self._fomat
+        return self._format
 
-    @fomat.setter
-    def fomat(self, fomat):
-        r"""Sets the fomat of this TrashArtifactModelForDelete.
+    @format.setter
+    def format(self, format):
+        r"""Sets the format of this TrashArtifactModelForDelete.
 
         仓库类型
 
-        :param fomat: The fomat of this TrashArtifactModelForDelete.
-        :type fomat: str
+        :param format: The format of this TrashArtifactModelForDelete.
+        :type format: str
         """
-        self._fomat = fomat
+        self._format = format
 
     @property
     def uri(self):

@@ -15,7 +15,7 @@ class ComponentAction:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'ComponentActionType',
+        'action': 'str',
         'parameters': 'ComponentActionParameters'
     }
 
@@ -30,7 +30,7 @@ class ComponentAction:
         The model defined in huaweicloud sdk
 
         :param action: 
-        :type action: :class:`huaweicloudsdkservicestage.v3.ComponentActionType`
+        :type action: str
         :param parameters: 
         :type parameters: :class:`huaweicloudsdkservicestage.v3.ComponentActionParameters`
         """
@@ -50,7 +50,7 @@ class ComponentAction:
         r"""Gets the action of this ComponentAction.
 
         :return: The action of this ComponentAction.
-        :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentActionType`
+        :rtype: str
         """
         return self._action
 
@@ -59,7 +59,7 @@ class ComponentAction:
         r"""Sets the action of this ComponentAction.
 
         :param action: The action of this ComponentAction.
-        :type action: :class:`huaweicloudsdkservicestage.v3.ComponentActionType`
+        :type action: str
         """
         self._action = action
 

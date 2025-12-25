@@ -21,11 +21,11 @@ class SiteNetworkEntry:
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'domain_id': 'str',
-        'state': 'SiteNetworkStateEnum',
+        'state': 'str',
         'enterprise_project_id': 'str',
         'apply_policy_id': 'str',
         'tags': 'list[Tag]',
-        'topology': 'SiteNetworkTopologyEnum',
+        'topology': 'str',
         'connections': 'list[SiteConnection]',
         'sites': 'list[SiteInformation]',
         'hub_site': 'SiteInformation',
@@ -67,16 +67,16 @@ class SiteNetworkEntry:
         :type updated_at: datetime
         :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param state: 
-        :type state: :class:`huaweicloudsdkcc.v3.SiteNetworkStateEnum`
+        :param state: 分支网络状态。 - AVAILABLE (可用) - UPDATING (处理中) - FAILED (失败) - CREATING (创建中 - DELETING (删除中) - DELETED (已删除) - NON-COMPLETE (配置未完成) - RESTORING (恢复中)
+        :type state: str
         :param enterprise_project_id: 实例所属企业项目ID。
         :type enterprise_project_id: str
         :param apply_policy_id: 应用策略ID。
         :type apply_policy_id: str
         :param tags: 实例标签。
         :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
-        :param topology: 
-        :type topology: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`
+        :param topology: 拓扑结构。 - p2p（点对点拓扑） - mesh （网状拓扑） - star （星形拓扑） - hybrid （混合拓扑）
+        :type topology: str
         :param connections: 分支连接列表。
         :type connections: list[:class:`huaweicloudsdkcc.v3.SiteConnection`]
         :param sites: 点对点拓扑或者网状拓扑中的节点。
@@ -264,8 +264,10 @@ class SiteNetworkEntry:
     def state(self):
         r"""Gets the state of this SiteNetworkEntry.
 
+        分支网络状态。 - AVAILABLE (可用) - UPDATING (处理中) - FAILED (失败) - CREATING (创建中 - DELETING (删除中) - DELETED (已删除) - NON-COMPLETE (配置未完成) - RESTORING (恢复中)
+
         :return: The state of this SiteNetworkEntry.
-        :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkStateEnum`
+        :rtype: str
         """
         return self._state
 
@@ -273,8 +275,10 @@ class SiteNetworkEntry:
     def state(self, state):
         r"""Sets the state of this SiteNetworkEntry.
 
+        分支网络状态。 - AVAILABLE (可用) - UPDATING (处理中) - FAILED (失败) - CREATING (创建中 - DELETING (删除中) - DELETED (已删除) - NON-COMPLETE (配置未完成) - RESTORING (恢复中)
+
         :param state: The state of this SiteNetworkEntry.
-        :type state: :class:`huaweicloudsdkcc.v3.SiteNetworkStateEnum`
+        :type state: str
         """
         self._state = state
 
@@ -348,8 +352,10 @@ class SiteNetworkEntry:
     def topology(self):
         r"""Gets the topology of this SiteNetworkEntry.
 
+        拓扑结构。 - p2p（点对点拓扑） - mesh （网状拓扑） - star （星形拓扑） - hybrid （混合拓扑）
+
         :return: The topology of this SiteNetworkEntry.
-        :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`
+        :rtype: str
         """
         return self._topology
 
@@ -357,8 +363,10 @@ class SiteNetworkEntry:
     def topology(self, topology):
         r"""Sets the topology of this SiteNetworkEntry.
 
+        拓扑结构。 - p2p（点对点拓扑） - mesh （网状拓扑） - star （星形拓扑） - hybrid （混合拓扑）
+
         :param topology: The topology of this SiteNetworkEntry.
-        :type topology: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`
+        :type topology: str
         """
         self._topology = topology
 

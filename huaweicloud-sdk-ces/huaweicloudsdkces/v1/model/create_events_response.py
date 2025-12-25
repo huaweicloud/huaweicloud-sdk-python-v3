@@ -16,7 +16,7 @@ class CreateEventsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[CreateEventsResponseBody]'
+        'body': 'list[Event]'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class CreateEventsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 事件响应体
-        :type body: list[:class:`huaweicloudsdkces.v1.CreateEventsResponseBody`]
+        :type body: list[:class:`huaweicloudsdkces.v1.Event`]
         """
         
         super().__init__()
@@ -47,7 +47,7 @@ class CreateEventsResponse(SdkResponse):
         事件响应体
 
         :return: The body of this CreateEventsResponse.
-        :rtype: list[:class:`huaweicloudsdkces.v1.CreateEventsResponseBody`]
+        :rtype: list[:class:`huaweicloudsdkces.v1.Event`]
         """
         return self._body
 
@@ -58,7 +58,7 @@ class CreateEventsResponse(SdkResponse):
         事件响应体
 
         :param body: The body of this CreateEventsResponse.
-        :type body: list[:class:`huaweicloudsdkces.v1.CreateEventsResponseBody`]
+        :type body: list[:class:`huaweicloudsdkces.v1.Event`]
         """
         self._body = body
 

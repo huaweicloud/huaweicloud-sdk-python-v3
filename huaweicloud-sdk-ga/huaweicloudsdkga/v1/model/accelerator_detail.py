@@ -18,7 +18,7 @@ class AcceleratorDetail:
         'id': 'str',
         'name': 'str',
         'description': 'str',
-        'status': 'ConfigStatus',
+        'status': 'str',
         'ip_sets': 'list[AccelerateIp]',
         'created_at': 'datetime',
         'updated_at': 'datetime',
@@ -55,8 +55,8 @@ class AcceleratorDetail:
         :type name: str
         :param description: 全球加速器描述信息，取值范围：0~255个字符之间，禁止输入字符：&lt;&gt;。
         :type description: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :param status: 配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+        :type status: str
         :param ip_sets: 全球加速器IP列表。
         :type ip_sets: list[:class:`huaweicloudsdkga.v1.AccelerateIp`]
         :param created_at: 创建时间。
@@ -186,8 +186,10 @@ class AcceleratorDetail:
     def status(self):
         r"""Gets the status of this AcceleratorDetail.
 
+        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+
         :return: The status of this AcceleratorDetail.
-        :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :rtype: str
         """
         return self._status
 
@@ -195,8 +197,10 @@ class AcceleratorDetail:
     def status(self, status):
         r"""Sets the status of this AcceleratorDetail.
 
+        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+
         :param status: The status of this AcceleratorDetail.
-        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :type status: str
         """
         self._status = status
 

@@ -3691,6 +3691,8 @@ class BssAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'service_type_name' in local_var_params:
+            query_params.append(('service_type_name', local_var_params['service_type_name']))
 
         header_params = {}
         if 'x_language' in local_var_params:

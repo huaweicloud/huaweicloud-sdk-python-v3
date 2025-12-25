@@ -24,7 +24,8 @@ class UpdateNotMavenRepoDO:
         'auto_clean_snapshot': 'bool',
         'snapshot_alive_days': 'str',
         'max_unique_snapshots': 'str',
-        'allow_anonymous': 'bool'
+        'allow_anonymous': 'bool',
+        'project_id': 'str'
     }
 
     attribute_map = {
@@ -37,34 +38,37 @@ class UpdateNotMavenRepoDO:
         'auto_clean_snapshot': 'auto_clean_snapshot',
         'snapshot_alive_days': 'snapshot_alive_days',
         'max_unique_snapshots': 'max_unique_snapshots',
-        'allow_anonymous': 'allow_anonymous'
+        'allow_anonymous': 'allow_anonymous',
+        'project_id': 'project_id'
     }
 
-    def __init__(self, repo_name=None, format=None, description=None, repository_ids=None, includes_pattern=None, deployment_policy=None, auto_clean_snapshot=None, snapshot_alive_days=None, max_unique_snapshots=None, allow_anonymous=None):
+    def __init__(self, repo_name=None, format=None, description=None, repository_ids=None, includes_pattern=None, deployment_policy=None, auto_clean_snapshot=None, snapshot_alive_days=None, max_unique_snapshots=None, allow_anonymous=None, project_id=None):
         r"""UpdateNotMavenRepoDO
 
         The model defined in huaweicloud sdk
 
-        :param repo_name: 仓库名称
+        :param repo_name: **参数解释**: 仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type repo_name: str
-        :param format: 仓库格式
+        :param format: **参数解释**: 制品类型。 **约束限制**: 不涉及。 **取值范围**: docker|npm|go|pypi|rpm|composer|debian|conan|nuget|docker2|cocoapods|ohpm|generic。 **默认取值**: 无。
         :type format: str
-        :param description: 仓库描述
+        :param description: **参数解释**: 仓库描述。 **约束限制**: 最大长度200。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type description: str
-        :param repository_ids: 仓库id列表
+        :param repository_ids: **参数解释**: 仓库id列表。仓库id，格式为{region}_{domainId}_{format}_{sequence}。可以从私有依赖库首页-&gt;仓库概览-&gt;仓库地址 url 中获取，最后两个\&quot;/\&quot;中间的字符串即为仓库id。 **约束限制**: 根据仓库id格式中region, domainId需要为有效值，format有效值为:npm|go|pypi|rpm|composer|maven|debian|conan|nuget|docker2|cocoapods|ohpm, sequence取值根据套餐不同有不同上限值。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type repository_ids: list[str]
-        :param includes_pattern: 路径白名单
+        :param includes_pattern: **参数解释**: 路径包含规则。 **约束限制**: 最大长度512。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type includes_pattern: str
-        :param deployment_policy: 仓库属性-覆盖策略
+        :param deployment_policy: **参数解释**: 覆盖策略。 **约束限制**: 不涉及。 **取值范围**: allowRedeploy：允许覆盖 disableRedeploy：禁止覆盖 readOnly：只读。 **默认取值**: 无。 
         :type deployment_policy: str
-        :param auto_clean_snapshot: 自动清理快照
+        :param auto_clean_snapshot: **参数解释**: 自动清理快照。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type auto_clean_snapshot: bool
-        :param snapshot_alive_days: 快照保存时间长度
+        :param snapshot_alive_days: **参数解释**: 快照保存时间长度。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type snapshot_alive_days: str
-        :param max_unique_snapshots: 最大不同快照个数
+        :param max_unique_snapshots: **参数解释**: 最大不同快照个数。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type max_unique_snapshots: str
-        :param allow_anonymous: 是否允许匿名
+        :param allow_anonymous: **参数解释**: 是否允许匿名。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。 
         :type allow_anonymous: bool
+        :param project_id: **参数解释**: 项目ID，可以从调用API处获取，也可以从控制台获取。获取方式请参考[获取项目ID](CloudArtifact_api_0015.xml)。 **约束限制**: 只能由英文字母、数字组成，且长度为32个字符。 **取值范围**: 不涉及。 **默认取值**: 无。
+        :type project_id: str
         """
         
         
@@ -79,6 +83,7 @@ class UpdateNotMavenRepoDO:
         self._snapshot_alive_days = None
         self._max_unique_snapshots = None
         self._allow_anonymous = None
+        self._project_id = None
         self.discriminator = None
 
         self.repo_name = repo_name
@@ -86,8 +91,7 @@ class UpdateNotMavenRepoDO:
         if description is not None:
             self.description = description
         self.repository_ids = repository_ids
-        if includes_pattern is not None:
-            self.includes_pattern = includes_pattern
+        self.includes_pattern = includes_pattern
         if deployment_policy is not None:
             self.deployment_policy = deployment_policy
         if auto_clean_snapshot is not None:
@@ -98,12 +102,14 @@ class UpdateNotMavenRepoDO:
             self.max_unique_snapshots = max_unique_snapshots
         if allow_anonymous is not None:
             self.allow_anonymous = allow_anonymous
+        if project_id is not None:
+            self.project_id = project_id
 
     @property
     def repo_name(self):
         r"""Gets the repo_name of this UpdateNotMavenRepoDO.
 
-        仓库名称
+        **参数解释**: 仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The repo_name of this UpdateNotMavenRepoDO.
         :rtype: str
@@ -114,7 +120,7 @@ class UpdateNotMavenRepoDO:
     def repo_name(self, repo_name):
         r"""Sets the repo_name of this UpdateNotMavenRepoDO.
 
-        仓库名称
+        **参数解释**: 仓库名称。 **约束限制**: 长度1-20。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param repo_name: The repo_name of this UpdateNotMavenRepoDO.
         :type repo_name: str
@@ -125,7 +131,7 @@ class UpdateNotMavenRepoDO:
     def format(self):
         r"""Gets the format of this UpdateNotMavenRepoDO.
 
-        仓库格式
+        **参数解释**: 制品类型。 **约束限制**: 不涉及。 **取值范围**: docker|npm|go|pypi|rpm|composer|debian|conan|nuget|docker2|cocoapods|ohpm|generic。 **默认取值**: 无。
 
         :return: The format of this UpdateNotMavenRepoDO.
         :rtype: str
@@ -136,7 +142,7 @@ class UpdateNotMavenRepoDO:
     def format(self, format):
         r"""Sets the format of this UpdateNotMavenRepoDO.
 
-        仓库格式
+        **参数解释**: 制品类型。 **约束限制**: 不涉及。 **取值范围**: docker|npm|go|pypi|rpm|composer|debian|conan|nuget|docker2|cocoapods|ohpm|generic。 **默认取值**: 无。
 
         :param format: The format of this UpdateNotMavenRepoDO.
         :type format: str
@@ -147,7 +153,7 @@ class UpdateNotMavenRepoDO:
     def description(self):
         r"""Gets the description of this UpdateNotMavenRepoDO.
 
-        仓库描述
+        **参数解释**: 仓库描述。 **约束限制**: 最大长度200。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The description of this UpdateNotMavenRepoDO.
         :rtype: str
@@ -158,7 +164,7 @@ class UpdateNotMavenRepoDO:
     def description(self, description):
         r"""Sets the description of this UpdateNotMavenRepoDO.
 
-        仓库描述
+        **参数解释**: 仓库描述。 **约束限制**: 最大长度200。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param description: The description of this UpdateNotMavenRepoDO.
         :type description: str
@@ -169,7 +175,7 @@ class UpdateNotMavenRepoDO:
     def repository_ids(self):
         r"""Gets the repository_ids of this UpdateNotMavenRepoDO.
 
-        仓库id列表
+        **参数解释**: 仓库id列表。仓库id，格式为{region}_{domainId}_{format}_{sequence}。可以从私有依赖库首页->仓库概览->仓库地址 url 中获取，最后两个\"/\"中间的字符串即为仓库id。 **约束限制**: 根据仓库id格式中region, domainId需要为有效值，format有效值为:npm|go|pypi|rpm|composer|maven|debian|conan|nuget|docker2|cocoapods|ohpm, sequence取值根据套餐不同有不同上限值。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The repository_ids of this UpdateNotMavenRepoDO.
         :rtype: list[str]
@@ -180,7 +186,7 @@ class UpdateNotMavenRepoDO:
     def repository_ids(self, repository_ids):
         r"""Sets the repository_ids of this UpdateNotMavenRepoDO.
 
-        仓库id列表
+        **参数解释**: 仓库id列表。仓库id，格式为{region}_{domainId}_{format}_{sequence}。可以从私有依赖库首页->仓库概览->仓库地址 url 中获取，最后两个\"/\"中间的字符串即为仓库id。 **约束限制**: 根据仓库id格式中region, domainId需要为有效值，format有效值为:npm|go|pypi|rpm|composer|maven|debian|conan|nuget|docker2|cocoapods|ohpm, sequence取值根据套餐不同有不同上限值。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param repository_ids: The repository_ids of this UpdateNotMavenRepoDO.
         :type repository_ids: list[str]
@@ -191,7 +197,7 @@ class UpdateNotMavenRepoDO:
     def includes_pattern(self):
         r"""Gets the includes_pattern of this UpdateNotMavenRepoDO.
 
-        路径白名单
+        **参数解释**: 路径包含规则。 **约束限制**: 最大长度512。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The includes_pattern of this UpdateNotMavenRepoDO.
         :rtype: str
@@ -202,7 +208,7 @@ class UpdateNotMavenRepoDO:
     def includes_pattern(self, includes_pattern):
         r"""Sets the includes_pattern of this UpdateNotMavenRepoDO.
 
-        路径白名单
+        **参数解释**: 路径包含规则。 **约束限制**: 最大长度512。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param includes_pattern: The includes_pattern of this UpdateNotMavenRepoDO.
         :type includes_pattern: str
@@ -213,7 +219,7 @@ class UpdateNotMavenRepoDO:
     def deployment_policy(self):
         r"""Gets the deployment_policy of this UpdateNotMavenRepoDO.
 
-        仓库属性-覆盖策略
+        **参数解释**: 覆盖策略。 **约束限制**: 不涉及。 **取值范围**: allowRedeploy：允许覆盖 disableRedeploy：禁止覆盖 readOnly：只读。 **默认取值**: 无。 
 
         :return: The deployment_policy of this UpdateNotMavenRepoDO.
         :rtype: str
@@ -224,7 +230,7 @@ class UpdateNotMavenRepoDO:
     def deployment_policy(self, deployment_policy):
         r"""Sets the deployment_policy of this UpdateNotMavenRepoDO.
 
-        仓库属性-覆盖策略
+        **参数解释**: 覆盖策略。 **约束限制**: 不涉及。 **取值范围**: allowRedeploy：允许覆盖 disableRedeploy：禁止覆盖 readOnly：只读。 **默认取值**: 无。 
 
         :param deployment_policy: The deployment_policy of this UpdateNotMavenRepoDO.
         :type deployment_policy: str
@@ -235,7 +241,7 @@ class UpdateNotMavenRepoDO:
     def auto_clean_snapshot(self):
         r"""Gets the auto_clean_snapshot of this UpdateNotMavenRepoDO.
 
-        自动清理快照
+        **参数解释**: 自动清理快照。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The auto_clean_snapshot of this UpdateNotMavenRepoDO.
         :rtype: bool
@@ -246,7 +252,7 @@ class UpdateNotMavenRepoDO:
     def auto_clean_snapshot(self, auto_clean_snapshot):
         r"""Sets the auto_clean_snapshot of this UpdateNotMavenRepoDO.
 
-        自动清理快照
+        **参数解释**: 自动清理快照。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param auto_clean_snapshot: The auto_clean_snapshot of this UpdateNotMavenRepoDO.
         :type auto_clean_snapshot: bool
@@ -257,7 +263,7 @@ class UpdateNotMavenRepoDO:
     def snapshot_alive_days(self):
         r"""Gets the snapshot_alive_days of this UpdateNotMavenRepoDO.
 
-        快照保存时间长度
+        **参数解释**: 快照保存时间长度。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The snapshot_alive_days of this UpdateNotMavenRepoDO.
         :rtype: str
@@ -268,7 +274,7 @@ class UpdateNotMavenRepoDO:
     def snapshot_alive_days(self, snapshot_alive_days):
         r"""Sets the snapshot_alive_days of this UpdateNotMavenRepoDO.
 
-        快照保存时间长度
+        **参数解释**: 快照保存时间长度。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param snapshot_alive_days: The snapshot_alive_days of this UpdateNotMavenRepoDO.
         :type snapshot_alive_days: str
@@ -279,7 +285,7 @@ class UpdateNotMavenRepoDO:
     def max_unique_snapshots(self):
         r"""Gets the max_unique_snapshots of this UpdateNotMavenRepoDO.
 
-        最大不同快照个数
+        **参数解释**: 最大不同快照个数。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The max_unique_snapshots of this UpdateNotMavenRepoDO.
         :rtype: str
@@ -290,7 +296,7 @@ class UpdateNotMavenRepoDO:
     def max_unique_snapshots(self, max_unique_snapshots):
         r"""Sets the max_unique_snapshots of this UpdateNotMavenRepoDO.
 
-        最大不同快照个数
+        **参数解释**: 最大不同快照个数。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param max_unique_snapshots: The max_unique_snapshots of this UpdateNotMavenRepoDO.
         :type max_unique_snapshots: str
@@ -301,7 +307,7 @@ class UpdateNotMavenRepoDO:
     def allow_anonymous(self):
         r"""Gets the allow_anonymous of this UpdateNotMavenRepoDO.
 
-        是否允许匿名
+        **参数解释**: 是否允许匿名。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。 
 
         :return: The allow_anonymous of this UpdateNotMavenRepoDO.
         :rtype: bool
@@ -312,12 +318,34 @@ class UpdateNotMavenRepoDO:
     def allow_anonymous(self, allow_anonymous):
         r"""Sets the allow_anonymous of this UpdateNotMavenRepoDO.
 
-        是否允许匿名
+        **参数解释**: 是否允许匿名。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。 
 
         :param allow_anonymous: The allow_anonymous of this UpdateNotMavenRepoDO.
         :type allow_anonymous: bool
         """
         self._allow_anonymous = allow_anonymous
+
+    @property
+    def project_id(self):
+        r"""Gets the project_id of this UpdateNotMavenRepoDO.
+
+        **参数解释**: 项目ID，可以从调用API处获取，也可以从控制台获取。获取方式请参考[获取项目ID](CloudArtifact_api_0015.xml)。 **约束限制**: 只能由英文字母、数字组成，且长度为32个字符。 **取值范围**: 不涉及。 **默认取值**: 无。
+
+        :return: The project_id of this UpdateNotMavenRepoDO.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        r"""Sets the project_id of this UpdateNotMavenRepoDO.
+
+        **参数解释**: 项目ID，可以从调用API处获取，也可以从控制台获取。获取方式请参考[获取项目ID](CloudArtifact_api_0015.xml)。 **约束限制**: 只能由英文字母、数字组成，且长度为32个字符。 **取值范围**: 不涉及。 **默认取值**: 无。
+
+        :param project_id: The project_id of this UpdateNotMavenRepoDO.
+        :type project_id: str
+        """
+        self._project_id = project_id
 
     def to_dict(self):
         result = {}

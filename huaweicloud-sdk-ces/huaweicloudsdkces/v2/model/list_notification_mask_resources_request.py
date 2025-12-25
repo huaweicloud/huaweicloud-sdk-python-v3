@@ -33,9 +33,9 @@ class ListNotificationMaskResourcesRequest:
 
         :param notification_mask_id: **参数解释**： 屏蔽规则ID。    **约束限制**： 不涉及。 **取值范围**： 只能包含字母、数字，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_mask_id: str
-        :param offset: 分页偏移量
+        :param offset: **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
         :type offset: int
-        :param limit: 分页大小
+        :param limit: **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
         :type limit: int
         """
         
@@ -78,7 +78,7 @@ class ListNotificationMaskResourcesRequest:
     def offset(self):
         r"""Gets the offset of this ListNotificationMaskResourcesRequest.
 
-        分页偏移量
+        **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
 
         :return: The offset of this ListNotificationMaskResourcesRequest.
         :rtype: int
@@ -89,7 +89,7 @@ class ListNotificationMaskResourcesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListNotificationMaskResourcesRequest.
 
-        分页偏移量
+        **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
 
         :param offset: The offset of this ListNotificationMaskResourcesRequest.
         :type offset: int
@@ -100,7 +100,7 @@ class ListNotificationMaskResourcesRequest:
     def limit(self):
         r"""Gets the limit of this ListNotificationMaskResourcesRequest.
 
-        分页大小
+        **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
 
         :return: The limit of this ListNotificationMaskResourcesRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class ListNotificationMaskResourcesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListNotificationMaskResourcesRequest.
 
-        分页大小
+        **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
 
         :param limit: The limit of this ListNotificationMaskResourcesRequest.
         :type limit: int

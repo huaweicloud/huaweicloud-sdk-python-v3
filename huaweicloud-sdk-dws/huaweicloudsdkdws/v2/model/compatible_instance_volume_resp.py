@@ -31,7 +31,7 @@ class CompatibleInstanceVolumeResp:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 类型。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 磁盘类型。 **取值范围**： - SATA：普通IO - SAS：高IO - SSD：超高IO - ESSD：极速型SSD - GPSSD：通用型SSD
         :type type: str
         :param used: **参数解释**： 已使用空间。 **取值范围**： 不涉及。
         :type used: float
@@ -57,7 +57,7 @@ class CompatibleInstanceVolumeResp:
     def type(self):
         r"""Gets the type of this CompatibleInstanceVolumeResp.
 
-        **参数解释**： 类型。 **取值范围**： 不涉及。
+        **参数解释**： 磁盘类型。 **取值范围**： - SATA：普通IO - SAS：高IO - SSD：超高IO - ESSD：极速型SSD - GPSSD：通用型SSD
 
         :return: The type of this CompatibleInstanceVolumeResp.
         :rtype: str
@@ -68,7 +68,7 @@ class CompatibleInstanceVolumeResp:
     def type(self, type):
         r"""Sets the type of this CompatibleInstanceVolumeResp.
 
-        **参数解释**： 类型。 **取值范围**： 不涉及。
+        **参数解释**： 磁盘类型。 **取值范围**： - SATA：普通IO - SAS：高IO - SSD：超高IO - ESSD：极速型SSD - GPSSD：通用型SSD
 
         :param type: The type of this CompatibleInstanceVolumeResp.
         :type type: str

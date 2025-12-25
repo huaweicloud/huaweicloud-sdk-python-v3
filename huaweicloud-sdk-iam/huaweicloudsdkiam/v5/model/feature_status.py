@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class FeatureStatus:
-    """
-    allowed enum values
-    """
-    ON = "on"
-    OFF = "off"
-    PENDING = "pending"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

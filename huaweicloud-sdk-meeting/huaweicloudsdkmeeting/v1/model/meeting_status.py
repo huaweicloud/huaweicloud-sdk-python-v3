@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class MeetingStatus:
-    """
-    allowed enum values
-    """
-    SCHEDULE = "schedule"
-    CREATED = "created"
-    DESTROYED = "destroyed"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

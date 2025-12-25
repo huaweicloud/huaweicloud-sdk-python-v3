@@ -35,15 +35,15 @@ class ListAlarmTemplatesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_template_id: 自定义告警模版的ID，如：at1603330892378wkDm77y6B。
+        :param alarm_template_id: **参数解释**： 自定义告警模版的ID，如：at1603330892378wkDm77y6B **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64 **默认取值**： 不涉及 
         :type alarm_template_id: str
-        :param namespace: 自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。
+        :param namespace: **参数解释**： 自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及 
         :type namespace: str
-        :param dname: 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
+        :param dname: **参数解释**： 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 包含0-9/a-z/A-Z/_。字符串的长度必须在 1 到 131个字符之间。 **默认取值**： 不涉及 
         :type dname: str
-        :param start: 分页起始位置，值为告警模版的ID，如：at1603330892378wkDm77y6B。
+        :param start: **参数解释**： 分页起始位置，值为告警模版的ID，如：at1603330892378wkDm77y6B。 **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64 **默认取值**： 不涉及 
         :type start: str
-        :param limit: 单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        :param limit: **参数解释**： 单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。 **约束限制**： 不涉及 **取值范围**： 整数，最小值为1，最大值为100。 **默认取值**： 不涉及 
         :type limit: str
         """
         
@@ -71,7 +71,7 @@ class ListAlarmTemplatesRequest:
     def alarm_template_id(self):
         r"""Gets the alarm_template_id of this ListAlarmTemplatesRequest.
 
-        自定义告警模版的ID，如：at1603330892378wkDm77y6B。
+        **参数解释**： 自定义告警模版的ID，如：at1603330892378wkDm77y6B **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64 **默认取值**： 不涉及 
 
         :return: The alarm_template_id of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ListAlarmTemplatesRequest:
     def alarm_template_id(self, alarm_template_id):
         r"""Sets the alarm_template_id of this ListAlarmTemplatesRequest.
 
-        自定义告警模版的ID，如：at1603330892378wkDm77y6B。
+        **参数解释**： 自定义告警模版的ID，如：at1603330892378wkDm77y6B **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64 **默认取值**： 不涉及 
 
         :param alarm_template_id: The alarm_template_id of this ListAlarmTemplatesRequest.
         :type alarm_template_id: str
@@ -93,7 +93,7 @@ class ListAlarmTemplatesRequest:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmTemplatesRequest.
 
-        自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。
+        **参数解释**： 自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及 
 
         :return: The namespace of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListAlarmTemplatesRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmTemplatesRequest.
 
-        自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。
+        **参数解释**： 自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及 
 
         :param namespace: The namespace of this ListAlarmTemplatesRequest.
         :type namespace: str
@@ -115,7 +115,7 @@ class ListAlarmTemplatesRequest:
     def dname(self):
         r"""Gets the dname of this ListAlarmTemplatesRequest.
 
-        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
+        **参数解释**： 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 包含0-9/a-z/A-Z/_。字符串的长度必须在 1 到 131个字符之间。 **默认取值**： 不涉及 
 
         :return: The dname of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListAlarmTemplatesRequest:
     def dname(self, dname):
         r"""Sets the dname of this ListAlarmTemplatesRequest.
 
-        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
+        **参数解释**： 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 包含0-9/a-z/A-Z/_。字符串的长度必须在 1 到 131个字符之间。 **默认取值**： 不涉及 
 
         :param dname: The dname of this ListAlarmTemplatesRequest.
         :type dname: str
@@ -137,7 +137,7 @@ class ListAlarmTemplatesRequest:
     def start(self):
         r"""Gets the start of this ListAlarmTemplatesRequest.
 
-        分页起始位置，值为告警模版的ID，如：at1603330892378wkDm77y6B。
+        **参数解释**： 分页起始位置，值为告警模版的ID，如：at1603330892378wkDm77y6B。 **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64 **默认取值**： 不涉及 
 
         :return: The start of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class ListAlarmTemplatesRequest:
     def start(self, start):
         r"""Sets the start of this ListAlarmTemplatesRequest.
 
-        分页起始位置，值为告警模版的ID，如：at1603330892378wkDm77y6B。
+        **参数解释**： 分页起始位置，值为告警模版的ID，如：at1603330892378wkDm77y6B。 **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64 **默认取值**： 不涉及 
 
         :param start: The start of this ListAlarmTemplatesRequest.
         :type start: str
@@ -159,7 +159,7 @@ class ListAlarmTemplatesRequest:
     def limit(self):
         r"""Gets the limit of this ListAlarmTemplatesRequest.
 
-        单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        **参数解释**： 单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。 **约束限制**： 不涉及 **取值范围**： 整数，最小值为1，最大值为100。 **默认取值**： 不涉及 
 
         :return: The limit of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListAlarmTemplatesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAlarmTemplatesRequest.
 
-        单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        **参数解释**： 单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。 **约束限制**： 不涉及 **取值范围**： 整数，最小值为1，最大值为100。 **默认取值**： 不涉及 
 
         :param limit: The limit of this ListAlarmTemplatesRequest.
         :type limit: str

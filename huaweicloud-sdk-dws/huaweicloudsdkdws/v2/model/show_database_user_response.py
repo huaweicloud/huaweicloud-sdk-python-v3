@@ -86,7 +86,7 @@ class ShowDatabaseUserResponse(SdkResponse):
         :type lock: bool
         :param desc: **参数解释**： 描述。 **取值范围**： 不涉及。
         :type desc: str
-        :param user_type: **参数解释**： 用户类型。 **取值范围**： 不涉及。
+        :param user_type: **参数解释**： 用户类型。 **取值范围**： - COMMON：公共。
         :type user_type: str
         :param logical_cluster: **参数解释**： description: 所属逻辑集群。 **取值范围**： 不涉及。
         :type logical_cluster: str
@@ -457,7 +457,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def user_type(self):
         r"""Gets the user_type of this ShowDatabaseUserResponse.
 
-        **参数解释**： 用户类型。 **取值范围**： 不涉及。
+        **参数解释**： 用户类型。 **取值范围**： - COMMON：公共。
 
         :return: The user_type of this ShowDatabaseUserResponse.
         :rtype: str
@@ -468,7 +468,7 @@ class ShowDatabaseUserResponse(SdkResponse):
     def user_type(self, user_type):
         r"""Sets the user_type of this ShowDatabaseUserResponse.
 
-        **参数解释**： 用户类型。 **取值范围**： 不涉及。
+        **参数解释**： 用户类型。 **取值范围**： - COMMON：公共。
 
         :param user_type: The user_type of this ShowDatabaseUserResponse.
         :type user_type: str

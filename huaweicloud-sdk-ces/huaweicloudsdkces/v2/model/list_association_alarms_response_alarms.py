@@ -31,11 +31,11 @@ class ListAssociationAlarmsResponseAlarms:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_id: 告警规则ID
+        :param alarm_id: **参数解释**： 告警模板的ID。  **取值范围**：    以al开头，后跟22位由字母或数字组成的字符串。长度为24个字符。 
         :type alarm_id: str
-        :param name: 告警规则名称
+        :param name: **参数解释**： 告警规则名称。     **取值范围**： 只能为字母、数字、汉字、-或_，长度为[1,128]个字符 
         :type name: str
-        :param description: 告警规则描述
+        :param description: **参数解释**： 告警规则描述。     **取值范围**： 长度为[0,256]个字符。 
         :type description: str
         """
         
@@ -54,7 +54,7 @@ class ListAssociationAlarmsResponseAlarms:
     def alarm_id(self):
         r"""Gets the alarm_id of this ListAssociationAlarmsResponseAlarms.
 
-        告警规则ID
+        **参数解释**： 告警模板的ID。  **取值范围**：    以al开头，后跟22位由字母或数字组成的字符串。长度为24个字符。 
 
         :return: The alarm_id of this ListAssociationAlarmsResponseAlarms.
         :rtype: str
@@ -65,7 +65,7 @@ class ListAssociationAlarmsResponseAlarms:
     def alarm_id(self, alarm_id):
         r"""Sets the alarm_id of this ListAssociationAlarmsResponseAlarms.
 
-        告警规则ID
+        **参数解释**： 告警模板的ID。  **取值范围**：    以al开头，后跟22位由字母或数字组成的字符串。长度为24个字符。 
 
         :param alarm_id: The alarm_id of this ListAssociationAlarmsResponseAlarms.
         :type alarm_id: str
@@ -76,7 +76,7 @@ class ListAssociationAlarmsResponseAlarms:
     def name(self):
         r"""Gets the name of this ListAssociationAlarmsResponseAlarms.
 
-        告警规则名称
+        **参数解释**： 告警规则名称。     **取值范围**： 只能为字母、数字、汉字、-或_，长度为[1,128]个字符 
 
         :return: The name of this ListAssociationAlarmsResponseAlarms.
         :rtype: str
@@ -87,7 +87,7 @@ class ListAssociationAlarmsResponseAlarms:
     def name(self, name):
         r"""Sets the name of this ListAssociationAlarmsResponseAlarms.
 
-        告警规则名称
+        **参数解释**： 告警规则名称。     **取值范围**： 只能为字母、数字、汉字、-或_，长度为[1,128]个字符 
 
         :param name: The name of this ListAssociationAlarmsResponseAlarms.
         :type name: str
@@ -98,7 +98,7 @@ class ListAssociationAlarmsResponseAlarms:
     def description(self):
         r"""Gets the description of this ListAssociationAlarmsResponseAlarms.
 
-        告警规则描述
+        **参数解释**： 告警规则描述。     **取值范围**： 长度为[0,256]个字符。 
 
         :return: The description of this ListAssociationAlarmsResponseAlarms.
         :rtype: str
@@ -109,7 +109,7 @@ class ListAssociationAlarmsResponseAlarms:
     def description(self, description):
         r"""Sets the description of this ListAssociationAlarmsResponseAlarms.
 
-        告警规则描述
+        **参数解释**： 告警规则描述。     **取值范围**： 长度为[0,256]个字符。 
 
         :param description: The description of this ListAssociationAlarmsResponseAlarms.
         :type description: str

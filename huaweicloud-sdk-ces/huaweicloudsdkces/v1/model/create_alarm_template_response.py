@@ -28,7 +28,7 @@ class CreateAlarmTemplateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 自定义告警模板创建成功返回的ID，如：at1603252280799wLRyGLxnz。
+        :param template_id: **参数解释** 自定义告警模板创建成功返回的ID **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64，如：at1603252280799wLRyGLxnz。 **默认取值**： 不涉及 
         :type template_id: str
         """
         
@@ -44,7 +44,7 @@ class CreateAlarmTemplateResponse(SdkResponse):
     def template_id(self):
         r"""Gets the template_id of this CreateAlarmTemplateResponse.
 
-        自定义告警模板创建成功返回的ID，如：at1603252280799wLRyGLxnz。
+        **参数解释** 自定义告警模板创建成功返回的ID **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64，如：at1603252280799wLRyGLxnz。 **默认取值**： 不涉及 
 
         :return: The template_id of this CreateAlarmTemplateResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateAlarmTemplateResponse(SdkResponse):
     def template_id(self, template_id):
         r"""Sets the template_id of this CreateAlarmTemplateResponse.
 
-        自定义告警模板创建成功返回的ID，如：at1603252280799wLRyGLxnz。
+        **参数解释** 自定义告警模板创建成功返回的ID **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64，如：at1603252280799wLRyGLxnz。 **默认取值**： 不涉及 
 
         :param template_id: The template_id of this CreateAlarmTemplateResponse.
         :type template_id: str

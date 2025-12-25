@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ClientAffinity:
-    """
-    allowed enum values
-    """
-    SOURCE_IP = "SOURCE_IP"
-    NONE = "NONE"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

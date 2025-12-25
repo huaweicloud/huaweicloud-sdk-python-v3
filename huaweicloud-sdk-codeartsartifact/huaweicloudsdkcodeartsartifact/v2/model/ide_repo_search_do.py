@@ -20,7 +20,7 @@ class IDERepoSearchDO:
         'page_no': 'int',
         'page_size': 'int',
         'project_id': 'str',
-        'in_project': 'str'
+        'in_project': 'bool'
     }
 
     attribute_map = {
@@ -48,7 +48,7 @@ class IDERepoSearchDO:
         :param project_id: 项目id
         :type project_id: str
         :param in_project: 是否在项目中
-        :type in_project: str
+        :type in_project: bool
         """
         
         
@@ -190,7 +190,7 @@ class IDERepoSearchDO:
         是否在项目中
 
         :return: The in_project of this IDERepoSearchDO.
-        :rtype: str
+        :rtype: bool
         """
         return self._in_project
 
@@ -201,7 +201,7 @@ class IDERepoSearchDO:
         是否在项目中
 
         :param in_project: The in_project of this IDERepoSearchDO.
-        :type in_project: str
+        :type in_project: bool
         """
         self._in_project = in_project
 

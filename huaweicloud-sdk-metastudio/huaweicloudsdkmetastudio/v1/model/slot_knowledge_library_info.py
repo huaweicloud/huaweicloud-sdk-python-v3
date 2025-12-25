@@ -15,7 +15,7 @@ class SlotKnowledgeLibraryInfo:
     sensitive_list = []
 
     openapi_types = {
-        'language': 'LanguageEnum',
+        'language': 'str',
         'knowledge_library_id': 'str'
     }
 
@@ -29,8 +29,8 @@ class SlotKnowledgeLibraryInfo:
 
         The model defined in huaweicloud sdk
 
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param knowledge_library_id: 知识库ID。
         :type knowledge_library_id: str
         """
@@ -48,8 +48,10 @@ class SlotKnowledgeLibraryInfo:
     def language(self):
         r"""Gets the language of this SlotKnowledgeLibraryInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this SlotKnowledgeLibraryInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -57,8 +59,10 @@ class SlotKnowledgeLibraryInfo:
     def language(self, language):
         r"""Sets the language of this SlotKnowledgeLibraryInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this SlotKnowledgeLibraryInfo.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

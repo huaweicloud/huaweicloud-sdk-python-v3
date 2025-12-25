@@ -16,35 +16,42 @@ class ShowConfigurationAppliedHistoryResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'histories': 'list[ApplyHistoryInfo]'
+        'histories': 'list[ApplyHistoryInfo]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'histories': 'histories'
+        'histories': 'histories',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, histories=None):
+    def __init__(self, histories=None, total_count=None):
         r"""ShowConfigurationAppliedHistoryResponse
 
         The model defined in huaweicloud sdk
 
-        :param histories: 参数模板应用历史列表
+        :param histories: 参数模板应用历史列表。
         :type histories: list[:class:`huaweicloudsdkdds.v3.ApplyHistoryInfo`]
+        :param total_count: 总记录数。
+        :type total_count: int
         """
         
         super().__init__()
 
         self._histories = None
+        self._total_count = None
         self.discriminator = None
 
         if histories is not None:
             self.histories = histories
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
     def histories(self):
         r"""Gets the histories of this ShowConfigurationAppliedHistoryResponse.
 
-        参数模板应用历史列表
+        参数模板应用历史列表。
 
         :return: The histories of this ShowConfigurationAppliedHistoryResponse.
         :rtype: list[:class:`huaweicloudsdkdds.v3.ApplyHistoryInfo`]
@@ -55,12 +62,34 @@ class ShowConfigurationAppliedHistoryResponse(SdkResponse):
     def histories(self, histories):
         r"""Sets the histories of this ShowConfigurationAppliedHistoryResponse.
 
-        参数模板应用历史列表
+        参数模板应用历史列表。
 
         :param histories: The histories of this ShowConfigurationAppliedHistoryResponse.
         :type histories: list[:class:`huaweicloudsdkdds.v3.ApplyHistoryInfo`]
         """
         self._histories = histories
+
+    @property
+    def total_count(self):
+        r"""Gets the total_count of this ShowConfigurationAppliedHistoryResponse.
+
+        总记录数。
+
+        :return: The total_count of this ShowConfigurationAppliedHistoryResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ShowConfigurationAppliedHistoryResponse.
+
+        总记录数。
+
+        :param total_count: The total_count of this ShowConfigurationAppliedHistoryResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         import warnings

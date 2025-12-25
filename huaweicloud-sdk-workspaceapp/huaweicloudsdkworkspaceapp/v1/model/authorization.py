@@ -22,9 +22,9 @@ class Authorization:
         'app_name': 'str',
         'app_group_id': 'str',
         'app_group_name': 'str',
-        'authorization_type': 'AuthorizationTypeEnum',
-        'account_type': 'AccountTypeEnum',
-        'platform_type': 'PlatformTypeEnum',
+        'authorization_type': 'str',
+        'account_type': 'str',
+        'platform_type': 'str',
         'domain': 'str',
         'create_at': 'datetime'
     }
@@ -63,12 +63,12 @@ class Authorization:
         :type app_group_id: str
         :param app_group_name: 应用组名称。
         :type app_group_name: str
-        :param authorization_type: 
-        :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
-        :param account_type: 
-        :type account_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
-        :param platform_type: 
-        :type platform_type: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
+        :param authorization_type: 授权类型，基于应用(组)授权，默认为APP_GROUP授权。 * &#x60;APP&#x60; - 按照应用授权（***尚未支持***）。 * &#x60;APP_GROUP&#x60; - 按照应用组授权。
+        :type authorization_type: str
+        :param account_type: 用户类型： * &#x60;USER&#x60; - 用户 * &#x60;USER_GROUP&#x60; - 用户组
+        :type account_type: str
+        :param platform_type: 平台类型： * &#x60;AD&#x60; - AD域 * &#x60;LOCAL&#x60; - LiteAs * &#x60;SYSTEM&#x60; - 系统内置
+        :type platform_type: str
         :param domain: 域名城。
         :type domain: str
         :param create_at: 发布时间。
@@ -274,8 +274,10 @@ class Authorization:
     def authorization_type(self):
         r"""Gets the authorization_type of this Authorization.
 
+        授权类型，基于应用(组)授权，默认为APP_GROUP授权。 * `APP` - 按照应用授权（***尚未支持***）。 * `APP_GROUP` - 按照应用组授权。
+
         :return: The authorization_type of this Authorization.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
+        :rtype: str
         """
         return self._authorization_type
 
@@ -283,8 +285,10 @@ class Authorization:
     def authorization_type(self, authorization_type):
         r"""Sets the authorization_type of this Authorization.
 
+        授权类型，基于应用(组)授权，默认为APP_GROUP授权。 * `APP` - 按照应用授权（***尚未支持***）。 * `APP_GROUP` - 按照应用组授权。
+
         :param authorization_type: The authorization_type of this Authorization.
-        :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
+        :type authorization_type: str
         """
         self._authorization_type = authorization_type
 
@@ -292,8 +296,10 @@ class Authorization:
     def account_type(self):
         r"""Gets the account_type of this Authorization.
 
+        用户类型： * `USER` - 用户 * `USER_GROUP` - 用户组
+
         :return: The account_type of this Authorization.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
+        :rtype: str
         """
         return self._account_type
 
@@ -301,8 +307,10 @@ class Authorization:
     def account_type(self, account_type):
         r"""Sets the account_type of this Authorization.
 
+        用户类型： * `USER` - 用户 * `USER_GROUP` - 用户组
+
         :param account_type: The account_type of this Authorization.
-        :type account_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
+        :type account_type: str
         """
         self._account_type = account_type
 
@@ -310,8 +318,10 @@ class Authorization:
     def platform_type(self):
         r"""Gets the platform_type of this Authorization.
 
+        平台类型： * `AD` - AD域 * `LOCAL` - LiteAs * `SYSTEM` - 系统内置
+
         :return: The platform_type of this Authorization.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
+        :rtype: str
         """
         return self._platform_type
 
@@ -319,8 +329,10 @@ class Authorization:
     def platform_type(self, platform_type):
         r"""Sets the platform_type of this Authorization.
 
+        平台类型： * `AD` - AD域 * `LOCAL` - LiteAs * `SYSTEM` - 系统内置
+
         :param platform_type: The platform_type of this Authorization.
-        :type platform_type: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
+        :type platform_type: str
         """
         self._platform_type = platform_type
 

@@ -20,9 +20,9 @@ class BaseAppGroup:
         'app_server_group_id': 'str',
         'app_server_group_name': 'str',
         'description': 'str',
-        'authorization_type': 'AuthorizationTypeEnum',
+        'authorization_type': 'str',
         'tenant_id': 'str',
-        'app_type': 'AppTypeEnum',
+        'app_type': 'str',
         'create_at': 'datetime'
     }
 
@@ -53,12 +53,12 @@ class BaseAppGroup:
         :type app_server_group_name: str
         :param description: 应用组描述。
         :type description: str
-        :param authorization_type: 
-        :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
+        :param authorization_type: 授权类型，基于应用(组)授权，默认为APP_GROUP授权。 * &#x60;APP&#x60; - 按照应用授权（***尚未支持***）。 * &#x60;APP_GROUP&#x60; - 按照应用组授权。
+        :type authorization_type: str
         :param tenant_id: 租户ID。
         :type tenant_id: str
-        :param app_type: 
-        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        :param app_type: 服务器组应用类型： * &#x60;SESSION_DESKTOP_APP&#x60; - 会话桌面app * &#x60;COMMON_APP&#x60; - 普通app
+        :type app_type: str
         :param create_at: 发布时间。
         :type create_at: datetime
         """
@@ -209,8 +209,10 @@ class BaseAppGroup:
     def authorization_type(self):
         r"""Gets the authorization_type of this BaseAppGroup.
 
+        授权类型，基于应用(组)授权，默认为APP_GROUP授权。 * `APP` - 按照应用授权（***尚未支持***）。 * `APP_GROUP` - 按照应用组授权。
+
         :return: The authorization_type of this BaseAppGroup.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
+        :rtype: str
         """
         return self._authorization_type
 
@@ -218,8 +220,10 @@ class BaseAppGroup:
     def authorization_type(self, authorization_type):
         r"""Sets the authorization_type of this BaseAppGroup.
 
+        授权类型，基于应用(组)授权，默认为APP_GROUP授权。 * `APP` - 按照应用授权（***尚未支持***）。 * `APP_GROUP` - 按照应用组授权。
+
         :param authorization_type: The authorization_type of this BaseAppGroup.
-        :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
+        :type authorization_type: str
         """
         self._authorization_type = authorization_type
 
@@ -249,8 +253,10 @@ class BaseAppGroup:
     def app_type(self):
         r"""Gets the app_type of this BaseAppGroup.
 
+        服务器组应用类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
+
         :return: The app_type of this BaseAppGroup.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        :rtype: str
         """
         return self._app_type
 
@@ -258,8 +264,10 @@ class BaseAppGroup:
     def app_type(self, app_type):
         r"""Sets the app_type of this BaseAppGroup.
 
+        服务器组应用类型： * `SESSION_DESKTOP_APP` - 会话桌面app * `COMMON_APP` - 普通app
+
         :param app_type: The app_type of this BaseAppGroup.
-        :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
+        :type app_type: str
         """
         self._app_type = app_type
 

@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Health:
-    """
-    allowed enum values
-    """
-    OK = "OK"
-    WARNING = "Warning"
-    CRITICAL = "Critical"
-    UNKNOWN = "Unknown"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

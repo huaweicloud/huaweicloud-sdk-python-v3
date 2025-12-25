@@ -15,8 +15,8 @@ class Status:
     sensitive_list = []
 
     openapi_types = {
-        'state': 'State',
-        'health': 'Health'
+        'state': 'str',
+        'health': 'str'
     }
 
     attribute_map = {
@@ -29,10 +29,10 @@ class Status:
 
         The model defined in huaweicloud sdk
 
-        :param state: 
-        :type state: :class:`huaweicloudsdkclouddc.v1.State`
-        :param health: 
-        :type health: :class:`huaweicloudsdkclouddc.v1.Health`
+        :param state: 硬件启用状态： Enabled：启用 Unenabled：未启用 Unknown：未知
+        :type state: str
+        :param health: 硬件健康状态： OK：健康 Warning：警告 Critical：严重 Unknown：未知
+        :type health: str
         """
         
         
@@ -50,8 +50,10 @@ class Status:
     def state(self):
         r"""Gets the state of this Status.
 
+        硬件启用状态： Enabled：启用 Unenabled：未启用 Unknown：未知
+
         :return: The state of this Status.
-        :rtype: :class:`huaweicloudsdkclouddc.v1.State`
+        :rtype: str
         """
         return self._state
 
@@ -59,8 +61,10 @@ class Status:
     def state(self, state):
         r"""Sets the state of this Status.
 
+        硬件启用状态： Enabled：启用 Unenabled：未启用 Unknown：未知
+
         :param state: The state of this Status.
-        :type state: :class:`huaweicloudsdkclouddc.v1.State`
+        :type state: str
         """
         self._state = state
 
@@ -68,8 +72,10 @@ class Status:
     def health(self):
         r"""Gets the health of this Status.
 
+        硬件健康状态： OK：健康 Warning：警告 Critical：严重 Unknown：未知
+
         :return: The health of this Status.
-        :rtype: :class:`huaweicloudsdkclouddc.v1.Health`
+        :rtype: str
         """
         return self._health
 
@@ -77,8 +83,10 @@ class Status:
     def health(self, health):
         r"""Sets the health of this Status.
 
+        硬件健康状态： OK：健康 Warning：警告 Critical：严重 Unknown：未知
+
         :param health: The health of this Status.
-        :type health: :class:`huaweicloudsdkclouddc.v1.Health`
+        :type health: str
         """
         self._health = health
 

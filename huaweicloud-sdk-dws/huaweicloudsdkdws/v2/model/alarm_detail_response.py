@@ -63,7 +63,7 @@ class AlarmDetailResponse:
         :type resource_id_name: str
         :param alarm_generate_date: **参数解释**： 告警日期。 **取值范围**： 不涉及。
         :type alarm_generate_date: str
-        :param alarm_status: **参数解释**： 告警状态。 **取值范围**： 不涉及。
+        :param alarm_status: **参数解释**： 告警状态。 **取值范围**： - 0：未恢复。 - 1：已恢复。
         :type alarm_status: str
         """
         
@@ -304,7 +304,7 @@ class AlarmDetailResponse:
     def alarm_status(self):
         r"""Gets the alarm_status of this AlarmDetailResponse.
 
-        **参数解释**： 告警状态。 **取值范围**： 不涉及。
+        **参数解释**： 告警状态。 **取值范围**： - 0：未恢复。 - 1：已恢复。
 
         :return: The alarm_status of this AlarmDetailResponse.
         :rtype: str
@@ -315,7 +315,7 @@ class AlarmDetailResponse:
     def alarm_status(self, alarm_status):
         r"""Sets the alarm_status of this AlarmDetailResponse.
 
-        **参数解释**： 告警状态。 **取值范围**： 不涉及。
+        **参数解释**： 告警状态。 **取值范围**： - 0：未恢复。 - 1：已恢复。
 
         :param alarm_status: The alarm_status of this AlarmDetailResponse.
         :type alarm_status: str

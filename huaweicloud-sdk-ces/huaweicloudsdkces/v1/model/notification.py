@@ -29,9 +29,9 @@ class Notification:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 告警通知类型。 **约束限制**： 不涉及。 **取值范围**： 取值如下： notification：SMN通知； autoscaling：AS通知。 **默认取值**： 不涉及。 
+        :param type: **参数解释**： 告警通知类型。 **约束限制**： 不涉及。 **取值范围**： 取值如下： notification、autoscaling - notification：通知组或主题订阅 - autoscaling：AS通知，只在AS中使用 **默认取值**： 不涉及。 
         :type type: str
-        :param notification_list: **参数解释**： 告警状态发生变化时，被通知对象的列表。 **约束限制**： 通知对象ID最多可以配置20个。 topicUrn可从SMN获取，具体操作请参考查询Topic列表。当type为notification时，notificationList列表不能为空；当type为autoscaling时，列表必须为[]。 说明：若alarm_action_enabled为true，对应的alarm_actions、insufficientdata_actions（该参数已废弃，建议无需配置）、ok_actions至少有一个不能为空。若alarm_actions、insufficientdata_actions（该参数已废弃，建议无需配置）、ok_actions同时存在时，notificationList值保持一致。 
+        :param notification_list: **参数解释**： 告警状态发生变化时，被通知对象的列表。 **约束限制**： 通知对象ID最多可以配置20个。 topicUrn可从SMN获取，具体操作请参考“查询Topic列表”。 说明：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。 
         :type notification_list: list[str]
         """
         
@@ -48,7 +48,7 @@ class Notification:
     def type(self):
         r"""Gets the type of this Notification.
 
-        **参数解释**： 告警通知类型。 **约束限制**： 不涉及。 **取值范围**： 取值如下： notification：SMN通知； autoscaling：AS通知。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知类型。 **约束限制**： 不涉及。 **取值范围**： 取值如下： notification、autoscaling - notification：通知组或主题订阅 - autoscaling：AS通知，只在AS中使用 **默认取值**： 不涉及。 
 
         :return: The type of this Notification.
         :rtype: str
@@ -59,7 +59,7 @@ class Notification:
     def type(self, type):
         r"""Sets the type of this Notification.
 
-        **参数解释**： 告警通知类型。 **约束限制**： 不涉及。 **取值范围**： 取值如下： notification：SMN通知； autoscaling：AS通知。 **默认取值**： 不涉及。 
+        **参数解释**： 告警通知类型。 **约束限制**： 不涉及。 **取值范围**： 取值如下： notification、autoscaling - notification：通知组或主题订阅 - autoscaling：AS通知，只在AS中使用 **默认取值**： 不涉及。 
 
         :param type: The type of this Notification.
         :type type: str
@@ -70,7 +70,7 @@ class Notification:
     def notification_list(self):
         r"""Gets the notification_list of this Notification.
 
-        **参数解释**： 告警状态发生变化时，被通知对象的列表。 **约束限制**： 通知对象ID最多可以配置20个。 topicUrn可从SMN获取，具体操作请参考查询Topic列表。当type为notification时，notificationList列表不能为空；当type为autoscaling时，列表必须为[]。 说明：若alarm_action_enabled为true，对应的alarm_actions、insufficientdata_actions（该参数已废弃，建议无需配置）、ok_actions至少有一个不能为空。若alarm_actions、insufficientdata_actions（该参数已废弃，建议无需配置）、ok_actions同时存在时，notificationList值保持一致。 
+        **参数解释**： 告警状态发生变化时，被通知对象的列表。 **约束限制**： 通知对象ID最多可以配置20个。 topicUrn可从SMN获取，具体操作请参考“查询Topic列表”。 说明：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。 
 
         :return: The notification_list of this Notification.
         :rtype: list[str]
@@ -81,7 +81,7 @@ class Notification:
     def notification_list(self, notification_list):
         r"""Sets the notification_list of this Notification.
 
-        **参数解释**： 告警状态发生变化时，被通知对象的列表。 **约束限制**： 通知对象ID最多可以配置20个。 topicUrn可从SMN获取，具体操作请参考查询Topic列表。当type为notification时，notificationList列表不能为空；当type为autoscaling时，列表必须为[]。 说明：若alarm_action_enabled为true，对应的alarm_actions、insufficientdata_actions（该参数已废弃，建议无需配置）、ok_actions至少有一个不能为空。若alarm_actions、insufficientdata_actions（该参数已废弃，建议无需配置）、ok_actions同时存在时，notificationList值保持一致。 
+        **参数解释**： 告警状态发生变化时，被通知对象的列表。 **约束限制**： 通知对象ID最多可以配置20个。 topicUrn可从SMN获取，具体操作请参考“查询Topic列表”。 说明：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。 
 
         :param notification_list: The notification_list of this Notification.
         :type notification_list: list[str]

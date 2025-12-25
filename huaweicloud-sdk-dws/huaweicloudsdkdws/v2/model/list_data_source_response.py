@@ -42,7 +42,7 @@ class ListDataSourceResponse(SdkResponse):
         :type project_id: str
         :param cluster_id: **参数解释**： 集群ID。 **取值范围**： 36位UUID。
         :type cluster_id: str
-        :param type: **参数解释**： 数据源类型。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 数据源类型。 **取值范围**： - OBS: obs数据源。 - LAKE_FORMATION: lake_formation数据源。 - MRS: mrs数据源。
         :type type: str
         :param count: **参数解释**： 总数。 **取值范围**： 不涉及。
         :type count: int
@@ -138,7 +138,7 @@ class ListDataSourceResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ListDataSourceResponse.
 
-        **参数解释**： 数据源类型。 **取值范围**： 不涉及。
+        **参数解释**： 数据源类型。 **取值范围**： - OBS: obs数据源。 - LAKE_FORMATION: lake_formation数据源。 - MRS: mrs数据源。
 
         :return: The type of this ListDataSourceResponse.
         :rtype: str
@@ -149,7 +149,7 @@ class ListDataSourceResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ListDataSourceResponse.
 
-        **参数解释**： 数据源类型。 **取值范围**： 不涉及。
+        **参数解释**： 数据源类型。 **取值范围**： - OBS: obs数据源。 - LAKE_FORMATION: lake_formation数据源。 - MRS: mrs数据源。
 
         :param type: The type of this ListDataSourceResponse.
         :type type: str

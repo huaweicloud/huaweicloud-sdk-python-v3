@@ -23,7 +23,8 @@ class NetworkPort:
         'port_max_speed': 'str',
         'firmware_package_version': 'str',
         'bdf': 'str',
-        'auto_neg': 'str'
+        'auto_neg': 'str',
+        'permanent_mac_address': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class NetworkPort:
         'port_max_speed': 'port_max_speed',
         'firmware_package_version': 'firmware_package_version',
         'bdf': 'bdf',
-        'auto_neg': 'auto_neg'
+        'auto_neg': 'auto_neg',
+        'permanent_mac_address': 'permanent_mac_address'
     }
 
-    def __init__(self, physical_port_number=None, link_status=None, associated_network_addresses=None, active_link_technology=None, port_type=None, port_max_speed=None, firmware_package_version=None, bdf=None, auto_neg=None):
+    def __init__(self, physical_port_number=None, link_status=None, associated_network_addresses=None, active_link_technology=None, port_type=None, port_max_speed=None, firmware_package_version=None, bdf=None, auto_neg=None, permanent_mac_address=None):
         r"""NetworkPort
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class NetworkPort:
         :type bdf: str
         :param auto_neg: 协议
         :type auto_neg: str
+        :param permanent_mac_address: 永久物理地址
+        :type permanent_mac_address: str
         """
         
         
@@ -74,6 +78,7 @@ class NetworkPort:
         self._firmware_package_version = None
         self._bdf = None
         self._auto_neg = None
+        self._permanent_mac_address = None
         self.discriminator = None
 
         if physical_port_number is not None:
@@ -94,6 +99,8 @@ class NetworkPort:
             self.bdf = bdf
         if auto_neg is not None:
             self.auto_neg = auto_neg
+        if permanent_mac_address is not None:
+            self.permanent_mac_address = permanent_mac_address
 
     @property
     def physical_port_number(self):
@@ -292,6 +299,28 @@ class NetworkPort:
         :type auto_neg: str
         """
         self._auto_neg = auto_neg
+
+    @property
+    def permanent_mac_address(self):
+        r"""Gets the permanent_mac_address of this NetworkPort.
+
+        永久物理地址
+
+        :return: The permanent_mac_address of this NetworkPort.
+        :rtype: str
+        """
+        return self._permanent_mac_address
+
+    @permanent_mac_address.setter
+    def permanent_mac_address(self, permanent_mac_address):
+        r"""Sets the permanent_mac_address of this NetworkPort.
+
+        永久物理地址
+
+        :param permanent_mac_address: The permanent_mac_address of this NetworkPort.
+        :type permanent_mac_address: str
+        """
+        self._permanent_mac_address = permanent_mac_address
 
     def to_dict(self):
         result = {}

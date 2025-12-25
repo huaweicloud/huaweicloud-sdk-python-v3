@@ -2771,6 +2771,279 @@ class DcClient(Client):
 
         return http_info
 
+    def create_vif_peer_detection(self, request):
+        r"""创建虚拟接口对等体连通性探测实例
+
+        当您想对虚拟接口对等体的远端网关的连通性进行探测时，可以通过调用此接口创建一个虚拟接口对等体连通性探测实例来实现。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateVifPeerDetection
+        :type request: :class:`huaweicloudsdkdc.v3.CreateVifPeerDetectionRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.CreateVifPeerDetectionResponse`
+        """
+        http_info = self._create_vif_peer_detection_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_vif_peer_detection_invoker(self, request):
+        http_info = self._create_vif_peer_detection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vif_peer_detection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/vif-peer-detections",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVifPeerDetectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=utf-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_vif_peer_detection(self, request):
+        r"""删除虚拟接口对等体连通性探测实例
+
+        当您想不再保留虚拟接口对等体连通性探测实例时，您可以通过调用此接口将其删除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteVifPeerDetection
+        :type request: :class:`huaweicloudsdkdc.v3.DeleteVifPeerDetectionRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.DeleteVifPeerDetectionResponse`
+        """
+        http_info = self._delete_vif_peer_detection_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_vif_peer_detection_invoker(self, request):
+        http_info = self._delete_vif_peer_detection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vif_peer_detection_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/dcaas/vif-peer-detections/{vif_peer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVifPeerDetectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vif_peer_id' in local_var_params:
+            path_params['vif_peer_id'] = local_var_params['vif_peer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vif_peer_detections(self, request):
+        r"""查询虚拟接口对等体连通性探测实例列表
+
+        当您的对虚拟接口对等体发起连通性探测后，您可以通过此接口查询多次探测的信息，包括ID、探测开始时间、探测结束时间、探测状态、丢包率等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListVifPeerDetections
+        :type request: :class:`huaweicloudsdkdc.v3.ListVifPeerDetectionsRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ListVifPeerDetectionsResponse`
+        """
+        http_info = self._list_vif_peer_detections_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vif_peer_detections_invoker(self, request):
+        http_info = self._list_vif_peer_detections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vif_peer_detections_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/vif-peer-detections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVifPeerDetectionsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vif_peer_id' in local_var_params:
+            path_params['vif_peer_id'] = local_var_params['vif_peer_id']
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+            collection_formats['sort_dir'] = 'multi'
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_vif_peer_detection(self, request):
+        r"""查询虚拟接口对等体连通性探测实例
+
+        当您的对虚拟接口对等体发起连通性探测后，您可以通过此接口查询单次探测的信息，包括ID、探测开始时间、探测结束时间、探测状态、丢包率等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVifPeerDetection
+        :type request: :class:`huaweicloudsdkdc.v3.ShowVifPeerDetectionRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.ShowVifPeerDetectionResponse`
+        """
+        http_info = self._show_vif_peer_detection_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_vif_peer_detection_invoker(self, request):
+        http_info = self._show_vif_peer_detection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vif_peer_detection_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/vif-peer-detections/{vif_peer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVifPeerDetectionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vif_peer_id' in local_var_params:
+            path_params['vif_peer_id'] = local_var_params['vif_peer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_virtual_gateway(self, request):
         r"""创建虚拟网关
 
@@ -3667,6 +3940,73 @@ class DcClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_extend_attribute(self, request):
+        r"""修改虚拟接口可靠性检测的扩展参数
+
+        虚拟接口有bfd与nqa两种可靠性检测方式，您可以通过调用此接口修改可靠性检测的参数，例如检测报文最小发送间隔、检测报文最大发送间隔、检测周期等信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateExtendAttribute
+        :type request: :class:`huaweicloudsdkdc.v3.UpdateExtendAttributeRequest`
+        :rtype: :class:`huaweicloudsdkdc.v3.UpdateExtendAttributeResponse`
+        """
+        http_info = self._update_extend_attribute_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_extend_attribute_invoker(self, request):
+        http_info = self._update_extend_attribute_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_extend_attribute_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-interfaces/{virtual_interface_id}/extend-attributes",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateExtendAttributeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'virtual_interface_id' in local_var_params:
+            path_params['virtual_interface_id'] = local_var_params['virtual_interface_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=utf-8'])
 
         auth_settings = []
 

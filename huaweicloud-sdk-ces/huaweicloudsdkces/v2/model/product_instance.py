@@ -31,7 +31,7 @@ class ProductInstance:
 
         The model defined in huaweicloud sdk
 
-        :param first_dimension_name: **参数解释** 资源首层维度，如：弹性云服务器，则维度为instance_id **约束限制** 不涉及 **取值范围** 资源维度，必须以字母开头，只能包含0-9/a-z/A-Z/_/-，维度的最大长度为32。 **默认取值** 不涉及 
+        :param first_dimension_name: **参数解释** 资源首层维度，如：弹性云服务器，则维度为instance_id **约束限制** 不涉及 **取值范围** 资源维度名称，必须以字母开头，只能包含0-9/a-z/A-Z/_/-，维度的最大长度为32。 **默认取值** 不涉及 
         :type first_dimension_name: str
         :param first_dimension_value: **参数解释** 资源首层维度值，为资源的实例ID，如：4270ff17-aba3-4138-89fa-820594c39755。 **约束限制** 不涉及 **取值范围** 长度为[1,256]个字符。 **默认取值** 不涉及 
         :type first_dimension_value: str
@@ -54,7 +54,7 @@ class ProductInstance:
     def first_dimension_name(self):
         r"""Gets the first_dimension_name of this ProductInstance.
 
-        **参数解释** 资源首层维度，如：弹性云服务器，则维度为instance_id **约束限制** 不涉及 **取值范围** 资源维度，必须以字母开头，只能包含0-9/a-z/A-Z/_/-，维度的最大长度为32。 **默认取值** 不涉及 
+        **参数解释** 资源首层维度，如：弹性云服务器，则维度为instance_id **约束限制** 不涉及 **取值范围** 资源维度名称，必须以字母开头，只能包含0-9/a-z/A-Z/_/-，维度的最大长度为32。 **默认取值** 不涉及 
 
         :return: The first_dimension_name of this ProductInstance.
         :rtype: str
@@ -65,7 +65,7 @@ class ProductInstance:
     def first_dimension_name(self, first_dimension_name):
         r"""Sets the first_dimension_name of this ProductInstance.
 
-        **参数解释** 资源首层维度，如：弹性云服务器，则维度为instance_id **约束限制** 不涉及 **取值范围** 资源维度，必须以字母开头，只能包含0-9/a-z/A-Z/_/-，维度的最大长度为32。 **默认取值** 不涉及 
+        **参数解释** 资源首层维度，如：弹性云服务器，则维度为instance_id **约束限制** 不涉及 **取值范围** 资源维度名称，必须以字母开头，只能包含0-9/a-z/A-Z/_/-，维度的最大长度为32。 **默认取值** 不涉及 
 
         :param first_dimension_name: The first_dimension_name of this ProductInstance.
         :type first_dimension_name: str

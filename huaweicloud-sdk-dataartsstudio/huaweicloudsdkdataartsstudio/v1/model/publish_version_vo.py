@@ -20,23 +20,23 @@ class PublishVersionVO:
         'version_tag': 'str',
         'description': 'str',
         'biz_id': 'str',
-        'biz_type': 'BizTypeEnum',
+        'biz_type': 'str',
         'biz_info': 'str',
         'biz_info_vo': 'object',
         'effect_objs': 'str',
         'change_props': 'str',
         'sql_ddl': 'str',
-        'physical_table': 'SyncStatusEnum',
-        'dev_physical_table': 'SyncStatusEnum',
-        'technical_asset': 'SyncStatusEnum',
-        'business_asset': 'SyncStatusEnum',
-        'meta_data_link': 'SyncStatusEnum',
-        'data_quality': 'SyncStatusEnum',
-        'dlf_task': 'SyncStatusEnum',
-        'materialization': 'SyncStatusEnum',
-        'publish_to_dlm': 'SyncStatusEnum',
-        'biz_metric': 'SyncStatusEnum',
-        'summary_status': 'SyncStatusEnum',
+        'physical_table': 'str',
+        'dev_physical_table': 'str',
+        'technical_asset': 'str',
+        'business_asset': 'str',
+        'meta_data_link': 'str',
+        'data_quality': 'str',
+        'dlf_task': 'str',
+        'materialization': 'str',
+        'publish_to_dlm': 'str',
+        'biz_metric': 'str',
+        'summary_status': 'str',
         'is_current_version': 'bool',
         'create_time': 'datetime',
         'create_by': 'str'
@@ -85,8 +85,8 @@ class PublishVersionVO:
         :type description: str
         :param biz_id: 业务对象ID，ID字符串。
         :type biz_id: str
-        :param biz_type: 
-        :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
+        :param biz_type: 业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
+        :type biz_type: str
         :param biz_info: 业务详情，只读。
         :type biz_info: str
         :param biz_info_vo: 业务对象。
@@ -97,28 +97,28 @@ class PublishVersionVO:
         :type change_props: str
         :param sql_ddl: SQL脚本，只读。
         :type sql_ddl: str
-        :param physical_table: 
-        :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param dev_physical_table: 
-        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param technical_asset: 
-        :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param business_asset: 
-        :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param meta_data_link: 
-        :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param data_quality: 
-        :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param dlf_task: 
-        :type dlf_task: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param materialization: 
-        :type materialization: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param publish_to_dlm: 
-        :type publish_to_dlm: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param biz_metric: 
-        :type biz_metric: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param summary_status: 
-        :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param physical_table: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type physical_table: str
+        :param dev_physical_table: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type dev_physical_table: str
+        :param technical_asset: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type technical_asset: str
+        :param business_asset: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type business_asset: str
+        :param meta_data_link: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type meta_data_link: str
+        :param data_quality: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type data_quality: str
+        :param dlf_task: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type dlf_task: str
+        :param materialization: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type materialization: str
+        :param publish_to_dlm: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type publish_to_dlm: str
+        :param biz_metric: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type biz_metric: str
+        :param summary_status: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type summary_status: str
         :param is_current_version: 是否为当前版本，只读。
         :type is_current_version: bool
         :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
@@ -320,8 +320,10 @@ class PublishVersionVO:
     def biz_type(self):
         r"""Gets the biz_type of this PublishVersionVO.
 
+        业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
+
         :return: The biz_type of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
+        :rtype: str
         """
         return self._biz_type
 
@@ -329,8 +331,10 @@ class PublishVersionVO:
     def biz_type(self, biz_type):
         r"""Sets the biz_type of this PublishVersionVO.
 
+        业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
+
         :param biz_type: The biz_type of this PublishVersionVO.
-        :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
+        :type biz_type: str
         """
         self._biz_type = biz_type
 
@@ -448,8 +452,10 @@ class PublishVersionVO:
     def physical_table(self):
         r"""Gets the physical_table of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The physical_table of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._physical_table
 
@@ -457,8 +463,10 @@ class PublishVersionVO:
     def physical_table(self, physical_table):
         r"""Sets the physical_table of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param physical_table: The physical_table of this PublishVersionVO.
-        :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type physical_table: str
         """
         self._physical_table = physical_table
 
@@ -466,8 +474,10 @@ class PublishVersionVO:
     def dev_physical_table(self):
         r"""Gets the dev_physical_table of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The dev_physical_table of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._dev_physical_table
 
@@ -475,8 +485,10 @@ class PublishVersionVO:
     def dev_physical_table(self, dev_physical_table):
         r"""Sets the dev_physical_table of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param dev_physical_table: The dev_physical_table of this PublishVersionVO.
-        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type dev_physical_table: str
         """
         self._dev_physical_table = dev_physical_table
 
@@ -484,8 +496,10 @@ class PublishVersionVO:
     def technical_asset(self):
         r"""Gets the technical_asset of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The technical_asset of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._technical_asset
 
@@ -493,8 +507,10 @@ class PublishVersionVO:
     def technical_asset(self, technical_asset):
         r"""Sets the technical_asset of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param technical_asset: The technical_asset of this PublishVersionVO.
-        :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type technical_asset: str
         """
         self._technical_asset = technical_asset
 
@@ -502,8 +518,10 @@ class PublishVersionVO:
     def business_asset(self):
         r"""Gets the business_asset of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The business_asset of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._business_asset
 
@@ -511,8 +529,10 @@ class PublishVersionVO:
     def business_asset(self, business_asset):
         r"""Sets the business_asset of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param business_asset: The business_asset of this PublishVersionVO.
-        :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type business_asset: str
         """
         self._business_asset = business_asset
 
@@ -520,8 +540,10 @@ class PublishVersionVO:
     def meta_data_link(self):
         r"""Gets the meta_data_link of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The meta_data_link of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._meta_data_link
 
@@ -529,8 +551,10 @@ class PublishVersionVO:
     def meta_data_link(self, meta_data_link):
         r"""Sets the meta_data_link of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param meta_data_link: The meta_data_link of this PublishVersionVO.
-        :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type meta_data_link: str
         """
         self._meta_data_link = meta_data_link
 
@@ -538,8 +562,10 @@ class PublishVersionVO:
     def data_quality(self):
         r"""Gets the data_quality of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The data_quality of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._data_quality
 
@@ -547,8 +573,10 @@ class PublishVersionVO:
     def data_quality(self, data_quality):
         r"""Sets the data_quality of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param data_quality: The data_quality of this PublishVersionVO.
-        :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type data_quality: str
         """
         self._data_quality = data_quality
 
@@ -556,8 +584,10 @@ class PublishVersionVO:
     def dlf_task(self):
         r"""Gets the dlf_task of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The dlf_task of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._dlf_task
 
@@ -565,8 +595,10 @@ class PublishVersionVO:
     def dlf_task(self, dlf_task):
         r"""Sets the dlf_task of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param dlf_task: The dlf_task of this PublishVersionVO.
-        :type dlf_task: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type dlf_task: str
         """
         self._dlf_task = dlf_task
 
@@ -574,8 +606,10 @@ class PublishVersionVO:
     def materialization(self):
         r"""Gets the materialization of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The materialization of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._materialization
 
@@ -583,8 +617,10 @@ class PublishVersionVO:
     def materialization(self, materialization):
         r"""Sets the materialization of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param materialization: The materialization of this PublishVersionVO.
-        :type materialization: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type materialization: str
         """
         self._materialization = materialization
 
@@ -592,8 +628,10 @@ class PublishVersionVO:
     def publish_to_dlm(self):
         r"""Gets the publish_to_dlm of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The publish_to_dlm of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._publish_to_dlm
 
@@ -601,8 +639,10 @@ class PublishVersionVO:
     def publish_to_dlm(self, publish_to_dlm):
         r"""Sets the publish_to_dlm of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param publish_to_dlm: The publish_to_dlm of this PublishVersionVO.
-        :type publish_to_dlm: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type publish_to_dlm: str
         """
         self._publish_to_dlm = publish_to_dlm
 
@@ -610,8 +650,10 @@ class PublishVersionVO:
     def biz_metric(self):
         r"""Gets the biz_metric of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The biz_metric of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._biz_metric
 
@@ -619,8 +661,10 @@ class PublishVersionVO:
     def biz_metric(self, biz_metric):
         r"""Sets the biz_metric of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param biz_metric: The biz_metric of this PublishVersionVO.
-        :type biz_metric: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type biz_metric: str
         """
         self._biz_metric = biz_metric
 
@@ -628,8 +672,10 @@ class PublishVersionVO:
     def summary_status(self):
         r"""Gets the summary_status of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The summary_status of this PublishVersionVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._summary_status
 
@@ -637,8 +683,10 @@ class PublishVersionVO:
     def summary_status(self, summary_status):
         r"""Sets the summary_status of this PublishVersionVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param summary_status: The summary_status of this PublishVersionVO.
-        :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type summary_status: str
         """
         self._summary_status = summary_status
 

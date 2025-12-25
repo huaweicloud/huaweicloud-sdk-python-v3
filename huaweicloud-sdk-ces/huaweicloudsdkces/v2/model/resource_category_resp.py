@@ -1,0 +1,135 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ResourceCategoryResp:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'namespace': 'str',
+        'dimension_names': 'list[str]'
+    }
+
+    attribute_map = {
+        'namespace': 'namespace',
+        'dimension_names': 'dimension_names'
+    }
+
+    def __init__(self, namespace=None, dimension_names=None):
+        r"""ResourceCategoryResp
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
+        :type namespace: str
+        :param dimension_names: **参数解释**： 资源的维度信息列表 
+        :type dimension_names: list[str]
+        """
+        
+        
+
+        self._namespace = None
+        self._dimension_names = None
+        self.discriminator = None
+
+        self.namespace = namespace
+        self.dimension_names = dimension_names
+
+    @property
+    def namespace(self):
+        r"""Gets the namespace of this ResourceCategoryResp.
+
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
+
+        :return: The namespace of this ResourceCategoryResp.
+        :rtype: str
+        """
+        return self._namespace
+
+    @namespace.setter
+    def namespace(self, namespace):
+        r"""Sets the namespace of this ResourceCategoryResp.
+
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
+
+        :param namespace: The namespace of this ResourceCategoryResp.
+        :type namespace: str
+        """
+        self._namespace = namespace
+
+    @property
+    def dimension_names(self):
+        r"""Gets the dimension_names of this ResourceCategoryResp.
+
+        **参数解释**： 资源的维度信息列表 
+
+        :return: The dimension_names of this ResourceCategoryResp.
+        :rtype: list[str]
+        """
+        return self._dimension_names
+
+    @dimension_names.setter
+    def dimension_names(self, dimension_names):
+        r"""Sets the dimension_names of this ResourceCategoryResp.
+
+        **参数解释**： 资源的维度信息列表 
+
+        :param dimension_names: The dimension_names of this ResourceCategoryResp.
+        :type dimension_names: list[str]
+        """
+        self._dimension_names = dimension_names
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ResourceCategoryResp):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

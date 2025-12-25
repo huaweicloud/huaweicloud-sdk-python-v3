@@ -15,8 +15,8 @@ class ModelStatisticVO:
     sensitive_list = []
 
     openapi_types = {
-        'biz_type': 'BizTypeEnum',
-        'level': 'ModelLevel',
+        'biz_type': 'str',
+        'level': 'str',
         'db': 'int',
         'tb': 'int',
         'tb_published': 'int',
@@ -45,10 +45,10 @@ class ModelStatisticVO:
 
         The model defined in huaweicloud sdk
 
-        :param biz_type: 
-        :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
-        :param level: 
-        :type level: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
+        :param biz_type: 业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
+        :type biz_type: str
+        :param level: 数据治理分层。 枚举值：   - SDI: 贴源数据层   - DWI: 数据整合层   - DWR: 数据报告层   - DM:  数据集市层 
+        :type level: str
         :param db: 数据库。
         :type db: int
         :param tb: 数据表。
@@ -106,8 +106,10 @@ class ModelStatisticVO:
     def biz_type(self):
         r"""Gets the biz_type of this ModelStatisticVO.
 
+        业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
+
         :return: The biz_type of this ModelStatisticVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
+        :rtype: str
         """
         return self._biz_type
 
@@ -115,8 +117,10 @@ class ModelStatisticVO:
     def biz_type(self, biz_type):
         r"""Sets the biz_type of this ModelStatisticVO.
 
+        业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
+
         :param biz_type: The biz_type of this ModelStatisticVO.
-        :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
+        :type biz_type: str
         """
         self._biz_type = biz_type
 
@@ -124,8 +128,10 @@ class ModelStatisticVO:
     def level(self):
         r"""Gets the level of this ModelStatisticVO.
 
+        数据治理分层。 枚举值：   - SDI: 贴源数据层   - DWI: 数据整合层   - DWR: 数据报告层   - DM:  数据集市层 
+
         :return: The level of this ModelStatisticVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
+        :rtype: str
         """
         return self._level
 
@@ -133,8 +139,10 @@ class ModelStatisticVO:
     def level(self, level):
         r"""Sets the level of this ModelStatisticVO.
 
+        数据治理分层。 枚举值：   - SDI: 贴源数据层   - DWI: 数据整合层   - DWR: 数据报告层   - DM:  数据集市层 
+
         :param level: The level of this ModelStatisticVO.
-        :type level: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
+        :type level: str
         """
         self._level = level
 

@@ -32,6 +32,7 @@ from huaweicloudsdkcce.v3.model.addon_template import AddonTemplate
 from huaweicloudsdkcce.v3.model.alarm_info import AlarmInfo
 from huaweicloudsdkcce.v3.model.authenticating_proxy import AuthenticatingProxy
 from huaweicloudsdkcce.v3.model.authentication import Authentication
+from huaweicloudsdkcce.v3.model.auto_generate_security_group_hardening_config_spec import AutoGenerateSecurityGroupHardeningConfigSpec
 from huaweicloudsdkcce.v3.model.autopilot_authentication import AutopilotAuthentication
 from huaweicloudsdkcce.v3.model.autopilot_cluster import AutopilotCluster
 from huaweicloudsdkcce.v3.model.autopilot_cluster_endpoints import AutopilotClusterEndpoints
@@ -563,7 +564,6 @@ from huaweicloudsdkcce.v3.model.sync_node_resp import SyncNodeResp
 from huaweicloudsdkcce.v3.model.sync_node_response import SyncNodeResponse
 from huaweicloudsdkcce.v3.model.sync_nodes_resp import SyncNodesResp
 from huaweicloudsdkcce.v3.model.taint import Taint
-from huaweicloudsdkcce.v3.model.task_status import TaskStatus
 from huaweicloudsdkcce.v3.model.task_type import TaskType
 from huaweicloudsdkcce.v3.model.templatespec import Templatespec
 from huaweicloudsdkcce.v3.model.unlock_node_scaledown_request_body import UnlockNodeScaledownRequestBody

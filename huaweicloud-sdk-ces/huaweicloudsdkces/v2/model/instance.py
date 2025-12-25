@@ -31,7 +31,7 @@ class Instance:
 
         The model defined in huaweicloud sdk
 
-        :param product_name: **参数解释** 云产品名称 **约束限制** 不涉及 **取值范围** 长度为[1,16]个字符 **默认取值** 不涉及 
+        :param product_name: **参数解释** 云产品名称 **约束限制** 不涉及 **取值范围** 长度为[0,128]个字符 **默认取值** 不涉及 
         :type product_name: str
         :param logical_operator: **参数解释** 逻辑运算符 **约束限制** 不涉及 **取值范围** - ALL: 所有条件匹配成功 - ANY: 任意条件匹配成功 **默认取值** 不涉及 
         :type logical_operator: str
@@ -54,7 +54,7 @@ class Instance:
     def product_name(self):
         r"""Gets the product_name of this Instance.
 
-        **参数解释** 云产品名称 **约束限制** 不涉及 **取值范围** 长度为[1,16]个字符 **默认取值** 不涉及 
+        **参数解释** 云产品名称 **约束限制** 不涉及 **取值范围** 长度为[0,128]个字符 **默认取值** 不涉及 
 
         :return: The product_name of this Instance.
         :rtype: str
@@ -65,7 +65,7 @@ class Instance:
     def product_name(self, product_name):
         r"""Sets the product_name of this Instance.
 
-        **参数解释** 云产品名称 **约束限制** 不涉及 **取值范围** 长度为[1,16]个字符 **默认取值** 不涉及 
+        **参数解释** 云产品名称 **约束限制** 不涉及 **取值范围** 长度为[0,128]个字符 **默认取值** 不涉及 
 
         :param product_name: The product_name of this Instance.
         :type product_name: str

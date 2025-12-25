@@ -17,23 +17,27 @@ class ShowTtsAuditionFileResponse(SdkResponse):
 
     openapi_types = {
         'is_file_complete': 'bool',
+        'code': 'str',
         'message': 'str',
         'files': 'list[AuditionFile]'
     }
 
     attribute_map = {
         'is_file_complete': 'is_file_complete',
+        'code': 'code',
         'message': 'message',
         'files': 'files'
     }
 
-    def __init__(self, is_file_complete=None, message=None, files=None):
+    def __init__(self, is_file_complete=None, code=None, message=None, files=None):
         r"""ShowTtsAuditionFileResponse
 
         The model defined in huaweicloud sdk
 
         :param is_file_complete: 试听文件是否已生成完成。该标记为false时，应该每隔5秒再次调用本接口获取试听文件。当存在该参数时，将会返回以下message和files两个字段信息
         :type is_file_complete: bool
+        :param code: 返回码。
+        :type code: str
         :param message: 异常信息。
         :type message: str
         :param files: 试听文件列表。
@@ -43,12 +47,15 @@ class ShowTtsAuditionFileResponse(SdkResponse):
         super().__init__()
 
         self._is_file_complete = None
+        self._code = None
         self._message = None
         self._files = None
         self.discriminator = None
 
         if is_file_complete is not None:
             self.is_file_complete = is_file_complete
+        if code is not None:
+            self.code = code
         if message is not None:
             self.message = message
         if files is not None:
@@ -75,6 +82,28 @@ class ShowTtsAuditionFileResponse(SdkResponse):
         :type is_file_complete: bool
         """
         self._is_file_complete = is_file_complete
+
+    @property
+    def code(self):
+        r"""Gets the code of this ShowTtsAuditionFileResponse.
+
+        返回码。
+
+        :return: The code of this ShowTtsAuditionFileResponse.
+        :rtype: str
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this ShowTtsAuditionFileResponse.
+
+        返回码。
+
+        :param code: The code of this ShowTtsAuditionFileResponse.
+        :type code: str
+        """
+        self._code = code
 
     @property
     def message(self):

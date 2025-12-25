@@ -17,7 +17,7 @@ class ShowTransferAssetJobResponse(SdkResponse):
 
     openapi_types = {
         'job_id': 'str',
-        'transfer_type': 'TransferTypeEnum',
+        'transfer_type': 'str',
         'transfer_assets': 'list[DigitalAssetSummary]',
         'state': 'str',
         'src_project_id': 'str',
@@ -56,8 +56,8 @@ class ShowTransferAssetJobResponse(SdkResponse):
 
         :param job_id: 转移资产任务ID
         :type job_id: str
-        :param transfer_type: 
-        :type transfer_type: :class:`huaweicloudsdkmetastudio.v1.TransferTypeEnum`
+        :param transfer_type: **参数解释**： 转移类型。默认值是TRANSFER_OUT。 **约束限制**： * 只有管理员或者开了资产转移白名单租户才有权限转出资产。 * 普通租户有权限转回已接收成功的资产，转回给转移发起方。 **取值范围**： * TRANSFER_OUT: 资产转出 * TRANSFER_BACK：资产转回
+        :type transfer_type: str
         :param transfer_assets: 转移资产列表
         :type transfer_assets: list[:class:`huaweicloudsdkmetastudio.v1.DigitalAssetSummary`]
         :param state: 任务状态 - PROCESSING: 处理过程中 - ACCEPT： 接受 - REJECT： 拒绝 - CANCEL：取消 - FAIL: 失败
@@ -157,8 +157,10 @@ class ShowTransferAssetJobResponse(SdkResponse):
     def transfer_type(self):
         r"""Gets the transfer_type of this ShowTransferAssetJobResponse.
 
+        **参数解释**： 转移类型。默认值是TRANSFER_OUT。 **约束限制**： * 只有管理员或者开了资产转移白名单租户才有权限转出资产。 * 普通租户有权限转回已接收成功的资产，转回给转移发起方。 **取值范围**： * TRANSFER_OUT: 资产转出 * TRANSFER_BACK：资产转回
+
         :return: The transfer_type of this ShowTransferAssetJobResponse.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.TransferTypeEnum`
+        :rtype: str
         """
         return self._transfer_type
 
@@ -166,8 +168,10 @@ class ShowTransferAssetJobResponse(SdkResponse):
     def transfer_type(self, transfer_type):
         r"""Sets the transfer_type of this ShowTransferAssetJobResponse.
 
+        **参数解释**： 转移类型。默认值是TRANSFER_OUT。 **约束限制**： * 只有管理员或者开了资产转移白名单租户才有权限转出资产。 * 普通租户有权限转回已接收成功的资产，转回给转移发起方。 **取值范围**： * TRANSFER_OUT: 资产转出 * TRANSFER_BACK：资产转回
+
         :param transfer_type: The transfer_type of this ShowTransferAssetJobResponse.
-        :type transfer_type: :class:`huaweicloudsdkmetastudio.v1.TransferTypeEnum`
+        :type transfer_type: str
         """
         self._transfer_type = transfer_type
 

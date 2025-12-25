@@ -15,7 +15,7 @@ class NotebookImage:
     sensitive_list = []
 
     openapi_types = {
-        'image_type': 'DevelopImageType',
+        'image_type': 'str',
         'image_info': 'ImageInfo'
     }
 
@@ -30,7 +30,7 @@ class NotebookImage:
         The model defined in huaweicloud sdk
 
         :param image_type: 
-        :type image_type: :class:`huaweicloudsdkeihealth.v1.DevelopImageType`
+        :type image_type: str
         :param image_info: 
         :type image_info: :class:`huaweicloudsdkeihealth.v1.ImageInfo`
         """
@@ -49,7 +49,7 @@ class NotebookImage:
         r"""Gets the image_type of this NotebookImage.
 
         :return: The image_type of this NotebookImage.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.DevelopImageType`
+        :rtype: str
         """
         return self._image_type
 
@@ -58,7 +58,7 @@ class NotebookImage:
         r"""Sets the image_type of this NotebookImage.
 
         :param image_type: The image_type of this NotebookImage.
-        :type image_type: :class:`huaweicloudsdkeihealth.v1.DevelopImageType`
+        :type image_type: str
         """
         self._image_type = image_type
 

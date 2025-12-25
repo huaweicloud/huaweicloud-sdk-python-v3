@@ -18,9 +18,9 @@ class CentralNetworkPolicy:
         'id': 'str',
         'created_at': 'datetime',
         'domain_id': 'str',
-        'state': 'CentralNetworkPolicyStateEnum',
+        'state': 'str',
         'central_network_id': 'str',
-        'document_template_version': 'DocumentTemplateVersionEnum',
+        'document_template_version': 'str',
         'is_applied': 'bool',
         'version': 'int',
         'document': 'CentralNetworkPolicyDocument'
@@ -49,12 +49,12 @@ class CentralNetworkPolicy:
         :type created_at: datetime
         :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param state: 
-        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyStateEnum`
+        :param state: 中心网络策略状态。 - AVAILABLE (可用) - CANCELING (取消中) - APPLYING (应用中) - FAILED (失败) - DELETED (已删除)
+        :type state: str
         :param central_network_id: 中心网络ID。
         :type central_network_id: str
-        :param document_template_version: 
-        :type document_template_version: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`
+        :param document_template_version: 文档模板版本。 - 2022.08.30 (2022.08.30)
+        :type document_template_version: str
         :param is_applied: 是否被应用。
         :type is_applied: bool
         :param version: 中心网络策略的版本。
@@ -156,8 +156,10 @@ class CentralNetworkPolicy:
     def state(self):
         r"""Gets the state of this CentralNetworkPolicy.
 
+        中心网络策略状态。 - AVAILABLE (可用) - CANCELING (取消中) - APPLYING (应用中) - FAILED (失败) - DELETED (已删除)
+
         :return: The state of this CentralNetworkPolicy.
-        :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyStateEnum`
+        :rtype: str
         """
         return self._state
 
@@ -165,8 +167,10 @@ class CentralNetworkPolicy:
     def state(self, state):
         r"""Sets the state of this CentralNetworkPolicy.
 
+        中心网络策略状态。 - AVAILABLE (可用) - CANCELING (取消中) - APPLYING (应用中) - FAILED (失败) - DELETED (已删除)
+
         :param state: The state of this CentralNetworkPolicy.
-        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkPolicyStateEnum`
+        :type state: str
         """
         self._state = state
 
@@ -196,8 +200,10 @@ class CentralNetworkPolicy:
     def document_template_version(self):
         r"""Gets the document_template_version of this CentralNetworkPolicy.
 
+        文档模板版本。 - 2022.08.30 (2022.08.30)
+
         :return: The document_template_version of this CentralNetworkPolicy.
-        :rtype: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`
+        :rtype: str
         """
         return self._document_template_version
 
@@ -205,8 +211,10 @@ class CentralNetworkPolicy:
     def document_template_version(self, document_template_version):
         r"""Sets the document_template_version of this CentralNetworkPolicy.
 
+        文档模板版本。 - 2022.08.30 (2022.08.30)
+
         :param document_template_version: The document_template_version of this CentralNetworkPolicy.
-        :type document_template_version: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`
+        :type document_template_version: str
         """
         self._document_template_version = document_template_version
 

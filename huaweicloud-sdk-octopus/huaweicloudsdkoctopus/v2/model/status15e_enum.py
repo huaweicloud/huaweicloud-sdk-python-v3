@@ -4,22 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Status15eEnum:
-    """
-    allowed enum values
-    """
-    _0 = "0"
-    _1 = "1"
-    _2 = "2"
-    _3 = "3"
-    _4 = "4"
-    _10 = "10"
-    _11 = "11"
-    _12 = "12"
-    _13 = "13"
-    _14 = "14"
-    _15 = "15"
-    _31 = "31"
-    _32 = "32"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

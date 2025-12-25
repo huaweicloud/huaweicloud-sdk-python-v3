@@ -17,8 +17,8 @@ class AccountInfo:
     openapi_types = {
         'account': 'str',
         'domain': 'str',
-        'account_type': 'AccountTypeEnum',
-        'platform_type': 'PlatformTypeEnum'
+        'account_type': 'str',
+        'platform_type': 'str'
     }
 
     attribute_map = {
@@ -37,10 +37,10 @@ class AccountInfo:
         :type account: str
         :param domain: 域名(用户组必填，不填时使用默认值 local.com)。
         :type domain: str
-        :param account_type: 
-        :type account_type: :class:`huaweicloudsdkworkspace.v2.AccountTypeEnum`
-        :param platform_type: 
-        :type platform_type: :class:`huaweicloudsdkworkspace.v2.PlatformTypeEnum`
+        :param account_type: 账户类型： * &#39;SIMPLE&#39; - 普通用户 * &#39;USER_GROUP&#39; - 用户组
+        :type account_type: str
+        :param platform_type: 平台类型： * &#x60;AD&#x60; - AD域 * &#x60;LOCAL&#x60; - LiteAs
+        :type platform_type: str
         """
         
         
@@ -106,8 +106,10 @@ class AccountInfo:
     def account_type(self):
         r"""Gets the account_type of this AccountInfo.
 
+        账户类型： * 'SIMPLE' - 普通用户 * 'USER_GROUP' - 用户组
+
         :return: The account_type of this AccountInfo.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.AccountTypeEnum`
+        :rtype: str
         """
         return self._account_type
 
@@ -115,8 +117,10 @@ class AccountInfo:
     def account_type(self, account_type):
         r"""Sets the account_type of this AccountInfo.
 
+        账户类型： * 'SIMPLE' - 普通用户 * 'USER_GROUP' - 用户组
+
         :param account_type: The account_type of this AccountInfo.
-        :type account_type: :class:`huaweicloudsdkworkspace.v2.AccountTypeEnum`
+        :type account_type: str
         """
         self._account_type = account_type
 
@@ -124,8 +128,10 @@ class AccountInfo:
     def platform_type(self):
         r"""Gets the platform_type of this AccountInfo.
 
+        平台类型： * `AD` - AD域 * `LOCAL` - LiteAs
+
         :return: The platform_type of this AccountInfo.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.PlatformTypeEnum`
+        :rtype: str
         """
         return self._platform_type
 
@@ -133,8 +139,10 @@ class AccountInfo:
     def platform_type(self, platform_type):
         r"""Sets the platform_type of this AccountInfo.
 
+        平台类型： * `AD` - AD域 * `LOCAL` - LiteAs
+
         :param platform_type: The platform_type of this AccountInfo.
-        :type platform_type: :class:`huaweicloudsdkworkspace.v2.PlatformTypeEnum`
+        :type platform_type: str
         """
         self._platform_type = platform_type
 

@@ -16,7 +16,7 @@ class AddCicdConfigurationResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cicd_id': 'object'
+        'cicd_id': 'str'
     }
 
     attribute_map = {
@@ -29,7 +29,7 @@ class AddCicdConfigurationResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param cicd_id: **参数解释**： cicd标识 **取值范围**： 字符长度1-128位 
-        :type cicd_id: object
+        :type cicd_id: str
         """
         
         super().__init__()
@@ -47,7 +47,7 @@ class AddCicdConfigurationResponse(SdkResponse):
         **参数解释**： cicd标识 **取值范围**： 字符长度1-128位 
 
         :return: The cicd_id of this AddCicdConfigurationResponse.
-        :rtype: object
+        :rtype: str
         """
         return self._cicd_id
 
@@ -58,7 +58,7 @@ class AddCicdConfigurationResponse(SdkResponse):
         **参数解释**： cicd标识 **取值范围**： 字符长度1-128位 
 
         :param cicd_id: The cicd_id of this AddCicdConfigurationResponse.
-        :type cicd_id: object
+        :type cicd_id: str
         """
         self._cicd_id = cicd_id
 

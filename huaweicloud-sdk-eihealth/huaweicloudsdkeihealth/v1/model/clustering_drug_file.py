@@ -15,7 +15,7 @@ class ClusteringDrugFile:
     sensitive_list = []
 
     openapi_types = {
-        'source': 'ClusteringFileSource',
+        'source': 'str',
         'url': 'str',
         'format': 'str',
         'data': 'str'
@@ -33,8 +33,8 @@ class ClusteringDrugFile:
 
         The model defined in huaweicloud sdk
 
-        :param source: 
-        :type source: :class:`huaweicloudsdkeihealth.v1.ClusteringFileSource`
+        :param source: 受体的数据源：用户私有数据中心、承载租户公共数据（含样例/公共库）。
+        :type source: str
         :param url: 文件URL，当数据源为用户私有数据中心为项目路径，为公共数据场景时为obs地址。
         :type url: str
         :param format: 文件格式，支持SMI，仅数据源为RAW时提供。
@@ -63,8 +63,10 @@ class ClusteringDrugFile:
     def source(self):
         r"""Gets the source of this ClusteringDrugFile.
 
+        受体的数据源：用户私有数据中心、承载租户公共数据（含样例/公共库）。
+
         :return: The source of this ClusteringDrugFile.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ClusteringFileSource`
+        :rtype: str
         """
         return self._source
 
@@ -72,8 +74,10 @@ class ClusteringDrugFile:
     def source(self, source):
         r"""Sets the source of this ClusteringDrugFile.
 
+        受体的数据源：用户私有数据中心、承载租户公共数据（含样例/公共库）。
+
         :param source: The source of this ClusteringDrugFile.
-        :type source: :class:`huaweicloudsdkeihealth.v1.ClusteringFileSource`
+        :type source: str
         """
         self._source = source
 

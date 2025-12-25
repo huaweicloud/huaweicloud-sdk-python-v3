@@ -19,6 +19,7 @@ class ShowResourceGroupResponse(SdkResponse):
         'group_name': 'str',
         'group_id': 'str',
         'create_time': 'datetime',
+        'update_time': 'datetime',
         'enterprise_project_id': 'str',
         'type': 'str',
         'association_ep_ids': 'list[str]',
@@ -29,16 +30,18 @@ class ShowResourceGroupResponse(SdkResponse):
         'enterprise_project_id_and_tags': 'list[EnterpriseProjectIdAndTags]',
         'status': 'str',
         'event_status': 'str',
-        'resource_statistics': 'OneResourceGroupRespResourceStatistics',
+        'resource_statistics': 'GetResourceGroupRespResourceStatistics',
         'resource_level': 'str',
         'product_names': 'str',
-        'ep_resource_statistics': 'list[EpResourceStatistics]'
+        'ep_resource_statistics': 'list[EpResourceStatistics]',
+        'association_alarm_templates': 'list[AssociationAlarmTemplate]'
     }
 
     attribute_map = {
         'group_name': 'group_name',
         'group_id': 'group_id',
         'create_time': 'create_time',
+        'update_time': 'update_time',
         'enterprise_project_id': 'enterprise_project_id',
         'type': 'type',
         'association_ep_ids': 'association_ep_ids',
@@ -52,23 +55,26 @@ class ShowResourceGroupResponse(SdkResponse):
         'resource_statistics': 'resource_statistics',
         'resource_level': 'resource_level',
         'product_names': 'product_names',
-        'ep_resource_statistics': 'ep_resource_statistics'
+        'ep_resource_statistics': 'ep_resource_statistics',
+        'association_alarm_templates': 'association_alarm_templates'
     }
 
-    def __init__(self, group_name=None, group_id=None, create_time=None, enterprise_project_id=None, type=None, association_ep_ids=None, tags=None, instances=None, comb_relation=None, related_ep_ids=None, enterprise_project_id_and_tags=None, status=None, event_status=None, resource_statistics=None, resource_level=None, product_names=None, ep_resource_statistics=None):
+    def __init__(self, group_name=None, group_id=None, create_time=None, update_time=None, enterprise_project_id=None, type=None, association_ep_ids=None, tags=None, instances=None, comb_relation=None, related_ep_ids=None, enterprise_project_id_and_tags=None, status=None, event_status=None, resource_statistics=None, resource_level=None, product_names=None, ep_resource_statistics=None, association_alarm_templates=None):
         r"""ShowResourceGroupResponse
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 资源分组的名称
+        :param group_name: **参数解释** 资源分组的名称。 **取值范围** 只能为字母、数字、汉字、-或_，长度为[1,128]个字符。 
         :type group_name: str
-        :param group_id: 资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        :param group_id: **参数解释**： 资源分组ID。 **取值范围**： 以rg开头，后跟22位由字母或数字组成的字符串。长度为[2,24]个字符。 
         :type group_id: str
-        :param create_time: 资源分组的创建时间
+        :param create_time: **参数解释**： 资源分组的创建时间 **取值范围**： 不涉及。 
         :type create_time: datetime
-        :param enterprise_project_id: 资源分组归属企业项目ID
+        :param update_time: **参数解释**： 资源分组的修改时间 **取值范围**： 不涉及。 
+        :type update_time: datetime
+        :param enterprise_project_id: **参数解释** 资源分组归属企业项目ID。 **取值范围** 由数字、字母和-组成，或者为0（默认企业项目ID）。 
         :type enterprise_project_id: str
-        :param type: 资源添加/匹配方式，取值只能为EPS（匹配企业项目）,TAG（匹配标签）,NAME（匹配实例名称）, COMB（组合匹配）,Manual（手动添加）
+        :param type: **参数解释** 资源添加/匹配方式。 **取值范围** 枚举值。 - EPS: 匹配企业项目 - TAG: 匹配标签 - NAME: 匹配实例名称 - COMB: 组合匹配 - Manual: 手动添加 
         :type type: str
         :param association_ep_ids: 该资源分组内包含的资源来源的企业项目ID，type为EPS时必传
         :type association_ep_ids: list[str]
@@ -82,18 +88,20 @@ class ShowResourceGroupResponse(SdkResponse):
         :type related_ep_ids: list[str]
         :param enterprise_project_id_and_tags: 匹配企业项目或匹配标签参数
         :type enterprise_project_id_and_tags: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]
-        :param status: 指标告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        :param status: **参数解释** 指标告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
         :type status: str
-        :param event_status: 事件告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        :param event_status: **参数解释** 事件告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
         :type event_status: str
         :param resource_statistics: 
-        :type resource_statistics: :class:`huaweicloudsdkces.v2.OneResourceGroupRespResourceStatistics`
-        :param resource_level: dimension: 子维度,product: 云产品
+        :type resource_statistics: :class:`huaweicloudsdkces.v2.GetResourceGroupRespResourceStatistics`
+        :param resource_level: **参数解释** 资源等级。 **取值范围** 枚举值。 - product: 云产品 - dimension: 子维度 
         :type resource_level: str
-        :param product_names: 创建资源层级为云产品时的云产品的取值，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。多个云产品则用“;”隔开，如\&quot;SERVICE.BMS,instance_id;SYS.ECS,instance_id\&quot;。
+        :param product_names: **参数解释** 创建资源层级为云产品时的云产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。多个云产品则用“;”隔开，如\&quot;SERVICE.BMS,instance_id;SYS.ECS,instance_id\&quot;。 **取值范围** 长度[0,10240]个字符 
         :type product_names: str
         :param ep_resource_statistics: 每个企业项目关联的资源状态
         :type ep_resource_statistics: list[:class:`huaweicloudsdkces.v2.EpResourceStatistics`]
+        :param association_alarm_templates: 关联的告警模板列表
+        :type association_alarm_templates: list[:class:`huaweicloudsdkces.v2.AssociationAlarmTemplate`]
         """
         
         super().__init__()
@@ -101,6 +109,7 @@ class ShowResourceGroupResponse(SdkResponse):
         self._group_name = None
         self._group_id = None
         self._create_time = None
+        self._update_time = None
         self._enterprise_project_id = None
         self._type = None
         self._association_ep_ids = None
@@ -115,6 +124,7 @@ class ShowResourceGroupResponse(SdkResponse):
         self._resource_level = None
         self._product_names = None
         self._ep_resource_statistics = None
+        self._association_alarm_templates = None
         self.discriminator = None
 
         if group_name is not None:
@@ -123,6 +133,8 @@ class ShowResourceGroupResponse(SdkResponse):
             self.group_id = group_id
         if create_time is not None:
             self.create_time = create_time
+        if update_time is not None:
+            self.update_time = update_time
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if type is not None:
@@ -151,12 +163,14 @@ class ShowResourceGroupResponse(SdkResponse):
             self.product_names = product_names
         if ep_resource_statistics is not None:
             self.ep_resource_statistics = ep_resource_statistics
+        if association_alarm_templates is not None:
+            self.association_alarm_templates = association_alarm_templates
 
     @property
     def group_name(self):
         r"""Gets the group_name of this ShowResourceGroupResponse.
 
-        资源分组的名称
+        **参数解释** 资源分组的名称。 **取值范围** 只能为字母、数字、汉字、-或_，长度为[1,128]个字符。 
 
         :return: The group_name of this ShowResourceGroupResponse.
         :rtype: str
@@ -167,7 +181,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def group_name(self, group_name):
         r"""Sets the group_name of this ShowResourceGroupResponse.
 
-        资源分组的名称
+        **参数解释** 资源分组的名称。 **取值范围** 只能为字母、数字、汉字、-或_，长度为[1,128]个字符。 
 
         :param group_name: The group_name of this ShowResourceGroupResponse.
         :type group_name: str
@@ -178,7 +192,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def group_id(self):
         r"""Gets the group_id of this ShowResourceGroupResponse.
 
-        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        **参数解释**： 资源分组ID。 **取值范围**： 以rg开头，后跟22位由字母或数字组成的字符串。长度为[2,24]个字符。 
 
         :return: The group_id of this ShowResourceGroupResponse.
         :rtype: str
@@ -189,7 +203,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def group_id(self, group_id):
         r"""Sets the group_id of this ShowResourceGroupResponse.
 
-        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        **参数解释**： 资源分组ID。 **取值范围**： 以rg开头，后跟22位由字母或数字组成的字符串。长度为[2,24]个字符。 
 
         :param group_id: The group_id of this ShowResourceGroupResponse.
         :type group_id: str
@@ -200,7 +214,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def create_time(self):
         r"""Gets the create_time of this ShowResourceGroupResponse.
 
-        资源分组的创建时间
+        **参数解释**： 资源分组的创建时间 **取值范围**： 不涉及。 
 
         :return: The create_time of this ShowResourceGroupResponse.
         :rtype: datetime
@@ -211,7 +225,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this ShowResourceGroupResponse.
 
-        资源分组的创建时间
+        **参数解释**： 资源分组的创建时间 **取值范围**： 不涉及。 
 
         :param create_time: The create_time of this ShowResourceGroupResponse.
         :type create_time: datetime
@@ -219,10 +233,32 @@ class ShowResourceGroupResponse(SdkResponse):
         self._create_time = create_time
 
     @property
+    def update_time(self):
+        r"""Gets the update_time of this ShowResourceGroupResponse.
+
+        **参数解释**： 资源分组的修改时间 **取值范围**： 不涉及。 
+
+        :return: The update_time of this ShowResourceGroupResponse.
+        :rtype: datetime
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this ShowResourceGroupResponse.
+
+        **参数解释**： 资源分组的修改时间 **取值范围**： 不涉及。 
+
+        :param update_time: The update_time of this ShowResourceGroupResponse.
+        :type update_time: datetime
+        """
+        self._update_time = update_time
+
+    @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ShowResourceGroupResponse.
 
-        资源分组归属企业项目ID
+        **参数解释** 资源分组归属企业项目ID。 **取值范围** 由数字、字母和-组成，或者为0（默认企业项目ID）。 
 
         :return: The enterprise_project_id of this ShowResourceGroupResponse.
         :rtype: str
@@ -233,7 +269,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ShowResourceGroupResponse.
 
-        资源分组归属企业项目ID
+        **参数解释** 资源分组归属企业项目ID。 **取值范围** 由数字、字母和-组成，或者为0（默认企业项目ID）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ShowResourceGroupResponse.
         :type enterprise_project_id: str
@@ -244,7 +280,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowResourceGroupResponse.
 
-        资源添加/匹配方式，取值只能为EPS（匹配企业项目）,TAG（匹配标签）,NAME（匹配实例名称）, COMB（组合匹配）,Manual（手动添加）
+        **参数解释** 资源添加/匹配方式。 **取值范围** 枚举值。 - EPS: 匹配企业项目 - TAG: 匹配标签 - NAME: 匹配实例名称 - COMB: 组合匹配 - Manual: 手动添加 
 
         :return: The type of this ShowResourceGroupResponse.
         :rtype: str
@@ -255,7 +291,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowResourceGroupResponse.
 
-        资源添加/匹配方式，取值只能为EPS（匹配企业项目）,TAG（匹配标签）,NAME（匹配实例名称）, COMB（组合匹配）,Manual（手动添加）
+        **参数解释** 资源添加/匹配方式。 **取值范围** 枚举值。 - EPS: 匹配企业项目 - TAG: 匹配标签 - NAME: 匹配实例名称 - COMB: 组合匹配 - Manual: 手动添加 
 
         :param type: The type of this ShowResourceGroupResponse.
         :type type: str
@@ -394,7 +430,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowResourceGroupResponse.
 
-        指标告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        **参数解释** 指标告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
 
         :return: The status of this ShowResourceGroupResponse.
         :rtype: str
@@ -405,7 +441,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowResourceGroupResponse.
 
-        指标告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        **参数解释** 指标告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
 
         :param status: The status of this ShowResourceGroupResponse.
         :type status: str
@@ -416,7 +452,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def event_status(self):
         r"""Gets the event_status of this ShowResourceGroupResponse.
 
-        事件告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        **参数解释** 事件告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
 
         :return: The event_status of this ShowResourceGroupResponse.
         :rtype: str
@@ -427,7 +463,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def event_status(self, event_status):
         r"""Sets the event_status of this ShowResourceGroupResponse.
 
-        事件告警状态，取值为health（告警中）、unhealthy（已触发）、no_alarm_rule（未设置告警规则）
+        **参数解释** 事件告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
 
         :param event_status: The event_status of this ShowResourceGroupResponse.
         :type event_status: str
@@ -439,7 +475,7 @@ class ShowResourceGroupResponse(SdkResponse):
         r"""Gets the resource_statistics of this ShowResourceGroupResponse.
 
         :return: The resource_statistics of this ShowResourceGroupResponse.
-        :rtype: :class:`huaweicloudsdkces.v2.OneResourceGroupRespResourceStatistics`
+        :rtype: :class:`huaweicloudsdkces.v2.GetResourceGroupRespResourceStatistics`
         """
         return self._resource_statistics
 
@@ -448,7 +484,7 @@ class ShowResourceGroupResponse(SdkResponse):
         r"""Sets the resource_statistics of this ShowResourceGroupResponse.
 
         :param resource_statistics: The resource_statistics of this ShowResourceGroupResponse.
-        :type resource_statistics: :class:`huaweicloudsdkces.v2.OneResourceGroupRespResourceStatistics`
+        :type resource_statistics: :class:`huaweicloudsdkces.v2.GetResourceGroupRespResourceStatistics`
         """
         self._resource_statistics = resource_statistics
 
@@ -456,7 +492,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def resource_level(self):
         r"""Gets the resource_level of this ShowResourceGroupResponse.
 
-        dimension: 子维度,product: 云产品
+        **参数解释** 资源等级。 **取值范围** 枚举值。 - product: 云产品 - dimension: 子维度 
 
         :return: The resource_level of this ShowResourceGroupResponse.
         :rtype: str
@@ -467,7 +503,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this ShowResourceGroupResponse.
 
-        dimension: 子维度,product: 云产品
+        **参数解释** 资源等级。 **取值范围** 枚举值。 - product: 云产品 - dimension: 子维度 
 
         :param resource_level: The resource_level of this ShowResourceGroupResponse.
         :type resource_level: str
@@ -478,7 +514,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def product_names(self):
         r"""Gets the product_names of this ShowResourceGroupResponse.
 
-        创建资源层级为云产品时的云产品的取值，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。
+        **参数解释** 创建资源层级为云产品时的云产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。 **取值范围** 长度[0,10240]个字符 
 
         :return: The product_names of this ShowResourceGroupResponse.
         :rtype: str
@@ -489,7 +525,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def product_names(self, product_names):
         r"""Sets the product_names of this ShowResourceGroupResponse.
 
-        创建资源层级为云产品时的云产品的取值，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。
+        **参数解释** 创建资源层级为云产品时的云产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。 **取值范围** 长度[0,10240]个字符 
 
         :param product_names: The product_names of this ShowResourceGroupResponse.
         :type product_names: str
@@ -517,6 +553,28 @@ class ShowResourceGroupResponse(SdkResponse):
         :type ep_resource_statistics: list[:class:`huaweicloudsdkces.v2.EpResourceStatistics`]
         """
         self._ep_resource_statistics = ep_resource_statistics
+
+    @property
+    def association_alarm_templates(self):
+        r"""Gets the association_alarm_templates of this ShowResourceGroupResponse.
+
+        关联的告警模板列表
+
+        :return: The association_alarm_templates of this ShowResourceGroupResponse.
+        :rtype: list[:class:`huaweicloudsdkces.v2.AssociationAlarmTemplate`]
+        """
+        return self._association_alarm_templates
+
+    @association_alarm_templates.setter
+    def association_alarm_templates(self, association_alarm_templates):
+        r"""Sets the association_alarm_templates of this ShowResourceGroupResponse.
+
+        关联的告警模板列表
+
+        :param association_alarm_templates: The association_alarm_templates of this ShowResourceGroupResponse.
+        :type association_alarm_templates: list[:class:`huaweicloudsdkces.v2.AssociationAlarmTemplate`]
+        """
+        self._association_alarm_templates = association_alarm_templates
 
     def to_dict(self):
         import warnings

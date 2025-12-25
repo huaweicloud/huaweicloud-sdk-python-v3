@@ -15,10 +15,10 @@ class CreateMessageAdditionsReq:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'QaType',
+        'type': 'str',
         'workspace_id': 'str',
         'job_id': 'str',
-        'tool_type': 'ToolType',
+        'tool_type': 'str',
         'job_type': 'str',
         'data_path': 'str'
     }
@@ -37,14 +37,14 @@ class CreateMessageAdditionsReq:
 
         The model defined in huaweicloud sdk
 
-        :param type: 
-        :type type: :class:`huaweicloudsdkeihealth.v1.QaType`
+        :param type: **参数解释**： 问答类型。 **约束限制**： 不涉及 **取值范围**： * chat_call：普通问答 * tool_call：实验问答 * deepresearch_call：深度探究 **默认取值**： 不涉及 
+        :type type: str
         :param workspace_id: **参数解释**： 实验问答使用的空间ID。 **约束限制**： 不涉及 **取值范围**： 仅支持字母、数字、中划线和下划线，长度为[1-128]个字符。 **默认取值**： 不涉及 
         :type workspace_id: str
         :param job_id: **参数解释**： 实验问答的作业ID。 **约束限制**： 不涉及 **取值范围**： 仅支持字母、数字、中划线和下划线，长度为[1-128]个字符。 **默认取值**： 不涉及 
         :type job_id: str
-        :param tool_type: 
-        :type tool_type: :class:`huaweicloudsdkeihealth.v1.ToolType`
+        :param tool_type: **参数解释**： 实验类型。 **约束限制**： 不涉及 **取值范围**： * drug_job：药物实验作业 * workflow_job：流程实验作业 **默认取值**： 不涉及 
+        :type tool_type: str
         :param job_type: **参数解释**： 作业类型。 **约束限制**： 不涉及 **取值范围**： 取值范围为[1-64]个字符。 **默认取值**： 不涉及 
         :type job_type: str
         :param data_path: **参数解释**： 深度探究生成报告存储路径。 **约束限制**： 不涉及 **取值范围**： 取值范围为[1-1024]个字符。 **默认取值**： 不涉及 
@@ -77,8 +77,10 @@ class CreateMessageAdditionsReq:
     def type(self):
         r"""Gets the type of this CreateMessageAdditionsReq.
 
+        **参数解释**： 问答类型。 **约束限制**： 不涉及 **取值范围**： * chat_call：普通问答 * tool_call：实验问答 * deepresearch_call：深度探究 **默认取值**： 不涉及 
+
         :return: The type of this CreateMessageAdditionsReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.QaType`
+        :rtype: str
         """
         return self._type
 
@@ -86,8 +88,10 @@ class CreateMessageAdditionsReq:
     def type(self, type):
         r"""Sets the type of this CreateMessageAdditionsReq.
 
+        **参数解释**： 问答类型。 **约束限制**： 不涉及 **取值范围**： * chat_call：普通问答 * tool_call：实验问答 * deepresearch_call：深度探究 **默认取值**： 不涉及 
+
         :param type: The type of this CreateMessageAdditionsReq.
-        :type type: :class:`huaweicloudsdkeihealth.v1.QaType`
+        :type type: str
         """
         self._type = type
 
@@ -139,8 +143,10 @@ class CreateMessageAdditionsReq:
     def tool_type(self):
         r"""Gets the tool_type of this CreateMessageAdditionsReq.
 
+        **参数解释**： 实验类型。 **约束限制**： 不涉及 **取值范围**： * drug_job：药物实验作业 * workflow_job：流程实验作业 **默认取值**： 不涉及 
+
         :return: The tool_type of this CreateMessageAdditionsReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ToolType`
+        :rtype: str
         """
         return self._tool_type
 
@@ -148,8 +154,10 @@ class CreateMessageAdditionsReq:
     def tool_type(self, tool_type):
         r"""Sets the tool_type of this CreateMessageAdditionsReq.
 
+        **参数解释**： 实验类型。 **约束限制**： 不涉及 **取值范围**： * drug_job：药物实验作业 * workflow_job：流程实验作业 **默认取值**： 不涉及 
+
         :param tool_type: The tool_type of this CreateMessageAdditionsReq.
-        :type tool_type: :class:`huaweicloudsdkeihealth.v1.ToolType`
+        :type tool_type: str
         """
         self._tool_type = tool_type
 

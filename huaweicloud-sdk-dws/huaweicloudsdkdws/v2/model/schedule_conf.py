@@ -39,7 +39,7 @@ class ScheduleConf:
         :type schedule_start: str
         :param schedule_end: **参数解释**： 调度结束时间。 **取值范围**： 不涉及。
         :type schedule_end: str
-        :param schedule_type: **参数解释**： 调度类型。 **取值范围**： 不涉及。
+        :param schedule_type: **参数解释**： 调度类型。 **取值范围**： - timeRange：时间范围。
         :type schedule_type: str
         :param schedule_date: **参数解释**： 调度日期。 **取值范围**： 不涉及。
         :type schedule_date: list[int]
@@ -115,7 +115,7 @@ class ScheduleConf:
     def schedule_type(self):
         r"""Gets the schedule_type of this ScheduleConf.
 
-        **参数解释**： 调度类型。 **取值范围**： 不涉及。
+        **参数解释**： 调度类型。 **取值范围**： - timeRange：时间范围。
 
         :return: The schedule_type of this ScheduleConf.
         :rtype: str
@@ -126,7 +126,7 @@ class ScheduleConf:
     def schedule_type(self, schedule_type):
         r"""Sets the schedule_type of this ScheduleConf.
 
-        **参数解释**： 调度类型。 **取值范围**： 不涉及。
+        **参数解释**： 调度类型。 **取值范围**： - timeRange：时间范围。
 
         :param schedule_type: The schedule_type of this ScheduleConf.
         :type schedule_type: str

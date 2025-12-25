@@ -17,7 +17,7 @@ class ListPolicyResp:
     openapi_types = {
         'metric_name': 'str',
         'extra_info': 'MetricExtraInfoResp',
-        'period': 'PeriodResp',
+        'period': 'int',
         'filter': 'str',
         'comparison_operator': 'str',
         'value': 'float',
@@ -25,7 +25,7 @@ class ListPolicyResp:
         'unit': 'str',
         'type': 'str',
         'count': 'int',
-        'suppress_duration': 'SuppressDurationResp',
+        'suppress_duration': 'int',
         'level': 'int',
         'namespace': 'str',
         'dimension_name': 'str'
@@ -57,13 +57,13 @@ class ListPolicyResp:
         :type metric_name: str
         :param extra_info: 
         :type extra_info: :class:`huaweicloudsdkces.v2.MetricExtraInfoResp`
-        :param period: 
-        :type period: :class:`huaweicloudsdkces.v2.PeriodResp`
-        :param filter: **参数解释**： 聚合方式。         **取值范围**： average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和。 
+        :param period: **参数解释**： 告警条件判断周期,单位为秒。 **取值范围**： 枚举值。 - 0是默认值，事件类告警该字段用0即可。 - 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算。 - 300代表指标按5分钟聚合周期为一个数据点参与告警计算。 - 1200代表指标按20分钟聚合周期为一个数据点参与告警计算。 - 3600代表指标按1小时聚合周期为一个数据点参与告警计算。 - 14400代表指标按4小时聚合周期为一个数据点参与告警计算。 - 86400代表指标按1天聚合周期为一个数据点参与告警计算。 
+        :type period: int
+        :param filter: **参数解释**： 聚合方式。         **取值范围**： - average：平均值 - variance：方差 - min：最小值 - max：最大值 - sum：求和 
         :type filter: str
         :param comparison_operator: **参数解释**： 阈值符号。     **取值范围**： 支持的值为(&gt;|&lt;|&gt;&#x3D;|&lt;&#x3D;|&#x3D;|!&#x3D;|cycle_decrease|cycle_increase|cycle_wave);cycle_decrease为环比下降,cycle_increase为环比上升,cycle_wave为环比波动。 
         :type comparison_operator: str
-        :param value: **参数解释**： 告警阈值。具体阈值取值请参见附录中各服务监控指标中取值范围。 **取值范围**： 最小值为0，最大值为1.7976931348623157e+108。 
+        :param value: **参数解释**： 告警阈值。具体阈值取值请参见“[支持服务列表](ces_03_0059.xml)”。  **取值范围**： 最小值为-1.7976931348623157e+108，最大值为1.7976931348623157e+108。 
         :type value: float
         :param hierarchical_value: 
         :type hierarchical_value: :class:`huaweicloudsdkces.v2.HierarchicalValueResp`
@@ -73,13 +73,13 @@ class ListPolicyResp:
         :type type: str
         :param count: **参数解释**： 告警连续触发次数。     **取值范围**： 事件告警时参数值为1~180（包括1和180）；指标告警和站点告警时，次数采用枚举值，枚举值分别为：1、2、3、4、5、10、15、30、60、90、120、180。 
         :type count: int
-        :param suppress_duration: 
-        :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDurationResp`
-        :param level: **参数解释**： 告警级别。    **取值范围**： 只能为1、2、3、4。1为紧急，2为重要，3为次要，4为提示。 
+        :param suppress_duration: **参数解释**： 告警抑制时间，单位为秒，该字段主要为解决告警频繁的问题。 **取值范围**： 枚举值，只能为0、300、600、900、1800、3600、10800、21600、43200、86400。 - 0：对于指标类告警，0代表告警一次，对于事件类告警，在立即触发场景中，0代表不抑制；在累计触发场景，0代表只告警一次。 - 300代表满足告警触发条件后每5分钟告警一次。 - 600代表满足告警触发条件后每10分钟告警一次。 - 900代表满足告警触发条件后每15分钟告警一次。 - 1800代表满足告警触发条件后每30分钟告警一次。 - 3600代表满足告警触发条件后每60分钟告警一次。 - 10800代表满足告警触发条件后每3小时告警一次。 - 21600代表满足告警触发条件后每6小时告警一次。 - 43200代表满足告警触发条件后每12小时告警一次。 - 86400代表满足告警触发条件后每一天告警一次。 
+        :type suppress_duration: int
+        :param level: **参数解释**： 告警级别。    **取值范围**： 只能为1、2、3、4。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 
         :type level: int
         :param namespace: **参数解释**： 各服务命名空间，请参考“[服务命名空间](ces_03_0059.xml)”。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。长度为[0,32]个字符。 
         :type namespace: str
-        :param dimension_name: **参数解释**： 指标维度名称，各服务资源的指标维度名称可查看：“[服务维度名称](ces_03_0059.xml)”。 **取值范围**： 必须以字母开头，多维度用\&quot;,\&quot;分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk 
+        :param dimension_name: **参数解释**： 资源维度名称，各服务资源的维度名称可查看：“[服务维度名称](ces_03_0059.xml)”。 **取值范围**： 必须以字母开头，多维度用\&quot;,\&quot;分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk 
         :type dimension_name: str
         """
         
@@ -174,8 +174,10 @@ class ListPolicyResp:
     def period(self):
         r"""Gets the period of this ListPolicyResp.
 
+        **参数解释**： 告警条件判断周期,单位为秒。 **取值范围**： 枚举值。 - 0是默认值，事件类告警该字段用0即可。 - 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算。 - 300代表指标按5分钟聚合周期为一个数据点参与告警计算。 - 1200代表指标按20分钟聚合周期为一个数据点参与告警计算。 - 3600代表指标按1小时聚合周期为一个数据点参与告警计算。 - 14400代表指标按4小时聚合周期为一个数据点参与告警计算。 - 86400代表指标按1天聚合周期为一个数据点参与告警计算。 
+
         :return: The period of this ListPolicyResp.
-        :rtype: :class:`huaweicloudsdkces.v2.PeriodResp`
+        :rtype: int
         """
         return self._period
 
@@ -183,8 +185,10 @@ class ListPolicyResp:
     def period(self, period):
         r"""Sets the period of this ListPolicyResp.
 
+        **参数解释**： 告警条件判断周期,单位为秒。 **取值范围**： 枚举值。 - 0是默认值，事件类告警该字段用0即可。 - 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算。 - 300代表指标按5分钟聚合周期为一个数据点参与告警计算。 - 1200代表指标按20分钟聚合周期为一个数据点参与告警计算。 - 3600代表指标按1小时聚合周期为一个数据点参与告警计算。 - 14400代表指标按4小时聚合周期为一个数据点参与告警计算。 - 86400代表指标按1天聚合周期为一个数据点参与告警计算。 
+
         :param period: The period of this ListPolicyResp.
-        :type period: :class:`huaweicloudsdkces.v2.PeriodResp`
+        :type period: int
         """
         self._period = period
 
@@ -192,7 +196,7 @@ class ListPolicyResp:
     def filter(self):
         r"""Gets the filter of this ListPolicyResp.
 
-        **参数解释**： 聚合方式。         **取值范围**： average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和。 
+        **参数解释**： 聚合方式。         **取值范围**： - average：平均值 - variance：方差 - min：最小值 - max：最大值 - sum：求和 
 
         :return: The filter of this ListPolicyResp.
         :rtype: str
@@ -203,7 +207,7 @@ class ListPolicyResp:
     def filter(self, filter):
         r"""Sets the filter of this ListPolicyResp.
 
-        **参数解释**： 聚合方式。         **取值范围**： average： 平均值，variance：方差，min：最小值，max：最大值，sum：求和。 
+        **参数解释**： 聚合方式。         **取值范围**： - average：平均值 - variance：方差 - min：最小值 - max：最大值 - sum：求和 
 
         :param filter: The filter of this ListPolicyResp.
         :type filter: str
@@ -236,7 +240,7 @@ class ListPolicyResp:
     def value(self):
         r"""Gets the value of this ListPolicyResp.
 
-        **参数解释**： 告警阈值。具体阈值取值请参见附录中各服务监控指标中取值范围。 **取值范围**： 最小值为0，最大值为1.7976931348623157e+108。 
+        **参数解释**： 告警阈值。具体阈值取值请参见“[支持服务列表](ces_03_0059.xml)”。  **取值范围**： 最小值为-1.7976931348623157e+108，最大值为1.7976931348623157e+108。 
 
         :return: The value of this ListPolicyResp.
         :rtype: float
@@ -247,7 +251,7 @@ class ListPolicyResp:
     def value(self, value):
         r"""Sets the value of this ListPolicyResp.
 
-        **参数解释**： 告警阈值。具体阈值取值请参见附录中各服务监控指标中取值范围。 **取值范围**： 最小值为0，最大值为1.7976931348623157e+108。 
+        **参数解释**： 告警阈值。具体阈值取值请参见“[支持服务列表](ces_03_0059.xml)”。  **取值范围**： 最小值为-1.7976931348623157e+108，最大值为1.7976931348623157e+108。 
 
         :param value: The value of this ListPolicyResp.
         :type value: float
@@ -342,8 +346,10 @@ class ListPolicyResp:
     def suppress_duration(self):
         r"""Gets the suppress_duration of this ListPolicyResp.
 
+        **参数解释**： 告警抑制时间，单位为秒，该字段主要为解决告警频繁的问题。 **取值范围**： 枚举值，只能为0、300、600、900、1800、3600、10800、21600、43200、86400。 - 0：对于指标类告警，0代表告警一次，对于事件类告警，在立即触发场景中，0代表不抑制；在累计触发场景，0代表只告警一次。 - 300代表满足告警触发条件后每5分钟告警一次。 - 600代表满足告警触发条件后每10分钟告警一次。 - 900代表满足告警触发条件后每15分钟告警一次。 - 1800代表满足告警触发条件后每30分钟告警一次。 - 3600代表满足告警触发条件后每60分钟告警一次。 - 10800代表满足告警触发条件后每3小时告警一次。 - 21600代表满足告警触发条件后每6小时告警一次。 - 43200代表满足告警触发条件后每12小时告警一次。 - 86400代表满足告警触发条件后每一天告警一次。 
+
         :return: The suppress_duration of this ListPolicyResp.
-        :rtype: :class:`huaweicloudsdkces.v2.SuppressDurationResp`
+        :rtype: int
         """
         return self._suppress_duration
 
@@ -351,8 +357,10 @@ class ListPolicyResp:
     def suppress_duration(self, suppress_duration):
         r"""Sets the suppress_duration of this ListPolicyResp.
 
+        **参数解释**： 告警抑制时间，单位为秒，该字段主要为解决告警频繁的问题。 **取值范围**： 枚举值，只能为0、300、600、900、1800、3600、10800、21600、43200、86400。 - 0：对于指标类告警，0代表告警一次，对于事件类告警，在立即触发场景中，0代表不抑制；在累计触发场景，0代表只告警一次。 - 300代表满足告警触发条件后每5分钟告警一次。 - 600代表满足告警触发条件后每10分钟告警一次。 - 900代表满足告警触发条件后每15分钟告警一次。 - 1800代表满足告警触发条件后每30分钟告警一次。 - 3600代表满足告警触发条件后每60分钟告警一次。 - 10800代表满足告警触发条件后每3小时告警一次。 - 21600代表满足告警触发条件后每6小时告警一次。 - 43200代表满足告警触发条件后每12小时告警一次。 - 86400代表满足告警触发条件后每一天告警一次。 
+
         :param suppress_duration: The suppress_duration of this ListPolicyResp.
-        :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDurationResp`
+        :type suppress_duration: int
         """
         self._suppress_duration = suppress_duration
 
@@ -360,7 +368,7 @@ class ListPolicyResp:
     def level(self):
         r"""Gets the level of this ListPolicyResp.
 
-        **参数解释**： 告警级别。    **取值范围**： 只能为1、2、3、4。1为紧急，2为重要，3为次要，4为提示。 
+        **参数解释**： 告警级别。    **取值范围**： 只能为1、2、3、4。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 
 
         :return: The level of this ListPolicyResp.
         :rtype: int
@@ -371,7 +379,7 @@ class ListPolicyResp:
     def level(self, level):
         r"""Sets the level of this ListPolicyResp.
 
-        **参数解释**： 告警级别。    **取值范围**： 只能为1、2、3、4。1为紧急，2为重要，3为次要，4为提示。 
+        **参数解释**： 告警级别。    **取值范围**： 只能为1、2、3、4。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 
 
         :param level: The level of this ListPolicyResp.
         :type level: int
@@ -404,7 +412,7 @@ class ListPolicyResp:
     def dimension_name(self):
         r"""Gets the dimension_name of this ListPolicyResp.
 
-        **参数解释**： 指标维度名称，各服务资源的指标维度名称可查看：“[服务维度名称](ces_03_0059.xml)”。 **取值范围**： 必须以字母开头，多维度用\",\"分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk 
+        **参数解释**： 资源维度名称，各服务资源的维度名称可查看：“[服务维度名称](ces_03_0059.xml)”。 **取值范围**： 必须以字母开头，多维度用\",\"分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk 
 
         :return: The dimension_name of this ListPolicyResp.
         :rtype: str
@@ -415,7 +423,7 @@ class ListPolicyResp:
     def dimension_name(self, dimension_name):
         r"""Sets the dimension_name of this ListPolicyResp.
 
-        **参数解释**： 指标维度名称，各服务资源的指标维度名称可查看：“[服务维度名称](ces_03_0059.xml)”。 **取值范围**： 必须以字母开头，多维度用\",\"分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk 
+        **参数解释**： 资源维度名称，各服务资源的维度名称可查看：“[服务维度名称](ces_03_0059.xml)”。 **取值范围**： 必须以字母开头，多维度用\",\"分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk 
 
         :param dimension_name: The dimension_name of this ListPolicyResp.
         :type dimension_name: str

@@ -16,10 +16,10 @@ class JobInfo:
 
     openapi_types = {
         'id': 'str',
-        'job_type': 'JobType',
+        'job_type': 'str',
         'begin_time': 'datetime',
         'end_time': 'datetime',
-        'status': 'JobStatus',
+        'status': 'str',
         'sub_jobs_total': 'int'
     }
 
@@ -39,14 +39,14 @@ class JobInfo:
 
         :param id: 任务ID。
         :type id: str
-        :param job_type: 
-        :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
+        :param job_type: job类型： * &#x60;CREATE_SERVER&#x60; - 创建服务器 * &#x60;DELETE_SERVER&#x60; - 删除服务器 * &#x60;UPDATE_FREEZE_STATUS&#x60; - 修改服务器冻结状态 * &#x60;CREATE_SERVER_IMAGE&#x60; - 构建镜像 * &#x60;REINSTALL_OS&#x60; - 重装操作系统 * &#x60;CHANGE_SERVER_IMAGE&#x60; - 更换镜像 * &#x60;REJOIN_DOMAIN&#x60; - 重新加域 * &#x60;MIGRATE_SERVER&#x60; - 迁移服务器 * &#x60;UPGRADE_ACCESS_AGENT&#x60; - hda升级 * &#x60;UPDATE_SERVER_TSVI&#x60; - 更新虚拟会话IP * &#x60;SCHEDULED_TASK&#x60; - 定时任务job * &#x60;COLLECT_HDA_LOG&#x60; - 收集hda日志 * &#x60;COLLECT_APS_LOG&#x60; - 收集aps日志 * &#x60;CREATE_SERVER_SNAPSHOT&#x60; - 创建服务器快照 * &#x60;DELETE_SERVER_SNAPSHOT&#x60; - 删除服务器快照 * &#x60;RESTORE_SERVER_SNAPSHOT&#x60; - 恢复服务器快照 * &#x60;BATCH_INSTALL_APP&#x60; - 批量安装应用 * &#x60;INSTALL_CES_AGENT&#x60; - 安装CES服务AGENT * &#x60;UNINSTALL_CES_AGENT&#x60; - 卸载CES服务AGENT
+        :type job_type: str
         :param begin_time: 任务创建时间。
         :type begin_time: datetime
         :param end_time: 任务结束时间。
         :type end_time: datetime
-        :param status: 
-        :type status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
+        :param status: job状态 * &#x60;WAITING&#x60; - 等待 * &#x60;RUNNING&#x60; - 运行中 * &#x60;SUCCESS&#x60; - 完成 * &#x60;FAILED&#x60; - 失败
+        :type status: str
         :param sub_jobs_total: 子任务总数。
         :type sub_jobs_total: int
         """
@@ -100,8 +100,10 @@ class JobInfo:
     def job_type(self):
         r"""Gets the job_type of this JobInfo.
 
+        job类型： * `CREATE_SERVER` - 创建服务器 * `DELETE_SERVER` - 删除服务器 * `UPDATE_FREEZE_STATUS` - 修改服务器冻结状态 * `CREATE_SERVER_IMAGE` - 构建镜像 * `REINSTALL_OS` - 重装操作系统 * `CHANGE_SERVER_IMAGE` - 更换镜像 * `REJOIN_DOMAIN` - 重新加域 * `MIGRATE_SERVER` - 迁移服务器 * `UPGRADE_ACCESS_AGENT` - hda升级 * `UPDATE_SERVER_TSVI` - 更新虚拟会话IP * `SCHEDULED_TASK` - 定时任务job * `COLLECT_HDA_LOG` - 收集hda日志 * `COLLECT_APS_LOG` - 收集aps日志 * `CREATE_SERVER_SNAPSHOT` - 创建服务器快照 * `DELETE_SERVER_SNAPSHOT` - 删除服务器快照 * `RESTORE_SERVER_SNAPSHOT` - 恢复服务器快照 * `BATCH_INSTALL_APP` - 批量安装应用 * `INSTALL_CES_AGENT` - 安装CES服务AGENT * `UNINSTALL_CES_AGENT` - 卸载CES服务AGENT
+
         :return: The job_type of this JobInfo.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
+        :rtype: str
         """
         return self._job_type
 
@@ -109,8 +111,10 @@ class JobInfo:
     def job_type(self, job_type):
         r"""Sets the job_type of this JobInfo.
 
+        job类型： * `CREATE_SERVER` - 创建服务器 * `DELETE_SERVER` - 删除服务器 * `UPDATE_FREEZE_STATUS` - 修改服务器冻结状态 * `CREATE_SERVER_IMAGE` - 构建镜像 * `REINSTALL_OS` - 重装操作系统 * `CHANGE_SERVER_IMAGE` - 更换镜像 * `REJOIN_DOMAIN` - 重新加域 * `MIGRATE_SERVER` - 迁移服务器 * `UPGRADE_ACCESS_AGENT` - hda升级 * `UPDATE_SERVER_TSVI` - 更新虚拟会话IP * `SCHEDULED_TASK` - 定时任务job * `COLLECT_HDA_LOG` - 收集hda日志 * `COLLECT_APS_LOG` - 收集aps日志 * `CREATE_SERVER_SNAPSHOT` - 创建服务器快照 * `DELETE_SERVER_SNAPSHOT` - 删除服务器快照 * `RESTORE_SERVER_SNAPSHOT` - 恢复服务器快照 * `BATCH_INSTALL_APP` - 批量安装应用 * `INSTALL_CES_AGENT` - 安装CES服务AGENT * `UNINSTALL_CES_AGENT` - 卸载CES服务AGENT
+
         :param job_type: The job_type of this JobInfo.
-        :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -162,8 +166,10 @@ class JobInfo:
     def status(self):
         r"""Gets the status of this JobInfo.
 
+        job状态 * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
+
         :return: The status of this JobInfo.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
+        :rtype: str
         """
         return self._status
 
@@ -171,8 +177,10 @@ class JobInfo:
     def status(self, status):
         r"""Sets the status of this JobInfo.
 
+        job状态 * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
+
         :param status: The status of this JobInfo.
-        :type status: :class:`huaweicloudsdkworkspaceapp.v1.JobStatus`
+        :type status: str
         """
         self._status = status
 

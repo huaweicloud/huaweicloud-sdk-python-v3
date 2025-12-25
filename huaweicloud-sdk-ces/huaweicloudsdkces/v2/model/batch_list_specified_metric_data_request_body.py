@@ -43,7 +43,7 @@ class BatchListSpecifiedMetricDataRequestBody:
         :type namespace: str
         :param metric_name: **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为64。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
         :type metric_name: str
-        :param metric_dimension: **参数解释**: 指标维度, 多维度逗号分隔。 **约束限制**: 不涉及。 **取值范围**: 必须以字母开头，只能包含0-9/a-z/A-Z/_/-/,。每个维度必须以字母开头，每个维度长度最短1，最长32，多个维度直接用,分隔。 **默认取值**: 不涉及。 
+        :param metric_dimension: **参数解释**: 资源维度信息, 多维度逗号分隔。 **约束限制**: 不涉及。 **取值范围**: 必须以字母开头，只能包含0-9/a-z/A-Z/_/-/,。每个维度必须以字母开头，每个维度长度最短1，最长32，多个维度直接用,分隔。 **默认取值**: 不涉及。 
         :type metric_dimension: str
         :param _from: **参数解释**: 查询监控数据的开始时间，格式为时间戳, 单位毫秒。 **约束限制**: from必须小于to, to和from的时间间隔必须在5分钟内。 **取值范围**: 最小值为0。 **默认取值**: 不涉及。 
         :type _from: int
@@ -126,7 +126,7 @@ class BatchListSpecifiedMetricDataRequestBody:
     def metric_dimension(self):
         r"""Gets the metric_dimension of this BatchListSpecifiedMetricDataRequestBody.
 
-        **参数解释**: 指标维度, 多维度逗号分隔。 **约束限制**: 不涉及。 **取值范围**: 必须以字母开头，只能包含0-9/a-z/A-Z/_/-/,。每个维度必须以字母开头，每个维度长度最短1，最长32，多个维度直接用,分隔。 **默认取值**: 不涉及。 
+        **参数解释**: 资源维度信息, 多维度逗号分隔。 **约束限制**: 不涉及。 **取值范围**: 必须以字母开头，只能包含0-9/a-z/A-Z/_/-/,。每个维度必须以字母开头，每个维度长度最短1，最长32，多个维度直接用,分隔。 **默认取值**: 不涉及。 
 
         :return: The metric_dimension of this BatchListSpecifiedMetricDataRequestBody.
         :rtype: str
@@ -137,7 +137,7 @@ class BatchListSpecifiedMetricDataRequestBody:
     def metric_dimension(self, metric_dimension):
         r"""Sets the metric_dimension of this BatchListSpecifiedMetricDataRequestBody.
 
-        **参数解释**: 指标维度, 多维度逗号分隔。 **约束限制**: 不涉及。 **取值范围**: 必须以字母开头，只能包含0-9/a-z/A-Z/_/-/,。每个维度必须以字母开头，每个维度长度最短1，最长32，多个维度直接用,分隔。 **默认取值**: 不涉及。 
+        **参数解释**: 资源维度信息, 多维度逗号分隔。 **约束限制**: 不涉及。 **取值范围**: 必须以字母开头，只能包含0-9/a-z/A-Z/_/-/,。每个维度必须以字母开头，每个维度长度最短1，最长32，多个维度直接用,分隔。 **默认取值**: 不涉及。 
 
         :param metric_dimension: The metric_dimension of this BatchListSpecifiedMetricDataRequestBody.
         :type metric_dimension: str

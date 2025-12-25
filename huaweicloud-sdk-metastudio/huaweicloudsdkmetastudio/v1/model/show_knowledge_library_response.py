@@ -18,8 +18,8 @@ class ShowKnowledgeLibraryResponse(SdkResponse):
     openapi_types = {
         'knowledge_library_id': 'str',
         'name': 'str',
-        'language': 'LanguageEnum',
-        'knowledge_type': 'KnowledgeTypeEnum',
+        'language': 'str',
+        'knowledge_type': 'str',
         'knowledge_size': 'int',
         'topk': 'int',
         'score': 'float',
@@ -50,10 +50,10 @@ class ShowKnowledgeLibraryResponse(SdkResponse):
         :type knowledge_library_id: str
         :param name: 知识库名称。
         :type name: str
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
-        :param knowledge_type: 
-        :type knowledge_type: :class:`huaweicloudsdkmetastudio.v1.KnowledgeTypeEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
+        :param knowledge_type: 知识库类型 * QUESTION_ANSWER：问答 * DOCUMENT：文档
+        :type knowledge_type: str
         :param knowledge_size: 知识库大小(文档库为文档数量)
         :type knowledge_size: int
         :param topk: 文档库召回topk
@@ -151,8 +151,10 @@ class ShowKnowledgeLibraryResponse(SdkResponse):
     def language(self):
         r"""Gets the language of this ShowKnowledgeLibraryResponse.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this ShowKnowledgeLibraryResponse.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -160,8 +162,10 @@ class ShowKnowledgeLibraryResponse(SdkResponse):
     def language(self, language):
         r"""Sets the language of this ShowKnowledgeLibraryResponse.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this ShowKnowledgeLibraryResponse.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 
@@ -169,8 +173,10 @@ class ShowKnowledgeLibraryResponse(SdkResponse):
     def knowledge_type(self):
         r"""Gets the knowledge_type of this ShowKnowledgeLibraryResponse.
 
+        知识库类型 * QUESTION_ANSWER：问答 * DOCUMENT：文档
+
         :return: The knowledge_type of this ShowKnowledgeLibraryResponse.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.KnowledgeTypeEnum`
+        :rtype: str
         """
         return self._knowledge_type
 
@@ -178,8 +184,10 @@ class ShowKnowledgeLibraryResponse(SdkResponse):
     def knowledge_type(self, knowledge_type):
         r"""Sets the knowledge_type of this ShowKnowledgeLibraryResponse.
 
+        知识库类型 * QUESTION_ANSWER：问答 * DOCUMENT：文档
+
         :param knowledge_type: The knowledge_type of this ShowKnowledgeLibraryResponse.
-        :type knowledge_type: :class:`huaweicloudsdkmetastudio.v1.KnowledgeTypeEnum`
+        :type knowledge_type: str
         """
         self._knowledge_type = knowledge_type
 

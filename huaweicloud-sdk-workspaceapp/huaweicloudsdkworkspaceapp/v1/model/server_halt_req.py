@@ -16,7 +16,7 @@ class ServerHaltReq:
 
     openapi_types = {
         'items': 'list[str]',
-        'type': 'ServerHaltType'
+        'type': 'str'
     }
 
     attribute_map = {
@@ -31,8 +31,8 @@ class ServerHaltReq:
 
         :param items: 批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
         :type items: list[str]
-        :param type: 
-        :type type: :class:`huaweicloudsdkworkspaceapp.v1.ServerHaltType`
+        :param type: 停机类型： * &#x60;SOFT&#x60; - 普通 * &#x60;HARD&#x60; - 强制
+        :type type: str
         """
         
         
@@ -70,8 +70,10 @@ class ServerHaltReq:
     def type(self):
         r"""Gets the type of this ServerHaltReq.
 
+        停机类型： * `SOFT` - 普通 * `HARD` - 强制
+
         :return: The type of this ServerHaltReq.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ServerHaltType`
+        :rtype: str
         """
         return self._type
 
@@ -79,8 +81,10 @@ class ServerHaltReq:
     def type(self, type):
         r"""Sets the type of this ServerHaltReq.
 
+        停机类型： * `SOFT` - 普通 * `HARD` - 强制
+
         :param type: The type of this ServerHaltReq.
-        :type type: :class:`huaweicloudsdkworkspaceapp.v1.ServerHaltType`
+        :type type: str
         """
         self._type = type
 

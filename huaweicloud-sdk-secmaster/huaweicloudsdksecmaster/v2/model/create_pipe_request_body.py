@@ -15,95 +15,79 @@ class CreatePipeRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'dataspace_id': 'str',
         'pipe_name': 'str',
+        'pipe_alias': 'str',
+        'category': 'str',
+        'directory': 'str',
         'description': 'str',
-        'storage_period': 'int',
-        'shards': 'int',
-        'timestamp_field': 'str',
-        'mapping': 'dict(str, KeyIndex)'
+        'schema': 'PipeSchema',
+        'storage_setting': 'PipeStorageSetting',
+        'display_setting': 'TableDisplaySetting'
     }
 
     attribute_map = {
-        'dataspace_id': 'dataspace_id',
         'pipe_name': 'pipe_name',
+        'pipe_alias': 'pipe_alias',
+        'category': 'category',
+        'directory': 'directory',
         'description': 'description',
-        'storage_period': 'storage_period',
-        'shards': 'shards',
-        'timestamp_field': 'timestamp_field',
-        'mapping': 'mapping'
+        'schema': 'schema',
+        'storage_setting': 'storage_setting',
+        'display_setting': 'display_setting'
     }
 
-    def __init__(self, dataspace_id=None, pipe_name=None, description=None, storage_period=None, shards=None, timestamp_field=None, mapping=None):
+    def __init__(self, pipe_name=None, pipe_alias=None, category=None, directory=None, description=None, schema=None, storage_setting=None, display_setting=None):
         r"""CreatePipeRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param dataspace_id: 工作空间ID
-        :type dataspace_id: str
-        :param pipe_name: 数据管道名称
+        :param pipe_name: 管道名称
         :type pipe_name: str
-        :param description: 描述
+        :param pipe_alias: 管道别名
+        :type pipe_alias: str
+        :param category: **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
+        :type category: str
+        :param directory: directory 目录分组
+        :type directory: str
+        :param description: 管道描述
         :type description: str
-        :param storage_period: 数据的保存时间，单位为天；默认30天，取值范围为1~3600
-        :type storage_period: int
-        :param shards: 数据管道分区个数；默认创建1个，最大支持创建64个分区
-        :type shards: int
-        :param timestamp_field: 时间戳字段
-        :type timestamp_field: str
-        :param mapping: 索引字段映射；每个key对象承载一个字段的信息；存在多个key对象，key可变，表示字段名称；可嵌套
-        :type mapping: dict(str, KeyIndex)
+        :param schema: 
+        :type schema: :class:`huaweicloudsdksecmaster.v2.PipeSchema`
+        :param storage_setting: 
+        :type storage_setting: :class:`huaweicloudsdksecmaster.v2.PipeStorageSetting`
+        :param display_setting: 
+        :type display_setting: :class:`huaweicloudsdksecmaster.v2.TableDisplaySetting`
         """
         
         
 
-        self._dataspace_id = None
         self._pipe_name = None
+        self._pipe_alias = None
+        self._category = None
+        self._directory = None
         self._description = None
-        self._storage_period = None
-        self._shards = None
-        self._timestamp_field = None
-        self._mapping = None
+        self._schema = None
+        self._storage_setting = None
+        self._display_setting = None
         self.discriminator = None
 
-        self.dataspace_id = dataspace_id
         self.pipe_name = pipe_name
+        self.pipe_alias = pipe_alias
+        self.category = category
+        if directory is not None:
+            self.directory = directory
         if description is not None:
             self.description = description
-        self.storage_period = storage_period
-        self.shards = shards
-        if timestamp_field is not None:
-            self.timestamp_field = timestamp_field
-        if mapping is not None:
-            self.mapping = mapping
-
-    @property
-    def dataspace_id(self):
-        r"""Gets the dataspace_id of this CreatePipeRequestBody.
-
-        工作空间ID
-
-        :return: The dataspace_id of this CreatePipeRequestBody.
-        :rtype: str
-        """
-        return self._dataspace_id
-
-    @dataspace_id.setter
-    def dataspace_id(self, dataspace_id):
-        r"""Sets the dataspace_id of this CreatePipeRequestBody.
-
-        工作空间ID
-
-        :param dataspace_id: The dataspace_id of this CreatePipeRequestBody.
-        :type dataspace_id: str
-        """
-        self._dataspace_id = dataspace_id
+        self.schema = schema
+        self.storage_setting = storage_setting
+        if display_setting is not None:
+            self.display_setting = display_setting
 
     @property
     def pipe_name(self):
         r"""Gets the pipe_name of this CreatePipeRequestBody.
 
-        数据管道名称
+        管道名称
 
         :return: The pipe_name of this CreatePipeRequestBody.
         :rtype: str
@@ -114,7 +98,7 @@ class CreatePipeRequestBody:
     def pipe_name(self, pipe_name):
         r"""Sets the pipe_name of this CreatePipeRequestBody.
 
-        数据管道名称
+        管道名称
 
         :param pipe_name: The pipe_name of this CreatePipeRequestBody.
         :type pipe_name: str
@@ -122,10 +106,76 @@ class CreatePipeRequestBody:
         self._pipe_name = pipe_name
 
     @property
+    def pipe_alias(self):
+        r"""Gets the pipe_alias of this CreatePipeRequestBody.
+
+        管道别名
+
+        :return: The pipe_alias of this CreatePipeRequestBody.
+        :rtype: str
+        """
+        return self._pipe_alias
+
+    @pipe_alias.setter
+    def pipe_alias(self, pipe_alias):
+        r"""Sets the pipe_alias of this CreatePipeRequestBody.
+
+        管道别名
+
+        :param pipe_alias: The pipe_alias of this CreatePipeRequestBody.
+        :type pipe_alias: str
+        """
+        self._pipe_alias = pipe_alias
+
+    @property
+    def category(self):
+        r"""Gets the category of this CreatePipeRequestBody.
+
+        **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
+
+        :return: The category of this CreatePipeRequestBody.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        r"""Sets the category of this CreatePipeRequestBody.
+
+        **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
+
+        :param category: The category of this CreatePipeRequestBody.
+        :type category: str
+        """
+        self._category = category
+
+    @property
+    def directory(self):
+        r"""Gets the directory of this CreatePipeRequestBody.
+
+        directory 目录分组
+
+        :return: The directory of this CreatePipeRequestBody.
+        :rtype: str
+        """
+        return self._directory
+
+    @directory.setter
+    def directory(self, directory):
+        r"""Sets the directory of this CreatePipeRequestBody.
+
+        directory 目录分组
+
+        :param directory: The directory of this CreatePipeRequestBody.
+        :type directory: str
+        """
+        self._directory = directory
+
+    @property
     def description(self):
         r"""Gets the description of this CreatePipeRequestBody.
 
-        描述
+        管道描述
 
         :return: The description of this CreatePipeRequestBody.
         :rtype: str
@@ -136,7 +186,7 @@ class CreatePipeRequestBody:
     def description(self, description):
         r"""Sets the description of this CreatePipeRequestBody.
 
-        描述
+        管道描述
 
         :param description: The description of this CreatePipeRequestBody.
         :type description: str
@@ -144,92 +194,58 @@ class CreatePipeRequestBody:
         self._description = description
 
     @property
-    def storage_period(self):
-        r"""Gets the storage_period of this CreatePipeRequestBody.
+    def schema(self):
+        r"""Gets the schema of this CreatePipeRequestBody.
 
-        数据的保存时间，单位为天；默认30天，取值范围为1~3600
-
-        :return: The storage_period of this CreatePipeRequestBody.
-        :rtype: int
+        :return: The schema of this CreatePipeRequestBody.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.PipeSchema`
         """
-        return self._storage_period
+        return self._schema
 
-    @storage_period.setter
-    def storage_period(self, storage_period):
-        r"""Sets the storage_period of this CreatePipeRequestBody.
+    @schema.setter
+    def schema(self, schema):
+        r"""Sets the schema of this CreatePipeRequestBody.
 
-        数据的保存时间，单位为天；默认30天，取值范围为1~3600
-
-        :param storage_period: The storage_period of this CreatePipeRequestBody.
-        :type storage_period: int
+        :param schema: The schema of this CreatePipeRequestBody.
+        :type schema: :class:`huaweicloudsdksecmaster.v2.PipeSchema`
         """
-        self._storage_period = storage_period
+        self._schema = schema
 
     @property
-    def shards(self):
-        r"""Gets the shards of this CreatePipeRequestBody.
+    def storage_setting(self):
+        r"""Gets the storage_setting of this CreatePipeRequestBody.
 
-        数据管道分区个数；默认创建1个，最大支持创建64个分区
-
-        :return: The shards of this CreatePipeRequestBody.
-        :rtype: int
+        :return: The storage_setting of this CreatePipeRequestBody.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.PipeStorageSetting`
         """
-        return self._shards
+        return self._storage_setting
 
-    @shards.setter
-    def shards(self, shards):
-        r"""Sets the shards of this CreatePipeRequestBody.
+    @storage_setting.setter
+    def storage_setting(self, storage_setting):
+        r"""Sets the storage_setting of this CreatePipeRequestBody.
 
-        数据管道分区个数；默认创建1个，最大支持创建64个分区
-
-        :param shards: The shards of this CreatePipeRequestBody.
-        :type shards: int
+        :param storage_setting: The storage_setting of this CreatePipeRequestBody.
+        :type storage_setting: :class:`huaweicloudsdksecmaster.v2.PipeStorageSetting`
         """
-        self._shards = shards
+        self._storage_setting = storage_setting
 
     @property
-    def timestamp_field(self):
-        r"""Gets the timestamp_field of this CreatePipeRequestBody.
+    def display_setting(self):
+        r"""Gets the display_setting of this CreatePipeRequestBody.
 
-        时间戳字段
-
-        :return: The timestamp_field of this CreatePipeRequestBody.
-        :rtype: str
+        :return: The display_setting of this CreatePipeRequestBody.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.TableDisplaySetting`
         """
-        return self._timestamp_field
+        return self._display_setting
 
-    @timestamp_field.setter
-    def timestamp_field(self, timestamp_field):
-        r"""Sets the timestamp_field of this CreatePipeRequestBody.
+    @display_setting.setter
+    def display_setting(self, display_setting):
+        r"""Sets the display_setting of this CreatePipeRequestBody.
 
-        时间戳字段
-
-        :param timestamp_field: The timestamp_field of this CreatePipeRequestBody.
-        :type timestamp_field: str
+        :param display_setting: The display_setting of this CreatePipeRequestBody.
+        :type display_setting: :class:`huaweicloudsdksecmaster.v2.TableDisplaySetting`
         """
-        self._timestamp_field = timestamp_field
-
-    @property
-    def mapping(self):
-        r"""Gets the mapping of this CreatePipeRequestBody.
-
-        索引字段映射；每个key对象承载一个字段的信息；存在多个key对象，key可变，表示字段名称；可嵌套
-
-        :return: The mapping of this CreatePipeRequestBody.
-        :rtype: dict(str, KeyIndex)
-        """
-        return self._mapping
-
-    @mapping.setter
-    def mapping(self, mapping):
-        r"""Sets the mapping of this CreatePipeRequestBody.
-
-        索引字段映射；每个key对象承载一个字段的信息；存在多个key对象，key可变，表示字段名称；可嵌套
-
-        :param mapping: The mapping of this CreatePipeRequestBody.
-        :type mapping: dict(str, KeyIndex)
-        """
-        self._mapping = mapping
+        self._display_setting = display_setting
 
     def to_dict(self):
         result = {}

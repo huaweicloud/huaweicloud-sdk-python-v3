@@ -15,7 +15,7 @@ class SiteNetworkTopology:
     sensitive_list = []
 
     openapi_types = {
-        'topology': 'SiteNetworkTopologyEnum'
+        'topology': 'str'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class SiteNetworkTopology:
 
         The model defined in huaweicloud sdk
 
-        :param topology: 
-        :type topology: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`
+        :param topology: 拓扑结构。 - p2p（点对点拓扑） - mesh （网状拓扑） - star （星形拓扑） - hybrid （混合拓扑）
+        :type topology: str
         """
         
         
@@ -42,8 +42,10 @@ class SiteNetworkTopology:
     def topology(self):
         r"""Gets the topology of this SiteNetworkTopology.
 
+        拓扑结构。 - p2p（点对点拓扑） - mesh （网状拓扑） - star （星形拓扑） - hybrid （混合拓扑）
+
         :return: The topology of this SiteNetworkTopology.
-        :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`
+        :rtype: str
         """
         return self._topology
 
@@ -51,8 +53,10 @@ class SiteNetworkTopology:
     def topology(self, topology):
         r"""Sets the topology of this SiteNetworkTopology.
 
+        拓扑结构。 - p2p（点对点拓扑） - mesh （网状拓扑） - star （星形拓扑） - hybrid （混合拓扑）
+
         :param topology: The topology of this SiteNetworkTopology.
-        :type topology: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`
+        :type topology: str
         """
         self._topology = topology
 

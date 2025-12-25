@@ -15,7 +15,7 @@ class UpdateMemberReq:
     sensitive_list = []
 
     openapi_types = {
-        'role': 'ProjectRoleType'
+        'role': 'str'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class UpdateMemberReq:
         The model defined in huaweicloud sdk
 
         :param role: 
-        :type role: :class:`huaweicloudsdkeihealth.v1.ProjectRoleType`
+        :type role: str
         """
         
         
@@ -43,7 +43,7 @@ class UpdateMemberReq:
         r"""Gets the role of this UpdateMemberReq.
 
         :return: The role of this UpdateMemberReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ProjectRoleType`
+        :rtype: str
         """
         return self._role
 
@@ -52,7 +52,7 @@ class UpdateMemberReq:
         r"""Sets the role of this UpdateMemberReq.
 
         :param role: The role of this UpdateMemberReq.
-        :type role: :class:`huaweicloudsdkeihealth.v1.ProjectRoleType`
+        :type role: str
         """
         self._role = role
 

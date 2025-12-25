@@ -18,7 +18,7 @@ class ServerOffering:
         'id': 'str',
         'zone_code': 'str',
         'scene_code': 'str',
-        'status': 'OfferingStatus',
+        'status': 'str',
         'spec': 'ServerSpec',
         'product_info': 'ProductInfo',
         'sale_cycles': 'list[SaleCycle]'
@@ -45,8 +45,8 @@ class ServerOffering:
         :type zone_code: str
         :param scene_code: 销售场景编码
         :type scene_code: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkcloudpond.v2.OfferingStatus`
+        :param status: 商品状态说明：   - TESTING - 测试   - ONSALE - 在售   - SUSPENDED - 已停售   - RETIREMENT - 产品退出
+        :type status: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcloudpond.v2.ServerSpec`
         :param product_info: 
@@ -151,8 +151,10 @@ class ServerOffering:
     def status(self):
         r"""Gets the status of this ServerOffering.
 
+        商品状态说明：   - TESTING - 测试   - ONSALE - 在售   - SUSPENDED - 已停售   - RETIREMENT - 产品退出
+
         :return: The status of this ServerOffering.
-        :rtype: :class:`huaweicloudsdkcloudpond.v2.OfferingStatus`
+        :rtype: str
         """
         return self._status
 
@@ -160,8 +162,10 @@ class ServerOffering:
     def status(self, status):
         r"""Sets the status of this ServerOffering.
 
+        商品状态说明：   - TESTING - 测试   - ONSALE - 在售   - SUSPENDED - 已停售   - RETIREMENT - 产品退出
+
         :param status: The status of this ServerOffering.
-        :type status: :class:`huaweicloudsdkcloudpond.v2.OfferingStatus`
+        :type status: str
         """
         self._status = status
 

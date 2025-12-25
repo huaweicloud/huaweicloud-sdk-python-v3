@@ -17,7 +17,7 @@ class CreateModelReq:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'type': 'ModelType',
+        'type': 'str',
         'file': 'ModelFile',
         'shareable': 'bool',
         'base_model_id': 'str'
@@ -41,8 +41,8 @@ class CreateModelReq:
         :type name: str
         :param description: 模型描述信息
         :type description: str
-        :param type: 
-        :type type: :class:`huaweicloudsdkeihealth.v1.ModelType`
+        :param type: 模型类型
+        :type type: str
         :param file: 
         :type file: :class:`huaweicloudsdkeihealth.v1.ModelFile`
         :param shareable: 是否打开组织共享
@@ -119,8 +119,10 @@ class CreateModelReq:
     def type(self):
         r"""Gets the type of this CreateModelReq.
 
+        模型类型
+
         :return: The type of this CreateModelReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ModelType`
+        :rtype: str
         """
         return self._type
 
@@ -128,8 +130,10 @@ class CreateModelReq:
     def type(self, type):
         r"""Sets the type of this CreateModelReq.
 
+        模型类型
+
         :param type: The type of this CreateModelReq.
-        :type type: :class:`huaweicloudsdkeihealth.v1.ModelType`
+        :type type: str
         """
         self._type = type
 

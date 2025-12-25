@@ -16,11 +16,11 @@ class OtpConfigInfo:
 
     openapi_types = {
         'enable': 'bool',
-        'receive_mode': 'ReceiveModeEnum',
+        'receive_mode': 'str',
         'auth_url': 'str',
         'app_id': 'str',
         'app_secret': 'str',
-        'auth_server_access_mode': 'AuthServerAccessMode',
+        'auth_server_access_mode': 'str',
         'cert_content': 'str',
         'apply_rule': 'ApplyRuleInfo'
     }
@@ -43,16 +43,16 @@ class OtpConfigInfo:
 
         :param enable: 是否启用。
         :type enable: bool
-        :param receive_mode: 
-        :type receive_mode: :class:`huaweicloudsdkworkspace.v2.ReceiveModeEnum`
+        :param receive_mode: 验证码接收模式 VMFA：虚拟MFA设备 HMFA：硬件MFA设备
+        :type receive_mode: str
         :param auth_url: 辅助认证服务器地址。
         :type auth_url: str
         :param app_id: 认证服务接入账号。
         :type app_id: str
         :param app_secret: 认证服务接入密码。
         :type app_secret: str
-        :param auth_server_access_mode: 
-        :type auth_server_access_mode: :class:`huaweicloudsdkworkspace.v2.AuthServerAccessMode`
+        :param auth_server_access_mode: 辅助认证服务接入模式 INTERNET：互联网接入 DEDICATED：专线接入 SYSTEM_DEFAULT：系统默认
+        :type auth_server_access_mode: str
         :param cert_content: pem格式证书内容。
         :type cert_content: str
         :param apply_rule: 
@@ -114,8 +114,10 @@ class OtpConfigInfo:
     def receive_mode(self):
         r"""Gets the receive_mode of this OtpConfigInfo.
 
+        验证码接收模式 VMFA：虚拟MFA设备 HMFA：硬件MFA设备
+
         :return: The receive_mode of this OtpConfigInfo.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.ReceiveModeEnum`
+        :rtype: str
         """
         return self._receive_mode
 
@@ -123,8 +125,10 @@ class OtpConfigInfo:
     def receive_mode(self, receive_mode):
         r"""Sets the receive_mode of this OtpConfigInfo.
 
+        验证码接收模式 VMFA：虚拟MFA设备 HMFA：硬件MFA设备
+
         :param receive_mode: The receive_mode of this OtpConfigInfo.
-        :type receive_mode: :class:`huaweicloudsdkworkspace.v2.ReceiveModeEnum`
+        :type receive_mode: str
         """
         self._receive_mode = receive_mode
 
@@ -198,8 +202,10 @@ class OtpConfigInfo:
     def auth_server_access_mode(self):
         r"""Gets the auth_server_access_mode of this OtpConfigInfo.
 
+        辅助认证服务接入模式 INTERNET：互联网接入 DEDICATED：专线接入 SYSTEM_DEFAULT：系统默认
+
         :return: The auth_server_access_mode of this OtpConfigInfo.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.AuthServerAccessMode`
+        :rtype: str
         """
         return self._auth_server_access_mode
 
@@ -207,8 +213,10 @@ class OtpConfigInfo:
     def auth_server_access_mode(self, auth_server_access_mode):
         r"""Sets the auth_server_access_mode of this OtpConfigInfo.
 
+        辅助认证服务接入模式 INTERNET：互联网接入 DEDICATED：专线接入 SYSTEM_DEFAULT：系统默认
+
         :param auth_server_access_mode: The auth_server_access_mode of this OtpConfigInfo.
-        :type auth_server_access_mode: :class:`huaweicloudsdkworkspace.v2.AuthServerAccessMode`
+        :type auth_server_access_mode: str
         """
         self._auth_server_access_mode = auth_server_access_mode
 

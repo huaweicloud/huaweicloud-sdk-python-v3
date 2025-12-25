@@ -24,7 +24,8 @@ class AsyncAssociateRGAndTemplatesReq:
         'effective_timezone': 'str',
         'enterprise_project_id': 'str',
         'notification_manner': 'str',
-        'notification_policy_ids': 'list[str]'
+        'notification_policy_ids': 'list[str]',
+        'notice_type_notification_template_list': 'list[NoticeTypeNotificationTemplateList]'
     }
 
     attribute_map = {
@@ -37,34 +38,37 @@ class AsyncAssociateRGAndTemplatesReq:
         'effective_timezone': 'effective_timezone',
         'enterprise_project_id': 'enterprise_project_id',
         'notification_manner': 'notification_manner',
-        'notification_policy_ids': 'notification_policy_ids'
+        'notification_policy_ids': 'notification_policy_ids',
+        'notice_type_notification_template_list': 'notice_type_notification_template_list'
     }
 
-    def __init__(self, template_ids=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None, enterprise_project_id=None, notification_manner=None, notification_policy_ids=None):
+    def __init__(self, template_ids=None, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None, enterprise_project_id=None, notification_manner=None, notification_policy_ids=None, notice_type_notification_template_list=None):
         r"""AsyncAssociateRGAndTemplatesReq
 
         The model defined in huaweicloud sdk
 
         :param template_ids: 告警模板编号列表，当ID列表为空时，将删除该资源分组已关联的告警模板所创建的告警规则
         :type template_ids: list[str]
-        :param notification_enabled: **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
+        :param notification_enabled: **参数解释**： 是否开启告警通知。说明：若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。    **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type notification_enabled: bool
         :param alarm_notifications: 告警触发通知列表
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
         :param ok_notifications: 告警恢复通知列表
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param notification_begin_time: **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        :param notification_begin_time: **参数解释**： 告警通知开启时间。如 00:00    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_begin_time: str
-        :param notification_end_time: **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        :param notification_end_time: **参数解释**： 告警通知关闭时间。如 08:00  **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_end_time: str
         :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
         :type effective_timezone: str
-        :param enterprise_project_id: **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。           **默认取值**： 不涉及。 
+        :param enterprise_project_id: **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。0 代表默认企业项目ID         **默认取值**： 不涉及。 
         :type enterprise_project_id: str
-        :param notification_manner: NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
+        :param notification_manner: **参数解释**： 通知方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值。取值为NOTIFICATION_GROUP、TOPIC_SUBSCRIPTION、NOTIFICATION_POLICY - NOTIFICATION_GROUP: 通知组 - TOPIC_SUBSCRIPTION: 主题订阅 - NOTIFICATION_POLICY: 通知策略 **默认取值**： 不涉及。 
         :type notification_manner: str
         :param notification_policy_ids: 关联的通知策略ID列表
         :type notification_policy_ids: list[str]
+        :param notice_type_notification_template_list: 告警通知模板列表
+        :type notice_type_notification_template_list: list[:class:`huaweicloudsdkces.v2.NoticeTypeNotificationTemplateList`]
         """
         
         
@@ -79,6 +83,7 @@ class AsyncAssociateRGAndTemplatesReq:
         self._enterprise_project_id = None
         self._notification_manner = None
         self._notification_policy_ids = None
+        self._notice_type_notification_template_list = None
         self.discriminator = None
 
         self.template_ids = template_ids
@@ -99,6 +104,8 @@ class AsyncAssociateRGAndTemplatesReq:
             self.notification_manner = notification_manner
         if notification_policy_ids is not None:
             self.notification_policy_ids = notification_policy_ids
+        if notice_type_notification_template_list is not None:
+            self.notice_type_notification_template_list = notice_type_notification_template_list
 
     @property
     def template_ids(self):
@@ -126,7 +133,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
+        **参数解释**： 是否开启告警通知。说明：若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。    **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :return: The notification_enabled of this AsyncAssociateRGAndTemplatesReq.
         :rtype: bool
@@ -137,7 +144,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
+        **参数解释**： 是否开启告警通知。说明：若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。    **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :param notification_enabled: The notification_enabled of this AsyncAssociateRGAndTemplatesReq.
         :type notification_enabled: bool
@@ -192,7 +199,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。如 00:00    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
         :rtype: str
@@ -203,7 +210,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。如 00:00    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_begin_time: The notification_begin_time of this AsyncAssociateRGAndTemplatesReq.
         :type notification_begin_time: str
@@ -214,7 +221,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_end_time(self):
         r"""Gets the notification_end_time of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。如 08:00  **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_end_time of this AsyncAssociateRGAndTemplatesReq.
         :rtype: str
@@ -225,7 +232,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。如 08:00  **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_end_time: The notification_end_time of this AsyncAssociateRGAndTemplatesReq.
         :type notification_end_time: str
@@ -258,7 +265,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。           **默认取值**： 不涉及。 
+        **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。0 代表默认企业项目ID         **默认取值**： 不涉及。 
 
         :return: The enterprise_project_id of this AsyncAssociateRGAndTemplatesReq.
         :rtype: str
@@ -269,7 +276,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this AsyncAssociateRGAndTemplatesReq.
 
-        **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。           **默认取值**： 不涉及。 
+        **参数解释**： 企业项目ID。     **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”。0 代表默认企业项目ID         **默认取值**： 不涉及。 
 
         :param enterprise_project_id: The enterprise_project_id of this AsyncAssociateRGAndTemplatesReq.
         :type enterprise_project_id: str
@@ -280,7 +287,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_manner(self):
         r"""Gets the notification_manner of this AsyncAssociateRGAndTemplatesReq.
 
-        NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
+        **参数解释**： 通知方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值。取值为NOTIFICATION_GROUP、TOPIC_SUBSCRIPTION、NOTIFICATION_POLICY - NOTIFICATION_GROUP: 通知组 - TOPIC_SUBSCRIPTION: 主题订阅 - NOTIFICATION_POLICY: 通知策略 **默认取值**： 不涉及。 
 
         :return: The notification_manner of this AsyncAssociateRGAndTemplatesReq.
         :rtype: str
@@ -291,7 +298,7 @@ class AsyncAssociateRGAndTemplatesReq:
     def notification_manner(self, notification_manner):
         r"""Sets the notification_manner of this AsyncAssociateRGAndTemplatesReq.
 
-        NOTIFICATION_GROUP(通知组)/TOPIC_SUBSCRIPTION(主题订阅)/NOTIFICATION_POLICY(通知策略)
+        **参数解释**： 通知方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值。取值为NOTIFICATION_GROUP、TOPIC_SUBSCRIPTION、NOTIFICATION_POLICY - NOTIFICATION_GROUP: 通知组 - TOPIC_SUBSCRIPTION: 主题订阅 - NOTIFICATION_POLICY: 通知策略 **默认取值**： 不涉及。 
 
         :param notification_manner: The notification_manner of this AsyncAssociateRGAndTemplatesReq.
         :type notification_manner: str
@@ -319,6 +326,28 @@ class AsyncAssociateRGAndTemplatesReq:
         :type notification_policy_ids: list[str]
         """
         self._notification_policy_ids = notification_policy_ids
+
+    @property
+    def notice_type_notification_template_list(self):
+        r"""Gets the notice_type_notification_template_list of this AsyncAssociateRGAndTemplatesReq.
+
+        告警通知模板列表
+
+        :return: The notice_type_notification_template_list of this AsyncAssociateRGAndTemplatesReq.
+        :rtype: list[:class:`huaweicloudsdkces.v2.NoticeTypeNotificationTemplateList`]
+        """
+        return self._notice_type_notification_template_list
+
+    @notice_type_notification_template_list.setter
+    def notice_type_notification_template_list(self, notice_type_notification_template_list):
+        r"""Sets the notice_type_notification_template_list of this AsyncAssociateRGAndTemplatesReq.
+
+        告警通知模板列表
+
+        :param notice_type_notification_template_list: The notice_type_notification_template_list of this AsyncAssociateRGAndTemplatesReq.
+        :type notice_type_notification_template_list: list[:class:`huaweicloudsdkces.v2.NoticeTypeNotificationTemplateList`]
+        """
+        self._notice_type_notification_template_list = notice_type_notification_template_list
 
     def to_dict(self):
         result = {}

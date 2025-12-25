@@ -16,7 +16,7 @@ class OrganizationStructureBaseLine:
 
     openapi_types = {
         'organizational_unit_name': 'str',
-        'organizational_unit_type': 'OrganizationalUnitTypeForSetup',
+        'organizational_unit_type': 'str',
         'accounts': 'list[AccountBaseline]'
     }
 
@@ -33,8 +33,8 @@ class OrganizationStructureBaseLine:
 
         :param organizational_unit_name: 注册OU名称。
         :type organizational_unit_name: str
-        :param organizational_unit_type: 
-        :type organizational_unit_type: :class:`huaweicloudsdkrgc.v1.OrganizationalUnitTypeForSetup`
+        :param organizational_unit_type: 可设置的注册OU类型。包括核心注册OU和自定义注册OU。
+        :type organizational_unit_type: str
         :param accounts: 纳管账号基本信息。
         :type accounts: list[:class:`huaweicloudsdkrgc.v1.AccountBaseline`]
         """
@@ -78,8 +78,10 @@ class OrganizationStructureBaseLine:
     def organizational_unit_type(self):
         r"""Gets the organizational_unit_type of this OrganizationStructureBaseLine.
 
+        可设置的注册OU类型。包括核心注册OU和自定义注册OU。
+
         :return: The organizational_unit_type of this OrganizationStructureBaseLine.
-        :rtype: :class:`huaweicloudsdkrgc.v1.OrganizationalUnitTypeForSetup`
+        :rtype: str
         """
         return self._organizational_unit_type
 
@@ -87,8 +89,10 @@ class OrganizationStructureBaseLine:
     def organizational_unit_type(self, organizational_unit_type):
         r"""Sets the organizational_unit_type of this OrganizationStructureBaseLine.
 
+        可设置的注册OU类型。包括核心注册OU和自定义注册OU。
+
         :param organizational_unit_type: The organizational_unit_type of this OrganizationStructureBaseLine.
-        :type organizational_unit_type: :class:`huaweicloudsdkrgc.v1.OrganizationalUnitTypeForSetup`
+        :type organizational_unit_type: str
         """
         self._organizational_unit_type = organizational_unit_type
 

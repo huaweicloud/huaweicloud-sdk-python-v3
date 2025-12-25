@@ -17,7 +17,7 @@ class CreateRequestResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'status': 'RequestStatus',
+        'status': 'str',
         'dispatched_task_number': 'int'
     }
 
@@ -34,8 +34,8 @@ class CreateRequestResponse(SdkResponse):
 
         :param request_id: the unique id of the request
         :type request_id: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
+        :param status: An enumeration. - created - dispatched - completed - timeout - unknown
+        :type status: str
         :param dispatched_task_number: the number of tasks dispatched successfully
         :type dispatched_task_number: int
         """
@@ -80,8 +80,10 @@ class CreateRequestResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this CreateRequestResponse.
 
+        An enumeration. - created - dispatched - completed - timeout - unknown
+
         :return: The status of this CreateRequestResponse.
-        :rtype: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
+        :rtype: str
         """
         return self._status
 
@@ -89,8 +91,10 @@ class CreateRequestResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this CreateRequestResponse.
 
+        An enumeration. - created - dispatched - completed - timeout - unknown
+
         :param status: The status of this CreateRequestResponse.
-        :type status: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
+        :type status: str
         """
         self._status = status
 

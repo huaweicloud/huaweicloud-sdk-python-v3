@@ -31,11 +31,11 @@ class Detail:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 属性类型。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 属性类型。 **取值范围**： - vCPU：CPU核心数。 - SATA：普通IO。 - SAS：高IO。 - SSD：超高IO。 - ESSD：极速型SSD。 - GPSSD：通用型SSD。 - LOCAL_DISK：本地盘。 - mem：内存大小。
         :type type: str
         :param value: **参数解释**： 属性值。 **取值范围**： 不涉及。
         :type value: str
-        :param unit: **参数解释**： 属性单位。 **取值范围**： 不涉及。
+        :param unit: **参数解释**： 属性单位。 **取值范围**： 当type为SATA、SAS、SSD、ESSD时，表示磁盘单位GB
         :type unit: str
         """
         
@@ -56,7 +56,7 @@ class Detail:
     def type(self):
         r"""Gets the type of this Detail.
 
-        **参数解释**： 属性类型。 **取值范围**： 不涉及。
+        **参数解释**： 属性类型。 **取值范围**： - vCPU：CPU核心数。 - SATA：普通IO。 - SAS：高IO。 - SSD：超高IO。 - ESSD：极速型SSD。 - GPSSD：通用型SSD。 - LOCAL_DISK：本地盘。 - mem：内存大小。
 
         :return: The type of this Detail.
         :rtype: str
@@ -67,7 +67,7 @@ class Detail:
     def type(self, type):
         r"""Sets the type of this Detail.
 
-        **参数解释**： 属性类型。 **取值范围**： 不涉及。
+        **参数解释**： 属性类型。 **取值范围**： - vCPU：CPU核心数。 - SATA：普通IO。 - SAS：高IO。 - SSD：超高IO。 - ESSD：极速型SSD。 - GPSSD：通用型SSD。 - LOCAL_DISK：本地盘。 - mem：内存大小。
 
         :param type: The type of this Detail.
         :type type: str
@@ -100,7 +100,7 @@ class Detail:
     def unit(self):
         r"""Gets the unit of this Detail.
 
-        **参数解释**： 属性单位。 **取值范围**： 不涉及。
+        **参数解释**： 属性单位。 **取值范围**： 当type为SATA、SAS、SSD、ESSD时，表示磁盘单位GB
 
         :return: The unit of this Detail.
         :rtype: str
@@ -111,7 +111,7 @@ class Detail:
     def unit(self, unit):
         r"""Sets the unit of this Detail.
 
-        **参数解释**： 属性单位。 **取值范围**： 不涉及。
+        **参数解释**： 属性单位。 **取值范围**： 当type为SATA、SAS、SSD、ESSD时，表示磁盘单位GB
 
         :param unit: The unit of this Detail.
         :type unit: str

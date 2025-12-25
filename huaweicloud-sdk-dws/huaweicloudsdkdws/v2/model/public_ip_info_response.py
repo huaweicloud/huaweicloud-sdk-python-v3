@@ -41,7 +41,7 @@ class PublicIpInfoResponse:
         :type id: str
         :param address: **参数解释**： 公网IP。 **取值范围**： 合法的公网IPV4地址。
         :type address: str
-        :param status: **参数解释**： 公网IP状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 公网IP状态。 **取值范围**： - FREEZED：冻结 - BIND_ERROR：绑定失败 - BINDING：绑定中 - PENDING_DELETE：释放中 - PENDING_CREATE：创建中 - NOTIFYING：创建中 - NOTIFY_DELETE：释放中 - PENDING_UPDATE：更新中 - DOWN：未绑定 - ACTIVE：绑定 - ELB：绑定ELB - VPN：绑定VPN - ERROR：失败
         :type status: str
         :param instance_id: **参数解释**： 绑定的DWS集群的节点ID。 **取值范围**： 不涉及。
         :type instance_id: str
@@ -122,7 +122,7 @@ class PublicIpInfoResponse:
     def status(self):
         r"""Gets the status of this PublicIpInfoResponse.
 
-        **参数解释**： 公网IP状态。 **取值范围**： 不涉及。
+        **参数解释**： 公网IP状态。 **取值范围**： - FREEZED：冻结 - BIND_ERROR：绑定失败 - BINDING：绑定中 - PENDING_DELETE：释放中 - PENDING_CREATE：创建中 - NOTIFYING：创建中 - NOTIFY_DELETE：释放中 - PENDING_UPDATE：更新中 - DOWN：未绑定 - ACTIVE：绑定 - ELB：绑定ELB - VPN：绑定VPN - ERROR：失败
 
         :return: The status of this PublicIpInfoResponse.
         :rtype: str
@@ -133,7 +133,7 @@ class PublicIpInfoResponse:
     def status(self, status):
         r"""Sets the status of this PublicIpInfoResponse.
 
-        **参数解释**： 公网IP状态。 **取值范围**： 不涉及。
+        **参数解释**： 公网IP状态。 **取值范围**： - FREEZED：冻结 - BIND_ERROR：绑定失败 - BINDING：绑定中 - PENDING_DELETE：释放中 - PENDING_CREATE：创建中 - NOTIFYING：创建中 - NOTIFY_DELETE：释放中 - PENDING_UPDATE：更新中 - DOWN：未绑定 - ACTIVE：绑定 - ELB：绑定ELB - VPN：绑定VPN - ERROR：失败
 
         :param status: The status of this PublicIpInfoResponse.
         :type status: str

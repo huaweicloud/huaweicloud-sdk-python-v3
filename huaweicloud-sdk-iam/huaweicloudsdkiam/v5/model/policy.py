@@ -15,7 +15,7 @@ class Policy:
     sensitive_list = []
 
     openapi_types = {
-        'policy_type': 'PolicyType',
+        'policy_type': 'str',
         'policy_name': 'str',
         'policy_id': 'str',
         'urn': 'str',
@@ -45,8 +45,8 @@ class Policy:
 
         The model defined in huaweicloud sdk
 
-        :param policy_type: 
-        :type policy_type: :class:`huaweicloudsdkiam.v5.PolicyType`
+        :param policy_type: 身份策略类型，可以为“自定义”（custom）或“系统预置”（system）。
+        :type policy_type: str
         :param policy_name: 身份策略名称，长度为1到128个字符，只包含字母、数字、\&quot;_\&quot;、\&quot;+\&quot;、\&quot;&#x3D;\&quot;、\&quot;.\&quot;、\&quot;@\&quot;和\&quot;-\&quot;的字符串。
         :type policy_name: str
         :param policy_id: 身份策略ID，长度为1到64个字符，只包含字母、数字和\&quot;-\&quot;的字符串。
@@ -97,8 +97,10 @@ class Policy:
     def policy_type(self):
         r"""Gets the policy_type of this Policy.
 
+        身份策略类型，可以为“自定义”（custom）或“系统预置”（system）。
+
         :return: The policy_type of this Policy.
-        :rtype: :class:`huaweicloudsdkiam.v5.PolicyType`
+        :rtype: str
         """
         return self._policy_type
 
@@ -106,8 +108,10 @@ class Policy:
     def policy_type(self, policy_type):
         r"""Sets the policy_type of this Policy.
 
+        身份策略类型，可以为“自定义”（custom）或“系统预置”（system）。
+
         :param policy_type: The policy_type of this Policy.
-        :type policy_type: :class:`huaweicloudsdkiam.v5.PolicyType`
+        :type policy_type: str
         """
         self._policy_type = policy_type
 

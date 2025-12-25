@@ -126,6 +126,7 @@ from huaweicloudsdkiam.v5.model.group import Group
 from huaweicloudsdkiam.v5.model.group_description import GroupDescription
 from huaweicloudsdkiam.v5.model.group_id import GroupId
 from huaweicloudsdkiam.v5.model.group_name import GroupName
+from huaweicloudsdkiam.v5.model.group_summary import GroupSummary
 from huaweicloudsdkiam.v5.model.key import Key
 from huaweicloudsdkiam.v5.model.list_access_keys_v5_request import ListAccessKeysV5Request
 from huaweicloudsdkiam.v5.model.list_access_keys_v5_response import ListAccessKeysV5Response
@@ -193,6 +194,8 @@ from huaweicloudsdkiam.v5.model.set_default_policy_version_v5_request import Set
 from huaweicloudsdkiam.v5.model.set_default_policy_version_v5_response import SetDefaultPolicyVersionV5Response
 from huaweicloudsdkiam.v5.model.show_access_key_last_used_v5_request import ShowAccessKeyLastUsedV5Request
 from huaweicloudsdkiam.v5.model.show_access_key_last_used_v5_response import ShowAccessKeyLastUsedV5Response
+from huaweicloudsdkiam.v5.model.show_group_summary_request import ShowGroupSummaryRequest
+from huaweicloudsdkiam.v5.model.show_group_summary_response import ShowGroupSummaryResponse
 from huaweicloudsdkiam.v5.model.show_group_v5_request import ShowGroupV5Request
 from huaweicloudsdkiam.v5.model.show_group_v5_response import ShowGroupV5Response
 from huaweicloudsdkiam.v5.model.show_login_policy_v5_request import ShowLoginPolicyV5Request

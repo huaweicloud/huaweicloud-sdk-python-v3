@@ -18,8 +18,8 @@ class EndpointBriefInfo:
         'visibility': 'str',
         'id': 'str',
         'name': 'str',
-        'type': 'EndpointType',
-        'status': 'EndpointStatus',
+        'type': 'str',
+        'status': 'str',
         'description': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
@@ -59,10 +59,10 @@ class EndpointBriefInfo:
         :type id: str
         :param name: 一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线、点、空格
         :type name: str
-        :param type: 
-        :type type: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
-        :param status: 
-        :type status: :class:`huaweicloudsdkdataartsfabric.v1.EndpointStatus`
+        :param type: Endpoint的类型  - service：Service EP，代表一个可接收Service请求资源组  - ray：Ray on k8s的EP，代表一个Ray集群  - inference：推理的EP，代表一个推理函数实例  - job：Job EP，代表一个可接收Job请求资源组
+        :type type: str
+        :param status: 状态。可选值如下： CREATING：创建中 RUNNING：运行中 CREATE_FAILED：创建失败 DELETING：删除中 DELETED：已删除 UPDATING: 更新中 UPDATE_FAILED:升级失败 DELETE_FAILED：创建失败 FROZEN:冻结 INACTIVE:未开通（公共EP）
+        :type status: str
         :param description: 描述信息
         :type description: str
         :param create_time: 创建时间
@@ -193,8 +193,10 @@ class EndpointBriefInfo:
     def type(self):
         r"""Gets the type of this EndpointBriefInfo.
 
+        Endpoint的类型  - service：Service EP，代表一个可接收Service请求资源组  - ray：Ray on k8s的EP，代表一个Ray集群  - inference：推理的EP，代表一个推理函数实例  - job：Job EP，代表一个可接收Job请求资源组
+
         :return: The type of this EndpointBriefInfo.
-        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
+        :rtype: str
         """
         return self._type
 
@@ -202,8 +204,10 @@ class EndpointBriefInfo:
     def type(self, type):
         r"""Sets the type of this EndpointBriefInfo.
 
+        Endpoint的类型  - service：Service EP，代表一个可接收Service请求资源组  - ray：Ray on k8s的EP，代表一个Ray集群  - inference：推理的EP，代表一个推理函数实例  - job：Job EP，代表一个可接收Job请求资源组
+
         :param type: The type of this EndpointBriefInfo.
-        :type type: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
+        :type type: str
         """
         self._type = type
 
@@ -211,8 +215,10 @@ class EndpointBriefInfo:
     def status(self):
         r"""Gets the status of this EndpointBriefInfo.
 
+        状态。可选值如下： CREATING：创建中 RUNNING：运行中 CREATE_FAILED：创建失败 DELETING：删除中 DELETED：已删除 UPDATING: 更新中 UPDATE_FAILED:升级失败 DELETE_FAILED：创建失败 FROZEN:冻结 INACTIVE:未开通（公共EP）
+
         :return: The status of this EndpointBriefInfo.
-        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointStatus`
+        :rtype: str
         """
         return self._status
 
@@ -220,8 +226,10 @@ class EndpointBriefInfo:
     def status(self, status):
         r"""Sets the status of this EndpointBriefInfo.
 
+        状态。可选值如下： CREATING：创建中 RUNNING：运行中 CREATE_FAILED：创建失败 DELETING：删除中 DELETED：已删除 UPDATING: 更新中 UPDATE_FAILED:升级失败 DELETE_FAILED：创建失败 FROZEN:冻结 INACTIVE:未开通（公共EP）
+
         :param status: The status of this EndpointBriefInfo.
-        :type status: :class:`huaweicloudsdkdataartsfabric.v1.EndpointStatus`
+        :type status: str
         """
         self._status = status
 

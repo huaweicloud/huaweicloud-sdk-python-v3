@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ApprovalStatusEnum:
-    """
-    allowed enum values
-    """
-    DEVELOPING = "DEVELOPING"
-    APPROVED = "APPROVED"
-    REJECT = "REJECT"
-    WITHDREW = "WITHDREW"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -16,7 +16,7 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'mode': 'RecognizeReceptorPocketMode',
+        'mode': 'str',
         'pockets': 'list[DrugBoundingBoxDto]'
     }
 
@@ -30,8 +30,8 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param mode: 
-        :type mode: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
+        :param mode: 口袋识别的模式：自动、全局、配体、残基
+        :type mode: str
         :param pockets: 口袋列表
         :type pockets: list[:class:`huaweicloudsdkeihealth.v1.DrugBoundingBoxDto`]
         """
@@ -51,8 +51,10 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
     def mode(self):
         r"""Gets the mode of this RecognizeDrugReceptorPocketResponse.
 
+        口袋识别的模式：自动、全局、配体、残基
+
         :return: The mode of this RecognizeDrugReceptorPocketResponse.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
+        :rtype: str
         """
         return self._mode
 
@@ -60,8 +62,10 @@ class RecognizeDrugReceptorPocketResponse(SdkResponse):
     def mode(self, mode):
         r"""Sets the mode of this RecognizeDrugReceptorPocketResponse.
 
+        口袋识别的模式：自动、全局、配体、残基
+
         :param mode: The mode of this RecognizeDrugReceptorPocketResponse.
-        :type mode: :class:`huaweicloudsdkeihealth.v1.RecognizeReceptorPocketMode`
+        :type mode: str
         """
         self._mode = mode
 

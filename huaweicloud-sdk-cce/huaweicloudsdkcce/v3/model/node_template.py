@@ -38,6 +38,7 @@ class NodeTemplate:
         'hostname_config': 'HostnameConfig',
         'server_enterprise_project_id': 'str',
         'partition': 'str',
+        'configurations_override': 'list[PackageConfiguration]',
         'node_name_template': 'NodeSpecNodeNameTemplate'
     }
 
@@ -65,10 +66,11 @@ class NodeTemplate:
         'hostname_config': 'hostnameConfig',
         'server_enterprise_project_id': 'serverEnterpriseProjectID',
         'partition': 'partition',
+        'configurations_override': 'configurationsOverride',
         'node_name_template': 'nodeNameTemplate'
     }
 
-    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, wait_post_install_finish=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None, server_enterprise_project_id=None, partition=None, node_name_template=None):
+    def __init__(self, flavor=None, az=None, os=None, login=None, root_volume=None, data_volumes=None, storage=None, public_ip=None, node_nic_spec=None, count=None, billing_mode=None, taints=None, wait_post_install_finish=None, k8s_tags=None, ecs_group_id=None, dedicated_host_id=None, user_tags=None, runtime=None, initialized_conditions=None, extend_param=None, hostname_config=None, server_enterprise_project_id=None, partition=None, configurations_override=None, node_name_template=None):
         r"""NodeTemplate
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class NodeTemplate:
         :type server_enterprise_project_id: str
         :param partition: **参数解释**： 表示节点所属分区。分区可以选择中心云[或者[边缘小站](https://support.huaweicloud.com/usermanual-cloudpond/ies_02_0401.html)。](tag:hws)[或者[边缘小站](https://support.huaweicloud.com/intl/zh-cn/usermanual-cloudpond/ies_02_0401.html)。](tag:hws_hk) **约束限制**： 仅开启了对分布式云支持的Turbo集群支持指定该字段。 **取值范围**： - center: 中心云 - 边缘小站的可用区ID  **默认取值**： 不涉及
         :type partition: str
+        :param configurations_override: **参数解释：** 覆盖节点默认组件配置。  [当前支持的可配置组件及其参数详见[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0652.htmll)。](tag:hws) [当前支持的可配置组件及其参数详见[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0652.html)。](tag:hws_hk) **约束限制：** 若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。 
+        :type configurations_override: list[:class:`huaweicloudsdkcce.v3.PackageConfiguration`]
         :param node_name_template: 
         :type node_name_template: :class:`huaweicloudsdkcce.v3.NodeSpecNodeNameTemplate`
         """
@@ -148,6 +152,7 @@ class NodeTemplate:
         self._hostname_config = None
         self._server_enterprise_project_id = None
         self._partition = None
+        self._configurations_override = None
         self._node_name_template = None
         self.discriminator = None
 
@@ -197,6 +202,8 @@ class NodeTemplate:
             self.server_enterprise_project_id = server_enterprise_project_id
         if partition is not None:
             self.partition = partition
+        if configurations_override is not None:
+            self.configurations_override = configurations_override
         if node_name_template is not None:
             self.node_name_template = node_name_template
 
@@ -673,6 +680,28 @@ class NodeTemplate:
         :type partition: str
         """
         self._partition = partition
+
+    @property
+    def configurations_override(self):
+        r"""Gets the configurations_override of this NodeTemplate.
+
+        **参数解释：** 覆盖节点默认组件配置。  [当前支持的可配置组件及其参数详见[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0652.htmll)。](tag:hws) [当前支持的可配置组件及其参数详见[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0652.html)。](tag:hws_hk) **约束限制：** 若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。 
+
+        :return: The configurations_override of this NodeTemplate.
+        :rtype: list[:class:`huaweicloudsdkcce.v3.PackageConfiguration`]
+        """
+        return self._configurations_override
+
+    @configurations_override.setter
+    def configurations_override(self, configurations_override):
+        r"""Sets the configurations_override of this NodeTemplate.
+
+        **参数解释：** 覆盖节点默认组件配置。  [当前支持的可配置组件及其参数详见[配置管理](https://support.huaweicloud.com/usermanual-cce/cce_10_0652.htmll)。](tag:hws) [当前支持的可配置组件及其参数详见[配置管理](https://support.huaweicloud.com/intl/zh-cn/usermanual-cce/cce_10_0652.html)。](tag:hws_hk) **约束限制：** 若指定了不支持的组件或组件不支持的参数，该配置项将被忽略。 
+
+        :param configurations_override: The configurations_override of this NodeTemplate.
+        :type configurations_override: list[:class:`huaweicloudsdkcce.v3.PackageConfiguration`]
+        """
+        self._configurations_override = configurations_override
 
     @property
     def node_name_template(self):

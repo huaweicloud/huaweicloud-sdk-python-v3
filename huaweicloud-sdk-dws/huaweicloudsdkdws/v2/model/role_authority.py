@@ -31,7 +31,7 @@ class RoleAuthority:
 
         :param role: **参数解释**： 角色名称。 **取值范围**： 不涉及。
         :type role: str
-        :param right_list: **参数解释**： 权限列表。 **取值范围**： 不涉及。
+        :param right_list: **参数解释**： 权限列表。 **取值范围**： - SELECT：查找 - UPDATE：更新。 - DELETE：删除。
         :type right_list: list[str]
         """
         
@@ -72,7 +72,7 @@ class RoleAuthority:
     def right_list(self):
         r"""Gets the right_list of this RoleAuthority.
 
-        **参数解释**： 权限列表。 **取值范围**： 不涉及。
+        **参数解释**： 权限列表。 **取值范围**： - SELECT：查找 - UPDATE：更新。 - DELETE：删除。
 
         :return: The right_list of this RoleAuthority.
         :rtype: list[str]
@@ -83,7 +83,7 @@ class RoleAuthority:
     def right_list(self, right_list):
         r"""Sets the right_list of this RoleAuthority.
 
-        **参数解释**： 权限列表。 **取值范围**： 不涉及。
+        **参数解释**： 权限列表。 **取值范围**： - SELECT：查找 - UPDATE：更新。 - DELETE：删除。
 
         :param right_list: The right_list of this RoleAuthority.
         :type right_list: list[str]

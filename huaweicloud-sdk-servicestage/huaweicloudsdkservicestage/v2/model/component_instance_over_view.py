@@ -19,8 +19,8 @@ class ComponentInstanceOverView:
         'instance_name': 'str',
         'description': 'str',
         'environment_id': 'str',
-        'platform_type': 'InstancePlatformType',
-        'flavor_id': 'FlavorId',
+        'platform_type': 'str',
+        'flavor_id': 'str',
         'artifacts': 'dict(str, object)',
         'version': 'str',
         'configuration': 'object',
@@ -63,10 +63,10 @@ class ComponentInstanceOverView:
         :type description: str
         :param environment_id: 应用组件环境ID。
         :type environment_id: str
-        :param platform_type: 
-        :type platform_type: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
-        :param flavor_id: 
-        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
+        :param platform_type: 运行平台类型。  应用可以在不同的平台上运行，可选用的平台的类型有以下几种：cce、vmapp。 
+        :type platform_type: str
+        :param flavor_id: 资源规格。
+        :type flavor_id: str
         :param artifacts: 组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
         :type artifacts: dict(str, object)
         :param version: 应用组件版本号。
@@ -229,8 +229,10 @@ class ComponentInstanceOverView:
     def platform_type(self):
         r"""Gets the platform_type of this ComponentInstanceOverView.
 
+        运行平台类型。  应用可以在不同的平台上运行，可选用的平台的类型有以下几种：cce、vmapp。 
+
         :return: The platform_type of this ComponentInstanceOverView.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
+        :rtype: str
         """
         return self._platform_type
 
@@ -238,8 +240,10 @@ class ComponentInstanceOverView:
     def platform_type(self, platform_type):
         r"""Sets the platform_type of this ComponentInstanceOverView.
 
+        运行平台类型。  应用可以在不同的平台上运行，可选用的平台的类型有以下几种：cce、vmapp。 
+
         :param platform_type: The platform_type of this ComponentInstanceOverView.
-        :type platform_type: :class:`huaweicloudsdkservicestage.v2.InstancePlatformType`
+        :type platform_type: str
         """
         self._platform_type = platform_type
 
@@ -247,8 +251,10 @@ class ComponentInstanceOverView:
     def flavor_id(self):
         r"""Gets the flavor_id of this ComponentInstanceOverView.
 
+        资源规格。
+
         :return: The flavor_id of this ComponentInstanceOverView.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
+        :rtype: str
         """
         return self._flavor_id
 
@@ -256,8 +262,10 @@ class ComponentInstanceOverView:
     def flavor_id(self, flavor_id):
         r"""Sets the flavor_id of this ComponentInstanceOverView.
 
+        资源规格。
+
         :param flavor_id: The flavor_id of this ComponentInstanceOverView.
-        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
+        :type flavor_id: str
         """
         self._flavor_id = flavor_id
 

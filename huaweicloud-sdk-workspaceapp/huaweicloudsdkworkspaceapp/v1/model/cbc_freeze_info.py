@@ -16,7 +16,7 @@ class CbcFreezeInfo:
 
     openapi_types = {
         'effect': 'int',
-        'scene': 'CbcFreezeScene'
+        'scene': 'str'
     }
 
     attribute_map = {
@@ -31,8 +31,8 @@ class CbcFreezeInfo:
 
         :param effect: 在冻结/解冻等操作下，云服务需要达到的主要效果：  - 1：（实现/去除）冻结可释放。（资源冻结后，客户可以手动删除/释放云资源和云资源上数据。）  - 2：（实现/去除）冻结不可释放。（资源冻结后，客户不能手动删除/释放云资源以及云资源上数据，相当于云服务被贴了封条，不能改变数据和资源。对应解冻后，就可以删除和修改客户数据了。）  - 3：（实现/去除）冻结后不可续费。（资源冻结后，资源不能发起续费操作；解冻后，才可以发起续费操作。）  - effect字段和上面status字段(1冻结、0解冻)配合使用，表示在发起冻结/解冻命令下，云服务达到的冻结效果。  - 为空时，默认为effect&#x3D;1（云服务需要能兼容处理，默认当做effect&#x3D;1）。  - 注：云服务是根据status和effect在真实限制云服务的操作/API等。不是使用下文的scene字段去做云服务操作/API的限制。下文的scene字段，主要用于Console页面的tips、API错误码等客户体验使用。
         :type effect: int
-        :param scene: 
-        :type scene: :class:`huaweicloudsdkworkspaceapp.v1.CbcFreezeScene`
+        :param scene: 更新云服务状态的业务场景，默认&#x60;ARREAR&#x60;。 * &#x60;ARREAR&#x60; - 欠费场景；为正常的运营业务场景，包括包周期资源到期、按需资源扣费失败。 * &#x60;POLICE&#x60; - 公安冻结场景。 * &#x60;ILLEGAL&#x60; - 违规冻结场景。 * &#x60;VERIFY&#x60; - 客户未实名认证冻结场景。 * &#x60;PARTNER&#x60; - 合作伙伴冻结（合作伙伴冻结子客户资源）。
+        :type scene: str
         """
         
         
@@ -72,8 +72,10 @@ class CbcFreezeInfo:
     def scene(self):
         r"""Gets the scene of this CbcFreezeInfo.
 
+        更新云服务状态的业务场景，默认`ARREAR`。 * `ARREAR` - 欠费场景；为正常的运营业务场景，包括包周期资源到期、按需资源扣费失败。 * `POLICE` - 公安冻结场景。 * `ILLEGAL` - 违规冻结场景。 * `VERIFY` - 客户未实名认证冻结场景。 * `PARTNER` - 合作伙伴冻结（合作伙伴冻结子客户资源）。
+
         :return: The scene of this CbcFreezeInfo.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CbcFreezeScene`
+        :rtype: str
         """
         return self._scene
 
@@ -81,8 +83,10 @@ class CbcFreezeInfo:
     def scene(self, scene):
         r"""Sets the scene of this CbcFreezeInfo.
 
+        更新云服务状态的业务场景，默认`ARREAR`。 * `ARREAR` - 欠费场景；为正常的运营业务场景，包括包周期资源到期、按需资源扣费失败。 * `POLICE` - 公安冻结场景。 * `ILLEGAL` - 违规冻结场景。 * `VERIFY` - 客户未实名认证冻结场景。 * `PARTNER` - 合作伙伴冻结（合作伙伴冻结子客户资源）。
+
         :param scene: The scene of this CbcFreezeInfo.
-        :type scene: :class:`huaweicloudsdkworkspaceapp.v1.CbcFreezeScene`
+        :type scene: str
         """
         self._scene = scene
 

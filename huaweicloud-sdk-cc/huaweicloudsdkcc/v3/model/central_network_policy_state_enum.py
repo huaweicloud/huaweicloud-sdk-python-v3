@@ -4,14 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CentralNetworkPolicyStateEnum:
-    """
-    allowed enum values
-    """
-    AVAILABLE = "AVAILABLE"
-    CANCELING = "CANCELING"
-    APPLYING = "APPLYING"
-    FAILED = "FAILED"
-    DELETED = "DELETED"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

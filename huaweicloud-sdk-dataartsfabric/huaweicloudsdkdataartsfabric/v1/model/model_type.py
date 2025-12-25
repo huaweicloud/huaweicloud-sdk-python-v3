@@ -4,10 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ModelType:
-    """
-    allowed enum values
-    """
-    LLM_MODEL = "LLM_MODEL"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

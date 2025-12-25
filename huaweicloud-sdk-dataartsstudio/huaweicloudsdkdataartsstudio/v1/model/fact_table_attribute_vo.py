@@ -28,12 +28,12 @@ class FactTableAttributeVO:
         'secrecy_levels': 'list[SecrecyLevelRecordVO]',
         'description': 'str',
         'data_type': 'str',
-        'domain_type': 'DataTypeDomainEnum',
+        'domain_type': 'str',
         'data_type_extend': 'str',
         'name_en': 'str',
         'name_ch': 'str',
         'not_null': 'bool',
-        'attribute_type': 'BizTypeEnum',
+        'attribute_type': 'str',
         'stand_row_id': 'str',
         'stand_row_name': 'str',
         'quality_infos': 'list[QualityInfoVO]',
@@ -99,8 +99,8 @@ class FactTableAttributeVO:
         :type description: str
         :param data_type: 字段类型。
         :type data_type: str
-        :param domain_type: 
-        :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
+        :param domain_type: 字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
+        :type domain_type: str
         :param data_type_extend: 数据类型扩展字段。
         :type data_type_extend: str
         :param name_en: 英文名。
@@ -109,8 +109,8 @@ class FactTableAttributeVO:
         :type name_ch: str
         :param not_null: 是否不为空。
         :type not_null: bool
-        :param attribute_type: 
-        :type attribute_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
+        :param attribute_type: 业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
+        :type attribute_type: str
         :param stand_row_id: 关联的数据标准的ID，ID字符串。
         :type stand_row_id: str
         :param stand_row_name: 关联的数据标准名称，只读。
@@ -480,8 +480,10 @@ class FactTableAttributeVO:
     def domain_type(self):
         r"""Gets the domain_type of this FactTableAttributeVO.
 
+        字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
+
         :return: The domain_type of this FactTableAttributeVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
+        :rtype: str
         """
         return self._domain_type
 
@@ -489,8 +491,10 @@ class FactTableAttributeVO:
     def domain_type(self, domain_type):
         r"""Sets the domain_type of this FactTableAttributeVO.
 
+        字段类型所属域。 枚举值：   - NUMBER: 数字类型   - STRING: 字符类型   - DATETIME: 日期类型   - BLOB: 大对象(BLOB)   - OTHER: 其它类型 
+
         :param domain_type: The domain_type of this FactTableAttributeVO.
-        :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
+        :type domain_type: str
         """
         self._domain_type = domain_type
 
@@ -586,8 +590,10 @@ class FactTableAttributeVO:
     def attribute_type(self):
         r"""Gets the attribute_type of this FactTableAttributeVO.
 
+        业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
+
         :return: The attribute_type of this FactTableAttributeVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
+        :rtype: str
         """
         return self._attribute_type
 
@@ -595,8 +601,10 @@ class FactTableAttributeVO:
     def attribute_type(self, attribute_type):
         r"""Sets the attribute_type of this FactTableAttributeVO.
 
+        业务实体类型。 枚举值：  - AGGREGATION_LOGIC_TABLE: 汇总表  - ATOMIC_INDEX: 原子指标  - ATOMIC_METRIC: 原子指标（新）  - BIZ_CATALOG: 流程架构目录  - BIZ_METRIC: 业务指标  - CODE_TABLE: 码表  - COMMON_CONDITION: 通用限定  - COMPOSITE_METRIC: 复合指标（新）  - COMPOUND_METRIC: 复合指标  - CONDITION_GROUP: 限定分组  - DEGENERATE_DIMENSION: 退化维度  - DERIVATIVE_INDEX: 衍生指标  - DERIVED_METRIC: 衍生指标（新）  - DIMENSION: 维度  - DIMENSION_ATTRIBUTE: 维度属性  - DIMENSION_HIERARCHIES: 维度层级  - DIMENSION_LOGIC_TABLE: 维度表  - DIMENSION_TABLE_ATTRIBUTE: 维度属性  - DIRECTORY: 目录  - FACT_ATTRIBUTE: 事实表属性  - FACT_DIMENSION: 事实表维度  - FACT_LOGIC_TABLE: 事实表  - FACT_MEASURE: 事实表度量  - FUNCTION: 函数  - INFO_ARCH: 信息架构（批量修改主题使用）  - MODEL: 模型  - QUALITY_RULE: 质量规则  - SECRECY_LEVEL: 密级  - STANDARD_ELEMENT: 数据标准  - STANDARD_ELEMENT_TEMPLATE: 数据标准模板  - SUBJECT: 主题  - SUMMARY_DIMENSION_ATTRIBUTE: 汇总表维度属性  - SUMMARY_INDEX: 汇总表指标属性  - SUMMARY_TIME: 汇总表时间周期属性  - TABLE_MODEL: 关系模型（逻辑模型/物理模型）  - TABLE_MODEL_ATTRIBUTE: 关系模型属性（逻辑模型/物理模型）  - TABLE_MODEL_LOGIC: 逻辑实体  - TABLE_TYPE: 表类型  - TAG: 标签  - TIME_CONDITION: 时间限定 
+
         :param attribute_type: The attribute_type of this FactTableAttributeVO.
-        :type attribute_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
+        :type attribute_type: str
         """
         self._attribute_type = attribute_type
 

@@ -18,11 +18,11 @@ class ListCentralNetworkAttachmentsRequest:
         'limit': 'int',
         'marker': 'str',
         'sort_key': 'str',
-        'sort_dir': 'SortDir',
+        'sort_dir': 'str',
         'id': 'list[str]',
         'name': 'list[str]',
-        'attachment_instance_type': 'list[AttachmentInstanceTypeEnum]',
-        'state': 'list[CentralNetworkConnectionStateEnum]',
+        'attachment_instance_type': 'list[str]',
+        'state': 'list[str]',
         'central_network_id': 'str',
         'attachment_instance_id': 'list[str]'
     }
@@ -51,16 +51,16 @@ class ListCentralNetworkAttachmentsRequest:
         :type marker: str
         :param sort_key: 排序字段。
         :type sort_key: str
-        :param sort_dir: 指定排序是升序还是降序（asc为升序，desc为降序）。
-        :type sort_dir: :class:`huaweicloudsdkcc.v3.SortDir`
+        :param sort_dir: desc(降序), asc(升序).
+        :type sort_dir: str
         :param id: 根据ID查询，可查询多个ID。
         :type id: list[str]
         :param name: 根据名称查询，可查询多个名称。
         :type name: list[str]
         :param attachment_instance_type: 根据附件类型查询，可查询多个附件类型。
-        :type attachment_instance_type: list[:class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`]
+        :type attachment_instance_type: list[str]
         :param state: 根据状态查询，可查询多个状态。
-        :type state: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`]
+        :type state: list[str]
         :param central_network_id: 中心网络的ID。
         :type central_network_id: str
         :param attachment_instance_id: Attachment实例的ID。
@@ -171,10 +171,10 @@ class ListCentralNetworkAttachmentsRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListCentralNetworkAttachmentsRequest.
 
-        指定排序是升序还是降序（asc为升序，desc为降序）。
+        desc(降序), asc(升序).
 
         :return: The sort_dir of this ListCentralNetworkAttachmentsRequest.
-        :rtype: :class:`huaweicloudsdkcc.v3.SortDir`
+        :rtype: str
         """
         return self._sort_dir
 
@@ -182,10 +182,10 @@ class ListCentralNetworkAttachmentsRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListCentralNetworkAttachmentsRequest.
 
-        指定排序是升序还是降序（asc为升序，desc为降序）。
+        desc(降序), asc(升序).
 
         :param sort_dir: The sort_dir of this ListCentralNetworkAttachmentsRequest.
-        :type sort_dir: :class:`huaweicloudsdkcc.v3.SortDir`
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 
@@ -240,7 +240,7 @@ class ListCentralNetworkAttachmentsRequest:
         根据附件类型查询，可查询多个附件类型。
 
         :return: The attachment_instance_type of this ListCentralNetworkAttachmentsRequest.
-        :rtype: list[:class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`]
+        :rtype: list[str]
         """
         return self._attachment_instance_type
 
@@ -251,7 +251,7 @@ class ListCentralNetworkAttachmentsRequest:
         根据附件类型查询，可查询多个附件类型。
 
         :param attachment_instance_type: The attachment_instance_type of this ListCentralNetworkAttachmentsRequest.
-        :type attachment_instance_type: list[:class:`huaweicloudsdkcc.v3.AttachmentInstanceTypeEnum`]
+        :type attachment_instance_type: list[str]
         """
         self._attachment_instance_type = attachment_instance_type
 
@@ -262,7 +262,7 @@ class ListCentralNetworkAttachmentsRequest:
         根据状态查询，可查询多个状态。
 
         :return: The state of this ListCentralNetworkAttachmentsRequest.
-        :rtype: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`]
+        :rtype: list[str]
         """
         return self._state
 
@@ -273,7 +273,7 @@ class ListCentralNetworkAttachmentsRequest:
         根据状态查询，可查询多个状态。
 
         :param state: The state of this ListCentralNetworkAttachmentsRequest.
-        :type state: list[:class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`]
+        :type state: list[str]
         """
         self._state = state
 

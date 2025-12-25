@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class MaskStatus:
-    """
-    allowed enum values
-    """
-    UN_MASKED = "UN_MASKED"
-    MASK_EFFECTIVE = "MASK_EFFECTIVE"
-    MASK_INEFFECTIVE = "MASK_INEFFECTIVE"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

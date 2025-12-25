@@ -19,7 +19,7 @@ class Server:
         'domain_id': 'str',
         'edge_site_id': 'str',
         'name': 'str',
-        'status': 'ServerStatus',
+        'status': 'str',
         'offering_id': 'str',
         'spec': 'ServerResourceSpec',
         'market_options': 'MarketOptions',
@@ -55,8 +55,8 @@ class Server:
         :type edge_site_id: str
         :param name: 名称
         :type name: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkcloudpond.v2.ServerStatus`
+        :param status: - PENDING_PAYMENT：待支付 - DELIVERING：交付中 - USING：使用中
+        :type status: str
         :param offering_id: 商品ID
         :type offering_id: str
         :param spec: 
@@ -201,8 +201,10 @@ class Server:
     def status(self):
         r"""Gets the status of this Server.
 
+        - PENDING_PAYMENT：待支付 - DELIVERING：交付中 - USING：使用中
+
         :return: The status of this Server.
-        :rtype: :class:`huaweicloudsdkcloudpond.v2.ServerStatus`
+        :rtype: str
         """
         return self._status
 
@@ -210,8 +212,10 @@ class Server:
     def status(self, status):
         r"""Sets the status of this Server.
 
+        - PENDING_PAYMENT：待支付 - DELIVERING：交付中 - USING：使用中
+
         :param status: The status of this Server.
-        :type status: :class:`huaweicloudsdkcloudpond.v2.ServerStatus`
+        :type status: str
         """
         self._status = status
 

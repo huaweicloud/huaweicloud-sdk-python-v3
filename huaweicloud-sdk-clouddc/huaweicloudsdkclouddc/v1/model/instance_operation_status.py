@@ -4,24 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class InstanceOperationStatus:
-    """
-    allowed enum values
-    """
-    INSTALL_PROCESSING = "install-processing"
-    INSTALL_SUCCEED = "install-succeed"
-    INSTALL_FAILED = "install-failed"
-    REINSTALL_PROCESSING = "reinstall-processing"
-    REINSTALL_SUCCEED = "reinstall-succeed"
-    REINSTALL_FAILED = "reinstall-failed"
-    SWITCH_INSTALL_PROCESSING = "switch-install-processing"
-    SWITCH_INSTALL_SUCCEED = "switch-install-succeed"
-    SWITCH_INSTALL_FAILED = "switch-install-failed"
-    MODIFY_IP_PROCESSING = "modify-ip-processing"
-    MODIFY_IP_SUCCEED = "modify-ip-succeed"
-    MODIFY_IP_FAILED = "modify-ip-failed"
-    UNINSTALL_PROCESSING = "uninstall-processing"
-    UNINSTALL_SUCCEED = "uninstall-succeed"
-    UNINSTALL_FAILED = "uninstall-failed"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

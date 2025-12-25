@@ -15,7 +15,7 @@ class ListHistoryStreamsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'domain': 'str',
+        'domain': 'list[str]',
         'app': 'str',
         'stream': 'str',
         'start_time': 'str',
@@ -39,8 +39,8 @@ class ListHistoryStreamsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param domain: 推流域名。 
-        :type domain: str
+        :param domain: 推流域名列表，最多支持查询100个域名，多个域名以逗号分隔。  若查询多个域名，则返回的是多个域名合并数据。 
+        :type domain: list[str]
         :param app: 应用名称。
         :type app: str
         :param stream: 流名称。
@@ -84,10 +84,10 @@ class ListHistoryStreamsRequest:
     def domain(self):
         r"""Gets the domain of this ListHistoryStreamsRequest.
 
-        推流域名。 
+        推流域名列表，最多支持查询100个域名，多个域名以逗号分隔。  若查询多个域名，则返回的是多个域名合并数据。 
 
         :return: The domain of this ListHistoryStreamsRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._domain
 
@@ -95,10 +95,10 @@ class ListHistoryStreamsRequest:
     def domain(self, domain):
         r"""Sets the domain of this ListHistoryStreamsRequest.
 
-        推流域名。 
+        推流域名列表，最多支持查询100个域名，多个域名以逗号分隔。  若查询多个域名，则返回的是多个域名合并数据。 
 
         :param domain: The domain of this ListHistoryStreamsRequest.
-        :type domain: str
+        :type domain: list[str]
         """
         self._domain = domain
 

@@ -4,15 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class QuotaResourceTypeEnum:
-    """
-    allowed enum values
-    """
-    GPU_INSTANCES = "GPU_INSTANCES"
-    INSTANCES = "INSTANCES"
-    VOLUME_GIGABYTES = "VOLUME_GIGABYTES"
-    VOLUMES = "VOLUMES"
-    CORES = "CORES"
-    MEMORY = "MEMORY"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

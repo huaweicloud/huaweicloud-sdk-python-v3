@@ -47,9 +47,9 @@ class DisasterRecoveryQueryResp:
         :type id: str
         :param name: **参数解释**： 容灾名称。 **取值范围**： 不涉及。
         :type name: str
-        :param dr_type: **参数解释**： 容灾类型。 **取值范围**： 不涉及。
+        :param dr_type: **参数解释**： 容灾类型。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。
         :type dr_type: str
-        :param status: **参数解释**： 容灾状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 容灾状态。 **取值范围**： - creating，容灾创建中。 - create_failed，容灾创建失败。 - unstart，容灾未启动。 - starting，容灾启动中。 - start_failed，容灾启动失败。 - running，容灾运行中。 - stopping，容灾停止中。 - stop_failed，容灾停止失败。 - switchovering，灾备切换中。 - abnormal，容灾异常。 - deleting，容灾删除中。 - deleted，容灾已删除。
         :type status: str
         :param primary_cluster: 
         :type primary_cluster: :class:`huaweicloudsdkdws.v2.DisasterRecoveryCluster`
@@ -143,7 +143,7 @@ class DisasterRecoveryQueryResp:
     def dr_type(self):
         r"""Gets the dr_type of this DisasterRecoveryQueryResp.
 
-        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
+        **参数解释**： 容灾类型。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。
 
         :return: The dr_type of this DisasterRecoveryQueryResp.
         :rtype: str
@@ -154,7 +154,7 @@ class DisasterRecoveryQueryResp:
     def dr_type(self, dr_type):
         r"""Sets the dr_type of this DisasterRecoveryQueryResp.
 
-        **参数解释**： 容灾类型。 **取值范围**： 不涉及。
+        **参数解释**： 容灾类型。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。
 
         :param dr_type: The dr_type of this DisasterRecoveryQueryResp.
         :type dr_type: str
@@ -165,7 +165,7 @@ class DisasterRecoveryQueryResp:
     def status(self):
         r"""Gets the status of this DisasterRecoveryQueryResp.
 
-        **参数解释**： 容灾状态。 **取值范围**： 不涉及。
+        **参数解释**： 容灾状态。 **取值范围**： - creating，容灾创建中。 - create_failed，容灾创建失败。 - unstart，容灾未启动。 - starting，容灾启动中。 - start_failed，容灾启动失败。 - running，容灾运行中。 - stopping，容灾停止中。 - stop_failed，容灾停止失败。 - switchovering，灾备切换中。 - abnormal，容灾异常。 - deleting，容灾删除中。 - deleted，容灾已删除。
 
         :return: The status of this DisasterRecoveryQueryResp.
         :rtype: str
@@ -176,7 +176,7 @@ class DisasterRecoveryQueryResp:
     def status(self, status):
         r"""Sets the status of this DisasterRecoveryQueryResp.
 
-        **参数解释**： 容灾状态。 **取值范围**： 不涉及。
+        **参数解释**： 容灾状态。 **取值范围**： - creating，容灾创建中。 - create_failed，容灾创建失败。 - unstart，容灾未启动。 - starting，容灾启动中。 - start_failed，容灾启动失败。 - running，容灾运行中。 - stopping，容灾停止中。 - stop_failed，容灾停止失败。 - switchovering，灾备切换中。 - abnormal，容灾异常。 - deleting，容灾删除中。 - deleted，容灾已删除。
 
         :param status: The status of this DisasterRecoveryQueryResp.
         :type status: str

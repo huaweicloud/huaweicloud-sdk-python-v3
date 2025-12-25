@@ -21,11 +21,9 @@ class ListAlertRulesRequest:
         'limit': 'int',
         'sort_key': 'str',
         'sort_dir': 'str',
-        'pipe_id': 'str',
-        'rule_name': 'str',
-        'rule_id': 'str',
-        'status': 'list[str]',
-        'severity': 'list[str]'
+        'output_table_id': 'str',
+        'alert_rule_name': 'str',
+        'alert_rule_id': 'str'
     }
 
     attribute_map = {
@@ -35,40 +33,34 @@ class ListAlertRulesRequest:
         'limit': 'limit',
         'sort_key': 'sort_key',
         'sort_dir': 'sort_dir',
-        'pipe_id': 'pipe_id',
-        'rule_name': 'rule_name',
-        'rule_id': 'rule_id',
-        'status': 'status',
-        'severity': 'severity'
+        'output_table_id': 'output_table_id',
+        'alert_rule_name': 'alert_rule_name',
+        'alert_rule_id': 'alert_rule_id'
     }
 
-    def __init__(self, project_id=None, workspace_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, pipe_id=None, rule_name=None, rule_id=None, status=None, severity=None):
+    def __init__(self, project_id=None, workspace_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, output_table_id=None, alert_rule_name=None, alert_rule_id=None):
         r"""ListAlertRulesRequest
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目 ID。Project ID.
+        :param project_id: **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type project_id: str
-        :param workspace_id: 工作空间 ID。Workspace ID.
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
-        :param offset: 偏移量。Offset.
+        :param offset: **参数解释：** 偏移量 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type offset: int
-        :param limit: 条数。Limit.
+        :param limit: **参数解释：** 查询数据限制 **取值范围：** 0-1000 **默认取值：** 不涉及
         :type limit: int
-        :param sort_key: 排序字段。Sort key
+        :param sort_key: 按照属性排序。
         :type sort_key: str
-        :param sort_dir: 排序顺序，顺序、逆序。Sort direction, asc, desc。
+        :param sort_dir: 排序顺序，支持 &#x60;ASC&#x60; 或 &#x60;DESC&#x60;。
         :type sort_dir: str
-        :param pipe_id: 数据管道 ID。Pipe ID.
-        :type pipe_id: str
-        :param rule_name: 告警规则名称。Alert rule name.
-        :type rule_name: str
-        :param rule_id: 告警规则 ID。Alert rule ID.
-        :type rule_id: str
-        :param status: 启用状态，启用、停用。Status, enabled, disabled.
-        :type status: list[str]
-        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
-        :type severity: list[str]
+        :param output_table_id: 输出表 ID
+        :type output_table_id: str
+        :param alert_rule_name: 告警规则名称
+        :type alert_rule_name: str
+        :param alert_rule_id: 告警规则 ID
+        :type alert_rule_id: str
         """
         
         
@@ -79,37 +71,33 @@ class ListAlertRulesRequest:
         self._limit = None
         self._sort_key = None
         self._sort_dir = None
-        self._pipe_id = None
-        self._rule_name = None
-        self._rule_id = None
-        self._status = None
-        self._severity = None
+        self._output_table_id = None
+        self._alert_rule_name = None
+        self._alert_rule_id = None
         self.discriminator = None
 
         self.project_id = project_id
         self.workspace_id = workspace_id
-        self.offset = offset
-        self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if limit is not None:
+            self.limit = limit
         if sort_key is not None:
             self.sort_key = sort_key
         if sort_dir is not None:
             self.sort_dir = sort_dir
-        if pipe_id is not None:
-            self.pipe_id = pipe_id
-        if rule_name is not None:
-            self.rule_name = rule_name
-        if rule_id is not None:
-            self.rule_id = rule_id
-        if status is not None:
-            self.status = status
-        if severity is not None:
-            self.severity = severity
+        if output_table_id is not None:
+            self.output_table_id = output_table_id
+        if alert_rule_name is not None:
+            self.alert_rule_name = alert_rule_name
+        if alert_rule_id is not None:
+            self.alert_rule_id = alert_rule_id
 
     @property
     def project_id(self):
         r"""Gets the project_id of this ListAlertRulesRequest.
 
-        项目 ID。Project ID.
+        **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The project_id of this ListAlertRulesRequest.
         :rtype: str
@@ -120,7 +108,7 @@ class ListAlertRulesRequest:
     def project_id(self, project_id):
         r"""Sets the project_id of this ListAlertRulesRequest.
 
-        项目 ID。Project ID.
+        **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param project_id: The project_id of this ListAlertRulesRequest.
         :type project_id: str
@@ -131,7 +119,7 @@ class ListAlertRulesRequest:
     def workspace_id(self):
         r"""Gets the workspace_id of this ListAlertRulesRequest.
 
-        工作空间 ID。Workspace ID.
+        工作空间ID
 
         :return: The workspace_id of this ListAlertRulesRequest.
         :rtype: str
@@ -142,7 +130,7 @@ class ListAlertRulesRequest:
     def workspace_id(self, workspace_id):
         r"""Sets the workspace_id of this ListAlertRulesRequest.
 
-        工作空间 ID。Workspace ID.
+        工作空间ID
 
         :param workspace_id: The workspace_id of this ListAlertRulesRequest.
         :type workspace_id: str
@@ -153,7 +141,7 @@ class ListAlertRulesRequest:
     def offset(self):
         r"""Gets the offset of this ListAlertRulesRequest.
 
-        偏移量。Offset.
+        **参数解释：** 偏移量 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The offset of this ListAlertRulesRequest.
         :rtype: int
@@ -164,7 +152,7 @@ class ListAlertRulesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAlertRulesRequest.
 
-        偏移量。Offset.
+        **参数解释：** 偏移量 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param offset: The offset of this ListAlertRulesRequest.
         :type offset: int
@@ -175,7 +163,7 @@ class ListAlertRulesRequest:
     def limit(self):
         r"""Gets the limit of this ListAlertRulesRequest.
 
-        条数。Limit.
+        **参数解释：** 查询数据限制 **取值范围：** 0-1000 **默认取值：** 不涉及
 
         :return: The limit of this ListAlertRulesRequest.
         :rtype: int
@@ -186,7 +174,7 @@ class ListAlertRulesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAlertRulesRequest.
 
-        条数。Limit.
+        **参数解释：** 查询数据限制 **取值范围：** 0-1000 **默认取值：** 不涉及
 
         :param limit: The limit of this ListAlertRulesRequest.
         :type limit: int
@@ -197,7 +185,7 @@ class ListAlertRulesRequest:
     def sort_key(self):
         r"""Gets the sort_key of this ListAlertRulesRequest.
 
-        排序字段。Sort key
+        按照属性排序。
 
         :return: The sort_key of this ListAlertRulesRequest.
         :rtype: str
@@ -208,7 +196,7 @@ class ListAlertRulesRequest:
     def sort_key(self, sort_key):
         r"""Sets the sort_key of this ListAlertRulesRequest.
 
-        排序字段。Sort key
+        按照属性排序。
 
         :param sort_key: The sort_key of this ListAlertRulesRequest.
         :type sort_key: str
@@ -219,7 +207,7 @@ class ListAlertRulesRequest:
     def sort_dir(self):
         r"""Gets the sort_dir of this ListAlertRulesRequest.
 
-        排序顺序，顺序、逆序。Sort direction, asc, desc。
+        排序顺序，支持 `ASC` 或 `DESC`。
 
         :return: The sort_dir of this ListAlertRulesRequest.
         :rtype: str
@@ -230,7 +218,7 @@ class ListAlertRulesRequest:
     def sort_dir(self, sort_dir):
         r"""Sets the sort_dir of this ListAlertRulesRequest.
 
-        排序顺序，顺序、逆序。Sort direction, asc, desc。
+        排序顺序，支持 `ASC` 或 `DESC`。
 
         :param sort_dir: The sort_dir of this ListAlertRulesRequest.
         :type sort_dir: str
@@ -238,114 +226,70 @@ class ListAlertRulesRequest:
         self._sort_dir = sort_dir
 
     @property
-    def pipe_id(self):
-        r"""Gets the pipe_id of this ListAlertRulesRequest.
+    def output_table_id(self):
+        r"""Gets the output_table_id of this ListAlertRulesRequest.
 
-        数据管道 ID。Pipe ID.
+        输出表 ID
 
-        :return: The pipe_id of this ListAlertRulesRequest.
+        :return: The output_table_id of this ListAlertRulesRequest.
         :rtype: str
         """
-        return self._pipe_id
+        return self._output_table_id
 
-    @pipe_id.setter
-    def pipe_id(self, pipe_id):
-        r"""Sets the pipe_id of this ListAlertRulesRequest.
+    @output_table_id.setter
+    def output_table_id(self, output_table_id):
+        r"""Sets the output_table_id of this ListAlertRulesRequest.
 
-        数据管道 ID。Pipe ID.
+        输出表 ID
 
-        :param pipe_id: The pipe_id of this ListAlertRulesRequest.
-        :type pipe_id: str
+        :param output_table_id: The output_table_id of this ListAlertRulesRequest.
+        :type output_table_id: str
         """
-        self._pipe_id = pipe_id
+        self._output_table_id = output_table_id
 
     @property
-    def rule_name(self):
-        r"""Gets the rule_name of this ListAlertRulesRequest.
+    def alert_rule_name(self):
+        r"""Gets the alert_rule_name of this ListAlertRulesRequest.
 
-        告警规则名称。Alert rule name.
+        告警规则名称
 
-        :return: The rule_name of this ListAlertRulesRequest.
+        :return: The alert_rule_name of this ListAlertRulesRequest.
         :rtype: str
         """
-        return self._rule_name
+        return self._alert_rule_name
 
-    @rule_name.setter
-    def rule_name(self, rule_name):
-        r"""Sets the rule_name of this ListAlertRulesRequest.
+    @alert_rule_name.setter
+    def alert_rule_name(self, alert_rule_name):
+        r"""Sets the alert_rule_name of this ListAlertRulesRequest.
 
-        告警规则名称。Alert rule name.
+        告警规则名称
 
-        :param rule_name: The rule_name of this ListAlertRulesRequest.
-        :type rule_name: str
+        :param alert_rule_name: The alert_rule_name of this ListAlertRulesRequest.
+        :type alert_rule_name: str
         """
-        self._rule_name = rule_name
+        self._alert_rule_name = alert_rule_name
 
     @property
-    def rule_id(self):
-        r"""Gets the rule_id of this ListAlertRulesRequest.
+    def alert_rule_id(self):
+        r"""Gets the alert_rule_id of this ListAlertRulesRequest.
 
-        告警规则 ID。Alert rule ID.
+        告警规则 ID
 
-        :return: The rule_id of this ListAlertRulesRequest.
+        :return: The alert_rule_id of this ListAlertRulesRequest.
         :rtype: str
         """
-        return self._rule_id
+        return self._alert_rule_id
 
-    @rule_id.setter
-    def rule_id(self, rule_id):
-        r"""Sets the rule_id of this ListAlertRulesRequest.
+    @alert_rule_id.setter
+    def alert_rule_id(self, alert_rule_id):
+        r"""Sets the alert_rule_id of this ListAlertRulesRequest.
 
-        告警规则 ID。Alert rule ID.
+        告警规则 ID
 
-        :param rule_id: The rule_id of this ListAlertRulesRequest.
-        :type rule_id: str
+        :param alert_rule_id: The alert_rule_id of this ListAlertRulesRequest.
+        :type alert_rule_id: str
         """
-        self._rule_id = rule_id
-
-    @property
-    def status(self):
-        r"""Gets the status of this ListAlertRulesRequest.
-
-        启用状态，启用、停用。Status, enabled, disabled.
-
-        :return: The status of this ListAlertRulesRequest.
-        :rtype: list[str]
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        r"""Sets the status of this ListAlertRulesRequest.
-
-        启用状态，启用、停用。Status, enabled, disabled.
-
-        :param status: The status of this ListAlertRulesRequest.
-        :type status: list[str]
-        """
-        self._status = status
-
-    @property
-    def severity(self):
-        r"""Gets the severity of this ListAlertRulesRequest.
-
-        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
-
-        :return: The severity of this ListAlertRulesRequest.
-        :rtype: list[str]
-        """
-        return self._severity
-
-    @severity.setter
-    def severity(self, severity):
-        r"""Sets the severity of this ListAlertRulesRequest.
-
-        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
-
-        :param severity: The severity of this ListAlertRulesRequest.
-        :type severity: list[str]
-        """
-        self._severity = severity
+        self._alert_rule_id = alert_rule_id
 
     def to_dict(self):
         result = {}

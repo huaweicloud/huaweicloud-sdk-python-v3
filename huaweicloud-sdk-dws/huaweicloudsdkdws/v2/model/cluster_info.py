@@ -105,7 +105,7 @@ class ClusterInfo:
         :type availability_zone: str
         :param enterprise_project_id: **参数解释**： 企业项目ID，对集群指定企业项目。如果未指定，则使用默认企业项目“default”的ID，即0。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 0
         :type enterprise_project_id: str
-        :param node_type: **参数解释**： 集群规格ID。 **取值范围**： 不涉及。
+        :param node_type: **参数解释**： 集群规格名称。 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
         :type node_type: str
         :param vpc_id: **参数解释**： 虚拟私有云ID。 **取值范围**： 不涉及。
         :type vpc_id: str
@@ -517,7 +517,7 @@ class ClusterInfo:
     def node_type(self):
         r"""Gets the node_type of this ClusterInfo.
 
-        **参数解释**： 集群规格ID。 **取值范围**： 不涉及。
+        **参数解释**： 集群规格名称。 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
 
         :return: The node_type of this ClusterInfo.
         :rtype: str
@@ -528,7 +528,7 @@ class ClusterInfo:
     def node_type(self, node_type):
         r"""Sets the node_type of this ClusterInfo.
 
-        **参数解释**： 集群规格ID。 **取值范围**： 不涉及。
+        **参数解释**： 集群规格名称。 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
 
         :param node_type: The node_type of this ClusterInfo.
         :type node_type: str

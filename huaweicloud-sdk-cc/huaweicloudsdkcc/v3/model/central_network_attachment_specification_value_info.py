@@ -17,8 +17,8 @@ class CentralNetworkAttachmentSpecificationValueInfo:
     openapi_types = {
         'enterprise_router_table_id': 'str',
         'attachment_parent_instance_id': 'str',
-        'hosted_cloud': 'HostedCloudEnum',
-        'approved_state': 'ApprovedStateEnum',
+        'hosted_cloud': 'str',
+        'approved_state': 'str',
         'reason': 'str'
     }
 
@@ -39,10 +39,10 @@ class CentralNetworkAttachmentSpecificationValueInfo:
         :type enterprise_router_table_id: str
         :param attachment_parent_instance_id: 连接的父资源ID，这里表示企业路由器ID。
         :type attachment_parent_instance_id: str
-        :param hosted_cloud: 
-        :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
-        :param approved_state: 
-        :type approved_state: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
+        :param hosted_cloud: - HWCloud (华为云) - Ireland (爱尔兰)
+        :type hosted_cloud: str
+        :param approved_state: 审批状态。 - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+        :type approved_state: str
         :param reason: 审批拒绝创建附件的原因。
         :type reason: str
         """
@@ -114,8 +114,10 @@ class CentralNetworkAttachmentSpecificationValueInfo:
     def hosted_cloud(self):
         r"""Gets the hosted_cloud of this CentralNetworkAttachmentSpecificationValueInfo.
 
+        - HWCloud (华为云) - Ireland (爱尔兰)
+
         :return: The hosted_cloud of this CentralNetworkAttachmentSpecificationValueInfo.
-        :rtype: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
+        :rtype: str
         """
         return self._hosted_cloud
 
@@ -123,8 +125,10 @@ class CentralNetworkAttachmentSpecificationValueInfo:
     def hosted_cloud(self, hosted_cloud):
         r"""Sets the hosted_cloud of this CentralNetworkAttachmentSpecificationValueInfo.
 
+        - HWCloud (华为云) - Ireland (爱尔兰)
+
         :param hosted_cloud: The hosted_cloud of this CentralNetworkAttachmentSpecificationValueInfo.
-        :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
+        :type hosted_cloud: str
         """
         self._hosted_cloud = hosted_cloud
 
@@ -132,8 +136,10 @@ class CentralNetworkAttachmentSpecificationValueInfo:
     def approved_state(self):
         r"""Gets the approved_state of this CentralNetworkAttachmentSpecificationValueInfo.
 
+        审批状态。 - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+
         :return: The approved_state of this CentralNetworkAttachmentSpecificationValueInfo.
-        :rtype: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
+        :rtype: str
         """
         return self._approved_state
 
@@ -141,8 +147,10 @@ class CentralNetworkAttachmentSpecificationValueInfo:
     def approved_state(self, approved_state):
         r"""Sets the approved_state of this CentralNetworkAttachmentSpecificationValueInfo.
 
+        审批状态。 - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+
         :param approved_state: The approved_state of this CentralNetworkAttachmentSpecificationValueInfo.
-        :type approved_state: :class:`huaweicloudsdkcc.v3.ApprovedStateEnum`
+        :type approved_state: str
         """
         self._approved_state = approved_state
 

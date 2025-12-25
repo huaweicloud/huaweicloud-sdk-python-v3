@@ -15,7 +15,7 @@ class LocalAreaId:
     sensitive_list = []
 
     openapi_types = {
-        'local_area_id': 'LocalAreaIdDef'
+        'local_area_id': 'str'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class LocalAreaId:
 
         The model defined in huaweicloud sdk
 
-        :param local_area_id: 
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
+        :param local_area_id: 本端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+        :type local_area_id: str
         """
         
         
@@ -42,8 +42,10 @@ class LocalAreaId:
     def local_area_id(self):
         r"""Gets the local_area_id of this LocalAreaId.
 
+        本端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :return: The local_area_id of this LocalAreaId.
-        :rtype: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
+        :rtype: str
         """
         return self._local_area_id
 
@@ -51,8 +53,10 @@ class LocalAreaId:
     def local_area_id(self, local_area_id):
         r"""Sets the local_area_id of this LocalAreaId.
 
+        本端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :param local_area_id: The local_area_id of this LocalAreaId.
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
+        :type local_area_id: str
         """
         self._local_area_id = local_area_id
 

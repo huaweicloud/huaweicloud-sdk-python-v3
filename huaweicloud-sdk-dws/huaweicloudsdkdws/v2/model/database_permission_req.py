@@ -47,7 +47,7 @@ class DatabasePermissionReq:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 对象类型。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP、ROLE。
+        :param type: **参数解释**： 对象类型。 **取值范围**： - DATABASE：数据库。 - SCHEMA：模式。 - TABLE：表。 - VIEW：视图。 - COLUMN：列。 - FUNCTION：函数。 - SEQUENCE：序列。 - NODEGROUP：节点组。 - ROLE：角色。
         :type type: str
         :param is_grant: **参数解释**： 是否授权操作。 **取值范围**： 不涉及。
         :type is_grant: bool
@@ -108,7 +108,7 @@ class DatabasePermissionReq:
     def type(self):
         r"""Gets the type of this DatabasePermissionReq.
 
-        **参数解释**： 对象类型。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP、ROLE。
+        **参数解释**： 对象类型。 **取值范围**： - DATABASE：数据库。 - SCHEMA：模式。 - TABLE：表。 - VIEW：视图。 - COLUMN：列。 - FUNCTION：函数。 - SEQUENCE：序列。 - NODEGROUP：节点组。 - ROLE：角色。
 
         :return: The type of this DatabasePermissionReq.
         :rtype: str
@@ -119,7 +119,7 @@ class DatabasePermissionReq:
     def type(self, type):
         r"""Sets the type of this DatabasePermissionReq.
 
-        **参数解释**： 对象类型。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP、ROLE。
+        **参数解释**： 对象类型。 **取值范围**： - DATABASE：数据库。 - SCHEMA：模式。 - TABLE：表。 - VIEW：视图。 - COLUMN：列。 - FUNCTION：函数。 - SEQUENCE：序列。 - NODEGROUP：节点组。 - ROLE：角色。
 
         :param type: The type of this DatabasePermissionReq.
         :type type: str

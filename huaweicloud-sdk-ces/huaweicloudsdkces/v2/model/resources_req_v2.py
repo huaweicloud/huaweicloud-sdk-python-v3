@@ -27,7 +27,7 @@ class ResourcesReqV2:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 资源信息
+        :param resources: **参数解释**： 资源信息列表。 **约束限制**： 包含的资源信息最多为1000个，最少为0个。 
         :type resources: list[list[Dimension]]
         """
         
@@ -42,7 +42,7 @@ class ResourcesReqV2:
     def resources(self):
         r"""Gets the resources of this ResourcesReqV2.
 
-        资源信息
+        **参数解释**： 资源信息列表。 **约束限制**： 包含的资源信息最多为1000个，最少为0个。 
 
         :return: The resources of this ResourcesReqV2.
         :rtype: list[list[Dimension]]
@@ -53,7 +53,7 @@ class ResourcesReqV2:
     def resources(self, resources):
         r"""Sets the resources of this ResourcesReqV2.
 
-        资源信息
+        **参数解释**： 资源信息列表。 **约束限制**： 包含的资源信息最多为1000个，最少为0个。 
 
         :param resources: The resources of this ResourcesReqV2.
         :type resources: list[list[Dimension]]

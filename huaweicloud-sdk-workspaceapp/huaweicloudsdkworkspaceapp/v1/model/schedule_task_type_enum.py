@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ScheduleTaskTypeEnum:
-    """
-    allowed enum values
-    """
-    RESTART_SERVER = "RESTART_SERVER"
-    START_SERVER = "START_SERVER"
-    STOP_SERVER = "STOP_SERVER"
-    REINSTALL_OS = "REINSTALL_OS"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

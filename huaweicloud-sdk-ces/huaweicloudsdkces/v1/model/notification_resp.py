@@ -29,7 +29,7 @@ class NotificationResp:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 告警通知类型。 **取值范围**： 取值如下： notification：SMN通知； autoscaling：AS通知。 
+        :param type: **参数解释**： 告警通知类型。 **取值范围**： - notification：通知组或主题订阅。 - autoscaling：AS通知，仅在AS使用。 
         :type type: str
         :param notification_list: **参数解释**： 告警状态发生变化时，被通知对象的列表。 
         :type notification_list: list[str]
@@ -50,7 +50,7 @@ class NotificationResp:
     def type(self):
         r"""Gets the type of this NotificationResp.
 
-        **参数解释**： 告警通知类型。 **取值范围**： 取值如下： notification：SMN通知； autoscaling：AS通知。 
+        **参数解释**： 告警通知类型。 **取值范围**： - notification：通知组或主题订阅。 - autoscaling：AS通知，仅在AS使用。 
 
         :return: The type of this NotificationResp.
         :rtype: str
@@ -61,7 +61,7 @@ class NotificationResp:
     def type(self, type):
         r"""Sets the type of this NotificationResp.
 
-        **参数解释**： 告警通知类型。 **取值范围**： 取值如下： notification：SMN通知； autoscaling：AS通知。 
+        **参数解释**： 告警通知类型。 **取值范围**： - notification：通知组或主题订阅。 - autoscaling：AS通知，仅在AS使用。 
 
         :param type: The type of this NotificationResp.
         :type type: str

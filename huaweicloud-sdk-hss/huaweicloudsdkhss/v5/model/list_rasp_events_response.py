@@ -30,9 +30,9 @@ class ListRaspEventsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: total number
+        :param total_num: **参数解释** 符合所有筛选条件的应用防护事件总数，用于分页计算总页数 **取值范围** 取值0-9223372036854775807 
         :type total_num: int
-        :param data_list: data list
+        :param data_list: **参数解释** 包含查询到的应用防护事件详细信息，每个元素对应一个防护事件的完整数据 **取值范围** 数组长度0-limit（每页显示个数），元素结构符合RaspProtectHistoryResponseInfo定义，数组为空表示无匹配结果 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.RaspProtectHistoryResponseInfo`]
         """
         
@@ -51,7 +51,7 @@ class ListRaspEventsResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListRaspEventsResponse.
 
-        total number
+        **参数解释** 符合所有筛选条件的应用防护事件总数，用于分页计算总页数 **取值范围** 取值0-9223372036854775807 
 
         :return: The total_num of this ListRaspEventsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListRaspEventsResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListRaspEventsResponse.
 
-        total number
+        **参数解释** 符合所有筛选条件的应用防护事件总数，用于分页计算总页数 **取值范围** 取值0-9223372036854775807 
 
         :param total_num: The total_num of this ListRaspEventsResponse.
         :type total_num: int
@@ -73,7 +73,7 @@ class ListRaspEventsResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListRaspEventsResponse.
 
-        data list
+        **参数解释** 包含查询到的应用防护事件详细信息，每个元素对应一个防护事件的完整数据 **取值范围** 数组长度0-limit（每页显示个数），元素结构符合RaspProtectHistoryResponseInfo定义，数组为空表示无匹配结果 
 
         :return: The data_list of this ListRaspEventsResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.RaspProtectHistoryResponseInfo`]
@@ -84,7 +84,7 @@ class ListRaspEventsResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListRaspEventsResponse.
 
-        data list
+        **参数解释** 包含查询到的应用防护事件详细信息，每个元素对应一个防护事件的完整数据 **取值范围** 数组长度0-limit（每页显示个数），元素结构符合RaspProtectHistoryResponseInfo定义，数组为空表示无匹配结果 
 
         :param data_list: The data_list of this ListRaspEventsResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.RaspProtectHistoryResponseInfo`]

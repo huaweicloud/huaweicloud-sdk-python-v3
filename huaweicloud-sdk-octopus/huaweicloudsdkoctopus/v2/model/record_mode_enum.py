@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class RecordModeEnum:
-    """
-    allowed enum values
-    """
-    _0 = "0"
-    _1 = "1"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

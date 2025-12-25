@@ -18,7 +18,7 @@ class VolumeDetail:
         'encrypt_flag': 'str',
         'kms_key': 'str',
         'key_alias': 'str',
-        'type': 'VolumeType',
+        'type': 'str',
         'size': 'int',
         'kms_grant_id': 'str',
         'device': 'str',
@@ -51,8 +51,8 @@ class VolumeDetail:
         :type kms_key: str
         :param key_alias: 如果磁盘加密，传递的密钥。
         :type key_alias: str
-        :param type: 
-        :type type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
+        :param type: 磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * &#x60;ESSD&#x60; - 极速型SSD * &#x60;SSD&#x60; - 超高IO * &#x60;GPSSD&#x60; - 通用型SSD * &#x60;SAS&#x60; - 高IO * &#x60;SATA&#x60; - 普通IO
+        :type type: str
         :param size: 磁盘容量，单位GB。
         :type size: int
         :param kms_grant_id: 如果磁盘加密，授权ID。
@@ -172,8 +172,10 @@ class VolumeDetail:
     def type(self):
         r"""Gets the type of this VolumeDetail.
 
+        磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * `ESSD` - 极速型SSD * `SSD` - 超高IO * `GPSSD` - 通用型SSD * `SAS` - 高IO * `SATA` - 普通IO
+
         :return: The type of this VolumeDetail.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
+        :rtype: str
         """
         return self._type
 
@@ -181,8 +183,10 @@ class VolumeDetail:
     def type(self, type):
         r"""Sets the type of this VolumeDetail.
 
+        磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * `ESSD` - 极速型SSD * `SSD` - 超高IO * `GPSSD` - 通用型SSD * `SAS` - 高IO * `SATA` - 普通IO
+
         :param type: The type of this VolumeDetail.
-        :type type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
+        :type type: str
         """
         self._type = type
 

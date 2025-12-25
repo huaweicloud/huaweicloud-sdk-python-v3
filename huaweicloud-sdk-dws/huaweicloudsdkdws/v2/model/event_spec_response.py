@@ -53,11 +53,11 @@ class EventSpecResponse:
         :type description: str
         :param subject: **参数解释**： 事件主题。 **取值范围**： 不涉及。
         :type subject: str
-        :param category: **参数解释**： 事件类别。 **取值范围**： 不涉及。
+        :param category: **参数解释**： 事件类别。 **取值范围**： - management：管理。 - monitor：监控。 - security：安全。
         :type category: str
         :param severity: **参数解释**： 事件级别。 **取值范围**： 不涉及。
         :type severity: str
-        :param source_type: **参数解释**： 事件源类型。 **取值范围**： 不涉及。
+        :param source_type: **参数解释**： 事件源类型。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
         :type source_type: str
         :param name_space: **参数解释**： 所属服务。 **取值范围**： 不涉及。
         :type name_space: str
@@ -209,7 +209,7 @@ class EventSpecResponse:
     def category(self):
         r"""Gets the category of this EventSpecResponse.
 
-        **参数解释**： 事件类别。 **取值范围**： 不涉及。
+        **参数解释**： 事件类别。 **取值范围**： - management：管理。 - monitor：监控。 - security：安全。
 
         :return: The category of this EventSpecResponse.
         :rtype: str
@@ -220,7 +220,7 @@ class EventSpecResponse:
     def category(self, category):
         r"""Sets the category of this EventSpecResponse.
 
-        **参数解释**： 事件类别。 **取值范围**： 不涉及。
+        **参数解释**： 事件类别。 **取值范围**： - management：管理。 - monitor：监控。 - security：安全。
 
         :param category: The category of this EventSpecResponse.
         :type category: str
@@ -253,7 +253,7 @@ class EventSpecResponse:
     def source_type(self):
         r"""Gets the source_type of this EventSpecResponse.
 
-        **参数解释**： 事件源类型。 **取值范围**： 不涉及。
+        **参数解释**： 事件源类型。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
 
         :return: The source_type of this EventSpecResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class EventSpecResponse:
     def source_type(self, source_type):
         r"""Sets the source_type of this EventSpecResponse.
 
-        **参数解释**： 事件源类型。 **取值范围**： 不涉及。
+        **参数解释**： 事件源类型。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
 
         :param source_type: The source_type of this EventSpecResponse.
         :type source_type: str

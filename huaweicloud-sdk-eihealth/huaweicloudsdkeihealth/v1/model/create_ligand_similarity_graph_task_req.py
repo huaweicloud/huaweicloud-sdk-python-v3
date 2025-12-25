@@ -15,7 +15,7 @@ class CreateLigandSimilarityGraphTaskReq:
     sensitive_list = []
 
     openapi_types = {
-        'mode': 'LigandSimilarityGraphMode',
+        'mode': 'str',
         'ligands': 'list[CreateLigandSimilarityGraphLigandDto]'
     }
 
@@ -29,8 +29,8 @@ class CreateLigandSimilarityGraphTaskReq:
 
         The model defined in huaweicloud sdk
 
-        :param mode: 
-        :type mode: :class:`huaweicloudsdkeihealth.v1.LigandSimilarityGraphMode`
+        :param mode: 创建配体相似度图的模式：中心模式、自由模式
+        :type mode: str
         :param ligands: 配体列表
         :type ligands: list[:class:`huaweicloudsdkeihealth.v1.CreateLigandSimilarityGraphLigandDto`]
         """
@@ -48,8 +48,10 @@ class CreateLigandSimilarityGraphTaskReq:
     def mode(self):
         r"""Gets the mode of this CreateLigandSimilarityGraphTaskReq.
 
+        创建配体相似度图的模式：中心模式、自由模式
+
         :return: The mode of this CreateLigandSimilarityGraphTaskReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.LigandSimilarityGraphMode`
+        :rtype: str
         """
         return self._mode
 
@@ -57,8 +59,10 @@ class CreateLigandSimilarityGraphTaskReq:
     def mode(self, mode):
         r"""Sets the mode of this CreateLigandSimilarityGraphTaskReq.
 
+        创建配体相似度图的模式：中心模式、自由模式
+
         :param mode: The mode of this CreateLigandSimilarityGraphTaskReq.
-        :type mode: :class:`huaweicloudsdkeihealth.v1.LigandSimilarityGraphMode`
+        :type mode: str
         """
         self._mode = mode
 

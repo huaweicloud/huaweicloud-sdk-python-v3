@@ -15,7 +15,7 @@ class CreateHotWordsReq:
     sensitive_list = []
 
     openapi_types = {
-        'hot_words_type': 'HotWordsTypeEnum',
+        'hot_words_type': 'str',
         'robot_id': 'str',
         'sis_hot_words': 'CreateSisHotWords',
         'mobvoi_hot_words': 'CreateMobvoiHotWords'
@@ -33,8 +33,8 @@ class CreateHotWordsReq:
 
         The model defined in huaweicloud sdk
 
-        :param hot_words_type: 
-        :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
+        :param hot_words_type: 热词类型。 &gt; SIS:使用的语音识别服务为SIS时选此类型 &gt; MOBVOI:使用的语音识别服务为MOBVOI时选择此类型
+        :type hot_words_type: str
         :param robot_id: 应用ID。
         :type robot_id: str
         :param sis_hot_words: 
@@ -62,8 +62,10 @@ class CreateHotWordsReq:
     def hot_words_type(self):
         r"""Gets the hot_words_type of this CreateHotWordsReq.
 
+        热词类型。 > SIS:使用的语音识别服务为SIS时选此类型 > MOBVOI:使用的语音识别服务为MOBVOI时选择此类型
+
         :return: The hot_words_type of this CreateHotWordsReq.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
+        :rtype: str
         """
         return self._hot_words_type
 
@@ -71,8 +73,10 @@ class CreateHotWordsReq:
     def hot_words_type(self, hot_words_type):
         r"""Sets the hot_words_type of this CreateHotWordsReq.
 
+        热词类型。 > SIS:使用的语音识别服务为SIS时选此类型 > MOBVOI:使用的语音识别服务为MOBVOI时选择此类型
+
         :param hot_words_type: The hot_words_type of this CreateHotWordsReq.
-        :type hot_words_type: :class:`huaweicloudsdkmetastudio.v1.HotWordsTypeEnum`
+        :type hot_words_type: str
         """
         self._hot_words_type = hot_words_type
 

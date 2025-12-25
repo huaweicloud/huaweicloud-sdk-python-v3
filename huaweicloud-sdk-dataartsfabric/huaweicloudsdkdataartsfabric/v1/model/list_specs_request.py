@@ -19,7 +19,7 @@ class ListSpecsRequest:
         'spec_types': 'list[str]',
         'offset': 'int',
         'limit': 'int',
-        'scenario': 'SpecScenario'
+        'scenario': 'str'
     }
 
     attribute_map = {
@@ -44,7 +44,7 @@ class ListSpecsRequest:
         :param limit: 指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
         :type limit: int
         :param scenario: 规格使用场景，不填表示不限制： COMPUTE: 用于购买Ray计算资源时配置的物理节点规格 ENDPOINT: 用于创建Endpoint时配置的资源组规格大小
-        :type scenario: :class:`huaweicloudsdkdataartsfabric.v1.SpecScenario`
+        :type scenario: str
         """
         
         
@@ -162,7 +162,7 @@ class ListSpecsRequest:
         规格使用场景，不填表示不限制： COMPUTE: 用于购买Ray计算资源时配置的物理节点规格 ENDPOINT: 用于创建Endpoint时配置的资源组规格大小
 
         :return: The scenario of this ListSpecsRequest.
-        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.SpecScenario`
+        :rtype: str
         """
         return self._scenario
 
@@ -173,7 +173,7 @@ class ListSpecsRequest:
         规格使用场景，不填表示不限制： COMPUTE: 用于购买Ray计算资源时配置的物理节点规格 ENDPOINT: 用于创建Endpoint时配置的资源组规格大小
 
         :param scenario: The scenario of this ListSpecsRequest.
-        :type scenario: :class:`huaweicloudsdkdataartsfabric.v1.SpecScenario`
+        :type scenario: str
         """
         self._scenario = scenario
 

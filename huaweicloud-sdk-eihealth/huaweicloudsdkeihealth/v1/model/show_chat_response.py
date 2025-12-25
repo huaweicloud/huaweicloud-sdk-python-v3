@@ -22,8 +22,8 @@ class ShowChatResponse(SdkResponse):
         'create_time': 'str',
         'update_time': 'str',
         'repo_ids': 'list[str]',
-        'agent_type': 'AgentType',
-        'agent_role': 'AgentRole',
+        'agent_type': 'str',
+        'agent_role': 'str',
         'chat_messages': 'list[ChatMessageRsp]',
         'x_chat_route_id': 'str'
     }
@@ -58,10 +58,10 @@ class ShowChatResponse(SdkResponse):
         :type update_time: str
         :param repo_ids: **参数解释**： 绑定的知识库ID列表。 **约束限制**： 绑定的知识库数量范围为[0-5]。 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type repo_ids: list[str]
-        :param agent_type: 
-        :type agent_type: :class:`huaweicloudsdkeihealth.v1.AgentType`
-        :param agent_role: 
-        :type agent_role: :class:`huaweicloudsdkeihealth.v1.AgentRole`
+        :param agent_type: **参数解释**： 助手类型。 **约束限制**： 不涉及 **取值范围**： * auto：通用助手 * drug：药物助手 * gene：基因助手 **默认取值**： 不涉及 
+        :type agent_type: str
+        :param agent_role: **参数解释**： 助手角色。 **约束限制**： 不涉及 **取值范围**： * Common：对话助手角色 * Biomed：作业助手角色 **默认取值**： Common 
+        :type agent_role: str
         :param chat_messages: **参数解释**： 对话问答列表。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及 
         :type chat_messages: list[:class:`huaweicloudsdkeihealth.v1.ChatMessageRsp`]
         :param x_chat_route_id: 
@@ -239,8 +239,10 @@ class ShowChatResponse(SdkResponse):
     def agent_type(self):
         r"""Gets the agent_type of this ShowChatResponse.
 
+        **参数解释**： 助手类型。 **约束限制**： 不涉及 **取值范围**： * auto：通用助手 * drug：药物助手 * gene：基因助手 **默认取值**： 不涉及 
+
         :return: The agent_type of this ShowChatResponse.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.AgentType`
+        :rtype: str
         """
         return self._agent_type
 
@@ -248,8 +250,10 @@ class ShowChatResponse(SdkResponse):
     def agent_type(self, agent_type):
         r"""Sets the agent_type of this ShowChatResponse.
 
+        **参数解释**： 助手类型。 **约束限制**： 不涉及 **取值范围**： * auto：通用助手 * drug：药物助手 * gene：基因助手 **默认取值**： 不涉及 
+
         :param agent_type: The agent_type of this ShowChatResponse.
-        :type agent_type: :class:`huaweicloudsdkeihealth.v1.AgentType`
+        :type agent_type: str
         """
         self._agent_type = agent_type
 
@@ -257,8 +261,10 @@ class ShowChatResponse(SdkResponse):
     def agent_role(self):
         r"""Gets the agent_role of this ShowChatResponse.
 
+        **参数解释**： 助手角色。 **约束限制**： 不涉及 **取值范围**： * Common：对话助手角色 * Biomed：作业助手角色 **默认取值**： Common 
+
         :return: The agent_role of this ShowChatResponse.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.AgentRole`
+        :rtype: str
         """
         return self._agent_role
 
@@ -266,8 +272,10 @@ class ShowChatResponse(SdkResponse):
     def agent_role(self, agent_role):
         r"""Sets the agent_role of this ShowChatResponse.
 
+        **参数解释**： 助手角色。 **约束限制**： 不涉及 **取值范围**： * Common：对话助手角色 * Biomed：作业助手角色 **默认取值**： Common 
+
         :param agent_role: The agent_role of this ShowChatResponse.
-        :type agent_role: :class:`huaweicloudsdkeihealth.v1.AgentRole`
+        :type agent_role: str
         """
         self._agent_role = agent_role
 

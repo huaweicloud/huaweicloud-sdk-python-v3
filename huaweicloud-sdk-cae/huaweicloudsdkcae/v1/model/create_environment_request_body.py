@@ -15,8 +15,8 @@ class CreateEnvironmentRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'ApiVersionObj',
-        'kind': 'EnvironmentKindObj',
+        'api_version': 'str',
+        'kind': 'str',
         'metadata': 'CreateEnvironmentRequestBodyMetadata'
     }
 
@@ -31,10 +31,10 @@ class CreateEnvironmentRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: 
-        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
-        :param kind: 
-        :type kind: :class:`huaweicloudsdkcae.v1.EnvironmentKindObj`
+        :param api_version: API版本，固定值“v1”，该值不可修改。
+        :type api_version: str
+        :param kind: API类型，固定值“Environment”，该值不可修改。
+        :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcae.v1.CreateEnvironmentRequestBodyMetadata`
         """
@@ -54,8 +54,10 @@ class CreateEnvironmentRequestBody:
     def api_version(self):
         r"""Gets the api_version of this CreateEnvironmentRequestBody.
 
+        API版本，固定值“v1”，该值不可修改。
+
         :return: The api_version of this CreateEnvironmentRequestBody.
-        :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :rtype: str
         """
         return self._api_version
 
@@ -63,8 +65,10 @@ class CreateEnvironmentRequestBody:
     def api_version(self, api_version):
         r"""Sets the api_version of this CreateEnvironmentRequestBody.
 
+        API版本，固定值“v1”，该值不可修改。
+
         :param api_version: The api_version of this CreateEnvironmentRequestBody.
-        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -72,8 +76,10 @@ class CreateEnvironmentRequestBody:
     def kind(self):
         r"""Gets the kind of this CreateEnvironmentRequestBody.
 
+        API类型，固定值“Environment”，该值不可修改。
+
         :return: The kind of this CreateEnvironmentRequestBody.
-        :rtype: :class:`huaweicloudsdkcae.v1.EnvironmentKindObj`
+        :rtype: str
         """
         return self._kind
 
@@ -81,8 +87,10 @@ class CreateEnvironmentRequestBody:
     def kind(self, kind):
         r"""Sets the kind of this CreateEnvironmentRequestBody.
 
+        API类型，固定值“Environment”，该值不可修改。
+
         :param kind: The kind of this CreateEnvironmentRequestBody.
-        :type kind: :class:`huaweicloudsdkcae.v1.EnvironmentKindObj`
+        :type kind: str
         """
         self._kind = kind
 

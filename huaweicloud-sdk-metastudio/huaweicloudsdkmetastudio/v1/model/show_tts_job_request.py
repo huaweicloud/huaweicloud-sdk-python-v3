@@ -55,7 +55,7 @@ class ShowTtsJobRequest:
         :type create_until: str
         :param job_id: 任务ID。
         :type job_id: str
-        :param job_type: 任务类型。 * AUDITION:试听任务 * ASYNC_JOB：异步任务 * WEBSOCKET：websocket接口合成任务
+        :param job_type: 任务类型。 * AUDITION：试听任务 * ASYNC_JOB：异步任务 * WEBSOCKET：websocket接口合成任务
         :type job_type: str
         :param tts_service_enum: tts版本。 * TTS_LLM: 530大模型（V7版本） * TTS_LLM_VC：530大模型VC版本（V7版本） * TTS_LAB：lab小模型（V5版本） * TTS_LAB_GPU：lab小模型GPU版本（V5版本） * GPU_CLONE：V4模型 * TTS_LLM_VQ：VQ模型（V10版本）
         :type tts_service_enum: str
@@ -231,7 +231,7 @@ class ShowTtsJobRequest:
     def job_type(self):
         r"""Gets the job_type of this ShowTtsJobRequest.
 
-        任务类型。 * AUDITION:试听任务 * ASYNC_JOB：异步任务 * WEBSOCKET：websocket接口合成任务
+        任务类型。 * AUDITION：试听任务 * ASYNC_JOB：异步任务 * WEBSOCKET：websocket接口合成任务
 
         :return: The job_type of this ShowTtsJobRequest.
         :rtype: str
@@ -242,7 +242,7 @@ class ShowTtsJobRequest:
     def job_type(self, job_type):
         r"""Sets the job_type of this ShowTtsJobRequest.
 
-        任务类型。 * AUDITION:试听任务 * ASYNC_JOB：异步任务 * WEBSOCKET：websocket接口合成任务
+        任务类型。 * AUDITION：试听任务 * ASYNC_JOB：异步任务 * WEBSOCKET：websocket接口合成任务
 
         :param job_type: The job_type of this ShowTtsJobRequest.
         :type job_type: str

@@ -23,11 +23,11 @@ class CentralNetworkConnection:
         'central_network_id': 'str',
         'central_network_plane_id': 'str',
         'global_connection_bandwidth_id': 'str',
-        'bandwidth_type': 'BandwidthTypeEnum',
+        'bandwidth_type': 'str',
         'bandwidth_size': 'int',
-        'state': 'CentralNetworkConnectionStateEnum',
+        'state': 'str',
         'is_frozen': 'bool',
-        'connection_type': 'ConnectionTypeEnum',
+        'connection_type': 'str',
         'connection_point_pair': 'list[ConnectionPoint]',
         'created_at': 'datetime',
         'updated_at': 'datetime'
@@ -73,16 +73,16 @@ class CentralNetworkConnection:
         :type central_network_plane_id: str
         :param global_connection_bandwidth_id: 全域互联带宽ID。
         :type global_connection_bandwidth_id: str
-        :param bandwidth_type: 
-        :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
+        :param bandwidth_type: 带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+        :type bandwidth_type: str
         :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
-        :param state: 
-        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
+        :param state: 中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+        :type state: str
         :param is_frozen: 是否冻结。
         :type is_frozen: bool
-        :param connection_type: 
-        :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
+        :param connection_type: 中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+        :type connection_type: str
         :param connection_point_pair: 中心网络连接的两个端点定义，长度固定为2的数组。
         :type connection_point_pair: list[:class:`huaweicloudsdkcc.v3.ConnectionPoint`]
         :param created_at: 实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
@@ -312,8 +312,10 @@ class CentralNetworkConnection:
     def bandwidth_type(self):
         r"""Gets the bandwidth_type of this CentralNetworkConnection.
 
+        带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+
         :return: The bandwidth_type of this CentralNetworkConnection.
-        :rtype: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
+        :rtype: str
         """
         return self._bandwidth_type
 
@@ -321,8 +323,10 @@ class CentralNetworkConnection:
     def bandwidth_type(self, bandwidth_type):
         r"""Sets the bandwidth_type of this CentralNetworkConnection.
 
+        带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+
         :param bandwidth_type: The bandwidth_type of this CentralNetworkConnection.
-        :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
+        :type bandwidth_type: str
         """
         self._bandwidth_type = bandwidth_type
 
@@ -352,8 +356,10 @@ class CentralNetworkConnection:
     def state(self):
         r"""Gets the state of this CentralNetworkConnection.
 
+        中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+
         :return: The state of this CentralNetworkConnection.
-        :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
+        :rtype: str
         """
         return self._state
 
@@ -361,8 +367,10 @@ class CentralNetworkConnection:
     def state(self, state):
         r"""Sets the state of this CentralNetworkConnection.
 
+        中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+
         :param state: The state of this CentralNetworkConnection.
-        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
+        :type state: str
         """
         self._state = state
 
@@ -392,8 +400,10 @@ class CentralNetworkConnection:
     def connection_type(self):
         r"""Gets the connection_type of this CentralNetworkConnection.
 
+        中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+
         :return: The connection_type of this CentralNetworkConnection.
-        :rtype: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
+        :rtype: str
         """
         return self._connection_type
 
@@ -401,8 +411,10 @@ class CentralNetworkConnection:
     def connection_type(self, connection_type):
         r"""Sets the connection_type of this CentralNetworkConnection.
 
+        中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+
         :param connection_type: The connection_type of this CentralNetworkConnection.
-        :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
+        :type connection_type: str
         """
         self._connection_type = connection_type
 

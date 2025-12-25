@@ -15,7 +15,7 @@ class FlavorView:
     sensitive_list = []
 
     openapi_types = {
-        'flavor_id': 'FlavorId',
+        'flavor_id': 'str',
         'storage_size': 'str',
         'num_cpu': 'str',
         'num_cpu_init': 'str',
@@ -41,8 +41,8 @@ class FlavorView:
 
         The model defined in huaweicloud sdk
 
-        :param flavor_id: 
-        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
+        :param flavor_id: 资源规格。
+        :type flavor_id: str
         :param storage_size: 存储大小。
         :type storage_size: str
         :param num_cpu: CPU限制。
@@ -92,8 +92,10 @@ class FlavorView:
     def flavor_id(self):
         r"""Gets the flavor_id of this FlavorView.
 
+        资源规格。
+
         :return: The flavor_id of this FlavorView.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.FlavorId`
+        :rtype: str
         """
         return self._flavor_id
 
@@ -101,8 +103,10 @@ class FlavorView:
     def flavor_id(self, flavor_id):
         r"""Sets the flavor_id of this FlavorView.
 
+        资源规格。
+
         :param flavor_id: The flavor_id of this FlavorView.
-        :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
+        :type flavor_id: str
         """
         self._flavor_id = flavor_id
 

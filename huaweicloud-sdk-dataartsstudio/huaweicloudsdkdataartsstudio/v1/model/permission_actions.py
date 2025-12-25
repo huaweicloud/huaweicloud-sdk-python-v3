@@ -4,22 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class PermissionActions:
-    """
-    allowed enum values
-    """
-    ALL = "ALL"
-    SELECT = "SELECT"
-    UPDATE = "UPDATE"
-    CREATE = "CREATE"
-    DROP = "DROP"
-    ALTER = "ALTER"
-    INDEX = "INDEX"
-    READ = "READ"
-    WRITE = "WRITE"
-    INSERT = "INSERT"
-    CREATE_TABLE = "CREATE_TABLE"
-    DELETE = "DELETE"
-    CREATE_SCHEMA = "CREATE_SCHEMA"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

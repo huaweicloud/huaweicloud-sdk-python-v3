@@ -18,13 +18,13 @@ class UploadAppReq:
         'name': 'str',
         'version': 'str',
         'description': 'str',
-        'authorization_type': 'AssignType',
+        'authorization_type': 'str',
         'app_file_store': 'FileStoreLink',
         'app_icon_url': 'str',
-        'install_type': 'InstallType',
+        'install_type': 'str',
         'install_command': 'str',
         'uninstall_command': 'str',
-        'support_os': 'OsTypeEnum',
+        'support_os': 'str',
         'catalog_id': 'str',
         'install_info': 'str'
     }
@@ -55,20 +55,20 @@ class UploadAppReq:
         :type version: str
         :param description: 描述。
         :type description: str
-        :param authorization_type: 
-        :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
+        :param authorization_type: * &#x60;ALL_USER&#x60; - 全部用户 * &#x60;ASSIGN_USER&#x60; - 授权指定用户
+        :type authorization_type: str
         :param app_file_store: 
         :type app_file_store: :class:`huaweicloudsdkworkspace.v2.FileStoreLink`
         :param app_icon_url: 图片的路径,支持使用可访问的URL地址或DataURIscheme。 * &#x60;可访问的URL&#x60; - https://xxx.x.xx.x/xxx/xx.jpg。 * &#x60;DataURIscheme&#x60; -  data;image/png;base64,iVBORw0KGgoAAAANS; 注意使用dataURLStream时，字符串最大长度为87500，即最多使用约64KB大小的图片。
         :type app_icon_url: str
-        :param install_type: 
-        :type install_type: :class:`huaweicloudsdkworkspace.v2.InstallType`
+        :param install_type: 安装方式：   * &#x60;QUIET_INSTALL&#x60; - 静默安装。     安装命令(静默安装命令)，例: ${FILE_PATH} /S。   * &#x60;UNZIP_INSTALL&#x60; - 解压安装。     例: unzip ${FILE_PATH}。   * &#x60;GUI_INSTALL&#x60; - 用户通过GUI界面安装。 install_type为QUIET_INSTALL、UNZIP_INSTALL时install_command非空。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
+        :type install_type: str
         :param install_command: 安装命令(静默安装命令)。 例: ${FILE_PATH} /S。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
         :type install_command: str
         :param uninstall_command: 卸载命令(静默卸载命令)。 例: msiexec /uninstall ${FILE_PATH} /quiet。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
         :type uninstall_command: str
-        :param support_os: 
-        :type support_os: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
+        :param support_os: 系统类型： * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; -
+        :type support_os: str
         :param catalog_id: 分类ID。
         :type catalog_id: str
         :param install_info: 安装信息。
@@ -178,8 +178,10 @@ class UploadAppReq:
     def authorization_type(self):
         r"""Gets the authorization_type of this UploadAppReq.
 
+        * `ALL_USER` - 全部用户 * `ASSIGN_USER` - 授权指定用户
+
         :return: The authorization_type of this UploadAppReq.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.AssignType`
+        :rtype: str
         """
         return self._authorization_type
 
@@ -187,8 +189,10 @@ class UploadAppReq:
     def authorization_type(self, authorization_type):
         r"""Sets the authorization_type of this UploadAppReq.
 
+        * `ALL_USER` - 全部用户 * `ASSIGN_USER` - 授权指定用户
+
         :param authorization_type: The authorization_type of this UploadAppReq.
-        :type authorization_type: :class:`huaweicloudsdkworkspace.v2.AssignType`
+        :type authorization_type: str
         """
         self._authorization_type = authorization_type
 
@@ -236,8 +240,10 @@ class UploadAppReq:
     def install_type(self):
         r"""Gets the install_type of this UploadAppReq.
 
+        安装方式：   * `QUIET_INSTALL` - 静默安装。     安装命令(静默安装命令)，例: ${FILE_PATH} /S。   * `UNZIP_INSTALL` - 解压安装。     例: unzip ${FILE_PATH}。   * `GUI_INSTALL` - 用户通过GUI界面安装。 install_type为QUIET_INSTALL、UNZIP_INSTALL时install_command非空。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
+
         :return: The install_type of this UploadAppReq.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.InstallType`
+        :rtype: str
         """
         return self._install_type
 
@@ -245,8 +251,10 @@ class UploadAppReq:
     def install_type(self, install_type):
         r"""Sets the install_type of this UploadAppReq.
 
+        安装方式：   * `QUIET_INSTALL` - 静默安装。     安装命令(静默安装命令)，例: ${FILE_PATH} /S。   * `UNZIP_INSTALL` - 解压安装。     例: unzip ${FILE_PATH}。   * `GUI_INSTALL` - 用户通过GUI界面安装。 install_type为QUIET_INSTALL、UNZIP_INSTALL时install_command非空。 预定义变量将采用以下值: ${FILE_PATH}: 应用安装包在桌面本地的存储路径。
+
         :param install_type: The install_type of this UploadAppReq.
-        :type install_type: :class:`huaweicloudsdkworkspace.v2.InstallType`
+        :type install_type: str
         """
         self._install_type = install_type
 
@@ -298,8 +306,10 @@ class UploadAppReq:
     def support_os(self):
         r"""Gets the support_os of this UploadAppReq.
 
+        系统类型： * `Linux` - * `Windows` - * `Other` -
+
         :return: The support_os of this UploadAppReq.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
+        :rtype: str
         """
         return self._support_os
 
@@ -307,8 +317,10 @@ class UploadAppReq:
     def support_os(self, support_os):
         r"""Sets the support_os of this UploadAppReq.
 
+        系统类型： * `Linux` - * `Windows` - * `Other` -
+
         :param support_os: The support_os of this UploadAppReq.
-        :type support_os: :class:`huaweicloudsdkworkspace.v2.OsTypeEnum`
+        :type support_os: str
         """
         self._support_os = support_os
 

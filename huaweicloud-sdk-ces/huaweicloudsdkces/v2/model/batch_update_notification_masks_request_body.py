@@ -16,14 +16,14 @@ class BatchUpdateNotificationMasksRequestBody:
 
     openapi_types = {
         'mask_name': 'str',
-        'relation_type': 'RelationType',
+        'relation_type': 'str',
         'relation_ids': 'list[str]',
         'resources': 'list[Resource]',
         'metric_names': 'list[str]',
         'product_metrics': 'list[ProductMetric]',
         'resource_level': 'str',
         'product_name': 'str',
-        'mask_type': 'MaskType',
+        'mask_type': 'str',
         'start_date': 'date',
         'start_time': 'str',
         'end_date': 'date',
@@ -55,22 +55,22 @@ class BatchUpdateNotificationMasksRequestBody:
 
         :param mask_name: **参数解释**： 屏蔽规则名称。    **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。      **默认取值**： 不涉及。 
         :type mask_name: str
-        :param relation_type: 
-        :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
-        :param relation_ids: 关联编号，relation_type为ALARM_RULE时填屏蔽的告警规则ID；relation_type为RESOURCE_POLICY_NOTIFICATION、RESOURCE_POLICY_ALARM时填屏蔽的告警策略ID；
+        :param relation_type: **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，只能为 RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS 长度为[1,32]个字符。 - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - EVENT.SYS 通过事件来屏蔽告警 **默认取值**： 不涉及。 
+        :type relation_type: str
+        :param relation_ids: **参数解释**： 关联ID列表。        **约束限制**： relation_type为ALARM_RULE时填屏蔽的告警规则ID；relation_type为RESOURCE_POLICY_NOTIFICATION时填屏蔽的告警策略ID。包含的关联ID数量为[1,100] 
         :type relation_ids: list[str]
-        :param resources: 关联资源，relation_type为RESOURCE、RESOURCE_POLICY_NOTIFICATION、RESOURCE_POLICY_ALARM时填屏蔽的资源信息；
+        :param resources: **参数解释**： 必填。关联的资源列表   **约束限制**： relation_type为RESOURCE、RESOURCE_POLICY_NOTIFICATION 时填屏蔽的资源信息。包含的资源数量为[1,100] 
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
-        :param metric_names: 关联指标名称，relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽
+        :param metric_names: **参数解释**： 关联的指标名称 **约束限制**： relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽。包含的指标数量为[0,50] 
         :type metric_names: list[str]
-        :param product_metrics: 按云产品维度屏蔽时的指标信息
+        :param product_metrics: **参数解释**： 按云产品维度屏蔽时的指标信息 **约束限制**： 包含的指标数量为[0,50] 
         :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
-        :param resource_level: dimension: 子维度,product: 云产品
+        :param resource_level: **参数解释**： 资源层级。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：资源层级为云产品 - dimension：资源层级为子维度 **默认取值**： 不涉及。 
         :type resource_level: str
-        :param product_name: 资源为云产品时的云产品名称
+        :param product_name: **参数解释**： 资源层级为云产品时的云产品名称 **约束限制**： 不涉及 **取值范围**： 长度为[0,128]个字符。 **默认取值**： 不涉及。 
         :type product_name: str
-        :param mask_type: 
-        :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
+        :param mask_type: **参数解释**： 屏蔽类型。          **约束限制**： 不涉及。 **取值范围**： 只能为START_END_TIME、FOREVER_TIME、CYCLE_TIME - START_END_TIME：按起止时间屏蔽。 - FOREVER_TIME：永久时间屏蔽。 - CYCLE_TIME：按周期时间屏蔽。           **默认取值**： 不涉及。 
+        :type mask_type: str
         :param start_date: **参数解释**： 屏蔽起始日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
         :type start_date: date
         :param start_time: **参数解释**： 屏蔽起始时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
@@ -153,8 +153,10 @@ class BatchUpdateNotificationMasksRequestBody:
     def relation_type(self):
         r"""Gets the relation_type of this BatchUpdateNotificationMasksRequestBody.
 
+        **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，只能为 RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS 长度为[1,32]个字符。 - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - EVENT.SYS 通过事件来屏蔽告警 **默认取值**： 不涉及。 
+
         :return: The relation_type of this BatchUpdateNotificationMasksRequestBody.
-        :rtype: :class:`huaweicloudsdkces.v2.RelationType`
+        :rtype: str
         """
         return self._relation_type
 
@@ -162,8 +164,10 @@ class BatchUpdateNotificationMasksRequestBody:
     def relation_type(self, relation_type):
         r"""Sets the relation_type of this BatchUpdateNotificationMasksRequestBody.
 
+        **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，只能为 RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS 长度为[1,32]个字符。 - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - EVENT.SYS 通过事件来屏蔽告警 **默认取值**： 不涉及。 
+
         :param relation_type: The relation_type of this BatchUpdateNotificationMasksRequestBody.
-        :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
+        :type relation_type: str
         """
         self._relation_type = relation_type
 
@@ -171,7 +175,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def relation_ids(self):
         r"""Gets the relation_ids of this BatchUpdateNotificationMasksRequestBody.
 
-        关联编号，relation_type为ALARM_RULE时填屏蔽的告警规则ID；relation_type为RESOURCE_POLICY_NOTIFICATION、RESOURCE_POLICY_ALARM时填屏蔽的告警策略ID；
+        **参数解释**： 关联ID列表。        **约束限制**： relation_type为ALARM_RULE时填屏蔽的告警规则ID；relation_type为RESOURCE_POLICY_NOTIFICATION时填屏蔽的告警策略ID。包含的关联ID数量为[1,100] 
 
         :return: The relation_ids of this BatchUpdateNotificationMasksRequestBody.
         :rtype: list[str]
@@ -182,7 +186,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def relation_ids(self, relation_ids):
         r"""Sets the relation_ids of this BatchUpdateNotificationMasksRequestBody.
 
-        关联编号，relation_type为ALARM_RULE时填屏蔽的告警规则ID；relation_type为RESOURCE_POLICY_NOTIFICATION、RESOURCE_POLICY_ALARM时填屏蔽的告警策略ID；
+        **参数解释**： 关联ID列表。        **约束限制**： relation_type为ALARM_RULE时填屏蔽的告警规则ID；relation_type为RESOURCE_POLICY_NOTIFICATION时填屏蔽的告警策略ID。包含的关联ID数量为[1,100] 
 
         :param relation_ids: The relation_ids of this BatchUpdateNotificationMasksRequestBody.
         :type relation_ids: list[str]
@@ -193,7 +197,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def resources(self):
         r"""Gets the resources of this BatchUpdateNotificationMasksRequestBody.
 
-        关联资源，relation_type为RESOURCE、RESOURCE_POLICY_NOTIFICATION、RESOURCE_POLICY_ALARM时填屏蔽的资源信息；
+        **参数解释**： 必填。关联的资源列表   **约束限制**： relation_type为RESOURCE、RESOURCE_POLICY_NOTIFICATION 时填屏蔽的资源信息。包含的资源数量为[1,100] 
 
         :return: The resources of this BatchUpdateNotificationMasksRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -204,7 +208,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def resources(self, resources):
         r"""Sets the resources of this BatchUpdateNotificationMasksRequestBody.
 
-        关联资源，relation_type为RESOURCE、RESOURCE_POLICY_NOTIFICATION、RESOURCE_POLICY_ALARM时填屏蔽的资源信息；
+        **参数解释**： 必填。关联的资源列表   **约束限制**： relation_type为RESOURCE、RESOURCE_POLICY_NOTIFICATION 时填屏蔽的资源信息。包含的资源数量为[1,100] 
 
         :param resources: The resources of this BatchUpdateNotificationMasksRequestBody.
         :type resources: list[:class:`huaweicloudsdkces.v2.Resource`]
@@ -215,7 +219,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def metric_names(self):
         r"""Gets the metric_names of this BatchUpdateNotificationMasksRequestBody.
 
-        关联指标名称，relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽
+        **参数解释**： 关联的指标名称 **约束限制**： relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽。包含的指标数量为[0,50] 
 
         :return: The metric_names of this BatchUpdateNotificationMasksRequestBody.
         :rtype: list[str]
@@ -226,7 +230,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def metric_names(self, metric_names):
         r"""Sets the metric_names of this BatchUpdateNotificationMasksRequestBody.
 
-        关联指标名称，relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽
+        **参数解释**： 关联的指标名称 **约束限制**： relation_type为RESOURCE可选填，不填视为对资源所有指标进行告警屏蔽。包含的指标数量为[0,50] 
 
         :param metric_names: The metric_names of this BatchUpdateNotificationMasksRequestBody.
         :type metric_names: list[str]
@@ -237,7 +241,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def product_metrics(self):
         r"""Gets the product_metrics of this BatchUpdateNotificationMasksRequestBody.
 
-        按云产品维度屏蔽时的指标信息
+        **参数解释**： 按云产品维度屏蔽时的指标信息 **约束限制**： 包含的指标数量为[0,50] 
 
         :return: The product_metrics of this BatchUpdateNotificationMasksRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
@@ -248,7 +252,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def product_metrics(self, product_metrics):
         r"""Sets the product_metrics of this BatchUpdateNotificationMasksRequestBody.
 
-        按云产品维度屏蔽时的指标信息
+        **参数解释**： 按云产品维度屏蔽时的指标信息 **约束限制**： 包含的指标数量为[0,50] 
 
         :param product_metrics: The product_metrics of this BatchUpdateNotificationMasksRequestBody.
         :type product_metrics: list[:class:`huaweicloudsdkces.v2.ProductMetric`]
@@ -259,7 +263,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def resource_level(self):
         r"""Gets the resource_level of this BatchUpdateNotificationMasksRequestBody.
 
-        dimension: 子维度,product: 云产品
+        **参数解释**： 资源层级。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：资源层级为云产品 - dimension：资源层级为子维度 **默认取值**： 不涉及。 
 
         :return: The resource_level of this BatchUpdateNotificationMasksRequestBody.
         :rtype: str
@@ -270,7 +274,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this BatchUpdateNotificationMasksRequestBody.
 
-        dimension: 子维度,product: 云产品
+        **参数解释**： 资源层级。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：资源层级为云产品 - dimension：资源层级为子维度 **默认取值**： 不涉及。 
 
         :param resource_level: The resource_level of this BatchUpdateNotificationMasksRequestBody.
         :type resource_level: str
@@ -281,7 +285,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def product_name(self):
         r"""Gets the product_name of this BatchUpdateNotificationMasksRequestBody.
 
-        资源为云产品时的云产品名称
+        **参数解释**： 资源层级为云产品时的云产品名称 **约束限制**： 不涉及 **取值范围**： 长度为[0,128]个字符。 **默认取值**： 不涉及。 
 
         :return: The product_name of this BatchUpdateNotificationMasksRequestBody.
         :rtype: str
@@ -292,7 +296,7 @@ class BatchUpdateNotificationMasksRequestBody:
     def product_name(self, product_name):
         r"""Sets the product_name of this BatchUpdateNotificationMasksRequestBody.
 
-        资源为云产品时的云产品名称
+        **参数解释**： 资源层级为云产品时的云产品名称 **约束限制**： 不涉及 **取值范围**： 长度为[0,128]个字符。 **默认取值**： 不涉及。 
 
         :param product_name: The product_name of this BatchUpdateNotificationMasksRequestBody.
         :type product_name: str
@@ -303,8 +307,10 @@ class BatchUpdateNotificationMasksRequestBody:
     def mask_type(self):
         r"""Gets the mask_type of this BatchUpdateNotificationMasksRequestBody.
 
+        **参数解释**： 屏蔽类型。          **约束限制**： 不涉及。 **取值范围**： 只能为START_END_TIME、FOREVER_TIME、CYCLE_TIME - START_END_TIME：按起止时间屏蔽。 - FOREVER_TIME：永久时间屏蔽。 - CYCLE_TIME：按周期时间屏蔽。           **默认取值**： 不涉及。 
+
         :return: The mask_type of this BatchUpdateNotificationMasksRequestBody.
-        :rtype: :class:`huaweicloudsdkces.v2.MaskType`
+        :rtype: str
         """
         return self._mask_type
 
@@ -312,8 +318,10 @@ class BatchUpdateNotificationMasksRequestBody:
     def mask_type(self, mask_type):
         r"""Sets the mask_type of this BatchUpdateNotificationMasksRequestBody.
 
+        **参数解释**： 屏蔽类型。          **约束限制**： 不涉及。 **取值范围**： 只能为START_END_TIME、FOREVER_TIME、CYCLE_TIME - START_END_TIME：按起止时间屏蔽。 - FOREVER_TIME：永久时间屏蔽。 - CYCLE_TIME：按周期时间屏蔽。           **默认取值**： 不涉及。 
+
         :param mask_type: The mask_type of this BatchUpdateNotificationMasksRequestBody.
-        :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
+        :type mask_type: str
         """
         self._mask_type = mask_type
 

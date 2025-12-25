@@ -17,7 +17,7 @@ class Resource:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'type': 'ResourceType'
+        'type': 'str'
     }
 
     attribute_map = {
@@ -35,8 +35,8 @@ class Resource:
         :type id: str
         :param name: 资源名称
         :type name: str
-        :param type: 
-        :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
+        :param type: 资源类型。  基础资源：cce、ecs、as。  可选资源：rds、dcs、elb、cse等其他类型。 
+        :type type: str
         """
         
         
@@ -99,8 +99,10 @@ class Resource:
     def type(self):
         r"""Gets the type of this Resource.
 
+        资源类型。  基础资源：cce、ecs、as。  可选资源：rds、dcs、elb、cse等其他类型。 
+
         :return: The type of this Resource.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.ResourceType`
+        :rtype: str
         """
         return self._type
 
@@ -108,8 +110,10 @@ class Resource:
     def type(self, type):
         r"""Sets the type of this Resource.
 
+        资源类型。  基础资源：cce、ecs、as。  可选资源：rds、dcs、elb、cse等其他类型。 
+
         :param type: The type of this Resource.
-        :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
+        :type type: str
         """
         self._type = type
 

@@ -43,23 +43,23 @@ class IDERepositoryDO:
 
         The model defined in huaweicloud sdk
 
-        :param repository_name: 仓库名称
+        :param repository_name: **参数解释**: 仓库名称。 **约束限制**: 长度1-50。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type repository_name: str
-        :param format: 仓库类型
+        :param format: **参数解释**: 制品类型。 **约束限制**: 不涉及。 **取值范围**: maven2。 **默认取值**: 无。 
         :type format: str
-        :param description: 仓库描述
+        :param description: **参数解释**: 仓库描述。 **约束限制**: 最大长度200。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type description: str
-        :param release: release仓库名称
+        :param release: **参数解释**: release仓库名称。 **约束限制**: 长度1-50。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type release: str
-        :param snapshot: snapshot仓库名称
+        :param snapshot: **参数解释**: snapshot仓库名称。 **约束限制**: 长度1-50。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type snapshot: str
-        :param includes_pattern: 路径
+        :param includes_pattern: **参数解释**: 路径包含规则。 **约束限制**: 最大长度512。 **取值范围**: 不涉及。 **默认取值**: 无。 
         :type includes_pattern: str
-        :param share_right: 共享权限级别
+        :param share_right: **参数解释**: 共享权限级别。 **约束限制**: 不涉及。 **取值范围**: PROJECT。 **默认取值**: 无。 
         :type share_right: str
-        :param project_id: 项目ID
+        :param project_id: **参数解释**: 项目ID，可以从调用API处获取，也可以从控制台获取。获取方式请参考[获取项目ID](CloudArtifact_api_0015.xml)。 **约束限制**: 只能由英文字母、数字组成，且长度为32个字符。 **取值范围**: 不涉及。 **默认取值**: 无。
         :type project_id: str
-        :param type: 仓库类别，本地仓或聚合仓
+        :param type: **参数解释**: 仓库类型。 **约束限制**: 不涉及。 **取值范围**: hosted：本地仓库。 **默认取值**: 无。 
         :type type: str
         """
         
@@ -76,10 +76,8 @@ class IDERepositoryDO:
         self._type = None
         self.discriminator = None
 
-        if repository_name is not None:
-            self.repository_name = repository_name
-        if format is not None:
-            self.format = format
+        self.repository_name = repository_name
+        self.format = format
         if description is not None:
             self.description = description
         if release is not None:
@@ -92,14 +90,13 @@ class IDERepositoryDO:
             self.share_right = share_right
         if project_id is not None:
             self.project_id = project_id
-        if type is not None:
-            self.type = type
+        self.type = type
 
     @property
     def repository_name(self):
         r"""Gets the repository_name of this IDERepositoryDO.
 
-        仓库名称
+        **参数解释**: 仓库名称。 **约束限制**: 长度1-50。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The repository_name of this IDERepositoryDO.
         :rtype: str
@@ -110,7 +107,7 @@ class IDERepositoryDO:
     def repository_name(self, repository_name):
         r"""Sets the repository_name of this IDERepositoryDO.
 
-        仓库名称
+        **参数解释**: 仓库名称。 **约束限制**: 长度1-50。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param repository_name: The repository_name of this IDERepositoryDO.
         :type repository_name: str
@@ -121,7 +118,7 @@ class IDERepositoryDO:
     def format(self):
         r"""Gets the format of this IDERepositoryDO.
 
-        仓库类型
+        **参数解释**: 制品类型。 **约束限制**: 不涉及。 **取值范围**: maven2。 **默认取值**: 无。 
 
         :return: The format of this IDERepositoryDO.
         :rtype: str
@@ -132,7 +129,7 @@ class IDERepositoryDO:
     def format(self, format):
         r"""Sets the format of this IDERepositoryDO.
 
-        仓库类型
+        **参数解释**: 制品类型。 **约束限制**: 不涉及。 **取值范围**: maven2。 **默认取值**: 无。 
 
         :param format: The format of this IDERepositoryDO.
         :type format: str
@@ -143,7 +140,7 @@ class IDERepositoryDO:
     def description(self):
         r"""Gets the description of this IDERepositoryDO.
 
-        仓库描述
+        **参数解释**: 仓库描述。 **约束限制**: 最大长度200。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The description of this IDERepositoryDO.
         :rtype: str
@@ -154,7 +151,7 @@ class IDERepositoryDO:
     def description(self, description):
         r"""Sets the description of this IDERepositoryDO.
 
-        仓库描述
+        **参数解释**: 仓库描述。 **约束限制**: 最大长度200。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param description: The description of this IDERepositoryDO.
         :type description: str
@@ -165,7 +162,7 @@ class IDERepositoryDO:
     def release(self):
         r"""Gets the release of this IDERepositoryDO.
 
-        release仓库名称
+        **参数解释**: release仓库名称。 **约束限制**: 长度1-50。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The release of this IDERepositoryDO.
         :rtype: str
@@ -176,7 +173,7 @@ class IDERepositoryDO:
     def release(self, release):
         r"""Sets the release of this IDERepositoryDO.
 
-        release仓库名称
+        **参数解释**: release仓库名称。 **约束限制**: 长度1-50。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param release: The release of this IDERepositoryDO.
         :type release: str
@@ -187,7 +184,7 @@ class IDERepositoryDO:
     def snapshot(self):
         r"""Gets the snapshot of this IDERepositoryDO.
 
-        snapshot仓库名称
+        **参数解释**: snapshot仓库名称。 **约束限制**: 长度1-50。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The snapshot of this IDERepositoryDO.
         :rtype: str
@@ -198,7 +195,7 @@ class IDERepositoryDO:
     def snapshot(self, snapshot):
         r"""Sets the snapshot of this IDERepositoryDO.
 
-        snapshot仓库名称
+        **参数解释**: snapshot仓库名称。 **约束限制**: 长度1-50。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param snapshot: The snapshot of this IDERepositoryDO.
         :type snapshot: str
@@ -209,7 +206,7 @@ class IDERepositoryDO:
     def includes_pattern(self):
         r"""Gets the includes_pattern of this IDERepositoryDO.
 
-        路径
+        **参数解释**: 路径包含规则。 **约束限制**: 最大长度512。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :return: The includes_pattern of this IDERepositoryDO.
         :rtype: str
@@ -220,7 +217,7 @@ class IDERepositoryDO:
     def includes_pattern(self, includes_pattern):
         r"""Sets the includes_pattern of this IDERepositoryDO.
 
-        路径
+        **参数解释**: 路径包含规则。 **约束限制**: 最大长度512。 **取值范围**: 不涉及。 **默认取值**: 无。 
 
         :param includes_pattern: The includes_pattern of this IDERepositoryDO.
         :type includes_pattern: str
@@ -231,7 +228,7 @@ class IDERepositoryDO:
     def share_right(self):
         r"""Gets the share_right of this IDERepositoryDO.
 
-        共享权限级别
+        **参数解释**: 共享权限级别。 **约束限制**: 不涉及。 **取值范围**: PROJECT。 **默认取值**: 无。 
 
         :return: The share_right of this IDERepositoryDO.
         :rtype: str
@@ -242,7 +239,7 @@ class IDERepositoryDO:
     def share_right(self, share_right):
         r"""Sets the share_right of this IDERepositoryDO.
 
-        共享权限级别
+        **参数解释**: 共享权限级别。 **约束限制**: 不涉及。 **取值范围**: PROJECT。 **默认取值**: 无。 
 
         :param share_right: The share_right of this IDERepositoryDO.
         :type share_right: str
@@ -253,7 +250,7 @@ class IDERepositoryDO:
     def project_id(self):
         r"""Gets the project_id of this IDERepositoryDO.
 
-        项目ID
+        **参数解释**: 项目ID，可以从调用API处获取，也可以从控制台获取。获取方式请参考[获取项目ID](CloudArtifact_api_0015.xml)。 **约束限制**: 只能由英文字母、数字组成，且长度为32个字符。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :return: The project_id of this IDERepositoryDO.
         :rtype: str
@@ -264,7 +261,7 @@ class IDERepositoryDO:
     def project_id(self, project_id):
         r"""Sets the project_id of this IDERepositoryDO.
 
-        项目ID
+        **参数解释**: 项目ID，可以从调用API处获取，也可以从控制台获取。获取方式请参考[获取项目ID](CloudArtifact_api_0015.xml)。 **约束限制**: 只能由英文字母、数字组成，且长度为32个字符。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :param project_id: The project_id of this IDERepositoryDO.
         :type project_id: str
@@ -275,7 +272,7 @@ class IDERepositoryDO:
     def type(self):
         r"""Gets the type of this IDERepositoryDO.
 
-        仓库类别，本地仓或聚合仓
+        **参数解释**: 仓库类型。 **约束限制**: 不涉及。 **取值范围**: hosted：本地仓库。 **默认取值**: 无。 
 
         :return: The type of this IDERepositoryDO.
         :rtype: str
@@ -286,7 +283,7 @@ class IDERepositoryDO:
     def type(self, type):
         r"""Sets the type of this IDERepositoryDO.
 
-        仓库类别，本地仓或聚合仓
+        **参数解释**: 仓库类型。 **约束限制**: 不涉及。 **取值范围**: hosted：本地仓库。 **默认取值**: 无。 
 
         :param type: The type of this IDERepositoryDO.
         :type type: str

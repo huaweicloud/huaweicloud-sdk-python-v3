@@ -81,11 +81,11 @@ class AlarmHistoryInfoResp:
         :type alarm_enabled: bool
         :param alarm_action_enabled: **参数解释**： 是否发送通知 **取值范围**： 值为true或者false - true：发送通知 - false：不发送通知 
         :type alarm_action_enabled: bool
-        :param alarm_actions: **参数解释**： 告警触发的动作。结构如下：{  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  }  type取值：notification：通知。autoscaling：弹性伸缩。notificationList：告警状态发生变化时，被通知对象的列表。 
+        :param alarm_actions: **参数解释**： 告警触发时，通知组/主题订阅的信息。结构如下：{  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } 
         :type alarm_actions: list[list[NotificationResp]]
-        :param ok_actions: **参数解释**： 告警恢复触发的动作。结构如下：{  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } type取值：notification：通知。notificationList：告警状态发生变化时，被通知对象的列表。 
+        :param ok_actions: **参数解释**： 告警恢复时，通知组/主题订阅的信息。结构如下：{  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } 
         :type ok_actions: list[list[NotificationResp]]
-        :param insufficientdata_actions: **参数解释**： 数据不足触发的动作。结构如下：{  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } type取值：数据不足触发告警通知类型，取值为notification。notificationList：数据不足触发告警通知时，被通知对象的ID列表。 
+        :param insufficientdata_actions: **参数解释**： 数据不足时触发告警时，通知组/主题订阅的信息。结构如下：{  \&quot;type\&quot;: \&quot;notification\&quot;, \&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;]  } 
         :type insufficientdata_actions: list[list[NotificationResp]]
         :param update_time: **参数解释**： 告警状态变更的时间，UNIX时间戳，单位毫秒，如：1603131199000 **取值范围**： 不涉及 
         :type update_time: int
@@ -93,7 +93,7 @@ class AlarmHistoryInfoResp:
         :type enterprise_project_id: str
         :param trigger_time: **参数解释**： 计算出该条告警历史的时间，UNIX时间戳，单位毫秒，如：1603131199469 **取值范围**： 不涉及 
         :type trigger_time: int
-        :param alarm_status: **参数解释**： 告警历史的状态 **取值范围**： 枚举值： - ok：正常 - alarm：告警 - insufficient_data：数据不足 - invalid：已失效 
+        :param alarm_status: **参数解释**： 告警规则的状态 **取值范围**： 枚举值： - ok：正常 - alarm：告警 - insufficient_data：数据不足 - invalid：已失效 
         :type alarm_status: str
         :param datapoints: **参数解释**： 计算出该条告警历史的资源监控数据的一组数据上报时间和监控数值 
         :type datapoints: list[:class:`huaweicloudsdkces.v1.DataPointForAlarmHistoryResp`]
@@ -359,7 +359,7 @@ class AlarmHistoryInfoResp:
     def alarm_actions(self):
         r"""Gets the alarm_actions of this AlarmHistoryInfoResp.
 
-        **参数解释**： 告警触发的动作。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值：notification：通知。autoscaling：弹性伸缩。notificationList：告警状态发生变化时，被通知对象的列表。 
+        **参数解释**： 告警触发时，通知组/主题订阅的信息。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } 
 
         :return: The alarm_actions of this AlarmHistoryInfoResp.
         :rtype: list[list[NotificationResp]]
@@ -370,7 +370,7 @@ class AlarmHistoryInfoResp:
     def alarm_actions(self, alarm_actions):
         r"""Sets the alarm_actions of this AlarmHistoryInfoResp.
 
-        **参数解释**： 告警触发的动作。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  }  type取值：notification：通知。autoscaling：弹性伸缩。notificationList：告警状态发生变化时，被通知对象的列表。 
+        **参数解释**： 告警触发时，通知组/主题订阅的信息。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } 
 
         :param alarm_actions: The alarm_actions of this AlarmHistoryInfoResp.
         :type alarm_actions: list[list[NotificationResp]]
@@ -381,7 +381,7 @@ class AlarmHistoryInfoResp:
     def ok_actions(self):
         r"""Gets the ok_actions of this AlarmHistoryInfoResp.
 
-        **参数解释**： 告警恢复触发的动作。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：notification：通知。notificationList：告警状态发生变化时，被通知对象的列表。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } 
 
         :return: The ok_actions of this AlarmHistoryInfoResp.
         :rtype: list[list[NotificationResp]]
@@ -392,7 +392,7 @@ class AlarmHistoryInfoResp:
     def ok_actions(self, ok_actions):
         r"""Sets the ok_actions of this AlarmHistoryInfoResp.
 
-        **参数解释**： 告警恢复触发的动作。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：notification：通知。notificationList：告警状态发生变化时，被通知对象的列表。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } 
 
         :param ok_actions: The ok_actions of this AlarmHistoryInfoResp.
         :type ok_actions: list[list[NotificationResp]]
@@ -403,7 +403,7 @@ class AlarmHistoryInfoResp:
     def insufficientdata_actions(self):
         r"""Gets the insufficientdata_actions of this AlarmHistoryInfoResp.
 
-        **参数解释**： 数据不足触发的动作。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：数据不足触发告警通知类型，取值为notification。notificationList：数据不足触发告警通知时，被通知对象的ID列表。 
+        **参数解释**： 数据不足时触发告警时，通知组/主题订阅的信息。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } 
 
         :return: The insufficientdata_actions of this AlarmHistoryInfoResp.
         :rtype: list[list[NotificationResp]]
@@ -414,7 +414,7 @@ class AlarmHistoryInfoResp:
     def insufficientdata_actions(self, insufficientdata_actions):
         r"""Sets the insufficientdata_actions of this AlarmHistoryInfoResp.
 
-        **参数解释**： 数据不足触发的动作。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } type取值：数据不足触发告警通知类型，取值为notification。notificationList：数据不足触发告警通知时，被通知对象的ID列表。 
+        **参数解释**： 数据不足时触发告警时，通知组/主题订阅的信息。结构如下：{  \"type\": \"notification\", \"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"]  } 
 
         :param insufficientdata_actions: The insufficientdata_actions of this AlarmHistoryInfoResp.
         :type insufficientdata_actions: list[list[NotificationResp]]
@@ -491,7 +491,7 @@ class AlarmHistoryInfoResp:
     def alarm_status(self):
         r"""Gets the alarm_status of this AlarmHistoryInfoResp.
 
-        **参数解释**： 告警历史的状态 **取值范围**： 枚举值： - ok：正常 - alarm：告警 - insufficient_data：数据不足 - invalid：已失效 
+        **参数解释**： 告警规则的状态 **取值范围**： 枚举值： - ok：正常 - alarm：告警 - insufficient_data：数据不足 - invalid：已失效 
 
         :return: The alarm_status of this AlarmHistoryInfoResp.
         :rtype: str
@@ -502,7 +502,7 @@ class AlarmHistoryInfoResp:
     def alarm_status(self, alarm_status):
         r"""Sets the alarm_status of this AlarmHistoryInfoResp.
 
-        **参数解释**： 告警历史的状态 **取值范围**： 枚举值： - ok：正常 - alarm：告警 - insufficient_data：数据不足 - invalid：已失效 
+        **参数解释**： 告警规则的状态 **取值范围**： 枚举值： - ok：正常 - alarm：告警 - insufficient_data：数据不足 - invalid：已失效 
 
         :param alarm_status: The alarm_status of this AlarmHistoryInfoResp.
         :type alarm_status: str

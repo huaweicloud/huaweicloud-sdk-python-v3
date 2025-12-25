@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Scene:
-    """
-    allowed enum values
-    """
-    ARREAR = "ARREAR"
-    POLICE = "POLICE"
-    ILLEGAL = "ILLEGAL"
-    VERIFY = "VERIFY"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

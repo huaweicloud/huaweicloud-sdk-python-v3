@@ -15,70 +15,48 @@ class ListAlarmTemplateAssociationAlarmsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'template_id': 'str',
         'offset': 'int',
-        'limit': 'int'
+        'limit': 'int',
+        'template_id': 'str'
     }
 
     attribute_map = {
-        'template_id': 'template_id',
         'offset': 'offset',
-        'limit': 'limit'
+        'limit': 'limit',
+        'template_id': 'template_id'
     }
 
-    def __init__(self, template_id=None, offset=None, limit=None):
+    def __init__(self, offset=None, limit=None, template_id=None):
         r"""ListAlarmTemplateAssociationAlarmsRequest
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 告警模板的ID，以at开头，后跟字母、数字，长度最长为64
-        :type template_id: str
-        :param offset: 分页查询时查询的起始位置，表示从第几条数据开始，默认为0
+        :param offset: **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
         :type offset: int
-        :param limit: 查询结果条数的限制值，取值范围为[1,100]，默认值为100
+        :param limit: **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
         :type limit: int
+        :param template_id: **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
+        :type template_id: str
         """
         
         
 
-        self._template_id = None
         self._offset = None
         self._limit = None
+        self._template_id = None
         self.discriminator = None
 
-        self.template_id = template_id
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-
-    @property
-    def template_id(self):
-        r"""Gets the template_id of this ListAlarmTemplateAssociationAlarmsRequest.
-
-        告警模板的ID，以at开头，后跟字母、数字，长度最长为64
-
-        :return: The template_id of this ListAlarmTemplateAssociationAlarmsRequest.
-        :rtype: str
-        """
-        return self._template_id
-
-    @template_id.setter
-    def template_id(self, template_id):
-        r"""Sets the template_id of this ListAlarmTemplateAssociationAlarmsRequest.
-
-        告警模板的ID，以at开头，后跟字母、数字，长度最长为64
-
-        :param template_id: The template_id of this ListAlarmTemplateAssociationAlarmsRequest.
-        :type template_id: str
-        """
-        self._template_id = template_id
+        self.template_id = template_id
 
     @property
     def offset(self):
         r"""Gets the offset of this ListAlarmTemplateAssociationAlarmsRequest.
 
-        分页查询时查询的起始位置，表示从第几条数据开始，默认为0
+        **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
 
         :return: The offset of this ListAlarmTemplateAssociationAlarmsRequest.
         :rtype: int
@@ -89,7 +67,7 @@ class ListAlarmTemplateAssociationAlarmsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAlarmTemplateAssociationAlarmsRequest.
 
-        分页查询时查询的起始位置，表示从第几条数据开始，默认为0
+        **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
 
         :param offset: The offset of this ListAlarmTemplateAssociationAlarmsRequest.
         :type offset: int
@@ -100,7 +78,7 @@ class ListAlarmTemplateAssociationAlarmsRequest:
     def limit(self):
         r"""Gets the limit of this ListAlarmTemplateAssociationAlarmsRequest.
 
-        查询结果条数的限制值，取值范围为[1,100]，默认值为100
+        **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
 
         :return: The limit of this ListAlarmTemplateAssociationAlarmsRequest.
         :rtype: int
@@ -111,12 +89,34 @@ class ListAlarmTemplateAssociationAlarmsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAlarmTemplateAssociationAlarmsRequest.
 
-        查询结果条数的限制值，取值范围为[1,100]，默认值为100
+        **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
 
         :param limit: The limit of this ListAlarmTemplateAssociationAlarmsRequest.
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def template_id(self):
+        r"""Gets the template_id of this ListAlarmTemplateAssociationAlarmsRequest.
+
+        **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
+
+        :return: The template_id of this ListAlarmTemplateAssociationAlarmsRequest.
+        :rtype: str
+        """
+        return self._template_id
+
+    @template_id.setter
+    def template_id(self, template_id):
+        r"""Sets the template_id of this ListAlarmTemplateAssociationAlarmsRequest.
+
+        **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
+
+        :param template_id: The template_id of this ListAlarmTemplateAssociationAlarmsRequest.
+        :type template_id: str
+        """
+        self._template_id = template_id
 
     def to_dict(self):
         result = {}

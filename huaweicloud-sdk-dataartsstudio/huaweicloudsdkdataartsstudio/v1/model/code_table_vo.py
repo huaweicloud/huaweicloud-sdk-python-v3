@@ -23,7 +23,7 @@ class CodeTableVO:
         'directory_path': 'str',
         'description': 'str',
         'create_by': 'str',
-        'status': 'BizStatusEnum',
+        'status': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'approval_info': 'ApprovalVO',
@@ -69,8 +69,8 @@ class CodeTableVO:
         :type description: str
         :param create_by: 创建人。
         :type create_by: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :param status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+        :type status: str
         :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
         :type create_time: datetime
         :param update_time: 更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
@@ -306,8 +306,10 @@ class CodeTableVO:
     def status(self):
         r"""Gets the status of this CodeTableVO.
 
+        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+
         :return: The status of this CodeTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :rtype: str
         """
         return self._status
 
@@ -315,8 +317,10 @@ class CodeTableVO:
     def status(self, status):
         r"""Sets the status of this CodeTableVO.
 
+        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+
         :param status: The status of this CodeTableVO.
-        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :type status: str
         """
         self._status = status
 

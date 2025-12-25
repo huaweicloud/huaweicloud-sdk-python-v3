@@ -17,9 +17,9 @@ class CreateListenerOption:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'protocol': 'ListenerProtocol',
+        'protocol': 'str',
         'port_ranges': 'list[PortRange]',
-        'client_affinity': 'ClientAffinity',
+        'client_affinity': 'str',
         'accelerator_id': 'str',
         'tags': 'list[ResourceTag]'
     }
@@ -43,12 +43,12 @@ class CreateListenerOption:
         :type name: str
         :param description: 监听器的描述信息，取值范围：0~255个字符之间，禁止输入字符：&lt;&gt;。
         :type description: str
-        :param protocol: 
-        :type protocol: :class:`huaweicloudsdkga.v1.ListenerProtocol`
+        :param protocol: 监听的网络传输协议类型。 取值范围：TCP、UDP
+        :type protocol: str
         :param port_ranges: 监听端口范围列表。
         :type port_ranges: list[:class:`huaweicloudsdkga.v1.PortRange`]
-        :param client_affinity: 
-        :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`
+        :param client_affinity: 客户端亲和性，取值： - SOURCE_IP：按源IP保持会话。 - NONE：关闭。
+        :type client_affinity: str
         :param accelerator_id: 全球加速实例ID。
         :type accelerator_id: str
         :param tags: 标签列表。
@@ -125,8 +125,10 @@ class CreateListenerOption:
     def protocol(self):
         r"""Gets the protocol of this CreateListenerOption.
 
+        监听的网络传输协议类型。 取值范围：TCP、UDP
+
         :return: The protocol of this CreateListenerOption.
-        :rtype: :class:`huaweicloudsdkga.v1.ListenerProtocol`
+        :rtype: str
         """
         return self._protocol
 
@@ -134,8 +136,10 @@ class CreateListenerOption:
     def protocol(self, protocol):
         r"""Sets the protocol of this CreateListenerOption.
 
+        监听的网络传输协议类型。 取值范围：TCP、UDP
+
         :param protocol: The protocol of this CreateListenerOption.
-        :type protocol: :class:`huaweicloudsdkga.v1.ListenerProtocol`
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -165,8 +169,10 @@ class CreateListenerOption:
     def client_affinity(self):
         r"""Gets the client_affinity of this CreateListenerOption.
 
+        客户端亲和性，取值： - SOURCE_IP：按源IP保持会话。 - NONE：关闭。
+
         :return: The client_affinity of this CreateListenerOption.
-        :rtype: :class:`huaweicloudsdkga.v1.ClientAffinity`
+        :rtype: str
         """
         return self._client_affinity
 
@@ -174,8 +180,10 @@ class CreateListenerOption:
     def client_affinity(self, client_affinity):
         r"""Sets the client_affinity of this CreateListenerOption.
 
+        客户端亲和性，取值： - SOURCE_IP：按源IP保持会话。 - NONE：关闭。
+
         :param client_affinity: The client_affinity of this CreateListenerOption.
-        :type client_affinity: :class:`huaweicloudsdkga.v1.ClientAffinity`
+        :type client_affinity: str
         """
         self._client_affinity = client_affinity
 

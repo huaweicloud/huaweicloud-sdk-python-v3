@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SupportedServiceEnum:
-    """
-    allowed enum values
-    """
-    VIDEO_2D = "VIDEO_2D"
-    LIVE_2D = "LIVE_2D"
-    CHAT_2D = "CHAT_2D"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

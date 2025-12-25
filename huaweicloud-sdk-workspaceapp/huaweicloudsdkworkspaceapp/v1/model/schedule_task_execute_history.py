@@ -17,9 +17,9 @@ class ScheduleTaskExecuteHistory:
     openapi_types = {
         'id': 'str',
         'task_id': 'str',
-        'task_type': 'ScheduleTaskTypeEnum',
-        'status': 'ScheduleTaskStatus',
-        'scheduled_type': 'ScheduledTypeEnum',
+        'task_type': 'str',
+        'status': 'str',
+        'scheduled_type': 'str',
         'total_count': 'int',
         'success_count': 'int',
         'failed_count': 'int',
@@ -55,12 +55,12 @@ class ScheduleTaskExecuteHistory:
         :type id: str
         :param task_id: 定时任务主键id。
         :type task_id: str
-        :param task_type: 
-        :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
-        :param status: 
-        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
-        :param scheduled_type: 
-        :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
+        :param task_type: 定时任务类型： * &#x60;RESTART_SERVER&#x60; - 定时重启服务器 * &#x60;START_SERVER&#x60; - 定时开机 * &#x60;STOP_SERVER&#x60; - 定时关机 * &#x60;REINSTALL_OS&#x60; - 定时重装操作系统
+        :type task_type: str
+        :param status: job状态： * &#x60;WAITING&#x60; - 等待 * &#x60;RUNNING&#x60; - 运行中 * &#x60;SUCCESS&#x60; - 完成 * &#x60;FAILED&#x60; - 失败
+        :type status: str
+        :param scheduled_type: 执行周期： * &#x60;FIXED_TIME&#x60; - 指定时间 * &#x60;DAY&#x60; - 按天 * &#x60;WEEK&#x60; - 按周 * &#x60;MONTH&#x60; - 按月
+        :type scheduled_type: str
         :param total_count: 总子任务数。
         :type total_count: int
         :param success_count: 成功的子任务数。
@@ -171,8 +171,10 @@ class ScheduleTaskExecuteHistory:
     def task_type(self):
         r"""Gets the task_type of this ScheduleTaskExecuteHistory.
 
+        定时任务类型： * `RESTART_SERVER` - 定时重启服务器 * `START_SERVER` - 定时开机 * `STOP_SERVER` - 定时关机 * `REINSTALL_OS` - 定时重装操作系统
+
         :return: The task_type of this ScheduleTaskExecuteHistory.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
+        :rtype: str
         """
         return self._task_type
 
@@ -180,8 +182,10 @@ class ScheduleTaskExecuteHistory:
     def task_type(self, task_type):
         r"""Sets the task_type of this ScheduleTaskExecuteHistory.
 
+        定时任务类型： * `RESTART_SERVER` - 定时重启服务器 * `START_SERVER` - 定时开机 * `STOP_SERVER` - 定时关机 * `REINSTALL_OS` - 定时重装操作系统
+
         :param task_type: The task_type of this ScheduleTaskExecuteHistory.
-        :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
+        :type task_type: str
         """
         self._task_type = task_type
 
@@ -189,8 +193,10 @@ class ScheduleTaskExecuteHistory:
     def status(self):
         r"""Gets the status of this ScheduleTaskExecuteHistory.
 
+        job状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
+
         :return: The status of this ScheduleTaskExecuteHistory.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
+        :rtype: str
         """
         return self._status
 
@@ -198,8 +204,10 @@ class ScheduleTaskExecuteHistory:
     def status(self, status):
         r"""Sets the status of this ScheduleTaskExecuteHistory.
 
+        job状态： * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 完成 * `FAILED` - 失败
+
         :param status: The status of this ScheduleTaskExecuteHistory.
-        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
+        :type status: str
         """
         self._status = status
 
@@ -207,8 +215,10 @@ class ScheduleTaskExecuteHistory:
     def scheduled_type(self):
         r"""Gets the scheduled_type of this ScheduleTaskExecuteHistory.
 
+        执行周期： * `FIXED_TIME` - 指定时间 * `DAY` - 按天 * `WEEK` - 按周 * `MONTH` - 按月
+
         :return: The scheduled_type of this ScheduleTaskExecuteHistory.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
+        :rtype: str
         """
         return self._scheduled_type
 
@@ -216,8 +226,10 @@ class ScheduleTaskExecuteHistory:
     def scheduled_type(self, scheduled_type):
         r"""Sets the scheduled_type of this ScheduleTaskExecuteHistory.
 
+        执行周期： * `FIXED_TIME` - 指定时间 * `DAY` - 按天 * `WEEK` - 按周 * `MONTH` - 按月
+
         :param scheduled_type: The scheduled_type of this ScheduleTaskExecuteHistory.
-        :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
+        :type scheduled_type: str
         """
         self._scheduled_type = scheduled_type
 

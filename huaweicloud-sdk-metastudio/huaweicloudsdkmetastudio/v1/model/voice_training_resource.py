@@ -22,7 +22,7 @@ class VoiceTrainingResource:
         'resource_nums': 'int',
         'resource_available_nums': 'int',
         'resource_type': 'str',
-        'charge_mode': 'ChardMode',
+        'charge_mode': 'str',
         'expire_time': 'str',
         'status': 'int'
     }
@@ -59,8 +59,8 @@ class VoiceTrainingResource:
         :type resource_available_nums: int
         :param resource_type: 资源类型。 * BASIC: 基础版 * MIDDLE: 进阶版 * ADVANCE：高级版 * THIRD_PARTY：第三方出门问问 * THIRD_PARTY_LJZN: 第三方逻辑智能 * TTS_CMWW：TTS资源 * TTS_LJZN: 逻辑智能TTS资源 * FLEXUS: Flexus版资源
         :type resource_type: str
-        :param charge_mode: 
-        :type charge_mode: :class:`huaweicloudsdkmetastudio.v1.ChardMode`
+        :param charge_mode: 资源计费类型。 * ON_DEMAND:按需计费，目前只有进阶版声音，最多制作三个任务 * PERIODIC: 包周期 * ONE_TIME：一次性计费 &gt; * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。
+        :type charge_mode: str
         :param expire_time: 资源过期时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;
         :type expire_time: str
         :param status: 资源状态
@@ -260,8 +260,10 @@ class VoiceTrainingResource:
     def charge_mode(self):
         r"""Gets the charge_mode of this VoiceTrainingResource.
 
+        资源计费类型。 * ON_DEMAND:按需计费，目前只有进阶版声音，最多制作三个任务 * PERIODIC: 包周期 * ONE_TIME：一次性计费 > * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。
+
         :return: The charge_mode of this VoiceTrainingResource.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.ChardMode`
+        :rtype: str
         """
         return self._charge_mode
 
@@ -269,8 +271,10 @@ class VoiceTrainingResource:
     def charge_mode(self, charge_mode):
         r"""Sets the charge_mode of this VoiceTrainingResource.
 
+        资源计费类型。 * ON_DEMAND:按需计费，目前只有进阶版声音，最多制作三个任务 * PERIODIC: 包周期 * ONE_TIME：一次性计费 > * 一次性计费包括：租户订购的一次性资源，SP管理员分配给租户的一次性资源。
+
         :param charge_mode: The charge_mode of this VoiceTrainingResource.
-        :type charge_mode: :class:`huaweicloudsdkmetastudio.v1.ChardMode`
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 

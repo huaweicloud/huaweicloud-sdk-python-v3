@@ -16,7 +16,7 @@ class RecallKnowledgeLibraryRequestBody:
 
     openapi_types = {
         'knowledge_library_id': 'str',
-        'knowledge_type': 'KnowledgeTypeEnum',
+        'knowledge_type': 'str',
         'query': 'str',
         'topk': 'int',
         'score': 'float'
@@ -37,8 +37,8 @@ class RecallKnowledgeLibraryRequestBody:
 
         :param knowledge_library_id: 知识库名称。
         :type knowledge_library_id: str
-        :param knowledge_type: 
-        :type knowledge_type: :class:`huaweicloudsdkmetastudio.v1.KnowledgeTypeEnum`
+        :param knowledge_type: 知识库类型 * QUESTION_ANSWER：问答 * DOCUMENT：文档
+        :type knowledge_type: str
         :param query: 知识库召回请求文本
         :type query: str
         :param topk: 文档库召回topk
@@ -90,8 +90,10 @@ class RecallKnowledgeLibraryRequestBody:
     def knowledge_type(self):
         r"""Gets the knowledge_type of this RecallKnowledgeLibraryRequestBody.
 
+        知识库类型 * QUESTION_ANSWER：问答 * DOCUMENT：文档
+
         :return: The knowledge_type of this RecallKnowledgeLibraryRequestBody.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.KnowledgeTypeEnum`
+        :rtype: str
         """
         return self._knowledge_type
 
@@ -99,8 +101,10 @@ class RecallKnowledgeLibraryRequestBody:
     def knowledge_type(self, knowledge_type):
         r"""Sets the knowledge_type of this RecallKnowledgeLibraryRequestBody.
 
+        知识库类型 * QUESTION_ANSWER：问答 * DOCUMENT：文档
+
         :param knowledge_type: The knowledge_type of this RecallKnowledgeLibraryRequestBody.
-        :type knowledge_type: :class:`huaweicloudsdkmetastudio.v1.KnowledgeTypeEnum`
+        :type knowledge_type: str
         """
         self._knowledge_type = knowledge_type
 

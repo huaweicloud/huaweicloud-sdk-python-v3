@@ -15,7 +15,7 @@ class TransferAssetReq:
     sensitive_list = []
 
     openapi_types = {
-        'transfer_type': 'TransferTypeEnum',
+        'transfer_type': 'str',
         'asset_ids': 'list[str]',
         'dest_project_id': 'str',
         'memo': 'str',
@@ -41,8 +41,8 @@ class TransferAssetReq:
 
         The model defined in huaweicloud sdk
 
-        :param transfer_type: 
-        :type transfer_type: :class:`huaweicloudsdkmetastudio.v1.TransferTypeEnum`
+        :param transfer_type: **参数解释**： 转移类型。默认值是TRANSFER_OUT。 **约束限制**： * 只有管理员或者开了资产转移白名单租户才有权限转出资产。 * 普通租户有权限转回已接收成功的资产，转回给转移发起方。 **取值范围**： * TRANSFER_OUT: 资产转出 * TRANSFER_BACK：资产转回
+        :type transfer_type: str
         :param asset_ids: 资产ID列表
         :type asset_ids: list[str]
         :param dest_project_id: 目标用户ID
@@ -90,8 +90,10 @@ class TransferAssetReq:
     def transfer_type(self):
         r"""Gets the transfer_type of this TransferAssetReq.
 
+        **参数解释**： 转移类型。默认值是TRANSFER_OUT。 **约束限制**： * 只有管理员或者开了资产转移白名单租户才有权限转出资产。 * 普通租户有权限转回已接收成功的资产，转回给转移发起方。 **取值范围**： * TRANSFER_OUT: 资产转出 * TRANSFER_BACK：资产转回
+
         :return: The transfer_type of this TransferAssetReq.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.TransferTypeEnum`
+        :rtype: str
         """
         return self._transfer_type
 
@@ -99,8 +101,10 @@ class TransferAssetReq:
     def transfer_type(self, transfer_type):
         r"""Sets the transfer_type of this TransferAssetReq.
 
+        **参数解释**： 转移类型。默认值是TRANSFER_OUT。 **约束限制**： * 只有管理员或者开了资产转移白名单租户才有权限转出资产。 * 普通租户有权限转回已接收成功的资产，转回给转移发起方。 **取值范围**： * TRANSFER_OUT: 资产转出 * TRANSFER_BACK：资产转回
+
         :param transfer_type: The transfer_type of this TransferAssetReq.
-        :type transfer_type: :class:`huaweicloudsdkmetastudio.v1.TransferTypeEnum`
+        :type transfer_type: str
         """
         self._transfer_type = transfer_type
 

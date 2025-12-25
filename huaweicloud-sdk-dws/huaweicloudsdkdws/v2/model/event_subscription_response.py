@@ -59,11 +59,11 @@ class EventSubscriptionResponse:
         :type id: str
         :param name: **参数解释**： 订阅名称。 **取值范围**： 不涉及。
         :type name: str
-        :param source_type: **参数解释**： 事件源类型。 **取值范围**： 不涉及。
+        :param source_type: **参数解释**： 事件源类型。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
         :type source_type: str
         :param source_id: **参数解释**： 事件源ID。 **取值范围**： 不涉及。
         :type source_id: str
-        :param category: **参数解释**： 事件类别。 **取值范围**： 不涉及。
+        :param category: **参数解释**： 事件类别。 **取值范围**： - management：管理。 - monitor：监控。 - security：安全。
         :type category: str
         :param severity: **参数解释**： 事件级别。 **取值范围**： 不涉及。
         :type severity: str
@@ -79,7 +79,7 @@ class EventSubscriptionResponse:
         :type notification_target: str
         :param notification_target_name: **参数解释**： 消息通知主题名称。 **取值范围**： 不涉及。
         :type notification_target_name: str
-        :param notification_target_type: **参数解释**： 消息通知类型。 **取值范围**： 不涉及。
+        :param notification_target_type: **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
         :type notification_target_type: str
         :param language: **参数解释**： 语言。 **取值范围**： 不涉及。
         :type language: str
@@ -185,7 +185,7 @@ class EventSubscriptionResponse:
     def source_type(self):
         r"""Gets the source_type of this EventSubscriptionResponse.
 
-        **参数解释**： 事件源类型。 **取值范围**： 不涉及。
+        **参数解释**： 事件源类型。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
 
         :return: The source_type of this EventSubscriptionResponse.
         :rtype: str
@@ -196,7 +196,7 @@ class EventSubscriptionResponse:
     def source_type(self, source_type):
         r"""Sets the source_type of this EventSubscriptionResponse.
 
-        **参数解释**： 事件源类型。 **取值范围**： 不涉及。
+        **参数解释**： 事件源类型。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
 
         :param source_type: The source_type of this EventSubscriptionResponse.
         :type source_type: str
@@ -229,7 +229,7 @@ class EventSubscriptionResponse:
     def category(self):
         r"""Gets the category of this EventSubscriptionResponse.
 
-        **参数解释**： 事件类别。 **取值范围**： 不涉及。
+        **参数解释**： 事件类别。 **取值范围**： - management：管理。 - monitor：监控。 - security：安全。
 
         :return: The category of this EventSubscriptionResponse.
         :rtype: str
@@ -240,7 +240,7 @@ class EventSubscriptionResponse:
     def category(self, category):
         r"""Sets the category of this EventSubscriptionResponse.
 
-        **参数解释**： 事件类别。 **取值范围**： 不涉及。
+        **参数解释**： 事件类别。 **取值范围**： - management：管理。 - monitor：监控。 - security：安全。
 
         :param category: The category of this EventSubscriptionResponse.
         :type category: str
@@ -405,7 +405,7 @@ class EventSubscriptionResponse:
     def notification_target_type(self):
         r"""Gets the notification_target_type of this EventSubscriptionResponse.
 
-        **参数解释**： 消息通知类型。 **取值范围**： 不涉及。
+        **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
 
         :return: The notification_target_type of this EventSubscriptionResponse.
         :rtype: str
@@ -416,7 +416,7 @@ class EventSubscriptionResponse:
     def notification_target_type(self, notification_target_type):
         r"""Sets the notification_target_type of this EventSubscriptionResponse.
 
-        **参数解释**： 消息通知类型。 **取值范围**： 不涉及。
+        **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
 
         :param notification_target_type: The notification_target_type of this EventSubscriptionResponse.
         :type notification_target_type: str

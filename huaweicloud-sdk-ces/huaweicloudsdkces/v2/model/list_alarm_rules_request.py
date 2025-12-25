@@ -45,7 +45,7 @@ class ListAlarmRulesRequest:
 
         :param alarm_id: **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位的字母或数字。          **默认取值**： 不涉及。 
         :type alarm_id: str
-        :param name: **参数解释**： 告警名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度为[1,128]个字符。          **默认取值**： 不涉及。 
+        :param name: **参数解释**： 告警规则名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度为[1,128]个字符。          **默认取值**： 不涉及。 
         :type name: str
         :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度在 0 到 32个字符之间。           **默认取值**： 不涉及。 
         :type namespace: str
@@ -53,9 +53,9 @@ class ListAlarmRulesRequest:
         :type resource_id: str
         :param enterprise_project_id: **参数解释**： 企业项目ID。 **约束限制**： 不涉及。 **取值范围**： 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID），all_granted_eps（代表所有企业项目ID）。           **默认取值**： 不涉及。 
         :type enterprise_project_id: str
-        :param product_name: **参数解释**： 产品层级跨维规则查询时支持产品名称查询，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。        **默认取值**： 不涉及。 
+        :param product_name: **参数解释**： 资源所属的云产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。        **默认取值**： 不涉及。 
         :type product_name: str
-        :param resource_level: **参数解释**： 产品层级跨维规则查询时支持规则所属类型查询，resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。           **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：云产品。 - dimension：子维度。 **默认取值**： 不涉及。 
+        :param resource_level: **参数解释**： 创建告警规则，需要指定的资源层级。resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。          **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：云产品。 - dimension：子维度。 **默认取值**： 不涉及。 
         :type resource_level: str
         :param offset: **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： [0,10000]           **默认取值**： 0 
         :type offset: int
@@ -121,7 +121,7 @@ class ListAlarmRulesRequest:
     def name(self):
         r"""Gets the name of this ListAlarmRulesRequest.
 
-        **参数解释**： 告警名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度为[1,128]个字符。          **默认取值**： 不涉及。 
+        **参数解释**： 告警规则名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度为[1,128]个字符。          **默认取值**： 不涉及。 
 
         :return: The name of this ListAlarmRulesRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListAlarmRulesRequest:
     def name(self, name):
         r"""Sets the name of this ListAlarmRulesRequest.
 
-        **参数解释**： 告警名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度为[1,128]个字符。          **默认取值**： 不涉及。 
+        **参数解释**： 告警规则名称。 **约束限制**： 不涉及。 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度为[1,128]个字符。          **默认取值**： 不涉及。 
 
         :param name: The name of this ListAlarmRulesRequest.
         :type name: str
@@ -209,7 +209,7 @@ class ListAlarmRulesRequest:
     def product_name(self):
         r"""Gets the product_name of this ListAlarmRulesRequest.
 
-        **参数解释**： 产品层级跨维规则查询时支持产品名称查询，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。        **默认取值**： 不涉及。 
+        **参数解释**： 资源所属的云产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。        **默认取值**： 不涉及。 
 
         :return: The product_name of this ListAlarmRulesRequest.
         :rtype: str
@@ -220,7 +220,7 @@ class ListAlarmRulesRequest:
     def product_name(self, product_name):
         r"""Sets the product_name of this ListAlarmRulesRequest.
 
-        **参数解释**： 产品层级跨维规则查询时支持产品名称查询，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。        **默认取值**： 不涉及。 
+        **参数解释**： 资源所属的云产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。        **默认取值**： 不涉及。 
 
         :param product_name: The product_name of this ListAlarmRulesRequest.
         :type product_name: str
@@ -231,7 +231,7 @@ class ListAlarmRulesRequest:
     def resource_level(self):
         r"""Gets the resource_level of this ListAlarmRulesRequest.
 
-        **参数解释**： 产品层级跨维规则查询时支持规则所属类型查询，resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。           **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：云产品。 - dimension：子维度。 **默认取值**： 不涉及。 
+        **参数解释**： 创建告警规则，需要指定的资源层级。resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。          **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：云产品。 - dimension：子维度。 **默认取值**： 不涉及。 
 
         :return: The resource_level of this ListAlarmRulesRequest.
         :rtype: str
@@ -242,7 +242,7 @@ class ListAlarmRulesRequest:
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this ListAlarmRulesRequest.
 
-        **参数解释**： 产品层级跨维规则查询时支持规则所属类型查询，resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。           **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：云产品。 - dimension：子维度。 **默认取值**： 不涉及。 
+        **参数解释**： 创建告警规则，需要指定的资源层级。resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。          **约束限制**： 不涉及。 **取值范围**： 枚举值。 - product：云产品。 - dimension：子维度。 **默认取值**： 不涉及。 
 
         :param resource_level: The resource_level of this ListAlarmRulesRequest.
         :type resource_level: str

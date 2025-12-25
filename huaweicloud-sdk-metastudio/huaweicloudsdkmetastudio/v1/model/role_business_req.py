@@ -15,7 +15,7 @@ class RoleBusinessReq:
     sensitive_list = []
 
     openapi_types = {
-        'language': 'LanguageEnum',
+        'language': 'str',
         'prompt': 'str',
         'knowledge_library_list': 'list[RoleKnowledgeLibraryReq]'
     }
@@ -31,8 +31,8 @@ class RoleBusinessReq:
 
         The model defined in huaweicloud sdk
 
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param prompt: 提示词。
         :type prompt: str
         :param knowledge_library_list: 知识库列表
@@ -56,8 +56,10 @@ class RoleBusinessReq:
     def language(self):
         r"""Gets the language of this RoleBusinessReq.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this RoleBusinessReq.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -65,8 +67,10 @@ class RoleBusinessReq:
     def language(self, language):
         r"""Sets the language of this RoleBusinessReq.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this RoleBusinessReq.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

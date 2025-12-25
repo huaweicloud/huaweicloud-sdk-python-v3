@@ -36,8 +36,7 @@ class ClusterJoinGroupRequestBody:
         self._cluster_group_id = None
         self.discriminator = None
 
-        if cluster_group_id is not None:
-            self.cluster_group_id = cluster_group_id
+        self.cluster_group_id = cluster_group_id
 
     @property
     def cluster_group_id(self):

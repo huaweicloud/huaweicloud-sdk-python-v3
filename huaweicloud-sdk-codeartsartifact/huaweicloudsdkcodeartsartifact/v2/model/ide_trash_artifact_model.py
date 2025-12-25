@@ -33,13 +33,13 @@ class IDETrashArtifactModel:
 
         The model defined in huaweicloud sdk
 
-        :param id: 仓库id
+        :param id: **参数解释**: 仓库id，格式为{region}_{domainId}_{format}_{sequence}。可以从私有依赖库首页-&gt;仓库概览-&gt;仓库地址 url 中获取，最后两个\&quot;/\&quot;中间的字符串即为仓库id。 **约束限制**: 根据仓库id格式中region, domainId需要为有效值，format有效值为:npm|go|pypi|rpm|composer|maven|debian|conan|nuget|docker2|cocoapods|ohpm, sequence取值根据套餐不同有不同上限值。 **取值范围**: 不涉及。 **默认取值**: 无。
         :type id: str
-        :param format: 类型
+        :param format: **参数解释**: 制品类型。 **约束限制**: 不涉及。 **取值范围**: maven2|docker|npm|go|pypi|rpm|composer|debian|conan|nuget|docker2|cocoapods|ohpm|generic。 **默认取值**: 无。
         :type format: str
-        :param status: 当前仓库状态
+        :param status: **参数解释**: 当前仓库状态。 **约束限制**: 不涉及。 **取值范围**: active：正常。 trash：废弃。 delete：删除。 **默认取值**: 无。
         :type status: str
-        :param uri: 待还原的文件路径
+        :param uri: **参数解释**: 待还原的仓库路径。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。
         :type uri: str
         """
         
@@ -51,20 +51,16 @@ class IDETrashArtifactModel:
         self._uri = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if format is not None:
-            self.format = format
-        if status is not None:
-            self.status = status
-        if uri is not None:
-            self.uri = uri
+        self.id = id
+        self.format = format
+        self.status = status
+        self.uri = uri
 
     @property
     def id(self):
         r"""Gets the id of this IDETrashArtifactModel.
 
-        仓库id
+        **参数解释**: 仓库id，格式为{region}_{domainId}_{format}_{sequence}。可以从私有依赖库首页->仓库概览->仓库地址 url 中获取，最后两个\"/\"中间的字符串即为仓库id。 **约束限制**: 根据仓库id格式中region, domainId需要为有效值，format有效值为:npm|go|pypi|rpm|composer|maven|debian|conan|nuget|docker2|cocoapods|ohpm, sequence取值根据套餐不同有不同上限值。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :return: The id of this IDETrashArtifactModel.
         :rtype: str
@@ -75,7 +71,7 @@ class IDETrashArtifactModel:
     def id(self, id):
         r"""Sets the id of this IDETrashArtifactModel.
 
-        仓库id
+        **参数解释**: 仓库id，格式为{region}_{domainId}_{format}_{sequence}。可以从私有依赖库首页->仓库概览->仓库地址 url 中获取，最后两个\"/\"中间的字符串即为仓库id。 **约束限制**: 根据仓库id格式中region, domainId需要为有效值，format有效值为:npm|go|pypi|rpm|composer|maven|debian|conan|nuget|docker2|cocoapods|ohpm, sequence取值根据套餐不同有不同上限值。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :param id: The id of this IDETrashArtifactModel.
         :type id: str
@@ -86,7 +82,7 @@ class IDETrashArtifactModel:
     def format(self):
         r"""Gets the format of this IDETrashArtifactModel.
 
-        类型
+        **参数解释**: 制品类型。 **约束限制**: 不涉及。 **取值范围**: maven2|docker|npm|go|pypi|rpm|composer|debian|conan|nuget|docker2|cocoapods|ohpm|generic。 **默认取值**: 无。
 
         :return: The format of this IDETrashArtifactModel.
         :rtype: str
@@ -97,7 +93,7 @@ class IDETrashArtifactModel:
     def format(self, format):
         r"""Sets the format of this IDETrashArtifactModel.
 
-        类型
+        **参数解释**: 制品类型。 **约束限制**: 不涉及。 **取值范围**: maven2|docker|npm|go|pypi|rpm|composer|debian|conan|nuget|docker2|cocoapods|ohpm|generic。 **默认取值**: 无。
 
         :param format: The format of this IDETrashArtifactModel.
         :type format: str
@@ -108,7 +104,7 @@ class IDETrashArtifactModel:
     def status(self):
         r"""Gets the status of this IDETrashArtifactModel.
 
-        当前仓库状态
+        **参数解释**: 当前仓库状态。 **约束限制**: 不涉及。 **取值范围**: active：正常。 trash：废弃。 delete：删除。 **默认取值**: 无。
 
         :return: The status of this IDETrashArtifactModel.
         :rtype: str
@@ -119,7 +115,7 @@ class IDETrashArtifactModel:
     def status(self, status):
         r"""Sets the status of this IDETrashArtifactModel.
 
-        当前仓库状态
+        **参数解释**: 当前仓库状态。 **约束限制**: 不涉及。 **取值范围**: active：正常。 trash：废弃。 delete：删除。 **默认取值**: 无。
 
         :param status: The status of this IDETrashArtifactModel.
         :type status: str
@@ -130,7 +126,7 @@ class IDETrashArtifactModel:
     def uri(self):
         r"""Gets the uri of this IDETrashArtifactModel.
 
-        待还原的文件路径
+        **参数解释**: 待还原的仓库路径。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :return: The uri of this IDETrashArtifactModel.
         :rtype: str
@@ -141,7 +137,7 @@ class IDETrashArtifactModel:
     def uri(self, uri):
         r"""Sets the uri of this IDETrashArtifactModel.
 
-        待还原的文件路径
+        **参数解释**: 待还原的仓库路径。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 无。
 
         :param uri: The uri of this IDETrashArtifactModel.
         :type uri: str

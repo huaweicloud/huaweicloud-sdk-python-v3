@@ -16,7 +16,7 @@ class ShowTaskTypeSummaryResponseBodyFilter:
 
     openapi_types = {
         'region_id': 'str',
-        'resource_type': 'ResourceTypeEnum',
+        'resource_type': 'str',
         'start_time': 'str',
         'end_time': 'str'
     }
@@ -35,8 +35,8 @@ class ShowTaskTypeSummaryResponseBodyFilter:
 
         :param region_id: 区域ID
         :type region_id: str
-        :param resource_type: 
-        :type resource_type: :class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`
+        :param resource_type: Server：云服务器 Volume：云硬盘 Sfs-Turbo：高性能文件系统 Workspace：云桌面 MySQL：云数据库RDS(MySQL) PostgreSQL：云数据库RDS(PostgreSQL) SQLServer：云数据库RDS(SQLServer) MariaDB：云数据库RDS(MariaDB) GaussDB：云数据库GaussDB
+        :type resource_type: str
         :param start_time: 起始时间
         :type start_time: str
         :param end_time: 结束时间
@@ -86,8 +86,10 @@ class ShowTaskTypeSummaryResponseBodyFilter:
     def resource_type(self):
         r"""Gets the resource_type of this ShowTaskTypeSummaryResponseBodyFilter.
 
+        Server：云服务器 Volume：云硬盘 Sfs-Turbo：高性能文件系统 Workspace：云桌面 MySQL：云数据库RDS(MySQL) PostgreSQL：云数据库RDS(PostgreSQL) SQLServer：云数据库RDS(SQLServer) MariaDB：云数据库RDS(MariaDB) GaussDB：云数据库GaussDB
+
         :return: The resource_type of this ShowTaskTypeSummaryResponseBodyFilter.
-        :rtype: :class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`
+        :rtype: str
         """
         return self._resource_type
 
@@ -95,8 +97,10 @@ class ShowTaskTypeSummaryResponseBodyFilter:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this ShowTaskTypeSummaryResponseBodyFilter.
 
+        Server：云服务器 Volume：云硬盘 Sfs-Turbo：高性能文件系统 Workspace：云桌面 MySQL：云数据库RDS(MySQL) PostgreSQL：云数据库RDS(PostgreSQL) SQLServer：云数据库RDS(SQLServer) MariaDB：云数据库RDS(MariaDB) GaussDB：云数据库GaussDB
+
         :param resource_type: The resource_type of this ShowTaskTypeSummaryResponseBodyFilter.
-        :type resource_type: :class:`huaweicloudsdkbcc.v1.ResourceTypeEnum`
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

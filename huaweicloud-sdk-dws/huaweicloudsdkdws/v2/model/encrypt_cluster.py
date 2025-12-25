@@ -35,7 +35,7 @@ class EncryptCluster:
         :type master_key_id: str
         :param master_key_name: **参数解释**： KMS密钥名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type master_key_name: str
-        :param crypt_algorithm: **参数解释**： 加密类型。国密、国际加密。 **约束限制**： 不涉及。 **取值范围**： generalCipher：AES-CBC算法加密。 SMcompatible：sm4算法加密。 **默认取值**： 不涉及。
+        :param crypt_algorithm: **参数解释**： 加密类型。国密、国际加密。 **约束限制**： 不涉及。 **取值范围**： - generalCipher：AES-CBC算法加密。 - SMcompatible：sm4算法加密。  **默认取值**： 不涉及。
         :type crypt_algorithm: str
         """
         
@@ -99,7 +99,7 @@ class EncryptCluster:
     def crypt_algorithm(self):
         r"""Gets the crypt_algorithm of this EncryptCluster.
 
-        **参数解释**： 加密类型。国密、国际加密。 **约束限制**： 不涉及。 **取值范围**： generalCipher：AES-CBC算法加密。 SMcompatible：sm4算法加密。 **默认取值**： 不涉及。
+        **参数解释**： 加密类型。国密、国际加密。 **约束限制**： 不涉及。 **取值范围**： - generalCipher：AES-CBC算法加密。 - SMcompatible：sm4算法加密。  **默认取值**： 不涉及。
 
         :return: The crypt_algorithm of this EncryptCluster.
         :rtype: str
@@ -110,7 +110,7 @@ class EncryptCluster:
     def crypt_algorithm(self, crypt_algorithm):
         r"""Sets the crypt_algorithm of this EncryptCluster.
 
-        **参数解释**： 加密类型。国密、国际加密。 **约束限制**： 不涉及。 **取值范围**： generalCipher：AES-CBC算法加密。 SMcompatible：sm4算法加密。 **默认取值**： 不涉及。
+        **参数解释**： 加密类型。国密、国际加密。 **约束限制**： 不涉及。 **取值范围**： - generalCipher：AES-CBC算法加密。 - SMcompatible：sm4算法加密。  **默认取值**： 不涉及。
 
         :param crypt_algorithm: The crypt_algorithm of this EncryptCluster.
         :type crypt_algorithm: str

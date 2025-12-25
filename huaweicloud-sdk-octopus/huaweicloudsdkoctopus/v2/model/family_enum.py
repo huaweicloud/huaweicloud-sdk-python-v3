@@ -4,14 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class FamilyEnum:
-    """
-    allowed enum values
-    """
-    _0 = "0"
-    _1 = "1"
-    _2 = "2"
-    _3 = "3"
-    _4 = "4"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

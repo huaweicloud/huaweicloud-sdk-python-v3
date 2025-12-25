@@ -29,9 +29,9 @@ class AssociationAlarmTemplate:
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 告警模板ID
+        :param template_id: **参数解释** 告警模板ID。 **取值范围** 以at开头，后跟字母、数字，长度在[2,64]区间内。
         :type template_id: str
-        :param template_name: 告警模板名称
+        :param template_name: **参数解释** 告警模板名称。 **取值范围** 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度在[1,128]区间内。
         :type template_name: str
         """
         
@@ -50,7 +50,7 @@ class AssociationAlarmTemplate:
     def template_id(self):
         r"""Gets the template_id of this AssociationAlarmTemplate.
 
-        告警模板ID
+        **参数解释** 告警模板ID。 **取值范围** 以at开头，后跟字母、数字，长度在[2,64]区间内。
 
         :return: The template_id of this AssociationAlarmTemplate.
         :rtype: str
@@ -61,7 +61,7 @@ class AssociationAlarmTemplate:
     def template_id(self, template_id):
         r"""Sets the template_id of this AssociationAlarmTemplate.
 
-        告警模板ID
+        **参数解释** 告警模板ID。 **取值范围** 以at开头，后跟字母、数字，长度在[2,64]区间内。
 
         :param template_id: The template_id of this AssociationAlarmTemplate.
         :type template_id: str
@@ -72,7 +72,7 @@ class AssociationAlarmTemplate:
     def template_name(self):
         r"""Gets the template_name of this AssociationAlarmTemplate.
 
-        告警模板名称
+        **参数解释** 告警模板名称。 **取值范围** 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度在[1,128]区间内。
 
         :return: The template_name of this AssociationAlarmTemplate.
         :rtype: str
@@ -83,7 +83,7 @@ class AssociationAlarmTemplate:
     def template_name(self, template_name):
         r"""Sets the template_name of this AssociationAlarmTemplate.
 
-        告警模板名称
+        **参数解释** 告警模板名称。 **取值范围** 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度在[1,128]区间内。
 
         :param template_name: The template_name of this AssociationAlarmTemplate.
         :type template_name: str

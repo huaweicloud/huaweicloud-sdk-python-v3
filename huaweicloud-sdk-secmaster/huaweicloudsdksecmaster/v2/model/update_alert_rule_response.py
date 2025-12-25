@@ -16,118 +16,159 @@ class UpdateAlertRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'rule_id': 'str',
-        'pipe_id': 'str',
-        'pipe_name': 'str',
+        'alert_rule_id': 'str',
+        'alert_rule_name': 'str',
+        'script': 'str',
+        'status': 'str',
+        'directory': 'str',
+        'description': 'str',
+        'job_mode': 'str',
+        'job_mode_setting': 'IsapJobModeSettingVo',
+        'job_output_setting': 'AlertRuleJobSetting',
+        'process_status': 'str',
+        'process_error': 'str',
+        'environment': 'str',
+        'output_table_id': 'str',
+        'output_table_name': 'str',
+        'output_table_ids': 'list[str]',
+        'output_table_names': 'list[str]',
         'create_by': 'str',
         'create_time': 'int',
         'update_by': 'str',
         'update_time': 'int',
-        'delete_time': 'int',
-        'rule_name': 'str',
-        'query': 'str',
-        'query_type': 'str',
-        'status': 'str',
-        'severity': 'str',
-        'custom_properties': 'dict(str, str)',
-        'event_grouping': 'bool',
-        'schedule': 'Schedule',
-        'triggers': 'list[AlertRuleTrigger]',
-        'x_request_id': 'str'
+        'delete_time': 'int'
     }
 
     attribute_map = {
-        'rule_id': 'rule_id',
-        'pipe_id': 'pipe_id',
-        'pipe_name': 'pipe_name',
+        'alert_rule_id': 'alert_rule_id',
+        'alert_rule_name': 'alert_rule_name',
+        'script': 'script',
+        'status': 'status',
+        'directory': 'directory',
+        'description': 'description',
+        'job_mode': 'job_mode',
+        'job_mode_setting': 'job_mode_setting',
+        'job_output_setting': 'job_output_setting',
+        'process_status': 'process_status',
+        'process_error': 'process_error',
+        'environment': 'environment',
+        'output_table_id': 'output_table_id',
+        'output_table_name': 'output_table_name',
+        'output_table_ids': 'output_table_ids',
+        'output_table_names': 'output_table_names',
         'create_by': 'create_by',
         'create_time': 'create_time',
         'update_by': 'update_by',
         'update_time': 'update_time',
-        'delete_time': 'delete_time',
-        'rule_name': 'rule_name',
-        'query': 'query',
-        'query_type': 'query_type',
-        'status': 'status',
-        'severity': 'severity',
-        'custom_properties': 'custom_properties',
-        'event_grouping': 'event_grouping',
-        'schedule': 'schedule',
-        'triggers': 'triggers',
-        'x_request_id': 'X-request-id'
+        'delete_time': 'delete_time'
     }
 
-    def __init__(self, rule_id=None, pipe_id=None, pipe_name=None, create_by=None, create_time=None, update_by=None, update_time=None, delete_time=None, rule_name=None, query=None, query_type=None, status=None, severity=None, custom_properties=None, event_grouping=None, schedule=None, triggers=None, x_request_id=None):
+    def __init__(self, alert_rule_id=None, alert_rule_name=None, script=None, status=None, directory=None, description=None, job_mode=None, job_mode_setting=None, job_output_setting=None, process_status=None, process_error=None, environment=None, output_table_id=None, output_table_name=None, output_table_ids=None, output_table_names=None, create_by=None, create_time=None, update_by=None, update_time=None, delete_time=None):
         r"""UpdateAlertRuleResponse
 
         The model defined in huaweicloud sdk
 
-        :param rule_id: 告警规则 ID。Alert rule ID.
-        :type rule_id: str
-        :param pipe_id: 数据管道 ID。Pipe ID.
-        :type pipe_id: str
-        :param pipe_name: 数据管道名称。Pipe name.
-        :type pipe_name: str
-        :param create_by: 创建人。Create by.
-        :type create_by: str
-        :param create_time: 创建时间。Create time.
-        :type create_time: int
-        :param update_by: 更新人。Update by.
-        :type update_by: str
-        :param update_time: 更新时间。Update time.
-        :type update_time: int
-        :param delete_time: 删除时间。Delete time.
-        :type delete_time: int
-        :param rule_name: 告警规则名称。Alert rule name.
-        :type rule_name: str
-        :param query: 查询语句。Query.
-        :type query: str
-        :param query_type: 查询语法，SQL。Query type. SQL.
-        :type query_type: str
-        :param status: 启用状态，启用、停用。Status, enabled, disabled.
+        :param alert_rule_id: UUID
+        :type alert_rule_id: str
+        :param alert_rule_name: Alert rule name 告警规则名称
+        :type alert_rule_name: str
+        :param script: Job Script 作业脚本
+        :type script: str
+        :param status: **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
         :type status: str
-        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
-        :type severity: str
-        :param custom_properties: 自定义扩展信息。Custom properties.
-        :type custom_properties: dict(str, str)
-        :param event_grouping: 告警分组。Event grouping.
-        :type event_grouping: bool
-        :param schedule: 
-        :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        :param triggers: 告警触发规则。Alert triggers.
-        :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
-        :param x_request_id: 
-        :type x_request_id: str
+        :param directory: directory 目录分组
+        :type directory: str
+        :param description: Alert rule description 告警规则描述
+        :type description: str
+        :param job_mode: **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
+        :type job_mode: str
+        :param job_mode_setting: 
+        :type job_mode_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingVo`
+        :param job_output_setting: 
+        :type job_output_setting: :class:`huaweicloudsdksecmaster.v2.AlertRuleJobSetting`
+        :param process_status: **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
+        :type process_status: str
+        :param process_error: **参数解释**: 告警规则处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及       
+        :type process_error: str
+        :param environment: **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
+        :type environment: str
+        :param output_table_id: UUID
+        :type output_table_id: str
+        :param output_table_name: 表名称
+        :type output_table_name: str
+        :param output_table_ids: 输出表ID列表
+        :type output_table_ids: list[str]
+        :param output_table_names: 输出表名称列表
+        :type output_table_names: list[str]
+        :param create_by: 创建者
+        :type create_by: str
+        :param create_time: 毫秒时间戳
+        :type create_time: int
+        :param update_by: 更新者
+        :type update_by: str
+        :param update_time: 毫秒时间戳
+        :type update_time: int
+        :param delete_time: 毫秒时间戳
+        :type delete_time: int
         """
         
         super().__init__()
 
-        self._rule_id = None
-        self._pipe_id = None
-        self._pipe_name = None
+        self._alert_rule_id = None
+        self._alert_rule_name = None
+        self._script = None
+        self._status = None
+        self._directory = None
+        self._description = None
+        self._job_mode = None
+        self._job_mode_setting = None
+        self._job_output_setting = None
+        self._process_status = None
+        self._process_error = None
+        self._environment = None
+        self._output_table_id = None
+        self._output_table_name = None
+        self._output_table_ids = None
+        self._output_table_names = None
         self._create_by = None
         self._create_time = None
         self._update_by = None
         self._update_time = None
         self._delete_time = None
-        self._rule_name = None
-        self._query = None
-        self._query_type = None
-        self._status = None
-        self._severity = None
-        self._custom_properties = None
-        self._event_grouping = None
-        self._schedule = None
-        self._triggers = None
-        self._x_request_id = None
         self.discriminator = None
 
-        if rule_id is not None:
-            self.rule_id = rule_id
-        if pipe_id is not None:
-            self.pipe_id = pipe_id
-        if pipe_name is not None:
-            self.pipe_name = pipe_name
+        if alert_rule_id is not None:
+            self.alert_rule_id = alert_rule_id
+        if alert_rule_name is not None:
+            self.alert_rule_name = alert_rule_name
+        if script is not None:
+            self.script = script
+        if status is not None:
+            self.status = status
+        if directory is not None:
+            self.directory = directory
+        if description is not None:
+            self.description = description
+        if job_mode is not None:
+            self.job_mode = job_mode
+        if job_mode_setting is not None:
+            self.job_mode_setting = job_mode_setting
+        if job_output_setting is not None:
+            self.job_output_setting = job_output_setting
+        if process_status is not None:
+            self.process_status = process_status
+        if process_error is not None:
+            self.process_error = process_error
+        if environment is not None:
+            self.environment = environment
+        if output_table_id is not None:
+            self.output_table_id = output_table_id
+        if output_table_name is not None:
+            self.output_table_name = output_table_name
+        if output_table_ids is not None:
+            self.output_table_ids = output_table_ids
+        if output_table_names is not None:
+            self.output_table_names = output_table_names
         if create_by is not None:
             self.create_by = create_by
         if create_time is not None:
@@ -138,274 +179,78 @@ class UpdateAlertRuleResponse(SdkResponse):
             self.update_time = update_time
         if delete_time is not None:
             self.delete_time = delete_time
-        if rule_name is not None:
-            self.rule_name = rule_name
-        if query is not None:
-            self.query = query
-        if query_type is not None:
-            self.query_type = query_type
-        if status is not None:
-            self.status = status
-        if severity is not None:
-            self.severity = severity
-        if custom_properties is not None:
-            self.custom_properties = custom_properties
-        if event_grouping is not None:
-            self.event_grouping = event_grouping
-        if schedule is not None:
-            self.schedule = schedule
-        if triggers is not None:
-            self.triggers = triggers
-        if x_request_id is not None:
-            self.x_request_id = x_request_id
 
     @property
-    def rule_id(self):
-        r"""Gets the rule_id of this UpdateAlertRuleResponse.
+    def alert_rule_id(self):
+        r"""Gets the alert_rule_id of this UpdateAlertRuleResponse.
 
-        告警规则 ID。Alert rule ID.
+        UUID
 
-        :return: The rule_id of this UpdateAlertRuleResponse.
+        :return: The alert_rule_id of this UpdateAlertRuleResponse.
         :rtype: str
         """
-        return self._rule_id
+        return self._alert_rule_id
 
-    @rule_id.setter
-    def rule_id(self, rule_id):
-        r"""Sets the rule_id of this UpdateAlertRuleResponse.
+    @alert_rule_id.setter
+    def alert_rule_id(self, alert_rule_id):
+        r"""Sets the alert_rule_id of this UpdateAlertRuleResponse.
 
-        告警规则 ID。Alert rule ID.
+        UUID
 
-        :param rule_id: The rule_id of this UpdateAlertRuleResponse.
-        :type rule_id: str
+        :param alert_rule_id: The alert_rule_id of this UpdateAlertRuleResponse.
+        :type alert_rule_id: str
         """
-        self._rule_id = rule_id
+        self._alert_rule_id = alert_rule_id
 
     @property
-    def pipe_id(self):
-        r"""Gets the pipe_id of this UpdateAlertRuleResponse.
+    def alert_rule_name(self):
+        r"""Gets the alert_rule_name of this UpdateAlertRuleResponse.
 
-        数据管道 ID。Pipe ID.
+        Alert rule name 告警规则名称
 
-        :return: The pipe_id of this UpdateAlertRuleResponse.
+        :return: The alert_rule_name of this UpdateAlertRuleResponse.
         :rtype: str
         """
-        return self._pipe_id
+        return self._alert_rule_name
 
-    @pipe_id.setter
-    def pipe_id(self, pipe_id):
-        r"""Sets the pipe_id of this UpdateAlertRuleResponse.
+    @alert_rule_name.setter
+    def alert_rule_name(self, alert_rule_name):
+        r"""Sets the alert_rule_name of this UpdateAlertRuleResponse.
 
-        数据管道 ID。Pipe ID.
+        Alert rule name 告警规则名称
 
-        :param pipe_id: The pipe_id of this UpdateAlertRuleResponse.
-        :type pipe_id: str
+        :param alert_rule_name: The alert_rule_name of this UpdateAlertRuleResponse.
+        :type alert_rule_name: str
         """
-        self._pipe_id = pipe_id
+        self._alert_rule_name = alert_rule_name
 
     @property
-    def pipe_name(self):
-        r"""Gets the pipe_name of this UpdateAlertRuleResponse.
+    def script(self):
+        r"""Gets the script of this UpdateAlertRuleResponse.
 
-        数据管道名称。Pipe name.
+        Job Script 作业脚本
 
-        :return: The pipe_name of this UpdateAlertRuleResponse.
+        :return: The script of this UpdateAlertRuleResponse.
         :rtype: str
         """
-        return self._pipe_name
+        return self._script
 
-    @pipe_name.setter
-    def pipe_name(self, pipe_name):
-        r"""Sets the pipe_name of this UpdateAlertRuleResponse.
+    @script.setter
+    def script(self, script):
+        r"""Sets the script of this UpdateAlertRuleResponse.
 
-        数据管道名称。Pipe name.
+        Job Script 作业脚本
 
-        :param pipe_name: The pipe_name of this UpdateAlertRuleResponse.
-        :type pipe_name: str
+        :param script: The script of this UpdateAlertRuleResponse.
+        :type script: str
         """
-        self._pipe_name = pipe_name
-
-    @property
-    def create_by(self):
-        r"""Gets the create_by of this UpdateAlertRuleResponse.
-
-        创建人。Create by.
-
-        :return: The create_by of this UpdateAlertRuleResponse.
-        :rtype: str
-        """
-        return self._create_by
-
-    @create_by.setter
-    def create_by(self, create_by):
-        r"""Sets the create_by of this UpdateAlertRuleResponse.
-
-        创建人。Create by.
-
-        :param create_by: The create_by of this UpdateAlertRuleResponse.
-        :type create_by: str
-        """
-        self._create_by = create_by
-
-    @property
-    def create_time(self):
-        r"""Gets the create_time of this UpdateAlertRuleResponse.
-
-        创建时间。Create time.
-
-        :return: The create_time of this UpdateAlertRuleResponse.
-        :rtype: int
-        """
-        return self._create_time
-
-    @create_time.setter
-    def create_time(self, create_time):
-        r"""Sets the create_time of this UpdateAlertRuleResponse.
-
-        创建时间。Create time.
-
-        :param create_time: The create_time of this UpdateAlertRuleResponse.
-        :type create_time: int
-        """
-        self._create_time = create_time
-
-    @property
-    def update_by(self):
-        r"""Gets the update_by of this UpdateAlertRuleResponse.
-
-        更新人。Update by.
-
-        :return: The update_by of this UpdateAlertRuleResponse.
-        :rtype: str
-        """
-        return self._update_by
-
-    @update_by.setter
-    def update_by(self, update_by):
-        r"""Sets the update_by of this UpdateAlertRuleResponse.
-
-        更新人。Update by.
-
-        :param update_by: The update_by of this UpdateAlertRuleResponse.
-        :type update_by: str
-        """
-        self._update_by = update_by
-
-    @property
-    def update_time(self):
-        r"""Gets the update_time of this UpdateAlertRuleResponse.
-
-        更新时间。Update time.
-
-        :return: The update_time of this UpdateAlertRuleResponse.
-        :rtype: int
-        """
-        return self._update_time
-
-    @update_time.setter
-    def update_time(self, update_time):
-        r"""Sets the update_time of this UpdateAlertRuleResponse.
-
-        更新时间。Update time.
-
-        :param update_time: The update_time of this UpdateAlertRuleResponse.
-        :type update_time: int
-        """
-        self._update_time = update_time
-
-    @property
-    def delete_time(self):
-        r"""Gets the delete_time of this UpdateAlertRuleResponse.
-
-        删除时间。Delete time.
-
-        :return: The delete_time of this UpdateAlertRuleResponse.
-        :rtype: int
-        """
-        return self._delete_time
-
-    @delete_time.setter
-    def delete_time(self, delete_time):
-        r"""Sets the delete_time of this UpdateAlertRuleResponse.
-
-        删除时间。Delete time.
-
-        :param delete_time: The delete_time of this UpdateAlertRuleResponse.
-        :type delete_time: int
-        """
-        self._delete_time = delete_time
-
-    @property
-    def rule_name(self):
-        r"""Gets the rule_name of this UpdateAlertRuleResponse.
-
-        告警规则名称。Alert rule name.
-
-        :return: The rule_name of this UpdateAlertRuleResponse.
-        :rtype: str
-        """
-        return self._rule_name
-
-    @rule_name.setter
-    def rule_name(self, rule_name):
-        r"""Sets the rule_name of this UpdateAlertRuleResponse.
-
-        告警规则名称。Alert rule name.
-
-        :param rule_name: The rule_name of this UpdateAlertRuleResponse.
-        :type rule_name: str
-        """
-        self._rule_name = rule_name
-
-    @property
-    def query(self):
-        r"""Gets the query of this UpdateAlertRuleResponse.
-
-        查询语句。Query.
-
-        :return: The query of this UpdateAlertRuleResponse.
-        :rtype: str
-        """
-        return self._query
-
-    @query.setter
-    def query(self, query):
-        r"""Sets the query of this UpdateAlertRuleResponse.
-
-        查询语句。Query.
-
-        :param query: The query of this UpdateAlertRuleResponse.
-        :type query: str
-        """
-        self._query = query
-
-    @property
-    def query_type(self):
-        r"""Gets the query_type of this UpdateAlertRuleResponse.
-
-        查询语法，SQL。Query type. SQL.
-
-        :return: The query_type of this UpdateAlertRuleResponse.
-        :rtype: str
-        """
-        return self._query_type
-
-    @query_type.setter
-    def query_type(self, query_type):
-        r"""Sets the query_type of this UpdateAlertRuleResponse.
-
-        查询语法，SQL。Query type. SQL.
-
-        :param query_type: The query_type of this UpdateAlertRuleResponse.
-        :type query_type: str
-        """
-        self._query_type = query_type
+        self._script = script
 
     @property
     def status(self):
         r"""Gets the status of this UpdateAlertRuleResponse.
 
-        启用状态，启用、停用。Status, enabled, disabled.
+        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
 
         :return: The status of this UpdateAlertRuleResponse.
         :rtype: str
@@ -416,7 +261,7 @@ class UpdateAlertRuleResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this UpdateAlertRuleResponse.
 
-        启用状态，启用、停用。Status, enabled, disabled.
+        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
 
         :param status: The status of this UpdateAlertRuleResponse.
         :type status: str
@@ -424,128 +269,370 @@ class UpdateAlertRuleResponse(SdkResponse):
         self._status = status
 
     @property
-    def severity(self):
-        r"""Gets the severity of this UpdateAlertRuleResponse.
+    def directory(self):
+        r"""Gets the directory of this UpdateAlertRuleResponse.
 
-        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        directory 目录分组
 
-        :return: The severity of this UpdateAlertRuleResponse.
+        :return: The directory of this UpdateAlertRuleResponse.
         :rtype: str
         """
-        return self._severity
+        return self._directory
 
-    @severity.setter
-    def severity(self, severity):
-        r"""Sets the severity of this UpdateAlertRuleResponse.
+    @directory.setter
+    def directory(self, directory):
+        r"""Sets the directory of this UpdateAlertRuleResponse.
 
-        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        directory 目录分组
 
-        :param severity: The severity of this UpdateAlertRuleResponse.
-        :type severity: str
+        :param directory: The directory of this UpdateAlertRuleResponse.
+        :type directory: str
         """
-        self._severity = severity
+        self._directory = directory
 
     @property
-    def custom_properties(self):
-        r"""Gets the custom_properties of this UpdateAlertRuleResponse.
+    def description(self):
+        r"""Gets the description of this UpdateAlertRuleResponse.
 
-        自定义扩展信息。Custom properties.
+        Alert rule description 告警规则描述
 
-        :return: The custom_properties of this UpdateAlertRuleResponse.
-        :rtype: dict(str, str)
-        """
-        return self._custom_properties
-
-    @custom_properties.setter
-    def custom_properties(self, custom_properties):
-        r"""Sets the custom_properties of this UpdateAlertRuleResponse.
-
-        自定义扩展信息。Custom properties.
-
-        :param custom_properties: The custom_properties of this UpdateAlertRuleResponse.
-        :type custom_properties: dict(str, str)
-        """
-        self._custom_properties = custom_properties
-
-    @property
-    def event_grouping(self):
-        r"""Gets the event_grouping of this UpdateAlertRuleResponse.
-
-        告警分组。Event grouping.
-
-        :return: The event_grouping of this UpdateAlertRuleResponse.
-        :rtype: bool
-        """
-        return self._event_grouping
-
-    @event_grouping.setter
-    def event_grouping(self, event_grouping):
-        r"""Sets the event_grouping of this UpdateAlertRuleResponse.
-
-        告警分组。Event grouping.
-
-        :param event_grouping: The event_grouping of this UpdateAlertRuleResponse.
-        :type event_grouping: bool
-        """
-        self._event_grouping = event_grouping
-
-    @property
-    def schedule(self):
-        r"""Gets the schedule of this UpdateAlertRuleResponse.
-
-        :return: The schedule of this UpdateAlertRuleResponse.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        """
-        return self._schedule
-
-    @schedule.setter
-    def schedule(self, schedule):
-        r"""Sets the schedule of this UpdateAlertRuleResponse.
-
-        :param schedule: The schedule of this UpdateAlertRuleResponse.
-        :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        """
-        self._schedule = schedule
-
-    @property
-    def triggers(self):
-        r"""Gets the triggers of this UpdateAlertRuleResponse.
-
-        告警触发规则。Alert triggers.
-
-        :return: The triggers of this UpdateAlertRuleResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
-        """
-        return self._triggers
-
-    @triggers.setter
-    def triggers(self, triggers):
-        r"""Sets the triggers of this UpdateAlertRuleResponse.
-
-        告警触发规则。Alert triggers.
-
-        :param triggers: The triggers of this UpdateAlertRuleResponse.
-        :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
-        """
-        self._triggers = triggers
-
-    @property
-    def x_request_id(self):
-        r"""Gets the x_request_id of this UpdateAlertRuleResponse.
-
-        :return: The x_request_id of this UpdateAlertRuleResponse.
+        :return: The description of this UpdateAlertRuleResponse.
         :rtype: str
         """
-        return self._x_request_id
+        return self._description
 
-    @x_request_id.setter
-    def x_request_id(self, x_request_id):
-        r"""Sets the x_request_id of this UpdateAlertRuleResponse.
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this UpdateAlertRuleResponse.
 
-        :param x_request_id: The x_request_id of this UpdateAlertRuleResponse.
-        :type x_request_id: str
+        Alert rule description 告警规则描述
+
+        :param description: The description of this UpdateAlertRuleResponse.
+        :type description: str
         """
-        self._x_request_id = x_request_id
+        self._description = description
+
+    @property
+    def job_mode(self):
+        r"""Gets the job_mode of this UpdateAlertRuleResponse.
+
+        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
+
+        :return: The job_mode of this UpdateAlertRuleResponse.
+        :rtype: str
+        """
+        return self._job_mode
+
+    @job_mode.setter
+    def job_mode(self, job_mode):
+        r"""Sets the job_mode of this UpdateAlertRuleResponse.
+
+        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
+
+        :param job_mode: The job_mode of this UpdateAlertRuleResponse.
+        :type job_mode: str
+        """
+        self._job_mode = job_mode
+
+    @property
+    def job_mode_setting(self):
+        r"""Gets the job_mode_setting of this UpdateAlertRuleResponse.
+
+        :return: The job_mode_setting of this UpdateAlertRuleResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingVo`
+        """
+        return self._job_mode_setting
+
+    @job_mode_setting.setter
+    def job_mode_setting(self, job_mode_setting):
+        r"""Sets the job_mode_setting of this UpdateAlertRuleResponse.
+
+        :param job_mode_setting: The job_mode_setting of this UpdateAlertRuleResponse.
+        :type job_mode_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingVo`
+        """
+        self._job_mode_setting = job_mode_setting
+
+    @property
+    def job_output_setting(self):
+        r"""Gets the job_output_setting of this UpdateAlertRuleResponse.
+
+        :return: The job_output_setting of this UpdateAlertRuleResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.AlertRuleJobSetting`
+        """
+        return self._job_output_setting
+
+    @job_output_setting.setter
+    def job_output_setting(self, job_output_setting):
+        r"""Sets the job_output_setting of this UpdateAlertRuleResponse.
+
+        :param job_output_setting: The job_output_setting of this UpdateAlertRuleResponse.
+        :type job_output_setting: :class:`huaweicloudsdksecmaster.v2.AlertRuleJobSetting`
+        """
+        self._job_output_setting = job_output_setting
+
+    @property
+    def process_status(self):
+        r"""Gets the process_status of this UpdateAlertRuleResponse.
+
+        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
+
+        :return: The process_status of this UpdateAlertRuleResponse.
+        :rtype: str
+        """
+        return self._process_status
+
+    @process_status.setter
+    def process_status(self, process_status):
+        r"""Sets the process_status of this UpdateAlertRuleResponse.
+
+        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
+
+        :param process_status: The process_status of this UpdateAlertRuleResponse.
+        :type process_status: str
+        """
+        self._process_status = process_status
+
+    @property
+    def process_error(self):
+        r"""Gets the process_error of this UpdateAlertRuleResponse.
+
+        **参数解释**: 告警规则处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及       
+
+        :return: The process_error of this UpdateAlertRuleResponse.
+        :rtype: str
+        """
+        return self._process_error
+
+    @process_error.setter
+    def process_error(self, process_error):
+        r"""Sets the process_error of this UpdateAlertRuleResponse.
+
+        **参数解释**: 告警规则处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及       
+
+        :param process_error: The process_error of this UpdateAlertRuleResponse.
+        :type process_error: str
+        """
+        self._process_error = process_error
+
+    @property
+    def environment(self):
+        r"""Gets the environment of this UpdateAlertRuleResponse.
+
+        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
+
+        :return: The environment of this UpdateAlertRuleResponse.
+        :rtype: str
+        """
+        return self._environment
+
+    @environment.setter
+    def environment(self, environment):
+        r"""Sets the environment of this UpdateAlertRuleResponse.
+
+        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
+
+        :param environment: The environment of this UpdateAlertRuleResponse.
+        :type environment: str
+        """
+        self._environment = environment
+
+    @property
+    def output_table_id(self):
+        r"""Gets the output_table_id of this UpdateAlertRuleResponse.
+
+        UUID
+
+        :return: The output_table_id of this UpdateAlertRuleResponse.
+        :rtype: str
+        """
+        return self._output_table_id
+
+    @output_table_id.setter
+    def output_table_id(self, output_table_id):
+        r"""Sets the output_table_id of this UpdateAlertRuleResponse.
+
+        UUID
+
+        :param output_table_id: The output_table_id of this UpdateAlertRuleResponse.
+        :type output_table_id: str
+        """
+        self._output_table_id = output_table_id
+
+    @property
+    def output_table_name(self):
+        r"""Gets the output_table_name of this UpdateAlertRuleResponse.
+
+        表名称
+
+        :return: The output_table_name of this UpdateAlertRuleResponse.
+        :rtype: str
+        """
+        return self._output_table_name
+
+    @output_table_name.setter
+    def output_table_name(self, output_table_name):
+        r"""Sets the output_table_name of this UpdateAlertRuleResponse.
+
+        表名称
+
+        :param output_table_name: The output_table_name of this UpdateAlertRuleResponse.
+        :type output_table_name: str
+        """
+        self._output_table_name = output_table_name
+
+    @property
+    def output_table_ids(self):
+        r"""Gets the output_table_ids of this UpdateAlertRuleResponse.
+
+        输出表ID列表
+
+        :return: The output_table_ids of this UpdateAlertRuleResponse.
+        :rtype: list[str]
+        """
+        return self._output_table_ids
+
+    @output_table_ids.setter
+    def output_table_ids(self, output_table_ids):
+        r"""Sets the output_table_ids of this UpdateAlertRuleResponse.
+
+        输出表ID列表
+
+        :param output_table_ids: The output_table_ids of this UpdateAlertRuleResponse.
+        :type output_table_ids: list[str]
+        """
+        self._output_table_ids = output_table_ids
+
+    @property
+    def output_table_names(self):
+        r"""Gets the output_table_names of this UpdateAlertRuleResponse.
+
+        输出表名称列表
+
+        :return: The output_table_names of this UpdateAlertRuleResponse.
+        :rtype: list[str]
+        """
+        return self._output_table_names
+
+    @output_table_names.setter
+    def output_table_names(self, output_table_names):
+        r"""Sets the output_table_names of this UpdateAlertRuleResponse.
+
+        输出表名称列表
+
+        :param output_table_names: The output_table_names of this UpdateAlertRuleResponse.
+        :type output_table_names: list[str]
+        """
+        self._output_table_names = output_table_names
+
+    @property
+    def create_by(self):
+        r"""Gets the create_by of this UpdateAlertRuleResponse.
+
+        创建者
+
+        :return: The create_by of this UpdateAlertRuleResponse.
+        :rtype: str
+        """
+        return self._create_by
+
+    @create_by.setter
+    def create_by(self, create_by):
+        r"""Sets the create_by of this UpdateAlertRuleResponse.
+
+        创建者
+
+        :param create_by: The create_by of this UpdateAlertRuleResponse.
+        :type create_by: str
+        """
+        self._create_by = create_by
+
+    @property
+    def create_time(self):
+        r"""Gets the create_time of this UpdateAlertRuleResponse.
+
+        毫秒时间戳
+
+        :return: The create_time of this UpdateAlertRuleResponse.
+        :rtype: int
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this UpdateAlertRuleResponse.
+
+        毫秒时间戳
+
+        :param create_time: The create_time of this UpdateAlertRuleResponse.
+        :type create_time: int
+        """
+        self._create_time = create_time
+
+    @property
+    def update_by(self):
+        r"""Gets the update_by of this UpdateAlertRuleResponse.
+
+        更新者
+
+        :return: The update_by of this UpdateAlertRuleResponse.
+        :rtype: str
+        """
+        return self._update_by
+
+    @update_by.setter
+    def update_by(self, update_by):
+        r"""Sets the update_by of this UpdateAlertRuleResponse.
+
+        更新者
+
+        :param update_by: The update_by of this UpdateAlertRuleResponse.
+        :type update_by: str
+        """
+        self._update_by = update_by
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this UpdateAlertRuleResponse.
+
+        毫秒时间戳
+
+        :return: The update_time of this UpdateAlertRuleResponse.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this UpdateAlertRuleResponse.
+
+        毫秒时间戳
+
+        :param update_time: The update_time of this UpdateAlertRuleResponse.
+        :type update_time: int
+        """
+        self._update_time = update_time
+
+    @property
+    def delete_time(self):
+        r"""Gets the delete_time of this UpdateAlertRuleResponse.
+
+        毫秒时间戳
+
+        :return: The delete_time of this UpdateAlertRuleResponse.
+        :rtype: int
+        """
+        return self._delete_time
+
+    @delete_time.setter
+    def delete_time(self, delete_time):
+        r"""Sets the delete_time of this UpdateAlertRuleResponse.
+
+        毫秒时间戳
+
+        :param delete_time: The delete_time of this UpdateAlertRuleResponse.
+        :type delete_time: int
+        """
+        self._delete_time = delete_time
 
     def to_dict(self):
         import warnings

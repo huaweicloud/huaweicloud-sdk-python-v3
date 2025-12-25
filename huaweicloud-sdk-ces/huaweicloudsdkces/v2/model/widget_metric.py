@@ -21,7 +21,7 @@ class WidgetMetric:
         'alias': 'list[str]',
         'extra_info': 'ExtraInfo',
         'rollup_enable': 'bool',
-        'rollup_filter': 'RollupFilter',
+        'rollup_filter': 'str',
         'rollup_dimension': 'str',
         'last_week_compare_enable': 'bool',
         'yesterday_compare_enable': 'bool',
@@ -67,8 +67,8 @@ class WidgetMetric:
         :type extra_info: :class:`huaweicloudsdkces.v2.ExtraInfo`
         :param rollup_enable: **参数解释** 是否开启聚合 **约束限制** 当rollup_enable开启时，rollup_filter和rollup_dimension必填 **取值范围** - true：表示开启聚合 - false：表示不开启聚合 **默认取值** false 
         :type rollup_enable: bool
-        :param rollup_filter: 
-        :type rollup_filter: :class:`huaweicloudsdkces.v2.RollupFilter`
+        :param rollup_filter: **参数解释** 聚合规则 **约束限制** 当rollup_enable开启时，rollup_filter和rollup_dimension必填 **取值范围** - last:最新值 - max:最大值 - min:最小值 - average:平均值 - sum:求和值 **默认取值** 不涉及 
+        :type rollup_filter: str
         :param rollup_dimension: **参数解释** 聚合维度 **约束限制** 不涉及 **取值范围** 长度为[1,32]个字符 **默认取值** 不涉及 
         :type rollup_dimension: str
         :param last_week_compare_enable: **参数解释** 是否展示同比（上周同一时间）数据 **约束限制** 不涉及 **取值范围** - true:展示 - false:不展示 **默认取值** 不涉及 
@@ -262,8 +262,10 @@ class WidgetMetric:
     def rollup_filter(self):
         r"""Gets the rollup_filter of this WidgetMetric.
 
+        **参数解释** 聚合规则 **约束限制** 当rollup_enable开启时，rollup_filter和rollup_dimension必填 **取值范围** - last:最新值 - max:最大值 - min:最小值 - average:平均值 - sum:求和值 **默认取值** 不涉及 
+
         :return: The rollup_filter of this WidgetMetric.
-        :rtype: :class:`huaweicloudsdkces.v2.RollupFilter`
+        :rtype: str
         """
         return self._rollup_filter
 
@@ -271,8 +273,10 @@ class WidgetMetric:
     def rollup_filter(self, rollup_filter):
         r"""Sets the rollup_filter of this WidgetMetric.
 
+        **参数解释** 聚合规则 **约束限制** 当rollup_enable开启时，rollup_filter和rollup_dimension必填 **取值范围** - last:最新值 - max:最大值 - min:最小值 - average:平均值 - sum:求和值 **默认取值** 不涉及 
+
         :param rollup_filter: The rollup_filter of this WidgetMetric.
-        :type rollup_filter: :class:`huaweicloudsdkces.v2.RollupFilter`
+        :type rollup_filter: str
         """
         self._rollup_filter = rollup_filter
 

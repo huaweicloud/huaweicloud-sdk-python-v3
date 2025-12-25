@@ -17,16 +17,18 @@ class ContainerNetwork:
     openapi_types = {
         'mode': 'str',
         'cidr': 'str',
-        'cidrs': 'list[ContainerCIDR]'
+        'cidrs': 'list[ContainerCIDR]',
+        'enable_container_cid_rs_reservation': 'bool'
     }
 
     attribute_map = {
         'mode': 'mode',
         'cidr': 'cidr',
-        'cidrs': 'cidrs'
+        'cidrs': 'cidrs',
+        'enable_container_cid_rs_reservation': 'enableContainerCIDRsReservation'
     }
 
-    def __init__(self, mode=None, cidr=None, cidrs=None):
+    def __init__(self, mode=None, cidr=None, cidrs=None, enable_container_cid_rs_reservation=None):
         r"""ContainerNetwork
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ContainerNetwork:
         :type cidr: str
         :param cidrs: 容器网络网段列表。1.21及新版本集群使用cidrs字段，当集群网络类型为vpc-router类型时，支持多个容器网段，最多配置20个；1.21之前版本若使用cidrs字段，则取值cidrs数组中的第一个cidr元素作为容器网络网段地址。  此参数在集群创建后不可更改，请谨慎选择。 
         :type cidrs: list[:class:`huaweicloudsdkcce.v3.ContainerCIDR`]
+        :param enable_container_cid_rs_reservation: **参数解释**： VPC容器网段预留。在VPC的默认路由表中添加容器网段路由，避免创建与容器网段冲突的子网。支持的集群版本如下： - v1.28.15-r70及以上版本 - v1.29.15-r30及以上版本 - v1.30.14-r30及以上版本 - v1.31.10-r30及以上版本 - v1.32.6-r30及以上版本 - v1.33.5-r20及以上版本  **约束限制**： 仅支持VPC网络模型集群。不支持集群设置不生效。 **取值范围**： - false：不开启VPC容器网段预留 - true：开启VPC容器网段预留  **默认取值**： false
+        :type enable_container_cid_rs_reservation: bool
         """
         
         
@@ -44,6 +48,7 @@ class ContainerNetwork:
         self._mode = None
         self._cidr = None
         self._cidrs = None
+        self._enable_container_cid_rs_reservation = None
         self.discriminator = None
 
         self.mode = mode
@@ -51,6 +56,8 @@ class ContainerNetwork:
             self.cidr = cidr
         if cidrs is not None:
             self.cidrs = cidrs
+        if enable_container_cid_rs_reservation is not None:
+            self.enable_container_cid_rs_reservation = enable_container_cid_rs_reservation
 
     @property
     def mode(self):
@@ -117,6 +124,28 @@ class ContainerNetwork:
         :type cidrs: list[:class:`huaweicloudsdkcce.v3.ContainerCIDR`]
         """
         self._cidrs = cidrs
+
+    @property
+    def enable_container_cid_rs_reservation(self):
+        r"""Gets the enable_container_cid_rs_reservation of this ContainerNetwork.
+
+        **参数解释**： VPC容器网段预留。在VPC的默认路由表中添加容器网段路由，避免创建与容器网段冲突的子网。支持的集群版本如下： - v1.28.15-r70及以上版本 - v1.29.15-r30及以上版本 - v1.30.14-r30及以上版本 - v1.31.10-r30及以上版本 - v1.32.6-r30及以上版本 - v1.33.5-r20及以上版本  **约束限制**： 仅支持VPC网络模型集群。不支持集群设置不生效。 **取值范围**： - false：不开启VPC容器网段预留 - true：开启VPC容器网段预留  **默认取值**： false
+
+        :return: The enable_container_cid_rs_reservation of this ContainerNetwork.
+        :rtype: bool
+        """
+        return self._enable_container_cid_rs_reservation
+
+    @enable_container_cid_rs_reservation.setter
+    def enable_container_cid_rs_reservation(self, enable_container_cid_rs_reservation):
+        r"""Sets the enable_container_cid_rs_reservation of this ContainerNetwork.
+
+        **参数解释**： VPC容器网段预留。在VPC的默认路由表中添加容器网段路由，避免创建与容器网段冲突的子网。支持的集群版本如下： - v1.28.15-r70及以上版本 - v1.29.15-r30及以上版本 - v1.30.14-r30及以上版本 - v1.31.10-r30及以上版本 - v1.32.6-r30及以上版本 - v1.33.5-r20及以上版本  **约束限制**： 仅支持VPC网络模型集群。不支持集群设置不生效。 **取值范围**： - false：不开启VPC容器网段预留 - true：开启VPC容器网段预留  **默认取值**： false
+
+        :param enable_container_cid_rs_reservation: The enable_container_cid_rs_reservation of this ContainerNetwork.
+        :type enable_container_cid_rs_reservation: bool
+        """
+        self._enable_container_cid_rs_reservation = enable_container_cid_rs_reservation
 
     def to_dict(self):
         result = {}

@@ -20,7 +20,8 @@ class ListResourceGroupsRequest:
         'group_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'type': 'str'
+        'type': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
@@ -29,26 +30,29 @@ class ListResourceGroupsRequest:
         'group_id': 'group_id',
         'offset': 'offset',
         'limit': 'limit',
-        'type': 'type'
+        'type': 'type',
+        'status': 'status'
     }
 
-    def __init__(self, enterprise_project_id=None, group_name=None, group_id=None, offset=None, limit=None, type=None):
+    def __init__(self, enterprise_project_id=None, group_name=None, group_id=None, offset=None, limit=None, type=None, status=None):
         r"""ListResourceGroupsRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 归属企业项目ID
+        :param enterprise_project_id: **参数解释**: 归属企业项目ID。 **约束限制**: 不涉及。 **取值范围**: 只能包含小写字母、数字、“-”、“_”，长度为36个字符。或者为0（代表默认企业项目ID），或者为all_granted_eps（代表所有企业项目ID）。 **默认取值**: 不涉及。
         :type enterprise_project_id: str
-        :param group_name: 资源分组名称，支持模糊查询
+        :param group_name: **参数解释** 资源分组名称，支持模糊查询。 **约束限制** 不涉及。 **取值范围** 包含字母、数字、_、-或汉字，长度为[1,128]个字符。 **默认取值** 不涉及。
         :type group_name: str
-        :param group_id: 资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        :param group_id: **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\&quot;rg\&quot;开头，后跟22位由字母或数字组成的字符串。 **默认取值** 不涉及。
         :type group_id: str
-        :param offset: 分页查询时查询的起始位置，表示从第几条数据开始，默认为0
+        :param offset: **参数解释** 分页起始值。 **约束限制** 不涉及。 **取值范围** 在[0,10000]区间内。 **默认取值** 0
         :type offset: int
-        :param limit: 分页查询时每页的条目数，取值[1,100]，默认值为100
+        :param limit: **参数解释** 分页查询时每页的条目数。 **约束限制** 不涉及。 **取值范围** 在[1,100]区间内。 **默认取值** 100
         :type limit: int
-        :param type: 资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型,COMB（智能添加-组合匹配）,NAME（资源名称模糊匹配）
+        :param type: **参数解释** 资源分组添加资源方式，不传代表查询所有资源分组类型。 **约束限制** 不涉及。 **取值范围** - EPS: 表示匹配企业项目 - TAG: 表示匹配标签 - Manual: 表示手动添加 - COMB: 表示组合匹配 - NAME: 表示匹配实例名称 **默认取值** 不涉及。
         :type type: str
+        :param status: **参数解释** 资源分组健康状态。 **约束限制** 不涉及。 **取值范围** - health: 表示健康 - unhealthy: 表示不健康 - no_alarm_rule: 表示未配置告警规则 **默认取值** 不涉及。
+        :type status: str
         """
         
         
@@ -59,6 +63,7 @@ class ListResourceGroupsRequest:
         self._offset = None
         self._limit = None
         self._type = None
+        self._status = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
@@ -73,12 +78,14 @@ class ListResourceGroupsRequest:
             self.limit = limit
         if type is not None:
             self.type = type
+        if status is not None:
+            self.status = status
 
     @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListResourceGroupsRequest.
 
-        归属企业项目ID
+        **参数解释**: 归属企业项目ID。 **约束限制**: 不涉及。 **取值范围**: 只能包含小写字母、数字、“-”、“_”，长度为36个字符。或者为0（代表默认企业项目ID），或者为all_granted_eps（代表所有企业项目ID）。 **默认取值**: 不涉及。
 
         :return: The enterprise_project_id of this ListResourceGroupsRequest.
         :rtype: str
@@ -89,7 +96,7 @@ class ListResourceGroupsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListResourceGroupsRequest.
 
-        归属企业项目ID
+        **参数解释**: 归属企业项目ID。 **约束限制**: 不涉及。 **取值范围**: 只能包含小写字母、数字、“-”、“_”，长度为36个字符。或者为0（代表默认企业项目ID），或者为all_granted_eps（代表所有企业项目ID）。 **默认取值**: 不涉及。
 
         :param enterprise_project_id: The enterprise_project_id of this ListResourceGroupsRequest.
         :type enterprise_project_id: str
@@ -100,7 +107,7 @@ class ListResourceGroupsRequest:
     def group_name(self):
         r"""Gets the group_name of this ListResourceGroupsRequest.
 
-        资源分组名称，支持模糊查询
+        **参数解释** 资源分组名称，支持模糊查询。 **约束限制** 不涉及。 **取值范围** 包含字母、数字、_、-或汉字，长度为[1,128]个字符。 **默认取值** 不涉及。
 
         :return: The group_name of this ListResourceGroupsRequest.
         :rtype: str
@@ -111,7 +118,7 @@ class ListResourceGroupsRequest:
     def group_name(self, group_name):
         r"""Sets the group_name of this ListResourceGroupsRequest.
 
-        资源分组名称，支持模糊查询
+        **参数解释** 资源分组名称，支持模糊查询。 **约束限制** 不涉及。 **取值范围** 包含字母、数字、_、-或汉字，长度为[1,128]个字符。 **默认取值** 不涉及。
 
         :param group_name: The group_name of this ListResourceGroupsRequest.
         :type group_name: str
@@ -122,7 +129,7 @@ class ListResourceGroupsRequest:
     def group_id(self):
         r"""Gets the group_id of this ListResourceGroupsRequest.
 
-        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\"rg\"开头，后跟22位由字母或数字组成的字符串。 **默认取值** 不涉及。
 
         :return: The group_id of this ListResourceGroupsRequest.
         :rtype: str
@@ -133,7 +140,7 @@ class ListResourceGroupsRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ListResourceGroupsRequest.
 
-        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\"rg\"开头，后跟22位由字母或数字组成的字符串。 **默认取值** 不涉及。
 
         :param group_id: The group_id of this ListResourceGroupsRequest.
         :type group_id: str
@@ -144,7 +151,7 @@ class ListResourceGroupsRequest:
     def offset(self):
         r"""Gets the offset of this ListResourceGroupsRequest.
 
-        分页查询时查询的起始位置，表示从第几条数据开始，默认为0
+        **参数解释** 分页起始值。 **约束限制** 不涉及。 **取值范围** 在[0,10000]区间内。 **默认取值** 0
 
         :return: The offset of this ListResourceGroupsRequest.
         :rtype: int
@@ -155,7 +162,7 @@ class ListResourceGroupsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListResourceGroupsRequest.
 
-        分页查询时查询的起始位置，表示从第几条数据开始，默认为0
+        **参数解释** 分页起始值。 **约束限制** 不涉及。 **取值范围** 在[0,10000]区间内。 **默认取值** 0
 
         :param offset: The offset of this ListResourceGroupsRequest.
         :type offset: int
@@ -166,7 +173,7 @@ class ListResourceGroupsRequest:
     def limit(self):
         r"""Gets the limit of this ListResourceGroupsRequest.
 
-        分页查询时每页的条目数，取值[1,100]，默认值为100
+        **参数解释** 分页查询时每页的条目数。 **约束限制** 不涉及。 **取值范围** 在[1,100]区间内。 **默认取值** 100
 
         :return: The limit of this ListResourceGroupsRequest.
         :rtype: int
@@ -177,7 +184,7 @@ class ListResourceGroupsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListResourceGroupsRequest.
 
-        分页查询时每页的条目数，取值[1,100]，默认值为100
+        **参数解释** 分页查询时每页的条目数。 **约束限制** 不涉及。 **取值范围** 在[1,100]区间内。 **默认取值** 100
 
         :param limit: The limit of this ListResourceGroupsRequest.
         :type limit: int
@@ -188,7 +195,7 @@ class ListResourceGroupsRequest:
     def type(self):
         r"""Gets the type of this ListResourceGroupsRequest.
 
-        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型,COMB（智能添加-组合匹配）,NAME（资源名称模糊匹配）
+        **参数解释** 资源分组添加资源方式，不传代表查询所有资源分组类型。 **约束限制** 不涉及。 **取值范围** - EPS: 表示匹配企业项目 - TAG: 表示匹配标签 - Manual: 表示手动添加 - COMB: 表示组合匹配 - NAME: 表示匹配实例名称 **默认取值** 不涉及。
 
         :return: The type of this ListResourceGroupsRequest.
         :rtype: str
@@ -199,12 +206,34 @@ class ListResourceGroupsRequest:
     def type(self, type):
         r"""Sets the type of this ListResourceGroupsRequest.
 
-        资源分组添加资源方式，取值只能为EPS（同步企业项目）,TAG（标签动态匹配）,Manual（手动添加），不传代表查询所有资源分组类型,COMB（智能添加-组合匹配）,NAME（资源名称模糊匹配）
+        **参数解释** 资源分组添加资源方式，不传代表查询所有资源分组类型。 **约束限制** 不涉及。 **取值范围** - EPS: 表示匹配企业项目 - TAG: 表示匹配标签 - Manual: 表示手动添加 - COMB: 表示组合匹配 - NAME: 表示匹配实例名称 **默认取值** 不涉及。
 
         :param type: The type of this ListResourceGroupsRequest.
         :type type: str
         """
         self._type = type
+
+    @property
+    def status(self):
+        r"""Gets the status of this ListResourceGroupsRequest.
+
+        **参数解释** 资源分组健康状态。 **约束限制** 不涉及。 **取值范围** - health: 表示健康 - unhealthy: 表示不健康 - no_alarm_rule: 表示未配置告警规则 **默认取值** 不涉及。
+
+        :return: The status of this ListResourceGroupsRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ListResourceGroupsRequest.
+
+        **参数解释** 资源分组健康状态。 **约束限制** 不涉及。 **取值范围** - health: 表示健康 - unhealthy: 表示不健康 - no_alarm_rule: 表示未配置告警规则 **默认取值** 不涉及。
+
+        :param status: The status of this ListResourceGroupsRequest.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         result = {}

@@ -43,7 +43,7 @@ class ShowVocabularySwitchConfigsRequest:
         :type offset: int
         :param limit: 查询数量
         :type limit: int
-        :param key: 类型 租户级自定义读法全局开关:vocabulary
+        :param key: 类型。 * 租户级自定义读法全局开关，示例vocabulary。
         :type key: str
         """
         
@@ -159,7 +159,7 @@ class ShowVocabularySwitchConfigsRequest:
     def key(self):
         r"""Gets the key of this ShowVocabularySwitchConfigsRequest.
 
-        类型 租户级自定义读法全局开关:vocabulary
+        类型。 * 租户级自定义读法全局开关，示例vocabulary。
 
         :return: The key of this ShowVocabularySwitchConfigsRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ShowVocabularySwitchConfigsRequest:
     def key(self, key):
         r"""Sets the key of this ShowVocabularySwitchConfigsRequest.
 
-        类型 租户级自定义读法全局开关:vocabulary
+        类型。 * 租户级自定义读法全局开关，示例vocabulary。
 
         :param key: The key of this ShowVocabularySwitchConfigsRequest.
         :type key: str

@@ -18,7 +18,7 @@ class CreatePacifyWordsResponse(SdkResponse):
     openapi_types = {
         'pacify_words_id': 'str',
         'pacify_words': 'str',
-        'language': 'LanguageEnum',
+        'language': 'str',
         'robot_id': 'str',
         'pacify_words_type': 'int',
         'intent': 'str',
@@ -48,8 +48,8 @@ class CreatePacifyWordsResponse(SdkResponse):
         :type pacify_words_id: str
         :param pacify_words: 安抚话术。
         :type pacify_words: str
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param robot_id: 应用ID。
         :type robot_id: str
         :param pacify_words_type: 安抚话术类型 &gt; 0:通用安抚话术, 1:基于意图匹配安抚话术
@@ -144,8 +144,10 @@ class CreatePacifyWordsResponse(SdkResponse):
     def language(self):
         r"""Gets the language of this CreatePacifyWordsResponse.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this CreatePacifyWordsResponse.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -153,8 +155,10 @@ class CreatePacifyWordsResponse(SdkResponse):
     def language(self, language):
         r"""Sets the language of this CreatePacifyWordsResponse.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this CreatePacifyWordsResponse.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

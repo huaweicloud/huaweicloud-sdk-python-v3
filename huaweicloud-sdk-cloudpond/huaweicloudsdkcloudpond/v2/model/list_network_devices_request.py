@@ -18,7 +18,7 @@ class ListNetworkDevicesRequest:
         'edge_site_id': 'str',
         'limit': 'int',
         'marker': 'str',
-        'status': 'list[NetworkDeviceStatus]',
+        'status': 'list[str]',
         'id': 'list[str]'
     }
 
@@ -42,7 +42,7 @@ class ListNetworkDevicesRequest:
         :param marker: 分页标识
         :type marker: str
         :param status: 根据网络设备状态查询，支持多值查询
-        :type status: list[:class:`huaweicloudsdkcloudpond.v2.NetworkDeviceStatus`]
+        :type status: list[str]
         :param id: 根据ID过滤，支持多值查询，查询条件格式：id&#x3D;xxx&amp;id&#x3D;xxx。
         :type id: list[str]
         """
@@ -140,7 +140,7 @@ class ListNetworkDevicesRequest:
         根据网络设备状态查询，支持多值查询
 
         :return: The status of this ListNetworkDevicesRequest.
-        :rtype: list[:class:`huaweicloudsdkcloudpond.v2.NetworkDeviceStatus`]
+        :rtype: list[str]
         """
         return self._status
 
@@ -151,7 +151,7 @@ class ListNetworkDevicesRequest:
         根据网络设备状态查询，支持多值查询
 
         :param status: The status of this ListNetworkDevicesRequest.
-        :type status: list[:class:`huaweicloudsdkcloudpond.v2.NetworkDeviceStatus`]
+        :type status: list[str]
         """
         self._status = status
 

@@ -18,7 +18,7 @@ class ListServersRequest:
         'edge_site_id': 'str',
         'limit': 'int',
         'marker': 'str',
-        'status': 'list[ServerStatus]',
+        'status': 'list[str]',
         'id': 'list[str]'
     }
 
@@ -42,7 +42,7 @@ class ListServersRequest:
         :param marker: 分页标识
         :type marker: str
         :param status: 根据服务器状态查询，支持多值查询
-        :type status: list[:class:`huaweicloudsdkcloudpond.v2.ServerStatus`]
+        :type status: list[str]
         :param id: 根据ID过滤，支持多值查询，查询条件格式：id&#x3D;xxx&amp;id&#x3D;xxx。
         :type id: list[str]
         """
@@ -140,7 +140,7 @@ class ListServersRequest:
         根据服务器状态查询，支持多值查询
 
         :return: The status of this ListServersRequest.
-        :rtype: list[:class:`huaweicloudsdkcloudpond.v2.ServerStatus`]
+        :rtype: list[str]
         """
         return self._status
 
@@ -151,7 +151,7 @@ class ListServersRequest:
         根据服务器状态查询，支持多值查询
 
         :param status: The status of this ListServersRequest.
-        :type status: list[:class:`huaweicloudsdkcloudpond.v2.ServerStatus`]
+        :type status: list[str]
         """
         self._status = status
 

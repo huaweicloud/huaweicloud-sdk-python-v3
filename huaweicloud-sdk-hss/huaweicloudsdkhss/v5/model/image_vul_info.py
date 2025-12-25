@@ -43,23 +43,23 @@ class ImageVulInfo:
 
         The model defined in huaweicloud sdk
 
-        :param vul_id: 漏洞id
+        :param vul_id: **参数解释**: 漏洞ID **取值范围**: 字符长度0-128 
         :type vul_id: str
-        :param repair_necessity: 修复紧急度，包含如下3种。   - immediate_repair ：高危。   - delay_repair ：中危。   - not_needed_repair ：低危。
+        :param repair_necessity: **参数解释**: 危险程度 **取值范围**: - immediate_repair：高危 - delay_repair：中危 - not_needed_repair：低危 
         :type repair_necessity: str
-        :param description: 漏洞描述
+        :param description: **参数解释**: 漏洞描述 **取值范围** : 字符长度0-128 
         :type description: str
-        :param position: 漏洞所在镜像层
+        :param position: **参数解释**: 漏洞所在镜像层 **取值范围** : 字符长度0-128 
         :type position: str
-        :param app_name: 漏洞的软件名称
+        :param app_name: **参数解释**: 漏洞的软件名称 **取值范围** : 字符长度0-128 
         :type app_name: str
-        :param app_path: 应用软件的路径（只有应用漏洞有该字段）
+        :param app_path: **参数解释**: 应用软件的路径（只有应用漏洞有该字段） **取值范围** : 字符长度1-512 
         :type app_path: str
-        :param version: 软件版本
+        :param version: **参数解释**: 软件版本 **取值范围** : 字符长度0-128 
         :type version: str
-        :param solution: 解决方案
+        :param solution: **参数解释**: 解决方案 **取值范围** : 字符长度0-256 
         :type solution: str
-        :param url: 补丁地址
+        :param url: **参数解释**: 补丁地址 **取值范围** : 字符长度0-128 
         :type url: str
         """
         
@@ -99,7 +99,7 @@ class ImageVulInfo:
     def vul_id(self):
         r"""Gets the vul_id of this ImageVulInfo.
 
-        漏洞id
+        **参数解释**: 漏洞ID **取值范围**: 字符长度0-128 
 
         :return: The vul_id of this ImageVulInfo.
         :rtype: str
@@ -110,7 +110,7 @@ class ImageVulInfo:
     def vul_id(self, vul_id):
         r"""Sets the vul_id of this ImageVulInfo.
 
-        漏洞id
+        **参数解释**: 漏洞ID **取值范围**: 字符长度0-128 
 
         :param vul_id: The vul_id of this ImageVulInfo.
         :type vul_id: str
@@ -121,7 +121,7 @@ class ImageVulInfo:
     def repair_necessity(self):
         r"""Gets the repair_necessity of this ImageVulInfo.
 
-        修复紧急度，包含如下3种。   - immediate_repair ：高危。   - delay_repair ：中危。   - not_needed_repair ：低危。
+        **参数解释**: 危险程度 **取值范围**: - immediate_repair：高危 - delay_repair：中危 - not_needed_repair：低危 
 
         :return: The repair_necessity of this ImageVulInfo.
         :rtype: str
@@ -132,7 +132,7 @@ class ImageVulInfo:
     def repair_necessity(self, repair_necessity):
         r"""Sets the repair_necessity of this ImageVulInfo.
 
-        修复紧急度，包含如下3种。   - immediate_repair ：高危。   - delay_repair ：中危。   - not_needed_repair ：低危。
+        **参数解释**: 危险程度 **取值范围**: - immediate_repair：高危 - delay_repair：中危 - not_needed_repair：低危 
 
         :param repair_necessity: The repair_necessity of this ImageVulInfo.
         :type repair_necessity: str
@@ -143,7 +143,7 @@ class ImageVulInfo:
     def description(self):
         r"""Gets the description of this ImageVulInfo.
 
-        漏洞描述
+        **参数解释**: 漏洞描述 **取值范围** : 字符长度0-128 
 
         :return: The description of this ImageVulInfo.
         :rtype: str
@@ -154,7 +154,7 @@ class ImageVulInfo:
     def description(self, description):
         r"""Sets the description of this ImageVulInfo.
 
-        漏洞描述
+        **参数解释**: 漏洞描述 **取值范围** : 字符长度0-128 
 
         :param description: The description of this ImageVulInfo.
         :type description: str
@@ -165,7 +165,7 @@ class ImageVulInfo:
     def position(self):
         r"""Gets the position of this ImageVulInfo.
 
-        漏洞所在镜像层
+        **参数解释**: 漏洞所在镜像层 **取值范围** : 字符长度0-128 
 
         :return: The position of this ImageVulInfo.
         :rtype: str
@@ -176,7 +176,7 @@ class ImageVulInfo:
     def position(self, position):
         r"""Sets the position of this ImageVulInfo.
 
-        漏洞所在镜像层
+        **参数解释**: 漏洞所在镜像层 **取值范围** : 字符长度0-128 
 
         :param position: The position of this ImageVulInfo.
         :type position: str
@@ -187,7 +187,7 @@ class ImageVulInfo:
     def app_name(self):
         r"""Gets the app_name of this ImageVulInfo.
 
-        漏洞的软件名称
+        **参数解释**: 漏洞的软件名称 **取值范围** : 字符长度0-128 
 
         :return: The app_name of this ImageVulInfo.
         :rtype: str
@@ -198,7 +198,7 @@ class ImageVulInfo:
     def app_name(self, app_name):
         r"""Sets the app_name of this ImageVulInfo.
 
-        漏洞的软件名称
+        **参数解释**: 漏洞的软件名称 **取值范围** : 字符长度0-128 
 
         :param app_name: The app_name of this ImageVulInfo.
         :type app_name: str
@@ -209,7 +209,7 @@ class ImageVulInfo:
     def app_path(self):
         r"""Gets the app_path of this ImageVulInfo.
 
-        应用软件的路径（只有应用漏洞有该字段）
+        **参数解释**: 应用软件的路径（只有应用漏洞有该字段） **取值范围** : 字符长度1-512 
 
         :return: The app_path of this ImageVulInfo.
         :rtype: str
@@ -220,7 +220,7 @@ class ImageVulInfo:
     def app_path(self, app_path):
         r"""Sets the app_path of this ImageVulInfo.
 
-        应用软件的路径（只有应用漏洞有该字段）
+        **参数解释**: 应用软件的路径（只有应用漏洞有该字段） **取值范围** : 字符长度1-512 
 
         :param app_path: The app_path of this ImageVulInfo.
         :type app_path: str
@@ -231,7 +231,7 @@ class ImageVulInfo:
     def version(self):
         r"""Gets the version of this ImageVulInfo.
 
-        软件版本
+        **参数解释**: 软件版本 **取值范围** : 字符长度0-128 
 
         :return: The version of this ImageVulInfo.
         :rtype: str
@@ -242,7 +242,7 @@ class ImageVulInfo:
     def version(self, version):
         r"""Sets the version of this ImageVulInfo.
 
-        软件版本
+        **参数解释**: 软件版本 **取值范围** : 字符长度0-128 
 
         :param version: The version of this ImageVulInfo.
         :type version: str
@@ -253,7 +253,7 @@ class ImageVulInfo:
     def solution(self):
         r"""Gets the solution of this ImageVulInfo.
 
-        解决方案
+        **参数解释**: 解决方案 **取值范围** : 字符长度0-256 
 
         :return: The solution of this ImageVulInfo.
         :rtype: str
@@ -264,7 +264,7 @@ class ImageVulInfo:
     def solution(self, solution):
         r"""Sets the solution of this ImageVulInfo.
 
-        解决方案
+        **参数解释**: 解决方案 **取值范围** : 字符长度0-256 
 
         :param solution: The solution of this ImageVulInfo.
         :type solution: str
@@ -275,7 +275,7 @@ class ImageVulInfo:
     def url(self):
         r"""Gets the url of this ImageVulInfo.
 
-        补丁地址
+        **参数解释**: 补丁地址 **取值范围** : 字符长度0-128 
 
         :return: The url of this ImageVulInfo.
         :rtype: str
@@ -286,7 +286,7 @@ class ImageVulInfo:
     def url(self, url):
         r"""Sets the url of this ImageVulInfo.
 
-        补丁地址
+        **参数解释**: 补丁地址 **取值范围** : 字符长度0-128 
 
         :param url: The url of this ImageVulInfo.
         :type url: str

@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class LayerType:
-    """
-    allowed enum values
-    """
-    THIRD_NF = "THIRD_NF"
-    DIMENSION = "DIMENSION"
-    DM = "DM"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

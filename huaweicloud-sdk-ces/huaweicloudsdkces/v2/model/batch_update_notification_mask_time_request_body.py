@@ -16,7 +16,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
     openapi_types = {
         'notification_mask_ids': 'list[str]',
-        'mask_type': 'MaskType',
+        'mask_type': 'str',
         'start_date': 'date',
         'start_time': 'str',
         'end_date': 'date',
@@ -39,10 +39,10 @@ class BatchUpdateNotificationMaskTimeRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param notification_mask_ids: 关联编号
+        :param notification_mask_ids: **参数解释**： 告警屏蔽ID列表 **约束限制**： 包含的告警屏蔽ID数量为[1,100]个。 
         :type notification_mask_ids: list[str]
-        :param mask_type: 
-        :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
+        :param mask_type: **参数解释**： 屏蔽类型。          **约束限制**： 不涉及。 **取值范围**： 只能为START_END_TIME、FOREVER_TIME、CYCLE_TIME - START_END_TIME：按起止时间屏蔽。 - FOREVER_TIME：永久时间屏蔽。 - CYCLE_TIME：按周期时间屏蔽。           **默认取值**： 不涉及。 
+        :type mask_type: str
         :param start_date: **参数解释**： 屏蔽起始日期。           **约束限制**： 不涉及。 **取值范围**： 字符长度为10，格式为：yyyy-MM-dd           **默认取值**： 不涉及。 
         :type start_date: date
         :param start_time: **参数解释**： 屏蔽起始时间。          **约束限制**： 不涉及。 **取值范围**： 字符长度为8，格式为：HH:mm:ss         **默认取值**： 不涉及。 
@@ -83,7 +83,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
     def notification_mask_ids(self):
         r"""Gets the notification_mask_ids of this BatchUpdateNotificationMaskTimeRequestBody.
 
-        关联编号
+        **参数解释**： 告警屏蔽ID列表 **约束限制**： 包含的告警屏蔽ID数量为[1,100]个。 
 
         :return: The notification_mask_ids of this BatchUpdateNotificationMaskTimeRequestBody.
         :rtype: list[str]
@@ -94,7 +94,7 @@ class BatchUpdateNotificationMaskTimeRequestBody:
     def notification_mask_ids(self, notification_mask_ids):
         r"""Sets the notification_mask_ids of this BatchUpdateNotificationMaskTimeRequestBody.
 
-        关联编号
+        **参数解释**： 告警屏蔽ID列表 **约束限制**： 包含的告警屏蔽ID数量为[1,100]个。 
 
         :param notification_mask_ids: The notification_mask_ids of this BatchUpdateNotificationMaskTimeRequestBody.
         :type notification_mask_ids: list[str]
@@ -105,8 +105,10 @@ class BatchUpdateNotificationMaskTimeRequestBody:
     def mask_type(self):
         r"""Gets the mask_type of this BatchUpdateNotificationMaskTimeRequestBody.
 
+        **参数解释**： 屏蔽类型。          **约束限制**： 不涉及。 **取值范围**： 只能为START_END_TIME、FOREVER_TIME、CYCLE_TIME - START_END_TIME：按起止时间屏蔽。 - FOREVER_TIME：永久时间屏蔽。 - CYCLE_TIME：按周期时间屏蔽。           **默认取值**： 不涉及。 
+
         :return: The mask_type of this BatchUpdateNotificationMaskTimeRequestBody.
-        :rtype: :class:`huaweicloudsdkces.v2.MaskType`
+        :rtype: str
         """
         return self._mask_type
 
@@ -114,8 +116,10 @@ class BatchUpdateNotificationMaskTimeRequestBody:
     def mask_type(self, mask_type):
         r"""Sets the mask_type of this BatchUpdateNotificationMaskTimeRequestBody.
 
+        **参数解释**： 屏蔽类型。          **约束限制**： 不涉及。 **取值范围**： 只能为START_END_TIME、FOREVER_TIME、CYCLE_TIME - START_END_TIME：按起止时间屏蔽。 - FOREVER_TIME：永久时间屏蔽。 - CYCLE_TIME：按周期时间屏蔽。           **默认取值**： 不涉及。 
+
         :param mask_type: The mask_type of this BatchUpdateNotificationMaskTimeRequestBody.
-        :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
+        :type mask_type: str
         """
         self._mask_type = mask_type
 

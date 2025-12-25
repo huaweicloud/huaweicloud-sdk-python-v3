@@ -34,7 +34,7 @@ class ShowAssetResponse(SdkResponse):
         'system_properties': 'list[SystemProperty]',
         'files': 'list[AssetFileInfo]',
         'asset_order': 'int',
-        'supported_service': 'list[SupportedServiceEnum]',
+        'supported_service': 'list[str]',
         'auto_operation_config': 'list[AutoOperationConfig]',
         'x_request_id': 'str'
     }
@@ -105,7 +105,7 @@ class ShowAssetResponse(SdkResponse):
         :param asset_order: 展示顺序
         :type asset_order: int
         :param supported_service: 支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
-        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        :type supported_service: list[str]
         :param auto_operation_config: 资产自动处理任务。
         :type auto_operation_config: list[:class:`huaweicloudsdkmetastudio.v1.AutoOperationConfig`]
         :param x_request_id: 
@@ -579,7 +579,7 @@ class ShowAssetResponse(SdkResponse):
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
         :return: The supported_service of this ShowAssetResponse.
-        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        :rtype: list[str]
         """
         return self._supported_service
 
@@ -590,7 +590,7 @@ class ShowAssetResponse(SdkResponse):
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
         :param supported_service: The supported_service of this ShowAssetResponse.
-        :type supported_service: list[:class:`huaweicloudsdkmetastudio.v1.SupportedServiceEnum`]
+        :type supported_service: list[str]
         """
         self._supported_service = supported_service
 

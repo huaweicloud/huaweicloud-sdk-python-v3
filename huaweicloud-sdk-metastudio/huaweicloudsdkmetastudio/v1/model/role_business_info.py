@@ -17,7 +17,7 @@ class RoleBusinessInfo:
     openapi_types = {
         'role_business_id': 'str',
         'role_id': 'str',
-        'language': 'LanguageEnum',
+        'language': 'str',
         'prompt': 'str',
         'knowledge_library_list': 'list[RoleKnowledgeLibraryInfo]',
         'create_time': 'str',
@@ -43,8 +43,8 @@ class RoleBusinessInfo:
         :type role_business_id: str
         :param role_id: 角色ID。
         :type role_id: str
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param prompt: 提示词。
         :type prompt: str
         :param knowledge_library_list: 知识库列表
@@ -129,8 +129,10 @@ class RoleBusinessInfo:
     def language(self):
         r"""Gets the language of this RoleBusinessInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this RoleBusinessInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -138,8 +140,10 @@ class RoleBusinessInfo:
     def language(self, language):
         r"""Sets the language of this RoleBusinessInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this RoleBusinessInfo.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

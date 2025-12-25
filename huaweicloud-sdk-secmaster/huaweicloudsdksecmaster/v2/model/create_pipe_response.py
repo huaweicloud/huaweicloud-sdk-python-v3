@@ -16,148 +16,140 @@ class CreatePipeResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'domain_id': 'str',
         'project_id': 'str',
-        'dataspace_id': 'str',
-        'dataspace_name': 'str',
+        'workspace_id': 'str',
         'pipe_id': 'str',
         'pipe_name': 'str',
-        'pipe_type': 'str',
+        'pipe_alias': 'str',
+        'category': 'str',
+        'directory': 'str',
         'description': 'str',
-        'storage_period': 'int',
-        'shards': 'int',
-        'create_by': 'str',
+        'process_status': 'str',
+        'process_error': 'str',
+        'owner_type': 'str',
+        'resources': 'list[PipeResource]',
+        'schema': 'PipeSchema',
         'create_time': 'int',
-        'update_by': 'str',
-        'update_time': 'int'
+        'update_time': 'int',
+        'delete_time': 'int'
     }
 
     attribute_map = {
-        'domain_id': 'domain_id',
         'project_id': 'project_id',
-        'dataspace_id': 'dataspace_id',
-        'dataspace_name': 'dataspace_name',
+        'workspace_id': 'workspace_id',
         'pipe_id': 'pipe_id',
         'pipe_name': 'pipe_name',
-        'pipe_type': 'pipe_type',
+        'pipe_alias': 'pipe_alias',
+        'category': 'category',
+        'directory': 'directory',
         'description': 'description',
-        'storage_period': 'storage_period',
-        'shards': 'shards',
-        'create_by': 'create_by',
+        'process_status': 'process_status',
+        'process_error': 'process_error',
+        'owner_type': 'owner_type',
+        'resources': 'resources',
+        'schema': 'schema',
         'create_time': 'create_time',
-        'update_by': 'update_by',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'delete_time': 'delete_time'
     }
 
-    def __init__(self, domain_id=None, project_id=None, dataspace_id=None, dataspace_name=None, pipe_id=None, pipe_name=None, pipe_type=None, description=None, storage_period=None, shards=None, create_by=None, create_time=None, update_by=None, update_time=None):
+    def __init__(self, project_id=None, workspace_id=None, pipe_id=None, pipe_name=None, pipe_alias=None, category=None, directory=None, description=None, process_status=None, process_error=None, owner_type=None, resources=None, schema=None, create_time=None, update_time=None, delete_time=None):
         r"""CreatePipeResponse
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 用户domainId
-        :type domain_id: str
-        :param project_id: 项目id
+        :param project_id: 项目ID
         :type project_id: str
-        :param dataspace_id: 数据空间id
-        :type dataspace_id: str
-        :param dataspace_name: 数据空间名称
-        :type dataspace_name: str
-        :param pipe_id: 管道id
+        :param workspace_id: UUID
+        :type workspace_id: str
+        :param pipe_id: UUID
         :type pipe_id: str
         :param pipe_name: 管道名称
         :type pipe_name: str
-        :param pipe_type: 管道类型（system-defined，系统预定义)、1（user-defined，用户自定义)
-        :type pipe_type: str
-        :param description: 描述信息
+        :param pipe_alias: 管道别名
+        :type pipe_alias: str
+        :param category: **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
+        :type category: str
+        :param directory: directory 目录分组
+        :type directory: str
+        :param description: 管道描述
         :type description: str
-        :param storage_period: 索引存储天数
-        :type storage_period: int
-        :param shards: 索引分片数量
-        :type shards: int
-        :param create_by: 创建者
-        :type create_by: str
-        :param create_time: 创建时间
+        :param process_status: **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - UPDATING_FAILED 更新失败 - DELETING_FAILED 删除失败  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - UPDATING_FAILED - DELETING_FAILED  **默认值** 不涉及   
+        :type process_status: str
+        :param process_error: **参数解释**: 管道处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及  
+        :type process_error: str
+        :param owner_type: **参数解释**: 管道所有者类型 - SYSTEM 系统 - USER 用户 - CLOUD_LOG 云日志  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - CLOUD_LOG  **默认值** 不涉及  
+        :type owner_type: str
+        :param resources: 管道资源
+        :type resources: list[:class:`huaweicloudsdksecmaster.v2.PipeResource`]
+        :param schema: 
+        :type schema: :class:`huaweicloudsdksecmaster.v2.PipeSchema`
+        :param create_time: 毫秒时间戳
         :type create_time: int
-        :param update_by: 更新者
-        :type update_by: str
-        :param update_time: 更新时间
+        :param update_time: 毫秒时间戳
         :type update_time: int
+        :param delete_time: 毫秒时间戳
+        :type delete_time: int
         """
         
         super().__init__()
 
-        self._domain_id = None
         self._project_id = None
-        self._dataspace_id = None
-        self._dataspace_name = None
+        self._workspace_id = None
         self._pipe_id = None
         self._pipe_name = None
-        self._pipe_type = None
+        self._pipe_alias = None
+        self._category = None
+        self._directory = None
         self._description = None
-        self._storage_period = None
-        self._shards = None
-        self._create_by = None
+        self._process_status = None
+        self._process_error = None
+        self._owner_type = None
+        self._resources = None
+        self._schema = None
         self._create_time = None
-        self._update_by = None
         self._update_time = None
+        self._delete_time = None
         self.discriminator = None
 
-        if domain_id is not None:
-            self.domain_id = domain_id
         if project_id is not None:
             self.project_id = project_id
-        if dataspace_id is not None:
-            self.dataspace_id = dataspace_id
-        if dataspace_name is not None:
-            self.dataspace_name = dataspace_name
+        if workspace_id is not None:
+            self.workspace_id = workspace_id
         if pipe_id is not None:
             self.pipe_id = pipe_id
         if pipe_name is not None:
             self.pipe_name = pipe_name
-        if pipe_type is not None:
-            self.pipe_type = pipe_type
+        if pipe_alias is not None:
+            self.pipe_alias = pipe_alias
+        if category is not None:
+            self.category = category
+        if directory is not None:
+            self.directory = directory
         if description is not None:
             self.description = description
-        if storage_period is not None:
-            self.storage_period = storage_period
-        if shards is not None:
-            self.shards = shards
-        if create_by is not None:
-            self.create_by = create_by
+        if process_status is not None:
+            self.process_status = process_status
+        if process_error is not None:
+            self.process_error = process_error
+        if owner_type is not None:
+            self.owner_type = owner_type
+        if resources is not None:
+            self.resources = resources
+        if schema is not None:
+            self.schema = schema
         if create_time is not None:
             self.create_time = create_time
-        if update_by is not None:
-            self.update_by = update_by
         if update_time is not None:
             self.update_time = update_time
-
-    @property
-    def domain_id(self):
-        r"""Gets the domain_id of this CreatePipeResponse.
-
-        用户domainId
-
-        :return: The domain_id of this CreatePipeResponse.
-        :rtype: str
-        """
-        return self._domain_id
-
-    @domain_id.setter
-    def domain_id(self, domain_id):
-        r"""Sets the domain_id of this CreatePipeResponse.
-
-        用户domainId
-
-        :param domain_id: The domain_id of this CreatePipeResponse.
-        :type domain_id: str
-        """
-        self._domain_id = domain_id
+        if delete_time is not None:
+            self.delete_time = delete_time
 
     @property
     def project_id(self):
         r"""Gets the project_id of this CreatePipeResponse.
 
-        项目id
+        项目ID
 
         :return: The project_id of this CreatePipeResponse.
         :rtype: str
@@ -168,7 +160,7 @@ class CreatePipeResponse(SdkResponse):
     def project_id(self, project_id):
         r"""Sets the project_id of this CreatePipeResponse.
 
-        项目id
+        项目ID
 
         :param project_id: The project_id of this CreatePipeResponse.
         :type project_id: str
@@ -176,54 +168,32 @@ class CreatePipeResponse(SdkResponse):
         self._project_id = project_id
 
     @property
-    def dataspace_id(self):
-        r"""Gets the dataspace_id of this CreatePipeResponse.
+    def workspace_id(self):
+        r"""Gets the workspace_id of this CreatePipeResponse.
 
-        数据空间id
+        UUID
 
-        :return: The dataspace_id of this CreatePipeResponse.
+        :return: The workspace_id of this CreatePipeResponse.
         :rtype: str
         """
-        return self._dataspace_id
+        return self._workspace_id
 
-    @dataspace_id.setter
-    def dataspace_id(self, dataspace_id):
-        r"""Sets the dataspace_id of this CreatePipeResponse.
+    @workspace_id.setter
+    def workspace_id(self, workspace_id):
+        r"""Sets the workspace_id of this CreatePipeResponse.
 
-        数据空间id
+        UUID
 
-        :param dataspace_id: The dataspace_id of this CreatePipeResponse.
-        :type dataspace_id: str
+        :param workspace_id: The workspace_id of this CreatePipeResponse.
+        :type workspace_id: str
         """
-        self._dataspace_id = dataspace_id
-
-    @property
-    def dataspace_name(self):
-        r"""Gets the dataspace_name of this CreatePipeResponse.
-
-        数据空间名称
-
-        :return: The dataspace_name of this CreatePipeResponse.
-        :rtype: str
-        """
-        return self._dataspace_name
-
-    @dataspace_name.setter
-    def dataspace_name(self, dataspace_name):
-        r"""Sets the dataspace_name of this CreatePipeResponse.
-
-        数据空间名称
-
-        :param dataspace_name: The dataspace_name of this CreatePipeResponse.
-        :type dataspace_name: str
-        """
-        self._dataspace_name = dataspace_name
+        self._workspace_id = workspace_id
 
     @property
     def pipe_id(self):
         r"""Gets the pipe_id of this CreatePipeResponse.
 
-        管道id
+        UUID
 
         :return: The pipe_id of this CreatePipeResponse.
         :rtype: str
@@ -234,7 +204,7 @@ class CreatePipeResponse(SdkResponse):
     def pipe_id(self, pipe_id):
         r"""Sets the pipe_id of this CreatePipeResponse.
 
-        管道id
+        UUID
 
         :param pipe_id: The pipe_id of this CreatePipeResponse.
         :type pipe_id: str
@@ -264,32 +234,76 @@ class CreatePipeResponse(SdkResponse):
         self._pipe_name = pipe_name
 
     @property
-    def pipe_type(self):
-        r"""Gets the pipe_type of this CreatePipeResponse.
+    def pipe_alias(self):
+        r"""Gets the pipe_alias of this CreatePipeResponse.
 
-        管道类型（system-defined，系统预定义)、1（user-defined，用户自定义)
+        管道别名
 
-        :return: The pipe_type of this CreatePipeResponse.
+        :return: The pipe_alias of this CreatePipeResponse.
         :rtype: str
         """
-        return self._pipe_type
+        return self._pipe_alias
 
-    @pipe_type.setter
-    def pipe_type(self, pipe_type):
-        r"""Sets the pipe_type of this CreatePipeResponse.
+    @pipe_alias.setter
+    def pipe_alias(self, pipe_alias):
+        r"""Sets the pipe_alias of this CreatePipeResponse.
 
-        管道类型（system-defined，系统预定义)、1（user-defined，用户自定义)
+        管道别名
 
-        :param pipe_type: The pipe_type of this CreatePipeResponse.
-        :type pipe_type: str
+        :param pipe_alias: The pipe_alias of this CreatePipeResponse.
+        :type pipe_alias: str
         """
-        self._pipe_type = pipe_type
+        self._pipe_alias = pipe_alias
+
+    @property
+    def category(self):
+        r"""Gets the category of this CreatePipeResponse.
+
+        **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
+
+        :return: The category of this CreatePipeResponse.
+        :rtype: str
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        r"""Sets the category of this CreatePipeResponse.
+
+        **参数解释**: 管道目录 - STREAMING_TO_INDEX 流式写入索引 - STREAMING_TO_LAKE 流式写入数据湖 - STREAMING_TO_INDEX_LAKE 流式写入索引和数据湖 - STREAMING  流式传输中  **约束限制** 不涉及  **取值范围**: - STREAMING_TO_INDEX - STREAMING_TO_LAKE - STREAMING_TO_INDEX_LAKE - STREAMING  **默认值** 不涉及       
+
+        :param category: The category of this CreatePipeResponse.
+        :type category: str
+        """
+        self._category = category
+
+    @property
+    def directory(self):
+        r"""Gets the directory of this CreatePipeResponse.
+
+        directory 目录分组
+
+        :return: The directory of this CreatePipeResponse.
+        :rtype: str
+        """
+        return self._directory
+
+    @directory.setter
+    def directory(self, directory):
+        r"""Sets the directory of this CreatePipeResponse.
+
+        directory 目录分组
+
+        :param directory: The directory of this CreatePipeResponse.
+        :type directory: str
+        """
+        self._directory = directory
 
     @property
     def description(self):
         r"""Gets the description of this CreatePipeResponse.
 
-        描述信息
+        管道描述
 
         :return: The description of this CreatePipeResponse.
         :rtype: str
@@ -300,7 +314,7 @@ class CreatePipeResponse(SdkResponse):
     def description(self, description):
         r"""Sets the description of this CreatePipeResponse.
 
-        描述信息
+        管道描述
 
         :param description: The description of this CreatePipeResponse.
         :type description: str
@@ -308,76 +322,116 @@ class CreatePipeResponse(SdkResponse):
         self._description = description
 
     @property
-    def storage_period(self):
-        r"""Gets the storage_period of this CreatePipeResponse.
+    def process_status(self):
+        r"""Gets the process_status of this CreatePipeResponse.
 
-        索引存储天数
+        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - UPDATING_FAILED 更新失败 - DELETING_FAILED 删除失败  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - UPDATING_FAILED - DELETING_FAILED  **默认值** 不涉及   
 
-        :return: The storage_period of this CreatePipeResponse.
-        :rtype: int
-        """
-        return self._storage_period
-
-    @storage_period.setter
-    def storage_period(self, storage_period):
-        r"""Sets the storage_period of this CreatePipeResponse.
-
-        索引存储天数
-
-        :param storage_period: The storage_period of this CreatePipeResponse.
-        :type storage_period: int
-        """
-        self._storage_period = storage_period
-
-    @property
-    def shards(self):
-        r"""Gets the shards of this CreatePipeResponse.
-
-        索引分片数量
-
-        :return: The shards of this CreatePipeResponse.
-        :rtype: int
-        """
-        return self._shards
-
-    @shards.setter
-    def shards(self, shards):
-        r"""Sets the shards of this CreatePipeResponse.
-
-        索引分片数量
-
-        :param shards: The shards of this CreatePipeResponse.
-        :type shards: int
-        """
-        self._shards = shards
-
-    @property
-    def create_by(self):
-        r"""Gets the create_by of this CreatePipeResponse.
-
-        创建者
-
-        :return: The create_by of this CreatePipeResponse.
+        :return: The process_status of this CreatePipeResponse.
         :rtype: str
         """
-        return self._create_by
+        return self._process_status
 
-    @create_by.setter
-    def create_by(self, create_by):
-        r"""Sets the create_by of this CreatePipeResponse.
+    @process_status.setter
+    def process_status(self, process_status):
+        r"""Sets the process_status of this CreatePipeResponse.
 
-        创建者
+        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - DELETING 删除中 - UPDATING_FAILED 更新失败 - DELETING_FAILED 删除失败  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - DELETING - UPDATING_FAILED - DELETING_FAILED  **默认值** 不涉及   
 
-        :param create_by: The create_by of this CreatePipeResponse.
-        :type create_by: str
+        :param process_status: The process_status of this CreatePipeResponse.
+        :type process_status: str
         """
-        self._create_by = create_by
+        self._process_status = process_status
+
+    @property
+    def process_error(self):
+        r"""Gets the process_error of this CreatePipeResponse.
+
+        **参数解释**: 管道处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及  
+
+        :return: The process_error of this CreatePipeResponse.
+        :rtype: str
+        """
+        return self._process_error
+
+    @process_error.setter
+    def process_error(self, process_error):
+        r"""Sets the process_error of this CreatePipeResponse.
+
+        **参数解释**: 管道处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及  
+
+        :param process_error: The process_error of this CreatePipeResponse.
+        :type process_error: str
+        """
+        self._process_error = process_error
+
+    @property
+    def owner_type(self):
+        r"""Gets the owner_type of this CreatePipeResponse.
+
+        **参数解释**: 管道所有者类型 - SYSTEM 系统 - USER 用户 - CLOUD_LOG 云日志  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - CLOUD_LOG  **默认值** 不涉及  
+
+        :return: The owner_type of this CreatePipeResponse.
+        :rtype: str
+        """
+        return self._owner_type
+
+    @owner_type.setter
+    def owner_type(self, owner_type):
+        r"""Sets the owner_type of this CreatePipeResponse.
+
+        **参数解释**: 管道所有者类型 - SYSTEM 系统 - USER 用户 - CLOUD_LOG 云日志  **约束限制** 不涉及 **取值范围**: - SYSTEM - USER - CLOUD_LOG  **默认值** 不涉及  
+
+        :param owner_type: The owner_type of this CreatePipeResponse.
+        :type owner_type: str
+        """
+        self._owner_type = owner_type
+
+    @property
+    def resources(self):
+        r"""Gets the resources of this CreatePipeResponse.
+
+        管道资源
+
+        :return: The resources of this CreatePipeResponse.
+        :rtype: list[:class:`huaweicloudsdksecmaster.v2.PipeResource`]
+        """
+        return self._resources
+
+    @resources.setter
+    def resources(self, resources):
+        r"""Sets the resources of this CreatePipeResponse.
+
+        管道资源
+
+        :param resources: The resources of this CreatePipeResponse.
+        :type resources: list[:class:`huaweicloudsdksecmaster.v2.PipeResource`]
+        """
+        self._resources = resources
+
+    @property
+    def schema(self):
+        r"""Gets the schema of this CreatePipeResponse.
+
+        :return: The schema of this CreatePipeResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.PipeSchema`
+        """
+        return self._schema
+
+    @schema.setter
+    def schema(self, schema):
+        r"""Sets the schema of this CreatePipeResponse.
+
+        :param schema: The schema of this CreatePipeResponse.
+        :type schema: :class:`huaweicloudsdksecmaster.v2.PipeSchema`
+        """
+        self._schema = schema
 
     @property
     def create_time(self):
         r"""Gets the create_time of this CreatePipeResponse.
 
-        创建时间
+        毫秒时间戳
 
         :return: The create_time of this CreatePipeResponse.
         :rtype: int
@@ -388,7 +442,7 @@ class CreatePipeResponse(SdkResponse):
     def create_time(self, create_time):
         r"""Sets the create_time of this CreatePipeResponse.
 
-        创建时间
+        毫秒时间戳
 
         :param create_time: The create_time of this CreatePipeResponse.
         :type create_time: int
@@ -396,32 +450,10 @@ class CreatePipeResponse(SdkResponse):
         self._create_time = create_time
 
     @property
-    def update_by(self):
-        r"""Gets the update_by of this CreatePipeResponse.
-
-        更新者
-
-        :return: The update_by of this CreatePipeResponse.
-        :rtype: str
-        """
-        return self._update_by
-
-    @update_by.setter
-    def update_by(self, update_by):
-        r"""Sets the update_by of this CreatePipeResponse.
-
-        更新者
-
-        :param update_by: The update_by of this CreatePipeResponse.
-        :type update_by: str
-        """
-        self._update_by = update_by
-
-    @property
     def update_time(self):
         r"""Gets the update_time of this CreatePipeResponse.
 
-        更新时间
+        毫秒时间戳
 
         :return: The update_time of this CreatePipeResponse.
         :rtype: int
@@ -432,12 +464,34 @@ class CreatePipeResponse(SdkResponse):
     def update_time(self, update_time):
         r"""Sets the update_time of this CreatePipeResponse.
 
-        更新时间
+        毫秒时间戳
 
         :param update_time: The update_time of this CreatePipeResponse.
         :type update_time: int
         """
         self._update_time = update_time
+
+    @property
+    def delete_time(self):
+        r"""Gets the delete_time of this CreatePipeResponse.
+
+        毫秒时间戳
+
+        :return: The delete_time of this CreatePipeResponse.
+        :rtype: int
+        """
+        return self._delete_time
+
+    @delete_time.setter
+    def delete_time(self, delete_time):
+        r"""Sets the delete_time of this CreatePipeResponse.
+
+        毫秒时间戳
+
+        :param delete_time: The delete_time of this CreatePipeResponse.
+        :type delete_time: int
+        """
+        self._delete_time = delete_time
 
     def to_dict(self):
         import warnings

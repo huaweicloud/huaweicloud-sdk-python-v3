@@ -16,7 +16,7 @@ class InstallStep:
 
     openapi_types = {
         'name': 'str',
-        'status': 'StepStatus',
+        'status': 'str',
         'failed_reason': 'str'
     }
 
@@ -34,7 +34,7 @@ class InstallStep:
         :param name: 安装步骤。
         :type name: str
         :param status: 
-        :type status: :class:`huaweicloudsdkeihealth.v1.StepStatus`
+        :type status: str
         :param failed_reason: 失败原因。
         :type failed_reason: str
         """
@@ -80,7 +80,7 @@ class InstallStep:
         r"""Gets the status of this InstallStep.
 
         :return: The status of this InstallStep.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.StepStatus`
+        :rtype: str
         """
         return self._status
 
@@ -89,7 +89,7 @@ class InstallStep:
         r"""Sets the status of this InstallStep.
 
         :param status: The status of this InstallStep.
-        :type status: :class:`huaweicloudsdkeihealth.v1.StepStatus`
+        :type status: str
         """
         self._status = status
 

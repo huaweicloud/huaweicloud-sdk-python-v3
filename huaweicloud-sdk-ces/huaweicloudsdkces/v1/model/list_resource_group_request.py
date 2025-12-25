@@ -35,15 +35,15 @@ class ListResourceGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
+        :param group_name: **参数解释** 资源分组名称。 **约束限制** 不涉及。 **取值范围** 包含字母、数字、_、-或汉字，长度为[1,128]个字符。 **默认取值** 不涉及。
         :type group_name: str
-        :param group_id: 资源分组的ID，长度为1-128，只能包含0-9/a-z/A-Z；如：rg16063743652226ew93e64p。
+        :param group_id: **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\&quot;rg\&quot;开头，后面跟着22个字母或数字。 **默认取值** 不涉及。
         :type group_id: str
-        :param status: 资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未配置告警规则
+        :param status: **参数解释** 资源分组健康状态。 **约束限制** 不涉及。 **取值范围** - health: 表示健康 - unhealth: 表示不健康 - no_alarm_rule: 表示未配置告警规则 **默认取值** 不涉及。
         :type status: str
-        :param start: 分页起始值，类型为integer，默认值为0。
+        :param start: **参数解释** 分页起始值。 **约束限制** 不涉及。 **取值范围** 在[0,9999999]区间内。 **默认取值** 0
         :type start: int
-        :param limit: 单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        :param limit: **参数解释** 单次查询的条数限制。 **约束限制** 不涉及。 **取值范围** 在[1,100]区间内。 **默认取值** 100
         :type limit: int
         """
         
@@ -71,7 +71,7 @@ class ListResourceGroupRequest:
     def group_name(self):
         r"""Gets the group_name of this ListResourceGroupRequest.
 
-        资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
+        **参数解释** 资源分组名称。 **约束限制** 不涉及。 **取值范围** 包含字母、数字、_、-或汉字，长度为[1,128]个字符。 **默认取值** 不涉及。
 
         :return: The group_name of this ListResourceGroupRequest.
         :rtype: str
@@ -82,7 +82,7 @@ class ListResourceGroupRequest:
     def group_name(self, group_name):
         r"""Sets the group_name of this ListResourceGroupRequest.
 
-        资源分组的名称；长度为1-128，只能包含0-9/a-z/A-Z/_/-或汉字；如：ResourceGroup-Test01。
+        **参数解释** 资源分组名称。 **约束限制** 不涉及。 **取值范围** 包含字母、数字、_、-或汉字，长度为[1,128]个字符。 **默认取值** 不涉及。
 
         :param group_name: The group_name of this ListResourceGroupRequest.
         :type group_name: str
@@ -93,7 +93,7 @@ class ListResourceGroupRequest:
     def group_id(self):
         r"""Gets the group_id of this ListResourceGroupRequest.
 
-        资源分组的ID，长度为1-128，只能包含0-9/a-z/A-Z；如：rg16063743652226ew93e64p。
+        **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字。 **默认取值** 不涉及。
 
         :return: The group_id of this ListResourceGroupRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListResourceGroupRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this ListResourceGroupRequest.
 
-        资源分组的ID，长度为1-128，只能包含0-9/a-z/A-Z；如：rg16063743652226ew93e64p。
+        **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字。 **默认取值** 不涉及。
 
         :param group_id: The group_id of this ListResourceGroupRequest.
         :type group_id: str
@@ -115,7 +115,7 @@ class ListResourceGroupRequest:
     def status(self):
         r"""Gets the status of this ListResourceGroupRequest.
 
-        资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未配置告警规则
+        **参数解释** 资源分组健康状态。 **约束限制** 不涉及。 **取值范围** - health: 表示健康 - unhealth: 表示不健康 - no_alarm_rule: 表示未配置告警规则 **默认取值** 不涉及。
 
         :return: The status of this ListResourceGroupRequest.
         :rtype: str
@@ -126,7 +126,7 @@ class ListResourceGroupRequest:
     def status(self, status):
         r"""Sets the status of this ListResourceGroupRequest.
 
-        资源分组健康状态，值可为health、unhealth、no_alarm_rule；health表示健康，unhealth表示不健康，no_alarm_rule表示未配置告警规则
+        **参数解释** 资源分组健康状态。 **约束限制** 不涉及。 **取值范围** - health: 表示健康 - unhealth: 表示不健康 - no_alarm_rule: 表示未配置告警规则 **默认取值** 不涉及。
 
         :param status: The status of this ListResourceGroupRequest.
         :type status: str
@@ -137,7 +137,7 @@ class ListResourceGroupRequest:
     def start(self):
         r"""Gets the start of this ListResourceGroupRequest.
 
-        分页起始值，类型为integer，默认值为0。
+        **参数解释** 分页起始值。 **约束限制** 不涉及。 **取值范围** 在[0,9999999]区间内。 **默认取值** 0
 
         :return: The start of this ListResourceGroupRequest.
         :rtype: int
@@ -148,7 +148,7 @@ class ListResourceGroupRequest:
     def start(self, start):
         r"""Sets the start of this ListResourceGroupRequest.
 
-        分页起始值，类型为integer，默认值为0。
+        **参数解释** 分页起始值。 **约束限制** 不涉及。 **取值范围** 在[0,9999999]区间内。 **默认取值** 0
 
         :param start: The start of this ListResourceGroupRequest.
         :type start: int
@@ -159,7 +159,7 @@ class ListResourceGroupRequest:
     def limit(self):
         r"""Gets the limit of this ListResourceGroupRequest.
 
-        单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        **参数解释** 单次查询的条数限制。 **约束限制** 不涉及。 **取值范围** 在[1,100]区间内。 **默认取值** 100
 
         :return: The limit of this ListResourceGroupRequest.
         :rtype: int
@@ -170,7 +170,7 @@ class ListResourceGroupRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListResourceGroupRequest.
 
-        单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
+        **参数解释** 单次查询的条数限制。 **约束限制** 不涉及。 **取值范围** 在[1,100]区间内。 **默认取值** 100
 
         :param limit: The limit of this ListResourceGroupRequest.
         :type limit: int

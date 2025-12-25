@@ -31,7 +31,7 @@ class BackupPolicy:
 
         The model defined in huaweicloud sdk
 
-        :param keep_days: 指定已生成的备份文件可以保存的天数。  取值范围：0～732。取0值，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  注意： 关闭备份策略后，备份任务将立即停止，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
+        :param keep_days: 指定已生成的备份文件可以保存的天数。  取值范围：1～732。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留10年。
         :type keep_days: int
         :param start_time: 备份时间段。自动备份将在该时间段内触发。除关闭自动备份策略外，必选。  取值范围：格式必须为hh:mm-HH:MM且有效，当前时间指UTC时间。  - HH取值必须比hh大1。 - mm和MM取值必须相同，且取值必须为00、15、30或45。
         :type start_time: str
@@ -56,7 +56,7 @@ class BackupPolicy:
     def keep_days(self):
         r"""Gets the keep_days of this BackupPolicy.
 
-        指定已生成的备份文件可以保存的天数。  取值范围：0～732。取0值，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  注意： 关闭备份策略后，备份任务将立即停止，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
+        指定已生成的备份文件可以保存的天数。  取值范围：1～732。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留10年。
 
         :return: The keep_days of this BackupPolicy.
         :rtype: int
@@ -67,7 +67,7 @@ class BackupPolicy:
     def keep_days(self, keep_days):
         r"""Sets the keep_days of this BackupPolicy.
 
-        指定已生成的备份文件可以保存的天数。  取值范围：0～732。取0值，表示关闭自动备份策略。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留2562天。  注意： 关闭备份策略后，备份任务将立即停止，所有增量备份任务将立即删除，使用增量备份的相关操作可能失败，相关操作不限于下载、复制、恢复、重建等，请谨慎操作。
+        指定已生成的备份文件可以保存的天数。  取值范围：1～732。如果需要延长保留时间请联系客服人员申请，自动备份最长可以保留10年。
 
         :param keep_days: The keep_days of this BackupPolicy.
         :type keep_days: int

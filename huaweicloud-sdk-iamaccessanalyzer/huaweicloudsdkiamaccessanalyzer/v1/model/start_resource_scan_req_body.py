@@ -19,7 +19,7 @@ class StartResourceScanReqBody:
         'resource_owner_account': 'str',
         'resource_project_id': 'str',
         'resource_urn': 'str',
-        'finding_type': 'FindingType'
+        'finding_type': 'str'
     }
 
     attribute_map = {
@@ -43,8 +43,8 @@ class StartResourceScanReqBody:
         :type resource_project_id: str
         :param resource_urn: 资源的唯一资源标识符。
         :type resource_urn: str
-        :param finding_type: 
-        :type finding_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
+        :param finding_type: 访问分析结果类型。 - external_access：外部访问 - privilege_escalation：提权访问 - unused_iam_user_access_key：未使用访问密钥 - unused_iam_user_password：未使用密码 - unused_permission：未使用权限 - unused_iam_agency：未使用委托 - iam_bp_root_user_has_access_key：为根用户绑定AK/SK - iam_bp_access_api_with_password：使用密码访问API - iam_bp_login_protection_disabled：未开启登录保护 - iam_bp_mfa_unconfigured：未绑定MFA - iam_bp_assign_high_risk_sys_policy_or_role_to_user：为用户授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_user：为用户授予高风险系统身份策略 - iam_bp_assign_high_risk_sys_policy_or_role_to_agency：为委托授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_agency：为委托授予高风险系统身份策略 
+        :type finding_type: str
         """
         
         
@@ -157,8 +157,10 @@ class StartResourceScanReqBody:
     def finding_type(self):
         r"""Gets the finding_type of this StartResourceScanReqBody.
 
+        访问分析结果类型。 - external_access：外部访问 - privilege_escalation：提权访问 - unused_iam_user_access_key：未使用访问密钥 - unused_iam_user_password：未使用密码 - unused_permission：未使用权限 - unused_iam_agency：未使用委托 - iam_bp_root_user_has_access_key：为根用户绑定AK/SK - iam_bp_access_api_with_password：使用密码访问API - iam_bp_login_protection_disabled：未开启登录保护 - iam_bp_mfa_unconfigured：未绑定MFA - iam_bp_assign_high_risk_sys_policy_or_role_to_user：为用户授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_user：为用户授予高风险系统身份策略 - iam_bp_assign_high_risk_sys_policy_or_role_to_agency：为委托授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_agency：为委托授予高风险系统身份策略 
+
         :return: The finding_type of this StartResourceScanReqBody.
-        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
+        :rtype: str
         """
         return self._finding_type
 
@@ -166,8 +168,10 @@ class StartResourceScanReqBody:
     def finding_type(self, finding_type):
         r"""Sets the finding_type of this StartResourceScanReqBody.
 
+        访问分析结果类型。 - external_access：外部访问 - privilege_escalation：提权访问 - unused_iam_user_access_key：未使用访问密钥 - unused_iam_user_password：未使用密码 - unused_permission：未使用权限 - unused_iam_agency：未使用委托 - iam_bp_root_user_has_access_key：为根用户绑定AK/SK - iam_bp_access_api_with_password：使用密码访问API - iam_bp_login_protection_disabled：未开启登录保护 - iam_bp_mfa_unconfigured：未绑定MFA - iam_bp_assign_high_risk_sys_policy_or_role_to_user：为用户授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_user：为用户授予高风险系统身份策略 - iam_bp_assign_high_risk_sys_policy_or_role_to_agency：为委托授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_agency：为委托授予高风险系统身份策略 
+
         :param finding_type: The finding_type of this StartResourceScanReqBody.
-        :type finding_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
+        :type finding_type: str
         """
         self._finding_type = finding_type
 

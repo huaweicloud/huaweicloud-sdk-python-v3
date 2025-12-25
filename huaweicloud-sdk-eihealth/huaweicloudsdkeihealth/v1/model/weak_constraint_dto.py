@@ -17,7 +17,7 @@ class WeakConstraintDto:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'type': 'WeakConstraintType',
+        'type': 'str',
         'bool': 'bool',
         'range': 'list[float]',
         'struct': 'StructureConstraintParamsDto',
@@ -46,7 +46,7 @@ class WeakConstraintDto:
         :param name: 属性名称
         :type name: str
         :param type: 
-        :type type: :class:`huaweicloudsdkeihealth.v1.WeakConstraintType`
+        :type type: str
         :param bool: 属性约束类型bool的参数
         :type bool: bool
         :param range: 属性约束类型range的参数
@@ -136,7 +136,7 @@ class WeakConstraintDto:
         r"""Gets the type of this WeakConstraintDto.
 
         :return: The type of this WeakConstraintDto.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.WeakConstraintType`
+        :rtype: str
         """
         return self._type
 
@@ -145,7 +145,7 @@ class WeakConstraintDto:
         r"""Sets the type of this WeakConstraintDto.
 
         :param type: The type of this WeakConstraintDto.
-        :type type: :class:`huaweicloudsdkeihealth.v1.WeakConstraintType`
+        :type type: str
         """
         self._type = type
 

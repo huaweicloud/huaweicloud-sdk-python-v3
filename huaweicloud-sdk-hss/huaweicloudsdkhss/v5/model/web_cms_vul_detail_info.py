@@ -109,9 +109,9 @@ class WebCmsVulDetailInfo:
         :type name_en: str
         :param public_time: **参数解释**: 披露时间 **取值范围**: 最小值0，最大值2^63-1 
         :type public_time: int
-        :param vul_label_zh: **参数解释**: 漏洞标签中文名称 **取值范围**: 字符长度0-64 
+        :param vul_label_zh: **参数解释**: 漏洞标签中文名称（已废弃，后续删除） **取值范围**: 字符长度0-64 
         :type vul_label_zh: str
-        :param vul_label_en: **参数解释**: 漏洞标签英文名称 **取值范围**: 字符长度0-64 
+        :param vul_label_en: **参数解释**: 漏洞标签英文名称（已废弃，后续删除） **取值范围**: 字符长度0-64 
         :type vul_label_en: str
         :param repair_necessity: **参数解释**: 修复必要性 **取值范围**: - 1：高 - 2：中 - 3：低 
         :type repair_necessity: int
@@ -405,7 +405,7 @@ class WebCmsVulDetailInfo:
     def vul_label_zh(self):
         r"""Gets the vul_label_zh of this WebCmsVulDetailInfo.
 
-        **参数解释**: 漏洞标签中文名称 **取值范围**: 字符长度0-64 
+        **参数解释**: 漏洞标签中文名称（已废弃，后续删除） **取值范围**: 字符长度0-64 
 
         :return: The vul_label_zh of this WebCmsVulDetailInfo.
         :rtype: str
@@ -416,7 +416,7 @@ class WebCmsVulDetailInfo:
     def vul_label_zh(self, vul_label_zh):
         r"""Sets the vul_label_zh of this WebCmsVulDetailInfo.
 
-        **参数解释**: 漏洞标签中文名称 **取值范围**: 字符长度0-64 
+        **参数解释**: 漏洞标签中文名称（已废弃，后续删除） **取值范围**: 字符长度0-64 
 
         :param vul_label_zh: The vul_label_zh of this WebCmsVulDetailInfo.
         :type vul_label_zh: str
@@ -427,7 +427,7 @@ class WebCmsVulDetailInfo:
     def vul_label_en(self):
         r"""Gets the vul_label_en of this WebCmsVulDetailInfo.
 
-        **参数解释**: 漏洞标签英文名称 **取值范围**: 字符长度0-64 
+        **参数解释**: 漏洞标签英文名称（已废弃，后续删除） **取值范围**: 字符长度0-64 
 
         :return: The vul_label_en of this WebCmsVulDetailInfo.
         :rtype: str
@@ -438,7 +438,7 @@ class WebCmsVulDetailInfo:
     def vul_label_en(self, vul_label_en):
         r"""Sets the vul_label_en of this WebCmsVulDetailInfo.
 
-        **参数解释**: 漏洞标签英文名称 **取值范围**: 字符长度0-64 
+        **参数解释**: 漏洞标签英文名称（已废弃，后续删除） **取值范围**: 字符长度0-64 
 
         :param vul_label_en: The vul_label_en of this WebCmsVulDetailInfo.
         :type vul_label_en: str

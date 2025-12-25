@@ -62,9 +62,9 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulAffectedStatisticsResponseInfoDataList`]
         :param total_vul_num: **参数解释**: 影响的总漏洞条数(主机+漏洞 以此维度计算) **取值范围**: 最小值0，最大值2147483647 
         :type total_vul_num: int
-        :param extend_tips: 
+        :param extend_tips: **参数解释**: 提示 
         :type extend_tips: list[str]
-        :param extend_text_tips: 
+        :param extend_text_tips: **参数解释**: 漏洞修复提示 **取值范围**: 最小值1，最大值500 
         :type extend_text_tips: list[str]
         :param disabled_operate_types: 
         :type disabled_operate_types: :class:`huaweicloudsdkhss.v5.VulAffectedStatisticsResponseInfoDisabledOperateTypes`
@@ -253,6 +253,8 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
     def extend_tips(self):
         r"""Gets the extend_tips of this ShowVulAffectedStaticsResponse.
 
+        **参数解释**: 提示 
+
         :return: The extend_tips of this ShowVulAffectedStaticsResponse.
         :rtype: list[str]
         """
@@ -261,6 +263,8 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
     @extend_tips.setter
     def extend_tips(self, extend_tips):
         r"""Sets the extend_tips of this ShowVulAffectedStaticsResponse.
+
+        **参数解释**: 提示 
 
         :param extend_tips: The extend_tips of this ShowVulAffectedStaticsResponse.
         :type extend_tips: list[str]
@@ -271,6 +275,8 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
     def extend_text_tips(self):
         r"""Gets the extend_text_tips of this ShowVulAffectedStaticsResponse.
 
+        **参数解释**: 漏洞修复提示 **取值范围**: 最小值1，最大值500 
+
         :return: The extend_text_tips of this ShowVulAffectedStaticsResponse.
         :rtype: list[str]
         """
@@ -279,6 +285,8 @@ class ShowVulAffectedStaticsResponse(SdkResponse):
     @extend_text_tips.setter
     def extend_text_tips(self, extend_text_tips):
         r"""Sets the extend_text_tips of this ShowVulAffectedStaticsResponse.
+
+        **参数解释**: 漏洞修复提示 **取值范围**: 最小值1，最大值500 
 
         :param extend_text_tips: The extend_text_tips of this ShowVulAffectedStaticsResponse.
         :type extend_text_tips: list[str]

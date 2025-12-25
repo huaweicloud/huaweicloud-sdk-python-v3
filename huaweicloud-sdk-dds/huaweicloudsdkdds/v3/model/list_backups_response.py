@@ -30,9 +30,9 @@ class ListBackupsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param backups: 备份列表。
+        :param backups: **参数解释：** 备份列表。 **取值范围：** 不涉及。
         :type backups: list[:class:`huaweicloudsdkdds.v3.BackupForList`]
-        :param total_count: 总记录数。
+        :param total_count: **参数解释：** 总记录数。 **取值范围：** 不涉及。
         :type total_count: int
         """
         
@@ -51,7 +51,7 @@ class ListBackupsResponse(SdkResponse):
     def backups(self):
         r"""Gets the backups of this ListBackupsResponse.
 
-        备份列表。
+        **参数解释：** 备份列表。 **取值范围：** 不涉及。
 
         :return: The backups of this ListBackupsResponse.
         :rtype: list[:class:`huaweicloudsdkdds.v3.BackupForList`]
@@ -62,7 +62,7 @@ class ListBackupsResponse(SdkResponse):
     def backups(self, backups):
         r"""Sets the backups of this ListBackupsResponse.
 
-        备份列表。
+        **参数解释：** 备份列表。 **取值范围：** 不涉及。
 
         :param backups: The backups of this ListBackupsResponse.
         :type backups: list[:class:`huaweicloudsdkdds.v3.BackupForList`]
@@ -73,7 +73,7 @@ class ListBackupsResponse(SdkResponse):
     def total_count(self):
         r"""Gets the total_count of this ListBackupsResponse.
 
-        总记录数。
+        **参数解释：** 总记录数。 **取值范围：** 不涉及。
 
         :return: The total_count of this ListBackupsResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListBackupsResponse(SdkResponse):
     def total_count(self, total_count):
         r"""Sets the total_count of this ListBackupsResponse.
 
-        总记录数。
+        **参数解释：** 总记录数。 **取值范围：** 不涉及。
 
         :param total_count: The total_count of this ListBackupsResponse.
         :type total_count: int

@@ -1844,9 +1844,9 @@ class WafAsyncClient(Client):
         return http_info
 
     def confirm_ip_reputation_rule_async(self, request):
-        r"""根据Id查询机房IP情报防护规则
+        r"""根据Id查询威胁情报访问控制规则
 
-        根据Id查询机房IP情报防护规则
+        根据Id查询威胁情报访问控制规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3395,9 +3395,9 @@ class WafAsyncClient(Client):
         return http_info
 
     def create_ip_reputation_rule_async(self, request):
-        r"""创建机房IP情报规则
+        r"""创建威胁情报访问控制规则
 
-        创建IP情报规则
+        创建威胁情报访问控制规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4957,9 +4957,9 @@ class WafAsyncClient(Client):
         return http_info
 
     def delete_ip_reputation_rule_async(self, request):
-        r"""删除机房IP情报防护规则
+        r"""删除威胁情报访问控制规则
 
-        删除IP情报防护规则
+        删除威胁情报访问控制规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -12348,9 +12348,9 @@ class WafAsyncClient(Client):
         return http_info
 
     def update_ip_reputation_rule_async(self, request):
-        r"""更新机房IP情报防护规则
+        r"""更新威胁情报访问控制规则
 
-        更新IP情报防护规则
+        更新威胁情报访问控制规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 

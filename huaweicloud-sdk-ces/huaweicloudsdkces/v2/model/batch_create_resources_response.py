@@ -28,7 +28,7 @@ class BatchCreateResourcesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param succeed_count: 成功添加的资源数目
+        :param succeed_count: **参数解释**： 成功添加的资源数目。     **取值范围**： 取值范围为0-1000。 
         :type succeed_count: int
         """
         
@@ -44,7 +44,7 @@ class BatchCreateResourcesResponse(SdkResponse):
     def succeed_count(self):
         r"""Gets the succeed_count of this BatchCreateResourcesResponse.
 
-        成功添加的资源数目
+        **参数解释**： 成功添加的资源数目。     **取值范围**： 取值范围为0-1000。 
 
         :return: The succeed_count of this BatchCreateResourcesResponse.
         :rtype: int
@@ -55,7 +55,7 @@ class BatchCreateResourcesResponse(SdkResponse):
     def succeed_count(self, succeed_count):
         r"""Sets the succeed_count of this BatchCreateResourcesResponse.
 
-        成功添加的资源数目
+        **参数解释**： 成功添加的资源数目。     **取值范围**： 取值范围为0-1000。 
 
         :param succeed_count: The succeed_count of this BatchCreateResourcesResponse.
         :type succeed_count: int

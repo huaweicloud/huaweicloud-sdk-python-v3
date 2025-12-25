@@ -82,6 +82,7 @@ from huaweicloudsdkclouddc.v1.model.network_port import NetworkPort
 from huaweicloudsdkclouddc.v1.model.page_info import PageInfo
 from huaweicloudsdkclouddc.v1.model.password import Password
 from huaweicloudsdkclouddc.v1.model.physical_server import PhysicalServer
+from huaweicloudsdkclouddc.v1.model.physical_server_operation_status import PhysicalServerOperationStatus
 from huaweicloudsdkclouddc.v1.model.power import Power
 from huaweicloudsdkclouddc.v1.model.power_action import PowerAction
 from huaweicloudsdkclouddc.v1.model.power_state import PowerState

@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DeletionTaskStatus:
-    """
-    allowed enum values
-    """
-    SUCCEEDED = "succeeded"
-    IN_PROGRESS = "in_progress"
-    FAILED = "failed"
-    NOT_STARTED = "not_started"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -65,9 +65,9 @@ class PublicEndpointResponse:
         :type zone_name: str
         :param domain_name_ttl: **参数解释**： 公网域名TTL。 **取值范围**： 不涉及。
         :type domain_name_ttl: int
-        :param domain_name_status: **参数解释**： 公网域名状态。 **取值范围**： 不涉及。
+        :param domain_name_status: **参数解释**： 公网域名状态。 **取值范围**： - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
         :type domain_name_status: str
-        :param ip_status: **参数解释**： 公网IP状态。 **取值范围**： 不涉及。
+        :param ip_status: **参数解释**： 公网IP状态。 **取值范围**： - FREEZED：冻结 - BIND_ERROR：绑定失败 - BINDING：绑定中 - PENDING_DELETE：释放中 - PENDING_CREATE：创建中 - NOTIFYING：创建中 - NOTIFY_DELETE：释放中 - PENDING_UPDATE：更新中 - DOWN：未绑定 - ACTIVE：绑定 - ELB：绑定ELB - VPN：绑定VPN - ERROR：失败
         :type ip_status: str
         """
         
@@ -311,7 +311,7 @@ class PublicEndpointResponse:
     def domain_name_status(self):
         r"""Gets the domain_name_status of this PublicEndpointResponse.
 
-        **参数解释**： 公网域名状态。 **取值范围**： 不涉及。
+        **参数解释**： 公网域名状态。 **取值范围**： - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
 
         :return: The domain_name_status of this PublicEndpointResponse.
         :rtype: str
@@ -322,7 +322,7 @@ class PublicEndpointResponse:
     def domain_name_status(self, domain_name_status):
         r"""Sets the domain_name_status of this PublicEndpointResponse.
 
-        **参数解释**： 公网域名状态。 **取值范围**： 不涉及。
+        **参数解释**： 公网域名状态。 **取值范围**： - ACTIVE：正常 - PENDING_CREATE：创建中 - PENDING_UPDATE：更新中 - PENDING_DELETE：删除中 - PENDING_FREEZE：冻结中 - FREEZE：冻结 - ILLEGAL：违规冻结 - POLICE：公安冻结 - PENDING_DISABLE：暂停中 - DISABLE：暂停 - ERROR：失败
 
         :param domain_name_status: The domain_name_status of this PublicEndpointResponse.
         :type domain_name_status: str
@@ -333,7 +333,7 @@ class PublicEndpointResponse:
     def ip_status(self):
         r"""Gets the ip_status of this PublicEndpointResponse.
 
-        **参数解释**： 公网IP状态。 **取值范围**： 不涉及。
+        **参数解释**： 公网IP状态。 **取值范围**： - FREEZED：冻结 - BIND_ERROR：绑定失败 - BINDING：绑定中 - PENDING_DELETE：释放中 - PENDING_CREATE：创建中 - NOTIFYING：创建中 - NOTIFY_DELETE：释放中 - PENDING_UPDATE：更新中 - DOWN：未绑定 - ACTIVE：绑定 - ELB：绑定ELB - VPN：绑定VPN - ERROR：失败
 
         :return: The ip_status of this PublicEndpointResponse.
         :rtype: str
@@ -344,7 +344,7 @@ class PublicEndpointResponse:
     def ip_status(self, ip_status):
         r"""Sets the ip_status of this PublicEndpointResponse.
 
-        **参数解释**： 公网IP状态。 **取值范围**： 不涉及。
+        **参数解释**： 公网IP状态。 **取值范围**： - FREEZED：冻结 - BIND_ERROR：绑定失败 - BINDING：绑定中 - PENDING_DELETE：释放中 - PENDING_CREATE：创建中 - NOTIFYING：创建中 - NOTIFY_DELETE：释放中 - PENDING_UPDATE：更新中 - DOWN：未绑定 - ACTIVE：绑定 - ELB：绑定ELB - VPN：绑定VPN - ERROR：失败
 
         :param ip_status: The ip_status of this PublicEndpointResponse.
         :type ip_status: str

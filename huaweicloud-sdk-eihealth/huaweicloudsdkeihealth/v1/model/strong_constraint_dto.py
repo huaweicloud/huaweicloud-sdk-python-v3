@@ -17,7 +17,7 @@ class StrongConstraintDto:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'type': 'StrongConstraintType',
+        'type': 'str',
         'bool': 'bool',
         'range': 'list[float]',
         'struct': 'StructureConstraintParamsDto',
@@ -44,7 +44,7 @@ class StrongConstraintDto:
         :param name: 属性名称
         :type name: str
         :param type: 
-        :type type: :class:`huaweicloudsdkeihealth.v1.StrongConstraintType`
+        :type type: str
         :param bool: 属性约束类型bool的参数
         :type bool: bool
         :param range: 属性约束类型range的参数
@@ -129,7 +129,7 @@ class StrongConstraintDto:
         r"""Gets the type of this StrongConstraintDto.
 
         :return: The type of this StrongConstraintDto.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.StrongConstraintType`
+        :rtype: str
         """
         return self._type
 
@@ -138,7 +138,7 @@ class StrongConstraintDto:
         r"""Sets the type of this StrongConstraintDto.
 
         :param type: The type of this StrongConstraintDto.
-        :type type: :class:`huaweicloudsdkeihealth.v1.StrongConstraintType`
+        :type type: str
         """
         self._type = type
 

@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class FindingSourceType:
-    """
-    allowed enum values
-    """
-    BUCKET_ACL = "bucket_acl"
-    BUCKET_POLICY = "bucket_policy"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

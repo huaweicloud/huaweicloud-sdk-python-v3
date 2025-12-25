@@ -15,7 +15,7 @@ class RemoteAreaId:
     sensitive_list = []
 
     openapi_types = {
-        'remote_area_id': 'RemoteAreaIdDef'
+        'remote_area_id': 'str'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class RemoteAreaId:
 
         The model defined in huaweicloud sdk
 
-        :param remote_area_id: 
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
+        :param remote_area_id: 对端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+        :type remote_area_id: str
         """
         
         
@@ -42,8 +42,10 @@ class RemoteAreaId:
     def remote_area_id(self):
         r"""Gets the remote_area_id of this RemoteAreaId.
 
+        对端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :return: The remote_area_id of this RemoteAreaId.
-        :rtype: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
+        :rtype: str
         """
         return self._remote_area_id
 
@@ -51,8 +53,10 @@ class RemoteAreaId:
     def remote_area_id(self, remote_area_id):
         r"""Sets the remote_area_id of this RemoteAreaId.
 
+        对端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :param remote_area_id: The remote_area_id of this RemoteAreaId.
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
+        :type remote_area_id: str
         """
         self._remote_area_id = remote_area_id
 

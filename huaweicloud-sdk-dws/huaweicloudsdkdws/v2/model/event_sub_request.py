@@ -49,7 +49,7 @@ class EventSubRequest:
 
         :param name: **参数解释**： 事件订阅名称。 **取值范围**： 不涉及。
         :type name: str
-        :param source_type: **参数解释**： 事件源类型。 **取值范围**： 支持cluster，backup，disaster-recovery。
+        :param source_type: **参数解释**： 事件源类型。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
         :type source_type: str
         :param source_id: **参数解释**： 事件源ID。 **取值范围**： 不涉及。
         :type source_id: str
@@ -65,7 +65,7 @@ class EventSubRequest:
         :type notification_target: str
         :param notification_target_name: **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
         :type notification_target_name: str
-        :param notification_target_type: **参数解释**： 消息通知类型只支持SMN。 **取值范围**： 不涉及。
+        :param notification_target_type: **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
         :type notification_target_type: str
         :param time_zone: **参数解释**： 时区。 **取值范围**： 不涉及。
         :type time_zone: str
@@ -131,7 +131,7 @@ class EventSubRequest:
     def source_type(self):
         r"""Gets the source_type of this EventSubRequest.
 
-        **参数解释**： 事件源类型。 **取值范围**： 支持cluster，backup，disaster-recovery。
+        **参数解释**： 事件源类型。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
 
         :return: The source_type of this EventSubRequest.
         :rtype: str
@@ -142,7 +142,7 @@ class EventSubRequest:
     def source_type(self, source_type):
         r"""Sets the source_type of this EventSubRequest.
 
-        **参数解释**： 事件源类型。 **取值范围**： 支持cluster，backup，disaster-recovery。
+        **参数解释**： 事件源类型。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。
 
         :param source_type: The source_type of this EventSubRequest.
         :type source_type: str
@@ -307,7 +307,7 @@ class EventSubRequest:
     def notification_target_type(self):
         r"""Gets the notification_target_type of this EventSubRequest.
 
-        **参数解释**： 消息通知类型只支持SMN。 **取值范围**： 不涉及。
+        **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
 
         :return: The notification_target_type of this EventSubRequest.
         :rtype: str
@@ -318,7 +318,7 @@ class EventSubRequest:
     def notification_target_type(self, notification_target_type):
         r"""Sets the notification_target_type of this EventSubRequest.
 
-        **参数解释**： 消息通知类型只支持SMN。 **取值范围**： 不涉及。
+        **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
 
         :param notification_target_type: The notification_target_type of this EventSubRequest.
         :type notification_target_type: str

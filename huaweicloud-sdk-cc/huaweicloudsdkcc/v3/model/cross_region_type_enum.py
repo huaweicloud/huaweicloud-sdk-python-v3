@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CrossRegionTypeEnum:
-    """
-    allowed enum values
-    """
-    INTRA_REGION = "intra-region"
-    INTER_REGION = "inter-region"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

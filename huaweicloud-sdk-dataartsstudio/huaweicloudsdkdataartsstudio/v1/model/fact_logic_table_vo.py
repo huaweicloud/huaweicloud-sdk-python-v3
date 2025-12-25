@@ -40,7 +40,7 @@ class FactLogicTableVO:
         'distribute': 'str',
         'distribute_column': 'str',
         'table_type': 'str',
-        'status': 'BizStatusEnum',
+        'status': 'str',
         'tb_guid': 'str',
         'tb_logic_guid': 'str',
         'dw_type': 'str',
@@ -57,13 +57,13 @@ class FactLogicTableVO:
         'measures': 'list[FactTableAttributeVO]',
         'table_attributes': 'list[FactTableAttributeVO]',
         'configs': 'str',
-        'physical_table': 'SyncStatusEnum',
-        'dev_physical_table': 'SyncStatusEnum',
-        'technical_asset': 'SyncStatusEnum',
-        'business_asset': 'SyncStatusEnum',
-        'meta_data_link': 'SyncStatusEnum',
-        'data_quality': 'SyncStatusEnum',
-        'summary_status': 'SyncStatusEnum',
+        'physical_table': 'str',
+        'dev_physical_table': 'str',
+        'technical_asset': 'str',
+        'business_asset': 'str',
+        'meta_data_link': 'str',
+        'data_quality': 'str',
+        'summary_status': 'str',
         'quality_id': 'str',
         'alias': 'str',
         'self_defined_fields': 'list[SelfDefinedFieldVO]',
@@ -72,7 +72,7 @@ class FactLogicTableVO:
         'prod_version': 'str',
         'dev_version_name': 'str',
         'prod_version_name': 'str',
-        'env_type': 'EnvTypeEnum',
+        'env_type': 'str',
         'secrecy_levels': 'list[SecrecyLevelVO]',
         'model_id': 'str',
         'model': 'WorkspaceVO'
@@ -197,8 +197,8 @@ class FactLogicTableVO:
         :type distribute_column: str
         :param table_type: 表类型。
         :type table_type: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :param status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+        :type status: str
         :param tb_guid: 表发布后，创建的数据目录技术资产guid，只读，创建和更新时无需填写。
         :type tb_guid: str
         :param tb_logic_guid: 表发布后，创建的数据目录业务资产guid，只读，创建和更新时无需填写。
@@ -231,20 +231,20 @@ class FactLogicTableVO:
         :type table_attributes: list[:class:`huaweicloudsdkdataartsstudio.v1.FactTableAttributeVO`]
         :param configs: 其他配置
         :type configs: str
-        :param physical_table: 
-        :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param dev_physical_table: 
-        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param technical_asset: 
-        :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param business_asset: 
-        :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param meta_data_link: 
-        :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param data_quality: 
-        :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param summary_status: 
-        :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param physical_table: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type physical_table: str
+        :param dev_physical_table: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type dev_physical_table: str
+        :param technical_asset: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type technical_asset: str
+        :param business_asset: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type business_asset: str
+        :param meta_data_link: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type meta_data_link: str
+        :param data_quality: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type data_quality: str
+        :param summary_status: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type summary_status: str
         :param quality_id: 质量ID，ID字符串。
         :type quality_id: str
         :param alias: 别名。
@@ -261,8 +261,8 @@ class FactLogicTableVO:
         :type dev_version_name: str
         :param prod_version_name: 生产环境版本名称
         :type prod_version_name: str
-        :param env_type: 
-        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        :param env_type: 开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
+        :type env_type: str
         :param secrecy_levels: 密级
         :type secrecy_levels: list[:class:`huaweicloudsdkdataartsstudio.v1.SecrecyLevelVO`]
         :param model_id: 所属模型ID，ID字符串。
@@ -1006,8 +1006,10 @@ class FactLogicTableVO:
     def status(self):
         r"""Gets the status of this FactLogicTableVO.
 
+        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+
         :return: The status of this FactLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :rtype: str
         """
         return self._status
 
@@ -1015,8 +1017,10 @@ class FactLogicTableVO:
     def status(self, status):
         r"""Sets the status of this FactLogicTableVO.
 
+        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+
         :param status: The status of this FactLogicTableVO.
-        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :type status: str
         """
         self._status = status
 
@@ -1368,8 +1372,10 @@ class FactLogicTableVO:
     def physical_table(self):
         r"""Gets the physical_table of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The physical_table of this FactLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._physical_table
 
@@ -1377,8 +1383,10 @@ class FactLogicTableVO:
     def physical_table(self, physical_table):
         r"""Sets the physical_table of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param physical_table: The physical_table of this FactLogicTableVO.
-        :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type physical_table: str
         """
         self._physical_table = physical_table
 
@@ -1386,8 +1394,10 @@ class FactLogicTableVO:
     def dev_physical_table(self):
         r"""Gets the dev_physical_table of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The dev_physical_table of this FactLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._dev_physical_table
 
@@ -1395,8 +1405,10 @@ class FactLogicTableVO:
     def dev_physical_table(self, dev_physical_table):
         r"""Sets the dev_physical_table of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param dev_physical_table: The dev_physical_table of this FactLogicTableVO.
-        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type dev_physical_table: str
         """
         self._dev_physical_table = dev_physical_table
 
@@ -1404,8 +1416,10 @@ class FactLogicTableVO:
     def technical_asset(self):
         r"""Gets the technical_asset of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The technical_asset of this FactLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._technical_asset
 
@@ -1413,8 +1427,10 @@ class FactLogicTableVO:
     def technical_asset(self, technical_asset):
         r"""Sets the technical_asset of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param technical_asset: The technical_asset of this FactLogicTableVO.
-        :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type technical_asset: str
         """
         self._technical_asset = technical_asset
 
@@ -1422,8 +1438,10 @@ class FactLogicTableVO:
     def business_asset(self):
         r"""Gets the business_asset of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The business_asset of this FactLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._business_asset
 
@@ -1431,8 +1449,10 @@ class FactLogicTableVO:
     def business_asset(self, business_asset):
         r"""Sets the business_asset of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param business_asset: The business_asset of this FactLogicTableVO.
-        :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type business_asset: str
         """
         self._business_asset = business_asset
 
@@ -1440,8 +1460,10 @@ class FactLogicTableVO:
     def meta_data_link(self):
         r"""Gets the meta_data_link of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The meta_data_link of this FactLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._meta_data_link
 
@@ -1449,8 +1471,10 @@ class FactLogicTableVO:
     def meta_data_link(self, meta_data_link):
         r"""Sets the meta_data_link of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param meta_data_link: The meta_data_link of this FactLogicTableVO.
-        :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type meta_data_link: str
         """
         self._meta_data_link = meta_data_link
 
@@ -1458,8 +1482,10 @@ class FactLogicTableVO:
     def data_quality(self):
         r"""Gets the data_quality of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The data_quality of this FactLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._data_quality
 
@@ -1467,8 +1493,10 @@ class FactLogicTableVO:
     def data_quality(self, data_quality):
         r"""Sets the data_quality of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param data_quality: The data_quality of this FactLogicTableVO.
-        :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type data_quality: str
         """
         self._data_quality = data_quality
 
@@ -1476,8 +1504,10 @@ class FactLogicTableVO:
     def summary_status(self):
         r"""Gets the summary_status of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The summary_status of this FactLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._summary_status
 
@@ -1485,8 +1515,10 @@ class FactLogicTableVO:
     def summary_status(self, summary_status):
         r"""Sets the summary_status of this FactLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param summary_status: The summary_status of this FactLogicTableVO.
-        :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type summary_status: str
         """
         self._summary_status = summary_status
 
@@ -1670,8 +1702,10 @@ class FactLogicTableVO:
     def env_type(self):
         r"""Gets the env_type of this FactLogicTableVO.
 
+        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
+
         :return: The env_type of this FactLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        :rtype: str
         """
         return self._env_type
 
@@ -1679,8 +1713,10 @@ class FactLogicTableVO:
     def env_type(self, env_type):
         r"""Sets the env_type of this FactLogicTableVO.
 
+        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
+
         :param env_type: The env_type of this FactLogicTableVO.
-        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        :type env_type: str
         """
         self._env_type = env_type
 

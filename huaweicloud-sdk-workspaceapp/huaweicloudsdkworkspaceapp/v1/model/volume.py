@@ -15,7 +15,7 @@ class Volume:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'VolumeType',
+        'type': 'str',
         'size': 'int',
         'cluster_id': 'str'
     }
@@ -31,8 +31,8 @@ class Volume:
 
         The model defined in huaweicloud sdk
 
-        :param type: 
-        :type type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
+        :param type: 磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * &#x60;ESSD&#x60; - 极速型SSD * &#x60;SSD&#x60; - 超高IO * &#x60;GPSSD&#x60; - 通用型SSD * &#x60;SAS&#x60; - 高IO * &#x60;SATA&#x60; - 普通IO
+        :type type: str
         :param size: 磁盘容量，单位GB，数值约束为10的倍数。 * &#x60;系统盘&#x60; minLength: 10，maxLength: 1024 * &#x60;数据盘&#x60; minLength: 10，maxLength: 32768
         :type size: int
         :param cluster_id: 云服务器系统盘对应的存储池的ID。
@@ -55,8 +55,10 @@ class Volume:
     def type(self):
         r"""Gets the type of this Volume.
 
+        磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * `ESSD` - 极速型SSD * `SSD` - 超高IO * `GPSSD` - 通用型SSD * `SAS` - 高IO * `SATA` - 普通IO
+
         :return: The type of this Volume.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
+        :rtype: str
         """
         return self._type
 
@@ -64,8 +66,10 @@ class Volume:
     def type(self, type):
         r"""Sets the type of this Volume.
 
+        磁盘类型，获取可用磁盘类型详见接口磁盘管理ListVolumeType。 * `ESSD` - 极速型SSD * `SSD` - 超高IO * `GPSSD` - 通用型SSD * `SAS` - 高IO * `SATA` - 普通IO
+
         :param type: The type of this Volume.
-        :type type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
+        :type type: str
         """
         self._type = type
 

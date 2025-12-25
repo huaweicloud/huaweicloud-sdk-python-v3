@@ -15,28 +15,35 @@ class BatchDeleteOneClickAlarmsRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'one_click_alarm_ids': 'list[str]'
+        'one_click_alarm_ids': 'list[str]',
+        'action_type': 'str'
     }
 
     attribute_map = {
-        'one_click_alarm_ids': 'one_click_alarm_ids'
+        'one_click_alarm_ids': 'one_click_alarm_ids',
+        'action_type': 'action_type'
     }
 
-    def __init__(self, one_click_alarm_ids=None):
+    def __init__(self, one_click_alarm_ids=None, action_type=None):
         r"""BatchDeleteOneClickAlarmsRequestBody
 
         The model defined in huaweicloud sdk
 
         :param one_click_alarm_ids: **参数解释**： 需要批量删除的一键告警ID列表。 **约束限制**： 一键告警ID数量最多为100个，至少1个。 
         :type one_click_alarm_ids: list[str]
+        :param action_type: **参数解释**： 操作类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。取值为disable - disable: 关闭一键告警 **默认取值**： 不涉及。 
+        :type action_type: str
         """
         
         
 
         self._one_click_alarm_ids = None
+        self._action_type = None
         self.discriminator = None
 
         self.one_click_alarm_ids = one_click_alarm_ids
+        if action_type is not None:
+            self.action_type = action_type
 
     @property
     def one_click_alarm_ids(self):
@@ -59,6 +66,28 @@ class BatchDeleteOneClickAlarmsRequestBody:
         :type one_click_alarm_ids: list[str]
         """
         self._one_click_alarm_ids = one_click_alarm_ids
+
+    @property
+    def action_type(self):
+        r"""Gets the action_type of this BatchDeleteOneClickAlarmsRequestBody.
+
+        **参数解释**： 操作类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。取值为disable - disable: 关闭一键告警 **默认取值**： 不涉及。 
+
+        :return: The action_type of this BatchDeleteOneClickAlarmsRequestBody.
+        :rtype: str
+        """
+        return self._action_type
+
+    @action_type.setter
+    def action_type(self, action_type):
+        r"""Sets the action_type of this BatchDeleteOneClickAlarmsRequestBody.
+
+        **参数解释**： 操作类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。取值为disable - disable: 关闭一键告警 **默认取值**： 不涉及。 
+
+        :param action_type: The action_type of this BatchDeleteOneClickAlarmsRequestBody.
+        :type action_type: str
+        """
+        self._action_type = action_type
 
     def to_dict(self):
         result = {}

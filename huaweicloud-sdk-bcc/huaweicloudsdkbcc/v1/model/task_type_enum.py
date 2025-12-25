@@ -4,15 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class TaskTypeEnum:
-    """
-    allowed enum values
-    """
-    BACKUP = "backup"
-    REPLICATION = "replication"
-    RESTORE = "restore"
-    DELETE = "delete"
-    VAULT_DELETE = "vault_delete"
-    REMOVE_RESOURCE = "remove_resource"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

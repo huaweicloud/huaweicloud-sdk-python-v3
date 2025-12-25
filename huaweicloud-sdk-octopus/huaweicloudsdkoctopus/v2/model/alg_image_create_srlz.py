@@ -19,7 +19,7 @@ class AlgImageCreateSrlz:
         'id': 'int',
         'created_at': 'float',
         'updated_at': 'float',
-        'type': 'Type87eEnum',
+        'type': 'str',
         'version': 'str',
         'command': 'str',
         'workspace': 'str',
@@ -54,7 +54,7 @@ class AlgImageCreateSrlz:
         :param updated_at: 
         :type updated_at: float
         :param type: 镜像类型  * &#x60;build&#x60; - Build * &#x60;upload&#x60; - Upload
-        :type type: :class:`huaweicloudsdkoctopus.v2.Type87eEnum`
+        :type type: :class:`huaweicloudsdkoctopus.v2.str`
         :param version: 镜像版本
         :type version: str
         :param command: 运行命令
@@ -171,7 +171,7 @@ class AlgImageCreateSrlz:
         镜像类型  * `build` - Build * `upload` - Upload
 
         :return: The type of this AlgImageCreateSrlz.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.Type87eEnum`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.str`
         """
         return self._type
 
@@ -182,7 +182,7 @@ class AlgImageCreateSrlz:
         镜像类型  * `build` - Build * `upload` - Upload
 
         :param type: The type of this AlgImageCreateSrlz.
-        :type type: :class:`huaweicloudsdkoctopus.v2.Type87eEnum`
+        :type type: :class:`huaweicloudsdkoctopus.v2.str`
         """
         self._type = type
 

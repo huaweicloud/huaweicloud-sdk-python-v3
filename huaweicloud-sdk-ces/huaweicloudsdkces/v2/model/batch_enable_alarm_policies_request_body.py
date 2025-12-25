@@ -16,39 +16,53 @@ class BatchEnableAlarmPoliciesRequestBody:
 
     openapi_types = {
         'alarm_policy_ids': 'list[str]',
-        'enabled': 'bool'
+        'enabled': 'bool',
+        'retain_when_all_disabled': 'bool',
+        'action_type': 'str'
     }
 
     attribute_map = {
         'alarm_policy_ids': 'alarm_policy_ids',
-        'enabled': 'enabled'
+        'enabled': 'enabled',
+        'retain_when_all_disabled': 'retain_when_all_disabled',
+        'action_type': 'action_type'
     }
 
-    def __init__(self, alarm_policy_ids=None, enabled=None):
+    def __init__(self, alarm_policy_ids=None, enabled=None, retain_when_all_disabled=None, action_type=None):
         r"""BatchEnableAlarmPoliciesRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param alarm_policy_ids: 需要批量启停的告警规则策略的ID列表
+        :param alarm_policy_ids: **参数解释** 需要批量启停的告警规则策略的ID列表 **约束限制** 包含的告警规则策略ID个数为1到100 
         :type alarm_policy_ids: list[str]
-        :param enabled: 是否启用告警策略。true:开启，false：关闭。
+        :param enabled: **参数解释** 是否启用告警策略 **约束限制** 不涉及 **取值范围** - true:开启 - false:关闭 **默认取值** true 
         :type enabled: bool
+        :param retain_when_all_disabled: **参数解释** 一键告警中的规则全部被停用时是否保留规则信息 **约束限制** 不涉及 **取值范围** - true:保留规则信息 - false:不保留规则信息 **默认取值** false 
+        :type retain_when_all_disabled: bool
+        :param action_type: **参数解释** 当传此参数时，将会批量停用一键告警规则 **约束限制** 不涉及 **取值范围** - disable: 表示将会批量停用一键告警规则 **默认取值** 不涉及 
+        :type action_type: str
         """
         
         
 
         self._alarm_policy_ids = None
         self._enabled = None
+        self._retain_when_all_disabled = None
+        self._action_type = None
         self.discriminator = None
 
         self.alarm_policy_ids = alarm_policy_ids
         self.enabled = enabled
+        if retain_when_all_disabled is not None:
+            self.retain_when_all_disabled = retain_when_all_disabled
+        if action_type is not None:
+            self.action_type = action_type
 
     @property
     def alarm_policy_ids(self):
         r"""Gets the alarm_policy_ids of this BatchEnableAlarmPoliciesRequestBody.
 
-        需要批量启停的告警规则策略的ID列表
+        **参数解释** 需要批量启停的告警规则策略的ID列表 **约束限制** 包含的告警规则策略ID个数为1到100 
 
         :return: The alarm_policy_ids of this BatchEnableAlarmPoliciesRequestBody.
         :rtype: list[str]
@@ -59,7 +73,7 @@ class BatchEnableAlarmPoliciesRequestBody:
     def alarm_policy_ids(self, alarm_policy_ids):
         r"""Sets the alarm_policy_ids of this BatchEnableAlarmPoliciesRequestBody.
 
-        需要批量启停的告警规则策略的ID列表
+        **参数解释** 需要批量启停的告警规则策略的ID列表 **约束限制** 包含的告警规则策略ID个数为1到100 
 
         :param alarm_policy_ids: The alarm_policy_ids of this BatchEnableAlarmPoliciesRequestBody.
         :type alarm_policy_ids: list[str]
@@ -70,7 +84,7 @@ class BatchEnableAlarmPoliciesRequestBody:
     def enabled(self):
         r"""Gets the enabled of this BatchEnableAlarmPoliciesRequestBody.
 
-        是否启用告警策略。true:开启，false：关闭。
+        **参数解释** 是否启用告警策略 **约束限制** 不涉及 **取值范围** - true:开启 - false:关闭 **默认取值** true 
 
         :return: The enabled of this BatchEnableAlarmPoliciesRequestBody.
         :rtype: bool
@@ -81,12 +95,56 @@ class BatchEnableAlarmPoliciesRequestBody:
     def enabled(self, enabled):
         r"""Sets the enabled of this BatchEnableAlarmPoliciesRequestBody.
 
-        是否启用告警策略。true:开启，false：关闭。
+        **参数解释** 是否启用告警策略 **约束限制** 不涉及 **取值范围** - true:开启 - false:关闭 **默认取值** true 
 
         :param enabled: The enabled of this BatchEnableAlarmPoliciesRequestBody.
         :type enabled: bool
         """
         self._enabled = enabled
+
+    @property
+    def retain_when_all_disabled(self):
+        r"""Gets the retain_when_all_disabled of this BatchEnableAlarmPoliciesRequestBody.
+
+        **参数解释** 一键告警中的规则全部被停用时是否保留规则信息 **约束限制** 不涉及 **取值范围** - true:保留规则信息 - false:不保留规则信息 **默认取值** false 
+
+        :return: The retain_when_all_disabled of this BatchEnableAlarmPoliciesRequestBody.
+        :rtype: bool
+        """
+        return self._retain_when_all_disabled
+
+    @retain_when_all_disabled.setter
+    def retain_when_all_disabled(self, retain_when_all_disabled):
+        r"""Sets the retain_when_all_disabled of this BatchEnableAlarmPoliciesRequestBody.
+
+        **参数解释** 一键告警中的规则全部被停用时是否保留规则信息 **约束限制** 不涉及 **取值范围** - true:保留规则信息 - false:不保留规则信息 **默认取值** false 
+
+        :param retain_when_all_disabled: The retain_when_all_disabled of this BatchEnableAlarmPoliciesRequestBody.
+        :type retain_when_all_disabled: bool
+        """
+        self._retain_when_all_disabled = retain_when_all_disabled
+
+    @property
+    def action_type(self):
+        r"""Gets the action_type of this BatchEnableAlarmPoliciesRequestBody.
+
+        **参数解释** 当传此参数时，将会批量停用一键告警规则 **约束限制** 不涉及 **取值范围** - disable: 表示将会批量停用一键告警规则 **默认取值** 不涉及 
+
+        :return: The action_type of this BatchEnableAlarmPoliciesRequestBody.
+        :rtype: str
+        """
+        return self._action_type
+
+    @action_type.setter
+    def action_type(self, action_type):
+        r"""Sets the action_type of this BatchEnableAlarmPoliciesRequestBody.
+
+        **参数解释** 当传此参数时，将会批量停用一键告警规则 **约束限制** 不涉及 **取值范围** - disable: 表示将会批量停用一键告警规则 **默认取值** 不涉及 
+
+        :param action_type: The action_type of this BatchEnableAlarmPoliciesRequestBody.
+        :type action_type: str
+        """
+        self._action_type = action_type
 
     def to_dict(self):
         result = {}

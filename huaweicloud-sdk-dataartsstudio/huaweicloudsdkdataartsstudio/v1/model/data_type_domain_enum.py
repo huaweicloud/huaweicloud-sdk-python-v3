@@ -4,14 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DataTypeDomainEnum:
-    """
-    allowed enum values
-    """
-    NUMBER = "NUMBER"
-    STRING = "STRING"
-    DATETIME = "DATETIME"
-    BLOB = "BLOB"
-    OTHER = "OTHER"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

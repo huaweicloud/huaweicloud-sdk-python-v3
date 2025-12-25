@@ -18,7 +18,7 @@ class SharePersistentStorageClaim:
         'storage_claim_id': 'str',
         'folder_path': 'str',
         'delimiter': 'str',
-        'claim_mode': 'ClaimMode',
+        'claim_mode': 'str',
         'count': 'dict(str, int)'
     }
 
@@ -41,8 +41,8 @@ class SharePersistentStorageClaim:
         :type folder_path: str
         :param delimiter: 路径分隔符。
         :type delimiter: str
-        :param claim_mode: 
-        :type claim_mode: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
+        :param claim_mode: 存储声明的类型： * &#x60;USER&#x60; -  用户目录 * &#x60;SHARE&#x60; - 共享目录
+        :type claim_mode: str
         :param count: 共享目录的关联用户、用户组数量。
         :type count: dict(str, int)
         """
@@ -137,8 +137,10 @@ class SharePersistentStorageClaim:
     def claim_mode(self):
         r"""Gets the claim_mode of this SharePersistentStorageClaim.
 
+        存储声明的类型： * `USER` -  用户目录 * `SHARE` - 共享目录
+
         :return: The claim_mode of this SharePersistentStorageClaim.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
+        :rtype: str
         """
         return self._claim_mode
 
@@ -146,8 +148,10 @@ class SharePersistentStorageClaim:
     def claim_mode(self, claim_mode):
         r"""Sets the claim_mode of this SharePersistentStorageClaim.
 
+        存储声明的类型： * `USER` -  用户目录 * `SHARE` - 共享目录
+
         :param claim_mode: The claim_mode of this SharePersistentStorageClaim.
-        :type claim_mode: :class:`huaweicloudsdkworkspaceapp.v1.ClaimMode`
+        :type claim_mode: str
         """
         self._claim_mode = claim_mode
 

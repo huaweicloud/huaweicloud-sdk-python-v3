@@ -27,7 +27,7 @@ class CreateWarRoomRequestBody:
         'region_names': 'list[str]',
         'enterprise_project_id': 'str',
         'notification_type': 'str',
-        'notification_modes': 'list[NotificationMode]'
+        'notification_modes': 'list[str]'
     }
 
     attribute_map = {
@@ -76,7 +76,7 @@ class CreateWarRoomRequestBody:
         :param notification_type: 创建群组方式
         :type notification_type: str
         :param notification_modes: 发送通知的方式，支持多个通知方式。
-        :type notification_modes: list[:class:`huaweicloudsdkcoc.v1.NotificationMode`]
+        :type notification_modes: list[str]
         """
         
         
@@ -388,7 +388,7 @@ class CreateWarRoomRequestBody:
         发送通知的方式，支持多个通知方式。
 
         :return: The notification_modes of this CreateWarRoomRequestBody.
-        :rtype: list[:class:`huaweicloudsdkcoc.v1.NotificationMode`]
+        :rtype: list[str]
         """
         return self._notification_modes
 
@@ -399,7 +399,7 @@ class CreateWarRoomRequestBody:
         发送通知的方式，支持多个通知方式。
 
         :param notification_modes: The notification_modes of this CreateWarRoomRequestBody.
-        :type notification_modes: list[:class:`huaweicloudsdkcoc.v1.NotificationMode`]
+        :type notification_modes: list[str]
         """
         self._notification_modes = notification_modes
 

@@ -15,7 +15,7 @@ class BillResources:
     sensitive_list = []
 
     openapi_types = {
-        'resource_type': 'BillResourceType',
+        'resource_type': 'str',
         'resource_nums': 'int'
     }
 
@@ -29,8 +29,8 @@ class BillResources:
 
         The model defined in huaweicloud sdk
 
-        :param resource_type: 
-        :type resource_type: :class:`huaweicloudsdkmetastudio.v1.BillResourceType`
+        :param resource_type: 资源类型。 当前支持的形象资源类型如下： * 2D_DIGITAL_HUMAN_BASIC：形象制作基础版 * 2D_DIGITAL_HUMAN_ADVANCED：形象制作高级版 * 2D_DIGITAL_HUMAN_FLEXUS：形象制作FLEXUS版  当前支持的声音资源类型如下： * VOICE_BASIC: 声音制作基础版 * VOICE_MIDDLE: 声音制作进阶版 * VOICE_ADVANCE：声音制作高级版 * VOICE_THIRD_PARTY：声音制作第三方出门问问 * VOICE_THIRD_PARTY_LJZN: 声音制作第三方逻辑智能 * VOICE_FLEXUS: 声音制作Flexus版资源
+        :type resource_type: str
         :param resource_nums: 资源数量。
         :type resource_nums: int
         """
@@ -50,8 +50,10 @@ class BillResources:
     def resource_type(self):
         r"""Gets the resource_type of this BillResources.
 
+        资源类型。 当前支持的形象资源类型如下： * 2D_DIGITAL_HUMAN_BASIC：形象制作基础版 * 2D_DIGITAL_HUMAN_ADVANCED：形象制作高级版 * 2D_DIGITAL_HUMAN_FLEXUS：形象制作FLEXUS版  当前支持的声音资源类型如下： * VOICE_BASIC: 声音制作基础版 * VOICE_MIDDLE: 声音制作进阶版 * VOICE_ADVANCE：声音制作高级版 * VOICE_THIRD_PARTY：声音制作第三方出门问问 * VOICE_THIRD_PARTY_LJZN: 声音制作第三方逻辑智能 * VOICE_FLEXUS: 声音制作Flexus版资源
+
         :return: The resource_type of this BillResources.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.BillResourceType`
+        :rtype: str
         """
         return self._resource_type
 
@@ -59,8 +61,10 @@ class BillResources:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this BillResources.
 
+        资源类型。 当前支持的形象资源类型如下： * 2D_DIGITAL_HUMAN_BASIC：形象制作基础版 * 2D_DIGITAL_HUMAN_ADVANCED：形象制作高级版 * 2D_DIGITAL_HUMAN_FLEXUS：形象制作FLEXUS版  当前支持的声音资源类型如下： * VOICE_BASIC: 声音制作基础版 * VOICE_MIDDLE: 声音制作进阶版 * VOICE_ADVANCE：声音制作高级版 * VOICE_THIRD_PARTY：声音制作第三方出门问问 * VOICE_THIRD_PARTY_LJZN: 声音制作第三方逻辑智能 * VOICE_FLEXUS: 声音制作Flexus版资源
+
         :param resource_type: The resource_type of this BillResources.
-        :type resource_type: :class:`huaweicloudsdkmetastudio.v1.BillResourceType`
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

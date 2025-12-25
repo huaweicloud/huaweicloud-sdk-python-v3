@@ -23,8 +23,8 @@ class AggregationLogicTableVO:
         'l3_id': 'str',
         'description': 'str',
         'owner': 'str',
-        'secret_type': 'SecretTypeEnum',
-        'apply_bg': 'ApplyBgEnum',
+        'secret_type': 'str',
+        'apply_bg': 'str',
         'create_by': 'str',
         'queue_name': 'str',
         'dw_id': 'str',
@@ -32,7 +32,7 @@ class AggregationLogicTableVO:
         'tb_id': 'str',
         'schema': 'str',
         'dw_name': 'str',
-        'status': 'BizStatusEnum',
+        'status': 'str',
         'tb_guid': 'str',
         'tb_logic_guid': 'str',
         'dw_type': 'str',
@@ -48,15 +48,15 @@ class AggregationLogicTableVO:
         'group_code': 'str',
         'time_period': 'AggregationLogicTableAttributeVO',
         'table_attributes': 'list[AggregationLogicTableAttributeVO]',
-        'physical_table': 'SyncStatusEnum',
-        'dev_physical_table': 'SyncStatusEnum',
-        'technical_asset': 'SyncStatusEnum',
-        'business_asset': 'SyncStatusEnum',
-        'meta_data_link': 'SyncStatusEnum',
-        'data_quality': 'SyncStatusEnum',
-        'dlf_task': 'SyncStatusEnum',
-        'publish_to_dlm': 'SyncStatusEnum',
-        'summary_status': 'SyncStatusEnum',
+        'physical_table': 'str',
+        'dev_physical_table': 'str',
+        'technical_asset': 'str',
+        'business_asset': 'str',
+        'meta_data_link': 'str',
+        'data_quality': 'str',
+        'dlf_task': 'str',
+        'publish_to_dlm': 'str',
+        'summary_status': 'str',
         'distribute': 'str',
         'distribute_column': 'str',
         'compression': 'str',
@@ -81,7 +81,7 @@ class AggregationLogicTableVO:
         'prod_version': 'str',
         'dev_version_name': 'str',
         'prod_version_name': 'str',
-        'env_type': 'EnvTypeEnum',
+        'env_type': 'str',
         'model_id': 'str',
         'model': 'WorkspaceVO'
     }
@@ -179,10 +179,10 @@ class AggregationLogicTableVO:
         :type description: str
         :param owner: 汇总表的资产责任人。
         :type owner: str
-        :param secret_type: 
-        :type secret_type: :class:`huaweicloudsdkdataartsstudio.v1.SecretTypeEnum`
-        :param apply_bg: 
-        :type apply_bg: :class:`huaweicloudsdkdataartsstudio.v1.ApplyBgEnum`
+        :param secret_type: 密级类型。 枚举值：   - PUBLIC: 公开   - SECRET: 秘密   - CONFIDENTIAL: 机密   - SUPER_SECRET: 绝密 
+        :type secret_type: str
+        :param apply_bg: 适用bg。
+        :type apply_bg: str
         :param create_by: 汇总表的创建人，只读，创建和更新时无需填写。
         :type create_by: str
         :param queue_name: dli数据连接执行sql所需的队列，数据连接类型为DLI时必须填写。
@@ -197,8 +197,8 @@ class AggregationLogicTableVO:
         :type schema: str
         :param dw_name: 数据连接名称，只读，创建和更新时无需填写。
         :type dw_name: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :param status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+        :type status: str
         :param tb_guid: 表发布后，创建的数据目录技术资产guid，只读，创建和更新时无需填写。
         :type tb_guid: str
         :param tb_logic_guid: 表发布后，创建的数据目录业务资产guid，只读，创建和更新时无需填写。
@@ -229,24 +229,24 @@ class AggregationLogicTableVO:
         :type time_period: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableAttributeVO`
         :param table_attributes: 汇总表属性信息，依据attribute_type判断类型。
         :type table_attributes: list[:class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableAttributeVO`]
-        :param physical_table: 
-        :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param dev_physical_table: 
-        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param technical_asset: 
-        :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param business_asset: 
-        :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param meta_data_link: 
-        :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param data_quality: 
-        :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param dlf_task: 
-        :type dlf_task: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param publish_to_dlm: 
-        :type publish_to_dlm: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
-        :param summary_status: 
-        :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :param physical_table: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type physical_table: str
+        :param dev_physical_table: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type dev_physical_table: str
+        :param technical_asset: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type technical_asset: str
+        :param business_asset: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type business_asset: str
+        :param meta_data_link: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type meta_data_link: str
+        :param data_quality: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type data_quality: str
+        :param dlf_task: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type dlf_task: str
+        :param publish_to_dlm: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type publish_to_dlm: str
+        :param summary_status: 同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+        :type summary_status: str
         :param distribute: DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
         :type distribute: str
         :param distribute_column: DISTRIBUTE BY HASH column.
@@ -295,8 +295,8 @@ class AggregationLogicTableVO:
         :type dev_version_name: str
         :param prod_version_name: 生产环境版本名称
         :type prod_version_name: str
-        :param env_type: 
-        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        :param env_type: 开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
+        :type env_type: str
         :param model_id: 所属模型ID，ID字符串。
         :type model_id: str
         :param model: 
@@ -688,8 +688,10 @@ class AggregationLogicTableVO:
     def secret_type(self):
         r"""Gets the secret_type of this AggregationLogicTableVO.
 
+        密级类型。 枚举值：   - PUBLIC: 公开   - SECRET: 秘密   - CONFIDENTIAL: 机密   - SUPER_SECRET: 绝密 
+
         :return: The secret_type of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SecretTypeEnum`
+        :rtype: str
         """
         return self._secret_type
 
@@ -697,8 +699,10 @@ class AggregationLogicTableVO:
     def secret_type(self, secret_type):
         r"""Sets the secret_type of this AggregationLogicTableVO.
 
+        密级类型。 枚举值：   - PUBLIC: 公开   - SECRET: 秘密   - CONFIDENTIAL: 机密   - SUPER_SECRET: 绝密 
+
         :param secret_type: The secret_type of this AggregationLogicTableVO.
-        :type secret_type: :class:`huaweicloudsdkdataartsstudio.v1.SecretTypeEnum`
+        :type secret_type: str
         """
         self._secret_type = secret_type
 
@@ -706,8 +710,10 @@ class AggregationLogicTableVO:
     def apply_bg(self):
         r"""Gets the apply_bg of this AggregationLogicTableVO.
 
+        适用bg。
+
         :return: The apply_bg of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApplyBgEnum`
+        :rtype: str
         """
         return self._apply_bg
 
@@ -715,8 +721,10 @@ class AggregationLogicTableVO:
     def apply_bg(self, apply_bg):
         r"""Sets the apply_bg of this AggregationLogicTableVO.
 
+        适用bg。
+
         :param apply_bg: The apply_bg of this AggregationLogicTableVO.
-        :type apply_bg: :class:`huaweicloudsdkdataartsstudio.v1.ApplyBgEnum`
+        :type apply_bg: str
         """
         self._apply_bg = apply_bg
 
@@ -878,8 +886,10 @@ class AggregationLogicTableVO:
     def status(self):
         r"""Gets the status of this AggregationLogicTableVO.
 
+        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+
         :return: The status of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :rtype: str
         """
         return self._status
 
@@ -887,8 +897,10 @@ class AggregationLogicTableVO:
     def status(self, status):
         r"""Sets the status of this AggregationLogicTableVO.
 
+        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+
         :param status: The status of this AggregationLogicTableVO.
-        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :type status: str
         """
         self._status = status
 
@@ -1214,8 +1226,10 @@ class AggregationLogicTableVO:
     def physical_table(self):
         r"""Gets the physical_table of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The physical_table of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._physical_table
 
@@ -1223,8 +1237,10 @@ class AggregationLogicTableVO:
     def physical_table(self, physical_table):
         r"""Sets the physical_table of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param physical_table: The physical_table of this AggregationLogicTableVO.
-        :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type physical_table: str
         """
         self._physical_table = physical_table
 
@@ -1232,8 +1248,10 @@ class AggregationLogicTableVO:
     def dev_physical_table(self):
         r"""Gets the dev_physical_table of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The dev_physical_table of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._dev_physical_table
 
@@ -1241,8 +1259,10 @@ class AggregationLogicTableVO:
     def dev_physical_table(self, dev_physical_table):
         r"""Sets the dev_physical_table of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param dev_physical_table: The dev_physical_table of this AggregationLogicTableVO.
-        :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type dev_physical_table: str
         """
         self._dev_physical_table = dev_physical_table
 
@@ -1250,8 +1270,10 @@ class AggregationLogicTableVO:
     def technical_asset(self):
         r"""Gets the technical_asset of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The technical_asset of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._technical_asset
 
@@ -1259,8 +1281,10 @@ class AggregationLogicTableVO:
     def technical_asset(self, technical_asset):
         r"""Sets the technical_asset of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param technical_asset: The technical_asset of this AggregationLogicTableVO.
-        :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type technical_asset: str
         """
         self._technical_asset = technical_asset
 
@@ -1268,8 +1292,10 @@ class AggregationLogicTableVO:
     def business_asset(self):
         r"""Gets the business_asset of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The business_asset of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._business_asset
 
@@ -1277,8 +1303,10 @@ class AggregationLogicTableVO:
     def business_asset(self, business_asset):
         r"""Sets the business_asset of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param business_asset: The business_asset of this AggregationLogicTableVO.
-        :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type business_asset: str
         """
         self._business_asset = business_asset
 
@@ -1286,8 +1314,10 @@ class AggregationLogicTableVO:
     def meta_data_link(self):
         r"""Gets the meta_data_link of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The meta_data_link of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._meta_data_link
 
@@ -1295,8 +1325,10 @@ class AggregationLogicTableVO:
     def meta_data_link(self, meta_data_link):
         r"""Sets the meta_data_link of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param meta_data_link: The meta_data_link of this AggregationLogicTableVO.
-        :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type meta_data_link: str
         """
         self._meta_data_link = meta_data_link
 
@@ -1304,8 +1336,10 @@ class AggregationLogicTableVO:
     def data_quality(self):
         r"""Gets the data_quality of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The data_quality of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._data_quality
 
@@ -1313,8 +1347,10 @@ class AggregationLogicTableVO:
     def data_quality(self, data_quality):
         r"""Sets the data_quality of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param data_quality: The data_quality of this AggregationLogicTableVO.
-        :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type data_quality: str
         """
         self._data_quality = data_quality
 
@@ -1322,8 +1358,10 @@ class AggregationLogicTableVO:
     def dlf_task(self):
         r"""Gets the dlf_task of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The dlf_task of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._dlf_task
 
@@ -1331,8 +1369,10 @@ class AggregationLogicTableVO:
     def dlf_task(self, dlf_task):
         r"""Sets the dlf_task of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param dlf_task: The dlf_task of this AggregationLogicTableVO.
-        :type dlf_task: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type dlf_task: str
         """
         self._dlf_task = dlf_task
 
@@ -1340,8 +1380,10 @@ class AggregationLogicTableVO:
     def publish_to_dlm(self):
         r"""Gets the publish_to_dlm of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The publish_to_dlm of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._publish_to_dlm
 
@@ -1349,8 +1391,10 @@ class AggregationLogicTableVO:
     def publish_to_dlm(self, publish_to_dlm):
         r"""Sets the publish_to_dlm of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param publish_to_dlm: The publish_to_dlm of this AggregationLogicTableVO.
-        :type publish_to_dlm: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type publish_to_dlm: str
         """
         self._publish_to_dlm = publish_to_dlm
 
@@ -1358,8 +1402,10 @@ class AggregationLogicTableVO:
     def summary_status(self):
         r"""Gets the summary_status of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :return: The summary_status of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :rtype: str
         """
         return self._summary_status
 
@@ -1367,8 +1413,10 @@ class AggregationLogicTableVO:
     def summary_status(self, summary_status):
         r"""Sets the summary_status of this AggregationLogicTableVO.
 
+        同步状态。 枚举值：   - NO_NEED: 未同步   - CREATE_SUCCESS: 创建成功   - CREATE_FAILED: 创建失败   - UPDATE_SUCCESS: 更新成功   - UPDATE_FAILED: 更新失败   - SUMMARY_SUCCESS: 整体成功   - SUMMARY_FAILED: 整体失败   - RUNNING: 整体运行   - OFFLINE: 已下线 
+
         :param summary_status: The summary_status of this AggregationLogicTableVO.
-        :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
+        :type summary_status: str
         """
         self._summary_status = summary_status
 
@@ -1904,8 +1952,10 @@ class AggregationLogicTableVO:
     def env_type(self):
         r"""Gets the env_type of this AggregationLogicTableVO.
 
+        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
+
         :return: The env_type of this AggregationLogicTableVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        :rtype: str
         """
         return self._env_type
 
@@ -1913,8 +1963,10 @@ class AggregationLogicTableVO:
     def env_type(self, env_type):
         r"""Sets the env_type of this AggregationLogicTableVO.
 
+        开发生产环境类型。 枚举值：   - INVALID_TYPE: 无效环境   - DEV_TYPE: 开发环境   - PROD_TYPE: 生产环境   - DEV_PROD_TYPE: 开发生产环境 
+
         :param env_type: The env_type of this AggregationLogicTableVO.
-        :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
+        :type env_type: str
         """
         self._env_type = env_type
 

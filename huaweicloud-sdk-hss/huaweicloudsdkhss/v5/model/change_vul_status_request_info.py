@@ -41,21 +41,21 @@ class ChangeVulStatusRequestInfo:
 
         The model defined in huaweicloud sdk
 
-        :param operate_type: 操作类型，包含如下几种： - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        :param operate_type: **参数解释**: 对漏洞进行的处置操作类型 **约束限制**: 不涉及 **取值范围**: - ignore：忽略 - not_ignore：取消忽略 - immediate_repair：修复 - manual_repair：人工修复 - verify：验证 - add_to_whitelist：加入白名单  **默认取值**: 不涉及 
         :type operate_type: str
-        :param remark: 备注
+        :param remark: **参数解释**: 本次处置操作的备注信息 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
         :type remark: str
-        :param select_type: 选择全部漏洞类型 - all_vul : 选择全部漏洞 - all_host : 选择全部主机漏洞
+        :param select_type: **参数解释**: 处置全部漏洞的类型 **约束限制**: 只有需要对全部漏洞进行处置时需要该参数 **取值范围**: - all_vul：按照指定漏洞类型处置全部漏洞 - all_host：处置全部主机的漏洞  **默认取值**: 不涉及 
         :type select_type: str
-        :param type: 漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
+        :param type: **参数解释**: 漏洞类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：漏洞类型-linux漏洞 - windows_vul：漏洞类型-windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：应急漏洞  **默认取值**: linux_vul 
         :type type: str
-        :param data_list: 漏洞列表
+        :param data_list: **参数解释**: 通过漏洞维度指定需要处置的漏洞信息 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值500 **默认取值**: 不涉及 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulOperateInfo`]
-        :param host_data_list: 主机维度漏洞列表
+        :param host_data_list: **参数解释**: 通过主机维度指定需要处置的漏洞信息 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值500 **默认取值**: 不涉及 
         :type host_data_list: list[:class:`huaweicloudsdkhss.v5.HostVulOperateInfo`]
-        :param backup_info_id: 本次漏洞处理的备份信息id，若不传该参数，则不进行备份
+        :param backup_info_id: **参数解释**: 本次漏洞处置对应的备份信息id，若不传该参数，则不进行备份 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type backup_info_id: str
-        :param custom_backup_hosts: 自定义备份主机使用的存储库及备份名称；不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称
+        :param custom_backup_hosts: **参数解释**: 自定义备份主机使用的存储库及备份名称列表。不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称 **约束限制**: 只有backup_info_id有值时该参数才会生效 **取值范围**: 最小值1，最大值50 **默认取值**: 不涉及 
         :type custom_backup_hosts: list[:class:`huaweicloudsdkhss.v5.ChangeVulStatusRequestInfoCustomBackupHosts`]
         """
         
@@ -91,7 +91,7 @@ class ChangeVulStatusRequestInfo:
     def operate_type(self):
         r"""Gets the operate_type of this ChangeVulStatusRequestInfo.
 
-        操作类型，包含如下几种： - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        **参数解释**: 对漏洞进行的处置操作类型 **约束限制**: 不涉及 **取值范围**: - ignore：忽略 - not_ignore：取消忽略 - immediate_repair：修复 - manual_repair：人工修复 - verify：验证 - add_to_whitelist：加入白名单  **默认取值**: 不涉及 
 
         :return: The operate_type of this ChangeVulStatusRequestInfo.
         :rtype: str
@@ -102,7 +102,7 @@ class ChangeVulStatusRequestInfo:
     def operate_type(self, operate_type):
         r"""Sets the operate_type of this ChangeVulStatusRequestInfo.
 
-        操作类型，包含如下几种： - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
+        **参数解释**: 对漏洞进行的处置操作类型 **约束限制**: 不涉及 **取值范围**: - ignore：忽略 - not_ignore：取消忽略 - immediate_repair：修复 - manual_repair：人工修复 - verify：验证 - add_to_whitelist：加入白名单  **默认取值**: 不涉及 
 
         :param operate_type: The operate_type of this ChangeVulStatusRequestInfo.
         :type operate_type: str
@@ -113,7 +113,7 @@ class ChangeVulStatusRequestInfo:
     def remark(self):
         r"""Gets the remark of this ChangeVulStatusRequestInfo.
 
-        备注
+        **参数解释**: 本次处置操作的备注信息 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
 
         :return: The remark of this ChangeVulStatusRequestInfo.
         :rtype: str
@@ -124,7 +124,7 @@ class ChangeVulStatusRequestInfo:
     def remark(self, remark):
         r"""Sets the remark of this ChangeVulStatusRequestInfo.
 
-        备注
+        **参数解释**: 本次处置操作的备注信息 **约束限制**: 不涉及 **取值范围**: 字符长度0-512位 **默认取值**: 不涉及 
 
         :param remark: The remark of this ChangeVulStatusRequestInfo.
         :type remark: str
@@ -135,7 +135,7 @@ class ChangeVulStatusRequestInfo:
     def select_type(self):
         r"""Gets the select_type of this ChangeVulStatusRequestInfo.
 
-        选择全部漏洞类型 - all_vul : 选择全部漏洞 - all_host : 选择全部主机漏洞
+        **参数解释**: 处置全部漏洞的类型 **约束限制**: 只有需要对全部漏洞进行处置时需要该参数 **取值范围**: - all_vul：按照指定漏洞类型处置全部漏洞 - all_host：处置全部主机的漏洞  **默认取值**: 不涉及 
 
         :return: The select_type of this ChangeVulStatusRequestInfo.
         :rtype: str
@@ -146,7 +146,7 @@ class ChangeVulStatusRequestInfo:
     def select_type(self, select_type):
         r"""Sets the select_type of this ChangeVulStatusRequestInfo.
 
-        选择全部漏洞类型 - all_vul : 选择全部漏洞 - all_host : 选择全部主机漏洞
+        **参数解释**: 处置全部漏洞的类型 **约束限制**: 只有需要对全部漏洞进行处置时需要该参数 **取值范围**: - all_vul：按照指定漏洞类型处置全部漏洞 - all_host：处置全部主机的漏洞  **默认取值**: 不涉及 
 
         :param select_type: The select_type of this ChangeVulStatusRequestInfo.
         :type select_type: str
@@ -157,7 +157,7 @@ class ChangeVulStatusRequestInfo:
     def type(self):
         r"""Gets the type of this ChangeVulStatusRequestInfo.
 
-        漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
+        **参数解释**: 漏洞类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：漏洞类型-linux漏洞 - windows_vul：漏洞类型-windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：应急漏洞  **默认取值**: linux_vul 
 
         :return: The type of this ChangeVulStatusRequestInfo.
         :rtype: str
@@ -168,7 +168,7 @@ class ChangeVulStatusRequestInfo:
     def type(self, type):
         r"""Sets the type of this ChangeVulStatusRequestInfo.
 
-        漏洞类型，默认为linux_vul，包括如下：   - linux_vul : 漏洞类型-linux漏洞   - windows_vul : 漏洞类型-windows漏洞   - web_cms : Web-CMS漏洞   - app_vul : 应用漏洞   - urgent_vul : 应急漏洞
+        **参数解释**: 漏洞类型 **约束限制**: 不涉及 **取值范围**: - linux_vul：漏洞类型-linux漏洞 - windows_vul：漏洞类型-windows漏洞 - web_cms：Web-CMS漏洞 - app_vul：应用漏洞 - urgent_vul：应急漏洞  **默认取值**: linux_vul 
 
         :param type: The type of this ChangeVulStatusRequestInfo.
         :type type: str
@@ -179,7 +179,7 @@ class ChangeVulStatusRequestInfo:
     def data_list(self):
         r"""Gets the data_list of this ChangeVulStatusRequestInfo.
 
-        漏洞列表
+        **参数解释**: 通过漏洞维度指定需要处置的漏洞信息 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值500 **默认取值**: 不涉及 
 
         :return: The data_list of this ChangeVulStatusRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.VulOperateInfo`]
@@ -190,7 +190,7 @@ class ChangeVulStatusRequestInfo:
     def data_list(self, data_list):
         r"""Sets the data_list of this ChangeVulStatusRequestInfo.
 
-        漏洞列表
+        **参数解释**: 通过漏洞维度指定需要处置的漏洞信息 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值500 **默认取值**: 不涉及 
 
         :param data_list: The data_list of this ChangeVulStatusRequestInfo.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.VulOperateInfo`]
@@ -201,7 +201,7 @@ class ChangeVulStatusRequestInfo:
     def host_data_list(self):
         r"""Gets the host_data_list of this ChangeVulStatusRequestInfo.
 
-        主机维度漏洞列表
+        **参数解释**: 通过主机维度指定需要处置的漏洞信息 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值500 **默认取值**: 不涉及 
 
         :return: The host_data_list of this ChangeVulStatusRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.HostVulOperateInfo`]
@@ -212,7 +212,7 @@ class ChangeVulStatusRequestInfo:
     def host_data_list(self, host_data_list):
         r"""Sets the host_data_list of this ChangeVulStatusRequestInfo.
 
-        主机维度漏洞列表
+        **参数解释**: 通过主机维度指定需要处置的漏洞信息 **约束限制**: 不涉及 **取值范围**: 最小值1，最大值500 **默认取值**: 不涉及 
 
         :param host_data_list: The host_data_list of this ChangeVulStatusRequestInfo.
         :type host_data_list: list[:class:`huaweicloudsdkhss.v5.HostVulOperateInfo`]
@@ -223,7 +223,7 @@ class ChangeVulStatusRequestInfo:
     def backup_info_id(self):
         r"""Gets the backup_info_id of this ChangeVulStatusRequestInfo.
 
-        本次漏洞处理的备份信息id，若不传该参数，则不进行备份
+        **参数解释**: 本次漏洞处置对应的备份信息id，若不传该参数，则不进行备份 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The backup_info_id of this ChangeVulStatusRequestInfo.
         :rtype: str
@@ -234,7 +234,7 @@ class ChangeVulStatusRequestInfo:
     def backup_info_id(self, backup_info_id):
         r"""Sets the backup_info_id of this ChangeVulStatusRequestInfo.
 
-        本次漏洞处理的备份信息id，若不传该参数，则不进行备份
+        **参数解释**: 本次漏洞处置对应的备份信息id，若不传该参数，则不进行备份 **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param backup_info_id: The backup_info_id of this ChangeVulStatusRequestInfo.
         :type backup_info_id: str
@@ -245,7 +245,7 @@ class ChangeVulStatusRequestInfo:
     def custom_backup_hosts(self):
         r"""Gets the custom_backup_hosts of this ChangeVulStatusRequestInfo.
 
-        自定义备份主机使用的存储库及备份名称；不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称
+        **参数解释**: 自定义备份主机使用的存储库及备份名称列表。不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称 **约束限制**: 只有backup_info_id有值时该参数才会生效 **取值范围**: 最小值1，最大值50 **默认取值**: 不涉及 
 
         :return: The custom_backup_hosts of this ChangeVulStatusRequestInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ChangeVulStatusRequestInfoCustomBackupHosts`]
@@ -256,7 +256,7 @@ class ChangeVulStatusRequestInfo:
     def custom_backup_hosts(self, custom_backup_hosts):
         r"""Sets the custom_backup_hosts of this ChangeVulStatusRequestInfo.
 
-        自定义备份主机使用的存储库及备份名称；不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称
+        **参数解释**: 自定义备份主机使用的存储库及备份名称列表。不在该列表中的主机备份时系统会自动选取剩余空间最大的存储库，并自动生成备份名称 **约束限制**: 只有backup_info_id有值时该参数才会生效 **取值范围**: 最小值1，最大值50 **默认取值**: 不涉及 
 
         :param custom_backup_hosts: The custom_backup_hosts of this ChangeVulStatusRequestInfo.
         :type custom_backup_hosts: list[:class:`huaweicloudsdkhss.v5.ChangeVulStatusRequestInfoCustomBackupHosts`]

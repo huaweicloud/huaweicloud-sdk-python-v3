@@ -33,31 +33,31 @@ class SecMasterAsyncClient(Client):
 
         return client_builder
 
-    def batch_search_metric_hits_async(self, request):
-        r"""批量查询指标结果
+    def create_adhoc_query_async(self, request):
+        r"""创建adhoc查询
 
-        批量查询指标结果
+        创建adhoc查询
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for BatchSearchMetricHits
-        :type request: :class:`huaweicloudsdksecmaster.v2.BatchSearchMetricHitsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.BatchSearchMetricHitsResponse`
+        :param request: Request instance for CreateAdhocQuery
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateAdhocQueryRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateAdhocQueryResponse`
         """
-        http_info = self._batch_search_metric_hits_http_info(request)
+        http_info = self._create_adhoc_query_http_info(request)
         return self._call_api(**http_info)
 
-    def batch_search_metric_hits_async_invoker(self, request):
-        http_info = self._batch_search_metric_hits_http_info(request)
+    def create_adhoc_query_async_invoker(self, request):
+        http_info = self._create_adhoc_query_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _batch_search_metric_hits_http_info(self, request):
+    def _create_adhoc_query_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/sa/metrics/hits",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/ad-hoc-queries",
             "request_type": request.__class__.__name__,
-            "response_type": "BatchSearchMetricHitsResponse"
+            "response_type": "CreateAdhocQueryResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -73,10 +73,6 @@ class SecMasterAsyncClient(Client):
             path_params['workspace_id'] = local_var_params['workspace_id']
 
         query_params = []
-        if 'timespan' in local_var_params:
-            query_params.append(('timespan', local_var_params['timespan']))
-        if 'cache' in local_var_params:
-            query_params.append(('cache', local_var_params['cache']))
 
         header_params = {}
 
@@ -106,363 +102,10 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def change_alert_async(self, request):
-        r"""更新告警
-
-        编辑告警，根据实际修改的属性更新，未修改的列不更新
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ChangeAlert
-        :type request: :class:`huaweicloudsdksecmaster.v2.ChangeAlertRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ChangeAlertResponse`
-        """
-        http_info = self._change_alert_http_info(request)
-        return self._call_api(**http_info)
-
-    def change_alert_async_invoker(self, request):
-        http_info = self._change_alert_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _change_alert_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/{alert_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ChangeAlertResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'alert_id' in local_var_params:
-            path_params['alert_id'] = local_var_params['alert_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def change_incident_async(self, request):
-        r"""更新事件
-
-        编辑事件，根据实际修改的属性更新，未修改的列不更新
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ChangeIncident
-        :type request: :class:`huaweicloudsdksecmaster.v2.ChangeIncidentRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ChangeIncidentResponse`
-        """
-        http_info = self._change_incident_http_info(request)
-        return self._call_api(**http_info)
-
-    def change_incident_async_invoker(self, request):
-        http_info = self._change_incident_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _change_incident_http_info(self, request):
-        http_info = {
-            "method": "PUT",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/{incident_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ChangeIncidentResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'incident_id' in local_var_params:
-            path_params['incident_id'] = local_var_params['incident_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def change_playbook_instance_async(self, request):
-        r"""操作剧本实例
-
-        操作剧本实例
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ChangePlaybookInstance
-        :type request: :class:`huaweicloudsdksecmaster.v2.ChangePlaybookInstanceRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ChangePlaybookInstanceResponse`
-        """
-        http_info = self._change_playbook_instance_http_info(request)
-        return self._call_api(**http_info)
-
-    def change_playbook_instance_async_invoker(self, request):
-        http_info = self._change_playbook_instance_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _change_playbook_instance_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}/operation",
-            "request_type": request.__class__.__name__,
-            "response_type": "ChangePlaybookInstanceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def copy_playbook_version_async(self, request):
-        r"""克隆剧本及版本
-
-        克隆剧本及版本
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CopyPlaybookVersion
-        :type request: :class:`huaweicloudsdksecmaster.v2.CopyPlaybookVersionRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CopyPlaybookVersionResponse`
-        """
-        http_info = self._copy_playbook_version_http_info(request)
-        return self._call_api(**http_info)
-
-    def copy_playbook_version_async_invoker(self, request):
-        http_info = self._copy_playbook_version_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _copy_playbook_version_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/clone",
-            "request_type": request.__class__.__name__,
-            "response_type": "CopyPlaybookVersionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_alert_async(self, request):
-        r"""创建告警
-
-        创建告警
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateAlert
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreateAlertRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateAlertResponse`
-        """
-        http_info = self._create_alert_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_alert_async_invoker(self, request):
-        http_info = self._create_alert_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_alert_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateAlertResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
     def create_alert_rule_async(self, request):
         r"""创建告警规则
 
-        Create alert rule
+        创建告警规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -481,7 +124,7 @@ class SecMasterAsyncClient(Client):
     def _create_alert_rule_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
             "request_type": request.__class__.__name__,
             "response_type": "CreateAlertRuleResponse"
             }
@@ -510,7 +153,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -528,244 +171,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def create_alert_rule_simulation_async(self, request):
-        r"""模拟告警规则
+    def create_analysis_script_async(self, request):
+        r"""创建分析脚本
 
-        Simulate alert rule
+        创建分析脚本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreateAlertRuleSimulation
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreateAlertRuleSimulationRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateAlertRuleSimulationResponse`
+        :param request: Request instance for CreateAnalysisScript
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateAnalysisScriptRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateAnalysisScriptResponse`
         """
-        http_info = self._create_alert_rule_simulation_http_info(request)
+        http_info = self._create_analysis_script_http_info(request)
         return self._call_api(**http_info)
 
-    def create_alert_rule_simulation_async_invoker(self, request):
-        http_info = self._create_alert_rule_simulation_http_info(request)
+    def create_analysis_script_async_invoker(self, request):
+        http_info = self._create_analysis_script_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_alert_rule_simulation_http_info(self, request):
+    def _create_analysis_script_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/simulation",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/analysis-scripts",
             "request_type": request.__class__.__name__,
-            "response_type": "CreateAlertRuleSimulationResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_batch_order_alerts_async(self, request):
-        r"""告警转事件
-
-        告警转事件
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateBatchOrderAlerts
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreateBatchOrderAlertsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateBatchOrderAlertsResponse`
-        """
-        http_info = self._create_batch_order_alerts_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_batch_order_alerts_async_invoker(self, request):
-        http_info = self._create_batch_order_alerts_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_batch_order_alerts_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/batch-order",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateBatchOrderAlertsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_dataobject_relations_async(self, request):
-        r"""关联Dataobject
-
-        关联Dataobject
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateDataobjectRelations
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreateDataobjectRelationsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateDataobjectRelationsResponse`
-        """
-        http_info = self._create_dataobject_relations_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_dataobject_relations_async_invoker(self, request):
-        http_info = self._create_dataobject_relations_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_dataobject_relations_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateDataobjectRelationsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'dataclass_type' in local_var_params:
-            path_params['dataclass_type'] = local_var_params['dataclass_type']
-        if 'data_object_id' in local_var_params:
-            path_params['data_object_id'] = local_var_params['data_object_id']
-        if 'related_dataclass_type' in local_var_params:
-            path_params['related_dataclass_type'] = local_var_params['related_dataclass_type']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def create_dataspace_async(self, request):
-        r"""创建数据空间
-
-        创建数据空间
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for CreateDataspace
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreateDataspaceRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateDataspaceResponse`
-        """
-        http_info = self._create_dataspace_http_info(request)
-        return self._call_api(**http_info)
-
-    def create_dataspace_async_invoker(self, request):
-        http_info = self._create_dataspace_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _create_dataspace_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/dataspaces",
-            "request_type": request.__class__.__name__,
-            "response_type": "CreateDataspaceResponse"
+            "response_type": "CreateAnalysisScriptResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -810,31 +240,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def create_incident_async(self, request):
-        r"""创建事件
+    def create_code_segment_async(self, request):
+        r"""创建代码片段
 
-        创建事件
+        创建代码片段
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreateIncident
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreateIncidentRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateIncidentResponse`
+        :param request: Request instance for CreateCodeSegment
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateCodeSegmentRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateCodeSegmentResponse`
         """
-        http_info = self._create_incident_http_info(request)
+        http_info = self._create_code_segment_http_info(request)
         return self._call_api(**http_info)
 
-    def create_incident_async_invoker(self, request):
-        http_info = self._create_incident_http_info(request)
+    def create_code_segment_async_invoker(self, request):
+        http_info = self._create_code_segment_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_incident_http_info(self, request):
+    def _create_code_segment_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/code-segments",
             "request_type": request.__class__.__name__,
-            "response_type": "CreateIncidentResponse"
+            "response_type": "CreateCodeSegmentResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -861,7 +291,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -879,31 +309,242 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def create_indicator_async(self, request):
-        r"""创建威胁情报
+    def create_customized_checkitem_async(self, request):
+        r"""新增自定义检查项
 
-        创建威胁情报
+        新增自定义检查项
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreateIndicator
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorResponse`
+        :param request: Request instance for CreateCustomizedCheckitem
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateCustomizedCheckitemRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateCustomizedCheckitemResponse`
         """
-        http_info = self._create_indicator_http_info(request)
+        http_info = self._create_customized_checkitem_http_info(request)
         return self._call_api(**http_info)
 
-    def create_indicator_async_invoker(self, request):
-        http_info = self._create_indicator_http_info(request)
+    def create_customized_checkitem_async_invoker(self, request):
+        http_info = self._create_customized_checkitem_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_indicator_http_info(self, request):
+    def _create_customized_checkitem_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/sa/baseline/checkitems",
             "request_type": request.__class__.__name__,
-            "response_type": "CreateIndicatorResponse"
+            "response_type": "CreateCustomizedCheckitemResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_customized_compliance_package_async(self, request):
+        r"""新增自定义遵从包
+
+        新增自定义遵从包
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateCustomizedCompliancePackage
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateCustomizedCompliancePackageRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateCustomizedCompliancePackageResponse`
+        """
+        http_info = self._create_customized_compliance_package_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_customized_compliance_package_async_invoker(self, request):
+        http_info = self._create_customized_compliance_package_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_customized_compliance_package_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/sa/baseline/compliance-packages",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomizedCompliancePackageResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_data_transformation_async(self, request):
+        r"""创建数据加工
+
+        创建数据加工
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateDataTransformation
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateDataTransformationRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateDataTransformationResponse`
+        """
+        http_info = self._create_data_transformation_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_data_transformation_async_invoker(self, request):
+        http_info = self._create_data_transformation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_data_transformation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/data-transformations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDataTransformationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_layout_field_async(self, request):
+        r"""创建布局字段
+
+        创建布局字段
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateLayoutField
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateLayoutFieldRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateLayoutFieldResponse`
+        """
+        http_info = self._create_layout_field_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_layout_field_async_invoker(self, request):
+        http_info = self._create_layout_field_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_layout_field_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/soc/layouts/fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLayoutFieldResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -949,9 +590,9 @@ class SecMasterAsyncClient(Client):
         return http_info
 
     def create_pipe_async(self, request):
-        r"""创建数据管道
+        r"""创建管道
 
-        创建数据管道
+        创建管道
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -970,7 +611,7 @@ class SecMasterAsyncClient(Client):
     def _create_pipe_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/pipes",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/pipes",
             "request_type": request.__class__.__name__,
             "response_type": "CreatePipeResponse"
             }
@@ -1017,31 +658,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def create_playbook_async(self, request):
-        r"""创建剧本
+    def create_retrieve_script_async(self, request):
+        r"""创建检索脚本
 
-        创建剧本
+        创建检索脚本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreatePlaybook
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookResponse`
+        :param request: Request instance for CreateRetrieveScript
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateRetrieveScriptRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateRetrieveScriptResponse`
         """
-        http_info = self._create_playbook_http_info(request)
+        http_info = self._create_retrieve_script_http_info(request)
         return self._call_api(**http_info)
 
-    def create_playbook_async_invoker(self, request):
-        http_info = self._create_playbook_http_info(request)
+    def create_retrieve_script_async_invoker(self, request):
+        http_info = self._create_retrieve_script_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_playbook_http_info(self, request):
+    def _create_retrieve_script_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/retrieve-scripts",
             "request_type": request.__class__.__name__,
-            "response_type": "CreatePlaybookResponse"
+            "response_type": "CreateRetrieveScriptResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1068,7 +709,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1086,31 +727,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def create_playbook_action_async(self, request):
-        r"""创建剧本动作
+    def create_table_async(self, request):
+        r"""创建表
 
-        创建剧本动作
+        创建表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreatePlaybookAction
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookActionRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookActionResponse`
+        :param request: Request instance for CreateTable
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateTableRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateTableResponse`
         """
-        http_info = self._create_playbook_action_http_info(request)
+        http_info = self._create_table_http_info(request)
         return self._call_api(**http_info)
 
-    def create_playbook_action_async_invoker(self, request):
-        http_info = self._create_playbook_action_http_info(request)
+    def create_table_async_invoker(self, request):
+        http_info = self._create_table_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_playbook_action_http_info(self, request):
+    def _create_table_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables",
             "request_type": request.__class__.__name__,
-            "response_type": "CreatePlaybookActionResponse"
+            "response_type": "CreateTableResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1124,8 +765,6 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
 
         query_params = []
 
@@ -1139,7 +778,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1157,31 +796,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def create_playbook_approve_async(self, request):
-        r"""审核剧本
+    def create_table_analysis_async(self, request):
+        r"""创建安全分析查询
 
-        审核剧本
+        创建安全分析查询
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreatePlaybookApprove
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookApproveRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookApproveResponse`
+        :param request: Request instance for CreateTableAnalysis
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateTableAnalysisRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateTableAnalysisResponse`
         """
-        http_info = self._create_playbook_approve_http_info(request)
+        http_info = self._create_table_analysis_http_info(request)
         return self._call_api(**http_info)
 
-    def create_playbook_approve_async_invoker(self, request):
-        http_info = self._create_playbook_approve_http_info(request)
+    def create_table_analysis_async_invoker(self, request):
+        http_info = self._create_table_analysis_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_playbook_approve_http_info(self, request):
+    def _create_table_analysis_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/approval",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}/analysis",
             "request_type": request.__class__.__name__,
-            "response_type": "CreatePlaybookApproveResponse"
+            "response_type": "CreateTableAnalysisResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1195,8 +834,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
 
         query_params = []
 
@@ -1210,7 +849,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1228,31 +867,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def create_playbook_rule_async(self, request):
-        r"""创建剧本规则
+    def delete_adhoc_query_async(self, request):
+        r"""关闭查询操作
 
-        创建剧本规则
+        关闭查询操作
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreatePlaybookRule
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookRuleRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookRuleResponse`
+        :param request: Request instance for DeleteAdhocQuery
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteAdhocQueryRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteAdhocQueryResponse`
         """
-        http_info = self._create_playbook_rule_http_info(request)
+        http_info = self._delete_adhoc_query_http_info(request)
         return self._call_api(**http_info)
 
-    def create_playbook_rule_async_invoker(self, request):
-        http_info = self._create_playbook_rule_http_info(request)
+    def delete_adhoc_query_async_invoker(self, request):
+        http_info = self._delete_adhoc_query_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_playbook_rule_http_info(self, request):
+    def _delete_adhoc_query_http_info(self, request):
         http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules",
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/ad-hoc-queries/{query_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "CreatePlaybookRuleResponse"
+            "response_type": "DeleteAdhocQueryResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1266,8 +905,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
+        if 'query_id' in local_var_params:
+            path_params['query_id'] = local_var_params['query_id']
 
         query_params = []
 
@@ -1276,12 +915,10 @@ class SecMasterAsyncClient(Client):
         form_params = {}
 
         body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1299,31 +936,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def create_playbook_version_async(self, request):
-        r"""创建剧本版本
+    def delete_alert_rule_async(self, request):
+        r"""删除告警规则
 
-        创建剧本版本
+        删除告警规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreatePlaybookVersion
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookVersionRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookVersionResponse`
+        :param request: Request instance for DeleteAlertRule
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRuleRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRuleResponse`
         """
-        http_info = self._create_playbook_version_http_info(request)
+        http_info = self._delete_alert_rule_http_info(request)
         return self._call_api(**http_info)
 
-    def create_playbook_version_async_invoker(self, request):
-        http_info = self._create_playbook_version_http_info(request)
+    def delete_alert_rule_async_invoker(self, request):
+        http_info = self._delete_alert_rule_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_playbook_version_http_info(self, request):
+    def _delete_alert_rule_http_info(self, request):
         http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/versions",
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{alert_rule_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "CreatePlaybookVersionResponse"
+            "response_type": "DeleteAlertRuleResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1337,8 +974,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'playbook_id' in local_var_params:
-            path_params['playbook_id'] = local_var_params['playbook_id']
+        if 'alert_rule_id' in local_var_params:
+            path_params['alert_rule_id'] = local_var_params['alert_rule_id']
 
         query_params = []
 
@@ -1347,12 +984,10 @@ class SecMasterAsyncClient(Client):
         form_params = {}
 
         body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1370,31 +1005,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def create_post_paid_order_async(self, request):
-        r"""安全云脑按需订购
+    def delete_analysis_script_async(self, request):
+        r"""删除分析脚本
 
-        开通安全云脑按需服务
+        删除分析脚本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreatePostPaidOrder
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreatePostPaidOrderRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePostPaidOrderResponse`
+        :param request: Request instance for DeleteAnalysisScript
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteAnalysisScriptRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteAnalysisScriptResponse`
         """
-        http_info = self._create_post_paid_order_http_info(request)
+        http_info = self._delete_analysis_script_http_info(request)
         return self._call_api(**http_info)
 
-    def create_post_paid_order_async_invoker(self, request):
-        http_info = self._create_post_paid_order_http_info(request)
+    def delete_analysis_script_async_invoker(self, request):
+        http_info = self._delete_analysis_script_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_post_paid_order_http_info(self, request):
+    def _delete_analysis_script_http_info(self, request):
         http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/subscriptions/orders",
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/analysis-scripts/{analysis_script_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "CreatePostPaidOrderResponse"
+            "response_type": "DeleteAnalysisScriptResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1406,6 +1041,146 @@ class SecMasterAsyncClient(Client):
         path_params = {}
         if 'project_id' in local_var_params:
             path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'analysis_script_id' in local_var_params:
+            path_params['analysis_script_id'] = local_var_params['analysis_script_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_code_segment_async(self, request):
+        r"""删除代码片段
+
+        删除代码片段
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteCodeSegment
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteCodeSegmentRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteCodeSegmentResponse`
+        """
+        http_info = self._delete_code_segment_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_code_segment_async_invoker(self, request):
+        http_info = self._delete_code_segment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_code_segment_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/code-segments/{code_segment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCodeSegmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'code_segment_id' in local_var_params:
+            path_params['code_segment_id'] = local_var_params['code_segment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_customized_checkitems_async(self, request):
+        r"""删除自定义检查项
+
+        删除自定义检查项
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteCustomizedCheckitems
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteCustomizedCheckitemsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteCustomizedCheckitemsResponse`
+        """
+        http_info = self._delete_customized_checkitems_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_customized_checkitems_async_invoker(self, request):
+        http_info = self._delete_customized_checkitems_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_customized_checkitems_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/sa/baseline/checkitems",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomizedCheckitemsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
 
         query_params = []
 
@@ -1439,31 +1214,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def create_workspace_async(self, request):
-        r"""新建工作空间
+    def delete_customized_compliance_packages_async(self, request):
+        r"""删除自定义遵从包
 
-        在使用安全云脑的基线检查、告警管理、安全分析、安全编排等功能前，需要创建工作空间，它可以将资源划分为各个不同的工作场景，避免资源冗余查找不便，影响日常使用。
+        删除自定义遵从包
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for CreateWorkspace
-        :type request: :class:`huaweicloudsdksecmaster.v2.CreateWorkspaceRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateWorkspaceResponse`
+        :param request: Request instance for DeleteCustomizedCompliancePackages
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteCustomizedCompliancePackagesRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteCustomizedCompliancePackagesResponse`
         """
-        http_info = self._create_workspace_http_info(request)
+        http_info = self._delete_customized_compliance_packages_http_info(request)
         return self._call_api(**http_info)
 
-    def create_workspace_async_invoker(self, request):
-        http_info = self._create_workspace_http_info(request)
+    def delete_customized_compliance_packages_async_invoker(self, request):
+        http_info = self._delete_customized_compliance_packages_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _create_workspace_http_info(self, request):
+    def _delete_customized_compliance_packages_http_info(self, request):
         http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces",
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/sa/baseline/compliance-packages",
             "request_type": request.__class__.__name__,
-            "response_type": "CreateWorkspaceResponse"
+            "response_type": "DeleteCustomizedCompliancePackagesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1475,10 +1250,14 @@ class SecMasterAsyncClient(Client):
         path_params = {}
         if 'project_id' in local_var_params:
             path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
 
         query_params = []
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -1506,31 +1285,100 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def delete_alert_async(self, request):
-        r"""删除告警
+    def delete_data_transformation_async(self, request):
+        r"""删除数据加工
 
-        删除告警
+        删除数据加工
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for DeleteAlert
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteAlertResponse`
+        :param request: Request instance for DeleteDataTransformation
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteDataTransformationRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteDataTransformationResponse`
         """
-        http_info = self._delete_alert_http_info(request)
+        http_info = self._delete_data_transformation_http_info(request)
         return self._call_api(**http_info)
 
-    def delete_alert_async_invoker(self, request):
-        http_info = self._delete_alert_http_info(request)
+    def delete_data_transformation_async_invoker(self, request):
+        http_info = self._delete_data_transformation_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _delete_alert_http_info(self, request):
+    def _delete_data_transformation_http_info(self, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/data-transformations/{data_transformation_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "DeleteAlertResponse"
+            "response_type": "DeleteDataTransformationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'data_transformation_id' in local_var_params:
+            path_params['data_transformation_id'] = local_var_params['data_transformation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_layout_field_async(self, request):
+        r"""批量删除布局字段
+
+        删除布局字段
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteLayoutField
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteLayoutFieldRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteLayoutFieldResponse`
+        """
+        http_info = self._delete_layout_field_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_layout_field_async_invoker(self, request):
+        http_info = self._delete_layout_field_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_layout_field_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/soc/layouts/fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLayoutFieldResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1575,31 +1423,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def delete_alert_rule_async(self, request):
-        r"""删除告警规则
+    def delete_pipe_async(self, request):
+        r"""删除管道
 
-        Delete alert rule
+        删除管道
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for DeleteAlertRule
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRuleRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRuleResponse`
+        :param request: Request instance for DeletePipe
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeletePipeRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeletePipeResponse`
         """
-        http_info = self._delete_alert_rule_http_info(request)
+        http_info = self._delete_pipe_http_info(request)
         return self._call_api(**http_info)
 
-    def delete_alert_rule_async_invoker(self, request):
-        http_info = self._delete_alert_rule_http_info(request)
+    def delete_pipe_async_invoker(self, request):
+        http_info = self._delete_pipe_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _delete_alert_rule_http_info(self, request):
+    def _delete_pipe_http_info(self, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/pipes/{pipe_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "DeleteAlertRuleResponse"
+            "response_type": "DeletePipeResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1613,6 +1461,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'pipe_id' in local_var_params:
+            path_params['pipe_id'] = local_var_params['pipe_id']
 
         query_params = []
 
@@ -1621,12 +1471,10 @@ class SecMasterAsyncClient(Client):
         form_params = {}
 
         body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1644,31 +1492,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def delete_dataobject_relations_async(self, request):
-        r"""取消关联Dataobject
+    def delete_retrieve_script_async(self, request):
+        r"""删除检索脚本
 
-        取消关联Dataobject
+        删除检索脚本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for DeleteDataobjectRelations
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteDataobjectRelationsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteDataobjectRelationsResponse`
+        :param request: Request instance for DeleteRetrieveScript
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteRetrieveScriptRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteRetrieveScriptResponse`
         """
-        http_info = self._delete_dataobject_relations_http_info(request)
+        http_info = self._delete_retrieve_script_http_info(request)
         return self._call_api(**http_info)
 
-    def delete_dataobject_relations_async_invoker(self, request):
-        http_info = self._delete_dataobject_relations_http_info(request)
+    def delete_retrieve_script_async_invoker(self, request):
+        http_info = self._delete_retrieve_script_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _delete_dataobject_relations_http_info(self, request):
+    def _delete_retrieve_script_http_info(self, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/retrieve-scripts/{retrieve_script_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "DeleteDataobjectRelationsResponse"
+            "response_type": "DeleteRetrieveScriptResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1682,12 +1530,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'dataclass_type' in local_var_params:
-            path_params['dataclass_type'] = local_var_params['dataclass_type']
-        if 'data_object_id' in local_var_params:
-            path_params['data_object_id'] = local_var_params['data_object_id']
-        if 'related_dataclass_type' in local_var_params:
-            path_params['related_dataclass_type'] = local_var_params['related_dataclass_type']
+        if 'retrieve_script_id' in local_var_params:
+            path_params['retrieve_script_id'] = local_var_params['retrieve_script_id']
 
         query_params = []
 
@@ -1696,12 +1540,10 @@ class SecMasterAsyncClient(Client):
         form_params = {}
 
         body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1719,31 +1561,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def delete_incident_async(self, request):
-        r"""删除事件
+    def delete_table_async(self, request):
+        r"""删除表
 
-        删除事件
+        删除表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for DeleteIncident
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteIncidentRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteIncidentResponse`
+        :param request: Request instance for DeleteTable
+        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteTableRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteTableResponse`
         """
-        http_info = self._delete_incident_http_info(request)
+        http_info = self._delete_table_http_info(request)
         return self._call_api(**http_info)
 
-    def delete_incident_async_invoker(self, request):
-        http_info = self._delete_incident_http_info(request)
+    def delete_table_async_invoker(self, request):
+        http_info = self._delete_table_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _delete_incident_http_info(self, request):
+    def _delete_table_http_info(self, request):
         http_info = {
             "method": "DELETE",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "DeleteIncidentResponse"
+            "response_type": "DeleteTableResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -1757,428 +1599,10 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
 
         query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_indicator_async(self, request):
-        r"""删除威胁情报
-
-        删除威胁情报
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteIndicator
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteIndicatorRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteIndicatorResponse`
-        """
-        http_info = self._delete_indicator_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_indicator_async_invoker(self, request):
-        http_info = self._delete_indicator_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_indicator_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteIndicatorResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_playbook_async(self, request):
-        r"""删除剧本
-
-        删除剧本
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeletePlaybook
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookResponse`
-        """
-        http_info = self._delete_playbook_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_playbook_async_invoker(self, request):
-        http_info = self._delete_playbook_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_playbook_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeletePlaybookResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'playbook_id' in local_var_params:
-            path_params['playbook_id'] = local_var_params['playbook_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_playbook_action_async(self, request):
-        r"""删除剧本动作
-
-        删除剧本动作
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeletePlaybookAction
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookActionRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookActionResponse`
-        """
-        http_info = self._delete_playbook_action_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_playbook_action_async_invoker(self, request):
-        http_info = self._delete_playbook_action_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_playbook_action_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions/{action_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeletePlaybookActionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-        if 'action_id' in local_var_params:
-            path_params['action_id'] = local_var_params['action_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_playbook_rule_async(self, request):
-        r"""删除剧本规则
-
-        删除剧本规则
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeletePlaybookRule
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookRuleRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookRuleResponse`
-        """
-        http_info = self._delete_playbook_rule_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_playbook_rule_async_invoker(self, request):
-        http_info = self._delete_playbook_rule_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_playbook_rule_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeletePlaybookRuleResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-        if 'rule_id' in local_var_params:
-            path_params['rule_id'] = local_var_params['rule_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_playbook_version_async(self, request):
-        r"""删除剧本版本
-
-        删除剧本版本
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeletePlaybookVersion
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookVersionRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookVersionResponse`
-        """
-        http_info = self._delete_playbook_version_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_playbook_version_async_invoker(self, request):
-        http_info = self._delete_playbook_version_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_playbook_version_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeletePlaybookVersionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def delete_workspace_async(self, request):
-        r"""删除工作空间
-
-        删除工作空间
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for DeleteWorkspace
-        :type request: :class:`huaweicloudsdksecmaster.v2.DeleteWorkspaceRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteWorkspaceResponse`
-        """
-        http_info = self._delete_workspace_http_info(request)
-        return self._call_api(**http_info)
-
-    def delete_workspace_async_invoker(self, request):
-        http_info = self._delete_workspace_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _delete_workspace_http_info(self, request):
-        http_info = {
-            "method": "DELETE",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "DeleteWorkspaceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-        if 'permanent_delete' in local_var_params:
-            query_params.append(('permanent_delete', local_var_params['permanent_delete']))
 
         header_params = {}
 
@@ -2209,7 +1633,7 @@ class SecMasterAsyncClient(Client):
     def disable_alert_rule_async(self, request):
         r"""停用告警规则
 
-        Disable alert rule
+        停用告警规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2228,7 +1652,7 @@ class SecMasterAsyncClient(Client):
     def _disable_alert_rule_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/disable",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{alert_rule_id}/disable",
             "request_type": request.__class__.__name__,
             "response_type": "DisableAlertRuleResponse"
             }
@@ -2244,6 +1668,77 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'alert_rule_id' in local_var_params:
+            path_params['alert_rule_id'] = local_var_params['alert_rule_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def disable_data_consumption_async(self, request):
+        r"""关闭实时消费
+
+        关闭实时消费
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DisableDataConsumption
+        :type request: :class:`huaweicloudsdksecmaster.v2.DisableDataConsumptionRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DisableDataConsumptionResponse`
+        """
+        http_info = self._disable_data_consumption_http_info(request)
+        return self._call_api(**http_info)
+
+    def disable_data_consumption_async_invoker(self, request):
+        http_info = self._disable_data_consumption_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disable_data_consumption_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}/consumption",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableDataConsumptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
 
         query_params = []
 
@@ -2257,7 +1752,76 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def disable_data_transformation_async(self, request):
+        r"""停用数据加工
+
+        停用数据加工
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DisableDataTransformation
+        :type request: :class:`huaweicloudsdksecmaster.v2.DisableDataTransformationRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.DisableDataTransformationResponse`
+        """
+        http_info = self._disable_data_transformation_http_info(request)
+        return self._call_api(**http_info)
+
+    def disable_data_transformation_async_invoker(self, request):
+        http_info = self._disable_data_transformation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disable_data_transformation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/data-transformations/{data_transformation_id}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableDataTransformationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'data_transformation_id' in local_var_params:
+            path_params['data_transformation_id'] = local_var_params['data_transformation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2278,7 +1842,7 @@ class SecMasterAsyncClient(Client):
     def enable_alert_rule_async(self, request):
         r"""启用告警规则
 
-        Enable alert rule
+        启用告警规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2297,7 +1861,7 @@ class SecMasterAsyncClient(Client):
     def _enable_alert_rule_http_info(self, request):
         http_info = {
             "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/enable",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{alert_rule_id}/enable",
             "request_type": request.__class__.__name__,
             "response_type": "EnableAlertRuleResponse"
             }
@@ -2313,6 +1877,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'alert_rule_id' in local_var_params:
+            path_params['alert_rule_id'] = local_var_params['alert_rule_id']
 
         query_params = []
 
@@ -2321,12 +1887,148 @@ class SecMasterAsyncClient(Client):
         form_params = {}
 
         body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_data_consumption_async(self, request):
+        r"""开启实时消费
+
+        开启实时消费
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for EnableDataConsumption
+        :type request: :class:`huaweicloudsdksecmaster.v2.EnableDataConsumptionRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.EnableDataConsumptionResponse`
+        """
+        http_info = self._enable_data_consumption_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_data_consumption_async_invoker(self, request):
+        http_info = self._enable_data_consumption_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_data_consumption_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}/consumption",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableDataConsumptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def enable_data_transformation_async(self, request):
+        r"""启用数据加工
+
+        启用数据加工
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for EnableDataTransformation
+        :type request: :class:`huaweicloudsdksecmaster.v2.EnableDataTransformationRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.EnableDataTransformationResponse`
+        """
+        http_info = self._enable_data_transformation_http_info(request)
+        return self._call_api(**http_info)
+
+    def enable_data_transformation_async_invoker(self, request):
+        http_info = self._enable_data_transformation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_data_transformation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/data-transformations/{data_transformation_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableDataTransformationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'data_transformation_id' in local_var_params:
+            path_params['data_transformation_id'] = local_var_params['data_transformation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2347,7 +2049,7 @@ class SecMasterAsyncClient(Client):
     def list_alert_rule_metrics_async(self, request):
         r"""告警规则总览
 
-        List alert rule metrics
+        告警规则总览
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2366,7 +2068,7 @@ class SecMasterAsyncClient(Client):
     def _list_alert_rule_metrics_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/metrics",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules/metrics",
             "request_type": request.__class__.__name__,
             "response_type": "ListAlertRuleMetricsResponse"
             }
@@ -2393,7 +2095,74 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_alert_rule_template_metrics_async(self, request):
+        r"""列出告警规则模板总览
+
+        列出告警规则模板总览
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListAlertRuleTemplateMetrics
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListAlertRuleTemplateMetricsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListAlertRuleTemplateMetricsResponse`
+        """
+        http_info = self._list_alert_rule_template_metrics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_alert_rule_template_metrics_async_invoker(self, request):
+        http_info = self._list_alert_rule_template_metrics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alert_rule_template_metrics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertRuleTemplateMetricsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2414,7 +2183,7 @@ class SecMasterAsyncClient(Client):
     def list_alert_rule_templates_async(self, request):
         r"""列出告警规则模板
 
-        List alert rule templates
+        列出告警规则模板
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2433,7 +2202,7 @@ class SecMasterAsyncClient(Client):
     def _list_alert_rule_templates_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates",
             "request_type": request.__class__.__name__,
             "response_type": "ListAlertRuleTemplatesResponse"
             }
@@ -2451,6 +2220,12 @@ class SecMasterAsyncClient(Client):
             path_params['workspace_id'] = local_var_params['workspace_id']
 
         query_params = []
+        if 'template_name' in local_var_params:
+            query_params.append(('template_name', local_var_params['template_name']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'severity' in local_var_params:
+            query_params.append(('severity', local_var_params['severity']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -2459,9 +2234,6 @@ class SecMasterAsyncClient(Client):
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
-        if 'severity' in local_var_params:
-            query_params.append(('severity', local_var_params['severity']))
-            collection_formats['severity'] = 'csv'
 
         header_params = {}
 
@@ -2471,7 +2243,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2492,7 +2264,7 @@ class SecMasterAsyncClient(Client):
     def list_alert_rules_async(self, request):
         r"""列出告警规则
 
-        List alert rules
+        列出告警规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2511,7 +2283,7 @@ class SecMasterAsyncClient(Client):
     def _list_alert_rules_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
             "request_type": request.__class__.__name__,
             "response_type": "ListAlertRulesResponse"
             }
@@ -2537,18 +2309,12 @@ class SecMasterAsyncClient(Client):
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
-        if 'pipe_id' in local_var_params:
-            query_params.append(('pipe_id', local_var_params['pipe_id']))
-        if 'rule_name' in local_var_params:
-            query_params.append(('rule_name', local_var_params['rule_name']))
-        if 'rule_id' in local_var_params:
-            query_params.append(('rule_id', local_var_params['rule_id']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-            collection_formats['status'] = 'csv'
-        if 'severity' in local_var_params:
-            query_params.append(('severity', local_var_params['severity']))
-            collection_formats['severity'] = 'csv'
+        if 'output_table_id' in local_var_params:
+            query_params.append(('output_table_id', local_var_params['output_table_id']))
+        if 'alert_rule_name' in local_var_params:
+            query_params.append(('alert_rule_name', local_var_params['alert_rule_name']))
+        if 'alert_rule_id' in local_var_params:
+            query_params.append(('alert_rule_id', local_var_params['alert_rule_id']))
 
         header_params = {}
 
@@ -2558,7 +2324,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2576,617 +2342,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def list_alerts_async(self, request):
-        r"""搜索告警列表
+    def list_analysis_scripts_async(self, request):
+        r"""列出分析脚本
 
-        搜索告警列表
+        列出分析脚本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListAlerts
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListAlertsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListAlertsResponse`
+        :param request: Request instance for ListAnalysisScripts
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListAnalysisScriptsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListAnalysisScriptsResponse`
         """
-        http_info = self._list_alerts_http_info(request)
+        http_info = self._list_analysis_scripts_http_info(request)
         return self._call_api(**http_info)
 
-    def list_alerts_async_invoker(self, request):
-        http_info = self._list_alerts_http_info(request)
+    def list_analysis_scripts_async_invoker(self, request):
+        http_info = self._list_analysis_scripts_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_alerts_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/search",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListAlertsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_dataclass_async(self, request):
-        r"""查询数据类列表
-
-        查询数据类列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDataclass
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListDataclassRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListDataclassResponse`
-        """
-        http_info = self._list_dataclass_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_dataclass_async_invoker(self, request):
-        http_info = self._list_dataclass_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_dataclass_http_info(self, request):
+    def _list_analysis_scripts_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/dataclasses",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/analysis-scripts",
             "request_type": request.__class__.__name__,
-            "response_type": "ListDataclassResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'business_code' in local_var_params:
-            query_params.append(('business_code', local_var_params['business_code']))
-        if 'description' in local_var_params:
-            query_params.append(('description', local_var_params['description']))
-        if 'is_built_in' in local_var_params:
-            query_params.append(('is_built_in', local_var_params['is_built_in']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_dataclass_fields_async(self, request):
-        r"""查询字段列表
-
-        查询字段列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDataclassFields
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListDataclassFieldsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListDataclassFieldsResponse`
-        """
-        http_info = self._list_dataclass_fields_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_dataclass_fields_async_invoker(self, request):
-        http_info = self._list_dataclass_fields_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_dataclass_fields_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/dataclasses/{dataclass_id}/fields",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDataclassFieldsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'dataclass_id' in local_var_params:
-            path_params['dataclass_id'] = local_var_params['dataclass_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'is_built_in' in local_var_params:
-            query_params.append(('is_built_in', local_var_params['is_built_in']))
-        if 'field_category' in local_var_params:
-            query_params.append(('field_category', local_var_params['field_category']))
-        if 'mapping' in local_var_params:
-            query_params.append(('mapping', local_var_params['mapping']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_dataobject_relations_async(self, request):
-        r"""查询关联Dataobject列表
-
-        查询关联Dataobject列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListDataobjectRelations
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListDataobjectRelationsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListDataobjectRelationsResponse`
-        """
-        http_info = self._list_dataobject_relations_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_dataobject_relations_async_invoker(self, request):
-        http_info = self._list_dataobject_relations_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_dataobject_relations_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}/search",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListDataobjectRelationsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'dataclass_type' in local_var_params:
-            path_params['dataclass_type'] = local_var_params['dataclass_type']
-        if 'data_object_id' in local_var_params:
-            path_params['data_object_id'] = local_var_params['data_object_id']
-        if 'related_dataclass_type' in local_var_params:
-            path_params['related_dataclass_type'] = local_var_params['related_dataclass_type']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_incidents_async(self, request):
-        r"""搜索事件列表
-
-        搜索事件列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListIncidents
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListIncidentsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListIncidentsResponse`
-        """
-        http_info = self._list_incidents_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_incidents_async_invoker(self, request):
-        http_info = self._list_incidents_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_incidents_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/search",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListIncidentsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_indicators_async(self, request):
-        r"""查询威胁情报列表
-
-        查询威胁情报列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListIndicators
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListIndicatorsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListIndicatorsResponse`
-        """
-        http_info = self._list_indicators_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_indicators_async_invoker(self, request):
-        http_info = self._list_indicators_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_indicators_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/search",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListIndicatorsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if 'body' in local_var_params:
-            body = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_playbook_actions_async(self, request):
-        r"""查询剧本动作
-
-        查询剧本动作列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPlaybookActions
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybookActionsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybookActionsResponse`
-        """
-        http_info = self._list_playbook_actions_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_playbook_actions_async_invoker(self, request):
-        http_info = self._list_playbook_actions_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_playbook_actions_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListPlaybookActionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_playbook_approves_async(self, request):
-        r"""查询剧本审核结果
-
-        查询剧本审核结果
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPlaybookApproves
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybookApprovesRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybookApprovesResponse`
-        """
-        http_info = self._list_playbook_approves_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_playbook_approves_async_invoker(self, request):
-        http_info = self._list_playbook_approves_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_playbook_approves_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/approval",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListPlaybookApprovesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-        if 'resource_id' in local_var_params:
-            query_params.append(('resource_id', local_var_params['resource_id']))
-        if 'approve_type' in local_var_params:
-            query_params.append(('approve_type', local_var_params['approve_type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_playbook_audit_logs_async(self, request):
-        r"""查询剧本实例审计日志
-
-        查询剧本实例审计日志
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPlaybookAuditLogs
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybookAuditLogsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybookAuditLogsResponse`
-        """
-        http_info = self._list_playbook_audit_logs_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_playbook_audit_logs_async_invoker(self, request):
-        http_info = self._list_playbook_audit_logs_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_playbook_audit_logs_http_info(self, request):
-        http_info = {
-            "method": "POST",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/auditlogs",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListPlaybookAuditLogsResponse"
+            "response_type": "ListAnalysisScriptsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3216,12 +2396,610 @@ class SecMasterAsyncClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_code_segments_async(self, request):
+        r"""列出代码片段
+
+        列出代码片段
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListCodeSegments
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListCodeSegmentsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListCodeSegmentsResponse`
+        """
+        http_info = self._list_code_segments_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_code_segments_async_invoker(self, request):
+        http_info = self._list_code_segments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_code_segments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/code-segments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCodeSegmentsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'code_segment_id' in local_var_params:
+            query_params.append(('code_segment_id', local_var_params['code_segment_id']))
+        if 'code_segment_name' in local_var_params:
+            query_params.append(('code_segment_name', local_var_params['code_segment_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_data_transformation_metrics_async(self, request):
+        r"""数据加工总览
+
+        数据加工总览
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDataTransformationMetrics
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListDataTransformationMetricsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListDataTransformationMetricsResponse`
+        """
+        http_info = self._list_data_transformation_metrics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_data_transformation_metrics_async_invoker(self, request):
+        http_info = self._list_data_transformation_metrics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_data_transformation_metrics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/data-transformations/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataTransformationMetricsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_data_transformations_async(self, request):
+        r"""列出数据加工
+
+        列出数据加工
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDataTransformations
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListDataTransformationsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListDataTransformationsResponse`
+        """
+        http_info = self._list_data_transformations_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_data_transformations_async_invoker(self, request):
+        http_info = self._list_data_transformations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_data_transformations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/data-transformations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataTransformationsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'output_table_id' in local_var_params:
+            query_params.append(('output_table_id', local_var_params['output_table_id']))
+        if 'data_transformation_name' in local_var_params:
+            query_params.append(('data_transformation_name', local_var_params['data_transformation_name']))
+        if 'data_transformation_id' in local_var_params:
+            query_params.append(('data_transformation_id', local_var_params['data_transformation_id']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_directories_async(self, request):
+        r"""列出目录分组
+
+        列出目录分组
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListDirectories
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListDirectoriesRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListDirectoriesResponse`
+        """
+        http_info = self._list_directories_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_directories_async_invoker(self, request):
+        http_info = self._list_directories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_directories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/directories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDirectoriesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_layout_field_all_async(self, request):
+        r"""全部布局字段
+
+        查询布局字段列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListLayoutFieldAll
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListLayoutFieldAllRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListLayoutFieldAllResponse`
+        """
+        http_info = self._list_layout_field_all_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_layout_field_all_async_invoker(self, request):
+        http_info = self._list_layout_field_all_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_layout_field_all_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/soc/layouts/fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLayoutFieldAllResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'is_built_in' in local_var_params:
+            query_params.append(('is_built_in', local_var_params['is_built_in']))
+        if 'business_code' in local_var_params:
+            query_params.append(('business_code', local_var_params['business_code']))
+        if 'layout_id' in local_var_params:
+            query_params.append(('layout_id', local_var_params['layout_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = ["X-request-id", ]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_pipes_async(self, request):
+        r"""获取管道列表
+
+        获取管道列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListPipes
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListPipesRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListPipesResponse`
+        """
+        http_info = self._list_pipes_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_pipes_async_invoker(self, request):
+        http_info = self._list_pipes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_pipes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/pipes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPipesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'pipe_name_in_query' in local_var_params:
+            query_params.append(('pipe_name_in_query', local_var_params['pipe_name_in_query']))
+        if 'pipe_id_in_query' in local_var_params:
+            query_params.append(('pipe_id_in_query', local_var_params['pipe_id_in_query']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_retrieve_scripts_async(self, request):
+        r"""列出检索脚本
+
+        列出检索脚本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListRetrieveScripts
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListRetrieveScriptsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListRetrieveScriptsResponse`
+        """
+        http_info = self._list_retrieve_scripts_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_retrieve_scripts_async_invoker(self, request):
+        http_info = self._list_retrieve_scripts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_retrieve_scripts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/retrieve-scripts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRetrieveScriptsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+        if 'table_id' in local_var_params:
+            query_params.append(('table_id', local_var_params['table_id']))
+        if 'script_name' in local_var_params:
+            query_params.append(('script_name', local_var_params['script_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_table_histograms_async(self, request):
+        r"""检索表直方图
+
+        检索表直方图
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTableHistograms
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListTableHistogramsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListTableHistogramsResponse`
+        """
+        http_info = self._list_table_histograms_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_table_histograms_async_invoker(self, request):
+        http_info = self._list_table_histograms_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_table_histograms_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}/histograms",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTableHistogramsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -3239,31 +3017,102 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def list_playbook_instances_async(self, request):
-        r"""查询剧本实例列表
+    def list_table_logs_async(self, request):
+        r"""检索表日志
 
-        查询剧本实例列表
+        检索表日志
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ListPlaybookInstances
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybookInstancesRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybookInstancesResponse`
+        :param request: Request instance for ListTableLogs
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListTableLogsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListTableLogsResponse`
         """
-        http_info = self._list_playbook_instances_http_info(request)
+        http_info = self._list_table_logs_http_info(request)
         return self._call_api(**http_info)
 
-    def list_playbook_instances_async_invoker(self, request):
-        http_info = self._list_playbook_instances_http_info(request)
+    def list_table_logs_async_invoker(self, request):
+        http_info = self._list_table_logs_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _list_playbook_instances_http_info(self, request):
+    def _list_table_logs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTableLogsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_tables_async(self, request):
+        r"""获取表列表
+
+        获取表列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListTables
+        :type request: :class:`huaweicloudsdksecmaster.v2.ListTablesRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ListTablesResponse`
+        """
+        http_info = self._list_tables_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_tables_async_invoker(self, request):
+        http_info = self._list_tables_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tables_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables",
             "request_type": request.__class__.__name__,
-            "response_type": "ListPlaybookInstancesResponse"
+            "response_type": "ListTablesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3279,366 +3128,24 @@ class SecMasterAsyncClient(Client):
             path_params['workspace_id'] = local_var_params['workspace_id']
 
         query_params = []
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'playbook_name' in local_var_params:
-            query_params.append(('playbook_name', local_var_params['playbook_name']))
-        if 'dataclass_name' in local_var_params:
-            query_params.append(('dataclass_name', local_var_params['dataclass_name']))
-        if 'dataobject_name' in local_var_params:
-            query_params.append(('dataobject_name', local_var_params['dataobject_name']))
-        if 'trigger_type' in local_var_params:
-            query_params.append(('trigger_type', local_var_params['trigger_type']))
-        if 'from_date' in local_var_params:
-            query_params.append(('from_date', local_var_params['from_date']))
-        if 'to_date' in local_var_params:
-            query_params.append(('to_date', local_var_params['to_date']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_playbook_versions_async(self, request):
-        r"""查询剧本版本列表
-
-        查询剧本版本列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPlaybookVersions
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybookVersionsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybookVersionsResponse`
-        """
-        http_info = self._list_playbook_versions_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_playbook_versions_async_invoker(self, request):
-        http_info = self._list_playbook_versions_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_playbook_versions_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/versions",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListPlaybookVersionsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'playbook_id' in local_var_params:
-            path_params['playbook_id'] = local_var_params['playbook_id']
-
-        query_params = []
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'enabled' in local_var_params:
-            query_params.append(('enabled', local_var_params['enabled']))
-        if 'version_type' in local_var_params:
-            query_params.append(('version_type', local_var_params['version_type']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'table_id' in local_var_params:
+            query_params.append(('table_id', local_var_params['table_id']))
+        if 'table_alias' in local_var_params:
+            query_params.append(('table_alias', local_var_params['table_alias']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_playbooks_async(self, request):
-        r"""查询剧本列表
-
-        查询剧本列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListPlaybooks
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybooksRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybooksResponse`
-        """
-        http_info = self._list_playbooks_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_playbooks_async_invoker(self, request):
-        http_info = self._list_playbooks_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_playbooks_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListPlaybooksResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-        if 'search_txt' in local_var_params:
-            query_params.append(('search_txt', local_var_params['search_txt']))
-        if 'enabled' in local_var_params:
-            query_params.append(('enabled', local_var_params['enabled']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'description' in local_var_params:
-            query_params.append(('description', local_var_params['description']))
-        if 'dataclass_name' in local_var_params:
-            query_params.append(('dataclass_name', local_var_params['dataclass_name']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_workflows_async(self, request):
-        r"""查询流程列表
-
-        查询流程列表
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListWorkflows
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListWorkflowsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListWorkflowsResponse`
-        """
-        http_info = self._list_workflows_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_workflows_async_invoker(self, request):
-        http_info = self._list_workflows_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_workflows_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/workflows",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListWorkflowsResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'order' in local_var_params:
-            query_params.append(('order', local_var_params['order']))
-        if 'sortby' in local_var_params:
-            query_params.append(('sortby', local_var_params['sortby']))
-        if 'enabled' in local_var_params:
-            query_params.append(('enabled', local_var_params['enabled']))
-        if 'last_version' in local_var_params:
-            query_params.append(('last_version', local_var_params['last_version']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'description' in local_var_params:
-            query_params.append(('description', local_var_params['description']))
-        if 'dataclass_id' in local_var_params:
-            query_params.append(('dataclass_id', local_var_params['dataclass_id']))
-        if 'dataclass_name' in local_var_params:
-            query_params.append(('dataclass_name', local_var_params['dataclass_name']))
-        if 'aop_type' in local_var_params:
-            query_params.append(('aop_type', local_var_params['aop_type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def list_workspaces_async(self, request):
-        r"""查询工作空间列表
-
-        可通过工作空间名称、工作空间描述、创建时间等条件对租户的工作空间进行筛选。
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ListWorkspaces
-        :type request: :class:`huaweicloudsdksecmaster.v2.ListWorkspacesRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ListWorkspacesResponse`
-        """
-        http_info = self._list_workspaces_http_info(request)
-        return self._call_api(**http_info)
-
-    def list_workspaces_async_invoker(self, request):
-        http_info = self._list_workspaces_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _list_workspaces_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces",
-            "request_type": request.__class__.__name__,
-            "response_type": "ListWorkspacesResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-
-        query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'region_id' in local_var_params:
-            query_params.append(('region_id', local_var_params['region_id']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'description' in local_var_params:
-            query_params.append(('description', local_var_params['description']))
-        if 'view_bind_id' in local_var_params:
-            query_params.append(('view_bind_id', local_var_params['view_bind_id']))
-        if 'view_bind_name' in local_var_params:
-            query_params.append(('view_bind_name', local_var_params['view_bind_name']))
-        if 'create_time_start' in local_var_params:
-            query_params.append(('create_time_start', local_var_params['create_time_start']))
-        if 'create_time_end' in local_var_params:
-            query_params.append(('create_time_end', local_var_params['create_time_end']))
-        if 'is_view' in local_var_params:
-            query_params.append(('is_view', local_var_params['is_view']))
-        if 'ids' in local_var_params:
-            query_params.append(('ids', local_var_params['ids']))
-        if 'normal_project_id' in local_var_params:
-            query_params.append(('normal_project_id', local_var_params['normal_project_id']))
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'sort_key' in local_var_params:
+            query_params.append(('sort_key', local_var_params['sort_key']))
+        if 'sort_dir' in local_var_params:
+            query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'exists' in local_var_params:
+            query_params.append(('exists', local_var_params['exists']))
 
         header_params = {}
 
@@ -3737,31 +3244,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def show_alert_async(self, request):
-        r"""获取告警详情
+    def search_checkitems_async(self, request):
+        r"""查询检查项列表
 
-        获取告警详情
+        查询检查项列表
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowAlert
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowAlertRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertResponse`
+        :param request: Request instance for SearchCheckitems
+        :type request: :class:`huaweicloudsdksecmaster.v2.SearchCheckitemsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.SearchCheckitemsResponse`
         """
-        http_info = self._show_alert_http_info(request)
+        http_info = self._search_checkitems_http_info(request)
         return self._call_api(**http_info)
 
-    def show_alert_async_invoker(self, request):
-        http_info = self._show_alert_http_info(request)
+    def search_checkitems_async_invoker(self, request):
+        http_info = self._search_checkitems_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_alert_http_info(self, request):
+    def _search_checkitems_http_info(self, request):
         http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/{alert_id}",
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/sa/baseline/checkitems/search",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowAlertResponse"
+            "response_type": "SearchCheckitemsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3775,10 +3282,154 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'alert_id' in local_var_params:
-            path_params['alert_id'] = local_var_params['alert_id']
 
         query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def search_compliance_packages_async(self, request):
+        r"""查询遵从包列表
+
+        查询遵从包列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for SearchCompliancePackages
+        :type request: :class:`huaweicloudsdksecmaster.v2.SearchCompliancePackagesRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.SearchCompliancePackagesResponse`
+        """
+        http_info = self._search_compliance_packages_http_info(request)
+        return self._call_api(**http_info)
+
+    def search_compliance_packages_async_invoker(self, request):
+        http_info = self._search_compliance_packages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_compliance_packages_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/sa/baseline/compliance-packages/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCompliancePackagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_adhoc_result_async(self, request):
+        r"""获取adhoc查询结果
+
+        获取adhoc查询结果
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAdhocResult
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowAdhocResultRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAdhocResultResponse`
+        """
+        http_info = self._show_adhoc_result_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_adhoc_result_async_invoker(self, request):
+        http_info = self._show_adhoc_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_adhoc_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/ad-hoc-queries/{query_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAdhocResultResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'query_id' in local_var_params:
+            path_params['query_id'] = local_var_params['query_id']
+
+        query_params = []
+        if 'batch' in local_var_params:
+            query_params.append(('batch', local_var_params['batch']))
 
         header_params = {}
 
@@ -3788,7 +3439,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -3809,7 +3460,7 @@ class SecMasterAsyncClient(Client):
     def show_alert_rule_async(self, request):
         r"""查看告警规则
 
-        查看告警规则 Get alert rule
+        查看告警规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3828,7 +3479,7 @@ class SecMasterAsyncClient(Client):
     def _show_alert_rule_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{rule_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{alert_rule_id}",
             "request_type": request.__class__.__name__,
             "response_type": "ShowAlertRuleResponse"
             }
@@ -3844,146 +3495,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'rule_id' in local_var_params:
-            path_params['rule_id'] = local_var_params['rule_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_alert_rule_template_async(self, request):
-        r"""查看告警规则模板
-
-        List alert rule templates
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowAlertRuleTemplate
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowAlertRuleTemplateRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertRuleTemplateResponse`
-        """
-        http_info = self._show_alert_rule_template_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_alert_rule_template_async_invoker(self, request):
-        http_info = self._show_alert_rule_template_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_alert_rule_template_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates/{template_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowAlertRuleTemplateResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'template_id' in local_var_params:
-            path_params['template_id'] = local_var_params['template_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_incident_async(self, request):
-        r"""获取事件详情
-
-        获取事件详情
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowIncident
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowIncidentRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowIncidentResponse`
-        """
-        http_info = self._show_incident_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_incident_async_invoker(self, request):
-        http_info = self._show_incident_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_incident_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/{incident_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowIncidentResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'incident_id' in local_var_params:
-            path_params['incident_id'] = local_var_params['incident_id']
+        if 'alert_rule_id' in local_var_params:
+            path_params['alert_rule_id'] = local_var_params['alert_rule_id']
 
         query_params = []
 
@@ -4013,31 +3526,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def show_indicator_detail_async(self, request):
-        r"""查询威胁情报详情
+    def show_alert_rule_template_async(self, request):
+        r"""查看告警规则模板
 
-        查询威胁情报详情
+        查看告警规则模板
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowIndicatorDetail
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowIndicatorDetailRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowIndicatorDetailResponse`
+        :param request: Request instance for ShowAlertRuleTemplate
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowAlertRuleTemplateRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertRuleTemplateResponse`
         """
-        http_info = self._show_indicator_detail_http_info(request)
+        http_info = self._show_alert_rule_template_http_info(request)
         return self._call_api(**http_info)
 
-    def show_indicator_detail_async_invoker(self, request):
-        http_info = self._show_indicator_detail_http_info(request)
+    def show_alert_rule_template_async_invoker(self, request):
+        http_info = self._show_alert_rule_template_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_indicator_detail_http_info(self, request):
+    def _show_alert_rule_template_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/{indicator_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates/{template_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowIndicatorDetailResponse"
+            "response_type": "ShowAlertRuleTemplateResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4051,10 +3564,499 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'indicator_id' in local_var_params:
-            path_params['indicator_id'] = local_var_params['indicator_id']
+        if 'template_id' in local_var_params:
+            path_params['template_id'] = local_var_params['template_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_analysis_script_async(self, request):
+        r"""查看分析脚本
+
+        查看分析脚本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowAnalysisScript
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowAnalysisScriptRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAnalysisScriptResponse`
+        """
+        http_info = self._show_analysis_script_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_analysis_script_async_invoker(self, request):
+        http_info = self._show_analysis_script_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_analysis_script_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/analysis-scripts/{analysis_script_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAnalysisScriptResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'analysis_script_id' in local_var_params:
+            path_params['analysis_script_id'] = local_var_params['analysis_script_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_checkitem_detail_async(self, request):
+        r"""查询检查项详情
+
+        查询检查项详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCheckitemDetail
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowCheckitemDetailRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowCheckitemDetailResponse`
+        """
+        http_info = self._show_checkitem_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_checkitem_detail_async_invoker(self, request):
+        http_info = self._show_checkitem_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_checkitem_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/sa/baseline/checkitems/{checkitem_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCheckitemDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'checkitem_id' in local_var_params:
+            path_params['checkitem_id'] = local_var_params['checkitem_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_code_segment_async(self, request):
+        r"""查看代码片段
+
+        查看代码片段
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCodeSegment
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowCodeSegmentRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowCodeSegmentResponse`
+        """
+        http_info = self._show_code_segment_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_code_segment_async_invoker(self, request):
+        http_info = self._show_code_segment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_code_segment_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/code-segments/{code_segment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCodeSegmentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'code_segment_id' in local_var_params:
+            path_params['code_segment_id'] = local_var_params['code_segment_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_compliance_package_detail_async(self, request):
+        r"""查询遵从包详情
+
+        查询遵从包详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowCompliancePackageDetail
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowCompliancePackageDetailRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowCompliancePackageDetailResponse`
+        """
+        http_info = self._show_compliance_package_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_compliance_package_detail_async_invoker(self, request):
+        http_info = self._show_compliance_package_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_compliance_package_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/sa/baseline/compliance-packages/{compliance_packages_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCompliancePackageDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'compliance_packages_id' in local_var_params:
+            path_params['compliance_packages_id'] = local_var_params['compliance_packages_id']
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_data_consumption_async(self, request):
+        r"""获取实时消费配置
+
+        获取实时消费配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDataConsumption
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowDataConsumptionRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowDataConsumptionResponse`
+        """
+        http_info = self._show_data_consumption_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_data_consumption_async_invoker(self, request):
+        http_info = self._show_data_consumption_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_data_consumption_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}/consumption",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataConsumptionResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_data_transformation_async(self, request):
+        r"""查看数据加工
+
+        查看数据加工
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowDataTransformation
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowDataTransformationRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowDataTransformationResponse`
+        """
+        http_info = self._show_data_transformation_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_data_transformation_async_invoker(self, request):
+        http_info = self._show_data_transformation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_data_transformation_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/data-transformations/{data_transformation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataTransformationResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'data_transformation_id' in local_var_params:
+            path_params['data_transformation_id'] = local_var_params['data_transformation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_layout_field_info_async(self, request):
+        r"""展示字段详情
+
+        查询布局字段详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ShowLayoutFieldInfo
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowLayoutFieldInfoRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowLayoutFieldInfoResponse`
+        """
+        http_info = self._show_layout_field_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_layout_field_info_async_invoker(self, request):
+        http_info = self._show_layout_field_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_layout_field_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/soc/layouts/fields/{field_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLayoutFieldInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'field_id' in local_var_params:
+            path_params['field_id'] = local_var_params['field_id']
+
+        query_params = []
+        if 'layout_id' in local_var_params:
+            query_params.append(('layout_id', local_var_params['layout_id']))
 
         header_params = {}
 
@@ -4082,31 +4084,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def show_playbook_async(self, request):
-        r"""查询剧本详情
+    def show_monitor_stats_async(self, request):
+        r"""获取监控统计信息
 
-        查询剧本详情
+        获取监控统计信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowPlaybook
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookResponse`
+        :param request: Request instance for ShowMonitorStats
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowMonitorStatsRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowMonitorStatsResponse`
         """
-        http_info = self._show_playbook_http_info(request)
+        http_info = self._show_monitor_stats_http_info(request)
         return self._call_api(**http_info)
 
-    def show_playbook_async_invoker(self, request):
-        http_info = self._show_playbook_http_info(request)
+    def show_monitor_stats_async_invoker(self, request):
+        http_info = self._show_monitor_stats_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_playbook_http_info(self, request):
+    def _show_monitor_stats_http_info(self, request):
         http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}",
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}/statistics",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowPlaybookResponse"
+            "response_type": "ShowMonitorStatsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4120,8 +4122,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'playbook_id' in local_var_params:
-            path_params['playbook_id'] = local_var_params['playbook_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
 
         query_params = []
 
@@ -4130,10 +4132,12 @@ class SecMasterAsyncClient(Client):
         form_params = {}
 
         body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4151,31 +4155,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def show_playbook_instance_async(self, request):
-        r"""查询剧本实例详情
+    def show_pipe_async(self, request):
+        r"""获取管道详情
 
-        Show playbook instance
+        获取管道详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowPlaybookInstance
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookInstanceRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookInstanceResponse`
+        :param request: Request instance for ShowPipe
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowPipeRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPipeResponse`
         """
-        http_info = self._show_playbook_instance_http_info(request)
+        http_info = self._show_pipe_http_info(request)
         return self._call_api(**http_info)
 
-    def show_playbook_instance_async_invoker(self, request):
-        http_info = self._show_playbook_instance_http_info(request)
+    def show_pipe_async_invoker(self, request):
+        http_info = self._show_pipe_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_playbook_instance_http_info(self, request):
+    def _show_pipe_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/pipes/{pipe_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowPlaybookInstanceResponse"
+            "response_type": "ShowPipeResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4189,8 +4193,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
+        if 'pipe_id' in local_var_params:
+            path_params['pipe_id'] = local_var_params['pipe_id']
 
         query_params = []
 
@@ -4202,7 +4206,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4220,31 +4224,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def show_playbook_monitors_async(self, request):
-        r"""剧本运行监控
+    def show_retrieve_script_async(self, request):
+        r"""查看检索脚本
 
-        剧本运行监控
+        查看检索脚本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowPlaybookMonitors
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookMonitorsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookMonitorsResponse`
+        :param request: Request instance for ShowRetrieveScript
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowRetrieveScriptRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowRetrieveScriptResponse`
         """
-        http_info = self._show_playbook_monitors_http_info(request)
+        http_info = self._show_retrieve_script_http_info(request)
         return self._call_api(**http_info)
 
-    def show_playbook_monitors_async_invoker(self, request):
-        http_info = self._show_playbook_monitors_http_info(request)
+    def show_retrieve_script_async_invoker(self, request):
+        http_info = self._show_retrieve_script_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_playbook_monitors_http_info(self, request):
+    def _show_retrieve_script_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/monitor",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/retrieve-scripts/{retrieve_script_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowPlaybookMonitorsResponse"
+            "response_type": "ShowRetrieveScriptResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4258,16 +4262,10 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'playbook_id' in local_var_params:
-            path_params['playbook_id'] = local_var_params['playbook_id']
+        if 'retrieve_script_id' in local_var_params:
+            path_params['retrieve_script_id'] = local_var_params['retrieve_script_id']
 
         query_params = []
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'version_query_type' in local_var_params:
-            query_params.append(('version_query_type', local_var_params['version_query_type']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
 
@@ -4277,7 +4275,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4295,31 +4293,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def show_playbook_rule_async(self, request):
-        r"""查询剧本规则详情
+    def show_subscription_resources_async(self, request):
+        r"""获取订阅资源信息
 
-        查询剧本规则详情
+        获取订阅资源信息
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowPlaybookRule
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookRuleRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookRuleResponse`
+        :param request: Request instance for ShowSubscriptionResources
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowSubscriptionResourcesRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowSubscriptionResourcesResponse`
         """
-        http_info = self._show_playbook_rule_http_info(request)
+        http_info = self._show_subscription_resources_http_info(request)
         return self._call_api(**http_info)
 
-    def show_playbook_rule_async_invoker(self, request):
-        http_info = self._show_playbook_rule_http_info(request)
+    def show_subscription_resources_async_invoker(self, request):
+        http_info = self._show_subscription_resources_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_playbook_rule_http_info(self, request):
+    def _show_subscription_resources_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/subscription/resource",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowPlaybookRuleResponse"
+            "response_type": "ShowSubscriptionResourcesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4333,12 +4331,10 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-        if 'rule_id' in local_var_params:
-            path_params['rule_id'] = local_var_params['rule_id']
 
         query_params = []
+        if 'sku' in local_var_params:
+            query_params.append(('sku', local_var_params['sku']))
 
         header_params = {}
 
@@ -4348,7 +4344,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4366,31 +4362,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def show_playbook_statistics_async(self, request):
-        r"""剧本数据统计
+    def show_table_async(self, request):
+        r"""获取表详情
 
-        剧本统计数据
+        获取表详情
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowPlaybookStatistics
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookStatisticsRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookStatisticsResponse`
+        :param request: Request instance for ShowTable
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowTableRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowTableResponse`
         """
-        http_info = self._show_playbook_statistics_http_info(request)
+        http_info = self._show_table_http_info(request)
         return self._call_api(**http_info)
 
-    def show_playbook_statistics_async_invoker(self, request):
-        http_info = self._show_playbook_statistics_http_info(request)
+    def show_table_async_invoker(self, request):
+        http_info = self._show_table_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_playbook_statistics_http_info(self, request):
+    def _show_table_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/statistics",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowPlaybookStatisticsResponse"
+            "response_type": "ShowTableResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4404,6 +4400,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
 
         query_params = []
 
@@ -4415,7 +4413,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4433,31 +4431,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def show_playbook_topology_async(self, request):
-        r"""查询剧本拓扑关系
+    def show_version_async(self, request):
+        r"""获取当前可用版本
 
-        查询剧本拓扑关系
+        获取当前可用版本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for ShowPlaybookTopology
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookTopologyRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookTopologyResponse`
+        :param request: Request instance for ShowVersion
+        :type request: :class:`huaweicloudsdksecmaster.v2.ShowVersionRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowVersionResponse`
         """
-        http_info = self._show_playbook_topology_http_info(request)
+        http_info = self._show_version_http_info(request)
         return self._call_api(**http_info)
 
-    def show_playbook_topology_async_invoker(self, request):
-        http_info = self._show_playbook_topology_http_info(request)
+    def show_version_async_invoker(self, request):
+        http_info = self._show_version_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _show_playbook_topology_http_info(self, request):
+    def _show_version_http_info(self, request):
         http_info = {
             "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}/topology",
+            "resource_path": "/v2/{project_id}/siem/upgradation/version",
             "request_type": request.__class__.__name__,
-            "response_type": "ShowPlaybookTopologyResponse"
+            "response_type": "ShowVersionResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4469,146 +4467,6 @@ class SecMasterAsyncClient(Client):
         path_params = {}
         if 'project_id' in local_var_params:
             path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'instance_id' in local_var_params:
-            path_params['instance_id'] = local_var_params['instance_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_playbook_version_async(self, request):
-        r"""查询剧本版本详情
-
-        Show playbook version version
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowPlaybookVersion
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookVersionRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookVersionResponse`
-        """
-        http_info = self._show_playbook_version_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_playbook_version_async_invoker(self, request):
-        http_info = self._show_playbook_version_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_playbook_version_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowPlaybookVersionResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body = None
-        if isinstance(request, SdkStreamRequest):
-            body = request.get_file_stream()
-
-        response_headers = ["X-request-id", ]
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        http_info["cname"] = cname
-        http_info["collection_formats"] = collection_formats
-        http_info["path_params"] = path_params
-        http_info["query_params"] = query_params
-        http_info["header_params"] = header_params
-        http_info["post_params"] = form_params
-        http_info["body"] = body
-        http_info["response_headers"] = response_headers
-
-        return http_info
-
-    def show_workspace_async(self, request):
-        r"""查询工作空间详情
-
-        查询工作空间名称、描述等详情信息
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowWorkspace
-        :type request: :class:`huaweicloudsdksecmaster.v2.ShowWorkspaceRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.ShowWorkspaceResponse`
-        """
-        http_info = self._show_workspace_http_info(request)
-        return self._call_api(**http_info)
-
-    def show_workspace_async_invoker(self, request):
-        http_info = self._show_workspace_http_info(request)
-        return AsyncInvoker(self, http_info)
-
-    def _show_workspace_http_info(self, request):
-        http_info = {
-            "method": "GET",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}",
-            "request_type": request.__class__.__name__,
-            "response_type": "ShowWorkspaceResponse"
-            }
-
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'project_id' in local_var_params:
-            path_params['project_id'] = local_var_params['project_id']
-        if 'workspace_id' in local_var_params:
-            path_params['workspace_id'] = local_var_params['workspace_id']
 
         query_params = []
 
@@ -4641,7 +4499,7 @@ class SecMasterAsyncClient(Client):
     def update_alert_rule_async(self, request):
         r"""更新告警规则
 
-        Update alert rule
+        更新告警规则
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4660,7 +4518,7 @@ class SecMasterAsyncClient(Client):
     def _update_alert_rule_http_info(self, request):
         http_info = {
             "method": "PUT",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{rule_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{alert_rule_id}",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateAlertRuleResponse"
             }
@@ -4676,8 +4534,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'rule_id' in local_var_params:
-            path_params['rule_id'] = local_var_params['rule_id']
+        if 'alert_rule_id' in local_var_params:
+            path_params['alert_rule_id'] = local_var_params['alert_rule_id']
 
         query_params = []
 
@@ -4691,7 +4549,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4709,31 +4567,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def update_indicator_async(self, request):
-        r"""更新威胁情报
+    def update_analysis_script_async(self, request):
+        r"""更新分析脚本
 
-        更新威胁情报
+        更新分析脚本
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for UpdateIndicator
-        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateIndicatorRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateIndicatorResponse`
+        :param request: Request instance for UpdateAnalysisScript
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateAnalysisScriptRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateAnalysisScriptResponse`
         """
-        http_info = self._update_indicator_http_info(request)
+        http_info = self._update_analysis_script_http_info(request)
         return self._call_api(**http_info)
 
-    def update_indicator_async_invoker(self, request):
-        http_info = self._update_indicator_http_info(request)
+    def update_analysis_script_async_invoker(self, request):
+        http_info = self._update_analysis_script_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _update_indicator_http_info(self, request):
+    def _update_analysis_script_http_info(self, request):
         http_info = {
             "method": "PUT",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/{indicator_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/analysis-scripts/{analysis_script_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdateIndicatorResponse"
+            "response_type": "UpdateAnalysisScriptResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4747,8 +4605,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'indicator_id' in local_var_params:
-            path_params['indicator_id'] = local_var_params['indicator_id']
+        if 'analysis_script_id' in local_var_params:
+            path_params['analysis_script_id'] = local_var_params['analysis_script_id']
 
         query_params = []
 
@@ -4762,7 +4620,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4780,31 +4638,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def update_playbook_async(self, request):
-        r"""修改剧本
+    def update_checkitem_async(self, request):
+        r"""更新检查项
 
-        修改剧本
+        更新检查项
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for UpdatePlaybook
-        :type request: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookResponse`
+        :param request: Request instance for UpdateCheckitem
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateCheckitemRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateCheckitemResponse`
         """
-        http_info = self._update_playbook_http_info(request)
+        http_info = self._update_checkitem_http_info(request)
         return self._call_api(**http_info)
 
-    def update_playbook_async_invoker(self, request):
-        http_info = self._update_playbook_http_info(request)
+    def update_checkitem_async_invoker(self, request):
+        http_info = self._update_checkitem_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _update_playbook_http_info(self, request):
+    def _update_checkitem_http_info(self, request):
         http_info = {
             "method": "PUT",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/sa/baseline/checkitems/{checkitem_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdatePlaybookResponse"
+            "response_type": "UpdateCheckitemResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4818,12 +4676,14 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'playbook_id' in local_var_params:
-            path_params['playbook_id'] = local_var_params['playbook_id']
+        if 'checkitem_id' in local_var_params:
+            path_params['checkitem_id'] = local_var_params['checkitem_id']
 
         query_params = []
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -4833,7 +4693,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4851,31 +4711,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def update_playbook_action_async(self, request):
-        r"""更新剧本动作
+    def update_code_segment_async(self, request):
+        r"""更新代码片段
 
-        更新剧本动作
+        更新代码片段
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for UpdatePlaybookAction
-        :type request: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookActionRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookActionResponse`
+        :param request: Request instance for UpdateCodeSegment
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateCodeSegmentRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateCodeSegmentResponse`
         """
-        http_info = self._update_playbook_action_http_info(request)
+        http_info = self._update_code_segment_http_info(request)
         return self._call_api(**http_info)
 
-    def update_playbook_action_async_invoker(self, request):
-        http_info = self._update_playbook_action_http_info(request)
+    def update_code_segment_async_invoker(self, request):
+        http_info = self._update_code_segment_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _update_playbook_action_http_info(self, request):
+    def _update_code_segment_http_info(self, request):
         http_info = {
             "method": "PUT",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions/{action_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/code-segments/{code_segment_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdatePlaybookActionResponse"
+            "response_type": "UpdateCodeSegmentResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4889,10 +4749,8 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-        if 'action_id' in local_var_params:
-            path_params['action_id'] = local_var_params['action_id']
+        if 'code_segment_id' in local_var_params:
+            path_params['code_segment_id'] = local_var_params['code_segment_id']
 
         query_params = []
 
@@ -4906,7 +4764,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4924,31 +4782,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def update_playbook_rule_async(self, request):
-        r"""更新剧本规则
+    def update_compliance_package_async(self, request):
+        r"""更新遵从包
 
-        更新剧本规则
+        更新遵从包
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for UpdatePlaybookRule
-        :type request: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookRuleRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookRuleResponse`
+        :param request: Request instance for UpdateCompliancePackage
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateCompliancePackageRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateCompliancePackageResponse`
         """
-        http_info = self._update_playbook_rule_http_info(request)
+        http_info = self._update_compliance_package_http_info(request)
         return self._call_api(**http_info)
 
-    def update_playbook_rule_async_invoker(self, request):
-        http_info = self._update_playbook_rule_http_info(request)
+    def update_compliance_package_async_invoker(self, request):
+        http_info = self._update_compliance_package_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _update_playbook_rule_http_info(self, request):
+    def _update_compliance_package_http_info(self, request):
         http_info = {
             "method": "PUT",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/sa/baseline/compliance-packages/{compliance_packages_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdatePlaybookRuleResponse"
+            "response_type": "UpdateCompliancePackageResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -4962,14 +4820,14 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
-        if 'rule_id' in local_var_params:
-            path_params['rule_id'] = local_var_params['rule_id']
+        if 'compliance_packages_id' in local_var_params:
+            path_params['compliance_packages_id'] = local_var_params['compliance_packages_id']
 
         query_params = []
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 
@@ -4979,7 +4837,7 @@ class SecMasterAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
-        response_headers = ["X-request-id", ]
+        response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -4997,31 +4855,31 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def update_playbook_version_async(self, request):
-        r"""更新剧本版本
+    def update_data_transformation_async(self, request):
+        r"""更新数据加工
 
-        更新剧本版本
+        更新数据加工
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for UpdatePlaybookVersion
-        :type request: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookVersionRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookVersionResponse`
+        :param request: Request instance for UpdateDataTransformation
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateDataTransformationRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateDataTransformationResponse`
         """
-        http_info = self._update_playbook_version_http_info(request)
+        http_info = self._update_data_transformation_http_info(request)
         return self._call_api(**http_info)
 
-    def update_playbook_version_async_invoker(self, request):
-        http_info = self._update_playbook_version_http_info(request)
+    def update_data_transformation_async_invoker(self, request):
+        http_info = self._update_data_transformation_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _update_playbook_version_http_info(self, request):
+    def _update_data_transformation_http_info(self, request):
         http_info = {
             "method": "PUT",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/data-transformations/{data_transformation_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdatePlaybookVersionResponse"
+            "response_type": "UpdateDataTransformationResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -5035,8 +4893,79 @@ class SecMasterAsyncClient(Client):
             path_params['project_id'] = local_var_params['project_id']
         if 'workspace_id' in local_var_params:
             path_params['workspace_id'] = local_var_params['workspace_id']
-        if 'version_id' in local_var_params:
-            path_params['version_id'] = local_var_params['version_id']
+        if 'data_transformation_id' in local_var_params:
+            path_params['data_transformation_id'] = local_var_params['data_transformation_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_layout_field_async(self, request):
+        r"""更新字段
+
+        更新布局字段
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateLayoutField
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateLayoutFieldRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateLayoutFieldResponse`
+        """
+        http_info = self._update_layout_field_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_layout_field_async_invoker(self, request):
+        http_info = self._update_layout_field_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_layout_field_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/soc/layouts/fields/{field_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLayoutFieldResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'field_id' in local_var_params:
+            path_params['field_id'] = local_var_params['field_id']
 
         query_params = []
 
@@ -5068,31 +4997,386 @@ class SecMasterAsyncClient(Client):
 
         return http_info
 
-    def update_workspace_async(self, request):
-        r"""更新工作空间
+    def update_pipe_async(self, request):
+        r"""更新管道
 
-        更新工作空间名称、描述等信息
+        更新管道
         
         Please refer to HUAWEI cloud API Explorer for details.
 
 
-        :param request: Request instance for UpdateWorkspace
-        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateWorkspaceRequest`
-        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateWorkspaceResponse`
+        :param request: Request instance for UpdatePipe
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdatePipeRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdatePipeResponse`
         """
-        http_info = self._update_workspace_http_info(request)
+        http_info = self._update_pipe_http_info(request)
         return self._call_api(**http_info)
 
-    def update_workspace_async_invoker(self, request):
-        http_info = self._update_workspace_http_info(request)
+    def update_pipe_async_invoker(self, request):
+        http_info = self._update_pipe_http_info(request)
         return AsyncInvoker(self, http_info)
 
-    def _update_workspace_http_info(self, request):
+    def _update_pipe_http_info(self, request):
         http_info = {
             "method": "PUT",
-            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/pipes/{pipe_id}",
             "request_type": request.__class__.__name__,
-            "response_type": "UpdateWorkspaceResponse"
+            "response_type": "UpdatePipeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'pipe_id' in local_var_params:
+            path_params['pipe_id'] = local_var_params['pipe_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_pipe_schema_async(self, request):
+        r"""更新管道结构
+
+        更新管道结构
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdatePipeSchema
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdatePipeSchemaRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdatePipeSchemaResponse`
+        """
+        http_info = self._update_pipe_schema_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_pipe_schema_async_invoker(self, request):
+        http_info = self._update_pipe_schema_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_pipe_schema_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/pipes/{pipe_id}/schema",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePipeSchemaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'pipe_id' in local_var_params:
+            path_params['pipe_id'] = local_var_params['pipe_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_retrieve_script_async(self, request):
+        r"""更新检索脚本
+
+        更新检索脚本
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateRetrieveScript
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateRetrieveScriptRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateRetrieveScriptResponse`
+        """
+        http_info = self._update_retrieve_script_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_retrieve_script_async_invoker(self, request):
+        http_info = self._update_retrieve_script_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_retrieve_script_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/retrieve-scripts/{retrieve_script_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRetrieveScriptResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'retrieve_script_id' in local_var_params:
+            path_params['retrieve_script_id'] = local_var_params['retrieve_script_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_table_async(self, request):
+        r"""更改表详情
+
+        更改表详情
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTable
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateTableRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateTableResponse`
+        """
+        http_info = self._update_table_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_table_async_invoker(self, request):
+        http_info = self._update_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_table_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTableResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_table_schema_async(self, request):
+        r"""更改表结构
+
+        更改表结构
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateTableSchema
+        :type request: :class:`huaweicloudsdksecmaster.v2.UpdateTableSchemaRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateTableSchemaResponse`
+        """
+        http_info = self._update_table_schema_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_table_schema_async_invoker(self, request):
+        http_info = self._update_table_schema_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_table_schema_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/tables/{table_id}/schema",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTableSchemaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+        if 'table_id' in local_var_params:
+            path_params['table_id'] = local_var_params['table_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_sql_validation_async(self, request):
+        r"""创建SQL校验
+
+        创建SQL校验
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateSqlValidation
+        :type request: :class:`huaweicloudsdksecmaster.v2.CreateSqlValidationRequest`
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CreateSqlValidationResponse`
+        """
+        http_info = self._create_sql_validation_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_sql_validation_async_invoker(self, request):
+        http_info = self._create_sql_validation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sql_validation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/{workspace_id}/siem/sql/validation",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSqlValidationResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}

@@ -30,7 +30,7 @@ class BatchSrlz:
         'simulation_size': 'int',
         'name': 'str',
         'description': 'str',
-        'status': 'Status6a7Enum',
+        'status': 'int',
         'user_id': 'str',
         'designated_simulation_ids': 'list[int]',
         'batch_config': 'str'
@@ -94,7 +94,7 @@ class BatchSrlz:
         :param description: 文本描述
         :type description: str
         :param status: 任务状态  * &#x60;0&#x60; - Success * &#x60;1&#x60; - Pending * &#x60;2&#x60; - Scheduling * &#x60;3&#x60; - Running * &#x60;4&#x60; - Canceled * &#x60;5&#x60; - All Fail * &#x60;6&#x60; - Partial Fail * &#x60;7&#x60; - Start Fail * &#x60;8&#x60; - K8S Conflict * &#x60;10&#x60; - Not Run * &#x60;11&#x60; - Cpu Not Enough * &#x60;12&#x60; - Mem Not Enough * &#x60;13&#x60; - Gpu Not Enough * &#x60;14&#x60; - Init K8S Fail * &#x60;31&#x60; - Timeout * &#x60;32&#x60; - Unknown * &#x60;100&#x60; - Init * &#x60;101&#x60; - Init Fail * &#x60;102&#x60; - Task Lost * &#x60;103&#x60; - Task Interrupted * &#x60;104&#x60; - Queue * &#x60;105&#x60; - Alg Img Not Found * &#x60;106&#x60; - Eva Img Not Found * &#x60;107&#x60; - Sim Img Not Found
-        :type status: :class:`huaweicloudsdkoctopus.v2.Status6a7Enum`
+        :type status: :class:`huaweicloudsdkoctopus.v2.int`
         :param user_id: 用户id
         :type user_id: str
         :param designated_simulation_ids: 用户指定重跑子任务ids
@@ -469,7 +469,7 @@ class BatchSrlz:
         任务状态  * `0` - Success * `1` - Pending * `2` - Scheduling * `3` - Running * `4` - Canceled * `5` - All Fail * `6` - Partial Fail * `7` - Start Fail * `8` - K8S Conflict * `10` - Not Run * `11` - Cpu Not Enough * `12` - Mem Not Enough * `13` - Gpu Not Enough * `14` - Init K8S Fail * `31` - Timeout * `32` - Unknown * `100` - Init * `101` - Init Fail * `102` - Task Lost * `103` - Task Interrupted * `104` - Queue * `105` - Alg Img Not Found * `106` - Eva Img Not Found * `107` - Sim Img Not Found
 
         :return: The status of this BatchSrlz.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.Status6a7Enum`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.int`
         """
         return self._status
 
@@ -480,7 +480,7 @@ class BatchSrlz:
         任务状态  * `0` - Success * `1` - Pending * `2` - Scheduling * `3` - Running * `4` - Canceled * `5` - All Fail * `6` - Partial Fail * `7` - Start Fail * `8` - K8S Conflict * `10` - Not Run * `11` - Cpu Not Enough * `12` - Mem Not Enough * `13` - Gpu Not Enough * `14` - Init K8S Fail * `31` - Timeout * `32` - Unknown * `100` - Init * `101` - Init Fail * `102` - Task Lost * `103` - Task Interrupted * `104` - Queue * `105` - Alg Img Not Found * `106` - Eva Img Not Found * `107` - Sim Img Not Found
 
         :param status: The status of this BatchSrlz.
-        :type status: :class:`huaweicloudsdkoctopus.v2.Status6a7Enum`
+        :type status: :class:`huaweicloudsdkoctopus.v2.int`
         """
         self._status = status
 

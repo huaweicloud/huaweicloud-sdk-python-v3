@@ -101,9 +101,9 @@ class SnapshotDetail:
         :type finished: str
         :param size: **参数解释**： 快照大小，单位GB。 **取值范围**： 不涉及。
         :type size: float
-        :param status: **参数解释**： 快照状态： **取值范围**： CREATING：创建中。 AVAILABLE：可用。 UNAVAILABLE：不可用。 FROZEN：普通冻结。 POLICE_FROZEN：公安冻结。
+        :param status: **参数解释**： 快照状态： **取值范围**： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN：普通冻结。 - POLICE_FROZEN：公安冻结。
         :type status: str
-        :param type: **参数解释**： 快照创建类型。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 快照创建类型。 **取值范围**： - AUTO: 自动。 - MANUAL: 手动。
         :type type: str
         :param cluster_id: **参数解释**： 快照对应的集群ID。 **取值范围**： 不涉及。
         :type cluster_id: str
@@ -145,7 +145,7 @@ class SnapshotDetail:
         :type fine_grained_backup_detail: :class:`huaweicloudsdkdws.v2.FineGrainedSnapshotDetail`
         :param guest_agent_version: **参数解释**： guestAgent版本。 **取值范围**： 不涉及。
         :type guest_agent_version: str
-        :param cluster_status: **参数解释**： 集群状态。 **取值范围**： 不涉及。
+        :param cluster_status: **参数解释**： 集群状态。 **取值范围**： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
         :type cluster_status: str
         :param cluster_task_status: **参数解释**： 集群任务状态。 **取值范围**： 不涉及。
         :type cluster_task_status: str
@@ -383,7 +383,7 @@ class SnapshotDetail:
     def status(self):
         r"""Gets the status of this SnapshotDetail.
 
-        **参数解释**： 快照状态： **取值范围**： CREATING：创建中。 AVAILABLE：可用。 UNAVAILABLE：不可用。 FROZEN：普通冻结。 POLICE_FROZEN：公安冻结。
+        **参数解释**： 快照状态： **取值范围**： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN：普通冻结。 - POLICE_FROZEN：公安冻结。
 
         :return: The status of this SnapshotDetail.
         :rtype: str
@@ -394,7 +394,7 @@ class SnapshotDetail:
     def status(self, status):
         r"""Sets the status of this SnapshotDetail.
 
-        **参数解释**： 快照状态： **取值范围**： CREATING：创建中。 AVAILABLE：可用。 UNAVAILABLE：不可用。 FROZEN：普通冻结。 POLICE_FROZEN：公安冻结。
+        **参数解释**： 快照状态： **取值范围**： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - FROZEN：普通冻结。 - POLICE_FROZEN：公安冻结。
 
         :param status: The status of this SnapshotDetail.
         :type status: str
@@ -405,7 +405,7 @@ class SnapshotDetail:
     def type(self):
         r"""Gets the type of this SnapshotDetail.
 
-        **参数解释**： 快照创建类型。 **取值范围**： 不涉及。
+        **参数解释**： 快照创建类型。 **取值范围**： - AUTO: 自动。 - MANUAL: 手动。
 
         :return: The type of this SnapshotDetail.
         :rtype: str
@@ -416,7 +416,7 @@ class SnapshotDetail:
     def type(self, type):
         r"""Sets the type of this SnapshotDetail.
 
-        **参数解释**： 快照创建类型。 **取值范围**： 不涉及。
+        **参数解释**： 快照创建类型。 **取值范围**： - AUTO: 自动。 - MANUAL: 手动。
 
         :param type: The type of this SnapshotDetail.
         :type type: str
@@ -859,7 +859,7 @@ class SnapshotDetail:
     def cluster_status(self):
         r"""Gets the cluster_status of this SnapshotDetail.
 
-        **参数解释**： 集群状态。 **取值范围**： 不涉及。
+        **参数解释**： 集群状态。 **取值范围**： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
         :return: The cluster_status of this SnapshotDetail.
         :rtype: str
@@ -870,7 +870,7 @@ class SnapshotDetail:
     def cluster_status(self, cluster_status):
         r"""Sets the cluster_status of this SnapshotDetail.
 
-        **参数解释**： 集群状态。 **取值范围**： 不涉及。
+        **参数解释**： 集群状态。 **取值范围**： - CREATING：创建中。 - AVAILABLE：可用。 - UNAVAILABLE：不可用。 - RESTORING：恢复中。 - FROZEN： 普通冻结。 - POLICE_FROZEN： 公安冻结。
 
         :param cluster_status: The cluster_status of this SnapshotDetail.
         :type cluster_status: str

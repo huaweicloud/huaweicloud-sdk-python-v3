@@ -17,6 +17,8 @@ class ShowAsyncTtsJobResponse(SdkResponse):
 
     openapi_types = {
         'state': 'str',
+        'code': 'str',
+        'message': 'str',
         'audio_file_url': 'str',
         'audio_info_file_url': 'str',
         'audio_srt_file_url': 'str',
@@ -25,19 +27,25 @@ class ShowAsyncTtsJobResponse(SdkResponse):
 
     attribute_map = {
         'state': 'state',
+        'code': 'code',
+        'message': 'message',
         'audio_file_url': 'audio_file_url',
         'audio_info_file_url': 'audio_info_file_url',
         'audio_srt_file_url': 'audio_srt_file_url',
         'audio_action_file_url': 'audio_action_file_url'
     }
 
-    def __init__(self, state=None, audio_file_url=None, audio_info_file_url=None, audio_srt_file_url=None, audio_action_file_url=None):
+    def __init__(self, state=None, code=None, message=None, audio_file_url=None, audio_info_file_url=None, audio_srt_file_url=None, audio_action_file_url=None):
         r"""ShowAsyncTtsJobResponse
 
         The model defined in huaweicloud sdk
 
         :param state: 音频文件是否已生成完成。该标记为PROCESSING时，应该每隔3秒再次调用本接口获取音频文件(WAITING 等待中,PROCESSING 处理中,SUCCEED 成功,FAILED 失败)。当存在该字段时，会返回以下文件的下载链接。
         :type state: str
+        :param code: 返回码。
+        :type code: str
+        :param message: 异常信息。
+        :type message: str
         :param audio_file_url: 音频文件下载链接，有效期为1个小时。
         :type audio_file_url: str
         :param audio_info_file_url: 音频信息文件下载链接，有效期为1个小时。
@@ -51,6 +59,8 @@ class ShowAsyncTtsJobResponse(SdkResponse):
         super().__init__()
 
         self._state = None
+        self._code = None
+        self._message = None
         self._audio_file_url = None
         self._audio_info_file_url = None
         self._audio_srt_file_url = None
@@ -59,6 +69,10 @@ class ShowAsyncTtsJobResponse(SdkResponse):
 
         if state is not None:
             self.state = state
+        if code is not None:
+            self.code = code
+        if message is not None:
+            self.message = message
         if audio_file_url is not None:
             self.audio_file_url = audio_file_url
         if audio_info_file_url is not None:
@@ -89,6 +103,50 @@ class ShowAsyncTtsJobResponse(SdkResponse):
         :type state: str
         """
         self._state = state
+
+    @property
+    def code(self):
+        r"""Gets the code of this ShowAsyncTtsJobResponse.
+
+        返回码。
+
+        :return: The code of this ShowAsyncTtsJobResponse.
+        :rtype: str
+        """
+        return self._code
+
+    @code.setter
+    def code(self, code):
+        r"""Sets the code of this ShowAsyncTtsJobResponse.
+
+        返回码。
+
+        :param code: The code of this ShowAsyncTtsJobResponse.
+        :type code: str
+        """
+        self._code = code
+
+    @property
+    def message(self):
+        r"""Gets the message of this ShowAsyncTtsJobResponse.
+
+        异常信息。
+
+        :return: The message of this ShowAsyncTtsJobResponse.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        r"""Sets the message of this ShowAsyncTtsJobResponse.
+
+        异常信息。
+
+        :param message: The message of this ShowAsyncTtsJobResponse.
+        :type message: str
+        """
+        self._message = message
 
     @property
     def audio_file_url(self):

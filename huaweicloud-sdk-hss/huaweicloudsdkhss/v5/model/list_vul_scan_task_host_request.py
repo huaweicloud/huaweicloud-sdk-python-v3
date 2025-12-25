@@ -15,84 +15,62 @@ class ListVulScanTaskHostRequest:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str',
         'enterprise_project_id': 'str',
         'limit': 'int',
         'offset': 'int',
+        'task_id': 'str',
         'scan_status': 'str'
     }
 
     attribute_map = {
-        'task_id': 'task_id',
         'enterprise_project_id': 'enterprise_project_id',
         'limit': 'limit',
         'offset': 'offset',
+        'task_id': 'task_id',
         'scan_status': 'scan_status'
     }
 
-    def __init__(self, task_id=None, enterprise_project_id=None, limit=None, offset=None, scan_status=None):
+    def __init__(self, enterprise_project_id=None, limit=None, offset=None, task_id=None, scan_status=None):
         r"""ListVulScanTaskHostRequest
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务ID
-        :type task_id: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param limit: 每页显示个数
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param scan_status: 主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
+        :param task_id: **参数解释**: 漏洞扫描任务id **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+        :type task_id: str
+        :param scan_status: **参数解释**: 漏洞扫描任务的状态 **约束限制**: 不涉及 **取值范围**: - scanning：扫描中 - success：扫描成功 - failed：扫描失败  **默认取值**: 不涉及 
         :type scan_status: str
         """
         
         
 
-        self._task_id = None
         self._enterprise_project_id = None
         self._limit = None
         self._offset = None
+        self._task_id = None
         self._scan_status = None
         self.discriminator = None
 
-        self.task_id = task_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if limit is not None:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        self.task_id = task_id
         if scan_status is not None:
             self.scan_status = scan_status
-
-    @property
-    def task_id(self):
-        r"""Gets the task_id of this ListVulScanTaskHostRequest.
-
-        任务ID
-
-        :return: The task_id of this ListVulScanTaskHostRequest.
-        :rtype: str
-        """
-        return self._task_id
-
-    @task_id.setter
-    def task_id(self, task_id):
-        r"""Sets the task_id of this ListVulScanTaskHostRequest.
-
-        任务ID
-
-        :param task_id: The task_id of this ListVulScanTaskHostRequest.
-        :type task_id: str
-        """
-        self._task_id = task_id
 
     @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListVulScanTaskHostRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListVulScanTaskHostRequest.
         :rtype: str
@@ -103,7 +81,7 @@ class ListVulScanTaskHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListVulScanTaskHostRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListVulScanTaskHostRequest.
         :type enterprise_project_id: str
@@ -114,7 +92,7 @@ class ListVulScanTaskHostRequest:
     def limit(self):
         r"""Gets the limit of this ListVulScanTaskHostRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListVulScanTaskHostRequest.
         :rtype: int
@@ -125,7 +103,7 @@ class ListVulScanTaskHostRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListVulScanTaskHostRequest.
 
-        每页显示个数
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListVulScanTaskHostRequest.
         :type limit: int
@@ -136,7 +114,7 @@ class ListVulScanTaskHostRequest:
     def offset(self):
         r"""Gets the offset of this ListVulScanTaskHostRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListVulScanTaskHostRequest.
         :rtype: int
@@ -147,7 +125,7 @@ class ListVulScanTaskHostRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListVulScanTaskHostRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListVulScanTaskHostRequest.
         :type offset: int
@@ -155,10 +133,32 @@ class ListVulScanTaskHostRequest:
         self._offset = offset
 
     @property
+    def task_id(self):
+        r"""Gets the task_id of this ListVulScanTaskHostRequest.
+
+        **参数解释**: 漏洞扫描任务id **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+
+        :return: The task_id of this ListVulScanTaskHostRequest.
+        :rtype: str
+        """
+        return self._task_id
+
+    @task_id.setter
+    def task_id(self, task_id):
+        r"""Sets the task_id of this ListVulScanTaskHostRequest.
+
+        **参数解释**: 漏洞扫描任务id **约束限制**: 不涉及 **取值范围**: 字符长度1-256位 **默认取值**: 不涉及 
+
+        :param task_id: The task_id of this ListVulScanTaskHostRequest.
+        :type task_id: str
+        """
+        self._task_id = task_id
+
+    @property
     def scan_status(self):
         r"""Gets the scan_status of this ListVulScanTaskHostRequest.
 
-        主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
+        **参数解释**: 漏洞扫描任务的状态 **约束限制**: 不涉及 **取值范围**: - scanning：扫描中 - success：扫描成功 - failed：扫描失败  **默认取值**: 不涉及 
 
         :return: The scan_status of this ListVulScanTaskHostRequest.
         :rtype: str
@@ -169,7 +169,7 @@ class ListVulScanTaskHostRequest:
     def scan_status(self, scan_status):
         r"""Sets the scan_status of this ListVulScanTaskHostRequest.
 
-        主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
+        **参数解释**: 漏洞扫描任务的状态 **约束限制**: 不涉及 **取值范围**: - scanning：扫描中 - success：扫描成功 - failed：扫描失败  **默认取值**: 不涉及 
 
         :param scan_status: The scan_status of this ListVulScanTaskHostRequest.
         :type scan_status: str

@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class OptimizationMode:
-    """
-    allowed enum values
-    """
-    GENERATION = "generation"
-    SIDE_CHAINS_DECORATION = "side_chains_decoration"
-    SCAFFOLD_HOPPING = "scaffold_hopping"
-    FRAGMENT_GROWING = "fragment_growing"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

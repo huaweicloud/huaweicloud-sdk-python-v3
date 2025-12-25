@@ -15,7 +15,7 @@ class AuthMethodConfigRequest:
     sensitive_list = []
 
     openapi_types = {
-        'auth_type': 'AuthTypeEnum',
+        'auth_type': 'str',
         'radius_gateway_config': 'RadiusGatewayConfig',
         'third_party_auth_config': 'ThirdPartyAuthConfig',
         'emergency_login_mode': 'str'
@@ -33,8 +33,8 @@ class AuthMethodConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param auth_type: 
-        :type auth_type: :class:`huaweicloudsdkworkspace.v2.AuthTypeEnum`
+        :param auth_type: 认证类型。 RADIUS_GATEWAY：短信辅助认证 OAUTH2:OAUTH2认证 CLIENT_TOKEN:本地token认证 USER_PASSWORD:密码认证类型
+        :type auth_type: str
         :param radius_gateway_config: 
         :type radius_gateway_config: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfig`
         :param third_party_auth_config: 
@@ -64,8 +64,10 @@ class AuthMethodConfigRequest:
     def auth_type(self):
         r"""Gets the auth_type of this AuthMethodConfigRequest.
 
+        认证类型。 RADIUS_GATEWAY：短信辅助认证 OAUTH2:OAUTH2认证 CLIENT_TOKEN:本地token认证 USER_PASSWORD:密码认证类型
+
         :return: The auth_type of this AuthMethodConfigRequest.
-        :rtype: :class:`huaweicloudsdkworkspace.v2.AuthTypeEnum`
+        :rtype: str
         """
         return self._auth_type
 
@@ -73,8 +75,10 @@ class AuthMethodConfigRequest:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this AuthMethodConfigRequest.
 
+        认证类型。 RADIUS_GATEWAY：短信辅助认证 OAUTH2:OAUTH2认证 CLIENT_TOKEN:本地token认证 USER_PASSWORD:密码认证类型
+
         :param auth_type: The auth_type of this AuthMethodConfigRequest.
-        :type auth_type: :class:`huaweicloudsdkworkspace.v2.AuthTypeEnum`
+        :type auth_type: str
         """
         self._auth_type = auth_type
 

@@ -15,7 +15,7 @@ class InstructionReplyWordsInfo:
     sensitive_list = []
 
     openapi_types = {
-        'language': 'LanguageEnum',
+        'language': 'str',
         'reply_words': 'str'
     }
 
@@ -29,8 +29,8 @@ class InstructionReplyWordsInfo:
 
         The model defined in huaweicloud sdk
 
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param reply_words: 回复话术，多个回复话术间用换行符\\n分隔。
         :type reply_words: str
         """
@@ -48,8 +48,10 @@ class InstructionReplyWordsInfo:
     def language(self):
         r"""Gets the language of this InstructionReplyWordsInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this InstructionReplyWordsInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -57,8 +59,10 @@ class InstructionReplyWordsInfo:
     def language(self, language):
         r"""Sets the language of this InstructionReplyWordsInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this InstructionReplyWordsInfo.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

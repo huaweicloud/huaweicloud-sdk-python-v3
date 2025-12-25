@@ -4,10 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ComponentConfigurationKindObj:
-    """
-    allowed enum values
-    """
-    COMPONENTCONFIGURATION = "ComponentConfiguration"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

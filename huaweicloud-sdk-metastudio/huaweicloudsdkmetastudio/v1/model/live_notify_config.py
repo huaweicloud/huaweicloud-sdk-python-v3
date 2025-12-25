@@ -15,7 +15,7 @@ class LiveNotifyConfig:
     sensitive_list = []
 
     openapi_types = {
-        'notify_events': 'list[NotifyEventEnum]'
+        'notify_events': 'list[str]'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class LiveNotifyConfig:
         The model defined in huaweicloud sdk
 
         :param notify_events: **参数解释**： 启用通知事件列表。 **约束限制**： 不涉及 **默认取值**： 无。
-        :type notify_events: list[:class:`huaweicloudsdkmetastudio.v1.NotifyEventEnum`]
+        :type notify_events: list[str]
         """
         
         
@@ -46,7 +46,7 @@ class LiveNotifyConfig:
         **参数解释**： 启用通知事件列表。 **约束限制**： 不涉及 **默认取值**： 无。
 
         :return: The notify_events of this LiveNotifyConfig.
-        :rtype: list[:class:`huaweicloudsdkmetastudio.v1.NotifyEventEnum`]
+        :rtype: list[str]
         """
         return self._notify_events
 
@@ -57,7 +57,7 @@ class LiveNotifyConfig:
         **参数解释**： 启用通知事件列表。 **约束限制**： 不涉及 **默认取值**： 无。
 
         :param notify_events: The notify_events of this LiveNotifyConfig.
-        :type notify_events: list[:class:`huaweicloudsdkmetastudio.v1.NotifyEventEnum`]
+        :type notify_events: list[str]
         """
         self._notify_events = notify_events
 

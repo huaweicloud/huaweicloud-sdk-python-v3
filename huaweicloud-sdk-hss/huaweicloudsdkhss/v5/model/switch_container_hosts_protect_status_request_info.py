@@ -58,7 +58,8 @@ class SwitchContainerHostsProtectStatusRequestInfo:
 
         self.version = version
         self.charging_mode = charging_mode
-        self.resource_id = resource_id
+        if resource_id is not None:
+            self.resource_id = resource_id
         self.host_id_list = host_id_list
         if tags is not None:
             self.tags = tags

@@ -19,9 +19,9 @@ class CentralNetworkConnectionInfo:
         'plane_id': 'str',
         'global_connection_bandwidth_id': 'str',
         'bandwidth_size': 'int',
-        'connection_type': 'ConnectionTypeEnum',
+        'connection_type': 'str',
         'connection_point_pair': 'list[ConnectionPoint]',
-        'state': 'CentralNetworkConnectionStateEnum'
+        'state': 'str'
     }
 
     attribute_map = {
@@ -47,12 +47,12 @@ class CentralNetworkConnectionInfo:
         :type global_connection_bandwidth_id: str
         :param bandwidth_size: 带宽值，单位Mbps。
         :type bandwidth_size: int
-        :param connection_type: 
-        :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
+        :param connection_type: 中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+        :type connection_type: str
         :param connection_point_pair: 中心网络连接的两个端点定义，长度固定为2的数组。
         :type connection_point_pair: list[:class:`huaweicloudsdkcc.v3.ConnectionPoint`]
-        :param state: 
-        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
+        :param state: 中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+        :type state: str
         """
         
         
@@ -168,8 +168,10 @@ class CentralNetworkConnectionInfo:
     def connection_type(self):
         r"""Gets the connection_type of this CentralNetworkConnectionInfo.
 
+        中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+
         :return: The connection_type of this CentralNetworkConnectionInfo.
-        :rtype: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
+        :rtype: str
         """
         return self._connection_type
 
@@ -177,8 +179,10 @@ class CentralNetworkConnectionInfo:
     def connection_type(self, connection_type):
         r"""Sets the connection_type of this CentralNetworkConnectionInfo.
 
+        中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+
         :param connection_type: The connection_type of this CentralNetworkConnectionInfo.
-        :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
+        :type connection_type: str
         """
         self._connection_type = connection_type
 
@@ -208,8 +212,10 @@ class CentralNetworkConnectionInfo:
     def state(self):
         r"""Gets the state of this CentralNetworkConnectionInfo.
 
+        中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+
         :return: The state of this CentralNetworkConnectionInfo.
-        :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
+        :rtype: str
         """
         return self._state
 
@@ -217,8 +223,10 @@ class CentralNetworkConnectionInfo:
     def state(self, state):
         r"""Sets the state of this CentralNetworkConnectionInfo.
 
+        中心网络连接状态。 - AVAILABLE (可用) - CREATING (创建中) - UPDATING (更新中) - DELETING (删除中) - FREEZING (冻结中) - UNFREEZING (解冻中) - RECOVERING (恢复中) - FAILED (失败) - DELETED (已删除) - APPROVING (审批中) - APPROVED (已审批) - UNAPPROVED (审批未通过)
+
         :param state: The state of this CentralNetworkConnectionInfo.
-        :type state: :class:`huaweicloudsdkcc.v3.CentralNetworkConnectionStateEnum`
+        :type state: str
         """
         self._state = state
 

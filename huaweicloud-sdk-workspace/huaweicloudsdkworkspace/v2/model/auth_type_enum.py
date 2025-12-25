@@ -4,15 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AuthTypeEnum:
-    """
-    allowed enum values
-    """
-    RADIUS_GATEWAY = "RADIUS_GATEWAY"
-    OAUTH2 = "OAUTH2"
-    LDAP = "LDAP"
-    CLIENT_TOKEN = "CLIENT_TOKEN"
-    USER_PASSWORD = "USER_PASSWORD"
-    FINGER = "FINGER"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

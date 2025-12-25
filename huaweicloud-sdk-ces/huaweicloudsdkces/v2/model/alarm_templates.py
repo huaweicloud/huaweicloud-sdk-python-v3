@@ -17,7 +17,7 @@ class AlarmTemplates:
     openapi_types = {
         'template_id': 'str',
         'template_name': 'str',
-        'template_type': 'TemplateType',
+        'template_type': 'str',
         'create_time': 'datetime',
         'template_description': 'str'
     }
@@ -35,13 +35,13 @@ class AlarmTemplates:
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 告警模板的ID，以at开头，后跟字母、数字，长度最长为64
+        :param template_id: **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
         :type template_id: str
         :param template_name: **参数解释**： 告警模板的名称。 **约束限制**： 不涉及。 **取值范围**： 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度为[1,128]个字符。           **默认取值**： 不涉及。 
         :type template_name: str
-        :param template_type: 
-        :type template_type: :class:`huaweicloudsdkces.v2.TemplateType`
-        :param create_time: 告警模板的创建时间
+        :param template_type: 模板类型(custom代表默认自定义模板，system代表系统模板)
+        :type template_type: str
+        :param create_time: **参数解释**： 告警模板的创建时间 **取值范围**： 不涉及。 
         :type create_time: datetime
         :param template_description: **参数解释**： 告警模板的描述     **约束限制**： 不涉及。 **取值范围**： 长度范围[0,256]。          **默认取值**： 空字符串。 
         :type template_description: str
@@ -67,7 +67,7 @@ class AlarmTemplates:
     def template_id(self):
         r"""Gets the template_id of this AlarmTemplates.
 
-        告警模板的ID，以at开头，后跟字母、数字，长度最长为64
+        **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The template_id of this AlarmTemplates.
         :rtype: str
@@ -78,7 +78,7 @@ class AlarmTemplates:
     def template_id(self, template_id):
         r"""Sets the template_id of this AlarmTemplates.
 
-        告警模板的ID，以at开头，后跟字母、数字，长度最长为64
+        **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
 
         :param template_id: The template_id of this AlarmTemplates.
         :type template_id: str
@@ -111,8 +111,10 @@ class AlarmTemplates:
     def template_type(self):
         r"""Gets the template_type of this AlarmTemplates.
 
+        模板类型(custom代表默认自定义模板，system代表系统模板)
+
         :return: The template_type of this AlarmTemplates.
-        :rtype: :class:`huaweicloudsdkces.v2.TemplateType`
+        :rtype: str
         """
         return self._template_type
 
@@ -120,8 +122,10 @@ class AlarmTemplates:
     def template_type(self, template_type):
         r"""Sets the template_type of this AlarmTemplates.
 
+        模板类型(custom代表默认自定义模板，system代表系统模板)
+
         :param template_type: The template_type of this AlarmTemplates.
-        :type template_type: :class:`huaweicloudsdkces.v2.TemplateType`
+        :type template_type: str
         """
         self._template_type = template_type
 
@@ -129,7 +133,7 @@ class AlarmTemplates:
     def create_time(self):
         r"""Gets the create_time of this AlarmTemplates.
 
-        告警模板的创建时间
+        **参数解释**： 告警模板的创建时间 **取值范围**： 不涉及。 
 
         :return: The create_time of this AlarmTemplates.
         :rtype: datetime
@@ -140,7 +144,7 @@ class AlarmTemplates:
     def create_time(self, create_time):
         r"""Sets the create_time of this AlarmTemplates.
 
-        告警模板的创建时间
+        **参数解释**： 告警模板的创建时间 **取值范围**： 不涉及。 
 
         :param create_time: The create_time of this AlarmTemplates.
         :type create_time: datetime

@@ -17,7 +17,7 @@ class CreateWelcomeSpeechReq:
     openapi_types = {
         'robot_id': 'str',
         'welcome_speech': 'str',
-        'language': 'LanguageEnum'
+        'language': 'str'
     }
 
     attribute_map = {
@@ -35,8 +35,8 @@ class CreateWelcomeSpeechReq:
         :type robot_id: str
         :param welcome_speech: 欢迎词。
         :type welcome_speech: str
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         """
         
         
@@ -99,8 +99,10 @@ class CreateWelcomeSpeechReq:
     def language(self):
         r"""Gets the language of this CreateWelcomeSpeechReq.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this CreateWelcomeSpeechReq.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -108,8 +110,10 @@ class CreateWelcomeSpeechReq:
     def language(self, language):
         r"""Sets the language of this CreateWelcomeSpeechReq.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this CreateWelcomeSpeechReq.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

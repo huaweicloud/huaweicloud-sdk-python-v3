@@ -21,7 +21,7 @@ class BandwidthPackageLineSpecCode:
         'spec_code': 'str',
         'max_bandwidth': 'int',
         'min_bandwidth': 'int',
-        'support_billing_modes': 'list[BillingModeEnum]'
+        'support_billing_modes': 'list[int]'
     }
 
     attribute_map = {
@@ -52,7 +52,7 @@ class BandwidthPackageLineSpecCode:
         :param min_bandwidth: 最小带宽。
         :type min_bandwidth: int
         :param support_billing_modes: 支持的计费模式。
-        :type support_billing_modes: list[:class:`huaweicloudsdkcc.v3.BillingModeEnum`]
+        :type support_billing_modes: list[int]
         """
         
         
@@ -220,7 +220,7 @@ class BandwidthPackageLineSpecCode:
         支持的计费模式。
 
         :return: The support_billing_modes of this BandwidthPackageLineSpecCode.
-        :rtype: list[:class:`huaweicloudsdkcc.v3.BillingModeEnum`]
+        :rtype: list[int]
         """
         return self._support_billing_modes
 
@@ -231,7 +231,7 @@ class BandwidthPackageLineSpecCode:
         支持的计费模式。
 
         :param support_billing_modes: The support_billing_modes of this BandwidthPackageLineSpecCode.
-        :type support_billing_modes: list[:class:`huaweicloudsdkcc.v3.BillingModeEnum`]
+        :type support_billing_modes: list[int]
         """
         self._support_billing_modes = support_billing_modes
 

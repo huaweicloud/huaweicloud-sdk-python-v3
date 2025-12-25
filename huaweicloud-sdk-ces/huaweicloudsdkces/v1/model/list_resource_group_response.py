@@ -30,7 +30,7 @@ class ListResourceGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param resource_groups: 一个或者多个资源分组信息。
+        :param resource_groups: **参数解释**： 一个或者多个资源分组信息。
         :type resource_groups: list[:class:`huaweicloudsdkces.v1.ResourceGroupInfo`]
         :param meta_data: 
         :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`
@@ -51,7 +51,7 @@ class ListResourceGroupResponse(SdkResponse):
     def resource_groups(self):
         r"""Gets the resource_groups of this ListResourceGroupResponse.
 
-        一个或者多个资源分组信息。
+        **参数解释**： 一个或者多个资源分组信息。
 
         :return: The resource_groups of this ListResourceGroupResponse.
         :rtype: list[:class:`huaweicloudsdkces.v1.ResourceGroupInfo`]
@@ -62,7 +62,7 @@ class ListResourceGroupResponse(SdkResponse):
     def resource_groups(self, resource_groups):
         r"""Sets the resource_groups of this ListResourceGroupResponse.
 
-        一个或者多个资源分组信息。
+        **参数解释**： 一个或者多个资源分组信息。
 
         :param resource_groups: The resource_groups of this ListResourceGroupResponse.
         :type resource_groups: list[:class:`huaweicloudsdkces.v1.ResourceGroupInfo`]

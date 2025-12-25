@@ -51,7 +51,7 @@ class EventItemDetail:
         :type group_id: str
         :param resource_id: **参数解释**： 资源ID。 资源ID的查询方法： 1.登录管理控制台。 2.单击“计算 &gt; 弹性云服务器”。 在资源概览页可获取具体资源ID。 **约束限制**： 不涉及。 **取值范围**： 支持字母、数字支持字母、数字、下划线（_）、中划线（-）和冒号（:），最大长度128个字符。例如，6a69bf28-ee62-49f3-9785-845dacd799ec。 **默认取值**： 不涉及。 
         :type resource_id: str
-        :param resource_name: **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 支持字母 中文 数字_ -. ，最大长度128个字符。 **默认取值**： 不涉及。 
+        :param resource_name: **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 支持字母 中文 数字@_ -. ，最大长度128个字符。 **默认取值**： 不涉及。 
         :type resource_name: str
         :param event_state: **参数解释**： 事件状态。 **约束限制**： 不涉及。 **取值范围**： 枚举类型。 - normal：正常发生 - warning：异常 - incident：严重 **默认取值**： 不涉及。 
         :type event_state: str
@@ -172,7 +172,7 @@ class EventItemDetail:
     def resource_name(self):
         r"""Gets the resource_name of this EventItemDetail.
 
-        **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 支持字母 中文 数字_ -. ，最大长度128个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 支持字母 中文 数字@_ -. ，最大长度128个字符。 **默认取值**： 不涉及。 
 
         :return: The resource_name of this EventItemDetail.
         :rtype: str
@@ -183,7 +183,7 @@ class EventItemDetail:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this EventItemDetail.
 
-        **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 支持字母 中文 数字_ -. ，最大长度128个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 资源名称。 **约束限制**： 不涉及。 **取值范围**： 支持字母 中文 数字@_ -. ，最大长度128个字符。 **默认取值**： 不涉及。 
 
         :param resource_name: The resource_name of this EventItemDetail.
         :type resource_name: str

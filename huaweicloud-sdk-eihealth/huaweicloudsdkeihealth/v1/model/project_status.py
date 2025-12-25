@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ProjectStatus:
-    """
-    allowed enum values
-    """
-    ACTIVE = "ACTIVE"
-    INACTIVE = "INACTIVE"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

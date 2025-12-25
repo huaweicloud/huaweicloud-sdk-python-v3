@@ -27,7 +27,7 @@ class UpdateAlarmRulePoliciesReqBodyV2:
 
         The model defined in huaweicloud sdk
 
-        :param policies: **参数解释**： 策略信息。 **约束限制**： 策略信息数量最多为50个。 
+        :param policies: **参数解释**： 策略信息。 **约束限制**： 包含的策略信息数量最多为50个，最少为1个。 
         :type policies: list[:class:`huaweicloudsdkces.v2.UpdatePolicyReq`]
         """
         
@@ -42,7 +42,7 @@ class UpdateAlarmRulePoliciesReqBodyV2:
     def policies(self):
         r"""Gets the policies of this UpdateAlarmRulePoliciesReqBodyV2.
 
-        **参数解释**： 策略信息。 **约束限制**： 策略信息数量最多为50个。 
+        **参数解释**： 策略信息。 **约束限制**： 包含的策略信息数量最多为50个，最少为1个。 
 
         :return: The policies of this UpdateAlarmRulePoliciesReqBodyV2.
         :rtype: list[:class:`huaweicloudsdkces.v2.UpdatePolicyReq`]
@@ -53,7 +53,7 @@ class UpdateAlarmRulePoliciesReqBodyV2:
     def policies(self, policies):
         r"""Sets the policies of this UpdateAlarmRulePoliciesReqBodyV2.
 
-        **参数解释**： 策略信息。 **约束限制**： 策略信息数量最多为50个。 
+        **参数解释**： 策略信息。 **约束限制**： 包含的策略信息数量最多为50个，最少为1个。 
 
         :param policies: The policies of this UpdateAlarmRulePoliciesReqBodyV2.
         :type policies: list[:class:`huaweicloudsdkces.v2.UpdatePolicyReq`]

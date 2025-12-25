@@ -16,8 +16,8 @@ class UpdateWarehouseAppReq:
 
     openapi_types = {
         'app_name': 'str',
-        'app_category': 'AppCategoryEnum',
-        'os_type': 'OsTypeEnum',
+        'app_category': 'str',
+        'os_type': 'str',
         'version_id': 'str',
         'app_description': 'str',
         'version_name': 'str',
@@ -43,10 +43,10 @@ class UpdateWarehouseAppReq:
 
         :param app_name: 应用名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
         :type app_name: str
-        :param app_category: 
-        :type app_category: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
-        :param os_type: 
-        :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
+        :param app_category: 应用分类： * &#x60;GAME&#x60; - 游戏 * &#x60;BUSSINESS_INTELLIGENCE&#x60; - 商业智能 * &#x60;SECURE_STORAGE&#x60; - 安全与存储 * &#x60;MULTIMEDIA_AND_CODING&#x60; - 多媒体与编解码 * &#x60;PROJECT_MANAGEMENT&#x60; - 项目管理 * &#x60;PRODUCTIVITY_AND_COLLABORATION&#x60; - 生产力与协作 * &#x60;WEB_ADN_APPLICATION&#x60; - 网页与应用开发 * &#x60;GRAPHIC_DESIGN&#x60; - 图形设计 * &#x60;OTHER&#x60; - 其它
+        :type app_category: str
+        :param os_type: 系统类型，当前仅支持Windows。 * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; -
+        :type os_type: str
         :param version_id: 版本号,名称需满足如下规则: 1. 由可见字符组成。 2. 长度范围1~64个字符。
         :type version_id: str
         :param app_description: 应用仓库中的应用描述。
@@ -114,8 +114,10 @@ class UpdateWarehouseAppReq:
     def app_category(self):
         r"""Gets the app_category of this UpdateWarehouseAppReq.
 
+        应用分类： * `GAME` - 游戏 * `BUSSINESS_INTELLIGENCE` - 商业智能 * `SECURE_STORAGE` - 安全与存储 * `MULTIMEDIA_AND_CODING` - 多媒体与编解码 * `PROJECT_MANAGEMENT` - 项目管理 * `PRODUCTIVITY_AND_COLLABORATION` - 生产力与协作 * `WEB_ADN_APPLICATION` - 网页与应用开发 * `GRAPHIC_DESIGN` - 图形设计 * `OTHER` - 其它
+
         :return: The app_category of this UpdateWarehouseAppReq.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
+        :rtype: str
         """
         return self._app_category
 
@@ -123,8 +125,10 @@ class UpdateWarehouseAppReq:
     def app_category(self, app_category):
         r"""Sets the app_category of this UpdateWarehouseAppReq.
 
+        应用分类： * `GAME` - 游戏 * `BUSSINESS_INTELLIGENCE` - 商业智能 * `SECURE_STORAGE` - 安全与存储 * `MULTIMEDIA_AND_CODING` - 多媒体与编解码 * `PROJECT_MANAGEMENT` - 项目管理 * `PRODUCTIVITY_AND_COLLABORATION` - 生产力与协作 * `WEB_ADN_APPLICATION` - 网页与应用开发 * `GRAPHIC_DESIGN` - 图形设计 * `OTHER` - 其它
+
         :param app_category: The app_category of this UpdateWarehouseAppReq.
-        :type app_category: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
+        :type app_category: str
         """
         self._app_category = app_category
 
@@ -132,8 +136,10 @@ class UpdateWarehouseAppReq:
     def os_type(self):
         r"""Gets the os_type of this UpdateWarehouseAppReq.
 
+        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
+
         :return: The os_type of this UpdateWarehouseAppReq.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
+        :rtype: str
         """
         return self._os_type
 
@@ -141,8 +147,10 @@ class UpdateWarehouseAppReq:
     def os_type(self, os_type):
         r"""Sets the os_type of this UpdateWarehouseAppReq.
 
+        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
+
         :param os_type: The os_type of this UpdateWarehouseAppReq.
-        :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
+        :type os_type: str
         """
         self._os_type = os_type
 

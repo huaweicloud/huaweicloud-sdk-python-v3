@@ -16,15 +16,21 @@ class BusinessCardImageConfig:
 
     openapi_types = {
         'human_image': 'str',
-        'logo_image': 'str'
+        'logo_image': 'str',
+        'id_card_image1': 'str',
+        'id_card_image2': 'str',
+        'authorize_use_human_image': 'bool'
     }
 
     attribute_map = {
         'human_image': 'human_image',
-        'logo_image': 'logo_image'
+        'logo_image': 'logo_image',
+        'id_card_image1': 'id_card_image1',
+        'id_card_image2': 'id_card_image2',
+        'authorize_use_human_image': 'authorize_use_human_image'
     }
 
-    def __init__(self, human_image=None, logo_image=None):
+    def __init__(self, human_image=None, logo_image=None, id_card_image1=None, id_card_image2=None, authorize_use_human_image=None):
         r"""BusinessCardImageConfig
 
         The model defined in huaweicloud sdk
@@ -33,17 +39,32 @@ class BusinessCardImageConfig:
         :type human_image: str
         :param logo_image: Logo图片，需要Base64编码。
         :type logo_image: str
+        :param id_card_image1: 身份证国徽面照片，需要Base64编码。
+        :type id_card_image1: str
+        :param id_card_image2: 身份证人像面照片，需要Base64编码。
+        :type id_card_image2: str
+        :param authorize_use_human_image: 授权使用照片
+        :type authorize_use_human_image: bool
         """
         
         
 
         self._human_image = None
         self._logo_image = None
+        self._id_card_image1 = None
+        self._id_card_image2 = None
+        self._authorize_use_human_image = None
         self.discriminator = None
 
         self.human_image = human_image
         if logo_image is not None:
             self.logo_image = logo_image
+        if id_card_image1 is not None:
+            self.id_card_image1 = id_card_image1
+        if id_card_image2 is not None:
+            self.id_card_image2 = id_card_image2
+        if authorize_use_human_image is not None:
+            self.authorize_use_human_image = authorize_use_human_image
 
     @property
     def human_image(self):
@@ -88,6 +109,72 @@ class BusinessCardImageConfig:
         :type logo_image: str
         """
         self._logo_image = logo_image
+
+    @property
+    def id_card_image1(self):
+        r"""Gets the id_card_image1 of this BusinessCardImageConfig.
+
+        身份证国徽面照片，需要Base64编码。
+
+        :return: The id_card_image1 of this BusinessCardImageConfig.
+        :rtype: str
+        """
+        return self._id_card_image1
+
+    @id_card_image1.setter
+    def id_card_image1(self, id_card_image1):
+        r"""Sets the id_card_image1 of this BusinessCardImageConfig.
+
+        身份证国徽面照片，需要Base64编码。
+
+        :param id_card_image1: The id_card_image1 of this BusinessCardImageConfig.
+        :type id_card_image1: str
+        """
+        self._id_card_image1 = id_card_image1
+
+    @property
+    def id_card_image2(self):
+        r"""Gets the id_card_image2 of this BusinessCardImageConfig.
+
+        身份证人像面照片，需要Base64编码。
+
+        :return: The id_card_image2 of this BusinessCardImageConfig.
+        :rtype: str
+        """
+        return self._id_card_image2
+
+    @id_card_image2.setter
+    def id_card_image2(self, id_card_image2):
+        r"""Sets the id_card_image2 of this BusinessCardImageConfig.
+
+        身份证人像面照片，需要Base64编码。
+
+        :param id_card_image2: The id_card_image2 of this BusinessCardImageConfig.
+        :type id_card_image2: str
+        """
+        self._id_card_image2 = id_card_image2
+
+    @property
+    def authorize_use_human_image(self):
+        r"""Gets the authorize_use_human_image of this BusinessCardImageConfig.
+
+        授权使用照片
+
+        :return: The authorize_use_human_image of this BusinessCardImageConfig.
+        :rtype: bool
+        """
+        return self._authorize_use_human_image
+
+    @authorize_use_human_image.setter
+    def authorize_use_human_image(self, authorize_use_human_image):
+        r"""Sets the authorize_use_human_image of this BusinessCardImageConfig.
+
+        授权使用照片
+
+        :param authorize_use_human_image: The authorize_use_human_image of this BusinessCardImageConfig.
+        :type authorize_use_human_image: bool
+        """
+        self._authorize_use_human_image = authorize_use_human_image
 
     def to_dict(self):
         result = {}

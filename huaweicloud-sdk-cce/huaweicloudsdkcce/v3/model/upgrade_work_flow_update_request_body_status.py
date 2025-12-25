@@ -15,7 +15,7 @@ class UpgradeWorkFlowUpdateRequestBodyStatus:
     sensitive_list = []
 
     openapi_types = {
-        'phase': 'WorkFlowPhase'
+        'phase': 'str'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class UpgradeWorkFlowUpdateRequestBodyStatus:
 
         The model defined in huaweicloud sdk
 
-        :param phase: 
-        :type phase: :class:`huaweicloudsdkcce.v3.WorkFlowPhase`
+        :param phase: 集群升级流程的执行状态： Init: 表示该升级流程中还未有任何任务开始运行 Running: 表示该升级流程中已有任务开始执行 Pending: 表示该升级流程中有任务执行失败 Success: 表示该升级流程中所有任务都已执行成功 Cancel: 表示该升级流程已被取消 
+        :type phase: str
         """
         
         
@@ -43,8 +43,10 @@ class UpgradeWorkFlowUpdateRequestBodyStatus:
     def phase(self):
         r"""Gets the phase of this UpgradeWorkFlowUpdateRequestBodyStatus.
 
+        集群升级流程的执行状态： Init: 表示该升级流程中还未有任何任务开始运行 Running: 表示该升级流程中已有任务开始执行 Pending: 表示该升级流程中有任务执行失败 Success: 表示该升级流程中所有任务都已执行成功 Cancel: 表示该升级流程已被取消 
+
         :return: The phase of this UpgradeWorkFlowUpdateRequestBodyStatus.
-        :rtype: :class:`huaweicloudsdkcce.v3.WorkFlowPhase`
+        :rtype: str
         """
         return self._phase
 
@@ -52,8 +54,10 @@ class UpgradeWorkFlowUpdateRequestBodyStatus:
     def phase(self, phase):
         r"""Sets the phase of this UpgradeWorkFlowUpdateRequestBodyStatus.
 
+        集群升级流程的执行状态： Init: 表示该升级流程中还未有任何任务开始运行 Running: 表示该升级流程中已有任务开始执行 Pending: 表示该升级流程中有任务执行失败 Success: 表示该升级流程中所有任务都已执行成功 Cancel: 表示该升级流程已被取消 
+
         :param phase: The phase of this UpgradeWorkFlowUpdateRequestBodyStatus.
-        :type phase: :class:`huaweicloudsdkcce.v3.WorkFlowPhase`
+        :type phase: str
         """
         self._phase = phase
 

@@ -4,10 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ApiVersionObj:
-    """
-    allowed enum values
-    """
-    V1 = "v1"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

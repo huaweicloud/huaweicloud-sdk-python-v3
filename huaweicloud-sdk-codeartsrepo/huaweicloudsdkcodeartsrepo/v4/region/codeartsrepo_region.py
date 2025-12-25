@@ -36,6 +36,8 @@ class CodeArtsRepoRegion:
                         "https://repo.af-south-1.myhuaweicloud.com")
     AF_NORTH_1 = Region("af-north-1",
                         "https://repo.af-north-1.myhuaweicloud.com")
+    EU_WEST_101 = Region("eu-west-101",
+                        "https://codeartsrepo-ext.eu-west-101.myhuaweicloud.com")
 
     static_fields = {
         "cn-east-2": CN_EAST_2,
@@ -53,6 +55,7 @@ class CodeArtsRepoRegion:
         "tr-west-1": TR_WEST_1,
         "af-south-1": AF_SOUTH_1,
         "af-north-1": AF_NORTH_1,
+        "eu-west-101": EU_WEST_101,
     }
 
     @classmethod

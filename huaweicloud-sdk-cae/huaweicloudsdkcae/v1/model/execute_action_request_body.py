@@ -15,8 +15,8 @@ class ExecuteActionRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'ApiVersionObj',
-        'kind': 'ActionKindObj',
+        'api_version': 'str',
+        'kind': 'str',
         'metadata': 'ExecuteActionRequestBodyMetadata',
         'spec': 'ActionOnComponentSpec'
     }
@@ -33,10 +33,10 @@ class ExecuteActionRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param api_version: 
-        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
-        :param kind: 
-        :type kind: :class:`huaweicloudsdkcae.v1.ActionKindObj`
+        :param api_version: API版本，固定值“v1”，该值不可修改。
+        :type api_version: str
+        :param kind: API类型，固定值“Action”，该值不可修改。
+        :type kind: str
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkcae.v1.ExecuteActionRequestBodyMetadata`
         :param spec: 
@@ -62,8 +62,10 @@ class ExecuteActionRequestBody:
     def api_version(self):
         r"""Gets the api_version of this ExecuteActionRequestBody.
 
+        API版本，固定值“v1”，该值不可修改。
+
         :return: The api_version of this ExecuteActionRequestBody.
-        :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :rtype: str
         """
         return self._api_version
 
@@ -71,8 +73,10 @@ class ExecuteActionRequestBody:
     def api_version(self, api_version):
         r"""Sets the api_version of this ExecuteActionRequestBody.
 
+        API版本，固定值“v1”，该值不可修改。
+
         :param api_version: The api_version of this ExecuteActionRequestBody.
-        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -80,8 +84,10 @@ class ExecuteActionRequestBody:
     def kind(self):
         r"""Gets the kind of this ExecuteActionRequestBody.
 
+        API类型，固定值“Action”，该值不可修改。
+
         :return: The kind of this ExecuteActionRequestBody.
-        :rtype: :class:`huaweicloudsdkcae.v1.ActionKindObj`
+        :rtype: str
         """
         return self._kind
 
@@ -89,8 +95,10 @@ class ExecuteActionRequestBody:
     def kind(self, kind):
         r"""Sets the kind of this ExecuteActionRequestBody.
 
+        API类型，固定值“Action”，该值不可修改。
+
         :param kind: The kind of this ExecuteActionRequestBody.
-        :type kind: :class:`huaweicloudsdkcae.v1.ActionKindObj`
+        :type kind: str
         """
         self._kind = kind
 

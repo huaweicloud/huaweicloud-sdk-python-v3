@@ -4,14 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class WorkFlowPhase:
-    """
-    allowed enum values
-    """
-    INIT = "Init"
-    RUNNING = "Running"
-    PENDING = "Pending"
-    SUCCESS = "Success"
-    CANCEL = "Cancel"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

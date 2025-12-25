@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ApplyBgEnum:
-    """
-    allowed enum values
-    """
-    CLOUD_BU = "CLOUD_BU"
-    BG1 = "BG1"
-    BG2 = "BG2"
-    BG3 = "BG3"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

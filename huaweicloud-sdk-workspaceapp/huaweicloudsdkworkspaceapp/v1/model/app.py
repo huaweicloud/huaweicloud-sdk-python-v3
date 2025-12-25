@@ -25,7 +25,7 @@ class App:
         'icon_index': 'int',
         'description': 'str',
         'app_group_id': 'str',
-        'state': 'AppStateEnum',
+        'state': 'str',
         'tenant_id': 'str',
         'publish_at': 'datetime',
         'source_type': 'int',
@@ -85,8 +85,8 @@ class App:
         :type description: str
         :param app_group_id: 应用组标识Id。
         :type app_group_id: str
-        :param state: 
-        :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
+        :param state: 应用状态： * &#x60;NORMAL&#x60; - 正常状态。 * &#x60;FORBIDDEN&#x60; - 禁用状态。
+        :type state: str
         :param tenant_id: 所在的租户ID。
         :type tenant_id: str
         :param publish_at: 发布时间。
@@ -396,8 +396,10 @@ class App:
     def state(self):
         r"""Gets the state of this App.
 
+        应用状态： * `NORMAL` - 正常状态。 * `FORBIDDEN` - 禁用状态。
+
         :return: The state of this App.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
+        :rtype: str
         """
         return self._state
 
@@ -405,8 +407,10 @@ class App:
     def state(self, state):
         r"""Sets the state of this App.
 
+        应用状态： * `NORMAL` - 正常状态。 * `FORBIDDEN` - 禁用状态。
+
         :param state: The state of this App.
-        :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
+        :type state: str
         """
         self._state = state
 

@@ -29,9 +29,9 @@ class BackupDatabase:
 
         The model defined in huaweicloud sdk
 
-        :param type: 数据库引擎。 取值：DDS-Community。
+        :param type: **参数解释：** 数据库引擎 **取值范围：** DDS-Community。
         :type type: str
-        :param version: 数据库版本。取值：“3.4”、“4.0”、“4.2”、“4.4”、“5.0”。
+        :param version: **参数解释：** 数据库版本。 **取值范围：** 取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
         :type version: str
         """
         
@@ -48,7 +48,7 @@ class BackupDatabase:
     def type(self):
         r"""Gets the type of this BackupDatabase.
 
-        数据库引擎。 取值：DDS-Community。
+        **参数解释：** 数据库引擎 **取值范围：** DDS-Community。
 
         :return: The type of this BackupDatabase.
         :rtype: str
@@ -59,7 +59,7 @@ class BackupDatabase:
     def type(self, type):
         r"""Sets the type of this BackupDatabase.
 
-        数据库引擎。 取值：DDS-Community。
+        **参数解释：** 数据库引擎 **取值范围：** DDS-Community。
 
         :param type: The type of this BackupDatabase.
         :type type: str
@@ -70,7 +70,7 @@ class BackupDatabase:
     def version(self):
         r"""Gets the version of this BackupDatabase.
 
-        数据库版本。取值：“3.4”、“4.0”、“4.2”、“4.4”、“5.0”。
+        **参数解释：** 数据库版本。 **取值范围：** 取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
 
         :return: The version of this BackupDatabase.
         :rtype: str
@@ -81,7 +81,7 @@ class BackupDatabase:
     def version(self, version):
         r"""Sets the version of this BackupDatabase.
 
-        数据库版本。取值：“3.4”、“4.0”、“4.2”、“4.4”、“5.0”。
+        **参数解释：** 数据库版本。 **取值范围：** 取值为“5.0”、“4.4”、“4.2”、“4.0”、“3.4”。
 
         :param version: The version of this BackupDatabase.
         :type version: str

@@ -21,7 +21,7 @@ class WorkspaceVO:
         'is_physical': 'bool',
         'frequent': 'bool',
         'top': 'bool',
-        'level': 'ModelLevel',
+        'level': 'str',
         'dw_type': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
@@ -69,8 +69,8 @@ class WorkspaceVO:
         :type frequent: bool
         :param top: 分层治理。
         :type top: bool
-        :param level: 
-        :type level: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
+        :param level: 数据治理分层。 枚举值：   - SDI: 贴源数据层   - DWI: 数据整合层   - DWR: 数据报告层   - DM:  数据集市层 
+        :type level: str
         :param dw_type: 数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
         :type dw_type: str
         :param create_time: 创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
@@ -278,8 +278,10 @@ class WorkspaceVO:
     def level(self):
         r"""Gets the level of this WorkspaceVO.
 
+        数据治理分层。 枚举值：   - SDI: 贴源数据层   - DWI: 数据整合层   - DWR: 数据报告层   - DM:  数据集市层 
+
         :return: The level of this WorkspaceVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
+        :rtype: str
         """
         return self._level
 
@@ -287,8 +289,10 @@ class WorkspaceVO:
     def level(self, level):
         r"""Sets the level of this WorkspaceVO.
 
+        数据治理分层。 枚举值：   - SDI: 贴源数据层   - DWI: 数据整合层   - DWR: 数据报告层   - DM:  数据集市层 
+
         :param level: The level of this WorkspaceVO.
-        :type level: :class:`huaweicloudsdkdataartsstudio.v1.ModelLevel`
+        :type level: str
         """
         self._level = level
 

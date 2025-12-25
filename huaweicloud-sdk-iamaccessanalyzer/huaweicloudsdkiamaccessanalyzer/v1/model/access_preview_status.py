@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AccessPreviewStatus:
-    """
-    allowed enum values
-    """
-    CREATING = "creating"
-    COMPLETED = "completed"
-    FAILED = "failed"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

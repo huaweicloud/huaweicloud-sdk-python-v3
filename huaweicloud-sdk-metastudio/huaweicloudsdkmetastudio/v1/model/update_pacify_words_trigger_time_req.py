@@ -16,7 +16,7 @@ class UpdatePacifyWordsTriggerTimeReq:
 
     openapi_types = {
         'robot_id': 'str',
-        'language': 'LanguageEnum',
+        'language': 'str',
         'trigger_time': 'int'
     }
 
@@ -33,8 +33,8 @@ class UpdatePacifyWordsTriggerTimeReq:
 
         :param robot_id: 应用ID。
         :type robot_id: str
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param trigger_time: 安抚话术等待触发时长，单位毫秒
         :type trigger_time: int
         """
@@ -76,8 +76,10 @@ class UpdatePacifyWordsTriggerTimeReq:
     def language(self):
         r"""Gets the language of this UpdatePacifyWordsTriggerTimeReq.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this UpdatePacifyWordsTriggerTimeReq.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -85,8 +87,10 @@ class UpdatePacifyWordsTriggerTimeReq:
     def language(self, language):
         r"""Sets the language of this UpdatePacifyWordsTriggerTimeReq.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this UpdatePacifyWordsTriggerTimeReq.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

@@ -17,16 +17,18 @@ class ListServiceTypesRequest:
     openapi_types = {
         'x_language': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'service_type_name': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'service_type_name': 'service_type_name'
     }
 
-    def __init__(self, x_language=None, limit=None, offset=None):
+    def __init__(self, x_language=None, limit=None, offset=None, service_type_name=None):
         r"""ListServiceTypesRequest
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class ListServiceTypesRequest:
         :type limit: int
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
+        :param service_type_name: |参数名称：云服务类型的名称| |参数的约束及描述：该参数非必填，范围限制：1-128，支持模糊查询。仅支持前缀匹配、后缀匹配、中间匹配。|
+        :type service_type_name: str
         """
         
         
@@ -44,6 +48,7 @@ class ListServiceTypesRequest:
         self._x_language = None
         self._limit = None
         self._offset = None
+        self._service_type_name = None
         self.discriminator = None
 
         if x_language is not None:
@@ -52,6 +57,8 @@ class ListServiceTypesRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if service_type_name is not None:
+            self.service_type_name = service_type_name
 
     @property
     def x_language(self):
@@ -118,6 +125,28 @@ class ListServiceTypesRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def service_type_name(self):
+        r"""Gets the service_type_name of this ListServiceTypesRequest.
+
+        |参数名称：云服务类型的名称| |参数的约束及描述：该参数非必填，范围限制：1-128，支持模糊查询。仅支持前缀匹配、后缀匹配、中间匹配。|
+
+        :return: The service_type_name of this ListServiceTypesRequest.
+        :rtype: str
+        """
+        return self._service_type_name
+
+    @service_type_name.setter
+    def service_type_name(self, service_type_name):
+        r"""Sets the service_type_name of this ListServiceTypesRequest.
+
+        |参数名称：云服务类型的名称| |参数的约束及描述：该参数非必填，范围限制：1-128，支持模糊查询。仅支持前缀匹配、后缀匹配、中间匹配。|
+
+        :param service_type_name: The service_type_name of this ListServiceTypesRequest.
+        :type service_type_name: str
+        """
+        self._service_type_name = service_type_name
 
     def to_dict(self):
         result = {}

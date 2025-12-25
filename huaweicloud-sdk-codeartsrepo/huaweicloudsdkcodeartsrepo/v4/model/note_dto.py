@@ -101,7 +101,7 @@ class NoteDto:
 
         :param id: **参数解释：** 评论id(主评论和回复不共用)。
         :type id: int
-        :param type: **参数解释：** 评论类型。 **取值范围：** - DiscussionNote: 需要解决的关联代码行的评论。 - DiffNote: 一般。 - null: 普通评论。
+        :param type: **参数解释：** 评论类型。 **取值范围：** - DiscussionNote: 需要解决的关联代码行的评论。 - DiffNote: 一般。
         :type type: str
         :param body: **参数解释：** 评论内容。
         :type body: str
@@ -317,7 +317,7 @@ class NoteDto:
     def type(self):
         r"""Gets the type of this NoteDto.
 
-        **参数解释：** 评论类型。 **取值范围：** - DiscussionNote: 需要解决的关联代码行的评论。 - DiffNote: 一般。 - null: 普通评论。
+        **参数解释：** 评论类型。 **取值范围：** - DiscussionNote: 需要解决的关联代码行的评论。 - DiffNote: 一般。
 
         :return: The type of this NoteDto.
         :rtype: str
@@ -328,7 +328,7 @@ class NoteDto:
     def type(self, type):
         r"""Sets the type of this NoteDto.
 
-        **参数解释：** 评论类型。 **取值范围：** - DiscussionNote: 需要解决的关联代码行的评论。 - DiffNote: 一般。 - null: 普通评论。
+        **参数解释：** 评论类型。 **取值范围：** - DiscussionNote: 需要解决的关联代码行的评论。 - DiffNote: 一般。
 
         :param type: The type of this NoteDto.
         :type type: str

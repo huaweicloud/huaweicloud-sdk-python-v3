@@ -50,7 +50,7 @@ class ListJobDetailsResponse(SdkResponse):
         :type begin_time: str
         :param end_time: **参数解释**： 任务结束时间。 **取值范围**： 不涉及。
         :type end_time: str
-        :param status: **参数解释**： 任务当前状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 任务当前状态。 **取值范围**： - INIT：初始化。 - WAITING：等待中。 - RUNNING：运行中。 - DELAY_SCHEDULED：延迟调度。 - FAIL：失败。 - SUCCESS：成功。 - STOP：停止。
         :type status: str
         :param failed_code: **参数解释**： 任务失败错误码。 **取值范围**： 不涉及。
         :type failed_code: str
@@ -181,7 +181,7 @@ class ListJobDetailsResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ListJobDetailsResponse.
 
-        **参数解释**： 任务当前状态。 **取值范围**： 不涉及。
+        **参数解释**： 任务当前状态。 **取值范围**： - INIT：初始化。 - WAITING：等待中。 - RUNNING：运行中。 - DELAY_SCHEDULED：延迟调度。 - FAIL：失败。 - SUCCESS：成功。 - STOP：停止。
 
         :return: The status of this ListJobDetailsResponse.
         :rtype: str
@@ -192,7 +192,7 @@ class ListJobDetailsResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ListJobDetailsResponse.
 
-        **参数解释**： 任务当前状态。 **取值范围**： 不涉及。
+        **参数解释**： 任务当前状态。 **取值范围**： - INIT：初始化。 - WAITING：等待中。 - RUNNING：运行中。 - DELAY_SCHEDULED：延迟调度。 - FAIL：失败。 - SUCCESS：成功。 - STOP：停止。
 
         :param status: The status of this ListJobDetailsResponse.
         :type status: str

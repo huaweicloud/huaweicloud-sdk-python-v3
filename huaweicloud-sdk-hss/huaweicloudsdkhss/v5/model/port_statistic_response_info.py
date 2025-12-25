@@ -39,7 +39,7 @@ class PortStatisticResponseInfo:
         :type type: str
         :param num: **参数解释**: 端口数量 **取值范围**: 最小值0，最大值65535 
         :type num: int
-        :param status: **参数解释**: 危险类型 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口 
+        :param status: **参数解释**: 危险类型 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknown: 无已知危险的端口 
         :type status: str
         """
         
@@ -130,7 +130,7 @@ class PortStatisticResponseInfo:
     def status(self):
         r"""Gets the status of this PortStatisticResponseInfo.
 
-        **参数解释**: 危险类型 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口 
+        **参数解释**: 危险类型 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknown: 无已知危险的端口 
 
         :return: The status of this PortStatisticResponseInfo.
         :rtype: str
@@ -141,7 +141,7 @@ class PortStatisticResponseInfo:
     def status(self, status):
         r"""Sets the status of this PortStatisticResponseInfo.
 
-        **参数解释**: 危险类型 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknow: 无已知危险的端口 
+        **参数解释**: 危险类型 **取值范围**: - danger: 危险端口 - normal: 正常端口 - unknown: 无已知危险的端口 
 
         :param status: The status of this PortStatisticResponseInfo.
         :type status: str

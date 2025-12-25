@@ -4,10 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ValidatePolicyResourceType:
-    """
-    allowed enum values
-    """
-    IAM_AGENCY = "iam:agency"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

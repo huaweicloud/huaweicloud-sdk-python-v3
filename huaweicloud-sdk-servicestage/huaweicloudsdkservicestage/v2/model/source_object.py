@@ -15,7 +15,7 @@ class SourceObject:
     sensitive_list = []
 
     openapi_types = {
-        'kind': 'SourceKind',
+        'kind': 'str',
         'spec': 'SourceOrArtifact'
     }
 
@@ -29,8 +29,8 @@ class SourceObject:
 
         The model defined in huaweicloud sdk
 
-        :param kind: 
-        :type kind: :class:`huaweicloudsdkservicestage.v2.SourceKind`
+        :param kind: 来源类型。支持源码code和artifact软件包。
+        :type kind: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkservicestage.v2.SourceOrArtifact`
         """
@@ -48,8 +48,10 @@ class SourceObject:
     def kind(self):
         r"""Gets the kind of this SourceObject.
 
+        来源类型。支持源码code和artifact软件包。
+
         :return: The kind of this SourceObject.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.SourceKind`
+        :rtype: str
         """
         return self._kind
 
@@ -57,8 +59,10 @@ class SourceObject:
     def kind(self, kind):
         r"""Sets the kind of this SourceObject.
 
+        来源类型。支持源码code和artifact软件包。
+
         :param kind: The kind of this SourceObject.
-        :type kind: :class:`huaweicloudsdkservicestage.v2.SourceKind`
+        :type kind: str
         """
         self._kind = kind
 

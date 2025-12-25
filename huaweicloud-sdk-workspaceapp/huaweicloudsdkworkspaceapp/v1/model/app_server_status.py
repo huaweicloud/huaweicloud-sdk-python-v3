@@ -4,28 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AppServerStatus:
-    """
-    allowed enum values
-    """
-    BUILD = "BUILD"
-    BUILD_FAIL = "BUILD_FAIL"
-    REBOOT = "REBOOT"
-    HARD_REBOOT = "HARD_REBOOT"
-    REBUILD = "REBUILD"
-    REBUILD_FAIL = "REBUILD_FAIL"
-    MIGRATING = "MIGRATING"
-    RESIZE = "RESIZE"
-    ACTIVE = "ACTIVE"
-    SHUTOFF = "SHUTOFF"
-    REVERT_RESIZE = "REVERT_RESIZE"
-    VERIFY_RESIZE = "VERIFY_RESIZE"
-    ERROR = "ERROR"
-    DELETING = "DELETING"
-    FREEZE = "FREEZE"
-    BUILD_IMAGE = "BUILD_IMAGE"
-    BUILD_SNAPSHOT = "BUILD_SNAPSHOT"
-    RESTORE_SNAPSHOT = "RESTORE_SNAPSHOT"
-    NULL = "null"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

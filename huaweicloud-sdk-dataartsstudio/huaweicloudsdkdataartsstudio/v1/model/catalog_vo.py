@@ -22,7 +22,7 @@ class CatalogVO:
         'guid': 'str',
         'code': 'str',
         'alias': 'str',
-        'status': 'BizStatusEnum',
+        'status': 'str',
         'new_biz': 'BizVersionManageVO',
         'data_owner': 'str',
         'data_owner_list': 'str',
@@ -95,8 +95,8 @@ class CatalogVO:
         :type code: str
         :param alias: 别名。
         :type alias: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :param status: 实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+        :type status: str
         :param new_biz: 
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
         :param data_owner: 数据所有者。
@@ -386,8 +386,10 @@ class CatalogVO:
     def status(self):
         r"""Gets the status of this CatalogVO.
 
+        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+
         :return: The status of this CatalogVO.
-        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :rtype: str
         """
         return self._status
 
@@ -395,8 +397,10 @@ class CatalogVO:
     def status(self, status):
         r"""Sets the status of this CatalogVO.
 
+        实体的发布状态，只读，创建和更新时无需填写。 枚举值：   - DRAFT: 草稿   - PUBLISH_DEVELOPING: 发布待审核   - PUBLISHED: 已发布   - OFFLINE_DEVELOPING: 下线待审核   - OFFLINE: 已下线   - REJECT: 已驳回 
+
         :param status: The status of this CatalogVO.
-        :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
+        :type status: str
         """
         self._status = status
 

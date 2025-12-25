@@ -30,9 +30,9 @@ class BatchUpdateNotificationMasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param relation_ids: 创建成功的关联ID列表
+        :param relation_ids: **参数解释**： 创建成功的关联ID列表 
         :type relation_ids: list[str]
-        :param notification_mask_id: 屏蔽规则ID
+        :param notification_mask_id: **参数解释**： 屏蔽规则ID **取值范围**： 以nm开头，后跟[0,62]位字母或数字。 
         :type notification_mask_id: str
         """
         
@@ -51,7 +51,7 @@ class BatchUpdateNotificationMasksResponse(SdkResponse):
     def relation_ids(self):
         r"""Gets the relation_ids of this BatchUpdateNotificationMasksResponse.
 
-        创建成功的关联ID列表
+        **参数解释**： 创建成功的关联ID列表 
 
         :return: The relation_ids of this BatchUpdateNotificationMasksResponse.
         :rtype: list[str]
@@ -62,7 +62,7 @@ class BatchUpdateNotificationMasksResponse(SdkResponse):
     def relation_ids(self, relation_ids):
         r"""Sets the relation_ids of this BatchUpdateNotificationMasksResponse.
 
-        创建成功的关联ID列表
+        **参数解释**： 创建成功的关联ID列表 
 
         :param relation_ids: The relation_ids of this BatchUpdateNotificationMasksResponse.
         :type relation_ids: list[str]
@@ -73,7 +73,7 @@ class BatchUpdateNotificationMasksResponse(SdkResponse):
     def notification_mask_id(self):
         r"""Gets the notification_mask_id of this BatchUpdateNotificationMasksResponse.
 
-        屏蔽规则ID
+        **参数解释**： 屏蔽规则ID **取值范围**： 以nm开头，后跟[0,62]位字母或数字。 
 
         :return: The notification_mask_id of this BatchUpdateNotificationMasksResponse.
         :rtype: str
@@ -84,7 +84,7 @@ class BatchUpdateNotificationMasksResponse(SdkResponse):
     def notification_mask_id(self, notification_mask_id):
         r"""Sets the notification_mask_id of this BatchUpdateNotificationMasksResponse.
 
-        屏蔽规则ID
+        **参数解释**： 屏蔽规则ID **取值范围**： 以nm开头，后跟[0,62]位字母或数字。 
 
         :param notification_mask_id: The notification_mask_id of this BatchUpdateNotificationMasksResponse.
         :type notification_mask_id: str

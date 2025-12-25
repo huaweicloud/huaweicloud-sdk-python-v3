@@ -21,7 +21,7 @@ class ConnectionPoint:
         'site_code': 'str',
         'instance_id': 'str',
         'parent_instance_id': 'str',
-        'type': 'ConnectionPointTypeEnum'
+        'type': 'str'
     }
 
     attribute_map = {
@@ -51,8 +51,8 @@ class ConnectionPoint:
         :type instance_id: str
         :param parent_instance_id: 连接点的实例的父资源ID。
         :type parent_instance_id: str
-        :param type: 
-        :type type: :class:`huaweicloudsdkcc.v3.ConnectionPointTypeEnum`
+        :param type: 中心网络连接点类型定义： - ER (EnterpriseRouter) - GDGW (Global DC Gateway) - ER_ROUTE_TABLE (Route Table)
+        :type type: str
         """
         
         
@@ -211,8 +211,10 @@ class ConnectionPoint:
     def type(self):
         r"""Gets the type of this ConnectionPoint.
 
+        中心网络连接点类型定义： - ER (EnterpriseRouter) - GDGW (Global DC Gateway) - ER_ROUTE_TABLE (Route Table)
+
         :return: The type of this ConnectionPoint.
-        :rtype: :class:`huaweicloudsdkcc.v3.ConnectionPointTypeEnum`
+        :rtype: str
         """
         return self._type
 
@@ -220,8 +222,10 @@ class ConnectionPoint:
     def type(self, type):
         r"""Sets the type of this ConnectionPoint.
 
+        中心网络连接点类型定义： - ER (EnterpriseRouter) - GDGW (Global DC Gateway) - ER_ROUTE_TABLE (Route Table)
+
         :param type: The type of this ConnectionPoint.
-        :type type: :class:`huaweicloudsdkcc.v3.ConnectionPointTypeEnum`
+        :type type: str
         """
         self._type = type
 

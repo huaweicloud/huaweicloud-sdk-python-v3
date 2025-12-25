@@ -31,9 +31,9 @@ class CreateAlertRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目 ID。Project ID.
+        :param project_id: **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type project_id: str
-        :param workspace_id: 工作空间 ID。Workspace ID.
+        :param workspace_id: 工作空间ID
         :type workspace_id: str
         :param body: Body of the CreateAlertRuleRequest
         :type body: :class:`huaweicloudsdksecmaster.v2.CreateAlertRuleRequestBody`
@@ -55,7 +55,7 @@ class CreateAlertRuleRequest:
     def project_id(self):
         r"""Gets the project_id of this CreateAlertRuleRequest.
 
-        项目 ID。Project ID.
+        **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The project_id of this CreateAlertRuleRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class CreateAlertRuleRequest:
     def project_id(self, project_id):
         r"""Sets the project_id of this CreateAlertRuleRequest.
 
-        项目 ID。Project ID.
+        **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param project_id: The project_id of this CreateAlertRuleRequest.
         :type project_id: str
@@ -77,7 +77,7 @@ class CreateAlertRuleRequest:
     def workspace_id(self):
         r"""Gets the workspace_id of this CreateAlertRuleRequest.
 
-        工作空间 ID。Workspace ID.
+        工作空间ID
 
         :return: The workspace_id of this CreateAlertRuleRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class CreateAlertRuleRequest:
     def workspace_id(self, workspace_id):
         r"""Sets the workspace_id of this CreateAlertRuleRequest.
 
-        工作空间 ID。Workspace ID.
+        工作空间ID
 
         :param workspace_id: The workspace_id of this CreateAlertRuleRequest.
         :type workspace_id: str

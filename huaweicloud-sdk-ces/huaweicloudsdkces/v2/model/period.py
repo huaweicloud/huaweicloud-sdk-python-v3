@@ -4,16 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Period:
-    """
-    allowed enum values
-    """
-    _0 = "0"
-    _1 = "1"
-    _300 = "300"
-    _1200 = "1200"
-    _3600 = "3600"
-    _14400 = "14400"
-    _86400 = "86400"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

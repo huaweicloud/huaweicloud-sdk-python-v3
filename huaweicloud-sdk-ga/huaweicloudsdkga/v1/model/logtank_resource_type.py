@@ -4,10 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class LogtankResourceType:
-    """
-    allowed enum values
-    """
-    LISTENER = "LISTENER"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

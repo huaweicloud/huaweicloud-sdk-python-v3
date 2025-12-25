@@ -20,7 +20,10 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
         'alarm_notifications': 'list[NotificationResp]',
         'ok_notifications': 'list[NotificationResp]',
         'notification_begin_time': 'str',
-        'notification_end_time': 'str'
+        'notification_end_time': 'str',
+        'effective_timezone': 'str',
+        'notification_manner': 'str',
+        'notification_policy_ids': 'list[str]'
     }
 
     attribute_map = {
@@ -28,10 +31,13 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
         'alarm_notifications': 'alarm_notifications',
         'ok_notifications': 'ok_notifications',
         'notification_begin_time': 'notification_begin_time',
-        'notification_end_time': 'notification_end_time'
+        'notification_end_time': 'notification_end_time',
+        'effective_timezone': 'effective_timezone',
+        'notification_manner': 'notification_manner',
+        'notification_policy_ids': 'notification_policy_ids'
     }
 
-    def __init__(self, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None):
+    def __init__(self, notification_enabled=None, alarm_notifications=None, ok_notifications=None, notification_begin_time=None, notification_end_time=None, effective_timezone=None, notification_manner=None, notification_policy_ids=None):
         r"""UpdateAlarmNotificationsResponse
 
         The model defined in huaweicloud sdk
@@ -42,10 +48,16 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
         :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
-        :param notification_begin_time: **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        :param notification_begin_time: **参数解释**： 告警通知开启时间。如 00:00    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
         :type notification_begin_time: str
-        :param notification_end_time: **参数解释**： 告警通知关闭时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        :param notification_end_time: **参数解释**： 告警通知关闭时间。如 08:00   **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
         :type notification_end_time: str
+        :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **取值范围**： 长度为[1,16]个字符。 
+        :type effective_timezone: str
+        :param notification_manner: **参数解释**： 告警的通知方式 **取值范围**： - NOTIFICATION_GROUP: 通知组 - TOPIC_SUBSCRIPTION: 主题订阅 - NOTIFICATION_POLICY：通知策略 
+        :type notification_manner: str
+        :param notification_policy_ids: **参数解释**： 关联的通知策略ID列表 
+        :type notification_policy_ids: list[str]
         """
         
         super().__init__()
@@ -55,6 +67,9 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
         self._ok_notifications = None
         self._notification_begin_time = None
         self._notification_end_time = None
+        self._effective_timezone = None
+        self._notification_manner = None
+        self._notification_policy_ids = None
         self.discriminator = None
 
         if notification_enabled is not None:
@@ -67,6 +82,12 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
             self.notification_begin_time = notification_begin_time
         if notification_end_time is not None:
             self.notification_end_time = notification_end_time
+        if effective_timezone is not None:
+            self.effective_timezone = effective_timezone
+        if notification_manner is not None:
+            self.notification_manner = notification_manner
+        if notification_policy_ids is not None:
+            self.notification_policy_ids = notification_policy_ids
 
     @property
     def notification_enabled(self):
@@ -138,7 +159,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        **参数解释**： 告警通知开启时间。如 00:00    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :return: The notification_begin_time of this UpdateAlarmNotificationsResponse.
         :rtype: str
@@ -149,7 +170,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        **参数解释**： 告警通知开启时间。如 00:00    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :param notification_begin_time: The notification_begin_time of this UpdateAlarmNotificationsResponse.
         :type notification_begin_time: str
@@ -160,7 +181,7 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_end_time(self):
         r"""Gets the notification_end_time of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 告警通知关闭时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        **参数解释**： 告警通知关闭时间。如 08:00   **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :return: The notification_end_time of this UpdateAlarmNotificationsResponse.
         :rtype: str
@@ -171,12 +192,78 @@ class UpdateAlarmNotificationsResponse(SdkResponse):
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this UpdateAlarmNotificationsResponse.
 
-        **参数解释**： 告警通知关闭时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        **参数解释**： 告警通知关闭时间。如 08:00   **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :param notification_end_time: The notification_end_time of this UpdateAlarmNotificationsResponse.
         :type notification_end_time: str
         """
         self._notification_end_time = notification_end_time
+
+    @property
+    def effective_timezone(self):
+        r"""Gets the effective_timezone of this UpdateAlarmNotificationsResponse.
+
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **取值范围**： 长度为[1,16]个字符。 
+
+        :return: The effective_timezone of this UpdateAlarmNotificationsResponse.
+        :rtype: str
+        """
+        return self._effective_timezone
+
+    @effective_timezone.setter
+    def effective_timezone(self, effective_timezone):
+        r"""Sets the effective_timezone of this UpdateAlarmNotificationsResponse.
+
+        **参数解释**： 时区，形如：\"GMT-08:00\"、\"GMT+08:00\"、\"GMT+0:00\"。    **取值范围**： 长度为[1,16]个字符。 
+
+        :param effective_timezone: The effective_timezone of this UpdateAlarmNotificationsResponse.
+        :type effective_timezone: str
+        """
+        self._effective_timezone = effective_timezone
+
+    @property
+    def notification_manner(self):
+        r"""Gets the notification_manner of this UpdateAlarmNotificationsResponse.
+
+        **参数解释**： 告警的通知方式 **取值范围**： - NOTIFICATION_GROUP: 通知组 - TOPIC_SUBSCRIPTION: 主题订阅 - NOTIFICATION_POLICY：通知策略 
+
+        :return: The notification_manner of this UpdateAlarmNotificationsResponse.
+        :rtype: str
+        """
+        return self._notification_manner
+
+    @notification_manner.setter
+    def notification_manner(self, notification_manner):
+        r"""Sets the notification_manner of this UpdateAlarmNotificationsResponse.
+
+        **参数解释**： 告警的通知方式 **取值范围**： - NOTIFICATION_GROUP: 通知组 - TOPIC_SUBSCRIPTION: 主题订阅 - NOTIFICATION_POLICY：通知策略 
+
+        :param notification_manner: The notification_manner of this UpdateAlarmNotificationsResponse.
+        :type notification_manner: str
+        """
+        self._notification_manner = notification_manner
+
+    @property
+    def notification_policy_ids(self):
+        r"""Gets the notification_policy_ids of this UpdateAlarmNotificationsResponse.
+
+        **参数解释**： 关联的通知策略ID列表 
+
+        :return: The notification_policy_ids of this UpdateAlarmNotificationsResponse.
+        :rtype: list[str]
+        """
+        return self._notification_policy_ids
+
+    @notification_policy_ids.setter
+    def notification_policy_ids(self, notification_policy_ids):
+        r"""Sets the notification_policy_ids of this UpdateAlarmNotificationsResponse.
+
+        **参数解释**： 关联的通知策略ID列表 
+
+        :param notification_policy_ids: The notification_policy_ids of this UpdateAlarmNotificationsResponse.
+        :type notification_policy_ids: list[str]
+        """
+        self._notification_policy_ids = notification_policy_ids
 
     def to_dict(self):
         import warnings

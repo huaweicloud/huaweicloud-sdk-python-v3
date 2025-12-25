@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class CategoryF62Enum:
-    """
-    allowed enum values
-    """
-    CODE = "code"
-    ARTIFACT = "artifact"
-    IMAGE = "image"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

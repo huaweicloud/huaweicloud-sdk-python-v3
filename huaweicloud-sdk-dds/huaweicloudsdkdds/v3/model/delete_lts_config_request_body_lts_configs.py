@@ -16,7 +16,7 @@ class DeleteLtsConfigRequestBodyLtsConfigs:
 
     openapi_types = {
         'instance_id': 'str',
-        'log_type': 'LtsLogType'
+        'log_type': 'str'
     }
 
     attribute_map = {
@@ -31,8 +31,8 @@ class DeleteLtsConfigRequestBodyLtsConfigs:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param log_type: 
-        :type log_type: :class:`huaweicloudsdkdds.v3.LtsLogType`
+        :param log_type: LTS日志类型，不能为空，具有以下日志类型。 - audit_log
+        :type log_type: str
         """
         
         
@@ -72,8 +72,10 @@ class DeleteLtsConfigRequestBodyLtsConfigs:
     def log_type(self):
         r"""Gets the log_type of this DeleteLtsConfigRequestBodyLtsConfigs.
 
+        LTS日志类型，不能为空，具有以下日志类型。 - audit_log
+
         :return: The log_type of this DeleteLtsConfigRequestBodyLtsConfigs.
-        :rtype: :class:`huaweicloudsdkdds.v3.LtsLogType`
+        :rtype: str
         """
         return self._log_type
 
@@ -81,8 +83,10 @@ class DeleteLtsConfigRequestBodyLtsConfigs:
     def log_type(self, log_type):
         r"""Sets the log_type of this DeleteLtsConfigRequestBodyLtsConfigs.
 
+        LTS日志类型，不能为空，具有以下日志类型。 - audit_log
+
         :param log_type: The log_type of this DeleteLtsConfigRequestBodyLtsConfigs.
-        :type log_type: :class:`huaweicloudsdkdds.v3.LtsLogType`
+        :type log_type: str
         """
         self._log_type = log_type
 

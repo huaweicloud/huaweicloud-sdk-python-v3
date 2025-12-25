@@ -28,7 +28,7 @@ class OpenScheduleConfReq:
         'call_restriction': 'bool',
         'scope': 'int',
         'audience_scope': 'int',
-        'enable_recording': 'YesNoEnum',
+        'enable_recording': 'str',
         'live_address': 'str',
         'aux_address': 'str',
         'live_url': 'str'
@@ -85,8 +85,8 @@ class OpenScheduleConfReq:
         :type scope: int
         :param audience_scope: 观众入会范围。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户和被邀请用户 
         :type audience_scope: int
-        :param enable_recording: 
-        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        :param enable_recording: 是、否 通用枚举
+        :type enable_recording: str
         :param live_address: 主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
         :type live_address: str
         :param aux_address: 辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
@@ -432,8 +432,10 @@ class OpenScheduleConfReq:
     def enable_recording(self):
         r"""Gets the enable_recording of this OpenScheduleConfReq.
 
+        是、否 通用枚举
+
         :return: The enable_recording of this OpenScheduleConfReq.
-        :rtype: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        :rtype: str
         """
         return self._enable_recording
 
@@ -441,8 +443,10 @@ class OpenScheduleConfReq:
     def enable_recording(self, enable_recording):
         r"""Sets the enable_recording of this OpenScheduleConfReq.
 
+        是、否 通用枚举
+
         :param enable_recording: The enable_recording of this OpenScheduleConfReq.
-        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        :type enable_recording: str
         """
         self._enable_recording = enable_recording
 

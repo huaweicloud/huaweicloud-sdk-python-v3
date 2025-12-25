@@ -158,7 +158,8 @@ class NodeSpec:
         if login is not None:
             self.login = login
         self.root_volume = root_volume
-        self.data_volumes = data_volumes
+        if data_volumes is not None:
+            self.data_volumes = data_volumes
         if storage is not None:
             self.storage = storage
         if public_ip is not None:

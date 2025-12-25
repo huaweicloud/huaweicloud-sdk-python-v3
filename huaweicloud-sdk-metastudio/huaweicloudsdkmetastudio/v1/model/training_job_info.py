@@ -15,13 +15,13 @@ class TrainingJobInfo:
     sensitive_list = []
 
     openapi_types = {
-        'job_type': 'JobType',
+        'job_type': 'str',
         'job_id': 'str',
         'app_user_id': 'str',
         'voice_name': 'str',
         'sex': 'str',
         'language': 'str',
-        'state': 'JobState',
+        'state': 'str',
         'reject_times': 'int',
         'asset_id': 'str',
         'job_failed_code': 'str',
@@ -30,8 +30,8 @@ class TrainingJobInfo:
         'lastupdate_time': 'int',
         'voice_authorization_url': 'str',
         'training_input_source_url': 'str',
-        'create_type': 'CreateType',
-        'tag': 'JobTag',
+        'create_type': 'str',
+        'tag': 'str',
         'phone': 'str',
         'dhtms_job_id': 'str',
         'batch_name': 'str',
@@ -75,8 +75,8 @@ class TrainingJobInfo:
 
         The model defined in huaweicloud sdk
 
-        :param job_type: 
-        :type job_type: :class:`huaweicloudsdkmetastudio.v1.JobType`
+        :param job_type: 训练类型。 * BASIC: 基础版(20句话) * MIDDLE: 进阶版(100句话) * ADVANCE: 高级版 * THIRD_PARTY: 第三方出门问问训练版 * THIRD_PARTY_LJZN: 第三方逻辑智能训练版 * FLEXUS: Flexus版---用的是大模型特征提取
+        :type job_type: str
         :param job_id: 任务id。
         :type job_id: str
         :param app_user_id: 用户id。
@@ -87,8 +87,8 @@ class TrainingJobInfo:
         :type sex: str
         :param language: 语言。
         :type language: str
-        :param state: 
-        :type state: :class:`huaweicloudsdkmetastudio.v1.JobState`
+        :param state: 任务状态。 * CREATING: 创建中 * SYSTEM_AUDITING: 系统审核中 * AUDITING: 人工审核中 * WAITING_SPLIT: 等待切割 * SPLITTING: 切割中 * SPLIT_FAILED: 切割失败 * ANNOTATING: 标注中 * WAITING: 等待训练 * PROCESSING: 任务训练中 * RESULT_REVIEW: 审核结果 * AUDIT_FAILED: 审核失败,等待用户重传数据 * UPLOADING: 上传中 * FAILED: 失败 * SUCCEED: 成功
+        :type state: str
         :param reject_times: 本次任务中该状态出现的次数
         :type reject_times: int
         :param asset_id: 当任务状态为成功时呈现,音色模型在资产库中的id。
@@ -105,10 +105,10 @@ class TrainingJobInfo:
         :type voice_authorization_url: str
         :param training_input_source_url: 用户原始输入数据url。
         :type training_input_source_url: str
-        :param create_type: 
-        :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
-        :param tag: 
-        :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
+        :param create_type: 任务创建方式。 * PACKAGE: 使用一个zip包包含所有数据 * SEGMENT: 逐句上传数据
+        :type create_type: str
+        :param tag: 任务标签。 * ECOMMERCE: 电商 * NEWS: 新闻 * MARKETING: 营销 * LIVE: 直播 * EDUCATION: 教培 * CUSTOMER: 客服 * STORYTELLING: 故事
+        :type tag: str
         :param phone: 手机号
         :type phone: str
         :param dhtms_job_id: 形象制作任务id
@@ -211,8 +211,10 @@ class TrainingJobInfo:
     def job_type(self):
         r"""Gets the job_type of this TrainingJobInfo.
 
+        训练类型。 * BASIC: 基础版(20句话) * MIDDLE: 进阶版(100句话) * ADVANCE: 高级版 * THIRD_PARTY: 第三方出门问问训练版 * THIRD_PARTY_LJZN: 第三方逻辑智能训练版 * FLEXUS: Flexus版---用的是大模型特征提取
+
         :return: The job_type of this TrainingJobInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.JobType`
+        :rtype: str
         """
         return self._job_type
 
@@ -220,8 +222,10 @@ class TrainingJobInfo:
     def job_type(self, job_type):
         r"""Sets the job_type of this TrainingJobInfo.
 
+        训练类型。 * BASIC: 基础版(20句话) * MIDDLE: 进阶版(100句话) * ADVANCE: 高级版 * THIRD_PARTY: 第三方出门问问训练版 * THIRD_PARTY_LJZN: 第三方逻辑智能训练版 * FLEXUS: Flexus版---用的是大模型特征提取
+
         :param job_type: The job_type of this TrainingJobInfo.
-        :type job_type: :class:`huaweicloudsdkmetastudio.v1.JobType`
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -339,8 +343,10 @@ class TrainingJobInfo:
     def state(self):
         r"""Gets the state of this TrainingJobInfo.
 
+        任务状态。 * CREATING: 创建中 * SYSTEM_AUDITING: 系统审核中 * AUDITING: 人工审核中 * WAITING_SPLIT: 等待切割 * SPLITTING: 切割中 * SPLIT_FAILED: 切割失败 * ANNOTATING: 标注中 * WAITING: 等待训练 * PROCESSING: 任务训练中 * RESULT_REVIEW: 审核结果 * AUDIT_FAILED: 审核失败,等待用户重传数据 * UPLOADING: 上传中 * FAILED: 失败 * SUCCEED: 成功
+
         :return: The state of this TrainingJobInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.JobState`
+        :rtype: str
         """
         return self._state
 
@@ -348,8 +354,10 @@ class TrainingJobInfo:
     def state(self, state):
         r"""Sets the state of this TrainingJobInfo.
 
+        任务状态。 * CREATING: 创建中 * SYSTEM_AUDITING: 系统审核中 * AUDITING: 人工审核中 * WAITING_SPLIT: 等待切割 * SPLITTING: 切割中 * SPLIT_FAILED: 切割失败 * ANNOTATING: 标注中 * WAITING: 等待训练 * PROCESSING: 任务训练中 * RESULT_REVIEW: 审核结果 * AUDIT_FAILED: 审核失败,等待用户重传数据 * UPLOADING: 上传中 * FAILED: 失败 * SUCCEED: 成功
+
         :param state: The state of this TrainingJobInfo.
-        :type state: :class:`huaweicloudsdkmetastudio.v1.JobState`
+        :type state: str
         """
         self._state = state
 
@@ -533,8 +541,10 @@ class TrainingJobInfo:
     def create_type(self):
         r"""Gets the create_type of this TrainingJobInfo.
 
+        任务创建方式。 * PACKAGE: 使用一个zip包包含所有数据 * SEGMENT: 逐句上传数据
+
         :return: The create_type of this TrainingJobInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateType`
+        :rtype: str
         """
         return self._create_type
 
@@ -542,8 +552,10 @@ class TrainingJobInfo:
     def create_type(self, create_type):
         r"""Sets the create_type of this TrainingJobInfo.
 
+        任务创建方式。 * PACKAGE: 使用一个zip包包含所有数据 * SEGMENT: 逐句上传数据
+
         :param create_type: The create_type of this TrainingJobInfo.
-        :type create_type: :class:`huaweicloudsdkmetastudio.v1.CreateType`
+        :type create_type: str
         """
         self._create_type = create_type
 
@@ -551,8 +563,10 @@ class TrainingJobInfo:
     def tag(self):
         r"""Gets the tag of this TrainingJobInfo.
 
+        任务标签。 * ECOMMERCE: 电商 * NEWS: 新闻 * MARKETING: 营销 * LIVE: 直播 * EDUCATION: 教培 * CUSTOMER: 客服 * STORYTELLING: 故事
+
         :return: The tag of this TrainingJobInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.JobTag`
+        :rtype: str
         """
         return self._tag
 
@@ -560,8 +574,10 @@ class TrainingJobInfo:
     def tag(self, tag):
         r"""Sets the tag of this TrainingJobInfo.
 
+        任务标签。 * ECOMMERCE: 电商 * NEWS: 新闻 * MARKETING: 营销 * LIVE: 直播 * EDUCATION: 教培 * CUSTOMER: 客服 * STORYTELLING: 故事
+
         :param tag: The tag of this TrainingJobInfo.
-        :type tag: :class:`huaweicloudsdkmetastudio.v1.JobTag`
+        :type tag: str
         """
         self._tag = tag
 

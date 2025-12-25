@@ -22,7 +22,8 @@ class QueryInstanceResponseBody:
         'tags': 'list[Tag]',
         'image': 'Image',
         'description': 'str',
-        'state': 'InstanceState',
+        'state': 'str',
+        'operation_state': 'str',
         'metadata': 'dict(str, str)',
         'user_data': 'str',
         'server_id': 'str',
@@ -41,6 +42,7 @@ class QueryInstanceResponseBody:
         'image': 'image',
         'description': 'description',
         'state': 'state',
+        'operation_state': 'operation_state',
         'metadata': 'metadata',
         'user_data': 'user_data',
         'server_id': 'server_id',
@@ -50,7 +52,7 @@ class QueryInstanceResponseBody:
         'error': 'error'
     }
 
-    def __init__(self, id=None, name=None, vpc_id=None, network_interfaces=None, tags=None, image=None, description=None, state=None, metadata=None, user_data=None, server_id=None, created_at=None, updated_at=None, launched_at=None, error=None):
+    def __init__(self, id=None, name=None, vpc_id=None, network_interfaces=None, tags=None, image=None, description=None, state=None, operation_state=None, metadata=None, user_data=None, server_id=None, created_at=None, updated_at=None, launched_at=None, error=None):
         r"""QueryInstanceResponseBody
 
         The model defined in huaweicloud sdk
@@ -69,8 +71,10 @@ class QueryInstanceResponseBody:
         :type image: :class:`huaweicloudsdkclouddc.v1.Image`
         :param description: 云服务器描述信息，默认为空字符串。
         :type description: str
-        :param state: 
-        :type state: :class:`huaweicloudsdkclouddc.v1.InstanceState`
+        :param state: **参数解释**： 实例状态 **约束限制**： 不涉及 **取值范围**： - pending：实例正在启动（分配资源/启动操作系统） - running：实例正常运行（可接受SSH/RDP连接） - stopping：实例正在关闭（停止/休眠过渡状态） - stopped： 实例已完全关闭（存储卷保留） - reinstalling：实例正在重装中 - shutting-down：实例正在终止（删除流程中） - terminated：实例已终止（资源完全删除，不可恢复） - failed：实例处于失败状态，对于reinstall操作可重试，其它操作不可重试并清除相关资源 - modifyIping：实例正在修改ip中 - switch-installing：实例正在切换系统中  &#x60;&#x60;&#x60;mermaid stateDiagram-v2      [*] --&gt; pending : RunInstances/CreateInstance     pending --&gt; running : Provision Finished     reinstalling --&gt; running : Provision Finished     running --&gt; stopping : PowerOff/PowerReboot     stopping --&gt; stopped : PowerOff Finished     stopped --&gt; running : PowerOn | ModifyIP     stopped --&gt; stopped : ChangePassword     pending --&gt; shutting_down : Abort by DeleteInstance     running --&gt; shutting_down : DeleteInstance     running --&gt; switch-installing : SwitchOS     switch-installing --&gt; running : SwitchOS finished     switch-installing --&gt; failed : SwitchOS failed     stopped --&gt; shutting_down : DeleteInstance     stopped --&gt; reinstalling : ReinstallOS     shutting_down --&gt;terminated: DeleteInstance Finished     pending --&gt; failed : Error     shutting_down --&gt; failed : Error     reinstalling --&gt; failed : Error     failed --&gt; reinstalling: Retry     running --&gt; modifyIping : Modify Ip     modifyIping --&gt; running : Modify Ip finished     modifyIping --&gt; failed : Modify Ip failed     failed --&gt; modifyIping : Retrey &#x60;&#x60;&#x60;    **默认取值**：   不涉及 
+        :type state: str
+        :param operation_state: **参数解释**:  操作状态 **约束限制**:  不涉及 **取值范围**:  - install-processing: 安装OS中 - install-succeed: 安装OS成功 - install-failed: 安装OS失败 - reinstall-processing: 重装OS中 - reinstall-succeed: 重装OS成功 - reinstall-failed: 重装OS失败 - switch-install-processing: 切换OS中 - switch-install-succeed: 切换OS成功 - switch-install-failed: 切换OS失败 - modify-ip-processing: 修改IP地址中 - modify-ip-succeed: 修改IP地址成功 - modify-ip-failed: 修改IP地址失败 - uninstall-processing: 卸载OS中 - uninstall-succeed: 卸载OS成功 - uninstall-failed: 卸载OS失败  **默认取值**:  不涉及
+        :type operation_state: str
         :param metadata: 创建裸机实例的元数据。  可以通过元数据自定义键值对。   说明： 如果元数据中包含了敏感数据，您应当采取适当的措施来保护敏感数据，比如限制访问范围、加密等。 最多可注入10对键值（Key/Value）。 主键（Key）只能由大写字母（A-Z）、小写字母（a-z）、数字（0-9）、中划线（-）、下划线（_）、冒号（:）、空格（ ）和小数点（.）组成，长度为[1-255]个字符。     值（value）最大长度为255个字符。
         :type metadata: dict(str, str)
         :param user_data: 创建实例过程中待注入实例自定义数据。支持注入文本、文本文件。   说明： user_data的值为base64编码之后的内容。 注入内容（编码之前的内容）最大长度为32K。
@@ -97,6 +101,7 @@ class QueryInstanceResponseBody:
         self._image = None
         self._description = None
         self._state = None
+        self._operation_state = None
         self._metadata = None
         self._user_data = None
         self._server_id = None
@@ -116,6 +121,8 @@ class QueryInstanceResponseBody:
         if description is not None:
             self.description = description
         self.state = state
+        if operation_state is not None:
+            self.operation_state = operation_state
         if metadata is not None:
             self.metadata = metadata
         if user_data is not None:
@@ -281,8 +288,10 @@ class QueryInstanceResponseBody:
     def state(self):
         r"""Gets the state of this QueryInstanceResponseBody.
 
+        **参数解释**： 实例状态 **约束限制**： 不涉及 **取值范围**： - pending：实例正在启动（分配资源/启动操作系统） - running：实例正常运行（可接受SSH/RDP连接） - stopping：实例正在关闭（停止/休眠过渡状态） - stopped： 实例已完全关闭（存储卷保留） - reinstalling：实例正在重装中 - shutting-down：实例正在终止（删除流程中） - terminated：实例已终止（资源完全删除，不可恢复） - failed：实例处于失败状态，对于reinstall操作可重试，其它操作不可重试并清除相关资源 - modifyIping：实例正在修改ip中 - switch-installing：实例正在切换系统中  ```mermaid stateDiagram-v2      [*] --> pending : RunInstances/CreateInstance     pending --> running : Provision Finished     reinstalling --> running : Provision Finished     running --> stopping : PowerOff/PowerReboot     stopping --> stopped : PowerOff Finished     stopped --> running : PowerOn | ModifyIP     stopped --> stopped : ChangePassword     pending --> shutting_down : Abort by DeleteInstance     running --> shutting_down : DeleteInstance     running --> switch-installing : SwitchOS     switch-installing --> running : SwitchOS finished     switch-installing --> failed : SwitchOS failed     stopped --> shutting_down : DeleteInstance     stopped --> reinstalling : ReinstallOS     shutting_down -->terminated: DeleteInstance Finished     pending --> failed : Error     shutting_down --> failed : Error     reinstalling --> failed : Error     failed --> reinstalling: Retry     running --> modifyIping : Modify Ip     modifyIping --> running : Modify Ip finished     modifyIping --> failed : Modify Ip failed     failed --> modifyIping : Retrey ```    **默认取值**：   不涉及 
+
         :return: The state of this QueryInstanceResponseBody.
-        :rtype: :class:`huaweicloudsdkclouddc.v1.InstanceState`
+        :rtype: str
         """
         return self._state
 
@@ -290,10 +299,34 @@ class QueryInstanceResponseBody:
     def state(self, state):
         r"""Sets the state of this QueryInstanceResponseBody.
 
+        **参数解释**： 实例状态 **约束限制**： 不涉及 **取值范围**： - pending：实例正在启动（分配资源/启动操作系统） - running：实例正常运行（可接受SSH/RDP连接） - stopping：实例正在关闭（停止/休眠过渡状态） - stopped： 实例已完全关闭（存储卷保留） - reinstalling：实例正在重装中 - shutting-down：实例正在终止（删除流程中） - terminated：实例已终止（资源完全删除，不可恢复） - failed：实例处于失败状态，对于reinstall操作可重试，其它操作不可重试并清除相关资源 - modifyIping：实例正在修改ip中 - switch-installing：实例正在切换系统中  ```mermaid stateDiagram-v2      [*] --> pending : RunInstances/CreateInstance     pending --> running : Provision Finished     reinstalling --> running : Provision Finished     running --> stopping : PowerOff/PowerReboot     stopping --> stopped : PowerOff Finished     stopped --> running : PowerOn | ModifyIP     stopped --> stopped : ChangePassword     pending --> shutting_down : Abort by DeleteInstance     running --> shutting_down : DeleteInstance     running --> switch-installing : SwitchOS     switch-installing --> running : SwitchOS finished     switch-installing --> failed : SwitchOS failed     stopped --> shutting_down : DeleteInstance     stopped --> reinstalling : ReinstallOS     shutting_down -->terminated: DeleteInstance Finished     pending --> failed : Error     shutting_down --> failed : Error     reinstalling --> failed : Error     failed --> reinstalling: Retry     running --> modifyIping : Modify Ip     modifyIping --> running : Modify Ip finished     modifyIping --> failed : Modify Ip failed     failed --> modifyIping : Retrey ```    **默认取值**：   不涉及 
+
         :param state: The state of this QueryInstanceResponseBody.
-        :type state: :class:`huaweicloudsdkclouddc.v1.InstanceState`
+        :type state: str
         """
         self._state = state
+
+    @property
+    def operation_state(self):
+        r"""Gets the operation_state of this QueryInstanceResponseBody.
+
+        **参数解释**:  操作状态 **约束限制**:  不涉及 **取值范围**:  - install-processing: 安装OS中 - install-succeed: 安装OS成功 - install-failed: 安装OS失败 - reinstall-processing: 重装OS中 - reinstall-succeed: 重装OS成功 - reinstall-failed: 重装OS失败 - switch-install-processing: 切换OS中 - switch-install-succeed: 切换OS成功 - switch-install-failed: 切换OS失败 - modify-ip-processing: 修改IP地址中 - modify-ip-succeed: 修改IP地址成功 - modify-ip-failed: 修改IP地址失败 - uninstall-processing: 卸载OS中 - uninstall-succeed: 卸载OS成功 - uninstall-failed: 卸载OS失败  **默认取值**:  不涉及
+
+        :return: The operation_state of this QueryInstanceResponseBody.
+        :rtype: str
+        """
+        return self._operation_state
+
+    @operation_state.setter
+    def operation_state(self, operation_state):
+        r"""Sets the operation_state of this QueryInstanceResponseBody.
+
+        **参数解释**:  操作状态 **约束限制**:  不涉及 **取值范围**:  - install-processing: 安装OS中 - install-succeed: 安装OS成功 - install-failed: 安装OS失败 - reinstall-processing: 重装OS中 - reinstall-succeed: 重装OS成功 - reinstall-failed: 重装OS失败 - switch-install-processing: 切换OS中 - switch-install-succeed: 切换OS成功 - switch-install-failed: 切换OS失败 - modify-ip-processing: 修改IP地址中 - modify-ip-succeed: 修改IP地址成功 - modify-ip-failed: 修改IP地址失败 - uninstall-processing: 卸载OS中 - uninstall-succeed: 卸载OS成功 - uninstall-failed: 卸载OS失败  **默认取值**:  不涉及
+
+        :param operation_state: The operation_state of this QueryInstanceResponseBody.
+        :type operation_state: str
+        """
+        self._operation_state = operation_state
 
     @property
     def metadata(self):

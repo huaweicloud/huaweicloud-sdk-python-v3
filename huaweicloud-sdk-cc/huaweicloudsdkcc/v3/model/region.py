@@ -16,7 +16,7 @@ class Region:
 
     openapi_types = {
         'name': 'str',
-        'area_id': 'AreaIdDef',
+        'area_id': 'str',
         'id': 'str',
         'area_name': 'str',
         'used_scenes': 'list[str]'
@@ -37,8 +37,8 @@ class Region:
 
         :param name: 实例名称。
         :type name: str
-        :param area_id: 
-        :type area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :param area_id: 大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+        :type area_id: str
         :param id: 区域ID。
         :type id: str
         :param area_name: 大区名称。
@@ -91,8 +91,10 @@ class Region:
     def area_id(self):
         r"""Gets the area_id of this Region.
 
+        大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :return: The area_id of this Region.
-        :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :rtype: str
         """
         return self._area_id
 
@@ -100,8 +102,10 @@ class Region:
     def area_id(self, area_id):
         r"""Sets the area_id of this Region.
 
+        大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :param area_id: The area_id of this Region.
-        :type area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type area_id: str
         """
         self._area_id = area_id
 

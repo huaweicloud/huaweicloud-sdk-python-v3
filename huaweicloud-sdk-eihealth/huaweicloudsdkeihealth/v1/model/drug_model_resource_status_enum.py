@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class DrugModelResourceStatusEnum:
-    """
-    allowed enum values
-    """
-    NORMAL = "Normal"
-    FREEZE = "Freeze"
-    DELETED = "Deleted"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

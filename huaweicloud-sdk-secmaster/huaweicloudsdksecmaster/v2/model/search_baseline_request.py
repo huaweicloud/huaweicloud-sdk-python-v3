@@ -33,11 +33,11 @@ class SearchBaselineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: 项目id
+        :param project_id: **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type project_id: str
-        :param workspace_id: 工作空间id
+        :param workspace_id: **参数解释：** 工作空间id。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type workspace_id: str
-        :param x_language: 语言，参考值：zh-CN、en-US
+        :param x_language: **参数解释：** 语言，参考值：zh-cn、en-us **约束限制：** 不涉及 **取值范围：** zh-cn：中文环境 en-us：英文环境 **默认取值：** 不涉及
         :type x_language: str
         :param body: Body of the SearchBaselineRequest
         :type body: :class:`huaweicloudsdksecmaster.v2.BaselineSearchRequestBody`
@@ -61,7 +61,7 @@ class SearchBaselineRequest:
     def project_id(self):
         r"""Gets the project_id of this SearchBaselineRequest.
 
-        项目id
+        **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The project_id of this SearchBaselineRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class SearchBaselineRequest:
     def project_id(self, project_id):
         r"""Sets the project_id of this SearchBaselineRequest.
 
-        项目id
+        **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param project_id: The project_id of this SearchBaselineRequest.
         :type project_id: str
@@ -83,7 +83,7 @@ class SearchBaselineRequest:
     def workspace_id(self):
         r"""Gets the workspace_id of this SearchBaselineRequest.
 
-        工作空间id
+        **参数解释：** 工作空间id。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The workspace_id of this SearchBaselineRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class SearchBaselineRequest:
     def workspace_id(self, workspace_id):
         r"""Sets the workspace_id of this SearchBaselineRequest.
 
-        工作空间id
+        **参数解释：** 工作空间id。 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param workspace_id: The workspace_id of this SearchBaselineRequest.
         :type workspace_id: str
@@ -105,7 +105,7 @@ class SearchBaselineRequest:
     def x_language(self):
         r"""Gets the x_language of this SearchBaselineRequest.
 
-        语言，参考值：zh-CN、en-US
+        **参数解释：** 语言，参考值：zh-cn、en-us **约束限制：** 不涉及 **取值范围：** zh-cn：中文环境 en-us：英文环境 **默认取值：** 不涉及
 
         :return: The x_language of this SearchBaselineRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class SearchBaselineRequest:
     def x_language(self, x_language):
         r"""Sets the x_language of this SearchBaselineRequest.
 
-        语言，参考值：zh-CN、en-US
+        **参数解释：** 语言，参考值：zh-cn、en-us **约束限制：** 不涉及 **取值范围：** zh-cn：中文环境 en-us：英文环境 **默认取值：** 不涉及
 
         :param x_language: The x_language of this SearchBaselineRequest.
         :type x_language: str

@@ -17,20 +17,16 @@ class NodePublicIP:
     openapi_types = {
         'ids': 'list[str]',
         'count': 'int',
-        'eip': 'NodeEIPSpec',
-        'iptype': 'str',
-        'bandwidth': 'NodeBandwidth'
+        'eip': 'NodeEIPSpec'
     }
 
     attribute_map = {
         'ids': 'ids',
         'count': 'count',
-        'eip': 'eip',
-        'iptype': 'iptype',
-        'bandwidth': 'bandwidth'
+        'eip': 'eip'
     }
 
-    def __init__(self, ids=None, count=None, eip=None, iptype=None, bandwidth=None):
+    def __init__(self, ids=None, count=None, eip=None):
         r"""NodePublicIP
 
         The model defined in huaweicloud sdk
@@ -41,10 +37,6 @@ class NodePublicIP:
         :type count: int
         :param eip: 
         :type eip: :class:`huaweicloudsdkcce.v3.NodeEIPSpec`
-        :param iptype: **参数解释**： 表示节点所属分区。分区可以选择中心云[或者[边缘小站](https://support.huaweicloud.com/usermanual-cloudpond/ies_02_0401.html)。](tag:hws)[或者[边缘小站](https://support.huaweicloud.com/intl/zh-cn/usermanual-cloudpond/ies_02_0401.html)。](tag:hws_hk) 仅开启了对分布式云支持的Turbo集群支持指定该字段。 弹性IP类型，取值请参见申请EIP接口中publicip.type说明。 [链接请参见[申请EIP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)](tag:hws) [链接请参见[申请EIP](https://support.huaweicloud.com/intl/zh-cn/api-eip/eip_api_0001.html)](tag:hws_hk) **约束限制**： 该参数仅给节点池使用 
-        :type iptype: str
-        :param bandwidth: 
-        :type bandwidth: :class:`huaweicloudsdkcce.v3.NodeBandwidth`
         """
         
         
@@ -52,8 +44,6 @@ class NodePublicIP:
         self._ids = None
         self._count = None
         self._eip = None
-        self._iptype = None
-        self._bandwidth = None
         self.discriminator = None
 
         if ids is not None:
@@ -62,10 +52,6 @@ class NodePublicIP:
             self.count = count
         if eip is not None:
             self.eip = eip
-        if iptype is not None:
-            self.iptype = iptype
-        if bandwidth is not None:
-            self.bandwidth = bandwidth
 
     @property
     def ids(self):
@@ -128,46 +114,6 @@ class NodePublicIP:
         :type eip: :class:`huaweicloudsdkcce.v3.NodeEIPSpec`
         """
         self._eip = eip
-
-    @property
-    def iptype(self):
-        r"""Gets the iptype of this NodePublicIP.
-
-        **参数解释**： 表示节点所属分区。分区可以选择中心云[或者[边缘小站](https://support.huaweicloud.com/usermanual-cloudpond/ies_02_0401.html)。](tag:hws)[或者[边缘小站](https://support.huaweicloud.com/intl/zh-cn/usermanual-cloudpond/ies_02_0401.html)。](tag:hws_hk) 仅开启了对分布式云支持的Turbo集群支持指定该字段。 弹性IP类型，取值请参见申请EIP接口中publicip.type说明。 [链接请参见[申请EIP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)](tag:hws) [链接请参见[申请EIP](https://support.huaweicloud.com/intl/zh-cn/api-eip/eip_api_0001.html)](tag:hws_hk) **约束限制**： 该参数仅给节点池使用 
-
-        :return: The iptype of this NodePublicIP.
-        :rtype: str
-        """
-        return self._iptype
-
-    @iptype.setter
-    def iptype(self, iptype):
-        r"""Sets the iptype of this NodePublicIP.
-
-        **参数解释**： 表示节点所属分区。分区可以选择中心云[或者[边缘小站](https://support.huaweicloud.com/usermanual-cloudpond/ies_02_0401.html)。](tag:hws)[或者[边缘小站](https://support.huaweicloud.com/intl/zh-cn/usermanual-cloudpond/ies_02_0401.html)。](tag:hws_hk) 仅开启了对分布式云支持的Turbo集群支持指定该字段。 弹性IP类型，取值请参见申请EIP接口中publicip.type说明。 [链接请参见[申请EIP](https://support.huaweicloud.com/api-eip/eip_api_0001.html)](tag:hws) [链接请参见[申请EIP](https://support.huaweicloud.com/intl/zh-cn/api-eip/eip_api_0001.html)](tag:hws_hk) **约束限制**： 该参数仅给节点池使用 
-
-        :param iptype: The iptype of this NodePublicIP.
-        :type iptype: str
-        """
-        self._iptype = iptype
-
-    @property
-    def bandwidth(self):
-        r"""Gets the bandwidth of this NodePublicIP.
-
-        :return: The bandwidth of this NodePublicIP.
-        :rtype: :class:`huaweicloudsdkcce.v3.NodeBandwidth`
-        """
-        return self._bandwidth
-
-    @bandwidth.setter
-    def bandwidth(self, bandwidth):
-        r"""Sets the bandwidth of this NodePublicIP.
-
-        :param bandwidth: The bandwidth of this NodePublicIP.
-        :type bandwidth: :class:`huaweicloudsdkcce.v3.NodeBandwidth`
-        """
-        self._bandwidth = bandwidth
 
     def to_dict(self):
         result = {}

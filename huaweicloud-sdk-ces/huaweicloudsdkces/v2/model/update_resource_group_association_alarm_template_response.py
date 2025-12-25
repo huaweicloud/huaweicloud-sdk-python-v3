@@ -30,7 +30,7 @@ class UpdateResourceGroupAssociationAlarmTemplateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        :param group_id: **参数解释** 资源分组ID。 **取值范围** 以\&quot;rg\&quot;开头，后面跟着22个字母或数字 
         :type group_id: str
         :param template_ids: 关联的告警模板的ID列表
         :type template_ids: list[str]
@@ -51,7 +51,7 @@ class UpdateResourceGroupAssociationAlarmTemplateResponse(SdkResponse):
     def group_id(self):
         r"""Gets the group_id of this UpdateResourceGroupAssociationAlarmTemplateResponse.
 
-        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        **参数解释** 资源分组ID。 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字 
 
         :return: The group_id of this UpdateResourceGroupAssociationAlarmTemplateResponse.
         :rtype: str
@@ -62,7 +62,7 @@ class UpdateResourceGroupAssociationAlarmTemplateResponse(SdkResponse):
     def group_id(self, group_id):
         r"""Sets the group_id of this UpdateResourceGroupAssociationAlarmTemplateResponse.
 
-        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        **参数解释** 资源分组ID。 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字 
 
         :param group_id: The group_id of this UpdateResourceGroupAssociationAlarmTemplateResponse.
         :type group_id: str

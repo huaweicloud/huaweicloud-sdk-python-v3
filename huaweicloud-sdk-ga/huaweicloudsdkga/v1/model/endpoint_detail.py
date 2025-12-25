@@ -18,8 +18,8 @@ class EndpointDetail:
         'id': 'str',
         'resource_id': 'str',
         'endpoint_group_id': 'str',
-        'resource_type': 'EndpointType',
-        'status': 'ConfigStatus',
+        'resource_type': 'str',
+        'status': 'str',
         'weight': 'int',
         'health_state': 'str',
         'created_at': 'datetime',
@@ -55,10 +55,10 @@ class EndpointDetail:
         :type resource_id: str
         :param endpoint_group_id: 终端节点组ID。
         :type endpoint_group_id: str
-        :param resource_type: 
-        :type resource_type: :class:`huaweicloudsdkga.v1.EndpointType`
-        :param status: 
-        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :param resource_type: 终端节点类型，取值范围: - EIP：本账号中的弹性公网IP - ECS：本账号中私网ECS实例 - ELB：本账号中私网ELB实例 - CUSTOM_IP：云外公网IP - CUSTOM_DOMAIN_NAME：云外公网域名 - CUSTOM_EIP：本Region的弹性公网IP
+        :type resource_type: str
+        :param status: 配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+        :type status: str
         :param weight: 终端节点权重。
         :type weight: int
         :param health_state: 终端的健康状态，取值： - INITIAL：初始 - HEALTHY：正常 - UNHEALTHY：异常 - NO_MONITOR：未监控
@@ -186,8 +186,10 @@ class EndpointDetail:
     def resource_type(self):
         r"""Gets the resource_type of this EndpointDetail.
 
+        终端节点类型，取值范围: - EIP：本账号中的弹性公网IP - ECS：本账号中私网ECS实例 - ELB：本账号中私网ELB实例 - CUSTOM_IP：云外公网IP - CUSTOM_DOMAIN_NAME：云外公网域名 - CUSTOM_EIP：本Region的弹性公网IP
+
         :return: The resource_type of this EndpointDetail.
-        :rtype: :class:`huaweicloudsdkga.v1.EndpointType`
+        :rtype: str
         """
         return self._resource_type
 
@@ -195,8 +197,10 @@ class EndpointDetail:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this EndpointDetail.
 
+        终端节点类型，取值范围: - EIP：本账号中的弹性公网IP - ECS：本账号中私网ECS实例 - ELB：本账号中私网ELB实例 - CUSTOM_IP：云外公网IP - CUSTOM_DOMAIN_NAME：云外公网域名 - CUSTOM_EIP：本Region的弹性公网IP
+
         :param resource_type: The resource_type of this EndpointDetail.
-        :type resource_type: :class:`huaweicloudsdkga.v1.EndpointType`
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -204,8 +208,10 @@ class EndpointDetail:
     def status(self):
         r"""Gets the status of this EndpointDetail.
 
+        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+
         :return: The status of this EndpointDetail.
-        :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :rtype: str
         """
         return self._status
 
@@ -213,8 +219,10 @@ class EndpointDetail:
     def status(self, status):
         r"""Sets the status of this EndpointDetail.
 
+        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+
         :param status: The status of this EndpointDetail.
-        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :type status: str
         """
         self._status = status
 

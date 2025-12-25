@@ -15,7 +15,7 @@ class DownloadDataReq:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'DownloadDataTypeEnum',
+        'type': 'str',
         'url': 'str',
         'range_start': 'int',
         'range_end': 'int'
@@ -34,7 +34,7 @@ class DownloadDataReq:
         The model defined in huaweicloud sdk
 
         :param type: 
-        :type type: :class:`huaweicloudsdkeihealth.v1.DownloadDataTypeEnum`
+        :type type: str
         :param url: 资源地址(支持https、obs地址)
         :type url: str
         :param range_start: 指定下载对象的开始位置
@@ -65,7 +65,7 @@ class DownloadDataReq:
         r"""Gets the type of this DownloadDataReq.
 
         :return: The type of this DownloadDataReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadDataTypeEnum`
+        :rtype: str
         """
         return self._type
 
@@ -74,7 +74,7 @@ class DownloadDataReq:
         r"""Sets the type of this DownloadDataReq.
 
         :param type: The type of this DownloadDataReq.
-        :type type: :class:`huaweicloudsdkeihealth.v1.DownloadDataTypeEnum`
+        :type type: str
         """
         self._type = type
 

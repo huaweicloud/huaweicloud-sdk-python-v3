@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SiteStatus:
-    """
-    allowed enum values
-    """
-    INITIAL = "initial"
-    DEPLOYING = "deploying"
-    AVAILABLE = "available"
-    UNAVAILABLE = "unavailable"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

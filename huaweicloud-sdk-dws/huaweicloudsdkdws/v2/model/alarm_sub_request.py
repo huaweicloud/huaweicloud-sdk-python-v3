@@ -49,7 +49,7 @@ class AlarmSubRequest:
         :type notification_target: str
         :param notification_target_name: **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
         :type notification_target_name: str
-        :param notification_target_type: **参数解释**： 消息主题类型，支持SMN。 **取值范围**： 不涉及。
+        :param notification_target_type: **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
         :type notification_target_type: str
         :param time_zone: **参数解释**： 时区。 **取值范围**： 不涉及。
         :type time_zone: str
@@ -190,7 +190,7 @@ class AlarmSubRequest:
     def notification_target_type(self):
         r"""Gets the notification_target_type of this AlarmSubRequest.
 
-        **参数解释**： 消息主题类型，支持SMN。 **取值范围**： 不涉及。
+        **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
 
         :return: The notification_target_type of this AlarmSubRequest.
         :rtype: str
@@ -201,7 +201,7 @@ class AlarmSubRequest:
     def notification_target_type(self, notification_target_type):
         r"""Sets the notification_target_type of this AlarmSubRequest.
 
-        **参数解释**： 消息主题类型，支持SMN。 **取值范围**： 不涉及。
+        **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
 
         :param notification_target_type: The notification_target_type of this AlarmSubRequest.
         :type notification_target_type: str

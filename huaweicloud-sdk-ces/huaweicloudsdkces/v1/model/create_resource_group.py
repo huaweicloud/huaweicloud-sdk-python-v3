@@ -16,15 +16,17 @@ class CreateResourceGroup:
 
     openapi_types = {
         'namespace': 'str',
-        'dimensions': 'list[MetricsDimension]'
+        'dimensions': 'list[MetricsDimension]',
+        'relation_id': 'str'
     }
 
     attribute_map = {
         'namespace': 'namespace',
-        'dimensions': 'dimensions'
+        'dimensions': 'dimensions',
+        'relation_id': 'relation_id'
     }
 
-    def __init__(self, namespace=None, dimensions=None):
+    def __init__(self, namespace=None, dimensions=None, relation_id=None):
         r"""CreateResourceGroup
 
         The model defined in huaweicloud sdk
@@ -33,16 +35,21 @@ class CreateResourceGroup:
         :type namespace: str
         :param dimensions: **参数解释** 资源的维度信息 **约束限制** 不超过4个维度 
         :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
+        :param relation_id: **参数解释** 关联id **约束限制** 不涉及 **取值范围** 由数字、字母,_和-组成长度[1,128] **默认取值** 不涉及 
+        :type relation_id: str
         """
         
         
 
         self._namespace = None
         self._dimensions = None
+        self._relation_id = None
         self.discriminator = None
 
         self.namespace = namespace
         self.dimensions = dimensions
+        if relation_id is not None:
+            self.relation_id = relation_id
 
     @property
     def namespace(self):
@@ -87,6 +94,28 @@ class CreateResourceGroup:
         :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimension`]
         """
         self._dimensions = dimensions
+
+    @property
+    def relation_id(self):
+        r"""Gets the relation_id of this CreateResourceGroup.
+
+        **参数解释** 关联id **约束限制** 不涉及 **取值范围** 由数字、字母,_和-组成长度[1,128] **默认取值** 不涉及 
+
+        :return: The relation_id of this CreateResourceGroup.
+        :rtype: str
+        """
+        return self._relation_id
+
+    @relation_id.setter
+    def relation_id(self, relation_id):
+        r"""Sets the relation_id of this CreateResourceGroup.
+
+        **参数解释** 关联id **约束限制** 不涉及 **取值范围** 由数字、字母,_和-组成长度[1,128] **默认取值** 不涉及 
+
+        :param relation_id: The relation_id of this CreateResourceGroup.
+        :type relation_id: str
+        """
+        self._relation_id = relation_id
 
     def to_dict(self):
         result = {}

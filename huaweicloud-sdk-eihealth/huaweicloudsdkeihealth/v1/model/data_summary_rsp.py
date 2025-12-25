@@ -17,7 +17,7 @@ class DataSummaryRsp:
     openapi_types = {
         'path': 'str',
         'name': 'str',
-        'type': 'PathType',
+        'type': 'str',
         'size': 'int',
         'create_time': 'str',
         'allowed_operate': 'bool',
@@ -44,7 +44,7 @@ class DataSummaryRsp:
         :param name: 名称
         :type name: str
         :param type: 
-        :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
+        :type type: str
         :param size: 大小
         :type size: int
         :param create_time: 创建时间
@@ -130,7 +130,7 @@ class DataSummaryRsp:
         r"""Gets the type of this DataSummaryRsp.
 
         :return: The type of this DataSummaryRsp.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
+        :rtype: str
         """
         return self._type
 
@@ -139,7 +139,7 @@ class DataSummaryRsp:
         r"""Sets the type of this DataSummaryRsp.
 
         :param type: The type of this DataSummaryRsp.
-        :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
+        :type type: str
         """
         self._type = type
 

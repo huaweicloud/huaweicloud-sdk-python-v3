@@ -17,10 +17,10 @@ class TemplateEntity:
     openapi_types = {
         'template_id': 'str',
         'template_name': 'str',
-        'template_type': 'TemplateTypeEnum',
+        'template_type': 'str',
         'create_time': 'str',
         'last_update_time': 'str',
-        'template_contents': 'list[TemplateItemEnum]'
+        'template_contents': 'list[str]'
     }
 
     attribute_map = {
@@ -41,14 +41,14 @@ class TemplateEntity:
         :type template_id: str
         :param template_name: 模板名称
         :type template_name: str
-        :param template_type: 
-        :type template_type: :class:`huaweicloudsdkbcc.v1.TemplateTypeEnum`
+        :param template_type: 模板类型枚举
+        :type template_type: str
         :param create_time: 模板创建时间
         :type create_time: str
         :param last_update_time: 最后更新时间
         :type last_update_time: str
         :param template_contents: 模板具体的内容项，例如：存储库-使用率，存储库-摘要，任务-趋势，任务-摘要，任务-详情
-        :type template_contents: list[:class:`huaweicloudsdkbcc.v1.TemplateItemEnum`]
+        :type template_contents: list[str]
         """
         
         
@@ -116,8 +116,10 @@ class TemplateEntity:
     def template_type(self):
         r"""Gets the template_type of this TemplateEntity.
 
+        模板类型枚举
+
         :return: The template_type of this TemplateEntity.
-        :rtype: :class:`huaweicloudsdkbcc.v1.TemplateTypeEnum`
+        :rtype: str
         """
         return self._template_type
 
@@ -125,8 +127,10 @@ class TemplateEntity:
     def template_type(self, template_type):
         r"""Sets the template_type of this TemplateEntity.
 
+        模板类型枚举
+
         :param template_type: The template_type of this TemplateEntity.
-        :type template_type: :class:`huaweicloudsdkbcc.v1.TemplateTypeEnum`
+        :type template_type: str
         """
         self._template_type = template_type
 
@@ -181,7 +185,7 @@ class TemplateEntity:
         模板具体的内容项，例如：存储库-使用率，存储库-摘要，任务-趋势，任务-摘要，任务-详情
 
         :return: The template_contents of this TemplateEntity.
-        :rtype: list[:class:`huaweicloudsdkbcc.v1.TemplateItemEnum`]
+        :rtype: list[str]
         """
         return self._template_contents
 
@@ -192,7 +196,7 @@ class TemplateEntity:
         模板具体的内容项，例如：存储库-使用率，存储库-摘要，任务-趋势，任务-摘要，任务-详情
 
         :param template_contents: The template_contents of this TemplateEntity.
-        :type template_contents: list[:class:`huaweicloudsdkbcc.v1.TemplateItemEnum`]
+        :type template_contents: list[str]
         """
         self._template_contents = template_contents
 

@@ -42,7 +42,7 @@ class ListClusterActionsResponse(SdkResponse):
         :type id: str
         :param action_name: **参数解释**： 任务名称，同入参字段。 **取值范围**： 不涉及。
         :type action_name: str
-        :param status: **参数解释**： 任务状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 任务状态。 **取值范围**： - SUCCESS：成功。 - RUNNING：运行中。 - WAITING：等待中。 - FAILED：失败。 - ROLLBACK_RUNNING：回滚运行中。 - ROLLBACK_SUCCESS：回滚成功。 - ROLLBACK_FAIL：回滚失败。
         :type status: str
         :param cluster_name: **参数解释**： 集群名称。 **取值范围**： 不涉及。
         :type cluster_name: str
@@ -123,7 +123,7 @@ class ListClusterActionsResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ListClusterActionsResponse.
 
-        **参数解释**： 任务状态。 **取值范围**： 不涉及。
+        **参数解释**： 任务状态。 **取值范围**： - SUCCESS：成功。 - RUNNING：运行中。 - WAITING：等待中。 - FAILED：失败。 - ROLLBACK_RUNNING：回滚运行中。 - ROLLBACK_SUCCESS：回滚成功。 - ROLLBACK_FAIL：回滚失败。
 
         :return: The status of this ListClusterActionsResponse.
         :rtype: str
@@ -134,7 +134,7 @@ class ListClusterActionsResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ListClusterActionsResponse.
 
-        **参数解释**： 任务状态。 **取值范围**： 不涉及。
+        **参数解释**： 任务状态。 **取值范围**： - SUCCESS：成功。 - RUNNING：运行中。 - WAITING：等待中。 - FAILED：失败。 - ROLLBACK_RUNNING：回滚运行中。 - ROLLBACK_SUCCESS：回滚成功。 - ROLLBACK_FAIL：回滚失败。
 
         :param status: The status of this ListClusterActionsResponse.
         :type status: str

@@ -15,7 +15,8 @@ class ListNotificationMaskRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'relation_type': 'ListRelationType',
+        'relation_type': 'str',
+        'alarm_ids': 'list[str]',
         'relation_ids': 'list[str]',
         'metric_name': 'str',
         'resource_level': 'str',
@@ -29,6 +30,7 @@ class ListNotificationMaskRequestBody:
 
     attribute_map = {
         'relation_type': 'relation_type',
+        'alarm_ids': 'alarm_ids',
         'relation_ids': 'relation_ids',
         'metric_name': 'metric_name',
         'resource_level': 'resource_level',
@@ -40,36 +42,39 @@ class ListNotificationMaskRequestBody:
         'dimensions': 'dimensions'
     }
 
-    def __init__(self, relation_type=None, relation_ids=None, metric_name=None, resource_level=None, mask_id=None, mask_name=None, mask_status=None, resource_id=None, namespace=None, dimensions=None):
+    def __init__(self, relation_type=None, alarm_ids=None, relation_ids=None, metric_name=None, resource_level=None, mask_id=None, mask_name=None, mask_status=None, resource_id=None, namespace=None, dimensions=None):
         r"""ListNotificationMaskRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param relation_type: 
-        :type relation_type: :class:`huaweicloudsdkces.v2.ListRelationType`
-        :param relation_ids: 关联编号（目前是告警规则ID）
+        :param relation_type: **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，长度为[1,32]个字符，取值为: - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择资源屏蔽。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择策略屏蔽。 - EVENT.SYS：屏蔽事件类告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择事件屏蔽。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - DEFAULT：（已废弃，不推荐使用）默认包含RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS **默认取值**： 不涉及。 
+        :type relation_type: str
+        :param alarm_ids: **参数解释**： 告警规则ID列表，用于查询对应的告警通知屏蔽。 **约束限制**： 当relation_type为ALARM_RULE、RESOURCE_POLICY_NOTIFICATION时，应通过alarm_ids查询。当relation_type为RESOURCE、EVENT.SYS时，不支持使用alarm_ids查询，此时alarm_ids为空或不选，表示查询所有的RESOURCE、EVENT.SYS类型的告警屏蔽。 **取值范围**： 包含的告警规则ID数量最多不超过100个，最少为0个。 **默认取值**： 不涉及 
+        :type alarm_ids: list[str]
+        :param relation_ids: （已废弃，不推荐使用）关联编号（目前是告警规则ID）
         :type relation_ids: list[str]
         :param metric_name: **参数解释**： 资源的监控指标名称，各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_/-。字符长度最短为1，最大为96。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率。         **默认取值**： 不涉及。 
         :type metric_name: str
-        :param resource_level: dimension: 子维度,product: 云产品
+        :param resource_level: **参数解释**： 资源层级。 **约束限制**： 不涉及。 **取值范围**： - product: 云产品   - dimension: 子维度 **默认取值**： 不涉及。 
         :type resource_level: str
-        :param mask_id: 屏蔽规则ID,可选
+        :param mask_id: **参数解释**： 屏蔽规则ID,可选。 **约束限制**： 不涉及。 **取值范围**： 以nm开头，后跟[0,62]个英文或数字。 **默认取值**： 不涉及。 
         :type mask_id: str
-        :param mask_name: 屏蔽规则名称,可选，只能为字母、数字、汉字、-、_，最大长度为64
+        :param mask_name: **参数解释**： 屏蔽规则名称,可选。 **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。 **默认取值**： 不涉及。 
         :type mask_name: str
-        :param mask_status: 屏蔽状态,可选。MASK_EFFECTIVE：已生效，MASK_INEFFECTIVE：未生效。
+        :param mask_status: **参数解释**： 屏蔽状态,可选。 **约束限制**： 不涉及。 **取值范围**： - MASK_EFFECTIVE：已生效。 - MASK_INEFFECTIVE：未生效。 **默认取值**： 不涉及。 
         :type mask_status: str
-        :param resource_id: 资源维度值,提供一个维度的资源ID即可,可选
+        :param resource_id: **参数解释**： 资源维度值,提供一个维度的资源ID即可,可选 **约束限制**： 不涉及。 **取值范围**： 长度为[1,700]个字符。 **默认取值**： 不涉及。 
         :type resource_id: str
         :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
         :type namespace: str
-        :param dimensions: 资源的维度信息
+        :param dimensions: **参数解释**： 资源的维度信息 **约束限制**： 包含的维度信息数量为[1,4]个。 
         :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
         """
         
         
 
         self._relation_type = None
+        self._alarm_ids = None
         self._relation_ids = None
         self._metric_name = None
         self._resource_level = None
@@ -82,6 +87,8 @@ class ListNotificationMaskRequestBody:
         self.discriminator = None
 
         self.relation_type = relation_type
+        if alarm_ids is not None:
+            self.alarm_ids = alarm_ids
         self.relation_ids = relation_ids
         if metric_name is not None:
             self.metric_name = metric_name
@@ -104,8 +111,10 @@ class ListNotificationMaskRequestBody:
     def relation_type(self):
         r"""Gets the relation_type of this ListNotificationMaskRequestBody.
 
+        **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，长度为[1,32]个字符，取值为: - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择资源屏蔽。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择策略屏蔽。 - EVENT.SYS：屏蔽事件类告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择事件屏蔽。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - DEFAULT：（已废弃，不推荐使用）默认包含RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS **默认取值**： 不涉及。 
+
         :return: The relation_type of this ListNotificationMaskRequestBody.
-        :rtype: :class:`huaweicloudsdkces.v2.ListRelationType`
+        :rtype: str
         """
         return self._relation_type
 
@@ -113,16 +122,40 @@ class ListNotificationMaskRequestBody:
     def relation_type(self, relation_type):
         r"""Sets the relation_type of this ListNotificationMaskRequestBody.
 
+        **参数解释**： 屏蔽告警通知的实现方式。 **约束限制**： 不涉及。 **取值范围**： 枚举值，长度为[1,32]个字符，取值为: - ALARM_RULE：通过告警规则屏蔽告警通知。 - RESOURCE：通过资源屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择资源屏蔽。 - RESOURCE_POLICY_NOTIFICATION：通过告警策略屏蔽告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择策略屏蔽。 - EVENT.SYS：屏蔽事件类告警通知。使用方式：《告警屏蔽》页面点击《创建告警屏蔽》按钮，选择事件屏蔽。 - RESOURCE_POLICY_ALARM：（已废弃，不推荐使用）通过屏蔽告警计算来屏蔽告警通知。 - DEFAULT：（已废弃，不推荐使用）默认包含RESOURCE、RESOURCE_POLICY_NOTIFICATION、EVENT.SYS **默认取值**： 不涉及。 
+
         :param relation_type: The relation_type of this ListNotificationMaskRequestBody.
-        :type relation_type: :class:`huaweicloudsdkces.v2.ListRelationType`
+        :type relation_type: str
         """
         self._relation_type = relation_type
+
+    @property
+    def alarm_ids(self):
+        r"""Gets the alarm_ids of this ListNotificationMaskRequestBody.
+
+        **参数解释**： 告警规则ID列表，用于查询对应的告警通知屏蔽。 **约束限制**： 当relation_type为ALARM_RULE、RESOURCE_POLICY_NOTIFICATION时，应通过alarm_ids查询。当relation_type为RESOURCE、EVENT.SYS时，不支持使用alarm_ids查询，此时alarm_ids为空或不选，表示查询所有的RESOURCE、EVENT.SYS类型的告警屏蔽。 **取值范围**： 包含的告警规则ID数量最多不超过100个，最少为0个。 **默认取值**： 不涉及 
+
+        :return: The alarm_ids of this ListNotificationMaskRequestBody.
+        :rtype: list[str]
+        """
+        return self._alarm_ids
+
+    @alarm_ids.setter
+    def alarm_ids(self, alarm_ids):
+        r"""Sets the alarm_ids of this ListNotificationMaskRequestBody.
+
+        **参数解释**： 告警规则ID列表，用于查询对应的告警通知屏蔽。 **约束限制**： 当relation_type为ALARM_RULE、RESOURCE_POLICY_NOTIFICATION时，应通过alarm_ids查询。当relation_type为RESOURCE、EVENT.SYS时，不支持使用alarm_ids查询，此时alarm_ids为空或不选，表示查询所有的RESOURCE、EVENT.SYS类型的告警屏蔽。 **取值范围**： 包含的告警规则ID数量最多不超过100个，最少为0个。 **默认取值**： 不涉及 
+
+        :param alarm_ids: The alarm_ids of this ListNotificationMaskRequestBody.
+        :type alarm_ids: list[str]
+        """
+        self._alarm_ids = alarm_ids
 
     @property
     def relation_ids(self):
         r"""Gets the relation_ids of this ListNotificationMaskRequestBody.
 
-        关联编号（目前是告警规则ID）
+        （已废弃，不推荐使用）关联编号（目前是告警规则ID）
 
         :return: The relation_ids of this ListNotificationMaskRequestBody.
         :rtype: list[str]
@@ -133,7 +166,7 @@ class ListNotificationMaskRequestBody:
     def relation_ids(self, relation_ids):
         r"""Sets the relation_ids of this ListNotificationMaskRequestBody.
 
-        关联编号（目前是告警规则ID）
+        （已废弃，不推荐使用）关联编号（目前是告警规则ID）
 
         :param relation_ids: The relation_ids of this ListNotificationMaskRequestBody.
         :type relation_ids: list[str]
@@ -166,7 +199,7 @@ class ListNotificationMaskRequestBody:
     def resource_level(self):
         r"""Gets the resource_level of this ListNotificationMaskRequestBody.
 
-        dimension: 子维度,product: 云产品
+        **参数解释**： 资源层级。 **约束限制**： 不涉及。 **取值范围**： - product: 云产品   - dimension: 子维度 **默认取值**： 不涉及。 
 
         :return: The resource_level of this ListNotificationMaskRequestBody.
         :rtype: str
@@ -177,7 +210,7 @@ class ListNotificationMaskRequestBody:
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this ListNotificationMaskRequestBody.
 
-        dimension: 子维度,product: 云产品
+        **参数解释**： 资源层级。 **约束限制**： 不涉及。 **取值范围**： - product: 云产品   - dimension: 子维度 **默认取值**： 不涉及。 
 
         :param resource_level: The resource_level of this ListNotificationMaskRequestBody.
         :type resource_level: str
@@ -188,7 +221,7 @@ class ListNotificationMaskRequestBody:
     def mask_id(self):
         r"""Gets the mask_id of this ListNotificationMaskRequestBody.
 
-        屏蔽规则ID,可选
+        **参数解释**： 屏蔽规则ID,可选。 **约束限制**： 不涉及。 **取值范围**： 以nm开头，后跟[0,62]个英文或数字。 **默认取值**： 不涉及。 
 
         :return: The mask_id of this ListNotificationMaskRequestBody.
         :rtype: str
@@ -199,7 +232,7 @@ class ListNotificationMaskRequestBody:
     def mask_id(self, mask_id):
         r"""Sets the mask_id of this ListNotificationMaskRequestBody.
 
-        屏蔽规则ID,可选
+        **参数解释**： 屏蔽规则ID,可选。 **约束限制**： 不涉及。 **取值范围**： 以nm开头，后跟[0,62]个英文或数字。 **默认取值**： 不涉及。 
 
         :param mask_id: The mask_id of this ListNotificationMaskRequestBody.
         :type mask_id: str
@@ -210,7 +243,7 @@ class ListNotificationMaskRequestBody:
     def mask_name(self):
         r"""Gets the mask_name of this ListNotificationMaskRequestBody.
 
-        屏蔽规则名称,可选，只能为字母、数字、汉字、-、_，最大长度为64
+        **参数解释**： 屏蔽规则名称,可选。 **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。 **默认取值**： 不涉及。 
 
         :return: The mask_name of this ListNotificationMaskRequestBody.
         :rtype: str
@@ -221,7 +254,7 @@ class ListNotificationMaskRequestBody:
     def mask_name(self, mask_name):
         r"""Sets the mask_name of this ListNotificationMaskRequestBody.
 
-        屏蔽规则名称,可选，只能为字母、数字、汉字、-、_，最大长度为64
+        **参数解释**： 屏蔽规则名称,可选。 **约束限制**： 不涉及。 **取值范围**： 只能为字母、数字、汉字、-、_，长度为[1,64]个字符。 **默认取值**： 不涉及。 
 
         :param mask_name: The mask_name of this ListNotificationMaskRequestBody.
         :type mask_name: str
@@ -232,7 +265,7 @@ class ListNotificationMaskRequestBody:
     def mask_status(self):
         r"""Gets the mask_status of this ListNotificationMaskRequestBody.
 
-        屏蔽状态,可选。MASK_EFFECTIVE：已生效，MASK_INEFFECTIVE：未生效。
+        **参数解释**： 屏蔽状态,可选。 **约束限制**： 不涉及。 **取值范围**： - MASK_EFFECTIVE：已生效。 - MASK_INEFFECTIVE：未生效。 **默认取值**： 不涉及。 
 
         :return: The mask_status of this ListNotificationMaskRequestBody.
         :rtype: str
@@ -243,7 +276,7 @@ class ListNotificationMaskRequestBody:
     def mask_status(self, mask_status):
         r"""Sets the mask_status of this ListNotificationMaskRequestBody.
 
-        屏蔽状态,可选。MASK_EFFECTIVE：已生效，MASK_INEFFECTIVE：未生效。
+        **参数解释**： 屏蔽状态,可选。 **约束限制**： 不涉及。 **取值范围**： - MASK_EFFECTIVE：已生效。 - MASK_INEFFECTIVE：未生效。 **默认取值**： 不涉及。 
 
         :param mask_status: The mask_status of this ListNotificationMaskRequestBody.
         :type mask_status: str
@@ -254,7 +287,7 @@ class ListNotificationMaskRequestBody:
     def resource_id(self):
         r"""Gets the resource_id of this ListNotificationMaskRequestBody.
 
-        资源维度值,提供一个维度的资源ID即可,可选
+        **参数解释**： 资源维度值,提供一个维度的资源ID即可,可选 **约束限制**： 不涉及。 **取值范围**： 长度为[1,700]个字符。 **默认取值**： 不涉及。 
 
         :return: The resource_id of this ListNotificationMaskRequestBody.
         :rtype: str
@@ -265,7 +298,7 @@ class ListNotificationMaskRequestBody:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this ListNotificationMaskRequestBody.
 
-        资源维度值,提供一个维度的资源ID即可,可选
+        **参数解释**： 资源维度值,提供一个维度的资源ID即可,可选 **约束限制**： 不涉及。 **取值范围**： 长度为[1,700]个字符。 **默认取值**： 不涉及。 
 
         :param resource_id: The resource_id of this ListNotificationMaskRequestBody.
         :type resource_id: str
@@ -298,7 +331,7 @@ class ListNotificationMaskRequestBody:
     def dimensions(self):
         r"""Gets the dimensions of this ListNotificationMaskRequestBody.
 
-        资源的维度信息
+        **参数解释**： 资源的维度信息 **约束限制**： 包含的维度信息数量为[1,4]个。 
 
         :return: The dimensions of this ListNotificationMaskRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
@@ -309,7 +342,7 @@ class ListNotificationMaskRequestBody:
     def dimensions(self, dimensions):
         r"""Sets the dimensions of this ListNotificationMaskRequestBody.
 
-        资源的维度信息
+        **参数解释**： 资源的维度信息 **约束限制**： 包含的维度信息数量为[1,4]个。 
 
         :param dimensions: The dimensions of this ListNotificationMaskRequestBody.
         :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]

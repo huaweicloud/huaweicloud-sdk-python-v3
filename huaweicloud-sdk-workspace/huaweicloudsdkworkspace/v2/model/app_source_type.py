@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AppSourceType:
-    """
-    allowed enum values
-    """
-    CUSTOM = "CUSTOM"
-    SYSTEM = "SYSTEM"
-    MARKET = "MARKET"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

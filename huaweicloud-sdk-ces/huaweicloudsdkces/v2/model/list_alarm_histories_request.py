@@ -63,27 +63,27 @@ class ListAlarmHistoriesRequest:
         :type name: str
         :param status: **参数解释**： 告警规则状态列表。告警规则状态：枚举值，ok为正常，alarm为告警，invalid为已失效。 **约束限制**： 列表长度最大为3。 
         :type status: list[str]
-        :param level: **参数解释**： 告警级别。 **约束限制**： 不涉及。 **取值范围**： 枚举值，1为紧急，2为重要，3为次要，4为提示。 **默认取值**： 不涉及。 
+        :param level: **参数解释**： 告警级别。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 **默认取值**： 不涉及。 
         :type level: int
         :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
         :type namespace: str
-        :param resource_id: **参数解释**： 告警资源ID。 **约束限制**： 不涉及。 **取值范围**： 多维度情况按字母升序排列并使用逗号分隔。最大字符长度为2048。 **默认取值**： 不涉及。 
+        :param resource_id: **参数解释**： 告警资源ID。 **约束限制**： 不涉及。 **取值范围**： 多维度情况按字母升序排列并使用逗号分隔。长度为[0,2048]个字符。 **默认取值**： 不涉及。 
         :type resource_id: str
-        :param _from: **参数解释**： 查询告警记录的起始更新时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        :param _from: **参数解释**： 查询告警记录的起始更新时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
         :type _from: str
-        :param to: **参数解释**： 查询告警记录的截止更新时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        :param to: **参数解释**： 查询告警记录的截止更新时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
         :type to: str
-        :param alarm_type: **参数解释**： 告警类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。event:查询事件类型告警，metric:查询指标类型告警。 **默认取值**： 不涉及。 
+        :param alarm_type: **参数解释**： 告警类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值 - event: 查询事件类型告警 - metric: 查询指标类型告警。 **默认取值**： 不涉及。 
         :type alarm_type: str
-        :param create_time_from: **参数解释**： 查询告警记录的起始创建时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        :param create_time_from: **参数解释**： 查询告警记录的起始创建时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
         :type create_time_from: str
-        :param create_time_to: **参数解释**： 查询告警记录的截止创建时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        :param create_time_to: **参数解释**： 查询告警记录的截止创建时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
         :type create_time_to: str
-        :param offset: **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为0，最大值为1000000000。 **默认取值**： 0 
+        :param offset: **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为0，最大值为1000000000 **默认取值**： 0 
         :type offset: int
-        :param limit: **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为1，最大值为100。 **默认取值**： 100 
+        :param limit: **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为1，最大值为100 **默认取值**： 100 
         :type limit: int
-        :param order_by: **参数解释**： 按关键字排序。 **约束限制**： 不涉及。 **取值范围**： 枚举值。first_alarm_time:告警产生时间, update_time:更新时间, alarm_level:告警级别，record_id表记录主键。 **默认取值**： update_time 
+        :param order_by: **参数解释**： 按关键字排序。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - first_alarm_time: 告警产生时间 - update_time: 更新时间 - alarm_level: 告警级别 - record_id: 表记录主键 **默认取值**： update_time 
         :type order_by: str
         """
         
@@ -229,7 +229,7 @@ class ListAlarmHistoriesRequest:
     def level(self):
         r"""Gets the level of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 告警级别。 **约束限制**： 不涉及。 **取值范围**： 枚举值，1为紧急，2为重要，3为次要，4为提示。 **默认取值**： 不涉及。 
+        **参数解释**： 告警级别。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 **默认取值**： 不涉及。 
 
         :return: The level of this ListAlarmHistoriesRequest.
         :rtype: int
@@ -240,7 +240,7 @@ class ListAlarmHistoriesRequest:
     def level(self, level):
         r"""Sets the level of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 告警级别。 **约束限制**： 不涉及。 **取值范围**： 枚举值，1为紧急，2为重要，3为次要，4为提示。 **默认取值**： 不涉及。 
+        **参数解释**： 告警级别。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 **默认取值**： 不涉及。 
 
         :param level: The level of this ListAlarmHistoriesRequest.
         :type level: int
@@ -273,7 +273,7 @@ class ListAlarmHistoriesRequest:
     def resource_id(self):
         r"""Gets the resource_id of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 告警资源ID。 **约束限制**： 不涉及。 **取值范围**： 多维度情况按字母升序排列并使用逗号分隔。最大字符长度为2048。 **默认取值**： 不涉及。 
+        **参数解释**： 告警资源ID。 **约束限制**： 不涉及。 **取值范围**： 多维度情况按字母升序排列并使用逗号分隔。长度为[0,2048]个字符。 **默认取值**： 不涉及。 
 
         :return: The resource_id of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -284,7 +284,7 @@ class ListAlarmHistoriesRequest:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 告警资源ID。 **约束限制**： 不涉及。 **取值范围**： 多维度情况按字母升序排列并使用逗号分隔。最大字符长度为2048。 **默认取值**： 不涉及。 
+        **参数解释**： 告警资源ID。 **约束限制**： 不涉及。 **取值范围**： 多维度情况按字母升序排列并使用逗号分隔。长度为[0,2048]个字符。 **默认取值**： 不涉及。 
 
         :param resource_id: The resource_id of this ListAlarmHistoriesRequest.
         :type resource_id: str
@@ -295,7 +295,7 @@ class ListAlarmHistoriesRequest:
     def _from(self):
         r"""Gets the _from of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 查询告警记录的起始更新时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        **参数解释**： 查询告警记录的起始更新时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
 
         :return: The _from of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -306,7 +306,7 @@ class ListAlarmHistoriesRequest:
     def _from(self, _from):
         r"""Sets the _from of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 查询告警记录的起始更新时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        **参数解释**： 查询告警记录的起始更新时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
 
         :param _from: The _from of this ListAlarmHistoriesRequest.
         :type _from: str
@@ -317,7 +317,7 @@ class ListAlarmHistoriesRequest:
     def to(self):
         r"""Gets the to of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 查询告警记录的截止更新时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        **参数解释**： 查询告警记录的截止更新时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
 
         :return: The to of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -328,7 +328,7 @@ class ListAlarmHistoriesRequest:
     def to(self, to):
         r"""Sets the to of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 查询告警记录的截止更新时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        **参数解释**： 查询告警记录的截止更新时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
 
         :param to: The to of this ListAlarmHistoriesRequest.
         :type to: str
@@ -339,7 +339,7 @@ class ListAlarmHistoriesRequest:
     def alarm_type(self):
         r"""Gets the alarm_type of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 告警类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。event:查询事件类型告警，metric:查询指标类型告警。 **默认取值**： 不涉及。 
+        **参数解释**： 告警类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值 - event: 查询事件类型告警 - metric: 查询指标类型告警。 **默认取值**： 不涉及。 
 
         :return: The alarm_type of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -350,7 +350,7 @@ class ListAlarmHistoriesRequest:
     def alarm_type(self, alarm_type):
         r"""Sets the alarm_type of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 告警类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。event:查询事件类型告警，metric:查询指标类型告警。 **默认取值**： 不涉及。 
+        **参数解释**： 告警类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值 - event: 查询事件类型告警 - metric: 查询指标类型告警。 **默认取值**： 不涉及。 
 
         :param alarm_type: The alarm_type of this ListAlarmHistoriesRequest.
         :type alarm_type: str
@@ -361,7 +361,7 @@ class ListAlarmHistoriesRequest:
     def create_time_from(self):
         r"""Gets the create_time_from of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 查询告警记录的起始创建时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        **参数解释**： 查询告警记录的起始创建时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
 
         :return: The create_time_from of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -372,7 +372,7 @@ class ListAlarmHistoriesRequest:
     def create_time_from(self, create_time_from):
         r"""Sets the create_time_from of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 查询告警记录的起始创建时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        **参数解释**： 查询告警记录的起始创建时间，例如：2022-02-10T10:05:46+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
 
         :param create_time_from: The create_time_from of this ListAlarmHistoriesRequest.
         :type create_time_from: str
@@ -383,7 +383,7 @@ class ListAlarmHistoriesRequest:
     def create_time_to(self):
         r"""Gets the create_time_to of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 查询告警记录的截止创建时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        **参数解释**： 查询告警记录的截止创建时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
 
         :return: The create_time_to of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -394,7 +394,7 @@ class ListAlarmHistoriesRequest:
     def create_time_to(self, create_time_to):
         r"""Sets the create_time_to of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 查询告警记录的截止创建时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 最大字符长度为64。 **默认取值**： 不涉及。 
+        **参数解释**： 查询告警记录的截止创建时间，例如：2022-02-10T10:05:47+08:00。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,64]个字符。 **默认取值**： 不涉及。 
 
         :param create_time_to: The create_time_to of this ListAlarmHistoriesRequest.
         :type create_time_to: str
@@ -405,7 +405,7 @@ class ListAlarmHistoriesRequest:
     def offset(self):
         r"""Gets the offset of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为0，最大值为1000000000。 **默认取值**： 0 
+        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为0，最大值为1000000000 **默认取值**： 0 
 
         :return: The offset of this ListAlarmHistoriesRequest.
         :rtype: int
@@ -416,7 +416,7 @@ class ListAlarmHistoriesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为0，最大值为1000000000。 **默认取值**： 0 
+        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为0，最大值为1000000000 **默认取值**： 0 
 
         :param offset: The offset of this ListAlarmHistoriesRequest.
         :type offset: int
@@ -427,7 +427,7 @@ class ListAlarmHistoriesRequest:
     def limit(self):
         r"""Gets the limit of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为1，最大值为100。 **默认取值**： 100 
+        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为1，最大值为100 **默认取值**： 100 
 
         :return: The limit of this ListAlarmHistoriesRequest.
         :rtype: int
@@ -438,7 +438,7 @@ class ListAlarmHistoriesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为1，最大值为100。 **默认取值**： 100 
+        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 整数，最小值为1，最大值为100 **默认取值**： 100 
 
         :param limit: The limit of this ListAlarmHistoriesRequest.
         :type limit: int
@@ -449,7 +449,7 @@ class ListAlarmHistoriesRequest:
     def order_by(self):
         r"""Gets the order_by of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 按关键字排序。 **约束限制**： 不涉及。 **取值范围**： 枚举值。first_alarm_time:告警产生时间, update_time:更新时间, alarm_level:告警级别，record_id表记录主键。 **默认取值**： update_time 
+        **参数解释**： 按关键字排序。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - first_alarm_time: 告警产生时间 - update_time: 更新时间 - alarm_level: 告警级别 - record_id: 表记录主键 **默认取值**： update_time 
 
         :return: The order_by of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -460,7 +460,7 @@ class ListAlarmHistoriesRequest:
     def order_by(self, order_by):
         r"""Sets the order_by of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 按关键字排序。 **约束限制**： 不涉及。 **取值范围**： 枚举值。first_alarm_time:告警产生时间, update_time:更新时间, alarm_level:告警级别，record_id表记录主键。 **默认取值**： update_time 
+        **参数解释**： 按关键字排序。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - first_alarm_time: 告警产生时间 - update_time: 更新时间 - alarm_level: 告警级别 - record_id: 表记录主键 **默认取值**： update_time 
 
         :param order_by: The order_by of this ListAlarmHistoriesRequest.
         :type order_by: str

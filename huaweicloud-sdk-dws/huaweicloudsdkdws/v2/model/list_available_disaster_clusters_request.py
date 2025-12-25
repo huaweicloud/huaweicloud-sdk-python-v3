@@ -55,9 +55,9 @@ class ListAvailableDisasterClustersRequest:
         :type standby_region: str
         :param standby_project_id: **参数解释**： 备集群项目ID。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type standby_project_id: str
-        :param dr_type: **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param dr_type: **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。 **默认取值**： 不涉及。
         :type dr_type: str
-        :param datastore_type: **参数解释**： 数仓类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param datastore_type: **参数解释**： 数仓类型。 **约束限制**： 不涉及。 **取值范围**： - dws，dws存算一体。 - dws3.0，dws存算分离。 - hybrid，dws实时数仓。 **默认取值**： 不涉及。
         :type datastore_type: str
         :param datastore_version: **参数解释**： 数仓版本。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type datastore_version: str
@@ -229,7 +229,7 @@ class ListAvailableDisasterClustersRequest:
     def dr_type(self):
         r"""Gets the dr_type of this ListAvailableDisasterClustersRequest.
 
-        **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。 **默认取值**： 不涉及。
 
         :return: The dr_type of this ListAvailableDisasterClustersRequest.
         :rtype: str
@@ -240,7 +240,7 @@ class ListAvailableDisasterClustersRequest:
     def dr_type(self, dr_type):
         r"""Sets the dr_type of this ListAvailableDisasterClustersRequest.
 
-        **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 容灾类型。 **约束限制**： 不涉及。 **取值范围**： - az，跨az容灾。 - region，跨region容灾。 **默认取值**： 不涉及。
 
         :param dr_type: The dr_type of this ListAvailableDisasterClustersRequest.
         :type dr_type: str
@@ -251,7 +251,7 @@ class ListAvailableDisasterClustersRequest:
     def datastore_type(self):
         r"""Gets the datastore_type of this ListAvailableDisasterClustersRequest.
 
-        **参数解释**： 数仓类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 数仓类型。 **约束限制**： 不涉及。 **取值范围**： - dws，dws存算一体。 - dws3.0，dws存算分离。 - hybrid，dws实时数仓。 **默认取值**： 不涉及。
 
         :return: The datastore_type of this ListAvailableDisasterClustersRequest.
         :rtype: str
@@ -262,7 +262,7 @@ class ListAvailableDisasterClustersRequest:
     def datastore_type(self, datastore_type):
         r"""Sets the datastore_type of this ListAvailableDisasterClustersRequest.
 
-        **参数解释**： 数仓类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 数仓类型。 **约束限制**： 不涉及。 **取值范围**： - dws，dws存算一体。 - dws3.0，dws存算分离。 - hybrid，dws实时数仓。 **默认取值**： 不涉及。
 
         :param datastore_type: The datastore_type of this ListAvailableDisasterClustersRequest.
         :type datastore_type: str

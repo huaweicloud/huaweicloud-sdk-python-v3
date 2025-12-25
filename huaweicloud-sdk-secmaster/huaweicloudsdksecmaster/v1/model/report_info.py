@@ -1,0 +1,356 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ReportInfo:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'id': 'str',
+        'report_name': 'str',
+        'report_period': 'str',
+        'report_range': 'CreateReportRequestBodyReportRange',
+        'language': 'str',
+        'notification_task': 'str',
+        'layout_id': 'str',
+        'status': 'str',
+        'is_generated': 'bool',
+        'report_rule_infos': 'list[ReportRuleInfo]'
+    }
+
+    attribute_map = {
+        'id': 'id',
+        'report_name': 'report_name',
+        'report_period': 'report_period',
+        'report_range': 'report_range',
+        'language': 'language',
+        'notification_task': 'notification_task',
+        'layout_id': 'layout_id',
+        'status': 'status',
+        'is_generated': 'is_generated',
+        'report_rule_infos': 'report_rule_infos'
+    }
+
+    def __init__(self, id=None, report_name=None, report_period=None, report_range=None, language=None, notification_task=None, layout_id=None, status=None, is_generated=None, report_rule_infos=None):
+        r"""ReportInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 报告id
+        :type id: str
+        :param report_name: 报告名称
+        :type report_name: str
+        :param report_period: 报告周期 weekly, daily, annual, monthly
+        :type report_period: str
+        :param report_range: 
+        :type report_range: :class:`huaweicloudsdksecmaster.v1.CreateReportRequestBodyReportRange`
+        :param language: 语言
+        :type language: str
+        :param notification_task: 通知任务id
+        :type notification_task: str
+        :param layout_id: 布局id
+        :type layout_id: str
+        :param status: 报告状态 enable, disable
+        :type status: str
+        :param is_generated: 报告是否已生成
+        :type is_generated: bool
+        :param report_rule_infos: 报告发送规则
+        :type report_rule_infos: list[:class:`huaweicloudsdksecmaster.v1.ReportRuleInfo`]
+        """
+        
+        
+
+        self._id = None
+        self._report_name = None
+        self._report_period = None
+        self._report_range = None
+        self._language = None
+        self._notification_task = None
+        self._layout_id = None
+        self._status = None
+        self._is_generated = None
+        self._report_rule_infos = None
+        self.discriminator = None
+
+        self.id = id
+        self.report_name = report_name
+        self.report_period = report_period
+        self.report_range = report_range
+        self.language = language
+        self.notification_task = notification_task
+        self.layout_id = layout_id
+        self.status = status
+        self.is_generated = is_generated
+        if report_rule_infos is not None:
+            self.report_rule_infos = report_rule_infos
+
+    @property
+    def id(self):
+        r"""Gets the id of this ReportInfo.
+
+        报告id
+
+        :return: The id of this ReportInfo.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this ReportInfo.
+
+        报告id
+
+        :param id: The id of this ReportInfo.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def report_name(self):
+        r"""Gets the report_name of this ReportInfo.
+
+        报告名称
+
+        :return: The report_name of this ReportInfo.
+        :rtype: str
+        """
+        return self._report_name
+
+    @report_name.setter
+    def report_name(self, report_name):
+        r"""Sets the report_name of this ReportInfo.
+
+        报告名称
+
+        :param report_name: The report_name of this ReportInfo.
+        :type report_name: str
+        """
+        self._report_name = report_name
+
+    @property
+    def report_period(self):
+        r"""Gets the report_period of this ReportInfo.
+
+        报告周期 weekly, daily, annual, monthly
+
+        :return: The report_period of this ReportInfo.
+        :rtype: str
+        """
+        return self._report_period
+
+    @report_period.setter
+    def report_period(self, report_period):
+        r"""Sets the report_period of this ReportInfo.
+
+        报告周期 weekly, daily, annual, monthly
+
+        :param report_period: The report_period of this ReportInfo.
+        :type report_period: str
+        """
+        self._report_period = report_period
+
+    @property
+    def report_range(self):
+        r"""Gets the report_range of this ReportInfo.
+
+        :return: The report_range of this ReportInfo.
+        :rtype: :class:`huaweicloudsdksecmaster.v1.CreateReportRequestBodyReportRange`
+        """
+        return self._report_range
+
+    @report_range.setter
+    def report_range(self, report_range):
+        r"""Sets the report_range of this ReportInfo.
+
+        :param report_range: The report_range of this ReportInfo.
+        :type report_range: :class:`huaweicloudsdksecmaster.v1.CreateReportRequestBodyReportRange`
+        """
+        self._report_range = report_range
+
+    @property
+    def language(self):
+        r"""Gets the language of this ReportInfo.
+
+        语言
+
+        :return: The language of this ReportInfo.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        r"""Sets the language of this ReportInfo.
+
+        语言
+
+        :param language: The language of this ReportInfo.
+        :type language: str
+        """
+        self._language = language
+
+    @property
+    def notification_task(self):
+        r"""Gets the notification_task of this ReportInfo.
+
+        通知任务id
+
+        :return: The notification_task of this ReportInfo.
+        :rtype: str
+        """
+        return self._notification_task
+
+    @notification_task.setter
+    def notification_task(self, notification_task):
+        r"""Sets the notification_task of this ReportInfo.
+
+        通知任务id
+
+        :param notification_task: The notification_task of this ReportInfo.
+        :type notification_task: str
+        """
+        self._notification_task = notification_task
+
+    @property
+    def layout_id(self):
+        r"""Gets the layout_id of this ReportInfo.
+
+        布局id
+
+        :return: The layout_id of this ReportInfo.
+        :rtype: str
+        """
+        return self._layout_id
+
+    @layout_id.setter
+    def layout_id(self, layout_id):
+        r"""Sets the layout_id of this ReportInfo.
+
+        布局id
+
+        :param layout_id: The layout_id of this ReportInfo.
+        :type layout_id: str
+        """
+        self._layout_id = layout_id
+
+    @property
+    def status(self):
+        r"""Gets the status of this ReportInfo.
+
+        报告状态 enable, disable
+
+        :return: The status of this ReportInfo.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ReportInfo.
+
+        报告状态 enable, disable
+
+        :param status: The status of this ReportInfo.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def is_generated(self):
+        r"""Gets the is_generated of this ReportInfo.
+
+        报告是否已生成
+
+        :return: The is_generated of this ReportInfo.
+        :rtype: bool
+        """
+        return self._is_generated
+
+    @is_generated.setter
+    def is_generated(self, is_generated):
+        r"""Sets the is_generated of this ReportInfo.
+
+        报告是否已生成
+
+        :param is_generated: The is_generated of this ReportInfo.
+        :type is_generated: bool
+        """
+        self._is_generated = is_generated
+
+    @property
+    def report_rule_infos(self):
+        r"""Gets the report_rule_infos of this ReportInfo.
+
+        报告发送规则
+
+        :return: The report_rule_infos of this ReportInfo.
+        :rtype: list[:class:`huaweicloudsdksecmaster.v1.ReportRuleInfo`]
+        """
+        return self._report_rule_infos
+
+    @report_rule_infos.setter
+    def report_rule_infos(self, report_rule_infos):
+        r"""Sets the report_rule_infos of this ReportInfo.
+
+        报告发送规则
+
+        :param report_rule_infos: The report_rule_infos of this ReportInfo.
+        :type report_rule_infos: list[:class:`huaweicloudsdksecmaster.v1.ReportRuleInfo`]
+        """
+        self._report_rule_infos = report_rule_infos
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ReportInfo):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

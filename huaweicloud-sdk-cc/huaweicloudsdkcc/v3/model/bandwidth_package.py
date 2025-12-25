@@ -25,10 +25,10 @@ class BandwidthPackage:
         'updated_at': 'datetime',
         'resource_id': 'str',
         'resource_type': 'str',
-        'local_area_id': 'LocalAreaIdDef',
-        'remote_area_id': 'RemoteAreaIdDef',
+        'local_area_id': 'str',
+        'remote_area_id': 'str',
         'spec_code': 'str',
-        'billing_mode': 'BillingModeEnum',
+        'billing_mode': 'int',
         'tags': 'list[Tag]',
         'status': 'str',
         'admin_state_up': 'bool',
@@ -89,14 +89,14 @@ class BandwidthPackage:
         :type resource_id: str
         :param resource_type: 带宽包实例绑定的资源类型。 cloud_connection: 云连接实例。
         :type resource_type: str
-        :param local_area_id: 
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
-        :param remote_area_id: 
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
+        :param local_area_id: 本端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+        :type local_area_id: str
+        :param remote_area_id: 对端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+        :type remote_area_id: str
         :param spec_code: 带宽包实例的规格编码。
         :type spec_code: str
-        :param billing_mode: 
-        :type billing_mode: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
+        :param billing_mode: 带宽包实例在大陆站或国际站的计费方式。 1：大陆站包周期。 2：国际站包周期。 3：大陆站按需计费。 4：国际站按需计费。 5：大陆站按95方式计费。 6：国际站按95方式计费。 7：大陆站按日95方式计费。 8：国际站按日95方式计费。
+        :type billing_mode: int
         :param tags: 实例标签。
         :type tags: list[:class:`huaweicloudsdkcc.v3.Tag`]
         :param status: 带宽包实例的状态。ACTIVE表示状态
@@ -398,8 +398,10 @@ class BandwidthPackage:
     def local_area_id(self):
         r"""Gets the local_area_id of this BandwidthPackage.
 
+        本端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :return: The local_area_id of this BandwidthPackage.
-        :rtype: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
+        :rtype: str
         """
         return self._local_area_id
 
@@ -407,8 +409,10 @@ class BandwidthPackage:
     def local_area_id(self, local_area_id):
         r"""Sets the local_area_id of this BandwidthPackage.
 
+        本端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :param local_area_id: The local_area_id of this BandwidthPackage.
-        :type local_area_id: :class:`huaweicloudsdkcc.v3.LocalAreaIdDef`
+        :type local_area_id: str
         """
         self._local_area_id = local_area_id
 
@@ -416,8 +420,10 @@ class BandwidthPackage:
     def remote_area_id(self):
         r"""Gets the remote_area_id of this BandwidthPackage.
 
+        对端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :return: The remote_area_id of this BandwidthPackage.
-        :rtype: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
+        :rtype: str
         """
         return self._remote_area_id
 
@@ -425,8 +431,10 @@ class BandwidthPackage:
     def remote_area_id(self, remote_area_id):
         r"""Sets the remote_area_id of this BandwidthPackage.
 
+        对端大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :param remote_area_id: The remote_area_id of this BandwidthPackage.
-        :type remote_area_id: :class:`huaweicloudsdkcc.v3.RemoteAreaIdDef`
+        :type remote_area_id: str
         """
         self._remote_area_id = remote_area_id
 
@@ -456,8 +464,10 @@ class BandwidthPackage:
     def billing_mode(self):
         r"""Gets the billing_mode of this BandwidthPackage.
 
+        带宽包实例在大陆站或国际站的计费方式。 1：大陆站包周期。 2：国际站包周期。 3：大陆站按需计费。 4：国际站按需计费。 5：大陆站按95方式计费。 6：国际站按95方式计费。 7：大陆站按日95方式计费。 8：国际站按日95方式计费。
+
         :return: The billing_mode of this BandwidthPackage.
-        :rtype: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
+        :rtype: int
         """
         return self._billing_mode
 
@@ -465,8 +475,10 @@ class BandwidthPackage:
     def billing_mode(self, billing_mode):
         r"""Sets the billing_mode of this BandwidthPackage.
 
+        带宽包实例在大陆站或国际站的计费方式。 1：大陆站包周期。 2：国际站包周期。 3：大陆站按需计费。 4：国际站按需计费。 5：大陆站按95方式计费。 6：国际站按95方式计费。 7：大陆站按日95方式计费。 8：国际站按日95方式计费。
+
         :param billing_mode: The billing_mode of this BandwidthPackage.
-        :type billing_mode: :class:`huaweicloudsdkcc.v3.BillingModeEnum`
+        :type billing_mode: int
         """
         self._billing_mode = billing_mode
 

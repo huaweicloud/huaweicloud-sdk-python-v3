@@ -20,7 +20,7 @@ class Finding:
         'condition': 'list[FindingCondition]',
         'created_at': 'datetime',
         'finding_details': 'list[FindingDetails]',
-        'finding_type': 'FindingType',
+        'finding_type': 'str',
         'id': 'str',
         'is_public': 'bool',
         'principal': 'FindingPrincipal',
@@ -28,8 +28,8 @@ class Finding:
         'resource_id': 'str',
         'resource_owner_account': 'str',
         'resource_project_id': 'str',
-        'resource_type': 'ResourceType',
-        'sources': 'list[FindingSourceType]',
+        'resource_type': 'str',
+        'sources': 'list[str]',
         'status': 'str',
         'updated_at': 'datetime'
     }
@@ -69,8 +69,8 @@ class Finding:
         :type created_at: datetime
         :param finding_details: 访问分析结果的详细信息。
         :type finding_details: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingDetails`]
-        :param finding_type: 
-        :type finding_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
+        :param finding_type: 访问分析结果类型。 - external_access：外部访问 - privilege_escalation：提权访问 - unused_iam_user_access_key：未使用访问密钥 - unused_iam_user_password：未使用密码 - unused_permission：未使用权限 - unused_iam_agency：未使用委托 - iam_bp_root_user_has_access_key：为根用户绑定AK/SK - iam_bp_access_api_with_password：使用密码访问API - iam_bp_login_protection_disabled：未开启登录保护 - iam_bp_mfa_unconfigured：未绑定MFA - iam_bp_assign_high_risk_sys_policy_or_role_to_user：为用户授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_user：为用户授予高风险系统身份策略 - iam_bp_assign_high_risk_sys_policy_or_role_to_agency：为委托授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_agency：为委托授予高风险系统身份策略 
+        :type finding_type: str
         :param id: 访问分析结果的唯一标识符。
         :type id: str
         :param is_public: 表示生成访问分析结果的策略是否允许公共访问资源。
@@ -85,10 +85,10 @@ class Finding:
         :type resource_owner_account: str
         :param resource_project_id: 资源所属的项目标识符
         :type resource_project_id: str
-        :param resource_type: 
-        :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
+        :param resource_type: 资源的类型。 - iam:agency：IAM委托 - iam:user：IAM用户 - kms:cmk：DEW共享密钥 - obs:bucket：OBS桶 - swr:repo：SWR镜像仓库 - cbr:backup：CBR备份 - ims:image：IMS镜像 
+        :type resource_type: str
         :param sources: 访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
-        :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
+        :type sources: list[str]
         :param status: 访问分析结果当前状态。 - active：活跃 - archived：已归档 - resolved：已解决 
         :type status: str
         :param updated_at: 更新访问分析结果的时间。
@@ -255,8 +255,10 @@ class Finding:
     def finding_type(self):
         r"""Gets the finding_type of this Finding.
 
+        访问分析结果类型。 - external_access：外部访问 - privilege_escalation：提权访问 - unused_iam_user_access_key：未使用访问密钥 - unused_iam_user_password：未使用密码 - unused_permission：未使用权限 - unused_iam_agency：未使用委托 - iam_bp_root_user_has_access_key：为根用户绑定AK/SK - iam_bp_access_api_with_password：使用密码访问API - iam_bp_login_protection_disabled：未开启登录保护 - iam_bp_mfa_unconfigured：未绑定MFA - iam_bp_assign_high_risk_sys_policy_or_role_to_user：为用户授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_user：为用户授予高风险系统身份策略 - iam_bp_assign_high_risk_sys_policy_or_role_to_agency：为委托授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_agency：为委托授予高风险系统身份策略 
+
         :return: The finding_type of this Finding.
-        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
+        :rtype: str
         """
         return self._finding_type
 
@@ -264,8 +266,10 @@ class Finding:
     def finding_type(self, finding_type):
         r"""Sets the finding_type of this Finding.
 
+        访问分析结果类型。 - external_access：外部访问 - privilege_escalation：提权访问 - unused_iam_user_access_key：未使用访问密钥 - unused_iam_user_password：未使用密码 - unused_permission：未使用权限 - unused_iam_agency：未使用委托 - iam_bp_root_user_has_access_key：为根用户绑定AK/SK - iam_bp_access_api_with_password：使用密码访问API - iam_bp_login_protection_disabled：未开启登录保护 - iam_bp_mfa_unconfigured：未绑定MFA - iam_bp_assign_high_risk_sys_policy_or_role_to_user：为用户授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_user：为用户授予高风险系统身份策略 - iam_bp_assign_high_risk_sys_policy_or_role_to_agency：为委托授予高风险系统策略或角色 - iam_bp_attach_high_risk_sys_identity_policy_to_agency：为委托授予高风险系统身份策略 
+
         :param finding_type: The finding_type of this Finding.
-        :type finding_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingType`
+        :type finding_type: str
         """
         self._finding_type = finding_type
 
@@ -423,8 +427,10 @@ class Finding:
     def resource_type(self):
         r"""Gets the resource_type of this Finding.
 
+        资源的类型。 - iam:agency：IAM委托 - iam:user：IAM用户 - kms:cmk：DEW共享密钥 - obs:bucket：OBS桶 - swr:repo：SWR镜像仓库 - cbr:backup：CBR备份 - ims:image：IMS镜像 
+
         :return: The resource_type of this Finding.
-        :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
+        :rtype: str
         """
         return self._resource_type
 
@@ -432,8 +438,10 @@ class Finding:
     def resource_type(self, resource_type):
         r"""Sets the resource_type of this Finding.
 
+        资源的类型。 - iam:agency：IAM委托 - iam:user：IAM用户 - kms:cmk：DEW共享密钥 - obs:bucket：OBS桶 - swr:repo：SWR镜像仓库 - cbr:backup：CBR备份 - ims:image：IMS镜像 
+
         :param resource_type: The resource_type of this Finding.
-        :type resource_type: :class:`huaweicloudsdkiamaccessanalyzer.v1.ResourceType`
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -444,7 +452,7 @@ class Finding:
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
         :return: The sources of this Finding.
-        :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
+        :rtype: list[str]
         """
         return self._sources
 
@@ -455,7 +463,7 @@ class Finding:
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
         :param sources: The sources of this Finding.
-        :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
+        :type sources: list[str]
         """
         self._sources = sources
 

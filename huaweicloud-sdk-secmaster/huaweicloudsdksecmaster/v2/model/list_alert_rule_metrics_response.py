@@ -16,105 +16,97 @@ class ListAlertRuleMetricsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'category': 'str',
-        'metric': 'dict(str, float)',
-        'x_request_id': 'str'
+        'cu_usage': 'CuUsage',
+        'alert_severities': 'AlertSeverities',
+        'metrics_status': 'MetricsStatus'
     }
 
     attribute_map = {
-        'category': 'category',
-        'metric': 'metric',
-        'x_request_id': 'X-request-id'
+        'cu_usage': 'cu_usage',
+        'alert_severities': 'alert_severities',
+        'metrics_status': 'metrics_status'
     }
 
-    def __init__(self, category=None, metric=None, x_request_id=None):
+    def __init__(self, cu_usage=None, alert_severities=None, metrics_status=None):
         r"""ListAlertRuleMetricsResponse
 
         The model defined in huaweicloud sdk
 
-        :param category: 指标类型，分组数量。Metric category. GROUP_COUNT.
-        :type category: str
-        :param metric: 指标值。Metric value.
-        :type metric: dict(str, float)
-        :param x_request_id: 
-        :type x_request_id: str
+        :param cu_usage: 
+        :type cu_usage: :class:`huaweicloudsdksecmaster.v2.CuUsage`
+        :param alert_severities: 
+        :type alert_severities: :class:`huaweicloudsdksecmaster.v2.AlertSeverities`
+        :param metrics_status: 
+        :type metrics_status: :class:`huaweicloudsdksecmaster.v2.MetricsStatus`
         """
         
         super().__init__()
 
-        self._category = None
-        self._metric = None
-        self._x_request_id = None
+        self._cu_usage = None
+        self._alert_severities = None
+        self._metrics_status = None
         self.discriminator = None
 
-        if category is not None:
-            self.category = category
-        if metric is not None:
-            self.metric = metric
-        if x_request_id is not None:
-            self.x_request_id = x_request_id
+        if cu_usage is not None:
+            self.cu_usage = cu_usage
+        if alert_severities is not None:
+            self.alert_severities = alert_severities
+        if metrics_status is not None:
+            self.metrics_status = metrics_status
 
     @property
-    def category(self):
-        r"""Gets the category of this ListAlertRuleMetricsResponse.
+    def cu_usage(self):
+        r"""Gets the cu_usage of this ListAlertRuleMetricsResponse.
 
-        指标类型，分组数量。Metric category. GROUP_COUNT.
-
-        :return: The category of this ListAlertRuleMetricsResponse.
-        :rtype: str
+        :return: The cu_usage of this ListAlertRuleMetricsResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.CuUsage`
         """
-        return self._category
+        return self._cu_usage
 
-    @category.setter
-    def category(self, category):
-        r"""Sets the category of this ListAlertRuleMetricsResponse.
+    @cu_usage.setter
+    def cu_usage(self, cu_usage):
+        r"""Sets the cu_usage of this ListAlertRuleMetricsResponse.
 
-        指标类型，分组数量。Metric category. GROUP_COUNT.
-
-        :param category: The category of this ListAlertRuleMetricsResponse.
-        :type category: str
+        :param cu_usage: The cu_usage of this ListAlertRuleMetricsResponse.
+        :type cu_usage: :class:`huaweicloudsdksecmaster.v2.CuUsage`
         """
-        self._category = category
+        self._cu_usage = cu_usage
 
     @property
-    def metric(self):
-        r"""Gets the metric of this ListAlertRuleMetricsResponse.
+    def alert_severities(self):
+        r"""Gets the alert_severities of this ListAlertRuleMetricsResponse.
 
-        指标值。Metric value.
-
-        :return: The metric of this ListAlertRuleMetricsResponse.
-        :rtype: dict(str, float)
+        :return: The alert_severities of this ListAlertRuleMetricsResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.AlertSeverities`
         """
-        return self._metric
+        return self._alert_severities
 
-    @metric.setter
-    def metric(self, metric):
-        r"""Sets the metric of this ListAlertRuleMetricsResponse.
+    @alert_severities.setter
+    def alert_severities(self, alert_severities):
+        r"""Sets the alert_severities of this ListAlertRuleMetricsResponse.
 
-        指标值。Metric value.
-
-        :param metric: The metric of this ListAlertRuleMetricsResponse.
-        :type metric: dict(str, float)
+        :param alert_severities: The alert_severities of this ListAlertRuleMetricsResponse.
+        :type alert_severities: :class:`huaweicloudsdksecmaster.v2.AlertSeverities`
         """
-        self._metric = metric
+        self._alert_severities = alert_severities
 
     @property
-    def x_request_id(self):
-        r"""Gets the x_request_id of this ListAlertRuleMetricsResponse.
+    def metrics_status(self):
+        r"""Gets the metrics_status of this ListAlertRuleMetricsResponse.
 
-        :return: The x_request_id of this ListAlertRuleMetricsResponse.
-        :rtype: str
+        :return: The metrics_status of this ListAlertRuleMetricsResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.MetricsStatus`
         """
-        return self._x_request_id
+        return self._metrics_status
 
-    @x_request_id.setter
-    def x_request_id(self, x_request_id):
-        r"""Sets the x_request_id of this ListAlertRuleMetricsResponse.
+    @metrics_status.setter
+    def metrics_status(self, metrics_status):
+        r"""Sets the metrics_status of this ListAlertRuleMetricsResponse.
 
-        :param x_request_id: The x_request_id of this ListAlertRuleMetricsResponse.
-        :type x_request_id: str
+        :param metrics_status: The metrics_status of this ListAlertRuleMetricsResponse.
+        :type metrics_status: :class:`huaweicloudsdksecmaster.v2.MetricsStatus`
         """
-        self._x_request_id = x_request_id
+        self._metrics_status = metrics_status
 
     def to_dict(self):
         import warnings

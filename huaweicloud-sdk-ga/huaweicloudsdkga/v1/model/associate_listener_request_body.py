@@ -16,7 +16,7 @@ class AssociateListenerRequestBody:
 
     openapi_types = {
         'listener_id': 'str',
-        'type': 'ListenerAccessControlType'
+        'type': 'str'
     }
 
     attribute_map = {
@@ -31,8 +31,8 @@ class AssociateListenerRequestBody:
 
         :param listener_id: 监听器ID。
         :type listener_id: str
-        :param type: 
-        :type type: :class:`huaweicloudsdkga.v1.ListenerAccessControlType`
+        :param type: 访问控制策略类型,即黑名单还是白名单, 取值： - BLACK：黑名单 - WHITE：白名单
+        :type type: str
         """
         
         
@@ -70,8 +70,10 @@ class AssociateListenerRequestBody:
     def type(self):
         r"""Gets the type of this AssociateListenerRequestBody.
 
+        访问控制策略类型,即黑名单还是白名单, 取值： - BLACK：黑名单 - WHITE：白名单
+
         :return: The type of this AssociateListenerRequestBody.
-        :rtype: :class:`huaweicloudsdkga.v1.ListenerAccessControlType`
+        :rtype: str
         """
         return self._type
 
@@ -79,8 +81,10 @@ class AssociateListenerRequestBody:
     def type(self, type):
         r"""Sets the type of this AssociateListenerRequestBody.
 
+        访问控制策略类型,即黑名单还是白名单, 取值： - BLACK：黑名单 - WHITE：白名单
+
         :param type: The type of this AssociateListenerRequestBody.
-        :type type: :class:`huaweicloudsdkga.v1.ListenerAccessControlType`
+        :type type: str
         """
         self._type = type
 

@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ComponentCategory:
-    """
-    allowed enum values
-    """
-    WEBAPP = "Webapp"
-    MICROSERVICE = "MicroService"
-    COMMON = "Common"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

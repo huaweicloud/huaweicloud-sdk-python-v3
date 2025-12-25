@@ -18,7 +18,7 @@ class WelcomeSpeechInfo:
         'welcome_speech_id': 'str',
         'welcome_speech': 'str',
         'enable_welcome_speech': 'bool',
-        'language': 'LanguageEnum',
+        'language': 'str',
         'robot_id': 'str',
         'create_time': 'str',
         'update_time': 'str'
@@ -45,8 +45,8 @@ class WelcomeSpeechInfo:
         :type welcome_speech: str
         :param enable_welcome_speech: 欢迎词功能开关。
         :type enable_welcome_speech: bool
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param robot_id: 应用ID。
         :type robot_id: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -151,8 +151,10 @@ class WelcomeSpeechInfo:
     def language(self):
         r"""Gets the language of this WelcomeSpeechInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this WelcomeSpeechInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -160,8 +162,10 @@ class WelcomeSpeechInfo:
     def language(self, language):
         r"""Sets the language of this WelcomeSpeechInfo.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this WelcomeSpeechInfo.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

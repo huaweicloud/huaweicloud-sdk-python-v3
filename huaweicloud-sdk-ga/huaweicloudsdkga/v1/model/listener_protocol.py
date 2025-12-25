@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ListenerProtocol:
-    """
-    allowed enum values
-    """
-    TCP = "TCP"
-    UDP = "UDP"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -64,7 +64,7 @@ class DeleteAlarmSubResponse(SdkResponse):
         :type notification_target: str
         :param notification_target_name: **参数解释**： 消息主题名称。 **取值范围**： 不涉及。
         :type notification_target_name: str
-        :param notification_target_type: **参数解释**： 消息主题类型。 **取值范围**： 不涉及。
+        :param notification_target_type: **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
         :type notification_target_type: str
         :param language: **参数解释**： 语言。 **取值范围**： 不涉及。
         :type language: str
@@ -290,7 +290,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def notification_target_type(self):
         r"""Gets the notification_target_type of this DeleteAlarmSubResponse.
 
-        **参数解释**： 消息主题类型。 **取值范围**： 不涉及。
+        **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
 
         :return: The notification_target_type of this DeleteAlarmSubResponse.
         :rtype: str
@@ -301,7 +301,7 @@ class DeleteAlarmSubResponse(SdkResponse):
     def notification_target_type(self, notification_target_type):
         r"""Sets the notification_target_type of this DeleteAlarmSubResponse.
 
-        **参数解释**： 消息主题类型。 **取值范围**： 不涉及。
+        **参数解释**： 消息主题类型。 **取值范围**： - SMN：SMN类型
 
         :param notification_target_type: The notification_target_type of this DeleteAlarmSubResponse.
         :type notification_target_type: str

@@ -16,8 +16,8 @@ class ShowMonitorSystemResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'api_version': 'ApiVersionObj',
-        'kind': 'MonitorSystemKindObj',
+        'api_version': 'str',
+        'kind': 'str',
         'spec': 'ShowMonitorSystemResponseBodySpec'
     }
 
@@ -32,10 +32,10 @@ class ShowMonitorSystemResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param api_version: 
-        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
-        :param kind: 
-        :type kind: :class:`huaweicloudsdkcae.v1.MonitorSystemKindObj`
+        :param api_version: API版本，固定值“v1”，该值不可修改。
+        :type api_version: str
+        :param kind: API类型，固定值“MonitorSystem”，该值不可修改。
+        :type kind: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcae.v1.ShowMonitorSystemResponseBodySpec`
         """
@@ -58,8 +58,10 @@ class ShowMonitorSystemResponse(SdkResponse):
     def api_version(self):
         r"""Gets the api_version of this ShowMonitorSystemResponse.
 
+        API版本，固定值“v1”，该值不可修改。
+
         :return: The api_version of this ShowMonitorSystemResponse.
-        :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :rtype: str
         """
         return self._api_version
 
@@ -67,8 +69,10 @@ class ShowMonitorSystemResponse(SdkResponse):
     def api_version(self, api_version):
         r"""Sets the api_version of this ShowMonitorSystemResponse.
 
+        API版本，固定值“v1”，该值不可修改。
+
         :param api_version: The api_version of this ShowMonitorSystemResponse.
-        :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
+        :type api_version: str
         """
         self._api_version = api_version
 
@@ -76,8 +80,10 @@ class ShowMonitorSystemResponse(SdkResponse):
     def kind(self):
         r"""Gets the kind of this ShowMonitorSystemResponse.
 
+        API类型，固定值“MonitorSystem”，该值不可修改。
+
         :return: The kind of this ShowMonitorSystemResponse.
-        :rtype: :class:`huaweicloudsdkcae.v1.MonitorSystemKindObj`
+        :rtype: str
         """
         return self._kind
 
@@ -85,8 +91,10 @@ class ShowMonitorSystemResponse(SdkResponse):
     def kind(self, kind):
         r"""Sets the kind of this ShowMonitorSystemResponse.
 
+        API类型，固定值“MonitorSystem”，该值不可修改。
+
         :param kind: The kind of this ShowMonitorSystemResponse.
-        :type kind: :class:`huaweicloudsdkcae.v1.MonitorSystemKindObj`
+        :type kind: str
         """
         self._kind = kind
 

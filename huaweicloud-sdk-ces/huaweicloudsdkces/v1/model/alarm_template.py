@@ -37,17 +37,17 @@ class AlarmTemplate:
 
         The model defined in huaweicloud sdk
 
-        :param template_name: 自定义告警模板名称，如：alarmTemplate-Test01。
+        :param template_name: **参数解释**： 自定义告警模板名称 **约束限制**： 不涉及。 **取值范围**： 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度为[1,256]个字符，如：alarmTemplate-Test01。        **默认取值**： 不涉及。 
         :type template_name: str
-        :param template_description: 自定义告警模板描述。
+        :param template_description: **参数解释**： 自定义告警模板描述。    **约束限制**： 不涉及。 **取值范围**： 长度范围[0,256]。          **默认取值**： 空字符串。 
         :type template_description: str
-        :param namespace: 自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，可查看各资源的“[服务命名空间](ces_03_0059.xml)”。
+        :param namespace: **参数解释** 创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及 
         :type namespace: str
-        :param dimension_name: 自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
+        :param dimension_name: **参数解释** 资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 必须以字母开头，多维度用\&quot;,\&quot;分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32。目前最大支持4个维度。字符串总最大长度为131。举例：单维度场景：instance_id；多维度场景：instance_id,disk        **默认取值**： 不涉及 
         :type dimension_name: str
         :param template_items: 自定义告警模板添加的一组或者多个告警策略。
         :type template_items: list[:class:`huaweicloudsdkces.v1.TemplateItem`]
-        :param template_id: 自定义告警模板的ID，如：at1603330892378wkDm77y6B。
+        :param template_id: **参数解释** 自定义告警模版的ID，如：at1603330892378wkDm77y6B **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64 **默认取值**： 不涉及 
         :type template_id: str
         """
         
@@ -78,7 +78,7 @@ class AlarmTemplate:
     def template_name(self):
         r"""Gets the template_name of this AlarmTemplate.
 
-        自定义告警模板名称，如：alarmTemplate-Test01。
+        **参数解释**： 自定义告警模板名称 **约束限制**： 不涉及。 **取值范围**： 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度为[1,256]个字符，如：alarmTemplate-Test01。        **默认取值**： 不涉及。 
 
         :return: The template_name of this AlarmTemplate.
         :rtype: str
@@ -89,7 +89,7 @@ class AlarmTemplate:
     def template_name(self, template_name):
         r"""Sets the template_name of this AlarmTemplate.
 
-        自定义告警模板名称，如：alarmTemplate-Test01。
+        **参数解释**： 自定义告警模板名称 **约束限制**： 不涉及。 **取值范围**： 以字母或汉字开头，可包含字母、数字、汉字、_、-，长度为[1,256]个字符，如：alarmTemplate-Test01。        **默认取值**： 不涉及。 
 
         :param template_name: The template_name of this AlarmTemplate.
         :type template_name: str
@@ -100,7 +100,7 @@ class AlarmTemplate:
     def template_description(self):
         r"""Gets the template_description of this AlarmTemplate.
 
-        自定义告警模板描述。
+        **参数解释**： 自定义告警模板描述。    **约束限制**： 不涉及。 **取值范围**： 长度范围[0,256]。          **默认取值**： 空字符串。 
 
         :return: The template_description of this AlarmTemplate.
         :rtype: str
@@ -111,7 +111,7 @@ class AlarmTemplate:
     def template_description(self, template_description):
         r"""Sets the template_description of this AlarmTemplate.
 
-        自定义告警模板描述。
+        **参数解释**： 自定义告警模板描述。    **约束限制**： 不涉及。 **取值范围**： 长度范围[0,256]。          **默认取值**： 空字符串。 
 
         :param template_description: The template_description of this AlarmTemplate.
         :type template_description: str
@@ -122,7 +122,7 @@ class AlarmTemplate:
     def namespace(self):
         r"""Gets the namespace of this AlarmTemplate.
 
-        自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，可查看各资源的“[服务命名空间](ces_03_0059.xml)”。
+        **参数解释** 创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及 
 
         :return: The namespace of this AlarmTemplate.
         :rtype: str
@@ -133,7 +133,7 @@ class AlarmTemplate:
     def namespace(self, namespace):
         r"""Sets the namespace of this AlarmTemplate.
 
-        自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS，可查看各资源的“[服务命名空间](ces_03_0059.xml)”。
+        **参数解释** 创建自定义告警模板选择的资源类型，即服务命名空间，如：选择弹性云服务器，则命名空间为SYS.ECS；各服务的命名空间可查看：“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及 
 
         :param namespace: The namespace of this AlarmTemplate.
         :type namespace: str
@@ -144,7 +144,7 @@ class AlarmTemplate:
     def dimension_name(self):
         r"""Gets the dimension_name of this AlarmTemplate.
 
-        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
+        **参数解释** 资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 必须以字母开头，多维度用\",\"分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32。目前最大支持4个维度。字符串总最大长度为131。举例：单维度场景：instance_id；多维度场景：instance_id,disk        **默认取值**： 不涉及 
 
         :return: The dimension_name of this AlarmTemplate.
         :rtype: str
@@ -155,7 +155,7 @@ class AlarmTemplate:
     def dimension_name(self, dimension_name):
         r"""Sets the dimension_name of this AlarmTemplate.
 
-        自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。
+        **参数解释** 资源类型对应的指标监控维度，选择弹性云服务器，则维度为云服务器，dimension_name值为instance_id；各服务资源的指标维度名称可查看：“[服务指标维度](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 必须以字母开头，多维度用\",\"分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32。目前最大支持4个维度。字符串总最大长度为131。举例：单维度场景：instance_id；多维度场景：instance_id,disk        **默认取值**： 不涉及 
 
         :param dimension_name: The dimension_name of this AlarmTemplate.
         :type dimension_name: str
@@ -188,7 +188,7 @@ class AlarmTemplate:
     def template_id(self):
         r"""Gets the template_id of this AlarmTemplate.
 
-        自定义告警模板的ID，如：at1603330892378wkDm77y6B。
+        **参数解释** 自定义告警模版的ID，如：at1603330892378wkDm77y6B **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64 **默认取值**： 不涉及 
 
         :return: The template_id of this AlarmTemplate.
         :rtype: str
@@ -199,7 +199,7 @@ class AlarmTemplate:
     def template_id(self, template_id):
         r"""Sets the template_id of this AlarmTemplate.
 
-        自定义告警模板的ID，如：at1603330892378wkDm77y6B。
+        **参数解释** 自定义告警模版的ID，如：at1603330892378wkDm77y6B **约束限制**： 不涉及 **取值范围**： 以at开头，后跟字母、数字，长度最长为64 **默认取值**： 不涉及 
 
         :param template_id: The template_id of this AlarmTemplate.
         :type template_id: str

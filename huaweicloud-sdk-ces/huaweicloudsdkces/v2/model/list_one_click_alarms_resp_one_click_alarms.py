@@ -37,9 +37,9 @@ class ListOneClickAlarmsRespOneClickAlarms:
         :type one_click_alarm_id: str
         :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
         :type namespace: str
-        :param description: 一键告警描述，长度范围[0,256]，该字段默认值为空字符串
+        :param description: **参数解释** 一键告警描述 **约束限制** 不涉及 **取值范围** 字符长度在0到256之间 **默认取值** 空字符串 
         :type description: str
-        :param enabled: 是否启用一键告警。true:开启，false：关闭。
+        :param enabled: **参数解释** 是否启用一键告警 **约束限制** 不涉及 **取值范围** - true:开启 - false：关闭 **默认取值** true 
         :type enabled: bool
         """
         
@@ -104,7 +104,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
     def description(self):
         r"""Gets the description of this ListOneClickAlarmsRespOneClickAlarms.
 
-        一键告警描述，长度范围[0,256]，该字段默认值为空字符串
+        **参数解释** 一键告警描述 **约束限制** 不涉及 **取值范围** 字符长度在0到256之间 **默认取值** 空字符串 
 
         :return: The description of this ListOneClickAlarmsRespOneClickAlarms.
         :rtype: str
@@ -115,7 +115,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
     def description(self, description):
         r"""Sets the description of this ListOneClickAlarmsRespOneClickAlarms.
 
-        一键告警描述，长度范围[0,256]，该字段默认值为空字符串
+        **参数解释** 一键告警描述 **约束限制** 不涉及 **取值范围** 字符长度在0到256之间 **默认取值** 空字符串 
 
         :param description: The description of this ListOneClickAlarmsRespOneClickAlarms.
         :type description: str
@@ -126,7 +126,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
     def enabled(self):
         r"""Gets the enabled of this ListOneClickAlarmsRespOneClickAlarms.
 
-        是否启用一键告警。true:开启，false：关闭。
+        **参数解释** 是否启用一键告警 **约束限制** 不涉及 **取值范围** - true:开启 - false：关闭 **默认取值** true 
 
         :return: The enabled of this ListOneClickAlarmsRespOneClickAlarms.
         :rtype: bool
@@ -137,7 +137,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
     def enabled(self, enabled):
         r"""Sets the enabled of this ListOneClickAlarmsRespOneClickAlarms.
 
-        是否启用一键告警。true:开启，false：关闭。
+        **参数解释** 是否启用一键告警 **约束限制** 不涉及 **取值范围** - true:开启 - false：关闭 **默认取值** true 
 
         :param enabled: The enabled of this ListOneClickAlarmsRespOneClickAlarms.
         :type enabled: bool

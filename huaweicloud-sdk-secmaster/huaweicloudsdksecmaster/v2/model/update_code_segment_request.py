@@ -1,0 +1,188 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class UpdateCodeSegmentRequest:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'project_id': 'str',
+        'workspace_id': 'str',
+        'code_segment_id': 'str',
+        'body': 'UpdateCodeSegmentRequestBody'
+    }
+
+    attribute_map = {
+        'project_id': 'project_id',
+        'workspace_id': 'workspace_id',
+        'code_segment_id': 'code_segment_id',
+        'body': 'body'
+    }
+
+    def __init__(self, project_id=None, workspace_id=None, code_segment_id=None, body=None):
+        r"""UpdateCodeSegmentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+        :type project_id: str
+        :param workspace_id: 工作空间ID
+        :type workspace_id: str
+        :param code_segment_id: 代码片段 ID
+        :type code_segment_id: str
+        :param body: Body of the UpdateCodeSegmentRequest
+        :type body: :class:`huaweicloudsdksecmaster.v2.UpdateCodeSegmentRequestBody`
+        """
+        
+        
+
+        self._project_id = None
+        self._workspace_id = None
+        self._code_segment_id = None
+        self._body = None
+        self.discriminator = None
+
+        self.project_id = project_id
+        self.workspace_id = workspace_id
+        self.code_segment_id = code_segment_id
+        if body is not None:
+            self.body = body
+
+    @property
+    def project_id(self):
+        r"""Gets the project_id of this UpdateCodeSegmentRequest.
+
+        **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :return: The project_id of this UpdateCodeSegmentRequest.
+        :rtype: str
+        """
+        return self._project_id
+
+    @project_id.setter
+    def project_id(self, project_id):
+        r"""Sets the project_id of this UpdateCodeSegmentRequest.
+
+        **参数解释：** 项目ID，用于明确项目归属，配置后可通过该ID查询项目下资产，可以通过调用API获取，也可以从控制台获取。[获取项目ID](secmaster_03_0014.xml) **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
+
+        :param project_id: The project_id of this UpdateCodeSegmentRequest.
+        :type project_id: str
+        """
+        self._project_id = project_id
+
+    @property
+    def workspace_id(self):
+        r"""Gets the workspace_id of this UpdateCodeSegmentRequest.
+
+        工作空间ID
+
+        :return: The workspace_id of this UpdateCodeSegmentRequest.
+        :rtype: str
+        """
+        return self._workspace_id
+
+    @workspace_id.setter
+    def workspace_id(self, workspace_id):
+        r"""Sets the workspace_id of this UpdateCodeSegmentRequest.
+
+        工作空间ID
+
+        :param workspace_id: The workspace_id of this UpdateCodeSegmentRequest.
+        :type workspace_id: str
+        """
+        self._workspace_id = workspace_id
+
+    @property
+    def code_segment_id(self):
+        r"""Gets the code_segment_id of this UpdateCodeSegmentRequest.
+
+        代码片段 ID
+
+        :return: The code_segment_id of this UpdateCodeSegmentRequest.
+        :rtype: str
+        """
+        return self._code_segment_id
+
+    @code_segment_id.setter
+    def code_segment_id(self, code_segment_id):
+        r"""Sets the code_segment_id of this UpdateCodeSegmentRequest.
+
+        代码片段 ID
+
+        :param code_segment_id: The code_segment_id of this UpdateCodeSegmentRequest.
+        :type code_segment_id: str
+        """
+        self._code_segment_id = code_segment_id
+
+    @property
+    def body(self):
+        r"""Gets the body of this UpdateCodeSegmentRequest.
+
+        :return: The body of this UpdateCodeSegmentRequest.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateCodeSegmentRequestBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        r"""Sets the body of this UpdateCodeSegmentRequest.
+
+        :param body: The body of this UpdateCodeSegmentRequest.
+        :type body: :class:`huaweicloudsdksecmaster.v2.UpdateCodeSegmentRequestBody`
+        """
+        self._body = body
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, UpdateCodeSegmentRequest):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

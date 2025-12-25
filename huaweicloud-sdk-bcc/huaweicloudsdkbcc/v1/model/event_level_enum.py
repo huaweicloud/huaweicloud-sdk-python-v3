@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class EventLevelEnum:
-    """
-    allowed enum values
-    """
-    CRITICAL = "Critical"
-    MAJOR = "Major"
-    MINOR = "Minor"
-    INFO = "Info"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -22,7 +22,7 @@ class OpenWebinarBaseInfo:
         'start_time': 'str',
         'duration': 'int',
         'time_zone_id': 'int',
-        'state': 'MeetingStatus',
+        'state': 'str',
         'scheduser_id': 'str',
         'dept_name': 'str',
         'scheduser_name': 'str',
@@ -36,7 +36,7 @@ class OpenWebinarBaseInfo:
         'guest_passwd': 'str',
         'audience_join_uri': 'str',
         'audience_passwd': 'str',
-        'enable_recording': 'YesNoEnum',
+        'enable_recording': 'str',
         'live_address': 'str',
         'aux_address': 'str',
         'live_url': 'str'
@@ -89,8 +89,8 @@ class OpenWebinarBaseInfo:
         :type duration: int
         :param time_zone_id: 会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 &gt; * 举例：“timeZoneID”:\&quot;26\&quot;，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
         :type time_zone_id: int
-        :param state: 
-        :type state: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
+        :param state: 会议状态。 - schedule:预定状态 - created:会议已经被创建并正在召开 - destroyed:会议已经关闭 
+        :type state: str
         :param scheduser_id: 网络研讨会预订者的用户UUID。
         :type scheduser_id: str
         :param dept_name: 预订者部门命名。
@@ -117,8 +117,8 @@ class OpenWebinarBaseInfo:
         :type audience_join_uri: str
         :param audience_passwd: 观众入会密码。
         :type audience_passwd: str
-        :param enable_recording: 
-        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        :param enable_recording: 是、否 通用枚举
+        :type enable_recording: str
         :param live_address: 主流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
         :type live_address: str
         :param aux_address: 辅流直播推流地址，在录播类型为 :直播、直播+录播时有效。最大不超过255个字符。
@@ -365,8 +365,10 @@ class OpenWebinarBaseInfo:
     def state(self):
         r"""Gets the state of this OpenWebinarBaseInfo.
 
+        会议状态。 - schedule:预定状态 - created:会议已经被创建并正在召开 - destroyed:会议已经关闭 
+
         :return: The state of this OpenWebinarBaseInfo.
-        :rtype: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
+        :rtype: str
         """
         return self._state
 
@@ -374,8 +376,10 @@ class OpenWebinarBaseInfo:
     def state(self, state):
         r"""Sets the state of this OpenWebinarBaseInfo.
 
+        会议状态。 - schedule:预定状态 - created:会议已经被创建并正在召开 - destroyed:会议已经关闭 
+
         :param state: The state of this OpenWebinarBaseInfo.
-        :type state: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
+        :type state: str
         """
         self._state = state
 
@@ -669,8 +673,10 @@ class OpenWebinarBaseInfo:
     def enable_recording(self):
         r"""Gets the enable_recording of this OpenWebinarBaseInfo.
 
+        是、否 通用枚举
+
         :return: The enable_recording of this OpenWebinarBaseInfo.
-        :rtype: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        :rtype: str
         """
         return self._enable_recording
 
@@ -678,8 +684,10 @@ class OpenWebinarBaseInfo:
     def enable_recording(self, enable_recording):
         r"""Sets the enable_recording of this OpenWebinarBaseInfo.
 
+        是、否 通用枚举
+
         :param enable_recording: The enable_recording of this OpenWebinarBaseInfo.
-        :type enable_recording: :class:`huaweicloudsdkmeeting.v1.YesNoEnum`
+        :type enable_recording: str
         """
         self._enable_recording = enable_recording
 

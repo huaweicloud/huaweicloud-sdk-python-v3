@@ -30,9 +30,9 @@ class ListNotificationMasksResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param notification_masks: 通知屏蔽列表
+        :param notification_masks: **参数解释**： 通知屏蔽列表 
         :type notification_masks: list[:class:`huaweicloudsdkces.v2.ListNotificationMaskRespNotificationMasks`]
-        :param count: 通知屏蔽列表总数
+        :param count: **参数解释**： 通知屏蔽列表总数 **取值范围**： [0,99999] 
         :type count: int
         """
         
@@ -51,7 +51,7 @@ class ListNotificationMasksResponse(SdkResponse):
     def notification_masks(self):
         r"""Gets the notification_masks of this ListNotificationMasksResponse.
 
-        通知屏蔽列表
+        **参数解释**： 通知屏蔽列表 
 
         :return: The notification_masks of this ListNotificationMasksResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.ListNotificationMaskRespNotificationMasks`]
@@ -62,7 +62,7 @@ class ListNotificationMasksResponse(SdkResponse):
     def notification_masks(self, notification_masks):
         r"""Sets the notification_masks of this ListNotificationMasksResponse.
 
-        通知屏蔽列表
+        **参数解释**： 通知屏蔽列表 
 
         :param notification_masks: The notification_masks of this ListNotificationMasksResponse.
         :type notification_masks: list[:class:`huaweicloudsdkces.v2.ListNotificationMaskRespNotificationMasks`]
@@ -73,7 +73,7 @@ class ListNotificationMasksResponse(SdkResponse):
     def count(self):
         r"""Gets the count of this ListNotificationMasksResponse.
 
-        通知屏蔽列表总数
+        **参数解释**： 通知屏蔽列表总数 **取值范围**： [0,99999] 
 
         :return: The count of this ListNotificationMasksResponse.
         :rtype: int
@@ -84,7 +84,7 @@ class ListNotificationMasksResponse(SdkResponse):
     def count(self, count):
         r"""Sets the count of this ListNotificationMasksResponse.
 
-        通知屏蔽列表总数
+        **参数解释**： 通知屏蔽列表总数 **取值范围**： [0,99999] 
 
         :param count: The count of this ListNotificationMasksResponse.
         :type count: int

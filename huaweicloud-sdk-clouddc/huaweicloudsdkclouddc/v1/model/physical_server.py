@@ -19,9 +19,10 @@ class PhysicalServer:
         'name': 'str',
         'project_id': 'str',
         'domain_id': 'str',
-        'manage_state': 'ManageState',
-        'power_state': 'PowerState',
-        'health_state': 'Health',
+        'manage_state': 'str',
+        'power_state': 'str',
+        'operation_state': 'str',
+        'health_state': 'str',
         'onboard_time': 'str',
         'location': 'Location',
         'hardware_attributes': 'HardwareSummary',
@@ -36,6 +37,7 @@ class PhysicalServer:
         'domain_id': 'domain_id',
         'manage_state': 'manage_state',
         'power_state': 'power_state',
+        'operation_state': 'operation_state',
         'health_state': 'health_state',
         'onboard_time': 'onboard_time',
         'location': 'location',
@@ -44,7 +46,7 @@ class PhysicalServer:
         'error': 'error'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, domain_id=None, manage_state=None, power_state=None, health_state=None, onboard_time=None, location=None, hardware_attributes=None, tags=None, error=None):
+    def __init__(self, id=None, name=None, project_id=None, domain_id=None, manage_state=None, power_state=None, operation_state=None, health_state=None, onboard_time=None, location=None, hardware_attributes=None, tags=None, error=None):
         r"""PhysicalServer
 
         The model defined in huaweicloud sdk
@@ -57,12 +59,14 @@ class PhysicalServer:
         :type project_id: str
         :param domain_id: domain id
         :type domain_id: str
-        :param manage_state: 
-        :type manage_state: :class:`huaweicloudsdkclouddc.v1.ManageState`
-        :param power_state: 
-        :type power_state: :class:`huaweicloudsdkclouddc.v1.PowerState`
-        :param health_state: 
-        :type health_state: :class:`huaweicloudsdkclouddc.v1.Health`
+        :param manage_state: **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围** - onboard：上架中，用户下单，完成LLD设计。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - frozen：冻结，因欠费导致资源冻结。 - offboarding：下架中。  &#x60;&#x60;&#x60;mermaid stateDiagram-v2    [*] --&gt; onboard : 完成LLD设计   onboard --&gt; ready : 完成网调、服务器初始化、软调及转维验收   ready --&gt; in_use : 发放裸机实例   ready --&gt; offboarding : 请求下架   ready --&gt; frozen : 欠费      in_use --&gt; ready : 删除裸机实例   in_use --&gt; frozen : 欠费    frozen --&gt; offboarding : 请求下架   in_use --&gt; offboarding : 请求下架   offboarding --&gt; [*] : 完成下架   state \&quot;in-use\&quot; as in_use &#x60;&#x60;&#x60; **默认取值**： 不涉及
+        :type manage_state: str
+        :param power_state: **参数解释**： 电源状态 power_state 会根据不同的操作和事件发生转换，常见的状态转换流程如下：   - 开机流程：off -&gt; powering-on -&gt; on   - 关机流程：on -&gt; powering-off -&gt; off   - 重启流程：on -&gt; rebooting -&gt; on  **约束限制**： 不涉及 **取值范围**： - on：表示节点的电源已开启，硬件处于通电状态，操作系统正在运行或者可以正常启动。这意味着节点能够执行计算任务，为上层应用提供服务。 示例场景：当用户在 Ironic 中创建并激活一个节点，或者手动开启节点电源后，节点的 power_state 会变为 power on。 - off：表明节点的电源已关闭，硬件停止供电，所有组件处于非工作状态，无法执行任何计算任务。 示例场景：在维护节点或者不需要使用节点资源时，管理员可以将节点的电源关闭，此时 power_state 变为 power off。 - rebooting：节点正在进行重启操作，即先关闭电源，然后再重新开启。在这个过程中，节点会经历硬件初始化和操作系统启动等步骤。   示例场景：当管理员通过 Ironic API 发送重启节点的指令后，节点的 power_state 会暂时变为 rebooting，直到重启完成。 - powering-on：节点正在开启电源的过程中，此时硬件开始通电，但操作系统可能还未完全启动。 示例场景：当管理员发送开机指令后，节点会进入 powering on 状态，直到操作系统成功启动，power_state 变为 power on。 - powering-off：节点正在关闭电源的过程中，操作系统会进行一些清理工作，如保存数据、关闭服务等，然后切断硬件的电源供应。  示例场景：当管理员发送关机指令后，节点会进入 powering off 状态，直到电源完全关闭，power_state 变为  off。  **默认取值**： 不涉及 
+        :type power_state: str
+        :param operation_state: **约束限制**： 不涉及 **取值范围**： - power-on-processing: 节点正在开启电源的过程中，此时硬件开始通电，但操作系统可能还未完全启动。 - power-on-succeed: 开启电源成功。 - power-on-failed: 开启电源失败。 - power-off-processing: 节点正在关闭电源的过程中，操作系统会进行一些清理工作，如保存数据、关闭服务等，然后切断硬件的电源供应。 - power-off-succeed: 关闭电源成功。 - power-off-failed: 关闭电源失败。 - reboot-processing: 节点正在进行重启操作，即先关闭电源，然后再重新开启。在这个过程中，节点会经历硬件初始化和操作系统启动等步骤。 - reboot-succeed: 重启操作成功。 - reboot-failed: 重启操作失败。  **默认取值**： 不涉及 
+        :type operation_state: str
+        :param health_state: 硬件健康状态： OK：健康 Warning：警告 Critical：严重 Unknown：未知
+        :type health_state: str
         :param onboard_time: 上架时间
         :type onboard_time: str
         :param location: 
@@ -83,6 +87,7 @@ class PhysicalServer:
         self._domain_id = None
         self._manage_state = None
         self._power_state = None
+        self._operation_state = None
         self._health_state = None
         self._onboard_time = None
         self._location = None
@@ -98,6 +103,8 @@ class PhysicalServer:
         self.manage_state = manage_state
         if power_state is not None:
             self.power_state = power_state
+        if operation_state is not None:
+            self.operation_state = operation_state
         if health_state is not None:
             self.health_state = health_state
         self.onboard_time = onboard_time
@@ -200,8 +207,10 @@ class PhysicalServer:
     def manage_state(self):
         r"""Gets the manage_state of this PhysicalServer.
 
+        **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围** - onboard：上架中，用户下单，完成LLD设计。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - frozen：冻结，因欠费导致资源冻结。 - offboarding：下架中。  ```mermaid stateDiagram-v2    [*] --> onboard : 完成LLD设计   onboard --> ready : 完成网调、服务器初始化、软调及转维验收   ready --> in_use : 发放裸机实例   ready --> offboarding : 请求下架   ready --> frozen : 欠费      in_use --> ready : 删除裸机实例   in_use --> frozen : 欠费    frozen --> offboarding : 请求下架   in_use --> offboarding : 请求下架   offboarding --> [*] : 完成下架   state \"in-use\" as in_use ``` **默认取值**： 不涉及
+
         :return: The manage_state of this PhysicalServer.
-        :rtype: :class:`huaweicloudsdkclouddc.v1.ManageState`
+        :rtype: str
         """
         return self._manage_state
 
@@ -209,8 +218,10 @@ class PhysicalServer:
     def manage_state(self, manage_state):
         r"""Sets the manage_state of this PhysicalServer.
 
+        **参数解释**： 服务器管理状态 **约束限制**： 不涉及 **取值范围** - onboard：上架中，用户下单，完成LLD设计。 - ready：交付完成，完成硬装、网调、服务器初始化、软调及转维验收。 - in-use：使用中，用户发放裸机。 - frozen：冻结，因欠费导致资源冻结。 - offboarding：下架中。  ```mermaid stateDiagram-v2    [*] --> onboard : 完成LLD设计   onboard --> ready : 完成网调、服务器初始化、软调及转维验收   ready --> in_use : 发放裸机实例   ready --> offboarding : 请求下架   ready --> frozen : 欠费      in_use --> ready : 删除裸机实例   in_use --> frozen : 欠费    frozen --> offboarding : 请求下架   in_use --> offboarding : 请求下架   offboarding --> [*] : 完成下架   state \"in-use\" as in_use ``` **默认取值**： 不涉及
+
         :param manage_state: The manage_state of this PhysicalServer.
-        :type manage_state: :class:`huaweicloudsdkclouddc.v1.ManageState`
+        :type manage_state: str
         """
         self._manage_state = manage_state
 
@@ -218,8 +229,10 @@ class PhysicalServer:
     def power_state(self):
         r"""Gets the power_state of this PhysicalServer.
 
+        **参数解释**： 电源状态 power_state 会根据不同的操作和事件发生转换，常见的状态转换流程如下：   - 开机流程：off -> powering-on -> on   - 关机流程：on -> powering-off -> off   - 重启流程：on -> rebooting -> on  **约束限制**： 不涉及 **取值范围**： - on：表示节点的电源已开启，硬件处于通电状态，操作系统正在运行或者可以正常启动。这意味着节点能够执行计算任务，为上层应用提供服务。 示例场景：当用户在 Ironic 中创建并激活一个节点，或者手动开启节点电源后，节点的 power_state 会变为 power on。 - off：表明节点的电源已关闭，硬件停止供电，所有组件处于非工作状态，无法执行任何计算任务。 示例场景：在维护节点或者不需要使用节点资源时，管理员可以将节点的电源关闭，此时 power_state 变为 power off。 - rebooting：节点正在进行重启操作，即先关闭电源，然后再重新开启。在这个过程中，节点会经历硬件初始化和操作系统启动等步骤。   示例场景：当管理员通过 Ironic API 发送重启节点的指令后，节点的 power_state 会暂时变为 rebooting，直到重启完成。 - powering-on：节点正在开启电源的过程中，此时硬件开始通电，但操作系统可能还未完全启动。 示例场景：当管理员发送开机指令后，节点会进入 powering on 状态，直到操作系统成功启动，power_state 变为 power on。 - powering-off：节点正在关闭电源的过程中，操作系统会进行一些清理工作，如保存数据、关闭服务等，然后切断硬件的电源供应。  示例场景：当管理员发送关机指令后，节点会进入 powering off 状态，直到电源完全关闭，power_state 变为  off。  **默认取值**： 不涉及 
+
         :return: The power_state of this PhysicalServer.
-        :rtype: :class:`huaweicloudsdkclouddc.v1.PowerState`
+        :rtype: str
         """
         return self._power_state
 
@@ -227,17 +240,43 @@ class PhysicalServer:
     def power_state(self, power_state):
         r"""Sets the power_state of this PhysicalServer.
 
+        **参数解释**： 电源状态 power_state 会根据不同的操作和事件发生转换，常见的状态转换流程如下：   - 开机流程：off -> powering-on -> on   - 关机流程：on -> powering-off -> off   - 重启流程：on -> rebooting -> on  **约束限制**： 不涉及 **取值范围**： - on：表示节点的电源已开启，硬件处于通电状态，操作系统正在运行或者可以正常启动。这意味着节点能够执行计算任务，为上层应用提供服务。 示例场景：当用户在 Ironic 中创建并激活一个节点，或者手动开启节点电源后，节点的 power_state 会变为 power on。 - off：表明节点的电源已关闭，硬件停止供电，所有组件处于非工作状态，无法执行任何计算任务。 示例场景：在维护节点或者不需要使用节点资源时，管理员可以将节点的电源关闭，此时 power_state 变为 power off。 - rebooting：节点正在进行重启操作，即先关闭电源，然后再重新开启。在这个过程中，节点会经历硬件初始化和操作系统启动等步骤。   示例场景：当管理员通过 Ironic API 发送重启节点的指令后，节点的 power_state 会暂时变为 rebooting，直到重启完成。 - powering-on：节点正在开启电源的过程中，此时硬件开始通电，但操作系统可能还未完全启动。 示例场景：当管理员发送开机指令后，节点会进入 powering on 状态，直到操作系统成功启动，power_state 变为 power on。 - powering-off：节点正在关闭电源的过程中，操作系统会进行一些清理工作，如保存数据、关闭服务等，然后切断硬件的电源供应。  示例场景：当管理员发送关机指令后，节点会进入 powering off 状态，直到电源完全关闭，power_state 变为  off。  **默认取值**： 不涉及 
+
         :param power_state: The power_state of this PhysicalServer.
-        :type power_state: :class:`huaweicloudsdkclouddc.v1.PowerState`
+        :type power_state: str
         """
         self._power_state = power_state
+
+    @property
+    def operation_state(self):
+        r"""Gets the operation_state of this PhysicalServer.
+
+        **约束限制**： 不涉及 **取值范围**： - power-on-processing: 节点正在开启电源的过程中，此时硬件开始通电，但操作系统可能还未完全启动。 - power-on-succeed: 开启电源成功。 - power-on-failed: 开启电源失败。 - power-off-processing: 节点正在关闭电源的过程中，操作系统会进行一些清理工作，如保存数据、关闭服务等，然后切断硬件的电源供应。 - power-off-succeed: 关闭电源成功。 - power-off-failed: 关闭电源失败。 - reboot-processing: 节点正在进行重启操作，即先关闭电源，然后再重新开启。在这个过程中，节点会经历硬件初始化和操作系统启动等步骤。 - reboot-succeed: 重启操作成功。 - reboot-failed: 重启操作失败。  **默认取值**： 不涉及 
+
+        :return: The operation_state of this PhysicalServer.
+        :rtype: str
+        """
+        return self._operation_state
+
+    @operation_state.setter
+    def operation_state(self, operation_state):
+        r"""Sets the operation_state of this PhysicalServer.
+
+        **约束限制**： 不涉及 **取值范围**： - power-on-processing: 节点正在开启电源的过程中，此时硬件开始通电，但操作系统可能还未完全启动。 - power-on-succeed: 开启电源成功。 - power-on-failed: 开启电源失败。 - power-off-processing: 节点正在关闭电源的过程中，操作系统会进行一些清理工作，如保存数据、关闭服务等，然后切断硬件的电源供应。 - power-off-succeed: 关闭电源成功。 - power-off-failed: 关闭电源失败。 - reboot-processing: 节点正在进行重启操作，即先关闭电源，然后再重新开启。在这个过程中，节点会经历硬件初始化和操作系统启动等步骤。 - reboot-succeed: 重启操作成功。 - reboot-failed: 重启操作失败。  **默认取值**： 不涉及 
+
+        :param operation_state: The operation_state of this PhysicalServer.
+        :type operation_state: str
+        """
+        self._operation_state = operation_state
 
     @property
     def health_state(self):
         r"""Gets the health_state of this PhysicalServer.
 
+        硬件健康状态： OK：健康 Warning：警告 Critical：严重 Unknown：未知
+
         :return: The health_state of this PhysicalServer.
-        :rtype: :class:`huaweicloudsdkclouddc.v1.Health`
+        :rtype: str
         """
         return self._health_state
 
@@ -245,8 +284,10 @@ class PhysicalServer:
     def health_state(self, health_state):
         r"""Sets the health_state of this PhysicalServer.
 
+        硬件健康状态： OK：健康 Warning：警告 Critical：严重 Unknown：未知
+
         :param health_state: The health_state of this PhysicalServer.
-        :type health_state: :class:`huaweicloudsdkclouddc.v1.Health`
+        :type health_state: str
         """
         self._health_state = health_state
 

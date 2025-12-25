@@ -1,0 +1,29 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import models into model package
+from huaweicloudsdkversatile.v1.model.agent_run_req import AgentRunReq
+from huaweicloudsdkversatile.v1.model.conversation import Conversation
+from huaweicloudsdkversatile.v1.model.feedback_reason import FeedbackReason
+from huaweicloudsdkversatile.v1.model.knowledge_base_retrieval_req import KnowledgeBaseRetrievalReq
+from huaweicloudsdkversatile.v1.model.message import Message
+from huaweicloudsdkversatile.v1.model.node_message import NodeMessage
+from huaweicloudsdkversatile.v1.model.node_run_info import NodeRunInfo
+from huaweicloudsdkversatile.v1.model.node_run_info_inner_error import NodeRunInfoInnerError
+from huaweicloudsdkversatile.v1.model.node_run_info_inner_error_error_body import NodeRunInfoInnerErrorErrorBody
+from huaweicloudsdkversatile.v1.model.plugin_config import PluginConfig
+from huaweicloudsdkversatile.v1.model.retrieval_result_info import RetrievalResultInfo
+from huaweicloudsdkversatile.v1.model.run_agent_request import RunAgentRequest
+from huaweicloudsdkversatile.v1.model.run_agent_response import RunAgentResponse
+from huaweicloudsdkversatile.v1.model.run_workflow_request import RunWorkflowRequest
+from huaweicloudsdkversatile.v1.model.run_workflow_response import RunWorkflowResponse
+from huaweicloudsdkversatile.v1.model.search_knowledge_base_request import SearchKnowledgeBaseRequest
+from huaweicloudsdkversatile.v1.model.search_knowledge_base_response import SearchKnowledgeBaseResponse
+from huaweicloudsdkversatile.v1.model.status import Status
+from huaweicloudsdkversatile.v1.model.upload_agent_file_request import UploadAgentFileRequest
+from huaweicloudsdkversatile.v1.model.upload_agent_file_request_body import UploadAgentFileRequestBody
+from huaweicloudsdkversatile.v1.model.upload_agent_file_response import UploadAgentFileResponse
+from huaweicloudsdkversatile.v1.model.user_profile import UserProfile
+from huaweicloudsdkversatile.v1.model.workflow_run_req import WorkflowRunReq
+from huaweicloudsdkversatile.v1.model.workflow_run_stream_rsp import WorkflowRunStreamRsp

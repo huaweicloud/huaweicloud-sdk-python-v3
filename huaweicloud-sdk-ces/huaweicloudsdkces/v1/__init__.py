@@ -6,17 +6,25 @@ from huaweicloudsdkces.v1.ces_client import CesClient
 from huaweicloudsdkces.v1.ces_async_client import CesAsyncClient
 
 from huaweicloudsdkces.v1.model.additional_info_resp import AdditionalInfoResp
+from huaweicloudsdkces.v1.model.alarm_action_enabled_resp import AlarmActionEnabledResp
 from huaweicloudsdkces.v1.model.alarm_description import AlarmDescription
 from huaweicloudsdkces.v1.model.alarm_description_resp import AlarmDescriptionResp
+from huaweicloudsdkces.v1.model.alarm_enabled_resp import AlarmEnabledResp
 from huaweicloudsdkces.v1.model.alarm_history_info_resp import AlarmHistoryInfoResp
+from huaweicloudsdkces.v1.model.alarm_level_resp import AlarmLevelResp
 from huaweicloudsdkces.v1.model.alarm_name import AlarmName
 from huaweicloudsdkces.v1.model.alarm_name_resp import AlarmNameResp
+from huaweicloudsdkces.v1.model.alarm_rule_condition_resp import AlarmRuleConditionResp
+from huaweicloudsdkces.v1.model.alarm_state_resp import AlarmStateResp
 from huaweicloudsdkces.v1.model.alarm_template import AlarmTemplate
 from huaweicloudsdkces.v1.model.alarm_template_condition import AlarmTemplateCondition
+from huaweicloudsdkces.v1.model.alarm_type_resp import AlarmTypeResp
 from huaweicloudsdkces.v1.model.batch_list_metric_data_request import BatchListMetricDataRequest
 from huaweicloudsdkces.v1.model.batch_list_metric_data_request_body import BatchListMetricDataRequestBody
 from huaweicloudsdkces.v1.model.batch_list_metric_data_response import BatchListMetricDataResponse
 from huaweicloudsdkces.v1.model.batch_metric_data import BatchMetricData
+from huaweicloudsdkces.v1.model.batch_period import BatchPeriod
+from huaweicloudsdkces.v1.model.comparison_operator import ComparisonOperator
 from huaweicloudsdkces.v1.model.comparison_operator_resp import ComparisonOperatorResp
 from huaweicloudsdkces.v1.model.condition import Condition
 from huaweicloudsdkces.v1.model.condition_resp import ConditionResp
@@ -30,10 +38,10 @@ from huaweicloudsdkces.v1.model.create_alarm_template_response import CreateAlar
 from huaweicloudsdkces.v1.model.create_events_request import CreateEventsRequest
 from huaweicloudsdkces.v1.model.create_events_request_body import CreateEventsRequestBody
 from huaweicloudsdkces.v1.model.create_events_response import CreateEventsResponse
-from huaweicloudsdkces.v1.model.create_events_response_body import CreateEventsResponseBody
 from huaweicloudsdkces.v1.model.create_metric_data_request import CreateMetricDataRequest
 from huaweicloudsdkces.v1.model.create_metric_data_request_body import CreateMetricDataRequestBody
 from huaweicloudsdkces.v1.model.create_metric_data_response import CreateMetricDataResponse
+from huaweicloudsdkces.v1.model.create_metric_dimension import CreateMetricDimension
 from huaweicloudsdkces.v1.model.create_resource_group import CreateResourceGroup
 from huaweicloudsdkces.v1.model.create_resource_group_request import CreateResourceGroupRequest
 from huaweicloudsdkces.v1.model.create_resource_group_request_body import CreateResourceGroupRequestBody
@@ -47,8 +55,8 @@ from huaweicloudsdkces.v1.model.delete_alarm_template_request import DeleteAlarm
 from huaweicloudsdkces.v1.model.delete_alarm_template_response import DeleteAlarmTemplateResponse
 from huaweicloudsdkces.v1.model.delete_resource_group_request import DeleteResourceGroupRequest
 from huaweicloudsdkces.v1.model.delete_resource_group_response import DeleteResourceGroupResponse
-from huaweicloudsdkces.v1.model.dimension import Dimension
 from huaweicloudsdkces.v1.model.dimension_resp import DimensionResp
+from huaweicloudsdkces.v1.model.event import Event
 from huaweicloudsdkces.v1.model.event_data_info import EventDataInfo
 from huaweicloudsdkces.v1.model.event_info import EventInfo
 from huaweicloudsdkces.v1.model.event_info_detail_resp import EventInfoDetailResp
@@ -111,6 +119,8 @@ from huaweicloudsdkces.v1.model.show_quotas_response import ShowQuotasResponse
 from huaweicloudsdkces.v1.model.show_resource_group_request import ShowResourceGroupRequest
 from huaweicloudsdkces.v1.model.show_resource_group_response import ShowResourceGroupResponse
 from huaweicloudsdkces.v1.model.status_schema import StatusSchema
+from huaweicloudsdkces.v1.model.status_schema_resp import StatusSchemaResp
+from huaweicloudsdkces.v1.model.suppress_duration import SuppressDuration
 from huaweicloudsdkces.v1.model.suppress_duration_resp import SuppressDurationResp
 from huaweicloudsdkces.v1.model.tms_key import TMSKey
 from huaweicloudsdkces.v1.model.tms_value import TMSValue

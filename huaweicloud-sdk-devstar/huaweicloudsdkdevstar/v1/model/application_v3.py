@@ -26,7 +26,7 @@ class ApplicationV3:
         'pipeline_creation_result': 'list[PipelineCreationResult]',
         'repository_creation_result': 'RepositoryCreationResult',
         'environment_creation_result': 'list[str]',
-        'template_types': 'list[TemplateType]',
+        'template_types': 'list[str]',
         'template_deployment': 'str',
         'deploy_type': 'str',
         'creator_name': 'str',
@@ -84,7 +84,7 @@ class ApplicationV3:
         :param environment_creation_result: 环境信息
         :type environment_creation_result: list[str]
         :param template_types: 模板类型
-        :type template_types: list[:class:`huaweicloudsdkdevstar.v1.TemplateType`]
+        :type template_types: list[str]
         :param template_deployment: 模板部署信息
         :type template_deployment: str
         :param deploy_type: 部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署,none不支持部署
@@ -398,7 +398,7 @@ class ApplicationV3:
         模板类型
 
         :return: The template_types of this ApplicationV3.
-        :rtype: list[:class:`huaweicloudsdkdevstar.v1.TemplateType`]
+        :rtype: list[str]
         """
         return self._template_types
 
@@ -409,7 +409,7 @@ class ApplicationV3:
         模板类型
 
         :param template_types: The template_types of this ApplicationV3.
-        :type template_types: list[:class:`huaweicloudsdkdevstar.v1.TemplateType`]
+        :type template_types: list[str]
         """
         self._template_types = template_types
 

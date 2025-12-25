@@ -61,7 +61,7 @@ class DisasterRecoveryCluster:
         :type role: str
         :param region: **参数解释**： 容灾集群所在region。 **取值范围**： 不涉及。
         :type region: str
-        :param status: **参数解释**： 容灾集群状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 容灾集群状态。 **取值范围**： - backuping，备份运行中。 - restoring，恢复运行中。 - stopped，集群已停止。 - waiting，容灾运行中。 - abnormal，容灾异常。 - drDeleted，容灾已删除。
         :type status: str
         :param progress: **参数解释**： 容灾进度。 **取值范围**： 不涉及。
         :type progress: str
@@ -237,7 +237,7 @@ class DisasterRecoveryCluster:
     def status(self):
         r"""Gets the status of this DisasterRecoveryCluster.
 
-        **参数解释**： 容灾集群状态。 **取值范围**： 不涉及。
+        **参数解释**： 容灾集群状态。 **取值范围**： - backuping，备份运行中。 - restoring，恢复运行中。 - stopped，集群已停止。 - waiting，容灾运行中。 - abnormal，容灾异常。 - drDeleted，容灾已删除。
 
         :return: The status of this DisasterRecoveryCluster.
         :rtype: str
@@ -248,7 +248,7 @@ class DisasterRecoveryCluster:
     def status(self, status):
         r"""Sets the status of this DisasterRecoveryCluster.
 
-        **参数解释**： 容灾集群状态。 **取值范围**： 不涉及。
+        **参数解释**： 容灾集群状态。 **取值范围**： - backuping，备份运行中。 - restoring，恢复运行中。 - stopped，集群已停止。 - waiting，容灾运行中。 - abnormal，容灾异常。 - drDeleted，容灾已删除。
 
         :param status: The status of this DisasterRecoveryCluster.
         :type status: str

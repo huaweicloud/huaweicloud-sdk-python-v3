@@ -16,7 +16,7 @@ class PluginConfigInfo:
 
     openapi_types = {
         'plugin_config_id': 'str',
-        'plugin_provider': 'PluginProviderEnum',
+        'plugin_provider': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -35,8 +35,8 @@ class PluginConfigInfo:
 
         :param plugin_config_id: 插件配置ID。
         :type plugin_config_id: str
-        :param plugin_provider: 
-        :type plugin_provider: :class:`huaweicloudsdkmetastudio.v1.PluginProviderEnum`
+        :param plugin_provider: 插件供应商 * AMAP_WEATHER：高德天气 * BOCHA：博查
+        :type plugin_provider: str
         :param create_time: 创建时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
         :type create_time: str
         :param update_time: 更新时间，格式遵循：RFC 3339 如\&quot;2021-01-10T08:43:17Z\&quot;。
@@ -86,8 +86,10 @@ class PluginConfigInfo:
     def plugin_provider(self):
         r"""Gets the plugin_provider of this PluginConfigInfo.
 
+        插件供应商 * AMAP_WEATHER：高德天气 * BOCHA：博查
+
         :return: The plugin_provider of this PluginConfigInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.PluginProviderEnum`
+        :rtype: str
         """
         return self._plugin_provider
 
@@ -95,8 +97,10 @@ class PluginConfigInfo:
     def plugin_provider(self, plugin_provider):
         r"""Sets the plugin_provider of this PluginConfigInfo.
 
+        插件供应商 * AMAP_WEATHER：高德天气 * BOCHA：博查
+
         :param plugin_provider: The plugin_provider of this PluginConfigInfo.
-        :type plugin_provider: :class:`huaweicloudsdkmetastudio.v1.PluginProviderEnum`
+        :type plugin_provider: str
         """
         self._plugin_provider = plugin_provider
 

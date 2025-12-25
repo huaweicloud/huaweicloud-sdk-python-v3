@@ -18,7 +18,7 @@ class EventEntity:
         'event_id': 'str',
         'event_name': 'str',
         'event_type': 'str',
-        'event_source': 'EventSourceEnum',
+        'event_source': 'str',
         'time': 'str',
         'detail': 'EventDetailEntity'
     }
@@ -43,8 +43,8 @@ class EventEntity:
         :type event_name: str
         :param event_type: 事件类型
         :type event_type: str
-        :param event_source: 
-        :type event_source: :class:`huaweicloudsdkbcc.v1.EventSourceEnum`
+        :param event_source: 事件来源，取值范围：SYS.CBR,SYS.RDS,SYS.GaussDB
+        :type event_source: str
         :param time: 事件产生时间
         :type time: str
         :param detail: 
@@ -143,8 +143,10 @@ class EventEntity:
     def event_source(self):
         r"""Gets the event_source of this EventEntity.
 
+        事件来源，取值范围：SYS.CBR,SYS.RDS,SYS.GaussDB
+
         :return: The event_source of this EventEntity.
-        :rtype: :class:`huaweicloudsdkbcc.v1.EventSourceEnum`
+        :rtype: str
         """
         return self._event_source
 
@@ -152,8 +154,10 @@ class EventEntity:
     def event_source(self, event_source):
         r"""Sets the event_source of this EventEntity.
 
+        事件来源，取值范围：SYS.CBR,SYS.RDS,SYS.GaussDB
+
         :param event_source: The event_source of this EventEntity.
-        :type event_source: :class:`huaweicloudsdkbcc.v1.EventSourceEnum`
+        :type event_source: str
         """
         self._event_source = event_source
 

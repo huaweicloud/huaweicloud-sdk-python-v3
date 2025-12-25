@@ -135,7 +135,7 @@ class ClusterDetail:
         :type task_status: str
         :param parameter_group: 
         :type parameter_group: :class:`huaweicloudsdkdws.v2.ParameterGroup`
-        :param node_type: **参数解释**： 集群规格。 **取值范围**： 不涉及。
+        :param node_type: **参数解释**： 集群规格名称。 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
         :type node_type: str
         :param node_type_id: **参数解释**： 集群规格ID。 **取值范围**： 不涉及。
         :type node_type_id: str
@@ -732,7 +732,7 @@ class ClusterDetail:
     def node_type(self):
         r"""Gets the node_type of this ClusterDetail.
 
-        **参数解释**： 集群规格。 **取值范围**： 不涉及。
+        **参数解释**： 集群规格名称。 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
 
         :return: The node_type of this ClusterDetail.
         :rtype: str
@@ -743,7 +743,7 @@ class ClusterDetail:
     def node_type(self, node_type):
         r"""Sets the node_type of this ClusterDetail.
 
-        **参数解释**： 集群规格。 **取值范围**： 不涉及。
+        **参数解释**： 集群规格名称。 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
 
         :param node_type: The node_type of this ClusterDetail.
         :type node_type: str

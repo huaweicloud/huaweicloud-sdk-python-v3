@@ -29,7 +29,7 @@ class UpdateOneClickAlarmNotificationsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param one_click_alarm_id: **参数解释**： 一键告警ID **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        :param one_click_alarm_id: **参数解释**： 一键告警ID **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。只能包含字母和数字。 **默认取值**： 不涉及。 
         :type one_click_alarm_id: str
         :param body: Body of the UpdateOneClickAlarmNotificationsRequest
         :type body: :class:`huaweicloudsdkces.v2.UpdateOneClickAlarmNotificationsRequestBody`
@@ -49,7 +49,7 @@ class UpdateOneClickAlarmNotificationsRequest:
     def one_click_alarm_id(self):
         r"""Gets the one_click_alarm_id of this UpdateOneClickAlarmNotificationsRequest.
 
-        **参数解释**： 一键告警ID **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 一键告警ID **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。只能包含字母和数字。 **默认取值**： 不涉及。 
 
         :return: The one_click_alarm_id of this UpdateOneClickAlarmNotificationsRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateOneClickAlarmNotificationsRequest:
     def one_click_alarm_id(self, one_click_alarm_id):
         r"""Sets the one_click_alarm_id of this UpdateOneClickAlarmNotificationsRequest.
 
-        **参数解释**： 一键告警ID **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。 **默认取值**： 不涉及。 
+        **参数解释**： 一键告警ID **约束限制**： 不涉及。 **取值范围**： 长度为[1,64]个字符。只能包含字母和数字。 **默认取值**： 不涉及。 
 
         :param one_click_alarm_id: The one_click_alarm_id of this UpdateOneClickAlarmNotificationsRequest.
         :type one_click_alarm_id: str

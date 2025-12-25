@@ -17,7 +17,7 @@ class CreateAlarmMetric:
     openapi_types = {
         'namespace': 'str',
         'metric_name': 'str',
-        'dimensions': 'list[Dimension]',
+        'dimensions': 'list[CreateMetricDimension]',
         'resource_group_id': 'str'
     }
 
@@ -38,7 +38,7 @@ class CreateAlarmMetric:
         :param metric_name: **参数解释**： 资源的监控指标名称。如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 必须以字母开头，只能包含0-9/a-z/A-Z/_，长度为[1,96]个字符。 **默认取值**： 不涉及。 
         :type metric_name: str
         :param dimensions: **参数解释**： 指标维度。 **约束限制**： 目前最大可添加4个维度。如果不使用resource_group_id，则dimensions值必填。 
-        :type dimensions: list[:class:`huaweicloudsdkces.v1.Dimension`]
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.CreateMetricDimension`]
         :param resource_group_id: **参数解释**： 创建告警规则时选择的资源分组ID。 **约束限制**： 如果根据资源分组创建告警规则，则resource_group_id不能为空，dimensions中至少指定一个维度信息，name不能为空，且alarm_type值为RESOURCE_GROUP；如：rg1603786526428bWbVmk4rP。 **取值范围**： 只能包含字母、数字、“_”，“-”，长度为[0,64]个字符。 **默认取值**： 不涉及。 
         :type resource_group_id: str
         """
@@ -109,7 +109,7 @@ class CreateAlarmMetric:
         **参数解释**： 指标维度。 **约束限制**： 目前最大可添加4个维度。如果不使用resource_group_id，则dimensions值必填。 
 
         :return: The dimensions of this CreateAlarmMetric.
-        :rtype: list[:class:`huaweicloudsdkces.v1.Dimension`]
+        :rtype: list[:class:`huaweicloudsdkces.v1.CreateMetricDimension`]
         """
         return self._dimensions
 
@@ -120,7 +120,7 @@ class CreateAlarmMetric:
         **参数解释**： 指标维度。 **约束限制**： 目前最大可添加4个维度。如果不使用resource_group_id，则dimensions值必填。 
 
         :param dimensions: The dimensions of this CreateAlarmMetric.
-        :type dimensions: list[:class:`huaweicloudsdkces.v1.Dimension`]
+        :type dimensions: list[:class:`huaweicloudsdkces.v1.CreateMetricDimension`]
         """
         self._dimensions = dimensions
 

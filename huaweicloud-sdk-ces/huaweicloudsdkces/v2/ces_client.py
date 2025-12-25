@@ -2665,6 +2665,8 @@ class CesClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
 
         header_params = {}
 
@@ -2732,12 +2734,12 @@ class CesClient(Client):
             path_params['service'] = local_var_params['service']
 
         query_params = []
-        if 'dim_name' in local_var_params:
-            query_params.append(('dim_name', local_var_params['dim_name']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'dim_name' in local_var_params:
+            query_params.append(('dim_name', local_var_params['dim_name']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
         if 'dim_value' in local_var_params:
@@ -3245,7 +3247,8 @@ class CesClient(Client):
     def update_notification_mask(self, request):
         r"""修改告警通知屏蔽规则
 
-        修改告警通知屏蔽规则
+        修改告警通知屏蔽规则。
+        不能修改通过告警规则屏蔽的告警通知，只能修改通过资源屏蔽、策略屏蔽、事件屏蔽创建的告警屏蔽。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

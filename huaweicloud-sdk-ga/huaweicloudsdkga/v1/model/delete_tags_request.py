@@ -15,7 +15,7 @@ class DeleteTagsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'resource_type': 'ResourceType',
+        'resource_type': 'str',
         'resource_id': 'str',
         'body': 'DeleteTagsRequestBody'
     }
@@ -32,7 +32,7 @@ class DeleteTagsRequest:
         The model defined in huaweicloud sdk
 
         :param resource_type: 资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
-        :type resource_type: :class:`huaweicloudsdkga.v1.ResourceType`
+        :type resource_type: str
         :param resource_id: 资源ID。
         :type resource_id: str
         :param body: Body of the DeleteTagsRequest
@@ -58,7 +58,7 @@ class DeleteTagsRequest:
         资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
 
         :return: The resource_type of this DeleteTagsRequest.
-        :rtype: :class:`huaweicloudsdkga.v1.ResourceType`
+        :rtype: str
         """
         return self._resource_type
 
@@ -69,7 +69,7 @@ class DeleteTagsRequest:
         资源类型，取值范围： - ga-accelerators：加速实例 - ga-listeners：监听器
 
         :param resource_type: The resource_type of this DeleteTagsRequest.
-        :type resource_type: :class:`huaweicloudsdkga.v1.ResourceType`
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

@@ -30,7 +30,7 @@ class ListAlarmRulesResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param alarms: **参数解释**： 告警规则列表。 **取值范围**： 长度为[1,100]个字符。 
+        :param alarms: **参数解释**： 告警规则列表。 **取值范围**： 最多包含100个告警规则信息。 
         :type alarms: list[:class:`huaweicloudsdkces.v2.ListAlarmRespBodyAlarms`]
         :param count: **参数解释**： 告警规则总数。 **取值范围**： [0,10000] 
         :type count: int
@@ -51,7 +51,7 @@ class ListAlarmRulesResponse(SdkResponse):
     def alarms(self):
         r"""Gets the alarms of this ListAlarmRulesResponse.
 
-        **参数解释**： 告警规则列表。 **取值范围**： 长度为[1,100]个字符。 
+        **参数解释**： 告警规则列表。 **取值范围**： 最多包含100个告警规则信息。 
 
         :return: The alarms of this ListAlarmRulesResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.ListAlarmRespBodyAlarms`]
@@ -62,7 +62,7 @@ class ListAlarmRulesResponse(SdkResponse):
     def alarms(self, alarms):
         r"""Sets the alarms of this ListAlarmRulesResponse.
 
-        **参数解释**： 告警规则列表。 **取值范围**： 长度为[1,100]个字符。 
+        **参数解释**： 告警规则列表。 **取值范围**： 最多包含100个告警规则信息。 
 
         :param alarms: The alarms of this ListAlarmRulesResponse.
         :type alarms: list[:class:`huaweicloudsdkces.v2.ListAlarmRespBodyAlarms`]

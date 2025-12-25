@@ -18,7 +18,7 @@ class ListAttentionsResponse(SdkResponse):
     openapi_types = {
         'status': 'str',
         'trace_id': 'str',
-        'result': 'object'
+        'result': 'ListAttentionPageResult'
     }
 
     attribute_map = {
@@ -32,12 +32,12 @@ class ListAttentionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param status: 结果状态
+        :param status: **参数解释**： 请求成功或失败状态。 **取值范围**： - success：请求成功。 - error：请求失败。
         :type status: str
-        :param trace_id: 请求id
+        :param trace_id: **参数解释**： 请求ID，当前请求唯一标识。 **取值范围**： 数字及中划线（-）组成的字符串。
         :type trace_id: str
-        :param result: 请求返回结果，接口不同，返回不同
-        :type result: object
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodeartsartifact.v2.ListAttentionPageResult`
         """
         
         super().__init__()
@@ -58,7 +58,7 @@ class ListAttentionsResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ListAttentionsResponse.
 
-        结果状态
+        **参数解释**： 请求成功或失败状态。 **取值范围**： - success：请求成功。 - error：请求失败。
 
         :return: The status of this ListAttentionsResponse.
         :rtype: str
@@ -69,7 +69,7 @@ class ListAttentionsResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ListAttentionsResponse.
 
-        结果状态
+        **参数解释**： 请求成功或失败状态。 **取值范围**： - success：请求成功。 - error：请求失败。
 
         :param status: The status of this ListAttentionsResponse.
         :type status: str
@@ -80,7 +80,7 @@ class ListAttentionsResponse(SdkResponse):
     def trace_id(self):
         r"""Gets the trace_id of this ListAttentionsResponse.
 
-        请求id
+        **参数解释**： 请求ID，当前请求唯一标识。 **取值范围**： 数字及中划线（-）组成的字符串。
 
         :return: The trace_id of this ListAttentionsResponse.
         :rtype: str
@@ -91,7 +91,7 @@ class ListAttentionsResponse(SdkResponse):
     def trace_id(self, trace_id):
         r"""Sets the trace_id of this ListAttentionsResponse.
 
-        请求id
+        **参数解释**： 请求ID，当前请求唯一标识。 **取值范围**： 数字及中划线（-）组成的字符串。
 
         :param trace_id: The trace_id of this ListAttentionsResponse.
         :type trace_id: str
@@ -102,10 +102,8 @@ class ListAttentionsResponse(SdkResponse):
     def result(self):
         r"""Gets the result of this ListAttentionsResponse.
 
-        请求返回结果，接口不同，返回不同
-
         :return: The result of this ListAttentionsResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.ListAttentionPageResult`
         """
         return self._result
 
@@ -113,10 +111,8 @@ class ListAttentionsResponse(SdkResponse):
     def result(self, result):
         r"""Sets the result of this ListAttentionsResponse.
 
-        请求返回结果，接口不同，返回不同
-
         :param result: The result of this ListAttentionsResponse.
-        :type result: object
+        :type result: :class:`huaweicloudsdkcodeartsartifact.v2.ListAttentionPageResult`
         """
         self._result = result
 

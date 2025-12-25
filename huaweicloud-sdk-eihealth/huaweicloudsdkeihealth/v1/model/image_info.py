@@ -18,7 +18,7 @@ class ImageInfo:
         'source_project_name': 'str',
         'image_name': 'str',
         'image_tag': 'str',
-        'profile': 'Profile'
+        'profile': 'str'
     }
 
     attribute_map = {
@@ -40,7 +40,7 @@ class ImageInfo:
         :param image_tag: 镜像tag名
         :type image_tag: str
         :param profile: 
-        :type profile: :class:`huaweicloudsdkeihealth.v1.Profile`
+        :type profile: str
         """
         
         
@@ -131,7 +131,7 @@ class ImageInfo:
         r"""Gets the profile of this ImageInfo.
 
         :return: The profile of this ImageInfo.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.Profile`
+        :rtype: str
         """
         return self._profile
 
@@ -140,7 +140,7 @@ class ImageInfo:
         r"""Sets the profile of this ImageInfo.
 
         :param profile: The profile of this ImageInfo.
-        :type profile: :class:`huaweicloudsdkeihealth.v1.Profile`
+        :type profile: str
         """
         self._profile = profile
 

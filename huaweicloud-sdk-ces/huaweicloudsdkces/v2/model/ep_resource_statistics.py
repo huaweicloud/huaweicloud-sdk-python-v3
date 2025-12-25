@@ -35,15 +35,15 @@ class EpResourceStatistics:
 
         The model defined in huaweicloud sdk
 
-        :param extend_relation_id: 企业项目ID
+        :param extend_relation_id: **参数解释** 企业项目ID。 **取值范围** 长度[0,64]个字符. 
         :type extend_relation_id: str
-        :param unhealthy: 告警中的资源数
+        :param unhealthy: **参数解释** 告警中的资源数。 **取值范围** 0-9999999 
         :type unhealthy: int
-        :param total: 资源总数
+        :param total: **参数解释** 资源总数。 **取值范围** 0-9999999 
         :type total: int
-        :param event_unhealthy: 已触发的资源数
+        :param event_unhealthy: **参数解释** 已触发的资源数。 **取值范围** 0-9999999 
         :type event_unhealthy: int
-        :param namespaces: 资源类型数
+        :param namespaces: **参数解释** 资源类型数。 **取值范围** 0-9999999 
         :type namespaces: int
         """
         
@@ -71,7 +71,7 @@ class EpResourceStatistics:
     def extend_relation_id(self):
         r"""Gets the extend_relation_id of this EpResourceStatistics.
 
-        企业项目ID
+        **参数解释** 企业项目ID。 **取值范围** 长度[0,64]个字符. 
 
         :return: The extend_relation_id of this EpResourceStatistics.
         :rtype: str
@@ -82,7 +82,7 @@ class EpResourceStatistics:
     def extend_relation_id(self, extend_relation_id):
         r"""Sets the extend_relation_id of this EpResourceStatistics.
 
-        企业项目ID
+        **参数解释** 企业项目ID。 **取值范围** 长度[0,64]个字符. 
 
         :param extend_relation_id: The extend_relation_id of this EpResourceStatistics.
         :type extend_relation_id: str
@@ -93,7 +93,7 @@ class EpResourceStatistics:
     def unhealthy(self):
         r"""Gets the unhealthy of this EpResourceStatistics.
 
-        告警中的资源数
+        **参数解释** 告警中的资源数。 **取值范围** 0-9999999 
 
         :return: The unhealthy of this EpResourceStatistics.
         :rtype: int
@@ -104,7 +104,7 @@ class EpResourceStatistics:
     def unhealthy(self, unhealthy):
         r"""Sets the unhealthy of this EpResourceStatistics.
 
-        告警中的资源数
+        **参数解释** 告警中的资源数。 **取值范围** 0-9999999 
 
         :param unhealthy: The unhealthy of this EpResourceStatistics.
         :type unhealthy: int
@@ -115,7 +115,7 @@ class EpResourceStatistics:
     def total(self):
         r"""Gets the total of this EpResourceStatistics.
 
-        资源总数
+        **参数解释** 资源总数。 **取值范围** 0-9999999 
 
         :return: The total of this EpResourceStatistics.
         :rtype: int
@@ -126,7 +126,7 @@ class EpResourceStatistics:
     def total(self, total):
         r"""Sets the total of this EpResourceStatistics.
 
-        资源总数
+        **参数解释** 资源总数。 **取值范围** 0-9999999 
 
         :param total: The total of this EpResourceStatistics.
         :type total: int
@@ -137,7 +137,7 @@ class EpResourceStatistics:
     def event_unhealthy(self):
         r"""Gets the event_unhealthy of this EpResourceStatistics.
 
-        已触发的资源数
+        **参数解释** 已触发的资源数。 **取值范围** 0-9999999 
 
         :return: The event_unhealthy of this EpResourceStatistics.
         :rtype: int
@@ -148,7 +148,7 @@ class EpResourceStatistics:
     def event_unhealthy(self, event_unhealthy):
         r"""Sets the event_unhealthy of this EpResourceStatistics.
 
-        已触发的资源数
+        **参数解释** 已触发的资源数。 **取值范围** 0-9999999 
 
         :param event_unhealthy: The event_unhealthy of this EpResourceStatistics.
         :type event_unhealthy: int
@@ -159,7 +159,7 @@ class EpResourceStatistics:
     def namespaces(self):
         r"""Gets the namespaces of this EpResourceStatistics.
 
-        资源类型数
+        **参数解释** 资源类型数。 **取值范围** 0-9999999 
 
         :return: The namespaces of this EpResourceStatistics.
         :rtype: int
@@ -170,7 +170,7 @@ class EpResourceStatistics:
     def namespaces(self, namespaces):
         r"""Sets the namespaces of this EpResourceStatistics.
 
-        资源类型数
+        **参数解释** 资源类型数。 **取值范围** 0-9999999 
 
         :param namespaces: The namespaces of this EpResourceStatistics.
         :type namespaces: int

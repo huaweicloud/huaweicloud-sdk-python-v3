@@ -15,80 +15,20 @@ class AlertRemediation:
     sensitive_list = []
 
     openapi_types = {
-        'recommendation': 'str',
-        'url': 'str'
     }
 
     attribute_map = {
-        'recommendation': 'recommendation',
-        'url': 'url'
     }
 
-    def __init__(self, recommendation=None, url=None):
+    def __init__(self):
         r"""AlertRemediation
 
         The model defined in huaweicloud sdk
 
-        :param recommendation: 推荐处理方法
-        :type recommendation: str
-        :param url: 链接，指向该事件的一般修复信息。该URL必须可以从公网访问，不需要提供凭证
-        :type url: str
         """
         
         
-
-        self._recommendation = None
-        self._url = None
         self.discriminator = None
-
-        if recommendation is not None:
-            self.recommendation = recommendation
-        if url is not None:
-            self.url = url
-
-    @property
-    def recommendation(self):
-        r"""Gets the recommendation of this AlertRemediation.
-
-        推荐处理方法
-
-        :return: The recommendation of this AlertRemediation.
-        :rtype: str
-        """
-        return self._recommendation
-
-    @recommendation.setter
-    def recommendation(self, recommendation):
-        r"""Sets the recommendation of this AlertRemediation.
-
-        推荐处理方法
-
-        :param recommendation: The recommendation of this AlertRemediation.
-        :type recommendation: str
-        """
-        self._recommendation = recommendation
-
-    @property
-    def url(self):
-        r"""Gets the url of this AlertRemediation.
-
-        链接，指向该事件的一般修复信息。该URL必须可以从公网访问，不需要提供凭证
-
-        :return: The url of this AlertRemediation.
-        :rtype: str
-        """
-        return self._url
-
-    @url.setter
-    def url(self, url):
-        r"""Sets the url of this AlertRemediation.
-
-        链接，指向该事件的一般修复信息。该URL必须可以从公网访问，不需要提供凭证
-
-        :param url: The url of this AlertRemediation.
-        :type url: str
-        """
-        self._url = url
 
     def to_dict(self):
         result = {}

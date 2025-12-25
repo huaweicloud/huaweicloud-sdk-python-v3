@@ -4,15 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ServerStatus:
-    """
-    allowed enum values
-    """
-    UNREGISTER = "UNREGISTER"
-    REGISTERED = "REGISTERED"
-    MAINTAINING = "MAINTAINING"
-    FREEZE = "FREEZE"
-    STOPPED = "STOPPED"
-    NONE = "NONE"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

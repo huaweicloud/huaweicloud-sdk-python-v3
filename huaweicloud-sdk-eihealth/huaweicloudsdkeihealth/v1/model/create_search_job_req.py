@@ -22,7 +22,7 @@ class CreateSearchJobReq:
         'databases': 'list[str]',
         'custom_databases': 'list[str]',
         'model_ids': 'list[str]',
-        'search_method': 'SearchType'
+        'search_method': 'str'
     }
 
     attribute_map = {
@@ -56,7 +56,7 @@ class CreateSearchJobReq:
         :param model_ids: 模型id列表
         :type model_ids: list[str]
         :param search_method: 
-        :type search_method: :class:`huaweicloudsdkeihealth.v1.SearchType`
+        :type search_method: str
         """
         
         
@@ -241,7 +241,7 @@ class CreateSearchJobReq:
         r"""Gets the search_method of this CreateSearchJobReq.
 
         :return: The search_method of this CreateSearchJobReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.SearchType`
+        :rtype: str
         """
         return self._search_method
 
@@ -250,7 +250,7 @@ class CreateSearchJobReq:
         r"""Sets the search_method of this CreateSearchJobReq.
 
         :param search_method: The search_method of this CreateSearchJobReq.
-        :type search_method: :class:`huaweicloudsdkeihealth.v1.SearchType`
+        :type search_method: str
         """
         self._search_method = search_method
 

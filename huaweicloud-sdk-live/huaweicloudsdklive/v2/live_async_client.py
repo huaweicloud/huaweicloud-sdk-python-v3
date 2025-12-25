@@ -536,6 +536,7 @@ class LiveAsyncClient(Client):
         query_params = []
         if 'domain' in local_var_params:
             query_params.append(('domain', local_var_params['domain']))
+            collection_formats['domain'] = 'csv'
         if 'app' in local_var_params:
             query_params.append(('app', local_var_params['app']))
         if 'stream' in local_var_params:
@@ -1512,6 +1513,8 @@ class LiveAsyncClient(Client):
             query_params.append(('app', local_var_params['app']))
         if 'stream' in local_var_params:
             query_params.append(('stream', local_var_params['stream']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
         if 'start_time' in local_var_params:
             query_params.append(('start_time', local_var_params['start_time']))
         if 'end_time' in local_var_params:

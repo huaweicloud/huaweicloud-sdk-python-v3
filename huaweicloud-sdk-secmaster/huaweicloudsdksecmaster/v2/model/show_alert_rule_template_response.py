@@ -16,251 +16,402 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'template_id': 'str',
-        'update_time': 'int',
-        'template_name': 'str',
-        'data_source': 'str',
-        'version': 'str',
-        'query': 'str',
+        'accumulated_times': 'int',
+        'create_by': 'str',
+        'create_time': 'int',
+        'cu_quota_amount': 'float',
+        'description': 'str',
+        'environment': 'str',
+        'job_mode': 'str',
+        'job_mode_setting': 'IsapJobModeSettingVo',
+        'job_output_setting': 'IsapJobOutputSetting',
+        'process_error': 'str',
+        'process_status': 'str',
         'query_type': 'str',
-        'severity': 'str',
-        'custom_properties': 'dict(str, str)',
-        'event_grouping': 'bool',
-        'schedule': 'Schedule',
-        'triggers': 'list[AlertRuleTrigger]',
-        'x_request_id': 'str'
+        'script': 'str',
+        'status': 'str',
+        'table_name': 'str',
+        'template_id': 'str',
+        'template_name': 'str',
+        'triggers': 'list[Trigger]',
+        'update_by': 'str',
+        'update_time': 'int'
     }
 
     attribute_map = {
-        'template_id': 'template_id',
-        'update_time': 'update_time',
-        'template_name': 'template_name',
-        'data_source': 'data_source',
-        'version': 'version',
-        'query': 'query',
+        'accumulated_times': 'accumulated_times',
+        'create_by': 'create_by',
+        'create_time': 'create_time',
+        'cu_quota_amount': 'cu_quota_amount',
+        'description': 'description',
+        'environment': 'environment',
+        'job_mode': 'job_mode',
+        'job_mode_setting': 'job_mode_setting',
+        'job_output_setting': 'job_output_setting',
+        'process_error': 'process_error',
+        'process_status': 'process_status',
         'query_type': 'query_type',
-        'severity': 'severity',
-        'custom_properties': 'custom_properties',
-        'event_grouping': 'event_grouping',
-        'schedule': 'schedule',
+        'script': 'script',
+        'status': 'status',
+        'table_name': 'table_name',
+        'template_id': 'template_id',
+        'template_name': 'template_name',
         'triggers': 'triggers',
-        'x_request_id': 'X-request-id'
+        'update_by': 'update_by',
+        'update_time': 'update_time'
     }
 
-    def __init__(self, template_id=None, update_time=None, template_name=None, data_source=None, version=None, query=None, query_type=None, severity=None, custom_properties=None, event_grouping=None, schedule=None, triggers=None, x_request_id=None):
+    def __init__(self, accumulated_times=None, create_by=None, create_time=None, cu_quota_amount=None, description=None, environment=None, job_mode=None, job_mode_setting=None, job_output_setting=None, process_error=None, process_status=None, query_type=None, script=None, status=None, table_name=None, template_id=None, template_name=None, triggers=None, update_by=None, update_time=None):
         r"""ShowAlertRuleTemplateResponse
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 告警规则模板 ID。Alert rule template ID.
-        :type template_id: str
-        :param update_time: 更新时间。Update time.
-        :type update_time: int
-        :param template_name: 告警规则模板名称。Alert rule template name.
-        :type template_name: str
-        :param data_source: 数据源。Data source.
-        :type data_source: str
-        :param version: 版本。Version
-        :type version: str
-        :param query: 查询语句。Query.
-        :type query: str
-        :param query_type: 查询语法，SQL。Query type. SQL.
+        :param accumulated_times: 累计次数
+        :type accumulated_times: int
+        :param create_by: UUID
+        :type create_by: str
+        :param create_time: 毫秒时间戳
+        :type create_time: int
+        :param cu_quota_amount: 数量
+        :type cu_quota_amount: float
+        :param description: 告警规则模板描述
+        :type description: str
+        :param environment: **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
+        :type environment: str
+        :param job_mode: **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
+        :type job_mode: str
+        :param job_mode_setting: 
+        :type job_mode_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingVo`
+        :param job_output_setting: 
+        :type job_output_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobOutputSetting`
+        :param process_error: **参数解释**: 处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及      
+        :type process_error: str
+        :param process_status: **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及         
+        :type process_status: str
+        :param query_type: **参数解释**: 查询类型 - SQL SQL查询 - CBSL CBSL查询  **约束限制** 不涉及 **取值范围**: - SQL - CBSL  **默认值** 不涉及        
         :type query_type: str
-        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
-        :type severity: str
-        :param custom_properties: 自定义扩展信息。Custom properties.
-        :type custom_properties: dict(str, str)
-        :param event_grouping: 告警分组。Event grouping.
-        :type event_grouping: bool
-        :param schedule: 
-        :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        :param triggers: 告警触发规则。Alert triggers.
-        :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
-        :param x_request_id: 
-        :type x_request_id: str
+        :param script: Script 脚本
+        :type script: str
+        :param status: **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
+        :type status: str
+        :param table_name: 表名称
+        :type table_name: str
+        :param template_id: UUID
+        :type template_id: str
+        :param template_name: 模板名称
+        :type template_name: str
+        :param triggers: 触发器数组
+        :type triggers: list[:class:`huaweicloudsdksecmaster.v2.Trigger`]
+        :param update_by: UUID
+        :type update_by: str
+        :param update_time: 毫秒时间戳
+        :type update_time: int
         """
         
         super().__init__()
 
-        self._template_id = None
-        self._update_time = None
-        self._template_name = None
-        self._data_source = None
-        self._version = None
-        self._query = None
+        self._accumulated_times = None
+        self._create_by = None
+        self._create_time = None
+        self._cu_quota_amount = None
+        self._description = None
+        self._environment = None
+        self._job_mode = None
+        self._job_mode_setting = None
+        self._job_output_setting = None
+        self._process_error = None
+        self._process_status = None
         self._query_type = None
-        self._severity = None
-        self._custom_properties = None
-        self._event_grouping = None
-        self._schedule = None
+        self._script = None
+        self._status = None
+        self._table_name = None
+        self._template_id = None
+        self._template_name = None
         self._triggers = None
-        self._x_request_id = None
+        self._update_by = None
+        self._update_time = None
         self.discriminator = None
 
-        if template_id is not None:
-            self.template_id = template_id
-        if update_time is not None:
-            self.update_time = update_time
-        if template_name is not None:
-            self.template_name = template_name
-        if data_source is not None:
-            self.data_source = data_source
-        if version is not None:
-            self.version = version
-        if query is not None:
-            self.query = query
+        if accumulated_times is not None:
+            self.accumulated_times = accumulated_times
+        if create_by is not None:
+            self.create_by = create_by
+        if create_time is not None:
+            self.create_time = create_time
+        if cu_quota_amount is not None:
+            self.cu_quota_amount = cu_quota_amount
+        if description is not None:
+            self.description = description
+        if environment is not None:
+            self.environment = environment
+        if job_mode is not None:
+            self.job_mode = job_mode
+        if job_mode_setting is not None:
+            self.job_mode_setting = job_mode_setting
+        if job_output_setting is not None:
+            self.job_output_setting = job_output_setting
+        if process_error is not None:
+            self.process_error = process_error
+        if process_status is not None:
+            self.process_status = process_status
         if query_type is not None:
             self.query_type = query_type
-        if severity is not None:
-            self.severity = severity
-        if custom_properties is not None:
-            self.custom_properties = custom_properties
-        if event_grouping is not None:
-            self.event_grouping = event_grouping
-        if schedule is not None:
-            self.schedule = schedule
+        if script is not None:
+            self.script = script
+        if status is not None:
+            self.status = status
+        if table_name is not None:
+            self.table_name = table_name
+        if template_id is not None:
+            self.template_id = template_id
+        if template_name is not None:
+            self.template_name = template_name
         if triggers is not None:
             self.triggers = triggers
-        if x_request_id is not None:
-            self.x_request_id = x_request_id
+        if update_by is not None:
+            self.update_by = update_by
+        if update_time is not None:
+            self.update_time = update_time
 
     @property
-    def template_id(self):
-        r"""Gets the template_id of this ShowAlertRuleTemplateResponse.
+    def accumulated_times(self):
+        r"""Gets the accumulated_times of this ShowAlertRuleTemplateResponse.
 
-        告警规则模板 ID。Alert rule template ID.
+        累计次数
 
-        :return: The template_id of this ShowAlertRuleTemplateResponse.
-        :rtype: str
-        """
-        return self._template_id
-
-    @template_id.setter
-    def template_id(self, template_id):
-        r"""Sets the template_id of this ShowAlertRuleTemplateResponse.
-
-        告警规则模板 ID。Alert rule template ID.
-
-        :param template_id: The template_id of this ShowAlertRuleTemplateResponse.
-        :type template_id: str
-        """
-        self._template_id = template_id
-
-    @property
-    def update_time(self):
-        r"""Gets the update_time of this ShowAlertRuleTemplateResponse.
-
-        更新时间。Update time.
-
-        :return: The update_time of this ShowAlertRuleTemplateResponse.
+        :return: The accumulated_times of this ShowAlertRuleTemplateResponse.
         :rtype: int
         """
-        return self._update_time
+        return self._accumulated_times
 
-    @update_time.setter
-    def update_time(self, update_time):
-        r"""Sets the update_time of this ShowAlertRuleTemplateResponse.
+    @accumulated_times.setter
+    def accumulated_times(self, accumulated_times):
+        r"""Sets the accumulated_times of this ShowAlertRuleTemplateResponse.
 
-        更新时间。Update time.
+        累计次数
 
-        :param update_time: The update_time of this ShowAlertRuleTemplateResponse.
-        :type update_time: int
+        :param accumulated_times: The accumulated_times of this ShowAlertRuleTemplateResponse.
+        :type accumulated_times: int
         """
-        self._update_time = update_time
+        self._accumulated_times = accumulated_times
 
     @property
-    def template_name(self):
-        r"""Gets the template_name of this ShowAlertRuleTemplateResponse.
+    def create_by(self):
+        r"""Gets the create_by of this ShowAlertRuleTemplateResponse.
 
-        告警规则模板名称。Alert rule template name.
+        UUID
 
-        :return: The template_name of this ShowAlertRuleTemplateResponse.
+        :return: The create_by of this ShowAlertRuleTemplateResponse.
         :rtype: str
         """
-        return self._template_name
+        return self._create_by
 
-    @template_name.setter
-    def template_name(self, template_name):
-        r"""Sets the template_name of this ShowAlertRuleTemplateResponse.
+    @create_by.setter
+    def create_by(self, create_by):
+        r"""Sets the create_by of this ShowAlertRuleTemplateResponse.
 
-        告警规则模板名称。Alert rule template name.
+        UUID
 
-        :param template_name: The template_name of this ShowAlertRuleTemplateResponse.
-        :type template_name: str
+        :param create_by: The create_by of this ShowAlertRuleTemplateResponse.
+        :type create_by: str
         """
-        self._template_name = template_name
+        self._create_by = create_by
 
     @property
-    def data_source(self):
-        r"""Gets the data_source of this ShowAlertRuleTemplateResponse.
+    def create_time(self):
+        r"""Gets the create_time of this ShowAlertRuleTemplateResponse.
 
-        数据源。Data source.
+        毫秒时间戳
 
-        :return: The data_source of this ShowAlertRuleTemplateResponse.
-        :rtype: str
+        :return: The create_time of this ShowAlertRuleTemplateResponse.
+        :rtype: int
         """
-        return self._data_source
+        return self._create_time
 
-    @data_source.setter
-    def data_source(self, data_source):
-        r"""Sets the data_source of this ShowAlertRuleTemplateResponse.
+    @create_time.setter
+    def create_time(self, create_time):
+        r"""Sets the create_time of this ShowAlertRuleTemplateResponse.
 
-        数据源。Data source.
+        毫秒时间戳
 
-        :param data_source: The data_source of this ShowAlertRuleTemplateResponse.
-        :type data_source: str
+        :param create_time: The create_time of this ShowAlertRuleTemplateResponse.
+        :type create_time: int
         """
-        self._data_source = data_source
+        self._create_time = create_time
 
     @property
-    def version(self):
-        r"""Gets the version of this ShowAlertRuleTemplateResponse.
+    def cu_quota_amount(self):
+        r"""Gets the cu_quota_amount of this ShowAlertRuleTemplateResponse.
 
-        版本。Version
+        数量
 
-        :return: The version of this ShowAlertRuleTemplateResponse.
-        :rtype: str
+        :return: The cu_quota_amount of this ShowAlertRuleTemplateResponse.
+        :rtype: float
         """
-        return self._version
+        return self._cu_quota_amount
 
-    @version.setter
-    def version(self, version):
-        r"""Sets the version of this ShowAlertRuleTemplateResponse.
+    @cu_quota_amount.setter
+    def cu_quota_amount(self, cu_quota_amount):
+        r"""Sets the cu_quota_amount of this ShowAlertRuleTemplateResponse.
 
-        版本。Version
+        数量
 
-        :param version: The version of this ShowAlertRuleTemplateResponse.
-        :type version: str
+        :param cu_quota_amount: The cu_quota_amount of this ShowAlertRuleTemplateResponse.
+        :type cu_quota_amount: float
         """
-        self._version = version
+        self._cu_quota_amount = cu_quota_amount
 
     @property
-    def query(self):
-        r"""Gets the query of this ShowAlertRuleTemplateResponse.
+    def description(self):
+        r"""Gets the description of this ShowAlertRuleTemplateResponse.
 
-        查询语句。Query.
+        告警规则模板描述
 
-        :return: The query of this ShowAlertRuleTemplateResponse.
+        :return: The description of this ShowAlertRuleTemplateResponse.
         :rtype: str
         """
-        return self._query
+        return self._description
 
-    @query.setter
-    def query(self, query):
-        r"""Sets the query of this ShowAlertRuleTemplateResponse.
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this ShowAlertRuleTemplateResponse.
 
-        查询语句。Query.
+        告警规则模板描述
 
-        :param query: The query of this ShowAlertRuleTemplateResponse.
-        :type query: str
+        :param description: The description of this ShowAlertRuleTemplateResponse.
+        :type description: str
         """
-        self._query = query
+        self._description = description
+
+    @property
+    def environment(self):
+        r"""Gets the environment of this ShowAlertRuleTemplateResponse.
+
+        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
+
+        :return: The environment of this ShowAlertRuleTemplateResponse.
+        :rtype: str
+        """
+        return self._environment
+
+    @environment.setter
+    def environment(self, environment):
+        r"""Sets the environment of this ShowAlertRuleTemplateResponse.
+
+        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
+
+        :param environment: The environment of this ShowAlertRuleTemplateResponse.
+        :type environment: str
+        """
+        self._environment = environment
+
+    @property
+    def job_mode(self):
+        r"""Gets the job_mode of this ShowAlertRuleTemplateResponse.
+
+        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
+
+        :return: The job_mode of this ShowAlertRuleTemplateResponse.
+        :rtype: str
+        """
+        return self._job_mode
+
+    @job_mode.setter
+    def job_mode(self, job_mode):
+        r"""Sets the job_mode of this ShowAlertRuleTemplateResponse.
+
+        **参数解释**: 作业模式 - STREAMING 流式处理 - BATCH 批处理 - SEARCH 检索  **约束限制** 不涉及 **取值范围**: - STREAMING - BATCH - SEARCH  **默认值** 不涉及  
+
+        :param job_mode: The job_mode of this ShowAlertRuleTemplateResponse.
+        :type job_mode: str
+        """
+        self._job_mode = job_mode
+
+    @property
+    def job_mode_setting(self):
+        r"""Gets the job_mode_setting of this ShowAlertRuleTemplateResponse.
+
+        :return: The job_mode_setting of this ShowAlertRuleTemplateResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingVo`
+        """
+        return self._job_mode_setting
+
+    @job_mode_setting.setter
+    def job_mode_setting(self, job_mode_setting):
+        r"""Sets the job_mode_setting of this ShowAlertRuleTemplateResponse.
+
+        :param job_mode_setting: The job_mode_setting of this ShowAlertRuleTemplateResponse.
+        :type job_mode_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingVo`
+        """
+        self._job_mode_setting = job_mode_setting
+
+    @property
+    def job_output_setting(self):
+        r"""Gets the job_output_setting of this ShowAlertRuleTemplateResponse.
+
+        :return: The job_output_setting of this ShowAlertRuleTemplateResponse.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobOutputSetting`
+        """
+        return self._job_output_setting
+
+    @job_output_setting.setter
+    def job_output_setting(self, job_output_setting):
+        r"""Sets the job_output_setting of this ShowAlertRuleTemplateResponse.
+
+        :param job_output_setting: The job_output_setting of this ShowAlertRuleTemplateResponse.
+        :type job_output_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobOutputSetting`
+        """
+        self._job_output_setting = job_output_setting
+
+    @property
+    def process_error(self):
+        r"""Gets the process_error of this ShowAlertRuleTemplateResponse.
+
+        **参数解释**: 处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及      
+
+        :return: The process_error of this ShowAlertRuleTemplateResponse.
+        :rtype: str
+        """
+        return self._process_error
+
+    @process_error.setter
+    def process_error(self, process_error):
+        r"""Sets the process_error of this ShowAlertRuleTemplateResponse.
+
+        **参数解释**: 处理错误 - NONE 无  **约束限制** 不涉及 **取值范围**: - NONE  **默认值** 不涉及      
+
+        :param process_error: The process_error of this ShowAlertRuleTemplateResponse.
+        :type process_error: str
+        """
+        self._process_error = process_error
+
+    @property
+    def process_status(self):
+        r"""Gets the process_status of this ShowAlertRuleTemplateResponse.
+
+        **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及         
+
+        :return: The process_status of this ShowAlertRuleTemplateResponse.
+        :rtype: str
+        """
+        return self._process_status
+
+    @process_status.setter
+    def process_status(self, process_status):
+        r"""Sets the process_status of this ShowAlertRuleTemplateResponse.
+
+        **参数解释**: 处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及         
+
+        :param process_status: The process_status of this ShowAlertRuleTemplateResponse.
+        :type process_status: str
+        """
+        self._process_status = process_status
 
     @property
     def query_type(self):
         r"""Gets the query_type of this ShowAlertRuleTemplateResponse.
 
-        查询语法，SQL。Query type. SQL.
+        **参数解释**: 查询类型 - SQL SQL查询 - CBSL CBSL查询  **约束限制** 不涉及 **取值范围**: - SQL - CBSL  **默认值** 不涉及        
 
         :return: The query_type of this ShowAlertRuleTemplateResponse.
         :rtype: str
@@ -271,7 +422,7 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def query_type(self, query_type):
         r"""Sets the query_type of this ShowAlertRuleTemplateResponse.
 
-        查询语法，SQL。Query type. SQL.
+        **参数解释**: 查询类型 - SQL SQL查询 - CBSL CBSL查询  **约束限制** 不涉及 **取值范围**: - SQL - CBSL  **默认值** 不涉及        
 
         :param query_type: The query_type of this ShowAlertRuleTemplateResponse.
         :type query_type: str
@@ -279,97 +430,123 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
         self._query_type = query_type
 
     @property
-    def severity(self):
-        r"""Gets the severity of this ShowAlertRuleTemplateResponse.
+    def script(self):
+        r"""Gets the script of this ShowAlertRuleTemplateResponse.
 
-        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        Script 脚本
 
-        :return: The severity of this ShowAlertRuleTemplateResponse.
+        :return: The script of this ShowAlertRuleTemplateResponse.
         :rtype: str
         """
-        return self._severity
+        return self._script
 
-    @severity.setter
-    def severity(self, severity):
-        r"""Sets the severity of this ShowAlertRuleTemplateResponse.
+    @script.setter
+    def script(self, script):
+        r"""Sets the script of this ShowAlertRuleTemplateResponse.
 
-        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        Script 脚本
 
-        :param severity: The severity of this ShowAlertRuleTemplateResponse.
-        :type severity: str
+        :param script: The script of this ShowAlertRuleTemplateResponse.
+        :type script: str
         """
-        self._severity = severity
+        self._script = script
 
     @property
-    def custom_properties(self):
-        r"""Gets the custom_properties of this ShowAlertRuleTemplateResponse.
+    def status(self):
+        r"""Gets the status of this ShowAlertRuleTemplateResponse.
 
-        自定义扩展信息。Custom properties.
+        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
 
-        :return: The custom_properties of this ShowAlertRuleTemplateResponse.
-        :rtype: dict(str, str)
+        :return: The status of this ShowAlertRuleTemplateResponse.
+        :rtype: str
         """
-        return self._custom_properties
+        return self._status
 
-    @custom_properties.setter
-    def custom_properties(self, custom_properties):
-        r"""Sets the custom_properties of this ShowAlertRuleTemplateResponse.
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this ShowAlertRuleTemplateResponse.
 
-        自定义扩展信息。Custom properties.
+        **参数解释**: 状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
 
-        :param custom_properties: The custom_properties of this ShowAlertRuleTemplateResponse.
-        :type custom_properties: dict(str, str)
+        :param status: The status of this ShowAlertRuleTemplateResponse.
+        :type status: str
         """
-        self._custom_properties = custom_properties
+        self._status = status
 
     @property
-    def event_grouping(self):
-        r"""Gets the event_grouping of this ShowAlertRuleTemplateResponse.
+    def table_name(self):
+        r"""Gets the table_name of this ShowAlertRuleTemplateResponse.
 
-        告警分组。Event grouping.
+        表名称
 
-        :return: The event_grouping of this ShowAlertRuleTemplateResponse.
-        :rtype: bool
+        :return: The table_name of this ShowAlertRuleTemplateResponse.
+        :rtype: str
         """
-        return self._event_grouping
+        return self._table_name
 
-    @event_grouping.setter
-    def event_grouping(self, event_grouping):
-        r"""Sets the event_grouping of this ShowAlertRuleTemplateResponse.
+    @table_name.setter
+    def table_name(self, table_name):
+        r"""Sets the table_name of this ShowAlertRuleTemplateResponse.
 
-        告警分组。Event grouping.
+        表名称
 
-        :param event_grouping: The event_grouping of this ShowAlertRuleTemplateResponse.
-        :type event_grouping: bool
+        :param table_name: The table_name of this ShowAlertRuleTemplateResponse.
+        :type table_name: str
         """
-        self._event_grouping = event_grouping
+        self._table_name = table_name
 
     @property
-    def schedule(self):
-        r"""Gets the schedule of this ShowAlertRuleTemplateResponse.
+    def template_id(self):
+        r"""Gets the template_id of this ShowAlertRuleTemplateResponse.
 
-        :return: The schedule of this ShowAlertRuleTemplateResponse.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.Schedule`
+        UUID
+
+        :return: The template_id of this ShowAlertRuleTemplateResponse.
+        :rtype: str
         """
-        return self._schedule
+        return self._template_id
 
-    @schedule.setter
-    def schedule(self, schedule):
-        r"""Sets the schedule of this ShowAlertRuleTemplateResponse.
+    @template_id.setter
+    def template_id(self, template_id):
+        r"""Sets the template_id of this ShowAlertRuleTemplateResponse.
 
-        :param schedule: The schedule of this ShowAlertRuleTemplateResponse.
-        :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
+        UUID
+
+        :param template_id: The template_id of this ShowAlertRuleTemplateResponse.
+        :type template_id: str
         """
-        self._schedule = schedule
+        self._template_id = template_id
+
+    @property
+    def template_name(self):
+        r"""Gets the template_name of this ShowAlertRuleTemplateResponse.
+
+        模板名称
+
+        :return: The template_name of this ShowAlertRuleTemplateResponse.
+        :rtype: str
+        """
+        return self._template_name
+
+    @template_name.setter
+    def template_name(self, template_name):
+        r"""Sets the template_name of this ShowAlertRuleTemplateResponse.
+
+        模板名称
+
+        :param template_name: The template_name of this ShowAlertRuleTemplateResponse.
+        :type template_name: str
+        """
+        self._template_name = template_name
 
     @property
     def triggers(self):
         r"""Gets the triggers of this ShowAlertRuleTemplateResponse.
 
-        告警触发规则。Alert triggers.
+        触发器数组
 
         :return: The triggers of this ShowAlertRuleTemplateResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
+        :rtype: list[:class:`huaweicloudsdksecmaster.v2.Trigger`]
         """
         return self._triggers
 
@@ -377,30 +554,56 @@ class ShowAlertRuleTemplateResponse(SdkResponse):
     def triggers(self, triggers):
         r"""Sets the triggers of this ShowAlertRuleTemplateResponse.
 
-        告警触发规则。Alert triggers.
+        触发器数组
 
         :param triggers: The triggers of this ShowAlertRuleTemplateResponse.
-        :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
+        :type triggers: list[:class:`huaweicloudsdksecmaster.v2.Trigger`]
         """
         self._triggers = triggers
 
     @property
-    def x_request_id(self):
-        r"""Gets the x_request_id of this ShowAlertRuleTemplateResponse.
+    def update_by(self):
+        r"""Gets the update_by of this ShowAlertRuleTemplateResponse.
 
-        :return: The x_request_id of this ShowAlertRuleTemplateResponse.
+        UUID
+
+        :return: The update_by of this ShowAlertRuleTemplateResponse.
         :rtype: str
         """
-        return self._x_request_id
+        return self._update_by
 
-    @x_request_id.setter
-    def x_request_id(self, x_request_id):
-        r"""Sets the x_request_id of this ShowAlertRuleTemplateResponse.
+    @update_by.setter
+    def update_by(self, update_by):
+        r"""Sets the update_by of this ShowAlertRuleTemplateResponse.
 
-        :param x_request_id: The x_request_id of this ShowAlertRuleTemplateResponse.
-        :type x_request_id: str
+        UUID
+
+        :param update_by: The update_by of this ShowAlertRuleTemplateResponse.
+        :type update_by: str
         """
-        self._x_request_id = x_request_id
+        self._update_by = update_by
+
+    @property
+    def update_time(self):
+        r"""Gets the update_time of this ShowAlertRuleTemplateResponse.
+
+        毫秒时间戳
+
+        :return: The update_time of this ShowAlertRuleTemplateResponse.
+        :rtype: int
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        r"""Sets the update_time of this ShowAlertRuleTemplateResponse.
+
+        毫秒时间戳
+
+        :param update_time: The update_time of this ShowAlertRuleTemplateResponse.
+        :type update_time: int
+        """
+        self._update_time = update_time
 
     def to_dict(self):
         import warnings

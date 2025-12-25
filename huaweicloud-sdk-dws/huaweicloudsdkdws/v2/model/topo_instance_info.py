@@ -61,7 +61,7 @@ class TopoInstanceInfo:
         :type eip: str
         :param elb: **参数解释**： elb地址。 **取值范围**： 不涉及。
         :type elb: str
-        :param status: **参数解释**： 实例状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 节点状态。 **取值范围**： - 100：创建中 - 200：可用 - 300：不可用 - 400：已删除 - 303：创建失败
         :type status: str
         :param az_code: **参数解释**： 可用区编码。 **取值范围**： 不涉及。
         :type az_code: str
@@ -282,7 +282,7 @@ class TopoInstanceInfo:
     def status(self):
         r"""Gets the status of this TopoInstanceInfo.
 
-        **参数解释**： 实例状态。 **取值范围**： 不涉及。
+        **参数解释**： 节点状态。 **取值范围**： - 100：创建中 - 200：可用 - 300：不可用 - 400：已删除 - 303：创建失败
 
         :return: The status of this TopoInstanceInfo.
         :rtype: str
@@ -293,7 +293,7 @@ class TopoInstanceInfo:
     def status(self, status):
         r"""Sets the status of this TopoInstanceInfo.
 
-        **参数解释**： 实例状态。 **取值范围**： 不涉及。
+        **参数解释**： 节点状态。 **取值范围**： - 100：创建中 - 200：可用 - 300：不可用 - 400：已删除 - 303：创建失败
 
         :param status: The status of this TopoInstanceInfo.
         :type status: str

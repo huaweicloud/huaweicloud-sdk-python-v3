@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AssignType:
-    """
-    allowed enum values
-    """
-    ALL_USER = "ALL_USER"
-    ASSIGN_USER = "ASSIGN_USER"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

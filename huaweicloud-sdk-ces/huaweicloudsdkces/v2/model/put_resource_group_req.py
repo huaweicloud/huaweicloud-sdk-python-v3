@@ -39,17 +39,17 @@ class PutResourceGroupReq:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 资源分组名称，只能为字母、数字、汉字、-、_，最大长度为128
+        :param group_name: **参数解释** 资源分组名称。 **约束限制** 不涉及。 **取值范围** 包含字母、数字、_、-或汉字，长度为[1,128]个字符。 **默认取值** 不涉及。
         :type group_name: str
-        :param tags: 标签动态匹配时的关联标签,type为TAG时该字段不为空
+        :param tags: **参数解释** 标签动态匹配时的关联标签。 **约束限制** type为TAG时必传，不超过50个标签。
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
-        :param enterprise_project_id_and_tags: 资源匹配规则为组合匹配时传入的参数
+        :param enterprise_project_id_and_tags: **参数解释** 资源匹配规则为组合匹配时传入的参数，已废弃。 **约束限制** type为COMB时传入，不超过50个条件。
         :type enterprise_project_id_and_tags: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]
-        :param extend_relation_ids: 智能添加时企业项目匹配传入参数
+        :param extend_relation_ids: **参数解释** 匹配企业项目时关联的企业项目ID。 **约束限制** type为EPS时必传，不超过50个企业项目。
         :type extend_relation_ids: list[str]
-        :param instances: 实例名称匹配参数
+        :param instances: **参数解释** 实例名称匹配参数。 **约束限制** type为NAME时必传，不超过50个实例。 
         :type instances: list[:class:`huaweicloudsdkces.v2.Instance`]
-        :param product_names: 修改资源层级为云产品时的云产品的取值，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。多个云产品则用“;”隔开，如\&quot;SERVICE.BMS,instance_id;SYS.ECS,instance_id\&quot;。
+        :param product_names: **参数解释** 资源层级为云产品时的云产品名称 **约束限制** 不涉及。 **取值范围** 一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。多个云产品则用“;”隔开，如\&quot;SERVICE.BMS,instance_id;SYS.ECS,instance_id\&quot;。不超过10240个字符。 **默认取值** 不涉及。
         :type product_names: str
         :param comb_relation: 
         :type comb_relation: :class:`huaweicloudsdkces.v2.CombRelation`
@@ -84,7 +84,7 @@ class PutResourceGroupReq:
     def group_name(self):
         r"""Gets the group_name of this PutResourceGroupReq.
 
-        资源分组名称，只能为字母、数字、汉字、-、_，最大长度为128
+        **参数解释** 资源分组名称。 **约束限制** 不涉及。 **取值范围** 包含字母、数字、_、-或汉字，长度为[1,128]个字符。 **默认取值** 不涉及。
 
         :return: The group_name of this PutResourceGroupReq.
         :rtype: str
@@ -95,7 +95,7 @@ class PutResourceGroupReq:
     def group_name(self, group_name):
         r"""Sets the group_name of this PutResourceGroupReq.
 
-        资源分组名称，只能为字母、数字、汉字、-、_，最大长度为128
+        **参数解释** 资源分组名称。 **约束限制** 不涉及。 **取值范围** 包含字母、数字、_、-或汉字，长度为[1,128]个字符。 **默认取值** 不涉及。
 
         :param group_name: The group_name of this PutResourceGroupReq.
         :type group_name: str
@@ -106,7 +106,7 @@ class PutResourceGroupReq:
     def tags(self):
         r"""Gets the tags of this PutResourceGroupReq.
 
-        标签动态匹配时的关联标签,type为TAG时该字段不为空
+        **参数解释** 标签动态匹配时的关联标签。 **约束限制** type为TAG时必传，不超过50个标签。
 
         :return: The tags of this PutResourceGroupReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
@@ -117,7 +117,7 @@ class PutResourceGroupReq:
     def tags(self, tags):
         r"""Sets the tags of this PutResourceGroupReq.
 
-        标签动态匹配时的关联标签,type为TAG时该字段不为空
+        **参数解释** 标签动态匹配时的关联标签。 **约束限制** type为TAG时必传，不超过50个标签。
 
         :param tags: The tags of this PutResourceGroupReq.
         :type tags: list[:class:`huaweicloudsdkces.v2.ResourceGroupTagRelation`]
@@ -128,7 +128,7 @@ class PutResourceGroupReq:
     def enterprise_project_id_and_tags(self):
         r"""Gets the enterprise_project_id_and_tags of this PutResourceGroupReq.
 
-        资源匹配规则为组合匹配时传入的参数
+        **参数解释** 资源匹配规则为组合匹配时传入的参数，已废弃。 **约束限制** type为COMB时传入，不超过50个条件。
 
         :return: The enterprise_project_id_and_tags of this PutResourceGroupReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]
@@ -139,7 +139,7 @@ class PutResourceGroupReq:
     def enterprise_project_id_and_tags(self, enterprise_project_id_and_tags):
         r"""Sets the enterprise_project_id_and_tags of this PutResourceGroupReq.
 
-        资源匹配规则为组合匹配时传入的参数
+        **参数解释** 资源匹配规则为组合匹配时传入的参数，已废弃。 **约束限制** type为COMB时传入，不超过50个条件。
 
         :param enterprise_project_id_and_tags: The enterprise_project_id_and_tags of this PutResourceGroupReq.
         :type enterprise_project_id_and_tags: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]
@@ -150,7 +150,7 @@ class PutResourceGroupReq:
     def extend_relation_ids(self):
         r"""Gets the extend_relation_ids of this PutResourceGroupReq.
 
-        智能添加时企业项目匹配传入参数
+        **参数解释** 匹配企业项目时关联的企业项目ID。 **约束限制** type为EPS时必传，不超过50个企业项目。
 
         :return: The extend_relation_ids of this PutResourceGroupReq.
         :rtype: list[str]
@@ -161,7 +161,7 @@ class PutResourceGroupReq:
     def extend_relation_ids(self, extend_relation_ids):
         r"""Sets the extend_relation_ids of this PutResourceGroupReq.
 
-        智能添加时企业项目匹配传入参数
+        **参数解释** 匹配企业项目时关联的企业项目ID。 **约束限制** type为EPS时必传，不超过50个企业项目。
 
         :param extend_relation_ids: The extend_relation_ids of this PutResourceGroupReq.
         :type extend_relation_ids: list[str]
@@ -172,7 +172,7 @@ class PutResourceGroupReq:
     def instances(self):
         r"""Gets the instances of this PutResourceGroupReq.
 
-        实例名称匹配参数
+        **参数解释** 实例名称匹配参数。 **约束限制** type为NAME时必传，不超过50个实例。 
 
         :return: The instances of this PutResourceGroupReq.
         :rtype: list[:class:`huaweicloudsdkces.v2.Instance`]
@@ -183,7 +183,7 @@ class PutResourceGroupReq:
     def instances(self, instances):
         r"""Sets the instances of this PutResourceGroupReq.
 
-        实例名称匹配参数
+        **参数解释** 实例名称匹配参数。 **约束限制** type为NAME时必传，不超过50个实例。 
 
         :param instances: The instances of this PutResourceGroupReq.
         :type instances: list[:class:`huaweicloudsdkces.v2.Instance`]
@@ -194,7 +194,7 @@ class PutResourceGroupReq:
     def product_names(self):
         r"""Gets the product_names of this PutResourceGroupReq.
 
-        修改资源层级为云产品时的云产品的取值，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。
+        **参数解释** 资源层级为云产品时的云产品名称 **约束限制** 不涉及。 **取值范围** 一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。不超过10240个字符。 **默认取值** 不涉及。
 
         :return: The product_names of this PutResourceGroupReq.
         :rtype: str
@@ -205,7 +205,7 @@ class PutResourceGroupReq:
     def product_names(self, product_names):
         r"""Sets the product_names of this PutResourceGroupReq.
 
-        修改资源层级为云产品时的云产品的取值，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。
+        **参数解释** 资源层级为云产品时的云产品名称 **约束限制** 不涉及。 **取值范围** 一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。多个云产品则用“;”隔开，如\"SERVICE.BMS,instance_id;SYS.ECS,instance_id\"。不超过10240个字符。 **默认取值** 不涉及。
 
         :param product_names: The product_names of this PutResourceGroupReq.
         :type product_names: str

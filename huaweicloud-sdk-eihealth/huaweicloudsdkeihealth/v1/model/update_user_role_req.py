@@ -15,7 +15,7 @@ class UpdateUserRoleReq:
     sensitive_list = []
 
     openapi_types = {
-        'role': 'UserRole'
+        'role': 'str'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class UpdateUserRoleReq:
         The model defined in huaweicloud sdk
 
         :param role: 
-        :type role: :class:`huaweicloudsdkeihealth.v1.UserRole`
+        :type role: str
         """
         
         
@@ -43,7 +43,7 @@ class UpdateUserRoleReq:
         r"""Gets the role of this UpdateUserRoleReq.
 
         :return: The role of this UpdateUserRoleReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.UserRole`
+        :rtype: str
         """
         return self._role
 
@@ -52,7 +52,7 @@ class UpdateUserRoleReq:
         r"""Sets the role of this UpdateUserRoleReq.
 
         :param role: The role of this UpdateUserRoleReq.
-        :type role: :class:`huaweicloudsdkeihealth.v1.UserRole`
+        :type role: str
         """
         self._role = role
 

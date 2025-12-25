@@ -39,7 +39,7 @@ class ShowDatabaseAuthorityRequest:
 
         :param cluster_id: **参数解释**： 集群ID。获取方法请参见[获取集群ID](dws_02_00068.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type cluster_id: str
-        :param type: **参数解释**： 对象类型。 **约束限制**： 不涉及。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP **默认取值**： 不涉及。
+        :param type: **参数解释**： 对象类型。 **取值范围**： - DATABASE：数据库。 - SCHEMA：模式。 - TABLE：表。 - VIEW：视图。 - COLUMN：列。 - FUNCTION：函数。 - SEQUENCE：序列。 - NODEGROUP：节点组。
         :type type: str
         :param name: **参数解释**： 对象名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type name: list[str]
@@ -96,7 +96,7 @@ class ShowDatabaseAuthorityRequest:
     def type(self):
         r"""Gets the type of this ShowDatabaseAuthorityRequest.
 
-        **参数解释**： 对象类型。 **约束限制**： 不涉及。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP **默认取值**： 不涉及。
+        **参数解释**： 对象类型。 **取值范围**： - DATABASE：数据库。 - SCHEMA：模式。 - TABLE：表。 - VIEW：视图。 - COLUMN：列。 - FUNCTION：函数。 - SEQUENCE：序列。 - NODEGROUP：节点组。
 
         :return: The type of this ShowDatabaseAuthorityRequest.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowDatabaseAuthorityRequest:
     def type(self, type):
         r"""Sets the type of this ShowDatabaseAuthorityRequest.
 
-        **参数解释**： 对象类型。 **约束限制**： 不涉及。 **取值范围**： DATABASE、SCHEMA、TABLE、VIEW、COLUMN、FUNCTION、SEQUENCE、NODEGROUP **默认取值**： 不涉及。
+        **参数解释**： 对象类型。 **取值范围**： - DATABASE：数据库。 - SCHEMA：模式。 - TABLE：表。 - VIEW：视图。 - COLUMN：列。 - FUNCTION：函数。 - SEQUENCE：序列。 - NODEGROUP：节点组。
 
         :param type: The type of this ShowDatabaseAuthorityRequest.
         :type type: str

@@ -73,7 +73,7 @@ class V2CreateCluster:
         :type flavor: str
         :param num_cn: **参数解释**： 集群CN数量。 **约束限制**： 不涉及。 **取值范围**： 取值范围为2~集群节点数，最大值为20，默认值为3。 **默认取值**： 不涉及。
         :type num_cn: int
-        :param num_node: **参数解释**： 集群节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
+        :param num_node: **参数解释**： 集群节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256。 **默认取值**： 不涉及。
         :type num_node: int
         :param db_name: **参数解释**： 管理员用户名称。 **约束限制**： 不涉及。 **取值范围**： 只能由小写字母、数字或下划线组成。 必须由小写字母或下划线开头。 长度为1~63个字符。 用户名不能为DWS数据库的关键字。 **默认取值**： 不涉及。
         :type db_name: str
@@ -238,7 +238,7 @@ class V2CreateCluster:
     def num_node(self):
         r"""Gets the num_node of this V2CreateCluster.
 
-        **参数解释**： 集群节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
+        **参数解释**： 集群节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256。 **默认取值**： 不涉及。
 
         :return: The num_node of this V2CreateCluster.
         :rtype: int
@@ -249,7 +249,7 @@ class V2CreateCluster:
     def num_node(self, num_node):
         r"""Sets the num_node of this V2CreateCluster.
 
-        **参数解释**： 集群节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
+        **参数解释**： 集群节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256。 **默认取值**： 不涉及。
 
         :param num_node: The num_node of this V2CreateCluster.
         :type num_node: int

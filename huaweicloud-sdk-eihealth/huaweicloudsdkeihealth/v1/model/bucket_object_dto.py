@@ -17,7 +17,7 @@ class BucketObjectDto:
     openapi_types = {
         'path': 'str',
         'name': 'str',
-        'type': 'PathType',
+        'type': 'str',
         'size': 'int',
         'create_time': 'str'
     }
@@ -40,7 +40,7 @@ class BucketObjectDto:
         :param name: 名称
         :type name: str
         :param type: 
-        :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
+        :type type: str
         :param size: 大小
         :type size: int
         :param create_time: 创建时间
@@ -116,7 +116,7 @@ class BucketObjectDto:
         r"""Gets the type of this BucketObjectDto.
 
         :return: The type of this BucketObjectDto.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
+        :rtype: str
         """
         return self._type
 
@@ -125,7 +125,7 @@ class BucketObjectDto:
         r"""Sets the type of this BucketObjectDto.
 
         :param type: The type of this BucketObjectDto.
-        :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
+        :type type: str
         """
         self._type = type
 

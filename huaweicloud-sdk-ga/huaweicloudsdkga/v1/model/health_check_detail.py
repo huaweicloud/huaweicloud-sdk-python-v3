@@ -17,8 +17,8 @@ class HealthCheckDetail:
     openapi_types = {
         'id': 'str',
         'endpoint_group_id': 'str',
-        'protocol': 'HealthCheckProtocol',
-        'status': 'ConfigStatus',
+        'protocol': 'str',
+        'status': 'str',
         'port': 'int',
         'interval': 'int',
         'timeout': 'int',
@@ -55,10 +55,10 @@ class HealthCheckDetail:
         :type id: str
         :param endpoint_group_id: 终端节点组ID。
         :type endpoint_group_id: str
-        :param protocol: 
-        :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
-        :param status: 
-        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :param protocol: 监听的网络传输协议类型。 取值范围：TCP、UDP
+        :type protocol: str
+        :param status: 配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+        :type status: str
         :param port: 健康检查的端口。
         :type port: int
         :param interval: 健康检查的时间间隔，单位为秒。
@@ -171,8 +171,10 @@ class HealthCheckDetail:
     def protocol(self):
         r"""Gets the protocol of this HealthCheckDetail.
 
+        监听的网络传输协议类型。 取值范围：TCP、UDP
+
         :return: The protocol of this HealthCheckDetail.
-        :rtype: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
+        :rtype: str
         """
         return self._protocol
 
@@ -180,8 +182,10 @@ class HealthCheckDetail:
     def protocol(self, protocol):
         r"""Sets the protocol of this HealthCheckDetail.
 
+        监听的网络传输协议类型。 取值范围：TCP、UDP
+
         :param protocol: The protocol of this HealthCheckDetail.
-        :type protocol: :class:`huaweicloudsdkga.v1.HealthCheckProtocol`
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -189,8 +193,10 @@ class HealthCheckDetail:
     def status(self):
         r"""Gets the status of this HealthCheckDetail.
 
+        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+
         :return: The status of this HealthCheckDetail.
-        :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :rtype: str
         """
         return self._status
 
@@ -198,8 +204,10 @@ class HealthCheckDetail:
     def status(self, status):
         r"""Sets the status of this HealthCheckDetail.
 
+        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+
         :param status: The status of this HealthCheckDetail.
-        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :type status: str
         """
         self._status = status
 

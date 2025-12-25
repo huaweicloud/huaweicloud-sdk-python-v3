@@ -53,7 +53,7 @@ class LogicalClusterPlanVo:
         :type node_num: int
         :param plan_type: **参数解释**： 逻辑集群增删计划类型，取值范围为 (once|periodicity)，表示单次或周期性。 **取值范围**： 不涉及。
         :type plan_type: str
-        :param status: **参数解释**： 逻辑集群增删计划状态。 **取值范围**： running：运行中 waiting：等待中 deleted：已删除 finished：已完成 disabled：已禁用 failed：失败
+        :param status: **参数解释**： 逻辑集群增删计划状态。 **取值范围**： - running：运行中。 - waiting：等待中。 - deleted：已删除。 - finished：已完成。 - disabled：已禁用。 - failed：失败。
         :type status: str
         :param start_time: **参数解释**： 逻辑集群增删计划开始时间。 **取值范围**： 不涉及。
         :type start_time: str
@@ -194,7 +194,7 @@ class LogicalClusterPlanVo:
     def status(self):
         r"""Gets the status of this LogicalClusterPlanVo.
 
-        **参数解释**： 逻辑集群增删计划状态。 **取值范围**： running：运行中 waiting：等待中 deleted：已删除 finished：已完成 disabled：已禁用 failed：失败
+        **参数解释**： 逻辑集群增删计划状态。 **取值范围**： - running：运行中。 - waiting：等待中。 - deleted：已删除。 - finished：已完成。 - disabled：已禁用。 - failed：失败。
 
         :return: The status of this LogicalClusterPlanVo.
         :rtype: str
@@ -205,7 +205,7 @@ class LogicalClusterPlanVo:
     def status(self, status):
         r"""Sets the status of this LogicalClusterPlanVo.
 
-        **参数解释**： 逻辑集群增删计划状态。 **取值范围**： running：运行中 waiting：等待中 deleted：已删除 finished：已完成 disabled：已禁用 failed：失败
+        **参数解释**： 逻辑集群增删计划状态。 **取值范围**： - running：运行中。 - waiting：等待中。 - deleted：已删除。 - finished：已完成。 - disabled：已禁用。 - failed：失败。
 
         :param status: The status of this LogicalClusterPlanVo.
         :type status: str

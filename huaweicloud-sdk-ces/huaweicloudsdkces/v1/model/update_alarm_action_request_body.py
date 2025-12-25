@@ -27,7 +27,7 @@ class UpdateAlarmActionRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_enabled: 告警是否启用。true：启动。false：停止
+        :param alarm_enabled: **参数解释**： 告警是否启用 **约束限制**： 不涉及 **取值范围**： - true：开启告警 - false：关闭告警 **默认取值**： 不涉及 
         :type alarm_enabled: bool
         """
         
@@ -42,7 +42,7 @@ class UpdateAlarmActionRequestBody:
     def alarm_enabled(self):
         r"""Gets the alarm_enabled of this UpdateAlarmActionRequestBody.
 
-        告警是否启用。true：启动。false：停止
+        **参数解释**： 告警是否启用 **约束限制**： 不涉及 **取值范围**： - true：开启告警 - false：关闭告警 **默认取值**： 不涉及 
 
         :return: The alarm_enabled of this UpdateAlarmActionRequestBody.
         :rtype: bool
@@ -53,7 +53,7 @@ class UpdateAlarmActionRequestBody:
     def alarm_enabled(self, alarm_enabled):
         r"""Sets the alarm_enabled of this UpdateAlarmActionRequestBody.
 
-        告警是否启用。true：启动。false：停止
+        **参数解释**： 告警是否启用 **约束限制**： 不涉及 **取值范围**： - true：开启告警 - false：关闭告警 **默认取值**： 不涉及 
 
         :param alarm_enabled: The alarm_enabled of this UpdateAlarmActionRequestBody.
         :type alarm_enabled: bool

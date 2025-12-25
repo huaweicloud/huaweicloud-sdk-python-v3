@@ -45,7 +45,7 @@ class DssPool:
         :type id: str
         :param name: **参数解释**： 专属分布式存储池ID。 **取值范围**： 不涉及。
         :type name: str
-        :param type: **参数解释**： 专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 专属分布式存储池的存储类型。 **取值范围**： - SSD：超高IO专属分布式存储池。
         :type type: str
         :param project_id: **参数解释**： 项目ID。获取方法请参见[获取项目ID](dws_02_0011.xml)。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type project_id: str
@@ -53,7 +53,7 @@ class DssPool:
         :type availability_zone: str
         :param capacity: **参数解释**： 申请的专属分布式存储容量，单位TB。 **取值范围**： 不涉及。
         :type capacity: int
-        :param status: **参数解释**： 专属分布式存储池的状态。 **取值范围**： available：专属分布式存储池处于可用状态。 deploying：专属分布式存储池处于正在部署的过程中，不可使用。 extending：专属分布式存储池处于正在扩容的过程中，可使用。
+        :param status: **参数解释**： 专属分布式存储池的状态。 **取值范围**： - available：专属分布式存储池处于可用状态。 - deploying：专属分布式存储池处于正在部署的过程中，不可使用。 - extending：专属分布式存储池处于正在扩容的过程中，可使用。
         :type status: str
         :param created_at: **参数解释**： 专属分布式存储池的创建时间。 **取值范围**： 时间格式：UTC YYYY-MM-DDTHH:MM:SS
         :type created_at: str
@@ -128,7 +128,7 @@ class DssPool:
     def type(self):
         r"""Gets the type of this DssPool.
 
-        **参数解释**： 专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。 **取值范围**： 不涉及。
+        **参数解释**： 专属分布式存储池的存储类型。 **取值范围**： - SSD：超高IO专属分布式存储池。
 
         :return: The type of this DssPool.
         :rtype: str
@@ -139,7 +139,7 @@ class DssPool:
     def type(self, type):
         r"""Sets the type of this DssPool.
 
-        **参数解释**： 专属分布式存储池的存储类型。 - SSD：超高IO专属分布式存储池。 **取值范围**： 不涉及。
+        **参数解释**： 专属分布式存储池的存储类型。 **取值范围**： - SSD：超高IO专属分布式存储池。
 
         :param type: The type of this DssPool.
         :type type: str
@@ -216,7 +216,7 @@ class DssPool:
     def status(self):
         r"""Gets the status of this DssPool.
 
-        **参数解释**： 专属分布式存储池的状态。 **取值范围**： available：专属分布式存储池处于可用状态。 deploying：专属分布式存储池处于正在部署的过程中，不可使用。 extending：专属分布式存储池处于正在扩容的过程中，可使用。
+        **参数解释**： 专属分布式存储池的状态。 **取值范围**： - available：专属分布式存储池处于可用状态。 - deploying：专属分布式存储池处于正在部署的过程中，不可使用。 - extending：专属分布式存储池处于正在扩容的过程中，可使用。
 
         :return: The status of this DssPool.
         :rtype: str
@@ -227,7 +227,7 @@ class DssPool:
     def status(self, status):
         r"""Sets the status of this DssPool.
 
-        **参数解释**： 专属分布式存储池的状态。 **取值范围**： available：专属分布式存储池处于可用状态。 deploying：专属分布式存储池处于正在部署的过程中，不可使用。 extending：专属分布式存储池处于正在扩容的过程中，可使用。
+        **参数解释**： 专属分布式存储池的状态。 **取值范围**： - available：专属分布式存储池处于可用状态。 - deploying：专属分布式存储池处于正在部署的过程中，不可使用。 - extending：专属分布式存储池处于正在扩容的过程中，可使用。
 
         :param status: The status of this DssPool.
         :type status: str

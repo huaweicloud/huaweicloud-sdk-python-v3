@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AppTypeEnum:
-    """
-    allowed enum values
-    """
-    SESSION_DESKTOP_APP = "SESSION_DESKTOP_APP"
-    COMMON_APP = "COMMON_APP"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

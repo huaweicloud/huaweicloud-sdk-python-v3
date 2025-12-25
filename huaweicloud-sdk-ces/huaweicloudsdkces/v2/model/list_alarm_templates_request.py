@@ -39,19 +39,19 @@ class ListAlarmTemplatesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 分页查询时查询的起始位置，表示从第几条数据开始，默认为0
+        :param offset: **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
         :type offset: int
-        :param limit: 查询结果条数的限制值，取值范围为[1,100]，默认值为100
+        :param limit: **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
         :type limit: int
-        :param namespace: 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
         :type namespace: str
-        :param dim_name: 资源维度，必须以字母开头，多维度用\&quot;,\&quot;分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
+        :param dim_name: **参数解释**： 资源维度名称。 **约束限制**： 不涉及。 **取值范围**： 多维度用\&quot;,\&quot;分割，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。 **默认取值**： 不涉及。 
         :type dim_name: str
-        :param template_type: 模板类型(system代表默认指标模板，custom代表自定义指标模板，system_event代表默认事件模板，custom_event代表自定义事件模板，system_custom_event代表全部事件模板),不传返回全部指标模板
+        :param template_type: **参数解释**： 模板类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - system：默认指标模板。 - custom： 自定义指标模板。    - system_event： 默认事件模板。 - custom_event： 自定义事件模板。    - system_custom_event： 全部事件模板。     **默认取值**： 不传返回全部指标模板。 
         :type template_type: str
         :param template_name: 告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]，支持模糊匹配
         :type template_name: str
-        :param product_name: （已废弃）支持按照产品名称粒度进行查询告警模板，产品名称一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;
+        :param product_name: **参数解释**： 产品层级跨维规则创建时需要指明的规则产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。          **默认取值**： 不涉及。 
         :type product_name: str
         """
         
@@ -85,7 +85,7 @@ class ListAlarmTemplatesRequest:
     def offset(self):
         r"""Gets the offset of this ListAlarmTemplatesRequest.
 
-        分页查询时查询的起始位置，表示从第几条数据开始，默认为0
+        **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
 
         :return: The offset of this ListAlarmTemplatesRequest.
         :rtype: int
@@ -96,7 +96,7 @@ class ListAlarmTemplatesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAlarmTemplatesRequest.
 
-        分页查询时查询的起始位置，表示从第几条数据开始，默认为0
+        **参数解释**： 分页偏移量 **约束限制**： 不涉及 **取值范围**： 整数，[0,10000] **默认取值**： 0 
 
         :param offset: The offset of this ListAlarmTemplatesRequest.
         :type offset: int
@@ -107,7 +107,7 @@ class ListAlarmTemplatesRequest:
     def limit(self):
         r"""Gets the limit of this ListAlarmTemplatesRequest.
 
-        查询结果条数的限制值，取值范围为[1,100]，默认值为100
+        **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
 
         :return: The limit of this ListAlarmTemplatesRequest.
         :rtype: int
@@ -118,7 +118,7 @@ class ListAlarmTemplatesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAlarmTemplatesRequest.
 
-        查询结果条数的限制值，取值范围为[1,100]，默认值为100
+        **参数解释**： 分页大小 **约束限制**： 不涉及 **取值范围**： 整数，[1,100] **默认取值**： 100 
 
         :param limit: The limit of this ListAlarmTemplatesRequest.
         :type limit: int
@@ -129,7 +129,7 @@ class ListAlarmTemplatesRequest:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmTemplatesRequest.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
 
         :return: The namespace of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -140,7 +140,7 @@ class ListAlarmTemplatesRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmTemplatesRequest.
 
-        查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
 
         :param namespace: The namespace of this ListAlarmTemplatesRequest.
         :type namespace: str
@@ -151,7 +151,7 @@ class ListAlarmTemplatesRequest:
     def dim_name(self):
         r"""Gets the dim_name of this ListAlarmTemplatesRequest.
 
-        资源维度，必须以字母开头，多维度用\",\"分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
+        **参数解释**： 资源维度名称。 **约束限制**： 不涉及。 **取值范围**： 多维度用\",\"分割，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。 **默认取值**： 不涉及。 
 
         :return: The dim_name of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class ListAlarmTemplatesRequest:
     def dim_name(self, dim_name):
         r"""Sets the dim_name of this ListAlarmTemplatesRequest.
 
-        资源维度，必须以字母开头，多维度用\",\"分隔，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
+        **参数解释**： 资源维度名称。 **约束限制**： 不涉及。 **取值范围**： 多维度用\",\"分割，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。 **默认取值**： 不涉及。 
 
         :param dim_name: The dim_name of this ListAlarmTemplatesRequest.
         :type dim_name: str
@@ -173,7 +173,7 @@ class ListAlarmTemplatesRequest:
     def template_type(self):
         r"""Gets the template_type of this ListAlarmTemplatesRequest.
 
-        模板类型(system代表默认指标模板，custom代表自定义指标模板，system_event代表默认事件模板，custom_event代表自定义事件模板，system_custom_event代表全部事件模板),不传返回全部指标模板
+        **参数解释**： 模板类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - system：默认指标模板。 - custom： 自定义指标模板。    - system_event： 默认事件模板。 - custom_event： 自定义事件模板。    - system_custom_event： 全部事件模板。     **默认取值**： 不传返回全部指标模板。 
 
         :return: The template_type of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -184,7 +184,7 @@ class ListAlarmTemplatesRequest:
     def template_type(self, template_type):
         r"""Sets the template_type of this ListAlarmTemplatesRequest.
 
-        模板类型(system代表默认指标模板，custom代表自定义指标模板，system_event代表默认事件模板，custom_event代表自定义事件模板，system_custom_event代表全部事件模板),不传返回全部指标模板
+        **参数解释**： 模板类型。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - system：默认指标模板。 - custom： 自定义指标模板。    - system_event： 默认事件模板。 - custom_event： 自定义事件模板。    - system_custom_event： 全部事件模板。     **默认取值**： 不传返回全部指标模板。 
 
         :param template_type: The template_type of this ListAlarmTemplatesRequest.
         :type template_type: str
@@ -217,7 +217,7 @@ class ListAlarmTemplatesRequest:
     def product_name(self):
         r"""Gets the product_name of this ListAlarmTemplatesRequest.
 
-        （已废弃）支持按照产品名称粒度进行查询告警模板，产品名称一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+        **参数解释**： 产品层级跨维规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。          **默认取值**： 不涉及。 
 
         :return: The product_name of this ListAlarmTemplatesRequest.
         :rtype: str
@@ -228,7 +228,7 @@ class ListAlarmTemplatesRequest:
     def product_name(self, product_name):
         r"""Sets the product_name of this ListAlarmTemplatesRequest.
 
-        （已废弃）支持按照产品名称粒度进行查询告警模板，产品名称一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"
+        **参数解释**： 产品层级跨维规则创建时需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **约束限制**： 不涉及。 **取值范围**： 长度为[0,128]个字符。          **默认取值**： 不涉及。 
 
         :param product_name: The product_name of this ListAlarmTemplatesRequest.
         :type product_name: str

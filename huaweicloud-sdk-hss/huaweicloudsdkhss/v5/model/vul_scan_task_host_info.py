@@ -41,21 +41,21 @@ class VulScanTaskHostInfo:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机ID
+        :param host_id: **参数解释**: 主机ID **取值范围**: 字符长度1-128位 
         :type host_id: str
-        :param host_name: 主机名称
+        :param host_name: **参数解释**: 主机名称 **取值范围**: 字符长度0-128位 
         :type host_name: str
-        :param public_ip: 弹性公网IP地址
+        :param public_ip: **参数解释**: 弹性公网IP地址 **取值范围**: 字符长度0-128位 
         :type public_ip: str
-        :param private_ip: 私有IP地址
+        :param private_ip: **参数解释**: 私有IP地址 **取值范围**: 字符长度0-128位 
         :type private_ip: str
-        :param asset_value: 资产重要性，包含如下:   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        :param asset_value: **参数解释**: 主机的资产重要性 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产 
         :type asset_value: str
-        :param scan_status: 主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
+        :param scan_status: **参数解释**: 主机的扫描状态 **取值范围**: - scanning：扫描中 - success：扫描成功 - failed：扫描失败 
         :type scan_status: str
-        :param failed_reasons: 扫描失败的原因列表
+        :param failed_reasons: **参数解释**: 漏洞扫描失败的原因列表（即将废弃，建议使用“vul_scan_details”字段） **取值范围**: 最小值0，最大值2147483647 
         :type failed_reasons: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoFailedReasons`]
-        :param vul_scan_details: 该主机的扫描详情信息
+        :param vul_scan_details: **参数解释**: 该主机的扫描详情信息列表 **取值范围**: 最小值0，最大值2147483647 
         :type vul_scan_details: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoVulScanDetails`]
         """
         
@@ -92,7 +92,7 @@ class VulScanTaskHostInfo:
     def host_id(self):
         r"""Gets the host_id of this VulScanTaskHostInfo.
 
-        主机ID
+        **参数解释**: 主机ID **取值范围**: 字符长度1-128位 
 
         :return: The host_id of this VulScanTaskHostInfo.
         :rtype: str
@@ -103,7 +103,7 @@ class VulScanTaskHostInfo:
     def host_id(self, host_id):
         r"""Sets the host_id of this VulScanTaskHostInfo.
 
-        主机ID
+        **参数解释**: 主机ID **取值范围**: 字符长度1-128位 
 
         :param host_id: The host_id of this VulScanTaskHostInfo.
         :type host_id: str
@@ -114,7 +114,7 @@ class VulScanTaskHostInfo:
     def host_name(self):
         r"""Gets the host_name of this VulScanTaskHostInfo.
 
-        主机名称
+        **参数解释**: 主机名称 **取值范围**: 字符长度0-128位 
 
         :return: The host_name of this VulScanTaskHostInfo.
         :rtype: str
@@ -125,7 +125,7 @@ class VulScanTaskHostInfo:
     def host_name(self, host_name):
         r"""Sets the host_name of this VulScanTaskHostInfo.
 
-        主机名称
+        **参数解释**: 主机名称 **取值范围**: 字符长度0-128位 
 
         :param host_name: The host_name of this VulScanTaskHostInfo.
         :type host_name: str
@@ -136,7 +136,7 @@ class VulScanTaskHostInfo:
     def public_ip(self):
         r"""Gets the public_ip of this VulScanTaskHostInfo.
 
-        弹性公网IP地址
+        **参数解释**: 弹性公网IP地址 **取值范围**: 字符长度0-128位 
 
         :return: The public_ip of this VulScanTaskHostInfo.
         :rtype: str
@@ -147,7 +147,7 @@ class VulScanTaskHostInfo:
     def public_ip(self, public_ip):
         r"""Sets the public_ip of this VulScanTaskHostInfo.
 
-        弹性公网IP地址
+        **参数解释**: 弹性公网IP地址 **取值范围**: 字符长度0-128位 
 
         :param public_ip: The public_ip of this VulScanTaskHostInfo.
         :type public_ip: str
@@ -158,7 +158,7 @@ class VulScanTaskHostInfo:
     def private_ip(self):
         r"""Gets the private_ip of this VulScanTaskHostInfo.
 
-        私有IP地址
+        **参数解释**: 私有IP地址 **取值范围**: 字符长度0-128位 
 
         :return: The private_ip of this VulScanTaskHostInfo.
         :rtype: str
@@ -169,7 +169,7 @@ class VulScanTaskHostInfo:
     def private_ip(self, private_ip):
         r"""Sets the private_ip of this VulScanTaskHostInfo.
 
-        私有IP地址
+        **参数解释**: 私有IP地址 **取值范围**: 字符长度0-128位 
 
         :param private_ip: The private_ip of this VulScanTaskHostInfo.
         :type private_ip: str
@@ -180,7 +180,7 @@ class VulScanTaskHostInfo:
     def asset_value(self):
         r"""Gets the asset_value of this VulScanTaskHostInfo.
 
-        资产重要性，包含如下:   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**: 主机的资产重要性 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产 
 
         :return: The asset_value of this VulScanTaskHostInfo.
         :rtype: str
@@ -191,7 +191,7 @@ class VulScanTaskHostInfo:
     def asset_value(self, asset_value):
         r"""Sets the asset_value of this VulScanTaskHostInfo.
 
-        资产重要性，包含如下:   - important ：重要资产   - common ：一般资产   - test ：测试资产
+        **参数解释**: 主机的资产重要性 **取值范围**: - important：重要资产 - common：一般资产 - test：测试资产 
 
         :param asset_value: The asset_value of this VulScanTaskHostInfo.
         :type asset_value: str
@@ -202,7 +202,7 @@ class VulScanTaskHostInfo:
     def scan_status(self):
         r"""Gets the scan_status of this VulScanTaskHostInfo.
 
-        主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
+        **参数解释**: 主机的扫描状态 **取值范围**: - scanning：扫描中 - success：扫描成功 - failed：扫描失败 
 
         :return: The scan_status of this VulScanTaskHostInfo.
         :rtype: str
@@ -213,7 +213,7 @@ class VulScanTaskHostInfo:
     def scan_status(self, scan_status):
         r"""Sets the scan_status of this VulScanTaskHostInfo.
 
-        主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
+        **参数解释**: 主机的扫描状态 **取值范围**: - scanning：扫描中 - success：扫描成功 - failed：扫描失败 
 
         :param scan_status: The scan_status of this VulScanTaskHostInfo.
         :type scan_status: str
@@ -224,7 +224,7 @@ class VulScanTaskHostInfo:
     def failed_reasons(self):
         r"""Gets the failed_reasons of this VulScanTaskHostInfo.
 
-        扫描失败的原因列表
+        **参数解释**: 漏洞扫描失败的原因列表（即将废弃，建议使用“vul_scan_details”字段） **取值范围**: 最小值0，最大值2147483647 
 
         :return: The failed_reasons of this VulScanTaskHostInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoFailedReasons`]
@@ -235,7 +235,7 @@ class VulScanTaskHostInfo:
     def failed_reasons(self, failed_reasons):
         r"""Sets the failed_reasons of this VulScanTaskHostInfo.
 
-        扫描失败的原因列表
+        **参数解释**: 漏洞扫描失败的原因列表（即将废弃，建议使用“vul_scan_details”字段） **取值范围**: 最小值0，最大值2147483647 
 
         :param failed_reasons: The failed_reasons of this VulScanTaskHostInfo.
         :type failed_reasons: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoFailedReasons`]
@@ -246,7 +246,7 @@ class VulScanTaskHostInfo:
     def vul_scan_details(self):
         r"""Gets the vul_scan_details of this VulScanTaskHostInfo.
 
-        该主机的扫描详情信息
+        **参数解释**: 该主机的扫描详情信息列表 **取值范围**: 最小值0，最大值2147483647 
 
         :return: The vul_scan_details of this VulScanTaskHostInfo.
         :rtype: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoVulScanDetails`]
@@ -257,7 +257,7 @@ class VulScanTaskHostInfo:
     def vul_scan_details(self, vul_scan_details):
         r"""Sets the vul_scan_details of this VulScanTaskHostInfo.
 
-        该主机的扫描详情信息
+        **参数解释**: 该主机的扫描详情信息列表 **取值范围**: 最小值0，最大值2147483647 
 
         :param vul_scan_details: The vul_scan_details of this VulScanTaskHostInfo.
         :type vul_scan_details: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoVulScanDetails`]

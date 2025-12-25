@@ -16,17 +16,15 @@ class UpdateClusterSpec:
 
     openapi_types = {
         'country': 'str',
-        'city': 'str',
-        'worker_config': 'WorkerConfig'
+        'city': 'str'
     }
 
     attribute_map = {
         'country': 'country',
-        'city': 'city',
-        'worker_config': 'workerConfig'
+        'city': 'city'
     }
 
-    def __init__(self, country=None, city=None, worker_config=None):
+    def __init__(self, country=None, city=None):
         r"""UpdateClusterSpec
 
         The model defined in huaweicloud sdk
@@ -35,23 +33,18 @@ class UpdateClusterSpec:
         :type country: str
         :param city: 集群所在城市信息
         :type city: str
-        :param worker_config: 
-        :type worker_config: :class:`huaweicloudsdkucs.v1.WorkerConfig`
         """
         
         
 
         self._country = None
         self._city = None
-        self._worker_config = None
         self.discriminator = None
 
         if country is not None:
             self.country = country
         if city is not None:
             self.city = city
-        if worker_config is not None:
-            self.worker_config = worker_config
 
     @property
     def country(self):
@@ -96,24 +89,6 @@ class UpdateClusterSpec:
         :type city: str
         """
         self._city = city
-
-    @property
-    def worker_config(self):
-        r"""Gets the worker_config of this UpdateClusterSpec.
-
-        :return: The worker_config of this UpdateClusterSpec.
-        :rtype: :class:`huaweicloudsdkucs.v1.WorkerConfig`
-        """
-        return self._worker_config
-
-    @worker_config.setter
-    def worker_config(self, worker_config):
-        r"""Sets the worker_config of this UpdateClusterSpec.
-
-        :param worker_config: The worker_config of this UpdateClusterSpec.
-        :type worker_config: :class:`huaweicloudsdkucs.v1.WorkerConfig`
-        """
-        self._worker_config = worker_config
 
     def to_dict(self):
         result = {}

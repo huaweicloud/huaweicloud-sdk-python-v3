@@ -16,7 +16,7 @@ class ShowResultResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'request_status': 'RequestStatus',
+        'request_status': 'str',
         'tasks': 'list[TaskModel]',
         'request_type': 'str'
     }
@@ -32,8 +32,8 @@ class ShowResultResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param request_status: 
-        :type request_status: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
+        :param request_status: An enumeration. - created - dispatched - completed - timeout - unknown
+        :type request_status: str
         :param tasks: task list
         :type tasks: list[:class:`huaweicloudsdkcloudide.v2.TaskModel`]
         :param request_type: the type of the request
@@ -58,8 +58,10 @@ class ShowResultResponse(SdkResponse):
     def request_status(self):
         r"""Gets the request_status of this ShowResultResponse.
 
+        An enumeration. - created - dispatched - completed - timeout - unknown
+
         :return: The request_status of this ShowResultResponse.
-        :rtype: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
+        :rtype: str
         """
         return self._request_status
 
@@ -67,8 +69,10 @@ class ShowResultResponse(SdkResponse):
     def request_status(self, request_status):
         r"""Sets the request_status of this ShowResultResponse.
 
+        An enumeration. - created - dispatched - completed - timeout - unknown
+
         :param request_status: The request_status of this ShowResultResponse.
-        :type request_status: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
+        :type request_status: str
         """
         self._request_status = request_status
 

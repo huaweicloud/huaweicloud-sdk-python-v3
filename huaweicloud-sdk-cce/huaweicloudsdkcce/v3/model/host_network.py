@@ -18,17 +18,19 @@ class HostNetwork:
         'vpc': 'str',
         'subnet': 'str',
         'security_group': 'str',
-        'control_plane_security_group': 'str'
+        'control_plane_security_group': 'str',
+        'auto_generate_security_group_hardening_config': 'AutoGenerateSecurityGroupHardeningConfigSpec'
     }
 
     attribute_map = {
         'vpc': 'vpc',
         'subnet': 'subnet',
         'security_group': 'SecurityGroup',
-        'control_plane_security_group': 'controlPlaneSecurityGroup'
+        'control_plane_security_group': 'controlPlaneSecurityGroup',
+        'auto_generate_security_group_hardening_config': 'autoGenerateSecurityGroupHardeningConfig'
     }
 
-    def __init__(self, vpc=None, subnet=None, security_group=None, control_plane_security_group=None):
+    def __init__(self, vpc=None, subnet=None, security_group=None, control_plane_security_group=None, auto_generate_security_group_hardening_config=None):
         r"""HostNetwork
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class HostNetwork:
         :type security_group: str
         :param control_plane_security_group: **参数解释：** 集群控制面节点安全组ID。 **约束限制：** 创建成功后自动生成，填写无效。 **取值范围：** 不涉及 **默认取值：** 不涉及 
         :type control_plane_security_group: str
+        :param auto_generate_security_group_hardening_config: 
+        :type auto_generate_security_group_hardening_config: :class:`huaweicloudsdkcce.v3.AutoGenerateSecurityGroupHardeningConfigSpec`
         """
         
         
@@ -49,6 +53,7 @@ class HostNetwork:
         self._subnet = None
         self._security_group = None
         self._control_plane_security_group = None
+        self._auto_generate_security_group_hardening_config = None
         self.discriminator = None
 
         self.vpc = vpc
@@ -57,6 +62,8 @@ class HostNetwork:
             self.security_group = security_group
         if control_plane_security_group is not None:
             self.control_plane_security_group = control_plane_security_group
+        if auto_generate_security_group_hardening_config is not None:
+            self.auto_generate_security_group_hardening_config = auto_generate_security_group_hardening_config
 
     @property
     def vpc(self):
@@ -145,6 +152,24 @@ class HostNetwork:
         :type control_plane_security_group: str
         """
         self._control_plane_security_group = control_plane_security_group
+
+    @property
+    def auto_generate_security_group_hardening_config(self):
+        r"""Gets the auto_generate_security_group_hardening_config of this HostNetwork.
+
+        :return: The auto_generate_security_group_hardening_config of this HostNetwork.
+        :rtype: :class:`huaweicloudsdkcce.v3.AutoGenerateSecurityGroupHardeningConfigSpec`
+        """
+        return self._auto_generate_security_group_hardening_config
+
+    @auto_generate_security_group_hardening_config.setter
+    def auto_generate_security_group_hardening_config(self, auto_generate_security_group_hardening_config):
+        r"""Sets the auto_generate_security_group_hardening_config of this HostNetwork.
+
+        :param auto_generate_security_group_hardening_config: The auto_generate_security_group_hardening_config of this HostNetwork.
+        :type auto_generate_security_group_hardening_config: :class:`huaweicloudsdkcce.v3.AutoGenerateSecurityGroupHardeningConfigSpec`
+        """
+        self._auto_generate_security_group_hardening_config = auto_generate_security_group_hardening_config
 
     def to_dict(self):
         result = {}

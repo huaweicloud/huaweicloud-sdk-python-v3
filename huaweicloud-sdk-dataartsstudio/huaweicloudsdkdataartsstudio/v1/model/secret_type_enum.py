@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class SecretTypeEnum:
-    """
-    allowed enum values
-    """
-    PUBLIC = "PUBLIC"
-    SECRET = "SECRET"
-    CONFIDENTIAL = "CONFIDENTIAL"
-    SUPER_SECRET = "SUPER_SECRET"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

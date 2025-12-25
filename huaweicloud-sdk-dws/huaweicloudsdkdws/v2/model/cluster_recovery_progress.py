@@ -37,7 +37,7 @@ class ClusterRecoveryProgress:
 
         :param key: **参数解释**： 本次备份恢复ID。 **取值范围**： 不涉及。
         :type key: str
-        :param action_type: **参数解释**： 动作类型。 **取值范围**： 不涉及。
+        :param action_type: **参数解释**： - Backup，备份。 - Restore，恢复。 **取值范围**： 不涉及。
         :type action_type: str
         :param unrestore_keys: **参数解释**： 待恢复的备份集ID。 **取值范围**： 不涉及。
         :type unrestore_keys: str
@@ -93,7 +93,7 @@ class ClusterRecoveryProgress:
     def action_type(self):
         r"""Gets the action_type of this ClusterRecoveryProgress.
 
-        **参数解释**： 动作类型。 **取值范围**： 不涉及。
+        **参数解释**： - Backup，备份。 - Restore，恢复。 **取值范围**： 不涉及。
 
         :return: The action_type of this ClusterRecoveryProgress.
         :rtype: str
@@ -104,7 +104,7 @@ class ClusterRecoveryProgress:
     def action_type(self, action_type):
         r"""Sets the action_type of this ClusterRecoveryProgress.
 
-        **参数解释**： 动作类型。 **取值范围**： 不涉及。
+        **参数解释**： - Backup，备份。 - Restore，恢复。 **取值范围**： 不涉及。
 
         :param action_type: The action_type of this ClusterRecoveryProgress.
         :type action_type: str

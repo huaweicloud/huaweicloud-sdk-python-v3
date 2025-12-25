@@ -19,8 +19,8 @@ class WarehouseApp:
         'app_id': 'str',
         'tenant_id': 'str',
         'app_name': 'str',
-        'app_category': 'AppCategoryEnum',
-        'os_type': 'OsTypeEnum',
+        'app_category': 'str',
+        'os_type': 'str',
         'version_id': 'str',
         'version_name': 'str',
         'appfile_store_path': 'str',
@@ -30,7 +30,7 @@ class WarehouseApp:
         'create_time': 'datetime',
         'modify_time': 'datetime',
         'verify_time': 'datetime',
-        'verify_status': 'VerifyStatusEnum',
+        'verify_status': 'str',
         'verify_comment': 'str',
         'app_icon': 'str',
         'app_extended_info': 'AppExtendedInfo'
@@ -71,10 +71,10 @@ class WarehouseApp:
         :type tenant_id: str
         :param app_name: 应用名称。
         :type app_name: str
-        :param app_category: 
-        :type app_category: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
-        :param os_type: 
-        :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
+        :param app_category: 应用分类： * &#x60;GAME&#x60; - 游戏 * &#x60;BUSSINESS_INTELLIGENCE&#x60; - 商业智能 * &#x60;SECURE_STORAGE&#x60; - 安全与存储 * &#x60;MULTIMEDIA_AND_CODING&#x60; - 多媒体与编解码 * &#x60;PROJECT_MANAGEMENT&#x60; - 项目管理 * &#x60;PRODUCTIVITY_AND_COLLABORATION&#x60; - 生产力与协作 * &#x60;WEB_ADN_APPLICATION&#x60; - 网页与应用开发 * &#x60;GRAPHIC_DESIGN&#x60; - 图形设计 * &#x60;OTHER&#x60; - 其它
+        :type app_category: str
+        :param os_type: 系统类型，当前仅支持Windows。 * &#x60;Linux&#x60; - * &#x60;Windows&#x60; - * &#x60;Other&#x60; -
+        :type os_type: str
         :param version_id: 版本号。
         :type version_id: str
         :param version_name: 版本名称。
@@ -93,8 +93,8 @@ class WarehouseApp:
         :type modify_time: datetime
         :param verify_time: 应用审核时间。
         :type verify_time: datetime
-        :param verify_status: 
-        :type verify_status: :class:`huaweicloudsdkworkspaceapp.v1.VerifyStatusEnum`
+        :param verify_status: 审核状态： * &#x60;VERIFYING&#x60; - 审核中 * &#x60;VERIFY_PASS&#x60; - 审核通过 * &#x60;Verify_FAIL&#x60; - 审核不通过
+        :type verify_status: str
         :param verify_comment: 审核的评论意见。
         :type verify_comment: str
         :param app_icon: app的图标文件。
@@ -257,8 +257,10 @@ class WarehouseApp:
     def app_category(self):
         r"""Gets the app_category of this WarehouseApp.
 
+        应用分类： * `GAME` - 游戏 * `BUSSINESS_INTELLIGENCE` - 商业智能 * `SECURE_STORAGE` - 安全与存储 * `MULTIMEDIA_AND_CODING` - 多媒体与编解码 * `PROJECT_MANAGEMENT` - 项目管理 * `PRODUCTIVITY_AND_COLLABORATION` - 生产力与协作 * `WEB_ADN_APPLICATION` - 网页与应用开发 * `GRAPHIC_DESIGN` - 图形设计 * `OTHER` - 其它
+
         :return: The app_category of this WarehouseApp.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
+        :rtype: str
         """
         return self._app_category
 
@@ -266,8 +268,10 @@ class WarehouseApp:
     def app_category(self, app_category):
         r"""Sets the app_category of this WarehouseApp.
 
+        应用分类： * `GAME` - 游戏 * `BUSSINESS_INTELLIGENCE` - 商业智能 * `SECURE_STORAGE` - 安全与存储 * `MULTIMEDIA_AND_CODING` - 多媒体与编解码 * `PROJECT_MANAGEMENT` - 项目管理 * `PRODUCTIVITY_AND_COLLABORATION` - 生产力与协作 * `WEB_ADN_APPLICATION` - 网页与应用开发 * `GRAPHIC_DESIGN` - 图形设计 * `OTHER` - 其它
+
         :param app_category: The app_category of this WarehouseApp.
-        :type app_category: :class:`huaweicloudsdkworkspaceapp.v1.AppCategoryEnum`
+        :type app_category: str
         """
         self._app_category = app_category
 
@@ -275,8 +279,10 @@ class WarehouseApp:
     def os_type(self):
         r"""Gets the os_type of this WarehouseApp.
 
+        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
+
         :return: The os_type of this WarehouseApp.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
+        :rtype: str
         """
         return self._os_type
 
@@ -284,8 +290,10 @@ class WarehouseApp:
     def os_type(self, os_type):
         r"""Sets the os_type of this WarehouseApp.
 
+        系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
+
         :param os_type: The os_type of this WarehouseApp.
-        :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -491,8 +499,10 @@ class WarehouseApp:
     def verify_status(self):
         r"""Gets the verify_status of this WarehouseApp.
 
+        审核状态： * `VERIFYING` - 审核中 * `VERIFY_PASS` - 审核通过 * `Verify_FAIL` - 审核不通过
+
         :return: The verify_status of this WarehouseApp.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VerifyStatusEnum`
+        :rtype: str
         """
         return self._verify_status
 
@@ -500,8 +510,10 @@ class WarehouseApp:
     def verify_status(self, verify_status):
         r"""Sets the verify_status of this WarehouseApp.
 
+        审核状态： * `VERIFYING` - 审核中 * `VERIFY_PASS` - 审核通过 * `Verify_FAIL` - 审核不通过
+
         :param verify_status: The verify_status of this WarehouseApp.
-        :type verify_status: :class:`huaweicloudsdkworkspaceapp.v1.VerifyStatusEnum`
+        :type verify_status: str
         """
         self._verify_status = verify_status
 

@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ResourceType:
-    """
-    allowed enum values
-    """
-    GA_ACCELERATORS = "ga-accelerators"
-    GA_LISTENERS = "ga-listeners"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

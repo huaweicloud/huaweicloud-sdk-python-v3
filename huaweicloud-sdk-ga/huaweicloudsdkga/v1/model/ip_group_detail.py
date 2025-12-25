@@ -18,7 +18,7 @@ class IpGroupDetail:
         'id': 'str',
         'name': 'str',
         'description': 'str',
-        'status': 'ConfigStatus',
+        'status': 'str',
         'ip_list': 'list[IpInfo]',
         'associated_listeners': 'list[ListenerAccessControlPolicy]',
         'created_at': 'datetime',
@@ -47,8 +47,8 @@ class IpGroupDetail:
         :type name: str
         :param description: IP地址组描述。
         :type description: str
-        :param status: 
-        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :param status: 配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+        :type status: str
         :param ip_list: IP地址组中的IP网段列表。
         :type ip_list: list[:class:`huaweicloudsdkga.v1.IpInfo`]
         :param associated_listeners: 
@@ -158,8 +158,10 @@ class IpGroupDetail:
     def status(self):
         r"""Gets the status of this IpGroupDetail.
 
+        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+
         :return: The status of this IpGroupDetail.
-        :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :rtype: str
         """
         return self._status
 
@@ -167,8 +169,10 @@ class IpGroupDetail:
     def status(self, status):
         r"""Sets the status of this IpGroupDetail.
 
+        配置状态，取值： - ACTIVE：运行中 - PENDING：待定 - ERROR：错误 - DELETING：正在删除
+
         :param status: The status of this IpGroupDetail.
-        :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
+        :type status: str
         """
         self._status = status
 

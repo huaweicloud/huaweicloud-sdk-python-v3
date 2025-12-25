@@ -29,7 +29,7 @@ class AlarmHistoryItemV2AlarmActions:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 通知类型。 **取值范围**： 枚举值。notification为通知组或者主题订阅，contact为云账号联系人，contactGroup为（已废弃）通知组。autoscaling为AS通知，只在AS中使用，不推荐客户使用。groupwatch、ecsRecovery及iecAction，已废弃，不推荐使用。 
+        :param type: **参数解释**： 通知类型。 **取值范围**： 枚举值。 - notification：通知组或主题订阅。 - contact：云账号联系人。 - contactGroup：（已废弃）通知组。 - autoscaling：AS通知，只在AS中使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 
         :type type: str
         :param notification_list: **参数解释**： 告警状态发生变化时，被通知对象的列表。topicUrn可从SMN获取，具体操作请参考查询Topic列表。 
         :type notification_list: list[str]
@@ -50,7 +50,7 @@ class AlarmHistoryItemV2AlarmActions:
     def type(self):
         r"""Gets the type of this AlarmHistoryItemV2AlarmActions.
 
-        **参数解释**： 通知类型。 **取值范围**： 枚举值。notification为通知组或者主题订阅，contact为云账号联系人，contactGroup为（已废弃）通知组。autoscaling为AS通知，只在AS中使用，不推荐客户使用。groupwatch、ecsRecovery及iecAction，已废弃，不推荐使用。 
+        **参数解释**： 通知类型。 **取值范围**： 枚举值。 - notification：通知组或主题订阅。 - contact：云账号联系人。 - contactGroup：（已废弃）通知组。 - autoscaling：AS通知，只在AS中使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 
 
         :return: The type of this AlarmHistoryItemV2AlarmActions.
         :rtype: str
@@ -61,7 +61,7 @@ class AlarmHistoryItemV2AlarmActions:
     def type(self, type):
         r"""Sets the type of this AlarmHistoryItemV2AlarmActions.
 
-        **参数解释**： 通知类型。 **取值范围**： 枚举值。notification为通知组或者主题订阅，contact为云账号联系人，contactGroup为（已废弃）通知组。autoscaling为AS通知，只在AS中使用，不推荐客户使用。groupwatch、ecsRecovery及iecAction，已废弃，不推荐使用。 
+        **参数解释**： 通知类型。 **取值范围**： 枚举值。 - notification：通知组或主题订阅。 - contact：云账号联系人。 - contactGroup：（已废弃）通知组。 - autoscaling：AS通知，只在AS中使用。 - groupwatch：已废弃，不推荐使用。 - ecsRecovery：已废弃，不推荐使用。 - iecAction：已废弃，不推荐使用。 
 
         :param type: The type of this AlarmHistoryItemV2AlarmActions.
         :type type: str

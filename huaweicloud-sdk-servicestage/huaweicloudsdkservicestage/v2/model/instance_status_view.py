@@ -15,10 +15,10 @@ class InstanceStatusView:
     sensitive_list = []
 
     openapi_types = {
-        'status': 'InstanceStatusType',
+        'status': 'str',
         'available_replica': 'int',
         'replica': 'int',
-        'fail_detail': 'InstanceFailDetail',
+        'fail_detail': 'str',
         'last_job_id': 'str',
         'last_job_status': 'str',
         'enterprise_project_id': 'str'
@@ -39,14 +39,14 @@ class InstanceStatusView:
 
         The model defined in huaweicloud sdk
 
-        :param status: 
-        :type status: :class:`huaweicloudsdkservicestage.v2.InstanceStatusType`
+        :param status: 实例状态。
+        :type status: str
         :param available_replica: 正常实例副本数。
         :type available_replica: int
         :param replica: 实例副本数。
         :type replica: int
-        :param fail_detail: 
-        :type fail_detail: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
+        :param fail_detail: 失败描述。  cluster_deleted,        // 集群被删除  cluster_unavailable,    // 集群不可用  cluster_inaccessible,   // 集群无法访问  namespace_deleted,      // 命名空间被删除  namespace_unavailable,  // 命名空间不可用  namespace_inaccessible, // 命名空间无法访问  resource_deleted,       // 资源已删除 
+        :type fail_detail: str
         :param last_job_id: 最近Job ID。
         :type last_job_id: str
         :param last_job_status: 最近Job的状态
@@ -85,8 +85,10 @@ class InstanceStatusView:
     def status(self):
         r"""Gets the status of this InstanceStatusView.
 
+        实例状态。
+
         :return: The status of this InstanceStatusView.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceStatusType`
+        :rtype: str
         """
         return self._status
 
@@ -94,8 +96,10 @@ class InstanceStatusView:
     def status(self, status):
         r"""Sets the status of this InstanceStatusView.
 
+        实例状态。
+
         :param status: The status of this InstanceStatusView.
-        :type status: :class:`huaweicloudsdkservicestage.v2.InstanceStatusType`
+        :type status: str
         """
         self._status = status
 
@@ -147,8 +151,10 @@ class InstanceStatusView:
     def fail_detail(self):
         r"""Gets the fail_detail of this InstanceStatusView.
 
+        失败描述。  cluster_deleted,        // 集群被删除  cluster_unavailable,    // 集群不可用  cluster_inaccessible,   // 集群无法访问  namespace_deleted,      // 命名空间被删除  namespace_unavailable,  // 命名空间不可用  namespace_inaccessible, // 命名空间无法访问  resource_deleted,       // 资源已删除 
+
         :return: The fail_detail of this InstanceStatusView.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
+        :rtype: str
         """
         return self._fail_detail
 
@@ -156,8 +162,10 @@ class InstanceStatusView:
     def fail_detail(self, fail_detail):
         r"""Sets the fail_detail of this InstanceStatusView.
 
+        失败描述。  cluster_deleted,        // 集群被删除  cluster_unavailable,    // 集群不可用  cluster_inaccessible,   // 集群无法访问  namespace_deleted,      // 命名空间被删除  namespace_unavailable,  // 命名空间不可用  namespace_inaccessible, // 命名空间无法访问  resource_deleted,       // 资源已删除 
+
         :param fail_detail: The fail_detail of this InstanceStatusView.
-        :type fail_detail: :class:`huaweicloudsdkservicestage.v2.InstanceFailDetail`
+        :type fail_detail: str
         """
         self._fail_detail = fail_detail
 

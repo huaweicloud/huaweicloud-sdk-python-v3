@@ -19,9 +19,9 @@ class ListAlarmRespBodyAlarms:
         'name': 'str',
         'description': 'str',
         'namespace': 'str',
-        'policies': 'list[Policy]',
+        'policies': 'list[PolicyResp]',
         'resources': 'list[ResourcesInListResp]',
-        'type': 'AlarmTypeResp',
+        'type': 'str',
         'enabled': 'bool',
         'notification_enabled': 'bool',
         'alarm_notifications': 'list[NotificationResp]',
@@ -33,7 +33,7 @@ class ListAlarmRespBodyAlarms:
         'alarm_template_id': 'str',
         'product_name': 'str',
         'resource_level': 'str',
-        'tags': 'list[ResourceTag]'
+        'tags': 'list[ResourceTagResp]'
     }
 
     attribute_map = {
@@ -65,18 +65,18 @@ class ListAlarmRespBodyAlarms:
 
         :param alarm_id: **参数解释**： 告警规则id。如 al123232232341232132 **取值范围**： 以al开头，后跟22个数字或字母。长度为24个字符。 
         :type alarm_id: str
-        :param name: **参数解释**： 告警名称。     **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。 
+        :param name: **参数解释**： 告警规则名称。     **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。 
         :type name: str
         :param description: **参数解释**： 告警描述。     **取值范围**： 长度为[0,256]个字符。 
         :type description: str
         :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名名称](ces_03_0059.xml)”。    **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度为[0,32]个字符。 
         :type namespace: str
         :param policies: **参数解释**： 告警策略 **取值范围**： 最多包含100个策略。 
-        :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
-        :param resources: **参数解释**： 资源列表，关联资源需要使用查询告警规则资源接口获取。 **取值范围**： 最多支持3000个资源。 
+        :type policies: list[:class:`huaweicloudsdkces.v2.PolicyResp`]
+        :param resources: **参数解释**： 资源列表，关联资源需要使用查询“[告警规则资源接口](.xml)”获取。 **取值范围**： 最多支持3000个资源。 
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
-        :param type: 
-        :type type: :class:`huaweicloudsdkces.v2.AlarmTypeResp`
+        :param type: **参数解释**： 告警规则类型 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 
+        :type type: str
         :param enabled: **参数解释**： 是否开启告警规则。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
         :type enabled: bool
         :param notification_enabled: **参数解释**： 是否开启告警通知。     **取值范围**： 布尔值。 - true:开启。 - false:关闭。 
@@ -85,22 +85,22 @@ class ListAlarmRespBodyAlarms:
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
         :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.NotificationResp`]
-        :param notification_begin_time: **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        :param notification_begin_time: **参数解释**： 告警通知开启时间。如 00:00    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
         :type notification_begin_time: str
-        :param notification_end_time: **参数解释**： 告警通知关闭时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        :param notification_end_time: **参数解释**： 告警通知关闭时间。如 08:00   **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
         :type notification_end_time: str
         :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **取值范围**： 长度为[1,16]个字符。 
         :type effective_timezone: str
-        :param enterprise_project_id: **参数解释**： 企业项目ID。     **取值范围**： 只能包含小写字母、数字、“-”。 
+        :param enterprise_project_id: **参数解释**： 企业项目ID。     **取值范围**： 只能包含小写字母、数字、“-”。0 代表默认企业项目ID 
         :type enterprise_project_id: str
-        :param alarm_template_id: **参数解释**： 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化。     **取值范围**： 以at开头，只包含字母、数字，长度为[2,64]个字符。 
+        :param alarm_template_id: **参数解释**： 告警规则关联告警模板ID     **取值范围**： 以at开头，只包含字母、数字，长度为[2,64]个字符。 
         :type alarm_template_id: str
-        :param product_name: **参数解释**： 产品层级跨维规则需要指明的规则产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。 **取值范围**: 长度为[0,128]个字符。 
+        :param product_name: **参数解释**： 当资源层级为云产品时的云产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。 **取值范围**: 长度为[0,128]个字符。 
         :type product_name: str
-        :param resource_level: **参数解释**： 产品层级跨维规则需要指明为产品层级规则，resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。 **取值范围**: 枚举值。 - product：云产品。 - dimension：子维度。 
+        :param resource_level: **参数解释**： 资源层级。 **取值范围**: 枚举值。 - product：云产品。 - dimension：子维度。 
         :type resource_level: str
         :param tags: **参数解释**： 租户标签列表 **取值范围**: 最多支持20个标签。 
-        :type tags: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
+        :type tags: list[:class:`huaweicloudsdkces.v2.ResourceTagResp`]
         """
         
         
@@ -191,7 +191,7 @@ class ListAlarmRespBodyAlarms:
     def name(self):
         r"""Gets the name of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警名称。     **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。 
+        **参数解释**： 告警规则名称。     **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。 
 
         :return: The name of this ListAlarmRespBodyAlarms.
         :rtype: str
@@ -202,7 +202,7 @@ class ListAlarmRespBodyAlarms:
     def name(self, name):
         r"""Sets the name of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警名称。     **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。 
+        **参数解释**： 告警规则名称。     **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1，128]个字符。 
 
         :param name: The name of this ListAlarmRespBodyAlarms.
         :type name: str
@@ -260,7 +260,7 @@ class ListAlarmRespBodyAlarms:
         **参数解释**： 告警策略 **取值范围**： 最多包含100个策略。 
 
         :return: The policies of this ListAlarmRespBodyAlarms.
-        :rtype: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.PolicyResp`]
         """
         return self._policies
 
@@ -271,7 +271,7 @@ class ListAlarmRespBodyAlarms:
         **参数解释**： 告警策略 **取值范围**： 最多包含100个策略。 
 
         :param policies: The policies of this ListAlarmRespBodyAlarms.
-        :type policies: list[:class:`huaweicloudsdkces.v2.Policy`]
+        :type policies: list[:class:`huaweicloudsdkces.v2.PolicyResp`]
         """
         self._policies = policies
 
@@ -279,7 +279,7 @@ class ListAlarmRespBodyAlarms:
     def resources(self):
         r"""Gets the resources of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 资源列表，关联资源需要使用查询告警规则资源接口获取。 **取值范围**： 最多支持3000个资源。 
+        **参数解释**： 资源列表，关联资源需要使用查询“[告警规则资源接口](.xml)”获取。 **取值范围**： 最多支持3000个资源。 
 
         :return: The resources of this ListAlarmRespBodyAlarms.
         :rtype: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
@@ -290,7 +290,7 @@ class ListAlarmRespBodyAlarms:
     def resources(self, resources):
         r"""Sets the resources of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 资源列表，关联资源需要使用查询告警规则资源接口获取。 **取值范围**： 最多支持3000个资源。 
+        **参数解释**： 资源列表，关联资源需要使用查询“[告警规则资源接口](.xml)”获取。 **取值范围**： 最多支持3000个资源。 
 
         :param resources: The resources of this ListAlarmRespBodyAlarms.
         :type resources: list[:class:`huaweicloudsdkces.v2.ResourcesInListResp`]
@@ -301,8 +301,10 @@ class ListAlarmRespBodyAlarms:
     def type(self):
         r"""Gets the type of this ListAlarmRespBodyAlarms.
 
+        **参数解释**： 告警规则类型 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 
+
         :return: The type of this ListAlarmRespBodyAlarms.
-        :rtype: :class:`huaweicloudsdkces.v2.AlarmTypeResp`
+        :rtype: str
         """
         return self._type
 
@@ -310,8 +312,10 @@ class ListAlarmRespBodyAlarms:
     def type(self, type):
         r"""Sets the type of this ListAlarmRespBodyAlarms.
 
+        **参数解释**： 告警规则类型 **取值范围**： 枚举值。 - ALL_INSTANCE：针对全部资源的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE：针对指定资源的告警规则。 - EVENT.SYS：系统事件告警规则。 - EVENT.CUSTOM：自定义事件告警规则。 - DNSHealthCheck：健康检查告警规则。 
+
         :param type: The type of this ListAlarmRespBodyAlarms.
-        :type type: :class:`huaweicloudsdkces.v2.AlarmTypeResp`
+        :type type: str
         """
         self._type = type
 
@@ -407,7 +411,7 @@ class ListAlarmRespBodyAlarms:
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        **参数解释**： 告警通知开启时间。如 00:00    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :return: The notification_begin_time of this ListAlarmRespBodyAlarms.
         :rtype: str
@@ -418,7 +422,7 @@ class ListAlarmRespBodyAlarms:
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警通知开启时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        **参数解释**： 告警通知开启时间。如 00:00    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :param notification_begin_time: The notification_begin_time of this ListAlarmRespBodyAlarms.
         :type notification_begin_time: str
@@ -429,7 +433,7 @@ class ListAlarmRespBodyAlarms:
     def notification_end_time(self):
         r"""Gets the notification_end_time of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警通知关闭时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        **参数解释**： 告警通知关闭时间。如 08:00   **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :return: The notification_end_time of this ListAlarmRespBodyAlarms.
         :rtype: str
@@ -440,7 +444,7 @@ class ListAlarmRespBodyAlarms:
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警通知关闭时间。    **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
+        **参数解释**： 告警通知关闭时间。如 08:00   **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 
 
         :param notification_end_time: The notification_end_time of this ListAlarmRespBodyAlarms.
         :type notification_end_time: str
@@ -473,7 +477,7 @@ class ListAlarmRespBodyAlarms:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 企业项目ID。     **取值范围**： 只能包含小写字母、数字、“-”。 
+        **参数解释**： 企业项目ID。     **取值范围**： 只能包含小写字母、数字、“-”。0 代表默认企业项目ID 
 
         :return: The enterprise_project_id of this ListAlarmRespBodyAlarms.
         :rtype: str
@@ -484,7 +488,7 @@ class ListAlarmRespBodyAlarms:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 企业项目ID。     **取值范围**： 只能包含小写字母、数字、“-”。 
+        **参数解释**： 企业项目ID。     **取值范围**： 只能包含小写字母、数字、“-”。0 代表默认企业项目ID 
 
         :param enterprise_project_id: The enterprise_project_id of this ListAlarmRespBodyAlarms.
         :type enterprise_project_id: str
@@ -495,7 +499,7 @@ class ListAlarmRespBodyAlarms:
     def alarm_template_id(self):
         r"""Gets the alarm_template_id of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化。     **取值范围**： 以at开头，只包含字母、数字，长度为[2,64]个字符。 
+        **参数解释**： 告警规则关联告警模板ID     **取值范围**： 以at开头，只包含字母、数字，长度为[2,64]个字符。 
 
         :return: The alarm_template_id of this ListAlarmRespBodyAlarms.
         :rtype: str
@@ -506,7 +510,7 @@ class ListAlarmRespBodyAlarms:
     def alarm_template_id(self, alarm_template_id):
         r"""Sets the alarm_template_id of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 告警规则关联告警模板ID，如果传了，告警规则关联的策略会和告警模板策略联动变化。     **取值范围**： 以at开头，只包含字母、数字，长度为[2,64]个字符。 
+        **参数解释**： 告警规则关联告警模板ID     **取值范围**： 以at开头，只包含字母、数字，长度为[2,64]个字符。 
 
         :param alarm_template_id: The alarm_template_id of this ListAlarmRespBodyAlarms.
         :type alarm_template_id: str
@@ -517,7 +521,7 @@ class ListAlarmRespBodyAlarms:
     def product_name(self):
         r"""Gets the product_name of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 产品层级跨维规则需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **取值范围**: 长度为[0,128]个字符。 
+        **参数解释**： 当资源层级为云产品时的云产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **取值范围**: 长度为[0,128]个字符。 
 
         :return: The product_name of this ListAlarmRespBodyAlarms.
         :rtype: str
@@ -528,7 +532,7 @@ class ListAlarmRespBodyAlarms:
     def product_name(self, product_name):
         r"""Sets the product_name of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 产品层级跨维规则需要指明的规则产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **取值范围**: 长度为[0,128]个字符。 
+        **参数解释**： 当资源层级为云产品时的云产品名称，一般由\"服务命名空间,服务首层维度名称\"组成，如\"SYS.ECS,instance_id\"。 **取值范围**: 长度为[0,128]个字符。 
 
         :param product_name: The product_name of this ListAlarmRespBodyAlarms.
         :type product_name: str
@@ -539,7 +543,7 @@ class ListAlarmRespBodyAlarms:
     def resource_level(self):
         r"""Gets the resource_level of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 产品层级跨维规则需要指明为产品层级规则，resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。 **取值范围**: 枚举值。 - product：云产品。 - dimension：子维度。 
+        **参数解释**： 资源层级。 **取值范围**: 枚举值。 - product：云产品。 - dimension：子维度。 
 
         :return: The resource_level of this ListAlarmRespBodyAlarms.
         :rtype: str
@@ -550,7 +554,7 @@ class ListAlarmRespBodyAlarms:
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this ListAlarmRespBodyAlarms.
 
-        **参数解释**： 产品层级跨维规则需要指明为产品层级规则，resource_level取值为product即为云产品类型，不填或者取值为dimension则为子维度类型。 **取值范围**: 枚举值。 - product：云产品。 - dimension：子维度。 
+        **参数解释**： 资源层级。 **取值范围**: 枚举值。 - product：云产品。 - dimension：子维度。 
 
         :param resource_level: The resource_level of this ListAlarmRespBodyAlarms.
         :type resource_level: str
@@ -564,7 +568,7 @@ class ListAlarmRespBodyAlarms:
         **参数解释**： 租户标签列表 **取值范围**: 最多支持20个标签。 
 
         :return: The tags of this ListAlarmRespBodyAlarms.
-        :rtype: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
+        :rtype: list[:class:`huaweicloudsdkces.v2.ResourceTagResp`]
         """
         return self._tags
 
@@ -575,7 +579,7 @@ class ListAlarmRespBodyAlarms:
         **参数解释**： 租户标签列表 **取值范围**: 最多支持20个标签。 
 
         :param tags: The tags of this ListAlarmRespBodyAlarms.
-        :type tags: list[:class:`huaweicloudsdkces.v2.ResourceTag`]
+        :type tags: list[:class:`huaweicloudsdkces.v2.ResourceTagResp`]
         """
         self._tags = tags
 

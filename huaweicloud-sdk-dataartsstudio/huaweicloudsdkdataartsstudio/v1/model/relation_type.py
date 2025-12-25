@@ -4,13 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class RelationType:
-    """
-    allowed enum values
-    """
-    ONE = "ONE"
-    ZERO_OR_ONE = "ZERO_OR_ONE"
-    ZERO_OR_N = "ZERO_OR_N"
-    ONE_OR_N = "ONE_OR_N"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

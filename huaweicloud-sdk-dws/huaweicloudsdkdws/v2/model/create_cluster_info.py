@@ -53,9 +53,9 @@ class CreateClusterInfo:
 
         The model defined in huaweicloud sdk
 
-        :param node_type: **参数解释**： 节点规格ID，需要通过查询规格接口获取，对应的是接口响应的id字段。 **约束限制**： 不涉及。 **取值范围**： 必须是查询规格信息接口返回的规格ID。 **默认取值**： 不涉及。
+        :param node_type: **参数解释**： 节点规格名称 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
         :type node_type: str
-        :param number_of_node: **参数解释**： 节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
+        :param number_of_node: **参数解释**： 节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256。 **默认取值**： 不涉及。
         :type number_of_node: int
         :param subnet_id: **参数解释**： 指定子网ID，用于集群网络配置。 **约束限制**： 不涉及。 **取值范围**： 必须是虚拟私有云ID下的某个子网。 **默认取值**： 不涉及。
         :type subnet_id: str
@@ -126,7 +126,7 @@ class CreateClusterInfo:
     def node_type(self):
         r"""Gets the node_type of this CreateClusterInfo.
 
-        **参数解释**： 节点规格ID，需要通过查询规格接口获取，对应的是接口响应的id字段。 **约束限制**： 不涉及。 **取值范围**： 必须是查询规格信息接口返回的规格ID。 **默认取值**： 不涉及。
+        **参数解释**： 节点规格名称 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
 
         :return: The node_type of this CreateClusterInfo.
         :rtype: str
@@ -137,7 +137,7 @@ class CreateClusterInfo:
     def node_type(self, node_type):
         r"""Sets the node_type of this CreateClusterInfo.
 
-        **参数解释**： 节点规格ID，需要通过查询规格接口获取，对应的是接口响应的id字段。 **约束限制**： 不涉及。 **取值范围**： 必须是查询规格信息接口返回的规格ID。 **默认取值**： 不涉及。
+        **参数解释**： 节点规格名称 **取值范围**： 集群规格详情请参见[数据仓库规格](dws_01_00018.html)。
 
         :param node_type: The node_type of this CreateClusterInfo.
         :type node_type: str
@@ -148,7 +148,7 @@ class CreateClusterInfo:
     def number_of_node(self):
         r"""Gets the number_of_node of this CreateClusterInfo.
 
-        **参数解释**： 节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
+        **参数解释**： 节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256。 **默认取值**： 不涉及。
 
         :return: The number_of_node of this CreateClusterInfo.
         :rtype: int
@@ -159,7 +159,7 @@ class CreateClusterInfo:
     def number_of_node(self, number_of_node):
         r"""Sets the number_of_node of this CreateClusterInfo.
 
-        **参数解释**： 节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256，实时数仓（单机模式）取值为1。 **默认取值**： 不涉及。
+        **参数解释**： 节点数量。 **约束限制**： 不涉及。 **取值范围**： 集群模式取值范围为3~256。 **默认取值**： 不涉及。
 
         :param number_of_node: The number_of_node of this CreateClusterInfo.
         :type number_of_node: int

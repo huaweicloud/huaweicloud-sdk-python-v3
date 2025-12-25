@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class InstancePlatformType:
-    """
-    allowed enum values
-    """
-    CCE = "cce"
-    VMAPP = "vmapp"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

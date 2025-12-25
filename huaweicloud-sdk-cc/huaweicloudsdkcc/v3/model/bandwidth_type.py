@@ -15,7 +15,7 @@ class BandwidthType:
     sensitive_list = []
 
     openapi_types = {
-        'bandwidth_type': 'BandwidthTypeEnum'
+        'bandwidth_type': 'str'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class BandwidthType:
 
         The model defined in huaweicloud sdk
 
-        :param bandwidth_type: 
-        :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
+        :param bandwidth_type: 带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+        :type bandwidth_type: str
         """
         
         
@@ -42,8 +42,10 @@ class BandwidthType:
     def bandwidth_type(self):
         r"""Gets the bandwidth_type of this BandwidthType.
 
+        带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+
         :return: The bandwidth_type of this BandwidthType.
-        :rtype: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
+        :rtype: str
         """
         return self._bandwidth_type
 
@@ -51,8 +53,10 @@ class BandwidthType:
     def bandwidth_type(self, bandwidth_type):
         r"""Sets the bandwidth_type of this BandwidthType.
 
+        带宽类型包括： - BandwidthPackage (按带宽计费，需要绑定全域互联带宽，并指定分配带宽大小) - TestBandwidth (不收费的测试带宽，仅保留最小带宽，用于测试跨地域连通性）
+
         :param bandwidth_type: The bandwidth_type of this BandwidthType.
-        :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
+        :type bandwidth_type: str
         """
         self._bandwidth_type = bandwidth_type
 

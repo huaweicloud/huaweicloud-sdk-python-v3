@@ -47,7 +47,7 @@ class ListLogicalClusterTasksRequest:
         :type limit: int
         :param logical_cluster_name: **参数解释**： 集群名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type logical_cluster_name: str
-        :param type: **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param type: **参数解释**： 类型。 **取值范围**： - Switch：物理集群转逻辑集群。 - Create：创建。 - Expand：从弹性池中扩容。 - Restart：重启。 - Delete：删除。 - Shrink：缩容到弹性池中。 - Grow：外部扩容 - Start：开机 - Stop：停机 - ShrinkElasticGroup：从弹性池中缩容。 - elasticExpand：自动弹性扩容。
         :type type: str
         :param order_by: **参数解释**： 排序字段。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type order_by: str
@@ -172,7 +172,7 @@ class ListLogicalClusterTasksRequest:
     def type(self):
         r"""Gets the type of this ListLogicalClusterTasksRequest.
 
-        **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 类型。 **取值范围**： - Switch：物理集群转逻辑集群。 - Create：创建。 - Expand：从弹性池中扩容。 - Restart：重启。 - Delete：删除。 - Shrink：缩容到弹性池中。 - Grow：外部扩容 - Start：开机 - Stop：停机 - ShrinkElasticGroup：从弹性池中缩容。 - elasticExpand：自动弹性扩容。
 
         :return: The type of this ListLogicalClusterTasksRequest.
         :rtype: str
@@ -183,7 +183,7 @@ class ListLogicalClusterTasksRequest:
     def type(self, type):
         r"""Sets the type of this ListLogicalClusterTasksRequest.
 
-        **参数解释**： 类型。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 类型。 **取值范围**： - Switch：物理集群转逻辑集群。 - Create：创建。 - Expand：从弹性池中扩容。 - Restart：重启。 - Delete：删除。 - Shrink：缩容到弹性池中。 - Grow：外部扩容 - Start：开机 - Stop：停机 - ShrinkElasticGroup：从弹性池中缩容。 - elasticExpand：自动弹性扩容。
 
         :param type: The type of this ListLogicalClusterTasksRequest.
         :type type: str

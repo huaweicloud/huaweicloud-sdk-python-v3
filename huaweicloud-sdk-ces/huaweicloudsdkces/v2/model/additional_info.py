@@ -31,9 +31,9 @@ class AdditionalInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: **参数解释**： 该条告警记录对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。 **取值范围**： 字符串长度最大为128。 
+        :param resource_id: **参数解释**： 该条告警记录对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。 **取值范围**： 长度为[0,128]个字符。 
         :type resource_id: str
-        :param resource_name: **参数解释**： 该条告警记录对应的资源名称；如：ECS-Test01。 **取值范围**： 字符串长度最大为128。 
+        :param resource_name: **参数解释**： 该条告警记录对应的资源名称；如：ECS-Test01。 **取值范围**： 长度为[0,128]个字符。 
         :type resource_name: str
         :param event_id: **参数解释**： 该条告警记录对应的事件监控ID，资源所产生的事件；如：ev16031292300990kKN8p17J。 **取值范围**： 字符串长度为24。 
         :type event_id: str
@@ -57,7 +57,7 @@ class AdditionalInfo:
     def resource_id(self):
         r"""Gets the resource_id of this AdditionalInfo.
 
-        **参数解释**： 该条告警记录对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。 **取值范围**： 字符串长度最大为128。 
+        **参数解释**： 该条告警记录对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。 **取值范围**： 长度为[0,128]个字符。 
 
         :return: The resource_id of this AdditionalInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class AdditionalInfo:
     def resource_id(self, resource_id):
         r"""Sets the resource_id of this AdditionalInfo.
 
-        **参数解释**： 该条告警记录对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。 **取值范围**： 字符串长度最大为128。 
+        **参数解释**： 该条告警记录对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。 **取值范围**： 长度为[0,128]个字符。 
 
         :param resource_id: The resource_id of this AdditionalInfo.
         :type resource_id: str
@@ -79,7 +79,7 @@ class AdditionalInfo:
     def resource_name(self):
         r"""Gets the resource_name of this AdditionalInfo.
 
-        **参数解释**： 该条告警记录对应的资源名称；如：ECS-Test01。 **取值范围**： 字符串长度最大为128。 
+        **参数解释**： 该条告警记录对应的资源名称；如：ECS-Test01。 **取值范围**： 长度为[0,128]个字符。 
 
         :return: The resource_name of this AdditionalInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class AdditionalInfo:
     def resource_name(self, resource_name):
         r"""Sets the resource_name of this AdditionalInfo.
 
-        **参数解释**： 该条告警记录对应的资源名称；如：ECS-Test01。 **取值范围**： 字符串长度最大为128。 
+        **参数解释**： 该条告警记录对应的资源名称；如：ECS-Test01。 **取值范围**： 长度为[0,128]个字符。 
 
         :param resource_name: The resource_name of this AdditionalInfo.
         :type resource_name: str

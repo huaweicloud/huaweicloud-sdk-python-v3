@@ -23,7 +23,10 @@ class CreatePhotoDigitalHumanVideoReq:
         'output_asset_config': 'OutputAssetConfig',
         'background_music_config': 'BackgroundMusicConfig',
         'review_config': 'ReviewConfig',
-        'callback_config': 'CallBackConfig'
+        'callback_config': 'CallBackConfig',
+        'id_card_image1': 'str',
+        'id_card_image2': 'str',
+        'authorize_use_human_image': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +38,13 @@ class CreatePhotoDigitalHumanVideoReq:
         'output_asset_config': 'output_asset_config',
         'background_music_config': 'background_music_config',
         'review_config': 'review_config',
-        'callback_config': 'callback_config'
+        'callback_config': 'callback_config',
+        'id_card_image1': 'id_card_image1',
+        'id_card_image2': 'id_card_image2',
+        'authorize_use_human_image': 'authorize_use_human_image'
     }
 
-    def __init__(self, script_id=None, human_image=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None, callback_config=None):
+    def __init__(self, script_id=None, human_image=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None, callback_config=None, id_card_image1=None, id_card_image2=None, authorize_use_human_image=None):
         r"""CreatePhotoDigitalHumanVideoReq
 
         The model defined in huaweicloud sdk
@@ -61,6 +67,12 @@ class CreatePhotoDigitalHumanVideoReq:
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
         :param callback_config: 
         :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
+        :param id_card_image1: 身份证国徽面照片，需要Base64编码。
+        :type id_card_image1: str
+        :param id_card_image2: 身份证人像面照片，需要Base64编码。
+        :type id_card_image2: str
+        :param authorize_use_human_image: 授权使用照片
+        :type authorize_use_human_image: bool
         """
         
         
@@ -74,6 +86,9 @@ class CreatePhotoDigitalHumanVideoReq:
         self._background_music_config = None
         self._review_config = None
         self._callback_config = None
+        self._id_card_image1 = None
+        self._id_card_image2 = None
+        self._authorize_use_human_image = None
         self.discriminator = None
 
         if script_id is not None:
@@ -91,6 +106,12 @@ class CreatePhotoDigitalHumanVideoReq:
             self.review_config = review_config
         if callback_config is not None:
             self.callback_config = callback_config
+        if id_card_image1 is not None:
+            self.id_card_image1 = id_card_image1
+        if id_card_image2 is not None:
+            self.id_card_image2 = id_card_image2
+        if authorize_use_human_image is not None:
+            self.authorize_use_human_image = authorize_use_human_image
 
     @property
     def script_id(self):
@@ -265,6 +286,72 @@ class CreatePhotoDigitalHumanVideoReq:
         :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
         """
         self._callback_config = callback_config
+
+    @property
+    def id_card_image1(self):
+        r"""Gets the id_card_image1 of this CreatePhotoDigitalHumanVideoReq.
+
+        身份证国徽面照片，需要Base64编码。
+
+        :return: The id_card_image1 of this CreatePhotoDigitalHumanVideoReq.
+        :rtype: str
+        """
+        return self._id_card_image1
+
+    @id_card_image1.setter
+    def id_card_image1(self, id_card_image1):
+        r"""Sets the id_card_image1 of this CreatePhotoDigitalHumanVideoReq.
+
+        身份证国徽面照片，需要Base64编码。
+
+        :param id_card_image1: The id_card_image1 of this CreatePhotoDigitalHumanVideoReq.
+        :type id_card_image1: str
+        """
+        self._id_card_image1 = id_card_image1
+
+    @property
+    def id_card_image2(self):
+        r"""Gets the id_card_image2 of this CreatePhotoDigitalHumanVideoReq.
+
+        身份证人像面照片，需要Base64编码。
+
+        :return: The id_card_image2 of this CreatePhotoDigitalHumanVideoReq.
+        :rtype: str
+        """
+        return self._id_card_image2
+
+    @id_card_image2.setter
+    def id_card_image2(self, id_card_image2):
+        r"""Sets the id_card_image2 of this CreatePhotoDigitalHumanVideoReq.
+
+        身份证人像面照片，需要Base64编码。
+
+        :param id_card_image2: The id_card_image2 of this CreatePhotoDigitalHumanVideoReq.
+        :type id_card_image2: str
+        """
+        self._id_card_image2 = id_card_image2
+
+    @property
+    def authorize_use_human_image(self):
+        r"""Gets the authorize_use_human_image of this CreatePhotoDigitalHumanVideoReq.
+
+        授权使用照片
+
+        :return: The authorize_use_human_image of this CreatePhotoDigitalHumanVideoReq.
+        :rtype: bool
+        """
+        return self._authorize_use_human_image
+
+    @authorize_use_human_image.setter
+    def authorize_use_human_image(self, authorize_use_human_image):
+        r"""Sets the authorize_use_human_image of this CreatePhotoDigitalHumanVideoReq.
+
+        授权使用照片
+
+        :param authorize_use_human_image: The authorize_use_human_image of this CreatePhotoDigitalHumanVideoReq.
+        :type authorize_use_human_image: bool
+        """
+        self._authorize_use_human_image = authorize_use_human_image
 
     def to_dict(self):
         result = {}

@@ -15,8 +15,8 @@ class SaleCycle:
     sensitive_list = []
 
     openapi_types = {
-        'pay_mode': 'PayMode',
-        'period_type': 'PeriodType',
+        'pay_mode': 'str',
+        'period_type': 'str',
         'period_num': 'int'
     }
 
@@ -31,10 +31,10 @@ class SaleCycle:
 
         The model defined in huaweicloud sdk
 
-        :param pay_mode: 
-        :type pay_mode: :class:`huaweicloudsdkcloudpond.v2.PayMode`
-        :param period_type: 
-        :type period_type: :class:`huaweicloudsdkcloudpond.v2.PeriodType`
+        :param pay_mode: 包周期付款类型 - FULL: 全预付 - HALF：半预付 - PAID_BY_YEAR：按年付费 - ZERO_PAID_BY_YEAR：零预付-按年
+        :type pay_mode: str
+        :param period_type: 包周期类型 - year：包年
+        :type period_type: str
         :param period_num: 周期数量
         :type period_num: int
         """
@@ -57,8 +57,10 @@ class SaleCycle:
     def pay_mode(self):
         r"""Gets the pay_mode of this SaleCycle.
 
+        包周期付款类型 - FULL: 全预付 - HALF：半预付 - PAID_BY_YEAR：按年付费 - ZERO_PAID_BY_YEAR：零预付-按年
+
         :return: The pay_mode of this SaleCycle.
-        :rtype: :class:`huaweicloudsdkcloudpond.v2.PayMode`
+        :rtype: str
         """
         return self._pay_mode
 
@@ -66,8 +68,10 @@ class SaleCycle:
     def pay_mode(self, pay_mode):
         r"""Sets the pay_mode of this SaleCycle.
 
+        包周期付款类型 - FULL: 全预付 - HALF：半预付 - PAID_BY_YEAR：按年付费 - ZERO_PAID_BY_YEAR：零预付-按年
+
         :param pay_mode: The pay_mode of this SaleCycle.
-        :type pay_mode: :class:`huaweicloudsdkcloudpond.v2.PayMode`
+        :type pay_mode: str
         """
         self._pay_mode = pay_mode
 
@@ -75,8 +79,10 @@ class SaleCycle:
     def period_type(self):
         r"""Gets the period_type of this SaleCycle.
 
+        包周期类型 - year：包年
+
         :return: The period_type of this SaleCycle.
-        :rtype: :class:`huaweicloudsdkcloudpond.v2.PeriodType`
+        :rtype: str
         """
         return self._period_type
 
@@ -84,8 +90,10 @@ class SaleCycle:
     def period_type(self, period_type):
         r"""Sets the period_type of this SaleCycle.
 
+        包周期类型 - year：包年
+
         :param period_type: The period_type of this SaleCycle.
-        :type period_type: :class:`huaweicloudsdkcloudpond.v2.PeriodType`
+        :type period_type: str
         """
         self._period_type = period_type
 

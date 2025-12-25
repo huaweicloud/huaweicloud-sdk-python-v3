@@ -4,15 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class LocalAreaIdDef:
-    """
-    allowed enum values
-    """
-    CHINESE_MAINLAND = "Chinese-Mainland"
-    ASIA_PACIFIC = "Asia-Pacific"
-    AFRICA = "Africa"
-    WESTERN_LATIN_AMERICA = "Western-Latin-America"
-    EASTERN_LATIN_AMERICA = "Eastern-Latin-America"
-    NORTHERN_LATIN_AMERICA = "Northern-Latin-America"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

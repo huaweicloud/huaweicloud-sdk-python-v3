@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class OperatorType:
-    """
-    allowed enum values
-    """
-    OR = "or"
-    AND = "and"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

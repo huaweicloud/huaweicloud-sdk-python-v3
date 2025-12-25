@@ -41,7 +41,7 @@ class ImageDetectionReq:
 
         :param event_type: 事件类型。 可选值如下： head_image：头像 album：相册 dynamic：动态 article：帖子 comment：评论 room_cover：房间封面 group_message：群聊图片 message：私聊图片 product：商品图片
         :type event_type: str
-        :param categories: 检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 &gt; 每个检测场景的检测次数会分类统计。
+        :param categories: 检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - politics: 涉政人物的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 &gt; 每个检测场景的检测次数会分类统计。
         :type categories: list[str]
         :param image_text_config: 
         :type image_text_config: :class:`huaweicloudsdkmoderation.v3.ImgTextConfig`
@@ -107,7 +107,7 @@ class ImageDetectionReq:
     def categories(self):
         r"""Gets the categories of this ImageDetectionReq.
 
-        检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 > 每个检测场景的检测次数会分类统计。
+        检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - politics: 涉政人物的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 > 每个检测场景的检测次数会分类统计。
 
         :return: The categories of this ImageDetectionReq.
         :rtype: list[str]
@@ -118,7 +118,7 @@ class ImageDetectionReq:
     def categories(self, categories):
         r"""Sets the categories of this ImageDetectionReq.
 
-        检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 > 每个检测场景的检测次数会分类统计。
+        检测场景。可添加的检测场景如下： - terrorism：暴恐元素的检测。 - porn：涉黄元素的检测。 - image_text：广告图文的检测。 - politics: 涉政人物的检测。 - 可通过配置上述场景，来完对应场景元素的检测。 > 每个检测场景的检测次数会分类统计。
 
         :param categories: The categories of this ImageDetectionReq.
         :type categories: list[str]

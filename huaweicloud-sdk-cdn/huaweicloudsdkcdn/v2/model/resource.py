@@ -31,9 +31,9 @@ class Resource:
 
         The model defined in huaweicloud sdk
 
-        :param status: **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及    
+        :param status: **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
         :type status: str
-        :param domain_name: **参数解释：** 域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及     
+        :param domain_name: **参数解释：** 域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type domain_name: str
         :param error_msg: **参数解释：** 错误信息 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
         :type error_msg: str
@@ -57,7 +57,7 @@ class Resource:
     def status(self):
         r"""Gets the status of this Resource.
 
-        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及    
+        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
 
         :return: The status of this Resource.
         :rtype: str
@@ -68,7 +68,7 @@ class Resource:
     def status(self, status):
         r"""Sets the status of this Resource.
 
-        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及    
+        **参数解释：** 应用模板状态（域名粒度） **约束限制：** 不涉及 **取值范围：** - success: 应用模板成功 - fail: 应用模板失败 **默认取值：** 不涉及
 
         :param status: The status of this Resource.
         :type status: str
@@ -79,7 +79,7 @@ class Resource:
     def domain_name(self):
         r"""Gets the domain_name of this Resource.
 
-        **参数解释：** 域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及     
+        **参数解释：** 域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :return: The domain_name of this Resource.
         :rtype: str
@@ -90,7 +90,7 @@ class Resource:
     def domain_name(self, domain_name):
         r"""Sets the domain_name of this Resource.
 
-        **参数解释：** 域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及     
+        **参数解释：** 域名 **约束限制：** 不涉及 **取值范围：** 不涉及 **默认取值：** 不涉及
 
         :param domain_name: The domain_name of this Resource.
         :type domain_name: str

@@ -21,7 +21,7 @@ class CompilationUpdateSrlz:
         'compile_command': 'str',
         'compile_workspace': 'str',
         'artifact_paths': 'list[str]',
-        'compile_image_status': 'RunImageStatusEnum',
+        'compile_image_status': 'int',
         'public_key': 'str'
     }
 
@@ -54,7 +54,7 @@ class CompilationUpdateSrlz:
         :param artifact_paths: 编译产物列表，须在挂载路径下
         :type artifact_paths: list[str]
         :param compile_image_status: 编译镜像状态  * &#x60;0&#x60; - Success * &#x60;100&#x60; - Init * &#x60;101&#x60; - Init Failed * &#x60;200&#x60; - To Push * &#x60;201&#x60; - Uploading
-        :type compile_image_status: :class:`huaweicloudsdkoctopus.v2.RunImageStatusEnum`
+        :type compile_image_status: :class:`huaweicloudsdkoctopus.v2.int`
         :param public_key: ssh-key公钥
         :type public_key: str
         """
@@ -220,7 +220,7 @@ class CompilationUpdateSrlz:
         编译镜像状态  * `0` - Success * `100` - Init * `101` - Init Failed * `200` - To Push * `201` - Uploading
 
         :return: The compile_image_status of this CompilationUpdateSrlz.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.RunImageStatusEnum`
+        :rtype: :class:`huaweicloudsdkoctopus.v2.int`
         """
         return self._compile_image_status
 
@@ -231,7 +231,7 @@ class CompilationUpdateSrlz:
         编译镜像状态  * `0` - Success * `100` - Init * `101` - Init Failed * `200` - To Push * `201` - Uploading
 
         :param compile_image_status: The compile_image_status of this CompilationUpdateSrlz.
-        :type compile_image_status: :class:`huaweicloudsdkoctopus.v2.RunImageStatusEnum`
+        :type compile_image_status: :class:`huaweicloudsdkoctopus.v2.int`
         """
         self._compile_image_status = compile_image_status
 

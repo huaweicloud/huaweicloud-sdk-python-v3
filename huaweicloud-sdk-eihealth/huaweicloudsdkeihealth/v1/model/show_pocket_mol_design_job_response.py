@@ -22,7 +22,7 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
         'num_trials': 'int',
         'model_list': 'list[BasicDrugModel]',
         'molecular_weight': 'list[int]',
-        'optimization_mode': 'OptimizationMode',
+        'optimization_mode': 'str',
         'cluster_result': 'ClusterJobRsp'
     }
 
@@ -54,8 +54,8 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
         :type model_list: list[:class:`huaweicloudsdkeihealth.v1.BasicDrugModel`]
         :param molecular_weight: 分子量范围
         :type molecular_weight: list[int]
-        :param optimization_mode: 
-        :type optimization_mode: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
+        :param optimization_mode: 靶点口袋分子设计模式：支持从头生成、侧链修饰、骨架跃迁、片段生长。
+        :type optimization_mode: str
         :param cluster_result: 
         :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
         """
@@ -217,8 +217,10 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
     def optimization_mode(self):
         r"""Gets the optimization_mode of this ShowPocketMolDesignJobResponse.
 
+        靶点口袋分子设计模式：支持从头生成、侧链修饰、骨架跃迁、片段生长。
+
         :return: The optimization_mode of this ShowPocketMolDesignJobResponse.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
+        :rtype: str
         """
         return self._optimization_mode
 
@@ -226,8 +228,10 @@ class ShowPocketMolDesignJobResponse(SdkResponse):
     def optimization_mode(self, optimization_mode):
         r"""Sets the optimization_mode of this ShowPocketMolDesignJobResponse.
 
+        靶点口袋分子设计模式：支持从头生成、侧链修饰、骨架跃迁、片段生长。
+
         :param optimization_mode: The optimization_mode of this ShowPocketMolDesignJobResponse.
-        :type optimization_mode: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
+        :type optimization_mode: str
         """
         self._optimization_mode = optimization_mode
 

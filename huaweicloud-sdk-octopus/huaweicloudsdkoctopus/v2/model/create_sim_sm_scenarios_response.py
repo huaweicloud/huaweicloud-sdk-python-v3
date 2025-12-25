@@ -26,13 +26,13 @@ class CreateSimSmScenariosResponse(SdkResponse):
         'description': 'MutableFileSrlz',
         'file': 'FileCreateSrlz',
         'simulator': 'str',
-        'version': 'ScenarioVersionEnum',
+        'version': 'str',
         'map_filename': 'str',
         'model_filename': 'str',
         'user_id': 'str',
         'user_name': 'str',
         'name': 'str',
-        'priority': 'PriorityEnum',
+        'priority': 'int',
         'map': 'str',
         'model': 'str'
     }
@@ -84,8 +84,8 @@ class CreateSimSmScenariosResponse(SdkResponse):
         :type file: :class:`huaweicloudsdkoctopus.v2.FileCreateSrlz`
         :param simulator: 仿真器名称,取值范围:A,B,C,D,E
         :type simulator: str
-        :param version: 
-        :type version: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
+        :param version: 版本
+        :type version: str
         :param map_filename: 地图文件名
         :type map_filename: str
         :param model_filename: 模型文件名
@@ -96,8 +96,8 @@ class CreateSimSmScenariosResponse(SdkResponse):
         :type user_name: str
         :param name: 名称
         :type name: str
-        :param priority: 
-        :type priority: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
+        :param priority: * &#x60;120&#x60; - S * &#x60;100&#x60; - A * &#x60;80&#x60; - B * &#x60;60&#x60; - C * &#x60;40&#x60; - D
+        :type priority: int
         :param map: 地图
         :type map: str
         :param model: 模型
@@ -378,8 +378,10 @@ class CreateSimSmScenariosResponse(SdkResponse):
     def version(self):
         r"""Gets the version of this CreateSimSmScenariosResponse.
 
+        版本
+
         :return: The version of this CreateSimSmScenariosResponse.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
+        :rtype: str
         """
         return self._version
 
@@ -387,8 +389,10 @@ class CreateSimSmScenariosResponse(SdkResponse):
     def version(self, version):
         r"""Sets the version of this CreateSimSmScenariosResponse.
 
+        版本
+
         :param version: The version of this CreateSimSmScenariosResponse.
-        :type version: :class:`huaweicloudsdkoctopus.v2.ScenarioVersionEnum`
+        :type version: str
         """
         self._version = version
 
@@ -506,8 +510,10 @@ class CreateSimSmScenariosResponse(SdkResponse):
     def priority(self):
         r"""Gets the priority of this CreateSimSmScenariosResponse.
 
+        * `120` - S * `100` - A * `80` - B * `60` - C * `40` - D
+
         :return: The priority of this CreateSimSmScenariosResponse.
-        :rtype: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
+        :rtype: int
         """
         return self._priority
 
@@ -515,8 +521,10 @@ class CreateSimSmScenariosResponse(SdkResponse):
     def priority(self, priority):
         r"""Sets the priority of this CreateSimSmScenariosResponse.
 
+        * `120` - S * `100` - A * `80` - B * `60` - C * `40` - D
+
         :param priority: The priority of this CreateSimSmScenariosResponse.
-        :type priority: :class:`huaweicloudsdkoctopus.v2.PriorityEnum`
+        :type priority: int
         """
         self._priority = priority
 

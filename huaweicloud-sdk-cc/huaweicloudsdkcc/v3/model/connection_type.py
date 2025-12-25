@@ -15,7 +15,7 @@ class ConnectionType:
     sensitive_list = []
 
     openapi_types = {
-        'connection_type': 'ConnectionTypeEnum'
+        'connection_type': 'str'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class ConnectionType:
 
         The model defined in huaweicloud sdk
 
-        :param connection_type: 
-        :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
+        :param connection_type: 中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+        :type connection_type: str
         """
         
         
@@ -42,8 +42,10 @@ class ConnectionType:
     def connection_type(self):
         r"""Gets the connection_type of this ConnectionType.
 
+        中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+
         :return: The connection_type of this ConnectionType.
-        :rtype: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
+        :rtype: str
         """
         return self._connection_type
 
@@ -51,8 +53,10 @@ class ConnectionType:
     def connection_type(self, connection_type):
         r"""Sets the connection_type of this ConnectionType.
 
+        中心网络连接类型定义： - ER-ER (ER-ER Connection) - ER-GDGW (ER-GDGW Attachment Connection) - ER-ER_ROUTE_TABLE (ER-ER_ROUTE_TABLE Attachment Connection)
+
         :param connection_type: The connection_type of this ConnectionType.
-        :type connection_type: :class:`huaweicloudsdkcc.v3.ConnectionTypeEnum`
+        :type connection_type: str
         """
         self._connection_type = connection_type
 

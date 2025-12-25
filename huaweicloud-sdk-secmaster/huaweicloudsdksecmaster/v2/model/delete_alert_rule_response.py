@@ -16,134 +16,109 @@ class DeleteAlertRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'deleted': 'bool',
-        'fail_list': 'list[AlertRule]',
-        'success_list': 'list[AlertRule]',
-        'x_request_id': 'str'
+        'alert_rule_id': 'str',
+        'delete_time': 'int',
+        'process_status': 'str'
     }
 
     attribute_map = {
-        'deleted': 'deleted',
-        'fail_list': 'fail_list',
-        'success_list': 'success_list',
-        'x_request_id': 'X-request-id'
+        'alert_rule_id': 'alert_rule_id',
+        'delete_time': 'delete_time',
+        'process_status': 'process_status'
     }
 
-    def __init__(self, deleted=None, fail_list=None, success_list=None, x_request_id=None):
+    def __init__(self, alert_rule_id=None, delete_time=None, process_status=None):
         r"""DeleteAlertRuleResponse
 
         The model defined in huaweicloud sdk
 
-        :param deleted: 是否删除.
-        :type deleted: bool
-        :param fail_list: Alert rule ID.
-        :type fail_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        :param success_list: Alert rule ID.
-        :type success_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        :param x_request_id: 
-        :type x_request_id: str
+        :param alert_rule_id: UUID
+        :type alert_rule_id: str
+        :param delete_time: 毫秒时间戳
+        :type delete_time: int
+        :param process_status: **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
+        :type process_status: str
         """
         
         super().__init__()
 
-        self._deleted = None
-        self._fail_list = None
-        self._success_list = None
-        self._x_request_id = None
+        self._alert_rule_id = None
+        self._delete_time = None
+        self._process_status = None
         self.discriminator = None
 
-        if deleted is not None:
-            self.deleted = deleted
-        if fail_list is not None:
-            self.fail_list = fail_list
-        if success_list is not None:
-            self.success_list = success_list
-        if x_request_id is not None:
-            self.x_request_id = x_request_id
+        if alert_rule_id is not None:
+            self.alert_rule_id = alert_rule_id
+        if delete_time is not None:
+            self.delete_time = delete_time
+        if process_status is not None:
+            self.process_status = process_status
 
     @property
-    def deleted(self):
-        r"""Gets the deleted of this DeleteAlertRuleResponse.
+    def alert_rule_id(self):
+        r"""Gets the alert_rule_id of this DeleteAlertRuleResponse.
 
-        是否删除.
+        UUID
 
-        :return: The deleted of this DeleteAlertRuleResponse.
-        :rtype: bool
-        """
-        return self._deleted
-
-    @deleted.setter
-    def deleted(self, deleted):
-        r"""Sets the deleted of this DeleteAlertRuleResponse.
-
-        是否删除.
-
-        :param deleted: The deleted of this DeleteAlertRuleResponse.
-        :type deleted: bool
-        """
-        self._deleted = deleted
-
-    @property
-    def fail_list(self):
-        r"""Gets the fail_list of this DeleteAlertRuleResponse.
-
-        Alert rule ID.
-
-        :return: The fail_list of this DeleteAlertRuleResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        """
-        return self._fail_list
-
-    @fail_list.setter
-    def fail_list(self, fail_list):
-        r"""Sets the fail_list of this DeleteAlertRuleResponse.
-
-        Alert rule ID.
-
-        :param fail_list: The fail_list of this DeleteAlertRuleResponse.
-        :type fail_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        """
-        self._fail_list = fail_list
-
-    @property
-    def success_list(self):
-        r"""Gets the success_list of this DeleteAlertRuleResponse.
-
-        Alert rule ID.
-
-        :return: The success_list of this DeleteAlertRuleResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        """
-        return self._success_list
-
-    @success_list.setter
-    def success_list(self, success_list):
-        r"""Sets the success_list of this DeleteAlertRuleResponse.
-
-        Alert rule ID.
-
-        :param success_list: The success_list of this DeleteAlertRuleResponse.
-        :type success_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        """
-        self._success_list = success_list
-
-    @property
-    def x_request_id(self):
-        r"""Gets the x_request_id of this DeleteAlertRuleResponse.
-
-        :return: The x_request_id of this DeleteAlertRuleResponse.
+        :return: The alert_rule_id of this DeleteAlertRuleResponse.
         :rtype: str
         """
-        return self._x_request_id
+        return self._alert_rule_id
 
-    @x_request_id.setter
-    def x_request_id(self, x_request_id):
-        r"""Sets the x_request_id of this DeleteAlertRuleResponse.
+    @alert_rule_id.setter
+    def alert_rule_id(self, alert_rule_id):
+        r"""Sets the alert_rule_id of this DeleteAlertRuleResponse.
 
-        :param x_request_id: The x_request_id of this DeleteAlertRuleResponse.
-        :type x_request_id: str
+        UUID
+
+        :param alert_rule_id: The alert_rule_id of this DeleteAlertRuleResponse.
+        :type alert_rule_id: str
         """
-        self._x_request_id = x_request_id
+        self._alert_rule_id = alert_rule_id
+
+    @property
+    def delete_time(self):
+        r"""Gets the delete_time of this DeleteAlertRuleResponse.
+
+        毫秒时间戳
+
+        :return: The delete_time of this DeleteAlertRuleResponse.
+        :rtype: int
+        """
+        return self._delete_time
+
+    @delete_time.setter
+    def delete_time(self, delete_time):
+        r"""Sets the delete_time of this DeleteAlertRuleResponse.
+
+        毫秒时间戳
+
+        :param delete_time: The delete_time of this DeleteAlertRuleResponse.
+        :type delete_time: int
+        """
+        self._delete_time = delete_time
+
+    @property
+    def process_status(self):
+        r"""Gets the process_status of this DeleteAlertRuleResponse.
+
+        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
+
+        :return: The process_status of this DeleteAlertRuleResponse.
+        :rtype: str
+        """
+        return self._process_status
+
+    @process_status.setter
+    def process_status(self, process_status):
+        r"""Sets the process_status of this DeleteAlertRuleResponse.
+
+        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
+
+        :param process_status: The process_status of this DeleteAlertRuleResponse.
+        :type process_status: str
+        """
+        self._process_status = process_status
 
     def to_dict(self):
         import warnings

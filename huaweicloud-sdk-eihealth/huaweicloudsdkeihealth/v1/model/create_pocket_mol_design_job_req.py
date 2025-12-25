@@ -21,7 +21,7 @@ class CreatePocketMolDesignJobReq:
         'num_trials': 'int',
         'model_ids': 'list[str]',
         'molecular_weight': 'list[int]',
-        'optimization_mode': 'OptimizationMode',
+        'optimization_mode': 'str',
         'base_model_id': 'str'
     }
 
@@ -53,8 +53,8 @@ class CreatePocketMolDesignJobReq:
         :type model_ids: list[str]
         :param molecular_weight: 分子量范围
         :type molecular_weight: list[int]
-        :param optimization_mode: 
-        :type optimization_mode: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
+        :param optimization_mode: 靶点口袋分子设计模式：支持从头生成、侧链修饰、骨架跃迁、片段生长。
+        :type optimization_mode: str
         :param base_model_id: **参数解释**： 基模型ID。 **约束限制**： 当optimization_mode为generation时，可选择PanguDrug3D、Lingo3DMol，当为其他方式时，仅可选择可选择PanguDrug3D。 **取值范围**： - PanguDrug3D - Lingo3DMol **默认取值**： 不涉及 
         :type base_model_id: str
         """
@@ -214,8 +214,10 @@ class CreatePocketMolDesignJobReq:
     def optimization_mode(self):
         r"""Gets the optimization_mode of this CreatePocketMolDesignJobReq.
 
+        靶点口袋分子设计模式：支持从头生成、侧链修饰、骨架跃迁、片段生长。
+
         :return: The optimization_mode of this CreatePocketMolDesignJobReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
+        :rtype: str
         """
         return self._optimization_mode
 
@@ -223,8 +225,10 @@ class CreatePocketMolDesignJobReq:
     def optimization_mode(self, optimization_mode):
         r"""Sets the optimization_mode of this CreatePocketMolDesignJobReq.
 
+        靶点口袋分子设计模式：支持从头生成、侧链修饰、骨架跃迁、片段生长。
+
         :param optimization_mode: The optimization_mode of this CreatePocketMolDesignJobReq.
-        :type optimization_mode: :class:`huaweicloudsdkeihealth.v1.OptimizationMode`
+        :type optimization_mode: str
         """
         self._optimization_mode = optimization_mode
 

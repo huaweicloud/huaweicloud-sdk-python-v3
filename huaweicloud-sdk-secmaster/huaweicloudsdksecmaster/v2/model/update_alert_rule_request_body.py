@@ -15,141 +15,134 @@ class UpdateAlertRuleRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'rule_name': 'str',
+        'alert_rule_name': 'str',
         'description': 'str',
-        'query': 'str',
-        'query_type': 'str',
+        'directory': 'str',
+        'script': 'str',
         'status': 'str',
-        'severity': 'str',
-        'custom_properties': 'dict(str, str)',
-        'alert_type': 'dict(str, str)',
-        'event_grouping': 'bool',
-        'suppression': 'bool',
-        'simulation': 'bool',
-        'schedule': 'Schedule',
-        'triggers': 'list[AlertRuleTrigger]'
+        'job_mode_setting': 'IsapJobModeSettingDto',
+        'job_output_setting': 'IsapJobOutputSetting',
+        'environment': 'str',
+        'output_table_id': 'str',
+        'output_table_ids': 'list[str]',
+        'output_table_names': 'list[str]',
+        'publish_status': 'str'
     }
 
     attribute_map = {
-        'rule_name': 'rule_name',
+        'alert_rule_name': 'alert_rule_name',
         'description': 'description',
-        'query': 'query',
-        'query_type': 'query_type',
+        'directory': 'directory',
+        'script': 'script',
         'status': 'status',
-        'severity': 'severity',
-        'custom_properties': 'custom_properties',
-        'alert_type': 'alert_type',
-        'event_grouping': 'event_grouping',
-        'suppression': 'suppression',
-        'simulation': 'simulation',
-        'schedule': 'schedule',
-        'triggers': 'triggers'
+        'job_mode_setting': 'job_mode_setting',
+        'job_output_setting': 'job_output_setting',
+        'environment': 'environment',
+        'output_table_id': 'output_table_id',
+        'output_table_ids': 'output_table_ids',
+        'output_table_names': 'output_table_names',
+        'publish_status': 'publish_status'
     }
 
-    def __init__(self, rule_name=None, description=None, query=None, query_type=None, status=None, severity=None, custom_properties=None, alert_type=None, event_grouping=None, suppression=None, simulation=None, schedule=None, triggers=None):
+    def __init__(self, alert_rule_name=None, description=None, directory=None, script=None, status=None, job_mode_setting=None, job_output_setting=None, environment=None, output_table_id=None, output_table_ids=None, output_table_names=None, publish_status=None):
         r"""UpdateAlertRuleRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param rule_name: 告警规则名称。Alert rule name.
-        :type rule_name: str
-        :param description: 描述。Description.
+        :param alert_rule_name: Alert rule name 告警规则名称
+        :type alert_rule_name: str
+        :param description: Alert rule description 告警规则描述
         :type description: str
-        :param query: 查询语句。Query.
-        :type query: str
-        :param query_type: 查询语法，SQL。Query type. SQL.
-        :type query_type: str
-        :param status: 启用状态，启用、停用。Status, enabled, disabled.
+        :param directory: directory 目录分组
+        :type directory: str
+        :param script: Job Script 作业脚本
+        :type script: str
+        :param status: **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
         :type status: str
-        :param severity: 严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
-        :type severity: str
-        :param custom_properties: 自定义扩展信息。Custom properties.
-        :type custom_properties: dict(str, str)
-        :param alert_type: 告警类型。Alert type.
-        :type alert_type: dict(str, str)
-        :param event_grouping: 告警分组。Event grouping.
-        :type event_grouping: bool
-        :param suppression: 告警抑制。Suppression
-        :type suppression: bool
-        :param simulation: 模拟告警。Simulation.
-        :type simulation: bool
-        :param schedule: 
-        :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        :param triggers: 告警触发规则。Alert triggers.
-        :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
+        :param job_mode_setting: 
+        :type job_mode_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingDto`
+        :param job_output_setting: 
+        :type job_output_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobOutputSetting`
+        :param environment: **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
+        :type environment: str
+        :param output_table_id: UUID
+        :type output_table_id: str
+        :param output_table_ids: 输出表ID列表
+        :type output_table_ids: list[str]
+        :param output_table_names: 输出表名称列表
+        :type output_table_names: list[str]
+        :param publish_status: 发布状态: 只适用行管租户，不对外暴露参数
+        :type publish_status: str
         """
         
         
 
-        self._rule_name = None
+        self._alert_rule_name = None
         self._description = None
-        self._query = None
-        self._query_type = None
+        self._directory = None
+        self._script = None
         self._status = None
-        self._severity = None
-        self._custom_properties = None
-        self._alert_type = None
-        self._event_grouping = None
-        self._suppression = None
-        self._simulation = None
-        self._schedule = None
-        self._triggers = None
+        self._job_mode_setting = None
+        self._job_output_setting = None
+        self._environment = None
+        self._output_table_id = None
+        self._output_table_ids = None
+        self._output_table_names = None
+        self._publish_status = None
         self.discriminator = None
 
-        if rule_name is not None:
-            self.rule_name = rule_name
+        if alert_rule_name is not None:
+            self.alert_rule_name = alert_rule_name
         if description is not None:
             self.description = description
-        if query is not None:
-            self.query = query
-        if query_type is not None:
-            self.query_type = query_type
+        if directory is not None:
+            self.directory = directory
+        if script is not None:
+            self.script = script
         if status is not None:
             self.status = status
-        if severity is not None:
-            self.severity = severity
-        if custom_properties is not None:
-            self.custom_properties = custom_properties
-        if alert_type is not None:
-            self.alert_type = alert_type
-        if event_grouping is not None:
-            self.event_grouping = event_grouping
-        if suppression is not None:
-            self.suppression = suppression
-        if simulation is not None:
-            self.simulation = simulation
-        if schedule is not None:
-            self.schedule = schedule
-        if triggers is not None:
-            self.triggers = triggers
+        if job_mode_setting is not None:
+            self.job_mode_setting = job_mode_setting
+        if job_output_setting is not None:
+            self.job_output_setting = job_output_setting
+        if environment is not None:
+            self.environment = environment
+        if output_table_id is not None:
+            self.output_table_id = output_table_id
+        if output_table_ids is not None:
+            self.output_table_ids = output_table_ids
+        if output_table_names is not None:
+            self.output_table_names = output_table_names
+        if publish_status is not None:
+            self.publish_status = publish_status
 
     @property
-    def rule_name(self):
-        r"""Gets the rule_name of this UpdateAlertRuleRequestBody.
+    def alert_rule_name(self):
+        r"""Gets the alert_rule_name of this UpdateAlertRuleRequestBody.
 
-        告警规则名称。Alert rule name.
+        Alert rule name 告警规则名称
 
-        :return: The rule_name of this UpdateAlertRuleRequestBody.
+        :return: The alert_rule_name of this UpdateAlertRuleRequestBody.
         :rtype: str
         """
-        return self._rule_name
+        return self._alert_rule_name
 
-    @rule_name.setter
-    def rule_name(self, rule_name):
-        r"""Sets the rule_name of this UpdateAlertRuleRequestBody.
+    @alert_rule_name.setter
+    def alert_rule_name(self, alert_rule_name):
+        r"""Sets the alert_rule_name of this UpdateAlertRuleRequestBody.
 
-        告警规则名称。Alert rule name.
+        Alert rule name 告警规则名称
 
-        :param rule_name: The rule_name of this UpdateAlertRuleRequestBody.
-        :type rule_name: str
+        :param alert_rule_name: The alert_rule_name of this UpdateAlertRuleRequestBody.
+        :type alert_rule_name: str
         """
-        self._rule_name = rule_name
+        self._alert_rule_name = alert_rule_name
 
     @property
     def description(self):
         r"""Gets the description of this UpdateAlertRuleRequestBody.
 
-        描述。Description.
+        Alert rule description 告警规则描述
 
         :return: The description of this UpdateAlertRuleRequestBody.
         :rtype: str
@@ -160,7 +153,7 @@ class UpdateAlertRuleRequestBody:
     def description(self, description):
         r"""Sets the description of this UpdateAlertRuleRequestBody.
 
-        描述。Description.
+        Alert rule description 告警规则描述
 
         :param description: The description of this UpdateAlertRuleRequestBody.
         :type description: str
@@ -168,54 +161,54 @@ class UpdateAlertRuleRequestBody:
         self._description = description
 
     @property
-    def query(self):
-        r"""Gets the query of this UpdateAlertRuleRequestBody.
+    def directory(self):
+        r"""Gets the directory of this UpdateAlertRuleRequestBody.
 
-        查询语句。Query.
+        directory 目录分组
 
-        :return: The query of this UpdateAlertRuleRequestBody.
+        :return: The directory of this UpdateAlertRuleRequestBody.
         :rtype: str
         """
-        return self._query
+        return self._directory
 
-    @query.setter
-    def query(self, query):
-        r"""Sets the query of this UpdateAlertRuleRequestBody.
+    @directory.setter
+    def directory(self, directory):
+        r"""Sets the directory of this UpdateAlertRuleRequestBody.
 
-        查询语句。Query.
+        directory 目录分组
 
-        :param query: The query of this UpdateAlertRuleRequestBody.
-        :type query: str
+        :param directory: The directory of this UpdateAlertRuleRequestBody.
+        :type directory: str
         """
-        self._query = query
+        self._directory = directory
 
     @property
-    def query_type(self):
-        r"""Gets the query_type of this UpdateAlertRuleRequestBody.
+    def script(self):
+        r"""Gets the script of this UpdateAlertRuleRequestBody.
 
-        查询语法，SQL。Query type. SQL.
+        Job Script 作业脚本
 
-        :return: The query_type of this UpdateAlertRuleRequestBody.
+        :return: The script of this UpdateAlertRuleRequestBody.
         :rtype: str
         """
-        return self._query_type
+        return self._script
 
-    @query_type.setter
-    def query_type(self, query_type):
-        r"""Sets the query_type of this UpdateAlertRuleRequestBody.
+    @script.setter
+    def script(self, script):
+        r"""Sets the script of this UpdateAlertRuleRequestBody.
 
-        查询语法，SQL。Query type. SQL.
+        Job Script 作业脚本
 
-        :param query_type: The query_type of this UpdateAlertRuleRequestBody.
-        :type query_type: str
+        :param script: The script of this UpdateAlertRuleRequestBody.
+        :type script: str
         """
-        self._query_type = query_type
+        self._script = script
 
     @property
     def status(self):
         r"""Gets the status of this UpdateAlertRuleRequestBody.
 
-        启用状态，启用、停用。Status, enabled, disabled.
+        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
 
         :return: The status of this UpdateAlertRuleRequestBody.
         :rtype: str
@@ -226,7 +219,7 @@ class UpdateAlertRuleRequestBody:
     def status(self, status):
         r"""Sets the status of this UpdateAlertRuleRequestBody.
 
-        启用状态，启用、停用。Status, enabled, disabled.
+        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
 
         :param status: The status of this UpdateAlertRuleRequestBody.
         :type status: str
@@ -234,176 +227,150 @@ class UpdateAlertRuleRequestBody:
         self._status = status
 
     @property
-    def severity(self):
-        r"""Gets the severity of this UpdateAlertRuleRequestBody.
+    def job_mode_setting(self):
+        r"""Gets the job_mode_setting of this UpdateAlertRuleRequestBody.
 
-        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        :return: The job_mode_setting of this UpdateAlertRuleRequestBody.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingDto`
+        """
+        return self._job_mode_setting
 
-        :return: The severity of this UpdateAlertRuleRequestBody.
+    @job_mode_setting.setter
+    def job_mode_setting(self, job_mode_setting):
+        r"""Sets the job_mode_setting of this UpdateAlertRuleRequestBody.
+
+        :param job_mode_setting: The job_mode_setting of this UpdateAlertRuleRequestBody.
+        :type job_mode_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobModeSettingDto`
+        """
+        self._job_mode_setting = job_mode_setting
+
+    @property
+    def job_output_setting(self):
+        r"""Gets the job_output_setting of this UpdateAlertRuleRequestBody.
+
+        :return: The job_output_setting of this UpdateAlertRuleRequestBody.
+        :rtype: :class:`huaweicloudsdksecmaster.v2.IsapJobOutputSetting`
+        """
+        return self._job_output_setting
+
+    @job_output_setting.setter
+    def job_output_setting(self, job_output_setting):
+        r"""Sets the job_output_setting of this UpdateAlertRuleRequestBody.
+
+        :param job_output_setting: The job_output_setting of this UpdateAlertRuleRequestBody.
+        :type job_output_setting: :class:`huaweicloudsdksecmaster.v2.IsapJobOutputSetting`
+        """
+        self._job_output_setting = job_output_setting
+
+    @property
+    def environment(self):
+        r"""Gets the environment of this UpdateAlertRuleRequestBody.
+
+        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
+
+        :return: The environment of this UpdateAlertRuleRequestBody.
         :rtype: str
         """
-        return self._severity
+        return self._environment
 
-    @severity.setter
-    def severity(self, severity):
-        r"""Sets the severity of this UpdateAlertRuleRequestBody.
+    @environment.setter
+    def environment(self, environment):
+        r"""Sets the environment of this UpdateAlertRuleRequestBody.
 
-        严重程度，提示、低危、中危、高危、致命。Severity. TIPS, LOW, MEDIUM, HIGH, FATAL
+        **参数解释**: 环境类型 - PROD 生产环境 - TEST 测试环境  **约束限制** 不涉及 **取值范围**: - PROD - TEST  **默认值** 不涉及     
 
-        :param severity: The severity of this UpdateAlertRuleRequestBody.
-        :type severity: str
+        :param environment: The environment of this UpdateAlertRuleRequestBody.
+        :type environment: str
         """
-        self._severity = severity
+        self._environment = environment
 
     @property
-    def custom_properties(self):
-        r"""Gets the custom_properties of this UpdateAlertRuleRequestBody.
+    def output_table_id(self):
+        r"""Gets the output_table_id of this UpdateAlertRuleRequestBody.
 
-        自定义扩展信息。Custom properties.
+        UUID
 
-        :return: The custom_properties of this UpdateAlertRuleRequestBody.
-        :rtype: dict(str, str)
+        :return: The output_table_id of this UpdateAlertRuleRequestBody.
+        :rtype: str
         """
-        return self._custom_properties
+        return self._output_table_id
 
-    @custom_properties.setter
-    def custom_properties(self, custom_properties):
-        r"""Sets the custom_properties of this UpdateAlertRuleRequestBody.
+    @output_table_id.setter
+    def output_table_id(self, output_table_id):
+        r"""Sets the output_table_id of this UpdateAlertRuleRequestBody.
 
-        自定义扩展信息。Custom properties.
+        UUID
 
-        :param custom_properties: The custom_properties of this UpdateAlertRuleRequestBody.
-        :type custom_properties: dict(str, str)
+        :param output_table_id: The output_table_id of this UpdateAlertRuleRequestBody.
+        :type output_table_id: str
         """
-        self._custom_properties = custom_properties
+        self._output_table_id = output_table_id
 
     @property
-    def alert_type(self):
-        r"""Gets the alert_type of this UpdateAlertRuleRequestBody.
+    def output_table_ids(self):
+        r"""Gets the output_table_ids of this UpdateAlertRuleRequestBody.
 
-        告警类型。Alert type.
+        输出表ID列表
 
-        :return: The alert_type of this UpdateAlertRuleRequestBody.
-        :rtype: dict(str, str)
+        :return: The output_table_ids of this UpdateAlertRuleRequestBody.
+        :rtype: list[str]
         """
-        return self._alert_type
+        return self._output_table_ids
 
-    @alert_type.setter
-    def alert_type(self, alert_type):
-        r"""Sets the alert_type of this UpdateAlertRuleRequestBody.
+    @output_table_ids.setter
+    def output_table_ids(self, output_table_ids):
+        r"""Sets the output_table_ids of this UpdateAlertRuleRequestBody.
 
-        告警类型。Alert type.
+        输出表ID列表
 
-        :param alert_type: The alert_type of this UpdateAlertRuleRequestBody.
-        :type alert_type: dict(str, str)
+        :param output_table_ids: The output_table_ids of this UpdateAlertRuleRequestBody.
+        :type output_table_ids: list[str]
         """
-        self._alert_type = alert_type
+        self._output_table_ids = output_table_ids
 
     @property
-    def event_grouping(self):
-        r"""Gets the event_grouping of this UpdateAlertRuleRequestBody.
+    def output_table_names(self):
+        r"""Gets the output_table_names of this UpdateAlertRuleRequestBody.
 
-        告警分组。Event grouping.
+        输出表名称列表
 
-        :return: The event_grouping of this UpdateAlertRuleRequestBody.
-        :rtype: bool
+        :return: The output_table_names of this UpdateAlertRuleRequestBody.
+        :rtype: list[str]
         """
-        return self._event_grouping
+        return self._output_table_names
 
-    @event_grouping.setter
-    def event_grouping(self, event_grouping):
-        r"""Sets the event_grouping of this UpdateAlertRuleRequestBody.
+    @output_table_names.setter
+    def output_table_names(self, output_table_names):
+        r"""Sets the output_table_names of this UpdateAlertRuleRequestBody.
 
-        告警分组。Event grouping.
+        输出表名称列表
 
-        :param event_grouping: The event_grouping of this UpdateAlertRuleRequestBody.
-        :type event_grouping: bool
+        :param output_table_names: The output_table_names of this UpdateAlertRuleRequestBody.
+        :type output_table_names: list[str]
         """
-        self._event_grouping = event_grouping
+        self._output_table_names = output_table_names
 
     @property
-    def suppression(self):
-        r"""Gets the suppression of this UpdateAlertRuleRequestBody.
+    def publish_status(self):
+        r"""Gets the publish_status of this UpdateAlertRuleRequestBody.
 
-        告警抑制。Suppression
+        发布状态: 只适用行管租户，不对外暴露参数
 
-        :return: The suppression of this UpdateAlertRuleRequestBody.
-        :rtype: bool
+        :return: The publish_status of this UpdateAlertRuleRequestBody.
+        :rtype: str
         """
-        return self._suppression
+        return self._publish_status
 
-    @suppression.setter
-    def suppression(self, suppression):
-        r"""Sets the suppression of this UpdateAlertRuleRequestBody.
+    @publish_status.setter
+    def publish_status(self, publish_status):
+        r"""Sets the publish_status of this UpdateAlertRuleRequestBody.
 
-        告警抑制。Suppression
+        发布状态: 只适用行管租户，不对外暴露参数
 
-        :param suppression: The suppression of this UpdateAlertRuleRequestBody.
-        :type suppression: bool
+        :param publish_status: The publish_status of this UpdateAlertRuleRequestBody.
+        :type publish_status: str
         """
-        self._suppression = suppression
-
-    @property
-    def simulation(self):
-        r"""Gets the simulation of this UpdateAlertRuleRequestBody.
-
-        模拟告警。Simulation.
-
-        :return: The simulation of this UpdateAlertRuleRequestBody.
-        :rtype: bool
-        """
-        return self._simulation
-
-    @simulation.setter
-    def simulation(self, simulation):
-        r"""Sets the simulation of this UpdateAlertRuleRequestBody.
-
-        模拟告警。Simulation.
-
-        :param simulation: The simulation of this UpdateAlertRuleRequestBody.
-        :type simulation: bool
-        """
-        self._simulation = simulation
-
-    @property
-    def schedule(self):
-        r"""Gets the schedule of this UpdateAlertRuleRequestBody.
-
-        :return: The schedule of this UpdateAlertRuleRequestBody.
-        :rtype: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        """
-        return self._schedule
-
-    @schedule.setter
-    def schedule(self, schedule):
-        r"""Sets the schedule of this UpdateAlertRuleRequestBody.
-
-        :param schedule: The schedule of this UpdateAlertRuleRequestBody.
-        :type schedule: :class:`huaweicloudsdksecmaster.v2.Schedule`
-        """
-        self._schedule = schedule
-
-    @property
-    def triggers(self):
-        r"""Gets the triggers of this UpdateAlertRuleRequestBody.
-
-        告警触发规则。Alert triggers.
-
-        :return: The triggers of this UpdateAlertRuleRequestBody.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
-        """
-        return self._triggers
-
-    @triggers.setter
-    def triggers(self, triggers):
-        r"""Sets the triggers of this UpdateAlertRuleRequestBody.
-
-        告警触发规则。Alert triggers.
-
-        :param triggers: The triggers of this UpdateAlertRuleRequestBody.
-        :type triggers: list[:class:`huaweicloudsdksecmaster.v2.AlertRuleTrigger`]
-        """
-        self._triggers = triggers
+        self._publish_status = publish_status
 
     def to_dict(self):
         result = {}

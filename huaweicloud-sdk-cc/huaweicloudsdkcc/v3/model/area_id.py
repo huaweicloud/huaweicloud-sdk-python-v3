@@ -15,7 +15,7 @@ class AreaId:
     sensitive_list = []
 
     openapi_types = {
-        'area_id': 'AreaIdDef'
+        'area_id': 'str'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class AreaId:
 
         The model defined in huaweicloud sdk
 
-        :param area_id: 
-        :type area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :param area_id: 大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+        :type area_id: str
         """
         
         
@@ -42,8 +42,10 @@ class AreaId:
     def area_id(self):
         r"""Gets the area_id of this AreaId.
 
+        大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :return: The area_id of this AreaId.
-        :rtype: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :rtype: str
         """
         return self._area_id
 
@@ -51,8 +53,10 @@ class AreaId:
     def area_id(self, area_id):
         r"""Sets the area_id of this AreaId.
 
+        大区。云连接支持的大区有： - Chinese-Mainland（中国大陆） - Asia-Pacific（亚太） - Africa（非洲） - Western-Latin-America（拉美西） - Eastern-Latin-America（拉美东） - Northern-Latin-America（拉美北）
+
         :param area_id: The area_id of this AreaId.
-        :type area_id: :class:`huaweicloudsdkcc.v3.AreaIdDef`
+        :type area_id: str
         """
         self._area_id = area_id
 

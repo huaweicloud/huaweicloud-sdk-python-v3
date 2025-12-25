@@ -17,10 +17,10 @@ class ShowImageJobResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
-        'job_type': 'ImageJobType',
+        'job_type': 'str',
         'begin_time': 'datetime',
         'end_time': 'datetime',
-        'status': 'ImageJobStatus',
+        'status': 'str',
         'sub_jobs_total': 'int',
         'sub_jobs': 'list[ImageJobDetailInfo]'
     }
@@ -42,14 +42,14 @@ class ShowImageJobResponse(SdkResponse):
 
         :param id: 任务ID。
         :type id: str
-        :param job_type: 
-        :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobType`
+        :param job_type: job类型。 * &#x60;CREATE_SERVER&#x60; - 创建镜像实例 * &#x60;CREATE_SERVER_IMAGE&#x60; - 构建镜像 * &#x60;DELETE_SERVER&#x60; - 删除镜像实例
+        :type job_type: str
         :param begin_time: 任务创建时间。
         :type begin_time: datetime
         :param end_time: 任务结束时间。
         :type end_time: datetime
-        :param status: 
-        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobStatus`
+        :param status: job状态。 * &#x60;WAITING&#x60; - 等待 * &#x60;RUNNING&#x60; - 运行中 * &#x60;SUCCESS - 完成 * &#x60;FAILED&#x60; - 失败
+        :type status: str
         :param sub_jobs_total: 子任务总数。
         :type sub_jobs_total: int
         :param sub_jobs: 子任务列表。
@@ -108,8 +108,10 @@ class ShowImageJobResponse(SdkResponse):
     def job_type(self):
         r"""Gets the job_type of this ShowImageJobResponse.
 
+        job类型。 * `CREATE_SERVER` - 创建镜像实例 * `CREATE_SERVER_IMAGE` - 构建镜像 * `DELETE_SERVER` - 删除镜像实例
+
         :return: The job_type of this ShowImageJobResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobType`
+        :rtype: str
         """
         return self._job_type
 
@@ -117,8 +119,10 @@ class ShowImageJobResponse(SdkResponse):
     def job_type(self, job_type):
         r"""Sets the job_type of this ShowImageJobResponse.
 
+        job类型。 * `CREATE_SERVER` - 创建镜像实例 * `CREATE_SERVER_IMAGE` - 构建镜像 * `DELETE_SERVER` - 删除镜像实例
+
         :param job_type: The job_type of this ShowImageJobResponse.
-        :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobType`
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -170,8 +174,10 @@ class ShowImageJobResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowImageJobResponse.
 
+        job状态。 * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS - 完成 * `FAILED` - 失败
+
         :return: The status of this ShowImageJobResponse.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobStatus`
+        :rtype: str
         """
         return self._status
 
@@ -179,8 +185,10 @@ class ShowImageJobResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowImageJobResponse.
 
+        job状态。 * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS - 完成 * `FAILED` - 失败
+
         :param status: The status of this ShowImageJobResponse.
-        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobStatus`
+        :type status: str
         """
         self._status = status
 

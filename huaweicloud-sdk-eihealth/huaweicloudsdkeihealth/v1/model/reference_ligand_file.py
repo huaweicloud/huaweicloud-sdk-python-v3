@@ -15,7 +15,7 @@ class ReferenceLigandFile:
     sensitive_list = []
 
     openapi_types = {
-        'source': 'DrugFileSource',
+        'source': 'str',
         'url': 'str',
         'format': 'str',
         'data': 'str'
@@ -33,8 +33,8 @@ class ReferenceLigandFile:
 
         The model defined in huaweicloud sdk
 
-        :param source: 
-        :type source: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
+        :param source: 受体的数据源：外部网络数据（如RCSB在线数据库）、用户私有数据中心、承载租户公共数据（含样例/公共库）
+        :type source: str
         :param url: **参数解释**： 文件URL。 **约束限制**： 当数据源source为外部网络数据时为https地址，为用户私有数据中心时为空间路径，为公共数据场景时为obs地址。 **取值范围**： 文件URL仅支持以.pdb、.sdf、.mol2、.smi、.csv结尾，长度为[1-2000]个字符。 **默认取值**： 不涉及 
         :type url: str
         :param format: **参数解释**： 文件格式。 **约束限制**： 仅数据源source为RAW时提供。 **取值范围**： - PDB - SDF - MOL2 - SMI - CSV **默认取值**： 不涉及 
@@ -63,8 +63,10 @@ class ReferenceLigandFile:
     def source(self):
         r"""Gets the source of this ReferenceLigandFile.
 
+        受体的数据源：外部网络数据（如RCSB在线数据库）、用户私有数据中心、承载租户公共数据（含样例/公共库）
+
         :return: The source of this ReferenceLigandFile.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
+        :rtype: str
         """
         return self._source
 
@@ -72,8 +74,10 @@ class ReferenceLigandFile:
     def source(self, source):
         r"""Sets the source of this ReferenceLigandFile.
 
+        受体的数据源：外部网络数据（如RCSB在线数据库）、用户私有数据中心、承载租户公共数据（含样例/公共库）
+
         :param source: The source of this ReferenceLigandFile.
-        :type source: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
+        :type source: str
         """
         self._source = source
 

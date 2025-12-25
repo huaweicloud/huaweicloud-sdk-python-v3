@@ -30,9 +30,9 @@ class ListImageRiskConfigsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total_num: 总数
+        :param total_num: **参数解释** 符合筛选条件的镜像安全配置检测结果总记录数 **取值范围** 取值0-2147483647 
         :type total_num: int
-        :param data_list: 配置检测列表
+        :param data_list: **参数解释** 包含查询到的镜像安全配置检测结果详情，每个元素对应一个镜像的基线检测汇总信息 **取值范围** 数组长度0-limit（每页显示个数） 
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ImageRiskConfigsInfoResponseInfo`]
         """
         
@@ -51,7 +51,7 @@ class ListImageRiskConfigsResponse(SdkResponse):
     def total_num(self):
         r"""Gets the total_num of this ListImageRiskConfigsResponse.
 
-        总数
+        **参数解释** 符合筛选条件的镜像安全配置检测结果总记录数 **取值范围** 取值0-2147483647 
 
         :return: The total_num of this ListImageRiskConfigsResponse.
         :rtype: int
@@ -62,7 +62,7 @@ class ListImageRiskConfigsResponse(SdkResponse):
     def total_num(self, total_num):
         r"""Sets the total_num of this ListImageRiskConfigsResponse.
 
-        总数
+        **参数解释** 符合筛选条件的镜像安全配置检测结果总记录数 **取值范围** 取值0-2147483647 
 
         :param total_num: The total_num of this ListImageRiskConfigsResponse.
         :type total_num: int
@@ -73,7 +73,7 @@ class ListImageRiskConfigsResponse(SdkResponse):
     def data_list(self):
         r"""Gets the data_list of this ListImageRiskConfigsResponse.
 
-        配置检测列表
+        **参数解释** 包含查询到的镜像安全配置检测结果详情，每个元素对应一个镜像的基线检测汇总信息 **取值范围** 数组长度0-limit（每页显示个数） 
 
         :return: The data_list of this ListImageRiskConfigsResponse.
         :rtype: list[:class:`huaweicloudsdkhss.v5.ImageRiskConfigsInfoResponseInfo`]
@@ -84,7 +84,7 @@ class ListImageRiskConfigsResponse(SdkResponse):
     def data_list(self, data_list):
         r"""Sets the data_list of this ListImageRiskConfigsResponse.
 
-        配置检测列表
+        **参数解释** 包含查询到的镜像安全配置检测结果详情，每个元素对应一个镜像的基线检测汇总信息 **取值范围** 数组长度0-limit（每页显示个数） 
 
         :param data_list: The data_list of this ListImageRiskConfigsResponse.
         :type data_list: list[:class:`huaweicloudsdkhss.v5.ImageRiskConfigsInfoResponseInfo`]

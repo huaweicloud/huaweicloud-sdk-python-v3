@@ -16,11 +16,11 @@ class ExternalAccesses:
 
     openapi_types = {
         'id': 'str',
-        'protocol': 'ExternalAccessProtocol',
+        'protocol': 'str',
         'address': 'str',
         'forward_port': 'int',
-        'type': 'ExternalAccessType',
-        'status': 'ExternalAccessStatus',
+        'type': 'str',
+        'status': 'str',
         'create_time': 'int',
         'update_time': 'int'
     }
@@ -43,16 +43,16 @@ class ExternalAccesses:
 
         :param id: ID。
         :type id: str
-        :param protocol: 
-        :type protocol: :class:`huaweicloudsdkservicestage.v2.ExternalAccessProtocol`
+        :param protocol: 协议。
+        :type protocol: str
         :param address: 访问地址。
         :type address: str
         :param forward_port: 应用组件进程监听端口
         :type forward_port: int
-        :param type: 
-        :type type: :class:`huaweicloudsdkservicestage.v2.ExternalAccessType`
-        :param status: 
-        :type status: :class:`huaweicloudsdkservicestage.v2.ExternalAccessStatus`
+        :param type: 类型。
+        :type type: str
+        :param status: 状态。
+        :type status: str
         :param create_time: 创建时间。
         :type create_time: int
         :param update_time: 修改时间。
@@ -111,8 +111,10 @@ class ExternalAccesses:
     def protocol(self):
         r"""Gets the protocol of this ExternalAccesses.
 
+        协议。
+
         :return: The protocol of this ExternalAccesses.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessProtocol`
+        :rtype: str
         """
         return self._protocol
 
@@ -120,8 +122,10 @@ class ExternalAccesses:
     def protocol(self, protocol):
         r"""Sets the protocol of this ExternalAccesses.
 
+        协议。
+
         :param protocol: The protocol of this ExternalAccesses.
-        :type protocol: :class:`huaweicloudsdkservicestage.v2.ExternalAccessProtocol`
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -173,8 +177,10 @@ class ExternalAccesses:
     def type(self):
         r"""Gets the type of this ExternalAccesses.
 
+        类型。
+
         :return: The type of this ExternalAccesses.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessType`
+        :rtype: str
         """
         return self._type
 
@@ -182,8 +188,10 @@ class ExternalAccesses:
     def type(self, type):
         r"""Sets the type of this ExternalAccesses.
 
+        类型。
+
         :param type: The type of this ExternalAccesses.
-        :type type: :class:`huaweicloudsdkservicestage.v2.ExternalAccessType`
+        :type type: str
         """
         self._type = type
 
@@ -191,8 +199,10 @@ class ExternalAccesses:
     def status(self):
         r"""Gets the status of this ExternalAccesses.
 
+        状态。
+
         :return: The status of this ExternalAccesses.
-        :rtype: :class:`huaweicloudsdkservicestage.v2.ExternalAccessStatus`
+        :rtype: str
         """
         return self._status
 
@@ -200,8 +210,10 @@ class ExternalAccesses:
     def status(self, status):
         r"""Sets the status of this ExternalAccesses.
 
+        状态。
+
         :param status: The status of this ExternalAccesses.
-        :type status: :class:`huaweicloudsdkservicestage.v2.ExternalAccessStatus`
+        :type status: str
         """
         self._status = status
 

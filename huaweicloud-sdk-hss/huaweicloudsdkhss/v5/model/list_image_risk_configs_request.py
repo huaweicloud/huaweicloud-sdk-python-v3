@@ -15,7 +15,6 @@ class ListImageRiskConfigsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'region': 'str',
         'enterprise_project_id': 'str',
         'image_type': 'str',
         'offset': 'int',
@@ -31,7 +30,6 @@ class ListImageRiskConfigsRequest:
     }
 
     attribute_map = {
-        'region': 'region',
         'enterprise_project_id': 'enterprise_project_id',
         'image_type': 'image_type',
         'offset': 'offset',
@@ -46,42 +44,39 @@ class ListImageRiskConfigsRequest:
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, image_type=None, offset=None, limit=None, namespace=None, image_name=None, image_version=None, image_id=None, check_name=None, severity=None, standard=None, instance_id=None):
+    def __init__(self, enterprise_project_id=None, image_type=None, offset=None, limit=None, namespace=None, image_name=None, image_version=None, image_id=None, check_name=None, severity=None, standard=None, instance_id=None):
         r"""ListImageRiskConfigsRequest
 
         The model defined in huaweicloud sdk
 
-        :param region: Region ID
-        :type region: str
-        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        :param enterprise_project_id: **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
         :type enterprise_project_id: str
-        :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
+        :param image_type: **参数解释** 用于筛选指定类型的镜像安全配置检测结果，不同类型对应不同镜像存储位置 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - private_image： 私有镜像仓库 - shared_image： 共享镜像仓库 - local_image： 本地镜像 - instance_image： 企业镜像 - registry： 仓库镜像 - local： 本地镜像，用于查询全局数据 **默认取值** 无 
         :type image_type: str
-        :param offset: 偏移量：指定返回记录的开始位置
+        :param offset: **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
         :type offset: int
-        :param limit: 每页显示数量
+        :param limit: **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
         :type limit: int
-        :param namespace: 组织名称
+        :param namespace: **参数解释** 镜像仓库的组织（命名空间）名称，用于筛选指定组织下的镜像检测结果，仅私有/共享镜像仓库有效 **约束限制** 仅当image_type为private_image或shared_image时有效，其他类型传参无效 **取值范围** 符合镜像仓库组织命名规范的字符串 **默认取值** 无 
         :type namespace: str
-        :param image_name: 镜像名称
+        :param image_name: **参数解释** 镜像的名称，用于精准筛选指定名称的镜像安全配置检测结果 **约束限制** 支持模糊匹配（如传入&#39;euler&#39;可匹配所有名称含&#39;euler&#39;的镜像） **取值范围** 符合镜像名称命名规范的字符串 **默认取值** 无 
         :type image_name: str
-        :param image_version: 镜像版本名称
+        :param image_version: **参数解释** 镜像的版本标识，用于筛选指定版本的镜像安全配置检测结果，与image_name配合使用 **约束限制** 仅当指定image_name时传参有效，否则筛选条件不生效 **取值范围** 符合镜像版本命名规范的字符串、默认取值：无 
         :type image_version: str
-        :param image_id: 镜像id
+        :param image_id: **参数解释** 镜像的唯一标识，用于精准筛选指定镜像的安全配置检测结果，优先级高于image_name+image_version **约束限制** 传入后将忽略image_name和image_version参数，直接按ID筛选 **默认取值** 无 
         :type image_id: str
-        :param check_name: 基线名称
+        :param check_name: **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如&#39;CentOS 7&#39;、&#39;EulerOS&#39;等） **约束限制** 仅支持功能介绍中列出的系统基线（CentOS 7、Debian 10、EulerOS、Ubuntu16） **取值范围** 支持的基线名称列表详见功能介绍 **默认取值** 无 
         :type check_name: str
-        :param severity: 风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
+        :param severity: **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 **默认取值** 无 
         :type severity: str
-        :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        :param standard: **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 **默认取值** 无 
         :type standard: str
-        :param instance_id: 企业仓库实例ID，swr共享版无需使用该参数
+        :param instance_id: **参数解释** 华为云SWR（软件仓库）企业版实例的唯一标识，用于筛选指定企业仓库实例下的镜像检测结果 **约束限制** 仅当image_type为private_image且使用SWR企业版时有效，共享版/本地镜像传参无效 **取值范围** SWR企业版实例ID **默认取值** 无 
         :type instance_id: str
         """
         
         
 
-        self._region = None
         self._enterprise_project_id = None
         self._image_type = None
         self._offset = None
@@ -96,8 +91,6 @@ class ListImageRiskConfigsRequest:
         self._instance_id = None
         self.discriminator = None
 
-        if region is not None:
-            self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.image_type = image_type
@@ -123,32 +116,10 @@ class ListImageRiskConfigsRequest:
             self.instance_id = instance_id
 
     @property
-    def region(self):
-        r"""Gets the region of this ListImageRiskConfigsRequest.
-
-        Region ID
-
-        :return: The region of this ListImageRiskConfigsRequest.
-        :rtype: str
-        """
-        return self._region
-
-    @region.setter
-    def region(self, region):
-        r"""Sets the region of this ListImageRiskConfigsRequest.
-
-        Region ID
-
-        :param region: The region of this ListImageRiskConfigsRequest.
-        :type region: str
-        """
-        self._region = region
-
-    @property
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListImageRiskConfigsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :return: The enterprise_project_id of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -159,7 +130,7 @@ class ListImageRiskConfigsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListImageRiskConfigsRequest.
 
-        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
+        **参数解释**: 企业项目ID，用于过滤不同企业项目下的资产。获取方式请参见[获取企业项目ID](hss_02_0027.xml)。 如需查询所有企业项目下的资产请传参“all_granted_eps”。 **约束限制**: 开通企业项目功能后才需要配置企业项目ID参数。 **取值范围**: 字符长度1-256位 **默认取值**: 0，表示默认企业项目（default）。 
 
         :param enterprise_project_id: The enterprise_project_id of this ListImageRiskConfigsRequest.
         :type enterprise_project_id: str
@@ -170,7 +141,7 @@ class ListImageRiskConfigsRequest:
     def image_type(self):
         r"""Gets the image_type of this ListImageRiskConfigsRequest.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
+        **参数解释** 用于筛选指定类型的镜像安全配置检测结果，不同类型对应不同镜像存储位置 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - private_image： 私有镜像仓库 - shared_image： 共享镜像仓库 - local_image： 本地镜像 - instance_image： 企业镜像 - registry： 仓库镜像 - local： 本地镜像，用于查询全局数据 **默认取值** 无 
 
         :return: The image_type of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -181,7 +152,7 @@ class ListImageRiskConfigsRequest:
     def image_type(self, image_type):
         r"""Sets the image_type of this ListImageRiskConfigsRequest.
 
-        镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
+        **参数解释** 用于筛选指定类型的镜像安全配置检测结果，不同类型对应不同镜像存储位置 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - private_image： 私有镜像仓库 - shared_image： 共享镜像仓库 - local_image： 本地镜像 - instance_image： 企业镜像 - registry： 仓库镜像 - local： 本地镜像，用于查询全局数据 **默认取值** 无 
 
         :param image_type: The image_type of this ListImageRiskConfigsRequest.
         :type image_type: str
@@ -192,7 +163,7 @@ class ListImageRiskConfigsRequest:
     def offset(self):
         r"""Gets the offset of this ListImageRiskConfigsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :return: The offset of this ListImageRiskConfigsRequest.
         :rtype: int
@@ -203,7 +174,7 @@ class ListImageRiskConfigsRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListImageRiskConfigsRequest.
 
-        偏移量：指定返回记录的开始位置
+        **参数解释**: 偏移量：指定返回记录的开始位置 **约束限制**: 不涉及 **取值范围**: 最小值0，最大值2000000 **默认取值**: 默认为0 
 
         :param offset: The offset of this ListImageRiskConfigsRequest.
         :type offset: int
@@ -214,7 +185,7 @@ class ListImageRiskConfigsRequest:
     def limit(self):
         r"""Gets the limit of this ListImageRiskConfigsRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :return: The limit of this ListImageRiskConfigsRequest.
         :rtype: int
@@ -225,7 +196,7 @@ class ListImageRiskConfigsRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListImageRiskConfigsRequest.
 
-        每页显示数量
+        **参数解释**: 每页显示个数 **约束限制**: 不涉及 **取值范围**: 取值10-200 **默认取值**: 10 
 
         :param limit: The limit of this ListImageRiskConfigsRequest.
         :type limit: int
@@ -236,7 +207,7 @@ class ListImageRiskConfigsRequest:
     def namespace(self):
         r"""Gets the namespace of this ListImageRiskConfigsRequest.
 
-        组织名称
+        **参数解释** 镜像仓库的组织（命名空间）名称，用于筛选指定组织下的镜像检测结果，仅私有/共享镜像仓库有效 **约束限制** 仅当image_type为private_image或shared_image时有效，其他类型传参无效 **取值范围** 符合镜像仓库组织命名规范的字符串 **默认取值** 无 
 
         :return: The namespace of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -247,7 +218,7 @@ class ListImageRiskConfigsRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListImageRiskConfigsRequest.
 
-        组织名称
+        **参数解释** 镜像仓库的组织（命名空间）名称，用于筛选指定组织下的镜像检测结果，仅私有/共享镜像仓库有效 **约束限制** 仅当image_type为private_image或shared_image时有效，其他类型传参无效 **取值范围** 符合镜像仓库组织命名规范的字符串 **默认取值** 无 
 
         :param namespace: The namespace of this ListImageRiskConfigsRequest.
         :type namespace: str
@@ -258,7 +229,7 @@ class ListImageRiskConfigsRequest:
     def image_name(self):
         r"""Gets the image_name of this ListImageRiskConfigsRequest.
 
-        镜像名称
+        **参数解释** 镜像的名称，用于精准筛选指定名称的镜像安全配置检测结果 **约束限制** 支持模糊匹配（如传入'euler'可匹配所有名称含'euler'的镜像） **取值范围** 符合镜像名称命名规范的字符串 **默认取值** 无 
 
         :return: The image_name of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -269,7 +240,7 @@ class ListImageRiskConfigsRequest:
     def image_name(self, image_name):
         r"""Sets the image_name of this ListImageRiskConfigsRequest.
 
-        镜像名称
+        **参数解释** 镜像的名称，用于精准筛选指定名称的镜像安全配置检测结果 **约束限制** 支持模糊匹配（如传入'euler'可匹配所有名称含'euler'的镜像） **取值范围** 符合镜像名称命名规范的字符串 **默认取值** 无 
 
         :param image_name: The image_name of this ListImageRiskConfigsRequest.
         :type image_name: str
@@ -280,7 +251,7 @@ class ListImageRiskConfigsRequest:
     def image_version(self):
         r"""Gets the image_version of this ListImageRiskConfigsRequest.
 
-        镜像版本名称
+        **参数解释** 镜像的版本标识，用于筛选指定版本的镜像安全配置检测结果，与image_name配合使用 **约束限制** 仅当指定image_name时传参有效，否则筛选条件不生效 **取值范围** 符合镜像版本命名规范的字符串、默认取值：无 
 
         :return: The image_version of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -291,7 +262,7 @@ class ListImageRiskConfigsRequest:
     def image_version(self, image_version):
         r"""Sets the image_version of this ListImageRiskConfigsRequest.
 
-        镜像版本名称
+        **参数解释** 镜像的版本标识，用于筛选指定版本的镜像安全配置检测结果，与image_name配合使用 **约束限制** 仅当指定image_name时传参有效，否则筛选条件不生效 **取值范围** 符合镜像版本命名规范的字符串、默认取值：无 
 
         :param image_version: The image_version of this ListImageRiskConfigsRequest.
         :type image_version: str
@@ -302,7 +273,7 @@ class ListImageRiskConfigsRequest:
     def image_id(self):
         r"""Gets the image_id of this ListImageRiskConfigsRequest.
 
-        镜像id
+        **参数解释** 镜像的唯一标识，用于精准筛选指定镜像的安全配置检测结果，优先级高于image_name+image_version **约束限制** 传入后将忽略image_name和image_version参数，直接按ID筛选 **默认取值** 无 
 
         :return: The image_id of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -313,7 +284,7 @@ class ListImageRiskConfigsRequest:
     def image_id(self, image_id):
         r"""Sets the image_id of this ListImageRiskConfigsRequest.
 
-        镜像id
+        **参数解释** 镜像的唯一标识，用于精准筛选指定镜像的安全配置检测结果，优先级高于image_name+image_version **约束限制** 传入后将忽略image_name和image_version参数，直接按ID筛选 **默认取值** 无 
 
         :param image_id: The image_id of this ListImageRiskConfigsRequest.
         :type image_id: str
@@ -324,7 +295,7 @@ class ListImageRiskConfigsRequest:
     def check_name(self):
         r"""Gets the check_name of this ListImageRiskConfigsRequest.
 
-        基线名称
+        **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如'CentOS 7'、'EulerOS'等） **约束限制** 仅支持功能介绍中列出的系统基线（CentOS 7、Debian 10、EulerOS、Ubuntu16） **取值范围** 支持的基线名称列表详见功能介绍 **默认取值** 无 
 
         :return: The check_name of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -335,7 +306,7 @@ class ListImageRiskConfigsRequest:
     def check_name(self, check_name):
         r"""Sets the check_name of this ListImageRiskConfigsRequest.
 
-        基线名称
+        **参数解释** 安全配置检测的基线名称，用于筛选指定基线的检测结果（如'CentOS 7'、'EulerOS'等） **约束限制** 仅支持功能介绍中列出的系统基线（CentOS 7、Debian 10、EulerOS、Ubuntu16） **取值范围** 支持的基线名称列表详见功能介绍 **默认取值** 无 
 
         :param check_name: The check_name of this ListImageRiskConfigsRequest.
         :type check_name: str
@@ -346,7 +317,7 @@ class ListImageRiskConfigsRequest:
     def severity(self):
         r"""Gets the severity of this ListImageRiskConfigsRequest.
 
-        风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
+        **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 **默认取值** 无 
 
         :return: The severity of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -357,7 +328,7 @@ class ListImageRiskConfigsRequest:
     def severity(self, severity):
         r"""Sets the severity of this ListImageRiskConfigsRequest.
 
-        风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
+        **参数解释** 镜像安全配置检测结果的风险等级，用于筛选指定风险等级的检测记录 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - Security：安全 - Low：低危 - Medium：中危 - High：高危 **默认取值** 无 
 
         :param severity: The severity of this ListImageRiskConfigsRequest.
         :type severity: str
@@ -368,7 +339,7 @@ class ListImageRiskConfigsRequest:
     def standard(self):
         r"""Gets the standard of this ListImageRiskConfigsRequest.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 **默认取值** 无 
 
         :return: The standard of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -379,7 +350,7 @@ class ListImageRiskConfigsRequest:
     def standard(self, standard):
         r"""Sets the standard of this ListImageRiskConfigsRequest.
 
-        标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
+        **参数解释** 安全配置检测遵循的标准，用于筛选符合指定标准的检测结果 **约束限制** 取值必须在指定范围内，否则返回空结果 **取值范围** - cn_standard：等保合规标准 - hw_standard：云安全实践标准 **默认取值** 无 
 
         :param standard: The standard of this ListImageRiskConfigsRequest.
         :type standard: str
@@ -390,7 +361,7 @@ class ListImageRiskConfigsRequest:
     def instance_id(self):
         r"""Gets the instance_id of this ListImageRiskConfigsRequest.
 
-        企业仓库实例ID，swr共享版无需使用该参数
+        **参数解释** 华为云SWR（软件仓库）企业版实例的唯一标识，用于筛选指定企业仓库实例下的镜像检测结果 **约束限制** 仅当image_type为private_image且使用SWR企业版时有效，共享版/本地镜像传参无效 **取值范围** SWR企业版实例ID **默认取值** 无 
 
         :return: The instance_id of this ListImageRiskConfigsRequest.
         :rtype: str
@@ -401,7 +372,7 @@ class ListImageRiskConfigsRequest:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this ListImageRiskConfigsRequest.
 
-        企业仓库实例ID，swr共享版无需使用该参数
+        **参数解释** 华为云SWR（软件仓库）企业版实例的唯一标识，用于筛选指定企业仓库实例下的镜像检测结果 **约束限制** 仅当image_type为private_image且使用SWR企业版时有效，共享版/本地镜像传参无效 **取值范围** SWR企业版实例ID **默认取值** 无 
 
         :param instance_id: The instance_id of this ListImageRiskConfigsRequest.
         :type instance_id: str

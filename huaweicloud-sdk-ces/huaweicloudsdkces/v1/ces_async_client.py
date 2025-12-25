@@ -231,7 +231,7 @@ class CesAsyncClient(Client):
     def create_events_async(self, request):
         r"""上报事件
 
-        上报自定义事件。
+        上报自定义事件。事件的time、project_id、event_source、event_name、event_type、sub_event_type、event_state、event_level、event_user、resource_id、resource_name字段相同时，则视为同一条事件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -296,7 +296,11 @@ class CesAsyncClient(Client):
     def create_metric_data_async(self, request):
         r"""添加监控数据
 
-        添加一条或多条指标监控数据。
+        添加一条或多条指标监控数据。约束与限制：
+        1. 单次POST请求消息体大小不能超过512KB，否则请求会被服务端拒绝。
+        2. POST请求发送周期应小于最小聚合周期，否则会出现聚合数据点不连续。例如：聚合周期为5分钟，发送周期为7分钟，则5分钟情况的聚合数据会出现每10分钟才出现一个点。
+        3. POST请求体中数据收集时间（collect_time）的值必须从当前时间的前三天到当前时间后的十分钟之内某一时间，如果不在这个范围内，则不允许插入指标数据。
+        4. 如果指标上报时间（即调用指标上报接口的时间）与数据收集时间（collect_time）之间的延迟超过10分钟，CES在聚合数据时会丢弃此指标数据。您只能查看近2天的原始指标数据，聚合数据中不会显示这些延迟上报的指标。例如，14:20:00调用CES接口上报数据，请求体中的collect_time字段为14:05:00，表示延迟上报了15分钟。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -777,7 +781,7 @@ class CesAsyncClient(Client):
     def list_alarms_async(self, request):
         r"""查询告警规则列表（V1）
 
-        查询告警规则列表，可以指定分页条件限制结果数量，可以指定排序规则。告警规则V1接口只支持配置单资源单策略规则，建议使用“[查询告警规则列表（推荐）](CreateAlarmRules.xml)”与前端功能配套使用。
+        查询告警规则列表，可以指定分页条件限制结果数量，可以指定排序规则。如果用本接口去查询多资源多策略的告警规则，也只能返回告警规则的某个策略，建议使用“[查询告警规则列表（推荐）](ListAlarmRules.xml)”与前端功能配套使用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1528,6 +1532,7 @@ class CesAsyncClient(Client):
         r"""修改告警规则
 
         修改告警规则。
+        告警规则V1接口只支持配置单资源单策略规则，建议使用批量增加告警规则资源、批量删除告警规则资源和修改告警规则策略(全量修改)与前端功能配套使用。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

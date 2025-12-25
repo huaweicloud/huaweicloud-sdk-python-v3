@@ -25,6 +25,7 @@ class NodeExtendParam:
         'is_auto_pay': 'str',
         'docker_lvm_config_override': 'str',
         'docker_base_size': 'int',
+        'container_base_size': 'int',
         'public_key': 'str',
         'alpha_cce_pre_install': 'str',
         'alpha_cce_post_install': 'str',
@@ -35,6 +36,12 @@ class NodeExtendParam:
         'agency_name': 'str',
         'kube_reserved_mem': 'int',
         'system_reserved_mem': 'int',
+        'kube_reserved_cpu': 'int',
+        'system_reserved_cpu': 'int',
+        'kube_reserved_pid': 'int',
+        'system_reserved_pid': 'int',
+        'kube_reserved_storage': 'int',
+        'system_reserved_storage': 'int',
         'init_node_password': 'str',
         'security_reinforcement_type': 'str'
     }
@@ -50,6 +57,7 @@ class NodeExtendParam:
         'is_auto_pay': 'isAutoPay',
         'docker_lvm_config_override': 'DockerLVMConfigOverride',
         'docker_base_size': 'dockerBaseSize',
+        'container_base_size': 'containerBaseSize',
         'public_key': 'publicKey',
         'alpha_cce_pre_install': 'alpha.cce/preInstall',
         'alpha_cce_post_install': 'alpha.cce/postInstall',
@@ -60,11 +68,17 @@ class NodeExtendParam:
         'agency_name': 'agency_name',
         'kube_reserved_mem': 'kubeReservedMem',
         'system_reserved_mem': 'systemReservedMem',
+        'kube_reserved_cpu': 'kubeReservedCpu',
+        'system_reserved_cpu': 'systemReservedCpu',
+        'kube_reserved_pid': 'kubeReservedPid',
+        'system_reserved_pid': 'systemReservedPid',
+        'kube_reserved_storage': 'kubeReservedStorage',
+        'system_reserved_storage': 'systemReservedStorage',
         'init_node_password': 'init-node-password',
         'security_reinforcement_type': 'securityReinforcementType'
     }
 
-    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, charging_mode=None, market_type=None, spot_price=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, init_node_password=None, security_reinforcement_type=None):
+    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, container_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, charging_mode=None, market_type=None, spot_price=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, kube_reserved_cpu=None, system_reserved_cpu=None, kube_reserved_pid=None, system_reserved_pid=None, kube_reserved_storage=None, system_reserved_storage=None, init_node_password=None, security_reinforcement_type=None):
         r"""NodeExtendParam
 
         The model defined in huaweicloud sdk
@@ -89,6 +103,8 @@ class NodeExtendParam:
         :type docker_lvm_config_override: str
         :param docker_base_size: **参数解释**： 节点上单容器的可用磁盘空间大小（已废弃，请优先使用containerBaseSize参数），单位G。 CCE节点容器运行时空间配置请参考[数据盘空间分配说明](cce_01_0341.xml)。 **约束限制**： - Devicemapper模式下建议dockerBaseSize配置不超过80G，设置过大时可能会导致容器运行时初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替。 - dockerBaseSize设置仅在v1.19.16-r0、v1.21.3-r0、v1.23.3-r0及以上的集群版本中的EulerOS[/HCEOS2.0](tag:hws,hws_hk,ctc,cmcc)节点上生效。  **取值范围**： 10-500。 **默认取值**： 不配置该值或值为0时将使用默认值： - Devicemapper模式下默认值为10； - OverlayFS模式默认不限制单容器可用空间大小。 
         :type docker_base_size: int
+        :param container_base_size: **参数解释**： 节点上单容器的可用磁盘空间大小，单位G。 CCE节点容器运行时空间配置请参考[数据盘空间分配说明](cce_01_0341.xml)。 **约束限制**： - Devicemapper模式下建议containerBaseSize配置不超过80G，设置过大时可能会导致容器运行时初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替；Devicemapper模式在新版中仅有共池裸机使用，已逐步废弃。 - containerBaseSize设置仅在新版本集群（v1.23.14-r0/v1.25.9-r0/v1.27.6-r0/v1.28.4-r0及以上）的EulerOS[/HCEOS2.0](tag:hws,hws_hk,ctc,cmcc)节点上生效。 - 更新节点池时，不支持更新此参数。  **取值范围**： 10-500。 **默认取值**： 不配置该值或值为0时将使用默认值： - Devicemapper模式下默认值为10； - OverlayFS模式默认不限制单容器可用空间大小。
+        :type container_base_size: int
         :param public_key: **参数解释**： 节点的公钥，应用于ssh密钥登录。 **约束限制**： - 当选择使用密钥对方式登录节点时该配置无效 - 创建、更新节点池场景不支持该参数  **取值范围**： 不涉及 **默认取值**： 不涉及
         :type public_key: str
         :param alpha_cce_pre_install: 安装前执行脚本 &gt; 输入的值需要经过Base64编码，方法为echo -n \&quot;待编码内容\&quot; | base64 
@@ -109,6 +125,18 @@ class NodeExtendParam:
         :type kube_reserved_mem: int
         :param system_reserved_mem: 节点内存预留，系统组件预留值。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) 
         :type system_reserved_mem: int
+        :param kube_reserved_cpu: **参数解释**： 节点CPU预留，Kubernetes相关组件预留值。单位为mcore。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) **约束限制**： kubeReservedCpu，systemReservedCpu之和小于节点池中节点最小CPU规格的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type kube_reserved_cpu: int
+        :param system_reserved_cpu: **参数解释**： 节点CPU预留，系统组件预留值。单位为mcore。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) **约束限制**： kubeReservedCpu，systemReservedCpu之和小于节点池中节点最小CPU规格的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type system_reserved_cpu: int
+        :param kube_reserved_pid: **参数解释**： 节点PID预留，Kubernetes相关组件预留值。目的是为Kubernetes系统守护进程（如kubelet、container runtime等）预留指定数量的进程ID。 **约束限制**： kubeReservedPid，systemReservedPid之和小于linux PID数量上限的50%。[不同OS的kernel.pid_max可能并不相同，具体请参见[修改节点进程 ID数量上限kernel.pid_max](https://support.huaweicloud.com/usermanual-cce/cce_10_0401.html#section1)](tag:hws) **取值范围**： [0,2097152] 注：CCE仅校验kernel.pid_max为4194304的场景，2022年1月30日及之前创建的节点和部分OS的kernel.pid_max会有所不同，若您更新过kernel.pid_max也需要保证kubeReservedPid，systemReservedPid之和小于linux PID数量上限。 **默认取值**： 不涉及
+        :type kube_reserved_pid: int
+        :param system_reserved_pid: **参数解释**： 节点PID预留，系统组件预留值。目的是为OS系统守护进程（如 sshd、udev 等）预留指定数量的进程ID。 **约束限制**： kubeReservedPid，systemReservedPid之和小于linux PID数量上限的50%。[不同OS的kernel.pid_max可能并不相同，具体请参见[修改节点进程 ID数量上限kernel.pid_max](https://support.huaweicloud.com/usermanual-cce/cce_10_0401.html#section1)](tag:hws) **取值范围**： [0,2097152] 注：CCE仅校验kernel.pid_max为4194304的场景，2022年1月30日及之前创建的节点和部分OS的kernel.pid_max会有所不同，若您更新过kernel.pid_max也需要保证kubeReservedPid，systemReservedPid之和小于linux PID数量上限。 **默认取值**： 不涉及
+        :type system_reserved_pid: int
+        :param kube_reserved_storage: **参数解释**： 节点临时存储空间预留，Kubernetes组件预留值。目的是为Kubernetes系统守护进程（如kubelet、container runtime等）预留临时存储。单位为Gi。 **约束限制**： kubeReservedStorage，systemReservedStorage之和小于容器组件所使用硬盘空间的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type kube_reserved_storage: int
+        :param system_reserved_storage: **参数解释**： 节点临时存储空间预留，系统组件预留值。目的是为OS系统守护进程（如 sshd、udev 等）预留临时存储。单位为Gi。 **约束限制**： kubeReservedStorage，systemReservedStorage之和小于容器组件所使用硬盘空间的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+        :type system_reserved_storage: int
         :param init_node_password: **参数解释**： 节点密码，仅作为响应参数时，固定展示星号，节点池场景响应返回中无该参数。 **约束限制**： 不涉及 **取值范围**： 不涉及 **默认取值**： 不涉及
         :type init_node_password: str
         :param security_reinforcement_type: **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。[详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。](tag:hws) 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\&quot;null\&quot;。 **约束限制**： 不涉及 **取值范围**： - 空值：表示不开启等保加固 - cybersecurity：表示开启等保加固  **默认取值**： 不涉及
@@ -127,6 +155,7 @@ class NodeExtendParam:
         self._is_auto_pay = None
         self._docker_lvm_config_override = None
         self._docker_base_size = None
+        self._container_base_size = None
         self._public_key = None
         self._alpha_cce_pre_install = None
         self._alpha_cce_post_install = None
@@ -137,6 +166,12 @@ class NodeExtendParam:
         self._agency_name = None
         self._kube_reserved_mem = None
         self._system_reserved_mem = None
+        self._kube_reserved_cpu = None
+        self._system_reserved_cpu = None
+        self._kube_reserved_pid = None
+        self._system_reserved_pid = None
+        self._kube_reserved_storage = None
+        self._system_reserved_storage = None
         self._init_node_password = None
         self._security_reinforcement_type = None
         self.discriminator = None
@@ -161,6 +196,8 @@ class NodeExtendParam:
             self.docker_lvm_config_override = docker_lvm_config_override
         if docker_base_size is not None:
             self.docker_base_size = docker_base_size
+        if container_base_size is not None:
+            self.container_base_size = container_base_size
         if public_key is not None:
             self.public_key = public_key
         if alpha_cce_pre_install is not None:
@@ -181,6 +218,18 @@ class NodeExtendParam:
             self.kube_reserved_mem = kube_reserved_mem
         if system_reserved_mem is not None:
             self.system_reserved_mem = system_reserved_mem
+        if kube_reserved_cpu is not None:
+            self.kube_reserved_cpu = kube_reserved_cpu
+        if system_reserved_cpu is not None:
+            self.system_reserved_cpu = system_reserved_cpu
+        if kube_reserved_pid is not None:
+            self.kube_reserved_pid = kube_reserved_pid
+        if system_reserved_pid is not None:
+            self.system_reserved_pid = system_reserved_pid
+        if kube_reserved_storage is not None:
+            self.kube_reserved_storage = kube_reserved_storage
+        if system_reserved_storage is not None:
+            self.system_reserved_storage = system_reserved_storage
         if init_node_password is not None:
             self.init_node_password = init_node_password
         if security_reinforcement_type is not None:
@@ -407,6 +456,28 @@ class NodeExtendParam:
         self._docker_base_size = docker_base_size
 
     @property
+    def container_base_size(self):
+        r"""Gets the container_base_size of this NodeExtendParam.
+
+        **参数解释**： 节点上单容器的可用磁盘空间大小，单位G。 CCE节点容器运行时空间配置请参考[数据盘空间分配说明](cce_01_0341.xml)。 **约束限制**： - Devicemapper模式下建议containerBaseSize配置不超过80G，设置过大时可能会导致容器运行时初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替；Devicemapper模式在新版中仅有共池裸机使用，已逐步废弃。 - containerBaseSize设置仅在新版本集群（v1.23.14-r0/v1.25.9-r0/v1.27.6-r0/v1.28.4-r0及以上）的EulerOS[/HCEOS2.0](tag:hws,hws_hk,ctc,cmcc)节点上生效。 - 更新节点池时，不支持更新此参数。  **取值范围**： 10-500。 **默认取值**： 不配置该值或值为0时将使用默认值： - Devicemapper模式下默认值为10； - OverlayFS模式默认不限制单容器可用空间大小。
+
+        :return: The container_base_size of this NodeExtendParam.
+        :rtype: int
+        """
+        return self._container_base_size
+
+    @container_base_size.setter
+    def container_base_size(self, container_base_size):
+        r"""Sets the container_base_size of this NodeExtendParam.
+
+        **参数解释**： 节点上单容器的可用磁盘空间大小，单位G。 CCE节点容器运行时空间配置请参考[数据盘空间分配说明](cce_01_0341.xml)。 **约束限制**： - Devicemapper模式下建议containerBaseSize配置不超过80G，设置过大时可能会导致容器运行时初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替；Devicemapper模式在新版中仅有共池裸机使用，已逐步废弃。 - containerBaseSize设置仅在新版本集群（v1.23.14-r0/v1.25.9-r0/v1.27.6-r0/v1.28.4-r0及以上）的EulerOS[/HCEOS2.0](tag:hws,hws_hk,ctc,cmcc)节点上生效。 - 更新节点池时，不支持更新此参数。  **取值范围**： 10-500。 **默认取值**： 不配置该值或值为0时将使用默认值： - Devicemapper模式下默认值为10； - OverlayFS模式默认不限制单容器可用空间大小。
+
+        :param container_base_size: The container_base_size of this NodeExtendParam.
+        :type container_base_size: int
+        """
+        self._container_base_size = container_base_size
+
+    @property
     def public_key(self):
         r"""Gets the public_key of this NodeExtendParam.
 
@@ -625,6 +696,138 @@ class NodeExtendParam:
         :type system_reserved_mem: int
         """
         self._system_reserved_mem = system_reserved_mem
+
+    @property
+    def kube_reserved_cpu(self):
+        r"""Gets the kube_reserved_cpu of this NodeExtendParam.
+
+        **参数解释**： 节点CPU预留，Kubernetes相关组件预留值。单位为mcore。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) **约束限制**： kubeReservedCpu，systemReservedCpu之和小于节点池中节点最小CPU规格的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The kube_reserved_cpu of this NodeExtendParam.
+        :rtype: int
+        """
+        return self._kube_reserved_cpu
+
+    @kube_reserved_cpu.setter
+    def kube_reserved_cpu(self, kube_reserved_cpu):
+        r"""Sets the kube_reserved_cpu of this NodeExtendParam.
+
+        **参数解释**： 节点CPU预留，Kubernetes相关组件预留值。单位为mcore。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) **约束限制**： kubeReservedCpu，systemReservedCpu之和小于节点池中节点最小CPU规格的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param kube_reserved_cpu: The kube_reserved_cpu of this NodeExtendParam.
+        :type kube_reserved_cpu: int
+        """
+        self._kube_reserved_cpu = kube_reserved_cpu
+
+    @property
+    def system_reserved_cpu(self):
+        r"""Gets the system_reserved_cpu of this NodeExtendParam.
+
+        **参数解释**： 节点CPU预留，系统组件预留值。单位为mcore。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) **约束限制**： kubeReservedCpu，systemReservedCpu之和小于节点池中节点最小CPU规格的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The system_reserved_cpu of this NodeExtendParam.
+        :rtype: int
+        """
+        return self._system_reserved_cpu
+
+    @system_reserved_cpu.setter
+    def system_reserved_cpu(self, system_reserved_cpu):
+        r"""Sets the system_reserved_cpu of this NodeExtendParam.
+
+        **参数解释**： 节点CPU预留，系统组件预留值。单位为mcore。[随节点规格变动，具体请参见[节点预留资源策略说明](https://support.huaweicloud.com/usermanual-cce/cce_10_0178.html)。](tag:hws) **约束限制**： kubeReservedCpu，systemReservedCpu之和小于节点池中节点最小CPU规格的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param system_reserved_cpu: The system_reserved_cpu of this NodeExtendParam.
+        :type system_reserved_cpu: int
+        """
+        self._system_reserved_cpu = system_reserved_cpu
+
+    @property
+    def kube_reserved_pid(self):
+        r"""Gets the kube_reserved_pid of this NodeExtendParam.
+
+        **参数解释**： 节点PID预留，Kubernetes相关组件预留值。目的是为Kubernetes系统守护进程（如kubelet、container runtime等）预留指定数量的进程ID。 **约束限制**： kubeReservedPid，systemReservedPid之和小于linux PID数量上限的50%。[不同OS的kernel.pid_max可能并不相同，具体请参见[修改节点进程 ID数量上限kernel.pid_max](https://support.huaweicloud.com/usermanual-cce/cce_10_0401.html#section1)](tag:hws) **取值范围**： [0,2097152] 注：CCE仅校验kernel.pid_max为4194304的场景，2022年1月30日及之前创建的节点和部分OS的kernel.pid_max会有所不同，若您更新过kernel.pid_max也需要保证kubeReservedPid，systemReservedPid之和小于linux PID数量上限。 **默认取值**： 不涉及
+
+        :return: The kube_reserved_pid of this NodeExtendParam.
+        :rtype: int
+        """
+        return self._kube_reserved_pid
+
+    @kube_reserved_pid.setter
+    def kube_reserved_pid(self, kube_reserved_pid):
+        r"""Sets the kube_reserved_pid of this NodeExtendParam.
+
+        **参数解释**： 节点PID预留，Kubernetes相关组件预留值。目的是为Kubernetes系统守护进程（如kubelet、container runtime等）预留指定数量的进程ID。 **约束限制**： kubeReservedPid，systemReservedPid之和小于linux PID数量上限的50%。[不同OS的kernel.pid_max可能并不相同，具体请参见[修改节点进程 ID数量上限kernel.pid_max](https://support.huaweicloud.com/usermanual-cce/cce_10_0401.html#section1)](tag:hws) **取值范围**： [0,2097152] 注：CCE仅校验kernel.pid_max为4194304的场景，2022年1月30日及之前创建的节点和部分OS的kernel.pid_max会有所不同，若您更新过kernel.pid_max也需要保证kubeReservedPid，systemReservedPid之和小于linux PID数量上限。 **默认取值**： 不涉及
+
+        :param kube_reserved_pid: The kube_reserved_pid of this NodeExtendParam.
+        :type kube_reserved_pid: int
+        """
+        self._kube_reserved_pid = kube_reserved_pid
+
+    @property
+    def system_reserved_pid(self):
+        r"""Gets the system_reserved_pid of this NodeExtendParam.
+
+        **参数解释**： 节点PID预留，系统组件预留值。目的是为OS系统守护进程（如 sshd、udev 等）预留指定数量的进程ID。 **约束限制**： kubeReservedPid，systemReservedPid之和小于linux PID数量上限的50%。[不同OS的kernel.pid_max可能并不相同，具体请参见[修改节点进程 ID数量上限kernel.pid_max](https://support.huaweicloud.com/usermanual-cce/cce_10_0401.html#section1)](tag:hws) **取值范围**： [0,2097152] 注：CCE仅校验kernel.pid_max为4194304的场景，2022年1月30日及之前创建的节点和部分OS的kernel.pid_max会有所不同，若您更新过kernel.pid_max也需要保证kubeReservedPid，systemReservedPid之和小于linux PID数量上限。 **默认取值**： 不涉及
+
+        :return: The system_reserved_pid of this NodeExtendParam.
+        :rtype: int
+        """
+        return self._system_reserved_pid
+
+    @system_reserved_pid.setter
+    def system_reserved_pid(self, system_reserved_pid):
+        r"""Sets the system_reserved_pid of this NodeExtendParam.
+
+        **参数解释**： 节点PID预留，系统组件预留值。目的是为OS系统守护进程（如 sshd、udev 等）预留指定数量的进程ID。 **约束限制**： kubeReservedPid，systemReservedPid之和小于linux PID数量上限的50%。[不同OS的kernel.pid_max可能并不相同，具体请参见[修改节点进程 ID数量上限kernel.pid_max](https://support.huaweicloud.com/usermanual-cce/cce_10_0401.html#section1)](tag:hws) **取值范围**： [0,2097152] 注：CCE仅校验kernel.pid_max为4194304的场景，2022年1月30日及之前创建的节点和部分OS的kernel.pid_max会有所不同，若您更新过kernel.pid_max也需要保证kubeReservedPid，systemReservedPid之和小于linux PID数量上限。 **默认取值**： 不涉及
+
+        :param system_reserved_pid: The system_reserved_pid of this NodeExtendParam.
+        :type system_reserved_pid: int
+        """
+        self._system_reserved_pid = system_reserved_pid
+
+    @property
+    def kube_reserved_storage(self):
+        r"""Gets the kube_reserved_storage of this NodeExtendParam.
+
+        **参数解释**： 节点临时存储空间预留，Kubernetes组件预留值。目的是为Kubernetes系统守护进程（如kubelet、container runtime等）预留临时存储。单位为Gi。 **约束限制**： kubeReservedStorage，systemReservedStorage之和小于容器组件所使用硬盘空间的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The kube_reserved_storage of this NodeExtendParam.
+        :rtype: int
+        """
+        return self._kube_reserved_storage
+
+    @kube_reserved_storage.setter
+    def kube_reserved_storage(self, kube_reserved_storage):
+        r"""Sets the kube_reserved_storage of this NodeExtendParam.
+
+        **参数解释**： 节点临时存储空间预留，Kubernetes组件预留值。目的是为Kubernetes系统守护进程（如kubelet、container runtime等）预留临时存储。单位为Gi。 **约束限制**： kubeReservedStorage，systemReservedStorage之和小于容器组件所使用硬盘空间的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param kube_reserved_storage: The kube_reserved_storage of this NodeExtendParam.
+        :type kube_reserved_storage: int
+        """
+        self._kube_reserved_storage = kube_reserved_storage
+
+    @property
+    def system_reserved_storage(self):
+        r"""Gets the system_reserved_storage of this NodeExtendParam.
+
+        **参数解释**： 节点临时存储空间预留，系统组件预留值。目的是为OS系统守护进程（如 sshd、udev 等）预留临时存储。单位为Gi。 **约束限制**： kubeReservedStorage，systemReservedStorage之和小于容器组件所使用硬盘空间的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :return: The system_reserved_storage of this NodeExtendParam.
+        :rtype: int
+        """
+        return self._system_reserved_storage
+
+    @system_reserved_storage.setter
+    def system_reserved_storage(self, system_reserved_storage):
+        r"""Sets the system_reserved_storage of this NodeExtendParam.
+
+        **参数解释**： 节点临时存储空间预留，系统组件预留值。目的是为OS系统守护进程（如 sshd、udev 等）预留临时存储。单位为Gi。 **约束限制**： kubeReservedStorage，systemReservedStorage之和小于容器组件所使用硬盘空间的50%。 **取值范围**： 不涉及 **默认取值**： 不涉及
+
+        :param system_reserved_storage: The system_reserved_storage of this NodeExtendParam.
+        :type system_reserved_storage: int
+        """
+        self._system_reserved_storage = system_reserved_storage
 
     @property
     def init_node_password(self):

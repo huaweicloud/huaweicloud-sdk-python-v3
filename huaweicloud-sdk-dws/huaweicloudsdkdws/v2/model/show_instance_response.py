@@ -86,11 +86,11 @@ class ShowInstanceResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param configuration_status: **参数解释**： 配置状态。 **取值范围**： 不涉及。
+        :param configuration_status: **参数解释**： 配置状态。 **取值范围**： - In-Sync：应用完成。 - Applying：应用中。 - Pending-Reboot：待重启生效。 - Sync-Failure：修改失败。
         :type configuration_status: str
         :param params_group_id: **参数解释**： 参数组ID。 **取值范围**： 不涉及。
         :type params_group_id: str
-        :param type: **参数解释**： 类型。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 类型。 **取值范围**： - dws-cn：cn节点。 - dws：dn节点。 - cms：cms节点。 - gtm：gtm节点。 - vw：vw节点。
         :type type: str
         :param subnet_id: **参数解释**： 子网ID。 **取值范围**： 不涉及。
         :type subnet_id: str
@@ -114,7 +114,7 @@ class ShowInstanceResponse(SdkResponse):
         :type created: str
         :param updated: **参数解释**： 更新时间。 **取值范围**： 不涉及。
         :type updated: str
-        :param status: **参数解释**： 状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 状态。 **取值范围**： - BUILD：创建中 - ACTIVE：可用 - FAILED：不可用 - DELETED：已删除 - REBOOTING：重启中 - ERROR：创建失败 - SHUTDOWN：关机
         :type status: str
         :param name: **参数解释**： 节点名称。 **取值范围**： 不涉及。
         :type name: str
@@ -247,7 +247,7 @@ class ShowInstanceResponse(SdkResponse):
     def configuration_status(self):
         r"""Gets the configuration_status of this ShowInstanceResponse.
 
-        **参数解释**： 配置状态。 **取值范围**： 不涉及。
+        **参数解释**： 配置状态。 **取值范围**： - In-Sync：应用完成。 - Applying：应用中。 - Pending-Reboot：待重启生效。 - Sync-Failure：修改失败。
 
         :return: The configuration_status of this ShowInstanceResponse.
         :rtype: str
@@ -258,7 +258,7 @@ class ShowInstanceResponse(SdkResponse):
     def configuration_status(self, configuration_status):
         r"""Sets the configuration_status of this ShowInstanceResponse.
 
-        **参数解释**： 配置状态。 **取值范围**： 不涉及。
+        **参数解释**： 配置状态。 **取值范围**： - In-Sync：应用完成。 - Applying：应用中。 - Pending-Reboot：待重启生效。 - Sync-Failure：修改失败。
 
         :param configuration_status: The configuration_status of this ShowInstanceResponse.
         :type configuration_status: str
@@ -291,7 +291,7 @@ class ShowInstanceResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this ShowInstanceResponse.
 
-        **参数解释**： 类型。 **取值范围**： 不涉及。
+        **参数解释**： 类型。 **取值范围**： - dws-cn：cn节点。 - dws：dn节点。 - cms：cms节点。 - gtm：gtm节点。 - vw：vw节点。
 
         :return: The type of this ShowInstanceResponse.
         :rtype: str
@@ -302,7 +302,7 @@ class ShowInstanceResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this ShowInstanceResponse.
 
-        **参数解释**： 类型。 **取值范围**： 不涉及。
+        **参数解释**： 类型。 **取值范围**： - dws-cn：cn节点。 - dws：dn节点。 - cms：cms节点。 - gtm：gtm节点。 - vw：vw节点。
 
         :param type: The type of this ShowInstanceResponse.
         :type type: str
@@ -555,7 +555,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowInstanceResponse.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - BUILD：创建中 - ACTIVE：可用 - FAILED：不可用 - DELETED：已删除 - REBOOTING：重启中 - ERROR：创建失败 - SHUTDOWN：关机
 
         :return: The status of this ShowInstanceResponse.
         :rtype: str
@@ -566,7 +566,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowInstanceResponse.
 
-        **参数解释**： 状态。 **取值范围**： 不涉及。
+        **参数解释**： 状态。 **取值范围**： - BUILD：创建中 - ACTIVE：可用 - FAILED：不可用 - DELETED：已删除 - REBOOTING：重启中 - ERROR：创建失败 - SHUTDOWN：关机
 
         :param status: The status of this ShowInstanceResponse.
         :type status: str

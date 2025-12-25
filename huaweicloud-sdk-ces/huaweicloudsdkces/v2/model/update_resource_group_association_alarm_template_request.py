@@ -29,7 +29,7 @@ class UpdateResourceGroupAssociationAlarmTemplateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        :param group_id: **参数解释** 资源分组ID。 **约束限制** 不涉及 **取值范围** 以\&quot;rg\&quot;开头，后面跟着22个字母或数字 **默认取值** 不涉及 
         :type group_id: str
         :param body: Body of the UpdateResourceGroupAssociationAlarmTemplateRequest
         :type body: :class:`huaweicloudsdkces.v2.AsyncAssociateRGAndTemplatesReq`
@@ -49,7 +49,7 @@ class UpdateResourceGroupAssociationAlarmTemplateRequest:
     def group_id(self):
         r"""Gets the group_id of this UpdateResourceGroupAssociationAlarmTemplateRequest.
 
-        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        **参数解释** 资源分组ID。 **约束限制** 不涉及 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字 **默认取值** 不涉及 
 
         :return: The group_id of this UpdateResourceGroupAssociationAlarmTemplateRequest.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateResourceGroupAssociationAlarmTemplateRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this UpdateResourceGroupAssociationAlarmTemplateRequest.
 
-        资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
+        **参数解释** 资源分组ID。 **约束限制** 不涉及 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字 **默认取值** 不涉及 
 
         :param group_id: The group_id of this UpdateResourceGroupAssociationAlarmTemplateRequest.
         :type group_id: str

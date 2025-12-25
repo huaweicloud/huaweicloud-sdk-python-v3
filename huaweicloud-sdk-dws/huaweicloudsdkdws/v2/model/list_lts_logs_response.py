@@ -32,7 +32,7 @@ class ListLtsLogsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param access_status: **参数解释**： 日志开启状态。 **取值范围**： 不涉及。
+        :param access_status: **参数解释**： 日志开启状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。 - DELETE：集群已删除。
         :type access_status: str
         :param lts_access_list: **参数解释**： LTS日志列表。 **取值范围**： 不涉及。
         :type lts_access_list: list[:class:`huaweicloudsdkdws.v2.LtslogInfo`]
@@ -58,7 +58,7 @@ class ListLtsLogsResponse(SdkResponse):
     def access_status(self):
         r"""Gets the access_status of this ListLtsLogsResponse.
 
-        **参数解释**： 日志开启状态。 **取值范围**： 不涉及。
+        **参数解释**： 日志开启状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。 - DELETE：集群已删除。
 
         :return: The access_status of this ListLtsLogsResponse.
         :rtype: str
@@ -69,7 +69,7 @@ class ListLtsLogsResponse(SdkResponse):
     def access_status(self, access_status):
         r"""Sets the access_status of this ListLtsLogsResponse.
 
-        **参数解释**： 日志开启状态。 **取值范围**： 不涉及。
+        **参数解释**： 日志开启状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。 - DELETE：集群已删除。
 
         :param access_status: The access_status of this ListLtsLogsResponse.
         :type access_status: str

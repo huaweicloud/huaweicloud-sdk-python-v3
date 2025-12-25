@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ToolType:
-    """
-    allowed enum values
-    """
-    DRUG_JOB = "drug_job"
-    WORKFLOW_JOB = "workflow_job"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

@@ -4,10 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ShortJobType:
-    """
-    allowed enum values
-    """
-    VOICE_ASSESS = "VOICE_ASSESS"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

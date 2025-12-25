@@ -61,7 +61,7 @@ class DiskResp:
         :type host_name: str
         :param disk_name: **参数解释**： 磁盘名称。 **取值范围**： 不涉及。
         :type disk_name: str
-        :param disk_type: **参数解释**： 磁盘类型(系统盘、数据盘、日志盘)。 **取值范围**： 不涉及。
+        :param disk_type: **参数解释**： 磁盘类型。 **取值范围**： - system:：系统盘。 - data：数据盘。 - log：日志盘。
         :type disk_type: str
         :param total: **参数解释**： 磁盘总容量(GB)。 **取值范围**： 不涉及。
         :type total: float
@@ -222,7 +222,7 @@ class DiskResp:
     def disk_type(self):
         r"""Gets the disk_type of this DiskResp.
 
-        **参数解释**： 磁盘类型(系统盘、数据盘、日志盘)。 **取值范围**： 不涉及。
+        **参数解释**： 磁盘类型。 **取值范围**： - system:：系统盘。 - data：数据盘。 - log：日志盘。
 
         :return: The disk_type of this DiskResp.
         :rtype: str
@@ -233,7 +233,7 @@ class DiskResp:
     def disk_type(self, disk_type):
         r"""Sets the disk_type of this DiskResp.
 
-        **参数解释**： 磁盘类型(系统盘、数据盘、日志盘)。 **取值范围**： 不涉及。
+        **参数解释**： 磁盘类型。 **取值范围**： - system:：系统盘。 - data：数据盘。 - log：日志盘。
 
         :param disk_type: The disk_type of this DiskResp.
         :type disk_type: str

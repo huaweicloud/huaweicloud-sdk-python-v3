@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class ModelType:
-    """
-    allowed enum values
-    """
-    BINARY = "binary"
-    NUMERICAL = "numerical"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

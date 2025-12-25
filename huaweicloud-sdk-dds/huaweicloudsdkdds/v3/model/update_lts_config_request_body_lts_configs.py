@@ -16,7 +16,7 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
 
     openapi_types = {
         'instance_id': 'str',
-        'log_type': 'LtsLogType',
+        'log_type': 'str',
         'lts_group_id': 'str',
         'lts_stream_id': 'str'
     }
@@ -35,8 +35,8 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
 
         :param instance_id: 实例ID，可以调用“[查询实例列表和详情](x-wc://file&#x3D;zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file&#x3D;zh-cn_topic_0000001369734929.xml)”接口创建。
         :type instance_id: str
-        :param log_type: 
-        :type log_type: :class:`huaweicloudsdkdds.v3.LtsLogType`
+        :param log_type: LTS日志类型，不能为空，具有以下日志类型。 - audit_log
+        :type log_type: str
         :param lts_group_id: LTS日志组ID。可通过云日志服务-“查询账号下所有日志组”API接口获取。
         :type lts_group_id: str
         :param lts_stream_id: LTS日志流ID。可通过云日志服务-“查询指定日志组下的所有日志流”API接口获取。
@@ -82,8 +82,10 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
     def log_type(self):
         r"""Gets the log_type of this UpdateLtsConfigRequestBodyLtsConfigs.
 
+        LTS日志类型，不能为空，具有以下日志类型。 - audit_log
+
         :return: The log_type of this UpdateLtsConfigRequestBodyLtsConfigs.
-        :rtype: :class:`huaweicloudsdkdds.v3.LtsLogType`
+        :rtype: str
         """
         return self._log_type
 
@@ -91,8 +93,10 @@ class UpdateLtsConfigRequestBodyLtsConfigs:
     def log_type(self, log_type):
         r"""Sets the log_type of this UpdateLtsConfigRequestBodyLtsConfigs.
 
+        LTS日志类型，不能为空，具有以下日志类型。 - audit_log
+
         :param log_type: The log_type of this UpdateLtsConfigRequestBodyLtsConfigs.
-        :type log_type: :class:`huaweicloudsdkdds.v3.LtsLogType`
+        :type log_type: str
         """
         self._log_type = log_type
 

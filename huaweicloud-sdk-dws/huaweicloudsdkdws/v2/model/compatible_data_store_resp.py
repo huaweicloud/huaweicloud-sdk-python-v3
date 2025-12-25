@@ -29,7 +29,7 @@ class CompatibleDataStoreResp:
 
         The model defined in huaweicloud sdk
 
-        :param type: **参数解释**： 数据库类型。 **取值范围**： 不涉及。
+        :param type: **参数解释**： 数据库类型。 **取值范围**： - dws：云数仓 - hybrid：实时数仓
         :type type: str
         :param version: **参数解释**： 版本。 **取值范围**： 不涉及。
         :type version: str
@@ -50,7 +50,7 @@ class CompatibleDataStoreResp:
     def type(self):
         r"""Gets the type of this CompatibleDataStoreResp.
 
-        **参数解释**： 数据库类型。 **取值范围**： 不涉及。
+        **参数解释**： 数据库类型。 **取值范围**： - dws：云数仓 - hybrid：实时数仓
 
         :return: The type of this CompatibleDataStoreResp.
         :rtype: str
@@ -61,7 +61,7 @@ class CompatibleDataStoreResp:
     def type(self, type):
         r"""Sets the type of this CompatibleDataStoreResp.
 
-        **参数解释**： 数据库类型。 **取值范围**： 不涉及。
+        **参数解释**： 数据库类型。 **取值范围**： - dws：云数仓 - hybrid：实时数仓
 
         :param type: The type of this CompatibleDataStoreResp.
         :type type: str

@@ -17,15 +17,17 @@ class ListImageMembersResponse(SdkResponse):
 
     openapi_types = {
         'members': 'list[ImageMember]',
-        'schema': 'str'
+        'schema': 'str',
+        'page_info': 'GlancePageInfo'
     }
 
     attribute_map = {
         'members': 'members',
-        'schema': 'schema'
+        'schema': 'schema',
+        'page_info': 'page_info'
     }
 
-    def __init__(self, members=None, schema=None):
+    def __init__(self, members=None, schema=None, page_info=None):
         r"""ListImageMembersResponse
 
         The model defined in huaweicloud sdk
@@ -34,18 +36,23 @@ class ListImageMembersResponse(SdkResponse):
         :type members: list[:class:`huaweicloudsdkims.v2.ImageMember`]
         :param schema: 视图信息
         :type schema: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkims.v2.GlancePageInfo`
         """
         
         super().__init__()
 
         self._members = None
         self._schema = None
+        self._page_info = None
         self.discriminator = None
 
         if members is not None:
             self.members = members
         if schema is not None:
             self.schema = schema
+        if page_info is not None:
+            self.page_info = page_info
 
     @property
     def members(self):
@@ -90,6 +97,24 @@ class ListImageMembersResponse(SdkResponse):
         :type schema: str
         """
         self._schema = schema
+
+    @property
+    def page_info(self):
+        r"""Gets the page_info of this ListImageMembersResponse.
+
+        :return: The page_info of this ListImageMembersResponse.
+        :rtype: :class:`huaweicloudsdkims.v2.GlancePageInfo`
+        """
+        return self._page_info
+
+    @page_info.setter
+    def page_info(self, page_info):
+        r"""Sets the page_info of this ListImageMembersResponse.
+
+        :param page_info: The page_info of this ListImageMembersResponse.
+        :type page_info: :class:`huaweicloudsdkims.v2.GlancePageInfo`
+        """
+        self._page_info = page_info
 
     def to_dict(self):
         import warnings

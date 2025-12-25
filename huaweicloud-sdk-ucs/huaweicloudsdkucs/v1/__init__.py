@@ -159,9 +159,7 @@ from huaweicloudsdkucs.v1.model.muti_workload import MutiWorkload
 from huaweicloudsdkucs.v1.model.named_auth_info import NamedAuthInfo
 from huaweicloudsdkucs.v1.model.named_cluster import NamedCluster
 from huaweicloudsdkucs.v1.model.named_context import NamedContext
-from huaweicloudsdkucs.v1.model.network_config import NetworkConfig
 from huaweicloudsdkucs.v1.model.node_summary import NodeSummary
-from huaweicloudsdkucs.v1.model.node_upgrade_strategy import NodeUpgradeStrategy
 from huaweicloudsdkucs.v1.model.object_meta import ObjectMeta
 from huaweicloudsdkucs.v1.model.on_premises_config import OnPremisesConfig
 from huaweicloudsdkucs.v1.model.on_premises_version_info import OnPremisesVersionInfo
@@ -198,7 +196,6 @@ from huaweicloudsdkucs.v1.model.resource_selector import ResourceSelector
 from huaweicloudsdkucs.v1.model.resource_summary import ResourceSummary
 from huaweicloudsdkucs.v1.model.retry_cluster_activation_request import RetryClusterActivationRequest
 from huaweicloudsdkucs.v1.model.retry_cluster_activation_response import RetryClusterActivationResponse
-from huaweicloudsdkucs.v1.model.rolling_update_node_upgrade_strategy import RollingUpdateNodeUpgradeStrategy
 from huaweicloudsdkucs.v1.model.rule import Rule
 from huaweicloudsdkucs.v1.model.rule_id_namespaces import RuleIDNamespaces
 from huaweicloudsdkucs.v1.model.rule_info import RuleInfo
@@ -292,5 +289,4 @@ from huaweicloudsdkucs.v1.model.update_rule_response import UpdateRuleResponse
 from huaweicloudsdkucs.v1.model.upgrade_federation_request import UpgradeFederationRequest
 from huaweicloudsdkucs.v1.model.upgrade_federation_request_body import UpgradeFederationRequestBody
 from huaweicloudsdkucs.v1.model.upgrade_federation_response import UpgradeFederationResponse
-from huaweicloudsdkucs.v1.model.worker_config import WorkerConfig
 

@@ -15,7 +15,7 @@ class DownloadPublicDataReq:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'DownloadPublicDataTypeEnum',
+        'type': 'str',
         'url': 'str'
     }
 
@@ -29,8 +29,8 @@ class DownloadPublicDataReq:
 
         The model defined in huaweicloud sdk
 
-        :param type: 
-        :type type: :class:`huaweicloudsdkeihealth.v1.DownloadPublicDataTypeEnum`
+        :param type: **参数解释**：   下载类型，仅支持PUBLIC、EXTRANET。   **约束限制**：   不涉及   **取值范围**：   * PUBLIC：公共数据   * EXTRANET：外部数据   **默认取值**：   不涉及 
+        :type type: str
         :param url: **参数解释**：   资源地址，支持https、obs地址。   **约束限制**：   不涉及   **取值范围**：   长度为[1-2000]个字符。 **默认取值**：   不涉及 
         :type url: str
         """
@@ -50,8 +50,10 @@ class DownloadPublicDataReq:
     def type(self):
         r"""Gets the type of this DownloadPublicDataReq.
 
+        **参数解释**：   下载类型，仅支持PUBLIC、EXTRANET。   **约束限制**：   不涉及   **取值范围**：   * PUBLIC：公共数据   * EXTRANET：外部数据   **默认取值**：   不涉及 
+
         :return: The type of this DownloadPublicDataReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadPublicDataTypeEnum`
+        :rtype: str
         """
         return self._type
 
@@ -59,8 +61,10 @@ class DownloadPublicDataReq:
     def type(self, type):
         r"""Sets the type of this DownloadPublicDataReq.
 
+        **参数解释**：   下载类型，仅支持PUBLIC、EXTRANET。   **约束限制**：   不涉及   **取值范围**：   * PUBLIC：公共数据   * EXTRANET：外部数据   **默认取值**：   不涉及 
+
         :param type: The type of this DownloadPublicDataReq.
-        :type type: :class:`huaweicloudsdkeihealth.v1.DownloadPublicDataTypeEnum`
+        :type type: str
         """
         self._type = type
 

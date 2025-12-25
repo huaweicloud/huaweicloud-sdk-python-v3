@@ -21,7 +21,7 @@ class SearchBaselineResponse(SdkResponse):
         'size': 'int',
         'page': 'int',
         'success': 'bool',
-        'data': 'list[str]'
+        'data': 'list[object]'
     }
 
     attribute_map = {
@@ -49,7 +49,7 @@ class SearchBaselineResponse(SdkResponse):
         :param success: 是否成功
         :type success: bool
         :param data: 查询结果列表
-        :type data: list[str]
+        :type data: list[object]
         """
         
         super().__init__()
@@ -192,7 +192,7 @@ class SearchBaselineResponse(SdkResponse):
         查询结果列表
 
         :return: The data of this SearchBaselineResponse.
-        :rtype: list[str]
+        :rtype: list[object]
         """
         return self._data
 
@@ -203,7 +203,7 @@ class SearchBaselineResponse(SdkResponse):
         查询结果列表
 
         :param data: The data of this SearchBaselineResponse.
-        :type data: list[str]
+        :type data: list[object]
         """
         self._data = data
 

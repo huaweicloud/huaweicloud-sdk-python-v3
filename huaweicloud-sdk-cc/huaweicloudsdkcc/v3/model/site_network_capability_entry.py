@@ -17,18 +17,18 @@ class SiteNetworkCapabilityEntry:
     openapi_types = {
         'id': 'str',
         'domain_id': 'str',
-        'specification': 'SiteNetworkSpecificationEnum',
+        'specification': 'str',
         'is_support': 'bool',
         'is_support_enterprise_project': 'bool',
         'is_support_tag': 'bool',
         'is_support_intra_region': 'bool',
-        'support_topologies': 'list[SiteNetworkTopologyEnum]',
+        'support_topologies': 'list[str]',
         'support_regions': 'list[str]',
         'support_dscp_regions': 'list[str]',
         'support_freeze_regions': 'list[str]',
         'support_locations': 'list[str]',
         'size_range': 'ConnectionBandwidthSizeRange',
-        'charge_mode': 'list[ConnectionBandwidthChargeModeEnum]'
+        'charge_mode': 'list[str]'
     }
 
     attribute_map = {
@@ -57,8 +57,8 @@ class SiteNetworkCapabilityEntry:
         :type id: str
         :param domain_id: 实例所属账号ID。
         :type domain_id: str
-        :param specification: 
-        :type specification: :class:`huaweicloudsdkcc.v3.SiteNetworkSpecificationEnum`
+        :param specification: 分支网络的规格类型定义： - site-network.is-support: 支持分支网络。 - site-network.is-support-enterprise-project: 支持分支网络的企业项目。 - site-network.is-support-tag: 支持分支网络的标签能力。 - site-network.is-support-intra-region: 支持同region创建分支网络。 - site-network.support-topologies: 支持分支网络拓扑。 - site-network.support-regions: 支持分支接入的Region列表。 - site-network.support-dscp-regions: 支持分支接入的Region列表 - site-network.support-freeze-regions: 支持分支网络冻结的Region列表 - site-network.support-locations: 支持分支接入点列表。 - site-connection-bandwidth.size-range: 分支连接带宽大小的范围。 - site-connection-bandwidth.charge-mode: 分支连接带宽计费类型。 - site-connection-bandwidth.free-line: 分支连接带宽免费线路。
+        :type specification: str
         :param is_support: 是否支持分支网络。
         :type is_support: bool
         :param is_support_enterprise_project: 是否支持分支网络企业项目。
@@ -68,7 +68,7 @@ class SiteNetworkCapabilityEntry:
         :param is_support_intra_region: 是否支持创建同region分支网络。
         :type is_support_intra_region: bool
         :param support_topologies: 分支网络的拓扑列表。
-        :type support_topologies: list[:class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`]
+        :type support_topologies: list[str]
         :param support_regions: list类型
         :type support_regions: list[str]
         :param support_dscp_regions: list类型
@@ -80,7 +80,7 @@ class SiteNetworkCapabilityEntry:
         :param size_range: 
         :type size_range: :class:`huaweicloudsdkcc.v3.ConnectionBandwidthSizeRange`
         :param charge_mode: list类型
-        :type charge_mode: list[:class:`huaweicloudsdkcc.v3.ConnectionBandwidthChargeModeEnum`]
+        :type charge_mode: list[str]
         """
         
         
@@ -175,8 +175,10 @@ class SiteNetworkCapabilityEntry:
     def specification(self):
         r"""Gets the specification of this SiteNetworkCapabilityEntry.
 
+        分支网络的规格类型定义： - site-network.is-support: 支持分支网络。 - site-network.is-support-enterprise-project: 支持分支网络的企业项目。 - site-network.is-support-tag: 支持分支网络的标签能力。 - site-network.is-support-intra-region: 支持同region创建分支网络。 - site-network.support-topologies: 支持分支网络拓扑。 - site-network.support-regions: 支持分支接入的Region列表。 - site-network.support-dscp-regions: 支持分支接入的Region列表 - site-network.support-freeze-regions: 支持分支网络冻结的Region列表 - site-network.support-locations: 支持分支接入点列表。 - site-connection-bandwidth.size-range: 分支连接带宽大小的范围。 - site-connection-bandwidth.charge-mode: 分支连接带宽计费类型。 - site-connection-bandwidth.free-line: 分支连接带宽免费线路。
+
         :return: The specification of this SiteNetworkCapabilityEntry.
-        :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkSpecificationEnum`
+        :rtype: str
         """
         return self._specification
 
@@ -184,8 +186,10 @@ class SiteNetworkCapabilityEntry:
     def specification(self, specification):
         r"""Sets the specification of this SiteNetworkCapabilityEntry.
 
+        分支网络的规格类型定义： - site-network.is-support: 支持分支网络。 - site-network.is-support-enterprise-project: 支持分支网络的企业项目。 - site-network.is-support-tag: 支持分支网络的标签能力。 - site-network.is-support-intra-region: 支持同region创建分支网络。 - site-network.support-topologies: 支持分支网络拓扑。 - site-network.support-regions: 支持分支接入的Region列表。 - site-network.support-dscp-regions: 支持分支接入的Region列表 - site-network.support-freeze-regions: 支持分支网络冻结的Region列表 - site-network.support-locations: 支持分支接入点列表。 - site-connection-bandwidth.size-range: 分支连接带宽大小的范围。 - site-connection-bandwidth.charge-mode: 分支连接带宽计费类型。 - site-connection-bandwidth.free-line: 分支连接带宽免费线路。
+
         :param specification: The specification of this SiteNetworkCapabilityEntry.
-        :type specification: :class:`huaweicloudsdkcc.v3.SiteNetworkSpecificationEnum`
+        :type specification: str
         """
         self._specification = specification
 
@@ -284,7 +288,7 @@ class SiteNetworkCapabilityEntry:
         分支网络的拓扑列表。
 
         :return: The support_topologies of this SiteNetworkCapabilityEntry.
-        :rtype: list[:class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`]
+        :rtype: list[str]
         """
         return self._support_topologies
 
@@ -295,7 +299,7 @@ class SiteNetworkCapabilityEntry:
         分支网络的拓扑列表。
 
         :param support_topologies: The support_topologies of this SiteNetworkCapabilityEntry.
-        :type support_topologies: list[:class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`]
+        :type support_topologies: list[str]
         """
         self._support_topologies = support_topologies
 
@@ -412,7 +416,7 @@ class SiteNetworkCapabilityEntry:
         list类型
 
         :return: The charge_mode of this SiteNetworkCapabilityEntry.
-        :rtype: list[:class:`huaweicloudsdkcc.v3.ConnectionBandwidthChargeModeEnum`]
+        :rtype: list[str]
         """
         return self._charge_mode
 
@@ -423,7 +427,7 @@ class SiteNetworkCapabilityEntry:
         list类型
 
         :param charge_mode: The charge_mode of this SiteNetworkCapabilityEntry.
-        :type charge_mode: list[:class:`huaweicloudsdkcc.v3.ConnectionBandwidthChargeModeEnum`]
+        :type charge_mode: list[str]
         """
         self._charge_mode = charge_mode
 

@@ -4,12 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AlarmNamespaceEnum:
-    """
-    allowed enum values
-    """
-    SYS_CBR = "SYS.CBR"
-    SYS_RDS = "SYS.RDS"
-    SYS_GAUSSDB = "SYS.GaussDB"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

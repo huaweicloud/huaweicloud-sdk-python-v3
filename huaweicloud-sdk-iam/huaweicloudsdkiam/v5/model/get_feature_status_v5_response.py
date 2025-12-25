@@ -16,7 +16,7 @@ class GetFeatureStatusV5Response(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'feature_status': 'FeatureStatus'
+        'feature_status': 'str'
     }
 
     attribute_map = {
@@ -28,8 +28,8 @@ class GetFeatureStatusV5Response(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param feature_status: 
-        :type feature_status: :class:`huaweicloudsdkiam.v5.FeatureStatus`
+        :param feature_status: 功能状态。
+        :type feature_status: str
         """
         
         super().__init__()
@@ -44,8 +44,10 @@ class GetFeatureStatusV5Response(SdkResponse):
     def feature_status(self):
         r"""Gets the feature_status of this GetFeatureStatusV5Response.
 
+        功能状态。
+
         :return: The feature_status of this GetFeatureStatusV5Response.
-        :rtype: :class:`huaweicloudsdkiam.v5.FeatureStatus`
+        :rtype: str
         """
         return self._feature_status
 
@@ -53,8 +55,10 @@ class GetFeatureStatusV5Response(SdkResponse):
     def feature_status(self, feature_status):
         r"""Sets the feature_status of this GetFeatureStatusV5Response.
 
+        功能状态。
+
         :param feature_status: The feature_status of this GetFeatureStatusV5Response.
-        :type feature_status: :class:`huaweicloudsdkiam.v5.FeatureStatus`
+        :type feature_status: str
         """
         self._feature_status = feature_status
 

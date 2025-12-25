@@ -29,9 +29,9 @@ class MetricDataPointDimensions:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数解释**： 指标维度值 **取值范围**： 最小长度1，最大长度32 
+        :param name: **参数解释**： 资源维度名称 **取值范围**： 最小长度1，最大长度32 
         :type name: str
-        :param value: **参数解释**： 指标维度值 **取值范围**： 最小长度1，最大长度256 
+        :param value: **参数解释**： 资源维度值 **取值范围**： 最小长度1，最大长度256 
         :type value: str
         """
         
@@ -48,7 +48,7 @@ class MetricDataPointDimensions:
     def name(self):
         r"""Gets the name of this MetricDataPointDimensions.
 
-        **参数解释**： 指标维度值 **取值范围**： 最小长度1，最大长度32 
+        **参数解释**： 资源维度名称 **取值范围**： 最小长度1，最大长度32 
 
         :return: The name of this MetricDataPointDimensions.
         :rtype: str
@@ -59,7 +59,7 @@ class MetricDataPointDimensions:
     def name(self, name):
         r"""Sets the name of this MetricDataPointDimensions.
 
-        **参数解释**： 指标维度值 **取值范围**： 最小长度1，最大长度32 
+        **参数解释**： 资源维度名称 **取值范围**： 最小长度1，最大长度32 
 
         :param name: The name of this MetricDataPointDimensions.
         :type name: str
@@ -70,7 +70,7 @@ class MetricDataPointDimensions:
     def value(self):
         r"""Gets the value of this MetricDataPointDimensions.
 
-        **参数解释**： 指标维度值 **取值范围**： 最小长度1，最大长度256 
+        **参数解释**： 资源维度值 **取值范围**： 最小长度1，最大长度256 
 
         :return: The value of this MetricDataPointDimensions.
         :rtype: str
@@ -81,7 +81,7 @@ class MetricDataPointDimensions:
     def value(self, value):
         r"""Sets the value of this MetricDataPointDimensions.
 
-        **参数解释**： 指标维度值 **取值范围**： 最小长度1，最大长度256 
+        **参数解释**： 资源维度值 **取值范围**： 最小长度1，最大长度256 
 
         :param value: The value of this MetricDataPointDimensions.
         :type value: str

@@ -15,9 +15,9 @@ class UpdateImageReq:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'ImageType',
+        'type': 'str',
         'description': 'str',
-        'chip_type': 'ImageChipType'
+        'chip_type': 'str'
     }
 
     attribute_map = {
@@ -32,11 +32,11 @@ class UpdateImageReq:
         The model defined in huaweicloud sdk
 
         :param type: 
-        :type type: :class:`huaweicloudsdkeihealth.v1.ImageType`
+        :type type: str
         :param description: 描述信息
         :type description: str
         :param chip_type: 
-        :type chip_type: :class:`huaweicloudsdkeihealth.v1.ImageChipType`
+        :type chip_type: str
         """
         
         
@@ -58,7 +58,7 @@ class UpdateImageReq:
         r"""Gets the type of this UpdateImageReq.
 
         :return: The type of this UpdateImageReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ImageType`
+        :rtype: str
         """
         return self._type
 
@@ -67,7 +67,7 @@ class UpdateImageReq:
         r"""Sets the type of this UpdateImageReq.
 
         :param type: The type of this UpdateImageReq.
-        :type type: :class:`huaweicloudsdkeihealth.v1.ImageType`
+        :type type: str
         """
         self._type = type
 
@@ -98,7 +98,7 @@ class UpdateImageReq:
         r"""Gets the chip_type of this UpdateImageReq.
 
         :return: The chip_type of this UpdateImageReq.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.ImageChipType`
+        :rtype: str
         """
         return self._chip_type
 
@@ -107,7 +107,7 @@ class UpdateImageReq:
         r"""Sets the chip_type of this UpdateImageReq.
 
         :param chip_type: The chip_type of this UpdateImageReq.
-        :type chip_type: :class:`huaweicloudsdkeihealth.v1.ImageChipType`
+        :type chip_type: str
         """
         self._chip_type = chip_type
 

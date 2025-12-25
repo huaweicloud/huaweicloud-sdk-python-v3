@@ -15,7 +15,7 @@ class DefaultRecordConfig:
     sensitive_list = []
 
     openapi_types = {
-        'record_format': 'list[VideoFormatVar]',
+        'record_format': 'list[str]',
         'obs_addr': 'RecordObsFileAddr',
         'hls_config': 'HLSRecordConfig',
         'flv_config': 'FLVRecordConfig',
@@ -36,7 +36,7 @@ class DefaultRecordConfig:
         The model defined in huaweicloud sdk
 
         :param record_format: 录制格式，当前支持：FLV，HLS，MP4三种格式，设置格式时必须使用大写字母
-        :type record_format: list[:class:`huaweicloudsdklive.v1.VideoFormatVar`]
+        :type record_format: list[str]
         :param obs_addr: 
         :type obs_addr: :class:`huaweicloudsdklive.v1.RecordObsFileAddr`
         :param hls_config: 
@@ -72,7 +72,7 @@ class DefaultRecordConfig:
         录制格式，当前支持：FLV，HLS，MP4三种格式，设置格式时必须使用大写字母
 
         :return: The record_format of this DefaultRecordConfig.
-        :rtype: list[:class:`huaweicloudsdklive.v1.VideoFormatVar`]
+        :rtype: list[str]
         """
         return self._record_format
 
@@ -83,7 +83,7 @@ class DefaultRecordConfig:
         录制格式，当前支持：FLV，HLS，MP4三种格式，设置格式时必须使用大写字母
 
         :param record_format: The record_format of this DefaultRecordConfig.
-        :type record_format: list[:class:`huaweicloudsdklive.v1.VideoFormatVar`]
+        :type record_format: list[str]
         """
         self._record_format = record_format
 

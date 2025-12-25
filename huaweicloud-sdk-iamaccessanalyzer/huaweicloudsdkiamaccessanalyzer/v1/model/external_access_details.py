@@ -19,7 +19,7 @@ class ExternalAccessDetails:
         'condition': 'list[FindingCondition]',
         'is_public': 'bool',
         'principal': 'FindingPrincipal',
-        'sources': 'list[FindingSourceType]'
+        'sources': 'list[str]'
     }
 
     attribute_map = {
@@ -44,7 +44,7 @@ class ExternalAccessDetails:
         :param principal: 
         :type principal: :class:`huaweicloudsdkiamaccessanalyzer.v1.FindingPrincipal`
         :param sources: 访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
-        :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
+        :type sources: list[str]
         """
         
         
@@ -154,7 +154,7 @@ class ExternalAccessDetails:
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
         :return: The sources of this ExternalAccessDetails.
-        :rtype: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
+        :rtype: list[str]
         """
         return self._sources
 
@@ -165,7 +165,7 @@ class ExternalAccessDetails:
         访问分析结果的来源，这指示如何授予生成访问分析结果的访问权限。
 
         :param sources: The sources of this ExternalAccessDetails.
-        :type sources: list[:class:`huaweicloudsdkiamaccessanalyzer.v1.FindingSourceType`]
+        :type sources: list[str]
         """
         self._sources = sources
 

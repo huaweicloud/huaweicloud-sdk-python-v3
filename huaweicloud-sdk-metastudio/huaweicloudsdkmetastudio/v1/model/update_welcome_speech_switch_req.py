@@ -17,7 +17,7 @@ class UpdateWelcomeSpeechSwitchReq:
     openapi_types = {
         'robot_id': 'str',
         'enable_welcome_speech': 'bool',
-        'language': 'LanguageEnum'
+        'language': 'str'
     }
 
     attribute_map = {
@@ -35,8 +35,8 @@ class UpdateWelcomeSpeechSwitchReq:
         :type robot_id: str
         :param enable_welcome_speech: 欢迎词功能开关。
         :type enable_welcome_speech: bool
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         """
         
         
@@ -99,8 +99,10 @@ class UpdateWelcomeSpeechSwitchReq:
     def language(self):
         r"""Gets the language of this UpdateWelcomeSpeechSwitchReq.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this UpdateWelcomeSpeechSwitchReq.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -108,8 +110,10 @@ class UpdateWelcomeSpeechSwitchReq:
     def language(self, language):
         r"""Sets the language of this UpdateWelcomeSpeechSwitchReq.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this UpdateWelcomeSpeechSwitchReq.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

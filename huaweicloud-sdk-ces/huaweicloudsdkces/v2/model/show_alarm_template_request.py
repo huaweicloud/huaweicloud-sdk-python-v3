@@ -27,7 +27,7 @@ class ShowAlarmTemplateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param template_id: 告警模板的ID，以at开头，后跟字母、数字，长度最长为64
+        :param template_id: **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
         :type template_id: str
         """
         
@@ -42,7 +42,7 @@ class ShowAlarmTemplateRequest:
     def template_id(self):
         r"""Gets the template_id of this ShowAlarmTemplateRequest.
 
-        告警模板的ID，以at开头，后跟字母、数字，长度最长为64
+        **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The template_id of this ShowAlarmTemplateRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class ShowAlarmTemplateRequest:
     def template_id(self, template_id):
         r"""Sets the template_id of this ShowAlarmTemplateRequest.
 
-        告警模板的ID，以at开头，后跟字母、数字，长度最长为64
+        **参数解释**： 告警模板的ID。     **约束限制**： 不涉及。 **取值范围**： 以at开头，后跟字母、数字，长度为[2,64]个字符。           **默认取值**： 不涉及。 
 
         :param template_id: The template_id of this ShowAlarmTemplateRequest.
         :type template_id: str

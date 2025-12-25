@@ -33,7 +33,7 @@ class FlavorVolumeNodeInfo:
 
         The model defined in huaweicloud sdk
 
-        :param volume_type: **参数解释**： 节点使用存储类型。 **取值范围**： 不涉及。
+        :param volume_type: **参数解释**： 节点使用存储类型。 **取值范围**： - SATA：普通IO。 - SAS：高IO。 - SSD：超高IO。 - ESSD：极速型SSD。 - GPSSD：通用型SSD。
         :type volume_type: str
         :param volume_num: **参数解释**： 节点使用的磁盘数量。 **取值范围**： 不涉及。
         :type volume_num: int
@@ -60,7 +60,7 @@ class FlavorVolumeNodeInfo:
     def volume_type(self):
         r"""Gets the volume_type of this FlavorVolumeNodeInfo.
 
-        **参数解释**： 节点使用存储类型。 **取值范围**： 不涉及。
+        **参数解释**： 节点使用存储类型。 **取值范围**： - SATA：普通IO。 - SAS：高IO。 - SSD：超高IO。 - ESSD：极速型SSD。 - GPSSD：通用型SSD。
 
         :return: The volume_type of this FlavorVolumeNodeInfo.
         :rtype: str
@@ -71,7 +71,7 @@ class FlavorVolumeNodeInfo:
     def volume_type(self, volume_type):
         r"""Sets the volume_type of this FlavorVolumeNodeInfo.
 
-        **参数解释**： 节点使用存储类型。 **取值范围**： 不涉及。
+        **参数解释**： 节点使用存储类型。 **取值范围**： - SATA：普通IO。 - SAS：高IO。 - SSD：超高IO。 - ESSD：极速型SSD。 - GPSSD：通用型SSD。
 
         :param volume_type: The volume_type of this FlavorVolumeNodeInfo.
         :type volume_type: str

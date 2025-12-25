@@ -21,7 +21,7 @@ class ListEndpointsRequest:
         'model_id': 'str',
         'name': 'str',
         'endpoint_id': 'str',
-        'type': 'EndpointType',
+        'type': 'str',
         'visibility': 'str'
     }
 
@@ -53,8 +53,8 @@ class ListEndpointsRequest:
         :type name: str
         :param endpoint_id: 通过id检索Endpoint的参数
         :type endpoint_id: str
-        :param type: 通过类型检索Endpoint的参数
-        :type type: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
+        :param type: Endpoint的类型  - service：Service EP，代表一个可接收Service请求资源组  - ray：Ray on k8s的EP，代表一个Ray集群  - inference：推理的EP，代表一个推理函数实例  - job：Job EP，代表一个可接收Job请求资源组
+        :type type: str
         :param visibility: 可见性检索的参数，可选值为： - PRIVATE: 私有，用户自己创建的； - PUBLIC:公共，查询所有公共的，包括其他用户创建的； - ALL: 所有的； - 默认为空，不填表示不限制，则查出当前用户下的，包括PRIVATE和PUBLIC，不包括其他用户创建的。
         :type visibility: str
         """
@@ -223,10 +223,10 @@ class ListEndpointsRequest:
     def type(self):
         r"""Gets the type of this ListEndpointsRequest.
 
-        通过类型检索Endpoint的参数
+        Endpoint的类型  - service：Service EP，代表一个可接收Service请求资源组  - ray：Ray on k8s的EP，代表一个Ray集群  - inference：推理的EP，代表一个推理函数实例  - job：Job EP，代表一个可接收Job请求资源组
 
         :return: The type of this ListEndpointsRequest.
-        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
+        :rtype: str
         """
         return self._type
 
@@ -234,10 +234,10 @@ class ListEndpointsRequest:
     def type(self, type):
         r"""Sets the type of this ListEndpointsRequest.
 
-        通过类型检索Endpoint的参数
+        Endpoint的类型  - service：Service EP，代表一个可接收Service请求资源组  - ray：Ray on k8s的EP，代表一个Ray集群  - inference：推理的EP，代表一个推理函数实例  - job：Job EP，代表一个可接收Job请求资源组
 
         :param type: The type of this ListEndpointsRequest.
-        :type type: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
+        :type type: str
         """
         self._type = type
 

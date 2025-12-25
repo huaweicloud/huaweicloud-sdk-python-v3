@@ -53,7 +53,7 @@ class BackupStrategyDetail:
         :type policy_name: str
         :param backup_strategy: **参数解释**： 执行策略，一般为crontab表达式。 **取值范围**： 不涉及。
         :type backup_strategy: str
-        :param backup_type: **参数解释**： 备份类型。 **取值范围**： 不涉及。
+        :param backup_type: **参数解释**： 备份类型。 **取值范围**： - full: 全量。 - increment: 增量。
         :type backup_type: str
         :param backup_level: **参数解释**： 备份级别。 **取值范围**： 不涉及。
         :type backup_level: str
@@ -179,7 +179,7 @@ class BackupStrategyDetail:
     def backup_type(self):
         r"""Gets the backup_type of this BackupStrategyDetail.
 
-        **参数解释**： 备份类型。 **取值范围**： 不涉及。
+        **参数解释**： 备份类型。 **取值范围**： - full: 全量。 - increment: 增量。
 
         :return: The backup_type of this BackupStrategyDetail.
         :rtype: str
@@ -190,7 +190,7 @@ class BackupStrategyDetail:
     def backup_type(self, backup_type):
         r"""Sets the backup_type of this BackupStrategyDetail.
 
-        **参数解释**： 备份类型。 **取值范围**： 不涉及。
+        **参数解释**： 备份类型。 **取值范围**： - full: 全量。 - increment: 增量。
 
         :param backup_type: The backup_type of this BackupStrategyDetail.
         :type backup_type: str

@@ -15,7 +15,7 @@ class ProbeDrugFile:
     sensitive_list = []
 
     openapi_types = {
-        'source': 'DrugFileSource',
+        'source': 'str',
         'url': 'str',
         'format': 'str',
         'data': 'str'
@@ -33,8 +33,8 @@ class ProbeDrugFile:
 
         The model defined in huaweicloud sdk
 
-        :param source: 
-        :type source: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
+        :param source: 受体的数据源：外部网络数据（如RCSB在线数据库）、用户私有数据中心、承载租户公共数据（含样例/公共库）
+        :type source: str
         :param url: 文件URL，当数据源为外部网络数据时为https地址；用户私有数据中心为项目路径、公共数据场景为obs地址
         :type url: str
         :param format: 文件格式，支持PDB、SDF、MOL2，仅数据源为RAW时提供
@@ -63,8 +63,10 @@ class ProbeDrugFile:
     def source(self):
         r"""Gets the source of this ProbeDrugFile.
 
+        受体的数据源：外部网络数据（如RCSB在线数据库）、用户私有数据中心、承载租户公共数据（含样例/公共库）
+
         :return: The source of this ProbeDrugFile.
-        :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
+        :rtype: str
         """
         return self._source
 
@@ -72,8 +74,10 @@ class ProbeDrugFile:
     def source(self, source):
         r"""Sets the source of this ProbeDrugFile.
 
+        受体的数据源：外部网络数据（如RCSB在线数据库）、用户私有数据中心、承载租户公共数据（含样例/公共库）
+
         :param source: The source of this ProbeDrugFile.
-        :type source: :class:`huaweicloudsdkeihealth.v1.DrugFileSource`
+        :type source: str
         """
         self._source = source
 

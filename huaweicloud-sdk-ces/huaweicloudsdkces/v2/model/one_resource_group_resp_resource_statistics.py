@@ -33,13 +33,13 @@ class OneResourceGroupRespResourceStatistics:
 
         The model defined in huaweicloud sdk
 
-        :param unhealthy: 告警中的资源数
+        :param unhealthy: **参数解释** 该资源分组中当前处在告警状态的资源个数。  **取值范围** 在[0,9999999]区间内。
         :type unhealthy: int
-        :param total: 资源总数
+        :param total: **参数解释** 该资源分组中资源的总个数。  **取值范围** 在[0,9999999]区间内。
         :type total: int
-        :param event_unhealthy: 已触发的资源数
+        :param event_unhealthy: **参数解释** 该资源分组中已触发的资源个数。  **取值范围** 在[0,9999999]区间内。
         :type event_unhealthy: int
-        :param namespaces: 资源类型数
+        :param namespaces: **参数解释** 该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。 **取值范围** 在[0,9999999]区间内。
         :type namespaces: int
         """
         
@@ -64,7 +64,7 @@ class OneResourceGroupRespResourceStatistics:
     def unhealthy(self):
         r"""Gets the unhealthy of this OneResourceGroupRespResourceStatistics.
 
-        告警中的资源数
+        **参数解释** 该资源分组中当前处在告警状态的资源个数。  **取值范围** 在[0,9999999]区间内。
 
         :return: The unhealthy of this OneResourceGroupRespResourceStatistics.
         :rtype: int
@@ -75,7 +75,7 @@ class OneResourceGroupRespResourceStatistics:
     def unhealthy(self, unhealthy):
         r"""Sets the unhealthy of this OneResourceGroupRespResourceStatistics.
 
-        告警中的资源数
+        **参数解释** 该资源分组中当前处在告警状态的资源个数。  **取值范围** 在[0,9999999]区间内。
 
         :param unhealthy: The unhealthy of this OneResourceGroupRespResourceStatistics.
         :type unhealthy: int
@@ -86,7 +86,7 @@ class OneResourceGroupRespResourceStatistics:
     def total(self):
         r"""Gets the total of this OneResourceGroupRespResourceStatistics.
 
-        资源总数
+        **参数解释** 该资源分组中资源的总个数。  **取值范围** 在[0,9999999]区间内。
 
         :return: The total of this OneResourceGroupRespResourceStatistics.
         :rtype: int
@@ -97,7 +97,7 @@ class OneResourceGroupRespResourceStatistics:
     def total(self, total):
         r"""Sets the total of this OneResourceGroupRespResourceStatistics.
 
-        资源总数
+        **参数解释** 该资源分组中资源的总个数。  **取值范围** 在[0,9999999]区间内。
 
         :param total: The total of this OneResourceGroupRespResourceStatistics.
         :type total: int
@@ -108,7 +108,7 @@ class OneResourceGroupRespResourceStatistics:
     def event_unhealthy(self):
         r"""Gets the event_unhealthy of this OneResourceGroupRespResourceStatistics.
 
-        已触发的资源数
+        **参数解释** 该资源分组中已触发的资源个数。  **取值范围** 在[0,9999999]区间内。
 
         :return: The event_unhealthy of this OneResourceGroupRespResourceStatistics.
         :rtype: int
@@ -119,7 +119,7 @@ class OneResourceGroupRespResourceStatistics:
     def event_unhealthy(self, event_unhealthy):
         r"""Sets the event_unhealthy of this OneResourceGroupRespResourceStatistics.
 
-        已触发的资源数
+        **参数解释** 该资源分组中已触发的资源个数。  **取值范围** 在[0,9999999]区间内。
 
         :param event_unhealthy: The event_unhealthy of this OneResourceGroupRespResourceStatistics.
         :type event_unhealthy: int
@@ -130,7 +130,7 @@ class OneResourceGroupRespResourceStatistics:
     def namespaces(self):
         r"""Gets the namespaces of this OneResourceGroupRespResourceStatistics.
 
-        资源类型数
+        **参数解释** 该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。 **取值范围** 在[0,9999999]区间内。
 
         :return: The namespaces of this OneResourceGroupRespResourceStatistics.
         :rtype: int
@@ -141,7 +141,7 @@ class OneResourceGroupRespResourceStatistics:
     def namespaces(self, namespaces):
         r"""Sets the namespaces of this OneResourceGroupRespResourceStatistics.
 
-        资源类型数
+        **参数解释** 该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。 **取值范围** 在[0,9999999]区间内。
 
         :param namespaces: The namespaces of this OneResourceGroupRespResourceStatistics.
         :type namespaces: int

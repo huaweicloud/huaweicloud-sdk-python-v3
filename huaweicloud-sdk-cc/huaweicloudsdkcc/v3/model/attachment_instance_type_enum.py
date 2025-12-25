@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class AttachmentInstanceTypeEnum:
-    """
-    allowed enum values
-    """
-    GDGW = "GDGW"
-    ER_ROUTE_TABLE = "ER_ROUTE_TABLE"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

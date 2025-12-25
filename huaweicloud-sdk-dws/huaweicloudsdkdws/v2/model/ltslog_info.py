@@ -35,11 +35,11 @@ class LtslogInfo:
 
         The model defined in huaweicloud sdk
 
-        :param status: **参数解释**： 配置状态。 **取值范围**： 不涉及。
+        :param status: **参数解释**： 配置状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。
         :type status: str
         :param id: **参数解释**： 日志ID。 **取值范围**： 不涉及。
         :type id: str
-        :param log_type: **参数解释**： 日志类型。 **取值范围**： 不涉及。
+        :param log_type: **参数解释**： 日志类型。 **取值范围**： - messages：系统日志。 - expand：扩容日志。 - roach-controller：roach服务端日志。 - audit：审计日志。 - gtm：gtm日志。 - roach-agent：roach客户端日志。 - cms：cms日志。 - CN：dws-CN节点日志。 - upgrade: 升级日志。 - DN: dws-DN节点日志。
         :type log_type: str
         :param log_desc: **参数解释**： 日志描述。 **取值范围**： 不涉及。
         :type log_desc: str
@@ -66,7 +66,7 @@ class LtslogInfo:
     def status(self):
         r"""Gets the status of this LtslogInfo.
 
-        **参数解释**： 配置状态。 **取值范围**： 不涉及。
+        **参数解释**： 配置状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。
 
         :return: The status of this LtslogInfo.
         :rtype: str
@@ -77,7 +77,7 @@ class LtslogInfo:
     def status(self, status):
         r"""Sets the status of this LtslogInfo.
 
-        **参数解释**： 配置状态。 **取值范围**： 不涉及。
+        **参数解释**： 配置状态。 **取值范围**： - OPEN：开启。 - CLOSE：关闭。
 
         :param status: The status of this LtslogInfo.
         :type status: str
@@ -110,7 +110,7 @@ class LtslogInfo:
     def log_type(self):
         r"""Gets the log_type of this LtslogInfo.
 
-        **参数解释**： 日志类型。 **取值范围**： 不涉及。
+        **参数解释**： 日志类型。 **取值范围**： - messages：系统日志。 - expand：扩容日志。 - roach-controller：roach服务端日志。 - audit：审计日志。 - gtm：gtm日志。 - roach-agent：roach客户端日志。 - cms：cms日志。 - CN：dws-CN节点日志。 - upgrade: 升级日志。 - DN: dws-DN节点日志。
 
         :return: The log_type of this LtslogInfo.
         :rtype: str
@@ -121,7 +121,7 @@ class LtslogInfo:
     def log_type(self, log_type):
         r"""Sets the log_type of this LtslogInfo.
 
-        **参数解释**： 日志类型。 **取值范围**： 不涉及。
+        **参数解释**： 日志类型。 **取值范围**： - messages：系统日志。 - expand：扩容日志。 - roach-controller：roach服务端日志。 - audit：审计日志。 - gtm：gtm日志。 - roach-agent：roach客户端日志。 - cms：cms日志。 - CN：dws-CN节点日志。 - upgrade: 升级日志。 - DN: dws-DN节点日志。
 
         :param log_type: The log_type of this LtslogInfo.
         :type log_type: str

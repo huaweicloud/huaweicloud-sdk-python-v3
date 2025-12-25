@@ -15,7 +15,7 @@ class DefaultPluginInfo:
     sensitive_list = []
 
     openapi_types = {
-        'plugin_type': 'PluginTypeEnum',
+        'plugin_type': 'str',
         'support_default': 'bool'
     }
 
@@ -29,8 +29,8 @@ class DefaultPluginInfo:
 
         The model defined in huaweicloud sdk
 
-        :param plugin_type: 
-        :type plugin_type: :class:`huaweicloudsdkmetastudio.v1.PluginTypeEnum`
+        :param plugin_type: 插件类型 * WEATHER_QUERY：天气查询 * WEB_SEARCH：网络搜索
+        :type plugin_type: str
         :param support_default: 支持默认插件。
         :type support_default: bool
         """
@@ -50,8 +50,10 @@ class DefaultPluginInfo:
     def plugin_type(self):
         r"""Gets the plugin_type of this DefaultPluginInfo.
 
+        插件类型 * WEATHER_QUERY：天气查询 * WEB_SEARCH：网络搜索
+
         :return: The plugin_type of this DefaultPluginInfo.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.PluginTypeEnum`
+        :rtype: str
         """
         return self._plugin_type
 
@@ -59,8 +61,10 @@ class DefaultPluginInfo:
     def plugin_type(self, plugin_type):
         r"""Sets the plugin_type of this DefaultPluginInfo.
 
+        插件类型 * WEATHER_QUERY：天气查询 * WEB_SEARCH：网络搜索
+
         :param plugin_type: The plugin_type of this DefaultPluginInfo.
-        :type plugin_type: :class:`huaweicloudsdkmetastudio.v1.PluginTypeEnum`
+        :type plugin_type: str
         """
         self._plugin_type = plugin_type
 

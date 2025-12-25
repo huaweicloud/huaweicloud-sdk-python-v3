@@ -41,11 +41,11 @@ class ListEventSpecsRequest:
 
         :param spec_name: **参数解释**： 事件配置名称。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type spec_name: str
-        :param category: **参数解释**： 事件类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param category: **参数解释**： 事件类别。 **约束限制**： 不涉及。 **取值范围**： - management：管理。 - monitor：监控。 - security：安全。 **默认取值**： 不涉及。
         :type category: str
         :param severity: **参数解释**： 事件级别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type severity: str
-        :param source_type: **参数解释**： 事件源类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        :param source_type: **参数解释**： 事件源类别。 **约束限制**： 不涉及。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。 **默认取值**： 不涉及。
         :type source_type: str
         :param tag: **参数解释**： 事件标签。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
         :type tag: str
@@ -107,7 +107,7 @@ class ListEventSpecsRequest:
     def category(self):
         r"""Gets the category of this ListEventSpecsRequest.
 
-        **参数解释**： 事件类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 事件类别。 **约束限制**： 不涉及。 **取值范围**： - management：管理。 - monitor：监控。 - security：安全。 **默认取值**： 不涉及。
 
         :return: The category of this ListEventSpecsRequest.
         :rtype: str
@@ -118,7 +118,7 @@ class ListEventSpecsRequest:
     def category(self, category):
         r"""Sets the category of this ListEventSpecsRequest.
 
-        **参数解释**： 事件类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 事件类别。 **约束限制**： 不涉及。 **取值范围**： - management：管理。 - monitor：监控。 - security：安全。 **默认取值**： 不涉及。
 
         :param category: The category of this ListEventSpecsRequest.
         :type category: str
@@ -151,7 +151,7 @@ class ListEventSpecsRequest:
     def source_type(self):
         r"""Gets the source_type of this ListEventSpecsRequest.
 
-        **参数解释**： 事件源类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 事件源类别。 **约束限制**： 不涉及。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。 **默认取值**： 不涉及。
 
         :return: The source_type of this ListEventSpecsRequest.
         :rtype: str
@@ -162,7 +162,7 @@ class ListEventSpecsRequest:
     def source_type(self, source_type):
         r"""Sets the source_type of this ListEventSpecsRequest.
 
-        **参数解释**： 事件源类别。 **约束限制**： 不涉及。 **取值范围**： 不涉及。 **默认取值**： 不涉及。
+        **参数解释**： 事件源类别。 **约束限制**： 不涉及。 **取值范围**： - cluster：集群。 - backup：快照。 - disaster-recovery：容灾。 - data.migration：数据迁移。 - dws.ingestion：DwsIngestion。 **默认取值**： 不涉及。
 
         :param source_type: The source_type of this ListEventSpecsRequest.
         :type source_type: str

@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class HotWordsTypeEnum:
-    """
-    allowed enum values
-    """
-    SIS = "SIS"
-    MOBVOI = "MOBVOI"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

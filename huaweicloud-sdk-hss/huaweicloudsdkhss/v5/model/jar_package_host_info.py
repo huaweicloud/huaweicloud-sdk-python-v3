@@ -77,13 +77,13 @@ class JarPackageHostInfo:
         :type host_name: str
         :param host_ip: **参数解释** 服务器ip **取值范围**: 字符长度0-128位
         :type host_ip: str
-        :param file_name: **参数解释** 中间件包名称 **取值范围**: 字符长度0-256位
+        :param file_name: **参数解释** 文件名称 **取值范围**: 字符长度0-256位
         :type file_name: str
         :param name: **参数解释** 中间件包名称(不带后缀) **取值范围**: 字符长度0-256位\&quot;
         :type name: str
         :param catalogue: **参数解释** 中间件包类型 **取值范围**: 字符长度0-32位
         :type catalogue: str
-        :param file_type: **参数解释** 中间件包后缀 **取值范围**: 字符长度0-32位
+        :param file_type: **参数解释** 文件类型 **取值范围**: 字符长度0-32位
         :type file_type: str
         :param version: **参数解释** 中间件包版本 **取值范围**: 字符长度0-64位
         :type version: str
@@ -278,7 +278,7 @@ class JarPackageHostInfo:
     def file_name(self):
         r"""Gets the file_name of this JarPackageHostInfo.
 
-        **参数解释** 中间件包名称 **取值范围**: 字符长度0-256位
+        **参数解释** 文件名称 **取值范围**: 字符长度0-256位
 
         :return: The file_name of this JarPackageHostInfo.
         :rtype: str
@@ -289,7 +289,7 @@ class JarPackageHostInfo:
     def file_name(self, file_name):
         r"""Sets the file_name of this JarPackageHostInfo.
 
-        **参数解释** 中间件包名称 **取值范围**: 字符长度0-256位
+        **参数解释** 文件名称 **取值范围**: 字符长度0-256位
 
         :param file_name: The file_name of this JarPackageHostInfo.
         :type file_name: str
@@ -344,7 +344,7 @@ class JarPackageHostInfo:
     def file_type(self):
         r"""Gets the file_type of this JarPackageHostInfo.
 
-        **参数解释** 中间件包后缀 **取值范围**: 字符长度0-32位
+        **参数解释** 文件类型 **取值范围**: 字符长度0-32位
 
         :return: The file_type of this JarPackageHostInfo.
         :rtype: str
@@ -355,7 +355,7 @@ class JarPackageHostInfo:
     def file_type(self, file_type):
         r"""Sets the file_type of this JarPackageHostInfo.
 
-        **参数解释** 中间件包后缀 **取值范围**: 字符长度0-32位
+        **参数解释** 文件类型 **取值范围**: 字符长度0-32位
 
         :param file_type: The file_type of this JarPackageHostInfo.
         :type file_type: str

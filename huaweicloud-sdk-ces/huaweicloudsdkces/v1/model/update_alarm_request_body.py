@@ -43,23 +43,23 @@ class UpdateAlarmRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param alarm_name: 告警名称，只能包含0-9/a-z/A-Z/_/-或汉字。
+        :param alarm_name: **参数解释**： 告警规则名称 **约束限制**： 不涉及 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1, 128]个字符 **默认取值**： 不涉及 
         :type alarm_name: str
-        :param alarm_description: 告警描述，长度0-256。
+        :param alarm_description: **参数解释**： 告警描述。 **约束限制**： 不涉及。 **取值范围**： 长度[0,256]个字符。 **默认取值**： 不涉及。 
         :type alarm_description: str
         :param condition: 
         :type condition: :class:`huaweicloudsdkces.v1.Condition`
-        :param alarm_action_enabled: 是否启用该条告警触发的动作，默认为true。注：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。
+        :param alarm_action_enabled: **参数解释**： 是否开启告警通知 **约束限制**： 若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。 **取值范围**： 只能为true、false - true: 开启告警通知 - false：关闭告警通知 **默认取值**: false。 
         :type alarm_action_enabled: bool
-        :param alarm_level: 告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
+        :param alarm_level: **参数解释**： 告警级别 **约束限制**： 不涉及 **取值范围**： 级别为1、2、3、4。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 **默认取值**: 2 
         :type alarm_level: int
-        :param alarm_type: 告警类型，支持的枚举类型：EVENT.SYS：针对系统事件的告警规则；EVENT.CUSTOM：针对自定义事件的告警规则；RESOURCE_GROUP：针对资源分组的告警规则。
+        :param alarm_type: **参数解释**： 告警类型。 **约束限制**： 不涉及 **取值范围**： - EVENT.SYS：针对系统事件的告警规则。 - EVENT.CUSTOM：针对自定义事件的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE： 针对指定资源的告警规则。 **默认取值**： 不涉及。 
         :type alarm_type: str
-        :param alarm_actions: 告警触发的动作。 结构样例如下： { \&quot;type\&quot;: \&quot;notification\&quot;,\&quot;notificationList\&quot;: [\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;] } type取值： notification：通知。 autoscaling：弹性伸缩。
+        :param alarm_actions: **参数解释**： 告警触发时，通知组/主题订阅的信息。结构样例如下： { \&quot;type\&quot;: \&quot;notification\&quot;,\&quot;notificationList\&quot;:[\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;] } **约束限制**： 最多包含10个告警触发时的通知对象信息。 
         :type alarm_actions: list[list[Notification]]
-        :param insufficientdata_actions: 数据不足触发的动作（该参数已废弃，建议无需配置）。
+        :param insufficientdata_actions: **参数解释**： 数据不足触发告警时，通知组/主题订阅的信息。（该参数已废弃，建议无需配置） **约束限制**： 最多包含10个告警动作。 
         :type insufficientdata_actions: list[list[Notification]]
-        :param ok_actions: 告警恢复触发的动作
+        :param ok_actions: **参数解释**： 告警恢复时，通知组/主题订阅的信息。结构样例如下： { \&quot;type\&quot;: \&quot;notification\&quot;,\&quot;notificationList\&quot;:[\&quot;urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\&quot;] }  **约束限制**： 最多包含10个告警触发时的通知对象信息。 
         :type ok_actions: list[list[Notification]]
         """
         
@@ -99,7 +99,7 @@ class UpdateAlarmRequestBody:
     def alarm_name(self):
         r"""Gets the alarm_name of this UpdateAlarmRequestBody.
 
-        告警名称，只能包含0-9/a-z/A-Z/_/-或汉字。
+        **参数解释**： 告警规则名称 **约束限制**： 不涉及 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1, 128]个字符 **默认取值**： 不涉及 
 
         :return: The alarm_name of this UpdateAlarmRequestBody.
         :rtype: str
@@ -110,7 +110,7 @@ class UpdateAlarmRequestBody:
     def alarm_name(self, alarm_name):
         r"""Sets the alarm_name of this UpdateAlarmRequestBody.
 
-        告警名称，只能包含0-9/a-z/A-Z/_/-或汉字。
+        **参数解释**： 告警规则名称 **约束限制**： 不涉及 **取值范围**： 只能包含0-9/a-z/A-Z/_/-或汉字，长度[1, 128]个字符 **默认取值**： 不涉及 
 
         :param alarm_name: The alarm_name of this UpdateAlarmRequestBody.
         :type alarm_name: str
@@ -121,7 +121,7 @@ class UpdateAlarmRequestBody:
     def alarm_description(self):
         r"""Gets the alarm_description of this UpdateAlarmRequestBody.
 
-        告警描述，长度0-256。
+        **参数解释**： 告警描述。 **约束限制**： 不涉及。 **取值范围**： 长度[0,256]个字符。 **默认取值**： 不涉及。 
 
         :return: The alarm_description of this UpdateAlarmRequestBody.
         :rtype: str
@@ -132,7 +132,7 @@ class UpdateAlarmRequestBody:
     def alarm_description(self, alarm_description):
         r"""Sets the alarm_description of this UpdateAlarmRequestBody.
 
-        告警描述，长度0-256。
+        **参数解释**： 告警描述。 **约束限制**： 不涉及。 **取值范围**： 长度[0,256]个字符。 **默认取值**： 不涉及。 
 
         :param alarm_description: The alarm_description of this UpdateAlarmRequestBody.
         :type alarm_description: str
@@ -161,7 +161,7 @@ class UpdateAlarmRequestBody:
     def alarm_action_enabled(self):
         r"""Gets the alarm_action_enabled of this UpdateAlarmRequestBody.
 
-        是否启用该条告警触发的动作，默认为true。注：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。
+        **参数解释**： 是否开启告警通知 **约束限制**： 若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。 **取值范围**： 只能为true、false - true: 开启告警通知 - false：关闭告警通知 **默认取值**: false。 
 
         :return: The alarm_action_enabled of this UpdateAlarmRequestBody.
         :rtype: bool
@@ -172,7 +172,7 @@ class UpdateAlarmRequestBody:
     def alarm_action_enabled(self, alarm_action_enabled):
         r"""Sets the alarm_action_enabled of this UpdateAlarmRequestBody.
 
-        是否启用该条告警触发的动作，默认为true。注：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。
+        **参数解释**： 是否开启告警通知 **约束限制**： 若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。 **取值范围**： 只能为true、false - true: 开启告警通知 - false：关闭告警通知 **默认取值**: false。 
 
         :param alarm_action_enabled: The alarm_action_enabled of this UpdateAlarmRequestBody.
         :type alarm_action_enabled: bool
@@ -183,7 +183,7 @@ class UpdateAlarmRequestBody:
     def alarm_level(self):
         r"""Gets the alarm_level of this UpdateAlarmRequestBody.
 
-        告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
+        **参数解释**： 告警级别 **约束限制**： 不涉及 **取值范围**： 级别为1、2、3、4。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 **默认取值**: 2 
 
         :return: The alarm_level of this UpdateAlarmRequestBody.
         :rtype: int
@@ -194,7 +194,7 @@ class UpdateAlarmRequestBody:
     def alarm_level(self, alarm_level):
         r"""Sets the alarm_level of this UpdateAlarmRequestBody.
 
-        告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
+        **参数解释**： 告警级别 **约束限制**： 不涉及 **取值范围**： 级别为1、2、3、4。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 **默认取值**: 2 
 
         :param alarm_level: The alarm_level of this UpdateAlarmRequestBody.
         :type alarm_level: int
@@ -205,7 +205,7 @@ class UpdateAlarmRequestBody:
     def alarm_type(self):
         r"""Gets the alarm_type of this UpdateAlarmRequestBody.
 
-        告警类型，支持的枚举类型：EVENT.SYS：针对系统事件的告警规则；EVENT.CUSTOM：针对自定义事件的告警规则；RESOURCE_GROUP：针对资源分组的告警规则。
+        **参数解释**： 告警类型。 **约束限制**： 不涉及 **取值范围**： - EVENT.SYS：针对系统事件的告警规则。 - EVENT.CUSTOM：针对自定义事件的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE： 针对指定资源的告警规则。 **默认取值**： 不涉及。 
 
         :return: The alarm_type of this UpdateAlarmRequestBody.
         :rtype: str
@@ -216,7 +216,7 @@ class UpdateAlarmRequestBody:
     def alarm_type(self, alarm_type):
         r"""Sets the alarm_type of this UpdateAlarmRequestBody.
 
-        告警类型，支持的枚举类型：EVENT.SYS：针对系统事件的告警规则；EVENT.CUSTOM：针对自定义事件的告警规则；RESOURCE_GROUP：针对资源分组的告警规则。
+        **参数解释**： 告警类型。 **约束限制**： 不涉及 **取值范围**： - EVENT.SYS：针对系统事件的告警规则。 - EVENT.CUSTOM：针对自定义事件的告警规则。 - RESOURCE_GROUP：针对资源分组的告警规则。 - MULTI_INSTANCE： 针对指定资源的告警规则。 **默认取值**： 不涉及。 
 
         :param alarm_type: The alarm_type of this UpdateAlarmRequestBody.
         :type alarm_type: str
@@ -227,7 +227,7 @@ class UpdateAlarmRequestBody:
     def alarm_actions(self):
         r"""Gets the alarm_actions of this UpdateAlarmRequestBody.
 
-        告警触发的动作。 结构样例如下： { \"type\": \"notification\",\"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] } type取值： notification：通知。 autoscaling：弹性伸缩。
+        **参数解释**： 告警触发时，通知组/主题订阅的信息。结构样例如下： { \"type\": \"notification\",\"notificationList\":[\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] } **约束限制**： 最多包含10个告警触发时的通知对象信息。 
 
         :return: The alarm_actions of this UpdateAlarmRequestBody.
         :rtype: list[list[Notification]]
@@ -238,7 +238,7 @@ class UpdateAlarmRequestBody:
     def alarm_actions(self, alarm_actions):
         r"""Sets the alarm_actions of this UpdateAlarmRequestBody.
 
-        告警触发的动作。 结构样例如下： { \"type\": \"notification\",\"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] } type取值： notification：通知。 autoscaling：弹性伸缩。
+        **参数解释**： 告警触发时，通知组/主题订阅的信息。结构样例如下： { \"type\": \"notification\",\"notificationList\":[\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] } **约束限制**： 最多包含10个告警触发时的通知对象信息。 
 
         :param alarm_actions: The alarm_actions of this UpdateAlarmRequestBody.
         :type alarm_actions: list[list[Notification]]
@@ -249,7 +249,7 @@ class UpdateAlarmRequestBody:
     def insufficientdata_actions(self):
         r"""Gets the insufficientdata_actions of this UpdateAlarmRequestBody.
 
-        数据不足触发的动作（该参数已废弃，建议无需配置）。
+        **参数解释**： 数据不足触发告警时，通知组/主题订阅的信息。（该参数已废弃，建议无需配置） **约束限制**： 最多包含10个告警动作。 
 
         :return: The insufficientdata_actions of this UpdateAlarmRequestBody.
         :rtype: list[list[Notification]]
@@ -260,7 +260,7 @@ class UpdateAlarmRequestBody:
     def insufficientdata_actions(self, insufficientdata_actions):
         r"""Sets the insufficientdata_actions of this UpdateAlarmRequestBody.
 
-        数据不足触发的动作（该参数已废弃，建议无需配置）。
+        **参数解释**： 数据不足触发告警时，通知组/主题订阅的信息。（该参数已废弃，建议无需配置） **约束限制**： 最多包含10个告警动作。 
 
         :param insufficientdata_actions: The insufficientdata_actions of this UpdateAlarmRequestBody.
         :type insufficientdata_actions: list[list[Notification]]
@@ -271,7 +271,7 @@ class UpdateAlarmRequestBody:
     def ok_actions(self):
         r"""Gets the ok_actions of this UpdateAlarmRequestBody.
 
-        告警恢复触发的动作
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。结构样例如下： { \"type\": \"notification\",\"notificationList\":[\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] }  **约束限制**： 最多包含10个告警触发时的通知对象信息。 
 
         :return: The ok_actions of this UpdateAlarmRequestBody.
         :rtype: list[list[Notification]]
@@ -282,7 +282,7 @@ class UpdateAlarmRequestBody:
     def ok_actions(self, ok_actions):
         r"""Sets the ok_actions of this UpdateAlarmRequestBody.
 
-        告警恢复触发的动作
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。结构样例如下： { \"type\": \"notification\",\"notificationList\":[\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] }  **约束限制**： 最多包含10个告警触发时的通知对象信息。 
 
         :param ok_actions: The ok_actions of this UpdateAlarmRequestBody.
         :type ok_actions: list[list[Notification]]

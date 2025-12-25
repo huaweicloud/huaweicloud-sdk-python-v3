@@ -17,7 +17,7 @@ class DeleteGdgwRouteAction:
     openapi_types = {
         'destination': 'str',
         'nexthop': 'str',
-        'type': 'RouteTypeOfGdgw'
+        'type': 'str'
     }
 
     attribute_map = {
@@ -35,8 +35,8 @@ class DeleteGdgwRouteAction:
         :type destination: str
         :param nexthop: 下一跳id
         :type nexthop: str
-        :param type: 
-        :type type: :class:`huaweicloudsdkdc.v3.RouteTypeOfGdgw`
+        :param type: 下一跳类型: - vif_peer: 虚拟接口对等体 - gdgw: 全域接入网关
+        :type type: str
         """
         
         
@@ -99,8 +99,10 @@ class DeleteGdgwRouteAction:
     def type(self):
         r"""Gets the type of this DeleteGdgwRouteAction.
 
+        下一跳类型: - vif_peer: 虚拟接口对等体 - gdgw: 全域接入网关
+
         :return: The type of this DeleteGdgwRouteAction.
-        :rtype: :class:`huaweicloudsdkdc.v3.RouteTypeOfGdgw`
+        :rtype: str
         """
         return self._type
 
@@ -108,8 +110,10 @@ class DeleteGdgwRouteAction:
     def type(self, type):
         r"""Sets the type of this DeleteGdgwRouteAction.
 
+        下一跳类型: - vif_peer: 虚拟接口对等体 - gdgw: 全域接入网关
+
         :param type: The type of this DeleteGdgwRouteAction.
-        :type type: :class:`huaweicloudsdkdc.v3.RouteTypeOfGdgw`
+        :type type: str
         """
         self._type = type
 

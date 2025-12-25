@@ -4,11 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class Effect:
-    """
-    allowed enum values
-    """
-    DELETABLE = "DELETABLE"
-    UNDELETABLE = "UNDELETABLE"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

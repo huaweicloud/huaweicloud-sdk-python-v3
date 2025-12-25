@@ -16,105 +16,109 @@ class DisableAlertRuleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'fail_list': 'list[AlertRule]',
-        'success_list': 'list[AlertRule]',
-        'x_request_id': 'str'
+        'alert_rule_id': 'str',
+        'status': 'str',
+        'process_status': 'str'
     }
 
     attribute_map = {
-        'fail_list': 'fail_list',
-        'success_list': 'success_list',
-        'x_request_id': 'X-request-id'
+        'alert_rule_id': 'alert_rule_id',
+        'status': 'status',
+        'process_status': 'process_status'
     }
 
-    def __init__(self, fail_list=None, success_list=None, x_request_id=None):
+    def __init__(self, alert_rule_id=None, status=None, process_status=None):
         r"""DisableAlertRuleResponse
 
         The model defined in huaweicloud sdk
 
-        :param fail_list: Alert rule ID.
-        :type fail_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        :param success_list: Alert rule ID.
-        :type success_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        :param x_request_id: 
-        :type x_request_id: str
+        :param alert_rule_id: UUID
+        :type alert_rule_id: str
+        :param status: **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
+        :type status: str
+        :param process_status: **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
+        :type process_status: str
         """
         
         super().__init__()
 
-        self._fail_list = None
-        self._success_list = None
-        self._x_request_id = None
+        self._alert_rule_id = None
+        self._status = None
+        self._process_status = None
         self.discriminator = None
 
-        if fail_list is not None:
-            self.fail_list = fail_list
-        if success_list is not None:
-            self.success_list = success_list
-        if x_request_id is not None:
-            self.x_request_id = x_request_id
+        if alert_rule_id is not None:
+            self.alert_rule_id = alert_rule_id
+        if status is not None:
+            self.status = status
+        if process_status is not None:
+            self.process_status = process_status
 
     @property
-    def fail_list(self):
-        r"""Gets the fail_list of this DisableAlertRuleResponse.
+    def alert_rule_id(self):
+        r"""Gets the alert_rule_id of this DisableAlertRuleResponse.
 
-        Alert rule ID.
+        UUID
 
-        :return: The fail_list of this DisableAlertRuleResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        """
-        return self._fail_list
-
-    @fail_list.setter
-    def fail_list(self, fail_list):
-        r"""Sets the fail_list of this DisableAlertRuleResponse.
-
-        Alert rule ID.
-
-        :param fail_list: The fail_list of this DisableAlertRuleResponse.
-        :type fail_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        """
-        self._fail_list = fail_list
-
-    @property
-    def success_list(self):
-        r"""Gets the success_list of this DisableAlertRuleResponse.
-
-        Alert rule ID.
-
-        :return: The success_list of this DisableAlertRuleResponse.
-        :rtype: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        """
-        return self._success_list
-
-    @success_list.setter
-    def success_list(self, success_list):
-        r"""Sets the success_list of this DisableAlertRuleResponse.
-
-        Alert rule ID.
-
-        :param success_list: The success_list of this DisableAlertRuleResponse.
-        :type success_list: list[:class:`huaweicloudsdksecmaster.v2.AlertRule`]
-        """
-        self._success_list = success_list
-
-    @property
-    def x_request_id(self):
-        r"""Gets the x_request_id of this DisableAlertRuleResponse.
-
-        :return: The x_request_id of this DisableAlertRuleResponse.
+        :return: The alert_rule_id of this DisableAlertRuleResponse.
         :rtype: str
         """
-        return self._x_request_id
+        return self._alert_rule_id
 
-    @x_request_id.setter
-    def x_request_id(self, x_request_id):
-        r"""Sets the x_request_id of this DisableAlertRuleResponse.
+    @alert_rule_id.setter
+    def alert_rule_id(self, alert_rule_id):
+        r"""Sets the alert_rule_id of this DisableAlertRuleResponse.
 
-        :param x_request_id: The x_request_id of this DisableAlertRuleResponse.
-        :type x_request_id: str
+        UUID
+
+        :param alert_rule_id: The alert_rule_id of this DisableAlertRuleResponse.
+        :type alert_rule_id: str
         """
-        self._x_request_id = x_request_id
+        self._alert_rule_id = alert_rule_id
+
+    @property
+    def status(self):
+        r"""Gets the status of this DisableAlertRuleResponse.
+
+        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
+
+        :return: The status of this DisableAlertRuleResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this DisableAlertRuleResponse.
+
+        **参数解释**: 作业状态 - ENABLED 启用 - DISABLED 禁用  **约束限制** 不涉及 **取值范围**: - ENABLED - DISABLED  **默认值** 不涉及    
+
+        :param status: The status of this DisableAlertRuleResponse.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def process_status(self):
+        r"""Gets the process_status of this DisableAlertRuleResponse.
+
+        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
+
+        :return: The process_status of this DisableAlertRuleResponse.
+        :rtype: str
+        """
+        return self._process_status
+
+    @process_status.setter
+    def process_status(self, process_status):
+        r"""Sets the process_status of this DisableAlertRuleResponse.
+
+        **参数解释**: 作业处理状态 - COMPLETED 已完成 - CREATING 创建中 - UPDATING 更新中 - ENABLING 启用中 - DISABLING 停用中 - DELETING 删除中 - CREATE_FAILED 创建失败 - UPDATE_FAILED 更新失败 - ENABLE_FAILED 启用失败 - DISABLE_FAILED 停用失败 - DELETE_FAILED 删除失败 - RECOVERING 恢复中  **约束限制** 不涉及 **取值范围**: - COMPLETED - CREATING - UPDATING - ENABLING - DISABLING - DELETING - CREATE_FAILED - UPDATE_FAILED - ENABLE_FAILED - DISABLE_FAILED - DELETE_FAILED - RECOVERING  **默认值** 不涉及   
+
+        :param process_status: The process_status of this DisableAlertRuleResponse.
+        :type process_status: str
+        """
+        self._process_status = process_status
 
     def to_dict(self):
         import warnings

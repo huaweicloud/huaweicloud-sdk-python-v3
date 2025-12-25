@@ -16,7 +16,7 @@ class UpdatePacifyWordsSwitchReq:
 
     openapi_types = {
         'robot_id': 'str',
-        'language': 'LanguageEnum',
+        'language': 'str',
         'enable_pacify_words': 'bool'
     }
 
@@ -33,8 +33,8 @@ class UpdatePacifyWordsSwitchReq:
 
         :param robot_id: 应用ID。
         :type robot_id: str
-        :param language: 
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :param language: 智能交互语言 * CN：中文 * EN：英文
+        :type language: str
         :param enable_pacify_words: 安抚话术功能开关。
         :type enable_pacify_words: bool
         """
@@ -76,8 +76,10 @@ class UpdatePacifyWordsSwitchReq:
     def language(self):
         r"""Gets the language of this UpdatePacifyWordsSwitchReq.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :return: The language of this UpdatePacifyWordsSwitchReq.
-        :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :rtype: str
         """
         return self._language
 
@@ -85,8 +87,10 @@ class UpdatePacifyWordsSwitchReq:
     def language(self, language):
         r"""Sets the language of this UpdatePacifyWordsSwitchReq.
 
+        智能交互语言 * CN：中文 * EN：英文
+
         :param language: The language of this UpdatePacifyWordsSwitchReq.
-        :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
+        :type language: str
         """
         self._language = language
 

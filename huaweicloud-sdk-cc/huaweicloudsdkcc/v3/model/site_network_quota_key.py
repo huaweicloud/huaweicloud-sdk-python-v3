@@ -15,7 +15,7 @@ class SiteNetworkQuotaKey:
     sensitive_list = []
 
     openapi_types = {
-        'quota_key': 'SiteNetworkQuotaKeyEnum'
+        'quota_key': 'str'
     }
 
     attribute_map = {
@@ -27,8 +27,8 @@ class SiteNetworkQuotaKey:
 
         The model defined in huaweicloud sdk
 
-        :param quota_key: 
-        :type quota_key: :class:`huaweicloudsdkcc.v3.SiteNetworkQuotaKeyEnum`
+        :param quota_key: 分支网络配额类型。 - site_networks_per_account (每个账户的分支网络数) - sites_per_mesh_site_network (网状分支网络的分支数) - spoke_sites_per_star_site_network (星状分支网络的Spoke分支数) - sites_per_hybrid_site_network (混合分支网络的分支数)
+        :type quota_key: str
         """
         
         
@@ -42,8 +42,10 @@ class SiteNetworkQuotaKey:
     def quota_key(self):
         r"""Gets the quota_key of this SiteNetworkQuotaKey.
 
+        分支网络配额类型。 - site_networks_per_account (每个账户的分支网络数) - sites_per_mesh_site_network (网状分支网络的分支数) - spoke_sites_per_star_site_network (星状分支网络的Spoke分支数) - sites_per_hybrid_site_network (混合分支网络的分支数)
+
         :return: The quota_key of this SiteNetworkQuotaKey.
-        :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkQuotaKeyEnum`
+        :rtype: str
         """
         return self._quota_key
 
@@ -51,8 +53,10 @@ class SiteNetworkQuotaKey:
     def quota_key(self, quota_key):
         r"""Sets the quota_key of this SiteNetworkQuotaKey.
 
+        分支网络配额类型。 - site_networks_per_account (每个账户的分支网络数) - sites_per_mesh_site_network (网状分支网络的分支数) - spoke_sites_per_star_site_network (星状分支网络的Spoke分支数) - sites_per_hybrid_site_network (混合分支网络的分支数)
+
         :param quota_key: The quota_key of this SiteNetworkQuotaKey.
-        :type quota_key: :class:`huaweicloudsdkcc.v3.SiteNetworkQuotaKeyEnum`
+        :type quota_key: str
         """
         self._quota_key = quota_key
 

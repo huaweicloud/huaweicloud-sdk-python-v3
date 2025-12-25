@@ -31,11 +31,11 @@ class TemplateItem:
 
         The model defined in huaweicloud sdk
 
-        :param metric_name: 告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        :param metric_name: **参数解释** 告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 字符串长度在 1 到 64 之间。 **默认取值**： 不涉及 
         :type metric_name: str
         :param condition: 
         :type condition: :class:`huaweicloudsdkces.v1.AlarmTemplateCondition`
-        :param alarm_level: 设置告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
+        :param alarm_level: **参数解释**： 告警级别。     **约束限制**： 不涉及。 **取值范围**： 只能为1、2、3、4。 - 1为紧急 - 2为重要 - 3为次要 - 4为提示           **默认取值**： 不涉及。 
         :type alarm_level: int
         """
         
@@ -55,7 +55,7 @@ class TemplateItem:
     def metric_name(self):
         r"""Gets the metric_name of this TemplateItem.
 
-        告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        **参数解释** 告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 字符串长度在 1 到 64 之间。 **默认取值**： 不涉及 
 
         :return: The metric_name of this TemplateItem.
         :rtype: str
@@ -66,7 +66,7 @@ class TemplateItem:
     def metric_name(self, metric_name):
         r"""Sets the metric_name of this TemplateItem.
 
-        告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。
+        **参数解释** 告警模板添加的监控指标，如弹性云服务器可添加的监控指标为cpu_util等；各服务的指标名称可查看：“[服务指标名称](ces_03_0059.xml)”。 **约束限制**： 不涉及 **取值范围**： 字符串长度在 1 到 64 之间。 **默认取值**： 不涉及 
 
         :param metric_name: The metric_name of this TemplateItem.
         :type metric_name: str
@@ -95,7 +95,7 @@ class TemplateItem:
     def alarm_level(self):
         r"""Gets the alarm_level of this TemplateItem.
 
-        设置告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
+        **参数解释**： 告警级别。     **约束限制**： 不涉及。 **取值范围**： 只能为1、2、3、4。 - 1为紧急 - 2为重要 - 3为次要 - 4为提示           **默认取值**： 不涉及。 
 
         :return: The alarm_level of this TemplateItem.
         :rtype: int
@@ -106,7 +106,7 @@ class TemplateItem:
     def alarm_level(self, alarm_level):
         r"""Sets the alarm_level of this TemplateItem.
 
-        设置告警级别，值为1,2,3,4；1为紧急，2为重要，3为次要，4为提示。
+        **参数解释**： 告警级别。     **约束限制**： 不涉及。 **取值范围**： 只能为1、2、3、4。 - 1为紧急 - 2为重要 - 3为次要 - 4为提示           **默认取值**： 不涉及。 
 
         :param alarm_level: The alarm_level of this TemplateItem.
         :type alarm_level: int

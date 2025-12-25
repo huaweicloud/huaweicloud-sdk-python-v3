@@ -27,7 +27,7 @@ class TotalMetaData:
 
         The model defined in huaweicloud sdk
 
-        :param total: 总条数。
+        :param total: **参数解释**： 总条数。 **取值范围**： 在[0,2147483647]区间内。
         :type total: int
         """
         
@@ -43,7 +43,7 @@ class TotalMetaData:
     def total(self):
         r"""Gets the total of this TotalMetaData.
 
-        总条数。
+        **参数解释**： 总条数。 **取值范围**： 在[0,2147483647]区间内。
 
         :return: The total of this TotalMetaData.
         :rtype: int
@@ -54,7 +54,7 @@ class TotalMetaData:
     def total(self, total):
         r"""Sets the total of this TotalMetaData.
 
-        总条数。
+        **参数解释**： 总条数。 **取值范围**： 在[0,2147483647]区间内。
 
         :param total: The total of this TotalMetaData.
         :type total: int

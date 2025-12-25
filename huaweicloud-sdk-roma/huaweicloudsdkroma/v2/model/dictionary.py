@@ -22,7 +22,7 @@ class Dictionary:
         'extend_one': 'str',
         'extend_two': 'str',
         'parent_code': 'str',
-        'type': 'DictionaryType',
+        'type': 'str',
         'create_time': 'str',
         'update_time': 'str'
     }
@@ -59,8 +59,8 @@ class Dictionary:
         :type extend_two: str
         :param parent_code: 父字典编码,为空时代表自身就是最顶级字典
         :type parent_code: str
-        :param type: 
-        :type type: :class:`huaweicloudsdkroma.v2.DictionaryType`
+        :param type: 字典类型 - system: 代表系统内置字典,用户可编辑但不可删除 - user: 代表用户创建字典
+        :type type: str
         :param create_time: 创建时间
         :type create_time: str
         :param update_time: 更新时间
@@ -260,8 +260,10 @@ class Dictionary:
     def type(self):
         r"""Gets the type of this Dictionary.
 
+        字典类型 - system: 代表系统内置字典,用户可编辑但不可删除 - user: 代表用户创建字典
+
         :return: The type of this Dictionary.
-        :rtype: :class:`huaweicloudsdkroma.v2.DictionaryType`
+        :rtype: str
         """
         return self._type
 
@@ -269,8 +271,10 @@ class Dictionary:
     def type(self, type):
         r"""Sets the type of this Dictionary.
 
+        字典类型 - system: 代表系统内置字典,用户可编辑但不可删除 - user: 代表用户创建字典
+
         :param type: The type of this Dictionary.
-        :type type: :class:`huaweicloudsdkroma.v2.DictionaryType`
+        :type type: str
         """
         self._type = type
 

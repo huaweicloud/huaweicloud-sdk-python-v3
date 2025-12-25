@@ -31,11 +31,11 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
 
         The model defined in huaweicloud sdk
 
-        :param host_id: 主机id
+        :param host_id: **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type host_id: str
-        :param vault_id: 存储库id
+        :param vault_id: **参数解释**: 存储库id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
         :type vault_id: str
-        :param backup_name: 备份名称
+        :param backup_name: **参数解释**: 备份名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
         :type backup_name: str
         """
         
@@ -57,7 +57,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
     def host_id(self):
         r"""Gets the host_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
-        主机id
+        **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The host_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
         :rtype: str
@@ -68,7 +68,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
     def host_id(self, host_id):
         r"""Sets the host_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
-        主机id
+        **参数解释**: 主机id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param host_id: The host_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
         :type host_id: str
@@ -79,7 +79,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
     def vault_id(self):
         r"""Gets the vault_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
-        存储库id
+        **参数解释**: 存储库id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :return: The vault_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
         :rtype: str
@@ -90,7 +90,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
     def vault_id(self, vault_id):
         r"""Sets the vault_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
-        存储库id
+        **参数解释**: 存储库id **约束限制**: 不涉及 **取值范围**: 字符长度1-128位 **默认取值**: 不涉及 
 
         :param vault_id: The vault_id of this ChangeVulStatusRequestInfoCustomBackupHosts.
         :type vault_id: str
@@ -101,7 +101,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
     def backup_name(self):
         r"""Gets the backup_name of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
-        备份名称
+        **参数解释**: 备份名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :return: The backup_name of this ChangeVulStatusRequestInfoCustomBackupHosts.
         :rtype: str
@@ -112,7 +112,7 @@ class ChangeVulStatusRequestInfoCustomBackupHosts:
     def backup_name(self, backup_name):
         r"""Sets the backup_name of this ChangeVulStatusRequestInfoCustomBackupHosts.
 
-        备份名称
+        **参数解释**: 备份名称 **约束限制**: 不涉及 **取值范围**: 字符长度1-64位 **默认取值**: 不涉及 
 
         :param backup_name: The backup_name of this ChangeVulStatusRequestInfoCustomBackupHosts.
         :type backup_name: str

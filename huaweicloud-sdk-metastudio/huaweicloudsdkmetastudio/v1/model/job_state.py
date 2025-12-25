@@ -4,25 +4,7 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
 class JobState:
-    """
-    allowed enum values
-    """
-    CREATING = "CREATING"
-    SYSTEM_AUDITING = "SYSTEM_AUDITING"
-    AUDITING = "AUDITING"
-    WAITING_SPLIT = "WAITING_SPLIT"
-    SPLITTING = "SPLITTING"
-    SPLIT_FAILED = "SPLIT_FAILED"
-    ANNOTATING = "ANNOTATING"
-    WAITING = "WAITING"
-    PROCESSING = "PROCESSING"
-    RESULT_REVIEW = "RESULT_REVIEW"
-    AUDIT_FAILED = "AUDIT_FAILED"
-    USER_RESULT_REVIEW = "USER_RESULT_REVIEW"
-    USER_REVIEW_REJECT = "USER_REVIEW_REJECT"
-    UPLOADING = "UPLOADING"
-    FAILED = "FAILED"
-    SUCCEED = "SUCCEED"
+
     """
     Attributes:
       openapi_types (dict): The key is attribute name

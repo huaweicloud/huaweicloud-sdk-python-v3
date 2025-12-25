@@ -35,7 +35,7 @@ class MetaDataResp:
         :type count: int
         :param total: **参数解释**： 结果总条数。 **取值范围**： 0 - 2147483647 
         :type total: int
-        :param marker: **参数解释**： 下一个开始的标记，用于分页。如本次查询10条数据，第十条为alarm_id为1441967036681YkazZ0deN，下次start配置为al1441967036681YkazZ0deN可从该alarm_id开始查询。 **取值范围**： 1 - 9999 
+        :param marker: **参数解释**： 下一个开始的标记，用于分页。如本次查询10条数据，第十条alarm_id为al1441967036681YkazZ0deN，下次start配置为al1441967036681YkazZ0deN可从该alarm_id开始查询。 **取值范围**： 1 - 9999 
         :type marker: str
         """
         
@@ -101,7 +101,7 @@ class MetaDataResp:
     def marker(self):
         r"""Gets the marker of this MetaDataResp.
 
-        **参数解释**： 下一个开始的标记，用于分页。如本次查询10条数据，第十条为alarm_id为1441967036681YkazZ0deN，下次start配置为al1441967036681YkazZ0deN可从该alarm_id开始查询。 **取值范围**： 1 - 9999 
+        **参数解释**： 下一个开始的标记，用于分页。如本次查询10条数据，第十条alarm_id为al1441967036681YkazZ0deN，下次start配置为al1441967036681YkazZ0deN可从该alarm_id开始查询。 **取值范围**： 1 - 9999 
 
         :return: The marker of this MetaDataResp.
         :rtype: str
@@ -112,7 +112,7 @@ class MetaDataResp:
     def marker(self, marker):
         r"""Sets the marker of this MetaDataResp.
 
-        **参数解释**： 下一个开始的标记，用于分页。如本次查询10条数据，第十条为alarm_id为1441967036681YkazZ0deN，下次start配置为al1441967036681YkazZ0deN可从该alarm_id开始查询。 **取值范围**： 1 - 9999 
+        **参数解释**： 下一个开始的标记，用于分页。如本次查询10条数据，第十条alarm_id为al1441967036681YkazZ0deN，下次start配置为al1441967036681YkazZ0deN可从该alarm_id开始查询。 **取值范围**： 1 - 9999 
 
         :param marker: The marker of this MetaDataResp.
         :type marker: str

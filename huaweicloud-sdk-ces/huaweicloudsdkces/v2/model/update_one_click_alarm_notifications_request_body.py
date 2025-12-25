@@ -41,15 +41,15 @@ class UpdateOneClickAlarmNotificationsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param notification_enabled: **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
+        :param notification_enabled: **参数解释**： 是否开启告警通知。说明：若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。    **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
         :type notification_enabled: bool
-        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        :param alarm_notifications: **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        :param ok_notifications: **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
-        :param notification_begin_time: **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        :param notification_begin_time: **参数解释**： 告警通知开启时间。如 00:00    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_begin_time: str
-        :param notification_end_time: **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        :param notification_end_time: **参数解释**： 告警通知关闭时间。如 08:00  **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
         :type notification_end_time: str
         :param effective_timezone: **参数解释**： 时区，形如：\&quot;GMT-08:00\&quot;、\&quot;GMT+08:00\&quot;、\&quot;GMT+0:00\&quot;。    **约束限制**： 不涉及。 **取值范围**： 长度为[1,16]个字符。           **默认取值**： 不涉及。 
         :type effective_timezone: str
@@ -91,7 +91,7 @@ class UpdateOneClickAlarmNotificationsRequestBody:
     def notification_enabled(self):
         r"""Gets the notification_enabled of this UpdateOneClickAlarmNotificationsRequestBody.
 
-        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
+        **参数解释**： 是否开启告警通知。说明：若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。    **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :return: The notification_enabled of this UpdateOneClickAlarmNotificationsRequestBody.
         :rtype: bool
@@ -102,7 +102,7 @@ class UpdateOneClickAlarmNotificationsRequestBody:
     def notification_enabled(self, notification_enabled):
         r"""Sets the notification_enabled of this UpdateOneClickAlarmNotificationsRequestBody.
 
-        **参数解释**： 是否开启告警通知。     **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
+        **参数解释**： 是否开启告警通知。说明：若notification_enabled为true，对应的alarm_notifications、ok_notifications至少有一个不能为空。    **约束限制**： 不涉及。 **取值范围**： 布尔值。 - true:开启。 - false:关闭。 **默认取值**： true 
 
         :param notification_enabled: The notification_enabled of this UpdateOneClickAlarmNotificationsRequestBody.
         :type notification_enabled: bool
@@ -113,7 +113,7 @@ class UpdateOneClickAlarmNotificationsRequestBody:
     def alarm_notifications(self):
         r"""Gets the alarm_notifications of this UpdateOneClickAlarmNotificationsRequestBody.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
 
         :return: The alarm_notifications of this UpdateOneClickAlarmNotificationsRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -124,7 +124,7 @@ class UpdateOneClickAlarmNotificationsRequestBody:
     def alarm_notifications(self, alarm_notifications):
         r"""Sets the alarm_notifications of this UpdateOneClickAlarmNotificationsRequestBody.
 
-        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        **参数解释**： 触发告警时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
 
         :param alarm_notifications: The alarm_notifications of this UpdateOneClickAlarmNotificationsRequestBody.
         :type alarm_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -135,7 +135,7 @@ class UpdateOneClickAlarmNotificationsRequestBody:
     def ok_notifications(self):
         r"""Gets the ok_notifications of this UpdateOneClickAlarmNotificationsRequestBody.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
 
         :return: The ok_notifications of this UpdateOneClickAlarmNotificationsRequestBody.
         :rtype: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -146,7 +146,7 @@ class UpdateOneClickAlarmNotificationsRequestBody:
     def ok_notifications(self, ok_notifications):
         r"""Sets the ok_notifications of this UpdateOneClickAlarmNotificationsRequestBody.
 
-        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知信息的数量最多为10个，最少为0个。 
+        **参数解释**： 告警恢复时，通知组/主题订阅的信息。 **约束限制**： 包含的通知对象信息的数量最多为10个，最少为0个。 
 
         :param ok_notifications: The ok_notifications of this UpdateOneClickAlarmNotificationsRequestBody.
         :type ok_notifications: list[:class:`huaweicloudsdkces.v2.Notification`]
@@ -157,7 +157,7 @@ class UpdateOneClickAlarmNotificationsRequestBody:
     def notification_begin_time(self):
         r"""Gets the notification_begin_time of this UpdateOneClickAlarmNotificationsRequestBody.
 
-        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。如 00:00    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_begin_time of this UpdateOneClickAlarmNotificationsRequestBody.
         :rtype: str
@@ -168,7 +168,7 @@ class UpdateOneClickAlarmNotificationsRequestBody:
     def notification_begin_time(self, notification_begin_time):
         r"""Sets the notification_begin_time of this UpdateOneClickAlarmNotificationsRequestBody.
 
-        **参数解释**： 告警通知开启时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知开启时间。如 00:00    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_begin_time: The notification_begin_time of this UpdateOneClickAlarmNotificationsRequestBody.
         :type notification_begin_time: str
@@ -179,7 +179,7 @@ class UpdateOneClickAlarmNotificationsRequestBody:
     def notification_end_time(self):
         r"""Gets the notification_end_time of this UpdateOneClickAlarmNotificationsRequestBody.
 
-        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。如 08:00  **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :return: The notification_end_time of this UpdateOneClickAlarmNotificationsRequestBody.
         :rtype: str
@@ -190,7 +190,7 @@ class UpdateOneClickAlarmNotificationsRequestBody:
     def notification_end_time(self, notification_end_time):
         r"""Sets the notification_end_time of this UpdateOneClickAlarmNotificationsRequestBody.
 
-        **参数解释**： 告警通知关闭时间。    **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
+        **参数解释**： 告警通知关闭时间。如 08:00  **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。           **默认取值**： 不涉及。 
 
         :param notification_end_time: The notification_end_time of this UpdateOneClickAlarmNotificationsRequestBody.
         :type notification_end_time: str

@@ -20,7 +20,7 @@ class UpdateModelDefinitionResponse(SdkResponse):
         'id': 'str',
         'name': 'str',
         'description': 'str',
-        'type': 'ModelType',
+        'type': 'str',
         'create_time': 'datetime',
         'update_time': 'datetime',
         'current_version': 'ModelVersionInfo',
@@ -54,8 +54,8 @@ class UpdateModelDefinitionResponse(SdkResponse):
         :type name: str
         :param description: 描述信息
         :type description: str
-        :param type: 
-        :type type: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
+        :param type: 模型的类型，可选值： - LLM_MODEL：大语言模型
+        :type type: str
         :param create_time: 创建时间
         :type create_time: datetime
         :param update_time: 更新时间
@@ -195,8 +195,10 @@ class UpdateModelDefinitionResponse(SdkResponse):
     def type(self):
         r"""Gets the type of this UpdateModelDefinitionResponse.
 
+        模型的类型，可选值： - LLM_MODEL：大语言模型
+
         :return: The type of this UpdateModelDefinitionResponse.
-        :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
+        :rtype: str
         """
         return self._type
 
@@ -204,8 +206,10 @@ class UpdateModelDefinitionResponse(SdkResponse):
     def type(self, type):
         r"""Sets the type of this UpdateModelDefinitionResponse.
 
+        模型的类型，可选值： - LLM_MODEL：大语言模型
+
         :param type: The type of this UpdateModelDefinitionResponse.
-        :type type: :class:`huaweicloudsdkdataartsfabric.v1.ModelType`
+        :type type: str
         """
         self._type = type
 

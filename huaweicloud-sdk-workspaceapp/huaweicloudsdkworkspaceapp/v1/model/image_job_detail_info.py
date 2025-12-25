@@ -16,11 +16,11 @@ class ImageJobDetailInfo:
 
     openapi_types = {
         'id': 'str',
-        'job_type': 'ImageJobType',
+        'job_type': 'str',
         'job_resource_info': 'ImageJobResourceInfo',
         'begin_time': 'datetime',
         'end_time': 'datetime',
-        'status': 'ImageJobDetailStatus',
+        'status': 'str',
         'job_execute_info': 'ImageJobExecuteInfo',
         'project_id': 'str',
         'job_id': 'str'
@@ -45,16 +45,16 @@ class ImageJobDetailInfo:
 
         :param id: 子任务ID。
         :type id: str
-        :param job_type: 
-        :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobType`
+        :param job_type: job类型。 * &#x60;CREATE_SERVER&#x60; - 创建镜像实例 * &#x60;CREATE_SERVER_IMAGE&#x60; - 构建镜像 * &#x60;DELETE_SERVER&#x60; - 删除镜像实例
+        :type job_type: str
         :param job_resource_info: 
         :type job_resource_info: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobResourceInfo`
         :param begin_time: 任务创建时间。
         :type begin_time: datetime
         :param end_time: 任务结束时间。
         :type end_time: datetime
-        :param status: 
-        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobDetailStatus`
+        :param status: job详情的状态 * &#x60;WAITING&#x60; - 等待 * &#x60;RUNNING&#x60; - 运行中 * &#x60;SUCCESS&#x60; - 成功 * &#x60;FAILED&#x60; - 失败 * &#x60;ABNORMAL&#x60; - 异常 * &#x60;ROLLBACK&#x60; - 回滚中 * &#x60;ABORTING&#x60; - 终止中
+        :type status: str
         :param job_execute_info: 
         :type job_execute_info: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobExecuteInfo`
         :param project_id: 项目ID。
@@ -121,8 +121,10 @@ class ImageJobDetailInfo:
     def job_type(self):
         r"""Gets the job_type of this ImageJobDetailInfo.
 
+        job类型。 * `CREATE_SERVER` - 创建镜像实例 * `CREATE_SERVER_IMAGE` - 构建镜像 * `DELETE_SERVER` - 删除镜像实例
+
         :return: The job_type of this ImageJobDetailInfo.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobType`
+        :rtype: str
         """
         return self._job_type
 
@@ -130,8 +132,10 @@ class ImageJobDetailInfo:
     def job_type(self, job_type):
         r"""Sets the job_type of this ImageJobDetailInfo.
 
+        job类型。 * `CREATE_SERVER` - 创建镜像实例 * `CREATE_SERVER_IMAGE` - 构建镜像 * `DELETE_SERVER` - 删除镜像实例
+
         :param job_type: The job_type of this ImageJobDetailInfo.
-        :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobType`
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -201,8 +205,10 @@ class ImageJobDetailInfo:
     def status(self):
         r"""Gets the status of this ImageJobDetailInfo.
 
+        job详情的状态 * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 成功 * `FAILED` - 失败 * `ABNORMAL` - 异常 * `ROLLBACK` - 回滚中 * `ABORTING` - 终止中
+
         :return: The status of this ImageJobDetailInfo.
-        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobDetailStatus`
+        :rtype: str
         """
         return self._status
 
@@ -210,8 +216,10 @@ class ImageJobDetailInfo:
     def status(self, status):
         r"""Sets the status of this ImageJobDetailInfo.
 
+        job详情的状态 * `WAITING` - 等待 * `RUNNING` - 运行中 * `SUCCESS` - 成功 * `FAILED` - 失败 * `ABNORMAL` - 异常 * `ROLLBACK` - 回滚中 * `ABORTING` - 终止中
+
         :param status: The status of this ImageJobDetailInfo.
-        :type status: :class:`huaweicloudsdkworkspaceapp.v1.ImageJobDetailStatus`
+        :type status: str
         """
         self._status = status
 
