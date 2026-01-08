@@ -27,7 +27,7 @@ class BatchUpdateWidgetsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param body: 待修改的监控视图列表
+        :param body: **参数解释** 待修改的监控视图列表 **约束限制** 包含的监控视图对象个数为[1,50] 
         :type body: list[:class:`huaweicloudsdkces.v2.UpdateWidgetInfo`]
         """
         
@@ -43,7 +43,7 @@ class BatchUpdateWidgetsRequest:
     def body(self):
         r"""Gets the body of this BatchUpdateWidgetsRequest.
 
-        待修改的监控视图列表
+        **参数解释** 待修改的监控视图列表 **约束限制** 包含的监控视图对象个数为[1,50] 
 
         :return: The body of this BatchUpdateWidgetsRequest.
         :rtype: list[:class:`huaweicloudsdkces.v2.UpdateWidgetInfo`]
@@ -54,7 +54,7 @@ class BatchUpdateWidgetsRequest:
     def body(self, body):
         r"""Sets the body of this BatchUpdateWidgetsRequest.
 
-        待修改的监控视图列表
+        **参数解释** 待修改的监控视图列表 **约束限制** 包含的监控视图对象个数为[1,50] 
 
         :param body: The body of this BatchUpdateWidgetsRequest.
         :type body: list[:class:`huaweicloudsdkces.v2.UpdateWidgetInfo`]

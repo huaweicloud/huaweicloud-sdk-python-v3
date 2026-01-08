@@ -245,6 +245,201 @@ class ElbClient(Client):
 
         return http_info
 
+    def batch_delete_certificates(self, request):
+        r"""批量删除证书
+
+        批量删除证书。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteCertificates
+        :type request: :class:`huaweicloudsdkelb.v3.BatchDeleteCertificatesRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteCertificatesResponse`
+        """
+        http_info = self._batch_delete_certificates_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_certificates_invoker(self, request):
+        http_info = self._batch_delete_certificates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_certificates_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/certificates/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteCertificatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_listeners(self, request):
+        r"""批量删监听器
+
+        批量删除监听器。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteListeners
+        :type request: :class:`huaweicloudsdkelb.v3.BatchDeleteListenersRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteListenersResponse`
+        """
+        http_info = self._batch_delete_listeners_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_listeners_invoker(self, request):
+        http_info = self._batch_delete_listeners_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_listeners_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/listeners/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteListenersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_loadbalancers(self, request):
+        r"""批量删除负载均衡器
+
+        批量删除负载均衡器。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteLoadbalancers
+        :type request: :class:`huaweicloudsdkelb.v3.BatchDeleteLoadbalancersRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteLoadbalancersResponse`
+        """
+        http_info = self._batch_delete_loadbalancers_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_loadbalancers_invoker(self, request):
+        http_info = self._batch_delete_loadbalancers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_loadbalancers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteLoadbalancersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def batch_delete_members(self, request):
         r"""批量删除后端服务器
 
@@ -281,6 +476,205 @@ class ElbClient(Client):
         path_params = {}
         if 'pool_id' in local_var_params:
             path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_pools(self, request):
+        r"""批量删除后端服务器组
+
+        批量删除后端服务器组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeletePools
+        :type request: :class:`huaweicloudsdkelb.v3.BatchDeletePoolsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeletePoolsResponse`
+        """
+        http_info = self._batch_delete_pools_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_pools_invoker(self, request):
+        http_info = self._batch_delete_pools_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_pools_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/pools/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeletePoolsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_disable_domain_i_ps(self, request):
+        r"""批量将IP地址从LB实例域名解析中移除
+
+        批量将IP地址从LB实例域名解析中移除。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchDisableDomainIPs
+        :type request: :class:`huaweicloudsdkelb.v3.BatchDisableDomainIPsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchDisableDomainIPsResponse`
+        """
+        http_info = self._batch_disable_domain_i_ps_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_disable_domain_i_ps_invoker(self, request):
+        http_info = self._batch_disable_domain_i_ps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_disable_domain_i_ps_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/dns/ips/batch-disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisableDomainIPsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_enable_domain_i_ps(self, request):
+        r"""批量将IP地址加入LB实例域名解析中
+
+        批量将IP地址加入LB实例域名解析中。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchEnableDomainIPs
+        :type request: :class:`huaweicloudsdkelb.v3.BatchEnableDomainIPsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchEnableDomainIPsResponse`
+        """
+        http_info = self._batch_enable_domain_i_ps_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_enable_domain_i_ps_invoker(self, request):
+        http_info = self._batch_enable_domain_i_ps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_enable_domain_i_ps_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/dns/ips/batch-enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchEnableDomainIPsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
 
         query_params = []
 
@@ -512,6 +906,73 @@ class ElbClient(Client):
 
         return http_info
 
+    def change_listener_tags(self, request):
+        r"""变更监听器标签列表
+
+        批量添加或删除指定监听器器标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeListenerTags
+        :type request: :class:`huaweicloudsdkelb.v3.ChangeListenerTagsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ChangeListenerTagsResponse`
+        """
+        http_info = self._change_listener_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_listener_tags_invoker(self, request):
+        http_info = self._change_listener_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_listener_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/listeners/{listener_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeListenerTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'listener_id' in local_var_params:
+            path_params['listener_id'] = local_var_params['listener_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def change_loadbalancer_charge_mode(self, request):
         r"""变更负载均衡器计费模式
 
@@ -549,6 +1010,147 @@ class ElbClient(Client):
         collection_formats = {}
 
         path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def change_loadbalancer_tags(self, request):
+        r"""变更负载均衡器标签列表
+
+        批量添加或删除指定负载均衡器标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ChangeLoadbalancerTags
+        :type request: :class:`huaweicloudsdkelb.v3.ChangeLoadbalancerTagsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ChangeLoadbalancerTagsResponse`
+        """
+        http_info = self._change_loadbalancer_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def change_loadbalancer_tags_invoker(self, request):
+        http_info = self._change_loadbalancer_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_loadbalancer_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/loadbalancers/{loadbalancer_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeLoadbalancerTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def clone_listener(self, request):
+        r"""复制已有监听器
+
+        复制已有的监听器到同VPC内的负载均衡器。
+        - 仅支持同VPC实例间使用监听器复制功能。
+        - 不支持网关型LB下监听器进行复制，也不支持复制到网关型LB下。
+        - 仅同类型实例之间可以使用监听器复制功能。
+        - 对复制的源监听器有如下限制：后端服务器总数不能超过1000；转发策略总数不能超过100。
+        - 源监听器所在负载均衡器和目的监听器所在负载均衡器不能处于冻结、迁移状态。
+        - 源监听器中若配置quic_config，复制后为null。
+        - 七层转发策略配置为重定向到监听器，该转发策略不会进行复制。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CloneListener
+        :type request: :class:`huaweicloudsdkelb.v3.CloneListenerRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CloneListenerResponse`
+        """
+        http_info = self._clone_listener_http_info(request)
+        return self._call_api(**http_info)
+
+    def clone_listener_invoker(self, request):
+        http_info = self._clone_listener_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _clone_listener_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/listeners/{listener_id}/clone",
+            "request_type": request.__class__.__name__,
+            "response_type": "CloneListenerResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'listener_id' in local_var_params:
+            path_params['listener_id'] = local_var_params['listener_id']
 
         query_params = []
 
@@ -1054,11 +1656,12 @@ class ElbClient(Client):
         - 若要创建网络型负载均衡器，则需要传入l4_flavor_id（网络型规格ID）；若要创建应用型负载均衡器，则需要传入l7_flavor_id（应用型规格ID）；若要创建网络型+应用型负载均衡器，则需要传入l4_flavor_id和l7_flavor_id。
         [- 若要创建包周期负载均衡器，则需要传入prepaid_options，否则创建按需计费负载均衡器。](tag:hws)
         - 按需计费分为固定规格计费和弹性规格计费，根据创建时所选规格的类型决定计费方式。具体规格说明见创建LB请求参数l4_flavor_id和l7_flavor_id。
-        [- 若要创建gateway类型的负载均衡器，则需要：
+        - 若要创建gateway类型的负载均衡器，则需要：
            - 指定loadbalancer_type&#x3D;\&quot;gateway\&quot;，且不支持指定vip_address，ipv6_vip_address。
-           - vip_subnet_cidr_id和ipv6_subnet_cidr_id两者不能都为空，如果两者都传入，则必须属于同一子网。 
+           - vip_subnet_cidr_id和ipv6_subnet_cidr_id两者不能都为空，如果两者都传入，则必须属于同一子网。
            - 不支持创建公网gateway类型LB。
-           - 如果要指定规格，则从请求参数gw_flavor_id传入。](tag:hws_eu)
+           - 不支持传入autoscaling字段，不支持l4_flavor_id和l7_flavor_id。
+           - 必须要指定网关型规格，通过参数gw_flavor_id传入。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2045,8 +2648,11 @@ class ElbClient(Client):
 
         删除负载均衡器且级联删除其下子资源（删除负载均衡器及其绑定的监听器、后端服务器组、后端服务器等一系列资源）。
         - 若LB关联了EIP，则只解绑EIP，不会删除EIP。
+        - 若LB已开启了误删保护开关，则级联删除失败。
+        - 若LB下任意一个后端服务器组开启了误删保护开关，则级联删除失败。
+        - 修改保护开关开启不影响级联删除，仍能正常删除。
         [- 若已开启多挂特性，且关联了多个LB，则只做解绑；否则删除。
-        - 若是共享型LB下的后端服务器组，无论是否多挂都只删除，不解绑。](tag:hc,hk)
+        - 若是共享型LB下的后端服务器组，无论是否多挂都只删除，不解绑。](tag:hws,hws_hk)
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2565,6 +3171,100 @@ class ElbClient(Client):
 
         return http_info
 
+    def list_all_l7_rules(self, request):
+        r"""查询转发规则列表
+
+        查询当前项目下的转发规则列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAllL7Rules
+        :type request: :class:`huaweicloudsdkelb.v3.ListAllL7RulesRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListAllL7RulesResponse`
+        """
+        http_info = self._list_all_l7_rules_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_all_l7_rules_invoker(self, request):
+        http_info = self._list_all_l7_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_l7_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/l7policies/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllL7RulesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'compare_type' in local_var_params:
+            query_params.append(('compare_type', local_var_params['compare_type']))
+            collection_formats['compare_type'] = 'multi'
+        if 'provisioning_status' in local_var_params:
+            query_params.append(('provisioning_status', local_var_params['provisioning_status']))
+            collection_formats['provisioning_status'] = 'multi'
+        if 'invert' in local_var_params:
+            query_params.append(('invert', local_var_params['invert']))
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'value' in local_var_params:
+            query_params.append(('value', local_var_params['value']))
+            collection_formats['value'] = 'multi'
+        if 'key' in local_var_params:
+            query_params.append(('key', local_var_params['key']))
+            collection_formats['key'] = 'multi'
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_all_members(self, request):
         r"""后端服务器全局列表
 
@@ -2826,6 +3526,72 @@ class ElbClient(Client):
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
             collection_formats['enterprise_project_id'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_domain_i_ps(self, request):
+        r"""查询负载均衡器ip的域名配置信息
+
+        查询负载均衡器ip的域名配置信息，即负载均衡器的ip是否加入了域名解析。
+        注意：当负载均衡器的公网域名和私网域名都没有打开时，该接口返回空列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDomainIPs
+        :type request: :class:`huaweicloudsdkelb.v3.ListDomainIPsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListDomainIPsResponse`
+        """
+        http_info = self._list_domain_i_ps_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_domain_i_ps_invoker(self, request):
+        http_info = self._list_domain_i_ps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_i_ps_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/dns/ips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainIPsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -3403,6 +4169,69 @@ class ElbClient(Client):
 
         return http_info
 
+    def list_listener_tags(self, request):
+        r"""查询所有监听器的标签列表
+
+        查询指定项目下所有监听器的标签列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListListenerTags
+        :type request: :class:`huaweicloudsdkelb.v3.ListListenerTagsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListListenerTagsResponse`
+        """
+        http_info = self._list_listener_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_listener_tags_invoker(self, request):
+        http_info = self._list_listener_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_listener_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/listeners/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListListenerTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_listeners(self, request):
         r"""查询监听器列表
 
@@ -3748,6 +4577,69 @@ class ElbClient(Client):
         path_params = {}
         if 'loadbalancer_id' in local_var_params:
             path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_loadbalancer_tags(self, request):
+        r"""查询所有负载均衡器的标签列表
+
+        查询指定项目下所有负载均衡器的标签列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListLoadbalancerTags
+        :type request: :class:`huaweicloudsdkelb.v3.ListLoadbalancerTagsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListLoadbalancerTagsResponse`
+        """
+        http_info = self._list_loadbalancer_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_loadbalancer_tags_invoker(self, request):
+        http_info = self._list_loadbalancer_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_loadbalancer_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/loadbalancers/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLoadbalancerTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -5176,6 +6068,71 @@ class ElbClient(Client):
 
         return http_info
 
+    def show_listener_tags(self, request):
+        r"""查询监听器的标签
+
+        查询指定监听器的所有标签。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowListenerTags
+        :type request: :class:`huaweicloudsdkelb.v3.ShowListenerTagsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowListenerTagsResponse`
+        """
+        http_info = self._show_listener_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_listener_tags_invoker(self, request):
+        http_info = self._show_listener_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_listener_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/listeners/{listener_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowListenerTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'listener_id' in local_var_params:
+            path_params['listener_id'] = local_var_params['listener_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_load_balancer(self, request):
         r"""查询负载均衡器详情
 
@@ -5242,9 +6199,9 @@ class ElbClient(Client):
         return http_info
 
     def show_load_balancer_ports(self, request):
-        r"""查询负载均衡器占用的下联面子网端口列表
+        r"""查询负载均衡内部转发用的IP
 
-        查询负载均衡器占用的下联面子网端口和IP地址信息。
+        查询负载均衡内部转发用的IP。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -5349,6 +6306,148 @@ class ElbClient(Client):
             "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/statuses",
             "request_type": request.__class__.__name__,
             "response_type": "ShowLoadBalancerStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_load_balancer_topology(self, request):
+        r"""查询负载均衡器拓扑
+
+        查询负载均衡拓扑，将负载均衡器及其包含的监听器、后端服务器组以拓扑的形式展示。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLoadBalancerTopology
+        :type request: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerTopologyRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerTopologyResponse`
+        """
+        http_info = self._show_load_balancer_topology_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_load_balancer_topology_invoker(self, request):
+        http_info = self._show_load_balancer_topology_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_load_balancer_topology_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/topology",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLoadBalancerTopologyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+        if 'listener_id' in local_var_params:
+            query_params.append(('listener_id', local_var_params['listener_id']))
+        if 'pool_id' in local_var_params:
+            query_params.append(('pool_id', local_var_params['pool_id']))
+        if 'listener_name' in local_var_params:
+            query_params.append(('listener_name', local_var_params['listener_name']))
+        if 'listener_protocol' in local_var_params:
+            query_params.append(('listener_protocol', local_var_params['listener_protocol']))
+        if 'listener_protocol_port' in local_var_params:
+            query_params.append(('listener_protocol_port', local_var_params['listener_protocol_port']))
+        if 'pool_name' in local_var_params:
+            query_params.append(('pool_name', local_var_params['pool_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_loadbalancer_tags(self, request):
+        r"""查询负载均衡器的标签
+
+        查询指定负载均衡器的所有标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowLoadbalancerTags
+        :type request: :class:`huaweicloudsdkelb.v3.ShowLoadbalancerTagsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowLoadbalancerTagsResponse`
+        """
+        http_info = self._show_loadbalancer_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_loadbalancer_tags_invoker(self, request):
+        http_info = self._show_loadbalancer_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_loadbalancer_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/loadbalancers/{loadbalancer_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLoadbalancerTagsResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -6681,6 +7780,140 @@ class ElbClient(Client):
         path_params = {}
         if 'security_policy_id' in local_var_params:
             path_params['security_policy_id'] = local_var_params['security_policy_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_system_default_domain_config(self, request):
+        r"""配置负载均衡器系统默认域名化
+
+        配置负载均衡器系统默认域名化。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateSystemDefaultDomainConfig
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateSystemDefaultDomainConfigRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateSystemDefaultDomainConfigResponse`
+        """
+        http_info = self._update_system_default_domain_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_system_default_domain_config_invoker(self, request):
+        http_info = self._update_system_default_domain_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_system_default_domain_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/dns/system-default-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSystemDefaultDomainConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_user_defined_domain_config(self, request):
+        r"""配置负载均衡器用户自定义域名化
+
+        配置负载均衡器用户自定义域名化。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateUserDefinedDomainConfig
+        :type request: :class:`huaweicloudsdkelb.v3.UpdateUserDefinedDomainConfigRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateUserDefinedDomainConfigResponse`
+        """
+        http_info = self._update_user_defined_domain_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_user_defined_domain_config_invoker(self, request):
+        http_info = self._update_user_defined_domain_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_user_defined_domain_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/dns/user-defined-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserDefinedDomainConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'loadbalancer_id' in local_var_params:
+            path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
 
         query_params = []
 

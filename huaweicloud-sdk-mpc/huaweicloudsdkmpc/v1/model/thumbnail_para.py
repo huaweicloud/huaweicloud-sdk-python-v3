@@ -16,6 +16,8 @@ class ThumbnailPara:
 
     openapi_types = {
         'type': 'str',
+        'amount': 'int',
+        'threshold': 'int',
         'time': 'int',
         'start_time': 'int',
         'duration': 'int',
@@ -30,6 +32,8 @@ class ThumbnailPara:
 
     attribute_map = {
         'type': 'type',
+        'amount': 'amount',
+        'threshold': 'threshold',
         'time': 'time',
         'start_time': 'start_time',
         'duration': 'duration',
@@ -42,13 +46,17 @@ class ThumbnailPara:
         'max_length': 'max_length'
     }
 
-    def __init__(self, type=None, time=None, start_time=None, duration=None, dots=None, dots_ms=None, output_filename=None, format=None, width=None, height=None, max_length=None):
+    def __init__(self, type=None, amount=None, threshold=None, time=None, start_time=None, duration=None, dots=None, dots_ms=None, output_filename=None, format=None, width=None, height=None, max_length=None):
         r"""ThumbnailPara
 
         The model defined in huaweicloud sdk
 
         :param type: 采样类型。  取值如下： - \&quot;TIME\&quot;：根据时间间隔采样截图。 - \&quot;DOTS\&quot;：指定时间点截图。选择同步截图时，需指定此类型。 - \&quot;DOTS_MS\&quot;：同步截图指定时间点毫秒值。  默认值：\&quot;TIME\&quot; 
         :type type: str
+        :param amount: 黑点比例大于等于此值认为是黑帧。 
+        :type amount: int
+        :param threshold: 像素值小于此值认为是黑点。 
+        :type threshold: int
         :param time: 采样截图的时间间隔值。  默认值：12。  单位：秒 
         :type time: int
         :param start_time: 采样类型为“TIME”模式的开始时间，和“time”配合使用。  默认值：0。  单位：秒。 
@@ -74,6 +82,8 @@ class ThumbnailPara:
         
 
         self._type = None
+        self._amount = None
+        self._threshold = None
         self._time = None
         self._start_time = None
         self._duration = None
@@ -88,6 +98,10 @@ class ThumbnailPara:
 
         if type is not None:
             self.type = type
+        if amount is not None:
+            self.amount = amount
+        if threshold is not None:
+            self.threshold = threshold
         if time is not None:
             self.time = time
         if start_time is not None:
@@ -130,6 +144,50 @@ class ThumbnailPara:
         :type type: str
         """
         self._type = type
+
+    @property
+    def amount(self):
+        r"""Gets the amount of this ThumbnailPara.
+
+        黑点比例大于等于此值认为是黑帧。 
+
+        :return: The amount of this ThumbnailPara.
+        :rtype: int
+        """
+        return self._amount
+
+    @amount.setter
+    def amount(self, amount):
+        r"""Sets the amount of this ThumbnailPara.
+
+        黑点比例大于等于此值认为是黑帧。 
+
+        :param amount: The amount of this ThumbnailPara.
+        :type amount: int
+        """
+        self._amount = amount
+
+    @property
+    def threshold(self):
+        r"""Gets the threshold of this ThumbnailPara.
+
+        像素值小于此值认为是黑点。 
+
+        :return: The threshold of this ThumbnailPara.
+        :rtype: int
+        """
+        return self._threshold
+
+    @threshold.setter
+    def threshold(self, threshold):
+        r"""Sets the threshold of this ThumbnailPara.
+
+        像素值小于此值认为是黑点。 
+
+        :param threshold: The threshold of this ThumbnailPara.
+        :type threshold: int
+        """
+        self._threshold = threshold
 
     @property
     def time(self):

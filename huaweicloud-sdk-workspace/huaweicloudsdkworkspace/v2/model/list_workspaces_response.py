@@ -96,7 +96,7 @@ class ListWorkspacesResponse(SdkResponse):
 
         :param id: 唯一标识ID。
         :type id: str
-        :param is_global: 开通服务是否是全局服务
+        :param is_global: 开通服务是否是全局服务。
         :type is_global: bool
         :param ad_domains: 
         :type ad_domains: :class:`huaweicloudsdkworkspace.v2.AdInfo`
@@ -297,7 +297,7 @@ class ListWorkspacesResponse(SdkResponse):
     def is_global(self):
         r"""Gets the is_global of this ListWorkspacesResponse.
 
-        开通服务是否是全局服务
+        开通服务是否是全局服务。
 
         :return: The is_global of this ListWorkspacesResponse.
         :rtype: bool
@@ -308,7 +308,7 @@ class ListWorkspacesResponse(SdkResponse):
     def is_global(self, is_global):
         r"""Sets the is_global of this ListWorkspacesResponse.
 
-        开通服务是否是全局服务
+        开通服务是否是全局服务。
 
         :param is_global: The is_global of this ListWorkspacesResponse.
         :type is_global: bool

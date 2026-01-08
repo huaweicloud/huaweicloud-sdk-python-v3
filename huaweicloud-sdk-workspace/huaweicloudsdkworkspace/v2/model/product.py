@@ -23,6 +23,7 @@ class Product:
         'cpu_desc': 'str',
         'memory': 'str',
         'is_gpu': 'bool',
+        'vram': 'str',
         'system_disk_type': 'str',
         'system_disk_size': 'str',
         'data_disk_size': 'str',
@@ -51,6 +52,7 @@ class Product:
         'cpu_desc': 'cpu_desc',
         'memory': 'memory',
         'is_gpu': 'is_gpu',
+        'vram': 'vram',
         'system_disk_type': 'system_disk_type',
         'system_disk_size': 'system_disk_size',
         'data_disk_size': 'data_disk_size',
@@ -70,7 +72,7 @@ class Product:
         'share_space_size': 'share_space_size'
     }
 
-    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, system_disk_type=None, system_disk_size=None, data_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, product_desc=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, package_type=None, name=None, share_space_size=None):
+    def __init__(self, product_id=None, flavor_id=None, type=None, architecture=None, cpu=None, cpu_desc=None, memory=None, is_gpu=None, vram=None, system_disk_type=None, system_disk_size=None, data_disk_size=None, gpu_desc=None, bill_switch=None, descriptions=None, product_desc=None, charge_mode=None, contain_data_disk=None, resource_type=None, cloud_service_type=None, volume_product_type=None, domain_ids=None, status=None, package_type=None, name=None, share_space_size=None):
         r"""Product
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class Product:
         :type memory: str
         :param is_gpu: 是否是GPU类型的规格。
         :type is_gpu: bool
+        :param vram: 显存大小，单位GB。
+        :type vram: str
         :param system_disk_type: 系统盘类型。
         :type system_disk_type: str
         :param system_disk_size: 系统盘大小，单位GB。
@@ -137,6 +141,7 @@ class Product:
         self._cpu_desc = None
         self._memory = None
         self._is_gpu = None
+        self._vram = None
         self._system_disk_type = None
         self._system_disk_size = None
         self._data_disk_size = None
@@ -172,6 +177,8 @@ class Product:
             self.memory = memory
         if is_gpu is not None:
             self.is_gpu = is_gpu
+        if vram is not None:
+            self.vram = vram
         if system_disk_type is not None:
             self.system_disk_type = system_disk_type
         if system_disk_size is not None:
@@ -382,6 +389,28 @@ class Product:
         :type is_gpu: bool
         """
         self._is_gpu = is_gpu
+
+    @property
+    def vram(self):
+        r"""Gets the vram of this Product.
+
+        显存大小，单位GB。
+
+        :return: The vram of this Product.
+        :rtype: str
+        """
+        return self._vram
+
+    @vram.setter
+    def vram(self, vram):
+        r"""Sets the vram of this Product.
+
+        显存大小，单位GB。
+
+        :param vram: The vram of this Product.
+        :type vram: str
+        """
+        self._vram = vram
 
     @property
     def system_disk_type(self):

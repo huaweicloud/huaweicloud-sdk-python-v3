@@ -17,16 +17,18 @@ class ListProjectTagsRequest:
     openapi_types = {
         'offset': 'int',
         'limit': 'int',
-        'key': 'str'
+        'key': 'str',
+        'value': 'str'
     }
 
     attribute_map = {
         'offset': 'offset',
         'limit': 'limit',
-        'key': 'key'
+        'key': 'key',
+        'value': 'value'
     }
 
-    def __init__(self, offset=None, limit=None, key=None):
+    def __init__(self, offset=None, limit=None, key=None, value=None):
         r"""ListProjectTagsRequest
 
         The model defined in huaweicloud sdk
@@ -35,8 +37,10 @@ class ListProjectTagsRequest:
         :type offset: int
         :param limit: 用于分页查询，取值范围0-1000，默认值1000。
         :type limit: int
-        :param key: 查询指定标签。
+        :param key: 查询指定标签key查询，key与value同时传入时，满足其中一个也能查询。
         :type key: str
+        :param value: 查询指定标签value查询，key与value同时传入时，满足其中一个也能查询。
+        :type value: str
         """
         
         
@@ -44,6 +48,7 @@ class ListProjectTagsRequest:
         self._offset = None
         self._limit = None
         self._key = None
+        self._value = None
         self.discriminator = None
 
         if offset is not None:
@@ -52,6 +57,8 @@ class ListProjectTagsRequest:
             self.limit = limit
         if key is not None:
             self.key = key
+        if value is not None:
+            self.value = value
 
     @property
     def offset(self):
@@ -101,7 +108,7 @@ class ListProjectTagsRequest:
     def key(self):
         r"""Gets the key of this ListProjectTagsRequest.
 
-        查询指定标签。
+        查询指定标签key查询，key与value同时传入时，满足其中一个也能查询。
 
         :return: The key of this ListProjectTagsRequest.
         :rtype: str
@@ -112,12 +119,34 @@ class ListProjectTagsRequest:
     def key(self, key):
         r"""Sets the key of this ListProjectTagsRequest.
 
-        查询指定标签。
+        查询指定标签key查询，key与value同时传入时，满足其中一个也能查询。
 
         :param key: The key of this ListProjectTagsRequest.
         :type key: str
         """
         self._key = key
+
+    @property
+    def value(self):
+        r"""Gets the value of this ListProjectTagsRequest.
+
+        查询指定标签value查询，key与value同时传入时，满足其中一个也能查询。
+
+        :return: The value of this ListProjectTagsRequest.
+        :rtype: str
+        """
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        r"""Sets the value of this ListProjectTagsRequest.
+
+        查询指定标签value查询，key与value同时传入时，满足其中一个也能查询。
+
+        :param value: The value of this ListProjectTagsRequest.
+        :type value: str
+        """
+        self._value = value
 
     def to_dict(self):
         result = {}

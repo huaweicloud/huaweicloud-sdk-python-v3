@@ -23,7 +23,8 @@ class ListLoginRecordsNewRequest:
         'offset': 'int',
         'limit': 'int',
         'min_network_rtt': 'int',
-        'max_network_rtt': 'int'
+        'max_network_rtt': 'int',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ListLoginRecordsNewRequest:
         'offset': 'offset',
         'limit': 'limit',
         'min_network_rtt': 'min_network_rtt',
-        'max_network_rtt': 'max_network_rtt'
+        'max_network_rtt': 'max_network_rtt',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, offset=None, limit=None, min_network_rtt=None, max_network_rtt=None):
+    def __init__(self, start_time=None, end_time=None, user_name=None, computer_name=None, terminal_type=None, offset=None, limit=None, min_network_rtt=None, max_network_rtt=None, enterprise_project_id=None):
         r"""ListLoginRecordsNewRequest
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ListLoginRecordsNewRequest:
         :type min_network_rtt: int
         :param max_network_rtt: 查询端到端时延的最大值。
         :type max_network_rtt: int
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
         """
         
         
@@ -74,6 +78,7 @@ class ListLoginRecordsNewRequest:
         self._limit = None
         self._min_network_rtt = None
         self._max_network_rtt = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if start_time is not None:
@@ -94,6 +99,8 @@ class ListLoginRecordsNewRequest:
             self.min_network_rtt = min_network_rtt
         if max_network_rtt is not None:
             self.max_network_rtt = max_network_rtt
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def start_time(self):
@@ -292,6 +299,28 @@ class ListLoginRecordsNewRequest:
         :type max_network_rtt: int
         """
         self._max_network_rtt = max_network_rtt
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ListLoginRecordsNewRequest.
+
+        企业项目ID。
+
+        :return: The enterprise_project_id of this ListLoginRecordsNewRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this ListLoginRecordsNewRequest.
+
+        企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListLoginRecordsNewRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         result = {}

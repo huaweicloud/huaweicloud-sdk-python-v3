@@ -108,6 +108,9 @@ from huaweicloudsdkmpc.v1.model.error_response import ErrorResponse
 from huaweicloudsdkmpc.v1.model.extract_task import ExtractTask
 from huaweicloudsdkmpc.v1.model.file_meta_data import FileMetaData
 from huaweicloudsdkmpc.v1.model.hls_encrypt import HlsEncrypt
+from huaweicloudsdkmpc.v1.model.image_sprite import ImageSprite
+from huaweicloudsdkmpc.v1.model.image_sprite_info import ImageSpriteInfo
+from huaweicloudsdkmpc.v1.model.image_sprite_para import ImageSpritePara
 from huaweicloudsdkmpc.v1.model.image_watermark import ImageWatermark
 from huaweicloudsdkmpc.v1.model.image_watermark_setting import ImageWatermarkSetting
 from huaweicloudsdkmpc.v1.model.input_setting import InputSetting
@@ -208,7 +211,9 @@ from huaweicloudsdkmpc.v1.model.text_watermark import TextWatermark
 from huaweicloudsdkmpc.v1.model.thumb_task import ThumbTask
 from huaweicloudsdkmpc.v1.model.thumbnail import Thumbnail
 from huaweicloudsdkmpc.v1.model.thumbnail_para import ThumbnailPara
+from huaweicloudsdkmpc.v1.model.thumbnails_info import ThumbnailsInfo
 from huaweicloudsdkmpc.v1.model.tracks_info import TracksInfo
+from huaweicloudsdkmpc.v1.model.trans_id_template import TransIdTemplate
 from huaweicloudsdkmpc.v1.model.trans_template import TransTemplate
 from huaweicloudsdkmpc.v1.model.trans_template_group import TransTemplateGroup
 from huaweicloudsdkmpc.v1.model.transcode_detail import TranscodeDetail

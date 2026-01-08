@@ -20,6 +20,8 @@ class ImageWatermarkSetting:
         'referpos': 'str',
         'timeline_start': 'str',
         'timeline_duration': 'str',
+        'random_time_min': 'str',
+        'random_time_max': 'str',
         'overlay_input': 'str',
         'input': 'ObsObjInfo',
         'base': 'str'
@@ -31,12 +33,14 @@ class ImageWatermarkSetting:
         'referpos': 'referpos',
         'timeline_start': 'timeline_start',
         'timeline_duration': 'timeline_duration',
+        'random_time_min': 'random_time_min',
+        'random_time_max': 'random_time_max',
         'overlay_input': 'overlay_input',
         'input': 'input',
         'base': 'base'
     }
 
-    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, overlay_input=None, input=None, base=None):
+    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, random_time_min=None, random_time_max=None, overlay_input=None, input=None, base=None):
         r"""ImageWatermarkSetting
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class ImageWatermarkSetting:
         :type timeline_start: str
         :param timeline_duration: 水印持续时间，与“timeline_start”配合使用。  取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值：ToEND。 
         :type timeline_duration: str
+        :param random_time_min: 轮转间隔时间最小值，单位：秒 
+        :type random_time_min: str
+        :param random_time_max: 轮转间隔时间最大值，单位：秒 
+        :type random_time_max: str
         :param overlay_input: 对应拼接列表中第几个片段打水印，从0开始，\&quot;0表示第1个，“1”表示第二个，不带或填\&quot;ALL\&quot;表示所有拼接片源打水印。 
         :type overlay_input: str
         :param input: 
@@ -66,6 +74,8 @@ class ImageWatermarkSetting:
         self._referpos = None
         self._timeline_start = None
         self._timeline_duration = None
+        self._random_time_min = None
+        self._random_time_max = None
         self._overlay_input = None
         self._input = None
         self._base = None
@@ -81,6 +91,10 @@ class ImageWatermarkSetting:
             self.timeline_start = timeline_start
         if timeline_duration is not None:
             self.timeline_duration = timeline_duration
+        if random_time_min is not None:
+            self.random_time_min = random_time_min
+        if random_time_max is not None:
+            self.random_time_max = random_time_max
         if overlay_input is not None:
             self.overlay_input = overlay_input
         if input is not None:
@@ -197,6 +211,50 @@ class ImageWatermarkSetting:
         :type timeline_duration: str
         """
         self._timeline_duration = timeline_duration
+
+    @property
+    def random_time_min(self):
+        r"""Gets the random_time_min of this ImageWatermarkSetting.
+
+        轮转间隔时间最小值，单位：秒 
+
+        :return: The random_time_min of this ImageWatermarkSetting.
+        :rtype: str
+        """
+        return self._random_time_min
+
+    @random_time_min.setter
+    def random_time_min(self, random_time_min):
+        r"""Sets the random_time_min of this ImageWatermarkSetting.
+
+        轮转间隔时间最小值，单位：秒 
+
+        :param random_time_min: The random_time_min of this ImageWatermarkSetting.
+        :type random_time_min: str
+        """
+        self._random_time_min = random_time_min
+
+    @property
+    def random_time_max(self):
+        r"""Gets the random_time_max of this ImageWatermarkSetting.
+
+        轮转间隔时间最大值，单位：秒 
+
+        :return: The random_time_max of this ImageWatermarkSetting.
+        :rtype: str
+        """
+        return self._random_time_max
+
+    @random_time_max.setter
+    def random_time_max(self, random_time_max):
+        r"""Sets the random_time_max of this ImageWatermarkSetting.
+
+        轮转间隔时间最大值，单位：秒 
+
+        :param random_time_max: The random_time_max of this ImageWatermarkSetting.
+        :type random_time_max: str
+        """
+        self._random_time_max = random_time_max
 
     @property
     def overlay_input(self):

@@ -29,9 +29,9 @@ class Volume:
 
         The model defined in huaweicloud sdk
 
-        :param type: 桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  -SAS：高IO。 -SSD：超高IO。 -GPSSD：通用型SSD。
+        :param type: 磁盘类型。
         :type type: str
-        :param size: 磁盘容量，单位GB。系统盘大小范围[80-32760]，数据盘范围[10-32760]，大小为10的倍数。
+        :param size: 磁盘大小，单位GB。
         :type size: int
         """
         
@@ -48,7 +48,7 @@ class Volume:
     def type(self):
         r"""Gets the type of this Volume.
 
-        桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  -SAS：高IO。 -SSD：超高IO。 -GPSSD：通用型SSD。
+        磁盘类型。
 
         :return: The type of this Volume.
         :rtype: str
@@ -59,7 +59,7 @@ class Volume:
     def type(self, type):
         r"""Sets the type of this Volume.
 
-        桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  -SAS：高IO。 -SSD：超高IO。 -GPSSD：通用型SSD。
+        磁盘类型。
 
         :param type: The type of this Volume.
         :type type: str
@@ -70,7 +70,7 @@ class Volume:
     def size(self):
         r"""Gets the size of this Volume.
 
-        磁盘容量，单位GB。系统盘大小范围[80-32760]，数据盘范围[10-32760]，大小为10的倍数。
+        磁盘大小，单位GB。
 
         :return: The size of this Volume.
         :rtype: int
@@ -81,7 +81,7 @@ class Volume:
     def size(self, size):
         r"""Sets the size of this Volume.
 
-        磁盘容量，单位GB。系统盘大小范围[80-32760]，数据盘范围[10-32760]，大小为10的倍数。
+        磁盘大小，单位GB。
 
         :param size: The size of this Volume.
         :type size: int

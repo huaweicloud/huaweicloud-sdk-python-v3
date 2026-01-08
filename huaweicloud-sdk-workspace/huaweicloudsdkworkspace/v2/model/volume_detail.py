@@ -15,8 +15,11 @@ class VolumeDetail:
     sensitive_list = []
 
     openapi_types = {
+        'kms_id': 'str',
         'type': 'str',
         'size': 'int',
+        'iops': 'int',
+        'throughput': 'int',
         'device': 'str',
         'id': 'str',
         'volume_id': 'str',
@@ -27,8 +30,11 @@ class VolumeDetail:
     }
 
     attribute_map = {
+        'kms_id': 'kms_id',
         'type': 'type',
         'size': 'size',
+        'iops': 'iops',
+        'throughput': 'throughput',
         'device': 'device',
         'id': 'id',
         'volume_id': 'volume_id',
@@ -38,15 +44,21 @@ class VolumeDetail:
         'resource_spec_code': 'resource_spec_code'
     }
 
-    def __init__(self, type=None, size=None, device=None, id=None, volume_id=None, bill_resource_id=None, create_time=None, display_name=None, resource_spec_code=None):
+    def __init__(self, kms_id=None, type=None, size=None, iops=None, throughput=None, device=None, id=None, volume_id=None, bill_resource_id=None, create_time=None, display_name=None, resource_spec_code=None):
         r"""VolumeDetail
 
         The model defined in huaweicloud sdk
 
+        :param kms_id: 如果磁盘加密，传递的密钥。
+        :type kms_id: str
         :param type: 桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。  - SAS：高IO。 - SSD：超高IO。
         :type type: str
         :param size: 磁盘容量，单位GB。
         :type size: int
+        :param iops: iops，云硬盘每秒进行读写的操作次数。
+        :type iops: int
+        :param throughput: 吞吐量，云硬盘每秒成功传送的数据量，即读取和写入的数据量。
+        :type throughput: int
         :param device: 挂载目录。
         :type device: str
         :param id: 磁盘唯一标识ID。
@@ -65,8 +77,11 @@ class VolumeDetail:
         
         
 
+        self._kms_id = None
         self._type = None
         self._size = None
+        self._iops = None
+        self._throughput = None
         self._device = None
         self._id = None
         self._volume_id = None
@@ -76,8 +91,14 @@ class VolumeDetail:
         self._resource_spec_code = None
         self.discriminator = None
 
+        if kms_id is not None:
+            self.kms_id = kms_id
         self.type = type
         self.size = size
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
         if device is not None:
             self.device = device
         if id is not None:
@@ -92,6 +113,28 @@ class VolumeDetail:
             self.display_name = display_name
         if resource_spec_code is not None:
             self.resource_spec_code = resource_spec_code
+
+    @property
+    def kms_id(self):
+        r"""Gets the kms_id of this VolumeDetail.
+
+        如果磁盘加密，传递的密钥。
+
+        :return: The kms_id of this VolumeDetail.
+        :rtype: str
+        """
+        return self._kms_id
+
+    @kms_id.setter
+    def kms_id(self, kms_id):
+        r"""Sets the kms_id of this VolumeDetail.
+
+        如果磁盘加密，传递的密钥。
+
+        :param kms_id: The kms_id of this VolumeDetail.
+        :type kms_id: str
+        """
+        self._kms_id = kms_id
 
     @property
     def type(self):
@@ -136,6 +179,50 @@ class VolumeDetail:
         :type size: int
         """
         self._size = size
+
+    @property
+    def iops(self):
+        r"""Gets the iops of this VolumeDetail.
+
+        iops，云硬盘每秒进行读写的操作次数。
+
+        :return: The iops of this VolumeDetail.
+        :rtype: int
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        r"""Sets the iops of this VolumeDetail.
+
+        iops，云硬盘每秒进行读写的操作次数。
+
+        :param iops: The iops of this VolumeDetail.
+        :type iops: int
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        r"""Gets the throughput of this VolumeDetail.
+
+        吞吐量，云硬盘每秒成功传送的数据量，即读取和写入的数据量。
+
+        :return: The throughput of this VolumeDetail.
+        :rtype: int
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        r"""Sets the throughput of this VolumeDetail.
+
+        吞吐量，云硬盘每秒成功传送的数据量，即读取和写入的数据量。
+
+        :param throughput: The throughput of this VolumeDetail.
+        :type throughput: int
+        """
+        self._throughput = throughput
 
     @property
     def device(self):

@@ -1290,9 +1290,6 @@ class NatClient(Client):
         if 'transit_service_port' in local_var_params:
             query_params.append(('transit_service_port', local_var_params['transit_service_port']))
             collection_formats['transit_service_port'] = 'csv'
-        if 'transit_ip_address' in local_var_params:
-            query_params.append(('transit_ip_address', local_var_params['transit_ip_address']))
-            collection_formats['transit_ip_address'] = 'csv'
 
         header_params = {}
 
@@ -1991,7 +1988,7 @@ class NatClient(Client):
 
         - 为指定公网NAT网关实例批量添加或删除标签。 
         - 标签管理服务需要使用该接口批量管理实例的标签。 
-        - 一个资源上最多有10个标签。
+        - 一个资源上最多有20个标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2192,7 +2189,7 @@ class NatClient(Client):
     def create_nat_gateway_tag(self, request):
         r"""添加公网NAT网关资源标签
 
-        - 添加公网NAT网关资源标签。一个资源上最多有10个标签。
+        - 添加公网NAT网关资源标签。一个资源上最多有20个标签。
         
         Please refer to HUAWEI cloud API Explorer for details.
 

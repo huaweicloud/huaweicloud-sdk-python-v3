@@ -29,9 +29,9 @@ class TopPathSummary:
 
         The model defined in huaweicloud sdk
 
-        :param path: path值。
+        :param path: top100 path访问路径
         :type path: str
-        :param value: 对应查询类型的值。（流量单位：Byte）
+        :param value: top100path访问次数
         :type value: int
         """
         
@@ -50,7 +50,7 @@ class TopPathSummary:
     def path(self):
         r"""Gets the path of this TopPathSummary.
 
-        path值。
+        top100 path访问路径
 
         :return: The path of this TopPathSummary.
         :rtype: str
@@ -61,7 +61,7 @@ class TopPathSummary:
     def path(self, path):
         r"""Sets the path of this TopPathSummary.
 
-        path值。
+        top100 path访问路径
 
         :param path: The path of this TopPathSummary.
         :type path: str
@@ -72,7 +72,7 @@ class TopPathSummary:
     def value(self):
         r"""Gets the value of this TopPathSummary.
 
-        对应查询类型的值。（流量单位：Byte）
+        top100path访问次数
 
         :return: The value of this TopPathSummary.
         :rtype: int
@@ -83,7 +83,7 @@ class TopPathSummary:
     def value(self, value):
         r"""Sets the value of this TopPathSummary.
 
-        对应查询类型的值。（流量单位：Byte）
+        top100path访问次数
 
         :param value: The value of this TopPathSummary.
         :type value: int

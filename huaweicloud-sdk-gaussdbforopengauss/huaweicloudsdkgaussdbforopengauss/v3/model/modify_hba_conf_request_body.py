@@ -15,8 +15,8 @@ class ModifyHbaConfRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'before_conf': 'object',
-        'after_conf': 'object'
+        'before_conf': 'BeforeHbaConfOption',
+        'after_conf': 'AfterHbaConfOption'
     }
 
     attribute_map = {
@@ -29,10 +29,10 @@ class ModifyHbaConfRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param before_conf: **参数解释**: 需要修改的hba配置信息。 **约束限制**: 不涉及。
-        :type before_conf: object
-        :param after_conf: **参数解释**: 修改后的hba配置信息。 **约束限制**: 不涉及。
-        :type after_conf: object
+        :param before_conf: 
+        :type before_conf: :class:`huaweicloudsdkgaussdbforopengauss.v3.BeforeHbaConfOption`
+        :param after_conf: 
+        :type after_conf: :class:`huaweicloudsdkgaussdbforopengauss.v3.AfterHbaConfOption`
         """
         
         
@@ -48,10 +48,8 @@ class ModifyHbaConfRequestBody:
     def before_conf(self):
         r"""Gets the before_conf of this ModifyHbaConfRequestBody.
 
-        **参数解释**: 需要修改的hba配置信息。 **约束限制**: 不涉及。
-
         :return: The before_conf of this ModifyHbaConfRequestBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BeforeHbaConfOption`
         """
         return self._before_conf
 
@@ -59,10 +57,8 @@ class ModifyHbaConfRequestBody:
     def before_conf(self, before_conf):
         r"""Sets the before_conf of this ModifyHbaConfRequestBody.
 
-        **参数解释**: 需要修改的hba配置信息。 **约束限制**: 不涉及。
-
         :param before_conf: The before_conf of this ModifyHbaConfRequestBody.
-        :type before_conf: object
+        :type before_conf: :class:`huaweicloudsdkgaussdbforopengauss.v3.BeforeHbaConfOption`
         """
         self._before_conf = before_conf
 
@@ -70,10 +66,8 @@ class ModifyHbaConfRequestBody:
     def after_conf(self):
         r"""Gets the after_conf of this ModifyHbaConfRequestBody.
 
-        **参数解释**: 修改后的hba配置信息。 **约束限制**: 不涉及。
-
         :return: The after_conf of this ModifyHbaConfRequestBody.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.AfterHbaConfOption`
         """
         return self._after_conf
 
@@ -81,10 +75,8 @@ class ModifyHbaConfRequestBody:
     def after_conf(self, after_conf):
         r"""Sets the after_conf of this ModifyHbaConfRequestBody.
 
-        **参数解释**: 修改后的hba配置信息。 **约束限制**: 不涉及。
-
         :param after_conf: The after_conf of this ModifyHbaConfRequestBody.
-        :type after_conf: object
+        :type after_conf: :class:`huaweicloudsdkgaussdbforopengauss.v3.AfterHbaConfOption`
         """
         self._after_conf = after_conf
 

@@ -35,7 +35,9 @@ class User:
         'share_space_desktops': 'int',
         'group_names': 'list[str]',
         'enterprise_project_id': 'str',
-        'user_info_map': 'str'
+        'user_info_map': 'str',
+        'domain': 'str',
+        'certificate_status': 'bool'
     }
 
     attribute_map = {
@@ -59,10 +61,12 @@ class User:
         'share_space_desktops': 'share_space_desktops',
         'group_names': 'group_names',
         'enterprise_project_id': 'enterprise_project_id',
-        'user_info_map': 'user_info_map'
+        'user_info_map': 'user_info_map',
+        'domain': 'domain',
+        'certificate_status': 'certificate_status'
     }
 
-    def __init__(self, id=None, sid=None, user_name=None, user_email=None, total_desktops=None, user_phone=None, active_type=None, is_pre_user=None, account_expires=None, password_never_expired=None, account_expired=None, enable_change_password=None, next_login_change_password=None, description=None, locked=None, disabled=None, share_space_subscription=None, share_space_desktops=None, group_names=None, enterprise_project_id=None, user_info_map=None):
+    def __init__(self, id=None, sid=None, user_name=None, user_email=None, total_desktops=None, user_phone=None, active_type=None, is_pre_user=None, account_expires=None, password_never_expired=None, account_expired=None, enable_change_password=None, next_login_change_password=None, description=None, locked=None, disabled=None, share_space_subscription=None, share_space_desktops=None, group_names=None, enterprise_project_id=None, user_info_map=None, domain=None, certificate_status=None):
         r"""User
 
         The model defined in huaweicloud sdk
@@ -105,10 +109,14 @@ class User:
         :type share_space_desktops: int
         :param group_names: 加入的组列表。
         :type group_names: list[str]
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param user_info_map: 用户信息映射，包含用户的服务等级、操作模式和类型。
         :type user_info_map: str
+        :param domain: 域。
+        :type domain: str
+        :param certificate_status: 当前用户是否存在用户证书。
+        :type certificate_status: bool
         """
         
         
@@ -134,6 +142,8 @@ class User:
         self._group_names = None
         self._enterprise_project_id = None
         self._user_info_map = None
+        self._domain = None
+        self._certificate_status = None
         self.discriminator = None
 
         if id is not None:
@@ -178,6 +188,10 @@ class User:
             self.enterprise_project_id = enterprise_project_id
         if user_info_map is not None:
             self.user_info_map = user_info_map
+        if domain is not None:
+            self.domain = domain
+        if certificate_status is not None:
+            self.certificate_status = certificate_status
 
     @property
     def id(self):
@@ -601,7 +615,7 @@ class User:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this User.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this User.
         :rtype: str
@@ -612,7 +626,7 @@ class User:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this User.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this User.
         :type enterprise_project_id: str
@@ -640,6 +654,50 @@ class User:
         :type user_info_map: str
         """
         self._user_info_map = user_info_map
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this User.
+
+        域。
+
+        :return: The domain of this User.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this User.
+
+        域。
+
+        :param domain: The domain of this User.
+        :type domain: str
+        """
+        self._domain = domain
+
+    @property
+    def certificate_status(self):
+        r"""Gets the certificate_status of this User.
+
+        当前用户是否存在用户证书。
+
+        :return: The certificate_status of this User.
+        :rtype: bool
+        """
+        return self._certificate_status
+
+    @certificate_status.setter
+    def certificate_status(self, certificate_status):
+        r"""Sets the certificate_status of this User.
+
+        当前用户是否存在用户证书。
+
+        :param certificate_status: The certificate_status of this User.
+        :type certificate_status: bool
+        """
+        self._certificate_status = certificate_status
 
     def to_dict(self):
         result = {}

@@ -193,8 +193,6 @@ from huaweicloudsdksecmaster.v1.model.create_dataspace_response import CreateDat
 from huaweicloudsdksecmaster.v1.model.create_dictionary_request import CreateDictionaryRequest
 from huaweicloudsdksecmaster.v1.model.create_dpe_classify_request_body import CreateDpeClassifyRequestBody
 from huaweicloudsdksecmaster.v1.model.create_dpe_mapping_request_body import CreateDpeMappingRequestBody
-from huaweicloudsdksecmaster.v1.model.create_generic_action_request import CreateGenericActionRequest
-from huaweicloudsdksecmaster.v1.model.create_generic_action_response import CreateGenericActionResponse
 from huaweicloudsdksecmaster.v1.model.create_incident_request import CreateIncidentRequest
 from huaweicloudsdksecmaster.v1.model.create_incident_request_body import CreateIncidentRequestBody
 from huaweicloudsdksecmaster.v1.model.create_incident_response import CreateIncidentResponse
@@ -470,7 +468,6 @@ from huaweicloudsdksecmaster.v1.model.field_response_body import FieldResponseBo
 from huaweicloudsdksecmaster.v1.model.file_configuration import FileConfiguration
 from huaweicloudsdksecmaster.v1.model.file_type import FileType
 from huaweicloudsdksecmaster.v1.model.filter_connection_type import FilterConnectionType
-from huaweicloudsdksecmaster.v1.model.generic_action_request_body import GenericActionRequestBody
 from huaweicloudsdksecmaster.v1.model.governance_user import GovernanceUser
 from huaweicloudsdksecmaster.v1.model.group import Group
 from huaweicloudsdksecmaster.v1.model.group_dto import GroupDto

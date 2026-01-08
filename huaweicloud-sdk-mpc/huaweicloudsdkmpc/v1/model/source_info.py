@@ -20,6 +20,7 @@ class SourceInfo:
         'format': 'str',
         'size': 'int',
         'manifest_name': 'str',
+        'md5': 'str',
         'video_info': 'VideoInfo',
         'audio_info': 'list[AudioInfo]'
     }
@@ -30,11 +31,12 @@ class SourceInfo:
         'format': 'format',
         'size': 'size',
         'manifest_name': 'manifest_name',
+        'md5': 'md5',
         'video_info': 'video_info',
         'audio_info': 'audio_info'
     }
 
-    def __init__(self, duration=None, duration_ms=None, format=None, size=None, manifest_name=None, video_info=None, audio_info=None):
+    def __init__(self, duration=None, duration_ms=None, format=None, size=None, manifest_name=None, md5=None, video_info=None, audio_info=None):
         r"""SourceInfo
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class SourceInfo:
         :type size: int
         :param manifest_name: 独立mpd索引文件名 
         :type manifest_name: str
+        :param md5: 视频的 md5 值。 
+        :type md5: str
         :param video_info: 
         :type video_info: :class:`huaweicloudsdkmpc.v1.VideoInfo`
         :param audio_info: 音频信息
@@ -62,6 +66,7 @@ class SourceInfo:
         self._format = None
         self._size = None
         self._manifest_name = None
+        self._md5 = None
         self._video_info = None
         self._audio_info = None
         self.discriminator = None
@@ -76,6 +81,8 @@ class SourceInfo:
             self.size = size
         if manifest_name is not None:
             self.manifest_name = manifest_name
+        if md5 is not None:
+            self.md5 = md5
         if video_info is not None:
             self.video_info = video_info
         if audio_info is not None:
@@ -190,6 +197,28 @@ class SourceInfo:
         :type manifest_name: str
         """
         self._manifest_name = manifest_name
+
+    @property
+    def md5(self):
+        r"""Gets the md5 of this SourceInfo.
+
+        视频的 md5 值。 
+
+        :return: The md5 of this SourceInfo.
+        :rtype: str
+        """
+        return self._md5
+
+    @md5.setter
+    def md5(self, md5):
+        r"""Sets the md5 of this SourceInfo.
+
+        视频的 md5 值。 
+
+        :param md5: The md5 of this SourceInfo.
+        :type md5: str
+        """
+        self._md5 = md5
 
     @property
     def video_info(self):

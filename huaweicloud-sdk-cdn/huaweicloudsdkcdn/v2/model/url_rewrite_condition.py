@@ -31,7 +31,7 @@ class UrlRewriteCondition:
 
         The model defined in huaweicloud sdk
 
-        :param match_type: 匹配类型。   - catalog：指定目录下的文件需执行访问URL重写规则，   - full_path：某个完整路径下的文件需执行访问URL重写规则。
+        :param match_type: **参数解释：** 匹配类型 **约束限制：** 不涉及 **取值范围：** - catalog: 指定目录下的文件需执行访问URL重写规则 - full_path: 某个完整路径下的文件需执行访问URL重写规则 - home_page: 访问域名首页时需执行访问URL重写规则 - regex: 客户端请求URL中的字符匹配正则表达式时需要执行访问URL重写规则 **默认取值：** 不涉及
         :type match_type: str
         :param match_value: 匹配内容。当match_type为catalog时，为目录路径，输入要求以“/”作为首字符，以“,”进行分隔，如/test/folder01,/test/folder02，并且输入的目录路径总数不超过20个。 当match_type为full_path时，为全路径，输入要求以“/”作为首字符，支持匹配指定目录下的具体文件，或者带通配符“\\*”的文件，单条全路径缓存规则里仅支持配置一个全路径，如/test/index.html或/test/\\*.jpg。
         :type match_value: str
@@ -54,7 +54,7 @@ class UrlRewriteCondition:
     def match_type(self):
         r"""Gets the match_type of this UrlRewriteCondition.
 
-        匹配类型。   - catalog：指定目录下的文件需执行访问URL重写规则，   - full_path：某个完整路径下的文件需执行访问URL重写规则。
+        **参数解释：** 匹配类型 **约束限制：** 不涉及 **取值范围：** - catalog: 指定目录下的文件需执行访问URL重写规则 - full_path: 某个完整路径下的文件需执行访问URL重写规则 - home_page: 访问域名首页时需执行访问URL重写规则 - regex: 客户端请求URL中的字符匹配正则表达式时需要执行访问URL重写规则 **默认取值：** 不涉及
 
         :return: The match_type of this UrlRewriteCondition.
         :rtype: str
@@ -65,7 +65,7 @@ class UrlRewriteCondition:
     def match_type(self, match_type):
         r"""Sets the match_type of this UrlRewriteCondition.
 
-        匹配类型。   - catalog：指定目录下的文件需执行访问URL重写规则，   - full_path：某个完整路径下的文件需执行访问URL重写规则。
+        **参数解释：** 匹配类型 **约束限制：** 不涉及 **取值范围：** - catalog: 指定目录下的文件需执行访问URL重写规则 - full_path: 某个完整路径下的文件需执行访问URL重写规则 - home_page: 访问域名首页时需执行访问URL重写规则 - regex: 客户端请求URL中的字符匹配正则表达式时需要执行访问URL重写规则 **默认取值：** 不涉及
 
         :param match_type: The match_type of this UrlRewriteCondition.
         :type match_type: str

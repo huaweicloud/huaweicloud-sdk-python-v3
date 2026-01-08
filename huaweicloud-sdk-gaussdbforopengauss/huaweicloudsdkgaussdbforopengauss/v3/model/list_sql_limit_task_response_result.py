@@ -23,7 +23,7 @@ class ListSqlLimitTaskResponseResult:
         'databases': 'str',
         'key_words': 'str',
         'status': 'str',
-        'instance_id': 'object',
+        'instance_id': 'str',
         'rule_name': 'str',
         'parallel_size': 'int',
         'start_time': 'str',
@@ -72,7 +72,7 @@ class ListSqlLimitTaskResponseResult:
         :param status: **参数解释**: 限流任务状态。 **取值范围**: 当前支持：CREATING，UPDATING，DELETING，WAIT_EXECUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
         :type status: str
         :param instance_id: **参数解释**: 实例ID。 **取值范围**: 不涉及。
-        :type instance_id: object
+        :type instance_id: str
         :param rule_name: **参数解释**: 规则名。 **取值范围**: 不涉及。
         :type rule_name: str
         :param parallel_size: **参数解释**: 并发数。 **取值范围**: 不涉及。
@@ -320,7 +320,7 @@ class ListSqlLimitTaskResponseResult:
         **参数解释**: 实例ID。 **取值范围**: 不涉及。
 
         :return: The instance_id of this ListSqlLimitTaskResponseResult.
-        :rtype: object
+        :rtype: str
         """
         return self._instance_id
 
@@ -331,7 +331,7 @@ class ListSqlLimitTaskResponseResult:
         **参数解释**: 实例ID。 **取值范围**: 不涉及。
 
         :param instance_id: The instance_id of this ListSqlLimitTaskResponseResult.
-        :type instance_id: object
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

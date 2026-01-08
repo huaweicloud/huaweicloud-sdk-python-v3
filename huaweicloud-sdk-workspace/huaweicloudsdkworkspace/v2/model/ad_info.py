@@ -26,7 +26,9 @@ class AdInfo:
         'standby_dns_ip': 'str',
         'delete_computer_object': 'str',
         'use_ldaps': 'bool',
-        'tls_config': 'TlsConfig'
+        'tls_config': 'TlsConfig',
+        'cba_enabled': 'bool',
+        'certificate_id': 'str'
     }
 
     attribute_map = {
@@ -41,10 +43,12 @@ class AdInfo:
         'standby_dns_ip': 'standby_dns_ip',
         'delete_computer_object': 'delete_computer_object',
         'use_ldaps': 'use_ldaps',
-        'tls_config': 'tls_config'
+        'tls_config': 'tls_config',
+        'cba_enabled': 'cba_enabled',
+        'certificate_id': 'certificate_id'
     }
 
-    def __init__(self, domain_type=None, domain_name=None, domain_admin_account=None, active_domain_name=None, active_domain_ip=None, standby_domain_name=None, standby_domain_ip=None, active_dns_ip=None, standby_dns_ip=None, delete_computer_object=None, use_ldaps=None, tls_config=None):
+    def __init__(self, domain_type=None, domain_name=None, domain_admin_account=None, active_domain_name=None, active_domain_ip=None, standby_domain_name=None, standby_domain_ip=None, active_dns_ip=None, standby_dns_ip=None, delete_computer_object=None, use_ldaps=None, tls_config=None, cba_enabled=None, certificate_id=None):
         r"""AdInfo
 
         The model defined in huaweicloud sdk
@@ -73,6 +77,10 @@ class AdInfo:
         :type use_ldaps: bool
         :param tls_config: 
         :type tls_config: :class:`huaweicloudsdkworkspace.v2.TlsConfig`
+        :param cba_enabled: 是否开启智能卡认证。
+        :type cba_enabled: bool
+        :param certificate_id: 智能卡证书id。
+        :type certificate_id: str
         """
         
         
@@ -89,6 +97,8 @@ class AdInfo:
         self._delete_computer_object = None
         self._use_ldaps = None
         self._tls_config = None
+        self._cba_enabled = None
+        self._certificate_id = None
         self.discriminator = None
 
         if domain_type is not None:
@@ -115,6 +125,10 @@ class AdInfo:
             self.use_ldaps = use_ldaps
         if tls_config is not None:
             self.tls_config = tls_config
+        if cba_enabled is not None:
+            self.cba_enabled = cba_enabled
+        if certificate_id is not None:
+            self.certificate_id = certificate_id
 
     @property
     def domain_type(self):
@@ -375,6 +389,50 @@ class AdInfo:
         :type tls_config: :class:`huaweicloudsdkworkspace.v2.TlsConfig`
         """
         self._tls_config = tls_config
+
+    @property
+    def cba_enabled(self):
+        r"""Gets the cba_enabled of this AdInfo.
+
+        是否开启智能卡认证。
+
+        :return: The cba_enabled of this AdInfo.
+        :rtype: bool
+        """
+        return self._cba_enabled
+
+    @cba_enabled.setter
+    def cba_enabled(self, cba_enabled):
+        r"""Sets the cba_enabled of this AdInfo.
+
+        是否开启智能卡认证。
+
+        :param cba_enabled: The cba_enabled of this AdInfo.
+        :type cba_enabled: bool
+        """
+        self._cba_enabled = cba_enabled
+
+    @property
+    def certificate_id(self):
+        r"""Gets the certificate_id of this AdInfo.
+
+        智能卡证书id。
+
+        :return: The certificate_id of this AdInfo.
+        :rtype: str
+        """
+        return self._certificate_id
+
+    @certificate_id.setter
+    def certificate_id(self, certificate_id):
+        r"""Sets the certificate_id of this AdInfo.
+
+        智能卡证书id。
+
+        :param certificate_id: The certificate_id of this AdInfo.
+        :type certificate_id: str
+        """
+        self._certificate_id = certificate_id
 
     def to_dict(self):
         result = {}

@@ -51,7 +51,7 @@ class ApplyInternetReq:
         :type eip_charge_mode: str
         :param bandwidth_size: 带宽大小。
         :type bandwidth_size: int
-        :param eip_type: EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp。
+        :param eip_type: EIP的类型。
         :type eip_type: str
         :param vpc_id: vpc的id。
         :type vpc_id: str
@@ -167,7 +167,7 @@ class ApplyInternetReq:
     def eip_type(self):
         r"""Gets the eip_type of this ApplyInternetReq.
 
-        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp。
+        EIP的类型。
 
         :return: The eip_type of this ApplyInternetReq.
         :rtype: str
@@ -178,7 +178,7 @@ class ApplyInternetReq:
     def eip_type(self, eip_type):
         r"""Sets the eip_type of this ApplyInternetReq.
 
-        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP），默认值：5_bgp。
+        EIP的类型。
 
         :param eip_type: The eip_type of this ApplyInternetReq.
         :type eip_type: str

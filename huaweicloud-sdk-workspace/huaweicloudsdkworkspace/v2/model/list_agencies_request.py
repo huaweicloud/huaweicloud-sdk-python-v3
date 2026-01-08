@@ -15,35 +15,42 @@ class ListAgenciesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'scene': 'str'
+        'scene': 'str',
+        'action': 'str'
     }
 
     attribute_map = {
-        'scene': 'scene'
+        'scene': 'scene',
+        'action': 'action'
     }
 
-    def __init__(self, scene=None):
+    def __init__(self, scene=None, action=None):
         r"""ListAgenciesRequest
 
         The model defined in huaweicloud sdk
 
-        :param scene: 委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - CLOUD_STORAGE 云存储。 - SCREEN_RECORD：录屏审计。
+        :param scene: 委托场景，多个用英文逗号分隔。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - CLOUD_STORAGE 云存储。 - SCREEN_RECORD：录屏审计。
         :type scene: str
+        :param action: 操作类型。 - CREATE 创建 - FIX 修复
+        :type action: str
         """
         
         
 
         self._scene = None
+        self._action = None
         self.discriminator = None
 
         if scene is not None:
             self.scene = scene
+        if action is not None:
+            self.action = action
 
     @property
     def scene(self):
         r"""Gets the scene of this ListAgenciesRequest.
 
-        委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - CLOUD_STORAGE 云存储。 - SCREEN_RECORD：录屏审计。
+        委托场景，多个用英文逗号分隔。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - CLOUD_STORAGE 云存储。 - SCREEN_RECORD：录屏审计。
 
         :return: The scene of this ListAgenciesRequest.
         :rtype: str
@@ -54,12 +61,34 @@ class ListAgenciesRequest:
     def scene(self, scene):
         r"""Sets the scene of this ListAgenciesRequest.
 
-        委托场景。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - CLOUD_STORAGE 云存储。 - SCREEN_RECORD：录屏审计。
+        委托场景，多个用英文逗号分隔。 - WORKSPACE：云桌面。 - CLOUD_GAME：云游戏。 - CLOUD_STORAGE 云存储。 - SCREEN_RECORD：录屏审计。
 
         :param scene: The scene of this ListAgenciesRequest.
         :type scene: str
         """
         self._scene = scene
+
+    @property
+    def action(self):
+        r"""Gets the action of this ListAgenciesRequest.
+
+        操作类型。 - CREATE 创建 - FIX 修复
+
+        :return: The action of this ListAgenciesRequest.
+        :rtype: str
+        """
+        return self._action
+
+    @action.setter
+    def action(self, action):
+        r"""Sets the action of this ListAgenciesRequest.
+
+        操作类型。 - CREATE 创建 - FIX 修复
+
+        :param action: The action of this ListAgenciesRequest.
+        :type action: str
+        """
+        self._action = action
 
     def to_dict(self):
         result = {}

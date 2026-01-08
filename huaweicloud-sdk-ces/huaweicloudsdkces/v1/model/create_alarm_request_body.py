@@ -75,7 +75,7 @@ class CreateAlarmRequestBody:
         :type insufficientdata_actions: list[:class:`huaweicloudsdkces.v1.Notification`]
         :param ok_actions: **参数解释**： 通知组/主题订阅的信息。 **约束限制**： 最多包含20个动作。 
         :type ok_actions: list[:class:`huaweicloudsdkces.v1.Notification`]
-        :param enterprise_project_id: **参数解释**： 企业项目ID。如何查询企业项目ID，请参考“[获取企业项目ID](ces_03_0061.xml)”。 **约束限制**： 不涉及。 **取值范围**： 长度为0或者32个字符。 **默认取值**： 0，表示默认的企业项目default。 
+        :param enterprise_project_id: **参数解释**： 企业项目ID。如何查询企业项目ID，请参考[[获取项目ID](https://support.huaweicloud.com/api-ces/ces_03_0057.html)](tag:hc)[[获取项目ID](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0057.html)](tag:hk)[[获取项目ID](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0057.html)](tag:hws_eu)[[获取项目ID](ces_03_0057.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 长度为0或者32个字符。 **默认取值**： 0，表示默认的企业项目default。 
         :type enterprise_project_id: str
         :param alarm_action_begin_time: **参数解释**： 告警通知开启时间。 **约束限制**： 不涉及。 **取值范围**： 只能包含数字、“:”，长度为[1,64]个字符。 **默认取值**： 不涉及。 
         :type alarm_action_begin_time: str
@@ -365,7 +365,7 @@ class CreateAlarmRequestBody:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateAlarmRequestBody.
 
-        **参数解释**： 企业项目ID。如何查询企业项目ID，请参考“[获取企业项目ID](ces_03_0061.xml)”。 **约束限制**： 不涉及。 **取值范围**： 长度为0或者32个字符。 **默认取值**： 0，表示默认的企业项目default。 
+        **参数解释**： 企业项目ID。如何查询企业项目ID，请参考[[获取项目ID](https://support.huaweicloud.com/api-ces/ces_03_0057.html)](tag:hc)[[获取项目ID](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0057.html)](tag:hk)[[获取项目ID](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0057.html)](tag:hws_eu)[[获取项目ID](ces_03_0057.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 长度为0或者32个字符。 **默认取值**： 0，表示默认的企业项目default。 
 
         :return: The enterprise_project_id of this CreateAlarmRequestBody.
         :rtype: str
@@ -376,7 +376,7 @@ class CreateAlarmRequestBody:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateAlarmRequestBody.
 
-        **参数解释**： 企业项目ID。如何查询企业项目ID，请参考“[获取企业项目ID](ces_03_0061.xml)”。 **约束限制**： 不涉及。 **取值范围**： 长度为0或者32个字符。 **默认取值**： 0，表示默认的企业项目default。 
+        **参数解释**： 企业项目ID。如何查询企业项目ID，请参考[[获取项目ID](https://support.huaweicloud.com/api-ces/ces_03_0057.html)](tag:hc)[[获取项目ID](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0057.html)](tag:hk)[[获取项目ID](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0057.html)](tag:hws_eu)[[获取项目ID](ces_03_0057.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 长度为0或者32个字符。 **默认取值**： 0，表示默认的企业项目default。 
 
         :param enterprise_project_id: The enterprise_project_id of this CreateAlarmRequestBody.
         :type enterprise_project_id: str

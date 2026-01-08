@@ -24,7 +24,13 @@ class UpdateDesktopPoolAttributesReq:
         'autoscale_policy': 'AutoscalePolicy',
         'in_maintenance_mode': 'bool',
         'desktop_name_policy_id': 'str',
-        'availability_zone': 'str'
+        'availability_zone': 'str',
+        'root_volume': 'DesktopPoolVolumeInfo',
+        'data_volumes': 'list[DesktopPoolVolumeInfo]',
+        'vpc_id': 'str',
+        'subnet_ids': 'list[str]',
+        'security_groups': 'list[SecurityGroup]',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -37,10 +43,16 @@ class UpdateDesktopPoolAttributesReq:
         'autoscale_policy': 'autoscale_policy',
         'in_maintenance_mode': 'in_maintenance_mode',
         'desktop_name_policy_id': 'desktop_name_policy_id',
-        'availability_zone': 'availability_zone'
+        'availability_zone': 'availability_zone',
+        'root_volume': 'root_volume',
+        'data_volumes': 'data_volumes',
+        'vpc_id': 'vpc_id',
+        'subnet_ids': 'subnet_ids',
+        'security_groups': 'security_groups',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, description=None, ou_name=None, tags=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, in_maintenance_mode=None, desktop_name_policy_id=None, availability_zone=None):
+    def __init__(self, name=None, description=None, ou_name=None, tags=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, in_maintenance_mode=None, desktop_name_policy_id=None, availability_zone=None, root_volume=None, data_volumes=None, vpc_id=None, subnet_ids=None, security_groups=None, enterprise_project_id=None):
         r"""UpdateDesktopPoolAttributesReq
 
         The model defined in huaweicloud sdk
@@ -63,8 +75,20 @@ class UpdateDesktopPoolAttributesReq:
         :type in_maintenance_mode: bool
         :param desktop_name_policy_id: 策略id，用于指定生成桌面名称策略。
         :type desktop_name_policy_id: str
-        :param availability_zone: 桌面池的可用区。桌面池的可用区是边缘可用区时，不支持修改。
+        :param availability_zone: 桌面池的可用区。
         :type availability_zone: str
+        :param root_volume: 
+        :type root_volume: :class:`huaweicloudsdkworkspace.v2.DesktopPoolVolumeInfo`
+        :param data_volumes: 数据盘列表。
+        :type data_volumes: list[:class:`huaweicloudsdkworkspace.v2.DesktopPoolVolumeInfo`]
+        :param vpc_id: VPC ID
+        :type vpc_id: str
+        :param subnet_ids: 桌面池子网ID列表
+        :type subnet_ids: list[str]
+        :param security_groups: 桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        :param enterprise_project_id: 企业项目ID
+        :type enterprise_project_id: str
         """
         
         
@@ -79,6 +103,12 @@ class UpdateDesktopPoolAttributesReq:
         self._in_maintenance_mode = None
         self._desktop_name_policy_id = None
         self._availability_zone = None
+        self._root_volume = None
+        self._data_volumes = None
+        self._vpc_id = None
+        self._subnet_ids = None
+        self._security_groups = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if name is not None:
@@ -101,6 +131,18 @@ class UpdateDesktopPoolAttributesReq:
             self.desktop_name_policy_id = desktop_name_policy_id
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if root_volume is not None:
+            self.root_volume = root_volume
+        if data_volumes is not None:
+            self.data_volumes = data_volumes
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if subnet_ids is not None:
+            self.subnet_ids = subnet_ids
+        if security_groups is not None:
+            self.security_groups = security_groups
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def name(self):
@@ -300,7 +342,7 @@ class UpdateDesktopPoolAttributesReq:
     def availability_zone(self):
         r"""Gets the availability_zone of this UpdateDesktopPoolAttributesReq.
 
-        桌面池的可用区。桌面池的可用区是边缘可用区时，不支持修改。
+        桌面池的可用区。
 
         :return: The availability_zone of this UpdateDesktopPoolAttributesReq.
         :rtype: str
@@ -311,12 +353,140 @@ class UpdateDesktopPoolAttributesReq:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this UpdateDesktopPoolAttributesReq.
 
-        桌面池的可用区。桌面池的可用区是边缘可用区时，不支持修改。
+        桌面池的可用区。
 
         :param availability_zone: The availability_zone of this UpdateDesktopPoolAttributesReq.
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def root_volume(self):
+        r"""Gets the root_volume of this UpdateDesktopPoolAttributesReq.
+
+        :return: The root_volume of this UpdateDesktopPoolAttributesReq.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DesktopPoolVolumeInfo`
+        """
+        return self._root_volume
+
+    @root_volume.setter
+    def root_volume(self, root_volume):
+        r"""Sets the root_volume of this UpdateDesktopPoolAttributesReq.
+
+        :param root_volume: The root_volume of this UpdateDesktopPoolAttributesReq.
+        :type root_volume: :class:`huaweicloudsdkworkspace.v2.DesktopPoolVolumeInfo`
+        """
+        self._root_volume = root_volume
+
+    @property
+    def data_volumes(self):
+        r"""Gets the data_volumes of this UpdateDesktopPoolAttributesReq.
+
+        数据盘列表。
+
+        :return: The data_volumes of this UpdateDesktopPoolAttributesReq.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.DesktopPoolVolumeInfo`]
+        """
+        return self._data_volumes
+
+    @data_volumes.setter
+    def data_volumes(self, data_volumes):
+        r"""Sets the data_volumes of this UpdateDesktopPoolAttributesReq.
+
+        数据盘列表。
+
+        :param data_volumes: The data_volumes of this UpdateDesktopPoolAttributesReq.
+        :type data_volumes: list[:class:`huaweicloudsdkworkspace.v2.DesktopPoolVolumeInfo`]
+        """
+        self._data_volumes = data_volumes
+
+    @property
+    def vpc_id(self):
+        r"""Gets the vpc_id of this UpdateDesktopPoolAttributesReq.
+
+        VPC ID
+
+        :return: The vpc_id of this UpdateDesktopPoolAttributesReq.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        r"""Sets the vpc_id of this UpdateDesktopPoolAttributesReq.
+
+        VPC ID
+
+        :param vpc_id: The vpc_id of this UpdateDesktopPoolAttributesReq.
+        :type vpc_id: str
+        """
+        self._vpc_id = vpc_id
+
+    @property
+    def subnet_ids(self):
+        r"""Gets the subnet_ids of this UpdateDesktopPoolAttributesReq.
+
+        桌面池子网ID列表
+
+        :return: The subnet_ids of this UpdateDesktopPoolAttributesReq.
+        :rtype: list[str]
+        """
+        return self._subnet_ids
+
+    @subnet_ids.setter
+    def subnet_ids(self, subnet_ids):
+        r"""Sets the subnet_ids of this UpdateDesktopPoolAttributesReq.
+
+        桌面池子网ID列表
+
+        :param subnet_ids: The subnet_ids of this UpdateDesktopPoolAttributesReq.
+        :type subnet_ids: list[str]
+        """
+        self._subnet_ids = subnet_ids
+
+    @property
+    def security_groups(self):
+        r"""Gets the security_groups of this UpdateDesktopPoolAttributesReq.
+
+        桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组
+
+        :return: The security_groups of this UpdateDesktopPoolAttributesReq.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        """
+        return self._security_groups
+
+    @security_groups.setter
+    def security_groups(self, security_groups):
+        r"""Sets the security_groups of this UpdateDesktopPoolAttributesReq.
+
+        桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组
+
+        :param security_groups: The security_groups of this UpdateDesktopPoolAttributesReq.
+        :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
+        """
+        self._security_groups = security_groups
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this UpdateDesktopPoolAttributesReq.
+
+        企业项目ID
+
+        :return: The enterprise_project_id of this UpdateDesktopPoolAttributesReq.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this UpdateDesktopPoolAttributesReq.
+
+        企业项目ID
+
+        :param enterprise_project_id: The enterprise_project_id of this UpdateDesktopPoolAttributesReq.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         result = {}

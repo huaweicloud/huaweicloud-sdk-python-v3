@@ -49,9 +49,9 @@ class CreateMemberOption:
         :type name: str
         :param project_id: **参数解释**：后端服务器所在的项目ID。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type project_id: str
-        :param protocol_port: **参数解释**：后端服务器业务端口。  **约束限制**： - 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  **取值范围**：不涉及  **默认取值**：不涉及
+        :param protocol_port: **参数解释**：后端服务器业务端口。  **约束限制**： - 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。 - 网关型LB，即pool协议为IP时，protocol_port必须设置为0。  **取值范围**：不涉及  **默认取值**：不涉及
         :type protocol_port: int
-        :param subnet_cidr_id: **参数解释**：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。 IPv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets响应参数中的neutron_subnet_id得到 IPv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  **约束限制**： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的IP类型后端转发已开启（ip_target_enable&#x3D;true），则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 - 若所属LB未开启IP类型后端转发，该参数必填。 [- 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。](tag:hws_eu) [- 不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)  **取值范围**：不涉及  **默认取值**：不涉及
+        :param subnet_cidr_id: **参数解释**：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。 IPv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets响应参数中的neutron_subnet_id得到 IPv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  **约束限制**： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的IP类型后端转发已开启（ip_target_enable&#x3D;true），则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 - 若所属LB未开启IP类型后端转发，该参数必填。 - 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。 [- 不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)  **取值范围**：不涉及  **默认取值**：不涉及
         :type subnet_cidr_id: str
         :param weight: **参数解释**：后端服务器的权重，请求将根据pool配置的负载均衡算法和后端服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  **约束限制**：若所在pool的lb_algorithm取值为SOURCE_IP或QUIC_CID，该字段无效。  **取值范围**：0-100，默认1。  **默认取值**：不涉及
         :type weight: int
@@ -179,7 +179,7 @@ class CreateMemberOption:
     def protocol_port(self):
         r"""Gets the protocol_port of this CreateMemberOption.
 
-        **参数解释**：后端服务器业务端口。  **约束限制**： - 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：后端服务器业务端口。  **约束限制**： - 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。 - 网关型LB，即pool协议为IP时，protocol_port必须设置为0。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The protocol_port of this CreateMemberOption.
         :rtype: int
@@ -190,7 +190,7 @@ class CreateMemberOption:
     def protocol_port(self, protocol_port):
         r"""Sets the protocol_port of this CreateMemberOption.
 
-        **参数解释**：后端服务器业务端口。  **约束限制**： - 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。 [- 网关型LB，即pool协议为IP时，protocol_port必须设置为0。](tag:hws_eu)  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：后端服务器业务端口。  **约束限制**： - 在开启端口透传的pool下创建member传该字段不生效，可不传该字段。 - 网关型LB，即pool协议为IP时，protocol_port必须设置为0。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param protocol_port: The protocol_port of this CreateMemberOption.
         :type protocol_port: int
@@ -201,7 +201,7 @@ class CreateMemberOption:
     def subnet_cidr_id(self):
         r"""Gets the subnet_cidr_id of this CreateMemberOption.
 
-        **参数解释**：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。 IPv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets响应参数中的neutron_subnet_id得到 IPv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  **约束限制**： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的IP类型后端转发已开启（ip_target_enable=true），则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 - 若所属LB未开启IP类型后端转发，该参数必填。 [- 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。](tag:hws_eu) [- 不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。 IPv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets响应参数中的neutron_subnet_id得到 IPv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  **约束限制**： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的IP类型后端转发已开启（ip_target_enable=true），则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 - 若所属LB未开启IP类型后端转发，该参数必填。 - 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。 [- 不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The subnet_cidr_id of this CreateMemberOption.
         :rtype: str
@@ -212,7 +212,7 @@ class CreateMemberOption:
     def subnet_cidr_id(self, subnet_cidr_id):
         r"""Sets the subnet_cidr_id of this CreateMemberOption.
 
-        **参数解释**：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。 IPv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets响应参数中的neutron_subnet_id得到 IPv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  **约束限制**： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的IP类型后端转发已开启（ip_target_enable=true），则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 - 若所属LB未开启IP类型后端转发，该参数必填。 [- 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。](tag:hws_eu) [- 不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：后端服务器所在的子网，可以是IPv4或IPv6子网。若是IPv4子网，使用对应子网的子网ID（neutron_subnet_id）；若是IPv6子网，使用对应子网的网络ID（neutron_network_id）。 IPv4子网的子网ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets响应参数中的neutron_subnet_id得到 IPv6子网的网络ID可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到  **约束限制**： - 该子网和关联的负载均衡器的子网必须在同一VPC下。 - 若所属LB的IP类型后端转发已开启（ip_target_enable=true），则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。 - 若所属LB未开启IP类型后端转发，该参数必填。 - 网关型LB，即pool协议为IP时，必须指定该子网，且必须和负载均衡器的子网在同一个VPC下，但不能相同。 [- 不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param subnet_cidr_id: The subnet_cidr_id of this CreateMemberOption.
         :type subnet_cidr_id: str

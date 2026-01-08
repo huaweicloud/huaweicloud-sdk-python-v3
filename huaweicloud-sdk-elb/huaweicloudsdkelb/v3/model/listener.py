@@ -131,7 +131,7 @@ class Listener:
         :type project_id: str
         :param enterprise_project_id: **参数解释**：企业项目ID。  **取值范围**：不涉及
         :type enterprise_project_id: str
-        :param protocol: **参数解释**：监听器的监听协议。  [**取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)
+        :param protocol: **参数解释**：监听器的监听协议。  [**取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS、IP。IP为网关型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [**取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)
         :type protocol: str
         :param protocol_port: **参数解释**：监听器的监听端口。  **取值范围**：不涉及
         :type protocol_port: int
@@ -141,7 +141,7 @@ class Listener:
         :type sni_match_algo: str
         :param tags: **参数解释**：标签列表。
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
-        :param updated_at: **参数解释**：监听器的更新时间。  **取值范围**： 格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如：2021-07-30T12:03:44Z
+        :param updated_at: **参数解释**：监听器的更新时间。  **取值范围**：  格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如：2021-07-30T12:03:44Z
         :type updated_at: str
         :param tls_ciphers_policy: **参数解释**：监听器使用的安全策略。  [**取值范围**：tls-1-0-inherit、tls-1-0、tls-1-1、tls-1-2、tls-1-2-strict、tls-1-2-fs、tls-1-0-with-1-3、tls-1-2-fs-with-1-3、hybrid-policy-1-0、tls-1-2-strict-no-cbc，默认：tls-1-2。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,ct,sbc,tm,cmcc,dt)  [**取值范围**：tls-1-0、tls-1-1、tls-1-2、tls-1-2-strict，默认：tls-1-2。](tag:hws_eu,g42,hk_g42,hcso_dt)  [不支持tls1.3协议的套件。](tag:tm,hws_eu,g42,hk_g42)
         :type tls_ciphers_policy: str
@@ -149,7 +149,7 @@ class Listener:
         :type security_policy_id: str
         :param enable_member_retry: **参数解释**：是否开启后端服务器的重试。  **取值范围**：true 开启重试，false 不开启重试。
         :type enable_member_retry: bool
-        :param keepalive_timeout: **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为：0-4000s。
+        :param keepalive_timeout: **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **取值范围**： - TCP、UDP和IP监听器：10-4000s，默认值为300s。 - HTTP、HTTPS和TERMINATED_HTTPS监听器：0-4000s，默认值为60s。
         :type keepalive_timeout: int
         :param client_timeout: **参数解释**：等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  **取值范围**：1-300，单位：秒。
         :type client_timeout: int
@@ -584,7 +584,7 @@ class Listener:
     def protocol(self):
         r"""Gets the protocol of this Listener.
 
-        **参数解释**：监听器的监听协议。  [**取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)
+        **参数解释**：监听器的监听协议。  [**取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS、IP。IP为网关型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [**取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)
 
         :return: The protocol of this Listener.
         :rtype: str
@@ -595,7 +595,7 @@ class Listener:
     def protocol(self, protocol):
         r"""Sets the protocol of this Listener.
 
-        **参数解释**：监听器的监听协议。  [**取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)
+        **参数解释**：监听器的监听协议。  [**取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS、IP。IP为网关型LB上的监听器独有的协议。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [**取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)
 
         :param protocol: The protocol of this Listener.
         :type protocol: str
@@ -694,7 +694,7 @@ class Listener:
     def updated_at(self):
         r"""Gets the updated_at of this Listener.
 
-        **参数解释**：监听器的更新时间。  **取值范围**： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
+        **参数解释**：监听器的更新时间。  **取值范围**：  格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
 
         :return: The updated_at of this Listener.
         :rtype: str
@@ -705,7 +705,7 @@ class Listener:
     def updated_at(self, updated_at):
         r"""Sets the updated_at of this Listener.
 
-        **参数解释**：监听器的更新时间。  **取值范围**： 格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
+        **参数解释**：监听器的更新时间。  **取值范围**：  格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如：2021-07-30T12:03:44Z
 
         :param updated_at: The updated_at of this Listener.
         :type updated_at: str
@@ -782,7 +782,7 @@ class Listener:
     def keepalive_timeout(self):
         r"""Gets the keepalive_timeout of this Listener.
 
-        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为：0-4000s。
+        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **取值范围**： - TCP、UDP和IP监听器：10-4000s，默认值为300s。 - HTTP、HTTPS和TERMINATED_HTTPS监听器：0-4000s，默认值为60s。
 
         :return: The keepalive_timeout of this Listener.
         :rtype: int
@@ -793,7 +793,7 @@ class Listener:
     def keepalive_timeout(self, keepalive_timeout):
         r"""Sets the keepalive_timeout of this Listener.
 
-        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为：0-4000s。
+        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **取值范围**： - TCP、UDP和IP监听器：10-4000s，默认值为300s。 - HTTP、HTTPS和TERMINATED_HTTPS监听器：0-4000s，默认值为60s。
 
         :param keepalive_timeout: The keepalive_timeout of this Listener.
         :type keepalive_timeout: int

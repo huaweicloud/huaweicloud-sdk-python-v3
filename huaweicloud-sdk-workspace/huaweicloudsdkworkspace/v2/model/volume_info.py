@@ -18,6 +18,8 @@ class VolumeInfo:
         'id': 'str',
         'type': 'str',
         'size': 'int',
+        'iops': 'int',
+        'throughput': 'int',
         'resource_spec_code': 'str'
     }
 
@@ -25,10 +27,12 @@ class VolumeInfo:
         'id': 'id',
         'type': 'type',
         'size': 'size',
+        'iops': 'iops',
+        'throughput': 'throughput',
         'resource_spec_code': 'resource_spec_code'
     }
 
-    def __init__(self, id=None, type=None, size=None, resource_spec_code=None):
+    def __init__(self, id=None, type=None, size=None, iops=None, throughput=None, resource_spec_code=None):
         r"""VolumeInfo
 
         The model defined in huaweicloud sdk
@@ -39,6 +43,10 @@ class VolumeInfo:
         :type type: str
         :param size: 磁盘容量，单位GB。
         :type size: int
+        :param iops: iops，云硬盘每秒进行读写的操作次数。
+        :type iops: int
+        :param throughput: 吞吐量，云硬盘每秒成功传送的数据量，即读取和写入的数据量。
+        :type throughput: int
         :param resource_spec_code: 规格。
         :type resource_spec_code: str
         """
@@ -48,6 +56,8 @@ class VolumeInfo:
         self._id = None
         self._type = None
         self._size = None
+        self._iops = None
+        self._throughput = None
         self._resource_spec_code = None
         self.discriminator = None
 
@@ -55,6 +65,10 @@ class VolumeInfo:
             self.id = id
         self.type = type
         self.size = size
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
         if resource_spec_code is not None:
             self.resource_spec_code = resource_spec_code
 
@@ -123,6 +137,50 @@ class VolumeInfo:
         :type size: int
         """
         self._size = size
+
+    @property
+    def iops(self):
+        r"""Gets the iops of this VolumeInfo.
+
+        iops，云硬盘每秒进行读写的操作次数。
+
+        :return: The iops of this VolumeInfo.
+        :rtype: int
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        r"""Sets the iops of this VolumeInfo.
+
+        iops，云硬盘每秒进行读写的操作次数。
+
+        :param iops: The iops of this VolumeInfo.
+        :type iops: int
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        r"""Gets the throughput of this VolumeInfo.
+
+        吞吐量，云硬盘每秒成功传送的数据量，即读取和写入的数据量。
+
+        :return: The throughput of this VolumeInfo.
+        :rtype: int
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        r"""Sets the throughput of this VolumeInfo.
+
+        吞吐量，云硬盘每秒成功传送的数据量，即读取和写入的数据量。
+
+        :param throughput: The throughput of this VolumeInfo.
+        :type throughput: int
+        """
+        self._throughput = throughput
 
     @property
     def resource_spec_code(self):

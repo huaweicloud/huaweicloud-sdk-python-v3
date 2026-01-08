@@ -59,7 +59,7 @@ class Member:
 
         The model defined in huaweicloud sdk
 
-        :param id: **参数解释**：后端服务器ID。  **取值范围**：不涉及 &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        :param id: **参数解释**：后端服务器ID。 **取值范围**：不涉及 &gt; 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
         :param availability_zone: **参数解释**：后端服务器所在的可用区。  **取值范围**：不涉及
         :type availability_zone: str
@@ -89,7 +89,7 @@ class Member:
         :type created_at: str
         :param updated_at: **参数解释**：更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  **取值范围**：不涉及  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt,hk_tm)
         :type updated_at: str
-        :param member_type: **参数解释**：后端服务器的类型。  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        :param member_type: **参数解释**：后端服务器的类型。  **取值范围**： - ip：IP类型的member。 - instance：关联到ECS的member。
         :type member_type: str
         :param instance_id: **参数解释**：member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）  **取值范围**：不涉及
         :type instance_id: str
@@ -144,7 +144,7 @@ class Member:
     def id(self):
         r"""Gets the id of this Member.
 
-        **参数解释**：后端服务器ID。  **取值范围**：不涉及 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：后端服务器ID。 **取值范围**：不涉及 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The id of this Member.
         :rtype: str
@@ -155,7 +155,7 @@ class Member:
     def id(self, id):
         r"""Sets the id of this Member.
 
-        **参数解释**：后端服务器ID。  **取值范围**：不涉及 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
+        **参数解释**：后端服务器ID。 **取值范围**：不涉及 > 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param id: The id of this Member.
         :type id: str
@@ -470,7 +470,7 @@ class Member:
     def member_type(self):
         r"""Gets the member_type of this Member.
 
-        **参数解释**：后端服务器的类型。  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        **参数解释**：后端服务器的类型。  **取值范围**： - ip：IP类型的member。 - instance：关联到ECS的member。
 
         :return: The member_type of this Member.
         :rtype: str
@@ -481,7 +481,7 @@ class Member:
     def member_type(self, member_type):
         r"""Sets the member_type of this Member.
 
-        **参数解释**：后端服务器的类型。  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        **参数解释**：后端服务器的类型。  **取值范围**： - ip：IP类型的member。 - instance：关联到ECS的member。
 
         :param member_type: The member_type of this Member.
         :type member_type: str

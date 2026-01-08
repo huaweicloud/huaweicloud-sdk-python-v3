@@ -18,29 +18,37 @@ class AutoscalePolicy:
         'autoscale_type': 'str',
         'max_auto_created': 'int',
         'min_idle': 'int',
-        'once_auto_created': 'int'
+        'once_auto_created': 'int',
+        'min_retention': 'int',
+        'idle_retention_duration': 'int'
     }
 
     attribute_map = {
         'autoscale_type': 'autoscale_type',
         'max_auto_created': 'max_auto_created',
         'min_idle': 'min_idle',
-        'once_auto_created': 'once_auto_created'
+        'once_auto_created': 'once_auto_created',
+        'min_retention': 'min_retention',
+        'idle_retention_duration': 'idle_retention_duration'
     }
 
-    def __init__(self, autoscale_type=None, max_auto_created=None, min_idle=None, once_auto_created=None):
+    def __init__(self, autoscale_type=None, max_auto_created=None, min_idle=None, once_auto_created=None, min_retention=None, idle_retention_duration=None):
         r"""AutoscalePolicy
 
         The model defined in huaweicloud sdk
 
         :param autoscale_type: 弹性伸缩类型，ACCESS_CREATED：接入时创建，AUTO_CREATED：弹性伸缩。
         :type autoscale_type: str
-        :param max_auto_created: 自动创建桌面上限。
+        :param max_auto_created: 最大自动创建桌面数。
         :type max_auto_created: int
-        :param min_idle: 空闲桌面低于多少时开始自动创建桌面。
+        :param min_idle: 预留空闲桌面数。
         :type min_idle: int
-        :param once_auto_created: 一次自动创建桌面的数量。
+        :param once_auto_created: 一次自动创建桌面的数量(已弃用)。
         :type once_auto_created: int
+        :param min_retention: 最小桌面数。
+        :type min_retention: int
+        :param idle_retention_duration: 空闲桌面保留时长（分钟）。
+        :type idle_retention_duration: int
         """
         
         
@@ -49,6 +57,8 @@ class AutoscalePolicy:
         self._max_auto_created = None
         self._min_idle = None
         self._once_auto_created = None
+        self._min_retention = None
+        self._idle_retention_duration = None
         self.discriminator = None
 
         if autoscale_type is not None:
@@ -59,6 +69,10 @@ class AutoscalePolicy:
             self.min_idle = min_idle
         if once_auto_created is not None:
             self.once_auto_created = once_auto_created
+        if min_retention is not None:
+            self.min_retention = min_retention
+        if idle_retention_duration is not None:
+            self.idle_retention_duration = idle_retention_duration
 
     @property
     def autoscale_type(self):
@@ -86,7 +100,7 @@ class AutoscalePolicy:
     def max_auto_created(self):
         r"""Gets the max_auto_created of this AutoscalePolicy.
 
-        自动创建桌面上限。
+        最大自动创建桌面数。
 
         :return: The max_auto_created of this AutoscalePolicy.
         :rtype: int
@@ -97,7 +111,7 @@ class AutoscalePolicy:
     def max_auto_created(self, max_auto_created):
         r"""Sets the max_auto_created of this AutoscalePolicy.
 
-        自动创建桌面上限。
+        最大自动创建桌面数。
 
         :param max_auto_created: The max_auto_created of this AutoscalePolicy.
         :type max_auto_created: int
@@ -108,7 +122,7 @@ class AutoscalePolicy:
     def min_idle(self):
         r"""Gets the min_idle of this AutoscalePolicy.
 
-        空闲桌面低于多少时开始自动创建桌面。
+        预留空闲桌面数。
 
         :return: The min_idle of this AutoscalePolicy.
         :rtype: int
@@ -119,7 +133,7 @@ class AutoscalePolicy:
     def min_idle(self, min_idle):
         r"""Sets the min_idle of this AutoscalePolicy.
 
-        空闲桌面低于多少时开始自动创建桌面。
+        预留空闲桌面数。
 
         :param min_idle: The min_idle of this AutoscalePolicy.
         :type min_idle: int
@@ -130,7 +144,7 @@ class AutoscalePolicy:
     def once_auto_created(self):
         r"""Gets the once_auto_created of this AutoscalePolicy.
 
-        一次自动创建桌面的数量。
+        一次自动创建桌面的数量(已弃用)。
 
         :return: The once_auto_created of this AutoscalePolicy.
         :rtype: int
@@ -141,12 +155,56 @@ class AutoscalePolicy:
     def once_auto_created(self, once_auto_created):
         r"""Sets the once_auto_created of this AutoscalePolicy.
 
-        一次自动创建桌面的数量。
+        一次自动创建桌面的数量(已弃用)。
 
         :param once_auto_created: The once_auto_created of this AutoscalePolicy.
         :type once_auto_created: int
         """
         self._once_auto_created = once_auto_created
+
+    @property
+    def min_retention(self):
+        r"""Gets the min_retention of this AutoscalePolicy.
+
+        最小桌面数。
+
+        :return: The min_retention of this AutoscalePolicy.
+        :rtype: int
+        """
+        return self._min_retention
+
+    @min_retention.setter
+    def min_retention(self, min_retention):
+        r"""Sets the min_retention of this AutoscalePolicy.
+
+        最小桌面数。
+
+        :param min_retention: The min_retention of this AutoscalePolicy.
+        :type min_retention: int
+        """
+        self._min_retention = min_retention
+
+    @property
+    def idle_retention_duration(self):
+        r"""Gets the idle_retention_duration of this AutoscalePolicy.
+
+        空闲桌面保留时长（分钟）。
+
+        :return: The idle_retention_duration of this AutoscalePolicy.
+        :rtype: int
+        """
+        return self._idle_retention_duration
+
+    @idle_retention_duration.setter
+    def idle_retention_duration(self, idle_retention_duration):
+        r"""Sets the idle_retention_duration of this AutoscalePolicy.
+
+        空闲桌面保留时长（分钟）。
+
+        :param idle_retention_duration: The idle_retention_duration of this AutoscalePolicy.
+        :type idle_retention_duration: int
+        """
+        self._idle_retention_duration = idle_retention_duration
 
     def to_dict(self):
         result = {}

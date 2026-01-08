@@ -87,7 +87,7 @@ class ShowUserResult:
         :type email: str
         :param phone: IAM用户手机号。
         :type phone: str
-        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：正常。
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
         :type pwd_status: bool
         :param update_time: IAM用户更新时间。
         :type update_time: str
@@ -391,7 +391,7 @@ class ShowUserResult:
     def pwd_status(self):
         r"""Gets the pwd_status of this ShowUserResult.
 
-        IAM用户密码状态。true：需要修改密码，false：正常。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :return: The pwd_status of this ShowUserResult.
         :rtype: bool
@@ -402,7 +402,7 @@ class ShowUserResult:
     def pwd_status(self, pwd_status):
         r"""Sets the pwd_status of this ShowUserResult.
 
-        IAM用户密码状态。true：需要修改密码，false：正常。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :param pwd_status: The pwd_status of this ShowUserResult.
         :type pwd_status: bool

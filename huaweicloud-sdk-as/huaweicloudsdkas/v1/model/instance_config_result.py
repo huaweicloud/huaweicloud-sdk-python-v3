@@ -32,7 +32,8 @@ class InstanceConfigResult:
         'tenancy': 'str',
         'dedicated_host_id': 'str',
         'market_type': 'str',
-        'multi_flavor_priority_policy': 'str'
+        'multi_flavor_priority_policy': 'str',
+        'cpu_options': 'CpuOptions'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class InstanceConfigResult:
         'tenancy': 'tenancy',
         'dedicated_host_id': 'dedicated_host_id',
         'market_type': 'market_type',
-        'multi_flavor_priority_policy': 'multi_flavor_priority_policy'
+        'multi_flavor_priority_policy': 'multi_flavor_priority_policy',
+        'cpu_options': 'cpu_options'
     }
 
-    def __init__(self, flavor_ref=None, image_ref=None, disk=None, key_name=None, key_fingerprint=None, instance_name=None, instance_id=None, admin_pass=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, market_type=None, multi_flavor_priority_policy=None):
+    def __init__(self, flavor_ref=None, image_ref=None, disk=None, key_name=None, key_fingerprint=None, instance_name=None, instance_id=None, admin_pass=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, market_type=None, multi_flavor_priority_policy=None, cpu_options=None):
         r"""InstanceConfigResult
 
         The model defined in huaweicloud sdk
@@ -97,6 +99,8 @@ class InstanceConfigResult:
         :type market_type: str
         :param multi_flavor_priority_policy: 使用伸缩配置创建云主机的时候，多规格使用的优先级策略。  PICK_FIRST（默认）：选择优先，虚拟机扩容时规格的选择按照flavorRef列表的顺序进行优先级排序。 COST_FIRST：成本优化，虚拟机扩容时规格的选择按照价格最优原则进行优先级排序。
         :type multi_flavor_priority_policy: str
+        :param cpu_options: 
+        :type cpu_options: :class:`huaweicloudsdkas.v1.CpuOptions`
         """
         
         
@@ -119,6 +123,7 @@ class InstanceConfigResult:
         self._dedicated_host_id = None
         self._market_type = None
         self._multi_flavor_priority_policy = None
+        self._cpu_options = None
         self.discriminator = None
 
         if flavor_ref is not None:
@@ -157,6 +162,8 @@ class InstanceConfigResult:
             self.market_type = market_type
         if multi_flavor_priority_policy is not None:
             self.multi_flavor_priority_policy = multi_flavor_priority_policy
+        if cpu_options is not None:
+            self.cpu_options = cpu_options
 
     @property
     def flavor_ref(self):
@@ -545,6 +552,24 @@ class InstanceConfigResult:
         :type multi_flavor_priority_policy: str
         """
         self._multi_flavor_priority_policy = multi_flavor_priority_policy
+
+    @property
+    def cpu_options(self):
+        r"""Gets the cpu_options of this InstanceConfigResult.
+
+        :return: The cpu_options of this InstanceConfigResult.
+        :rtype: :class:`huaweicloudsdkas.v1.CpuOptions`
+        """
+        return self._cpu_options
+
+    @cpu_options.setter
+    def cpu_options(self, cpu_options):
+        r"""Sets the cpu_options of this InstanceConfigResult.
+
+        :param cpu_options: The cpu_options of this InstanceConfigResult.
+        :type cpu_options: :class:`huaweicloudsdkas.v1.CpuOptions`
+        """
+        self._cpu_options = cpu_options
 
     def to_dict(self):
         result = {}

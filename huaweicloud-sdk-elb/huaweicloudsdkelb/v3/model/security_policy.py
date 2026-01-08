@@ -22,6 +22,7 @@ class SecurityPolicy:
         'listeners': 'list[ListenerRef]',
         'protocols': 'list[str]',
         'ciphers': 'list[str]',
+        'enterprise_project_id': 'str',
         'created_at': 'str',
         'updated_at': 'str'
     }
@@ -34,11 +35,12 @@ class SecurityPolicy:
         'listeners': 'listeners',
         'protocols': 'protocols',
         'ciphers': 'ciphers',
+        'enterprise_project_id': 'enterprise_project_id',
         'created_at': 'created_at',
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, id=None, project_id=None, name=None, description=None, listeners=None, protocols=None, ciphers=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, project_id=None, name=None, description=None, listeners=None, protocols=None, ciphers=None, enterprise_project_id=None, created_at=None, updated_at=None):
         r"""SecurityPolicy
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class SecurityPolicy:
         :type protocols: list[str]
         :param ciphers: **参数解释**：自定义安全策略的加密套件列表。  **取值范围**：不涉及
         :type ciphers: list[str]
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。  **取值范围**： - \&quot;0\&quot;：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :type enterprise_project_id: str
         :param created_at: **参数解释**：创建时间。  **取值范围**：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
         :type created_at: str
         :param updated_at: **参数解释**：更新时间。  **取值范围**：格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。
@@ -72,6 +76,7 @@ class SecurityPolicy:
         self._listeners = None
         self._protocols = None
         self._ciphers = None
+        self._enterprise_project_id = None
         self._created_at = None
         self._updated_at = None
         self.discriminator = None
@@ -83,6 +88,8 @@ class SecurityPolicy:
         self.listeners = listeners
         self.protocols = protocols
         self.ciphers = ciphers
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         self.created_at = created_at
         self.updated_at = updated_at
 
@@ -239,6 +246,28 @@ class SecurityPolicy:
         :type ciphers: list[str]
         """
         self._ciphers = ciphers
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this SecurityPolicy.
+
+        **参数解释**：资源所属的企业项目ID。  **取值范围**： - \"0\"：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+
+        :return: The enterprise_project_id of this SecurityPolicy.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this SecurityPolicy.
+
+        **参数解释**：资源所属的企业项目ID。  **取值范围**： - \"0\"：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+
+        :param enterprise_project_id: The enterprise_project_id of this SecurityPolicy.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def created_at(self):

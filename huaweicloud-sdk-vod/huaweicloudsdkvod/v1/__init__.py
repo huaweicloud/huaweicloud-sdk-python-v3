@@ -21,6 +21,7 @@ from huaweicloudsdkvod.v1.model.cancel_asset_transcode_task_request import Cance
 from huaweicloudsdkvod.v1.model.cancel_asset_transcode_task_response import CancelAssetTranscodeTaskResponse
 from huaweicloudsdkvod.v1.model.cancel_extract_audio_task_request import CancelExtractAudioTaskRequest
 from huaweicloudsdkvod.v1.model.cancel_extract_audio_task_response import CancelExtractAudioTaskResponse
+from huaweicloudsdkvod.v1.model.category_info import CategoryInfo
 from huaweicloudsdkvod.v1.model.cdn_log import CdnLog
 from huaweicloudsdkvod.v1.model.check_md5_duplication_request import CheckMd5DuplicationRequest
 from huaweicloudsdkvod.v1.model.check_md5_duplication_response import CheckMd5DuplicationResponse
@@ -110,6 +111,10 @@ from huaweicloudsdkvod.v1.model.list_asset_daily_summary_log_request import List
 from huaweicloudsdkvod.v1.model.list_asset_daily_summary_log_response import ListAssetDailySummaryLogResponse
 from huaweicloudsdkvod.v1.model.list_asset_list_request import ListAssetListRequest
 from huaweicloudsdkvod.v1.model.list_asset_list_response import ListAssetListResponse
+from huaweicloudsdkvod.v1.model.list_asset_task_info_request import ListAssetTaskInfoRequest
+from huaweicloudsdkvod.v1.model.list_asset_task_info_response import ListAssetTaskInfoResponse
+from huaweicloudsdkvod.v1.model.list_category_info_request import ListCategoryInfoRequest
+from huaweicloudsdkvod.v1.model.list_category_info_response import ListCategoryInfoResponse
 from huaweicloudsdkvod.v1.model.list_cdn_statistics_request import ListCdnStatisticsRequest
 from huaweicloudsdkvod.v1.model.list_cdn_statistics_response import ListCdnStatisticsResponse
 from huaweicloudsdkvod.v1.model.list_domain_logs_request import ListDomainLogsRequest
@@ -160,11 +165,13 @@ from huaweicloudsdkvod.v1.model.publish_assets_request import PublishAssetsReque
 from huaweicloudsdkvod.v1.model.publish_assets_response import PublishAssetsResponse
 from huaweicloudsdkvod.v1.model.quality_info import QualityInfo
 from huaweicloudsdkvod.v1.model.quality_info_list import QualityInfoList
+from huaweicloudsdkvod.v1.model.query_category_info_rsp import QueryCategoryInfoRsp
 from huaweicloudsdkvod.v1.model.query_category_rsp import QueryCategoryRsp
 from huaweicloudsdkvod.v1.model.refresh_asset_request import RefreshAssetRequest
 from huaweicloudsdkvod.v1.model.refresh_asset_response import RefreshAssetResponse
 from huaweicloudsdkvod.v1.model.refresh_result import RefreshResult
 from huaweicloudsdkvod.v1.model.refresh_task_req import RefreshTaskReq
+from huaweicloudsdkvod.v1.model.result import Result
 from huaweicloudsdkvod.v1.model.review import Review
 from huaweicloudsdkvod.v1.model.review_detail import ReviewDetail
 from huaweicloudsdkvod.v1.model.review_info import ReviewInfo
@@ -217,6 +224,7 @@ from huaweicloudsdkvod.v1.model.trans_template_group import TransTemplateGroup
 from huaweicloudsdkvod.v1.model.trans_template_group_collection import TransTemplateGroupCollection
 from huaweicloudsdkvod.v1.model.trans_template_rsp import TransTemplateRsp
 from huaweicloudsdkvod.v1.model.transcode_info import TranscodeInfo
+from huaweicloudsdkvod.v1.model.transcode_info_result import TranscodeInfoResult
 from huaweicloudsdkvod.v1.model.transcode_task import TranscodeTask
 from huaweicloudsdkvod.v1.model.unpublish_assets_request import UnpublishAssetsRequest
 from huaweicloudsdkvod.v1.model.unpublish_assets_response import UnpublishAssetsResponse

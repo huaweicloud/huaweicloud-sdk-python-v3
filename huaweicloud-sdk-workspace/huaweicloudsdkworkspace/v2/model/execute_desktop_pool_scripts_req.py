@@ -18,6 +18,7 @@ class ExecuteDesktopPoolScriptsReq:
         'script_ids': 'list[str]',
         'gray_count': 'int',
         'gray_desktop_ids': 'list[str]',
+        'desktop_ids': 'list[str]',
         'gray_fail_threshold': 'int',
         'pre_start': 'str',
         'post_finish': 'str',
@@ -30,6 +31,7 @@ class ExecuteDesktopPoolScriptsReq:
         'script_ids': 'script_ids',
         'gray_count': 'gray_count',
         'gray_desktop_ids': 'gray_desktop_ids',
+        'desktop_ids': 'desktop_ids',
         'gray_fail_threshold': 'gray_fail_threshold',
         'pre_start': 'pre_start',
         'post_finish': 'post_finish',
@@ -38,7 +40,7 @@ class ExecuteDesktopPoolScriptsReq:
         'execution_timeout': 'execution_timeout'
     }
 
-    def __init__(self, script_ids=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, pre_start=None, post_finish=None, command_content=None, command_type=None, execution_timeout=None):
+    def __init__(self, script_ids=None, gray_count=None, gray_desktop_ids=None, desktop_ids=None, gray_fail_threshold=None, pre_start=None, post_finish=None, command_content=None, command_type=None, execution_timeout=None):
         r"""ExecuteDesktopPoolScriptsReq
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ExecuteDesktopPoolScriptsReq:
         :type gray_count: int
         :param gray_desktop_ids: 首批执行的桌面id列表，优先级低于gray_count。
         :type gray_desktop_ids: list[str]
+        :param desktop_ids: 桌面id列表，支持桌面池部分桌面执行脚本。
+        :type desktop_ids: list[str]
         :param gray_fail_threshold: 灰度失败阈值，灰度执行失败次数达到该值时，不执行下一批任务。
         :type gray_fail_threshold: int
         :param pre_start: 执行脚本前置步骤。
@@ -68,6 +72,7 @@ class ExecuteDesktopPoolScriptsReq:
         self._script_ids = None
         self._gray_count = None
         self._gray_desktop_ids = None
+        self._desktop_ids = None
         self._gray_fail_threshold = None
         self._pre_start = None
         self._post_finish = None
@@ -82,6 +87,8 @@ class ExecuteDesktopPoolScriptsReq:
             self.gray_count = gray_count
         if gray_desktop_ids is not None:
             self.gray_desktop_ids = gray_desktop_ids
+        if desktop_ids is not None:
+            self.desktop_ids = desktop_ids
         if gray_fail_threshold is not None:
             self.gray_fail_threshold = gray_fail_threshold
         if pre_start is not None:
@@ -160,6 +167,28 @@ class ExecuteDesktopPoolScriptsReq:
         :type gray_desktop_ids: list[str]
         """
         self._gray_desktop_ids = gray_desktop_ids
+
+    @property
+    def desktop_ids(self):
+        r"""Gets the desktop_ids of this ExecuteDesktopPoolScriptsReq.
+
+        桌面id列表，支持桌面池部分桌面执行脚本。
+
+        :return: The desktop_ids of this ExecuteDesktopPoolScriptsReq.
+        :rtype: list[str]
+        """
+        return self._desktop_ids
+
+    @desktop_ids.setter
+    def desktop_ids(self, desktop_ids):
+        r"""Sets the desktop_ids of this ExecuteDesktopPoolScriptsReq.
+
+        桌面id列表，支持桌面池部分桌面执行脚本。
+
+        :param desktop_ids: The desktop_ids of this ExecuteDesktopPoolScriptsReq.
+        :type desktop_ids: list[str]
+        """
+        self._desktop_ids = desktop_ids
 
     @property
     def gray_fail_threshold(self):

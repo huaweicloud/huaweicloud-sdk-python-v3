@@ -16,23 +16,27 @@ class ChangeUserPrivilegeGroupUserInfo:
 
     openapi_types = {
         'user_name': 'str',
+        'domain': 'str',
         'user_privilege_group': 'str',
         'type': 'str'
     }
 
     attribute_map = {
         'user_name': 'user_name',
+        'domain': 'domain',
         'user_privilege_group': 'user_privilege_group',
         'type': 'type'
     }
 
-    def __init__(self, user_name=None, user_privilege_group=None, type=None):
+    def __init__(self, user_name=None, domain=None, user_privilege_group=None, type=None):
         r"""ChangeUserPrivilegeGroupUserInfo
 
         The model defined in huaweicloud sdk
 
         :param user_name: 桌面分配对象的名称，当type类型USER时填写用户名字；当type类型GROUP时填写用户组名称。
         :type user_name: str
+        :param domain: 用户所属域。
+        :type domain: str
         :param user_privilege_group: 桌面用户所属的用户组。 - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
         :type user_privilege_group: str
         :param type: 对象类型，可选值为： - USER：用户。 - GROUP：用户组。
@@ -42,11 +46,14 @@ class ChangeUserPrivilegeGroupUserInfo:
         
 
         self._user_name = None
+        self._domain = None
         self._user_privilege_group = None
         self._type = None
         self.discriminator = None
 
         self.user_name = user_name
+        if domain is not None:
+            self.domain = domain
         if user_privilege_group is not None:
             self.user_privilege_group = user_privilege_group
         self.type = type
@@ -72,6 +79,28 @@ class ChangeUserPrivilegeGroupUserInfo:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this ChangeUserPrivilegeGroupUserInfo.
+
+        用户所属域。
+
+        :return: The domain of this ChangeUserPrivilegeGroupUserInfo.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this ChangeUserPrivilegeGroupUserInfo.
+
+        用户所属域。
+
+        :param domain: The domain of this ChangeUserPrivilegeGroupUserInfo.
+        :type domain: str
+        """
+        self._domain = domain
 
     @property
     def user_privilege_group(self):

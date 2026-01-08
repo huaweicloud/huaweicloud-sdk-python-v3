@@ -33,7 +33,7 @@ class ResizeDesktopPoolReq:
 
         :param product_id: 目标规格产品ID。
         :type product_id: str
-        :param flavor_id: 产品规格ID。可用区是边缘可用区时，必填此参数。
+        :param flavor_id: 产品规格ID。
         :type flavor_id: str
         :param mode: 是否支持开机状态下执行变更规格操作。固定传值STOP_DESKTOP，如果桌面处于开机状态，会先关机再变更规格。
         :type mode: str
@@ -78,7 +78,7 @@ class ResizeDesktopPoolReq:
     def flavor_id(self):
         r"""Gets the flavor_id of this ResizeDesktopPoolReq.
 
-        产品规格ID。可用区是边缘可用区时，必填此参数。
+        产品规格ID。
 
         :return: The flavor_id of this ResizeDesktopPoolReq.
         :rtype: str
@@ -89,7 +89,7 @@ class ResizeDesktopPoolReq:
     def flavor_id(self, flavor_id):
         r"""Sets the flavor_id of this ResizeDesktopPoolReq.
 
-        产品规格ID。可用区是边缘可用区时，必填此参数。
+        产品规格ID。
 
         :param flavor_id: The flavor_id of this ResizeDesktopPoolReq.
         :type flavor_id: str

@@ -20,7 +20,10 @@ class VideoInfo:
         'bitrate': 'int',
         'bitrate_bps': 'int',
         'frame_rate': 'int',
-        'codec': 'str'
+        'codec': 'str',
+        'duration': 'str',
+        'duration_ms': 'str',
+        'rotate': 'float'
     }
 
     attribute_map = {
@@ -29,10 +32,13 @@ class VideoInfo:
         'bitrate': 'bitrate',
         'bitrate_bps': 'bitrate_bps',
         'frame_rate': 'frame_rate',
-        'codec': 'codec'
+        'codec': 'codec',
+        'duration': 'duration',
+        'duration_ms': 'duration_ms',
+        'rotate': 'rotate'
     }
 
-    def __init__(self, width=None, height=None, bitrate=None, bitrate_bps=None, frame_rate=None, codec=None):
+    def __init__(self, width=None, height=None, bitrate=None, bitrate_bps=None, frame_rate=None, codec=None, duration=None, duration_ms=None, rotate=None):
         r"""VideoInfo
 
         The model defined in huaweicloud sdk
@@ -49,6 +55,12 @@ class VideoInfo:
         :type frame_rate: int
         :param codec: 视频编码格式
         :type codec: str
+        :param duration: 视频流时长，单位：秒
+        :type duration: str
+        :param duration_ms: 视频流时长，单位：毫秒
+        :type duration_ms: str
+        :param rotate: 视频拍摄时的选择角度，单位：度。 
+        :type rotate: float
         """
         
         
@@ -59,6 +71,9 @@ class VideoInfo:
         self._bitrate_bps = None
         self._frame_rate = None
         self._codec = None
+        self._duration = None
+        self._duration_ms = None
+        self._rotate = None
         self.discriminator = None
 
         if width is not None:
@@ -73,6 +88,12 @@ class VideoInfo:
             self.frame_rate = frame_rate
         if codec is not None:
             self.codec = codec
+        if duration is not None:
+            self.duration = duration
+        if duration_ms is not None:
+            self.duration_ms = duration_ms
+        if rotate is not None:
+            self.rotate = rotate
 
     @property
     def width(self):
@@ -205,6 +226,72 @@ class VideoInfo:
         :type codec: str
         """
         self._codec = codec
+
+    @property
+    def duration(self):
+        r"""Gets the duration of this VideoInfo.
+
+        视频流时长，单位：秒
+
+        :return: The duration of this VideoInfo.
+        :rtype: str
+        """
+        return self._duration
+
+    @duration.setter
+    def duration(self, duration):
+        r"""Sets the duration of this VideoInfo.
+
+        视频流时长，单位：秒
+
+        :param duration: The duration of this VideoInfo.
+        :type duration: str
+        """
+        self._duration = duration
+
+    @property
+    def duration_ms(self):
+        r"""Gets the duration_ms of this VideoInfo.
+
+        视频流时长，单位：毫秒
+
+        :return: The duration_ms of this VideoInfo.
+        :rtype: str
+        """
+        return self._duration_ms
+
+    @duration_ms.setter
+    def duration_ms(self, duration_ms):
+        r"""Sets the duration_ms of this VideoInfo.
+
+        视频流时长，单位：毫秒
+
+        :param duration_ms: The duration_ms of this VideoInfo.
+        :type duration_ms: str
+        """
+        self._duration_ms = duration_ms
+
+    @property
+    def rotate(self):
+        r"""Gets the rotate of this VideoInfo.
+
+        视频拍摄时的选择角度，单位：度。 
+
+        :return: The rotate of this VideoInfo.
+        :rtype: float
+        """
+        return self._rotate
+
+    @rotate.setter
+    def rotate(self, rotate):
+        r"""Sets the rotate of this VideoInfo.
+
+        视频拍摄时的选择角度，单位：度。 
+
+        :param rotate: The rotate of this VideoInfo.
+        :type rotate: float
+        """
+        self._rotate = rotate
 
     def to_dict(self):
         result = {}

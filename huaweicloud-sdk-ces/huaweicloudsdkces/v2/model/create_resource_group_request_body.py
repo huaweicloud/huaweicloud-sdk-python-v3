@@ -73,7 +73,7 @@ class CreateResourceGroupRequestBody:
         :type instances: list[:class:`huaweicloudsdkces.v2.Instance`]
         :param product_names: **参数解释** 创建资源层级为云产品时的云产品名称，一般由\&quot;服务命名空间,服务首层维度名称\&quot;组成，如\&quot;SYS.ECS,instance_id\&quot;。多个云产品则用“;”隔开，如\&quot;SERVICE.BMS,instance_id;SYS.ECS,instance_id\&quot;。 **约束限制** 不涉及。 **取值范围** 长度[0,10240]个字符 **默认取值** 不涉及。
         :type product_names: str
-        :param resource_level: **参数解释** 资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度。 **约束限制** 不涉及。 **取值范围** - product: 云产品 - dimension: 子维度 **默认取值** 不涉及。 
+        :param resource_level: **参数解释** 资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度。不传表示子维度。 **约束限制** 不涉及。 **取值范围** - product: 云产品 - dimension: 子维度 **默认取值** 不涉及。 
         :type resource_level: str
         :param comb_relation: 
         :type comb_relation: :class:`huaweicloudsdkces.v2.CombRelation`
@@ -368,7 +368,7 @@ class CreateResourceGroupRequestBody:
     def resource_level(self):
         r"""Gets the resource_level of this CreateResourceGroupRequestBody.
 
-        **参数解释** 资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度。 **约束限制** 不涉及。 **取值范围** - product: 云产品 - dimension: 子维度 **默认取值** 不涉及。 
+        **参数解释** 资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度。不传表示子维度。 **约束限制** 不涉及。 **取值范围** - product: 云产品 - dimension: 子维度 **默认取值** 不涉及。 
 
         :return: The resource_level of this CreateResourceGroupRequestBody.
         :rtype: str
@@ -379,7 +379,7 @@ class CreateResourceGroupRequestBody:
     def resource_level(self, resource_level):
         r"""Sets the resource_level of this CreateResourceGroupRequestBody.
 
-        **参数解释** 资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度。 **约束限制** 不涉及。 **取值范围** - product: 云产品 - dimension: 子维度 **默认取值** 不涉及。 
+        **参数解释** 资源层级，资源生效范围。选择云产品，则云产品及其子层级均可进入该资源分组，选择子维度，则只生效具体的子维度。不传表示子维度。 **约束限制** 不涉及。 **取值范围** - product: 云产品 - dimension: 子维度 **默认取值** 不涉及。 
 
         :param resource_level: The resource_level of this CreateResourceGroupRequestBody.
         :type resource_level: str

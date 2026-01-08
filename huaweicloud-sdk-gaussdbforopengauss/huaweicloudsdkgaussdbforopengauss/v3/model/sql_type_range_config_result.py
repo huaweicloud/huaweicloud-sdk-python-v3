@@ -15,80 +15,109 @@ class SqlTypeRangeConfigResult:
     sensitive_list = []
 
     openapi_types = {
-        'is_open': 'bool',
-        'begin_time': 'str'
+        'category': 'str',
+        'prefixes': 'str',
+        'is_preset': 'bool'
     }
 
     attribute_map = {
-        'is_open': 'is_open',
-        'begin_time': 'begin_time'
+        'category': 'category',
+        'prefixes': 'prefixes',
+        'is_preset': 'is_preset'
     }
 
-    def __init__(self, is_open=None, begin_time=None):
+    def __init__(self, category=None, prefixes=None, is_preset=None):
         r"""SqlTypeRangeConfigResult
 
         The model defined in huaweicloud sdk
 
-        :param is_open: **参数解释**: 是否开启全量SQL。 **取值范围**: - true：已开启。 - false：已关闭。
-        :type is_open: bool
-        :param begin_time: **参数解释**: 开关状态持续的开始时间。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量。 **取值范围**: 不涉及。
-        :type begin_time: str
+        :param category: **参数解释**: SQL类型的归类名称。 对常用SQL类型，简单归类为6个类别，每个类别对应一组固定的采集SQL语句类型列表，采用前缀进行匹配。 对于其他场景，可以使用自定义类别，允许按需自定义采集SQL的语句前缀。 **取值范围**: - all：不区分SQL类型，全部采集。 - ddl：只采集DDL语句类型。 - dml：只采集DML语句类型。 - dcl：只采集DCL语句类型。 - tcl：只采集TCL语句类型。 - dql：只采集DQL语句类型。 - custom：采集自定义语句类型。
+        :type category: str
+        :param prefixes: **参数解释**: 对应SQL类别中，采集的SQL语句类型列表，采用前缀方式进行匹配。 **取值范围**: - all：不区分SQL类型，全部采集。对应取值为：[\&quot;.*\&quot;]。 - ddl：只采集DDL语句类别，对于取值为：[\&quot;create\&quot;, \&quot;alter\&quot;, \&quot;drop\&quot;, \&quot;truncate\&quot;, \&quot;reindex\&quot;, \&quot;vacuum\&quot;, \&quot;analyze\&quot;, \&quot;declare\&quot;, \&quot;move\&quot;, \&quot;close\&quot;]。 - dml：只采集DML语句类型，对于取值为：[\&quot;insert\&quot;, \&quot;update\&quot;, \&quot;delete\&quot;, \&quot;merge\&quot;, \&quot;show\&quot;, \&quot;explain\&quot;, \&quot;prepare\&quot;, \&quot;lock\&quot;, \&quot;copy\&quot;, \&quot;execute\&quot;, \&quot;deallocate\&quot;]。 - dcl：只采集DCL语句类型，对于取值为：[\&quot;grant\&quot;, \&quot;revoke\&quot;, \&quot;reassign\&quot;, \&quot;set\&quot;]。 - tcl：只采集TCL语句类型，对于取值为：[\&quot;begin\&quot;, \&quot;commit\&quot;, \&quot;rollback\&quot;, \&quot;start\&quot;, \&quot;savepoint\&quot;, \&quot;checkpoint\&quot;, \&quot;release savepoint\&quot;]。 - dql：只采集DQL语句类型，对于取值为：[\&quot;select\&quot;]。 - custom：采集自定义语句类型。对应取值为：开启全量SQL时，用户填写的自定义SQL语句类型列表。
+        :type prefixes: str
+        :param is_preset: **参数解释**: 对应SQL类别是否为预置类别。 **取值范围**: - true：对应category取值all、ddl 、dml 、dcl 、tcl 、dql 。 - false：对应category取值custom。
+        :type is_preset: bool
         """
         
         
 
-        self._is_open = None
-        self._begin_time = None
+        self._category = None
+        self._prefixes = None
+        self._is_preset = None
         self.discriminator = None
 
-        if is_open is not None:
-            self.is_open = is_open
-        if begin_time is not None:
-            self.begin_time = begin_time
+        if category is not None:
+            self.category = category
+        if prefixes is not None:
+            self.prefixes = prefixes
+        if is_preset is not None:
+            self.is_preset = is_preset
 
     @property
-    def is_open(self):
-        r"""Gets the is_open of this SqlTypeRangeConfigResult.
+    def category(self):
+        r"""Gets the category of this SqlTypeRangeConfigResult.
 
-        **参数解释**: 是否开启全量SQL。 **取值范围**: - true：已开启。 - false：已关闭。
+        **参数解释**: SQL类型的归类名称。 对常用SQL类型，简单归类为6个类别，每个类别对应一组固定的采集SQL语句类型列表，采用前缀进行匹配。 对于其他场景，可以使用自定义类别，允许按需自定义采集SQL的语句前缀。 **取值范围**: - all：不区分SQL类型，全部采集。 - ddl：只采集DDL语句类型。 - dml：只采集DML语句类型。 - dcl：只采集DCL语句类型。 - tcl：只采集TCL语句类型。 - dql：只采集DQL语句类型。 - custom：采集自定义语句类型。
 
-        :return: The is_open of this SqlTypeRangeConfigResult.
-        :rtype: bool
-        """
-        return self._is_open
-
-    @is_open.setter
-    def is_open(self, is_open):
-        r"""Sets the is_open of this SqlTypeRangeConfigResult.
-
-        **参数解释**: 是否开启全量SQL。 **取值范围**: - true：已开启。 - false：已关闭。
-
-        :param is_open: The is_open of this SqlTypeRangeConfigResult.
-        :type is_open: bool
-        """
-        self._is_open = is_open
-
-    @property
-    def begin_time(self):
-        r"""Gets the begin_time of this SqlTypeRangeConfigResult.
-
-        **参数解释**: 开关状态持续的开始时间。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量。 **取值范围**: 不涉及。
-
-        :return: The begin_time of this SqlTypeRangeConfigResult.
+        :return: The category of this SqlTypeRangeConfigResult.
         :rtype: str
         """
-        return self._begin_time
+        return self._category
 
-    @begin_time.setter
-    def begin_time(self, begin_time):
-        r"""Sets the begin_time of this SqlTypeRangeConfigResult.
+    @category.setter
+    def category(self, category):
+        r"""Sets the category of this SqlTypeRangeConfigResult.
 
-        **参数解释**: 开关状态持续的开始时间。格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量。 **取值范围**: 不涉及。
+        **参数解释**: SQL类型的归类名称。 对常用SQL类型，简单归类为6个类别，每个类别对应一组固定的采集SQL语句类型列表，采用前缀进行匹配。 对于其他场景，可以使用自定义类别，允许按需自定义采集SQL的语句前缀。 **取值范围**: - all：不区分SQL类型，全部采集。 - ddl：只采集DDL语句类型。 - dml：只采集DML语句类型。 - dcl：只采集DCL语句类型。 - tcl：只采集TCL语句类型。 - dql：只采集DQL语句类型。 - custom：采集自定义语句类型。
 
-        :param begin_time: The begin_time of this SqlTypeRangeConfigResult.
-        :type begin_time: str
+        :param category: The category of this SqlTypeRangeConfigResult.
+        :type category: str
         """
-        self._begin_time = begin_time
+        self._category = category
+
+    @property
+    def prefixes(self):
+        r"""Gets the prefixes of this SqlTypeRangeConfigResult.
+
+        **参数解释**: 对应SQL类别中，采集的SQL语句类型列表，采用前缀方式进行匹配。 **取值范围**: - all：不区分SQL类型，全部采集。对应取值为：[\".*\"]。 - ddl：只采集DDL语句类别，对于取值为：[\"create\", \"alter\", \"drop\", \"truncate\", \"reindex\", \"vacuum\", \"analyze\", \"declare\", \"move\", \"close\"]。 - dml：只采集DML语句类型，对于取值为：[\"insert\", \"update\", \"delete\", \"merge\", \"show\", \"explain\", \"prepare\", \"lock\", \"copy\", \"execute\", \"deallocate\"]。 - dcl：只采集DCL语句类型，对于取值为：[\"grant\", \"revoke\", \"reassign\", \"set\"]。 - tcl：只采集TCL语句类型，对于取值为：[\"begin\", \"commit\", \"rollback\", \"start\", \"savepoint\", \"checkpoint\", \"release savepoint\"]。 - dql：只采集DQL语句类型，对于取值为：[\"select\"]。 - custom：采集自定义语句类型。对应取值为：开启全量SQL时，用户填写的自定义SQL语句类型列表。
+
+        :return: The prefixes of this SqlTypeRangeConfigResult.
+        :rtype: str
+        """
+        return self._prefixes
+
+    @prefixes.setter
+    def prefixes(self, prefixes):
+        r"""Sets the prefixes of this SqlTypeRangeConfigResult.
+
+        **参数解释**: 对应SQL类别中，采集的SQL语句类型列表，采用前缀方式进行匹配。 **取值范围**: - all：不区分SQL类型，全部采集。对应取值为：[\".*\"]。 - ddl：只采集DDL语句类别，对于取值为：[\"create\", \"alter\", \"drop\", \"truncate\", \"reindex\", \"vacuum\", \"analyze\", \"declare\", \"move\", \"close\"]。 - dml：只采集DML语句类型，对于取值为：[\"insert\", \"update\", \"delete\", \"merge\", \"show\", \"explain\", \"prepare\", \"lock\", \"copy\", \"execute\", \"deallocate\"]。 - dcl：只采集DCL语句类型，对于取值为：[\"grant\", \"revoke\", \"reassign\", \"set\"]。 - tcl：只采集TCL语句类型，对于取值为：[\"begin\", \"commit\", \"rollback\", \"start\", \"savepoint\", \"checkpoint\", \"release savepoint\"]。 - dql：只采集DQL语句类型，对于取值为：[\"select\"]。 - custom：采集自定义语句类型。对应取值为：开启全量SQL时，用户填写的自定义SQL语句类型列表。
+
+        :param prefixes: The prefixes of this SqlTypeRangeConfigResult.
+        :type prefixes: str
+        """
+        self._prefixes = prefixes
+
+    @property
+    def is_preset(self):
+        r"""Gets the is_preset of this SqlTypeRangeConfigResult.
+
+        **参数解释**: 对应SQL类别是否为预置类别。 **取值范围**: - true：对应category取值all、ddl 、dml 、dcl 、tcl 、dql 。 - false：对应category取值custom。
+
+        :return: The is_preset of this SqlTypeRangeConfigResult.
+        :rtype: bool
+        """
+        return self._is_preset
+
+    @is_preset.setter
+    def is_preset(self, is_preset):
+        r"""Sets the is_preset of this SqlTypeRangeConfigResult.
+
+        **参数解释**: 对应SQL类别是否为预置类别。 **取值范围**: - true：对应category取值all、ddl 、dml 、dcl 、tcl 、dql 。 - false：对应category取值custom。
+
+        :param is_preset: The is_preset of this SqlTypeRangeConfigResult.
+        :type is_preset: bool
+        """
+        self._is_preset = is_preset
 
     def to_dict(self):
         result = {}

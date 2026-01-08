@@ -37,7 +37,7 @@ class GetResourceGroupResources:
 
         The model defined in huaweicloud sdk
 
-        :param status: **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        :param status: **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
         :type status: str
         :param dimensions: 资源的维度信息
         :type dimensions: list[:class:`huaweicloudsdkces.v2.ResourceDimension`]
@@ -45,7 +45,7 @@ class GetResourceGroupResources:
         :type tags: str
         :param enterprise_project_id: **参数解释** 企业项目ID。 **取值范围** 由数字、字母和-组成，字符串长度范围[1,128] 
         :type enterprise_project_id: str
-        :param event_status: **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        :param event_status: **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
         :type event_status: str
         :param resource_name: **参数解释** 资源名称 **取值范围** 长度[0,128]个字符 
         :type resource_name: str
@@ -76,7 +76,7 @@ class GetResourceGroupResources:
     def status(self):
         r"""Gets the status of this GetResourceGroupResources.
 
-        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
 
         :return: The status of this GetResourceGroupResources.
         :rtype: str
@@ -87,7 +87,7 @@ class GetResourceGroupResources:
     def status(self, status):
         r"""Sets the status of this GetResourceGroupResources.
 
-        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
 
         :param status: The status of this GetResourceGroupResources.
         :type status: str
@@ -164,7 +164,7 @@ class GetResourceGroupResources:
     def event_status(self):
         r"""Gets the event_status of this GetResourceGroupResources.
 
-        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
 
         :return: The event_status of this GetResourceGroupResources.
         :rtype: str
@@ -175,7 +175,7 @@ class GetResourceGroupResources:
     def event_status(self, event_status):
         r"""Sets the event_status of this GetResourceGroupResources.
 
-        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        **参数解释** 按事件告警状态信息进行过滤。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
 
         :param event_status: The event_status of this GetResourceGroupResources.
         :type event_status: str

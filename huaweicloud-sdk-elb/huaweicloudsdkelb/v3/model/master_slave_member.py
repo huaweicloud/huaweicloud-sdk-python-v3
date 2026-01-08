@@ -61,7 +61,7 @@ class MasterSlaveMember:
         :type name: str
         :param admin_state_up: **参数解释**：后端服务器的管理状态。 虽然创建、更新请求支持该字段，但实际取值决定于后端服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  **取值范围**：true、false。
         :type admin_state_up: bool
-        :param subnet_cidr_id: **参数解释**：后端服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的IP类型后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  **取值范围**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        :param subnet_cidr_id: **参数解释**：后端服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的IP类型后端转发特性已开启，则该字段可以不传，表示添加IP类型的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC[/GRPCS](tag:not_open)。  **取值范围**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
         :type subnet_cidr_id: str
         :param protocol_port: **参数解释**：后端服务器业务端口。  &gt;在开启端口透传的pool下创建member传该字段不生效，可不传该字段。
         :type protocol_port: int
@@ -73,13 +73,13 @@ class MasterSlaveMember:
         :type device_owner: str
         :param device_id: **参数解释**：关联的ECS ID，为空表示后端服务器未关联到ECS。  **取值范围**：不涉及  不支持该字段，请勿使用。
         :type device_id: str
-        :param operating_status: **参数解释**：后端服务器的健康状态。  **取值范围**：不涉及 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        :param operating_status: **参数解释**：后端服务器的健康状态。  **取值范围**：不涉及 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - INITIAL：后端云服务器健康检查打开时的初始状态。 - UNKNOWN: 后端云服务器组没有绑定监听器或者后端云服务器没有关联ECS等原因，后端云服务器健康检查结果未知。
         :type operating_status: str
         :param reason: 
         :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
-        :param member_type: **参数解释**：后端服务器的类型。  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        :param member_type: **参数解释**：后端服务器的类型。  **取值范围**： - ip：IP类型的member。 - instance：关联到ECS的member。
         :type member_type: str
-        :param instance_id: **参数解释**：member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）。  **取值范围**：不涉及
+        :param instance_id: **参数解释**：member关联的实例ID。空表示member关联的实例为非真实设备 （如：IP类型的后端场景）。  **取值范围**：不涉及
         :type instance_id: str
         :param role: **参数解释**：后端服务器的主备状态。  **取值范围**：不涉及
         :type role: str
@@ -193,7 +193,7 @@ class MasterSlaveMember:
     def subnet_cidr_id(self):
         r"""Gets the subnet_cidr_id of this MasterSlaveMember.
 
-        **参数解释**：后端服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的IP类型后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  **取值范围**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        **参数解释**：后端服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的IP类型后端转发特性已开启，则该字段可以不传，表示添加IP类型的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC[/GRPCS](tag:not_open)。  **取值范围**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
         :return: The subnet_cidr_id of this MasterSlaveMember.
         :rtype: str
@@ -204,7 +204,7 @@ class MasterSlaveMember:
     def subnet_cidr_id(self, subnet_cidr_id):
         r"""Sets the subnet_cidr_id of this MasterSlaveMember.
 
-        **参数解释**：后端服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的IP类型后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC。  **取值范围**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
+        **参数解释**：后端服务器所在子网的IPv4子网ID或IPv6子网ID。 若所属的LB的IP类型后端转发特性已开启，则该字段可以不传，表示添加IP类型的后端服务器。此时address必须为**私网IPv4**地址，所在的pool的协议必须为UDP/TCP/TLS/HTTP/HTTPS/QUIC/GRPC[/GRPCS](tag:not_open)。  **取值范围**：不涉及  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt)
 
         :param subnet_cidr_id: The subnet_cidr_id of this MasterSlaveMember.
         :type subnet_cidr_id: str
@@ -325,7 +325,7 @@ class MasterSlaveMember:
     def operating_status(self):
         r"""Gets the operating_status of this MasterSlaveMember.
 
-        **参数解释**：后端服务器的健康状态。  **取值范围**：不涉及 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        **参数解释**：后端服务器的健康状态。  **取值范围**：不涉及 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - INITIAL：后端云服务器健康检查打开时的初始状态。 - UNKNOWN: 后端云服务器组没有绑定监听器或者后端云服务器没有关联ECS等原因，后端云服务器健康检查结果未知。
 
         :return: The operating_status of this MasterSlaveMember.
         :rtype: str
@@ -336,7 +336,7 @@ class MasterSlaveMember:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this MasterSlaveMember.
 
-        **参数解释**：后端服务器的健康状态。  **取值范围**：不涉及 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。
+        **参数解释**：后端服务器的健康状态。  **取值范围**：不涉及 - ONLINE：后端服务器正常。 - NO_MONITOR：后端服务器所在的服务器组没有健康检查器。 - OFFLINE：后端服务器关联的ECS服务器不存在或已关机。 - INITIAL：后端云服务器健康检查打开时的初始状态。 - UNKNOWN: 后端云服务器组没有绑定监听器或者后端云服务器没有关联ECS等原因，后端云服务器健康检查结果未知。
 
         :param operating_status: The operating_status of this MasterSlaveMember.
         :type operating_status: str
@@ -365,7 +365,7 @@ class MasterSlaveMember:
     def member_type(self):
         r"""Gets the member_type of this MasterSlaveMember.
 
-        **参数解释**：后端服务器的类型。  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        **参数解释**：后端服务器的类型。  **取值范围**： - ip：IP类型的member。 - instance：关联到ECS的member。
 
         :return: The member_type of this MasterSlaveMember.
         :rtype: str
@@ -376,7 +376,7 @@ class MasterSlaveMember:
     def member_type(self, member_type):
         r"""Sets the member_type of this MasterSlaveMember.
 
-        **参数解释**：后端服务器的类型。  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        **参数解释**：后端服务器的类型。  **取值范围**： - ip：IP类型的member。 - instance：关联到ECS的member。
 
         :param member_type: The member_type of this MasterSlaveMember.
         :type member_type: str
@@ -387,7 +387,7 @@ class MasterSlaveMember:
     def instance_id(self):
         r"""Gets the instance_id of this MasterSlaveMember.
 
-        **参数解释**：member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）。  **取值范围**：不涉及
+        **参数解释**：member关联的实例ID。空表示member关联的实例为非真实设备 （如：IP类型的后端场景）。  **取值范围**：不涉及
 
         :return: The instance_id of this MasterSlaveMember.
         :rtype: str
@@ -398,7 +398,7 @@ class MasterSlaveMember:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this MasterSlaveMember.
 
-        **参数解释**：member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）。  **取值范围**：不涉及
+        **参数解释**：member关联的实例ID。空表示member关联的实例为非真实设备 （如：IP类型的后端场景）。  **取值范围**：不涉及
 
         :param instance_id: The instance_id of this MasterSlaveMember.
         :type instance_id: str

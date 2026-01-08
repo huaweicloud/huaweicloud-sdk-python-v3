@@ -25,7 +25,8 @@ class ImageInfo:
         'min_ram': 'int',
         'min_disk': 'int',
         'product_code': 'str',
-        'created_at': 'str'
+        'created_at': 'str',
+        'kms_id': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ImageInfo:
         'min_ram': 'min_ram',
         'min_disk': 'min_disk',
         'product_code': 'product_code',
-        'created_at': 'created_at'
+        'created_at': 'created_at',
+        'kms_id': 'kms_id'
     }
 
-    def __init__(self, id=None, image_type=None, os_type=None, architecture=None, os_version=None, disk_format=None, name=None, min_ram=None, min_disk=None, product_code=None, created_at=None):
+    def __init__(self, id=None, image_type=None, os_type=None, architecture=None, os_version=None, disk_format=None, name=None, min_ram=None, min_disk=None, product_code=None, created_at=None, kms_id=None):
         r"""ImageInfo
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class ImageInfo:
         :type product_code: str
         :param created_at: 创建时间。格式为UTC时间。
         :type created_at: str
+        :param kms_id: 镜像kmsId。
+        :type kms_id: str
         """
         
         
@@ -84,6 +88,7 @@ class ImageInfo:
         self._min_disk = None
         self._product_code = None
         self._created_at = None
+        self._kms_id = None
         self.discriminator = None
 
         if id is not None:
@@ -108,6 +113,8 @@ class ImageInfo:
             self.product_code = product_code
         if created_at is not None:
             self.created_at = created_at
+        if kms_id is not None:
+            self.kms_id = kms_id
 
     @property
     def id(self):
@@ -350,6 +357,28 @@ class ImageInfo:
         :type created_at: str
         """
         self._created_at = created_at
+
+    @property
+    def kms_id(self):
+        r"""Gets the kms_id of this ImageInfo.
+
+        镜像kmsId。
+
+        :return: The kms_id of this ImageInfo.
+        :rtype: str
+        """
+        return self._kms_id
+
+    @kms_id.setter
+    def kms_id(self, kms_id):
+        r"""Sets the kms_id of this ImageInfo.
+
+        镜像kmsId。
+
+        :param kms_id: The kms_id of this ImageInfo.
+        :type kms_id: str
+        """
+        self._kms_id = kms_id
 
     def to_dict(self):
         result = {}

@@ -21,6 +21,7 @@ class ListDesktopsDetailRequest:
         'sort_field': 'str',
         'sort_type': 'str',
         'computer_name': 'str',
+        'computer_names': 'list[str]',
         'desktop_ip': 'str',
         'offset': 'int',
         'limit': 'int',
@@ -46,6 +47,7 @@ class ListDesktopsDetailRequest:
         'sort_field': 'sort_field',
         'sort_type': 'sort_type',
         'computer_name': 'computer_name',
+        'computer_names': 'computer_names',
         'desktop_ip': 'desktop_ip',
         'offset': 'offset',
         'limit': 'limit',
@@ -64,7 +66,7 @@ class ListDesktopsDetailRequest:
         'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, tag=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None):
+    def __init__(self, status=None, user_name=None, user_names=None, sort_field=None, sort_type=None, computer_name=None, computer_names=None, desktop_ip=None, offset=None, limit=None, desktop_id=None, desktop_type=None, tag=None, pool_id=None, user_attached=None, enterprise_project_id=None, image_id=None, charge_mode=None, in_maintenance_mode=None, is_share_desktop=None, subnet_id=None, is_support_internet=None, availability_zone=None):
         r"""ListDesktopsDetailRequest
 
         The model defined in huaweicloud sdk
@@ -81,6 +83,8 @@ class ListDesktopsDetailRequest:
         :type sort_type: str
         :param computer_name: 桌面名。
         :type computer_name: str
+        :param computer_names: 桌面名列表
+        :type computer_names: list[str]
         :param desktop_ip: 桌面IP地址。
         :type desktop_ip: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
@@ -123,6 +127,7 @@ class ListDesktopsDetailRequest:
         self._sort_field = None
         self._sort_type = None
         self._computer_name = None
+        self._computer_names = None
         self._desktop_ip = None
         self._offset = None
         self._limit = None
@@ -153,6 +158,8 @@ class ListDesktopsDetailRequest:
             self.sort_type = sort_type
         if computer_name is not None:
             self.computer_name = computer_name
+        if computer_names is not None:
+            self.computer_names = computer_names
         if desktop_ip is not None:
             self.desktop_ip = desktop_ip
         if offset is not None:
@@ -317,6 +324,28 @@ class ListDesktopsDetailRequest:
         :type computer_name: str
         """
         self._computer_name = computer_name
+
+    @property
+    def computer_names(self):
+        r"""Gets the computer_names of this ListDesktopsDetailRequest.
+
+        桌面名列表
+
+        :return: The computer_names of this ListDesktopsDetailRequest.
+        :rtype: list[str]
+        """
+        return self._computer_names
+
+    @computer_names.setter
+    def computer_names(self, computer_names):
+        r"""Sets the computer_names of this ListDesktopsDetailRequest.
+
+        桌面名列表
+
+        :param computer_names: The computer_names of this ListDesktopsDetailRequest.
+        :type computer_names: list[str]
+        """
+        self._computer_names = computer_names
 
     @property
     def desktop_ip(self):

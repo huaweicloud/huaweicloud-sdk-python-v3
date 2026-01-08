@@ -1750,6 +1750,8 @@ class CesClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'order_by' in local_var_params:
             query_params.append(('order_by', local_var_params['order_by']))
+        if 'mask_status' in local_var_params:
+            query_params.append(('mask_status', local_var_params['mask_status']))
 
         header_params = {}
 

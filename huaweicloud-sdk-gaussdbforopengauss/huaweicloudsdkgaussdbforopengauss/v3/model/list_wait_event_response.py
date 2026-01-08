@@ -17,7 +17,7 @@ class ListWaitEventResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'rows': 'WaitEventResult'
+        'rows': 'list[WaitEventResult]'
     }
 
     attribute_map = {
@@ -32,8 +32,8 @@ class ListWaitEventResponse(SdkResponse):
 
         :param total: **参数解释**: 等待事件的总数量。 **取值范围**: 不涉及。
         :type total: int
-        :param rows: 
-        :type rows: :class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventResult`
+        :param rows: **参数解释**: 数据库实例的等待事件列表。
+        :type rows: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventResult`]
         """
         
         super().__init__()
@@ -73,8 +73,10 @@ class ListWaitEventResponse(SdkResponse):
     def rows(self):
         r"""Gets the rows of this ListWaitEventResponse.
 
+        **参数解释**: 数据库实例的等待事件列表。
+
         :return: The rows of this ListWaitEventResponse.
-        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventResult`
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventResult`]
         """
         return self._rows
 
@@ -82,8 +84,10 @@ class ListWaitEventResponse(SdkResponse):
     def rows(self, rows):
         r"""Sets the rows of this ListWaitEventResponse.
 
+        **参数解释**: 数据库实例的等待事件列表。
+
         :param rows: The rows of this ListWaitEventResponse.
-        :type rows: :class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventResult`
+        :type rows: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.WaitEventResult`]
         """
         self._rows = rows
 

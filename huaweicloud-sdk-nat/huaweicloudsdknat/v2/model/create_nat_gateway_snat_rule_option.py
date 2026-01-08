@@ -47,7 +47,7 @@ class CreateNatGatewaySnatRuleOption:
         :type network_id: str
         :param description: SNAT规则的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param source_type: 0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC） 
+        :param source_type: 资源类型。 取值范围： - 0：VPC侧，可以指定network_id 或者cidr - 1：专线侧，只能指定cidr 不输入默认为0（VPC） 
         :type source_type: int
         :param floating_ip_id: 功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。 约束：弹性公网IP的id个数不能超过20个。 
         :type floating_ip_id: str
@@ -171,7 +171,7 @@ class CreateNatGatewaySnatRuleOption:
     def source_type(self):
         r"""Gets the source_type of this CreateNatGatewaySnatRuleOption.
 
-        0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC） 
+        资源类型。 取值范围： - 0：VPC侧，可以指定network_id 或者cidr - 1：专线侧，只能指定cidr 不输入默认为0（VPC） 
 
         :return: The source_type of this CreateNatGatewaySnatRuleOption.
         :rtype: int
@@ -182,7 +182,7 @@ class CreateNatGatewaySnatRuleOption:
     def source_type(self, source_type):
         r"""Sets the source_type of this CreateNatGatewaySnatRuleOption.
 
-        0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC） 
+        资源类型。 取值范围： - 0：VPC侧，可以指定network_id 或者cidr - 1：专线侧，只能指定cidr 不输入默认为0（VPC） 
 
         :param source_type: The source_type of this CreateNatGatewaySnatRuleOption.
         :type source_type: int

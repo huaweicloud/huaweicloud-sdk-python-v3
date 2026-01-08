@@ -35,7 +35,7 @@ class Eip:
 
         :param id: 桌面绑定的EIP的id，有值时优先绑定EIP。
         :type id: str
-        :param type: EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）。
+        :param type: EIP的类型。
         :type type: str
         :param charge_mode: eip带宽计费模式 - TRAFFIC：按流量计费。 - BANDWIDTH：按带宽计费。
         :type charge_mode: str
@@ -86,7 +86,7 @@ class Eip:
     def type(self):
         r"""Gets the type of this Eip.
 
-        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）。
+        EIP的类型。
 
         :return: The type of this Eip.
         :rtype: str
@@ -97,7 +97,7 @@ class Eip:
     def type(self, type):
         r"""Sets the type of this Eip.
 
-        EIP的类型，5_bgp（全动态BGP），5_sbgp（静态BGP）。
+        EIP的类型。
 
         :param type: The type of this Eip.
         :type type: str

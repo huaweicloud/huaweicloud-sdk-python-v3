@@ -65,7 +65,7 @@ class UpdateCertificateOption:
         :type scm_certificate_id: str
         :param source: **参数解释**：标记当前证书来源。  **约束限制**：无  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。  **默认取值**：不涉及
         :type source: str
-        :param protection_status: **参数解释**：修改保护状态   **约束限制**：不涉及   **取值范围**：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护   **默认取值**：不涉及
+        :param protection_status: **参数解释**：修改保护状态  **约束限制**：不涉及   **取值范围**：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护   **默认取值**：不涉及
         :type protection_status: str
         :param protection_reason: **参数解释**：设置修改保护的原因   **约束限制**：仅当protection_status为consoleProtection时有效   **取值范围**：不涉及   **默认取值**：空
         :type protection_reason: str
@@ -311,7 +311,7 @@ class UpdateCertificateOption:
     def protection_status(self):
         r"""Gets the protection_status of this UpdateCertificateOption.
 
-        **参数解释**：修改保护状态   **约束限制**：不涉及   **取值范围**：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护   **默认取值**：不涉及
+        **参数解释**：修改保护状态  **约束限制**：不涉及   **取值范围**：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护   **默认取值**：不涉及
 
         :return: The protection_status of this UpdateCertificateOption.
         :rtype: str
@@ -322,7 +322,7 @@ class UpdateCertificateOption:
     def protection_status(self, protection_status):
         r"""Sets the protection_status of this UpdateCertificateOption.
 
-        **参数解释**：修改保护状态   **约束限制**：不涉及   **取值范围**：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护   **默认取值**：不涉及
+        **参数解释**：修改保护状态  **约束限制**：不涉及   **取值范围**：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护   **默认取值**：不涉及
 
         :param protection_status: The protection_status of this UpdateCertificateOption.
         :type protection_status: str

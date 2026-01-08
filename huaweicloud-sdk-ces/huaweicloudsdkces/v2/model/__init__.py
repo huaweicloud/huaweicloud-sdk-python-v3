@@ -237,6 +237,7 @@ from huaweicloudsdkces.v2.model.one_click_alarm_id_resp import OneClickAlarmIDRe
 from huaweicloudsdkces.v2.model.one_click_alarm_policy import OneClickAlarmPolicy
 from huaweicloudsdkces.v2.model.one_resource_group_resp import OneResourceGroupResp
 from huaweicloudsdkces.v2.model.one_resource_group_resp_resource_statistics import OneResourceGroupRespResourceStatistics
+from huaweicloudsdkces.v2.model.origin_value_resp import OriginValueResp
 from huaweicloudsdkces.v2.model.overwrite_result_resp import OverwriteResultResp
 from huaweicloudsdkces.v2.model.period import Period
 from huaweicloudsdkces.v2.model.period_resp import PeriodResp

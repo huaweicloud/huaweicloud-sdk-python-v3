@@ -31,11 +31,11 @@ class InsertHeaderConfig:
 
         The model defined in huaweicloud sdk
 
-        :param key: **参数解释**：请求头参数名。  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。
+        :param key: **参数解释**：请求头、响应头参数名。  **约束限制**：不能是以下字符： connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-elb-ip、x-forwarded-port、x-forwarded-elb-id、x-forwarded-elb-vip、x-real-ip、x-forwarded-proto、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。
         :type key: str
-        :param value_type: **参数解释**：请求头参数类别。  **取值范围**：USER_DEFINED,REFERENCE_HEADER,SYSTEM_DEFINED。
+        :param value_type: **参数解释**：请求头、响应头参数类别。  **取值范围**：USER_DEFINED,REFERENCE_HEADER,SYSTEM_DEFINED。
         :type value_type: str
-        :param value: **参数解释**：请求头参数的值。  **取值范围**：1-128个字符，支持ascii码值32&lt;&#x3D;ch&lt;&#x3D;127范围内可打印字符，*和英文问号?。不能以空格开头或结尾。
+        :param value: **参数解释**：请求头、响应头参数的值。  **取值范围**：1-128个字符，支持ascii码值32&lt;&#x3D;ch&lt;&#x3D;127范围内可打印字符，*和英文问号?。不能以空格开头或结尾，不允许设置值为：connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、transparent、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、 x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-port、x-real-ip、x-forwarded-proto、x-forwarded-elb-ip、 x-forwarded-elb-id、x-forwarded-elb-vip、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。
         :type value: str
         """
         
@@ -54,7 +54,7 @@ class InsertHeaderConfig:
     def key(self):
         r"""Gets the key of this InsertHeaderConfig.
 
-        **参数解释**：请求头参数名。  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。
+        **参数解释**：请求头、响应头参数名。  **约束限制**：不能是以下字符： connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-elb-ip、x-forwarded-port、x-forwarded-elb-id、x-forwarded-elb-vip、x-real-ip、x-forwarded-proto、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。
 
         :return: The key of this InsertHeaderConfig.
         :rtype: str
@@ -65,7 +65,7 @@ class InsertHeaderConfig:
     def key(self, key):
         r"""Sets the key of this InsertHeaderConfig.
 
-        **参数解释**：请求头参数名。  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。
+        **参数解释**：请求头、响应头参数名。  **约束限制**：不能是以下字符： connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-elb-ip、x-forwarded-port、x-forwarded-elb-id、x-forwarded-elb-vip、x-real-ip、x-forwarded-proto、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。  **取值范围**：1-40个字符，字母a-z（不区分大小写）、数字，短划线-和下划线_。
 
         :param key: The key of this InsertHeaderConfig.
         :type key: str
@@ -76,7 +76,7 @@ class InsertHeaderConfig:
     def value_type(self):
         r"""Gets the value_type of this InsertHeaderConfig.
 
-        **参数解释**：请求头参数类别。  **取值范围**：USER_DEFINED,REFERENCE_HEADER,SYSTEM_DEFINED。
+        **参数解释**：请求头、响应头参数类别。  **取值范围**：USER_DEFINED,REFERENCE_HEADER,SYSTEM_DEFINED。
 
         :return: The value_type of this InsertHeaderConfig.
         :rtype: str
@@ -87,7 +87,7 @@ class InsertHeaderConfig:
     def value_type(self, value_type):
         r"""Sets the value_type of this InsertHeaderConfig.
 
-        **参数解释**：请求头参数类别。  **取值范围**：USER_DEFINED,REFERENCE_HEADER,SYSTEM_DEFINED。
+        **参数解释**：请求头、响应头参数类别。  **取值范围**：USER_DEFINED,REFERENCE_HEADER,SYSTEM_DEFINED。
 
         :param value_type: The value_type of this InsertHeaderConfig.
         :type value_type: str
@@ -98,7 +98,7 @@ class InsertHeaderConfig:
     def value(self):
         r"""Gets the value of this InsertHeaderConfig.
 
-        **参数解释**：请求头参数的值。  **取值范围**：1-128个字符，支持ascii码值32<=ch<=127范围内可打印字符，*和英文问号?。不能以空格开头或结尾。
+        **参数解释**：请求头、响应头参数的值。  **取值范围**：1-128个字符，支持ascii码值32<=ch<=127范围内可打印字符，*和英文问号?。不能以空格开头或结尾，不允许设置值为：connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、transparent、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、 x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-port、x-real-ip、x-forwarded-proto、x-forwarded-elb-ip、 x-forwarded-elb-id、x-forwarded-elb-vip、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。
 
         :return: The value of this InsertHeaderConfig.
         :rtype: str
@@ -109,7 +109,7 @@ class InsertHeaderConfig:
     def value(self, value):
         r"""Sets the value of this InsertHeaderConfig.
 
-        **参数解释**：请求头参数的值。  **取值范围**：1-128个字符，支持ascii码值32<=ch<=127范围内可打印字符，*和英文问号?。不能以空格开头或结尾。
+        **参数解释**：请求头、响应头参数的值。  **取值范围**：1-128个字符，支持ascii码值32<=ch<=127范围内可打印字符，*和英文问号?。不能以空格开头或结尾，不允许设置值为：connection、upgrade、content-length、transfer-encoding、keep-alive、te、host、cookie、remoteip、authority、transparent、x-forwarded-host、x-forwarded-for、x-forwarded-for-port、x-forwarded-tls-certificate-id、 x-forwarded-tls-protocol、x-forwarded-tls-cipher、x-forwarded-port、x-real-ip、x-forwarded-proto、x-forwarded-elb-ip、 x-forwarded-elb-id、x-forwarded-elb-vip、x-nuwa-trace-ne-in、x-nuwa-trace-ne-out。
 
         :param value: The value of this InsertHeaderConfig.
         :type value: str

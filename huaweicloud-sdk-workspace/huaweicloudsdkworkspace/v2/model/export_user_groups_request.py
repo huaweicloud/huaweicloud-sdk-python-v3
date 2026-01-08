@@ -1,0 +1,195 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ExportUserGroupsRequest:
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'limit': 'int',
+        'offset': 'int',
+        'keyword': 'str',
+        'language': 'str'
+    }
+
+    attribute_map = {
+        'limit': 'limit',
+        'offset': 'offset',
+        'keyword': 'keyword',
+        'language': 'language'
+    }
+
+    def __init__(self, limit=None, offset=None, keyword=None, language=None):
+        r"""ExportUserGroupsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 用于分页查询，每页返回的个数，取值范围0~50。
+        :type limit: int
+        :param offset: 用于分页查询，查询的起始记录序号，从0开始，必须与limit同时使用。
+        :type offset: int
+        :param keyword: 用来匹配用户组的搜索关键字。根据组名模糊查询。
+        :type keyword: str
+        :param language: 语言。 - zh_CN：中文 - en_US：英文
+        :type language: str
+        """
+        
+        
+
+        self._limit = None
+        self._offset = None
+        self._keyword = None
+        self._language = None
+        self.discriminator = None
+
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if keyword is not None:
+            self.keyword = keyword
+        if language is not None:
+            self.language = language
+
+    @property
+    def limit(self):
+        r"""Gets the limit of this ExportUserGroupsRequest.
+
+        用于分页查询，每页返回的个数，取值范围0~50。
+
+        :return: The limit of this ExportUserGroupsRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        r"""Sets the limit of this ExportUserGroupsRequest.
+
+        用于分页查询，每页返回的个数，取值范围0~50。
+
+        :param limit: The limit of this ExportUserGroupsRequest.
+        :type limit: int
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        r"""Gets the offset of this ExportUserGroupsRequest.
+
+        用于分页查询，查询的起始记录序号，从0开始，必须与limit同时使用。
+
+        :return: The offset of this ExportUserGroupsRequest.
+        :rtype: int
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        r"""Sets the offset of this ExportUserGroupsRequest.
+
+        用于分页查询，查询的起始记录序号，从0开始，必须与limit同时使用。
+
+        :param offset: The offset of this ExportUserGroupsRequest.
+        :type offset: int
+        """
+        self._offset = offset
+
+    @property
+    def keyword(self):
+        r"""Gets the keyword of this ExportUserGroupsRequest.
+
+        用来匹配用户组的搜索关键字。根据组名模糊查询。
+
+        :return: The keyword of this ExportUserGroupsRequest.
+        :rtype: str
+        """
+        return self._keyword
+
+    @keyword.setter
+    def keyword(self, keyword):
+        r"""Sets the keyword of this ExportUserGroupsRequest.
+
+        用来匹配用户组的搜索关键字。根据组名模糊查询。
+
+        :param keyword: The keyword of this ExportUserGroupsRequest.
+        :type keyword: str
+        """
+        self._keyword = keyword
+
+    @property
+    def language(self):
+        r"""Gets the language of this ExportUserGroupsRequest.
+
+        语言。 - zh_CN：中文 - en_US：英文
+
+        :return: The language of this ExportUserGroupsRequest.
+        :rtype: str
+        """
+        return self._language
+
+    @language.setter
+    def language(self, language):
+        r"""Sets the language of this ExportUserGroupsRequest.
+
+        语言。 - zh_CN：中文 - en_US：英文
+
+        :param language: The language of this ExportUserGroupsRequest.
+        :type language: str
+        """
+        self._language = language
+
+    def to_dict(self):
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ExportUserGroupsRequest):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

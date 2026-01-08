@@ -56,8 +56,7 @@ class CompareConditionOption:
         self._value = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if enable_equal is not None:
             self.enable_equal = enable_equal
         if min is not None:

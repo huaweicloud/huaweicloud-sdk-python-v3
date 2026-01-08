@@ -30,7 +30,7 @@ class ResizeDesktopResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param jobs: 按需桌面变更规格返回的任务信息（jobs字段后续会下线，请使用job_id字段）。
+        :param jobs: 桌面变更规格返回的任务信息（jobs字段后续会下线，请使用job_id字段）。
         :type jobs: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopJobResponse`]
         :param job_id: 变更规格任务id。
         :type job_id: str
@@ -51,7 +51,7 @@ class ResizeDesktopResponse(SdkResponse):
     def jobs(self):
         r"""Gets the jobs of this ResizeDesktopResponse.
 
-        按需桌面变更规格返回的任务信息（jobs字段后续会下线，请使用job_id字段）。
+        桌面变更规格返回的任务信息（jobs字段后续会下线，请使用job_id字段）。
 
         :return: The jobs of this ResizeDesktopResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopJobResponse`]
@@ -62,7 +62,7 @@ class ResizeDesktopResponse(SdkResponse):
     def jobs(self, jobs):
         r"""Sets the jobs of this ResizeDesktopResponse.
 
-        按需桌面变更规格返回的任务信息（jobs字段后续会下线，请使用job_id字段）。
+        桌面变更规格返回的任务信息（jobs字段后续会下线，请使用job_id字段）。
 
         :param jobs: The jobs of this ResizeDesktopResponse.
         :type jobs: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopJobResponse`]

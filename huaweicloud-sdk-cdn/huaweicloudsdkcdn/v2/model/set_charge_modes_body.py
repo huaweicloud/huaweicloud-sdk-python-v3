@@ -33,7 +33,7 @@ class SetChargeModesBody:
 
         :param charge_mode: 计费模式，支持flux（流量），v2及以上客户支持bw（带宽）
         :type charge_mode: str
-        :param product_type: 产品模式，仅支持base（基础加速）
+        :param product_type: 产品模式。取值意义： - base：基础加速
         :type product_type: str
         :param service_area: 服务区域，仅支持mainland_china（国内）
         :type service_area: str
@@ -76,7 +76,7 @@ class SetChargeModesBody:
     def product_type(self):
         r"""Gets the product_type of this SetChargeModesBody.
 
-        产品模式，仅支持base（基础加速）
+        产品模式。取值意义： - base：基础加速
 
         :return: The product_type of this SetChargeModesBody.
         :rtype: str
@@ -87,7 +87,7 @@ class SetChargeModesBody:
     def product_type(self, product_type):
         r"""Sets the product_type of this SetChargeModesBody.
 
-        产品模式，仅支持base（基础加速）
+        产品模式。取值意义： - base：基础加速
 
         :param product_type: The product_type of this SetChargeModesBody.
         :type product_type: str

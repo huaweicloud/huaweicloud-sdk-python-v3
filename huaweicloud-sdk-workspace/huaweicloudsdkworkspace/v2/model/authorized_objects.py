@@ -18,6 +18,7 @@ class AuthorizedObjects:
         'object_type': 'str',
         'object_id': 'str',
         'object_name': 'str',
+        'domain': 'str',
         'user_group': 'str',
         'created_at': 'str'
     }
@@ -26,11 +27,12 @@ class AuthorizedObjects:
         'object_type': 'object_type',
         'object_id': 'object_id',
         'object_name': 'object_name',
+        'domain': 'domain',
         'user_group': 'user_group',
         'created_at': 'created_at'
     }
 
-    def __init__(self, object_type=None, object_id=None, object_name=None, user_group=None, created_at=None):
+    def __init__(self, object_type=None, object_id=None, object_name=None, domain=None, user_group=None, created_at=None):
         r"""AuthorizedObjects
 
         The model defined in huaweicloud sdk
@@ -41,9 +43,11 @@ class AuthorizedObjects:
         :type object_id: str
         :param object_name: 用户/用户组名称。
         :type object_name: str
+        :param domain: 用户/用户组所属域名。
+        :type domain: str
         :param user_group: 桌面用户所属的用户权限组。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
         :type user_group: str
-        :param created_at: 创建时间。格式为：UTC格式，例如“2022-05-11T11:45:42.000Z”。
+        :param created_at: 创建时间。
         :type created_at: str
         """
         
@@ -52,6 +56,7 @@ class AuthorizedObjects:
         self._object_type = None
         self._object_id = None
         self._object_name = None
+        self._domain = None
         self._user_group = None
         self._created_at = None
         self.discriminator = None
@@ -59,6 +64,8 @@ class AuthorizedObjects:
         self.object_type = object_type
         self.object_id = object_id
         self.object_name = object_name
+        if domain is not None:
+            self.domain = domain
         self.user_group = user_group
         if created_at is not None:
             self.created_at = created_at
@@ -130,6 +137,28 @@ class AuthorizedObjects:
         self._object_name = object_name
 
     @property
+    def domain(self):
+        r"""Gets the domain of this AuthorizedObjects.
+
+        用户/用户组所属域名。
+
+        :return: The domain of this AuthorizedObjects.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this AuthorizedObjects.
+
+        用户/用户组所属域名。
+
+        :param domain: The domain of this AuthorizedObjects.
+        :type domain: str
+        """
+        self._domain = domain
+
+    @property
     def user_group(self):
         r"""Gets the user_group of this AuthorizedObjects.
 
@@ -155,7 +184,7 @@ class AuthorizedObjects:
     def created_at(self):
         r"""Gets the created_at of this AuthorizedObjects.
 
-        创建时间。格式为：UTC格式，例如“2022-05-11T11:45:42.000Z”。
+        创建时间。
 
         :return: The created_at of this AuthorizedObjects.
         :rtype: str
@@ -166,7 +195,7 @@ class AuthorizedObjects:
     def created_at(self, created_at):
         r"""Sets the created_at of this AuthorizedObjects.
 
-        创建时间。格式为：UTC格式，例如“2022-05-11T11:45:42.000Z”。
+        创建时间。
 
         :param created_at: The created_at of this AuthorizedObjects.
         :type created_at: str

@@ -28,7 +28,7 @@ class CreateOneDashboardResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_id: **参数描述**： 监控看板id **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 
+        :param dashboard_id: **参数解释**： 监控看板id **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 
         :type dashboard_id: str
         """
         
@@ -44,7 +44,7 @@ class CreateOneDashboardResponse(SdkResponse):
     def dashboard_id(self):
         r"""Gets the dashboard_id of this CreateOneDashboardResponse.
 
-        **参数描述**： 监控看板id **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 
+        **参数解释**： 监控看板id **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 
 
         :return: The dashboard_id of this CreateOneDashboardResponse.
         :rtype: str
@@ -55,7 +55,7 @@ class CreateOneDashboardResponse(SdkResponse):
     def dashboard_id(self, dashboard_id):
         r"""Sets the dashboard_id of this CreateOneDashboardResponse.
 
-        **参数描述**： 监控看板id **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 
+        **参数解释**： 监控看板id **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 
 
         :param dashboard_id: The dashboard_id of this CreateOneDashboardResponse.
         :type dashboard_id: str

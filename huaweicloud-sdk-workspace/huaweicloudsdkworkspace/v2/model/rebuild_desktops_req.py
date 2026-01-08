@@ -22,7 +22,8 @@ class RebuildDesktopsReq:
         'delay_time': 'int',
         'message': 'str',
         'order_id': 'str',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'handle_type': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class RebuildDesktopsReq:
         'delay_time': 'delay_time',
         'message': 'message',
         'order_id': 'order_id',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'handle_type': 'handle_type'
     }
 
-    def __init__(self, desktop_ids=None, image_type=None, image_id=None, os_type=None, delay_time=None, message=None, order_id=None, enterprise_project_id=None):
+    def __init__(self, desktop_ids=None, image_type=None, image_id=None, os_type=None, delay_time=None, message=None, order_id=None, enterprise_project_id=None, handle_type=None):
         r"""RebuildDesktopsReq
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class RebuildDesktopsReq:
         :type order_id: str
         :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
+        :param handle_type: 处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+        :type handle_type: str
         """
         
         
@@ -69,6 +73,7 @@ class RebuildDesktopsReq:
         self._message = None
         self._order_id = None
         self._enterprise_project_id = None
+        self._handle_type = None
         self.discriminator = None
 
         self.desktop_ids = desktop_ids
@@ -84,6 +89,8 @@ class RebuildDesktopsReq:
             self.order_id = order_id
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if handle_type is not None:
+            self.handle_type = handle_type
 
     @property
     def desktop_ids(self):
@@ -260,6 +267,28 @@ class RebuildDesktopsReq:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def handle_type(self):
+        r"""Gets the handle_type of this RebuildDesktopsReq.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :return: The handle_type of this RebuildDesktopsReq.
+        :rtype: str
+        """
+        return self._handle_type
+
+    @handle_type.setter
+    def handle_type(self, handle_type):
+        r"""Sets the handle_type of this RebuildDesktopsReq.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :param handle_type: The handle_type of this RebuildDesktopsReq.
+        :type handle_type: str
+        """
+        self._handle_type = handle_type
 
     def to_dict(self):
         result = {}

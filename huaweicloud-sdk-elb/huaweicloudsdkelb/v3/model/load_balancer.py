@@ -213,7 +213,7 @@ class LoadBalancer:
         :type service_lb_mode: str
         :param instance_type: **参数解释**：标识实例归属哪个内部服务。  **取值范围**：不涉及  不支持该字段，请勿使用。
         :type instance_type: str
-        :param instance_id: **参数解释**：标识实例绑定内部服务的实例ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
+        :param instance_id: **参数解释**：标识实例绑定内部服务的实例id。  **取值范围**：不涉及  不支持该字段，请勿使用。
         :type instance_id: str
         :param proxy_protocol_extensions: **参数解释**：pp扩展。  不支持该字段，请勿使用。
         :type proxy_protocol_extensions: list[:class:`huaweicloudsdkelb.v3.ProxyProtocolExtension`]
@@ -1300,7 +1300,7 @@ class LoadBalancer:
     def instance_id(self):
         r"""Gets the instance_id of this LoadBalancer.
 
-        **参数解释**：标识实例绑定内部服务的实例ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
+        **参数解释**：标识实例绑定内部服务的实例id。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :return: The instance_id of this LoadBalancer.
         :rtype: str
@@ -1311,7 +1311,7 @@ class LoadBalancer:
     def instance_id(self, instance_id):
         r"""Sets the instance_id of this LoadBalancer.
 
-        **参数解释**：标识实例绑定内部服务的实例ID。  **取值范围**：不涉及  不支持该字段，请勿使用。
+        **参数解释**：标识实例绑定内部服务的实例id。  **取值范围**：不涉及  不支持该字段，请勿使用。
 
         :param instance_id: The instance_id of this LoadBalancer.
         :type instance_id: str

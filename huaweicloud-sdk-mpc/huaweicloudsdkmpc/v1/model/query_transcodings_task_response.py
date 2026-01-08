@@ -32,6 +32,8 @@ class QueryTranscodingsTaskResponse:
         'thumbnail_output': 'ObsObjInfo',
         'thumbnail_outputname': 'str',
         'pic_info': 'list[PicInfo]',
+        'thumbnails_info': 'list[ThumbnailsInfo]',
+        'image_sprite_info': 'list[ImageSpriteInfo]',
         'av_parameters': 'list[AvParameters]',
         'additional_manifests': 'list[AdditionalManifests]',
         'metadata': 'list[FileMetaData]'
@@ -55,12 +57,14 @@ class QueryTranscodingsTaskResponse:
         'thumbnail_output': 'thumbnail_output',
         'thumbnail_outputname': 'thumbnail_outputname',
         'pic_info': 'pic_info',
+        'thumbnails_info': 'thumbnails_info',
+        'image_sprite_info': 'image_sprite_info',
         'av_parameters': 'av_parameters',
         'additional_manifests': 'additional_manifests',
         'metadata': 'metadata'
     }
 
-    def __init__(self, task_id=None, status=None, progress=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, av_parameters=None, additional_manifests=None, metadata=None):
+    def __init__(self, task_id=None, status=None, progress=None, create_time=None, end_time=None, trans_template_id=None, input=None, output=None, output_file_name=None, user_data=None, error_code=None, description=None, tips=None, transcode_detail=None, thumbnail_output=None, thumbnail_outputname=None, pic_info=None, thumbnails_info=None, image_sprite_info=None, av_parameters=None, additional_manifests=None, metadata=None):
         r"""QueryTranscodingsTaskResponse
 
         The model defined in huaweicloud sdk
@@ -99,6 +103,10 @@ class QueryTranscodingsTaskResponse:
         :type thumbnail_outputname: str
         :param pic_info: 截图文件信息。 
         :type pic_info: list[:class:`huaweicloudsdkmpc.v1.PicInfo`]
+        :param thumbnails_info: 截图文件信息。 
+        :type thumbnails_info: list[:class:`huaweicloudsdkmpc.v1.ThumbnailsInfo`]
+        :param image_sprite_info: 雪碧图信息，数组，最多支持20个成员。 
+        :type image_sprite_info: list[:class:`huaweicloudsdkmpc.v1.ImageSpriteInfo`]
         :param av_parameters: 转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码。 
         :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         :param additional_manifests: 主索引定制参数。 
@@ -126,6 +134,8 @@ class QueryTranscodingsTaskResponse:
         self._thumbnail_output = None
         self._thumbnail_outputname = None
         self._pic_info = None
+        self._thumbnails_info = None
+        self._image_sprite_info = None
         self._av_parameters = None
         self._additional_manifests = None
         self._metadata = None
@@ -165,6 +175,10 @@ class QueryTranscodingsTaskResponse:
             self.thumbnail_outputname = thumbnail_outputname
         if pic_info is not None:
             self.pic_info = pic_info
+        if thumbnails_info is not None:
+            self.thumbnails_info = thumbnails_info
+        if image_sprite_info is not None:
+            self.image_sprite_info = image_sprite_info
         if av_parameters is not None:
             self.av_parameters = av_parameters
         if additional_manifests is not None:
@@ -529,6 +543,50 @@ class QueryTranscodingsTaskResponse:
         :type pic_info: list[:class:`huaweicloudsdkmpc.v1.PicInfo`]
         """
         self._pic_info = pic_info
+
+    @property
+    def thumbnails_info(self):
+        r"""Gets the thumbnails_info of this QueryTranscodingsTaskResponse.
+
+        截图文件信息。 
+
+        :return: The thumbnails_info of this QueryTranscodingsTaskResponse.
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ThumbnailsInfo`]
+        """
+        return self._thumbnails_info
+
+    @thumbnails_info.setter
+    def thumbnails_info(self, thumbnails_info):
+        r"""Sets the thumbnails_info of this QueryTranscodingsTaskResponse.
+
+        截图文件信息。 
+
+        :param thumbnails_info: The thumbnails_info of this QueryTranscodingsTaskResponse.
+        :type thumbnails_info: list[:class:`huaweicloudsdkmpc.v1.ThumbnailsInfo`]
+        """
+        self._thumbnails_info = thumbnails_info
+
+    @property
+    def image_sprite_info(self):
+        r"""Gets the image_sprite_info of this QueryTranscodingsTaskResponse.
+
+        雪碧图信息，数组，最多支持20个成员。 
+
+        :return: The image_sprite_info of this QueryTranscodingsTaskResponse.
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ImageSpriteInfo`]
+        """
+        return self._image_sprite_info
+
+    @image_sprite_info.setter
+    def image_sprite_info(self, image_sprite_info):
+        r"""Sets the image_sprite_info of this QueryTranscodingsTaskResponse.
+
+        雪碧图信息，数组，最多支持20个成员。 
+
+        :param image_sprite_info: The image_sprite_info of this QueryTranscodingsTaskResponse.
+        :type image_sprite_info: list[:class:`huaweicloudsdkmpc.v1.ImageSpriteInfo`]
+        """
+        self._image_sprite_info = image_sprite_info
 
     @property
     def av_parameters(self):

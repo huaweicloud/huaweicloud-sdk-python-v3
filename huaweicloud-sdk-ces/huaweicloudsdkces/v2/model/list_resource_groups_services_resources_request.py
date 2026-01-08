@@ -57,13 +57,13 @@ class ListResourceGroupsServicesResourcesRequest:
         :type group_id: str
         :param service: **参数解释** 服务类别，如SYS.ECS **约束限制** 不涉及 **取值范围** 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度在 [3,32]个字符之间 **默认取值** 不涉及
         :type service: str
-        :param dim_name: **参数解释**： 资源维度。 **约束限制**： 不涉及。 **取值范围**： 多维度用\&quot;,\&quot;分割，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。 **默认取值**： 不涉及。 
+        :param dim_name: **参数解释**： 资源维度。 **约束限制**： 不涉及。 **取值范围**： 多维度用\&quot;,\&quot;分隔，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。 **默认取值**： 不涉及。 
         :type dim_name: str
         :param status: **参数解释** 告警规则按状态信息进行过滤。 **约束限制**： 不涉及。 **取值范围** 枚举值。 - health: 已设置告警规则且无告警触发的资源 - unhealthy: 已设置告警规则且有告警触发的资源 - no_alarm_rule: 未设置告警规则的资源 **默认取值**： 不涉及。 
         :type status: str
-        :param dim_value: **参数描述**： 资源维度值，不支持模糊匹配，但是多维度资源可以只指定一个维度值 **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[1,1027] **默认取值**： 不涉及。 
+        :param dim_value: **参数解释**： 资源维度值，不支持模糊匹配，但是多维度资源可以只指定一个维度值 **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[1,1027] **默认取值**： 不涉及。 
         :type dim_value: str
-        :param tag: **参数描述**： 资源的标签信息，格式：\&quot;[key]\&quot;:\&quot;[value]\&quot;，样例参考：\&quot;ssss\&quot;:\&quot;1111\&quot; **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[0,500] **默认取值**： 不涉及。 
+        :param tag: **参数解释**： 资源的标签信息，格式：\&quot;[key]\&quot;:\&quot;[value]\&quot;，样例参考：\&quot;ssss\&quot;:\&quot;1111\&quot; **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[0,500] **默认取值**： 不涉及。 
         :type tag: str
         :param extend_relation_id: **参数解释** 企业项目ID。 **约束限制** 不涉及。 **取值范围** 由数字、字母和-组成，字符串长度范围[1,128] **默认取值** 不涉及。 
         :type extend_relation_id: str
@@ -206,7 +206,7 @@ class ListResourceGroupsServicesResourcesRequest:
     def dim_name(self):
         r"""Gets the dim_name of this ListResourceGroupsServicesResourcesRequest.
 
-        **参数解释**： 资源维度。 **约束限制**： 不涉及。 **取值范围**： 多维度用\",\"分割，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。 **默认取值**： 不涉及。 
+        **参数解释**： 资源维度。 **约束限制**： 不涉及。 **取值范围**： 多维度用\",\"分隔，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。 **默认取值**： 不涉及。 
 
         :return: The dim_name of this ListResourceGroupsServicesResourcesRequest.
         :rtype: str
@@ -217,7 +217,7 @@ class ListResourceGroupsServicesResourcesRequest:
     def dim_name(self, dim_name):
         r"""Sets the dim_name of this ListResourceGroupsServicesResourcesRequest.
 
-        **参数解释**： 资源维度。 **约束限制**： 不涉及。 **取值范围**： 多维度用\",\"分割，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。 **默认取值**： 不涉及。 
+        **参数解释**： 资源维度。 **约束限制**： 不涉及。 **取值范围**： 多维度用\",\"分隔，只能包含0-9、a-z、A-Z、_、-、#、/、(、），每个维度的最大长度为32。字符串总长度最小为1，最大为131。 **默认取值**： 不涉及。 
 
         :param dim_name: The dim_name of this ListResourceGroupsServicesResourcesRequest.
         :type dim_name: str
@@ -250,7 +250,7 @@ class ListResourceGroupsServicesResourcesRequest:
     def dim_value(self):
         r"""Gets the dim_value of this ListResourceGroupsServicesResourcesRequest.
 
-        **参数描述**： 资源维度值，不支持模糊匹配，但是多维度资源可以只指定一个维度值 **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[1,1027] **默认取值**： 不涉及。 
+        **参数解释**： 资源维度值，不支持模糊匹配，但是多维度资源可以只指定一个维度值 **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[1,1027] **默认取值**： 不涉及。 
 
         :return: The dim_value of this ListResourceGroupsServicesResourcesRequest.
         :rtype: str
@@ -261,7 +261,7 @@ class ListResourceGroupsServicesResourcesRequest:
     def dim_value(self, dim_value):
         r"""Sets the dim_value of this ListResourceGroupsServicesResourcesRequest.
 
-        **参数描述**： 资源维度值，不支持模糊匹配，但是多维度资源可以只指定一个维度值 **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[1,1027] **默认取值**： 不涉及。 
+        **参数解释**： 资源维度值，不支持模糊匹配，但是多维度资源可以只指定一个维度值 **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[1,1027] **默认取值**： 不涉及。 
 
         :param dim_value: The dim_value of this ListResourceGroupsServicesResourcesRequest.
         :type dim_value: str
@@ -272,7 +272,7 @@ class ListResourceGroupsServicesResourcesRequest:
     def tag(self):
         r"""Gets the tag of this ListResourceGroupsServicesResourcesRequest.
 
-        **参数描述**： 资源的标签信息，格式：\"[key]\":\"[value]\"，样例参考：\"ssss\":\"1111\" **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[0,500] **默认取值**： 不涉及。 
+        **参数解释**： 资源的标签信息，格式：\"[key]\":\"[value]\"，样例参考：\"ssss\":\"1111\" **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[0,500] **默认取值**： 不涉及。 
 
         :return: The tag of this ListResourceGroupsServicesResourcesRequest.
         :rtype: str
@@ -283,7 +283,7 @@ class ListResourceGroupsServicesResourcesRequest:
     def tag(self, tag):
         r"""Sets the tag of this ListResourceGroupsServicesResourcesRequest.
 
-        **参数描述**： 资源的标签信息，格式：\"[key]\":\"[value]\"，样例参考：\"ssss\":\"1111\" **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[0,500] **默认取值**： 不涉及。 
+        **参数解释**： 资源的标签信息，格式：\"[key]\":\"[value]\"，样例参考：\"ssss\":\"1111\" **约束限制**： 不涉及。  **取值范围**： 字符串长度范围[0,500] **默认取值**： 不涉及。 
 
         :param tag: The tag of this ListResourceGroupsServicesResourcesRequest.
         :type tag: str

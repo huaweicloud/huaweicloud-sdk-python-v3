@@ -1,0 +1,257 @@
+# coding: utf-8
+
+from huaweicloudsdkcore.sdk_response import SdkResponse
+from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
+
+
+class ImportUserListResponse(SdkResponse):
+
+    """
+    Attributes:
+      openapi_types (dict): The key is attribute name
+                            and the value is attribute type.
+      attribute_map (dict): The key is attribute name
+                            and the value is json key in definition.
+    """
+    sensitive_list = []
+
+    openapi_types = {
+        'error_code': 'str',
+        'error_msg': 'str',
+        'encoded_authorization_message': 'str',
+        'user_detail_list': 'list[DesktopUserDetail]',
+        'failed_detail_list': 'list[DesktopUserDetail]',
+        'total_count': 'int'
+    }
+
+    attribute_map = {
+        'error_code': 'error_code',
+        'error_msg': 'error_msg',
+        'encoded_authorization_message': 'encoded_authorization_message',
+        'user_detail_list': 'user_detail_list',
+        'failed_detail_list': 'failed_detail_list',
+        'total_count': 'total_count'
+    }
+
+    def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None, user_detail_list=None, failed_detail_list=None, total_count=None):
+        r"""ImportUserListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 错误码。
+        :type error_code: str
+        :param error_msg: 错误描述。
+        :type error_msg: str
+        :param encoded_authorization_message: 加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
+        :type encoded_authorization_message: str
+        :param user_detail_list: 成功列表。
+        :type user_detail_list: list[:class:`huaweicloudsdkworkspace.v2.DesktopUserDetail`]
+        :param failed_detail_list: 失败列表。
+        :type failed_detail_list: list[:class:`huaweicloudsdkworkspace.v2.DesktopUserDetail`]
+        :param total_count: 用户列表数量。
+        :type total_count: int
+        """
+        
+        super().__init__()
+
+        self._error_code = None
+        self._error_msg = None
+        self._encoded_authorization_message = None
+        self._user_detail_list = None
+        self._failed_detail_list = None
+        self._total_count = None
+        self.discriminator = None
+
+        if error_code is not None:
+            self.error_code = error_code
+        if error_msg is not None:
+            self.error_msg = error_msg
+        if encoded_authorization_message is not None:
+            self.encoded_authorization_message = encoded_authorization_message
+        if user_detail_list is not None:
+            self.user_detail_list = user_detail_list
+        if failed_detail_list is not None:
+            self.failed_detail_list = failed_detail_list
+        if total_count is not None:
+            self.total_count = total_count
+
+    @property
+    def error_code(self):
+        r"""Gets the error_code of this ImportUserListResponse.
+
+        错误码。
+
+        :return: The error_code of this ImportUserListResponse.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        r"""Sets the error_code of this ImportUserListResponse.
+
+        错误码。
+
+        :param error_code: The error_code of this ImportUserListResponse.
+        :type error_code: str
+        """
+        self._error_code = error_code
+
+    @property
+    def error_msg(self):
+        r"""Gets the error_msg of this ImportUserListResponse.
+
+        错误描述。
+
+        :return: The error_msg of this ImportUserListResponse.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        r"""Sets the error_msg of this ImportUserListResponse.
+
+        错误描述。
+
+        :param error_msg: The error_msg of this ImportUserListResponse.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
+
+    @property
+    def encoded_authorization_message(self):
+        r"""Gets the encoded_authorization_message of this ImportUserListResponse.
+
+        加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
+
+        :return: The encoded_authorization_message of this ImportUserListResponse.
+        :rtype: str
+        """
+        return self._encoded_authorization_message
+
+    @encoded_authorization_message.setter
+    def encoded_authorization_message(self, encoded_authorization_message):
+        r"""Sets the encoded_authorization_message of this ImportUserListResponse.
+
+        加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
+
+        :param encoded_authorization_message: The encoded_authorization_message of this ImportUserListResponse.
+        :type encoded_authorization_message: str
+        """
+        self._encoded_authorization_message = encoded_authorization_message
+
+    @property
+    def user_detail_list(self):
+        r"""Gets the user_detail_list of this ImportUserListResponse.
+
+        成功列表。
+
+        :return: The user_detail_list of this ImportUserListResponse.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.DesktopUserDetail`]
+        """
+        return self._user_detail_list
+
+    @user_detail_list.setter
+    def user_detail_list(self, user_detail_list):
+        r"""Sets the user_detail_list of this ImportUserListResponse.
+
+        成功列表。
+
+        :param user_detail_list: The user_detail_list of this ImportUserListResponse.
+        :type user_detail_list: list[:class:`huaweicloudsdkworkspace.v2.DesktopUserDetail`]
+        """
+        self._user_detail_list = user_detail_list
+
+    @property
+    def failed_detail_list(self):
+        r"""Gets the failed_detail_list of this ImportUserListResponse.
+
+        失败列表。
+
+        :return: The failed_detail_list of this ImportUserListResponse.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.DesktopUserDetail`]
+        """
+        return self._failed_detail_list
+
+    @failed_detail_list.setter
+    def failed_detail_list(self, failed_detail_list):
+        r"""Sets the failed_detail_list of this ImportUserListResponse.
+
+        失败列表。
+
+        :param failed_detail_list: The failed_detail_list of this ImportUserListResponse.
+        :type failed_detail_list: list[:class:`huaweicloudsdkworkspace.v2.DesktopUserDetail`]
+        """
+        self._failed_detail_list = failed_detail_list
+
+    @property
+    def total_count(self):
+        r"""Gets the total_count of this ImportUserListResponse.
+
+        用户列表数量。
+
+        :return: The total_count of this ImportUserListResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        r"""Sets the total_count of this ImportUserListResponse.
+
+        用户列表数量。
+
+        :param total_count: The total_count of this ImportUserListResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
+
+    def to_dict(self):
+        import warnings
+        warnings.warn("ImportUserListResponse.to_dict() is deprecated and no longer maintained, "
+                      "use to_json_object() to get the response content.", DeprecationWarning)
+        result = {}
+
+        for attr, _ in self.openapi_types.items():
+            value = getattr(self, attr)
+            if isinstance(value, list):
+                result[attr] = list(map(
+                    lambda x: x.to_dict() if hasattr(x, "to_dict") else x,
+                    value
+                ))
+            elif hasattr(value, "to_dict"):
+                result[attr] = value.to_dict()
+            elif isinstance(value, dict):
+                result[attr] = dict(map(
+                    lambda item: (item[0], item[1].to_dict())
+                    if hasattr(item[1], "to_dict") else item,
+                    value.items()
+                ))
+            else:
+                if attr in self.sensitive_list:
+                    result[attr] = "****"
+                else:
+                    result[attr] = value
+
+        return result
+
+    def to_str(self):
+        """Returns the string representation of the model"""
+        import simplejson as json
+        return json.dumps(sanitize_for_serialization(self), ensure_ascii=False)
+
+    def __repr__(self):
+        """For `print`"""
+        return self.to_str()
+
+    def __eq__(self, other):
+        """Returns true if both objects are equal"""
+        if not isinstance(other, ImportUserListResponse):
+            return False
+
+        return self.__dict__ == other.__dict__
+
+    def __ne__(self, other):
+        """Returns true if both objects are not equal"""
+        return not self == other

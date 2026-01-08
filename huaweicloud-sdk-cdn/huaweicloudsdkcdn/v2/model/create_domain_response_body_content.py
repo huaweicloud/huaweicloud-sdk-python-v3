@@ -79,7 +79,7 @@ class CreateDomainResponseBodyContent:
         :type sources: list[:class:`huaweicloudsdkcdn.v2.Sources`]
         :param domain_origin_host: 
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v2.DomainOriginHost`
-        :param https_status: 是否开启HTTPS加速。
+        :param https_status: 是否开启HTTPS加速。取值意义： - 0：未开启 - 1：开启
         :type https_status: int
         :param create_time: 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
         :type create_time: int
@@ -89,11 +89,11 @@ class CreateDomainResponseBodyContent:
         :type disabled: int
         :param locked: 锁定状态（0代表未锁定；1代表锁定）。
         :type locked: int
-        :param range_status: range状态，off：关闭，on：开启。
+        :param range_status: range状态。取值意义： - on：开启 - off：关闭
         :type range_status: str
-        :param follow_status: follow302状态，off：关闭，on：开启。
+        :param follow_status: follow302状态。取值意义： - on：开启 - off：关闭
         :type follow_status: str
-        :param origin_status: 是否暂停源站回源（off代表关闭 on代表开启）。
+        :param origin_status: 是否暂停源站回。取值意义： - on：开启 - off：关闭
         :type origin_status: str
         :param auto_refresh_preheat: 自动刷新预热（0代表关闭；1代表打开）。
         :type auto_refresh_preheat: int
@@ -356,7 +356,7 @@ class CreateDomainResponseBodyContent:
     def https_status(self):
         r"""Gets the https_status of this CreateDomainResponseBodyContent.
 
-        是否开启HTTPS加速。
+        是否开启HTTPS加速。取值意义： - 0：未开启 - 1：开启
 
         :return: The https_status of this CreateDomainResponseBodyContent.
         :rtype: int
@@ -367,7 +367,7 @@ class CreateDomainResponseBodyContent:
     def https_status(self, https_status):
         r"""Sets the https_status of this CreateDomainResponseBodyContent.
 
-        是否开启HTTPS加速。
+        是否开启HTTPS加速。取值意义： - 0：未开启 - 1：开启
 
         :param https_status: The https_status of this CreateDomainResponseBodyContent.
         :type https_status: int
@@ -466,7 +466,7 @@ class CreateDomainResponseBodyContent:
     def range_status(self):
         r"""Gets the range_status of this CreateDomainResponseBodyContent.
 
-        range状态，off：关闭，on：开启。
+        range状态。取值意义： - on：开启 - off：关闭
 
         :return: The range_status of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -477,7 +477,7 @@ class CreateDomainResponseBodyContent:
     def range_status(self, range_status):
         r"""Sets the range_status of this CreateDomainResponseBodyContent.
 
-        range状态，off：关闭，on：开启。
+        range状态。取值意义： - on：开启 - off：关闭
 
         :param range_status: The range_status of this CreateDomainResponseBodyContent.
         :type range_status: str
@@ -488,7 +488,7 @@ class CreateDomainResponseBodyContent:
     def follow_status(self):
         r"""Gets the follow_status of this CreateDomainResponseBodyContent.
 
-        follow302状态，off：关闭，on：开启。
+        follow302状态。取值意义： - on：开启 - off：关闭
 
         :return: The follow_status of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -499,7 +499,7 @@ class CreateDomainResponseBodyContent:
     def follow_status(self, follow_status):
         r"""Sets the follow_status of this CreateDomainResponseBodyContent.
 
-        follow302状态，off：关闭，on：开启。
+        follow302状态。取值意义： - on：开启 - off：关闭
 
         :param follow_status: The follow_status of this CreateDomainResponseBodyContent.
         :type follow_status: str
@@ -510,7 +510,7 @@ class CreateDomainResponseBodyContent:
     def origin_status(self):
         r"""Gets the origin_status of this CreateDomainResponseBodyContent.
 
-        是否暂停源站回源（off代表关闭 on代表开启）。
+        是否暂停源站回。取值意义： - on：开启 - off：关闭
 
         :return: The origin_status of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -521,7 +521,7 @@ class CreateDomainResponseBodyContent:
     def origin_status(self, origin_status):
         r"""Sets the origin_status of this CreateDomainResponseBodyContent.
 
-        是否暂停源站回源（off代表关闭 on代表开启）。
+        是否暂停源站回。取值意义： - on：开启 - off：关闭
 
         :param origin_status: The origin_status of this CreateDomainResponseBodyContent.
         :type origin_status: str

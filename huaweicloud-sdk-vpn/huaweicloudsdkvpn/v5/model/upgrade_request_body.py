@@ -36,8 +36,7 @@ class UpgradeRequestBody:
         self._action = None
         self.discriminator = None
 
-        if action is not None:
-            self.action = action
+        self.action = action
 
     @property
     def action(self):

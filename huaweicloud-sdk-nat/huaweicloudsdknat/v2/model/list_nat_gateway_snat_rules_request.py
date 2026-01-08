@@ -55,7 +55,7 @@ class ListNatGatewaySnatRulesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: 解冻/冻结状态。 取值范围： \&quot;true\&quot;：解冻 \&quot;false\&quot;：冻结
+        :param admin_state_up: 解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
         :type admin_state_up: bool
         :param cidr: 可以是网段或者主机格式，与network_id参数二选一。 Source_type&#x3D;0时，cidr必须是vpc子网网段的子集(不能相等）; Source_type&#x3D;1时，cidr必须指定专线侧网段。
         :type cidr: str
@@ -79,9 +79,9 @@ class ListNatGatewaySnatRulesRequest:
         :type nat_gateway_id: list[str]
         :param network_id: 规则使用的网络id。与cidr参数二选一。
         :type network_id: str
-        :param source_type: 0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
+        :param source_type: 资源类型。 取值范围： - 0：VPC侧，可以指定network_id 或者cidr - 1：专线侧，只能指定cidr 不输入默认为0（VPC）
         :type source_type: int
-        :param status: SNAT规则的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 EIP_FREEZED: EIP冻结 INACTIVE: 不可用
+        :param status: SNAT规则的状态。 取值为:  - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - EIP_FREEZED: EIP冻结 - INACTIVE: 不可用
         :type status: str
         :param marker: 分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
         :type marker: str
@@ -141,7 +141,7 @@ class ListNatGatewaySnatRulesRequest:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this ListNatGatewaySnatRulesRequest.
 
-        解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
+        解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
 
         :return: The admin_state_up of this ListNatGatewaySnatRulesRequest.
         :rtype: bool
@@ -152,7 +152,7 @@ class ListNatGatewaySnatRulesRequest:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this ListNatGatewaySnatRulesRequest.
 
-        解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
+        解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
 
         :param admin_state_up: The admin_state_up of this ListNatGatewaySnatRulesRequest.
         :type admin_state_up: bool
@@ -405,7 +405,7 @@ class ListNatGatewaySnatRulesRequest:
     def source_type(self):
         r"""Gets the source_type of this ListNatGatewaySnatRulesRequest.
 
-        0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
+        资源类型。 取值范围： - 0：VPC侧，可以指定network_id 或者cidr - 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
         :return: The source_type of this ListNatGatewaySnatRulesRequest.
         :rtype: int
@@ -416,7 +416,7 @@ class ListNatGatewaySnatRulesRequest:
     def source_type(self, source_type):
         r"""Sets the source_type of this ListNatGatewaySnatRulesRequest.
 
-        0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
+        资源类型。 取值范围： - 0：VPC侧，可以指定network_id 或者cidr - 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
         :param source_type: The source_type of this ListNatGatewaySnatRulesRequest.
         :type source_type: int
@@ -427,7 +427,7 @@ class ListNatGatewaySnatRulesRequest:
     def status(self):
         r"""Gets the status of this ListNatGatewaySnatRulesRequest.
 
-        SNAT规则的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 EIP_FREEZED: EIP冻结 INACTIVE: 不可用
+        SNAT规则的状态。 取值为:  - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - EIP_FREEZED: EIP冻结 - INACTIVE: 不可用
 
         :return: The status of this ListNatGatewaySnatRulesRequest.
         :rtype: str
@@ -438,7 +438,7 @@ class ListNatGatewaySnatRulesRequest:
     def status(self, status):
         r"""Sets the status of this ListNatGatewaySnatRulesRequest.
 
-        SNAT规则的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 EIP_FREEZED: EIP冻结 INACTIVE: 不可用
+        SNAT规则的状态。 取值为:  - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - EIP_FREEZED: EIP冻结 - INACTIVE: 不可用
 
         :param status: The status of this ListNatGatewaySnatRulesRequest.
         :type status: str

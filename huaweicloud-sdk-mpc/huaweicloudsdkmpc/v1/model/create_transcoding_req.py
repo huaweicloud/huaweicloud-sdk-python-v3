@@ -18,12 +18,16 @@ class CreateTranscodingReq:
         'input': 'ObsObjInfo',
         'output': 'ObsObjInfo',
         'trans_template_id': 'list[int]',
+        'trans_template_list': 'list[TransIdTemplate]',
         'av_parameters': 'list[AvParameters]',
         'additional_manifests': 'list[AdditionalManifests]',
         'output_filenames': 'list[str]',
         'user_data': 'str',
         'watermarks': 'list[WatermarkRequest]',
         'thumbnail': 'Thumbnail',
+        'thumbnails': 'list[Thumbnail]',
+        'image_sprites': 'list[ImageSprite]',
+        'pipeline_id': 'str',
         'priority': 'int',
         'subtitle': 'Subtitle',
         'encryption': 'Encryption',
@@ -39,12 +43,16 @@ class CreateTranscodingReq:
         'input': 'input',
         'output': 'output',
         'trans_template_id': 'trans_template_id',
+        'trans_template_list': 'trans_template_list',
         'av_parameters': 'av_parameters',
         'additional_manifests': 'additional_manifests',
         'output_filenames': 'output_filenames',
         'user_data': 'user_data',
         'watermarks': 'watermarks',
         'thumbnail': 'thumbnail',
+        'thumbnails': 'thumbnails',
+        'image_sprites': 'image_sprites',
+        'pipeline_id': 'pipeline_id',
         'priority': 'priority',
         'subtitle': 'subtitle',
         'encryption': 'encryption',
@@ -56,7 +64,7 @@ class CreateTranscodingReq:
         'metadata': 'metadata'
     }
 
-    def __init__(self, input=None, output=None, trans_template_id=None, av_parameters=None, additional_manifests=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, metadata=None):
+    def __init__(self, input=None, output=None, trans_template_id=None, trans_template_list=None, av_parameters=None, additional_manifests=None, output_filenames=None, user_data=None, watermarks=None, thumbnail=None, thumbnails=None, image_sprites=None, pipeline_id=None, priority=None, subtitle=None, encryption=None, crop=None, audio_track=None, multi_audio=None, video_process=None, audio_process=None, metadata=None):
         r"""CreateTranscodingReq
 
         The model defined in huaweicloud sdk
@@ -67,6 +75,8 @@ class CreateTranscodingReq:
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         :param trans_template_id: 转码模板ID，没带av_parameter参数时，必须带该参数，数组，每一路转码输出对应一个转码配置模板ID，最多支持9个模板ID。  多个转码模板中如下参数可变，其他都必须一致：  视频bitrate，height，width。 
         :type trans_template_id: list[int]
+        :param trans_template_list: 转码模板数组 
+        :type trans_template_list: list[:class:`huaweicloudsdkmpc.v1.TransIdTemplate`]
         :param av_parameters: 转码参数。  若同时设置“trans_template_id”和此参数，则优先使用此参数进行转码，不带trans_template_id时，该参数必选。 
         :type av_parameters: list[:class:`huaweicloudsdkmpc.v1.AvParameters`]
         :param additional_manifests: 主索引定制参数。 
@@ -79,6 +89,12 @@ class CreateTranscodingReq:
         :type watermarks: list[:class:`huaweicloudsdkmpc.v1.WatermarkRequest`]
         :param thumbnail: 
         :type thumbnail: :class:`huaweicloudsdkmpc.v1.Thumbnail`
+        :param thumbnails: 多截图任务，数组，最多支持20个成员。 
+        :type thumbnails: list[:class:`huaweicloudsdkmpc.v1.Thumbnail`]
+        :param image_sprites: 雪碧图参数，数组，最多支持20个成员。 
+        :type image_sprites: list[:class:`huaweicloudsdkmpc.v1.ImageSprite`]
+        :param pipeline_id: 
+        :type pipeline_id: str
         :param priority: 任务优先级，取值如下： - 9代表高优先级。 - 6代表中优先级，默认为6。  暂时只支持6和9。 
         :type priority: int
         :param subtitle: 
@@ -104,12 +120,16 @@ class CreateTranscodingReq:
         self._input = None
         self._output = None
         self._trans_template_id = None
+        self._trans_template_list = None
         self._av_parameters = None
         self._additional_manifests = None
         self._output_filenames = None
         self._user_data = None
         self._watermarks = None
         self._thumbnail = None
+        self._thumbnails = None
+        self._image_sprites = None
+        self._pipeline_id = None
         self._priority = None
         self._subtitle = None
         self._encryption = None
@@ -126,6 +146,8 @@ class CreateTranscodingReq:
         self.output = output
         if trans_template_id is not None:
             self.trans_template_id = trans_template_id
+        if trans_template_list is not None:
+            self.trans_template_list = trans_template_list
         if av_parameters is not None:
             self.av_parameters = av_parameters
         if additional_manifests is not None:
@@ -138,6 +160,12 @@ class CreateTranscodingReq:
             self.watermarks = watermarks
         if thumbnail is not None:
             self.thumbnail = thumbnail
+        if thumbnails is not None:
+            self.thumbnails = thumbnails
+        if image_sprites is not None:
+            self.image_sprites = image_sprites
+        if pipeline_id is not None:
+            self.pipeline_id = pipeline_id
         if priority is not None:
             self.priority = priority
         if subtitle is not None:
@@ -214,6 +242,28 @@ class CreateTranscodingReq:
         :type trans_template_id: list[int]
         """
         self._trans_template_id = trans_template_id
+
+    @property
+    def trans_template_list(self):
+        r"""Gets the trans_template_list of this CreateTranscodingReq.
+
+        转码模板数组 
+
+        :return: The trans_template_list of this CreateTranscodingReq.
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.TransIdTemplate`]
+        """
+        return self._trans_template_list
+
+    @trans_template_list.setter
+    def trans_template_list(self, trans_template_list):
+        r"""Sets the trans_template_list of this CreateTranscodingReq.
+
+        转码模板数组 
+
+        :param trans_template_list: The trans_template_list of this CreateTranscodingReq.
+        :type trans_template_list: list[:class:`huaweicloudsdkmpc.v1.TransIdTemplate`]
+        """
+        self._trans_template_list = trans_template_list
 
     @property
     def av_parameters(self):
@@ -342,6 +392,72 @@ class CreateTranscodingReq:
         :type thumbnail: :class:`huaweicloudsdkmpc.v1.Thumbnail`
         """
         self._thumbnail = thumbnail
+
+    @property
+    def thumbnails(self):
+        r"""Gets the thumbnails of this CreateTranscodingReq.
+
+        多截图任务，数组，最多支持20个成员。 
+
+        :return: The thumbnails of this CreateTranscodingReq.
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.Thumbnail`]
+        """
+        return self._thumbnails
+
+    @thumbnails.setter
+    def thumbnails(self, thumbnails):
+        r"""Sets the thumbnails of this CreateTranscodingReq.
+
+        多截图任务，数组，最多支持20个成员。 
+
+        :param thumbnails: The thumbnails of this CreateTranscodingReq.
+        :type thumbnails: list[:class:`huaweicloudsdkmpc.v1.Thumbnail`]
+        """
+        self._thumbnails = thumbnails
+
+    @property
+    def image_sprites(self):
+        r"""Gets the image_sprites of this CreateTranscodingReq.
+
+        雪碧图参数，数组，最多支持20个成员。 
+
+        :return: The image_sprites of this CreateTranscodingReq.
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ImageSprite`]
+        """
+        return self._image_sprites
+
+    @image_sprites.setter
+    def image_sprites(self, image_sprites):
+        r"""Sets the image_sprites of this CreateTranscodingReq.
+
+        雪碧图参数，数组，最多支持20个成员。 
+
+        :param image_sprites: The image_sprites of this CreateTranscodingReq.
+        :type image_sprites: list[:class:`huaweicloudsdkmpc.v1.ImageSprite`]
+        """
+        self._image_sprites = image_sprites
+
+    @property
+    def pipeline_id(self):
+        r"""Gets the pipeline_id of this CreateTranscodingReq.
+
+        
+
+        :return: The pipeline_id of this CreateTranscodingReq.
+        :rtype: str
+        """
+        return self._pipeline_id
+
+    @pipeline_id.setter
+    def pipeline_id(self, pipeline_id):
+        r"""Sets the pipeline_id of this CreateTranscodingReq.
+
+        
+
+        :param pipeline_id: The pipeline_id of this CreateTranscodingReq.
+        :type pipeline_id: str
+        """
+        self._pipeline_id = pipeline_id
 
     @property
     def priority(self):

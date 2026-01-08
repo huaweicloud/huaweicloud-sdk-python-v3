@@ -41,8 +41,10 @@ class DatabaseVersionResult:
         self._hotfixes = None
         self.discriminator = None
 
-        self.software_version = software_version
-        self.hotfixes = hotfixes
+        if software_version is not None:
+            self.software_version = software_version
+        if hotfixes is not None:
+            self.hotfixes = hotfixes
 
     @property
     def software_version(self):

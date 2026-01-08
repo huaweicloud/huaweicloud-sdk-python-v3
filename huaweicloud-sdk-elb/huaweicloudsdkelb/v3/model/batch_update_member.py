@@ -81,7 +81,7 @@ class BatchUpdateMember:
         :type reason: :class:`huaweicloudsdkelb.v3.MemberHealthCheckFailedReason`
         :param status: **参数解释**：后端服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_status为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
         :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
-        :param member_type: **参数解释**：后端服务器的类型。  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        :param member_type: **参数解释**：后端服务器的类型。  **取值范围**： - ip：IP类型的member。 - instance：关联到ECS的member。
         :type member_type: str
         :param instance_id: **参数解释**：member关联的实例ID，空表示跨VPC场景的member。  **取值范围**：不涉及
         :type instance_id: str
@@ -384,7 +384,7 @@ class BatchUpdateMember:
     def member_type(self):
         r"""Gets the member_type of this BatchUpdateMember.
 
-        **参数解释**：后端服务器的类型。  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        **参数解释**：后端服务器的类型。  **取值范围**： - ip：IP类型的member。 - instance：关联到ECS的member。
 
         :return: The member_type of this BatchUpdateMember.
         :rtype: str
@@ -395,7 +395,7 @@ class BatchUpdateMember:
     def member_type(self, member_type):
         r"""Sets the member_type of this BatchUpdateMember.
 
-        **参数解释**：后端服务器的类型。  **取值范围**： - ip：跨VPC的member。 - instance：关联到ECS的member。
+        **参数解释**：后端服务器的类型。  **取值范围**： - ip：IP类型的member。 - instance：关联到ECS的member。
 
         :param member_type: The member_type of this BatchUpdateMember.
         :type member_type: str

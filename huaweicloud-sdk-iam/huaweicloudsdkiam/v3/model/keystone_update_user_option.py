@@ -47,7 +47,7 @@ class KeystoneUpdateUserOption:
         :type enabled: bool
         :param description: IAM用户新描述信息。
         :type description: str
-        :param pwd_status: IAM用户密码状态。true:需要修改密码,false:正常。
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
         :type pwd_status: bool
         """
         
@@ -188,7 +188,7 @@ class KeystoneUpdateUserOption:
     def pwd_status(self):
         r"""Gets the pwd_status of this KeystoneUpdateUserOption.
 
-        IAM用户密码状态。true:需要修改密码,false:正常。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :return: The pwd_status of this KeystoneUpdateUserOption.
         :rtype: bool
@@ -199,7 +199,7 @@ class KeystoneUpdateUserOption:
     def pwd_status(self, pwd_status):
         r"""Sets the pwd_status of this KeystoneUpdateUserOption.
 
-        IAM用户密码状态。true:需要修改密码,false:正常。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :param pwd_status: The pwd_status of this KeystoneUpdateUserOption.
         :type pwd_status: bool

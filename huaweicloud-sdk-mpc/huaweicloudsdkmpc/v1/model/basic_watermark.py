@@ -19,7 +19,9 @@ class BasicWatermark:
         'dy': 'str',
         'referpos': 'str',
         'timeline_start': 'str',
-        'timeline_duration': 'str'
+        'timeline_duration': 'str',
+        'random_time_min': 'str',
+        'random_time_max': 'str'
     }
 
     attribute_map = {
@@ -27,10 +29,12 @@ class BasicWatermark:
         'dy': 'dy',
         'referpos': 'referpos',
         'timeline_start': 'timeline_start',
-        'timeline_duration': 'timeline_duration'
+        'timeline_duration': 'timeline_duration',
+        'random_time_min': 'random_time_min',
+        'random_time_max': 'random_time_max'
     }
 
-    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None):
+    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, random_time_min=None, random_time_max=None):
         r"""BasicWatermark
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class BasicWatermark:
         :type timeline_start: str
         :param timeline_duration: 水印持续时间，与“timeline_start”配合使用。  取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值：ToEND。 
         :type timeline_duration: str
+        :param random_time_min: 轮转间隔时间最小值，单位：秒 
+        :type random_time_min: str
+        :param random_time_max: 轮转间隔时间最大值，单位：秒 
+        :type random_time_max: str
         """
         
         
@@ -54,6 +62,8 @@ class BasicWatermark:
         self._referpos = None
         self._timeline_start = None
         self._timeline_duration = None
+        self._random_time_min = None
+        self._random_time_max = None
         self.discriminator = None
 
         if dx is not None:
@@ -66,6 +76,10 @@ class BasicWatermark:
             self.timeline_start = timeline_start
         if timeline_duration is not None:
             self.timeline_duration = timeline_duration
+        if random_time_min is not None:
+            self.random_time_min = random_time_min
+        if random_time_max is not None:
+            self.random_time_max = random_time_max
 
     @property
     def dx(self):
@@ -176,6 +190,50 @@ class BasicWatermark:
         :type timeline_duration: str
         """
         self._timeline_duration = timeline_duration
+
+    @property
+    def random_time_min(self):
+        r"""Gets the random_time_min of this BasicWatermark.
+
+        轮转间隔时间最小值，单位：秒 
+
+        :return: The random_time_min of this BasicWatermark.
+        :rtype: str
+        """
+        return self._random_time_min
+
+    @random_time_min.setter
+    def random_time_min(self, random_time_min):
+        r"""Sets the random_time_min of this BasicWatermark.
+
+        轮转间隔时间最小值，单位：秒 
+
+        :param random_time_min: The random_time_min of this BasicWatermark.
+        :type random_time_min: str
+        """
+        self._random_time_min = random_time_min
+
+    @property
+    def random_time_max(self):
+        r"""Gets the random_time_max of this BasicWatermark.
+
+        轮转间隔时间最大值，单位：秒 
+
+        :return: The random_time_max of this BasicWatermark.
+        :rtype: str
+        """
+        return self._random_time_max
+
+    @random_time_max.setter
+    def random_time_max(self, random_time_max):
+        r"""Sets the random_time_max of this BasicWatermark.
+
+        轮转间隔时间最大值，单位：秒 
+
+        :param random_time_max: The random_time_max of this BasicWatermark.
+        :type random_time_max: str
+        """
+        self._random_time_max = random_time_max
 
     def to_dict(self):
         result = {}

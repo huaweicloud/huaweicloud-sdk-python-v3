@@ -77,11 +77,11 @@ class CreateDesktopPoolReq:
         :type size: int
         :param description: 桌面池描述。
         :type description: str
-        :param availability_zone: 可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
+        :param availability_zone: 可用分区。将桌面创建到指定的可用分区。
         :type availability_zone: str
         :param product_id: 套餐ID。
         :type product_id: str
-        :param flavor_id: 产品规格ID。可用区是边缘可用区时，必填此参数。
+        :param flavor_id: 产品规格ID。
         :type flavor_id: str
         :param image_type: 镜像类型。默认值为private。  - private：私有镜像。 - gold：公共镜像。
         :type image_type: str
@@ -270,7 +270,7 @@ class CreateDesktopPoolReq:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateDesktopPoolReq.
 
-        可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
+        可用分区。将桌面创建到指定的可用分区。
 
         :return: The availability_zone of this CreateDesktopPoolReq.
         :rtype: str
@@ -281,7 +281,7 @@ class CreateDesktopPoolReq:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateDesktopPoolReq.
 
-        可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
+        可用分区。将桌面创建到指定的可用分区。
 
         :param availability_zone: The availability_zone of this CreateDesktopPoolReq.
         :type availability_zone: str
@@ -314,7 +314,7 @@ class CreateDesktopPoolReq:
     def flavor_id(self):
         r"""Gets the flavor_id of this CreateDesktopPoolReq.
 
-        产品规格ID。可用区是边缘可用区时，必填此参数。
+        产品规格ID。
 
         :return: The flavor_id of this CreateDesktopPoolReq.
         :rtype: str
@@ -325,7 +325,7 @@ class CreateDesktopPoolReq:
     def flavor_id(self, flavor_id):
         r"""Sets the flavor_id of this CreateDesktopPoolReq.
 
-        产品规格ID。可用区是边缘可用区时，必填此参数。
+        产品规格ID。
 
         :param flavor_id: The flavor_id of this CreateDesktopPoolReq.
         :type flavor_id: str

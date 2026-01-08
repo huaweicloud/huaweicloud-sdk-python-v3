@@ -1,3 +1,1172 @@
+# 3.1.182 2026-01-08
+
+### HuaweiCloud SDK AS
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateScalingConfig**
+    - 请求参数变更
+      - `+ instance_config.cpu_options`
+  - **ListScalingConfigs**
+    - 响应参数变更
+      - `+ scaling_configurations.instance_config.cpu_options`
+  - **ShowScalingConfig**
+    - 响应参数变更
+      - `+ scaling_configuration.instance_config.cpu_options`
+
+### HuaweiCloud SDK CCE
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowNode**
+    - 响应参数变更
+      - `+ spec.extendParam.serverMetadataHttpTokens`
+  - **UpdateNode**
+    - 响应参数变更
+      - `+ spec.extendParam.serverMetadataHttpTokens`
+  - **DeleteNode**
+    - 响应参数变更
+      - `+ spec.extendParam.serverMetadataHttpTokens`
+  - **CreateNode**
+    - 请求参数变更
+      - `+ spec.extendParam.serverMetadataHttpTokens`
+    - 响应参数变更
+      - `+ spec.extendParam.serverMetadataHttpTokens`
+  - **ListNodes**
+    - 响应参数变更
+      - `+ items.spec.extendParam.serverMetadataHttpTokens`
+  - **ShowNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.extendParam.serverMetadataHttpTokens`
+  - **UpdateNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.extendParam.serverMetadataHttpTokens`
+  - **DeleteNodePool**
+    - 响应参数变更
+      - `+ spec.nodeTemplate.extendParam.serverMetadataHttpTokens`
+  - **UpgradeNodePool**
+    - 请求参数变更
+      - `+ spec.nodeTemplate.extendParam.serverMetadataHttpTokens`
+  - **CreateNodePool**
+    - 请求参数变更
+      - `+ spec.nodeTemplate.extendParam.serverMetadataHttpTokens`
+    - 响应参数变更
+      - `+ spec.nodeTemplate.extendParam.serverMetadataHttpTokens`
+  - **ListNodePools**
+    - 响应参数变更
+      - `+ items.spec.nodeTemplate.extendParam.serverMetadataHttpTokens`
+  - **ListHyperNodes**
+    - 响应参数变更
+      - `+ hyperNodeList.spec.nodeTemplate.extendParam.serverMetadataHttpTokens`
+
+### HuaweiCloud SDK CDM
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **StartJob**
+    - 响应参数变更
+      - `+ submissions.last-update-user`
+      - `- submissions.last-udpate-user`
+  - **ShowJobStatus**
+    - 响应参数变更
+      - `+ submissions.last-update-user`
+      - `- submissions.last-udpate-user`
+  - **ShowSubmissions**
+    - 响应参数变更
+      - `+ submissions.last-update-user`
+      - `- submissions.last-udpate-user`
+  - **CreateAndStartRandomClusterJob**
+    - 响应参数变更
+      - `+ submissions.last-update-user`
+      - `- submissions.last-udpate-user`
+
+### HuaweiCloud SDK CDN
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainStats**
+    - 响应参数变更
+      - `+ start_time`
+      - `+ stat_type`
+      - `+ end_time`
+      - `+ action`
+      - `+ interval`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListResourceGroup**
+    - 响应参数变更
+      - `+ resource_groups.resources.relation_id`
+      - `+ resource_groups.resources.namespace`
+      - `+ resource_groups.resources.dimensions`
+      - `+ resource_groups.resources.status`
+  - **ListEventDetail**
+    - 响应参数变更
+      - `+ event_info.detail.sub_event_type`
+
+### HuaweiCloud SDK CES
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListAlarmHistories**
+    - 请求参数变更
+      - `+ mask_status`
+  - **BatchListSpecifiedMetricData**
+    - 响应参数变更
+      - `+ data_points.dimensions.origin_value`
+
+### HuaweiCloud SDK Cloudtest
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`DownloadStepImageNew`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DLI
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowFlinkJob**
+    - 响应参数变更
+      - `+ job_detail.job_config.resource_config`
+      - `+ job_detail.job_config.resource_config_version`
+  - **ListFlinkJobs**
+    - 响应参数变更
+      - `+ job_list.jobs.job_config.resource_config`
+      - `+ job_list.jobs.job_config.resource_config_version`
+
+### HuaweiCloud SDK ELB
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `BatchDeleteLoadbalancers`
+    - `BatchDeleteCertificates`
+    - `BatchDeleteListeners`
+    - `BatchDeletePools`
+    - `UpdateUserDefinedDomainConfig`
+    - `UpdateSystemDefaultDomainConfig`
+    - `BatchEnableDomainIPs`
+    - `BatchDisableDomainIPs`
+    - `ListDomainIPs`
+    - `ListAllL7Rules`
+    - `CloneListener`
+    - `ChangeLoadbalancerTags`
+    - `ListLoadbalancerTags`
+    - `ShowLoadbalancerTags`
+    - `ChangeListenerTags`
+    - `ListListenerTags`
+    - `ShowListenerTags`
+    - `ShowLoadBalancerTopology`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListCertificates**
+    - 响应参数变更
+      - `+ certificates.enterprise_project_id`
+  - **CreateCertificate**
+    - 响应参数变更
+      - `+ certificate.enterprise_project_id`
+  - **ShowCertificate**
+    - 响应参数变更
+      - `+ certificate.enterprise_project_id`
+  - **UpdateCertificate**
+    - 响应参数变更
+      - `+ certificate.enterprise_project_id`
+  - **ListSecurityPolicies**
+    - 响应参数变更
+      - `+ security_policies.enterprise_project_id`
+  - **CreateSecurityPolicy**
+    - 响应参数变更
+      - `+ security_policy.enterprise_project_id`
+  - **ShowSecurityPolicy**
+    - 响应参数变更
+      - `+ security_policy.enterprise_project_id`
+  - **UpdateSecurityPolicy**
+    - 响应参数变更
+      - `+ security_policy.enterprise_project_id`
+  - **ListListeners**
+    - 响应参数变更
+      - `+ listeners.insert_headers.X-Forwarded-TLS-Protocol-alias`
+      - `+ listeners.insert_headers.X-Forwarded-TLS-Cipher-alias`
+      - `+ listeners.insert_headers.X-Forwarded-For-Processing-Mode`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-subjectdn-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-subjectdn-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-issuerdn-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-issuerdn-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-fingerprint-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-fingerprint-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-clientverify-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-clientverify-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-serialnumber-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-serialnumber-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-ciphers-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-ciphers-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-end-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Clientcert-end-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Tls-Alpn-Protocol-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Tls-Alpn-Protocol-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Tls-Sni-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Tls-Sni-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Tls-Ja3-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Tls-Ja3-alias`
+      - `+ listeners.insert_headers.X-Forwarded-Tls-Ja4-enable`
+      - `+ listeners.insert_headers.X-Forwarded-Tls-Ja4-alias`
+  - **CreateListener**
+    - 请求参数变更
+      - `+ listener.id`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol-alias`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher-alias`
+      - `+ listener.insert_headers.X-Forwarded-For-Processing-Mode`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-subjectdn-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-subjectdn-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-issuerdn-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-issuerdn-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-fingerprint-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-fingerprint-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-clientverify-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-clientverify-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-serialnumber-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-serialnumber-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-ciphers-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-ciphers-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-end-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-end-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Alpn-Protocol-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Alpn-Protocol-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Sni-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Sni-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja3-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja3-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja4-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja4-alias`
+    - 响应参数变更
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol-alias`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher-alias`
+      - `+ listener.insert_headers.X-Forwarded-For-Processing-Mode`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-subjectdn-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-subjectdn-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-issuerdn-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-issuerdn-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-fingerprint-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-fingerprint-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-clientverify-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-clientverify-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-serialnumber-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-serialnumber-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-ciphers-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-ciphers-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-end-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-end-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Alpn-Protocol-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Alpn-Protocol-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Sni-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Sni-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja3-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja3-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja4-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja4-alias`
+  - **ShowListener**
+    - 响应参数变更
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol-alias`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher-alias`
+      - `+ listener.insert_headers.X-Forwarded-For-Processing-Mode`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-subjectdn-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-subjectdn-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-issuerdn-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-issuerdn-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-fingerprint-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-fingerprint-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-clientverify-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-clientverify-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-serialnumber-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-serialnumber-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-ciphers-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-ciphers-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-end-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-end-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Alpn-Protocol-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Alpn-Protocol-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Sni-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Sni-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja3-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja3-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja4-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja4-alias`
+  - **UpdateListener**
+    - 请求参数变更
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol-alias`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher-alias`
+      - `+ listener.insert_headers.X-Forwarded-For-Processing-Mode`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-subjectdn-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-subjectdn-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-issuerdn-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-issuerdn-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-fingerprint-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-fingerprint-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-clientverify-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-clientverify-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-serialnumber-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-serialnumber-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-ciphers-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-ciphers-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-end-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-end-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Alpn-Protocol-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Alpn-Protocol-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Sni-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Sni-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja3-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja3-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja4-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja4-alias`
+    - 响应参数变更
+      - `+ listener.insert_headers.X-Forwarded-TLS-Protocol-alias`
+      - `+ listener.insert_headers.X-Forwarded-TLS-Cipher-alias`
+      - `+ listener.insert_headers.X-Forwarded-For-Processing-Mode`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-subjectdn-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-subjectdn-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-issuerdn-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-issuerdn-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-fingerprint-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-fingerprint-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-clientverify-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-clientverify-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-serialnumber-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-serialnumber-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-ciphers-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-ciphers-alias`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-end-enable`
+      - `+ listener.insert_headers.X-Forwarded-Clientcert-end-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Alpn-Protocol-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Alpn-Protocol-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Sni-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Sni-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja3-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja3-alias`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja4-enable`
+      - `+ listener.insert_headers.X-Forwarded-Tls-Ja4-alias`
+  - **CreatePool**
+    - 请求参数变更
+      - `+ pool.enterprise_project_id`
+  - **CreateMasterSlavePool**
+    - 请求参数变更
+      - `+ pool.enterprise_project_id`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTransaction**
+    - 请求参数变更
+      - `+ transaction_query_info`
+      - `- transaction_query_option`
+    - 响应参数变更
+      - `+ rows`
+      - `- rows_info`
+  - **ShowRedistributionParameters**
+    - 响应参数变更
+      - `+ expansion_parameters`
+      - `- redistribution_parameters`
+  - **ShowEpsRemainingQuota**
+    - 响应参数变更
+      - `+ eps_remaining_quotas`
+      - `- eps_quota_remaining`
+  - **ListSqlLimitTask**
+    - 响应参数变更
+      - `* limit_task_list.instance_id: object -> string`
+  - **ListEnhanceFullSqls**
+    - 请求参数变更
+      - `+ node_id`
+  - **ExportFullSqlList**
+    - 请求参数变更
+      - `+ node_id`
+  - **ListFullSqlSwitches**
+    - 响应参数变更
+      - `+ full_sql_switches`
+      - `- full_sql_switchs`
+      - `+ allowed_sql_types.category`
+      - `+ allowed_sql_types.prefixes`
+      - `+ allowed_sql_types.is_preset`
+      - `- allowed_sql_types.is_open`
+      - `- allowed_sql_types.begin_time`
+  - **ListSlowSqls**
+    - 响应参数变更
+      - `+ slow_sql_infos.db_name`
+      - `+ slow_sql_infos.schema_name`
+  - **ModifyHbaConf**
+    - 请求参数变更
+      - `+ before_conf.type`
+      - `+ before_conf.database`
+      - `+ before_conf.user`
+      - `+ before_conf.address`
+      - `+ before_conf.method`
+      - `* before_conf: object -> object<BeforeHbaConfOption>`
+      - `+ after_conf.type`
+      - `+ after_conf.database`
+      - `+ after_conf.user`
+      - `+ after_conf.address`
+      - `+ after_conf.method`
+      - `* after_conf: object -> object<AfterHbaConfOption>`
+  - **BatchSetBackupPolicy**
+    - 请求参数变更
+      - `* backup_policy: object<BackupPolicyInfo> -> object<BatchSetBackupPolicyOption>`
+  - **ListWaitEvent**
+    - 响应参数变更
+      - `* rows: object<WaitEventResult> -> list<WaitEventResult>`
+  - **ListHbaInfoHistory**
+    - 响应参数变更
+      - `+ hba_histories.id`
+  - **ListMetricDatas**
+    - 响应参数变更
+      - `+ instances.nodes.role`
+
+### HuaweiCloud SDK MPC
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateThumbnailsTask**
+    - 请求参数变更
+      - `+ thumbnail_para.amount`
+      - `+ thumbnail_para.threshold`
+  - **UpdateWatermarkTemplate**
+    - 请求参数变更
+      - `+ random_time_min`
+      - `+ random_time_max`
+  - **CreateWatermarkTemplate**
+    - 请求参数变更
+      - `+ random_time_min`
+      - `+ random_time_max`
+  - **ListWatermarkTemplate**
+    - 响应参数变更
+      - `+ templates.random_time_min`
+      - `+ templates.random_time_max`
+  - **ListRemuxTask**
+    - 响应参数变更
+      - `+ tasks.output_metadata.md5`
+      - `+ tasks.output_metadata.video.duration`
+      - `+ tasks.output_metadata.video.duration_ms`
+      - `+ tasks.output_metadata.video.rotate`
+      - `+ tasks.output_metadata.audio.duration`
+      - `+ tasks.output_metadata.audio.duration_ms`
+  - **CreateExtractTask**
+    - 响应参数变更
+      - `+ metadata.md5`
+      - `+ metadata.video.duration`
+      - `+ metadata.video.duration_ms`
+      - `+ metadata.video.rotate`
+      - `+ metadata.audio.duration`
+      - `+ metadata.audio.duration_ms`
+  - **ListExtractTask**
+    - 响应参数变更
+      - `+ tasks.metadata.md5`
+      - `+ tasks.metadata.video.duration`
+      - `+ tasks.metadata.video.duration_ms`
+      - `+ tasks.metadata.video.rotate`
+      - `+ tasks.metadata.audio.duration`
+      - `+ tasks.metadata.audio.duration_ms`
+  - **CreateMbTasksReport**
+    - 请求参数变更
+      - `+ parameter.metadata.md5`
+      - `+ parameter.metadata.video.duration`
+      - `+ parameter.metadata.video.duration_ms`
+      - `+ parameter.metadata.video.rotate`
+      - `+ parameter.metadata.audio.duration`
+      - `+ parameter.metadata.audio.duration_ms`
+  - **CreateTranscodingTask**
+    - 请求参数变更
+      - `+ trans_template_list`
+      - `+ thumbnails`
+      - `+ image_sprites`
+      - `+ pipeline_id`
+      - `+ av_parameters.output`
+      - `+ av_parameters.output_filename`
+      - `+ watermarks.image_watermark.random_time_min`
+      - `+ watermarks.image_watermark.random_time_max`
+      - `+ watermarks.text_watermark.random_time_min`
+      - `+ watermarks.text_watermark.random_time_max`
+      - `+ thumbnail.params.amount`
+      - `+ thumbnail.params.threshold`
+      - `+ video_process.fill_type`
+  - **ListTranscodingTask**
+    - 响应参数变更
+      - `+ task_array.thumbnails_info`
+      - `+ task_array.image_sprite_info`
+      - `+ task_array.av_parameters.output`
+      - `+ task_array.av_parameters.output_filename`
+      - `+ task_array.transcode_detail.input_file.md5`
+      - `+ task_array.transcode_detail.input_file.video_info.duration`
+      - `+ task_array.transcode_detail.input_file.video_info.duration_ms`
+      - `+ task_array.transcode_detail.input_file.video_info.rotate`
+      - `+ task_array.transcode_detail.input_file.audio_info.duration`
+      - `+ task_array.transcode_detail.input_file.audio_info.duration_ms`
+  - **ListTranscodeDetail**
+    - 响应参数变更
+      - `+ task_array.media_detail.origin_para.video.duration`
+      - `+ task_array.media_detail.origin_para.video.duration_ms`
+      - `+ task_array.media_detail.origin_para.video.rotate`
+      - `+ task_array.media_detail.origin_para.audio.duration`
+      - `+ task_array.media_detail.origin_para.audio.duration_ms`
+  - **CreateEditingJob**
+    - 请求参数变更
+      - `+ image_watermark_settings.random_time_min`
+      - `+ image_watermark_settings.random_time_max`
+      - `+ concats.av_parameters.output`
+      - `+ concats.av_parameters.output_filename`
+  - **ListEditingJob**
+    - 响应参数变更
+      - `+ jobs.output_file_info.meta_data.md5`
+      - `+ jobs.output_file_info.meta_data.video_info.duration`
+      - `+ jobs.output_file_info.meta_data.video_info.duration_ms`
+      - `+ jobs.output_file_info.meta_data.video_info.rotate`
+      - `+ jobs.output_file_info.meta_data.audio_info.duration`
+      - `+ jobs.output_file_info.meta_data.audio_info.duration_ms`
+      - `+ jobs.edit_task_req.image_watermark_settings.random_time_min`
+      - `+ jobs.edit_task_req.image_watermark_settings.random_time_max`
+      - `+ jobs.edit_task_req.concats.av_parameters.output`
+      - `+ jobs.edit_task_req.concats.av_parameters.output_filename`
+
+### HuaweiCloud SDK NAT
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPrivateDnats**
+    - 请求参数变更
+      - `- transit_ip_address`
+    - 响应参数变更
+      - `- dnat_rules.transit_ip_address`
+  - **CreatePrivateDnat**
+    - 响应参数变更
+      - `- dnat_rule.transit_ip_address`
+  - **ShowPrivateDnat**
+    - 响应参数变更
+      - `- dnat_rule.transit_ip_address`
+  - **UpdatePrivateDnat**
+    - 请求参数变更
+      - `- dnat_rule.transit_ip_address`
+    - 响应参数变更
+      - `- dnat_rule.transit_ip_address`
+
+### HuaweiCloud SDK RDS
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持接口`UpdateTimeZone`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListBackups**
+    - 响应参数变更
+      - `+ backups.min_data_volume_capacity_for_restore`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ShowQuota`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateShare**
+    - 请求参数变更
+      - `+ share.metadata.auto_create_security_group_rules`
+      - `+ share.metadata.vault_id`
+
+### HuaweiCloud SDK VOD
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 支持接口`ListCategoryInfo`、`ListAssetTaskInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPC
+
+- _接口版本_
+  - V3
+- _新增特性_
+  - 支持以下接口：
+    - `ListAddressGroupsDependency`
+    - `ListPorts`
+    - `ShowPort`
+    - `ListVirsubnets`
+    - `ShowVirsubnet`
+    - `ShowQuota`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **AddSecurityGroups**
+    - 响应参数变更
+      - `* port.extra_dhcp_opts: list<ExtraDhcpOpt> -> list<PortExtraDhcpOpt>`
+      - `* port.tags: list<ResourceTag> -> list<ResponseTag>`
+  - **RemoveSecurityGroups**
+    - 响应参数变更
+      - `* port.extra_dhcp_opts: list<ExtraDhcpOpt> -> list<PortExtraDhcpOpt>`
+      - `* port.tags: list<ResourceTag> -> list<ResponseTag>`
+
+### HuaweiCloud SDK VPN
+
+- _接口版本_
+  - V5
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListVpnConnections**
+    - 响应参数变更
+      - `+ vpn_connections.policy_rules.rule_index`
+  - **CreateVpnConnection**
+    - 请求参数变更
+      - `- vpn_connection.enable_health_check`
+      - `+ vpn_connection.policy_rules.rule_index`
+    - 响应参数变更
+      - `- vpn_connection.enable_health_check`
+      - `+ vpn_connection.policy_rules.rule_index`
+  - **BatchCreateVpnConnection**
+    - 请求参数变更
+      - `- vpn_connections.enable_health_check`
+      - `+ vpn_connections.policy_rules.rule_index`
+    - 响应参数变更
+      - `- vpn_connections.enable_health_check`
+      - `+ vpn_connections.policy_rules.rule_index`
+  - **ShowVpnConnection**
+    - 响应参数变更
+      - `+ vpn_connection.policy_rules.rule_index`
+  - **UpdateVpnConnection**
+    - 请求参数变更
+      - `+ vpn_connection.policy_rules.rule_index`
+    - 响应参数变更
+      - `+ vpn_connection.policy_rules.rule_index`
+
+### HuaweiCloud SDK WAF
+
+- _接口版本_
+  - V1
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateIgnoreRule**
+    - 请求参数变更
+      - `+ conditions.value_list_id`
+  - **BatchUpdateIgnoreRules**
+    - 请求参数变更
+      - `+ conditions.value_list_id`
+  - **CreateIgnoreRule**
+    - 请求参数变更
+      - `+ conditions.value_list_id`
+  - **BatchCreateIgnoreRule**
+    - 请求参数变更
+      - `+ conditions.value_list_id`
+
+### HuaweiCloud SDK Workspace
+
+- _接口版本_
+  - V2
+- _新增特性_
+  - 支持以下接口：
+    - `CheckSysprepInfo`
+    - `CheckDesktopImages`
+    - `ListInconsistentStatics`
+    - `ListDesktopPoolsByUsers`
+    - `ExportDesktopListNew`
+    - `ListDesktopDetachInfo`
+    - `ExecuteScriptByDesktopTag`
+    - `ShowHibernateType`
+    - `CreateResourcePackagesOrder`
+    - `ExportScheduledTasksRecords`
+    - `ExportTerminalsBindingDesktopsInfoNew`
+    - `ExportTerminalsBindingDesktopsTemplate`
+    - `BatchModifyQosVolumes`
+    - `ListServersByHostId`
+    - `ListHostsDetail`
+    - `UpdateHosts`
+    - `ListSecurityGroups`
+    - `ListVpcInfo`
+    - `ListSubnets`
+    - `ExportPolicyGroups`
+    - `CreatePolicyTemplate`
+    - `ImportPolicyGroups`
+    - `ImportIp`
+    - `ExportIpTemplate`
+    - `ListResourcePackages`
+    - `ExportUserGroupUsersNew`
+    - `ExportUsersNew`
+    - `ExportUserListTemplate`
+    - `ExportUsersTemplate`
+    - `ImportUserList`
+    - `ExportUserGroups`
+    - `ShowAssistAuthConfigApplyObjects`
+    - `UpdateAssistAuthConfigApplyObjects`
+    - `DownloadMetadata`
+    - `ValidateConfig`
+    - `ListCerts`
+    - `CreateCert`
+    - `ShowCertDetail`
+    - `DeleteCert`
+    - `SetCertStatus`
+    - `ExportCertPemFile`
+    - `ExportCertCrlFile`
+    - `ExportCertCsrFile`
+    - `ImportCert`
+    - `CheckEdgeSiteResources`
+    - `CheckEnterpriseId`
+    - `ListExportTasks`
+    - `DeleteExportTasks`
+    - `DownloadExportFile`
+    - `ExportAppUserAccessData`
+    - `ExportDesktopUsageMetricNew`
+    - `ExportUserUsageMetricNew`
+    - `ExportUserConnectionNew`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **RebuildDesktopPool**
+    - 请求参数变更
+      - `+ handle_type`
+      - `+ desktop_ids`
+      - `- order_id`
+  - **ExecuteDesktopPoolScript**
+    - 请求参数变更
+      - `+ desktop_ids`
+  - **BatchRebuildDesktopsSystemDisk**
+    - 请求参数变更
+      - `+ handle_type`
+  - **UpdateDesktopUsername**
+    - 请求参数变更
+      - `+ old_user_domain`
+      - `+ new_user_domain`
+  - **ExpandDesktopVolume**
+    - 响应参数变更
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- minProvisionTime`
+  - **ShowDesktopPoolDetail**
+    - 响应参数变更
+      - `+ vpc_id`
+      - `+ subnet_ids`
+      - `+ ou_name`
+      - `+ tags`
+      - `+ root_volume.iops`
+      - `+ root_volume.throughput`
+      - `+ autoscale_policy.min_retention`
+      - `+ autoscale_policy.idle_retention_duration`
+  - **UpdateDesktopPool**
+    - 请求参数变更
+      - `+ root_volume`
+      - `+ data_volumes`
+      - `+ vpc_id`
+      - `+ subnet_ids`
+      - `+ security_groups`
+      - `+ enterprise_project_id`
+      - `+ autoscale_policy.min_retention`
+      - `+ autoscale_policy.idle_retention_duration`
+  - **AddDesktopPoolVolumes**
+    - 请求参数变更
+      - `+ volumes.iops`
+      - `+ volumes.throughput`
+  - **DeleteDesktopPoolVolumes**
+    - 请求参数变更
+      - `+ volumes.iops`
+      - `+ volumes.throughput`
+  - **ExpandDesktopPoolVolumes**
+    - 请求参数变更
+      - `+ volumes.iops`
+      - `+ volumes.throughput`
+  - **ListDesktopPoolAuthorizedObjects**
+    - 响应参数变更
+      - `+ objects.domain`
+  - **CreateDesktopPoolAuthorizedObjects**
+    - 请求参数变更
+      - `+ action: enum value [CHANGE_PRIVILEGE]`
+  - **ResizeDesktop**
+    - 请求参数变更
+      - `+ desktop_pool_id`
+  - **DetachInstances**
+    - 响应参数变更
+      - `+ success_job_ids`
+  - **BatchAttachInstances**
+    - 请求参数变更
+      - `+ desktops.user_id`
+  - **ListProjectTags**
+    - 请求参数变更
+      - `+ value`
+  - **CreateDesktopBatchOrder**
+    - 请求参数变更
+      - `+ add_volume_param.handle_type`
+      - `+ add_volume_param.iops`
+      - `+ add_volume_param.throughput`
+      - `+ extend_volume_param.handle_type`
+      - `+ resize_param.handle_type`
+      - `+ change_image_param.handle_type`
+      - `+ change_image_param.image_type`
+      - `+ add_sub_resources_param.handle_type`
+      - `+ delete_sub_resources_param.handle_type`
+  - **CreateDesktopPoolChangeOrder**
+    - 请求参数变更
+      - `+ add_volume_param.handle_type`
+      - `+ add_volume_param.iops`
+      - `+ add_volume_param.throughput`
+      - `+ extend_volume_param.handle_type`
+      - `+ resize_param.handle_type`
+      - `+ change_image_param.handle_type`
+      - `+ change_image_param.image_type`
+      - `+ add_sub_resources_param.handle_type`
+      - `+ delete_sub_resources_param.handle_type`
+  - **ListDesktopSnapshot**
+    - 请求参数变更
+      - `+ desktop_ids`
+      - `+ desktop_names`
+      - `+ snapshot_names`
+  - **ListDesktopsStatistics**
+    - 请求参数变更
+      - `+ desktop_pool_ids`
+  - **ListTerminalsBindingDesktops**
+    - 请求参数变更
+      - `+ computer_names`
+      - `+ mac_list`
+  - **AddDesktopVolumes**
+    - 请求参数变更
+      - `* volumes.size: int32 -> int64`
+    - 响应参数变更
+      - `- maxProvisionTime`
+      - `- getJobEndpoint`
+      - `- periodicQueryTime`
+      - `- minProvisionTime`
+  - **ListUsersOfGroup**
+    - 响应参数变更
+      - `+ users.domain`
+  - **ListImages**
+    - 响应参数变更
+      - `+ images.kms_id`
+  - **ListAdOus**
+    - 请求参数变更
+      - `+ domain`
+  - **ListTargetOfPolicyGroup**
+    - 响应参数变更
+      - `+ targets.target_type: enum value [DESKTOP_TAG]`
+  - **BatchUpdateTargetOfPolicyGroup**
+    - 请求参数变更
+      - `+ add.target_type: enum value [DESKTOP_TAG]`
+  - **ListProducts**
+    - 响应参数变更
+      - `+ products.vram`
+  - **CreateDesktopUser**
+    - 请求参数变更
+      - `+ domain`
+  - **ListUsers**
+    - 请求参数变更
+      - `+ user_names`
+      - `+ domain`
+    - 响应参数变更
+      - `+ users.domain`
+      - `+ users.certificate_status`
+  - **BatchCreateUsers**
+    - 请求参数变更
+      - `+ users.domain`
+  - **ListLoginRecordsNew**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ records.enterprise_project_id`
+  - **CreateAgencies**
+    - 请求参数变更
+      - `+ action`
+  - **ListAgencies**
+    - 请求参数变更
+      - `+ action`
+      - `+ scene: enum value [WORKSPACE,CLOUD_GAME,CLOUD_STORAGE,SCREEN_RECORD]`
+    - 响应参数变更
+      - `+ existing_agencies.id`
+      - `+ existing_agencies.scene`
+      - `+ existing_agencies.permissions.should_have_system_permission_display_names`
+  - **CreateDesktopPool**
+    - 请求参数变更
+      - `+ root_volume.iops`
+      - `+ root_volume.throughput`
+      - `+ autoscale_policy.min_retention`
+      - `+ autoscale_policy.idle_retention_duration`
+  - **ListDesktopPools**
+    - 响应参数变更
+      - `+ vpc_id`
+      - `+ subnet_ids`
+      - `+ ou_name`
+      - `+ tags`
+      - `+ desktop_pools.subnet_ids`
+      - `+ desktop_pools.tags`
+      - `+ desktop_pools.ou_name`
+      - `+ desktop_pools.vpc_id`
+      - `+ desktop_pools.root_volume.iops`
+      - `+ desktop_pools.root_volume.throughput`
+      - `+ desktop_pools.autoscale_policy.min_retention`
+      - `+ desktop_pools.autoscale_policy.idle_retention_duration`
+  - **CreateDesktop**
+    - 请求参数变更
+      - `+ if_mount_old_desktop_disk`
+      - `* root_volume.size: int32 -> int64`
+      - `+ desktops.copy_volume_desktop_id`
+      - `+ desktops.copy_volume_ids`
+      - `+ desktops.if_delete_old_desktop`
+  - **ListDesktops**
+    - 响应参数变更
+      - `+ desktops.desktop_detail_type`
+      - `+ desktops.availability_zone`
+      - `+ desktops.connect_status`
+      - `+ desktops.attach_user_infos.domain`
+  - **BatchDetachInstances**
+    - 响应参数变更
+      - `+ success_job_ids`
+  - **AttachInstances**
+    - 请求参数变更
+      - `+ desktops.user_id`
+  - **BatchAssociateInstances**
+    - 请求参数变更
+      - `+ desktops.user_id`
+    - 响应参数变更
+      - `+ desktops_attach_infos.user_id`
+      - `+ desktops_attach_infos.attach_user_infos.domain`
+  - **ShowSubnetBandwidthControlList**
+    - 响应参数变更
+      - `+ control_list.attach_user_infos.domain`
+  - **EstimateDesktopPoolExtendVolume**
+    - 请求参数变更
+      - `+ handle_type`
+  - **ListUsedDesktopInfo**
+    - 请求参数变更
+      - `+ desktop_user_domain`
+  - **AddVolumes**
+    - 请求参数变更
+      - `* desktop_volumes.volumes.size: int32 -> int64`
+  - **ListVolumeProductInfo**
+    - 响应参数变更
+      - `+ volumes.iops`
+      - `+ volumes.throughput`
+  - **ShowAssistAuthConfig**
+    - 响应参数变更
+      - `+ otp_config_info.id`
+      - `+ otp_config_info.apply_objects`
+  - **UpdateAssistAuthMethodConfig**
+    - 请求参数变更
+      - `+ otp_config_info.id`
+      - `+ otp_config_info.apply_objects`
+  - **ListWorkspaces**
+    - 响应参数变更
+      - `+ ad_domains.cba_enabled`
+      - `+ ad_domains.certificate_id`
+  - **UpdateWorkspace**
+    - 请求参数变更
+      - `+ ad_info.cba_enabled`
+      - `+ ad_info.certificate_id`
+      - `+ ad_domains.cba_enabled`
+      - `+ ad_domains.certificate_id`
+  - **ApplyWorkspace**
+    - 请求参数变更
+      - `+ ad_domains.cba_enabled`
+      - `+ ad_domains.certificate_id`
+  - **ListDesktopUsageMetric**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ items.enterprise_project_id`
+  - **ListUserUsageMetric**
+    - 请求参数变更
+      - `+ enterprise_project_id`
+    - 响应参数变更
+      - `+ items.enterprise_project_id`
+  - **ListPoolDesktopsDetail**
+    - 请求参数变更
+      - `+ status`
+      - `+ user_name`
+      - `+ user_names`
+      - `+ sort_field`
+      - `+ sort_type`
+      - `+ computer_name`
+      - `+ computer_names`
+      - `+ desktop_ip`
+      - `+ desktop_id`
+      - `+ desktop_type`
+      - `+ tag`
+      - `+ user_attached`
+      - `+ enterprise_project_id`
+      - `+ image_id`
+      - `+ charge_mode`
+      - `+ in_maintenance_mode`
+      - `+ is_share_desktop`
+      - `+ subnet_id`
+      - `+ is_support_internet`
+      - `+ availability_zone`
+      - `+ inconsistent_type: enum value [PRODUCT_ID,IMAGE_ID,DISK_NUM,DISK_SIZE]`
+    - 响应参数变更
+      - `+ inconsistent_type`
+      - `- pool_desktops.resource_type`
+      - `+ pool_desktops.attach_user_infos.domain`
+      - `+ pool_desktops.root_volume.kms_id`
+      - `+ pool_desktops.root_volume.iops`
+      - `+ pool_desktops.root_volume.throughput`
+  - **ShowDesktopDetail**
+    - 响应参数变更
+      - `- desktop.resource_type`
+      - `+ desktop.attach_user_infos.domain`
+      - `+ desktop.root_volume.kms_id`
+      - `+ desktop.root_volume.iops`
+      - `+ desktop.root_volume.throughput`
+  - **ListDesktopsDetail**
+    - 请求参数变更
+      - `+ computer_names`
+    - 响应参数变更
+      - `- desktops.resource_type`
+      - `+ desktops.attach_user_infos.domain`
+      - `+ desktops.root_volume.kms_id`
+      - `+ desktops.root_volume.iops`
+      - `+ desktops.root_volume.throughput`
+  - **EstimateChangeImages**
+    - 请求参数变更
+      - `+ handle_type`
+      - `+ image_type`
+  - **EstimateDesktopPoolAddVolume**
+    - 请求参数变更
+      - `+ handle_type`
+      - `+ iops`
+      - `+ throughput`
+  - **EstimateDesktopPoolChangeImage**
+    - 请求参数变更
+      - `+ handle_type`
+      - `+ image_type`
+  - **EstimateDesktopPoolResize**
+    - 请求参数变更
+      - `+ handle_type`
+  - **EstimateAddResources**
+    - 请求参数变更
+      - `+ handle_type`
+  - **CreateDesktopOrder**
+    - 请求参数变更
+      - `+ agency_urn`
+      - `+ hour_package_resources.create_desktops.if_mount_old_desktop_disk`
+      - `* hour_package_resources.create_desktops.root_volume.size: int32 -> int64`
+      - `+ hour_package_resources.create_desktops.desktops.copy_volume_desktop_id`
+      - `+ hour_package_resources.create_desktops.desktops.copy_volume_ids`
+      - `+ hour_package_resources.create_desktops.desktops.if_delete_old_desktop`
+  - **ShowAuthConfig**
+    - 响应参数变更
+      - `+ is_multi_domain_authenticate_enabled`
+      - `+ saml2_auth_config`
+      - `+ id`
+  - **UpdateAuthMethodConfig**
+    - 请求参数变更
+      - `+ id`
+      - `+ is_multi_domain_authenticate_enabled`
+      - `+ saml2_auth_config`
+      - `+ auth_type: enum value [SAML2]`
+  - **CreateOrder**
+    - 请求参数变更
+      - `+ agency_urn`
+      - `+ resources.rebuild_desktops.handle_type`
+      - `* resources.add_volumes.volumes.size: int32 -> int64`
+      - `+ resources.create_desktops.if_mount_old_desktop_disk`
+      - `+ resources.create_desktops.desktops.copy_volume_desktop_id`
+      - `+ resources.create_desktops.desktops.copy_volume_ids`
+      - `+ resources.create_desktops.desktops.if_delete_old_desktop`
+      - `+ resources.create_desktop_pool.root_volume.iops`
+      - `+ resources.create_desktop_pool.root_volume.throughput`
+      - `+ resources.create_desktop_pool.autoscale_policy.min_retention`
+      - `+ resources.create_desktop_pool.autoscale_policy.idle_retention_duration`
+      - `+ resources.subscribe_user_sharer.users.domain`
+      - `+ resources.attach_desktops.desktops.user_id`
+  - **ListPolicyGroup**
+    - 响应参数变更
+      - `+ policy_groups.targets.target_type: enum value [DESKTOP_TAG]`
+  - **CreatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.targets.target_type: enum value [DESKTOP_TAG]`
+  - **ListPolicyDetailInfoById**
+    - 响应参数变更
+      - `+ policy_group.targets.target_type: enum value [DESKTOP_TAG]`
+  - **UpdatePolicyGroup**
+    - 请求参数变更
+      - `+ policy_group.targets.target_type: enum value [DESKTOP_TAG]`
+  - **ListPolicyGroupInfo**
+    - 请求参数变更
+      - `+ policy_group_names`
+    - 响应参数变更
+      - `+ policy_groups.targets.target_type: enum value [DESKTOP_TAG]`
+
 # 3.1.181 2025-12-25
 
 ### HuaweiCloud SDK BSS

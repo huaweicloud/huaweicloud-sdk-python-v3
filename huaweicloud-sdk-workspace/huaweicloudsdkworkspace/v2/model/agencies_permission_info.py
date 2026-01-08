@@ -16,15 +16,17 @@ class AgenciesPermissionInfo:
 
     openapi_types = {
         'system_permission_display_names': 'list[str]',
-        'wanted_system_permission_display_names': 'list[str]'
+        'wanted_system_permission_display_names': 'list[str]',
+        'should_have_system_permission_display_names': 'list[str]'
     }
 
     attribute_map = {
         'system_permission_display_names': 'system_permission_display_names',
-        'wanted_system_permission_display_names': 'wanted_system_permission_display_names'
+        'wanted_system_permission_display_names': 'wanted_system_permission_display_names',
+        'should_have_system_permission_display_names': 'should_have_system_permission_display_names'
     }
 
-    def __init__(self, system_permission_display_names=None, wanted_system_permission_display_names=None):
+    def __init__(self, system_permission_display_names=None, wanted_system_permission_display_names=None, should_have_system_permission_display_names=None):
         r"""AgenciesPermissionInfo
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class AgenciesPermissionInfo:
         :type system_permission_display_names: list[str]
         :param wanted_system_permission_display_names: 需要委托的权限项。
         :type wanted_system_permission_display_names: list[str]
+        :param should_have_system_permission_display_names: 目标委托的权限项。
+        :type should_have_system_permission_display_names: list[str]
         """
         
         
 
         self._system_permission_display_names = None
         self._wanted_system_permission_display_names = None
+        self._should_have_system_permission_display_names = None
         self.discriminator = None
 
         if system_permission_display_names is not None:
             self.system_permission_display_names = system_permission_display_names
         if wanted_system_permission_display_names is not None:
             self.wanted_system_permission_display_names = wanted_system_permission_display_names
+        if should_have_system_permission_display_names is not None:
+            self.should_have_system_permission_display_names = should_have_system_permission_display_names
 
     @property
     def system_permission_display_names(self):
@@ -89,6 +96,28 @@ class AgenciesPermissionInfo:
         :type wanted_system_permission_display_names: list[str]
         """
         self._wanted_system_permission_display_names = wanted_system_permission_display_names
+
+    @property
+    def should_have_system_permission_display_names(self):
+        r"""Gets the should_have_system_permission_display_names of this AgenciesPermissionInfo.
+
+        目标委托的权限项。
+
+        :return: The should_have_system_permission_display_names of this AgenciesPermissionInfo.
+        :rtype: list[str]
+        """
+        return self._should_have_system_permission_display_names
+
+    @should_have_system_permission_display_names.setter
+    def should_have_system_permission_display_names(self, should_have_system_permission_display_names):
+        r"""Sets the should_have_system_permission_display_names of this AgenciesPermissionInfo.
+
+        目标委托的权限项。
+
+        :param should_have_system_permission_display_names: The should_have_system_permission_display_names of this AgenciesPermissionInfo.
+        :type should_have_system_permission_display_names: list[str]
+        """
+        self._should_have_system_permission_display_names = should_have_system_permission_display_names
 
     def to_dict(self):
         result = {}

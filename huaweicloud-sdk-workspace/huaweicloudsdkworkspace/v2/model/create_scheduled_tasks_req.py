@@ -27,7 +27,14 @@ class CreateScheduledTasksReq:
         'gray_desktop_ids': 'list[str]',
         'gray_fail_threshold': 'int',
         'life_cycle_type': 'str',
-        'time_zone': 'str'
+        'time_zone': 'str',
+        'task_type': 'str',
+        'task_name': 'str',
+        'force_execute': 'bool',
+        'description': 'str',
+        'extra_params': 'str',
+        'apply_objects': 'list[ApplyObject]',
+        'wait_time': 'int'
     }
 
     attribute_map = {
@@ -43,10 +50,17 @@ class CreateScheduledTasksReq:
         'gray_desktop_ids': 'gray_desktop_ids',
         'gray_fail_threshold': 'gray_fail_threshold',
         'life_cycle_type': 'life_cycle_type',
-        'time_zone': 'time_zone'
+        'time_zone': 'time_zone',
+        'task_type': 'task_type',
+        'task_name': 'task_name',
+        'force_execute': 'force_execute',
+        'description': 'description',
+        'extra_params': 'extra_params',
+        'apply_objects': 'apply_objects',
+        'wait_time': 'wait_time'
     }
 
-    def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, life_cycle_type=None, time_zone=None):
+    def __init__(self, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, scheduled_date=None, scheduled_time=None, expire_time=None, gray_count=None, gray_desktop_ids=None, gray_fail_threshold=None, life_cycle_type=None, time_zone=None, task_type=None, task_name=None, force_execute=None, description=None, extra_params=None, apply_objects=None, wait_time=None):
         r"""CreateScheduledTasksReq
 
         The model defined in huaweicloud sdk
@@ -77,6 +91,20 @@ class CreateScheduledTasksReq:
         :type life_cycle_type: str
         :param time_zone: 时区。
         :type time_zone: str
+        :param task_type: 任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。
+        :type task_type: str
+        :param task_name: 任务名称。
+        :type task_name: str
+        :param force_execute: 是否强制执行，true表示强制执行，false表示不强制执行。
+        :type force_execute: bool
+        :param description: 描述。
+        :type description: str
+        :param extra_params: 扩展参数，json格式。
+        :type extra_params: str
+        :param apply_objects: 定时任务应用的对象列表。
+        :type apply_objects: list[:class:`huaweicloudsdkworkspace.v2.ApplyObject`]
+        :param wait_time: 触发式任务触发后，等待时长。
+        :type wait_time: int
         """
         
         
@@ -94,6 +122,13 @@ class CreateScheduledTasksReq:
         self._gray_fail_threshold = None
         self._life_cycle_type = None
         self._time_zone = None
+        self._task_type = None
+        self._task_name = None
+        self._force_execute = None
+        self._description = None
+        self._extra_params = None
+        self._apply_objects = None
+        self._wait_time = None
         self.discriminator = None
 
         if scheduled_type is not None:
@@ -122,6 +157,18 @@ class CreateScheduledTasksReq:
             self.life_cycle_type = life_cycle_type
         if time_zone is not None:
             self.time_zone = time_zone
+        self.task_type = task_type
+        self.task_name = task_name
+        if force_execute is not None:
+            self.force_execute = force_execute
+        if description is not None:
+            self.description = description
+        if extra_params is not None:
+            self.extra_params = extra_params
+        if apply_objects is not None:
+            self.apply_objects = apply_objects
+        if wait_time is not None:
+            self.wait_time = wait_time
 
     @property
     def scheduled_type(self):
@@ -408,6 +455,160 @@ class CreateScheduledTasksReq:
         :type time_zone: str
         """
         self._time_zone = time_zone
+
+    @property
+    def task_type(self):
+        r"""Gets the task_type of this CreateScheduledTasksReq.
+
+        任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。
+
+        :return: The task_type of this CreateScheduledTasksReq.
+        :rtype: str
+        """
+        return self._task_type
+
+    @task_type.setter
+    def task_type(self, task_type):
+        r"""Sets the task_type of this CreateScheduledTasksReq.
+
+        任务类型，可选值为： - START：开机。 - STOP：关机。 - REBOOT：重启。 - HIBERNATE：休眠。 - REBUILD：重建系统盘。 - EXECUTE_SCRIPT：执行脚本。 - CREATE_SNAPSHOT：创建快照。
+
+        :param task_type: The task_type of this CreateScheduledTasksReq.
+        :type task_type: str
+        """
+        self._task_type = task_type
+
+    @property
+    def task_name(self):
+        r"""Gets the task_name of this CreateScheduledTasksReq.
+
+        任务名称。
+
+        :return: The task_name of this CreateScheduledTasksReq.
+        :rtype: str
+        """
+        return self._task_name
+
+    @task_name.setter
+    def task_name(self, task_name):
+        r"""Sets the task_name of this CreateScheduledTasksReq.
+
+        任务名称。
+
+        :param task_name: The task_name of this CreateScheduledTasksReq.
+        :type task_name: str
+        """
+        self._task_name = task_name
+
+    @property
+    def force_execute(self):
+        r"""Gets the force_execute of this CreateScheduledTasksReq.
+
+        是否强制执行，true表示强制执行，false表示不强制执行。
+
+        :return: The force_execute of this CreateScheduledTasksReq.
+        :rtype: bool
+        """
+        return self._force_execute
+
+    @force_execute.setter
+    def force_execute(self, force_execute):
+        r"""Sets the force_execute of this CreateScheduledTasksReq.
+
+        是否强制执行，true表示强制执行，false表示不强制执行。
+
+        :param force_execute: The force_execute of this CreateScheduledTasksReq.
+        :type force_execute: bool
+        """
+        self._force_execute = force_execute
+
+    @property
+    def description(self):
+        r"""Gets the description of this CreateScheduledTasksReq.
+
+        描述。
+
+        :return: The description of this CreateScheduledTasksReq.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        r"""Sets the description of this CreateScheduledTasksReq.
+
+        描述。
+
+        :param description: The description of this CreateScheduledTasksReq.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def extra_params(self):
+        r"""Gets the extra_params of this CreateScheduledTasksReq.
+
+        扩展参数，json格式。
+
+        :return: The extra_params of this CreateScheduledTasksReq.
+        :rtype: str
+        """
+        return self._extra_params
+
+    @extra_params.setter
+    def extra_params(self, extra_params):
+        r"""Sets the extra_params of this CreateScheduledTasksReq.
+
+        扩展参数，json格式。
+
+        :param extra_params: The extra_params of this CreateScheduledTasksReq.
+        :type extra_params: str
+        """
+        self._extra_params = extra_params
+
+    @property
+    def apply_objects(self):
+        r"""Gets the apply_objects of this CreateScheduledTasksReq.
+
+        定时任务应用的对象列表。
+
+        :return: The apply_objects of this CreateScheduledTasksReq.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.ApplyObject`]
+        """
+        return self._apply_objects
+
+    @apply_objects.setter
+    def apply_objects(self, apply_objects):
+        r"""Sets the apply_objects of this CreateScheduledTasksReq.
+
+        定时任务应用的对象列表。
+
+        :param apply_objects: The apply_objects of this CreateScheduledTasksReq.
+        :type apply_objects: list[:class:`huaweicloudsdkworkspace.v2.ApplyObject`]
+        """
+        self._apply_objects = apply_objects
+
+    @property
+    def wait_time(self):
+        r"""Gets the wait_time of this CreateScheduledTasksReq.
+
+        触发式任务触发后，等待时长。
+
+        :return: The wait_time of this CreateScheduledTasksReq.
+        :rtype: int
+        """
+        return self._wait_time
+
+    @wait_time.setter
+    def wait_time(self, wait_time):
+        r"""Sets the wait_time of this CreateScheduledTasksReq.
+
+        触发式任务触发后，等待时长。
+
+        :param wait_time: The wait_time of this CreateScheduledTasksReq.
+        :type wait_time: int
+        """
+        self._wait_time = wait_time
 
     def to_dict(self):
         result = {}

@@ -32,10 +32,13 @@ class SimpleDesktopInfo:
         'in_maintenance_mode': 'bool',
         'share_resource_sku': 'str',
         'desktop_type': 'str',
+        'desktop_detail_type': 'str',
         'subnet_id': 'str',
         'bill_resource_id': 'str',
         'status': 'str',
-        'task_status': 'str'
+        'task_status': 'str',
+        'availability_zone': 'str',
+        'connect_status': 'str'
     }
 
     attribute_map = {
@@ -56,13 +59,16 @@ class SimpleDesktopInfo:
         'in_maintenance_mode': 'in_maintenance_mode',
         'share_resource_sku': 'share_resource_sku',
         'desktop_type': 'desktop_type',
+        'desktop_detail_type': 'desktop_detail_type',
         'subnet_id': 'subnet_id',
         'bill_resource_id': 'bill_resource_id',
         'status': 'status',
-        'task_status': 'task_status'
+        'task_status': 'task_status',
+        'availability_zone': 'availability_zone',
+        'connect_status': 'connect_status'
     }
 
-    def __init__(self, domain_id=None, project_id=None, desktop_id=None, computer_name=None, os_host_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, tags=None, in_maintenance_mode=None, share_resource_sku=None, desktop_type=None, subnet_id=None, bill_resource_id=None, status=None, task_status=None):
+    def __init__(self, domain_id=None, project_id=None, desktop_id=None, computer_name=None, os_host_name=None, created=None, ip_address=None, user_name=None, attach_user_infos=None, user_group=None, sid=None, ou_name=None, enterprise_project_id=None, tags=None, in_maintenance_mode=None, share_resource_sku=None, desktop_type=None, desktop_detail_type=None, subnet_id=None, bill_resource_id=None, status=None, task_status=None, availability_zone=None, connect_status=None):
         r"""SimpleDesktopInfo
 
         The model defined in huaweicloud sdk
@@ -101,6 +107,8 @@ class SimpleDesktopInfo:
         :type share_resource_sku: str
         :param desktop_type: 桌面类型。
         :type desktop_type: str
+        :param desktop_detail_type: 桌面详细类型
+        :type desktop_detail_type: str
         :param subnet_id: 桌面的子网ID。
         :type subnet_id: str
         :param bill_resource_id: 桌面计费资源ID。
@@ -109,6 +117,10 @@ class SimpleDesktopInfo:
         :type status: str
         :param task_status: 桌面的任务状态。
         :type task_status: str
+        :param availability_zone: 所属的可用区。
+        :type availability_zone: str
+        :param connect_status: 桌面的连接状态
+        :type connect_status: str
         """
         
         
@@ -130,10 +142,13 @@ class SimpleDesktopInfo:
         self._in_maintenance_mode = None
         self._share_resource_sku = None
         self._desktop_type = None
+        self._desktop_detail_type = None
         self._subnet_id = None
         self._bill_resource_id = None
         self._status = None
         self._task_status = None
+        self._availability_zone = None
+        self._connect_status = None
         self.discriminator = None
 
         if domain_id is not None:
@@ -170,6 +185,8 @@ class SimpleDesktopInfo:
             self.share_resource_sku = share_resource_sku
         if desktop_type is not None:
             self.desktop_type = desktop_type
+        if desktop_detail_type is not None:
+            self.desktop_detail_type = desktop_detail_type
         if subnet_id is not None:
             self.subnet_id = subnet_id
         if bill_resource_id is not None:
@@ -178,6 +195,10 @@ class SimpleDesktopInfo:
             self.status = status
         if task_status is not None:
             self.task_status = task_status
+        if availability_zone is not None:
+            self.availability_zone = availability_zone
+        if connect_status is not None:
+            self.connect_status = connect_status
 
     @property
     def domain_id(self):
@@ -554,6 +575,28 @@ class SimpleDesktopInfo:
         self._desktop_type = desktop_type
 
     @property
+    def desktop_detail_type(self):
+        r"""Gets the desktop_detail_type of this SimpleDesktopInfo.
+
+        桌面详细类型
+
+        :return: The desktop_detail_type of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._desktop_detail_type
+
+    @desktop_detail_type.setter
+    def desktop_detail_type(self, desktop_detail_type):
+        r"""Sets the desktop_detail_type of this SimpleDesktopInfo.
+
+        桌面详细类型
+
+        :param desktop_detail_type: The desktop_detail_type of this SimpleDesktopInfo.
+        :type desktop_detail_type: str
+        """
+        self._desktop_detail_type = desktop_detail_type
+
+    @property
     def subnet_id(self):
         r"""Gets the subnet_id of this SimpleDesktopInfo.
 
@@ -640,6 +683,50 @@ class SimpleDesktopInfo:
         :type task_status: str
         """
         self._task_status = task_status
+
+    @property
+    def availability_zone(self):
+        r"""Gets the availability_zone of this SimpleDesktopInfo.
+
+        所属的可用区。
+
+        :return: The availability_zone of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._availability_zone
+
+    @availability_zone.setter
+    def availability_zone(self, availability_zone):
+        r"""Sets the availability_zone of this SimpleDesktopInfo.
+
+        所属的可用区。
+
+        :param availability_zone: The availability_zone of this SimpleDesktopInfo.
+        :type availability_zone: str
+        """
+        self._availability_zone = availability_zone
+
+    @property
+    def connect_status(self):
+        r"""Gets the connect_status of this SimpleDesktopInfo.
+
+        桌面的连接状态
+
+        :return: The connect_status of this SimpleDesktopInfo.
+        :rtype: str
+        """
+        return self._connect_status
+
+    @connect_status.setter
+    def connect_status(self, connect_status):
+        r"""Sets the connect_status of this SimpleDesktopInfo.
+
+        桌面的连接状态
+
+        :param connect_status: The connect_status of this SimpleDesktopInfo.
+        :type connect_status: str
+        """
+        self._connect_status = connect_status
 
     def to_dict(self):
         result = {}

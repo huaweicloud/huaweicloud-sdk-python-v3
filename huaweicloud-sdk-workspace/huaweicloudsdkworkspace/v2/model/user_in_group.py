@@ -17,6 +17,7 @@ class UserInGroup:
     openapi_types = {
         'id': 'str',
         'user_name': 'str',
+        'domain': 'str',
         'user_email': 'str',
         'user_phone': 'str',
         'total_desktops': 'int',
@@ -27,6 +28,7 @@ class UserInGroup:
     attribute_map = {
         'id': 'id',
         'user_name': 'user_name',
+        'domain': 'domain',
         'user_email': 'user_email',
         'user_phone': 'user_phone',
         'total_desktops': 'total_desktops',
@@ -34,7 +36,7 @@ class UserInGroup:
         'description': 'description'
     }
 
-    def __init__(self, id=None, user_name=None, user_email=None, user_phone=None, total_desktops=None, enterprise_project_id=None, description=None):
+    def __init__(self, id=None, user_name=None, domain=None, user_email=None, user_phone=None, total_desktops=None, enterprise_project_id=None, description=None):
         r"""UserInGroup
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class UserInGroup:
         :type id: str
         :param user_name: 桌面用户名。
         :type user_name: str
+        :param domain: 用户所属域名。
+        :type domain: str
         :param user_email: 用户邮箱。
         :type user_email: str
         :param user_phone: 用户手机号。
@@ -59,6 +63,7 @@ class UserInGroup:
 
         self._id = None
         self._user_name = None
+        self._domain = None
         self._user_email = None
         self._user_phone = None
         self._total_desktops = None
@@ -70,6 +75,8 @@ class UserInGroup:
             self.id = id
         if user_name is not None:
             self.user_name = user_name
+        if domain is not None:
+            self.domain = domain
         if user_email is not None:
             self.user_email = user_email
         if user_phone is not None:
@@ -124,6 +131,28 @@ class UserInGroup:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this UserInGroup.
+
+        用户所属域名。
+
+        :return: The domain of this UserInGroup.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this UserInGroup.
+
+        用户所属域名。
+
+        :param domain: The domain of this UserInGroup.
+        :type domain: str
+        """
+        self._domain = domain
 
     @property
     def user_email(self):

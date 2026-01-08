@@ -63,19 +63,19 @@ class NatGatewaySnatRuleResponseBody:
         :type nat_gateway_id: str
         :param cidr: cidr，可以是网段或者主机格式，与network_id参数二选一。 Source_type&#x3D;0时，cidr必须是vpc 子网网段的子集(不能相等）; Source_type&#x3D;1时，cidr必须指定专线侧网段。
         :type cidr: str
-        :param source_type: 0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
+        :param source_type: 资源类型。 取值范围： - 0：VPC侧，可以指定network_id 或者cidr - 1：专线侧，只能指定cidr 不输入默认为0（VPC）
         :type source_type: int
         :param floating_ip_id: 功能说明：弹性公网IP的id，多个弹性公网IP使用逗号分隔。 取值范围：最大长度4096字节。
         :type floating_ip_id: str
         :param description: SNAT规则的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param status: SNAT规则的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;EIP_FREEZED\&quot;：EIP冻结 \&quot;INACTIVE\&quot;：不可用
+        :param status: SNAT规则的状态。 取值为：  - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - EIP_FREEZED: EIP冻结 - INACTIVE: 不可用
         :type status: str
         :param created_at: SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
         :type created_at: str
         :param network_id: 规则使用的网络id。与cidr参数二选一。
         :type network_id: str
-        :param admin_state_up: 解冻/冻结状态。 取值范围： - \&quot;true\&quot;：解冻 - \&quot;false\&quot;：冻结
+        :param admin_state_up: 解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
         :type admin_state_up: bool
         :param floating_ip_address: 功能说明：弹性公网IP，多个弹性公网IP使用逗号分隔。
         :type floating_ip_address: str
@@ -214,7 +214,7 @@ class NatGatewaySnatRuleResponseBody:
     def source_type(self):
         r"""Gets the source_type of this NatGatewaySnatRuleResponseBody.
 
-        0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
+        资源类型。 取值范围： - 0：VPC侧，可以指定network_id 或者cidr - 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
         :return: The source_type of this NatGatewaySnatRuleResponseBody.
         :rtype: int
@@ -225,7 +225,7 @@ class NatGatewaySnatRuleResponseBody:
     def source_type(self, source_type):
         r"""Sets the source_type of this NatGatewaySnatRuleResponseBody.
 
-        0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
+        资源类型。 取值范围： - 0：VPC侧，可以指定network_id 或者cidr - 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
         :param source_type: The source_type of this NatGatewaySnatRuleResponseBody.
         :type source_type: int
@@ -280,7 +280,7 @@ class NatGatewaySnatRuleResponseBody:
     def status(self):
         r"""Gets the status of this NatGatewaySnatRuleResponseBody.
 
-        SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
+        SNAT规则的状态。 取值为：  - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - EIP_FREEZED: EIP冻结 - INACTIVE: 不可用
 
         :return: The status of this NatGatewaySnatRuleResponseBody.
         :rtype: str
@@ -291,7 +291,7 @@ class NatGatewaySnatRuleResponseBody:
     def status(self, status):
         r"""Sets the status of this NatGatewaySnatRuleResponseBody.
 
-        SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
+        SNAT规则的状态。 取值为：  - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - EIP_FREEZED: EIP冻结 - INACTIVE: 不可用
 
         :param status: The status of this NatGatewaySnatRuleResponseBody.
         :type status: str
@@ -346,7 +346,7 @@ class NatGatewaySnatRuleResponseBody:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this NatGatewaySnatRuleResponseBody.
 
-        解冻/冻结状态。 取值范围： - \"true\"：解冻 - \"false\"：冻结
+        解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
 
         :return: The admin_state_up of this NatGatewaySnatRuleResponseBody.
         :rtype: bool
@@ -357,7 +357,7 @@ class NatGatewaySnatRuleResponseBody:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this NatGatewaySnatRuleResponseBody.
 
-        解冻/冻结状态。 取值范围： - \"true\"：解冻 - \"false\"：冻结
+        解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
 
         :param admin_state_up: The admin_state_up of this NatGatewaySnatRuleResponseBody.
         :type admin_state_up: bool

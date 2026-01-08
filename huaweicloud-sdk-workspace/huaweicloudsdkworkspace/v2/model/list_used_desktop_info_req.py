@@ -20,6 +20,7 @@ class ListUsedDesktopInfoReq:
         'end_time': 'str',
         'group_by_type': 'str',
         'desktop_username': 'str',
+        'desktop_user_domain': 'str',
         'offset': 'int',
         'limit': 'int'
     }
@@ -30,11 +31,12 @@ class ListUsedDesktopInfoReq:
         'end_time': 'end_time',
         'group_by_type': 'group_by_type',
         'desktop_username': 'desktop_username',
+        'desktop_user_domain': 'desktop_user_domain',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, desktop_ids=None, start_time=None, end_time=None, group_by_type=None, desktop_username=None, offset=None, limit=None):
+    def __init__(self, desktop_ids=None, start_time=None, end_time=None, group_by_type=None, desktop_username=None, desktop_user_domain=None, offset=None, limit=None):
         r"""ListUsedDesktopInfoReq
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ListUsedDesktopInfoReq:
         :type group_by_type: str
         :param desktop_username: 若传桌面的用户名，则查询使用时间只有该用户的使用时间。
         :type desktop_username: str
+        :param desktop_user_domain: 桌面的用户所属域。默认为主域。
+        :type desktop_user_domain: str
         :param offset: 从查询结果中的第几条数据开始返回,用于分页查询，取值范围0-2147483647，默认从0开始。
         :type offset: int
         :param limit: 查询结果中想要返回的信息条目数量,用于分页查询，取值范围0-100，默认值100。
@@ -62,6 +66,7 @@ class ListUsedDesktopInfoReq:
         self._end_time = None
         self._group_by_type = None
         self._desktop_username = None
+        self._desktop_user_domain = None
         self._offset = None
         self._limit = None
         self.discriminator = None
@@ -76,6 +81,8 @@ class ListUsedDesktopInfoReq:
             self.group_by_type = group_by_type
         if desktop_username is not None:
             self.desktop_username = desktop_username
+        if desktop_user_domain is not None:
+            self.desktop_user_domain = desktop_user_domain
         if offset is not None:
             self.offset = offset
         if limit is not None:
@@ -190,6 +197,28 @@ class ListUsedDesktopInfoReq:
         :type desktop_username: str
         """
         self._desktop_username = desktop_username
+
+    @property
+    def desktop_user_domain(self):
+        r"""Gets the desktop_user_domain of this ListUsedDesktopInfoReq.
+
+        桌面的用户所属域。默认为主域。
+
+        :return: The desktop_user_domain of this ListUsedDesktopInfoReq.
+        :rtype: str
+        """
+        return self._desktop_user_domain
+
+    @desktop_user_domain.setter
+    def desktop_user_domain(self, desktop_user_domain):
+        r"""Sets the desktop_user_domain of this ListUsedDesktopInfoReq.
+
+        桌面的用户所属域。默认为主域。
+
+        :param desktop_user_domain: The desktop_user_domain of this ListUsedDesktopInfoReq.
+        :type desktop_user_domain: str
+        """
+        self._desktop_user_domain = desktop_user_domain
 
     @property
     def offset(self):

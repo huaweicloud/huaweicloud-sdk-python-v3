@@ -15,6 +15,7 @@ class HbaHistoryResult:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'status': 'str',
         'time': 'datetime',
         'fail_reason': 'str',
@@ -23,6 +24,7 @@ class HbaHistoryResult:
     }
 
     attribute_map = {
+        'id': 'id',
         'status': 'status',
         'time': 'time',
         'fail_reason': 'fail_reason',
@@ -30,11 +32,13 @@ class HbaHistoryResult:
         'after_confs': 'after_confs'
     }
 
-    def __init__(self, status=None, time=None, fail_reason=None, before_confs=None, after_confs=None):
+    def __init__(self, id=None, status=None, time=None, fail_reason=None, before_confs=None, after_confs=None):
         r"""HbaHistoryResult
 
         The model defined in huaweicloud sdk
 
+        :param id: **参数解释**: 客户端接入认证修改记录的ID。 **取值范围**: 不涉及。
+        :type id: str
         :param status: **参数解释**: 修改结果。 **取值范围**:  - success：已生效。  - failed：未生效。  - etting：设置中。
         :type status: str
         :param time: **参数解释**: 修改时间。 **取值范围**: 不涉及。
@@ -49,6 +53,7 @@ class HbaHistoryResult:
         
         
 
+        self._id = None
         self._status = None
         self._time = None
         self._fail_reason = None
@@ -56,6 +61,8 @@ class HbaHistoryResult:
         self._after_confs = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if status is not None:
             self.status = status
         if time is not None:
@@ -66,6 +73,28 @@ class HbaHistoryResult:
             self.before_confs = before_confs
         if after_confs is not None:
             self.after_confs = after_confs
+
+    @property
+    def id(self):
+        r"""Gets the id of this HbaHistoryResult.
+
+        **参数解释**: 客户端接入认证修改记录的ID。 **取值范围**: 不涉及。
+
+        :return: The id of this HbaHistoryResult.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this HbaHistoryResult.
+
+        **参数解释**: 客户端接入认证修改记录的ID。 **取值范围**: 不涉及。
+
+        :param id: The id of this HbaHistoryResult.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def status(self):

@@ -81,7 +81,7 @@ class Domains:
         :type sources: list[:class:`huaweicloudsdkcdn.v2.Sources`]
         :param domain_origin_host: 
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v2.DomainOriginHost`
-        :param https_status: 是否开启HTTPS加速。
+        :param https_status: 是否开启HTTPS加速。取值意义： - 0：未开启 - 1：开启
         :type https_status: int
         :param create_time: 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
         :type create_time: int
@@ -95,11 +95,11 @@ class Domains:
         :type auto_refresh_preheat: int
         :param service_area: 华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
         :type service_area: str
-        :param range_status: Range回源状态。
+        :param range_status: Range回源状态。取值意义： - on：开启 - off：关闭
         :type range_status: str
-        :param follow_status: 回源跟随状态。
+        :param follow_status: 回源跟随状态。取值意义： - on：开启 - off：关闭
         :type follow_status: str
-        :param origin_status: 是否暂停源站回源（off代表关闭 on代表开启）。
+        :param origin_status: 是否暂停源站回源。取值意义： - on：开启 - off：关闭
         :type origin_status: str
         :param banned_reason: 域名禁用原因。
         :type banned_reason: str
@@ -333,7 +333,7 @@ class Domains:
     def https_status(self):
         r"""Gets the https_status of this Domains.
 
-        是否开启HTTPS加速。
+        是否开启HTTPS加速。取值意义： - 0：未开启 - 1：开启
 
         :return: The https_status of this Domains.
         :rtype: int
@@ -344,7 +344,7 @@ class Domains:
     def https_status(self, https_status):
         r"""Sets the https_status of this Domains.
 
-        是否开启HTTPS加速。
+        是否开启HTTPS加速。取值意义： - 0：未开启 - 1：开启
 
         :param https_status: The https_status of this Domains.
         :type https_status: int
@@ -487,7 +487,7 @@ class Domains:
     def range_status(self):
         r"""Gets the range_status of this Domains.
 
-        Range回源状态。
+        Range回源状态。取值意义： - on：开启 - off：关闭
 
         :return: The range_status of this Domains.
         :rtype: str
@@ -498,7 +498,7 @@ class Domains:
     def range_status(self, range_status):
         r"""Sets the range_status of this Domains.
 
-        Range回源状态。
+        Range回源状态。取值意义： - on：开启 - off：关闭
 
         :param range_status: The range_status of this Domains.
         :type range_status: str
@@ -509,7 +509,7 @@ class Domains:
     def follow_status(self):
         r"""Gets the follow_status of this Domains.
 
-        回源跟随状态。
+        回源跟随状态。取值意义： - on：开启 - off：关闭
 
         :return: The follow_status of this Domains.
         :rtype: str
@@ -520,7 +520,7 @@ class Domains:
     def follow_status(self, follow_status):
         r"""Sets the follow_status of this Domains.
 
-        回源跟随状态。
+        回源跟随状态。取值意义： - on：开启 - off：关闭
 
         :param follow_status: The follow_status of this Domains.
         :type follow_status: str
@@ -531,7 +531,7 @@ class Domains:
     def origin_status(self):
         r"""Gets the origin_status of this Domains.
 
-        是否暂停源站回源（off代表关闭 on代表开启）。
+        是否暂停源站回源。取值意义： - on：开启 - off：关闭
 
         :return: The origin_status of this Domains.
         :rtype: str
@@ -542,7 +542,7 @@ class Domains:
     def origin_status(self, origin_status):
         r"""Sets the origin_status of this Domains.
 
-        是否暂停源站回源（off代表关闭 on代表开启）。
+        是否暂停源站回源。取值意义： - on：开启 - off：关闭
 
         :param origin_status: The origin_status of this Domains.
         :type origin_status: str

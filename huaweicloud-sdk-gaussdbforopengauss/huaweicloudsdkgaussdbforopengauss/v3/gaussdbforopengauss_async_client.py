@@ -14716,7 +14716,7 @@ class GaussDBforopenGaussAsyncClient(Client):
         return http_info
 
     def list_asp_infos_async(self, request):
-        r"""查询asp采集结果
+        r"""查询ASP采集结果
 
         查询ASP采集结果。
         

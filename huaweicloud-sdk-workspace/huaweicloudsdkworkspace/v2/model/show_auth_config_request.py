@@ -27,7 +27,7 @@ class ShowAuthConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param auth_type: 认证类型。LOCAL_PASSWORD：本地密码认证模式，KERBEROS：Windows AD认证模式，LDAP：第三方LDAP模式，CLIENT_TOKEN：金审UKEY客户端Token认证模式，OAUTH2：第三方单点登录模式。
+        :param auth_type: 认证类型。LOCAL_PASSWORD：本地密码认证模式，KERBEROS：Windows AD认证模式，LDAP：第三方LDAP模式，CLIENT_TOKEN：金审UKEY客户端Token认证模式，OAUTH2：第三方单点登录模式，SAML2：SAML 2.0 认证。
         :type auth_type: str
         """
         
@@ -43,7 +43,7 @@ class ShowAuthConfigRequest:
     def auth_type(self):
         r"""Gets the auth_type of this ShowAuthConfigRequest.
 
-        认证类型。LOCAL_PASSWORD：本地密码认证模式，KERBEROS：Windows AD认证模式，LDAP：第三方LDAP模式，CLIENT_TOKEN：金审UKEY客户端Token认证模式，OAUTH2：第三方单点登录模式。
+        认证类型。LOCAL_PASSWORD：本地密码认证模式，KERBEROS：Windows AD认证模式，LDAP：第三方LDAP模式，CLIENT_TOKEN：金审UKEY客户端Token认证模式，OAUTH2：第三方单点登录模式，SAML2：SAML 2.0 认证。
 
         :return: The auth_type of this ShowAuthConfigRequest.
         :rtype: str
@@ -54,7 +54,7 @@ class ShowAuthConfigRequest:
     def auth_type(self, auth_type):
         r"""Sets the auth_type of this ShowAuthConfigRequest.
 
-        认证类型。LOCAL_PASSWORD：本地密码认证模式，KERBEROS：Windows AD认证模式，LDAP：第三方LDAP模式，CLIENT_TOKEN：金审UKEY客户端Token认证模式，OAUTH2：第三方单点登录模式。
+        认证类型。LOCAL_PASSWORD：本地密码认证模式，KERBEROS：Windows AD认证模式，LDAP：第三方LDAP模式，CLIENT_TOKEN：金审UKEY客户端Token认证模式，OAUTH2：第三方单点登录模式，SAML2：SAML 2.0 认证。
 
         :param auth_type: The auth_type of this ShowAuthConfigRequest.
         :type auth_type: str

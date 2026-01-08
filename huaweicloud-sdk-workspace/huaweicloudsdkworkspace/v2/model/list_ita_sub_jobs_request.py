@@ -39,7 +39,7 @@ class ListItaSubJobsRequest:
 
         :param status: 任务状态 - SUCCESS：成功。 - RUNNING：运行中。 - FAILED：失败。 - WAITING：等待。
         :type status: str
-        :param job_id: 任务ID。 “job_type”与“job_id”建议至少填写一个
+        :param job_id: 任务ID。 “job_type”与“job_id”建议至少填写一个。
         :type job_id: str
         :param job_type: 任务类型。 “job_type”与“job_id”建议至少填写一个  - createDesktops：创建桌面任务。  - applyWorkspace：开通云桌面服务。  - cancelWorkspace：注销云桌面服务。  - expandVolumes: 扩容磁盘。  - addVolumes: 添加磁盘。  - rebuildDesktops：重建桌面系统盘。  - createSnapshot：创建磁盘快照。  - deleteSnapshot：删除磁盘快照。  - deleteDesktops：删除桌面。  - desktopRejoinDomain：桌面重新加域。  - operateDesktops：操作桌面。  - restoreDesktopBySnapshot：使用快照恢复桌面。  - desktopToImage：桌面转镜像。  - attachDesktops：分配桌面。  - deleteVolumes：删除桌面磁盘（数据盘）。  - createWksSnapshot：创建快照。  - deleteWksSnapshot：删除快照。    - createDesktopPool：创建桌面池。  - expandDesktopPool：扩容桌面池。   - deleteDesktopPoolVolumes：桌面池删除桌面磁盘（数据盘）。  - rebuildDesktopPool：桌面池重建系统盘。  - addDesktopPoolVolumes：桌面池添加磁盘。  - detachDesktops：解绑桌面池桌面。  - attachDesktopPool：分配桌面池桌面。  - batchDetachDesktops：批量解绑桌面用户。  - executeDesktopsAction：桌面操作。  - changeDesktopNetwork：桌面切换网络。  - batchChangeDesktopNetwork：桌面切换网络。
         :type job_type: str
@@ -100,7 +100,7 @@ class ListItaSubJobsRequest:
     def job_id(self):
         r"""Gets the job_id of this ListItaSubJobsRequest.
 
-        任务ID。 “job_type”与“job_id”建议至少填写一个
+        任务ID。 “job_type”与“job_id”建议至少填写一个。
 
         :return: The job_id of this ListItaSubJobsRequest.
         :rtype: str
@@ -111,7 +111,7 @@ class ListItaSubJobsRequest:
     def job_id(self, job_id):
         r"""Sets the job_id of this ListItaSubJobsRequest.
 
-        任务ID。 “job_type”与“job_id”建议至少填写一个
+        任务ID。 “job_type”与“job_id”建议至少填写一个。
 
         :param job_id: The job_id of this ListItaSubJobsRequest.
         :type job_id: str

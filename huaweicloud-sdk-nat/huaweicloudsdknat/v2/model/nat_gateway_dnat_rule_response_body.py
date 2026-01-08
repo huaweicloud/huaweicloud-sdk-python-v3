@@ -81,9 +81,9 @@ class NatGatewayDnatRuleResponseBody:
         :type floating_ip_address: str
         :param external_service_port: Floatingip对外提供服务的端口号。 取值范围：0~65535。
         :type external_service_port: int
-        :param status: DNAT规则的状态。 取值为： \&quot;ACTIVE\&quot;: 可用 \&quot;PENDING_CREATE\&quot;：创建中 \&quot;PENDING_UPDATE\&quot;：更新中 \&quot;PENDING_DELETE\&quot;：删除中 \&quot;EIP_FREEZED\&quot;：EIP冻结 \&quot;INACTIVE\&quot;：不可用
+        :param status: DNAT规则的状态。 取值为： - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - EIP_FREEZED: EIP冻结 - INACTIVE: 不可用
         :type status: str
-        :param admin_state_up: 解冻/冻结状态。 取值范围： − “true”： 解冻 − “false”： 冻结 
+        :param admin_state_up: 解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结 
         :type admin_state_up: bool
         :param internal_service_port_range: 虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
         :type internal_service_port_range: str
@@ -368,7 +368,7 @@ class NatGatewayDnatRuleResponseBody:
     def status(self):
         r"""Gets the status of this NatGatewayDnatRuleResponseBody.
 
-        DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
+        DNAT规则的状态。 取值为： - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - EIP_FREEZED: EIP冻结 - INACTIVE: 不可用
 
         :return: The status of this NatGatewayDnatRuleResponseBody.
         :rtype: str
@@ -379,7 +379,7 @@ class NatGatewayDnatRuleResponseBody:
     def status(self, status):
         r"""Sets the status of this NatGatewayDnatRuleResponseBody.
 
-        DNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
+        DNAT规则的状态。 取值为： - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - EIP_FREEZED: EIP冻结 - INACTIVE: 不可用
 
         :param status: The status of this NatGatewayDnatRuleResponseBody.
         :type status: str
@@ -390,7 +390,7 @@ class NatGatewayDnatRuleResponseBody:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this NatGatewayDnatRuleResponseBody.
 
-        解冻/冻结状态。 取值范围： − “true”： 解冻 − “false”： 冻结 
+        解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结 
 
         :return: The admin_state_up of this NatGatewayDnatRuleResponseBody.
         :rtype: bool
@@ -401,7 +401,7 @@ class NatGatewayDnatRuleResponseBody:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this NatGatewayDnatRuleResponseBody.
 
-        解冻/冻结状态。 取值范围： − “true”： 解冻 − “false”： 冻结 
+        解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结 
 
         :param admin_state_up: The admin_state_up of this NatGatewayDnatRuleResponseBody.
         :type admin_state_up: bool

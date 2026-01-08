@@ -25,7 +25,8 @@ class BackupForList:
         'type': 'str',
         'size': 'int',
         'datastore': 'BackupDatastore',
-        'associated_with_ddm': 'bool'
+        'associated_with_ddm': 'bool',
+        'min_data_volume_capacity_for_restore': 'int'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class BackupForList:
         'type': 'type',
         'size': 'size',
         'datastore': 'datastore',
-        'associated_with_ddm': 'associated_with_ddm'
+        'associated_with_ddm': 'associated_with_ddm',
+        'min_data_volume_capacity_for_restore': 'min_data_volume_capacity_for_restore'
     }
 
-    def __init__(self, id=None, instance_id=None, name=None, databases=None, begin_time=None, end_time=None, status=None, type=None, size=None, datastore=None, associated_with_ddm=None):
+    def __init__(self, id=None, instance_id=None, name=None, databases=None, begin_time=None, end_time=None, status=None, type=None, size=None, datastore=None, associated_with_ddm=None, min_data_volume_capacity_for_restore=None):
         r"""BackupForList
 
         The model defined in huaweicloud sdk
@@ -69,6 +71,8 @@ class BackupForList:
         :type datastore: :class:`huaweicloudsdkrds.v3.BackupDatastore`
         :param associated_with_ddm: 是否已被DDM实例关联。
         :type associated_with_ddm: bool
+        :param min_data_volume_capacity_for_restore: 该备份源文件大小，用于该备份文件恢复到新实例时需要的最小磁盘空间大小。
+        :type min_data_volume_capacity_for_restore: int
         """
         
         
@@ -84,6 +88,7 @@ class BackupForList:
         self._size = None
         self._datastore = None
         self._associated_with_ddm = None
+        self._min_data_volume_capacity_for_restore = None
         self.discriminator = None
 
         self.id = id
@@ -99,6 +104,8 @@ class BackupForList:
         self.datastore = datastore
         if associated_with_ddm is not None:
             self.associated_with_ddm = associated_with_ddm
+        if min_data_volume_capacity_for_restore is not None:
+            self.min_data_volume_capacity_for_restore = min_data_volume_capacity_for_restore
 
     @property
     def id(self):
@@ -337,6 +344,28 @@ class BackupForList:
         :type associated_with_ddm: bool
         """
         self._associated_with_ddm = associated_with_ddm
+
+    @property
+    def min_data_volume_capacity_for_restore(self):
+        r"""Gets the min_data_volume_capacity_for_restore of this BackupForList.
+
+        该备份源文件大小，用于该备份文件恢复到新实例时需要的最小磁盘空间大小。
+
+        :return: The min_data_volume_capacity_for_restore of this BackupForList.
+        :rtype: int
+        """
+        return self._min_data_volume_capacity_for_restore
+
+    @min_data_volume_capacity_for_restore.setter
+    def min_data_volume_capacity_for_restore(self, min_data_volume_capacity_for_restore):
+        r"""Sets the min_data_volume_capacity_for_restore of this BackupForList.
+
+        该备份源文件大小，用于该备份文件恢复到新实例时需要的最小磁盘空间大小。
+
+        :param min_data_volume_capacity_for_restore: The min_data_volume_capacity_for_restore of this BackupForList.
+        :type min_data_volume_capacity_for_restore: int
+        """
+        self._min_data_volume_capacity_for_restore = min_data_volume_capacity_for_restore
 
     def to_dict(self):
         result = {}

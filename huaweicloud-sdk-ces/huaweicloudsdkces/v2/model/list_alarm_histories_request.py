@@ -29,7 +29,8 @@ class ListAlarmHistoriesRequest:
         'create_time_to': 'str',
         'offset': 'int',
         'limit': 'int',
-        'order_by': 'str'
+        'order_by': 'str',
+        'mask_status': 'str'
     }
 
     attribute_map = {
@@ -47,25 +48,26 @@ class ListAlarmHistoriesRequest:
         'create_time_to': 'create_time_to',
         'offset': 'offset',
         'limit': 'limit',
-        'order_by': 'order_by'
+        'order_by': 'order_by',
+        'mask_status': 'mask_status'
     }
 
-    def __init__(self, alarm_id=None, record_id=None, name=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, alarm_type=None, create_time_from=None, create_time_to=None, offset=None, limit=None, order_by=None):
+    def __init__(self, alarm_id=None, record_id=None, name=None, status=None, level=None, namespace=None, resource_id=None, _from=None, to=None, alarm_type=None, create_time_from=None, create_time_to=None, offset=None, limit=None, order_by=None, mask_status=None):
         r"""ListAlarmHistoriesRequest
 
         The model defined in huaweicloud sdk
 
         :param alarm_id: **参数解释**： 告警ID列表。告警ID：以al开头，后跟22位由字母或数字组成的字符串。 **约束限制**： 列表最大长度为50。 
         :type alarm_id: list[str]
-        :param record_id: **参数解释**： 告警记录ID。 **约束限制**： 不涉及。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 **默认取值**： 不涉及。 
+        :param record_id: **参数解释**： 告警流水号。优化告警流水号生成规则，由之前的 ah1655717086704DEnBrJ999 更改为 ah251222T092004SAD2yARym **约束限制**： 不涉及。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 **默认取值**： 不涉及。 
         :type record_id: str
         :param name: **参数解释**： 告警规则名称。 **约束限制**： 不涉及。 **取值范围**： 最大128字符长度。 **默认取值**： 不涉及。 
         :type name: str
-        :param status: **参数解释**： 告警规则状态列表。告警规则状态：枚举值，ok为正常，alarm为告警，invalid为已失效。 **约束限制**： 列表长度最大为3。 
+        :param status: **参数解释**： 告警规则状态列表。 **取值范围**： 告警规则状态：枚举值。 - ok：已解决 - alarm：告警中 - invalid：已失效 - insufficient_data: 数据不足 - ok_manual: 已解决（手动） **约束限制**： 包含的告警规则状态对象数量为[0,3] 
         :type status: list[str]
         :param level: **参数解释**： 告警级别。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - 1：紧急 - 2：重要 - 3：次要 - 4：提示 **默认取值**： 不涉及。 
         :type level: int
-        :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
+        :param namespace: **参数解释**： 查询服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
         :type namespace: str
         :param resource_id: **参数解释**： 告警资源ID。 **约束限制**： 不涉及。 **取值范围**： 多维度情况按字母升序排列并使用逗号分隔。长度为[0,2048]个字符。 **默认取值**： 不涉及。 
         :type resource_id: str
@@ -85,6 +87,8 @@ class ListAlarmHistoriesRequest:
         :type limit: int
         :param order_by: **参数解释**： 按关键字排序。 **约束限制**： 不涉及。 **取值范围**： 枚举值。 - first_alarm_time: 告警产生时间 - update_time: 更新时间 - alarm_level: 告警级别 - record_id: 表记录主键 **默认取值**： update_time 
         :type order_by: str
+        :param mask_status: **参数解释**： 告警规则屏蔽状态 **约束限制**： 不涉及。 **取值范围**： - UN_MASKED 活跃告警 - MASKED 屏蔽告警 **默认取值**： 不涉及 
+        :type mask_status: str
         """
         
         
@@ -104,6 +108,7 @@ class ListAlarmHistoriesRequest:
         self._offset = None
         self._limit = None
         self._order_by = None
+        self._mask_status = None
         self.discriminator = None
 
         if alarm_id is not None:
@@ -136,6 +141,8 @@ class ListAlarmHistoriesRequest:
             self.limit = limit
         if order_by is not None:
             self.order_by = order_by
+        if mask_status is not None:
+            self.mask_status = mask_status
 
     @property
     def alarm_id(self):
@@ -163,7 +170,7 @@ class ListAlarmHistoriesRequest:
     def record_id(self):
         r"""Gets the record_id of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 告警记录ID。 **约束限制**： 不涉及。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 **默认取值**： 不涉及。 
+        **参数解释**： 告警流水号。优化告警流水号生成规则，由之前的 ah1655717086704DEnBrJ999 更改为 ah251222T092004SAD2yARym **约束限制**： 不涉及。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 **默认取值**： 不涉及。 
 
         :return: The record_id of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -174,7 +181,7 @@ class ListAlarmHistoriesRequest:
     def record_id(self, record_id):
         r"""Sets the record_id of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 告警记录ID。 **约束限制**： 不涉及。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 **默认取值**： 不涉及。 
+        **参数解释**： 告警流水号。优化告警流水号生成规则，由之前的 ah1655717086704DEnBrJ999 更改为 ah251222T092004SAD2yARym **约束限制**： 不涉及。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 **默认取值**： 不涉及。 
 
         :param record_id: The record_id of this ListAlarmHistoriesRequest.
         :type record_id: str
@@ -207,7 +214,7 @@ class ListAlarmHistoriesRequest:
     def status(self):
         r"""Gets the status of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 告警规则状态列表。告警规则状态：枚举值，ok为正常，alarm为告警，invalid为已失效。 **约束限制**： 列表长度最大为3。 
+        **参数解释**： 告警规则状态列表。 **取值范围**： 告警规则状态：枚举值。 - ok：已解决 - alarm：告警中 - invalid：已失效 - insufficient_data: 数据不足 - ok_manual: 已解决（手动） **约束限制**： 包含的告警规则状态对象数量为[0,3] 
 
         :return: The status of this ListAlarmHistoriesRequest.
         :rtype: list[str]
@@ -218,7 +225,7 @@ class ListAlarmHistoriesRequest:
     def status(self, status):
         r"""Sets the status of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 告警规则状态列表。告警规则状态：枚举值，ok为正常，alarm为告警，invalid为已失效。 **约束限制**： 列表长度最大为3。 
+        **参数解释**： 告警规则状态列表。 **取值范围**： 告警规则状态：枚举值。 - ok：已解决 - alarm：告警中 - invalid：已失效 - insufficient_data: 数据不足 - ok_manual: 已解决（手动） **约束限制**： 包含的告警规则状态对象数量为[0,3] 
 
         :param status: The status of this ListAlarmHistoriesRequest.
         :type status: list[str]
@@ -251,7 +258,7 @@ class ListAlarmHistoriesRequest:
     def namespace(self):
         r"""Gets the namespace of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
 
         :return: The namespace of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -262,7 +269,7 @@ class ListAlarmHistoriesRequest:
     def namespace(self, namespace):
         r"""Sets the namespace of this ListAlarmHistoriesRequest.
 
-        **参数解释**： 查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
+        **参数解释**： 查询服务的命名空间，各服务命名空间请参阅[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)。 **约束限制**： 不涉及。 **取值范围**： 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_。字符串的长度必须在 3 到 32个字符之间。 **默认取值**： 不涉及。 
 
         :param namespace: The namespace of this ListAlarmHistoriesRequest.
         :type namespace: str
@@ -466,6 +473,28 @@ class ListAlarmHistoriesRequest:
         :type order_by: str
         """
         self._order_by = order_by
+
+    @property
+    def mask_status(self):
+        r"""Gets the mask_status of this ListAlarmHistoriesRequest.
+
+        **参数解释**： 告警规则屏蔽状态 **约束限制**： 不涉及。 **取值范围**： - UN_MASKED 活跃告警 - MASKED 屏蔽告警 **默认取值**： 不涉及 
+
+        :return: The mask_status of this ListAlarmHistoriesRequest.
+        :rtype: str
+        """
+        return self._mask_status
+
+    @mask_status.setter
+    def mask_status(self, mask_status):
+        r"""Sets the mask_status of this ListAlarmHistoriesRequest.
+
+        **参数解释**： 告警规则屏蔽状态 **约束限制**： 不涉及。 **取值范围**： - UN_MASKED 活跃告警 - MASKED 屏蔽告警 **默认取值**： 不涉及 
+
+        :param mask_status: The mask_status of this ListAlarmHistoriesRequest.
+        :type mask_status: str
+        """
+        self._mask_status = mask_status
 
     def to_dict(self):
         result = {}

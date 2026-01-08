@@ -47,7 +47,7 @@ class AvailabilityZone:
         :type public_border_group: str
         :param category: **参数解释**：可用区子类型编码。该字段主要用于区分在边缘场景下，边缘AZ的类型。  **取值范围**：0表示center，21表示homezone，41表示IES。
         :type category: int
-        :param spec_code: **参数解释**：可用区的产品编码，用于控制台购买ELB前查询定价，仅边缘场景有效。  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :param spec_code: **参数解释**：可用区的产品编码，用于控制台购买ELB前查询定价，仅边缘场景有效。  **取值范围**：不涉及 [不支持该字段，请勿使用。](tag:dt,hcso_dt)
         :type spec_code: str
         """
         
@@ -183,7 +183,7 @@ class AvailabilityZone:
     def spec_code(self):
         r"""Gets the spec_code of this AvailabilityZone.
 
-        **参数解释**：可用区的产品编码，用于控制台购买ELB前查询定价，仅边缘场景有效。  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：可用区的产品编码，用于控制台购买ELB前查询定价，仅边缘场景有效。  **取值范围**：不涉及 [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :return: The spec_code of this AvailabilityZone.
         :rtype: str
@@ -194,7 +194,7 @@ class AvailabilityZone:
     def spec_code(self, spec_code):
         r"""Sets the spec_code of this AvailabilityZone.
 
-        **参数解释**：可用区的产品编码，用于控制台购买ELB前查询定价，仅边缘场景有效。  **取值范围**：不涉及  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        **参数解释**：可用区的产品编码，用于控制台购买ELB前查询定价，仅边缘场景有效。  **取值范围**：不涉及 [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
         :param spec_code: The spec_code of this AvailabilityZone.
         :type spec_code: str

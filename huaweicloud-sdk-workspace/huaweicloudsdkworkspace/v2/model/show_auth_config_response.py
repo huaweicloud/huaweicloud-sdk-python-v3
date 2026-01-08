@@ -16,57 +16,100 @@ class ShowAuthConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'auth_type': 'str',
         'enable': 'bool',
+        'is_multi_domain_authenticate_enabled': 'bool',
         'radius_gateway_config': 'RadiusGatewayConfigInfo',
         'third_party_auth_config': 'list[ThirdPartyAuthConfig]',
-        'emergency_login_mode': 'str'
+        'emergency_login_mode': 'str',
+        'saml2_auth_config': 'Saml2AuthConfig'
     }
 
     attribute_map = {
+        'id': 'id',
         'auth_type': 'auth_type',
         'enable': 'enable',
+        'is_multi_domain_authenticate_enabled': 'is_multi_domain_authenticate_enabled',
         'radius_gateway_config': 'radius_gateway_config',
         'third_party_auth_config': 'third_party_auth_config',
-        'emergency_login_mode': 'emergency_login_mode'
+        'emergency_login_mode': 'emergency_login_mode',
+        'saml2_auth_config': 'saml2_auth_config'
     }
 
-    def __init__(self, auth_type=None, enable=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None):
+    def __init__(self, id=None, auth_type=None, enable=None, is_multi_domain_authenticate_enabled=None, radius_gateway_config=None, third_party_auth_config=None, emergency_login_mode=None, saml2_auth_config=None):
         r"""ShowAuthConfigResponse
 
         The model defined in huaweicloud sdk
 
+        :param id: 认证配置ID。
+        :type id: str
         :param auth_type: 认证类型 LOCAL_PASSWORD：本地密码认证模式 KERBEROS：Windows AD认证模式 LDAP：第三方LDAP模式 CLIENT_TOKEN：金审UKEY客户端Token认证模式 OAUTH2：第三方单点登录模式
         :type auth_type: str
         :param enable: 当前状态。
         :type enable: bool
+        :param is_multi_domain_authenticate_enabled: 当前状态。
+        :type is_multi_domain_authenticate_enabled: bool
         :param radius_gateway_config: 
         :type radius_gateway_config: :class:`huaweicloudsdkworkspace.v2.RadiusGatewayConfigInfo`
         :param third_party_auth_config: 第三方认证接口配置信息。
         :type third_party_auth_config: list[:class:`huaweicloudsdkworkspace.v2.ThirdPartyAuthConfig`]
         :param emergency_login_mode: 应急登录模式。
         :type emergency_login_mode: str
+        :param saml2_auth_config: 
+        :type saml2_auth_config: :class:`huaweicloudsdkworkspace.v2.Saml2AuthConfig`
         """
         
         super().__init__()
 
+        self._id = None
         self._auth_type = None
         self._enable = None
+        self._is_multi_domain_authenticate_enabled = None
         self._radius_gateway_config = None
         self._third_party_auth_config = None
         self._emergency_login_mode = None
+        self._saml2_auth_config = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if auth_type is not None:
             self.auth_type = auth_type
         if enable is not None:
             self.enable = enable
+        if is_multi_domain_authenticate_enabled is not None:
+            self.is_multi_domain_authenticate_enabled = is_multi_domain_authenticate_enabled
         if radius_gateway_config is not None:
             self.radius_gateway_config = radius_gateway_config
         if third_party_auth_config is not None:
             self.third_party_auth_config = third_party_auth_config
         if emergency_login_mode is not None:
             self.emergency_login_mode = emergency_login_mode
+        if saml2_auth_config is not None:
+            self.saml2_auth_config = saml2_auth_config
+
+    @property
+    def id(self):
+        r"""Gets the id of this ShowAuthConfigResponse.
+
+        认证配置ID。
+
+        :return: The id of this ShowAuthConfigResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this ShowAuthConfigResponse.
+
+        认证配置ID。
+
+        :param id: The id of this ShowAuthConfigResponse.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def auth_type(self):
@@ -111,6 +154,28 @@ class ShowAuthConfigResponse(SdkResponse):
         :type enable: bool
         """
         self._enable = enable
+
+    @property
+    def is_multi_domain_authenticate_enabled(self):
+        r"""Gets the is_multi_domain_authenticate_enabled of this ShowAuthConfigResponse.
+
+        当前状态。
+
+        :return: The is_multi_domain_authenticate_enabled of this ShowAuthConfigResponse.
+        :rtype: bool
+        """
+        return self._is_multi_domain_authenticate_enabled
+
+    @is_multi_domain_authenticate_enabled.setter
+    def is_multi_domain_authenticate_enabled(self, is_multi_domain_authenticate_enabled):
+        r"""Sets the is_multi_domain_authenticate_enabled of this ShowAuthConfigResponse.
+
+        当前状态。
+
+        :param is_multi_domain_authenticate_enabled: The is_multi_domain_authenticate_enabled of this ShowAuthConfigResponse.
+        :type is_multi_domain_authenticate_enabled: bool
+        """
+        self._is_multi_domain_authenticate_enabled = is_multi_domain_authenticate_enabled
 
     @property
     def radius_gateway_config(self):
@@ -173,6 +238,24 @@ class ShowAuthConfigResponse(SdkResponse):
         :type emergency_login_mode: str
         """
         self._emergency_login_mode = emergency_login_mode
+
+    @property
+    def saml2_auth_config(self):
+        r"""Gets the saml2_auth_config of this ShowAuthConfigResponse.
+
+        :return: The saml2_auth_config of this ShowAuthConfigResponse.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.Saml2AuthConfig`
+        """
+        return self._saml2_auth_config
+
+    @saml2_auth_config.setter
+    def saml2_auth_config(self, saml2_auth_config):
+        r"""Sets the saml2_auth_config of this ShowAuthConfigResponse.
+
+        :param saml2_auth_config: The saml2_auth_config of this ShowAuthConfigResponse.
+        :type saml2_auth_config: :class:`huaweicloudsdkworkspace.v2.Saml2AuthConfig`
+        """
+        self._saml2_auth_config = saml2_auth_config
 
     def to_dict(self):
         import warnings

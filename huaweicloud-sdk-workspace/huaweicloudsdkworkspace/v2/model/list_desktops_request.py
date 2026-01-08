@@ -51,7 +51,7 @@ class ListDesktopsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param user_name: 桌面所属用户。
+        :param user_name: 桌面所属用户，支持根据用户名模糊查询。
         :type user_name: list[str]
         :param computer_name: 桌面名。
         :type computer_name: str
@@ -127,7 +127,7 @@ class ListDesktopsRequest:
     def user_name(self):
         r"""Gets the user_name of this ListDesktopsRequest.
 
-        桌面所属用户。
+        桌面所属用户，支持根据用户名模糊查询。
 
         :return: The user_name of this ListDesktopsRequest.
         :rtype: list[str]
@@ -138,7 +138,7 @@ class ListDesktopsRequest:
     def user_name(self, user_name):
         r"""Sets the user_name of this ListDesktopsRequest.
 
-        桌面所属用户。
+        桌面所属用户，支持根据用户名模糊查询。
 
         :param user_name: The user_name of this ListDesktopsRequest.
         :type user_name: list[str]

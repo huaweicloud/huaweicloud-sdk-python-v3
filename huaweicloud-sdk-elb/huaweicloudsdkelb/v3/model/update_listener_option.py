@@ -107,17 +107,17 @@ class UpdateListenerOption:
         :type security_policy_id: str
         :param enable_member_retry: **参数解释**：是否开启后端服务器的重试。  [**约束限制**： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  **取值范围**：true 开启重试；false 不开启重试。  **默认取值**：不涉及。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
         :type enable_member_retry: bool
-        :param member_timeout: **参数解释**：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  **约束限制**：仅支持协议为HTTP/HTTPS的监听器。  **取值范围**：1-300s。  **默认取值**：60s
+        :param member_timeout: **参数解释**：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  **约束限制**：仅支持协议为HTTP/HTTPS的监听器。  **取值范围**：1-300s。  **默认取值**：不涉及
         :type member_timeout: int
-        :param client_timeout: **参数解释**：等待客户端请求超时时间，仅限协议为HTTP，HTTPS的监听器配置。  **约束限制**：TCP，UDP协议的监听器不支持此字段。  **取值范围**：1-300s  **默认取值**：60s
+        :param client_timeout: **参数解释**：等待客户端请求超时时间，仅限协议为HTTP，HTTPS的监听器配置。  **约束限制**：TCP，UDP协议的监听器不支持此字段。  **取值范围**：1-300s  **默认取值**：不涉及
         :type client_timeout: int
-        :param keepalive_timeout: **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）  **默认取值**：60s。
+        :param keepalive_timeout: **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP、UDP和IP监听器：10-4000s。 - HTTP、HTTPS和TERMINATED_HTTPS监听器：0-4000s。  **默认取值**：不涉及
         :type keepalive_timeout: int
         :param ipgroup: 
         :type ipgroup: :class:`huaweicloudsdkelb.v3.UpdateListenerIpGroupOption`
         :param transparent_client_ip_enable: **参数解释**：是否透传客户端IP地址。开启后客户端IP地址将透传到后端服务器。 [仅作用于共享型LB的TCP/UDP监听器。  **约束限制**： - 开启特性后，ELB和后端服务器之间直接使用真实的IP访问，需要确保已正确设置服务器的安全组以及访问控制策略。 - 开启特性后，不支持同一台服务器既作为后端服务器又作为客户端的场景。 - 开启特性后，不支持变更后端服务器规格。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  **取值范围**： - 共享型LB的TCP/UDP监听器可设置为true或false，不传默认为false。 - 共享型LB的HTTP/HTTPS监听器只支持设置为true，不传默认为true。 - 独享型负载均衡器所有协议的监听器只支持设置为true，不传默认为true。  **默认取值**：不涉及  [只设支持置为true，不传默认为true。](tag:hws_eu,hcso_dt)
         :type transparent_client_ip_enable: bool
-        :param proxy_protocol_enable: **参数解释**：是否开启proxy_protocol。  **约束限制**：仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。  **取值范围**：true 开启，false 不开启。  **默认取值**：false
+        :param proxy_protocol_enable: **参数解释**：是否开启proxy_protocol。 **约束限制**：仅TLS和TCP协议监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。 **取值范围**：true 开启，false 不开启。 **默认取值**：false
         :type proxy_protocol_enable: bool
         :param enhance_l7policy_enable: **参数解释**：是否开启高级转发策略功能。开启高级转发策略后，支持更灵活的转发策略和转发规则设置。 开启后支持如下场景： - 转发策略的action字段支持指定为REDIRECT_TO_URL,FIXED_RESPONSE，即支持URL重定向和响应固定的内容给客户端。 - 转发策略支持指定priority、redirect_url_config、fixed_response_config字段。 - 转发规则rule的type可以指定METHOD, HEADER, QUERY_STRING, SOURCE_IP这几种取值。 - 转发规则rule的type为HOST_NAME时，转发规则rule的value支持通配符*。 - 转发规则支持指定conditions字段。  **约束限制**： - 开启后不支持关闭。 - 开启高级转发策略后，监听器关联的转发策略的匹配优先级由转发策略的priority字段来决定，不再自动排序。具体说明详见转发策略的priority字段的说明。  **取值范围**：true开启，false不开启。  **默认取值**：false  [荷兰region不支持该字段，请勿使用。](tag:dt)
         :type enhance_l7policy_enable: bool
@@ -514,7 +514,7 @@ class UpdateListenerOption:
     def member_timeout(self):
         r"""Gets the member_timeout of this UpdateListenerOption.
 
-        **参数解释**：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  **约束限制**：仅支持协议为HTTP/HTTPS的监听器。  **取值范围**：1-300s。  **默认取值**：60s
+        **参数解释**：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  **约束限制**：仅支持协议为HTTP/HTTPS的监听器。  **取值范围**：1-300s。  **默认取值**：不涉及
 
         :return: The member_timeout of this UpdateListenerOption.
         :rtype: int
@@ -525,7 +525,7 @@ class UpdateListenerOption:
     def member_timeout(self, member_timeout):
         r"""Sets the member_timeout of this UpdateListenerOption.
 
-        **参数解释**：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  **约束限制**：仅支持协议为HTTP/HTTPS的监听器。  **取值范围**：1-300s。  **默认取值**：60s
+        **参数解释**：等待后端服务器响应超时时间。请求转发后端服务器后，在等待超时member_timeout时长没有响应，负载均衡将终止等待，并返回HTTP504错误码。  **约束限制**：仅支持协议为HTTP/HTTPS的监听器。  **取值范围**：1-300s。  **默认取值**：不涉及
 
         :param member_timeout: The member_timeout of this UpdateListenerOption.
         :type member_timeout: int
@@ -536,7 +536,7 @@ class UpdateListenerOption:
     def client_timeout(self):
         r"""Gets the client_timeout of this UpdateListenerOption.
 
-        **参数解释**：等待客户端请求超时时间，仅限协议为HTTP，HTTPS的监听器配置。  **约束限制**：TCP，UDP协议的监听器不支持此字段。  **取值范围**：1-300s  **默认取值**：60s
+        **参数解释**：等待客户端请求超时时间，仅限协议为HTTP，HTTPS的监听器配置。  **约束限制**：TCP，UDP协议的监听器不支持此字段。  **取值范围**：1-300s  **默认取值**：不涉及
 
         :return: The client_timeout of this UpdateListenerOption.
         :rtype: int
@@ -547,7 +547,7 @@ class UpdateListenerOption:
     def client_timeout(self, client_timeout):
         r"""Sets the client_timeout of this UpdateListenerOption.
 
-        **参数解释**：等待客户端请求超时时间，仅限协议为HTTP，HTTPS的监听器配置。  **约束限制**：TCP，UDP协议的监听器不支持此字段。  **取值范围**：1-300s  **默认取值**：60s
+        **参数解释**：等待客户端请求超时时间，仅限协议为HTTP，HTTPS的监听器配置。  **约束限制**：TCP，UDP协议的监听器不支持此字段。  **取值范围**：1-300s  **默认取值**：不涉及
 
         :param client_timeout: The client_timeout of this UpdateListenerOption.
         :type client_timeout: int
@@ -558,7 +558,7 @@ class UpdateListenerOption:
     def keepalive_timeout(self):
         r"""Gets the keepalive_timeout of this UpdateListenerOption.
 
-        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）  **默认取值**：60s。
+        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP、UDP和IP监听器：10-4000s。 - HTTP、HTTPS和TERMINATED_HTTPS监听器：0-4000s。  **默认取值**：不涉及
 
         :return: The keepalive_timeout of this UpdateListenerOption.
         :rtype: int
@@ -569,7 +569,7 @@ class UpdateListenerOption:
     def keepalive_timeout(self, keepalive_timeout):
         r"""Sets the keepalive_timeout of this UpdateListenerOption.
 
-        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）  **默认取值**：60s。
+        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP、UDP和IP监听器：10-4000s。 - HTTP、HTTPS和TERMINATED_HTTPS监听器：0-4000s。  **默认取值**：不涉及
 
         :param keepalive_timeout: The keepalive_timeout of this UpdateListenerOption.
         :type keepalive_timeout: int
@@ -620,7 +620,7 @@ class UpdateListenerOption:
     def proxy_protocol_enable(self):
         r"""Gets the proxy_protocol_enable of this UpdateListenerOption.
 
-        **参数解释**：是否开启proxy_protocol。  **约束限制**：仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。  **取值范围**：true 开启，false 不开启。  **默认取值**：false
+        **参数解释**：是否开启proxy_protocol。 **约束限制**：仅TLS和TCP协议监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。 **取值范围**：true 开启，false 不开启。 **默认取值**：false
 
         :return: The proxy_protocol_enable of this UpdateListenerOption.
         :rtype: bool
@@ -631,7 +631,7 @@ class UpdateListenerOption:
     def proxy_protocol_enable(self, proxy_protocol_enable):
         r"""Sets the proxy_protocol_enable of this UpdateListenerOption.
 
-        **参数解释**：是否开启proxy_protocol。  **约束限制**：仅TLS监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。  **取值范围**：true 开启，false 不开启。  **默认取值**：false
+        **参数解释**：是否开启proxy_protocol。 **约束限制**：仅TLS和TCP协议监听器可指定，其他协议的监听器该字段不生效，proxy_protocol不开启。 **取值范围**：true 开启，false 不开启。 **默认取值**：false
 
         :param proxy_protocol_enable: The proxy_protocol_enable of this UpdateListenerOption.
         :type proxy_protocol_enable: bool

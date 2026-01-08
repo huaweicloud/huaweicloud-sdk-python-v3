@@ -47,15 +47,15 @@ class ListSecurityPoliciesRequest:
         :type limit: int
         :param page_reverse: **参数解释**：是否反向查询。  **约束限制**： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。  **取值范围**： - true：查询上一页。 - false：查询下一页。  **默认取值**：false
         :type page_reverse: bool
-        :param id: **参数解释**：自定义安全策略的ID。 支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        :param id: **参数解释**：自定义安全策略的ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type id: list[str]
-        :param name: **参数解释**：自定义安全策略的名称。 支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        :param name: **参数解释**：自定义安全策略的名称。  支持多值查询，查询条件格式：*name&#x3D;xxx&amp;name&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type name: list[str]
-        :param description: **参数解释**：自定义安全策略的描述信息。 支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        :param description: **参数解释**：自定义安全策略的描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type description: list[str]
-        :param protocols: **参数解释**：空格分隔的自定义安全策略的TLS协议。 支持多值查询，查询条件格式：*protocols&#x3D;xxx&amp;protocols&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        :param protocols: **参数解释**：空格分隔的自定义安全策略的TLS协议。  支持多值查询，查询条件格式：*protocols&#x3D;xxx&amp;protocols&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type protocols: list[str]
-        :param ciphers: **参数解释**：冒号分隔的自定义安全策略的加密套件。 支持多值查询，查询条件格式：*ciphers&#x3D;xxx&amp;ciphers&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        :param ciphers: **参数解释**：冒号分隔的自定义安全策略的加密套件。  支持多值查询，查询条件格式：*ciphers&#x3D;xxx&amp;ciphers&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type ciphers: list[str]
         """
         
@@ -158,7 +158,7 @@ class ListSecurityPoliciesRequest:
     def id(self):
         r"""Gets the id of this ListSecurityPoliciesRequest.
 
-        **参数解释**：自定义安全策略的ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：自定义安全策略的ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The id of this ListSecurityPoliciesRequest.
         :rtype: list[str]
@@ -169,7 +169,7 @@ class ListSecurityPoliciesRequest:
     def id(self, id):
         r"""Sets the id of this ListSecurityPoliciesRequest.
 
-        **参数解释**：自定义安全策略的ID。 支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：自定义安全策略的ID。  支持多值查询，查询条件格式：*id=xxx&id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param id: The id of this ListSecurityPoliciesRequest.
         :type id: list[str]
@@ -180,7 +180,7 @@ class ListSecurityPoliciesRequest:
     def name(self):
         r"""Gets the name of this ListSecurityPoliciesRequest.
 
-        **参数解释**：自定义安全策略的名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：自定义安全策略的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The name of this ListSecurityPoliciesRequest.
         :rtype: list[str]
@@ -191,7 +191,7 @@ class ListSecurityPoliciesRequest:
     def name(self, name):
         r"""Sets the name of this ListSecurityPoliciesRequest.
 
-        **参数解释**：自定义安全策略的名称。 支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：自定义安全策略的名称。  支持多值查询，查询条件格式：*name=xxx&name=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param name: The name of this ListSecurityPoliciesRequest.
         :type name: list[str]
@@ -202,7 +202,7 @@ class ListSecurityPoliciesRequest:
     def description(self):
         r"""Gets the description of this ListSecurityPoliciesRequest.
 
-        **参数解释**：自定义安全策略的描述信息。 支持多值查询，查询条件格式：*description=xxx&description=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：自定义安全策略的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The description of this ListSecurityPoliciesRequest.
         :rtype: list[str]
@@ -213,7 +213,7 @@ class ListSecurityPoliciesRequest:
     def description(self, description):
         r"""Sets the description of this ListSecurityPoliciesRequest.
 
-        **参数解释**：自定义安全策略的描述信息。 支持多值查询，查询条件格式：*description=xxx&description=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：自定义安全策略的描述信息。  支持多值查询，查询条件格式：*description=xxx&description=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param description: The description of this ListSecurityPoliciesRequest.
         :type description: list[str]
@@ -224,7 +224,7 @@ class ListSecurityPoliciesRequest:
     def protocols(self):
         r"""Gets the protocols of this ListSecurityPoliciesRequest.
 
-        **参数解释**：空格分隔的自定义安全策略的TLS协议。 支持多值查询，查询条件格式：*protocols=xxx&protocols=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：空格分隔的自定义安全策略的TLS协议。  支持多值查询，查询条件格式：*protocols=xxx&protocols=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The protocols of this ListSecurityPoliciesRequest.
         :rtype: list[str]
@@ -235,7 +235,7 @@ class ListSecurityPoliciesRequest:
     def protocols(self, protocols):
         r"""Sets the protocols of this ListSecurityPoliciesRequest.
 
-        **参数解释**：空格分隔的自定义安全策略的TLS协议。 支持多值查询，查询条件格式：*protocols=xxx&protocols=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：空格分隔的自定义安全策略的TLS协议。  支持多值查询，查询条件格式：*protocols=xxx&protocols=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param protocols: The protocols of this ListSecurityPoliciesRequest.
         :type protocols: list[str]
@@ -246,7 +246,7 @@ class ListSecurityPoliciesRequest:
     def ciphers(self):
         r"""Gets the ciphers of this ListSecurityPoliciesRequest.
 
-        **参数解释**：冒号分隔的自定义安全策略的加密套件。 支持多值查询，查询条件格式：*ciphers=xxx&ciphers=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：冒号分隔的自定义安全策略的加密套件。  支持多值查询，查询条件格式：*ciphers=xxx&ciphers=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The ciphers of this ListSecurityPoliciesRequest.
         :rtype: list[str]
@@ -257,7 +257,7 @@ class ListSecurityPoliciesRequest:
     def ciphers(self, ciphers):
         r"""Sets the ciphers of this ListSecurityPoliciesRequest.
 
-        **参数解释**：冒号分隔的自定义安全策略的加密套件。 支持多值查询，查询条件格式：*ciphers=xxx&ciphers=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：冒号分隔的自定义安全策略的加密套件。  支持多值查询，查询条件格式：*ciphers=xxx&ciphers=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param ciphers: The ciphers of this ListSecurityPoliciesRequest.
         :type ciphers: list[str]

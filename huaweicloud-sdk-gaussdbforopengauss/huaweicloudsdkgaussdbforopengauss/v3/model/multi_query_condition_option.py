@@ -51,14 +51,11 @@ class MultiQueryConditionOption:
         self._values = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if condition is not None:
-            self.condition = condition
+        self.name = name
+        self.condition = condition
         if is_fuzzy is not None:
             self.is_fuzzy = is_fuzzy
-        if values is not None:
-            self.values = values
+        self.values = values
 
     @property
     def name(self):

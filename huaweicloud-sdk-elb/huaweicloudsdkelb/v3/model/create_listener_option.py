@@ -113,7 +113,7 @@ class CreateListenerOption:
         :type name: str
         :param project_id: **参数解释**：项目ID。获取方式请参见[获取项目ID](elb_fl_0008.xml)。  **约束限制**：不涉及  **取值范围**：长度为32个字符，由小写字母和数字组成。  **默认取值**：不涉及  &gt; 该字段实际无效，最终使用url中的project_id。
         :type project_id: str
-        :param protocol: **参数解释**：监听器的监听协议。  [**约束限制**： - 共享型LB上的HTTPS监听器只支持设置为TERMINATED_HTTPS。传入HTTPS将会自动转为TERMINATED_HTTPS。 - 独享型LB上的HTTPS监听器只支持设置为HTTPS，传入TERMINATED_HTTPS将会自动转为HTTPS。  **取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)  **默认取值**：不涉及  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        :param protocol: **参数解释**：监听器的监听协议。  [**约束限制**： - 共享型LB上的HTTPS监听器只支持设置为TERMINATED_HTTPS。传入HTTPS将会自动转为TERMINATED_HTTPS。 - 独享型LB上的HTTPS监听器只支持设置为HTTPS，传入TERMINATED_HTTPS将会自动转为HTTPS。  **取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS、IP。IP为网关型LB上的监听器独有的协议。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)  **默认取值**：不涉及  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
         :type protocol: str
         :param protocol_port: **参数解释**：监听器的监听端口。  **约束限制**： - QUIC和UDP监听器端口不能重复。 - TCP、HTTP、HTTPS监听器之间端口不能重复。 - 传0时表示开启监听端口范围的能力，此时全端口监听port_ranges为必填字段。 [- 共享型LB上的HTTP和TERMINATED_HTTPS监听器不支持设置21端口。](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  **取值范围**：0-65535  **默认取值**：不涉及  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
         :type protocol_port: int
@@ -129,7 +129,7 @@ class CreateListenerOption:
         :type security_policy_id: str
         :param enable_member_retry: **参数解释**：是否开启后端服务器的重试。  [**约束限制**： - 若关联是共享型LB，仅在protocol为HTTP、TERMINATED_HTTPS时才能传入该字段。 - 若关联是独享型LB，仅在protocol为HTTP、HTTPS和QUIC时才能传入该字段。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt)  [**约束限制**： - 仅在protocol为HTTP、HTTPS时才能传入该字段。](tag:hws_eu,hcso_dt)  **取值范围**：true 开启重试，false 不开启重试。  **默认取值**：true  [不支持QUIC。](tag:tm,dt)
         :type enable_member_retry: bool
-        :param keepalive_timeout: **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s，默认值为300s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。  **默认取值**：不涉及
+        :param keepalive_timeout: **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP、UDP和IP监听器：10-4000s，默认值为300s。 - HTTP、HTTPS和TERMINATED_HTTPS监听器：0-4000s，默认值为60s。  **默认取值**：不涉及
         :type keepalive_timeout: int
         :param client_timeout: **参数解释**：等待客户端请求超时时间，包括两种情况： - 读取整个客户端请求头的超时时长：如果客户端未在超时时长内发送完整个请求头，则请求将被中断 - 两个连续body体的数据包到达LB的时间间隔，超出client_timeout将会断开连接。  **约束限制**：仅协议为HTTP/HTTPS的监听器支持该字段。  **取值范围**： 1-300s  **默认取值**：60s
         :type client_timeout: int
@@ -488,7 +488,7 @@ class CreateListenerOption:
     def protocol(self):
         r"""Gets the protocol of this CreateListenerOption.
 
-        **参数解释**：监听器的监听协议。  [**约束限制**： - 共享型LB上的HTTPS监听器只支持设置为TERMINATED_HTTPS。传入HTTPS将会自动转为TERMINATED_HTTPS。 - 独享型LB上的HTTPS监听器只支持设置为HTTPS，传入TERMINATED_HTTPS将会自动转为HTTPS。  **取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)  **默认取值**：不涉及  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        **参数解释**：监听器的监听协议。  [**约束限制**： - 共享型LB上的HTTPS监听器只支持设置为TERMINATED_HTTPS。传入HTTPS将会自动转为TERMINATED_HTTPS。 - 独享型LB上的HTTPS监听器只支持设置为HTTPS，传入TERMINATED_HTTPS将会自动转为HTTPS。  **取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS、IP。IP为网关型LB上的监听器独有的协议。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)  **默认取值**：不涉及  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
         :return: The protocol of this CreateListenerOption.
         :rtype: str
@@ -499,7 +499,7 @@ class CreateListenerOption:
     def protocol(self, protocol):
         r"""Sets the protocol of this CreateListenerOption.
 
-        **参数解释**：监听器的监听协议。  [**约束限制**： - 共享型LB上的HTTPS监听器只支持设置为TERMINATED_HTTPS。传入HTTPS将会自动转为TERMINATED_HTTPS。 - 独享型LB上的HTTPS监听器只支持设置为HTTPS，传入TERMINATED_HTTPS将会自动转为HTTPS。  **取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)  **默认取值**：不涉及  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
+        **参数解释**：监听器的监听协议。  [**约束限制**： - 共享型LB上的HTTPS监听器只支持设置为TERMINATED_HTTPS。传入HTTPS将会自动转为TERMINATED_HTTPS。 - 独享型LB上的HTTPS监听器只支持设置为HTTPS，传入TERMINATED_HTTPS将会自动转为HTTPS。  **取值范围**：TCP、UDP、HTTP、HTTPS、TERMINATED_HTTPS、QUIC、TLS、IP。IP为网关型LB上的监听器独有的协议。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,hk_vdf,srg,fcs,dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、HTTP、HTTPS。](tag:hcso_dt) [**约束限制**：不涉及  **取值范围**：TCP、UDP、IP、HTTP、HTTPS。IP为网关型LB上的监听器独有的协议。](tag:hws_eu)  **默认取值**：不涉及  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
         :param protocol: The protocol of this CreateListenerOption.
         :type protocol: str
@@ -664,7 +664,7 @@ class CreateListenerOption:
     def keepalive_timeout(self):
         r"""Gets the keepalive_timeout of this CreateListenerOption.
 
-        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s，默认值为300s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。  **默认取值**：不涉及
+        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP、UDP和IP监听器：10-4000s，默认值为300s。 - HTTP、HTTPS和TERMINATED_HTTPS监听器：0-4000s，默认值为60s。  **默认取值**：不涉及
 
         :return: The keepalive_timeout of this CreateListenerOption.
         :rtype: int
@@ -675,7 +675,7 @@ class CreateListenerOption:
     def keepalive_timeout(self, keepalive_timeout):
         r"""Sets the keepalive_timeout of this CreateListenerOption.
 
-        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP监听器[和IP监听器](tag:hws_eu)：10-4000s，默认值为300s。 - 若为HTTP/HTTPS/TERMINATED_HTTPS监听器，取值范围为（0-4000s）默认值为60s。  **默认取值**：不涉及
+        **参数解释**：客户端连接空闲超时时间。在超过keepalive_timeout时长一直没有请求，负载均衡会暂时中断当前连接，直到下一次请求时重新建立新的连接。  **约束限制**：共享型实例的UDP监听器不支持此字段。  **取值范围**： - TCP、UDP和IP监听器：10-4000s，默认值为300s。 - HTTP、HTTPS和TERMINATED_HTTPS监听器：0-4000s，默认值为60s。  **默认取值**：不涉及
 
         :param keepalive_timeout: The keepalive_timeout of this CreateListenerOption.
         :type keepalive_timeout: int

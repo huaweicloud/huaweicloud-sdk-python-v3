@@ -17,6 +17,7 @@ class CreateOrderReq:
     openapi_types = {
         'type': 'str',
         'enterprise_project_id': 'str',
+        'agency_urn': 'str',
         'resources': 'list[Resource]',
         'extend_param': 'OrderExtendParam'
     }
@@ -24,11 +25,12 @@ class CreateOrderReq:
     attribute_map = {
         'type': 'type',
         'enterprise_project_id': 'enterprise_project_id',
+        'agency_urn': 'agency_urn',
         'resources': 'resources',
         'extend_param': 'extend_param'
     }
 
-    def __init__(self, type=None, enterprise_project_id=None, resources=None, extend_param=None):
+    def __init__(self, type=None, enterprise_project_id=None, agency_urn=None, resources=None, extend_param=None):
         r"""CreateOrderReq
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class CreateOrderReq:
         :type type: str
         :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
+        :param agency_urn: 授权给Billing服务的委托URN。使用RAM共享密钥创建包周期云桌面或添加包周期磁盘时，需要传入该字段。
+        :type agency_urn: str
         :param resources: 包周期资源。
         :type resources: list[:class:`huaweicloudsdkworkspace.v2.Resource`]
         :param extend_param: 
@@ -47,6 +51,7 @@ class CreateOrderReq:
 
         self._type = None
         self._enterprise_project_id = None
+        self._agency_urn = None
         self._resources = None
         self._extend_param = None
         self.discriminator = None
@@ -54,6 +59,8 @@ class CreateOrderReq:
         self.type = type
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if agency_urn is not None:
+            self.agency_urn = agency_urn
         self.resources = resources
         if extend_param is not None:
             self.extend_param = extend_param
@@ -101,6 +108,28 @@ class CreateOrderReq:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def agency_urn(self):
+        r"""Gets the agency_urn of this CreateOrderReq.
+
+        授权给Billing服务的委托URN。使用RAM共享密钥创建包周期云桌面或添加包周期磁盘时，需要传入该字段。
+
+        :return: The agency_urn of this CreateOrderReq.
+        :rtype: str
+        """
+        return self._agency_urn
+
+    @agency_urn.setter
+    def agency_urn(self, agency_urn):
+        r"""Sets the agency_urn of this CreateOrderReq.
+
+        授权给Billing服务的委托URN。使用RAM共享密钥创建包周期云桌面或添加包周期磁盘时，需要传入该字段。
+
+        :param agency_urn: The agency_urn of this CreateOrderReq.
+        :type agency_urn: str
+        """
+        self._agency_urn = agency_urn
 
     @property
     def resources(self):

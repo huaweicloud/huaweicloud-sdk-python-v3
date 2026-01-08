@@ -41,9 +41,9 @@ class Session:
         :type self_help_console: bool
         :param disconnect_on_lock_flag: 是否锁屏后断开。
         :type disconnect_on_lock_flag: bool
-        :param auto_lock_start_time: 锁定生效开始时间，格式 hh:mm:ss
+        :param auto_lock_start_time: 锁定生效开始时间，格式 hh:mm:ss。
         :type auto_lock_start_time: str
-        :param auto_lock_end_time: 锁定生效开始时间，格式 hh:mm:ss
+        :param auto_lock_end_time: 锁定生效时间，格式 hh:mm:ss。
         :type auto_lock_end_time: str
         """
         
@@ -133,7 +133,7 @@ class Session:
     def auto_lock_start_time(self):
         r"""Gets the auto_lock_start_time of this Session.
 
-        锁定生效开始时间，格式 hh:mm:ss
+        锁定生效开始时间，格式 hh:mm:ss。
 
         :return: The auto_lock_start_time of this Session.
         :rtype: str
@@ -144,7 +144,7 @@ class Session:
     def auto_lock_start_time(self, auto_lock_start_time):
         r"""Sets the auto_lock_start_time of this Session.
 
-        锁定生效开始时间，格式 hh:mm:ss
+        锁定生效开始时间，格式 hh:mm:ss。
 
         :param auto_lock_start_time: The auto_lock_start_time of this Session.
         :type auto_lock_start_time: str
@@ -155,7 +155,7 @@ class Session:
     def auto_lock_end_time(self):
         r"""Gets the auto_lock_end_time of this Session.
 
-        锁定生效开始时间，格式 hh:mm:ss
+        锁定生效时间，格式 hh:mm:ss。
 
         :return: The auto_lock_end_time of this Session.
         :rtype: str
@@ -166,7 +166,7 @@ class Session:
     def auto_lock_end_time(self, auto_lock_end_time):
         r"""Sets the auto_lock_end_time of this Session.
 
-        锁定生效开始时间，格式 hh:mm:ss
+        锁定生效时间，格式 hh:mm:ss。
 
         :param auto_lock_end_time: The auto_lock_end_time of this Session.
         :type auto_lock_end_time: str

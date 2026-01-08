@@ -33,11 +33,11 @@ class UpdateDashboardRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_name: 自定义监控看板名称
+        :param dashboard_name: **参数解释** 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 字符串包含中文字符，字母，数字，下划线（_），横线（-）长度为[1,128]个字符 **默认取值** 不涉及 
         :type dashboard_name: str
-        :param is_favorite: 监控看板是否标记收藏, true: 收藏, false: 未收藏
+        :param is_favorite: **参数解释** 监控看板是否标记收藏 **约束限制** 不涉及 **取值范围** - true 收藏 - false 未收藏 **默认取值** 不涉及 
         :type is_favorite: bool
-        :param row_widget_num: 监控视图展示模式，0表示自定义坐标，1代表每行一个
+        :param row_widget_num: **参数解释** 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0 自定义坐标 - 1 每行一个 - 2 每行两个 - 3 每行三个 - 4 每行四个 **默认取值** 不涉及 
         :type row_widget_num: int
         :param extend_info: 
         :type extend_info: :class:`huaweicloudsdkces.v2.ExtendInfo`
@@ -63,7 +63,7 @@ class UpdateDashboardRequestBody:
     def dashboard_name(self):
         r"""Gets the dashboard_name of this UpdateDashboardRequestBody.
 
-        自定义监控看板名称
+        **参数解释** 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 字符串包含中文字符，字母，数字，下划线（_），横线（-）长度为[1,128]个字符 **默认取值** 不涉及 
 
         :return: The dashboard_name of this UpdateDashboardRequestBody.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateDashboardRequestBody:
     def dashboard_name(self, dashboard_name):
         r"""Sets the dashboard_name of this UpdateDashboardRequestBody.
 
-        自定义监控看板名称
+        **参数解释** 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 字符串包含中文字符，字母，数字，下划线（_），横线（-）长度为[1,128]个字符 **默认取值** 不涉及 
 
         :param dashboard_name: The dashboard_name of this UpdateDashboardRequestBody.
         :type dashboard_name: str
@@ -85,7 +85,7 @@ class UpdateDashboardRequestBody:
     def is_favorite(self):
         r"""Gets the is_favorite of this UpdateDashboardRequestBody.
 
-        监控看板是否标记收藏, true: 收藏, false: 未收藏
+        **参数解释** 监控看板是否标记收藏 **约束限制** 不涉及 **取值范围** - true 收藏 - false 未收藏 **默认取值** 不涉及 
 
         :return: The is_favorite of this UpdateDashboardRequestBody.
         :rtype: bool
@@ -96,7 +96,7 @@ class UpdateDashboardRequestBody:
     def is_favorite(self, is_favorite):
         r"""Sets the is_favorite of this UpdateDashboardRequestBody.
 
-        监控看板是否标记收藏, true: 收藏, false: 未收藏
+        **参数解释** 监控看板是否标记收藏 **约束限制** 不涉及 **取值范围** - true 收藏 - false 未收藏 **默认取值** 不涉及 
 
         :param is_favorite: The is_favorite of this UpdateDashboardRequestBody.
         :type is_favorite: bool
@@ -107,7 +107,7 @@ class UpdateDashboardRequestBody:
     def row_widget_num(self):
         r"""Gets the row_widget_num of this UpdateDashboardRequestBody.
 
-        监控视图展示模式，0表示自定义坐标，1代表每行一个
+        **参数解释** 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0 自定义坐标 - 1 每行一个 - 2 每行两个 - 3 每行三个 - 4 每行四个 **默认取值** 不涉及 
 
         :return: The row_widget_num of this UpdateDashboardRequestBody.
         :rtype: int
@@ -118,7 +118,7 @@ class UpdateDashboardRequestBody:
     def row_widget_num(self, row_widget_num):
         r"""Sets the row_widget_num of this UpdateDashboardRequestBody.
 
-        监控视图展示模式，0表示自定义坐标，1代表每行一个
+        **参数解释** 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0 自定义坐标 - 1 每行一个 - 2 每行两个 - 3 每行三个 - 4 每行四个 **默认取值** 不涉及 
 
         :param row_widget_num: The row_widget_num of this UpdateDashboardRequestBody.
         :type row_widget_num: int

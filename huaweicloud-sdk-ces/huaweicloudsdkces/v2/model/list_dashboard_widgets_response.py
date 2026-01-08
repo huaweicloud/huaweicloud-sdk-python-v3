@@ -28,7 +28,7 @@ class ListDashboardWidgetsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param widgets: 监控视图列表
+        :param widgets: **参数解释** 监控视图列表 
         :type widgets: list[:class:`huaweicloudsdkces.v2.WidgetInfoWithId`]
         """
         
@@ -44,7 +44,7 @@ class ListDashboardWidgetsResponse(SdkResponse):
     def widgets(self):
         r"""Gets the widgets of this ListDashboardWidgetsResponse.
 
-        监控视图列表
+        **参数解释** 监控视图列表 
 
         :return: The widgets of this ListDashboardWidgetsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.WidgetInfoWithId`]
@@ -55,7 +55,7 @@ class ListDashboardWidgetsResponse(SdkResponse):
     def widgets(self, widgets):
         r"""Sets the widgets of this ListDashboardWidgetsResponse.
 
-        监控视图列表
+        **参数解释** 监控视图列表 
 
         :param widgets: The widgets of this ListDashboardWidgetsResponse.
         :type widgets: list[:class:`huaweicloudsdkces.v2.WidgetInfoWithId`]

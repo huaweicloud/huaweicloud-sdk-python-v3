@@ -69,11 +69,11 @@ class NatGatewayResponseBody:
         :type name: str
         :param description: 公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
+        :param spec: 公网NAT网关的规格。 取值为： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
         :type spec: str
-        :param status: 公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
+        :param status: 公网NAT网关实例的状态。 取值为:   - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - INACTIVE: 不可用
         :type status: str
-        :param admin_state_up: 解冻/冻结状态。 取值范围： - \&quot;true\&quot;：解冻 - \&quot;false\&quot;：冻结
+        :param admin_state_up: 解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
         :type admin_state_up: bool
         :param created_at: 公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
         :type created_at: datetime
@@ -250,7 +250,7 @@ class NatGatewayResponseBody:
     def spec(self):
         r"""Gets the spec of this NatGatewayResponseBody.
 
-        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
+        公网NAT网关的规格。 取值为： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
 
         :return: The spec of this NatGatewayResponseBody.
         :rtype: str
@@ -261,7 +261,7 @@ class NatGatewayResponseBody:
     def spec(self, spec):
         r"""Sets the spec of this NatGatewayResponseBody.
 
-        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
+        公网NAT网关的规格。 取值为： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
 
         :param spec: The spec of this NatGatewayResponseBody.
         :type spec: str
@@ -272,7 +272,7 @@ class NatGatewayResponseBody:
     def status(self):
         r"""Gets the status of this NatGatewayResponseBody.
 
-        公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
+        公网NAT网关实例的状态。 取值为:   - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - INACTIVE: 不可用
 
         :return: The status of this NatGatewayResponseBody.
         :rtype: str
@@ -283,7 +283,7 @@ class NatGatewayResponseBody:
     def status(self, status):
         r"""Sets the status of this NatGatewayResponseBody.
 
-        公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
+        公网NAT网关实例的状态。 取值为:   - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - INACTIVE: 不可用
 
         :param status: The status of this NatGatewayResponseBody.
         :type status: str
@@ -294,7 +294,7 @@ class NatGatewayResponseBody:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this NatGatewayResponseBody.
 
-        解冻/冻结状态。 取值范围： - \"true\"：解冻 - \"false\"：冻结
+        解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
 
         :return: The admin_state_up of this NatGatewayResponseBody.
         :rtype: bool
@@ -305,7 +305,7 @@ class NatGatewayResponseBody:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this NatGatewayResponseBody.
 
-        解冻/冻结状态。 取值范围： - \"true\"：解冻 - \"false\"：冻结
+        解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
 
         :param admin_state_up: The admin_state_up of this NatGatewayResponseBody.
         :type admin_state_up: bool

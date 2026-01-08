@@ -33,13 +33,13 @@ class UpdateWidgetInfoLocation:
 
         The model defined in huaweicloud sdk
 
-        :param top: 监控视图的上坐标
+        :param top: **参数解释** 监控视图的上坐标 **约束限制** 不涉及 **取值范围** 坐标的取值范围[0,2147483647] **默认取值** 不涉及 
         :type top: int
-        :param left: 监控视图的左坐标
+        :param left: **参数解释** 监控视图的左坐标 **约束限制** 不涉及 **取值范围** 坐标的取值范围[0,9] **默认取值** 不涉及 
         :type left: int
-        :param width: 监控视图图表宽度
+        :param width: **参数解释** 监控视图图表宽度 **约束限制** 不涉及 **取值范围** 宽度的取值范围[3,12] **默认取值** 不涉及 
         :type width: int
-        :param height: 监控视图图表高度
+        :param height: **参数解释** 监控视图图表高度 **约束限制** 不涉及 **取值范围** 高度的取值范围[3,2147483647] **默认取值** 不涉及 
         :type height: int
         """
         
@@ -60,7 +60,7 @@ class UpdateWidgetInfoLocation:
     def top(self):
         r"""Gets the top of this UpdateWidgetInfoLocation.
 
-        监控视图的上坐标
+        **参数解释** 监控视图的上坐标 **约束限制** 不涉及 **取值范围** 坐标的取值范围[0,2147483647] **默认取值** 不涉及 
 
         :return: The top of this UpdateWidgetInfoLocation.
         :rtype: int
@@ -71,7 +71,7 @@ class UpdateWidgetInfoLocation:
     def top(self, top):
         r"""Sets the top of this UpdateWidgetInfoLocation.
 
-        监控视图的上坐标
+        **参数解释** 监控视图的上坐标 **约束限制** 不涉及 **取值范围** 坐标的取值范围[0,2147483647] **默认取值** 不涉及 
 
         :param top: The top of this UpdateWidgetInfoLocation.
         :type top: int
@@ -82,7 +82,7 @@ class UpdateWidgetInfoLocation:
     def left(self):
         r"""Gets the left of this UpdateWidgetInfoLocation.
 
-        监控视图的左坐标
+        **参数解释** 监控视图的左坐标 **约束限制** 不涉及 **取值范围** 坐标的取值范围[0,9] **默认取值** 不涉及 
 
         :return: The left of this UpdateWidgetInfoLocation.
         :rtype: int
@@ -93,7 +93,7 @@ class UpdateWidgetInfoLocation:
     def left(self, left):
         r"""Sets the left of this UpdateWidgetInfoLocation.
 
-        监控视图的左坐标
+        **参数解释** 监控视图的左坐标 **约束限制** 不涉及 **取值范围** 坐标的取值范围[0,9] **默认取值** 不涉及 
 
         :param left: The left of this UpdateWidgetInfoLocation.
         :type left: int
@@ -104,7 +104,7 @@ class UpdateWidgetInfoLocation:
     def width(self):
         r"""Gets the width of this UpdateWidgetInfoLocation.
 
-        监控视图图表宽度
+        **参数解释** 监控视图图表宽度 **约束限制** 不涉及 **取值范围** 宽度的取值范围[3,12] **默认取值** 不涉及 
 
         :return: The width of this UpdateWidgetInfoLocation.
         :rtype: int
@@ -115,7 +115,7 @@ class UpdateWidgetInfoLocation:
     def width(self, width):
         r"""Sets the width of this UpdateWidgetInfoLocation.
 
-        监控视图图表宽度
+        **参数解释** 监控视图图表宽度 **约束限制** 不涉及 **取值范围** 宽度的取值范围[3,12] **默认取值** 不涉及 
 
         :param width: The width of this UpdateWidgetInfoLocation.
         :type width: int
@@ -126,7 +126,7 @@ class UpdateWidgetInfoLocation:
     def height(self):
         r"""Gets the height of this UpdateWidgetInfoLocation.
 
-        监控视图图表高度
+        **参数解释** 监控视图图表高度 **约束限制** 不涉及 **取值范围** 高度的取值范围[3,2147483647] **默认取值** 不涉及 
 
         :return: The height of this UpdateWidgetInfoLocation.
         :rtype: int
@@ -137,7 +137,7 @@ class UpdateWidgetInfoLocation:
     def height(self, height):
         r"""Sets the height of this UpdateWidgetInfoLocation.
 
-        监控视图图表高度
+        **参数解释** 监控视图图表高度 **约束限制** 不涉及 **取值范围** 高度的取值范围[3,2147483647] **默认取值** 不涉及 
 
         :param height: The height of this UpdateWidgetInfoLocation.
         :type height: int

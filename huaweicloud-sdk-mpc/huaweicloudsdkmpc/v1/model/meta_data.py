@@ -19,6 +19,7 @@ class MetaData:
         'duration_ms': 'float',
         'duration': 'int',
         'format': 'str',
+        'md5': 'str',
         'bitrate': 'int',
         'video': 'list[VideoInfo]',
         'audio': 'list[AudioInfo]'
@@ -29,12 +30,13 @@ class MetaData:
         'duration_ms': 'duration_ms',
         'duration': 'duration',
         'format': 'format',
+        'md5': 'md5',
         'bitrate': 'bitrate',
         'video': 'video',
         'audio': 'audio'
     }
 
-    def __init__(self, size=None, duration_ms=None, duration=None, format=None, bitrate=None, video=None, audio=None):
+    def __init__(self, size=None, duration_ms=None, duration=None, format=None, md5=None, bitrate=None, video=None, audio=None):
         r"""MetaData
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class MetaData:
         :type duration: int
         :param format: 文件封装格式。 
         :type format: str
+        :param md5: 视频的 md5 值。 
+        :type md5: str
         :param bitrate: 总码率。单位：bit/秒 
         :type bitrate: int
         :param video: 视频流元数据。 
@@ -61,6 +65,7 @@ class MetaData:
         self._duration_ms = None
         self._duration = None
         self._format = None
+        self._md5 = None
         self._bitrate = None
         self._video = None
         self._audio = None
@@ -74,6 +79,8 @@ class MetaData:
             self.duration = duration
         if format is not None:
             self.format = format
+        if md5 is not None:
+            self.md5 = md5
         if bitrate is not None:
             self.bitrate = bitrate
         if video is not None:
@@ -168,6 +175,28 @@ class MetaData:
         :type format: str
         """
         self._format = format
+
+    @property
+    def md5(self):
+        r"""Gets the md5 of this MetaData.
+
+        视频的 md5 值。 
+
+        :return: The md5 of this MetaData.
+        :rtype: str
+        """
+        return self._md5
+
+    @md5.setter
+    def md5(self, md5):
+        r"""Sets the md5 of this MetaData.
+
+        视频的 md5 值。 
+
+        :param md5: The md5 of this MetaData.
+        :type md5: str
+        """
+        self._md5 = md5
 
     @property
     def bitrate(self):

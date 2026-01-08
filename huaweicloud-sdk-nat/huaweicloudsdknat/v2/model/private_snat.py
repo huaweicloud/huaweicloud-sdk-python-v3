@@ -67,7 +67,7 @@ class PrivateSnat:
         :type updated_at: datetime
         :param enterprise_project_id: 企业项目id
         :type enterprise_project_id: str
-        :param status: 私网NAT的SNAT规则状态。 取值为： \&quot;ACTIVE\&quot;：正常运行 \&quot;FROZEN\&quot;：冻结 \&quot;INACTIVE\&quot;：不可用
+        :param status: 私网NAT的SNAT规则状态。 取值为： - ACTIVE：正常运行 - FROZEN：冻结 - INACTIVE：不可用
         :type status: str
         """
         
@@ -333,7 +333,7 @@ class PrivateSnat:
     def status(self):
         r"""Gets the status of this PrivateSnat.
 
-        私网NAT的SNAT规则状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
+        私网NAT的SNAT规则状态。 取值为： - ACTIVE：正常运行 - FROZEN：冻结 - INACTIVE：不可用
 
         :return: The status of this PrivateSnat.
         :rtype: str
@@ -344,7 +344,7 @@ class PrivateSnat:
     def status(self, status):
         r"""Sets the status of this PrivateSnat.
 
-        私网NAT的SNAT规则状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
+        私网NAT的SNAT规则状态。 取值为： - ACTIVE：正常运行 - FROZEN：冻结 - INACTIVE：不可用
 
         :param status: The status of this PrivateSnat.
         :type status: str

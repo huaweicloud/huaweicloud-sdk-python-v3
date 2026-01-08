@@ -15,6 +15,7 @@ class ListEnhanceFullSqlsRequestBody:
     sensitive_list = []
 
     openapi_types = {
+        'node_id': 'str',
         'limit': 'int',
         'begin_time': 'str',
         'end_time': 'str',
@@ -36,6 +37,7 @@ class ListEnhanceFullSqlsRequestBody:
     }
 
     attribute_map = {
+        'node_id': 'node_id',
         'limit': 'limit',
         'begin_time': 'begin_time',
         'end_time': 'end_time',
@@ -56,11 +58,13 @@ class ListEnhanceFullSqlsRequestBody:
         'compare_conditions': 'compare_conditions'
     }
 
-    def __init__(self, limit=None, begin_time=None, end_time=None, query=None, sql_id=None, sql_exec_id=None, transaction_id=None, trace_id=None, db_name=None, schema_name=None, username=None, client_addr=None, client_port=None, order_by=None, is_slow_sql=None, order=None, multi_queries=None, compare_conditions=None):
+    def __init__(self, node_id=None, limit=None, begin_time=None, end_time=None, query=None, sql_id=None, sql_exec_id=None, transaction_id=None, trace_id=None, db_name=None, schema_name=None, username=None, client_addr=None, client_port=None, order_by=None, is_slow_sql=None, order=None, multi_queries=None, compare_conditions=None):
         r"""ListEnhanceFullSqlsRequestBody
 
         The model defined in huaweicloud sdk
 
+        :param node_id: **参数解释**: 节点ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+        :type node_id: str
         :param limit: **参数解释**: 最大查询记录数。例如该参数设定为10，则查询结果最多只显示10条记录。 **约束限制**: 对于公有云25.5.0.1及以上版本，此参数弃用，请勿传值。通过系统系统参数控制最大返回记录数量，默认为200。 **取值范围**: [1, 1000] **默认取值**: 默认为10。
         :type limit: int
         :param begin_time: **参数解释**: 查询开始时间。 **约束限制**: ISO 8601 UTC格式。模式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量。 时区中的+号需要进行URL编码，编码为%2B，时区中的-号无需编码。 例如：北京时间偏移显示为+0800，begin_time&#x3D;2024-03-15T17:20:33+0800，传参时编码为begin_time&#x3D;2024-03-15T17:20:33%2B0800。 **取值范围**: 时间区间（begin_time ~ end_time）不能超过30天。 **默认取值**: 不涉及。
@@ -101,6 +105,7 @@ class ListEnhanceFullSqlsRequestBody:
         
         
 
+        self._node_id = None
         self._limit = None
         self._begin_time = None
         self._end_time = None
@@ -121,6 +126,8 @@ class ListEnhanceFullSqlsRequestBody:
         self._compare_conditions = None
         self.discriminator = None
 
+        if node_id is not None:
+            self.node_id = node_id
         if limit is not None:
             self.limit = limit
         self.begin_time = begin_time
@@ -155,6 +162,28 @@ class ListEnhanceFullSqlsRequestBody:
             self.multi_queries = multi_queries
         if compare_conditions is not None:
             self.compare_conditions = compare_conditions
+
+    @property
+    def node_id(self):
+        r"""Gets the node_id of this ListEnhanceFullSqlsRequestBody.
+
+        **参数解释**: 节点ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :return: The node_id of this ListEnhanceFullSqlsRequestBody.
+        :rtype: str
+        """
+        return self._node_id
+
+    @node_id.setter
+    def node_id(self, node_id):
+        r"""Sets the node_id of this ListEnhanceFullSqlsRequestBody.
+
+        **参数解释**: 节点ID。 **约束限制**: 不涉及。 **取值范围**: 不涉及。 **默认取值**: 不涉及。
+
+        :param node_id: The node_id of this ListEnhanceFullSqlsRequestBody.
+        :type node_id: str
+        """
+        self._node_id = node_id
 
     @property
     def limit(self):

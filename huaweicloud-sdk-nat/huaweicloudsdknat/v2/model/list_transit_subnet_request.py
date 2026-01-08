@@ -57,7 +57,7 @@ class ListTransitSubnetRequest:
         :type vpc_id: list[str]
         :param virsubnet_id: 中转子网的子网ID
         :type virsubnet_id: list[str]
-        :param status: 中转子网状态。 取值范围： ACTIVE： 当前资源状态正常。 INACTIVE： 不可用。
+        :param status: 中转子网状态。 取值范围： - ACTIVE： 当前资源状态正常。 - INACTIVE： 不可用。
         :type status: list[str]
         :param limit: 功能说明：每页返回的个数。 取值范围：1~2000。 默认值：2000
         :type limit: int
@@ -238,7 +238,7 @@ class ListTransitSubnetRequest:
     def status(self):
         r"""Gets the status of this ListTransitSubnetRequest.
 
-        中转子网状态。 取值范围： ACTIVE： 当前资源状态正常。 INACTIVE： 不可用。
+        中转子网状态。 取值范围： - ACTIVE： 当前资源状态正常。 - INACTIVE： 不可用。
 
         :return: The status of this ListTransitSubnetRequest.
         :rtype: list[str]
@@ -249,7 +249,7 @@ class ListTransitSubnetRequest:
     def status(self, status):
         r"""Sets the status of this ListTransitSubnetRequest.
 
-        中转子网状态。 取值范围： ACTIVE： 当前资源状态正常。 INACTIVE： 不可用。
+        中转子网状态。 取值范围： - ACTIVE： 当前资源状态正常。 - INACTIVE： 不可用。
 
         :param status: The status of this ListTransitSubnetRequest.
         :type status: list[str]

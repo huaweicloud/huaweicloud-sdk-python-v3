@@ -20,8 +20,9 @@ class RebuildDesktopPoolReq:
         'os_type': 'str',
         'delay_time': 'int',
         'message': 'str',
-        'order_id': 'str',
-        'is_fix': 'bool'
+        'is_fix': 'bool',
+        'handle_type': 'str',
+        'desktop_ids': 'list[str]'
     }
 
     attribute_map = {
@@ -30,11 +31,12 @@ class RebuildDesktopPoolReq:
         'os_type': 'os_type',
         'delay_time': 'delay_time',
         'message': 'message',
-        'order_id': 'order_id',
-        'is_fix': 'is_fix'
+        'is_fix': 'is_fix',
+        'handle_type': 'handle_type',
+        'desktop_ids': 'desktop_ids'
     }
 
-    def __init__(self, image_type=None, image_id=None, os_type=None, delay_time=None, message=None, order_id=None, is_fix=None):
+    def __init__(self, image_type=None, image_id=None, os_type=None, delay_time=None, message=None, is_fix=None, handle_type=None, desktop_ids=None):
         r"""RebuildDesktopPoolReq
 
         The model defined in huaweicloud sdk
@@ -49,10 +51,12 @@ class RebuildDesktopPoolReq:
         :type delay_time: int
         :param message: 下发重建系统盘任务时，给用户发送的提示信息。
         :type message: str
-        :param order_id: 订单ID，包周期桌面重建系统盘，涉及收费镜像时需传。
-        :type order_id: str
         :param is_fix: 是否是修复行为，修复行为只修复镜像ID与桌面池镜像ID不一致的桌面，用于桌面池切换镜像失败场景的修复。
         :type is_fix: bool
+        :param handle_type: 处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+        :type handle_type: str
+        :param desktop_ids: 桌面id
+        :type desktop_ids: list[str]
         """
         
         
@@ -62,8 +66,9 @@ class RebuildDesktopPoolReq:
         self._os_type = None
         self._delay_time = None
         self._message = None
-        self._order_id = None
         self._is_fix = None
+        self._handle_type = None
+        self._desktop_ids = None
         self.discriminator = None
 
         if image_type is not None:
@@ -75,10 +80,12 @@ class RebuildDesktopPoolReq:
             self.delay_time = delay_time
         if message is not None:
             self.message = message
-        if order_id is not None:
-            self.order_id = order_id
         if is_fix is not None:
             self.is_fix = is_fix
+        if handle_type is not None:
+            self.handle_type = handle_type
+        if desktop_ids is not None:
+            self.desktop_ids = desktop_ids
 
     @property
     def image_type(self):
@@ -191,28 +198,6 @@ class RebuildDesktopPoolReq:
         self._message = message
 
     @property
-    def order_id(self):
-        r"""Gets the order_id of this RebuildDesktopPoolReq.
-
-        订单ID，包周期桌面重建系统盘，涉及收费镜像时需传。
-
-        :return: The order_id of this RebuildDesktopPoolReq.
-        :rtype: str
-        """
-        return self._order_id
-
-    @order_id.setter
-    def order_id(self, order_id):
-        r"""Sets the order_id of this RebuildDesktopPoolReq.
-
-        订单ID，包周期桌面重建系统盘，涉及收费镜像时需传。
-
-        :param order_id: The order_id of this RebuildDesktopPoolReq.
-        :type order_id: str
-        """
-        self._order_id = order_id
-
-    @property
     def is_fix(self):
         r"""Gets the is_fix of this RebuildDesktopPoolReq.
 
@@ -233,6 +218,50 @@ class RebuildDesktopPoolReq:
         :type is_fix: bool
         """
         self._is_fix = is_fix
+
+    @property
+    def handle_type(self):
+        r"""Gets the handle_type of this RebuildDesktopPoolReq.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :return: The handle_type of this RebuildDesktopPoolReq.
+        :rtype: str
+        """
+        return self._handle_type
+
+    @handle_type.setter
+    def handle_type(self, handle_type):
+        r"""Sets the handle_type of this RebuildDesktopPoolReq.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :param handle_type: The handle_type of this RebuildDesktopPoolReq.
+        :type handle_type: str
+        """
+        self._handle_type = handle_type
+
+    @property
+    def desktop_ids(self):
+        r"""Gets the desktop_ids of this RebuildDesktopPoolReq.
+
+        桌面id
+
+        :return: The desktop_ids of this RebuildDesktopPoolReq.
+        :rtype: list[str]
+        """
+        return self._desktop_ids
+
+    @desktop_ids.setter
+    def desktop_ids(self, desktop_ids):
+        r"""Sets the desktop_ids of this RebuildDesktopPoolReq.
+
+        桌面id
+
+        :param desktop_ids: The desktop_ids of this RebuildDesktopPoolReq.
+        :type desktop_ids: list[str]
+        """
+        self._desktop_ids = desktop_ids
 
     def to_dict(self):
         result = {}

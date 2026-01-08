@@ -17,25 +17,25 @@ class ListFullSqlSwitchesResponse(SdkResponse):
 
     openapi_types = {
         'total_count': 'int',
-        'full_sql_switchs': 'list[FullSqlSwitchResult]',
+        'full_sql_switches': 'list[FullSqlSwitchResult]',
         'allowed_sql_types': 'list[SqlTypeRangeConfigResult]'
     }
 
     attribute_map = {
         'total_count': 'total_count',
-        'full_sql_switchs': 'full_sql_switchs',
+        'full_sql_switches': 'full_sql_switches',
         'allowed_sql_types': 'allowed_sql_types'
     }
 
-    def __init__(self, total_count=None, full_sql_switchs=None, allowed_sql_types=None):
+    def __init__(self, total_count=None, full_sql_switches=None, allowed_sql_types=None):
         r"""ListFullSqlSwitchesResponse
 
         The model defined in huaweicloud sdk
 
         :param total_count: **参数解释**: 总记录数量。 **取值范围**: 不涉及。
         :type total_count: int
-        :param full_sql_switchs: **参数解释**: 开关记录列表。
-        :type full_sql_switchs: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.FullSqlSwitchResult`]
+        :param full_sql_switches: **参数解释**: 开关记录列表。
+        :type full_sql_switches: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.FullSqlSwitchResult`]
         :param allowed_sql_types: **参数解释**: 可选择的SQL采集类别清单列表。供开启全量SQL时做配置下发参考。
         :type allowed_sql_types: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.SqlTypeRangeConfigResult`]
         """
@@ -43,14 +43,14 @@ class ListFullSqlSwitchesResponse(SdkResponse):
         super().__init__()
 
         self._total_count = None
-        self._full_sql_switchs = None
+        self._full_sql_switches = None
         self._allowed_sql_types = None
         self.discriminator = None
 
         if total_count is not None:
             self.total_count = total_count
-        if full_sql_switchs is not None:
-            self.full_sql_switchs = full_sql_switchs
+        if full_sql_switches is not None:
+            self.full_sql_switches = full_sql_switches
         if allowed_sql_types is not None:
             self.allowed_sql_types = allowed_sql_types
 
@@ -77,26 +77,26 @@ class ListFullSqlSwitchesResponse(SdkResponse):
         self._total_count = total_count
 
     @property
-    def full_sql_switchs(self):
-        r"""Gets the full_sql_switchs of this ListFullSqlSwitchesResponse.
+    def full_sql_switches(self):
+        r"""Gets the full_sql_switches of this ListFullSqlSwitchesResponse.
 
         **参数解释**: 开关记录列表。
 
-        :return: The full_sql_switchs of this ListFullSqlSwitchesResponse.
+        :return: The full_sql_switches of this ListFullSqlSwitchesResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.FullSqlSwitchResult`]
         """
-        return self._full_sql_switchs
+        return self._full_sql_switches
 
-    @full_sql_switchs.setter
-    def full_sql_switchs(self, full_sql_switchs):
-        r"""Sets the full_sql_switchs of this ListFullSqlSwitchesResponse.
+    @full_sql_switches.setter
+    def full_sql_switches(self, full_sql_switches):
+        r"""Sets the full_sql_switches of this ListFullSqlSwitchesResponse.
 
         **参数解释**: 开关记录列表。
 
-        :param full_sql_switchs: The full_sql_switchs of this ListFullSqlSwitchesResponse.
-        :type full_sql_switchs: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.FullSqlSwitchResult`]
+        :param full_sql_switches: The full_sql_switches of this ListFullSqlSwitchesResponse.
+        :type full_sql_switches: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.FullSqlSwitchResult`]
         """
-        self._full_sql_switchs = full_sql_switchs
+        self._full_sql_switches = full_sql_switches
 
     @property
     def allowed_sql_types(self):

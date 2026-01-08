@@ -29,7 +29,7 @@ class BatchOperateResourceTagsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param action: 功能说明：操作标识。 取值范围： create（创建） delete（删除）
+        :param action: 功能说明：操作标识。 取值范围： - create：创建 - delete：删除
         :type action: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdknat.v2.Tag`]
@@ -48,7 +48,7 @@ class BatchOperateResourceTagsRequestBody:
     def action(self):
         r"""Gets the action of this BatchOperateResourceTagsRequestBody.
 
-        功能说明：操作标识。 取值范围： create（创建） delete（删除）
+        功能说明：操作标识。 取值范围： - create：创建 - delete：删除
 
         :return: The action of this BatchOperateResourceTagsRequestBody.
         :rtype: str
@@ -59,7 +59,7 @@ class BatchOperateResourceTagsRequestBody:
     def action(self, action):
         r"""Sets the action of this BatchOperateResourceTagsRequestBody.
 
-        功能说明：操作标识。 取值范围： create（创建） delete（删除）
+        功能说明：操作标识。 取值范围： - create：创建 - delete：删除
 
         :param action: The action of this BatchOperateResourceTagsRequestBody.
         :type action: str

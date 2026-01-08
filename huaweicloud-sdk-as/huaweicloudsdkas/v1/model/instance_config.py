@@ -29,7 +29,8 @@ class InstanceConfig:
         'tenancy': 'str',
         'dedicated_host_id': 'str',
         'multi_flavor_priority_policy': 'str',
-        'market_type': 'str'
+        'market_type': 'str',
+        'cpu_options': 'CpuOptions'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class InstanceConfig:
         'tenancy': 'tenancy',
         'dedicated_host_id': 'dedicated_host_id',
         'multi_flavor_priority_policy': 'multi_flavor_priority_policy',
-        'market_type': 'market_type'
+        'market_type': 'market_type',
+        'cpu_options': 'cpu_options'
     }
 
-    def __init__(self, instance_id=None, flavor_ref=None, image_ref=None, disk=None, key_name=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, multi_flavor_priority_policy=None, market_type=None):
+    def __init__(self, instance_id=None, flavor_ref=None, image_ref=None, disk=None, key_name=None, personality=None, public_ip=None, user_data=None, metadata=None, security_groups=None, server_group_id=None, tenancy=None, dedicated_host_id=None, multi_flavor_priority_policy=None, market_type=None, cpu_options=None):
         r"""InstanceConfig
 
         The model defined in huaweicloud sdk
@@ -85,6 +87,8 @@ class InstanceConfig:
         :type multi_flavor_priority_policy: str
         :param market_type: 云服务器的计费模式，可以选择竞价计费或按需计费，取值如下：按需计费：不指定该字段。竞价计费：spot
         :type market_type: str
+        :param cpu_options: 
+        :type cpu_options: :class:`huaweicloudsdkas.v1.CpuOptions`
         """
         
         
@@ -104,6 +108,7 @@ class InstanceConfig:
         self._dedicated_host_id = None
         self._multi_flavor_priority_policy = None
         self._market_type = None
+        self._cpu_options = None
         self.discriminator = None
 
         if instance_id is not None:
@@ -136,6 +141,8 @@ class InstanceConfig:
             self.multi_flavor_priority_policy = multi_flavor_priority_policy
         if market_type is not None:
             self.market_type = market_type
+        if cpu_options is not None:
+            self.cpu_options = cpu_options
 
     @property
     def instance_id(self):
@@ -458,6 +465,24 @@ class InstanceConfig:
         :type market_type: str
         """
         self._market_type = market_type
+
+    @property
+    def cpu_options(self):
+        r"""Gets the cpu_options of this InstanceConfig.
+
+        :return: The cpu_options of this InstanceConfig.
+        :rtype: :class:`huaweicloudsdkas.v1.CpuOptions`
+        """
+        return self._cpu_options
+
+    @cpu_options.setter
+    def cpu_options(self, cpu_options):
+        r"""Sets the cpu_options of this InstanceConfig.
+
+        :param cpu_options: The cpu_options of this InstanceConfig.
+        :type cpu_options: :class:`huaweicloudsdkas.v1.CpuOptions`
+        """
+        self._cpu_options = cpu_options
 
     def to_dict(self):
         result = {}

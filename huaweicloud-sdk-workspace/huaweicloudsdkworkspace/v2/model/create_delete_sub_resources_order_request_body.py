@@ -17,16 +17,18 @@ class CreateDeleteSubResourcesOrderRequestBody:
     openapi_types = {
         'desktop_pool_id': 'str',
         'desktop_ids': 'list[str]',
-        'promotion_plan_id': 'str'
+        'promotion_plan_id': 'str',
+        'handle_type': 'str'
     }
 
     attribute_map = {
         'desktop_pool_id': 'desktop_pool_id',
         'desktop_ids': 'desktop_ids',
-        'promotion_plan_id': 'promotion_plan_id'
+        'promotion_plan_id': 'promotion_plan_id',
+        'handle_type': 'handle_type'
     }
 
-    def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None):
+    def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, handle_type=None):
         r"""CreateDeleteSubResourcesOrderRequestBody
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class CreateDeleteSubResourcesOrderRequestBody:
         :type desktop_ids: list[str]
         :param promotion_plan_id: 促销计划ID。
         :type promotion_plan_id: str
+        :param handle_type: 处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+        :type handle_type: str
         """
         
         
@@ -44,6 +48,7 @@ class CreateDeleteSubResourcesOrderRequestBody:
         self._desktop_pool_id = None
         self._desktop_ids = None
         self._promotion_plan_id = None
+        self._handle_type = None
         self.discriminator = None
 
         if desktop_pool_id is not None:
@@ -52,6 +57,8 @@ class CreateDeleteSubResourcesOrderRequestBody:
             self.desktop_ids = desktop_ids
         if promotion_plan_id is not None:
             self.promotion_plan_id = promotion_plan_id
+        if handle_type is not None:
+            self.handle_type = handle_type
 
     @property
     def desktop_pool_id(self):
@@ -118,6 +125,28 @@ class CreateDeleteSubResourcesOrderRequestBody:
         :type promotion_plan_id: str
         """
         self._promotion_plan_id = promotion_plan_id
+
+    @property
+    def handle_type(self):
+        r"""Gets the handle_type of this CreateDeleteSubResourcesOrderRequestBody.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :return: The handle_type of this CreateDeleteSubResourcesOrderRequestBody.
+        :rtype: str
+        """
+        return self._handle_type
+
+    @handle_type.setter
+    def handle_type(self, handle_type):
+        r"""Sets the handle_type of this CreateDeleteSubResourcesOrderRequestBody.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :param handle_type: The handle_type of this CreateDeleteSubResourcesOrderRequestBody.
+        :type handle_type: str
+        """
+        self._handle_type = handle_type
 
     def to_dict(self):
         result = {}

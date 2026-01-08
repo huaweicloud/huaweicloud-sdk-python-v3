@@ -15,7 +15,7 @@ class SetNewBackupPolicyRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'backup_policy': 'BackupPolicyInfo'
+        'backup_policy': 'BackupPolicyInfoOption'
     }
 
     attribute_map = {
@@ -28,7 +28,7 @@ class SetNewBackupPolicyRequestBody:
         The model defined in huaweicloud sdk
 
         :param backup_policy: 
-        :type backup_policy: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfo`
+        :type backup_policy: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfoOption`
         """
         
         
@@ -43,7 +43,7 @@ class SetNewBackupPolicyRequestBody:
         r"""Gets the backup_policy of this SetNewBackupPolicyRequestBody.
 
         :return: The backup_policy of this SetNewBackupPolicyRequestBody.
-        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfo`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfoOption`
         """
         return self._backup_policy
 
@@ -52,7 +52,7 @@ class SetNewBackupPolicyRequestBody:
         r"""Sets the backup_policy of this SetNewBackupPolicyRequestBody.
 
         :param backup_policy: The backup_policy of this SetNewBackupPolicyRequestBody.
-        :type backup_policy: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfo`
+        :type backup_policy: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfoOption`
         """
         self._backup_policy = backup_policy
 

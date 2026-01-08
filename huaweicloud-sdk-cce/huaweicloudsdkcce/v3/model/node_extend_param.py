@@ -43,7 +43,8 @@ class NodeExtendParam:
         'kube_reserved_storage': 'int',
         'system_reserved_storage': 'int',
         'init_node_password': 'str',
-        'security_reinforcement_type': 'str'
+        'security_reinforcement_type': 'str',
+        'server_metadata_http_tokens': 'str'
     }
 
     attribute_map = {
@@ -75,10 +76,11 @@ class NodeExtendParam:
         'kube_reserved_storage': 'kubeReservedStorage',
         'system_reserved_storage': 'systemReservedStorage',
         'init_node_password': 'init-node-password',
-        'security_reinforcement_type': 'securityReinforcementType'
+        'security_reinforcement_type': 'securityReinforcementType',
+        'server_metadata_http_tokens': 'serverMetadataHttpTokens'
     }
 
-    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, container_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, charging_mode=None, market_type=None, spot_price=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, kube_reserved_cpu=None, system_reserved_cpu=None, kube_reserved_pid=None, system_reserved_pid=None, kube_reserved_storage=None, system_reserved_storage=None, init_node_password=None, security_reinforcement_type=None):
+    def __init__(self, ecsperformancetype=None, order_id=None, product_id=None, max_pods=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, docker_lvm_config_override=None, docker_base_size=None, container_base_size=None, public_key=None, alpha_cce_pre_install=None, alpha_cce_post_install=None, alpha_cce_node_image_id=None, charging_mode=None, market_type=None, spot_price=None, agency_name=None, kube_reserved_mem=None, system_reserved_mem=None, kube_reserved_cpu=None, system_reserved_cpu=None, kube_reserved_pid=None, system_reserved_pid=None, kube_reserved_storage=None, system_reserved_storage=None, init_node_password=None, security_reinforcement_type=None, server_metadata_http_tokens=None):
         r"""NodeExtendParam
 
         The model defined in huaweicloud sdk
@@ -141,6 +143,8 @@ class NodeExtendParam:
         :type init_node_password: str
         :param security_reinforcement_type: **参数解释**： 指定节点安全加固类型，当前仅支持HCE2.0镜像等保2.0三级安全加固。 等保加固会对身份鉴别、访问控制、安全审计、入侵防范、恶意代码防范进行检查并加固。[详情请参见[Huawei Cloud EulerOS 2.0等保2.0三级版镜像概述](https://support.huaweicloud.com/productdesc-hce/hce_sec_0001.html)。](tag:hws) 若未指定此参数，则尝试用原有的值补全。如：原先HCE2.0镜像已配置安全加固，更新节点池时未指定此参数，则仍旧保持安全加固配置，若要取消，需显式指定参数值为\&quot;null\&quot;。 **约束限制**： 不涉及 **取值范围**： - 空值：表示不开启等保加固 - cybersecurity：表示开启等保加固  **默认取值**： 不涉及
         :type security_reinforcement_type: str
+        :param server_metadata_http_tokens: **参数解释**： 是否要求携带token，默认optional。 **约束限制**： 不涉及 **取值范围**： - optional：不要求携带token。 - required：要求必须携带token，即IMDS服务禁用v1版本，启用v2版本。  **默认取值**： optional
+        :type server_metadata_http_tokens: str
         """
         
         
@@ -174,6 +178,7 @@ class NodeExtendParam:
         self._system_reserved_storage = None
         self._init_node_password = None
         self._security_reinforcement_type = None
+        self._server_metadata_http_tokens = None
         self.discriminator = None
 
         if ecsperformancetype is not None:
@@ -234,6 +239,8 @@ class NodeExtendParam:
             self.init_node_password = init_node_password
         if security_reinforcement_type is not None:
             self.security_reinforcement_type = security_reinforcement_type
+        if server_metadata_http_tokens is not None:
+            self.server_metadata_http_tokens = server_metadata_http_tokens
 
     @property
     def ecsperformancetype(self):
@@ -872,6 +879,28 @@ class NodeExtendParam:
         :type security_reinforcement_type: str
         """
         self._security_reinforcement_type = security_reinforcement_type
+
+    @property
+    def server_metadata_http_tokens(self):
+        r"""Gets the server_metadata_http_tokens of this NodeExtendParam.
+
+        **参数解释**： 是否要求携带token，默认optional。 **约束限制**： 不涉及 **取值范围**： - optional：不要求携带token。 - required：要求必须携带token，即IMDS服务禁用v1版本，启用v2版本。  **默认取值**： optional
+
+        :return: The server_metadata_http_tokens of this NodeExtendParam.
+        :rtype: str
+        """
+        return self._server_metadata_http_tokens
+
+    @server_metadata_http_tokens.setter
+    def server_metadata_http_tokens(self, server_metadata_http_tokens):
+        r"""Sets the server_metadata_http_tokens of this NodeExtendParam.
+
+        **参数解释**： 是否要求携带token，默认optional。 **约束限制**： 不涉及 **取值范围**： - optional：不要求携带token。 - required：要求必须携带token，即IMDS服务禁用v1版本，启用v2版本。  **默认取值**： optional
+
+        :param server_metadata_http_tokens: The server_metadata_http_tokens of this NodeExtendParam.
+        :type server_metadata_http_tokens: str
+        """
+        self._server_metadata_http_tokens = server_metadata_http_tokens
 
     def to_dict(self):
         result = {}

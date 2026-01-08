@@ -17,7 +17,6 @@ class UpdatePrivateDnatOption:
     openapi_types = {
         'description': 'str',
         'transit_ip_id': 'str',
-        'transit_ip_address': 'str',
         'network_interface_id': 'str',
         'private_ip_address': 'str',
         'protocol': 'str',
@@ -28,7 +27,6 @@ class UpdatePrivateDnatOption:
     attribute_map = {
         'description': 'description',
         'transit_ip_id': 'transit_ip_id',
-        'transit_ip_address': 'transit_ip_address',
         'network_interface_id': 'network_interface_id',
         'private_ip_address': 'private_ip_address',
         'protocol': 'protocol',
@@ -36,7 +34,7 @@ class UpdatePrivateDnatOption:
         'transit_service_port': 'transit_service_port'
     }
 
-    def __init__(self, description=None, transit_ip_id=None, transit_ip_address=None, network_interface_id=None, private_ip_address=None, protocol=None, internal_service_port=None, transit_service_port=None):
+    def __init__(self, description=None, transit_ip_id=None, network_interface_id=None, private_ip_address=None, protocol=None, internal_service_port=None, transit_service_port=None):
         r"""UpdatePrivateDnatOption
 
         The model defined in huaweicloud sdk
@@ -45,8 +43,6 @@ class UpdatePrivateDnatOption:
         :type description: str
         :param transit_ip_id: 中转IP的ID。
         :type transit_ip_id: str
-        :param transit_ip_address: 中转IP的地址。
-        :type transit_ip_address: str
         :param network_interface_id: 网络接口ID，支持计算、ELB、VIP等实例的网络接口。
         :type network_interface_id: str
         :param private_ip_address: 后端实例的私网IP地址。
@@ -63,7 +59,6 @@ class UpdatePrivateDnatOption:
 
         self._description = None
         self._transit_ip_id = None
-        self._transit_ip_address = None
         self._network_interface_id = None
         self._private_ip_address = None
         self._protocol = None
@@ -75,8 +70,6 @@ class UpdatePrivateDnatOption:
             self.description = description
         if transit_ip_id is not None:
             self.transit_ip_id = transit_ip_id
-        if transit_ip_address is not None:
-            self.transit_ip_address = transit_ip_address
         if network_interface_id is not None:
             self.network_interface_id = network_interface_id
         if private_ip_address is not None:
@@ -131,28 +124,6 @@ class UpdatePrivateDnatOption:
         :type transit_ip_id: str
         """
         self._transit_ip_id = transit_ip_id
-
-    @property
-    def transit_ip_address(self):
-        r"""Gets the transit_ip_address of this UpdatePrivateDnatOption.
-
-        中转IP的地址。
-
-        :return: The transit_ip_address of this UpdatePrivateDnatOption.
-        :rtype: str
-        """
-        return self._transit_ip_address
-
-    @transit_ip_address.setter
-    def transit_ip_address(self, transit_ip_address):
-        r"""Sets the transit_ip_address of this UpdatePrivateDnatOption.
-
-        中转IP的地址。
-
-        :param transit_ip_address: The transit_ip_address of this UpdatePrivateDnatOption.
-        :type transit_ip_address: str
-        """
-        self._transit_ip_address = transit_ip_address
 
     @property
     def network_interface_id(self):

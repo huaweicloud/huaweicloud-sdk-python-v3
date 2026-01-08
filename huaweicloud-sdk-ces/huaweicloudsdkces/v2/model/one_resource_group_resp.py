@@ -61,9 +61,9 @@ class OneResourceGroupResp:
         :type enterprise_project_id: str
         :param type: **参数解释** 资源分组添加资源方式。 **取值范围** - EPS: 表示匹配企业项目 - TAG: 表示匹配标签 - Manual: 表示手动添加 - COMB: 表示组合匹配 - NAME: 表示匹配实例名称
         :type type: str
-        :param status: **参数解释** 资源分组指标告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未配置告警规则
+        :param status: **参数解释** 资源分组指标告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则
         :type status: str
-        :param event_status: **参数解释** 资源分组事件告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未配置告警规则
+        :param event_status: **参数解释** 资源分组事件告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则
         :type event_status: str
         :param resource_statistics: 
         :type resource_statistics: :class:`huaweicloudsdkces.v2.OneResourceGroupRespResourceStatistics`
@@ -246,7 +246,7 @@ class OneResourceGroupResp:
     def status(self):
         r"""Gets the status of this OneResourceGroupResp.
 
-        **参数解释** 资源分组指标告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未配置告警规则
+        **参数解释** 资源分组指标告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则
 
         :return: The status of this OneResourceGroupResp.
         :rtype: str
@@ -257,7 +257,7 @@ class OneResourceGroupResp:
     def status(self, status):
         r"""Sets the status of this OneResourceGroupResp.
 
-        **参数解释** 资源分组指标告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未配置告警规则
+        **参数解释** 资源分组指标告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则
 
         :param status: The status of this OneResourceGroupResp.
         :type status: str
@@ -268,7 +268,7 @@ class OneResourceGroupResp:
     def event_status(self):
         r"""Gets the event_status of this OneResourceGroupResp.
 
-        **参数解释** 资源分组事件告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未配置告警规则
+        **参数解释** 资源分组事件告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则
 
         :return: The event_status of this OneResourceGroupResp.
         :rtype: str
@@ -279,7 +279,7 @@ class OneResourceGroupResp:
     def event_status(self, event_status):
         r"""Sets the event_status of this OneResourceGroupResp.
 
-        **参数解释** 资源分组事件告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未配置告警规则
+        **参数解释** 资源分组事件告警状态。 **取值范围** - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则
 
         :param event_status: The event_status of this OneResourceGroupResp.
         :type event_status: str

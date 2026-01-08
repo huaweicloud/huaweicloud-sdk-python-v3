@@ -31,7 +31,7 @@ class CreateDesktopPoolAuthorizedObjectsRequestBody:
 
         :param objects: 要授权的用户/用户组。
         :type objects: list[:class:`huaweicloudsdkworkspace.v2.AuthorizedObjects`]
-        :param action: 执行动作，ADD：增加授权用户/用户组，REMOVE：移除已授权用户/用户组。
+        :param action: 执行动作，ADD：增加授权用户/用户组，REMOVE：移除已授权用户/用户组，CHANGE_PRIVILEGE：修改授权用户/用户组的权限组。
         :type action: str
         """
         
@@ -71,7 +71,7 @@ class CreateDesktopPoolAuthorizedObjectsRequestBody:
     def action(self):
         r"""Gets the action of this CreateDesktopPoolAuthorizedObjectsRequestBody.
 
-        执行动作，ADD：增加授权用户/用户组，REMOVE：移除已授权用户/用户组。
+        执行动作，ADD：增加授权用户/用户组，REMOVE：移除已授权用户/用户组，CHANGE_PRIVILEGE：修改授权用户/用户组的权限组。
 
         :return: The action of this CreateDesktopPoolAuthorizedObjectsRequestBody.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateDesktopPoolAuthorizedObjectsRequestBody:
     def action(self, action):
         r"""Sets the action of this CreateDesktopPoolAuthorizedObjectsRequestBody.
 
-        执行动作，ADD：增加授权用户/用户组，REMOVE：移除已授权用户/用户组。
+        执行动作，ADD：增加授权用户/用户组，REMOVE：移除已授权用户/用户组，CHANGE_PRIVILEGE：修改授权用户/用户组的权限组。
 
         :param action: The action of this CreateDesktopPoolAuthorizedObjectsRequestBody.
         :type action: str

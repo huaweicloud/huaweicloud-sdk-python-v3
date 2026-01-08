@@ -47,27 +47,27 @@ class ExtendInfo:
 
         The model defined in huaweicloud sdk
 
-        :param filter: 表示指标聚合方式，average表示平均值，min表示最小值，max表示最大值，sum表示求合
+        :param filter: **参数解释** 表示指标聚合方式 **约束限制** 不涉及 **取值范围** 枚举值： - average 平均值 - min 最小值 - max 最大值 - sum 求和值 **默认取值** 不涉及 
         :type filter: str
-        :param period: &#39;表示指标聚合周期，{1:表示原始值，60:表示一分钟，300:表示5分钟，1200:表示20分钟，3600:表示1小时，14400:表示4小时，86400:表示1天}&#39;&#39; 
+        :param period: **参数解释** 表示指标聚合周期 **约束限制** 不涉及 **取值范围** - 1 原始值 - 60 一分钟 - 300 5分钟 - 1200 20分钟 - 3600 1小时 - 14400 4小时 - 86400 1天 **默认取值** 不涉及 
         :type period: str
-        :param display_time: 展示时间，0表示使用自定义时间展示， 5分钟，15分钟，30分钟，1小时，2小时，3小时，12小时，24小时，7天，30天
+        :param display_time: **参数解释** 展示时间 **约束限制** 不涉及 **取值范围** 枚举值： - 0 自定义时间 - 5 5分钟 - 15 15分钟 - 30 30分钟 - 60 1小时 - 120 2小时 - 180 3小时 - 720 12小时 - 1440 24小时 - 10080 7天 - 43200 30天 **默认取值** 不涉及 
         :type display_time: int
-        :param refresh_time: 刷新时间 0秒表示不刷新,10秒，1分钟，5分钟，20分钟
+        :param refresh_time: **参数解释** 刷新时间 **约束限制** 不涉及 **取值范围** 枚举值： - 0 不刷新 - 10 10秒 - 60 1分钟 - 300 5分钟 - 1200 20分钟 **默认取值** 不涉及 
         :type refresh_time: int
-        :param _from: 开始时间
+        :param _from: **参数解释** 开始时间 **约束限制** 不涉及 **取值范围** 时间戳取值为[0,9999999999999] **默认取值** 不涉及 
         :type _from: int
-        :param to: 结束时间
+        :param to: **参数解释** 结束时间 **约束限制** 不涉及 **取值范围** 时间戳取值为[0,9999999999999] **默认取值** 不涉及 
         :type to: int
-        :param screen_color: 监控大屏背景颜色
+        :param screen_color: **参数解释** 监控大屏背景颜色 **约束限制** 不涉及 **取值范围** 背景颜色长度为[1,100]个字符 **默认取值** 不涉及 
         :type screen_color: str
-        :param enable_screen_auto_play: 监控大屏是否自动切换
+        :param enable_screen_auto_play: **参数解释** 监控大屏是否自动切换 **约束限制** 不涉及 **取值范围** - true 是 - false 否 **默认取值** 不涉及 
         :type enable_screen_auto_play: bool
-        :param time_interval: 监控大屏自动切换时间间隔，10000代表10s，30000代表30s，60000代表1min
+        :param time_interval: **参数解释**  监控大屏自动切换时间间隔  **约束限制**  不涉及  **取值范围**  枚举值：  - 10000 10秒  - 30000 30秒  - 60000 1分钟  **默认取值**  不涉及 
         :type time_interval: int
-        :param enable_legend: 是否开启图例
+        :param enable_legend: **参数解释** 是否开启图例 **约束限制** 不涉及 **取值范围** - true 是 - false 否 **默认取值** 不涉及 
         :type enable_legend: bool
-        :param full_screen_widget_num: 大屏展示视图数量, 可以取的值必须与console页面可选值保持一致
+        :param full_screen_widget_num: **参数解释** 大屏展示视图数量 **约束限制** 可以取的值必须与console页面可选值保持一致 **取值范围** 视图数量为[0,65535] **默认取值** 不涉及 
         :type full_screen_widget_num: int
         """
         
@@ -113,7 +113,7 @@ class ExtendInfo:
     def filter(self):
         r"""Gets the filter of this ExtendInfo.
 
-        表示指标聚合方式，average表示平均值，min表示最小值，max表示最大值，sum表示求合
+        **参数解释** 表示指标聚合方式 **约束限制** 不涉及 **取值范围** 枚举值： - average 平均值 - min 最小值 - max 最大值 - sum 求和值 **默认取值** 不涉及 
 
         :return: The filter of this ExtendInfo.
         :rtype: str
@@ -124,7 +124,7 @@ class ExtendInfo:
     def filter(self, filter):
         r"""Sets the filter of this ExtendInfo.
 
-        表示指标聚合方式，average表示平均值，min表示最小值，max表示最大值，sum表示求合
+        **参数解释** 表示指标聚合方式 **约束限制** 不涉及 **取值范围** 枚举值： - average 平均值 - min 最小值 - max 最大值 - sum 求和值 **默认取值** 不涉及 
 
         :param filter: The filter of this ExtendInfo.
         :type filter: str
@@ -135,7 +135,7 @@ class ExtendInfo:
     def period(self):
         r"""Gets the period of this ExtendInfo.
 
-        '表示指标聚合周期，{1:表示原始值，60:表示一分钟，300:表示5分钟，1200:表示20分钟，3600:表示1小时，14400:表示4小时，86400:表示1天}'' 
+        **参数解释** 表示指标聚合周期 **约束限制** 不涉及 **取值范围** - 1 原始值 - 60 一分钟 - 300 5分钟 - 1200 20分钟 - 3600 1小时 - 14400 4小时 - 86400 1天 **默认取值** 不涉及 
 
         :return: The period of this ExtendInfo.
         :rtype: str
@@ -146,7 +146,7 @@ class ExtendInfo:
     def period(self, period):
         r"""Sets the period of this ExtendInfo.
 
-        '表示指标聚合周期，{1:表示原始值，60:表示一分钟，300:表示5分钟，1200:表示20分钟，3600:表示1小时，14400:表示4小时，86400:表示1天}'' 
+        **参数解释** 表示指标聚合周期 **约束限制** 不涉及 **取值范围** - 1 原始值 - 60 一分钟 - 300 5分钟 - 1200 20分钟 - 3600 1小时 - 14400 4小时 - 86400 1天 **默认取值** 不涉及 
 
         :param period: The period of this ExtendInfo.
         :type period: str
@@ -157,7 +157,7 @@ class ExtendInfo:
     def display_time(self):
         r"""Gets the display_time of this ExtendInfo.
 
-        展示时间，0表示使用自定义时间展示， 5分钟，15分钟，30分钟，1小时，2小时，3小时，12小时，24小时，7天，30天
+        **参数解释** 展示时间 **约束限制** 不涉及 **取值范围** 枚举值： - 0 自定义时间 - 5 5分钟 - 15 15分钟 - 30 30分钟 - 60 1小时 - 120 2小时 - 180 3小时 - 720 12小时 - 1440 24小时 - 10080 7天 - 43200 30天 **默认取值** 不涉及 
 
         :return: The display_time of this ExtendInfo.
         :rtype: int
@@ -168,7 +168,7 @@ class ExtendInfo:
     def display_time(self, display_time):
         r"""Sets the display_time of this ExtendInfo.
 
-        展示时间，0表示使用自定义时间展示， 5分钟，15分钟，30分钟，1小时，2小时，3小时，12小时，24小时，7天，30天
+        **参数解释** 展示时间 **约束限制** 不涉及 **取值范围** 枚举值： - 0 自定义时间 - 5 5分钟 - 15 15分钟 - 30 30分钟 - 60 1小时 - 120 2小时 - 180 3小时 - 720 12小时 - 1440 24小时 - 10080 7天 - 43200 30天 **默认取值** 不涉及 
 
         :param display_time: The display_time of this ExtendInfo.
         :type display_time: int
@@ -179,7 +179,7 @@ class ExtendInfo:
     def refresh_time(self):
         r"""Gets the refresh_time of this ExtendInfo.
 
-        刷新时间 0秒表示不刷新,10秒，1分钟，5分钟，20分钟
+        **参数解释** 刷新时间 **约束限制** 不涉及 **取值范围** 枚举值： - 0 不刷新 - 10 10秒 - 60 1分钟 - 300 5分钟 - 1200 20分钟 **默认取值** 不涉及 
 
         :return: The refresh_time of this ExtendInfo.
         :rtype: int
@@ -190,7 +190,7 @@ class ExtendInfo:
     def refresh_time(self, refresh_time):
         r"""Sets the refresh_time of this ExtendInfo.
 
-        刷新时间 0秒表示不刷新,10秒，1分钟，5分钟，20分钟
+        **参数解释** 刷新时间 **约束限制** 不涉及 **取值范围** 枚举值： - 0 不刷新 - 10 10秒 - 60 1分钟 - 300 5分钟 - 1200 20分钟 **默认取值** 不涉及 
 
         :param refresh_time: The refresh_time of this ExtendInfo.
         :type refresh_time: int
@@ -201,7 +201,7 @@ class ExtendInfo:
     def _from(self):
         r"""Gets the _from of this ExtendInfo.
 
-        开始时间
+        **参数解释** 开始时间 **约束限制** 不涉及 **取值范围** 时间戳取值为[0,9999999999999] **默认取值** 不涉及 
 
         :return: The _from of this ExtendInfo.
         :rtype: int
@@ -212,7 +212,7 @@ class ExtendInfo:
     def _from(self, _from):
         r"""Sets the _from of this ExtendInfo.
 
-        开始时间
+        **参数解释** 开始时间 **约束限制** 不涉及 **取值范围** 时间戳取值为[0,9999999999999] **默认取值** 不涉及 
 
         :param _from: The _from of this ExtendInfo.
         :type _from: int
@@ -223,7 +223,7 @@ class ExtendInfo:
     def to(self):
         r"""Gets the to of this ExtendInfo.
 
-        结束时间
+        **参数解释** 结束时间 **约束限制** 不涉及 **取值范围** 时间戳取值为[0,9999999999999] **默认取值** 不涉及 
 
         :return: The to of this ExtendInfo.
         :rtype: int
@@ -234,7 +234,7 @@ class ExtendInfo:
     def to(self, to):
         r"""Sets the to of this ExtendInfo.
 
-        结束时间
+        **参数解释** 结束时间 **约束限制** 不涉及 **取值范围** 时间戳取值为[0,9999999999999] **默认取值** 不涉及 
 
         :param to: The to of this ExtendInfo.
         :type to: int
@@ -245,7 +245,7 @@ class ExtendInfo:
     def screen_color(self):
         r"""Gets the screen_color of this ExtendInfo.
 
-        监控大屏背景颜色
+        **参数解释** 监控大屏背景颜色 **约束限制** 不涉及 **取值范围** 背景颜色长度为[1,100]个字符 **默认取值** 不涉及 
 
         :return: The screen_color of this ExtendInfo.
         :rtype: str
@@ -256,7 +256,7 @@ class ExtendInfo:
     def screen_color(self, screen_color):
         r"""Sets the screen_color of this ExtendInfo.
 
-        监控大屏背景颜色
+        **参数解释** 监控大屏背景颜色 **约束限制** 不涉及 **取值范围** 背景颜色长度为[1,100]个字符 **默认取值** 不涉及 
 
         :param screen_color: The screen_color of this ExtendInfo.
         :type screen_color: str
@@ -267,7 +267,7 @@ class ExtendInfo:
     def enable_screen_auto_play(self):
         r"""Gets the enable_screen_auto_play of this ExtendInfo.
 
-        监控大屏是否自动切换
+        **参数解释** 监控大屏是否自动切换 **约束限制** 不涉及 **取值范围** - true 是 - false 否 **默认取值** 不涉及 
 
         :return: The enable_screen_auto_play of this ExtendInfo.
         :rtype: bool
@@ -278,7 +278,7 @@ class ExtendInfo:
     def enable_screen_auto_play(self, enable_screen_auto_play):
         r"""Sets the enable_screen_auto_play of this ExtendInfo.
 
-        监控大屏是否自动切换
+        **参数解释** 监控大屏是否自动切换 **约束限制** 不涉及 **取值范围** - true 是 - false 否 **默认取值** 不涉及 
 
         :param enable_screen_auto_play: The enable_screen_auto_play of this ExtendInfo.
         :type enable_screen_auto_play: bool
@@ -289,7 +289,7 @@ class ExtendInfo:
     def time_interval(self):
         r"""Gets the time_interval of this ExtendInfo.
 
-        监控大屏自动切换时间间隔，10000代表10s，30000代表30s，60000代表1min
+        **参数解释**  监控大屏自动切换时间间隔  **约束限制**  不涉及  **取值范围**  枚举值：  - 10000 10秒  - 30000 30秒  - 60000 1分钟  **默认取值**  不涉及 
 
         :return: The time_interval of this ExtendInfo.
         :rtype: int
@@ -300,7 +300,7 @@ class ExtendInfo:
     def time_interval(self, time_interval):
         r"""Sets the time_interval of this ExtendInfo.
 
-        监控大屏自动切换时间间隔，10000代表10s，30000代表30s，60000代表1min
+        **参数解释**  监控大屏自动切换时间间隔  **约束限制**  不涉及  **取值范围**  枚举值：  - 10000 10秒  - 30000 30秒  - 60000 1分钟  **默认取值**  不涉及 
 
         :param time_interval: The time_interval of this ExtendInfo.
         :type time_interval: int
@@ -311,7 +311,7 @@ class ExtendInfo:
     def enable_legend(self):
         r"""Gets the enable_legend of this ExtendInfo.
 
-        是否开启图例
+        **参数解释** 是否开启图例 **约束限制** 不涉及 **取值范围** - true 是 - false 否 **默认取值** 不涉及 
 
         :return: The enable_legend of this ExtendInfo.
         :rtype: bool
@@ -322,7 +322,7 @@ class ExtendInfo:
     def enable_legend(self, enable_legend):
         r"""Sets the enable_legend of this ExtendInfo.
 
-        是否开启图例
+        **参数解释** 是否开启图例 **约束限制** 不涉及 **取值范围** - true 是 - false 否 **默认取值** 不涉及 
 
         :param enable_legend: The enable_legend of this ExtendInfo.
         :type enable_legend: bool
@@ -333,7 +333,7 @@ class ExtendInfo:
     def full_screen_widget_num(self):
         r"""Gets the full_screen_widget_num of this ExtendInfo.
 
-        大屏展示视图数量, 可以取的值必须与console页面可选值保持一致
+        **参数解释** 大屏展示视图数量 **约束限制** 可以取的值必须与console页面可选值保持一致 **取值范围** 视图数量为[0,65535] **默认取值** 不涉及 
 
         :return: The full_screen_widget_num of this ExtendInfo.
         :rtype: int
@@ -344,7 +344,7 @@ class ExtendInfo:
     def full_screen_widget_num(self, full_screen_widget_num):
         r"""Sets the full_screen_widget_num of this ExtendInfo.
 
-        大屏展示视图数量, 可以取的值必须与console页面可选值保持一致
+        **参数解释** 大屏展示视图数量 **约束限制** 可以取的值必须与console页面可选值保持一致 **取值范围** 视图数量为[0,65535] **默认取值** 不涉及 
 
         :param full_screen_widget_num: The full_screen_widget_num of this ExtendInfo.
         :type full_screen_widget_num: int

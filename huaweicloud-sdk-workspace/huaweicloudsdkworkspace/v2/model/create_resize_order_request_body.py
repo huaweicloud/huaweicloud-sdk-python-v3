@@ -18,6 +18,7 @@ class CreateResizeOrderRequestBody:
         'desktop_pool_id': 'str',
         'desktop_ids': 'list[str]',
         'promotion_plan_id': 'str',
+        'handle_type': 'str',
         'product_id': 'str',
         'mode': 'str'
     }
@@ -26,21 +27,24 @@ class CreateResizeOrderRequestBody:
         'desktop_pool_id': 'desktop_pool_id',
         'desktop_ids': 'desktop_ids',
         'promotion_plan_id': 'promotion_plan_id',
+        'handle_type': 'handle_type',
         'product_id': 'product_id',
         'mode': 'mode'
     }
 
-    def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, product_id=None, mode=None):
+    def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, handle_type=None, product_id=None, mode=None):
         r"""CreateResizeOrderRequestBody
 
         The model defined in huaweicloud sdk
 
         :param desktop_pool_id: 桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
         :type desktop_pool_id: str
-        :param desktop_ids: 包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
+        :param desktop_ids: 桌面id
         :type desktop_ids: list[str]
         :param promotion_plan_id: 促销计划ID。
         :type promotion_plan_id: str
+        :param handle_type: 处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+        :type handle_type: str
         :param product_id: 目标规格产品ID。
         :type product_id: str
         :param mode: 是否支持开机状态下执行变更规格操作。固定传值STOP_DESKTOP，如果桌面处于开机状态，会先关机再变更规格。
@@ -52,6 +56,7 @@ class CreateResizeOrderRequestBody:
         self._desktop_pool_id = None
         self._desktop_ids = None
         self._promotion_plan_id = None
+        self._handle_type = None
         self._product_id = None
         self._mode = None
         self.discriminator = None
@@ -62,6 +67,8 @@ class CreateResizeOrderRequestBody:
             self.desktop_ids = desktop_ids
         if promotion_plan_id is not None:
             self.promotion_plan_id = promotion_plan_id
+        if handle_type is not None:
+            self.handle_type = handle_type
         if product_id is not None:
             self.product_id = product_id
         if mode is not None:
@@ -93,7 +100,7 @@ class CreateResizeOrderRequestBody:
     def desktop_ids(self):
         r"""Gets the desktop_ids of this CreateResizeOrderRequestBody.
 
-        包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
+        桌面id
 
         :return: The desktop_ids of this CreateResizeOrderRequestBody.
         :rtype: list[str]
@@ -104,7 +111,7 @@ class CreateResizeOrderRequestBody:
     def desktop_ids(self, desktop_ids):
         r"""Sets the desktop_ids of this CreateResizeOrderRequestBody.
 
-        包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
+        桌面id
 
         :param desktop_ids: The desktop_ids of this CreateResizeOrderRequestBody.
         :type desktop_ids: list[str]
@@ -132,6 +139,28 @@ class CreateResizeOrderRequestBody:
         :type promotion_plan_id: str
         """
         self._promotion_plan_id = promotion_plan_id
+
+    @property
+    def handle_type(self):
+        r"""Gets the handle_type of this CreateResizeOrderRequestBody.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :return: The handle_type of this CreateResizeOrderRequestBody.
+        :rtype: str
+        """
+        return self._handle_type
+
+    @handle_type.setter
+    def handle_type(self, handle_type):
+        r"""Sets the handle_type of this CreateResizeOrderRequestBody.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :param handle_type: The handle_type of this CreateResizeOrderRequestBody.
+        :type handle_type: str
+        """
+        self._handle_type = handle_type
 
     @property
     def product_id(self):

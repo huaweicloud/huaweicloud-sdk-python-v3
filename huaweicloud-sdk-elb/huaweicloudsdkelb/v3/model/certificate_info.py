@@ -35,7 +35,8 @@ class CertificateInfo:
         'subject_alternative_names': 'list[str]',
         'source': 'str',
         'protection_status': 'str',
-        'protection_reason': 'str'
+        'protection_reason': 'str',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -59,10 +60,11 @@ class CertificateInfo:
         'subject_alternative_names': 'subject_alternative_names',
         'source': 'source',
         'protection_status': 'protection_status',
-        'protection_reason': 'protection_reason'
+        'protection_reason': 'protection_reason',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, id=None, name=None, private_key=None, type=None, created_at=None, updated_at=None, expire_time=None, project_id=None, enc_certificate=None, enc_private_key=None, scm_certificate_id=None, common_name=None, fingerprint=None, subject_alternative_names=None, source=None, protection_status=None, protection_reason=None):
+    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, id=None, name=None, private_key=None, type=None, created_at=None, updated_at=None, expire_time=None, project_id=None, enc_certificate=None, enc_private_key=None, scm_certificate_id=None, common_name=None, fingerprint=None, subject_alternative_names=None, source=None, protection_status=None, protection_reason=None, enterprise_project_id=None):
         r"""CertificateInfo
 
         The model defined in huaweicloud sdk
@@ -105,10 +107,12 @@ class CertificateInfo:
         :type subject_alternative_names: list[str]
         :param source: **参数解释**：标记当前证书来源。  **取值范围**： - scm：表示关联云证书与管理服务（CCM）中的证书。 - 空值：表示自有证书。
         :type source: str
-        :param protection_status: **参数解释**：修改保护状态。  **取值范围**：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护，即禁止通过控制台修改。
+        :param protection_status: **参数解释**：修改保护状态。  **取值范围**：  - nonProtection: 不保护 - consoleProtection: 控制台修改保护，即禁止通过控制台修改。
         :type protection_status: str
         :param protection_reason: **参数解释**：修改保护的原因。  **取值范围**：不涉及
         :type protection_reason: str
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。  **取值范围**： - \&quot;0\&quot;：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :type enterprise_project_id: str
         """
         
         
@@ -134,6 +138,7 @@ class CertificateInfo:
         self._source = None
         self._protection_status = None
         self._protection_reason = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         self.admin_state_up = admin_state_up
@@ -166,6 +171,8 @@ class CertificateInfo:
             self.protection_status = protection_status
         if protection_reason is not None:
             self.protection_reason = protection_reason
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def admin_state_up(self):
@@ -589,7 +596,7 @@ class CertificateInfo:
     def protection_status(self):
         r"""Gets the protection_status of this CertificateInfo.
 
-        **参数解释**：修改保护状态。  **取值范围**：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护，即禁止通过控制台修改。
+        **参数解释**：修改保护状态。  **取值范围**：  - nonProtection: 不保护 - consoleProtection: 控制台修改保护，即禁止通过控制台修改。
 
         :return: The protection_status of this CertificateInfo.
         :rtype: str
@@ -600,7 +607,7 @@ class CertificateInfo:
     def protection_status(self, protection_status):
         r"""Sets the protection_status of this CertificateInfo.
 
-        **参数解释**：修改保护状态。  **取值范围**：  - nonProtection: 不保护  - consoleProtection: 控制台修改保护，即禁止通过控制台修改。
+        **参数解释**：修改保护状态。  **取值范围**：  - nonProtection: 不保护 - consoleProtection: 控制台修改保护，即禁止通过控制台修改。
 
         :param protection_status: The protection_status of this CertificateInfo.
         :type protection_status: str
@@ -628,6 +635,28 @@ class CertificateInfo:
         :type protection_reason: str
         """
         self._protection_reason = protection_reason
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this CertificateInfo.
+
+        **参数解释**：资源所属的企业项目ID。  **取值范围**： - \"0\"：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+
+        :return: The enterprise_project_id of this CertificateInfo.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this CertificateInfo.
+
+        **参数解释**：资源所属的企业项目ID。  **取值范围**： - \"0\"：表示资源属于default企业项目。 - UUID格式的字符串，表示非默认企业项目。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+
+        :param enterprise_project_id: The enterprise_project_id of this CertificateInfo.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         result = {}

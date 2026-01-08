@@ -31,11 +31,11 @@ class BindingVifDetails:
 
         The model defined in huaweicloud sdk
 
-        :param primary_interface: 参数解释：表示该网卡是否为云服务器的主网卡。取值范围：true，主网卡；false，非主网卡。
+        :param primary_interface: **参数解释**： 表示该网卡是否为云服务器的主网卡。 **取值范围**： - true：该网卡是云服务器的主网卡。 - false：该网卡不是云服务器的主网卡。
         :type primary_interface: bool
-        :param port_filter: 参数解释：表示该网络服务提供端口过滤特性，如安全组和反MAC/IP欺骗。取值范围：true，提供端口过滤特性；false，未提供端口过滤特性。
+        :param port_filter: **参数解释**： 表示该网络服务提供端口过滤特性，如安全组和反MAC/IP欺骗。 **取值范围**： - true：提供端口过滤特性。 - false：未提供端口过滤特性。
         :type port_filter: bool
-        :param ovs_hybrid_plug: 参数解释：是否为ovs/bridge混合模式。取值范围：true，ovs/bridge混合模式；false，非ovs/bridge混合模式。
+        :param ovs_hybrid_plug: **参数解释**： 是否为ovs/bridge混合模式。 **取值范围**： - true：ovs/bridge混合模式。 - false：非ovs/bridge混合模式。
         :type ovs_hybrid_plug: bool
         """
         
@@ -57,7 +57,7 @@ class BindingVifDetails:
     def primary_interface(self):
         r"""Gets the primary_interface of this BindingVifDetails.
 
-        参数解释：表示该网卡是否为云服务器的主网卡。取值范围：true，主网卡；false，非主网卡。
+        **参数解释**： 表示该网卡是否为云服务器的主网卡。 **取值范围**： - true：该网卡是云服务器的主网卡。 - false：该网卡不是云服务器的主网卡。
 
         :return: The primary_interface of this BindingVifDetails.
         :rtype: bool
@@ -68,7 +68,7 @@ class BindingVifDetails:
     def primary_interface(self, primary_interface):
         r"""Sets the primary_interface of this BindingVifDetails.
 
-        参数解释：表示该网卡是否为云服务器的主网卡。取值范围：true，主网卡；false，非主网卡。
+        **参数解释**： 表示该网卡是否为云服务器的主网卡。 **取值范围**： - true：该网卡是云服务器的主网卡。 - false：该网卡不是云服务器的主网卡。
 
         :param primary_interface: The primary_interface of this BindingVifDetails.
         :type primary_interface: bool
@@ -79,7 +79,7 @@ class BindingVifDetails:
     def port_filter(self):
         r"""Gets the port_filter of this BindingVifDetails.
 
-        参数解释：表示该网络服务提供端口过滤特性，如安全组和反MAC/IP欺骗。取值范围：true，提供端口过滤特性；false，未提供端口过滤特性。
+        **参数解释**： 表示该网络服务提供端口过滤特性，如安全组和反MAC/IP欺骗。 **取值范围**： - true：提供端口过滤特性。 - false：未提供端口过滤特性。
 
         :return: The port_filter of this BindingVifDetails.
         :rtype: bool
@@ -90,7 +90,7 @@ class BindingVifDetails:
     def port_filter(self, port_filter):
         r"""Sets the port_filter of this BindingVifDetails.
 
-        参数解释：表示该网络服务提供端口过滤特性，如安全组和反MAC/IP欺骗。取值范围：true，提供端口过滤特性；false，未提供端口过滤特性。
+        **参数解释**： 表示该网络服务提供端口过滤特性，如安全组和反MAC/IP欺骗。 **取值范围**： - true：提供端口过滤特性。 - false：未提供端口过滤特性。
 
         :param port_filter: The port_filter of this BindingVifDetails.
         :type port_filter: bool
@@ -101,7 +101,7 @@ class BindingVifDetails:
     def ovs_hybrid_plug(self):
         r"""Gets the ovs_hybrid_plug of this BindingVifDetails.
 
-        参数解释：是否为ovs/bridge混合模式。取值范围：true，ovs/bridge混合模式；false，非ovs/bridge混合模式。
+        **参数解释**： 是否为ovs/bridge混合模式。 **取值范围**： - true：ovs/bridge混合模式。 - false：非ovs/bridge混合模式。
 
         :return: The ovs_hybrid_plug of this BindingVifDetails.
         :rtype: bool
@@ -112,7 +112,7 @@ class BindingVifDetails:
     def ovs_hybrid_plug(self, ovs_hybrid_plug):
         r"""Sets the ovs_hybrid_plug of this BindingVifDetails.
 
-        参数解释：是否为ovs/bridge混合模式。取值范围：true，ovs/bridge混合模式；false，非ovs/bridge混合模式。
+        **参数解释**： 是否为ovs/bridge混合模式。 **取值范围**： - true：ovs/bridge混合模式。 - false：非ovs/bridge混合模式。
 
         :param ovs_hybrid_plug: The ovs_hybrid_plug of this BindingVifDetails.
         :type ovs_hybrid_plug: bool

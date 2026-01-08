@@ -31,11 +31,11 @@ class BatchUpdateWidgetInfo:
 
         The model defined in huaweicloud sdk
 
-        :param widget_id: 视图id
+        :param widget_id: **参数解释** 视图id **取值范围** 字符串必须以wg开头，后跟22个字母和数字，总长度为24个字符 
         :type widget_id: str
-        :param ret_status: 修改结果；成功: successful, 失败: error 
+        :param ret_status: **参数解释** 修改结果 **取值范围** 枚举值： - successful 成功 - error 失败 
         :type ret_status: str
-        :param error_msg: 如果失败则返回失败信息
+        :param error_msg: **参数解释** 如果失败则返回失败信息 **取值范围** 长度为[1,2048]个字符 
         :type error_msg: str
         """
         
@@ -57,7 +57,7 @@ class BatchUpdateWidgetInfo:
     def widget_id(self):
         r"""Gets the widget_id of this BatchUpdateWidgetInfo.
 
-        视图id
+        **参数解释** 视图id **取值范围** 字符串必须以wg开头，后跟22个字母和数字，总长度为24个字符 
 
         :return: The widget_id of this BatchUpdateWidgetInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class BatchUpdateWidgetInfo:
     def widget_id(self, widget_id):
         r"""Sets the widget_id of this BatchUpdateWidgetInfo.
 
-        视图id
+        **参数解释** 视图id **取值范围** 字符串必须以wg开头，后跟22个字母和数字，总长度为24个字符 
 
         :param widget_id: The widget_id of this BatchUpdateWidgetInfo.
         :type widget_id: str
@@ -79,7 +79,7 @@ class BatchUpdateWidgetInfo:
     def ret_status(self):
         r"""Gets the ret_status of this BatchUpdateWidgetInfo.
 
-        修改结果；成功: successful, 失败: error 
+        **参数解释** 修改结果 **取值范围** 枚举值： - successful 成功 - error 失败 
 
         :return: The ret_status of this BatchUpdateWidgetInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchUpdateWidgetInfo:
     def ret_status(self, ret_status):
         r"""Sets the ret_status of this BatchUpdateWidgetInfo.
 
-        修改结果；成功: successful, 失败: error 
+        **参数解释** 修改结果 **取值范围** 枚举值： - successful 成功 - error 失败 
 
         :param ret_status: The ret_status of this BatchUpdateWidgetInfo.
         :type ret_status: str
@@ -101,7 +101,7 @@ class BatchUpdateWidgetInfo:
     def error_msg(self):
         r"""Gets the error_msg of this BatchUpdateWidgetInfo.
 
-        如果失败则返回失败信息
+        **参数解释** 如果失败则返回失败信息 **取值范围** 长度为[1,2048]个字符 
 
         :return: The error_msg of this BatchUpdateWidgetInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class BatchUpdateWidgetInfo:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this BatchUpdateWidgetInfo.
 
-        如果失败则返回失败信息
+        **参数解释** 如果失败则返回失败信息 **取值范围** 长度为[1,2048]个字符 
 
         :param error_msg: The error_msg of this BatchUpdateWidgetInfo.
         :type error_msg: str

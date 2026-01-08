@@ -16,24 +16,24 @@ class ShowEpsRemainingQuotaResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'eps_quota_remaining': 'list[EpsRemainingQuotaResult]',
+        'eps_remaining_quotas': 'list[EpsRemainingQuotaResult]',
         'job_id': 'str',
         'total_count': 'int'
     }
 
     attribute_map = {
-        'eps_quota_remaining': 'eps_quota_remaining',
+        'eps_remaining_quotas': 'eps_remaining_quotas',
         'job_id': 'job_id',
         'total_count': 'total_count'
     }
 
-    def __init__(self, eps_quota_remaining=None, job_id=None, total_count=None):
+    def __init__(self, eps_remaining_quotas=None, job_id=None, total_count=None):
         r"""ShowEpsRemainingQuotaResponse
 
         The model defined in huaweicloud sdk
 
-        :param eps_quota_remaining: **参数解释**: 剩余企业项目配额组。
-        :type eps_quota_remaining: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.EpsRemainingQuotaResult`]
+        :param eps_remaining_quotas: **参数解释**: 剩余企业项目配额组。
+        :type eps_remaining_quotas: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.EpsRemainingQuotaResult`]
         :param job_id: **参数解释**: 任务ID。 **取值范围**: 不涉及。
         :type job_id: str
         :param total_count: **参数解释**: 返回的企业项目个数。 **取值范围**: 不涉及。
@@ -42,39 +42,39 @@ class ShowEpsRemainingQuotaResponse(SdkResponse):
         
         super().__init__()
 
-        self._eps_quota_remaining = None
+        self._eps_remaining_quotas = None
         self._job_id = None
         self._total_count = None
         self.discriminator = None
 
-        if eps_quota_remaining is not None:
-            self.eps_quota_remaining = eps_quota_remaining
+        if eps_remaining_quotas is not None:
+            self.eps_remaining_quotas = eps_remaining_quotas
         if job_id is not None:
             self.job_id = job_id
         if total_count is not None:
             self.total_count = total_count
 
     @property
-    def eps_quota_remaining(self):
-        r"""Gets the eps_quota_remaining of this ShowEpsRemainingQuotaResponse.
+    def eps_remaining_quotas(self):
+        r"""Gets the eps_remaining_quotas of this ShowEpsRemainingQuotaResponse.
 
         **参数解释**: 剩余企业项目配额组。
 
-        :return: The eps_quota_remaining of this ShowEpsRemainingQuotaResponse.
+        :return: The eps_remaining_quotas of this ShowEpsRemainingQuotaResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.EpsRemainingQuotaResult`]
         """
-        return self._eps_quota_remaining
+        return self._eps_remaining_quotas
 
-    @eps_quota_remaining.setter
-    def eps_quota_remaining(self, eps_quota_remaining):
-        r"""Sets the eps_quota_remaining of this ShowEpsRemainingQuotaResponse.
+    @eps_remaining_quotas.setter
+    def eps_remaining_quotas(self, eps_remaining_quotas):
+        r"""Sets the eps_remaining_quotas of this ShowEpsRemainingQuotaResponse.
 
         **参数解释**: 剩余企业项目配额组。
 
-        :param eps_quota_remaining: The eps_quota_remaining of this ShowEpsRemainingQuotaResponse.
-        :type eps_quota_remaining: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.EpsRemainingQuotaResult`]
+        :param eps_remaining_quotas: The eps_remaining_quotas of this ShowEpsRemainingQuotaResponse.
+        :type eps_remaining_quotas: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.EpsRemainingQuotaResult`]
         """
-        self._eps_quota_remaining = eps_quota_remaining
+        self._eps_remaining_quotas = eps_remaining_quotas
 
     @property
     def job_id(self):

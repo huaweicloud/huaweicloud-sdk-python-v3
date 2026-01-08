@@ -59,9 +59,9 @@ class PrivateNat:
         :type name: str
         :param description: 私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param spec: 私网NAT网关实例的规格。 取值为： \&quot;Small\&quot;：小型 \&quot;Medium\&quot;：中型 \&quot;Large\&quot;：大型 \&quot;Extra-large\&quot;：超大型 \&quot;Extra-xlarge\&quot;：企业型
+        :param spec: 私网NAT网关实例的规格。 取值为： - Small：小型 - Medium：中型 - Large：大型 - Extra-large：超大型 - Extra-xlarge：企业型
         :type spec: str
-        :param status: 私网NAT网关实例的状态。 取值为： \&quot;ACTIVE\&quot;：正常运行 \&quot;FROZEN\&quot;：冻结 \&quot;INACTIVE\&quot;：不可用
+        :param status: 私网NAT网关实例的状态。 取值为： - ACTIVE：正常运行 - FROZEN：冻结 - INACTIVE：不可用
         :type status: str
         :param created_at: 私网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
         :type created_at: datetime
@@ -205,7 +205,7 @@ class PrivateNat:
     def spec(self):
         r"""Gets the spec of this PrivateNat.
 
-        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型 \"Extra-xlarge\"：企业型
+        私网NAT网关实例的规格。 取值为： - Small：小型 - Medium：中型 - Large：大型 - Extra-large：超大型 - Extra-xlarge：企业型
 
         :return: The spec of this PrivateNat.
         :rtype: str
@@ -216,7 +216,7 @@ class PrivateNat:
     def spec(self, spec):
         r"""Sets the spec of this PrivateNat.
 
-        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型 \"Extra-xlarge\"：企业型
+        私网NAT网关实例的规格。 取值为： - Small：小型 - Medium：中型 - Large：大型 - Extra-large：超大型 - Extra-xlarge：企业型
 
         :param spec: The spec of this PrivateNat.
         :type spec: str
@@ -227,7 +227,7 @@ class PrivateNat:
     def status(self):
         r"""Gets the status of this PrivateNat.
 
-        私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
+        私网NAT网关实例的状态。 取值为： - ACTIVE：正常运行 - FROZEN：冻结 - INACTIVE：不可用
 
         :return: The status of this PrivateNat.
         :rtype: str
@@ -238,7 +238,7 @@ class PrivateNat:
     def status(self, status):
         r"""Sets the status of this PrivateNat.
 
-        私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结 \"INACTIVE\"：不可用
+        私网NAT网关实例的状态。 取值为： - ACTIVE：正常运行 - FROZEN：冻结 - INACTIVE：不可用
 
         :param status: The status of this PrivateNat.
         :type status: str

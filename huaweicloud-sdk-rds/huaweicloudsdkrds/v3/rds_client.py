@@ -12344,6 +12344,75 @@ class RdsClient(Client):
 
         return http_info
 
+    def update_time_zone(self, request):
+        r"""修改时区
+
+        修改时区
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTimeZone
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateTimeZoneRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateTimeZoneResponse`
+        """
+        http_info = self._update_time_zone_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_time_zone_invoker(self, request):
+        http_info = self._update_time_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_time_zone_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/timezone/modify",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTimeZoneResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def update_to_period(self, request):
         r"""RDS实例按需转包周期
 

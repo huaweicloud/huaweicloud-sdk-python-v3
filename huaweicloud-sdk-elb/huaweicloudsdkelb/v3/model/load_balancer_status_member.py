@@ -43,7 +43,7 @@ class LoadBalancerStatusMember:
         :type protocol_port: int
         :param id: **参数解释**：后端服务器ID。  **取值范围**：不涉及
         :type id: str
-        :param operating_status: **参数解释**：后端服务器的操作状态。  **取值范围**： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up&#x3D;false时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
+        :param operating_status: **参数解释**：后端服务器的操作状态。  **取值范围**： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up&#x3D;false时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。 - INITIAL：后端云服务器健康检查打开时的初始状态。 - UNKNOWN: 后端云服务器组没有绑定监听器或者后端云服务器没有关联ECS等原因，后端云服务器健康检查结果未知。
         :type operating_status: str
         """
         
@@ -159,7 +159,7 @@ class LoadBalancerStatusMember:
     def operating_status(self):
         r"""Gets the operating_status of this LoadBalancerStatusMember.
 
-        **参数解释**：后端服务器的操作状态。  **取值范围**： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
+        **参数解释**：后端服务器的操作状态。  **取值范围**： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。 - INITIAL：后端云服务器健康检查打开时的初始状态。 - UNKNOWN: 后端云服务器组没有绑定监听器或者后端云服务器没有关联ECS等原因，后端云服务器健康检查结果未知。
 
         :return: The operating_status of this LoadBalancerStatusMember.
         :rtype: str
@@ -170,7 +170,7 @@ class LoadBalancerStatusMember:
     def operating_status(self, operating_status):
         r"""Sets the operating_status of this LoadBalancerStatusMember.
 
-        **参数解释**：后端服务器的操作状态。  **取值范围**： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。
+        **参数解释**：后端服务器的操作状态。  **取值范围**： - ONLINE：后端服务器正常运行。 - NO_MONITOR：后端服务器健康检查未开启。 - DISABLED：后端服务器不可用。所属负载均衡器或后端服务器组或该后端服务器的admin_state_up=false时，会出现该状态。注意该状态仅在当前接口中返回。 - OFFLINE：关联ECS已下线。 - INITIAL：后端云服务器健康检查打开时的初始状态。 - UNKNOWN: 后端云服务器组没有绑定监听器或者后端云服务器没有关联ECS等原因，后端云服务器健康检查结果未知。
 
         :param operating_status: The operating_status of this LoadBalancerStatusMember.
         :type operating_status: str

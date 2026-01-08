@@ -17,16 +17,18 @@ class InstancesNodesResult:
     openapi_types = {
         'id': 'str',
         'name': 'str',
+        'role': 'str',
         'component_ids': 'list[str]'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
+        'role': 'role',
         'component_ids': 'component_ids'
     }
 
-    def __init__(self, id=None, name=None, component_ids=None):
+    def __init__(self, id=None, name=None, role=None, component_ids=None):
         r"""InstancesNodesResult
 
         The model defined in huaweicloud sdk
@@ -35,6 +37,8 @@ class InstancesNodesResult:
         :type id: str
         :param name: **参数解释**： 节点名称。 **取值范围**： 不涉及。
         :type name: str
+        :param role: **参数解释**： 节点角色。 **取值范围**： - master：主节点。 - slave：备节点。 - secondary：日志节点。 - readreplica：只读节点。
+        :type role: str
         :param component_ids: **参数解释**： 组件ID列表。
         :type component_ids: list[str]
         """
@@ -43,6 +47,7 @@ class InstancesNodesResult:
 
         self._id = None
         self._name = None
+        self._role = None
         self._component_ids = None
         self.discriminator = None
 
@@ -50,6 +55,8 @@ class InstancesNodesResult:
             self.id = id
         if name is not None:
             self.name = name
+        if role is not None:
+            self.role = role
         if component_ids is not None:
             self.component_ids = component_ids
 
@@ -96,6 +103,28 @@ class InstancesNodesResult:
         :type name: str
         """
         self._name = name
+
+    @property
+    def role(self):
+        r"""Gets the role of this InstancesNodesResult.
+
+        **参数解释**： 节点角色。 **取值范围**： - master：主节点。 - slave：备节点。 - secondary：日志节点。 - readreplica：只读节点。
+
+        :return: The role of this InstancesNodesResult.
+        :rtype: str
+        """
+        return self._role
+
+    @role.setter
+    def role(self, role):
+        r"""Sets the role of this InstancesNodesResult.
+
+        **参数解释**： 节点角色。 **取值范围**： - master：主节点。 - slave：备节点。 - secondary：日志节点。 - readreplica：只读节点。
+
+        :param role: The role of this InstancesNodesResult.
+        :type role: str
+        """
+        self._role = role
 
     @property
     def component_ids(self):

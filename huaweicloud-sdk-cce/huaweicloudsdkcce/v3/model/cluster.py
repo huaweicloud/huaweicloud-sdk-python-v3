@@ -18,17 +18,19 @@ class Cluster:
         'kind': 'str',
         'api_version': 'str',
         'metadata': 'ClusterMetadata',
-        'spec': 'ClusterSpec'
+        'spec': 'ClusterSpec',
+        'status': 'ClusterStatus'
     }
 
     attribute_map = {
         'kind': 'kind',
         'api_version': 'apiVersion',
         'metadata': 'metadata',
-        'spec': 'spec'
+        'spec': 'spec',
+        'status': 'status'
     }
 
-    def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
+    def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
         r"""Cluster
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class Cluster:
         :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`
         """
         
         
@@ -49,12 +53,15 @@ class Cluster:
         self._api_version = None
         self._metadata = None
         self._spec = None
+        self._status = None
         self.discriminator = None
 
         self.kind = kind
         self.api_version = api_version
         self.metadata = metadata
         self.spec = spec
+        if status is not None:
+            self.status = status
 
     @property
     def kind(self):
@@ -135,6 +142,24 @@ class Cluster:
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
         """
         self._spec = spec
+
+    @property
+    def status(self):
+        r"""Gets the status of this Cluster.
+
+        :return: The status of this Cluster.
+        :rtype: :class:`huaweicloudsdkcce.v3.ClusterStatus`
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this Cluster.
+
+        :param status: The status of this Cluster.
+        :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`
+        """
+        self._status = status
 
     def to_dict(self):
         result = {}

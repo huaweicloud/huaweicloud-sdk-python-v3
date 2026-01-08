@@ -28,7 +28,7 @@ class BatchUpdateWidgetsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param widgets: 更新结果列表
+        :param widgets: **参数解释** 更新结果列表 
         :type widgets: list[:class:`huaweicloudsdkces.v2.BatchUpdateWidgetInfo`]
         """
         
@@ -44,7 +44,7 @@ class BatchUpdateWidgetsResponse(SdkResponse):
     def widgets(self):
         r"""Gets the widgets of this BatchUpdateWidgetsResponse.
 
-        更新结果列表
+        **参数解释** 更新结果列表 
 
         :return: The widgets of this BatchUpdateWidgetsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.BatchUpdateWidgetInfo`]
@@ -55,7 +55,7 @@ class BatchUpdateWidgetsResponse(SdkResponse):
     def widgets(self, widgets):
         r"""Sets the widgets of this BatchUpdateWidgetsResponse.
 
-        更新结果列表
+        **参数解释** 更新结果列表 
 
         :param widgets: The widgets of this BatchUpdateWidgetsResponse.
         :type widgets: list[:class:`huaweicloudsdkces.v2.BatchUpdateWidgetInfo`]

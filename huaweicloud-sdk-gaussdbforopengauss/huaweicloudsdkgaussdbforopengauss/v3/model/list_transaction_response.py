@@ -17,35 +17,35 @@ class ListTransactionResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'rows_info': 'list[ListTransactionResponseBodyRowsInfo]'
+        'rows': 'list[ListTransactionResponseBodyRows]'
     }
 
     attribute_map = {
         'total': 'total',
-        'rows_info': 'rows_info'
+        'rows': 'rows'
     }
 
-    def __init__(self, total=None, rows_info=None):
+    def __init__(self, total=None, rows=None):
         r"""ListTransactionResponse
 
         The model defined in huaweicloud sdk
 
         :param total: **参数解释**: 查到的事务数量。 **取值范围**: 不涉及。
         :type total: int
-        :param rows_info: **参数解释**: 事务信息列表。
-        :type rows_info: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionResponseBodyRowsInfo`]
+        :param rows: **参数解释**: 事务信息列表。
+        :type rows: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionResponseBodyRows`]
         """
         
         super().__init__()
 
         self._total = None
-        self._rows_info = None
+        self._rows = None
         self.discriminator = None
 
         if total is not None:
             self.total = total
-        if rows_info is not None:
-            self.rows_info = rows_info
+        if rows is not None:
+            self.rows = rows
 
     @property
     def total(self):
@@ -70,26 +70,26 @@ class ListTransactionResponse(SdkResponse):
         self._total = total
 
     @property
-    def rows_info(self):
-        r"""Gets the rows_info of this ListTransactionResponse.
+    def rows(self):
+        r"""Gets the rows of this ListTransactionResponse.
 
         **参数解释**: 事务信息列表。
 
-        :return: The rows_info of this ListTransactionResponse.
-        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionResponseBodyRowsInfo`]
+        :return: The rows of this ListTransactionResponse.
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionResponseBodyRows`]
         """
-        return self._rows_info
+        return self._rows
 
-    @rows_info.setter
-    def rows_info(self, rows_info):
-        r"""Sets the rows_info of this ListTransactionResponse.
+    @rows.setter
+    def rows(self, rows):
+        r"""Sets the rows of this ListTransactionResponse.
 
         **参数解释**: 事务信息列表。
 
-        :param rows_info: The rows_info of this ListTransactionResponse.
-        :type rows_info: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionResponseBodyRowsInfo`]
+        :param rows: The rows of this ListTransactionResponse.
+        :type rows: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionResponseBodyRows`]
         """
-        self._rows_info = rows_info
+        self._rows = rows
 
     def to_dict(self):
         import warnings

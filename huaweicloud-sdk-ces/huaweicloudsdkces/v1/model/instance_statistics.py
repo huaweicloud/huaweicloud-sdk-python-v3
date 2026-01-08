@@ -31,11 +31,11 @@ class InstanceStatistics:
 
         The model defined in huaweicloud sdk
 
-        :param unhealth: **参数解释**： 该资源分组中当前处在告警状态的资源个数。  **取值范围**： 在[0,2147483647]区间内。
+        :param unhealth: **参数解释**： 该资源分组中当前处在告警状态的资源个数。  **取值范围**： 在[0,2147483647]区间内。 
         :type unhealth: int
-        :param total: **参数解释**： 该资源分组中资源的总个数。  **取值范围**： 在[0,2147483647]区间内。
+        :param total: **参数解释**： 该资源分组中资源的总个数。  **取值范围**： 在[0,2147483647]区间内。 
         :type total: int
-        :param type_statistics: **参数解释**： 该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。 **取值范围**： 在[0,2147483647]区间内。
+        :param type_statistics: **参数解释**： 该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。 **取值范围**： 在[0,2147483647]区间内。 
         :type type_statistics: int
         """
         
@@ -57,7 +57,7 @@ class InstanceStatistics:
     def unhealth(self):
         r"""Gets the unhealth of this InstanceStatistics.
 
-        **参数解释**： 该资源分组中当前处在告警状态的资源个数。  **取值范围**： 在[0,2147483647]区间内。
+        **参数解释**： 该资源分组中当前处在告警状态的资源个数。  **取值范围**： 在[0,2147483647]区间内。 
 
         :return: The unhealth of this InstanceStatistics.
         :rtype: int
@@ -68,7 +68,7 @@ class InstanceStatistics:
     def unhealth(self, unhealth):
         r"""Sets the unhealth of this InstanceStatistics.
 
-        **参数解释**： 该资源分组中当前处在告警状态的资源个数。  **取值范围**： 在[0,2147483647]区间内。
+        **参数解释**： 该资源分组中当前处在告警状态的资源个数。  **取值范围**： 在[0,2147483647]区间内。 
 
         :param unhealth: The unhealth of this InstanceStatistics.
         :type unhealth: int
@@ -79,7 +79,7 @@ class InstanceStatistics:
     def total(self):
         r"""Gets the total of this InstanceStatistics.
 
-        **参数解释**： 该资源分组中资源的总个数。  **取值范围**： 在[0,2147483647]区间内。
+        **参数解释**： 该资源分组中资源的总个数。  **取值范围**： 在[0,2147483647]区间内。 
 
         :return: The total of this InstanceStatistics.
         :rtype: int
@@ -90,7 +90,7 @@ class InstanceStatistics:
     def total(self, total):
         r"""Sets the total of this InstanceStatistics.
 
-        **参数解释**： 该资源分组中资源的总个数。  **取值范围**： 在[0,2147483647]区间内。
+        **参数解释**： 该资源分组中资源的总个数。  **取值范围**： 在[0,2147483647]区间内。 
 
         :param total: The total of this InstanceStatistics.
         :type total: int
@@ -101,7 +101,7 @@ class InstanceStatistics:
     def type_statistics(self):
         r"""Gets the type_statistics of this InstanceStatistics.
 
-        **参数解释**： 该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。 **取值范围**： 在[0,2147483647]区间内。
+        **参数解释**： 该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。 **取值范围**： 在[0,2147483647]区间内。 
 
         :return: The type_statistics of this InstanceStatistics.
         :rtype: int
@@ -112,7 +112,7 @@ class InstanceStatistics:
     def type_statistics(self, type_statistics):
         r"""Sets the type_statistics of this InstanceStatistics.
 
-        **参数解释**： 该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。 **取值范围**： 在[0,2147483647]区间内。
+        **参数解释**： 该资源分组中选择的资源类型个数，如资源分组添加了弹性云服务、弹性公网IP和带宽则值为2。 **取值范围**： 在[0,2147483647]区间内。 
 
         :param type_statistics: The type_statistics of this InstanceStatistics.
         :type type_statistics: int

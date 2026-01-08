@@ -30,7 +30,8 @@ class CreateMasterSlavePoolOption:
         'healthmonitor': 'CreateMasterSlaveHealthMonitorOption',
         'any_port_enable': 'bool',
         'connection_drain': 'ConnectionDrain',
-        'quic_cid_hash_strategy': 'QuicCidHashStrategy'
+        'quic_cid_hash_strategy': 'QuicCidHashStrategy',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class CreateMasterSlavePoolOption:
         'healthmonitor': 'healthmonitor',
         'any_port_enable': 'any_port_enable',
         'connection_drain': 'connection_drain',
-        'quic_cid_hash_strategy': 'quic_cid_hash_strategy'
+        'quic_cid_hash_strategy': 'quic_cid_hash_strategy',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, description=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, name=None, project_id=None, protocol=None, session_persistence=None, vpc_id=None, type=None, ip_version=None, members=None, healthmonitor=None, any_port_enable=None, connection_drain=None, quic_cid_hash_strategy=None):
+    def __init__(self, description=None, lb_algorithm=None, loadbalancer_id=None, listener_id=None, name=None, project_id=None, protocol=None, session_persistence=None, vpc_id=None, type=None, ip_version=None, members=None, healthmonitor=None, any_port_enable=None, connection_drain=None, quic_cid_hash_strategy=None, enterprise_project_id=None):
         r"""CreateMasterSlavePoolOption
 
         The model defined in huaweicloud sdk
@@ -73,7 +75,7 @@ class CreateMasterSlavePoolOption:
         :type protocol: str
         :param session_persistence: 
         :type session_persistence: :class:`huaweicloudsdkelb.v3.CreatePoolSessionPersistenceOption`
-        :param vpc_id: **参数解释**：后端服务器组关联的虚拟私有云的ID。  **约束限制**： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。 [- pool的protocol为IP时，必须指定vpc_id，且与LB的vpc_id相同。](tag:hws_eu) - 若未指定vpc_id，则后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。  **取值范围**：不涉及  **默认取值**：不涉及
+        :param vpc_id: **参数解释**：后端服务器组关联的虚拟私有云的ID。  **约束限制**： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。 - pool的protocol为IP时，必须指定vpc_id，且与LB的vpc_id相同。 - 若未指定vpc_id，则后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。  **取值范围**：不涉及  **默认取值**：不涉及
         :type vpc_id: str
         :param type: **参数解释**：后端服务器组的类型。  **约束限制**：不涉及  **取值范围**： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加IP类型后端，type指定为该类型时，vpc_id不允许指定。  **默认取值**：不涉及
         :type type: str
@@ -89,6 +91,8 @@ class CreateMasterSlavePoolOption:
         :type connection_drain: :class:`huaweicloudsdkelb.v3.ConnectionDrain`
         :param quic_cid_hash_strategy: 
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
+        :param enterprise_project_id: **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id&#x3D;\&quot;0\&quot;。  **约束限制**：不能传入空字符串\&quot;\&quot;、\&quot;0\&quot;或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\&quot;0\&quot;  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+        :type enterprise_project_id: str
         """
         
         
@@ -109,6 +113,7 @@ class CreateMasterSlavePoolOption:
         self._any_port_enable = None
         self._connection_drain = None
         self._quic_cid_hash_strategy = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if description is not None:
@@ -138,6 +143,8 @@ class CreateMasterSlavePoolOption:
             self.connection_drain = connection_drain
         if quic_cid_hash_strategy is not None:
             self.quic_cid_hash_strategy = quic_cid_hash_strategy
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def description(self):
@@ -315,7 +322,7 @@ class CreateMasterSlavePoolOption:
     def vpc_id(self):
         r"""Gets the vpc_id of this CreateMasterSlavePoolOption.
 
-        **参数解释**：后端服务器组关联的虚拟私有云的ID。  **约束限制**： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。 [- pool的protocol为IP时，必须指定vpc_id，且与LB的vpc_id相同。](tag:hws_eu) - 若未指定vpc_id，则后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：后端服务器组关联的虚拟私有云的ID。  **约束限制**： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。 - pool的protocol为IP时，必须指定vpc_id，且与LB的vpc_id相同。 - 若未指定vpc_id，则后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The vpc_id of this CreateMasterSlavePoolOption.
         :rtype: str
@@ -326,7 +333,7 @@ class CreateMasterSlavePoolOption:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this CreateMasterSlavePoolOption.
 
-        **参数解释**：后端服务器组关联的虚拟私有云的ID。  **约束限制**： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。 [- pool的protocol为IP时，必须指定vpc_id，且与LB的vpc_id相同。](tag:hws_eu) - 若未指定vpc_id，则后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：后端服务器组关联的虚拟私有云的ID。  **约束限制**： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。 - pool的protocol为IP时，必须指定vpc_id，且与LB的vpc_id相同。 - 若未指定vpc_id，则后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param vpc_id: The vpc_id of this CreateMasterSlavePoolOption.
         :type vpc_id: str
@@ -474,6 +481,28 @@ class CreateMasterSlavePoolOption:
         :type quic_cid_hash_strategy: :class:`huaweicloudsdkelb.v3.QuicCidHashStrategy`
         """
         self._quic_cid_hash_strategy = quic_cid_hash_strategy
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this CreateMasterSlavePoolOption.
+
+        **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id=\"0\"。  **约束限制**：不能传入空字符串\"\"、\"0\"或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\"0\"  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+
+        :return: The enterprise_project_id of this CreateMasterSlavePoolOption.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this CreateMasterSlavePoolOption.
+
+        **参数解释**：资源所属的企业项目ID。创建时不传则资源属于default企业项目，返回enterprise_project_id=\"0\"。  **约束限制**：不能传入空字符串\"\"、\"0\"或不存在的企业项目ID。  **取值范围**：不涉及  **默认取值**：\"0\"  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
+
+        :param enterprise_project_id: The enterprise_project_id of this CreateMasterSlavePoolOption.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         result = {}

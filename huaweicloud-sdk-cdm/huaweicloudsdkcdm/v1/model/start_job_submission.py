@@ -29,7 +29,7 @@ class StartJobSubmission:
         'is_stoping_increment': 'str',
         'is_execute_auto': 'bool',
         'last_update_date': 'int',
-        'last_udpate_user': 'str',
+        'last_update_user': 'str',
         'is_delete_job': 'bool'
     }
 
@@ -48,11 +48,11 @@ class StartJobSubmission:
         'is_stoping_increment': 'isStopingIncrement',
         'is_execute_auto': 'is-execute-auto',
         'last_update_date': 'last-update-date',
-        'last_udpate_user': 'last-udpate-user',
+        'last_update_user': 'last-update-user',
         'is_delete_job': 'isDeleteJob'
     }
 
-    def __init__(self, is_incrementing=None, delete_rows=None, update_rows=None, write_rows=None, submission_id=None, job_name=None, creation_user=None, creation_date=None, execute_date=None, progress=None, status=None, is_stoping_increment=None, is_execute_auto=None, last_update_date=None, last_udpate_user=None, is_delete_job=None):
+    def __init__(self, is_incrementing=None, delete_rows=None, update_rows=None, write_rows=None, submission_id=None, job_name=None, creation_user=None, creation_date=None, execute_date=None, progress=None, status=None, is_stoping_increment=None, is_execute_auto=None, last_update_date=None, last_update_user=None, is_delete_job=None):
         r"""StartJobSubmission
 
         The model defined in huaweicloud sdk
@@ -85,8 +85,8 @@ class StartJobSubmission:
         :type is_execute_auto: bool
         :param last_update_date: 作业最后更新时间
         :type last_update_date: int
-        :param last_udpate_user: 最后更新作业状态的用户
-        :type last_udpate_user: str
+        :param last_update_user: 最后更新作业状态的用户
+        :type last_update_user: str
         :param is_delete_job: 作业执行完成后是否删除
         :type is_delete_job: bool
         """
@@ -107,7 +107,7 @@ class StartJobSubmission:
         self._is_stoping_increment = None
         self._is_execute_auto = None
         self._last_update_date = None
-        self._last_udpate_user = None
+        self._last_update_user = None
         self._is_delete_job = None
         self.discriminator = None
 
@@ -134,8 +134,8 @@ class StartJobSubmission:
             self.is_execute_auto = is_execute_auto
         if last_update_date is not None:
             self.last_update_date = last_update_date
-        if last_udpate_user is not None:
-            self.last_udpate_user = last_udpate_user
+        if last_update_user is not None:
+            self.last_update_user = last_update_user
         if is_delete_job is not None:
             self.is_delete_job = is_delete_job
 
@@ -448,26 +448,26 @@ class StartJobSubmission:
         self._last_update_date = last_update_date
 
     @property
-    def last_udpate_user(self):
-        r"""Gets the last_udpate_user of this StartJobSubmission.
+    def last_update_user(self):
+        r"""Gets the last_update_user of this StartJobSubmission.
 
         最后更新作业状态的用户
 
-        :return: The last_udpate_user of this StartJobSubmission.
+        :return: The last_update_user of this StartJobSubmission.
         :rtype: str
         """
-        return self._last_udpate_user
+        return self._last_update_user
 
-    @last_udpate_user.setter
-    def last_udpate_user(self, last_udpate_user):
-        r"""Sets the last_udpate_user of this StartJobSubmission.
+    @last_update_user.setter
+    def last_update_user(self, last_update_user):
+        r"""Sets the last_update_user of this StartJobSubmission.
 
         最后更新作业状态的用户
 
-        :param last_udpate_user: The last_udpate_user of this StartJobSubmission.
-        :type last_udpate_user: str
+        :param last_update_user: The last_update_user of this StartJobSubmission.
+        :type last_update_user: str
         """
-        self._last_udpate_user = last_udpate_user
+        self._last_update_user = last_update_user
 
     @property
     def is_delete_job(self):

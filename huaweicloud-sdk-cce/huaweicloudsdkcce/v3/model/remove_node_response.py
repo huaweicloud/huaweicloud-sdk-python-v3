@@ -18,16 +18,18 @@ class RemoveNodeResponse(SdkResponse):
     openapi_types = {
         'api_version': 'str',
         'kind': 'str',
-        'spec': 'RemoveNodesSpec'
+        'spec': 'RemoveNodesSpec',
+        'status': 'TaskStatus'
     }
 
     attribute_map = {
         'api_version': 'apiVersion',
         'kind': 'kind',
-        'spec': 'spec'
+        'spec': 'spec',
+        'status': 'status'
     }
 
-    def __init__(self, api_version=None, kind=None, spec=None):
+    def __init__(self, api_version=None, kind=None, spec=None, status=None):
         r"""RemoveNodeResponse
 
         The model defined in huaweicloud sdk
@@ -38,6 +40,8 @@ class RemoveNodeResponse(SdkResponse):
         :type kind: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
         
         super().__init__()
@@ -45,6 +49,7 @@ class RemoveNodeResponse(SdkResponse):
         self._api_version = None
         self._kind = None
         self._spec = None
+        self._status = None
         self.discriminator = None
 
         if api_version is not None:
@@ -53,6 +58,8 @@ class RemoveNodeResponse(SdkResponse):
             self.kind = kind
         if spec is not None:
             self.spec = spec
+        if status is not None:
+            self.status = status
 
     @property
     def api_version(self):
@@ -115,6 +122,24 @@ class RemoveNodeResponse(SdkResponse):
         :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
         """
         self._spec = spec
+
+    @property
+    def status(self):
+        r"""Gets the status of this RemoveNodeResponse.
+
+        :return: The status of this RemoveNodeResponse.
+        :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this RemoveNodeResponse.
+
+        :param status: The status of this RemoveNodeResponse.
+        :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`
+        """
+        self._status = status
 
     def to_dict(self):
         import warnings

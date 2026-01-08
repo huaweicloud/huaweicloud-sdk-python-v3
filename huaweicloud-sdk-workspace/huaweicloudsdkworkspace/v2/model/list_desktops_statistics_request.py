@@ -16,15 +16,17 @@ class ListDesktopsStatisticsRequest:
 
     openapi_types = {
         'desktop_type': 'list[str]',
-        'statistics_type': 'list[str]'
+        'statistics_type': 'list[str]',
+        'desktop_pool_ids': 'list[str]'
     }
 
     attribute_map = {
         'desktop_type': 'desktop_type',
-        'statistics_type': 'statistics_type'
+        'statistics_type': 'statistics_type',
+        'desktop_pool_ids': 'desktop_pool_ids'
     }
 
-    def __init__(self, desktop_type=None, statistics_type=None):
+    def __init__(self, desktop_type=None, statistics_type=None, desktop_pool_ids=None):
         r"""ListDesktopsStatisticsRequest
 
         The model defined in huaweicloud sdk
@@ -33,18 +35,23 @@ class ListDesktopsStatisticsRequest:
         :type desktop_type: list[str]
         :param statistics_type: 统计类型，为空时仅统计桌面总数 |- - attach-state 按照分配状态统计 - login-state 按照登录状态统计 - run-state 按照运行状态统计。
         :type statistics_type: list[str]
+        :param desktop_pool_ids: 待查询的桌面池ID列表
+        :type desktop_pool_ids: list[str]
         """
         
         
 
         self._desktop_type = None
         self._statistics_type = None
+        self._desktop_pool_ids = None
         self.discriminator = None
 
         if desktop_type is not None:
             self.desktop_type = desktop_type
         if statistics_type is not None:
             self.statistics_type = statistics_type
+        if desktop_pool_ids is not None:
+            self.desktop_pool_ids = desktop_pool_ids
 
     @property
     def desktop_type(self):
@@ -89,6 +96,28 @@ class ListDesktopsStatisticsRequest:
         :type statistics_type: list[str]
         """
         self._statistics_type = statistics_type
+
+    @property
+    def desktop_pool_ids(self):
+        r"""Gets the desktop_pool_ids of this ListDesktopsStatisticsRequest.
+
+        待查询的桌面池ID列表
+
+        :return: The desktop_pool_ids of this ListDesktopsStatisticsRequest.
+        :rtype: list[str]
+        """
+        return self._desktop_pool_ids
+
+    @desktop_pool_ids.setter
+    def desktop_pool_ids(self, desktop_pool_ids):
+        r"""Sets the desktop_pool_ids of this ListDesktopsStatisticsRequest.
+
+        待查询的桌面池ID列表
+
+        :param desktop_pool_ids: The desktop_pool_ids of this ListDesktopsStatisticsRequest.
+        :type desktop_pool_ids: list[str]
+        """
+        self._desktop_pool_ids = desktop_pool_ids
 
     def to_dict(self):
         result = {}

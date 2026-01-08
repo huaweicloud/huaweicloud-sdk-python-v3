@@ -88,9 +88,9 @@ class ShowResourceGroupResponse(SdkResponse):
         :type related_ep_ids: list[str]
         :param enterprise_project_id_and_tags: 匹配企业项目或匹配标签参数
         :type enterprise_project_id_and_tags: list[:class:`huaweicloudsdkces.v2.EnterpriseProjectIdAndTags`]
-        :param status: **参数解释** 指标告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        :param status: **参数解释** 指标告警状态。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
         :type status: str
-        :param event_status: **参数解释** 事件告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        :param event_status: **参数解释** 事件告警状态。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
         :type event_status: str
         :param resource_statistics: 
         :type resource_statistics: :class:`huaweicloudsdkces.v2.GetResourceGroupRespResourceStatistics`
@@ -430,7 +430,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def status(self):
         r"""Gets the status of this ShowResourceGroupResponse.
 
-        **参数解释** 指标告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        **参数解释** 指标告警状态。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
 
         :return: The status of this ShowResourceGroupResponse.
         :rtype: str
@@ -441,7 +441,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def status(self, status):
         r"""Sets the status of this ShowResourceGroupResponse.
 
-        **参数解释** 指标告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        **参数解释** 指标告警状态。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
 
         :param status: The status of this ShowResourceGroupResponse.
         :type status: str
@@ -452,7 +452,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def event_status(self):
         r"""Gets the event_status of this ShowResourceGroupResponse.
 
-        **参数解释** 事件告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        **参数解释** 事件告警状态。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
 
         :return: The event_status of this ShowResourceGroupResponse.
         :rtype: str
@@ -463,7 +463,7 @@ class ShowResourceGroupResponse(SdkResponse):
     def event_status(self, event_status):
         r"""Sets the event_status of this ShowResourceGroupResponse.
 
-        **参数解释** 事件告警状态。 **取值范围** 枚举值。 - health: 告警中 - unhealthy: 已触发 - no_alarm_rule: 未设置告警规则 
+        **参数解释** 事件告警状态。 **取值范围** 枚举值。 - health: 表示无告警 - unhealthy: 表示告警中 - no_alarm_rule: 表示未设置告警规则 
 
         :param event_status: The event_status of this ShowResourceGroupResponse.
         :type event_status: str

@@ -19,7 +19,9 @@ class Metadata:
         'dedicated_flavor': 'str',
         'dedicated_storage_id': 'str',
         'expand_type': 'str',
-        'hpc_bw': 'str'
+        'hpc_bw': 'str',
+        'auto_create_security_group_rules': 'str',
+        'vault_id': 'str'
     }
 
     attribute_map = {
@@ -27,10 +29,12 @@ class Metadata:
         'dedicated_flavor': 'dedicated_flavor',
         'dedicated_storage_id': 'dedicated_storage_id',
         'expand_type': 'expand_type',
-        'hpc_bw': 'hpc_bw'
+        'hpc_bw': 'hpc_bw',
+        'auto_create_security_group_rules': 'auto_create_security_group_rules',
+        'vault_id': 'vault_id'
     }
 
-    def __init__(self, crypt_key_id=None, dedicated_flavor=None, dedicated_storage_id=None, expand_type=None, hpc_bw=None):
+    def __init__(self, crypt_key_id=None, dedicated_flavor=None, dedicated_storage_id=None, expand_type=None, hpc_bw=None, auto_create_security_group_rules=None, vault_id=None):
         r"""Metadata
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class Metadata:
         :type expand_type: str
         :param hpc_bw: 文件系统的带宽规格。  创建20MB/s/TiB、40MB/s/TiB、125MB/s/TiB、250MB/s/TiB、500MB/s/TiB、1000MB/s/TiB、HPC缓存型文件系统时，该参数必填。  20MB/s/TiB，填写\&quot;20M\&quot;。 40MB/s/TiB，填写\&quot;40M\&quot;。 125MB/s/TiB，填写\&quot;125M\&quot;。 250MB/s/TiB，填写\&quot;250M\&quot;。 500MB/s/TiB，填写\&quot;500M\&quot;。 1000MB/s/TiB，填写\&quot;1000M\&quot;。 HPC缓存型，填写\&quot;2G\&quot;、\&quot;4G\&quot;、\&quot;8G\&quot;、\&quot;16G\&quot;、\&quot;24G\&quot;、\&quot;32G\&quot;或\&quot;48G\&quot;。 
         :type hpc_bw: str
+        :param auto_create_security_group_rules: 是否自动创建安全组规则。\&quot;true\&quot;表示自动创建安全组规则，\&quot;false\&quot;表示不自动创建安全组规则。默认值是\&quot;true\&quot;。
+        :type auto_create_security_group_rules: str
+        :param vault_id: 存储库ID。
+        :type vault_id: str
         """
         
         
@@ -54,6 +62,8 @@ class Metadata:
         self._dedicated_storage_id = None
         self._expand_type = None
         self._hpc_bw = None
+        self._auto_create_security_group_rules = None
+        self._vault_id = None
         self.discriminator = None
 
         if crypt_key_id is not None:
@@ -66,6 +76,10 @@ class Metadata:
             self.expand_type = expand_type
         if hpc_bw is not None:
             self.hpc_bw = hpc_bw
+        if auto_create_security_group_rules is not None:
+            self.auto_create_security_group_rules = auto_create_security_group_rules
+        if vault_id is not None:
+            self.vault_id = vault_id
 
     @property
     def crypt_key_id(self):
@@ -176,6 +190,50 @@ class Metadata:
         :type hpc_bw: str
         """
         self._hpc_bw = hpc_bw
+
+    @property
+    def auto_create_security_group_rules(self):
+        r"""Gets the auto_create_security_group_rules of this Metadata.
+
+        是否自动创建安全组规则。\"true\"表示自动创建安全组规则，\"false\"表示不自动创建安全组规则。默认值是\"true\"。
+
+        :return: The auto_create_security_group_rules of this Metadata.
+        :rtype: str
+        """
+        return self._auto_create_security_group_rules
+
+    @auto_create_security_group_rules.setter
+    def auto_create_security_group_rules(self, auto_create_security_group_rules):
+        r"""Sets the auto_create_security_group_rules of this Metadata.
+
+        是否自动创建安全组规则。\"true\"表示自动创建安全组规则，\"false\"表示不自动创建安全组规则。默认值是\"true\"。
+
+        :param auto_create_security_group_rules: The auto_create_security_group_rules of this Metadata.
+        :type auto_create_security_group_rules: str
+        """
+        self._auto_create_security_group_rules = auto_create_security_group_rules
+
+    @property
+    def vault_id(self):
+        r"""Gets the vault_id of this Metadata.
+
+        存储库ID。
+
+        :return: The vault_id of this Metadata.
+        :rtype: str
+        """
+        return self._vault_id
+
+    @vault_id.setter
+    def vault_id(self, vault_id):
+        r"""Sets the vault_id of this Metadata.
+
+        存储库ID。
+
+        :param vault_id: The vault_id of this Metadata.
+        :type vault_id: str
+        """
+        self._vault_id = vault_id
 
     def to_dict(self):
         result = {}

@@ -39,7 +39,7 @@ class UpdateNatGatewayOption:
         :type name: str
         :param description: 公网NAT网关的描述，长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
+        :param spec: 公网NAT网关的规格。 取值为： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
         :type spec: str
         :param session_conf: 
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
@@ -115,7 +115,7 @@ class UpdateNatGatewayOption:
     def spec(self):
         r"""Gets the spec of this UpdateNatGatewayOption.
 
-        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
+        公网NAT网关的规格。 取值为： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
 
         :return: The spec of this UpdateNatGatewayOption.
         :rtype: str
@@ -126,7 +126,7 @@ class UpdateNatGatewayOption:
     def spec(self, spec):
         r"""Sets the spec of this UpdateNatGatewayOption.
 
-        公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
+        公网NAT网关的规格。 取值为： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
 
         :param spec: The spec of this UpdateNatGatewayOption.
         :type spec: str

@@ -28,7 +28,7 @@ class DeleteDashboardsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param dashboards: 批量删除监控看板返回结果
+        :param dashboards: **参数解释** 批量删除监控看板返回结果 
         :type dashboards: list[:class:`huaweicloudsdkces.v2.BatchDeleteDashboardRespInfo`]
         """
         
@@ -44,7 +44,7 @@ class DeleteDashboardsResponse(SdkResponse):
     def dashboards(self):
         r"""Gets the dashboards of this DeleteDashboardsResponse.
 
-        批量删除监控看板返回结果
+        **参数解释** 批量删除监控看板返回结果 
 
         :return: The dashboards of this DeleteDashboardsResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.BatchDeleteDashboardRespInfo`]
@@ -55,7 +55,7 @@ class DeleteDashboardsResponse(SdkResponse):
     def dashboards(self, dashboards):
         r"""Sets the dashboards of this DeleteDashboardsResponse.
 
-        批量删除监控看板返回结果
+        **参数解释** 批量删除监控看板返回结果 
 
         :param dashboards: The dashboards of this DeleteDashboardsResponse.
         :type dashboards: list[:class:`huaweicloudsdkces.v2.BatchDeleteDashboardRespInfo`]

@@ -16,23 +16,27 @@ class CreateDesktopOrderRequestBody:
 
     openapi_types = {
         'enterprise_project_id': 'str',
+        'agency_urn': 'str',
         'hour_package_resources': 'list[HourPackageResource]',
         'extend_param': 'OrderExtendParam'
     }
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
+        'agency_urn': 'agency_urn',
         'hour_package_resources': 'hour_package_resources',
         'extend_param': 'extend_param'
     }
 
-    def __init__(self, enterprise_project_id=None, hour_package_resources=None, extend_param=None):
+    def __init__(self, enterprise_project_id=None, agency_urn=None, hour_package_resources=None, extend_param=None):
         r"""CreateDesktopOrderRequestBody
 
         The model defined in huaweicloud sdk
 
         :param enterprise_project_id: 企业项目ID，默认\&quot;0。\&quot;
         :type enterprise_project_id: str
+        :param agency_urn: 授权给Billing服务的委托URN。使用RAM共享密钥创建包周期云桌面或添加包周期磁盘时，需要传入该字段。
+        :type agency_urn: str
         :param hour_package_resources: 小时包资源。
         :type hour_package_resources: list[:class:`huaweicloudsdkworkspace.v2.HourPackageResource`]
         :param extend_param: 
@@ -42,12 +46,15 @@ class CreateDesktopOrderRequestBody:
         
 
         self._enterprise_project_id = None
+        self._agency_urn = None
         self._hour_package_resources = None
         self._extend_param = None
         self.discriminator = None
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if agency_urn is not None:
+            self.agency_urn = agency_urn
         self.hour_package_resources = hour_package_resources
         if extend_param is not None:
             self.extend_param = extend_param
@@ -73,6 +80,28 @@ class CreateDesktopOrderRequestBody:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def agency_urn(self):
+        r"""Gets the agency_urn of this CreateDesktopOrderRequestBody.
+
+        授权给Billing服务的委托URN。使用RAM共享密钥创建包周期云桌面或添加包周期磁盘时，需要传入该字段。
+
+        :return: The agency_urn of this CreateDesktopOrderRequestBody.
+        :rtype: str
+        """
+        return self._agency_urn
+
+    @agency_urn.setter
+    def agency_urn(self, agency_urn):
+        r"""Sets the agency_urn of this CreateDesktopOrderRequestBody.
+
+        授权给Billing服务的委托URN。使用RAM共享密钥创建包周期云桌面或添加包周期磁盘时，需要传入该字段。
+
+        :param agency_urn: The agency_urn of this CreateDesktopOrderRequestBody.
+        :type agency_urn: str
+        """
+        self._agency_urn = agency_urn
 
     @property
     def hour_package_resources(self):

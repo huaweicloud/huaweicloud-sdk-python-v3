@@ -18,6 +18,7 @@ class DesktopMetric:
         'resource_id': 'str',
         'resource_pool_id': 'str',
         'resource_name': 'str',
+        'enterprise_project_id': 'str',
         'metric': 'list[Metric]'
     }
 
@@ -25,10 +26,11 @@ class DesktopMetric:
         'resource_id': 'resource_id',
         'resource_pool_id': 'resource_pool_id',
         'resource_name': 'resource_name',
+        'enterprise_project_id': 'enterprise_project_id',
         'metric': 'metric'
     }
 
-    def __init__(self, resource_id=None, resource_pool_id=None, resource_name=None, metric=None):
+    def __init__(self, resource_id=None, resource_pool_id=None, resource_name=None, enterprise_project_id=None, metric=None):
         r"""DesktopMetric
 
         The model defined in huaweicloud sdk
@@ -39,6 +41,8 @@ class DesktopMetric:
         :type resource_pool_id: str
         :param resource_name: 桌面名称。
         :type resource_name: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
         :param metric: 统计信息 * &#x60;desktop_usage&#x60; -  桌面使用时长(单位:秒) * &#x60;desktop_idle_duration&#x60; -  桌面空闲时长(单位:秒)
         :type metric: list[:class:`huaweicloudsdkworkspace.v2.Metric`]
         """
@@ -48,6 +52,7 @@ class DesktopMetric:
         self._resource_id = None
         self._resource_pool_id = None
         self._resource_name = None
+        self._enterprise_project_id = None
         self._metric = None
         self.discriminator = None
 
@@ -57,6 +62,8 @@ class DesktopMetric:
             self.resource_pool_id = resource_pool_id
         if resource_name is not None:
             self.resource_name = resource_name
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if metric is not None:
             self.metric = metric
 
@@ -125,6 +132,28 @@ class DesktopMetric:
         :type resource_name: str
         """
         self._resource_name = resource_name
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this DesktopMetric.
+
+        企业项目ID。
+
+        :return: The enterprise_project_id of this DesktopMetric.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this DesktopMetric.
+
+        企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this DesktopMetric.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def metric(self):

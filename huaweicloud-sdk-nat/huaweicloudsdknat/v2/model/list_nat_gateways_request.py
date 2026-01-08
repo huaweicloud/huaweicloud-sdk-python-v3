@@ -67,11 +67,11 @@ class ListNatGatewaysRequest:
         :type created_at: datetime
         :param name: 公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
         :type name: str
-        :param status: 公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
+        :param status: 公网NAT网关实例的状态。 取值为:  - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - INACTIVE: 不可用
         :type status: list[str]
-        :param spec: 公网NAT网关实例的规格。 取值为： \&quot;1\&quot;：小型，SNAT最大连接数10000 \&quot;2\&quot;：中型，SNAT最大连接数50000 \&quot;3\&quot;：大型，SNAT最大连接数200000 \&quot;4\&quot;：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
+        :param spec: 公网NAT网关实例的规格。 取值为： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
         :type spec: list[str]
-        :param admin_state_up: 解冻/冻结状态。 取值范围： \&quot;true\&quot;：解冻 \&quot;false\&quot;：冻结
+        :param admin_state_up: 解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
         :type admin_state_up: bool
         :param internal_network_id: 公网NAT网关下行口（DVR的下一跳）所属的network id。
         :type internal_network_id: str
@@ -273,7 +273,7 @@ class ListNatGatewaysRequest:
     def status(self):
         r"""Gets the status of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
+        公网NAT网关实例的状态。 取值为:  - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - INACTIVE: 不可用
 
         :return: The status of this ListNatGatewaysRequest.
         :rtype: list[str]
@@ -284,7 +284,7 @@ class ListNatGatewaysRequest:
     def status(self, status):
         r"""Sets the status of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的状态。 取值为:  ACTIVE: 可用 PENDING_CREATE: 创建中 PENDING_UPDATE: 更新中 PENDING_DELETE: 删除中 INACTIVE: 不可用
+        公网NAT网关实例的状态。 取值为:  - ACTIVE: 可用 - PENDING_CREATE: 创建中 - PENDING_UPDATE: 更新中 - PENDING_DELETE: 删除中 - INACTIVE: 不可用
 
         :param status: The status of this ListNatGatewaysRequest.
         :type status: list[str]
@@ -295,7 +295,7 @@ class ListNatGatewaysRequest:
     def spec(self):
         r"""Gets the spec of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
+        公网NAT网关实例的规格。 取值为： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
 
         :return: The spec of this ListNatGatewaysRequest.
         :rtype: list[str]
@@ -306,7 +306,7 @@ class ListNatGatewaysRequest:
     def spec(self, spec):
         r"""Sets the spec of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的规格。 取值为： \"1\"：小型，SNAT最大连接数10000 \"2\"：中型，SNAT最大连接数50000 \"3\"：大型，SNAT最大连接数200000 \"4\"：超大型，SNAT最大连接数1000000 “5”：企业型，SNAT最大连接数10000000 
+        公网NAT网关实例的规格。 取值为： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
 
         :param spec: The spec of this ListNatGatewaysRequest.
         :type spec: list[str]
@@ -317,7 +317,7 @@ class ListNatGatewaysRequest:
     def admin_state_up(self):
         r"""Gets the admin_state_up of this ListNatGatewaysRequest.
 
-        解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
+        解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
 
         :return: The admin_state_up of this ListNatGatewaysRequest.
         :rtype: bool
@@ -328,7 +328,7 @@ class ListNatGatewaysRequest:
     def admin_state_up(self, admin_state_up):
         r"""Sets the admin_state_up of this ListNatGatewaysRequest.
 
-        解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
+        解冻/冻结状态。 取值范围：  - true: 解冻 - false: 冻结
 
         :param admin_state_up: The admin_state_up of this ListNatGatewaysRequest.
         :type admin_state_up: bool

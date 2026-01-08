@@ -20,6 +20,7 @@ class VideoProcess:
         'hls_storage_type': 'str',
         'rotate': 'int',
         'adaptation': 'str',
+        'fill_type': 'str',
         'upsample': 'int',
         'hls_segment_type': 'str'
     }
@@ -30,11 +31,12 @@ class VideoProcess:
         'hls_storage_type': 'hls_storage_type',
         'rotate': 'rotate',
         'adaptation': 'adaptation',
+        'fill_type': 'fill_type',
         'upsample': 'upsample',
         'hls_segment_type': 'hls_segment_type'
     }
 
-    def __init__(self, hls_init_count=None, hls_init_interval=None, hls_storage_type=None, rotate=None, adaptation=None, upsample=None, hls_segment_type=None):
+    def __init__(self, hls_init_count=None, hls_init_interval=None, hls_storage_type=None, rotate=None, adaptation=None, fill_type=None, upsample=None, hls_segment_type=None):
         r"""VideoProcess
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class VideoProcess:
         :type rotate: int
         :param adaptation: 长短边自适应控制字段： - SHORT：表示短边自适应 - LONG：表示长边自适应 - NONE：表示不自适应 
         :type adaptation: str
+        :param fill_type: adaptation为NONE时生效： - stretch：拉伸，对每一帧进行拉伸，填满整个画面 - black：留黑，保持视频宽高比不变，边缘剩余部分使用黑色填充。 - white：留白，保持视频宽高比不变，边缘剩余部分使用白色填充。 - gauss：高斯模糊，保持视频宽高比不变，边缘剩余部分使用高斯模糊。 
+        :type fill_type: str
         :param upsample: 是否开启上采样，如支持从480P的片源转为720P，可取值为:  - 0：表示上采样关闭， - 1：表示上采样开启. 
         :type upsample: int
         :param hls_segment_type: HLS切片类型。  取值如下所示： - mpegts：ts切片 - fmp4：fmp4切片  不设置默认为ts切片。 
@@ -62,6 +66,7 @@ class VideoProcess:
         self._hls_storage_type = None
         self._rotate = None
         self._adaptation = None
+        self._fill_type = None
         self._upsample = None
         self._hls_segment_type = None
         self.discriminator = None
@@ -76,6 +81,8 @@ class VideoProcess:
             self.rotate = rotate
         if adaptation is not None:
             self.adaptation = adaptation
+        if fill_type is not None:
+            self.fill_type = fill_type
         if upsample is not None:
             self.upsample = upsample
         if hls_segment_type is not None:
@@ -190,6 +197,28 @@ class VideoProcess:
         :type adaptation: str
         """
         self._adaptation = adaptation
+
+    @property
+    def fill_type(self):
+        r"""Gets the fill_type of this VideoProcess.
+
+        adaptation为NONE时生效： - stretch：拉伸，对每一帧进行拉伸，填满整个画面 - black：留黑，保持视频宽高比不变，边缘剩余部分使用黑色填充。 - white：留白，保持视频宽高比不变，边缘剩余部分使用白色填充。 - gauss：高斯模糊，保持视频宽高比不变，边缘剩余部分使用高斯模糊。 
+
+        :return: The fill_type of this VideoProcess.
+        :rtype: str
+        """
+        return self._fill_type
+
+    @fill_type.setter
+    def fill_type(self, fill_type):
+        r"""Sets the fill_type of this VideoProcess.
+
+        adaptation为NONE时生效： - stretch：拉伸，对每一帧进行拉伸，填满整个画面 - black：留黑，保持视频宽高比不变，边缘剩余部分使用黑色填充。 - white：留白，保持视频宽高比不变，边缘剩余部分使用白色填充。 - gauss：高斯模糊，保持视频宽高比不变，边缘剩余部分使用高斯模糊。 
+
+        :param fill_type: The fill_type of this VideoProcess.
+        :type fill_type: str
+        """
+        self._fill_type = fill_type
 
     @property
     def upsample(self):

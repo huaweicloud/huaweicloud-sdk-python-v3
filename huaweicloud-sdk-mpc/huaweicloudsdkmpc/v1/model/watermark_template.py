@@ -20,6 +20,8 @@ class WatermarkTemplate:
         'referpos': 'str',
         'timeline_start': 'str',
         'timeline_duration': 'str',
+        'random_time_min': 'str',
+        'random_time_max': 'str',
         'image_process': 'str',
         'width': 'str',
         'height': 'str',
@@ -35,6 +37,8 @@ class WatermarkTemplate:
         'referpos': 'referpos',
         'timeline_start': 'timeline_start',
         'timeline_duration': 'timeline_duration',
+        'random_time_min': 'random_time_min',
+        'random_time_max': 'random_time_max',
         'image_process': 'image_process',
         'width': 'width',
         'height': 'height',
@@ -44,7 +48,7 @@ class WatermarkTemplate:
         'type': 'type'
     }
 
-    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, image_process=None, width=None, height=None, base=None, template_id=None, template_name=None, type=None):
+    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, random_time_min=None, random_time_max=None, image_process=None, width=None, height=None, base=None, template_id=None, template_name=None, type=None):
         r"""WatermarkTemplate
 
         The model defined in huaweicloud sdk
@@ -59,6 +63,10 @@ class WatermarkTemplate:
         :type timeline_start: str
         :param timeline_duration: 水印持续时间，与“timeline_start”配合使用。  取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值：ToEND。 
         :type timeline_duration: str
+        :param random_time_min: 轮转间隔时间最小值，单位：秒 
+        :type random_time_min: str
+        :param random_time_max: 轮转间隔时间最大值，单位：秒 
+        :type random_time_max: str
         :param image_process: 图片水印处理方式，type设置为Image时有效。  取值如下：  - Original：只做简单缩放，不做其他处理。 - Grayed：彩色图片变灰。 - Transparent：透明化。 
         :type image_process: str
         :param width: 水印图片宽，值有两种形式： - 整数型代水印图片宽的像素值，范围[8，4096]，单位px。 - 小数型代表相对输出视频分辨率宽的比率，范围(0,1)，支持4位小数，如0.9999，超出部分系统自动丢弃。 
@@ -82,6 +90,8 @@ class WatermarkTemplate:
         self._referpos = None
         self._timeline_start = None
         self._timeline_duration = None
+        self._random_time_min = None
+        self._random_time_max = None
         self._image_process = None
         self._width = None
         self._height = None
@@ -101,6 +111,10 @@ class WatermarkTemplate:
             self.timeline_start = timeline_start
         if timeline_duration is not None:
             self.timeline_duration = timeline_duration
+        if random_time_min is not None:
+            self.random_time_min = random_time_min
+        if random_time_max is not None:
+            self.random_time_max = random_time_max
         if image_process is not None:
             self.image_process = image_process
         if width is not None:
@@ -225,6 +239,50 @@ class WatermarkTemplate:
         :type timeline_duration: str
         """
         self._timeline_duration = timeline_duration
+
+    @property
+    def random_time_min(self):
+        r"""Gets the random_time_min of this WatermarkTemplate.
+
+        轮转间隔时间最小值，单位：秒 
+
+        :return: The random_time_min of this WatermarkTemplate.
+        :rtype: str
+        """
+        return self._random_time_min
+
+    @random_time_min.setter
+    def random_time_min(self, random_time_min):
+        r"""Sets the random_time_min of this WatermarkTemplate.
+
+        轮转间隔时间最小值，单位：秒 
+
+        :param random_time_min: The random_time_min of this WatermarkTemplate.
+        :type random_time_min: str
+        """
+        self._random_time_min = random_time_min
+
+    @property
+    def random_time_max(self):
+        r"""Gets the random_time_max of this WatermarkTemplate.
+
+        轮转间隔时间最大值，单位：秒 
+
+        :return: The random_time_max of this WatermarkTemplate.
+        :rtype: str
+        """
+        return self._random_time_max
+
+    @random_time_max.setter
+    def random_time_max(self, random_time_max):
+        r"""Sets the random_time_max of this WatermarkTemplate.
+
+        轮转间隔时间最大值，单位：秒 
+
+        :param random_time_max: The random_time_max of this WatermarkTemplate.
+        :type random_time_max: str
+        """
+        self._random_time_max = random_time_max
 
     @property
     def image_process(self):

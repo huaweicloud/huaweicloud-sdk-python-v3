@@ -28,7 +28,7 @@ class ListDashboardInfosResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param dashboards: **参数描述**： 监控看板列表 
+        :param dashboards: **参数解释**： 监控看板列表 
         :type dashboards: list[:class:`huaweicloudsdkces.v2.DashBoardInfo`]
         """
         
@@ -44,7 +44,7 @@ class ListDashboardInfosResponse(SdkResponse):
     def dashboards(self):
         r"""Gets the dashboards of this ListDashboardInfosResponse.
 
-        **参数描述**： 监控看板列表 
+        **参数解释**： 监控看板列表 
 
         :return: The dashboards of this ListDashboardInfosResponse.
         :rtype: list[:class:`huaweicloudsdkces.v2.DashBoardInfo`]
@@ -55,7 +55,7 @@ class ListDashboardInfosResponse(SdkResponse):
     def dashboards(self, dashboards):
         r"""Sets the dashboards of this ListDashboardInfosResponse.
 
-        **参数描述**： 监控看板列表 
+        **参数解释**： 监控看板列表 
 
         :param dashboards: The dashboards of this ListDashboardInfosResponse.
         :type dashboards: list[:class:`huaweicloudsdkces.v2.DashBoardInfo`]

@@ -112,6 +112,7 @@ from huaweicloudsdksfsturbo.v1.model.one_fs_task_resp import OneFsTaskResp
 from huaweicloudsdksfsturbo.v1.model.one_hpc_cache_task_info_resp import OneHpcCacheTaskInfoResp
 from huaweicloudsdksfsturbo.v1.model.one_perm_rule_request_info import OnePermRuleRequestInfo
 from huaweicloudsdksfsturbo.v1.model.one_perm_rule_response_info import OnePermRuleResponseInfo
+from huaweicloudsdksfsturbo.v1.model.quota_resource import QuotaResource
 from huaweicloudsdksfsturbo.v1.model.req_config_hpc_cache_backend import ReqConfigHpcCacheBackend
 from huaweicloudsdksfsturbo.v1.model.req_update_hpc_cache_data import ReqUpdateHpcCacheData
 from huaweicloudsdksfsturbo.v1.model.req_update_hpc_cache_info import ReqUpdateHpcCacheInfo
@@ -158,6 +159,9 @@ from huaweicloudsdksfsturbo.v1.model.show_ldap_config_request import ShowLdapCon
 from huaweicloudsdksfsturbo.v1.model.show_ldap_config_response import ShowLdapConfigResponse
 from huaweicloudsdksfsturbo.v1.model.show_perm_rule_request import ShowPermRuleRequest
 from huaweicloudsdksfsturbo.v1.model.show_perm_rule_response import ShowPermRuleResponse
+from huaweicloudsdksfsturbo.v1.model.show_quota_request import ShowQuotaRequest
+from huaweicloudsdksfsturbo.v1.model.show_quota_resource import ShowQuotaResource
+from huaweicloudsdksfsturbo.v1.model.show_quota_response import ShowQuotaResponse
 from huaweicloudsdksfsturbo.v1.model.show_share_request import ShowShareRequest
 from huaweicloudsdksfsturbo.v1.model.show_share_response import ShowShareResponse
 from huaweicloudsdksfsturbo.v1.model.show_shared_tags_request import ShowSharedTagsRequest

@@ -31,11 +31,11 @@ class BatchDeleteDashboardRespInfo:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_id: **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
+        :param dashboard_id: **参数解释**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
         :type dashboard_id: str
-        :param ret_status: 处理结果, successful: 成功, error: 失败
+        :param ret_status: **参数解释** 处理结果 **取值范围** 枚举值： - successful 成功 - error 失败 
         :type ret_status: str
-        :param error_msg: 错误信息
+        :param error_msg: **参数解释** 错误信息 **取值范围** 信息长度为[0,128]个字符 
         :type error_msg: str
         """
         
@@ -57,7 +57,7 @@ class BatchDeleteDashboardRespInfo:
     def dashboard_id(self):
         r"""Gets the dashboard_id of this BatchDeleteDashboardRespInfo.
 
-        **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
+        **参数解释**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
 
         :return: The dashboard_id of this BatchDeleteDashboardRespInfo.
         :rtype: str
@@ -68,7 +68,7 @@ class BatchDeleteDashboardRespInfo:
     def dashboard_id(self, dashboard_id):
         r"""Sets the dashboard_id of this BatchDeleteDashboardRespInfo.
 
-        **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
+        **参数解释**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
 
         :param dashboard_id: The dashboard_id of this BatchDeleteDashboardRespInfo.
         :type dashboard_id: str
@@ -79,7 +79,7 @@ class BatchDeleteDashboardRespInfo:
     def ret_status(self):
         r"""Gets the ret_status of this BatchDeleteDashboardRespInfo.
 
-        处理结果, successful: 成功, error: 失败
+        **参数解释** 处理结果 **取值范围** 枚举值： - successful 成功 - error 失败 
 
         :return: The ret_status of this BatchDeleteDashboardRespInfo.
         :rtype: str
@@ -90,7 +90,7 @@ class BatchDeleteDashboardRespInfo:
     def ret_status(self, ret_status):
         r"""Sets the ret_status of this BatchDeleteDashboardRespInfo.
 
-        处理结果, successful: 成功, error: 失败
+        **参数解释** 处理结果 **取值范围** 枚举值： - successful 成功 - error 失败 
 
         :param ret_status: The ret_status of this BatchDeleteDashboardRespInfo.
         :type ret_status: str
@@ -101,7 +101,7 @@ class BatchDeleteDashboardRespInfo:
     def error_msg(self):
         r"""Gets the error_msg of this BatchDeleteDashboardRespInfo.
 
-        错误信息
+        **参数解释** 错误信息 **取值范围** 信息长度为[0,128]个字符 
 
         :return: The error_msg of this BatchDeleteDashboardRespInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class BatchDeleteDashboardRespInfo:
     def error_msg(self, error_msg):
         r"""Sets the error_msg of this BatchDeleteDashboardRespInfo.
 
-        错误信息
+        **参数解释** 错误信息 **取值范围** 信息长度为[0,128]个字符 
 
         :param error_msg: The error_msg of this BatchDeleteDashboardRespInfo.
         :type error_msg: str

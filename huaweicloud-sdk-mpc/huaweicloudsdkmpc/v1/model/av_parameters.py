@@ -17,16 +17,20 @@ class AvParameters:
     openapi_types = {
         'video': 'VideoParameters',
         'audio': 'Audio',
-        'common': 'Common'
+        'common': 'Common',
+        'output': 'ObsObjInfo',
+        'output_filename': 'str'
     }
 
     attribute_map = {
         'video': 'video',
         'audio': 'audio',
-        'common': 'common'
+        'common': 'common',
+        'output': 'output',
+        'output_filename': 'output_filename'
     }
 
-    def __init__(self, video=None, audio=None, common=None):
+    def __init__(self, video=None, audio=None, common=None, output=None, output_filename=None):
         r"""AvParameters
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class AvParameters:
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
         :param common: 
         :type common: :class:`huaweicloudsdkmpc.v1.Common`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output_filename: 输出文件名 
+        :type output_filename: str
         """
         
         
@@ -44,6 +52,8 @@ class AvParameters:
         self._video = None
         self._audio = None
         self._common = None
+        self._output = None
+        self._output_filename = None
         self.discriminator = None
 
         if video is not None:
@@ -51,6 +61,10 @@ class AvParameters:
         if audio is not None:
             self.audio = audio
         self.common = common
+        if output is not None:
+            self.output = output
+        if output_filename is not None:
+            self.output_filename = output_filename
 
     @property
     def video(self):
@@ -105,6 +119,46 @@ class AvParameters:
         :type common: :class:`huaweicloudsdkmpc.v1.Common`
         """
         self._common = common
+
+    @property
+    def output(self):
+        r"""Gets the output of this AvParameters.
+
+        :return: The output of this AvParameters.
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        """
+        return self._output
+
+    @output.setter
+    def output(self, output):
+        r"""Sets the output of this AvParameters.
+
+        :param output: The output of this AvParameters.
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        """
+        self._output = output
+
+    @property
+    def output_filename(self):
+        r"""Gets the output_filename of this AvParameters.
+
+        输出文件名 
+
+        :return: The output_filename of this AvParameters.
+        :rtype: str
+        """
+        return self._output_filename
+
+    @output_filename.setter
+    def output_filename(self, output_filename):
+        r"""Sets the output_filename of this AvParameters.
+
+        输出文件名 
+
+        :param output_filename: The output_filename of this AvParameters.
+        :type output_filename: str
+        """
+        self._output_filename = output_filename
 
     def to_dict(self):
         result = {}

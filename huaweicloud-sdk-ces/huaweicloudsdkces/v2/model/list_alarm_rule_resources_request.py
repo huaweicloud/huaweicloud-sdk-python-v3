@@ -33,9 +33,9 @@ class ListAlarmRuleResourcesRequest:
 
         :param alarm_id: **参数解释**： 告警规则ID。 **约束限制**： 不涉及。 **取值范围**： 以al开头，后跟22位的字母或数字。          **默认取值**： 不涉及。 
         :type alarm_id: str
-        :param offset: **参数描述**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为10000。 **默认取值**： 0 
+        :param offset: **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为10000。 **默认取值**： 0 
         :type offset: int
-        :param limit: **参数描述**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为100。 **默认取值**： 10 
+        :param limit: **参数解释**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为100。 **默认取值**： 10 
         :type limit: int
         """
         
@@ -78,7 +78,7 @@ class ListAlarmRuleResourcesRequest:
     def offset(self):
         r"""Gets the offset of this ListAlarmRuleResourcesRequest.
 
-        **参数描述**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为10000。 **默认取值**： 0 
+        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为10000。 **默认取值**： 0 
 
         :return: The offset of this ListAlarmRuleResourcesRequest.
         :rtype: int
@@ -89,7 +89,7 @@ class ListAlarmRuleResourcesRequest:
     def offset(self, offset):
         r"""Sets the offset of this ListAlarmRuleResourcesRequest.
 
-        **参数描述**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为10000。 **默认取值**： 0 
+        **参数解释**： 分页偏移量。 **约束限制**： 不涉及。 **取值范围**： 最小值为0，最大值为10000。 **默认取值**： 0 
 
         :param offset: The offset of this ListAlarmRuleResourcesRequest.
         :type offset: int
@@ -100,7 +100,7 @@ class ListAlarmRuleResourcesRequest:
     def limit(self):
         r"""Gets the limit of this ListAlarmRuleResourcesRequest.
 
-        **参数描述**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为100。 **默认取值**： 10 
+        **参数解释**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为100。 **默认取值**： 10 
 
         :return: The limit of this ListAlarmRuleResourcesRequest.
         :rtype: int
@@ -111,7 +111,7 @@ class ListAlarmRuleResourcesRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListAlarmRuleResourcesRequest.
 
-        **参数描述**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为100。 **默认取值**： 10 
+        **参数解释**： 分页大小。 **约束限制**： 不涉及。 **取值范围**： 最小值为1，最大值为100。 **默认取值**： 10 
 
         :param limit: The limit of this ListAlarmRuleResourcesRequest.
         :type limit: int

@@ -16,25 +16,33 @@ class UpdateDesktopUsernameReq:
 
     openapi_types = {
         'old_username': 'str',
+        'old_user_domain': 'str',
         'new_username': 'str',
+        'new_user_domain': 'str',
         'is_reboot': 'bool'
     }
 
     attribute_map = {
         'old_username': 'old_username',
+        'old_user_domain': 'old_user_domain',
         'new_username': 'new_username',
+        'new_user_domain': 'new_user_domain',
         'is_reboot': 'is_reboot'
     }
 
-    def __init__(self, old_username=None, new_username=None, is_reboot=None):
+    def __init__(self, old_username=None, old_user_domain=None, new_username=None, new_user_domain=None, is_reboot=None):
         r"""UpdateDesktopUsernameReq
 
         The model defined in huaweicloud sdk
 
         :param old_username: 桌面关联原用户名，只传用户名，不带域信息。
         :type old_username: str
+        :param old_user_domain: 桌面关联原用户名的域。
+        :type old_user_domain: str
         :param new_username: 桌面关联新用户名，只传用户名，不带域信息。
         :type new_username: str
+        :param new_user_domain: 桌面关联新用户名的域。
+        :type new_user_domain: str
         :param is_reboot: 桌面关联新用户名后是否重启虚拟机，默认不重启。
         :type is_reboot: bool
         """
@@ -42,12 +50,18 @@ class UpdateDesktopUsernameReq:
         
 
         self._old_username = None
+        self._old_user_domain = None
         self._new_username = None
+        self._new_user_domain = None
         self._is_reboot = None
         self.discriminator = None
 
         self.old_username = old_username
+        if old_user_domain is not None:
+            self.old_user_domain = old_user_domain
         self.new_username = new_username
+        if new_user_domain is not None:
+            self.new_user_domain = new_user_domain
         if is_reboot is not None:
             self.is_reboot = is_reboot
 
@@ -74,6 +88,28 @@ class UpdateDesktopUsernameReq:
         self._old_username = old_username
 
     @property
+    def old_user_domain(self):
+        r"""Gets the old_user_domain of this UpdateDesktopUsernameReq.
+
+        桌面关联原用户名的域。
+
+        :return: The old_user_domain of this UpdateDesktopUsernameReq.
+        :rtype: str
+        """
+        return self._old_user_domain
+
+    @old_user_domain.setter
+    def old_user_domain(self, old_user_domain):
+        r"""Sets the old_user_domain of this UpdateDesktopUsernameReq.
+
+        桌面关联原用户名的域。
+
+        :param old_user_domain: The old_user_domain of this UpdateDesktopUsernameReq.
+        :type old_user_domain: str
+        """
+        self._old_user_domain = old_user_domain
+
+    @property
     def new_username(self):
         r"""Gets the new_username of this UpdateDesktopUsernameReq.
 
@@ -94,6 +130,28 @@ class UpdateDesktopUsernameReq:
         :type new_username: str
         """
         self._new_username = new_username
+
+    @property
+    def new_user_domain(self):
+        r"""Gets the new_user_domain of this UpdateDesktopUsernameReq.
+
+        桌面关联新用户名的域。
+
+        :return: The new_user_domain of this UpdateDesktopUsernameReq.
+        :rtype: str
+        """
+        return self._new_user_domain
+
+    @new_user_domain.setter
+    def new_user_domain(self, new_user_domain):
+        r"""Sets the new_user_domain of this UpdateDesktopUsernameReq.
+
+        桌面关联新用户名的域。
+
+        :param new_user_domain: The new_user_domain of this UpdateDesktopUsernameReq.
+        :type new_user_domain: str
+        """
+        self._new_user_domain = new_user_domain
 
     @property
     def is_reboot(self):

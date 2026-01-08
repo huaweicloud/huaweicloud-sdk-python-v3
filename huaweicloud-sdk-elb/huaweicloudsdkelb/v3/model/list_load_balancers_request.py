@@ -121,7 +121,7 @@ class ListLoadBalancersRequest:
         :type operating_status: list[str]
         :param guaranteed: **参数解释**：是否独享型LB。  **约束限制**：不涉及  **取值范围**： - false：共享型 - true：独享型  **默认取值**：不涉及
         :type guaranteed: bool
-        :param vpc_id: **参数解释**：负载均衡器所在的VPC ID。 支持多值查询，查询条件格式： *vpc_id&#x3D;xxx&amp;vpc_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        :param vpc_id: **参数解释**：负载均衡器所在的VPC ID。 支持多值查询，查询条件格式：*vpc_id&#x3D;xxx&amp;vpc_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type vpc_id: list[str]
         :param vip_port_id: **参数解释**：负载均衡器的IPv4对应的port ID。 支持多值查询，查询条件格式： *vip_port_id&#x3D;xxx&amp;vip_port_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type vip_port_id: list[str]
@@ -537,7 +537,7 @@ class ListLoadBalancersRequest:
     def vpc_id(self):
         r"""Gets the vpc_id of this ListLoadBalancersRequest.
 
-        **参数解释**：负载均衡器所在的VPC ID。 支持多值查询，查询条件格式： *vpc_id=xxx&vpc_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：负载均衡器所在的VPC ID。 支持多值查询，查询条件格式：*vpc_id=xxx&vpc_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :return: The vpc_id of this ListLoadBalancersRequest.
         :rtype: list[str]
@@ -548,7 +548,7 @@ class ListLoadBalancersRequest:
     def vpc_id(self, vpc_id):
         r"""Sets the vpc_id of this ListLoadBalancersRequest.
 
-        **参数解释**：负载均衡器所在的VPC ID。 支持多值查询，查询条件格式： *vpc_id=xxx&vpc_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
+        **参数解释**：负载均衡器所在的VPC ID。 支持多值查询，查询条件格式：*vpc_id=xxx&vpc_id=xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
 
         :param vpc_id: The vpc_id of this ListLoadBalancersRequest.
         :type vpc_id: list[str]

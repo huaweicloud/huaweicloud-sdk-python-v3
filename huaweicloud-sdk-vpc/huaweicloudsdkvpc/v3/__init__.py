@@ -23,6 +23,7 @@ from huaweicloudsdkvpc.v3.model.add_vpc_extend_cidr_request import AddVpcExtendC
 from huaweicloudsdkvpc.v3.model.add_vpc_extend_cidr_request_body import AddVpcExtendCidrRequestBody
 from huaweicloudsdkvpc.v3.model.add_vpc_extend_cidr_response import AddVpcExtendCidrResponse
 from huaweicloudsdkvpc.v3.model.address_group import AddressGroup
+from huaweicloudsdkvpc.v3.model.address_group_dependency import AddressGroupDependency
 from huaweicloudsdkvpc.v3.model.allowed_address_pair import AllowedAddressPair
 from huaweicloudsdkvpc.v3.model.associate_subnet_firewall_request import AssociateSubnetFirewallRequest
 from huaweicloudsdkvpc.v3.model.associate_subnet_firewall_request_body import AssociateSubnetFirewallRequestBody
@@ -148,10 +149,10 @@ from huaweicloudsdkvpc.v3.model.delete_virsubnet_cidr_reservation_request import
 from huaweicloudsdkvpc.v3.model.delete_virsubnet_cidr_reservation_response import DeleteVirsubnetCidrReservationResponse
 from huaweicloudsdkvpc.v3.model.delete_vpc_request import DeleteVpcRequest
 from huaweicloudsdkvpc.v3.model.delete_vpc_response import DeleteVpcResponse
+from huaweicloudsdkvpc.v3.model.dependency import Dependency
 from huaweicloudsdkvpc.v3.model.disassociate_subnet_firewall_request import DisassociateSubnetFirewallRequest
 from huaweicloudsdkvpc.v3.model.disassociate_subnet_firewall_request_body import DisassociateSubnetFirewallRequestBody
 from huaweicloudsdkvpc.v3.model.disassociate_subnet_firewall_response import DisassociateSubnetFirewallResponse
-from huaweicloudsdkvpc.v3.model.extra_dhcp_opt import ExtraDhcpOpt
 from huaweicloudsdkvpc.v3.model.firewall_association import FirewallAssociation
 from huaweicloudsdkvpc.v3.model.firewall_detail import FirewallDetail
 from huaweicloudsdkvpc.v3.model.firewall_insert_rule_item_option import FirewallInsertRuleItemOption
@@ -166,6 +167,8 @@ from huaweicloudsdkvpc.v3.model.ip_extra_set_option import IpExtraSetOption
 from huaweicloudsdkvpc.v3.model.ip_extra_set_resp_option import IpExtraSetRespOption
 from huaweicloudsdkvpc.v3.model.list_address_group_request import ListAddressGroupRequest
 from huaweicloudsdkvpc.v3.model.list_address_group_response import ListAddressGroupResponse
+from huaweicloudsdkvpc.v3.model.list_address_groups_dependency_request import ListAddressGroupsDependencyRequest
+from huaweicloudsdkvpc.v3.model.list_address_groups_dependency_response import ListAddressGroupsDependencyResponse
 from huaweicloudsdkvpc.v3.model.list_clouddcn_subnets_count_filter_tags_request import ListClouddcnSubnetsCountFilterTagsRequest
 from huaweicloudsdkvpc.v3.model.list_clouddcn_subnets_count_filter_tags_response import ListClouddcnSubnetsCountFilterTagsResponse
 from huaweicloudsdkvpc.v3.model.list_clouddcn_subnets_filter_tags_request import ListClouddcnSubnetsFilterTagsRequest
@@ -187,6 +190,8 @@ from huaweicloudsdkvpc.v3.model.list_port_tags_response import ListPortTagsRespo
 from huaweicloudsdkvpc.v3.model.list_ports_by_tags_request import ListPortsByTagsRequest
 from huaweicloudsdkvpc.v3.model.list_ports_by_tags_request_body import ListPortsByTagsRequestBody
 from huaweicloudsdkvpc.v3.model.list_ports_by_tags_response import ListPortsByTagsResponse
+from huaweicloudsdkvpc.v3.model.list_ports_request import ListPortsRequest
+from huaweicloudsdkvpc.v3.model.list_ports_response import ListPortsResponse
 from huaweicloudsdkvpc.v3.model.list_resource_resp import ListResourceResp
 from huaweicloudsdkvpc.v3.model.list_resources_by_tags_request_body import ListResourcesByTagsRequestBody
 from huaweicloudsdkvpc.v3.model.list_security_group_rules_request import ListSecurityGroupRulesRequest
@@ -204,6 +209,8 @@ from huaweicloudsdkvpc.v3.model.list_traffic_mirror_sessions_request import List
 from huaweicloudsdkvpc.v3.model.list_traffic_mirror_sessions_response import ListTrafficMirrorSessionsResponse
 from huaweicloudsdkvpc.v3.model.list_virsubnet_cidr_reservations_request import ListVirsubnetCidrReservationsRequest
 from huaweicloudsdkvpc.v3.model.list_virsubnet_cidr_reservations_response import ListVirsubnetCidrReservationsResponse
+from huaweicloudsdkvpc.v3.model.list_virsubnets_request import ListVirsubnetsRequest
+from huaweicloudsdkvpc.v3.model.list_virsubnets_response import ListVirsubnetsResponse
 from huaweicloudsdkvpc.v3.model.list_vpcs_request import ListVpcsRequest
 from huaweicloudsdkvpc.v3.model.list_vpcs_response import ListVpcsResponse
 from huaweicloudsdkvpc.v3.model.match import Match
@@ -213,6 +220,7 @@ from huaweicloudsdkvpc.v3.model.migrate_sub_network_interface_request_body impor
 from huaweicloudsdkvpc.v3.model.migrate_sub_network_interface_response import MigrateSubNetworkInterfaceResponse
 from huaweicloudsdkvpc.v3.model.page_info import PageInfo
 from huaweicloudsdkvpc.v3.model.port import Port
+from huaweicloudsdkvpc.v3.model.port_extra_dhcp_opt import PortExtraDhcpOpt
 from huaweicloudsdkvpc.v3.model.private_ip_info import PrivateIpInfo
 from huaweicloudsdkvpc.v3.model.remove_extend_cidr_option import RemoveExtendCidrOption
 from huaweicloudsdkvpc.v3.model.remove_firewall_rules_request import RemoveFirewallRulesRequest
@@ -230,6 +238,7 @@ from huaweicloudsdkvpc.v3.model.remove_vpc_extend_cidr_request_body import Remov
 from huaweicloudsdkvpc.v3.model.remove_vpc_extend_cidr_response import RemoveVpcExtendCidrResponse
 from huaweicloudsdkvpc.v3.model.resource_tag import ResourceTag
 from huaweicloudsdkvpc.v3.model.resource_tags import ResourceTags
+from huaweicloudsdkvpc.v3.model.response_tag import ResponseTag
 from huaweicloudsdkvpc.v3.model.security_group import SecurityGroup
 from huaweicloudsdkvpc.v3.model.security_group_info import SecurityGroupInfo
 from huaweicloudsdkvpc.v3.model.security_group_rule import SecurityGroupRule
@@ -243,8 +252,12 @@ from huaweicloudsdkvpc.v3.model.show_firewall_request import ShowFirewallRequest
 from huaweicloudsdkvpc.v3.model.show_firewall_response import ShowFirewallResponse
 from huaweicloudsdkvpc.v3.model.show_firewall_tags_request import ShowFirewallTagsRequest
 from huaweicloudsdkvpc.v3.model.show_firewall_tags_response import ShowFirewallTagsResponse
+from huaweicloudsdkvpc.v3.model.show_port_request import ShowPortRequest
+from huaweicloudsdkvpc.v3.model.show_port_response import ShowPortResponse
 from huaweicloudsdkvpc.v3.model.show_port_tags_request import ShowPortTagsRequest
 from huaweicloudsdkvpc.v3.model.show_port_tags_response import ShowPortTagsResponse
+from huaweicloudsdkvpc.v3.model.show_quota_request import ShowQuotaRequest
+from huaweicloudsdkvpc.v3.model.show_quota_response import ShowQuotaResponse
 from huaweicloudsdkvpc.v3.model.show_security_group_request import ShowSecurityGroupRequest
 from huaweicloudsdkvpc.v3.model.show_security_group_response import ShowSecurityGroupResponse
 from huaweicloudsdkvpc.v3.model.show_security_group_rule_request import ShowSecurityGroupRuleRequest
@@ -261,9 +274,13 @@ from huaweicloudsdkvpc.v3.model.show_traffic_mirror_session_request import ShowT
 from huaweicloudsdkvpc.v3.model.show_traffic_mirror_session_response import ShowTrafficMirrorSessionResponse
 from huaweicloudsdkvpc.v3.model.show_virsubnet_cidr_reservation_request import ShowVirsubnetCidrReservationRequest
 from huaweicloudsdkvpc.v3.model.show_virsubnet_cidr_reservation_response import ShowVirsubnetCidrReservationResponse
+from huaweicloudsdkvpc.v3.model.show_virsubnet_request import ShowVirsubnetRequest
+from huaweicloudsdkvpc.v3.model.show_virsubnet_response import ShowVirsubnetResponse
 from huaweicloudsdkvpc.v3.model.show_vpc_request import ShowVpcRequest
 from huaweicloudsdkvpc.v3.model.show_vpc_response import ShowVpcResponse
 from huaweicloudsdkvpc.v3.model.sub_network_interface import SubNetworkInterface
+from huaweicloudsdkvpc.v3.model.subnet_cidr import SubnetCidr
+from huaweicloudsdkvpc.v3.model.subnet_extra_dhcp_opt import SubnetExtraDhcpOpt
 from huaweicloudsdkvpc.v3.model.sys_tag import SysTag
 from huaweicloudsdkvpc.v3.model.tag import Tag
 from huaweicloudsdkvpc.v3.model.tag_entity import TagEntity
@@ -314,6 +331,8 @@ from huaweicloudsdkvpc.v3.model.update_vpc_option import UpdateVpcOption
 from huaweicloudsdkvpc.v3.model.update_vpc_request import UpdateVpcRequest
 from huaweicloudsdkvpc.v3.model.update_vpc_request_body import UpdateVpcRequestBody
 from huaweicloudsdkvpc.v3.model.update_vpc_response import UpdateVpcResponse
+from huaweicloudsdkvpc.v3.model.virsubnet import Virsubnet
 from huaweicloudsdkvpc.v3.model.virsubnet_cidr_reservation import VirsubnetCidrReservation
 from huaweicloudsdkvpc.v3.model.vpc import Vpc
+from huaweicloudsdkvpc.v3.model.vpc_quotas import VpcQuotas
 

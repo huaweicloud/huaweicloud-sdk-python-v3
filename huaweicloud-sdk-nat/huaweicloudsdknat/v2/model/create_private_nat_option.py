@@ -41,7 +41,7 @@ class CreatePrivateNatOption:
         :type name: str
         :param description: 私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“&lt;”和“&gt;”。
         :type description: str
-        :param spec: 私网NAT网关实例的规格。 取值为： \&quot;Small\&quot;：小型 \&quot;Medium\&quot;：中型 \&quot;Large\&quot;：大型 \&quot;Extra-large\&quot;：超大型 \&quot;Extra-xlarge\&quot;：企业型
+        :param spec: 私网NAT网关实例的规格。 取值为： - Small：小型 - Medium：中型 - Large：大型 - Extra-large：超大型 - Extra-xlarge：企业型
         :type spec: str
         :param downlink_vpcs: 私网NAT网关实例所属的VPC实例。
         :type downlink_vpcs: list[:class:`huaweicloudsdknat.v2.DownlinkVpcOption`]
@@ -120,7 +120,7 @@ class CreatePrivateNatOption:
     def spec(self):
         r"""Gets the spec of this CreatePrivateNatOption.
 
-        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型 \"Extra-xlarge\"：企业型
+        私网NAT网关实例的规格。 取值为： - Small：小型 - Medium：中型 - Large：大型 - Extra-large：超大型 - Extra-xlarge：企业型
 
         :return: The spec of this CreatePrivateNatOption.
         :rtype: str
@@ -131,7 +131,7 @@ class CreatePrivateNatOption:
     def spec(self, spec):
         r"""Sets the spec of this CreatePrivateNatOption.
 
-        私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型 \"Extra-xlarge\"：企业型
+        私网NAT网关实例的规格。 取值为： - Small：小型 - Medium：中型 - Large：大型 - Extra-large：超大型 - Extra-xlarge：企业型
 
         :param spec: The spec of this CreatePrivateNatOption.
         :type spec: str

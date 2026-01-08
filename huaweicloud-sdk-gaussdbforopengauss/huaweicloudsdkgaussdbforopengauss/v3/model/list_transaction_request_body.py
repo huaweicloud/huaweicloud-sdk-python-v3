@@ -19,7 +19,7 @@ class ListTransactionRequestBody:
         'component_id': 'str',
         'limit': 'int',
         'offset': 'int',
-        'transaction_query_option': 'ListTransactionRequestBodyTransactionQueryOption'
+        'transaction_query_info': 'ListTransactionRequestBodyTransactionQueryInfo'
     }
 
     attribute_map = {
@@ -27,10 +27,10 @@ class ListTransactionRequestBody:
         'component_id': 'component_id',
         'limit': 'limit',
         'offset': 'offset',
-        'transaction_query_option': 'transaction_query_option'
+        'transaction_query_info': 'transaction_query_info'
     }
 
-    def __init__(self, node_id=None, component_id=None, limit=None, offset=None, transaction_query_option=None):
+    def __init__(self, node_id=None, component_id=None, limit=None, offset=None, transaction_query_info=None):
         r"""ListTransactionRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,8 +43,8 @@ class ListTransactionRequestBody:
         :type limit: int
         :param offset: **参数解释**: 查询结果的事务起始页码。 **约束限制**: 不涉及。 **取值范围**: [0，2^31-1]。 **默认取值**: 默认为0（偏移0条数据，表示从第一条数据开始查询）。
         :type offset: int
-        :param transaction_query_option: 
-        :type transaction_query_option: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionRequestBodyTransactionQueryOption`
+        :param transaction_query_info: 
+        :type transaction_query_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionRequestBodyTransactionQueryInfo`
         """
         
         
@@ -53,7 +53,7 @@ class ListTransactionRequestBody:
         self._component_id = None
         self._limit = None
         self._offset = None
-        self._transaction_query_option = None
+        self._transaction_query_info = None
         self.discriminator = None
 
         self.node_id = node_id
@@ -62,8 +62,8 @@ class ListTransactionRequestBody:
             self.limit = limit
         if offset is not None:
             self.offset = offset
-        if transaction_query_option is not None:
-            self.transaction_query_option = transaction_query_option
+        if transaction_query_info is not None:
+            self.transaction_query_info = transaction_query_info
 
     @property
     def node_id(self):
@@ -154,22 +154,22 @@ class ListTransactionRequestBody:
         self._offset = offset
 
     @property
-    def transaction_query_option(self):
-        r"""Gets the transaction_query_option of this ListTransactionRequestBody.
+    def transaction_query_info(self):
+        r"""Gets the transaction_query_info of this ListTransactionRequestBody.
 
-        :return: The transaction_query_option of this ListTransactionRequestBody.
-        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionRequestBodyTransactionQueryOption`
+        :return: The transaction_query_info of this ListTransactionRequestBody.
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionRequestBodyTransactionQueryInfo`
         """
-        return self._transaction_query_option
+        return self._transaction_query_info
 
-    @transaction_query_option.setter
-    def transaction_query_option(self, transaction_query_option):
-        r"""Sets the transaction_query_option of this ListTransactionRequestBody.
+    @transaction_query_info.setter
+    def transaction_query_info(self, transaction_query_info):
+        r"""Sets the transaction_query_info of this ListTransactionRequestBody.
 
-        :param transaction_query_option: The transaction_query_option of this ListTransactionRequestBody.
-        :type transaction_query_option: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionRequestBodyTransactionQueryOption`
+        :param transaction_query_info: The transaction_query_info of this ListTransactionRequestBody.
+        :type transaction_query_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListTransactionRequestBodyTransactionQueryInfo`
         """
-        self._transaction_query_option = transaction_query_option
+        self._transaction_query_info = transaction_query_info
 
     def to_dict(self):
         result = {}

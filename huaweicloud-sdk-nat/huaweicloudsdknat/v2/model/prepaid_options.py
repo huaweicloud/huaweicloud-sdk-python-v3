@@ -33,7 +33,7 @@ class PrepaidOptions:
 
         The model defined in huaweicloud sdk
 
-        :param period_type: 订购周期类型，当前支持包月和包年: month: 包月 year: 包年
+        :param period_type: 订购周期类型，当前支持包月和包年: - month: 包月 - year: 包年
         :type period_type: str
         :param period_num: 订购周期数，取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
         :type period_num: int
@@ -62,7 +62,7 @@ class PrepaidOptions:
     def period_type(self):
         r"""Gets the period_type of this PrepaidOptions.
 
-        订购周期类型，当前支持包月和包年: month: 包月 year: 包年
+        订购周期类型，当前支持包月和包年: - month: 包月 - year: 包年
 
         :return: The period_type of this PrepaidOptions.
         :rtype: str
@@ -73,7 +73,7 @@ class PrepaidOptions:
     def period_type(self, period_type):
         r"""Sets the period_type of this PrepaidOptions.
 
-        订购周期类型，当前支持包月和包年: month: 包月 year: 包年
+        订购周期类型，当前支持包月和包年: - month: 包月 - year: 包年
 
         :param period_type: The period_type of this PrepaidOptions.
         :type period_type: str

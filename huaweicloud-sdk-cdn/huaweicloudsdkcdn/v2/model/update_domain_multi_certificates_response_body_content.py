@@ -61,7 +61,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
         :type cert_name: str
         :param certificate: 证书内容。
         :type certificate: str
-        :param certificate_type: 证书类型（0为自有证书 ， 1为托管证书）。
+        :param certificate_type: 证书类型。取值意义： - 0：自有证书 - 2：SCM证书
         :type certificate_type: int
         :param expiration_time: 证书过期时间。
         :type expiration_time: int
@@ -277,7 +277,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def certificate_type(self):
         r"""Gets the certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书类型（0为自有证书 ， 1为托管证书）。
+        证书类型。取值意义： - 0：自有证书 - 2：SCM证书
 
         :return: The certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
         :rtype: int
@@ -288,7 +288,7 @@ class UpdateDomainMultiCertificatesResponseBodyContent:
     def certificate_type(self, certificate_type):
         r"""Sets the certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
 
-        证书类型（0为自有证书 ， 1为托管证书）。
+        证书类型。取值意义： - 0：自有证书 - 2：SCM证书
 
         :param certificate_type: The certificate_type of this UpdateDomainMultiCertificatesResponseBodyContent.
         :type certificate_type: int

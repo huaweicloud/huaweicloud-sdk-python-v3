@@ -16,51 +16,51 @@ class ShowRedistributionParametersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'redistribution_parameters': 'list[RedistributionParameterResult]'
+        'expansion_parameters': 'list[RedistributionParameterResult]'
     }
 
     attribute_map = {
-        'redistribution_parameters': 'redistribution_parameters'
+        'expansion_parameters': 'expansion_parameters'
     }
 
-    def __init__(self, redistribution_parameters=None):
+    def __init__(self, expansion_parameters=None):
         r"""ShowRedistributionParametersResponse
 
         The model defined in huaweicloud sdk
 
-        :param redistribution_parameters: **参数解释**: 参数列表信息。
-        :type redistribution_parameters: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RedistributionParameterResult`]
+        :param expansion_parameters: **参数解释**: 参数列表信息。
+        :type expansion_parameters: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RedistributionParameterResult`]
         """
         
         super().__init__()
 
-        self._redistribution_parameters = None
+        self._expansion_parameters = None
         self.discriminator = None
 
-        if redistribution_parameters is not None:
-            self.redistribution_parameters = redistribution_parameters
+        if expansion_parameters is not None:
+            self.expansion_parameters = expansion_parameters
 
     @property
-    def redistribution_parameters(self):
-        r"""Gets the redistribution_parameters of this ShowRedistributionParametersResponse.
+    def expansion_parameters(self):
+        r"""Gets the expansion_parameters of this ShowRedistributionParametersResponse.
 
         **参数解释**: 参数列表信息。
 
-        :return: The redistribution_parameters of this ShowRedistributionParametersResponse.
+        :return: The expansion_parameters of this ShowRedistributionParametersResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RedistributionParameterResult`]
         """
-        return self._redistribution_parameters
+        return self._expansion_parameters
 
-    @redistribution_parameters.setter
-    def redistribution_parameters(self, redistribution_parameters):
-        r"""Sets the redistribution_parameters of this ShowRedistributionParametersResponse.
+    @expansion_parameters.setter
+    def expansion_parameters(self, expansion_parameters):
+        r"""Sets the expansion_parameters of this ShowRedistributionParametersResponse.
 
         **参数解释**: 参数列表信息。
 
-        :param redistribution_parameters: The redistribution_parameters of this ShowRedistributionParametersResponse.
-        :type redistribution_parameters: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RedistributionParameterResult`]
+        :param expansion_parameters: The expansion_parameters of this ShowRedistributionParametersResponse.
+        :type expansion_parameters: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.RedistributionParameterResult`]
         """
-        self._redistribution_parameters = redistribution_parameters
+        self._expansion_parameters = expansion_parameters
 
     def to_dict(self):
         import warnings

@@ -20,6 +20,8 @@ class TextWatermark:
         'referpos': 'str',
         'timeline_start': 'str',
         'timeline_duration': 'str',
+        'random_time_min': 'str',
+        'random_time_max': 'str',
         'font_name': 'str',
         'font_size': 'int',
         'font_color': 'str',
@@ -32,13 +34,15 @@ class TextWatermark:
         'referpos': 'referpos',
         'timeline_start': 'timeline_start',
         'timeline_duration': 'timeline_duration',
+        'random_time_min': 'random_time_min',
+        'random_time_max': 'random_time_max',
         'font_name': 'font_name',
         'font_size': 'font_size',
         'font_color': 'font_color',
         'base': 'base'
     }
 
-    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, font_name=None, font_size=None, font_color=None, base=None):
+    def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, random_time_min=None, random_time_max=None, font_name=None, font_size=None, font_color=None, base=None):
         r"""TextWatermark
 
         The model defined in huaweicloud sdk
@@ -53,6 +57,10 @@ class TextWatermark:
         :type timeline_start: str
         :param timeline_duration: 水印持续时间，与“timeline_start”配合使用。  取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值：ToEND。 
         :type timeline_duration: str
+        :param random_time_min: 轮转间隔时间最小值，单位：秒 
+        :type random_time_min: str
+        :param random_time_max: 轮转间隔时间最大值，单位：秒 
+        :type random_time_max: str
         :param font_name: 字体，当前支持fzyouh 
         :type font_name: str
         :param font_size: 字体大小。  取值范围：[4, 120] 
@@ -70,6 +78,8 @@ class TextWatermark:
         self._referpos = None
         self._timeline_start = None
         self._timeline_duration = None
+        self._random_time_min = None
+        self._random_time_max = None
         self._font_name = None
         self._font_size = None
         self._font_color = None
@@ -86,6 +96,10 @@ class TextWatermark:
             self.timeline_start = timeline_start
         if timeline_duration is not None:
             self.timeline_duration = timeline_duration
+        if random_time_min is not None:
+            self.random_time_min = random_time_min
+        if random_time_max is not None:
+            self.random_time_max = random_time_max
         if font_name is not None:
             self.font_name = font_name
         if font_size is not None:
@@ -204,6 +218,50 @@ class TextWatermark:
         :type timeline_duration: str
         """
         self._timeline_duration = timeline_duration
+
+    @property
+    def random_time_min(self):
+        r"""Gets the random_time_min of this TextWatermark.
+
+        轮转间隔时间最小值，单位：秒 
+
+        :return: The random_time_min of this TextWatermark.
+        :rtype: str
+        """
+        return self._random_time_min
+
+    @random_time_min.setter
+    def random_time_min(self, random_time_min):
+        r"""Sets the random_time_min of this TextWatermark.
+
+        轮转间隔时间最小值，单位：秒 
+
+        :param random_time_min: The random_time_min of this TextWatermark.
+        :type random_time_min: str
+        """
+        self._random_time_min = random_time_min
+
+    @property
+    def random_time_max(self):
+        r"""Gets the random_time_max of this TextWatermark.
+
+        轮转间隔时间最大值，单位：秒 
+
+        :return: The random_time_max of this TextWatermark.
+        :rtype: str
+        """
+        return self._random_time_max
+
+    @random_time_max.setter
+    def random_time_max(self, random_time_max):
+        r"""Sets the random_time_max of this TextWatermark.
+
+        轮转间隔时间最大值，单位：秒 
+
+        :param random_time_max: The random_time_max of this TextWatermark.
+        :type random_time_max: str
+        """
+        self._random_time_max = random_time_max
 
     @property
     def font_name(self):

@@ -19,7 +19,8 @@ class CreateCondition:
         'contents': 'list[str]',
         'logic_operation': 'str',
         'check_all_indexes_logic': 'int',
-        'index': 'str'
+        'index': 'str',
+        'value_list_id': 'str'
     }
 
     attribute_map = {
@@ -27,10 +28,11 @@ class CreateCondition:
         'contents': 'contents',
         'logic_operation': 'logic_operation',
         'check_all_indexes_logic': 'check_all_indexes_logic',
-        'index': 'index'
+        'index': 'index',
+        'value_list_id': 'value_list_id'
     }
 
-    def __init__(self, category=None, contents=None, logic_operation=None, check_all_indexes_logic=None, index=None):
+    def __init__(self, category=None, contents=None, logic_operation=None, check_all_indexes_logic=None, index=None, value_list_id=None):
         r"""CreateCondition
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class CreateCondition:
         :type check_all_indexes_logic: int
         :param index: 字段类型为ip且子字段为客户端ip时，不需要传index参数；子字段类型为X-Forwarded-For时，值为x-forwarded-for；字段类型为params、header、cookie并且子字段为自定义时，index的值为自定义子字段
         :type index: str
+        :param value_list_id: 引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
+        :type value_list_id: str
         """
         
         
@@ -54,6 +58,7 @@ class CreateCondition:
         self._logic_operation = None
         self._check_all_indexes_logic = None
         self._index = None
+        self._value_list_id = None
         self.discriminator = None
 
         self.category = category
@@ -63,6 +68,8 @@ class CreateCondition:
             self.check_all_indexes_logic = check_all_indexes_logic
         if index is not None:
             self.index = index
+        if value_list_id is not None:
+            self.value_list_id = value_list_id
 
     @property
     def category(self):
@@ -173,6 +180,28 @@ class CreateCondition:
         :type index: str
         """
         self._index = index
+
+    @property
+    def value_list_id(self):
+        r"""Gets the value_list_id of this CreateCondition.
+
+        引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
+
+        :return: The value_list_id of this CreateCondition.
+        :rtype: str
+        """
+        return self._value_list_id
+
+    @value_list_id.setter
+    def value_list_id(self, value_list_id):
+        r"""Sets the value_list_id of this CreateCondition.
+
+        引用表id。当logic_operation参数以any或者all结尾时，需要传该参数。此外，引用表类型要与category类型保持一致。
+
+        :param value_list_id: The value_list_id of this CreateCondition.
+        :type value_list_id: str
+        """
+        self._value_list_id = value_list_id
 
     def to_dict(self):
         result = {}

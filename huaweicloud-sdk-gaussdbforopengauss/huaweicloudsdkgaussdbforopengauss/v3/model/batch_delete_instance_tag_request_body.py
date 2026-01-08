@@ -36,8 +36,7 @@ class BatchDeleteInstanceTagRequestBody:
         self._keys = None
         self.discriminator = None
 
-        if keys is not None:
-            self.keys = keys
+        self.keys = keys
 
     @property
     def keys(self):

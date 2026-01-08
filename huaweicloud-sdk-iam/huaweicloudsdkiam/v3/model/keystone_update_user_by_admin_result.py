@@ -43,7 +43,7 @@ class KeystoneUpdateUserByAdminResult:
 
         The model defined in huaweicloud sdk
 
-        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：正常。
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
         :type pwd_status: bool
         :param domain_id: IAM用户所属账号ID。
         :type domain_id: str
@@ -93,7 +93,7 @@ class KeystoneUpdateUserByAdminResult:
     def pwd_status(self):
         r"""Gets the pwd_status of this KeystoneUpdateUserByAdminResult.
 
-        IAM用户密码状态。true：需要修改密码，false：正常。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :return: The pwd_status of this KeystoneUpdateUserByAdminResult.
         :rtype: bool
@@ -104,7 +104,7 @@ class KeystoneUpdateUserByAdminResult:
     def pwd_status(self, pwd_status):
         r"""Sets the pwd_status of this KeystoneUpdateUserByAdminResult.
 
-        IAM用户密码状态。true：需要修改密码，false：正常。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :param pwd_status: The pwd_status of this KeystoneUpdateUserByAdminResult.
         :type pwd_status: bool

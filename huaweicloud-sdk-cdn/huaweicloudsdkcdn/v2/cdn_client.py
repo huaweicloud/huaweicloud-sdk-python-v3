@@ -2052,9 +2052,9 @@ class CdnClient(Client):
         return http_info
 
     def list_cdn_domain_top_path(self, request):
-        r"""查询 TOP Path明细
+        r"""查询TOP100 Path访问明细
 
-        查询 TOP Path明细
+        查询TOP100 Path访问明细
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3376,9 +3376,9 @@ class CdnClient(Client):
         return http_info
 
     def show_domain_country_stat(self, request):
-        r"""CDN查询域名的国家统计数据
+        r"""CDN查询域名国家统计数据明细
 
-        CDN查询域名的国家统计数据
+        CDN查询域名国家统计数据明细
         
         Please refer to HUAWEI cloud API Explorer for details.
 

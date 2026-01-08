@@ -15,6 +15,8 @@ class SlowSQLInfoResult:
     sensitive_list = []
 
     openapi_types = {
+        'db_name': 'str',
+        'schema_name': 'str',
         'sql': 'str',
         'sql_id': 'str',
         'user_name': 'str',
@@ -33,6 +35,8 @@ class SlowSQLInfoResult:
     }
 
     attribute_map = {
+        'db_name': 'db_name',
+        'schema_name': 'schema_name',
         'sql': 'sql',
         'sql_id': 'sql_id',
         'user_name': 'user_name',
@@ -50,11 +54,15 @@ class SlowSQLInfoResult:
         'node_name': 'node_name'
     }
 
-    def __init__(self, sql=None, sql_id=None, user_name=None, sql_text=None, query_plan=None, calls=None, avg_exec_time=None, avg_cpu_time=None, avg_io_time=None, avg_returned_rows=None, avg_fetched_rows=None, buffer_hit_ratio=None, sql_hit_ratio=None, node_id=None, node_name=None):
+    def __init__(self, db_name=None, schema_name=None, sql=None, sql_id=None, user_name=None, sql_text=None, query_plan=None, calls=None, avg_exec_time=None, avg_cpu_time=None, avg_io_time=None, avg_returned_rows=None, avg_fetched_rows=None, buffer_hit_ratio=None, sql_hit_ratio=None, node_id=None, node_name=None):
         r"""SlowSQLInfoResult
 
         The model defined in huaweicloud sdk
 
+        :param db_name: **参数解释**: 数据库名称。 **取值范围**: 不涉及。
+        :type db_name: str
+        :param schema_name: **参数解释**: SCHEMA名称。 **取值范围**: 不涉及。
+        :type schema_name: str
         :param sql: **参数解释**: 变量替换后的完整SQL。当sql_text不返回变量值时，sql返回空字符串。 **取值范围**: 不涉及。
         :type sql: str
         :param sql_id: **参数解释**: SQL ID。 **取值范围**: 不涉及。
@@ -89,6 +97,8 @@ class SlowSQLInfoResult:
         
         
 
+        self._db_name = None
+        self._schema_name = None
         self._sql = None
         self._sql_id = None
         self._user_name = None
@@ -106,6 +116,10 @@ class SlowSQLInfoResult:
         self._node_name = None
         self.discriminator = None
 
+        if db_name is not None:
+            self.db_name = db_name
+        if schema_name is not None:
+            self.schema_name = schema_name
         if sql is not None:
             self.sql = sql
         if sql_id is not None:
@@ -136,6 +150,50 @@ class SlowSQLInfoResult:
             self.node_id = node_id
         if node_name is not None:
             self.node_name = node_name
+
+    @property
+    def db_name(self):
+        r"""Gets the db_name of this SlowSQLInfoResult.
+
+        **参数解释**: 数据库名称。 **取值范围**: 不涉及。
+
+        :return: The db_name of this SlowSQLInfoResult.
+        :rtype: str
+        """
+        return self._db_name
+
+    @db_name.setter
+    def db_name(self, db_name):
+        r"""Sets the db_name of this SlowSQLInfoResult.
+
+        **参数解释**: 数据库名称。 **取值范围**: 不涉及。
+
+        :param db_name: The db_name of this SlowSQLInfoResult.
+        :type db_name: str
+        """
+        self._db_name = db_name
+
+    @property
+    def schema_name(self):
+        r"""Gets the schema_name of this SlowSQLInfoResult.
+
+        **参数解释**: SCHEMA名称。 **取值范围**: 不涉及。
+
+        :return: The schema_name of this SlowSQLInfoResult.
+        :rtype: str
+        """
+        return self._schema_name
+
+    @schema_name.setter
+    def schema_name(self, schema_name):
+        r"""Sets the schema_name of this SlowSQLInfoResult.
+
+        **参数解释**: SCHEMA名称。 **取值范围**: 不涉及。
+
+        :param schema_name: The schema_name of this SlowSQLInfoResult.
+        :type schema_name: str
+        """
+        self._schema_name = schema_name
 
     @property
     def sql(self):

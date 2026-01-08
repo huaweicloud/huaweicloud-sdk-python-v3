@@ -28,7 +28,7 @@ class ListApiVersionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param versions: 
+        :param versions: **参数解释**：可用API版本列表。
         :type versions: list[:class:`huaweicloudsdkelb.v3.ApiVersionInfo`]
         """
         
@@ -44,6 +44,8 @@ class ListApiVersionsResponse(SdkResponse):
     def versions(self):
         r"""Gets the versions of this ListApiVersionsResponse.
 
+        **参数解释**：可用API版本列表。
+
         :return: The versions of this ListApiVersionsResponse.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ApiVersionInfo`]
         """
@@ -52,6 +54,8 @@ class ListApiVersionsResponse(SdkResponse):
     @versions.setter
     def versions(self, versions):
         r"""Sets the versions of this ListApiVersionsResponse.
+
+        **参数解释**：可用API版本列表。
 
         :param versions: The versions of this ListApiVersionsResponse.
         :type versions: list[:class:`huaweicloudsdkelb.v3.ApiVersionInfo`]

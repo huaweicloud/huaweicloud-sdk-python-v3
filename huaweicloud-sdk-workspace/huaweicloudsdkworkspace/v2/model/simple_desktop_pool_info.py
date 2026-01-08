@@ -25,6 +25,7 @@ class SimpleDesktopPoolInfo:
         'desktop_used': 'int',
         'availability_zone': 'str',
         'subnet_id': 'str',
+        'subnet_ids': 'list[str]',
         'product': 'ProductInfo',
         'image_id': 'str',
         'image_name': 'str',
@@ -41,7 +42,10 @@ class SimpleDesktopPoolInfo:
         'status': 'str',
         'enterprise_project_id': 'str',
         'in_maintenance_mode': 'bool',
-        'desktop_name_policy_id': 'str'
+        'desktop_name_policy_id': 'str',
+        'tags': 'list[Tag]',
+        'ou_name': 'str',
+        'vpc_id': 'str'
     }
 
     attribute_map = {
@@ -55,6 +59,7 @@ class SimpleDesktopPoolInfo:
         'desktop_used': 'desktop_used',
         'availability_zone': 'availability_zone',
         'subnet_id': 'subnet_id',
+        'subnet_ids': 'subnet_ids',
         'product': 'product',
         'image_id': 'image_id',
         'image_name': 'image_name',
@@ -71,10 +76,13 @@ class SimpleDesktopPoolInfo:
         'status': 'status',
         'enterprise_project_id': 'enterprise_project_id',
         'in_maintenance_mode': 'in_maintenance_mode',
-        'desktop_name_policy_id': 'desktop_name_policy_id'
+        'desktop_name_policy_id': 'desktop_name_policy_id',
+        'tags': 'tags',
+        'ou_name': 'ou_name',
+        'vpc_id': 'vpc_id'
     }
 
-    def __init__(self, id=None, name=None, type=None, description=None, created_time=None, charging_mode=None, desktop_count=None, desktop_used=None, availability_zone=None, subnet_id=None, product=None, image_id=None, image_name=None, image_os_type=None, image_os_version=None, image_os_platform=None, image_product_code=None, root_volume=None, data_volumes=None, security_groups=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, status=None, enterprise_project_id=None, in_maintenance_mode=None, desktop_name_policy_id=None):
+    def __init__(self, id=None, name=None, type=None, description=None, created_time=None, charging_mode=None, desktop_count=None, desktop_used=None, availability_zone=None, subnet_id=None, subnet_ids=None, product=None, image_id=None, image_name=None, image_os_type=None, image_os_version=None, image_os_platform=None, image_product_code=None, root_volume=None, data_volumes=None, security_groups=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, status=None, enterprise_project_id=None, in_maintenance_mode=None, desktop_name_policy_id=None, tags=None, ou_name=None, vpc_id=None):
         r"""SimpleDesktopPoolInfo
 
         The model defined in huaweicloud sdk
@@ -97,8 +105,10 @@ class SimpleDesktopPoolInfo:
         :type desktop_used: int
         :param availability_zone: 可用区。
         :type availability_zone: str
-        :param subnet_id: 子网ID。
+        :param subnet_id: 子网ID（已废弃，多个仅取第一个）。
         :type subnet_id: str
+        :param subnet_ids: 桌面池子网ID列表。
+        :type subnet_ids: list[str]
         :param product: 
         :type product: :class:`huaweicloudsdkworkspace.v2.ProductInfo`
         :param image_id: 镜像ID。
@@ -133,6 +143,12 @@ class SimpleDesktopPoolInfo:
         :type in_maintenance_mode: bool
         :param desktop_name_policy_id: 策略id，用于指定生成桌面名称策略。
         :type desktop_name_policy_id: str
+        :param tags: 标签列表
+        :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
+        :param ou_name: OU名称
+        :type ou_name: str
+        :param vpc_id: VPC ID。
+        :type vpc_id: str
         """
         
         
@@ -147,6 +163,7 @@ class SimpleDesktopPoolInfo:
         self._desktop_used = None
         self._availability_zone = None
         self._subnet_id = None
+        self._subnet_ids = None
         self._product = None
         self._image_id = None
         self._image_name = None
@@ -164,6 +181,9 @@ class SimpleDesktopPoolInfo:
         self._enterprise_project_id = None
         self._in_maintenance_mode = None
         self._desktop_name_policy_id = None
+        self._tags = None
+        self._ou_name = None
+        self._vpc_id = None
         self.discriminator = None
 
         if id is not None:
@@ -186,6 +206,8 @@ class SimpleDesktopPoolInfo:
             self.availability_zone = availability_zone
         if subnet_id is not None:
             self.subnet_id = subnet_id
+        if subnet_ids is not None:
+            self.subnet_ids = subnet_ids
         if product is not None:
             self.product = product
         if image_id is not None:
@@ -220,6 +242,12 @@ class SimpleDesktopPoolInfo:
             self.in_maintenance_mode = in_maintenance_mode
         if desktop_name_policy_id is not None:
             self.desktop_name_policy_id = desktop_name_policy_id
+        if tags is not None:
+            self.tags = tags
+        if ou_name is not None:
+            self.ou_name = ou_name
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
 
     @property
     def id(self):
@@ -423,7 +451,7 @@ class SimpleDesktopPoolInfo:
     def subnet_id(self):
         r"""Gets the subnet_id of this SimpleDesktopPoolInfo.
 
-        子网ID。
+        子网ID（已废弃，多个仅取第一个）。
 
         :return: The subnet_id of this SimpleDesktopPoolInfo.
         :rtype: str
@@ -434,12 +462,34 @@ class SimpleDesktopPoolInfo:
     def subnet_id(self, subnet_id):
         r"""Sets the subnet_id of this SimpleDesktopPoolInfo.
 
-        子网ID。
+        子网ID（已废弃，多个仅取第一个）。
 
         :param subnet_id: The subnet_id of this SimpleDesktopPoolInfo.
         :type subnet_id: str
         """
         self._subnet_id = subnet_id
+
+    @property
+    def subnet_ids(self):
+        r"""Gets the subnet_ids of this SimpleDesktopPoolInfo.
+
+        桌面池子网ID列表。
+
+        :return: The subnet_ids of this SimpleDesktopPoolInfo.
+        :rtype: list[str]
+        """
+        return self._subnet_ids
+
+    @subnet_ids.setter
+    def subnet_ids(self, subnet_ids):
+        r"""Sets the subnet_ids of this SimpleDesktopPoolInfo.
+
+        桌面池子网ID列表。
+
+        :param subnet_ids: The subnet_ids of this SimpleDesktopPoolInfo.
+        :type subnet_ids: list[str]
+        """
+        self._subnet_ids = subnet_ids
 
     @property
     def product(self):
@@ -802,6 +852,72 @@ class SimpleDesktopPoolInfo:
         :type desktop_name_policy_id: str
         """
         self._desktop_name_policy_id = desktop_name_policy_id
+
+    @property
+    def tags(self):
+        r"""Gets the tags of this SimpleDesktopPoolInfo.
+
+        标签列表
+
+        :return: The tags of this SimpleDesktopPoolInfo.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        r"""Sets the tags of this SimpleDesktopPoolInfo.
+
+        标签列表
+
+        :param tags: The tags of this SimpleDesktopPoolInfo.
+        :type tags: list[:class:`huaweicloudsdkworkspace.v2.Tag`]
+        """
+        self._tags = tags
+
+    @property
+    def ou_name(self):
+        r"""Gets the ou_name of this SimpleDesktopPoolInfo.
+
+        OU名称
+
+        :return: The ou_name of this SimpleDesktopPoolInfo.
+        :rtype: str
+        """
+        return self._ou_name
+
+    @ou_name.setter
+    def ou_name(self, ou_name):
+        r"""Sets the ou_name of this SimpleDesktopPoolInfo.
+
+        OU名称
+
+        :param ou_name: The ou_name of this SimpleDesktopPoolInfo.
+        :type ou_name: str
+        """
+        self._ou_name = ou_name
+
+    @property
+    def vpc_id(self):
+        r"""Gets the vpc_id of this SimpleDesktopPoolInfo.
+
+        VPC ID。
+
+        :return: The vpc_id of this SimpleDesktopPoolInfo.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        r"""Sets the vpc_id of this SimpleDesktopPoolInfo.
+
+        VPC ID。
+
+        :param vpc_id: The vpc_id of this SimpleDesktopPoolInfo.
+        :type vpc_id: str
+        """
+        self._vpc_id = vpc_id
 
     def to_dict(self):
         result = {}

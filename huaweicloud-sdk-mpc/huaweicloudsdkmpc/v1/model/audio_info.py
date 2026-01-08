@@ -19,7 +19,9 @@ class AudioInfo:
         'sample': 'int',
         'channels': 'int',
         'bitrate': 'int',
-        'bitrate_bps': 'int'
+        'bitrate_bps': 'int',
+        'duration': 'str',
+        'duration_ms': 'str'
     }
 
     attribute_map = {
@@ -27,10 +29,12 @@ class AudioInfo:
         'sample': 'sample',
         'channels': 'channels',
         'bitrate': 'bitrate',
-        'bitrate_bps': 'bitrate_bps'
+        'bitrate_bps': 'bitrate_bps',
+        'duration': 'duration',
+        'duration_ms': 'duration_ms'
     }
 
-    def __init__(self, codec=None, sample=None, channels=None, bitrate=None, bitrate_bps=None):
+    def __init__(self, codec=None, sample=None, channels=None, bitrate=None, bitrate_bps=None, duration=None, duration_ms=None):
         r"""AudioInfo
 
         The model defined in huaweicloud sdk
@@ -45,6 +49,10 @@ class AudioInfo:
         :type bitrate: int
         :param bitrate_bps: 音频码率，单位: bit/s 
         :type bitrate_bps: int
+        :param duration: 音频流时长，单位：秒
+        :type duration: str
+        :param duration_ms: 音频流时长，单位：毫秒
+        :type duration_ms: str
         """
         
         
@@ -54,6 +62,8 @@ class AudioInfo:
         self._channels = None
         self._bitrate = None
         self._bitrate_bps = None
+        self._duration = None
+        self._duration_ms = None
         self.discriminator = None
 
         if codec is not None:
@@ -66,6 +76,10 @@ class AudioInfo:
             self.bitrate = bitrate
         if bitrate_bps is not None:
             self.bitrate_bps = bitrate_bps
+        if duration is not None:
+            self.duration = duration
+        if duration_ms is not None:
+            self.duration_ms = duration_ms
 
     @property
     def codec(self):
@@ -176,6 +190,50 @@ class AudioInfo:
         :type bitrate_bps: int
         """
         self._bitrate_bps = bitrate_bps
+
+    @property
+    def duration(self):
+        r"""Gets the duration of this AudioInfo.
+
+        音频流时长，单位：秒
+
+        :return: The duration of this AudioInfo.
+        :rtype: str
+        """
+        return self._duration
+
+    @duration.setter
+    def duration(self, duration):
+        r"""Sets the duration of this AudioInfo.
+
+        音频流时长，单位：秒
+
+        :param duration: The duration of this AudioInfo.
+        :type duration: str
+        """
+        self._duration = duration
+
+    @property
+    def duration_ms(self):
+        r"""Gets the duration_ms of this AudioInfo.
+
+        音频流时长，单位：毫秒
+
+        :return: The duration_ms of this AudioInfo.
+        :rtype: str
+        """
+        return self._duration_ms
+
+    @duration_ms.setter
+    def duration_ms(self, duration_ms):
+        r"""Sets the duration_ms of this AudioInfo.
+
+        音频流时长，单位：毫秒
+
+        :param duration_ms: The duration_ms of this AudioInfo.
+        :type duration_ms: str
+        """
+        self._duration_ms = duration_ms
 
     def to_dict(self):
         result = {}

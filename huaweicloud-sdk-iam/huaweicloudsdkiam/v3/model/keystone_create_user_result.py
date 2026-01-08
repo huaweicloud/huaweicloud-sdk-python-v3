@@ -47,7 +47,7 @@ class KeystoneCreateUserResult:
         :type name: str
         :param description: IAM用户描述信息。
         :type description: str
-        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：正常；如果密码未设置，此字段可能不返回。
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
         :type pwd_status: bool
         :param password_expires_at: IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
         :type password_expires_at: str
@@ -152,7 +152,7 @@ class KeystoneCreateUserResult:
     def pwd_status(self):
         r"""Gets the pwd_status of this KeystoneCreateUserResult.
 
-        IAM用户密码状态。true：需要修改密码，false：正常；如果密码未设置，此字段可能不返回。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :return: The pwd_status of this KeystoneCreateUserResult.
         :rtype: bool
@@ -163,7 +163,7 @@ class KeystoneCreateUserResult:
     def pwd_status(self, pwd_status):
         r"""Sets the pwd_status of this KeystoneCreateUserResult.
 
-        IAM用户密码状态。true：需要修改密码，false：正常；如果密码未设置，此字段可能不返回。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :param pwd_status: The pwd_status of this KeystoneCreateUserResult.
         :type pwd_status: bool

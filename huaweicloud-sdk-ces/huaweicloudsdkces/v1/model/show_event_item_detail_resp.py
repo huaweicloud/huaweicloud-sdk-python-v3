@@ -23,6 +23,7 @@ class ShowEventItemDetailResp:
         'event_level': 'str',
         'event_user': 'str',
         'event_type': 'str',
+        'sub_event_type': 'str',
         'dimensions': 'list[MetricsDimensionResp]'
     }
 
@@ -35,10 +36,11 @@ class ShowEventItemDetailResp:
         'event_level': 'event_level',
         'event_user': 'event_user',
         'event_type': 'event_type',
+        'sub_event_type': 'sub_event_type',
         'dimensions': 'dimensions'
     }
 
-    def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None, event_type=None, dimensions=None):
+    def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None, event_type=None, sub_event_type=None, dimensions=None):
         r"""ShowEventItemDetailResp
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ShowEventItemDetailResp:
         :type event_user: str
         :param event_type: **参数解释**： 事件类型。 **取值范围**： 枚举类型：EVENT.SYS，EVENT.CUSTOM - EVENT.SYS: 系统事件。 - EVENT.CUSTOM: 自定义事件。 
         :type event_type: str
+        :param sub_event_type: **参数解释**： 事件子类。 **取值范围**： 枚举类型。 当事件类型为系统事件时，参数值为SUB_EVENT.OPS或SUB_EVENT.PLAN。 当事件类型为自定义事件时，参数值为SUB_EVENT.CUSTOM。 - SUB_EVENT.OPS：运维事件。 - SUB_EVENT.PLAN：计划事件。 - SUB_EVENT.CUSTOM：自定义事件。 
+        :type sub_event_type: str
         :param dimensions: **参数解释**： 事件的维度，根据维度描述资源信息。 用于指定资源、资源分组的事件告警场景中，支持按维度配置告警规则。 **取值范围**： 目前最大支持4个维度 
         :type dimensions: list[:class:`huaweicloudsdkces.v1.MetricsDimensionResp`]
         """
@@ -73,6 +77,7 @@ class ShowEventItemDetailResp:
         self._event_level = None
         self._event_user = None
         self._event_type = None
+        self._sub_event_type = None
         self._dimensions = None
         self.discriminator = None
 
@@ -92,6 +97,8 @@ class ShowEventItemDetailResp:
             self.event_user = event_user
         if event_type is not None:
             self.event_type = event_type
+        if sub_event_type is not None:
+            self.sub_event_type = sub_event_type
         if dimensions is not None:
             self.dimensions = dimensions
 
@@ -270,6 +277,28 @@ class ShowEventItemDetailResp:
         :type event_type: str
         """
         self._event_type = event_type
+
+    @property
+    def sub_event_type(self):
+        r"""Gets the sub_event_type of this ShowEventItemDetailResp.
+
+        **参数解释**： 事件子类。 **取值范围**： 枚举类型。 当事件类型为系统事件时，参数值为SUB_EVENT.OPS或SUB_EVENT.PLAN。 当事件类型为自定义事件时，参数值为SUB_EVENT.CUSTOM。 - SUB_EVENT.OPS：运维事件。 - SUB_EVENT.PLAN：计划事件。 - SUB_EVENT.CUSTOM：自定义事件。 
+
+        :return: The sub_event_type of this ShowEventItemDetailResp.
+        :rtype: str
+        """
+        return self._sub_event_type
+
+    @sub_event_type.setter
+    def sub_event_type(self, sub_event_type):
+        r"""Sets the sub_event_type of this ShowEventItemDetailResp.
+
+        **参数解释**： 事件子类。 **取值范围**： 枚举类型。 当事件类型为系统事件时，参数值为SUB_EVENT.OPS或SUB_EVENT.PLAN。 当事件类型为自定义事件时，参数值为SUB_EVENT.CUSTOM。 - SUB_EVENT.OPS：运维事件。 - SUB_EVENT.PLAN：计划事件。 - SUB_EVENT.CUSTOM：自定义事件。 
+
+        :param sub_event_type: The sub_event_type of this ShowEventItemDetailResp.
+        :type sub_event_type: str
+        """
+        self._sub_event_type = sub_event_type
 
     @property
     def dimensions(self):

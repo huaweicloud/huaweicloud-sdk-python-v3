@@ -32,7 +32,7 @@ class ResizeDesktopPoolResponse(SdkResponse):
 
         :param job_id: 创建云桌面总任务id。
         :type job_id: str
-        :param jobs: 按需桌面变更规格返回的任务信息。
+        :param jobs: 桌面变更规格返回的任务信息
         :type jobs: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopPoolJobResponse`]
         """
         
@@ -73,7 +73,7 @@ class ResizeDesktopPoolResponse(SdkResponse):
     def jobs(self):
         r"""Gets the jobs of this ResizeDesktopPoolResponse.
 
-        按需桌面变更规格返回的任务信息。
+        桌面变更规格返回的任务信息
 
         :return: The jobs of this ResizeDesktopPoolResponse.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopPoolJobResponse`]
@@ -84,7 +84,7 @@ class ResizeDesktopPoolResponse(SdkResponse):
     def jobs(self, jobs):
         r"""Sets the jobs of this ResizeDesktopPoolResponse.
 
-        按需桌面变更规格返回的任务信息。
+        桌面变更规格返回的任务信息
 
         :param jobs: The jobs of this ResizeDesktopPoolResponse.
         :type jobs: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopPoolJobResponse`]

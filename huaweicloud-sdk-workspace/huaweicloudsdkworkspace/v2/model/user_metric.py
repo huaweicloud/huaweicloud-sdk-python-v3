@@ -16,21 +16,25 @@ class UserMetric:
 
     openapi_types = {
         'username': 'str',
+        'enterprise_project_id': 'str',
         'metric': 'list[Metric]'
     }
 
     attribute_map = {
         'username': 'username',
+        'enterprise_project_id': 'enterprise_project_id',
         'metric': 'metric'
     }
 
-    def __init__(self, username=None, metric=None):
+    def __init__(self, username=None, enterprise_project_id=None, metric=None):
         r"""UserMetric
 
         The model defined in huaweicloud sdk
 
         :param username: 用户名称。
         :type username: str
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
         :param metric: 桌面使用统计信息 * &#x60;user_usage&#x60; -  用户使用时长(单位:秒)，同一时间登录多台PC的话;相应的时间会累加 * &#x60;user_login_count&#x60; -  用户登录次数(单位:次) * &#x60;user_login_success_count&#x60; -  用户登录成功次数(单位:次) * &#x60;user_login_fail_count&#x60; -  用户登录失败次数(单位:次)
         :type metric: list[:class:`huaweicloudsdkworkspace.v2.Metric`]
         """
@@ -38,11 +42,14 @@ class UserMetric:
         
 
         self._username = None
+        self._enterprise_project_id = None
         self._metric = None
         self.discriminator = None
 
         if username is not None:
             self.username = username
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if metric is not None:
             self.metric = metric
 
@@ -67,6 +74,28 @@ class UserMetric:
         :type username: str
         """
         self._username = username
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this UserMetric.
+
+        企业项目ID。
+
+        :return: The enterprise_project_id of this UserMetric.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this UserMetric.
+
+        企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this UserMetric.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def metric(self):

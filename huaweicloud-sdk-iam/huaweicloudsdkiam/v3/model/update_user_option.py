@@ -61,7 +61,7 @@ class UpdateUserOption:
         :type phone: str
         :param enabled: 是否启用IAM用户。true为启用，false为停用，默认为true。
         :type enabled: bool
-        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：正常。
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
         :type pwd_status: bool
         :param xuser_type: IAM用户在外部系统中的类型。长度小于等于64字符。xuser_type如果存在，则需要与同一租户中的xaccount_type、xdomain_type校验，须与xuser_id同时存在。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
         :type xuser_type: str
@@ -267,7 +267,7 @@ class UpdateUserOption:
     def pwd_status(self):
         r"""Gets the pwd_status of this UpdateUserOption.
 
-        IAM用户密码状态。true：需要修改密码，false：正常。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :return: The pwd_status of this UpdateUserOption.
         :rtype: bool
@@ -278,7 +278,7 @@ class UpdateUserOption:
     def pwd_status(self, pwd_status):
         r"""Sets the pwd_status of this UpdateUserOption.
 
-        IAM用户密码状态。true：需要修改密码，false：正常。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :param pwd_status: The pwd_status of this UpdateUserOption.
         :type pwd_status: bool

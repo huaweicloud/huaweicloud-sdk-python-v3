@@ -63,7 +63,7 @@ class UpdateUserResult:
 
         :param access_mode: IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
         :type access_mode: str
-        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：正常。
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
         :type pwd_status: bool
         :param xuser_id: IAM用户在外部系统中的ID。 &gt;外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
         :type xuser_id: str
@@ -179,7 +179,7 @@ class UpdateUserResult:
     def pwd_status(self):
         r"""Gets the pwd_status of this UpdateUserResult.
 
-        IAM用户密码状态。true：需要修改密码，false：正常。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :return: The pwd_status of this UpdateUserResult.
         :rtype: bool
@@ -190,7 +190,7 @@ class UpdateUserResult:
     def pwd_status(self, pwd_status):
         r"""Sets the pwd_status of this UpdateUserResult.
 
-        IAM用户密码状态。true：需要修改密码，false：正常。
+        IAM用户密码状态。true：需要修改密码，false：不需要修改密码。
 
         :param pwd_status: The pwd_status of this UpdateUserResult.
         :type pwd_status: bool

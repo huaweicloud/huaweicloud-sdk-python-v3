@@ -18,8 +18,10 @@ class CreateChangeImageOrderRequestBody:
         'desktop_pool_id': 'str',
         'desktop_ids': 'list[str]',
         'promotion_plan_id': 'str',
+        'handle_type': 'str',
         'image_spec_code': 'str',
         'image_id': 'str',
+        'image_type': 'str',
         'delay_time': 'int',
         'message': 'str'
     }
@@ -28,27 +30,33 @@ class CreateChangeImageOrderRequestBody:
         'desktop_pool_id': 'desktop_pool_id',
         'desktop_ids': 'desktop_ids',
         'promotion_plan_id': 'promotion_plan_id',
+        'handle_type': 'handle_type',
         'image_spec_code': 'image_spec_code',
         'image_id': 'image_id',
+        'image_type': 'image_type',
         'delay_time': 'delay_time',
         'message': 'message'
     }
 
-    def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, image_spec_code=None, image_id=None, delay_time=None, message=None):
+    def __init__(self, desktop_pool_id=None, desktop_ids=None, promotion_plan_id=None, handle_type=None, image_spec_code=None, image_id=None, image_type=None, delay_time=None, message=None):
         r"""CreateChangeImageOrderRequestBody
 
         The model defined in huaweicloud sdk
 
         :param desktop_pool_id: 桌面池ID。当desktop_pool_id与desktop_ids同时存在时，取desktop_ids的值，两者不可同时为空。
         :type desktop_pool_id: str
-        :param desktop_ids: 包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
+        :param desktop_ids: 桌面id
         :type desktop_ids: list[str]
         :param promotion_plan_id: 促销计划ID。
         :type promotion_plan_id: str
+        :param handle_type: 处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+        :type handle_type: str
         :param image_spec_code: 云市场镜像的specCode，即将停用。image_spec_code与image_id同时存在时取image_id的值，两者不可同时为空。
         :type image_spec_code: str
         :param image_id: 云市场镜像ID，建议使用image_id。
         :type image_id: str
+        :param image_type: 镜像类型。仅重建系统盘/更换镜像使用  - private：私有镜像。 - gold：公共镜像。
+        :type image_type: str
         :param delay_time: 立即重建时给用户预留的保存数据的时间（单位：分钟）。
         :type delay_time: int
         :param message: 下发重建系统盘任务时，给用户发送的提示信息。
@@ -60,8 +68,10 @@ class CreateChangeImageOrderRequestBody:
         self._desktop_pool_id = None
         self._desktop_ids = None
         self._promotion_plan_id = None
+        self._handle_type = None
         self._image_spec_code = None
         self._image_id = None
+        self._image_type = None
         self._delay_time = None
         self._message = None
         self.discriminator = None
@@ -72,10 +82,14 @@ class CreateChangeImageOrderRequestBody:
             self.desktop_ids = desktop_ids
         if promotion_plan_id is not None:
             self.promotion_plan_id = promotion_plan_id
+        if handle_type is not None:
+            self.handle_type = handle_type
         if image_spec_code is not None:
             self.image_spec_code = image_spec_code
         if image_id is not None:
             self.image_id = image_id
+        if image_type is not None:
+            self.image_type = image_type
         if delay_time is not None:
             self.delay_time = delay_time
         if message is not None:
@@ -107,7 +121,7 @@ class CreateChangeImageOrderRequestBody:
     def desktop_ids(self):
         r"""Gets the desktop_ids of this CreateChangeImageOrderRequestBody.
 
-        包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
+        桌面id
 
         :return: The desktop_ids of this CreateChangeImageOrderRequestBody.
         :rtype: list[str]
@@ -118,7 +132,7 @@ class CreateChangeImageOrderRequestBody:
     def desktop_ids(self, desktop_ids):
         r"""Sets the desktop_ids of this CreateChangeImageOrderRequestBody.
 
-        包周期桌面ID列表。 不可同时存在普通桌面和池桌面ID。
+        桌面id
 
         :param desktop_ids: The desktop_ids of this CreateChangeImageOrderRequestBody.
         :type desktop_ids: list[str]
@@ -146,6 +160,28 @@ class CreateChangeImageOrderRequestBody:
         :type promotion_plan_id: str
         """
         self._promotion_plan_id = promotion_plan_id
+
+    @property
+    def handle_type(self):
+        r"""Gets the handle_type of this CreateChangeImageOrderRequestBody.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :return: The handle_type of this CreateChangeImageOrderRequestBody.
+        :rtype: str
+        """
+        return self._handle_type
+
+    @handle_type.setter
+    def handle_type(self, handle_type):
+        r"""Sets the handle_type of this CreateChangeImageOrderRequestBody.
+
+        处理类型 - ONLY_FOR_EXPAND：仅对新扩容桌面生效 - FOR_EXPAND_AND_IDLE：对新扩容桌面与空闲桌面生效 - FOR_EXPAND_AND_ALL：对新扩容桌面与已有全部桌面生效
+
+        :param handle_type: The handle_type of this CreateChangeImageOrderRequestBody.
+        :type handle_type: str
+        """
+        self._handle_type = handle_type
 
     @property
     def image_spec_code(self):
@@ -190,6 +226,28 @@ class CreateChangeImageOrderRequestBody:
         :type image_id: str
         """
         self._image_id = image_id
+
+    @property
+    def image_type(self):
+        r"""Gets the image_type of this CreateChangeImageOrderRequestBody.
+
+        镜像类型。仅重建系统盘/更换镜像使用  - private：私有镜像。 - gold：公共镜像。
+
+        :return: The image_type of this CreateChangeImageOrderRequestBody.
+        :rtype: str
+        """
+        return self._image_type
+
+    @image_type.setter
+    def image_type(self, image_type):
+        r"""Sets the image_type of this CreateChangeImageOrderRequestBody.
+
+        镜像类型。仅重建系统盘/更换镜像使用  - private：私有镜像。 - gold：公共镜像。
+
+        :param image_type: The image_type of this CreateChangeImageOrderRequestBody.
+        :type image_type: str
+        """
+        self._image_type = image_type
 
     @property
     def delay_time(self):

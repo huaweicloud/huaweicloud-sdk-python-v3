@@ -19,6 +19,7 @@ class ListPolicyGroupInfoRequest:
         'offset': 'int',
         'policy_group_id': 'str',
         'policy_group_name': 'str',
+        'policy_group_names': 'list[str]',
         'priority': 'int',
         'update_time': 'str',
         'description': 'str'
@@ -29,12 +30,13 @@ class ListPolicyGroupInfoRequest:
         'offset': 'offset',
         'policy_group_id': 'policy_group_id',
         'policy_group_name': 'policy_group_name',
+        'policy_group_names': 'policy_group_names',
         'priority': 'priority',
         'update_time': 'update_time',
         'description': 'description'
     }
 
-    def __init__(self, limit=None, offset=None, policy_group_id=None, policy_group_name=None, priority=None, update_time=None, description=None):
+    def __init__(self, limit=None, offset=None, policy_group_id=None, policy_group_name=None, policy_group_names=None, priority=None, update_time=None, description=None):
         r"""ListPolicyGroupInfoRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ListPolicyGroupInfoRequest:
         :type policy_group_id: str
         :param policy_group_name: 根据策略组名字过滤结果。
         :type policy_group_name: str
+        :param policy_group_names: 根据批量策略组名字过滤结果。
+        :type policy_group_names: list[str]
         :param priority: 根据优先级过滤结果。所带的值需要满足现有策略组已有最大优先级值。
         :type priority: int
         :param update_time: 根据更新时间过滤结果。时间格式满足：yyyy-MM-dd HH:mm:ss。
@@ -61,6 +65,7 @@ class ListPolicyGroupInfoRequest:
         self._offset = None
         self._policy_group_id = None
         self._policy_group_name = None
+        self._policy_group_names = None
         self._priority = None
         self._update_time = None
         self._description = None
@@ -74,6 +79,8 @@ class ListPolicyGroupInfoRequest:
             self.policy_group_id = policy_group_id
         if policy_group_name is not None:
             self.policy_group_name = policy_group_name
+        if policy_group_names is not None:
+            self.policy_group_names = policy_group_names
         if priority is not None:
             self.priority = priority
         if update_time is not None:
@@ -168,6 +175,28 @@ class ListPolicyGroupInfoRequest:
         :type policy_group_name: str
         """
         self._policy_group_name = policy_group_name
+
+    @property
+    def policy_group_names(self):
+        r"""Gets the policy_group_names of this ListPolicyGroupInfoRequest.
+
+        根据批量策略组名字过滤结果。
+
+        :return: The policy_group_names of this ListPolicyGroupInfoRequest.
+        :rtype: list[str]
+        """
+        return self._policy_group_names
+
+    @policy_group_names.setter
+    def policy_group_names(self, policy_group_names):
+        r"""Sets the policy_group_names of this ListPolicyGroupInfoRequest.
+
+        根据批量策略组名字过滤结果。
+
+        :param policy_group_names: The policy_group_names of this ListPolicyGroupInfoRequest.
+        :type policy_group_names: list[str]
+        """
+        self._policy_group_names = policy_group_names
 
     @property
     def priority(self):

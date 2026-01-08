@@ -21,7 +21,7 @@ class Submission:
         'is_stoping_increment': 'str',
         'is_execute_auto': 'bool',
         'last_update_date': 'int',
-        'last_udpate_user': 'str',
+        'last_update_user': 'str',
         'is_delete_job': 'bool',
         'creation_user': 'str',
         'creation_date': 'int',
@@ -44,7 +44,7 @@ class Submission:
         'is_stoping_increment': 'isStopingIncrement',
         'is_execute_auto': 'is-execute-auto',
         'last_update_date': 'last-update-date',
-        'last_udpate_user': 'last-udpate-user',
+        'last_update_user': 'last-update-user',
         'is_delete_job': 'isDeleteJob',
         'creation_user': 'creation-user',
         'creation_date': 'creation-date',
@@ -60,7 +60,7 @@ class Submission:
         'error_summary': 'error-summary'
     }
 
-    def __init__(self, is_incrementing=None, job_name=None, counters=None, is_stoping_increment=None, is_execute_auto=None, last_update_date=None, last_udpate_user=None, is_delete_job=None, creation_user=None, creation_date=None, external_id=None, progress=None, submission_id=None, delete_rows=None, update_rows=None, write_rows=None, execute_date=None, status=None, error_details=None, error_summary=None):
+    def __init__(self, is_incrementing=None, job_name=None, counters=None, is_stoping_increment=None, is_execute_auto=None, last_update_date=None, last_update_user=None, is_delete_job=None, creation_user=None, creation_date=None, external_id=None, progress=None, submission_id=None, delete_rows=None, update_rows=None, write_rows=None, execute_date=None, status=None, error_details=None, error_summary=None):
         r"""Submission
 
         The model defined in huaweicloud sdk
@@ -77,8 +77,8 @@ class Submission:
         :type is_execute_auto: bool
         :param last_update_date: 作业最后更新时间
         :type last_update_date: int
-        :param last_udpate_user: 最后更新作业状态的用户
-        :type last_udpate_user: str
+        :param last_update_user: 最后更新作业状态的用户
+        :type last_update_user: str
         :param is_delete_job: 作业执行完成后是否删除
         :type is_delete_job: bool
         :param creation_user: 创建用户
@@ -115,7 +115,7 @@ class Submission:
         self._is_stoping_increment = None
         self._is_execute_auto = None
         self._last_update_date = None
-        self._last_udpate_user = None
+        self._last_update_user = None
         self._is_delete_job = None
         self._creation_user = None
         self._creation_date = None
@@ -138,7 +138,7 @@ class Submission:
         self.is_stoping_increment = is_stoping_increment
         self.is_execute_auto = is_execute_auto
         self.last_update_date = last_update_date
-        self.last_udpate_user = last_udpate_user
+        self.last_update_user = last_update_user
         self.is_delete_job = is_delete_job
         self.creation_user = creation_user
         self.creation_date = creation_date
@@ -289,26 +289,26 @@ class Submission:
         self._last_update_date = last_update_date
 
     @property
-    def last_udpate_user(self):
-        r"""Gets the last_udpate_user of this Submission.
+    def last_update_user(self):
+        r"""Gets the last_update_user of this Submission.
 
         最后更新作业状态的用户
 
-        :return: The last_udpate_user of this Submission.
+        :return: The last_update_user of this Submission.
         :rtype: str
         """
-        return self._last_udpate_user
+        return self._last_update_user
 
-    @last_udpate_user.setter
-    def last_udpate_user(self, last_udpate_user):
-        r"""Sets the last_udpate_user of this Submission.
+    @last_update_user.setter
+    def last_update_user(self, last_update_user):
+        r"""Sets the last_update_user of this Submission.
 
         最后更新作业状态的用户
 
-        :param last_udpate_user: The last_udpate_user of this Submission.
-        :type last_udpate_user: str
+        :param last_update_user: The last_update_user of this Submission.
+        :type last_update_user: str
         """
-        self._last_udpate_user = last_udpate_user
+        self._last_update_user = last_update_user
 
     @property
     def is_delete_job(self):

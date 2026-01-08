@@ -31,11 +31,11 @@ class DimensionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param name: **参数描述**： 维度名称。 **约束限制** 不涉及 **取值范围**： 多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”。必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\&quot;,\&quot;分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **默认取值** 不涉及 
+        :param name: **参数解释**： 维度名称。 **约束限制** 不涉及 **取值范围**： 多维度用逗号分隔，各服务资源的维度名称，请参阅具体云服务的文档。您可以直接从[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)页面导航至相应文档。。必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\&quot;,\&quot;分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **默认取值** 不涉及 
         :type name: str
-        :param filter_type: **参数描述**： 资源类型。 **约束限制** 不涉及 **取值范围**： - all_instances: 全部资源 - specific_instances: 指定资源 **默认取值** 不涉及 
+        :param filter_type: **参数解释**： 资源类型。 **约束限制** view参数取值为柱状图 条形图 环形柱状图 表格时，则filter_type参数不支持指定资源 **取值范围**： - all_instances: 全部资源 - specific_instances: 指定资源 **默认取值** 不涉及 
         :type filter_type: str
-        :param values: **参数描述**： 维度值列表。 **约束限制** 不涉及 
+        :param values: **参数解释**： 维度值列表。 **约束限制** 包含的维度值对象个数为[0,200] 
         :type values: list[str]
         """
         
@@ -55,7 +55,7 @@ class DimensionInfo:
     def name(self):
         r"""Gets the name of this DimensionInfo.
 
-        **参数描述**： 维度名称。 **约束限制** 不涉及 **取值范围**： 多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”。必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\",\"分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **默认取值** 不涉及 
+        **参数解释**： 维度名称。 **约束限制** 不涉及 **取值范围**： 多维度用逗号分隔，各服务资源的维度名称，请参阅具体云服务的文档。您可以直接从[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)页面导航至相应文档。。必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\",\"分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **默认取值** 不涉及 
 
         :return: The name of this DimensionInfo.
         :rtype: str
@@ -66,7 +66,7 @@ class DimensionInfo:
     def name(self, name):
         r"""Sets the name of this DimensionInfo.
 
-        **参数描述**： 维度名称。 **约束限制** 不涉及 **取值范围**： 多维度用逗号分隔，各服务支持的维度可参考：“[服务维度名称](ces_03_0059.xml)”。必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\",\"分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **默认取值** 不涉及 
+        **参数解释**： 维度名称。 **约束限制** 不涉及 **取值范围**： 多维度用逗号分隔，各服务资源的维度名称，请参阅具体云服务的文档。您可以直接从[[支持监控的服务列表](https://support.huaweicloud.com/api-ces/ces_03_0059.html)](tag:hc)[[支持监控的服务列表](https://support.huaweicloud.com/intl/en-us/api-ces/ces_03_0059.html)](tag:hk)[[支持监控的服务列表](https://support.huaweicloud.com/eu/en-us/api-ces/ces_03_0059.html)](tag:hws_eu)[[支持监控的服务列表](ces_03_0059.xml)](tag:ax,cmcc,ctc,dt,dt_test,hcso_dt,fcs,fcs_vm,mix,g42,hk_g42,hk_sbc,hk_tm,hk_vdf,hws_ocb,ocb,sbc,srg)页面导航至相应文档。。必须以字母开头，只能包含0-9/a-z/A-Z/_/-，多维度用\",\"分隔，每个维度的最大长度为32。总长度为[1,131]个字符。目前最大支持4个维度。举例：单维度场景：instance_id；多维度场景：instance_id,disk **默认取值** 不涉及 
 
         :param name: The name of this DimensionInfo.
         :type name: str
@@ -77,7 +77,7 @@ class DimensionInfo:
     def filter_type(self):
         r"""Gets the filter_type of this DimensionInfo.
 
-        **参数描述**： 资源类型。 **约束限制** 不涉及 **取值范围**： - all_instances: 全部资源 - specific_instances: 指定资源 **默认取值** 不涉及 
+        **参数解释**： 资源类型。 **约束限制** view参数取值为柱状图 条形图 环形柱状图 表格时，则filter_type参数不支持指定资源 **取值范围**： - all_instances: 全部资源 - specific_instances: 指定资源 **默认取值** 不涉及 
 
         :return: The filter_type of this DimensionInfo.
         :rtype: str
@@ -88,7 +88,7 @@ class DimensionInfo:
     def filter_type(self, filter_type):
         r"""Sets the filter_type of this DimensionInfo.
 
-        **参数描述**： 资源类型。 **约束限制** 不涉及 **取值范围**： - all_instances: 全部资源 - specific_instances: 指定资源 **默认取值** 不涉及 
+        **参数解释**： 资源类型。 **约束限制** view参数取值为柱状图 条形图 环形柱状图 表格时，则filter_type参数不支持指定资源 **取值范围**： - all_instances: 全部资源 - specific_instances: 指定资源 **默认取值** 不涉及 
 
         :param filter_type: The filter_type of this DimensionInfo.
         :type filter_type: str
@@ -99,7 +99,7 @@ class DimensionInfo:
     def values(self):
         r"""Gets the values of this DimensionInfo.
 
-        **参数描述**： 维度值列表。 **约束限制** 不涉及 
+        **参数解释**： 维度值列表。 **约束限制** 包含的维度值对象个数为[0,200] 
 
         :return: The values of this DimensionInfo.
         :rtype: list[str]
@@ -110,7 +110,7 @@ class DimensionInfo:
     def values(self, values):
         r"""Sets the values of this DimensionInfo.
 
-        **参数描述**： 维度值列表。 **约束限制** 不涉及 
+        **参数解释**： 维度值列表。 **约束限制** 包含的维度值对象个数为[0,200] 
 
         :param values: The values of this DimensionInfo.
         :type values: list[str]

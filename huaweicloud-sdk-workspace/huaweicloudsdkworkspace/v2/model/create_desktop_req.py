@@ -35,7 +35,8 @@ class CreateDesktopReq:
         'eip': 'Eip',
         'desktop_name_policy_id': 'str',
         'hour_package_product_id': 'str',
-        'hour_package_offering_id': 'str'
+        'hour_package_offering_id': 'str',
+        'if_mount_old_desktop_disk': 'bool'
     }
 
     attribute_map = {
@@ -59,17 +60,18 @@ class CreateDesktopReq:
         'eip': 'eip',
         'desktop_name_policy_id': 'desktop_name_policy_id',
         'hour_package_product_id': 'hour_package_product_id',
-        'hour_package_offering_id': 'hour_package_offering_id'
+        'hour_package_offering_id': 'hour_package_offering_id',
+        'if_mount_old_desktop_disk': 'if_mount_old_desktop_disk'
     }
 
-    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, desktop_ips=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, apply_shared_vpc_dedicated_param=None, eip=None, desktop_name_policy_id=None, hour_package_product_id=None, hour_package_offering_id=None):
+    def __init__(self, desktop_type=None, availability_zone=None, product_id=None, image_type=None, image_id=None, root_volume=None, data_volumes=None, nics=None, security_groups=None, desktops=None, desktop_name=None, desktop_ips=None, size=None, email_notification=None, enterprise_project_id=None, tags=None, apply_shared_vpc_dedicated_param=None, eip=None, desktop_name_policy_id=None, hour_package_product_id=None, hour_package_offering_id=None, if_mount_old_desktop_disk=None):
         r"""CreateDesktopReq
 
         The model defined in huaweicloud sdk
 
         :param desktop_type: 云桌面类型。 - DEDICATED：专属桌面，单用户。 - SHARED: 多用户共享桌面。
         :type desktop_type: str
-        :param availability_zone: 可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
+        :param availability_zone: 可用分区。将桌面创建到指定的可用分区。
         :type availability_zone: str
         :param product_id: 套餐ID。
         :type product_id: str
@@ -85,7 +87,7 @@ class CreateDesktopReq:
         :type nics: list[:class:`huaweicloudsdkworkspace.v2.Nic`]
         :param security_groups: 桌面使用的安全组，如果不指定则默认使用桌面代理中指定的安全组。
         :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroup`]
-        :param desktops: 创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
+        :param desktops: 创建桌面使用的参数列表。长度为1-100。
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
         :param desktop_name: 搭配size使用，当size为1时代表桌面名，位数1-15，当size大于1时代表桌面名前缀，位数：1-13。
         :type desktop_name: str
@@ -109,6 +111,8 @@ class CreateDesktopReq:
         :type hour_package_product_id: str
         :param hour_package_offering_id: 桌面小时包offeringID。
         :type hour_package_offering_id: str
+        :param if_mount_old_desktop_disk: 是否在发放新桌面时，挂载旧桌面磁盘为数据盘
+        :type if_mount_old_desktop_disk: bool
         """
         
         
@@ -134,6 +138,7 @@ class CreateDesktopReq:
         self._desktop_name_policy_id = None
         self._hour_package_product_id = None
         self._hour_package_offering_id = None
+        self._if_mount_old_desktop_disk = None
         self.discriminator = None
 
         self.desktop_type = desktop_type
@@ -173,6 +178,8 @@ class CreateDesktopReq:
             self.hour_package_product_id = hour_package_product_id
         if hour_package_offering_id is not None:
             self.hour_package_offering_id = hour_package_offering_id
+        if if_mount_old_desktop_disk is not None:
+            self.if_mount_old_desktop_disk = if_mount_old_desktop_disk
 
     @property
     def desktop_type(self):
@@ -200,7 +207,7 @@ class CreateDesktopReq:
     def availability_zone(self):
         r"""Gets the availability_zone of this CreateDesktopReq.
 
-        可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
+        可用分区。将桌面创建到指定的可用分区。
 
         :return: The availability_zone of this CreateDesktopReq.
         :rtype: str
@@ -211,7 +218,7 @@ class CreateDesktopReq:
     def availability_zone(self, availability_zone):
         r"""Sets the availability_zone of this CreateDesktopReq.
 
-        可用分区。将桌面创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
+        可用分区。将桌面创建到指定的可用分区。
 
         :param availability_zone: The availability_zone of this CreateDesktopReq.
         :type availability_zone: str
@@ -372,7 +379,7 @@ class CreateDesktopReq:
     def desktops(self):
         r"""Gets the desktops of this CreateDesktopReq.
 
-        创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
+        创建桌面使用的参数列表。长度为1-100。
 
         :return: The desktops of this CreateDesktopReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
@@ -383,7 +390,7 @@ class CreateDesktopReq:
     def desktops(self, desktops):
         r"""Sets the desktops of this CreateDesktopReq.
 
-        创建桌面使用的参数列表。长度为1-100。  当前不支持一批桌面不同配置，所有桌面的配置和第一台的一致，如果第一台未设置参数，则取外层的同名参数。
+        创建桌面使用的参数列表。长度为1-100。
 
         :param desktops: The desktops of this CreateDesktopReq.
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.Desktop`]
@@ -623,6 +630,28 @@ class CreateDesktopReq:
         :type hour_package_offering_id: str
         """
         self._hour_package_offering_id = hour_package_offering_id
+
+    @property
+    def if_mount_old_desktop_disk(self):
+        r"""Gets the if_mount_old_desktop_disk of this CreateDesktopReq.
+
+        是否在发放新桌面时，挂载旧桌面磁盘为数据盘
+
+        :return: The if_mount_old_desktop_disk of this CreateDesktopReq.
+        :rtype: bool
+        """
+        return self._if_mount_old_desktop_disk
+
+    @if_mount_old_desktop_disk.setter
+    def if_mount_old_desktop_disk(self, if_mount_old_desktop_disk):
+        r"""Sets the if_mount_old_desktop_disk of this CreateDesktopReq.
+
+        是否在发放新桌面时，挂载旧桌面磁盘为数据盘
+
+        :param if_mount_old_desktop_disk: The if_mount_old_desktop_disk of this CreateDesktopReq.
+        :type if_mount_old_desktop_disk: bool
+        """
+        self._if_mount_old_desktop_disk = if_mount_old_desktop_disk
 
     def to_dict(self):
         result = {}

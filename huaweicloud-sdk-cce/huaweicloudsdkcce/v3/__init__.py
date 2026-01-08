@@ -564,6 +564,7 @@ from huaweicloudsdkcce.v3.model.sync_node_resp import SyncNodeResp
 from huaweicloudsdkcce.v3.model.sync_node_response import SyncNodeResponse
 from huaweicloudsdkcce.v3.model.sync_nodes_resp import SyncNodesResp
 from huaweicloudsdkcce.v3.model.taint import Taint
+from huaweicloudsdkcce.v3.model.task_status import TaskStatus
 from huaweicloudsdkcce.v3.model.task_type import TaskType
 from huaweicloudsdkcce.v3.model.templatespec import Templatespec
 from huaweicloudsdkcce.v3.model.unlock_node_scaledown_request_body import UnlockNodeScaledownRequestBody

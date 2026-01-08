@@ -79,7 +79,7 @@ class ListMasterSlavePoolsRequest:
         :type name: list[str]
         :param loadbalancer_id: **参数解释**：后端服务器组绑定的负载均衡器ID。 支持多值查询，查询条件格式：*loadbalancer_id&#x3D;xxx&amp;loadbalancer_id&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：不涉及  **默认取值**：不涉及
         :type loadbalancer_id: list[str]
-        :param protocol: **参数解释**：后端服务器组的后端协议。 支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  **默认取值**：不涉及
+        :param protocol: **参数解释**：后端服务器组的后端协议。 支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**：TCP、UDP、IP、TLS、GRPC、HTTP、HTTPS和QUIC。  **默认取值**：不涉及
         :type protocol: list[str]
         :param lb_algorithm: **参数解释**：后端服务器组的负载均衡算法。 支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。  **约束限制**：不涉及  **取值范围**： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  **默认取值**：不涉及
         :type lb_algorithm: list[str]
@@ -345,7 +345,7 @@ class ListMasterSlavePoolsRequest:
     def protocol(self):
         r"""Gets the protocol of this ListMasterSlavePoolsRequest.
 
-        **参数解释**：后端服务器组的后端协议。 支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  **约束限制**：不涉及  **取值范围**：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  **默认取值**：不涉及
+        **参数解释**：后端服务器组的后端协议。 支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  **约束限制**：不涉及  **取值范围**：TCP、UDP、IP、TLS、GRPC、HTTP、HTTPS和QUIC。  **默认取值**：不涉及
 
         :return: The protocol of this ListMasterSlavePoolsRequest.
         :rtype: list[str]
@@ -356,7 +356,7 @@ class ListMasterSlavePoolsRequest:
     def protocol(self, protocol):
         r"""Sets the protocol of this ListMasterSlavePoolsRequest.
 
-        **参数解释**：后端服务器组的后端协议。 支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  **约束限制**：不涉及  **取值范围**：TCP、UDP、[IP、](tag:hws_eu)TLS、GRPC、HTTP、HTTPS和QUIC。  **默认取值**：不涉及
+        **参数解释**：后端服务器组的后端协议。 支持多值查询，查询条件格式：*protocol=xxx&protocol=xxx*。  **约束限制**：不涉及  **取值范围**：TCP、UDP、IP、TLS、GRPC、HTTP、HTTPS和QUIC。  **默认取值**：不涉及
 
         :param protocol: The protocol of this ListMasterSlavePoolsRequest.
         :type protocol: list[str]

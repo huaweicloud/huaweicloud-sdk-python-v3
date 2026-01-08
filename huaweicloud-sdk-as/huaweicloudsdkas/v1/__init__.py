@@ -47,6 +47,7 @@ from huaweicloudsdkas.v1.model.close_warm_pool_new_request import CloseWarmPoolN
 from huaweicloudsdkas.v1.model.close_warm_pool_new_response import CloseWarmPoolNewResponse
 from huaweicloudsdkas.v1.model.close_warm_pool_request import CloseWarmPoolRequest
 from huaweicloudsdkas.v1.model.close_warm_pool_response import CloseWarmPoolResponse
+from huaweicloudsdkas.v1.model.cpu_options import CpuOptions
 from huaweicloudsdkas.v1.model.create_group_scheduled_task_request import CreateGroupScheduledTaskRequest
 from huaweicloudsdkas.v1.model.create_group_scheduled_task_response import CreateGroupScheduledTaskResponse
 from huaweicloudsdkas.v1.model.create_life_cycle_hook_option import CreateLifeCycleHookOption

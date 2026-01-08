@@ -28,8 +28,7 @@ class ListPrivateDnatsRequest:
         'private_ip_address': 'list[str]',
         'protocol': 'list[str]',
         'internal_service_port': 'list[str]',
-        'transit_service_port': 'list[str]',
-        'transit_ip_address': 'list[str]'
+        'transit_service_port': 'list[str]'
     }
 
     attribute_map = {
@@ -46,11 +45,10 @@ class ListPrivateDnatsRequest:
         'private_ip_address': 'private_ip_address',
         'protocol': 'protocol',
         'internal_service_port': 'internal_service_port',
-        'transit_service_port': 'transit_service_port',
-        'transit_ip_address': 'transit_ip_address'
+        'transit_service_port': 'transit_service_port'
     }
 
-    def __init__(self, limit=None, marker=None, page_reverse=None, id=None, enterprise_project_id=None, description=None, gateway_id=None, transit_ip_id=None, network_interface_id=None, type=None, private_ip_address=None, protocol=None, internal_service_port=None, transit_service_port=None, transit_ip_address=None):
+    def __init__(self, limit=None, marker=None, page_reverse=None, id=None, enterprise_project_id=None, description=None, gateway_id=None, transit_ip_id=None, network_interface_id=None, type=None, private_ip_address=None, protocol=None, internal_service_port=None, transit_service_port=None):
         r"""ListPrivateDnatsRequest
 
         The model defined in huaweicloud sdk
@@ -73,7 +71,7 @@ class ListPrivateDnatsRequest:
         :type transit_ip_id: list[str]
         :param network_interface_id: 计算实例、ELBV2、ELBV3、VIP等资源的端口ID。
         :type network_interface_id: list[str]
-        :param type: DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELBv2的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
+        :param type: DNAT规则后端的类型。 取值： - COMPUTE：后端为计算实例。 - VIP：后端为VIP的实例。 - ELB：后端为ELBv2的实例。 - ELBv3：后端为ELBv3的实例。 - CUSTOMIZE：后端为自定义IP。
         :type type: list[str]
         :param private_ip_address: 后端资源（计算实例、ELBV2、ELBV3、VIP等）的私网IP地址。
         :type private_ip_address: list[str]
@@ -83,8 +81,6 @@ class ListPrivateDnatsRequest:
         :type internal_service_port: list[str]
         :param transit_service_port: 中转IP的端口号。
         :type transit_service_port: list[str]
-        :param transit_ip_address: 中转IP的地址。
-        :type transit_ip_address: list[str]
         """
         
         
@@ -103,7 +99,6 @@ class ListPrivateDnatsRequest:
         self._protocol = None
         self._internal_service_port = None
         self._transit_service_port = None
-        self._transit_ip_address = None
         self.discriminator = None
 
         if limit is not None:
@@ -134,8 +129,6 @@ class ListPrivateDnatsRequest:
             self.internal_service_port = internal_service_port
         if transit_service_port is not None:
             self.transit_service_port = transit_service_port
-        if transit_ip_address is not None:
-            self.transit_ip_address = transit_ip_address
 
     @property
     def limit(self):
@@ -339,7 +332,7 @@ class ListPrivateDnatsRequest:
     def type(self):
         r"""Gets the type of this ListPrivateDnatsRequest.
 
-        DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELBv2的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
+        DNAT规则后端的类型。 取值： - COMPUTE：后端为计算实例。 - VIP：后端为VIP的实例。 - ELB：后端为ELBv2的实例。 - ELBv3：后端为ELBv3的实例。 - CUSTOMIZE：后端为自定义IP。
 
         :return: The type of this ListPrivateDnatsRequest.
         :rtype: list[str]
@@ -350,7 +343,7 @@ class ListPrivateDnatsRequest:
     def type(self, type):
         r"""Sets the type of this ListPrivateDnatsRequest.
 
-        DNAT规则后端的类型。 取值：     COMPUTE：后端为计算实例。     VIP：后端为VIP的实例。     ELB：后端为ELBv2的实例。     ELBv3：后端为ELBv3的实例。     CUSTOMIZE：后端为自定义IP。
+        DNAT规则后端的类型。 取值： - COMPUTE：后端为计算实例。 - VIP：后端为VIP的实例。 - ELB：后端为ELBv2的实例。 - ELBv3：后端为ELBv3的实例。 - CUSTOMIZE：后端为自定义IP。
 
         :param type: The type of this ListPrivateDnatsRequest.
         :type type: list[str]
@@ -444,28 +437,6 @@ class ListPrivateDnatsRequest:
         :type transit_service_port: list[str]
         """
         self._transit_service_port = transit_service_port
-
-    @property
-    def transit_ip_address(self):
-        r"""Gets the transit_ip_address of this ListPrivateDnatsRequest.
-
-        中转IP的地址。
-
-        :return: The transit_ip_address of this ListPrivateDnatsRequest.
-        :rtype: list[str]
-        """
-        return self._transit_ip_address
-
-    @transit_ip_address.setter
-    def transit_ip_address(self, transit_ip_address):
-        r"""Sets the transit_ip_address of this ListPrivateDnatsRequest.
-
-        中转IP的地址。
-
-        :param transit_ip_address: The transit_ip_address of this ListPrivateDnatsRequest.
-        :type transit_ip_address: list[str]
-        """
-        self._transit_ip_address = transit_ip_address
 
     def to_dict(self):
         result = {}

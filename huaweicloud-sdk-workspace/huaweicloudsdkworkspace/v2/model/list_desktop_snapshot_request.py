@@ -16,8 +16,11 @@ class ListDesktopSnapshotRequest:
 
     openapi_types = {
         'desktop_id': 'str',
+        'desktop_ids': 'list[str]',
         'desktop_name': 'str',
+        'desktop_names': 'list[str]',
         'snapshot_name': 'str',
+        'snapshot_names': 'list[str]',
         'disk_type': 'str',
         'create_type': 'str',
         'status': 'str',
@@ -29,8 +32,11 @@ class ListDesktopSnapshotRequest:
 
     attribute_map = {
         'desktop_id': 'desktop_id',
+        'desktop_ids': 'desktop_ids',
         'desktop_name': 'desktop_name',
+        'desktop_names': 'desktop_names',
         'snapshot_name': 'snapshot_name',
+        'snapshot_names': 'snapshot_names',
         'disk_type': 'disk_type',
         'create_type': 'create_type',
         'status': 'status',
@@ -40,17 +46,23 @@ class ListDesktopSnapshotRequest:
         'limit': 'limit'
     }
 
-    def __init__(self, desktop_id=None, desktop_name=None, snapshot_name=None, disk_type=None, create_type=None, status=None, sort_field=None, sort_type=None, offset=None, limit=None):
+    def __init__(self, desktop_id=None, desktop_ids=None, desktop_name=None, desktop_names=None, snapshot_name=None, snapshot_names=None, disk_type=None, create_type=None, status=None, sort_field=None, sort_type=None, offset=None, limit=None):
         r"""ListDesktopSnapshotRequest
 
         The model defined in huaweicloud sdk
 
         :param desktop_id: 桌面id。
         :type desktop_id: str
+        :param desktop_ids: 桌面id列表
+        :type desktop_ids: list[str]
         :param desktop_name: 桌面名称。
         :type desktop_name: str
+        :param desktop_names: 桌面名称列表
+        :type desktop_names: list[str]
         :param snapshot_name: 快照名称。
         :type snapshot_name: str
+        :param snapshot_names: 快照名称列表
+        :type snapshot_names: list[str]
         :param disk_type: 快照类型。 - SYSTEM_DISK 系统盘。 - DATA_DISKS 数据盘。 - ALL 系统盘和数据盘。
         :type disk_type: str
         :param create_type: 快照创建类型。 - AUTO 定时任务自动创建。 - MANUALLY 手动创建。
@@ -70,8 +82,11 @@ class ListDesktopSnapshotRequest:
         
 
         self._desktop_id = None
+        self._desktop_ids = None
         self._desktop_name = None
+        self._desktop_names = None
         self._snapshot_name = None
+        self._snapshot_names = None
         self._disk_type = None
         self._create_type = None
         self._status = None
@@ -83,10 +98,16 @@ class ListDesktopSnapshotRequest:
 
         if desktop_id is not None:
             self.desktop_id = desktop_id
+        if desktop_ids is not None:
+            self.desktop_ids = desktop_ids
         if desktop_name is not None:
             self.desktop_name = desktop_name
+        if desktop_names is not None:
+            self.desktop_names = desktop_names
         if snapshot_name is not None:
             self.snapshot_name = snapshot_name
+        if snapshot_names is not None:
+            self.snapshot_names = snapshot_names
         if disk_type is not None:
             self.disk_type = disk_type
         if create_type is not None:
@@ -125,6 +146,28 @@ class ListDesktopSnapshotRequest:
         self._desktop_id = desktop_id
 
     @property
+    def desktop_ids(self):
+        r"""Gets the desktop_ids of this ListDesktopSnapshotRequest.
+
+        桌面id列表
+
+        :return: The desktop_ids of this ListDesktopSnapshotRequest.
+        :rtype: list[str]
+        """
+        return self._desktop_ids
+
+    @desktop_ids.setter
+    def desktop_ids(self, desktop_ids):
+        r"""Sets the desktop_ids of this ListDesktopSnapshotRequest.
+
+        桌面id列表
+
+        :param desktop_ids: The desktop_ids of this ListDesktopSnapshotRequest.
+        :type desktop_ids: list[str]
+        """
+        self._desktop_ids = desktop_ids
+
+    @property
     def desktop_name(self):
         r"""Gets the desktop_name of this ListDesktopSnapshotRequest.
 
@@ -147,6 +190,28 @@ class ListDesktopSnapshotRequest:
         self._desktop_name = desktop_name
 
     @property
+    def desktop_names(self):
+        r"""Gets the desktop_names of this ListDesktopSnapshotRequest.
+
+        桌面名称列表
+
+        :return: The desktop_names of this ListDesktopSnapshotRequest.
+        :rtype: list[str]
+        """
+        return self._desktop_names
+
+    @desktop_names.setter
+    def desktop_names(self, desktop_names):
+        r"""Sets the desktop_names of this ListDesktopSnapshotRequest.
+
+        桌面名称列表
+
+        :param desktop_names: The desktop_names of this ListDesktopSnapshotRequest.
+        :type desktop_names: list[str]
+        """
+        self._desktop_names = desktop_names
+
+    @property
     def snapshot_name(self):
         r"""Gets the snapshot_name of this ListDesktopSnapshotRequest.
 
@@ -167,6 +232,28 @@ class ListDesktopSnapshotRequest:
         :type snapshot_name: str
         """
         self._snapshot_name = snapshot_name
+
+    @property
+    def snapshot_names(self):
+        r"""Gets the snapshot_names of this ListDesktopSnapshotRequest.
+
+        快照名称列表
+
+        :return: The snapshot_names of this ListDesktopSnapshotRequest.
+        :rtype: list[str]
+        """
+        return self._snapshot_names
+
+    @snapshot_names.setter
+    def snapshot_names(self, snapshot_names):
+        r"""Sets the snapshot_names of this ListDesktopSnapshotRequest.
+
+        快照名称列表
+
+        :param snapshot_names: The snapshot_names of this ListDesktopSnapshotRequest.
+        :type snapshot_names: list[str]
+        """
+        self._snapshot_names = snapshot_names
 
     @property
     def disk_type(self):

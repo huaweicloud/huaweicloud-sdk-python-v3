@@ -27,7 +27,8 @@ class CreateUserRequest:
         'description': 'str',
         'alias_name': 'str',
         'enterprise_project_id': 'str',
-        'user_info_map': 'str'
+        'user_info_map': 'str',
+        'domain': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class CreateUserRequest:
         'description': 'description',
         'alias_name': 'alias_name',
         'enterprise_project_id': 'enterprise_project_id',
-        'user_info_map': 'user_info_map'
+        'user_info_map': 'user_info_map',
+        'domain': 'domain'
     }
 
-    def __init__(self, user_name=None, user_email=None, account_expires=None, active_type=None, user_phone=None, password=None, enable_change_password=None, next_login_change_password=None, group_ids=None, description=None, alias_name=None, enterprise_project_id=None, user_info_map=None):
+    def __init__(self, user_name=None, user_email=None, account_expires=None, active_type=None, user_phone=None, password=None, enable_change_password=None, next_login_change_password=None, group_ids=None, description=None, alias_name=None, enterprise_project_id=None, user_info_map=None, domain=None):
         r"""CreateUserRequest
 
         The model defined in huaweicloud sdk
@@ -63,9 +65,9 @@ class CreateUserRequest:
         :type user_phone: str
         :param password: 用户初始密码。管理员激活模式需要输入。
         :type password: str
-        :param enable_change_password: 是否允许用户更改密码，缺省值为true，后续此字段无效，创建时都为true。
+        :param enable_change_password: 是否允许用户更改密码，缺省值为true。
         :type enable_change_password: bool
-        :param next_login_change_password: 下次登录是否必须更改密码，缺省值为true。后续此字段无效，创建时都为true。
+        :param next_login_change_password: 下次登录是否必须更改密码，缺省值为true。该字段只在active_type为ADMIN_ACTIVATE时生效。
         :type next_login_change_password: bool
         :param group_ids: 用户组的专有ID列表。
         :type group_ids: list[str]
@@ -73,10 +75,12 @@ class CreateUserRequest:
         :type description: str
         :param alias_name: 别名。
         :type alias_name: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param user_info_map: 用户信息映射，包含用户的服务等级、操作模式和类型。
         :type user_info_map: str
+        :param domain: 用户所属域，domain为空时，默认主域。
+        :type domain: str
         """
         
         
@@ -94,6 +98,7 @@ class CreateUserRequest:
         self._alias_name = None
         self._enterprise_project_id = None
         self._user_info_map = None
+        self._domain = None
         self.discriminator = None
 
         self.user_name = user_name
@@ -121,6 +126,8 @@ class CreateUserRequest:
             self.enterprise_project_id = enterprise_project_id
         if user_info_map is not None:
             self.user_info_map = user_info_map
+        if domain is not None:
+            self.domain = domain
 
     @property
     def user_name(self):
@@ -258,7 +265,7 @@ class CreateUserRequest:
     def enable_change_password(self):
         r"""Gets the enable_change_password of this CreateUserRequest.
 
-        是否允许用户更改密码，缺省值为true，后续此字段无效，创建时都为true。
+        是否允许用户更改密码，缺省值为true。
 
         :return: The enable_change_password of this CreateUserRequest.
         :rtype: bool
@@ -269,7 +276,7 @@ class CreateUserRequest:
     def enable_change_password(self, enable_change_password):
         r"""Sets the enable_change_password of this CreateUserRequest.
 
-        是否允许用户更改密码，缺省值为true，后续此字段无效，创建时都为true。
+        是否允许用户更改密码，缺省值为true。
 
         :param enable_change_password: The enable_change_password of this CreateUserRequest.
         :type enable_change_password: bool
@@ -280,7 +287,7 @@ class CreateUserRequest:
     def next_login_change_password(self):
         r"""Gets the next_login_change_password of this CreateUserRequest.
 
-        下次登录是否必须更改密码，缺省值为true。后续此字段无效，创建时都为true。
+        下次登录是否必须更改密码，缺省值为true。该字段只在active_type为ADMIN_ACTIVATE时生效。
 
         :return: The next_login_change_password of this CreateUserRequest.
         :rtype: bool
@@ -291,7 +298,7 @@ class CreateUserRequest:
     def next_login_change_password(self, next_login_change_password):
         r"""Sets the next_login_change_password of this CreateUserRequest.
 
-        下次登录是否必须更改密码，缺省值为true。后续此字段无效，创建时都为true。
+        下次登录是否必须更改密码，缺省值为true。该字段只在active_type为ADMIN_ACTIVATE时生效。
 
         :param next_login_change_password: The next_login_change_password of this CreateUserRequest.
         :type next_login_change_password: bool
@@ -368,7 +375,7 @@ class CreateUserRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this CreateUserRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this CreateUserRequest.
         :rtype: str
@@ -379,7 +386,7 @@ class CreateUserRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this CreateUserRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateUserRequest.
         :type enterprise_project_id: str
@@ -407,6 +414,28 @@ class CreateUserRequest:
         :type user_info_map: str
         """
         self._user_info_map = user_info_map
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this CreateUserRequest.
+
+        用户所属域，domain为空时，默认主域。
+
+        :return: The domain of this CreateUserRequest.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this CreateUserRequest.
+
+        用户所属域，domain为空时，默认主域。
+
+        :param domain: The domain of this CreateUserRequest.
+        :type domain: str
+        """
+        self._domain = domain
 
     def to_dict(self):
         result = {}

@@ -29,7 +29,7 @@ class DeleteSubJobsReq:
 
         The model defined in huaweicloud sdk
 
-        :param job_ids: 任务ID列表，只能删除SUCCESS、FAILED两种状态。job_ids和delete_by_status必传一个。
+        :param job_ids: 子任务ID列表，非任务ID，只能删除SUCCESS、FAILED两种状态。job_ids和delete_by_status必传一个。
         :type job_ids: list[str]
         :param delete_by_status: 通过任务状态删除，只能删除以下的两种状态 SUCCESS：成功。 FAILED：失败。job_ids和delete_by_status必传一个。
         :type delete_by_status: str
@@ -50,7 +50,7 @@ class DeleteSubJobsReq:
     def job_ids(self):
         r"""Gets the job_ids of this DeleteSubJobsReq.
 
-        任务ID列表，只能删除SUCCESS、FAILED两种状态。job_ids和delete_by_status必传一个。
+        子任务ID列表，非任务ID，只能删除SUCCESS、FAILED两种状态。job_ids和delete_by_status必传一个。
 
         :return: The job_ids of this DeleteSubJobsReq.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class DeleteSubJobsReq:
     def job_ids(self, job_ids):
         r"""Sets the job_ids of this DeleteSubJobsReq.
 
-        任务ID列表，只能删除SUCCESS、FAILED两种状态。job_ids和delete_by_status必传一个。
+        子任务ID列表，非任务ID，只能删除SUCCESS、FAILED两种状态。job_ids和delete_by_status必传一个。
 
         :param job_ids: The job_ids of this DeleteSubJobsReq.
         :type job_ids: list[str]

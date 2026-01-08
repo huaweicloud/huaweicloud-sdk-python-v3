@@ -22,7 +22,9 @@ class VolumeProductInfo:
         'cloud_service_type': 'str',
         'domain_ids': 'list[str]',
         'name': 'list[I18nLanguage]',
-        'status': 'str'
+        'status': 'str',
+        'iops': 'Iops',
+        'throughput': 'Throughput'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class VolumeProductInfo:
         'cloud_service_type': 'cloud_service_type',
         'domain_ids': 'domain_ids',
         'name': 'name',
-        'status': 'status'
+        'status': 'status',
+        'iops': 'iops',
+        'throughput': 'throughput'
     }
 
-    def __init__(self, resource_spec_code=None, volume_type=None, volume_product_type=None, resource_type=None, cloud_service_type=None, domain_ids=None, name=None, status=None):
+    def __init__(self, resource_spec_code=None, volume_type=None, volume_product_type=None, resource_type=None, cloud_service_type=None, domain_ids=None, name=None, status=None, iops=None, throughput=None):
         r"""VolumeProductInfo
 
         The model defined in huaweicloud sdk
@@ -57,6 +61,10 @@ class VolumeProductInfo:
         :type name: list[:class:`huaweicloudsdkworkspace.v2.I18nLanguage`]
         :param status: 产品状态，normal：正常、sellout：售空。
         :type status: str
+        :param iops: 
+        :type iops: :class:`huaweicloudsdkworkspace.v2.Iops`
+        :param throughput: 
+        :type throughput: :class:`huaweicloudsdkworkspace.v2.Throughput`
         """
         
         
@@ -69,6 +77,8 @@ class VolumeProductInfo:
         self._domain_ids = None
         self._name = None
         self._status = None
+        self._iops = None
+        self._throughput = None
         self.discriminator = None
 
         if resource_spec_code is not None:
@@ -87,6 +97,10 @@ class VolumeProductInfo:
             self.name = name
         if status is not None:
             self.status = status
+        if iops is not None:
+            self.iops = iops
+        if throughput is not None:
+            self.throughput = throughput
 
     @property
     def resource_spec_code(self):
@@ -263,6 +277,42 @@ class VolumeProductInfo:
         :type status: str
         """
         self._status = status
+
+    @property
+    def iops(self):
+        r"""Gets the iops of this VolumeProductInfo.
+
+        :return: The iops of this VolumeProductInfo.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.Iops`
+        """
+        return self._iops
+
+    @iops.setter
+    def iops(self, iops):
+        r"""Sets the iops of this VolumeProductInfo.
+
+        :param iops: The iops of this VolumeProductInfo.
+        :type iops: :class:`huaweicloudsdkworkspace.v2.Iops`
+        """
+        self._iops = iops
+
+    @property
+    def throughput(self):
+        r"""Gets the throughput of this VolumeProductInfo.
+
+        :return: The throughput of this VolumeProductInfo.
+        :rtype: :class:`huaweicloudsdkworkspace.v2.Throughput`
+        """
+        return self._throughput
+
+    @throughput.setter
+    def throughput(self, throughput):
+        r"""Sets the throughput of this VolumeProductInfo.
+
+        :param throughput: The throughput of this VolumeProductInfo.
+        :type throughput: :class:`huaweicloudsdkworkspace.v2.Throughput`
+        """
+        self._throughput = throughput
 
     def to_dict(self):
         result = {}

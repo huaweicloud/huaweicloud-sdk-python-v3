@@ -27,7 +27,7 @@ class BatchCreatePortTagsRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param tags: 标签列表
+        :param tags: 标签列表 约束：最大支持20组标签键值对
         :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
         """
         
@@ -42,7 +42,7 @@ class BatchCreatePortTagsRequestBody:
     def tags(self):
         r"""Gets the tags of this BatchCreatePortTagsRequestBody.
 
-        标签列表
+        标签列表 约束：最大支持20组标签键值对
 
         :return: The tags of this BatchCreatePortTagsRequestBody.
         :rtype: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]
@@ -53,7 +53,7 @@ class BatchCreatePortTagsRequestBody:
     def tags(self, tags):
         r"""Sets the tags of this BatchCreatePortTagsRequestBody.
 
-        标签列表
+        标签列表 约束：最大支持20组标签键值对
 
         :param tags: The tags of this BatchCreatePortTagsRequestBody.
         :type tags: list[:class:`huaweicloudsdkvpc.v3.ResourceTag`]

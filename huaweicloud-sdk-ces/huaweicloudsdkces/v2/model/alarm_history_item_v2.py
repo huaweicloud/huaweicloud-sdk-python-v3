@@ -63,7 +63,7 @@ class AlarmHistoryItemV2:
 
         The model defined in huaweicloud sdk
 
-        :param record_id: **参数解释**： 告警记录ID。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 
+        :param record_id: **参数解释**： 告警流水号。优化告警流水号生成规则，由 ah1655717086704DEnBrJ999 更改为 ah251222T092004SAD2yARym **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 
         :type record_id: str
         :param alarm_id: **参数解释**： 告警规则ID。 **取值范围**： 以al开头，后跟22位的字母或数字。 
         :type alarm_id: str
@@ -169,7 +169,7 @@ class AlarmHistoryItemV2:
     def record_id(self):
         r"""Gets the record_id of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警记录ID。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 
+        **参数解释**： 告警流水号。优化告警流水号生成规则，由 ah1655717086704DEnBrJ999 更改为 ah251222T092004SAD2yARym **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 
 
         :return: The record_id of this AlarmHistoryItemV2.
         :rtype: str
@@ -180,7 +180,7 @@ class AlarmHistoryItemV2:
     def record_id(self, record_id):
         r"""Sets the record_id of this AlarmHistoryItemV2.
 
-        **参数解释**： 告警记录ID。 **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 
+        **参数解释**： 告警流水号。优化告警流水号生成规则，由 ah1655717086704DEnBrJ999 更改为 ah251222T092004SAD2yARym **取值范围**： 以ah开头，后跟22位由字母或数字组成的字符串，字符串长度为24。 
 
         :param record_id: The record_id of this AlarmHistoryItemV2.
         :type record_id: str

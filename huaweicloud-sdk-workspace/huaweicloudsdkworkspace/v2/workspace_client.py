@@ -291,6 +291,138 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def export_ip_template(self, request):
+        r"""导入ip模板下载
+
+        该接口用于导入Ip模板下载。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportIpTemplate
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportIpTemplateRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportIpTemplateResponse`
+        """
+        http_info = self._export_ip_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_ip_template_invoker(self, request):
+        http_info = self._export_ip_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_ip_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/ip/template/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportIpTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_ip(self, request):
+        r"""导入ip列表
+
+        以excel文件形式导入ip列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ImportIp
+        :type request: :class:`huaweicloudsdkworkspace.v2.ImportIpRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ImportIpResponse`
+        """
+        http_info = self._import_ip_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_ip_invoker(self, request):
+        http_info = self._import_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_ip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ip/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportIpResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_access_policies(self, request):
         r"""查询接入策略
 
@@ -666,6 +798,8 @@ class WorkspaceClient(Client):
         query_params = []
         if 'scene' in local_var_params:
             query_params.append(('scene', local_var_params['scene']))
+        if 'action' in local_var_params:
+            query_params.append(('action', local_var_params['action']))
 
         header_params = {}
 
@@ -2805,6 +2939,73 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def download_metadata(self, request):
+        r"""下载SAML 2.0元数据信息
+
+        下载SAML 2.0元数据信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadMetadata
+        :type request: :class:`huaweicloudsdkworkspace.v2.DownloadMetadataRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DownloadMetadataResponse`
+        """
+        http_info = self._download_metadata_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_metadata_invoker(self, request):
+        http_info = self._download_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_metadata_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/auth-config/saml2/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadMetadataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'auth_config_id' in local_var_params:
+            query_params.append(('auth_config_id', local_var_params['auth_config_id']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_assist_auth_config(self, request):
         r"""查询辅助认证配置
 
@@ -2841,6 +3042,77 @@ class WorkspaceClient(Client):
         path_params = {}
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_assist_auth_config_apply_objects(self, request):
+        r"""查询辅助认证应用对象列表
+
+        查询辅助认证应用对象列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowAssistAuthConfigApplyObjects
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowAssistAuthConfigApplyObjectsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowAssistAuthConfigApplyObjectsResponse`
+        """
+        http_info = self._show_assist_auth_config_apply_objects_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_assist_auth_config_apply_objects_invoker(self, request):
+        http_info = self._show_assist_auth_config_apply_objects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_assist_auth_config_apply_objects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/assist-auth-config/apply-objects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssistAuthConfigApplyObjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'object_type' in local_var_params:
+            query_params.append(('object_type', local_var_params['object_type']))
+        if 'object_name' in local_var_params:
+            query_params.append(('object_name', local_var_params['object_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
 
@@ -2912,6 +3184,71 @@ class WorkspaceClient(Client):
         form_params = {}
 
         body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_assist_auth_config_apply_objects(self, request):
+        r"""更新辅助认证应用对象列表
+
+        更新辅助认证应用对象列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAssistAuthConfigApplyObjects
+        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateAssistAuthConfigApplyObjectsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateAssistAuthConfigApplyObjectsResponse`
+        """
+        http_info = self._update_assist_auth_config_apply_objects_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_assist_auth_config_apply_objects_invoker(self, request):
+        http_info = self._update_assist_auth_config_apply_objects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_assist_auth_config_apply_objects_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/assist-auth-config/apply-objects",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssistAuthConfigApplyObjectsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -3023,6 +3360,71 @@ class WorkspaceClient(Client):
             "resource_path": "/v2/{project_id}/auth-config/method-config",
             "request_type": request.__class__.__name__,
             "response_type": "UpdateAuthMethodConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def validate_config(self, request):
+        r"""校验配置是否合法（当前仅支持SAML2配置校验）
+
+        校验配置是否合法（当前仅支持SAML2配置校验）。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ValidateConfig
+        :type request: :class:`huaweicloudsdkworkspace.v2.ValidateConfigRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ValidateConfigResponse`
+        """
+        http_info = self._validate_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def validate_config_invoker(self, request):
+        http_info = self._validate_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/auth-config/validate-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateConfigResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -3254,10 +3656,725 @@ class WorkspaceClient(Client):
 
         return http_info
 
-    def export_user_login_info_new(self, request):
-        r"""导出连接记录
+    def create_cert(self, request):
+        r"""创建证书
 
-        该接口用于导出连接记录。
+        创建证书。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateCert
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateCertRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateCertResponse`
+        """
+        http_info = self._create_cert_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_cert_invoker(self, request):
+        http_info = self._create_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cert_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/certmanager/private-certificate-authorities",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_cert(self, request):
+        r"""删除ca证书
+
+        删除ca证书。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteCert
+        :type request: :class:`huaweicloudsdkworkspace.v2.DeleteCertRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteCertResponse`
+        """
+        http_info = self._delete_cert_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_cert_invoker(self, request):
+        http_info = self._delete_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cert_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/certmanager/private-certificate-authorities/{cert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCertResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cert_id' in local_var_params:
+            path_params['cert_id'] = local_var_params['cert_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_cert_crl_file(self, request):
+        r"""导出ca证书crl文件
+
+        导出ca证书crl文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportCertCrlFile
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportCertCrlFileRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportCertCrlFileResponse`
+        """
+        http_info = self._export_cert_crl_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_cert_crl_file_invoker(self, request):
+        http_info = self._export_cert_crl_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_cert_crl_file_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/certmanager/private-certificate-authorities/{cert_id}/crl",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportCertCrlFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cert_id' in local_var_params:
+            path_params['cert_id'] = local_var_params['cert_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_cert_csr_file(self, request):
+        r"""导出ca证书签名请求
+
+        导出ca证书签名请求。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportCertCsrFile
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportCertCsrFileRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportCertCsrFileResponse`
+        """
+        http_info = self._export_cert_csr_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_cert_csr_file_invoker(self, request):
+        http_info = self._export_cert_csr_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_cert_csr_file_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/certmanager/private-certificate-authorities/csr",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportCertCsrFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_cert_pem_file(self, request):
+        r"""导出ca证书pem文件
+
+        导出ca证书pem文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportCertPemFile
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportCertPemFileRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportCertPemFileResponse`
+        """
+        http_info = self._export_cert_pem_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_cert_pem_file_invoker(self, request):
+        http_info = self._export_cert_pem_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_cert_pem_file_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/certmanager/private-certificate-authorities/{cert_id}/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportCertPemFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cert_id' in local_var_params:
+            path_params['cert_id'] = local_var_params['cert_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_cert(self, request):
+        r"""导入ca子证书
+
+        导入ca子证书。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ImportCert
+        :type request: :class:`huaweicloudsdkworkspace.v2.ImportCertRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ImportCertResponse`
+        """
+        http_info = self._import_cert_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_cert_invoker(self, request):
+        http_info = self._import_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_cert_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/certmanager/private-certificate-authorities/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportCertResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_certs(self, request):
+        r"""查询CA证书列表
+
+        查询CA证书列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCerts
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListCertsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListCertsResponse`
+        """
+        http_info = self._list_certs_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_certs_invoker(self, request):
+        http_info = self._list_certs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_certs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/certmanager/private-certificate-authorities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def set_cert_status(self, request):
+        r"""启用或禁用ca证书
+
+        启用或禁用ca证书。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for SetCertStatus
+        :type request: :class:`huaweicloudsdkworkspace.v2.SetCertStatusRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.SetCertStatusResponse`
+        """
+        http_info = self._set_cert_status_http_info(request)
+        return self._call_api(**http_info)
+
+    def set_cert_status_invoker(self, request):
+        http_info = self._set_cert_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_cert_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/certmanager/private-certificate-authorities/{cert_id}/status/{status}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetCertStatusResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cert_id' in local_var_params:
+            path_params['cert_id'] = local_var_params['cert_id']
+        if 'status' in local_var_params:
+            path_params['status'] = local_var_params['status']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_cert_detail(self, request):
+        r"""查询ca证书详情
+
+        查询ca证书详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCertDetail
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowCertDetailRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowCertDetailResponse`
+        """
+        http_info = self._show_cert_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_cert_detail_invoker(self, request):
+        http_info = self._show_cert_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cert_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/certmanager/private-certificate-authorities/{cert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cert_id' in local_var_params:
+            path_params['cert_id'] = local_var_params['cert_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def check_desktop_images(self, request):
+        r"""检查桌面镜像是否存在
+
+        用于校验指定桌面列表的桌面镜像，当前是否存在，如果存在返回对应的imageId，不存在就不返回。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckDesktopImages
+        :type request: :class:`huaweicloudsdkworkspace.v2.CheckDesktopImagesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CheckDesktopImagesResponse`
+        """
+        http_info = self._check_desktop_images_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_desktop_images_invoker(self, request):
+        http_info = self._check_desktop_images_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_desktop_images_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/check-images",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckDesktopImagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def check_sysprep_info(self, request):
+        r"""sysprep版本信息检查
+
+        检查sysprep版本信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckSysprepInfo
+        :type request: :class:`huaweicloudsdkworkspace.v2.CheckSysprepInfoRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CheckSysprepInfoResponse`
+        """
+        http_info = self._check_sysprep_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_sysprep_info_invoker(self, request):
+        http_info = self._check_sysprep_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_sysprep_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/sysprep",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckSysprepInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_user_login_info_new(self, request):
+        r"""导出连接记录(待废弃)
+
+        该接口用于导出连接记录，待废弃。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -3515,6 +4632,90 @@ class WorkspaceClient(Client):
             query_params.append(('min_network_rtt', local_var_params['min_network_rtt']))
         if 'max_network_rtt' in local_var_params:
             query_params.append(('max_network_rtt', local_var_params['max_network_rtt']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_user_connection_new(self, request):
+        r"""导出连接记录
+
+        该接口用于导出连接记录;
+        最多导出30天内的数据;
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportUserConnectionNew
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportUserConnectionNewRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUserConnectionNewResponse`
+        """
+        http_info = self._export_user_connection_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_user_connection_new_invoker(self, request):
+        http_info = self._export_user_connection_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_user_connection_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/desktops/connections/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportUserConnectionNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'computer_name' in local_var_params:
+            query_params.append(('computer_name', local_var_params['computer_name']))
+        if 'terminal_type' in local_var_params:
+            query_params.append(('terminal_type', local_var_params['terminal_type']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'min_e2e_rtt' in local_var_params:
+            query_params.append(('min_e2e_rtt', local_var_params['min_e2e_rtt']))
+        if 'max_e2e_rtt' in local_var_params:
+            query_params.append(('max_e2e_rtt', local_var_params['max_e2e_rtt']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 
@@ -3933,9 +5134,9 @@ class WorkspaceClient(Client):
         return http_info
 
     def batch_install_agent(self, request):
-        r"""安装agent
+        r"""安装监控插件
 
-        批量为桌面安装agent。
+        批量为桌面安装监控插件。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4721,9 +5922,9 @@ class WorkspaceClient(Client):
         return http_info
 
     def list_agents_install_condition(self, request):
-        r"""查询桌面安装agent详情
+        r"""查询桌面安装监控插件详情
 
-        展示桌面安装agent详情。
+        展示桌面安装监控插件详情。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -4843,6 +6044,71 @@ class WorkspaceClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_desktop_detach_info(self, request):
+        r"""查询桌面解绑信息
+
+        查询桌面解绑信息。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDesktopDetachInfo
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopDetachInfoRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopDetachInfoResponse`
+        """
+        http_info = self._list_desktop_detach_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_desktop_detach_info_invoker(self, request):
+        http_info = self._list_desktop_detach_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_desktop_detach_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/detach-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDesktopDetachInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'desktop_id' in local_var_params:
+            path_params['desktop_id'] = local_var_params['desktop_id']
+
+        query_params = []
 
         header_params = {}
 
@@ -5082,6 +6348,9 @@ class WorkspaceClient(Client):
             query_params.append(('sort_type', local_var_params['sort_type']))
         if 'computer_name' in local_var_params:
             query_params.append(('computer_name', local_var_params['computer_name']))
+        if 'computer_names' in local_var_params:
+            query_params.append(('computer_names', local_var_params['computer_names']))
+            collection_formats['computer_names'] = 'csv'
         if 'desktop_ip' in local_var_params:
             query_params.append(('desktop_ip', local_var_params['desktop_ip']))
         if 'offset' in local_var_params:
@@ -6129,7 +7398,7 @@ class WorkspaceClient(Client):
     def create_desktop_name_policy(self, request):
         r"""创建桌面名称策略
 
-        创建桌面名称策略，用于自动生成桌面名称，最多允许50个。
+        创建桌面名称策略，用于自动生成桌面名称。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -7075,6 +8344,141 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def list_desktop_pools_by_users(self, request):
+        r"""查询用户所关联的桌面池列表
+
+        该接口用于查询用户所关联的桌面池列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListDesktopPoolsByUsers
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopPoolsByUsersRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopPoolsByUsersResponse`
+        """
+        http_info = self._list_desktop_pools_by_users_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_desktop_pools_by_users_invoker(self, request):
+        http_info = self._list_desktop_pools_by_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_desktop_pools_by_users_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktop-pools/statistics/by-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDesktopPoolsByUsersResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_ids' in local_var_params:
+            query_params.append(('user_ids', local_var_params['user_ids']))
+            collection_formats['user_ids'] = 'csv'
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_inconsistent_statics(self, request):
+        r"""查询桌面池中差异统计
+
+        该接口用于查询桌面池中差异统计
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListInconsistentStatics
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListInconsistentStaticsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListInconsistentStaticsResponse`
+        """
+        http_info = self._list_inconsistent_statics_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_inconsistent_statics_invoker(self, request):
+        http_info = self._list_inconsistent_statics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_inconsistent_statics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktop-pools/{pool_id}/inconsistent-statics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInconsistentStaticsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_pool_desktops_detail(self, request):
         r"""查询桌面池下的桌面信息
 
@@ -7119,6 +8523,49 @@ class WorkspaceClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'user_names' in local_var_params:
+            query_params.append(('user_names', local_var_params['user_names']))
+            collection_formats['user_names'] = 'csv'
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sort_type', local_var_params['sort_type']))
+        if 'computer_name' in local_var_params:
+            query_params.append(('computer_name', local_var_params['computer_name']))
+        if 'computer_names' in local_var_params:
+            query_params.append(('computer_names', local_var_params['computer_names']))
+            collection_formats['computer_names'] = 'csv'
+        if 'desktop_ip' in local_var_params:
+            query_params.append(('desktop_ip', local_var_params['desktop_ip']))
+        if 'desktop_id' in local_var_params:
+            query_params.append(('desktop_id', local_var_params['desktop_id']))
+            collection_formats['desktop_id'] = 'csv'
+        if 'desktop_type' in local_var_params:
+            query_params.append(('desktop_type', local_var_params['desktop_type']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+        if 'user_attached' in local_var_params:
+            query_params.append(('user_attached', local_var_params['user_attached']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'image_id' in local_var_params:
+            query_params.append(('image_id', local_var_params['image_id']))
+        if 'charge_mode' in local_var_params:
+            query_params.append(('charge_mode', local_var_params['charge_mode']))
+        if 'in_maintenance_mode' in local_var_params:
+            query_params.append(('in_maintenance_mode', local_var_params['in_maintenance_mode']))
+        if 'is_share_desktop' in local_var_params:
+            query_params.append(('is_share_desktop', local_var_params['is_share_desktop']))
+        if 'subnet_id' in local_var_params:
+            query_params.append(('subnet_id', local_var_params['subnet_id']))
+        if 'is_support_internet' in local_var_params:
+            query_params.append(('is_support_internet', local_var_params['is_support_internet']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
 
         header_params = {}
 
@@ -8001,6 +9448,8 @@ class WorkspaceClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'key' in local_var_params:
             query_params.append(('key', local_var_params['key']))
+        if 'value' in local_var_params:
+            query_params.append(('value', local_var_params['value']))
 
         header_params = {}
 
@@ -8064,6 +9513,169 @@ class WorkspaceClient(Client):
         path_params = {}
         if 'desktop_id' in local_var_params:
             path_params['desktop_id'] = local_var_params['desktop_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_desktop_list_new(self, request):
+        r"""导出桌面列表
+
+        导出桌面列表的excel文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportDesktopListNew
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportDesktopListNewRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportDesktopListNewResponse`
+        """
+        http_info = self._export_desktop_list_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_desktop_list_new_invoker(self, request):
+        http_info = self._export_desktop_list_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_desktop_list_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/desktops/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportDesktopListNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'computer_name' in local_var_params:
+            query_params.append(('computer_name', local_var_params['computer_name']))
+        if 'desktop_ip' in local_var_params:
+            query_params.append(('desktop_ip', local_var_params['desktop_ip']))
+        if 'desktop_id' in local_var_params:
+            query_params.append(('desktop_id', local_var_params['desktop_id']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'desktop_type' in local_var_params:
+            query_params.append(('desktop_type', local_var_params['desktop_type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'user_names' in local_var_params:
+            query_params.append(('user_names', local_var_params['user_names']))
+            collection_formats['user_names'] = 'csv'
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sort_type', local_var_params['sort_type']))
+        if 'pool_id' in local_var_params:
+            query_params.append(('pool_id', local_var_params['pool_id']))
+        if 'user_attached' in local_var_params:
+            query_params.append(('user_attached', local_var_params['user_attached']))
+        if 'image_id' in local_var_params:
+            query_params.append(('image_id', local_var_params['image_id']))
+        if 'charge_mode' in local_var_params:
+            query_params.append(('charge_mode', local_var_params['charge_mode']))
+        if 'in_maintenance_mode' in local_var_params:
+            query_params.append(('in_maintenance_mode', local_var_params['in_maintenance_mode']))
+        if 'subnet_id' in local_var_params:
+            query_params.append(('subnet_id', local_var_params['subnet_id']))
+        if 'connection_status_version' in local_var_params:
+            query_params.append(('connection_status_version', local_var_params['connection_status_version']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_hibernate_type(self, request):
+        r"""查询休眠类型
+
+        查询休眠类型
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowHibernateType
+        :type request: :class:`huaweicloudsdkworkspace.v2.ShowHibernateTypeRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ShowHibernateTypeResponse`
+        """
+        http_info = self._show_hibernate_type_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_hibernate_type_invoker(self, request):
+        http_info = self._show_hibernate_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_hibernate_type_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/hibernate-type",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHibernateTypeResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -8261,6 +9873,77 @@ class WorkspaceClient(Client):
             path_params['group_id'] = local_var_params['group_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_user_groups(self, request):
+        r"""导出用户组
+
+        以excel文件形式导出用户组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportUserGroups
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportUserGroupsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUserGroupsResponse`
+        """
+        http_info = self._export_user_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_user_groups_invoker(self, request):
+        http_info = self._export_user_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_user_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/groups/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportUserGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
 
         header_params = {}
 
@@ -8537,6 +10220,298 @@ class WorkspaceClient(Client):
         path_params = {}
         if 'group_id' in local_var_params:
             path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_user_group_users_new(self, request):
+        r"""导出用户组的用户
+
+        以excel文件形式导出用户组用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportUserGroupUsersNew
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportUserGroupUsersNewRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUserGroupUsersNewResponse`
+        """
+        http_info = self._export_user_group_users_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_user_group_users_new_invoker(self, request):
+        http_info = self._export_user_group_users_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_user_group_users_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/groups/{group_id}/users/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportUserGroupUsersNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+        if 'active_type' in local_var_params:
+            query_params.append(('active_type', local_var_params['active_type']))
+        if 'group_name' in local_var_params:
+            query_params.append(('group_name', local_var_params['group_name']))
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_hosts_detail(self, request):
+        r"""查询云办公主机列表
+
+        展示云办公主机列表的详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListHostsDetail
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListHostsDetailRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListHostsDetailResponse`
+        """
+        http_info = self._list_hosts_detail_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_hosts_detail_invoker(self, request):
+        http_info = self._list_hosts_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_hosts_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostsDetailResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'availability_zone' in local_var_params:
+            query_params.append(('availability_zone', local_var_params['availability_zone']))
+        if 'host_id' in local_var_params:
+            query_params.append(('host_id', local_var_params['host_id']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'host_type' in local_var_params:
+            query_params.append(('host_type', local_var_params['host_type']))
+        if 'host_type_name' in local_var_params:
+            query_params.append(('host_type_name', local_var_params['host_type_name']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'changes_since' in local_var_params:
+            query_params.append(('changes_since', local_var_params['changes_since']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_servers_by_host_id(self, request):
+        r"""查询云办公主机包含桌面信息
+
+        查询云办公主机包含桌面信息，提供给console使用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListServersByHostId
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListServersByHostIdRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListServersByHostIdResponse`
+        """
+        http_info = self._list_servers_by_host_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_servers_by_host_id_invoker(self, request):
+        http_info = self._list_servers_by_host_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_servers_by_host_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/hosts/{host_id}/servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServersByHostIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'host_id' in local_var_params:
+            path_params['host_id'] = local_var_params['host_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_hosts(self, request):
+        r"""更新云办公主机信息
+
+        通过云办公主机的id更新云办公主机的信息，提供给console、赞齐使用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateHosts
+        :type request: :class:`huaweicloudsdkworkspace.v2.UpdateHostsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateHostsResponse`
+        """
+        http_info = self._update_hosts_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_hosts_invoker(self, request):
+        http_info = self._update_hosts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_hosts_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHostsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -9177,7 +11152,7 @@ class WorkspaceClient(Client):
     def batch_delete_sub_jobs(self, request):
         r"""删除子任务
 
-        该接口用于删除子任务。
+        该接口用于删除子任务，changeAccessVpc，cancelWorkspace，applyWorkspace类型任务不支持删除。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -10203,6 +12178,69 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def list_security_groups(self, request):
+        r"""查询安全组列表
+
+        该接口查询安全组列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSecurityGroups
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListSecurityGroupsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListSecurityGroupsResponse`
+        """
+        http_info = self._list_security_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_security_groups_invoker(self, request):
+        http_info = self._list_security_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_subnet_bandwidths(self, request):
         r"""查询云办公带宽列表
 
@@ -10253,6 +12291,136 @@ class WorkspaceClient(Client):
             query_params.append(('bandwidth_id', local_var_params['bandwidth_id']))
         if 'bandwidth_name' in local_var_params:
             query_params.append(('bandwidth_name', local_var_params['bandwidth_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_subnets(self, request):
+        r"""查询子网列表
+
+        查询子网列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListSubnets
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListSubnetsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListSubnetsResponse`
+        """
+        http_info = self._list_subnets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_subnets_invoker(self, request):
+        http_info = self._list_subnets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_subnets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubnetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'availability_zone_id' in local_var_params:
+            query_params.append(('availability_zone_id', local_var_params['availability_zone_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_vpc_info(self, request):
+        r"""查询vpc
+
+        查询vpc。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListVpcInfo
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListVpcInfoRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListVpcInfoResponse`
+        """
+        http_info = self._list_vpc_info_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_vpc_info_invoker(self, request):
+        http_info = self._list_vpc_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vpc_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/vpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcInfoResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
 
         header_params = {}
 
@@ -10883,6 +13051,71 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def create_resource_packages_order(self, request):
+        r"""创建资源包订单
+
+        创建资源包订单。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateResourcePackagesOrder
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreateResourcePackagesOrderRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreateResourcePackagesOrderResponse`
+        """
+        http_info = self._create_resource_packages_order_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_resource_packages_order_invoker(self, request):
+        http_info = self._create_resource_packages_order_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_resource_packages_order_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/resource-packages/order",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourcePackagesOrderResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def create_subnet_bandwidth_change_order(self, request):
         r"""包周期云办公带宽变更下单
 
@@ -11189,6 +13422,8 @@ class WorkspaceClient(Client):
         path_params = {}
 
         query_params = []
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -11488,6 +13723,71 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def create_policy_template(self, request):
+        r"""创建策略模板
+
+        创建策略模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePolicyTemplate
+        :type request: :class:`huaweicloudsdkworkspace.v2.CreatePolicyTemplateRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CreatePolicyTemplateResponse`
+        """
+        http_info = self._create_policy_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_policy_template_invoker(self, request):
+        http_info = self._create_policy_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_policy_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/policy-groups/policy-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_policy_group(self, request):
         r"""删除策略组
 
@@ -11539,6 +13839,138 @@ class WorkspaceClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_policy_groups(self, request):
+        r"""导出策略组
+
+        导出xml文件形式的策略组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportPolicyGroups
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportPolicyGroupsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportPolicyGroupsResponse`
+        """
+        http_info = self._export_policy_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_policy_groups_invoker(self, request):
+        http_info = self._export_policy_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_policy_groups_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/policy-groups/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportPolicyGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_policy_groups(self, request):
+        r"""导入策略组
+
+        以xml文件形式导入策略组。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ImportPolicyGroups
+        :type request: :class:`huaweicloudsdkworkspace.v2.ImportPolicyGroupsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ImportPolicyGroupsResponse`
+        """
+        http_info = self._import_policy_groups_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_policy_groups_invoker(self, request):
+        http_info = self._import_policy_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_policy_groups_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/policy-groups/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportPolicyGroupsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
 
         auth_settings = []
 
@@ -11871,6 +14303,9 @@ class WorkspaceClient(Client):
             query_params.append(('policy_group_id', local_var_params['policy_group_id']))
         if 'policy_group_name' in local_var_params:
             query_params.append(('policy_group_name', local_var_params['policy_group_name']))
+        if 'policy_group_names' in local_var_params:
+            query_params.append(('policy_group_names', local_var_params['policy_group_names']))
+            collection_formats['policy_group_names'] = 'csv'
         if 'priority' in local_var_params:
             query_params.append(('priority', local_var_params['priority']))
         if 'update_time' in local_var_params:
@@ -12230,6 +14665,71 @@ class WorkspaceClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_resource_packages(self, request):
+        r"""查询按需资源包列表
+
+        该接口用于查询按需资源包列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListResourcePackages
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListResourcePackagesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListResourcePackagesResponse`
+        """
+        http_info = self._list_resource_packages_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_resource_packages_invoker(self, request):
+        http_info = self._list_resource_packages_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_packages_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/products/resource-packages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourcePackagesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_spec_code' in local_var_params:
+            query_params.append(('resource_spec_code', local_var_params['resource_spec_code']))
 
         header_params = {}
 
@@ -12761,6 +15261,75 @@ class WorkspaceClient(Client):
             path_params['task_id'] = local_var_params['task_id']
 
         query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_scheduled_tasks_records(self, request):
+        r"""导出定时任务记录及执行详情
+
+        导出定时任务记录及执行详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportScheduledTasksRecords
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportScheduledTasksRecordsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportScheduledTasksRecordsResponse`
+        """
+        http_info = self._export_scheduled_tasks_records_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_scheduled_tasks_records_invoker(self, request):
+        http_info = self._export_scheduled_tasks_records_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_scheduled_tasks_records_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/scheduled-tasks/{task_id}/records/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportScheduledTasksRecordsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'time_zone' in local_var_params:
+            query_params.append(('time_zone', local_var_params['time_zone']))
 
         header_params = {}
 
@@ -13752,6 +16321,71 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def execute_script_by_desktop_tag(self, request):
+        r"""按桌面标签下发执行脚本或命令
+
+        按桌面标签下发执行脚本或命令。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteScriptByDesktopTag
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExecuteScriptByDesktopTagRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExecuteScriptByDesktopTagResponse`
+        """
+        http_info = self._execute_script_by_desktop_tag_http_info(request)
+        return self._call_api(**http_info)
+
+    def execute_script_by_desktop_tag_invoker(self, request):
+        http_info = self._execute_script_by_desktop_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_script_by_desktop_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/script-executions/by-desktop-tag",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteScriptByDesktopTagResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def execute_script_or_command(self, request):
         r"""批量执行脚本或命令
 
@@ -14724,6 +17358,71 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def check_edge_site_resources(self, request):
+        r"""校验边缘站点资源
+
+        校验边缘站点资源。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckEdgeSiteResources
+        :type request: :class:`huaweicloudsdkworkspace.v2.CheckEdgeSiteResourcesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CheckEdgeSiteResourcesResponse`
+        """
+        http_info = self._check_edge_site_resources_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_edge_site_resources_invoker(self, request):
+        http_info = self._check_edge_site_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_edge_site_resources_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/check-edge-site-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckEdgeSiteResourcesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def delete_site(self, request):
         r"""删除站点
 
@@ -15292,10 +17991,19 @@ class WorkspaceClient(Client):
         query_params = []
         if 'desktop_id' in local_var_params:
             query_params.append(('desktop_id', local_var_params['desktop_id']))
+        if 'desktop_ids' in local_var_params:
+            query_params.append(('desktop_ids', local_var_params['desktop_ids']))
+            collection_formats['desktop_ids'] = 'csv'
         if 'desktop_name' in local_var_params:
             query_params.append(('desktop_name', local_var_params['desktop_name']))
+        if 'desktop_names' in local_var_params:
+            query_params.append(('desktop_names', local_var_params['desktop_names']))
+            collection_formats['desktop_names'] = 'csv'
         if 'snapshot_name' in local_var_params:
             query_params.append(('snapshot_name', local_var_params['snapshot_name']))
+        if 'snapshot_names' in local_var_params:
+            query_params.append(('snapshot_names', local_var_params['snapshot_names']))
+            collection_formats['snapshot_names'] = 'csv'
         if 'disk_type' in local_var_params:
             query_params.append(('disk_type', local_var_params['disk_type']))
         if 'create_type' in local_var_params:
@@ -15471,6 +18179,71 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def export_app_user_access_data(self, request):
+        r"""导出云应用接入统计数据
+
+        创建云应用接入统计导出任务，仅能导出最近30天的数据。创建后根据taskId调用ListExportTasks查询任务状态，调用DownloadExportFile下载导出文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportAppUserAccessData
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportAppUserAccessDataRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportAppUserAccessDataResponse`
+        """
+        http_info = self._export_app_user_access_data_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_app_user_access_data_invoker(self, request):
+        http_info = self._export_app_user_access_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_app_user_access_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/statistics/metrics/app-user-access/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportAppUserAccessDataResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_app_user_access_data(self, request):
         r"""查询云应用接入统计数据
 
@@ -15603,6 +18376,8 @@ class WorkspaceClient(Client):
             query_params.append(('usage_min_hours', local_var_params['usage_min_hours']))
         if 'usage_max_hours' in local_var_params:
             query_params.append(('usage_max_hours', local_var_params['usage_max_hours']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'sort_field' in local_var_params:
             query_params.append(('sort_field', local_var_params['sort_field']))
         if 'sort_type' in local_var_params:
@@ -15680,6 +18455,9 @@ class WorkspaceClient(Client):
         if 'statistics_type' in local_var_params:
             query_params.append(('statistics_type', local_var_params['statistics_type']))
             collection_formats['statistics_type'] = 'csv'
+        if 'desktop_pool_ids' in local_var_params:
+            query_params.append(('desktop_pool_ids', local_var_params['desktop_pool_ids']))
+            collection_formats['desktop_pool_ids'] = 'csv'
 
         header_params = {}
 
@@ -16307,6 +19085,8 @@ class WorkspaceClient(Client):
             query_params.append(('usage_min_hours', local_var_params['usage_min_hours']))
         if 'usage_max_hours' in local_var_params:
             query_params.append(('usage_max_hours', local_var_params['usage_max_hours']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'sort_field' in local_var_params:
             query_params.append(('sort_field', local_var_params['sort_field']))
         if 'sort_type' in local_var_params:
@@ -16529,6 +19309,174 @@ class WorkspaceClient(Client):
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_desktop_usage_metric_new(self, request):
+        r"""导出桌面使用统计数据
+
+        导出桌面使用统计信息;
+        云服务每天凌晨02:00进行聚合运算前一天00:00:00~23:59:59的使用时长,并将周期范围内的数据聚合到周期边界上
+        跨天的记录会按照统计周期进行计算
+        假设一天内桌面登录多次，09:00~12:00,13:00~21:00,22:00~01:00(次日):
+        则当天的累计使用时长数据会被汇聚到23:59:59这个点;总使用时长为 3hours(09:00~12:00)+8hours(13:00~21:00)+2hours(22:00~00:00)
+        仅能导出最近180天已进行汇聚计算的数据
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportDesktopUsageMetricNew
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportDesktopUsageMetricNewRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportDesktopUsageMetricNewResponse`
+        """
+        http_info = self._export_desktop_usage_metric_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_desktop_usage_metric_new_invoker(self, request):
+        http_info = self._export_desktop_usage_metric_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_desktop_usage_metric_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/statistics/metrics/desktops/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportDesktopUsageMetricNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'resource_name' in local_var_params:
+            query_params.append(('resource_name', local_var_params['resource_name']))
+        if 'min_idle_days' in local_var_params:
+            query_params.append(('min_idle_days', local_var_params['min_idle_days']))
+        if 'max_idle_days' in local_var_params:
+            query_params.append(('max_idle_days', local_var_params['max_idle_days']))
+        if 'usage_min_hours' in local_var_params:
+            query_params.append(('usage_min_hours', local_var_params['usage_min_hours']))
+        if 'usage_max_hours' in local_var_params:
+            query_params.append(('usage_max_hours', local_var_params['usage_max_hours']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sort_type', local_var_params['sort_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_user_usage_metric_new(self, request):
+        r"""导出用户使用统计数据
+
+        导出用户使用统计信息;
+        最多导出30天内的数据;
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportUserUsageMetricNew
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportUserUsageMetricNewRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUserUsageMetricNewResponse`
+        """
+        http_info = self._export_user_usage_metric_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_user_usage_metric_new_invoker(self, request):
+        http_info = self._export_user_usage_metric_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_user_usage_metric_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/statistics/metrics/users/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportUserUsageMetricNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'username' in local_var_params:
+            query_params.append(('username', local_var_params['username']))
+        if 'usage_min_hours' in local_var_params:
+            query_params.append(('usage_min_hours', local_var_params['usage_min_hours']))
+        if 'usage_max_hours' in local_var_params:
+            query_params.append(('usage_max_hours', local_var_params['usage_max_hours']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sort_type', local_var_params['sort_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
 
         auth_settings = []
 
@@ -16868,6 +19816,71 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def export_terminals_binding_desktops_template(self, request):
+        r"""下载终端与桌面绑定模板
+
+        下载终端与桌面绑定模板。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportTerminalsBindingDesktopsTemplate
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportTerminalsBindingDesktopsTemplateRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportTerminalsBindingDesktopsTemplateResponse`
+        """
+        http_info = self._export_terminals_binding_desktops_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_terminals_binding_desktops_template_invoker(self, request):
+        http_info = self._export_terminals_binding_desktops_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_terminals_binding_desktops_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/terminals/binding-desktops/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportTerminalsBindingDesktopsTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_terminals_binding_desktops(self, request):
         r"""查询终端与桌面绑定配置列表
 
@@ -16906,8 +19919,14 @@ class WorkspaceClient(Client):
         query_params = []
         if 'computer_name' in local_var_params:
             query_params.append(('computer_name', local_var_params['computer_name']))
+        if 'computer_names' in local_var_params:
+            query_params.append(('computer_names', local_var_params['computer_names']))
+            collection_formats['computer_names'] = 'csv'
         if 'mac' in local_var_params:
             query_params.append(('mac', local_var_params['mac']))
+        if 'mac_list' in local_var_params:
+            query_params.append(('mac_list', local_var_params['mac_list']))
+            collection_formats['mac_list'] = 'csv'
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
@@ -17113,6 +20132,75 @@ class WorkspaceClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_terminals_binding_desktops_info_new(self, request):
+        r"""导出终端与桌面绑定配置excel
+
+        导出终端与桌面绑定配置excel。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportTerminalsBindingDesktopsInfoNew
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportTerminalsBindingDesktopsInfoNewRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportTerminalsBindingDesktopsInfoNewResponse`
+        """
+        http_info = self._export_terminals_binding_desktops_info_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_terminals_binding_desktops_info_new_invoker(self, request):
+        http_info = self._export_terminals_binding_desktops_info_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_terminals_binding_desktops_info_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/terminals/binding-desktops/template/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportTerminalsBindingDesktopsInfoNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'computer_name' in local_var_params:
+            query_params.append(('computer_name', local_var_params['computer_name']))
+        if 'mac' in local_var_params:
+            query_params.append(('mac', local_var_params['mac']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 
@@ -17528,6 +20616,211 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def export_user_list_template(self, request):
+        r"""用户模板下载
+
+        该接口用于用户模板下载。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportUserListTemplate
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportUserListTemplateRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUserListTemplateResponse`
+        """
+        http_info = self._export_user_list_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_user_list_template_invoker(self, request):
+        http_info = self._export_user_list_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_user_list_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/users/desktop-users/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportUserListTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'os_type' in local_var_params:
+            query_params.append(('os_type', local_var_params['os_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def export_users_template(self, request):
+        r"""创建用户模板下载
+
+        该接口用于创建用户模板下载。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportUsersTemplate
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportUsersTemplateRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUsersTemplateResponse`
+        """
+        http_info = self._export_users_template_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_users_template_invoker(self, request):
+        http_info = self._export_users_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_users_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/users/template/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportUsersTemplateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'language' in local_var_params:
+            query_params.append(('language', local_var_params['language']))
+        if 'active_type' in local_var_params:
+            query_params.append(('active_type', local_var_params['active_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def import_user_list(self, request):
+        r"""导入用户列表
+
+        该接口用于导入用户列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ImportUserList
+        :type request: :class:`huaweicloudsdkworkspace.v2.ImportUserListRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ImportUserListResponse`
+        """
+        http_info = self._import_user_list_http_info(request)
+        return self._call_api(**http_info)
+
+    def import_user_list_invoker(self, request):
+        http_info = self._import_user_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_user_list_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/users/desktop-users/action/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportUserListResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'subnet_id' in local_var_params:
+            query_params.append(('subnet_id', local_var_params['subnet_id']))
+
+        header_params = {}
+
+        form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_otp_devices_by_user_id(self, request):
         r"""查询OTP设备
 
@@ -17696,6 +20989,9 @@ class WorkspaceClient(Client):
         query_params = []
         if 'user_name' in local_var_params:
             query_params.append(('user_name', local_var_params['user_name']))
+        if 'user_names' in local_var_params:
+            query_params.append(('user_names', local_var_params['user_names']))
+            collection_formats['user_names'] = 'csv'
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -17714,6 +21010,8 @@ class WorkspaceClient(Client):
             query_params.append(('is_query_total_desktops', local_var_params['is_query_total_desktops']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'domain' in local_var_params:
+            query_params.append(('domain', local_var_params['domain']))
 
         header_params = {}
 
@@ -18149,6 +21447,71 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def export_users_new(self, request):
+        r"""导出用户
+
+        以excel文件形式导出用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ExportUsersNew
+        :type request: :class:`huaweicloudsdkworkspace.v2.ExportUsersNewRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUsersNewResponse`
+        """
+        http_info = self._export_users_new_http_info(request)
+        return self._call_api(**http_info)
+
+    def export_users_new_invoker(self, request):
+        http_info = self._export_users_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_users_new_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/users/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportUsersNewResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def add_desktop_volumes(self, request):
         r"""增加桌面磁盘
 
@@ -18241,6 +21604,71 @@ class WorkspaceClient(Client):
             "resource_path": "/v2/{project_id}/volumes",
             "request_type": request.__class__.__name__,
             "response_type": "AddVolumesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_modify_qos_volumes(self, request):
+        r"""批量修改磁盘QOS
+
+        批量修改磁盘QOS。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for BatchModifyQosVolumes
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchModifyQosVolumesRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchModifyQosVolumesResponse`
+        """
+        http_info = self._batch_modify_qos_volumes_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_modify_qos_volumes_invoker(self, request):
+        http_info = self._batch_modify_qos_volumes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_modify_qos_volumes_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/volumes/batch-modify-qos",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchModifyQosVolumesResponse"
             }
 
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
@@ -18679,6 +22107,71 @@ class WorkspaceClient(Client):
 
         return http_info
 
+    def check_enterprise_id(self, request):
+        r"""检查企业ID是否已被使用
+
+        检查企业ID是否已被使用。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CheckEnterpriseId
+        :type request: :class:`huaweicloudsdkworkspace.v2.CheckEnterpriseIdRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.CheckEnterpriseIdResponse`
+        """
+        http_info = self._check_enterprise_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def check_enterprise_id_invoker(self, request):
+        http_info = self._check_enterprise_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_enterprise_id_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces/enterprise-ids/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckEnterpriseIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_workspaces(self, request):
         r"""查询云办公服务详情
 
@@ -18979,6 +22472,215 @@ class WorkspaceClient(Client):
         body = None
         if 'body' in local_var_params:
             body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_export_tasks(self, request):
+        r"""批量删除导出任务记录
+
+        批量删除导出任务记录。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteExportTasks
+        :type request: :class:`huaweicloudsdkworkspace.v2.DeleteExportTasksRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteExportTasksResponse`
+        """
+        http_info = self._delete_export_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_export_tasks_invoker(self, request):
+        http_info = self._delete_export_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_export_tasks_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/export-tasks/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteExportTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def download_export_file(self, request):
+        r"""下载导出的文件
+
+        下载导出的文件。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DownloadExportFile
+        :type request: :class:`huaweicloudsdkworkspace.v2.DownloadExportFileRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.DownloadExportFileResponse`
+        """
+        http_info = self._download_export_file_http_info(request)
+        return self._call_api(**http_info)
+
+    def download_export_file_invoker(self, request):
+        http_info = self._download_export_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_export_file_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/export-tasks/{task_id}/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadExportFileResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_export_tasks(self, request):
+        r"""查询导出任务列表
+
+        查询导出任务列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListExportTasks
+        :type request: :class:`huaweicloudsdkworkspace.v2.ListExportTasksRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.ListExportTasksResponse`
+        """
+        http_info = self._list_export_tasks_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_export_tasks_invoker(self, request):
+        http_info = self._list_export_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_export_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/export-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExportTasksResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'file_name' in local_var_params:
+            query_params.append(('file_name', local_var_params['file_name']))
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'is_download' in local_var_params:
+            query_params.append(('is_download', local_var_params['is_download']))
+        if 'sort_field' in local_var_params:
+            query_params.append(('sort_field', local_var_params['sort_field']))
+        if 'sort_type' in local_var_params:
+            query_params.append(('sort_type', local_var_params['sort_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
         if isinstance(request, SdkStreamRequest):
             body = request.get_file_stream()
 

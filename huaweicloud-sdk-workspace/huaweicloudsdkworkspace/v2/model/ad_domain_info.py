@@ -17,16 +17,20 @@ class AdDomainInfo:
     openapi_types = {
         'domain_type': 'str',
         'domain_admin_account': 'str',
-        'domain_password': 'str'
+        'domain_password': 'str',
+        'cba_enabled': 'bool',
+        'certificate_id': 'str'
     }
 
     attribute_map = {
         'domain_type': 'domain_type',
         'domain_admin_account': 'domain_admin_account',
-        'domain_password': 'domain_password'
+        'domain_password': 'domain_password',
+        'cba_enabled': 'cba_enabled',
+        'certificate_id': 'certificate_id'
     }
 
-    def __init__(self, domain_type=None, domain_admin_account=None, domain_password=None):
+    def __init__(self, domain_type=None, domain_admin_account=None, domain_password=None, cba_enabled=None, certificate_id=None):
         r"""AdDomainInfo
 
         The model defined in huaweicloud sdk
@@ -37,6 +41,10 @@ class AdDomainInfo:
         :type domain_admin_account: str
         :param domain_password: 域管理员账号密码。
         :type domain_password: str
+        :param cba_enabled: 是否开启智能卡认证。
+        :type cba_enabled: bool
+        :param certificate_id: 智能卡证书id。
+        :type certificate_id: str
         """
         
         
@@ -44,11 +52,16 @@ class AdDomainInfo:
         self._domain_type = None
         self._domain_admin_account = None
         self._domain_password = None
+        self._cba_enabled = None
+        self._certificate_id = None
         self.discriminator = None
 
         self.domain_type = domain_type
         self.domain_admin_account = domain_admin_account
         self.domain_password = domain_password
+        self.cba_enabled = cba_enabled
+        if certificate_id is not None:
+            self.certificate_id = certificate_id
 
     @property
     def domain_type(self):
@@ -115,6 +128,50 @@ class AdDomainInfo:
         :type domain_password: str
         """
         self._domain_password = domain_password
+
+    @property
+    def cba_enabled(self):
+        r"""Gets the cba_enabled of this AdDomainInfo.
+
+        是否开启智能卡认证。
+
+        :return: The cba_enabled of this AdDomainInfo.
+        :rtype: bool
+        """
+        return self._cba_enabled
+
+    @cba_enabled.setter
+    def cba_enabled(self, cba_enabled):
+        r"""Sets the cba_enabled of this AdDomainInfo.
+
+        是否开启智能卡认证。
+
+        :param cba_enabled: The cba_enabled of this AdDomainInfo.
+        :type cba_enabled: bool
+        """
+        self._cba_enabled = cba_enabled
+
+    @property
+    def certificate_id(self):
+        r"""Gets the certificate_id of this AdDomainInfo.
+
+        智能卡证书id。
+
+        :return: The certificate_id of this AdDomainInfo.
+        :rtype: str
+        """
+        return self._certificate_id
+
+    @certificate_id.setter
+    def certificate_id(self, certificate_id):
+        r"""Sets the certificate_id of this AdDomainInfo.
+
+        智能卡证书id。
+
+        :param certificate_id: The certificate_id of this AdDomainInfo.
+        :type certificate_id: str
+        """
+        self._certificate_id = certificate_id
 
     def to_dict(self):
         result = {}

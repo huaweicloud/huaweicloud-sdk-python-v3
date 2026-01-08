@@ -16,21 +16,29 @@ class AgenciesInfo:
 
     openapi_types = {
         'name': 'str',
+        'id': 'str',
+        'scene': 'str',
         'permissions': 'list[AgenciesPermissionInfo]'
     }
 
     attribute_map = {
         'name': 'name',
+        'id': 'id',
+        'scene': 'scene',
         'permissions': 'permissions'
     }
 
-    def __init__(self, name=None, permissions=None):
+    def __init__(self, name=None, id=None, scene=None, permissions=None):
         r"""AgenciesInfo
 
         The model defined in huaweicloud sdk
 
         :param name: 名称。
         :type name: str
+        :param id: 委托ID。
+        :type id: str
+        :param scene: 委托场景。
+        :type scene: str
         :param permissions: 委托权限信息。
         :type permissions: list[:class:`huaweicloudsdkworkspace.v2.AgenciesPermissionInfo`]
         """
@@ -38,11 +46,17 @@ class AgenciesInfo:
         
 
         self._name = None
+        self._id = None
+        self._scene = None
         self._permissions = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
+        if id is not None:
+            self.id = id
+        if scene is not None:
+            self.scene = scene
         if permissions is not None:
             self.permissions = permissions
 
@@ -67,6 +81,50 @@ class AgenciesInfo:
         :type name: str
         """
         self._name = name
+
+    @property
+    def id(self):
+        r"""Gets the id of this AgenciesInfo.
+
+        委托ID。
+
+        :return: The id of this AgenciesInfo.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this AgenciesInfo.
+
+        委托ID。
+
+        :param id: The id of this AgenciesInfo.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def scene(self):
+        r"""Gets the scene of this AgenciesInfo.
+
+        委托场景。
+
+        :return: The scene of this AgenciesInfo.
+        :rtype: str
+        """
+        return self._scene
+
+    @scene.setter
+    def scene(self, scene):
+        r"""Sets the scene of this AgenciesInfo.
+
+        委托场景。
+
+        :param scene: The scene of this AgenciesInfo.
+        :type scene: str
+        """
+        self._scene = scene
 
     @property
     def permissions(self):

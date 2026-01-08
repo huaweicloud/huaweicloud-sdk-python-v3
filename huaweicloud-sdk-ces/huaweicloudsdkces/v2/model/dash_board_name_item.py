@@ -27,7 +27,7 @@ class DashBoardNameItem:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_name: **参数描述**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
+        :param dashboard_name: **参数解释**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
         :type dashboard_name: str
         """
         
@@ -43,7 +43,7 @@ class DashBoardNameItem:
     def dashboard_name(self):
         r"""Gets the dashboard_name of this DashBoardNameItem.
 
-        **参数描述**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
+        **参数解释**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
 
         :return: The dashboard_name of this DashBoardNameItem.
         :rtype: str
@@ -54,7 +54,7 @@ class DashBoardNameItem:
     def dashboard_name(self, dashboard_name):
         r"""Sets the dashboard_name of this DashBoardNameItem.
 
-        **参数描述**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
+        **参数解释**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
 
         :param dashboard_name: The dashboard_name of this DashBoardNameItem.
         :type dashboard_name: str

@@ -17,16 +17,18 @@ class RemoveNodesTask:
     openapi_types = {
         'api_version': 'str',
         'kind': 'str',
-        'spec': 'RemoveNodesSpec'
+        'spec': 'RemoveNodesSpec',
+        'status': 'TaskStatus'
     }
 
     attribute_map = {
         'api_version': 'apiVersion',
         'kind': 'kind',
-        'spec': 'spec'
+        'spec': 'spec',
+        'status': 'status'
     }
 
-    def __init__(self, api_version=None, kind=None, spec=None):
+    def __init__(self, api_version=None, kind=None, spec=None, status=None):
         r"""RemoveNodesTask
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class RemoveNodesTask:
         :type kind: str
         :param spec: 
         :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
+        :param status: 
+        :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`
         """
         
         
@@ -44,6 +48,7 @@ class RemoveNodesTask:
         self._api_version = None
         self._kind = None
         self._spec = None
+        self._status = None
         self.discriminator = None
 
         if api_version is not None:
@@ -51,6 +56,8 @@ class RemoveNodesTask:
         if kind is not None:
             self.kind = kind
         self.spec = spec
+        if status is not None:
+            self.status = status
 
     @property
     def api_version(self):
@@ -113,6 +120,24 @@ class RemoveNodesTask:
         :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
         """
         self._spec = spec
+
+    @property
+    def status(self):
+        r"""Gets the status of this RemoveNodesTask.
+
+        :return: The status of this RemoveNodesTask.
+        :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        r"""Sets the status of this RemoveNodesTask.
+
+        :param status: The status of this RemoveNodesTask.
+        :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`
+        """
+        self._status = status
 
     def to_dict(self):
         result = {}

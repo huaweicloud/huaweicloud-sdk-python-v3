@@ -27,7 +27,7 @@ class DeleteResourceGroupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\&quot;rg\&quot;开头，后面跟着22个字母或数字。 **默认取值** 不涉及。
+        :param group_id: **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\&quot;rg\&quot;开头，后面跟着22个字母或数字。 **默认取值** 不涉及。 
         :type group_id: str
         """
         
@@ -42,7 +42,7 @@ class DeleteResourceGroupRequest:
     def group_id(self):
         r"""Gets the group_id of this DeleteResourceGroupRequest.
 
-        **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字。 **默认取值** 不涉及。
+        **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字。 **默认取值** 不涉及。 
 
         :return: The group_id of this DeleteResourceGroupRequest.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteResourceGroupRequest:
     def group_id(self, group_id):
         r"""Sets the group_id of this DeleteResourceGroupRequest.
 
-        **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字。 **默认取值** 不涉及。
+        **参数解释** 资源分组ID。 **约束限制** 不涉及。 **取值范围** 以\"rg\"开头，后面跟着22个字母或数字。 **默认取值** 不涉及。 
 
         :param group_id: The group_id of this DeleteResourceGroupRequest.
         :type group_id: str

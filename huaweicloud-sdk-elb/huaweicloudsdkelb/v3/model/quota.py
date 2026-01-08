@@ -29,9 +29,9 @@ class Quota:
         'ipgroup': 'int',
         'ipgroup_bindings': 'int',
         'ipgroup_max_length': 'int',
+        'ipgroups_per_listener': 'int',
         'security_policy': 'int',
         'listeners_per_loadbalancer': 'int',
-        'ipgroups_per_listener': 'int',
         'pools_per_l7policy': 'int',
         'l7policies_per_listener': 'int',
         'free_instance_members_per_pool': 'int',
@@ -53,16 +53,16 @@ class Quota:
         'ipgroup': 'ipgroup',
         'ipgroup_bindings': 'ipgroup_bindings',
         'ipgroup_max_length': 'ipgroup_max_length',
+        'ipgroups_per_listener': 'ipgroups_per_listener',
         'security_policy': 'security_policy',
         'listeners_per_loadbalancer': 'listeners_per_loadbalancer',
-        'ipgroups_per_listener': 'ipgroups_per_listener',
         'pools_per_l7policy': 'pools_per_l7policy',
         'l7policies_per_listener': 'l7policies_per_listener',
         'free_instance_members_per_pool': 'free_instance_members_per_pool',
         'free_instance_listeners_per_loadbalancer': 'free_instance_listeners_per_loadbalancer'
     }
 
-    def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, condition_per_policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None, listeners_per_pool=None, ipgroup=None, ipgroup_bindings=None, ipgroup_max_length=None, security_policy=None, listeners_per_loadbalancer=None, ipgroups_per_listener=None, pools_per_l7policy=None, l7policies_per_listener=None, free_instance_members_per_pool=None, free_instance_listeners_per_loadbalancer=None):
+    def __init__(self, project_id=None, loadbalancer=None, certificate=None, listener=None, l7policy=None, condition_per_policy=None, pool=None, healthmonitor=None, member=None, members_per_pool=None, listeners_per_pool=None, ipgroup=None, ipgroup_bindings=None, ipgroup_max_length=None, ipgroups_per_listener=None, security_policy=None, listeners_per_loadbalancer=None, pools_per_l7policy=None, l7policies_per_listener=None, free_instance_members_per_pool=None, free_instance_listeners_per_loadbalancer=None):
         r"""Quota
 
         The model defined in huaweicloud sdk
@@ -95,12 +95,12 @@ class Quota:
         :type ipgroup_bindings: int
         :param ipgroup_max_length: **参数解释**：单个监听器下关联的所有IP地址组的ip列表中的IP总数不能超过ipgroup_max_length。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type ipgroup_max_length: int
+        :param ipgroups_per_listener: **参数解释**：单个监听器下的IP地址组配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :type ipgroups_per_listener: int
         :param security_policy: **参数解释**：自定义安全策略配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type security_policy: int
         :param listeners_per_loadbalancer: **参数解释**：单个LB实例下的监听器配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  &gt; 当前单个LB下监听器配额实际未限制，但建议不要超过默认配额。
         :type listeners_per_loadbalancer: int
-        :param ipgroups_per_listener: **参数解释**：单个监听器下的IP地址组配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
-        :type ipgroups_per_listener: int
         :param pools_per_l7policy: **参数解释**：单个转发策略下的后端服务器组配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type pools_per_l7policy: int
         :param l7policies_per_listener: **参数解释**：单个监听器下的转发策略配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
@@ -127,9 +127,9 @@ class Quota:
         self._ipgroup = None
         self._ipgroup_bindings = None
         self._ipgroup_max_length = None
+        self._ipgroups_per_listener = None
         self._security_policy = None
         self._listeners_per_loadbalancer = None
-        self._ipgroups_per_listener = None
         self._pools_per_l7policy = None
         self._l7policies_per_listener = None
         self._free_instance_members_per_pool = None
@@ -150,9 +150,9 @@ class Quota:
         self.ipgroup = ipgroup
         self.ipgroup_bindings = ipgroup_bindings
         self.ipgroup_max_length = ipgroup_max_length
+        self.ipgroups_per_listener = ipgroups_per_listener
         self.security_policy = security_policy
         self.listeners_per_loadbalancer = listeners_per_loadbalancer
-        self.ipgroups_per_listener = ipgroups_per_listener
         self.pools_per_l7policy = pools_per_l7policy
         self.l7policies_per_listener = l7policies_per_listener
         self.free_instance_members_per_pool = free_instance_members_per_pool
@@ -467,6 +467,28 @@ class Quota:
         self._ipgroup_max_length = ipgroup_max_length
 
     @property
+    def ipgroups_per_listener(self):
+        r"""Gets the ipgroups_per_listener of this Quota.
+
+        **参数解释**：单个监听器下的IP地址组配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :return: The ipgroups_per_listener of this Quota.
+        :rtype: int
+        """
+        return self._ipgroups_per_listener
+
+    @ipgroups_per_listener.setter
+    def ipgroups_per_listener(self, ipgroups_per_listener):
+        r"""Sets the ipgroups_per_listener of this Quota.
+
+        **参数解释**：单个监听器下的IP地址组配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+
+        :param ipgroups_per_listener: The ipgroups_per_listener of this Quota.
+        :type ipgroups_per_listener: int
+        """
+        self._ipgroups_per_listener = ipgroups_per_listener
+
+    @property
     def security_policy(self):
         r"""Gets the security_policy of this Quota.
 
@@ -509,28 +531,6 @@ class Quota:
         :type listeners_per_loadbalancer: int
         """
         self._listeners_per_loadbalancer = listeners_per_loadbalancer
-
-    @property
-    def ipgroups_per_listener(self):
-        r"""Gets the ipgroups_per_listener of this Quota.
-
-        **参数解释**：单个监听器下的IP地址组配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
-
-        :return: The ipgroups_per_listener of this Quota.
-        :rtype: int
-        """
-        return self._ipgroups_per_listener
-
-    @ipgroups_per_listener.setter
-    def ipgroups_per_listener(self, ipgroups_per_listener):
-        r"""Sets the ipgroups_per_listener of this Quota.
-
-        **参数解释**：单个监听器下的IP地址组配额。  **取值范围**： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
-
-        :param ipgroups_per_listener: The ipgroups_per_listener of this Quota.
-        :type ipgroups_per_listener: int
-        """
-        self._ipgroups_per_listener = ipgroups_per_listener
 
     @property
     def pools_per_l7policy(self):

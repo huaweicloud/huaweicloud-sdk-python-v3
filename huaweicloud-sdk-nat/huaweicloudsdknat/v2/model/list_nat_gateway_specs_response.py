@@ -28,7 +28,7 @@ class ListNatGatewaySpecsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param specs: 可创建的NAT网关实例列表  取值范围：  “1”：小型，SNAT最大连接数10000  “2”：中型，SNAT最大连接数50000  “3”：大型，SNAT最大连接数200000  “4”：超大型，SNAT最大连接数1000000  “5”：企业型，SNAT最大连接数10000000 
+        :param specs: 可创建的NAT网关实例列表 取值范围： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
         :type specs: list[str]
         """
         
@@ -44,7 +44,7 @@ class ListNatGatewaySpecsResponse(SdkResponse):
     def specs(self):
         r"""Gets the specs of this ListNatGatewaySpecsResponse.
 
-        可创建的NAT网关实例列表  取值范围：  “1”：小型，SNAT最大连接数10000  “2”：中型，SNAT最大连接数50000  “3”：大型，SNAT最大连接数200000  “4”：超大型，SNAT最大连接数1000000  “5”：企业型，SNAT最大连接数10000000 
+        可创建的NAT网关实例列表 取值范围： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
 
         :return: The specs of this ListNatGatewaySpecsResponse.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class ListNatGatewaySpecsResponse(SdkResponse):
     def specs(self, specs):
         r"""Sets the specs of this ListNatGatewaySpecsResponse.
 
-        可创建的NAT网关实例列表  取值范围：  “1”：小型，SNAT最大连接数10000  “2”：中型，SNAT最大连接数50000  “3”：大型，SNAT最大连接数200000  “4”：超大型，SNAT最大连接数1000000  “5”：企业型，SNAT最大连接数10000000 
+        可创建的NAT网关实例列表 取值范围： - 1：小型，SNAT最大连接数10000 - 2：中型，SNAT最大连接数50000 - 3：大型，SNAT最大连接数200000 - 4：超大型，SNAT最大连接数1000000 - 5：企业型，SNAT最大连接数10000000 
 
         :param specs: The specs of this ListNatGatewaySpecsResponse.
         :type specs: list[str]

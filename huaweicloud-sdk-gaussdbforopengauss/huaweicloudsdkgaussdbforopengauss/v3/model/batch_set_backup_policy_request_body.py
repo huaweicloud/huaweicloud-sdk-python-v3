@@ -16,7 +16,7 @@ class BatchSetBackupPolicyRequestBody:
 
     openapi_types = {
         'instance_ids': 'list[str]',
-        'backup_policy': 'BackupPolicyInfo'
+        'backup_policy': 'BatchSetBackupPolicyOption'
     }
 
     attribute_map = {
@@ -32,7 +32,7 @@ class BatchSetBackupPolicyRequestBody:
         :param instance_ids: **参数解释**: 实例ID列表。 **约束限制**: 列表中的实例ID需严格匹配UUID规则，只能由英文字母、数字组成，且长度为36个字符。
         :type instance_ids: list[str]
         :param backup_policy: 
-        :type backup_policy: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfo`
+        :type backup_policy: :class:`huaweicloudsdkgaussdbforopengauss.v3.BatchSetBackupPolicyOption`
         """
         
         
@@ -71,7 +71,7 @@ class BatchSetBackupPolicyRequestBody:
         r"""Gets the backup_policy of this BatchSetBackupPolicyRequestBody.
 
         :return: The backup_policy of this BatchSetBackupPolicyRequestBody.
-        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfo`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.BatchSetBackupPolicyOption`
         """
         return self._backup_policy
 
@@ -80,7 +80,7 @@ class BatchSetBackupPolicyRequestBody:
         r"""Sets the backup_policy of this BatchSetBackupPolicyRequestBody.
 
         :param backup_policy: The backup_policy of this BatchSetBackupPolicyRequestBody.
-        :type backup_policy: :class:`huaweicloudsdkgaussdbforopengauss.v3.BackupPolicyInfo`
+        :type backup_policy: :class:`huaweicloudsdkgaussdbforopengauss.v3.BatchSetBackupPolicyOption`
         """
         self._backup_policy = backup_policy
 

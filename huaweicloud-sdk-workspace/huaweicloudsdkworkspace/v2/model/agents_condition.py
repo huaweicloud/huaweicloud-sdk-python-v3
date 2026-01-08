@@ -59,7 +59,7 @@ class AgentsCondition:
         :type enterprise_project_id: str
         :param process: 桌面任务进度， 取值范围0-100以及null，null表示该桌面无任务，0-100表明该任务进度的百分比。
         :type process: int
-        :param agent_info: 单个桌面内的agent安装情况。
+        :param agent_info: 单个桌面内的监控插件安装情况。
         :type agent_info: list[:class:`huaweicloudsdkworkspace.v2.AgentInfo`]
         """
         
@@ -275,7 +275,7 @@ class AgentsCondition:
     def agent_info(self):
         r"""Gets the agent_info of this AgentsCondition.
 
-        单个桌面内的agent安装情况。
+        单个桌面内的监控插件安装情况。
 
         :return: The agent_info of this AgentsCondition.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.AgentInfo`]
@@ -286,7 +286,7 @@ class AgentsCondition:
     def agent_info(self, agent_info):
         r"""Sets the agent_info of this AgentsCondition.
 
-        单个桌面内的agent安装情况。
+        单个桌面内的监控插件安装情况。
 
         :param agent_info: The agent_info of this AgentsCondition.
         :type agent_info: list[:class:`huaweicloudsdkworkspace.v2.AgentInfo`]

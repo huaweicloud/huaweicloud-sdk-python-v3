@@ -17,6 +17,7 @@ class AttachInstancesUserInfo:
     openapi_types = {
         'user_id': 'str',
         'user_name': 'str',
+        'domain': 'str',
         'user_group': 'str',
         'type': 'str'
     }
@@ -24,11 +25,12 @@ class AttachInstancesUserInfo:
     attribute_map = {
         'user_id': 'user_id',
         'user_name': 'user_name',
+        'domain': 'domain',
         'user_group': 'user_group',
         'type': 'type'
     }
 
-    def __init__(self, user_id=None, user_name=None, user_group=None, type=None):
+    def __init__(self, user_id=None, user_name=None, domain=None, user_group=None, type=None):
         r"""AttachInstancesUserInfo
 
         The model defined in huaweicloud sdk
@@ -37,6 +39,8 @@ class AttachInstancesUserInfo:
         :type user_id: str
         :param user_name: 桌面分配对象的名称，当type类型USER时填写用户名字；当type类型GROUP时填写用户组名称。 - 当type类型USER时：桌面所属的用户，当桌面分配成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-64]。Windows桌面用户最长支持20个字符，Linux桌面用户最长支持64个字符。后端服务会校验用户名是否存在，并且用户名不能与机器名重复。 - 当type类型GROUP时：只能为中文、字母、数字及特殊符号-_。
         :type user_name: str
+        :param domain: 用户所属域。
+        :type domain: str
         :param user_group: 桌面用户所属的用户组。 - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
         :type user_group: str
         :param type: 对象类型，可选值为： - USER：用户。 - GROUP：用户组。
@@ -47,6 +51,7 @@ class AttachInstancesUserInfo:
 
         self._user_id = None
         self._user_name = None
+        self._domain = None
         self._user_group = None
         self._type = None
         self.discriminator = None
@@ -55,6 +60,8 @@ class AttachInstancesUserInfo:
             self.user_id = user_id
         if user_name is not None:
             self.user_name = user_name
+        if domain is not None:
+            self.domain = domain
         if user_group is not None:
             self.user_group = user_group
         if type is not None:
@@ -103,6 +110,28 @@ class AttachInstancesUserInfo:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this AttachInstancesUserInfo.
+
+        用户所属域。
+
+        :return: The domain of this AttachInstancesUserInfo.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this AttachInstancesUserInfo.
+
+        用户所属域。
+
+        :param domain: The domain of this AttachInstancesUserInfo.
+        :type domain: str
+        """
+        self._domain = domain
 
     @property
     def user_group(self):

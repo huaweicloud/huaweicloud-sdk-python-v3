@@ -18,22 +18,24 @@ class ResizeDesktopReq:
         'desktops': 'list[ResizeDesktopData]',
         'product_id': 'str',
         'mode': 'str',
-        'auto_placement': 'str'
+        'auto_placement': 'str',
+        'desktop_pool_id': 'str'
     }
 
     attribute_map = {
         'desktops': 'desktops',
         'product_id': 'product_id',
         'mode': 'mode',
-        'auto_placement': 'auto_placement'
+        'auto_placement': 'auto_placement',
+        'desktop_pool_id': 'desktop_pool_id'
     }
 
-    def __init__(self, desktops=None, product_id=None, mode=None, auto_placement=None):
+    def __init__(self, desktops=None, product_id=None, mode=None, auto_placement=None, desktop_pool_id=None):
         r"""ResizeDesktopReq
 
         The model defined in huaweicloud sdk
 
-        :param desktops: 桌面数据。支持批量按需类型桌面变更为同一规格。
+        :param desktops: 桌面数据。支持批量将桌面变更为同一规格。
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopData`]
         :param product_id: 套餐id。批量变更时，则变更为同一规格的虚拟机。
         :type product_id: str
@@ -41,6 +43,8 @@ class ResizeDesktopReq:
         :type mode: str
         :param auto_placement: 是否自动放置，专属主机桌面变更规格时使用，默认是off关闭自动放置，on表示开启自动放置。
         :type auto_placement: str
+        :param desktop_pool_id: 桌面池id。
+        :type desktop_pool_id: str
         """
         
         
@@ -49,6 +53,7 @@ class ResizeDesktopReq:
         self._product_id = None
         self._mode = None
         self._auto_placement = None
+        self._desktop_pool_id = None
         self.discriminator = None
 
         self.desktops = desktops
@@ -56,12 +61,14 @@ class ResizeDesktopReq:
         self.mode = mode
         if auto_placement is not None:
             self.auto_placement = auto_placement
+        if desktop_pool_id is not None:
+            self.desktop_pool_id = desktop_pool_id
 
     @property
     def desktops(self):
         r"""Gets the desktops of this ResizeDesktopReq.
 
-        桌面数据。支持批量按需类型桌面变更为同一规格。
+        桌面数据。支持批量将桌面变更为同一规格。
 
         :return: The desktops of this ResizeDesktopReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopData`]
@@ -72,7 +79,7 @@ class ResizeDesktopReq:
     def desktops(self, desktops):
         r"""Sets the desktops of this ResizeDesktopReq.
 
-        桌面数据。支持批量按需类型桌面变更为同一规格。
+        桌面数据。支持批量将桌面变更为同一规格。
 
         :param desktops: The desktops of this ResizeDesktopReq.
         :type desktops: list[:class:`huaweicloudsdkworkspace.v2.ResizeDesktopData`]
@@ -144,6 +151,28 @@ class ResizeDesktopReq:
         :type auto_placement: str
         """
         self._auto_placement = auto_placement
+
+    @property
+    def desktop_pool_id(self):
+        r"""Gets the desktop_pool_id of this ResizeDesktopReq.
+
+        桌面池id。
+
+        :return: The desktop_pool_id of this ResizeDesktopReq.
+        :rtype: str
+        """
+        return self._desktop_pool_id
+
+    @desktop_pool_id.setter
+    def desktop_pool_id(self, desktop_pool_id):
+        r"""Sets the desktop_pool_id of this ResizeDesktopReq.
+
+        桌面池id。
+
+        :param desktop_pool_id: The desktop_pool_id of this ResizeDesktopReq.
+        :type desktop_pool_id: str
+        """
+        self._desktop_pool_id = desktop_pool_id
 
     def to_dict(self):
         result = {}

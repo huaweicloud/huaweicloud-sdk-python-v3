@@ -22,6 +22,7 @@ class ListDesktopUsageMetricRequest:
         'max_idle_days': 'int',
         'usage_min_hours': 'int',
         'usage_max_hours': 'int',
+        'enterprise_project_id': 'str',
         'sort_field': 'str',
         'sort_type': 'str',
         'offset': 'int',
@@ -36,13 +37,14 @@ class ListDesktopUsageMetricRequest:
         'max_idle_days': 'max_idle_days',
         'usage_min_hours': 'usage_min_hours',
         'usage_max_hours': 'usage_max_hours',
+        'enterprise_project_id': 'enterprise_project_id',
         'sort_field': 'sort_field',
         'sort_type': 'sort_type',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, start_time=None, end_time=None, resource_name=None, min_idle_days=None, max_idle_days=None, usage_min_hours=None, usage_max_hours=None, sort_field=None, sort_type=None, offset=None, limit=None):
+    def __init__(self, start_time=None, end_time=None, resource_name=None, min_idle_days=None, max_idle_days=None, usage_min_hours=None, usage_max_hours=None, enterprise_project_id=None, sort_field=None, sort_type=None, offset=None, limit=None):
         r"""ListDesktopUsageMetricRequest
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class ListDesktopUsageMetricRequest:
         :type usage_min_hours: int
         :param usage_max_hours: 使用时长(hour)最大值(必须大于等于usage_min_hours)。
         :type usage_max_hours: int
+        :param enterprise_project_id: 企业项目ID。
+        :type enterprise_project_id: str
         :param sort_field: 按照指标进行排序 * &#x60;desktop_usage&#x60; -  按照桌面使用时长排序 * &#x60;desktop_idle_duration&#x60; -  按照桌面空闲周期排序
         :type sort_field: str
         :param sort_type: 按照指标进行排序的方向;需配合sort_field一起使用 * &#x60;DESC&#x60; - 降序返回数据 * &#x60;ASC&#x60; -  升序返回数据
@@ -80,6 +84,7 @@ class ListDesktopUsageMetricRequest:
         self._max_idle_days = None
         self._usage_min_hours = None
         self._usage_max_hours = None
+        self._enterprise_project_id = None
         self._sort_field = None
         self._sort_type = None
         self._offset = None
@@ -98,6 +103,8 @@ class ListDesktopUsageMetricRequest:
             self.usage_min_hours = usage_min_hours
         if usage_max_hours is not None:
             self.usage_max_hours = usage_max_hours
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if sort_field is not None:
             self.sort_field = sort_field
         if sort_type is not None:
@@ -260,6 +267,28 @@ class ListDesktopUsageMetricRequest:
         :type usage_max_hours: int
         """
         self._usage_max_hours = usage_max_hours
+
+    @property
+    def enterprise_project_id(self):
+        r"""Gets the enterprise_project_id of this ListDesktopUsageMetricRequest.
+
+        企业项目ID。
+
+        :return: The enterprise_project_id of this ListDesktopUsageMetricRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        r"""Sets the enterprise_project_id of this ListDesktopUsageMetricRequest.
+
+        企业项目ID。
+
+        :param enterprise_project_id: The enterprise_project_id of this ListDesktopUsageMetricRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def sort_field(self):

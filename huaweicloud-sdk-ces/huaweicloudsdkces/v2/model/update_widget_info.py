@@ -47,21 +47,21 @@ class UpdateWidgetInfo:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 视图分区id
+        :param group_id: **参数解释** 视图分区id **约束限制** 不涉及 **取值范围** 字符串必须以dg开头，后跟22个字母和数字，总长度为24个字符或者为default，default代表不分组 **默认取值** 不涉及 
         :type group_id: str
-        :param widget_id: 视图id
+        :param widget_id: **参数解释** 视图id **约束限制** 不涉及 **取值范围** 字符串必须以wg开头，后跟22个字母和数字，总长度为24个字符 **默认取值** 不涉及 
         :type widget_id: str
-        :param metrics: 指标列表
+        :param metrics: **参数解释** 指标列表 **约束限制** 包含的指标对象个数为[1,200] 
         :type metrics: list[:class:`huaweicloudsdkces.v2.WidgetMetric`]
-        :param title: 监控视图标题
+        :param title: **参数解释** 监控视图标题 **约束限制** 不涉及 **取值范围** 字符串可以包含中文字符，字母，数字，下划线（_），横线（-），冒号（:），分号（;），左圆括号（(），右圆括号（)），句号（.），波浪线（~）， 中文左括号（（），中文右括号（））长度为[1,128]个字符 **默认取值** 不涉及 
         :type title: str
-        :param threshold: 监控视图指标的阈值
+        :param threshold: **参数解释** 监控视图指标的阈值 **约束限制** 不涉及 **取值范围** 阈值为[0,1.7976931348623157e+308] **默认取值** 不涉及 
         :type threshold: float
-        :param threshold_enabled: 阈值是否展示，true:展示，false:不展示
+        :param threshold_enabled: **参数解释** 阈值是否展示 **约束限制** 不涉及 **取值范围** - true 展示 - false 不展示 **默认取值** 不涉及 
         :type threshold_enabled: bool
-        :param view: 监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
+        :param view: **参数解释** 监控视图图表类型 **约束限制** 不涉及 **取值范围** 枚举值： - bar 条形图 - line 折线图 - bar_chart 柱状图 - table 表格 - circular_bar 环形柱状图 - area_chart 面积图 **默认取值** 不涉及 
         :type view: str
-        :param metric_display_mode: 指标展示类型，single 单指标展示，multiple 多指标展示
+        :param metric_display_mode: **参数解释** 指标展示类型 **约束限制** 不涉及 **取值范围** 枚举值： - single 单指标展示 - multiple 多指标展示 **默认取值** 不涉及 
         :type metric_display_mode: str
         :param properties: 
         :type properties: :class:`huaweicloudsdkces.v2.UpdateWidgetInfoProperties`
@@ -112,7 +112,7 @@ class UpdateWidgetInfo:
     def group_id(self):
         r"""Gets the group_id of this UpdateWidgetInfo.
 
-        视图分区id
+        **参数解释** 视图分区id **约束限制** 不涉及 **取值范围** 字符串必须以dg开头，后跟22个字母和数字，总长度为24个字符或者为default，default代表不分组 **默认取值** 不涉及 
 
         :return: The group_id of this UpdateWidgetInfo.
         :rtype: str
@@ -123,7 +123,7 @@ class UpdateWidgetInfo:
     def group_id(self, group_id):
         r"""Sets the group_id of this UpdateWidgetInfo.
 
-        视图分区id
+        **参数解释** 视图分区id **约束限制** 不涉及 **取值范围** 字符串必须以dg开头，后跟22个字母和数字，总长度为24个字符或者为default，default代表不分组 **默认取值** 不涉及 
 
         :param group_id: The group_id of this UpdateWidgetInfo.
         :type group_id: str
@@ -134,7 +134,7 @@ class UpdateWidgetInfo:
     def widget_id(self):
         r"""Gets the widget_id of this UpdateWidgetInfo.
 
-        视图id
+        **参数解释** 视图id **约束限制** 不涉及 **取值范围** 字符串必须以wg开头，后跟22个字母和数字，总长度为24个字符 **默认取值** 不涉及 
 
         :return: The widget_id of this UpdateWidgetInfo.
         :rtype: str
@@ -145,7 +145,7 @@ class UpdateWidgetInfo:
     def widget_id(self, widget_id):
         r"""Sets the widget_id of this UpdateWidgetInfo.
 
-        视图id
+        **参数解释** 视图id **约束限制** 不涉及 **取值范围** 字符串必须以wg开头，后跟22个字母和数字，总长度为24个字符 **默认取值** 不涉及 
 
         :param widget_id: The widget_id of this UpdateWidgetInfo.
         :type widget_id: str
@@ -156,7 +156,7 @@ class UpdateWidgetInfo:
     def metrics(self):
         r"""Gets the metrics of this UpdateWidgetInfo.
 
-        指标列表
+        **参数解释** 指标列表 **约束限制** 包含的指标对象个数为[1,200] 
 
         :return: The metrics of this UpdateWidgetInfo.
         :rtype: list[:class:`huaweicloudsdkces.v2.WidgetMetric`]
@@ -167,7 +167,7 @@ class UpdateWidgetInfo:
     def metrics(self, metrics):
         r"""Sets the metrics of this UpdateWidgetInfo.
 
-        指标列表
+        **参数解释** 指标列表 **约束限制** 包含的指标对象个数为[1,200] 
 
         :param metrics: The metrics of this UpdateWidgetInfo.
         :type metrics: list[:class:`huaweicloudsdkces.v2.WidgetMetric`]
@@ -178,7 +178,7 @@ class UpdateWidgetInfo:
     def title(self):
         r"""Gets the title of this UpdateWidgetInfo.
 
-        监控视图标题
+        **参数解释** 监控视图标题 **约束限制** 不涉及 **取值范围** 字符串可以包含中文字符，字母，数字，下划线（_），横线（-），冒号（:），分号（;），左圆括号（(），右圆括号（)），句号（.），波浪线（~）， 中文左括号（（），中文右括号（））长度为[1,128]个字符 **默认取值** 不涉及 
 
         :return: The title of this UpdateWidgetInfo.
         :rtype: str
@@ -189,7 +189,7 @@ class UpdateWidgetInfo:
     def title(self, title):
         r"""Sets the title of this UpdateWidgetInfo.
 
-        监控视图标题
+        **参数解释** 监控视图标题 **约束限制** 不涉及 **取值范围** 字符串可以包含中文字符，字母，数字，下划线（_），横线（-），冒号（:），分号（;），左圆括号（(），右圆括号（)），句号（.），波浪线（~）， 中文左括号（（），中文右括号（））长度为[1,128]个字符 **默认取值** 不涉及 
 
         :param title: The title of this UpdateWidgetInfo.
         :type title: str
@@ -200,7 +200,7 @@ class UpdateWidgetInfo:
     def threshold(self):
         r"""Gets the threshold of this UpdateWidgetInfo.
 
-        监控视图指标的阈值
+        **参数解释** 监控视图指标的阈值 **约束限制** 不涉及 **取值范围** 阈值为[0,1.7976931348623157e+308] **默认取值** 不涉及 
 
         :return: The threshold of this UpdateWidgetInfo.
         :rtype: float
@@ -211,7 +211,7 @@ class UpdateWidgetInfo:
     def threshold(self, threshold):
         r"""Sets the threshold of this UpdateWidgetInfo.
 
-        监控视图指标的阈值
+        **参数解释** 监控视图指标的阈值 **约束限制** 不涉及 **取值范围** 阈值为[0,1.7976931348623157e+308] **默认取值** 不涉及 
 
         :param threshold: The threshold of this UpdateWidgetInfo.
         :type threshold: float
@@ -222,7 +222,7 @@ class UpdateWidgetInfo:
     def threshold_enabled(self):
         r"""Gets the threshold_enabled of this UpdateWidgetInfo.
 
-        阈值是否展示，true:展示，false:不展示
+        **参数解释** 阈值是否展示 **约束限制** 不涉及 **取值范围** - true 展示 - false 不展示 **默认取值** 不涉及 
 
         :return: The threshold_enabled of this UpdateWidgetInfo.
         :rtype: bool
@@ -233,7 +233,7 @@ class UpdateWidgetInfo:
     def threshold_enabled(self, threshold_enabled):
         r"""Sets the threshold_enabled of this UpdateWidgetInfo.
 
-        阈值是否展示，true:展示，false:不展示
+        **参数解释** 阈值是否展示 **约束限制** 不涉及 **取值范围** - true 展示 - false 不展示 **默认取值** 不涉及 
 
         :param threshold_enabled: The threshold_enabled of this UpdateWidgetInfo.
         :type threshold_enabled: bool
@@ -244,7 +244,7 @@ class UpdateWidgetInfo:
     def view(self):
         r"""Gets the view of this UpdateWidgetInfo.
 
-        监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
+        **参数解释** 监控视图图表类型 **约束限制** 不涉及 **取值范围** 枚举值： - bar 条形图 - line 折线图 - bar_chart 柱状图 - table 表格 - circular_bar 环形柱状图 - area_chart 面积图 **默认取值** 不涉及 
 
         :return: The view of this UpdateWidgetInfo.
         :rtype: str
@@ -255,7 +255,7 @@ class UpdateWidgetInfo:
     def view(self, view):
         r"""Sets the view of this UpdateWidgetInfo.
 
-        监控视图图表类型, bar条形图，line折线图，bar_chart柱状图，table表格，circular_bar环形柱状图，area_chart面积图
+        **参数解释** 监控视图图表类型 **约束限制** 不涉及 **取值范围** 枚举值： - bar 条形图 - line 折线图 - bar_chart 柱状图 - table 表格 - circular_bar 环形柱状图 - area_chart 面积图 **默认取值** 不涉及 
 
         :param view: The view of this UpdateWidgetInfo.
         :type view: str
@@ -266,7 +266,7 @@ class UpdateWidgetInfo:
     def metric_display_mode(self):
         r"""Gets the metric_display_mode of this UpdateWidgetInfo.
 
-        指标展示类型，single 单指标展示，multiple 多指标展示
+        **参数解释** 指标展示类型 **约束限制** 不涉及 **取值范围** 枚举值： - single 单指标展示 - multiple 多指标展示 **默认取值** 不涉及 
 
         :return: The metric_display_mode of this UpdateWidgetInfo.
         :rtype: str
@@ -277,7 +277,7 @@ class UpdateWidgetInfo:
     def metric_display_mode(self, metric_display_mode):
         r"""Sets the metric_display_mode of this UpdateWidgetInfo.
 
-        指标展示类型，single 单指标展示，multiple 多指标展示
+        **参数解释** 指标展示类型 **约束限制** 不涉及 **取值范围** 枚举值： - single 单指标展示 - multiple 多指标展示 **默认取值** 不涉及 
 
         :param metric_display_mode: The metric_display_mode of this UpdateWidgetInfo.
         :type metric_display_mode: str

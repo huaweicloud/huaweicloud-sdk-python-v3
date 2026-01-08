@@ -33,13 +33,13 @@ class CreateDashboardRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param dashboard_name: **参数描述**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
+        :param dashboard_name: **参数解释**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
         :type dashboard_name: str
         :param enterprise_id: **参数解释** 企业项目ID **约束限制** 不涉及 **取值范围** 只能包含小写字母、数字、“-”、“_”，可以自定义企业项目ID，长度为36个字符。也可以为0（代表默认企业项目ID）。 **默认取值** 不涉及 
         :type enterprise_id: str
-        :param dashboard_id: **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
+        :param dashboard_id: **参数解释**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
         :type dashboard_id: str
-        :param row_widget_num: **参数描述**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 **默认取值** 3 
+        :param row_widget_num: **参数解释**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 **默认取值** 3 
         :type row_widget_num: int
         """
         
@@ -64,7 +64,7 @@ class CreateDashboardRequestBody:
     def dashboard_name(self):
         r"""Gets the dashboard_name of this CreateDashboardRequestBody.
 
-        **参数描述**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
+        **参数解释**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
 
         :return: The dashboard_name of this CreateDashboardRequestBody.
         :rtype: str
@@ -75,7 +75,7 @@ class CreateDashboardRequestBody:
     def dashboard_name(self, dashboard_name):
         r"""Sets the dashboard_name of this CreateDashboardRequestBody.
 
-        **参数描述**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
+        **参数解释**： 自定义监控看板名称 **约束限制** 不涉及 **取值范围** 长度为[1,128]个字符，只允许中文、英文、数字0-9、_和- **默认取值** 不涉及 
 
         :param dashboard_name: The dashboard_name of this CreateDashboardRequestBody.
         :type dashboard_name: str
@@ -108,7 +108,7 @@ class CreateDashboardRequestBody:
     def dashboard_id(self):
         r"""Gets the dashboard_id of this CreateDashboardRequestBody.
 
-        **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
+        **参数解释**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
 
         :return: The dashboard_id of this CreateDashboardRequestBody.
         :rtype: str
@@ -119,7 +119,7 @@ class CreateDashboardRequestBody:
     def dashboard_id(self, dashboard_id):
         r"""Sets the dashboard_id of this CreateDashboardRequestBody.
 
-        **参数描述**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
+        **参数解释**： 监控看板id **约束限制** 不涉及 **取值范围** 以db开头，包含22个字母和数字，长度为24个字符 **默认取值** 不涉及 
 
         :param dashboard_id: The dashboard_id of this CreateDashboardRequestBody.
         :type dashboard_id: str
@@ -130,7 +130,7 @@ class CreateDashboardRequestBody:
     def row_widget_num(self):
         r"""Gets the row_widget_num of this CreateDashboardRequestBody.
 
-        **参数描述**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 **默认取值** 3 
+        **参数解释**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 **默认取值** 3 
 
         :return: The row_widget_num of this CreateDashboardRequestBody.
         :rtype: int
@@ -141,7 +141,7 @@ class CreateDashboardRequestBody:
     def row_widget_num(self, row_widget_num):
         r"""Sets the row_widget_num of this CreateDashboardRequestBody.
 
-        **参数描述**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 **默认取值** 3 
+        **参数解释**： 监控视图展示模式 **约束限制** 不涉及 **取值范围** - 0:表示自定义坐标 - 1:代表每行1个监控视图 - 2:代表每行2个监控视图 - 3:代表每行3个监控视图 **默认取值** 3 
 
         :param row_widget_num: The row_widget_num of this CreateDashboardRequestBody.
         :type row_widget_num: int

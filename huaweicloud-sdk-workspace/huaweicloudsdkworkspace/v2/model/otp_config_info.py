@@ -15,6 +15,7 @@ class OtpConfigInfo:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'enable': 'bool',
         'receive_mode': 'str',
         'auth_url': 'str',
@@ -22,10 +23,12 @@ class OtpConfigInfo:
         'app_secret': 'str',
         'auth_server_access_mode': 'str',
         'cert_content': 'str',
-        'apply_rule': 'ApplyRuleInfo'
+        'apply_rule': 'ApplyRuleInfo',
+        'apply_objects': 'list[ApplyObjects]'
     }
 
     attribute_map = {
+        'id': 'id',
         'enable': 'enable',
         'receive_mode': 'receive_mode',
         'auth_url': 'auth_url',
@@ -33,14 +36,17 @@ class OtpConfigInfo:
         'app_secret': 'app_secret',
         'auth_server_access_mode': 'auth_server_access_mode',
         'cert_content': 'cert_content',
-        'apply_rule': 'apply_rule'
+        'apply_rule': 'apply_rule',
+        'apply_objects': 'apply_objects'
     }
 
-    def __init__(self, enable=None, receive_mode=None, auth_url=None, app_id=None, app_secret=None, auth_server_access_mode=None, cert_content=None, apply_rule=None):
+    def __init__(self, id=None, enable=None, receive_mode=None, auth_url=None, app_id=None, app_secret=None, auth_server_access_mode=None, cert_content=None, apply_rule=None, apply_objects=None):
         r"""OtpConfigInfo
 
         The model defined in huaweicloud sdk
 
+        :param id: 认证id。
+        :type id: str
         :param enable: 是否启用。
         :type enable: bool
         :param receive_mode: 验证码接收模式 VMFA：虚拟MFA设备 HMFA：硬件MFA设备
@@ -57,10 +63,13 @@ class OtpConfigInfo:
         :type cert_content: str
         :param apply_rule: 
         :type apply_rule: :class:`huaweicloudsdkworkspace.v2.ApplyRuleInfo`
+        :param apply_objects: 要应用的用户/用户组列表。
+        :type apply_objects: list[:class:`huaweicloudsdkworkspace.v2.ApplyObjects`]
         """
         
         
 
+        self._id = None
         self._enable = None
         self._receive_mode = None
         self._auth_url = None
@@ -69,8 +78,11 @@ class OtpConfigInfo:
         self._auth_server_access_mode = None
         self._cert_content = None
         self._apply_rule = None
+        self._apply_objects = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if enable is not None:
             self.enable = enable
         if receive_mode is not None:
@@ -87,6 +99,30 @@ class OtpConfigInfo:
             self.cert_content = cert_content
         if apply_rule is not None:
             self.apply_rule = apply_rule
+        if apply_objects is not None:
+            self.apply_objects = apply_objects
+
+    @property
+    def id(self):
+        r"""Gets the id of this OtpConfigInfo.
+
+        认证id。
+
+        :return: The id of this OtpConfigInfo.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        r"""Sets the id of this OtpConfigInfo.
+
+        认证id。
+
+        :param id: The id of this OtpConfigInfo.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def enable(self):
@@ -259,6 +295,28 @@ class OtpConfigInfo:
         :type apply_rule: :class:`huaweicloudsdkworkspace.v2.ApplyRuleInfo`
         """
         self._apply_rule = apply_rule
+
+    @property
+    def apply_objects(self):
+        r"""Gets the apply_objects of this OtpConfigInfo.
+
+        要应用的用户/用户组列表。
+
+        :return: The apply_objects of this OtpConfigInfo.
+        :rtype: list[:class:`huaweicloudsdkworkspace.v2.ApplyObjects`]
+        """
+        return self._apply_objects
+
+    @apply_objects.setter
+    def apply_objects(self, apply_objects):
+        r"""Sets the apply_objects of this OtpConfigInfo.
+
+        要应用的用户/用户组列表。
+
+        :param apply_objects: The apply_objects of this OtpConfigInfo.
+        :type apply_objects: list[:class:`huaweicloudsdkworkspace.v2.ApplyObjects`]
+        """
+        self._apply_objects = apply_objects
 
     def to_dict(self):
         result = {}

@@ -50,7 +50,9 @@ class FlinkJobConfig:
         'flink_version': 'str',
         'operator_config': 'str',
         'static_estimator_config': 'str',
-        'real_cu_number': 'int'
+        'real_cu_number': 'int',
+        'resource_config': 'ResourceConfig',
+        'resource_config_version': 'str'
     }
 
     attribute_map = {
@@ -89,10 +91,12 @@ class FlinkJobConfig:
         'flink_version': 'flink_version',
         'operator_config': 'operator_config',
         'static_estimator_config': 'static_estimator_config',
-        'real_cu_number': 'real_cu_number'
+        'real_cu_number': 'real_cu_number',
+        'resource_config': 'resource_config',
+        'resource_config_version': 'resource_config_version'
     }
 
-    def __init__(self, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, log_enabled=None, obs_bucket=None, smn_topic=None, edge_group_ids=None, root_id=None, manager_cu_number=None, cu_number=None, parallel_number=None, restart_when_exception=None, idle_state_retention=None, udf_jar_url=None, dirty_data_strategy=None, entrypoint=None, dependency_jars=None, dependency_files=None, executor_number=None, executor_cu_number=None, execution_agency_urn=None, resume_checkpoint=None, runtime_config=None, graph_editor_enabled=None, graph_editor_data=None, resume_max_num=None, checkpoint_path=None, config_url=None, tm_cus=None, tm_slot_num=None, image=None, feature=None, flink_version=None, operator_config=None, static_estimator_config=None, real_cu_number=None):
+    def __init__(self, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, log_enabled=None, obs_bucket=None, smn_topic=None, edge_group_ids=None, root_id=None, manager_cu_number=None, cu_number=None, parallel_number=None, restart_when_exception=None, idle_state_retention=None, udf_jar_url=None, dirty_data_strategy=None, entrypoint=None, dependency_jars=None, dependency_files=None, executor_number=None, executor_cu_number=None, execution_agency_urn=None, resume_checkpoint=None, runtime_config=None, graph_editor_enabled=None, graph_editor_data=None, resume_max_num=None, checkpoint_path=None, config_url=None, tm_cus=None, tm_slot_num=None, image=None, feature=None, flink_version=None, operator_config=None, static_estimator_config=None, real_cu_number=None, resource_config=None, resource_config_version=None):
         r"""FlinkJobConfig
 
         The model defined in huaweicloud sdk
@@ -169,6 +173,10 @@ class FlinkJobConfig:
         :type static_estimator_config: str
         :param real_cu_number: 参数解释: 实际使用的CU数 示例: 0 约束限制:  无 取值范围: 大于等于0的整数 默认取值: 0
         :type real_cu_number: int
+        :param resource_config: 
+        :type resource_config: :class:`huaweicloudsdkdli.v1.ResourceConfig`
+        :param resource_config_version: 资源配置版本。可选值 \&quot;v1\&quot; ,\&quot;v2\&quot;.默认为“v1”。
+        :type resource_config_version: str
         """
         
         
@@ -209,6 +217,8 @@ class FlinkJobConfig:
         self._operator_config = None
         self._static_estimator_config = None
         self._real_cu_number = None
+        self._resource_config = None
+        self._resource_config_version = None
         self.discriminator = None
 
         if checkpoint_enabled is not None:
@@ -283,6 +293,10 @@ class FlinkJobConfig:
             self.static_estimator_config = static_estimator_config
         if real_cu_number is not None:
             self.real_cu_number = real_cu_number
+        if resource_config is not None:
+            self.resource_config = resource_config
+        if resource_config_version is not None:
+            self.resource_config_version = resource_config_version
 
     @property
     def checkpoint_enabled(self):
@@ -1075,6 +1089,46 @@ class FlinkJobConfig:
         :type real_cu_number: int
         """
         self._real_cu_number = real_cu_number
+
+    @property
+    def resource_config(self):
+        r"""Gets the resource_config of this FlinkJobConfig.
+
+        :return: The resource_config of this FlinkJobConfig.
+        :rtype: :class:`huaweicloudsdkdli.v1.ResourceConfig`
+        """
+        return self._resource_config
+
+    @resource_config.setter
+    def resource_config(self, resource_config):
+        r"""Sets the resource_config of this FlinkJobConfig.
+
+        :param resource_config: The resource_config of this FlinkJobConfig.
+        :type resource_config: :class:`huaweicloudsdkdli.v1.ResourceConfig`
+        """
+        self._resource_config = resource_config
+
+    @property
+    def resource_config_version(self):
+        r"""Gets the resource_config_version of this FlinkJobConfig.
+
+        资源配置版本。可选值 \"v1\" ,\"v2\".默认为“v1”。
+
+        :return: The resource_config_version of this FlinkJobConfig.
+        :rtype: str
+        """
+        return self._resource_config_version
+
+    @resource_config_version.setter
+    def resource_config_version(self, resource_config_version):
+        r"""Sets the resource_config_version of this FlinkJobConfig.
+
+        资源配置版本。可选值 \"v1\" ,\"v2\".默认为“v1”。
+
+        :param resource_config_version: The resource_config_version of this FlinkJobConfig.
+        :type resource_config_version: str
+        """
+        self._resource_config_version = resource_config_version
 
     def to_dict(self):
         result = {}

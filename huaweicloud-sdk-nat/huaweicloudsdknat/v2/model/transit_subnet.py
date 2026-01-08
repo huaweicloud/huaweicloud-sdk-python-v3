@@ -71,7 +71,7 @@ class TransitSubnet:
         :type cidr: str
         :param type: 中转子网类型。取值范围：VPC
         :type type: str
-        :param status: 中转子网状态。 取值范围： ACTIVE： 当前资源状态正常。 INACTIVE： 不可用。
+        :param status: 中转子网状态。 取值范围： - ACTIVE： 当前资源状态正常。 - INACTIVE： 不可用。
         :type status: str
         :param ip_count: 当前中转子网下已分配的中转子网IP数量。
         :type ip_count: int
@@ -318,7 +318,7 @@ class TransitSubnet:
     def status(self):
         r"""Gets the status of this TransitSubnet.
 
-        中转子网状态。 取值范围： ACTIVE： 当前资源状态正常。 INACTIVE： 不可用。
+        中转子网状态。 取值范围： - ACTIVE： 当前资源状态正常。 - INACTIVE： 不可用。
 
         :return: The status of this TransitSubnet.
         :rtype: str
@@ -329,7 +329,7 @@ class TransitSubnet:
     def status(self, status):
         r"""Sets the status of this TransitSubnet.
 
-        中转子网状态。 取值范围： ACTIVE： 当前资源状态正常。 INACTIVE： 不可用。
+        中转子网状态。 取值范围： - ACTIVE： 当前资源状态正常。 - INACTIVE： 不可用。
 
         :param status: The status of this TransitSubnet.
         :type status: str

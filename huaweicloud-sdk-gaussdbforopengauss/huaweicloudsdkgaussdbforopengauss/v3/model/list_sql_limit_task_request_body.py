@@ -86,10 +86,8 @@ class ListSqlLimitTaskRequestBody:
             self.task_name = task_name
         if rule_name is not None:
             self.rule_name = rule_name
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
+        self.offset = offset
+        self.limit = limit
         if sql_id is not None:
             self.sql_id = sql_id
         if node_ids is not None:

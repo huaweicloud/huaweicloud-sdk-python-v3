@@ -25,7 +25,6 @@ class DesktopDetailInfo:
         'user_list': 'list[str]',
         'user_group_list': 'list[str]',
         'desktop_type': 'str',
-        'resource_type': 'str',
         'metadata': 'dict(str, str)',
         'flavor': 'FlavorInfo',
         'status': 'str',
@@ -74,7 +73,6 @@ class DesktopDetailInfo:
         'user_list': 'user_list',
         'user_group_list': 'user_group_list',
         'desktop_type': 'desktop_type',
-        'resource_type': 'resource_type',
         'metadata': 'metadata',
         'flavor': 'flavor',
         'status': 'status',
@@ -112,7 +110,7 @@ class DesktopDetailInfo:
         'hour_package_info': 'hour_package_info'
     }
 
-    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, resource_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None):
+    def __init__(self, desktop_id=None, computer_name=None, os_host_name=None, addresses=None, ip_addresses=None, ipv4=None, ipv6=None, user_list=None, user_group_list=None, desktop_type=None, metadata=None, flavor=None, status=None, task_status=None, in_maintenance_mode=None, created=None, security_groups=None, login_status=None, user_name=None, attach_user_infos=None, product_id=None, share_resource_sku=None, root_volume=None, data_volumes=None, user_group=None, availability_zone=None, site_type=None, site_name=None, product=None, ou_name=None, os_version=None, sid=None, order_id=None, tags=None, is_support_internet=None, internet_mode=None, internet_mode_list=None, is_attaching_eip=None, attach_state=None, enterprise_project_id=None, subnet_id=None, bill_resource_id=None, process=None, root_resource_id=None, hour_package_info=None):
         r"""DesktopDetailInfo
 
         The model defined in huaweicloud sdk
@@ -135,11 +133,9 @@ class DesktopDetailInfo:
         :type user_list: list[str]
         :param user_group_list: 用户组列表。
         :type user_group_list: list[str]
-        :param desktop_type: 桌面类型。  - DEDICATED：专属桌面。
+        :param desktop_type: 桌面类型。  - DEDICATED：专属桌面。 - SHARED: 多用户桌面 - POOLED: 池桌面
         :type desktop_type: str
-        :param resource_type: resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)。
-        :type resource_type: str
-        :param metadata: 桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
+        :param metadata: 桌面元数据。   - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
         :type metadata: dict(str, str)
         :param flavor: 
         :type flavor: :class:`huaweicloudsdkworkspace.v2.FlavorInfo`
@@ -151,7 +147,7 @@ class DesktopDetailInfo:
         :type in_maintenance_mode: bool
         :param created: 桌面创建时间。
         :type created: str
-        :param security_groups: 桌面安全组。
+        :param security_groups: 桌面安全组。 仅适用于查询单个桌面详情接口。
         :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
         :param login_status: 桌面的登录状态。  - UNREGISTER：表示桌面未注册时的状态（桌面启动后，会自动注册）。关机后也会出现未注册的状态。 - REGISTERED：表示桌面注册以后，等待用户连接的状态。 - CONNECTED：表示用户已经成功登录，正在使用桌面。 - DISCONNECTED：表示桌面与客户端断开会话后显示的状态，可能为关闭客户端窗口，或客户端与桌面网络断开引起。
         :type login_status: str
@@ -191,7 +187,7 @@ class DesktopDetailInfo:
         :type is_support_internet: bool
         :param internet_mode: 上网方式。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。 - BOTH：表示两种上网方式都支持。
         :type internet_mode: str
-        :param internet_mode_list: 桌面使用的上网方式列表。
+        :param internet_mode_list: 桌面使用的上网方式列表。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。
         :type internet_mode_list: list[str]
         :param is_attaching_eip: 桌面是否正在绑定EIP。
         :type is_attaching_eip: bool
@@ -223,7 +219,6 @@ class DesktopDetailInfo:
         self._user_list = None
         self._user_group_list = None
         self._desktop_type = None
-        self._resource_type = None
         self._metadata = None
         self._flavor = None
         self._status = None
@@ -281,8 +276,6 @@ class DesktopDetailInfo:
             self.user_group_list = user_group_list
         if desktop_type is not None:
             self.desktop_type = desktop_type
-        if resource_type is not None:
-            self.resource_type = resource_type
         if metadata is not None:
             self.metadata = metadata
         if flavor is not None:
@@ -556,7 +549,7 @@ class DesktopDetailInfo:
     def desktop_type(self):
         r"""Gets the desktop_type of this DesktopDetailInfo.
 
-        桌面类型。  - DEDICATED：专属桌面。
+        桌面类型。  - DEDICATED：专属桌面。 - SHARED: 多用户桌面 - POOLED: 池桌面
 
         :return: The desktop_type of this DesktopDetailInfo.
         :rtype: str
@@ -567,7 +560,7 @@ class DesktopDetailInfo:
     def desktop_type(self, desktop_type):
         r"""Sets the desktop_type of this DesktopDetailInfo.
 
-        桌面类型。  - DEDICATED：专属桌面。
+        桌面类型。  - DEDICATED：专属桌面。 - SHARED: 多用户桌面 - POOLED: 池桌面
 
         :param desktop_type: The desktop_type of this DesktopDetailInfo.
         :type desktop_type: str
@@ -575,32 +568,10 @@ class DesktopDetailInfo:
         self._desktop_type = desktop_type
 
     @property
-    def resource_type(self):
-        r"""Gets the resource_type of this DesktopDetailInfo.
-
-        resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)。
-
-        :return: The resource_type of this DesktopDetailInfo.
-        :rtype: str
-        """
-        return self._resource_type
-
-    @resource_type.setter
-    def resource_type(self, resource_type):
-        r"""Sets the resource_type of this DesktopDetailInfo.
-
-        resource_type字段，分别表示：专属桌面（DEDICATED_DESKTOP）、池桌面（POOLED_DESKTOP）、渲染桌面（RENDER_DESKTOP）、专享主机（EXCLUSIVE_HOST）、多用户桌面(SHARED_DESKTOP)。
-
-        :param resource_type: The resource_type of this DesktopDetailInfo.
-        :type resource_type: str
-        """
-        self._resource_type = resource_type
-
-    @property
     def metadata(self):
         r"""Gets the metadata of this DesktopDetailInfo.
 
-        桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
+        桌面元数据。   - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
 
         :return: The metadata of this DesktopDetailInfo.
         :rtype: dict(str, str)
@@ -611,7 +582,7 @@ class DesktopDetailInfo:
     def metadata(self, metadata):
         r"""Sets the metadata of this DesktopDetailInfo.
 
-        桌面元数据。  - charging_mode 周期套餐标识，1表示包周期，0表示按需。 - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
+        桌面元数据。   - image_name 创建桌面的镜像名称。 - bill_resource_id 镜像计费资源ID。 - metering.image_id 镜像ID。 - metering.resourcespeccode 桌面资源编码。 - metering.resourcetype 桌面资源类型。 - os_bit 操作系统位数：32或64。 - os_type 操作系统类型：Linux、Windows或Others。 - desktop_os_version 操作系统版本。
 
         :param metadata: The metadata of this DesktopDetailInfo.
         :type metadata: dict(str, str)
@@ -728,7 +699,7 @@ class DesktopDetailInfo:
     def security_groups(self):
         r"""Gets the security_groups of this DesktopDetailInfo.
 
-        桌面安全组。
+        桌面安全组。 仅适用于查询单个桌面详情接口。
 
         :return: The security_groups of this DesktopDetailInfo.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
@@ -739,7 +710,7 @@ class DesktopDetailInfo:
     def security_groups(self, security_groups):
         r"""Sets the security_groups of this DesktopDetailInfo.
 
-        桌面安全组。
+        桌面安全组。 仅适用于查询单个桌面详情接口。
 
         :param security_groups: The security_groups of this DesktopDetailInfo.
         :type security_groups: list[:class:`huaweicloudsdkworkspace.v2.SecurityGroupInfo`]
@@ -1160,7 +1131,7 @@ class DesktopDetailInfo:
     def internet_mode_list(self):
         r"""Gets the internet_mode_list of this DesktopDetailInfo.
 
-        桌面使用的上网方式列表。
+        桌面使用的上网方式列表。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。
 
         :return: The internet_mode_list of this DesktopDetailInfo.
         :rtype: list[str]
@@ -1171,7 +1142,7 @@ class DesktopDetailInfo:
     def internet_mode_list(self, internet_mode_list):
         r"""Sets the internet_mode_list of this DesktopDetailInfo.
 
-        桌面使用的上网方式列表。
+        桌面使用的上网方式列表。 - NAT：表示NAT上网方式。 - EIP：表示EIP上网方式。
 
         :param internet_mode_list: The internet_mode_list of this DesktopDetailInfo.
         :type internet_mode_list: list[str]

@@ -16,6 +16,7 @@ class ListUsersRequest:
 
     openapi_types = {
         'user_name': 'str',
+        'user_names': 'list[str]',
         'limit': 'str',
         'offset': 'str',
         'description': 'str',
@@ -24,11 +25,13 @@ class ListUsersRequest:
         'share_space_subscription': 'bool',
         'share_space_desktops': 'bool',
         'is_query_total_desktops': 'bool',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'domain': 'str'
     }
 
     attribute_map = {
         'user_name': 'user_name',
+        'user_names': 'user_names',
         'limit': 'limit',
         'offset': 'offset',
         'description': 'description',
@@ -37,16 +40,19 @@ class ListUsersRequest:
         'share_space_subscription': 'share_space_subscription',
         'share_space_desktops': 'share_space_desktops',
         'is_query_total_desktops': 'is_query_total_desktops',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'domain': 'domain'
     }
 
-    def __init__(self, user_name=None, limit=None, offset=None, description=None, active_type=None, group_name=None, share_space_subscription=None, share_space_desktops=None, is_query_total_desktops=None, enterprise_project_id=None):
+    def __init__(self, user_name=None, user_names=None, limit=None, offset=None, description=None, active_type=None, group_name=None, share_space_subscription=None, share_space_desktops=None, is_query_total_desktops=None, enterprise_project_id=None, domain=None):
         r"""ListUsersRequest
 
         The model defined in huaweicloud sdk
 
         :param user_name: 桌面用户名，长度范围为1-20，不能包含特殊字符，不能以数字开头。
         :type user_name: str
+        :param user_names: 桌面用户名列表。
+        :type user_names: list[str]
         :param limit: 用于分页查询，返回用户数量限制。如果不指定，则返回所有符合条件的用户。
         :type limit: str
         :param offset: 分页查询起始条数。
@@ -63,13 +69,16 @@ class ListUsersRequest:
         :type share_space_desktops: bool
         :param is_query_total_desktops: 是否查询用户绑定的桌面数,true/false,默认true。
         :type is_query_total_desktops: bool
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
+        :param domain: 域。
+        :type domain: str
         """
         
         
 
         self._user_name = None
+        self._user_names = None
         self._limit = None
         self._offset = None
         self._description = None
@@ -79,10 +88,13 @@ class ListUsersRequest:
         self._share_space_desktops = None
         self._is_query_total_desktops = None
         self._enterprise_project_id = None
+        self._domain = None
         self.discriminator = None
 
         if user_name is not None:
             self.user_name = user_name
+        if user_names is not None:
+            self.user_names = user_names
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -101,6 +113,8 @@ class ListUsersRequest:
             self.is_query_total_desktops = is_query_total_desktops
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if domain is not None:
+            self.domain = domain
 
     @property
     def user_name(self):
@@ -123,6 +137,28 @@ class ListUsersRequest:
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def user_names(self):
+        r"""Gets the user_names of this ListUsersRequest.
+
+        桌面用户名列表。
+
+        :return: The user_names of this ListUsersRequest.
+        :rtype: list[str]
+        """
+        return self._user_names
+
+    @user_names.setter
+    def user_names(self, user_names):
+        r"""Sets the user_names of this ListUsersRequest.
+
+        桌面用户名列表。
+
+        :param user_names: The user_names of this ListUsersRequest.
+        :type user_names: list[str]
+        """
+        self._user_names = user_names
 
     @property
     def limit(self):
@@ -304,7 +340,7 @@ class ListUsersRequest:
     def enterprise_project_id(self):
         r"""Gets the enterprise_project_id of this ListUsersRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :return: The enterprise_project_id of this ListUsersRequest.
         :rtype: str
@@ -315,12 +351,34 @@ class ListUsersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         r"""Sets the enterprise_project_id of this ListUsersRequest.
 
-        企业项目ID
+        企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListUsersRequest.
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def domain(self):
+        r"""Gets the domain of this ListUsersRequest.
+
+        域。
+
+        :return: The domain of this ListUsersRequest.
+        :rtype: str
+        """
+        return self._domain
+
+    @domain.setter
+    def domain(self, domain):
+        r"""Sets the domain of this ListUsersRequest.
+
+        域。
+
+        :param domain: The domain of this ListUsersRequest.
+        :type domain: str
+        """
+        self._domain = domain
 
     def to_dict(self):
         result = {}

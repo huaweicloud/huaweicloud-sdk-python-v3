@@ -43,7 +43,7 @@ class ListDesktopNamePolicyRequest:
         :type policy_id: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
-        :param limit: 用于分页查询，取值范围0-50，默认值50。
+        :param limit: 用于分页查询，取值范围0-100，默认值100。
         :type limit: int
         """
         
@@ -159,7 +159,7 @@ class ListDesktopNamePolicyRequest:
     def limit(self):
         r"""Gets the limit of this ListDesktopNamePolicyRequest.
 
-        用于分页查询，取值范围0-50，默认值50。
+        用于分页查询，取值范围0-100，默认值100。
 
         :return: The limit of this ListDesktopNamePolicyRequest.
         :rtype: int
@@ -170,7 +170,7 @@ class ListDesktopNamePolicyRequest:
     def limit(self, limit):
         r"""Sets the limit of this ListDesktopNamePolicyRequest.
 
-        用于分页查询，取值范围0-50，默认值50。
+        用于分页查询，取值范围0-100，默认值100。
 
         :param limit: The limit of this ListDesktopNamePolicyRequest.
         :type limit: int

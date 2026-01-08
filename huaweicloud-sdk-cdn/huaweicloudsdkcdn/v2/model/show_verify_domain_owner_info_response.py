@@ -44,7 +44,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param dns_verify_type: DNS解析类型。
+        :param dns_verify_type: DNS解析类型。取值意义： - TXT：TXT记录
         :type dns_verify_type: str
         :param dns_verify_name: DNS解析主机记录名称。
         :type dns_verify_name: str
@@ -100,7 +100,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
     def dns_verify_type(self):
         r"""Gets the dns_verify_type of this ShowVerifyDomainOwnerInfoResponse.
 
-        DNS解析类型。
+        DNS解析类型。取值意义： - TXT：TXT记录
 
         :return: The dns_verify_type of this ShowVerifyDomainOwnerInfoResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowVerifyDomainOwnerInfoResponse(SdkResponse):
     def dns_verify_type(self, dns_verify_type):
         r"""Sets the dns_verify_type of this ShowVerifyDomainOwnerInfoResponse.
 
-        DNS解析类型。
+        DNS解析类型。取值意义： - TXT：TXT记录
 
         :param dns_verify_type: The dns_verify_type of this ShowVerifyDomainOwnerInfoResponse.
         :type dns_verify_type: str

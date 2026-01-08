@@ -45,7 +45,7 @@ class PoliciesRecordAudit:
         :type storage_type: str
         :param obs_bucket_source: OBS桶来源。取值为： AUTO_CREATE：自动创建。 CREATED：已创建的。
         :type obs_bucket_source: str
-        :param obs_bucket_name: obs 桶名
+        :param obs_bucket_name: obs 桶名。
         :type obs_bucket_name: str
         :param retention_duration: 录屏文件保留时长（天）。取值为1~180天，0 表示永久保留。
         :type retention_duration: int
@@ -162,7 +162,7 @@ class PoliciesRecordAudit:
     def obs_bucket_name(self):
         r"""Gets the obs_bucket_name of this PoliciesRecordAudit.
 
-        obs 桶名
+        obs 桶名。
 
         :return: The obs_bucket_name of this PoliciesRecordAudit.
         :rtype: str
@@ -173,7 +173,7 @@ class PoliciesRecordAudit:
     def obs_bucket_name(self, obs_bucket_name):
         r"""Sets the obs_bucket_name of this PoliciesRecordAudit.
 
-        obs 桶名
+        obs 桶名。
 
         :param obs_bucket_name: The obs_bucket_name of this PoliciesRecordAudit.
         :type obs_bucket_name: str

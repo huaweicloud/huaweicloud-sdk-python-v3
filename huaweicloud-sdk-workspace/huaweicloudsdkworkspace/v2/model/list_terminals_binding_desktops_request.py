@@ -16,7 +16,9 @@ class ListTerminalsBindingDesktopsRequest:
 
     openapi_types = {
         'computer_name': 'str',
+        'computer_names': 'list[str]',
         'mac': 'str',
+        'mac_list': 'list[str]',
         'offset': 'int',
         'limit': 'int',
         'count_only': 'bool'
@@ -24,21 +26,27 @@ class ListTerminalsBindingDesktopsRequest:
 
     attribute_map = {
         'computer_name': 'computer_name',
+        'computer_names': 'computer_names',
         'mac': 'mac',
+        'mac_list': 'mac_list',
         'offset': 'offset',
         'limit': 'limit',
         'count_only': 'count_only'
     }
 
-    def __init__(self, computer_name=None, mac=None, offset=None, limit=None, count_only=None):
+    def __init__(self, computer_name=None, computer_names=None, mac=None, mac_list=None, offset=None, limit=None, count_only=None):
         r"""ListTerminalsBindingDesktopsRequest
 
         The model defined in huaweicloud sdk
 
         :param computer_name: 桌面名。
         :type computer_name: str
+        :param computer_names: 桌面名列表。
+        :type computer_names: list[str]
         :param mac: mac地址。
         :type mac: str
+        :param mac_list: mac地址列表。
+        :type mac_list: list[str]
         :param offset: 起始数。
         :type offset: int
         :param limit: 数量。
@@ -50,7 +58,9 @@ class ListTerminalsBindingDesktopsRequest:
         
 
         self._computer_name = None
+        self._computer_names = None
         self._mac = None
+        self._mac_list = None
         self._offset = None
         self._limit = None
         self._count_only = None
@@ -58,8 +68,12 @@ class ListTerminalsBindingDesktopsRequest:
 
         if computer_name is not None:
             self.computer_name = computer_name
+        if computer_names is not None:
+            self.computer_names = computer_names
         if mac is not None:
             self.mac = mac
+        if mac_list is not None:
+            self.mac_list = mac_list
         self.offset = offset
         self.limit = limit
         if count_only is not None:
@@ -88,6 +102,28 @@ class ListTerminalsBindingDesktopsRequest:
         self._computer_name = computer_name
 
     @property
+    def computer_names(self):
+        r"""Gets the computer_names of this ListTerminalsBindingDesktopsRequest.
+
+        桌面名列表。
+
+        :return: The computer_names of this ListTerminalsBindingDesktopsRequest.
+        :rtype: list[str]
+        """
+        return self._computer_names
+
+    @computer_names.setter
+    def computer_names(self, computer_names):
+        r"""Sets the computer_names of this ListTerminalsBindingDesktopsRequest.
+
+        桌面名列表。
+
+        :param computer_names: The computer_names of this ListTerminalsBindingDesktopsRequest.
+        :type computer_names: list[str]
+        """
+        self._computer_names = computer_names
+
+    @property
     def mac(self):
         r"""Gets the mac of this ListTerminalsBindingDesktopsRequest.
 
@@ -108,6 +144,28 @@ class ListTerminalsBindingDesktopsRequest:
         :type mac: str
         """
         self._mac = mac
+
+    @property
+    def mac_list(self):
+        r"""Gets the mac_list of this ListTerminalsBindingDesktopsRequest.
+
+        mac地址列表。
+
+        :return: The mac_list of this ListTerminalsBindingDesktopsRequest.
+        :rtype: list[str]
+        """
+        return self._mac_list
+
+    @mac_list.setter
+    def mac_list(self, mac_list):
+        r"""Sets the mac_list of this ListTerminalsBindingDesktopsRequest.
+
+        mac地址列表。
+
+        :param mac_list: The mac_list of this ListTerminalsBindingDesktopsRequest.
+        :type mac_list: list[str]
+        """
+        self._mac_list = mac_list
 
     @property
     def offset(self):

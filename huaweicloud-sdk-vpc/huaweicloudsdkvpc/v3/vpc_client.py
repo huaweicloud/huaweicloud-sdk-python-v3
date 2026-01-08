@@ -172,7 +172,6 @@ class VpcClient(Client):
 
         为指定的端口批量添加标签。
         此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
-        该接口在华南-深圳上线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -373,7 +372,6 @@ class VpcClient(Client):
 
         为指定的端口资源实例批量删除标签。
         此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
-        该接口在华南-深圳上线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -441,7 +439,6 @@ class VpcClient(Client):
         r"""查询端口资源实例数量
 
         使用标签过滤查询端口实例数量。
-        该接口在华南-深圳上线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -506,9 +503,8 @@ class VpcClient(Client):
     def create_port_tag(self, request):
         r"""添加端口资源标签
 
-        给指定端口资源实例增加标签信息
+        给指定端口资源实例增加标签信息。
         此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
-        该接口在华南-深圳上线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1030,9 +1026,8 @@ class VpcClient(Client):
     def delete_port_tag(self, request):
         r"""删除端口资源标签
 
-        删除指定端口的标签信息
+        删除指定端口的标签信息。
         该接口为幂等接口：删除的key不存在报404，key不能为空或者空字符串。
-        该接口在华南-深圳上线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1555,7 +1550,6 @@ class VpcClient(Client):
         r"""查询端口项目标签
 
         查询租户在指定Project中实例类型的所有资源标签集合。
-        该接口在华南-深圳上线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1619,11 +1613,119 @@ class VpcClient(Client):
 
         return http_info
 
+    def list_ports(self, request):
+        r"""查询端口列表
+
+        当您的端口创建成功后，您可以通过调用该接口查询所有端口信息，包括端口ID、IP地址、所属云服务实例等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListPorts
+        :type request: :class:`huaweicloudsdkvpc.v3.ListPortsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListPortsResponse`
+        """
+        http_info = self._list_ports_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_ports_invoker(self, request):
+        http_info = self._list_ports_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ports_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'csv'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'csv'
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'virsubnet_id' in local_var_params:
+            query_params.append(('virsubnet_id', local_var_params['virsubnet_id']))
+            collection_formats['virsubnet_id'] = 'csv'
+        if 'device_id' in local_var_params:
+            query_params.append(('device_id', local_var_params['device_id']))
+            collection_formats['device_id'] = 'csv'
+        if 'mac_address' in local_var_params:
+            query_params.append(('mac_address', local_var_params['mac_address']))
+            collection_formats['mac_address'] = 'csv'
+        if 'device_owner' in local_var_params:
+            query_params.append(('device_owner', local_var_params['device_owner']))
+            collection_formats['device_owner'] = 'csv'
+        if 'device_owner_prefixlike' in local_var_params:
+            query_params.append(('device_owner_prefixlike', local_var_params['device_owner_prefixlike']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'csv'
+        if 'bindinghost_id' in local_var_params:
+            query_params.append(('binding:host_id', local_var_params['bindinghost_id']))
+            collection_formats['binding:host_id'] = 'csv'
+        if 'private_ips' in local_var_params:
+            query_params.append(('private_ips', local_var_params['private_ips']))
+            collection_formats['private_ips'] = 'csv'
+        if 'security_groups' in local_var_params:
+            query_params.append(('security_groups', local_var_params['security_groups']))
+            collection_formats['security_groups'] = 'csv'
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+            collection_formats['vpc_id'] = 'csv'
+        if 'allowed_address_pairs' in local_var_params:
+            query_params.append(('allowed_address_pairs', local_var_params['allowed_address_pairs']))
+            collection_formats['allowed_address_pairs'] = 'csv'
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'instance_type' in local_var_params:
+            query_params.append(('instance_type', local_var_params['instance_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def list_ports_by_tags(self, request):
         r"""查询端口资源实例列表
 
         使用标签过滤查询端口。
-        该接口在华南-深圳上线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2300,6 +2402,93 @@ class VpcClient(Client):
 
         return http_info
 
+    def list_virsubnets(self, request):
+        r"""查询虚拟子网列表
+
+        当您的子网创建成功后，您可以通过调用该接口查询所有子网信息，包括子网的名称、ID等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListVirsubnets
+        :type request: :class:`huaweicloudsdkvpc.v3.ListVirsubnetsRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListVirsubnetsResponse`
+        """
+        http_info = self._list_virsubnets_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_virsubnets_invoker(self, request):
+        http_info = self._list_virsubnets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_virsubnets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/virsubnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVirsubnetsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+            collection_formats['vpc_id'] = 'csv'
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'scope' in local_var_params:
+            query_params.append(('scope', local_var_params['scope']))
+            collection_formats['scope'] = 'csv'
+        if 'zone_id' in local_var_params:
+            query_params.append(('zone_id', local_var_params['zone_id']))
+            collection_formats['zone_id'] = 'csv'
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def migrate_sub_network_interface(self, request):
         r"""迁移辅助弹性网卡
 
@@ -2499,11 +2688,75 @@ class VpcClient(Client):
 
         return http_info
 
+    def show_port(self, request):
+        r"""查询端口详情
+
+        当您的端口创建成功后，您可以通过调用该接口查询单个端口的详细信息，包括端口ID、IP地址、所属云服务实例等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowPort
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowPortRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowPortResponse`
+        """
+        http_info = self._show_port_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_port_invoker(self, request):
+        http_info = self._show_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_port_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPortResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'port_id' in local_var_params:
+            path_params['port_id'] = local_var_params['port_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
     def show_port_tags(self, request):
         r"""查询端口资源标签
 
         查询指定端口的标签信息。
-        该接口在华南-深圳上线。
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -2536,6 +2789,69 @@ class VpcClient(Client):
         path_params = {}
         if 'port_id' in local_var_params:
             path_params['port_id'] = local_var_params['port_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_quota(self, request):
+        r"""查询配额
+
+        您可以通过此接口查询VPC服务相关资源的配额，包括安全组配额、安全组规则配额等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowQuota
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowQuotaRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowQuotaResponse`
+        """
+        http_info = self._show_quota_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_quota_invoker(self, request):
+        http_info = self._show_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotaResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
 
         query_params = []
 
@@ -2989,6 +3305,71 @@ class VpcClient(Client):
         path_params = {}
         if 'traffic_mirror_session_id' in local_var_params:
             path_params['traffic_mirror_session_id'] = local_var_params['traffic_mirror_session_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_virsubnet(self, request):
+        r"""查询虚拟子网详情
+
+        当您的子网创建成功后，您可以通过调用该接口查询单个子网的详细信息，包括子网的名称、ID、状态等。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowVirsubnet
+        :type request: :class:`huaweicloudsdkvpc.v3.ShowVirsubnetRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ShowVirsubnetResponse`
+        """
+        http_info = self._show_virsubnet_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_virsubnet_invoker(self, request):
+        http_info = self._show_virsubnet_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_virsubnet_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/virsubnets/{virsubnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVirsubnetResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'virsubnet_id' in local_var_params:
+            path_params['virsubnet_id'] = local_var_params['virsubnet_id']
 
         query_params = []
 
@@ -5807,6 +6188,73 @@ class VpcClient(Client):
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
             collection_formats['description'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_address_groups_dependency(self, request):
+        r"""查询IP地址组的关联资源
+
+        当您的IP地址组被网络ACL和安全组资源关联时，您可以通过调用该接口查询IP地址组关联的网络ACL或安全组的资源ID和名称。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListAddressGroupsDependency
+        :type request: :class:`huaweicloudsdkvpc.v3.ListAddressGroupsDependencyRequest`
+        :rtype: :class:`huaweicloudsdkvpc.v3.ListAddressGroupsDependencyResponse`
+        """
+        http_info = self._list_address_groups_dependency_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_address_groups_dependency_invoker(self, request):
+        http_info = self._list_address_groups_dependency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_address_groups_dependency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/list-address-groups-dependency",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAddressGroupsDependencyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
